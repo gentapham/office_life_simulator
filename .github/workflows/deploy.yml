@@ -1,12 +1,13 @@
 name: Đăng bản chơi thử lên GitHub Pages
 
+# Đẩy code lên nhánh làm việc của Claude là đủ: tự build, tự đăng web, tự đưa main lên cùng bản đó
 on:
   push:
-    branches: [main]
+    branches: [main, claude/inspiring-franklin-dj4395]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -26,6 +29,11 @@ jobs:
       - run: npm ci
       - run: npm run kiem-tra-ink
       - run: npm run build
+      # Đưa main lên cùng bản (chỉ khi tiến thẳng được, không ghi đè thay đổi khác trên main)
+      - name: Cập nhật nhánh main
+        if: github.ref_name != 'main'
+        continue-on-error: true
+        run: git push origin HEAD:main
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
