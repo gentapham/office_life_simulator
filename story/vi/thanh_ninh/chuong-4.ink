@@ -45,10 +45,10 @@ hr: {ran_doc} với Siêu Nhân Hồng… {thuc_tap_sinh} với {con_ong_chau_ch
     }
 }
 { tn_chung_phong_chi_dai:
-    hr: …và phòng 204: {chi_dai} với {thanh_ninh}.
+    hr: …và phòng 207: {chi_dai} với {thanh_ninh}.
     _Cả sảnh im phăng phắc. Luật bất thành văn số 1 của {cong_ty}: {chi_dai} không ở với {thanh_ninh}. Không ai dám đổi._
     hong_hot: *(thì thầm)* Bốc trúng sít rịt luôn…
-    chi_dai: *(cầm chìa khóa, đi thẳng lên lầu)* Phòng 204. Đi.
+    chi_dai: *(cầm chìa khóa, đi thẳng lên lầu)* Phòng 207. Đi.
 - else:
     hr: …phòng 206: {thanh_ninh} với {hong_hot}.
     hong_hot: Yeah! Bạn cùng phòng! Tối nay tui kể bà nghe hết nha!
@@ -115,7 +115,7 @@ _Cả công ty nín thở. Sếp ngồi cách bạn hai người, ly bia trên t
 === thanh_ninh_1710_dem_voi_chi_dai ===
 # ngay:17 # gio:23:30 # noi:khach_san_vung_tau # bat_buoc
 { tn_chung_phong_chi_dai:
-    _Phòng 204. Mất điện khách sạn 10 phút. Trong bóng tối chỉ có tiếng sóng và tiếng {chi_dai} trở mình ở giường bên._
+    _Phòng 207. Mất điện khách sạn 10 phút. Trong bóng tối chỉ có tiếng sóng và tiếng {chi_dai} trở mình ở giường bên._
 - else:
     _Mất điện khách sạn. Bạn ra hành lang hóng gió, gặp {chi_dai} đang ngồi bậc thang nhìn ra biển. Chị vỗ vỗ chỗ trống bên cạnh._
 }

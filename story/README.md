@@ -58,6 +58,7 @@ Mọi file phải qua kiểm tra (✅) trước khi commit.
   ```ink
   hong_hot: Ê ê, nghe gì chưa?
   ```
+- **Người nói phụ** (không thuộc 23 nhân vật chính) dùng mã có trong [ten-nguoi-noi.json](ten-nguoi-noi.json). Mã mới phải được thêm vào file đó, kèm tên tiếng Việt và tiếng Anh.
 - **Tên trong câu**: luôn dùng biến, **không bao giờ viết cứng tên**: `{hong_hot}`, `{giam_doc}`, `{cong_ty}`. Biệt danh cũng vậy: `{ran_doc} Ếch`.
 - **Xưng hô**: `{anh_chi()}`, `{ong_ba()}` (cho người chơi), `{anh_chi_cua("ke_toan")}`, `{ong_ba_cua("hong_hot")}`, `{ong_ay_cua("truong_phong")}`.
 - **Dẫn truyện / mô tả** (không ai nói): cả dòng bọc trong dấu gạch dưới: `_Bác {bac_bao_ve} uống một ngụm trà đá._`. **Không** bắt đầu dòng bằng `*` (Ink hiểu là lựa chọn).

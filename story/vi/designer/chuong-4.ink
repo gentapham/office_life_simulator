@@ -7,7 +7,7 @@
 # ngay:17 # gio:06:30 # noi:xe_khach # bat_buoc
 _6 giờ 30. Xe khách 29 chỗ đậu trước cổng. Balo của bạn nặng hơn bình thường đúng 1,8 ký: laptop thứ hai._
 la_chuoi: *(tin nhắn lúc 6:02)* Em ơi, anh cần file trước Chủ nhật nha. Bên anh không chờ được.
-hr: Mọi người lên xe theo danh sách nhé! {designer} ngồi cạnh {sales}, ở chung phòng 204 với {sales} luôn nha.
+hr: Mọi người lên xe theo danh sách nhé! {designer} ngồi cạnh {sales}, ở chung phòng 202 với {sales} luôn nha.
 _Ít nhất có một điều đúng trong ngày hôm nay._
 dan_dau_tu: *(đứng ở cửa xe, giơ điện thoại)* Hôm nay Ngày Quốc tế Xóa nghèo! Hồng Coin x10 rồi! Tối nay anh bao cả đoàn hải sản!
 _Cả xe vỗ tay. {chi_dai} nhìn {dan_dau_tu} như nhìn một quả bom đã rút chốt._

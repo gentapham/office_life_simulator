@@ -18,7 +18,7 @@ ran_doc: *(mặt cứng đờ, cười)* Dạ… em… sao cũng được ạ.
 * {hr_biet_xom_cay_me} [🔒 Nhớ tới tấm ảnh xóm Cây Me. "Để anh xem lại đã nha."]
     _Bạn nhìn {ran_doc}. {ran_doc} nhìn xuống đất._
     sieu_nhan_hong: Đi mà Tuấn! Anh hứa không ngáy!
-    _Cuối cùng vẫn là phòng chung, vì không còn phòng nào khác. Nhưng bạn dặn {ran_doc}: "Có gì gọi anh, phòng 204."_
+    _Cuối cùng vẫn là phòng chung, vì không còn phòng nào khác. Nhưng bạn dặn {ran_doc}: "Có gì gọi anh, phòng 203."_
     ~ qh("ran_doc", 5)
     ~ hr_nghe(3)
 - _Xe lăn bánh. Bạn mở tờ giấy trắng. Đã tới lúc xếp phòng._
@@ -107,7 +107,7 @@ _Rồi tới lượt bạn. 21 cặp mắt, 1 cặp mắt chó. Ai cũng chờ H
 // ------------------------------------------------------------
 === hr_1710_nua_dem ===
 # ngay:17 # gio:23:45 # noi:khach_san_vung_tau
-_Gần nửa đêm. Phòng 204. Bạn vừa nằm xuống thì điện thoại rung._
+_Gần nửa đêm. Phòng 203. Bạn vừa nằm xuống thì điện thoại rung._
 { hr_vi_pham_phong > 0:
     -> hr_1710_nua_dem.s_cai_nhau
 - else:
@@ -136,7 +136,7 @@ _Bạn chạy qua chạy lại giữa 3 tầng trong dép tổ ong._
 
 = s_yen_binh
 _Không ai gọi. Lần đầu tiên trong 7 năm team building, không ai gọi trưởng đoàn lúc nửa đêm._
-_Bạn đứng ở ban công phòng 204. Ngoài kia là bãi xe, xa hơn là biển. Tiếng {chi_dai} cười ở phòng bên._
+_Bạn đứng ở ban công phòng 203. Ngoài kia là bãi xe, xa hơn là biển. Tiếng {chi_dai} cười ở phòng bên._
 * [🍵 Pha một ly trà Zzz, ngủ.]
     ~ nghi(30)
     ~ cang_thang(-10)

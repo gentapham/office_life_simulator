@@ -94,7 +94,7 @@ _Mọi ánh mắt dồn về bạn. {bien_kich} ngồi đối diện, ngừng nh
 // ------------------------------------------------------------
 === thuc_tap_sinh_1710_phong_long ===
 # ngay:17 # gio:23:40 # noi:khu_nghi_duong_vung_tau # bat_buoc
-_Phòng 204. Hai giường đơn. Bạn nằm giường trong, {con_ong_chau_cha} nằm giường ngoài, nhìn trần nhà. Ngoài cửa sổ, sóng biển._
+_Phòng 201. Hai giường đơn. Bạn nằm giường trong, {con_ong_chau_cha} nằm giường ngoài, nhìn trần nhà. Ngoài cửa sổ, sóng biển._
 con_ong_chau_cha: Anh {thuc_tap_sinh}, anh có bao giờ muốn… bỏ hết, làm lại từ đầu không? Không phải "cháu ai", không phải "con ai".
 * [😶 "Dạ em mới vô nên chưa biết ạ."]
     con_ong_chau_cha: *(cười)* Anh lúc nào cũng vậy.
