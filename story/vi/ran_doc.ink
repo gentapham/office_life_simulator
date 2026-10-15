@@ -5,5 +5,13 @@
 INCLUDE chung/bien-chung.ink
 INCLUDE ran_doc/bien.ink
 INCLUDE ran_doc/chuong-1.ink
+INCLUDE ran_doc/chuong-2.ink
+INCLUDE ran_doc/chuong-3.ink
+INCLUDE ran_doc/chuong-4.ink
+INCLUDE ran_doc/chuong-5.ink
+INCLUDE ran_doc/chuong-6.ink
+INCLUDE ran_doc/nhan-vat.ink
+INCLUDE ran_doc/minigame.ink
+INCLUDE ran_doc/ket-thuc.ink
 
 -> END

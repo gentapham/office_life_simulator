@@ -1,0 +1,8 @@
+INCLUDE chung/bien-chung.ink
+INCLUDE idol_het_thoi/bien.ink
+INCLUDE idol_het_thoi/chuong-1.ink
+INCLUDE idol_het_thoi/chuong-2.ink
+INCLUDE idol_het_thoi/chuong-3.ink
+INCLUDE idol_het_thoi/chuong-4.ink
+INCLUDE idol_het_thoi/chuong-5.ink
+-> END
