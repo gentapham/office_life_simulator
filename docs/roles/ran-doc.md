@@ -53,7 +53,7 @@ Ngoài mặt, Rắn Độc là người dễ thương nhất phòng: nhớ sinh 
 
 ### Chương 2: "Hội Anti Sếp" (ngày 6 – 12)
 - Trong group, mọi người nói xấu giám đốc thoải mái. Rắn Độc nhận ra **đây là mỏ vàng**.
-- Ngày 10: nhận lương. Lương về trễ, cả group sôi sục, cơ hội để đổ dầu.
+- Ngày 10: lương tháng về trễ, cả group sôi sục, cơ hội để đổ dầu. (Sự kiện này xảy ra dù người chơi chọn nhận lương theo cách nào, vì phần lớn đồng nghiệp nhận lương tháng.)
 - **Twist:** một thành viên trong group là **tài khoản clone của giám đốc**. Ai là người đó? Rắn Độc có thể điều tra, lợi dụng, hoặc tố cáo.
 
 ### Chương 3: "Chiếc Ghế" (ngày 13 – 18)

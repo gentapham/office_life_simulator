@@ -93,7 +93,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** thích nói về "văn hóa doanh nghiệp", "công ty là gia đình", nhưng không tăng lương. Mê golf và mê được khen.
 - **Cách nói:** giọng miền Bắc, dùng nhiều từ tiếng Anh sai chỗ ("Em check lại cái mindset giúp anh"), nói dài, hay kể chuyện hồi khởi nghiệp.
 - **Câu cửa miệng:** *"Anh không ép, tùy em."* (nghĩa là bắt buộc)
-- **Bí mật:** công ty đang nợ ngân hàng, cần Siêu Nhân Hồng nổi tiếng để gỡ vốn. Có một tài khoản Facebook clone để đọc trộm group "anti sếp".
+- **Bí mật:** công ty đang nợ ngân hàng, cần Siêu Nhân Hồng nổi tiếng để gỡ vốn trước khi chủ đầu tư Genta ở nước ngoài phát hiện. Có một tài khoản Facebook clone để đọc trộm group "anti sếp".
 - **Quan hệ:** chú ruột của Con Ông Cháu Cha. Rất tin Thánh Nịnh. Sợ vợ, và sợ cả Chị Đại.
 - **Ý tưởng truyện:**
   - Bị nhân viên nói xấu trong group bí mật, giả vờ không biết rồi trả thù từng người.
@@ -361,7 +361,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** 50 tuổi, lớn tuổi nhất công ty, ai cũng gọi là "Bác Bình", kể cả Giám Đốc. Uống trà đá cả ngày, nghe radio, 9 giờ tối là ngủ. Ít nói, hiền, thấy hết mọi chuyện nhưng không bao giờ nói.
 - **Cách nói:** giọng miền Bắc, chậm rãi, ngắn gọn, thâm thúy. "Ừ…", "Chuyện người ta, bác không biết đâu", "Thế à".
 - **Câu cửa miệng:** *"Bác không thấy gì đâu."*
-- **Bí mật:** làm bảo vệ từ ngày đầu thành lập công ty năm 2010, là bạn lâu năm của nhà sáng lập Genta, và là người duy nhất biết Genta giờ đang ở đâu. Thỉnh thoảng có người gửi thư tay cho bác, ký tên "G".
+- **Bí mật:** làm bảo vệ từ ngày đầu thành lập công ty năm 2010, là bạn lâu năm của chủ đầu tư Genta. Genta ở nước ngoài nhưng tin bác nhất công ty: thỉnh thoảng gửi thư tay ký tên "G", nhờ bác để ý xem công ty đang thế nào. Thắng không hề biết mình đang bị "báo cáo".
 - **Quan hệ:** chủ của Chó Công Ty. Bạn nhậu của IT. Bị Dân Đầu Tư nợ tiền.
 - **Ý tưởng truyện:**
   - Đêm trực phát hiện có người vào công ty lén lút.

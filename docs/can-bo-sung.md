@@ -10,7 +10,8 @@ Mục nào xong thì đánh dấu `[x]`.
 
 ## ⭐ Ưu tiên cao: ảnh hưởng tới mọi thứ khác
 
-- [ ] 🙋 **Tên game chính thức** (tiếng Việt và tiếng Anh). Hiện đang tạm gọi "G-Entertainment: Office Life Simulator".
+- [x] 🙋 **Tên game:** Giả Lập Một Ngày Làm Nhân Viên Văn Phòng.
+- [ ] 🙋 **Tên tiếng Anh** của game.
 - [x] 🙋 **Bối cảnh Bắc hay Nam?** Đã chốt: phần lớn giọng miền Nam, 3 người giọng miền Bắc (Thắng, Nhật, Bình).
 - [x] 🙋 **Tuổi của 22 NPC.** Đã chốt, xem [roles/README.md](roles/README.md).
 - [ ] 🙋 **Thời điểm trong năm** của 30 ngày chơi. Gợi ý: tháng trước Tết, vì có thưởng Tết, tất niên, áp lực KPI cuối năm. Đây là mỏ drama lớn nhất của dân văn phòng.
@@ -26,8 +27,10 @@ Mục nào xong thì đánh dấu `[x]`.
 
 ## 🏢 Công ty G-Entertainment
 
+- [x] 🙋 **Cách nhận lương**: theo ngày, theo tuần hoặc theo tháng, người chơi tự chọn.
+
 - [x] 🙋 **Lịch sử công ty**: Genta thành lập ngày 20/10/2010.
-- [ ] 🙋 **Genta** có xuất hiện trong game không? Giờ Genta đang ở đâu, quan hệ thế nào với Giám Đốc Thắng?
+- [x] 🙋 **Genta**: chủ đầu tư ở nước ngoài, không có mặt ở công ty.
 - [ ] 🙋 **Công ty đang làm gì**: các sản phẩm đang chạy (MV, gameshow, phim, show thực tế). Đặt tên cho vài sản phẩm.
 - [ ] 🙋 **Công ty đối thủ**: tên, ai đứng đầu, đã "giành" gì của G-Entertainment.
 - [ ] 🙋 **Slogan, logo, màu nhận diện** của công ty.

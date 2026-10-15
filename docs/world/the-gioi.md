@@ -72,7 +72,7 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 
 ### 2.4. Siêu thị mini & ATM
 - Mua đồ ăn, nước uống, nguyên liệu nấu ăn (rẻ hơn ăn ngoài).
-- **ATM**: rút lương ngày 10. Ngày 10 thì ATM xếp hàng dài.
+- **ATM**: rút lương. Ngày 10 (ngày nhận lương tháng) thì ATM xếp hàng dài.
 - Sự kiện: giờ vàng giảm giá, hết hàng.
 
 ### 2.5. Quán cơm tấm vỉa hè

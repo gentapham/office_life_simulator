@@ -1,4 +1,4 @@
-# G-Entertainment: Office Life Simulator
+# Giả Lập Một Ngày Làm Nhân Viên Văn Phòng
 
 Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đầy drama. Nhập vai một trong 22 nhân viên hoặc chính Siêu Nhân Hồng, đi làm, nói chuyện, hóng hớt, nói xấu, yêu đương, đánh ghen… Mỗi câu trả lời của bạn quyết định ai lên chức, ai bị đuổi việc, và câu chuyện kết thúc ra sao.
 
@@ -16,7 +16,7 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 - **Hội thoại nhiều lựa chọn**, tin đồn lan và biến dạng giữa các nhân vật.
 - **2 cái kết mỗi lượt chơi**: kết thúc của nhân vật bạn chọn (6 kết thúc cho mỗi nhân vật: 3 có hậu, 3 buồn) và kết thúc sự nghiệp của Siêu Nhân Hồng (6 kết thúc). Tổng 144 kết thúc.
 - **Thế giới rộng**: công ty, nhà trọ, siêu thị, quán cơm, quán cà phê, rạp phim, quán nhậu, công viên…
-- **Sinh tồn đời văn phòng**: đói, khát, năng lượng, stress, lương ngày 10, làm thêm freelancer.
+- **Sinh tồn đời văn phòng**: đói, khát, năng lượng, stress, làm thêm freelancer. Lương nhận theo ngày, theo tuần hoặc theo tháng, tùy người chơi chọn.
 - **Song ngữ** Tiếng Việt / English, có âm thanh.
 - **Lưu game ngay trên trình duyệt**, không cần máy chủ.
 

@@ -1,4 +1,7 @@
-# G-Entertainment: Tài liệu thiết kế game (GDD)
+# Giả Lập Một Ngày Làm Nhân Viên Văn Phòng: Tài liệu thiết kế game (GDD)
+
+> **Tên game:** Giả Lập Một Ngày Làm Nhân Viên Văn Phòng
+> **Tên tiếng Anh:** chưa chốt
 
 > Phiên bản: 0.1 (bản nháp đầu tiên)
 > Trạng thái: đang thảo luận, chưa code
@@ -17,7 +20,7 @@ Các tài liệu liên quan:
 
 **Một câu:** game giả lập đi làm ở một công ty giải trí đầy drama, nơi mỗi câu nói của bạn có thể khiến người khác lên chức, bị đuổi việc, hoặc bị đánh ghen.
 
-**Cốt truyện chung:** công ty **G-Entertainment** được **Genta** thành lập ngày **20/10/2010**. Công ty có **22 nhân viên** và một siêu sao mới nổi là **Siêu Nhân Hồng**. Nhiệm vụ chung của cả công ty là **đưa Siêu Nhân Hồng nổi tiếng trong giới showbiz Việt Nam**. Người chơi nhập vai một trong 22 nhân viên, hoặc chính Siêu Nhân Hồng, vừa góp sức (hoặc phá đám) nhiệm vụ chung, vừa khám phá bí ẩn và drama trong công ty.
+**Cốt truyện chung:** công ty **G-Entertainment** được **Genta** thành lập ngày **20/10/2010**. Genta là **chủ đầu tư ở nước ngoài**, không có mặt ở công ty. Mọi việc ở Việt Nam do Giám Đốc Thắng điều hành. Công ty có **22 nhân viên** và một siêu sao mới nổi là **Siêu Nhân Hồng**. Nhiệm vụ chung của cả công ty là **đưa Siêu Nhân Hồng nổi tiếng trong giới showbiz Việt Nam**. Người chơi nhập vai một trong 22 nhân viên, hoặc chính Siêu Nhân Hồng, vừa góp sức (hoặc phá đám) nhiệm vụ chung, vừa khám phá bí ẩn và drama trong công ty.
 
 **Đối tượng:** dân văn phòng Việt Nam, 20 đến 35 tuổi. Đi làm 8 tiếng xong, tối về chơi game "đi làm" tiếp cho vui.
 
@@ -89,7 +92,7 @@ Các tài liệu liên quan:
 
 ### Một lượt chơi = một "mùa" 30 ngày
 - Ngày 1: nhận việc, chọn role, làm quen.
-- Ngày 10: **nhận lương** (đúng chất văn phòng).
+- **Nhận lương** theo cách người chơi đã chọn: mỗi ngày, mỗi cuối tuần, hoặc ngày 10.
 - Giữa mùa: các tuyến truyện chính lên cao trào. Có sự kiện lớn như team building, ra mắt phim, họp toàn công ty.
 - Ngày 30: **đánh giá cuối mùa**, game quyết định kết thúc dựa trên mọi thứ đã xảy ra.
 - Một số kết thúc có thể xảy ra **sớm**, ví dụ bị đuổi việc giữa chừng.
@@ -129,10 +132,18 @@ Các tài liệu liên quan:
 ### 5.3. Tiền
 | Nguồn thu | Ghi chú |
 |---|---|
-| Lương cứng | Nhận ngày 10. Khác nhau theo role |
+| Lương cứng | Khác nhau theo role. Người chơi chọn cách nhận lương (xem bên dưới) |
 | Thưởng nhiệm vụ | Tiền nhỏ hoặc vật phẩm |
 | Freelancer | Làm buổi tối ở nhà hoặc quán cà phê. Có tiền nhưng mất giờ ngủ |
 | Nhậu với sếp | Không có tiền, nhưng có khi được tăng lương |
+
+**Cách nhận lương** (chọn lúc bắt đầu game, đổi được ở phòng Kế Toán, mỗi tuần đổi tối đa 1 lần):
+
+| Cách nhận | Khi nào nhận | Phù hợp với | Ưu / nhược (bản nháp) |
+|---|---|---|---|
+| **Theo ngày** | Cuối mỗi ca làm | Người mới chơi, muốn dễ thở | Không lo hết tiền. Không có thưởng thêm |
+| **Theo tuần** | Chiều thứ 6 | Người chơi bình thường | Cân bằng. Thưởng chuyên cần nhỏ nếu cả tuần không đi trễ |
+| **Theo tháng** | Ngày 10 (đúng chất văn phòng) | Người thích thử thách | Phải biết chi tiêu cả tháng. Thưởng thêm 10% và được tham gia drama "lương về trễ" ngày 10 |
 
 | Khoản chi | Ghi chú |
 |---|---|
