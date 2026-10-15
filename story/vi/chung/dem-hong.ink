@@ -351,6 +351,29 @@ _Rồi cửa phòng chờ mở. Ai đó đặt thêm một cái nĩa lên đĩa.
     _Bạn lách qua chân mọi người, ngoạm miếng bánh to nhất. Không ai cản._
 }
 _Trên tường sảnh, câu slogan "Việc hôm nay cứ để ngày mai tính" vẫn ở đó. Bên dưới, ai đó dán thêm một tờ giấy viết tay: "Ngày mai tới rồi nè."_
+{ vai != "chi_dai":
+    chi_dai: *(tháo bộ đàm, ngồi bệt xuống sân khấu)* Show xong. Không sập. Không cháy. Không ai khóc. …Thôi, có chị khóc. Không tính.
+}
+{ vai != "it":
+    it: *(ăn ly mì cuối)* Cầu dao không ai đụng. Lần đầu tiên.
+}
+{ vai != "chua_te_deadline":
+    chua_te_deadline: Bốn mươi bảy cue. Đủ bốn mươi bảy. *(nhìn tờ cue sheet)* …Tui làm xong từ hôm qua đó. Đừng ai tin.
+}
+_Thứ hai tuần sau, sếp {giam_doc} triệu tập họp toàn công ty. Ai cũng sợ một bài phát biểu 2 tiếng._
+{ vai != "giam_doc":
+    giam_doc: Anh chỉ nói một câu thôi. *(im lặng rất lâu)* …Cảm ơn các em. Thế thôi. Về làm việc đi.
+- else:
+    _Bạn đứng trước cả công ty, cầm tờ giấy phát biểu dài bốn trang. Bạn gấp nó lại, nói: "Cảm ơn các em." Rồi đi về phòng, đóng cửa, ngồi im rất lâu._
+}
+_Đó là bài phát biểu ngắn nhất lịch sử {cong_ty}. Không ai quay lại được. Ai cũng nhớ._
+{ vai != "hr":
+    _Chiều đó, {hr} mời từng người lên phòng uống trà. Lần này, không ai sợ. Trên bàn chỉ có trà lài và một tờ giấy ghi "Tăng lương: đang tính"._
+}
+_Bên kia đường, màn hình LED của LL-Entertainment chạy quảng cáo một ban nhạc mới. Không ai bên này để ý._
+{ vai != "bac_bao_ve":
+    _Ở chòi bảo vệ, bác {bac_bao_ve} viết một lá thư rất ngắn gửi ra nước ngoài, rồi dán tem. Bác cười một mình, lần đầu tiên sau nhiều năm._
+}
 _{cong_ty} sống. Siêu Nhân Hồng là siêu sao hạng A._
 -> chung_3110_mot_thang_sau
 
@@ -391,6 +414,25 @@ _Chiếc mũ hồng được treo trong phòng chờ, cạnh đĩa bánh chuối
 { vai != "cho":
     _Lần đầu tiên, {cho} không sủa khi thấy một người mặc đồ hồng mà không đội mũ. Nó chỉ ngửi, rồi bỏ đi. Đó là lời khen cao nhất của {cho}._
 }
+{ vai != "hong_hot":
+    hong_hot: Ối dồi ôi! Có người lập fanpage "Hội Những Người Có Lông Mày Rậm". Ba trăm nghìn thành viên trong một đêm!
+}
+{ vai != "giam_doc":
+    giam_doc: *(đọc trang 47 lần đầu tiên, rồi đọc tờ phụ lục)* Gia hạn tới Tết… Anh… anh không biết nói gì. Anh không ép ai cả. Cảm ơn em.
+}
+{ vai != "ran_doc":
+    _Ở góc phòng, {ran_doc} nhìn gương mặt không mũ rất lâu. Rồi cúi xuống cuốn sổ tay bìa xanh, viết một dòng, gạch đi, viết lại._
+}
+_Đài Tivi Hóng mời {sieu_nhan_hong} lên chương trình buổi sáng. Không mũ. MC hỏi: "Anh có sợ khán giả hết thích anh không?"_
+{ vai == "sieu_nhan_hong":
+    _Bạn gãi đầu: "Dạ… có. Mà hôm qua có người cảm ơn em bằng tên thật. Lần đầu tiên. Em nghĩ… vậy là đủ."_
+- else:
+    sieu_nhan_hong: *(gãi đầu)* Dạ… có. Mà hôm qua có người cảm ơn em bằng tên thật. Lần đầu tiên. Em nghĩ… vậy là đủ.
+}
+_Đoạn đó được cắt ra, đăng lại, lên xu hướng thêm hai ngày._
+{ vai != "dan_dau_tu":
+    dan_dau_tu: Số liệu nói, người ta theo dõi cái mặt nhiều hơn cái mũ 34%. Lần đầu tiên số liệu làm anh muốn khóc.
+}
 _{cong_ty} sống thêm một mùa. Nguyễn {sieu_nhan_hong} được yêu thương bằng chính gương mặt của mình._
 -> chung_3110_mot_thang_sau
 
@@ -430,6 +472,22 @@ _Trên cổng {cong_ty}, ai đó dán một tấm ảnh in khổ to: Siêu Nhân
 { vai != "cho":
     _{cho} nhìn tấm ảnh, sủa nó một tiếng, rồi nằm xuống ngay bên dưới, như canh giữ._
 }
+{ vai != "thuc_tap_sinh":
+    thuc_tap_sinh: Dạ em mới học được "Siêu Nhân Gâu" nghĩa là gì ạ! Em dùng nó với mẹ em, mẹ em cười ạ!
+}
+{ vai != "idol_het_thoi":
+    idol_het_thoi: Meme mà nổi vậy hả? Hồi 2015 người ta cũng chế "Công Viên" thành meme đó. Anh… anh hiểu cảm giác này. *(cười)* Tận hưởng đi.
+}
+_Một tháng sau, người ta vẫn gửi sticker Siêu Nhân Hồng kẹt áo choàng mỗi khi kẹt xe. Kẹt xe thì ngày nào cũng có. Nên ngày nào Siêu Nhân Hồng cũng có mặt trong điện thoại của cả nước._
+{ vai != "hr":
+    hr: *(dán tấm sticker "Ét o ét" lên tách trà hồng)* {chung_xung_hoa("hr")} giữ cái này làm kỷ niệm. Đừng nói ai.
+}
+_Có một trường mẫu giáo ở Ven Đô mời Siêu Nhân Hồng tới "tạo dáng cho các bé xem". Hai mươi đứa nhỏ tạo dáng chữ V theo. Một đứa té. Cả lớp cười._
+{ vai == "sieu_nhan_hong":
+    _Bạn đỡ đứa nhỏ dậy. Nó nói: "Chú cũng té hoài mà!" Bạn cười to tới mức kính mũ bị mờ._
+- else:
+    _Siêu Nhân Hồng đỡ đứa nhỏ dậy. Nó nói: "Chú cũng té hoài mà!" Trong mũ có tiếng cười, to tới mức kính mũ bị mờ._
+}
 _{cong_ty} sống. Siêu Nhân Hồng không phải siêu sao. Siêu Nhân Hồng là meme quốc dân._
 -> chung_3110_mot_thang_sau
 
@@ -467,6 +525,19 @@ _Ai đó dán lên móc treo một mẩu giấy: "Đồ dự phòng số 1. Đ�
     _Bạn nằm trước cửa kho cả đêm. Bên trong có mùi hồng. Bạn vẫn ghét mùi đó. Nhưng hôm nay nó buồn quá, nên bạn nằm canh._
 }
 _Sáng hôm sau, 6 giờ 30, cổng {cong_ty} vẫn mở. Như mười sáu năm nay._
+{ vai != "hong_hot":
+    _{hong_hot} lướt fanpage. Bài cuối cùng có 41 lượt thích. Bình luận duy nhất: "Ủa ảnh là ai vậy?". Không ai trả lời._
+}
+{ vai != "ke_toan":
+    _{ke_toan} về nhà số 18, đứng trước bức tranh treo tường rất lâu. Sau bức tranh có cái két. Chị không mở. Chưa._
+}
+{ vai != "chua_te_deadline":
+    _{chua_te_deadline} lật cái đồng hồ cát trên bàn. Lần đầu tiên. Cát chảy. {chua_te_deadline} ngồi nhìn tới hạt cuối cùng._
+}
+{ vai != "thuc_tap_sinh":
+    thuc_tap_sinh: *(thu dọn bàn thực tập)* Dạ… em hết thực tập rồi ạ. Em… em cảm ơn mọi người ạ. *(cúi chào 90 độ, lâu hơn mọi khi)*
+}
+_Ở góc kho, chiếc găng tay hồng từ ngày 4/10 vẫn nằm trong đống báu vật dưới gầm cầu thang. Không ai còn đi tìm nó._
 _Siêu Nhân Hồng chìm nghỉm. Không ai biết người trong bộ đồ hồng tên gì._
 -> chung_3110_mot_thang_sau
 
@@ -499,6 +570,23 @@ _Người theo dõi giảm từng phút. Những người từng bình luận "�
 _Một chiều mưa cuối tháng 11, có người thấy một bóng áo hồng không đội mũ đẩy xe chết máy cho ai đó ở Đại Lộ Kẹt Xe. Người được giúp không nhận ra. Chỉ nói "cảm ơn anh". Bóng áo hồng gật đầu, đi tiếp._
 { vai != "cho":
     _Ở cổng {cong_ty}, {cho} vẫn ngồi nhìn ra đường mỗi sáng, lúc 9 giờ, đúng giờ chiếc xe hồng từng tới. Nó không sủa. Không có gì để sủa._
+}
+{ vai != "chi_dai":
+    chi_dai: *(ném điện thoại lên ghế)* Đứa nào bịa thêm một chữ trên mạng, chỉ mặt chị. …Mà chỉ mặt kiểu gì khi tụi nó toàn tài khoản ảo.
+}
+{ vai != "sales":
+    sales: *(cúp máy lần thứ sáu)* Răng Hồng rút. Hồng Hào rút. Sữa Chua Hồng Hào… vẫn chưa rút. Chị không hiểu nổi họ. Chị thương họ.
+}
+{ vai != "ran_doc":
+    _{ran_doc} đọc bài bóc phốt ba lần. Lần thứ ba, {ran_doc} gập máy lại, không chia sẻ. Hóa ra nhìn người khác ngã cũng không vui như mình tưởng._
+}
+_Thứ hai, {ke_toan} gửi email toàn công ty: "Họp về trang 47. 9 giờ. Không ai được vắng." Lần đầu tiên, cả công ty biết trang 47 viết gì._
+{ vai != "thanh_xin_nghi":
+    _Hôm đó không ai xin nghỉ. Kể cả {thanh_xin_nghi}._
+}
+_Cả phòng họp im lặng. Rồi {chi_dai} đứng dậy, rót trà cho từng người. Không ai uống. Nhưng ai cũng cầm._
+{ vai != "bac_bao_ve":
+    _Tối đó, bác {bac_bao_ve} đặt lên bàn chòi một phong bì dán kín. Bác nhìn nó cả đêm. Chưa mở._
 }
 _Siêu Nhân Hồng bị tẩy chay. Mạng xã hội quay lưng. Chỉ có những người được giúp, ngoài đời thật, là chưa bao giờ quay lưng. Nhưng họ không ở trên mạng._
 -> chung_3110_mot_thang_sau
@@ -534,6 +622,22 @@ _Màn hình LED trên tòa nhà LL chiếu Siêu Nhân Hồng mỗi tối. Nhìn
 }
 { vai != "bac_bao_ve":
     _Bác {bac_bao_ve} pha ấm trà, đặt hai cái chén. Một chén để trước ghế trống, nơi ai đó từng ngồi uống trà đá sau mỗi buổi quay._
+}
+{ vai != "hong_hot":
+    hong_hot: Nghe gì chưa? …Thôi. Hông có gì để nghe nữa hết. *(úp điện thoại xuống bàn, lần đầu tiên)*
+}
+{ vai != "chua_te_deadline":
+    _{chua_te_deadline} nhận một tin nhắn lúc 2 giờ sáng: "Em ăn chưa?". Không có tên người gửi. Số lạ. {chua_te_deadline} đọc rất lâu, rồi gõ "Ăn rồi", rồi xóa, rồi gõ lại._
+}
+{ vai != "designer":
+    _{designer} nhìn màn hình LED bên kia đường. Họa tiết xanh lá chuối trên bộ đồ mới, {designer} nhận ra từng nét. Có những bản thiết kế, người vẽ ước mình chưa từng vẽ._
+}
+{ vai != "ke_toan":
+    ke_toan: *(gấp thư luật sư lại)* Mười tỷ. *(im lặng)* Tui đã nói từ ngày đầu tiên. Mà không ai nghe. Tui cũng không nói to.
+}
+_Trong kho dưới gầm cầu thang, chiếc găng tay hồng vẫn nằm đó, giữa chìa khóa, son môi và điện thoại cũ. Nó là thứ duy nhất của Siêu Nhân Hồng còn ở lại {cong_ty}._
+{ vai != "thuc_tap_sinh":
+    thuc_tap_sinh: Dạ… em vẫn thấy người trong phim của chị {bien_kich} giống một người lắm ạ. Mà chắc em nhớ nhầm ạ.
 }
 _Siêu Nhân Hồng bị cướp mất, ngay trước buổi diễn lớn nhất. Người theo dõi đi theo. Chiếc mũ thì không bao giờ quay lại._
 -> chung_3110_mot_thang_sau

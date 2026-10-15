@@ -3,7 +3,7 @@
 // ============================================================
 
 // ---------- 4 chỉ số chính ----------
-VAR bk_y_tuong_that = 20      // 💡 Ý Tưởng Thật
+VAR bk_y_tuong_that = 10      // 💡 Ý Tưởng Thật
 VAR bk_y_tuong_muon = 0       // 📎 Ý Tưởng "Mượn"
 VAR bk_do_lo = 10             // 📖 Độ Lộ Bản Thảo (0..100)
 VAR bk_cam_hung = 50          // 🌧️ Cảm Hứng (0..100)
@@ -71,10 +71,17 @@ VAR bk_ghi_cong_co_nam = false
 ~ bk_cam_hung = gioi_han(bk_cam_hung + n)
 
 === function bk_that(n) ===
-~ bk_y_tuong_that = gioi_han(bk_y_tuong_that + n)
+// Không chặn trên 100: hai loại ý tưởng được so với nhau ngày 30/10
+~ bk_y_tuong_that = bk_y_tuong_that + n
+{ bk_y_tuong_that < 0:
+    ~ bk_y_tuong_that = 0
+}
 
 === function bk_muon(n) ===
-~ bk_y_tuong_muon = gioi_han(bk_y_tuong_muon + n)
+~ bk_y_tuong_muon = bk_y_tuong_muon + n
+{ bk_y_tuong_muon < 0:
+    ~ bk_y_tuong_muon = 0
+}
 { n > 0 && ngay > 15:
     ~ bk_tham_khao_sau_15 = true
 }

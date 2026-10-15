@@ -120,7 +120,7 @@ _"Người Gác Két." "Người Hùng Không Tên." Không phải ý tưởng. 
     _{sieu_nhan_hong} đẩy xe cho cả phố, không nhớ ai. {thuc_tap_sinh} nhớ người đẩy xe cả đời, không biết là ai._
     _Bạn có một cái kết. Một cái kết mà không ai viết được, trừ cuộc đời._
 * [📎 Nhặt bút, ghi lại từng chữ. Cảnh đẩy xe trong mưa: cao trào của phim.]
-    ~ bk_muon(15)
+    ~ bk_muon(20)
     ~ bk_phim(15)
     ~ bk_trang(3)
     _Bạn viết nhanh, rất nhanh, trước khi lương tâm kịp bật đèn._

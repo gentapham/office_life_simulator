@@ -210,7 +210,7 @@ _Trên mạng, người ta chia nhau tin {thanh_xin_nghi} vào bán kết một 
     _4 giờ sáng. Bạn gõ chữ "HẾT". Bí ngáp. Ngoài cửa sổ, Phố Cũ chưa thức._
 * [📎 Dùng nguyên chuyện đẩy xe hai cây số của {thuc_tap_sinh} làm cảnh cuối. Đúng từng chi tiết.]
     ~ bk_phim(50)
-    ~ bk_muon(15)
+    ~ bk_muon(25)
     ~ nghi(-15)
     _Bạn viết nhanh như chép. Vì đúng là đang chép. Chép đời người khác._
 * [🤝 Gọi {thuc_tap_sinh}: "Anh qua gác mái được hông? Mình viết cảnh cuối chung."]

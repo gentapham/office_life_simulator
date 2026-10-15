@@ -149,7 +149,7 @@ thuc_tap_sinh: Dạ… em mới vô nên chưa biết ạ. Mà em có ý tưởn
 _Cả phòng im một giây. Một giây rất đẹp. Bạn nghe tim mình đập đúng nhịp của một câu mở đầu hay._
 truong_phong: Ừ, cái này mình take note lại nhé. Giờ mình sang mục tiếp theo, 5 phút thôi.
 * [📎 Ghi lại từng chữ vào sổ, không nói gì.]
-    ~ bk_muon(15)
+    ~ bk_muon(20)
     ~ bk_mo_nhanh_nguoi_hung = true
     ~ bk_ghi_chu_y_tuong_duy = true
     _Theo thói quen, bạn ghi đầu trang: "Ý tưởng của {thuc_tap_sinh} (2/10)". Rồi bên dưới, chép đủ từng chữ._

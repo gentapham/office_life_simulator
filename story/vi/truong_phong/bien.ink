@@ -4,7 +4,7 @@
 
 // ---------- Chỉ số riêng ----------
 VAR tp_so_cuoc_hop = 0        // 📅 Số Cuộc Họp: chỉ tăng, không bao giờ giảm
-VAR tp_ghe_pho = 30           // 🪑 Điểm Ghế Phó (0..100)
+VAR tp_ghe_pho = 40           // 🪑 Điểm Ghế Phó (0..100)
 VAR tp_do_lo = 10             // 🎞️ Độ Lộ (0..100). Đạt 100 là lộ bài
 VAR tp_tay_nghe = 0           // 🛠️ Tay Nghề Thật (0..100), không bao giờ giảm
 

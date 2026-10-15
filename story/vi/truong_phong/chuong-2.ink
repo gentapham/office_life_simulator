@@ -217,6 +217,7 @@ _Cả công ty tập trung xem MV đầu tiên của Siêu Nhân Hồng trên m�
     _MV ra mắt trễ một ngày. Không ai hỏi vì sao máy treo đúng sáng nay._
 - else:
     ~ follow(60000)
+    ~ tp_ghe(5)
     _MV chạy. Hồng, sáng, nhịp nhanh. Ở giây 2:47, có một con cú nhỏ lướt qua một khung hình. Không ai thấy._
     giam_doc: Đỉnh! Ai làm cái này?
 }
