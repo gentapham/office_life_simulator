@@ -85,7 +85,7 @@ chua_te_deadline: *(lao vào phòng dựng, mặt trắng bệch)* {editor}. Ét
 # ngay:23 # gio:19:30 # noi:studio_tang_2 # bat_buoc
 _Sinh nhật {sieu_nhan_hong}, 31 tuổi. Livestream. Bạn ngồi bàn điều khiển, ba máy quay, mười hai nghìn người xem._
 _{thuc_tap_sinh} đóng vai "Mr. Kevin Trộn" của BTT Global, đeo kính râm, đọc lời chúc bằng giọng chủ tịch ngân hàng. Diễn tốt tới mức đáng ngờ._
-_Rồi {sieu_nhan_hong} cầm micro: "Anh {chua_te_deadline}, em thích anh. Không phải PR." Hashtag #VũƠiTrảLờiĐi lên xu hướng trong ba phút._
+_Rồi {sieu_nhan_hong} cầm micro: "Anh {chua_te_deadline}, em thích anh. Không phải PR." Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên xu hướng trong ba phút._
 _Và rồi một bóng vàng lao vào khung hình. Chiếc bánh kem hồng ba tầng đổ ụp. {cho} ngồi giữa đống kem, rất hài lòng._ # hen_gio:5
 * [🎥 Chuyển ngay sang máy 3, cận mặt {cho} dính kem, giữ đúng 4 giây.]
     ~ follow(10000)

@@ -237,8 +237,8 @@ _Bạn lục album. Có một tấm: bạn 7 tuổi, đứng trên cái ghế đ
     ~ son_soi(5)
 * [📸 Đăng tấm khác: bạn 5 tuổi đang ngủ, không liên quan gì tới hát.]
     _An toàn. Không ai bình luận gì ngoài {hong_hot}: "Dễ thương ghê, giờ sao bị vậy?"_
-* [😶 Không đăng gì. Ngồi hát cho bà nghe qua điện thoại.]
-    _Bà ngoại thật, ở quê, khỏe re, nghe xong nói: "Hát hay vậy mà sao con đi làm văn phòng?"_
+* [😶 Không đăng gì. Ngồi hát cho tấm ảnh bà ngoại trên tường nghe.]
+    _Bà cười trong khung ảnh, khỏe re như mọi ngày. Bạn tưởng tượng bà hỏi: "Hát hay vậy mà sao con đi làm văn phòng?"_
     ~ son_mo(3)
     ~ cang_thang(-10)
 - -> END

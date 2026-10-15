@@ -322,7 +322,7 @@ _20 giờ. Màn hình LED bật tên bạn. Cùng lúc, bên kia đường, có 
 === chung_kt_sieu_sao_hang_a ===
 # ket_thuc_su_nghiep:sieu_sao_hang_a # loai:co_hau
 _🌟 SIÊU SAO HẠNG A_
-_0 giờ 00, ngày 1/11. Bảng xếp hạng xu hướng làm mới. Ở vị trí số 3: #ĐêmHồng. Số 5: #HồngLàTháiĐộ. Số 8: #SiêuNhânHồng._
+_0 giờ 00, ngày 1/11. Bảng xếp hạng xu hướng làm mới. Ở vị trí số 3: \#ĐêmHồng. Số 5: \#HồngLàTháiĐộ. Số 8: \#SiêuNhânHồng._
 _Ba trên mười. Hợp đồng chỉ cần một._
 giam_doc: *(vẫn mặc bộ Ông Kẹ Ngân Hàng, ôm điện thoại)* Một triệu… Một triệu thật à? Các em ơi, một triệu thật à?!
 { vai != "ke_toan":
@@ -476,7 +476,7 @@ _Siêu Nhân Hồng chìm nghỉm. Không ai biết người trong bộ đồ h�
 # ket_thuc_su_nghiep:bi_tay_chay # loai:buon
 _🔥 BỊ TẨY CHAY_
 _23 giờ 40 đêm Đêm Hồng, khi pháo giấy còn chưa quét xong, một bài đăng lan khắp mạng: bóc lại vụ việc nổ ra sau ngày 28/10, kèm ảnh chụp màn hình, ghi âm, và một bảng so sánh "trước và sau"._
-_Tới 0 giờ 30, hashtag #TẩyChayHồng đứng thứ 2 xu hướng. Lần đầu tiên Siêu Nhân Hồng vào top 10. Theo cách không ai muốn._
+_Tới 0 giờ 30, hashtag \#TẩyChayHồng đứng thứ 2 xu hướng. Lần đầu tiên Siêu Nhân Hồng vào top 10. Theo cách không ai muốn._
 { vai != "hong_hot":
     hong_hot: *(điện thoại rung liên tục)* Fanpage nhận 4.000 bình luận một giờ. Tui… tui hông dám mở cái nào hết.
 }

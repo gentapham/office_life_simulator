@@ -56,9 +56,9 @@ _Hậu trường. Điện thoại rung liên tục. Group Zalo-lô công ty: 400
 _Rồi một tin nhắn riêng, từ {hr}:_
 _"Anh vote cho em 47 lần đó. Đơn nghỉ việc anh duyệt rồi. Lý do ghi: 'Đi hát'. Lý do đầu tiên của em mà anh tin."_
 _Bạn ngồi xuống bậc thang sau sân khấu, ôm cúp, cười tới khi nước mắt khô._
-_Một tin nhắn nữa, từ một số lạ. Số của bà ngoại, ở quê:_
-_"Bà xem tivi rồi. Bà khỏe lắm. Từ giờ con khỏi lấy bà ra làm lý do nghe chưa."_
-_Bạn bật cười, trả lời: "Dạ. Bà nghỉ ốm từ hôm nay nha bà."_
+_Bạn mở album, tìm tấm ảnh bà ngoại cười khỏe re, gửi vào group công ty kèm một dòng:_
+_"Bà em khỏe lắm. Bà chưa từng ốm. Từ hôm nay bà được nghỉ ốm vĩnh viễn."_
+_Group im 3 giây. Rồi 21 cái thả tim. Cái đầu tiên của {hr}._
 -> END
 
 // ------------------------------------------------------------

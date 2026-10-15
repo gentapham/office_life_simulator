@@ -124,7 +124,7 @@ sales: Chị… à em… à chị ơi! Tối nay phải có "Mr. Kevin Trộn" c
 _Livestream sinh nhật. Mười hai nghìn người đang xem. {sieu_nhan_hong} cầm micro, giọng run run dưới lớp mũ._
 sieu_nhan_hong: Hôm nay sinh nhật em, em có một điều muốn nói… *(quay sang góc phòng)* Anh {chua_te_deadline}, em thích anh. Thiệt. Không phải PR.
 _Góc phòng, {chua_te_deadline} đang lướt Tóp-tóp. Thấy chính mình trên Tóp-tóp. Ngẩng đầu lên._
-hong_hot: *(gõ điên cuồng)* Hashtag #VũƠiTrảLờiĐi lên top xu hướng rồi mấy bà ơi!
+hong_hot: *(gõ điên cuồng)* Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên top xu hướng rồi mấy bà ơi!
 _Và rồi, đúng như mọi kịch bản tồi của cuộc đời: một bóng vàng lao vào khung hình. Chiếc bánh kem hồng ba tầng đổ ụp xuống sàn._
 cho: Gâu! *(ngồi giữa đống kem, mặt đầy kem hồng, rất hài lòng)*
 { bk_ke_hoach_tuat:
