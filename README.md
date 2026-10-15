@@ -6,7 +6,7 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 
 Đi làm 8 tiếng chưa đủ? Tối về đi làm tiếp trong game :v
 
-> 🚧 Đã có **bản đọc thử dạng chữ**: chơi trọn tháng 10 của cả 23 nhân vật, đọc từng cảnh, xem kết thúc. Bản 3D đang làm.
+> 🚧 Đã chơi được bản 3D đầu tiên (văn phòng G-Entertainment) và bản dạng chữ cho cả 23 nhân vật.
 >
 > ▶️ **Chơi thử:** https://gentapham.github.io/office_life_simulator/
 
@@ -72,7 +72,8 @@ Khi đang sửa giao diện: chạy `npm run build:story` một lần, sau đó 
 - [x] Hoàn thiện tài liệu thế giới và truyện của 23 nhân vật (bản nháp, chờ duyệt)
 - [x] Viết đủ thoại cho 23 nhân vật và nội dung chung (Ink)
 - [x] Bản đọc thử dạng chữ: chơi cả tháng, duyệt từng cảnh, lưu trên trình duyệt
-- [ ] Bản chạy thử 3D: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
+- [x] Bản 3D đầu tiên: tòa nhà G-Entertainment 2 tầng + sân thượng, góc nhìn thứ nhất/thứ ba, nói chuyện với đồng nghiệp, cảnh truyện theo địa điểm, chơi trọn tháng
+- [ ] Bản 3D tiếp theo: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
 - [ ] Rắn Độc chơi được trọn 30 ngày với 6 kết thúc
 - [ ] Mở rộng thế giới và thêm role
 - [ ] Âm thanh, tiếng Anh, tối ưu điện thoại

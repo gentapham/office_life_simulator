@@ -15,6 +15,7 @@
     "vite": "5.4.11"
   },
   "dependencies": {
-    "inkjs": "2.2.3"
+    "inkjs": "2.2.3",
+    "three": "0.169.0"
   }
 }

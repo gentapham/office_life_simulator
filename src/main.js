@@ -91,6 +91,7 @@ function danhGiaDieuKien(expr, story) {
 // MÀN HÌNH CHÍNH: CHỌN NHÂN VẬT
 // ============================================================
 function renderHome() {
+  tatG3D();
   const save = saveLoad();
   app.replaceChildren(
     h("div", { class: "wrap" },
@@ -264,20 +265,27 @@ class LuotChoi {
 let L = null;           // lượt chơi hiện tại
 let UI = {};            // các phần tử đang hiển thị
 let timerHandle = null;
+let CHE_DO = "chu";      // "chu" | "3d"
+let G = null;            // Game3D đang chạy
+let G3D_MOD = null;      // module 3D (tải khi cần)
+function tatG3D() { if (G) { G.huy(); G = null; } CHE_DO = "chu"; document.body.classList.remove("g3d-on"); }
 
 async function openRole(ma, opts = {}) {
+  tatG3D();
   app.replaceChildren(h("div", { class: "wrap" }, h("p", {}, "Đang tải truyện…")));
   await loadMeta();
   const json = await loadStoryJson(ma);
   L = new LuotChoi(ma, json);
   const save = saveLoad();
   if (opts.tiepTuc && save && save.ma === ma) L.fromSave(save);
-  renderRole(opts.tiepTuc && save && save.ma === ma ? "choi" : "gioi_thieu");
+  renderRole(opts.tiepTuc && save && save.ma === ma ? "3d" : "gioi_thieu");
 }
 
 function renderRole(tab) {
+  tatG3D();
+  if (tab === "3d") { render3D(); return; }
   const n = THEO_MA[L.ma];
-  const tabs = [["choi", "Chơi cả tháng"], ["duyet", "Duyệt từng cảnh"]];
+  const tabs = [["3d", "Chơi 3D"], ["choi", "Chơi dạng chữ"], ["duyet", "Duyệt từng cảnh"]];
   const body = h("div", {});
   app.replaceChildren(
     h("div", { class: "wrap" },
@@ -285,7 +293,7 @@ function renderRole(tab) {
         h("div", { class: "role-head" }, h("div", {}, h("h2", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`), h("p", {}, n.chuc))),
         h("div", { class: "top-actions" },
           h("div", { class: "tabs", role: "tablist" }, tabs.map(([id, label]) =>
-            h("button", { class: "btn", role: "tab", "aria-selected": String(tab === id || (tab === "gioi_thieu" && id === "choi")), onclick: () => renderRole(id) }, label))),
+            h("button", { class: "btn", role: "tab", "aria-selected": String(tab === id || (tab === "gioi_thieu" && id === "3d")), onclick: () => renderRole(id) }, label))),
           h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật"),
         ),
       ),
@@ -309,7 +317,8 @@ function renderIntro(body) {
       h("p", { class: "narr" }, "Tối 31/10 là Đêm Hồng: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
     ),
     h("div", { class: "choices" },
-      h("button", { class: "choice", onclick: () => { saveWrite(null); const g = L.batDauNgay(1); renderRole("choi"); g.forEach(x => addSys(x)); nextScene(); } }, "▶ Bắt đầu ngày 1/10"),
+      h("button", { class: "choice", onclick: () => { saveWrite(null); L.batDauNgay(1); render3D(); } }, "▶ Bắt đầu ngày 1/10"),
+      h("button", { class: "choice", onclick: () => { saveWrite(null); const g = L.batDauNgay(1); renderRole("choi"); g.forEach(x => addSys(x)); nextScene(); } }, "Chơi dạng chữ"),
     ),
   ));
 }
@@ -372,7 +381,7 @@ function updateSide() {
 }
 
 function scrollLog() { UI.log.scrollTop = UI.log.scrollHeight; }
-function addSys(text) { UI.log.append(h("div", { class: "scene-tag" }, text)); scrollLog(); }
+function addSys(text) { UI.log.append(h("div", { class: "scene-tag" }, text)); scrollLog(); if (CHE_DO === "3d") thongBao3D(text); }
 
 function renderLine(text, tags, story, playerCode) {
   const t = text.trim();
@@ -458,6 +467,7 @@ function timMinigame(visited) {
 }
 
 function nextScene() {
+  if (CHE_DO === "3d") return nextScene3D();
   saveWrite(L.toSave());
   if (L.qi < L.queue.length) {
     const name = L.queue[L.qi++];
@@ -496,6 +506,7 @@ function afterScene(visited = new Set()) {
 }
 
 function dayEnd() {
+  if (CHE_DO === "3d") return dayEnd3D();
   if (L.ngay >= 31) { finale(); return; }
   const npcs = L.npcKnots().filter(k => !L.npcDone.has(k.name));
   UI.choices.replaceChildren(
@@ -523,7 +534,7 @@ async function finale() {
   const chung = new Story(await loadStoryJson("chung"));
   dongBo(L.story, chung);
   chung.variablesState["vai"] = L.ma;
-  addSys("🎃 19:30 · Sân khấu Đêm Hồng");
+  addSys("19:30 · Sân khấu Đêm Hồng");
   updateDayline("19:30", "san_khau_dem_hong");
   chung.ChoosePathString("chung_3110_dem_hong");
   runStory(chung, L.ma, () => {
@@ -538,7 +549,7 @@ async function finale() {
           chung.ChoosePathString("chung_3110_ket_thuc_su_nghiep");
           runStory(chung, L.ma, () => {
             UI.choices.replaceChildren(h("button", { class: "choice", onclick: () => {
-              addSys("🗓️ Một tháng sau…");
+              addSys("Một tháng sau…");
               chung.ChoosePathString("chung_3110_mot_thang_sau");
               runStory(chung, L.ma, () => showSummary(chung));
             } }, "Một tháng sau… ▸"));
@@ -571,6 +582,164 @@ function showSummary(chung) {
     h("button", { class: "choice", onclick: renderHome }, "Chọn nhân vật khác"),
   );
 }
+
+// ============================================================
+// CHƠI 3D
+// ============================================================
+async function render3D() {
+  CHE_DO = "3d";
+  document.body.classList.add("g3d-on");
+  app.replaceChildren(h("div", { class: "g3d" }, h("p", { class: "g3d-loading" }, "Đang dựng văn phòng…")));
+  G3D_MOD ||= { ...(await import("./3d/game3d.js")), ...(await import("./3d/the-gioi.js")) };
+  if (CHE_DO !== "3d") return;
+  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY } = G3D_MOD;
+  const n = THEO_MA[L.ma];
+
+  const khung = h("div", { class: "g3d-khung" });
+  UI.dayline = h("div", { class: "g3d-ngay" });
+  UI.log = h("div", { class: "g3d-log", "aria-live": "polite" });
+  UI.choices = h("div", { class: "g3d-choices" });
+  UI.side = h("aside", { class: "side" });
+  const tieuDe = h("b", {});
+  const dlg = h("section", { class: "g3d-dlg", hidden: true, role: "dialog", "aria-label": "Hội thoại" }, h("header", {}, tieuDe), UI.log, UI.choices);
+  const keChiSo = h("div", { class: "g3d-drawer", hidden: true }, h("div", { class: "g3d-drawer-head" }, h("b", {}, "Chỉ số"), h("button", { class: "g3d-btn", onclick: () => { keChiSo.hidden = true; } }, "Đóng")), UI.side);
+  const mtChu = h("span", {}), mtPhu = h("small", {}), mtMui = h("i", { class: "g3d-mui" });
+  const mucTieu = h("div", { class: "g3d-muctieu", hidden: true }, mtMui, h("div", {}, mtChu, mtPhu));
+  const goiY = h("button", { class: "g3d-goiy", hidden: true, onclick: () => G?.tuongTac() });
+  const btnGoc = h("button", { class: "g3d-btn", onclick: () => G?.doiGoc() }, "Góc nhìn thứ nhất");
+  const toast = h("div", { class: "g3d-toast", "aria-live": "polite" });
+  const man = h("div", { class: "g3d-man" });
+  const tamNgung = h("div", { class: "g3d-pause", hidden: true },
+    h("div", {},
+      h("b", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`),
+      h("p", {}, "W A S D: đi · Shift: chạy · Chuột: nhìn · E: nói chuyện, tương tác · V: đổi góc nhìn · Esc: tạm dừng"),
+      h("button", { class: "btn primary", onclick: () => G?.canvas.requestPointerLock?.() }, "Vào văn phòng")));
+  app.replaceChildren(h("div", { class: "g3d" },
+    khung,
+    h("div", { class: "g3d-hud-trai" }, UI.dayline),
+    mucTieu,
+    h("div", { class: "g3d-hud-phai" }, btnGoc,
+      h("button", { class: "g3d-btn", onclick: () => { updateSide(); keChiSo.hidden = !keChiSo.hidden; } }, "Chỉ số"),
+      h("button", { class: "g3d-btn", onclick: () => renderRole("choi") }, "Dạng chữ"),
+      h("button", { class: "g3d-btn", onclick: renderHome }, "Thoát")),
+    h("div", { class: "g3d-tam" }),
+    goiY, toast, dlg, keChiSo, tamNgung, man,
+  ));
+
+  G = new Game3D(khung, { vai: L.ma, tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma, tenVai: ma => THEO_MA[ma]?.vai || "" });
+  const g = G;
+  window.__g3d = g; // để kiểm thử tự động
+  const tam = app.querySelector(".g3d-tam");
+  g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn thứ nhất" : "Góc nhìn thứ ba"; tam.hidden = goc !== "1"; };
+  g.onDoiGoc(g.goc);
+  g.onKhoaChuot = khoa => { tamNgung.hidden = khoa || g.khoa || g.dienThoai; };
+  if (!g.dienThoai) tamNgung.hidden = false;
+  g.onGoiY = gy => {
+    const chu = gy ? (g.dienThoai ? gy.nhan : `E · ${gy.nhan}`) : "";
+    if (goiY.textContent !== chu) goiY.textContent = chu;
+    goiY.hidden = !gy;
+  };
+  g.onKhung = () => {
+    const m = g.khoangCachMucTieu();
+    if (!m) return;
+    if (m.tang !== g.tang) { mtMui.style.transform = ""; mtMui.classList.add("tang"); return; }
+    mtMui.classList.remove("tang");
+    mtMui.style.transform = `rotate(${(-(m.huong - g.yaw - Math.PI)) * 180 / Math.PI}deg)`;
+  };
+  g.onNoiChuyen = ma => noiChuyen3D(ma);
+  g.onCauThang = (c, di) => chuyenCanh(c.nhan, di);
+  g.onCong = () => { if (L.qi >= L.queue.length) hoiDiNgu(); else thongBao3D("Hôm nay vẫn còn việc ở công ty."); };
+
+  // ----- hội thoại -----
+  moHoiThoai = ten => { tieuDe.textContent = ten || ""; UI.log.replaceChildren(); dlg.hidden = false; tamNgung.hidden = true; g.datKhoa(true); };
+  dongHoiThoai = () => { dlg.hidden = true; clearInterval(timerHandle); g.datKhoa(false); if (!g.dienThoai && document.pointerLockElement !== g.canvas) tamNgung.hidden = false; };
+  thongBao3D = text => {
+    const el = h("div", {}, text); toast.append(el);
+    setTimeout(() => el.classList.add("het"), 2600); setTimeout(() => el.remove(), 3200);
+  };
+  const datMucTieuHUD = (chu, phu) => { mtChu.textContent = chu; mtPhu.textContent = phu || ""; mucTieu.hidden = !chu; };
+  const chuyenCanh = (chu, xong) => {
+    man.textContent = chu; man.classList.add("on");
+    setTimeout(() => { xong?.(); setTimeout(() => man.classList.remove("on"), 350); }, 450);
+  };
+  const khuMacDinh = () => KHU_CUA_VAI[L.ma] || "khu_lam_viec";
+  const huongDanTang = (k) => k.tang === g.tang ? "" : k.tang === 0 ? "Xuống tầng 1 bằng cầu thang" : k.tang === 1 ? (g.tang === 0 ? "Lên tầng 2 bằng cầu thang ở sảnh" : "Xuống tầng 2") : "Lên sân thượng từ tầng 2";
+
+  nextScene3D = () => {
+    saveWrite(L.toSave());
+    if (L.qi < L.queue.length) {
+      const name = L.queue[L.qi];
+      const k = L.knots.find(x => x.name === name);
+      const noi = tag(k?.tags, "noi"), gio = tag(k?.tags, "gio");
+      const khu = khuCuaNoi(noi) || khuMacDinh();
+      const kv = KHU[khu];
+      const m = String(gio || "").match(/(\d{1,2}):(\d{2})/);
+      if (m) g.datGio(+m[1], +m[2]);
+      updateDayline(gio && gio !== true ? gio : null, null);
+      dongHoiThoai();
+      const tenNoi = khu === "ra_ngoai" ? prettyNoi(noi) : kv.ten;
+      datMucTieuHUD(tenNoi, khu === "ra_ngoai" ? "Ra cổng công ty để đi" : (huongDanTang(kv) || (gio && gio !== true ? `Lúc ${gio}` : "")));
+      g.datMucTieu(khu, () => {
+        datMucTieuHUD("");
+        L.qi++;
+        const mo = () => { moHoiThoai(tenNoi); playKnot(name, v => afterScene(v)); };
+        if (khu === "ra_ngoai") chuyenCanh(tenNoi, mo); else mo();
+      });
+      return;
+    }
+    dayEnd3D();
+  };
+  dayEnd3D = () => {
+    saveWrite(L.toSave());
+    if (L.ngay >= 31) { moHoiThoai("Đêm Hồng Halloween"); finale(); return; }
+    dongHoiThoai();
+    g.datGio(18, 30);
+    updateDayline("18:30", null);
+    datMucTieuHUD("Hết giờ làm. Ra cổng để về nhà", "Có thể nói chuyện với đồng nghiệp trước khi về");
+    g.datMucTieu("ra_ngoai", hoiDiNgu);
+  };
+  const hoiDiNgu = () => {
+    g.xoaMucTieu(); datMucTieuHUD("");
+    moHoiThoai("Cổng công ty");
+    UI.choices.replaceChildren(
+      h("button", { class: "choice", onclick: () => {
+        chuyenCanh(`Sáng ${thuCuaNgay(L.ngay + 1)}, ${L.ngay + 1}/10`, () => {
+          const ghiChu = L.batDauNgay(L.ngay + 1);
+          g.datViTri(DIEM_DAU_NGAY); g.datGio(8, 0);
+          ghiChu.forEach(x => thongBao3D(x));
+          nextScene3D();
+        });
+      } }, `Về nhà ngủ, sang ngày ${L.ngay + 1}/10`),
+      h("button", { class: "choice", onclick: () => { dongHoiThoai(); datMucTieuHUD("Ra cổng để về nhà"); g.datMucTieu("ra_ngoai", hoiDiNgu, { phaiRoiKhoi: true }); } }, "Ở lại thêm"),
+    );
+  };
+  const noiChuyen3D = ma => {
+    const k = L.npcKnots().find(x => tag(x.tags, "npc") === ma && !L.npcDone.has(x.name));
+    const ten = L.v(ma) || THEO_MA[ma]?.ten || ma;
+    if (!k) { thongBao3D(`${ten}: "${CAU_BAN[Math.floor(Math.random() * CAU_BAN.length)]}"`); return; }
+    L.npcDone.add(k.name);
+    moHoiThoai(`Nói chuyện với ${ten}`);
+    playKnot(k.name, () => UI.choices.replaceChildren(h("button", { class: "choice", onclick: () => { saveWrite(L.toSave()); dongHoiThoai(); } }, "Xong")));
+  };
+
+  // bắt đầu
+  g.datViTri(DIEM_DAU_NGAY);
+  if (!L.queue.length && L.qi === 0 && L.ngay === 1 && !L.played.size) L.batDauNgay(1);
+  updateDayline();
+  thongBao3D(`${thuCuaNgay(L.ngay)}, ${L.ngay}/10${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`);
+  nextScene3D();
+}
+let moHoiThoai = () => {}, dongHoiThoai = () => {}, thongBao3D = () => {}, nextScene3D = () => {}, dayEnd3D = () => {};
+// Phím tắt trong hội thoại 3D: 1-9 chọn, Enter/Space khi chỉ có một lựa chọn
+addEventListener("keydown", e => {
+  if (CHE_DO !== "3d" || !G?.khoa || e.target.closest?.("input, textarea, button")) return;
+  const nut = [...(UI.choices?.querySelectorAll(".choice") || [])];
+  if (!nut.length) return;
+  const so = /^Digit([1-9])$/.exec(e.code)?.[1];
+  if (so && nut[+so - 1]) { e.preventDefault(); nut[+so - 1].click(); }
+  else if ((e.code === "Enter" || e.code === "Space") && nut.length === 1) { e.preventDefault(); nut[0].click(); }
+});
+const CAU_BAN = ["Đang bận, lát nói nha.", "Deadline tới cổ rồi, mai nói.", "Ủa, có gì hông?", "Đi ngang thôi hả? Ok.", "Để em xong cái này đã."];
 
 // ============================================================
 // DUYỆT TỪNG CẢNH
