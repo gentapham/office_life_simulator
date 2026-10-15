@@ -28,6 +28,7 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 | [docs/roles/README.md](docs/roles/README.md) | 23 role: công việc, tính cách, bí mật, ý tưởng truyện |
 | [docs/roles/ran-doc.md](docs/roles/ran-doc.md) | Role Rắn Độc chi tiết: tuyến truyện, hội thoại mẫu, 6 kết thúc |
 | [docs/huong-dan-viet-truyen.md](docs/huong-dan-viet-truyen.md) | Hướng dẫn viết thoại và câu chuyện |
+| [docs/can-bo-sung.md](docs/can-bo-sung.md) | Danh sách những thứ còn thiếu, cần bổ sung |
 
 ## Công nghệ dự kiến
 
