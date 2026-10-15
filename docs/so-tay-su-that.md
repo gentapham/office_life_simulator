@@ -1,0 +1,199 @@
+# Sổ tay sự thật
+
+> **Nguồn sự thật duy nhất** của thế giới game. Khi các tài liệu khác mâu thuẫn với file này, **file này đúng**.
+> Viết thêm truyện mà tạo ra chi tiết mới (đồ vật, số tiền, sự kiện, NPC) thì ghi thêm vào đây.
+
+---
+
+## 1. Thời gian & địa điểm
+
+| Mục | Sự thật |
+|---|---|
+| Thành phố | Thành Phố Ước Mơ (Dream City), Quận Hóng |
+| Lượt chơi | Thứ 5 **1/10/2026** → thứ 6 **30/10/2026**. **31/10** (thứ 7) là Đêm Hồng Halloween, hiện 2 cái kết |
+| Đêm Hồng | Bắt đầu **19:30 ngày 31/10**, ở Sân khấu Đêm Hồng (Phường Tân Drama). Mở màn: phim ngắn "Người Hùng Không Tên" của Oánh, rồi video tổng kết "16 năm" của Lĩnh |
+| Giờ làm | 8:00 – 17:30, nghỉ trưa 12:00 – 13:30 |
+| Lương tháng | Ngày 10/10 là thứ 7. Ngân hàng giữ lệnh chuyển để "kiểm tra giao dịch lớn" (thật ra vì khoản thế chấp biệt thự của Thắng quá hạn). **Lương về thứ 2, 12/10** |
+
+---
+
+## 2. Công ty & tiền
+
+| Mục | Sự thật |
+|---|---|
+| Thành lập | 20/10/2010 bởi **Genta** (chủ đầu tư, ở nước ngoài từ 2016, không bao giờ xuất hiện) |
+| Giấy tờ thành lập | Bản gốc **đứng tên Genta**, gửi Bác Bình giữ hộ trong tủ gỗ ở nhà Ven Đô |
+| Hợp đồng Siêu Nhân Hồng | Dài **52 trang**. Ký 1/10. Nguyên trả trước **5 tỷ**. Mục tiêu **1.000.000 người theo dõi + top 10 xu hướng** trước hết ngày 31/10. Đạt: thưởng thêm 5 tỷ + hợp đồng 3 năm. Không đạt: **hoàn 10 tỷ**, phá sản |
+| Trang 47 | Điều khoản hoàn tiền gấp đôi, chữ cỡ 6. Thắng ký không đọc. Thương thì thầm "anh đọc giúp em trang 47" ngay trước lúc ký |
+| Trang 47b | Tờ viết tay của Nguyên, dính sau trang 47 bằng miếng bánh chuối chiên: *nếu cả công ty đã cố hết sức thì Nguyên không đòi tiền lại*. Có hiệu lực khi có chữ ký Thắng + 1 người làm chứng trước 31/10. **Chỉ dùng trong kết thúc bí mật của Thương**. Mọi lượt chơi khác: nó vẫn dính đó, không ai biết |
+| Quỹ công ty | Sau khi trả nợ ngày 1/10: còn **2 tỷ** |
+| Quỹ đen của Thương | Két sắt nhà số 18, Phố Cũ. Hiện **250 triệu**, mục tiêu 297 triệu (1 tháng lương 21 người, không tính Thắng, + 60 cây xúc xích cho Tuất) |
+| Biệt thự Thắng | Thế chấp năm 2024 ở Ngân hàng Tín Dụng Đen Đủi. **Đến hạn 15/11/2026**. Người duyệt khoản vay năm đó là **Duy** (khi còn là trưởng phòng tín dụng). Hai người không nhận ra nhau |
+| Ngân sách team building | Tuấn đề xuất 120 triệu, Thương cắt còn 60 triệu |
+
+### Sổ nợ của Chương (tổng 22.000.000đ)
+| Chủ nợ | Số tiền |
+|---|---|
+| Long | 10.000.000đ ("góp vốn") |
+| Huyền | 5.000.000đ |
+| Bảo | 3.000.000đ |
+| Bác Bình | 2.000.000đ |
+| Sơn, Duy, Oánh, Phát | 500.000đ mỗi người |
+
+### Nợ của Phát (54.000.000đ)
+36 triệu tiền nhà (3 tháng) + 18 triệu tiền thuê fan ảo (dịch vụ "Like Thật 100%", 80.000 tài khoản, comment "Anh Phát đỉnh nóc kịch trần"). **Tháng 7, Thái lén trả giùm 1 tháng tiền nhà.**
+
+---
+
+## 3. Bí mật & đồ vật quan trọng
+
+| Đồ / bí mật | Ở đâu / ai giữ | Ghi chú |
+|---|---|---|
+| **USB không nhãn** (file gốc của Vũ) | Kho đồ của Tuất dưới gầm cầu thang | File gốc dự án quảng cáo **tháng 6/2026** (hợp đồng 800 triệu). Vũ làm rơi ở bãi xe tháng 9, Tuất nhặt vì mùi cà phê sữa đá. Thắng cần nó cho clip "16 năm" (20/10), đoàn thuế cần nó làm bằng chứng nghiệm thu (22/10) |
+| **Ổ cứng "KHÔNG ĐƯỢC MỞ"** | Phòng trọ Bảo | Bản sao lưu tự động server công ty từ 2016. Có **bản sao** file của Vũ và **bản thu gốc chưa mix của "Công Viên" (2015)** |
+| **Găng tay hồng** của Nguyên | Kho đồ của Tuất (Tuất cướp ngày 4/10) | Trả lại trong kết thúc "Bạn Bốn Chân" / "Hòa Bình Hồng" |
+| **Thư tay "G"** | Gửi tới chòi bảo vệ mỗi tháng | Thư 20/10 kèm **phong bì dán kín** "Chỉ mở khi công ty sắp sập", bên trong là **quyết định của chính Genta**. Bình chỉ là người giữ và đọc, không có quyền quyết định |
+| **Tài khoản clone của Thắng** | Group Zalo-lô "Hội Anti Sếp" | Tên **"Hoa Hướng Dương 1989"**, vào group từ tháng 6. Bảo tìm được trong log |
+| **Group "Hội Anti Sếp"** | Zalo-lô | Ngân lập, 14 thành viên |
+| **Trang Confession G-Entertainment** | Ngân là admin | Máy đăng bài tên "NGAN-LAPTOP". Chỉ Bảo biết. 21/10: bài ẩn danh bóc chuyện thế chấp biệt thự (người gửi là Nhi hoặc con rắn thứ hai, tùy lượt chơi) |
+| **Bài hát bí mật "Hồng Là Thái Độ"** | Phòng thu khóa kín ở penthouse của Long | 41 bản demo. Long dùng nghệ danh **"Rồng"**. 15/10 Phát nghe lỏm và ghi âm 20 giây |
+| **Danh sách cắt giảm** | Tuấn | Thắng đưa 1/10 trong tập hồ sơ hồng, đòi ≥ 7 tên trước 26/10. Có tên **Duy** và **Sơn**. Trang 2 bản của Thắng: "Người cuối cùng: Tuấn". Hương tìm thấy ở Vũng Tàu |
+| **Email "Thư mời làm việc"** chưa gửi của Tuấn | Căn hộ 604 | Kế hoạch mở quán **"Phòng Trà Nhân Sự"**. Chuyện công việc, **không có yếu tố tình cảm** |
+| **Tiểu thuyết của Oánh** | Gác mái số 7 | Tên **"Công Ty Là Gia Đình"**, dùng tên thật đồng nghiệp. Cuốn sổ ghi chép rơi trên xe đi Vũng Tàu (Duy, Ngân hoặc Hiếu nhặt được, tùy lượt chơi) |
+| **Ý tưởng phim của Duy** | | Tháng 9 Duy kể với Oánh ý tưởng **"Người Gác Két"**. Oánh đổi tên thành **"Người Hùng Không Tên"** (15 phút), đứng tên mình. Lấy cảm hứng từ chuyện thật: ngày Duy bỏ ngân hàng, một người mặc đồ hồng đẩy xe chết máy cho Duy 2 km trong mưa. **Duy không biết đó là Nguyên** |
+| **Kênh Diu-túp của Lĩnh** | | "Cú Đêm Cắt Ghép", 980.000 người đăng ký. Mỗi video Lĩnh dựng đều giấu một con cú nhỏ trong 1 khung hình |
+| **Quá khứ Hiếu – Nguyên** | | Cùng **xóm Cây Me**. Nguyên đặt biệt danh "Hiếu Ếch", nhốt Hiếu trong nhà kho (lỗ thông gió hình con cá). Hiếu nhận ra Nguyên nhờ **vết sẹo trên mu bàn tay trái**. Hiếu khai địa chỉ cũ "xóm Cây Me" trong hồ sơ nhân viên |
+| **Tiền của Nguyên** | | Trúng vé số độc đắc năm 2019, giữ kín |
+| **Nhà Nguyên** | | Căn nhà rất to ở cuối một con đường không tên. Bàn ăn 12 ghế, chỉ dùng 1 |
+| **"Hồng Coin" ($HONG)** | | Fan ẩn danh tạo đêm 9/10. 17/10 tăng x10 (Chương bao cả team ăn hải sản). 18/10 người tạo ôm tiền biến mất, về 0. 23/10 Nguyên hỏi trên livestream sao có coin mang tên mình |
+
+---
+
+## 4. Con người
+
+### Quan hệ tình cảm (chỉ có những cặp này)
+- **Lĩnh → Thái → Phát**: một chiều, ấm áp, chưa có kết quả. Thái là admin ẩn danh "ChuoiChien89" của fan club "Hội Cá Viên Chiên" (khoảng 300 thành viên) của Phát.
+- **Nguyên → Vũ**: Vũ tưởng là chiêu PR. 23/10 Nguyên tỏ tình giữa livestream, hashtag **#VũƠiTrảLờiĐi**. Đêm 27/10 Nguyên nhắn Vũ: *"Em muốn anh ở lại không?"*
+
+### Phe phái & thù hằn
+- Huyền + Quỳnh cùng phe. Studio chung của hai người (nếu có) ở tầng trệt tòa Phố Mới.
+- Tuất ghét Nguyên (Nguyên hay chọc chó). Tuất cũng ghét anh shipper Tèo.
+- Hiếu muốn trả thù Nguyên.
+- Nhật và Long tranh ghế Phó Giám đốc (Long thật ra không muốn ghế đó, Nhật không biết).
+- Hương ghét Nhi. **Lưu Lực** chính là người Hương từng đổ nguyên tô ốc len lên đầu ở Quán Ốc Đêm khoảng 10 năm trước, khi bênh một người bạn. Vì vậy LL chưa bao giờ dám câu Hương.
+- Quỳnh và Nhi tình cờ gặp nhau ở sảnh LL ngày 25/10, cả hai giả vờ đi lạc.
+
+### Con rắn thứ hai
+- Mỗi lượt chơi, game chọn ngẫu nhiên **1 NPC** (không phải Hiếu, Bình, Tuất, Nguyên) làm người do LL cài vào.
+- Dấu hiệu: mùi nước hoa "xanh lá chuối" của LL (Tuất ngửi được nếu Mũi Thính ≥ 80), log máy tính lạ (Bảo), email lạ (Nhi).
+
+### Lịch sử vào công ty
+| Ai | Vào năm |
+|---|---|
+| Bình, Thắng | 2010 |
+| Thái | 2014 (quản lý Phát từ 2015) |
+| Phát | 2015 |
+| Bảo | 2016 (kỹ thuật viên duy nhất còn lại sau 2018) |
+| Nhật | 2020 (lên trưởng phòng 2024 vì là người cuối cùng còn lại) |
+| Nhi | 2023 (lễ tân, giữ mật khẩu email của Thắng) |
+| Hiếu | 1/10/2026 |
+
+---
+
+## 5. LL-Entertainment
+
+| Mục | Sự thật |
+|---|---|
+| CEO | **Lưu Lực**, 40 tuổi, vest trắng |
+| Giám đốc nghệ thuật | "Anh Lá Chuối", chỉ liên lạc qua tin nhắn, đầu mối job freelancer của Quỳnh |
+| Dự án Hồng Ngoại | Job Quỳnh nhận ngày 8/10, tưởng làm cho idol mới. Thật ra là bộ hồ sơ LL dùng để câu Nguyên ngày 27/10 |
+| Lời mời ngày 27/10 | Nguyên: LL lăng xê miễn phí + trả **gấp ba 5 tỷ**. Thái: 36 triệu/tháng (mời từ 25/10) nếu mang Nguyên theo. Thương: Kế toán trưởng, lương gấp đôi. Chương: 15 triệu để bán số liệu chiến dịch. Bảo: 26 triệu/tháng để lấy lịch trình Nguyên. Oánh: 50 triệu mua bản thảo tiểu thuyết. Long: 300 triệu mua bài hát. Bình: hối lộ, "bảo vệ LL lương 15 triệu" |
+| Nhi | 25/10 Lưu Lực tự phỏng vấn Nhi, muốn Nhi làm nội gián chứ không phải trợ lý. 29/10 lúc 17:02 email "Em đồng ý về LL ạ" có thể tự gửi nhầm vào "G-Entertainment - Toàn công ty" |
+
+---
+
+## 6. Sự kiện chung đã chốt (theo ngày)
+
+| Ngày | Sự kiện chi tiết |
+|---|---|
+| 1/10 | Ký hợp đồng 9:00. Hiếu nhận ra Nguyên. Thương nói về trang 47 |
+| 2/10 | Họp chiến dịch. Duy kể lại ý tưởng phim. Huyền hứa 3 nhà tài trợ 2 tỷ từ "Tập đoàn Bánh Tráng Trộn Toàn Cầu (BTT Global)", chủ tịch "Mr. Kevin Trộn" (không có thật) |
+| 4/10 | Ngày Động vật. Hương là người duy nhất Tuất cho tắm. Tuất cướp găng tay hồng của Nguyên. Nguyên giấu con gà cao su của Tuất sau tủ mạng |
+| 6/10 | Nguyên bỏ ngang buổi chụp để giúp bà cụ. Clip này sau đó có lượt xem gấp **12 lần MV** |
+| 9/10 | Ra mắt MV. Hồng Coin ra đời |
+| 11/10 | Ảnh hồi nhỏ. Nguyên có thể đăng ảnh xóm Cây Me có Hiếu lúc nhỏ đang khóc |
+| 12/10 | Lương về. Thẻ phụ của Long bị từ chối (gắn với tài khoản riêng của Thắng). Duy vô tình lộ thẻ kim cương |
+| 13/10 | Ngày Doanh nhân. Huyền tặng Thắng giải "Doanh nhân của năm" giả của BTT, Thắng treo trong phòng |
+| 14/10 | Sơn quay vòng 2 cuộc thi "Giọng Ca Ước Mơ" (lý do xin nghỉ: "về quê gặt lúa") |
+| 15/10 | Mất điện. 8:05 Thắng và Hương kẹt thang máy. Nhật họp thắp nến ở phòng "Sáng Tạo". Duy tung 5 cục sạc dự phòng. Thương nói với Hương về trang 47 ở pantry (Hiếu nghe lén được). Phát hát "Công Viên" trong pantry tối, Lĩnh quay lại. Nguyên tháo mũ, có cảnh với Vũ |
+| 16/10 | Gameshow **"Hồng Hay Không Hồng"** (giải 10 triệu) ở Đài Tivi Hóng. Phần "Hit Một Thời": Nguyên hát "Công Viên" sai lời ("khoai chiên"), Phát có thể hát bè từ cánh gà |
+| 17/10 | Vũng Tàu. Phòng: Hiếu ở chung với Nguyên, Duy ở chung với Long, Hương không ở chung với Nhi (trừ khi Tuấn xếp sai). Huyền say, hứa mời "ca sĩ nổi tiếng nhất nước". Thắng say, hứa tăng lương cả công ty (bị quay clip). Lửa trại: Nguyên kể chuyện nhốt một đứa nhỏ trong kho. Phát ngủ gục lên vai Thái, Lĩnh đắp chăn cho cả hai. Ngân đang livestream đúng lúc Nguyên tháo mũ (3 giây để chọn). Đêm đó Bác Bình ở lại trực, bắt gặp người lạ trong phòng giám đốc (tùy lượt: con rắn thứ hai, Vũ tìm file, hoặc Bảo ngủ quên) |
+| 18/10 | Hồng Coin sập. Long phát hiện penthouse bị rao bán |
+| 20/10 | Sinh nhật công ty 16 tuổi + Phụ nữ Việt Nam. Thư "G" tới sáng nay, Bình quyết định có đọc trước công ty không. Thắng đòi logo kỷ niệm 16 năm, rồi chọn lại logo gốc 2010 (lần sửa thứ 38). Sau quán ốc, ở karaoke, Thắng say có thể hứa tăng lương 20% |
+| 21/10 | Bài Confession bóc chuyện thế chấp. Tuấn và Bảo truy tìm admin |
+| 22/10 | Đoàn kiểm tra thuế (trưởng đoàn: **Chú Liêm**, 55 tuổi, sợ chó). Đòi bản gốc giấy tờ thành lập, hợp đồng BTT, bằng chứng nghiệm thu dự án tháng 6, và hỏi nguồn gốc 5 tỷ |
+| 23/10 | Sinh nhật Nguyên. Livestream: cần người đóng vai "Mr. Kevin Trộn" (Duy, Chương hoặc Bác Bình). Nguyên tỏ tình Vũ. Bánh kem hồng bị đổ (Tuất, hoặc Phát cố tình vấp rồi đổ cho Tuất) |
+| 24/10 | Hội nghị hòa giải của Hương, xếp cặp: Nhật–Long, Quỳnh–Oánh, Huyền–Thương, Tuấn–Sơn, Hương–Nhi. Bàn riêng "chủ nợ" cho Chương. Clip Phát hát trong bóng tối có thể viral (24–25/10), cùng lúc vụ bóc fan ảo |
+| 25/10 | Thái tới tòa LL, được mời 36 triệu/tháng. Nhi được Lưu Lực phỏng vấn. Bán kết "Giọng Ca Ước Mơ" của Sơn |
+| 26/10 | Chiếu thử nội bộ phim "Người Hùng Không Tên". Thắng ra giá 200 triệu mua kênh của Lĩnh. Đêm 26/10 Lưu Lực gửi email lời mời gấp ba cho Thắng sớm |
+| 27/10 | LL ra tay (xem mục 5). Lưu Lực tới tận nơi, thấy Hương thì làm rơi tập hồ sơ. Trailer phim ngắn ra mắt, đề tên Oánh. "Sữa Chua Hồng Hào" (nhà tài trợ thật duy nhất, ở Ven Đô) gọi Huyền mời tài trợ 1 tỷ, không ai tin |
+| 28/10 | Lĩnh lỡ xuất video tỏ tình lên fanpage. Bộ lọc của Chương lần ra fan ảo là của Phát |
+| 29/10 | Wifi sập. Nguyên nhân (tùy lượt): Tuất cắn dây mạng (đi tìm con gà cao su), hoặc con rắn thứ hai cắt dây. Video của Lĩnh kẹt ở 99%. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Hương điều phối bằng bộ đàm. Ngân phát wifi điện thoại, mật khẩu "nghegichua" |
+| 30/10 | Họp đánh giá. Gia hạn hợp đồng của Phát (hết hạn 31/10). Trước họp, HR cho dọn kho, có thể dọn mất kho đồ của Tuất |
+| 31/10 | Đêm Hồng 19:30. Chung kết trực tiếp "Giọng Ca Ước Mơ" của Sơn lúc 20:00, cùng tối. Thắng hóa trang "Ông Kẹ Ngân Hàng" |
+
+---
+
+## 7. Thương hiệu nhại trong game
+
+| Trong game | Ý chỉ |
+|---|---|
+| Zalo-lô | App nhắn tin |
+| Phây-búc | Mạng xã hội |
+| Tóp-tóp | Video ngắn |
+| Diu-túp | Kênh video dài |
+| Đài Tivi Hóng | Đài truyền hình |
+| Trâu Cày, Trâu Cụng, Hồng Hào | Nước tăng lực |
+| Răng Hồng | Bàn chải (nhà tài trợ "ma" của Huyền) |
+| Sữa Chua Hồng Hào | Nhà tài trợ thật duy nhất |
+| BTT Global | Nhà tài trợ "ma" của Huyền |
+| Like Thật 100% | Dịch vụ fan ảo |
+
+---
+
+## 8. Bảng điểm chiến dịch Siêu Nhân Hồng
+
+Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt đầu ngày 1/10 ở **5.000** (người quen của Nguyên).
+
+### Tăng tự nhiên
+- Mỗi ngày tự tăng **+12.000** nếu tinh thần công ty bình thường, **+20.000** nếu cao, **+5.000** nếu thấp.
+- 22 NPC tự làm việc của mình, cộng chung khoảng **+5.000 đến +15.000 mỗi ngày** tùy quan hệ và tâm trạng.
+- Tổng nếu người chơi không làm gì: khoảng **550.000 – 700.000**, tức là **không đủ**. Người chơi phải góp sức (hoặc phá).
+
+### Cỡ tác động của một hành động
+| Cỡ | Ví dụ | Người theo dõi |
+|---|---|---|
+| Rất nhỏ | Một bài đăng thường, một poster bình thường | ±2.000 – 5.000 |
+| Nhỏ | Minigame làm tốt / làm hỏng | ±5.000 – 15.000 |
+| Vừa | Một buổi quay thành công, một tin đồn lan rộng | ±20.000 – 50.000 |
+| Lớn | Gameshow 16/10, clip viral, scandal | ±50.000 – 150.000 |
+| Rất lớn | Đêm Hồng diễn tốt, LL cướp được Nguyên, lộ mặt thật | ±150.000 – 300.000 |
+
+### Sự kiện lớn cố định
+| Ngày | Sự kiện | Tác động mặc định |
+|---|---|---|
+| 6/10 | Clip giúp bà cụ | +30.000 (có thể +120.000 nếu được đẩy đúng cách, xem insight của Chương) |
+| 9/10 | Ra mắt MV | +40.000 |
+| 16/10 | Gameshow | +80.000 |
+| 23/10 | Livestream sinh nhật | +60.000 |
+| 31/10 | Đêm Hồng | +100.000 đến +300.000 |
+
+### Quy đổi ra 6 kết thúc sự nghiệp (GDD mục 7.3)
+| Kết thúc | Điều kiện |
+|---|---|
+| 🌟 Siêu Sao Hạng A | ≥ 1.000.000 và vào top 10 xu hướng |
+| 💗 Tháo Mũ | ≥ 800.000 và Nguyên tự tháo mũ trên sân khấu Đêm Hồng |
+| 🤡 Meme Quốc Dân | ≥ 600.000 và có ít nhất 3 scandal / meme trong tháng |
+| 🏃 Bị Cướp Mất | Nguyên nhận lời LL ngày 27/10 (bất kể con số) |
+| 🔥 Bị Tẩy Chay | Có scandal lớn bị bóc sau 28/10 và < 800.000 |
+| 📉 Chìm Nghỉm | Các trường hợp còn lại |
