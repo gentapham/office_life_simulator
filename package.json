@@ -1,0 +1,20 @@
+{
+  "name": "office-worker-for-a-day",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Giả Lập Một Ngày Làm Nhân Viên Văn Phòng / Office Worker For A Day",
+  "type": "module",
+  "scripts": {
+    "kiem-tra-ink": "node tools/kiem-tra-ink.mjs --all",
+    "dev": "vite",
+    "build:story": "node tools/build-story.mjs",
+    "build": "node tools/build-story.mjs && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "5.4.11"
+  },
+  "dependencies": {
+    "inkjs": "2.2.3"
+  }
+}

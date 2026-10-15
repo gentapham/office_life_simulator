@@ -1,0 +1,224 @@
+{
+  "_ghi_chu": "Tên hiển thị của người nói phụ (không phải 23 nhân vật chính). 23 nhân vật chính lấy tên từ biến trong bien-chung.ink. 'bi_danh' là các mã khác nhau trỏ về cùng một người. Thêm mã mới vào đây khi viết truyện.",
+  "nguoi_noi": {
+    "ba_cu": {
+      "vi": "Bà cụ",
+      "en": "Old lady"
+    },
+    "ba_quan_ly_sky_ao": {
+      "vi": "Bà quản lý Sky Ảo",
+      "en": "Sky Ảo building manager"
+    },
+    "ba_tu": {
+      "vi": "Bà Tư chủ trọ",
+      "en": "Landlady Tư"
+    },
+    "bac_si_khoe_re": {
+      "vi": "Bác sĩ phòng khám Khỏe Re",
+      "en": "Clinic doctor"
+    },
+    "chi_nail": {
+      "vi": "Chị chủ tiệm nail Lung Linh",
+      "en": "Lung Linh nail salon owner"
+    },
+    "chu_liem": {
+      "vi": "Chú Liêm (đoàn thuế)",
+      "en": "Uncle Liêm (tax officer)"
+    },
+    "chu_quan_oc": {
+      "vi": "Chủ Quán Ốc Đêm",
+      "en": "Night Snail Bar owner"
+    },
+    "chu_re": {
+      "vi": "Chú rể",
+      "en": "Groom"
+    },
+    "chu_tiem_cam_do": {
+      "vi": "Chủ tiệm cầm đồ Cứu Nguy",
+      "en": "Pawnshop owner"
+    },
+    "chu_tiem_moi": {
+      "vi": "Chủ tiệm",
+      "en": "Shop owner"
+    },
+    "co_ban_hang": {
+      "vi": "Cô bán hàng",
+      "en": "Shopkeeper"
+    },
+    "co_ca_vien": {
+      "vi": "Cô bán cá viên chiên",
+      "en": "Fish-ball vendor"
+    },
+    "co_dau": {
+      "vi": "Cô dâu",
+      "en": "Bride"
+    },
+    "co_hai_san": {
+      "vi": "Cô bán hải sản Vũng Tàu",
+      "en": "Vũng Tàu seafood lady"
+    },
+    "cong_nhan": {
+      "vi": "Công nhân",
+      "en": "Worker"
+    },
+    "dao_dien_dai": {
+      "vi": "Đạo diễn Đài Tivi Hóng",
+      "en": "Tivi Hóng director"
+    },
+    "doi_tac": {
+      "vi": "Đối tác",
+      "en": "Business partner"
+    },
+    "dong_nghiep_ll": {
+      "vi": "Nhân viên LL",
+      "en": "LL employee"
+    },
+    "em_be": {
+      "vi": "Em bé",
+      "en": "Little kid"
+    },
+    "fan_cuong_phat": {
+      "vi": "Fan cuồng của Phát",
+      "en": "Phát's superfan"
+    },
+    "la_chuoi": {
+      "vi": "Anh Lá Chuối",
+      "en": "Mr. Banana Leaf"
+    },
+    "luu_luc": {
+      "vi": "Lưu Lực",
+      "en": "Lưu Lực"
+    },
+    "mc_tivi_hong": {
+      "vi": "MC Đài Tivi Hóng",
+      "en": "Tivi Hóng MC"
+    },
+    "me_co_dau": {
+      "vi": "Mẹ cô dâu",
+      "en": "Bride's mother"
+    },
+    "moi_gioi": {
+      "vi": "Môi giới nhà đất",
+      "en": "Estate agent"
+    },
+    "nguoi_la_ll": {
+      "vi": "Người lạ của LL",
+      "en": "Stranger from LL"
+    },
+    "npc_chu_sau": {
+      "vi": "Chú Sáu karaoke",
+      "en": "Uncle Sáu (karaoke)"
+    },
+    "npc_co_bay": {
+      "vi": "Cô Bảy bánh mì",
+      "en": "Auntie Bảy (bánh mì)"
+    },
+    "npc_co_nam": {
+      "vi": "Cô Năm cơm tấm",
+      "en": "Auntie Năm (broken rice)"
+    },
+    "npc_cong_an": {
+      "vi": "Anh công an phường",
+      "en": "Ward police officer"
+    },
+    "npc_grab": {
+      "vi": "Tài xế xe ôm công nghệ",
+      "en": "Ride-hail driver"
+    },
+    "npc_khoa": {
+      "vi": "Khoa, thu ngân ca đêm",
+      "en": "Khoa, night cashier"
+    },
+    "nv_ngan_hang": {
+      "vi": "Nhân viên ngân hàng",
+      "en": "Bank officer"
+    },
+    "nv_san_golf": {
+      "vi": "Nhân viên sân golf",
+      "en": "Golf course staff"
+    },
+    "ong_ba_tra_da": {
+      "vi": "Ông Ba trà đá",
+      "en": "Old Mr. Ba (iced tea)"
+    },
+    "paparazzi": {
+      "vi": "Paparazzi Mắt Diều Hâu",
+      "en": "Hawk-Eye paparazzo"
+    },
+    "phu_chu_quan_song_ao": {
+      "vi": "Chủ quán Sống Ảo",
+      "en": "Sống Ảo café owner"
+    },
+    "phu_co_giao_thanh_nhac": {
+      "vi": "Cô giáo thanh nhạc",
+      "en": "Vocal coach"
+    },
+    "phu_le_tan_khoe_re": {
+      "vi": "Lễ tân phòng khám Khỏe Re",
+      "en": "Clinic receptionist"
+    },
+    "phu_tro_ly_dai": {
+      "vi": "Trợ lý đài truyền hình",
+      "en": "TV station assistant"
+    },
+    "phu_ung_vien_1": {
+      "vi": "Ứng viên số 1",
+      "en": "Candidate #1"
+    },
+    "phu_ung_vien_4": {
+      "vi": "Ứng viên số 4",
+      "en": "Candidate #4"
+    },
+    "quan_ly_quan": {
+      "vi": "Quản lý quán Sống Ảo",
+      "en": "Sống Ảo café manager"
+    },
+    "shipper_teo": {
+      "vi": "Anh shipper Tèo",
+      "en": "Tèo the courier"
+    },
+    "sinh_vien": {
+      "vi": "Sinh viên",
+      "en": "Student"
+    },
+    "sua_chua_hong_hao": {
+      "vi": "Bà chủ Sữa Chua Hồng Hào",
+      "en": "Hồng Hào Yogurt owner"
+    },
+    "tho_chup_anh": {
+      "vi": "Thợ chụp ảnh",
+      "en": "Photographer"
+    },
+    "thu_ky_ll": {
+      "vi": "Thư ký LL",
+      "en": "LL secretary"
+    },
+    "thu_ngan_song_ao": {
+      "vi": "Thu ngân Sống Ảo",
+      "en": "Sống Ảo cashier"
+    }
+  },
+  "bi_danh": {
+    "bac_si": "bac_si_khoe_re",
+    "chu_cam_do": "chu_tiem_cam_do",
+    "co_nam_com_tam": "npc_co_nam",
+    "dao_dien_tivi_hong": "dao_dien_dai",
+    "mc_dai_tivi": "mc_tivi_hong",
+    "npc_ba_tu": "ba_tu",
+    "npc_bac_si": "bac_si_khoe_re",
+    "npc_cam_do": "chu_tiem_cam_do",
+    "npc_chi_nail": "chi_nail",
+    "npc_fan_phat": "fan_cuong_phat",
+    "npc_luu_luc": "luu_luc",
+    "npc_ong_ba": "ong_ba_tra_da",
+    "npc_paparazzi": "paparazzi",
+    "npc_teo": "shipper_teo",
+    "npc_thu_ky_ll": "thu_ky_ll",
+    "phu_bac_si_khoe_re": "bac_si_khoe_re",
+    "phu_chu_liem": "chu_liem",
+    "phu_co_nam": "npc_co_nam",
+    "phu_luu_luc": "luu_luc",
+    "phu_mc_dai": "mc_tivi_hong",
+    "phu_shipper_teo": "shipper_teo"
+  }
+}

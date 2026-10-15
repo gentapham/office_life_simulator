@@ -1,73 +1,86 @@
-# Office Life Simulator
+# Giả Lập Một Ngày Làm Nhân Viên Văn Phòng
 
-Trò chơi mô phỏng cuộc sống dân văn phòng: đi làm, xử lý công việc, giao tiếp với đồng nghiệp, quản lý thời gian, năng lượng và tinh thần để thăng tiến trong sự nghiệp.
+**Office Worker For A Day**
 
-> 🚧 Dự án đang ở giai đoạn khởi tạo. Nội dung README sẽ được cập nhật dần theo tiến độ phát triển.
+Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đầy drama. Nhập vai một trong 22 nhân viên hoặc chính Siêu Nhân Hồng, đi làm, nói chuyện, hóng hớt, nói xấu, yêu đương, đánh ghen… Mỗi câu trả lời của bạn quyết định ai lên chức, ai bị đuổi việc, và câu chuyện kết thúc ra sao.
 
-## Mục lục
+Đi làm 8 tiếng chưa đủ? Tối về đi làm tiếp trong game :v
 
-- [Giới thiệu](#giới-thiệu)
-- [Tính năng dự kiến](#tính-năng-dự-kiến)
-- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
-- [Cài đặt](#cài-đặt)
-- [Cách chơi](#cách-chơi)
-- [Cấu trúc thư mục](#cấu-trúc-thư-mục)
-- [Lộ trình phát triển](#lộ-trình-phát-triển)
-- [Đóng góp](#đóng-góp)
-- [Giấy phép](#giấy-phép)
+> 🚧 Đã có **bản đọc thử dạng chữ**: chơi trọn tháng 10 của cả 23 nhân vật, đọc từng cảnh, xem kết thúc. Bản 3D đang làm.
+>
+> ▶️ **Chơi thử:** https://gentapham.github.io/office_life_simulator/
 
-## Giới thiệu
+## Điểm chính
 
-Người chơi vào vai một nhân viên văn phòng mới vào nghề. Mỗi ngày làm việc là một chuỗi lựa chọn: nhận task nào, họp hay không họp, ăn trưa với ai, tăng ca hay về sớm… Mọi quyết định đều ảnh hưởng tới các chỉ số của nhân vật và con đường sự nghiệp.
+- **Chơi trên web**, không cần cài đặt. Ưu tiên máy tính, tối ưu thêm cho điện thoại.
+- **3D low-poly** dựng bằng Three.js. Đổi được giữa góc nhìn thứ 1 và thứ 3, có bản đồ isometric.
+- **Nhiệm vụ chung:** cả công ty phải đưa siêu sao mới nổi **Siêu Nhân Hồng** nổi tiếng trong showbiz Việt.
+- **23 nhân vật để nhập vai**: 22 nhân viên (21 người và chó Tuất) và Siêu Nhân Hồng. Mặc định là **Rắn Độc**.
+- **Đặt tên** cho mọi nhân vật, hoặc dùng tên mặc định.
+- **Hội thoại nhiều lựa chọn**, tin đồn lan và biến dạng giữa các nhân vật.
+- **2 cái kết mỗi lượt chơi**: kết thúc của nhân vật bạn chọn (6 kết thúc cho mỗi nhân vật: 3 có hậu, 3 buồn) và kết thúc sự nghiệp của Siêu Nhân Hồng (6 kết thúc). Tổng 144 kết thúc.
+- **Thế giới rộng**: Quận Hóng, Thành Phố Ước Mơ, gồm 6 khu. Nhân vật nào cũng có nhà riêng, cùng hơn 30 địa điểm: công ty, siêu thị, quán ăn, rạp phim, karaoke, công viên…
+- **Sinh tồn đời văn phòng**: đói, khát, năng lượng, stress, làm thêm freelancer. Lương nhận theo ngày, theo tuần hoặc theo tháng, tùy người chơi chọn.
+- **Song ngữ** Tiếng Việt / English, có âm thanh.
+- **Lưu game ngay trên trình duyệt**, không cần máy chủ.
 
-## Tính năng dự kiến
+## Tài liệu thiết kế
 
-- **Chu kỳ ngày làm việc**: check-in, làm việc, nghỉ trưa, họp, tan làm.
-- **Hệ thống chỉ số**: năng lượng, stress, hiệu suất, mối quan hệ, tài chính.
-- **Công việc & deadline**: nhận task, ưu tiên công việc, hoàn thành để nhận đánh giá.
-- **Đồng nghiệp & sếp**: tương tác, xây dựng quan hệ, sự kiện ngẫu nhiên.
-- **Thăng tiến**: đánh giá định kỳ, tăng lương, lên chức.
-- **Sự kiện ngẫu nhiên**: sinh nhật đồng nghiệp, sự cố hệ thống, team building…
+| Tài liệu | Nội dung |
+|---|---|
+| [docs/GDD.md](docs/GDD.md) | Tài liệu thiết kế game: hệ thống, vòng lặp, kỹ thuật, lộ trình |
+| [docs/world/the-gioi.md](docs/world/the-gioi.md) | Thế giới, bản đồ, địa điểm |
+| [docs/roles/README.md](docs/roles/README.md) | 23 nhân vật: công việc, tính cách, bí mật, ý tưởng truyện |
+| [docs/roles/](docs/roles/) | Truyện chi tiết của từng nhân vật (23 file): lý lịch, minigame, tuyến truyện tháng 10, hội thoại mẫu, 6 kết thúc |
+| [docs/roles/ngoai-hinh.md](docs/roles/ngoai-hinh.md) | Ngoại hình nhân vật để dựng model 3D |
+| [docs/world/cong-ty.md](docs/world/cong-ty.md) | Công ty G-Entertainment: lịch sử, đối thủ LL-Entertainment, hợp đồng với Siêu Nhân Hồng, lương, nội quy |
+| [docs/world/lich-thang-10.md](docs/world/lich-thang-10.md) | Lịch từng ngày tháng 10/2026 và các ngày lễ |
+| [docs/world/npc-phu.md](docs/world/npc-phu.md) | NPC phụ |
+| [docs/world/lich-trinh-nhan-vat.md](docs/world/lich-trinh-nhan-vat.md) | Sinh nhật và lịch trình hằng ngày của từng nhân vật |
+| [docs/gameplay/mo-dau-va-am-thanh.md](docs/gameplay/mo-dau-va-am-thanh.md) | Mở đầu game, ngày đầu hướng dẫn chơi, màn kết, âm thanh và bài hát |
+| [docs/gameplay/vat-pham-va-cong-viec.md](docs/gameplay/vat-pham-va-cong-viec.md) | Đồ ăn uống, vật phẩm, giá cả, việc chung, job freelancer |
+| [docs/huong-dan-viet-truyen.md](docs/huong-dan-viet-truyen.md) | Hướng dẫn viết thoại và câu chuyện |
+| [docs/so-tay-su-that.md](docs/so-tay-su-that.md) | Sổ tay sự thật: nguồn chuẩn cho mọi chi tiết, bảng điểm chiến dịch |
+| [story/](story/) | **Toàn bộ thoại trong game** (Ink): 23 nhân vật + sự kiện chung, Đêm Hồng, kết thúc |
+| [docs/can-bo-sung.md](docs/can-bo-sung.md) | Tình trạng tài liệu: đã xong và còn lại |
 
-## Công nghệ sử dụng
+## Công nghệ dự kiến
 
-_TODO: cập nhật khi chốt stack (ngôn ngữ, engine/framework, công cụ build)._
+- [Three.js](https://threejs.org/): đồ họa 3D
+- [Vite](https://vitejs.dev/): build và chạy thử
+- [Ink](https://www.inklestudios.com/ink/): viết truyện nhiều lựa chọn
+- GitHub Pages + GitHub Actions: host và tự động deploy
 
-## Cài đặt
+Game chạy tại: **https://gentapham.github.io/office_life_simulator/** (tự đăng lại mỗi khi có thay đổi trên nhánh `main`).
 
-_TODO: bổ sung hướng dẫn sau khi có mã nguồn._
+## Chạy trên máy
+
+Cần Node.js 20 trở lên.
 
 ```bash
-git clone https://github.com/gentapham/office_life_simulator.git
-cd office_life_simulator
-# các bước cài đặt dependencies và chạy game sẽ được bổ sung
+npm install
+npm run kiem-tra-ink   # kiểm tra toàn bộ thoại Ink
+npm run build          # dịch thoại ra JSON và build bản đọc thử vào dist/
+npm run preview        # mở http://localhost:4173
 ```
 
-## Cách chơi
+Khi đang sửa giao diện: chạy `npm run build:story` một lần, sau đó `npm run dev`.
 
-_TODO: mô tả điều khiển và luật chơi cơ bản._
+## Lộ trình
 
-## Cấu trúc thư mục
-
-_TODO: cập nhật khi có cấu trúc dự án._
-
-## Lộ trình phát triển
-
-- [ ] Chốt ý tưởng gameplay và công nghệ
-- [ ] Dựng khung dự án
-- [ ] Vòng lặp ngày làm việc cơ bản
-- [ ] Hệ thống chỉ số nhân vật
-- [ ] Hệ thống task & deadline
-- [ ] Tương tác đồng nghiệp
-- [ ] Sự kiện ngẫu nhiên
-- [ ] Lưu / tải game
+- [x] Chốt ý tưởng, nền tảng, phong cách
+- [x] Hoàn thiện tài liệu thế giới và truyện của 23 nhân vật (bản nháp, chờ duyệt)
+- [x] Viết đủ thoại cho 23 nhân vật và nội dung chung (Ink)
+- [x] Bản đọc thử dạng chữ: chơi cả tháng, duyệt từng cảnh, lưu trên trình duyệt
+- [ ] Bản chạy thử 3D: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
+- [ ] Rắn Độc chơi được trọn 30 ngày với 6 kết thúc
+- [ ] Mở rộng thế giới và thêm role
+- [ ] Âm thanh, tiếng Anh, tối ưu điện thoại
 
 ## Đóng góp
 
-1. Tạo branch mới từ `main`.
+1. Tạo branch mới từ branch chính.
 2. Commit với message rõ ràng.
 3. Mở Pull Request mô tả thay đổi.
 
-## Giấy phép
-
-_TODO: chọn giấy phép (ví dụ MIT)._
+Muốn viết thêm truyện? Đọc [hướng dẫn viết truyện](docs/huong-dan-viet-truyen.md) trước nhé.
