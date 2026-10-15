@@ -64,10 +64,10 @@ giam_doc: Anh tin em. Em là người duy nhất trong tháng này không dính 
 _Bạn cười. Ngọt như đường hóa học._
 _Trên bàn có một ly trà sữa. Không ai đặt. Bạn đặt cho chính mình. 50% đường. Ít đá. Không ai nhớ bạn uống gì._
 _Ở cổng, {cho} nằm trong ổ, nhìn lên tầng 2. Không sủa. Cũng không vẫy đuôi._
-_Bạn mở laptop. Mở group Zalo-lô công ty. 21 thành viên. Bạn là admin._
+_Bạn mở laptop. Mở group Zalo-lô công ty. 23 thành viên. Bạn là admin._
 _Con trỏ nhấp nháy trong ô chat. Bạn gõ:_
 _"Nghe gì chưa?"_
-_Bấm gửi. 21 người "đã xem" trong 3 giây._
+_Bấm gửi. 22 người "đã xem" trong 3 giây._
 _Không ai trả lời._
 -> END
 

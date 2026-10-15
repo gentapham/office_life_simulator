@@ -82,7 +82,7 @@ _Đêm chung kết mùa sau của "Giọng Ca Ước Mơ", Đài Tivi Hóng. {th
 _Cả trường quay đứng dậy. {thanh_xin_nghi} nhìn xuống hàng ghế đầu._
 _Bạn giơ ngón cái._
 thanh_xin_nghi: *(cầm micro, thở dốc)* Con cảm ơn bà ngoại… à không. *(cả trường quay cười)* Em cảm ơn anh Thái. Người duy nhất chưa bao giờ đòi em giấy phòng khám.
-_Cả trường quay cười. Bạn cũng cười. Ở hàng ghế thứ ba, bà ngoại của {thanh_xin_nghi}, khỏe re, đang vỗ tay to nhất._
+_Cả trường quay cười. Bạn cũng cười. Ở hàng ghế thứ ba, {hr} đang vỗ tay to nhất, rồi giật mình, ngồi xuống, giả vờ ghi sổ._
 _Suốt buổi tối, cái điện thoại duy nhất của bạn im lặng._
 _Bạn không kiểm tra nó lần nào._
 -> END

@@ -46,24 +46,24 @@ _{ran_doc} đứng sững 2 giây, rồi cười. Một nụ cười rất đún
 // ------------------------------------------------------------
 === sieu_nhan_hong_1710_lua_trai ===
 # ngay:17 # gio:21:00 # noi:bai_bien_vung_tau # bat_buoc
-_Đêm lửa trại. Trò "nói thật". Tới lượt bạn. Bạn tháo mũ. Ngọn lửa làm mặt ai cũng đỏ. Đối diện là {ran_doc}._
-~ snh_thao_mu(false)
+_Đêm lửa trại. Trò "nói thật". Tới lượt bạn. Bạn đưa tay lên mũ. Ngọn lửa làm mặt ai cũng đỏ. Đối diện là {ran_doc}._
 chi_dai: Nói đi em. Chuyện gì mà nhìn mặt em như sắp khóc vậy?
-* [🙂 "Hồi nhỏ… anh từng nhốt một thằng nhóc trong nhà kho. Tới giờ không biết nó ở đâu để xin lỗi."]
+* [🙂 Tháo mũ: "Hồi nhỏ… anh từng nhốt một thằng nhóc trong nhà kho. Tới giờ không biết nó ở đâu để xin lỗi."]
+    ~ snh_thao_mu(false)
     ~ snh_no(-10)
     ~ snh_hieu(-15)
     _Cả bãi biển im lặng. {ran_doc} nhìn đống lửa rất lâu. Không nói gì._
     ~ phat_hien(hieu_ech)
-* [🦸 Đội mũ lại: "Thôi, nói thật là… anh sợ gián!"]
+* [🦸 Giữ chặt mũ: "Thôi, nói thật là… anh sợ gián!"]
     _Cả đám cười ồ. {hong_hot} hét "Siêu nhân sợ gián!". Không ai biết gì._
     ~ snh_no(5)
-    ~ snh_mat(-10)
     ~ snh_meme(5000)
 * {snh_nghe_ten_quen && snh_dang_anh_cay_me && snh_no_xom_cu >= 50} [🔒 Nhìn thẳng qua đống lửa: "{ran_doc}. Cái nhà kho có lỗ thông gió hình con cá. Là em, đúng hông?"]
     -> sieu_nhan_hong_1710_hieu_ech
 - -> END
 
 = sieu_nhan_hong_1710_hieu_ech
+~ snh_thao_mu(false)
 ~ snh_mo_nhanh_hieu_ech = true
 ~ phat_hien(hieu_ech)
 _Cả bãi biển im lặng. Chỉ có tiếng sóng và tiếng củi nổ._
@@ -221,17 +221,17 @@ _Bạn đứng ở tiệm hoa đầu phố. Trong công ty có 7 chị em. Và m
 _Tiệc sinh nhật {cong_ty} 16 tuổi. {giam_doc} vừa chọn logo kỷ niệm: bản gốc năm 2010, lần sửa thứ 38. {designer} cười như người mất hết hy vọng._
 dan_dau_tu: 8386! Chúc cả công ty phát tài phát lộc!
 _Bạn đi tặng hoa cho từng chị em. {chi_dai} nhận, gật đầu. {ke_toan} hỏi "hóa đơn đâu". {thanh_ninh} chụp ảnh với hoa 12 kiểu._
-{ biet(thu_g):
-    _Bác {bac_bao_ve} đứng lên, đeo kính, đọc lá thư ký tên "G" bằng giọng Bắc chậm rãi._
-}
-{ not biet(thu_g):
-    _Bác {bac_bao_ve} đứng ở góc, tay cầm một lá thư. Bác nhìn mọi người rất lâu, rồi lặng lẽ… đứng lên._
+_Bác {bac_bao_ve} đứng ở góc, tay cầm một lá thư ký tên "G". Bác nhìn mọi người rất lâu._
+{ biet(thu_g) || qh_bac_bao_ve >= 15 || RANDOM(1, 2) == 1:
     ~ phat_hien(thu_g)
+    _Rồi bác đứng lên, đeo kính, đọc bằng giọng Bắc chậm rãi._
+    bac_bao_ve: "…Mười sáu năm rồi. Tôi không hỏi doanh thu. Tôi chỉ muốn hỏi một câu: mấy đứa nhỏ còn thương nhau không."
+    _Cả sảnh im lặng. {giam_doc} cúi đầu. Bạn tháo găng, lau mắt dưới mũ._
+    ~ snh_no(-10)
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
+- else:
+    _Rồi bác gấp lá thư, bỏ vào túi áo, ngồi xuống. Không ai biết trong đó viết gì. Chỉ có bạn để ý thấy tay bác hơi run._
 }
-bac_bao_ve: "…Mười sáu năm rồi. Tôi không hỏi doanh thu. Tôi chỉ muốn hỏi một câu: mấy đứa nhỏ còn thương nhau không."
-_Cả sảnh im lặng. {giam_doc} cúi đầu. Bạn tháo găng, lau mắt dưới mũ._
-~ snh_no(-10)
-~ tinh_than_cong_ty = tinh_than_cong_ty + 10
 * {co(hoa_hong)} [🎁 Lén để hộp cơm hồng lên bàn {chua_te_deadline} khi không ai để ý.]
     ~ snh_tim(8)
     _Chiều, cậu ta mở hộp cơm, nhìn tờ giấy, nhìn quanh. Rồi ăn hết. Kể cả miếng trứng hình trái tim._

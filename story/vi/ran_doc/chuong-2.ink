@@ -85,6 +85,7 @@ designer: ANH ƠI! Còn 7 kiểu nữa!
 _Bạn nhìn xuống. Hắn quỳ giữa trời nắng, nhấc từng bánh xe, đẩy bà cụ qua đường, rồi đứng nghe bà kể chuyện thêm 10 phút._
 * [📸 Quay lại bằng điện thoại.]
     ~ rd_co_clip_ba_cu = true
+    ~ rd_han(-3)
     _Bạn quay. Bạn tự nhủ là để có bằng chứng hắn bỏ ngang buổi chụp. Chỉ vậy thôi._
 * [🐍 Nhắn group công ty: "Siêu sao bỏ ngang buổi chụp, tiền thuê studio ai chịu?"]
     ~ rd_tung_tin(10, 8)

@@ -124,7 +124,7 @@ _Cạnh đó là một tấm ảnh {hong_hot} vừa gửi nhầm vào group côn
 # minigame:zalo # ket_qua:thang
 ~ tien_cong(100000)
 { rd_mg_ghim_nham:
-    _Ảnh sếp đội nón lá nằm chễm chệ trên đầu group trong 47 phút. 37 người xem. 12 người thả "haha"._
+    _Ảnh sếp đội nón lá nằm chễm chệ trên đầu group trong 47 phút. 22 người xem. 12 người thả "haha"._
     giam_doc: *(22:00)* Ai ghim ảnh đấy? Anh không giận. Anh hỏi thôi.
     _Bạn gỡ ghim, nhắn: "Dạ em lỡ tay ạ. Em xin lỗi anh." Kèm sticker cúi đầu. Ngọt như đường._
     ~ rd_do_doc = gioi_han(rd_do_doc + 10)

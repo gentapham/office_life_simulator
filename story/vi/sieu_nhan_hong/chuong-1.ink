@@ -110,7 +110,7 @@ quan_ly_idol: Rồi. Em là {sieu_nhan_hong} hả? Từ nay anh quản lý lịc
 # ngay:1 # gio:21:00 # noi:nha_nguyen
 _Căn nhà ở cuối con đường không tên. Bàn ăn 12 ghế. Bạn ngồi cái ghế duy nhất có dấu ngồi._
 _Tối nay ăn hộp cơm mua dọc đường. Ở 11 cái ghế kia, chỉ có bóng đèn chiếu xuống._
-_Điện thoại rung. Group Zalo-lô công ty vừa thêm bạn vào. 37 thành viên._
+_Điện thoại rung. Group Zalo-lô công ty vừa thêm bạn vào. 23 thành viên._
 giam_doc: *(22:00)* Các em ngủ sớm nhé, mai 8h30 họp chiến dịch "Hồng Hóa Việt Nam". Anh không ép, tùy các em.
 * [🦸 Gửi sticker siêu nhân tạo dáng.]
     _12 người thả "haha". Bạn đếm đi đếm lại. 12. Như số ghế._

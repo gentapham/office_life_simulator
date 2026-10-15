@@ -110,7 +110,7 @@ _Sân thượng, tối. {ke_toan} ngồi một mình trên ghế nhựa, ôm m�
 ke_toan: Em lên đây làm gì? Hóa đơn đâu em? *(cười mệt)* Giỡn thôi.
 * [😇 Ngồi xuống cạnh: "Chị ngủ được mấy tiếng rồi chị?"]
     ke_toan: Ba ngày, tổng cộng chắc 7 tiếng. Hai tỷ trong quỹ, mười tỷ nếu thua. Tính hoài vẫn ra số âm.
-    ke_toan: Em biết không, tôi có để dành một ít. Đề phòng. Đủ trả một tháng lương cho mọi người. Đừng nói ai.
+    ke_toan: Em biết không, tôi có để dành một ít. Đề phòng. Gần đủ một tháng lương cho mọi người. Đừng nói ai.
     ~ phat_hien(quy_den_thuong)
     ~ rd_tin_mat()
     ~ qh("ke_toan", 15)
@@ -215,9 +215,9 @@ chi_dai: Còn {dan_dau_tu} thì ngồi bàn riêng. Bàn "chủ nợ". Đứa n�
 _Nửa công ty đứng dậy đi ra bàn chủ nợ. Bạn được giao làm "thư ký hội nghị", ngồi giữa phòng, cầm biên bản._
 truong_phong: *(với {con_ong_chau_cha})* Tớ nói thẳng nhé. Cậu không xứng với cái ghế Phó Giám đốc.
 con_ong_chau_cha: Ông lấy đi. Tui đâu có muốn.
-* [🔥 Đổ dầu: "Anh {truong_phong} ơi, ảnh nói vậy mà trong máy ảnh có đơn xin đề bạt sửa 14 lần á."]
-    truong_phong: Cái gì?! Cậu xem máy tớ?!
-    con_ong_chau_cha: Ủa? Đơn gì? Tui đâu có…
+* [🔥 Đổ dầu: "Ông {con_ong_chau_cha} đừng tin. Anh {truong_phong} viết đơn xin đề bạt sửa tới 14 lần, còn kể xấu ông với sếp nữa."]
+    truong_phong: Cái gì?! Ai cho em xem đơn của tớ?!
+    con_ong_chau_cha: Kể xấu tui với chú tui hả? Được. Để anh gọi chú anh!
     _Hai người đứng bật dậy. Biên bản hội nghị hòa giải của bạn ghi: "09:17, cãi nhau to"._
     ~ rd_tung_tin(15, 10)
     ~ rd_loai_nhat = true

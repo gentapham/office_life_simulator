@@ -199,7 +199,7 @@ _Bên kia vách, tiếng {hong_hot} đang livestream: "Cả nhà ơi, công ty e
     ~ cang_thang(5)
 - _Đúng 22:00, điện thoại rung. Group Zalo-lô công ty._
 giam_doc: Các em ngủ sớm nhé, mai 8h30 họp chiến dịch "Hồng Hóa Việt Nam". Anh không ép, tùy các em. Nhưng ai không đến thì anh buồn.
-_37 người "đã xem". Không ai trả lời. Bạn thả một trái tim. Ngày đầu, phải ngoan._
+_22 người "đã xem". Không ai trả lời. Bạn thả một trái tim. Ngày đầu, phải ngoan._
 ~ qh("giam_doc", 2)
 -> END
 

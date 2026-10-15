@@ -12,7 +12,7 @@
 // ============================================================
 
 === chi_dai_3010_danh_gia ===
-# ngay:31 # gio:23:00 # bat_buoc
+# ngay:31 # gio:23:00 # bat_buoc # dieu_kien:sau_dem_hong
 {
 - cd_no_tren_song:
     ~ chot_ket_thuc("clip_chi_dai")

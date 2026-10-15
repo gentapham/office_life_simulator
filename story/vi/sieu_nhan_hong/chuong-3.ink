@@ -115,15 +115,16 @@ _Bạn ngồi xuống một cái ghế trong góc tối nhất. Tháo mũ ra lau
 ~ snh_dang_mac_do = false
 _Bên cạnh có tiếng ai đó thở dài._
 chua_te_deadline: Ai đó? Ủa… anh {sieu_nhan_hong} hả? Không có mũ nghe giọng anh lạ ghê. Nhỏ nhỏ.
-~ snh_thao_mu(true)
 * [🙂 "Dạ… ờm… ừ. Anh đây. Em… sao chưa về?"]
+    ~ snh_thao_mu(true)
     chua_te_deadline: Mất điện thì deadline cũng mất điện mà anh. Chill.
     ~ snh_tim(10)
     _Hai người ngồi trong bóng tối. Cậu ta kể về con mèo trong ảnh đại diện. Bạn kể về cái bàn 12 ghế. Lần đầu tiên bạn kể cho ai nghe._
 * [🦸 Đội mũ vào lại thật nhanh: "Biến hình! Đừng sợ, có Siêu Nhân Hồng đây!"]
     chua_te_deadline: *(cười)* Diễn hoài hông mệt hả anh?
     ~ snh_dang_mac_do = true
-* [🙂 "Vũ nè. Mấy món quà hồng… không phải PR đâu."]
+* [🙂 "{chua_te_deadline} nè. Mấy món quà hồng… không phải PR đâu."]
+    ~ snh_thao_mu(true)
     { snh_tim_hong < 40:
         chua_te_deadline: Em biết mà. Anh {quan_ly_idol} dặn anh nói vậy đúng hông?
         ~ snh_tim(5)
@@ -133,6 +134,7 @@ chua_te_deadline: Ai đó? Ủa… anh {sieu_nhan_hong} hả? Không có mũ ngh
         ~ snh_tim(20)
     }
 * {co(usb_khong_nhan)} [🔒 Đưa cho {chua_te_deadline} cái USB tìm được trong kho của {cho}.]
+    ~ snh_thao_mu(true)
     ~ mat(usb_khong_nhan)
     ~ phat_hien(usb_cua_vu)
     chua_te_deadline: *(cầm USB, ngửi)* Mùi cà phê sữa đá… Trời đất… file gốc! Anh lấy ở đâu ra vậy?
