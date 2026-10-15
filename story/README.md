@@ -100,3 +100,17 @@ Mọi file phải qua kiểm tra (✅) trước khi commit.
 - Giọng: Thắng, Nhật, Bình nói giọng Bắc. Còn lại giọng Nam.
 - Câu thoại ngắn, tối đa khoảng 2 dòng trên màn hình.
 - Không dùng tên người thật, tên thương hiệu thật. Không nội dung tình dục, không chửi thề nặng.
+
+## Việc game (code) phải tự làm
+
+Các file truyện **không** làm những việc sau. Phần code của game phải lo:
+
+- **Trả lương** theo cách người chơi chọn (ngày, tuần, tháng). Lương tháng về ngày 12/10.
+- **Cộng người theo dõi mặc định** cho các sự kiện cố định (MV 9/10, gameshow 16/10, livestream 23/10…) và mức tăng tự nhiên mỗi ngày, theo bảng điểm trong `docs/so-tay-su-that.md`. Các lệnh `follow()` trong truyện chỉ là phần đóng góp thêm của người chơi.
+- **Giảm chỉ số theo thời gian**: No, Khát, Năng lượng, và Độ Nổi Tiếng của Phát (giảm 1 mỗi ngày).
+- **Chạy minigame**: cảnh truyện chuyển tới cảnh mở đầu minigame (`..._mg_..._mo` / `minigame:<id>`) rồi dừng. Game chạy minigame, xong thì gọi cảnh thắng hoặc thua tương ứng.
+- **Chọn cảnh**: dựa vào thẻ `ngay`, `gio`, `noi`, `npc`, `ngau_nhien`, `vai_khong`, `bat_buoc`, `dieu_kien`.
+- **Lựa chọn có giờ**: đếm ngược theo thẻ `hen_gio`, hết giờ thì chọn lựa chọn ⏱️.
+- **Tin đồn**: các mẫu trong `chung/tin-don.ink` in ra một câu không có người nói. Game thêm `<mã người kể>: ` vào đầu câu.
+- **Cuối game**: tối 31/10 chạy `chung_3110_dem_hong`. Tới dòng có thẻ `hien_ket_thuc_nhan_vat`, game gọi `<mã>_3010_danh_gia` của nhân vật người chơi, rồi gọi `chung_3110_ket_thuc_su_nghiep` và `chung_3110_mot_thang_sau`.
+- **Chế độ chó**: khi người chơi là Tuất, dòng có thẻ `phu_de:` chỉ hiện phần phụ đề nếu bật chế độ "dịch tiếng người".
