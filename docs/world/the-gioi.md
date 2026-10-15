@@ -1,13 +1,13 @@
 # Thế giới & bản đồ
 
-> Bối cảnh: một khu phố hư cấu ở một thành phố lớn kiểu Sài Gòn / Hà Nội.
+> Bối cảnh: **Thành Phố Ước Mơ** (*Dream City*), một thành phố hư cấu mang không khí Sài Gòn.
 > Mọi tên địa danh, thương hiệu trong game đều là **hư cấu hoặc nhại lại**, không dùng tên thương hiệu thật.
 
 ---
 
 ## 1. Quận Hóng
 
-Mọi chuyện xảy ra ở **Quận Hóng**, một quận hư cấu chật chội và ồn ào: hẻm nhỏ, đường lớn kẹt xe, quán xá san sát, wifi quán nào cũng tên "Khong co pass".
+Mọi chuyện xảy ra ở **Quận Hóng**, Thành Phố Ước Mơ, một quận chật chội và ồn ào: hẻm nhỏ, đường lớn kẹt xe, quán xá san sát, wifi quán nào cũng tên "Khong co pass".
 
 Bản đồ chia thành **6 khu**. Mỗi khu là một vùng tải riêng, nên bản đồ rộng mà vẫn nhẹ máy.
 
@@ -17,8 +17,8 @@ Bản đồ chia thành **6 khu**. Mỗi khu là một vùng tải riêng, nên 
  ┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐
  │  ⑤ ĐỒI NGÂN HÀNG     │   │  ③ KHU CĂN HỘ         │   │  ④ PHỐ CŨ            │
  │  (biệt thự)          │   │  Sky Ảo (cao cấp)    │   │  nhà phố, chợ,       │
- │  nhà Giám Đốc        │   │  Phố Mới (tầm trung) │   │  trường mầm non,     │
- │                      │   │                      │   │  chùa, tiệm cầm đồ   │
+ │  nhà Giám Đốc        │   │  Phố Mới (tầm trung) │   │  chùa,               │
+ │                      │   │                      │   │  tiệm cầm đồ         │
  └──────────┬───────────┘   └──────────┬───────────┘   └──────────┬───────────┘
             │        ĐẠI LỘ KẸT XE (đường chính nối các khu)      │
  ┌──────────┴───────────┐   ┌──────────┴───────────┐   ┌──────────┴───────────┐
@@ -124,7 +124,7 @@ Hẻm sâu, hai xe máy tránh nhau phải nín thở. Đầu hẻm có quán tr
 |---|---|---|---|
 | Phòng 3, dãy A | 🐍 **Hiếu** | Phòng 15m², sạch sẽ tới mức đáng ngờ. Bàn làm việc có laptop và cuốn sổ tay | Cuốn sổ ghi chép chuyện của từng đồng nghiệp |
 | Phòng 5, dãy A | 👀 **Ngân** | Ngay sát vách Hiếu. Đầy đèn LED, ring light, ảnh chụp màn hình dán tường | Laptop đang mở trang admin "Confession G-Entertainment" |
-| Phòng 12, dãy B | 🐣 **Duy** | Phòng ghép 4 người, giường tầng, mì gói xếp thành tháp | Nếu Duy là con nhà đầu tư (tùy lần chơi), tối nào cũng có xe hơi đón ở đầu hẻm |
+| Phòng 12, dãy B | 🐣 **Duy** | Phòng ghép 4 người, giường tầng, mì gói xếp thành tháp | Thẻ ngân hàng hạng kim cương giấu dưới gối, không ai biết vì sao |
 | Phòng 9, dãy B | 🔌 **Bảo** | Toàn dây điện, 3 cái máy tính tự ráp, mì ly. Bảo ít khi về, hay ngủ ở phòng server công ty | Ổ cứng ghi "KHÔNG ĐƯỢC MỞ" |
 | Phòng gác lửng | 📉 **Chương** | Phòng nhỏ nhất hẻm, nhỏ dần theo tài khoản đầu tư. Màn hình chart sáng cả đêm | Cửa dán đầy giấy nhắc nợ. Chủ nợ hay đến gõ cửa |
 
@@ -139,7 +139,7 @@ Tòa nhà kính 30 tầng, có hồ bơi, phòng gym, sảnh có lễ tân. Than
 
 | Căn | Chủ | Mô tả | Bí mật trong nhà |
 |---|---|---|---|
-| Penthouse tầng 30 | 👑 **Long** | Bố mua cho. Rộng, trống, lạnh lẽo, bể cá to hơn phòng trọ của Hiếu | Một căn phòng khóa là phòng thu âm, nơi Long lén sáng tác nhạc |
+| Penthouse tầng 30 | 👑 **Long** | Chú Thắng cho ở nhờ. Rộng, trống, lạnh lẽo, bể cá to hơn phòng trọ của Hiếu | Một căn phòng khóa là phòng thu âm, nơi Long lén sáng tác nhạc |
 | Căn 1808 | 🎤 **Phát** | Tường đầy poster và ảnh của chính Phát hồi 2015, cúp giải thưởng bám bụi | Thông báo nợ 3 tháng tiền thuê nhà. Hóa đơn thuê fan ảo |
 | Căn 1203 | 📈 **Huyền** | Nội thất sang để chụp hình đăng story | Tủ lạnh trống trơn, sống bằng mì gói. Hợp đồng tài trợ "ma" nằm trong ngăn bàn |
 | Studio 0905 | 📞 **Thái** | Nhỏ gọn, 5 cục sạc dự phòng, 3 cái điện thoại | Ảnh Phát lồng khung, giấu trong ngăn kéo tủ đầu giường |
@@ -159,12 +159,12 @@ Tòa 7 tầng, thang máy hay kẹt, bảo vệ ngủ gật. Hàng xóm nghe th�
 
 ### ④ Phố Cũ
 
-Phố nhà ống lâu đời, cây cổ thụ, các cô chú ngồi trước cửa uống trà. Có chợ sáng, trường mầm non và chùa.
+Phố nhà ống lâu đời, cây cổ thụ, các cô chú ngồi trước cửa uống trà. Có chợ sáng và chùa.
 
 | Nhà | Chủ | Mô tả | Bí mật trong nhà |
 |---|---|---|---|
 | Nhà số 18 | 💰 **Thương** | Nhà cũ, sạch, cái gì cũng dán nhãn. Sổ chi tiêu ghi từng đồng | Két sắt sau bức tranh: "quỹ đen" để trả lương phòng khi công ty sập |
-| Nhà số 45 | 🦁 **Hương** | Nhà đông vui: chồng, 2 con, đồ chơi khắp nơi. Hương đưa đón con ở trường mầm non đầu phố | Ảnh cũ thời "chị đại" khét tiếng cả quận, và một tấm giấy khen võ thuật |
+| Nhà số 45 | 🦁 **Hương** | Nhà rộng, cây cảnh, bao cát tập đấm treo giữa sân. Nhân viên mới hay được Hương rủ về ăn cơm | Ảnh cũ thời "chị đại" khét tiếng cả quận, và một tấm giấy khen võ thuật |
 | Gác mái số 7 | ✍️ **Oánh** | Gác mái đầy sách, một con mèo, máy đánh chữ để "lấy cảm hứng" | Bản thảo tiểu thuyết về drama công ty, dùng tên thật đồng nghiệp |
 
 ---
@@ -175,7 +175,7 @@ Khu biệt thự trên đồi, đường rộng, cây xanh, mỗi nhà một c�
 
 | Nhà | Chủ | Mô tả | Bí mật trong nhà |
 |---|---|---|---|
-| Biệt thự số 1 | 👔 **Thắng** | Biệt thự 3 tầng, sân golf mini, vợ Thắng quản lý mọi thứ. Thắng sợ vợ | Giấy thế chấp ngân hàng: căn biệt thự đang cầm cố để cứu công ty |
+| Biệt thự số 1 | 👔 **Thắng** | Biệt thự 3 tầng, sân golf mini, ảnh Thắng chụp với người nổi tiếng treo khắp nơi | Giấy thế chấp ngân hàng: căn biệt thự đang cầm cố để cứu công ty |
 
 ---
 
@@ -185,7 +185,7 @@ Ngoại ô, đường đất đỏ, ruộng rau, gió mát. Đi xe máy từ tru
 
 | Nhà | Chủ | Mô tả | Bí mật trong nhà |
 |---|---|---|---|
-| Nhà vườn | 🤒 **Sơn** | Nhà ở với bà ngoại, "người bệnh nặng 7 lần trong năm", thật ra khỏe re, sáng nào cũng tập dưỡng sinh | Bộ đồ sân khấu kim tuyến và giấy báo vào vòng trong một cuộc thi hát truyền hình |
+| Nhà vườn | 🤒 **Sơn** | Sống một mình. Trên tường treo ảnh bà ngoại, "người bệnh nặng 7 lần trong năm", đang cười tươi khỏe re | Bộ đồ sân khấu kim tuyến và giấy báo vào vòng trong một cuộc thi hát truyền hình |
 | Nhà cấp 4 có vườn | 🛡️ **Bình** | Nhà nhỏ, vườn rau, bể cá. Bác Bình chỉ về đây cuối tuần, ngày thường ở chòi bảo vệ | Tủ gỗ cũ đựng giấy tờ thành lập G-Entertainment đứng tên… Bình |
 
 ---
@@ -214,7 +214,6 @@ Ngoài những địa điểm ở mục 2, thêm các nơi sau để thế giớ
 | Địa điểm | Khu | Dùng để | Gắn với ai |
 |---|---|---|---|
 | 🛒 **Chợ Phố Cũ** | ④ | Mua đồ tươi rẻ (chỉ mở buổi sáng), nghe các cô bán hàng buôn chuyện | Thương, Hương |
-| 🏫 **Trường mầm non Mầm Drama** | ④ | Hương đưa đón con. Họp phụ huynh cũng là một chiến trường | Hương |
 | 🛕 **Chùa Phố Cũ** | ④ | Cầu may, thắp hương, tịnh tâm (giảm stress mạnh) | Chương cầu coin lên, Thái cầu duyên |
 | 💍 **Tiệm cầm đồ Cứu Nguy** | ④ | Cầm đồ lấy tiền khi cháy túi | Chương, Phát |
 | 🎤 **Karaoke Hát Cho Nhau Nghe** | ① | Tăng hai sau nhậu, hát bài hit 2015 của Phát | Cả công ty |
@@ -224,9 +223,10 @@ Ngoài những địa điểm ở mục 2, thêm các nơi sau để thế giớ
 | 🎱 **Quán bida Cơ Bản** | ① | Giải trí buổi tối, cá cược nhỏ | Vũ, Chương |
 | 🏥 **Phòng khám Đa Khoa Khỏe Re** | ① | Khám bệnh khi stress hoặc ngất. **Mua giấy nghỉ ốm** | Sơn (khách quen) |
 | 🏦 **Ngân hàng Tín Dụng Đen Đủi** | ⑤ | Vay tiền, gửi tiết kiệm | Thắng (thế chấp biệt thự), Chương |
+| 🏟️ **Sân khấu Đêm Hồng** | ① | Sân khấu ngoài trời dựng cho đêm diễn Halloween 31/10 của Siêu Nhân Hồng | Cả công ty |
 | 🚌 **Bến xe Ven Đô** | ⑥ | Về quê, trốn nợ, bỏ trốn cùng người yêu | Sơn, Chương |
 | 📺 **Đài truyền hình Tivi Hóng** | ⑥ | Gameshow, cuộc thi hát, phỏng vấn | Sơn, Nguyên, Phát |
-| 🏢 **Công ty đối thủ** | ⑥ | Tòa nhà hào nhoáng của đối thủ (tên đang chờ bạn đặt). Phỏng vấn lén, gặp mặt bí mật | Nhi, Quỳnh, Thái |
+| 🏢 **Công ty đối thủ** | ⑥ | Tòa nhà kính hào nhoáng của **LL-Entertainment**. Phỏng vấn lén, gặp mặt bí mật | Nhi, Quỳnh, Thái |
 | 🏊 **Hồ bơi chung cư Sky Ảo** | ③ | Bơi, sống ảo, gặp gỡ "tình cờ" | Long, Huyền |
 | ⚽ **Sân bóng mini** | ⑥ | Giải bóng đá giao hữu giữa các phòng ban | Nhật, Vũ, Tuấn |
 

@@ -57,9 +57,6 @@
 **Tình cảm**
 - 💔 **Lĩnh → Thái → Phát**: Editor thầm thích Quản Lý Idol, còn Quản Lý Idol lại thầm thương Idol Hết Thời.
 - 🩷 **Nguyên → Vũ**: Siêu Nhân Hồng theo đuổi Chúa Tể Deadline.
-- 💌 **Tuấn → Thương**: HR yêu thầm Kế Toán.
-- 🙈 **Ngân → Bảo**: Thánh Hóng yêu thầm IT.
-- 💘 **Long → Quỳnh**: Con Ông Cháu Cha thầm thích Designer.
 
 **Phe phái & thù hằn**
 - 🤝 **Huyền + Quỳnh**: Sales và Designer cùng phe, nắm bí mật của nhau.
@@ -67,6 +64,7 @@
 - 🎤⚔️ **Phát ✖ Nguyên**: Idol Hết Thời sợ bị Siêu Nhân Hồng thay thế.
 - 🪑⚔️ **Nhật ✖ Long**: tranh ghế phó giám đốc.
 - 🦁⚔️ **Hương ✖ Nhi**: Chị Đại ghét Thánh Nịnh.
+- 🐍⚔️ **Hiếu ✖ Nguyên**: hồi nhỏ Nguyên hay bắt nạt Hiếu. Giờ Hiếu muốn phá việc lăng xê Siêu Nhân Hồng để trả thù.
 
 **Người chơi chọn 1 trong 23 nhân vật**: 22 nhân viên (role 1 đến 21 và chó Tuất) hoặc **Siêu Nhân Hồng**. Mặc định là Rắn Độc Hiếu. Khi chơi Siêu Nhân Hồng, bạn chính là siêu sao mà cả công ty đang lăng xê, và tự quyết định sự nghiệp của mình.
 
@@ -83,6 +81,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 - **Công việc:** viết bản tin nội bộ hằng tuần, quản lý group Zalo công ty, tổ chức sinh nhật nhân viên. Nghề này cho phép biết chuyện của tất cả mọi người.
 - **Tính cách:** ngoài mặt thân thiện, quan tâm, nhớ sinh nhật mọi người. Bên trong là cái máy gây chiến.
+- **Động cơ:** hồi nhỏ ở cùng xóm, Nguyên (lớn hơn 3 tuổi) hay bắt nạt Hiếu. Ngày đầu đi làm, Hiếu phát hiện "siêu sao" mà cả công ty phải lăng xê chính là Nguyên. Hiếu quyết phá cho bằng được.
 - **Cách nói:** ngọt, hay bắt đầu bằng "Nói nhỏ thôi nha…", "Tui nói vậy thôi chứ không có ý gì đâu…".
 - **Câu cửa miệng:** *"Tui chỉ nói sự thật thôi mà."*
 
@@ -94,7 +93,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** giọng miền Bắc, dùng nhiều từ tiếng Anh sai chỗ ("Em check lại cái mindset giúp anh"), nói dài, hay kể chuyện hồi khởi nghiệp.
 - **Câu cửa miệng:** *"Anh không ép, tùy em."* (nghĩa là bắt buộc)
 - **Bí mật:** công ty đang nợ ngân hàng, cần Siêu Nhân Hồng nổi tiếng để gỡ vốn trước khi chủ đầu tư Genta ở nước ngoài phát hiện. Có một tài khoản Facebook clone để đọc trộm group "anti sếp".
-- **Quan hệ:** chú ruột của Con Ông Cháu Cha. Rất tin Thánh Nịnh. Sợ vợ, và sợ cả Chị Đại.
+- **Quan hệ:** chú ruột của Con Ông Cháu Cha. Rất tin Thánh Nịnh. Sợ Chị Đại.
 - **Ý tưởng truyện:**
   - Bị nhân viên nói xấu trong group bí mật, giả vờ không biết rồi trả thù từng người.
   - Cố giấu chuyện công ty sắp phá sản trong khi vẫn tổ chức team building hoành tráng.
@@ -136,7 +135,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** nói nhanh, nhiều meme, "Ét o ét!", "Biến căng rồi mấy bà ơi!", "Ối dồi ôi!".
 - **Câu cửa miệng:** *"Nghe gì chưa?"*
 - **Bí mật:** là admin của trang "Confession G-Entertainment" ẩn danh.
-- **Quan hệ:** nguồn tin lớn nhất của Rắn Độc, nhưng cũng là mối nguy lớn nhất (vì kể lại hết). Bạn thân của Designer. Yêu thầm IT, người duy nhất biết bí mật trang Confession của mình.
+- **Quan hệ:** nguồn tin lớn nhất của Rắn Độc, nhưng cũng là mối nguy lớn nhất (vì kể lại hết). Bạn thân của Designer. IT là người duy nhất biết bí mật trang Confession của Ngân.
 - **Ý tưởng truyện:**
   - Trang Confession đăng bài bóc phốt giám đốc, cả công ty truy tìm admin.
   - Hóng chuyện người khác quá nhiều, ai ngờ chính mình thành nhân vật chính của drama.
@@ -147,13 +146,13 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 ### 6. 👑 Con Ông Cháu Cha: Long
 - **Công việc:** phó phòng Marketing (trên giấy). Thực tế: đi muộn, về sớm, đăng story check-in quán cà phê.
 - **Tính cách:** không ác, chỉ là sống trên mây. Không hiểu tại sao người khác phải lo tiền nhà.
-- **Cách nói:** "Ủa sao không mua cái mới luôn?", "Bố anh nói…", "Chill đi".
+- **Cách nói:** "Ủa sao không mua cái mới luôn?", "Chú anh nói…", "Chill đi".
 - **Câu cửa miệng:** *"Để anh gọi chú anh."*
 - **Bí mật:** thật ra muốn tự lập, chán làm "cháu giám đốc". Có năng khiếu làm nhạc nhưng không dám nói.
-- **Quan hệ:** cháu ruột giám đốc. Bị Trưởng Phòng Họp ghét. Được Thực Tập Sinh coi như thần tượng. Thầm thích Designer. Idol Hết Thời muốn lợi dụng.
+- **Quan hệ:** cháu ruột giám đốc. Bị Trưởng Phòng Họp ghét. Được Thực Tập Sinh coi như thần tượng. Idol Hết Thời muốn lợi dụng.
 - **Ý tưởng truyện:**
   - Bị chú ép đi học "khóa quản lý" và phải làm việc thật một tuần.
-  - Yêu Designer, gia đình phản đối kiểu phim Hàn.
+  - Lần đầu tự đi làm thêm để chứng minh mình không cần "ô dù".
   - Bí mật sáng tác bài hát cho Siêu Nhân Hồng, bài hát thành hit.
 
 ---
@@ -178,7 +177,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** **30 tuổi**, bỏ nghề cũ để làm lại từ đầu trong ngành giải trí. Thực tập sinh lớn tuổi nhất lịch sử công ty. Ngây thơ, nhiệt tình, ai nhờ gì cũng làm. Tin mọi lời Rắn Độc nói.
 - **Cách nói:** lễ phép quá mức, "Dạ em làm liền ạ!", "Dạ cái này là sao ạ?".
 - **Câu cửa miệng:** *"Dạ em mới vô nên chưa biết ạ."*
-- **Bí mật:** thật ra là con của một nhà đầu tư lớn, đi thực tập ẩn danh để "trải nghiệm đời". Hoặc không, tùy lần chơi.
+- **Bí mật:** trước đây là trưởng phòng ở một ngân hàng lớn, lương cao gấp 10 lần lương thực tập. Bỏ hết để theo đam mê giải trí, nhưng không dám kể với ai vì sợ bị nhờ vả… vay tiền.
 - **Quan hệ:** coi Con Ông Cháu Cha là thần tượng, bắt chước từ cách ăn mặc tới cách nói. Hay bị Chúa Tể Deadline đẩy việc. Được Chị Đại bảo kê.
 - **Ý tưởng truyện:**
   - Bị cả phòng sai vặt, rồi một ngày nổi loạn.
@@ -193,7 +192,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** nói chậm, rõ ràng, hay hỏi "Hóa đơn đâu em?".
 - **Câu cửa miệng:** *"Không có hóa đơn là không có tiền."*
 - **Bí mật:** biết rõ công ty đang nợ. Tự giấu một "quỹ đen" để trả lương phòng khi công ty sập.
-- **Quan hệ:** đồng minh ngầm của giám đốc. Bị cả công ty ghét mỗi ngày 10 khi lương về trễ. Thân với Chị Đại. Được HR yêu thầm (biết, nhưng giả vờ không biết).
+- **Quan hệ:** đồng minh ngầm của giám đốc. Bị cả công ty ghét mỗi ngày 10 khi lương về trễ. Thân với Chị Đại. Là người duy nhất đọc kỹ hợp đồng với Siêu Nhân Hồng.
 - **Ý tưởng truyện:**
   - Đợt kiểm tra thuế bất ngờ, cả công ty phải giả vờ làm việc chăm chỉ.
   - Quỹ đen bị lộ: là người hùng hay kẻ biển thủ?
@@ -206,12 +205,12 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** cười suốt, nhưng nụ cười làm người ta sợ. Ai được mời uống trà là biết sắp có chuyện.
 - **Cách nói:** ngôn ngữ nhân sự chuẩn mực: "Anh chỉ muốn lắng nghe em thôi", "Mình cùng nhìn lại hành trình nha em".
 - **Câu cửa miệng:** *"Em rảnh không, lên phòng anh uống trà xíu."*
-- **Bí mật:** có danh sách nhân viên bị cắt giảm cuối quý. Đang yêu thầm Kế Toán.
+- **Bí mật:** có danh sách nhân viên bị cắt giảm cuối năm, nếu Siêu Nhân Hồng thất bại.
 - **Quan hệ:** cánh tay của giám đốc. Đối thủ tự nhiên của Thánh Xin Nghỉ. Ai cũng sợ, trừ Chị Đại.
 - **Ý tưởng truyện:**
   - Danh sách cắt giảm bị rò rỉ, cả công ty hoảng loạn.
   - Tổ chức team building Vũng Tàu, mọi thứ đổ bể.
-  - Mối tình với Kế Toán: tỏ tình qua email có tiêu đề "Thư mời làm việc". Kế Toán trả lời: "Hóa đơn đâu anh?"
+  - Phỏng vấn tuyển "nhân viên chăm sóc Siêu Nhân Hồng", ứng viên nào cũng kỳ quặc.
 
 ---
 
@@ -221,16 +220,16 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** cụt lủn, "Restart chưa?", "Lỗi người dùng".
 - **Câu cửa miệng:** *"Anh tắt đi bật lại thử chưa?"*
 - **Bí mật:** có thể đọc tin nhắn công ty. Là người duy nhất biết ai là admin trang Confession.
-- **Quan hệ:** Thánh Hóng yêu thầm (IT không hay biết). Hay bị Chúa Tể Deadline nhờ cứu file. Bạn nhậu của Bác Bảo Vệ.
+- **Quan hệ:** hay bị Chúa Tể Deadline nhờ cứu file. Bạn nhậu của Bác Bảo Vệ. Giữ bí mật của Thánh Hóng.
 - **Ý tưởng truyện:**
   - Wifi sập ngày deadline, cả công ty đổ tội cho IT.
   - Vô tình đọc được một tin nhắn chấn động, phân vân có nên nói ra.
-  - Tình yêu chậm hiểu: không nhận ra Thánh Hóng thích mình dù đã được tỏ tình 3 lần.
+  - Livestream đầu tiên của Siêu Nhân Hồng: mất mạng đúng lúc 10 nghìn người đang xem.
 
 ---
 
 ### 12. 🎤 Idol Hết Thời: Phát
-- **Công việc:** ca sĩ độc quyền của công ty. Có đúng một bài hit năm 2015, giờ đi hát đám cưới và sự kiện khai trương.
+- **Công việc:** ca sĩ độc quyền của công ty. Có đúng một bài hit năm 2015 là **"Công Viên"** (*"Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên, thích ăn chuối chiên"*), giờ đi hát đám cưới và sự kiện khai trương.
 - **Tính cách:** vẫn sống như đang đỉnh cao: kính đen trong nhà, đòi phòng chờ riêng.
 - **Cách nói:** "Hồi anh còn nổi…", "Fan anh đông lắm em", nói chuyện như đang trả lời phỏng vấn.
 - **Câu cửa miệng:** *"Em biết anh là ai không?"*
@@ -292,7 +291,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** "Cho xin feedback cụ thể được không ạ?", "Font này mà anh nói xấu hả?".
 - **Câu cửa miệng:** *"Sửa nhẹ thôi là sửa cái gì ạ?"*
 - **Bí mật:** đang chạy job freelancer cho công ty đối thủ.
-- **Quan hệ:** bạn thân Thánh Hóng. Cãi nhau với Biên Kịch. Được Con Ông Cháu Cha thầm thích. **Cùng phe với Sales Huyền**: Huyền giữ bí mật vụ Quỳnh làm cho đối thủ, Quỳnh thiết kế hồ sơ "xịn xò" cho các deal ma của Huyền.
+- **Quan hệ:** bạn thân Thánh Hóng. Cãi nhau với Biên Kịch. **Cùng phe với Sales Huyền**: Huyền giữ bí mật vụ Quỳnh làm cho đối thủ, Quỳnh thiết kế hồ sơ "xịn xò" cho các deal ma của Huyền.
 - **Ý tưởng truyện:**
   - Bản thiết kế bị sửa lần thứ 37, cuối cùng sếp chọn lại bản đầu tiên.
   - Bị lộ việc làm cho đối thủ vì quên xóa logo.
@@ -316,7 +315,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ### 18. 🦁 Chị Đại: Hương
 - **Công việc:** trưởng nhóm tổ chức sự kiện: lên kế hoạch show, liên hoan, team building.
-- **Tính cách:** mẹ bỉm sữa 2 con, nói một là một. Không sợ ai, kể cả giám đốc. Thương nhân viên mới.
+- **Tính cách:** nói một là một. Không sợ ai, kể cả giám đốc. Thương nhân viên mới.
 - **Cách nói:** thẳng, gắt, nhưng thương. "Ăn cơm chưa? Ngồi xuống chị kể cho nghe".
 - **Câu cửa miệng:** *"Đứa nào làm em khóc, chỉ mặt chị."*
 - **Bí mật:** từng là "chị đại" thật hồi trẻ. Đánh ghen một lần, đã nổi tiếng cả quận.
@@ -372,21 +371,24 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ### 22. 🩷 Siêu Nhân Hồng: Nguyên
 - **Họ tên đầy đủ:** Nguyễn Nguyên. **Sinh ngày:** 23/10/1995.
-- **Vai trò:** **không phải nhân viên**. Là siêu sao mới nổi, đối tác chiến lược của công ty.
+- **Vai trò:** **không phải nhân viên**. Là siêu sao mới nổi, đối tác chiến lược của công ty. **Rất giàu**: không thiếu gì ngoài sự nổi tiếng. Nguyên trả cho G-Entertainment một khoản tiền lớn để được lăng xê, công ty đang ế show như trúng số (chi tiết hợp đồng: [world/cong-ty.md](../world/cong-ty.md)).
 - **Gốc gác:** một người hoàn toàn bình thường, nhưng rất thích mặc bộ đồ siêu nhân hồng để **đi giúp đỡ người khác**: dắt cụ già qua đường, đẩy xe chết máy giữa trời mưa, nhặt rác ở công viên, gỡ diều mắc trên cây cho con nít.
 - **Nỗi khổ:** giúp được cả thế giới, nhưng **không giúp được chính mình**. Ví dụ (bản nháp):
   - Đẩy xe giùm cả phố, còn xe mình thì hết xăng giữa đường.
   - Khuyên người khác tỏ tình, còn bản thân thì ế.
   - Cứu mèo trên cây, còn mình thì bị kẹt trong thang máy chung cư.
-  - Giỏi đòi công bằng cho người khác, nhưng bị chủ trọ tăng giá 3 lần không dám nói một câu.
+  - Giàu nứt vách, nhưng ăn cơm một mình trong căn nhà to, không ai nhớ tên thật.
 
   Vì vậy Nguyên tìm đến **G-Entertainment** để được "buff" thành ngôi sao nhiều người biết đến. Nổi tiếng rồi thì giúp được nhiều người hơn, và biết đâu giúp được cả chính mình.
-- **Nhiệm vụ của công ty:** **buff cho Siêu Nhân Hồng nổi tiếng trong showbiz Việt.** Nếu thành công, công ty thoát nợ.
+- **Nhiệm vụ của công ty:** **buff cho Siêu Nhân Hồng nổi tiếng trong showbiz Việt** trước **Đêm Hồng Halloween 31/10**. Thành công thì công ty hồi sinh, thất bại thì phải hoàn tiền gấp đôi và phá sản.
 - **Tính cách:** tốt bụng, nhiệt tình, hơi ngố. Tự tin khi mặc bộ đồ, nhưng tháo mũ ra là thành người rụt rè. Mê chọc chó cho vui: giả tiếng sủa, giấu đồ chơi, làm mặt xấu. Chỉ chọc cho vui chứ không bao giờ đánh đập.
 - **Cách nói:** "Biến hình!", "Vì công lý và lượt view!", tạo dáng sau mỗi câu. Lúc không mặc đồ thì nói nhỏ, hay "dạ… ờm…".
 - **Câu cửa miệng:** *"Hồng không phải màu, Hồng là thái độ!"*
-- **Bí mật:** đằng sau chiếc mũ chỉ là một anh chàng bình thường tên Nguyễn Nguyên, không có gì đặc biệt. Nguyên sợ nhất là khán giả biết điều đó rồi hết thích mình.
-- **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Giám đốc đặt cả công ty vào tay người này. **Thích Chúa Tể Deadline Vũ**, tặng quà toàn màu hồng. **Bị chó Tuất ghét cay ghét đắng** vì tật chọc chó.
+- **Bí mật:**
+  - Đằng sau chiếc mũ chỉ là một anh chàng bình thường tên Nguyễn Nguyên. Nguyên sợ nhất là khán giả biết điều đó rồi hết thích mình.
+  - Tiền của Nguyên từ đâu ra, không ai biết (sự thật: trúng vé số độc đắc năm 2019, giữ kín từ đó tới giờ).
+  - Hồi nhỏ Nguyên là đứa hay bắt nạt trẻ con trong xóm, trong đó có Hiếu. Đi giúp người bây giờ một phần là để chuộc lỗi, nhưng Nguyên không nhận ra Hiếu.
+- **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Bị Hiếu ngầm phá (mà không hề biết vì sao). Giám đốc đặt cả công ty vào tay người này. **Thích Chúa Tể Deadline Vũ**, tặng quà toàn màu hồng. **Bị chó Tuất ghét cay ghét đắng** vì tật chọc chó.
 - **Ý tưởng truyện:**
   - Chiến dịch "Hồng hóa Việt Nam": đi gameshow, livestream bán hàng, đu trend TikTok.
   - Đang quay quảng cáo thì bỏ đi giữa chừng để giúp một bà cụ bị giật túi. Clip được quay lại và lên xu hướng.
