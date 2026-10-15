@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { taoTheGioi, KHU, CAU_THANG, CHO_NGOI, CAO_TANG } from "./the-gioi.js";
 import { taoNguoi, taoBangTen, taoDoiTay } from "./nhan-vat-3d.js";
 
-const MAT = 1.62;            // tầm mắt
+const MAT = 1.72;            // tầm mắt
 const BAN_KINH = 0.32;       // bán kính người chơi khi va chạm
 const TOC_DI = 3.2, TOC_CHAY = 5.6;
 const TAM_NOI = 2.3;         // khoảng cách bấm nói chuyện
@@ -267,11 +267,12 @@ export class Game3D {
       // kéo camera lại gần nếu vướng tường
       for (let d = 0.4; d <= xa; d += 0.2) {
         const px = dau.x - huong.x * d, pz = dau.z - huong.z * d;
-        if (this.theGioi.vat[this.tang].some(b => px > b.minX - 0.15 && px < b.maxX + 0.15 && pz > b.minZ - 0.15 && pz < b.maxZ + 0.15)) { k = d - 0.2; break; }
+        if (this.theGioi.vat[this.tang].some(b => b.tuong && px > b.minX - 0.15 && px < b.maxX + 0.15 && pz > b.minZ - 0.15 && pz < b.maxZ + 0.15)) { k = d - 0.2; break; }
       }
       this.camera.position.set(dau.x - huong.x * k, Math.min(dau.y - huong.y * k + cao * 0.3, y + 3.4), dau.z - huong.z * k);
       this.camera.lookAt(dau.x + huong.x * 2, dau.y + huong.y * 2, dau.z + huong.z * 2);
       this.than.group.position.set(this.p.x, y, this.p.z);
+      this.than.group.visible = k > 1.1;
       if (this.dangDi && this.huongThan != null) {
         const muc = this.huongThan; let d = muc - this.than.group.rotation.y;
         d = Math.atan2(Math.sin(d), Math.cos(d));

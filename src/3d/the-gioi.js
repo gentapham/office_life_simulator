@@ -119,6 +119,7 @@ export function taoTheGioi(scene) {
     for (const [p, q] of doan) {
       const dai = q - p, giua = (p + q) / 2;
       if (ngang) hop(dai, cao, DAY, color, giua, y, z1, { tang }); else hop(DAY, cao, dai, color, x1, y, giua, { tang });
+      if (cao > 2) vat[tang][vat[tang].length - 1].tuong = true; // camera góc nhìn thứ ba chỉ né tường
     }
     for (const [d1, d2] of doors) { // phần tường trên khung cửa
       const dai = d2 - d1, giua = (d1 + d2) / 2;

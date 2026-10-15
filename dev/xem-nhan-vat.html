@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xem nhân vật 3D</title>
+  <style>html,body{margin:0;height:100%;background:#d9d2c4;font-family:system-ui,sans-serif}canvas{display:block;width:100%;height:100%}
+  #nut{position:fixed;top:10px;left:10px;display:flex;gap:6px;flex-wrap:wrap}#nut button{padding:6px 10px;border-radius:8px;border:1px solid #999;background:#fff}</style>
+</head>
+<body>
+  <div id="nut"></div>
+  <script type="module">
+    // Trang dành cho người làm game: xếp hàng toàn bộ nhân vật để soi mặt, tóc, trang phục. Không nằm trong bản build.
+    import * as THREE from "three";
+    import { taoNguoi, NGOAI_HINH } from "../src/3d/nhan-vat-3d.js";
+    const r = new THREE.WebGLRenderer({ antialias: true }); r.setPixelRatio(devicePixelRatio); document.body.append(r.domElement);
+    const scene = new THREE.Scene(); scene.background = new THREE.Color(0xd9d2c4);
+    scene.add(new THREE.HemisphereLight(0xffffff, 0xb8ad96, 1.6), new THREE.AmbientLight(0xffffff, 0.55));
+    const sun = new THREE.DirectionalLight(0xfff1d6, 1.6); sun.position.set(3, 6, 8); scene.add(sun);
+    const cam = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+    const ds = Object.keys(NGOAI_HINH); const nv = [];
+    ds.forEach((ma, i) => { const n = taoNguoi(ma); n.group.position.set(i * 1.1, 0, 0); scene.add(n.group); nv.push(n); });
+    const xem = (tu, den, gan) => { const giua = (tu + den) / 2 * 1.1; const xa = gan ? 2.2 : (den - tu + 1) * 0.75 + 2; cam.position.set(giua, gan ? 1.65 : 1.2, xa); cam.lookAt(giua, gan ? 1.62 : 1, 0); };
+    const nut = document.getElementById("nut");
+    const them = (ten, f) => { const b = document.createElement("button"); b.textContent = ten; b.onclick = f; nut.append(b); };
+    for (let i = 0; i < ds.length; i += 4) them(`${i + 1}-${Math.min(i + 4, ds.length)}`, () => xem(i, Math.min(i + 3, ds.length - 1)));
+    ds.forEach((ma, i) => them(ma, () => xem(i, i, true)));
+    window.xem = xem; window.quay = a => nv.forEach(n => n.group.rotation.y = a);
+    xem(0, 3);
+    const size = () => { r.setSize(innerWidth, innerHeight, false); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); };
+    addEventListener("resize", size); size();
+    r.setAnimationLoop(t => { nv.forEach(n => n.hoatDong(t / 1000, false)); r.render(scene, cam); });
+  </script>
+</body>
+</html>
