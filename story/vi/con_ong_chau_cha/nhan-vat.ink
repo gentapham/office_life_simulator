@@ -111,7 +111,7 @@ thanh_ninh: Long ơi! Chú em dặn em nhắc em đi họp đúng giờ nha. Anh
     _Bà ấy nói "dạ" với bạn. Lần đầu. Có gì đó không ổn._
     ~ long_bh(2)
 * [🙃 "Bà khen chú tui một câu thiệt lòng đi, hông nịnh."]
-    thanh_ninh: *(nghĩ rất lâu)* …Sếp nhớ sinh nhật bác Bình. Năm nào cũng mua bánh, mà để em mang xuống, nói là của em.
+    thanh_ninh: *(nghĩ rất lâu)* …Sếp đi trễ thì tự bỏ 50 nghìn vô quỹ trà sữa. Không ai bắt. Mà sếp cấm em kể.
     _Bạn không biết chuyện đó. Câu thật lòng duy nhất của {thanh_ninh} hóa ra lại hay nhất._
     ~ qh("thanh_ninh", 6)
     ~ qh("giam_doc", 2)

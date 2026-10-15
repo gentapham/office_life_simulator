@@ -121,7 +121,7 @@ _Tờ giấy chữ chú, nét run: "Tối mai sau họp, chú cháu mình nói c
 // ------------------------------------------------------------
 === con_ong_chau_cha_2910_luu_luc_nhan_lai ===
 # ngay:29 # gio:21:00 # noi:sky_ao_tang_30 # dieu_kien:da tu choi ban bai cho LL
-{ not long_ban_cho_ll && not long_ghi_am_luu_luc:
+{ not long_ban_cho_ll && not long_ghi_am_luu_luc && long_tu_lap < 60:
     -> nhan_lai
 - else:
     _Đêm. Không có mạng. Không có tin nhắn. Penthouse yên lặng như bể cá. Bạn ngủ sớm lần đầu trong tháng._

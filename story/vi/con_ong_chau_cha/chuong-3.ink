@@ -147,13 +147,21 @@ hong_hot: Anh Long đàn được hông? Đàn một bài đi, nóng quá chết
     ~ phat_hien(bai_hat_long)
     -> phat_hoi
 * [🎸 Đàn bài "Công Viên" cho mọi người hát theo.]
-    _"Ngày xưa có đôi bạn thân bán cá viên chiên…" Cả pantry hát theo. Lạc tông, vui vẻ. Không ai biết bạn có bài khác._
+    _"Ngày xưa có đôi bạn thân bán cá viên chiên…" Cả pantry hát theo. Lạc tông, vui vẻ._
     ~ qh("hong_hot", 4)
     ~ qh("idol_het_thoi", 6)
     ~ cang_thang(-10)
+    _Hát xong, mọi người tản ra. Tay bạn vẫn gảy, theo thói quen, sang một giai điệu khác. Rất khẽ. "Hồng… là thái độ…"_
+    ~ long_bh(5)
+    ~ long_phat_co_ghi_am = true
+    ~ phat_hien(bai_hat_long)
+    -> phat_hoi
 * [🙅 "Thôi, tui đâu biết đàn."]
-    _Bạn đặt đàn xuống. Một chút tiếc nuối. Một chút an toàn._
-- -> END
+    _Bạn đặt đàn xuống. Mọi người tản ra. Còn lại một mình, bạn cầm đàn lên lại, ngân rất khẽ, tưởng không ai nghe._
+    ~ long_bh(5)
+    ~ long_phat_co_ghi_am = true
+    ~ phat_hien(bai_hat_long)
+    -> phat_hoi
 
 = phat_hoi
 _{idol_het_thoi} đứng ở cửa pantry, nghe hết. Bạn không biết anh ấy đã giơ điện thoại lên từ câu thứ hai._
