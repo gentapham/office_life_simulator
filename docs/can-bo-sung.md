@@ -11,8 +11,8 @@ Mục nào xong thì đánh dấu `[x]`.
 ## ⭐ Ưu tiên cao: ảnh hưởng tới mọi thứ khác
 
 - [ ] 🙋 **Tên game chính thức** (tiếng Việt và tiếng Anh). Hiện đang tạm gọi "G-Entertainment: Office Life Simulator".
-- [ ] 🙋 **Bối cảnh Bắc hay Nam?** Quyết định giọng thoại: "tui / hông / ổng / bả" (Nam) hay "tớ / không / ông ấy / bà ấy" (Bắc). Tài liệu hiện đang viết giọng Nam. Hoặc trộn: mỗi nhân vật một vùng miền.
-- [ ] 🙋 **Tuổi của 22 NPC.** Tiếng Việt xưng anh/chị/em/cô/chú theo tuổi, nên cần tuổi để viết thoại đúng.
+- [x] 🙋 **Bối cảnh Bắc hay Nam?** Đã chốt: phần lớn giọng miền Nam, 3 người giọng miền Bắc (Thắng, Nhật, Bình).
+- [x] 🙋 **Tuổi của 22 NPC.** Đã chốt, xem [roles/README.md](roles/README.md).
 - [ ] 🙋 **Thời điểm trong năm** của 30 ngày chơi. Gợi ý: tháng trước Tết, vì có thưởng Tết, tất niên, áp lực KPI cuối năm. Đây là mỏ drama lớn nhất của dân văn phòng.
 - [ ] 🤖 **"Làm việc" trong game trông như thế nào?** Mỗi role cần một kiểu nhiệm vụ hoặc minigame riêng. Ví dụ:
   - Designer kéo thả sửa poster theo feedback vô lý.
@@ -49,7 +49,7 @@ Mục nào xong thì đánh dấu `[x]`.
 ## 👥 Nhân vật
 
 - [ ] 🙋 **Ngoại hình từng nhân vật**: kiểu tóc, trang phục, màu chủ đạo, phụ kiện đặc trưng. Cần để dựng model 3D.
-- [ ] 🙋 **Quê quán** của từng người (nếu muốn trộn giọng vùng miền).
+- [x] 🙋 **Vùng miền** của từng người: đã chốt. Quê quán cụ thể (tỉnh nào) có thể bổ sung sau.
 - [ ] 🤖 **Sinh nhật từng người**: để gài sự kiện sinh nhật vào 30 ngày.
 - [ ] 🤖 **Lịch trình mỗi ngày của từng NPC**: mấy giờ đến công ty, ăn trưa ở đâu, tối đi đâu. Để người chơi biết tìm ai ở đâu.
 - [x] 🤖 **Nơi ở của NPC**: mỗi nhân vật có nhà riêng, chia theo 6 khu (bản nháp trong [world/the-gioi.md](world/the-gioi.md), mục 3).

@@ -43,6 +43,22 @@ Tiếng Việt xưng hô theo giới tính và tuổi, nên mỗi nhân vật (k
 
 ---
 
+### Giọng vùng miền
+Phần lớn nhân vật nói **giọng miền Nam**. Ba người nói **giọng miền Bắc**: **Thắng**, **Nhật**, **Bình**. Viết thoại phải đúng giọng từng người:
+
+| | Miền Nam | Miền Bắc |
+|---|---|---|
+| Tôi / bạn (thân) | tui / ông, bà, mày | tớ / cậu, mày |
+| Không | hông, hem, khum | không |
+| Anh ấy / chị ấy | ổng / bả | anh ấy / chị ấy |
+| Cuối câu | nha, nè, hen, á, đó | nhé, nhỉ, đấy, thế, cơ |
+| Ví dụ | "Ủa, ổng nói gì kỳ vậy?" | "Ơ, anh ấy nói gì lạ thế nhỉ?" |
+| Ví dụ | "Đi ăn hông bà?" | "Đi ăn không cậu?" |
+
+Hai giọng nói chuyện với nhau cũng là chất liệu gây cười, ví dụ Nhật nói "cái bát", Hiếu hỏi lại "cái chén hả anh?".
+
+Tuổi và thứ bậc xưng hô của từng nhân vật nằm trong [roles/README.md](roles/README.md), mục "Thứ bậc tuổi & xưng hô".
+
 ## 3. Định dạng file truyện
 
 Truyện được viết bằng **Ink**, một ngôn ngữ chuyên cho truyện nhiều lựa chọn. File có đuôi `.ink`, đọc gần như văn bản thường.

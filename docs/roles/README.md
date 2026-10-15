@@ -1,35 +1,56 @@
 # Danh sách 23 role
 
-> **Tên mặc định** và **giới tính** đã chốt (bảng bên dưới). Người chơi đổi được tên, nhưng giới tính của mỗi role là cố định.
+> **Tên mặc định**, **giới tính**, **tuổi** và **vùng miền** đã chốt (bảng bên dưới). Người chơi đổi được tên, còn các thông tin khác của mỗi role là cố định.
+> Giọng thoại: phần lớn nhân vật nói **giọng miền Nam**. Ba người nói **giọng miền Bắc**: Thắng, Nhật, Bình.
 > Trong file truyện, tên luôn viết dạng biến (ví dụ `{ke_toan}`), để game tự thay bằng tên người chơi đặt hoặc tên mặc định.
 
 ## Tổng quan
 
-| # | Mã | Role | Tên mặc định | Giới tính | Chức danh thật ở công ty | Chỉ số riêng |
-|---|---|---|---|---|---|---|
-| 1 | `ran_doc` | 🐍 Rắn Độc | **Hiếu** | Nam | Chuyên viên Truyền thông nội bộ | Độ Độc, Độ Nghi Ngờ |
-| 2 | `giam_doc` | 👔 Giám Đốc | **Thắng** | Nam | Giám đốc điều hành | Ngân Sách, Uy Quyền |
-| 3 | `truong_phong` | 📅 Trưởng Phòng Họp | **Nhật** | Nam | Trưởng phòng Sản xuất Nội dung | Số Cuộc Họp |
-| 4 | `thanh_ninh` | 🙇 Thánh Nịnh | **Nhi** | Nữ | Trợ lý Giám đốc | Điểm Nịnh |
-| 5 | `hong_hot` | 👀 Thánh Hóng | **Ngân** | Nữ | Chuyên viên Mạng xã hội (admin fanpage) | Kho Tin Mật |
-| 6 | `con_ong_chau_cha` | 👑 Con Ông Cháu Cha | **Long** | Nam | Phó phòng Marketing | Ô Dù |
-| 7 | `chua_te_deadline` | ⏰ Chúa Tể Deadline | **Vũ** | Nam | Điều phối Dự án (Producer) | Độ Nước Tới Chân |
-| 8 | `thuc_tap_sinh` | 🐣 Thực Tập Sinh | **Duy** | Nam | Thực tập sinh Sản xuất | Độ Ngơ, Kinh Nghiệm |
-| 9 | `ke_toan` | 💰 Kế Toán | **Thương** | Nữ | Kế toán trưởng | Quỹ Công Ty |
-| 10 | `hr` | ☕ HR | **Tuấn** | Nam | Chuyên viên Nhân sự | Danh Sách Đen |
-| 11 | `it` | 🔌 IT | **Bảo** | Nam | Kỹ thuật IT kiêm âm thanh ánh sáng | Quyền Truy Cập |
-| 12 | `idol_het_thoi` | 🎤 Idol Hết Thời | **Phát** | Nam | Ca sĩ độc quyền của công ty | Độ Nổi Tiếng (đang tụt) |
-| 13 | `quan_ly_idol` | 📞 Quản Lý Idol | **Thái** | Nam | Quản lý nghệ sĩ | Khủng Hoảng Đang Xử Lý |
-| 14 | `bien_kich` | ✍️ Biên Kịch | **Oánh** | Nữ | Biên kịch | Ý Tưởng (thật và "mượn") |
-| 15 | `editor` | 🦉 Editor Cú Đêm | **Lĩnh** | Nam | Dựng phim | Số Đêm Thức Trắng |
-| 16 | `designer` | 🎨 Designer | **Quỳnh** | Nữ | Thiết kế đồ họa | Số Lần Bị Sửa |
-| 17 | `sales` | 📈 Sales Nói Phét | **Huyền** | Nữ | Kinh doanh, tìm nhà tài trợ | KPI Trên Giấy |
-| 18 | `chi_dai` | 🦁 Chị Đại | **Hương** | Nữ | Trưởng nhóm Tổ chức Sự kiện | Uy Lực |
-| 19 | `dan_dau_tu` | 📉 Dân Đầu Tư | **Chương** | Nam | Chuyên viên Phân tích Số liệu | Tài Khoản Đầu Tư |
-| 20 | `thanh_xin_nghi` | 🤒 Thánh Xin Nghỉ | **Sơn** | Nam | Điều phối Lịch trình Nghệ sĩ | Số Ngày Phép (âm) |
-| 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | **Bình** | Nam | Bảo vệ | Bí Mật Biết Được |
-| 22 | `sieu_nhan_hong` | 🩷 Siêu Nhân Hồng | **Nguyên** | Nam | Đối tác chiến lược (không phải nhân viên) | Độ Nổi Tiếng Showbiz |
-| 23 | `cho` | 🐕 Chó Công Ty | **Tuất** | Chó đực | Chó (ở với Bác Bảo Vệ) | Độ Được Cưng, Mũi Thính |
+| # | Mã | Role | Tên mặc định | Giới tính | Tuổi | Miền | Chức danh thật ở công ty | Chỉ số riêng |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `ran_doc` | 🐍 Rắn Độc | **Hiếu** | Nam | 28 | Nam | Chuyên viên Truyền thông nội bộ | Độ Độc, Độ Nghi Ngờ |
+| 2 | `giam_doc` | 👔 Giám Đốc | **Thắng** | Nam | 37 | Bắc | Giám đốc điều hành | Ngân Sách, Uy Quyền |
+| 3 | `truong_phong` | 📅 Trưởng Phòng Họp | **Nhật** | Nam | 28 | Bắc | Trưởng phòng Sản xuất Nội dung | Số Cuộc Họp |
+| 4 | `thanh_ninh` | 🙇 Thánh Nịnh | **Nhi** | Nữ | 28 | Nam | Trợ lý Giám đốc | Điểm Nịnh |
+| 5 | `hong_hot` | 👀 Thánh Hóng | **Ngân** | Nữ | 29 | Nam | Chuyên viên Mạng xã hội (admin fanpage) | Kho Tin Mật |
+| 6 | `con_ong_chau_cha` | 👑 Con Ông Cháu Cha | **Long** | Nam | 28 | Nam | Phó phòng Marketing | Ô Dù |
+| 7 | `chua_te_deadline` | ⏰ Chúa Tể Deadline | **Vũ** | Nam | 28 | Nam | Điều phối Dự án (Producer) | Độ Nước Tới Chân |
+| 8 | `thuc_tap_sinh` | 🐣 Thực Tập Sinh | **Duy** | Nam | 30 | Nam | Thực tập sinh Sản xuất | Độ Ngơ, Kinh Nghiệm |
+| 9 | `ke_toan` | 💰 Kế Toán | **Thương** | Nữ | 30 | Nam | Kế toán trưởng | Quỹ Công Ty |
+| 10 | `hr` | ☕ HR | **Tuấn** | Nam | 30 | Nam | Chuyên viên Nhân sự | Danh Sách Đen |
+| 11 | `it` | 🔌 IT | **Bảo** | Nam | 31 | Nam | Kỹ thuật IT kiêm âm thanh ánh sáng | Quyền Truy Cập |
+| 12 | `idol_het_thoi` | 🎤 Idol Hết Thời | **Phát** | Nam | 30 | Nam | Ca sĩ độc quyền của công ty | Độ Nổi Tiếng (đang tụt) |
+| 13 | `quan_ly_idol` | 📞 Quản Lý Idol | **Thái** | Nam | 37 | Nam | Quản lý nghệ sĩ | Khủng Hoảng Đang Xử Lý |
+| 14 | `bien_kich` | ✍️ Biên Kịch | **Oánh** | Nữ | 29 | Nam | Biên kịch | Ý Tưởng (thật và "mượn") |
+| 15 | `editor` | 🦉 Editor Cú Đêm | **Lĩnh** | Nam | 27 | Nam | Dựng phim | Số Đêm Thức Trắng |
+| 16 | `designer` | 🎨 Designer | **Quỳnh** | Nữ | 29 | Nam | Thiết kế đồ họa | Số Lần Bị Sửa |
+| 17 | `sales` | 📈 Sales Nói Phét | **Huyền** | Nữ | 26 | Nam | Kinh doanh, tìm nhà tài trợ | KPI Trên Giấy |
+| 18 | `chi_dai` | 🦁 Chị Đại | **Hương** | Nữ | 30 | Nam | Trưởng nhóm Tổ chức Sự kiện | Uy Lực |
+| 19 | `dan_dau_tu` | 📉 Dân Đầu Tư | **Chương** | Nam | 37 | Nam | Chuyên viên Phân tích Số liệu | Tài Khoản Đầu Tư |
+| 20 | `thanh_xin_nghi` | 🤒 Thánh Xin Nghỉ | **Sơn** | Nam | 28 | Nam | Điều phối Lịch trình Nghệ sĩ | Số Ngày Phép (âm) |
+| 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | **Bình** | Nam | 30 | Bắc | Bảo vệ | Bí Mật Biết Được |
+| 22 | `sieu_nhan_hong` | 🩷 Siêu Nhân Hồng | **Nguyên** | Nam | 31 | Nam | Đối tác chiến lược (không phải nhân viên) | Độ Nổi Tiếng Showbiz |
+| 23 | `cho` | 🐕 Chó Công Ty | **Tuất** | Chó đực | – | – | Chó (ở với Bác Bảo Vệ) | Độ Được Cưng, Mũi Thính |
+
+## Thứ bậc tuổi & xưng hô
+
+| Tuổi | Nhân vật |
+|---|---|
+| 37 | Thắng, Thái, Chương |
+| 31 | Bảo, Nguyên |
+| 30 | Duy, Thương, Tuấn, Phát, Hương, Bình |
+| 29 | Ngân, Oánh, Quỳnh |
+| 28 | Hiếu, Nhật, Nhi, Long, Vũ, Sơn |
+| 27 | Lĩnh |
+| 26 | Huyền (nhỏ nhất công ty) |
+
+**Quy tắc xưng hô:**
+- Lớn tuổi hơn thì gọi **anh/chị**, xưng **em**. Bằng tuổi hoặc chênh 1 tuổi và thân nhau thì gọi **ông/bà**, xưng **tui** (miền Nam) hoặc **cậu/tớ** (miền Bắc).
+- **Chức vụ thắng tuổi tác** trong giờ làm: ai cũng gọi Thắng là "anh Thắng" hoặc "sếp". Nhật được gọi "anh Nhật" ở phòng họp, dù bằng tuổi nhiều người.
+- **Ngoại lệ gây cười:**
+  - **Duy 30 tuổi mà là thực tập sinh**, vẫn "dạ anh, dạ chị" với cả những người nhỏ hơn mình. Ai cũng ngại.
+  - **Bình mới 30 tuổi** mà cả công ty gọi là "**Bác** Bình", vì Bình sống như ông cụ: uống trà, nghe radio, đi ngủ lúc 9 giờ tối.
+  - **Huyền nhỏ nhất công ty** nhưng nói chuyện như sếp lớn ("Tin chị đi!"). Người lớn hơn nghe "chị" mà không dám cãi.
 
 ## Sơ đồ quan hệ chính
 
@@ -70,7 +91,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 ### 2. 👔 Giám Đốc: Thắng
 - **Công việc:** ký duyệt, họp với đối tác, phát biểu đầu tuần, nhắn tin cho nhân viên lúc 11 giờ đêm.
 - **Tính cách:** thích nói về "văn hóa doanh nghiệp", "công ty là gia đình", nhưng không tăng lương. Mê golf và mê được khen.
-- **Cách nói:** dùng nhiều từ tiếng Anh sai chỗ ("Em check lại cái mindset giúp anh"), nói dài, hay kể chuyện hồi khởi nghiệp.
+- **Cách nói:** giọng miền Bắc, dùng nhiều từ tiếng Anh sai chỗ ("Em check lại cái mindset giúp anh"), nói dài, hay kể chuyện hồi khởi nghiệp.
 - **Câu cửa miệng:** *"Anh không ép, tùy em."* (nghĩa là bắt buộc)
 - **Bí mật:** công ty đang nợ ngân hàng, cần Siêu Nhân Hồng nổi tiếng để gỡ vốn. Có một tài khoản Facebook clone để đọc trộm group "anti sếp".
 - **Quan hệ:** chú ruột của Con Ông Cháu Cha. Rất tin Thánh Nịnh. Sợ vợ, và sợ cả Chị Đại.
@@ -84,7 +105,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 ### 3. 📅 Trưởng Phòng Họp: Nhật
 - **Công việc:** quản lý đội sản xuất video, MV, gameshow. Nhưng phần lớn thời gian là **họp**.
 - **Tính cách:** tin rằng mọi vấn đề đều giải quyết được bằng một cuộc họp. Lịch kín từ 8 giờ sáng.
-- **Cách nói:** "Mình sync nhanh 5 phút nha" (kéo dài 2 tiếng), "Cái này mình take note lại, họp tiếp sau".
+- **Cách nói:** giọng miền Bắc. "Mình sync nhanh 5 phút nhé" (kéo dài 2 tiếng), "Cái này mình take note lại, họp tiếp sau nhé".
 - **Câu cửa miệng:** *"Họp nhanh 5 phút thôi."*
 - **Bí mật:** không biết dùng phần mềm dựng phim, toàn nhờ Editor làm rồi nhận công. Sắp được đề bạt lên phó giám đốc.
 - **Quan hệ:** sếp trực tiếp của Biên Kịch, Editor, Designer, Thực Tập Sinh. Ganh ghét Con Ông Cháu Cha vì sợ bị cướp ghế.
@@ -154,7 +175,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ### 8. 🐣 Thực Tập Sinh: Duy
 - **Công việc:** photo, pha cà phê, xếp ghế, cầm hắt sáng, và làm mọi việc người khác không muốn làm.
-- **Tính cách:** ngây thơ, nhiệt tình, ai nhờ gì cũng làm. Tin mọi lời Rắn Độc nói.
+- **Tính cách:** **30 tuổi**, bỏ nghề cũ để làm lại từ đầu trong ngành giải trí. Thực tập sinh lớn tuổi nhất lịch sử công ty. Ngây thơ, nhiệt tình, ai nhờ gì cũng làm. Tin mọi lời Rắn Độc nói.
 - **Cách nói:** lễ phép quá mức, "Dạ em làm liền ạ!", "Dạ cái này là sao ạ?".
 - **Câu cửa miệng:** *"Dạ em mới vô nên chưa biết ạ."*
 - **Bí mật:** thật ra là con của một nhà đầu tư lớn, đi thực tập ẩn danh để "trải nghiệm đời". Hoặc không, tùy lần chơi.
@@ -214,7 +235,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** "Hồi anh còn nổi…", "Fan anh đông lắm em", nói chuyện như đang trả lời phỏng vấn.
 - **Câu cửa miệng:** *"Em biết anh là ai không?"*
 - **Bí mật:** đang nợ tiền, thuê fan ảo. Ghét Siêu Nhân Hồng vì sợ bị thay thế.
-- **Quan hệ:** do Quản Lý Idol phụ trách, và **được Quản Lý Idol thầm thương** mà không hay biết. Kình địch Siêu Nhân Hồng. Từng chung ban nhạc sinh viên với Giám Đốc, ngày xưa còn hát chính.
+- **Quan hệ:** do Quản Lý Idol phụ trách, và **được Quản Lý Idol thầm thương** mà không hay biết. Kình địch Siêu Nhân Hồng. Hồi Phát còn là sinh viên, chính Thắng là người phát hiện và lăng xê Phát thành hit 2015, nên Phát vẫn coi Thắng như "anh cả".
 - **Ý tưởng truyện:**
   - Âm mưu chơi xấu Siêu Nhân Hồng để giành lại hào quang.
   - Một video cũ bất ngờ viral, nổi lại sau 10 năm.
@@ -337,10 +358,10 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ### 21. 🛡️ Bác Bảo Vệ: Bình
 - **Công việc:** trông xe, mở cổng, trực đêm. Nuôi Chó Công Ty.
-- **Tính cách:** ít nói, hiền, uống trà đá cả ngày. Thấy hết mọi chuyện nhưng không bao giờ nói.
-- **Cách nói:** chậm rãi, ngắn gọn, thâm thúy. "Ừ…", "Chuyện người ta, bác không biết".
-- **Câu cửa miệng:** *"Bác không thấy gì hết."*
-- **Bí mật:** là người sáng lập thật sự của công ty. Đã nhường lại cho giám đốc hiện tại và lui về làm bảo vệ "cho vui". Hoặc không, tùy lần chơi.
+- **Tính cách:** mới 30 tuổi mà sống như ông cụ 70: uống trà đá cả ngày, nghe radio, 9 giờ tối là ngủ. Vì vậy cả công ty gọi là "Bác". Ít nói, hiền, thấy hết mọi chuyện nhưng không bao giờ nói.
+- **Cách nói:** giọng miền Bắc, chậm rãi, ngắn gọn, thâm thúy. "Ừ…", "Chuyện người ta, bác không biết đâu", "Thế à".
+- **Câu cửa miệng:** *"Bác không thấy gì đâu."*
+- **Bí mật:** là người đồng sáng lập thật sự của công ty. Năm 22 tuổi cùng Thắng mở công ty, rồi nhường hết cho Thắng và lui về làm bảo vệ "cho đỡ mệt". Hoặc không, tùy lần chơi.
 - **Quan hệ:** chủ của Chó Công Ty. Bạn nhậu của IT. Bị Dân Đầu Tư nợ tiền.
 - **Ý tưởng truyện:**
   - Đêm trực phát hiện có người vào công ty lén lút.
