@@ -39,8 +39,8 @@ _Ra mắt MV đầu tiên của {sieu_nhan_hong}. Sảnh tầng trệt thành s�
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc ra mắt MV vì vậy cũng chỉ có… trứng. Trứng luộc, trứng chiên, trứng cút._
 thuc_tap_sinh: *(qua bộ đàm)* Dạ chị ơi, máy chiếu không nhận laptop ạ!
 it: *(qua bộ đàm)* Restart chưa?
-hong_hot: *(qua bộ đàm)* Chị ơi khách tràn ra cổng rồi! Tuất đang sủa một ông mặc áo hồng!
-* [📻 Phân việc: "{it} lo máy chiếu. {thuc_tap_sinh} chặn cửa. Ngân giữ khách. Chị lo Tuất."]
+hong_hot: *(qua bộ đàm)* Chị ơi khách tràn ra cổng rồi! {cho} đang sủa một ông mặc áo hồng!
+* [📻 Phân việc: "{it} lo máy chiếu. {thuc_tap_sinh} chặn cửa. {hong_hot} giữ khách. Chị lo {cho}."]
     _Ba phút. Máy chiếu lên hình. Khách vào hàng. {cho} được dắt về chòi với một quả trứng luộc._
     ~ cd_uy(5)
     ~ cd_td(4)
@@ -73,7 +73,7 @@ dan_dau_tu: Không ai biết! Thế mới là cơ hội!
     ~ qh("thuc_tap_sinh", 5)
 * [💬 Nhắn riêng {dan_dau_tu}: "Anh nợ ai bao nhiêu rồi, nói thiệt em nghe."]
     dan_dau_tu: Ờ… 22 triệu. Chia nhiều người. Mà cái coin này lên là anh trả hết.
-    chi_dai: Coin chưa lên thì đừng hứa. Anh trả bác Bình trước. Bác 50 tuổi rồi đó anh.
+    chi_dai: Coin chưa lên thì đừng hứa. Anh trả bác {bac_bao_ve} trước. Bác 50 tuổi rồi đó anh.
     dan_dau_tu: …Ừ. Anh biết rồi.
     ~ qh("dan_dau_tu", 5)
 * [😶 Tắt điện thoại. Ngủ.]
@@ -93,7 +93,7 @@ _Ở bậc thềm, một dáng người quen quen đang đứng chỉnh tóc tr�
     _{thanh_ninh} nhìn quanh hai lần rồi bước vào. Trong tay có tập hồ sơ. Mười phút sau vẫn chưa ra._
     ~ cd_thay_nhi_o_ll = true
 * [🗣️ Gọi to: "Ê {thanh_ninh}! Đi đâu đây em?"]
-    thanh_ninh: *(giật bắn)* Dạ… dạ chị Hương! Em… em đi lạc ạ! Em tìm tiệm nail ạ!
+    thanh_ninh: *(giật bắn)* Dạ… dạ chị {chi_dai}! Em… em đi lạc ạ! Em tìm tiệm nail ạ!
     chi_dai: Tiệm nail ở Phường Tân Drama mà em.
     thanh_ninh: Dạ… em biết rồi ạ! Em về liền ạ!
     _{thanh_ninh} đi rất nhanh về phía bến xe. Tập hồ sơ kẹp chặt dưới nách._
@@ -161,20 +161,20 @@ _Bên cạnh là một gã thanh niên tóc ướt nhẹp, ốc len dính trên 
 === chi_dai_1210_doi_luong ===
 # ngay:12 # gio:09:35 # noi:phong_giam_doc # bat_buoc
 _Thứ 2, 12/10. Lương vẫn chưa về. Group Zalo-lô sôi như nồi lẩu. Bạn đi lên tầng 2._
-_Bạn đẩy cửa phòng giám đốc. {giam_doc} tự động đứng dậy, kéo ghế, và gọi vọng ra ngoài: "Nhi ơi, pha trà!"._
-giam_doc: Ơ Hương, ngồi đi em. Lương thì… ngân hàng nó xử lý chậm, chiều về. Em hiểu cho anh, công ty là gia đình mà.
+_Bạn đẩy cửa phòng giám đốc. {giam_doc} tự động đứng dậy, kéo ghế, và gọi vọng ra ngoài: "{thanh_ninh} ơi, pha trà!"._
+giam_doc: Ơ {chi_dai}, ngồi đi em. Lương thì… ngân hàng nó xử lý chậm, chiều về. Em hiểu cho anh, công ty là gia đình mà.
 * [👊 Đập bàn: "Gia đình thì không để con nhịn đói tới ngày 12 nha sếp!"]
     ~ cd_dap_ban()
     ~ cd_dap_ban_luong = true
     _RẦM. Ly trà {thanh_ninh} vừa bưng vào nhảy lên 2 phân._
     { RANDOM(1, 10) <= 7:
-        giam_doc: Được… được rồi. Nhi, gọi Thương lên cho anh. Chuyển lương ngay sáng nay, phí gì anh chịu.
+        giam_doc: Được… được rồi. {thanh_ninh}, gọi {ke_toan} lên cho anh. Chuyển lương ngay sáng nay, phí gì anh chịu.
         _11 giờ. Lương về tài khoản cả công ty. Group Zalo-lô im bặt, rồi nổ tung bằng 200 cái sticker. Ai cũng biết là nhờ ai._
         ~ cd_luong_ve_som = true
         ~ cd_uy(15)
         ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
     - else:
-        giam_doc: Em Hương. Anh tôn trọng em. Nhưng ở đây là văn phòng, không phải… quán ốc.
+        giam_doc: Em {chi_dai}. Anh tôn trọng em. Nhưng ở đây là văn phòng, không phải… quán ốc.
         _Lương về lúc 4 giờ chiều như dự kiến. 22:00, {giam_doc} nhắn group: "Về văn hóa ứng xử nơi công sở". 900 chữ. Không nhắc tên ai. Ai cũng biết là ai._
         ~ cd_nk(10)
         ~ qh("giam_doc", -5)
@@ -228,7 +228,7 @@ _9 giờ 40 tối. Bạn quay lại công ty lấy cái bộ đàm sạc quên. 
 _Trong studio, {thuc_tap_sinh} đứng một mình, cầm tấm hắt sáng chiếu vào… một cái ghế trống. Mắt díp lại._
 chi_dai: Em làm gì đó?
 thuc_tap_sinh: Dạ… anh {chua_te_deadline} nhờ em giữ góc sáng để mai quay tiếp ạ. Anh nói đừng để lệch ạ. Anh về lúc 5 giờ rồi ạ.
-_Trên bàn có tờ giấy của {chua_te_deadline}: "Xếp lịch quay, liên hệ đạo cụ, gửi brief cho Quỳnh, giữ đèn. Cảm ơn em nhiều nha. Chill."_
+_Trên bàn có tờ giấy của {chua_te_deadline}: "Xếp lịch quay, liên hệ đạo cụ, gửi brief cho {designer}, giữ đèn. Cảm ơn em nhiều nha. Chill."_
 * [🛡️ Gọi thẳng cho {chua_te_deadline}, bật loa ngoài.]
     chua_te_deadline: *(tiếng bi da lách cách)* Alo chị? Chill chị ơi, có gì mai tính…
     chi_dai: Mai tính thì tối nay em vô đây giữ đèn. Thằng nhỏ về. Còn em, 7 giờ sáng mai có mặt.
@@ -262,7 +262,7 @@ _Ngày Doanh nhân Việt Nam. {giam_doc} ôm bó hoa tự mua cho chính mình.
 _Rồi {thanh_ninh} đứng dậy, mở một bài phát biểu 6 trang. "Anh {giam_doc}: người truyền lửa, người cầm lái, người…"_
 _Phút thứ 9. Bạn đếm được 41 chữ "tâm huyết"._
 ~ cd_nk(20)
-thanh_ninh: Dạ… và em xin nói thêm, chị Hương ơi, kế hoạch Đêm Hồng của chị hơi tốn quá ạ. Anh {giam_doc} vừa khen ý tưởng tiết kiệm của em đó chị.
+thanh_ninh: Dạ… và em xin nói thêm, chị {chi_dai} ơi, kế hoạch Đêm Hồng của chị hơi tốn quá ạ. Anh {giam_doc} vừa khen ý tưởng tiết kiệm của em đó chị.
 * [🗣️ "Ý tưởng tiết kiệm của em là cắt tiền đèn sân khấu, rồi cho Siêu Nhân Hồng diễn trong bóng tối hả?"]
     _Cả phòng cười. {sieu_nhan_hong} cười to nhất, rồi tạo dáng trong bóng tối tưởng tượng._
     ~ cd_uy(10)
@@ -285,7 +285,7 @@ thanh_ninh: Dạ… và em xin nói thêm, chị Hương ơi, kế hoạch Đêm
     ~ cd_uy(5)
 * [🔥 Vỗ tay thật to, thật chậm. Từng cái một.]
     _Bốp. Bốp. Bốp. Cả phòng vỗ tay theo, vì tưởng tới đoạn kết. {thanh_ninh} buộc phải dừng ở trang 4._
-    giam_doc: Đấy! Cả nhà xúc động quá! Cảm ơn em Nhi!
+    giam_doc: Đấy! Cả nhà xúc động quá! Cảm ơn em {thanh_ninh}!
     ~ cd_nk(-5)
     ~ cd_uy(3)
 - _Sau buổi họp, tấm bằng "Doanh nhân của năm" được treo ngay sau ghế giám đốc. Bạn nhìn kỹ: chữ "Doanh nhân" bị in sai thành "Doanh nhận"._

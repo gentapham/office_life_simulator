@@ -359,3 +359,32 @@ _14 giờ. Trailer "Người Hùng Không Tên" lên fanpage. Dòng cuối: "Bi�
     ~ duy_day_viec(1)
     _Máy in kẹt. Bạn gỡ. Lần thứ 14 trong tháng. Có những việc vẫn cần làm, dù tim đang kẹt giấy._
 - -> END
+
+// ------------------------------------------------------------
+=== thuc_tap_sinh_2710_sua_chua_hong_hao ===
+# ngay:27 # gio:16:30 # noi:tang_1 # bat_buoc
+_16 giờ 30. {sales} chạy vào tầng 1, mặt trắng bệch, điện thoại trên tay._
+sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Ở Ven Đô! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thiệt đó! No cap!
+_Cả phòng cười. {hong_hot} cười to nhất. {dan_dau_tu} nói "lần này là lên thật hả". Không ai tin. {sales} đứng giữa phòng, lần đầu tiên nói thật, và không ai tin._
+_Bạn nhìn màn hình điện thoại của {sales}. Số máy bàn, đầu số khu Ven Đô. Cuộc gọi dài 14 phút. Theo kinh nghiệm thẩm định, người lừa đảo không bao giờ gọi từ máy bàn._
+* [🧮 "Dạ chị cho em số, em gọi xác nhận ạ." (bật loa ngoài)]
+    _Một giọng cô bắt máy: "Dạ Sữa Chua Hồng Hào đây con. Đúng rồi, cô muốn tài trợ cho cậu mặc đồ hồng. Cậu đó đẩy xe sữa giùm cô hồi mưa tháng trước."_
+    _Cả tầng 1 im. {sales} quay sang bạn, mắt đỏ hoe._
+    sales: Em… em tin chị hả?
+    thuc_tap_sinh: Dạ, em tin cái máy bàn ạ. Mà cũng tin chị ạ.
+    ~ qh("sales", 20)
+    ~ follow(15000)
+    ~ duy_kn(5)
+    ~ duy_lo(5)
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
+* [😶 Cười theo cả phòng.]
+    sales: *(mắt đỏ hoe)* … Ừ. Thôi. Tin chị đi, mấy người sẽ hối hận.
+    ~ qh("sales", -3)
+* [🛡️ Đi tìm {chi_dai}: "Dạ chị ơi, chị {sales} nói thật đó chị."]
+    ~ duy_lan_goi_huong++
+    chi_dai: *(nhìn {sales}, nhìn điện thoại, rồi cầm máy gọi lại)* … Thật. Ê cả phòng, im. Con bé nói thật.
+    ~ qh("sales", 10)
+    ~ qh("chi_dai", 3)
+    ~ follow(10000)
+- _Tối đó, Siêu Nhân Hồng không đăng gì. Có tin đồn Lưu Lực vừa gửi lời mời gấp ba. Bạn ngồi gỡ kẹt máy in, nghĩ: người có tiền thì ai cũng muốn giữ. Người có lòng thì ít ai nhận ra._
+-> END

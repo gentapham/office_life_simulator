@@ -183,19 +183,22 @@ con_ong_chau_cha: Anh {thuc_tap_sinh}! Chill hông? Cà phê Sống Ảo hông? 
     _Bạn dạy {con_ong_chau_cha} photo. {con_ong_chau_cha} vui như được đồ chơi mới._
     ~ qh("con_ong_chau_cha", 5)
 - { duy_long_biet:
-    con_ong_chau_cha: Mà nè… anh hứa cho anh nghe một bài nhạc. Tối nay qua penthouse đi. Phòng thu. Đừng nói ai.
-    * [🎧 "Dạ em qua ạ."]
-        _Phòng thu nhỏ, cách âm, 41 bản demo. Bài thứ 41: "Hồng Là Thái Độ". Ký tên: "Rồng". Bạn nghe hết bài, mắt cay._
-        thuc_tap_sinh: Anh Long… bài này hay quá. Anh phải cho người ta nghe.
-        con_ong_chau_cha: *(cười, hơi ngượng)* Anh đang nghĩ. Có anh nghe rồi, giờ anh bớt sợ.
-        ~ phat_hien(bai_hat_long)
-        ~ qh("con_ong_chau_cha", 15)
-        ~ duy_lua_doi(10)
-    * [😶 "Dạ hôm khác ạ, em sợ làm phiền anh."]
-        con_ong_chau_cha: Ờ… ừ. Lúc nào cũng được.
-    - -> END
+    -> thuc_tap_sinh_tudo_con_ong_chau_cha_nhanh_1
 }
 -> END
+
+= thuc_tap_sinh_tudo_con_ong_chau_cha_nhanh_1
+con_ong_chau_cha: Mà nè… anh hứa cho anh nghe một bài nhạc. Tối nay qua penthouse đi. Phòng thu. Đừng nói ai.
+* [🎧 "Dạ em qua ạ."]
+    _Phòng thu nhỏ, cách âm, 41 bản demo. Bài thứ 41: "Hồng Là Thái Độ". Ký tên: "Rồng". Bạn nghe hết bài, mắt cay._
+    thuc_tap_sinh: Anh Long… bài này hay quá. Anh phải cho người ta nghe.
+    con_ong_chau_cha: *(cười, hơi ngượng)* Anh đang nghĩ. Có anh nghe rồi, giờ anh bớt sợ.
+    ~ phat_hien(bai_hat_long)
+    ~ qh("con_ong_chau_cha", 15)
+    ~ duy_lua_doi(10)
+* [😶 "Dạ hôm khác ạ, em sợ làm phiền anh."]
+    con_ong_chau_cha: Ờ… ừ. Lúc nào cũng được.
+- -> END
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_tudo_chua_te_deadline ===
@@ -247,16 +250,7 @@ ke_toan: {thuc_tap_sinh}. Ngồi xuống. Phiếu chi photo tháng này em làm 
     ~ duy_da()
     ke_toan: Không sao. Lần đầu. Chị nhắc lần hai thì không còn là lần đầu nữa.
 - { duy_hai_nguoi_biet_so:
-    ke_toan: *(nói nhỏ, cửa đóng)* Khoản 15/11. Em có tính ra cách nào chưa?
-    * [🏦 "Dạ, nếu chiến dịch đạt thưởng 5 tỷ thì trả được. Nếu không thì phải xin giãn nợ ạ."]
-        ke_toan: Giãn nợ… ai xin được?
-        thuc_tap_sinh: Dạ… người từng duyệt nó ạ.
-        _{ke_toan} nhìn bạn. Lần đầu tiên trong 2 tháng, chị cười. Một cái cười nhẹ như vừa tìm ra hóa đơn bị mất._
-        ~ qh("ke_toan", 10)
-        ~ duy_kn(3)
-    * [😶 "Dạ em chưa ạ."]
-        ke_toan: Ừ. Hai đứa mình cùng chưa.
-    - -> END
+    -> thuc_tap_sinh_tudo_ke_toan_nhanh_2
 }
 ke_toan: Mà em nè, có ai trong công ty mượn tiền em chưa?
 * [😇 "Dạ chưa ạ."]
@@ -265,6 +259,18 @@ ke_toan: Mà em nè, có ai trong công ty mượn tiền em chưa?
     ke_toan: *(thở dài, mở sổ)* Đọc tên. Chị ghi.
     _{ke_toan} ghi từng cái tên. Cuốn sổ đó đáng sợ hơn mọi giấy nhắc nợ._
     ~ qh("ke_toan", 3)
+- -> END
+
+= thuc_tap_sinh_tudo_ke_toan_nhanh_2
+ke_toan: *(nói nhỏ, cửa đóng)* Khoản 15/11. Em có tính ra cách nào chưa?
+* [🏦 "Dạ, nếu chiến dịch đạt thưởng 5 tỷ thì trả được. Nếu không thì phải xin giãn nợ ạ."]
+    ke_toan: Giãn nợ… ai xin được?
+    thuc_tap_sinh: Dạ… người từng duyệt nó ạ.
+    _{ke_toan} nhìn bạn. Lần đầu tiên trong 2 tháng, chị cười. Một cái cười nhẹ như vừa tìm ra hóa đơn bị mất._
+    ~ qh("ke_toan", 10)
+    ~ duy_kn(3)
+* [😶 "Dạ em chưa ạ."]
+    ke_toan: Ừ. Hai đứa mình cùng chưa.
 - -> END
 
 // ------------------------------------------------------------
@@ -400,18 +406,21 @@ bien_kich: {thuc_tap_sinh}. Ngồi đây. Tui đang bí. Kể tui nghe chuyện 
     ~ qh("bien_kich", -15)
     ~ duy_doi_chat_oanh = true
 - { co(so_tay_oanh):
-    _Trong balo bạn vẫn là cuốn sổ bìa da của {bien_kich}, nhặt trên xe đi Vũng Tàu._
-    * [🤝 Trả lại cuốn sổ.]
-        ~ mat(so_tay_oanh)
-        bien_kich: *(ôm cuốn sổ)* Em… đọc chưa?
-        thuc_tap_sinh: Dạ, chương 14 ạ.
-        bien_kich: *(nhắm mắt)* Chương 14 tui sẽ viết lại. Có tên em. Tên thật. Ở đúng chỗ.
-        ~ qh("bien_kich", 15)
-    * [😶 Giữ thêm ít hôm.]
-        _Cuốn sổ nằm lại trong balo. Nặng hơn cân nặng của nó._
-    - -> END
+    -> thuc_tap_sinh_tudo_bien_kich_nhanh_3
 }
 -> END
+
+= thuc_tap_sinh_tudo_bien_kich_nhanh_3
+_Trong balo bạn vẫn là cuốn sổ bìa da của {bien_kich}, nhặt trên xe đi Vũng Tàu._
+* [🤝 Trả lại cuốn sổ.]
+    ~ mat(so_tay_oanh)
+    bien_kich: *(ôm cuốn sổ)* Em… đọc chưa?
+    thuc_tap_sinh: Dạ, chương 14 ạ.
+    bien_kich: *(nhắm mắt)* Chương 14 tui sẽ viết lại. Có tên em. Tên thật. Ở đúng chỗ.
+    ~ qh("bien_kich", 15)
+* [😶 Giữ thêm ít hôm.]
+    _Cuốn sổ nằm lại trong balo. Nặng hơn cân nặng của nó._
+- -> END
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_tudo_editor ===

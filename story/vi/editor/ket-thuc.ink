@@ -79,7 +79,7 @@ _Họp đánh giá. Màn hình lớn. Báo cáo cuối tháng. Ô "Người th�
     _"Người thực hiện: {editor}." Một dòng. Năm chữ. Bốn năm._
 }
 _Cả phòng vỗ tay. {thuc_tap_sinh} vỗ to nhất. {chua_te_deadline} vỗ bằng một tay, tay kia giơ điện thoại quay lại._
-giam_doc: Lĩnh. Anh đề bạt em làm Trưởng nhóm Hậu kỳ. Lương tăng. Có phòng riêng, có rèm.
+giam_doc: {editor}. Anh đề bạt em làm Trưởng nhóm Hậu kỳ. Lương tăng. Có phòng riêng, có rèm.
 giam_doc: Kèm một điều kiện. *(nghiêm mặt)* Từ nay em phải ngủ ban đêm. Anh không ép.
 _Cả phòng cười ồ. Bạn không cười. Bạn đang nghĩ thật sự: ngủ ban đêm là làm thế nào?_
 truong_phong: *(nói nhỏ khi đi ngang)* Anh nợ em… nhiều cái slide. Anh sẽ học dựng. Thật.

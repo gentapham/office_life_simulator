@@ -255,3 +255,50 @@ _Đây là lần thứ 16 trong tháng {quan_ly_idol} mượn sạc. Không lầ
 ~ an(100)
 ~ cang_thang(-10)
 -> END
+
+// ------------------------------------------------------------
+// Cám dỗ ngẫu nhiên: hệ thống báo một tin nhắn riêng "đáng ngờ"
+=== it_tudo_tin_nhan_rieng ===
+# ngau_nhien # noi:phong_server
+_Hệ thống lọc thư rác của công ty bắt được một tin nhắn riêng, gắn cờ "nội dung nhạy cảm". Người gửi: {ten(ran_thu_hai)}. Người nhận: một số lạ._
+_Bạn chỉ cần bấm "Xem chi tiết". Không ai biết. Hoặc là có._
++ [🤐 Bấm "Bỏ qua". Tin nhắn riêng là của người ta.]
+    ~ it_lt(3)
+    _Bạn bấm bỏ qua. Cái quạt công nghiệp quay đều. Bạn thấy mình sạch sẽ, dù hơi tò mò._
++ [👁️ Bấm "Xem chi tiết".]
+    ~ it_doc_tin_rieng()
+    _Tin nhắn: "Mai 9h ở tòa nhà xanh nhé. Mang theo cái kia." Không rõ "cái kia" là gì. Bạn đọc thêm 20 tin nữa, không liên quan, nhưng vẫn đọc._
+    { RANDOM(1, 10) <= 3:
+        ~ it_bi_phat_hien_doc_trom = true
+        ~ it_nguoi_to = ran_thu_hai
+        _Màn hình máy {ten(ran_thu_hai)} hiện cảnh báo "Phiên đăng nhập lạ từ SERVER-IT". Bạn không biết là nó vừa hiện._
+        ~ qh(ran_thu_hai, -20)
+    - else:
+        ~ it_truy_cap(3)
+    }
++ [📜 Chỉ đọc log kết nối, không đọc nội dung.]
+    _Log: máy của {ten(ran_thu_hai)} kết nối tới một mạng ở Ven Đô 4 lần trong tuần. Không đọc chữ nào của ai. Nhưng đủ để bạn để ý._
+    ~ it_truy_cap(5)
+    ~ phat_hien(ran_thu_hai_lo_mat)
+- -> END
+
+// ------------------------------------------------------------
+// Cám dỗ ngẫu nhiên: điện thoại ai đó để quên ở phòng server
+=== it_tudo_dien_thoai_bo_quen ===
+# ngau_nhien # noi:phong_server
+_Ai đó nhờ bạn sửa điện thoại rồi để quên trên bàn. Màn hình sáng: một tin nhắn mới hiện lên, chưa đọc. Không có mật khẩu._
++ [🔌 Úp điện thoại xuống, dán giấy "Của ai ra lấy".]
+    ~ it_lt(3)
+    ~ it_cam_on()
+    _Một tiếng sau, chủ điện thoại quay lại, thấy tờ giấy, cười: "Anh {it} đúng là két sắt."_
++ [👁️ Lướt đọc một chút.]
+    ~ it_doc_tin_rieng()
+    { RANDOM(1, 10) <= 3:
+        ~ it_bi_phat_hien_doc_trom = true
+        ~ it_nguoi_to = "hong_hot"
+        _Đúng lúc đó {hong_hot} bước vào lấy điện thoại. {hong_hot} nhìn màn hình đang mở, rồi nhìn bạn. Không nói gì. Ánh mắt nói hết._
+        ~ qh("hong_hot", -30)
+    - else:
+        _Toàn chuyện đặt trà sữa. Bạn úp điện thoại xuống, thấy mình hơi tệ._
+    }
+- -> END

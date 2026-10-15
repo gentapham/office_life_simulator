@@ -42,6 +42,23 @@ _Bạn mở log. Bài được đăng từ "NGAN-LAPTOP", như mọi khi. Nhưng
             ~ it_bi_phat_hien_doc_trom = true
             ~ it_nguoi_to = "hong_hot"
         }
+* [👁️ Mở luôn hộp tin nhắn riêng của người gửi, đọc cho chắc.]
+    ~ it_doc_tin_rieng()
+    ~ it_truy_cap(5)
+    _Bạn đọc. Tin nhắn riêng, ảnh chụp màn hình, cả những đoạn chẳng liên quan gì tới bài đăng. Bạn đọc nhiều hơn mức cần._
+    { RANDOM(1, 10) <= 4:
+        { ran_thu_hai == "thanh_ninh" or RANDOM(1, 2) == 1:
+            ~ it_nguoi_to = "thanh_ninh"
+        - else:
+            ~ it_nguoi_to = ran_thu_hai
+        }
+        _Tối đó, {ten(it_nguoi_to)} nhận được thông báo "Tài khoản của bạn vừa được truy cập từ máy SERVER-IT". {ten(it_nguoi_to)} chụp màn hình lại._
+        ~ it_bi_phat_hien_doc_trom = true
+        ~ qh(it_nguoi_to, -30)
+    }
+    hr: Anh thấy gì hông anh?
+    it: Thấy nhiều quá.
+    ~ qh("hr", 3)
 * [💬 "Đọc nội dung trước đã. Có đúng không?"]
     hr: *(ly trà khựng lại giữa không trung)* …Em hông biết anh ơi. Mà nếu đúng thì sao?
     it: Thì người gửi không có lỗi.

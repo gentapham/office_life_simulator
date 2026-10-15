@@ -26,17 +26,17 @@ _Đội đèn báo: thiếu 2 giàn đèn lớn. Ngân sách hết. Không có 2
         ~ cd_td(10)
         ~ qh("giam_doc", 5)
     - else:
-        giam_doc: Em Hương… công ty hết rồi em ạ. Anh không ép, tùy em… mà anh không có thật.
+        giam_doc: Em {chi_dai}… công ty hết rồi em ạ. Anh không ép, tùy em… mà anh không có thật.
         _22:00 tối đó, tin nhắn "văn hóa ứng xử" lần thứ hai. Bạn đọc rồi xóa._
         ~ cd_nk(15)
         ~ cd_td(2)
     }
 * {cd_muon_den_nguoi_quen} [📞 Gọi chú bán đồ điện ở Chợ Phố Cũ, bạn cũ thời "chị đại".]
-    _Chú cười lộ cái răng vàng: "Hương cần là có. Hai giàn. Tiền xăng thôi." Chiều đó, xe chở đèn tới, kèm 4 anh thợ cũ, ai cũng gọi bạn là "chị Hai"._
+    _Chú cười lộ cái răng vàng: "{chi_dai} cần là có. Hai giàn. Tiền xăng thôi." Chiều đó, xe chở đèn tới, kèm 4 anh thợ cũ, ai cũng gọi bạn là "chị Hai"._
     ~ cd_td(10)
     ~ cd_uy(3)
 * [📞 Đi mượn đèn của người quen cũ thời "chị đại".]
-    _Bạn gọi 6 cuộc. Cuộc thứ 6 có người nhớ bạn: "Ủa Hương tô ốc hả? Có! Đèn cũ thôi nha!" Hai giàn đèn hơi cũ, hơi rỉ, nhưng sáng._
+    _Bạn gọi 6 cuộc. Cuộc thứ 6 có người nhớ bạn: "Ủa {chi_dai} tô ốc hả? Có! Đèn cũ thôi nha!" Hai giàn đèn hơi cũ, hơi rỉ, nhưng sáng._
     ~ cd_td(7)
 * [✂️ Cắt. Dồn đèn về giữa sân khấu, hai bên để tối.]
     _Sân khấu nhỏ đi một nửa. Đẹp kiểu "tối giản". {thanh_ninh} chắc sẽ khen._
@@ -47,7 +47,7 @@ _Đội đèn báo: thiếu 2 giàn đèn lớn. Ngân sách hết. Không có 2
 // ------------------------------------------------------------
 === chi_dai_2810_video_linh ===
 # ngay:28 # gio:16:00 # noi:phong_dung_phim
-_Fanpage công ty vừa đăng một video lạ. 2 phút. Dựng rất đẹp. Toàn cảnh {quan_ly_idol}: cầm hai điện thoại, ngủ gật trên xe, cười với {idol_het_thoi}. Cuối video: "Anh Thái ơi, em thích anh lâu rồi."_
+_Fanpage công ty vừa đăng một video lạ. 2 phút. Dựng rất đẹp. Toàn cảnh {quan_ly_idol}: cầm hai điện thoại, ngủ gật trên xe, cười với {idol_het_thoi}. Cuối video: "Anh {quan_ly_idol} ơi, em thích anh lâu rồi."_
 _Góc khung hình có một con cú nhỏ xíu._
 _{editor} ngồi trong phòng dựng, hai tay ôm đầu. Video đã có 30.000 lượt xem._
 editor: Em… em bấm nhầm xuất bản. Em định lưu nháp. Chị ơi… em muốn biến mất.
@@ -91,14 +91,14 @@ it: *(thở hổn hển)* Dây mạng tủ tầng 1. Bị cắn. Hoặc bị c�
     chi_dai: Biết. Quên. Giờ nhớ.
     ~ qh("cho", 15)
     ~ qh("it", 5)
-* [🐕 Lôi {cho} ra khỏi tủ mạng, giao cho Bác Bình.]
+* [🐕 Lôi {cho} ra khỏi tủ mạng, giao cho Bác {bac_bao_ve}.]
     bac_bao_ve: *(bộ đàm)* Ừ. Đưa nó đây. Hôm nay nó nằm chòi.
     ~ qh("cho", -3)
 - -> dieu_phoi
 
 = bi_cat
 * [🕵️ Nhìn quanh. Ai tới sớm nhất sáng nay?]
-    _Bạn bộ đàm cho Bác Bình. Bác đọc sổ trực: "6 giờ 50. Một người. Bác ghi tên rồi. Cháu cần thì xuống chòi, bác không nói qua máy được."_
+    _Bạn bộ đàm cho Bác {bac_bao_ve}. Bác đọc sổ trực: "6 giờ 50. Một người. Bác ghi tên rồi. Cháu cần thì xuống chòi, bác không nói qua máy được."_
     ~ cd_uy(2)
 * [📻 Kệ ai cắt. Việc bây giờ là chạy.]
     ~ cd_nk(5)
@@ -130,7 +130,7 @@ _4 giờ 50 chiều. Wifi vừa có lại. {thanh_ninh} ngồi trước màn hì
 
 = da_hoa
 _{thanh_ninh} quay ra, thấy bạn đi ngang. Gọi nhỏ:_
-thanh_ninh: Chị Hương… chị coi giùm em. Ô người nhận này… đúng hông chị?
+thanh_ninh: Chị {chi_dai}… chị coi giùm em. Ô người nhận này… đúng hông chị?
 _Ô người nhận: "G-Entertainment - Toàn công ty". Không phải thư ký của Lưu Lực._
 * [🛡️ "Sai. Toàn công ty. Xóa đi."]
     thanh_ninh: *(xóa, tay run)* Trời ơi… suýt nữa…
@@ -199,7 +199,7 @@ _Tiến Độ Đêm Hồng: {cd_tien_do}%._
 _7 giờ 45. {hr} cho dọn kho trước buổi họp đánh giá. Hai anh lao công đang khiêng một thùng carton từ gầm cầu thang ra._
 _Trong thùng: chìa khóa, son môi, điện thoại cũ, một chiếc găng tay hồng, một cái USB không nhãn. Kho báu của {cho}._
 _{cho} đứng ở chân cầu thang, gầm gừ, run run._
-* [🛡️ "Để xuống. Đồ của Tuất. Không ai được dọn."]
+* [🛡️ "Để xuống. Đồ của {cho}. Không ai được dọn."]
     _Hai anh lao công đặt thùng xuống ngay. Không ai cãi chị Đại lúc 7 giờ 45 sáng._
     _{cho} kéo cái thùng về gầm cầu thang, nằm đè lên._
     ~ cd_giu_kho_tuat = true
@@ -207,7 +207,7 @@ _{cho} đứng ở chân cầu thang, gầm gừ, run run._
     ~ qh("hr", -3)
 * [💬 Lục thùng xem. Có gì quan trọng hông?]
     _Một chiếc USB không nhãn, mùi cà phê sữa đá. Một chiếc găng tay hồng. Bạn cầm USB lên, nghĩ tới vụ đoàn thuế cần bằng chứng dự án tháng 6._
-    chi_dai: Cái này ai làm rớt, chị đưa {it} kiểm tra. Còn lại để y nguyên cho Tuất.
+    chi_dai: Cái này ai làm rớt, chị đưa {it} kiểm tra. Còn lại để y nguyên cho {cho}.
     ~ nhan(usb_khong_nhan)
     ~ cd_giu_kho_tuat = true
     ~ qh("cho", 5)
@@ -236,7 +236,7 @@ _Bạn đứng dậy trước khi {hr} đọc tới cái tên thứ hai._
 = dung_len_manh
 chi_dai: Ông đọc tiếp đi. Mà đọc tên ai, người đó đứng sau lưng tui.
 _Rồi {thuc_tap_sinh} đứng dậy, đi ra sau lưng bạn. Rồi {thanh_xin_nghi}. Rồi {editor}. Rồi {designer}. Rồi {sales}. Rồi {ke_toan}._
-_Rồi Bác Bình, đứng ở cửa, cũng bước vào, đứng sau cùng._
+_Rồi Bác {bac_bao_ve}, đứng ở cửa, cũng bước vào, đứng sau cùng._
 _{hr} nhìn cả hàng người. Rồi gấp tập hồ sơ lại, đặt lên bàn trước mặt bạn._
 hr: Anh không đọc nữa.
 * [🔥 Xé đôi tờ danh sách.]
@@ -253,7 +253,7 @@ _{giam_doc} hắng giọng: "Ừ. Nếu Đêm Hồng thành công thì… không
 
 = dung_len
 chi_dai: Ông dừng. Đêm mai mới có kết quả. Đọc danh sách hôm nay là đọc trước án.
-giam_doc: *(im lặng một lúc)* Em Hương nói đúng. Tạm hoãn. Sau Đêm Hồng.
+giam_doc: *(im lặng một lúc)* Em {chi_dai} nói đúng. Tạm hoãn. Sau Đêm Hồng.
 _{hr} gấp hồ sơ lại. Thở ra. Không ai bị gạch tên. Hôm nay._
 * [🦁 "Không phải 'tạm'. Hủy."]
     giam_doc: …Anh hứa. Đêm Hồng thành công thì hủy.
@@ -266,7 +266,7 @@ _{hr} gấp hồ sơ lại. Thở ra. Không ai bị gạch tên. Hôm nay._
 = dung_len_yeu
 chi_dai: Ông dừng!
 _Cả phòng quay lại. Nhưng không ai đứng lên theo bạn. {hr} nhìn bạn, nhìn {giam_doc}._
-giam_doc: Em Hương… ngồi xuống đã. Anh hiểu, nhưng…
+giam_doc: Em {chi_dai}… ngồi xuống đã. Anh hiểu, nhưng…
 _{hr} đọc tiếp. Dòng hai: {thanh_xin_nghi}. Rồi gấp lại: "Hai trường hợp, hiệu lực sau 31/10 nếu chiến dịch không đạt."_
 ~ cd_khong_ai_bi_duoi = false
 ~ cd_mat_em(de_thuc_tap_sinh)
@@ -348,7 +348,7 @@ _Bạn đứng sau cánh gà, bộ đàm bên tai, tay đặt lên cầu dao t�
 - else:
     _Đèn chớp. Loa rè. MC hỏi qua bộ đàm "Em ra lúc nào?" ba lần. Bạn nghiến răng._
 }
-_20:10. {sieu_nhan_hong} chuẩn bị bước ra. Bộ đàm của Bác Bình rè rè: "Cổng sau. Thằng áo nhiều túi, máy ảnh ống dài. Nó vào được rồi."_
+_20:10. {sieu_nhan_hong} chuẩn bị bước ra. Bộ đàm của Bác {bac_bao_ve} rè rè: "Cổng sau. Thằng áo nhiều túi, máy ảnh ống dài. Nó vào được rồi."_
 _Paparazzi Mắt Diều Hâu. Đang đi về phía phòng chờ của {sieu_nhan_hong}._
 * [🛡️ Bỏ cầu dao cho {it}, tự đi chặn paparazzi.]
     _Bạn đứng chắn ở cửa phòng chờ. Gã paparazzi giơ máy ảnh: "Một tấm thôi, một tấm!"_
@@ -356,7 +356,7 @@ _Paparazzi Mắt Diều Hâu. Đang đi về phía phòng chờ của {sieu_nhan
     _Gã nhìn bạn. Nhìn bộ đàm. Hạ máy ảnh. Đi ra._
     ~ cd_paparazzi_bi_duoi = true
     ~ cd_uy(5)
-* [📻 Bộ đàm: "Bác Bình. Gọi Tuất."]
+* [📻 Bộ đàm: "Bác {bac_bao_ve}. Gọi {cho}."]
     _Mười giây sau, tiếng sủa vang khắp hậu trường. Gã paparazzi bị {cho} rượt chạy vòng quanh cột điện quấn đèn hồng, ba vòng, rồi ra cổng._
     ~ cd_paparazzi_bi_duoi = true
     ~ qh("cho", 5)

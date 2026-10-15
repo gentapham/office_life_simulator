@@ -10,7 +10,7 @@
 === chi_dai_mg_so_do_mo_dau ===
 # noi:kho_su_kien
 _Bản đồ sân khấu nhìn từ trên xuống. Sân khấu, loa, đèn, bàn ghế, lối thoát hiểm. Và một dòng chữ đỏ bạn tự viết lên đầu tờ giấy:_
-_"LUẬT SỐ 1: LỐI ĐI CỦA NGUYÊN KHÔNG ĐƯỢC CẮT NGANG LỐI ĐI CỦA TUẤT."_
+_"LUẬT SỐ 1: LỐI ĐI CỦA SIÊU NHÂN HỒNG KHÔNG ĐƯỢC CẮT NGANG LỐI ĐI CỦA CON CHÓ."_
 it: *(cắn mì ly)* Loa không đặt sát cột điện. Hú.
 bac_bao_ve: Lối thoát hiểm để rộng ra, cháu. Người đông là chen nhau đấy.
 _Kéo, thả, xoay. Nhớ: {sieu_nhan_hong} đi từ phòng chờ ra sân khấu. {cho} đi từ cổng tới chỗ xúc xích. Hai con đường không được gặp nhau._
@@ -45,7 +45,7 @@ _Bạn xé tờ sơ đồ, vẽ lại từ đầu. Mất cả buổi chiều._
 _Bộ đàm rè rè. Sáu giọng cùng lúc. Ba phút. Không ai đợi ai._
 thuc_tap_sinh: *(bộ đàm)* Dạ chị ơi hết đá rồi ạ!
 hong_hot: *(bộ đàm)* Chị ơi MC lạc! MC đang ở nhà vệ sinh tầng 2 hay sao á!
-bac_bao_ve: *(bộ đàm)* Tuất vào rồi. Bác báo thế thôi.
+bac_bao_ve: *(bộ đàm)* {cho} vào rồi. Bác báo thế thôi.
 it: *(bộ đàm)* Loa trái chập.
 _Bộ đàm bên hông bạn nóng ran. Chọn đúng người, đúng việc. Đi!_
 -> END
@@ -94,7 +94,7 @@ _Ra tới cầu thang, {ke_toan} đuổi theo, nhét vào tay bạn một hộp 
 -> END
 
 === chi_dai_mg_ngan_sach_that_bai ===
-giam_doc: Em Hương, anh hiểu mà. Nhưng mình "optimize" thêm được không em? Cắt pháo hoa đi. Cắt bớt đèn.
+giam_doc: Em {chi_dai}, anh hiểu mà. Nhưng mình "optimize" thêm được không em? Cắt pháo hoa đi. Cắt bớt đèn.
 thanh_ninh: Dạ anh nói chuẩn quá anh ơi! Tối giản là xu hướng ạ!
 _Bạn bước ra khỏi phòng với một nửa con số. Tay nắm chặt tờ dự toán tới nhàu._
 ~ cd_nk(10)
@@ -173,7 +173,7 @@ _Bạn ngồi bệt xuống sân, ôm tay, cười. Chị Đại đánh nhau v�
 # noi:cho_pho_cu
 _Chợ Phố Cũ. Ngân sách trong túi. Một người khách tối nay: {ten(cd_khach_com)}._
 _Người này thích ăn gì? Bạn đã để ý cả tháng nay: họ gọi món gì ở quán cơm tấm, họ bỏ lại món gì trong hộp cơm._
-_Cô bán cá vẫy tay: "Hương ơi, cá lóc mới về nè con!"_
+_Cô bán cá vẫy tay: "{chi_dai} ơi, cá lóc mới về nè con!"_
 -> END
 
 === chi_dai_mg_com_nha_thanh_cong ===

@@ -10,7 +10,7 @@
     ~ ed_thuc_dem()
     -> END
 }
-_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đêm Hồng cho fanpage công ty, và bản lưu của video thư mục "Thái"._
+_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đêm Hồng cho fanpage công ty, và bản lưu của video thư mục "{quan_ly_idol}"._
 _Mắt bạn mờ. Ô "Đích xuất file" có hai dòng giống nhau tới mức đáng sợ: "Fanpage G-Entertainment (hẹn giờ)" và "Ổ_riêng/Thai_final"._
 _Bạn bấm. Thanh tiến trình chạy. Màn hình hiện: "Đã thêm vào hàng chờ. Đăng lúc 09:00, 29/10 – Fanpage G-Entertainment"._
 _Bạn không đọc dòng đó. Bạn đang ngủ._
@@ -33,7 +33,7 @@ _Mốc 4: phải đạt 800.000 người theo dõi. Bộ lọc số liệu của
     _Chưa đạt mốc 4. LL-Entertainment đăng lên mạng: "Ngôi sao xứng đáng một bến đỗ tốt hơn." Cả công ty hiểu là nói ai._
 }
 _Phòng nghệ sĩ. {quan_ly_idol} ngồi giữa hai điện thoại úp mặt xuống bàn. Lần đầu bạn thấy anh ấy không nghe máy._
-quan_ly_idol: Lĩnh. Anh cần một video cứu {idol_het_thoi}. Anh không biết cứu kiểu gì nữa.
+quan_ly_idol: {editor}. Anh cần một video cứu {idol_het_thoi}. Anh không biết cứu kiểu gì nữa.
 * {ed_tu_lieu_16_nam} [🔒 Dùng bản thu gốc "Công Viên" năm 2015, ghép với clip hát trong bóng tối. "Mười năm, một giọng hát."]
     ~ ed_tien_tay()
     ~ follow(25000)
@@ -70,7 +70,7 @@ quan_ly_idol: Lĩnh. Anh cần một video cứu {idol_het_thoi}. Anh không bi�
 # ngay:29 # gio:09:00 # noi:phong_dung_phim # bat_buoc
 _Ngày Internet Quốc tế. Wifi sập cả ngày. {it} bị cả công ty truy đuổi qua ba tầng lầu._
 { not ed_video_xuat_nham:
-    _Hàng chờ fanpage trống. Video thư mục "Thái" nằm yên trong ổ riêng. Không có mạng, bạn dựng offline, yên bình như giữa đêm._
+    _Hàng chờ fanpage trống. Video thư mục "{quan_ly_idol}" nằm yên trong ổ riêng. Không có mạng, bạn dựng offline, yên bình như giữa đêm._
     { ed_dung_video_thai:
         _Bạn chép nó vào một cái USB. Cái USB nhỏ xíu, hình con cú, mua ở cửa hàng tiện lợi lúc 2 giờ sáng._
         ~ ed_chep_usb = true
@@ -84,7 +84,7 @@ _Ở phòng bên, {it} hét: "Sắp có mạng lại rồi!"_ # hen_gio:5
     ~ ed_huy_video = true
     ~ ed_can(-10)
     ~ ed_loi_99 = ed_loi_99 + 1
-    _Video biến mất khỏi hàng chờ. An toàn. Video vẫn nằm trong thư mục "Thái". Như bốn năm qua._
+    _Video biến mất khỏi hàng chờ. An toàn. Video vẫn nằm trong thư mục "{quan_ly_idol}". Như bốn năm qua._
 * [🙈 Không làm gì. Để số phận quyết định.]
     ~ ed_video_len_fanpage = true
     _Mạng có lại. 100%. "Đã đăng." Bốn phút về {quan_ly_idol}, trên fanpage của cả công ty._
@@ -104,7 +104,7 @@ _Ở phòng bên, {it} hét: "Sắp có mạng lại rồi!"_ # hen_gio:5
 # ngay:29 # gio:14:00 # noi:choi_bao_ve # bat_buoc
 _Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác {bac_bao_ve} chia thư vào mấy hộp bánh. {chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua"._
 _{con_ong_chau_cha} chạy lên cầu thang bộ, thở hồng hộc, ôm một ổ cứng. Lần đầu tiên trong đời anh ấy chạy trong công ty._
-con_ong_chau_cha: Lĩnh! Bản thu cuối! Thang máy kẹt! Mix giùm tui được hông? Offline cũng được!
+con_ong_chau_cha: {editor}! Bản thu cuối! Thang máy kẹt! Mix giùm tui được hông? Offline cũng được!
 * [🎧 "Được. Ngồi đây. Hát lại đoạn hai cho em nghe."]
     _Bài hát tên "Hồng Là Thái Độ". Giọng hát ký tên "Rồng". Bạn nhìn {con_ong_chau_cha}, rồi nhìn file, rồi không hỏi gì._
     ~ phat_hien(bai_hat_long)
@@ -130,7 +130,7 @@ con_ong_chau_cha: Lĩnh! Bản thu cuối! Thang máy kẹt! Mix giùm tui đư�
 { ed_video_len_fanpage:
     _22 giờ. Video trên fanpage đã có 50.000 lượt xem. Bình luận: "Hậu trường quản lý nghệ sĩ cảm động ghê", "Công ty quay chuyên nghiệp ghê"._
     { ed_nguoi_dung_dem:
-        _Điện thoại rung. {quan_ly_idol}: "Lĩnh. Cái video trên fanpage… là em hả?"_
+        _Điện thoại rung. {quan_ly_idol}: "{editor}. Cái video trên fanpage… là em hả?"_
         _Rồi: "Anh coi bốn lần rồi. Anh không biết nói gì."_
     - else:
         _{quan_ly_idol} bình luận dưới video: "Dựng hay ghê! Ai dựng vậy? Dựng cho {idol_het_thoi} một cái y vậy nha, gấp."_
@@ -168,7 +168,7 @@ con_ong_chau_cha: Lĩnh! Bản thu cuối! Thang máy kẹt! Mix giùm tui đư�
 }
 _Trưa. Sân thượng. {quan_ly_idol} đứng ở chỗ hôm nghe điện thoại của LL, tay cầm ly cà phê, không cầm điện thoại nào. Lạ._
 _Cái USB hình con cú trong túi áo bạn. Bạn bóp nó tới mức in hình con cú vào lòng bàn tay._
-quan_ly_idol: Lĩnh. Lên đây trốn họp hả?
+quan_ly_idol: {editor}. Lên đây trốn họp hả?
 * {ed_can_dam >= 80} [🔒 Đưa USB. "Anh coi cái này sau Đêm Hồng nha. Khi xong hết rồi."]
     ~ ed_dua_usb_thai = true
     quan_ly_idol: *(cầm cái USB, xoay xoay)* Con cú. *(nhìn bạn)* Cái gì trong đây?
@@ -194,7 +194,7 @@ truong_phong: Phòng Sản xuất xin báo cáo. Người thực hiện…
     ~ ed_vo(-20)
     ~ uy_tin = uy_tin + 5
     _Cả phòng quay lại nhìn bạn. Lần đầu tiên bạn đứng thẳng trong một phòng họp mà không phải để đi ngủ._
-    giam_doc: Em ngồi xuống. *(quay sang {truong_phong})* Điền tên Lĩnh.
+    giam_doc: Em ngồi xuống. *(quay sang {truong_phong})* Điền tên {editor}.
 * [🤝 Nhìn {truong_phong}: "Anh điền tên cả hai đi anh. Anh giám sát, em dựng."]
     ~ ed_o_nguoi_thuc_hien = "ca_hai"
     ~ ed_vo(-15)
@@ -238,6 +238,10 @@ _{quan_ly_idol} đi ngang lều, dừng lại, thò đầu vào._
 quan_ly_idol: Em hóa trang thành gì vậy?
 editor: Dạ… thành con cú.
 quan_ly_idol: *(nhìn cái mũ len và quầng thâm của bạn)* Ờ. Giống thiệt. *(cười)* Lát nữa… làm tốt nha.
+{ ed_video_len_fanpage && ed_nguoi_dung_dem:
+    quan_ly_idol: *(nhỏ giọng)* Cái video hôm qua… anh vẫn chưa biết nói gì. Mà anh giữ nó rồi. Tải về máy. Được hông?
+    _Bạn gật đầu. Không nói được chữ nào. Đó là câu trả lời dài nhất bạn từng có._
+}
 * [💌 "Anh cũng vậy. Hôm nay anh đừng nghe điện thoại nha."]
     quan_ly_idol: *(nhìn hai cái điện thoại trên tay)* …Ừ. Thử. *(tắt một cái)* Một cái thôi.
     ~ ed_can(3)

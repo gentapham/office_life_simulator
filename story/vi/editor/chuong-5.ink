@@ -11,7 +11,7 @@ _Mốc 3: phải đạt 500.000 người theo dõi. Nhưng hôm nay cả công t
     ~ cang_thang(10)
 }
 _{hr} và {it} gõ cửa phòng dựng. {hr} cười. {it} ôm laptop, mắt dán vào log._
-hr: Lĩnh à, em giỏi hình ảnh nhất công ty. Em xem giúp anh: ảnh chụp giấy thế chấp trong bài này có bị chỉnh sửa không?
+hr: {editor} à, em giỏi hình ảnh nhất công ty. Em xem giúp anh: ảnh chụp giấy thế chấp trong bài này có bị chỉnh sửa không?
 * [🔎 Xem kỹ, nói thật: "Dạ ảnh thật. Không chỉnh. Ánh sáng khớp, mép giấy khớp."]
     hr: *(nụ cười cứng lại một chút)* Ừ. Anh cũng đoán vậy.
     ~ uy_tin = uy_tin + 3
@@ -63,7 +63,7 @@ _{ke_toan} nhìn bạn. Bạn nhìn xuống đất. Đất là gạch men, có m
 === editor_2210_cuu_footage ===
 # ngay:22 # gio:15:00 # noi:phong_dung_phim # bat_buoc
 _Chiều. Đoàn kiểm tra đòi "bằng chứng nghiệm thu dự án quảng cáo tháng 6". Hợp đồng 800 triệu. Không có file thì doanh thu đó "không chứng minh được"._
-chua_te_deadline: *(lao vào phòng dựng, mặt trắng bệch)* Lĩnh. Ét o ét. Thật sự ét o ét lần này.
+chua_te_deadline: *(lao vào phòng dựng, mặt trắng bệch)* {editor}. Ét o ét. Thật sự ét o ét lần này.
 { ed_biet_file_vu:
     _Bạn nhớ đường dẫn: ổ cứng "KHÔNG ĐƯỢC MỞ", thư mục "2026_06". Bản sao lưu tự động. Nó ở đó._
 }
@@ -109,7 +109,7 @@ _Và rồi một bóng vàng lao vào khung hình. Chiếc bánh kem hồng ba t
 _Gần nửa đêm. Bạn mở lại cảnh cái bánh đổ, quay từ ba góc. Tay bạn tự dựng: slow-motion, nhạc phim hành động, kem bay như pháo hoa, {cho} hạ cánh như siêu anh hùng._
 _Một phút mười giây. Đẹp. Hài. Hơi ác với chiếc bánh._
 ~ ed_thuc_dem()
-* [📤 Gửi {hong_hot} đăng lên fanpage: "Tuất: Người Phá Bánh".]
+* [📤 Gửi {hong_hot} đăng lên fanpage: "{cho}: Người Phá Bánh".]
     ~ ed_slowmo_banh = true
     ~ follow(20000)
     ~ qh("hong_hot", 10)
@@ -124,7 +124,7 @@ _Một phút mười giây. Đẹp. Hài. Hơi ác với chiếc bánh._
     _Bình luận top: "Ủa con chó này là chó của công ty Siêu Nhân Hồng mà? Cú làm ở đó hả?"_
 * [🦉 Không đăng. Gửi riêng cho {sieu_nhan_hong}: "Chúc mừng sinh nhật anh."]
     ~ qh("sieu_nhan_hong", 15)
-    _Một tiếng sau: "Trời ơi em ơi! Anh coi 20 lần rồi! Sinh nhật vui nhất đời anh! Mà đừng đăng nha, Tuất nó đọc được nó giận."_
+    _Một tiếng sau: "Trời ơi em ơi! Anh coi 20 lần rồi! Sinh nhật vui nhất đời anh! Mà đừng đăng nha, {cho} nó đọc được nó giận."_
 - -> END
 
 // ------------------------------------------------------------
@@ -149,7 +149,7 @@ _Bạn không có cặp. Bạn được giao quay phim "biên bản hòa giải"
     ~ qh("chi_dai", 5)
 * [🤝 Mang cà phê qua phòng nghệ sĩ cho {quan_ly_idol}. Không nói gì. Đặt xuống rồi đi.]
     _Bạn đặt ly cà phê cạnh hai cái điện thoại. {quan_ly_idol} ngẩng lên, chưa kịp nói gì thì bạn đã ra tới cửa._
-    quan_ly_idol: *(nói vọng theo)* Lĩnh! … Cảm ơn em.
+    quan_ly_idol: *(nói vọng theo)* {editor}! … Cảm ơn em.
     ~ ed_can(3)
     ~ qh("quan_ly_idol", 5)
 - -> END
@@ -187,7 +187,7 @@ _Họp giao ban. Tin đồn cắt giảm nhân sự lan khắp công ty. Nhưng 
 }
 ~ ed_bi_phat_hien = true
 _Cả tầng 1 quay về phía phòng dựng. {hong_hot} chạy tới, mắt sáng như đèn sân khấu._
-hong_hot: Lĩnh! Là ông hả?! Con cú đeo tai nghe là ông hả?!
+hong_hot: {editor}! Là ông hả?! Con cú đeo tai nghe là ông hả?!
 * [🦉 "Dạ. Là em." (Nói thật, trước mặt mọi người.)]
     ~ ed_cong_khai_kenh = true
     ~ ed_can(10)
@@ -206,7 +206,7 @@ hong_hot: Lĩnh! Là ông hả?! Con cú đeo tai nghe là ông hả?!
 // ------------------------------------------------------------
 === editor_2610_thang_mua_kenh ===
 # ngay:26 # gio:14:30 # noi:phong_giam_doc # bat_buoc
-giam_doc: Lĩnh à, anh mới biết em là cái kênh con cú gần 1 triệu người. Giỏi thế mà giấu anh.
+giam_doc: {editor} à, anh mới biết em là cái kênh con cú gần 1 triệu người. Giỏi thế mà giấu anh.
 giam_doc: Công ty mua lại nhé, 200 triệu. Đổi tên thành "G-Entertainment Official". Anh không ép, tùy em.
 _Bạn nhìn tấm bằng "Doanh nhân của năm" BTT Global sau lưng {giam_doc}. Con cú bạn giấu trên chữ "Global" vẫn ở đó, trong một video mà anh ấy đã xem hai mươi lần._
 * [💸 "Dạ… em bán."]
@@ -271,7 +271,7 @@ _"Không cần." Hai chữ đó rơi xuống sân thượng như cái ly nhựa.
     ~ ed_can(5)
     ~ qh("quan_ly_idol", 5)
 * [💌 "Anh đi thì… ai lo cho anh {idol_het_thoi}?"]
-    quan_ly_idol: *(quay lại, nhìn bạn rất lâu)* …Em hỏi câu mà anh sợ nhất đó Lĩnh.
+    quan_ly_idol: *(quay lại, nhìn bạn rất lâu)* …Em hỏi câu mà anh sợ nhất đó {editor}.
     _Anh ấy không trả lời. Nhưng anh ấy cũng không đi xuống ngay. Hai người đứng cạnh nhau trên sân thượng, như ở bãi biển hôm nào._
     ~ ed_can(8)
     ~ qh("quan_ly_idol", 5)
@@ -303,7 +303,7 @@ _Một tờ giấy trượt tới ngay chân bạn. Bản thiết kế "Dự án
 // ------------------------------------------------------------
 === editor_2710_mo_thu_muc_thai ===
 # ngay:27 # gio:23:30 # noi:can_701 # bat_buoc
-_23 giờ 30. Căn 701. Rèm đen. Ba màn hình. Bạn mở thư mục tên "Thái"._
+_23 giờ 30. Căn 701. Rèm đen. Ba màn hình. Bạn mở thư mục tên "{quan_ly_idol}"._
 _Bốn năm. Hai trăm mười bốn đoạn clip. {quan_ly_idol} nghe điện thoại ở hành lang. {quan_ly_idol} ngủ gật trong xe, đầu tựa cửa kính. {quan_ly_idol} cười một mình khi {idol_het_thoi} hát đúng nốt cao. Tờ giấy note "Ly của em nè"._
 _Chưa bao giờ dựng. Chưa bao giờ gửi. Đêm nay, lần đầu tiên, bạn kéo chúng lên timeline._
 ~ ed_thuc_dem()

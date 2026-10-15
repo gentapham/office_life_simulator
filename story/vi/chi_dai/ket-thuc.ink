@@ -48,7 +48,7 @@
 _Đêm Hồng hoàn hảo. Một triệu người theo dõi. Top 10 xu hướng. Không một bóng đèn chập, không một tiếng loa rè, không một vết kem trên mũ._
 _{cho} ngồi đúng chỗ của {cho}. {sieu_nhan_hong} đi đúng lối của {sieu_nhan_hong}. Hai con đường không gặp nhau một lần nào._
 _Sáng 1/11. Phòng giám đốc. {giam_doc} tự đứng dậy, tự kéo ghế, và lần này tự pha trà, không gọi ai._
-giam_doc: Hương. Anh nghĩ suốt đêm qua. Ghế Phó Giám đốc. Anh muốn em ngồi.
+giam_doc: {chi_dai}. Anh nghĩ suốt đêm qua. Ghế Phó Giám đốc. Anh muốn em ngồi.
 _Ngoài vách kính, {truong_phong} đứng hình. {con_ong_chau_cha} thở phào._
 chi_dai: Em không ngồi ghế đó.
 giam_doc: Ơ… sao thế em?
@@ -81,7 +81,7 @@ _Bạn xé đôi. Rồi xé tư. Rồi đưa cho {hr} một nửa, để ông x�
 _{hr} xé. Tay hơi run. Rồi bật cười, cười thật, không phải nụ cười làm người ta sợ._
 _Tối đó, Nhà số 45 chật kín. Không ai được mời. Ai cũng tự tới. Ai cũng mang một món._
 _{thuc_tap_sinh} mang một thùng mì gói "để dự trữ cho chị". {ke_toan} mang hộp bánh pía, kèm hóa đơn. {thanh_xin_nghi} mang một con gà luộc, "gà nhà bà ngoại nuôi"._
-_Bác Bình mang ấm trà cũ sứt vòi. Và {hr} mang… 40 loại trà, sắp theo bảng chữ cái._
+_Bác {bac_bao_ve} mang ấm trà cũ sứt vòi. Và {hr} mang… 40 loại trà, sắp theo bảng chữ cái._
 bac_bao_ve: Đông thế này thì bàn 8 ghế không đủ đâu cháu.
 chi_dai: Thì ngồi đất. Nhà chị ngồi đất quen rồi.
 _Cả đám ngồi bệt dưới sân, quanh cái bao cát. {thanh_xin_nghi} hát một bài, giọng hay tới mức hàng xóm mở cửa sổ ra nghe._
@@ -99,7 +99,7 @@ _Bạn nâng ly trà đá. Cả sân nâng theo. Không ai nói câu chúc nào.
 _Đêm Hồng thành công. {sieu_nhan_hong} ở lại {cong_ty}. Không có phong bì xanh lá chuối nào tới tay cậu ấy cả. Chỉ bạn biết vì sao._
 _Hôm sau. Quán Ốc Đêm. Bàn số 7, đúng cái bàn năm bạn 20 tuổi. Bạn đặt trước, ngồi trước, gọi trước một ấm trà đá._
 _Bảy giờ tối. Một chiếc xe xanh lá chuối đậu xa quán đúng 50 mét. Lưu Lực đi bộ vào, vest trắng, tóc vuốt keo, mắt nhìn quanh như người đi qua bãi mìn._
-luu_luc: Chị Hương. Chị hẹn tôi… nói chuyện làm ăn?
+luu_luc: Chị {chi_dai}. Chị hẹn tôi… nói chuyện làm ăn?
 chi_dai: Ngồi đi.
 _Lưu Lực kéo ghế ra. Ngồi cách bạn đúng 2 mét. Chủ quán nhìn cảnh này, lặng lẽ cất hết tô ốc vào trong bếp._
 _Bạn đẩy qua một tờ giấy viết tay. "Cam kết: LL-Entertainment không câu người của {cong_ty} trong vòng 10 năm."_
@@ -151,7 +151,7 @@ _Giàn đèn bên trái chập. Một tiếng "bụp", rồi khói. Nửa sân k
 _Loa rè. Câu chào của MC biến thành tiếng ong vò vẽ. MC đi lạc ra phía bãi giữ xe, cầm micro hỏi đường bảo vệ._
 _Rồi {cho} lên sân khấu. Trước {sieu_nhan_hong}. Đứng giữa ánh đèn duy nhất còn sáng, ngậm chiếc găng tay hồng, nhìn khán giả._
 _Khán giả cười. Không phải kiểu cười bạn muốn._
-_Bạn đứng sau cánh gà, gào vào bộ đàm: "Đèn phụ! Loa dự phòng! Ai giữ Tuất!"_
+_Bạn đứng sau cánh gà, gào vào bộ đàm: "Đèn phụ! Loa dự phòng! Ai giữ {cho}!"_
 _Bên kia chỉ có tiếng rè. Rè. Rè. Như tiếng ếch ở bãi đất trống ngày 14/10._
 _{sieu_nhan_hong} vẫn bước ra. Vẫn hát. Hát trong nửa bóng tối, trên cái loa rè, với {cho} đứng sủa ở góc. Cậu ấy hát tới hết bài. Bạn không biết nên khóc vì thương hay vì xấu hổ._
 _23:00. Bãi đất vắng. Ai về nhà nấy. Không ai trách bạn. Không ai nói gì với bạn. Đó là điều tệ nhất._
@@ -171,14 +171,14 @@ _Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi S�
 # ngay:31
 _Đêm Hồng thành công. Pháo giấy hồng. Khán giả hát. {giam_doc} ôm {sieu_nhan_hong} trên sân khấu, khóc như đứa trẻ._
 _Sau show, cả công ty kéo nhau qua Karaoke Hát Cho Nhau Nghe. Group Zalo-lô nổ tin nhắn: "Phòng VIP 2 nha mọi người!", "Ai chưa tới?"._
-_Không ai nhắn cho bạn. Không ai quên bạn. Chỉ là ai cũng nghĩ: "Chị Hương chắc bận dọn sân khấu." "Chị Hương chắc mệt." "Chị Hương lúc nào chả có việc."_
+_Không ai nhắn cho bạn. Không ai quên bạn. Chỉ là ai cũng nghĩ: "Chị {chi_dai} chắc bận dọn sân khấu." "Chị {chi_dai} chắc mệt." "Chị {chi_dai} lúc nào chả có việc."_
 _Họ nói đúng. Bạn bận. Bạn mệt. Bạn có việc. Ba lần trong tháng này, bạn kiệt sức tới mức ngồi bệt ở kho mà không đứng dậy nổi. Không ai biết._
 _23:30. Bạn dọn xong cái loa cuối cùng. Về công ty cất bộ đàm. Leo lên sân thượng. Hai cái ghế nhựa. Một cây phơi đồ. Một cái ghế trống._
 _Bên kia đường, karaoke vọng lên tiếng hát. "Công Viên". Cả phòng hát sai lời "khoai chiên", rồi cười rần rần._
 _Bạn tháo bộ đàm khỏi thắt lưng. Đặt lên cái ghế trống bên cạnh. Lần đầu tiên trong tháng, bạn không đeo nó._
 _Tay bạn trống trơn. Không quen._
 _Có tiếng bước chân lên cầu thang. Chậm. Nặng. Tiếng dép lê._
-_Bác Bình. Tay cầm một ly trà đá, đá còn nguyên viên. Bác không hỏi gì. Bác đặt ly trà xuống cạnh bạn, ngay bên cái bộ đàm._
+_Bác {bac_bao_ve}. Tay cầm một ly trà đá, đá còn nguyên viên. Bác không hỏi gì. Bác đặt ly trà xuống cạnh bạn, ngay bên cái bộ đàm._
 bac_bao_ve: Uống đi. Bác thấy hết rồi.
 _Bác ngồi xuống cái ghế nhựa còn lại. Hai người nhìn sang bên kia đường. Nghe tiếng hát. Không ai nói gì._
 _Ly trà đá đọng nước, chảy thành vệt dài trên mặt ghế. Bạn uống một ngụm. Đặc. Như mọi khi._

@@ -34,8 +34,8 @@ ran_doc: Dạ chị {chi_dai}! Chị uống gì hông, em pha cho chị!
 // ------------------------------------------------------------
 === chi_dai_tudo_giam_doc ===
 # npc:giam_doc
-_Phòng giám đốc. Bạn vừa gõ cửa, {giam_doc} đã đứng bật dậy, kéo ghế, gọi vọng ra: "Nhi ơi, trà!"_
-giam_doc: Ơ Hương! Em ngồi đi. Có việc gì "urgent" à em?
+_Phòng giám đốc. Bạn vừa gõ cửa, {giam_doc} đã đứng bật dậy, kéo ghế, gọi vọng ra: "{thanh_ninh} ơi, trà!"_
+giam_doc: Ơ {chi_dai}! Em ngồi đi. Có việc gì "urgent" à em?
 * [📋 "Đêm Hồng cần thêm 2 bảo vệ, 1 xe cứu thương trực. Sếp ký."]
     giam_doc: Xe cứu thương à? Có cần thiết không em? Mình "optimize" được không?
     chi_dai: Cả nghìn người, sếp. Ngất một người mà hông có xe là lên báo.
@@ -51,7 +51,7 @@ giam_doc: Ơ Hương! Em ngồi đi. Có việc gì "urgent" à em?
     ~ qh("giam_doc", -3)
     ~ cd_uy(2)
 + [😶 "Dạ hông có gì, em đi nhầm phòng."]
-- giam_doc: Mà Hương này… anh hỏi thật nhé. Mọi người… có nói gì anh không?
+- giam_doc: Mà {chi_dai} này… anh hỏi thật nhé. Mọi người… có nói gì anh không?
 * [😇 "Có. Nói sếp hay hứa. Mà cũng nói sếp hông bao giờ bỏ ai."]
     giam_doc: *(cười gượng)* Ừ. Hai câu ấy đều đúng.
     ~ qh("giam_doc", 5)
@@ -92,7 +92,7 @@ truong_phong: À chị {chi_dai}. Chị có 5 phút không? Mình sync nhanh v�
 === chi_dai_tudo_thanh_ninh ===
 # npc:thanh_ninh
 _Bàn trợ lý. {thanh_ninh} đang soạn bài phát biểu cho sếp. Thấy bạn, tay gõ phím chậm lại._
-thanh_ninh: Dạ… chị Hương. Chị cần gặp anh {giam_doc} hả chị? Anh đang bận ạ.
+thanh_ninh: Dạ… chị {chi_dai}. Chị cần gặp anh {giam_doc} hả chị? Anh đang bận ạ.
 * [🦁 "Chị hông hỏi em. Chị gõ cửa."]
     _Bạn gõ cửa. {giam_doc} nói "Vào đi em!" ngay lập tức. {thanh_ninh} nhìn theo, môi mím chặt._
     ~ qh("thanh_ninh", -5)
@@ -128,7 +128,7 @@ hong_hot: Ối dồi ôi chị Đại! Nghe gì chưa chị?
     chi_dai: Kể ai thì kể, đừng kể sai.
     ~ qh("hong_hot", -2)
 * [📋 "Đêm Hồng. Em lên lịch đăng bài đếm ngược 10 ngày. Mỗi ngày một ảnh hậu trường."]
-    hong_hot: Ok chị! Ảnh hậu trường nào có Tuất là triệu view!
+    hong_hot: Ok chị! Ảnh hậu trường nào có {cho} là triệu view!
     ~ cd_td(2)
     ~ follow(3000)
 * [💬 "Nghe gì? Kể nhanh. Một câu."]
@@ -150,7 +150,7 @@ hong_hot: Ối dồi ôi chị Đại! Nghe gì chưa chị?
 === chi_dai_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
 _{con_ong_chau_cha} đang ngồi ở sảnh, đeo tai nghe to bự, gõ gõ ngón tay theo nhịp. Ly cà phê 85 nghìn bên cạnh._
-con_ong_chau_cha: Ồ chị Hương. Chill hông chị? Em mời chị ly cà phê nha.
+con_ong_chau_cha: Ồ chị {chi_dai}. Chill hông chị? Em mời chị ly cà phê nha.
 * [📋 "Chị cần mượn xe bán tải của em chở loa đêm 28."]
     con_ong_chau_cha: Ủa sao không thuê xe luôn chị?
     chi_dai: Vì ngân sách hết rồi em.
@@ -280,7 +280,7 @@ ke_toan: Bà lên chi? Xin tiền thì về. Uống trà thì ngồi.
 === chi_dai_tudo_hr ===
 # npc:hr
 _Phòng HR. Kệ trà 40 loại sắp theo bảng chữ cái. {hr} đang pha một ấm "Bạch Trà Ân Cần"._
-hr: Em Hương. Lâu rồi em không tự lên đây. Thường là anh mời em, em không lên.
+hr: Em {chi_dai}. Lâu rồi em không tự lên đây. Thường là anh mời em, em không lên.
 * [🍵 "Hôm nay tui tự lên. Rót tui một ly. Loại nào hông có chữ 'lắng nghe'."]
     hr: *(cười)* Vậy thì trà đá thôi em. Loại duy nhất không có tên.
     ~ qh("hr", 5)
@@ -299,7 +299,7 @@ hr: Em Hương. Lâu rồi em không tự lên đây. Thường là anh mời em
         ~ cd_nk(5)
     }
 + [😶 "Tui đi nhầm phòng."]
-- hr: Em Hương. Anh hỏi thật nhé. Em có nghĩ có ngày em làm nghề khác không?
+- hr: Em {chi_dai}. Anh hỏi thật nhé. Em có nghĩ có ngày em làm nghề khác không?
 * [😇 "Có. Mở quán. Mà tui sẽ thuê ông làm… người pha trà."]
     hr: *(mắt sáng lên một giây)* Quán trà à? Anh… cũng từng nghĩ vậy.
     ~ qh("hr", 8)
@@ -343,7 +343,7 @@ it: Restart chưa?
 === chi_dai_tudo_idol_het_thoi ===
 # npc:idol_het_thoi
 _Phòng chờ studio. {idol_het_thoi} ngồi trước gương, đeo kính đen trong nhà, chỉnh tóc theo kiểu 2015._
-idol_het_thoi: Hương. Em biết anh là ai không?
+idol_het_thoi: {chi_dai}. Em biết anh là ai không?
 * [🦁 "Biết. Ông là đứa 30 tuổi đeo kính đen trong nhà."]
     idol_het_thoi: *(tháo kính ra, rồi đeo lại)* Hồi anh còn nổi, không ai dám nói vậy.
     chi_dai: Hồi ông còn nổi, tui đã nói vậy rồi.
@@ -357,7 +357,7 @@ idol_het_thoi: Hương. Em biết anh là ai không?
     idol_het_thoi: Đông lắm em… *(nhìn điện thoại)* …à, một người. Chị ấy 45 tuổi. Đám cưới nào cũng tới.
     ~ qh("idol_het_thoi", 3)
 + [😶 Đi ra.]
-- idol_het_thoi: Hương… em nghĩ cái thằng mặc đồ hồng đó… có thay được anh không?
+- idol_het_thoi: {chi_dai}… em nghĩ cái thằng mặc đồ hồng đó… có thay được anh không?
 * [😇 "Không ai thay được ai. Bữa mất điện, ông hát hay hơn MV của nó."]
     idol_het_thoi: *(im lặng rất lâu)* …Thật hả?
     chi_dai: Tui không nói phét. Nghề tui là đứng cánh gà, nghe hết.
@@ -371,7 +371,7 @@ idol_het_thoi: Hương. Em biết anh là ai không?
 === chi_dai_tudo_quan_ly_idol ===
 # npc:quan_ly_idol
 _{quan_ly_idol} đứng ở cầu thang, mỗi tay một điện thoại, cả hai đều đang rung. Mắt thâm tới cằm._
-quan_ly_idol: Khoan, anh nghe máy chút… Ừ… ừ… Chuyện này để anh lo, đừng ai đăng gì hết! *(cúp)* Hương. Em cần gì?
+quan_ly_idol: Khoan, anh nghe máy chút… Ừ… ừ… Chuyện này để anh lo, đừng ai đăng gì hết! *(cúp)* {chi_dai}. Em cần gì?
 * [📋 "Lịch {sieu_nhan_hong} tuần cuối. Em cần biết giờ nào cậu ấy có mặt để tập."]
     quan_ly_idol: *(đưa luôn cái điện thoại thứ hai)* Đây. Lịch đây. Em chụp lại. Anh không nhớ nổi nữa.
     ~ cd_td(2)
@@ -385,7 +385,7 @@ quan_ly_idol: Khoan, anh nghe máy chút… Ừ… ừ… Chuyện này để an
     quan_ly_idol: Anh… chưa biết. Đi thì bỏ một người lại.
     ~ phat_hien(ll_moi_thai)
 + [😶 "Thôi anh nghe máy đi."]
-- quan_ly_idol: Hương này. Nếu một ngày anh đi… em để ý {idol_het_thoi} giùm anh nhé.
+- quan_ly_idol: {chi_dai} này. Nếu một ngày anh đi… em để ý {idol_het_thoi} giùm anh nhé.
 * [🤝 "Em để ý. Mà anh đừng đi."]
     quan_ly_idol: *(cười mệt)* Em nói như ra lệnh.
     chi_dai: Thì là ra lệnh.
@@ -401,7 +401,7 @@ quan_ly_idol: Khoan, anh nghe máy chút… Ừ… ừ… Chuyện này để an
 === chi_dai_tudo_bien_kich ===
 # npc:bien_kich
 _Sân thượng. {bien_kich} ngồi bên lan can, ôm sổ, nhìn trời "tìm cảm hứng"._
-bien_kich: Chị Hương… chị có biết kịch bản này cần thêm gì không? Cần thêm nỗi đau.
+bien_kich: Chị {chi_dai}… chị có biết kịch bản này cần thêm gì không? Cần thêm nỗi đau.
 * [📋 "Kịch bản MC Đêm Hồng. Em viết xong chưa? Chị cần thứ 5."]
     bien_kich: Đang… chín dần ạ.
     chi_dai: Chín dần thì thứ 5 phải chín hẳn.
@@ -418,7 +418,7 @@ bien_kich: Chị Hương… chị có biết kịch bản này cần thêm gì k
     ~ cd_uy(3)
 + [😶 Để em ấy tìm cảm hứng.]
 - bien_kich: Chị… nếu một người viết về đồng nghiệp bằng tên thật, mà viết vì thương, thì có tội hông chị?
-* [😇 "Không tội. Nhưng phải hỏi người ta trước. Thương thì càng phải hỏi."]
+* [😇 "Không tội. Nhưng phải hỏi người ta trước. {ke_toan} thì càng phải hỏi."]
     bien_kich: *(gật chậm)* Dạ… em sẽ hỏi.
     ~ qh("bien_kich", 8)
 * [🧂 "Tội. Mà nếu chị đẹp trong đó thì chị tha."]
@@ -461,7 +461,7 @@ editor: *(ngáp)* Chị… đợi render xong…
 === chi_dai_tudo_designer ===
 # npc:designer
 _Bàn thiết kế. {designer} có 2 cái laptop. Cái thứ hai đóng lại cái "tách" khi bạn đi tới._
-designer: Chị Hương. Chị cần poster hả? Sửa nhẹ thôi là sửa cái gì ạ?
+designer: Chị {chi_dai}. Chị cần poster hả? Sửa nhẹ thôi là sửa cái gì ạ?
 * [📋 "Banner Đêm Hồng. 12 mét. Chữ to, màu hồng, nhìn từ cuối bãi phải thấy."]
     designer: Ok chị. Feedback cụ thể vậy là em thương chị nhất công ty.
     ~ cd_td(3)
@@ -490,7 +490,7 @@ designer: Chị Hương. Chị cần poster hả? Sửa nhẹ thôi là sửa c�
 === chi_dai_tudo_sales ===
 # npc:sales
 _{sales} đang gọi điện, giọng tự tin như CEO tập đoàn: "Dạ anh, deal này chắc kèo! Tin em đi!" Cúp máy. Quay sang bạn._
-sales: Chị Hương! Tin chị đi, Đêm Hồng em kéo được 3 nhà tài trợ!
+sales: Chị {chi_dai}! Tin chị đi, Đêm Hồng em kéo được 3 nhà tài trợ!
 * [🦁 "Em 26 tuổi. Chị 30. 'Tin chị đi' là câu của chị."]
     sales: *(khựng)* Dạ… tin em đi ạ.
     chi_dai: Ờ. Vậy mới đúng.
@@ -519,14 +519,14 @@ sales: Chị Hương! Tin chị đi, Đêm Hồng em kéo được 3 nhà tài t
 === chi_dai_tudo_dan_dau_tu ===
 # npc:dan_dau_tu
 _Bàn số liệu. Hai màn hình. Một màn hình số liệu Siêu Nhân Hồng. Một màn hình chart đỏ lòm. {dan_dau_tu} chuyển sang màn hình số liệu rất nhanh khi thấy bạn._
-dan_dau_tu: Hương! Số liệu đẹp lắm em. Đẹp gần bằng chart của anh lúc lên.
+dan_dau_tu: {chi_dai}! Số liệu đẹp lắm em. Đẹp gần bằng chart của anh lúc lên.
 * [📋 "Giờ nào đăng bài thì nhiều người coi nhất? Em cần cho đêm 31."]
     dan_dau_tu: *(mắt sáng lên, giọng khác hẳn)* 20 giờ 15. Thứ bảy. Có chữ "Halloween" và có con chó. Tỉ lệ tương tác tăng 340%.
     chi_dai: Vậy là anh giỏi thật.
     dan_dau_tu: Anh giỏi số liệu. Không giỏi coin.
     ~ follow(5000)
     ~ qh("dan_dau_tu", 6)
-* [🧂 "Anh nợ bác Bình 2 triệu. Bác 50 tuổi. Anh trả chưa?"]
+* [🧂 "Anh nợ bác {bac_bao_ve} 2 triệu. Bác 50 tuổi. Anh trả chưa?"]
     dan_dau_tu: Anh… anh sắp trả. Lần này là lên thật.
     chi_dai: Lên hay xuống, trả bác trước.
     ~ cd_uy(2)
@@ -537,7 +537,7 @@ dan_dau_tu: Hương! Số liệu đẹp lắm em. Đẹp gần bằng chart củ
     ~ qh("dan_dau_tu", 8)
     ~ tien_cong(-40000)
 + [😶 Đi qua.]
-- dan_dau_tu: Hương… em có bao giờ nghĩ người như anh thoát nghèo được không?
+- dan_dau_tu: {chi_dai}… em có bao giờ nghĩ người như anh thoát nghèo được không?
 * [😇 "Được. Ngày anh dùng cái đầu đó cho số liệu thay vì cho coin."]
     dan_dau_tu: *(nhìn hai màn hình rất lâu)* …Ừ.
     ~ qh("dan_dau_tu", 8)
@@ -554,7 +554,7 @@ dan_dau_tu: Hương! Số liệu đẹp lắm em. Đẹp gần bằng chart củ
 === chi_dai_tudo_thanh_xin_nghi ===
 # npc:thanh_xin_nghi
 _Hiếm hoi: {thanh_xin_nghi} có mặt ở công ty. Đang ngồi bàn điều phối, khẽ ngân nga một giai điệu, rất hay._
-thanh_xin_nghi: *(giật mình)* Dạ chị Hương! Em… em đang ho ạ. Viêm họng ạ.
+thanh_xin_nghi: *(giật mình)* Dạ chị {chi_dai}! Em… em đang ho ạ. Viêm họng ạ.
 * [🧂 "Viêm họng mà ngân nốt cao vậy hả em?"]
     thanh_xin_nghi: Dạ… viêm… viêm kiểu nốt cao ạ.
     chi_dai: Ờ. Bệnh hiếm.
@@ -585,8 +585,8 @@ thanh_xin_nghi: *(giật mình)* Dạ chị Hương! Em… em đang ho ạ. Viê
 // ------------------------------------------------------------
 === chi_dai_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
-_Chòi bảo vệ. Ấm trà. Radio rè rè kênh thời sự. {cho} nằm dưới chân. Bác Bình ngẩng lên._
-bac_bao_ve: Cháu Hương. Ngồi đi. Trà đá nhé.
+_Chòi bảo vệ. Ấm trà. Radio rè rè kênh thời sự. {cho} nằm dưới chân. Bác {bac_bao_ve} ngẩng lên._
+bac_bao_ve: Cháu {chi_dai}. Ngồi đi. Trà đá nhé.
 * [🍵 Ngồi ghế nhựa. Uống. Không nói gì.]
     _Mười phút. Radio đọc giá vàng. {cho} ngáy. Bạn thấy vai mình nhẹ đi một nửa._
     ~ cd_nk(-15)
@@ -620,8 +620,8 @@ bac_bao_ve: Cháu Hương. Ngồi đi. Trà đá nhé.
 # npc:sieu_nhan_hong
 _Phòng chờ. Đĩa bánh chuối chiên. {sieu_nhan_hong} đang tập tạo dáng trước gương: "Biến hình!"_
 sieu_nhan_hong: A! Chị Đại! Tui tập tư thế mới nè. Coi được hông?
-* [📋 "Đêm Hồng, ông đi lối bên trái. Bên phải là lối của Tuất. Nhớ chưa?"]
-    sieu_nhan_hong: Bên trái… bên trái… Tuất bên phải. Nhớ rồi! Mà tui đi ngang chọc nó một xíu được hông?
+* [📋 "Đêm Hồng, ông đi lối bên trái. Bên phải là lối của {cho}. Nhớ chưa?"]
+    sieu_nhan_hong: Bên trái… bên trái… {cho} bên phải. Nhớ rồi! Mà tui đi ngang chọc nó một xíu được hông?
     chi_dai: Hông.
     sieu_nhan_hong: Một xíu thôi…
     chi_dai: Hông.
@@ -637,7 +637,7 @@ sieu_nhan_hong: A! Chị Đại! Tui tập tư thế mới nè. Coi được hô
 - sieu_nhan_hong: Chị Đại… tui hỏi nha. Nếu người ta biết tui chỉ là một người bình thường, người ta còn thích tui hông?
 * [😇 "Chị là người bình thường. Có người thích chị đó thôi."]
     sieu_nhan_hong: *(nghiêng đầu)* Ai thích chị?
-    chi_dai: Tuất.
+    chi_dai: {cho}.
     sieu_nhan_hong: *(cười phá lên)* Vậy là đủ rồi!
     ~ qh("sieu_nhan_hong", 10)
 * [🦁 "Người ta thích ông vì ông đẩy xe cho bà cụ. Hông phải vì cái mũ."]
@@ -657,7 +657,7 @@ cho: Gâu!
     { co(xuc_xich):
         ~ mat(xuc_xich)
     }
-* [🐕 "Tuất. Ngồi. Bắt tay."]
+* [🐕 "{cho}. Ngồi. Bắt tay."]
     _{cho} ngồi. Đưa chân. Nhìn bạn chờ đợi phần thưởng như một nhân viên chờ lương ngày 10._
     ~ qh("cho", 4)
     ~ cd_uy(1)

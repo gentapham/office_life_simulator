@@ -6,7 +6,7 @@
 === editor_1310_video_doanh_nhan ===
 # ngay:13 # gio:13:20 # noi:phong_dung_phim # bat_buoc
 _Ngày Doanh nhân Việt Nam. Sáng nay {thanh_ninh} đọc bài khen sếp 15 phút. {giam_doc} tự tặng hoa cho mình, và treo tấm bằng "Doanh nhân của năm" của BTT Global trong phòng._
-giam_doc: *(đứng ở cửa phòng dựng)* Lĩnh à, em dựng giúp anh một video "Hành trình doanh nhân" nhé. Ba phút. 5 giờ chiều anh đăng. Anh không ép.
+giam_doc: *(đứng ở cửa phòng dựng)* {editor} à, em dựng giúp anh một video "Hành trình doanh nhân" nhé. Ba phút. 5 giờ chiều anh đăng. Anh không ép.
 _Tư liệu: 14 ảnh {giam_doc} chụp với người nổi tiếng (người nổi tiếng thì bị cắt mất nửa mặt), một clip {giam_doc} đánh golf hụt bóng, và tấm bằng BTT Global._
 * [🎬 Dựng hoành tráng: nhạc sử thi, slow-motion cú đánh golf… cắt trước lúc hụt bóng.]
     ~ qh("giam_doc", 10)
@@ -110,7 +110,7 @@ _Bạn biết. Người dựng phim nhìn khung hình đủ lâu thì thấy h�
 # ngay:15 # gio:23:50 # noi:can_701 # bat_buoc
 _23 giờ 50. Điện đã có lại. Căn 701 sáng ba màn hình. Clip pantry nằm trên timeline: 4 phút 12 giây, tối, rung, đẹp tới mức đau._
 _Điện thoại rung._
-quan_ly_idol: *(nhắn tin)* Lĩnh ơi, hồi chiều có ai quay lúc {idol_het_thoi} hát hông em? Anh muốn coi lại.
+quan_ly_idol: *(nhắn tin)* {editor} ơi, hồi chiều có ai quay lúc {idol_het_thoi} hát hông em? Anh muốn coi lại.
 * [🎁 Cắt bỏ góc có anh ấy, gửi bản đẹp nhất: "Dạ em có quay nè anh."]
     ~ ed_clip_phat_toi = "gui_thai"
     ~ ed_can(10)
@@ -123,7 +123,7 @@ quan_ly_idol: *(nhắn tin)* Lĩnh ơi, hồi chiều có ai quay lúc {idol_het
 * [😶 "Dạ em hông có quay anh."]
     ~ ed_clip_phat_toi = "giu"
     ~ ed_can(-5)
-    _"Ờ, tiếc ghê. Thôi em ngủ đi." Clip nằm trong máy. Thư mục "Thái" nặng thêm 1,2 GB._
+    _"Ờ, tiếc ghê. Thôi em ngủ đi." Clip nằm trong máy. Thư mục "{quan_ly_idol}" nặng thêm 1,2 GB._
 * [📺 Đăng thẳng lên kênh "Cú Đêm Cắt Ghép".]
     ~ ed_clip_phat_toi = "dang_kenh"
     ~ ed_thuc_dem()
@@ -197,7 +197,7 @@ _23 giờ. Phòng dựng. Gameshow phát sóng xong. Highlight phải lên trư�
     _Và bạn còn phải làm lại bản render đã mất hôm mất điện. Hai việc, một đêm._
     ~ cang_thang(10)
 }
-truong_phong: *(nhắn lúc 23:04)* Lĩnh ơi, highlight 2 tiếng sau phát sóng là đẹp nhất nhé. Anh tin em.
+truong_phong: *(nhắn lúc 23:04)* {editor} ơi, highlight 2 tiếng sau phát sóng là đẹp nhất nhé. Anh tin em.
 _Hai tiếng sau phát sóng là 1 giờ sáng. Bạn còn hai tiếng. Phải chọn cảnh "hồn" của bản highlight._
 * [😂 Cảnh {sieu_nhan_hong} hát "khoai chiên". Hài, dễ viral.]
     ~ ed_highlight = "nguyen_sai_loi"

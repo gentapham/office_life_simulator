@@ -6,10 +6,10 @@
 === chi_dai_1510_ket_thang_may ===
 # ngay:15 # gio:08:05 # noi:thang_may # bat_buoc
 _8 giờ 05. Bạn bước vào thang máy, tay ôm thùng dây điện. {giam_doc} chạy theo, chen vào phút chót, tay cầm ly cà phê._
-giam_doc: Ơ, may quá! Chào em Hương. Hôm nay em đi sớm nhỉ.
+giam_doc: Ơ, may quá! Chào em {chi_dai}. Hôm nay em đi sớm nhỉ.
 _Cửa đóng. Thang đi được nửa tầng. Rồi đèn tắt. Rồi mọi thứ im lặng. Cả tòa nhà mất điện._
-giam_doc: Ơ… ơ? Ơ thôi chết. Hương ơi… em còn đấy không?
-* [📻 Bật bộ đàm: "Bác Bình, thang máy kẹt giữa tầng trệt với tầng 1. Có sếp ở trong. Bình tĩnh, hông gấp."]
+giam_doc: Ơ… ơ? Ơ thôi chết. {chi_dai} ơi… em còn đấy không?
+* [📻 Bật bộ đàm: "Bác {bac_bao_ve}, thang máy kẹt giữa tầng trệt với tầng 1. Có sếp ở trong. Bình tĩnh, hông gấp."]
     _Bộ đàm rè rè rồi có tiếng bác: "Ừ. Bác biết rồi. Đợi bác lấy cái tay quay."_
     giam_doc: Bộ đàm à? Em lúc nào cũng mang à?
     chi_dai: Lúc nào cũng mang. Kể cả đi đám cưới.
@@ -21,7 +21,7 @@ giam_doc: Ơ… ơ? Ơ thôi chết. Hương ơi… em còn đấy không?
     giam_doc: Anh… anh có đạp đâu. Anh "check" thôi.
     ~ cd_so_lan_quat = cd_so_lan_quat + 1
 - _Mười phút. Mười lăm phút. Trong bóng tối, giọng {giam_doc} nhỏ dần, rồi thành một giọng bạn chưa từng nghe._
-giam_doc: Hương này. Em làm ở đây 8 năm rồi nhỉ. Em có bao giờ nghĩ công ty này… không còn không?
+giam_doc: {chi_dai} này. Em làm ở đây 8 năm rồi nhỉ. Em có bao giờ nghĩ công ty này… không còn không?
 * [😇 "Có. Năm nào em cũng nghĩ. Mà năm nào nó cũng còn."]
     giam_doc: *(cười khẽ)* Ừ. Năm nào cũng còn.
     _Anh im lặng. Rồi nói rất nhỏ: "Năm nay anh không chắc lắm."_
@@ -36,8 +36,8 @@ giam_doc: Hương này. Em làm ở đây 8 năm rồi nhỉ. Em có bao giờ n
     giam_doc: Thôi. Người ở xa rồi.
     ~ qh("giam_doc", 5)
     ~ cd_uy(3)
-- _Cửa thang máy bị cạy ra. Ánh sáng đèn pin. Bác Bình đứng ở khe cửa, cầm cái tay quay, mặt không cảm xúc._
-bac_bao_ve: Anh Thắng ra trước. Cháu Hương ra sau, đưa bác cái thùng dây.
+- _Cửa thang máy bị cạy ra. Ánh sáng đèn pin. Bác {bac_bao_ve} đứng ở khe cửa, cầm cái tay quay, mặt không cảm xúc._
+bac_bao_ve: Anh {giam_doc} ra trước. Cháu {chi_dai} ra sau, đưa bác cái thùng dây.
 _{giam_doc} trèo ra, chỉnh lại cà vạt, rồi lại là {giam_doc} của mọi ngày: "Okay cả nhà! Hôm nay mình làm việc "offline" nhé!"_
 -> END
 
@@ -58,7 +58,7 @@ _{thuc_tap_sinh} vừa lôi từ trong cặp ra 5 cục sạc dự phòng. Cả 
 = chia_viec
 chi_dai: {thuc_tap_sinh}, sạc dự phòng chia cho người cần gọi điện nhất. {it}, đi mua đá. {hong_hot}, kiếm quạt tay. {con_ong_chau_cha}, xe em to, chở đá về.
 con_ong_chau_cha: Ủa sao không gọi ship?
-chi_dai: Ship đang kẹt ở cổng với Tuất.
+chi_dai: Ship đang kẹt ở cổng với {cho}.
 * [🦁 "{truong_phong}! Thổi nến ra đây. Họp sau. Bây giờ đi lấy nước."]
     truong_phong: Ơ… nhưng đây là cuộc họp "khẩn cấp" về tình hình mất điện mà.
     chi_dai: Tình hình mất điện là: mất điện. Hết họp. Đi.
@@ -156,7 +156,7 @@ _Gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng, Ven Đô. Ghi hình 1
 _Xe số 2 đã xếp xong. Bạn đóng cửa thùng xe thì nghe tiếng "Gâu" vọng ra từ… thùng đạo cụ số 7._
 _Bạn mở nắp. {cho} nằm trong đó, ôm chiếc găng tay hồng, nhìn bạn bằng ánh mắt của một hành khách đã mua vé._
 * [🐕 Đưa {cho} về chòi. Trễ giờ thì trễ.]
-    _{cho} không chịu ra. Bạn phải bế cả thùng ra. Bác Bình đứng chờ ở chòi, lắc đầu._
+    _{cho} không chịu ra. Bạn phải bế cả thùng ra. Bác {bac_bao_ve} đứng chờ ở chòi, lắc đầu._
     bac_bao_ve: Nó trốn từ 5 giờ sáng đấy. Bác tìm mãi.
     _Đoàn xe khởi hành trễ 30 phút. Đài Tivi Hóng gọi 4 cuộc. Bạn trả lời cả 4, giọng ngọt như đường phèn, tay nắm chặt vô lăng._
     ~ cd_td(-2)
@@ -167,7 +167,7 @@ _Bạn mở nắp. {cho} nằm trong đó, ôm chiếc găng tay hồng, nhìn b
     cho: …Gâu. *(rất nhỏ)*
     ~ cd_tuat_o_canh_ga = true
     ~ qh("cho", 5)
-* [📻 Gọi bộ đàm: "{thuc_tap_sinh}, nhiệm vụ của em hôm nay: dính lấy Tuất như keo."]
+* [📻 Gọi bộ đàm: "{thuc_tap_sinh}, nhiệm vụ của em hôm nay: dính lấy {cho} như keo."]
     thuc_tap_sinh: Dạ rõ chị! Em mang theo xúc xích rồi ạ!
     _{cho} đi gameshow với một "vệ sĩ" 30 tuổi. Hai đứa ngồi chung một thùng xe._
     ~ cd_tuat_o_canh_ga = true
@@ -184,7 +184,7 @@ _MC (vest bóng, nụ cười truyền hình): "Và bây giờ là phần Hit M�
 _Nhạc "Công Viên" vang lên. {sieu_nhan_hong} cầm micro, tự tin hát:_
 sieu_nhan_hong: "Ngày xưa có đôi bạn thân… bán cá viên chiên tại công viên… thích ăn… KHOAI chiên…"
 _Khán giả khựng lại. Trong cánh gà, {idol_het_thoi} đứng như trời trồng. {quan_ly_idol} quay sang nhìn bạn._
-quan_ly_idol: Hương, sai lời rồi. Chuyện này để anh lo… mà anh không biết lo sao.
+quan_ly_idol: {chi_dai}, sai lời rồi. Chuyện này để anh lo… mà anh không biết lo sao.
 * [📻 Bộ đàm cho {it}: "Mở micro cánh gà. Ngay." Rồi đẩy {idol_het_thoi} ra sát rèm.]
     chi_dai: Ông hát bè. Hát đúng lời. Hát đi.
     idol_het_thoi: Anh… anh là ca sĩ chính bài này mà…
@@ -212,7 +212,7 @@ quan_ly_idol: Hương, sai lời rồi. Chuyện này để anh lo… mà anh kh
 
 = tuat
 _Đúng lúc chương trình sắp hết, một tiếng "GÂU!" vang lên trong cánh gà. Máy quay số 3 lia sang. {cho} đứng đó, ngậm găng tay hồng._
-* [🦁 Bước ra trước máy quay, chỉ tay: "Tuất. Ngồi."]
+* [🦁 Bước ra trước máy quay, chỉ tay: "{cho}. Ngồi."]
     _{cho} ngồi. Ngay ngắn. Như chó nghiệp vụ. Khán giả vỗ tay rần rần. MC: "Ôi, cả chó của đội cũng chuyên nghiệp!"_
     ~ follow(10000)
     ~ cd_uy(5)
@@ -248,7 +248,7 @@ _Bàn dài 23 chỗ. Và một danh sách những người đang giận nhau dà
     ~ cd_td(2)
     ~ an(60)
 - { cd_gameshow_on:
-    giam_doc: *(nâng ly)* Hôm nay gameshow thành công! Anh nghe đài nói clip song ca đang lên xu hướng! Cảm ơn em Hương! Cảm ơn Phát!
+    giam_doc: *(nâng ly)* Hôm nay gameshow thành công! Anh nghe đài nói clip song ca đang lên xu hướng! Cảm ơn em {chi_dai}! Cảm ơn {idol_het_thoi}!
     idol_het_thoi: *(gãi đầu)* Dạ… em hát bè thôi anh.
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 }

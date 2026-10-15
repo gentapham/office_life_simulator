@@ -53,7 +53,7 @@ sieu_nhan_hong: Úi! Tay em khỏe dữ!
     ke_toan: *(lắc đầu, môi mím chặt)* Để bữa khác. Ở đây đông người.
     _{ke_toan} nhìn xấp hợp đồng như nhìn tờ giấy báo tử. Bạn chưa thấy bạn mình nhìn cái gì như vậy bao giờ._
     ~ qh("ke_toan", 3)
-- giam_doc: Hôm nay cả công ty uống trà sữa, anh bao! À, Thương ghi vào chi phí giúp anh nhé.
+- giam_doc: Hôm nay cả công ty uống trà sữa, anh bao! À, {ke_toan} ghi vào chi phí giúp anh nhé.
 ke_toan: Hóa đơn đâu anh?
 giam_doc: …Anh bao bằng tinh thần.
 ~ follow(0)
@@ -76,7 +76,7 @@ ran_doc: Dạ chị {chi_dai}, em là {ran_doc}, mới vô làm hôm nay. Chị 
     ~ cd_bao_ke(de_ran_doc)
     ~ an(15)
     ~ tien_cong(-20000)
-* [🦁 "Ở đây có ba điều: đừng đụng đồ trong tủ lạnh, đừng tin ai nói ngọt quá, và đừng làm Tuất sủa."]
+* [🦁 "Ở đây có ba điều: đừng đụng đồ trong tủ lạnh, đừng tin ai nói ngọt quá, và đừng làm {cho} sủa."]
     ran_doc: *(cười hơi gượng)* Dạ… đừng tin ai nói ngọt quá. Em nhớ rồi chị.
     _Nụ cười đó khựng lại đúng ở điều thứ hai. Bạn thấy._
     ~ cd_uy(5)
@@ -87,7 +87,7 @@ ran_doc: Dạ chị {chi_dai}, em là {ran_doc}, mới vô làm hôm nay. Chị 
     ~ cd_uy(3)
 - _Hai người đi ngang chòi bảo vệ. {cho} ngóc đầu dậy, đánh hơi {ran_doc} một vòng._
 cho: Gâu.
-chi_dai: Nó chịu em rồi đó. Tuất mà chịu thì nửa công ty chịu.
+chi_dai: Nó chịu em rồi đó. {cho} mà chịu thì nửa công ty chịu.
 ran_doc: Còn nửa kia?
 chi_dai: Nửa kia thì có chị.
 _Bạn nói câu quen thuộc, câu bạn đã nói với mọi ma mới suốt 8 năm:_
@@ -99,7 +99,7 @@ chi_dai: Ở đây đứa nào làm em khóc, chỉ mặt chị.
 # ngay:1 # gio:15:00 # noi:choi_bao_ve # bat_buoc
 _Ngày Quốc tế Người cao tuổi. Bạn đã đặt sẵn từ tuần trước: một ổ bánh bông lan to bằng cái nón bảo hiểm, và một ấm trà mới thay cho cái ấm sứt vòi bác dùng từ 2015._
 _Cả công ty kéo ra cổng. {thuc_tap_sinh} cầm bó hoa, {hong_hot} cầm điện thoại, {cho} cầm… không gì cả, chỉ đứng sát cái bánh._
-chi_dai: Bác Bình! Hôm nay ngày của bác. Cả công ty mừng bác!
+chi_dai: Bác {bac_bao_ve}! Hôm nay ngày của bác. Cả công ty mừng bác!
 bac_bao_ve: *(đỏ mặt, đặt cái radio xuống)* Ừ… bày vẽ thế làm gì.
 * [😇 "Bác đứng cổng này 16 năm rồi. Bày vẽ một bữa có sao đâu bác."]
     bac_bao_ve: *(cầm ấm trà mới, xoay xoay)* Ấm đẹp đấy. Cái ấm cũ thì… bác vẫn giữ. Nó quen tay rồi.
@@ -111,12 +111,12 @@ bac_bao_ve: *(đỏ mặt, đặt cái radio xuống)* Ừ… bày vẽ thế l�
     ~ qh("cho", 10)
 * [🦁 Quay lại nhìn cả đám: "Đứa nào chưa chúc bác thì lên chúc. Ngay."]
     _Hai mươi người xếp hàng như đi chấm công. {giam_doc} đứng thứ ba._
-    giam_doc: Bác Bình, em chúc bác… ơ… luôn "healthy" và "stable" ạ.
-    bac_bao_ve: Ừ. Anh Thắng cũng thế nhé.
+    giam_doc: Bác {bac_bao_ve}, em chúc bác… ơ… luôn "healthy" và "stable" ạ.
+    bac_bao_ve: Ừ. Anh {giam_doc} cũng thế nhé.
     ~ cd_uy(5)
     ~ qh("bac_bao_ve", 5)
-- _Bác Bình rót cho bạn một ly trà bằng cái ấm mới. Trà đặc như mọi khi. Bác nói nhỏ, chỉ đủ cho bạn nghe:_
-bac_bao_ve: Cháu Hương này. Cái công ty này nó vui hôm nay, nhưng mà cháu để ý anh Thắng giúp bác nhé.
+- _Bác {bac_bao_ve} rót cho bạn một ly trà bằng cái ấm mới. Trà đặc như mọi khi. Bác nói nhỏ, chỉ đủ cho bạn nghe:_
+bac_bao_ve: Cháu {chi_dai} này. Cái công ty này nó vui hôm nay, nhưng mà cháu để ý anh {giam_doc} giúp bác nhé.
 chi_dai: Sao vậy bác?
 bac_bao_ve: Không sao. Bác không thấy gì đâu.
 _Bác uống ngụm trà, nhìn ra cổng. Ở góc chòi có một lá thư ngân hàng chưa bóc, tên người nhận là {giam_doc}._
@@ -128,7 +128,7 @@ _Bác uống ngụm trà, nhìn ra cổng. Ở góc chòi có một lá thư ng�
 === chi_dai_0210_cuoi_cham_cong ===
 # ngay:2 # gio:07:58 # noi:may_cham_cong
 _Ngày Nụ cười Thế giới. {hr} đứng cạnh máy chấm công với một tờ giấy: "HÔM NAY CHẤM CÔNG PHẢI CƯỜI. MÁY CÓ CAMERA."_
-hr: Chào em Hương. Hôm nay mình cười một cái thật tươi khi chấm công nha em. Anh chỉ muốn lan tỏa năng lượng tích cực thôi.
+hr: Chào em {chi_dai}. Hôm nay mình cười một cái thật tươi khi chấm công nha em. Anh chỉ muốn lan tỏa năng lượng tích cực thôi.
 _Phía sau bạn, {thuc_tap_sinh} đang tập cười trước gương điện thoại. Trông như đang bị đau răng._
 * [😶 Chấm công với gương mặt không cảm xúc. Nhìn thẳng camera.]
     _Máy chấm công kêu "Bíp. Không nhận diện được nụ cười."_
@@ -146,7 +146,7 @@ _Phía sau bạn, {thuc_tap_sinh} đang tập cười trước gương điện t
     _Máy kêu "Bíp. Nụ cười đạt 98%." {hr} ghi nhận vào sổ._
     ~ qh("thuc_tap_sinh", 8)
     ~ cd_bao_ke(de_thuc_tap_sinh)
-- hr: À, em Hương này. Chiều nay họp chiến dịch, sếp có giao việc lớn cho em đó. Em chuẩn bị tinh thần nha.
+- hr: À, em {chi_dai} này. Chiều nay họp chiến dịch, sếp có giao việc lớn cho em đó. Em chuẩn bị tinh thần nha.
 chi_dai: Việc lớn hay ngân sách lớn?
 hr: *(cười, nụ cười làm người ta sợ)* Anh chỉ lo nhân sự thôi em.
 -> END
@@ -160,7 +160,7 @@ _Hai tiếng sau._
 sales: Tin chị đi! Em có 3 nhà tài trợ, tổng 2 tỷ, bên Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch là Mr. Kevin Trộn, thân em lắm!
 thuc_tap_sinh: Dạ… em có một ý tưởng phim ngắn, kể về một người gác két ngân hàng ạ…
 bien_kich: *(ghi ghi chép chép rất nhanh)* Ừm. Hay đó em. Để chị suy nghĩ.
-giam_doc: Còn em Hương. Em lo cho anh "Đêm Hồng" nhé. Đêm 31/10, sân khấu ngoài trời, truyền hình trực tiếp. Hoành tráng vào!
+giam_doc: Còn em {chi_dai}. Em lo cho anh "Đêm Hồng" nhé. Đêm 31/10, sân khấu ngoài trời, truyền hình trực tiếp. Hoành tráng vào!
 chi_dai: Ngân sách bao nhiêu sếp?
 giam_doc: Anh không ép, tùy em. Miễn hoành tráng.
 _Ở cuối bàn, {ke_toan} lắc đầu rất nhẹ. Một lần. Hai lần._
@@ -177,7 +177,7 @@ _Ở cuối bàn, {ke_toan} lắc đầu rất nhẹ. Một lần. Hai lần._
     ~ qh("ke_toan", 5)
     ~ cd_nk(3)
 * [📋 "Vậy em lên dự toán. Thứ hai em trình. Sếp duyệt bao nhiêu em làm bấy nhiêu."]
-    giam_doc: Đấy, thế mới là "professional"! Cả nhà học tập em Hương nhé.
+    giam_doc: Đấy, thế mới là "professional"! Cả nhà học tập em {chi_dai} nhé.
     ke_toan: *(ghi vào sổ)* Thứ hai. Có hóa đơn.
     ~ cd_td(3)
     ~ qh("giam_doc", 5)
@@ -207,7 +207,7 @@ ke_toan: Đêm Hồng mà xin trên 300 triệu là tui không ký nổi đâu.
     ~ cd_td(3)
 * [🔥 "Ổng mua xe máy đi làm, ngân hàng gửi thư tới cổng. Công ty có chuyện gì phải hông?"]
     ke_toan: Bà thấy hả?
-    chi_dai: Bác Bình thấy. Bác hông nói. Mà bác hông nói là có chuyện.
+    chi_dai: Bác {bac_bao_ve} thấy. Bác hông nói. Mà bác hông nói là có chuyện.
     ke_toan: Thôi. Uống trà đi. Tui hứa, có chuyện gì thì bà là người đầu tiên tui kể.
     ~ qh("ke_toan", 3)
     ~ cd_nk(5)
@@ -230,7 +230,7 @@ _Cô bán cá nhìn thấy bạn từ xa, tự động bớt 5 nghìn._
     ~ cd_moi_an_com("ke_toan", 8)
     ~ an(50)
 * [🥊 Về sớm, đấm bao cát cho đã. Tuần sau là bắt đầu vất vả.]
-    _Bịch. Bịch. Bịch. Hàng xóm bên kia tường nói vọng sang: "Hương đấm nghe đã quá con!"_
+    _Bịch. Bịch. Bịch. Hàng xóm bên kia tường nói vọng sang: "{chi_dai} đấm nghe đã quá con!"_
     ~ cd_nk(-15)
     ~ cd_met(-10)
     ~ cd_bao_cat_lan = cd_bao_cat_lan + 1
@@ -247,10 +247,10 @@ ke_toan: Ờ. 31 ngày. Ngày nào cũng là ngày cuối.
 === chi_dai_0410_tam_cho_tuat ===
 # ngay:4 # gio:09:00 # noi:choi_bao_ve # bat_buoc
 _Ngày Động vật Thế giới. Chủ nhật, nhưng bạn vẫn ghé công ty, vì có một việc cả năm chỉ mình bạn làm được: tắm cho {cho}._
-_Bác Bình đã thử lúc 7 giờ. Bây giờ bác đang ngồi thay áo, ướt từ đầu tới chân. {cho} ngồi khô ráo trên nóc chòi._
+_Bác {bac_bao_ve} đã thử lúc 7 giờ. Bây giờ bác đang ngồi thay áo, ướt từ đầu tới chân. {cho} ngồi khô ráo trên nóc chòi._
 bac_bao_ve: Nó không chịu bác. Nó chỉ chịu cháu thôi. Bác thua.
 cho: Grừ…
-* [🦁 Đứng trước chòi, chống nạnh: "TUẤT. XUỐNG."]
+* [🦁 Đứng trước chòi, chống nạnh: "{cho}. XUỐNG."]
     _{cho} nhìn bạn 2 giây. Rồi lặng lẽ leo xuống, đi vào chậu nước, ngồi im như tượng._
     bac_bao_ve: *(lắc đầu)* Bác nuôi nó 6 năm…
     ~ cd_uy(3)
@@ -276,7 +276,7 @@ _Từ xa, một chiếc xe màu hồng đang chạy vào cổng._
 === chi_dai_0410_nguyen_choc_tuat ===
 # ngay:4 # gio:10:30 # noi:cong_cong_ty
 _{sieu_nhan_hong} bước xuống xe, thấy {cho} mặc áo đội nơ, cười ré lên._
-sieu_nhan_hong: Trời ơi Tuất! Bữa nay đẹp trai dữ vậy! Gâu gâu! Gâu gâu gâu! *(làm mặt xấu, giả tiếng sủa)*
+sieu_nhan_hong: Trời ơi {cho}! Bữa nay đẹp trai dữ vậy! Gâu gâu! Gâu gâu gâu! *(làm mặt xấu, giả tiếng sủa)*
 cho: GRỪỪỪ… GÂU! GÂU GÂU!
 _{cho} hạ thấp người. Mắt dán vào bàn tay đeo găng hồng của {sieu_nhan_hong}._
 * [🛡️ Bước ra đứng giữa hai bên: "Hai người. Ngừng. Ngay."]
@@ -293,7 +293,7 @@ _{cho} hạ thấp người. Mắt dán vào bàn tay đeo găng hồng của {s
     ~ cd_so_lan_quat = cd_so_lan_quat + 1
 * [😶 Để hai bên tự giải quyết. Đứng xem.]
     _{sieu_nhan_hong} sủa. {cho} sủa. {sieu_nhan_hong} sủa to hơn. {cho} cướp luôn chiếc găng tay hồng, chạy mất dưới gầm cầu thang._
-    _Bác Bình uống trà. Bạn uống trà. Hai người không ai nói gì._
+    _Bác {bac_bao_ve} uống trà. Bạn uống trà. Hai người không ai nói gì._
     ~ cd_nk(5)
 - sieu_nhan_hong: Găng tay của tui! Đôi đó tui mua ở… à thôi, tui có 12 đôi.
 _Mười phút sau, bạn thấy {sieu_nhan_hong} lén nhét con gà cao su của {cho} vào sau tủ mạng tầng 1, cười khúc khích._
@@ -329,7 +329,7 @@ thuc_tap_sinh: Dạ… em đang học ạ.
 * [🌸 Lấy một bông trong bó hoa, cắm lại vào ly nước trên bàn {thuc_tap_sinh}.]
     _Bông hoa duy nhất trên bàn thực tập sinh. {thuc_tap_sinh} nhìn nó rất lâu._
     ~ qh("thuc_tap_sinh", 10)
-- truong_phong: Thôi cả nhà, mình vào nội dung chính nhé. Em Hương, dự toán Đêm Hồng của em đâu?
+- truong_phong: Thôi cả nhà, mình vào nội dung chính nhé. Em {chi_dai}, dự toán Đêm Hồng của em đâu?
 chi_dai: Đây. 450 triệu.
 ke_toan: Không.
 chi_dai: 380.
@@ -378,21 +378,21 @@ dan_dau_tu: Nếu mình đăng thêm ảnh hậu trường, đúng giờ 8 giờ
 { cd_chup_ba_cu:
     designer: Ảnh hậu trường thì tụi em có 200 tấm. Chị {chi_dai} bắt chụp hết.
 }
-* {cd_chup_ba_cu} [📋 "Ngân, đăng ảnh hậu trường 8 giờ tối. {dan_dau_tu}, canh số. Không ai về trước khi đăng."]
+* {cd_chup_ba_cu} [📋 "{hong_hot}, đăng ảnh hậu trường 8 giờ tối. {dan_dau_tu}, canh số. Không ai về trước khi đăng."]
     hong_hot: Rõ chị Đại!
     _8 giờ tối. Ảnh lên. Con số nhảy như ai ấn nút._
     ~ follow(90000)
     ~ cd_uy(5)
     ~ qh("dan_dau_tu", 8)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
-* [🤝 "{dan_dau_tu} nói đúng đó. Ngân, em làm theo ảnh đi."]
+* [🤝 "{dan_dau_tu} nói đúng đó. {hong_hot}, em làm theo ảnh đi."]
     hong_hot: Ok để em lên bài liền!
     ~ follow(40000)
     ~ qh("dan_dau_tu", 5)
 * [😶 "Mấy đứa lo truyền thông. Chị lo sân khấu thôi."]
     _Bạn về sớm. Clip vẫn lên, nhưng không ai đẩy._
     ~ cd_nk(-5)
-- dan_dau_tu: Mà Hương… em có muốn nghe về Hồng… à thôi, chưa có. Chưa có gì.
+- dan_dau_tu: Mà {chi_dai}… em có muốn nghe về Hồng… à thôi, chưa có. Chưa có gì.
 chi_dai: Chưa có gì là sao anh?
 dan_dau_tu: Không không. Lần này là lên thật. À mà anh nói số liệu thôi.
 -> END
@@ -411,7 +411,7 @@ _Mốc 1: 50.000 người theo dõi. Cả công ty nhìn vào con số trên mà
 giam_doc: {nguoi_theo_doi} người theo dõi! Vượt mốc! Cả nhà là "the best team" của anh!
 _{giam_doc} rót nước ngọt mời cả phòng. Nước ngọt mua từ quỹ trà sữa. {ke_toan} nhìn theo từng cái ly._
 * [😇 "Mốc đầu thôi sếp. Còn ba mốc với một đêm."]
-    giam_doc: Đúng! Em Hương lúc nào cũng "realistic"!
+    giam_doc: Đúng! Em {chi_dai} lúc nào cũng "realistic"!
     ~ cd_uy(2)
 * [🍚 "Tối nay về nhà chị ăn cơm, đứa nào rảnh đi chung."]
     _{thuc_tap_sinh} giơ tay đầu tiên. {thanh_xin_nghi} giơ tay thứ hai, dù ngày mai xin nghỉ._
@@ -442,7 +442,7 @@ _Đồng hồ chỉ 17:29._
     ~ qh("thuc_tap_sinh", 5)
 * [💬 Giơ tay: "Sếp, em góp ý 1 câu: tụi em cần ngân sách, hông cần lửa."]
     thanh_ninh: Dạ chị ơi, sếp đang truyền cảm hứng mà chị…
-    giam_doc: Không, không. Để em Hương nói. Anh "open mind" mà.
+    giam_doc: Không, không. Để em {chi_dai} nói. Anh "open mind" mà.
     _Bạn nói đúng 2 phút. Cuộc họp kết thúc sớm 1 tiếng. {giam_doc} không vui, nhưng ghi chép._
     ~ cd_uy(5)
     ~ cd_td(3)

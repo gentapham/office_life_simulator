@@ -21,12 +21,12 @@ _Chữ viết vội, nghiêng, có một vết cà phê ở góc. Bạn nhìn t�
     _Trà sữa ngọt. Giấc ngủ cũng ngọt. Tờ giấy vẫn dán trên nắp ly, bị bạn úp mặt lên._
 * [🏃 Cầm ly lên tầng 2 cảm ơn.]
     _Bạn leo cầu thang, tóc tổ quạ, mũ len lệch, mặt in phím "J". Ở cửa phòng họp, {quan_ly_idol} đang nói chuyện bằng hai điện thoại cùng lúc._
-    quan_ly_idol: *(che một điện thoại)* Ủa Lĩnh dậy rồi hả? Uống chưa em? Teaser nha, chiều nay. *(quay lại điện thoại)* Dạ không, em nói với người khác…
+    quan_ly_idol: *(che một điện thoại)* Ủa {editor} dậy rồi hả? Uống chưa em? Teaser nha, chiều nay. *(quay lại điện thoại)* Dạ không, em nói với người khác…
     _Bạn đứng đó, giơ ly trà sữa lên như cụng ly với không khí. Rồi đi xuống._
     ~ ed_can(2)
     ~ qh("quan_ly_idol", 3)
     ~ cang_thang(5)
-- _Ở góc màn hình, bạn mở thư mục tên "Thái". Thêm vào đó một file mới: ảnh chụp tờ giấy note. Rồi đóng thư mục lại._
+- _Ở góc màn hình, bạn mở thư mục tên "{quan_ly_idol}". Thêm vào đó một file mới: ảnh chụp tờ giấy note. Rồi đóng thư mục lại._
 -> END
 
 // ------------------------------------------------------------
@@ -34,7 +34,7 @@ _Chữ viết vội, nghiêng, có một vết cà phê ở góc. Bạn nhìn t�
 # ngay:1 # gio:14:00 # noi:pantry
 _Ngày Cà phê Quốc tế. Máy pha cà phê treo biển "HỎNG. ĐỪNG ĐẬP". Với bạn, đây không phải sự cố. Đây là thảm họa nhân đạo._
 _Giữa pantry, cả công ty đang mừng bác {bac_bao_ve} nhân Ngày Người cao tuổi. Bác đỏ mặt, tay cầm tấm thiệp._
-chi_dai: Lĩnh! Ký vô thiệp cho bác đi. Mà sao mặt em như xác ướp vậy?
+chi_dai: {editor}! Ký vô thiệp cho bác đi. Mà sao mặt em như xác ướp vậy?
 _Bạn cầm bút, ký. Chữ ký trượt khỏi thiệp, kéo dài ra mặt bàn._
 thuc_tap_sinh: *(lao vào, tay ôm khay cà phê)* Dạ anh {editor}! Máy hỏng nên em chạy ra quán ạ! Đen đá không đường của anh nè!
 * [😇 "Anh cứu em một mạng. Đêm nay em dựng thêm phụ đề giùm anh."]
@@ -82,7 +82,7 @@ _Teaser cho {quan_ly_idol}. 30 giây. Siêu Nhân Hồng ký tên, nhạc dồn,
 === editor_0210_hop_chien_dich ===
 # ngay:2 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp chiến dịch lúc 8 giờ 30. Với bạn, 8 giờ 30 là nửa đêm. {chi_dai} phải xách bạn từ phòng dựng lên._
-truong_phong: MV đầu tiên của Siêu Nhân Hồng ra mắt ngày 9/10. Lĩnh dựng nhé. Tớ… à anh sẽ giám sát.
+truong_phong: MV đầu tiên của Siêu Nhân Hồng ra mắt ngày 9/10. {editor} dựng nhé. Tớ… à anh sẽ giám sát.
 _Bạn nhìn lịch trên điện thoại. Hôm nay mùng 2. Ra mắt mùng 9. Bảy ngày. Bảy đêm._
 _Bạn ngáp. Một cái ngáp dài tới mức {thuc_tap_sinh} ngồi bên cạnh cũng ngáp theo._
 * [😴 Ngủ Gật Chiến Lược: nhắm mắt, gật đầu mỗi khi {truong_phong} ngừng nói.]
@@ -91,14 +91,14 @@ _Bạn ngáp. Một cái ngáp dài tới mức {thuc_tap_sinh} ngồi bên cạ
         ~ nghi(15)
         ~ cang_thang(-5)
     - else:
-        truong_phong: Lĩnh, em thấy ý tưởng của bạn {thuc_tap_sinh} thế nào?
+        truong_phong: {editor}, em thấy ý tưởng của bạn {thuc_tap_sinh} thế nào?
         _Bạn mở mắt. Không biết ý tưởng nào. Cả phòng nhìn bạn._
         editor: Dạ… đợi render xong…
         ~ qh("truong_phong", -5)
         ~ cang_thang(10)
     }
 * [✋ "Anh {truong_phong}, MV cần quay xong trước ngày 6 thì em mới kịp. Không thì em xin lùi."]
-    truong_phong: Ừ… thế mình take note lại nhé. Vũ, cậu xếp lịch quay đi.
+    truong_phong: Ừ… thế mình take note lại nhé. {chua_te_deadline}, cậu xếp lịch quay đi.
     chua_te_deadline: *(lướt Tóp-tóp)* Còn sớm mà anh. Chill.
     ~ uy_tin = uy_tin + 3
     ~ ed_can(2)

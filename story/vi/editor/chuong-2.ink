@@ -8,7 +8,7 @@
 _Ngày Nhà giáo Thế giới. Bạn tới công ty lúc 13 giờ, đúng giờ cú. Trên bàn phím có một bông hồng và một tấm thiệp viết tay._
 _"Dạ em cảm ơn anh {editor} đã dạy em bấm nút render ạ. Em {thuc_tap_sinh}."_
 _Bạn có dạy thật. Một lần. Lúc 2 giờ sáng, khi {thuc_tap_sinh} ở lại photo tài liệu, và bạn chỉ cho anh ấy phím tắt để xuất file._
-_Tin nhắn của {truong_phong} gửi lúc 8:31: "Lĩnh vắng họp giao ban. Anh note lại: MV cần thêm cảnh anh chỉ tay nhé."_
+_Tin nhắn của {truong_phong} gửi lúc 8:31: "{editor} vắng họp giao ban. Anh note lại: MV cần thêm cảnh anh chỉ tay nhé."_
 * [🤝 Qua bàn {thuc_tap_sinh}: "Tối nay anh rảnh hông? Em dạy anh soát phụ đề."]
     thuc_tap_sinh: Dạ rảnh ạ! Em rảnh cả đời ạ!
     ~ qh("thuc_tap_sinh", 15)
@@ -29,7 +29,7 @@ _Tin nhắn của {truong_phong} gửi lúc 8:31: "Lĩnh vắng họp giao ban. 
 # ngay:6 # gio:15:30 # noi:phong_dung_phim # bat_buoc
 _Buổi chụp poster sáng nay bể kèo: {sieu_nhan_hong} bỏ ngang để đi giúp một bà cụ đẩy xe chè. Cả đoàn ngồi chờ ba tiếng._
 _Nhưng {hong_hot} quay được hết bằng điện thoại. 4 phút rung lắc, sai màu, có cả ngón tay {hong_hot} che một góc._
-quan_ly_idol: *(xông vào phòng dựng, hai điện thoại trên tay)* Lĩnh! Cái clip bà cụ, em cứu được hông? Phải biến cái này thành PR trước 6 giờ chiều. Đừng ai đăng gì hết khi chưa có bản của em!
+quan_ly_idol: *(xông vào phòng dựng, hai điện thoại trên tay)* {editor}! Cái clip bà cụ, em cứu được hông? Phải biến cái này thành PR trước 6 giờ chiều. Đừng ai đăng gì hết khi chưa có bản của em!
 * [🎨 Cứu Màu, chống rung, cắt còn 59 giây, nhạc piano nhẹ. Không thêm chữ.]
     ~ follow(30000)
     ~ uy_tin = uy_tin + 5
@@ -129,13 +129,13 @@ _Tin nhắn {truong_phong}, 22:14: "Em cho cảnh anh đứng chỉ tay vào b�
 _10 giờ. Phòng họp tầng 2. {truong_phong} đứng trước màn hình lớn, tay cầm bút laser._
 truong_phong: Cái MV này anh làm 3 đêm liền đấy mọi người ạ. Nhất là đoạn chuyển cảnh theo nhạc, anh tính từng khung hình.
 _Cả phòng vỗ tay. Bạn ngồi hàng cuối, mũ len, quầng thâm, cốc RENDER._
-chua_te_deadline: *(nói nhỏ)* Ủa Lĩnh, đoạn đó ông dựng mà?
+chua_te_deadline: *(nói nhỏ)* Ủa {editor}, đoạn đó ông dựng mà?
 * [😶 "Dạ… render xong là xong mà anh."]
     ~ ed_vo(5)
     _Không có gì xảy ra. {chua_te_deadline} lắc đầu, quay lại lướt Tóp-tóp._
 * {ed_dau_cu_chung_minh >= 1} [🦉 "Anh {truong_phong} ơi, ở giây 2:47 có con cú nhỏ đó. Anh biết vì sao hông?"]
     _Cả phòng tua lại. Dừng ở giây 2:47. Một con cú đeo tai nghe, nhỏ xíu, ở đầu ngón tay {truong_phong}._
-    truong_phong: À… cái đấy là… bạn Lĩnh hỗ trợ anh.
+    truong_phong: À… cái đấy là… bạn {editor} hỗ trợ anh.
     hong_hot: Hỗ trợ cả con cú luôn hả anh?
     ~ ed_vo(-15)
     ~ qh("truong_phong", -20)
@@ -163,8 +163,8 @@ chua_te_deadline: *(nói nhỏ)* Ủa Lĩnh, đoạn đó ông dựng mà?
 // ------------------------------------------------------------
 === editor_0910_file_thang_6 ===
 # ngay:9 # gio:15:00 # noi:phong_dung_phim # bat_buoc
-giam_doc: *(ghé vào phòng dựng)* Lĩnh à, em lấy giùm anh mấy cảnh dự án quảng cáo tháng 6 nhé. Cái hợp đồng 800 triệu ấy. Anh cần cho clip "16 năm".
-_Bạn lục máy chủ. Thư mục "2026_06_QC". Trống. Chỉ có một file text: "để tạm, mai chép lại – Vũ"._
+giam_doc: *(ghé vào phòng dựng)* {editor} à, em lấy giùm anh mấy cảnh dự án quảng cáo tháng 6 nhé. Cái hợp đồng 800 triệu ấy. Anh cần cho clip "16 năm".
+_Bạn lục máy chủ. Thư mục "2026_06_QC". Trống. Chỉ có một file text: "để tạm, mai chép lại – {chua_te_deadline}"._
 _Bạn quay sang. {chua_te_deadline} đang đứng ở cửa, cốc cà phê sữa đá trên tay. Hai người nhìn nhau rất lâu._
 * [💬 "File gốc tháng 6 đâu ông?"]
     chua_te_deadline: *(nhìn trần nhà)* Còn sớm mà. Sếp cần tới 20/10 mới cần mà. Chill.
@@ -284,7 +284,7 @@ _Slide hiện lên: "Báo cáo tháng 10 – Người thực hiện: {truong_pho
 _Lương về trễ hai ngày. Điện thoại cả tầng rung cùng lúc. Group Zalo-lô nổ như pháo Tết._
 _Ở quầy lễ tân, thẻ phụ của {con_ong_chau_cha} bị từ chối. {thuc_tap_sinh} đánh rơi một tấm thẻ hạng kim cương. Một sáng thứ 2 nhiều chất liệu._
 _Bạn thì đang ngủ trên bàn. Lương về hay không, bạn đã có tiền quảng cáo từ thứ 7._
-hong_hot: *(kéo ghế ngồi cạnh bạn)* Ủa Lĩnh. Cả công ty than lương trễ mà ông hông than gì hết. Ông có nguồn thu bí mật hả?
+hong_hot: *(kéo ghế ngồi cạnh bạn)* Ủa {editor}. Cả công ty than lương trễ mà ông hông than gì hết. Ông có nguồn thu bí mật hả?
 * [😴 "Dạ… đợi render xong…"]
     hong_hot: Render gì? Render tiền hả? *(nheo mắt)* Tui để ý ông nha.
     ~ ed_lo(5)

@@ -27,9 +27,9 @@ _Ở hàng ghế giữa, {hong_hot} quay sang, nheo mắt nhìn bạn ngủ, r�
 === editor_1710_tro_choi_tap_the ===
 # ngay:17 # gio:15:00 # noi:vung_tau_bai_bien # bat_buoc
 _Trò chơi tập thể trên bãi biển, kịch bản của {bien_kich}: "Truy Tìm Kho Báu Hồng". Bạn nằm dưới cái dù, đội mũ len giữa trời 33 độ._
-chi_dai: Lĩnh! Dậy! *(lần thứ nhất)*
+chi_dai: {editor}! Dậy! *(lần thứ nhất)*
 _Bạn ngồi dậy. Nằm xuống. {chi_dai} quay lại._
-chi_dai: Lĩnh! *(lần thứ hai)* … Lĩnh! *(lần thứ ba)* … LĨNH! *(lần thứ tư, kèm xách cổ áo)*
+chi_dai: {editor}! *(lần thứ hai)* … {editor}! *(lần thứ ba)* … LĨNH! *(lần thứ tư, kèm xách cổ áo)*
 _Ở xa, {dan_dau_tu} giơ điện thoại lên trời: "Hồng Coin X10! Tối nay anh bao hải sản!"_
 * [🏃 Chơi thật. Chạy trên cát như cú bị lôi ra ánh nắng.]
     ~ qh("chi_dai", 10)
@@ -61,11 +61,11 @@ _Lúc nãy, {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứ
 _Giờ lửa đã nhỏ. {idol_het_thoi} say, ngủ gục trên vai {quan_ly_idol}. {quan_ly_idol} ngồi im, không động đậy, sợ làm người kia thức._
 _Gió biển lạnh. Bạn ngồi bên kia đống lửa. Bạn nhìn hai người qua ngọn lửa, như nhìn một khung hình đã dựng sẵn._
 _Bạn đứng dậy, vào lều lấy cái chăn. Đi vòng qua đống lửa. Đắp lên cho cả hai._
-quan_ly_idol: *(nói thật nhỏ, sợ {idol_het_thoi} thức)* Cảm ơn em nha, Lĩnh.
+quan_ly_idol: *(nói thật nhỏ, sợ {idol_het_thoi} thức)* Cảm ơn em nha, {editor}.
 { ed_can_dam >= 30:
     quan_ly_idol: *(ngập ngừng)* Em… cũng ngồi đây đi. Lửa còn ấm.
 - else:
-    quan_ly_idol: À mà Lĩnh, mai dựng anh cái clip {sieu_nhan_hong} kéo lưới nha, gấp.
+    quan_ly_idol: À mà {editor}, mai dựng anh cái clip {sieu_nhan_hong} kéo lưới nha, gấp.
 }
 * [🌙 "Dạ. Em đi ngủ trước." Về lều.]
     ~ ed_can(-2)
@@ -106,7 +106,7 @@ _Đồng hồ báo thức trên điện thoại hiện câu hỏi bạn tự đ�
 }
 _Đường chân trời ửng hồng. Hồng thật, không phải hồng Siêu Nhân, không cần cứu màu._
 _Có tiếng bước chân trên cát. {quan_ly_idol}, một điện thoại áp tai, vừa nói "Dạ dạ" vừa đi về phía biển. Anh ấy cúp máy. Đứng cạnh bạn._
-quan_ly_idol: Ủa Lĩnh? Em dậy sớm vậy?
+quan_ly_idol: Ủa {editor}? Em dậy sớm vậy?
 * [🦉 "Dạ, em chưa ngủ."]
     quan_ly_idol: *(cười)* Giống anh.
     _Hai người đứng im nhìn mặt trời lên. Mười phút. Không ai nói thêm gì. Mười phút đó dài hơn mọi bản dựng bạn từng làm._
@@ -130,14 +130,14 @@ quan_ly_idol: Ủa Lĩnh? Em dậy sớm vậy?
     ~ ed_nguoi_dung_dem = true
     ~ ed_can(10)
     ~ qh("quan_ly_idol", 15)
-- _Mặt trời lên hẳn. {quan_ly_idol} lại nghe máy. Bạn chụp một tấm ảnh đường chân trời, không có ai trong đó, rồi lưu vào thư mục "Thái"._
+- _Mặt trời lên hẳn. {quan_ly_idol} lại nghe máy. Bạn chụp một tấm ảnh đường chân trời, không có ai trong đó, rồi lưu vào thư mục "{quan_ly_idol}"._
 -> END
 
 // ------------------------------------------------------------
 === editor_1810_ve_thanh_pho ===
 # ngay:18 # gio:16:30 # noi:xe_buyt_doan # bat_buoc
 _Chuyến xe về. Ai cũng giận ai. Hồng Coin về 0, {dan_dau_tu} ngồi im như tượng. {con_ong_chau_cha} phát hiện căn penthouse của mình đang bị rao bán trên mạng._
-_{truong_phong} nhắn group: "Thứ 3 sinh nhật công ty 16 tuổi. Cần video '16 năm G-Entertainment'. Lĩnh dựng nhé. Tư liệu tự tìm."_
+_{truong_phong} nhắn group: "Thứ 3 sinh nhật công ty 16 tuổi. Cần video '16 năm G-Entertainment'. {editor} dựng nhé. Tư liệu tự tìm."_
 _Tư liệu tự tìm. Công ty này không có nổi một thư mục ảnh trước năm 2019._
 * [💬 Nhắn {it}: "Anh ơi, ổ cứng 'KHÔNG ĐƯỢC MỞ' của anh… có ảnh cũ hông?"]
     _Đã xem. Hai tiếng sau: "Có. Không mở."_
@@ -272,7 +272,7 @@ quan_ly_idol: Ở đây tối nhất. Anh trốn điện thoại xíu.
     ~ qh("ke_toan", 10)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
     ke_toan: *(nhận clip, gật đầu)* Video có ngày giờ. Tốt hơn tờ giấy ăn.
-- quan_ly_idol: Mà Lĩnh… em có thương ai chưa?
+- quan_ly_idol: Mà {editor}… em có thương ai chưa?
 _Câu hỏi rơi xuống giữa tiếng nhạc như một khung hình bị đứng. Bạn nghe tim mình lag._
 * [😶 "Dạ… chưa." (Nói dối.)]
     quan_ly_idol: Ờ. Chưa cũng tốt. Thương rồi mệt lắm. *(nhìn về phía {idol_het_thoi})*

@@ -347,3 +347,32 @@ chu_tiem_cam_do: Chuộc hả con? Chuộc thì chính chủ phải ký. Con là
     _Bạn chụp lại tấm hình cái cúp trong tủ kính. Không biết để làm gì._
     ~ cang_thang(5)
 - -> END
+
+// ------------------------------------------------------------
+=== quan_ly_idol_1210_quan_oc ===
+# ngay:12 # gio:21:30 # noi:quan_oc_dem
+_Quán Ốc Đêm. Lương về, cả hẻm đi ăn ốc. Bàn công ty kê ba cái nối nhau. Bạn ngồi đầu bàn, hai điện thoại úp cạnh dĩa ốc len xào dừa._
+sales: Anh Thái! Tin chị đi, tháng sau chị book anh Phát show 50 triệu bên BTT Global! Anh làm hợp đồng trước giùm chị nha!
+_Phát ngồi đối diện, mắt sáng lên. 50 triệu. Gần đủ trả hết nợ._
+_Bạn làm showbiz mười hai năm. Bạn biết show 50 triệu trông như thế nào. Nó không trông như {sales} lúc 9 giờ tối sau ba lon bia._
+* [💰 "Ok em. Gửi anh hợp đồng có mộc đỏ, đặt cọc 30%. Anh ký liền."]
+    sales: *(cười tươi, nhìn đi chỗ khác)* Dạ… để chị nhậu với bên đó rồi gửi anh.
+    _Phát nhìn bạn, hiểu. Ánh mắt sáng lên lúc nãy tắt dần. Nhưng Phát gật đầu với bạn, như cảm ơn vì không để mình hy vọng lâu._
+    ~ qh("sales", -3)
+    ~ qh("idol_het_thoi", 3)
+    ~ uy_tin = uy_tin + 2
+* [😇 "Em book được thì anh mừng. Mà Phát, ăn ốc đi em, đừng chờ."]
+    idol_het_thoi: *(gắp con ốc, cười)* Dạ. Em hông chờ đâu. Em quen rồi.
+    _"Em quen rồi." Bạn nghe câu đó và uống hết ly trà đá._
+    ~ qh("sales", 2)
+    ~ thai_gk(-2)
+* [🎤 "Thôi, khỏi BTT. Phát, hát cho quán nghe một bài. Cát-xê là dĩa nghêu."]
+    _Phát đứng dậy hát "Công Viên". Bàn bên là mấy chú xe ôm, hát to nhất. Cô chủ quán tặng thêm dĩa nghêu._
+    _Bạn vỗ tay to nhất quán. Không ai để ý. {editor} ngồi cuối bàn để ý._
+    ~ qh("idol_het_thoi", 8)
+    ~ thai_gk(-5)
+    ~ an(10)
+- ~ an(35)
+~ tien_cong(-150000)
+~ thai_p(-5)
+-> END

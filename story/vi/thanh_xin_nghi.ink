@@ -10,6 +10,7 @@ INCLUDE thanh_xin_nghi/chuong-3.ink
 INCLUDE thanh_xin_nghi/chuong-4.ink
 INCLUDE thanh_xin_nghi/chuong-5.ink
 INCLUDE thanh_xin_nghi/chuong-6.ink
+INCLUDE thanh_xin_nghi/nhan-vat.ink
 INCLUDE thanh_xin_nghi/minigame.ink
 INCLUDE thanh_xin_nghi/ket-thuc.ink
 

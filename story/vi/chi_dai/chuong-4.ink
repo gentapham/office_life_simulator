@@ -6,8 +6,8 @@
 === chi_dai_1710_xe_di_vung_tau ===
 # ngay:17 # gio:06:00 # noi:cong_cong_ty # bat_buoc
 _6 giờ sáng. Xe 29 chỗ đậu trước cổng. Bạn đứng ở cửa xe, cầm danh sách, cầm còi. Ai lên xe cũng phải đi qua bạn._
-_Bác Bình đứng ở chòi, vẫy tay. Bác ở lại trực, như mọi năm._
-bac_bao_ve: Đi cẩn thận nhé. Đừng để anh Thắng uống nhiều.
+_Bác {bac_bao_ve} đứng ở chòi, vẫy tay. Bác ở lại trực, như mọi năm._
+bac_bao_ve: Đi cẩn thận nhé. Đừng để anh {giam_doc} uống nhiều.
 _{hr} đưa bạn tờ danh sách xếp phòng. Bạn liếc qua. Phòng 204: "{chi_dai} – {thanh_ninh}"._
 hr: Anh xếp theo thuật toán "gắn kết đội nhóm" đó em. Anh chỉ muốn hai em hiểu nhau thôi.
 * [🦁 Cầm bút gạch luôn tại chỗ: "Phòng 204: {chi_dai} – {ke_toan}. Xong."]
@@ -137,7 +137,7 @@ _Cả vòng tròn im lặng. Bên kia đống lửa, {ran_doc} ngồi bất đ�
     _Bạn nhìn {ran_doc}. Tay {ran_doc} siết chặt cái ly nhựa tới móp méo. Bạn nhớ tấm ảnh xóm Cây Me._
 }
 _Chai quay tiếp. Dừng ở bạn. {hong_hot} giành hỏi:_
-hong_hot: Chị Hương! Vụ tô ốc ở Quán Ốc Đêm năm đó có thật hông?!
+hong_hot: Chị {chi_dai}! Vụ tô ốc ở Quán Ốc Đêm năm đó có thật hông?!
 * [🦁 Kể thật. Kể hết.]
     chi_dai: Thật. Năm chị 20 tuổi. Thằng đó bắt cá hai tay, bạn chị khóc ba ngày. Chị úp nguyên tô ốc len lên đầu nó. Nước cốt dừa chảy xuống tới cằm.
     chi_dai: Nó đứng dậy, nói "Em sẽ thành người thành công, chị sẽ hối hận". Chị trả tiền tô ốc rồi về.
@@ -149,10 +149,10 @@ hong_hot: Chị Hương! Vụ tô ốc ở Quán Ốc Đêm năm đó có thật
     hong_hot: Nửa tô cũng huyền thoại rồi chị ơi!
     ~ cd_ke_vu_oc = "giam"
     ~ cd_uy(5)
-* [📞 Bấm điện thoại gọi Bác Bình, bật loa ngoài: "Bác, vụ tô ốc có thật hông bác?"]
+* [📞 Bấm điện thoại gọi Bác {bac_bao_ve}, bật loa ngoài: "Bác, vụ tô ốc có thật hông bác?"]
     _Chuông đổ 5 hồi. Bác đang ngủ. Rồi một giọng Bắc ngái ngủ vang lên giữa đống lửa:_
     bac_bao_ve: Thật. Bác ở đó. Bác ngồi bàn bên. Bác còn nhớ mặt thằng kia. Ngủ đi các cháu.
-    _Tút tút. Cả vòng tròn nổ tung. Bác Bình vừa thành huyền thoại thứ hai của đêm nay._
+    _Tút tút. Cả vòng tròn nổ tung. Bác {bac_bao_ve} vừa thành huyền thoại thứ hai của đêm nay._
     ~ cd_ke_vu_oc = "bac_binh"
     ~ cd_hoi_bac_binh = true
     ~ cd_uy(8)
@@ -239,14 +239,14 @@ _Họp giao ban sau Vũng Tàu. Không ai nhìn mặt ai. {giam_doc} vào phòng
 giam_doc: Các em, hôm qua anh… có nói gì không nhỉ? Anh hơi mệt.
 _Hai mươi người cùng nhìn lên trần nhà._
 truong_phong: Dạ, mình chuyển sang nội dung chuẩn bị 20/10 nhé. Sinh nhật công ty 16 tuổi, kiêm Ngày Phụ nữ.
-giam_doc: Đúng! Hương lo liên hoan nhé. Còn logo kỷ niệm 16 năm, Quỳnh làm giúp anh. Bản thứ… thứ mấy rồi em?
+giam_doc: Đúng! {chi_dai} lo liên hoan nhé. Còn logo kỷ niệm 16 năm, {designer} làm giúp anh. Bản thứ… thứ mấy rồi em?
 designer: Thứ 37 anh.
 * [🦁 "Sếp. Liên hoan em lo. Nhưng sếp nhớ lời hứa hôm qua. Cả công ty nhớ."]
     giam_doc: *(ho khan)* Anh… anh sẽ "review" lại nhé.
     ~ cd_uy(5)
     ~ qh("giam_doc", -3)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
-* [🤝 Giơ tay: "Em lo liên hoan. Nhưng Quỳnh làm logo tới bản 37 rồi, sếp chốt hôm nay giùm em."]
+* [🤝 Giơ tay: "Em lo liên hoan. Nhưng {designer} làm logo tới bản 37 rồi, sếp chốt hôm nay giùm em."]
     designer: *(nhìn bạn như nhìn ân nhân)*
     giam_doc: Ờ… thì… mai anh chốt. Mai sinh nhật mà.
     ~ qh("designer", 10)
@@ -259,7 +259,7 @@ designer: Thứ 37 anh.
 === chi_dai_1910_phong_giam_doc ===
 # ngay:19 # gio:16:00 # noi:phong_giam_doc
 _Bạn mang dự toán Đêm Hồng lần thứ 6 lên phòng giám đốc. {giam_doc} ngồi một mình, nhìn tờ giấy báo ngân hàng trên bàn. Thấy bạn, anh úp vội nó xuống._
-giam_doc: Ơ, Hương. Dự toán à? Em để đó anh xem.
+giam_doc: Ơ, {chi_dai}. Dự toán à? Em để đó anh xem.
 * [👊 Đập bàn: "Sếp xem bây giờ. Đêm Hồng còn 12 ngày."]
     ~ cd_dap_ban()
     _RẦM. Tờ giấy úp trên bàn lật ngửa. "Thông báo đến hạn: 15/11/2026."_
@@ -303,8 +303,8 @@ _Anh nói "anh Genta" như nói tên một người thầy._
 // ------------------------------------------------------------
 === chi_dai_1910_hoi_bac_binh ===
 # ngay:19 # gio:17:45 # noi:choi_bao_ve
-_Chòi bảo vệ. Bác Bình đang dò đài radio. {cho} nằm dưới chân, gặm con gà cao su… à không, con gà cao su vẫn nằm sau tủ mạng. {cho} đang gặm cái dép._
-bac_bao_ve: Cháu Hương. Ngồi đi. Trà đá nhé.
+_Chòi bảo vệ. Bác {bac_bao_ve} đang dò đài radio. {cho} nằm dưới chân, gặm con gà cao su… à không, con gà cao su vẫn nằm sau tủ mạng. {cho} đang gặm cái dép._
+bac_bao_ve: Cháu {chi_dai}. Ngồi đi. Trà đá nhé.
 { cd_tim_thay_anh_cu:
     -> co_anh
 - else:
@@ -356,11 +356,11 @@ thuc_tap_sinh: Dạ em tặng chị ạ. Chị là "chị Đại" của em ạ.
 * [🧂 "Em tặng chị bông to nhất, mấy chị kia có buồn hông?"]
     _Sáu chị em còn lại cùng giơ bông hồng nhỏ hơn lên. {sales}: "Có chứ!" Cả phòng cười._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 2
-- _Trên tầng 2, {giam_doc} gọi to: "Quỳnh ơi! Logo 16 năm, bản 38! Anh nghĩ kỹ rồi… mình dùng lại logo gốc năm 2010 nhé!"_
+- _Trên tầng 2, {giam_doc} gọi to: "{designer} ơi! Logo 16 năm, bản 38! Anh nghĩ kỹ rồi… mình dùng lại logo gốc năm 2010 nhé!"_
 _{designer} đứng sững. Bó cúc vàng tuột khỏi tay._
 designer: Ba mươi tám bản… để quay về bản số 1…
-* [🛡️ Đi lên tầng 2: "Sếp. Logo gốc thì logo gốc. Nhưng Quỳnh được ghi tên 'thiết kế lại bản kỷ niệm'. Và nghỉ chiều nay."]
-    giam_doc: Ơ… được. Được em. Quỳnh nghỉ chiều nhé. "Well done".
+* [🛡️ Đi lên tầng 2: "Sếp. Logo gốc thì logo gốc. Nhưng {designer} được ghi tên 'thiết kế lại bản kỷ niệm'. Và nghỉ chiều nay."]
+    giam_doc: Ơ… được. Được em. {designer} nghỉ chiều nhé. "Well done".
     _{designer} ngồi xuống bậc cầu thang, ôm mặt, cười như khóc._
     ~ qh("designer", 12)
     ~ cd_bao_ke(de_designer)
@@ -375,22 +375,22 @@ designer: Ba mươi tám bản… để quay về bản số 1…
 // ------------------------------------------------------------
 === chi_dai_2010_thu_g ===
 # ngay:20 # gio:17:00 # noi:choi_bao_ve # bat_buoc
-_5 giờ chiều. Bộ đàm của bạn rè rè. Giọng Bác Bình, chậm, khàn: "Cháu Hương. Xuống chòi bác một tí."_
+_5 giờ chiều. Bộ đàm của bạn rè rè. Giọng Bác {bac_bao_ve}, chậm, khàn: "Cháu {chi_dai}. Xuống chòi bác một tí."_
 _Trên bàn trong chòi có một lá thư tay, giấy kẻ ô học sinh. Ký tên một chữ: "G". Cạnh đó là một phong bì nhỏ dán kín, ngoài ghi: "Chỉ mở khi công ty sắp sập."_
 bac_bao_ve: Thư của… một người bạn cũ. Người làm ra cái công ty này. Mỗi năm ngày này lại có một lá.
 bac_bao_ve: Năm nay ông ấy viết cho cả công ty. Bác đọc trước mọi người, hay để yên? Bác hỏi cháu, vì cháu là người hiểu mấy đứa nhỏ nhất.
 _Bạn liếc đoạn đầu: "Gửi mấy đứa nhỏ ở G. 16 năm rồi. Tôi không cần biết nó lời hay lỗ…"_
 * [📢 "Đọc đi bác. Tối nay ở liên hoan. Mấy đứa nhỏ cần nghe."]
     bac_bao_ve: *(gật đầu chậm)* Ừ. Thế thì bác đọc. Đọc xong rồi thì… người ta biết bác là ai đấy.
-    chi_dai: Thì người ta biết bác là bác Bình. Có gì đâu.
+    chi_dai: Thì người ta biết bác là bác {bac_bao_ve}. Có gì đâu.
     ~ cd_khuyen_doc_thu = "doc"
     ~ qh("bac_bao_ve", 8)
 * [🤫 "Bác giữ đi. Giờ này mà cả công ty biết có người ở xa đang theo dõi, tụi nhỏ hoảng."]
     bac_bao_ve: Ừ. Cháu nói có lý. Bác giữ.
     ~ cd_khuyen_doc_thu = "giu"
     ~ qh("bac_bao_ve", 3)
-* [🤝 "Bác đưa sếp Thắng đọc riêng. Ổng cần nghe nhất."]
-    bac_bao_ve: *(nhìn lên tầng 2)* Anh Thắng ấy à… Ừ. Có khi đúng.
+* [🤝 "Bác đưa sếp {giam_doc} đọc riêng. Ổng cần nghe nhất."]
+    bac_bao_ve: *(nhìn lên tầng 2)* Anh {giam_doc} ấy à… Ừ. Có khi đúng.
     ~ cd_khuyen_doc_thu = "thang"
     ~ qh("bac_bao_ve", 5)
     ~ qh("giam_doc", 5)
@@ -403,7 +403,7 @@ bac_bao_ve: Cái này… bác chỉ là người giữ. Người quyết là ôn
 # ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
 _Liên hoan sinh nhật công ty ở Quán Ốc Đêm. Bạn chọn chỗ này vì rẻ, vì gần, và vì… bạn chưa quay lại đây từ năm 20 tuổi._
 _Chủ quán nhìn thấy bạn, đánh rơi cái vá. Rồi tự động mang ra một đĩa ốc len xào dừa: "Quán mời. Lâu quá rồi."_
-_Bàn dài 23 chỗ. Một cái bánh kem sinh nhật 16 nến. {cho} được Bác Bình dắt theo, buộc ở gốc cây, cách bánh đúng 5 mét._
+_Bàn dài 23 chỗ. Một cái bánh kem sinh nhật 16 nến. {cho} được Bác {bac_bao_ve} dắt theo, buộc ở gốc cây, cách bánh đúng 5 mét._
 -> chi_dai_mg_lien_hoan_mo_dau
 
 // ------------------------------------------------------------
@@ -412,9 +412,9 @@ _Bàn dài 23 chỗ. Một cái bánh kem sinh nhật 16 nến. {cho} được B
 { cd_khuyen_doc_thu != "doc":
     -> END
 }
-_Bác Bình đứng dậy, gõ đũa vào ly trà. Cả quán ốc im bặt. Bác đeo kính lão, mở lá thư._
+_Bác {bac_bao_ve} đứng dậy, gõ đũa vào ly trà. Cả quán ốc im bặt. Bác đeo kính lão, mở lá thư._
 bac_bao_ve: Gửi mấy đứa nhỏ ở G. 16 năm rồi. Tôi không cần biết nó lời hay lỗ. Tôi chỉ muốn biết mấy đứa nhỏ còn thương nhau không.
-bac_bao_ve: Thắng, em vẫn hay nhắn tin khuya phải không. Thôi đi em. Để mấy đứa nó ngủ.
+bac_bao_ve: {giam_doc}, em vẫn hay nhắn tin khuya phải không. Thôi đi em. Để mấy đứa nó ngủ.
 _{giam_doc} đứng hình. Cả quán quay sang nhìn {giam_doc}. Rồi quay sang nhìn bác._
 bac_bao_ve: Ký tên: G. *(gấp thư)* Thế thôi. Bác đọc xong rồi.
 _Im lặng ba giây. Rồi {thuc_tap_sinh} vỗ tay. Rồi cả quán vỗ tay. {giam_doc} cúi đầu, lấy khăn giấy lau mắt, nói là "do ớt"._

@@ -206,6 +206,29 @@ _{hong_hot} đăng story từ xe: "Về tới rồi, ai cũng giận ai. Có đ�
     -> thanh_xin_nghi_mg_xep_lich_mo
 
 // ------------------------------------------------------------
+=== thanh_xin_nghi_1810_dem_chu_nhat ===
+# ngay:18 # gio:21:00 # noi:nha_ven_do
+_Chủ nhật, 9 giờ tối. Nhà vườn Ven Đô. Bạn đang ủi bộ đồ bán kết thì điện thoại reo. {dan_dau_tu}._
+dan_dau_tu: Sơn… em ngủ chưa? Hồng Coin… về 0 rồi em. Người tạo ôm tiền biến mất. Còn cái nịt. Cái khoản 500 ngàn của em… anh xin thêm thời gian.
+* [😇 "Anh Chương, em không đòi đâu. Anh ăn tối chưa?"]
+    dan_dau_tu: *(im lặng rất lâu)* …Chưa. Em là người đầu tiên hỏi câu đó, không hỏi tiền.
+    ~ qh("dan_dau_tu", 10)
+    _Hai người nói chuyện 20 phút. Không ai nhắc tới coin nữa._
+* [💸 "Dạ, anh trả em khi nào cũng được. Mà anh đừng đầu tư nữa nha anh."]
+    dan_dau_tu: Ừ. Lần này anh dừng thật. *(rồi nhỏ giọng)* …Trừ khi có đáy thật.
+    ~ qh("dan_dau_tu", 3)
+- _Cúp máy. Tin nhắn mới, từ cô trợ lý đài: "Bán kết cưng chọn bài chưa? Gửi chị trước thứ 3 nha."_
+* [🎶 Chọn bài ballad về người đi làm xa nhà.]
+    ~ son_mo(3)
+    _Bài của những người hay vắng nhà. Như bạn. Như anh Thái. Như anh Chương vừa gọi._
+* [🎶 Chọn "Công Viên", bản chậm.]
+    ~ son_mo(3)
+    { son_muon_vest_phat:
+        _Bài của người cho bạn mượn bộ vest. Bạn treo bộ vest lên cửa tủ, nhìn nó như nhìn một lời hứa._
+    }
+- -> END
+
+// ------------------------------------------------------------
 === thanh_xin_nghi_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban. Không ai nhìn mặt ai. {truong_phong} nhìn slide: "Chuẩn bị 20/10: sinh nhật công ty 16 tuổi + Ngày Phụ nữ"._
