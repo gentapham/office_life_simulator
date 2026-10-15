@@ -126,21 +126,28 @@ function renderDatTen(ma) {
   const vaiChon = THEO_MA[ma];
   const daDat = tenDaDat();
   const loi = h("p", { class: "form-error", role: "alert" });
-  const o = {};
-  const hang = NHAN_VAT.map(n => {
+  const o = {}, goiY = {};
+  // vai của người chơi lên đầu, Siêu Nhân Hồng (tên cố định) xuống cuối
+  const thuTu = [vaiChon, ...NHAN_VAT.filter(n => n.ma !== ma && n.ma !== TEN_CO_DINH), ...(ma === TEN_CO_DINH ? [] : [THEO_MA[TEN_CO_DINH]])];
+  const capNhatGoiY = n => {
+    const khac = o[n.ma].value.trim() !== n.ten;
+    goiY[n.ma].textContent = n.ma === TEN_CO_DINH ? "Tên cố định" : khac ? `Mặc định: ${n.ten}` : "";
+  };
+  const hang = thuTu.map(n => {
     const coDinh = n.ma === TEN_CO_DINH;
     o[n.ma] = h("input", { type: "text", id: "ten_" + n.ma, maxlength: 20, autocomplete: "off", spellcheck: "false",
-      value: coDinh ? n.ten : (daDat[n.ma] || n.ten), placeholder: n.ten, disabled: coDinh });
-    return h("label", { class: "name-row" + (n.ma === ma ? " me" : ""), for: "ten_" + n.ma },
-      h("span", { class: "name-role" }, n.vai, n.ma === ma ? h("em", {}, "Bạn") : null),
-      o[n.ma],
-      h("span", { class: "name-hint" }, coDinh ? "Tên cố định, không đổi được" : `Mặc định: ${n.ten}`));
+      value: coDinh ? n.ten : (daDat[n.ma] || n.ten), placeholder: n.ten, disabled: coDinh,
+      oninput: () => { capNhatGoiY(n); o[n.ma].removeAttribute("aria-invalid"); loi.textContent = ""; } });
+    goiY[n.ma] = h("span", { class: "name-hint" });
+    capNhatGoiY(n);
+    return h("label", { class: "name-row" + (n.ma === ma ? " me" : "") + (coDinh ? " locked" : ""), for: "ten_" + n.ma },
+      h("span", { class: "name-role" }, h("b", {}, n.vai, n.ma === ma ? h("em", {}, "Bạn") : null), h("small", {}, n.chuc)),
+      h("span", { class: "name-field" }, o[n.ma], goiY[n.ma]));
   });
   const kiemTra = () => {
     const ten = {}, gap = new Map();
-    for (const n of NHAN_VAT) {
+    for (const n of thuTu) {
       const v = o[n.ma].value.trim().replace(/\s+/g, " ");
-      o[n.ma].removeAttribute("aria-invalid");
       if (!v) return [null, n, `Chưa nhập tên cho ${n.vai}.`];
       if (!/^[\p{L}\d][\p{L}\d .'-]*$/u.test(v)) return [null, n, `Tên của ${n.vai} chỉ dùng chữ, số, khoảng trắng, dấu chấm, gạch nối.`];
       const k = v.toLocaleLowerCase("vi");
@@ -163,18 +170,16 @@ function renderDatTen(ma) {
       h("header", { class: "top" },
         h("div", { class: "role-head" }, h("div", {}, h("h2", {}, vaiChon.vai), h("p", {}, vaiChon.chuc))),
         h("div", { class: "top-actions" }, h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật"))),
-      h("section", { class: "panel name-intro" },
-        h("h3", {}, "Đặt tên nhân vật"),
-        h("p", {}, "Dùng tên mặc định để vào game ngay, hoặc tự đặt tên cho từng người trong công ty, kể cả nhân vật của bạn. Tên đã đặt được lưu lại cho các lần chơi sau."),
-        h("div", { class: "top-actions" },
-          h("button", { class: "btn primary", onclick: () => batDau(true) }, "Dùng tên mặc định"),
-          h("button", { class: "btn", onclick: () => o[ma === TEN_CO_DINH ? "ran_doc" : ma].focus() }, "Tự đặt tên"))),
       h("form", { class: "names", novalidate: true, onsubmit: e => { e.preventDefault(); batDau(false); } },
-        h("div", { class: "name-grid" }, hang),
-        loi,
-        h("div", { class: "top-actions" },
-          h("button", { class: "btn primary", type: "submit" }, "Bắt đầu với tên đã đặt"),
-          h("button", { class: "btn ghost", type: "button", onclick: () => { for (const n of NHAN_VAT) o[n.ma].value = n.ten; loi.textContent = ""; } }, "Khôi phục tên mặc định"))),
+        h("section", { class: "panel name-intro" },
+          h("h3", {}, "Đặt tên nhân vật"),
+          h("p", {}, "Giữ tên mặc định hoặc sửa tên từng người trong danh sách bên dưới, kể cả nhân vật của bạn. Tên đã đặt được lưu cho các lần chơi sau."),
+          h("div", { class: "name-actions" },
+            h("button", { class: "btn primary", type: "submit" }, "Bắt đầu với tên đã đặt"),
+            h("button", { class: "btn", type: "button", onclick: () => batDau(true) }, "Dùng tên mặc định"),
+            h("button", { class: "btn ghost", type: "button", onclick: () => { for (const n of NHAN_VAT) { o[n.ma].value = n.ten; capNhatGoiY(n); o[n.ma].removeAttribute("aria-invalid"); } loi.textContent = ""; } }, "Khôi phục tên mặc định")),
+          loi),
+        h("div", { class: "name-list" }, hang)),
     ),
   );
   window.scrollTo(0, 0);
