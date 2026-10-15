@@ -127,6 +127,7 @@ giam_doc: *(trong thang máy)* Long hả? Long! Gọi người cứu chú!
     ~ long_tl(5)
     ~ qh("it", 6)
     ~ qh("giam_doc", 5)
+    ~ qh("truong_phong", 2)
 * [🗣️ Nói vọng vào: "Chú ơi, chill đi! Có chị Hương trong đó là an toàn nhất rồi!"]
     chi_dai: *(từ trong thang máy)* Long! Ra đây chị nói chuyện!
     giam_doc: Long… đi gọi người!

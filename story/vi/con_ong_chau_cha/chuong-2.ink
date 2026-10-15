@@ -241,9 +241,10 @@ _Cả phòng quay sang. Bạn chưa bao giờ phải lo lương. Bạn có thẻ
     _Chuông đổ. Một hồi. Hai hồi. Chú không bắt máy. Bạn cười gượng: "Chú đang họp."_
     ~ long_od(-5)
 * [🤐 "Tui cũng hông biết."]
-    _Lần đầu bạn đứng chung một phía với cả phòng: phía không biết gì._
+    _Lần đầu bạn đứng chung một phía với cả phòng: phía không biết gì. {truong_phong} liếc sang bạn, hơi ngạc nhiên._
     ~ long_tl(3)
     ~ qh("chua_te_deadline", 3)
+    ~ qh("truong_phong", 3)
 * [😎 "Chill đi, chiều nay về à."]
     designer: Ông chill vì ông có thẻ. Tui chill bằng gì?
     _Câu đó làm bạn khựng lại. Không ai cười._

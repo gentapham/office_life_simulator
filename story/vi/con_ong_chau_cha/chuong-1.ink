@@ -37,6 +37,7 @@ _Hai mươi hai cặp mắt. Một cái mũ hồng cũng quay sang. {truong_phon
     ~ long_od(-3)
     ~ long_tl(3)
     ~ qh("chi_dai", 3)
+    ~ qh("truong_phong", 3)
 * [😶 Lặng lẽ ngồi xuống ghế cuối, giấu ly cà phê dưới bàn.]
     _Ly cà phê đổ. Kem chảy vào giày {thuc_tap_sinh}. {thuc_tap_sinh} không dám nói gì, chỉ cười._
     ~ qh("thuc_tap_sinh", 2)
