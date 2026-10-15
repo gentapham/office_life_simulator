@@ -150,7 +150,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 > 2. 💵 *Rút ví, trả bằng lương của chính mình.* (Cần ≥ 420.000đ tiền mặt)
 >    - Độ Tự Lập +10. Lần đầu Long nhìn giá từng món trên hóa đơn
 > 3. 😅 *"Ủa, hay mình chia tiền đi mấy bạn?"*
->    - {ran_doc} cười: "Ủa phó phòng mà chia hả?". Ô Dù −15, Độ Tự Lập +5. {thuc_tap_sinh} giành trả hết, rút ra một cái thẻ hạng kim cương. Cả bàn im lặng lần hai
+>    - {ran_doc} cười: "Ủa phó phòng mà chia hả?". Ô Dù −15, Độ Tự Lập +5. {thuc_tap_sinh} giành trả hết, lỡ rút ra một cái thẻ hạng kim cương rồi vội cất đi. Cả bàn im lặng lần hai. Long có tin mật mờ "Thẻ của Duy"
 > 4. *(Không chọn kịp)*: {hong_hot} trả giùm. Sáng mai, cả group "Hội Anti Sếp" biết thẻ của cháu sếp bị từ chối
 
 ### Mẫu 3: "Bài này của ai vậy em?" (15/10, mất điện)
@@ -161,8 +161,8 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 >    - Giấu được. Nhưng {idol_het_thoi} đã ghi âm 20 giây. 🎲 30% Phát tự viết lại thành bài của mình
 > 2. 🎵 *"Bài em tự viết cho Siêu Nhân Hồng. Chưa xong."*
 >    - {idol_het_thoi}: "Cho anh hát thử đi em." Mở nhánh "Ai Hát Bài Này?". Ô Dù không đổi, Bài Hát +10 (có người khen)
-> 3. 🔒 *"Anh Phát, hồi 2015 ai viết bài 'Công Viên' cho anh?"* (Chỉ hiện nếu đã nghe Bác Bình hoặc Thắng kể chuyện năm 2015)
->    - {idol_het_thoi} im lặng lâu: "…Một thằng sinh viên. Anh hứa ghi tên nó. Rồi anh quên." Phát xóa đoạn ghi âm trước mặt Long. Quan hệ +20
+> 3. 🔒 *"Anh Phát, anh cần một bài hit để trả nợ đúng hông? Nói thiệt đi, em hông kể ai."* (Chỉ hiện nếu biết tin mật "Phát đang nợ tiền")
+>    - {idol_het_thoi} im lặng lâu, rồi đeo kính lại: "…Ừ. Từ 2015 tới giờ anh chưa có bài nào." Phát xóa đoạn ghi âm trước mặt Long. Quan hệ +20. Mở lựa chọn "song ca có ghi tên" cho Đêm Hồng
 
 ### Mẫu 4: Đoàn kiểm tra thuế (22/10)
 
@@ -209,7 +209,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🎵 **Nhạc Sĩ Giấu Tên** | Bài Hát Bí Mật = 100%, tặng bài cho Siêu Nhân Hồng, không bán cho LL, không để Phát hát mà không ghi tên | Đêm Hồng, Siêu Nhân Hồng hát "Hồng Là Thái Độ". Cả khán đài hát theo điệp khúc từ lần thứ hai. Màn hình lớn chạy chữ: *"Nhạc & lời: Long."* Không có chữ "cháu" nào phía trước. Trong đám đông, Duy quay sang người bên cạnh: *"Thần tượng của tui đó!"* |
+| 1 | 😄 🎵 **Nhạc Sĩ Không Cần Ô** | Bài Hát Bí Mật = 100%, tặng bài cho Siêu Nhân Hồng, không bán cho LL, không để Phát hát mà không ghi tên | Đêm Hồng, Siêu Nhân Hồng hát "Hồng Là Thái Độ". Cả khán đài hát theo điệp khúc từ lần thứ hai. Màn hình lớn chạy chữ: *"Nhạc & lời: Long."* Không có chữ "cháu" nào phía trước. Trong đám đông, Duy quay sang người bên cạnh: *"Thần tượng của tui đó!"* |
 | 2 | 😄 🏠 **Tự Thuê Trọ** | Độ Tự Lập ≥ 80, Ô Dù ≤ 20, đã từ chối ghế Phó Giám đốc, đã làm thêm ít nhất 5 ca | Tháng 11, căn penthouse đã bán. Long xách một cây đàn và một cái vali vào một phòng trọ 15m² ở Hẻm 69, cửa sổ nhìn thẳng vào tường nhà bên. Bà chủ trọ đòi đặt cọc. Long trả bằng tiền lương của mình, đếm từng tờ. Tối đó, ông chú hàng xóm hát karaoke lúc 10 giờ đêm. Long mở cửa sổ, ghi âm lại, mỉm cười |
 | 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Quan hệ với Nhật ≥ 60, đã mở nhánh "Phòng thu tầng 30", ngày 30/10 Long đề cử Nhật trong khi Nhật đề cử Long | Thắng nhìn hai lá đơn, gãi đầu: *"Thế thì… hai đứa cùng làm."* Một tháng sau, Nhật lo sản xuất, Long lo âm nhạc, hai người dùng chung một cái bàn. Trên bàn có một cây đàn và một tấm bảng trắng nhỏ. Lịch chỉ có đúng một cuộc họp mỗi ngày: *"Họp nhanh 5 phút: trưa nay ăn gì?"* |
 | 4 | 😢 👑 **Mãi Là Cháu** | Ô Dù ≥ 70 vào 30/10 và nhận ghế Phó Giám đốc | Long ngồi trong phòng làm việc mới, vách kính, ghế da. Dưới gầm bàn là hộp đàn, phủ một lớp bụi mỏng. Duy gõ cửa, mang cà phê vào: *"Anh Long đỉnh quá ạ!"*. Long cười. Ngoài kia, ai cũng gọi Long là "sếp". Trong đầu Long, mọi người vẫn đang nói "cháu sếp" |

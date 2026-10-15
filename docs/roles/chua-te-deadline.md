@@ -17,7 +17,7 @@ Phòng gác trên quán bida có một tấm nệm, một cái laptop dán đầ
 
 ### Động cơ trong 30 ngày
 - **Ngày 1/10**, Thắng giao Vũ làm Producer chính cho toàn bộ chiến dịch Siêu Nhân Hồng: MV, gameshow, livestream, và Đêm Hồng Halloween. Lần đầu tiên trong đời, deadline của Vũ là **cả một tháng liền**, và mỗi tuần lại có một "mốc" người theo dõi chặn trước mặt.
-- Vũ muốn: qua được tháng này mà vẫn giữ được phong cách sống "chill guy", không bị Nhật bắt họp, và **không ai phát hiện chuyện ổ cứng**.
+- Vũ muốn: qua được tháng này mà vẫn giữ được phong cách sống "chill guy", không bị Nhật bắt họp, và **không ai phát hiện chuyện file gốc dự án tháng 6**.
 
 ### Bí mật: file gốc dự án tháng 6
 - **Tháng 6/2026**, G-Entertainment làm **dự án quảng cáo lớn nhất năm** (hợp đồng 800 triệu, cũng là hợp đồng lớn cuối cùng trước khi ế show hoàn toàn). Vũ là producer. Làm xong, Vũ chép toàn bộ file gốc vào **một cái USB không nhãn**, xóa bản trên máy cho "nhẹ ổ", rồi để cái USB trong túi áo khoác.
@@ -82,7 +82,7 @@ Vũ là **cái cổ chai** của cả chiến dịch: ai cũng làm tốt mà V�
 | Ra MV đúng ngày 9/10 | **+40.000** người theo dõi | Trễ 1 ngày: chỉ +15.000, và Ngân phải đăng bài xin lỗi |
 | Bắt được trend Tóp-tóp đúng lúc (Lướt Lấy Cảm Hứng) | +5.000 tới +30.000 mỗi lần | Lướt mà không bắt được gì thì chỉ tăng Độ Nước Tới Chân |
 | Kịch bản gameshow 16/10 nộp đúng hạn | **+80.000** | Nộp trễ thì Nguyên lên sóng không có câu hỏi, tự hát bài "Công Viên" của Phát: có thể thành meme (+50.000) hoặc thảm họa (−30.000) |
-| Tìm lại ổ cứng "HONG_MASTER" trước 31/10 | Đêm Hồng chiếu bản 4K: **+100.000** | Không tìm được: chiếu bản 480p, khán giả tưởng lỗi mạng, −20.000 |
+| Tìm lại file gốc dự án tháng 6 trước 20/10 | Clip "16 năm G-Entertainment" lên sóng ngày 20/10, rồi làm màn mở đầu Đêm Hồng: **+100.000** | Tìm được sau 20/10 nhưng trước 31/10: chỉ còn màn mở đầu Đêm Hồng, +50.000. Không tìm được: Thắng dựng clip bằng ảnh chụp điện thoại, Ngân đăng lên bị chê "như slide đám cưới", −20.000. Ngày 22/10 thiếu bằng chứng nghiệm thu, Quỹ Công Ty bị phạt |
 | Kịch bản sân khấu (cue sheet) Đêm Hồng hoàn hảo | **+150.000** trong đêm 31/10 | Thiếu cue sheet: Bảo không biết lúc nào bắn pháo giấy, Tuất lên sân khấu trước Nguyên |
 | Trả lời công khai lời tỏ tình 23/10 (bằng bất kỳ cách nào) | **+60.000** (couple là thứ mạng xã hội thích nhất) | Nếu trả lời kiểu "PR hả anh?" thì vẫn +60.000, nhưng Độ Tin Thật Lòng không bao giờ lên được nữa |
 
@@ -96,20 +96,21 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 - **1/10:** ký hợp đồng, 5 tỷ về tài khoản. Thắng vỗ vai Vũ trước cả công ty: *"Cả chiến dịch nằm trong tay em đấy. Anh không ép, tùy em."* Vũ gật đầu, về chỗ mở Tóp-tóp. Máy pha cà phê hỏng (Ngày Cà phê Quốc tế), Vũ nhờ Duy chạy ra ngoài mua.
 - **2/10:** họp lên chiến dịch. Nhật yêu cầu bảng tiến độ. Bảng của Vũ có đúng **một thanh màu hồng**: *"31/10: làm hết."* Lựa chọn: làm lại bảng tử tế, hay chém gió cho qua.
 - Sáng nào trên bàn Vũ cũng có một món quà màu hồng. Vũ chụp hình gửi Ngân: *"Bên bà lên kịch bản couple hả? Ok, tui phối hợp."*
-- **3/10 (tối):** mất ổ cứng "HONG_MASTER". Cảnh cuối chương: Vũ lục tung phòng gác lúc 2 giờ sáng, dưới nhà tiếng bi va nhau lách cách.
-- **4/10:** Ngày Động vật. {cho} mặc áo, đeo nơ, nằm canh gầm cầu thang không cho ai lại gần. Vũ đi ngang, Tuất gầm gừ. *Manh mối đầu tiên, người chơi rất dễ bỏ qua.*
+- **3/10 (tối):** Thắng nhắn group Zalo-lô lúc 22:00: *"Trước 20/10 anh muốn xem lại mấy cảnh đẹp nhất của dự án tháng 6, làm clip 16 năm công ty nhé."* Vũ đọc, thả tim, rồi lục tung phòng gác lúc 2 giờ sáng tìm cái USB không nhãn. Dưới nhà tiếng bi va nhau lách cách. Không thấy.
+- **4/10:** Ngày Động vật. {cho} mặc áo, đeo nơ, nằm canh gầm cầu thang không cho ai lại gần. Vũ đi ngang, Tuất không gầm gừ mà ngửi ly cà phê sữa đá trên tay Vũ rất lâu. *Manh mối đầu tiên, người chơi rất dễ bỏ qua.*
 
-### Chương 2: "MV 480p" (5/10 – 12/10)
+### Chương 2: "MV Một Đêm" (5/10 – 12/10)
 - **6/10:** chụp poster. Nguyên bỏ ngang đi giúp một bà cụ (điều khoản số 3). Vũ phải xếp lại lịch cả đoàn trong 15 phút.
 - **7/10 (Mốc 1, 50.000):** nếu trượt, Thắng "truyền lửa" 3 tiếng, Vũ bị ngồi hàng đầu.
 - **8/10:** Lĩnh bị bắt đi khám mắt (Ngày Thị giác Thế giới) đúng đêm phải dựng MV. Vũ phải năn nỉ Lĩnh dựng từ phòng khám, hoặc tự dựng, hoặc nhờ Duy (Duy chưa từng mở phần mềm dựng phim).
-- **9/10:** MV ra mắt bằng bản 480p. Ngân gọi nó là "chất retro hoài niệm". Lĩnh nhìn Vũ rất lâu: *"Ổ cứng đâu ông?"* Độ Lộ File Gốc +20.
+- **9/10:** MV ra mắt, xuất file lúc 7:59. Cùng ngày, Lĩnh được Thắng nhờ "lấy giùm anh mấy cảnh dự án tháng 6". Lĩnh lục máy chủ không thấy, quay sang nhìn Vũ rất lâu: *"File gốc tháng 6 đâu ông?"* Độ Lộ File Gốc +20.
 - **10–12/10:** lương về trễ. Vũ hết tiền từ ngày 7 (vì ăn đồ ăn nhanh lúc nửa đêm). Ăn trứng cả tuần (Ngày Trứng còn dư). Lựa chọn: ứng lương ở chỗ Thương (bị hỏi "hóa đơn đâu em?"), đánh bida cược tiền với Chương, hay mượn Duy.
 
 ### Chương 3: "Cúp Điện, Cúp Luôn Deadline" (13/10 – 16/10)
 - **14/10 (Mốc 2, 200.000):** Sơn xin nghỉ "về quê gặt lúa", Vũ mất người điều phối lịch đúng tuần gameshow.
 - **15/10:** mất điện cả ngày. Kịch bản gameshow phải nộp Đài Tivi Hóng **trước 9 giờ sáng 16/10**. Laptop còn 12% pin. Cả công ty ngồi ở pantry kể chuyện; Vũ ngồi góc gõ phím dưới ánh đèn điện thoại. Duy rụt rè đưa ra **5 cục sạc dự phòng hàng xịn**, không ai hiểu một thực tập sinh lương 4 triệu lấy đâu ra.
-- Trong bóng tối, Lĩnh nói nhỏ: *"Bản 480p không phóng lên màn LED được đâu. Đêm Hồng mà chiếu là lộ."* Lựa chọn: thú nhận với Lĩnh, hay tiếp tục giấu.
+- Trong bóng tối, người ngồi sát bên Vũ là một anh chàng **không đội mũ**, giọng nhỏ, hay "ờm…". Vũ mất 5 phút mới nhận ra đó là Nguyên. Cuộc nói chuyện thật lòng đầu tiên: không camera, không tạo dáng. Độ Tin Thật Lòng có thể tăng mạnh. *(Nếu Nguyên đã lấy được cái USB trong kho của Tuất, Nguyên đưa nó cho Vũ ngay tại đây.)*
+- Lĩnh nói nhỏ từ phía bên kia: *"Thứ 3 tuần sau sếp đòi clip 16 năm rồi đó. Ông tính sao?"* Lựa chọn: thú nhận với Lĩnh, hay tiếp tục giấu.
 - **16/10:** gameshow ở Đài Tivi Hóng. Vũ đứng sau hậu trường đeo tai nghe. Nguyên đòi Vũ ngồi hàng ghế khán giả đầu tiên "để có động lực". Vũ nghĩ: *"Kịch bản couple tới tập 2 rồi."*
 
 ### Chương 4: "Deadline Trên Bãi Biển" (17/10 – 20/10)
@@ -121,10 +122,10 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 
 ### Chương 5: "Lên Xu Hướng" (21/10 – 27/10)
 - **21/10 (Mốc 3, 500.000).**
-- **22/10:** đoàn kiểm tra thuế. Thương lùng khắp công ty tìm Vũ vì thiếu **biên bản nghiệm thu MV**. Vũ đang trốn trong phòng server với Bảo.
+- **22/10:** đoàn kiểm tra thuế đòi bằng chứng nghiệm thu dự án 800 triệu hồi tháng 6. Thương lùng khắp công ty tìm Vũ. Vũ đang trốn trong phòng server, 0:30 sáng đêm trước đã lần đầu tiên không cười mà thú nhận với Bảo: *"Anh Bảo ơi… em làm mất file gốc rồi."* Nếu quan hệ với {it} đủ tốt, Bảo nhớ ra cái ổ cứng "KHÔNG ĐƯỢC MỞ".
 - **23/10:** sinh nhật Nguyên kiêm livestream. Vũ ngồi phòng điều khiển, đang lướt Tóp-tóp thì thấy chính mình lên xu hướng: Nguyên vừa **tỏ tình giữa livestream**. Hashtag **#VũƠiTrảLờiĐi** leo top 3. Cùng lúc đó Tuất lao vào cái bánh kem hồng. Lựa chọn lớn nhất của tuyến tình cảm.
 - **24/10:** Hương tổ chức "hội nghị hòa giải". Vũ và Nhật bị xếp ngồi cạnh nhau, phải khen nhau 3 câu.
-- **25/10 (chủ nhật):** nếu đã có đủ manh mối (Tuất gầm gừ ở gầm cầu thang, Bác Bình nói "bác không thấy gì đâu" hơi lâu), Vũ có thể đi tìm ổ cứng.
+- **25/10 (chủ nhật):** nếu file gốc vẫn chưa về tay và đã có đủ manh mối (Tuất ngửi ly cà phê sữa đá, Bác Bình nói "bác không thấy gì đâu" hơi lâu), Vũ có thể vào gầm cầu thang tìm cái USB.
 - **27/10:** LL-Entertainment đưa hợp đồng gấp ba cho Nguyên. Tối đó Nguyên nhắn cho Vũ (không phải cho Thái, không phải cho Thắng): *"Em muốn anh ở lại không?"*
 
 ### Chương 6: "Nhảy Là Phải Đẹp" (28/10 – 31/10)
@@ -164,7 +165,7 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 >    - Mở minigame "Đêm Thần Tốc" độ khó cao. Quan hệ với {editor} +15
 > 3. 🍜 *"Tối nay tui mang mì ly với 2 lon Trâu Cày qua, ông chỉ ngồi chỉ thôi, tui bấm."* (Cần: Mì ly)
 >    - Dựng MV hai người. Độ khó trung bình. {editor} kể về một người "lúc nào cũng cầm 2 điện thoại" rồi ngủ gục, không nói hết câu
-> 4. 🔒 *"Lĩnh, tui nói thật: ổ cứng gốc tui làm mất rồi. Bản nháp của ông là thứ duy nhất còn lại."* (Chỉ hiện nếu Độ Lộ File Gốc ≥ 30)
+> 4. 🔒 *"Lĩnh, tui nói thật: file gốc dự án tháng 6 tui làm mất rồi. Sếp mà đòi là tui toang."* (Chỉ hiện nếu Độ Lộ File Gốc ≥ 30)
 >    - Độ Lộ File Gốc −30 (Lĩnh giữ bí mật). {editor}: "…Render xong là xong. Ông nợ tui một bữa."
 
 ### Mẫu 3: Pin 3% trong bóng tối (15/10)
@@ -184,18 +185,18 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 
 ### Mẫu 4: Kho báu dưới gầm cầu thang (25/10)
 
-> *(Gầm cầu thang tối om. {cho} nằm chắn trước một đống đồ: chìa khóa, thỏi son, một cái điện thoại cũ… và một góc nhựa màu cam.)*
+> *(Gầm cầu thang tối om. {cho} nằm chắn trước một đống đồ: chìa khóa, thỏi son, một cái điện thoại cũ… và một cái USB không nhãn, mùi cà phê sữa đá.)*
 >
 > **{cho}:** Grừ… Gâu!
 >
 > **{bac_bao_ve}:** *(từ ngoài cửa, không quay lại)* Ừ… Bác không thấy gì đâu.
 >
-> 1. 🦴 *Đưa cho {cho} một cây xúc xích, chỉ vào góc màu cam.* (Cần: Xúc xích)
->    - {cho} nhả ổ cứng ra, có thêm 4 vết răng. Tìm lại "HONG_MASTER"! Độ Lộ File Gốc về 0
+> 1. 🦴 *Đưa cho {cho} một cây xúc xích, chỉ vào cái USB.* (Cần: Xúc xích)
+>    - {cho} nhả cái USB ra, có thêm 4 vết răng nhưng vẫn chạy. Tìm lại file gốc! Độ Lộ File Gốc về 0
 > 2. 🏃 *Thò tay vào giật nhanh.*
 >    - 🎲 30% thành công. 70%: {cho} sủa ầm ĩ, {ran_doc} đi ngang và thấy hết. Độ Lộ File Gốc +40
 > 3. 🔒 *"Bác Bình, cháu biết bác thấy hết. Cháu làm mất, cháu sai. Bác giúp cháu nha bác."* (Chỉ hiện nếu quan hệ với {bac_bao_ve} ≥ 40)
->    - {bac_bao_ve}: "Thế à." Bác huýt sáo một tiếng, Tuất tự tha ổ cứng ra. Bác dặn: "Lần sau để đồ thì nhớ chỗ, cháu ạ." Quan hệ với {bac_bao_ve} +10
+>    - {bac_bao_ve}: "Thế à." Bác huýt sáo một tiếng, Tuất tự tha cái USB ra. Bác dặn: "Lần sau để đồ thì nhớ chỗ, cháu ạ." Quan hệ với {bac_bao_ve} +10
 > 4. 😶 *Bỏ đi. Mai tính.*
 >    - Độ Nước Tới Chân +10. Cơ hội tiếp theo: tối 30/10
 
@@ -239,7 +240,7 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 | 2 | 😄 🩷 **Không Phải PR** | Độ Tin Thật Lòng ≥ 80, đã mở nhánh "Hẹn Đêm Hồng", đã trả lời Nguyên trước 23:59 ngày 31/10 | Show tan, sân khấu tắt đèn. Nguyên ngồi ở mép sân khấu, tháo mũ ra, tóc bết mồ hôi. Bạn đi tới, đặt lên tay Nguyên một cây bút highlight màu hồng, cây đầu tiên Nguyên tặng: *"Lần đầu tiên trong đời em trả lời trước deadline đó."* Nguyên cười, không tạo dáng. Phía xa, {cho} sủa một tiếng, nhưng lần này không lao tới |
 | 3 | 😄 🔒 **Kết thúc bí mật: Người Đến Sớm** | Xong toàn bộ việc của chiến dịch **trước 24/10**, Giờ Lướt Tóp-tóp không quá 1 tiếng mỗi ngày trong 7 ngày liền, không dùng "Nhờ Xíu" lần nào | Cả công ty hoảng loạn: Vũ làm xong sớm 7 ngày. Nhật triệu tập "họp khẩn tìm hiểu âm mưu". Tuấn mời bạn đi uống trà vì "anh chỉ muốn lắng nghe em thôi". Đêm Hồng diễn ra hoàn hảo, còn bạn nằm dài trên bãi cỏ sau sân khấu, không có gì để làm, lần đầu tiên xem trọn một show mình làm ra. Bạn mở Tóp-tóp, thấy video "Người đàn ông rảnh rỗi nhất Đêm Hồng" đang lên xu hướng. Là bạn |
 | 4 | 😢 🌊 **Nước Tới Cổ** | Độ Nước Tới Chân chạm 100 vào ngày 30/10 hoặc 31/10, cue sheet chưa xong | 19:58, còn 2 phút mở màn. Cue sheet trên tay bạn mới có 3 dòng. Bảo hỏi qua bộ đàm: "Pháo giấy khi nào?". Bạn nói "Go!" nhầm lúc. Pháo nổ khi Nguyên đang hát câu buồn nhất. Sáng thứ 2 Tuấn nhắn: *"Em rảnh không, lên phòng anh uống trà xíu."* Lần này bạn không đi trễ |
-| 5 | 😢 💾 **File Gốc** | Độ Lộ File Gốc đạt 100 khi chưa tìm lại được ổ cứng | Ngày 30/10, Lĩnh đặt bản 480p lên màn chiếu phòng họp, phóng to 400%. Gương mặt Siêu Nhân Hồng vỡ thành những ô vuông hồng. Cả phòng im lặng. Lĩnh không nói gì, chỉ ngáp, và lần này không phải vì buồn ngủ. Bạn ôm thùng carton đi ngang gầm cầu thang. {cho} đang gặm một vật màu cam |
+| 5 | 😢 💾 **File Gốc** | Độ Lộ File Gốc đạt 100 khi chưa tìm lại được file (cả USB của Tuất lẫn ổ cứng của Bảo) | Họp đánh giá 30/10. Thương đặt lên bàn biên bản phạt của đoàn kiểm tra thuế: doanh thu 800 triệu tháng 6 "không chứng minh được". Thắng hỏi đúng một câu: "File gốc đâu em?" Cả phòng quay sang nhìn bạn. Lĩnh không nói gì, chỉ ngáp, và lần này không phải vì buồn ngủ. Bạn ôm thùng carton đi ngang gầm cầu thang. {cho} đang gặm một cái USB không nhãn, mùi cà phê sữa đá |
 | 6 | 😢 📱 **PR Thôi Mà** | Đã chọn "Kịch bản này ai viết vậy?" ngày 23/10, Độ Tin Thật Lòng < 20 tới hết 31/10 | Chiến dịch có thể thành công, bạn có thể được khen. Nhưng sáng 1/11, trên bàn bạn không còn quà hồng. Chỉ có một mẩu giấy viết tay: *"Anh hiểu rồi. Cảm ơn em đã làm show cho anh."* Bạn mở Tóp-tóp, lướt, lướt, lướt. Lần đầu tiên chẳng video nào làm bạn cười |
 
 ---
@@ -251,7 +252,7 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 | 🌙 **Cú Đêm Danh Dự** | Hoàn thành 5 lần "Đêm Thần Tốc" trong một lượt chơi |
 | ⏱️ **7:59** | Nộp việc đúng 7:59 ba lần liên tiếp |
 | 🙏 **Nhờ Xíu Thôi Mà** | Đẩy việc cho cả Duy, Lĩnh và Quỳnh trong cùng một ngày |
-| 💾 **Thánh Giữ Đồ** | Tìm lại ổ cứng "HONG_MASTER" mà không ai biết nó từng bị mất |
+| 💾 **Thánh Giữ Đồ** | Tìm lại file gốc dự án tháng 6 mà Thắng không hề biết nó từng bị mất |
 | 📅 **Kẻ Thù Của Lịch Họp** | Né được 10 cuộc họp của Nhật |
 | 🩷 **Hai Chữ "Thật Lòng"** | Tin rằng Nguyên không làm PR |
 | 🐢 **Tôn Chỉ Công Ty** | Trích dẫn slogan "Việc hôm nay cứ để ngày mai tính" để thoát tội 3 lần |
