@@ -86,11 +86,11 @@ function renderHome() {
   app.replaceChildren(
     h("div", { class: "wrap" },
       h("header", { class: "top" },
-        h("div", { class: "brand" }, h("small", {}, "Office Worker For A Day · bản đọc thử"), h("b", {}, "Giả Lập Một Ngày Làm Nhân Viên Văn Phòng")),
+        h("div", { class: "brand" }, h("small", {}, "Office Worker For A Day"), h("b", {}, "Giả Lập Một Ngày Làm Nhân Viên Văn Phòng")),
       ),
       h("section", { class: "hero" },
         h("h1", {}, "Chọn một người để đi làm ở G-Entertainment"),
-        h("p", {}, "Bản đọc thử chỉ có chữ: toàn bộ thoại và lựa chọn của 30 ngày tháng 10/2026, chưa có 3D. Mục tiêu chung của cả công ty: đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đêm Hồng Halloween."),
+        h("p", {}, "Mục tiêu chung của cả công ty: đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đêm Hồng Halloween."),
         h("span", { class: "note16" }, h("b", {}, "16+"), "Có nhậu, đánh ghen, nợ nần và ngôn ngữ văn phòng."),
       ),
       save ? h("div", { class: "resume" },
@@ -105,7 +105,6 @@ function renderHome() {
         h("button", { class: "card special", onclick: () => openChung() },
           h("span", { class: "rl" }, "Nội dung chung"), h("span", { class: "nm" }, "Sự kiện, tin đồn"), h("span", { class: "jb" }, "Mở đầu, nói vu vơ, Đêm Hồng")),
       ),
-      h("p", { class: "footer" }, "Lưu tự động trên trình duyệt này. Bản đọc thử dùng để duyệt nội dung, chỉ số và minigame được giả lập đơn giản."),
     ),
   );
   window.scrollTo(0, 0);
@@ -230,7 +229,7 @@ function renderIntro(body) {
     h("div", { class: "dayline" }, h("b", {}, "Bắt đầu"), h("span", {}, "Thứ 5, 1/10/2026")),
     h("div", { class: "log" },
       h("p", { class: "narr" }, `Bạn sẽ sống 31 ngày trong vai ${n.vai} ${n.ten}. Mỗi ngày có các cảnh chính theo giờ. Hết cảnh trong ngày, bạn có thể nói chuyện thêm với đồng nghiệp rồi đi ngủ.`),
-      h("p", { class: "narr" }, `Nhân vật này có ${L.knots.length} cảnh (${chinh} cảnh gắn ngày). Minigame trong bản đọc thử được giả lập: bạn tự chọn thắng hay thua.`),
+      h("p", { class: "narr" }, `Nhân vật này có ${L.knots.length} cảnh (${chinh} cảnh gắn ngày).`),
       h("p", { class: "narr" }, "Tối 31/10 là Đêm Hồng: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
     ),
     h("div", { class: "choices" },
@@ -401,7 +400,7 @@ function afterScene(visited = new Set()) {
   saveWrite(L.toSave());
   if (mg) {
     UI.choices.replaceChildren(
-      h("p", { class: "hint" }, "Minigame: bản đọc thử chưa có phần chơi thật. Hãy chọn kết quả để đọc tiếp."),
+      h("p", { class: "hint" }, "Chọn kết quả minigame:"),
       mg.ra.map(n => h("button", { class: "choice", onclick: () => playKnot(n, v => afterScene(v)) },
         (/_(thua|that_bai|truot)$/.test(n) ? "Thua: " : "Thắng: ") + n.slice(mg.base.length + 1).replace(/_/g, " "))),
       h("button", { class: "choice", onclick: () => nextScene() }, "Bỏ qua minigame"),
