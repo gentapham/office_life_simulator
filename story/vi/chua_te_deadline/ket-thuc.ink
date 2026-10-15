@@ -8,6 +8,10 @@
 
 === chua_te_deadline_3010_danh_gia ===
 # ngay:31 # gio:22:40 # noi:san_khau_dem_hong # bat_buoc
+// Đã nói "Kịch bản này ai viết vậy?" ngày 23/10: Độ Tin Thật Lòng khóa ở 0 tới hết game.
+{ vu_tin_bi_khoa:
+    ~ vu_tin_that_long = 0
+}
 {
 - vu_lo_file >= 100 && not vu_co_file:
     ~ chot_ket_thuc("file_goc")
