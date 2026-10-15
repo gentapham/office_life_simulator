@@ -6,7 +6,9 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 
 Đi làm 8 tiếng chưa đủ? Tối về đi làm tiếp trong game :v
 
-> 🚧 Dự án đang ở giai đoạn **thiết kế**, chưa có code.
+> 🚧 Đã có **bản đọc thử dạng chữ**: chơi trọn tháng 10 của cả 23 nhân vật, đọc từng cảnh, xem kết thúc. Bản 3D đang làm.
+>
+> ▶️ **Chơi thử:** https://gentapham.github.io/office_life_simulator/
 
 ## Điểm chính
 
@@ -49,14 +51,28 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 - [Ink](https://www.inklestudios.com/ink/): viết truyện nhiều lựa chọn
 - GitHub Pages + GitHub Actions: host và tự động deploy
 
-Khi phát hành, game sẽ chạy tại: **https://gentapham.github.io/office_life_simulator/**
+Game chạy tại: **https://gentapham.github.io/office_life_simulator/** (tự đăng lại mỗi khi có thay đổi trên nhánh `main`).
+
+## Chạy trên máy
+
+Cần Node.js 20 trở lên.
+
+```bash
+npm install
+npm run kiem-tra-ink   # kiểm tra toàn bộ thoại Ink
+npm run build          # dịch thoại ra JSON và build bản đọc thử vào dist/
+npm run preview        # mở http://localhost:4173
+```
+
+Khi đang sửa giao diện: chạy `npm run build:story` một lần, sau đó `npm run dev`.
 
 ## Lộ trình
 
 - [x] Chốt ý tưởng, nền tảng, phong cách
 - [x] Hoàn thiện tài liệu thế giới và truyện của 23 nhân vật (bản nháp, chờ duyệt)
 - [x] Viết đủ thoại cho 23 nhân vật và nội dung chung (Ink)
-- [ ] Bản chạy thử: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
+- [x] Bản đọc thử dạng chữ: chơi cả tháng, duyệt từng cảnh, lưu trên trình duyệt
+- [ ] Bản chạy thử 3D: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
 - [ ] Rắn Độc chơi được trọn 30 ngày với 6 kết thúc
 - [ ] Mở rộng thế giới và thêm role
 - [ ] Âm thanh, tiếng Anh, tối ưu điện thoại
