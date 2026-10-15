@@ -44,11 +44,11 @@
 # ngay:30 # gio:17:30 # noi:phong_hr
 _Chiều 30/10. Họp xong, {giam_doc} đi thẳng xuống phòng HR. Lần đầu tiên sếp xuống, không gọi lên._
 _Ngoài cửa vẫn còn một hàng người, cầm ly. Không ai bị gọi. Ai cũng muốn uống trà._
-giam_doc: Tuấn. Anh làm giám đốc 10 năm, chưa thấy ai xếp hàng trước phòng HR. Trừ hồi phát lương Tết.
+giam_doc: {hr}. Anh làm giám đốc 10 năm, chưa thấy ai xếp hàng trước phòng HR. Trừ hồi phát lương Tết.
 giam_doc: Từ tháng sau em là Trưởng phòng Nhân sự. Anh không ép. Em không được từ chối.
 _Bạn nhìn hàng người. {thuc_tap_sinh} giơ ngón cái. {chi_dai} gật đầu như đã biết trước._
 hr: Dạ. Em nhận. Mà anh ơi, trưởng phòng có được mua thêm kệ trà không anh?
-giam_doc: Hỏi Thương.
+giam_doc: Hỏi {ke_toan}.
 ke_toan: *(từ cuối hàng)* Có hóa đơn là có.
 _Đêm 31/10. Sân khấu Đêm Hồng. Bạn đứng ở cổng với bình trà 20 lít. Ai đi qua cũng dừng lại xin một ly._
 _{chua_te_deadline} xin trà bạc hà. {editor} xin trà hoa cúc cho mắt. {bac_bao_ve} không xin, bạn rót trước._
@@ -56,7 +56,7 @@ _{cho} nằm dưới chân bình trà, gác cằm lên giày bạn._
 thuc_tap_sinh: Dạ anh còn trà Zzz không ạ?
 _Bạn cười._
 _Lần đầu tiên trong 7 năm, không ai sợ cái cười đó. {thuc_tap_sinh} cười lại. Rồi cả hàng người cười theo, chẳng vì lý do gì._
-_Trên tờ giấy dán ở bình trà, ai đó viết thêm bằng bút đỏ: "Trà của anh Tuấn. Uống không bị đuổi."_
+_Trên tờ giấy dán ở bình trà, ai đó viết thêm bằng bút đỏ: "Trà của anh {hr}. Uống không bị đuổi."_
 -> END
 
 // ------------------------------------------------------------
@@ -78,7 +78,7 @@ _{giam_doc} đứng cạnh bạn từ lúc nào, trong bộ "Ông Kẹ Ngân Hà
 giam_doc: Trang 2 anh xé từ hôm qua rồi.
 hr: Dạ?
 giam_doc: Sau cái họp đánh giá. Anh về phòng, xé, rồi ngồi uống hết ấm trà sen em pha. Anh nhận ra người ta giữ công ty bằng người, không phải bằng danh sách.
-_Ông ấy đưa tay vào túi, lấy ra một mảnh giấy hồng nhỏ xíu, chữ còn đọc được: "…cuối cùng: Tuấn…". Rồi thả nó bay theo pháo giấy._
+_Ông ấy đưa tay vào túi, lấy ra một mảnh giấy hồng nhỏ xíu, chữ còn đọc được: "…cuối cùng: {hr}…". Rồi thả nó bay theo pháo giấy._
 giam_doc: Anh không ép. Nhưng năm sau em đừng nhận cái tập hồ sơ nào màu hồng nữa nhé.
 hr: Dạ. Năm sau em chỉ nhận trà.
 { hr_danh_sach_den == 0:
@@ -94,7 +94,7 @@ _Chiều 30/10. Bạn đặt lên bàn kính một lá đơn. Lý do nghỉ vi�
 giam_doc: *(đọc, rồi nhìn trang 2 trong tập của mình)* Em… em đọc trang 2 từ bao giờ?
 hr: Từ 26/10 anh. Anh định cắt em cuối cùng. Em tự cắt em trước. Cho đỡ tốn một ấm trà.
 _{giam_doc} im lặng rất lâu. Rồi ký. Tay ông ấy run như tay {thuc_tap_sinh} hôm đầu tháng trước máy chấm công._
-giam_doc: Anh xin lỗi, Tuấn.
+giam_doc: Anh xin lỗi, {hr}.
 _Bất kể Đêm Hồng ra sao, bạn đã chọn xong._
 _Ba tháng sau._
 _Phố Cũ. Một căn nhà nhỏ, cửa gỗ sơn cam (thói quen cũ khó bỏ). Biển hiệu viết tay: "PHÒNG TRÀ NHÂN SỰ"._
@@ -104,7 +104,7 @@ hr: Bà ghi luôn khoản tui uống thử 6 ly hông?
 ke_toan: Ghi rồi. Trừ lương ông.
 _Trên tường có một tấm bảng gỗ: "Ở đây, mời uống trà nghĩa là mời uống trà."_
 _Chuông cửa leng keng. Vị khách đầu tiên của ngày khai trương. Bộ đồ kim tuyến lấp lánh, tóc giả hơi lệch._
-thanh_xin_nghi: Dạ… anh Tuấn. Hôm nay em xin nghỉ… để tới uống trà ạ.
+thanh_xin_nghi: Dạ… anh {hr}. Hôm nay em xin nghỉ… để tới uống trà ạ.
 hr: Lý do lần này anh tin. Ngồi đi em. Trà hoa cúc nha.
 _{cho} chạy vào theo, ngồi đúng chỗ dưới chân quầy, như đã biết đường từ trước._
 _Bạn rót ly đầu tiên. Không có danh sách nào trong ngăn kéo. Chỉ có sổ ghi món._
@@ -120,8 +120,8 @@ _{thuc_tap_sinh} uống trà sen, cúi đầu cảm ơn 3 lần. {thanh_xin_nghi
 _Bảy người, bảy ấm trà, bảy lần bạn nói "Cảm ơn em đã đồng hành"._
 _Câu đó bạn đã nói 11 lần trong 7 năm. Giờ là 18. Không lần nào dễ hơn._
 _Người cuối cùng lên phòng HR là {giam_doc}. Ông ấy không cầm ly. Ông ấy cầm một tờ giấy hồng._
-giam_doc: Trang 2, Tuấn. Anh… anh không ép.
-_"Người cuối cùng: Tuấn (sau khi HR cắt xong hết)."_
+giam_doc: Trang 2, {hr}. Anh… anh không ép.
+_"Người cuối cùng: {hr} (sau khi HR cắt xong hết)."_
 hr: Dạ. Em biết. Em pha cho anh ấm cuối nha.
 _Tối đó, bạn là người cuối cùng trong tòa nhà._
 _Tầng 2: tắt đèn phòng họp "Sáng Tạo". Tắt đèn studio. Tắt đèn phòng kế toán, nơi {ke_toan} để quên cây bút._

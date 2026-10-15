@@ -32,6 +32,15 @@ const tag = (tags, key) => { const t = (tags || []).find(t => t === key || t.sta
 const gioSo = g => { if (!g) return 9999; const m = String(g).match(/(\d{1,2}):(\d{2})/); return m ? (+m[1]) * 60 + (+m[2]) : 9999; };
 const prettyNoi = s => s ? (DIA_DIEM[s] || s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase())) : "";
 const saveLoad = () => { try { return JSON.parse(localStorage.getItem(SAVE_KEY) || "null"); } catch { return null; } };
+// Tên đồng nghiệp do người chơi đặt (dùng chung cho mọi vai). Tên Nguyên của Siêu Nhân Hồng cố định.
+const TEN_KEY = "owfad_ten_v1";
+const TEN_CO_DINH = "sieu_nhan_hong";
+const tenDaDat = () => { try { return JSON.parse(localStorage.getItem(TEN_KEY)) || {}; } catch { return {}; } };
+const luuTen = t => { try { localStorage.setItem(TEN_KEY, JSON.stringify(t)); } catch {} };
+const tenCua = ma => ma === TEN_CO_DINH ? THEO_MA[ma].ten : (tenDaDat()[ma] || THEO_MA[ma].ten);
+function apDungTen(story) {
+  for (const n of NHAN_VAT) if (n.ma !== TEN_CO_DINH) { try { story.variablesState[n.ma] = tenCua(n.ma); } catch {} }
+}
 const saveWrite = v => { try { v ? localStorage.setItem(SAVE_KEY, JSON.stringify(v)) : localStorage.removeItem(SAVE_KEY); } catch {} };
 
 async function loadMeta() {
@@ -94,17 +103,78 @@ function renderHome() {
         h("span", { class: "note16" }, h("b", {}, "16+"), "Có nhậu, đánh ghen, nợ nần và ngôn ngữ văn phòng."),
       ),
       save ? h("div", { class: "resume" },
-        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma] ? THEO_MA[save.ma].vai + " (" + THEO_MA[save.ma].ten + ")" : save.ma}, ngày ${save.ngay}/10.`),
+        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma]?.vai || save.ma}, ngày ${save.ngay}/10.`),
         h("span", { class: "top-actions" },
           h("button", { class: "btn primary", onclick: () => openRole(save.ma, { tiepTuc: true }) }, "Chơi tiếp"),
           h("button", { class: "btn ghost", onclick: () => { saveWrite(null); renderHome(); } }, "Xóa bản lưu"),
         )) : null,
       h("div", { class: "grid" },
-        NHAN_VAT.map(n => h("button", { class: "card", onclick: () => openRole(n.ma) },
-          h("span", { class: "rl" }, n.vai), h("span", { class: "nm" }, n.ten), h("span", { class: "jb" }, n.chuc))),
+        NHAN_VAT.map(n => h("button", { class: "card", onclick: () => renderDatTen(n.ma) },
+          h("span", { class: "rl" }, n.vai), h("span", { class: "jb" }, n.chuc))),
         h("button", { class: "card special", onclick: () => openChung() },
-          h("span", { class: "rl" }, "Nội dung chung"), h("span", { class: "nm" }, "Sự kiện, tin đồn"), h("span", { class: "jb" }, "Mở đầu, nói vu vơ, Đêm Hồng")),
+          h("span", { class: "rl" }, "Nội dung chung"), h("span", { class: "jb" }, "Sự kiện, tin đồn, Đêm Hồng")),
       ),
+    ),
+  );
+  window.scrollTo(0, 0);
+}
+
+// ============================================================
+// ĐẶT TÊN ĐỒNG NGHIỆP (trước khi bắt đầu một vai)
+// ============================================================
+function renderDatTen(ma) {
+  const vaiChon = THEO_MA[ma];
+  const daDat = tenDaDat();
+  const loi = h("p", { class: "form-error", role: "alert" });
+  const o = {};
+  const hang = NHAN_VAT.map(n => {
+    const coDinh = n.ma === TEN_CO_DINH;
+    o[n.ma] = h("input", { type: "text", id: "ten_" + n.ma, maxlength: 20, autocomplete: "off", spellcheck: "false",
+      value: coDinh ? n.ten : (daDat[n.ma] || n.ten), placeholder: n.ten, disabled: coDinh });
+    return h("label", { class: "name-row" + (n.ma === ma ? " me" : ""), for: "ten_" + n.ma },
+      h("span", { class: "name-role" }, n.vai, n.ma === ma ? h("em", {}, "Bạn") : null),
+      o[n.ma],
+      h("span", { class: "name-hint" }, coDinh ? "Tên cố định, không đổi được" : `Mặc định: ${n.ten}`));
+  });
+  const kiemTra = () => {
+    const ten = {}, gap = new Map();
+    for (const n of NHAN_VAT) {
+      const v = o[n.ma].value.trim().replace(/\s+/g, " ");
+      o[n.ma].removeAttribute("aria-invalid");
+      if (!v) return [null, n, `Chưa nhập tên cho ${n.vai}.`];
+      if (!/^[\p{L}\d][\p{L}\d .'-]*$/u.test(v)) return [null, n, `Tên của ${n.vai} chỉ dùng chữ, số, khoảng trắng, dấu chấm, gạch nối.`];
+      const k = v.toLocaleLowerCase("vi");
+      if (gap.has(k)) return [null, n, `${n.vai} trùng tên với ${gap.get(k).vai}. Mỗi người cần một tên riêng.`];
+      gap.set(k, n); ten[n.ma] = v;
+    }
+    return [ten];
+  };
+  const batDau = macDinh => {
+    if (macDinh) { luuTen({}); return openRole(ma); }
+    const [ten, n, thongBao] = kiemTra();
+    if (!ten) { loi.textContent = thongBao; o[n.ma].setAttribute("aria-invalid", "true"); o[n.ma].focus(); return; }
+    const luu = {};
+    for (const x of NHAN_VAT) if (x.ma !== TEN_CO_DINH && ten[x.ma] !== x.ten) luu[x.ma] = ten[x.ma];
+    luuTen(luu);
+    openRole(ma);
+  };
+  app.replaceChildren(
+    h("div", { class: "wrap" },
+      h("header", { class: "top" },
+        h("div", { class: "role-head" }, h("div", {}, h("h2", {}, vaiChon.vai), h("p", {}, vaiChon.chuc))),
+        h("div", { class: "top-actions" }, h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật"))),
+      h("section", { class: "panel name-intro" },
+        h("h3", {}, "Đặt tên nhân vật"),
+        h("p", {}, "Dùng tên mặc định để vào game ngay, hoặc tự đặt tên cho từng người trong công ty, kể cả nhân vật của bạn. Tên đã đặt được lưu lại cho các lần chơi sau."),
+        h("div", { class: "top-actions" },
+          h("button", { class: "btn primary", onclick: () => batDau(true) }, "Dùng tên mặc định"),
+          h("button", { class: "btn", onclick: () => o[ma === TEN_CO_DINH ? "ran_doc" : ma].focus() }, "Tự đặt tên"))),
+      h("form", { class: "names", novalidate: true, onsubmit: e => { e.preventDefault(); batDau(false); } },
+        h("div", { class: "name-grid" }, hang),
+        loi,
+        h("div", { class: "top-actions" },
+          h("button", { class: "btn primary", type: "submit" }, "Bắt đầu với tên đã đặt"),
+          h("button", { class: "btn ghost", type: "button", onclick: () => { for (const n of NHAN_VAT) o[n.ma].value = n.ten; loi.textContent = ""; } }, "Khôi phục tên mặc định"))),
     ),
   );
   window.scrollTo(0, 0);
@@ -119,6 +189,7 @@ class LuotChoi {
     this.json = json;
     this.story = new Story(json);
     this.story.variablesState["vai"] = ma;
+    apDungTen(this.story);
     this.knots = META.roles[ma].knots;
     this.roleVars = META.roles[ma].roleVars;
     this.ngay = 1;
@@ -206,7 +277,7 @@ function renderRole(tab) {
   app.replaceChildren(
     h("div", { class: "wrap" },
       h("header", { class: "top" },
-        h("div", { class: "role-head" }, h("div", {}, h("h2", {}, `${n.vai}: ${n.ten}`), h("p", {}, n.chuc))),
+        h("div", { class: "role-head" }, h("div", {}, h("h2", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`), h("p", {}, n.chuc))),
         h("div", { class: "top-actions" },
           h("div", { class: "tabs", role: "tablist" }, tabs.map(([id, label]) =>
             h("button", { class: "btn", role: "tab", "aria-selected": String(tab === id || (tab === "gioi_thieu" && id === "choi")), onclick: () => renderRole(id) }, label))),
@@ -228,7 +299,7 @@ function renderIntro(body) {
   body.append(h("section", { class: "stage" },
     h("div", { class: "dayline" }, h("b", {}, "Bắt đầu"), h("span", {}, "Thứ 5, 1/10/2026")),
     h("div", { class: "log" },
-      h("p", { class: "narr" }, `Bạn sẽ sống 31 ngày trong vai ${n.vai} ${n.ten}. Mỗi ngày có các cảnh chính theo giờ. Hết cảnh trong ngày, bạn có thể nói chuyện thêm với đồng nghiệp rồi đi ngủ.`),
+      h("p", { class: "narr" }, `Bạn sẽ sống 31 ngày trong vai ${n.vai} ${L.v(L.ma) || n.ten}. Mỗi ngày có các cảnh chính theo giờ. Hết cảnh trong ngày, bạn có thể nói chuyện thêm với đồng nghiệp rồi đi ngủ.`),
       h("p", { class: "narr" }, `Nhân vật này có ${L.knots.length} cảnh (${chinh} cảnh gắn ngày).`),
       h("p", { class: "narr" }, "Tối 31/10 là Đêm Hồng: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
     ),
@@ -259,6 +330,15 @@ function updateDayline(gio, noi) {
   );
 }
 
+// chú thích chỉ số viết tên mặc định: thay bằng tên người chơi đã đặt
+function doiTenMacDinh(chu) {
+  for (const n of NHAN_VAT) if (n.ma !== TEN_CO_DINH) {
+    const moi = L.v(n.ma);
+    if (moi && moi !== n.ten) chu = chu.replace(new RegExp(`(?<![\\p{L}])${n.ten}(?![\\p{L}])`, "gu"), moi);
+  }
+  return chu;
+}
+
 function updateSide() {
   if (!UI.side) return;
   const st = L.story;
@@ -267,7 +347,7 @@ function updateSide() {
   const theoDoi = v("nguoi_theo_doi");
   // chỉ hiện chỉ số có chú thích (biến nội bộ không chú thích thì ẩn); chú thích bỏ phần giải thích sau dấu ":" hoặc "("
   const roleNum = L.roleVars.filter(x => /^-?\d+$/.test(x.init) && x.note && !/^-/.test(x.note)).slice(0, 10)
-    .map(x => ({ ...x, nhan: boEmoji(x.note).split(/[:(.]/)[0].trim().replace(/^./, c => c.toUpperCase()) }));
+    .map(x => ({ ...x, nhan: doiTenMacDinh(boEmoji(x.note).split(/[:(.]/)[0].trim().replace(/^./, c => c.toUpperCase())) }));
   const qh = NHAN_VAT.filter(n => n.ma !== L.ma).map(n => [n, v("qh_" + n.ma)]).filter(([, x]) => x !== 0).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 8);
   UI.side.replaceChildren(...[
     h("div", { class: "panel" }, h("h3", {}, "Siêu Nhân Hồng"),
@@ -507,6 +587,7 @@ function renderBrowser(body, ma = L.ma, knots = META.roles[ma].knots) {
     UI.choices = h("div", { class: "choices" });
     viewer.replaceChildren(UI.dayline, UI.log, UI.choices);
     const story = new Story(JSON_CACHE[ma]);
+    apDungTen(story);
     const d = parseInt(tag(k.tags, "ngay"), 10);
     if (d) story.variablesState["ngay"] = d;
     story.variablesState["vai"] = ma === "chung" ? "ran_doc" : ma;
@@ -554,6 +635,7 @@ async function openChung() {
     UI.dayline = h("div", { class: "dayline" }); UI.log = h("div", { class: "log" }); UI.choices = h("div", { class: "choices" });
     viewer.replaceChildren(UI.dayline, UI.log, UI.choices);
     const story = new Story(JSON_CACHE.chung);
+    apDungTen(story);
     story.variablesState["vai"] = "ran_doc";
     const d = parseInt(tag(k.tags, "ngay") || tag(k.tags, "ngay_tu"), 10); if (d) story.variablesState["ngay"] = d;
     UI.dayline.replaceChildren(h("b", {}, k.name), h("span", {}, k.tags.join(" · ")));

@@ -176,7 +176,7 @@ _Bạn đổi tên nó thành "Lần sau tin mình". Rồi cất điện thoại
 # dieu_kien:ket_thuc_tu_lanh_trong_mai
 _Ngày 1 tháng 11. Sổ Tạm Ứng: {sl_tam_ung}đ chưa có hóa đơn. Ví: số âm. {ke_toan} trừ dần vào lương, mỗi tháng một ít, đều đặn như mưa._
 _Bạn trả lại căn 1203 ở Sky Ảo. Sofa nhung, đèn chùm, view thành phố: trả hết. Trong tủ lạnh chỉ còn chai tương ớt. Bạn để lại cho người thuê sau._
-_Hẻm 69. Gác lửng. Bà Tư chủ trọ đưa chìa khóa: "Phòng này mát, sát vách thằng Chương. Nay mùng mấy rồi con?"_
+_Hẻm 69. Gác lửng. Bà Tư chủ trọ đưa chìa khóa: "Phòng này mát, sát vách thằng {dan_dau_tu}. Nay mùng mấy rồi con?"_
 _Phòng nhỏ. Cửa sổ nhìn ra tường. Bạn đặt thùng carton xuống, ngồi lên giường, nghe tiếng chart nhấp nháy bên kia vách._
 _Đêm đầu tiên. 23 giờ. Có tiếng gõ tường._
 dan_dau_tu: *(vọng qua vách)* {sales} ơi. Em ở bên đó hả? Anh nghe tiếng giày cao gót.

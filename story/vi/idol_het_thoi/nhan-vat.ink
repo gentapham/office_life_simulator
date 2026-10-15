@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_ran_doc ===
 # npc:ran_doc
-ran_doc: Anh Phát! Em nghe nói nhỏ thôi nha… Nguyên được giao luôn phòng thu tầng 2 vào thứ 6. Giờ của anh đó. Em nói vậy thôi chứ không có ý gì đâu.
+ran_doc: Anh {idol_het_thoi}! Em nghe nói nhỏ thôi nha… Nguyên được giao luôn phòng thu tầng 2 vào thứ 6. Giờ của anh đó. Em nói vậy thôi chứ không có ý gì đâu.
 * [😤 "Thiệt hả? Để anh lên giành lại."]
     ran_doc: Dạ anh cứ từ từ… mà em nghe nói vậy thôi nha.
     ~ qh("ran_doc", 5)
@@ -31,7 +31,7 @@ ran_doc: Anh Phát! Em nghe nói nhỏ thôi nha… Nguyên được giao luôn 
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_giam_doc ===
 # npc:giam_doc
-giam_doc: Phát à. Vào đây. Anh vừa đọc cái báo cáo lượt xem. Kênh em tháng này… ừ thì… có tinh thần đấy.
+giam_doc: {idol_het_thoi} à. Vào đây. Anh vừa đọc cái báo cáo lượt xem. Kênh em tháng này… ừ thì… có tinh thần đấy.
 * [🕶️ "Fan em tăng đều mà anh."]
     giam_doc: *(nhìn bạn qua cặp kính)* Ừ. Tăng đều. Đều như máy.
     _Anh {giam_doc} biết. Anh luôn biết._
@@ -55,7 +55,7 @@ giam_doc: Phát à. Vào đây. Anh vừa đọc cái báo cáo lượt xem. Kê
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_truong_phong ===
 # npc:truong_phong
-truong_phong: Anh Phát ơi, mình sync nhanh 5 phút nhé. Về việc anh xuất hiện trong khung hình các buổi quay của Nguyên.
+truong_phong: Anh {idol_het_thoi} ơi, mình sync nhanh 5 phút nhé. Về việc anh xuất hiện trong khung hình các buổi quay của Nguyên.
 * [🕶️ "Anh xuất hiện là có lý do nghệ thuật."]
     truong_phong: Cái lý do nghệ thuật ấy mình take note lại, họp tiếp sau nhé.
     ~ phat_tt(3)
@@ -66,7 +66,7 @@ truong_phong: Anh Phát ơi, mình sync nhanh 5 phút nhé. Về việc anh xu�
     ~ phat_tt(-3)
 - truong_phong: À mà… anh có biết dùng phần mềm dựng nhạc không? Hỏi thế thôi, không có gì đâu.
 * [💬 "Hông. Mà anh biết người biết. {editor}."]
-    truong_phong: *(ho)* Ừ, Lĩnh… Lĩnh giỏi. Mình biết mà.
+    truong_phong: *(ho)* Ừ, {editor}… {editor} giỏi. Mình biết mà.
     ~ qh("truong_phong", 2)
 * [😶 "Hông. Anh chỉ biết hát."]
     truong_phong: Thế thì mình giống nhau. Tớ chỉ biết họp.
@@ -76,11 +76,11 @@ truong_phong: Anh Phát ơi, mình sync nhanh 5 phút nhé. Về việc anh xu�
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_thanh_ninh ===
 # npc:thanh_ninh
-thanh_ninh: Anh Phát! Anh đeo kính đen trong nhà nhìn sang quá anh ơi! Như ngôi sao thiệt luôn!
+thanh_ninh: Anh {idol_het_thoi}! Anh đeo kính đen trong nhà nhìn sang quá anh ơi! Như ngôi sao thiệt luôn!
 * [🕶️ "Thì anh là ngôi sao mà."]
     thanh_ninh: Dạ anh nói chuẩn quá anh ơi! *(rồi quay sang tiếp tục gõ email, không nhìn bạn nữa)*
     ~ phat_tt(5)
-* [💬 "Em khen anh để làm gì vậy Nhi?"]
+* [💬 "Em khen anh để làm gì vậy {thanh_ninh}?"]
     thanh_ninh: *(cười tươi hơn)* Dạ… tại anh là người của anh {giam_doc} quý nhất mà!
     _Ánh mắt {thanh_ninh} lướt qua màn hình. Một email có logo xanh lá chuối, đóng lại rất nhanh._
     ~ qh("thanh_ninh", 2)
@@ -96,9 +96,9 @@ thanh_ninh: Anh Phát! Anh đeo kính đen trong nhà nhìn sang quá anh ơi! N
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_hong_hot ===
 # npc:hong_hot
-hong_hot: Anh Phát! Nghe gì chưa? Có người thấy anh ngồi ghế đá công viên ôm đàn một mình đó! Anh luyện thanh hay anh thất tình vậy?
+hong_hot: Anh {idol_het_thoi}! Nghe gì chưa? Có người thấy anh ngồi ghế đá công viên ôm đàn một mình đó! Anh luyện thanh hay anh thất tình vậy?
 * [🕶️ "Luyện thanh. Ngôi sao cũng cần không khí."]
-    hong_hot: Ủa nghe chill ghê. Để em đăng story "Anh Phát chill ở công viên" nha!
+    hong_hot: Ủa nghe chill ghê. Để em đăng story "Anh {idol_het_thoi} chill ở công viên" nha!
     ~ qh("hong_hot", 3)
     ~ phat_tt(3)
 * [😇 "Hát thôi. Hát cho người thật nghe."]
@@ -107,7 +107,7 @@ hong_hot: Anh Phát! Nghe gì chưa? Có người thấy anh ngồi ghế đá c
     ~ phat_tt(-3)
 - hong_hot: Mà nè, anh có tin gì hông? Tin gì cũng được. Em đổi cho anh một tin.
 * [🤫 "Hông có. Anh giữ miệng."]
-    hong_hot: Chán anh ghê! Thôi em kể không công: hôm qua anh Thái ngủ gục trong xe, ôm hai cái điện thoại như ôm gối.
+    hong_hot: Chán anh ghê! Thôi em kể không công: hôm qua anh {quan_ly_idol} ngủ gục trong xe, ôm hai cái điện thoại như ôm gối.
     ~ qh("hong_hot", 2)
 * [🧂 "Có. Máy pha cà phê tầng 1 là do anh làm hư."]
     hong_hot: TRỜI ĐẤT! Chuyện lớn! *(chạy đi)*
@@ -117,7 +117,7 @@ hong_hot: Anh Phát! Nghe gì chưa? Có người thấy anh ngồi ghế đá c
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
-con_ong_chau_cha: Anh Phát. Chill hông? Em mới mua máy pha cà phê cho phòng Marketing. Anh uống thử.
+con_ong_chau_cha: Anh {idol_het_thoi}. Chill hông? Em mới mua máy pha cà phê cho phòng Marketing. Anh uống thử.
 * [☕ Uống thử: "Ngon. Mà sao em không mua cho tầng 1 luôn?"]
     con_ong_chau_cha: Ủa sao không mua cái mới luôn? À… tại tầng 1 không phải phòng em.
     _Rồi {con_ong_chau_cha} im một lúc. "Hay em mua thiệt ha."_
@@ -126,7 +126,7 @@ con_ong_chau_cha: Anh Phát. Chill hông? Em mới mua máy pha cà phê cho ph�
 * [🕶️ "Anh chỉ uống cà phê ở quán cà phê đầu ngõ năm 2015."]
     con_ong_chau_cha: Quán đó đóng cửa rồi anh. Giờ là tiệm trà sữa.
     ~ phat_tt(3)
-- con_ong_chau_cha: Mà anh Phát… anh viết "Công Viên" mất bao lâu?
+- con_ong_chau_cha: Mà anh {idol_het_thoi}… anh viết "Công Viên" mất bao lâu?
 * [📖 "Một đêm. Rồi mười một năm hông viết được bài nào nữa."]
     con_ong_chau_cha: *(nhìn bạn rất lâu)* Em hiểu cảm giác đó. Theo kiểu ngược lại.
     ~ qh("con_ong_chau_cha", 10)
@@ -139,7 +139,7 @@ con_ong_chau_cha: Anh Phát. Chill hông? Em mới mua máy pha cà phê cho ph�
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_chua_te_deadline ===
 # npc:chua_te_deadline
-chua_te_deadline: Anh Phát. Anh tới 11 giờ mà hông bị phạt. Bí kíp gì chỉ em với.
+chua_te_deadline: Anh {idol_het_thoi}. Anh tới 11 giờ mà hông bị phạt. Bí kíp gì chỉ em với.
 * [🕶️ "Bí kíp là nổi tiếng trước đã."]
     chua_te_deadline: Ok mom. Vậy em thua từ vòng gửi xe.
     ~ qh("chua_te_deadline", 3)
@@ -158,8 +158,8 @@ chua_te_deadline: Anh Phát. Anh tới 11 giờ mà hông bị phạt. Bí kíp 
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_thuc_tap_sinh ===
 # npc:thuc_tap_sinh
-thuc_tap_sinh: Dạ anh Phát! Anh cần em pha cà phê, xếp ghế hay cầm micro giùm hông ạ?
-* [🤝 "Hông cần gì hết. Ngồi xuống nghỉ đi Duy, ông đi từ 7 giờ sáng rồi."]
+thuc_tap_sinh: Dạ anh {idol_het_thoi}! Anh cần em pha cà phê, xếp ghế hay cầm micro giùm hông ạ?
+* [🤝 "Hông cần gì hết. Ngồi xuống nghỉ đi {thuc_tap_sinh}, ông đi từ 7 giờ sáng rồi."]
     thuc_tap_sinh: Dạ… dạ em nghỉ được hả anh? *(ngồi xuống, ngủ gục sau 40 giây)*
     ~ qh("thuc_tap_sinh", 10)
     ~ phat_tt(-3)
@@ -167,7 +167,7 @@ thuc_tap_sinh: Dạ anh Phát! Anh cần em pha cà phê, xếp ghế hay cầm 
     thuc_tap_sinh: Dạ! *(cầm micro bằng hai tay như cầm cúp)*
     ~ qh("thuc_tap_sinh", 2)
     ~ phat_tt(3)
-- thuc_tap_sinh: Anh Phát… em hỏi ngu nha. Hồi anh mới đi hát, anh có sợ hông?
+- thuc_tap_sinh: Anh {idol_het_thoi}… em hỏi ngu nha. Hồi anh mới đi hát, anh có sợ hông?
 * [📖 "Sợ. Giờ vẫn sợ. Sợ người ta quên."]
     thuc_tap_sinh: Dạ… em bỏ ngân… à, em bỏ nghề cũ để vô đây, em cũng sợ lắm ạ.
     _"Ngân…" gì? {thuc_tap_sinh} ho một tiếng, đổi chủ đề rất nhanh._
@@ -180,7 +180,7 @@ thuc_tap_sinh: Dạ anh Phát! Anh cần em pha cà phê, xếp ghế hay cầm 
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_ke_toan ===
 # npc:ke_toan
-ke_toan: Phát. Cát-xê đám cưới tuần rồi. Hóa đơn đâu em?
+ke_toan: {idol_het_thoi}. Cát-xê đám cưới tuần rồi. Hóa đơn đâu em?
 * [🕶️ "Cát-xê ngôi sao không có hóa đơn, bà ơi."]
     ke_toan: *(nói chậm, rõ)* Không có hóa đơn là không có tiền. Ngôi sao cũng vậy.
     ~ qh("ke_toan", -5)
@@ -201,10 +201,10 @@ ke_toan: Phát. Cát-xê đám cưới tuần rồi. Hóa đơn đâu em?
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_hr ===
 # npc:hr
-hr: Anh Phát, anh rảnh không, lên phòng anh uống trà xíu.
+hr: Anh {idol_het_thoi}, anh rảnh không, lên phòng anh uống trà xíu.
 * [😰 "Ủa có chuyện gì hả ông?"]
     hr: *(mỉm cười)* Không có gì đâu. Anh chỉ muốn lắng nghe em thôi. Mình cùng nhìn lại hành trình mười một năm nha.
-    _Bạn uống ba ly trà ô long. Tuấn hỏi về "kế hoạch phát triển bản thân sau 31/10". Bạn đổ mồ hôi._
+    _Bạn uống ba ly trà ô long. {hr} hỏi về "kế hoạch phát triển bản thân sau 31/10". Bạn đổ mồ hôi._
     ~ cang_thang(10)
     ~ qh("hr", 3)
 * [🕶️ "Ngôi sao không uống trà với HR."]
@@ -212,7 +212,7 @@ hr: Anh Phát, anh rảnh không, lên phòng anh uống trà xíu.
     _{hr} ghi gì đó vào cuốn sổ đen. Cuốn sổ mỏng hơn tuần trước một trang._
     ~ qh("hr", -5)
     ~ phat_tt(3)
-- hr: À anh Phát, ông có thấy {thanh_xin_nghi} hôm nay đâu không?
+- hr: À anh {idol_het_thoi}, ông có thấy {thanh_xin_nghi} hôm nay đâu không?
 * [🤝 "Thấy. Nó đi khảo sát địa điểm quay cho Nguyên."]
     hr: *(nhìn bạn rất lâu)* Thế à.
     ~ qh("thanh_xin_nghi", 5)
@@ -246,7 +246,7 @@ it: Anh. Mic phòng thu hư. Lỗi người dùng.
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_quan_ly_idol ===
 # npc:quan_ly_idol
-quan_ly_idol: *(một tay cầm hai điện thoại, tay kia ly cà phê)* Phát, khoan, anh nghe máy chút… Ừ, ừ. Rồi. Em nói đi, sao đó?
+quan_ly_idol: *(một tay cầm hai điện thoại, tay kia ly cà phê)* {idol_het_thoi}, khoan, anh nghe máy chút… Ừ, ừ. Rồi. Em nói đi, sao đó?
 * [💬 "Anh uống ly thứ mấy rồi?"]
     quan_ly_idol: *(nhìn ly)* Ly thứ… tư. Hay năm. Em đếm giùm anh đi.
     idol_het_thoi: Năm. Thôi đưa em.
@@ -263,7 +263,7 @@ quan_ly_idol: *(một tay cầm hai điện thoại, tay kia ly cà phê)* Phát
     ~ an(20)
     ~ qh("quan_ly_idol", 5)
 * {phat_biet_chuoichien89} [🔒 "Tối nay ChuoiChien89 đăng gì vậy anh?"]
-    quan_ly_idol: *(đỏ tai)* Đăng là… "Anh Phát hôm nay vẫn ăn bánh mì." Em đừng có chọc.
+    quan_ly_idol: *(đỏ tai)* Đăng là… "Anh {idol_het_thoi} hôm nay vẫn ăn bánh mì." Em đừng có chọc.
     ~ qh("quan_ly_idol", 12)
     ~ phat_tt(-3)
 * [😶 "Anh ăn đi. Anh ốm nhom à."]
@@ -274,7 +274,7 @@ quan_ly_idol: *(một tay cầm hai điện thoại, tay kia ly cà phê)* Phát
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_bien_kich ===
 # npc:bien_kich
-bien_kich: Anh Phát. Kịch bản đời anh cần thêm nỗi đau. Một ca sĩ một bài, mười một năm… Anh cho em mượn đời anh làm chất liệu nhé?
+bien_kich: Anh {idol_het_thoi}. Kịch bản đời anh cần thêm nỗi đau. Một ca sĩ một bài, mười một năm… Anh cho em mượn đời anh làm chất liệu nhé?
 * [🕶️ "Đời anh không phải bi kịch. Là sử thi."]
     bien_kich: *(ghi vào sổ bìa da)* "Nhân vật tự nhận đời mình là sử thi." Hay. Cảm ơn anh.
     ~ phat_tt(3)
@@ -296,15 +296,15 @@ bien_kich: Anh Phát. Kịch bản đời anh cần thêm nỗi đau. Một ca s
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_editor ===
 # npc:editor
-editor: *(ngáp)* Dạ… anh Phát. Em đang render. Anh cần gì hông anh?
+editor: *(ngáp)* Dạ… anh {idol_het_thoi}. Em đang render. Anh cần gì hông anh?
 * [💬 "Mấy video 'tiện tay' trên kênh anh tuần nào cũng có. Em biết ai làm hông?"]
-    editor: *(ngừng tay)* Dạ… thuật toán Diu-túp đó anh. Anh Thái nói vậy.
+    editor: *(ngừng tay)* Dạ… thuật toán Diu-túp đó anh. Anh {quan_ly_idol} nói vậy.
     _{editor} trả lời không nhìn bạn. Và vành tai đỏ lên._
     ~ qh("editor", 3)
 * [😇 "Em ngủ chút đi. Render tự chạy mà."]
     editor: Dạ… render xong là xong. Xong em ngủ.
     ~ qh("editor", 5)
-- editor: Anh Phát… anh có biết anh Thái thích uống cà phê kiểu gì hông?
+- editor: Anh {idol_het_thoi}… anh có biết anh {quan_ly_idol} thích uống cà phê kiểu gì hông?
 * [📖 "Đen đá ít đường. Mà ly thứ năm thì ảnh uống sữa cho đỡ xót ruột."]
     editor: *(ghi vào ghi chú điện thoại)* Dạ… cảm ơn anh.
     _Bạn biết chuyện đó mà không biết vì sao mình biết._
@@ -317,12 +317,12 @@ editor: *(ngáp)* Dạ… anh Phát. Em đang render. Anh cần gì hông anh?
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_designer ===
 # npc:designer
-designer: Anh Phát. Poster đám cưới của anh, mẹ cô dâu muốn sửa chữ "Phát" to hơn chữ "Cô dâu". Sửa nhẹ thôi là sửa cái gì ạ?
+designer: Anh {idol_het_thoi}. Poster đám cưới của anh, mẹ cô dâu muốn sửa chữ "Phát" to hơn chữ "Cô dâu". Sửa nhẹ thôi là sửa cái gì ạ?
 * [😇 "Sửa ngược lại đi. Tên cô dâu to nhất. Hôm đó là ngày của người ta."]
     designer: *(nhìn bạn ngạc nhiên)* Lần đầu có người nhờ em sửa cho ĐÚNG đó anh.
     ~ qh("designer", 10)
     ~ phat_tt(-5)
-* [🕶️ "Ừ, chữ Phát to hơn. Fan anh cần thấy."]
+* [🕶️ "Ừ, chữ {idol_het_thoi} to hơn. Fan anh cần thấy."]
     designer: *(thở dài)* Dạ. Lần sửa thứ 9.
     ~ qh("designer", -5)
     ~ phat_tt(3)
@@ -337,7 +337,7 @@ designer: Anh Phát. Poster đám cưới của anh, mẹ cô dâu muốn sửa 
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_sales ===
 # npc:sales
-sales: Anh Phát! Tin chị đi, chị book cho anh show 50 triệu bên BTT Global. Chắc kèo! Anh ký trước giấy cam kết giùm chị.
+sales: Anh {idol_het_thoi}! Tin chị đi, chị book cho anh show 50 triệu bên BTT Global. Chắc kèo! Anh ký trước giấy cam kết giùm chị.
 * [🕶️ "50 triệu là giá năm 2015 rồi em. Giờ phải 80."]
     sales: Ok 80! Chị quen hết mà!
     _Không ai trong hai người tin số nào._
@@ -359,7 +359,7 @@ sales: Anh Phát! Tin chị đi, chị book cho anh show 50 triệu bên BTT Glo
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_chi_dai ===
 # npc:chi_dai
-chi_dai: Phát. Ăn cơm chưa? Ngồi xuống đây. Đeo kính đen trong nhà là sao? Đau mắt hả?
+chi_dai: {idol_het_thoi}. Ăn cơm chưa? Ngồi xuống đây. Đeo kính đen trong nhà là sao? Đau mắt hả?
 * [🕶️ "Phong cách đó bà."]
     chi_dai: Phong cách vấp cầu thang hả? Hôm qua tui thấy rồi đó.
     ~ phat_tt(2)
@@ -382,7 +382,7 @@ chi_dai: Phát. Ăn cơm chưa? Ngồi xuống đây. Đeo kính đen trong nhà
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_dan_dau_tu ===
 # npc:dan_dau_tu
-dan_dau_tu: Phát! Kèo thơm: coin mới, tên là "Cá Viên Coin". Nghe là thấy hợp ông rồi. Lần này là lên thật.
+dan_dau_tu: {idol_het_thoi}! Kèo thơm: coin mới, tên là "Cá Viên Coin". Nghe là thấy hợp ông rồi. Lần này là lên thật.
 * [💸 "Bao nhiêu một suất?"]
     dan_dau_tu: Một triệu. Tuần sau x5. Đây là đáy, đáy thật rồi.
     ** [Đưa 1 triệu.]
@@ -406,7 +406,7 @@ dan_dau_tu: Phát! Kèo thơm: coin mới, tên là "Cá Viên Coin". Nghe là t
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_thanh_xin_nghi ===
 # npc:thanh_xin_nghi
-thanh_xin_nghi: *(ho nhẹ)* Anh Phát… em hơi sốt. Chiều nay đám cưới quận 3, em đổi lịch anh qua 6 giờ nha.
+thanh_xin_nghi: *(ho nhẹ)* Anh {idol_het_thoi}… em hơi sốt. Chiều nay đám cưới quận 3, em đổi lịch anh qua 6 giờ nha.
 * [😇 "Ừ, đổi đi. Em về nghỉ."]
     thanh_xin_nghi: Dạ em cảm ơn anh! *(bước đi nhanh, nhanh không giống người sốt)*
     ~ qh("thanh_xin_nghi", 8)
@@ -414,7 +414,7 @@ thanh_xin_nghi: *(ho nhẹ)* Anh Phát… em hơi sốt. Chiều nay đám cư�
     thanh_xin_nghi: Dạ… *(ho mạnh hơn)* … dạ.
     ~ qh("thanh_xin_nghi", -5)
     ~ phat_tt(3)
-- thanh_xin_nghi: Anh Phát… em hỏi chút. Bộ vest kim tuyến năm 2015 anh còn giữ hông anh?
+- thanh_xin_nghi: Anh {idol_het_thoi}… em hỏi chút. Bộ vest kim tuyến năm 2015 anh còn giữ hông anh?
 * [🤝 "Còn. Em cần mượn hả?"]
     thanh_xin_nghi: Dạ… cho em mượn một tuần. Đi… đám cưới bà con.
     { biet(son_thi_hat):
@@ -429,7 +429,7 @@ thanh_xin_nghi: *(ho nhẹ)* Anh Phát… em hơi sốt. Chiều nay đám cư�
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
-bac_bao_ve: Phát à. Ngồi uống chén trà đá. Hôm nay đi làm sớm thế, mới 10 giờ 50.
+bac_bao_ve: {idol_het_thoi} à. Ngồi uống chén trà đá. Hôm nay đi làm sớm thế, mới 10 giờ 50.
 * [😇 "Dạ, con ngồi chút."]
     _Bác rót trà. Radio phát một bài hát cũ. Hai người ngồi im._
     bac_bao_ve: Năm 2015 cháu đứng ở cổng này ký tặng cả buổi chiều. Bác nhớ.
@@ -450,7 +450,7 @@ bac_bao_ve: Phát à. Ngồi uống chén trà đá. Hôm nay đi làm sớm th�
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_sieu_nhan_hong ===
 # npc:sieu_nhan_hong
-sieu_nhan_hong: *(tạo dáng)* Anh Phát! Hồng không phải màu, Hồng là thái độ! Anh dạy em cách cầm micro cho ngầu đi anh!
+sieu_nhan_hong: *(tạo dáng)* Anh {idol_het_thoi}! Hồng không phải màu, Hồng là thái độ! Anh dạy em cách cầm micro cho ngầu đi anh!
 * {phat_tinh_tuong <= 60} [🎤 "Cách miệng một nắm tay. Đừng nhìn xuống đất. Nhìn người hàng cuối."]
     sieu_nhan_hong: *(cầm thử)* Vầy hả anh? Ủa nhìn hàng cuối thì người hàng đầu buồn hông?
     idol_het_thoi: Hàng đầu đã thương em rồi. Hàng cuối mới cần em nhìn.
@@ -465,7 +465,7 @@ sieu_nhan_hong: *(tạo dáng)* Anh Phát! Hồng không phải màu, Hồng là
     sieu_nhan_hong: Thích ăn… CHUỐI chiên! Đúng hông anh?
     ~ phat_sua_loi_nguyen = phat_sua_loi_nguyen + 1
     ~ qh("sieu_nhan_hong", 5)
-- sieu_nhan_hong: Anh Phát… hồi anh nổi, anh có sợ người ta biết anh là ai hông?
+- sieu_nhan_hong: Anh {idol_het_thoi}… hồi anh nổi, anh có sợ người ta biết anh là ai hông?
 * [📖 "Hồi đó anh sợ người ta biết anh không giỏi như họ tưởng. Giờ anh sợ người ta không biết anh luôn."]
     sieu_nhan_hong: *(im lặng, rồi nói nhỏ)* Em cũng sợ cái đầu. Sợ tháo mũ ra là hết.
     ~ qh("sieu_nhan_hong", 10)

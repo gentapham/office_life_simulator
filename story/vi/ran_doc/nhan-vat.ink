@@ -332,13 +332,13 @@ bien_kich: Suỵt. Tôi đang tìm cảm hứng. Gió hôm nay có vị của s�
     ~ qh("bien_kich", 8)
 + -> ran_doc_tudo_het_chuyen
 - bien_kich: Em có thấy cuốn sổ bìa da của tôi không? Tôi làm rơi đâu đó.
-* {co(so_tay_oanh)} [🔒 "Tui có. Chương 12 viết về tui hả?"]
+* {co(so_tay_oanh)} [🔒 "Tui có. {dan_dau_tu} 12 viết về tui hả?"]
     bien_kich: *(trắng bệch)* Em đọc rồi?
     bien_kich: Đây không phải đạo, đây là… quan sát. Trả tôi đi. Tôi đổi tên nhân vật.
     * * [😇 Trả lại.]
         ~ mat(so_tay_oanh)
         ~ qh("bien_kich", 20)
-        bien_kich: Cảm ơn. Chương 12 tôi sẽ viết lại. Tử tế hơn.
+        bien_kich: Cảm ơn. {dan_dau_tu} 12 tôi sẽ viết lại. Tử tế hơn.
     * * [🐍 Giữ lại: "Đổi cái khác đi bà."]
         bien_kich: Em… muốn gì?
         ~ rd_do_doc = gioi_han(rd_do_doc + 10)

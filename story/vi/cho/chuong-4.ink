@@ -39,7 +39,7 @@ hr: Bla bla bla… bla bla… bla! # phu_de:Trò chơi tiếp theo: Truyền bá
 _Bánh chuối chiên. Truyền bằng miệng. Bạn sinh ra là để chơi trò này._
 * [🏃 Nhảy vào chơi.]
     _Bạn chạy vào giữa hàng người. Bánh chuối chiên đang được truyền từ miệng {sales} sang miệng {designer}._
-    _Bạn ngoạm giữa chừng. Nuốt. Chạy về đích. Thắng tuyệt đối._
+    _Bạn ngoạm giữa chừng. Nuốt. Chạy về đích. {giam_doc} tuyệt đối._
     hr: Bla bla… TUẤT… bla bla bla! # phu_de:Đội có {cho} thắng! Luật không cấm chó!
     ~ ch_an(10)
     ~ ch_cung(5)

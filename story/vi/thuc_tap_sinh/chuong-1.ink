@@ -160,7 +160,7 @@ _{bien_kich} ngồi thẳng lên, mở laptop. Bạn liếc thấy màn hình: m
     thuc_tap_sinh: Dạ… em có một ý ạ. Một anh nhân viên ngân hàng bỏ việc đi làm siêu nhân. Tên là "Người Gác Két" ạ.
     _Cả phòng im. {bien_kich} đóng laptop lại hơi mạnh tay._
     bien_kich: Ý tưởng… cũng được. Nghe hơi quen. Chắc ai cũng từng nghĩ tới.
-    truong_phong: Tớ take note lại nhé. Ý hay đấy, Duy… à, cậu {thuc_tap_sinh}.
+    truong_phong: Tớ take note lại nhé. Ý hay đấy, {thuc_tap_sinh}… à, cậu {thuc_tap_sinh}.
     ~ duy_kn(5)
     ~ duy_lua_doi(5)
     ~ qh("bien_kich", -3)

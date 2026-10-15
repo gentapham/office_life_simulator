@@ -60,6 +60,8 @@ Mọi file phải qua kiểm tra (✅) trước khi commit.
   ```
 - **Người nói phụ** (không thuộc 23 nhân vật chính) dùng mã có trong [ten-nguoi-noi.json](ten-nguoi-noi.json). Mã mới phải được thêm vào file đó, kèm tên tiếng Việt và tiếng Anh.
 - **Tên trong câu**: luôn dùng biến, **không bao giờ viết cứng tên**: `{hong_hot}`, `{giam_doc}`, `{cong_ty}`. Biệt danh cũng vậy: `{ran_doc} Ếch`.
+  - Người chơi đặt lại được tên của 22 nhân vật. Riêng **Nguyên** (Siêu Nhân Hồng) là tên cố định, viết thẳng hoặc dùng `{sieu_nhan_hong}` đều được.
+  - Lỡ viết cứng tên thì chạy `node tools/doi-ten-thanh-bien.mjs`: công cụ đổi sang biến và bỏ qua từ ghép thường gặp (Bình luận, Ngân hàng, Sơn màu…). Chạy xong nhớ chạy lại `npm run kiem-tra-ink`.
 - **Xưng hô**: `{anh_chi()}`, `{ong_ba()}` (cho người chơi), `{anh_chi_cua("ke_toan")}`, `{ong_ba_cua("hong_hot")}`, `{ong_ay_cua("truong_phong")}`.
 - **Dẫn truyện / mô tả** (không ai nói): cả dòng bọc trong dấu gạch dưới: `_Bác {bac_bao_ve} uống một ngụm trà đá._`. **Không** bắt đầu dòng bằng `*` (Ink hiểu là lựa chọn).
 - **Hành động trong câu thoại**: `*(...)*` ở giữa câu thì được: `cho: Gâu! *(vẫy đuôi)*`.

@@ -39,7 +39,7 @@ _Trưa đó, kênh của {idol_het_thoi} đăng một bài hát mới: "Hồng C
 ~ long_bh(-10)
 ~ cang_thang(15)
 * [📞 Gọi {idol_het_thoi}: "Anh lấy bài của tui."]
-    idol_het_thoi: *(im lặng lâu)* …Anh cần một bài hit, Long. Anh xin lỗi.
+    idol_het_thoi: *(im lặng lâu)* …Anh cần một bài hit, {con_ong_chau_cha}. Anh xin lỗi.
     _Bạn cúp máy. Bạn không biết nên giận ai: người lấy, hay người đã ngân bài hát ở pantry._
     ~ qh("idol_het_thoi", -20)
 * [😶 Im lặng.]
@@ -50,7 +50,7 @@ _Trưa đó, kênh của {idol_het_thoi} đăng một bài hát mới: "Hồng C
 === con_ong_chau_cha_2810_rong_bi_lo ===
 # ngay:28 # gio:20:00 # noi:quan_ca_phe_song_ao
 _Tối. Ca làm của "Rồng". Bàn số 2 có một người khách đeo kính, mặc y chang bộ đồ bạn mặc hôm thứ Hai: {thuc_tap_sinh}._
-thuc_tap_sinh: Dạ cho em một ly… *(nhìn lên)* …anh Long?!
+thuc_tap_sinh: Dạ cho em một ly… *(nhìn lên)* …anh {con_ong_chau_cha}?!
 * [🤫 "Suỵt. Ở đây tui tên Rồng."]
     thuc_tap_sinh: *(thì thầm)* Dạ… anh Rồng. Dạ anh cho em… xin làm chung được hông ạ?
     con_ong_chau_cha: Anh có lương thực tập mà?
@@ -59,7 +59,7 @@ thuc_tap_sinh: Dạ cho em một ly… *(nhìn lên)* …anh Long?!
     ~ qh("thuc_tap_sinh", 12)
     ~ long_bi_phat_hien_lam_them = true
 * [😷 Giả giọng: "Dạ anh nhầm người rồi ạ."]
-    thuc_tap_sinh: Dạ… dạ xin lỗi anh ạ. Mà… giày anh giống anh Long quá.
+    thuc_tap_sinh: Dạ… dạ xin lỗi anh ạ. Mà… giày anh giống anh {con_ong_chau_cha} quá.
     _Đôi sneaker trắng tinh. Thứ duy nhất bạn quên thay._
     ~ long_bh(3)
 * [🛵 Bưng khay, làm tiếp.]
@@ -101,7 +101,7 @@ _Thang máy kẹt. Bạn nhìn cầu thang bộ. Bạn chưa bao giờ chạy tr
 === con_ong_chau_cha_2910_chot_bao_ve ===
 # ngay:29 # gio:12:30 # noi:chot_bao_ve
 _Trưa. Wifi sập, chòi bảo vệ thành tổng đài giấy. Bác {bac_bao_ve} ngồi giữa một chồng giấy nhắn, đeo kính lão, phân loại như phân thư._
-bac_bao_ve: Long. Có giấy của cháu. *(đưa ra một tờ)* Chú cháu gửi.
+bac_bao_ve: {con_ong_chau_cha}. Có giấy của cháu. *(đưa ra một tờ)* Chú cháu gửi.
 _Tờ giấy chữ chú, nét run: "Tối mai sau họp, chú cháu mình nói chuyện. Chú xin lỗi chuyện căn nhà."_
 * [🍵 Ngồi xuống uống chén trà với bác.]
     bac_bao_ve: Chú cháu cũng không dễ đâu. Bác thấy hết. *(rót trà)* Bác không nói gì đâu.
@@ -155,7 +155,7 @@ _Lưu Lực biết penthouse bị bán. Lưu Lực biết thẻ bằng 0. Lưu L
 # ngay:30 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
 _Họp đánh giá cuối tháng. Bạn tới lúc 8 giờ 55. Sớm. Cả phòng ngạc nhiên. {truong_phong} đặt sổ kẻ ô ngay ngắn trước mặt._
 _Hợp đồng của {idol_het_thoi} hết hạn hôm nay. Danh sách cắt giảm nằm đâu đó trong tập hồ sơ hồng của {hr}._
-giam_doc: *(trước cả phòng họp)* Ghế Phó Giám đốc, anh đề xuất… Long. Cháu… à, em có ý kiến gì không? Anh không ép, tùy em.
+giam_doc: *(trước cả phòng họp)* Ghế Phó Giám đốc, anh đề xuất… {con_ong_chau_cha}. Cháu… à, em có ý kiến gì không? Anh không ép, tùy em.
 _{truong_phong} đặt bút xuống. Cả phòng nín thở._
 * [👑 "Dạ, cháu nhận."]
     ~ long_nhan_ghe = true
@@ -172,7 +172,7 @@ _{truong_phong} đặt bút xuống. Cả phòng nín thở._
     { long_ke_nhat_khong_muon_ghe:
         _{truong_phong} nhìn bạn. Lần này không phải ánh nhìn của đối thủ._
     }
-* {long_mo_phong_thu_nhat && qh_truong_phong >= 60} [🔒 "Cháu đề cử ông Nhật. Ổng làm việc thật. Cháu chỉ xin lo phần âm nhạc."]
+* {long_mo_phong_thu_nhat && qh_truong_phong >= 60} [🔒 "Cháu đề cử ông {truong_phong}. Ổng làm việc thật. Cháu chỉ xin lo phần âm nhạc."]
     ~ long_de_cu_nhat = true
     ~ long_tu_choi_ghe = true
     ~ long_o_du = 0
@@ -183,13 +183,13 @@ _{truong_phong} đặt bút xuống. Cả phòng nín thở._
 
 = nhat_tra_loi
 { long_nhat_nghe_demo && qh_truong_phong >= 60:
-    truong_phong: *(đứng dậy, rút trong sổ ra một tờ giấy)* Em cũng có một lá đơn đề cử. Em đề cử Long. Long lo âm nhạc, em lo sản xuất.
+    truong_phong: *(đứng dậy, rút trong sổ ra một tờ giấy)* Em cũng có một lá đơn đề cử. Em đề cử {con_ong_chau_cha}. {con_ong_chau_cha} lo âm nhạc, em lo sản xuất.
     ~ long_nhat_de_cu_long = true
     _Hai lá đơn đề cử nằm trên bàn chú, chỉ vào nhau như hai mũi tên trên sơ đồ của {truong_phong}._
     giam_doc: *(gãi đầu)* Thế thì… hai đứa cùng làm. Anh không ép, tùy các em.
 - else:
-    giam_doc: *(nhìn {truong_phong})* Nhật?
-    truong_phong: *(chậm rãi)* …Em nhận ạ. Cảm ơn Long.
+    giam_doc: *(nhìn {truong_phong})* {truong_phong}?
+    truong_phong: *(chậm rãi)* …Em nhận ạ. Cảm ơn {con_ong_chau_cha}.
     _{truong_phong} gật đầu với bạn. Một cái gật đầu nặng hơn mọi cuộc họp._
 }
 -> END
@@ -199,7 +199,7 @@ _{truong_phong} đặt bút xuống. Cả phòng nín thở._
 # ngay:30 # gio:19:00 # noi:sky_ao_tang_30
 _Tối. Penthouse đã có người đặt cọc. Đồ đạc của bạn nằm trong ba cái thùng giấy. Chuông cửa reo. Là chú._
 _Chú đứng ngoài, không vào. Lần đầu tiên chú bấm chuông nhà mình._
-giam_doc: Long. Chú xin lỗi chuyện căn nhà. Chú định nói từ tháng 9. Mà chú không biết nói thế nào.
+giam_doc: {con_ong_chau_cha}. Chú xin lỗi chuyện căn nhà. Chú định nói từ tháng 9. Mà chú không biết nói thế nào.
 * [🤝 "Hông sao chú. Cháu tìm được phòng rồi. Hẻm 69."]
     giam_doc: *(khựng lại)* Hẻm 69? Cháu… ở trọ?
     con_ong_chau_cha: Dạ. 15 mét vuông. Cửa sổ nhìn tường. Cháu trả bằng lương.
@@ -208,7 +208,7 @@ giam_doc: Long. Chú xin lỗi chuyện căn nhà. Chú định nói từ tháng
     ~ qh("giam_doc", 10)
     ~ long_tl(8)
 * [☂️ "Chú ơi… cháu ở đâu giờ?"]
-    giam_doc: *(im lặng)* Chú cũng đang không biết mình ở đâu, Long ạ.
+    giam_doc: *(im lặng)* Chú cũng đang không biết mình ở đâu, {con_ong_chau_cha} ạ.
     ~ long_od(-5)
     ~ cang_thang(8)
 * [🎸 Mở hộp đàn: "Chú vào đi. Cháu hát cho chú nghe bản cuối."]
@@ -236,16 +236,16 @@ _Đêm Hồng Halloween. Sân khấu Đêm Hồng, Phường Tân Drama. Chú b�
     -> phat_hat
 }
 _{quan_ly_idol} chạy tới, cầm 2 cái điện thoại: "Long, cần chốt: bài của em, ai hát? Dòng 'Nhạc & lời' ghi gì?"_
-* {long_tang_bai_nguyen || qh_sieu_nhan_hong >= 30} [🩷 "Siêu Nhân Hồng hát. Ghi: 'Nhạc & lời: Long'. Không có chữ gì phía trước."]
+* {long_tang_bai_nguyen || qh_sieu_nhan_hong >= 30} [🩷 "Siêu Nhân Hồng hát. Ghi: 'Nhạc & lời: {con_ong_chau_cha}'. Không có chữ gì phía trước."]
     ~ long_nguoi_hat = "nguyen"
     ~ long_ghi_ten = true
     ~ long_tang_bai_nguyen = true
     quan_ly_idol: Chuyện này để anh lo.
-* {long_nguoi_hat == "song_ca" || long_hua_song_ca_ghi_ten} [🎤 "Song ca: Siêu Nhân Hồng với anh Phát. Ghi tên tui."]
+* {long_nguoi_hat == "song_ca" || long_hua_song_ca_ghi_ten} [🎤 "Song ca: Siêu Nhân Hồng với anh {idol_het_thoi}. Ghi tên tui."]
     ~ long_nguoi_hat = "song_ca"
     ~ long_ghi_ten = true
     ~ long_tang_bai_nguyen = true
-    quan_ly_idol: *(khựng lại)* Phát… với Nguyên? Em chắc hông? *(rồi gật, rất nhanh)* Được.
+    quan_ly_idol: *(khựng lại)* {idol_het_thoi}… với Nguyên? Em chắc hông? *(rồi gật, rất nhanh)* Được.
     ~ qh("quan_ly_idol", 8)
 * [🙈 "Siêu Nhân Hồng hát. Đừng ghi tên tui."]
     ~ long_nguoi_hat = "nguyen"
@@ -315,7 +315,7 @@ _19 giờ 30, Đêm Hồng mở màn: phim ngắn "Người Hùng Không Tên", 
 === con_ong_chau_cha_3110_sau_dem_hong ===
 # ngay:31 # gio:22:30 # noi:san_khau_dem_hong # bat_buoc
 _22 giờ 30. Đèn sân khấu tắt dần. Pháo giấy hồng phủ kín sàn. Cả công ty ngồi bệt xuống. {thuc_tap_sinh} ngồi cạnh bạn, mặc đồ y chang bạn, như mọi ngày._
-thuc_tap_sinh: Dạ anh Long… mai anh làm gì ạ?
+thuc_tap_sinh: Dạ anh {con_ong_chau_cha}… mai anh làm gì ạ?
 * [🎸 "Viết bài thứ hai."]
     thuc_tap_sinh: Dạ! Em nghe đầu tiên được hông ạ?
     con_ong_chau_cha: Anh nghe thứ hai. Người đầu tiên đã đặt chỗ rồi.

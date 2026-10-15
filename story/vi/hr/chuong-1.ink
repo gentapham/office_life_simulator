@@ -7,11 +7,11 @@
 # ngay:1 # gio:07:55 # noi:tang_tret # bat_buoc
 _7 giờ 55. Bạn đứng cạnh máy chấm công, áo sơ mi ủi phẳng, tay cầm ly trà atiso còn bốc khói._
 _Đây là vị trí quen thuộc của bạn suốt 7 năm. Cũng là lý do 7 năm nay không ai dám đi ngang máy chấm công mà ngẩng mặt lên._
-bac_bao_ve: Cháu Tuấn đứng đấy từ 7 rưỡi rồi à? Hôm nay ký cái hợp đồng to lắm hả?
+bac_bao_ve: Cháu {hr} đứng đấy từ 7 rưỡi rồi à? Hôm nay ký cái hợp đồng to lắm hả?
 hr: Dạ, 5 tỷ đó bác. Mà bác ơi, hôm nay Quốc tế Người cao tuổi, trưa nay cả công ty mừng bác nha.
 bac_bao_ve: Ơ thôi. Bác có già đâu. Bác mới 50.
 _{thuc_tap_sinh} chạy vào lúc 7 giờ 56, thấy bạn, khựng lại như gặp ma._
-thuc_tap_sinh: Dạ… dạ em chào anh Tuấn ạ! Em… em có làm gì sai không ạ?
+thuc_tap_sinh: Dạ… dạ em chào anh {hr} ạ! Em… em có làm gì sai không ạ?
 * [😊 Cười thật tươi: "Có gì đâu em, anh đứng chơi thôi."]
     ~ hr_so(3)
     ~ hr_so_nguoi_chay = hr_so_nguoi_chay + 1
@@ -53,7 +53,7 @@ _Ở mục "Địa chỉ thường trú cũ", {ran_doc} ghi: "Xóm Cây Me"._
     -> hr_0110_ho_so_hieu.s_tra_sua
 
 = s_tra_sua
-ran_doc: Anh Tuấn, trưa nay em mời anh ly trà sữa nha. Ngày đầu đi làm, em muốn làm quen mọi người.
+ran_doc: Anh {hr}, trưa nay em mời anh ly trà sữa nha. Ngày đầu đi làm, em muốn làm quen mọi người.
 * [😇 "Ừ, cảm ơn em. Mà anh uống ít đường thôi."]
     ~ qh("ran_doc", 5)
     ~ tien_cong(100000)
@@ -96,7 +96,7 @@ _Bút ký. 5 tỷ về tài khoản. Cả phòng hò reo. {hong_hot} đã livest
 # ngay:1 # gio:12:00 # noi:chong_bao_ve # bat_buoc
 _Trưa. Cả công ty kéo nhau ra chòi bảo vệ với một ổ bánh bông lan và một tấm thiệp ghi "Mừng Ngày Người Cao Tuổi"._
 _{bac_bao_ve} đứng giữa, tay cầm ly trà đá, mặt đỏ như gấc. {cho} đội một cái nơ hồng ai đó đã kịp gắn lên đầu._
-chi_dai: Tuấn! HR phát biểu đi chớ, đứng đó cười hoài.
+chi_dai: {hr}! HR phát biểu đi chớ, đứng đó cười hoài.
 _21 cặp mắt quay qua bạn. Bạn nghe được tiếng ai đó nuốt nước miếng._
 * [😇 Phát biểu từ trái tim: "Bác là người đầu tiên tới công ty, người cuối cùng tắt đèn. Tụi con cảm ơn bác."]
     ~ qh("bac_bao_ve", 10)
@@ -113,7 +113,7 @@ _21 cặp mắt quay qua bạn. Bạn nghe được tiếng ai đó nuốt nư�
     ~ hr_tra()
     ~ qh("bac_bao_ve", 6)
     bac_bao_ve: Ừ. Trà sen ngon. Lâu lắm rồi mới có người pha trà cho bác.
-    hong_hot: Ủa, anh Tuấn mời trà mà không ai bị đuổi kìa! Ghi vô lịch sử công ty đi!
+    hong_hot: Ủa, anh {hr} mời trà mà không ai bị đuổi kìa! Ghi vô lịch sử công ty đi!
     ~ hr_so(-2)
 - ~ an(20)
 cho: Gâu! *(cắn một miếng bánh bông lan rồi chạy mất)*
@@ -123,7 +123,7 @@ cho: Gâu! *(cắn một miếng bánh bông lan rồi chạy mất)*
 === hr_0110_ho_so_hong ===
 # ngay:1 # gio:15:30 # noi:phong_giam_doc # bat_buoc
 _Phòng giám đốc vách kính. Mùi nước hoa đàn ông và mùi tiền mới. {giam_doc} vừa cúp điện thoại ngân hàng, mặt tươi rói._
-giam_doc: Tuấn đấy à. Ngồi đi em. Em uống gì? À, em mang trà theo rồi. Thói quen tốt đấy.
+giam_doc: {hr} đấy à. Ngồi đi em. Em uống gì? À, em mang trà theo rồi. Thói quen tốt đấy.
 _{giam_doc} đẩy qua bàn một tập hồ sơ. Màu hồng. Từ tháng 10, cái gì cũng phải hồng._
 _Trang bìa: "PHƯƠNG ÁN TÁI CẤU TRÚC NHÂN SỰ (NẾU CHIẾN DỊCH THẤT BẠI)"._
 giam_doc: Cái này chỉ là phương án dự phòng thôi. Anh tin Siêu Nhân Hồng. Nhưng 26/10 em cho anh 7 cái tên. Anh không ép, tùy em.
@@ -134,7 +134,7 @@ _Bên trong chỉ có đúng 1 trang. 21 cái tên, không kể {giam_doc}. Tên
     ~ hr_han_chot = 7
 * [🤝 "Anh ơi, mình cắt chi phí khác trước được không? Golf trên sân thượng chẳng hạn."]
     _{giam_doc} nhìn bạn rất lâu._
-    giam_doc: Em nói chuyện giống Hương thế. Thôi được. 6 tên. Nhưng sân golf mini là để tiếp đối tác, em hiểu không?
+    giam_doc: Em nói chuyện giống {chi_dai} thế. Thôi được. 6 tên. Nhưng sân golf mini là để tiếp đối tác, em hiểu không?
     ~ qh("giam_doc", -5)
     ~ hr_han_chot = 6
     ~ hr_nghe(3)
@@ -179,7 +179,7 @@ _Nghệ danh trên màn hình: "SƠN KIM TUYẾN"._
 _Bạn đặt tách trà xuống. Giọng hát đó làm bạn quên mất tập hồ sơ hồng trong cặp._
 * [📱 Nhắn tin bình chọn. Một lần thôi.]
     ~ hr_so_lan_vote = hr_so_lan_vote + 1
-    _"Cảm ơn quý khán giả đã bình chọn cho Sơn Kim Tuyến." Bạn mỉm cười. Ở một mình thì cười thoải mái, không ai sợ._
+    _"Cảm ơn quý khán giả đã bình chọn cho {thanh_xin_nghi} Kim Tuyến." Bạn mỉm cười. Ở một mình thì cười thoải mái, không ai sợ._
 * [📱 Nhắn 5 lần. Giọng hay vầy mà.]
     ~ hr_so_lan_vote = hr_so_lan_vote + 5
     ~ tien_cong(-15000)
@@ -193,7 +193,7 @@ _Bạn đặt tách trà xuống. Giọng hát đó làm bạn quên mất tập
 _Ngày Nụ cười Thế giới. Tối qua 22:05, {giam_doc} nhắn riêng cho bạn: "Mai ai chấm công cũng phải cười nhé. Em làm mẫu."_
 _Bạn đứng cạnh máy chấm công. Bạn cười. Bạn cười hết sức._
 _7 giờ 56: {thuc_tap_sinh} thấy bạn, quay đầu chạy ra bãi xe. 7 giờ 57: {designer} và {hong_hot} thấy bạn, nắm tay nhau quay đầu. 7 giờ 58: {editor} vốn không tính đi làm buổi sáng, đi ngang chỉ để mua bánh mì, thấy bạn, về nhà ngủ tiếp._
-bac_bao_ve: Cháu Tuấn này. 4 đứa quay về rồi đấy. Cười ít thôi.
+bac_bao_ve: Cháu {hr} này. 4 đứa quay về rồi đấy. Cười ít thôi.
 * [😊 Tiếp tục cười. Lệnh sếp mà.]
     ~ hr_so(8)
     ~ hr_so_nguoi_chay = hr_so_nguoi_chay + 4
@@ -206,7 +206,7 @@ bac_bao_ve: Cháu Tuấn này. 4 đứa quay về rồi đấy. Cười ít thô
     ~ hr_cuoi_may_cham_cong = "khau_trang"
     _Mọi người quay lại. Có người còn nói "chào anh" mà không lắp bắp. Hóa ra phân nửa nỗi sợ nằm ở cái miệng._
     bac_bao_ve: Ừ. Thế này được. Trông như bác sĩ, nhưng là bác sĩ hiền.
-* [🤝 Nhờ {thuc_tap_sinh} đứng thay. Duy cười chuẩn nhân viên ngân hàng.]
+* [🤝 Nhờ {thuc_tap_sinh} đứng thay. {thuc_tap_sinh} cười chuẩn nhân viên ngân hàng.]
     ~ hr_cuoi_may_cham_cong = "duy"
     ~ qh("thuc_tap_sinh", 5)
     thuc_tap_sinh: Dạ em làm liền ạ! *(cười một nụ cười 32 cái răng, chuẩn mực tới đáng ngờ)* Kính chào quý khách… à quý anh chị!
@@ -223,7 +223,7 @@ truong_phong: Mình sync nhanh 5 phút nhé. Mỗi phòng đề xuất một cá
 sales: Bên em chốt rồi nha anh. 3 nhà tài trợ, 2 tỷ, tập đoàn Bánh Tráng Trộn Toàn Cầu. Mr. Kevin Trộn quen chị lâu rồi. No cap!
 thuc_tap_sinh: Dạ… em có một ý tưởng phim ngắn ạ, về một người hùng không ai biết tên…
 bien_kich: *(ghi chép rất nhanh)* Hay đó em. Rất… cảm hứng.
-truong_phong: Anh Tuấn, phòng nhân sự góp gì?
+truong_phong: Anh {hr}, phòng nhân sự góp gì?
 * [📣 "Tui đăng tin tuyển dụng: 'Tuyển người chịu được màu hồng'. Cho nó viral."]
     ~ hr_dang_tin_tuyen_dung = true
     ~ follow(40000)
@@ -277,7 +277,7 @@ _Thứ 7. Căn 604. Bạn lau từng hộp trà trên kệ: Atiso, Bạc hà, C�
 _Tập hồ sơ hồng nằm trên bàn. Bạn đã mang nó về nhà, vì tủ ở công ty bạn không tin bằng cái kệ trà này._
 ~ hr_ro_ri(-10)
 _Điện thoại rung. Là {chi_dai}._
-chi_dai: Tuấn, mai Ngày Động vật, tui tắm cho Tuất. Ông qua phụ hông? Hay ông lại ngồi nhà vuốt ve mấy hộp trà?
+chi_dai: {hr}, mai Ngày Động vật, tui tắm cho {cho}. Ông qua phụ hông? Hay ông lại ngồi nhà vuốt ve mấy hộp trà?
 * [😇 "Mai tui qua. Tui mang trà hoa cúc cho bà, tắm chó xong uống cho mát."]
     ~ qh("chi_dai", 5)
     chi_dai: Được. Mà đừng có cười với con chó. Nó cắn đó.

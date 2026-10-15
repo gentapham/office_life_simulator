@@ -44,7 +44,7 @@ _Mốc 3: 500.000 người theo dõi._
 = s_dat
 dan_dau_tu: Nửa triệu! Biểu đồ dựng đứng! Lần này là lên thật, thật luôn!
 _{giam_doc} thở phào, ngồi phịch xuống ghế, ngay dưới tấm bằng "Doanh nhân của năm"._
-giam_doc: Tuấn. Tuần này… em cứ giữ danh sách như thế. Không thêm.
+giam_doc: {hr}. Tuần này… em cứ giữ danh sách như thế. Không thêm.
 ~ hr_ds(-1)
 * [🍵 "Dạ. Anh uống trà hông? Trà sen."]
     giam_doc: Ừ. Rót cho anh. Hôm nay anh mệt.
@@ -56,7 +56,7 @@ giam_doc: Tuấn. Tuần này… em cứ giữ danh sách như thế. Không th�
 
 = s_truot
 dan_dau_tu: Ờ… 500 ngàn thì… chưa. Mà đây là vùng tích lũy…
-giam_doc: Thôi Chương. Ra ngoài đi.
+giam_doc: Thôi {dan_dau_tu}. Ra ngoài đi.
 _{dan_dau_tu} đi ra. Chỉ còn bạn và {giam_doc}. Ông ấy không nhìn bạn._
 giam_doc: Thêm tên vào đi em.
 * [📓 "Dạ."]
@@ -72,7 +72,7 @@ giam_doc: Thêm tên vào đi em.
     ~ qh("giam_doc", -3)
 * {hr_nghi_trang_2} [🔒 "Anh ơi, danh sách của anh dày hơn của em. Trang 2 ghi gì vậy anh?"]
     _{giam_doc} ngẩng lên. Lần đầu tiên trong 7 năm, ông ấy nhìn bạn như nhìn một người ngang hàng._
-    giam_doc: Em… về đi Tuấn.
+    giam_doc: Em… về đi {hr}.
     ~ hr_ds(1)
     _Câu đó, ông ấy nói nhỏ như sợ ai nghe. Bạn đi ra, biết chắc trang 2 có tồn tại._
 - ~ tinh_than_cong_ty = tinh_than_cong_ty - 5
@@ -150,7 +150,7 @@ _{cho} ngồi cách cái bánh 3 mét. Mắt không rời. Đuôi không vẫy. 
 * [🔗 Cột dây xích vào chân bàn.]
     ~ qh("cho", -5)
     _{cho} nhìn bạn với ánh mắt phản bội. Cái bàn bạn cột là… bàn để bánh kem._
-* [🙏 Nhờ {chi_dai} giữ. Tuất chỉ nghe lời bả.]
+* [🙏 Nhờ {chi_dai} giữ. {cho} chỉ nghe lời bả.]
     ~ qh("chi_dai", 3)
     chi_dai: Được. Mà tui chỉ giữ được tới lúc tui đi lấy nước.
 - -> hr_2310_an_ninh_banh_kem.s_do
@@ -158,7 +158,7 @@ _{cho} ngồi cách cái bánh 3 mét. Mắt không rời. Đuôi không vẫy. 
 = s_do
 _7 giờ tối. Livestream đông nghẹt. {sieu_nhan_hong} cúi xuống thổi nến. Một vệt vàng lao qua. Cái bánh 5 tầng đổ nghiêng như tháp Pisa, rồi đổ hẳn._
 _Kem hồng dính lên mặt {sieu_nhan_hong}, lên màn hình livestream, lên cà vạt {giam_doc}. {cho} đứng giữa đống kem, liếm mép, vẫy đuôi._
-sieu_nhan_hong: *(cười tới chảy nước mắt sau lớp mũ dính kem)* Tuất! Quà sinh nhật của anh hả!
+sieu_nhan_hong: *(cười tới chảy nước mắt sau lớp mũ dính kem)* {cho}! Quà sinh nhật của anh hả!
 ~ follow(60000)
 _Bình luận chạy như thác. Không ai giận. Clip "Chó phá bánh sinh nhật siêu nhân" đang chạy._
 * [😊 Cười to. Lần này không cần giữ.]
@@ -176,13 +176,13 @@ _Bên cánh gà, ai đó đang ngân nga rất khẽ trong lúc dọn kem. Micro
 _Bạn đứng cứng người. Cái giọng đó. Bạn đã nghe nó hàng chục tối, qua cái tivi ở căn 604._
 * [🕵️ Bước ra sau cánh gà xem ai.]
     _Sau cánh gà là {thanh_xin_nghi}, tay cầm khăn lau, mặt đỏ bừng khi thấy bạn._
-    thanh_xin_nghi: Dạ… em… em đang test micro cho anh Phát ạ!
+    thanh_xin_nghi: Dạ… em… em đang test micro cho anh {idol_het_thoi} ạ!
     _{idol_het_thoi} đang ở tít bên kia sân khấu, không cầm micro nào._
     { hr_thay_bong_kim_tuyen:
         _Hạt kim tuyến trên má hôm 16/10. Giọng hát trên tivi. Giọng hát này. Bạn đặt hết lên bàn cân trong đầu. Nó nghiêng về một phía._
         ~ hr_biet_son_kim_tuyen = true
         ~ phat_hien(son_thi_hat)
-        hr: …Sơn. Em hát hay lắm.
+        hr: …{thanh_xin_nghi}. Em hát hay lắm.
         thanh_xin_nghi: *(đứng hình)* Dạ… dạ anh nói gì em hông hiểu…
         hr: Ừ. Anh cũng không hiểu gì hết. Đi dọn kem tiếp đi em.
         ~ qh("thanh_xin_nghi", 10)
@@ -194,7 +194,7 @@ _Bạn đứng cứng người. Cái giọng đó. Bạn đã nghe nó hàng ch�
     _Câu hát dứt. Bình luận: "Hát nữa đi!" Không ai hát nữa._
     ~ cang_thang(-5)
 - _Rồi {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang đứng sau máy quay._
-sieu_nhan_hong: Vũ ơi… anh thích em. Không phải PR đâu. Thiệt đó.
+sieu_nhan_hong: {chua_te_deadline} ơi… anh thích em. Không phải PR đâu. Thiệt đó.
 _Cả livestream nổ tung. Hashtag VũƠiTrảLờiĐi lên top xu hướng trong 10 phút. {chua_te_deadline} đứng đơ, tay vẫn bấm máy quay._
 * [🤝 Lại gần {chua_te_deadline}, nói nhỏ: "Em không cần trả lời ngay. Mai lên phòng anh uống trà, nếu muốn."]
     ~ qh("chua_te_deadline", 8)
@@ -209,7 +209,7 @@ _Cả livestream nổ tung. Hashtag VũƠiTrảLờiĐi lên top xu hướng tro
 _Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai}. Bàn xếp theo cặp: {truong_phong}–{con_ong_chau_cha}, {designer}–{bien_kich}, {sales}–{ke_toan}, {chi_dai}–{thanh_ninh}, và bạn–{thanh_xin_nghi}. Bàn riêng góc phòng có bảng "Chủ nợ" cho {dan_dau_tu}._
 _Tin đồn về danh sách cắt giảm đã lan cả tuần. Ai cũng biết. Không ai dám hỏi._
 _Rồi {chi_dai} đập bàn._
-chi_dai: Tuấn! Ông có danh sách cắt giảm đúng hông? Có tên ai, nói luôn. Đứa nào bị đuổi mà khóc, tui chỉ mặt ông. # hen_gio:5
+chi_dai: {hr}! Ông có danh sách cắt giảm đúng hông? Có tên ai, nói luôn. Đứa nào bị đuổi mà khóc, tui chỉ mặt ông. # hen_gio:5
 * [🤝 "Có. Nhưng chưa có tên ai cả. Và tui đang làm mọi cách để nó trống tới 31/10."]
     _Cả phòng ồn ào. Rồi im. Rồi ai đó vỗ tay. {thuc_tap_sinh}. Rồi {hong_hot}. Rồi cả phòng._
     ~ hr_tu_thu_danh_sach = true
@@ -252,7 +252,7 @@ thanh_xin_nghi: Dạ… anh hỏi trước đi ạ.
 * [📓 "Anh chưa từng nói: hồ sơ của em dày 3 cm."]
     thanh_xin_nghi: Dạ… em biết rồi anh. Ai cũng biết.
     ~ hr_so(2)
-* {hr_biet_son_kim_tuyen} [🔒 "Anh chưa từng nói: anh là fan của một ca sĩ tên Sơn Kim Tuyến."]
+* {hr_biet_son_kim_tuyen} [🔒 "Anh chưa từng nói: anh là fan của một ca sĩ tên {thanh_xin_nghi} Kim Tuyến."]
     _{thanh_xin_nghi} đặt ly nước xuống. Tay hơi run._
     thanh_xin_nghi: Anh… anh biết từ khi nào?
     hr: Từ cái hạt kim tuyến trên má em. Anh không nói ai đâu. Anh chỉ… muốn nói là anh bình chọn cho em {hr_so_lan_vote} lần rồi.
@@ -267,7 +267,7 @@ thanh_xin_nghi: Dạ… anh hỏi trước đi ạ.
 === hr_2510_ban_ket ===
 # ngay:25 # gio:20:00 # noi:can_ho_604
 _Chủ nhật. Căn 604. Tối nay bán kết "Giọng Ca Ước Mơ". Bạn pha sẵn trà hoa cúc, kéo ghế sát tivi._
-_Sáng nay {hong_hot} đăng story mập mờ: "Có người thấy anh Thái ở sảnh LL. Có người thấy cả Nhi. Ối dồi ôi." Bạn đã lưu lại để mai xử lý. Tối nay là của Sơn Kim Tuyến._
+_Sáng nay {hong_hot} đăng story mập mờ: "Có người thấy anh {quan_ly_idol} ở sảnh LL. Có người thấy cả {thanh_ninh}. Ối dồi ôi." Bạn đã lưu lại để mai xử lý. Tối nay là của {thanh_xin_nghi} Kim Tuyến._
 _Sơn Kim Tuyến bước ra. Đèn sân khấu. Kim tuyến. Một bài ballad về người đi làm xa nhà._
 { hr_biet_son_kim_tuyen:
     _Lần này, bạn biết người đứng đó là ai. Bạn nhìn cái cách em nó nắm micro. Giống hệt cách em nó nắm cuốn lịch của Siêu Nhân Hồng._
@@ -279,7 +279,7 @@ _Sơn Kim Tuyến bước ra. Đèn sân khấu. Kim tuyến. Một bài ballad 
 * [📱 Bình chọn vừa phải, 5 lần.]
     ~ hr_so_lan_vote = hr_so_lan_vote + 5
     ~ tien_cong(-15000)
-- _Kết quả: Sơn Kim Tuyến vào chung kết. Chung kết trực tiếp 20:00 thứ 7, 31/10. Cùng tối với Đêm Hồng._
+- _Kết quả: {thanh_xin_nghi} Kim Tuyến vào chung kết. Chung kết trực tiếp 20:00 thứ 7, 31/10. Cùng tối với Đêm Hồng._
 { hr_biet_son_kim_tuyen:
     _Bạn nhìn lịch. 19:30 Đêm Hồng. 20:00 chung kết. Em nó định làm thế nào đây?_
     ~ cang_thang(5)
@@ -345,21 +345,21 @@ _Ai đã làm rò rỉ? Bạn có ba cái tên trong đầu._
 _4 giờ chiều. Bạn ôm tập hồ sơ hồng lên phòng kính. Danh sách có {hr_danh_sach_den} tên. Hạn chót: {hr_han_chot}._
 giam_doc: Ngồi đi em. Đưa anh xem.
 _{giam_doc} mở tập của bạn. Tập của ông ấy nằm ngay bên cạnh. Cũng màu hồng. Dày hơn. Gió từ máy lạnh lật trang đầu của nó lên._
-_Trang 2. Một dòng viết tay: "Người cuối cùng: Tuấn (sau khi HR cắt xong hết)."_
+_Trang 2. Một dòng viết tay: "Người cuối cùng: {hr} (sau khi HR cắt xong hết)."_
 ~ hr_da_xem_trang_2 = true
 _Bạn đọc nó hai lần. Rồi ba lần. Rồi {giam_doc} ngẩng lên, thấy bạn đang nhìn gì._
 * [😶 Không nói gì. Chụp lại bằng mắt. Gật đầu chào, đi ra.]
     _Bạn đi ra như người vừa uống nhầm cả ấm trà gừng. {giam_doc} gọi theo "Tuấn…", nhưng không nói gì thêm._
     ~ cang_thang(15)
 * [💬 "Anh… viết cái này khi nào vậy anh?"]
-    giam_doc: *(gập tập hồ sơ lại)* Ngày 1/10. Cùng ngày với em. Tuấn, anh… anh không ép…
+    giam_doc: *(gập tập hồ sơ lại)* Ngày 1/10. Cùng ngày với em. {hr}, anh… anh không ép…
     hr: Anh không ép, tùy em. Em biết rồi anh.
     ~ qh("giam_doc", -5)
     ~ hr_nghe(3)
     _Lần đầu tiên câu cửa miệng của {giam_doc} được người khác nói trước. Ông ấy im lặng._
 * [😊 Cười.]
     _Bạn cười. Cười rất lâu. {giam_doc} lùi ghế lại 20 cm._
-    giam_doc: Tuấn… em ổn không?
+    giam_doc: {hr}… em ổn không?
     hr: Dạ ổn anh. Nụ cười nhân sự.
     ~ hr_so(10)
 - { hr_danh_sach_den < hr_han_chot:
@@ -415,7 +415,7 @@ ke_toan: Ông muốn bỏ công ty?
     ke_toan: Ông gửi nhầm lúc 11 giờ 41 tối? Ừ. Tui xóa.
     ~ qh("ke_toan", -5)
 - { RANDOM(1, 3) == 1:
-    _Ở cửa pantry, {hong_hot} đứng cầm ly cà phê, mắt tròn xoe. Trong 1 giờ, cả công ty biết tin: "Tuấn với Thương sắp bỏ công ty!"_
+    _Ở cửa pantry, {hong_hot} đứng cầm ly cà phê, mắt tròn xoe. Trong 1 giờ, cả công ty biết tin: "Tuấn với {ke_toan} sắp bỏ công ty!"_
     ~ hr_tin_don_bo_cong_ty = true
     ~ tinh_than_cong_ty = tinh_than_cong_ty - 10
     ~ hr_ro_ri(15)
@@ -446,7 +446,7 @@ _Lưu Lực lùi lại 3 bước, cúi nhặt giấy lia lịa._
 # ngay:27 # gio:15:00 # noi:phong_hr # bat_buoc
 _Chiều. Bạn ngồi trong phòng HR với một ấm trà và một danh sách mới: những người đang muốn đi. Mỗi cuộc là một "phỏng vấn nghỉ việc". Mỗi cuộc là một ấm trà._
 _Người đầu tiên: {thanh_ninh}, cầm một lá đơn chưa ký._
-thanh_ninh: Anh Tuấn… em chỉ hỏi thử thôi ạ. Nếu em… đi, thì thủ tục thế nào ạ?
+thanh_ninh: Anh {hr}… em chỉ hỏi thử thôi ạ. Nếu em… đi, thì thủ tục thế nào ạ?
 * [🍵 Pha trà hoa nhài. "Em không cần nói lý do. Nhưng em có muốn kể không?"]
     ~ hr_tra()
     thanh_ninh: *(im lặng, rồi)* Bên kia… không phải mời em làm trợ lý. Họ muốn em làm tai mắt. Em… không biết nữa.
@@ -457,8 +457,8 @@ thanh_ninh: Anh Tuấn… em chỉ hỏi thử thôi ạ. Nếu em… đi, thì 
     thanh_ninh: Dạ… em chưa tính. *(cất lá đơn đi)*
     ~ hr_so(3)
 - _Người thứ hai: {quan_ly_idol}, hai điện thoại, mắt thâm._
-quan_ly_idol: Tuấn. Anh nói thẳng. LL mời anh 36 triệu, kèm Nguyên. Anh chưa quyết.
-* [🍵 "Anh Thái uống trà sen hông? Rồi kể em nghe, ai sẽ lo cho ông Phát nếu anh đi?"]
+quan_ly_idol: {hr}. Anh nói thẳng. LL mời anh 36 triệu, kèm Nguyên. Anh chưa quyết.
+* [🍵 "Anh {quan_ly_idol} uống trà sen hông? Rồi kể em nghe, ai sẽ lo cho ông {idol_het_thoi} nếu anh đi?"]
     _{quan_ly_idol} khựng lại rất lâu. Một điện thoại rung. Anh ấy tắt._
     quan_ly_idol: …Không ai.
     ~ qh("quan_ly_idol", 10)

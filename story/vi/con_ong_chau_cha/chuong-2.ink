@@ -7,7 +7,7 @@
 === con_ong_chau_cha_0510_khoa_quan_ly ===
 # ngay:5 # gio:08:25 # noi:phong_giam_doc # bat_buoc
 _Thứ Hai, 8 giờ 25. Lần đầu tiên trong năm bạn tới công ty trước 9 giờ. Vì chú gọi lúc 7 giờ sáng._
-giam_doc: Long. Tuần này cháu phải làm việc thật. Học "Khóa Quản Lý Có Tâm", và tự lên kế hoạch quảng bá MV. Anh không ép, tùy cháu.
+giam_doc: {con_ong_chau_cha}. Tuần này cháu phải làm việc thật. Học "Khóa Quản Lý Có Tâm", và tự lên kế hoạch quảng bá MV. Anh không ép, tùy cháu.
 _Chú đẩy qua một cuốn sách dày, bìa có hình chú đang cười, tay chỉ lên trời._
 * [😎 "Chill đi chú. Một tuần thôi mà."]
     giam_doc: Một tuần thôi. Nhưng cả công ty nhìn vào đấy.
@@ -50,8 +50,8 @@ designer: Không có đèn này thì hình ra như chụp trong hầm.
     - else:
         _Thẻ báo lỗi. Bạn tưởng mạng chập chờn._
     }
-* [🔧 "Anh Bảo, mượn bóng ở phòng họp tầng 2 qua được hông?"]
-    it: …Được. Mà phòng họp của Nhật đó.
+* [🔧 "Anh {it}, mượn bóng ở phòng họp tầng 2 qua được hông?"]
+    it: …Được. Mà phòng họp của {truong_phong} đó.
     _Bạn tháo bóng đèn phòng "Sáng Tạo". Sáng đó {truong_phong} họp trong ánh sáng lờ mờ, không hiểu vì sao._
     ~ long_tl(5)
     ~ qh("it", 3)
@@ -66,7 +66,7 @@ designer: Không có đèn này thì hình ra như chụp trong hầm.
 === con_ong_chau_cha_0610_quan_voi_duy ===
 # ngay:6 # gio:11:00 # noi:quan_ca_phe_song_ao # bat_buoc
 _Đang chụp thì {sieu_nhan_hong} bỏ đi giúp một bà cụ (điều khoản số 3). Cả đoàn nghỉ. Bạn ra quán Sống Ảo. {thuc_tap_sinh} lẽo đẽo theo sau, mặc đúng bộ đồ của bạn hôm thứ Năm._
-thuc_tap_sinh: Dạ… em ngồi đây được hông anh Long?
+thuc_tap_sinh: Dạ… em ngồi đây được hông anh {con_ong_chau_cha}?
 * [🤝 "Ngồi đi. Uống gì? Tui mời."]
     thuc_tap_sinh: Dạ… dạ nước lọc thôi ạ.
     _Bạn gọi hai ly cà phê kem. {thuc_tap_sinh} uống từng ngụm nhỏ như sợ ly cà phê hết._
@@ -77,7 +77,7 @@ thuc_tap_sinh: Dạ… em ngồi đây được hông anh Long?
     _Story của bạn có góc áo của {thuc_tap_sinh}. Bình luận: "Hai anh mặc đồ đôi hả?"_
     ~ qh("thuc_tap_sinh", 2)
 - _Im lặng một lúc. Ngoài kia, clip {sieu_nhan_hong} nhặt cam cho bà cụ bắt đầu lan trên Tóp-tóp._
-* [👂 "Anh Duy, trước khi đi thực tập anh làm gì vậy?"]
+* [👂 "Anh {thuc_tap_sinh}, trước khi đi thực tập anh làm gì vậy?"]
     thuc_tap_sinh: Dạ… làm văn phòng thôi ạ. *(nhìn xuống ly)* Ngồi văn phòng cao lắm anh. Cao mà… lạnh.
     _Bạn nhớ tới tầng 30. Cao, mà lạnh. Bạn không nói gì. Bạn chỉ nhớ câu đó._
     ~ long_bh(5)
@@ -107,7 +107,7 @@ _Ở góc màn hình, nút "Ký luôn cho lẹ" sáng xanh, nhấp nháy như m�
     ~ long_od(2)
 * [☂️ Gọi chú: "Chú ơi, chú coi giùm cháu rồi cháu ký."]
     ~ long_goi_chu()
-    giam_doc: *(qua điện thoại)* Long. Tuần này cháu tự làm. Chú cúp máy đây.
+    giam_doc: *(qua điện thoại)* {con_ong_chau_cha}. Tuần này cháu tự làm. Chú cúp máy đây.
     _Lần đầu tiên chú cúp máy trước. Bạn nhìn cái điện thoại rất lâu._
 - -> END
 
@@ -214,8 +214,8 @@ quan_ly_quan: Tên gì em?
 === con_ong_chau_cha_1110_anh_hoi_nho ===
 # ngay:11 # gio:20:30 # noi:sky_ao_tang_30
 _Chủ nhật, Ngày Quốc tế Trẻ em gái. Cả công ty đăng ảnh hồi nhỏ. {truong_phong} đăng ảnh 7 tuổi đang "chủ trì họp" với gấu bông._
-* [📸 Đăng ảnh 8 tuổi, ôm cây đàn đồ chơi, đứng cạnh chú Thắng hồi còn trẻ.]
-    hong_hot: Ủa! Anh Long hồi nhỏ chơi đàn hả? Đàn thật hay đàn đồ chơi?
+* [📸 Đăng ảnh 8 tuổi, ôm cây đàn đồ chơi, đứng cạnh chú {giam_doc} hồi còn trẻ.]
+    hong_hot: Ủa! Anh {con_ong_chau_cha} hồi nhỏ chơi đàn hả? Đàn thật hay đàn đồ chơi?
     con_ong_chau_cha: Đồ chơi. *(xóa bình luận đó 1 phút sau)*
     ~ long_bh(3)
     ~ qh("hong_hot", 3)
@@ -234,7 +234,7 @@ _Chủ nhật, Ngày Quốc tế Trẻ em gái. Cả công ty đăng ảnh hồi
 === con_ong_chau_cha_1210_giao_ban ===
 # ngay:12 # gio:08:40 # noi:phong_hop_sang_tao # bat_buoc
 _Thứ Hai. Lương trễ 2 ngày. {truong_phong} triệu tập "họp về việc lương về trễ". Không ai biết lương ở đâu, kể cả {truong_phong}._
-chua_te_deadline: Ủa ông Long, ông là cháu sếp mà, ông biết lương ở đâu hông?
+chua_te_deadline: Ủa ông {con_ong_chau_cha}, ông là cháu sếp mà, ông biết lương ở đâu hông?
 _Cả phòng quay sang. Bạn chưa bao giờ phải lo lương. Bạn có thẻ của chú._
 * [☂️ "Để tui gọi chú tui hỏi."]
     ~ long_goi_chu()

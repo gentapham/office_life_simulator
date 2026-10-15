@@ -1357,7 +1357,7 @@ npc_chi_nail: Ngồi đây chị kể nghe nè… Hôm qua có một cô ở cô
     ~ tien_cong(-150000)
     ~ cang_thang(-10)
 * [😶 "Chị ơi sơn nhanh giùm em."]
-    npc_chi_nail: Sơn nhanh thì móng không đẹp. Kể chuyện thì móng mới đẹp. Đó là bí quyết.
+    npc_chi_nail: {thanh_xin_nghi} nhanh thì móng không đẹp. Kể chuyện thì móng mới đẹp. Đó là bí quyết.
     ~ tien_cong(-120000)
 - -> END
 

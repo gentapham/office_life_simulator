@@ -184,7 +184,7 @@ sales: *(nhỏ giọng)* Dạ. Còn 47 nghìn tới ngày 10.
     ~ qh("sales", 8)
     ~ an(20)
     ~ tien_cong(-25000)
-    sales: Chị Quỳnh, khi nào em giàu, em mua cho chị cả con gà.
+    sales: Chị {designer}, khi nào em giàu, em mua cho chị cả con gà.
 * [🍳 Mua trứng luộc, ăn một mình, nhìn trứng thấy thương bản thân.]
     ~ an(25)
     ~ tien_cong(-15000)
@@ -229,7 +229,7 @@ _{sieu_nhan_hong} ngồi cuối phòng, xem MV của chính mình, tay nắm ch�
 _Thứ 7, ngày 10. Ngày nhận lương. App ngân hàng: 0 đồng chưa về. Group Zalo-lô: 214 tin nhắn chưa đọc, toàn chữ "ủa"._
 _Tủ lạnh căn 203 chỉ còn một hộp sữa chua và một trái chanh khô._
 ~ ds_cam(-10)
-sales: *(nhắn)* Chị Quỳnh, lương trễ rồi. Tin chị đi, nhận job LL đi. Chị che cho.
+sales: *(nhắn)* Chị {designer}, lương trễ rồi. Tin chị đi, nhận job LL đi. Chị che cho.
 sales: Em cũng hết tiền. Nhưng em có… niềm tin.
 * [🥬 Mở laptop thứ hai. Anh Lá Chuối có job logo quán nướng.]
     -> designer_mg_alt_tab_mo_dau
@@ -269,7 +269,7 @@ _Bạn lục được tấm ảnh năm 5 tuổi: cầm bút sáp vẽ con cá vo
 === designer_1210_giao_ban ===
 # ngay:12 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Thứ 2. Lương vẫn chưa về lúc 8 giờ 30. {truong_phong} mở slide số 1: "Tinh thần trách nhiệm"._
-truong_phong: Lương là chuyện của ngân hàng. Còn poster là chuyện của mình nhé. Quỳnh, tuần này em ra 12 poster.
+truong_phong: Lương là chuyện của ngân hàng. Còn poster là chuyện của mình nhé. {designer}, tuần này em ra 12 poster.
 * [💬 "Dạ 12 poster, anh cho em xin 12 brief luôn được hông ạ?"]
     truong_phong: Brief thì… mình họp nhanh để ra brief nhé.
     ~ nghi(-10)
@@ -333,7 +333,7 @@ _Ngày Doanh nhân Việt Nam. {giam_doc} tự tặng hoa cho mình. {thanh_ninh
 thanh_ninh: …và như mặt trời, anh {giam_doc} chưa bao giờ đi làm trễ trong tim mỗi chúng em!
 giam_doc: *(lau nước mắt)* Hay quá, em viết hay quá.
 _{sales} kéo tay bạn ra hành lang, mặt hừng hực quyết tâm._
-sales: Chị Quỳnh. Em không chịu thua. Em cần một cái bằng khen. "Doanh nhân của năm", do BTT Global trao tặng. 30 phút.
+sales: Chị {designer}. Em không chịu thua. Em cần một cái bằng khen. "Doanh nhân của năm", do BTT Global trao tặng. 30 phút.
 * [🗂️ Làm. Viền vàng, con dấu đỏ, chữ ký Kevin Trộn bay bổng.]
     ~ qh("sales", 10)
     ~ ds_toi(-2)
@@ -371,8 +371,8 @@ con_ong_chau_cha: *(chỉ ngay bản xấu nhất, chữ cầu vồng, nền kim
     ~ qh("con_ong_chau_cha", -3)
     ~ follow(10000)
 * [🤝 Nhắn {truong_phong}: "Anh ơi, phòng mình bị lấn sân."]
-    truong_phong: *(xuất hiện sau 40 giây, thở hổn hển)* Long, poster là việc của phòng Sản xuất. Mình họp nhanh nhé.
-    con_ong_chau_cha: Chill đi Nhật. Thì lấy bản của em ấy.
+    truong_phong: *(xuất hiện sau 40 giây, thở hổn hển)* {con_ong_chau_cha}, poster là việc của phòng Sản xuất. Mình họp nhanh nhé.
+    con_ong_chau_cha: Chill đi {truong_phong}. Thì lấy bản của em ấy.
     _{truong_phong} thắng. Lần đầu tiên bạn thấy {truong_phong} cười như vừa được đề bạt._
     ~ qh("truong_phong", 10)
     ~ qh("con_ong_chau_cha", -5)

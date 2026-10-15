@@ -8,16 +8,16 @@
 _6 giờ 30 sáng thứ 7. Ngày Quốc tế Xóa nghèo. Trước cổng công ty là một chiếc xe khách thường, không máy lạnh. Ghế bọc da… giả, rách một nửa._
 _Bạn đề xuất 120 triệu. {ke_toan} cắt còn 60. Kết quả là chiếc xe này, và 10 phòng khách sạn hướng thẳng ra… bãi xe._
 dan_dau_tu: Từ hôm nay anh thoát nghèo! Coin của anh x5 rồi! Chuyến này anh bao nước mía!
-ke_toan: Anh Chương trả nợ trước rồi bao sau.
+ke_toan: Anh {dan_dau_tu} trả nợ trước rồi bao sau.
 _Bạn là trưởng đoàn. Trên tay là danh sách 22 người, 1 con chó, và 1 tờ giấy trắng: sơ đồ phòng._
-sieu_nhan_hong: Tuấn ơi! Cho anh ở chung phòng với nhân viên mới nha! Để gắn kết tập thể!
+sieu_nhan_hong: {hr} ơi! Cho anh ở chung phòng với nhân viên mới nha! Để gắn kết tập thể!
 ran_doc: *(mặt cứng đờ, cười)* Dạ… em… sao cũng được ạ.
 * [😊 "Được luôn! Gắn kết là đúng tinh thần team building!"]
     ~ qh("sieu_nhan_hong", 5)
     _{ran_doc} cười. Bạn thấy bàn tay em nó nắm chặt quai ba lô tới trắng bệch._
 * {hr_biet_xom_cay_me} [🔒 Nhớ tới tấm ảnh xóm Cây Me. "Để anh xem lại đã nha."]
     _Bạn nhìn {ran_doc}. {ran_doc} nhìn xuống đất._
-    sieu_nhan_hong: Đi mà Tuấn! Anh hứa không ngáy!
+    sieu_nhan_hong: Đi mà {hr}! Anh hứa không ngáy!
     _Cuối cùng vẫn là phòng chung, vì không còn phòng nào khác. Nhưng bạn dặn {ran_doc}: "Có gì gọi anh, phòng 203."_
     ~ qh("ran_doc", 5)
     ~ hr_nghe(3)
@@ -32,7 +32,7 @@ chi_dai: Trò 1: Kéo co các phòng ban! Thua thì nhảy xuống biển!
 _Phòng Sản xuất kéo với phòng Nghệ sĩ. {truong_phong} chỉ đạo bằng cách… họp ngay giữa sân. Phòng Nghệ sĩ thắng nhờ {sieu_nhan_hong} một mình bằng ba người._
 chi_dai: Trò 2: Truyền bánh chuối chiên bằng miệng! Không dùng tay!
 _Bánh chuối chiên đi qua miệng {thuc_tap_sinh}, {con_ong_chau_cha}, {hong_hot}… rồi {cho} lao vào giữa, đớp gọn cả miếng, vẫy đuôi._
-chi_dai: Tuất thắng! Ai cãi?
+chi_dai: {cho} thắng! Ai cãi?
 * [📱 Quay clip {sieu_nhan_hong} chơi trò tập thể, gửi {hong_hot} đăng.]
     { hr_vi_pham_phong == 0:
         ~ follow(50000)
@@ -92,7 +92,7 @@ _Rồi tới lượt bạn. 21 cặp mắt, 1 cặp mắt chó. Ai cũng chờ H
 * [📂 Nói thật: "Có một danh sách. Tui đang cố để nó trống."]
     ~ hr_noi_that_lua_trai = "that"
     _Tiếng sóng. Tiếng lửa lách tách. Rồi 21 tiếng hỏi cùng một lúc._
-    giam_doc: *(tỉnh rượu ngay lập tức)* Tuấn!
+    giam_doc: *(tỉnh rượu ngay lập tức)* {hr}!
     ~ hr_tu_thu_danh_sach = true
     ~ hr_ro_ri(-30)
     ~ hr_so(-15)
@@ -115,7 +115,7 @@ _Gần nửa đêm. Phòng 203. Bạn vừa nằm xuống thì điện thoại r
 }
 
 = s_cai_nhau
-_Cuộc gọi 1: {chi_dai}. "Tuấn, nhỏ Nhi ngáy." Cuộc gọi 2: {truong_phong}. "Anh muốn họp với {con_ong_chau_cha} về vấn đề điều hòa." Cuộc gọi 3: {dan_dau_tu}, giọng thì thầm: "Ba chủ nợ đang ngồi đếm tiền trên giường anh."_
+_Cuộc gọi 1: {chi_dai}. "Tuấn, nhỏ {thanh_ninh} ngáy." Cuộc gọi 2: {truong_phong}. "Anh muốn họp với {con_ong_chau_cha} về vấn đề điều hòa." Cuộc gọi 3: {dan_dau_tu}, giọng thì thầm: "Ba chủ nợ đang ngồi đếm tiền trên giường anh."_
 _Bạn chạy qua chạy lại giữa 3 tầng trong dép tổ ong._
 * [🗣️ Ngôn Ngữ Nhân Sự: "Mình cùng nhìn lại hành trình đêm nay nha mọi người."]
     { RANDOM(1, 2) == 1:
@@ -187,7 +187,7 @@ _Chủ đề mới: "HR xếp phòng hay xếp án?" 47 bình luận._
 * [🍵 Đóng laptop. Pha trà. Mai tính.]
     ~ cang_thang(-5)
 * [✍️ Viết đề xuất "buổi trà làm lành" gửi {giam_doc}.]
-    _"Kính gửi anh Thắng. Em đề xuất một buổi trà chiều thứ 2, tự nguyện, không ghi sổ, không kỷ luật…" Bạn viết tới 1 giờ sáng._
+    _"Kính gửi anh {giam_doc}. Em đề xuất một buổi trà chiều thứ 2, tự nguyện, không ghi sổ, không kỷ luật…" Bạn viết tới 1 giờ sáng._
     ~ nghi(-10)
     ~ uy_tin = uy_tin + 2
 - -> END
@@ -223,7 +223,7 @@ _4 giờ 30, pantry chật. Không ai bị mời. Ai cũng tự tới._
 ~ follow(30000)
 ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
 ~ hr_so(-10)
-chi_dai: Thôi, Nhi, chị xin lỗi vụ nửa đêm. Em ngáy thiệt, nhưng chị nói hơi to.
+chi_dai: Thôi, {thanh_ninh}, chị xin lỗi vụ nửa đêm. Em ngáy thiệt, nhưng chị nói hơi to.
 thanh_ninh: Dạ… em cũng xin lỗi chị. Chị nói… chuẩn quá chị ơi.
 chi_dai: Đó! Lại nịnh!
 _Cả pantry cười. Ai đó đăng ảnh lên story: "Trà làm lành ở {cong_ty}". Người ngoài thả tim, rồi tò mò vào xem trang Siêu Nhân Hồng._
@@ -280,7 +280,7 @@ designer: Ủa, quà của tui sao hộp trà móp vậy anh?
 # ngay:20 # gio:11:00 # noi:chong_bao_ve # bat_buoc
 _Chòi bảo vệ. {bac_bao_ve} cầm một lá thư tay, ký tên "G". Bên trong còn một phong bì dán kín, đề: "Chỉ mở khi công ty sắp sập"._
 _Cả công ty đứng ngoài cổng chuẩn bị tiệc sinh nhật 16 tuổi. {bac_bao_ve} nhìn bạn._
-bac_bao_ve: Cháu Tuấn. Thư của ông G gửi. Bác không biết có nên đọc trước mọi người không. Bác chỉ là người giữ thư thôi.
+bac_bao_ve: Cháu {hr}. Thư của ông G gửi. Bác không biết có nên đọc trước mọi người không. Bác chỉ là người giữ thư thôi.
 * [🤝 "Bác đọc đi bác. Mọi người cần nghe một người không phải sếp nói về công ty."]
     ~ hr_doc_thu_g = true
     _{bac_bao_ve} đứng lên ghế đẩu. Đọc chậm, giọng Bắc trầm: "…16 năm rồi. Tôi vẫn nhớ căn phòng 20 mét vuông. Gửi lời cảm ơn tới từng người còn ở lại…"_
@@ -304,7 +304,7 @@ _Sau quán ốc, tăng hai ở Karaoke Hát Cho Nhau Nghe. {idol_het_thoi} hát 
 giam_doc: Các em! Anh tuyên bố! Tháng sau… tăng lương 20%! Cả công ty!
 _Cả phòng karaoke nổ tung. {hong_hot} quay. {ke_toan} lấy tay che mặt._
 _Rồi {giam_doc} nhìn thấy bạn, mắt hơi tỉnh lại. Ông ấy ngồi xuống cạnh bạn, nói nhỏ:_
-giam_doc: Tuấn. Tăng lương thì phải bớt người. Em hiểu không? Danh sách…
+giam_doc: {hr}. Tăng lương thì phải bớt người. Em hiểu không? Danh sách…
 * [📓 "Dạ. Em hiểu."]
     ~ hr_ds(1)
     ~ cang_thang(10)

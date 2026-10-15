@@ -21,7 +21,7 @@ editor: Tui… xuất nhầm. Tui chọn nhầm "Fanpage" thay vì "Lưu nháp".
     editor: Ông nói câu đó lúc này thiệt hả?
     ~ qh("editor", -8)
     ~ follow(5000)
-- _Cùng lúc đó, ở bàn số liệu, {dan_dau_tu} đứng bật dậy: "Bộ lọc của tui lần ra 80 nghìn tài khoản ảo. Tất cả đều comment 'Anh Phát đỉnh nóc kịch trần'."_
+- _Cùng lúc đó, ở bàn số liệu, {dan_dau_tu} đứng bật dậy: "Bộ lọc của tui lần ra 80 nghìn tài khoản ảo. Tất cả đều comment 'Anh {idol_het_thoi} đỉnh nóc kịch trần'."_
 _Cả phòng quay sang {idol_het_thoi}. {idol_het_thoi} đeo kính đen vào. Trong phòng. Lúc 9 giờ 30 sáng._
 -> END
 

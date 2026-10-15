@@ -380,7 +380,7 @@ designer: Ông tới đòi file hả? Poster sửa lần thứ 17. Cho xin feedb
 # npc:sales
 sales: Em {chua_te_deadline}! Tin chị đi, Đêm Hồng chị kéo được 3 nhà tài trợ. Chắc kèo!
 _{sales} nhỏ hơn bạn 2 tuổi. Nhưng "em" thì vẫn là em._
-* [💬 "Tên nhà tài trợ là gì vậy Huyền… à, chị?"]
+* [💬 "Tên nhà tài trợ là gì vậy {sales}… à, chị?"]
     sales: BTT Global! Chủ tịch là Mr. Kevin Trộn. Chị nhậu với ổng rồi. No cap.
     _Bạn tra Mr. Kevin Trộn. Không có kết quả. Không có cả ảnh. Như một hồn ma của ngành bánh tráng._
     ~ phat_hien(btt_global_gia)

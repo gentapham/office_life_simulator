@@ -9,11 +9,11 @@
 ~ tp_lich_co_dinh()
 _7 giờ 30. Phòng họp "Sáng Tạo" còn thơm mùi nước lau sàn. Bạn đặt laptop, quyển sổ kẻ ô và ba cây bút lông bảng trắng thẳng hàng như quân duyệt binh._
 _Lịch hôm nay: 8:00 họp chuẩn bị lễ ký. 8:30 họp chuẩn bị cho cuộc họp lúc 8:00. 9:00 lễ ký hợp đồng. 10:00 họp rút kinh nghiệm lễ ký._
-thuc_tap_sinh: Dạ em chào thầy… à dạ, anh Nhật ạ! Em tới từ 7 giờ, em xếp ghế xong rồi ạ.
+thuc_tap_sinh: Dạ em chào thầy… à dạ, anh {truong_phong} ạ! Em tới từ 7 giờ, em xếp ghế xong rồi ạ.
 _{thuc_tap_sinh}, 30 tuổi, thực tập sinh, đứng nghiêm như đang chào cờ._
-* [😇 "Cảm ơn cậu… à, em… à, Duy nhé. Cứ gọi anh là được."]
+* [😇 "Cảm ơn cậu… à, em… à, {thuc_tap_sinh} nhé. Cứ gọi anh là được."]
     ~ qh("thuc_tap_sinh", 5)
-    thuc_tap_sinh: Dạ! Anh Nhật ạ! Dạ em ghi nhớ ạ!
+    thuc_tap_sinh: Dạ! Anh {truong_phong} ạ! Dạ em ghi nhớ ạ!
     _Không ai trong hai người biết ai nên xưng gì. Không khí ngượng như hai cái ghế xếp lệch._
 * [📅 "Tốt. Thế mình họp nhanh 5 phút về việc xếp ghế nhé."]
     ~ tp_hop(1)
@@ -35,7 +35,7 @@ sieu_nhan_hong: Chào cả nhà! Hồng không phải màu, Hồng là thái đ�
 giam_doc: Các em, hôm nay là ngày lịch sử của {cong_ty}! Anh không ép ai vỗ tay, tùy các em.
 _Cả phòng vỗ tay. {ke_toan} cúi xuống thì thầm gì đó về "trang 47", nhưng {giam_doc} đã đặt bút ký. 5 tỷ về tài khoản._
 _Cửa bật mở. {con_ong_chau_cha} bước vào, trễ 25 phút, tay cầm ly cà phê kem._
-giam_doc: Long! Đi làm mà như đi chơi thế à? Chú… anh nói thế cho công bằng thôi nhé.
+giam_doc: {con_ong_chau_cha}! Đi làm mà như đi chơi thế à? Chú… anh nói thế cho công bằng thôi nhé.
 con_ong_chau_cha: Dạ. Chill đi chú.
 _Mọi người bắt đầu đứng dậy, kéo ghế. Đây là khoảnh khắc của bạn._
 * [📅 "Nhân tiện mọi người đang đủ, mình họp nhanh 5 phút nhé!"]
@@ -55,7 +55,7 @@ _Mọi người bắt đầu đứng dậy, kéo ghế. Đây là khoảnh khắ
     editor: *(ngáp, thì thầm)* 9 ngày… là 9 đêm của em…
     ~ qh("editor", -3)
 * [🪑 Liếc sang {con_ong_chau_cha}: "Có người trễ 25 phút, mình nên thống nhất giờ giấc ngay từ đầu."]
-    con_ong_chau_cha: Ủa ông Nhật, tui mới vô mà. Chill đi.
+    con_ong_chau_cha: Ủa ông {truong_phong}, tui mới vô mà. Chill đi.
     giam_doc: Thôi thôi. Hai đứa đều là nhân tài của anh cả.
     ~ tp_so_lan_cai_long = tp_so_lan_cai_long + 1
     ~ qh("con_ong_chau_cha", -8)
@@ -68,7 +68,7 @@ _Mọi người bắt đầu đứng dậy, kéo ghế. Đây là khoảnh khắ
 === truong_phong_0110_cai_chen ===
 # ngay:1 # gio:11:20 # noi:phong_hop_tang_2
 _Cuộc họp vẫn chưa xong. Một nhân viên mới thò đầu vào, tay cầm khay ly nhựa._
-ran_doc: Dạ anh Nhật, em mới vô. Họp xong rồi hả anh? Em đi rửa ly giùm mọi người nha.
+ran_doc: Dạ anh {truong_phong}, em mới vô. Họp xong rồi hả anh? Em đi rửa ly giùm mọi người nha.
 * [📅 "Chưa xong đâu, còn mục 7. Cậu tiện thì mang cái bát lên đây đựng giấy note nhé."]
     ran_doc: Dạ… cái chén hả anh?
     ~ tp_hieu_nham()
@@ -96,7 +96,7 @@ bac_bao_ve: Thôi… các cháu bày vẽ làm gì. Bác ngại lắm.
 _Bác {bac_bao_ve} đỏ mặt. {cho} sủa hai tiếng như phát biểu thay chủ._
 * [🎤 Đứng ra phát biểu thay mặt công ty, 3 trang giấy.]
     ~ tp_hop(1)
-    bac_bao_ve: Cháu Nhật nói hay. Nhưng nến tắt rồi đấy.
+    bac_bao_ve: Cháu {truong_phong} nói hay. Nhưng nến tắt rồi đấy.
     _Sáp nến chảy xuống bánh. Mọi người ăn bánh vị sáp._
     ~ qh("bac_bao_ve", 2)
 * [😇 Ngồi xuống ghế nhựa, rót trà cho bác bằng tiếng Bắc: "Bác uống chén trà cho ấm ạ."]
@@ -124,7 +124,7 @@ _{bien_kich} lặng lẽ cầm bút, ghi lại từng chữ._
     ~ tp_so_lan_take_note = tp_so_lan_take_note + 1
     thuc_tap_sinh: Dạ… dạ em mới vô nên chưa biết ạ.
     ~ qh("thuc_tap_sinh", -3)
-* [💬 "Hay đấy. Duy kể tiếp đi, Oánh ghi rõ là ý của Duy nhé."]
+* [💬 "Hay đấy. {thuc_tap_sinh} kể tiếp đi, {bien_kich} ghi rõ là ý của {thuc_tap_sinh} nhé."]
     ~ qh("thuc_tap_sinh", 12)
     ~ qh("bien_kich", -5)
     bien_kich: *(khựng lại nửa giây)* Dạ… em ghi rồi anh.
@@ -140,11 +140,11 @@ _Cây bút lông trong tay bạn kêu "rắc" một tiếng nhỏ._
 * [🪑 "Hát bài gì? Ai viết? Ai hát? Ngân sách bao nhiêu? Cậu có số liệu không?"]
     ~ tp_so_lan_cai_long = tp_so_lan_cai_long + 1
     con_ong_chau_cha: Ủa… hỏi dồn dữ vậy ông.
-    giam_doc: Nhật, bình tĩnh. Anh không ép, tùy em.
+    giam_doc: {truong_phong}, bình tĩnh. Anh không ép, tùy em.
     ~ tp_ghe(-2)
     ~ qh("con_ong_chau_cha", -10)
     _Lần đầu tiên {con_ong_chau_cha} không có câu trả lời. Bạn thắng. Nhưng {giam_doc} nhìn bạn hơi lâu._
-* [🧱 Vẽ thêm tầng 5 lên sơ đồ: "Âm nhạc (phụ trách: Long)".]
+* [🧱 Vẽ thêm tầng 5 lên sơ đồ: "Âm nhạc (phụ trách: {con_ong_chau_cha})".]
     con_ong_chau_cha: Ờ… tui ghi tên mình vô đó hả?
     giam_doc: Thấy chưa, phối hợp là đẹp!
     ~ tp_ghe(3)
@@ -160,7 +160,7 @@ _Cây bút lông trong tay bạn kêu "rắc" một tiếng nhỏ._
 === truong_phong_0210_cuoi_cham_cong ===
 # ngay:2 # gio:07:55 # noi:sanh_tang_tret
 _Ngày Nụ cười Thế giới. {hr} đứng cạnh máy chấm công, cầm một tấm bảng: "CƯỜI RỒI MỚI CHẤM"._
-hr: Anh Nhật ơi. Cười một cái cho hành trình hôm nay nha anh.
+hr: Anh {truong_phong} ơi. Cười một cái cho hành trình hôm nay nha anh.
 * [😁 Cười thật tươi.]
     hr: Đẹp quá anh. Em ghi nhận nụ cười đầu tiên của tuần.
     ~ qh("hr", 5)
@@ -170,7 +170,7 @@ hr: Anh Nhật ơi. Cười một cái cho hành trình hôm nay nha anh.
     ~ qh("hr", -3)
     _Hôm đó {hr} ngồi cuối phòng họp, cầm ly trà, nhìn bạn và mỉm cười suốt hai tiếng._
     ~ cang_thang(5)
-* [💬 "Cười theo quy định thì có tính là cười không anh Tuấn?"]
+* [💬 "Cười theo quy định thì có tính là cười không anh {hr}?"]
     hr: *(cười rộng hơn)* Mình cùng nhìn lại câu hỏi đó trong buổi trà chiều nay nha anh.
     ~ cang_thang(3)
     ~ qh("hr", 2)
@@ -180,7 +180,7 @@ hr: Anh Nhật ơi. Cười một cái cho hành trình hôm nay nha anh.
 === truong_phong_0210_sync_linh ===
 # ngay:2 # gio:15:05 # noi:phong_dung_phim
 _Trà sữa thứ 6 về. Bạn cầm hai ly, gõ cửa phòng dựng tối như hang. Trên màn hình, một timeline dài ngoằng._
-editor: *(ngáp)* Dạ anh Nhật… có gì hông anh…
+editor: *(ngáp)* Dạ anh {truong_phong}… có gì hông anh…
 truong_phong: Sync nhanh 5 phút thôi. MV phải ra đúng 9/10. Em xem lịch giúp anh.
 editor: 7 ngày. 7 đêm. Còn chưa có cảnh quay nào hết anh…
 * [🤝 Đặt ly trà sữa lên bàn: "Anh dời họp giao ban sáng thứ Hai để em ngủ bù."]
@@ -193,7 +193,7 @@ editor: 7 ngày. 7 đêm. Còn chưa có cảnh quay nào hết anh…
     ~ qh("editor", -10)
     editor: 8 giờ… là lúc em mới đi ngủ anh…
     _Lĩnh gật đầu bằng cả cái đầu đang gục xuống bàn phím._
-* [👀 Ngồi xuống cạnh, nhìn Lĩnh làm: "Cái nút này để làm gì thế?"]
+* [👀 Ngồi xuống cạnh, nhìn {editor} làm: "Cái nút này để làm gì thế?"]
     editor: Nút cắt anh. Phím C.
     ~ tp_tn(2)
     ~ qh("editor", 3)

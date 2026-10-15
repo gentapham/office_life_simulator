@@ -120,7 +120,7 @@ _Bác {bac_bao_ve} đỏ mặt, cười một cái rất nhỏ. Sau lưng bác, 
     ~ qh("bac_bao_ve", 8)
 * [📱 Quay clip bác đỏ mặt, gửi {hong_hot} đăng.]
     ~ follow(2000)
-    hong_hot: Ối dồi ôi, bác Bình đỏ mặt dễ thương xỉu! Cảm ơn ông nha!
+    hong_hot: Ối dồi ôi, bác {bac_bao_ve} đỏ mặt dễ thương xỉu! Cảm ơn ông nha!
     ~ qh("hong_hot", 5)
     bac_bao_ve: … Cái gì đăng lên mạng cũng được, đừng đăng biển số xe bác.
 * [💬 "Bác ơi, gầm cầu thang có gì mà {cho} canh dữ vậy bác?"]
@@ -161,7 +161,7 @@ _{dan_dau_tu} khen: "Chart này đẹp, một cây nến xanh dài". {hong_hot} 
     giam_doc: Agile à? Hay đấy. Anh thích những gì có chữ tiếng Anh.
     ~ qh("giam_doc", 3)
     ~ qh("truong_phong", -10)
-    truong_phong: Anh Thắng… đây là một thanh. Một. Thanh.
+    truong_phong: Anh {giam_doc}… đây là một thanh. Một. Thanh.
 * [😇 "Dạ em làm lại liền, chiều nay có bản chi tiết."]
     ~ uy_tin = uy_tin + 10
     ~ vu_bang_tien_do_that = true
@@ -264,7 +264,7 @@ _Bạn đi ngang. {cho} không gầm gừ. {cho} đứng dậy, đi theo bạn, 
     ~ qh("bac_bao_ve", 3)
 * [📱 Đi tiếp, vừa đi vừa lướt.]
     _Bạn không để ý. {cho} đứng nhìn theo bạn tới tận đầu hẻm._
-- _Từ xa, một bộ đồ hồng đang tiến lại. {sieu_nhan_hong} giơ tay vẫy, miệng giả tiếng sủa: "Gâu! Tuất ơi!"_
+- _Từ xa, một bộ đồ hồng đang tiến lại. {sieu_nhan_hong} giơ tay vẫy, miệng giả tiếng sủa: "Gâu! {cho} ơi!"_
 cho: GÂU GÂU GÂU! *(lao đi, bỏ quên bạn)*
 sieu_nhan_hong: Ui! Ủa {chua_te_deadline}! Chủ nhật mà em cũng ghé công ty hả?
 * [😎 "Ghé mua cà phê thôi anh. Chủ nhật là ngày nghỉ của deadline."]

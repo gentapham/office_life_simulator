@@ -311,7 +311,7 @@ editor: *(ngáp)* …Thumbnail… tập 4… bà làm chưa?
 * [💬 "Ông ngủ chưa? Mắt ông như hai cái nút record."]
     editor: Render xong là ngủ. *(Render không bao giờ xong.)*
     ~ qh("editor", 3)
-* {qh_editor >= 20} [🔒 "Lĩnh. Thư mục tên 'Thái' trong ổ của ông… là gì vậy?"]
+* {qh_editor >= 20} [🔒 "Lĩnh. Thư mục tên '{quan_ly_idol}' trong ổ của ông… là gì vậy?"]
     editor: *(đứng im rất lâu)* …Video dựng tiện tay thôi.
     designer: Tiện tay mà 40 cái.
     editor: *(nhỏ giọng)* …Đừng kể ai. Thật đó.
@@ -322,7 +322,7 @@ editor: *(ngáp)* …Thumbnail… tập 4… bà làm chưa?
 // ------------------------------------------------------------
 === designer_tudo_npc_sales ===
 # npc:sales
-sales: Chị Quỳnh! Tin chị đi, hôm nay em có deal! Thật! À… gần thật!
+sales: Chị {designer}! Tin chị đi, hôm nay em có deal! Thật! À… gần thật!
 * [🗂️ "Cần hồ sơ gì nữa đây em?"]
     sales: Một cái slide "đối tác chiến lược", có biểu đồ đi lên như tên lửa. Trục tung bắt đầu từ… con số em muốn.
     designer: Trục tung không bắt đầu từ 0 là lừa đảo đồ họa đó em.
@@ -378,7 +378,7 @@ dan_dau_tu: {designer}! Em vẽ giùm anh cái logo cho đồng coin mới. Tên
 # npc:thanh_xin_nghi
 thanh_xin_nghi: *(ho khụ khụ)* {designer} ơi… tui hơi sốt… mà tui cần nhờ bà một việc.
 thanh_xin_nghi: Bà làm giùm tui một tấm ảnh bìa… kim tuyến… cho một người bạn đi thi hát.
-* [🎨 "Bạn nào? Bạn tên Sơn hả?"]
+* [🎨 "Bạn nào? Bạn tên {thanh_xin_nghi} hả?"]
     thanh_xin_nghi: *(hết ho ngay lập tức)* …Bà đừng nói ai nha. Bà ngoại tui… à không, tui… đang vô bán kết.
     ~ phat_hien(son_thi_hat)
     ~ qh("thanh_xin_nghi", 10)
@@ -421,7 +421,7 @@ sieu_nhan_hong: Chị {designer}! Biến hình! *(tạo dáng)* Chị thấy hô
     designer: Em nhớ. Là câu trả lời hay nhất cho câu hỏi "một chút là bao nhiêu".
     ~ qh("sieu_nhan_hong", 10)
 * [🧂 "Anh mà hồng nữa là {cho} cắn luôn cái mũ đó."]
-    sieu_nhan_hong: Ha ha! Tuất ghét em lắm. Em chỉ muốn làm bạn với nó thôi mà.
+    sieu_nhan_hong: Ha ha! {cho} ghét em lắm. Em chỉ muốn làm bạn với nó thôi mà.
     designer: Anh thôi giả tiếng sủa thì nó mới tin anh.
     sieu_nhan_hong: *(suy nghĩ)* …Thiệt hả? Em thử!
     ~ qh("sieu_nhan_hong", 5)

@@ -32,7 +32,7 @@ _Nhận 100.000đ hoa hồng. KPI Thật nhích lên một chút. Một chút th
 { RANDOM(1, 3):
 - 1: _"Tút tút tút." Ông chủ tiệm cầm đồ cúp máy giữa câu "tập đoàn đa quốc gia"._
 - 2: _Chị bán áo mưa ngủ gật ở phút thứ 4. Bạn nghe tiếng ngáy qua điện thoại._
-- else: _Điện thoại reo ngược lại. Màn hình: "Anh Chương (nợ 5tr)". Bạn cúp máy theo phản xạ._
+- else: _Điện thoại reo ngược lại. Màn hình: "Anh {dan_dau_tu} (nợ 5tr)". Bạn cúp máy theo phản xạ._
 }
 ~ cang_thang(8)
 ~ sl_phet(2)

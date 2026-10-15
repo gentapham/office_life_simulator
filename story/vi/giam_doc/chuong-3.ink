@@ -156,7 +156,7 @@ _Ngân Sách: {gd_ngan_sach} triệu._
     ~ gd_tien_cty(-350)
     ~ qh("quan_ly_idol", 10)
     quan_ly_idol: Chuyện này để anh lo, đừng ai đăng gì hết! À không, đăng đi, đăng hết đi!
-* [✂️ "Mặc cả xem. Bảo họ là có {idol_het_thoi} đi kèm, hát bè miễn phí."]
+* [✂️ "Mặc cả xem. {it} họ là có {idol_het_thoi} đi kèm, hát bè miễn phí."]
     quan_ly_idol: *(khựng lại)* Anh… anh cho {idol_het_thoi} lên sóng hả?
     ~ gd_mua_gameshow = true
     ~ gd_tien_cty(-250)

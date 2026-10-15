@@ -39,7 +39,7 @@ ran_doc: Anh {thuc_tap_sinh}! Nói nhỏ thôi nha… anh có biết hồi nhỏ
 === thuc_tap_sinh_tudo_giam_doc ===
 # npc:giam_doc
 { duy_nhanh_nguoi_gac_ket:
-    giam_doc: Anh Duy! Vào đây, vào đây. Ngồi đi. Anh pha trà.
+    giam_doc: Anh {thuc_tap_sinh}! Vào đây, vào đây. Ngồi đi. Anh pha trà.
     _Từ hôm 22/10, {giam_doc} gọi một thực tập sinh là "anh Duy". Cả tầng 2 không hiểu vì sao._
 - else:
     giam_doc: Thực tập sinh! Vào đây anh nhờ tí. Anh không ép, tùy em.
@@ -166,7 +166,7 @@ hong_hot: Ê ông thực tập sinh! Nghe gì chưa? Ối dồi ôi, cả công 
 === thuc_tap_sinh_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
 con_ong_chau_cha: Anh {thuc_tap_sinh}! Chill hông? Cà phê Sống Ảo hông? Anh bao… à mà thẻ anh bị khóa.
-* [👔 "Dạ chill đi anh." (Bắt Chước Anh Long)]
+* [👔 "Dạ chill đi anh." (Bắt Chước Anh {con_ong_chau_cha})]
     con_ong_chau_cha: *(cười)* Anh nói giống em y chang. Ủa sao áo anh y chang áo em nữa?
     ~ duy_ngay_mac_giong_long++
     ~ qh("con_ong_chau_cha", 10)
@@ -191,7 +191,7 @@ con_ong_chau_cha: Anh {thuc_tap_sinh}! Chill hông? Cà phê Sống Ảo hông? 
 con_ong_chau_cha: Mà nè… anh hứa cho anh nghe một bài nhạc. Tối nay qua penthouse đi. Phòng thu. Đừng nói ai.
 * [🎧 "Dạ em qua ạ."]
     _Phòng thu nhỏ, cách âm, 41 bản demo. Bài thứ 41: "Hồng Là Thái Độ". Ký tên: "Rồng". Bạn nghe hết bài, mắt cay._
-    thuc_tap_sinh: Anh Long… bài này hay quá. Anh phải cho người ta nghe.
+    thuc_tap_sinh: Anh {con_ong_chau_cha}… bài này hay quá. Anh phải cho người ta nghe.
     con_ong_chau_cha: *(cười, hơi ngượng)* Anh đang nghĩ. Có anh nghe rồi, giờ anh bớt sợ.
     ~ phat_hien(bai_hat_long)
     ~ qh("con_ong_chau_cha", 15)
@@ -416,7 +416,7 @@ _Trong balo bạn vẫn là cuốn sổ bìa da của {bien_kich}, nhặt trên 
     ~ mat(so_tay_oanh)
     bien_kich: *(ôm cuốn sổ)* Em… đọc chưa?
     thuc_tap_sinh: Dạ, chương 14 ạ.
-    bien_kich: *(nhắm mắt)* Chương 14 tui sẽ viết lại. Có tên em. Tên thật. Ở đúng chỗ.
+    bien_kich: *(nhắm mắt)* {dan_dau_tu} 14 tui sẽ viết lại. Có tên em. Tên thật. Ở đúng chỗ.
     ~ qh("bien_kich", 15)
 * [😶 Giữ thêm ít hôm.]
     _Cuốn sổ nằm lại trong balo. Nặng hơn cân nặng của nó._

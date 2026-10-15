@@ -409,7 +409,7 @@ bien_kich: Chị {chi_dai}… chị có biết kịch bản này cần thêm gì
 * [💬 "Cái sổ đó. Có tên chị trong đó hông?"]
     bien_kich: *(ôm sổ chặt hơn)* Đây không phải đạo, đây là cảm hứng!
     chi_dai: Chị chưa nói em đạo. Chị hỏi có tên chị hông.
-    bien_kich: …Có. Chương 7. Chị là nhân vật được yêu thích nhất.
+    bien_kich: …Có. {dan_dau_tu} 7. Chị là nhân vật được yêu thích nhất.
     ~ qh("bien_kich", 3)
 * [🦁 "Ý tưởng 'Người Gác Két' của {thuc_tap_sinh}. Em nhớ ghi tên nó."]
     bien_kich: *(tái mặt)* Chị… biết hả?

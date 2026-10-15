@@ -18,13 +18,13 @@
 
 = moi_song_ca
 _Phòng chờ. {sieu_nhan_hong} ngồi một mình, đã tháo mũ. Lần đầu tiên bạn thấy mặt thật: một anh chàng bình thường, mắt hơi sưng, tóc bết mồ hôi._
-sieu_nhan_hong: *(giọng nhỏ, rụt rè)* Dạ… anh Phát… em muốn hỏi… Đêm Hồng anh hát chung với em bài "Công Viên" được hông? Em hát dở lắm. Mà em thích bài đó thiệt.
+sieu_nhan_hong: *(giọng nhỏ, rụt rè)* Dạ… anh {idol_het_thoi}… em muốn hỏi… Đêm Hồng anh hát chung với em bài "Công Viên" được hông? Em hát dở lắm. Mà em thích bài đó thiệt.
 * [😎 "Anh hát chính, em đứng bè."]
     sieu_nhan_hong: Dạ! Dạ được! Em đứng bè!
     ~ phat_song_ca = true
     ~ phat_tt(10)
     ~ qh("sieu_nhan_hong", 5)
-    quan_ly_idol: *(đứng ở cửa từ lúc nào)* Phát… Đêm Hồng là show của Nguyên mà em…
+    quan_ly_idol: *(đứng ở cửa từ lúc nào)* {idol_het_thoi}… Đêm Hồng là show của Nguyên mà em…
 * [🎶 "Hát chung. Mỗi người một nửa. Mà em phải nhớ là CHUỐI chiên."]
     sieu_nhan_hong: *(bật cười, dụi mắt)* Chuối chiên! Em nhớ rồi! Em viết lên tay luôn!
     _Nguyên lấy bút bi viết lên mu bàn tay trái, ngay cạnh vết sẹo nhỏ: "CHUỐI"._
@@ -65,7 +65,7 @@ _Nguyên không thấy bạn. Hoặc thấy, mà không dám mời._
 === idol_het_thoi_2810_bo_loc ===
 # ngay:28 # gio:15:30 # noi:ban_so_lieu
 _Bàn số liệu của {dan_dau_tu}. Hai màn hình: bên trái là bảng lượt theo dõi, bên phải là chart coin đỏ lòm._
-dan_dau_tu: Phát. Lại đây. Tui lọc tài khoản ảo trước khi nền tảng kiểm tra. Có một cụm 80.000 cái, avatar hoa sen. Dẫn về… ông.
+dan_dau_tu: {idol_het_thoi}. Lại đây. Tui lọc tài khoản ảo trước khi nền tảng kiểm tra. Có một cụm 80.000 cái, avatar hoa sen. Dẫn về… ông.
 { phat_fan_ao == 0:
     dan_dau_tu: Mà gói đã hủy rồi ha. Cụm này đang chết dần. Tui xóa luôn cho sạch, khỏi ai biết.
     ~ qh("dan_dau_tu", 5)
@@ -107,7 +107,7 @@ _Studio tầng 2. Còn 3 ngày. Bạn cần một bản remix "Công Viên Hồn
     ~ qh("con_ong_chau_cha", 10)
 * {qh_editor >= 20} [🦉 Nhắn {editor} lúc nửa đêm. Giờ đó {editor} tỉnh nhất.]
     editor: Dạ được anh. Em dựng âm thanh cũng được. Render xong là xong.
-    editor: *(một lúc sau)* Anh Phát… anh Thái biết anh làm vụ này chưa? Ảnh mà biết chắc vui lắm.
+    editor: *(một lúc sau)* Anh {idol_het_thoi}… anh {quan_ly_idol} biết anh làm vụ này chưa? Ảnh mà biết chắc vui lắm.
     ~ phat_nguoi_remix = "linh"
     ~ qh("editor", 10)
 * {qh_it >= 20} [💾 Hỏi {it}: "Còn bản thu gốc hông em?"]
@@ -127,7 +127,7 @@ _Studio tầng 2. Còn 3 ngày. Bạn cần một bản remix "Công Viên Hồn
 _Ngày Internet Quốc tế. Wifi sập cả ngày. Cả công ty đuổi theo {it}. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. {chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua"._
 _Bạn mở trang cá nhân. Không có mạng thì 80.000 hoa sen cũng im. Không like, không comment. Lần đầu tiên trong ba năm, trang của bạn im lặng như thật._
 _Ở phòng dựng, {editor} ngồi nhìn một thanh tải lên kẹt ở 99%, mặt như đang cầu nguyện cho mạng đừng bao giờ có lại._
-* [✉️ Viết một tờ giấy gửi qua chòi bảo vệ: "Anh Thái ăn trưa chưa?"]
+* [✉️ Viết một tờ giấy gửi qua chòi bảo vệ: "Anh {quan_ly_idol} ăn trưa chưa?"]
     _Mười phút sau, tờ giấy quay về, chữ anh {quan_ly_idol}: "Chưa. Em mua gì anh ăn nấy." Kèm hình vẽ một xiên cá viên chiên, vẽ xấu._
     bac_bao_ve: *(đưa giấy)* Bác chuyển thư cả đời rồi. Thư này dễ thương nhất hôm nay đấy.
     ~ qh("quan_ly_idol", 8)
@@ -201,7 +201,7 @@ chu_tiem_cam_do: Chuộc hông con? 6 triệu, thêm 300 nghìn lãi. Mai là ti
         ~ phat_them_no(6300000)
         ~ qh("quan_ly_idol", 10)
     - else:
-        quan_ly_idol: Anh đang ở đài… Phát, anh hết rồi em ơi. Tháng 7 anh… thôi, để anh tính.
+        quan_ly_idol: Anh đang ở đài… {idol_het_thoi}, anh hết rồi em ơi. Tháng 7 anh… thôi, để anh tính.
         _Anh không tính kịp. Mai tiệm bán._
         ~ cang_thang(10)
     }
@@ -216,7 +216,7 @@ chu_tiem_cam_do: Chuộc hông con? 6 triệu, thêm 300 nghìn lãi. Mai là ti
 _Sáng sớm, hiếm hoi bạn tới trước 9 giờ. {hr} đang chỉ đạo dọn kho trước buổi họp đánh giá. Hai anh lao công đang lôi đồ dưới gầm cầu thang ra: chìa khóa, son môi, điện thoại cũ, một con gà cao su, một chiếc găng tay hồng._
 _Kho báu của {cho}. {cho} đứng đó, sủa không ra tiếng, nhìn từng món bị bỏ vào bao rác._
 * [🐾 Đứng chắn trước gầm cầu thang: "Đồ này của anh. Anh gửi đó. Đừng dọn."]
-    hr: Của anh Phát hết hả? Son môi cũng của anh?
+    hr: Của anh {idol_het_thoi} hết hả? Son môi cũng của anh?
     idol_het_thoi: Đồ diễn.
     hr: *(mỉm cười)* Dạ. Vậy để nguyên ạ.
     ~ qh("cho", 25)
@@ -235,7 +235,7 @@ _Kho báu của {cho}. {cho} đứng đó, sủa không ra tiếng, nhìn từng
 # ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng họp tầng 2. Đề bạt, tăng lương, cắt giảm. Mục cuối cùng trong chương trình: "Gia hạn hợp đồng ca sĩ độc quyền"._
 _{giam_doc} lật tới trang của bạn. Đọc rất lâu._
-giam_doc: Phát. Anh hỏi em một câu thôi. Em muốn ở lại để làm gì?
+giam_doc: {idol_het_thoi}. Anh hỏi em một câu thôi. Em muốn ở lại để làm gì?
 * [🕶️ "Để làm ngôi sao của công ty. Fan em vẫn đông."]
     giam_doc: *(gật đầu chậm)* Ừ.
     ~ phat_tt(5)
@@ -247,9 +247,9 @@ giam_doc: Phát. Anh hỏi em một câu thôi. Em muốn ở lại để làm g
     giam_doc: *(lần đầu trong tháng, cười thật)* Thế thì đêm mai anh ngồi hàng đầu.
     ~ qh("giam_doc", 8)
     ~ qh("sieu_nhan_hong", 5)
-* {qh_quan_ly_idol >= 70} [🤝 Nhìn sang anh {quan_ly_idol}: "Để làm việc với anh Thái thêm vài năm nữa."]
+* {qh_quan_ly_idol >= 70} [🤝 Nhìn sang anh {quan_ly_idol}: "Để làm việc với anh {quan_ly_idol} thêm vài năm nữa."]
     quan_ly_idol: *(làm rơi điện thoại bên trái xuống bàn)*
-    giam_doc: Thái. Cậu đặt cược uy tín cho thằng này không?
+    giam_doc: {quan_ly_idol}. Cậu đặt cược uy tín cho thằng này không?
     quan_ly_idol: *(nhặt điện thoại, không nhìn ai)* Mười hai năm rồi anh. Cược hết.
     ~ qh("quan_ly_idol", 10)
     ~ qh("giam_doc", 5)
@@ -260,7 +260,7 @@ giam_doc: Phát. Anh hỏi em một câu thôi. Em muốn ở lại để làm g
     _{ke_toan} gật đầu. Anh {quan_ly_idol} thở ra. Bạn không biết mình đang nín thở từ lúc nào._
 - else:
     ~ phat_gia_han = false
-    giam_doc: Anh… chưa gia hạn. Hết tháng này em tự do. Anh xin lỗi em, Phát.
+    giam_doc: Anh… chưa gia hạn. Hết tháng này em tự do. Anh xin lỗi em, {idol_het_thoi}.
     _"Tự do." Một từ đẹp, nghe như cửa đóng lại._
     ~ cang_thang(20)
 }
@@ -318,7 +318,7 @@ _Sau cánh gà, dây micro của {sieu_nhan_hong} nằm ngay dưới chân bạn
     it: *(đi ngang, nhìn băng keo)* …Cảm ơn.
     ~ qh("it", 5)
     ~ qh("sieu_nhan_hong", 3)
-* {co(gang_tay_hong)} [🧤 Đưa Nguyên chiếc găng tay hồng: "Của em nè. Tìm được ở kho của con Tuất."]
+* {co(gang_tay_hong)} [🧤 Đưa Nguyên chiếc găng tay hồng: "Của em nè. Tìm được ở kho của con {cho}."]
     sieu_nhan_hong: *(đeo vào, một tay hồng cũ, một tay hồng mới)* Anh… tìm cho em hả? Trời ơi…
     ~ mat(gang_tay_hong)
     ~ qh("sieu_nhan_hong", 15)

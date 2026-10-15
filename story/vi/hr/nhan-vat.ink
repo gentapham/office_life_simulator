@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === hr_tudo_ran_doc ===
 # npc:ran_doc
-ran_doc: Anh Tuấn! Em mới viết bản tin nội bộ tuần này nè. Có mục "Gương mặt nhân sự", em định viết về anh. Anh kể em nghe chút được hông?
+ran_doc: Anh {hr}! Em mới viết bản tin nội bộ tuần này nè. Có mục "Gương mặt nhân sự", em định viết về anh. Anh kể em nghe chút được hông?
 * [😊 "Viết về anh hả? Ghi: thích trà, ghét đi trễ."]
     ran_doc: Dạ… em ghi thêm "nụ cười ấm áp" nha anh. *(cười rất ngọt)*
     ~ qh("ran_doc", 3)
@@ -29,18 +29,18 @@ ran_doc: Anh Tuấn! Em mới viết bản tin nội bộ tuần này nè. Có m
 // ------------------------------------------------------------
 === hr_tudo_giam_doc ===
 # npc:giam_doc
-giam_doc: Tuấn đấy à. Vào đây. Anh đang nghĩ cái mindset của công ty mình phải thay đổi. Phải "gia đình" hơn nữa.
+giam_doc: {hr} đấy à. Vào đây. Anh đang nghĩ cái mindset của công ty mình phải thay đổi. Phải "gia đình" hơn nữa.
 * [🍵 "Dạ, gia đình thì phải uống trà chung. Anh uống trà sen hông?"]
-    giam_doc: Ừ, rót đi. Hồi 2010 anh với Bình uống trà đá ở căn phòng 20 mét vuông. Giờ uống trà sen trong phòng kính. Mà sao anh thấy không ngon bằng.
+    giam_doc: Ừ, rót đi. Hồi 2010 anh với {bac_bao_ve} uống trà đá ở căn phòng 20 mét vuông. Giờ uống trà sen trong phòng kính. Mà sao anh thấy không ngon bằng.
     ~ qh("giam_doc", 5)
     ~ hr_tra()
 * [💬 "Gia đình thì không ai có danh sách cắt giảm đâu anh."]
     giam_doc: *(khựng lại)* Em… nói nhỏ thôi. Gia đình nào cũng có lúc khó khăn.
     ~ qh("giam_doc", -3)
     ~ hr_nghe(2)
-- giam_doc: À, mà Tuấn này. Anh hỏi thật nhé. Anh em có ghét anh không?
+- giam_doc: À, mà {hr} này. Anh hỏi thật nhé. Anh em có ghét anh không?
 * [😇 "Không ghét anh. Họ sợ mất việc. Anh mà tăng lương thì hết sợ liền."]
-    giam_doc: Haha! Em nói chuyện giống Hương thế. Thôi, ra ngoài đi.
+    giam_doc: Haha! Em nói chuyện giống {chi_dai} thế. Thôi, ra ngoài đi.
     ~ qh("giam_doc", 3)
 * [😊 Cười Nụ Cười Nhân Sự: "Dạ, ai cũng thương anh hết."]
     giam_doc: *(rùng mình)* Em cười thế thì anh biết là có người ghét anh rồi.
@@ -53,14 +53,14 @@ giam_doc: Tuấn đấy à. Vào đây. Anh đang nghĩ cái mindset của công
 // ------------------------------------------------------------
 === hr_tudo_truong_phong ===
 # npc:truong_phong
-truong_phong: Anh Tuấn, em xin anh 5 phút. Em muốn họp với anh về… việc tổ chức họp đánh giá nhân sự theo quý.
-* [💬 "5 phút thật hay 5 phút kiểu anh Nhật?"]
+truong_phong: Anh {hr}, em xin anh 5 phút. Em muốn họp với anh về… việc tổ chức họp đánh giá nhân sự theo quý.
+* [💬 "5 phút thật hay 5 phút kiểu anh {truong_phong}?"]
     truong_phong: 5 phút thật mà anh. *(mở laptop, slide số 1 trên 34)*
     ~ cang_thang(5)
 * [🍵 "Họp ở phòng HR đi, có trà."]
     truong_phong: Ơ… ở phòng HR ạ? *(nuốt nước bọt)* Thôi, mình họp ở phòng "Sáng Tạo" cho nó… sáng tạo.
     ~ hr_so(2)
-- truong_phong: Mà anh Tuấn, nói thật với anh nhé, ghế phó giám đốc ấy, anh có biết sếp nghiêng về ai không? Em hay {con_ong_chau_cha}?
+- truong_phong: Mà anh {hr}, nói thật với anh nhé, ghế phó giám đốc ấy, anh có biết sếp nghiêng về ai không? Em hay {con_ong_chau_cha}?
 * [😶 "HR không bàn chuyện đề bạt khi chưa có quyết định."]
     truong_phong: Vâng. Em take note. *(ghi thật)*
 * [🤝 "Nói thật nha, {con_ong_chau_cha} không muốn cái ghế đó đâu. Anh lo phần anh thôi."]
@@ -75,7 +75,7 @@ truong_phong: Anh Tuấn, em xin anh 5 phút. Em muốn họp với anh về… 
 // ------------------------------------------------------------
 === hr_tudo_thanh_ninh ===
 # npc:thanh_ninh
-thanh_ninh: Anh Tuấn ơi, hôm nay anh mặc áo đẹp quá à. Áo này mà đi họp với sếp là sếp duyệt hết luôn đó anh!
+thanh_ninh: Anh {hr} ơi, hôm nay anh mặc áo đẹp quá à. Áo này mà đi họp với sếp là sếp duyệt hết luôn đó anh!
 * [😊 "Cảm ơn em. Áo anh mặc từ 2019."]
     thanh_ninh: Dạ… áo 2019 mà như mới, chứng tỏ anh giữ gìn có tâm quá anh ơi!
 * [💬 "Em khen anh, chắc là cần gì phải hông?"]
@@ -94,9 +94,9 @@ thanh_ninh: Anh Tuấn ơi, hôm nay anh mặc áo đẹp quá à. Áo này mà 
 // ------------------------------------------------------------
 === hr_tudo_hong_hot ===
 # npc:hong_hot
-hong_hot: Anh Tuấn! Nghe gì chưa? Mà thôi, anh là HR, anh nghe hết rồi. Kể em nghe với!
+hong_hot: Anh {hr}! Nghe gì chưa? Mà thôi, anh là HR, anh nghe hết rồi. Kể em nghe với!
 * [😊 "Anh không kể đâu. Nhưng em kể thì anh nghe."]
-    hong_hot: Ối dồi ôi, HR mà hóng ngược hả? Được! Vụ đầu tiên: anh Vũ với Siêu Nhân Hồng đó…
+    hong_hot: Ối dồi ôi, HR mà hóng ngược hả? Được! Vụ đầu tiên: anh {chua_te_deadline} với Siêu Nhân Hồng đó…
     ~ qh("hong_hot", 5)
     ~ hr_nghe(2)
 * [📓 "Ngân, giờ làm mà em ngồi pantry 2 tiếng rồi đó."]
@@ -121,7 +121,7 @@ hong_hot: Anh Tuấn! Nghe gì chưa? Mà thôi, anh là HR, anh nghe hết rồ
 // ------------------------------------------------------------
 === hr_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
-con_ong_chau_cha: Ê anh Tuấn. Chấm công cho em 8 giờ nha. Em tới 10 giờ mà tại kẹt xe… trong hồ bơi Sky Ảo.
+con_ong_chau_cha: Ê anh {hr}. Chấm công cho em 8 giờ nha. Em tới 10 giờ mà tại kẹt xe… trong hồ bơi Sky Ảo.
 * [📓 "Chấm 10 giờ. Đi trễ quá 5 phút, 50.000 vào quỹ trà sữa."]
     con_ong_chau_cha: Chill đi anh. Em đóng luôn 500 ngàn, đóng trước cả tháng.
     ~ hr_quy_tra_sua = hr_quy_tra_sua + 500000
@@ -141,7 +141,7 @@ con_ong_chau_cha: Ê anh Tuấn. Chấm công cho em 8 giờ nha. Em tới 10 gi
 // ------------------------------------------------------------
 === hr_tudo_chua_te_deadline ===
 # npc:chua_te_deadline
-chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh Tuấn. Còn sớm mà. Chill. Deadline còn 10 ngày.
+chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh {hr}. Còn sớm mà. Chill. Deadline còn 10 ngày.
 * [📓 "Deadline còn 1 ngày em. Hôm nay 29."]
     chua_te_deadline: …ÉT O ÉT! AI CỨU TUI VỚI!
     ~ cang_thang(-3)
@@ -150,7 +150,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh Tuấn. Còn sớm mà. Chill. 
     ~ hr_tra()
     ~ qh("chua_te_deadline", 3)
 - chua_te_deadline: Mà anh… cái vụ ổng nhắn em mỗi tối bằng sticker hồng… anh thấy có phải PR hông?
-* [😇 "PR không ai nhắn lúc 2 giờ sáng hỏi em ăn cơm chưa đâu Vũ."]
+* [😇 "PR không ai nhắn lúc 2 giờ sáng hỏi em ăn cơm chưa đâu {chua_te_deadline}."]
     chua_te_deadline: *(đỏ mặt, úp điện thoại)* Anh… anh đọc tin nhắn em hả?
     hr: Không. Anh đoán. Làm HR 7 năm, đoán trúng 9 phần.
     ~ qh("chua_te_deadline", 8)
@@ -162,8 +162,8 @@ chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh Tuấn. Còn sớm mà. Chill. 
 // ------------------------------------------------------------
 === hr_tudo_thuc_tap_sinh ===
 # npc:thuc_tap_sinh
-thuc_tap_sinh: Dạ em chào anh Tuấn ạ! Anh cần em photo gì không ạ? Pha cà phê? Xếp ghế? Em làm liền ạ!
-* [😇 "Không cần gì hết. Em ngồi xuống nghỉ 5 phút đi Duy."]
+thuc_tap_sinh: Dạ em chào anh {hr} ạ! Anh cần em photo gì không ạ? Pha cà phê? Xếp ghế? Em làm liền ạ!
+* [😇 "Không cần gì hết. Em ngồi xuống nghỉ 5 phút đi {thuc_tap_sinh}."]
     thuc_tap_sinh: Dạ… nghỉ ạ? *(ngồi xuống, lưng vẫn thẳng như đang phỏng vấn)* Dạ em nghỉ rồi ạ.
     ~ qh("thuc_tap_sinh", 5)
     ~ hr_nghe(2)
@@ -187,14 +187,14 @@ thuc_tap_sinh: Dạ em chào anh Tuấn ạ! Anh cần em photo gì không ạ? 
 // ------------------------------------------------------------
 === hr_tudo_ke_toan ===
 # npc:ke_toan
-ke_toan: Tuấn. Đề xuất mua trà cho phòng HR tháng này của ông: 1.200.000đ. Hóa đơn đâu?
+ke_toan: {hr}. Đề xuất mua trà cho phòng HR tháng này của ông: 1.200.000đ. Hóa đơn đâu?
 * [📄 "Đây. 3 tờ, đủ chữ ký."]
     ke_toan: *(đọc kỹ từng dòng)* Ừ. Duyệt 600.000. Ông uống trà ít lại.
     ~ tien_cong(-100000)
     ~ qh("ke_toan", 3)
 * [😊 "Trà là để giữ chân nhân sự mà bà."]
     ke_toan: Chân nhân sự giữ bằng lương, không giữ bằng trà. Không có hóa đơn là không có tiền.
-- ke_toan: Mà… dạo này ông có ngủ được hông? Mắt ông thâm hơn ông Thái rồi đó.
+- ke_toan: Mà… dạo này ông có ngủ được hông? Mắt ông thâm hơn ông {quan_ly_idol} rồi đó.
 * [🍵 "Không. Tui có một tập hồ sơ, đêm nào cũng nằm trên bụng tui."]
     ke_toan: *(im lặng)* Tui cũng có một tờ giấy. Trang 47. Đêm nào cũng nằm trên bụng tui.
     hr: Vậy mình là hội mất ngủ.
@@ -218,10 +218,10 @@ it: *(không quay lại)* Máy hư thì restart. Wifi hư thì chờ. Hỏi chuy
     it: Đúng bài.
     ~ qh("it", 5)
     ~ hr_tra()
-* [💬 "Anh Bảo, phòng HR có bị ai truy cập lạ không?"]
+* [💬 "Anh {it}, phòng HR có bị ai truy cập lạ không?"]
     it: Có. Hôm mất điện, một máy lạ bắt wifi hành lang. Không tên. Có mùi… à, wifi không có mùi.
     ~ hr_ro_ri(-5)
-- it: Anh Tuấn. Tủ hồ sơ của anh khóa từ. Mất điện là mở. Muốn tui gắn thêm ổ khóa cơ không?
+- it: Anh {hr}. Tủ hồ sơ của anh khóa từ. Mất điện là mở. Muốn tui gắn thêm ổ khóa cơ không?
 * [🗝️ "Có. Gắn giùm tui."]
     it: Ok. Chìa đây. Đừng để chó tha.
     ~ hr_khoa_tu = true
@@ -234,11 +234,11 @@ it: *(không quay lại)* Máy hư thì restart. Wifi hư thì chờ. Hỏi chuy
 // ------------------------------------------------------------
 === hr_tudo_idol_het_thoi ===
 # npc:idol_het_thoi
-idol_het_thoi: *(kính đen trong nhà)* Tuấn. Phòng chờ của tui hôm nay không có trái cây. Em… à ông biết tui là ai không?
+idol_het_thoi: *(kính đen trong nhà)* {hr}. Phòng chờ của tui hôm nay không có trái cây. Em… à ông biết tui là ai không?
 * [😊 "Biết chứ. Người hát 'Công Viên'. Cả nước thuộc."]
     idol_het_thoi: *(gỡ kính ra lau, giấu vẻ vui)* Hồi tui còn nổi, phòng chờ có cả dĩa nho.
     ~ qh("idol_het_thoi", 5)
-* [📓 "Ông Phát, phòng chờ là của Siêu Nhân Hồng. Hợp đồng ghi rõ."]
+* [📓 "Ông {idol_het_thoi}, phòng chờ là của Siêu Nhân Hồng. Hợp đồng ghi rõ."]
     idol_het_thoi: Tui biết. Tui chỉ… muốn có chỗ ngồi thôi.
     ~ qh("idol_het_thoi", -3)
 - idol_het_thoi: Hợp đồng tui hết hạn 31/10. Ông là HR. Ông biết người ta tính gì với tui hông?
@@ -246,24 +246,24 @@ idol_het_thoi: *(kính đen trong nhà)* Tuấn. Phòng chờ của tui hôm nay
     idol_het_thoi: Thiệt hả? Vì sao?
     hr: Vì tối mất điện, ông hát cho cả pantry nghe mà không đòi phòng chờ.
     ~ qh("idol_het_thoi", 10)
-* [😶 "Chuyện hợp đồng thì ông hỏi anh Thái."]
-    idol_het_thoi: Thái lúc nào cũng nói "để anh lo". Tui sợ ổng lo quá rồi ngã quỵ.
+* [😶 "Chuyện hợp đồng thì ông hỏi anh {quan_ly_idol}."]
+    idol_het_thoi: {quan_ly_idol} lúc nào cũng nói "để anh lo". Tui sợ ổng lo quá rồi ngã quỵ.
     ~ qh("idol_het_thoi", 2)
 - -> END
 
 // ------------------------------------------------------------
 === hr_tudo_quan_ly_idol ===
 # npc:quan_ly_idol
-quan_ly_idol: Khoan, anh nghe máy chút… *(2 điện thoại)* Alo… ừ… alo… Rồi, Tuấn, em cần gì?
+quan_ly_idol: Khoan, anh nghe máy chút… *(2 điện thoại)* Alo… ừ… alo… Rồi, {hr}, em cần gì?
 * [🍵 "Em cần anh ngồi xuống 3 phút. Uống trà. Tắt máy."]
     quan_ly_idol: Tắt máy? *(nhìn hai cái điện thoại như nhìn hai đứa con)* …Một cái thôi được không?
     hr: Được.
     ~ qh("quan_ly_idol", 5)
     ~ hr_nghe(3)
-* [📋 "Em cần lịch của Phát và Siêu Nhân Hồng tuần sau, để lo bảo hiểm sự kiện."]
-    quan_ly_idol: Hỏi Sơn. Nếu Sơn có ở công ty. *(cười mệt)*
+* [📋 "Em cần lịch của {idol_het_thoi} và Siêu Nhân Hồng tuần sau, để lo bảo hiểm sự kiện."]
+    quan_ly_idol: Hỏi {thanh_xin_nghi}. Nếu {thanh_xin_nghi} có ở công ty. *(cười mệt)*
     ~ uy_tin = uy_tin + 1
-- quan_ly_idol: Tuấn, em làm HR. Anh hỏi em, giả sử có người mời anh đi chỗ khác, lương gấp đôi, thì người ở lại có trách anh không?
+- quan_ly_idol: {hr}, em làm HR. Anh hỏi em, giả sử có người mời anh đi chỗ khác, lương gấp đôi, thì người ở lại có trách anh không?
 * [💬 "Người ở lại là ai anh? Có phải người hát 'Công Viên' không?"]
     _{quan_ly_idol} đặt cả hai điện thoại xuống bàn. Lần đầu bạn thấy anh ấy không cầm máy._
     quan_ly_idol: …Em đừng nói lung tung.
@@ -276,17 +276,17 @@ quan_ly_idol: Khoan, anh nghe máy chút… *(2 điện thoại)* Alo… ừ… 
 // ------------------------------------------------------------
 === hr_tudo_bien_kich ===
 # npc:bien_kich
-bien_kich: Anh Tuấn. Em đang viết một nhân vật HR. Một người cười mà không ai dám cười lại. Em hỏi anh vài câu được không, cho có… chất liệu?
+bien_kich: Anh {hr}. Em đang viết một nhân vật HR. Một người cười mà không ai dám cười lại. Em hỏi anh vài câu được không, cho có… chất liệu?
 * [😊 "Hỏi đi em. Anh cười cho em xem tại chỗ."]
     bien_kich: *(ghi chép rất nhanh)* Hay quá. Rất… đau. Rất văn học.
     ~ qh("bien_kich", 5)
 * [🕵️ "Nhân vật đó có tên không em?"]
     bien_kich: Dạ… *(lật sổ che lại)* …tên khác ạ. Hoàn toàn hư cấu.
-    _Bạn liếc thấy dòng chữ trong sổ: "Tuấn cười, Duy chạy". Hư cấu quá._
+    _Bạn liếc thấy dòng chữ trong sổ: "Tuấn cười, {thuc_tap_sinh} chạy". Hư cấu quá._
 - bien_kich: Anh có nghĩ người ta có quyền lấy chuyện người khác để viết không anh?
-* [🤝 "Có, nếu người ta xin phép. Như phim của em, em có xin phép Duy chưa?"]
+* [🤝 "Có, nếu người ta xin phép. Như phim của em, em có xin phép {thuc_tap_sinh} chưa?"]
     _{bien_kich} đứng hình. Cây bút dừng giữa chữ._
-    bien_kich: Anh… sao anh biết đó là ý của Duy?
+    bien_kich: Anh… sao anh biết đó là ý của {thuc_tap_sinh}?
     hr: Hôm họp 2/10, anh đứng sát tường. HR đứng sát tường nghe được nhiều lắm.
     ~ qh("bien_kich", -5)
     ~ hr_nghe(3)
@@ -297,15 +297,15 @@ bien_kich: Anh Tuấn. Em đang viết một nhân vật HR. Một người cư�
 // ------------------------------------------------------------
 === hr_tudo_editor ===
 # npc:editor
-editor: *(ngáp)* Anh Tuấn… em chưa chấm công buổi sáng… tại em làm đêm… đợi render xong…
-* [😇 "Anh biết. Bác Bình ghi em về lúc 3 giờ sáng. Anh tính công đêm cho em."]
+editor: *(ngáp)* Anh {hr}… em chưa chấm công buổi sáng… tại em làm đêm… đợi render xong…
+* [😇 "Anh biết. Bác {bac_bao_ve} ghi em về lúc 3 giờ sáng. Anh tính công đêm cho em."]
     editor: *(mắt mở to lần đầu tiên trong ngày)* Thật ạ? Chưa ai… tính công đêm cho em…
     ~ qh("editor", 10)
     ~ hr_nghe(3)
 * [📓 "Nội quy là 8 giờ, em ạ."]
     editor: Dạ… *(gục xuống bàn)* 8 giờ sáng là 3 giờ khuya của em ạ…
     ~ hr_so(3)
-- editor: Anh Tuấn… nếu một người thích một người, mà người đó thích người khác… thì HR có quy định gì không ạ?
+- editor: Anh {hr}… nếu một người thích một người, mà người đó thích người khác… thì HR có quy định gì không ạ?
 * [🍵 "Không có quy định. Chỉ có trà hoa cúc, cho người khó ngủ."]
     editor: *(ôm ly trà)* Cảm ơn anh. Em… thôi, em đi render.
     ~ hr_tra()
@@ -318,7 +318,7 @@ editor: *(ngáp)* Anh Tuấn… em chưa chấm công buổi sáng… tại em l
 // ------------------------------------------------------------
 === hr_tudo_designer ===
 # npc:designer
-designer: Anh Tuấn, poster tuyển dụng của anh, sếp bảo em sửa lần thứ 12. Anh cho xin feedback cụ thể được không ạ?
+designer: Anh {hr}, poster tuyển dụng của anh, sếp bảo em sửa lần thứ 12. Anh cho xin feedback cụ thể được không ạ?
 * [😇 "Anh thấy bản đầu đẹp nhất. Em gửi lại bản đầu đi."]
     designer: *(mắt sáng lên)* Anh là người đầu tiên chọn bản đầu mà không phải sau 37 lần sửa!
     ~ qh("designer", 10)
@@ -338,12 +338,12 @@ designer: Anh Tuấn, poster tuyển dụng của anh, sếp bảo em sửa lầ
 // ------------------------------------------------------------
 === hr_tudo_sales ===
 # npc:sales
-sales: Anh Tuấn! Chị cần tạm ứng 20 triệu tiếp khách Mr. Kevin Trộn. Anh ký giùm chị cái giấy đề xuất nha. Chắc kèo!
-* [💬 "Em nhỏ hơn anh 4 tuổi mà xưng chị hả Huyền?"]
+sales: Anh {hr}! Chị cần tạm ứng 20 triệu tiếp khách Mr. Kevin Trộn. Anh ký giùm chị cái giấy đề xuất nha. Chắc kèo!
+* [💬 "Em nhỏ hơn anh 4 tuổi mà xưng chị hả {sales}?"]
     sales: Trong kinh doanh, ai chốt deal người đó là chị. Tin chị đi!
     ~ qh("sales", 2)
-* [📋 "Tạm ứng thì qua bà Thương. HR chỉ ký nghỉ phép."]
-    sales: Thương thì đòi hóa đơn. Mr. Kevin không xuất hóa đơn, ảnh… là tập đoàn đa quốc gia.
+* [📋 "Tạm ứng thì qua bà {ke_toan}. HR chỉ ký nghỉ phép."]
+    sales: {ke_toan} thì đòi hóa đơn. Mr. Kevin không xuất hóa đơn, ảnh… là tập đoàn đa quốc gia.
 - sales: Mà anh ơi, nếu… giả sử nhà tài trợ của chị không tới thì chị có bị vô cái danh sách gì đó hông?
 * [🤝 "Em nói thật với anh trước. Nói thật thì anh tìm cách. Nói phét thì anh không cứu được."]
     _{sales} im lặng. Lần đầu tiên không có câu "chắc kèo"._
@@ -357,7 +357,7 @@ sales: Anh Tuấn! Chị cần tạm ứng 20 triệu tiếp khách Mr. Kevin Tr
 // ------------------------------------------------------------
 === hr_tudo_chi_dai ===
 # npc:chi_dai
-chi_dai: Tuấn. Ăn cơm chưa? Đi ăn cơm tấm. Ông ngồi phòng HR một mình hoài, người ta tưởng ông là ma.
+chi_dai: {hr}. Ăn cơm chưa? Đi ăn cơm tấm. Ông ngồi phòng HR một mình hoài, người ta tưởng ông là ma.
 * [😇 "Đi. Tui bao."]
     chi_dai: Ông bao thì tui ăn hai dĩa. Thêm chả.
     ~ tien_cong(-70000)
@@ -365,7 +365,7 @@ chi_dai: Tuấn. Ăn cơm chưa? Đi ăn cơm tấm. Ông ngồi phòng HR một
     ~ qh("chi_dai", 5)
 * [😊 Cười.]
     chi_dai: Ông cười nữa là tui đấm à nha. *(nhưng cũng cười theo)*
-- chi_dai: Mà nghe nè. Thằng Duy, nhỏ Ngân, thằng Sơn… đứa nào ông động vô, ông bước qua xác tui trước.
+- chi_dai: Mà nghe nè. Thằng {thuc_tap_sinh}, nhỏ {hong_hot}, thằng {thanh_xin_nghi}… đứa nào ông động vô, ông bước qua xác tui trước.
 * [🤝 "Tui biết. Bà giữ tụi nhỏ, tui giữ cái danh sách cho nó trống."]
     chi_dai: *(nhìn bạn rất lâu)* Ông nói "trống" là phải trống. Tui nhớ đó.
     ~ qh("chi_dai", 8)
@@ -379,14 +379,14 @@ chi_dai: Tuấn. Ăn cơm chưa? Đi ăn cơm tấm. Ông ngồi phòng HR một
 // ------------------------------------------------------------
 === hr_tudo_dan_dau_tu ===
 # npc:dan_dau_tu
-dan_dau_tu: Tuấn! Em có 2 triệu không? Cho anh mượn. Đây là đáy, đáy thật rồi, x3 trong tuần.
+dan_dau_tu: {hr}! Em có 2 triệu không? Cho anh mượn. Đây là đáy, đáy thật rồi, x3 trong tuần.
 * [😶 "Em không có, anh ạ."]
-    dan_dau_tu: Ừ, không sao. Anh hỏi bác Bình. À, bác Bình anh nợ rồi.
+    dan_dau_tu: Ừ, không sao. Anh hỏi bác {bac_bao_ve}. À, bác {bac_bao_ve} anh nợ rồi.
 * [💰 Cho mượn 500.000. "Anh ghi giùm em vào sổ nợ."]
     ~ tien_cong(-500000)
     ~ qh("dan_dau_tu", 8)
     dan_dau_tu: Em tốt nhất công ty! Anh ghi ngay. *(ghi, dưới 9 cái tên khác)*
-- dan_dau_tu: Mà Tuấn, anh hỏi thật nhé. Người nợ nhiều có bị vào danh sách cắt giảm không?
+- dan_dau_tu: Mà {hr}, anh hỏi thật nhé. Người nợ nhiều có bị vào danh sách cắt giảm không?
 * [🤝 "Không. Nhưng anh dùng con mắt phân tích số liệu thật, cho Siêu Nhân Hồng, thì chắc chắn không."]
     dan_dau_tu: Số liệu thật à? *(mở một file Excel cũ bám bụi)* Ừ… anh có một cái bộ lọc… lần ra được fan ảo đấy.
     ~ qh("dan_dau_tu", 5)
@@ -399,15 +399,15 @@ dan_dau_tu: Tuấn! Em có 2 triệu không? Cho anh mượn. Đây là đáy, �
 // ------------------------------------------------------------
 === hr_tudo_thanh_xin_nghi ===
 # npc:thanh_xin_nghi
-thanh_xin_nghi: *(thấy bạn, ho ngay lập tức)* Khụ khụ. Dạ em chào anh Tuấn.
-* [💬 "Em ho trước khi anh hỏi luôn hả Sơn?"]
+thanh_xin_nghi: *(thấy bạn, ho ngay lập tức)* Khụ khụ. Dạ em chào anh {hr}.
+* [💬 "Em ho trước khi anh hỏi luôn hả {thanh_xin_nghi}?"]
     thanh_xin_nghi: Dạ… phản xạ có điều kiện ạ.
     ~ qh("thanh_xin_nghi", 3)
 * [🍵 "Trà gừng nè. Trị ho. Ho thật hay ho giả đều trị được."]
     thanh_xin_nghi: *(cầm ly, cười gượng)* Dạ… anh chu đáo quá.
     ~ hr_tra()
     ~ uong(10)
-- thanh_xin_nghi: Anh Tuấn… em hỏi thiệt. Hồ sơ của em, anh định làm gì?
+- thanh_xin_nghi: Anh {hr}… em hỏi thiệt. Hồ sơ của em, anh định làm gì?
 * [📓 "Hồ sơ em dày 3 cm. Anh định để nó dày thêm, hay mỏng đi, tùy em."]
     thanh_xin_nghi: Dạ… em hiểu.
     ~ hr_so(3)
@@ -415,7 +415,7 @@ thanh_xin_nghi: *(thấy bạn, ho ngay lập tức)* Khụ khụ. Dạ em chào
     thanh_xin_nghi: *(nhìn bạn rất lâu)* …Một ngày nào đó em kể anh nghe. Hứa.
     ~ qh("thanh_xin_nghi", 8)
     ~ hr_nghe(3)
-* {hr_biet_son_kim_tuyen} [🔒 Ngân nga một câu hát của Sơn Kim Tuyến.]
+* {hr_biet_son_kim_tuyen} [🔒 Ngân nga một câu hát của {thanh_xin_nghi} Kim Tuyến.]
     _{thanh_xin_nghi} đứng hình. Rồi bất giác hát tiếp câu sau. Đúng tông._
     thanh_xin_nghi: …Anh!
     hr: Anh không nói ai đâu. Hát tiếp đi em, hay lắm.
@@ -425,14 +425,14 @@ thanh_xin_nghi: *(thấy bạn, ho ngay lập tức)* Khụ khụ. Dạ em chào
 // ------------------------------------------------------------
 === hr_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
-bac_bao_ve: Cháu Tuấn. Ngồi đi. Trà đá hay trà nóng?
+bac_bao_ve: Cháu {hr}. Ngồi đi. Trà đá hay trà nóng?
 * [🍵 "Trà đá bác. Hôm nay con muốn uống trà người khác pha."]
     bac_bao_ve: Ừ. *(rót)* Bác pha trà đá 16 năm. Chưa ai khen. Cũng chưa ai chê.
     ~ qh("bac_bao_ve", 5)
     ~ uong(20)
 * [💬 "Bác ơi, hôm qua ai về muộn nhất vậy bác?"]
     bac_bao_ve: Bác không thấy gì đâu.
-    _Rồi bác nói thêm, rất nhỏ: "Thằng Lĩnh. Như mọi hôm."_
+    _Rồi bác nói thêm, rất nhỏ: "Thằng {editor}. Như mọi hôm."_
 - bac_bao_ve: Cháu dạo này mặt nặng như cái cổng sắt. Có chuyện gì không nói được à?
 * [😢 "Dạ. Con phải chọn người đi, người ở. Con không chọn được."]
     bac_bao_ve: Bác chỉ biết mở cổng, đóng cổng. Nhưng bác biết một điều: ai đi qua cổng này, bác đều nhớ mặt. Cháu cũng thế. Thế là đủ.
@@ -445,7 +445,7 @@ bac_bao_ve: Cháu Tuấn. Ngồi đi. Trà đá hay trà nóng?
 // ------------------------------------------------------------
 === hr_tudo_sieu_nhan_hong ===
 # npc:sieu_nhan_hong
-sieu_nhan_hong: Tuấn ơi! Hồng không phải màu, Hồng là thái độ! *(tạo dáng)* Em cười lên cái coi! Anh nghe nói em cười đáng sợ lắm, anh không tin!
+sieu_nhan_hong: {hr} ơi! Hồng không phải màu, Hồng là thái độ! *(tạo dáng)* Em cười lên cái coi! Anh nghe nói em cười đáng sợ lắm, anh không tin!
 * [😊 Cười. Hết cỡ.]
     sieu_nhan_hong: *(lùi lại một bước)* …Ờ. Ờ, ừ. Cũng… có thái độ. *(tạo dáng lại cho đỡ quê)*
     ~ hr_so(2)
@@ -455,7 +455,7 @@ sieu_nhan_hong: Tuấn ơi! Hồng không phải màu, Hồng là thái độ! *
     sieu_nhan_hong: Slay!
     ~ qh("sieu_nhan_hong", 5)
     ~ hr_tra()
-- sieu_nhan_hong: Mà Tuấn… *(giọng nhỏ lại, như người khác)* nếu một người làm sai với một đứa nhỏ hồi xưa, giờ muốn xin lỗi mà không nhớ đứa đó là ai… thì làm sao?
+- sieu_nhan_hong: Mà {hr}… *(giọng nhỏ lại, như người khác)* nếu một người làm sai với một đứa nhỏ hồi xưa, giờ muốn xin lỗi mà không nhớ đứa đó là ai… thì làm sao?
 * {hr_biet_xom_cay_me} [🔒 "Có khi đứa đó đang ở rất gần anh. Gần lắm."]
     _{sieu_nhan_hong} im lặng rất lâu. Chiếc mũ hồng hơi cúi xuống._
     sieu_nhan_hong: …Cảm ơn em. Anh sẽ để ý.

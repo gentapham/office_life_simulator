@@ -16,7 +16,7 @@ _{thuc_tap_sinh} bước ra từ phòng tắm, mặc y chang bộ đồ đi bi�
     ~ long_so_lan_check_in = long_so_lan_check_in + 1
     ~ qh("thuc_tap_sinh", 8)
     _Ảnh lên story. {hong_hot} bình luận đầu tiên: "Đám cá tươi hả mấy ông?"_
-* [😎 "Chill đi anh Duy. Đi biển mà mặc như đi họp."]
+* [😎 "Chill đi anh {thuc_tap_sinh}. Đi biển mà mặc như đi họp."]
     thuc_tap_sinh: Dạ… em mặc giống anh mà.
     con_ong_chau_cha: …Ờ. Vậy tui mặc như đi họp hả?
     ~ qh("thuc_tap_sinh", 3)
@@ -26,7 +26,7 @@ _{thuc_tap_sinh} bước ra từ phòng tắm, mặc y chang bộ đồ đi bi�
 === con_ong_chau_cha_1710_keo_co ===
 # ngay:17 # gio:10:00 # noi:bai_bien_vung_tau # bat_buoc
 _Kéo co: đội Sản xuất của {truong_phong} đấu "đội Marketing", gồm bạn và những ai chưa được chia đội. {thuc_tap_sinh} tự xin vào đội bạn, mặt nghiêm như ra trận._
-giam_doc: Cố lên Nhật! Cố lên Long! Anh ủng hộ… cả hai!
+giam_doc: Cố lên {truong_phong}! Cố lên {con_ong_chau_cha}! Anh ủng hộ… cả hai!
 _{truong_phong} đứng đầu dây bên kia, kính trễ xuống mũi, nắm dây như nắm cái ghế Phó Giám đốc._
 * [💪 Kéo thật. Lần đầu tiên bạn cố hết sức vì một thứ gì đó.]
     { RANDOM(1, 10) <= 5:
@@ -123,11 +123,11 @@ _{idol_het_thoi} ngủ gục trên vai {quan_ly_idol}. {editor} lặng lẽ đ�
 === con_ong_chau_cha_1710_dem_voi_duy ===
 # ngay:17 # gio:23:50 # noi:khach_san_vung_tau
 _Gần nửa đêm. Phòng khách sạn. Hai cái giường. {thuc_tap_sinh} nằm nhìn trần nhà. Bạn cũng vậy._
-con_ong_chau_cha: Anh Duy. Nói thiệt nha. Tui chán làm "cháu giám đốc" lắm. Muốn tự làm cái gì đó.
-thuc_tap_sinh: *(im lặng lâu)* Anh từng có hết mà vẫn thấy trống, anh Long ạ. Có hết chưa chắc đã vui.
+con_ong_chau_cha: Anh {thuc_tap_sinh}. Nói thiệt nha. Tui chán làm "cháu giám đốc" lắm. Muốn tự làm cái gì đó.
+thuc_tap_sinh: *(im lặng lâu)* Anh từng có hết mà vẫn thấy trống, anh {con_ong_chau_cha} ạ. Có hết chưa chắc đã vui.
 _Bạn ngồi bật dậy._
 * [💬 "Anh… 'từng có hết' là sao?"]
-    thuc_tap_sinh: Dạ… em bỏ rồi. Em bỏ một cái ghế mà ai cũng muốn ngồi, để đi cầm tấm hắt sáng. Mà em vui, anh Long ạ.
+    thuc_tap_sinh: Dạ… em bỏ rồi. Em bỏ một cái ghế mà ai cũng muốn ngồi, để đi cầm tấm hắt sáng. Mà em vui, anh {con_ong_chau_cha} ạ.
     _Bạn nhìn {thuc_tap_sinh} rất lâu. Người này lớn hơn bạn 2 tuổi, và đi trước bạn một quãng đường dài._
     ~ qh("thuc_tap_sinh", 25)
     ~ long_bh(10)
@@ -193,7 +193,7 @@ _Căn nhà chú cho bạn ở. Phòng thu. 41 bản demo. Tất cả đang đư�
 # ngay:19 # gio:08:35 # noi:phong_hop_sang_tao # bat_buoc
 _Thứ Hai. Hôm nay bạn tới đúng giờ. Không phải vì chăm chỉ. Vì không ngủ được._
 _Họp giao ban sau team building. Không ai nhìn mặt ai. {truong_phong} đếm được 7 lần thở dài. Bạn góp 2 lần._
-truong_phong: *(bất ngờ)* Long. Cậu đến đúng giờ à?
+truong_phong: *(bất ngờ)* {con_ong_chau_cha}. Cậu đến đúng giờ à?
 * [😶 "Ừ. Mất ngủ."]
     truong_phong: *(nhìn bạn lâu hơn bình thường)* …Cậu ổn không?
     _Câu hỏi đó, từ {truong_phong}. Bạn suýt kể hết._

@@ -16,7 +16,7 @@ _Ca sĩ độc quyền duy nhất của {cong_ty}, mười một năm. Không c�
     ~ phat_ngay_deo_kinh = phat_ngay_deo_kinh + 1
     _Bạn soi gương. Tóc mullet 2015, highlight đã phai. Vẫn đẹp. Ít nhất là trong gương nhà mình._
 * [📞 Gọi cho {quan_ly_idol}: "Anh, sao danh sách hông có em?"]
-    quan_ly_idol: Alo Phát hả? Khoan, anh nghe máy bên kia chút… Ừ, ừ, em hả. Tại danh sách là {thanh_ninh} làm, anh chưa kịp coi…
+    quan_ly_idol: Alo {idol_het_thoi} hả? Khoan, anh nghe máy bên kia chút… Ừ, ừ, em hả. Tại danh sách là {thanh_ninh} làm, anh chưa kịp coi…
     quan_ly_idol: Em cứ ngủ thêm đi. Chiều anh ghé kể cho nghe, có gì anh lo.
     _Anh {quan_ly_idol} nói "ngủ thêm đi" bằng cái giọng như sợ bạn đau. Không hiểu sao bạn càng muốn đi._
     ~ qh("quan_ly_idol", 3)
@@ -39,7 +39,7 @@ _Bạn chỉnh kính đen. Bạn bước tới. Bạn đã tập câu này trên
 idol_het_thoi: Em biết anh là ai không?
 sieu_nhan_hong: *(lễ phép, hơi cúi đầu)* Dạ… anh là ai ạ?
 _Cả phòng họp nín thở. {bien_kich} lặng lẽ mở cuốn sổ bìa da. {hong_hot} giơ điện thoại lên rồi bị {chi_dai} đè tay xuống._
-giam_doc: *(giọng như nói với em trai)* Phát. Ngồi xuống đi em. # hen_gio:6
+giam_doc: *(giọng như nói với em trai)* {idol_het_thoi}. Ngồi xuống đi em. # hen_gio:6
 * [🕶️ "Anh là người hát 'Công Viên'. Cả nước từng hát bài của anh đó em."]
     ~ phat_tt(5)
     sieu_nhan_hong: Ủa trời! "Ngày xưa có đôi bạn thân" đó hả anh? Hồi lớp 9 em hát hoài luôn á!
@@ -49,7 +49,7 @@ giam_doc: *(giọng như nói với em trai)* Phát. Ngồi xuống đi em. # he
 * [😤 "Anh là ca sĩ độc quyền của công ty này. Từ trước khi em biết hát."]
     sieu_nhan_hong: *(tạo dáng)* Dạ, vậy là đàn anh! Hồng không phải màu, Hồng là thái độ! Em xin được chỉ giáo!
     _Bạn định nói thêm, nhưng anh {quan_ly_idol} đã đứng dậy, khoác vai bạn rất nhẹ._
-    quan_ly_idol: Giới thiệu với Nguyên, đây là anh Phát, đàn anh của em đó. Thôi Phát, ra ngoài anh nói cái này.
+    quan_ly_idol: Giới thiệu với Nguyên, đây là anh {idol_het_thoi}, đàn anh của em đó. Thôi {idol_het_thoi}, ra ngoài anh nói cái này.
     ~ qh("sieu_nhan_hong", -5)
     ~ qh("quan_ly_idol", 5)
     ~ phat_tt(5)
@@ -105,7 +105,7 @@ sieu_nhan_hong: *(ló đầu ra từ sau tủ quần áo, tạo dáng)* Ủa anh
 # ngay:1 # gio:15:00 # noi:tang_1
 _Tầng 1. Hai mươi mấy ly trà sữa xếp thành hình trái tim trên bàn. Hôm nay còn là Ngày Quốc tế Người cao tuổi: cả công ty mừng Bác {bac_bao_ve}, bác ngại đỏ cả mặt._
 _Máy pha cà phê hỏng đúng Ngày Cà phê Quốc tế. Anh {quan_ly_idol} nhìn cái máy như nhìn người yêu cũ._
-hong_hot: Anh Phát! Ly của anh nè, size L, trân châu hồng. Ủa mà anh có tên trong danh sách hông ta? Thôi kệ, uống đi anh!
+hong_hot: Anh {idol_het_thoi}! Ly của anh nè, size L, trân châu hồng. Ủa mà anh có tên trong danh sách hông ta? Thôi kệ, uống đi anh!
 * [😇 Mang ly của mình ra chòi bảo vệ, đưa Bác {bac_bao_ve}.]
     bac_bao_ve: Ơ… bác uống trà đá quen rồi. Thôi, cháu đã mang ra thì bác nhận.
     bac_bao_ve: Năm 2015 cháu đứng ở cổng này ký tặng cả buổi chiều đấy. Bác nhớ.
@@ -136,7 +136,7 @@ truong_phong: Mình sync nhanh 5 phút thôi nhé. Mục tiêu: 1 triệu ngư�
 sales: Tin chị đi, deal này chắc kèo! Chị có 3 nhà tài trợ, 2 tỷ, bên Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch Mr. Kevin Trộn quý chị lắm.
 thuc_tap_sinh: Dạ… em có ý tưởng phim ngắn ạ. Về một người gác két, ờ, người hùng không ai biết tên…
 _Không ai nghe {thuc_tap_sinh}. Trừ {bien_kich}, đang ghi chép rất chăm._
-truong_phong: Còn ai có ý tưởng gì không? Anh Phát?
+truong_phong: Còn ai có ý tưởng gì không? Anh {idol_het_thoi}?
 * [🎤 "Remix 'Công Viên' cho Nguyên hát. Bài có sẵn, khán giả có sẵn."]
     truong_phong: Ơ… cái này cũng hay đấy. Mình take note lại, họp tiếp sau nhé.
     _"Take note lại" nghĩa là không. Nhưng {sieu_nhan_hong} ở cuối bàn thì gật đầu lia lịa._
@@ -158,7 +158,7 @@ truong_phong: Còn ai có ý tưởng gì không? Anh Phát?
 === idol_het_thoi_0210_tra_sua_thu_sau ===
 # ngay:2 # gio:15:05 # noi:pantry
 _Trà sữa thứ 6, mua bằng quỹ phạt đi trễ. {chua_te_deadline} đóng góp nhiều nhất nên được chọn vị trước._
-chua_te_deadline: Anh Phát, nghe nói anh đóng phạt tháng này 0 đồng. Tại anh hông bao giờ tới trước 11 giờ nên hông tính trễ hả?
+chua_te_deadline: Anh {idol_het_thoi}, nghe nói anh đóng phạt tháng này 0 đồng. Tại anh hông bao giờ tới trước 11 giờ nên hông tính trễ hả?
 * [🕶️ "Ngôi sao thì tới lúc nào cũng là đúng giờ."]
     chua_te_deadline: Chill. Câu đó em xin nha, mai em nói với {hr}.
     ~ phat_tt(3)
@@ -201,7 +201,7 @@ _Đó không phải bài hát. Đó là một câu nói trong clip ký hợp đ�
     _Cô dâu hát ba câu. Cả bàn bạn cô dâu hát theo. Bạn đệm đàn. Không ai biết đây là bài gì, nhưng ai cũng vui._
     ~ phat_tt(-5)
     ~ cang_thang(-5)
-- quan_ly_idol: *(chạy tới, đưa phong bì)* Xong rồi Phát. Mẹ cô dâu trả đủ, anh xin thêm hai lon nước ngọt cho em.
+- quan_ly_idol: *(chạy tới, đưa phong bì)* Xong rồi {idol_het_thoi}. Mẹ cô dâu trả đủ, anh xin thêm hai lon nước ngọt cho em.
 ~ phat_so_show = phat_so_show + 1
 ~ tien_cong(1350000)
 ~ uong(20)
@@ -215,17 +215,17 @@ _Trên đường về, bạn mở Tóp-tóp lần đầu tiên trong tuần, gõ
 _Chủ nhật, Ngày Động vật Thế giới. Bạn ghé công ty lấy bộ vest kim tuyến trong tủ studio để mai đi hát khai trương._
 _Ở cổng, {cho} vừa được tắm, mặc áo, đội nơ. Nhìn mặt nó là biết nó rất không vui. {chi_dai} đang lau lông cho nó, người duy nhất nó cho tắm._
 _Một chiếc xe màu hồng đỗ xịch. {sieu_nhan_hong} bước xuống, cúi người, giả tiếng sủa._
-sieu_nhan_hong: Gâu gâu! Ê Tuất! Nơ đẹp ghê! Gâu!
+sieu_nhan_hong: Gâu gâu! Ê {cho}! Nơ đẹp ghê! Gâu!
 cho: GRỪ… GÂU GÂU GÂU!
 _{cho} lao tới, ngoạm mất chiếc găng tay hồng, chạy tọt vào gầm cầu thang. {sieu_nhan_hong} đứng một tay trần, ngơ ngác._
 _Bạn bật cười. Cười thành tiếng. Lần đầu tiên trong tháng._
 * [🐾 Ngồi xuống cạnh {cho}: "Giỏi. Mày giỏi lắm."]
     cho: *(ló đầu ra khỏi gầm cầu thang, nhìn bạn, đuôi vẫy nhẹ)* Gâu.
-    chi_dai: Ủa, nó cho ông lại gần hả? Lạ à nha. Tuất nó ghét người tinh tướng lắm.
+    chi_dai: Ủa, nó cho ông lại gần hả? Lạ à nha. {cho} nó ghét người tinh tướng lắm.
     ~ qh("cho", 15)
     ~ qh("chi_dai", 3)
 * [🕶️ Rút điện thoại quay lại, định đăng "Siêu nhân bị chó rượt".]
-    chi_dai: Phát. Cất. Điện thoại.
+    chi_dai: {idol_het_thoi}. Cất. Điện thoại.
     _Giọng {chi_dai} không to nhưng bạn cất liền._
     ~ qh("chi_dai", -5)
     ~ phat_tt(3)
@@ -243,7 +243,7 @@ bac_bao_ve: *(từ chòi bảo vệ, không ngẩng lên)* Hai đứa. Một đ�
 === idol_het_thoi_0410_dem_like_that ===
 # ngay:4 # gio:22:30 # noi:can_1808
 _Căn 1808. Bạn mở trang cá nhân. Bài đăng sáng nay "Chủ nhật bình yên" có 812 lượt thích, 640 bình luận._
-_640 bình luận. Bình luận nào cũng là "Anh Phát đỉnh nóc kịch trần". Avatar nào cũng là một bông hoa sen giống nhau._
+_640 bình luận. Bình luận nào cũng là "Anh {idol_het_thoi} đỉnh nóc kịch trần". Avatar nào cũng là một bông hoa sen giống nhau._
 _Tin nhắn từ "Like Thật 100%": "Gói tháng của anh hết hạn ngày 5/10. Gia hạn ngay để không mất 80.000 fan yêu thương! Ưu đãi: thêm 20.000 fan chỉ 4 triệu."_
 * [🤖 Gia hạn, mua thêm gói 20.000 fan.]
     ~ phat_mua_fan(20000, 4000000)

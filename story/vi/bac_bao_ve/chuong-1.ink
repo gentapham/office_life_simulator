@@ -196,7 +196,7 @@ _Và một chồng thư tay, cột bằng dây thun. Thư nào cũng ký một c
     ~ bv_g(2)
 - _Chiều, Ông Ba trà đá đạp xe sang, mang theo bàn cờ tướng._
 ong_ba_tra_da: Ngồi chơi, uống miếng nước. Nay ông ăn con xe của chú trước.
-* [♟️ Chơi nghiêm túc. Thắng Ông Ba một ván.]
+* [♟️ Chơi nghiêm túc. {giam_doc} Ông Ba một ván.]
     ong_ba_tra_da: Chú đánh như đang giữ cổng. Không cho con nào qua.
     ~ bv_tam(5)
 * [♟️ Chơi thong thả. Thua cũng được.]

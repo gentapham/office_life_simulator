@@ -5,19 +5,19 @@
 // ------------------------------------------------------------
 === thanh_xin_nghi_0510_giao_ban ===
 # ngay:5 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
-_Thứ 2. Ngày Nhà giáo Thế giới. Trên ghế bạn có một bông hồng nhung và tấm thiệp: "Kính tặng anh Sơn, người dạy em cách giữ lịch ạ. Em {thuc_tap_sinh}."_
+_Thứ 2. Ngày Nhà giáo Thế giới. Trên ghế bạn có một bông hồng nhung và tấm thiệp: "Kính tặng anh {thanh_xin_nghi}, người dạy em cách giữ lịch ạ. Em {thuc_tap_sinh}."_
 _{thuc_tap_sinh} 30 tuổi, lớn hơn bạn 2 tuổi, gọi bạn là "anh". Bạn cũng gọi em ấy là "anh". Hai người "anh" nhau suốt 1 tháng mà chưa ai chịu thua._
-thuc_tap_sinh: Dạ anh Sơn, em mới vô nên chưa biết, lịch Siêu Nhân Hồng mình ghi bằng bút gì ạ?
-* [😇 "Bút chì anh Duy ơi. Ổng đổi lịch dữ lắm."]
-    thuc_tap_sinh: Dạ em ghi nhớ ạ! *(ghi vào sổ: "Bút chì. Anh Sơn dạy.")*
+thuc_tap_sinh: Dạ anh {thanh_xin_nghi}, em mới vô nên chưa biết, lịch Siêu Nhân Hồng mình ghi bằng bút gì ạ?
+* [😇 "Bút chì anh {thuc_tap_sinh} ơi. Ổng đổi lịch dữ lắm."]
+    thuc_tap_sinh: Dạ em ghi nhớ ạ! *(ghi vào sổ: "Bút chì. Anh {thanh_xin_nghi} dạy.")*
     ~ qh("thuc_tap_sinh", 5)
-* [🤝 "Anh Duy, sau này em có… việc gấp, anh giữ cuốn lịch giùm em được hông?"]
+* [🤝 "Anh {thuc_tap_sinh}, sau này em có… việc gấp, anh giữ cuốn lịch giùm em được hông?"]
     thuc_tap_sinh: Dạ em làm liền ạ! Mà… việc gấp gì ạ?
     thanh_xin_nghi: Dạ… bà ngoại.
     thuc_tap_sinh: Dạ em hiểu ạ! *(rất nghiêm túc, rất cảm động)*
     ~ qh("thuc_tap_sinh", 8)
 - _{giam_doc} bước vào, muộn 40 phút._
-giam_doc: Tuần này Siêu Nhân Hồng chụp poster đầu tiên. Thứ 3. Sơn, lịch phải chuẩn từng phút. Anh không ép.
+giam_doc: Tuần này Siêu Nhân Hồng chụp poster đầu tiên. Thứ 3. {thanh_xin_nghi}, lịch phải chuẩn từng phút. Anh không ép.
 ~ son_di_lam()
 -> END
 
@@ -29,7 +29,7 @@ _Giữa lúc đang tạo dáng, {sieu_nhan_hong} nhìn qua cửa sổ. Dưới �
 sieu_nhan_hong: Đợi anh 5 phút!
 _{sieu_nhan_hong} chạy mất. 5 phút. 15 phút. 1 tiếng. Studio thuê theo giờ. Lịch quay chiều nay, lịch phỏng vấn mai, lịch thử đồ thứ 5… đổ như domino._
 chua_te_deadline: SƠN! Ét o ét! Lịch cả tuần sập rồi!
-* {son_khung_gio_giup_nguoi} [🔒 "Bình tĩnh. Khung giờ giúp người, em có chừa. Anh Duy, cầm máy quay chạy theo ổng!"]
+* {son_khung_gio_giup_nguoi} [🔒 "Bình tĩnh. Khung giờ giúp người, em có chừa. Anh {thuc_tap_sinh}, cầm máy quay chạy theo ổng!"]
     thuc_tap_sinh: Dạ em chạy liền ạ!
     _{thuc_tap_sinh} chạy theo, quay được cảnh {sieu_nhan_hong} dắt bà cụ qua đường, xách giỏ về tận nhà, sửa cái quạt máy._
     ~ follow(30000)
@@ -63,12 +63,12 @@ _Mốc 1: 50.000 người theo dõi. Tối nay 18:00 bạn có buổi tập than
         bac_bao_ve: *(đang tưới cây, không ngẩng lên)* Bác không thấy gì đâu.
         ~ son_mo(3)
     - else:
-        bac_bao_ve: Cháu Sơn. Đi đâu thế? Họp chưa xong mà.
+        bac_bao_ve: Cháu {thanh_xin_nghi}. Đi đâu thế? Họp chưa xong mà.
         ~ son_soi(10)
         _Bạn quay lại phòng họp. Buổi tập dời sang tuần sau._
         ~ son_mo(-5)
     }
-* [🤝 Nhờ Thái Che: nhắn {quan_ly_idol} nói đỡ "Sơn đi khảo sát địa điểm quay".]
+* [🤝 Nhờ {quan_ly_idol} Che: nhắn {quan_ly_idol} nói đỡ "Sơn đi khảo sát địa điểm quay".]
     ~ qh("quan_ly_idol", -5)
     quan_ly_idol: *(nhắn lại)* Khảo sát địa điểm lúc 6 giờ tối? Thôi được, đi đi. Lần này thôi nha.
     ~ son_mo(5)
@@ -83,14 +83,14 @@ _Mốc 1: 50.000 người theo dõi. Tối nay 18:00 bạn có buổi tập than
 // ------------------------------------------------------------
 === thanh_xin_nghi_0810_tap_hat_len ===
 # ngay:8 # gio:12:15 # noi:studio_tang_2
-_Giờ nghỉ trưa. Ngày Thị giác Thế giới. Anh Tuấn dắt {editor} đi khám mắt. Phòng HR trống. Studio tầng 2 trống._
+_Giờ nghỉ trưa. Ngày Thị giác Thế giới. Anh {hr} dắt {editor} đi khám mắt. Phòng HR trống. Studio tầng 2 trống._
 _Cơ hội vàng. Bạn lẻn vào studio, khép cửa, mở micro._
 _Trên bàn mixer có một hộp cơm ai bỏ quên, còn nguyên._
 * [🎙️ Tập hát. Canh tiếng bước chân ngoài cửa.]
     -> thanh_xin_nghi_mg_tap_hat_mo
 * [🍱 Ăn hộp cơm trước đã. Hát bụng đói không ra hơi.]
     ~ an(40)
-    _Cơm sườn. Ngon. Của ai đó. Bạn để lại tờ giấy: "Em nợ 1 hộp cơm. Sơn." Rồi xé đi, vì để tên là toang._
+    _Cơm sườn. Ngon. Của ai đó. Bạn để lại tờ giấy: "Em nợ 1 hộp cơm. {thanh_xin_nghi}." Rồi xé đi, vì để tên là toang._
     -> thanh_xin_nghi_mg_tap_hat_mo
 
 // ------------------------------------------------------------
@@ -115,7 +115,7 @@ _Thứ 4. Giờ hành chính. Bạn nhìn cuốn lịch bìa hồng: 14/10, Siê
 === thanh_xin_nghi_0910_xin_kham_mat ===
 # ngay:9 # gio:13:45 # noi:phong_hr
 _Chiều nay cô giáo thanh nhạc có một suất trống. Bạn cần 2 tiếng. Bạn gõ cửa phòng HR._
-thanh_xin_nghi: Anh Tuấn ơi… chiều nay em xin nghỉ, đi khám mắt chung với {editor} cho vui ạ. Hôm qua ảnh khám một mình, tội ảnh.
+thanh_xin_nghi: Anh {hr} ơi… chiều nay em xin nghỉ, đi khám mắt chung với {editor} cho vui ạ. Hôm qua ảnh khám một mình, tội ảnh.
 hr: {editor} khám hôm qua rồi em. Anh dắt đi mà.
 * [🤧 "Dạ… thì… tái khám ạ! Bác sĩ dặn phải có người đi kèm!"]
     { RANDOM(1, 2) == 1:
@@ -142,14 +142,14 @@ hr: {editor} khám hôm qua rồi em. Anh dắt đi mà.
 === thanh_xin_nghi_0910_hieu_hoi_lich ===
 # ngay:9 # gio:16:30 # noi:ban_dieu_phoi
 _Bàn điều phối. {ran_doc} ghé qua, tay cầm hai ly trà sữa, cười rất ngọt._
-ran_doc: Sơn ơi, tui mời ông ly trà sữa nè. Mà ông giữ lịch anh Nguyên đúng hông? Tuần sau ảnh quay ở đâu vậy? Tui viết bản tin nội bộ, muốn đăng lịch cho mọi người cổ vũ.
+ran_doc: {thanh_xin_nghi} ơi, tui mời ông ly trà sữa nè. Mà ông giữ lịch anh Nguyên đúng hông? Tuần sau ảnh quay ở đâu vậy? Tui viết bản tin nội bộ, muốn đăng lịch cho mọi người cổ vũ.
 _{ran_doc} vô làm mới 9 ngày, mà hỏi han ai cũng thân như quen 10 năm._
 * [📅 "Đây nè, ông chụp lại đi." (Mở cuốn lịch)]
     ~ son_hieu_biet_lich = true
     ~ qh("ran_doc", 10)
     ~ nhan(tra_sua)
     ran_doc: Cảm ơn ông nha! Ông dễ thương ghê! *(chụp 4 tấm, rất nhanh)*
-* [🤐 "Lịch nội bộ, tui không đưa được. Ông hỏi anh Thái nha."]
+* [🤐 "Lịch nội bộ, tui không đưa được. Ông hỏi anh {quan_ly_idol} nha."]
     ran_doc: Ờ… ừ, đúng rồi. Tui hỏi vậy thôi chứ không có ý gì đâu. Trà sữa ông cứ uống nha.
     ~ nhan(tra_sua)
     ~ qh("ran_doc", -3)
@@ -172,33 +172,33 @@ _Bạn nhìn bộ đồ kim tuyến cũ trên móc. Rách một bên vai, bong m
     _Bạn cúp máy. Không có hóa đơn là không có tiền._
     ~ son_tin(-5)
     -> thanh_xin_nghi_1010_tien_may_do.s_cach_khac
-* [🤝 Qua nhà anh Thái mượn tiền.]
+* [🤝 Qua nhà anh {quan_ly_idol} mượn tiền.]
     -> thanh_xin_nghi_1010_tien_may_do.s_nha_thai
 * [🎤 Tối nay hát thêm một đêm ở Sống Ảo.]
     _Bạn nhắn chủ quán: "Tối nay em hát được không anh?" "Được, 8 giờ."_
     -> thanh_xin_nghi_mg_song_ao_mo
-* [🎤 Mượn bộ vest kim tuyến cũ của anh Phát. Ảnh còn cả tủ đồ 2015.]
+* [🎤 Mượn bộ vest kim tuyến cũ của anh {idol_het_thoi}. Ảnh còn cả tủ đồ 2015.]
     -> thanh_xin_nghi_1010_tien_may_do.s_vest_phat
 
 = s_cach_khac
-* [🤝 Qua nhà anh Thái mượn tiền.]
+* [🤝 Qua nhà anh {quan_ly_idol} mượn tiền.]
     -> thanh_xin_nghi_1010_tien_may_do.s_nha_thai
-* [🎤 Mượn bộ vest của anh Phát.]
+* [🎤 Mượn bộ vest của anh {idol_het_thoi}.]
     -> thanh_xin_nghi_1010_tien_may_do.s_vest_phat
 
 = s_nha_thai
-_Studio 0905, chung cư Sky Ảo. Nhỏ gọn. 5 cục sạc dự phòng, 3 cái điện thoại đang sạc. Anh Thái mở cửa, mắt thâm, tay cầm ly cà phê thứ tư._
-quan_ly_idol: Sơn? Thứ 7 mà em tới nhà anh? Có chuyện gì? Bà ngoại hả?
+_Studio 0905, chung cư Sky Ảo. Nhỏ gọn. 5 cục sạc dự phòng, 3 cái điện thoại đang sạc. Anh {quan_ly_idol} mở cửa, mắt thâm, tay cầm ly cà phê thứ tư._
+quan_ly_idol: {thanh_xin_nghi}? Thứ 7 mà em tới nhà anh? Có chuyện gì? Bà ngoại hả?
 thanh_xin_nghi: Dạ… anh cho em mượn 1 triệu 2. Lương về em trả liền.
 quan_ly_idol: Ờ. Đợi anh. *(đi vào trong lấy ví)*
-_Anh Thái để ngăn kéo tủ đầu giường mở hé. Trong đó có một khung ảnh. Ảnh {idol_het_thoi} năm 2015, cầm micro, cười rạng rỡ. Lồng khung cẩn thận. Giấu kỹ._
+_Anh {quan_ly_idol} để ngăn kéo tủ đầu giường mở hé. Trong đó có một khung ảnh. Ảnh {idol_het_thoi} năm 2015, cầm micro, cười rạng rỡ. Lồng khung cẩn thận. Giấu kỹ._
 ~ son_thay_anh_phat = true
 * [😶 Đẩy ngăn kéo lại nhẹ nhàng, như chưa thấy gì.]
     ~ qh("quan_ly_idol", 3)
     _Bạn biết lịch của tất cả mọi người. Giờ bạn biết thêm một điều không có trong lịch._
-* [💬 "Anh Thái… ảnh anh Phát hả anh?"]
+* [💬 "Anh {quan_ly_idol}… ảnh anh {idol_het_thoi} hả anh?"]
     quan_ly_idol: *(đóng ngăn kéo cái rầm)* Ảnh… ảnh tư liệu. Để làm hồ sơ nghệ sĩ. Em đừng nói lung tung.
-    _Tai anh Thái đỏ tới tận cổ._
+    _Tai anh {quan_ly_idol} đỏ tới tận cổ._
     ~ qh("quan_ly_idol", -3)
 - ~ tien_cong(1200000)
 ~ son_co_do_kim_tuyen = true
@@ -215,7 +215,7 @@ idol_het_thoi: Em mượn đồ của anh làm gì? Em biết anh là ai không?
 * [😇 "Dạ biết anh. Em đi hát đám cưới bạn em, muốn mặc đồ của người nổi tiếng cho hên."]
     idol_het_thoi: *(mềm lại ngay)* Ờ… vậy thì được. Mà đừng làm rách nha. Bộ này có fan xin mua 10 triệu đó. *(không ai xin)*
     ~ qh("idol_het_thoi", 8)
-* [🎤 "Anh Phát… em đi thi hát. Em cần đồ đẹp."]
+* [🎤 "Anh {idol_het_thoi}… em đi thi hát. Em cần đồ đẹp."]
     idol_het_thoi: *(gỡ kính đen)* Thi hát? Em? *(nhìn bạn từ đầu tới chân)* …Lấy bộ bạc. Bộ đó ăn đèn hơn. Và đừng để ai biết, kẻo người ta ép em ký hợp đồng như anh.
     ~ qh("idol_het_thoi", 12)
     ~ son_mo(3)
@@ -232,7 +232,7 @@ _Bạn lục album. Có một tấm: bạn 7 tuổi, đứng trên cái ghế đ
 * [📸 Đăng tấm đó. "Ca sĩ nhí của bà ngoại."]
     ~ son_tin(-5)
     ~ qh("hr", 3)
-    _10 phút sau, anh Tuấn thả tim. Rồi bình luận: "Bà ngoại em khỏe re ghê. Ảnh này chụp năm nào em?"_
+    _10 phút sau, anh {hr} thả tim. Rồi bình luận: "Bà ngoại em khỏe re ghê. Ảnh này chụp năm nào em?"_
     _Bạn nhìn bình luận, mồ hôi chảy ròng ròng dù trời mát._
     ~ son_soi(5)
 * [📸 Đăng tấm khác: bạn 5 tuổi đang ngủ, không liên quan gì tới hát.]
@@ -251,9 +251,9 @@ _Thứ 2. 10 giờ 47. Điện thoại cả văn phòng rung cùng lúc. Lương
 ~ cang_thang(-10)
 _Bạn nhìn số dư. Trừ 1 ngày nghỉ không phép tháng trước, trừ 3 ngày phép âm. Còn ít hơn bạn tưởng._
 { son_co_do_kim_tuyen && not son_muon_vest_phat:
-    _Trả anh Thái 1.200.000đ trước đã._
+    _Trả anh {quan_ly_idol} 1.200.000đ trước đã._
 }
-* {son_co_do_kim_tuyen && not son_muon_vest_phat} [🤝 Chuyển khoản trả anh Thái ngay, kèm "Em cảm ơn anh nhiều."]
+* {son_co_do_kim_tuyen && not son_muon_vest_phat} [🤝 Chuyển khoản trả anh {quan_ly_idol} ngay, kèm "Em cảm ơn anh nhiều."]
     ~ qh("quan_ly_idol", 8)
     quan_ly_idol: *(nhắn lại)* Trả gì lẹ vậy. Mà em may đồ gì?
 * [💰 Đóng học phí thanh nhạc tháng sau luôn.]
@@ -270,11 +270,11 @@ _Bạn nhìn số dư. Trừ 1 ngày nghỉ không phép tháng trước, trừ 
 # ngay:12 # gio:14:00 # noi:ban_dieu_phoi
 _Chiều. Bạn xếp lịch tuần cho Siêu Nhân Hồng. Thứ 4 (14/10): vòng 2 của bạn. Thứ 5: chưa có gì. Thứ 6 (16/10): gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng._
 _Đài Tivi Hóng. Cái đài bạn sẽ có mặt thứ 4 trong bộ đồ kim tuyến. Thứ 6 bạn lại phải tới, trong áo sơ mi, đi kèm {sieu_nhan_hong}._
-quan_ly_idol: Sơn, thứ 6 em đi đài với Nguyên nha. Anh kẹt đám cưới của Phát buổi sáng.
+quan_ly_idol: {thanh_xin_nghi}, thứ 6 em đi đài với Nguyên nha. Anh kẹt đám cưới của {idol_het_thoi} buổi sáng.
 * [😅 "Dạ… dạ được anh."]
-    _Hai lần trong một tuần, ở cùng một đài. Một lần là Sơn Kim Tuyến, một lần là Sơn Điều Phối. Bạn bắt đầu tập đi kiểu khác._
+    _Hai lần trong một tuần, ở cùng một đài. Một lần là {thanh_xin_nghi} Kim Tuyến, một lần là {thanh_xin_nghi} Điều Phối. Bạn bắt đầu tập đi kiểu khác._
     ~ cang_thang(5)
-* [🗂️ "Anh ơi, thứ 6 để anh Duy đi được hông? Em… bị dị ứng đèn trường quay."]
+* [🗂️ "Anh ơi, thứ 6 để anh {thuc_tap_sinh} đi được hông? Em… bị dị ứng đèn trường quay."]
     quan_ly_idol: Dị ứng đèn trường quay? Em làm điều phối nghệ sĩ bao nhiêu năm mà dị ứng đèn trường quay?
     ~ son_tin(-8)
     quan_ly_idol: Đi. Không bàn.

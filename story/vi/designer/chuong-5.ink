@@ -98,7 +98,7 @@ _{sales} quay sang nhìn bạn. Lần này tới lượt bạn._
 // ------------------------------------------------------------
 === designer_2210_toi_kevin_tron ===
 # ngay:22 # gio:20:30 # noi:can_203
-sales: Chị Quỳnh, mai livestream sinh nhật anh {sieu_nhan_hong}. Sếp muốn chủ tịch Kevin Trộn lên sóng tặng quà.
+sales: Chị {designer}, mai livestream sinh nhật anh {sieu_nhan_hong}. Sếp muốn chủ tịch Kevin Trộn lên sóng tặng quà.
 sales: Em cần: danh thiếp, backdrop BTT, và một cái hộp quà to có logo. Em tìm được người đóng rồi.
 _Một tập đoàn không có thật sắp lên sóng trực tiếp. Và logo của nó do chính tay bạn vẽ._
 * [🗂️ Làm đủ hết. Đã lỡ thì lỡ cho đẹp.]
@@ -349,12 +349,12 @@ _Cả phòng cười. {sales} không cười. {sales} quay sang bạn. Ánh mắ
     _Cả phòng im phăng phắc._
     ~ ds_huyen_deal_that = true
     ~ qh("sales", 15)
-    sales: *(thì thầm sau khi cúp máy)* Chị Quỳnh… lần này là thật. Chị làm giùm em bộ hồ sơ đề xuất. Hồ sơ thật. Lần đầu tiên.
+    sales: *(thì thầm sau khi cúp máy)* Chị {designer}… lần này là thật. Chị làm giùm em bộ hồ sơ đề xuất. Hồ sơ thật. Lần đầu tiên.
     designer: Lần này chị không cần ghép ảnh trụ sở nữa ha.
 * [😶 Im lặng. Ai biết đâu là thật nữa.]
     ~ qh("sales", -10)
     _{sales} cười gượng, cất điện thoại. Bạn thấy tay nó run._
-* [💬 "Em chắc không? Hay Ngân gọi chọc?"]
+* [💬 "Em chắc không? Hay {hong_hot} gọi chọc?"]
     sales: Chắc. Mà… tháng này em nói "chắc" nhiều quá rồi ha.
     ~ qh("sales", -3)
     _{sales} đi ra sân thượng một mình._

@@ -86,7 +86,7 @@ _Một tuần sau Đêm Hồng._
     _Siêu Nhân Hồng chưa tới một triệu. Nhưng tấm backdrop của bạn thì ai cũng chụp lại, và người ta nhớ nó lâu hơn con số._
 }
 _Phòng giám đốc. {giam_doc} ngồi sau bàn, trên tường vẫn là logo chữ G bản năm 2010._
-giam_doc: {designer}. Anh đọc lại hết rồi. Poster dắt bà cụ, phông vẽ tay, backdrop. Không phải ý tưởng của Nhật.
+giam_doc: {designer}. Anh đọc lại hết rồi. Poster dắt bà cụ, phông vẽ tay, backdrop. Không phải ý tưởng của {truong_phong}.
 giam_doc: Từ tháng 11, em là Trưởng nhóm Thiết kế. Lương tăng 20%. Lần này anh hứa có giấy.
 _Ông đưa bạn tờ quyết định. Giấy trắng, mộc đỏ, chữ ký nguệch ngoạc._
 giam_doc: À mà… em sửa nhẹ cái quyết định này giúp anh nhé? Font nhìn hơi… chưa đủ wow.
@@ -110,14 +110,14 @@ _Ngoài cửa sổ, cây lưỡi hổ trên ban công vừa đâm thêm một l�
 # dieu_kien:ket_thuc_song_kiem_hop_bich
 _Tháng 12. Tầng trệt chung cư mini Phố Mới. Một mặt bằng 20 mét vuông, tường sơn trắng, cửa kính._
 _Biển hiệu treo trên cửa: "QUỲNH VẼ, HUYỀN BÁN". Do bạn thiết kế. Bên dưới là dòng chữ nhỏ: "Khách hàng không được sửa biển hiệu."_
-sales: Chị Quỳnh! Khách đầu tiên tới rồi! Tin… à không. Mọi người tin em nha!
+sales: Chị {designer}! Khách đầu tiên tới rồi! Tin… à không. Mọi người tin em nha!
 _Cửa mở. Một bộ đồ hồng bước vào, tay ôm đĩa bánh chuối chiên._
 sieu_nhan_hong: Biến hình! Em đặt bộ nhận diện cho… mùa hai của em! Có hồng, có cam, có chút xanh lá… à không, thôi bỏ xanh lá!
 _Ba người cùng cười. {sales} lôi hợp đồng ra. Hợp đồng thật. Có mộc. Có mã số thuế. Không có Kevin Trộn._
 sales: Giá này là giá thật. Hạn này là hạn thật. Em nói thật hết đó, anh {sieu_nhan_hong}.
 sieu_nhan_hong: Em tin. *(ký)*
 _Tối đó, hai đứa ngồi sàn studio ăn cơm tấm, chưa có bàn. {sales} chụp story, rồi xóa, rồi chụp lại, rồi đăng không cần filter._
-sales: Chị Quỳnh. Tủ lạnh nhà em… có đồ ăn rồi. Thật luôn.
+sales: Chị {designer}. Tủ lạnh nhà em… có đồ ăn rồi. Thật luôn.
 designer: Chị biết. Chị mua.
 _Laptop thứ hai giờ nằm trên kệ, nắp dán tờ giấy: "Laptop để xem phim". Nó xem phim thật._
 { qh_hong_hot >= 30:
@@ -220,7 +220,7 @@ _Bạn đứng dậy, ra cửa kính rót nước. Từ tầng 18 nhìn xuống,
     _Tòa nhà tắt đèn. Hai người đàn ông đang dùng thang gỡ chữ G 7 màu xuống khỏi tường. Từng màu một. Đỏ, cam, vàng…_
 }
 _Ở góc chòi bảo vệ, một con chó nhỏ ngồi nhìn lên tòa nhà kính. Bạn không biết nó có thấy bạn không._
-_Điện thoại rung. Tin nhắn cuối cùng của {sales}, đã đọc mà chưa trả lời từ tuần trước: "Chị Quỳnh. Em vẫn ở đây nha."_
+_Điện thoại rung. Tin nhắn cuối cùng của {sales}, đã đọc mà chưa trả lời từ tuần trước: "Chị {designer}. Em vẫn ở đây nha."_
 _Bạn quay lại bàn. Mở file mới. Đặt tên: "final"._
 _Lần này, nó là final thật._
 -> END

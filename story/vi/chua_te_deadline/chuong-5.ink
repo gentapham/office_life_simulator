@@ -275,7 +275,7 @@ bac_bao_ve: *(từ ngoài cửa, không quay lại)* Ừ… Bác không thấy g
         ~ qh("cho", -10)
         -> END
     }
-* {qh_bac_bao_ve >= 40} [🔒 "Bác Bình, cháu biết bác thấy hết. Cháu làm mất, cháu sai. Bác giúp cháu nha bác."]
+* {qh_bac_bao_ve >= 40} [🔒 "Bác {bac_bao_ve}, cháu biết bác thấy hết. Cháu làm mất, cháu sai. Bác giúp cháu nha bác."]
     bac_bao_ve: Thế à.
     _Bác huýt sáo một tiếng. {cho} đứng dậy, tự tha cái USB ra, đặt vào tay bạn._
     bac_bao_ve: Lần sau để đồ thì nhớ chỗ, cháu ạ.

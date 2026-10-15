@@ -6,25 +6,25 @@
 === hr_0510_giao_ban ===
 # ngay:5 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban đầu tuần. Ngày Nhà giáo Thế giới. Trên mỗi ghế có một bông hồng nhung và một tấm thiệp viết tay._
-_Thiệp của bạn ghi: "Kính tặng thầy Tuấn, người dạy em cách cười ạ. Em {thuc_tap_sinh}."_
+_Thiệp của bạn ghi: "Kính tặng thầy {hr}, người dạy em cách cười ạ. Em {thuc_tap_sinh}."_
 thuc_tap_sinh: Dạ, hôm nay Ngày Nhà giáo ạ. Ai trong phòng cũng là thầy cô của em hết ạ.
-* [😇 "Cảm ơn em. Nhưng em lớn tuổi hơn nửa phòng này đó Duy."]
+* [😇 "Cảm ơn em. Nhưng em lớn tuổi hơn nửa phòng này đó {thuc_tap_sinh}."]
     thuc_tap_sinh: Dạ… tuổi đời không bằng tuổi nghề ạ!
     ~ qh("thuc_tap_sinh", 5)
 * [😊 Cười, cài bông hồng lên túi áo.]
     ~ hr_so(2)
     hong_hot: *(nói nhỏ)* Ổng cài hoa kìa… như đi đám tang.
 - _{giam_doc} bước vào, muộn 40 phút, tay cầm ly cà phê to bằng cái xô._
-giam_doc: Tuấn! Việc gấp. Mới ký hợp đồng 5 ngày mà Siêu Nhân Hồng trễ 3 buổi hẹn rồi. Anh cần một người chuyên chăm Siêu Nhân Hồng: giữ lịch, nhắc giờ, chịu được màu hồng, không bị chó cắn.
+giam_doc: {hr}! Việc gấp. Mới ký hợp đồng 5 ngày mà Siêu Nhân Hồng trễ 3 buổi hẹn rồi. Anh cần một người chuyên chăm Siêu Nhân Hồng: giữ lịch, nhắc giờ, chịu được màu hồng, không bị chó cắn.
 giam_doc: Cuối tuần này có người. Anh không ép, tùy em.
 truong_phong: Em đề xuất mình họp thêm một buổi về tiêu chí tuyển dụng ạ.
-giam_doc: Không! Họp ít thôi Nhật!
+giam_doc: Không! Họp ít thôi {truong_phong}!
 _{truong_phong} ghi chú: "Họp về việc họp ít." Cả phòng nhìn nhau._
 * [📋 "Dạ, em mở phỏng vấn từ chiều nay."]
     ~ qh("giam_doc", 5)
     ~ uy_tin = uy_tin + 2
 * [💬 "Anh ơi, vậy mình có ngân sách lương cho vị trí này không?"]
-    giam_doc: Có! Ngân sách là… em hỏi Thương nhé.
+    giam_doc: Có! Ngân sách là… em hỏi {ke_toan} nhé.
     ke_toan: Không có.
     giam_doc: Đấy, có câu trả lời rồi. Lương thử việc 85%, 85% của bao nhiêu thì tính sau.
     ~ qh("ke_toan", 3)
@@ -53,7 +53,7 @@ _Dưới sân, nghe tiếng xe Tèo, {cho} bắt đầu sủa như báo động 
 === hr_0610_vu_chay_toi ===
 # ngay:6 # gio:10:30 # noi:phong_hr # bat_buoc
 _Cửa phòng HR bật mở. {chua_te_deadline} đứng đó, thở hồng hộc, tóc dựng như vừa bị điện giật._
-chua_te_deadline: Anh Tuấn! Ổng bỏ đi rồi! Đang chụp poster thì thấy bà cụ xách giỏ qua đường, ổng bỏ ngang luôn! Studio thuê theo giờ đó anh!
+chua_te_deadline: Anh {hr}! Ổng bỏ đi rồi! Đang chụp poster thì thấy bà cụ xách giỏ qua đường, ổng bỏ ngang luôn! Studio thuê theo giờ đó anh!
 chua_te_deadline: Anh tuyển giùm em người nào giữ được ổng đi! Em lạy anh!
 _{chua_te_deadline} đứng trong phòng HR. Lần đầu tiên có người tự vào phòng HR mà không bị mời._
 * [🍵 "Ngồi xuống, uống ly trà bạc hà cho hạ hỏa đã em."]
@@ -109,7 +109,7 @@ _Mốc 1: 50.000 người theo dõi. Cả công ty dán mắt vào màn hình c�
 = s_dat
 dan_dau_tu: Đây rồi! Qua mốc! Biểu đồ xanh lè! Lần này là lên thật!
 _Cả phòng vỗ tay. {giam_doc} ôm {sieu_nhan_hong}, {sieu_nhan_hong} ôm {chua_te_deadline}, {chua_te_deadline} đứng đơ như cột điện._
-giam_doc: Tuấn, tối nay em lo liên hoan nhé. Ngân sách…
+giam_doc: {hr}, tối nay em lo liên hoan nhé. Ngân sách…
 ke_toan: Không có.
 * [🍵 "Dạ, em pha trà cho cả công ty. Miễn phí."]
     ~ hr_tra()
@@ -129,7 +129,7 @@ ke_toan: Không có.
 dan_dau_tu: *(nhìn chart)* Ờ… đây là đáy. Đáy thật rồi. Cắt lỗ là thua.
 giam_doc: Không đạt. Họp khẩn. Truyền lửa. 3 tiếng. Không ai về.
 _3 tiếng sau, lửa chưa thấy đâu, chỉ thấy khói từ cái máy chiếu cũ._
-giam_doc: *(nói nhỏ khi đi ngang bạn)* Tuấn. Cái danh sách ấy. Em bắt đầu nghiêm túc đi nhé.
+giam_doc: *(nói nhỏ khi đi ngang bạn)* {hr}. Cái danh sách ấy. Em bắt đầu nghiêm túc đi nhé.
 ~ hr_ds(1)
 ~ cang_thang(10)
 * [😶 "Dạ."]
@@ -144,15 +144,15 @@ giam_doc: *(nói nhỏ khi đi ngang bạn)* Tuấn. Cái danh sách ấy. Em b�
 === hr_0810_kham_mat ===
 # ngay:8 # gio:09:00 # noi:phong_kham_khoe_re
 _Ngày Thị giác Thế giới. Nhiệm vụ của bạn: áp giải {editor} đi khám mắt. {editor} làm đêm, nên 9 giờ sáng là 3 giờ khuya của em nó._
-editor: *(ngáp)* Anh Tuấn… đợi em render xong… cái mắt…
+editor: *(ngáp)* Anh {hr}… đợi em render xong… cái mắt…
 _Phòng khám Đa Khoa Khỏe Re. Cô lễ tân nhìn thấy bạn, rồi nhìn ra sau lưng bạn như tìm ai._
-phu_le_tan_khoe_re: Ủa, hôm nay hông có anh Sơn đi chung hả anh? Ảnh khám ở đây 8 lần rồi, tụi em quen mặt.
-* [🕵️ "Anh Sơn khám bệnh gì vậy em?" (Xác Minh Đơn Nghỉ)]
+phu_le_tan_khoe_re: Ủa, hôm nay hông có anh {thanh_xin_nghi} đi chung hả anh? Ảnh khám ở đây 8 lần rồi, tụi em quen mặt.
+* [🕵️ "Anh {thanh_xin_nghi} khám bệnh gì vậy em?" (Xác Minh Đơn Nghỉ)]
     phu_le_tan_khoe_re: Dạ cái đó bí mật bệnh nhân á anh. Mà nói nhỏ… lần nào bác sĩ khám cũng thấy ảnh khỏe re. Giọng còn khỏe hơn bác sĩ.
     ~ hr_so_lan_bat_son = hr_so_lan_bat_son + 1
     ~ qh("thanh_xin_nghi", -3)
     _Bạn ghi vào sổ: "Giọng khỏe hơn bác sĩ." Câu này nghe lạ lạ._
-* [😶 "Không, hôm nay chỉ có em Lĩnh thôi."]
+* [😶 "Không, hôm nay chỉ có em {editor} thôi."]
     _Bạn để chuyện đó qua. Hôm nay là việc của mắt {editor}._
 - phu_bac_si_khoe_re: Em này thức đêm nhiều quá. Mắt đỏ như mắt cú. Ngủ trước 2 giờ sáng được không em?
 editor: Dạ… đợi render xong ạ.
@@ -202,7 +202,7 @@ _Lượt xem nhảy liên tục. {dan_dau_tu} hét lên mỗi lần qua một m�
 === hr_0910_son_kham_mat ===
 # ngay:9 # gio:13:45 # noi:phong_hr
 _Cửa gõ 3 tiếng nhẹ. {thanh_xin_nghi} ló đầu vào, mặt nghiêm túc tới đáng ngờ._
-thanh_xin_nghi: Anh Tuấn ơi… chiều nay em xin nghỉ, đi khám mắt chung với {editor} cho vui ạ. Hôm qua ảnh khám một mình, tội ảnh.
+thanh_xin_nghi: Anh {hr} ơi… chiều nay em xin nghỉ, đi khám mắt chung với {editor} cho vui ạ. Hôm qua ảnh khám một mình, tội ảnh.
 hr: {editor} khám hôm qua rồi em. Anh dắt đi mà.
 thanh_xin_nghi: Dạ… thì… tái khám ạ! Bác sĩ nói phải có người đi kèm!
 * [🕵️ "Phòng khám Khỏe Re hả em? Cô lễ tân nhắc em quá trời."]
@@ -307,12 +307,12 @@ _Bạn phóng to tấm ảnh. Thằng nhóc đang khóc có đôi mắt giống 
 # ngay:12 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Thứ 2. Lương vẫn chưa về. Họp giao ban mà không ai ngồi ghế, ai cũng đứng, như sẵn sàng bỏ đi bất cứ lúc nào._
 sales: Chị nói thật, lương mà trễ nữa là chị nhận lời mời bên kia nha. Chắc kèo!
-dan_dau_tu: Anh còn chờ lương để… trả nợ cho em đó Huyền.
-chi_dai: Tuấn! HR đứng đó cười là sao? Ông biết gì nói đi!
+dan_dau_tu: Anh còn chờ lương để… trả nợ cho em đó {sales}.
+chi_dai: {hr}! HR đứng đó cười là sao? Ông biết gì nói đi!
 * [🤝 "Tui biết đúng 1 điều: bà {ke_toan} nói thứ 2. Hôm nay thứ 2. Chờ tới trưa."]
     ~ hr_nghe(5)
     ke_toan: *(gật đầu nhẹ)*
-    chi_dai: Ờ. Bà Thương nói thì tui tin. Ông nói thì chưa chắc.
+    chi_dai: Ờ. Bà {ke_toan} nói thì tui tin. Ông nói thì chưa chắc.
 * [🗣️ "Mình cùng nhìn lại hành trình lương tháng này nha mọi người."]
     ~ hr_so(5)
     chi_dai: Hành trình gì? Hành trình từ ngân hàng tới túi tui có 2 tiếng mà đi 3 ngày chưa tới!
@@ -345,7 +345,7 @@ _{thuc_tap_sinh} rút ví. Một cái thẻ lấp lánh rơi ra bàn. Hạng kim
     hr: Ừ. Khi nào muốn kể thì lên phòng anh uống trà. Không phải kỷ luật đâu.
     thuc_tap_sinh: Dạ… dạ em biết rồi ạ. *(vẫn hơi sợ)*
     ~ hr_nghe(3)
-* [📓 Nghĩ thầm: thẻ phụ của Long gắn với tài khoản riêng của sếp. Sếp đang cạn tiền thật.]
+* [📓 Nghĩ thầm: thẻ phụ của {con_ong_chau_cha} gắn với tài khoản riêng của sếp. Sếp đang cạn tiền thật.]
     ~ hr_ro_ri(3)
     _Nếu cả tài khoản riêng của {giam_doc} cũng cạn, thì tập hồ sơ hồng không còn là "phương án dự phòng" nữa._
     ~ cang_thang(5)
@@ -356,7 +356,7 @@ _{thuc_tap_sinh} rút ví. Một cái thẻ lấp lánh rơi ra bàn. Hạng kim
 === hr_1210_goi_len_phong ===
 # ngay:12 # gio:17:00 # noi:phong_giam_doc
 _Chiều. {giam_doc} gọi bạn lên. Trên bàn, điện thoại úp mặt, rung liên tục. Màn hình hiện "Tín Dụng Đen Đủi"._
-giam_doc: Tuấn. Lương về rồi, anh em vui rồi. Nhưng em biết đấy… tháng sau thì… Danh sách thế nào rồi?
+giam_doc: {hr}. Lương về rồi, anh em vui rồi. Nhưng em biết đấy… tháng sau thì… Danh sách thế nào rồi?
 { hr_danh_sach_den == 0:
     hr: Dạ… em chưa ghi tên nào hết anh.
 - else:

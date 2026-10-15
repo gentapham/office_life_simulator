@@ -36,7 +36,7 @@ _Quá chi tiết. Ngày quá hạn, số biệt thự, cả tên chi nhánh. Nh�
 // ------------------------------------------------------------
 === hong_hot_2110_tra_voi_hr ===
 # ngay:21 # gio:14:00 # noi:phong_hr # bat_buoc
-_Phòng HR. Ấm trà Ô Long. {hr} mỉm cười, rót trà cho bạn._
+_Phòng HR. Ấm trà Ô {con_ong_chau_cha}. {hr} mỉm cười, rót trà cho bạn._
 hr: Em {hong_hot}. Anh chỉ muốn lắng nghe em thôi. Em có biết ai là admin trang Confession không?
 * [😇 "Dạ em đâu biết đâu anh. Em lo fanpage công ty còn hông kịp."]
     { hh_lo_admin < 50:
@@ -217,7 +217,7 @@ _Tóc dài, ôm laptop: {designer}. Áo dài hồng: {thanh_ninh}. Cả hai ở 
     ~ qh("designer", -20)
     ~ qh("thanh_ninh", -15)
     _{designer} là bạn thân của bạn. {designer} đọc tin nhắn. Không trả lời._
-* [🤐 "Chắc chị nhìn nhầm. Sơn cho em màu đỏ nha chị."]
+* [🤐 "Chắc chị nhìn nhầm. {thanh_xin_nghi} cho em màu đỏ nha chị."]
     ~ hh_kin(10)
     ~ hh_giu_nhi_ll = true
     ~ hh_giu_tin_cap_cao()

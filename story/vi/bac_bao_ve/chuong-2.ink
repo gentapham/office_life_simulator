@@ -291,7 +291,7 @@ _Tối chủ nhật. Bàn gỗ ở nhà Ven Đô. Ếch kêu ngoài vườn. Lá
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_g(5)
     -> chon
-* {bv_thay_mat_nguyen} [✉️ "Cậu áo hồng hôm 6/10 bỏ buổi chụp đi đẩy xe chè cho bà cụ, còn bế con Tuất đi lạc về. Cậu ấy tốt. Cậu ấy sợ người ta biết mặt."]
+* {bv_thay_mat_nguyen} [✉️ "Cậu áo hồng hôm 6/10 bỏ buổi chụp đi đẩy xe chè cho bà cụ, còn bế con {cho} đi lạc về. Cậu ấy tốt. Cậu ấy sợ người ta biết mặt."]
     _Bác không tả khuôn mặt. Chỉ viết "cậu ấy sợ"._
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1

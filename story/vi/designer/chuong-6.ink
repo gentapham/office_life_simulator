@@ -140,7 +140,7 @@ bac_bao_ve: Tầng 2 gửi tầng 1: "Hóa đơn đâu em?". Tầng 1 gửi tầ
 _{chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua". Video tổng kết của {editor} kẹt ở 99%._
 bac_bao_ve: Cháu {designer}. Có giấy cho cháu.
 { ds_cat_dut_ll:
-    _Mảnh giấy note của {sales}: "Chị Quỳnh, em tự hào về chị. Vé mời đẹp lắm. Tin em đi."_
+    _Mảnh giấy note của {sales}: "Chị {designer}, em tự hào về chị. Vé mời đẹp lắm. Tin em đi."_
     ~ cang_thang(-10)
 - else:
     _Mảnh giấy note của {truong_phong}: "Em sửa nhẹ cái vé mời giúp anh nhé. Chữ to lên. Họp 5 phút."_
@@ -187,7 +187,7 @@ _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng g
     ~ qh("truong_phong", -15)
     truong_phong: Thì… anh là người… bảo "làm poster".
     _Cả phòng im phăng phắc. Rồi {chi_dai} bật cười. Rồi {giam_doc} cũng cười._
-    giam_doc: Nhật này, thế còn cái phông vẽ tay hôm mất điện? Em vẽ à?
+    giam_doc: {truong_phong} này, thế còn cái phông vẽ tay hôm mất điện? Em vẽ à?
     truong_phong: *(đỏ mặt)* …Dạ không ạ.
     ~ uy_tin = uy_tin + 10
 * [🤝 Nhìn {editor}, gật đầu. Hai người cùng đứng lên.]
@@ -249,7 +249,7 @@ _Bên kia đường, trên tòa nhà kính 20 tầng của LL-Entertainment, mà
 - else:
     _Nó chạy bộ nhận diện Hồng Ngoại: lá chuối xoắn quanh vệt hồng, căn lề lệch. Không phải tay bạn. Bạn thở ra một hơi rất dài._
 }
-sales: *(đứng cạnh bạn, nắm tay bạn)* Chị Quỳnh. Dù gì đi nữa, hôm nay chị đẹp nhất sân khấu này.
+sales: *(đứng cạnh bạn, nắm tay bạn)* Chị {designer}. Dù gì đi nữa, hôm nay chị đẹp nhất sân khấu này.
 * [🤝 Nắm lại tay {sales}.]
     ~ qh("sales", 5)
 * [🎨 Lấy điện thoại chụp lại backdrop của mình, góc chính diện.]

@@ -32,7 +32,7 @@ hong_hot: *(giơ điện thoại)* Livestream nè cả nhà! Trưởng phòng h�
 # ngay:17 # gio:10:00 # noi:bai_bien_vung_tau # bat_buoc
 _Kéo co: đội Sản xuất đấu "đội Marketing" (gồm {con_ong_chau_cha} và những ai chưa được chia đội, trong đó có {thuc_tap_sinh} tự xin sang)._
 _Bạn đứng đầu dây bên này. {con_ong_chau_cha} đứng đầu dây bên kia, kính râm, dép tông._
-giam_doc: Cố lên Nhật! Cố lên Long! Anh ủng hộ… cả hai!
+giam_doc: Cố lên {truong_phong}! Cố lên {con_ong_chau_cha}! Anh ủng hộ… cả hai!
 _Không ai biết sếp đứng về phía nào. Dây căng như cuộc đua ghế Phó._
 * [💪 Kéo bằng tất cả sức lực và 6 năm uất ức.]
     { RANDOM(1, 10) <= 5:
@@ -68,13 +68,13 @@ giam_doc: Các em! Anh hứa… tháng sau… tăng lương cả công ty! Anh k
 _Mười cái điện thoại giơ lên quay. {sales} cũng đứng dậy: "Em sẽ mời ca sĩ nổi tiếng nhất nước về hát Đêm Hồng!"_
 * [📝 Mở sổ, ghi lại lời hứa của sếp "để làm biên bản".]
     ~ tp_hop(1)
-    giam_doc: Nhật! Em ghi gì đấy? Xóa đi! À mà thôi, ghi đi. Anh là người giữ lời.
+    giam_doc: {truong_phong}! Em ghi gì đấy? Xóa đi! À mà thôi, ghi đi. Anh là người giữ lời.
     _Bạn có trong tay bằng chứng giấy trắng mực đen. Bạn không biết nó là kho báu hay quả mìn._
 * [🍺 Chạm ly với {giam_doc}: "Em tin anh ạ."]
     ~ uong(10)
     ~ qh("giam_doc", 6)
     ~ tp_ghe(3)
-    giam_doc: Nhật! Em là người miền Bắc duy nhất ở đây hiểu anh!
+    giam_doc: {truong_phong}! Em là người miền Bắc duy nhất ở đây hiểu anh!
 * [😶 Đặt ly xuống, ra bờ biển đi dạo một mình.]
     ~ cang_thang(-8)
     _Ngoài bãi, đống lửa trại đã được nhóm. Có tiếng đàn ghi-ta ai đó đang lên dây._
@@ -96,7 +96,7 @@ _{idol_het_thoi} ngủ gục lên vai {quan_ly_idol}. {editor} lặng lẽ đắ
 = truong_phong_1710_long_hat
 _{con_ong_chau_cha} ôm cây đàn hát một bài không ai từng nghe. Câu điệp khúc có chữ "Hồng". Cả đống lửa im lặng._
 _Bạn nhận ra: bài này hay hơn nhạc MV phòng bạn đã duyệt. Hay hơn nhiều._
-con_ong_chau_cha: *(đặt cây đàn xuống)* Ủa ông Nhật ngó gì dữ vậy? Bài tui hát chơi thôi mà. Đừng kể chú tui nha.
+con_ong_chau_cha: *(đặt cây đàn xuống)* Ủa ông {truong_phong} ngó gì dữ vậy? Bài tui hát chơi thôi mà. Đừng kể chú tui nha.
 * [👏 "Bài này cậu viết à? Hay hơn nhạc MV phòng tớ đấy."]
     ~ qh("con_ong_chau_cha", 20)
     ~ tp_mo_phong_thu = true
@@ -172,7 +172,7 @@ _Bạn đếm được 7 lần thở dài trong 10 phút đầu._
 * [😇 "Anh xin lỗi vì cuộc họp 6 giờ sáng ở bãi biển."]
     { truong_phong_1710_hop_bai_bien > 0:
         _Cả phòng quay sang nhìn bạn. Không ai từng nghe trưởng phòng xin lỗi._
-        chua_te_deadline: Ủa… anh Nhật xin lỗi thiệt hả?
+        chua_te_deadline: Ủa… anh {truong_phong} xin lỗi thiệt hả?
         ~ tp_ca_phong(8)
     - else:
         chua_te_deadline: Xin lỗi vụ gì anh? À thôi, chill.
@@ -193,8 +193,8 @@ _Tối. Siêu thị mini. Mai là 20/10, bạn phải có quà cho {bien_kich} v
     ~ tien_cong(-60000)
     _Bạn tưởng tượng hai người mở quà. Bạn tưởng tượng họ cười. Bạn không chắc đó là kiểu cười nào._
 * [📞 Nhắn hỏi {hong_hot}: "Con gái thích quà gì?"]
-    hong_hot: Ủa hỏi tui chi vậy? Tặng ai? Bà Oánh hả? Bà Quỳnh hả? Hay ai???
-    _Năm phút sau, group "Hội ăn trưa" có tin: "Anh Nhật đang đi mua quà cho ai đó, nghi lắm nha!"_
+    hong_hot: Ủa hỏi tui chi vậy? Tặng ai? Bà {bien_kich} hả? Bà {designer} hả? Hay ai???
+    _Năm phút sau, group "Hội ăn trưa" có tin: "Anh {truong_phong} đang đi mua quà cho ai đó, nghi lắm nha!"_
     ~ tp_qua_20_10 = "hoi_ngan"
     ~ qh("hong_hot", 3)
     ~ tien_cong(-300000)
@@ -213,11 +213,11 @@ giam_doc: Logo kỷ niệm 16 năm! Phải wow! Mà phải giữ được cái h
 _{designer} trình bản thứ 38. {giam_doc} nhìn rất lâu, rồi mở ngăn kéo lấy ra… logo gốc năm 2010._
 giam_doc: Cái này! Cái này mới đúng. Em thấy chưa, sửa nhiều là đẹp liền!
 designer: *(thì thầm)* Sửa nhẹ thôi là sửa về bản đầu…
-* [🙏 "Anh ạ, bản 38 của Quỳnh rất đẹp. Mình dùng logo gốc cho video, bản 38 cho sân khấu được không?"]
+* [🙏 "Anh ạ, bản 38 của {designer} rất đẹp. Mình dùng logo gốc cho video, bản 38 cho sân khấu được không?"]
     giam_doc: Ừ… cũng được. Anh không ép, tùy em.
     ~ qh("designer", 15)
     ~ tp_ghi_cong()
-    designer: *(ra khỏi phòng, nói nhỏ)* Cảm ơn anh Nhật. Lần đầu có người cãi giùm em.
+    designer: *(ra khỏi phòng, nói nhỏ)* Cảm ơn anh {truong_phong}. Lần đầu có người cãi giùm em.
 * [🙇 "Anh chọn chuẩn quá ạ."]
     ~ qh("giam_doc", 3)
     ~ qh("designer", -8)
@@ -225,9 +225,9 @@ designer: *(thì thầm)* Sửa nhẹ thôi là sửa về bản đầu…
 * [📅 "Mình họp nhanh với cả phòng để chốt lại phương án nhé anh."]
     ~ tp_hop(1)
     _Cuộc họp chốt lại đúng logo gốc 2010. Mất thêm 1 tiếng để đi tới chỗ đã ở từ đầu._
-- giam_doc: À, video "16 năm" thì Lĩnh làm rồi đúng không? Anh cần đoạn quảng cáo tháng 6 cho vào, cái hợp đồng 800 triệu ấy.
+- giam_doc: À, video "16 năm" thì {editor} làm rồi đúng không? Anh cần đoạn quảng cáo tháng 6 cho vào, cái hợp đồng 800 triệu ấy.
 _Bạn nhớ lại ngọn nến, và câu {chua_te_deadline} nói về file gốc tháng 6._
-* [🤐 "Dạ, em sẽ hỏi Vũ ạ."]
+* [🤐 "Dạ, em sẽ hỏi {chua_te_deadline} ạ."]
     { tp_vu_giu_bi_mat:
         _Bạn hỏi. {chua_te_deadline} nhìn bạn, bạn nhìn {chua_te_deadline}. Cả hai cùng nói: "Thôi, dùng cảnh khác."_
     - else:

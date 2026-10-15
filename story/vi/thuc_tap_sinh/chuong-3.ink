@@ -178,7 +178,7 @@ _Bàn buffet còn: nửa khay gà rán, 2 hộp cơm chiên, một đĩa bánh b
     ~ duy_lua_doi(5)
     ~ cang_thang(-10)
 * [🤝 Chia một nửa cho Bác {bac_bao_ve} và {cho}.]
-    bac_bao_ve: Ừ. Cảm ơn cháu. Gà rán thì Tuất không được ăn nhiều đâu đấy.
+    bac_bao_ve: Ừ. Cảm ơn cháu. Gà rán thì {cho} không được ăn nhiều đâu đấy.
     cho: *(nhìn gà rán, nhìn bác, nhìn bạn)* Gâu…
     ~ qh("bac_bao_ve", 5)
     ~ qh("cho", 5)

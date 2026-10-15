@@ -6,9 +6,9 @@
 // ============ 📅 XẾP LỊCH XẾP HÌNH ============
 === thanh_xin_nghi_mg_xep_lich_mo ===
 # noi:ban_dieu_phoi
-_Bảng tuần hiện lên. Các khối rơi xuống: Nguyên đi quay, Phát hát đám cưới, xe đoàn quay, phòng studio. Khối nào chồng nhau thì chớp đỏ._
+_Bảng tuần hiện lên. Các khối rơi xuống: Nguyên đi quay, {idol_het_thoi} hát đám cưới, xe đoàn quay, phòng studio. Khối nào chồng nhau thì chớp đỏ._
 _Thỉnh thoảng rơi xuống một khối "🆘 Nguyên bỏ đi giúp người", không báo trước._
-quan_ly_idol: *(qua điện thoại)* Sơn, xếp sao cho Phát với Nguyên đừng đụng mặt nhau ở cổng nha. Hai ông đó mà gặp nhau là Tuất sủa.
+quan_ly_idol: *(qua điện thoại)* {thanh_xin_nghi}, xếp sao cho {idol_het_thoi} với Nguyên đừng đụng mặt nhau ở cổng nha. Hai ông đó mà gặp nhau là {cho} sủa.
 -> END
 
 === thanh_xin_nghi_mg_xep_lich_dat ===
@@ -20,7 +20,7 @@ _Khối cuối cùng rơi đúng chỗ. Cả bảng xanh mướt. Không một �
 { son_tuan_khong_chong >= 2:
     ~ nhan(ca_phe)
     ~ uong(15)
-    quan_ly_idol: Tuần này không chồng lịch nào. Anh mời em ly cà phê sữa đá. Đừng uống chung với Vũ, ổng uống hết.
+    quan_ly_idol: Tuần này không chồng lịch nào. Anh mời em ly cà phê sữa đá. Đừng uống chung với {chua_te_deadline}, ổng uống hết.
     ~ qh("quan_ly_idol", 5)
 }
 { ngay >= 23:
@@ -30,7 +30,7 @@ _Khối cuối cùng rơi đúng chỗ. Cả bảng xanh mướt. Không một �
 
 === thanh_xin_nghi_mg_xep_lich_truot ===
 _Hai khối chồng lên nhau, chớp đỏ. Xe đoàn quay tới studio thì {sieu_nhan_hong} đang ở đám cưới… của người lạ, hát giùm vì ca sĩ đám cưới bị kẹt xe. Ca sĩ đám cưới đó là {idol_het_thoi}._
-idol_het_thoi: *(gọi điện)* Sơn! Có một ông siêu nhân hồng đang hát đám cưới của anh!
+idol_het_thoi: *(gọi điện)* {thanh_xin_nghi}! Có một ông siêu nhân hồng đang hát đám cưới của anh!
 ~ follow(-8000)
 ~ uy_tin = uy_tin - 3
 ~ son_tuan_khong_chong = 0
@@ -82,7 +82,7 @@ _Bạn cúp máy. Hôm nay bạn đi làm, với cổ họng rát vì ho thật.
 === thanh_xin_nghi_mg_khoe_re_mo ===
 # noi:phong_kham_khoe_re
 _Phòng khám Đa Khoa Khỏe Re. Cô lễ tân ngẩng lên, thấy bạn, cười như gặp người nhà._
-phu_le_tan_khoe_re: Lại là anh Sơn! Giấy nghỉ ốm hả anh? Giá niêm yết 100.000đ nha. Ho hay thì em bớt.
+phu_le_tan_khoe_re: Lại là anh {thanh_xin_nghi}! Giấy nghỉ ốm hả anh? Giá niêm yết 100.000đ nha. Ho hay thì em bớt.
 -> END
 
 === thanh_xin_nghi_mg_khoe_re_dat ===
@@ -120,7 +120,7 @@ _Bài cuối cùng. Cả quán đứng dậy vỗ tay. Hộp đàn đầy tiền
 ~ uong(20)
 ~ son_mo(5)
 ~ cang_thang(-10)
-phu_chu_quan_song_ao: Trà đào của em nè. Tối nay khách đông nhờ em đó Sơn.
+phu_chu_quan_song_ao: Trà đào của em nè. Tối nay khách đông nhờ em đó {thanh_xin_nghi}.
 -> END
 
 === thanh_xin_nghi_mg_song_ao_truot ===

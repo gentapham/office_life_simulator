@@ -156,7 +156,7 @@ _Vẫn mất điện. Gần tối, pantry chỉ còn vài người. Trong bóng 
 idol_het_thoi: *(hát)* Ngày xưa có đôi bạn thân… bán cá viên chiên tại công viên…
 _Giọng hát mộc, không nhạc, không kính đen. Hay tới nổi da gà. Ở góc, ánh đèn đỏ nhỏ xíu của một cái máy quay. Là {editor} đang quay lén._
 _Ở bàn bên kia, hai cái bóng ngồi sát nhau. Một cái bóng không đội mũ. Giọng nói nhỏ, rụt rè, khác hẳn giọng hô "Biến hình!"._
-sieu_nhan_hong: *(rất nhỏ)* Dạ… ờm… Vũ nè. Mấy món quà… hông phải PR đâu.
+sieu_nhan_hong: *(rất nhỏ)* Dạ… ờm… {chua_te_deadline} nè. Mấy món quà… hông phải PR đâu.
 chua_te_deadline: …Đèn có lại thì nói lại câu đó coi.
 * [📸 Bật đèn flash điện thoại chụp mặt {sieu_nhan_hong}.]
     _Bạn giơ điện thoại lên. Ngón tay đặt trên nút chụp._

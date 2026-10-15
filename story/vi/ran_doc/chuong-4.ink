@@ -8,7 +8,7 @@
 _6:30 sáng. Xe 45 chỗ đỗ trước cổng. Team building Vũng Tàu, 2 ngày 1 đêm. {cho} sủa theo bánh xe tới tận đầu đường._
 dan_dau_tu: Hôm nay Ngày Quốc tế Xóa nghèo! Anh tuyên bố: từ nay anh thoát nghèo! Hồng Coin x10 rồi! Trưa nay anh bao cả team hải sản!
 _Cả xe vỗ tay. Không ai hỏi tiền từ đâu. Ai cũng đói._
-_Xe ôm cua gắt. Một cuốn sổ bìa da từ ghế {bien_kich} trượt xuống, nằm ngay chân bạn. Trang đầu ghi: "Công Ty Là Gia Đình. Chương 12: Con rắn mới tới."_
+_Xe ôm cua gắt. Một cuốn sổ bìa da từ ghế {bien_kich} trượt xuống, nằm ngay chân bạn. Trang đầu ghi: "Công Ty Là Gia Đình. {dan_dau_tu} 12: Con rắn mới tới."_
 * [🐍 Nhặt lên, giấu vào ba lô.]
     ~ nhan(so_tay_oanh)
     ~ rd_tin_mat()

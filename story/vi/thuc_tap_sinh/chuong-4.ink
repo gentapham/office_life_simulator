@@ -77,7 +77,7 @@ _Mọi ánh mắt dồn về bạn. {bien_kich} ngồi đối diện, ngừng nh
     ~ qh("bien_kich", -15)
     ~ duy_ngo(-10)
     { co(so_tay_oanh):
-        _Trong balo bạn, cuốn sổ của {bien_kich} vẫn nằm đó. Chương 14. Bạn không lấy ra. Một bằng chứng đủ rồi._
+        _Trong balo bạn, cuốn sổ của {bien_kich} vẫn nằm đó. {dan_dau_tu} 14. Bạn không lấy ra. Một bằng chứng đủ rồi._
     }
 * [🏦 "Dạ… trước khi vô đây, em là trưởng phòng tín dụng ở một ngân hàng ạ."]
     _Lửa trại tắt tiếng. {dan_dau_tu} rơi ly bia. {sales} mở to mắt. {ran_doc} mỉm cười như người vừa trúng số._
@@ -99,7 +99,7 @@ con_ong_chau_cha: Anh {thuc_tap_sinh}, anh có bao giờ muốn… bỏ hết, l
 * [😶 "Dạ em mới vô nên chưa biết ạ."]
     con_ong_chau_cha: *(cười)* Anh lúc nào cũng vậy.
     ~ qh("con_ong_chau_cha", 5)
-* [🤝 "Dạ có. Em bỏ rồi. Em bỏ một cái ghế mà ai cũng muốn ngồi, để đi cầm tấm hắt sáng. Mà em vui, anh Long ạ."]
+* [🤝 "Dạ có. Em bỏ rồi. Em bỏ một cái ghế mà ai cũng muốn ngồi, để đi cầm tấm hắt sáng. Mà em vui, anh {con_ong_chau_cha} ạ."]
     _{con_ong_chau_cha} ngồi dậy. Nhìn bạn rất lâu trong bóng tối._
     con_ong_chau_cha: Anh từng có hết mà vẫn thấy trống… hả?
     thuc_tap_sinh: Dạ. Có hết chưa chắc đã vui ạ.

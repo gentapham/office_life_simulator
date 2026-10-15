@@ -8,7 +8,7 @@
 # ngay:13 # gio:10:00 # noi:phong_giam_doc # bat_buoc
 _Ngày Doanh nhân Việt Nam. Phòng chú đầy hoa chú tự mua. {thanh_ninh} vừa đọc xong bài khen 15 phút. {sales} vừa trao tấm bằng "Doanh nhân của năm – BTT Global"._
 _Bạn đứng ở cửa, cầm một bó hoa nhỏ mua bằng tiền lương._
-giam_doc: Long! Cháu cũng nhớ à? Vào đây.
+giam_doc: {con_ong_chau_cha}! Cháu cũng nhớ à? Vào đây.
 * [💐 Đưa hoa, rồi hỏi nhỏ: "Chú ơi, thẻ của cháu bị sao vậy?"]
     giam_doc: *(không nhìn bạn)* Lỗi ngân hàng. Họ đang kiểm tra giao dịch lớn. Vài hôm là xong.
     _Chú nói nhanh quá. Như câu đã tập trước. Bạn tin. Nhưng chỉ một nửa._
@@ -23,7 +23,7 @@ giam_doc: Long! Cháu cũng nhớ à? Vào đây.
 * [📸 Chụp ảnh chú với tấm bằng, đăng story "Chú tui đỉnh nóc kịch trần".]
     ~ long_od(4)
     ~ follow(2000)
-    sales: Anh Long tag BTT Global vô giùm em nha!
+    sales: Anh {con_ong_chau_cha} tag BTT Global vô giùm em nha!
     _Bạn tìm mãi không thấy trang BTT Global nào để tag._
 - -> END
 
@@ -59,7 +59,7 @@ idol_het_thoi: Để đó em. Tiền… anh chuyển khoản sau được hông?
 === con_ong_chau_cha_1410_duyet_poster ===
 # ngay:14 # gio:10:30 # noi:ban_thiet_ke
 _Mốc 2: 200.000 người theo dõi. {designer} trình 3 bản poster. Bạn ghé qua, vì Marketing là phòng bạn (phòng có một người)._
-designer: Anh Long… anh cũng duyệt hả?
+designer: Anh {con_ong_chau_cha}… anh cũng duyệt hả?
 * [😎 Chỉ vào bản xấu nhất: "Cái này. Nhìn nó chill."]
     _{designer} nhìn {truong_phong}. {truong_phong} đứng phắt dậy._
     truong_phong: Poster là việc của phòng Sản xuất. Cậu duyệt nhạc chưa xong thì đừng duyệt hình.
@@ -67,7 +67,7 @@ designer: Anh Long… anh cũng duyệt hả?
     ~ long_od(3)
     ~ qh("designer", -6)
     ~ qh("truong_phong", -5)
-* [💬 "Chị Quỳnh thích bản nào nhất?"]
+* [💬 "Chị {designer} thích bản nào nhất?"]
     designer: Bản 2 ạ. Chữ "Hồng" thở được.
     con_ong_chau_cha: Vậy bản 2. Chị là dân chuyên mà.
     ~ qh("designer", 10)
@@ -88,7 +88,7 @@ designer: Anh Long… anh cũng duyệt hả?
 === con_ong_chau_cha_1410_hoi_chuong ===
 # ngay:14 # gio:15:00 # noi:ban_so_lieu
 _Bàn số liệu. {dan_dau_tu} đang nhìn chart, ăn bánh mì lén. Bạn chợt nhớ ra một chuyện._
-con_ong_chau_cha: Anh Chương, cái vốn góp chung hồi năm ngoái sao rồi?
+con_ong_chau_cha: Anh {dan_dau_tu}, cái vốn góp chung hồi năm ngoái sao rồi?
 _{dan_dau_tu} cứng người như chart vừa đỏ._
 dan_dau_tu: À… cái đó… nằm… đáy. Đáy thật.
 * [😎 "Ờ, hông sao. Tui hỏi chơi."]
@@ -112,7 +112,7 @@ dan_dau_tu: À… cái đó… nằm… đáy. Đáy thật.
 # ngay:15 # gio:08:10 # noi:sanh_tang_tret # bat_buoc
 _Hôm nay bạn tới sớm (8 giờ 10) vì không ngủ được. Vừa bước vào sảnh: "Phụt." Mất điện cả khu._
 _Từ thang máy vọng ra tiếng đập cửa. Tiếng chú bạn và tiếng {chi_dai}: "Bảo ơi! Mở cửa!"_
-giam_doc: *(trong thang máy)* Long hả? Long! Gọi người cứu chú!
+giam_doc: *(trong thang máy)* {con_ong_chau_cha} hả? {con_ong_chau_cha}! Gọi người cứu chú!
 * [☂️ "Để cháu gọi… à." *(chú đang ở trong đó)*]
     _Lần đầu tiên câu cửa miệng của bạn vô dụng. Người bạn hay gọi đang kẹt trong thang máy._
     ~ long_od(-3)
@@ -121,16 +121,16 @@ giam_doc: *(trong thang máy)* Long hả? Long! Gọi người cứu chú!
     ~ qh("it", 2)
 * [🏃 Chạy lên phòng server tìm {it}.]
     it: *(cầm đèn pin)* Ai kẹt?
-    con_ong_chau_cha: Chú tui với chị Hương.
-    it: …Chị Hương kẹt thì thang máy nên sợ, không phải chị Hương.
+    con_ong_chau_cha: Chú tui với chị {chi_dai}.
+    it: …Chị {chi_dai} kẹt thì thang máy nên sợ, không phải chị {chi_dai}.
     _Hai người cùng nạy cửa thang máy. Mười phút sau, chú bước ra, áo ướt đẫm mồ hôi. {chi_dai} bước ra sau, tóc không lệch một sợi._
     ~ long_tl(5)
     ~ qh("it", 6)
     ~ qh("giam_doc", 5)
     ~ qh("truong_phong", 2)
-* [🗣️ Nói vọng vào: "Chú ơi, chill đi! Có chị Hương trong đó là an toàn nhất rồi!"]
-    chi_dai: *(từ trong thang máy)* Long! Ra đây chị nói chuyện!
-    giam_doc: Long… đi gọi người!
+* [🗣️ Nói vọng vào: "Chú ơi, chill đi! Có chị {chi_dai} trong đó là an toàn nhất rồi!"]
+    chi_dai: *(từ trong thang máy)* {con_ong_chau_cha}! Ra đây chị nói chuyện!
+    giam_doc: {con_ong_chau_cha}… đi gọi người!
     ~ qh("chi_dai", -3)
     ~ follow(2000)
 - -> END
@@ -139,7 +139,7 @@ giam_doc: *(trong thang máy)* Long hả? Long! Gọi người cứu chú!
 === con_ong_chau_cha_1510_pantry_dan ===
 # ngay:15 # gio:14:00 # noi:pantry # bat_buoc
 _Không máy lạnh, không wifi. Cả công ty ngồi pantry. {thuc_tap_sinh} chia 5 cục sạc dự phòng. Ai đó lôi trong kho studio ra một cây đàn cũ, dúi vào tay bạn._
-hong_hot: Anh Long đàn được hông? Đàn một bài đi, nóng quá chết mất!
+hong_hot: Anh {con_ong_chau_cha} đàn được hông? Đàn một bài đi, nóng quá chết mất!
 * [🎸 Ngân nga một đoạn "Hồng Là Thái Độ".]
     _Bạn gảy vài hợp âm. Rồi ngân nhỏ, rất nhỏ. Cả pantry im lặng. Không ai bấm điện thoại. Có lẽ vì hết pin._
     ~ long_bh(10)
@@ -165,7 +165,7 @@ hong_hot: Anh Long đàn được hông? Đàn một bài đi, nóng quá chết
 
 = phat_hoi
 _{idol_het_thoi} đứng ở cửa pantry, nghe hết. Bạn không biết anh ấy đã giơ điện thoại lên từ câu thứ hai._
-idol_het_thoi: *(tháo kính đen, giọng như đang trả lời phỏng vấn)* Long. Bài em vừa ngân là bài gì vậy? Em biết anh là ai không? Anh nghe là biết hit liền.
+idol_het_thoi: *(tháo kính đen, giọng như đang trả lời phỏng vấn)* {con_ong_chau_cha}. Bài em vừa ngân là bài gì vậy? Em biết anh là ai không? Anh nghe là biết hit liền.
 * [🙈 "Bài trên mạng thôi anh, em nghe đâu đó."]
     _Giấu được. Nhưng {idol_het_thoi} đã ghi âm 20 giây._
     ~ long_phat_co_ghi_am = true
@@ -178,7 +178,7 @@ idol_het_thoi: *(tháo kính đen, giọng như đang trả lời phỏng vấn)
     ~ long_mo_nhanh_ai_hat = true
     ~ long_bh(10)
     _Có người khen. Lần đầu tiên có người khen bài của bạn mà không biết bạn là cháu ai._
-* {long_biet_phat_no} [🔒 "Anh Phát, anh cần một bài hit để trả nợ đúng hông? Nói thiệt đi, em hông kể ai."]
+* {long_biet_phat_no} [🔒 "Anh {idol_het_thoi}, anh cần một bài hit để trả nợ đúng hông? Nói thiệt đi, em hông kể ai."]
     _{idol_het_thoi} im lặng rất lâu. Rồi đeo kính lại._
     idol_het_thoi: …Ừ. Từ 2015 tới giờ anh chưa có bài nào.
     _{idol_het_thoi} giơ điện thoại lên, xóa đoạn ghi âm trước mặt bạn._
@@ -221,7 +221,7 @@ _Chú bạn tới, muốn ngồi giữa để lên hình. {thanh_ninh} đang c�
     _Nhưng {truong_phong} nhìn bạn khác đi một chút. Một chút thôi._
     ~ qh("truong_phong", 6)
 * [😎 Ngồi im ghế giữa.]
-    giam_doc: Long… nhích sang chút cho chú.
+    giam_doc: {con_ong_chau_cha}… nhích sang chút cho chú.
     ~ long_od(3)
     ~ qh("thanh_ninh", -3)
 - -> END

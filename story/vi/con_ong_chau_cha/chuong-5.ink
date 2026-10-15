@@ -35,7 +35,7 @@ _Cả công ty lướt bài đó. Rồi cả công ty lén nhìn về phía phò
 === con_ong_chau_cha_2110_phat_hen ===
 # ngay:21 # gio:20:00 # noi:karaoke_hat_cho_nhau_nghe # bat_buoc
 _Tối. Karaoke Hát Cho Nhau Nghe, phòng số 3. {idol_het_thoi} ngồi đó, kính đen, gọi sẵn hai chai nước. Không có micro nào được bật._
-idol_het_thoi: Long. Em cho anh mượn bài đó đi. Anh hát, mình cùng nổi. Em biết anh là ai không? Anh là người duy nhất ở công ty từng có hit.
+idol_het_thoi: {con_ong_chau_cha}. Em cho anh mượn bài đó đi. Anh hát, mình cùng nổi. Em biết anh là ai không? Anh là người duy nhất ở công ty từng có hit.
 { long_phat_co_ghi_am:
     _{idol_het_thoi} bật điện thoại. 20 giây. Giọng bạn, hôm mất điện. Giai điệu của bạn, trong máy của người khác._
 }
@@ -61,14 +61,14 @@ idol_het_thoi: Long. Em cho anh mượn bài đó đi. Anh hát, mình cùng n�
     { long_phat_co_ghi_am:
         _{idol_het_thoi} cất điện thoại vào túi. Đoạn ghi âm vẫn ở trong đó._
     }
-* [💬 "Anh Phát, anh nợ nhiêu?"]
+* [💬 "Anh {idol_het_thoi}, anh nợ nhiêu?"]
     idol_het_thoi: *(khựng lại)* …54 triệu. 36 tiền nhà, 18… tiền khác.
-    _Bạn biết "tiền khác" là gì. 80.000 tài khoản comment "Anh Phát đỉnh nóc kịch trần"._
+    _Bạn biết "tiền khác" là gì. 80.000 tài khoản comment "Anh {idol_het_thoi} đỉnh nóc kịch trần"._
     ~ long_biet_phat_no = true
     ~ phat_hien(fan_ao_phat)
     ~ long_bh(6)
     ~ qh("idol_het_thoi", 5)
-    idol_het_thoi: Đừng kể ai. Kể Thái càng không.
+    idol_het_thoi: Đừng kể ai. Kể {quan_ly_idol} càng không.
 - -> END
 
 // ------------------------------------------------------------
@@ -170,7 +170,7 @@ _Trong túi bạn có một chiếc USB nhỏ. Bên trong là bản demo mới n
 === con_ong_chau_cha_2310_livestream ===
 # ngay:23 # gio:15:30 # noi:studio_tang_2 # bat_buoc
 _Livestream sinh nhật. 40.000 người xem. Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang cầm bảng nhắc chữ._
-sieu_nhan_hong: Vũ ơi… anh thích em lâu rồi. Không phải PR đâu.
+sieu_nhan_hong: {chua_te_deadline} ơi… anh thích em lâu rồi. Không phải PR đâu.
 _Bình luận chạy như thác: \#VũƠiTrảLờiĐi. {chua_te_deadline} đứng hình. Bảng nhắc chữ rơi._
 ~ follow(60000)
 _Cửa studio hé mở. {cho} lao vào. Bánh kem hồng ba tầng bay lên, rơi xuống, kem dính đầy mũ._
@@ -233,7 +233,7 @@ truong_phong: *(hắng giọng)* Một: cậu hát hay. Hai: cậu không bao gi
     ~ qh("truong_phong", 12)
     ~ qh("chi_dai", 5)
 * [😎 "Một: ông họp giỏi. Hai: ông họp nhiều. Ba: ông họp lâu."]
-    chi_dai: Long. Ra sân thượng đứng 5 phút cho chị.
+    chi_dai: {con_ong_chau_cha}. Ra sân thượng đứng 5 phút cho chị.
     ~ qh("truong_phong", -8)
     ~ qh("chi_dai", -5)
 * [🎵 "Một: ông là người đầu tiên nghe demo của tui. Hai… ba… để tui viết thành bài."]
@@ -253,7 +253,7 @@ truong_phong: *(hắng giọng)* Một: cậu hát hay. Hai: cậu không bao gi
 === con_ong_chau_cha_2410_ban_chu_no ===
 # ngay:24 # gio:11:00 # noi:phong_hop_tang_2
 _Bàn riêng cho {dan_dau_tu}: "bàn chủ nợ". {sales}, {it}, Bác {bac_bao_ve}, {thanh_xin_nghi}, {thuc_tap_sinh}, {bien_kich}, {idol_het_thoi}, và bạn ngồi quanh. {dan_dau_tu} cầm một bản "kế hoạch trả nợ" như cầm báo cáo quý._
-dan_dau_tu: Long… phần em là 10 triệu "vốn góp chung". Anh đề xuất… trả bằng niềm tin.
+dan_dau_tu: {con_ong_chau_cha}… phần em là 10 triệu "vốn góp chung". Anh đề xuất… trả bằng niềm tin.
 * [😎 "Thôi, tui xóa nợ cho anh."]
     dan_dau_tu: *(nước mắt rưng rưng)* Em… em là người có tầm nhìn nhất công ty!
     ~ qh("dan_dau_tu", 15)
@@ -265,7 +265,7 @@ dan_dau_tu: Long… phần em là 10 triệu "vốn góp chung". Anh đề xuấ
     ~ long_tl(5)
     ~ qh("dan_dau_tu", 3)
 * [👂 Ngồi nghe từng người kể vì sao cho {dan_dau_tu} vay.]
-    _{it} cho vay vì "ổng nói ổng đói". Bác {bac_bao_ve} cho vay vì "nó có con mắt buồn". {thuc_tap_sinh} cho vay vì "dạ anh Chương nhờ ạ"._
+    _{it} cho vay vì "ổng nói ổng đói". Bác {bac_bao_ve} cho vay vì "nó có con mắt buồn". {thuc_tap_sinh} cho vay vì "dạ anh {dan_dau_tu} nhờ ạ"._
     _Bạn ghi lại từng lý do. Mỗi lý do là một câu hát._
     ~ long_bh(8)
 - -> END
@@ -274,7 +274,7 @@ dan_dau_tu: Long… phần em là 10 triệu "vốn góp chung". Anh đề xuấ
 === con_ong_chau_cha_2510_keo_coin ===
 # ngay:25 # gio:10:00 # noi:sky_ao_tang_30 # bat_buoc
 _Chủ nhật. Chuông cửa reo. {dan_dau_tu} đứng ngoài, mắt sáng như chart xanh._
-dan_dau_tu: Long! Kèo coin chắc thắng! Gỡ lại tiền nhà cho em luôn! Em đang cần tiền thật mà đúng hông?
+dan_dau_tu: {con_ong_chau_cha}! Kèo coin chắc thắng! Gỡ lại tiền nhà cho em luôn! Em đang cần tiền thật mà đúng hông?
 _Đúng. Lần đầu tiên trong đời bạn cần tiền thật. Penthouse sắp bán. Thẻ bằng 0._
 * [💸 Bỏ 5 triệu tiền lương vào.]
     { tien >= 5000000:
@@ -372,7 +372,7 @@ _Sau buổi chiếu, chú bạn hỏi mua kênh Diu-túp của {editor} giá 200
 # ngay:27 # gio:08:30 # noi:sky_ao_tang_30 # bat_buoc
 _LL-Entertainment ra tay. Sáng nay, cả công ty xôn xao vì LL ra giá gấp ba cho Siêu Nhân Hồng. Điện thoại bạn có một tin nhắn thoại lạ._
 ~ phat_hien(ll_moi_nguyen)
-luu_luc: *(tin nhắn thoại, giọng diễn giả)* Long à, việc hôm nay phải xong từ hôm qua. 300 triệu cho bài "Hồng Là Thái Độ", kèm ghế nhạc sĩ ở LL. Không ai gọi em là "cháu ai" ở đây cả.
+luu_luc: *(tin nhắn thoại, giọng diễn giả)* {con_ong_chau_cha} à, việc hôm nay phải xong từ hôm qua. 300 triệu cho bài "Hồng Là Thái Độ", kèm ghế nhạc sĩ ở LL. Không ai gọi em là "cháu ai" ở đây cả.
 _300 triệu. Một phòng trọ ở Hẻm 69 giá 3 triệu một tháng. Bạn đếm: 100 tháng._
 * [💰 "Ok anh. Gét gô."]
     ~ tien_cong(300000000)
@@ -413,14 +413,14 @@ _300 triệu. Một phòng trọ ở Hẻm 69 giá 3 triệu một tháng. Bạn
 === con_ong_chau_cha_2710_sanh ===
 # ngay:27 # gio:10:30 # noi:sanh_tang_tret
 _Lưu Lực tới tận nơi. Vest trắng, tóc vuốt keo, ôm tập hồ sơ màu xanh lá chuối. Thấy bạn, Lưu Lực nháy mắt như hai người có bí mật chung._
-luu_luc: Long! Em đọc tin nhắn anh chưa? Việc hôm nay phải xong từ hôm qua.
+luu_luc: {con_ong_chau_cha}! Em đọc tin nhắn anh chưa? Việc hôm nay phải xong từ hôm qua.
 _Rồi ánh mắt Lưu Lực dừng ở chân cầu thang. {chi_dai} đứng đó, khoanh tay. Tập hồ sơ rơi xuống đất, giấy bay tứ tung._
 chi_dai: Lâu quá hen. Quán Ốc Đêm còn mở đó.
 * [📄 Cúi xuống nhặt giấy, đưa cho Lưu Lực: "Anh làm rơi nè. Bài của tui thì hông rơi đâu."]
     luu_luc: *(giật lấy, cười gượng)* Em sẽ đổi ý.
     ~ long_tl(3)
     ~ qh("chi_dai", 4)
-* [😎 Đứng cạnh {chi_dai}: "Chị Hương, chị quen ổng hả?"]
+* [😎 Đứng cạnh {chi_dai}: "Chị {chi_dai}, chị quen ổng hả?"]
     chi_dai: Quen. Một tô ốc len.
     _Bạn không hiểu. Nhưng thấy Lưu Lực lùi một bước, bạn hiểu đủ._
     ~ qh("chi_dai", 6)
@@ -443,7 +443,7 @@ _Tối. Sân thượng công ty. Gió lạnh. Bạn đứng tựa lan can, nghe 
 }
 
 = noi_that
-* [💬 "Ông Nhật. Nói thiệt nha. Ông muốn cái ghế đó thì lấy đi. Tui chỉ muốn làm nhạc."]
+* [💬 "Ông {truong_phong}. Nói thiệt nha. Ông muốn cái ghế đó thì lấy đi. Tui chỉ muốn làm nhạc."]
     ~ long_ke_nhat_khong_muon_ghe = true
     _{truong_phong} đứng im rất lâu. Rồi ngồi xuống bậc thềm, cười ra tiếng._
     truong_phong: Thế mà tớ sửa đơn 15 lần.
@@ -470,7 +470,7 @@ _Bàn số 4: {sales} và {designer} đang ngồi. Bàn số 7: {thanh_xin_nghi}
 * [🛵 Vào ca, cúi đầu thấp.]
     -> con_ong_chau_cha_mg_lam_them
 * [🎤 Ghé bàn số 7, nói nhỏ: "Mai thi tốt nha. Tui hông thấy gì đâu."]
-    thanh_xin_nghi: *(giật mình)* Ông… ông Long hả? Ông làm ở đây hả?
+    thanh_xin_nghi: *(giật mình)* Ông… ông {con_ong_chau_cha} hả? Ông làm ở đây hả?
     con_ong_chau_cha: Ở đây tui tên Rồng.
     thanh_xin_nghi: *(bật cười)* Vậy tui là ca sĩ, ông là phục vụ. Mình giữ bí mật cho nhau nha.
     ~ qh("thanh_xin_nghi", 12)

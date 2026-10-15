@@ -8,7 +8,7 @@
 # noi:phong_hop_sang_tao # dieu_kien:minigame xep lich hop
 _Lịch tuần của 5 nhân viên và phòng họp "Sáng Tạo" hiện ra như một bàn xếp gạch. Khối họp rơi từ trên xuống._
 _Luật: không đè giờ nghỉ trưa. Không đè ca đêm của {editor}. Không đè buổi {chua_te_deadline} đi "nghiên cứu xu hướng" (lướt Tóp-tóp)._
-chua_te_deadline: Anh Nhật, khung 14:00 – 16:00 thứ Tư là thời gian nghiên cứu của tui nha. Thiêng lắm đó.
+chua_te_deadline: Anh {truong_phong}, khung 14:00 – 16:00 thứ Tư là thời gian nghiên cứu của tui nha. Thiêng lắm đó.
 editor: *(ngáp)* Trước 13 giờ em là xác sống… đừng xếp gì hết…
 -> END
 
@@ -46,7 +46,7 @@ _Khối họp đè lên giờ nghỉ trưa. Một khối khác đè lên ca đê
 ~ tp_hop(2)
 ~ cang_thang(8)
 ~ tp_ca_phong(-2)
-editor: Anh Nhật… họp lúc 3 giờ sáng là họp với ai vậy anh?
+editor: Anh {truong_phong}… họp lúc 3 giờ sáng là họp với ai vậy anh?
 chua_te_deadline: Thứ Tư 14:00 có họp. Thời gian nghiên cứu của tui chết rồi. Ok mom.
 -> END
 
@@ -115,13 +115,13 @@ _Ba lần là xong. Không ai phải ở lại. {thuc_tap_sinh} vừa cầm tấ
 ~ tp_ghe(3)
 ~ follow(10000)
 ~ tp_ca_phong(2)
-thuc_tap_sinh: Dạ anh Nhật hô "Cắt" như đạo diễn phim điện ảnh ạ!
+thuc_tap_sinh: Dạ anh {truong_phong} hô "Cắt" như đạo diễn phim điện ảnh ạ!
 -> END
 
 === truong_phong_mg_ho_cat_thua ===
 # noi:studio_tang_2 # dieu_kien:canh hong
 _Lần quay thứ 9. {cho} lao vào khung hình, ngoạm vạt áo choàng hồng. {sieu_nhan_hong} chạy vòng quanh studio. Máy quay vẫn chạy._
-sieu_nhan_hong: Cứu! Cứu anh với! Thân chưa mà giỡn vậy Tuất!
+sieu_nhan_hong: Cứu! Cứu anh với! Thân chưa mà giỡn vậy {cho}!
 cho: GRỪ… GÂU!
 ~ cang_thang(10)
 ~ nghi(-10)
@@ -150,7 +150,7 @@ bien_kich: Biên bản của anh đọc như một bài thơ hành chính. Em th
 
 === truong_phong_mg_bien_ban_bat_ngu ===
 # noi:phong_hop_sang_tao # dieu_kien:bat duoc 3 nguoi ngu gat
-truong_phong: {editor}, ý em thế nào? {chua_te_deadline}, cậu nghĩ sao? Duy, em ghi lại chưa?
+truong_phong: {editor}, ý em thế nào? {chua_te_deadline}, cậu nghĩ sao? {thuc_tap_sinh}, em ghi lại chưa?
 _Ba người giật mình tỉnh dậy cùng lúc. Cả ba cùng nói "Dạ em đồng ý ạ"._
 ~ uy_tin = uy_tin + 5
 ~ qh("editor", -3)
@@ -230,6 +230,6 @@ _Một thùng nước tăng lực cho cả đội. Bạn mở một lon, giơ l�
 _Còi mãn cuộc. Đội Marketing thắng. {con_ong_chau_cha} ăn mừng bằng cách… check-in story._
 ~ cang_thang(15)
 ~ nghi(-15)
-con_ong_chau_cha: Hông sao ông Nhật, bóng tròn mà.
+con_ong_chau_cha: Hông sao ông {truong_phong}, bóng tròn mà.
 _Bạn cuộn sơ đồ 4-4-2 lại. Có lẽ bóng tròn thật. Có lẽ đội 5 người thì không nên đá 4-4-2._
 -> END

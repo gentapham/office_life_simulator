@@ -9,9 +9,9 @@ _Ngày Doanh nhân Việt Nam. {giam_doc} tự tặng hoa cho chính mình, bó 
 thanh_ninh: …và anh {giam_doc} không chỉ là một doanh nhân, anh là một ngọn hải đăng, anh nói chuẩn quá anh ơi…
 _{sales} bước lên, trao cho {giam_doc} một tấm bằng khung vàng: "Doanh nhân của năm, do Tập đoàn BTT Global bình chọn"._
 sales: Mr. Kevin Trộn gửi lời chúc anh. Tin chị đi, giải này hiếm lắm.
-giam_doc: *(xúc động)* Cảm ơn em. Anh sẽ treo ngay sau lưng ghế. À, Phát! Hát một bài mừng đi em. Bài gì cũng được. Bài kia ấy.
+giam_doc: *(xúc động)* Cảm ơn em. Anh sẽ treo ngay sau lưng ghế. À, {idol_het_thoi}! Hát một bài mừng đi em. Bài gì cũng được. Bài kia ấy.
 _"Bài kia" là "Công Viên". Mười một năm rồi, với anh {giam_doc}, bài nào của bạn cũng là "bài kia"._
-* [🎤 Hát "Công Viên", đổi lời: "Ngày xưa có anh Thắng thân… bán cá viên chiên…"]
+* [🎤 Hát "Công Viên", đổi lời: "Ngày xưa có anh {giam_doc} thân… bán cá viên chiên…"]
     _{giam_doc} cười to nhất phòng. {thanh_ninh} vỗ tay theo nhịp, hơi lệch. {chi_dai} cũng nhếch mép._
     ~ qh("giam_doc", 10)
     ~ qh("thanh_ninh", 3)
@@ -23,7 +23,7 @@ _"Bài kia" là "Công Viên". Mười một năm rồi, với anh {giam_doc}, b
     ~ qh("giam_doc", 2)
 * [💬 Nhìn tấm bằng: "Anh ơi, BTT Global có văn phòng ở đâu vậy anh?"]
     sales: *(cười rất tươi)* Ở nước ngoài anh. Bên đó chi nhánh nhiều lắm.
-    giam_doc: Thôi Phát, ngày vui. Hát đi em.
+    giam_doc: Thôi {idol_het_thoi}, ngày vui. Hát đi em.
     _{designer} đứng ở cửa nhìn bạn một cái rất lâu._
     ~ qh("sales", -5)
     ~ qh("designer", -3)
@@ -35,7 +35,7 @@ _"Bài kia" là "Công Viên". Mười một năm rồi, với anh {giam_doc}, b
 === idol_het_thoi_1310_karaoke ===
 # ngay:13 # gio:20:30 # noi:karaoke
 _Karaoke Hát Cho Nhau Nghe, phòng VIP 3 (VIP vì có một bóng đèn nháy). {dan_dau_tu}, {chua_te_deadline} và {it} rủ bạn đi "giải tỏa"._
-dan_dau_tu: Kèo nè: ông Phát hát "Công Viên", máy chấm trên 90 thì tụi tui bao. Dưới 90 thì ông bao.
+dan_dau_tu: Kèo nè: ông {idol_het_thoi} hát "Công Viên", máy chấm trên 90 thì tụi tui bao. Dưới 90 thì ông bao.
 chua_te_deadline: Chill, máy này chưa cho ai quá 80 hết. Bài gốc cũng vậy.
 it: Máy chấm theo âm lượng. Không theo cao độ.
 _{it} nói câu đó rồi nhìn bạn, như vừa đưa bạn chìa khóa._
@@ -56,7 +56,7 @@ _{it} nói câu đó rồi nhìn bạn, như vừa đưa bạn chìa khóa._
     ~ qh("it", 5)
     ~ phat_tt(5)
     ~ an(20)
-* [🤝 "Thôi để Bảo hát. Cả năm chưa nghe {it} hát lần nào."]
+* [🤝 "Thôi để {it} hát. Cả năm chưa nghe {it} hát lần nào."]
     it: …Ừ.
     _{it} hát một bài nhạc rock cũ. Hát hay bất ngờ. Máy chấm 61 điểm vì {it} hát nhỏ quá._
     ~ qh("it", 12)
@@ -82,12 +82,12 @@ _Hôm nay {thanh_xin_nghi} "gặt lúa". Chắc là gặt ở Đài Tivi Hóng._
     { phat_co_keo_ngam:
         ~ phat_co_keo_ngam = false
     }
-    _Bạn để lại một tờ giấy: "Hát nốt cao thì đừng gồng. Anh Phát." Rồi bạn đem túi ra Đài Tivi Hóng giùm, gửi ở quầy lễ tân._
+    _Bạn để lại một tờ giấy: "Hát nốt cao thì đừng gồng. Anh {idol_het_thoi}." Rồi bạn đem túi ra Đài Tivi Hóng giùm, gửi ở quầy lễ tân._
     ~ qh("thanh_xin_nghi", 20)
     ~ phat_tt(-8)
     ~ nghi(-10)
 * [🐍 Đem túi qua phòng {hr}.]
-    hr: *(mỉm cười)* Cảm ơn anh Phát nhé. Anh rảnh không, lát lên phòng anh uống trà xíu.
+    hr: *(mỉm cười)* Cảm ơn anh {idol_het_thoi} nhé. Anh rảnh không, lát lên phòng anh uống trà xíu.
     _Bạn không biết vì sao bạn làm vậy. Có lẽ vì trên tấm thẻ ghi "Vòng 2". Bạn chưa bao giờ đi thi vòng nào._
     ~ qh("hr", 5)
     ~ qh("thanh_xin_nghi", -30)
@@ -112,12 +112,12 @@ _Studio tầng 2 tối thui. Không micro, không loa, không đèn. Lần đầ
     ~ nghi(-5)
 * [🤝 Nhận một cục sạc của {thuc_tap_sinh}, đem lên cho anh {quan_ly_idol}.]
     _Anh {quan_ly_idol} ngồi ở bậc thang, hai điện thoại, một cái 12%, một cái 9%. Thấy cục sạc, anh nhìn bạn như nhìn ân nhân._
-    quan_ly_idol: Phát… em cứu anh rồi đó. Ủa, sao em biết anh hết pin?
+    quan_ly_idol: {idol_het_thoi}… em cứu anh rồi đó. Ủa, sao em biết anh hết pin?
     _Vì anh lúc nào cũng hết pin. Bạn không nói._
     ~ qh("quan_ly_idol", 10)
     ~ qh("thuc_tap_sinh", 3)
 * [💬 Ngó vô phòng họp "Sáng Tạo": {truong_phong} đang họp thắp nến.]
-    truong_phong: Anh Phát vào đây! Mình sync nhanh 5 phút. Chủ đề: làm thế nào để họp khi không có điện.
+    truong_phong: Anh {idol_het_thoi} vào đây! Mình sync nhanh 5 phút. Chủ đề: làm thế nào để họp khi không có điện.
     _Ba cây nến. Năm người. Ai cũng nói thật hơn mọi ngày, có lẽ vì không ai thấy mặt ai._
     ~ qh("truong_phong", 5)
     ~ phat_tt(-2)
@@ -135,7 +135,7 @@ _Ánh điện thoại hắt lên mặt người đang hát: {con_ong_chau_cha}. 
     ~ phat_hien(bai_hat_long)
     ~ cang_thang(5)
 * [💬 Bước ra: "Bài này của ai vậy em?"]
-    con_ong_chau_cha: *(giật mình, đặt đàn xuống)* Ủa anh Phát… À… bài trên mạng. Em nghe đâu đó thôi.
+    con_ong_chau_cha: *(giật mình, đặt đàn xuống)* Ủa anh {idol_het_thoi}… À… bài trên mạng. Em nghe đâu đó thôi.
     _Không có bài nào trên mạng như vậy. Bạn biết. {con_ong_chau_cha} biết bạn biết._
     ~ phat_hien(bai_hat_long)
     ~ qh("con_ong_chau_cha", 5)
@@ -151,7 +151,7 @@ _6 giờ chiều. Vẫn chưa có điện. Không ai về, vì ngoài đường 
 _Cả công ty ngồi bệt dưới sàn. Ánh sáng duy nhất là vài màn hình điện thoại. Ở góc xa nhất có ai đó đã tháo mũ, ngồi rất gần {chua_te_deadline}. Trong tối, bạn không nhận ra là ai._
 hong_hot: Chán quá. Có ai hát gì đi.
 _Im lặng. Rồi {chi_dai} nói, không quay đầu:_
-chi_dai: Phát. Hát đi.
+chi_dai: {idol_het_thoi}. Hát đi.
 _Không micro. Không loa. Không đèn sân khấu. Không ai thấy mặt bạn._
 * [🎤 Tháo kính đen. Hát "Công Viên", thật nhỏ, như hồi ở quán cà phê.]
     _"Ngày xưa có đôi bạn thân… bán cá viên chiên… tại công viên…"_
@@ -208,7 +208,7 @@ _Đài Tivi Hóng, trường quay số 2. Phần thi "Hit Một Thời". MC vest
 _Nhạc dạo vang lên. Là bài của bạn._
 _Bạn đứng trong cánh gà, nghe bài của mình qua giọng người khác. {sieu_nhan_hong} hát được nửa bài thì vấp: "…thích ăn… khoai chiên!"_
 _Khán giả cười ồ._
-quan_ly_idol: *(nói nhỏ, tay vẫn cầm hai điện thoại)* Phát, đừng làm gì nha em. Đài đang quay trực tiếp. Chuyện này để anh lo. # hen_gio:5
+quan_ly_idol: *(nói nhỏ, tay vẫn cầm hai điện thoại)* {idol_het_thoi}, đừng làm gì nha em. Đài đang quay trực tiếp. Chuyện này để anh lo. # hen_gio:5
 * [😤 Bước ra sân khấu, giật micro: "CHUỐI chiên!"]
     ~ phat_gianh()
     { RANDOM(1, 10) <= 5:
@@ -261,15 +261,15 @@ _Về nhà. Gameshow đã phát sóng xong. Tóp-tóp chỉ toàn clip "khoai ch
 - else:
     _Bạn lướt bình luận. Ai cũng nói về "khoai chiên". Không ai nói về bạn._
 }
-_Tin nhắn từ {editor}, 23:14: "Dạ anh Phát, em dựng highlight gameshow. Em để cảnh nào mở đầu ạ?"_
+_Tin nhắn từ {editor}, 23:14: "Dạ anh {idol_het_thoi}, em dựng highlight gameshow. Em để cảnh nào mở đầu ạ?"_
 * [😇 "Cảnh Nguyên hát sai lời. Vui, dễ lan."]
-    editor: Dạ. *(một lúc sau)* Anh Phát… anh tốt ghê.
+    editor: Dạ. *(một lúc sau)* Anh {idol_het_thoi}… anh tốt ghê.
     ~ follow(10000)
     ~ qh("editor", 5)
     ~ qh("sieu_nhan_hong", 5)
 * {phat_hat_be_16} [🎶 "Cảnh hai đứa song ca. Cho người ta thấy bài này còn sống."]
-    editor: Dạ em cũng nghĩ vậy. Anh Thái chắc vui lắm.
-    _"Anh Thái chắc vui lắm." Bạn đọc câu đó hai lần mà không hiểu sao {editor} lại nhắc tới anh {quan_ly_idol}._
+    editor: Dạ em cũng nghĩ vậy. Anh {quan_ly_idol} chắc vui lắm.
+    _"Anh {quan_ly_idol} chắc vui lắm." Bạn đọc câu đó hai lần mà không hiểu sao {editor} lại nhắc tới anh {quan_ly_idol}._
     ~ follow(15000)
     ~ phat_nt(3)
     ~ qh("editor", 8)

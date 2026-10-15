@@ -706,7 +706,7 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
     _{quan_ly_idol} vẫn cầm hai điện thoại. Một cái rung ít hơn trước. Cái còn lại, danh bạ vẫn lưu một cái tên kèm ghi chú "(đừng bắt máy lúc đang họp, mà bắt cũng được)"._
 }
 { vai != "bien_kich":
-    _{bien_kich} {chung_phim_ghi_ten_duy: bắt đầu viết kịch bản thứ hai. Trang đầu ghi: "Đồng tác giả: (để trống, chờ người kể chuyện tiếp theo)."|ngồi ở gác mái số 7 với con mèo Bí. Cuốn tiểu thuyết "Công Ty Là Gia Đình" đã tới chương 31. Chương nào cũng có người thật. Chương 31 có cả chính {bien_kich}.}_
+    _{bien_kich} {chung_phim_ghi_ten_duy: bắt đầu viết kịch bản thứ hai. Trang đầu ghi: "Đồng tác giả: (để trống, chờ người kể chuyện tiếp theo)."|ngồi ở gác mái số 7 với con mèo Bí. Cuốn tiểu thuyết "Công Ty Là Gia Đình" đã tới chương 31. {dan_dau_tu} nào cũng có người thật. {dan_dau_tu} 31 có cả chính {bien_kich}.}_
 }
 { vai != "editor":
     _{editor} vẫn làm đêm. Kênh "Cú Đêm Cắt Ghép" có thêm một video mới, không quảng cáo, không tiêu đề, chỉ có một con cú đội mũ len hồng ngồi cạnh hai cái ly cà phê._

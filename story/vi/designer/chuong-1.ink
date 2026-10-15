@@ -83,7 +83,7 @@ bac_bao_ve: Thôi thôi, các cháu làm bác ngại…
 sales: Mọi người nghe nè! Siêu Nhân Hồng á, chị gặp ảnh ở Sống Ảo, chị dụ ảnh về đó. Tin chị đi!
 _{sieu_nhan_hong} đứng ngay đó, mở miệng định cãi, rồi lịch sự ngậm lại. {hong_hot} đã đăng vào group trước khi ai kịp thở._
 hong_hot: Ối dồi ôi, {sales} đỉnh nóc kịch trần! Đăng rồi nha!
-_{sales} liếc bạn. Ánh mắt đó bạn hiểu: "Chị Quỳnh, đỡ em."_
+_{sales} liếc bạn. Ánh mắt đó bạn hiểu: "Chị {designer}, đỡ em."_
 * [🤝 "Đúng rồi, hôm đó tui ngồi bàn bên, thấy {sales} chốt ảnh trong 5 phút."]
     ~ qh("sales", 10)
     ~ cang_thang(3)
@@ -158,7 +158,7 @@ _{sales} ngồi xuống, đá chân bạn dưới gầm bàn hai cái. Mật mã
 // ------------------------------------------------------------
 === designer_0210_can_mot_tap_doan ===
 # ngay:2 # gio:23:40 # noi:can_203 # bat_buoc
-sales: Chị Quỳnh ơi, cứu em! À không… tin chị đi, chị cứu em là chắc kèo!
+sales: Chị {designer} ơi, cứu em! À không… tin chị đi, chị cứu em là chắc kèo!
 sales: Sáng mai em cần hồ sơ năng lực của Tập đoàn Bánh Tráng Trộn Toàn Cầu. Có logo, có ảnh trụ sở, có chữ ký chủ tịch.
 _{sales} nhỏ hơn bạn 3 tuổi, nhưng xưng "chị" với cả thế giới, kể cả với bạn. Bạn đã quen. Gần như quen._
 sales: Chủ tịch tên Mr. Kevin Trộn. Em mới đặt lúc nãy, khi đang ăn bánh tráng trộn.
@@ -170,7 +170,7 @@ sales: Chủ tịch tên Mr. Kevin Trộn. Em mới đặt lúc nãy, khi đang 
 * [😇 "Huyền, cái tập đoàn đó có thật hông em?"]
     ~ qh("sales", -5)
     sales: Có chứ! …Sắp có.
-    sales: Chị Quỳnh, em biết là kỳ. Nhưng 2 tỷ em lỡ nói rồi. Chị giúp em lần này thôi.
+    sales: Chị {designer}, em biết là kỳ. Nhưng 2 tỷ em lỡ nói rồi. Chị giúp em lần này thôi.
     _Giọng {sales} nhỏ lại, không còn "chị" nữa. Bạn nể con nhỏ này, lần đầu tiên vì nó nói thật._
     ~ qh("sales", 8)
     ~ ds_toi(2)
@@ -223,7 +223,7 @@ _Mặt {cho}: khó chịu ở mức có thể kiện ra tòa._
 chi_dai: Tắm xong rồi nè! Cả công ty này chỉ chị tắm được nó thôi đó.
 cho: Grừ…
 _Một chiếc xe hồng đỗ xịch trước cổng. {sieu_nhan_hong} bước xuống, giả tiếng sủa._
-sieu_nhan_hong: Gâu gâu! Ê Tuất! Mặc đồ hồng giống anh rồi nè! Mình là anh em đó!
+sieu_nhan_hong: Gâu gâu! Ê {cho}! Mặc đồ hồng giống anh rồi nè! Mình là anh em đó!
 cho: GÂU! GÂU GÂU! *(lao ra, ngoạm phăng một chiếc găng tay hồng)*
 _Khoảnh khắc vàng. {cho} ngậm găng tay, nơ lệch, mắt trợn ngược. Tay bạn đang cầm điện thoại._
 * [📸 Bấm máy liên tục. Bộ sticker "Tuất Không Vui" ra đời.]
@@ -265,7 +265,7 @@ _{thuc_tap_sinh} 30 tuổi, lớn hơn bạn, cúi đầu tặng hoa như học 
     thuc_tap_sinh: Dạ em ghi lại ạ! Vậy đặt là gì ạ?
     designer: Đặt là "chưa phải cuối đâu". Cho đỡ đau.
     ~ nhan(hoa_hong)
-- truong_phong: Rồi, quay lại agenda. Tuần này Quỳnh lo poster MV ra mắt thứ 6 nhé. Mình sync mỗi ngày 2 lần.
+- truong_phong: Rồi, quay lại agenda. Tuần này {designer} lo poster MV ra mắt thứ 6 nhé. Mình sync mỗi ngày 2 lần.
 * [🎧 Đeo tai nghe lúc {truong_phong} bắt đầu slide thứ 40.]
     ~ ds_tai_nghe_lien_tiep = ds_tai_nghe_lien_tiep + 1
     ~ cang_thang(-5)

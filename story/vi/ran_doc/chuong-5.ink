@@ -157,7 +157,7 @@ _Hộp bánh thơm mùi kem dâu… và một mùi lạ. Nước hoa. Mùi lá c
 # ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
 _Livestream sinh nhật. 30.000 người đang xem. {hong_hot} cầm máy, {it} lo âm thanh, cả công ty đội mũ sinh nhật hồng._
 _Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline}._
-sieu_nhan_hong: Vũ ơi… anh thích em. Hông phải PR đâu. Thật đó.
+sieu_nhan_hong: {chua_te_deadline} ơi… anh thích em. Hông phải PR đâu. Thật đó.
 _Hashtag VũƠiTrảLờiĐi lên xu hướng sau 6 phút. {chua_te_deadline} đứng hình, tay vẫn cầm điện thoại đang lướt Tóp-tóp._
 chua_te_deadline: *(nói nhỏ)* …Anh {quan_ly_idol} dặn anh nói vậy hả?
 ~ follow(60000)

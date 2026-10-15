@@ -7,12 +7,12 @@
 # ngay:17 # gio:06:30 # noi:cong_cong_ty # bat_buoc
 _6 giờ 30 sáng thứ 7. Trước cổng công ty là chiếc xe khách thường, không máy lạnh. Team building Vũng Tàu, 2 ngày 1 đêm._
 _Điện thoại bạn có tin nhắn của cô trợ lý đài: "Sơn Kim Tuyến ơi, 10h sáng nay thử đồ bán kết nha, nhớ đó!"_
-_Anh Tuấn đứng ở cửa xe, cầm danh sách điểm danh. Thấy bạn, anh cười._
-hr: Sơn tới sớm ghê. Lên xe đi em.
-* [🤢 "Anh Tuấn ơi… em say xe nặng lắm ạ. Em xin ở nhà."]
+_Anh {hr} đứng ở cửa xe, cầm danh sách điểm danh. Thấy bạn, anh cười._
+hr: {thanh_xin_nghi} tới sớm ghê. Lên xe đi em.
+* [🤢 "Anh {hr} ơi… em say xe nặng lắm ạ. Em xin ở nhà."]
     hr: Em chạy xe máy từ Ven Đô lên đây 30 phút mỗi ngày mà say xe khách hả em?
     thanh_xin_nghi: Dạ… xe máy thì em cầm lái, em không say. Xe khách người khác lái, em say.
-    _Anh Tuấn nhìn bạn rất lâu. Rồi gạch tên bạn khỏi danh sách đi xe, ghi bên cạnh: "Say xe (?)."_
+    _Anh {hr} nhìn bạn rất lâu. Rồi gạch tên bạn khỏi danh sách đi xe, ghi bên cạnh: "Say xe (?)."_
     ~ son_tin(-15)
     ~ son_soi(10)
     ~ son_di_vung_tau = false
@@ -25,13 +25,13 @@ hr: Sơn tới sớm ghê. Lên xe đi em.
 
 = s_tren_xe
 _Xe lăn bánh. Bạn ngồi cạnh {quan_ly_idol}. {sieu_nhan_hong} ở hàng ghế đầu, quay xuống vẫy._
-sieu_nhan_hong: {son_nguyen_mat_danh:Đặc vụ Kim Tuyến!|Sơn ơi!} Tối nay lửa trại hát hò nha!
+sieu_nhan_hong: {son_nguyen_mat_danh:Đặc vụ Kim Tuyến!|{thanh_xin_nghi} ơi!} Tối nay lửa trại hát hò nha!
 * [😅 Vẫy lại, rồi giả vờ ngủ.]
     quan_ly_idol: Đặc vụ gì? *(nhìn bạn)*
     thanh_xin_nghi: Dạ… anh Nguyên đặt biệt danh lung tung đó anh.
 * [🎧 Đeo tai nghe, nghe lại bản thu bài thi.]
     ~ son_mo(2)
-    _Ba tiếng đường. Bạn nghe bài của mình 26 lần. Anh Thái ngủ gục lên vai bạn ở lần thứ 9._
+    _Ba tiếng đường. Bạn nghe bài của mình 26 lần. Anh {quan_ly_idol} ngủ gục lên vai bạn ở lần thứ 9._
 - -> END
 
 = s_o_lai
@@ -69,7 +69,7 @@ _Chiều thứ 6, 23/10. Sinh nhật Siêu Nhân Hồng. Livestream. Bạn là n
     -> END
 }
 _Bãi biển. Trò chơi tập thể bắt buộc. {chi_dai} cầm loa. Kéo co các phòng ban: phòng Nghệ sĩ có {quan_ly_idol}, {idol_het_thoi}, {sieu_nhan_hong}… và bạn._
-chi_dai: Phòng Nghệ sĩ! Kéo! Sơn kéo đi chớ, đứng đó làm gì!
+chi_dai: Phòng Nghệ sĩ! Kéo! {thanh_xin_nghi} kéo đi chớ, đứng đó làm gì!
 * [💪 Kéo hết sức.]
     _Phòng Nghệ sĩ thắng, nhờ {sieu_nhan_hong} một mình bằng ba. Bạn trượt chân ngã sấp xuống cát. Cả phòng cười._
     ~ qh("chi_dai", 3)
@@ -89,7 +89,7 @@ cho: Gâu! *(vẫy đuôi đầy cát)*
 }
 _Đêm lửa trại. Bia lon, mực nướng, karaoke loa kéo. {sales} say, hứa mời ca sĩ nổi tiếng nhất nước. {giam_doc} say, hứa tăng lương cả công ty._
 _{idol_het_thoi} giành micro hát "Công Viên" lần thứ 4. Tới câu "thích ăn chuối chiên", {chi_dai} giật micro._
-chi_dai: Thôi đủ "Công Viên" rồi! Sơn, hát một bài coi. Cả năm chị chưa nghe em mở miệng, toàn nghe em ho.
+chi_dai: Thôi đủ "Công Viên" rồi! {thanh_xin_nghi}, hát một bài coi. Cả năm chị chưa nghe em mở miệng, toàn nghe em ho.
 _Cả bãi biển quay sang bạn. Micro trong tay. Lửa trại lách tách._
 * [🤧 "Dạ em đau họng chị ơi… khụ."]
     _Không ai bất ngờ. {idol_het_thoi} giành lại micro, hát "Công Viên" lần thứ 5._
@@ -137,28 +137,28 @@ _Clip lửa trại lan ra ngoài trong đêm. Người ta xem để nghe Siêu N
 { not son_di_vung_tau:
     -> END
 }
-_Khách sạn hướng bãi xe. Phòng của bạn và {quan_ly_idol}. Anh Thái nằm nhìn trần nhà, hai điện thoại úp trên bụng._
+_Khách sạn hướng bãi xe. Phòng của bạn và {quan_ly_idol}. Anh {quan_ly_idol} nằm nhìn trần nhà, hai điện thoại úp trên bụng._
 { son_hat_lua_trai:
-    quan_ly_idol: Sơn. Anh quen em mấy năm, chưa bao giờ nghe em hát. Em… đi học hát hả?
+    quan_ly_idol: {thanh_xin_nghi}. Anh quen em mấy năm, chưa bao giờ nghe em hát. Em… đi học hát hả?
 - else:
-    quan_ly_idol: Sơn. Em ngủ chưa? Anh hỏi em cái này. Nếu anh đi… em có giận anh không?
+    quan_ly_idol: {thanh_xin_nghi}. Em ngủ chưa? Anh hỏi em cái này. Nếu anh đi… em có giận anh không?
 }
-* [🎤 Kể thật: "Anh Thái, em đi thi 'Giọng Ca Ước Mơ'. Mấy ngày bà ngoại ốm là mấy ngày em đi thi."]
-    _Anh Thái ngồi bật dậy. Hai điện thoại rơi xuống sàn._
-    quan_ly_idol: …Thảo nào bà ngoại em ốm đúng tối thứ 7. *(bật cười, rồi cười to)* Trời ơi Sơn. Sao em không nói anh?
-    thanh_xin_nghi: Em sợ anh ép em ký hợp đồng ca sĩ. Em sợ thành anh Phát thứ hai.
-    _Anh Thái im lặng rất lâu khi nghe tên anh Phát._
-    quan_ly_idol: Anh Phát… không phải hết thời vì hát dở đâu em. Mà thôi. Anh giữ bí mật. Mà anh che cho em được bao nhiêu thì che.
+* [🎤 Kể thật: "Anh {quan_ly_idol}, em đi thi 'Giọng Ca Ước Mơ'. Mấy ngày bà ngoại ốm là mấy ngày em đi thi."]
+    _Anh {quan_ly_idol} ngồi bật dậy. Hai điện thoại rơi xuống sàn._
+    quan_ly_idol: …Thảo nào bà ngoại em ốm đúng tối thứ 7. *(bật cười, rồi cười to)* Trời ơi {thanh_xin_nghi}. Sao em không nói anh?
+    thanh_xin_nghi: Em sợ anh ép em ký hợp đồng ca sĩ. Em sợ thành anh {idol_het_thoi} thứ hai.
+    _Anh {quan_ly_idol} im lặng rất lâu khi nghe tên anh {idol_het_thoi}._
+    quan_ly_idol: Anh {idol_het_thoi}… không phải hết thời vì hát dở đâu em. Mà thôi. Anh giữ bí mật. Mà anh che cho em được bao nhiêu thì che.
     ~ son_thai_biet = true
     ~ qh("quan_ly_idol", 25)
 * [😶 "Dạ em ngủ rồi anh."]
     quan_ly_idol: Ngủ rồi mà còn trả lời. Thôi, ngủ đi.
     _Bạn nằm quay mặt vào tường. Hai người bạn thân, hai bí mật, một bức tường mỏng._
-* {son_thay_anh_phat} [🔒 "Anh không đi được đâu. Anh không bỏ được anh Phát."]
-    _Anh Thái quay sang. Trong bóng tối, bạn nghe tiếng thở ra rất dài._
+* {son_thay_anh_phat} [🔒 "Anh không đi được đâu. Anh không bỏ được anh {idol_het_thoi}."]
+    _Anh {quan_ly_idol} quay sang. Trong bóng tối, bạn nghe tiếng thở ra rất dài._
     quan_ly_idol: Em… thấy cái ngăn kéo rồi hả?
     thanh_xin_nghi: Dạ. Em không nói ai.
-    quan_ly_idol: …Ngủ đi Sơn.
+    quan_ly_idol: …Ngủ đi {thanh_xin_nghi}.
     ~ qh("quan_ly_idol", 10)
 - -> END
 
@@ -171,19 +171,19 @@ _Khách sạn hướng bãi xe. Phòng của bạn và {quan_ly_idol}. Anh Thái
 _Xe về. Nóng. Chật. Ai cũng giận ai. {dan_dau_tu} nhìn điện thoại: Hồng Coin về 0. {con_ong_chau_cha} nhìn điện thoại: penthouse bị rao bán._
 { son_hat_lua_trai:
     _Cả xe im lặng 10 phút. Rồi {thuc_tap_sinh} ở hàng ghế sau rụt rè giơ tay._
-    thuc_tap_sinh: Dạ anh Sơn… anh học thanh nhạc ở đâu vậy ạ?
+    thuc_tap_sinh: Dạ anh {thanh_xin_nghi}… anh học thanh nhạc ở đâu vậy ạ?
     -> thanh_xin_nghi_1810_xe_ve.s_hoi_han
 - else:
-    _Ai đó hỏi to: "Ai xếp phòng vậy trời?" Cả xe nhìn anh Tuấn. Bạn nhìn ra cửa sổ, nhẩm lời bài bán kết._
+    _Ai đó hỏi to: "Ai xếp phòng vậy trời?" Cả xe nhìn anh {hr}. Bạn nhìn ra cửa sổ, nhẩm lời bài bán kết._
     ~ son_mo(2)
     -> END
 }
 
 = s_hoi_han
-* [😅 "Dạ… Diu-túp đó anh Duy. Học miễn phí."]
+* [😅 "Dạ… Diu-túp đó anh {thuc_tap_sinh}. Học miễn phí."]
     thuc_tap_sinh: Dạ… Diu-túp dạy hay vậy ạ? Em cũng học!
     ~ son_tin(3)
-* [🤫 "Bí mật nha anh Duy. Em kể anh sau."]
+* [🤫 "Bí mật nha anh {thuc_tap_sinh}. Em kể anh sau."]
     thuc_tap_sinh: Dạ em giữ bí mật ạ! Em giữ giỏi lắm ạ! *(liếc nhìn túi mình)*
     ~ qh("thuc_tap_sinh", 5)
 * [🎤 "Ở một cuộc thi. Mấy ngày nghỉ của em là đi thi đó."]
@@ -209,8 +209,8 @@ _{hong_hot} đăng story từ xe: "Về tới rồi, ai cũng giận ai. Có đ�
 === thanh_xin_nghi_1810_dem_chu_nhat ===
 # ngay:18 # gio:21:00 # noi:nha_ven_do
 _Chủ nhật, 9 giờ tối. Nhà vườn Ven Đô. Bạn đang ủi bộ đồ bán kết thì điện thoại reo. {dan_dau_tu}._
-dan_dau_tu: Sơn… em ngủ chưa? Hồng Coin… về 0 rồi em. Người tạo ôm tiền biến mất. Còn cái nịt. Cái khoản 500 ngàn của em… anh xin thêm thời gian.
-* [😇 "Anh Chương, em không đòi đâu. Anh ăn tối chưa?"]
+dan_dau_tu: {thanh_xin_nghi}… em ngủ chưa? Hồng Coin… về 0 rồi em. Người tạo ôm tiền biến mất. Còn cái nịt. Cái khoản 500 ngàn của em… anh xin thêm thời gian.
+* [😇 "Anh {dan_dau_tu}, em không đòi đâu. Anh ăn tối chưa?"]
     dan_dau_tu: *(im lặng rất lâu)* …Chưa. Em là người đầu tiên hỏi câu đó, không hỏi tiền.
     ~ qh("dan_dau_tu", 10)
     _Hai người nói chuyện 20 phút. Không ai nhắc tới coin nữa._
@@ -220,7 +220,7 @@ dan_dau_tu: Sơn… em ngủ chưa? Hồng Coin… về 0 rồi em. Người t�
 - _Cúp máy. Tin nhắn mới, từ cô trợ lý đài: "Bán kết cưng chọn bài chưa? Gửi chị trước thứ 3 nha."_
 * [🎶 Chọn bài ballad về người đi làm xa nhà.]
     ~ son_mo(3)
-    _Bài của những người hay vắng nhà. Như bạn. Như anh Thái. Như anh Chương vừa gọi._
+    _Bài của những người hay vắng nhà. Như bạn. Như anh {quan_ly_idol}. Như anh {dan_dau_tu} vừa gọi._
 * [🎶 Chọn "Công Viên", bản chậm.]
     ~ son_mo(3)
     { son_muon_vest_phat:
@@ -232,11 +232,11 @@ dan_dau_tu: Sơn… em ngủ chưa? Hồng Coin… về 0 rồi em. Người t�
 === thanh_xin_nghi_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban. Không ai nhìn mặt ai. {truong_phong} nhìn slide: "Chuẩn bị 20/10: sinh nhật công ty 16 tuổi + Ngày Phụ nữ"._
-truong_phong: Sơn, em xếp chương trình văn nghệ tối mai nhé. Như mọi năm.
+truong_phong: {thanh_xin_nghi}, em xếp chương trình văn nghệ tối mai nhé. Như mọi năm.
 _"Như mọi năm" nghĩa là: {idol_het_thoi} hát mở màn "Công Viên", {giam_doc} phát biểu 40 phút, {idol_het_thoi} hát kết thúc "Công Viên"._
 { son_hat_lua_trai:
-    chi_dai: Năm nay cho Sơn hát một bài đi! Hát hay vậy mà giấu!
-    _Cả phòng quay lại. Anh Tuấn nhìn bạn, ánh mắt khó đọc._
+    chi_dai: Năm nay cho {thanh_xin_nghi} hát một bài đi! Hát hay vậy mà giấu!
+    _Cả phòng quay lại. Anh {hr} nhìn bạn, ánh mắt khó đọc._
     ~ son_soi(5)
 }
 * [📅 "Dạ, em xếp như mọi năm."]
@@ -256,13 +256,13 @@ _Dòng 1: Mở màn. Dòng 2: Phát biểu. Dòng 3: ? Dòng 4: Kết thúc._
 * [🎤 Mở màn: {idol_het_thoi}, "Công Viên". Như mọi năm.]
     ~ qh("idol_het_thoi", 8)
     idol_het_thoi: Đó! Mở màn là phải anh! Fan anh chờ cả năm!
-    _Fan duy nhất còn lại của anh Phát chưa tới. Nhưng ảnh vẫn vui._
+    _Fan duy nhất còn lại của anh {idol_het_thoi} chưa tới. Nhưng ảnh vẫn vui._
 * [✍️ Dòng 3: "Khách mời bí mật". Không ghi tên.]
     ~ son_khach_moi_bi_mat = true
     _Bạn viết. Tay hơi run. Khách mời bí mật là bạn._
     ~ son_mo(3)
     ~ son_soi(3)
-* {son_thai_biet} [🔒 Nhờ anh Thái xếp cho: "Anh, dòng 3 anh ghi giùm em tên 'S.K.T.' nha."]
+* {son_thai_biet} [🔒 Nhờ anh {quan_ly_idol} xếp cho: "Anh, dòng 3 anh ghi giùm em tên 'S.K.T.' nha."]
     quan_ly_idol: S.K.T.? *(cười)* Ừ. Anh ghi. Ai hỏi thì anh nói là ban nhạc từ Đài Tivi Hóng.
     ~ son_khach_moi_bi_mat = true
     ~ qh("quan_ly_idol", 5)
@@ -272,9 +272,9 @@ _Dòng 1: Mở màn. Dòng 2: Phát biểu. Dòng 3: ? Dòng 4: Kết thúc._
 === thanh_xin_nghi_2010_thu_g ===
 # ngay:20 # gio:11:30 # noi:chong_bao_ve
 _Chòi bảo vệ. {bac_bao_ve} cầm lá thư tay ký tên "G" và một phong bì dán kín "Chỉ mở khi công ty sắp sập". Cả công ty tụ trước cổng._
-_Anh Tuấn đứng cạnh bác. Bác đang hỏi anh nên đọc hay không._
+_Anh {hr} đứng cạnh bác. Bác đang hỏi anh nên đọc hay không._
 * [🤝 Nói nhỏ với bác: "Bác đọc đi bác. Mọi người cần nghe."]
-    bac_bao_ve: Cháu Sơn cũng bảo thế à. Ừ.
+    bac_bao_ve: Cháu {thanh_xin_nghi} cũng bảo thế à. Ừ.
     _{bac_bao_ve} đứng lên ghế đẩu, đọc chậm: "…16 năm rồi. Gửi lời cảm ơn tới từng người còn ở lại…"_
     _Bạn nghĩ tới những ngày bạn không ở lại. 31 ngày trong năm._
     ~ qh("bac_bao_ve", 5)
@@ -296,8 +296,8 @@ _Bạn đứng sau cánh gà, áo sơ mi công sở, không kim tuyến, không 
     ~ son_mo(10)
     ~ son_tin(-10)
     _Bạn hát. Không trang điểm. Không nghệ danh. Cả công ty lần đầu nghe giọng của người hay xin nghỉ nhất công ty._
-    _Hết bài. {giam_doc} đứng dậy vỗ tay trước tiên. Rồi ông ấy quay sang anh Tuấn, nói gì đó. Anh Tuấn không trả lời, chỉ nhìn bạn._
-    giam_doc: Sơn! Hay! Anh không ép, nhưng em có muốn ký hợp đồng ca sĩ không?
+    _Hết bài. {giam_doc} đứng dậy vỗ tay trước tiên. Rồi ông ấy quay sang anh {hr}, nói gì đó. Anh {hr} không trả lời, chỉ nhìn bạn._
+    giam_doc: {thanh_xin_nghi}! Hay! Anh không ép, nhưng em có muốn ký hợp đồng ca sĩ không?
     _Đúng câu bạn sợ nhất. Bạn cúi chào rồi chạy vào cánh gà._
     ~ son_soi(10)
 * [😨 Đứng im sau cánh gà. Để MC nói "khách mời bị kẹt xe".]
@@ -315,13 +315,13 @@ _Tối. Tiệc sinh nhật 16 tuổi. {idol_het_thoi} hát "Công Viên" mở m�
 # ngay:20 # gio:22:00 # noi:karaoke_hat_cho_nhau_nghe
 _Tăng hai ở Karaoke Hát Cho Nhau Nghe. {giam_doc} say, đứng lên bàn: "Tháng sau tăng lương 20%! Cả công ty!" {hong_hot} quay clip._
 _Micro được chuyền tới tay bạn._
-hong_hot: Sơn hát đi! Cho tui quay!
+hong_hot: {thanh_xin_nghi} hát đi! Cho tui quay!
 * [🎤 Hát thật, nhỏ thôi.]
     ~ son_mo(3)
     ~ son_soi(3)
-    _Bạn hát nhỏ. Phòng karaoke ồn ào nên chỉ người ngồi gần nghe. Người ngồi gần nhất là anh Tuấn. Anh ấy nhắm mắt nghe tới hết._
+    _Bạn hát nhỏ. Phòng karaoke ồn ào nên chỉ người ngồi gần nghe. Người ngồi gần nhất là anh {hr}. Anh ấy nhắm mắt nghe tới hết._
 * [😏 Chọn bài khó nhất, cố tình hát lạc.]
     _Phòng karaoke cười rần rần. Điểm máy chấm: 12/100. {hong_hot} đăng clip. Bạn an toàn thêm một đêm._
-* [🤧 "Em ho quá, em nhường anh Phát."]
+* [🤧 "Em ho quá, em nhường anh {idol_het_thoi}."]
     idol_het_thoi: Đó! Phải vậy chớ! *(hát "Công Viên" lần thứ 7 trong ngày)*
 - -> END

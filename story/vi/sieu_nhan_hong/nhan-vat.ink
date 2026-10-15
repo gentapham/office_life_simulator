@@ -163,7 +163,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh. Gì đó? Còn sớm mà.
     chua_te_deadline: Deadline còn 3 ngày lận anh. Ngày thứ 3 mới chạy. Chill.
     ~ snh_tim(1)
 * [🙂 Kéo ghế ngồi cạnh, cũng lướt điện thoại.]
-    chua_te_deadline: *(chìa màn hình)* Coi nè anh. Con chó té xuống hồ. Giống con Tuất ghê.
+    chua_te_deadline: *(chìa màn hình)* Coi nè anh. Con chó té xuống hồ. Giống con {cho} ghê.
     _Hai người ngồi lướt clip chó mèo 20 phút. Không ai nói gì quan trọng. Đó là 20 phút quan trọng nhất trong ngày._
     ~ snh_tim(4)
 * {snh_tim_hong >= 40} [🙂 Tháo mũ, ngồi xuống: "Hôm nay anh mệt. Ngồi đây chút nha."]
@@ -172,7 +172,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh. Gì đó? Còn sớm mà.
     ~ snh_tim(6)
     ~ uong(15)
 + -> sieu_nhan_hong_tudo_het_chuyen
-- chua_te_deadline: Mà nè anh. Quà hồng của anh… em để hết trên bàn đó. Thái nói anh tặng để có content hả?
+- chua_te_deadline: Mà nè anh. Quà hồng của anh… em để hết trên bàn đó. {quan_ly_idol} nói anh tặng để có content hả?
 * [🙂 "Hông phải. Anh tặng vì anh muốn tặng."]
     { snh_tim_hong >= 60:
         chua_te_deadline: *(ngừng lướt)* …Ừ. Em bắt đầu thấy vậy.

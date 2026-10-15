@@ -9,7 +9,7 @@
 === quan_ly_idol_mg_hai_dien_thoai ===
 # noi:phong_nghe_si
 _Máy trái reo. Máy phải reo. Máy để bàn của phòng Nghệ sĩ cũng reo. Bạn có hai tai và ba giây._
-_Luật: máy trái là Phát, máy phải là Nguyên. Thỉnh thoảng chen vào {giam_doc}, đài truyền hình, và một bà mẹ cô dâu rất kiên nhẫn._
+_Luật: máy trái là {idol_het_thoi}, máy phải là Nguyên. Thỉnh thoảng chen vào {giam_doc}, đài truyền hình, và một bà mẹ cô dâu rất kiên nhẫn._
 { thai_pin < 30:
     _Pin còn {thai_pin}. Tay bạn hơi run._
 }
@@ -18,9 +18,9 @@ _Luật: máy trái là Phát, máy phải là Nguyên. Thỉnh thoảng chen v�
 
 === quan_ly_idol_mg_hai_dien_thoai_thang ===
 # noi:phong_nghe_si
-_Hai mươi cuộc gọi. Không nhầm máy lần nào. Phát được hứa đúng chuyện của Phát, Nguyên được hứa đúng chuyện của Nguyên, mẹ cô dâu được hứa bài bolero._
+_Hai mươi cuộc gọi. Không nhầm máy lần nào. {idol_het_thoi} được hứa đúng chuyện của {idol_het_thoi}, Nguyên được hứa đúng chuyện của Nguyên, mẹ cô dâu được hứa bài bolero._
 _{thanh_xin_nghi} đứng nhìn từ cửa, vỗ tay chậm rãi._
-thanh_xin_nghi: Anh Thái. Anh nên đi thi "Tai Trái Tai Phải" trên Đài Tivi Hóng.
+thanh_xin_nghi: Anh {quan_ly_idol}. Anh nên đi thi "Tai Trái Tai Phải" trên Đài Tivi Hóng.
 ~ tien_cong(150000)
 ~ nhan(ca_phe)
 ~ thai_p(20)
@@ -31,7 +31,7 @@ _Một ly cà phê sữa đá từ quán đầu đường, {thanh_xin_nghi} mua.
 
 === quan_ly_idol_mg_hai_dien_thoai_thua ===
 # noi:phong_nghe_si
-_Bạn nói vào máy trái: "Chiều nay em mặc đồ hồng nha, nhớ mang găng tay." Máy trái là Phát._
+_Bạn nói vào máy trái: "Chiều nay em mặc đồ hồng nha, nhớ mang găng tay." Máy trái là {idol_het_thoi}._
 idol_het_thoi: …Anh nói với ai đó? Em mặc đồ hồng hả?
 _Bạn nói vào máy phải: "Đừng đeo kính đen trong tiệm nail nha em." Máy phải là Nguyên._
 sieu_nhan_hong: Dạ! Em không đeo kính! Mà em có kính đâu anh?
@@ -42,7 +42,7 @@ sieu_nhan_hong: Dạ! Em không đeo kính! Mà em có kính đâu anh?
     idol_het_thoi: Anh mệt quá rồi đó. Nghỉ đi anh.
     ~ qh("idol_het_thoi", 2)
 * [📱 Để vậy. Không có thời gian.]
-    _Tối đó Phát mặc một cái khăn quàng hồng đi hát đám cưới, "vì anh Thái dặn". Cô dâu khen đẹp._
+    _Tối đó {idol_het_thoi} mặc một cái khăn quàng hồng đi hát đám cưới, "vì anh {quan_ly_idol} dặn". Cô dâu khen đẹp._
 - -> END
 
 // ============================================================
@@ -66,7 +66,7 @@ _Hai tiếng sau, phốt chìm. Bình luận được thích nhiều nhất: "Th
 ~ tien_cong(300000)
 ~ uy_tin = uy_tin + 3
 { RANDOM(1, 10) <= 4:
-    giam_doc: *(gọi lên phòng)* Thái. Thông cáo hay. Cầm hộp bánh này về, quà đối tác. Anh không ăn đồ ngọt.
+    giam_doc: *(gọi lên phòng)* {quan_ly_idol}. Thông cáo hay. Cầm hộp bánh này về, quà đối tác. Anh không ăn đồ ngọt.
     ~ an(20)
     ~ qh("giam_doc", 3)
 }
@@ -94,7 +94,7 @@ _Thông cáo đăng lúc 23:58. Lúc 0:03, cư dân mạng chụp màn hình: "X
 # noi:phong_nghe_si
 _Bảng trắng lịch tuần. Các khối rơi xuống: "Đám cưới quận 3", "Quay quảng cáo", "Livestream", "Khai trương tiệm nail", "Thu âm"… Thỉnh thoảng rơi xuống một khối đỏ chót: "🆘 Nguyên đi giúp người"._
 { RANDOM(1, 2) == 1:
-    thanh_xin_nghi: *(hôm nay có đi làm)* Anh Thái, em cầm bút lông nè. Mình xếp nhanh rồi em đi mua bánh mì.
+    thanh_xin_nghi: *(hôm nay có đi làm)* Anh {quan_ly_idol}, em cầm bút lông nè. Mình xếp nhanh rồi em đi mua bánh mì.
 - else:
     _{thanh_xin_nghi} hôm nay "bà ngoại ốm". Bạn xếp một mình._
 }
@@ -117,13 +117,13 @@ _Lịch tuần không một ô chồng nào. Khối "Nguyên đi giúp người"
 
 === quan_ly_idol_mg_xep_lich_thua ===
 # noi:phong_nghe_si
-_Thứ 7: Phát hát đám cưới quận 3 lúc 18 giờ. Nguyên livestream lúc 18 giờ. Xe đưa đón: một cái. Tài xế: bạn._
+_Thứ 7: {idol_het_thoi} hát đám cưới quận 3 lúc 18 giờ. Nguyên livestream lúc 18 giờ. Xe đưa đón: một cái. Tài xế: bạn._
 ~ thai_kh(1)
 ~ tien_cong(50000)
 * [🚗 Chạy cả hai. Đám cưới trước, livestream sau.]
     _Nguyên trễ livestream 20 phút. Bình luận: "Siêu Nhân Hồng đi giúp người hả?" Lần này không phải._
     ~ thai_p(-20)
-* [📞 Nhờ {chi_dai} chở Phát.]
+* [📞 Nhờ {chi_dai} chở {idol_het_thoi}.]
     chi_dai: Ừ. Lần này thôi nha.
     ~ qh("chi_dai", 2)
 - -> END
@@ -145,7 +145,7 @@ me_co_dau: *(thở dài, gật đầu)* Thôi được. Mà hát đúng tên con
 ~ tien_cong(350000)
 ~ uy_tin = uy_tin + 2
 * [🍗 Nhận phần cỗ cưới mang về.]
-    _Gà luộc, xôi gấc, hai lon nước ngọt. Bạn để dành nửa phần cho Phát._
+    _Gà luộc, xôi gấc, hai lon nước ngọt. Bạn để dành nửa phần cho {idol_het_thoi}._
     ~ an(40)
     ~ uong(15)
     ~ qh("idol_het_thoi", 2)
@@ -173,7 +173,7 @@ _Thanh kiên nhẫn về 0. Show mất. Bạn ngồi lại với ly trà đá đ
 // ============================================================
 === quan_ly_idol_mg_chay_show ===
 # noi:dai_lo_ket_xe
-_Bản đồ Quận Hóng. Phát ở ghế sau, ôm đàn. Điểm đến: nhà hàng tiệc cưới, rồi studio, rồi Đài Tivi Hóng. Đại lộ Kẹt Xe đang đỏ như chart coin của {dan_dau_tu}._
+_Bản đồ Quận Hóng. {idol_het_thoi} ở ghế sau, ôm đàn. Điểm đến: nhà hàng tiệc cưới, rồi studio, rồi Đài Tivi Hóng. Đại lộ Kẹt Xe đang đỏ như chart coin của {dan_dau_tu}._
 _Bắt buộc ghé xe chuối chiên: điều khoản số 4._
 idol_het_thoi: Anh. Ghé chuối chiên cho nó hả? *(im một lúc)* Mua dư một bịch nha.
 * [🛵 Nổ máy.]
@@ -191,13 +191,13 @@ _Phát mở bịch dư, chia bạn một nửa. "Chiên giòn. Mà hông bằng 
 
 === quan_ly_idol_mg_chay_show_thua ===
 # noi:dai_lo_ket_xe
-_Mưa ngập Đại lộ Kẹt Xe. Xe chết máy. Bạn dắt bộ 400 mét. Phát đội đàn lên đầu cho khỏi ướt._
-_Tới nơi trễ 25 phút. Mẹ cô dâu nhìn đồng hồ, nhìn bạn, nhìn bộ đồ ướt của Phát._
+_Mưa ngập Đại lộ Kẹt Xe. Xe chết máy. Bạn dắt bộ 400 mét. {idol_het_thoi} đội đàn lên đầu cho khỏi ướt._
+_Tới nơi trễ 25 phút. Mẹ cô dâu nhìn đồng hồ, nhìn bạn, nhìn bộ đồ ướt của {idol_het_thoi}._
 ~ thai_kh(1)
 ~ tien_cong(50000)
 ~ thai_p(-15)
 { RANDOM(1, 3) == 1:
-    _Một chiếc xe màu hồng dừng lại. Siêu Nhân Hồng bước xuống, đẩy xe giùm bạn. Phát nhìn Nguyên, không nói gì, rồi phụ đẩy._
+    _Một chiếc xe màu hồng dừng lại. Siêu Nhân Hồng bước xuống, đẩy xe giùm bạn. {idol_het_thoi} nhìn Nguyên, không nói gì, rồi phụ đẩy._
     ~ qh("sieu_nhan_hong", 3)
 }
 -> END
@@ -221,7 +221,7 @@ _Đây có lẽ là việc duy nhất trong ngày mà kết quả hoàn toàn n�
 
 === quan_ly_idol_mg_quan_ly_sac_thua ===
 # noi:studio_0905
-_Máy trái sập lúc 19:40. Đúng lúc Phát gọi lần thứ ba._
+_Máy trái sập lúc 19:40. Đúng lúc {idol_het_thoi} gọi lần thứ ba._
 _Khi máy sống lại: "Thôi khỏi anh, em tự lo." Bạn đọc câu đó, và lần đầu tiên thấy sợ một câu không có lỗi chính tả nào._
 ~ thai_p(-10)
 ~ cang_thang(8)

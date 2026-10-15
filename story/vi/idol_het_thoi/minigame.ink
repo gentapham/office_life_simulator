@@ -15,7 +15,7 @@ _Sảnh tiệc cưới. Cổng hoa, đèn chớp, MC thử micro "a lô a lô". 
 - 2:
     _Bảng ghi: "Ngọc Hân & Văn Hải". Phù dâu tên Ngọc Hằng. Ai đặt tên vậy trời._
 - else:
-    _Bảng ghi: "Kim Ngân & Bảo Long". Chú rể có người anh song sinh tên Bảo Lân, đứng ngay cạnh._
+    _Bảng ghi: "Kim {hong_hot} & {it} Long". Chú rể có người anh song sinh tên {it} Lân, đứng ngay cạnh._
 }
 quan_ly_idol: *(đưa bạn chai nước)* Nhịp chậm, đừng chen nốt. Tới đoạn chúc mừng nhớ đọc ĐÚNG tên. Mẹ cô dâu ngồi bàn đầu, bà nhìn dữ lắm.
 * [🎤 Lên sân khấu.]
@@ -72,7 +72,7 @@ me_co_dau: …Con hát hay. Mà lần sau con đọc kỹ cái bảng giùm cô.
 # noi:tiem_moi_khai_truong
 _Trước cửa một tiệm mới. Băng rôn đỏ, lẵng hoa, một dàn pháo giấy chĩa thẳng vào chỗ bạn đứng._
 chu_tiem_moi: Anh ca sĩ ơi! Hát tới câu "thích ăn chuối chiên" là em bấm pháo, anh cắt băng liền nha! Cắt trễ là xui cả năm đó!
-quan_ly_idol: Né pháo qua trái nha Phát. Năm ngoái em ăn nguyên một chùm kim tuyến vô miệng.
+quan_ly_idol: Né pháo qua trái nha {idol_het_thoi}. Năm ngoái em ăn nguyên một chùm kim tuyến vô miệng.
 * [✂️ Cầm kéo, hít sâu.]
 - -> END
 
@@ -124,7 +124,7 @@ it: Có hai cách. Anh gồng, hoặc em hạ tông. Chọn đi.
         _Bạn ngậm một viên kẹo. Mát cổ._
     }
     ~ phat_tt(3)
-* [🎚️ "Hạ tông giùm anh, Bảo."]
+* [🎚️ "Hạ tông giùm anh, {it}."]
     it: Ừ. Không ai biết đâu.
     ~ phat_tt(-5)
     ~ qh("it", 3)
@@ -139,7 +139,7 @@ _Một chữ "được" của {it} bằng một tràng pháo tay của người 
 ~ phat_co_keo_ngam = true
 ~ phat_nt(2)
 ~ cang_thang(-5)
-_{it} đưa bạn một hộp kẹo ngậm thông cổ mới. "Của anh Thái gửi. Ảnh dặn anh tập là sẽ cần."_
+_{it} đưa bạn một hộp kẹo ngậm thông cổ mới. "Của anh {quan_ly_idol} gửi. Ảnh dặn anh tập là sẽ cần."_
 ~ qh("quan_ly_idol", 2)
 -> END
 
@@ -208,7 +208,7 @@ _Quản lý quầy nhận hàng đi tới, mặt rất nghiêm._
 # noi:can_1808
 _Căn 1808. Đèn ring light mượn của {hong_hot}. Trên bàn là 20 gói cá viên chiên ăn liền của nhãn hàng nhỏ "Cá Viên Ông Tám"._
 _Luật: hát, đọc bình luận, chốt đơn đúng lúc. Không được để chết sóng quá 5 giây._
-hong_hot: *(nhắn)* Anh Phát, nhớ chào người xem bằng tên nha! Người ta thích được gọi tên lắm!
+hong_hot: *(nhắn)* Anh {idol_het_thoi}, nhớ chào người xem bằng tên nha! Người ta thích được gọi tên lắm!
 * [📱 Bấm "Phát trực tiếp".]
 - -> END
 

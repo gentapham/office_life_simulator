@@ -9,7 +9,7 @@ _6 giờ 40. Xe khách đi Vũng Tàu. {dan_dau_tu} đứng ở cửa xe, giơ �
 dan_dau_tu: Ngày Quốc tế Xóa nghèo! Hồng Coin x10! Từ nay anh thoát nghèo! Tối nay anh bao cả đoàn hải sản!
 _Cả xe vỗ tay. Bạn không vỗ. Bạn nhìn {dan_dau_tu} như nhìn một con cá vừa tự nhảy lên thớt._
 _Hôm nay là ngày duy nhất trong năm ông ấy "giàu"._
-* [💁 "Anh Chương. Tin chị đi, hôm nay mà anh trả đủ 5 triệu thì coin của anh sẽ x100."]
+* [💁 "Anh {dan_dau_tu}. Tin chị đi, hôm nay mà anh trả đủ 5 triệu thì coin của anh sẽ x100."]
     { RANDOM(1, 10) <= 4:
         dan_dau_tu: *(nghĩ 5 giây)* X100… sòng phẳng thì vũ trụ thưởng… Được! *(bán một ít coin, chuyển khoản)*
         ~ sl_chuong_tra(sl_no_chuong)
@@ -21,7 +21,7 @@ _Hôm nay là ngày duy nhất trong năm ông ấy "giàu"._
         ~ sl_chuong_tra(500000)
         _Ông chuyển 500 nghìn "lấy hên". Còn lại vẫn nằm trong đồng coin mang tên một người đội mũ hồng._
     }
-* [🤝 "Anh Chương, bán đi anh. Bán ngay hôm nay. Em nói thật đó, không phải phét."]
+* [🤝 "Anh {dan_dau_tu}, bán đi anh. Bán ngay hôm nay. Em nói thật đó, không phải phét."]
     ~ sl_that_long()
     dan_dau_tu: *(khựng lại)* Em nói thật hả? Em mà nói thật là lạ đó.
     { RANDOM(1, 10) <= 6:
@@ -54,7 +54,7 @@ _{hr} đang cầm loa điểm danh trò kéo co lần thứ 3._
     ~ qh("designer", 8)
     ~ qh("hr", 5)
     ~ nghi(-10)
-* [😶 "Chị Quỳnh, tối về rồi làm. Ở đây đông người lắm."]
+* [😶 "Chị {designer}, tối về rồi làm. Ở đây đông người lắm."]
     designer: *(thở dài)* Ừ… em nói đúng.
     ~ qh("designer", -3)
 - -> END
@@ -82,7 +82,7 @@ _Rượu chạy lên má. Lưỡi bạn nhẹ như bong bóng._ # hen_gio:6
     ~ sl_that_long()
     _Ngày mai, khi nghe kể lại, {idol_het_thoi} sẽ nhìn bạn khác đi._
 * {not sl_goi_y_phat} [🎤 "Mình có anh {idol_het_thoi} mà sếp."]
-    giam_doc: Phát à? *(cười buồn)* Phát giờ hát đám cưới thôi em ạ.
+    giam_doc: {idol_het_thoi} à? *(cười buồn)* {idol_het_thoi} giờ hát đám cưới thôi em ạ.
     ~ qh("idol_het_thoi", 5)
 * [😶 Gắp con mực bỏ vào chén sếp: "Sếp ăn đi, mai tính."]
     giam_doc: Ừ… mai tính. *(quay sang bàn bên)* Các em! Anh tăng lương cả công ty!
@@ -178,7 +178,7 @@ dan_dau_tu: Đáy… đáy thật rồi. Lần này là đáy thật.
     dan_dau_tu: *(nhận chai nước)* {sales}… anh xin lỗi. Nợ em, anh sẽ trả. Không phải bằng coin.
     ~ qh("dan_dau_tu", 10)
     ~ sl_that_long()
-* [📈 "Anh Chương, đáy này có mấy tầng nữa anh?"]
+* [📈 "Anh {dan_dau_tu}, đáy này có mấy tầng nữa anh?"]
     dan_dau_tu: *(cười khổ)* Em hỏi câu này đau hơn cả biểu đồ.
     ~ qh("dan_dau_tu", -3)
 * [💁 "Tin chị đi, mai nó lên lại."]
@@ -191,7 +191,7 @@ dan_dau_tu: Đáy… đáy thật rồi. Lần này là đáy thật.
 === sales_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao
 _Thứ 2. Họp giao ban. Không ai nhìn mặt ai. {giam_doc} giả vờ không biết có clip hứa tăng lương._
-giam_doc: Ngày mai sinh nhật công ty 16 tuổi. Hương lo tiệc. Quỳnh lo logo. Còn {sales}… em lo cho có nhà tài trợ đến chúc mừng nhé.
+giam_doc: Ngày mai sinh nhật công ty 16 tuổi. {chi_dai} lo tiệc. {designer} lo logo. Còn {sales}… em lo cho có nhà tài trợ đến chúc mừng nhé.
 { sl_hua_ca_si:
     chi_dai: *(khoanh tay)* Còn ca sĩ nổi tiếng nhất nước thì sao em?
     _Cả phòng quay sang. Bạn cảm thấy bong bóng phình thêm trong ngực._

@@ -93,7 +93,7 @@ _Ở penthouse, bạn sẽ đóng cửa kính, bật máy lọc không khí. Ở
 _Bạn bấm ghi âm. Tiếng ông chú hát. Tiếng xe máy. Tiếng bà Tư la ai đó quên tắt đèn. Tiếng một con chó sủa cuối hẻm._
 _Bạn mỉm cười. Bài thứ hai sẽ bắt đầu từ đây._
 { qh_thuc_tap_sinh >= 40:
-    _Điện thoại rung. {thuc_tap_sinh} nhắn: "Dạ anh Long, em ở phòng 12 dãy B, cách anh 3 cửa ạ. Mai mình đi làm chung nha anh ạ."_
+    _Điện thoại rung. {thuc_tap_sinh} nhắn: "Dạ anh {con_ong_chau_cha}, em ở phòng 12 dãy B, cách anh 3 cửa ạ. Mai mình đi làm chung nha anh ạ."_
 }
 -> END
 
@@ -130,7 +130,7 @@ _Tháng 11. Phòng Phó Giám đốc. Vách kính. Ghế da. Bảng tên mạ v�
 _Trên bàn có chứng chỉ "Quản Lý Có Tâm", đóng khung. Có một ly cà phê kem. Có một chồng giấy chờ ký, nút "Ký luôn cho lẹ" giờ là một cây bút thật._
 _Dưới gầm bàn là hộp đàn. Phủ một lớp bụi mỏng. Bạn không nhớ lần cuối mở nó là khi nào._
 _Cửa gõ nhẹ. {thuc_tap_sinh} bước vào, mặc y chang bộ vest bạn mặc hôm qua, hai tay bưng ly cà phê._
-thuc_tap_sinh: Dạ anh Long đỉnh quá ạ! Dạ… sếp Long đỉnh quá ạ!
+thuc_tap_sinh: Dạ anh {con_ong_chau_cha} đỉnh quá ạ! Dạ… sếp {con_ong_chau_cha} đỉnh quá ạ!
 _Bạn cười. Bạn nhận ly cà phê. Bạn nói "Chill đi anh Duy". Mọi thứ đều đúng như mọi khi._
 _Ngoài kia, ai đi qua cũng gật đầu: "Chào sếp."_
 _Trong đầu bạn, bạn vẫn nghe rõ, rất rõ, mọi người đang nói: "Cháu sếp."_
@@ -186,7 +186,7 @@ _Lần này chú bắt máy._
 _Im lặng. Rất lâu. Bạn nghe tiếng gió đầu dây bên kia. Có lẽ chú cũng đang đứng ngoài đường._
 con_ong_chau_cha: Chú ơi… thẻ cháu bị nuốt.
 _Im lặng tiếp. Rồi giọng chú, khàn đặc, giọng Bắc chưa bao giờ nghe mệt như vậy:_
-giam_doc: Chú cũng đang không biết gọi ai, Long ạ.
+giam_doc: Chú cũng đang không biết gọi ai, {con_ong_chau_cha} ạ.
 _Hai chú cháu cùng im lặng. Mỗi người một đầu dây._
 _Không ai cúp máy._
 _Cây ATM tắt màn hình, chuyển sang chế độ chờ. Ánh sáng xanh hắt lên mặt bạn. Trên kính, bạn thấy mình: một người 28 tuổi, chưa từng tự đứng một lần nào._

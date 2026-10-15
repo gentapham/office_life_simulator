@@ -8,7 +8,7 @@
 _10 giờ sáng. Fanpage công ty vừa đăng một video lạ: những đoạn dựng tay, tỉ mỉ, toàn cảnh {quan_ly_idol} cầm 2 điện thoại, ngủ gục trong xe, cười với {idol_het_thoi}. Dòng cuối: "Anh có biết là có người luôn nhìn anh không?"_
 _Video lên fanpage do lỗi xuất file. Người dựng là ai thì cả công ty đoán được trong 3 phút._
 _Cửa phòng HR mở. {editor} đứng đó, giữa ban ngày, mắt đỏ, không ngáp._
-editor: Anh Tuấn… em tự lên. Em biết là em sai quy trình đăng bài. Anh kỷ luật em đi.
+editor: Anh {hr}… em tự lên. Em biết là em sai quy trình đăng bài. Anh kỷ luật em đi.
 ~ hr_so_nguoi_tu_len = hr_so_nguoi_tu_len + 1
 * [🍵 "Ngồi đi em. Uống trà hoa cúc, cái hộp anh mua cho em hôm khám mắt đó. Rồi mình tính."]
     ~ hr_tra()
@@ -50,7 +50,7 @@ _Họp xong, {idol_het_thoi} ngồi lại một mình, kính đen trong phòng k
     ~ qh("idol_het_thoi", 10)
     ~ hr_nghe(5)
     ~ hr_so_nguoi_tu_len = hr_so_nguoi_tu_len + 1
-* [📋 "Ông Phát, mai họp đánh giá có gia hạn hợp đồng của ông. Ông chuẩn bị tinh thần."]
+* [📋 "Ông {idol_het_thoi}, mai họp đánh giá có gia hạn hợp đồng của ông. Ông chuẩn bị tinh thần."]
     idol_het_thoi: *(đeo kính lại)* Fan anh đông lắm em. Anh không lo.
     ~ hr_so(2)
 - -> END
@@ -62,7 +62,7 @@ _Ngày Internet Quốc tế. Wifi sập từ 6 giờ sáng. Máy chấm công v�
 _Bạn mang một cuốn sổ, một cây bút, một cái ghế đẩu, ngồi ở cổng cạnh {bac_bao_ve}. Chấm công bằng tay._
 ~ hr_dung_cong_29 = true
 bac_bao_ve: Cháu ngồi đây cả ngày à? Ghế đẩu đau lưng lắm đấy.
-hr: Dạ, hôm nay con làm Bác Bình một ngày.
+hr: Dạ, hôm nay con làm Bác {bac_bao_ve} một ngày.
 bac_bao_ve: Ừ. Thế thì nhìn cho kỹ.
 _7 giờ: {thuc_tap_sinh} tới đầu tiên, như mọi ngày, chào bác, chào bạn, chào cả {cho}. 7 giờ 40: {chi_dai}, xách theo hai hộp cơm, một hộp đưa {bac_bao_ve}. 8 giờ 03: {chua_te_deadline}… đi cửa trước. Lần đầu tiên._
 chua_te_deadline: Ủa sao anh ngồi đây? À wifi sập. Chill. Ghi em 8 giờ đúng nha. *(nháy mắt)*
@@ -86,12 +86,12 @@ _Một tờ giấy được đưa tới cho bạn. Chữ của {giam_doc}: "Mai 
     _{cho} ngậm giấy, chạy lên tầng 2, rồi đem tờ giấy về… ổ của mình dưới gầm cầu thang._
     ~ qh("cho", 3)
 * [✍️ Viết trả lời: "Anh ơi, mai cho em nói trước 5 phút, trước khi đọc danh sách."]
-    _Lần này bạn tự mang lên. 15 phút sau, giấy trả lời: "Ừ. 5 phút. Không họp lâu nhé. Đừng giống Nhật."_
+    _Lần này bạn tự mang lên. 15 phút sau, giấy trả lời: "Ừ. 5 phút. Không họp lâu nhé. Đừng giống {truong_phong}."_
     ~ qh("giam_doc", 3)
 - _Bạn quay về cổng. {bac_bao_ve} đang ghi tay một sổ nữa, cũ hơn sổ của bạn nhiều. Sổ ra vào 16 năm._
 bac_bao_ve: Bác ghi thế này từ năm 2010. Ai về muộn nhất, bác biết hết. Không ai biết bác biết.
 * [💬 "Bác ơi, ai hay về muộn nhất vậy bác?"]
-    bac_bao_ve: Thằng Lĩnh, thằng Bảo, cái Thương. Thắng nữa, dạo này. Và… cháu, mấy hôm cuối tuần trước.
+    bac_bao_ve: Thằng {editor}, thằng {it}, cái {ke_toan}. {giam_doc} nữa, dạo này. Và… cháu, mấy hôm cuối tuần trước.
     _Bạn không biết là bác để ý cả mình._
     ~ qh("bac_bao_ve", 5)
 * [🍵 Pha trà cho bác, ngồi im cùng bác.]
@@ -139,7 +139,7 @@ cho: Grừ… *(đứng chắn trước đống đồ, nhe răng)*
     cho: Gâu! *(vẫy đuôi, nằm đè lên đống đồ)*
     _Bạn dọn chỗ khác. Kho đồ của {cho} vẫn nằm đó, nguyên vẹn, đầy những thứ không ai biết đang tìm._
 * [🙋 Gọi {bac_bao_ve} ra hỏi: "Bác ơi, đống này của ai?"]
-    bac_bao_ve: Của Tuất. Nó nhặt từ khắp nơi. Cháu để yên đi. Có khi lại có ích.
+    bac_bao_ve: Của {cho}. Nó nhặt từ khắp nơi. Cháu để yên đi. Có khi lại có ích.
     ~ qh("bac_bao_ve", 5)
     ~ qh("cho", 5)
     _Bạn cầm chiếc găng tay hồng lên xem. Rồi đặt lại. {cho} nhìn bạn, như thể biết bạn vừa tha cho nó._
@@ -179,7 +179,7 @@ chi_dai: Pha trà đi. Tui uống trước rồi tụi nhỏ mới dám vô.
     ~ qh("chi_dai", 3)
     _{chi_dai} uống một ngụm, gật đầu với {thuc_tap_sinh}. Em nó mới dám bước vào._
 * [💬 "Hai người lên đây không sợ hả?"]
-    chi_dai: Tui chưa bao giờ sợ ông. Nhỏ Duy thì đang tập.
+    chi_dai: Tui chưa bao giờ sợ ông. Nhỏ {thuc_tap_sinh} thì đang tập.
     thuc_tap_sinh: Dạ… em tập được nửa rồi ạ.
     ~ hr_nghe(2)
 - -> END
@@ -236,7 +236,7 @@ _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi 
 * [📢 Đọc.]
     ~ hr_hanh_dong_3010 = "doc"
     { hr_tu_ghi_ten_minh:
-        hr: Phương án tái cấu trúc có một tên. Tuấn. Phòng nhân sự tự cắt phòng nhân sự.
+        hr: Phương án tái cấu trúc có một tên. {hr}. Phòng nhân sự tự cắt phòng nhân sự.
         _Im lặng tuyệt đối. Rồi {chi_dai} đứng bật dậy, mắt đỏ hoe. Rồi {ke_toan}. Rồi cả phòng._
         ~ hr_nghe(10)
         ~ hr_so(-20)
@@ -248,7 +248,7 @@ _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi 
 * [✂️ Xé.]
     ~ hr_hanh_dong_3010 = "xe"
     _Bạn xé tập hồ sơ làm đôi. Tiếng giấy rách to như một tiếng sét trong phòng họp kín._
-    giam_doc: Tuấn!
+    giam_doc: {hr}!
     hr: Anh không ép, tùy em. Em chọn xé.
     ~ qh("giam_doc", -10)
     ~ hr_so(-10)
@@ -266,7 +266,7 @@ _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi 
 # ngay:31 # gio:19:00 # noi:san_khau_dem_hong # bat_buoc
 _Đêm Hồng Halloween. Sân khấu Đêm Hồng, Phường Tân Drama. Bạn đứng ở cổng soát vé, bên cạnh một bình trà lớn, 20 lít, và một chồng ly giấy cam có chữ G sặc sỡ._
 _{giam_doc} đi ngang, hóa trang "Ông Kẹ Ngân Hàng": áo vest, tay cầm cuốn sổ nợ giả. Không ai cười. Ai cũng thấy hơi… thật._
-giam_doc: Tuấn. Pha cho anh một ly. Loại gì cũng được.
+giam_doc: {hr}. Pha cho anh một ly. Loại gì cũng được.
 * [🍵 Trà sen. Trà của lần đầu tiên bạn pha cho cả công ty hôm 1/10.]
     giam_doc: *(uống)* Ừ. Ngon. Anh uống trà của em 7 năm mà chưa bao giờ khen.
     ~ qh("giam_doc", 5)

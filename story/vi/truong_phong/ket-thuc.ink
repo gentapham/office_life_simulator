@@ -65,7 +65,7 @@ _Bấm gửi._
 _Mười giây. Hai mươi giây. Ngoài vách kính, từng người cúi xuống điện thoại._
 _Rồi {thuc_tap_sinh} đứng dậy trước tiên. Rồi {designer}. Rồi {chua_te_deadline}, vẫn cầm điện thoại. Cả phòng Sản xuất đứng dậy vỗ tay._
 _{editor} tỉnh dậy, không hiểu chuyện gì, vỗ tay theo, mắt vẫn nhắm._
-giam_doc: *(gõ cửa, ló đầu vào)* Nhật. Họp nhanh 5 phút không?
+giam_doc: *(gõ cửa, ló đầu vào)* {truong_phong}. Họp nhanh 5 phút không?
 truong_phong: Dạ… anh không ép, tùy em ạ.
 giam_doc: *(bật cười)* Thằng này. Học nhanh thật.
 _Bạn mở quyển sổ kẻ ô, trang đầu tiên của tháng 11. Bạn viết một dòng, rồi gạch chân hai lần:_
@@ -78,8 +78,8 @@ _Rồi bạn gạch chữ "tốt nhất", viết lại: "đáng nhớ nhất". C
 === truong_phong_kt_dao_dien_that ===
 # noi:san_khau_dem_hong
 _Đêm Hồng kết thúc. Pháo giấy hồng còn bay lả tả. Màn hình lớn chạy credits, chậm rãi, từng dòng một._
-_"Đạo diễn: Nhật."_
-_"Dựng phim: Lĩnh."_
+_"Đạo diễn: {truong_phong}."_
+_"Dựng phim: {editor}."_
 _Hai dòng. To bằng nhau. Cùng một kiểu chữ. Ở góc dưới khung hình, một con cú nhỏ đeo tai nghe chớp mắt đúng một lần._
 { tp_biet_linh_la_cu_dem:
     _Khán giả không ai để ý. Bạn để ý. Bạn biết con cú đó ở đó vì ai._
@@ -131,7 +131,7 @@ _Ba người ăn bánh mì trên bậc thềm sân thượng. Không ai nhắc t
 # noi:phong_dung_phim
 _Phòng họp tầng 2 chật kín. Người ta mang cả ghế từ pantry lên. Ở giữa phòng là cái máy dựng, kéo từ phòng {editor} sang._
 _{giam_doc} khoanh tay đứng cạnh. {thanh_ninh} cầm sổ. {hong_hot} cầm điện thoại, đèn đỏ đang quay._
-giam_doc: Nhật. Em mở cho anh xem em làm thế nào.
+giam_doc: {truong_phong}. Em mở cho anh xem em làm thế nào.
 _Con trỏ nhấp nháy trên timeline. Hàng chục dải màu xếp chồng lên nhau như sơ đồ của bạn, chỉ khác là lần này bạn không hiểu gì._
 _Mười giây._
 _Bạn đặt tay lên chuột. Chuột lạnh._
@@ -192,7 +192,7 @@ _Bạn tỉnh dậy ở Phòng khám Khỏe Re. Đèn trắng. Mùi cồn. Ngoà
 bac_si_khoe_re: Kiệt sức. Thiếu ngủ. Thiếu nước. Thiếu… ừm, thiếu khoảng trống trong lịch. Lần đầu tôi ghi chẩn đoán này đấy.
 _Điện thoại trên đầu giường sáng lên. 14 lời mời họp mới._
 _Bạn mở ra xem người gửi._
-_Người gửi: Nhật._
+_Người gửi: {truong_phong}._
 _Bạn nằm nhìn trần nhà rất lâu. Rồi bạn bấm "Từ chối". Từng cái một. Mười bốn lần._
 _Đó là cuộc họp ngắn nhất bạn từng chủ trì._
 -> END

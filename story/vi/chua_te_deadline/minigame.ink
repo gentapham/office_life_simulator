@@ -185,7 +185,7 @@ dan_dau_tu: Đây là… điều chỉnh kỹ thuật. Ván sau anh lấy lại.
 ~ tien_cong(50000)
 ~ uong(20)
 ~ qh("dan_dau_tu", 3)
-_Bạn uống luôn chai nước ngọt tại bàn. Thắng một ván bida có vị ngọt như thắng một deadline._
+_Bạn uống luôn chai nước ngọt tại bàn. {giam_doc} một ván bida có vị ngọt như thắng một deadline._
 -> END
 
 === chua_te_deadline_mg_bida_that_bai ===

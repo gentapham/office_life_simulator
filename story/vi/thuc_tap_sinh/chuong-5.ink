@@ -52,7 +52,7 @@ _Góc dưới, ô "Phê duyệt": Trưởng phòng Tín dụng, D. Một chữ k
 _Ngày đáo hạn: 15/11/2026._
 ~ duy_thay_chu_ky = true
 ~ phat_hien(the_chap_biet_thu)
-ke_toan: Duy, xếp xong chưa em? Đoàn đòi hồ sơ năm 2024 kìa.
+ke_toan: {thuc_tap_sinh}, xếp xong chưa em? Đoàn đòi hồ sơ năm 2024 kìa.
 * [😶 Xếp vào đúng chỗ, không nói gì.]
     _Bí mật giữ nguyên. Tờ giấy nằm đúng thứ tự, đúng thẻ màu. Chỉ có tay bạn là không đúng thứ tự nữa._
     ~ cang_thang(20)
@@ -70,7 +70,7 @@ ke_toan: Duy, xếp xong chưa em? Đoàn đòi hồ sơ năm 2024 kìa.
     ~ duy_lo(15)
     ~ qh("ke_toan", 10)
 * [📞 Ra hành lang, gọi cho sếp cũ ở ngân hàng.]
-    _"Alo, anh Tư ạ… Dạ em Duy… Dạ em hỏi khoản vay thế chấp biệt thự số 1 Đồi Ngân Hàng, có cách nào giãn không anh?"_
+    _"Alo, anh Tư ạ… Dạ em {thuc_tap_sinh}… Dạ em hỏi khoản vay thế chấp biệt thự số 1 Đồi Ngân Hàng, có cách nào giãn không anh?"_
     _Sếp cũ cười: "Mày hỏi khoản đó làm gì? À mà mày về đi. Ghế phó giám đốc chi nhánh còn trống. Chủ nhật anh gọi lại."_
     ~ duy_kn(3)
     ~ duy_lo(5)
@@ -182,7 +182,7 @@ cho: … *(vẫy đuôi một lần, rất chậm)* # hen_gio:5
     ~ follow(5000)
 * [🙈 Quay đi… 3 giây.]
     _1 giây. 2 giây. 3 giây. Tiếng "BỘP". Bánh kem hồng phủ kín {cho}. Livestream 40 nghìn người xem vừa thấy cảnh đẹp nhất năm._
-    sieu_nhan_hong: *(nằm luôn xuống sàn, cười, chơi với {cho})* Trời ơi Tuất! Em hồng hơn anh rồi!
+    sieu_nhan_hong: *(nằm luôn xuống sàn, cười, chơi với {cho})* Trời ơi {cho}! Em hồng hơn anh rồi!
     ~ follow(30000)
     ~ qh("cho", 15)
 * [⏱️ (Không chọn kịp)]

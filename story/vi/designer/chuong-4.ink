@@ -21,7 +21,7 @@ _Cả xe vỗ tay. {chi_dai} nhìn {dan_dau_tu} như nhìn một quả bom đã 
 * [🎨 Ngồi phác thảo cảnh biển qua cửa kính.]
     ~ ds_toi(5)
     bien_kich: *(ghế sau, ngó qua)* Biển này buồn ghê. Cho tui mượn làm mở đầu chương 3 nha.
-    designer: Chương 3 của cái gì bà?
+    designer: {dan_dau_tu} 3 của cái gì bà?
     bien_kich: *(giật mình)* Của… kịch bản. Trò chơi. Tối nay.
 * [💬 Hỏi {dan_dau_tu}: "Anh ơi, x10 rồi bán chưa?"]
     dan_dau_tu: Bán là thua em ơi. Lần này là lên thật. X100.
@@ -50,7 +50,7 @@ _31 cánh tay giơ lên. Không ai để ý bạn lẻn đi. Bạn biết tiền
 * [🧡 Ngồi đó 10 phút, rồi gập máy, quay lại bãi cát chơi kéo co.]
     ~ ds_cam(10)
     ~ nghi(-5)
-    _Bạn kéo co đội {chi_dai}. Thắng. {chi_dai} vỗ lưng bạn đau điếng._
+    _Bạn kéo co đội {chi_dai}. {giam_doc}. {chi_dai} vỗ lưng bạn đau điếng._
     chi_dai: Tay vẽ mà kéo khỏe ghê ta!
     ~ qh("chi_dai", 5)
 - -> END
@@ -175,7 +175,7 @@ la_chuoi: Chủ nhật rồi đó em.
 === designer_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao
 _Thứ 2. Họp giao ban. Không ai nhìn mặt ai. {giam_doc} giả vờ không biết có clip hứa tăng lương._
-giam_doc: Ngày mai là sinh nhật công ty 16 tuổi! Anh cần một logo kỷ niệm 16 năm. Hương lo tiệc, {designer} lo logo.
+giam_doc: Ngày mai là sinh nhật công ty 16 tuổi! Anh cần một logo kỷ niệm 16 năm. {chi_dai} lo tiệc, {designer} lo logo.
 chi_dai: *(khoanh tay)* Tiệc thì có. Tăng lương thì sao anh?
 giam_doc: À… cái đó… mình họp sau nhé.
 _{truong_phong} gật gù, ghi chép "họp sau" vào sổ, gạch chân 2 lần._

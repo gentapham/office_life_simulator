@@ -7,7 +7,7 @@
 # ngay:28 # gio:09:30 # noi:tang_1 # bat_buoc
 _9 giờ 20, fanpage công ty đăng một video lạ: 3 phút toàn cảnh {quan_ly_idol} ngủ gục trên xe, cầm hai điện thoại, đắp áo cho {idol_het_thoi}. Cuối video: "Em thích anh lâu rồi."_
 _{editor} xuất nhầm lên fanpage. Gỡ sau 4 phút. Quá muộn._
-_Cùng lúc, {dan_dau_tu} đứng bật dậy: "Bộ lọc của tui lần ra 80 nghìn tài khoản ảo. Tất cả comment 'Anh Phát đỉnh nóc kịch trần'."_
+_Cùng lúc, {dan_dau_tu} đứng bật dậy: "Bộ lọc của tui lần ra 80 nghìn tài khoản ảo. Tất cả comment 'Anh {idol_het_thoi} đỉnh nóc kịch trần'."_
 _Cả tầng 1 rối như tơ vò. Bạn đứng giữa, tay cầm xấp giấy photo._
 * [☕ Pha một ly cà phê đen đá không đường, để lên bàn {editor}, không nói gì.]
     editor: *(nhìn ly cà phê)* … Em biết tui uống gì hả. Cảm ơn.
@@ -34,7 +34,7 @@ _14 giờ. {giam_doc} ngồi ôm đầu: Đêm Hồng thiếu tiền làm sân k
 }
 _Bạn đứng ngoài cửa. Giờ thì cả công ty đã biết, hoặc gần như biết, bạn là ai. Không còn gì để giấu nữa._
 * [🔒 Gõ cửa: "Dạ anh, em gọi ngân hàng cũ thử, họ có gói tài trợ 'Thẻ Hồng' cho sự kiện giới trẻ ạ."]
-    _Bạn gọi. Bật loa ngoài. "Anh Tư ạ, em Duy. Bên mình có muốn tài trợ thẻ đồng thương hiệu cho đêm diễn của Siêu Nhân Hồng không ạ? Khán giả 20 nghìn, top xu hướng."_
+    _Bạn gọi. Bật loa ngoài. "Anh Tư ạ, em {thuc_tap_sinh}. Bên mình có muốn tài trợ thẻ đồng thương hiệu cho đêm diễn của Siêu Nhân Hồng không ạ? Khán giả 20 nghìn, top xu hướng."_
     _20 phút. Sếp cũ gọi lại: "300 triệu. Logo thẻ hồng trên backdrop. Mày làm đầu mối."_
     giam_doc: *(đứng dậy)* 300… 300 triệu?
     ~ duy_the_hong = true
@@ -112,7 +112,7 @@ _Một tờ giấy mới tới, chữ của {ke_toan}: "Gửi {thuc_tap_sinh}. H
     ~ qh("ke_toan", 10)
     ~ duy_kn(5)
 * [🍵 Ngồi phụ bác chuyển giấy một lúc.]
-    _Bạn với bác ngồi phân giấy. Bác đọc từng tờ, chậm rãi, như đọc thư. Có tờ của {chua_te_deadline} gửi {it}: "Cue 12 Tuất ăn mất rồi, gửi lại giùm."_
+    _Bạn với bác ngồi phân giấy. Bác đọc từng tờ, chậm rãi, như đọc thư. Có tờ của {chua_te_deadline} gửi {it}: "Cue 12 {cho} ăn mất rồi, gửi lại giùm."_
     bac_bao_ve: Cháu biết không, có những người ở xa, bác cũng chuyển thư như thế này. Họ tin bác. Bác cũng tin cháu.
     ~ qh("bac_bao_ve", 10)
 - -> END

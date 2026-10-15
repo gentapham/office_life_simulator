@@ -175,7 +175,7 @@ bac_bao_ve: Cháu {sales}. Có giấy cho cháu.
     bac_bao_ve: Ừ. *(rót trà)* Dạo này cháu nói ít đi. Bác nghe dễ chịu hơn.
     ~ uong(30)
     ~ qh("bac_bao_ve", 8)
-* [📝 Viết giấy gửi {designer}: "Chị Quỳnh, tối nay ăn ốc, em bao bằng tiền thật."]
+* [📝 Viết giấy gửi {designer}: "Chị {designer}, tối nay ăn ốc, em bao bằng tiền thật."]
     _Năm phút sau, giấy trả lời: một hình vẽ con cá voi hồng giơ ngón cái._
     ~ qh("designer", 5)
 - -> END
@@ -298,15 +298,15 @@ _{sieu_nhan_hong} bước ra giữa sân khấu. Cả quảng trường hét lê
 _23 giờ 30. Quảng trường vắng dần. Bạn ngồi trên bậc sân khấu, giày cao gót cầm tay. {designer} ngồi xuống cạnh, đưa bạn một hộp sữa chua._
 designer: Hồng Hào. Hàng tài trợ. Còn dư 200 hộp.
 { sl_ky_sua_chua:
-    sales: Chị Quỳnh. Lần đầu tiên em ký được cái gì thật.
+    sales: Chị {designer}. Lần đầu tiên em ký được cái gì thật.
     designer: Chị biết. Chị thấy em khóc ở vỉa hè Sống Ảo.
     sales: Chị thấy hả?!
-    designer: Chị không thấy gì đâu. *(cười)* Câu của Bác Bình.
+    designer: Chị không thấy gì đâu. *(cười)* Câu của Bác {bac_bao_ve}.
 - else:
-    sales: Chị Quỳnh. Em mệt quá.
+    sales: Chị {designer}. Em mệt quá.
     designer: Ừ. Ăn sữa chua đi. Mệt thì ăn.
 }
-* [😇 "Chị Quỳnh… mai mình làm gì?"]
+* [😇 "Chị {designer}… mai mình làm gì?"]
     designer: Mai chủ nhật. Mai ngủ.
     sales: Còn mốt?
     designer: Mốt tính. Slogan công ty mà.

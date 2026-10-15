@@ -91,7 +91,7 @@ _Trang 3: ngày ra MV ghi 19/10, không phải 9/10. Trang 7: ngân sách thừa
 ~ long_tl(5)
 ~ nhan(banh_mi)
 ~ an(20)
-thuc_tap_sinh: *(gõ cửa, cầm ổ bánh mì)* Dạ… mừng anh Long làm việc ạ!
+thuc_tap_sinh: *(gõ cửa, cầm ổ bánh mì)* Dạ… mừng anh {con_ong_chau_cha} làm việc ạ!
 truong_phong: *(đi ngang, liếc vào bản kế hoạch đầy chữ đỏ)* …Cậu đọc thật à?
 con_ong_chau_cha: Ừ. Trang 7 thừa số 0 đó, phòng ông làm.
 _{truong_phong} đứng im ba giây. Rồi gật đầu. Lần đầu tiên._
@@ -201,7 +201,7 @@ _20/20 câu. Toàn bộ đáp án đúng là câu của chú. Bạn được c�
 ~ tien_cong(100000)
 ~ long_co_banh_pia = true
 ~ an(15)
-thanh_ninh: *(gửi kèm hộp bánh pía)* Chúc mừng em nha Long! Anh Thắng khen em quá trời!
+thanh_ninh: *(gửi kèm hộp bánh pía)* Chúc mừng em nha {con_ong_chau_cha}! Anh {giam_doc} khen em quá trời!
 _Bạn treo chứng chỉ lên bàn. Rồi nhìn nó. Rồi lật úp lại. Rồi lật lên. Bạn không biết mình tự hào hay ngại._
 -> END
 
@@ -210,6 +210,6 @@ _Bạn treo chứng chỉ lên bàn. Rồi nhìn nó. Rồi lật úp lại. R�
 _Bạn chọn đáp án A ở câu 1: "Đồng ý tăng lương". Sai. Câu 7: "Nhân viên khóc ở sân thượng, em làm gì?" Bạn chọn "Ngồi xuống nghe". Sai. Đáp án đúng: "Gửi email nhắc giờ làm"._
 ~ cang_thang(5)
 ~ long_tl(3)
-giam_doc: *(đọc bài, nhíu mày)* Long. Cháu trả lời như… nhân viên ấy.
+giam_doc: *(đọc bài, nhíu mày)* {con_ong_chau_cha}. Cháu trả lời như… nhân viên ấy.
 _Bạn trượt khóa quản lý của chú. Lạ là bạn thấy mình trả lời đúng._
 -> END

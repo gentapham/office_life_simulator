@@ -10,10 +10,10 @@
 _Họp giao ban đầu tuần. Theo lịch: 30 phút. Theo kinh nghiệm: 2 tiếng._
 ~ tp_hop(1)
 _{thuc_tap_sinh} bước vào, ôm một bó hoa to hơn cả người. Hôm nay là Ngày Nhà giáo Thế giới._
-thuc_tap_sinh: Dạ em kính tặng thầy Nhật ạ! Cảm ơn thầy đã dạy em… dạ… cách họp ạ!
+thuc_tap_sinh: Dạ em kính tặng thầy {truong_phong} ạ! Cảm ơn thầy đã dạy em… dạ… cách họp ạ!
 _Một thực tập sinh lớn hơn bạn 2 tuổi vừa gọi bạn là "thầy". Cả phòng nín cười._
-* [😇 Nhận hoa: "Cảm ơn Duy. Nhưng gọi anh thôi… à, gọi tên thôi cũng được."]
-    thuc_tap_sinh: Dạ… dạ thầy… dạ anh… dạ Nhật ạ.
+* [😇 Nhận hoa: "Cảm ơn {thuc_tap_sinh}. Nhưng gọi anh thôi… à, gọi tên thôi cũng được."]
+    thuc_tap_sinh: Dạ… dạ thầy… dạ anh… dạ {truong_phong} ạ.
     ~ qh("thuc_tap_sinh", 8)
     _Ba cách gọi trong một câu. Không ai thắng._
 * [📅 "Cảm ơn em. Mình đưa mục 'tặng hoa' vào biên bản họp luôn nhé."]
@@ -21,9 +21,9 @@ _Một thực tập sinh lớn hơn bạn 2 tuổi vừa gọi bạn là "thầy
     ~ qh("thuc_tap_sinh", 3)
     chua_te_deadline: *(thì thầm)* Ổng biên bản luôn cái bó hoa…
     ~ qh("chua_te_deadline", -2)
-* [🤭 "Thế em có mang hoa cho anh Lĩnh không? Anh ấy mới là người dạy anh… à, dạy cả phòng."]
+* [🤭 "Thế em có mang hoa cho anh {editor} không? Anh ấy mới là người dạy anh… à, dạy cả phòng."]
     _{editor} đang ngủ gật bỗng mở một mắt._
-    thuc_tap_sinh: Dạ có ạ! Em để trên bàn dựng của anh Lĩnh rồi ạ!
+    thuc_tap_sinh: Dạ có ạ! Em để trên bàn dựng của anh {editor} rồi ạ!
     ~ qh("editor", 5)
     ~ tp_lo(2)
 - _Cuối bàn, {con_ong_chau_cha} ngồi họp đủ 2 tiếng. Lần đầu tiên. Trước mặt là cuốn sách "Khóa Quản Lý Có Tâm" do {giam_doc} giao._
@@ -45,7 +45,7 @@ con_ong_chau_cha: *(lẩm bẩm)* "Nhân viên xin tăng lương, em nói gì?"�
 # ngay:6 # gio:09:30 # noi:studio_tang_2 # bat_buoc
 ~ tp_lich_co_dinh()
 _Buổi chụp poster đầu tiên. Đèn studio sáng trưng. {sieu_nhan_hong} tạo dáng thứ 47._
-designer: Anh Nhật, cho em xin feedback cụ thể được hông? "Hồng hơn nữa" là hồng cỡ nào ạ?
+designer: Anh {truong_phong}, cho em xin feedback cụ thể được hông? "Hồng hơn nữa" là hồng cỡ nào ạ?
 _Đúng lúc đó, điện thoại của {sieu_nhan_hong} reo. Ngoài cửa sổ, một bà cụ đánh rơi cả giỏ cam giữa đường._
 sieu_nhan_hong: Biến hình! Điều khoản số 3 nha mọi người! Anh đi chút về liền!
 _{sieu_nhan_hong} lao ra cửa, áo choàng hồng bay phấp phới._ # hen_gio:6
@@ -57,7 +57,7 @@ _{sieu_nhan_hong} lao ra cửa, áo choàng hồng bay phấp phới._ # hen_gio
     ~ qh("sieu_nhan_hong", 8)
     ~ tp_quay_ba_cu = true
     _Bạn có đoạn phim {sieu_nhan_hong} nhặt từng quả cam, bóc một quả cho bà cụ ăn._
-* [☕ "Cả đoàn nghỉ 30 phút. Duy, mua nước cho mọi người."]
+* [☕ "Cả đoàn nghỉ 30 phút. {thuc_tap_sinh}, mua nước cho mọi người."]
     ~ tp_ca_phong(5)
     ~ qh("designer", 3)
     _Cả đoàn ngồi bệt xuống sàn studio. {designer} lần đầu tiên trong tuần được uống nước mà không ai hỏi "xong chưa"._
@@ -68,7 +68,7 @@ _{sieu_nhan_hong} lao ra cửa, áo choàng hồng bay phấp phới._ # hen_gio
     _Cuộc họp về "tình huống phát sinh" kéo dài tới khi {sieu_nhan_hong} quay lại. Rồi kéo dài thêm 20 phút._
 * [⏱️ (Không chọn kịp)]
     _Bạn đứng giữa studio, tay cầm tờ kịch bản, miệng mở mà không nói được gì._
-    designer: Anh Nhật… anh ổn hông?
+    designer: Anh {truong_phong}… anh ổn hông?
     ~ cang_thang(5)
 - -> END
 
@@ -77,7 +77,7 @@ _{sieu_nhan_hong} lao ra cửa, áo choàng hồng bay phấp phới._ # hen_gio
 # ngay:6 # gio:16:30 # noi:phong_san_xuat
 _Chiều. Một clip quay bằng điện thoại của người qua đường đang lan khắp Tóp-tóp: Siêu Nhân Hồng nhặt cam cho bà cụ._
 ~ follow(30000)
-hong_hot: Ét o ét! Clip bà cụ lên xu hướng rồi anh Nhật! Lượt xem đang nhảy như chạy KPI!
+hong_hot: Ét o ét! Clip bà cụ lên xu hướng rồi anh {truong_phong}! Lượt xem đang nhảy như chạy KPI!
 dan_dau_tu: *(ló đầu qua vách ngăn)* Số liệu cho thấy: đăng thêm góc quay khác trong 3 tiếng tới thì lượt xem nhân ba. Không phải coin đâu, lần này là số thật.
 * [📈 "Lĩnh, dựng ngay bản 60 giây từ máy quay của anh. Đăng trước 19 giờ."]
     { tp_quay_ba_cu:
@@ -107,7 +107,7 @@ dan_dau_tu: *(ló đầu qua vách ngăn)* Số liệu cho thấy: đăng thêm 
 ~ tp_lich_co_dinh()
 _Mốc 1 của chiến dịch: 50.000 người theo dõi. {giam_doc} gọi bạn lên phòng._
 { nguoi_theo_doi >= 50000:
-    giam_doc: Qua mốc rồi! Nhật, anh thấy phòng em chạy tốt đấy. Cứ giữ cái energy này.
+    giam_doc: Qua mốc rồi! {truong_phong}, anh thấy phòng em chạy tốt đấy. Cứ giữ cái energy này.
     ~ tp_ghe(3)
     _Trên bàn {giam_doc} có một tấm ảnh {giam_doc} chụp với ai đó mặc vest, mặt bị che bởi lọ hoa._
 - else:
@@ -116,7 +116,7 @@ _Mốc 1 của chiến dịch: 50.000 người theo dõi. {giam_doc} gọi bạn
     ~ cang_thang(15)
     ~ nghi(-20)
 }
-giam_doc: Mà này. Ghế Phó Giám đốc, anh chưa quyết đâu. Long nó cũng… có tiềm năng.
+giam_doc: Mà này. Ghế Phó Giám đốc, anh chưa quyết đâu. {con_ong_chau_cha} nó cũng… có tiềm năng.
 * [🪑 "Dạ, em sẽ cho anh thấy bằng kết quả ạ."]
     giam_doc: Tốt. Anh thích người nói ít làm nhiều. *(ngừng)* Mà em nói cũng hơi nhiều đấy.
     ~ tp_ghe(2)
@@ -135,7 +135,7 @@ giam_doc: Mà này. Ghế Phó Giám đốc, anh chưa quyết đâu. Long nó c
 ~ tp_lich_co_dinh()
 _Ngày Thị giác Thế giới. {hr} bắt {editor} đi khám mắt. Phòng dựng trống không. Còn đúng một ngày nữa là ra MV._
 _Trên màn hình, timeline MV đang mở. Bản dựng còn thiếu cảnh cuối. Con trỏ nhấp nháy._
-* [🛠️ Ngồi vào ghế của Lĩnh, thử kéo một đoạn clip.]
+* [🛠️ Ngồi vào ghế của {editor}, thử kéo một đoạn clip.]
     { tp_tay_nghe >= 5:
         _Bạn nhớ phím C. Bạn cắt được một đoạn. Bạn kéo nó vào đúng chỗ. Tim đập như vừa ghi bàn._
         ~ tp_tn(5)
@@ -148,7 +148,7 @@ _Trên màn hình, timeline MV đang mở. Bản dựng còn thiếu cảnh cu�
     chua_te_deadline: Còn sớm mà anh. Mai mới ra mà. Chill.
     ~ qh("chua_te_deadline", -3)
     ~ cang_thang(5)
-* [🤝 Mua một hộp thuốc nhỏ mắt và mì ly, đặt sẵn lên bàn Lĩnh.]
+* [🤝 Mua một hộp thuốc nhỏ mắt và mì ly, đặt sẵn lên bàn {editor}.]
     ~ tien_cong(-45000)
     ~ qh("editor", 8)
     _Chiều, {editor} về, thấy hộp thuốc và ly mì. Không nói gì. Nhưng bạn nghe tiếng bàn phím gõ nhanh hơn thường lệ._
@@ -175,7 +175,7 @@ _Giọng người hướng dẫn ngái ngủ: "Mấy bạn nhớ nha, render xon
 # ngay:9 # gio:06:30 # noi:phong_dung_phim # bat_buoc
 ~ tp_lich_co_dinh()
 _6 giờ 30 sáng ngày ra MV. {editor} ngồi đó từ hôm qua, mắt đỏ như đèn ghi hình._
-editor: *(ngáp)* Anh Nhật… file credits đây. Anh duyệt rồi em… render. Render xong là xong.
+editor: *(ngáp)* Anh {truong_phong}… file credits đây. Anh duyệt rồi em… render. Render xong là xong.
 _Màn hình cuối của MV: "Sản xuất: Nhật". Không có tên ai khác._
 * [🎭 "Ổn rồi em. Cứ thế mà xuất."]
     ~ tp_nhan_cong()
@@ -183,7 +183,7 @@ _Màn hình cuối của MV: "Sản xuất: Nhật". Không có tên ai khác._
     ~ tp_mv_dung_han = true
     editor: …Dạ.
     _{editor} gật đầu, không nói gì thêm. Bạn không thấy {editor} mở một file ghi chú tên "Danh sách" và gõ thêm một dòng._
-* [🙏 "Thêm dòng 'Dựng phim: Lĩnh' to bằng dòng của anh nhé."]
+* [🙏 "Thêm dòng 'Dựng phim: {editor}' to bằng dòng của anh nhé."]
     ~ tp_ghi_cong()
     ~ tp_lo(-15)
     ~ qh("editor", 20)
@@ -199,7 +199,7 @@ _Màn hình cuối của MV: "Sản xuất: Nhật". Không có tên ai khác._
 * {tp_tay_nghe >= 20} [🔒 "Em dạy anh cách thêm chữ vào cuối video được không? Anh tự làm."]
     _{editor} nhìn bạn rất lâu. Rồi kéo cái ghế bên cạnh ra._
     editor: Ngồi đi anh. Bấm chữ T. Gõ vô. Kéo ra sau cùng.
-    _Bạn gõ: "Sản xuất: Nhật. Dựng phim: Lĩnh." Hai dòng. Bạn tự gõ._
+    _Bạn gõ: "Sản xuất: {truong_phong}. Dựng phim: {editor}." Hai dòng. Bạn tự gõ._
     ~ tp_tn(10)
     ~ tp_ghi_cong()
     ~ tp_lo(-10)
@@ -217,7 +217,7 @@ _Cả công ty tập trung xem MV đầu tiên của Siêu Nhân Hồng trên m�
     ~ tp_mv_dung_han = false
     ~ tp_mv_tre = true
     ~ follow(30000)
-    giam_doc: Ơ? Thế là sao Nhật?
+    giam_doc: Ơ? Thế là sao {truong_phong}?
     ~ tp_ghe(-8)
     _MV ra mắt trễ một ngày. Không ai hỏi vì sao máy treo đúng sáng nay._
 - else:
@@ -233,11 +233,11 @@ _Mọi ánh mắt nhìn về phía bạn._
     _Ở hàng ghế cuối, {editor} lặng lẽ bóc vỏ quả trứng, rất chậm._
     ~ qh("editor", -10)
     { RANDOM(1, 10) <= 3:
-        thuc_tap_sinh: Dạ… sao file ghi người dựng là anh Lĩnh mà mình nói là anh Nhật ạ?
+        thuc_tap_sinh: Dạ… sao file ghi người dựng là anh {editor} mà mình nói là anh {truong_phong} ạ?
         _Cả phòng im phăng phắc. {hong_hot} gõ điện thoại nhanh như máy khâu._
         ~ tp_lo(15)
     }
-* [🙏 "Phòng em làm. Người dựng là Lĩnh. Vũ chạy tiến độ. Quỳnh làm hình. Oánh viết lời dẫn."]
+* [🙏 "Phòng em làm. Người dựng là {editor}. {chua_te_deadline} chạy tiến độ. {designer} làm hình. {bien_kich} viết lời dẫn."]
     ~ tp_ghi_cong()
     ~ tp_ghe(-5)
     ~ tp_lo(-15)
@@ -273,7 +273,7 @@ dan_dau_tu: Ai vô hông? Đồng đầu tiên mang tên idol công ty mình đ�
 === truong_phong_1010_chuyen_ha_noi ===
 # ngay:10 # gio:15:00 # noi:chot_bao_ve
 _Thứ Bảy, Ngày Giải phóng Thủ đô. Lương chưa về. Bạn ghé công ty lấy tài liệu, thấy {giam_doc} đang ngồi uống trà trong chòi bảo vệ._
-giam_doc: Nhật! Vào đây. Ba thằng miền Bắc ngồi kể chuyện Hà Nội cho vui.
+giam_doc: {truong_phong}! Vào đây. Ba thằng miền Bắc ngồi kể chuyện Hà Nội cho vui.
 bac_bao_ve: Ngồi đi. Trà mới pha.
 _Radio đang phát một bài hát về mùa thu Hà Nội. Ngoài kia, Thành Phố Ước Mơ nắng chang chang._
 * [😇 "Hồi bé cháu hay ăn kem Tràng Tiền, đứng ăn ngay vỉa hè cho mát."]
@@ -292,7 +292,7 @@ _Radio đang phát một bài hát về mùa thu Hà Nội. Ngoài kia, Thành P
     ~ qh("bac_bao_ve", 5)
     ~ tp_ghe(2)
     _Hôm đó bạn không nói gì về công việc. Lạ là bạn không thấy mình thừa._
-- _Lúc về, bạn thấy trên bàn trong chòi có một tấm thiệp cũ, chữ viết tay: "Mừng sinh nhật Bình, 10/10. G."_
+- _Lúc về, bạn thấy trên bàn trong chòi có một tấm thiệp cũ, chữ viết tay: "Mừng sinh nhật {bac_bao_ve}, 10/10. G."_
 * [🎂 "Hôm nay là sinh nhật bác ạ?"]
     bac_bao_ve: *(cất tấm thiệp đi)* Ừ… Già rồi, sinh nhật gì. Đừng kể ai nhé.
     ~ qh("bac_bao_ve", 15)
@@ -307,7 +307,7 @@ _Radio đang phát một bài hát về mùa thu Hà Nội. Ngoài kia, Thành P
 # ngay:11 # gio:20:00 # noi:can_501_pho_moi
 _Chủ nhật, Ngày Quốc tế Trẻ em gái. Group công ty rủ nhau đăng ảnh hồi nhỏ. {designer} đăng ảnh 5 tuổi vẽ bậy lên tường._
 * [💬 Bình luận: "Từ bé đã thích sửa nhà người khác nhỉ."]
-    designer: Anh Nhật!!! Sửa nhẹ thôi là sửa cái gì ạ!
+    designer: Anh {truong_phong}!!! Sửa nhẹ thôi là sửa cái gì ạ!
     _Bình luận được 14 lượt "haha". {designer} giận nửa ngày, rồi thả lại một tim._
     ~ qh("designer", 3)
 * [📸 Đăng ảnh mình năm 7 tuổi, mặc áo sơ mi cài kín cổ, đang chủ trì "cuộc họp" với gấu bông.]
@@ -342,7 +342,7 @@ bien_kich: Vậy mình họp để cùng không biết hả anh. Nghe như một
 * [🍞 "Thôi giải tán, anh mời cả phòng ăn sáng."]
     ~ tien_cong(-150000)
     ~ tp_ca_phong(8)
-    thuc_tap_sinh: Dạ… anh Nhật đỉnh nóc kịch trần ạ!
+    thuc_tap_sinh: Dạ… anh {truong_phong} đỉnh nóc kịch trần ạ!
     _Cuộc họp ngắn nhất tháng. Bánh mì ngon nhất tháng._
 - -> END
 
@@ -373,8 +373,8 @@ designer: *(thở ra như vừa nộp xong file)* Về rồi… Em tưởng ph�
 === truong_phong_1210_the_bi_tu_choi ===
 # ngay:12 # gio:21:30 # noi:can_501_pho_moi
 _Tối. {hong_hot} nhắn riêng cho bạn, kèm 3 biểu tượng mặt hoảng hốt._
-hong_hot: Nghe gì chưa anh Nhật? Thẻ của Long bị từ chối ở quán Sống Ảo! Trước mặt tui, Hiếu với Duy luôn!
-hong_hot: Mà ghê nữa, Duy giành trả, lỡ rút ra cái thẻ kim cương rồi cất cái vèo!
+hong_hot: Nghe gì chưa anh {truong_phong}? Thẻ của {con_ong_chau_cha} bị từ chối ở quán Sống Ảo! Trước mặt tui, {ran_doc} với {thuc_tap_sinh} luôn!
+hong_hot: Mà ghê nữa, {thuc_tap_sinh} giành trả, lỡ rút ra cái thẻ kim cương rồi cất cái vèo!
 * [🐍 "Thế à. Mai cậu kể to lên ở pantry nhé."]
     ~ qh("hong_hot", 5)
     ~ qh("con_ong_chau_cha", -10)
@@ -382,10 +382,10 @@ hong_hot: Mà ghê nữa, Duy giành trả, lỡ rút ra cái thẻ kim cương 
     _Bạn thấy vui được 5 giây. Rồi thấy hơi kỳ._
     ~ cang_thang(3)
 * [😶 "Chuyện riêng người ta, cậu đừng lan nữa."]
-    hong_hot: Ủa anh Nhật bênh Long hả? Lạ nha!
+    hong_hot: Ủa anh {truong_phong} bênh {con_ong_chau_cha} hả? Lạ nha!
     ~ qh("con_ong_chau_cha", 5)
     ~ qh("hong_hot", -3)
-* [💬 "Thẻ gì của Duy? Kim cương là sao?"]
+* [💬 "Thẻ gì của {thuc_tap_sinh}? Kim cương là sao?"]
     hong_hot: Hông biết! Mà thẻ đó tui thấy mấy ông giám đốc ngân hàng xài á!
     _Bạn ghi vào sổ: "Duy – thẻ – ?". Rồi gạch đi. Chuyện của người ta._
 - _Bạn nằm nghĩ: cháu sếp mà cũng bị từ chối thẻ. Cái ô của {con_ong_chau_cha} có khi không to như bạn tưởng._

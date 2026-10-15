@@ -103,7 +103,7 @@ _{hong_hot} vẫy bạn, chìa điện thoại: một đoạn clip người qua 
     ~ follow(30000)
 * [🍵 Đưa sếp ly trà, rồi chìa clip: "Anh coi cái này đi anh. Người ta tự quay, mình chưa tốn đồng nào."]
     { tn_diem_ninh >= 45:
-        giam_doc: *(xem, im lặng)* … Ừ. Đẩy cái này lên đi. Bảo {hong_hot} với {dan_dau_tu} tính giờ đăng.
+        giam_doc: *(xem, im lặng)* … Ừ. Đẩy cái này lên đi. {it} {hong_hot} với {dan_dau_tu} tính giờ đăng.
         ~ follow(80000)
         ~ tn_ninh(5)
         ~ qh("hong_hot", 10)

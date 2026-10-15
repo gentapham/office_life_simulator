@@ -16,7 +16,7 @@ _Cửa phòng giám đốc đóng. Qua vách kính, bạn thấy anh {giam_doc} 
 * [🚪 Gõ cửa phòng giám đốc, mang vào một ly bạc xỉu.]
     giam_doc: *(ngẩng lên)* Bạc xỉu à. Em còn nhớ.
     _Bạn không nói gì. Anh {giam_doc} cũng không. Hai người ngồi uống, như năm 2015, chỉ khác là không ai hát._
-    giam_doc: Phát này. Nếu công ty… thì hợp đồng em là tờ giấy vô giá trị đấy. Em tính đường khác đi.
+    giam_doc: {idol_het_thoi} này. Nếu công ty… thì hợp đồng em là tờ giấy vô giá trị đấy. Em tính đường khác đi.
     idol_het_thoi: Em tính rồi. Em ở lại.
     ~ qh("giam_doc", 15)
     ~ phat_tt(-8)
@@ -36,7 +36,7 @@ _Cửa phòng giám đốc đóng. Qua vách kính, bạn thấy anh {giam_doc} 
 === idol_het_thoi_2110_karaoke_long ===
 # ngay:21 # gio:19:30 # noi:karaoke
 _Karaoke Hát Cho Nhau Nghe, phòng số 5. Bạn hẹn {con_ong_chau_cha} ra đây. Ở đây cách âm tốt, không ai nghe lỏm. Bạn biết vì bạn từng nghe lỏm._
-con_ong_chau_cha: Anh hẹn em chi vậy anh Phát? Chill, nói đi.
+con_ong_chau_cha: Anh hẹn em chi vậy anh {idol_het_thoi}? Chill, nói đi.
 { biet(bai_hat_long):
     _Bạn biết bài "Hồng Là Thái Độ" có thật. Bạn biết nó hay. Bạn cũng biết mình đang nợ 54 triệu, và một bài hit có thể trả hết._
 - else:
@@ -89,7 +89,7 @@ quan_ly_idol: Dạ, lỗi do quản lý sắp xếp sai. Em nhận hết. Ca sĩ
     ~ tien_cong(-1000000)
 * [🐕 Lén ra cửa, huýt sáo gọi {cho}.]
     _{cho} chạy lên tầng 2, vẫy đuôi đi thẳng tới Chú Liêm. Chú Liêm leo lên ghế. Biên bản rơi xuống đất. Buổi kiểm tra hoãn 40 phút._
-    bac_bao_ve: *(từ dưới cầu thang)* Tuất! Xuống đây ngay!
+    bac_bao_ve: *(từ dưới cầu thang)* {cho}! Xuống đây ngay!
     ~ qh("cho", 10)
     ~ qh("ke_toan", -5)
     ~ qh("quan_ly_idol", -3)
@@ -100,7 +100,7 @@ quan_ly_idol: Dạ, lỗi do quản lý sắp xếp sai. Em nhận hết. Ca sĩ
 === idol_het_thoi_2210_sau_thue ===
 # ngay:22 # gio:19:10 # noi:bai_xe
 _Bãi xe. Đoàn thuế về rồi. Anh {quan_ly_idol} ngồi trên yên xe máy, uống ly cà phê thứ sáu trong ngày._
-quan_ly_idol: Phát. Có chuyện này anh hỏi em. Hôm mất điện, {editor} có quay lúc em hát. Đẹp lắm. Anh muốn đăng. Nhưng phải hỏi em.
+quan_ly_idol: {idol_het_thoi}. Có chuyện này anh hỏi em. Hôm mất điện, {editor} có quay lúc em hát. Đẹp lắm. Anh muốn đăng. Nhưng phải hỏi em.
 _Anh mở clip cho bạn coi. Màn hình tối, chỉ có giọng bạn và tiếng cả công ty hát theo. Lệch tông. Thật._
 { not phat_clip_15_quay:
     _Clip chỉ có 40 giây, mờ và rung. Nhưng giọng bạn vẫn nghe rõ._
@@ -130,7 +130,7 @@ _"Vậy thôi." Anh nói câu đó nhiều tới mức bạn bắt đầu nghi n
 _Sinh nhật Siêu Nhân Hồng, 31 tuổi. Phòng chờ ngập quà hồng. {chua_te_deadline} được nhắc tên trong 6 tấm thiệp, không phải do {chua_te_deadline} tặng._
 _Bạn đứng trước cửa phòng chờ, cái phòng từng là của bạn. Trong tay có một món quà._
 * [🍌 Một tháp bánh chuối chiên 31 tầng, mua ở xe đẩy đầu đường.]
-    sieu_nhan_hong: *(ôm tháp bánh)* Trời ơi anh Phát! Chuối chiên! Em… em ăn hết từ giờ tới tối luôn!
+    sieu_nhan_hong: *(ôm tháp bánh)* Trời ơi anh {idol_het_thoi}! Chuối chiên! Em… em ăn hết từ giờ tới tối luôn!
     _Nguyên chia ngay một nửa cho cả công ty. Tầng trên cùng để riêng cho bạn._
     ~ tien_cong(-310000)
     ~ qh("sieu_nhan_hong", 12)
@@ -191,12 +191,12 @@ _{cho} lách qua chân máy quay. Đuôi nó quẹt trúng chân bàn bánh._
 ~ phat_bi_boc_phot = true
 ~ phat_fan_ao_khi_boc = phat_fan_ao
 ~ phat_hien(fan_ao_phat)
-hong_hot: *(gọi tới)* Ối dồi ôi anh Phát ơi! Bài bóc phốt anh lên top rồi! "Ca sĩ một bài thuê 80.000 fan ảo"! Người ta chụp được 500 comment giống y nhau "Anh Phát đỉnh nóc kịch trần" luôn á!
+hong_hot: *(gọi tới)* Ối dồi ôi anh {idol_het_thoi} ơi! Bài bóc phốt anh lên top rồi! "Ca sĩ một bài thuê 80.000 fan ảo"! Người ta chụp được 500 comment giống y nhau "Anh {idol_het_thoi} đỉnh nóc kịch trần" luôn á!
 { phat_huy_fan_ao:
     _Gói fan ảo bạn đã hủy từ lâu. Nhưng ảnh chụp màn hình thì không ai hủy được._
 }
 { phat_clip_15_dang:
-    hong_hot: Mà khoan… anh Phát, cái clip "Ai đang hát trong bóng tối" cũng đang lên xu hướng nè! Người ta đang chửi anh mà vẫn nghe bài của anh! Ủa alo?
+    hong_hot: Mà khoan… anh {idol_het_thoi}, cái clip "Ai đang hát trong bóng tối" cũng đang lên xu hướng nè! Người ta đang chửi anh mà vẫn nghe bài của anh! Ủa alo?
     ~ follow(30000)
     ~ phat_nt(5)
 }
@@ -239,10 +239,10 @@ hong_hot: *(gọi tới)* Ối dồi ôi anh Phát ơi! Bài bóc phốt anh lê
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Bàn tròn, khăn trải bàn xanh. Bảng tên xếp cặp: {truong_phong}–{con_ong_chau_cha}, {designer}–{bien_kich}, {sales}–{ke_toan}, {hr}–{thanh_xin_nghi}, {chi_dai}–{thanh_ninh}._
 _Riêng một bàn trong góc ghi: "BÀN CHỦ NỢ". {dan_dau_tu} ngồi giữa. Xung quanh là {sales}, {it}, Bác {bac_bao_ve}, {con_ong_chau_cha}, {thanh_xin_nghi}, {thuc_tap_sinh}, {bien_kich}… và bạn._
 dan_dau_tu: *(đứng dậy, mở slide)* Kính thưa các chủ nợ. Hôm nay tui trình bày kế hoạch trả nợ. Slide 1: "Lần này là lên thật".
-chi_dai: *(từ bàn bên)* Chương. Slide 2 đi.
+chi_dai: *(từ bàn bên)* {dan_dau_tu}. Slide 2 đi.
 _Bạn ngồi đó. Chủ nợ của một người. Con nợ của một tòa chung cư. Sáng nay vừa bị bóc phốt._
-* [😇 "Anh Chương, 500 nghìn của em anh khỏi trả. Mình huề."]
-    dan_dau_tu: *(nhìn bạn, mắt rưng rưng)* Phát… ông… Ông là người đầu tiên xóa nợ cho tui.
+* [😇 "Anh {dan_dau_tu}, 500 nghìn của em anh khỏi trả. Mình huề."]
+    dan_dau_tu: *(nhìn bạn, mắt rưng rưng)* {idol_het_thoi}… ông… Ông là người đầu tiên xóa nợ cho tui.
     sales: Ủa vậy chị xóa luôn hông ta… Thôi khỏi, chị không có lòng tốt dữ vậy.
     ~ qh("dan_dau_tu", 20)
     ~ phat_tt(-5)
@@ -265,12 +265,12 @@ _Bạn ngồi đó. Chủ nợ của một người. Con nợ của một tòa c
 _3 giờ sáng. Bạn không ngủ được. Đi xuống cầu thang bộ Sky Ảo hóng gió. Ở chiếu nghỉ tầng 9, anh {quan_ly_idol} ngồi đó, laptop trên đùi, hai điện thoại cắm sạc dự phòng._
 _Màn hình laptop: 47 bài báo đang chờ gỡ. Ly cà phê thứ bao nhiêu thì không ai đếm nữa._
 _Bạn ngồi xuống bậc thang. Không đeo kính._
-idol_het_thoi: Anh Thái. Hai đêm rồi anh hông ngủ. Hồi trước em bị phốt anh cũng vậy. Sao anh lo cho em dữ vậy?
+idol_het_thoi: Anh {quan_ly_idol}. Hai đêm rồi anh hông ngủ. Hồi trước em bị phốt anh cũng vậy. Sao anh lo cho em dữ vậy?
 _Anh {quan_ly_idol} gõ thêm vài chữ. Rồi dừng tay._
 { qh_quan_ly_idol >= 60 and phat_tinh_tuong <= 50:
     quan_ly_idol: *(im lặng rất lâu, rồi đưa điện thoại cho bạn)* Em coi đi.
     _Màn hình là nhóm "Hội Cá Viên Chiên", 300 thành viên. Tên admin: "ChuoiChien89". Tài khoản đang đăng nhập: "ChuoiChien89"._
-    _Bạn kéo lên. Mười năm tin nhắn. Đêm nào cũng có một câu: "Anh Phát hôm nay hát ở đám cưới quận 3." "Anh Phát hôm nay khai trương tiệm nail." "Anh Phát hôm nay vẫn hát."_
+    _Bạn kéo lên. Mười năm tin nhắn. Đêm nào cũng có một câu: "Anh {idol_het_thoi} hôm nay hát ở đám cưới quận 3." "Anh {idol_het_thoi} hôm nay khai trương tiệm nail." "Anh {idol_het_thoi} hôm nay vẫn hát."_
     ~ phat_biet_chuoichien89 = true
     -> doc_xong
 - else:
@@ -325,7 +325,7 @@ _Ổ cắm ở sau tủ đầu giường. Ngăn kéo tủ hé mở._
     ~ phat_hien(thai_thuong_phat)
     -> thay_anh
 * [😶 Đẩy ngăn kéo vào, không nhìn. Cắm sạc rồi về.]
-    _Bạn để cục sạc trên bàn, kèm tờ giấy: "Trả anh. Ngủ đi. Phát."_
+    _Bạn để cục sạc trên bàn, kèm tờ giấy: "Trả anh. Ngủ đi. {idol_het_thoi}."_
     ~ qh("quan_ly_idol", 5)
     -> END
 
@@ -369,13 +369,13 @@ _{editor} không nói gì. Phòng họp im lặng._
 # ngay:27 # gio:11:00 # noi:phong_nghe_si # bat_buoc
 ~ phat_hien(ll_moi_thai)
 _LL-Entertainment ra tay. Cả công ty biết tin lúc 10 giờ: Lưu Lực mời Siêu Nhân Hồng với giá gấp ba._
-hong_hot: *(chạy vào, thì thầm)* Anh Phát… nghe gì chưa? LL mời luôn anh Thái. 36 triệu một tháng, gấp đôi. Điều kiện: mang theo Nguyên.
+hong_hot: *(chạy vào, thì thầm)* Anh {idol_het_thoi}… nghe gì chưa? LL mời luôn anh {quan_ly_idol}. 36 triệu một tháng, gấp đôi. Điều kiện: mang theo Nguyên.
 _Mang theo Nguyên. Không có tên bạn. Lần đầu tiên, bạn sợ một chuyện không liên quan tới sự nổi tiếng._
 _Anh {quan_ly_idol} đi đâu đi đó. Mười một năm. Nếu anh đi, sáng mai ai gọi bạn dậy?_
 * [🏃 Đi tìm anh {quan_ly_idol}. Nói thẳng: "Anh đừng đi."]
     _Anh {quan_ly_idol} đang ở sân thượng, nói điện thoại. Thấy bạn, anh cúp máy, không nói "khoan anh nghe máy chút" như mọi khi._
     idol_het_thoi: Anh đừng đi. Em… em hông biết nói sao. Mà anh đừng đi.
-    quan_ly_idol: *(nhìn bạn rất lâu)* Em nói câu đó… lần đầu đó Phát.
+    quan_ly_idol: *(nhìn bạn rất lâu)* Em nói câu đó… lần đầu đó {idol_het_thoi}.
     ~ phat_xin_thai_o_lai = true
     ~ qh("quan_ly_idol", 20)
     ~ phat_tt(-15)
@@ -383,9 +383,9 @@ _Anh {quan_ly_idol} đi đâu đi đó. Mười một năm. Nếu anh đi, sáng
     _Bạn nói câu đó với {hong_hot}. {hong_hot} kể lại cho cả tầng. Tới trưa, anh {quan_ly_idol} cũng nghe._
     ~ qh("quan_ly_idol", -20)
     ~ phat_tt(10)
-* [🚪 Lên phòng giám đốc: "Anh {giam_doc}, tăng lương cho anh Thái đi. Trừ vô lương em cũng được."]
+* [🚪 Lên phòng giám đốc: "Anh {giam_doc}, tăng lương cho anh {quan_ly_idol} đi. Trừ vô lương em cũng được."]
     giam_doc: *(bỏ kính xuống)* Lương em có 8 triệu, trừ thế nào…
-    giam_doc: Thôi được. Anh nói chuyện với Thái. Mà em đi nói với nó trước đi. Nó cần nghe em hơn nghe anh.
+    giam_doc: Thôi được. Anh nói chuyện với {quan_ly_idol}. Mà em đi nói với nó trước đi. Nó cần nghe em hơn nghe anh.
     ~ qh("giam_doc", 8)
     ~ qh("quan_ly_idol", 10)
     ~ phat_tt(-8)
@@ -408,17 +408,17 @@ _Anh {quan_ly_idol} đi đâu đi đó. Mười một năm. Nếu anh đi, sáng
 _Sảnh tầng trệt. Một người vest trắng, tóc vuốt keo bước vào, tay ôm tập hồ sơ bìa xanh lá chuối. Lưu Lực._
 _Lưu Lực đi ngang qua {chi_dai}. Khựng lại. Tập hồ sơ rơi xuống sàn, giấy tờ tung tóe. {chi_dai} chỉ nhìn, không nói gì. Lưu Lực lau mồ hôi._
 _Bạn cúi xuống nhặt giùm một tờ. Lưu Lực nhìn bạn từ đầu tới chân._
-luu_luc: À. Anh Phát. Ca sĩ… đám cưới.
+luu_luc: À. Anh {idol_het_thoi}. Ca sĩ… đám cưới.
 * [🕶️ "Em biết anh là ai không?"]
-    luu_luc: *(cười)* Biết chứ. Năm 2018 tôi mời Thái về LL. Thái nói: "Mang theo Phát thì tôi đi." Tôi không cần ca sĩ một bài, nên Thái ở lại.
-    luu_luc: Lần này tôi không mời anh. Thái sẽ phải chọn. Chào anh.
+    luu_luc: *(cười)* Biết chứ. Năm 2018 tôi mời {quan_ly_idol} về LL. {quan_ly_idol} nói: "Mang theo {idol_het_thoi} thì tôi đi." Tôi không cần ca sĩ một bài, nên {quan_ly_idol} ở lại.
+    luu_luc: Lần này tôi không mời anh. {quan_ly_idol} sẽ phải chọn. Chào anh.
     _Bạn đứng giữa sảnh, tay vẫn cầm tờ giấy. Năm 2018. Anh {quan_ly_idol} chưa bao giờ kể._
     ~ phat_tt(-10)
     ~ qh("quan_ly_idol", 10)
 * [😇 Đưa lại tờ giấy, không nói gì.]
     luu_luc: Cảm ơn. Lịch sự đấy. Tiếc là lịch sự không bán được vé.
     ~ phat_tt(-3)
-* [😤 "Anh muốn lấy Nguyên thì lấy. Đừng đụng tới anh Thái."]
+* [😤 "Anh muốn lấy Nguyên thì lấy. Đừng đụng tới anh {quan_ly_idol}."]
     luu_luc: *(nhướn mày)* Ồ. Tôi tưởng anh ghét Nguyên lắm cơ mà. Thú vị. Rất thú vị.
     ~ qh("quan_ly_idol", 5)
     ~ phat_tt(-5)

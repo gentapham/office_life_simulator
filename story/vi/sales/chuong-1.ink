@@ -18,7 +18,7 @@ _Ký. 5 tỷ về tài khoản. Cả phòng reo hò. Bạn vỗ tay to nhất, n
 * [🤝 Tới bắt tay {sieu_nhan_hong}: "Dạ em là {sales}, phòng Kinh doanh. Có gì cần anh cứ gọi em."]
     sieu_nhan_hong: Chào em! Em nhỏ tuổi mà nhìn khí thế ghê! Như sếp lớn!
     ~ qh("sieu_nhan_hong", 8)
-* [💬 Lại gần {ke_toan}: "Chị Thương, trang 47 là gì vậy chị?"]
+* [💬 Lại gần {ke_toan}: "Chị {ke_toan}, trang 47 là gì vậy chị?"]
     ke_toan: *(nhìn bạn, gấp sổ lại)* Chuyện người lớn. Em lo phần doanh thu đi.
     _"Chuyện người lớn." Bạn 26 tuổi. Bạn không thích chữ đó chút nào._
     ~ qh("ke_toan", -2)
@@ -104,19 +104,19 @@ _23 giờ 40. Bạn mở tủ lạnh. Trống. Bạn đóng lại. Mở ra lần
     _Bạn không hứa 2 tỷ. Nhưng {giam_doc} vẫn nhắn: "Em ơi, có đối tác nào to không, anh cần cho slide gửi nhà đầu tư."_
 }
 _Bạn cầm điện thoại, nhắn cho người duy nhất có thể giúp._
-sales: Chị Quỳnh ơi, tụi mình cần một tập đoàn.
+sales: Chị {designer} ơi, tụi mình cần một tập đoàn.
 designer: *(trả lời sau 30 giây)* Em nói lại coi? Một… tập đoàn?
 * [🗣️ "Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch Mr. Kevin Trộn. Em vừa đặt tên lúc ăn bánh tráng trộn."]
     ~ sl_phet(10)
     ~ phat_hien(btt_global_gia)
-    designer: …Huyền. Cái tập đoàn đó có thật hông em?
+    designer: …{sales}. Cái tập đoàn đó có thật hông em?
     sales: Có chứ! …Sắp có.
     designer: *(gửi sticker thở dài)* Cho chị 2 tiếng. Logo tông vàng bánh tráng. Slogan "Trộn Là Dính".
     ~ qh("designer", 5)
     _1 giờ sáng. Tập đoàn Bánh Tráng Trộn Toàn Cầu, BTT Global, chính thức ra đời trên màn hình laptop của {designer}: logo xoắn ốc vàng, trụ sở 40 tầng ghép ảnh, chữ ký chủ tịch bay bổng._
-    sales: Chị Quỳnh, mai em bao ốc! Quán Ốc Đêm, gọi gì gọi!
+    sales: Chị {designer}, mai em bao ốc! Quán Ốc Đêm, gọi gì gọi!
     designer: Em nhớ đó. Mà khum được giống logo của ai có thật nha.
-* [🤝 "Chị Quỳnh, em lỡ nói rồi. Em không biết làm sao."]
+* [🤝 "Chị {designer}, em lỡ nói rồi. Em không biết làm sao."]
     ~ sl_that_long()
     designer: Vậy mai mình đi chào hàng thật. Chị vẽ hồ sơ thật cho em. Đừng bịa nữa nha.
     ~ qh("designer", 10)
@@ -133,7 +133,7 @@ designer: *(trả lời sau 30 giây)* Em nói lại coi? Một… tập đoàn?
 _Thứ 7. Hồ bơi chung cư Sky Ảo. Bạn mặc đồ bơi, đeo kính râm, nằm ghế dài chụp ảnh. Không xuống nước, vì nước làm trôi lớp nền._
 _Ghế bên cạnh: {con_ong_chau_cha}, đang nổi lềnh bềnh trên phao hình con vịt._
 con_ong_chau_cha: Ủa {sales}. Em cũng ở đây hả? Chill ghê.
-* [💁 "Dạ anh Long, tin chị đi, anh nên tài trợ Đêm Hồng. Logo anh trên áo Siêu Nhân Hồng."]
+* [💁 "Dạ anh {con_ong_chau_cha}, tin chị đi, anh nên tài trợ Đêm Hồng. Logo anh trên áo Siêu Nhân Hồng."]
     con_ong_chau_cha: Tài trợ? Bằng tiền của anh hả? *(nghĩ)* Anh… không có tiền của anh. Toàn tiền của chú anh.
     _Câu đó nghe như câu đùa. Nhưng mặt {con_ong_chau_cha} không đùa._
     ~ qh("con_ong_chau_cha", 3)
@@ -206,7 +206,7 @@ ke_toan: Hóa đơn đâu em? Hợp đồng đâu em?
 # ngay:5 # gio:14:00 # noi:ban_sales
 _{dan_dau_tu} xuất hiện ở bàn bạn với nụ cười "lần này là lên thật". Áo sơ mi hơi nhàu, tay cầm điện thoại mở chart._
 dan_dau_tu: {sales} ơi, anh biết em định nói gì. Nhưng nghe anh nè: con coin này đang ở đáy, đáy thật rồi. Tuần sau anh trả em gấp đôi.
-* [📈 "Anh Chương, tháng 6 anh cũng nói đáy. Tháng này là đáy của đáy hả?"]
+* [📈 "Anh {dan_dau_tu}, tháng 6 anh cũng nói đáy. Tháng này là đáy của đáy hả?"]
     dan_dau_tu: Đáy có nhiều tầng em ạ. *(chuyển khoản 200 nghìn)* Cho có. Tượng trưng.
     ~ sl_chuong_tra(200000)
 * [💁 "Tin chị đi, anh trả em hôm nay thì mai anh giàu, vì vũ trụ thưởng người sòng phẳng."]

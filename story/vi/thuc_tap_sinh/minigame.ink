@@ -185,9 +185,9 @@ ke_toan: Không sao. Lần đầu chị cũng lệch. *(nói dối, chị chưa 
 # noi:chong_bao_ve
 _Chậu nước ấm. Xà bông cho chó. Máy sấy. Một cái áo nhỏ màu hồng và một cái nơ._
 { ngay == 4:
-    _{chi_dai} dội nước, bạn giữ khăn và sấy. Tuất chỉ cho {chi_dai} đụng nước vào người. Còn sấy với đeo nơ thì… tùy tay bạn._
+    _{chi_dai} dội nước, bạn giữ khăn và sấy. {cho} chỉ cho {chi_dai} đụng nước vào người. Còn sấy với đeo nơ thì… tùy tay bạn._
 - else:
-    _Hôm nay {chi_dai} không có ở đây. Tuất nhìn chậu nước, nhìn bạn. Chưa ai ngoài {chi_dai} tắm được cho nó._
+    _Hôm nay {chi_dai} không có ở đây. {cho} nhìn chậu nước, nhìn bạn. Chưa ai ngoài {chi_dai} tắm được cho nó._
 }
 cho: *(lùi lại một bước)* Grừ… *(rồi ngửi tay bạn)* … Gâu.
 -> END
@@ -195,7 +195,7 @@ cho: *(lùi lại một bước)* Grừ… *(rồi ngửi tay bạn)* … Gâu.
 === thuc_tap_sinh_mg_tam_tuat_thanh_cong ===
 # noi:chong_bao_ve
 _{cho} sạch bong, lông bông xù, đeo nơ hồng. Bạn khô ráo từ đầu tới chân. Bác {bac_bao_ve} vỗ tay hai cái, chuyện chưa từng có._
-_Rồi từ cổng, một bộ đồ hồng xuất hiện. {sieu_nhan_hong} giả tiếng sủa: "Gâu! Tuất ơi, nơ của em hồng giống anh nè!"_
+_Rồi từ cổng, một bộ đồ hồng xuất hiện. {sieu_nhan_hong} giả tiếng sủa: "Gâu! {cho} ơi, nơ của em hồng giống anh nè!"_
 cho: GÂU GÂU GÂU! *(vùng ra, lao đi, lắc mình)*
 _Nước văng tung tóe. Cả bạn lẫn Siêu Nhân Hồng ướt sũng. Nhưng {cho} vẫn đeo nơ. Đó là chiến thắng._
 ~ nhan(xuc_xich)

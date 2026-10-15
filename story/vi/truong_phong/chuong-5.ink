@@ -16,7 +16,7 @@ _{giam_doc} ngồi sau bàn, cạnh tấm bằng "Doanh nhân của năm", mắt
 }
 
 = bi_nhac
-giam_doc: Nhật. Phòng em họp nhiều quá đấy. Anh không ép, tùy em.
+giam_doc: {truong_phong}. Phòng em họp nhiều quá đấy. Anh không ép, tùy em.
 _Bạn hiểu "tùy em" nghĩa là gì. Cả công ty hiểu "tùy em" nghĩa là gì._
 * [📅 "Dạ, em sẽ tổ chức một cuộc họp để bàn về việc giảm số cuộc họp ạ."]
     giam_doc: …Em nghe mình vừa nói gì chưa?
@@ -101,7 +101,7 @@ _{editor} không quay lại. Bạn đứng ở cửa một lúc, rồi lên máy
 # ngay:22 # gio:09:20 # noi:phong_san_xuat # bat_buoc
 ~ tp_lich_co_dinh()
 _Đoàn kiểm tra thuế bất ngờ tới. Trưởng đoàn là Chú Liêm, 55 tuổi, cặp da đen, đi đâu cũng nhìn xuống đất xem có chó không._
-ke_toan: *(nói rất chậm)* Anh Nhật. Đoàn thuế lên tầng 2 rồi. Phòng anh làm ơn trông giống như đang làm việc.
+ke_toan: *(nói rất chậm)* Anh {truong_phong}. Đoàn thuế lên tầng 2 rồi. Phòng anh làm ơn trông giống như đang làm việc.
 * [📅 "Cả phòng vào phòng họp. Mình họp nhanh 5 phút về… mọi thứ."]
     ~ tp_hop(1)
     _Hai cán bộ thuế đi ngang, bị bạn mời vào ngồi dự. Hai mươi phút sau, cả hai ngủ gật, đầu tựa vào nhau._
@@ -137,7 +137,7 @@ chu_liem: File gốc đâu? Có file gốc là xong.
 * {tp_vu_giu_bi_mat} [🔒 Đứng chắn trước {chua_te_deadline}: "File gốc phòng em đang phục hồi ạ. Hẹn chú trong tuần."]
     chu_liem: Được. Nhưng trong tuần là trong tuần đấy.
     ~ qh("chua_te_deadline", 20)
-    chua_te_deadline: *(thì thầm)* …Anh Nhật. Tui nợ anh một lần.
+    chua_te_deadline: *(thì thầm)* …Anh {truong_phong}. Tui nợ anh một lần.
 * [🧑‍💻 "Anh {it} ơi, server công ty có sao lưu không ạ?"]
     it: Có. Từ 2016. Ở… chỗ khác. Để em coi.
     _{it} nói "để em coi" bằng giọng của người đang giấu một ổ cứng dưới gầm giường._
@@ -179,14 +179,14 @@ _Bạn dựng cái bảng trắng gấp gọn lên cạnh cây đàn. Nó lạc 
 # ngay:23 # gio:13:00 # noi:studio_tang_2 # bat_buoc
 ~ tp_lich_co_dinh()
 _Sinh nhật Siêu Nhân Hồng, 31 tuổi. Livestream lúc 15:00, bạn làm đạo diễn. Kịch bản có màn "nhà tài trợ BTT Global, Mr. Kevin Trộn, gửi lời chúc". Nhưng Mr. Kevin Trộn… không có thật._
-sales: *(kéo bạn ra góc)* Anh Nhật, cứu em. Cần một người đóng Mr. Kevin Trộn, đeo kính đen, nói tiếng Anh vài câu.
+sales: *(kéo bạn ra góc)* Anh {truong_phong}, cứu em. Cần một người đóng Mr. Kevin Trộn, đeo kính đen, nói tiếng Anh vài câu.
 * [👔 Chọn {thuc_tap_sinh}: "Duy mặc vest trông rất… tài chính."]
     thuc_tap_sinh: Dạ… em mặc vest quen rồi ạ… à dạ, em thử ạ!
     _{thuc_tap_sinh} khoác vest vào, đứng thẳng, nói "Good afternoon" chuẩn như người đã đọc báo cáo quý 10 năm. Cả phòng im lặng._
     ~ qh("thuc_tap_sinh", 8)
     ~ qh("sales", 8)
     ~ follow(10000)
-* [📉 Chọn {dan_dau_tu}: "Anh Chương có khí chất người hay… nói về tiền."]
+* [📉 Chọn {dan_dau_tu}: "Anh {dan_dau_tu} có khí chất người hay… nói về tiền."]
     dan_dau_tu: Đóng chủ tịch tập đoàn hả? Lần này là lên thật!
     _{dan_dau_tu} diễn hơi quá, lỡ mời khán giả "đầu tư vào tương lai Hồng". Phải cắt gấp._
     ~ qh("dan_dau_tu", 5)
@@ -207,7 +207,7 @@ sales: *(kéo bạn ra góc)* Anh Nhật, cứu em. Cần một người đóng 
 === truong_phong_2310_livestream ===
 # ngay:23 # gio:15:30 # noi:studio_tang_2 # bat_buoc
 _Livestream đang chạy. 40.000 người xem. Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang đứng cầm bảng nhắc chữ._
-sieu_nhan_hong: Vũ ơi… em… à, anh… anh thích em lâu rồi. Không phải PR đâu.
+sieu_nhan_hong: {chua_te_deadline} ơi… em… à, anh… anh thích em lâu rồi. Không phải PR đâu.
 _Màn hình bình luận chạy như thác: \#VũƠiTrảLờiĐi. {chua_te_deadline} đứng hình, bảng nhắc chữ rơi xuống đất._
 ~ follow(60000)
 _Đúng lúc đó, cửa studio hé mở. {cho} thò mũi vào. Mắt {cho} khóa chặt vào cái bánh kem hồng ba tầng._ # hen_gio:5
@@ -242,12 +242,12 @@ _Đúng lúc đó, cửa studio hé mở. {cho} thò mũi vào. Mắt {cho} khó
 === truong_phong_2310_sau_livestream ===
 # ngay:23 # gio:19:30 # noi:phong_san_xuat
 _Tối. Phòng Sản xuất vắng. {chua_te_deadline} ngồi một mình, nhìn điện thoại. \#VũƠiTrảLờiĐi vẫn đứng top 3._
-chua_te_deadline: Anh Nhật… anh nghĩ đó là PR hông?
+chua_te_deadline: Anh {truong_phong}… anh nghĩ đó là PR hông?
 * [💬 "Anh không biết. Nhưng anh thấy anh ấy run."]
     chua_te_deadline: *(im lặng)* …Ờ. Tui cũng thấy.
     ~ qh("chua_te_deadline", 10)
 * [📅 "Cái này cậu cần một cuộc họp với chính mình đấy."]
-    chua_te_deadline: Trời. Anh Nhật đúng là anh Nhật.
+    chua_te_deadline: Trời. Anh {truong_phong} đúng là anh {truong_phong}.
     _Nhưng {chua_te_deadline} cười. Và không lướt Tóp-tóp nữa._
     ~ qh("chua_te_deadline", 4)
 * [😶 Đặt một lon cà phê lên bàn, đi về.]
@@ -269,7 +269,7 @@ _Bàn bên cạnh, {dan_dau_tu} ngồi một mình giữa một vòng tròn ch�
     ~ qh("con_ong_chau_cha", 12)
     ~ qh("chi_dai", 5)
 * [🪑 "Một: cậu có chú. Hai: cậu có chú. Ba: cậu có chú."]
-    chi_dai: Nhật. Ra sân thượng đứng 5 phút cho chị.
+    chi_dai: {truong_phong}. Ra sân thượng đứng 5 phút cho chị.
     ~ qh("con_ong_chau_cha", -12)
     ~ qh("chi_dai", -8)
     ~ tp_so_lan_cai_long = tp_so_lan_cai_long + 1
@@ -283,8 +283,8 @@ _Bàn bên cạnh, {dan_dau_tu} ngồi một mình giữa một vòng tròn ch�
 === truong_phong_2410_clip_phat ===
 # ngay:24 # gio:20:00 # noi:can_501_pho_moi
 _Tối. Clip {idol_het_thoi} hát "Công Viên" trong bóng tối hôm mất điện đang viral. Ai đăng không rõ. Cùng lúc, có tài khoản bóc chuyện fan ảo của {idol_het_thoi}._
-hong_hot: Anh Nhật! Clip anh Phát đang lên mà phốt fan ảo cũng lên! Làm sao giờ, đăng tiếp hay ngưng?
-* [🎬 "Đăng bản đầy đủ, ghi rõ: quay bởi Lĩnh, đêm 15/10."]
+hong_hot: Anh {truong_phong}! Clip anh {idol_het_thoi} đang lên mà phốt fan ảo cũng lên! Làm sao giờ, đăng tiếp hay ngưng?
+* [🎬 "Đăng bản đầy đủ, ghi rõ: quay bởi {editor}, đêm 15/10."]
     ~ tp_ghi_cong()
     ~ qh("editor", 8)
     ~ qh("idol_het_thoi", 8)
@@ -331,7 +331,7 @@ _Chủ nhật. Căn 501. Bạn đứng trước bảng trắng, định tổ ch�
 ~ tp_lich_co_dinh()
 _Họp giao ban. Tin đồn "cắt giảm nhân sự nếu Siêu Nhân Hồng thất bại" lan khắp công ty. Nghe nói danh sách có tên {thuc_tap_sinh}._
 ~ tp_hop(1)
-thuc_tap_sinh: *(nhỏ giọng)* Dạ… anh Nhật… nếu em bị cắt thì em… dạ em hiểu ạ.
+thuc_tap_sinh: *(nhỏ giọng)* Dạ… anh {truong_phong}… nếu em bị cắt thì em… dạ em hiểu ạ.
 * [🛡️ "Phòng anh không cắt ai. Ai muốn cắt thì phải họp với anh trước."]
     ~ tp_ca_phong(12)
     ~ qh("thuc_tap_sinh", 10)
@@ -381,7 +381,7 @@ _Sau buổi chiếu, {giam_doc} quay sang {editor}: "Lĩnh, anh nghe nói em có
 _Kênh có con cú. Kênh bạn học mỗi đêm. Giọng ngái ngủ nói "render xong là xong"._
 ~ tp_biet_linh_la_cu_dem = true
 ~ phat_hien(kenh_cu_dem)
-* [🙏 "Anh ạ, kênh đó là của Lĩnh. Em nghĩ nên để Lĩnh giữ. Phòng em học từ kênh đó."]
+* [🙏 "Anh ạ, kênh đó là của {editor}. Em nghĩ nên để {editor} giữ. Phòng em học từ kênh đó."]
     ~ tp_ghi_cong()
     ~ tp_lo(-10)
     ~ qh("editor", 15)
@@ -396,13 +396,13 @@ _Kênh có con cú. Kênh bạn học mỗi đêm. Giọng ngái ngủ nói "ren
     thuc_tap_sinh: Dạ… dạ giống ý em kể hồi trước. Mà chắc trùng thôi ạ.
     bien_kich: *(cứng người)* Đây không phải đạo, đây là cảm hứng.
     { truong_phong_0210_hop_chien_dich > 0:
-        truong_phong: Biên bản họp 2/10 có ghi đấy, Oánh.
+        truong_phong: Biên bản họp 2/10 có ghi đấy, {bien_kich}.
         ~ qh("bien_kich", -10)
         ~ qh("thuc_tap_sinh", 12)
         ~ tp_ghi_cong()
     }
 * [😶 Im lặng.]
-    _Kênh con cú. Ý tưởng của Duy. Hôm nay bạn biết hai bí mật, và cả hai đều giống bí mật của bạn._
+    _Kênh con cú. Ý tưởng của {thuc_tap_sinh}. Hôm nay bạn biết hai bí mật, và cả hai đều giống bí mật của bạn._
     ~ cang_thang(8)
 - -> END
 
@@ -442,7 +442,7 @@ _Trailer phim ngắn "Người Hùng Không Tên" ra mắt. Dòng chữ cuối: 
 * [🎭 "Cứ đăng như thế."]
     ~ qh("bien_kich", 5)
     _Bạn nhìn dòng chữ một giây lâu hơn bình thường. Bạn biết cảm giác đứng sau dòng chữ của người khác._
-* [🛠️ Tự sửa dòng credits, để Lĩnh ngồi xem.]
+* [🛠️ Tự sửa dòng credits, để {editor} ngồi xem.]
     { tp_tay_nghe >= 30:
         _Phím T. Gõ. Căn giữa. Xuất. {editor} không phải chạm vào chuột lần nào._
         ~ tp_tn(5)
@@ -469,7 +469,7 @@ _Tối. Sân thượng công ty. Gió lạnh. {con_ong_chau_cha} đứng tựa l
 }
 
 = noi_that
-con_ong_chau_cha: Ông Nhật. Nói thiệt nha. Ông muốn cái ghế đó thì lấy đi. Tui chỉ muốn làm nhạc.
+con_ong_chau_cha: Ông {truong_phong}. Nói thiệt nha. Ông muốn cái ghế đó thì lấy đi. Tui chỉ muốn làm nhạc.
 _Sáu năm. Một tháng chiến tranh. Và đối thủ của bạn chưa bao giờ ra trận._
 ~ tp_biet_long_khong_muon_ghe = true
 * [😶 Ngồi xuống bậc thềm, cười ra tiếng.]

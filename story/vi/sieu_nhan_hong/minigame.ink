@@ -215,7 +215,7 @@ _Clip "Siêu nhân cắm đầu vào thùng nước" lên xu hướng hạng 4. 
 // ------------------------------------------------------------
 === sieu_nhan_hong_mg_qua_vu ===
 # minigame:qua_vu
-_Quà Cho Vũ. Chọn quà, chọn lúc tặng. Đừng tặng lúc cậu ta đang "nước tới chân". Đừng để camera nào gần đó._
+_Quà Cho {chua_te_deadline}. Chọn quà, chọn lúc tặng. Đừng tặng lúc cậu ta đang "nước tới chân". Đừng để camera nào gần đó._
 * [🖊️ Bút hồng.]
     ~ snh_mg_qua_dat_tien = false
 * [🛏️ Gối ôm hồng.]

@@ -9,20 +9,20 @@
 ~ tp_lich_co_dinh()
 _Ngày Doanh nhân Việt Nam. {giam_doc} tự mua hoa tặng mình, cắm đầy phòng. {thanh_ninh} vừa đọc xong bài phát biểu khen sếp dài 15 phút._
 _{sales} bước vào, hai tay nâng một tấm bằng mạ vàng: "Doanh nhân của năm – BTT Global trao tặng"._
-sales: Anh Thắng! Mr. Kevin Trộn gửi tặng anh nè! No cap, bên đó quý anh lắm!
+sales: Anh {giam_doc}! Mr. Kevin Trộn gửi tặng anh nè! No cap, bên đó quý anh lắm!
 giam_doc: Ôi… thế này thì… anh treo ngay chính giữa!
 _{giam_doc} quay sang bạn, mắt lấp lánh như chờ một câu gì đó._
 * [🙇 "Xứng đáng quá anh ạ. Phòng em xin quay một clip ngắn mừng anh."]
     ~ qh("giam_doc", 8)
     ~ tp_ghe(4)
     ~ tp_hop(1)
-    thanh_ninh: Anh Nhật nói chuẩn quá anh ơi! *(liếc bạn như liếc đối thủ)*
+    thanh_ninh: Anh {truong_phong} nói chuẩn quá anh ơi! *(liếc bạn như liếc đối thủ)*
     ~ qh("thanh_ninh", -5)
 * [🤔 "Anh {giam_doc}, BTT Global có địa chỉ ở đâu ạ? Em muốn gửi thư cảm ơn."]
     sales: Ờ… bên đó ở… nước ngoài. Tin chị… à tin em đi anh, deal này chắc kèo!
     ~ qh("sales", -8)
     _{sales} nhìn bạn như nhìn một cái máy in đang kẹt giấy._
-    giam_doc: Thôi Nhật, hôm nay vui mà. Anh không ép em hỏi đâu.
+    giam_doc: Thôi {truong_phong}, hôm nay vui mà. Anh không ép em hỏi đâu.
 * [💐 Lặng lẽ đặt một bó hoa nhỏ lên bàn, không nói gì.]
     ~ tien_cong(-120000)
     ~ qh("giam_doc", 4)
@@ -36,14 +36,14 @@ _{giam_doc} quay sang bạn, mắt lấp lánh như chờ một câu gì đó._
 ~ tp_lich_co_dinh()
 _{designer} trình 3 bản poster mới. {con_ong_chau_cha} ghé qua, tay cầm ly cà phê kem._
 con_ong_chau_cha: Marketing là phòng tui mà, để tui duyệt cho. *(chỉ vào bản xấu nhất)* Cái này nè. Nhìn nó chill.
-designer: *(nhìn bạn, mắt cầu cứu)* Anh Nhật…
+designer: *(nhìn bạn, mắt cầu cứu)* Anh {truong_phong}…
 * [🪑 "Poster là việc của phòng Sản xuất. Cậu duyệt nhạc chưa xong thì đừng duyệt hình."]
     ~ tp_so_lan_cai_long = tp_so_lan_cai_long + 1
     con_ong_chau_cha: Nhạc gì? Ông nói như tui có làm nhạc… *(khựng lại)* Thôi, tùy ông.
     ~ qh("con_ong_chau_cha", -8)
     ~ qh("designer", 10)
     _{con_ong_chau_cha} đi ra. Câu "như tui có làm nhạc" cứ lởn vởn trong đầu bạn._
-* [🤝 "Mình hỏi luôn Quỳnh xem bản nào chị ấy thích nhất."]
+* [🤝 "Mình hỏi luôn {designer} xem bản nào chị ấy thích nhất."]
     designer: Bản số 2 ạ. Có góc nghiêng 15 độ, chữ "Hồng" thở được.
     con_ong_chau_cha: Ờ… vậy bản 2. Bà là dân chuyên mà.
     ~ qh("designer", 12)
@@ -78,7 +78,7 @@ _Mốc 2: 200.000 người theo dõi. Bàn điều phối lịch của {thanh_xi
     * * [📸 Chụp màn hình gửi {hr}.]
         ~ qh("thanh_xin_nghi", -20)
         ~ qh("hr", 5)
-        hr: Cảm ơn anh. Em mời Sơn uống trà sáng thứ Sáu nha.
+        hr: Cảm ơn anh. Em mời {thanh_xin_nghi} uống trà sáng thứ Sáu nha.
         ~ phat_hien(son_thi_hat)
 * [📅 Lên lịch "Họp khẩn: chiến lược nửa sau tháng" cho ngày mai.]
     ~ tp_hop(1)
@@ -93,7 +93,7 @@ _Từ xa vọng lại tiếng {giam_doc} và {chi_dai} đập cửa thang máy: 
 it: *(ló đầu vào, cầm đèn pin)* Mất điện cả khu. Không phải lỗi người dùng. Chưa biết khi nào có lại.
 thuc_tap_sinh: Dạ em có 5 cục sạc dự phòng ạ! Ai cần cứ lấy ạ!
 _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn bạn: hôm nay còn họp không?_
-* [🕯️ "Vẫn họp. Duy, em có nến không?"]
+* [🕯️ "Vẫn họp. {thuc_tap_sinh}, em có nến không?"]
     ~ tp_hop(1)
     ~ tp_giu_hop_nen = true
     thuc_tap_sinh: Dạ có ạ! Nến thơm em mua ở siêu thị mini, mùi… vani ạ.
@@ -101,7 +101,7 @@ _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn b�
     -> truong_phong_1510_hop_duoi_nen
 * [😴 "Hôm nay nghỉ họp. Ai làm được gì thì làm."]
     ~ tp_ca_phong(8)
-    chua_te_deadline: Ủa?! Anh Nhật bị ai nhập vậy?
+    chua_te_deadline: Ủa?! Anh {truong_phong} bị ai nhập vậy?
     _Cả phòng ra pantry. Bạn ngồi lại một mình trong phòng họp tối, nghe tiếng mọi người cười ở xa._
     ~ cang_thang(5)
 * [🔋 Lấy một cục sạc, mở laptop: "Họp online qua 4G nhé!"]
@@ -118,20 +118,20 @@ _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn b�
     -> END
 }
 _Ánh nến lắc lư. Không có slide để trốn sau, mọi người bắt đầu nói thật._
-bien_kich: Em nói luôn nha anh Nhật. Kịch bản MV em viết lại 6 lần. Lần 6 giống y lần 1. Kịch bản này cần thêm nỗi đau, và anh đã cho nó thêm rồi đó.
+bien_kich: Em nói luôn nha anh {truong_phong}. Kịch bản MV em viết lại 6 lần. Lần 6 giống y lần 1. Kịch bản này cần thêm nỗi đau, và anh đã cho nó thêm rồi đó.
 designer: Poster em cũng vậy. Bản cuối là bản đầu đổi tên.
 _Mọi người cười khẽ. Rồi {chua_te_deadline}, đang ngả ghế, chợt ngồi thẳng dậy._
 chua_te_deadline: Ngồi tối vầy tui mới dám nói. Hồi tháng 6 tui làm mất file gốc một dự án. Tới giờ chưa ai biết.
 _Im lặng. Ngọn nến kêu lách tách._
-chua_te_deadline: Nói thiệt nha anh Nhật. Ngồi tối vầy tui mới dám hỏi. Anh tự dựng được video nào chưa? # hen_gio:8
-* [🕯️ "Chưa. Anh chưa dựng được cái nào. Toàn là Lĩnh."]
+chua_te_deadline: Nói thiệt nha anh {truong_phong}. Ngồi tối vầy tui mới dám hỏi. Anh tự dựng được video nào chưa? # hen_gio:8
+* [🕯️ "Chưa. Anh chưa dựng được cái nào. Toàn là {editor}."]
     ~ tp_noi_that_duoi_nen = true
     ~ tp_lo(30)
     ~ tp_ca_phong(15)
     ~ tp_ghi_cong()
     _Cả phòng im lặng. Không ai cười. {editor} ngẩng lên, ánh nến in hai đốm sáng trong mắt._
     editor: …Em biết anh biết là em biết mà anh.
-    thuc_tap_sinh: Dạ… em thấy anh Nhật nói thật vậy là ngầu lắm ạ.
+    thuc_tap_sinh: Dạ… em thấy anh {truong_phong} nói thật vậy là ngầu lắm ạ.
     { tp_tay_nghe >= 10:
         truong_phong: Nhưng anh đang học. Đêm nào cũng học. Phím C là cắt.
         editor: *(gật đầu chậm)* Phím C là cắt.
@@ -178,7 +178,7 @@ _Ở góc bên kia, {con_ong_chau_cha} ôm cây đàn cũ lấy từ kho studio,
     ~ tp_ca_phong(-3)
     idol_het_thoi: Em biết anh là ai không? Anh đang hát mà.
     _Tiếng hát tắt. Đèn pin tắt. Bạn đứng một mình trong pantry tối, tự hỏi sao mình luôn là người tắt nhạc._
-* [🎥 Thì thầm với {editor}: "Clip đó… đừng đăng vội nhé. Để anh Phát quyết."]
+* [🎥 Thì thầm với {editor}: "Clip đó… đừng đăng vội nhé. Để anh {idol_het_thoi} quyết."]
     editor: *(gật)* Em quay cho… em thôi anh.
     ~ qh("editor", 5)
     ~ qh("idol_het_thoi", 3)
@@ -219,7 +219,7 @@ _Phát sóng xong. Giờ là cuộc đua của phòng dựng._
 === truong_phong_1610_clip_highlight ===
 # ngay:16 # gio:21:05 # noi:phong_dung_phim # bat_buoc
 _{editor} ngủ gục trên bàn phím sau 3 đêm thức trắng. Đồng hồ đếm ngược: 2 tiếng để đăng clip highlight. {hong_hot} gọi tới lần thứ 6._
-hong_hot: Ét o ét anh Nhật ơi! Clip đâu anh? Bên LL đăng clip chọc mình rồi kìa! # hen_gio:6
+hong_hot: Ét o ét anh {truong_phong} ơi! Clip đâu anh? Bên LL đăng clip chọc mình rồi kìa! # hen_gio:6
 * [🛠️ Tự ngồi vào máy dựng.]
     { tp_tay_nghe >= 40 || RANDOM(1, 100) <= 25:
         _Phím C. Kéo. Thả. Chỉnh màu. Nhạc khớp nhịp ở lần thứ ba. Bạn bấm xuất lúc 22:41._

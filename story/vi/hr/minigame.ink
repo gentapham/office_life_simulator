@@ -46,7 +46,7 @@ bac_bao_ve: Cháu đứng gác thế thì bác nghỉ nhé. *(vẫn ngồi nguy�
 
 === hr_mg_cham_cong_dat ===
 _8 giờ 05. Bạn bắt được 2 người trễ, 1 người chấm giùm, và {chua_te_deadline} đang treo lơ lửng một chân trên bờ tường sau._
-chua_te_deadline: Anh Tuấn… em tập thể dục buổi sáng thôi mà… chill…
+chua_te_deadline: Anh {hr}… em tập thể dục buổi sáng thôi mà… chill…
 ~ hr_quy_tra_sua = hr_quy_tra_sua + 150000
 ~ tien_cong(100000)
 ~ nhan(banh_mi)
@@ -110,7 +110,7 @@ _Câu hỏi 1: "Em làm gì khi Siêu Nhân Hồng bỏ ngang buổi quay để 
 
 === hr_mg_phong_van_dat ===
 _Chị Hạnh đi làm từ thứ 2. Ngày đầu, chị dán lên lưng {sieu_nhan_hong} một tờ lịch in màu hồng. Ngày thứ hai, chị chạy theo {sieu_nhan_hong} 3 km đi giúp người, tay vẫn cầm máy quay._
-chua_te_deadline: Anh Tuấn… ổng tới đúng giờ. Đúng giờ! Em chưa thấy cảnh này bao giờ!
+chua_te_deadline: Anh {hr}… ổng tới đúng giờ. Đúng giờ! Em chưa thấy cảnh này bao giờ!
 ~ tien_cong(300000)
 ~ follow(20000)
 ~ nhan(chuoi_chien)
@@ -149,7 +149,7 @@ _Bạn dán bảng xếp phòng lên cửa xe khách. Mọi người đọc. Kh�
 ~ hr_hai_san = true
 ~ hr_so(-3)
 ~ uy_tin = uy_tin + 5
-chi_dai: Được đó Tuấn. Lần đầu tui thấy ông xếp cái gì mà hông ai cãi.
+chi_dai: Được đó {hr}. Lần đầu tui thấy ông xếp cái gì mà hông ai cãi.
 ~ qh("chi_dai", 5)
 -> END
 

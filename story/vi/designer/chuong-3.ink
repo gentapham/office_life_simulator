@@ -6,7 +6,7 @@
 === designer_1510_mat_dien ===
 # ngay:15 # gio:08:10 # noi:ban_thiet_ke # bat_buoc
 _8 giờ 5 phút. Phụt. Cả tòa nhà tối om. Từ thang máy vọng ra tiếng {giam_doc} và tiếng {chi_dai}, kẹt chung một buồng._
-giam_doc: *(vọng ra)* Hương ơi, em bình tĩnh nhé, anh không ép em bình tĩnh đâu, tùy em…
+giam_doc: *(vọng ra)* {chi_dai} ơi, em bình tĩnh nhé, anh không ép em bình tĩnh đâu, tùy em…
 chi_dai: *(vọng ra)* Anh im giùm em là em bình tĩnh liền!
 _Laptop công ty của bạn tắt phụt, mất luôn 40 phút chưa lưu. Laptop thứ hai trong balo vẫn còn 20% pin._
 { ds_nhan_hong_ngoai:
@@ -33,7 +33,7 @@ hong_hot: Ê bà, máy bà còn pin hả? Cho tui ké xem Tóp-tóp xíu đi! # 
     }
 * [🤝 Mở Tóp-tóp cho {hong_hot} xem, giữ file kia ở tab ẩn.]
     ~ qh("hong_hot", 5)
-    hong_hot: Bà là nhất! Coi clip chó nè, giống Tuất ghê!
+    hong_hot: Bà là nhất! Coi clip chó nè, giống {cho} ghê!
     _Pin tụt từ 20% xuống 6% trong 10 phút. Ít nhất là không ai thấy màu xanh lá chuối._
 * [⏱️ (Không chọn kịp)]
     _Bạn còn đang đơ thì laptop tự sập nguồn, đúng 0%. Lần đầu tiên bạn biết ơn cục pin chai._
@@ -49,7 +49,7 @@ thuc_tap_sinh: Dạ mọi người xài đi ạ! Em… em có dư ạ!
 === designer_1510_trang_47 ===
 # ngay:15 # gio:10:30 # noi:pantry # bat_buoc
 _Pantry tối. Mọi người tản ra mỗi góc. Bạn ngồi bệt sau tủ lạnh, nơi mát nhất, và nghe tiếng thì thầm ngay phía bên kia._
-ke_toan: Hương. Trang 47. Nếu không đủ 1 triệu người theo dõi, công ty hoàn lại 10 tỷ.
+ke_toan: {chi_dai}. Trang 47. Nếu không đủ 1 triệu người theo dõi, công ty hoàn lại 10 tỷ.
 chi_dai: Mười… tỷ? Ổng ký mà không đọc hả?
 ke_toan: Chị nói rồi. Ngay trước lúc ký. Ổng bảo đối tác đang chờ.
 ~ phat_hien(trang_47)
@@ -244,7 +244,7 @@ sales: *(thì thầm)* Tủ lạnh căn 1203 trống ba ngày rồi chị. Em g�
 * [🍗 Gói luôn phần mình. Căn 203 cũng đâu có dư.]
     ~ nhan(com_tam)
     ~ an(20)
-    sales: Chị Quỳnh, mình là đồng phạm rồi đó.
+    sales: Chị {designer}, mình là đồng phạm rồi đó.
     ~ qh("sales", 5)
 * [😇 Ăn tại chỗ, kể {sales} nghe vụ phông vẽ tay.]
     ~ an(40)

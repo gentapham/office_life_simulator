@@ -24,7 +24,7 @@ _Điện thoại rung. Group công ty: "9:00 KÝ HỢP ĐỒNG SIÊU NHÂN HỒN
 === con_ong_chau_cha_0110_ky_hop_dong ===
 # ngay:1 # gio:09:25 # noi:phong_hop_tang_2 # bat_buoc
 _9 giờ 25. Bạn đẩy cửa phòng họp tầng 2. Đúng lúc một người mặc bộ đồ siêu nhân hồng đặt bút ký. Cả phòng quay lại nhìn ly cà phê kem trên tay bạn._
-giam_doc: Long! Đi làm mà như đi chơi thế à? Muộn 25 phút! Chú… anh nói thế cho công bằng thôi nhé.
+giam_doc: {con_ong_chau_cha}! Đi làm mà như đi chơi thế à? Muộn 25 phút! Chú… anh nói thế cho công bằng thôi nhé.
 _Hai mươi hai cặp mắt. Một cái mũ hồng cũng quay sang. {truong_phong} nhìn bạn như nhìn một cái lỗi chính tả._
 * [😎 "Dạ. Chill đi chú."]
     giam_doc: Chill cái gì mà chill! Ngồi xuống!
@@ -62,7 +62,7 @@ it: Hỏng bo mạch. Sửa thì 3 ngày.
     - else:
         _Thẻ báo lỗi. Bạn nhìn màn hình rất lâu._
     }
-* [🔧 "Anh Bảo chỉ em sửa được hông?"]
+* [🔧 "Anh {it} chỉ em sửa được hông?"]
     it: *(nhìn bạn)* Cầm cái tua vít.
     _Hai tiếng sau, máy chạy lại. Ly cà phê đầu tiên hơi nhạt. Ngon nhất đời bạn._
     ~ long_tl(5)
@@ -80,19 +80,19 @@ it: Hỏng bo mạch. Sửa thì 3 ngày.
 === con_ong_chau_cha_0110_fan_cung ===
 # ngay:1 # gio:15:30 # noi:sanh_tang_tret
 _Chiều. Cả công ty ăn mừng bằng trà sữa. Một người đàn ông chạy tới, mặc chiếc áo khoác y chang cái bạn mặc hôm qua._
-thuc_tap_sinh: Dạ anh Long! Em mua y chang cái áo anh mặc hôm qua luôn ạ! Anh mặc đẹp quá nên em… dạ em mới vô nên chưa biết ạ.
+thuc_tap_sinh: Dạ anh {con_ong_chau_cha}! Em mua y chang cái áo anh mặc hôm qua luôn ạ! Anh mặc đẹp quá nên em… dạ em mới vô nên chưa biết ạ.
 _{thuc_tap_sinh}. Thực tập sinh. 30 tuổi. Lớn hơn bạn 2 tuổi._
-* [😎 "Chill đi anh Duy. Mà áo này hàng cũ rồi, sao hông mua cái mới luôn?"]
+* [😎 "Chill đi anh {thuc_tap_sinh}. Mà áo này hàng cũ rồi, sao hông mua cái mới luôn?"]
     thuc_tap_sinh: Dạ… dạ để em coi giá ạ!
     _Tối đó {thuc_tap_sinh} tra giá cái áo mới: 4 triệu. Đúng bằng một tháng lương thực tập._
     ~ qh("thuc_tap_sinh", 5)
     ~ qh("chi_dai", -5)
-    chi_dai: *(nghe được, nhíu mày)* Long. Lại đây chị nói chuyện chút.
-* [🤝 "Anh lớn hơn tui mà, đừng 'dạ anh' nữa. Gọi Long thôi."]
-    thuc_tap_sinh: Dạ… dạ Long ạ.
+    chi_dai: *(nghe được, nhíu mày)* {con_ong_chau_cha}. Lại đây chị nói chuyện chút.
+* [🤝 "Anh lớn hơn tui mà, đừng 'dạ anh' nữa. Gọi {con_ong_chau_cha} thôi."]
+    thuc_tap_sinh: Dạ… dạ {con_ong_chau_cha} ạ.
     _{thuc_tap_sinh} vẫn không bỏ được chữ "dạ". Nhưng mắt sáng lên như vừa được thăng chức._
     ~ qh("thuc_tap_sinh", 10)
-* [👂 "Mà anh Duy trước làm gì vậy? Sao 30 tuổi mới đi thực tập?"]
+* [👂 "Mà anh {thuc_tap_sinh} trước làm gì vậy? Sao 30 tuổi mới đi thực tập?"]
     thuc_tap_sinh: *(khựng lại)* Dạ… làm văn phòng thôi ạ.
     _Câu trả lời ngắn như một cánh cửa đóng lại. Bạn biết cảm giác đó. Bạn cũng có một cánh cửa._
     ~ long_bh(5)
@@ -157,7 +157,7 @@ _Cả phòng gật đầu như những người không hiểu gì. Mọi ngườ
 === con_ong_chau_cha_0210_cuoi_cham_cong ===
 # ngay:2 # gio:09:05 # noi:sanh_tang_tret
 _Ngày Nụ cười Thế giới. {hr} đứng cạnh máy chấm công, cầm tấm bảng "CƯỜI RỒI MỚI CHẤM". Bạn tới trễ, máy đã ghi tên bạn vào "quỹ trà sữa"._
-hr: Long. Cười một cái cho hành trình nha em. Mà em trễ 1 tiếng 5 phút. Phạt 50.000 cho quỹ trà sữa.
+hr: {con_ong_chau_cha}. Cười một cái cho hành trình nha em. Mà em trễ 1 tiếng 5 phút. Phạt 50.000 cho quỹ trà sữa.
 * [💵 Đưa 50.000đ bằng tiền mặt của mình.]
     ~ tien_cong(-50000)
     ~ long_tl(2)
@@ -179,7 +179,7 @@ _Trà sữa thứ Sáu. Quỹ trà sữa vừa đủ cho 15 ly. Công ty có 22 
 hong_hot: Thiếu 7 ly! Ai rút thăm hông có thì nhịn nha!
 * [🛒 "Ủa sao không mua thêm? Để tui quẹt."]
     { long_quet(350000):
-        _Bảy ly thêm. Cả công ty reo "anh Long!". Bạn thấy vui. Bạn không nghĩ về cái thẻ._
+        _Bảy ly thêm. Cả công ty reo "anh {con_ong_chau_cha}!". Bạn thấy vui. Bạn không nghĩ về cái thẻ._
         ~ long_od(3)
         ~ qh("hong_hot", 4)
     - else:
@@ -200,7 +200,7 @@ hong_hot: Thiếu 7 ly! Ai rút thăm hông có thì nhịn nha!
 === con_ong_chau_cha_0310_ho_boi ===
 # ngay:3 # gio:16:00 # noi:ho_boi_sky_ao
 _Thứ Bảy. Hồ bơi Sky Ảo. {sales} nằm ghế bên cạnh, đeo kính râm, gọi điện liên tục._
-sales: *(cúp máy)* Anh Long! Em vừa nói chuyện với Mr. Kevin Trộn của BTT Global. Ổng muốn tài trợ 2 tỷ! Tin chị đi… à tin em đi!
+sales: *(cúp máy)* Anh {con_ong_chau_cha}! Em vừa nói chuyện với Mr. Kevin Trộn của BTT Global. Ổng muốn tài trợ 2 tỷ! Tin chị đi… à tin em đi!
 * [😎 "Ồ, đỉnh vậy. Chừng nào ký?"]
     sales: Sớm thôi anh! Mà anh nói với chú anh giùm em một tiếng nha.
     ~ long_goi_chu()
@@ -219,7 +219,7 @@ sales: *(cúp máy)* Anh Long! Em vừa nói chuyện với Mr. Kevin Trộn c�
 === con_ong_chau_cha_0410_chuong_toi ===
 # ngay:4 # gio:10:00 # noi:sky_ao_tang_30 # bat_buoc
 _Chủ nhật, Ngày Động vật Thế giới. Chuông cửa reo. {dan_dau_tu} đứng ngoài, ôm laptop, cười như sắp trúng số._
-dan_dau_tu: Long! Cơ hội trăm năm có một! Lần này là lên thật. Em góp với anh 20 triệu, Tết này mua xe mới.
+dan_dau_tu: {con_ong_chau_cha}! Cơ hội trăm năm có một! Lần này là lên thật. Em góp với anh 20 triệu, Tết này mua xe mới.
 _Thẻ phụ của chú vẫn còn hạn mức. Bạn có một "vốn góp chung" 10 triệu với {dan_dau_tu} từ năm ngoái. Bạn đã quên mất._
 * [💳 "Ủa sao không mua xe luôn bây giờ? Ok, chuyển 20 triệu."]
     { long_quet(20000000):
@@ -237,7 +237,7 @@ _Thẻ phụ của chú vẫn còn hạn mức. Bạn có một "vốn góp chun
     ~ long_tl(4)
     dan_dau_tu: Ít mà chắc. Được!
     ~ qh("dan_dau_tu", 4)
-* [💬 "Anh Chương, cái vốn góp 10 triệu năm ngoái sao rồi?"]
+* [💬 "Anh {dan_dau_tu}, cái vốn góp 10 triệu năm ngoái sao rồi?"]
     dan_dau_tu: *(tái mặt)* À… cái đó… đang… nằm đáy. Đáy thật.
     _{dan_dau_tu} xin phép đi về vì "có việc gấp". Bạn không giận. Bạn chỉ tò mò thật._
     ~ long_tl(3)

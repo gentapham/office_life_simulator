@@ -51,13 +51,13 @@
 _Ba ngày sau Đêm Hồng, bản remix "Công Viên Hồng" lên top 1 xu hướng._
 _Cả nước lại hát "thích ăn chuối chiên". Lần này kèm một điệu nhảy: hai tay xiên que, lắc hông, tạo dáng siêu nhân ở câu cuối._
 _Học sinh nhảy ở sân trường. Mấy chú xe ôm nhảy ở ngã tư. Một cô bán cá viên chiên ở Vũng Tàu quay clip nhảy cạnh xe đẩy, ghi: "Bài của thằng nhỏ hồi xưa đó!"_
-hong_hot: *(gọi tới, hét)* Anh Phát ơi! Top 1! Top 1 thiệt! Không có hoa sen nào hết! Người thật hết đó anh!
+hong_hot: *(gọi tới, hét)* Anh {idol_het_thoi} ơi! Top 1! Top 1 thiệt! Không có hoa sen nào hết! Người thật hết đó anh!
 _Kênh của bạn: 0 tài khoản ảo. 214.000 người theo dõi thật. Bạn đếm đi đếm lại, như đếm tiền._
 sieu_nhan_hong: *(nhắn)* Anh ơi em viết chữ CHUỐI lên tay vẫn chưa rửa. Em giữ luôn được hông?
 giam_doc: *(nhắn group lúc 22:00)* Cả nhà ơi. Năm 2015 anh tưởng anh là thiên tài. Năm nay anh biết thiên tài là cả nhà mình. Anh không ép. Anh cảm ơn.
 _Sáng 1/11. Có tiếng gõ cửa căn 1808. Bạn mở cửa, tay còn cầm bàn chải đánh răng._
 _Bà quản lý Sky Ảo đứng đó. Tay cầm một cuốn sổ. Bạn nuốt nước bọt, chờ nghe hai chữ "tiền nhà"._
-ba_quan_ly_sky_ao: Cậu Phát. *(chìa cuốn sổ ra)* Ký cho con gái cô một chữ. Nó nhảy bài cậu suốt đêm qua, cô ngủ không được.
+ba_quan_ly_sky_ao: Cậu {idol_het_thoi}. *(chìa cuốn sổ ra)* Ký cho con gái cô một chữ. Nó nhảy bài cậu suốt đêm qua, cô ngủ không được.
 _Bạn ký. Chữ ký đẹp nhất từ năm 2015 tới giờ._
 ba_quan_ly_sky_ao: *(nhìn chữ ký, gật gù, rồi ngẩng lên)* À. Tiền nhà tháng này vẫn phải đóng nha cậu.
 _Cửa đóng lại. Bạn đứng trong căn hộ, nhìn bốn bức tường poster năm 2015. Bạn lấy điện thoại, chụp một tấm selfie mới. Không kính đen._
@@ -72,7 +72,7 @@ _Bạn dán nó lên tường, ngay giữa._
 _Cuối tháng 11. Một đám cưới ở nhà hàng Hạnh Phúc Trăm Năm, sảnh B. Đám thứ 23 kể từ Đêm Hồng._
 _Lịch của bạn kín tới Tết. Anh {quan_ly_idol} phải mua thêm một cuốn sổ. {ke_toan} đã dạy bạn xuất hóa đơn, bạn xuất hóa đơn đẹp như ký tặng._
 _Cô dâu chú rể hôm nay quen nhau năm 2015, ở một phòng karaoke, vì cùng giành micro hát "Công Viên". Họ in lời bài hát lên thiệp cưới._
-chu_re: *(cầm micro)* Tụi em mời anh Phát lên hát. Anh hát cho tụi em thôi, như năm đó tụi em hát cho nhau.
+chu_re: *(cầm micro)* Tụi em mời anh {idol_het_thoi} lên hát. Anh hát cho tụi em thôi, như năm đó tụi em hát cho nhau.
 _Bạn bước lên. Tháo kính đen, đặt lên bàn tiệc số 1, cạnh dĩa gà luộc._
 _Không đèn sân khấu. Không fan cuồng. Không tài khoản hoa sen nào. Chỉ có hai người đứng trước mặt, nắm tay nhau, và nhìn bạn như nhìn một người quen._
 _"Ngày xưa có đôi bạn thân… bán cá viên chiên… tại công viên…"_
@@ -123,7 +123,7 @@ _Một phút. Người xem: 0._
 _Ba phút. Người xem: 3._
 idol_het_thoi: Chào các em. Anh biết các em vẫn ở đây. Fan anh đông lắm mà. Fan anh chưa bao giờ bỏ anh…
 _Ba tài khoản. Avatar hoa sen. Tên: "Hoa Sen 0417", "Hoa Sen 2209", "Hoa Sen 7781"._
-_Bạn chờ họ bình luận "Anh Phát đỉnh nóc kịch trần". Bạn chưa bao giờ chờ câu đó như bây giờ._
+_Bạn chờ họ bình luận "Anh {idol_het_thoi} đỉnh nóc kịch trần". Bạn chưa bao giờ chờ câu đó như bây giờ._
 _Màn hình hiện một dòng chữ xám:_
 _"Hoa Sen 0417: Tài khoản đã bị khóa. Người dùng đã rời khỏi phòng."_
 _Rồi dòng thứ hai. Rồi dòng thứ ba._

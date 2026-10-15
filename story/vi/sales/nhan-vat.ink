@@ -69,7 +69,7 @@ _{thanh_ninh} lớn hơn bạn 2 tuổi. Và là người duy nhất trong công
     sales: Còn sếp nói phét?
     thanh_ninh: *(cười)* Khen "tầm nhìn". Em biết rõ mà.
     ~ qh("thanh_ninh", 5)
-* [😇 "Chị Nhi, chị khen sếp nhiều vậy, có ai khen chị chưa?"]
+* [😇 "Chị {thanh_ninh}, chị khen sếp nhiều vậy, có ai khen chị chưa?"]
     thanh_ninh: *(nụ cười khựng lại)* …Ngày 8/3 thì có. Mấy ngày khác thì… không.
     _Lần đầu tiên bạn thấy {thanh_ninh} không biết nói gì._
     ~ qh("thanh_ninh", 10)
@@ -105,7 +105,7 @@ con_ong_chau_cha: Ê {sales}. Chill không? Đi Sống Ảo cà phê với anh k
     con_ong_chau_cha: Em bao anh? *(ngạc nhiên thật sự)* Chưa ai bao anh bao giờ.
     ~ tien_cong(-90000)
     ~ qh("con_ong_chau_cha", 10)
-* {qh_con_ong_chau_cha >= 15} [🔒 "Anh Long. Mấy bài hát của anh đó. Cho em nghe một bài đi."]
+* {qh_con_ong_chau_cha >= 15} [🔒 "Anh {con_ong_chau_cha}. Mấy bài hát của anh đó. Cho em nghe một bài đi."]
     con_ong_chau_cha: *(đưa một bên tai nghe, do dự)* Nghe thôi nha. Đừng kể ai.
     _Một giai điệu nhẹ, lời có câu "Hồng là thái độ". Bạn nghe hết, rồi nghe lại._
     ~ phat_hien(bai_hat_long)
@@ -180,7 +180,7 @@ ke_toan: {sales}. Lại tạm ứng hả em?
 === sales_tudo_npc_hr ===
 # npc:hr
 hr: {sales} ơi. Em rảnh không, lên phòng anh uống trà xíu.
-* [💁 "Dạ anh Tuấn, tin chị đi, em đang chạy deal, uống trà sau nha."]
+* [💁 "Dạ anh {hr}, tin chị đi, em đang chạy deal, uống trà sau nha."]
     hr: *(cười rộng hơn)* Deal gì em? Anh chỉ muốn lắng nghe em thôi.
     _{hr} rót sẵn hai ly trà. Ly của bạn đã nguội. Ông ấy đã đợi lâu rồi._
     ~ cang_thang(10)
@@ -198,7 +198,7 @@ hr: {sales} ơi. Em rảnh không, lên phòng anh uống trà xíu.
 === sales_tudo_npc_it ===
 # npc:it
 it: Gì?
-* [💁 "Anh Bảo, tin chị đi, anh nên chuyển wifi công ty sang gói xịn, em có đối tác."]
+* [💁 "Anh {it}, tin chị đi, anh nên chuyển wifi công ty sang gói xịn, em có đối tác."]
     it: Đối tác nào? Mã số thuế?
     sales: …
     it: Restart đi.
@@ -211,7 +211,7 @@ it: Gì?
     - else:
         _Bạn không có mì ly. {it} nhìn tay bạn, rồi đóng cửa phòng server._
     }
-* [💬 "Anh Bảo, anh Chương nợ anh bao nhiêu?"]
+* [💬 "Anh {it}, anh {dan_dau_tu} nợ anh bao nhiêu?"]
     it: 3 triệu. Cô 5 triệu. *(nhìn bạn)* Hội chủ nợ.
     sales: Mình lập group đi anh.
     it: Có rồi. 7 người. Cô chưa được mời vì cô hay đăng story.
@@ -241,7 +241,7 @@ idol_het_thoi: Em sales! Em biết anh là ai không? Show đám cưới tuần 
 === sales_tudo_npc_quan_ly_idol ===
 # npc:quan_ly_idol
 quan_ly_idol: Khoan, anh nghe máy chút. *(điện thoại 1)* Ừ ừ. *(điện thoại 2)* Đừng đăng gì hết! *(quay lại)* {sales}, có chuyện gì?
-* [💁 "Anh Thái, tin chị đi, em có nhà tài trợ cho anh {idol_het_thoi}."]
+* [💁 "Anh {quan_ly_idol}, tin chị đi, em có nhà tài trợ cho anh {idol_het_thoi}."]
     quan_ly_idol: *(nhìn bạn)* Nhà tài trợ thật hay nhà tài trợ… của em?
     ~ sl_phet(2)
 * [🤝 "Anh cần ai bán show đám cưới cho anh {idol_het_thoi}, em làm giùm. Không lấy phí."]
@@ -266,7 +266,7 @@ bien_kich: {sales}. Tui đang viết một nhân vật: cô gái nói phét đ�
     bien_kich: Tùy. Nếu cô ấy nói thật một lần thì… có thể.
     _Bạn nhìn {bien_kich}. {bien_kich} nhìn bạn. Hai người đều biết đó không còn là chuyện tiểu thuyết._
     ~ qh("bien_kich", 8)
-* [🧂 "Bà mượn ý tưởng của ai thì nhớ trả nha. Kiểu Chương trả nợ."]
+* [🧂 "Bà mượn ý tưởng của ai thì nhớ trả nha. Kiểu {dan_dau_tu} trả nợ."]
     bien_kich: *(mặt đanh lại)* Đây không phải đạo. Đây là cảm hứng.
     ~ qh("bien_kich", -5)
 - -> END
@@ -275,14 +275,14 @@ bien_kich: {sales}. Tui đang viết một nhân vật: cô gái nói phét đ�
 === sales_tudo_npc_editor ===
 # npc:editor
 editor: *(ngáp)* …Clip nhà tài trợ… em cần mấy giây?
-* [💁 "Tin chị đi anh Lĩnh, 30 giây là đủ viral!"]
+* [💁 "Tin chị đi anh {editor}, 30 giây là đủ viral!"]
     editor: …30 giây là 4 tiếng dựng. Ngáp.
     ~ qh("editor", -2)
 * [🤝 "5 giây thôi anh. Quán ốc. Em mua cà phê đen không đường cho anh."]
     editor: *(nhận ly)* …Em biết anh uống gì hả. Ok. 5 giây. Render xong là xong.
     ~ qh("editor", 8)
     ~ tien_cong(-25000)
-* [💬 "Anh Lĩnh, sao clip nào anh dựng cũng có con cú vậy?"]
+* [💬 "Anh {editor}, sao clip nào anh dựng cũng có con cú vậy?"]
     editor: *(mắt mở to lần đầu trong ngày)* …Em thấy hả?
     sales: Dân sales nhìn chi tiết để tìm điểm bán.
     editor: *(cười nhẹ)* Đừng kể ai.
@@ -292,7 +292,7 @@ editor: *(ngáp)* …Clip nhà tài trợ… em cần mấy giây?
 // ------------------------------------------------------------
 === sales_tudo_npc_designer ===
 # npc:designer
-designer: Huyền. Lại cần hồ sơ hả em? Nói trước: chị không vẽ trụ sở 40 tầng nữa đâu.
+designer: {sales}. Lại cần hồ sơ hả em? Nói trước: chị không vẽ trụ sở 40 tầng nữa đâu.
 * [🗂️ "Chị ơi, slide báo cáo thứ 6. Trục tung bắt đầu từ… con số em muốn."]
     designer: Trục tung không bắt đầu từ 0 là lừa đảo đồ họa đó em.
     sales: Là "nghệ thuật trình bày" chị ơi.
@@ -304,7 +304,7 @@ designer: Huyền. Lại cần hồ sơ hả em? Nói trước: chị không v�
     ~ an(40)
     ~ tien_cong(-70000)
     ~ qh("designer", 10)
-* [😇 "Chị Quỳnh. Nếu một ngày mình nghỉ, mở studio chung, chị chịu hông?"]
+* [😇 "Chị {designer}. Nếu một ngày mình nghỉ, mở studio chung, chị chịu hông?"]
     designer: *(im lặng)* Chị vẽ, em bán?
     sales: Em bán thật. Không phét.
     designer: Thì chị chịu. Nhưng biển hiệu chị làm, khách không được sửa.
@@ -324,7 +324,7 @@ chi_dai: {sales}. Ăn cơm chưa? Mặt em trắng hơn phấn em đánh nữa.
     chi_dai: Tối nay về nhà chị. Phố Cũ, số 45. Chị nấu canh chua. Đứa nào làm em đói, chỉ mặt chị.
     ~ an(30)
     ~ qh("chi_dai", 12)
-* [💬 "Chị Hương, sao chị không sợ ai hết vậy?"]
+* [💬 "Chị {chi_dai}, sao chị không sợ ai hết vậy?"]
     chi_dai: Tại chị không nợ ai lời nói dối nào. Không nợ thì không sợ.
     _Câu đó trúng thẳng vào giữa ngực bạn._
     ~ qh("chi_dai", 5)
@@ -334,7 +334,7 @@ chi_dai: {sales}. Ăn cơm chưa? Mặt em trắng hơn phấn em đánh nữa.
 === sales_tudo_npc_dan_dau_tu ===
 # npc:dan_dau_tu
 dan_dau_tu: {sales}! Anh biết em định nói gì. Nhưng nghe anh nè: đáy rồi, đáy thật rồi. Tuần sau anh trả em gấp đôi.
-* [📈 "Anh Chương, tháng 6 anh cũng nói đáy. Tháng này là đáy của đáy hả?"]
+* [📈 "Anh {dan_dau_tu}, tháng 6 anh cũng nói đáy. Tháng này là đáy của đáy hả?"]
     dan_dau_tu: Đáy có nhiều tầng em ạ. *(chuyển 200 nghìn)* Cho có.
     ~ sl_chuong_tra(200000)
 * [💁 "Tin chị đi, anh trả em hôm nay thì mai anh giàu, vì vũ trụ thưởng người sòng phẳng."]
@@ -375,7 +375,7 @@ thanh_xin_nghi: *(ho khụ khụ)* {sales}… tui hơi sốt… bà nói với a
 # npc:bac_bao_ve
 bac_bao_ve: Cháu {sales}. Về muộn thế. Ngồi uống cốc trà đá đã.
 * [💁 "Bác ơi, tin con đi, mai mốt con giàu con mua bác cái chòi mới."]
-    bac_bao_ve: *(cười)* Chòi này được rồi. Cháu giàu thì trả bác tiền ông Chương nợ hộ là được.
+    bac_bao_ve: *(cười)* Chòi này được rồi. Cháu giàu thì trả bác tiền ông {dan_dau_tu} nợ hộ là được.
     ~ sl_tin_chi_di = sl_tin_chi_di + 1
     ~ qh("bac_bao_ve", 3)
 * [😇 Ngồi xuống ghế bố: "Dạ con cảm ơn bác."]

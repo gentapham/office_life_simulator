@@ -8,7 +8,7 @@
 _Ngày Thị giác Thế giới. {chi_dai} kéo {editor} đi khám mắt ở Phòng khám Khỏe Re. {editor} ngáp suốt dọc hành lang._
 _Bạn nhìn theo. Phòng khám. Khám mắt. Một ý tưởng lóe lên như đèn LED._
 * [💁 Gọi Phòng khám Khỏe Re: "Tin chị đi, mình quay clip 'Editor cú đêm đi khám mắt', logo phòng khám chình ình."]
-    _Bác sĩ phòng khám, giọng rất dễ tính: "Lại là bên công ty G à? Thằng Sơn khám 8 lần rồi đó em."_
+    _Bác sĩ phòng khám, giọng rất dễ tính: "Lại là bên công ty G à? Thằng {thanh_xin_nghi} khám 8 lần rồi đó em."_
     _Nhưng bác đồng ý. Gói nhỏ: 2 triệu, kèm 5 suất khám miễn phí cho nhân viên._
     ~ sl_that(2)
     ~ follow(3000)
@@ -33,7 +33,7 @@ _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Ví bạn còn 47 ngh�
     ~ sl_phet(2)
     hong_hot: *(bình luận)* Bà detox hay bà hết tiền?
     _Bạn xóa bình luận đó. Rồi ăn trứng luộc. Một quả. Rồi thêm một quả._
-* [😇 Nói thật với {designer}: "Chị Quỳnh, em còn 47 nghìn."]
+* [😇 Nói thật với {designer}: "Chị {designer}, em còn 47 nghìn."]
     ~ sl_that_long()
     designer: Ngồi xuống. Chị chia nửa đĩa trứng chiên.
     ~ qh("designer", 8)
@@ -118,7 +118,7 @@ ke_toan: *(nhắn lại sau 2 phút)* Thứ 7 chị không duyệt. Mà em… �
 = doi_no
 _Gác lửng Hẻm 69. Cửa phòng {dan_dau_tu} dán kín giấy nhắc nợ: của {it}, của Bác {bac_bao_ve}, của {con_ong_chau_cha}. Sáu tờ là của bạn._
 _Bạn dán thêm tờ thứ 7. Gõ cửa. Trong phòng có tiếng nín thở._
-* [💁 "Anh Chương, chị biết anh ở trong. Tin chị đi, mở cửa thì vũ trụ thương."]
+* [💁 "Anh {dan_dau_tu}, chị biết anh ở trong. Tin chị đi, mở cửa thì vũ trụ thương."]
     dan_dau_tu: *(vọng ra)* Anh không có ở trong!
     _Một tờ 100 nghìn được đẩy ra từ khe cửa. Kèm mẩu giấy: "Tượng trưng. Đáy rồi."_
     ~ sl_chuong_tra(100000)
@@ -185,7 +185,7 @@ giam_doc: Phòng Kinh doanh báo cáo nhanh nhé. {sales}?
     ~ qh("ke_toan", 5)
 * [📞 Điện Thoại Giả: "Dạ em xin phép, chủ tịch BTT gọi!" rồi chạy ra ngoài.]
     ~ sl_phet(3)
-    _Đúng lúc đó, điện thoại reo thật. Màn hình: "Anh Chương (nợ 5tr)". {dan_dau_tu} ngồi ngay đối diện, đang cầm điện thoại._
+    _Đúng lúc đó, điện thoại reo thật. Màn hình: "Anh {dan_dau_tu} (nợ 5tr)". {dan_dau_tu} ngồi ngay đối diện, đang cầm điện thoại._
     dan_dau_tu: …Ủa, anh là chủ tịch BTT hả em?
     _Cả phòng cười. Bạn cười theo. Không vui._
     ~ cang_thang(10)
@@ -283,8 +283,8 @@ _Lần đầu tiên có người hỏi bản gốc. Lần đầu tiên bạn ngh
         _Bạn ra hành lang "nghe máy" 20 phút. {ke_toan} bị kéo đi họp. Thoát. Tạm thời._
         ~ sl_phet(5)
     - else:
-        _Điện thoại reo thật giữa lúc bạn đang "nghe". Màn hình: "Anh Chương (nợ {sl_no_chuong}đ)"._
-        ke_toan: Chủ tịch BTT tên Chương hả em?
+        _Điện thoại reo thật giữa lúc bạn đang "nghe". Màn hình: "Anh {dan_dau_tu} (nợ {sl_no_chuong}đ)"._
+        ke_toan: Chủ tịch BTT tên {dan_dau_tu} hả em?
         ~ sl_phet(10)
         ~ qh("ke_toan", -8)
     }

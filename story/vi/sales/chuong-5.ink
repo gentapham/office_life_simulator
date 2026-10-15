@@ -37,7 +37,7 @@ _{hr} và {it} đi từng bàn. {it} mở log truy cập mạng. Lịch sử tì
 # ngay:22 # gio:10:15 # noi:ban_thiet_ke
 _Đoàn kiểm tra thuế. Trưởng đoàn Chú Liêm, 55 tuổi, đi dọc dãy bàn. Cả công ty giả vờ chăm chỉ tới mức đáng ngờ._
 _Bàn {designer}. Balo hé ra góc laptop thứ hai, màn hình còn sáng, logo xanh lá chuối chình ình ở góc._
-ke_toan: Quỳnh, máy này của công ty hả em? Hóa đơn đâu em?
+ke_toan: {designer}, máy này của công ty hả em? Hóa đơn đâu em?
 _{designer} liếc sang bạn. Một cái liếc. Mật mã của hai đứa: "Cứu."_ # hen_gio:4
 * [🧋 Làm đổ ly trà sữa lên bàn mình. Thật mạnh.]
     _Trân châu lăn khắp sàn. Trà sữa chảy lên xấp hợp đồng. Cả đoàn quay sang._
@@ -74,8 +74,8 @@ _Đó là hợp đồng có giá trị lớn nhất trong sổ sách công ty. V
         _Bạn ra hành lang "nghe máy". Chú Liêm chờ 3 phút rồi chuyển sang bàn khác. Thoát. Tạm thời._
         ~ sl_phet(5)
     - else:
-        _Điện thoại reo thật. To. Màn hình hiện: "Anh Chương (nợ 5tr)". Chú Liêm nhìn màn hình, nhìn bạn._
-        chu_liem: Chủ tịch tên Chương à?
+        _Điện thoại reo thật. To. Màn hình hiện: "Anh {dan_dau_tu} (nợ 5tr)". Chú Liêm nhìn màn hình, nhìn bạn._
+        chu_liem: Chủ tịch tên {dan_dau_tu} à?
         ~ sl_phet(15)
         ~ cang_thang(15)
     }
@@ -128,7 +128,7 @@ dan_dau_tu: Anh nhìn chart cả đời. Cột của em cao 300%, tiền về th
     ~ sl_giay(-100)
     dan_dau_tu: *(nhìn bạn)* Em nói thật hai lần trong một tháng. Anh sợ em bệnh.
     ~ qh("dan_dau_tu", 10)
-* [💁 "Anh Chương. Tin chị đi, giữ số này giùm em. Em xóa 1 triệu tiền nợ."]
+* [💁 "Anh {dan_dau_tu}. Tin chị đi, giữ số này giùm em. Em xóa 1 triệu tiền nợ."]
     ~ sl_no_chuong = sl_no_chuong - 1000000
     ~ sl_phet(10)
     dan_dau_tu: *(nghĩ lâu)* …Anh giữ. Nhưng chỉ tới 30/10 thôi. Họp đánh giá là anh phải chiếu số thật.
@@ -273,7 +273,7 @@ sieu_nhan_hong: Anh {chua_te_deadline} ơi… em thích anh. Không phải PR đ
 _Bình luận nổ tung. Hashtag \#VũƠiTrảLờiĐi lên xu hướng trong 4 phút. {chua_te_deadline} đứng ở góc phòng, đứng hình._
 _Đúng lúc đó, một bóng đen lao vào. {cho}. Chiếc mũ bằng đường trên đỉnh bánh. Bánh kem bay._
 cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
-* [💁 Cầm micro: "Đây là tiết mục bất ngờ do nhà tài trợ… à, do Tuất tài trợ!"]
+* [💁 Cầm micro: "Đây là tiết mục bất ngờ do nhà tài trợ… à, do {cho} tài trợ!"]
     ~ follow(5000)
     ~ sl_phet(2)
     _Khán giả cười ồ. Ít ra là cười._
@@ -322,7 +322,7 @@ _{chi_dai} xếp riêng cho {dan_dau_tu} một bàn: "bàn chủ nợ". Bạn, {
 dan_dau_tu: *(đứng trước bảng trắng)* Kế hoạch trả nợ: giai đoạn 1, tích lũy. Giai đoạn 2, bứt phá. Giai đoạn 3…
 chi_dai: Giai đoạn 3 là trả. Nói con số.
 _Phần nợ của bạn còn: {sl_no_chuong}đ._
-* [📈 "Anh Chương, em đề xuất: anh làm báo cáo số liệu thật cho em, mỗi bản trừ 500 nghìn."]
+* [📈 "Anh {dan_dau_tu}, em đề xuất: anh làm báo cáo số liệu thật cho em, mỗi bản trừ 500 nghìn."]
     dan_dau_tu: *(mắt sáng)* Trả nợ bằng nghề! Được! Lần này là… trả thật!
     ~ sl_no_chuong = sl_no_chuong - 500000
     ~ sl_chuong_lam_ngo = true
@@ -414,7 +414,7 @@ sua_chua_hong_hao: Chào chị, bên em là Sữa Chua Hồng Hào ở Ven Đô.
 _Bạn đứng chết lặng. Rồi bạn hét lên. Rồi bạn kể với cả phòng._
 hong_hot: Ủa alo? Sữa Chua Hồng Hào gọi tài trợ 1 tỷ hả? Thôi {sales} ơi, tháng này em kể 7 nhà tài trợ rồi đó.
 _Cả phòng cười. Không ai tin. Kể cả bạn, một chút._ # hen_gio:8
-* [🤝 "Lần này thật mà chị Ngân. Thật tới mức… chị sợ."]
+* [🤝 "Lần này thật mà chị {hong_hot}. Thật tới mức… chị sợ."]
     ~ sl_tin_cuoc_goi = true
     ~ sl_that_long()
     hong_hot: *(cười)* Ờ, ờ. Chị tin. *(không tin)*
@@ -450,13 +450,13 @@ _Cả phòng cười. Không ai tin. Kể cả bạn, một chút._ # hen_gio:8
 === sales_2710_dem_quynh ===
 # ngay:27 # gio:22:30 # noi:can_1203 # bat_buoc
 _22 giờ 30. {designer} gọi video. Mắt đỏ, tóc rối._
-designer: Huyền. Hồ sơ LL gửi anh {sieu_nhan_hong} hôm nay. Bìa hồ sơ… là chị vẽ. Font của chị. Dự án Hồng Ngoại.
+designer: {sales}. Hồ sơ LL gửi anh {sieu_nhan_hong} hôm nay. Bìa hồ sơ… là chị vẽ. Font của chị. Dự án Hồng Ngoại.
 designer: Chị tự tay vẽ cái bẫy cho công ty mình. Anh Lá Chuối vừa nhắn: thưởng 2 triệu, mời full-time lương gấp đôi.
 _Bạn là người duy nhất biết bí mật này. Lời bạn nói lúc này nặng hơn bất kỳ deal nào._
 * [🤝 "Chị cắt đi. Tiền mình kiếm lại được. Chị thì chỉ có một."]
     ~ sl_quynh_cat_dut_ll = true
     ~ qh("designer", 15)
-    designer: *(im lặng lâu)* …Ừ. Chị nhắn anh ấy liền. Huyền… cảm ơn em.
+    designer: *(im lặng lâu)* …Ừ. Chị nhắn anh ấy liền. {sales}… cảm ơn em.
     sales: Mai mốt mình mở studio, chị vẽ, em bán. Bán thật.
     designer: *(cười trong nước mắt)* Em hứa thật đó nha.
 * [💁 "Tin chị đi, chị qua đó lương gấp đôi, em qua sau."]

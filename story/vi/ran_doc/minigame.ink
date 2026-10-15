@@ -62,7 +62,7 @@ giam_doc: Anh không giận. Anh chỉ… nhớ.
 // ------------------------------------------------------------
 === ran_doc_mg_sinh_nhat ===
 # minigame:sinh_nhat
-_Tổ Chức Sinh Nhật. Gom tiền cả phòng, chọn bánh, xếp lịch hát sao cho người được chúc không biết trước._
+_Tổ Chức Sinh {truong_phong}. Gom tiền cả phòng, chọn bánh, xếp lịch hát sao cho người được chúc không biết trước._
 _Mỗi người góp 50.000đ. {dan_dau_tu} hứa góp "tuần sau". {con_ong_chau_cha} đưa một tờ 500.000đ, bảo khỏi thối._
 sales: Bánh phải 3 tầng! Tin chị đi, ảnh đăng lên mới sang!
 ke_toan: Bánh 1 tầng. Có hóa đơn. Hết.

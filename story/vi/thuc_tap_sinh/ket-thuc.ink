@@ -50,15 +50,15 @@ _Đêm Hồng. Lần đầu tiên bạn đeo thẻ nhân viên màu cam. Có ả
 _Bạn vẫn cầm tấm hắt sáng. Tay vẫn mỏi từ bài thứ 3. Bạn vẫn "dạ anh, dạ chị"._
 chi_dai: *(bộ đàm)* {thuc_tap_sinh}, chuyển hắt sáng sang trái 20 phân. Giỏi.
 _Một bạn sinh viên tình nguyện chạy tới, ôm một cuộn dây điện, rụt rè._
-_"Dạ anh Duy ơi, cái này để đâu ạ? Em mới vô nên chưa biết ạ."_
-_"Anh Duy." Có người mới hơn bạn gọi bạn là "anh Duy"._
+_"Dạ anh {thuc_tap_sinh} ơi, cái này để đâu ạ? Em mới vô nên chưa biết ạ."_
+_"Anh {thuc_tap_sinh}." Có người mới hơn bạn gọi bạn là "anh Duy"._
 * [😇 "Để đó em. Lại đây anh chỉ."]
     _Bạn chỉ. Chậm rãi. Như {chi_dai} từng chỉ bạn. Như {it} từng chỉ phím C._
 * [🙇 "Dạ… à không. Ừ. Để anh làm cho."]
     _Bạn suýt "dạ" với một người nhỏ hơn mình 9 tuổi. Thói quen hai tháng. Bạn cười, rồi chỉ cho bạn ấy._
 - _Pháo giấy hồng phủ kín sân khấu. Bạn hạ tấm hắt sáng xuống._
 _11 giờ đêm, bạn về Hẻm 69. 3 bạn cùng phòng đã chờ sẵn với một gói mì mỗi người và một cây nến cắm trên tháp mì gói._
-_Anh thợ hồ giơ ly trà đá: "Chúc mừng thằng Duy có việc chính thức!"_
+_Anh thợ hồ giơ ly trà đá: "Chúc mừng thằng {thuc_tap_sinh} có việc chính thức!"_
 _Dưới gối, cái thẻ kim cương vẫn nằm đó. Bạn không cần nó tối nay. Lương 13 triệu. Đủ mua thêm một tầng cho tháp mì._
 -> END
 
@@ -144,7 +144,7 @@ _Bạn nhìn cái tháp mì gói. Nó cao hơn tháng trước. Bạn đã mua t
     _Bạn ăn mì. Một mình. Không ai hỏi bạn lương bao nhiêu. Mà ai cũng biết rồi._
 * [📱 Mở Tóp-tóp xem Đêm Hồng.]
     _Trên livestream, bạn thấy {chi_dai} nhìn quanh, như tìm ai đó. Rồi thôi._
-- _Điện thoại rung. Một tin nhắn. {dan_dau_tu}: "Anh Duy ơi, coin lên rồi! Cho em thêm 5 triệu nữa thôi."_
+- _Điện thoại rung. Một tin nhắn. {dan_dau_tu}: "Anh {thuc_tap_sinh} ơi, coin lên rồi! Cho em thêm 5 triệu nữa thôi."_
 _Bạn úp điện thoại xuống. Sờ xuống gối. Cái thẻ kim cương vẫn ở đó, sáng lấp lánh trong bóng tối._
 _Lần đầu tiên, bạn ước gì nó chỉ là thẻ tích điểm siêu thị._
 -> END

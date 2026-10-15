@@ -17,7 +17,7 @@ _{hr} cầm danh sách xếp chỗ. Bạn lên trễ nhất, như một ngôi sa
     ~ qh("quan_ly_idol", 10)
     ~ phat_tt(-3)
 * [🍌 Ngồi cạnh {sieu_nhan_hong}, chìa ra một bịch chuối chiên.]
-    sieu_nhan_hong: Ủa anh Phát! Anh mua cho em hả? *(cầm bằng hai tay)* Dạ em cảm ơn! Chuối là thái độ!
+    sieu_nhan_hong: Ủa anh {idol_het_thoi}! Anh mua cho em hả? *(cầm bằng hai tay)* Dạ em cảm ơn! Chuối là thái độ!
     _Nguyên hỏi bạn đủ thứ: cách lấy hơi, cách cúi chào, cách nhìn ống kính mà không run. Bạn trả lời hết. Ba tiếng trôi qua nhanh như một bài hát._
     ~ qh("sieu_nhan_hong", 12)
     { phat_tinh_tuong <= 60:
@@ -73,7 +73,7 @@ _{hong_hot} đang quay clip. Ai cũng thấy {hong_hot} đang quay clip. Trừ {
     ~ phat_tt(8)
     ~ qh("sales", 3)
 * [💬 Ngồi xuống cạnh {giam_doc}: "Anh say rồi. Mà hợp đồng em… anh tính chưa?"]
-    giam_doc: *(vỗ vai bạn, mạnh)* Phát à. Em là thằng em của anh. Anh tính rồi. Tính… mai anh tính.
+    giam_doc: *(vỗ vai bạn, mạnh)* {idol_het_thoi} à. Em là thằng em của anh. Anh tính rồi. Tính… mai anh tính.
     _Rồi anh {giam_doc} gục đầu xuống bàn, ngủ. Tay vẫn đặt trên vai bạn._
     ~ qh("giam_doc", 5)
     ~ cang_thang(5)
@@ -121,7 +121,7 @@ _Bạn ngồi ngay giữa hai người. Ba giây._ # hen_gio:3
 # ngay:17 # gio:23:20 # noi:lua_trai_vung_tau # bat_buoc
 _Lửa tàn dần. Mọi người về phòng gần hết. Anh {quan_ly_idol} ngồi cạnh bạn, rất lâu, nhìn đống lửa, như sắp nói gì đó. Hai điện thoại úp xuống cát._
 _Bạn đã uống năm lon bia. Hay bảy._
-quan_ly_idol: Phát nè… mười một năm rồi đó em. Có lúc nào em muốn bỏ hông?
+quan_ly_idol: {idol_het_thoi} nè… mười một năm rồi đó em. Có lúc nào em muốn bỏ hông?
 * [🕶️ "Bỏ gì anh? Fan em đông lắm mà."]
     _Anh {quan_ly_idol} cười. Im lặng. Ngọn lửa nổ lách tách._
     ~ phat_tt(5)
@@ -145,7 +145,7 @@ _Anh {quan_ly_idol} ngồi im tới khi lửa tàn hẳn._
 _Bạn tỉnh dậy trên ghế bố ngoài hiên, quấn trong cái chăn của khách sạn. Không nhớ gì sau lon bia thứ năm. Hay thứ bảy._
 _Anh {quan_ly_idol} đứng ở bờ biển, nói điện thoại. Mắt đỏ. Như người thức trắng cả đêm._
 _{dan_dau_tu} ngồi bệt trên cát, nhìn điện thoại, mặt trắng bệch._
-dan_dau_tu: Hồng Coin… về 0. Người tạo coin ôm tiền biến mất lúc 4 giờ sáng. Ông Phát… 2 triệu của ông…
+dan_dau_tu: Hồng Coin… về 0. Người tạo coin ôm tiền biến mất lúc 4 giờ sáng. Ông {idol_het_thoi}… 2 triệu của ông…
 { phat_no > 54000000:
     _Hai triệu bạn mượn thẻ tín dụng để mua coin. Giờ là hai triệu nợ, không coin._
 }
@@ -168,7 +168,7 @@ dan_dau_tu: Hồng Coin… về 0. Người tạo coin ôm tiền biến mất l
 # ngay:18 # gio:19:30 # noi:sanh_sky_ao
 _Về tới thành phố thì ai cũng giận ai. Trên xe, {sales} không nói với {ke_toan}, {truong_phong} không nói với {con_ong_chau_cha}._
 _Sảnh Sky Ảo. {con_ong_chau_cha} đứng trước bảng thông báo, kéo vali. Trên bảng có tờ rao: "BÁN GẤP PENTHOUSE TẦNG 30, CHÍNH CHỦ"._
-con_ong_chau_cha: Anh Phát. Penthouse của em. Chú em… rao bán mà không nói em. Em đọc ở bảng thông báo như người lạ.
+con_ong_chau_cha: Anh {idol_het_thoi}. Penthouse của em. Chú em… rao bán mà không nói em. Em đọc ở bảng thông báo như người lạ.
 * [😇 "Lên nhà anh ngồi chơi. Nhà anh nhỏ mà có poster coi đỡ buồn."]
     _{con_ong_chau_cha} ngồi ở căn 1808, nhìn bốn bức tường toàn hình bạn, bật cười lần đầu trong ngày._
     con_ong_chau_cha: Anh sống với chính mình vậy hông mệt hả anh?
@@ -180,7 +180,7 @@ con_ong_chau_cha: Anh Phát. Penthouse của em. Chú em… rao bán mà không 
     idol_het_thoi: Hồng không phải màu, Hồng là thái độ. Hay. Hay hơn mọi thứ công ty mình làm năm nay.
     _{con_ong_chau_cha} không nói gì. Chỉ đứng thẳng lưng hơn một chút._
     ~ qh("con_ong_chau_cha", 20)
-* [🕶️ "Chú em là anh Thắng mà. Gọi chú em đi."]
+* [🕶️ "Chú em là anh {giam_doc} mà. Gọi chú em đi."]
     con_ong_chau_cha: *(cười nhạt)* Câu đó của em. Anh lấy rồi thì em nói gì giờ.
     ~ qh("con_ong_chau_cha", -5)
     ~ phat_tt(3)
@@ -191,7 +191,7 @@ con_ong_chau_cha: Anh Phát. Penthouse của em. Chú em… rao bán mà không 
 # ngay:19 # gio:11:10 # noi:phong_nghe_si
 _Thứ 2. Họp giao ban xong, không ai nhìn mặt ai. Mai là sinh nhật công ty 16 tuổi kiêm Ngày Phụ nữ Việt Nam._
 _{thanh_xin_nghi} hôm nay có mặt, đang xếp lịch văn nghệ trên bảng trắng. Dòng đầu tiên, như mọi năm: "Mở màn: {idol_het_thoi} - Công Viên"._
-thanh_xin_nghi: Anh Phát, năm nay anh hát gì? Vẫn bài đó hả anh? *(ho nhẹ)* Em hơi sốt.
+thanh_xin_nghi: Anh {idol_het_thoi}, năm nay anh hát gì? Vẫn bài đó hả anh? *(ho nhẹ)* Em hơi sốt.
 * [🎤 "Vẫn bài đó. Anh {giam_doc} thích bài đó."]
     thanh_xin_nghi: Dạ. Em ghi.
     ~ phat_tt(2)
@@ -201,7 +201,7 @@ thanh_xin_nghi: Anh Phát, năm nay anh hát gì? Vẫn bài đó hả anh? *(ho
     _Có cái gì đó trong giọng {thanh_xin_nghi} làm bạn nhớ tấm thẻ "Vòng 2, thí sinh số 27"._
     ~ qh("thanh_xin_nghi", 8)
     ~ phat_tt(-5)
-* [🤝 "Xếp em hát mở màn đi Sơn. Anh hát sau."]
+* [🤝 "Xếp em hát mở màn đi {thanh_xin_nghi}. Anh hát sau."]
     thanh_xin_nghi: *(làm rơi bút)* Em… em hông hát được anh ơi. Em… bà ngoại em…
     { biet(son_thi_hat):
         idol_het_thoi: Thí sinh số 27 mà hông hát được?
@@ -266,7 +266,7 @@ _Sinh nhật {cong_ty} 16 tuổi. Sảnh tầng trệt treo bong bóng cam và h
 _{giam_doc} cầm micro phát biểu. Hôm nay không có từ tiếng Anh nào sai chỗ. Hôm nay giọng anh run._
 giam_doc: Năm 2015, anh ngồi trong một quán cà phê đầu ngõ. Có một cậu sinh viên ôm đàn hát một bài về hai đứa bạn bán cá viên chiên…
 _Cả sảnh quay sang nhìn bạn._
-giam_doc: Phát. Lên đây em. Hát đi.
+giam_doc: {idol_het_thoi}. Lên đây em. Hát đi.
 * [🎤 Hát "Công Viên" cho anh {giam_doc}. Đúng bản ở quán cà phê năm 2015.]
     _Bạn hát lệch tông câu thứ ba, như năm đó. Cố ý. Anh {giam_doc} nghe tới câu thứ ba thì bật cười, rồi lấy tay che mắt._
     ~ qh("giam_doc", 15)
@@ -300,7 +300,7 @@ _Sau quán ốc, tăng hai ở Karaoke Hát Cho Nhau Nghe. {giam_doc} say. Rất
 giam_doc: Anh hứa! Tăng lương… 20%! Cả công ty! Ai quay thì quay đi, anh không sợ!
 _{hong_hot} quay. Lần này {giam_doc} nhìn thẳng vào ống kính, giơ ngón cái._
 _Rồi {giam_doc} quay sang bạn, mắt đỏ._
-giam_doc: Phát. Hợp đồng em… Anh sợ lắm em ạ. Anh sợ anh giữ em lại để em hát đám cưới thêm mười năm. Thế thì anh có lỗi với em.
+giam_doc: {idol_het_thoi}. Hợp đồng em… Anh sợ lắm em ạ. Anh sợ anh giữ em lại để em hát đám cưới thêm mười năm. Thế thì anh có lỗi với em.
 * [📖 "Anh hông có lỗi. Anh là người duy nhất từng tin em."]
     giam_doc: *(gục đầu lên vai bạn)* Thế à… Thế thì tốt…
     _Lần đầu tiên bạn nói câu đó thành lời. Anh {giam_doc} có thể sẽ không nhớ. Bạn thì nhớ._

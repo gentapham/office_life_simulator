@@ -6,7 +6,7 @@
 === sales_1510_thang_may ===
 # ngay:15 # gio:08:10 # noi:sanh_tang_tret # bat_buoc
 _8 giờ 5 phút. Phụt. Mất điện cả tòa nhà. Từ trong thang máy vọng ra hai giọng: {giam_doc} và {chi_dai}._
-giam_doc: *(vọng ra)* Hương ơi, em bình tĩnh nhé. Anh không ép em bình tĩnh đâu, tùy em…
+giam_doc: *(vọng ra)* {chi_dai} ơi, em bình tĩnh nhé. Anh không ép em bình tĩnh đâu, tùy em…
 chi_dai: *(vọng ra)* Anh im giùm em là em bình tĩnh liền!
 _Bạn đứng ngay trước cửa thang máy, tay cầm ly trà sữa, điện thoại còn 60% pin._
 * [💁 Áp miệng vào khe cửa: "Sếp ơi, tin chị đi, 10 phút nữa có người tới cứu!"]
@@ -31,7 +31,7 @@ _Bạn đứng ngay trước cửa thang máy, tay cầm ly trà sữa, điện 
 === sales_1510_trang_47 ===
 # ngay:15 # gio:10:30 # noi:pantry # bat_buoc
 _Pantry tối. Cả công ty ngồi bệt dưới sàn. Bạn ngồi cạnh {ke_toan} và {chi_dai}, vừa được cứu khỏi thang máy, mặt còn hầm hầm._
-ke_toan: *(thì thầm với {chi_dai})* Hương. Trang 47. Nếu không đủ 1 triệu người theo dõi, công ty hoàn lại 10 tỷ.
+ke_toan: *(thì thầm với {chi_dai})* {chi_dai}. Trang 47. Nếu không đủ 1 triệu người theo dõi, công ty hoàn lại 10 tỷ.
 chi_dai: Mười… tỷ?
 ke_toan: Và ngân sách Đêm Hồng thì đang tính 2 tỷ của {sales}.
 ~ phat_hien(trang_47)
@@ -40,7 +40,7 @@ _Lần đầu tiên, 2 tỷ không còn là con số để phét. Nếu không c
 * [😶 Ngồi im. Không ai biết bạn nghe được.]
     ~ cang_thang(15)
     _Bạn ôm gối, đếm từng nhịp thở. 2 tỷ. 10 tỷ. 0 đồng. Ba con số đuổi nhau trong đầu._
-* [🤝 Lên tiếng trong bóng tối: "Chị Thương… 2 tỷ đó… em chưa chắc đâu chị."]
+* [🤝 Lên tiếng trong bóng tối: "Chị {ke_toan}… 2 tỷ đó… em chưa chắc đâu chị."]
     ~ sl_that_long()
     ke_toan: *(im lặng rất lâu)* …Chị biết. Chị đoán vậy từ ngày 2.
     chi_dai: *(vỗ vai bạn trong bóng tối)* Thôi. Giờ biết rồi thì làm cho có thật. Chị giúp.

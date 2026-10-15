@@ -7,19 +7,19 @@
 # ngay:1 # gio:06:50 # noi:nha_ven_do # bat_buoc
 _Nhà vườn Ven Đô. 6 giờ 50 sáng. Gà gáy thật, không phải gà tải trên mạng. Trên tường, ảnh bà ngoại cười tươi khỏe re._
 _Bạn cầm điện thoại, tập giọng yếu ớt trước gương. Hôm nay Quốc tế Người cao tuổi. Lý do đẹp như trong sách._
-_"Dạ anh Tuấn, hôm nay ngày người cao tuổi, bà ngoại em cũng là người cao tuổi, em xin phép…"_
-_Điện thoại reo trước khi bạn kịp bấm gọi. Màn hình: "Anh Thái (2)". Rồi "Anh Thái (3)". Rồi "Anh Thái (5)"._
-quan_ly_idol: Sơn! Đừng có nói với anh là bà ngoại! Hôm nay ký hợp đồng 5 tỷ! Vắng em là anh chết! Anh chết thiệt đó!
-* [🤧 Ho giả: "Khụ khụ… anh Thái… em hơi sốt…"]
+_"Dạ anh {hr}, hôm nay ngày người cao tuổi, bà ngoại em cũng là người cao tuổi, em xin phép…"_
+_Điện thoại reo trước khi bạn kịp bấm gọi. Màn hình: "Anh {quan_ly_idol} (2)". Rồi "Anh {quan_ly_idol} (3)". Rồi "Anh {quan_ly_idol} (5)"._
+quan_ly_idol: {thanh_xin_nghi}! Đừng có nói với anh là bà ngoại! Hôm nay ký hợp đồng 5 tỷ! Vắng em là anh chết! Anh chết thiệt đó!
+* [🤧 Ho giả: "Khụ khụ… anh {quan_ly_idol}… em hơi sốt…"]
     quan_ly_idol: Sốt thì uống hạ sốt rồi tới! Anh mua sẵn cho em ở quầy lễ tân! Có cả cháo!
     ~ son_tin(-3)
-    _Anh Thái lo hết, kể cả cơn sốt bạn chưa kịp có._
+    _Anh {quan_ly_idol} lo hết, kể cả cơn sốt bạn chưa kịp có._
 * [😇 "Dạ, em tới liền."]
     quan_ly_idol: Đó! Vậy mới là em anh! Mang theo cuốn sổ lịch nha!
     ~ qh("quan_ly_idol", 5)
     ~ son_soi(-3)
 * [👵 "Anh ơi… bà ngoại em…"]
-    quan_ly_idol: Bà ngoại em ốm 7 lần trong năm rồi Sơn. Lần thứ 8 để tháng sau đi. Anh xin em đó.
+    quan_ly_idol: Bà ngoại em ốm 7 lần trong năm rồi {thanh_xin_nghi}. Lần thứ 8 để tháng sau đi. Anh xin em đó.
     ~ son_tin(-5)
     ~ qh("quan_ly_idol", -3)
 - _Bạn nhìn ảnh bà ngoại trên tường. Bà vẫn cười. Bà ở quê, khỏe re, đang đi tập dưỡng sinh. Bạn xin lỗi bà lần thứ 32 trong năm, rồi dắt xe ra._
@@ -32,9 +32,9 @@ quan_ly_idol: Sơn! Đừng có nói với anh là bà ngoại! Hôm nay ký h�
 _Phòng họp tầng 2. Một người mặc nguyên bộ siêu nhân màu hồng ký vào tập hợp đồng 52 trang. 5 tỷ về tài khoản. Cả phòng hò reo._
 sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ!
 _Rồi {giam_doc} quay sang bạn, đặt vào tay bạn một cuốn sổ lịch dày cộp, bìa hồng._
-giam_doc: Sơn. Đây là lịch 30 ngày của Siêu Nhân Hồng. Em giữ. Từ hôm nay em là người quan trọng nhất công ty sau anh. Anh không ép, tùy em.
+giam_doc: {thanh_xin_nghi}. Đây là lịch 30 ngày của Siêu Nhân Hồng. Em giữ. Từ hôm nay em là người quan trọng nhất công ty sau anh. Anh không ép, tùy em.
 _Bạn lật trang cuối. Một dòng in đậm: "31/10, 19:30: ĐÊM HỒNG HALLOWEEN. Toàn công ty có mặt. Không ai được nghỉ."_
-_Chữ "không ai được nghỉ" được ai đó gạch chân hai lần bằng bút đỏ. Nét gạch giống chữ anh Tuấn._
+_Chữ "không ai được nghỉ" được ai đó gạch chân hai lần bằng bút đỏ. Nét gạch giống chữ anh {hr}._
 * [📅 "Dạ, em lo được. Lịch là nghề của em."]
     ~ uy_tin = uy_tin + 3
     ~ qh("giam_doc", 5)
@@ -46,14 +46,14 @@ _Chữ "không ai được nghỉ" được ai đó gạch chân hai lần bằn
     giam_doc: Siêu nhân thì nghỉ gì em. Mà em hỏi thế làm gì? Em định nghỉ à?
     ~ son_soi(5)
     hr: *(đứng sát tường, cười)* …
-    _Bạn thấy anh Tuấn mỉm cười ở góc phòng. Bạn nổi da gà._
+    _Bạn thấy anh {hr} mỉm cười ở góc phòng. Bạn nổi da gà._
 - _{sieu_nhan_hong} đi vòng bàn bắt tay từng người, dừng lại trước bạn._
 sieu_nhan_hong: Em là người giữ lịch hả? Lịch anh có chỗ nào ghi "đi giúp người" hông?
 * [🤝 "Dạ có. Em chừa cho anh mỗi ngày một khung, 15 phút."]
     ~ son_khung_gio_giup_nguoi = true
     ~ qh("sieu_nhan_hong", 10)
     sieu_nhan_hong: Slay! Em là người hiểu anh nhất công ty!
-    chi_dai: *(liếc qua)* Lịch gì có dòng "đi giúp người", Sơn?
+    chi_dai: *(liếc qua)* Lịch gì có dòng "đi giúp người", {thanh_xin_nghi}?
 * [📅 "Dạ hông có anh. Lịch kín lắm."]
     sieu_nhan_hong: Ờ… vậy anh tự chen vô. *(tạo dáng, hơi buồn)*
     ~ qh("sieu_nhan_hong", -3)
@@ -62,15 +62,15 @@ sieu_nhan_hong: Em là người giữ lịch hả? Lịch anh có chỗ nào ghi
 // ------------------------------------------------------------
 === thanh_xin_nghi_0110_trua_xe_day ===
 # ngay:1 # gio:12:10 # noi:xe_day_com
-_Trưa. Bạn với {quan_ly_idol} ăn vội ở xe đẩy cơm đầu hẻm, đứng ăn. Anh Thái cầm hai cái điện thoại, đũa kẹp giữa hai ngón._
-quan_ly_idol: Khoan, anh nghe máy chút… Alo… Ừ… Đám cưới tối thứ 7 hả, Phát hát 3 bài, 4 triệu… Rồi.
-quan_ly_idol: Sơn. Phát cuối tuần này hát 2 đám cưới. Em xếp xe cho ổng giùm anh.
+_Trưa. Bạn với {quan_ly_idol} ăn vội ở xe đẩy cơm đầu hẻm, đứng ăn. Anh {quan_ly_idol} cầm hai cái điện thoại, đũa kẹp giữa hai ngón._
+quan_ly_idol: Khoan, anh nghe máy chút… Alo… Ừ… Đám cưới tối thứ 7 hả, {idol_het_thoi} hát 3 bài, 4 triệu… Rồi.
+quan_ly_idol: {thanh_xin_nghi}. {idol_het_thoi} cuối tuần này hát 2 đám cưới. Em xếp xe cho ổng giùm anh.
 _Bạn nhìn {quan_ly_idol}. 37 tuổi, mắt thâm, 2 cái điện thoại. Anh lo cho cả thế giới, trừ chính mình._
 * [🤝 "Anh ăn đi, để em nghe máy giùm 5 phút."]
     ~ qh("quan_ly_idol", 8)
-    _Bạn nghe 3 cuộc. Anh Thái ăn được nửa hộp cơm. Lần đầu trong tuần._
+    _Bạn nghe 3 cuộc. Anh {quan_ly_idol} ăn được nửa hộp cơm. Lần đầu trong tuần._
     quan_ly_idol: Em mà đi làm đủ ngày thì anh sống thêm được 10 năm.
-* [💬 "Anh Thái… nếu em có một bí mật, anh có giận em không?"]
+* [💬 "Anh {quan_ly_idol}… nếu em có một bí mật, anh có giận em không?"]
     quan_ly_idol: Bí mật gì? Em lấy vợ hả?
     _Bạn cười, lắc đầu. Chưa phải lúc._
     ~ qh("quan_ly_idol", 3)
@@ -102,11 +102,11 @@ _Hai sân khấu. Một đêm. Cách nhau 30 phút xe máy. Giờ cao điểm th
 // ------------------------------------------------------------
 === thanh_xin_nghi_0210_cuoi_cham_cong ===
 # ngay:2 # gio:07:58 # noi:tang_tret # bat_buoc
-_Ngày Nụ cười Thế giới. Tối qua {giam_doc} nhắn group: "Mai ai chấm công cũng phải cười nhé." Ở máy chấm công là anh Tuấn. Đang cười. Rất tươi._
+_Ngày Nụ cười Thế giới. Tối qua {giam_doc} nhắn group: "Mai ai chấm công cũng phải cười nhé." Ở máy chấm công là anh {hr}. Đang cười. Rất tươi._
 _4 người phía trước bạn đã quay đầu chạy ra bãi xe._
-hr: Chào em Sơn. Cười lên nào. Hôm nay ngày Nụ cười.
+hr: Chào em {thanh_xin_nghi}. Cười lên nào. Hôm nay ngày Nụ cười.
 * [😁 Cười gượng hết cỡ.]
-    _Bạn nhe răng. Má co giật. Anh Tuấn nhìn bạn rất lâu, rồi ghi gì đó vào cuốn sổ nhỏ._
+    _Bạn nhe răng. Má co giật. Anh {hr} nhìn bạn rất lâu, rồi ghi gì đó vào cuốn sổ nhỏ._
     ~ son_soi(5)
     _Sau này bạn mới biết anh ấy ghi: "Nụ cười của người sắp xin nghỉ."_
 * [🎤 Cười kiểu sân khấu, nghiêng đầu 15 độ, mắt long lanh.]
@@ -126,7 +126,7 @@ hr: Chào em Sơn. Cười lên nào. Hôm nay ngày Nụ cười.
 === thanh_xin_nghi_0210_hop_chien_dich ===
 # ngay:2 # gio:09:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp chiến dịch "Hồng Hóa Việt Nam". {truong_phong} vẽ mũi tên lên bảng: "1.000.000". {sales} hứa 3 nhà tài trợ 2 tỷ từ BTT Global. {thuc_tap_sinh} kể một ý tưởng phim về người hùng không tên._
-truong_phong: Sơn, em trình bày lịch tổng thể của Siêu Nhân Hồng nhé.
+truong_phong: {thanh_xin_nghi}, em trình bày lịch tổng thể của Siêu Nhân Hồng nhé.
 _Bạn bật máy chiếu. Một cái bảng 30 ô, màu hồng. Bạn đã thức tới 1 giờ sáng để tô._
 * [📅 Lịch kín, chặt, không một khe hở.]
     ~ follow(10000)
@@ -136,13 +136,13 @@ _Bạn bật máy chiếu. Một cái bảng 30 ô, màu hồng. Bạn đã th�
     _Lịch chặt tới mức không có chỗ cho chính bạn. Bạn biết. Bạn vẫn trình bày._
 * [🤝 Lịch có "khung giờ giúp người" 15 phút mỗi ngày, có máy quay đi theo.]
     ~ son_khung_gio_giup_nguoi = true
-    chi_dai: Lịch gì có dòng "đi giúp người", Sơn? Rồi lỡ ổng giúp lố 2 tiếng thì sao?
+    chi_dai: Lịch gì có dòng "đi giúp người", {thanh_xin_nghi}? Rồi lỡ ổng giúp lố 2 tiếng thì sao?
     thanh_xin_nghi: Dạ… thì mình quay 2 tiếng chị. Clip giúp người là clip người ta xem nhiều nhất.
     _{dan_dau_tu} gật gù, mở chart. {sieu_nhan_hong} vỗ tay to nhất phòng._
     ~ qh("sieu_nhan_hong", 5)
     ~ qh("chi_dai", -3)
 * [🗂️ Lịch có vài ô trống "dự phòng" rơi đúng ngày 14/10 và 25/10.]
-    _Không ai để ý. Chỉ có anh Tuấn nhìn cái ô trống ngày 14/10 hơi lâu._
+    _Không ai để ý. Chỉ có anh {hr} nhìn cái ô trống ngày 14/10 hơi lâu._
     ~ son_soi(5)
     ~ son_mo(3)
 - -> END
@@ -151,7 +151,7 @@ _Bạn bật máy chiếu. Một cái bảng 30 ô, màu hồng. Bạn đã th�
 === thanh_xin_nghi_0310_lop_thanh_nhac ===
 # ngay:3 # gio:15:00 # noi:lop_thanh_nhac
 _Thứ 7. Một phòng tập nhỏ trên lầu tiệm sửa đàn ở Phường Tân Drama. Cô giáo thanh nhạc ngồi ở đàn, kính trễ xuống mũi._
-phu_co_giao_thanh_nhac: Sơn. Vòng 2 sắp tới rồi. Em còn ho giả nhiều quá, cổ họng em quen kiểu ho đó rồi. Phải bỏ.
+phu_co_giao_thanh_nhac: {thanh_xin_nghi}. Vòng 2 sắp tới rồi. Em còn ho giả nhiều quá, cổ họng em quen kiểu ho đó rồi. Phải bỏ.
 thanh_xin_nghi: Dạ… nghề của em cần ho cô ơi.
 phu_co_giao_thanh_nhac: Nghề gì mà cần ho?
 * [😅 "Dạ… nghề xin nghỉ ạ."]
@@ -177,7 +177,7 @@ phu_co_giao_thanh_nhac: Nghề gì mà cần ho?
 _Chủ nhật. Ngày Động vật. Quán cà phê Sống Ảo, đèn vàng, cây xanh. Bạn ngồi trên ghế cao, ôm đàn guitar, khẩu trang và mũ lưỡi trai che gần hết mặt._
 _Bàn trong góc: một người mặc bộ đồ siêu nhân màu hồng, đang ăn bánh chuối chiên. Đeo đôi găng hồng (đôi dự phòng, Nguyên than với cô phục vụ là đôi chính bị "một con chó ở công ty" cướp sáng nay)._
 _Bạn nhận ra bộ găng tay hồng ngay. Bạn kéo mũ xuống thấp hơn._
-phu_chu_quan_song_ao: Sơn, tối nay đông. Hát gì cho khách vui đi em.
+phu_chu_quan_song_ao: {thanh_xin_nghi}, tối nay đông. Hát gì cho khách vui đi em.
 * [🎶 Một bài ballad buồn, hát mộc.]
     ~ son_mo(5)
     _Cả quán im lặng. Có cô gái bàn bên lấy khăn giấy chấm mắt. Góc trong cùng, bộ đồ hồng ngồi yên, không ăn bánh nữa._
@@ -201,8 +201,8 @@ _{sieu_nhan_hong} không nhận ra bạn. Bạn mới gặp anh ấy 3 ngày tr�
 * [🤐 Nhận tiền, cúi đầu cảm ơn, im lặng.]
     ~ tien_cong(500000)
     _{sieu_nhan_hong} vẫy tay rồi biến mất trên chiếc xe hồng. Bí mật vẫn là bí mật._
-* [🙋 Kéo khẩu trang xuống: "Anh Nguyên! Em là Sơn, người giữ lịch của anh nè!"]
-    sieu_nhan_hong: *(làm rơi miếng bánh chuối)* Sơn?! Sơn giữ lịch?! Em… em hát hả?
+* [🙋 Kéo khẩu trang xuống: "Anh Nguyên! Em là {thanh_xin_nghi}, người giữ lịch của anh nè!"]
+    sieu_nhan_hong: *(làm rơi miếng bánh chuối)* {thanh_xin_nghi}?! {thanh_xin_nghi} giữ lịch?! Em… em hát hả?
     thanh_xin_nghi: Dạ… anh giữ bí mật giùm em nha. Ở công ty không ai biết.
     sieu_nhan_hong: Bí mật hả? Anh giỏi giữ bí mật lắm. Thiệt đó. *(chỉ vào cái mũ)* Cái này là bằng chứng.
     ~ tien_cong(500000)

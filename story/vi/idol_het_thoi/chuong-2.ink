@@ -6,9 +6,9 @@
 === idol_het_thoi_0510_hoa_cua_duy ===
 # ngay:5 # gio:11:05 # noi:studio
 _Thứ 2, Ngày Nhà giáo Thế giới. Bạn tới lúc 11 giờ 5 phút, như mọi ngày. Họp giao ban đã xong từ lâu, chỉ còn tiếng {truong_phong} vọng ra: "…take note lại nhé."_
-_Trên cái ghế trong studio có một bông hồng, gói giấy kiếng, kèm tấm thiệp: "Kính tặng thầy Phát. Em là học trò âm nhạc của thầy qua đám cưới anh họ. Duy."_
+_Trên cái ghế trong studio có một bông hồng, gói giấy kiếng, kèm tấm thiệp: "Kính tặng thầy {idol_het_thoi}. Em là học trò âm nhạc của thầy qua đám cưới anh họ. {thuc_tap_sinh}."_
 thuc_tap_sinh: *(ló đầu vào)* Dạ anh! Hôm nay Ngày Nhà giáo Thế giới ạ. Em tặng hết các thầy cô trong phòng. Anh dạy em cách cầm micro mà anh không biết đó ạ.
-* [😇 "Cảm ơn Duy. Lại đây, anh dạy cầm micro thiệt cho."]
+* [😇 "Cảm ơn {thuc_tap_sinh}. Lại đây, anh dạy cầm micro thiệt cho."]
     _Bạn chỉ cho {thuc_tap_sinh}: micro cách miệng một nắm tay, tay kia để thả lỏng, đừng nhìn xuống đất. {thuc_tap_sinh} ghi vào sổ, gạch chân ba lần._
     thuc_tap_sinh: Dạ em cảm ơn thầy! À, anh!
     ~ qh("thuc_tap_sinh", 12)
@@ -28,7 +28,7 @@ thuc_tap_sinh: *(ló đầu vào)* Dạ anh! Hôm nay Ngày Nhà giáo Thế gi�
 === idol_het_thoi_0510_ba_quan_ly ===
 # ngay:5 # gio:21:10 # noi:sanh_sky_ao
 _Sảnh chung cư Sky Ảo. Bạn vừa đi khai trương về, áo còn dính pháo giấy. Bà quản lý tòa nhà đang đứng chờ cạnh thang máy, tay cầm một xấp giấy._
-ba_quan_ly_sky_ao: Cậu Phát. Căn 1808. Ba tháng rồi đó. 36 triệu. Tôi nói nhẹ nhàng lần này là lần cuối nha.
+ba_quan_ly_sky_ao: Cậu {idol_het_thoi}. Căn 1808. Ba tháng rồi đó. 36 triệu. Tôi nói nhẹ nhàng lần này là lần cuối nha.
 * [🕶️ "Cô biết con là ai hông? Năm 2015 tòa này treo băng rôn chào con đó."]
     ba_quan_ly_sky_ao: Năm 2015 tòa này chưa xây xong cậu ơi.
     _Bà nói đúng. Năm 2015 chỗ này là bãi giữ xe._
@@ -69,7 +69,7 @@ tho_chup_anh: Hay… anh chụp vài tấm hông anh? Đèn đang đẹp.
     ~ phat_tt(8)
     ~ follow(-10000)
     ~ qh("quan_ly_idol", -5)
-    quan_ly_idol: *(vừa chạy lên, thở dốc)* Phát… đây là buổi chụp của Nguyên mà em…
+    quan_ly_idol: *(vừa chạy lên, thở dốc)* {idol_het_thoi}… đây là buổi chụp của Nguyên mà em…
 * [🤝 Chạy xuống phụ {sieu_nhan_hong} xách giỏ cho bà cụ.]
     _Bà cụ đi chợ về, giỏ toàn bí đỏ. Bạn xách một bên, {sieu_nhan_hong} xách một bên. Bà cụ nhìn bạn mãi._
     ba_cu: Con… con giống thằng ca sĩ hát bài cá viên chiên ghê.
@@ -97,7 +97,7 @@ _Tối. Clip "Siêu Nhân Hồng bỏ buổi chụp đi giúp bà cụ" đang l�
     _Bạn tua lại clip. Có nửa giây thấy cái kính đen của bạn ở rìa khung hình. Có người bình luận: "Ông chú đeo kính là ai mà ngầu vậy?"_
     ~ phat_nt(2)
 }
-hong_hot: *(nhắn riêng)* Anh Phát ơi, em đăng clip bà cụ lên fanpage nha, anh có muốn em tag anh hông?
+hong_hot: *(nhắn riêng)* Anh {idol_het_thoi} ơi, em đăng clip bà cụ lên fanpage nha, anh có muốn em tag anh hông?
 * [😇 "Đừng tag anh. Clip của Nguyên mà."]
     hong_hot: Ủa anh hiền vậy! Ok em hông tag. Mà em kể với mọi người là anh hiền nha!
     ~ qh("hong_hot", 5)
@@ -128,7 +128,7 @@ hong_hot: *(nhắn riêng)* Anh Phát ơi, em đăng clip bà cụ lên fanpage 
     _Mốc 1: 50.000 người theo dõi. Đạt. {giam_doc} vẫn họp, nhưng là họp khen. Hai tiếng rưỡi._
     giam_doc: Các em! Chúng ta đã win! Anh không ép, nhưng tối nay ai rảnh thì đi ăn ốc!
 }
-giam_doc: À, Phát. Ở lại anh nói cái này.
+giam_doc: À, {idol_het_thoi}. Ở lại anh nói cái này.
 _Mọi người ra hết. {giam_doc} gỡ kính, xoa sống mũi. Lúc không phát biểu, nhìn anh {giam_doc} mệt như một người 37 tuổi thật._
 giam_doc: Hợp đồng của em hết hạn 31/10 đấy. Anh chưa nghĩ xong. Em cứ làm tốt đi, rồi tính.
 * [🕶️ "Anh yên tâm. Fan em vẫn đông lắm."]
@@ -151,7 +151,7 @@ giam_doc: Hợp đồng của em hết hạn 31/10 đấy. Anh chưa nghĩ xong.
 === idol_het_thoi_0810_luyen_thanh ===
 # ngay:8 # gio:11:20 # noi:studio
 _Ngày Thị giác Thế giới. {editor} bị bắt đi khám mắt, đi ngang studio như zombie, ngáp ba lần trong một câu chào._
-editor: Dạ chào anh Phát… *(ngáp)* … em đi khám mắt…
+editor: Dạ chào anh {idol_het_thoi}… *(ngáp)* … em đi khám mắt…
 _Bạn vào studio. Hôm nay tập nốt cao điệp khúc "Công Viên". Năm 2015 bạn lên nốt đó dễ như hắt hơi._
 _Bạn hít sâu. Lên. Lên nữa. Giọng bạn kêu "éc" như cửa sắt._
 it: *(từ phòng kỹ thuật, qua loa)* Restart chưa anh?
@@ -173,7 +173,7 @@ it: *(từ phòng kỹ thuật, qua loa)* Restart chưa anh?
 * [😶 Thôi, hát đoạn đầu thôi. Đoạn đầu dễ.]
     _"Ngày xưa có đôi bạn thân…" Bạn hát đoạn đầu mười lần. Đoạn đầu lúc nào cũng hay._
     ~ cang_thang(-3)
-- _Ra về, {it} chìa cho bạn một hộp kẹo ngậm thông cổ. "Của anh Thái gửi. Ảnh nói anh tập là sẽ cần."_
+- _Ra về, {it} chìa cho bạn một hộp kẹo ngậm thông cổ. "Của anh {quan_ly_idol} gửi. Ảnh nói anh tập là sẽ cần."_
 ~ phat_co_keo_ngam = true
 ~ qh("quan_ly_idol", 3)
 -> END
@@ -189,7 +189,7 @@ hong_hot: Nghe gì chưa? MV quay có cảnh Nguyên cưỡi xe đạp hồng qu
     _Xe đạp của ông bán vé số đầu ngõ. Bạn cưỡi được 3 mét thì té. Bản dựng cuối cắt đi cảnh té._
     ~ phat_tt(3)
 * [😇 "Tối nay mấy giờ ra mắt? Anh coi với."]
-    hong_hot: 8 giờ tối nha anh! Ối dồi ôi, anh Phát coi MV của Nguyên luôn hả? Hòa bình rồi hả?
+    hong_hot: 8 giờ tối nha anh! Ối dồi ôi, anh {idol_het_thoi} coi MV của Nguyên luôn hả? Hòa bình rồi hả?
     ~ qh("hong_hot", 3)
     ~ phat_tt(-2)
 - ~ an(35)
@@ -208,7 +208,7 @@ _Trên Phây-búc, {sieu_nhan_hong} vừa tag bạn: "Cảm ơn đàn anh {idol_
     ~ phat_mua_fan(50000, 3000000)
     ~ phat_tt(10)
     ~ phat_gianh()
-    _20 phút sau: "Công Viên" có 50.112 lượt xem. 500 bình luận giống hệt nhau: "Anh Phát đỉnh nóc kịch trần"._
+    _20 phút sau: "Công Viên" có 50.112 lượt xem. 500 bình luận giống hệt nhau: "Anh {idol_het_thoi} đỉnh nóc kịch trần"._
     _Bạn chụp màn hình gửi group công ty. Không ai thả tim. Chỉ có {dan_dau_tu} nhắn riêng: "Ông mua ở đâu vậy, chỉ tui với."_
     ~ follow(-5000)
 * [😇 Bấm "Chia sẻ" MV của Nguyên lên trang cá nhân.]
@@ -234,7 +234,7 @@ _23 giờ 40. Điện thoại rung. Anh {quan_ly_idol}._
 }
 
 = co_mua
-quan_ly_idol: Phát. Anh thấy kênh em rồi. 50 nghìn view trong 20 phút.
+quan_ly_idol: {idol_het_thoi}. Anh thấy kênh em rồi. 50 nghìn view trong 20 phút.
 _Giọng anh {quan_ly_idol} rất bình tĩnh. Bình tĩnh kiểu người vừa uống ly cà phê thứ năm._
 * [🕶️ "Anh thấy chưa? Fan em về rồi đó! Em nói rồi mà, em chưa hết thời!"]
     quan_ly_idol: *(im lặng)* Ừ. Anh thấy rồi. Ngủ sớm đi em.
@@ -242,7 +242,7 @@ _Giọng anh {quan_ly_idol} rất bình tĩnh. Bình tĩnh kiểu người vừa
     ~ phat_tt(5)
     ~ qh("quan_ly_idol", -5)
 * [😶 "Em biết. Em biết là ảo, anh đừng nói nữa."]
-    quan_ly_idol: Anh không nói. Mà Phát, hủy đi. Rồi mình tính cách khác. Anh tính với em.
+    quan_ly_idol: Anh không nói. Mà {idol_het_thoi}, hủy đi. Rồi mình tính cách khác. Anh tính với em.
     _"Mình tính". Không phải "em tự tính"._
     ~ qh("quan_ly_idol", 5)
     ~ phat_tt(-5)
@@ -254,7 +254,7 @@ _Giọng anh {quan_ly_idol} rất bình tĩnh. Bình tĩnh kiểu người vừa
         ~ phat_fan_ao = 0
         ~ phat_tt(-15)
         ~ phat_nt(-3)
-        quan_ly_idol: *(thở ra một hơi rất dài)* Ngủ ngon nha Phát.
+        quan_ly_idol: *(thở ra một hơi rất dài)* Ngủ ngon nha {idol_het_thoi}.
         ~ qh("quan_ly_idol", 15)
     ** [Không bấm. "Mai em hủy."]
         quan_ly_idol: Ừ. Mai.
@@ -262,14 +262,14 @@ _Giọng anh {quan_ly_idol} rất bình tĩnh. Bình tĩnh kiểu người vừa
 - -> END
 
 = khong_mua
-quan_ly_idol: Phát, em ngủ chưa? Anh thấy em share MV của Nguyên. Anh… cảm ơn em nha.
+quan_ly_idol: {idol_het_thoi}, em ngủ chưa? Anh thấy em share MV của Nguyên. Anh… cảm ơn em nha.
 * [😇 "Có gì đâu anh. Mà anh ăn gì chưa?"]
     quan_ly_idol: *(cười, nghe mệt mà vui)* Chưa. Hồi chiều ăn ổ bánh mì. Thôi để anh nấu gói mì.
     ~ qh("quan_ly_idol", 8)
 * [🕶️ "Em share vì tình đàn anh thôi. Anh đừng nghĩ nhiều."]
     quan_ly_idol: Ừ, anh hông nghĩ gì. Ngủ đi em.
     ~ qh("quan_ly_idol", 2)
-- _Ở đâu đó trên mạng, nhóm fan "Hội Cá Viên Chiên" vừa đăng: "Tối nay anh Phát share MV đàn em. Anh mình vẫn vậy, hiền khô. ChuoiChien89."_
+- _Ở đâu đó trên mạng, nhóm fan "Hội Cá Viên Chiên" vừa đăng: "Tối nay anh {idol_het_thoi} share MV đàn em. Anh mình vẫn vậy, hiền khô. ChuoiChien89."_
 -> END
 
 // ------------------------------------------------------------
@@ -300,7 +300,7 @@ _Hàng xóm căn 1807 đi ngang, chụp hình._
 # ngay:10 # gio:20:45 # noi:cong_cong_ty
 _Tối thứ 7. Bạn ghé công ty lấy cây đàn để quên. Chòi bảo vệ sáng đèn vàng. Radio đang phát một bài hát cũ về Hà Nội._
 _Bác {bac_bao_ve} ngồi một mình. Trên bàn có một cái bánh bông lan nhỏ cắm một cây nến. {cho} nằm dưới chân bác, nhìn cái bánh không chớp mắt._
-bac_bao_ve: Ơ, Phát à. Muộn thế này còn đến.
+bac_bao_ve: Ơ, {idol_het_thoi} à. Muộn thế này còn đến.
 _Ngọn nến cháy được nửa. Không ai hát. Không ai trong công ty biết hôm nay là sinh nhật bác._
 * [🎤 Lấy đàn ra, hát "Chúc mừng sinh nhật" thật nhỏ.]
     _Bạn hát. Không kính đen, không micro. {cho} tru theo ở câu cuối._
@@ -317,7 +317,7 @@ _Ngọn nến cháy được nửa. Không ai hát. Không ai trong công ty bi�
 * [🕶️ "Bác ơi con lấy đàn rồi đi liền, con có show."]
     bac_bao_ve: Ừ, đi đi. Đường tối, đi cẩn thận.
     _Bạn không có show nào. Bạn về nhà nằm._
-- bac_bao_ve: Cắn một miếng bánh không? Con Tuất nó nhìn mãi rồi đấy.
+- bac_bao_ve: Cắn một miếng bánh không? Con {cho} nó nhìn mãi rồi đấy.
 ~ an(10)
 ~ qh("cho", 3)
 -> END
@@ -329,7 +329,7 @@ _Chủ nhật, Ngày Quốc tế Trẻ em gái. Cả công ty đăng ảnh hồi
 _{sieu_nhan_hong} đăng một tấm ở một xóm nhỏ có cây me, cả đám con nít, có một đứa đang khóc. Cả công ty thả tim._
 _Bạn lục điện thoại. Ảnh hồi nhỏ của bạn ở nhà ba má, không có ở đây. Chỉ có ảnh năm 2015._
 * [🕶️ Đăng ảnh 2015 cầm cúp, ghi: "Hồi nhỏ."]
-    _Bình luận: "Hoa sen 1: Anh Phát đỉnh nóc kịch trần." "Hoa sen 2: Anh Phát đỉnh nóc kịch trần." Rồi {chua_te_deadline}: "Hồi nhỏ mà có mullet rồi hả anh."_
+    _Bình luận: "Hoa sen 1: Anh {idol_het_thoi} đỉnh nóc kịch trần." "Hoa sen 2: Anh {idol_het_thoi} đỉnh nóc kịch trần." Rồi {chua_te_deadline}: "Hồi nhỏ mà có mullet rồi hả anh."_
     ~ phat_tt(5)
     ~ phat_nt(1)
 * [😇 Đăng ảnh 2015, ghi thật: "Hồi này tui 19 tuổi. Với tui, đây là hồi nhỏ."]
@@ -349,7 +349,7 @@ _Bạn lục điện thoại. Ảnh hồi nhỏ của bạn ở nhà ba má, kh�
 # ngay:11 # gio:15:00 # noi:tiem_cam_do # bat_buoc
 _Tiệm cầm đồ Cứu Nguy, Phố Cũ. Quạt trần quay chậm. Tủ kính toàn đồng hồ, nhẫn, điện thoại đời cũ. Bạn ôm cái cúp "Ca khúc của năm 2015" trong túi vải._
 _Ở quầy, một người quen đang đẩy cái đồng hồ qua mặt kính._
-dan_dau_tu: Ủa Phát? Ông cũng ra đây hả? Tui cầm cái đồng hồ, tuần sau coin lên là chuộc liền. Ông cầm gì vậy?
+dan_dau_tu: Ủa {idol_het_thoi}? Ông cũng ra đây hả? Tui cầm cái đồng hồ, tuần sau coin lên là chuộc liền. Ông cầm gì vậy?
 * [🕶️ "Đem đi đánh bóng thôi. Fan tặng nhiều quá, để nhà chật."]
     { RANDOM(1, 10) <= 5:
         dan_dau_tu: À… vậy hả. Ngầu ghê. Tiệm này đánh bóng đẹp lắm đó.
@@ -367,7 +367,7 @@ dan_dau_tu: Ủa Phát? Ông cũng ra đây hả? Tui cầm cái đồng hồ, t
     ~ phat_tra_no(6000000)
     ~ phat_nt(-2)
     ~ cang_thang(5)
-* [🤝 "Anh Chương cho em vay 5 triệu đi, tháng sau em trả."]
+* [🤝 "Anh {dan_dau_tu} cho em vay 5 triệu đi, tháng sau em trả."]
     dan_dau_tu: Tui còn nợ nửa công ty nè ông. Mà nè, có kèo này: coin "Hồng Coin", mới ra đêm 9/10. Bỏ vô 2 triệu, tuần sau x10.
     ** [💸 "Ừ, cho em vô 2 triệu."]
         ~ phat_them_no(2000000)
@@ -376,7 +376,7 @@ dan_dau_tu: Ủa Phát? Ông cũng ra đây hả? Tui cầm cái đồng hồ, t
     ** [😶 "Thôi anh. Em sợ coin hơn sợ nợ."]
         dan_dau_tu: Ông sẽ hối hận đó. Hoặc hông.
         ~ qh("dan_dau_tu", 3)
-* {phat_mo_quan_ca_phe} [🔒 "Thôi, em đem về. Anh Thái từng nói cái cúp này là của cả hai anh em."]
+* {phat_mo_quan_ca_phe} [🔒 "Thôi, em đem về. Anh {quan_ly_idol} từng nói cái cúp này là của cả hai anh em."]
     _Bạn ôm cúp ra khỏi tiệm. Ngoài trời nắng. Bạn nhớ lại đêm trao giải năm 2015: người vỗ tay to nhất dưới khán đài, vỗ tới đỏ cả tay, là anh {quan_ly_idol}._
     ~ phat_tt(-10)
     ~ cang_thang(-10)
@@ -416,7 +416,7 @@ _Bạn nhìn số dư. 8 triệu. Nợ: còn rất nhiều. Hạn chót của b�
     ~ tien_cong(-1500000)
     ~ phat_tt(5)
     ~ phat_fan_ao = phat_fan_ao + 10000
-- ke_toan: *(đi ngang, nói nhỏ)* Phát. Cát-xê đám cưới tháng này có hóa đơn hông em? Tháng sau có đoàn thuế đó.
+- ke_toan: *(đi ngang, nói nhỏ)* {idol_het_thoi}. Cát-xê đám cưới tháng này có hóa đơn hông em? Tháng sau có đoàn thuế đó.
 _Bạn chưa từng thấy hóa đơn cát-xê đám cưới nào trong đời._
 ~ qh("ke_toan", 2)
 -> END
@@ -430,7 +430,7 @@ _Quán Ốc Đêm. Lương về, cả hẻm đi ăn ốc. Bàn công ty kê ba c
     ~ phat_co_phieu_oc = false
     ~ an(30)
 }
-sales: Anh Phát! Ngồi đây! Tin chị đi, tháng sau chị book anh hát sự kiện của BTT Global, cát-xê 50 triệu!
+sales: Anh {idol_het_thoi}! Ngồi đây! Tin chị đi, tháng sau chị book anh hát sự kiện của BTT Global, cát-xê 50 triệu!
 _{sales} nhỏ hơn bạn 4 tuổi. {sales} tự xưng là chị. Bạn đã quen._
 * [🕶️ "50 triệu là giá năm 2015. Bây giờ giá anh khác."]
     sales: Ối, vậy chị nói 80 nha! Chắc kèo!

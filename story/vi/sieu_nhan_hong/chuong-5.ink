@@ -182,7 +182,7 @@ _Căn nhà 12 ghế. Bạn ngồi ở cái ghế có dấu ngồi. Trên bàn l�
 { snh_tim_hong >= 50:
     ~ snh_tin_nhan_vu_sinh_nhat = true
     _Điện thoại rung. Một tin nhắn._
-    chua_te_deadline: *(tin nhắn)* Sinh nhật vui nha anh. Không phải PR đâu. —Vũ
+    chua_te_deadline: *(tin nhắn)* Sinh nhật vui nha anh. Không phải PR đâu. —{chua_te_deadline}
     * [🙂 Trả lời: "Cảm ơn em. Anh vui."]
         ~ snh_tim(5)
         _Ba chấm nhảy lên. Rồi tắt. Rồi nhảy lên. "Ngủ đi anh. Mai còn chạy deadline." Bạn ngủ với điện thoại trên ngực._
