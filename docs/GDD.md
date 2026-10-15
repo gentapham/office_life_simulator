@@ -221,9 +221,7 @@ Nói thật: game chạy hoàn toàn trên trình duyệt thì **không chặn �
 - **File save có chữ ký kiểm tra**: sửa tay file save (ví dụ tự cộng tiền) thì game phát hiện và báo "file save bị lỗi".
 - **Đây là game một người chơi**: ai hack thì chỉ tự làm mất vui của họ. Nếu sau này có **bảng xếp hạng** thì mới cần máy chủ để kiểm tra.
 
-⚠️ **Lưu ý về repo công khai:** GitHub Pages miễn phí yêu cầu repo **public**. Nghĩa là ai vào repo cũng đọc được file truyện gốc, kể cả 138 kết thúc. Có hai cách (cần bạn chọn):
-1. **Chấp nhận** cho xem, coi như game mã nguồn mở.
-2. **Tách 2 repo:** repo riêng tư chứa truyện gốc, repo công khai chỉ chứa game đã build và truyện đã mã hóa.
+**Đã chốt: repo để công khai.** Ai vào repo cũng đọc được truyện gốc, kể cả 138 kết thúc. Chấp nhận điều này, coi như game mã nguồn mở. Mã hóa truyện khi build chỉ để người chơi bình thường không lỡ đọc trước kết thúc trong lúc chơi.
 
 ---
 
