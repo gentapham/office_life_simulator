@@ -5,4 +5,5 @@ INCLUDE quan_ly_idol/chuong-2.ink
 INCLUDE quan_ly_idol/chuong-3.ink
 INCLUDE quan_ly_idol/chuong-4.ink
 INCLUDE quan_ly_idol/chuong-5.ink
+INCLUDE quan_ly_idol/chuong-6.ink
 -> END

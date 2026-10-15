@@ -128,7 +128,7 @@ con_ong_chau_cha: Anh {dan_dau_tu}, chill hông? Em đang nghĩ… nếu một b
     ** [📈 "Bài hát thì sao bằng coin."]
         con_ong_chau_cha: Ờ… thôi. Chill.
         ~ qh("con_ong_chau_cha", -5)
-* [📈 "Long, em có muốn góp thêm vốn không?"]
+* [📈 "{con_ong_chau_cha}, em có muốn góp thêm vốn không?"]
     { ngay < 18:
         con_ong_chau_cha: Ủa vốn cũ còn chưa thấy đâu mà anh. Mà… thôi, chill.
         ~ qh("con_ong_chau_cha", -3)

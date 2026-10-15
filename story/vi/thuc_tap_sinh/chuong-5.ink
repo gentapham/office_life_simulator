@@ -239,6 +239,35 @@ _Anh thợ hồ ngủ giường trên ngáy. Bạn sinh viên học bài. Anh xe
 - -> END
 
 // ------------------------------------------------------------
+=== thuc_tap_sinh_2610_giao_ban ===
+# ngay:26 # gio:08:30 # noi:phong_hop_sang_tao
+_Họp giao ban thứ 2. Tin đồn cắt giảm treo lơ lửng trên trần phòng họp như cái quạt trần sắp rớt._
+truong_phong: Tuần cuối. Ai còn việc tồn thì báo. Ai cần người phụ thì… *(nhìn bạn)* … thì như mọi khi.
+_Cả phòng nhìn bạn. Như mọi khi._
+~ duy_day_viec(2)
+* [🙇 "Dạ em làm liền ạ."]
+    ~ duy_da()
+    ~ duy_kn(3)
+    ~ nghi(-15)
+* [❓ "Dạ, mình có thể ghi lên bảng ai giao việc gì cho em không ạ, để em xếp thứ tự ạ?"]
+    truong_phong: *(khựng lại)* … Hợp lý. Tớ thích bảng. Ghi đi.
+    _Bảng trắng có 14 dòng. 9 dòng tên {chua_te_deadline}. {chua_te_deadline} nhìn bảng, ho nhẹ._
+    ~ duy_kn(5)
+    ~ qh("truong_phong", 5)
+    ~ duy_ngo(-3)
+* {duy_mo_noi_loan && duy_so_lan_noi_loan >= 4} [😤 Đứng dậy. Đọc to danh sách 47 việc vặt đã bị đẩy trong tháng, kể tên từng người.]
+    ~ duy_so_lan_noi_loan = duy_so_lan_noi_loan + 2
+    _"Ngày 1: 22 ly cà phê, anh {chua_te_deadline}. Ngày 2: bảng tiến độ, anh {chua_te_deadline}. Ngày 5: xếp ghế, anh {truong_phong}…"_
+    _Bạn đọc 6 phút. Cả phòng im phăng phắc. Bạn đúng. Từng dòng đều đúng. Nhưng bạn nói theo cách khiến ai cũng thấy mình bị bêu riếu._
+    _{chi_dai} nhìn bạn. Lần đầu tiên, chị không bênh._
+    ~ qh("chi_dai", -30)
+    ~ qh("truong_phong", -15)
+    ~ qh("chua_te_deadline", -15)
+    ~ uy_tin = uy_tin - 20
+    ~ duy_lua_doi(5)
+- -> END
+
+// ------------------------------------------------------------
 === thuc_tap_sinh_2610_hieu_poster ===
 # ngay:26 # gio:10:15 # noi:tang_1 # bat_buoc
 _Thứ 2. Tin đồn cắt giảm nhân sự đã thành tin chính thức trong lòng mọi người. {ran_doc} ghé bàn bạn, nói rất nhỏ._

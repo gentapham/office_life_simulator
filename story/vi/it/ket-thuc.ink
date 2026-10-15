@@ -85,7 +85,7 @@ hong_hot: "Cam on anh {it}" là tên wifi hả? Trời ơi tui khóc!
 chua_te_deadline: Wifi nhanh tới mức tui coi Tóp-tóp không kịp lướt!
 editor: Upload 40GB trong 9 phút. Anh ơi. Chín. Phút.
 ke_toan: Nhớ giữ hộp với hóa đơn nha ông.
-bac_bao_ve: Bác bắt được wifi ở chòi rồi. Tuất cũng bắt được. Nó đang xem video chó.
+bac_bao_ve: Bác bắt được wifi ở chòi rồi. {cho} cũng bắt được. Nó đang xem video chó.
 _21 tin nhắn. Không tin nào nhờ sửa gì. Tất cả chỉ nói một câu, theo 21 cách khác nhau._
 _Bạn gõ trả lời vào group, câu dài nhất bạn từng viết trong 10 năm:_
 it: Không có gì. Có gì cứ tắt đi bật lại. Không được thì gọi anh.
@@ -109,7 +109,7 @@ it: Thôi, sửa free. Anh trả nợ cũ cho em là được, từ từ cũng �
 dan_dau_tu: *(đứng hình)* Em… em nói được câu dài vậy hả?
 it: Ừ. Tiệm của em mà.
 _Trên tường tiệm có dán 5 tờ giấy, chữ viết tay của 5 đồng nghiệp cũ: "Rút ra. Đếm 10. Cắm vô." Họ tự sửa được rồi. Họ vẫn tới, chỉ để uống trà._
-_Tuất ghé tiệm mỗi chiều, nằm ngủ dưới bàn, trên đống dây điện, như nằm trong ổ._
+_{cho} ghé tiệm mỗi chiều, nằm ngủ dưới bàn, trên đống dây điện, như nằm trong ổ._
 -> END
 
 // ------------------------------------------------------------

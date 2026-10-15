@@ -120,8 +120,8 @@ sales: Anh {dan_dau_tu}! Tờ thứ 7! Em làm thành bộ sưu tập rồi đó
 # ngay:11 # gio:15:00 # noi:ho_boi_sky_ao
 _Chủ nhật. Cả công ty đăng ảnh hồi nhỏ (Ngày Quốc tế Trẻ em gái). Bạn đăng ảnh năm 8 tuổi, đang đếm bi ve. Đã có máu phân tích từ nhỏ._
 _Bạn tới hồ bơi Sky Ảo "tình cờ đi ngang". {con_ong_chau_cha} đang nằm ghế dài, đeo kính râm._
-con_ong_chau_cha: Ủa anh {dan_dau_tu}, cái Hồng Coin là gì vậy? Ngân nói anh đang all-in hả? Chill đi anh.
-* [🗣️ "Long, cơ hội trăm năm có một. Em góp với anh 20 triệu, Tết này mua xe mới."]
+con_ong_chau_cha: Ủa anh {dan_dau_tu}, cái Hồng Coin là gì vậy? {hong_hot} nói anh đang all-in hả? Chill đi anh.
+* [🗣️ "{con_ong_chau_cha}, cơ hội trăm năm có một. Em góp với anh 20 triệu, Tết này mua xe mới."]
     con_ong_chau_cha: Ủa sao không mua xe luôn bây giờ? … Mà thôi, ok anh. Em chuyển.
     ~ ddt_vay_long_20 = true
     ~ ddt_vay("con_ong_chau_cha", 20000000)
@@ -141,7 +141,7 @@ con_ong_chau_cha: Ủa anh {dan_dau_tu}, cái Hồng Coin là gì vậy? Ngân n
     ~ ddt_nt(-10)
     ~ ddt_dc(5)
     ~ qh("con_ong_chau_cha", 5)
-* {ddt_do_chuan >= 60} [🔒 "Long, em có làm nhạc hông? Số liệu cho thấy nhạc nền tự sáng tác có lượt xem cao gấp ba."]
+* {ddt_do_chuan >= 60} [🔒 "{con_ong_chau_cha}, em có làm nhạc hông? Số liệu cho thấy nhạc nền tự sáng tác có lượt xem cao gấp ba."]
     con_ong_chau_cha: *(đơ người)* Sao… sao anh biết?
     _Bạn không biết. Bạn chỉ thấy trong bảng số liệu, mấy video có nhạc nền "Rồng" vô danh luôn được xem hết._
     con_ong_chau_cha: Anh… đừng nói chú em nha. Em… em có mấy bài. Anh nghe thử hông?

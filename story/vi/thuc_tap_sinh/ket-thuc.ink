@@ -95,7 +95,7 @@ thuc_tap_sinh: Dạ. Em duyệt khoản này năm 2024, em biết nó. Em xin gi
 _40 phút. Anh Tư ký. Giãn nợ 2 năm. Căn biệt thự được giữ lại, dù Đêm Hồng tối nay có ra sao._
 _Ra tới thang máy, {giam_doc} đứng lại._
 giam_doc: Anh muốn đề bạt em làm Phó Giám đốc Tài chính. Anh không ép… à không. Anh xin em.
-_Bạn lấy trong ví ra cái thẻ kim cương. Đặt vào tay {giam_doc}. Rồi lấy lại, vì nó là thẻ của bạn. Hai người cùng cười._
+_Bạn lắc đầu. Cái thẻ kim cương vừa dùng để chứng minh năng lực tài chính cho hồ sơ, bạn cất lại vào ví, sâu nhất có thể._
 * [😇 "Dạ em còn thực tập mà anh."]
     giam_doc: *(lắc đầu, cười như khóc)* Thực tập. Ừ. Thực tập.
 * [😇 "Dạ, anh cho em làm nhân viên sản xuất. Em muốn làm phim ạ."]

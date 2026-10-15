@@ -94,7 +94,7 @@ _Bạn nghĩ tới con router đời 2014 quấn băng keo đen. Nó không có 
 * [💬 "Mua router mới thì có 5G thật."]
     giam_doc: À, cái tờ đề xuất 12 triệu ấy hả? Anh ký rồi mà nhỉ?
     it: Anh ký 1. Cần 3.
-    giam_doc: Thế em đưa Nhi đi xin chữ ký tiếp. Anh không ép, tùy em.
+    giam_doc: Thế em đưa {thanh_ninh} đi xin chữ ký tiếp. Anh không ép, tùy em.
     _Bạn nhớ ra: {thanh_ninh} chính là người đã làm mất tờ giấy đó năm ngoái._
     ~ qh("giam_doc", 3)
     ~ it_truy_cap(3)
@@ -253,15 +253,15 @@ _Màn hình của {thuc_tap_sinh} có một tab bị thu nhỏ: trang quản lý
 // ------------------------------------------------------------
 === it_0410_ngay_dong_vat ===
 # ngay:4 # gio:10:30 # noi:san_cong_ty
-_Chủ nhật, Ngày Động vật Thế giới. {chi_dai} gọi bạn lên công ty "chỉnh đèn chụp hình cho Tuất". Tuất mặc áo, đội nơ, mặt như bị bắt cóc._
+_Chủ nhật, Ngày Động vật Thế giới. {chi_dai} gọi bạn lên công ty "chỉnh đèn chụp hình cho {cho}". {cho} mặc áo, đội nơ, mặt như bị bắt cóc._
 chi_dai: {it}, đánh đèn cho đẹp. Thằng nhỏ này cả năm mới được tắm một lần đó.
 cho: Grừ… *(nhìn bạn như muốn nói "cứu tao")*
 _Đúng lúc đó, chiếc xe hồng đỗ xịch trước cổng. {sieu_nhan_hong} nhảy xuống, giả tiếng sủa "Gâu gâu!"._
-sieu_nhan_hong: Tuất ơi! Anh tới chơi nè! Gâu! Gâu!
+sieu_nhan_hong: {cho} ơi! Anh tới chơi nè! Gâu! Gâu!
 cho: GÂU GÂU GÂU!
-_Trong lúc hỗn loạn, Tuất giật phăng chiếc găng tay hồng của {sieu_nhan_hong} rồi chạy mất. {sieu_nhan_hong} cười khoái chí, nhặt con gà cao su của Tuất, đi xuống tầng trệt._
+_Trong lúc hỗn loạn, {cho} giật phăng chiếc găng tay hồng của {sieu_nhan_hong} rồi chạy mất. {sieu_nhan_hong} cười khoái chí, nhặt con gà cao su của {cho}, đi xuống tầng trệt._
 _Bạn thấy {sieu_nhan_hong} nhét con gà cao su vào khe sau tủ mạng tầng trệt, rồi huýt sáo bỏ đi._
-* [🤝 Đợi {sieu_nhan_hong} đi rồi, lấy con gà ra trả cho Tuất.]
+* [🤝 Đợi {sieu_nhan_hong} đi rồi, lấy con gà ra trả cho {cho}.]
     _Bạn thò tay vào khe tủ mạng, giữa 48 sợi dây xanh, rút ra con gà cao su. Nó kêu "éc"._
     cho: Gâu! *(lao tới, ngậm con gà, vẫy đuôi như cánh quạt)*
     chi_dai: Ủa, cái gà ở đâu ra vậy?
@@ -275,8 +275,8 @@ _Bạn thấy {sieu_nhan_hong} nhét con gà cao su vào khe sau tủ mạng t�
     _Bạn chụp một tấm. Con gà cao su nằm giữa mớ dây xanh, mắt nhìn bạn như biết trước tương lai._
     _Bạn nghĩ: chắc không sao đâu._
     ~ it_truy_cap(2)
-* [😶 Kệ. Đánh đèn cho Tuất tiếp.]
-    _Bạn quay lại với cái đèn. Tuất được chụp 40 tấm. Tấm nào mặt cũng cau có, nhưng {chi_dai} bảo "đẹp trai"._
+* [😶 Kệ. Đánh đèn cho {cho} tiếp.]
+    _Bạn quay lại với cái đèn. {cho} được chụp 40 tấm. Tấm nào mặt cũng cau có, nhưng {chi_dai} bảo "đẹp trai"._
     ~ qh("chi_dai", 5)
 - chi_dai: Xong rồi. Ra chòi ăn bánh mì với chị với bác.
 ~ an(30)

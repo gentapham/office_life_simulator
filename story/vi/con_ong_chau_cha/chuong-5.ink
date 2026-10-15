@@ -287,8 +287,9 @@ _Đúng. Lần đầu tiên trong đời bạn cần tiền thật. Penthouse s�
     dan_dau_tu: 180 nghìn? Em… đi làm ca? Em á?
     con_ong_chau_cha: Ừ. Tui tên Rồng.
     _{dan_dau_tu} nhìn bạn như nhìn một đồng coin lạ chưa ai phân tích._
-    ~ long_tl(6)
+    ~ long_tl(3)
     ~ qh("dan_dau_tu", 2)
+    -> con_ong_chau_cha_mg_lam_them
 * [📊 "Anh làm cho tui bảng số liệu nghe nhạc theo độ tuổi đi. Tui trả tiền, coi như trừ nợ."]
     dan_dau_tu: *(nghiêm túc hẳn)* Số thật hả? Được. Số thật thì anh giỏi nhất quận.
     _Bảng số liệu tới lúc 3 giờ chiều. Người 20–30 tuổi nghe nhạc có câu chuyện thật lâu gấp ba. Đúng như bạn nghĩ._
@@ -454,3 +455,22 @@ _Tối. Sân thượng công ty. Gió lạnh. Bạn đứng tựa lan can, nghe 
     ~ qh("truong_phong", 10)
     ~ long_bh(4)
 - -> END
+
+// ------------------------------------------------------------
+=== con_ong_chau_cha_2410_ca_toi ===
+# ngay:24 # gio:19:00 # noi:quan_ca_phe_song_ao
+_Tối thứ Bảy. Quán Sống Ảo đông nghẹt. "Rồng" đeo khẩu trang, đội mũ lưỡi trai, bưng khay._
+_Bàn số 4: {sales} và {designer} đang ngồi. Bàn số 7: {thanh_xin_nghi}, mặc đồ kim tuyến, đang tập hát nhỏ cho vòng bán kết ngày mai._
+* [🛵 Vào ca, cúi đầu thấp.]
+    -> con_ong_chau_cha_mg_lam_them
+* [🎤 Ghé bàn số 7, nói nhỏ: "Mai thi tốt nha. Tui hông thấy gì đâu."]
+    thanh_xin_nghi: *(giật mình)* Ông… ông Long hả? Ông làm ở đây hả?
+    con_ong_chau_cha: Ở đây tui tên Rồng.
+    thanh_xin_nghi: *(bật cười)* Vậy tui là ca sĩ, ông là phục vụ. Mình giữ bí mật cho nhau nha.
+    ~ qh("thanh_xin_nghi", 12)
+    ~ long_bh(4)
+    -> con_ong_chau_cha_mg_lam_them
+* [😷 Xin nghỉ ca vì sợ bị nhận ra.]
+    _Bạn về sớm. Trên đường về, bạn tự hỏi: mình sợ bị nhận ra là "cháu giám đốc", hay sợ bị nhận ra là "phục vụ"?_
+    ~ long_bh(3)
+    -> END

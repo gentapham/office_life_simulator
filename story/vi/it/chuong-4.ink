@@ -89,13 +89,13 @@ _Cả đoàn dùng mạng "G-Entertainment-DI-CHOI" của bạn. Bạn có 3 gi�
 === it_1710_tin_nhan_bac_binh ===
 # ngay:17 # gio:22:30 # noi:vung_tau_resort
 _Điện thoại bạn rung. Tin nhắn của Bác {bac_bao_ve}, người ở lại trực công ty. Đúng một tin:_
-bac_bao_ve: "Tuất cắn dây gì ở tủ mạng ấy. Bác buộc lại rồi."
+bac_bao_ve: "{cho} cắn dây gì ở tủ mạng ấy. Bác buộc lại rồi."
 _Bạn nhìn tin nhắn. "Buộc lại". Dây mạng không phải dây phơi đồ._
 * [🛵 Bắt xe đêm về thành phố kiểm tra.]
     ~ it_ve_som_vung_tau = true
     ~ tien_cong(-250000)
     ~ nghi(-30)
-    _Bạn rời resort lúc 22:45. {chi_dai} thấy, gật đầu: "Đi đi. Chị nói với Tuấn cho."_
+    _Bạn rời resort lúc 22:45. {chi_dai} thấy, gật đầu: "Đi đi. Chị nói với {hr} cho."_
     ~ qh("chi_dai", 5)
     -> it_1710_dem_cong_ty
 * [💬 Nhắn lại: "Bác chụp hình giùm con."]
@@ -186,7 +186,7 @@ _Bạn có hai micro không dây. Cái thứ ba nằm trong kho, pin phồng nh�
 * [🛒 Tự mua pin mới, sửa micro thứ ba.]
     ~ tien_cong(-180000)
     ~ it_on(5)
-    _Ba micro. Ba cục pin mới. Bạn dán nhãn từng cái: "Sếp", "Nhi", "Đừng ai cầm"._
+    _Ba micro. Ba cục pin mới. Bạn dán nhãn từng cái: "Sếp", "{thanh_ninh}", "Đừng ai cầm"._
 * [💬 "Hai micro. Mua thêm cần ba chữ ký."]
     truong_phong: Ba chữ ký thì mình họp để xin ba chữ ký nhé.
     _Cuộc họp xin chữ ký kéo dài 45 phút. Không có chữ ký nào._

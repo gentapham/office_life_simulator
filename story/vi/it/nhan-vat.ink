@@ -476,7 +476,7 @@ sieu_nhan_hong: Biến hình! Ông {it}! Tui có ý này: mình làm cái router
     sieu_nhan_hong: Chữ ký gì mà khó vậy? Để tui nói anh {giam_doc}!
     ~ qh("sieu_nhan_hong", 8)
     ~ it_truy_cap(2)
-- sieu_nhan_hong: Mà nè, con gà cao su của Tuất… tui giấu sau tủ mạng á. Ông đừng nói nó nha. Giỡn thôi mà.
+- sieu_nhan_hong: Mà nè, con gà cao su của {cho}… tui giấu sau tủ mạng á. Ông đừng nói nó nha. Giỡn thôi mà.
 * {not it_lay_ga_cao_su} [💬 "Lấy ra đi. Nó cắn dây đó."]
     sieu_nhan_hong: Thiệt hả? Ờ… vậy để mai tui lấy. Tui hứa. *(nói vậy, rồi quên)*
     ~ qh("sieu_nhan_hong", 3)

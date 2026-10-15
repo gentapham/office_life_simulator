@@ -20,7 +20,7 @@ VAR it_so_lan_ket_giay = 0     // số lần gỡ kẹt giấy không rách
 
 // ---------- Cờ cốt truyện ----------
 VAR it_biet_o_cung = false          // đã tìm hiểu ổ cứng "KHÔNG ĐƯỢC MỞ" ở phòng trọ
-VAR it_lay_ga_cao_su = false        // đã lấy con gà cao su của Tuất ra khỏi tủ mạng
+VAR it_lay_ga_cao_su = false        // đã lấy con gà cao su của {cho} ra khỏi tủ mạng
 VAR it_biet_clone = false           // đã đọc log máy giám đốc, thấy "Hoa Hướng Dương 1989"
 VAR it_nhanh_hai_tai_khoan = false  // mở nhánh "Hai Tài Khoản"
 VAR it_giu_bi_mat_ngan = false      // giữ bí mật admin Confession cho Ngân

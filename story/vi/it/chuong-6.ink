@@ -80,7 +80,7 @@ truong_phong: Cậu {it}, mình họp nhanh về nguyên nhân sự cố nhé.
         _Camera 3:12 sáng: {cho} chui vào khe tủ, cào cào, gặm gặm, rồi lôi ra con gà cao su, vẫy đuôi tự hào._
         _Cả đám đứng sau lưng bạn xem. Im lặng. Rồi {hong_hot} bật cười trước tiên._
         hong_hot: Thủ phạm có lông! Ối dồi ôi!
-        bac_bao_ve: *(thở dài)* Tuất. Lại đây.
+        bac_bao_ve: *(thở dài)* {cho}. Lại đây.
         cho: Ẳng… *(cúi đầu, đuôi vẫn hơi vẫy)*
         ~ qh("cho", -5)
         ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
@@ -171,7 +171,7 @@ _Bạn nhìn danh sách. Thiếu một cái khóa cho tủ cầu dao. Thiếu d�
     }
 * [👤 "Một người canh cầu dao với em."]
     chi_dai: Để chị kêu Bác {bac_bao_ve}. Bác không rời vị trí bao giờ.
-    bac_bao_ve: Ừ. Bác đứng. Cháu bấm đèn, bác giữ cầu dao. Đứa nào đụng vào, có Tuất.
+    bac_bao_ve: Ừ. Bác đứng. Cháu bấm đèn, bác giữ cầu dao. Đứa nào đụng vào, có {cho}.
     cho: Grừ… *(gật gù rất nghiêm túc)*
     ~ it_dem_hong_san_sang = true
     ~ qh("bac_bao_ve", 10)
