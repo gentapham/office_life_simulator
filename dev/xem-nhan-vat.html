@@ -20,7 +20,7 @@
     const cam = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
     const ds = Object.keys(NGOAI_HINH); const nv = [];
     ds.forEach((ma, i) => { const n = taoNguoi(ma); n.group.position.set(i * 1.1, 0, 0); scene.add(n.group); nv.push(n); });
-    const xem = (tu, den, gan) => { const giua = (tu + den) / 2 * 1.1; const xa = gan ? 2.2 : (den - tu + 1) * 0.75 + 2; cam.position.set(giua, gan ? 1.65 : 1.2, xa); cam.lookAt(giua, gan ? 1.62 : 1, 0); };
+    const xem = (tu, den, gan) => { const giua = (tu + den) / 2 * 1.1; const xa = gan ? 2.2 : (den - tu + 1) * 1.1 / 2 / Math.tan(Math.atan(Math.tan(17.5 * Math.PI / 180) * cam.aspect)) + 0.6; cam.position.set(giua, gan ? 1.65 : 1.2, xa); cam.lookAt(giua, gan ? 1.62 : 1, 0); };
     const nut = document.getElementById("nut");
     const them = (ten, f) => { const b = document.createElement("button"); b.textContent = ten; b.onclick = f; nut.append(b); };
     for (let i = 0; i < ds.length; i += 4) them(`${i + 1}-${Math.min(i + 4, ds.length)}`, () => xem(i, Math.min(i + 3, ds.length - 1)));
