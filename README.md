@@ -1,5 +1,7 @@
 # Giả Lập Một Ngày Làm Nhân Viên Văn Phòng
 
+**Office Worker For A Day**
+
 Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đầy drama. Nhập vai một trong 22 nhân viên hoặc chính Siêu Nhân Hồng, đi làm, nói chuyện, hóng hớt, nói xấu, yêu đương, đánh ghen… Mỗi câu trả lời của bạn quyết định ai lên chức, ai bị đuổi việc, và câu chuyện kết thúc ra sao.
 
 Đi làm 8 tiếng chưa đủ? Tối về đi làm tiếp trong game :v

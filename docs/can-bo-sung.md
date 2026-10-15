@@ -56,7 +56,7 @@ Theo dõi những gì đã xong và những gì còn lại. Ký hiệu:
 
 ### Cần bạn
 - [ ] 🙋 **Duyệt** truyện 23 nhân vật, ngoại hình, bản đồ. Chỗ nào không thích thì nói để sửa
-- [ ] 🙋 Tên tiếng Anh (đề xuất: *Office Worker For A Day*)
+- [x] 🙋 Tên tiếng Anh: *Office Worker For A Day*
 - [ ] 🙋 Bật GitHub Pages trong Settings của repo (mình hướng dẫn khi bắt đầu code)
 
 ### Mình làm khi bắt đầu code
