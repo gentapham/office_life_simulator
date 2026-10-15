@@ -26,7 +26,7 @@ Mười sáu năm sau, Thắng là Giám đốc điều hành, có biệt thự 
 
 ### Sự thật Thắng chưa biết
 - **Bác Bình đang báo cáo mọi chuyện cho Genta** bằng thư tay. Genta có thể đã biết về khoản nợ từ lâu, và đang chờ xem Thắng có tự nói ra hay không.
-- Giấy tờ thành lập công ty trong tủ gỗ ở nhà vườn Bác Bình **đứng tên Bình**. Nếu Thắng phát hiện, Thắng sẽ hiểu ai mới thật sự giữ chìa khóa công ty.
+- Bản gốc giấy tờ thành lập công ty (đứng tên Genta) được gửi giữ trong tủ gỗ ở nhà vườn Bác Bình. Nếu Thắng phát hiện, Thắng mới hiểu Genta tin bác Bình tới mức nào, và tin mình tới mức nào.
 
 ---
 
@@ -39,7 +39,7 @@ Mười sáu năm sau, Thắng là Giám đốc điều hành, có biệt thự 
 | 🏚️ **Nguy Cơ Lộ Nợ** | Genta và cả công ty đã biết tới đâu (bắt đầu 20) | Nhân viên thấy giấy tờ ngân hàng, Kiểm tra thuế, lương trễ, Nhi đọc email | Che giấu thành công, trả bớt nợ, tự thú (giảm về 0 nhưng mở nhánh khác) |
 | 🤥 **Hứa Lèo** | Số lời hứa chưa giữ | Hứa tăng lương, hứa thưởng, hứa "tuần sau" | Giữ lời (mỗi lần −1, Uy Quyền +10) |
 
-- **Nguy Cơ Lộ Nợ đạt 100**: thư tay của Genta tới sớm, mở thẳng kết thúc "Ghế Ai Người Nấy Ngồi".
+- **Nguy Cơ Lộ Nợ đạt 100**: Bác Bình mở phong bì dán kín của G ("Chỉ mở khi công ty sắp sập"), dẫn thẳng tới kết thúc "Ghế Ai Người Nấy Ngồi".
 - **Hứa Lèo ≥ 5**: nhân viên bắt đầu nộp đơn sang LL-Entertainment, mỗi ngày 1 người.
 
 ---
@@ -114,7 +114,7 @@ Thắng không trực tiếp làm poster hay MV, nhưng **mọi đồng tiền**
 - **17 – 18/10:** team building Vũng Tàu. Ngân Sách đủ thuê xe 45 chỗ hay chỉ đủ xe 29 chỗ (ai ngồi ghế phụ?). Trò chơi tập thể: "Bịt mắt bắt sếp". Thắng phải tham gia.
 - Đêm lửa trại, trò "nói thật": tới lượt Thắng. Nói thật chuyện nợ, nói thật một chuyện nhỏ, hay kể chuyện khởi nghiệp lần thứ 40.
 - **20/10:** sinh nhật công ty 16 tuổi + ngày Phụ nữ Việt Nam. Thắng phải mua quà cho 7 chị em (Nhi, Ngân, Thương, Oánh, Quỳnh, Huyền, Hương) bằng tiền túi. Mua giống nhau thì bị chê, mua khác nhau thì drama "ai được quà xịn hơn".
-- Tối 20/10, liên hoan ở **Quán Ốc Đêm**. Bác Bình cầm lá thư tay ký tên "G". Thắng có thể xin đọc trước toàn công ty, hoặc để Bác Bình cất đi.
+- Sáng 20/10, Thắng đi ngang chòi bảo vệ, thấy Bác Bình đang đọc một lá thư tay ký tên "G". Chữ quen quen. Thắng có thể hỏi, giả vờ không thấy, hoặc xin bác đọc trước toàn công ty ở buổi liên hoan. Đọc hay không là do bác quyết, tùy quan hệ của Thắng với bác.
 - **Tăng hai karaoke:** nếu Thắng uống quá 5 ly, Thắng **lỡ hứa tăng lương 20% cho cả công ty**. Hứa Lèo +1, mà là lời hứa nặng nhất game.
 
 ### Chương 5: "Thuế, Bánh Kem và Gấp Ba" (21/10 – 27/10)
@@ -212,12 +212,12 @@ Thắng không trực tiếp làm poster hay MV, nhưng **mọi đồng tiền**
 > 3. 🥤 *Đổi ly bia lấy ly trà đá: "Mai còn kiểm tra thuế, anh tỉnh để lo cho các em."*
 >    - {chi_dai} gật đầu. {thanh_ninh}: "Ôi sếp tỉnh táo có tâm quá anh ơi!"
 
-### Mẫu 6: Lá thư ký tên "G" (20/10, sau khi tàn tiệc)
+### Mẫu 6: Lá thư ký tên "G" (20/10, tối, sau khi tàn tiệc, nếu bác chưa đọc thư trước công ty)
 
-> **{bac_bao_ve}:** *(rót trà, chậm rãi)* Cậu Thắng ngồi đây. Thư này… bác cầm lâu rồi. Đọc hay không là việc của cậu.
+> **{bac_bao_ve}:** *(rót trà, chậm rãi)* Cậu Thắng ngồi đây. Sáng nay cậu nhìn lá thư này mãi. Có một đoạn nhắc tới cậu. Đọc hay không là việc của cậu.
 >
-> 1. 📖 *Mở thư.*
->    - Thư viết: *"Thắng làm giám đốc 10 năm rồi. Có chuyện gì khó, nói với tôi một câu. — G."*
+> 1. 📖 *Đọc đoạn bác chỉ.*
+>    - Thư viết: *"Bình, mấy đứa nhỏ còn thương nhau không? Thắng làm giám đốc 10 năm rồi. Nó có chuyện gì khó thì bảo nó nói với tôi một câu. — G."*
 >    - Thắng hiểu Genta có thể đã biết. Mở lựa chọn "Viết thư hồi âm"
 > 2. 🙈 *"Bác cất đi giúp cháu. Hết tháng cháu đọc."*
 >    - {bac_bao_ve}: "Ừ. Thế cũng được." Nguy Cơ Lộ Nợ +5 mỗi tuần sau đó
@@ -234,11 +234,11 @@ Thắng không trực tiếp làm poster hay MV, nhưng **mọi đồng tiền**
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
 | 1 | 😄 🏆 **Doanh Nhân Của Năm (Thật)** | Siêu Nhân Hồng đạt 1 triệu người theo dõi, Ngân Sách ≥ 0, Uy Quyền ≥ 60, Hứa Lèo = 0 vào 30/10 (kể cả đã giữ lời tăng lương 20% nếu lỡ hứa) | Sáng 1/11, Thắng mang tờ giấy thế chấp đã đóng dấu "ĐÃ TẤT TOÁN" về biệt thự, treo nó lên bức tường ảnh, ngay giữa những tấm chụp với người nổi tiếng. Đó là tấm ảnh duy nhất Thắng chụp với chính mình |
-| 2 | 😄 ✉️ **Thư Hồi Âm** | Đã đọc thư "G" ngày 20/10, tự viết thư thú nhận khoản nợ và nhờ Bác Bình gửi trước 29/10. Nguy Cơ Lộ Nợ được giải về 0 bằng tự thú | Một buổi chiều ở chòi bảo vệ, Bác Bình đọc thư trả lời cho Thắng nghe: *"Tôi biết từ năm ngoái rồi. Tôi chờ cậu nói. Nợ thì mình trả cùng nhau. Việc hôm nay cứ để ngày mai tính, trừ chuyện thật lòng. — G."* Thắng cúi mặt vào ly trà đá. Tuất nằm gác đầu lên giày sếp |
+| 2 | 😄 ✉️ **Thư Hồi Âm** | Đã đọc thư "G" ngày 20/10, tự viết thư thú nhận khoản nợ và nhờ Bác Bình gửi trước 25/10 (thư hồi âm mất 5 ngày). Nguy Cơ Lộ Nợ được giải về 0 bằng tự thú | Một buổi chiều ở chòi bảo vệ, Bác Bình đọc thư trả lời cho Thắng nghe: *"Tôi biết từ năm ngoái rồi. Tôi chờ cậu nói. Nợ thì mình trả cùng nhau. Việc hôm nay cứ để ngày mai tính, trừ chuyện thật lòng. — G."* Thắng cúi mặt vào ly trà đá. Tuất nằm gác đầu lên giày sếp |
 | 3 | 😄 🔒 **Kết thúc bí mật: Hoa Hướng Dương Lộ Diện** | Ở lại group "Hội Anti Sếp" tới 29/10 mà không trả thù ai, sửa ít nhất 5 điều bị chê (bỏ nhắn 22 giờ, họp ngắn lại, trả lương đúng hạn…), rồi tự công khai danh tính trong group | Ngày 30/10, Thắng đăng trong group: *"Hoa Hướng Dương 1989 là anh đây. Cảm ơn các em đã chửi anh đúng."* Group im lặng 3 phút. Rồi Ngân đổi tên group thành "Hội Thương Sếp (Một Chút)" và cho Thắng làm phó admin. Tin nhắn đầu tiên của Thắng: một sticker bông hoa hướng dương cúi chào |
 | 4 | 😢 🏚️ **Biệt Thự Có Chủ Mới** | Siêu Nhân Hồng thất bại (dưới 1 triệu), công ty phải hoàn 10 tỷ | Ngân hàng dán thông báo lên cổng sắt biệt thự số 1. Thắng gom ảnh chụp với người nổi tiếng vào một thùng carton, đứng chờ Grab. Tài xế hủy chuyến. Thắng xách thùng đi bộ xuống đồi, vừa đi vừa tự nói: *"Anh không ép, tùy em…"* |
-| 5 | 😢 🪑 **Ghế Ai Người Nấy Ngồi** | Nguy Cơ Lộ Nợ đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Uy Quyền < 20 vào 30/10 | Lá thư "G" được đọc trước toàn công ty: Genta giao quyền điều hành tạm thời cho người vừa được bầu làm Phó Giám đốc. Thắng được giữ lại làm "Cố vấn Văn hóa Doanh nghiệp". Sáng thứ Hai, Thắng ngồi cuối phòng họp, nghe Nhật mở đầu: *"Họp nhanh 5 phút thôi nhé."* Thắng lặng lẽ ghi chép |
-| 6 | 😢 🏃 **Còn Mỗi Mình Sếp** | Hứa Lèo ≥ 5 và LL-Entertainment cướp được Siêu Nhân Hồng ngày 27/10 | Đêm 31/10, Thắng ngồi một mình trong văn phòng tầng 2. Qua vách kính, tòa nhà xanh lá chuối của LL sáng rực pháo hoa Đêm Hồng. Group Zalo công ty chỉ còn 2 thành viên: Thắng và Bác Bình. Thắng gõ lúc 22:00: *"Mai các em đi làm nhé."* Không ai "đã xem" |
+| 5 | 😢 🪑 **Ghế Ai Người Nấy Ngồi** | Nguy Cơ Lộ Nợ đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Uy Quyền < 20 vào 30/10 | Trước toàn công ty, Bác Bình mở phong bì dán kín của G, ngoài ghi *"Chỉ mở khi công ty sắp sập"*. Bác đọc quyết định của G bên trong: giao quyền điều hành tạm thời cho người vừa được bầu làm Phó Giám đốc. Thắng được giữ lại làm "Cố vấn Văn hóa Doanh nghiệp". Sáng thứ Hai, Thắng ngồi cuối phòng họp, nghe Nhật mở đầu: *"Họp nhanh 5 phút thôi nhé."* Thắng lặng lẽ ghi chép |
+| 6 | 😢 🏃 **Còn Mỗi Mình Sếp** | Hứa Lèo ≥ 5 và LL-Entertainment cướp được Siêu Nhân Hồng ngày 27/10 | Đêm 31/10, Thắng ngồi một mình trong văn phòng tầng 2. Qua vách kính, tòa nhà xanh lá chuối của LL sáng rực pháo hoa Đêm Hồng. Group Zalo-lô công ty chỉ còn 2 thành viên: Thắng và Bác Bình. Thắng gõ lúc 22:00: *"Mai các em đi làm nhé."* Không ai "đã xem" |
 
 ---
 

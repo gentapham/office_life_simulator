@@ -16,8 +16,8 @@ Cả công ty gọi bác là "Bác Bình", kể cả Giám Đốc. Bác 9 giờ 
 ### Bí mật: người của "G"
 - Năm 2010, Bình 34 tuổi, là bạn lâu năm của **Genta**. Genta thuê căn phòng 20m², tuyển cậu sinh viên Thắng 21 tuổi, và nhờ Bình trông cổng. Bình là **một trong hai nhân viên đầu tiên** của công ty.
 - Từ 2016, Genta ra nước ngoài. Mỗi tháng, một lá **thư tay ký tên "G"** được gửi về chòi bảo vệ: *"Bình, dạo này mấy đứa nhỏ thế nào?"*. Bình viết thư trả lời bằng bút bi, giấy kẻ ô học sinh. Thắng không hề biết mình đang được "báo cáo".
-- Trong **tủ gỗ cũ ở nhà Ven Đô** là bộ giấy tờ thành lập G-Entertainment năm 2010, **đứng tên Bình**. Hồi đó Genta chưa đủ thủ tục, nhờ bạn đứng tên giùm, định "để ngày mai tính". Ngày mai đó kéo dài 16 năm. Câu slogan *"Việc hôm nay cứ để ngày mai tính"* bắt đầu từ chuyện này.
-- Bình không bao giờ coi mình là "chủ". Với bác, đó là đồ gửi của bạn, giữ cho kỹ là được.
+- Trong **tủ gỗ cũ ở nhà Ven Đô** là **bản gốc giấy tờ thành lập G-Entertainment năm 2010, đứng tên Genta**. Trước khi ra nước ngoài, Genta gửi bác giữ hộ vì "để ở công ty thì thằng Thắng làm mất", rồi dặn: *"Việc hôm nay cứ để ngày mai tính."* Câu dặn đó sau này thành slogan công ty.
+- Bình chỉ là bảo vệ, và chưa bao giờ muốn là gì khác. Với bác, đó là đồ gửi của bạn, giữ cho kỹ là được.
 
 ### Động cơ trong 30 ngày
 Ngày 1/10, Bình đứng ở cổng nhìn cả công ty reo hò vì 5 tỷ của Siêu Nhân Hồng. Bác là người duy nhất không vui ngay, vì bác thấy Thắng mấy tháng nay đi xe máy thay vì xe hơi, và thấy giấy báo của **Ngân hàng Tín Dụng Đen Đủi** gửi tới cổng.
@@ -25,7 +25,7 @@ Ngày 1/10, Bình đứng ở cổng nhìn cả công ty reo hò vì 5 tỷ củ
 Bác phải quyết định: tháng này viết gì cho G. Viết thật hết thì Thắng có thể mất ghế. Viết giấu thì phụ lòng bạn. Không viết gì thì… bác không quen nói dối bằng cách im lặng, dù bác giỏi im lặng nhất công ty.
 
 ### Sự thật Bình chưa biết
-Lá thư ngày **20/10** của G có kèm một **phong bì thứ hai, dán kín**, ghi: *"Chỉ mở khi công ty sắp sập."* Bên trong là giấy ủy quyền ký sẵn: G giao cho Bình toàn quyền quyết định số phận G-Entertainment. Bán cho LL, giao hẳn cho Thắng, hay đóng cửa. G viết thêm một dòng: *"Tôi không cần biết nó lời hay lỗ. Tôi chỉ muốn biết mấy đứa nhỏ còn thương nhau không."*
+Lá thư ngày **20/10** của G có kèm một **phong bì thứ hai, dán kín**, ghi: *"Chỉ mở khi công ty sắp sập."* Bên trong là **quyết định của chính Genta** về tương lai công ty, viết sẵn từ trước, kèm lời dặn: chỉ Bình được mở và đọc to cho mọi người nghe. Bác không có quyền quyết gì, bác chỉ là người giữ thư. G viết thêm một dòng: *"Tôi không cần biết nó lời hay lỗ. Tôi chỉ muốn biết mấy đứa nhỏ còn thương nhau không."*
 
 ---
 
@@ -111,14 +111,14 @@ Bác không làm truyền thông, nhưng bác giữ cổng. Mọi thứ của ch
 - **20/10 (Phụ nữ Việt Nam + sinh nhật công ty 16 tuổi):** bác 16 năm đứng ở cổng này. Lá thư của G tới đúng sáng hôm đó, kèm phong bì dán kín. Thắng thấy bác cầm thư (xem Mẫu 4). Lựa chọn lớn nhất chương: giữ thư cho riêng mình, hay đọc trước toàn công ty.
 
 ### Chương 5: "Tủ Gỗ Ở Ven Đô" (21/10 – 27/10)
-- **22/10 (kiểm tra thuế):** đoàn thuế đòi bản gốc giấy tờ thành lập năm 2010. Thương lục cả phòng kế toán không ra. Chỉ bác biết nó nằm trong tủ gỗ ở Ven Đô. Lựa chọn: lặng lẽ chạy xe về lấy (lộ tên mình trên giấy tờ), để Thương tự xoay, hay báo cho G trước.
+- **22/10 (kiểm tra thuế):** đoàn thuế đòi bản gốc giấy tờ thành lập năm 2010. Thương lục cả phòng kế toán không ra. Chỉ bác biết nó nằm trong tủ gỗ ở Ven Đô. Lựa chọn: lặng lẽ chạy xe về lấy (lộ chuyện mình là người Genta tin cậy), để Thương tự xoay, hay báo cho G trước.
 - **23/10:** sinh nhật Nguyên. Tuất phá bánh kem hồng. Bác là người dắt Tuất ra, và là người đưa cho Nguyên cái khăn lau mặt khi Nguyên lén tháo mũ sau chòi.
 - **24/10:** Hương tổ chức "hội nghị hòa giải". Mời bác ngồi ghế chủ tọa "vì bác không theo phe nào".
 - **27/10:** **Lưu Lực** tới cổng trong bộ vest trắng, nhờ bác "chuyển giùm phong bì này cho cậu Nguyên" (xem Mẫu 5).
 
 ### Chương 6: "Cuộc Họp Cổ Đông Ở Cổng" (28/10 – 31/10)
 - **29/10 (wifi sập):** Zalo-lô chết. Cả công ty phải nhắn nhau bằng **giấy viết tay gửi ở chòi bảo vệ**. Bác thành tổng đài. Ai nhắn gì cho ai, bác biết hết.
-- **30/10 (họp đánh giá):** nếu Lòng Tin Của G ≥ 80 và đã mở phong bì dán kín, bác được mời lên phòng họp lần đầu tiên trong 16 năm. Bác quyết định số phận công ty: **giữ, bán cho LL, hay giao hẳn cho Thắng**.
+- **30/10 (họp đánh giá):** nếu Lòng Tin Của G ≥ 80 và đã mở phong bì dán kín, bác được mời lên phòng họp lần đầu tiên trong 16 năm, **để đọc quyết định của G**. Bác không quyết gì cả, bác chỉ đọc, rồi xuống cổng rót trà.
 - **31/10:** Đêm Hồng. Bác đứng ở cổng sân khấu như mọi ngày, hoặc ngồi hàng ghế đầu với cái thẻ "Khách mời đặc biệt" mà bác không quen đeo.
 
 ---
@@ -145,7 +145,7 @@ Bác không làm truyền thông, nhưng bác giữ cổng. Mọi thứ của ch
 >
 > 1. 💸 *Lấy tiền trong ống bơ trà ra: "Ừ. Lần cuối nhé."*
 >    - Mất 2.000.000đ. Quan hệ với {dan_dau_tu} +10. Độ Bình Tâm −10
-> 2. 📒 *Mở sổ trực, chỉ vào trang ghi nợ: "Cháu nợ bác 4 triệu 2 rồi đấy."*
+> 2. 📒 *Mở sổ trực, chỉ vào trang ghi nợ: "Cháu nợ bác 2 triệu rồi đấy."*
 >    - {dan_dau_tu} cúi đầu. 50% trả trước 500.000đ để giữ uy tín
 > 3. 🍵 *"Ngồi xuống uống chén trà đã. Chuyện tiền để sau."*
 >    - {dan_dau_tu} kể thật: đang nợ nửa công ty. Bí Mật Biết Được +1, Độ Bình Tâm +5
@@ -177,7 +177,7 @@ Bác không làm truyền thông, nhưng bác giữ cổng. Mọi thứ của ch
 > 3. 📢 *Cầm thư đi lên sân liên hoan, đọc trước toàn công ty.*
 >    - Cả công ty im lặng nghe giọng Bắc chậm rãi đọc: *"Gửi mấy đứa nhỏ ở G…"* Độ Lộ Thân Phận +40. Tinh thần cả công ty lên cao
 > 4. 🔒 *Mở phong bì thứ hai, dù chưa tới lúc.* (Chỉ hiện nếu Lòng Tin Của G ≥ 80)
->    - Bạn biết mình đang cầm giấy ủy quyền quyết định số phận công ty. Độ Bình Tâm −30. Mở nhánh "Ghế chủ tọa"
+>    - Bạn biết bên trong là quyết định của G về tương lai công ty, và bạn là người sẽ phải đọc nó. Độ Bình Tâm −30. Mở nhánh "Người đọc thư"
 
 ### Mẫu 5: Vest trắng ở cổng (27/10)
 
@@ -212,7 +212,7 @@ Bác không làm truyền thông, nhưng bác giữ cổng. Mọi thứ của ch
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
 | 1 | 😄 ✉️ **Người Gác Cổng Được Tin** | Lòng Tin Của G ≥ 80, đã gửi đủ 4 lá thư trong tháng, Độ Lộ Thân Phận < 50, chưa nhận tiền của LL | Sáng 1/11, một lá thư mới tới chòi: *"Bình, cảm ơn anh. Tháng này tôi ngủ ngon."* Kèm theo là giấy tờ sang tên cái quán trà đá cổng sau cho bác. Bác đặt thêm hai cái ghế nhựa. Cả công ty ra ngồi, Tuất nằm dưới chân, radio rè rè bản tin giao thông |
-| 2 | 😄 🔒 **Kết thúc bí mật: Chủ Tịch Trà Đá** | Đã mở phong bì dán kín, mang giấy tờ thành lập tới buổi kiểm tra thuế 22/10, Bí Mật Biết Được ≥ 40, Độ Bình Tâm ≥ 50 ở họp đánh giá 30/10 | Họp đánh giá. Bác đặt tờ giấy năm 2010 lên bàn, giọng chậm rãi: *"Bác không lấy công ty. Bác chỉ ngồi đây một lần thôi."* Cả phòng họp đứng dậy. Bác quyết giữ công ty và giao cho Thắng thêm một năm, kèm điều kiện: không nhắn tin sau 22:00. Rồi bác xuống cổng, rót trà, đeo lại cái thẻ "Bảo vệ" |
+| 2 | 😄 🔒 **Kết thúc bí mật: Người Đọc Thư** | Đã mở phong bì dán kín, mang bản gốc giấy tờ thành lập tới buổi kiểm tra thuế 22/10, Bí Mật Biết Được ≥ 40, Độ Bình Tâm ≥ 50 ở họp đánh giá 30/10 | Họp đánh giá. Bác đứng ở cuối phòng, đeo kính lão, đọc chậm rãi quyết định của G: giữ công ty, giao cho Thắng thêm một năm, kèm điều kiện *"không nhắn tin cho nhân viên sau 22 giờ"*. Cả phòng họp đứng dậy vỗ tay. Bác gấp thư, nói đúng một câu: *"Bác đọc xong rồi."* Rồi bác xuống cổng, rót trà, đeo lại cái thẻ "Bảo vệ" |
 | 3 | 😄 🌱 **Về Vườn** | Chiến dịch Siêu Nhân Hồng thành công (bất kỳ kết thúc có hậu), quan hệ trung bình với nhân viên ≥ 50, Độ Bình Tâm ≥ 70 | Bác nghỉ hưu, về nhà cấp 4 ở Ven Đô. Chủ nhật nào cũng có người tới: Duy chở thùng mì, Bảo sửa radio, Hương mang cơm, Thắng tới ngồi uống trà không nói gì. Tuất chạy khắp vườn rau. Bể cá có thêm 3 con cá mới, tên Thắng, Nhật và Hiếu |
 | 4 | 😢 📭 **Thư Không Hồi Âm** | Lòng Tin Của G ≤ 30 (viết giấu, viết sai, hoặc bỏ thư nhiều tuần) | Tháng 11, tháng 12, rồi tháng 1. Hộp thư ở chòi vẫn trống. Bác vẫn viết, mỗi tối chủ nhật, giấy kẻ ô học sinh, gửi đi, không có hồi âm. Lá thư cuối cùng chỉ có một dòng: *"G ơi, bác vẫn ở cổng."* |
 | 5 | 😢 🚪 **Bị Cho Nghỉ Hưu** | Độ Lộ Thân Phận đạt 100 trước khi Thắng biết toàn bộ sự thật, hoặc quan hệ với Thắng ≤ −40 | Thắng đứng trước chòi, giọng Bắc đều đều: *"Bác nghỉ ngơi đi ạ. Công ty sẽ thuê bảo vệ dịch vụ."* Bác gấp ghế bố, cuộn dây radio, bỏ ấm trà vào túi. Tuất đi theo tới đầu đường rồi đứng lại. Bảo vệ mới đuổi Tuất ra khỏi cổng |

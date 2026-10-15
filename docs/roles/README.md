@@ -79,7 +79,7 @@ Mỗi role gồm: công việc hằng ngày, tính cách, cách nói chuyện, c
 ### 1. 🐍 Rắn Độc: Hiếu
 Xem chi tiết: [ran-doc.md](ran-doc.md)
 
-- **Công việc:** viết bản tin nội bộ hằng tuần, quản lý group Zalo công ty, tổ chức sinh nhật nhân viên. Nghề này cho phép biết chuyện của tất cả mọi người.
+- **Công việc:** viết bản tin nội bộ hằng tuần, quản lý group Zalo-lô công ty, tổ chức sinh nhật nhân viên. Nghề này cho phép biết chuyện của tất cả mọi người.
 - **Tính cách:** ngoài mặt thân thiện, quan tâm, nhớ sinh nhật mọi người. Bên trong là cái máy gây chiến.
 - **Động cơ:** hồi nhỏ ở cùng xóm, Nguyên (lớn hơn 3 tuổi) hay bắt nạt Hiếu. Ngày đầu đi làm, Hiếu phát hiện "siêu sao" mà cả công ty phải lăng xê chính là Nguyên. Hiếu quyết phá cho bằng được.
 - **Cách nói:** ngọt, hay bắt đầu bằng "Nói nhỏ thôi nha…", "Tui nói vậy thôi chứ không có ý gì đâu…".
@@ -92,7 +92,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** thích nói về "văn hóa doanh nghiệp", "công ty là gia đình", nhưng không tăng lương. Mê golf và mê được khen.
 - **Cách nói:** giọng miền Bắc, dùng nhiều từ tiếng Anh sai chỗ ("Em check lại cái mindset giúp anh"), nói dài, hay kể chuyện hồi khởi nghiệp.
 - **Câu cửa miệng:** *"Anh không ép, tùy em."* (nghĩa là bắt buộc)
-- **Bí mật:** công ty đang nợ ngân hàng, cần Siêu Nhân Hồng nổi tiếng để gỡ vốn trước khi chủ đầu tư Genta ở nước ngoài phát hiện. Có một tài khoản Facebook clone để đọc trộm group "anti sếp".
+- **Bí mật:** công ty đang nợ ngân hàng, cần Siêu Nhân Hồng nổi tiếng để gỡ vốn trước khi chủ đầu tư Genta ở nước ngoài phát hiện. Có một tài khoản Phây-búc clone để đọc trộm group "anti sếp".
 - **Quan hệ:** chú ruột của Con Ông Cháu Cha. Rất tin Thánh Nịnh. Sợ Chị Đại.
 - **Ý tưởng truyện:**
   - Bị nhân viên nói xấu trong group bí mật, giả vờ không biết rồi trả thù từng người.
@@ -130,7 +130,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 ---
 
 ### 5. 👀 Thánh Hóng: Ngân
-- **Công việc:** quản lý fanpage, TikTok, đăng bài truyền thông. Nhờ vậy theo dõi mọi drama showbiz **và** drama công ty.
+- **Công việc:** quản lý fanpage, Tóp-tóp, đăng bài truyền thông. Nhờ vậy theo dõi mọi drama showbiz **và** drama công ty.
 - **Tính cách:** cái gì cũng biết, chuyện gì cũng hóng. Không ác, chỉ là không giữ được miệng.
 - **Cách nói:** nói nhanh, nhiều meme, "Ét o ét!", "Biến căng rồi mấy bà ơi!", "Ối dồi ôi!".
 - **Câu cửa miệng:** *"Nghe gì chưa?"*
@@ -159,7 +159,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ### 7. ⏰ Chúa Tể Deadline: Vũ
 - **Công việc:** điều phối dự án: lên kế hoạch, giao việc, chạy tiến độ cho các MV, gameshow.
-- **Tính cách:** 29 ngày lướt TikTok, ngày thứ 30 làm việc của cả tháng trong một đêm, và kết quả vẫn ổn. Điều này làm mọi người tức điên.
+- **Tính cách:** 29 ngày lướt Tóp-tóp, ngày thứ 30 làm việc của cả tháng trong một đêm, và kết quả vẫn ổn. Điều này làm mọi người tức điên.
 - **Cách nói:** "Còn sớm mà", "Chill, kịp hết", rồi tới phút cuối thì "ÉT O ÉT! AI CỨU TUI VỚI!".
 - **Câu cửa miệng:** *"Nước tới chân mới nhảy, mà nhảy là phải đẹp."*
 - **Bí mật:** đã làm mất file gốc của một dự án lớn, đang giấu.
@@ -168,7 +168,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
   - Deadline lớn nhất năm trùng đúng ngày team building.
   - Bị phát hiện làm mất file gốc, phải cùng Editor và IT "giải cứu dữ liệu" trong một đêm.
   - Lần đầu tiên trong đời làm xong việc sớm, cả công ty nghi ngờ có âm mưu.
-  - Siêu Nhân Hồng tỏ tình giữa buổi livestream. Vũ đang lướt TikTok thì thấy mình lên xu hướng.
+  - Siêu Nhân Hồng tỏ tình giữa buổi livestream. Vũ đang lướt Tóp-tóp thì thấy mình lên xu hướng.
 
 ---
 
@@ -275,11 +275,11 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** ban ngày như zombie, ban đêm tỉnh như sáo. Thật thà, ít nói, làm việc giỏi nhất công ty nhưng không ai biết.
 - **Cách nói:** ngáp giữa câu, "Đợi render xong…".
 - **Câu cửa miệng:** *"Render xong là xong."*
-- **Bí mật:** chính là người làm hết các video mà Trưởng Phòng Họp nhận công. Có kênh YouTube riêng gần 1 triệu sub.
+- **Bí mật:** chính là người làm hết các video mà Trưởng Phòng Họp nhận công. Có kênh Diu-túp riêng gần 1 triệu sub.
 - **Quan hệ:** bị Trưởng Phòng Họp lợi dụng, hay bị Chúa Tể Deadline nhờ vả. **Thầm thích Quản Lý Idol**, đêm nào cũng dựng thêm vài video "tiện tay" cho nghệ sĩ của Thái.
 - **Ý tưởng truyện:**
   - Ngủ quên trong công ty, phát hiện bí mật ban đêm.
-  - Kênh YouTube riêng nổi tiếng, công ty muốn "mua lại".
+  - Kênh Diu-túp riêng nổi tiếng, công ty muốn "mua lại".
   - Đình công: cả công ty nhận ra không có Editor thì không ai làm được gì.
   - Dựng một video tỏ tình cho Thái, nhưng lỡ tay xuất nhầm lên fanpage công ty.
 
@@ -390,7 +390,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
   - Hồi nhỏ Nguyên là đứa hay bắt nạt trẻ con trong xóm, trong đó có Hiếu. Đi giúp người bây giờ một phần là để chuộc lỗi, nhưng Nguyên không nhận ra Hiếu.
 - **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Bị Hiếu ngầm phá (mà không hề biết vì sao). Giám đốc đặt cả công ty vào tay người này. **Thích Chúa Tể Deadline Vũ**, tặng quà toàn màu hồng. **Bị chó Tuất ghét cay ghét đắng** vì tật chọc chó.
 - **Ý tưởng truyện:**
-  - Chiến dịch "Hồng hóa Việt Nam": đi gameshow, livestream bán hàng, đu trend TikTok.
+  - Chiến dịch "Hồng hóa Việt Nam": đi gameshow, livestream bán hàng, đu trend Tóp-tóp.
   - Đang quay quảng cáo thì bỏ đi giữa chừng để giúp một bà cụ bị giật túi. Clip được quay lại và lên xu hướng.
   - Drama ồn ào tự tạo để nổi tiếng, rồi không kiểm soát được.
   - Bị paparazzi rình chụp mặt thật.
@@ -411,6 +411,6 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Quan hệ:** thân nhất với Bác Bảo Vệ. Được Thực Tập Sinh và Chị Đại cưng. **Vô cùng ghét Siêu Nhân Hồng**: Nguyên gặp chó là chọc cho vui (giả tiếng sủa, giấu đồ chơi, làm mặt xấu), dù không bao giờ đánh. Tuất thì không thấy vui chút nào, nên hễ thấy bộ đồ hồng là sủa, gầm gừ, đòi cắn mũ.
 - **Ý tưởng truyện:**
   - Tha nhầm điện thoại của giám đốc về ổ, lộ tin nhắn chấn động.
-  - Trở thành idol TikTok của công ty, nổi tiếng hơn cả Siêu Nhân Hồng.
+  - Trở thành idol Tóp-tóp của công ty, nổi tiếng hơn cả Siêu Nhân Hồng.
   - Cứu công ty khỏi một vụ trộm lúc nửa đêm.
   - Cuộc chiến Tuất và Siêu Nhân Hồng: lần nào Nguyên lên sóng, Tuất cũng tìm cách phá. Một ngày Tuất giật được chiếc mũ…

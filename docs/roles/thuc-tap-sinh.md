@@ -22,7 +22,7 @@ Duy làm mọi việc không ai muốn làm: photo, pha cà phê, xếp ghế, c
 ### Động cơ trong 30 ngày
 - **Được giữ lại làm nhân viên chính thức** sau buổi đánh giá ngày 30/10.
 - Giữ kín thân phận.
-- Đòi lại ý tưởng của mình: tháng 9, Duy kể với Oánh ở pantry ý tưởng phim ngắn **"Người Gác Két"** (một anh nhân viên ngân hàng bỏ việc đi làm siêu nhân). Oánh khen "cũng được". Ba tuần sau, kịch bản phim ngắn sắp ra mắt của công ty có y hệt cốt truyện đó, tên tác giả là Oánh.
+- Đòi lại ý tưởng của mình: tháng 9, Duy kể với Oánh ở pantry ý tưởng phim ngắn **"Người Gác Két"** (một anh nhân viên ngân hàng bỏ việc đi làm siêu nhân). Oánh khen "cũng được". Ba tuần sau, kịch bản phim ngắn sắp ra mắt của công ty có y hệt cốt truyện đó, đổi tên thành **"Người Hùng Không Tên"**, tên tác giả là Oánh.
 
 ### Sự thật Duy chưa biết
 Năm 2024, có một người đàn ông đeo khẩu trang, kính đen tới vay thế chấp một căn biệt thự trên Đồi Ngân Hàng "để cứu công ty". Người duyệt hồ sơ là Trưởng phòng Tín dụng Duy. **Người vay chính là Thắng.** Hai bên đều không nhận ra nhau: Thắng không nhớ ông trưởng phòng ria mép, Duy không nhận ra ông khách đeo kính đen. Khoản vay **đến hạn ngày 15/11/2026**. Duy là người duy nhất trong công ty biết rõ ngân hàng sẽ làm gì nếu khoản đó không được trả.
@@ -119,7 +119,7 @@ Duy là "chân tay" của chiến dịch: việc nhỏ, nhưng không có ai là
 - **23/10:** sinh nhật Nguyên. Duy được giao giữ bánh kem khỏi Tuất (vì Tuất thương Duy). Tuất nhìn Duy, nhìn bánh, nhìn Nguyên. Duy phải chọn: giữ bánh, hay… quay đi 3 giây.
 - **25/10 (chủ nhật):** sếp cũ ở ngân hàng gọi: *"Quay về đi, ghế phó giám đốc chi nhánh còn trống."* Lương 60 triệu.
 - **26/10:** tin đồn cắt giảm nhân sự. Hiếu nói nhỏ với Duy: *"Thực tập sinh là bị cắt đầu tiên đó anh."* Duy tin.
-- **27/10:** LL-Entertainment ra tay với Nguyên. Cùng ngày, trailer phim ngắn "Người Gác Két" được đăng lên, đề tên Oánh.
+- **27/10:** LL-Entertainment ra tay với Nguyên. Cùng ngày, trailer phim ngắn "Người Hùng Không Tên" (tức "Người Gác Két" đã bị đổi tên) được đăng lên, đề tên Oánh.
 
 ### Chương 6: "Hết Thực Tập" (28/10 – 31/10)
 - **29/10:** wifi sập. Cả công ty tê liệt. Duy (8 năm làm ngân hàng, từng trải qua 3 lần hệ thống sập ngày quyết toán) tổ chức lại toàn bộ công việc bằng giấy: sổ giao việc, phiếu chuyển file bằng USB, bảng tiến độ dán tường. Nếu Kinh Nghiệm ≥ 50, đây là ngày Duy tỏa sáng.

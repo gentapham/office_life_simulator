@@ -23,7 +23,7 @@ Bảo ít nói, hướng nội, trả lời mọi câu hỏi trong tối đa 4 c
 ### Những thứ Bảo biết mà không nói
 - **Ngân là admin trang "Confession G-Entertainment"**: bài nào cũng đăng từ máy "NGAN-LAPTOP" qua wifi công ty lúc 23 giờ. Bảo giữ kín, đổi lại Ngân không bao giờ kể chuyện Bảo ngủ ở công ty.
 - Máy của Giám đốc Thắng có **hai tài khoản Phây-búc** cùng đăng nhập. Một cái tên "Thắng Nguyễn", một cái tên "Hoa Hướng Dương 1989". Bảo có thể phát hiện ra cái sau là clone đọc trộm group "anti sếp", hoặc không.
-- **Chương nợ Bảo 4.500.000đ** từ đợt "coin sắp x10" hồi tháng 3.
+- **Chương nợ Bảo 3.000.000đ** từ đợt "coin sắp x10" hồi tháng 3.
 
 ### Sự thật Bảo chưa biết
 - Ổ cứng ghi **"KHÔNG ĐƯỢC MỞ"** ở nhà trọ là bản sao lưu tự động toàn bộ máy chủ công ty từ 2016. Trong đó có **file gốc dự án mà Vũ làm mất**, và cả **bản thu mộc "Công Viên" năm 2015** chưa qua phối khí. Bảo dán nhãn như vậy để không ai đụng vào, rồi chính Bảo cũng quên mình có nó.

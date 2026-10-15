@@ -20,7 +20,7 @@ Vấn đề là Nhật **không biết dùng phần mềm dựng phim**. Mọi v
 
 ### Sự thật Nhật chưa biết
 - **Long không hề muốn ghế Phó Giám đốc.** Long chỉ muốn trốn vào phòng thu làm nhạc. Cuộc chiến lớn nhất đời Nhật thật ra chỉ có một người đánh.
-- Những video hướng dẫn dựng phim Nhật lén xem mỗi đêm nằm trên một kênh YouTube gần 1 triệu sub, và chủ kênh đó **chính là Lĩnh**.
+- Những video hướng dẫn dựng phim Nhật lén xem mỗi đêm nằm trên một kênh Diu-túp gần 1 triệu sub, và chủ kênh đó **chính là Lĩnh**.
 
 ---
 
@@ -162,7 +162,7 @@ Nhật chịu trách nhiệm **sản xuất mọi nội dung**: MV, gameshow, li
 >    - Độ Lộ +30 nhưng cả phòng im lặng, không ai cười. Quan hệ với cả phòng +15. {editor} ngẩng lên
 > 2. 💨 *Thổi tắt nến: "Vì lý do an toàn cháy nổ, mình hoãn họp nhé."*
 >    - Phòng tối hẳn. {chua_te_deadline} cười trong bóng tối: "Chill, tui hiểu rồi." Độ Lộ +15
-> 3. 🔄 *"Thế còn cậu, file gốc dự án năm ngoái đâu rồi?"*
+> 3. 🔄 *"Thế còn cậu, file gốc dự án tháng 6 đâu rồi?"*
 >    - {chua_te_deadline} im bặt. Hai người cùng giữ bí mật của nhau. Quan hệ với {chua_te_deadline} −10, nhưng Vũ không bao giờ nhắc chuyện này nữa
 
 ### Mẫu 4: Clip highlight (16/10, sau phát sóng)

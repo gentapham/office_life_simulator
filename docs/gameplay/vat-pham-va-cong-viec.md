@@ -122,7 +122,7 @@ Nhận qua app **Freelancer** trên điện thoại trong game. Làm ở nhà ho
 |---|---|---|---|
 | ✍️ Viết content bán hàng online | 1 giờ | 150.000đ | Khách sửa 3 lần |
 | 🎨 Thiết kế logo quán trà sữa | 2 giờ | 400.000đ | Khách chọn lại bản đầu tiên |
-| 🎬 Cắt video TikTok cho shop quần áo | 2 giờ | 300.000đ | |
+| 🎬 Cắt video Tóp-tóp cho shop quần áo | 2 giờ | 300.000đ | |
 | 🗣️ Dịch phụ đề phim | 3 giờ | 500.000đ | Phim dài, buồn ngủ |
 | 📞 Trực livestream bán hàng (chốt đơn) | 2 giờ | 250.000đ + hoa hồng | Gặp khách "bom hàng" |
 | 🛵 Chạy giao đồ ăn | 2 giờ | 200.000đ | Cần xe máy. Có thể giao tới nhà đồng nghiệp và thấy bí mật |

@@ -31,7 +31,7 @@ Tháng 10/2026 có **22 ngày làm việc** và 9 ngày cuối tuần.
 |---|---|---|
 | **10/10** | T7 | 💰 **Ngày nhận lương tháng**, nhưng rơi vào thứ 7 nên… lương chưa về<br>🎉 Ngày Giải phóng Thủ đô: Thắng, Nhật và Bác Bình (người miền Bắc) kể chuyện Hà Nội<br>🎉 Ngày Sức khỏe Tâm thần Thế giới: ai stress cao được giảm giá ở phòng khám |
 | 11/10 | CN | 🎉 Ngày Quốc tế Trẻ em gái: cả công ty đăng ảnh hồi nhỏ. Hiếu thấy ảnh hồi nhỏ của Nguyên và nhớ lại hết |
-| **12/10** | T2 | 💰 **Lương tháng về trễ 2 ngày.** Group Zalo sôi sục, mỏ vàng cho drama<br>🏢 Họp giao ban |
+| **12/10** | T2 | 💰 **Lương tháng về trễ 2 ngày.** Group Zalo-lô sôi sục, mỏ vàng cho drama<br>🏢 Họp giao ban |
 | **13/10** | T3 | 🎉 **Ngày Doanh nhân Việt Nam**: Thắng tự tặng hoa cho chính mình. Nhi tặng Thắng một bài phát biểu khen 15 phút |
 | **14/10** | T4 | 🩷 **Mốc 2:** phải đạt 200.000 người theo dõi<br>🎉 Ngày Hội Nông dân Việt Nam: Sơn xin nghỉ "về quê phụ gặt lúa" |
 | **15/10** | T5 | ⚠️ **Mất điện cả ngày.** Cả công ty ra pantry ngồi buôn chuyện, bí mật lộ ra hàng loạt<br>🎉 Ngày Thanh niên Việt Nam (Hội LHTN): Duy 30 tuổi vẫn tự nhận là thanh niên |
@@ -72,7 +72,7 @@ Tháng 10/2026 có **22 ngày làm việc** và 9 ngày cuối tuần.
 | Thứ 6, 15:00 | Trà sữa thứ 6 từ quỹ phạt đi trễ |
 | Thứ 6, 17:30 | Lương tuần (nếu người chơi chọn nhận theo tuần) |
 | Mỗi ngày, 17:30 | Lương ngày (nếu người chơi chọn nhận theo ngày) |
-| Mỗi tối 22:00 | Thắng nhắn group Zalo |
+| Mỗi tối 22:00 | Thắng nhắn group Zalo-lô |
 | Thứ 7 – CN | Tự do: hẹn hò, giải trí, freelancer, hoặc bị gọi tăng ca |
 
 ---

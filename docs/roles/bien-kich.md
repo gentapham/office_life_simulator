@@ -20,7 +20,7 @@ Khi bí, Oánh **"tham khảo"**: một câu thoại nghe được ở quán cơ
 - **Viết xong cuốn tiểu thuyết đầu tay** *"Công Ty Là Gia Đình"*, về drama ở một công ty giải trí sắp phá sản. Mỗi tối về gác mái, Oánh gõ máy đánh chữ, ghi lại những gì thấy ở công ty trong ngày. **Dùng tên thật của đồng nghiệp.** "Để đó, sửa sau."
 
 ### Bí mật
-- Ý tưởng "Người Hùng Không Tên" là của **Duy**, cậu thực tập sinh 30 tuổi. Ngày 2/10, trong cuộc họp chiến dịch, Duy rụt rè kể: *"Dạ… em có ý tưởng về một người hùng mặc đồ hồng, giúp người ta xong rồi đi mất, không ai biết tên ạ."* Nhật nói *"Cái này mình take note lại nhé"*, rồi quên. Oánh thì không quên. Oánh viết lại thành kịch bản và nộp dưới tên mình.
+- Ý tưởng "Người Hùng Không Tên" là của **Duy**, cậu thực tập sinh 30 tuổi. Tháng 9, Duy đã kể với Oánh ở pantry ý tưởng phim ngắn tên **"Người Gác Két"** (một anh nhân viên ngân hàng bỏ việc đi làm siêu nhân). Ngày 2/10, trong cuộc họp chiến dịch, Duy rụt rè kể lại: *"Dạ… em có ý tưởng về một người hùng mặc đồ hồng, giúp người ta xong rồi đi mất, không ai biết tên ạ."* Nhật nói *"Cái này mình take note lại nhé"*, rồi quên. Oánh thì không quên. Oánh viết lại thành kịch bản, đổi tên thành "Người Hùng Không Tên" và nộp dưới tên mình.
 - Bản thảo tiểu thuyết nằm trong gác mái và trong một cuốn sổ bìa da Oánh mang theo khắp nơi.
 
 ### Sự thật Oánh chưa biết

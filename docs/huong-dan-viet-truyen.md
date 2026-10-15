@@ -142,7 +142,7 @@ Dùng **vừa phải**, tối đa 1 meme mỗi đoạn hội thoại, và hợp 
 | Chill guy | Người lúc nào cũng thản nhiên | Chúa Tể Deadline |
 
 ### Chất liệu đời văn phòng Việt Nam
-- Group Zalo công ty nhắn lúc 11 giờ đêm, "đã xem" mà không trả lời.
+- Group Zalo-lô công ty nhắn lúc 11 giờ đêm, "đã xem" mà không trả lời.
 - "Anh không ép, tùy em."
 - Ngày 10 có lương, ngày 15 hết tiền.
 - Hỏi lương, hỏi bao giờ lấy vợ lấy chồng.

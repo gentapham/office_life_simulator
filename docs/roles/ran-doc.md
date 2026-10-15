@@ -9,7 +9,7 @@
 
 ## 1. Lý lịch & động cơ
 
-Hiếu vừa được tuyển vào G-Entertainment để viết bản tin nội bộ, quản lý group Zalo công ty và tổ chức sinh nhật cho nhân viên. Công việc nghe thì nhàn, nhưng nó cho Hiếu một thứ quý giá: **quyền được biết chuyện của tất cả mọi người**.
+Hiếu vừa được tuyển vào G-Entertainment để viết bản tin nội bộ, quản lý group Zalo-lô công ty và tổ chức sinh nhật cho nhân viên. Công việc nghe thì nhàn, nhưng nó cho Hiếu một thứ quý giá: **quyền được biết chuyện của tất cả mọi người**.
 
 Ngoài mặt, Hiếu là người dễ thương nhất phòng: nhớ sinh nhật từng người, mua trà sữa cho cả team, hỏi han đủ chuyện. Bên trong là một cỗ máy gây chiến.
 
@@ -59,7 +59,7 @@ Hiếu vẫn phải làm việc thật để không bị đuổi. Làm tốt th�
 |---|---|---|
 | 📰 **Bản Tin Thứ 2** | Ghép các mẩu tin thu thập trong tuần thành bản tin nội bộ. Chọn tin "an toàn" hay tin "cay" để đưa lên | 150.000đ + Uy tín. Tin cay thì thêm Độ Độc |
 | 🎂 **Tổ Chức Sinh Nhật** | Gom tiền cả phòng, chọn bánh kem, xếp lịch hát chúc mừng sao cho người được chúc không nghi ngờ | 1 miếng bánh kem (+No) + quan hệ với người có sinh nhật |
-| 💬 **Quản Trò Group Zalo** | Duyệt tin nhắn trong group công ty: xóa tin spam, ghim thông báo của sếp. Có thể "lỡ tay" ghim nhầm tin | 100.000đ. Ghim nhầm thì Độ Độc +10 |
+| 💬 **Quản Trò Group Zalo-lô** | Duyệt tin nhắn trong group công ty: xóa tin spam, ghim thông báo của sếp. Có thể "lỡ tay" ghim nhầm tin | 100.000đ. Ghim nhầm thì Độ Độc +10 |
 | 🧋 **Trà Sữa Thứ 6** | Ghi order trà sữa của cả phòng, nhớ đúng ai uống gì, bao nhiêu đường | 1 ly trà sữa miễn phí (+Khát) |
 | 🖨️ **Chạy Giấy Tờ** | Mang tài liệu giữa các phòng ban. Mỗi lần đi qua là một cơ hội hóng | 50.000đ + 1 tin mật ngẫu nhiên |
 
@@ -88,7 +88,7 @@ Hiếu cũng có thể **đổi phe**: giúp chiến dịch thật lòng nếu M
 - **4/10 (Ngày Động vật):** Hiếu thấy Nguyên chọc Tuất, Tuất sủa ầm ĩ. Hiếu có **đồng minh đầu tiên**: một con chó.
 
 ### Chương 2: "Hội Anti Sếp" (5/10 – 12/10)
-- Ngân mời Hiếu vào **group Zalo bí mật "Hội Anti Sếp"**. Mỏ vàng tin mật.
+- Ngân mời Hiếu vào **group Zalo-lô bí mật "Hội Anti Sếp"**. Mỏ vàng tin mật.
 - **9/10:** MV đầu tiên của Siêu Nhân Hồng ra mắt. Cơ hội phá đầu tiên.
 - **11/10:** cả công ty đăng ảnh hồi nhỏ. Hiếu thấy ảnh hồi nhỏ của Nguyên, đúng cái xóm năm xưa.
 - **12/10:** lương tháng về trễ 2 ngày, cả group sôi sục, cơ hội đổ dầu.
@@ -206,7 +206,7 @@ Hiếu cũng có thể **đổi phe**: giúp chiến dịch thật lòng nếu M
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 👑 **Trùm Cuối** | Độ Độc ≥ 80, Độ Nghi Ngờ < 40, đã loại được cả Nhật và Long khỏi cuộc đua Phó Giám đốc | Cả công ty đấu đá nhau tan nát, người duy nhất "sạch sẽ" còn lại là bạn. Thắng đề bạt bạn làm Phó Giám đốc. Bạn ngồi ghế mới, mở group Zalo và gõ *"Nghe gì chưa?"* |
+| 1 | 😄 👑 **Trùm Cuối** | Độ Độc ≥ 80, Độ Nghi Ngờ < 40, đã loại được cả Nhật và Long khỏi cuộc đua Phó Giám đốc | Cả công ty đấu đá nhau tan nát, người duy nhất "sạch sẽ" còn lại là bạn. Thắng đề bạt bạn làm Phó Giám đốc. Bạn ngồi ghế mới, mở group Zalo-lô và gõ *"Nghe gì chưa?"* |
 | 2 | 😄 🤝 **Hiếu Ếch Tha Thứ** | Đã mở nhánh "Hiếu Ếch", Mối Hận < 20, đã giúp chiến dịch ít nhất 3 lần | Đêm Hồng, Nguyên mời bạn lên sân khấu, kể chuyện hồi nhỏ trước cả nghìn người và cúi đầu xin lỗi. Bạn cầm micro: *"Tui chỉ nói sự thật thôi mà… Tui tha cho ông rồi."* Cả khán đài vỗ tay |
 | 3 | 😄 🔒 **Kết thúc bí mật: 30 Ngày Làm Rắn** | Thu thập đủ 20 tin mật, không tung tin nào trong 7 ngày cuối, lật mặt được con rắn thứ hai | Bạn tố cáo LL-Entertainment đã cài người vào công ty. Kho tin mật trở thành cuốn sách bán chạy *"30 Ngày Làm Rắn"*. Bạn nghỉ việc, đi ký tặng sách, còn Nguyên đứng xếp hàng xin chữ ký |
 | 4 | 😢 🔥 **Bị Lật Tẩy** | Độ Nghi Ngờ đạt 100 (có thể xảy ra bất cứ lúc nào) | Ảnh chụp tin nhắn của bạn được chiếu lên màn hình phòng họp. Tuấn mời bạn đi "uống trà" lần cuối. Ôm thùng carton ra về, chỉ có {cho} tiễn bạn ra cổng |

@@ -1,121 +1,67 @@
-# Những thứ còn thiếu
+# Tình trạng tài liệu
 
-Danh sách những gì game còn thiếu, chia theo nhóm. Mỗi mục ghi rõ ai làm:
-- 🙋 **Bạn quyết**: ý tưởng, lore, chuyện riêng của thế giới. Chỉ bạn mới chốt được.
-- 🤖 **Mình đề xuất**: mình viết bản nháp, bạn duyệt và sửa.
-
-Mục nào xong thì đánh dấu `[x]`.
+Theo dõi những gì đã xong và những gì còn lại. Ký hiệu:
+- 🙋 **Bạn quyết**
+- 🤖 **Mình viết nháp**, bạn duyệt và sửa
 
 ---
 
-## ⭐ Ưu tiên cao: ảnh hưởng tới mọi thứ khác
+## ✅ Đã chốt / đã có bản nháp
 
-- [x] 🙋 **Tên game:** Giả Lập Một Ngày Làm Nhân Viên Văn Phòng.
-- [ ] 🙋 **Tên tiếng Anh** của game.
-- [x] 🙋 **Bối cảnh Bắc hay Nam?** Đã chốt: phần lớn giọng miền Nam, 3 người giọng miền Bắc (Thắng, Nhật, Bình).
-- [x] 🙋 **Tuổi của 22 NPC.** Đã chốt, xem [roles/README.md](roles/README.md).
-- [ ] 🙋 **Thời điểm trong năm** của 30 ngày chơi. Gợi ý: tháng trước Tết, vì có thưởng Tết, tất niên, áp lực KPI cuối năm. Đây là mỏ drama lớn nhất của dân văn phòng.
-- [ ] 🤖 **"Làm việc" trong game trông như thế nào?** Mỗi role cần một kiểu nhiệm vụ hoặc minigame riêng. Ví dụ:
-  - Designer kéo thả sửa poster theo feedback vô lý.
-  - Kế Toán soát hóa đơn tìm hóa đơn giả.
-  - Editor cắt video theo nhịp.
-  - Sales chém gió qua điện thoại theo kiểu chọn câu.
+### Nền tảng
+- [x] 🙋 Tên game: **Giả Lập Một Ngày Làm Nhân Viên Văn Phòng**
+- [x] 🙋 Chơi trên web, ưu tiên máy tính, host bằng GitHub Pages, repo công khai
+- [x] 🙋 Góc nhìn thứ 1 (thấy 2 tay) và thứ 3, hội thoại hiển thị như nhau
+- [x] 🙋 Song ngữ Việt – Anh, có âm thanh, lưu game trên trình duyệt
+- [x] 🙋 Lượt chơi: 1/10 – 31/10/2026, kết thúc hẳn sau Đêm Hồng (không có mùa 2)
 
-  Đây là phần gameplay chính mà tài liệu chưa có.
+### Thế giới
+- [x] 🙋 Thành Phố Ước Mơ (Dream City), Quận Hóng → [world/the-gioi.md](world/the-gioi.md)
+- [x] 🤖 6 khu, nhà riêng của từng nhân vật, hơn 30 địa điểm → [world/the-gioi.md](world/the-gioi.md)
+- [x] 🤖 Lịch từng ngày tháng 10 và mọi ngày lễ trong tháng → [world/lich-thang-10.md](world/lich-thang-10.md)
+- [x] 🤖 Sinh nhật và lịch trình hằng ngày của từng nhân vật → [world/lich-trinh-nhan-vat.md](world/lich-trinh-nhan-vat.md)
+- [x] 🤖 NPC phụ → [world/npc-phu.md](world/npc-phu.md)
 
----
+### Công ty
+- [x] 🙋 G-Entertainment do Genta (chủ đầu tư ở nước ngoài) thành lập 20/10/2010
+- [x] 🙋 Slogan *"Việc hôm nay cứ để ngày mai tính"*, logo chữ G 7 màu, màu cam
+- [x] 🙋 Công ty ế show, Siêu Nhân Hồng giàu tới nhờ lăng xê
+- [x] 🙋 Đối thủ LL-Entertainment
+- [x] 🤖 Lịch sử, hợp đồng với Siêu Nhân Hồng, sơ đồ tổ chức, thang lương, nội quy, phúc lợi, CEO Lưu Lực của LL → [world/cong-ty.md](world/cong-ty.md)
+- [x] 🙋 Lương nhận theo ngày, tuần hoặc tháng
 
-## 🏢 Công ty G-Entertainment
+### Nhân vật
+- [x] 🙋 23 nhân vật: tên, giới tính, tuổi, vùng miền → [roles/README.md](roles/README.md)
+- [x] 🙋 Quan hệ: Lĩnh → Thái → Phát, Nguyên → Vũ, Huyền + Quỳnh cùng phe, Tuất ghét Nguyên. Không có gia đình xuất hiện
+- [x] 🙋 Hiếu trả thù Siêu Nhân Hồng (bị bắt nạt hồi nhỏ)
+- [x] 🙋 Siêu Nhân Hồng: Nguyễn Nguyên, 23/10/1995, chơi được
+- [x] 🙋 Bác Bình 50 tuổi, chỉ là bảo vệ, bạn lâu năm và "tai mắt" của Genta
+- [x] 🤖 Ngoại hình từng nhân vật → [roles/ngoai-hinh.md](roles/ngoai-hinh.md)
+- [x] 🤖 **Truyện chi tiết cả 23 nhân vật**, mỗi người 6 kết thúc (3 có hậu, 3 buồn) → [roles/](roles/)
+- [x] 🤖 6 kết thúc sự nghiệp của Siêu Nhân Hồng → [GDD.md](GDD.md), mục 7.3
 
-- [x] 🙋 **Cách nhận lương**: theo ngày, theo tuần hoặc theo tháng, người chơi tự chọn.
+### Gameplay
+- [x] 🤖 Minigame theo nghề của từng nhân vật (trong file từng nhân vật)
+- [x] 🤖 Đồ ăn, đồ uống, vật phẩm, giá cả, việc chung, job freelancer → [gameplay/vat-pham-va-cong-viec.md](gameplay/vat-pham-va-cong-viec.md)
+- [x] 🤖 Mở đầu game, ngày đầu hướng dẫn chơi, màn kết → [gameplay/mo-dau-va-am-thanh.md](gameplay/mo-dau-va-am-thanh.md)
 
-- [x] 🙋 **Lịch sử công ty**: Genta thành lập ngày 20/10/2010.
-- [x] 🙋 **Genta**: chủ đầu tư ở nước ngoài, không có mặt ở công ty.
-- [ ] 🙋 **Công ty đang làm gì**: các sản phẩm đang chạy (MV, gameshow, phim, show thực tế). Đặt tên cho vài sản phẩm.
-- [ ] 🙋 **Công ty đối thủ**: tên, ai đứng đầu, đã "giành" gì của G-Entertainment.
-- [ ] 🙋 **Slogan, logo, màu nhận diện** của công ty.
-- [ ] 🤖 **Nội quy công ty**: giờ giấc, phạt đi trễ, dress code, quy định dùng điện thoại. Toàn để cho nhân viên vi phạm :v
-- [ ] 🤖 **Sơ đồ chức vụ và thang lương**: cấp bậc, mức lương từng role, điều kiện lên chức và lên lương.
-- [ ] 🤖 **Phúc lợi**: thưởng, sinh nhật, team building, bảo hiểm.
-
----
-
-## 🩷 Siêu Nhân Hồng: Nguyên
-
-- [x] 🙋 **Gốc gác**: Nguyễn Nguyên, sinh 23/10/1995, người bình thường thích mặc đồ siêu nhân hồng đi giúp người, nhưng không giúp được chính mình.
-- [x] 🙋 **Mặt thật**: chỉ là Nguyễn Nguyên, một người bình thường. Cố định.
-- [x] 🙋 **Vì sao Tuất ghét Nguyên?** Vì Nguyên hay chọc chó cho vui.
-- [ ] 🙋 **Hợp đồng đối tác**: G-Entertainment được gì, Nguyên được gì, thất bại thì sao.
-- [ ] 🤖 Kế hoạch "buff" cho nổi tiếng: các chiến dịch cụ thể trong 30 ngày.
-
----
-
-## 👥 Nhân vật
-
-- [ ] 🙋 **Ngoại hình từng nhân vật**: kiểu tóc, trang phục, màu chủ đạo, phụ kiện đặc trưng. Cần để dựng model 3D.
-- [x] 🙋 **Vùng miền** của từng người: đã chốt. Quê quán cụ thể (tỉnh nào) có thể bổ sung sau.
-- [ ] 🤖 **Sinh nhật từng người**: để gài sự kiện sinh nhật vào 30 ngày.
-- [ ] 🤖 **Lịch trình mỗi ngày của từng NPC**: mấy giờ đến công ty, ăn trưa ở đâu, tối đi đâu. Để người chơi biết tìm ai ở đâu.
-- [x] 🤖 **Nơi ở của NPC**: mỗi nhân vật có nhà riêng, chia theo 6 khu (bản nháp trong [world/the-gioi.md](world/the-gioi.md), mục 3).
-- [ ] 🙋 **Hiếu (Rắn Độc)**: chọn 1 trong 3 động cơ cố định, hay để ngẫu nhiên mỗi lần chơi?
-- [ ] 🙋 **Gia đình**: vợ Giám Đốc, 2 con của Chị Đại, bà ngoại "hay ốm" của Sơn… có xuất hiện trong game không?
-
-### NPC phụ (ngoài 23 nhân vật chính)
-- [ ] 🤖 Bà chủ trọ Hẻm 69
-- [ ] 🤖 Cô bán cơm tấm
-- [ ] 🤖 Thu ngân cửa hàng tiện lợi (ca đêm)
-- [ ] 🤖 Tài xế Grab hay hủy chuyến
-- [ ] 🤖 Hàng xóm hát karaoke
-- [ ] 🤖 Paparazzi rình Siêu Nhân Hồng
-- [ ] 🤖 Nhà đầu tư, cán bộ thuế, shipper (kẻ thù của Tuất)
-- [ ] 🙋 Có thêm NPC phụ nào bạn muốn?
+### Âm thanh
+- [x] 🙋 Bài hit "Công Viên" của Phát
+- [x] 🤖 Nhạc nền, giọng nhân vật, hiệu ứng, bài chủ đề "Hồng Là Thái Độ" → [gameplay/mo-dau-va-am-thanh.md](gameplay/mo-dau-va-am-thanh.md)
+- [x] 🤖 Kho meme cập nhật 2025 – 2026 → [huong-dan-viet-truyen.md](huong-dan-viet-truyen.md)
 
 ---
 
-## 📖 Câu chuyện
+## ⏳ Còn lại
 
-- [ ] 🤖 **Truyện chi tiết 22 role còn lại**, giống file Rắn Độc. Mới xong 1/23.
-- [ ] 🤖 **144 kết thúc** (23 nhân vật × 6 + 6 kết thúc sự nghiệp của Siêu Nhân Hồng). Mới xong 6 của Rắn Độc, và bản nháp 6 kết thúc sự nghiệp.
-- [ ] 🤖 **Truyện riêng khi nhập vai Siêu Nhân Hồng**: tuyến truyện 30 ngày và 6 kết thúc đời tư của Nguyên.
-- [ ] 🤖 **Lịch sự kiện 30 ngày**: sự kiện chung của công ty theo từng ngày (nhận lương, sinh nhật, team building, ra mắt phim, kiểm tra thuế, mất điện…).
-- [ ] 🤖 **Mở đầu game**: đoạn giới thiệu và ngày đầu tiên có hướng dẫn chơi.
-- [x] 🙋 **Cốt truyện chung**: cả công ty phải đưa Siêu Nhân Hồng nổi tiếng. Mỗi lượt chơi có 2 kết thúc: của nhân vật người chơi và của Siêu Nhân Hồng.
-- [ ] 🙋 **Sau ngày 30 thì sao?** Kết thúc hẳn, hay chơi tiếp "mùa 2"?
+### Cần bạn
+- [ ] 🙋 **Duyệt** truyện 23 nhân vật, ngoại hình, bản đồ. Chỗ nào không thích thì nói để sửa
+- [ ] 🙋 Tên tiếng Anh (đề xuất: *Office Worker For A Day*)
+- [ ] 🙋 Bật GitHub Pages trong Settings của repo (mình hướng dẫn khi bắt đầu code)
 
----
-
-## 🌆 Thế giới
-
-- [ ] 🙋 **Tên thành phố** (thật hay hư cấu).
-- [ ] 🤖 **Danh sách vật phẩm**: đồ ăn, đồ uống, quà tặng, bằng chứng, đồ dùng.
-- [ ] 🤖 **Giá cả**: bánh mì, cơm tấm, trà sữa, vé phim, tiền trọ…
-- [ ] 🤖 **Danh sách job freelancer** buổi tối.
-- [x] 🤖 **Thêm địa điểm**: đã thêm 16 địa điểm mới (chợ, karaoke, tiệm nail, quán net, phòng khám, chùa, bến xe, đài truyền hình, công ty đối thủ…). Bản nháp trong [world/the-gioi.md](world/the-gioi.md), mục 4.
-- [ ] 🙋 **Tên công ty đối thủ** để gắn vào bản đồ khu Ven Đô.
-- [ ] 🙋 **Lễ, Tết, ngày đặc biệt** trong 30 ngày (8/3, 20/10, Valentine, Tất niên…).
-
----
-
-## 🎵 Âm thanh & nhạc
-
-- [ ] 🙋 **Bài hit 2015 của Phát**: tên bài, vài câu hát. Dùng làm meme xuyên suốt game.
-- [ ] 🙋 **Bài hát chủ đề** của công ty hoặc của Siêu Nhân Hồng.
-- [ ] 🤖 Danh sách nhạc nền theo địa điểm và hiệu ứng âm thanh cần có.
-
----
-
-## 🎨 Hình ảnh & giao diện (mình làm, bạn duyệt)
-
-- [ ] 🤖 Bảng màu và phong cách đồ họa chung.
-- [ ] 🤖 Giao diện: màn hình chọn role, đặt tên, khung hội thoại, thanh chỉ số, điện thoại trong game, bản đồ.
-- [ ] 🤖 Thiết kế 3D từng nhân vật dựa trên ngoại hình bạn chốt.
-- [ ] 🤖 Bản đồ chi tiết tỉ lệ thật.
-
----
-
-## ⚙️ Kỹ thuật (mình lo)
-
-- [ ] 🤖 Dựng khung dự án (Vite + Three.js) và tự động deploy lên GitHub Pages.
-- [ ] 🤖 Tạo branch `main` làm branch chính.
-- [ ] 🤖 Hệ thống hội thoại Ink, tin đồn, trí nhớ NPC, lưu game.
-- [ ] 🙋 Bật GitHub Pages trong Settings của repo (mình sẽ hướng dẫn khi tới lúc).
+### Mình làm khi bắt đầu code
+- [ ] 🤖 Lời đầy đủ các bài hát
+- [ ] 🤖 Bản tiếng Anh của toàn bộ thoại
+- [ ] 🤖 Chuyển truyện sang file Ink
+- [ ] 🤖 Bảng màu, giao diện, model 3D, bản đồ tỉ lệ thật
+- [ ] 🤖 Dựng khung dự án (Vite + Three.js), tự động deploy lên GitHub Pages, tạo branch `main`

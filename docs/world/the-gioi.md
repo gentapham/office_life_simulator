@@ -31,7 +31,7 @@ Bản đồ chia thành **6 khu**. Mỗi khu là một vùng tải riêng, nên 
 
 | Khu | Tính chất | Ai sống ở đây |
 |---|---|---|
-| ① **Phường Tân Drama** | Trung tâm: công ty, ăn uống, giải trí | Bác Bảo Vệ và Tuất (chòi bảo vệ) |
+| ① **Phường Tân Drama** | Trung tâm: công ty, ăn uống, giải trí | Bác Bình và Tuất (chòi bảo vệ), Vũ (gác trên quán bida) |
 | ② **Hẻm 69** | Khu trọ giá rẻ, ồn ào, ai cũng biết chuyện nhà ai | Hiếu, Ngân, Duy, Bảo, Chương |
 | ③ **Khu Căn Hộ** | Chung cư cao cấp Sky Ảo và chung cư mini Phố Mới | Long, Phát, Huyền, Thái, Nhật, Nhi, Tuấn, Quỳnh, Lĩnh |
 | ④ **Phố Cũ** | Nhà phố lâu đời, chợ, đời sống gia đình | Thương, Hương, Oánh |
@@ -55,7 +55,7 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 | **Tầng 2** | **Phòng giám đốc** (vách kính), **phòng họp "Sáng Tạo"**, **studio** quay phim / thu âm, phòng kế toán, phòng HR | Họp, bị gọi lên "uống trà", quay MV, nhận lương |
 | **Sân thượng** | Ghế nhựa, cây phơi đồ, thùng nước | Hóng gió, khóc thầm, gọi điện riêng, **hẹn hò lén**, nói xấu sếp |
 
-**Đồ vật có thể tương tác:** máy chấm công, máy in (hay kẹt), máy pha cà phê (hay hết), bình nước, tủ lạnh chung (có hộp cơm bị ăn vụng), bảng thông báo (dán thông báo của HR, giấy khen, tin đồn), group Zalo công ty.
+**Đồ vật có thể tương tác:** máy chấm công, máy in (hay kẹt), máy pha cà phê (hay hết), bình nước, tủ lạnh chung (có hộp cơm bị ăn vụng), bảng thông báo (dán thông báo của HR, giấy khen, tin đồn), group Zalo-lô công ty.
 
 ### 2.2. Hẻm 69: nhà trọ của Hiếu
 
@@ -186,7 +186,7 @@ Ngoại ô, đường đất đỏ, ruộng rau, gió mát. Đi xe máy từ tru
 | Nhà | Chủ | Mô tả | Bí mật trong nhà |
 |---|---|---|---|
 | Nhà vườn | 🤒 **Sơn** | Sống một mình. Trên tường treo ảnh bà ngoại, "người bệnh nặng 7 lần trong năm", đang cười tươi khỏe re | Bộ đồ sân khấu kim tuyến và giấy báo vào vòng trong một cuộc thi hát truyền hình |
-| Nhà cấp 4 có vườn | 🛡️ **Bình** | Nhà nhỏ, vườn rau, bể cá. Bác Bình chỉ về đây cuối tuần, ngày thường ở chòi bảo vệ | Tủ gỗ cũ đựng giấy tờ thành lập G-Entertainment đứng tên… Bình |
+| Nhà cấp 4 có vườn | 🛡️ **Bình** | Nhà nhỏ, vườn rau, bể cá. Bác Bình chỉ về đây cuối tuần, ngày thường ở chòi bảo vệ | Tủ gỗ cũ đựng bản gốc giấy tờ thành lập G-Entertainment mà Genta gửi giữ, và chồng thư tay ký tên "G" |
 
 ---
 
@@ -195,6 +195,7 @@ Ngoại ô, đường đất đỏ, ruộng rau, gió mát. Đi xe máy từ tru
 | Nơi ở | Chủ | Mô tả |
 |---|---|---|
 | Chòi bảo vệ | 🛡️ **Bình** và 🐕 **Tuất** | Ngay cổng công ty. Ấm trà, radio, ghế bố. Ổ của Tuất ở bên cạnh |
+| Phòng gác trên Quán bida Cơ Bản | ⏰ **Vũ** | Cách công ty đúng 200 mét mà tuần nào cũng đi trễ. Tiếng bi da lách cách cả đêm, chăn gối bừa bộn, gối ôm hồng Nguyên tặng nằm giữa giường |
 | Gầm cầu thang công ty | 🐕 **Tuất** | Kho báu bí mật: chìa khóa, son môi, điện thoại cũ… toàn bằng chứng của các vụ drama |
 
 ---

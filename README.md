@@ -15,7 +15,7 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 - **Đặt tên** cho mọi nhân vật, hoặc dùng tên mặc định.
 - **Hội thoại nhiều lựa chọn**, tin đồn lan và biến dạng giữa các nhân vật.
 - **2 cái kết mỗi lượt chơi**: kết thúc của nhân vật bạn chọn (6 kết thúc cho mỗi nhân vật: 3 có hậu, 3 buồn) và kết thúc sự nghiệp của Siêu Nhân Hồng (6 kết thúc). Tổng 144 kết thúc.
-- **Thế giới rộng**: công ty, nhà trọ, siêu thị, quán cơm, quán cà phê, rạp phim, quán nhậu, công viên…
+- **Thế giới rộng**: Quận Hóng, Thành Phố Ước Mơ, gồm 6 khu. Nhân vật nào cũng có nhà riêng, cùng hơn 30 địa điểm: công ty, siêu thị, quán ăn, rạp phim, karaoke, công viên…
 - **Sinh tồn đời văn phòng**: đói, khát, năng lượng, stress, làm thêm freelancer. Lương nhận theo ngày, theo tuần hoặc theo tháng, tùy người chơi chọn.
 - **Song ngữ** Tiếng Việt / English, có âm thanh.
 - **Lưu game ngay trên trình duyệt**, không cần máy chủ.
@@ -27,9 +27,16 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 | [docs/GDD.md](docs/GDD.md) | Tài liệu thiết kế game: hệ thống, vòng lặp, kỹ thuật, lộ trình |
 | [docs/world/the-gioi.md](docs/world/the-gioi.md) | Thế giới, bản đồ, địa điểm |
 | [docs/roles/README.md](docs/roles/README.md) | 23 nhân vật: công việc, tính cách, bí mật, ý tưởng truyện |
-| [docs/roles/ran-doc.md](docs/roles/ran-doc.md) | Role Rắn Độc chi tiết: tuyến truyện, hội thoại mẫu, 6 kết thúc |
+| [docs/roles/](docs/roles/) | Truyện chi tiết của từng nhân vật (23 file): lý lịch, minigame, tuyến truyện tháng 10, hội thoại mẫu, 6 kết thúc |
+| [docs/roles/ngoai-hinh.md](docs/roles/ngoai-hinh.md) | Ngoại hình nhân vật để dựng model 3D |
+| [docs/world/cong-ty.md](docs/world/cong-ty.md) | Công ty G-Entertainment: lịch sử, đối thủ LL-Entertainment, hợp đồng với Siêu Nhân Hồng, lương, nội quy |
+| [docs/world/lich-thang-10.md](docs/world/lich-thang-10.md) | Lịch từng ngày tháng 10/2026 và các ngày lễ |
+| [docs/world/npc-phu.md](docs/world/npc-phu.md) | NPC phụ |
+| [docs/world/lich-trinh-nhan-vat.md](docs/world/lich-trinh-nhan-vat.md) | Sinh nhật và lịch trình hằng ngày của từng nhân vật |
+| [docs/gameplay/mo-dau-va-am-thanh.md](docs/gameplay/mo-dau-va-am-thanh.md) | Mở đầu game, ngày đầu hướng dẫn chơi, màn kết, âm thanh và bài hát |
+| [docs/gameplay/vat-pham-va-cong-viec.md](docs/gameplay/vat-pham-va-cong-viec.md) | Đồ ăn uống, vật phẩm, giá cả, việc chung, job freelancer |
 | [docs/huong-dan-viet-truyen.md](docs/huong-dan-viet-truyen.md) | Hướng dẫn viết thoại và câu chuyện |
-| [docs/can-bo-sung.md](docs/can-bo-sung.md) | Danh sách những thứ còn thiếu, cần bổ sung |
+| [docs/can-bo-sung.md](docs/can-bo-sung.md) | Tình trạng tài liệu: đã xong và còn lại |
 
 ## Công nghệ dự kiến
 
@@ -43,7 +50,7 @@ Khi phát hành, game sẽ chạy tại: **https://gentapham.github.io/office_li
 ## Lộ trình
 
 - [x] Chốt ý tưởng, nền tảng, phong cách
-- [ ] Hoàn thiện tài liệu thiết kế và truyện của các role
+- [x] Hoàn thiện tài liệu thế giới và truyện của 23 nhân vật (bản nháp, chờ duyệt)
 - [ ] Bản chạy thử: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
 - [ ] Rắn Độc chơi được trọn 30 ngày với 6 kết thúc
 - [ ] Mở rộng thế giới và thêm role
