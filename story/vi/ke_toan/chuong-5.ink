@@ -221,7 +221,11 @@ _"Nếu cả công ty đã cố hết sức mà Hồng vẫn không nổi, em kh
 _Chỉ có một chữ ký. Muốn có hiệu lực, cần thêm chữ ký của {giam_doc} và một người làm chứng, trước 31/10._
 _Bạn gọi nó là trang 47b. Bạn ngồi nhìn nó rất lâu. Rồi bạn khóc, lần đầu tiên từ ngày 1/10. Không ai thấy. Có lẽ thế là tốt._
 ~ kt_ngu(-30)
-~ kt_mo_nhanh_47b = true
+{ kt_mo_nhanh_47b || qh_sieu_nhan_hong >= 30:
+    ~ kt_mo_nhanh_47b = true
+- else:
+    _Nhưng bạn không chắc. Một tờ giấy dính dầu, không số trang. Có khi chỉ là trò đùa của một người thích bánh chuối chiên. Phải hỏi chính chủ, khi người ta chịu nói thật với bạn._
+}
 * [📁 Bỏ vào bìa nhựa, cất vào két. Mai đi xin chữ ký.]
     ~ kt_keo(3)
 * [📞 Gọi {giam_doc} ngay bây giờ.]
