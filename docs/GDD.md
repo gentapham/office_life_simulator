@@ -1,7 +1,7 @@
 # Giả Lập Một Ngày Làm Nhân Viên Văn Phòng: Tài liệu thiết kế game (GDD)
 
 > **Tên game:** Giả Lập Một Ngày Làm Nhân Viên Văn Phòng
-> **Tên tiếng Anh:** chưa chốt
+> **Tên tiếng Anh (đề xuất):** Office Worker For A Day
 
 > Phiên bản: 0.1 (bản nháp đầu tiên)
 > Trạng thái: đang thảo luận, chưa code

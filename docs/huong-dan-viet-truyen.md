@@ -100,7 +100,26 @@ Truyện được viết bằng **Ink**, một ngôn ngữ chuyên cho truyện 
 
 Dùng **vừa phải**, tối đa 1 meme mỗi đoạn hội thoại, và hợp tính cách nhân vật: Thánh Hóng dùng nhiều, Bác Bảo Vệ gần như không.
 
-> ⚠️ Meme lỗi thời rất nhanh. Danh sách này cần người đang sống ở Việt Nam **xem lại và bổ sung** trước khi dùng.
+> ⚠️ Meme lỗi thời rất nhanh. Danh sách cập nhật tháng 10/2026, chia 2 nhóm: **mới** (2025 – 2026) và **kinh điển** (vẫn dùng được). Không dùng meme gắn với tên người thật.
+
+### Meme mới (2025 – 2026)
+
+| Meme / tiếng lóng | Nghĩa | Hợp với |
+|---|---|---|
+| To6 | "Toxic", độc hại | Mọi người nói về Rắn Độc |
+| Bốc trúng sít rịt | Gặp chuyện trớ trêu, xui hiếm có (từ trend bóc hộp mù "secret") | Bị xếp ngủ chung phòng với người mình ghét ở Vũng Tàu |
+| Hướng nội hết phần đời còn lại | Quê tới mức chỉ muốn trốn, không gặp ai nữa | Bị bắt quả tang nói xấu, livestream lỗi |
+| Thân chưa mà giỡn | Mình chưa thân tới mức đùa vậy đâu | Tuất nói với Nguyên (bằng tiếng chó), Thương nói với Huyền khi bị xin tạm ứng |
+| Mời đoàn mình di chuyển lên núi | Xấu hổ quá, rút lui thôi | Cả phòng họp khi Thắng phát biểu sai |
+| Ok mom | Dạ dạ cho qua, khi bị nhắc nhở | Vũ trả lời Nhật |
+| Chưa đủ wow | Chưa ấn tượng | Thắng duyệt poster của Quỳnh |
+| 6-7 | Câu nói vô nghĩa, nói cho vui | Duy cố bắt trend của giới trẻ |
+| 8386 | Lời chúc phát lộc (nổi từ một video chúc 20/10) | Ngày 20/10, Chương chúc cả công ty |
+| No cap | Nói thật, không xạo | Huyền (dù đang xạo) |
+| Slay | Quá đỉnh, quá chất | Siêu Nhân Hồng tạo dáng |
+| Đám cá tươi | Nói lái của "đám cưới ta" | Ngân trêu cặp đôi bị đồn |
+
+### Meme kinh điển (vẫn dùng được)
 
 | Meme / tiếng lóng | Nghĩa | Hợp với |
 |---|---|---|
