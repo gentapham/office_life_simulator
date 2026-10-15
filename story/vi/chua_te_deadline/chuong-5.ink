@@ -47,6 +47,15 @@ _Bạn về chỗ. Trên bàn: tờ lịch, ngày 31/10 khoanh hồng. Còn 10 n
     ~ vu_chuoi_ngay_it_luot = vu_chuoi_ngay_it_luot + 1
     ~ nghi(-20)
     _Bạn viết được 20 cue. "Cue 1: Đèn tắt. Cue 2: Phim của {bien_kich}." Cảm giác lạ lắm. Như đang đi bộ trên đường mà không ai rượt._
+* {vu_kich_ban_gameshow && vu_ho_so_phuong && vu_so_lan_nho_xiu == 0} [🔒 Làm hết. Toàn bộ. Trước ngày 24.]
+    ~ vu_cue_sheet = 47
+    ~ vu_xong_som = true
+    ~ vu_nuoc_toi_chan = 0
+    ~ vu_chuoi_ngay_it_luot = vu_chuoi_ngay_it_luot + 3
+    ~ nghi(-30)
+    _Ba ngày liền bạn làm từ 8 giờ tới 17 giờ 30. Không lướt. Không nhờ ai. Tối 23/10, cue 47: "Pháo giấy… Go!". Xong._
+    _Bạn nhìn lịch. Còn 8 ngày. Không còn gì để làm. Cảm giác này… đáng sợ thiệt._
+    truong_phong: *(đọc email, gọi ngay)* {chua_te_deadline}. Cậu bị ai đe dọa à? Chớp mắt hai lần nếu cần giúp.
 * [😎 "Còn 10 ngày lận. Chill."]
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
     ~ vu_gio_luot = vu_gio_luot + 2

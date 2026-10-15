@@ -12,7 +12,7 @@ _Trang Confession {cong_ty} vừa đăng bài ẩn danh: biệt thự của sế
     ~ cang_thang(10)
 }
 _{hr} và {it} đi từng bàn. {hr} cười. {it} không cười._
-hr: Oánh rảnh không, ngồi đây anh hỏi xíu. Bài này viết có ẩn dụ, có nhịp, có "cong mà không gãy"… Ai trong công ty viết được văn này nhỉ?
+hr: {bien_kich} rảnh không, ngồi đây anh hỏi xíu. Bài này viết có ẩn dụ, có nhịp, có "cong mà không gãy"… Ai trong công ty viết được văn này nhỉ?
 * [📖 Phân tích như nhà phê bình: "Câu ngắn, dùng 'ối dồi ôi' hai lần. Người viết hông phải dân văn."]
     hr: Ồ… nghe cũng có lý. *(liếc sang bàn của {hong_hot})*
     it: *(nhìn bạn rất lâu, không nói gì)*
@@ -28,7 +28,7 @@ hr: Oánh rảnh không, ngồi đây anh hỏi xíu. Bài này viết có ẩn 
     ~ qh("hr", 10)
     ~ bk_that(5)
     _Lần đầu bạn thấy {hr} không cười. Nụ cười tắt đi trông anh ấy trẻ hơn mười tuổi._
-- truong_phong: *(nói vọng sang)* Oánh, kịch bản phim còn 4 ngày đấy nhé!
+- truong_phong: *(nói vọng sang)* {bien_kich}, kịch bản phim còn 4 ngày đấy nhé!
 * [🎬 Bỏ hết, ngồi viết phim tới tối.]
     ~ bk_phim(20)
     ~ bk_that(5)
@@ -110,7 +110,7 @@ sales: Chị… à em… à chị ơi! Tối nay phải có "Mr. Kevin Trộn" c
     ~ bk_that(5)
     ~ qh("sales", -5)
 - _Còn một chuyện: chiếc bánh kem hồng ba tầng. Và một con chó ghét bộ đồ hồng nhất quận._
-* [💡 Viết thêm phương án dự phòng: "Nếu Tuất phá bánh, chuyển sang phân cảnh 'Tuất chúc mừng sinh nhật'."]
+* [💡 Viết thêm phương án dự phòng: "Nếu {cho} phá bánh, chuyển sang phân cảnh '{cho} chúc mừng sinh nhật'."]
     ~ bk_ke_hoach_tuat = true
     ~ bk_that(10)
     _Bạn ghi thêm: "Chuẩn bị sẵn bánh cupcake cho chó. Nến hình khúc xương. Nhạc nền phim hành động."_
@@ -129,7 +129,7 @@ _Và rồi, đúng như mọi kịch bản tồi của cuộc đời: một bón
 cho: Gâu! *(ngồi giữa đống kem, mặt đầy kem hồng, rất hài lòng)*
 { bk_ke_hoach_tuat:
     _Bạn giơ tờ kịch bản lên: PHÂN CẢNH 7B. Đèn chuyển. Nhạc hành động. {thuc_tap_sinh} bưng ra cái cupcake có nến hình khúc xương._
-    sieu_nhan_hong: *(quỳ xuống)* Tuất ơi… em chúc sinh nhật anh hả? Ừ thì… cảm ơn em!
+    sieu_nhan_hong: *(quỳ xuống)* {cho} ơi… em chúc sinh nhật anh hả? Ừ thì… cảm ơn em!
     _{cho} ăn cupcake, rồi liếm luôn mũ siêu nhân. Mười hai nghìn người đồng loạt thả tim._
     ~ follow(25000)
     ~ qh("cho", 5)
@@ -169,7 +169,7 @@ _Ở bàn bên, {dan_dau_tu} ngồi giữa "bàn chủ nợ". Bạn cũng có t�
     { qh_designer >= 50:
         ~ bk_quynh_hoa_binh = true
     }
-* [🙇 "Quỳnh. Vụ slogan tiệm nail 2021… đúng là tui lấy câu của bà. Xin lỗi."]
+* [🙇 "{designer}. Vụ slogan tiệm nail 2021… đúng là tui lấy câu của bà. Xin lỗi."]
     ~ bk_ghi_cong("designer")
     designer: *(nhìn bạn rất lâu)* Năm năm. Năm năm tui chờ câu này.
     designer: Ừ. Vậy giờ mình vẽ.
@@ -196,7 +196,7 @@ _Ở bàn bên, {dan_dau_tu} ngồi giữa "bàn chủ nợ". Bạn cũng có t�
 === bien_kich_2510_chot_kich_ban ===
 # ngay:25 # gio:21:00 # noi:gac_mai_so_7 # bat_buoc
 _Chủ nhật. Hạn chót kịch bản phim là nửa đêm nay. Gác mái chỉ có tiếng máy đánh chữ, tiếng mèo, và tiếng tim bạn đập._
-_Trên mạng, người ta chia nhau tin Sơn vào bán kết một cuộc thi hát. Bạn không có thời gian hóng._
+_Trên mạng, người ta chia nhau tin {thanh_xin_nghi} vào bán kết một cuộc thi hát. Bạn không có thời gian hóng._
 { bk_tien_do_phim >= 60:
     _Kịch bản gần xong. Chỉ còn cảnh cuối: người hùng quay lưng đi._
 - else:

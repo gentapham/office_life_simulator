@@ -145,7 +145,7 @@ _19 giờ. Livestream sinh nhật. 12.000 người xem. Bánh kem hồng đặt 
 _"Chủ tịch Kevin Trộn" lên sóng, đeo kính đen, tay cầm hộp quà có logo BTT. Logo bạn vẽ. Bạn nín thở cả đoạn._
 sieu_nhan_hong: Cảm ơn mọi người! Hôm nay em 31 tuổi! Em… em có chuyện muốn nói.
 sieu_nhan_hong: Anh {chua_te_deadline} ơi… em thích anh. Không phải PR đâu.
-_Bình luận nổ tung. Hashtag #VũƠiTrảLờiĐi lên xu hướng trong 4 phút. {chua_te_deadline} đứng ở góc phòng, cầm điện thoại, đứng hình._
+_Bình luận nổ tung. Hashtag \#VũƠiTrảLờiĐi lên xu hướng trong 4 phút. {chua_te_deadline} đứng ở góc phòng, cầm điện thoại, đứng hình._
 _Đúng lúc đó, một bóng đen lao vào từ cửa. {cho}. Chiếc mũ bằng đường. Bánh kem bay._
 cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
 { ds_co_sticker_tuat:

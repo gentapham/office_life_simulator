@@ -93,7 +93,6 @@ hong_hot: Nhi ơi! Nghe gì chưa? Mà thôi, bà ngồi gần sếp, bà nghe t
 * [😶 "Tui hông nghe gì hết. Thiệt."]
     hong_hot: Xạo! Bà đọc email sếp mà! Ai cũng biết!
     _"Ai cũng biết." Bạn tưởng đó là bí mật._
-    ~ tn_email(0)
 * [💬 "Bà kể trước đi, rồi tui kể."]
     hong_hot: Ok! Hôm qua tui thấy {designer} sơn móng màu xanh lá chuối. Giống bà hôm trước á!
     _Bạn giấu tay vào túi áo._
@@ -213,7 +212,6 @@ _Câu nói đáng sợ nhất công ty. Nhưng đây là trà Ô Long, loại s�
 * [🙇 "Dạ anh pha trà khéo quá anh ơi, em học hỏi!"]
     hr: Anh chỉ muốn lắng nghe em thôi. Gần đây em có… đi đâu xa không? Ven Đô chẳng hạn?
     _Ven Đô. Nơi có tòa nhà kính xanh lá chuối._
-    ~ tn_xanh(0)
 * [🚪 "Dạ em bận lịch sếp, để bữa khác nha anh."]
     hr: Ừ. Anh không ép. *(nụ cười như con dao bọc nhung)*
     ~ qh("hr", -3)

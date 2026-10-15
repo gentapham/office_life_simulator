@@ -20,7 +20,7 @@ _Trong ngực có một cái gì đó gõ cửa. Nhỏ thôi. Lần đầu tiên
 * [🌹 Cắm bông hồng vào ly nước, kẹp tấm thiệp vào sổ bìa da.]
     ~ nhan(hoa_hong)
     ~ bk_cam(5)
-    _Tấm thiệp nằm ngay sau trang "Ý tưởng của Duy (2/10)", nếu trang đó có. Bạn không lật lại để kiểm tra._
+    _Tấm thiệp nằm ngay sau trang "Ý tưởng của {thuc_tap_sinh} (2/10)", nếu trang đó có. Bạn không lật lại để kiểm tra._
 * [🤝 Đưa bông hồng cho {designer}: "Nè, coi như tui xin lỗi vụ năm 2021."]
     designer: Ủa? Vụ nào? Bà nói rõ ra đi, vụ 2021 có tới bốn vụ.
     bien_kich: Vụ nào cũng được. Bà chọn.
@@ -38,7 +38,7 @@ _Trong ngực có một cái gì đó gõ cửa. Nhỏ thôi. Lần đầu tiên
 === bien_kich_0510_giao_ban ===
 # ngay:5 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban đầu tuần. {truong_phong} viết lên bảng: "HỌP 5 PHÚT". Đồng hồ trên tường đã chạy sang phút thứ 47._
-truong_phong: Tuần này MV ra ngày 9. Kịch bản MV đâu Oánh nhỉ?
+truong_phong: Tuần này MV ra ngày 9. Kịch bản MV đâu {bien_kich} nhỉ?
 chua_te_deadline: *(không ngẩng đầu khỏi điện thoại)* Còn sớm mà anh. Chill.
 truong_phong: Tớ không hỏi cậu.
 _Bạn có hai lựa chọn: nói thật là kịch bản mới có hồi một, hoặc nói như một nhà văn._
@@ -66,7 +66,7 @@ designer: Bà ơi, poster tui xong rồi mà kịch bản MV bà chưa có. Bà 
     ~ qh("sales", -10)
     ~ bk_cam(15)
     designer: *(mặt đỏ dần từ cổ lên trán)* Bà… bà nhắc lại con số đó thêm một lần nữa coi.
-    sales: *(từ cửa studio)* Ai động tới Quỳnh là động tới chị nha. Tin chị đi.
+    sales: *(từ cửa studio)* Ai động tới {designer} là động tới chị nha. Tin chị đi.
     _Bạn ghi lại câu đó liền. Cảnh này hay quá. Hay tới mức bạn quên mất mình vừa có thêm hai kẻ thù._
 * [🤝 "Bà cho tui coi poster trước đi. Tui viết theo hình của bà."]
     ~ qh("designer", 15)
@@ -129,7 +129,7 @@ _Mốc 1: phải đạt 50.000 người theo dõi. {giam_doc} đứng trước m
     ~ cang_thang(15)
     ~ nghi(-15)
 }
-giam_doc: À, Oánh. Kịch bản MV mai chốt nhé. Có cảnh anh xuất hiện không em?
+giam_doc: À, {bien_kich}. Kịch bản MV mai chốt nhé. Có cảnh anh xuất hiện không em?
 * [😇 "Dạ có, cảnh anh đứng sau lưng Siêu Nhân Hồng, như một người cha thầm lặng."]
     giam_doc: *(xúc động)* Người cha thầm lặng… Hay. Rất hay. Em đúng là người của gia đình mình.
     ~ qh("giam_doc", 10)
@@ -149,7 +149,7 @@ giam_doc: À, Oánh. Kịch bản MV mai chốt nhé. Có cảnh anh xuất hi�
 === bien_kich_0810_kich_ban_mv ===
 # ngay:8 # gio:20:00 # noi:ban_bien_kich # bat_buoc
 _8 giờ tối. Văn phòng vắng. {editor} bị {hr} bắt đi khám mắt từ chiều, nghe nói bác sĩ còn chưa thả về._
-chua_te_deadline: *(lần đầu tiên trong tháng chạy thật)* Oánh! Kịch bản MV! Mai ra mắt rồi! Ét o ét!
+chua_te_deadline: *(lần đầu tiên trong tháng chạy thật)* {bien_kich}! Kịch bản MV! Mai ra mắt rồi! Ét o ét!
 bien_kich: Ông nói "còn sớm mà" hồi thứ 2.
 chua_te_deadline: Hồi thứ 2 là còn sớm thật! Giờ là thứ 5 rồi! Cứu tui!
 _Bạn mở file. Mở đầu có rồi. Kết có rồi. Cao trào thì trống trơn như tủ lạnh của {sales}._
@@ -201,7 +201,7 @@ designer: *(liếc bạn)* Quen quen ha.
     ~ qh("designer", -5)
     ~ cang_thang(5)
 * [🎭 "Quen quen vì ai cũng từng được ai đó giúp. Đó là chủ đề." (Nói thật to cho cả phòng nghe.)]
-    giam_doc: Hay! Câu này đưa vào thông cáo báo chí nhé, Ngân!
+    giam_doc: Hay! Câu này đưa vào thông cáo báo chí nhé, {hong_hot}!
     ~ qh("giam_doc", 5)
     ~ bk_cam(5)
     ~ follow(2000)
@@ -212,7 +212,7 @@ designer: *(liếc bạn)* Quen quen ha.
 # ngay:9 # gio:12:10 # noi:can_tin
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng: trứng luộc, trứng chiên, trứng hấp, trứng… nhìn._
 _{dan_dau_tu} ngồi đối diện bạn, hai mắt sáng rực trước màn hình điện thoại._
-dan_dau_tu: Oánh! Có coin mới, tên "Hồng Coin", fan tạo đêm qua. Mua bây giờ là đáy. Đáy thật rồi!
+dan_dau_tu: {bien_kich}! Có coin mới, tên "Hồng Coin", fan tạo đêm qua. Mua bây giờ là đáy. Đáy thật rồi!
 _Bạn nhớ ra: {dan_dau_tu} còn nợ bạn 500 nghìn "mượn tiền ăn trưa" từ đầu năm._
 * [💸 "Vậy anh trả em 500 nghìn bằng Hồng Coin đi."]
     dan_dau_tu: *(mừng rỡ)* Được! Anh chuyển liền! Sau này em cảm ơn anh!
@@ -256,7 +256,7 @@ _Tin nhắn Zalo-lô, 23:12, {thuc_tap_sinh}: "Dạ chị ơi MV hay quá ạ. E
 === bien_kich_1010_thu_gui_anh_chi_em ===
 # ngay:10 # gio:10:00 # noi:gac_mai_so_7 # bat_buoc
 _Thứ 7, ngày lương. Lương chưa về. Group Zalo-lô sôi như nồi lẩu. Điện thoại bạn rung: {giam_doc} gọi._
-giam_doc: Oánh à, em viết hộ anh cái thư gửi anh chị em nhé. Lương về trễ hai ngày thôi mà group nó căng quá.
+giam_doc: {bien_kich} à, em viết hộ anh cái thư gửi anh chị em nhé. Lương về trễ hai ngày thôi mà group nó căng quá.
 giam_doc: Nhấn mạnh là công ty là gia đình nhé. Anh không ép, tùy em.
 _Bạn mở laptop. Bí ngồi trên bàn phím, như muốn góp ý._
 * [✒️ Viết đúng ý sếp: "Gia đình thì không tính toán từng ngày."]
@@ -314,7 +314,7 @@ _Còn bạn, có tấm ảnh 7 tuổi ôm cuốn truyện tranh to hơn người
 === bien_kich_1210_giao_ban ===
 # ngay:12 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban. Không ai nghe {truong_phong} nói, vì ai cũng đang canh app ngân hàng._
-truong_phong: Phim ngắn "Người Hùng Không Tên" mở màn Đêm Hồng. Hạn chót kịch bản hoàn chỉnh là 25/10 nhé. Oánh báo tiến độ đi.
+truong_phong: Phim ngắn "Người Hùng Không Tên" mở màn Đêm Hồng. Hạn chót kịch bản hoàn chỉnh là 25/10 nhé. {bien_kich} báo tiến độ đi.
 _Cả phòng quay sang bạn. Kể cả {thuc_tap_sinh}, ngồi cuối bàn, tay cầm bút bi._
 * [💡 "Em có dàn ý rồi. Em sẽ viết từ những gì em tự thấy."]
     ~ bk_that(5)
@@ -334,7 +334,7 @@ _Cả phòng quay sang bạn. Kể cả {thuc_tap_sinh}, ngồi cuối bàn, tay
     ~ bk_phim(10)
     _Cuối bàn, {thuc_tap_sinh} cúi xuống ghi chép. Bút bi gõ vào sổ hơi mạnh hơn bình thường._
     ~ qh("thuc_tap_sinh", -5)
-- truong_phong: Ừ. Oánh note lại biên bản giúp anh nhé.
+- truong_phong: Ừ. {bien_kich} note lại biên bản giúp anh nhé.
 ~ cang_thang(5)
 -> END
 

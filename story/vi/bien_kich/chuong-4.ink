@@ -220,7 +220,7 @@ con_ong_chau_cha: Ủa… "Penthouse Sky Ảo, view hồ, chủ cần bán gấp
 === bien_kich_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban. Không ai nhìn mặt ai. {designer} ngồi xa bạn nhất có thể, tức là cách ba cái ghế và một chậu cây._
-giam_doc: *(ghé vào phòng họp)* Oánh, mai sinh nhật công ty 16 tuổi. Em viết cho anh bài phát biểu nhé. Có chút hoài niệm, chút tương lai. Anh không ép.
+giam_doc: *(ghé vào phòng họp)* {bien_kich}, mai sinh nhật công ty 16 tuổi. Em viết cho anh bài phát biểu nhé. Có chút hoài niệm, chút tương lai. Anh không ép.
 truong_phong: Và kịch bản phim ngắn, hạn 25/10. Còn 6 ngày.
 _Tối nay bạn chỉ còn sức cho một việc._
 * [🎬 Tối nay viết phim. Bài phát biểu để sáng mai tính.]

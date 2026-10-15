@@ -211,7 +211,7 @@ _Cái {ch_mu()} nằm đó. Không ai canh. Ngay cạnh chân bạn._
     cho: Grừ…
     sieu_nhan_hong: *(cười yếu ớt)* Bla bla… bla. # phu_de:Ừ. Ít ra em vẫn ghét anh thật lòng.
     _Người đó đội mũ lại, đứng dậy, đi về phía chiếc xe hồng. Bạn nhìn theo. Gầm gừ cho đến khi đèn xe khuất. Rồi thôi._
-- { ch_hong_doi_kiem_tra():
+- { ch_nhan_qua_hong():
     _Trước khi về, người đó rút trong túi ra một cây xúc xích, đặt xuống đất, không nói gì._
     ~ ch_an_cua_nguyen()
 }
@@ -427,7 +427,7 @@ sieu_nhan_hong: *(lẩm bẩm)* Bla bla… bla bla bla? # phu_de:"Em muốn anh 
     ~ ch_hong_doi(-3)
 * [😴 Mặc kệ. Đi ngủ.]
     _Bạn quay vào ổ. Sau lưng bạn, người đó ngồi rất lâu dưới đèn đường, điện thoại sáng rồi tắt, sáng rồi tắt._
-- { ch_hong_doi_kiem_tra():
+- { ch_nhan_qua_hong():
     _Người đó đứng dậy, đặt xuống cạnh ổ của bạn một cây xúc xích. Rồi lên chiếc xe hồng, biến mất._
     ~ ch_an_cua_nguyen()
 }

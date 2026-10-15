@@ -65,6 +65,7 @@ VAR cd_giu_kho_tuat = false
 VAR cd_khong_ai_bi_duoi = false
 VAR cd_paparazzi_bi_duoi = false
 VAR cd_bao_cat_lan = 0
+VAR cd_khach_com = "thuc_tap_sinh"   // người được mời "Cơm Nhà Chị Hương"
 
 // ---------- Đồ riêng (không có trong tui_do) ----------
 VAR cd_co_com_ga = false        // hộp cơm gà xối mỡ

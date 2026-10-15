@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === bien_kich_2810_moc_4 ===
 # ngay:28 # gio:10:00 # noi:phong_nghe_si # bat_buoc
-_Mốc 4: phải đạt 800.000 người theo dõi. Sáng nay bộ lọc số liệu của {dan_dau_tu} vừa lần ra một ổ tài khoản ảo bình luận "Anh Phát đỉnh nóc kịch trần"._
+_Mốc 4: phải đạt 800.000 người theo dõi. Sáng nay bộ lọc số liệu của {dan_dau_tu} vừa lần ra một ổ tài khoản ảo bình luận "Anh {idol_het_thoi} đỉnh nóc kịch trần"._
 { nguoi_theo_doi < 800000:
     _Chưa đạt mốc 4. Trên mạng, LL-Entertainment đăng một dòng: "Ngôi sao xứng đáng một bến đỗ tốt hơn." Ai cũng hiểu là nói ai._
     ~ cang_thang(10)
@@ -172,7 +172,7 @@ editor: Chị điền đi. *(ngáp)* Render xong là xong. Không sửa được
 _Họp đánh giá cuối tháng. Phòng họp tầng 2, đông như ngày ký hợp đồng. Chỉ khác là không ai cười._
 _{giam_doc} cầm tập hồ sơ. {hr} ngồi bên cạnh, nụ cười cố định. {ke_toan} lật sổ, không ngẩng lên._
 giam_doc: Các em. Một tháng qua… *(dừng lại)* Một tháng qua anh nghe nhiều chuyện. Có chuyện anh vui. Có chuyện anh vừa mới biết.
-truong_phong: Phòng Sản xuất xin báo cáo. Kịch bản phim ngắn… *(nhìn sang bạn)* Oánh nói đi.
+truong_phong: Phòng Sản xuất xin báo cáo. Kịch bản phim ngắn… *(nhìn sang bạn)* {bien_kich} nói đi.
 * [🙇 Đứng dậy nói hết: chuyện của ai, của ai, của ai.]
     { not bk_ghi_cong_duy:
         ~ bk_so_lan_ghi_cong = bk_so_lan_ghi_cong + 1

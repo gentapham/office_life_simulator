@@ -6,5 +6,8 @@ INCLUDE chung/bien-chung.ink
 INCLUDE chi_dai/bien.ink
 INCLUDE chi_dai/chuong-1.ink
 INCLUDE chi_dai/chuong-2.ink
+INCLUDE chi_dai/chuong-3.ink
+INCLUDE chi_dai/chuong-4.ink
+INCLUDE chi_dai/minigame.ink
 
 -> END

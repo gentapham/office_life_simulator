@@ -10,14 +10,14 @@ _Bạn đề xuất 120 triệu. {ke_toan} cắt còn 60. Kết quả là chiế
 dan_dau_tu: Từ hôm nay anh thoát nghèo! Coin của anh x5 rồi! Chuyến này anh bao nước mía!
 ke_toan: Anh Chương trả nợ trước rồi bao sau.
 _Bạn là trưởng đoàn. Trên tay là danh sách 22 người, 1 con chó, và 1 tờ giấy trắng: sơ đồ phòng._
-sieu_nhan_hong: Anh Tuấn ơi! Cho em ở chung phòng với nhân viên mới nha! Để gắn kết tập thể!
+sieu_nhan_hong: Tuấn ơi! Cho anh ở chung phòng với nhân viên mới nha! Để gắn kết tập thể!
 ran_doc: *(mặt cứng đờ, cười)* Dạ… em… sao cũng được ạ.
 * [😊 "Được luôn! Gắn kết là đúng tinh thần team building!"]
     ~ qh("sieu_nhan_hong", 5)
     _{ran_doc} cười. Bạn thấy bàn tay em nó nắm chặt quai ba lô tới trắng bệch._
 * {hr_biet_xom_cay_me} [🔒 Nhớ tới tấm ảnh xóm Cây Me. "Để anh xem lại đã nha."]
     _Bạn nhìn {ran_doc}. {ran_doc} nhìn xuống đất._
-    sieu_nhan_hong: Đi mà anh! Em hứa không ngáy!
+    sieu_nhan_hong: Đi mà Tuấn! Anh hứa không ngáy!
     _Cuối cùng vẫn là phòng chung, vì không còn phòng nào khác. Nhưng bạn dặn {ran_doc}: "Có gì gọi anh, phòng 204."_
     ~ qh("ran_doc", 5)
     ~ hr_nghe(3)
@@ -72,7 +72,7 @@ sales: *(say, đứng lên ghế)* Chị hứa! Đêm Hồng chị mời ca sĩ 
 giam_doc: *(say hơn)* Anh hứa! Tăng lương cả công ty!
 _{hong_hot} quay clip. {ke_toan} ôm đầu._
 _Tới lượt {sieu_nhan_hong}. Ánh lửa hắt lên bộ đồ hồng._
-sieu_nhan_hong: Hồi nhỏ… em từng nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi. Em không nhớ tên nó nữa. Em… đi giúp người bây giờ, chắc một phần vì vậy.
+sieu_nhan_hong: Hồi nhỏ… anh từng nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi. Anh không nhớ tên nó nữa. Anh… đi giúp người bây giờ, chắc một phần vì vậy.
 _Phía bên kia đống lửa, {ran_doc} đứng dậy, đi thẳng ra biển. Không ai để ý. Trừ bạn._
 _Rồi tới lượt bạn. 21 cặp mắt, 1 cặp mắt chó. Ai cũng chờ HR nói về "cái danh sách". Tin đồn đã có từ tuần trước._
 * [🍵 Nói về trà: "Tui có 40 loại trà. Loại tui thích nhất là trà Zzz, uống để ngủ. Vì tui hay mất ngủ."]

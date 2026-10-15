@@ -158,7 +158,7 @@ _{cho} ngồi cách cái bánh 3 mét. Mắt không rời. Đuôi không vẫy. 
 = s_do
 _7 giờ tối. Livestream đông nghẹt. {sieu_nhan_hong} cúi xuống thổi nến. Một vệt vàng lao qua. Cái bánh 5 tầng đổ nghiêng như tháp Pisa, rồi đổ hẳn._
 _Kem hồng dính lên mặt {sieu_nhan_hong}, lên màn hình livestream, lên cà vạt {giam_doc}. {cho} đứng giữa đống kem, liếm mép, vẫy đuôi._
-sieu_nhan_hong: *(cười tới chảy nước mắt sau lớp mũ dính kem)* Tuất! Quà sinh nhật của em hả!
+sieu_nhan_hong: *(cười tới chảy nước mắt sau lớp mũ dính kem)* Tuất! Quà sinh nhật của anh hả!
 ~ follow(60000)
 _Bình luận chạy như thác. Không ai giận. Clip "Chó phá bánh sinh nhật siêu nhân" đang chạy._
 * [😊 Cười to. Lần này không cần giữ.]
@@ -194,7 +194,7 @@ _Bạn đứng cứng người. Cái giọng đó. Bạn đã nghe nó hàng ch�
     _Câu hát dứt. Bình luận: "Hát nữa đi!" Không ai hát nữa._
     ~ cang_thang(-5)
 - _Rồi {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang đứng sau máy quay._
-sieu_nhan_hong: Vũ ơi… em thích anh. Không phải PR đâu. Thiệt đó.
+sieu_nhan_hong: Vũ ơi… anh thích em. Không phải PR đâu. Thiệt đó.
 _Cả livestream nổ tung. Hashtag VũƠiTrảLờiĐi lên top xu hướng trong 10 phút. {chua_te_deadline} đứng đơ, tay vẫn bấm máy quay._
 * [🤝 Lại gần {chua_te_deadline}, nói nhỏ: "Em không cần trả lời ngay. Mai lên phòng anh uống trà, nếu muốn."]
     ~ qh("chua_te_deadline", 8)

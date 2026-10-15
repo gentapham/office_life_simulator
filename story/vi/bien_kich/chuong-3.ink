@@ -10,7 +10,7 @@ _{thanh_ninh} cầm micro, đọc bài khen sếp. Phút thứ 3. Phút thứ 7.
 thanh_ninh: "…một người đứng mũi chịu sào, như cây tre giữa bão, cong mà không gãy, gãy mà vẫn cười…"
 _Bạn đứng hình. Câu "gãy mà vẫn cười" là của bạn. Bạn viết nó cho bài Tất niên năm ngoái, kèm ba đoạn sau nữa._
 _Lần đầu tiên, có người "tham khảo" bạn. Và cảm giác đó… không giống cảm hứng chút nào._
-giam_doc: *(lau nước mắt)* Nhi ơi, em viết hay quá. Em là cây bút của gia đình mình.
+giam_doc: *(lau nước mắt)* {thanh_ninh} ơi, em viết hay quá. Em là cây bút của gia đình mình.
 thanh_ninh: Dạ, em thức cả đêm đó anh! Anh nói chuẩn quá anh ơi!
 * [🐍 Giơ tay: "Đoạn cây tre đó em viết cho anh hồi Tết. Anh còn nhớ hông?"]
     ~ qh("thanh_ninh", -15)
@@ -43,7 +43,7 @@ _Mốc 2: phải đạt 200.000 người theo dõi. Trên bàn {thanh_xin_nghi} 
     _Chưa đạt. {sieu_nhan_hong} buồn, bỏ đi giúp người cả ngày. Studio trống trơn, chỉ còn cái ghế hồng._
     ~ cang_thang(5)
 }
-truong_phong: Oánh, mai 10 giờ nộp 10 câu hỏi cho gameshow "Hồng Hay Không Hồng" nhé. Phải có ít nhất một câu hồng.
+truong_phong: {bien_kich}, mai 10 giờ nộp 10 câu hỏi cho gameshow "Hồng Hay Không Hồng" nhé. Phải có ít nhất một câu hồng.
 _Bạn mở file mới. Gõ dòng đầu: "Câu 1."_
 _Rồi đói. Rồi khát. Bạn định đi pantry lấy nước, để màn hình đó._
 _Đúng lúc ấy, {ran_doc} đi ngang, tay cầm cuốn sổ nhỏ, cười rất thân thiện._
@@ -75,7 +75,7 @@ _Không slide. Không màn hình. Ánh nến làm mặt ai cũng thật thà hơ
 chua_te_deadline: Nói thật nha… cái file gốc dự án tháng 6… à mà thôi. Thôi. Chill.
 truong_phong: Cậu nói gì cơ?
 chua_te_deadline: Không có gì anh. Nến thơm quá nên tui nói bậy.
-truong_phong: Oánh, kịch bản phim ngắn sao rồi?
+truong_phong: {bien_kich}, kịch bản phim ngắn sao rồi?
 * [🕯️ "Em bị bắt viết lại bốn lần rồi anh. Lần thứ năm chắc em viết bằng máu."]
     ~ bk_cam(5)
     ~ qh("truong_phong", -3)
@@ -200,7 +200,7 @@ mc_tivi_hong: Xin chào quý vị và các bạn! Câu hỏi tiếp theo dành c
 { bk_bi_trao_cau_hoi:
     mc_tivi_hong: "Kể tên 5 loại chó ghét bạn nhất."
     _{sieu_nhan_hong} đứng hình. Cả trường quay đứng hình. Bạn chưa từng viết câu này._
-    sieu_nhan_hong: Dạ… chó… Tuất… chó Tuất… chó Tuất lúc đói… chó Tuất lúc no… và… chó Tuất đội nơ ạ?
+    sieu_nhan_hong: Dạ… chó… {cho}… chó {cho}… chó {cho} lúc đói… chó {cho} lúc no… và… chó {cho} đội nơ ạ?
     _Khán giả cười rần. Không biết là cười với, hay cười vào._
 - else:
     { bk_cau_hoi_gameshow == "vua":
@@ -250,7 +250,7 @@ _Hậu trường sau gameshow. Đèn đã tắt một nửa. {sieu_nhan_hong} ng
 }
 * {bk_bi_trao_cau_hoi} [😇 "Không phải em. Có người tráo. Em xin lỗi anh."]
     ~ qh("sieu_nhan_hong", 5)
-    sieu_nhan_hong: Hông sao! Mà công nhận câu đó hài. Tuất mà coi chắc nó gật đầu.
+    sieu_nhan_hong: Hông sao! Mà công nhận câu đó hài. {cho} mà coi chắc nó gật đầu.
 * {bk_bi_trao_cau_hoi} [🎭 "Đó là… câu hỏi mở rộng, để khán giả thấy anh dễ thương."]
     ~ qh("sieu_nhan_hong", -5)
     sieu_nhan_hong: *(im một lúc)* Ờ… dễ thương. Ờ.

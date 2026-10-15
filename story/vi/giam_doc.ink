@@ -8,6 +8,8 @@ INCLUDE giam_doc/chuong-1.ink
 INCLUDE giam_doc/chuong-2.ink
 INCLUDE giam_doc/chuong-3.ink
 INCLUDE giam_doc/chuong-4.ink
+INCLUDE giam_doc/chuong-5.ink
+INCLUDE giam_doc/chuong-6.ink
 INCLUDE giam_doc/minigame.ink
 
 -> END

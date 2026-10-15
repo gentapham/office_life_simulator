@@ -148,21 +148,23 @@ chi_dai: Nhi. Chị hỏi thiệt. Em nịnh ổng hoài vậy, em hông mệt h
 # ngay:18 # gio:06:00 # noi:bai_bien_vung_tau
 _6 giờ sáng. {truong_phong} gọi họp trên bãi biển "nhanh 5 phút". {chi_dai} thì đang trải tờ giấy A3 trên bàn đá._
 { tn_hoc_nghe_chi_dai:
-    chi_dai: Nhi, lại đây. Bài một: một sự kiện có ba thứ. Người, tiền, và thứ sẽ hỏng. Ghi đi.
-    * [✍️ Ghi chép, bỏ họp của {truong_phong}.]
-        ~ qh("truong_phong", -5)
-        ~ qh("chi_dai", 10)
-        ~ uy_tin = uy_tin + 5
-        _Một tiếng học. Bạn biết thêm vì sao sân khấu luôn cần hai máy phát điện, và vì sao không bao giờ để Tuất gần bánh kem._
-    * [🙇 "Dạ chị cho em đi họp với anh {truong_phong} chút, rồi em quay lại."]
-        chi_dai: Ừ. Đi đi. *(cất tờ giấy)*
-        ~ tn_gian(5)
-    - -> END
-- else:
-    _Bạn ngồi họp với {truong_phong}. Cuộc họp kéo dài tới bữa sáng. Tin mới: "Hồng Coin" về 0. {dan_dau_tu} ngồi nhìn biển rất lâu._
-    ~ nghi(-10)
-    -> END
+    -> hoc_nghe
 }
+_Bạn ngồi họp với {truong_phong}. Cuộc họp kéo dài tới bữa sáng. Tin mới: "Hồng Coin" về 0. {dan_dau_tu} ngồi nhìn biển rất lâu._
+~ nghi(-10)
+-> END
+= hoc_nghe
+chi_dai: Nhi, lại đây. Bài một: một sự kiện có ba thứ. Người, tiền, và thứ sẽ hỏng. Ghi đi.
+* [✍️ Ghi chép, bỏ họp của {truong_phong}.]
+    ~ qh("truong_phong", -5)
+    ~ qh("chi_dai", 10)
+    ~ uy_tin = uy_tin + 5
+    _Một tiếng học. Bạn biết thêm vì sao sân khấu luôn cần hai máy phát điện, và vì sao không bao giờ để Tuất gần bánh kem._
+* [🙇 "Dạ chị cho em đi họp với anh {truong_phong} chút, rồi em quay lại."]
+    chi_dai: Ừ. Đi đi. *(cất tờ giấy)*
+    ~ tn_gian(5)
+- _Xa xa, tin mới lan khắp bãi biển: "Hồng Coin" về 0._
+-> END
 
 // ------------------------------------------------------------
 === thanh_ninh_1810_xe_ve ===

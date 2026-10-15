@@ -76,7 +76,7 @@ _Câu này không phải của bạn viết. Nhưng nghe quen. Rất quen. Hình
 # ngay:1 # gio:15:00 # noi:pantry
 _Pantry tầng 1. Cả công ty ăn mừng bằng trà sữa. Máy pha cà phê treo tờ giấy: "HỎNG. ĐỪNG ĐẬP."_
 _Hôm nay là Ngày Quốc tế Người cao tuổi. {chi_dai} đẩy bác {bac_bao_ve} vào giữa phòng. Bác đỏ mặt như trái gấc._
-chi_dai: Oánh! Em là nhà văn, viết giùm chị câu chúc lên thiệp cho bác. Ngắn thôi, mà phải làm bác khóc.
+chi_dai: {bien_kich}! Em là nhà văn, viết giùm chị câu chúc lên thiệp cho bác. Ngắn thôi, mà phải làm bác khóc.
 bac_bao_ve: Thôi… bác già rồi, các cháu bày vẽ làm gì.
 _Bạn cầm cây bút máy mực hồng. Tờ thiệp trắng nhìn bạn, chờ đợi._
 * [💡 Viết thật lòng, từ những gì mình tự thấy mỗi sáng ở cổng.]
@@ -95,12 +95,12 @@ _Bạn cầm cây bút máy mực hồng. Tờ thiệp trắng nhìn bạn, ch�
     ~ cang_thang(5)
 * [💬 Hỏi bác trước: "Bác nhớ ngày đầu tiên của công ty hông bác?"]
     bac_bao_ve: Nhớ chứ. Năm ấy công ty có một phòng 20 mét vuông. Bác ngồi gác cái cửa, chẳng có gì để trộm.
-    bac_bao_ve: Thế mà người ta vẫn bảo bác gác cho cẩn thận. Bảo là "cái quý nhất ở trong ấy là con người".
+    bac_bao_ve: Thế mà người ta vẫn bảo bác gác cho cẩn thận. {it} là "cái quý nhất ở trong ấy là con người".
     _Bạn định hỏi "người ta" là ai. Bác {bac_bao_ve} đã quay sang uống trà sữa, như chưa nói gì._
     ~ bk_that(5)
     ~ bk_cam(10)
     ~ qh("bac_bao_ve", 5)
-- thuc_tap_sinh: *(chạy vào, thở hồng hộc, tay ôm 6 ly cà phê)* Dạ máy hỏng nên em chạy ra quán mua cho cả phòng ạ! Chị Oánh, ly của chị nè!
+- thuc_tap_sinh: *(chạy vào, thở hồng hộc, tay ôm 6 ly cà phê)* Dạ máy hỏng nên em chạy ra quán mua cho cả phòng ạ! Chị {bien_kich}, ly của chị nè!
 * [😇 "Anh {thuc_tap_sinh} ơi, em gửi tiền nha. Đừng bao hoài vậy."]
     ~ tien_cong(-35000)
     ~ qh("thuc_tap_sinh", 5)
@@ -152,7 +152,7 @@ truong_phong: Ừ, cái này mình take note lại nhé. Giờ mình sang mục 
     ~ bk_muon(15)
     ~ bk_mo_nhanh_nguoi_hung = true
     ~ bk_ghi_chu_y_tuong_duy = true
-    _Theo thói quen, bạn ghi đầu trang: "Ý tưởng của Duy (2/10)". Rồi bên dưới, chép đủ từng chữ._
+    _Theo thói quen, bạn ghi đầu trang: "Ý tưởng của {thuc_tap_sinh} (2/10)". Rồi bên dưới, chép đủ từng chữ._
     _Bạn gạch chân chữ "không ai biết tên". Ba lần._
 * [🙇 "Anh {truong_phong}, em thấy ý của anh {thuc_tap_sinh} hay đó. Cho em với ảnh viết chung nha."]
     ~ bk_that(5)
@@ -177,9 +177,9 @@ truong_phong: Ừ, cái này mình take note lại nhé. Giờ mình sang mục 
     ~ qh("thuc_tap_sinh", 10)
     thuc_tap_sinh: Dạ! Dạ là… em có kể chị hồi tháng 9 rồi á, cái "Người Gác Két". Một anh nhân viên ngân hàng bỏ việc, đi làm siêu nhân.
     thuc_tap_sinh: Ảnh không cần ai nhớ tên. Ảnh chỉ cần… lúc người ta kẹt, có người tới.
-    _Bạn ghi lại. Kín hai trang. Đầu trang ghi: "Ý tưởng của Duy (2/10)"._
+    _Bạn ghi lại. Kín hai trang. Đầu trang ghi: "Ý tưởng của {thuc_tap_sinh} (2/10)"._
 - ~ phat_hien(nguoi_gac_ket)
-truong_phong: À, Oánh note lại biên bản cuộc họp giúp anh nhé.
+truong_phong: À, {bien_kich} note lại biên bản cuộc họp giúp anh nhé.
 ~ cang_thang(10)
 _Bạn nhìn cuốn sổ. Trang này giờ có hai thứ: biên bản họp của {truong_phong}, và một ý tưởng không phải của bạn._
 -> END
@@ -188,9 +188,9 @@ _Bạn nhìn cuốn sổ. Trang này giờ có hai thứ: biên bản họp củ
 === bien_kich_0210_tra_sua_thu_6 ===
 # ngay:2 # gio:15:00 # noi:pantry
 _Trà sữa thứ 6 từ quỹ phạt đi trễ. Hôm nay là Ngày Nụ cười Thế giới, sáng nay {hr} bắt mọi người cười vào máy chấm công._
-hr: *(đi ngang, cười)* Oánh cười đẹp lắm. Hơi giống đang nghĩ ra cách hại ai đó, nhưng đẹp.
+hr: *(đi ngang, cười)* {bien_kich} cười đẹp lắm. Hơi giống đang nghĩ ra cách hại ai đó, nhưng đẹp.
 _{thuc_tap_sinh} đặt ly trà sữa trân châu đường đen trước mặt bạn, ngồi xuống ghế đối diện, hai tay đặt lên đùi như đi phỏng vấn._
-thuc_tap_sinh: Chị Oánh… chị còn nhớ cái ý tưởng em kể chị hồi tháng 9 hông ạ? Cái "Người Gác Két" á.
+thuc_tap_sinh: Chị {bien_kich}… chị còn nhớ cái ý tưởng em kể chị hồi tháng 9 hông ạ? Cái "Người Gác Két" á.
 _Ở góc pantry, {hong_hot} đang hút trà sữa rất chậm. Rất, rất chậm._
 * [😇 "Nhớ chứ. Hay lắm. Để chị tính cách nào cho anh có tên trong đó."]
     ~ qh("thuc_tap_sinh", 10)
@@ -224,7 +224,7 @@ _Cô bán rau run tay, đưa luôn năm bó rau giá mười tám._
 * [👂 Nghe Để Viết: rút sổ ghi lại "chị đổ tô ốc lên đầu người ta".]
     ~ bk_cam(10)
     { RANDOM(1, 10) <= 4:
-        chi_dai: *(quay phắt lại)* Oánh! Em ngồi đó ghi cái gì vậy?
+        chi_dai: *(quay phắt lại)* {bien_kich}! Em ngồi đó ghi cái gì vậy?
         bien_kich: Dạ… em ghi giá rau! Để… để biết chợ nào rẻ!
         chi_dai: Ờ. Mười tám một bó. Ghi cho đúng.
         ~ bk_lo(10)
@@ -236,7 +236,7 @@ _Cô bán rau run tay, đưa luôn năm bó rau giá mười tám._
 * [😇 Bưng ly cà phê qua chào: "Hai chị đi chợ sớm vậy!"]
     ~ qh("chi_dai", 5)
     ~ qh("ke_toan", 5)
-    chi_dai: Ờ, Oánh. Ăn sáng chưa? Lát qua nhà chị ăn cơm.
+    chi_dai: Ờ, {bien_kich}. Ăn sáng chưa? Lát qua nhà chị ăn cơm.
     ke_toan: Cà phê muối ba chục một ly đó em. Uống từ từ.
     ke_toan: *(nhỏ giọng)* Mà quỹ phạt đi trễ tháng này dư dữ lắm. {chua_te_deadline} góp một mình nửa quỹ.
     ~ bk_biet_quy_tra_sua = true
@@ -255,7 +255,7 @@ _Cô bán rau run tay, đưa luôn năm bó rau giá mười tám._
 // ------------------------------------------------------------
 === bien_kich_0410_bi_gap_tuat ===
 # ngay:4 # gio:10:00 # noi:cong_cong_ty
-_Chủ nhật, Ngày Động vật Thế giới. Bạn ôm lồng mèo tới công ty "cho Bí gặp Tuất". Cổng mở, có tiếng nước xối._
+_Chủ nhật, Ngày Động vật Thế giới. Bạn ôm lồng mèo tới công ty "cho Bí gặp {cho}". Cổng mở, có tiếng nước xối._
 _{chi_dai} đang tắm cho {cho}. {cho} đứng im, nhưng ánh mắt nói rõ là đang lên kế hoạch trả thù cả thế giới._
 chi_dai: Đứng yên! Mai đội nơ hồng là đẹp trai nhất quận!
 _Bạn đặt lồng xuống. Bí và {cho} nhìn nhau. Mười giây. Hai mươi giây. Ba mươi giây._
@@ -263,9 +263,9 @@ _{cho} lùi lại một bước._
 cho: …Ẳng.
 bac_bao_ve: Thế à. Đời nó chưa lùi ai bao giờ đâu đấy.
 _Đúng lúc đó, chiếc xe hồng đỗ xịch trước cổng. {sieu_nhan_hong} nhảy xuống, giả tiếng sủa._
-sieu_nhan_hong: Gâu gâu! Tuất ơi, anh tới chơi nè! Gét gô!
+sieu_nhan_hong: Gâu gâu! {cho} ơi, anh tới chơi nè! Gét gô!
 _{cho} lao tới, ngoạm một chiếc găng tay hồng rồi chạy thẳng vào gầm cầu thang._
-sieu_nhan_hong: Ê ê! Găng tay của anh! Cái đó đặt riêng đó Tuất ơi!
+sieu_nhan_hong: Ê ê! Găng tay của anh! Cái đó đặt riêng đó {cho} ơi!
 * {co(so_tay_oanh)} [✍️ Ghi lại: "Chương 2. Con chó lùi trước con mèo, rồi tiến trước siêu nhân."]
     ~ bk_cam(15)
     ~ bk_trang(4)

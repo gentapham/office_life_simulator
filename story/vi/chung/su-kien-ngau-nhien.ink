@@ -1771,3 +1771,483 @@ chi_dai: Ăn cơm chưa? Chưa ăn hả? Ngồi đây làm gì? Đi! {chung_xung
     chi_dai: *(lạnh)* Ừ. *(đi, rồi khựng lại ở cửa, nói vọng vào)* …Có xôi trong tủ lạnh, của chị. Ăn đi.
     ~ qh("chi_dai", 2)
 - -> END
+
+// ======================= ĐỒNG NGHIỆP (tiếp) =======================
+
+=== chung_nn_phat_kinh_den ===
+# ngau_nhien # noi:van_phong # gio:11:00-17:00 # vai_khong:cho # vai_khong:idol_het_thoi
+~ temp g = chung_goi("idol_het_thoi")
+_Cốp! {idol_het_thoi} đeo kính râm đi trong nhà, đâm thẳng vào cửa kính phòng họp. Cửa kính không sao. {idol_het_thoi} thì đứng im, giữ dáng như đó là một phần của tiết mục._
+idol_het_thoi: …Không ai thấy gì hết đúng hông {g}?
+* [😇 "Thấy gì đâu, anh vừa tạo dáng thôi mà."]
+    idol_het_thoi: Đúng! Tạo dáng. Hồi 2015 anh tạo dáng kiểu này trên bìa tạp chí đó.
+    ~ qh("idol_het_thoi", 8)
+* [💬 "Sao anh đeo kính râm trong nhà?"]
+    idol_het_thoi: Em biết anh là ai không? *(ngừng)* …Mắt anh thâm. Thức đêm tính tiền nhà. Đừng nói ai.
+    ~ qh("idol_het_thoi", 5)
+* [📸 Giơ điện thoại lên, đã quay xong.]
+    idol_het_thoi: XÓA! Anh mua lại clip đó. Anh trả… anh trả bằng vé mời đám cưới VIP.
+    ~ qh("idol_het_thoi", -5)
+- -> END
+
+=== chung_nn_thai_hai_dien_thoai ===
+# ngau_nhien # noi:van_phong # gio:08:30-18:00 # vai_khong:cho # vai_khong:quan_ly_idol
+~ temp g = chung_goi("quan_ly_idol")
+_{quan_ly_idol} lao qua bàn bạn, hai điện thoại reo cùng lúc, nhét một cái vào tay bạn._
+quan_ly_idol: {g} cầm giùm! Ai gọi thì nói anh đang họp! Đừng ai đăng gì hết!
+_Màn hình điện thoại trong tay bạn hiện: "Phát (đừng bắt máy lúc đang họp, mà bắt cũng được)"._
+* [📞 Bắt máy.]
+    idol_het_thoi: Anh {quan_ly_idol} ơi, tối nay em hát đám cưới mà quên mang micro riêng… Ủa ai đây?
+    _Bạn giải thích. {idol_het_thoi} cúp máy. Ba giây sau, {quan_ly_idol} quay lại, giật điện thoại, gọi lại ngay, giọng dịu hẳn._
+    ~ qh("quan_ly_idol", 3)
+* [😶 Để reo.]
+    _Điện thoại reo 14 lần. Lần thứ 15, {quan_ly_idol} chạy về, nghe máy, vừa nghe vừa gật đầu, vừa liếc bạn như muốn nói "cảm ơn vì không nghe"._
+    ~ qh("quan_ly_idol", 5)
+* [💬 Đọc to tên trong danh bạ.]
+    quan_ly_idol: *(đỏ mặt từ cổ lên tai)* Đặt tên… để nhớ ưu tiên! Ưu tiên công việc! Khoan, điện thoại rung.
+    ~ qh("quan_ly_idol", -3)
+- -> END
+
+=== chung_nn_long_mua_moi ===
+# ngau_nhien # noi:van_phong # gio:10:00-17:00 # vai_khong:cho # vai_khong:con_ong_chau_cha
+~ temp g = chung_goi("con_ong_chau_cha")
+_Điện thoại bạn bể màn hình, nứt như bản đồ Đại Lộ Kẹt Xe. {con_ong_chau_cha} đi ngang, nhìn xuống._
+con_ong_chau_cha: Ủa {g}, bể vậy sao không mua cái mới luôn?
+* [😅 "Mua bằng gì? Lương về trễ mà."]
+    con_ong_chau_cha: *(ngớ người)* Ủa… lương về trễ là sao? Tháng nào cũng về trễ hả? *(nghĩ rất lâu)* …Anh thật sự không biết. Xin lỗi.
+    _Đó là lần đầu bạn thấy {con_ong_chau_cha} xin lỗi. Câu xin lỗi rất thật._
+    ~ qh("con_ong_chau_cha", 8)
+* [😏 "Anh mua cho em đi."]
+    con_ong_chau_cha: Để anh gọi chú anh. *(bấm số, rồi khựng lại, cúp máy)* …Thôi. Anh tự mua. Bằng tiền anh. Anh có tiền riêng mà… chắc vậy.
+    ~ qh("con_ong_chau_cha", 3)
+* [🩹 Dán băng keo trong lên màn hình.]
+    con_ong_chau_cha: Woa. Sáng tạo dữ. Đây là "life hack" hả? Anh đăng story được hông?
+    ~ follow(1000)
+- -> END
+
+=== chung_nn_huyen_deal ===
+# ngau_nhien # noi:van_phong # gio:09:00-17:00 # vai_khong:cho # vai_khong:sales
+~ temp g = chung_goi("sales")
+_{sales} lao tới bàn bạn, áp điện thoại vào ngực cho đầu dây bên kia không nghe._
+sales: {g}! Giúp chị một xíu! Giả làm thư ký của chị, nói với bên kia là "Chị {sales} đang họp với Tập đoàn BTT Global". Tin chị đi, chắc kèo!
+* [🎭 Nhận điện thoại, diễn.]
+    _Bạn nói giọng thư ký chuyên nghiệp. Đầu dây bên kia là… mẹ của {sales}, gọi hỏi ăn cơm chưa._
+    sales: *(giật lại điện thoại)* Dạ con ăn rồi mẹ! *(cúp máy)* …Luyện tập thôi. Lần sau là thật.
+    ~ qh("sales", 5)
+* [🙅 "Tui không biết nói dối."]
+    sales: Ai bảo nói dối? Đây là… nói trước sự thật! No cap!
+    ~ qh("sales", -3)
+* [💬 "BTT Global có thật không?"]
+    sales: *(cười rất tươi, quá tươi)* Có! Chủ tịch là Mr. Kevin Trộn. Ổng… ổng bận lắm. Đi công tác suốt.
+    ~ phat_hien(btt_global_gia)
+- -> END
+
+=== chung_nn_chuong_vay_tien ===
+# ngau_nhien # noi:van_phong # gio:09:00-17:00 # vai_khong:cho # vai_khong:dan_dau_tu
+~ temp g = chung_goi("dan_dau_tu")
+_{dan_dau_tu} kéo ghế ngồi sát bạn, mở điện thoại, chỉ vào một đường đỏ dốc đứng như cầu trượt._
+dan_dau_tu: {g} thấy hông, đáy rồi. Cho anh mượn 200 nghìn thôi. Lần này là lên thật.
+* [💸 Cho mượn.]
+    ~ tien_cong(-200000)
+    dan_dau_tu: Tình nghĩa! Tuần sau trả {g} 400!
+    _{dan_dau_tu} ghi vào sổ nợ. Trang sổ nợ đã kín. Tên bạn được ghi ở bìa sau._
+    ~ qh("dan_dau_tu", 10)
+* [🙅 "Anh trả bác {bac_bao_ve} trước đi."]
+    dan_dau_tu: *(cúi đầu)* …Ừ. Bác cho anh mượn mà không hỏi gì. Anh tệ thiệt.
+    ~ qh("dan_dau_tu", 3)
+    ~ qh("bac_bao_ve", 2)
+* [🍜 "Không có tiền, có mì nè."]
+    dan_dau_tu: Mì cũng được. Mì là tài sản phòng thủ.
+    ~ an(-10)
+    ~ qh("dan_dau_tu", 5)
+- -> END
+
+=== chung_nn_oanh_ghi_chep ===
+# ngau_nhien # noi:pantry # gio:10:00-16:00 # vai_khong:cho # vai_khong:bien_kich
+_Bạn đang kể chuyện ở pantry. Góc phòng, {bien_kich} ngồi im, bút máy chạy rột rột trên cuốn sổ bìa da. Mỗi lần bạn ngừng, bút cũng ngừng._
+* [💬 "Bà ghi gì vậy?"]
+    bien_kich: Cảm hứng thôi. *(gập sổ)* Mấy câu đời thường hay lắm. Yên tâm, tui đổi tên hết.
+    _Bạn thoáng thấy trong sổ có một dòng: "Nhân vật {ten(vai)}: nói nhiều, hay ăn vặt." Không đổi tên._
+    ~ cang_thang(3)
+* [🧂 Cố tình kể một chuyện thật kịch tính.]
+    _Bút máy chạy nhanh tới mức mực hồng văng ra. {bien_kich} gật gù: "Chương 14 có rồi."_
+    ~ qh("bien_kich", 5)
+* [😶 Đổi sang nói chuyện thời tiết.]
+    bien_kich: *(gạch một dòng)* …Nhàm.
+- -> END
+
+=== chung_nn_quynh_hai_ban ===
+# ngau_nhien # noi:van_phong # gio:09:00-17:00 # vai_khong:cho # vai_khong:designer
+~ temp g = chung_goi("designer")
+_{designer} xoay màn hình về phía bạn. Hai bản poster nằm cạnh nhau. Bạn nhìn ba lần. Chúng giống hệt nhau._
+designer: {g} thấy bản nào đẹp hơn? Thật lòng nha. Bản bên trái chữ hồng hơn 2%.
+* [🎨 "Bên trái."]
+    designer: Đúng! Cảm ơn! Ít ra còn một người có mắt.
+    ~ qh("designer", 8)
+* [🎨 "Bên phải."]
+    designer: *(thở dài)* Sếp cũng chọn bên phải. Mà bên phải là bản đầu tiên. Lần sửa thứ 37 rồi đó.
+    ~ qh("designer", 3)
+* [😵 "Hai cái y chang mà."]
+    designer: Y CHANG? *(đứng dậy)* Font khác, kerning khác, hồng khác 2%… Thôi. Hết cứu.
+    ~ qh("designer", -5)
+- -> END
+
+=== chung_nn_linh_ngu_gat ===
+# ngau_nhien # noi:van_phong # gio:13:00-16:00 # vai_khong:cho # vai_khong:editor
+_{editor} gục trên bàn phím. Trên màn hình, ô ghi chú dự án vừa có thêm 4.000 chữ "zzzzzzzzz". Thanh render ở 73%._
+* [🤝 Đắp áo khoác lên vai {editor}.]
+    _Lúc {editor} tỉnh, thấy cái áo, ngơ ngác nhìn quanh, rồi cười một mình. Video tối đó có thêm một con cú đội mũ len._
+    ~ qh("editor", 10)
+* [🛑 Xóa giùm 4.000 chữ "z".]
+    _Bạn xóa xong thì {editor} tỉnh dậy: "Ủa ai sửa ghi chú tui? À… cảm ơn." Ngáp. Ngủ tiếp._
+    ~ qh("editor", 5)
+* [😶 Để {truong_phong} tự phát hiện.]
+    _{truong_phong} đi ngang, nhìn màn hình, lấy điện thoại chụp lại… rồi gửi cho chính mình với dòng ghi chú "ý tưởng". Bạn quyết định không hỏi._
+- -> END
+
+// ======================= BÁC BÌNH & TUẤT =======================
+
+=== chung_nn_binh_tra_da ===
+# ngau_nhien # noi:cong_cong_ty # gio:06:30-21:00 # vai_khong:bac_bao_ve
+{ vai == "cho": -> ban_cho }
+_Chòi bảo vệ. Radio đang phát bản tin thời tiết. Bác {bac_bao_ve} rót một chén trà, đặt sang phía ghế trống, không nói gì._
+bac_bao_ve: Ngồi đi. Uống chén trà.
+* [🍵 Ngồi xuống, uống trà.]
+    _Mười phút. Không ai nói gì. Radio nói về áp thấp nhiệt đới. Lần đầu tiên trong ngày, đầu bạn yên._
+    bac_bao_ve: Ừ. Thế là được.
+    ~ uong(15)
+    ~ cang_thang(-12)
+    ~ qh("bac_bao_ve", 5)
+* [💬 "Bác làm ở đây lâu chưa ạ?"]
+    bac_bao_ve: Từ hồi công ty có mỗi một phòng 20 mét vuông. *(nhấp trà)* Lâu rồi. Chuyện người ta, bác không nhớ đâu.
+    _Bác nhớ hết. Bạn biết vậy._
+    ~ qh("bac_bao_ve", 3)
+* [🙏 "Thôi bác, cháu đang vội."]
+    bac_bao_ve: Ừ. Đi đi. Vội thì đi chậm thôi.
+- -> END
+
+= ban_cho
+_Chòi bảo vệ. Radio rè rè. Bác rót trà, rồi xé nửa cái bánh bao, đặt xuống cạnh ổ của bạn._
+bac_bao_ve: …bla bla… **{cho}** …bla… **ĂN** … # phu_de: Tuất, ăn đi. Bác ăn không hết.
+* [🦴 Ăn bánh bao.]
+    cho: Gâu! # phu_de: Bác là nhất.
+    ~ an(20)
+    ~ qh("bac_bao_ve", 5)
+* [🐾 Gác cằm lên dép tổ ong của bác.]
+    cho: … # phu_de: Ngồi đây chút đã.
+    _Bác đặt tay lên đầu bạn. Hai bên ngồi nghe radio tới hết bản tin._
+    ~ nghi(15)
+    ~ qh("bac_bao_ve", 8)
+- -> END
+
+=== chung_nn_tuat_xin_an ===
+# ngau_nhien # noi:pantry # gio:11:30-13:30 # vai_khong:cho
+_Bạn mở hộp cơm. Ba giây sau, {cho} đã ngồi ngay ngắn trước mặt, đuôi quét sàn, mắt long lanh như phim Hàn._
+cho: Ẳng… *(nghiêng đầu)*
+* [🍖 Cho một miếng thịt.]
+    cho: Gâu! *(vẫy đuôi tít mù)*
+    ~ an(-5)
+    ~ qh("cho", 8)
+* [🙅 "Không. Bác {bac_bao_ve} cấm rồi."]
+    cho: … *(nằm xuống, gác cằm lên chân bạn, thở dài một hơi dài như người)*
+    _Bạn ăn tiếp, lòng nặng trĩu. Miếng thịt cuối cùng rơi "vô tình"._
+    ~ qh("cho", 3)
+* {co(xuc_xich)} [🌭 Lấy xúc xích ra.]
+    ~ mat(xuc_xich)
+    cho: GÂU GÂU! *(xoay ba vòng, nằm ngửa)*
+    _Từ hôm nay, {cho} chờ bạn ở cổng mỗi sáng._
+    ~ qh("cho", 15)
+- -> END
+
+=== chung_nn_tuat_tha_do ===
+# ngau_nhien # noi:van_phong # gio:09:00-17:00 # vai_khong:cho
+_Bạn quay đi lấy nước. Quay lại: cây bút trên bàn biến mất. Ở cuối hành lang, một cái đuôi cong cuộn tròn đang khuất dần về phía cầu thang._
+* [🏃 Đuổi theo.]
+    _Bạn đuổi tới gầm cầu thang. {cho} nằm chắn trước một đống đồ: chìa khóa, son môi, điện thoại cũ, một chiếc tất hồng, và cây bút của bạn. {cho} gầm gừ rất khẽ._
+    _Bạn quyết định cây bút đó giờ là của {cho}._
+    ~ cang_thang(3)
+* [🦴 Đặt một miếng bánh trên bàn làm "tiền chuộc".]
+    _Mười phút sau, miếng bánh biến mất. Cây bút quay về, ướt nhẹp. Giao dịch hoàn tất._
+    ~ qh("cho", 5)
+* [😶 Lấy bút khác.]
+    _Đây là cây bút thứ ba tuần này. Kho dưới gầm cầu thang ngày càng giàu._
+- -> END
+
+=== chung_nn_tuat_kho_bau ===
+# ngau_nhien # noi:van_phong # gio:17:30-20:00 # vai_khong:cho
+_Bạn đi thang bộ, nghe tiếng ngáy nhỏ dưới gầm cầu thang. {cho} đang ngủ trên một đống đồ. Ló ra dưới bụng nó là góc một chiếc USB không nhãn, và một chiếc găng tay hồng._
+* [🤫 Rón rén đi qua.]
+    _{cho} mở một mắt, nhìn bạn, rồi nhắm lại. Bạn hiểu: "Mày thấy rồi đó. Đừng nói ai."_
+    ~ qh("cho", 5)
+* [🤏 Thử rút chiếc USB ra.]
+    cho: GRỪ…
+    _Bạn rụt tay lại nhanh hơn cả lúc rút tiền ATM ngày lương về. {cho} không ngủ nữa. {cho} canh._
+    ~ qh("cho", -10)
+    ~ cang_thang(5)
+* [📸 Chụp ảnh, ghi nhớ.]
+    _Bạn có tấm ảnh một con chó ngủ trên bằng chứng. Ở công ty này, đó gần như là một tác phẩm nghệ thuật._
+- -> END
+
+// ======================= CÔNG VIÊN, GYM, RẠP PHIM =======================
+
+=== chung_nn_cong_vien_ca_vien_chien ===
+# ngau_nhien # noi:cong_vien # gio:16:00-21:00 # vai_khong:cho # vai_khong:idol_het_thoi
+_Công viên Hồ Cá Mập. Xe đẩy cá viên chiên. Bạn vừa cắn viên đầu tiên thì từ ghế đá bên cạnh vang lên tiếng hát:_
+idol_het_thoi: *(đeo kính râm, hát rất khẽ)* "Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên…"
+_Không ai bắt hát. {idol_het_thoi} cứ thế mà hát. Như phản xạ._
+* [🍢 Mua thêm một xiên đưa {idol_het_thoi}.]
+    idol_het_thoi: …Cảm ơn. Biết hông, bài này anh viết lúc đứng ngay chỗ xe đẩy này. Hồi đó anh còn mua không nổi một xiên.
+    ~ tien_cong(-20000)
+    ~ qh("idol_het_thoi", 10)
+* [🎵 Hát tiếp câu sau.]
+    _"…thích ăn chuối chiên!" Cô bán cá viên chiên vỗ tay. Một đứa nhỏ ngồi gần đó hỏi mẹ: "Bài gì mà hay vậy mẹ?"_
+    _{idol_het_thoi} quay mặt đi. Kính râm che được mắt, không che được vai đang run._
+    ~ qh("idol_het_thoi", 8)
+* [😶 Ăn, đi.]
+    ~ an(15)
+- ~ an(15)
+-> END
+
+=== chung_nn_cong_vien_dieu ===
+# ngau_nhien # noi:cong_vien # gio:15:00-18:30 # vai_khong:cho
+_Một đứa nhỏ khóc dưới gốc cây. Con diều đỏ mắc trên cành cao, dây lòng thòng._
+* [🧗 Trèo lên gỡ.]
+    { RANDOM(1, 3) <= 2:
+        _Bạn gỡ được. Đứa nhỏ ôm diều, nói "Cảm ơn siêu nhân!". Bạn không mặc đồ siêu nhân. Nhưng hôm nay bạn là siêu nhân._
+        ~ cang_thang(-10)
+    - else:
+        _Bạn gỡ được diều. Rồi bạn kẹt trên cây. Đứa nhỏ chạy đi gọi… một người mặc đồ hồng. Hai người cùng xuống, áo bạn rách một lỗ._
+        ~ nghi(-10)
+        ~ qh("sieu_nhan_hong", 5)
+    }
+* [📞 Đi tìm người giúp.]
+    _Bạn quay lại thì một bóng hồng đã ở trên cây, tay cầm diều, tạo dáng với đứa nhỏ. Không có camera. Đứa nhỏ cười tít._
+* [🎈 Mua cho đứa nhỏ một quả bóng bay thay thế.]
+    ~ tien_cong(-15000)
+    _Đứa nhỏ nín khóc, cầm bóng bay, vẫn nhìn con diều trên cây. Có những thứ không thay được._
+- -> END
+
+=== chung_nn_cong_vien_chay_bo ===
+# ngau_nhien # noi:cong_vien # gio:05:30-07:00 # vai_khong:cho # vai_khong:truong_phong
+~ temp g = chung_goi("truong_phong")
+_Sáng sớm. {truong_phong} chạy bộ quanh hồ, tai nghe bluetooth, miệng nói liên tục._
+truong_phong: …ok, vậy action item số 3 mình chốt là… Ơ, chào {g}! Tớ đang họp online với chính mình. Tổng kết tuần.
+* [🏃 Chạy chung.]
+    truong_phong: Tuyệt! Vừa chạy vừa sync luôn. Cậu có ý kiến gì về action item số 4 không?
+    _Bạn chạy 3 vòng, họp 3 chủ đề. Mệt gấp đôi._
+    ~ nghi(-10)
+    ~ qh("truong_phong", 8)
+* [💬 "Anh có bao giờ nghỉ hông?"]
+    truong_phong: *(dừng lại, thở dốc)* …Nghỉ là gì? À, tớ có lên lịch nghỉ. Thứ năm tuần sau, 15 phút. Nhưng chắc dời.
+    ~ qh("truong_phong", 3)
+* [😶 Chạy hướng ngược lại.]
+    _Hai người gặp lại nhau sau mỗi nửa vòng. Mỗi lần gặp, {truong_phong} nói thêm một action item._
+- -> END
+
+=== chung_nn_gym_guong ===
+# ngau_nhien # noi:gym # gio:17:30-21:30 # vai_khong:cho
+_Phòng gym Cơ Bắp Ảo. Cả bức tường gương bị chiếm bởi hai người đang chụp ảnh: {con_ong_chau_cha} với áo khoác hồng hàng hiệu, và {sales} với tạ 1 ký._
+sales: {ten(vai)} ơi! Chụp giùm chị một tấm, góc thấp, cho chân dài!
+{ vai == "sales":
+    _…Khoan, bạn chính là {sales}. Người đang gọi bạn là chị chủ phòng gym, giọng y hệt. Thành Phố Ước Mơ nhỏ thật._
+}
+* [📸 Chụp giùm.]
+    _Bạn chụp 47 tấm. Tấm được đăng là tấm đầu tiên. Như poster của {designer}._
+    ~ qh("sales", 5)
+* [🏋️ Tập thật.]
+    _Bạn tập 40 phút. Người đau từ vai xuống gót. Nhưng ngủ ngon._
+    ~ nghi(-15)
+    ~ cang_thang(-15)
+* [🤳 Chen vào chụp chung.]
+    _Ảnh chụp chung được {con_ong_chau_cha} đăng story, gắn thẻ Siêu Nhân Hồng "vì có màu hồng". Story được chia sẻ trên trang fan._
+    ~ follow(1500)
+    ~ qh("con_ong_chau_cha", 3)
+- -> END
+
+=== chung_nn_rap_phim_son ===
+# ngau_nhien # noi:rap_phim # gio:18:00-23:00 # vai_khong:cho # vai_khong:thanh_xin_nghi
+~ temp g = chung_goi("thanh_xin_nghi")
+_Rạp phim Bắp Rang, suất tối. Bạn ngồi xuống ghế. Ghế bên cạnh: {thanh_xin_nghi}, ôm bịch bắp rang to, khỏe re, hôm nay "nghỉ ốm sốt 39 độ"._
+thanh_xin_nghi: *(đứng hình, rồi ho)* Khụ khụ… {g}… bác sĩ… bác sĩ khuyên coi phim cho… hạ sốt.
+* [🍿 Chìa tay xin bắp.]
+    thanh_xin_nghi: *(đưa cả bịch)* Ăn đi. Ăn hết đi. Chuyện hôm nay coi như chưa từng xảy ra.
+    ~ an(15)
+    ~ qh("thanh_xin_nghi", 8)
+* [📸 Chụp chung một tấm "kỷ niệm".]
+    thanh_xin_nghi: Đừng! Lỡ HR thấy… Thôi được, chụp đi, mà đừng đăng.
+    _Bạn có một tấm ảnh. Tấm ảnh này đáng giá hơn vé xem phim._
+* [😇 "Uống thuốc đi rồi coi."]
+    thanh_xin_nghi: *(móc túi ra một vỉ kẹo ngậm)* Có đem theo nè. Vì lỡ gặp người quen.
+    ~ qh("thanh_xin_nghi", 3)
+- ~ cang_thang(-15)
+-> END
+
+=== chung_nn_phong_kham ===
+# ngau_nhien # noi:phong_kham # gio:07:00-19:00 # vai_khong:cho
+_Phòng khám Đa Khoa Khỏe Re. Bác sĩ đẩy kính, nhìn bạn, nhìn hồ sơ, rồi nhìn ra phòng chờ, nơi có một người đeo khẩu trang hồng ngồi cuối hàng, rất quen._
+npc_bac_si: Em khám gì? Stress hả? Tháng này cả quận stress. Chắc tại cái siêu nhân màu hồng.
+* [💊 Khám thật.]
+    npc_bac_si: Ngủ đủ, ăn đủ, bớt đọc group công ty sau 22 giờ. Hết 150 nghìn.
+    ~ tien_cong(-150000)
+    ~ cang_thang(-20)
+* [📄 Hỏi mua giấy nghỉ ốm.]
+    npc_bac_si: Giấy nghỉ ốm là phải có ốm. *(nhìn quầng mắt bạn)* …Ừ, em ốm thiệt. 100 nghìn.
+    ~ tien_cong(-100000)
+    ~ nhan(giay_nghi_om)
+* [👀 Nhìn người cuối hàng.]
+    _Người đó cúi đầu thấp hơn. Bác sĩ gọi to: "Bệnh nhân {thanh_xin_nghi}, lần thứ chín!". Người đó đứng dậy, nhìn bạn, đưa ngón tay lên môi._
+    ~ qh("thanh_xin_nghi", -2)
+- -> END
+
+=== chung_nn_tiem_cam_do ===
+# ngau_nhien # noi:tiem_cam_do # gio:09:00-20:00 # vai_khong:cho # vai_khong:idol_het_thoi
+_Tiệm cầm đồ Cứu Nguy. Bạn bước vào thì thấy {idol_het_thoi} đứng ở quầy, đặt lên bàn một chiếc cúp bám bụi: "Ca khúc được yêu thích nhất năm 2015"._
+npc_cam_do: Đồ này cầm được nhiêu đây thôi nha. *(giơ ba ngón tay)*
+idol_het_thoi: Ba triệu?
+npc_cam_do: Ba trăm.
+* [🤝 Kéo {idol_het_thoi} ra ngoài.]
+    idol_het_thoi: *(đeo kính râm lại)* …Tiền nhà tháng này. Anh tính hết rồi. Mà thôi. Cúp này mà bán ba trăm thì anh thà để nó bám bụi.
+    ~ qh("idol_het_thoi", 10)
+* [💸 Trả 300 nghìn chuộc giùm.]
+    ~ tien_cong(-300000)
+    idol_het_thoi: Em… *(cầm cúp, im rất lâu)* Em biết anh là ai không? *(lần này giọng khác hẳn)* …Cảm ơn em.
+    ~ qh("idol_het_thoi", 15)
+* [😶 Lùi ra, giả vờ chưa vào.]
+    _Có những lúc, không thấy là cách tôn trọng tốt nhất._
+- -> END
+
+=== chung_nn_quan_net ===
+# ngau_nhien # noi:quan_net # gio:19:00-23:59 # vai_khong:cho # vai_khong:thuc_tap_sinh # vai_khong:it
+_Quán net Gõ Phím. {it} và {thuc_tap_sinh} ngồi hai máy cạnh nhau, chơi chung một game. {thuc_tap_sinh} chơi dở tệ nhưng cực kỳ lễ phép với cả quái vật._
+thuc_tap_sinh: Dạ em xin lỗi con rồng ạ!
+it: Đánh nó đi. Đừng xin lỗi.
+* [🎮 Ngồi chơi chung.]
+    _Ba người, một đội. Thua 7 trận. Trận thứ 8 thắng, vì đội bạn rớt mạng. {it} nói: "Không phải tui." Không ai tin._
+    ~ cang_thang(-12)
+    ~ qh("it", 5)
+    ~ qh("thuc_tap_sinh", 5)
+* [💸 Bao nước cả hai.]
+    _Lúc tính tiền, {thuc_tap_sinh} đã trả hết từ trước, bằng một cái thẻ màu bạc lấp lánh. Chủ quán nhìn cái thẻ như nhìn kim cương._
+    ~ phat_hien(duy_tung_lam_ngan_hang)
+* [😶 Ngồi máy khác, làm freelancer.]
+    ~ tien_cong(150000)
+    ~ nghi(-15)
+- -> END
+
+// ======================= HỒNG COIN =======================
+
+=== chung_nn_hong_coin ===
+# ngau_nhien # noi:van_phong # gio:08:00-17:30 # ngay_tu:10 # ngay_den:17 # vai_khong:cho
+_Cả văn phòng xì xào về "Hồng Coin" ($HONG), một đồng coin mang tên Siêu Nhân Hồng do fan nào đó tạo ra. Không ai biết người tạo là ai. Ai cũng biết nó đang lên._
+_{dan_dau_tu} đi từ bàn này sang bàn khác như người truyền giáo._
+* [🙅 "Không chơi. Coin mang tên người mình quen là thấy sai sai rồi."]
+    _{dan_dau_tu} nhìn bạn như nhìn người không hiểu tương lai. Nhưng bạn ngủ ngon._
+    ~ cang_thang(-5)
+* [💬 Hỏi: "Ai tạo ra nó vậy?"]
+    dan_dau_tu: Ẩn danh! Như vậy mới phi tập trung! *(ngừng)* …Mà ẩn danh thì lỡ người ta ôm tiền chạy thì sao ta? Thôi kệ, đang lên!
+* [📢 Nhắc group: "Coin này không phải của Siêu Nhân Hồng, đừng ai bỏ tiền thật vào."]
+    _Vài người cảm ơn bạn. Vài người bảo bạn "hết thời". Một tuần sau, những người cảm ơn bạn vẫn còn tiền._
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 1
+- -> END
+
+=== chung_nn_hong_coin_sap ===
+# ngau_nhien # noi:pantry # gio:08:00-17:30 # ngay_tu:18 # ngay_den:22 # vai_khong:cho
+_Hồng Coin về 0. Người tạo biến mất. Pantry yên lặng như đám tang của một đồng xu. {dan_dau_tu} ngồi một góc, uống nước lọc, không mở chart._
+* [🤝 Ngồi xuống cạnh {dan_dau_tu}.]
+    dan_dau_tu: …Lần này là xuống thật. *(cười méo)* Mà còn bữa hải sản hôm 17. Ít ra cả team được ăn một bữa ngon.
+    ~ qh("dan_dau_tu", 8)
+* [😶 Pha cho ổng ly cà phê.]
+    _{dan_dau_tu} cầm ly cà phê, nhìn nó rất lâu, rồi nói: "Cà phê này không lên không xuống. Thích ghê."_
+    ~ qh("dan_dau_tu", 5)
+* [🐍 "Còn cái nịt hả anh?"]
+    dan_dau_tu: Còn cái nịt. Mà cái nịt cũng cầm đồ rồi.
+    ~ qh("dan_dau_tu", -5)
+- -> END
+
+// ======================= SHOWBIZ QUANH CÔNG TY =======================
+
+=== chung_nn_paparazzi ===
+# ngau_nhien # noi:cong_cong_ty # gio:08:30-19:00 # vai_khong:cho # vai_khong:sieu_nhan_hong
+_Một người đàn ông áo khoác nhiều túi, máy ảnh ống kính dài, nấp sau cột điện trước cổng. Paparazzi Mắt Diều Hâu._
+npc_paparazzi: Ê, nhân viên G hả? Một tấm thôi, một tấm! Ảnh không mũ của Siêu Nhân Hồng, tui trả 5 triệu. Chỉ cần cho tui biết ảnh tháo mũ ở đâu.
+* [🙅 "Không có đâu anh ơi."]
+    npc_paparazzi: Ai cũng nói vậy. Rồi ai cũng gọi lại.
+    _Anh ta nhét vào túi bạn một tấm danh thiếp. Mặt sau ghi: "Giá tăng theo tuần."_
+* [🐕 Gọi {cho}.]
+    _{cho} lao ra, đánh hơi chiếc máy ảnh, rồi ngoạm luôn nắp ống kính chạy về gầm cầu thang. Paparazzi đuổi theo, gặp Bác {bac_bao_ve}. Bác nói: "Bác không thấy gì đâu." Paparazzi ra về._
+    ~ qh("cho", 5)
+    ~ qh("sieu_nhan_hong", 5)
+* [💸 "5 triệu hả… cho tui suy nghĩ."]
+    _Bạn suy nghĩ cả buổi chiều. Mỗi lần thấy bộ đồ hồng đi ngang, bạn lại nghĩ tới 5 triệu. Và thấy mình hơi tệ._
+    ~ cang_thang(10)
+- -> END
+
+=== chung_nn_fan_phat ===
+# ngau_nhien # noi:cong_cong_ty # gio:10:00-18:00 # vai_khong:cho # vai_khong:idol_het_thoi
+_Một người phụ nữ trung niên mặc áo in hình {idol_het_thoi} năm 2015, cầm băng rôn tự làm "CÔNG VIÊN MUÔN NĂM", đứng ở cổng từ sáng._
+npc_fan_phat: Cháu ơi, cháu đưa giùm cô lá thư này cho {idol_het_thoi} nha. Cô là fan từ 2015. Cô đi mọi đám cưới {idol_het_thoi} hát. Mọi đám.
+* [💌 Nhận thư, mang lên tận nơi.]
+    _{idol_het_thoi} đọc thư, tháo kính râm ra, đeo lại, tháo ra lần nữa. Rồi chạy xuống cổng. Hai người chụp một tấm ảnh. Không có ring light, không có filter._
+    ~ qh("idol_het_thoi", 12)
+* [💬 "Cô ơi, sao cô thương anh ấy lâu vậy?"]
+    npc_fan_phat: Năm 2015 cô buồn lắm. Bài đó làm cô cười mỗi sáng. Người ta quên rồi, chứ cô thì nhớ.
+    _Bạn đứng im một lúc. Có những người nổi tiếng chỉ với đúng một người. Và vậy là đủ._
+    ~ cang_thang(-5)
+* [📸 Chụp cô và băng rôn, gửi {hong_hot}.]
+    _Bài đăng "Fan 11 năm của Idol Công Viên" được chia sẻ nhiều hơn mọi bài về Siêu Nhân Hồng tuần đó. {quan_ly_idol} gọi cảm ơn ba lần._
+    ~ qh("quan_ly_idol", 8)
+    ~ follow(-1000)
+- -> END
+
+// ======================= SIÊU NHÂN HỒNG =======================
+
+=== chung_nn_nguyen_chuoi_chien ===
+# ngau_nhien # noi:van_phong # gio:10:00-16:00 # vai_khong:cho # vai_khong:sieu_nhan_hong
+~ temp g = chung_goi("sieu_nhan_hong")
+_Siêu Nhân Hồng đi một vòng văn phòng, bưng đĩa bánh chuối chiên lấy từ phòng chờ (điều khoản số 4 của hợp đồng), phát cho từng người._
+sieu_nhan_hong: {g} ăn đi! Bánh chuối chiên là năng lượng của chính nghĩa!
+* [🍌 Ăn một cái.]
+    sieu_nhan_hong: Ngon hông? Ngon hông? *(tạo dáng chờ đánh giá)*
+    ~ an(15)
+    ~ qh("sieu_nhan_hong", 5)
+* [🍌 Lấy hai cái, một cái để dành.]
+    sieu_nhan_hong: Lấy ba đi! Anh còn cả mâm! *(nhỏ giọng)* …Mỗi ngày công ty chiên cho anh 30 cái, mà anh ăn một mình hông hết.
+    ~ an(15)
+    ~ qh("sieu_nhan_hong", 8)
+* [😶 "Thôi cảm ơn, đang ăn kiêng."]
+    sieu_nhan_hong: Ăn kiêng hả! Anh tôn trọng! *(vẫn để lại một cái trên bàn)* Để đó, lỡ đói.
+- -> END
+
+=== chung_nn_nguyen_hoi_vu ===
+# ngau_nhien # noi:san_thuong # gio:12:00-13:30 # vai_khong:cho # vai_khong:sieu_nhan_hong # vai_khong:chua_te_deadline
+~ temp g = chung_goi("sieu_nhan_hong")
+_Sân thượng. Siêu Nhân Hồng ngồi trên ghế nhựa, không tạo dáng. Lạ lắm. Cái mũ vẫn đội, nhưng vai thì xụi._
+sieu_nhan_hong: {g} nè… {g} biết {chua_te_deadline} thích gì hông? Anh tặng gì ổng cũng nói "PR hay ghê".
+* [😇 "Ổng thích người ta nhắc ổng ăn đúng giờ."]
+    sieu_nhan_hong: *(ngồi thẳng dậy)* Thật hả?! Vậy anh… anh không tặng quà nữa, anh nhắc ăn thôi!
+    ~ qh("sieu_nhan_hong", 10)
+* [💬 "Hay anh thử nói chuyện mà không mặc đồ?"]
+    sieu_nhan_hong: *(đưa tay lên mũ, rồi hạ xuống)* …Không mặc đồ thì anh không biết nói gì hết. Không mặc đồ thì anh… dạ… ờm…
+    _Giọng nói nhỏ dần. Lần đầu bạn nghe giọng thật của người trong bộ đồ._
+    ~ qh("sieu_nhan_hong", 8)
+* [🐍 "Chắc ổng thích người nổi tiếng. Anh nổi nữa đi."]
+    sieu_nhan_hong: Đúng rồi! Vì công lý và lượt view! *(đứng dậy tạo dáng, nhưng chậm hơn thường lệ)*
+    ~ follow(2000)
+- -> END
+
+=== chung_nn_nguyen_tao_dang_sai_cho ===
+# ngau_nhien # noi:van_phong # gio:09:00-17:00 # vai_khong:cho # vai_khong:sieu_nhan_hong
+_Phòng kế toán đang yên tĩnh đếm hóa đơn. Cửa mở. Siêu Nhân Hồng nhảy vào, tạo dáng chữ V: "Biến hình!"_
+_Gió từ áo choàng thổi bay 200 tờ hóa đơn. {ke_toan} ngồi giữa cơn mưa giấy, không chớp mắt._
+* [🤝 Nhặt hóa đơn giúp.]
+    _Bạn và Siêu Nhân Hồng bò dưới sàn nhặt hóa đơn suốt 40 phút. Siêu Nhân Hồng xin lỗi 31 lần, mỗi lần một dáng khác._
+    ~ qh("ke_toan", 5)
+    ~ qh("sieu_nhan_hong", 5)
+* [📸 Chụp lại khoảnh khắc.]
+    _Ảnh "Siêu nhân và Kế toán giữa mưa hóa đơn" thành meme cả tuần, ai cũng ghép chữ "Khi sếp hỏi chứng từ"._
+    ~ follow(10000)
+    ~ chung_so_meme = chung_so_meme + 1
+    ~ qh("ke_toan", -5)
+* [😶 Lùi ra, đóng cửa lại.]
+    ke_toan: *(nói vọng ra, giọng đều đều)* Không có hóa đơn là không có tiền. Không có cửa đóng là không có hóa đơn.
+- -> END

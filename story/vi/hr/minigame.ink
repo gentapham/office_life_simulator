@@ -139,7 +139,7 @@ chua_te_deadline: ANH TUẤN! Ổng trễ nữa rồi! Ét o ét! Em sắp điê
 === hr_mg_xep_phong_mo ===
 # ngay:17 # noi:xe_khach
 _22 người và 1 con chó. 10 phòng hướng bãi xe. Luật: {chi_dai} không ở với {thanh_ninh}. {truong_phong} không ở với {con_ong_chau_cha}. {cho} không ở chung tầng với {sieu_nhan_hong}. {editor} ngủ ngày nên ở phòng tối nhất. {dan_dau_tu} không ở với chủ nợ nào (gần như không thể)._
-sieu_nhan_hong: Cho em ở chung với nhân viên mới nha! Để gắn kết tập thể!
+sieu_nhan_hong: Cho anh ở chung với nhân viên mới nha! Để gắn kết tập thể!
 -> END
 
 === hr_mg_xep_phong_dat ===

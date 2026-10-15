@@ -9,6 +9,9 @@ INCLUDE hr/chuong-2.ink
 INCLUDE hr/chuong-3.ink
 INCLUDE hr/chuong-4.ink
 INCLUDE hr/chuong-5.ink
+INCLUDE hr/chuong-6.ink
+INCLUDE hr/nhan-vat.ink
 INCLUDE hr/minigame.ink
+INCLUDE hr/ket-thuc.ink
 
 -> END

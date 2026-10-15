@@ -289,7 +289,6 @@ truong_phong: Lương là chuyện của ngân hàng. Còn poster là chuyện c
 === designer_1210_luong_ve ===
 # ngay:12 # gio:10:45 # noi:ban_thiet_ke # bat_buoc
 _10 giờ 45. Điện thoại "ting". Lương về. Cả tầng 1 vang lên một tiếng "Á!" đồng thanh, như vừa ghi bàn._
-~ tien_cong(13000000)
 ~ cang_thang(-10)
 _Ở cửa, {con_ong_chau_cha} quẹt thẻ mua trà sữa cho cả phòng. Thẻ bị từ chối. Lần thứ hai. Lần thứ ba._
 con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Chắc máy lỗi. Để anh gọi chú anh.

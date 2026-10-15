@@ -173,7 +173,7 @@ _Trên đường về, {editor} ngủ gục trên vai bạn ở ghế sau xe ôm
 # ngay:9 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Ra mắt MV đầu tiên của Siêu Nhân Hồng. Cả công ty chen chúc trước màn chiếu._
 _MV mở đầu bằng cảnh {sieu_nhan_hong} bay qua thành phố (cẩu treo), kết thúc bằng cảnh tạo dáng trước một quả trứng khổng lồ màu hồng. Không ai hiểu vì sao có quả trứng._
-sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! Mọi người share giùm em nha!
+sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! Mọi người share giùm nha!
 ~ follow(40000)
 _Lượt xem nhảy liên tục. {dan_dau_tu} hét lên mỗi lần qua một mốc nghìn._
 * {hr_kpi_share} [📋 Nhắc KPI share bài trong group.]
@@ -368,6 +368,7 @@ giam_doc: Tuấn. Lương về rồi, anh em vui rồi. Nhưng em biết đấy�
     ~ hr_nghe(2)
 * [📓 "Dạ, em thêm 2 tên trong tuần này."]
     ~ hr_ds(2)
+    ~ hr_them_ten_duy = true
     ~ qh("giam_doc", 5)
     giam_doc: Tốt. Em hiểu anh nhất.
     ~ cang_thang(10)

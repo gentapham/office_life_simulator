@@ -144,3 +144,7 @@ VAR ch_nguy_co_ll = 0            // phần nguy cơ "Bị Cướp Mất" do Tu�
 
 === function ch_hoc_tu(tu) ===
 ~ ch_tu_vung += tu
+
+// Tuất đã bớt ghét tới mức chịu nhận đồ ăn Nguyên để lại chưa
+=== function ch_nhan_qua_hong() ===
+~ return ch_ghet_hong <= 70
