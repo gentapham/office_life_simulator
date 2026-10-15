@@ -5,32 +5,39 @@
 
 ---
 
-## 1. Phường Tân Drama
+## 1. Quận Hóng
 
-Khu phố nơi mọi chuyện xảy ra, tên đầy đủ là **Phường Tân Drama, Quận Hóng**. Một khu phố bình thường, chật chội và ồn ào: hẻm nhỏ, đường lớn kẹt xe, quán xá san sát, wifi quán nào cũng tên "Khong co pass".
+Mọi chuyện xảy ra ở **Quận Hóng**, một quận hư cấu chật chội và ồn ào: hẻm nhỏ, đường lớn kẹt xe, quán xá san sát, wifi quán nào cũng tên "Khong co pass".
+
+Bản đồ chia thành **6 khu**. Mỗi khu là một vùng tải riêng, nên bản đồ rộng mà vẫn nhẹ máy.
 
 ### Sơ đồ tổng thể
 
 ```
-                    ┌──────────────────────────────────────────────┐
-                    │                ĐƯỜNG LỚN (kẹt xe)            │
-   ┌─────────────┐  │  ┌──────────────┐   ┌──────────┐  ┌────────┐ │
-   │  CÔNG VIÊN  │  │  │ TÒA NHÀ      │   │ QUÁN CÀ  │  │  RẠP   │ │
-   │  Hồ Cá Mập  │  │  │ G-ENTERTAIN- │   │ PHÊ SỐNG │  │ PHIM   │ │
-   │  (chạy bộ,  │  │  │ MENT         │   │ ẢO       │  │ Bắp Rang│ │
-   │  dắt chó)   │  │  │ (3 tầng +    │   └──────────┘  └────────┘ │
-   └─────────────┘  │  │  sân thượng) │   ┌──────────┐  ┌────────┐ │
-                    │  └──────────────┘   │ CƠM TẤM  │  │  GYM   │ │
-   ┌─────────────┐  │  ┌──────────────┐   │ VỈA HÈ   │  │ Cơ Bắp │ │
-   │ HẺM 69      │  │  │ CỬA HÀNG     │   └──────────┘  │ Ảo     │ │
-   │ (nhà trọ    │──┼──│ TIỆN LỢI 24/7│   ┌──────────┐  └────────┘ │
-   │  người chơi)│  │  └──────────────┘   │ QUÁN ỐC  │  ┌────────┐ │
-   └─────────────┘  │  ┌──────────────┐   │ ĐÊM      │  │ SÂN    │ │
-                    │  │ SIÊU THỊ MINI│   │ (nhậu)   │  │ KHẤU   │ │
-                    │  │ & ATM        │   └──────────┘  │ SỰ KIỆN│ │
-                    │  └──────────────┘                 └────────┘ │
-                    └──────────────────────────────────────────────┘
+ ┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐
+ │  ⑤ ĐỒI NGÂN HÀNG     │   │  ③ KHU CĂN HỘ         │   │  ④ PHỐ CŨ            │
+ │  (biệt thự)          │   │  Sky Ảo (cao cấp)    │   │  nhà phố, chợ,       │
+ │  nhà Giám Đốc        │   │  Phố Mới (tầm trung) │   │  trường mầm non,     │
+ │                      │   │                      │   │  chùa, tiệm cầm đồ   │
+ └──────────┬───────────┘   └──────────┬───────────┘   └──────────┬───────────┘
+            │        ĐẠI LỘ KẸT XE (đường chính nối các khu)      │
+ ┌──────────┴───────────┐   ┌──────────┴───────────┐   ┌──────────┴───────────┐
+ │  ② HẺM 69            │   │  ① PHƯỜNG TÂN DRAMA  │   │  ⑥ VEN ĐÔ            │
+ │  (khu trọ)           │───│  công ty, quán ăn,   │───│  nhà vườn, bến xe,   │
+ │  nhà người chơi      │   │  rạp phim, quán ốc,  │   │  đài truyền hình,    │
+ │  và đồng nghiệp      │   │  siêu thị, công viên │   │  công ty đối thủ     │
+ └──────────────────────┘   └──────────────────────┘   └──────────────────────┘
 ```
+
+| Khu | Tính chất | Ai sống ở đây |
+|---|---|---|
+| ① **Phường Tân Drama** | Trung tâm: công ty, ăn uống, giải trí | Bác Bảo Vệ và Tuất (chòi bảo vệ) |
+| ② **Hẻm 69** | Khu trọ giá rẻ, ồn ào, ai cũng biết chuyện nhà ai | Hiếu, Ngân, Duy, Bảo, Chương |
+| ③ **Khu Căn Hộ** | Chung cư cao cấp Sky Ảo và chung cư mini Phố Mới | Long, Phát, Huyền, Thái, Nhật, Nhi, Tuấn, Quỳnh, Lĩnh |
+| ④ **Phố Cũ** | Nhà phố lâu đời, chợ, đời sống gia đình | Thương, Hương, Oánh |
+| ⑤ **Đồi Ngân Hàng** | Biệt thự, yên tĩnh, có bảo vệ riêng | Thắng |
+| ⑥ **Ven Đô** | Ngoại ô, nhà vườn, đường đất | Sơn, và nhà vườn của Bác Bình |
+| ❓ | Không ai biết | Nguyên (Siêu Nhân Hồng) |
 
 *(Sơ đồ ý tưởng, tỉ lệ thật sẽ chốt khi dựng bản đồ.)*
 
@@ -50,7 +57,9 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 
 **Đồ vật có thể tương tác:** máy chấm công, máy in (hay kẹt), máy pha cà phê (hay hết), bình nước, tủ lạnh chung (có hộp cơm bị ăn vụng), bảng thông báo (dán thông báo của HR, giấy khen, tin đồn), group Zalo công ty.
 
-### 2.2. Hẻm 69: nhà trọ của người chơi
+### 2.2. Hẻm 69: nhà trọ của Hiếu
+
+> Chi tiết cả khu Hẻm 69 và những người sống ở đây: xem mục 3.
 - Phòng trọ 15m², một cửa sổ nhìn thẳng vào tường nhà bên.
 - **Đồ trong phòng:** giường, bàn làm việc (để làm freelancer), tủ lạnh mini, bếp điện, gương.
 - **Bà chủ trọ** (NPC phụ): thu tiền trọ đầu tháng, nhắc tắt đèn, biết hết chuyện của cả xóm.
@@ -95,7 +104,135 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 
 ---
 
-## 3. Đi lại
+## 3. Khu dân cư & nhà của từng nhân vật
+
+Mỗi nhân vật có **nhà riêng**. Khi người chơi chọn role nào, nhà của role đó là nơi xuất phát mỗi sáng và về ngủ mỗi tối.
+
+**Vào nhà người khác thế nào?**
+- **Được mời**: quan hệ đủ thân thì được rủ về nhà ăn cơm, xem phim, nhậu.
+- **Sự kiện**: tân gia, sinh nhật, đám giỗ, tiệc độc thân.
+- **Có việc**: đòi nợ (đến nhà Chương), giao đồ, đưa người say về nhà.
+- Đồ đạc trong nhà **kể chuyện về chủ nhà**. Nhìn kỹ là thấy bí mật, ví dụ ảnh Phát giấu trong ngăn kéo nhà Thái. Rắn Độc mà vào được nhà ai là có thêm tin mật.
+
+---
+
+### ② Hẻm 69: khu trọ
+
+Hẻm sâu, hai xe máy tránh nhau phải nín thở. Đầu hẻm có quán trà đá, cuối hẻm có con chó nhà bà chủ trọ sủa cả đêm. Bà chủ trọ biết hết chuyện của cả hẻm, là "Thánh Hóng" phiên bản ngoài đời.
+
+| Nhà | Chủ | Mô tả | Bí mật trong nhà |
+|---|---|---|---|
+| Phòng 3, dãy A | 🐍 **Hiếu** | Phòng 15m², sạch sẽ tới mức đáng ngờ. Bàn làm việc có laptop và cuốn sổ tay | Cuốn sổ ghi chép chuyện của từng đồng nghiệp |
+| Phòng 5, dãy A | 👀 **Ngân** | Ngay sát vách Hiếu. Đầy đèn LED, ring light, ảnh chụp màn hình dán tường | Laptop đang mở trang admin "Confession G-Entertainment" |
+| Phòng 12, dãy B | 🐣 **Duy** | Phòng ghép 4 người, giường tầng, mì gói xếp thành tháp | Nếu Duy là con nhà đầu tư (tùy lần chơi), tối nào cũng có xe hơi đón ở đầu hẻm |
+| Phòng 9, dãy B | 🔌 **Bảo** | Toàn dây điện, 3 cái máy tính tự ráp, mì ly. Bảo ít khi về, hay ngủ ở phòng server công ty | Ổ cứng ghi "KHÔNG ĐƯỢC MỞ" |
+| Phòng gác lửng | 📉 **Chương** | Phòng nhỏ nhất hẻm, nhỏ dần theo tài khoản đầu tư. Màn hình chart sáng cả đêm | Cửa dán đầy giấy nhắc nợ. Chủ nợ hay đến gõ cửa |
+
+**Sự kiện ở Hẻm 69:** cúp nước, bà chủ trọ thu tiền, hàng xóm hát karaoke, Ngân áp tai vào tường nghe lén Hiếu (hoặc ngược lại), cả hẻm ra đầu hẻm hóng đánh nhau.
+
+---
+
+### ③ Khu Căn Hộ
+
+#### Chung cư cao cấp Sky Ảo
+Tòa nhà kính 30 tầng, có hồ bơi, phòng gym, sảnh có lễ tân. Thang máy cần thẻ từ.
+
+| Căn | Chủ | Mô tả | Bí mật trong nhà |
+|---|---|---|---|
+| Penthouse tầng 30 | 👑 **Long** | Bố mua cho. Rộng, trống, lạnh lẽo, bể cá to hơn phòng trọ của Hiếu | Một căn phòng khóa là phòng thu âm, nơi Long lén sáng tác nhạc |
+| Căn 1808 | 🎤 **Phát** | Tường đầy poster và ảnh của chính Phát hồi 2015, cúp giải thưởng bám bụi | Thông báo nợ 3 tháng tiền thuê nhà. Hóa đơn thuê fan ảo |
+| Căn 1203 | 📈 **Huyền** | Nội thất sang để chụp hình đăng story | Tủ lạnh trống trơn, sống bằng mì gói. Hợp đồng tài trợ "ma" nằm trong ngăn bàn |
+| Studio 0905 | 📞 **Thái** | Nhỏ gọn, 5 cục sạc dự phòng, 3 cái điện thoại | Ảnh Phát lồng khung, giấu trong ngăn kéo tủ đầu giường |
+
+#### Chung cư mini Phố Mới
+Tòa 7 tầng, thang máy hay kẹt, bảo vệ ngủ gật. Hàng xóm nghe thấy hết.
+
+| Căn | Chủ | Mô tả | Bí mật trong nhà |
+|---|---|---|---|
+| Căn 501 | 📅 **Nhật** | Phòng khách có bảng trắng. Sáng chủ nhật họp gia đình 2 tiếng | Bản nháp đơn xin đề bạt phó giám đốc, đã sửa 14 lần |
+| Căn 302 | 🙇 **Nhi** | Tường treo ảnh chụp chung với Giám Đốc, phóng to, đóng khung | Thư mời phỏng vấn của công ty đối thủ |
+| Căn 604 | ☕ **Tuấn** | Gọn gàng như phòng nhân sự. Kệ trà 40 loại, sắp theo bảng chữ cái | Bản nháp email "Thư mời làm việc" gửi Thương, chưa dám bấm gửi |
+| Căn 203 | 🎨 **Quỳnh** | Ban công đầy cây, bàn vẽ, 2 cái laptop | Laptop thứ hai đang mở file thiết kế cho công ty đối thủ |
+| Căn 701 | 🦉 **Lĩnh** | Rèm đen kín mít, 3 màn hình, tối như hang. Ban ngày ngủ | Thư mục "Thái" chứa video dựng riêng, chưa bao giờ gửi |
+
+---
+
+### ④ Phố Cũ
+
+Phố nhà ống lâu đời, cây cổ thụ, các cô chú ngồi trước cửa uống trà. Có chợ sáng, trường mầm non và chùa.
+
+| Nhà | Chủ | Mô tả | Bí mật trong nhà |
+|---|---|---|---|
+| Nhà số 18 | 💰 **Thương** | Nhà cũ, sạch, cái gì cũng dán nhãn. Sổ chi tiêu ghi từng đồng | Két sắt sau bức tranh: "quỹ đen" để trả lương phòng khi công ty sập |
+| Nhà số 45 | 🦁 **Hương** | Nhà đông vui: chồng, 2 con, đồ chơi khắp nơi. Hương đưa đón con ở trường mầm non đầu phố | Ảnh cũ thời "chị đại" khét tiếng cả quận, và một tấm giấy khen võ thuật |
+| Gác mái số 7 | ✍️ **Oánh** | Gác mái đầy sách, một con mèo, máy đánh chữ để "lấy cảm hứng" | Bản thảo tiểu thuyết về drama công ty, dùng tên thật đồng nghiệp |
+
+---
+
+### ⑤ Đồi Ngân Hàng
+
+Khu biệt thự trên đồi, đường rộng, cây xanh, mỗi nhà một cổng sắt.
+
+| Nhà | Chủ | Mô tả | Bí mật trong nhà |
+|---|---|---|---|
+| Biệt thự số 1 | 👔 **Thắng** | Biệt thự 3 tầng, sân golf mini, vợ Thắng quản lý mọi thứ. Thắng sợ vợ | Giấy thế chấp ngân hàng: căn biệt thự đang cầm cố để cứu công ty |
+
+---
+
+### ⑥ Ven Đô
+
+Ngoại ô, đường đất đỏ, ruộng rau, gió mát. Đi xe máy từ trung tâm ra mất 30 phút, giờ cao điểm thì 1 tiếng.
+
+| Nhà | Chủ | Mô tả | Bí mật trong nhà |
+|---|---|---|---|
+| Nhà vườn | 🤒 **Sơn** | Nhà ở với bà ngoại, "người bệnh nặng 7 lần trong năm", thật ra khỏe re, sáng nào cũng tập dưỡng sinh | Bộ đồ sân khấu kim tuyến và giấy báo vào vòng trong một cuộc thi hát truyền hình |
+| Nhà cấp 4 có vườn | 🛡️ **Bình** | Nhà nhỏ, vườn rau, bể cá. Bác Bình chỉ về đây cuối tuần, ngày thường ở chòi bảo vệ | Tủ gỗ cũ đựng giấy tờ thành lập G-Entertainment đứng tên… Bình |
+
+---
+
+### ① Phường Tân Drama
+
+| Nơi ở | Chủ | Mô tả |
+|---|---|---|
+| Chòi bảo vệ | 🛡️ **Bình** và 🐕 **Tuất** | Ngay cổng công ty. Ấm trà, radio, ghế bố. Ổ của Tuất ở bên cạnh |
+| Gầm cầu thang công ty | 🐕 **Tuất** | Kho báu bí mật: chìa khóa, son môi, điện thoại cũ… toàn bằng chứng của các vụ drama |
+
+---
+
+### ❓ Nhà của Siêu Nhân Hồng
+
+**Không ai biết Nguyên sống ở đâu.** Mỗi tối Nguyên lên một chiếc xe màu hồng và biến mất.
+
+Tìm ra nhà Nguyên là một **nhiệm vụ ẩn**. Ví dụ: theo dõi xe của Nguyên, mua chuộc paparazzi, hoặc thả Tuất đánh hơi. Tìm được nhà là tiến gần tới bí mật mặt thật đằng sau chiếc mũ.
+
+---
+
+## 4. Địa điểm mới ngoài công ty
+
+Ngoài những địa điểm ở mục 2, thêm các nơi sau để thế giới sống động hơn:
+
+| Địa điểm | Khu | Dùng để | Gắn với ai |
+|---|---|---|---|
+| 🛒 **Chợ Phố Cũ** | ④ | Mua đồ tươi rẻ (chỉ mở buổi sáng), nghe các cô bán hàng buôn chuyện | Thương, Hương |
+| 🏫 **Trường mầm non Mầm Drama** | ④ | Hương đưa đón con. Họp phụ huynh cũng là một chiến trường | Hương |
+| 🛕 **Chùa Phố Cũ** | ④ | Cầu may, thắp hương, tịnh tâm (giảm stress mạnh) | Chương cầu coin lên, Thái cầu duyên |
+| 💍 **Tiệm cầm đồ Cứu Nguy** | ④ | Cầm đồ lấy tiền khi cháy túi | Chương, Phát |
+| 🎤 **Karaoke Hát Cho Nhau Nghe** | ① | Tăng hai sau nhậu, hát bài hit 2015 của Phát | Cả công ty |
+| 💅 **Tiệm Nail & Tóc Lung Linh** | ① | Trung tâm buôn chuyện thứ hai sau pantry | Ngân, Huyền, Nhi |
+| 🖥️ **Quán net Gõ Phím** | ② | Chơi game, làm freelancer, trốn việc | Bảo, Duy |
+| 🍵 **Quán trà đá đầu hẻm** | ② | Ngồi hóng cả hẻm, trà 3 nghìn một ly | Bình, Hiếu |
+| 🎱 **Quán bida Cơ Bản** | ① | Giải trí buổi tối, cá cược nhỏ | Vũ, Chương |
+| 🏥 **Phòng khám Đa Khoa Khỏe Re** | ① | Khám bệnh khi stress hoặc ngất. **Mua giấy nghỉ ốm** | Sơn (khách quen) |
+| 🏦 **Ngân hàng Tín Dụng Đen Đủi** | ⑤ | Vay tiền, gửi tiết kiệm | Thắng (thế chấp biệt thự), Chương |
+| 🚌 **Bến xe Ven Đô** | ⑥ | Về quê, trốn nợ, bỏ trốn cùng người yêu | Sơn, Chương |
+| 📺 **Đài truyền hình Tivi Hóng** | ⑥ | Gameshow, cuộc thi hát, phỏng vấn | Sơn, Nguyên, Phát |
+| 🏢 **Công ty đối thủ** | ⑥ | Tòa nhà hào nhoáng của đối thủ (tên đang chờ bạn đặt). Phỏng vấn lén, gặp mặt bí mật | Nhi, Quỳnh, Thái |
+| 🏊 **Hồ bơi chung cư Sky Ảo** | ③ | Bơi, sống ảo, gặp gỡ "tình cờ" | Long, Huyền |
+| ⚽ **Sân bóng mini** | ⑥ | Giải bóng đá giao hữu giữa các phòng ban | Nhật, Vũ, Tuấn |
+
+---
+
+## 5. Đi lại
 
 | Cách | Mô tả |
 |---|---|
@@ -107,7 +244,7 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 
 ---
 
-## 4. Thời tiết & mùa
+## 6. Thời tiết & mùa
 
 - **Nắng**: khát nhanh hơn.
 - **Mưa**: đường ngập, đi trễ, nhưng có cớ để xin về sớm.
@@ -115,7 +252,7 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 
 ---
 
-## 5. Điện thoại trong game
+## 7. Điện thoại trong game
 
 Mở bằng phím `Tab`. Gồm các ứng dụng nhại lại:
 

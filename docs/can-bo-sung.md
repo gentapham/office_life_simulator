@@ -52,7 +52,7 @@ Mục nào xong thì đánh dấu `[x]`.
 - [ ] 🙋 **Quê quán** của từng người (nếu muốn trộn giọng vùng miền).
 - [ ] 🤖 **Sinh nhật từng người**: để gài sự kiện sinh nhật vào 30 ngày.
 - [ ] 🤖 **Lịch trình mỗi ngày của từng NPC**: mấy giờ đến công ty, ăn trưa ở đâu, tối đi đâu. Để người chơi biết tìm ai ở đâu.
-- [ ] 🤖 **Nơi ở của NPC**: có cần nhà riêng cho từng NPC không, hay chỉ vài người quan trọng?
+- [x] 🤖 **Nơi ở của NPC**: mỗi nhân vật có nhà riêng, chia theo 6 khu (bản nháp trong [world/the-gioi.md](world/the-gioi.md), mục 3).
 - [ ] 🙋 **Hiếu (Rắn Độc)**: chọn 1 trong 3 động cơ cố định, hay để ngẫu nhiên mỗi lần chơi?
 - [ ] 🙋 **Gia đình**: vợ Giám Đốc, 2 con của Chị Đại, bà ngoại "hay ốm" của Sơn… có xuất hiện trong game không?
 
@@ -85,7 +85,8 @@ Mục nào xong thì đánh dấu `[x]`.
 - [ ] 🤖 **Danh sách vật phẩm**: đồ ăn, đồ uống, quà tặng, bằng chứng, đồ dùng.
 - [ ] 🤖 **Giá cả**: bánh mì, cơm tấm, trà sữa, vé phim, tiền trọ…
 - [ ] 🤖 **Danh sách job freelancer** buổi tối.
-- [ ] 🙋 **Thêm địa điểm?** Hiện có: công ty, nhà trọ, cửa hàng tiện lợi, siêu thị, cơm tấm, cà phê, rạp phim, quán ốc, gym, công viên, sân khấu sự kiện. Có thể thêm: karaoke, chợ, bệnh viện, quán net, nhà thờ/chùa, tiệm nail…
+- [x] 🤖 **Thêm địa điểm**: đã thêm 16 địa điểm mới (chợ, karaoke, tiệm nail, quán net, phòng khám, chùa, bến xe, đài truyền hình, công ty đối thủ…). Bản nháp trong [world/the-gioi.md](world/the-gioi.md), mục 4.
+- [ ] 🙋 **Tên công ty đối thủ** để gắn vào bản đồ khu Ven Đô.
 - [ ] 🙋 **Lễ, Tết, ngày đặc biệt** trong 30 ngày (8/3, 20/10, Valentine, Tất niên…).
 
 ---
