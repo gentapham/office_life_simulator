@@ -23,13 +23,29 @@
 | 14 | `bien_kich` | ✍️ Biên Kịch | **Oánh** | Nữ | Biên kịch | Ý Tưởng (thật và "mượn") |
 | 15 | `editor` | 🦉 Editor Cú Đêm | **Lĩnh** | Nam | Dựng phim | Số Đêm Thức Trắng |
 | 16 | `designer` | 🎨 Designer | **Quỳnh** | Nữ | Thiết kế đồ họa | Số Lần Bị Sửa |
-| 17 | `sales` | 📈 Sales Nói Phét | **Huyển** | Nữ | Kinh doanh, tìm nhà tài trợ | KPI Trên Giấy |
+| 17 | `sales` | 📈 Sales Nói Phét | **Huyền** | Nữ | Kinh doanh, tìm nhà tài trợ | KPI Trên Giấy |
 | 18 | `chi_dai` | 🦁 Chị Đại | **Hương** | Nữ | Trưởng nhóm Tổ chức Sự kiện | Uy Lực |
 | 19 | `dan_dau_tu` | 📉 Dân Đầu Tư | **Chương** | Nam | Chuyên viên Phân tích Số liệu | Tài Khoản Đầu Tư |
 | 20 | `thanh_xin_nghi` | 🤒 Thánh Xin Nghỉ | **Sơn** | Nam | Điều phối Lịch trình Nghệ sĩ | Số Ngày Phép (âm) |
 | 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | **Bình** | Nam | Bảo vệ | Bí Mật Biết Được |
 | 22 | `sieu_nhan_hong` | 🩷 Siêu Nhân Hồng | **Nguyên** | Nam | Đối tác chiến lược (không phải nhân viên) | Độ Nổi Tiếng Showbiz |
 | 23 | `cho` | 🐕 Chó Công Ty | **Tuất** | Chó đực | Chó (ở với Bác Bảo Vệ) | Độ Được Cưng, Mũi Thính |
+
+## Sơ đồ quan hệ chính
+
+**Tình cảm**
+- 💔 **Lĩnh → Thái → Phát**: Editor thầm thích Quản Lý Idol, còn Quản Lý Idol lại thầm thương Idol Hết Thời.
+- 🩷 **Nguyên → Vũ**: Siêu Nhân Hồng theo đuổi Chúa Tể Deadline.
+- 💌 **Tuấn → Thương**: HR yêu thầm Kế Toán.
+- 🙈 **Ngân → Bảo**: Thánh Hóng yêu thầm IT.
+- 💘 **Long → Quỳnh**: Con Ông Cháu Cha thầm thích Designer.
+
+**Phe phái & thù hằn**
+- 🤝 **Huyền + Quỳnh**: Sales và Designer cùng phe, nắm bí mật của nhau.
+- 🐕💢 **Tuất ✖ Nguyên**: chó Tuất cực kỳ ghét Siêu Nhân Hồng.
+- 🎤⚔️ **Phát ✖ Nguyên**: Idol Hết Thời sợ bị Siêu Nhân Hồng thay thế.
+- 🪑⚔️ **Nhật ✖ Long**: tranh ghế phó giám đốc.
+- 🦁⚔️ **Hương ✖ Nhi**: Chị Đại ghét Thánh Nịnh.
 
 Nhân viên công ty là role 1 đến 21 (người chơi mặc định là nhân viên thứ 21, Rắn Độc tên Hiếu). Siêu Nhân Hồng là khách bên ngoài, Chó Công Ty là… chó.
 
@@ -116,7 +132,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Quan hệ:** cháu ruột giám đốc. Bị Trưởng Phòng Họp ghét. Được Thực Tập Sinh coi như thần tượng. Thầm thích Designer. Idol Hết Thời muốn lợi dụng.
 - **Ý tưởng truyện:**
   - Bị chú ép đi học "khóa quản lý" và phải làm việc thật một tuần.
-  - Yêu Designer, gia đình phản đối kiểu phim Hàn. Nhưng Editor cũng đang thầm thích Designer: tình tay ba.
+  - Yêu Designer, gia đình phản đối kiểu phim Hàn.
   - Bí mật sáng tác bài hát cho Siêu Nhân Hồng, bài hát thành hit.
 
 ---
@@ -127,11 +143,12 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** "Còn sớm mà", "Chill, kịp hết", rồi tới phút cuối thì "ÉT O ÉT! AI CỨU TUI VỚI!".
 - **Câu cửa miệng:** *"Nước tới chân mới nhảy, mà nhảy là phải đẹp."*
 - **Bí mật:** đã làm mất file gốc của một dự án lớn, đang giấu.
-- **Quan hệ:** hay nhờ Editor và Designer "cứu". Kẻ thù tự nhiên của Trưởng Phòng Họp.
+- **Quan hệ:** hay nhờ Editor và Designer "cứu". Kẻ thù tự nhiên của Trưởng Phòng Họp. Được **Siêu Nhân Hồng theo đuổi**, nhưng tưởng đó là chiêu PR.
 - **Ý tưởng truyện:**
   - Deadline lớn nhất năm trùng đúng ngày team building.
   - Bị phát hiện làm mất file gốc, phải cùng Editor và IT "giải cứu dữ liệu" trong một đêm.
   - Lần đầu tiên trong đời làm xong việc sớm, cả công ty nghi ngờ có âm mưu.
+  - Siêu Nhân Hồng tỏ tình giữa buổi livestream. Vũ đang lướt TikTok thì thấy mình lên xu hướng.
 
 ---
 
@@ -197,7 +214,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** "Hồi anh còn nổi…", "Fan anh đông lắm em", nói chuyện như đang trả lời phỏng vấn.
 - **Câu cửa miệng:** *"Em biết anh là ai không?"*
 - **Bí mật:** đang nợ tiền, thuê fan ảo. Ghét Siêu Nhân Hồng vì sợ bị thay thế.
-- **Quan hệ:** do Quản Lý Idol phụ trách. Kình địch Siêu Nhân Hồng. Từng chung ban nhạc sinh viên với Giám Đốc, ngày xưa còn hát chính.
+- **Quan hệ:** do Quản Lý Idol phụ trách, và **được Quản Lý Idol thầm thương** mà không hay biết. Kình địch Siêu Nhân Hồng. Từng chung ban nhạc sinh viên với Giám Đốc, ngày xưa còn hát chính.
 - **Ý tưởng truyện:**
   - Âm mưu chơi xấu Siêu Nhân Hồng để giành lại hào quang.
   - Một video cũ bất ngờ viral, nổi lại sau 10 năm.
@@ -211,11 +228,11 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** nói nhanh, nói qua điện thoại nhiều hơn nói trực tiếp. "Khoan, anh nghe máy chút".
 - **Câu cửa miệng:** *"Chuyện này để anh lo, đừng ai đăng gì hết!"*
 - **Bí mật:** đang được công ty đối thủ chiêu mộ, kèm theo Siêu Nhân Hồng.
-- **Quan hệ:** kẹt giữa Idol Hết Thời và Siêu Nhân Hồng. Bạn thân của Thánh Xin Nghỉ.
+- **Quan hệ:** kẹt giữa Idol Hết Thời và Siêu Nhân Hồng. **Thầm thương Idol Hết Thời**, nên lần nào Phát có phốt cũng gồng mình gánh hộ. **Được Editor thầm thích** mà không nhận ra. Bạn thân của Thánh Xin Nghỉ.
 - **Ý tưởng truyện:**
   - Hai nghệ sĩ cùng có scandal trong một ngày.
   - Xử lý khủng hoảng do chính đồng nghiệp trong công ty tung ra.
-  - Quyết định đi hay ở khi công ty đối thủ ra giá gấp đôi.
+  - Quyết định đi hay ở khi công ty đối thủ ra giá gấp đôi. Đi thì phải bỏ Phát lại.
 
 ---
 
@@ -239,11 +256,12 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** ngáp giữa câu, "Đợi render xong…".
 - **Câu cửa miệng:** *"Render xong là xong."*
 - **Bí mật:** chính là người làm hết các video mà Trưởng Phòng Họp nhận công. Có kênh YouTube riêng gần 1 triệu sub.
-- **Quan hệ:** bị Trưởng Phòng Họp lợi dụng, hay bị Chúa Tể Deadline nhờ vả. Thầm thích Designer.
+- **Quan hệ:** bị Trưởng Phòng Họp lợi dụng, hay bị Chúa Tể Deadline nhờ vả. **Thầm thích Quản Lý Idol**, đêm nào cũng dựng thêm vài video "tiện tay" cho nghệ sĩ của Thái.
 - **Ý tưởng truyện:**
   - Ngủ quên trong công ty, phát hiện bí mật ban đêm.
   - Kênh YouTube riêng nổi tiếng, công ty muốn "mua lại".
   - Đình công: cả công ty nhận ra không có Editor thì không ai làm được gì.
+  - Dựng một video tỏ tình cho Thái, nhưng lỡ tay xuất nhầm lên fanpage công ty.
 
 ---
 
@@ -253,7 +271,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** "Cho xin feedback cụ thể được không ạ?", "Font này mà anh nói xấu hả?".
 - **Câu cửa miệng:** *"Sửa nhẹ thôi là sửa cái gì ạ?"*
 - **Bí mật:** đang chạy job freelancer cho công ty đối thủ.
-- **Quan hệ:** bạn thân Thánh Hóng. Cãi nhau với Biên Kịch. Được Editor thầm thích.
+- **Quan hệ:** bạn thân Thánh Hóng. Cãi nhau với Biên Kịch. Được Con Ông Cháu Cha thầm thích. **Cùng phe với Sales Huyền**: Huyền giữ bí mật vụ Quỳnh làm cho đối thủ, Quỳnh thiết kế hồ sơ "xịn xò" cho các deal ma của Huyền.
 - **Ý tưởng truyện:**
   - Bản thiết kế bị sửa lần thứ 37, cuối cùng sếp chọn lại bản đầu tiên.
   - Bị lộ việc làm cho đối thủ vì quên xóa logo.
@@ -261,13 +279,13 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 17. 📈 Sales Nói Phét: Huyển
+### 17. 📈 Sales Nói Phét: Huyền
 - **Công việc:** tìm nhà tài trợ, bán gói quảng cáo, đi tiếp khách.
 - **Tính cách:** nói phét như thật, tự tin tuyệt đối. Báo cáo KPI 300% trên giấy, thực tế 30%.
 - **Cách nói:** "Chị quen hết mà", "Deal này chắc chắn 100%", "Để tối nay chị nhậu với bên đó".
 - **Câu cửa miệng:** *"Tin chị đi, deal này chắc kèo!"*
 - **Bí mật:** có hợp đồng lớn đang ký là giả, nhà tài trợ không tồn tại.
-- **Quan hệ:** hay đi nhậu với Giám Đốc. Kình địch của Kế Toán (vì toàn xin tạm ứng không có hóa đơn).
+- **Quan hệ:** hay đi nhậu với Giám Đốc. Kình địch của Kế Toán (vì toàn xin tạm ứng không có hóa đơn). **Cùng phe với Designer Quỳnh**: hai người nắm bí mật của nhau, ai động vào một người là đụng cả hai.
 - **Ý tưởng truyện:**
   - Nhà tài trợ "chắc kèo" không có thật, phải tìm người đóng giả trước buổi ký hợp đồng.
   - Nói phét quá đà, hứa mời ca sĩ nổi tiếng nhất nước về hát.
@@ -338,7 +356,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Cách nói:** "Biến hình!", "Vì công lý và lượt view!", tạo dáng sau mỗi câu.
 - **Câu cửa miệng:** *"Hồng không phải màu, Hồng là thái độ!"*
 - **Bí mật:** không ai biết mặt thật. Có thể là bất kỳ ai, kể cả một người quen trong công ty (tùy lần chơi).
-- **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Giám đốc đặt cả công ty vào tay người này.
+- **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Giám đốc đặt cả công ty vào tay người này. **Thích Chúa Tể Deadline Vũ**, tặng quà toàn màu hồng. **Bị chó Tuất ghét cay ghét đắng**.
 - **Ý tưởng truyện:**
   - Chiến dịch "Hồng hóa Việt Nam": đi gameshow, livestream bán hàng, đu trend TikTok.
   - Drama ồn ào tự tạo để nổi tiếng, rồi không kiểm soát được.
@@ -356,8 +374,9 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
   - **Người nói thì chó chỉ hiểu từ khóa:** *"…bla bla… **ĂN** …bla bla… **ĐI DẠO** …bla…"*
   - Mũi thính: phát hiện ai vừa ăn gì, ai vừa đi với ai (mùi nước hoa lạ!).
 - **Bí mật:** giấu một kho đồ dưới gầm cầu thang: chìa khóa, son môi, điện thoại cũ… toàn là bằng chứng của các vụ drama.
-- **Quan hệ:** thân nhất với Bác Bảo Vệ. Được Thực Tập Sinh và Chị Đại cưng. Ghét Thánh Nịnh (vì từng bị đá).
+- **Quan hệ:** thân nhất với Bác Bảo Vệ. Được Thực Tập Sinh và Chị Đại cưng. **Vô cùng ghét Siêu Nhân Hồng**: thấy bộ đồ hồng là sủa, gầm gừ, đòi cắn mũ. Không ai hiểu tại sao. Có thể con chó biết mặt thật đằng sau chiếc mũ?
 - **Ý tưởng truyện:**
   - Tha nhầm điện thoại của giám đốc về ổ, lộ tin nhắn chấn động.
   - Trở thành idol TikTok của công ty, nổi tiếng hơn cả Siêu Nhân Hồng.
   - Cứu công ty khỏi một vụ trộm lúc nửa đêm.
+  - Cuộc chiến Tuất và Siêu Nhân Hồng: lần nào Nguyên lên sóng, Tuất cũng tìm cách phá. Một ngày Tuất giật được chiếc mũ…
