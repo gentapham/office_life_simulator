@@ -164,7 +164,7 @@ Các tài liệu liên quan:
 - Khi tin tới tai người bị nói, họ sẽ **truy ngược** xem ai tung ra. Nếu ra bạn thì toang.
 
 ### 6.4. Trí nhớ NPC
-Mỗi NPC nhớ: ai từng giúp mình, ai nói xấu mình, ai nợ tiền mình, ai từng hẹn hò với ai. NPC dùng trí nhớ này khi nói chuyện. Ví dụ: "Ủa, hôm bữa bà nói xấu tui với Lan đúng hông?"
+Mỗi NPC nhớ: ai từng giúp mình, ai nói xấu mình, ai nợ tiền mình, ai từng hẹn hò với ai. NPC dùng trí nhớ này khi nói chuyện. Ví dụ: "Ủa, hôm bữa ông nói xấu tui với Ngân đúng hông?"
 
 ---
 

@@ -1,37 +1,37 @@
 # Danh sách 23 role
 
-> **Tên mặc định:** đang chờ danh sách tên. Trong tài liệu, các nhân vật được gọi bằng tên role.
+> **Tên mặc định** và **giới tính** đã chốt (bảng bên dưới). Người chơi đổi được tên, nhưng giới tính của mỗi role là cố định.
 > Trong file truyện, tên luôn viết dạng biến (ví dụ `{ke_toan}`), để game tự thay bằng tên người chơi đặt hoặc tên mặc định.
 
 ## Tổng quan
 
-| # | Mã | Role | Chức danh thật ở công ty | Chỉ số riêng |
-|---|---|---|---|---|
-| 1 | `ran_doc` | 🐍 Rắn Độc | Chuyên viên Truyền thông nội bộ | Độ Độc, Độ Nghi Ngờ |
-| 2 | `giam_doc` | 👔 Giám Đốc | Giám đốc điều hành | Ngân Sách, Uy Quyền |
-| 3 | `truong_phong` | 📅 Trưởng Phòng Họp | Trưởng phòng Sản xuất Nội dung | Số Cuộc Họp |
-| 4 | `thanh_ninh` | 🙇 Thánh Nịnh | Trợ lý Giám đốc | Điểm Nịnh |
-| 5 | `hong_hot` | 👀 Thánh Hóng | Chuyên viên Mạng xã hội (admin fanpage) | Kho Tin Mật |
-| 6 | `con_ong_chau_cha` | 👑 Con Ông Cháu Cha | Phó phòng Marketing | Ô Dù |
-| 7 | `chua_te_deadline` | ⏰ Chúa Tể Deadline | Điều phối Dự án (Producer) | Độ Nước Tới Chân |
-| 8 | `thuc_tap_sinh` | 🐣 Thực Tập Sinh | Thực tập sinh Sản xuất | Độ Ngơ, Kinh Nghiệm |
-| 9 | `ke_toan` | 💰 Kế Toán | Kế toán trưởng | Quỹ Công Ty |
-| 10 | `hr` | ☕ HR | Chuyên viên Nhân sự | Danh Sách Đen |
-| 11 | `it` | 🔌 IT | Kỹ thuật IT kiêm âm thanh ánh sáng | Quyền Truy Cập |
-| 12 | `idol_het_thoi` | 🎤 Idol Hết Thời | Ca sĩ độc quyền của công ty | Độ Nổi Tiếng (đang tụt) |
-| 13 | `quan_ly_idol` | 📞 Quản Lý Idol | Quản lý nghệ sĩ | Khủng Hoảng Đang Xử Lý |
-| 14 | `bien_kich` | ✍️ Biên Kịch | Biên kịch | Ý Tưởng (thật và "mượn") |
-| 15 | `editor` | 🦉 Editor Cú Đêm | Dựng phim | Số Đêm Thức Trắng |
-| 16 | `designer` | 🎨 Designer | Thiết kế đồ họa | Số Lần Bị Sửa |
-| 17 | `sales` | 📈 Sales Nói Phét | Kinh doanh, tìm nhà tài trợ | KPI Trên Giấy |
-| 18 | `chi_dai` | 🦁 Chị Đại | Trưởng nhóm Tổ chức Sự kiện | Uy Lực |
-| 19 | `dan_dau_tu` | 📉 Dân Đầu Tư | Chuyên viên Phân tích Số liệu | Tài Khoản Đầu Tư |
-| 20 | `thanh_xin_nghi` | 🤒 Thánh Xin Nghỉ | Điều phối Lịch trình Nghệ sĩ | Số Ngày Phép (âm) |
-| 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | Bảo vệ | Bí Mật Biết Được |
-| 22 | `sieu_nhan_hong` | 🩷 Siêu Nhân Hồng | Đối tác chiến lược (không phải nhân viên) | Độ Nổi Tiếng Showbiz |
-| 23 | `cho` | 🐕 Chó Công Ty | Chó (ở với Bác Bảo Vệ) | Độ Được Cưng, Mũi Thính |
+| # | Mã | Role | Tên mặc định | Giới tính | Chức danh thật ở công ty | Chỉ số riêng |
+|---|---|---|---|---|---|---|
+| 1 | `ran_doc` | 🐍 Rắn Độc | **Hiếu** | Nam | Chuyên viên Truyền thông nội bộ | Độ Độc, Độ Nghi Ngờ |
+| 2 | `giam_doc` | 👔 Giám Đốc | **Thắng** | Nam | Giám đốc điều hành | Ngân Sách, Uy Quyền |
+| 3 | `truong_phong` | 📅 Trưởng Phòng Họp | **Nhật** | Nam | Trưởng phòng Sản xuất Nội dung | Số Cuộc Họp |
+| 4 | `thanh_ninh` | 🙇 Thánh Nịnh | **Nhi** | Nữ | Trợ lý Giám đốc | Điểm Nịnh |
+| 5 | `hong_hot` | 👀 Thánh Hóng | **Ngân** | Nữ | Chuyên viên Mạng xã hội (admin fanpage) | Kho Tin Mật |
+| 6 | `con_ong_chau_cha` | 👑 Con Ông Cháu Cha | **Long** | Nam | Phó phòng Marketing | Ô Dù |
+| 7 | `chua_te_deadline` | ⏰ Chúa Tể Deadline | **Vũ** | Nam | Điều phối Dự án (Producer) | Độ Nước Tới Chân |
+| 8 | `thuc_tap_sinh` | 🐣 Thực Tập Sinh | **Duy** | Nam | Thực tập sinh Sản xuất | Độ Ngơ, Kinh Nghiệm |
+| 9 | `ke_toan` | 💰 Kế Toán | **Thương** | Nữ | Kế toán trưởng | Quỹ Công Ty |
+| 10 | `hr` | ☕ HR | **Tuấn** | Nam | Chuyên viên Nhân sự | Danh Sách Đen |
+| 11 | `it` | 🔌 IT | **Bảo** | Nam | Kỹ thuật IT kiêm âm thanh ánh sáng | Quyền Truy Cập |
+| 12 | `idol_het_thoi` | 🎤 Idol Hết Thời | **Phát** | Nam | Ca sĩ độc quyền của công ty | Độ Nổi Tiếng (đang tụt) |
+| 13 | `quan_ly_idol` | 📞 Quản Lý Idol | **Thái** | Nam | Quản lý nghệ sĩ | Khủng Hoảng Đang Xử Lý |
+| 14 | `bien_kich` | ✍️ Biên Kịch | **Oánh** | Nữ | Biên kịch | Ý Tưởng (thật và "mượn") |
+| 15 | `editor` | 🦉 Editor Cú Đêm | **Lĩnh** | Nam | Dựng phim | Số Đêm Thức Trắng |
+| 16 | `designer` | 🎨 Designer | **Quỳnh** | Nữ | Thiết kế đồ họa | Số Lần Bị Sửa |
+| 17 | `sales` | 📈 Sales Nói Phét | **Huyển** | Nữ | Kinh doanh, tìm nhà tài trợ | KPI Trên Giấy |
+| 18 | `chi_dai` | 🦁 Chị Đại | **Hương** | Nữ | Trưởng nhóm Tổ chức Sự kiện | Uy Lực |
+| 19 | `dan_dau_tu` | 📉 Dân Đầu Tư | **Chương** | Nam | Chuyên viên Phân tích Số liệu | Tài Khoản Đầu Tư |
+| 20 | `thanh_xin_nghi` | 🤒 Thánh Xin Nghỉ | **Sơn** | Nam | Điều phối Lịch trình Nghệ sĩ | Số Ngày Phép (âm) |
+| 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | **Bình** | Nam | Bảo vệ | Bí Mật Biết Được |
+| 22 | `sieu_nhan_hong` | 🩷 Siêu Nhân Hồng | **Nguyên** | Nam | Đối tác chiến lược (không phải nhân viên) | Độ Nổi Tiếng Showbiz |
+| 23 | `cho` | 🐕 Chó Công Ty | **Tuất** | Chó đực | Chó (ở với Bác Bảo Vệ) | Độ Được Cưng, Mũi Thính |
 
-Nhân viên công ty là role 1 đến 21 (người chơi mặc định là nhân viên thứ 21). Siêu Nhân Hồng là khách bên ngoài, Chó Công Ty là… chó.
+Nhân viên công ty là role 1 đến 21 (người chơi mặc định là nhân viên thứ 21, Rắn Độc tên Hiếu). Siêu Nhân Hồng là khách bên ngoài, Chó Công Ty là… chó.
 
 ---
 
@@ -41,7 +41,7 @@ Mỗi role gồm: công việc hằng ngày, tính cách, cách nói chuyện, c
 
 ---
 
-### 1. 🐍 Rắn Độc
+### 1. 🐍 Rắn Độc: Hiếu
 Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 - **Công việc:** viết bản tin nội bộ hằng tuần, quản lý group Zalo công ty, tổ chức sinh nhật nhân viên. Nghề này cho phép biết chuyện của tất cả mọi người.
@@ -51,7 +51,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 2. 👔 Giám Đốc
+### 2. 👔 Giám Đốc: Thắng
 - **Công việc:** ký duyệt, họp với đối tác, phát biểu đầu tuần, nhắn tin cho nhân viên lúc 11 giờ đêm.
 - **Tính cách:** thích nói về "văn hóa doanh nghiệp", "công ty là gia đình", nhưng không tăng lương. Mê golf và mê được khen.
 - **Cách nói:** dùng nhiều từ tiếng Anh sai chỗ ("Em check lại cái mindset giúp anh"), nói dài, hay kể chuyện hồi khởi nghiệp.
@@ -65,7 +65,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 3. 📅 Trưởng Phòng Họp
+### 3. 📅 Trưởng Phòng Họp: Nhật
 - **Công việc:** quản lý đội sản xuất video, MV, gameshow. Nhưng phần lớn thời gian là **họp**.
 - **Tính cách:** tin rằng mọi vấn đề đều giải quyết được bằng một cuộc họp. Lịch kín từ 8 giờ sáng.
 - **Cách nói:** "Mình sync nhanh 5 phút nha" (kéo dài 2 tiếng), "Cái này mình take note lại, họp tiếp sau".
@@ -79,9 +79,9 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 4. 🙇 Thánh Nịnh
+### 4. 🙇 Thánh Nịnh: Nhi
 - **Công việc:** trợ lý giám đốc. Sắp lịch, pha trà, viết bài phát biểu, đặt sân golf.
-- **Tính cách:** nịnh trên đạp dưới. Với sếp thì "dạ dạ", với nhân viên thì "em nói anh nghe nè".
+- **Tính cách:** nịnh trên đạp dưới. Với sếp thì "dạ dạ", với nhân viên thì "chị nói em nghe nè".
 - **Cách nói:** khen sếp bất kể sếp làm gì. Sếp hắt hơi cũng khen "hắt hơi có tâm".
 - **Câu cửa miệng:** *"Anh nói chuẩn quá anh ơi!"*
 - **Bí mật:** đọc trộm được email của giám đốc. Đang âm thầm xin việc ở công ty đối thủ.
@@ -93,13 +93,13 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 5. 👀 Thánh Hóng
+### 5. 👀 Thánh Hóng: Ngân
 - **Công việc:** quản lý fanpage, TikTok, đăng bài truyền thông. Nhờ vậy theo dõi mọi drama showbiz **và** drama công ty.
 - **Tính cách:** cái gì cũng biết, chuyện gì cũng hóng. Không ác, chỉ là không giữ được miệng.
 - **Cách nói:** nói nhanh, nhiều meme, "Ét o ét!", "Biến căng rồi mấy bà ơi!", "Ối dồi ôi!".
 - **Câu cửa miệng:** *"Nghe gì chưa?"*
 - **Bí mật:** là admin của trang "Confession G-Entertainment" ẩn danh.
-- **Quan hệ:** nguồn tin lớn nhất của Rắn Độc, nhưng cũng là mối nguy lớn nhất (vì kể lại hết). Bạn thân của Designer.
+- **Quan hệ:** nguồn tin lớn nhất của Rắn Độc, nhưng cũng là mối nguy lớn nhất (vì kể lại hết). Bạn thân của Designer. Yêu thầm IT, người duy nhất biết bí mật trang Confession của mình.
 - **Ý tưởng truyện:**
   - Trang Confession đăng bài bóc phốt giám đốc, cả công ty truy tìm admin.
   - Hóng chuyện người khác quá nhiều, ai ngờ chính mình thành nhân vật chính của drama.
@@ -107,21 +107,21 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 6. 👑 Con Ông Cháu Cha
+### 6. 👑 Con Ông Cháu Cha: Long
 - **Công việc:** phó phòng Marketing (trên giấy). Thực tế: đi muộn, về sớm, đăng story check-in quán cà phê.
 - **Tính cách:** không ác, chỉ là sống trên mây. Không hiểu tại sao người khác phải lo tiền nhà.
 - **Cách nói:** "Ủa sao không mua cái mới luôn?", "Bố anh nói…", "Chill đi".
 - **Câu cửa miệng:** *"Để anh gọi chú anh."*
 - **Bí mật:** thật ra muốn tự lập, chán làm "cháu giám đốc". Có năng khiếu làm nhạc nhưng không dám nói.
-- **Quan hệ:** cháu ruột giám đốc. Bị Trưởng Phòng Họp ghét. Thực Tập Sinh crush. Idol Hết Thời muốn lợi dụng.
+- **Quan hệ:** cháu ruột giám đốc. Bị Trưởng Phòng Họp ghét. Được Thực Tập Sinh coi như thần tượng. Thầm thích Designer. Idol Hết Thời muốn lợi dụng.
 - **Ý tưởng truyện:**
   - Bị chú ép đi học "khóa quản lý" và phải làm việc thật một tuần.
-  - Yêu Thực Tập Sinh, gia đình phản đối kiểu phim Hàn.
+  - Yêu Designer, gia đình phản đối kiểu phim Hàn. Nhưng Editor cũng đang thầm thích Designer: tình tay ba.
   - Bí mật sáng tác bài hát cho Siêu Nhân Hồng, bài hát thành hit.
 
 ---
 
-### 7. ⏰ Chúa Tể Deadline
+### 7. ⏰ Chúa Tể Deadline: Vũ
 - **Công việc:** điều phối dự án: lên kế hoạch, giao việc, chạy tiến độ cho các MV, gameshow.
 - **Tính cách:** 29 ngày lướt TikTok, ngày thứ 30 làm việc của cả tháng trong một đêm, và kết quả vẫn ổn. Điều này làm mọi người tức điên.
 - **Cách nói:** "Còn sớm mà", "Chill, kịp hết", rồi tới phút cuối thì "ÉT O ÉT! AI CỨU TUI VỚI!".
@@ -135,13 +135,13 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 8. 🐣 Thực Tập Sinh
+### 8. 🐣 Thực Tập Sinh: Duy
 - **Công việc:** photo, pha cà phê, xếp ghế, cầm hắt sáng, và làm mọi việc người khác không muốn làm.
 - **Tính cách:** ngây thơ, nhiệt tình, ai nhờ gì cũng làm. Tin mọi lời Rắn Độc nói.
 - **Cách nói:** lễ phép quá mức, "Dạ em làm liền ạ!", "Dạ cái này là sao ạ?".
 - **Câu cửa miệng:** *"Dạ em mới vô nên chưa biết ạ."*
 - **Bí mật:** thật ra là con của một nhà đầu tư lớn, đi thực tập ẩn danh để "trải nghiệm đời". Hoặc không, tùy lần chơi.
-- **Quan hệ:** crush Con Ông Cháu Cha. Hay bị Chúa Tể Deadline đẩy việc. Được Chị Đại bảo kê.
+- **Quan hệ:** coi Con Ông Cháu Cha là thần tượng, bắt chước từ cách ăn mặc tới cách nói. Hay bị Chúa Tể Deadline đẩy việc. Được Chị Đại bảo kê.
 - **Ý tưởng truyện:**
   - Bị cả phòng sai vặt, rồi một ngày nổi loạn.
   - Thân phận thật bị lộ, cả công ty quay ngoắt sang nịnh.
@@ -149,13 +149,13 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 9. 💰 Kế Toán
+### 9. 💰 Kế Toán: Thương
 - **Công việc:** tính lương, duyệt chi, giữ hóa đơn, đối phó kiểm tra thuế.
 - **Tính cách:** keo kiệt với tiền công ty như tiền nhà mình. Đề xuất mua bút bi cũng phải có 3 chữ ký.
 - **Cách nói:** nói chậm, rõ ràng, hay hỏi "Hóa đơn đâu em?".
 - **Câu cửa miệng:** *"Không có hóa đơn là không có tiền."*
 - **Bí mật:** biết rõ công ty đang nợ. Tự giấu một "quỹ đen" để trả lương phòng khi công ty sập.
-- **Quan hệ:** đồng minh ngầm của giám đốc. Bị cả công ty ghét mỗi ngày 10 khi lương về trễ. Thân với Chị Đại.
+- **Quan hệ:** đồng minh ngầm của giám đốc. Bị cả công ty ghét mỗi ngày 10 khi lương về trễ. Thân với Chị Đại. Được HR yêu thầm (biết, nhưng giả vờ không biết).
 - **Ý tưởng truyện:**
   - Đợt kiểm tra thuế bất ngờ, cả công ty phải giả vờ làm việc chăm chỉ.
   - Quỹ đen bị lộ: là người hùng hay kẻ biển thủ?
@@ -163,41 +163,41 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 10. ☕ HR
+### 10. ☕ HR: Tuấn
 - **Công việc:** tuyển dụng, chấm công, xử lý kỷ luật, tổ chức team building, **mời đi "uống trà"**.
 - **Tính cách:** cười suốt, nhưng nụ cười làm người ta sợ. Ai được mời uống trà là biết sắp có chuyện.
-- **Cách nói:** ngôn ngữ nhân sự chuẩn mực: "Chị chỉ muốn lắng nghe em thôi", "Mình cùng nhìn lại hành trình nha em".
-- **Câu cửa miệng:** *"Em rảnh không, lên phòng chị uống trà xíu."*
-- **Bí mật:** có danh sách nhân viên bị cắt giảm cuối quý. Đang yêu thầm IT.
+- **Cách nói:** ngôn ngữ nhân sự chuẩn mực: "Anh chỉ muốn lắng nghe em thôi", "Mình cùng nhìn lại hành trình nha em".
+- **Câu cửa miệng:** *"Em rảnh không, lên phòng anh uống trà xíu."*
+- **Bí mật:** có danh sách nhân viên bị cắt giảm cuối quý. Đang yêu thầm Kế Toán.
 - **Quan hệ:** cánh tay của giám đốc. Đối thủ tự nhiên của Thánh Xin Nghỉ. Ai cũng sợ, trừ Chị Đại.
 - **Ý tưởng truyện:**
   - Danh sách cắt giảm bị rò rỉ, cả công ty hoảng loạn.
   - Tổ chức team building Vũng Tàu, mọi thứ đổ bể.
-  - Mối tình với IT: chủ động tỏ tình qua email "Thư mời làm việc".
+  - Mối tình với Kế Toán: tỏ tình qua email có tiêu đề "Thư mời làm việc". Kế Toán trả lời: "Hóa đơn đâu anh?"
 
 ---
 
-### 11. 🔌 IT
+### 11. 🔌 IT: Bảo
 - **Công việc:** sửa máy tính, sửa wifi, sửa máy in, set up âm thanh ánh sáng cho show.
 - **Tính cách:** ít nói, hướng nội, hay ăn mì ly trong phòng server. Biết mật khẩu và đọc được log của tất cả mọi người.
 - **Cách nói:** cụt lủn, "Restart chưa?", "Lỗi người dùng".
 - **Câu cửa miệng:** *"Anh tắt đi bật lại thử chưa?"*
 - **Bí mật:** có thể đọc tin nhắn công ty. Là người duy nhất biết ai là admin trang Confession.
-- **Quan hệ:** HR yêu thầm (IT không hay biết). Hay bị Chúa Tể Deadline nhờ cứu file. Bạn nhậu của Bác Bảo Vệ.
+- **Quan hệ:** Thánh Hóng yêu thầm (IT không hay biết). Hay bị Chúa Tể Deadline nhờ cứu file. Bạn nhậu của Bác Bảo Vệ.
 - **Ý tưởng truyện:**
   - Wifi sập ngày deadline, cả công ty đổ tội cho IT.
   - Vô tình đọc được một tin nhắn chấn động, phân vân có nên nói ra.
-  - Tình yêu chậm hiểu: không nhận ra HR thích mình dù đã được tỏ tình 3 lần.
+  - Tình yêu chậm hiểu: không nhận ra Thánh Hóng thích mình dù đã được tỏ tình 3 lần.
 
 ---
 
-### 12. 🎤 Idol Hết Thời
+### 12. 🎤 Idol Hết Thời: Phát
 - **Công việc:** ca sĩ độc quyền của công ty. Có đúng một bài hit năm 2015, giờ đi hát đám cưới và sự kiện khai trương.
 - **Tính cách:** vẫn sống như đang đỉnh cao: kính đen trong nhà, đòi phòng chờ riêng.
-- **Cách nói:** "Hồi chị còn nổi…", "Fan chị đông lắm em", nói chuyện như đang trả lời phỏng vấn.
-- **Câu cửa miệng:** *"Em biết chị là ai không?"*
+- **Cách nói:** "Hồi anh còn nổi…", "Fan anh đông lắm em", nói chuyện như đang trả lời phỏng vấn.
+- **Câu cửa miệng:** *"Em biết anh là ai không?"*
 - **Bí mật:** đang nợ tiền, thuê fan ảo. Ghét Siêu Nhân Hồng vì sợ bị thay thế.
-- **Quan hệ:** do Quản Lý Idol phụ trách. Kình địch Siêu Nhân Hồng. Từng hẹn hò với Giám Đốc (ngày xưa).
+- **Quan hệ:** do Quản Lý Idol phụ trách. Kình địch Siêu Nhân Hồng. Từng chung ban nhạc sinh viên với Giám Đốc, ngày xưa còn hát chính.
 - **Ý tưởng truyện:**
   - Âm mưu chơi xấu Siêu Nhân Hồng để giành lại hào quang.
   - Một video cũ bất ngờ viral, nổi lại sau 10 năm.
@@ -205,11 +205,11 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 13. 📞 Quản Lý Idol
+### 13. 📞 Quản Lý Idol: Thái
 - **Công việc:** quản lý lịch trình, hợp đồng, hình ảnh của Idol Hết Thời và Siêu Nhân Hồng. Xử lý khủng hoảng truyền thông.
 - **Tính cách:** lúc nào cũng cầm 2 điện thoại. Mắt thâm, cà phê không rời tay.
-- **Cách nói:** nói nhanh, nói qua điện thoại nhiều hơn nói trực tiếp. "Khoan, chị nghe máy chút".
-- **Câu cửa miệng:** *"Chuyện này để chị lo, đừng ai đăng gì hết!"*
+- **Cách nói:** nói nhanh, nói qua điện thoại nhiều hơn nói trực tiếp. "Khoan, anh nghe máy chút".
+- **Câu cửa miệng:** *"Chuyện này để anh lo, đừng ai đăng gì hết!"*
 - **Bí mật:** đang được công ty đối thủ chiêu mộ, kèm theo Siêu Nhân Hồng.
 - **Quan hệ:** kẹt giữa Idol Hết Thời và Siêu Nhân Hồng. Bạn thân của Thánh Xin Nghỉ.
 - **Ý tưởng truyện:**
@@ -219,7 +219,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 14. ✍️ Biên Kịch
+### 14. ✍️ Biên Kịch: Oánh
 - **Công việc:** viết kịch bản MV, gameshow, phim ngắn, và viết luôn bài phát biểu cho sếp khi Thánh Nịnh bận.
 - **Tính cách:** nghệ sĩ, hay bí ý tưởng, hay "tham khảo" ý tưởng của người khác.
 - **Cách nói:** văn vẻ, ẩn dụ, "Kịch bản này cần thêm nỗi đau".
@@ -233,7 +233,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 15. 🦉 Editor Cú Đêm
+### 15. 🦉 Editor Cú Đêm: Lĩnh
 - **Công việc:** dựng video, MV, phim. Làm việc chủ yếu ban đêm.
 - **Tính cách:** ban ngày như zombie, ban đêm tỉnh như sáo. Thật thà, ít nói, làm việc giỏi nhất công ty nhưng không ai biết.
 - **Cách nói:** ngáp giữa câu, "Đợi render xong…".
@@ -247,7 +247,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 16. 🎨 Designer
+### 16. 🎨 Designer: Quỳnh
 - **Công việc:** thiết kế poster, thumbnail, banner, logo.
 - **Tính cách:** mẫn cảm, có gu, bị khách và sếp sửa thiết kế tới mức mất niềm tin vào cuộc sống.
 - **Cách nói:** "Cho xin feedback cụ thể được không ạ?", "Font này mà anh nói xấu hả?".
@@ -261,11 +261,11 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 17. 📈 Sales Nói Phét
+### 17. 📈 Sales Nói Phét: Huyển
 - **Công việc:** tìm nhà tài trợ, bán gói quảng cáo, đi tiếp khách.
 - **Tính cách:** nói phét như thật, tự tin tuyệt đối. Báo cáo KPI 300% trên giấy, thực tế 30%.
-- **Cách nói:** "Anh quen hết mà", "Deal này chắc chắn 100%", "Để tối nay anh nhậu với bên đó".
-- **Câu cửa miệng:** *"Tin anh đi, deal này chắc kèo!"*
+- **Cách nói:** "Chị quen hết mà", "Deal này chắc chắn 100%", "Để tối nay chị nhậu với bên đó".
+- **Câu cửa miệng:** *"Tin chị đi, deal này chắc kèo!"*
 - **Bí mật:** có hợp đồng lớn đang ký là giả, nhà tài trợ không tồn tại.
 - **Quan hệ:** hay đi nhậu với Giám Đốc. Kình địch của Kế Toán (vì toàn xin tạm ứng không có hóa đơn).
 - **Ý tưởng truyện:**
@@ -275,7 +275,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 18. 🦁 Chị Đại
+### 18. 🦁 Chị Đại: Hương
 - **Công việc:** trưởng nhóm tổ chức sự kiện: lên kế hoạch show, liên hoan, team building.
 - **Tính cách:** mẹ bỉm sữa 2 con, nói một là một. Không sợ ai, kể cả giám đốc. Thương nhân viên mới.
 - **Cách nói:** thẳng, gắt, nhưng thương. "Ăn cơm chưa? Ngồi xuống chị kể cho nghe".
@@ -289,7 +289,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 19. 📉 Dân Đầu Tư
+### 19. 📉 Dân Đầu Tư: Chương
 - **Công việc:** phân tích số liệu (lượt xem, doanh thu quảng cáo). Thực tế là mở chart coin và chứng khoán cả ngày.
 - **Tính cách:** lạc quan vô đối. Lúc nào cũng sắp giàu. Lúc nào cũng "đu đỉnh".
 - **Cách nói:** "Sắp x10 rồi", "Đây là đáy, đáy thật rồi", "Cắt lỗ là thua".
@@ -303,7 +303,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 20. 🤒 Thánh Xin Nghỉ
+### 20. 🤒 Thánh Xin Nghỉ: Sơn
 - **Công việc:** điều phối lịch trình cho nghệ sĩ và đội quay. Nếu có mặt ở công ty.
 - **Tính cách:** sáng tạo vô hạn trong việc xin nghỉ. Bà ngoại đã "ốm nặng" 7 lần trong năm.
 - **Cách nói:** giọng yếu ớt qua điện thoại, "Em hơi sốt…", "Nhà em có việc đột xuất ạ".
@@ -317,7 +317,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 21. 🛡️ Bác Bảo Vệ
+### 21. 🛡️ Bác Bảo Vệ: Bình
 - **Công việc:** trông xe, mở cổng, trực đêm. Nuôi Chó Công Ty.
 - **Tính cách:** ít nói, hiền, uống trà đá cả ngày. Thấy hết mọi chuyện nhưng không bao giờ nói.
 - **Cách nói:** chậm rãi, ngắn gọn, thâm thúy. "Ừ…", "Chuyện người ta, bác không biết".
@@ -331,7 +331,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 22. 🩷 Siêu Nhân Hồng
+### 22. 🩷 Siêu Nhân Hồng: Nguyên
 - **Vai trò:** **không phải nhân viên**. Là đối tác chiến lược của công ty, một "nghệ sĩ" mặc bộ đồ siêu nhân hồng 24/7 và không bao giờ tháo mũ.
 - **Nhiệm vụ của công ty:** **buff cho Siêu Nhân Hồng nổi tiếng trong showbiz Việt.** Nếu thành công, công ty thoát nợ.
 - **Tính cách:** tự tin, hay tạo dáng, nói chuyện như đang đóng phim siêu nhân. Thật ra rất cô đơn và tốt bụng.
@@ -347,7 +347,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ---
 
-### 23. 🐕 Chó Công Ty
+### 23. 🐕 Chó Công Ty: Tuất
 - **Vai trò:** chó của Bác Bảo Vệ, sống ở chòi bảo vệ tầng trệt. Linh vật không chính thức của công ty.
 - **Tính cách:** thân thiện với tất cả, trừ shipper. Mê xúc xích. Biết hết bí mật vì được đi khắp nơi và không ai đề phòng chó.
 - **Cách nói:** chỉ nói "Gâu", "Gâu gâu", "Ẳng!", "Grừ…". Mỗi kiểu kèm biểu cảm khác nhau.

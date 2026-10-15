@@ -34,11 +34,12 @@ Tiếng Việt xưng hô theo giới tính và tuổi, nên mỗi nhân vật (k
 | Biến | Ví dụ kết quả |
 |---|---|
 | `{anh_chi}` | anh / chị (người chơi) |
+| `{ong_ba}` | ông / bà (người chơi, cách bạn bè gọi nhau thân mật) |
 | `{anh_chi_cua(ke_toan)}` | anh / chị (theo giới tính của Kế Toán) |
 | `{ong_ba_cua(hong_hot)}` | ông / bà (cách bạn bè gọi nhau thân mật) |
 | `{ong_ay_cua(truong_phong)}` | ổng / bả (ngôi thứ ba) |
 
-> Giới tính của NPC sẽ chốt theo danh sách tên mặc định. Một vài đoạn thoại mẫu trong tài liệu đang viết tạm theo một giới tính và sẽ được sửa lại khi có danh sách tên.
+> Giới tính của từng role đã chốt trong [roles/README.md](roles/README.md) và không đổi được. Người chơi chỉ đổi tên. Dù vậy vẫn nên dùng biến xưng hô, để thoại dùng lại được ở nhiều chỗ.
 
 ---
 
@@ -57,7 +58,7 @@ Truyện được viết bằng **Ink**, một ngôn ngữ chuyên cho truyện 
     {hong_hot}: Trời đất! Để tui kể mấy đứa bên kia nghe!
 * [😇 Thôi, chắc sếp cũng áp lực.]
     ~ tin_tuong += 5
-    {hong_hot}: Ờ… bà hiền quá à.
+    {hong_hot}: Ờ… {ong_ba} hiền quá à.
 * {biet("clone_cua_sep")} [🔒 Có người trong group là clone của sếp đó.]
     -> truy_tim_clone
 - -> END

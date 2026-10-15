@@ -109,7 +109,7 @@ Ngoài mặt, Rắn Độc là người dễ thương nhất phòng: nhớ sinh 
 
 ### Mẫu 3: Thực Tập Sinh ngây thơ
 
-> `{anh_chi}` là cách xưng hô tự đổi theo giới tính người chơi chọn (anh / chị).
+> `{anh_chi}` là cách xưng hô tự đổi theo giới tính của role người chơi đang điều khiển (anh / chị). Rắn Độc mặc định là Hiếu (nam) nên hiện thành "anh".
 
 > **{thuc_tap_sinh}:** Dạ {anh_chi} ơi, em mới vô nên chưa biết. Anh {truong_phong} có khó tính không ạ?
 >
