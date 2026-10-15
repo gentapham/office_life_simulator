@@ -1,6 +1,7 @@
 // Bản đọc thử: chơi toàn bộ thoại Ink theo từng ngày của tháng 10/2026.
 import { Story } from "inkjs/dist/ink-es6.js";
 import { NHAN_VAT, THEO_MA, thuCuaNgay, SU_KIEN_NGAY } from "./nhan-vat.js";
+import { DIA_DIEM } from "./dia-diem.js";
 
 const app = document.getElementById("app");
 const SAVE_KEY = "owfad_doc_thu_v1";
@@ -11,6 +12,8 @@ let TEN_PHU = null;       // public/story/ten-nguoi-noi.json
 const JSON_CACHE = {};    // mã -> json truyện đã tải
 
 // ---------- Tiện ích ----------
+// Giao diện không dùng emoji: lọc hết emoji trong chữ hiển thị (kể cả trong thoại Ink)
+const boEmoji = s => String(s).replace(/[\p{Extended_Pictographic}\u{FE0F}\u{200D}\u{20E3}\u{1F3FB}-\u{1F3FF}]/gu, "").replace(/ {2,}/g, " ").replace(/^\s+/, "");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const h = (tag, attrs = {}, ...kids) => {
   const el = document.createElement(tag);
@@ -20,14 +23,14 @@ const h = (tag, attrs = {}, ...kids) => {
     else if (k === "html") el.innerHTML = v;
     else if (v !== false && v != null) el.setAttribute(k, v === true ? "" : v);
   }
-  for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid instanceof Node ? kid : document.createTextNode(kid));
+  for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid instanceof Node ? kid : document.createTextNode(boEmoji(kid)));
   return el;
 };
 const vnd = n => (Math.round(Number(n) || 0)).toLocaleString("vi-VN") + "đ";
 const so = n => (Math.round(Number(n) || 0)).toLocaleString("vi-VN");
 const tag = (tags, key) => { const t = (tags || []).find(t => t === key || t.startsWith(key + ":")); return t == null ? null : (t.includes(":") ? t.slice(key.length + 1).trim() : true); };
 const gioSo = g => { if (!g) return 9999; const m = String(g).match(/(\d{1,2}):(\d{2})/); return m ? (+m[1]) * 60 + (+m[2]) : 9999; };
-const prettyNoi = s => s ? s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase()) : "";
+const prettyNoi = s => s ? (DIA_DIEM[s] || s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase())) : "";
 const saveLoad = () => { try { return JSON.parse(localStorage.getItem(SAVE_KEY) || "null"); } catch { return null; } };
 const saveWrite = v => { try { v ? localStorage.setItem(SAVE_KEY, JSON.stringify(v)) : localStorage.removeItem(SAVE_KEY); } catch {} };
 
@@ -91,16 +94,16 @@ function renderHome() {
         h("span", { class: "note16" }, h("b", {}, "16+"), "Có nhậu, đánh ghen, nợ nần và ngôn ngữ văn phòng."),
       ),
       save ? h("div", { class: "resume" },
-        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma]?.icon || ""} ${THEO_MA[save.ma]?.ten || save.ma}, ngày ${save.ngay}/10.`),
+        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma] ? THEO_MA[save.ma].vai + " (" + THEO_MA[save.ma].ten + ")" : save.ma}, ngày ${save.ngay}/10.`),
         h("span", { class: "top-actions" },
           h("button", { class: "btn primary", onclick: () => openRole(save.ma, { tiepTuc: true }) }, "Chơi tiếp"),
           h("button", { class: "btn ghost", onclick: () => { saveWrite(null); renderHome(); } }, "Xóa bản lưu"),
         )) : null,
       h("div", { class: "grid" },
         NHAN_VAT.map(n => h("button", { class: "card", onclick: () => openRole(n.ma) },
-          h("span", { class: "ic" }, n.icon), h("span", { class: "rl" }, n.vai), h("span", { class: "nm" }, n.ten), h("span", { class: "jb" }, n.chuc))),
+          h("span", { class: "rl" }, n.vai), h("span", { class: "nm" }, n.ten), h("span", { class: "jb" }, n.chuc))),
         h("button", { class: "card special", onclick: () => openChung() },
-          h("span", { class: "ic" }, "🎲"), h("span", { class: "rl" }, "Nội dung chung"), h("span", { class: "nm" }, "Sự kiện, tin đồn"), h("span", { class: "jb" }, "Mở đầu, nói vu vơ, Đêm Hồng")),
+          h("span", { class: "rl" }, "Nội dung chung"), h("span", { class: "nm" }, "Sự kiện, tin đồn"), h("span", { class: "jb" }, "Mở đầu, nói vu vơ, Đêm Hồng")),
       ),
       h("p", { class: "footer" }, "Lưu tự động trên trình duyệt này. Bản đọc thử dùng để duyệt nội dung, chỉ số và minigame được giả lập đơn giản."),
     ),
@@ -204,7 +207,7 @@ function renderRole(tab) {
   app.replaceChildren(
     h("div", { class: "wrap" },
       h("header", { class: "top" },
-        h("div", { class: "role-head" }, h("span", { class: "ic" }, n.icon), h("div", {}, h("h2", {}, `${n.vai}: ${n.ten}`), h("p", {}, n.chuc))),
+        h("div", { class: "role-head" }, h("div", {}, h("h2", {}, `${n.vai}: ${n.ten}`), h("p", {}, n.chuc))),
         h("div", { class: "top-actions" },
           h("div", { class: "tabs", role: "tablist" }, tabs.map(([id, label]) =>
             h("button", { class: "btn", role: "tab", "aria-selected": String(tab === id || (tab === "gioi_thieu" && id === "choi")), onclick: () => renderRole(id) }, label))),
@@ -263,9 +266,11 @@ function updateSide() {
   const v = n => Number(L.v(n)) || 0;
   const bar = (label, val, max = 100, cls = "") => h("div", { class: "stat" }, h("span", {}, label), h("span", {}, so(val)), h("div", { class: "bar " + cls }, h("i", { style: `width:${Math.max(0, Math.min(100, val / max * 100))}%` })));
   const theoDoi = v("nguoi_theo_doi");
-  const roleNum = L.roleVars.filter(x => /^-?\d+$/.test(x.init)).slice(0, 10);
+  // chỉ hiện chỉ số có chú thích (biến nội bộ không chú thích thì ẩn); chú thích bỏ phần giải thích sau dấu ":" hoặc "("
+  const roleNum = L.roleVars.filter(x => /^-?\d+$/.test(x.init) && x.note && !/^-/.test(x.note)).slice(0, 10)
+    .map(x => ({ ...x, nhan: boEmoji(x.note).split(/[:(.]/)[0].trim().replace(/^./, c => c.toUpperCase()) }));
   const qh = NHAN_VAT.filter(n => n.ma !== L.ma).map(n => [n, v("qh_" + n.ma)]).filter(([, x]) => x !== 0).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 8);
-  UI.side.replaceChildren(
+  UI.side.replaceChildren(...[
     h("div", { class: "panel" }, h("h3", {}, "Siêu Nhân Hồng"),
       bar(`Người theo dõi (mục tiêu ${so(MUC_TIEU)})`, theoDoi, MUC_TIEU, "pink"),
       h("div", { class: "kv" }, h("span", {}, "Tinh thần công ty"), h("span", {}, so(v("tinh_than_cong_ty"))), h("span", {}, "Scandal"), h("span", {}, so(v("so_scandal"))))),
@@ -273,13 +278,13 @@ function updateSide() {
       h("div", { class: "kv" }, h("span", {}, "Tiền"), h("span", {}, vnd(v("tien"))), h("span", {}, "Uy tín"), h("span", {}, so(v("uy_tin")))),
       bar("No", v("no")), bar("Khát", v("khat")), bar("Năng lượng", v("nang_luong")), bar("Stress", v("stress"), 100, "bad")),
     roleNum.length ? h("div", { class: "panel" }, h("h3", {}, "Chỉ số riêng"),
-      h("div", { class: "kv" }, roleNum.flatMap(x => [h("span", { title: x.note }, x.note || x.name), h("span", {}, String(L.v(x.name)))]))) : null,
+      h("div", { class: "kv" }, roleNum.flatMap(x => [h("span", { title: x.note }, x.nhan || x.name), h("span", {}, String(L.v(x.name)))]))) : null,
     qh.length ? h("div", { class: "panel" }, h("h3", {}, "Quan hệ"),
-      h("div", { class: "kv" }, qh.flatMap(([n, x]) => [h("span", {}, `${n.icon} ${L.v(n.ma) || n.ten}`), h("span", { style: `color:var(${x > 0 ? "--good" : "--bad"})` }, (x > 0 ? "+" : "") + x)]))) : null,
+      h("div", { class: "kv" }, qh.flatMap(([n, x]) => [h("span", {}, `${L.v(n.ma) || n.ten}`), h("span", { style: `color:var(${x > 0 ? "--good" : "--bad"})` }, (x > 0 ? "+" : "") + x)]))) : null,
     h("div", { class: "panel" },
       h("label", { class: "hint" }, h("input", { type: "checkbox", checked: L.dichTiengNguoi, onchange: e => { L.dichTiengNguoi = e.target.checked; } }), " Hiện phụ đề (dịch tiếng người, khi chơi Tuất)"),
       h("button", { class: "btn ghost", onclick: () => { saveWrite(null); openRole(L.ma); } }, "Chơi lại từ đầu")),
-  );
+  ].filter(Boolean));
 }
 
 function scrollLog() { UI.log.scrollTop = UI.log.scrollHeight; }
@@ -295,16 +300,16 @@ function renderLine(text, tags, story, playerCode) {
     const m = t.match(/^([a-z][a-z0-9_]*):\s?(.*)$/);
     const who = m ? tenNguoiNoi(m[1], story) : null;
     if (m && who) {
-      const say = esc(m[2]).replace(/\*\(([^)]*)\)\*/g, '<span class="act">($1)</span>');
+      const say = esc(boEmoji(m[2])).replace(/\*\(([^)]*)\)\*/g, '<span class="act">($1)</span>');
       const el = h("div", { class: "line" + (m[1] === playerCode ? " me" : "") },
-        h("span", { class: "who" }, `${who.icon} ${who.ten}`),
+        h("span", { class: "who" }, who.ten),
         h("div", { class: "say", html: say }));
-      if (phuDe && phuDe !== true && L?.dichTiengNguoi !== false) el.append(h("div", { class: "sub" }, "🗣️ " + phuDe));
+      if (phuDe && phuDe !== true && L?.dichTiengNguoi !== false) el.append(h("div", { class: "sub" }, "Phụ đề: " + phuDe));
       UI.log.append(el);
     } else {
       const el = h("p", { class: "narr", html: esc(t).replace(/\*\(([^)]*)\)\*/g, "($1)") });
       el.style.fontStyle = "normal";
-      if (phuDe && phuDe !== true && L?.dichTiengNguoi !== false) el.append(h("div", { class: "sub" }, "🗣️ " + phuDe));
+      if (phuDe && phuDe !== true && L?.dichTiengNguoi !== false) el.append(h("div", { class: "sub" }, "Phụ đề: " + phuDe));
       UI.log.append(el);
     }
   }
@@ -396,9 +401,9 @@ function afterScene(visited = new Set()) {
   saveWrite(L.toSave());
   if (mg) {
     UI.choices.replaceChildren(
-      h("p", { class: "hint" }, "🎮 Minigame (bản đọc thử chưa có minigame thật). Chọn kết quả:"),
+      h("p", { class: "hint" }, "Minigame: bản đọc thử chưa có phần chơi thật. Hãy chọn kết quả để đọc tiếp."),
       mg.ra.map(n => h("button", { class: "choice", onclick: () => playKnot(n, v => afterScene(v)) },
-        (/_(thua|that_bai|truot)$/.test(n) ? "😢 " : "🎉 ") + n.slice(mg.base.length + 1).replace(/_/g, " "))),
+        (/_(thua|that_bai|truot)$/.test(n) ? "Thua: " : "Thắng: ") + n.slice(mg.base.length + 1).replace(/_/g, " "))),
       h("button", { class: "choice", onclick: () => nextScene() }, "Bỏ qua minigame"),
     );
     return;
@@ -412,13 +417,13 @@ function dayEnd() {
   UI.choices.replaceChildren(
     h("p", { class: "hint" }, `Hết các cảnh chính của ngày ${L.ngay}/10.`),
     npcs.length ? h("details", {},
-      h("summary", {}, "💬 Nói chuyện thêm với đồng nghiệp"),
+      h("summary", {}, "Nói chuyện thêm với đồng nghiệp"),
       h("div", { class: "klist" }, npcs.map(k => {
         const ma = tag(k.tags, "npc"); const n = THEO_MA[ma];
-        return h("button", { class: "btn", onclick: () => { L.npcDone.add(k.name); addSys(`Nói chuyện với ${n?.icon || ""} ${L.v(ma) || n?.ten || ma}`); playKnot(k.name, v => { afterScene(v); UI.choices.replaceChildren(h("button", { class: "choice", onclick: dayEnd }, "Xong ▸")); }); } },
-          `${n?.icon || "💬"} ${L.v(ma) || n?.ten || ma}`);
+        return h("button", { class: "btn", onclick: () => { L.npcDone.add(k.name); addSys(`Nói chuyện với ${L.v(ma) || n?.ten || ma}`); playKnot(k.name, v => { afterScene(v); UI.choices.replaceChildren(h("button", { class: "choice", onclick: dayEnd }, "Xong ▸")); }); } },
+          `${L.v(ma) || n?.ten || ma}`);
       }))) : null,
-    h("button", { class: "choice", onclick: () => { const g = L.batDauNgay(L.ngay + 1); addSys(`🌙 Đi ngủ. Sáng ${thuCuaNgay(L.ngay)}, ${L.ngay}/10`); g.forEach(x => addSys(x)); updateSide(); nextScene(); } }, `😴 Đi ngủ, sang ngày ${L.ngay + 1}/10 ▸`),
+    h("button", { class: "choice", onclick: () => { const g = L.batDauNgay(L.ngay + 1); addSys(`Đi ngủ. Sáng ${thuCuaNgay(L.ngay)}, ${L.ngay}/10`); g.forEach(x => addSys(x)); updateSide(); nextScene(); } }, `Đi ngủ, sang ngày ${L.ngay + 1}/10 ▸`),
   );
 }
 
@@ -440,12 +445,12 @@ async function finale() {
   runStory(chung, L.ma, () => {
     dongBo(chung, L.story);
     UI.choices.replaceChildren(h("button", { class: "choice", onclick: () => {
-      addSys("⭐ Kết thúc của bạn");
+      addSys("Kết thúc của bạn");
       L.story.ChoosePathString(`${L.ma}_3010_danh_gia`);
       runStory(L.story, L.ma, () => {
         dongBo(L.story, chung);
         UI.choices.replaceChildren(h("button", { class: "choice", onclick: () => {
-          addSys("🩷 Kết thúc sự nghiệp của Siêu Nhân Hồng");
+          addSys("Kết thúc sự nghiệp của Siêu Nhân Hồng");
           chung.ChoosePathString("chung_3110_ket_thuc_su_nghiep");
           runStory(chung, L.ma, () => {
             UI.choices.replaceChildren(h("button", { class: "choice", onclick: () => {
@@ -520,12 +525,12 @@ function renderBrowser(body, ma = L.ma, knots = META.roles[ma].knots) {
   };
   const nhan = k => { const kt = k.name.match(/_kt_(\w+)$/); if (kt) return tenKetThuc(kt[1]);
     const td = k.name.match(/_tudo_(\w+)$/); const nv = td && THEO_MA[td[1]];
-    return nv ? `💬 ${nv.ten} (${nv.vai})` : null; };
+    return nv ? `Nói chuyện: ${nv.ten} (${nv.vai})` : null; };
   const list = arr => h("div", { class: "klist" }, arr.map(k => h("button", { class: "btn", onclick: () => play(k) }, nhan(k) || k.name.replace(/^[a-z]+(_[a-z]+)*?_(?=\d{4}|tudo|mg|kt|nn|td|nc|mo|0110|3110|3010)/, "").replace(/_/g, " ") || k.name)));
   const days = Object.keys(groups["Theo ngày"]).sort((a, b) => a - b);
   body.append(h("div", { class: "browser" },
     h("p", { class: "hint" }, "Bấm một cảnh để đọc riêng (mỗi cảnh chạy với chỉ số mặc định, không ảnh hưởng lượt chơi chính)."),
-    days.length ? h("details", { open: true }, h("summary", {}, `📅 Theo ngày (${days.length} ngày)`),
+    days.length ? h("details", { open: true }, h("summary", {}, `Theo ngày (${days.length} ngày)`),
       days.map(d => h("div", {}, h("p", { class: "hint" }, `${thuCuaNgay(+d)}, ${d}/10${SU_KIEN_NGAY[d] ? " · " + SU_KIEN_NGAY[d] : ""}`), list(groups["Theo ngày"][d])))) : null,
     ["Nói chuyện với đồng nghiệp", "Minigame", "Kết thúc", "Khác"].filter(g => groups[g].length).map(g =>
       h("details", {}, h("summary", {}, `${g} (${groups[g].length})`), list(groups[g]))),
@@ -542,7 +547,7 @@ async function openChung() {
   const nhom = { "Mở đầu & hướng dẫn": k => /mo_dau|0110_huong_dan/.test(k), "Sự kiện ngẫu nhiên": k => /_nn_/.test(k), "Tin đồn": k => /_td_/.test(k), "Nói vu vơ": k => /_nc_/.test(k), "Đêm Hồng & kết thúc": k => /3110|_kt_/.test(k) };
   app.replaceChildren(h("div", { class: "wrap" },
     h("header", { class: "top" },
-      h("div", { class: "role-head" }, h("span", { class: "ic" }, "🎲"), h("div", {}, h("h2", {}, "Nội dung chung"), h("p", {}, "Dùng cho mọi nhân vật. Đọc với vai mặc định là Hiếu."))),
+      h("div", { class: "role-head" }, h("div", {}, h("h2", {}, "Nội dung chung"), h("p", {}, "Dùng cho mọi nhân vật. Đọc với vai mặc định là Hiếu."))),
       h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật")),
     body));
   const viewer = h("section", { class: "stage" });

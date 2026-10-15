@@ -48,7 +48,7 @@ for (const code of roots) {
   let roleVars = [];
   const bien = path.join(SRC, code, "bien.ink");
   if (fs.existsSync(bien)) {
-    roleVars = [...fs.readFileSync(bien, "utf8").matchAll(/^VAR\s+([a-z0-9_]+)\s*=\s*(.+?)\s*(?:\/\/\s*(.*))?$/gm)]
+    roleVars = [...fs.readFileSync(bien, "utf8").matchAll(/^VAR[ \t]+([a-z0-9_]+)[ \t]*=[ \t]*(.+?)[ \t]*(?:\/\/[ \t]*(.*))?$/gm)]
       .map(m => ({ name: m[1], init: m[2], note: (m[3] || "").trim() }));
   }
   meta.roles[code] = { knots, roleVars };
