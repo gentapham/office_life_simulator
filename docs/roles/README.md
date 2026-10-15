@@ -28,7 +28,7 @@
 | 18 | `chi_dai` | 🦁 Chị Đại | **Hương** | Nữ | 30 | Nam | Trưởng nhóm Tổ chức Sự kiện | Uy Lực |
 | 19 | `dan_dau_tu` | 📉 Dân Đầu Tư | **Chương** | Nam | 37 | Nam | Chuyên viên Phân tích Số liệu | Tài Khoản Đầu Tư |
 | 20 | `thanh_xin_nghi` | 🤒 Thánh Xin Nghỉ | **Sơn** | Nam | 28 | Nam | Điều phối Lịch trình Nghệ sĩ | Số Ngày Phép (âm) |
-| 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | **Bình** | Nam | 30 | Bắc | Bảo vệ | Bí Mật Biết Được |
+| 21 | `bac_bao_ve` | 🛡️ Bác Bảo Vệ | **Bình** | Nam | 50 | Bắc | Bảo vệ | Bí Mật Biết Được |
 | 22 | `sieu_nhan_hong` | 🩷 Siêu Nhân Hồng | **Nguyên** | Nam | 31 | Nam | Đối tác chiến lược (không phải nhân viên) | Độ Nổi Tiếng Showbiz |
 | 23 | `cho` | 🐕 Chó Công Ty | **Tuất** | Chó đực | – | – | Chó (ở với Bác Bảo Vệ) | Độ Được Cưng, Mũi Thính |
 
@@ -36,9 +36,10 @@
 
 | Tuổi | Nhân vật |
 |---|---|
+| 50 | Bình (lớn tuổi nhất công ty) |
 | 37 | Thắng, Thái, Chương |
 | 31 | Bảo, Nguyên |
-| 30 | Duy, Thương, Tuấn, Phát, Hương, Bình |
+| 30 | Duy, Thương, Tuấn, Phát, Hương |
 | 29 | Ngân, Oánh, Quỳnh |
 | 28 | Hiếu, Nhật, Nhi, Long, Vũ, Sơn |
 | 27 | Lĩnh |
@@ -49,7 +50,6 @@
 - **Chức vụ thắng tuổi tác** trong giờ làm: ai cũng gọi Thắng là "anh Thắng" hoặc "sếp". Nhật được gọi "anh Nhật" ở phòng họp, dù bằng tuổi nhiều người.
 - **Ngoại lệ gây cười:**
   - **Duy 30 tuổi mà là thực tập sinh**, vẫn "dạ anh, dạ chị" với cả những người nhỏ hơn mình. Ai cũng ngại.
-  - **Bình mới 30 tuổi** mà cả công ty gọi là "**Bác** Bình", vì Bình sống như ông cụ: uống trà, nghe radio, đi ngủ lúc 9 giờ tối.
   - **Huyền nhỏ nhất công ty** nhưng nói chuyện như sếp lớn ("Tin chị đi!"). Người lớn hơn nghe "chị" mà không dám cãi.
 
 ## Sơ đồ quan hệ chính
@@ -68,7 +68,7 @@
 - 🪑⚔️ **Nhật ✖ Long**: tranh ghế phó giám đốc.
 - 🦁⚔️ **Hương ✖ Nhi**: Chị Đại ghét Thánh Nịnh.
 
-**Người chơi chọn 1 trong 22 nhân viên** (role 1 đến 21 và chó Tuất). Mặc định là Rắn Độc Hiếu. **Siêu Nhân Hồng không chơi được**: đó là siêu sao mà cả công ty phải lăng xê, và có kết thúc riêng.
+**Người chơi chọn 1 trong 23 nhân vật**: 22 nhân viên (role 1 đến 21 và chó Tuất) hoặc **Siêu Nhân Hồng**. Mặc định là Rắn Độc Hiếu. Khi chơi Siêu Nhân Hồng, bạn chính là siêu sao mà cả công ty đang lăng xê, và tự quyết định sự nghiệp của mình.
 
 ---
 
@@ -358,10 +358,10 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 
 ### 21. 🛡️ Bác Bảo Vệ: Bình
 - **Công việc:** trông xe, mở cổng, trực đêm. Nuôi Chó Công Ty.
-- **Tính cách:** mới 30 tuổi mà sống như ông cụ 70: uống trà đá cả ngày, nghe radio, 9 giờ tối là ngủ. Vì vậy cả công ty gọi là "Bác". Ít nói, hiền, thấy hết mọi chuyện nhưng không bao giờ nói.
+- **Tính cách:** 50 tuổi, lớn tuổi nhất công ty, ai cũng gọi là "Bác Bình", kể cả Giám Đốc. Uống trà đá cả ngày, nghe radio, 9 giờ tối là ngủ. Ít nói, hiền, thấy hết mọi chuyện nhưng không bao giờ nói.
 - **Cách nói:** giọng miền Bắc, chậm rãi, ngắn gọn, thâm thúy. "Ừ…", "Chuyện người ta, bác không biết đâu", "Thế à".
 - **Câu cửa miệng:** *"Bác không thấy gì đâu."*
-- **Bí mật:** là người duy nhất biết nhà sáng lập Genta giờ đang ở đâu. Thỉnh thoảng có người gửi thư tay cho Bình, ký tên "G".
+- **Bí mật:** làm bảo vệ từ ngày đầu thành lập công ty năm 2010, là bạn lâu năm của nhà sáng lập Genta, và là người duy nhất biết Genta giờ đang ở đâu. Thỉnh thoảng có người gửi thư tay cho bác, ký tên "G".
 - **Quan hệ:** chủ của Chó Công Ty. Bạn nhậu của IT. Bị Dân Đầu Tư nợ tiền.
 - **Ý tưởng truyện:**
   - Đêm trực phát hiện có người vào công ty lén lút.

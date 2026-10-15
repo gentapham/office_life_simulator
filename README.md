@@ -1,6 +1,6 @@
 # G-Entertainment: Office Life Simulator
 
-Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đầy drama. Nhập vai một trong 22 nhân viên, đi làm, nói chuyện, hóng hớt, nói xấu, yêu đương, đánh ghen… Mỗi câu trả lời của bạn quyết định ai lên chức, ai bị đuổi việc, và câu chuyện kết thúc ra sao.
+Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đầy drama. Nhập vai một trong 22 nhân viên hoặc chính Siêu Nhân Hồng, đi làm, nói chuyện, hóng hớt, nói xấu, yêu đương, đánh ghen… Mỗi câu trả lời của bạn quyết định ai lên chức, ai bị đuổi việc, và câu chuyện kết thúc ra sao.
 
 Đi làm 8 tiếng chưa đủ? Tối về đi làm tiếp trong game :v
 
@@ -11,10 +11,10 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 - **Chơi trên web**, không cần cài đặt. Ưu tiên máy tính, tối ưu thêm cho điện thoại.
 - **3D low-poly** dựng bằng Three.js. Đổi được giữa góc nhìn thứ 1 và thứ 3, có bản đồ isometric.
 - **Nhiệm vụ chung:** cả công ty phải đưa siêu sao mới nổi **Siêu Nhân Hồng** nổi tiếng trong showbiz Việt.
-- **22 nhân viên để nhập vai** (21 người và chó Tuất), mặc định là **Rắn Độc**.
+- **23 nhân vật để nhập vai**: 22 nhân viên (21 người và chó Tuất) và Siêu Nhân Hồng. Mặc định là **Rắn Độc**.
 - **Đặt tên** cho mọi nhân vật, hoặc dùng tên mặc định.
 - **Hội thoại nhiều lựa chọn**, tin đồn lan và biến dạng giữa các nhân vật.
-- **2 cái kết mỗi lượt chơi**: kết thúc của nhân vật bạn chọn (6 kết thúc cho mỗi nhân viên: 3 có hậu, 3 buồn) và kết thúc của Siêu Nhân Hồng (6 kết thúc). Tổng 138 kết thúc.
+- **2 cái kết mỗi lượt chơi**: kết thúc của nhân vật bạn chọn (6 kết thúc cho mỗi nhân vật: 3 có hậu, 3 buồn) và kết thúc sự nghiệp của Siêu Nhân Hồng (6 kết thúc). Tổng 144 kết thúc.
 - **Thế giới rộng**: công ty, nhà trọ, siêu thị, quán cơm, quán cà phê, rạp phim, quán nhậu, công viên…
 - **Sinh tồn đời văn phòng**: đói, khát, năng lượng, stress, lương ngày 10, làm thêm freelancer.
 - **Song ngữ** Tiếng Việt / English, có âm thanh.

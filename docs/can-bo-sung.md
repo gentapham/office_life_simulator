@@ -72,7 +72,8 @@ Mục nào xong thì đánh dấu `[x]`.
 ## 📖 Câu chuyện
 
 - [ ] 🤖 **Truyện chi tiết 22 role còn lại**, giống file Rắn Độc. Mới xong 1/23.
-- [ ] 🤖 **138 kết thúc** (22 nhân viên × 6 + 6 của Siêu Nhân Hồng). Mới xong 6 của Rắn Độc, và bản nháp 6 của Siêu Nhân Hồng.
+- [ ] 🤖 **144 kết thúc** (23 nhân vật × 6 + 6 kết thúc sự nghiệp của Siêu Nhân Hồng). Mới xong 6 của Rắn Độc, và bản nháp 6 kết thúc sự nghiệp.
+- [ ] 🤖 **Truyện riêng khi nhập vai Siêu Nhân Hồng**: tuyến truyện 30 ngày và 6 kết thúc đời tư của Nguyên.
 - [ ] 🤖 **Lịch sự kiện 30 ngày**: sự kiện chung của công ty theo từng ngày (nhận lương, sinh nhật, team building, ra mắt phim, kiểm tra thuế, mất điện…).
 - [ ] 🤖 **Mở đầu game**: đoạn giới thiệu và ngày đầu tiên có hướng dẫn chơi.
 - [x] 🙋 **Cốt truyện chung**: cả công ty phải đưa Siêu Nhân Hồng nổi tiếng. Mỗi lượt chơi có 2 kết thúc: của nhân vật người chơi và của Siêu Nhân Hồng.

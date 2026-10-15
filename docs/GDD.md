@@ -17,7 +17,7 @@ Các tài liệu liên quan:
 
 **Một câu:** game giả lập đi làm ở một công ty giải trí đầy drama, nơi mỗi câu nói của bạn có thể khiến người khác lên chức, bị đuổi việc, hoặc bị đánh ghen.
 
-**Cốt truyện chung:** công ty **G-Entertainment** được **Genta** thành lập ngày **20/10/2010**. Công ty có **22 nhân viên** và một siêu sao mới nổi là **Siêu Nhân Hồng**. Nhiệm vụ chung của cả công ty là **đưa Siêu Nhân Hồng nổi tiếng trong giới showbiz Việt Nam**. Người chơi nhập vai một trong 22 nhân viên, vừa góp sức (hoặc phá đám) nhiệm vụ chung, vừa khám phá bí ẩn và drama trong công ty.
+**Cốt truyện chung:** công ty **G-Entertainment** được **Genta** thành lập ngày **20/10/2010**. Công ty có **22 nhân viên** và một siêu sao mới nổi là **Siêu Nhân Hồng**. Nhiệm vụ chung của cả công ty là **đưa Siêu Nhân Hồng nổi tiếng trong giới showbiz Việt Nam**. Người chơi nhập vai một trong 22 nhân viên, hoặc chính Siêu Nhân Hồng, vừa góp sức (hoặc phá đám) nhiệm vụ chung, vừa khám phá bí ẩn và drama trong công ty.
 
 **Đối tượng:** dân văn phòng Việt Nam, 20 đến 35 tuổi. Đi làm 8 tiếng xong, tối về chơi game "đi làm" tiếp cho vui.
 
@@ -99,7 +99,7 @@ Các tài liệu liên quan:
 ## 4. Chọn role & đặt tên
 
 1. Màn hình đầu tiên: **chọn ngôn ngữ** (Tiếng Việt / English).
-2. **Chọn role** trong **22 nhân viên** (21 người và chó Tuất). Mặc định gợi ý **Rắn Độc**. Siêu Nhân Hồng **không chơi được**: đó là nhân vật mà cả công ty phải lăng xê.
+2. **Chọn role** trong **23 nhân vật**: 22 nhân viên (21 người và chó Tuất) hoặc **Siêu Nhân Hồng**. Mặc định gợi ý **Rắn Độc**.
 3. **Đặt tên** cho nhân vật của mình và cho các NPC (không bắt buộc):
    - Mỗi tên tối đa **16 ký tự**, có dấu tiếng Việt.
    - Mỗi role có **tên mặc định** (danh sách bạn sẽ gửi) và **danh sách tên gợi ý** để chọn nhanh.
@@ -182,12 +182,16 @@ Yêu đương, đánh ghen, nói xấu (cả nói xấu sếp), tranh ghế, lê
 
 ### 7.3. Kết thúc
 **Mỗi lượt chơi kết thúc bằng 2 cái kết:**
-1. **Kết thúc của nhân vật người chơi chọn**: 6 kết thúc cho mỗi nhân viên, gồm **3 kết thúc có hậu và 3 kết thúc buồn**.
+1. **Kết thúc của nhân vật người chơi chọn**: 6 kết thúc cho mỗi nhân vật, gồm **3 kết thúc có hậu và 3 kết thúc buồn**.
 2. **Kết thúc của Siêu Nhân Hồng**: Siêu Nhân Hồng có nổi tiếng hay không, tùy vào việc cả công ty (và người chơi) đã làm gì trong 30 ngày. Có 6 kết thúc, cũng gồm 3 có hậu và 3 buồn.
 
 Hai cái kết độc lập với nhau, nên có những tổ hợp trớ trêu: bạn lên chức nhưng Siêu Nhân Hồng thất bại, hoặc bạn bị đuổi việc nhưng Siêu Nhân Hồng thành siêu sao.
 
-**Tổng: 22 nhân viên × 6 + 6 kết thúc của Siêu Nhân Hồng = 138 kết thúc.**
+**Khi người chơi chọn Siêu Nhân Hồng**, hai cái kết vẫn tách riêng:
+- Kết thúc **đời tư** của Nguyên (6 kết thúc riêng): tình cảm với Vũ, mối thù với Tuất, bí mật mặt thật sau chiếc mũ.
+- Kết thúc **sự nghiệp** (6 kết thúc ở bảng bên dưới): có nổi tiếng hay không.
+
+**Tổng: 23 nhân vật × 6 + 6 kết thúc sự nghiệp của Siêu Nhân Hồng = 144 kết thúc.**
 
 #### Thanh "Độ Nổi Tiếng" của Siêu Nhân Hồng
 - Là chỉ số chung của cả lượt chơi, hiện trên điện thoại trong game (lượt follow, lượt view, top trending).
