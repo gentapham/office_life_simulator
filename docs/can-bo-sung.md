@@ -39,9 +39,9 @@ Mục nào xong thì đánh dấu `[x]`.
 
 ## 🩷 Siêu Nhân Hồng: Nguyên
 
-- [ ] 🙋 **Gốc gác**: Nguyên là ai, từ đâu tới, vì sao mặc đồ siêu nhân hồng 24/7.
-- [ ] 🙋 **Mặt thật**: cố định một người, hay ngẫu nhiên mỗi lần chơi?
-- [ ] 🙋 **Vì sao Tuất ghét Nguyên?** Có lý do bí mật, hay chỉ vì chó ghét màu hồng?
+- [x] 🙋 **Gốc gác**: Nguyễn Nguyên, sinh 23/10/1995, người bình thường thích mặc đồ siêu nhân hồng đi giúp người, nhưng không giúp được chính mình.
+- [x] 🙋 **Mặt thật**: chỉ là Nguyễn Nguyên, một người bình thường. Cố định.
+- [x] 🙋 **Vì sao Tuất ghét Nguyên?** Vì Nguyên hay chọc chó cho vui.
 - [ ] 🙋 **Hợp đồng đối tác**: G-Entertainment được gì, Nguyên được gì, thất bại thì sao.
 - [ ] 🤖 Kế hoạch "buff" cho nổi tiếng: các chiến dịch cụ thể trong 30 ngày.
 

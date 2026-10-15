@@ -371,17 +371,28 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 ---
 
 ### 22. 🩷 Siêu Nhân Hồng: Nguyên
-- **Vai trò:** **không phải nhân viên**. Là đối tác chiến lược của công ty, một "nghệ sĩ" mặc bộ đồ siêu nhân hồng 24/7 và không bao giờ tháo mũ.
+- **Họ tên đầy đủ:** Nguyễn Nguyên. **Sinh ngày:** 23/10/1995.
+- **Vai trò:** **không phải nhân viên**. Là siêu sao mới nổi, đối tác chiến lược của công ty.
+- **Gốc gác:** một người hoàn toàn bình thường, nhưng rất thích mặc bộ đồ siêu nhân hồng để **đi giúp đỡ người khác**: dắt cụ già qua đường, đẩy xe chết máy giữa trời mưa, nhặt rác ở công viên, gỡ diều mắc trên cây cho con nít.
+- **Nỗi khổ:** giúp được cả thế giới, nhưng **không giúp được chính mình**. Ví dụ (bản nháp):
+  - Đẩy xe giùm cả phố, còn xe mình thì hết xăng giữa đường.
+  - Khuyên người khác tỏ tình, còn bản thân thì ế.
+  - Cứu mèo trên cây, còn mình thì bị kẹt trong thang máy chung cư.
+  - Giỏi đòi công bằng cho người khác, nhưng bị chủ trọ tăng giá 3 lần không dám nói một câu.
+
+  Vì vậy Nguyên tìm đến **G-Entertainment** để được "buff" thành ngôi sao nhiều người biết đến. Nổi tiếng rồi thì giúp được nhiều người hơn, và biết đâu giúp được cả chính mình.
 - **Nhiệm vụ của công ty:** **buff cho Siêu Nhân Hồng nổi tiếng trong showbiz Việt.** Nếu thành công, công ty thoát nợ.
-- **Tính cách:** tự tin, hay tạo dáng, nói chuyện như đang đóng phim siêu nhân. Thật ra rất cô đơn và tốt bụng.
-- **Cách nói:** "Biến hình!", "Vì công lý và lượt view!", tạo dáng sau mỗi câu.
+- **Tính cách:** tốt bụng, nhiệt tình, hơi ngố. Tự tin khi mặc bộ đồ, nhưng tháo mũ ra là thành người rụt rè. Mê chọc chó cho vui: giả tiếng sủa, giấu đồ chơi, làm mặt xấu. Chỉ chọc cho vui chứ không bao giờ đánh đập.
+- **Cách nói:** "Biến hình!", "Vì công lý và lượt view!", tạo dáng sau mỗi câu. Lúc không mặc đồ thì nói nhỏ, hay "dạ… ờm…".
 - **Câu cửa miệng:** *"Hồng không phải màu, Hồng là thái độ!"*
-- **Bí mật:** không ai biết mặt thật. Có thể là bất kỳ ai, kể cả một người quen trong công ty (tùy lần chơi).
-- **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Giám đốc đặt cả công ty vào tay người này. **Thích Chúa Tể Deadline Vũ**, tặng quà toàn màu hồng. **Bị chó Tuất ghét cay ghét đắng**.
+- **Bí mật:** đằng sau chiếc mũ chỉ là một anh chàng bình thường tên Nguyễn Nguyên, không có gì đặc biệt. Nguyên sợ nhất là khán giả biết điều đó rồi hết thích mình.
+- **Quan hệ:** do Quản Lý Idol phụ trách. Bị Idol Hết Thời ghét. Giám đốc đặt cả công ty vào tay người này. **Thích Chúa Tể Deadline Vũ**, tặng quà toàn màu hồng. **Bị chó Tuất ghét cay ghét đắng** vì tật chọc chó.
 - **Ý tưởng truyện:**
   - Chiến dịch "Hồng hóa Việt Nam": đi gameshow, livestream bán hàng, đu trend TikTok.
+  - Đang quay quảng cáo thì bỏ đi giữa chừng để giúp một bà cụ bị giật túi. Clip được quay lại và lên xu hướng.
   - Drama ồn ào tự tạo để nổi tiếng, rồi không kiểm soát được.
   - Bị paparazzi rình chụp mặt thật.
+  - **Sinh nhật 23/10**: cả công ty tổ chức tiệc sinh nhật kiêm sự kiện truyền thông. Tuất phá tan cái bánh kem màu hồng.
 - **Lưu ý thiết kế:** bộ đồ chỉ **gợi nhớ** kiểu siêu nhân màu hồng, không sao chép logo, tên hay thiết kế của Power Rangers để tránh vấn đề bản quyền.
 
 ---
@@ -395,7 +406,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
   - **Người nói thì chó chỉ hiểu từ khóa:** *"…bla bla… **ĂN** …bla bla… **ĐI DẠO** …bla…"*
   - Mũi thính: phát hiện ai vừa ăn gì, ai vừa đi với ai (mùi nước hoa lạ!).
 - **Bí mật:** giấu một kho đồ dưới gầm cầu thang: chìa khóa, son môi, điện thoại cũ… toàn là bằng chứng của các vụ drama.
-- **Quan hệ:** thân nhất với Bác Bảo Vệ. Được Thực Tập Sinh và Chị Đại cưng. **Vô cùng ghét Siêu Nhân Hồng**: thấy bộ đồ hồng là sủa, gầm gừ, đòi cắn mũ. Không ai hiểu tại sao. Có thể con chó biết mặt thật đằng sau chiếc mũ?
+- **Quan hệ:** thân nhất với Bác Bảo Vệ. Được Thực Tập Sinh và Chị Đại cưng. **Vô cùng ghét Siêu Nhân Hồng**: Nguyên gặp chó là chọc cho vui (giả tiếng sủa, giấu đồ chơi, làm mặt xấu), dù không bao giờ đánh. Tuất thì không thấy vui chút nào, nên hễ thấy bộ đồ hồng là sủa, gầm gừ, đòi cắn mũ.
 - **Ý tưởng truyện:**
   - Tha nhầm điện thoại của giám đốc về ổ, lộ tin nhắn chấn động.
   - Trở thành idol TikTok của công ty, nổi tiếng hơn cả Siêu Nhân Hồng.
