@@ -8,7 +8,7 @@
 === ke_toan_mg_san_hoa_don_mo_dau ===
 # noi:phong_ke_toan # gio:08:15 # dieu_kien:sang_ngay_lam_viec
 _Xấp đề nghị thanh toán sáng nay dày hai đốt ngón tay. Bạn xắn tay áo, đặt kính lúp lên bàn._
-_Trên cùng: một tờ giấy ăn, viết bằng bút kẻ mắt: "Tạm ứng tiếp khách – Huyền". Bên dưới: "Tiền ốc 2 triệu, 1 người – Chương". Rồi: hóa đơn quán bida Cơ Bản, ghi "họp dự án" – Vũ._
+_Trên cùng: một tờ giấy ăn, viết bằng bút kẻ mắt: "Tạm ứng tiếp khách – {sales}". Bên dưới: "Tiền ốc 2 triệu, 1 người – {dan_dau_tu}". Rồi: hóa đơn quán bida Cơ Bản, ghi "họp dự án" – {chua_te_deadline}._
 * [🧾 Bắt đầu ghép từng khoản với hóa đơn.]
     ke_toan: Rồi. Hôm nay đứa nào gửi giấy ăn là chị trả lại giấy ăn.
 * [☕ Pha một ly trà trước. Chiến lâu dài.]
@@ -23,7 +23,7 @@ _Mười bốn khoản, mười bốn lần đúng. Tờ giấy ăn của {sales
 ~ kt_keo(5)
 ~ kt_so_hoa_don_gia = kt_so_hoa_don_gia + 3
 { kt_so_hoa_don_gia >= 5:
-    sales: *(đặt lên bàn một hộp bánh pía)* Chị Thương… em tặng chị làm lành. Có hóa đơn đàng hoàng nha chị!
+    sales: *(đặt lên bàn một hộp bánh pía)* Chị {ke_toan}… em tặng chị làm lành. Có hóa đơn đàng hoàng nha chị!
     ~ an(30)
     ~ qh("sales", 5)
 }
@@ -147,10 +147,10 @@ _30 phút trước khi đoàn kiểm tra lên tầng 2. Mười năm hồ sơ, x
 thuc_tap_sinh: Dạ chị, em phụ chị một tay được không ạ?
 _Chưa kịp trả lời, {thuc_tap_sinh} đã xếp xong năm 2019. Nhanh. Nhanh tới đáng ngờ. Như người từng làm ngân hàng._
 cho: *(tha một xấp hồ sơ năm 2017 chạy ra cửa)*
-* [🤝 "Duy, em làm năm 2016 tới 2020. Chị làm phần còn lại."]
+* [🤝 "{thuc_tap_sinh}, em làm năm 2016 tới 2020. Chị làm phần còn lại."]
     ~ qh("thuc_tap_sinh", 10)
     thuc_tap_sinh: Dạ em làm liền ạ!
-* [🐕 "Tuất! Trả hồ sơ đây!" (Đuổi theo trước đã)]
+* [🐕 "{cho}! Trả hồ sơ đây!" (Đuổi theo trước đã)]
     ~ nghi(-10)
 - -> END
 
@@ -178,7 +178,7 @@ _200 triệu. Bạn ký biên bản. Chữ ký run lần đầu tiên trong mư�
 // ============ ☕ KIỂM KÊ PANTRY ============
 === ke_toan_mg_kiem_ke_pantry_mo_dau ===
 # noi:pantry # gio:17:00 # dieu_kien:cuoi_tuan
-_Chiều thứ 6. Đếm cà phê, đường, mì ly trong pantry. Đối chiếu sổ. Và điều tra một vụ án: hộp cơm ghi tên "Thương" trong tủ lạnh chung đã biến mất lúc 11:47._
+_Chiều thứ 6. Đếm cà phê, đường, mì ly trong pantry. Đối chiếu sổ. Và điều tra một vụ án: hộp cơm ghi tên "{ke_toan}" trong tủ lạnh chung đã biến mất lúc 11:47._
 * [🔍 Kiểm tra dấu vết: thìa, vỏ hộp, mùi.]
     ke_toan: Không có hóa đơn thì không có tiền. Không có hộp cơm thì phải có thủ phạm.
 * [📋 Đếm hàng trước, điều tra sau.]
@@ -192,7 +192,7 @@ it: *(nhìn hộp cơm, nhìn bạn)* … Em tưởng của chung. Lỗi ngườ
 ~ uong(20)
 ~ nghi(25)
 ~ qh("it", -3)
-_Phần thưởng: một ly cà phê sữa đá {it} mua đền, và quyền dán thông báo lên bảng tin: "Ai lấy hộp cơm có ghi tên Thương, trả lại."_
+_Phần thưởng: một ly cà phê sữa đá {it} mua đền, và quyền dán thông báo lên bảng tin: "Ai lấy hộp cơm có ghi tên {ke_toan}, trả lại."_
 -> END
 
 === ke_toan_mg_kiem_ke_pantry_that_bai ===

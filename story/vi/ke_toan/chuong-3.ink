@@ -54,7 +54,7 @@ giam_doc: 400 triệu. Em duyệt nhé. Anh không ép, tùy em.
     ~ qh("sieu_nhan_hong", 15)
     ~ qh("giam_doc", 5)
     giam_doc: *(im lặng)* … Người keo nhất công ty lại nghĩ ra cái chiến dịch hay nhất công ty.
-    sieu_nhan_hong: *(đứng ở cửa, nghe hết)* Chị Thương… vậy là em cứ đi giúp người là được hả? Vì công lý và lượt view!
+    sieu_nhan_hong: *(đứng ở cửa, nghe hết)* Chị {ke_toan}… vậy là em cứ đi giúp người là được hả? Vì công lý và lượt view!
 * [✂️ "Em duyệt 100. Còn lại anh đi golf tìm tài trợ đi."]
     ~ kt_quy(-100)
     ~ follow(30000)
@@ -87,7 +87,7 @@ _Bạn nhìn hai bàn tay mình. Chúng không biết làm gì nếu không cầ
 # ngay:15 # gio:11:30 # noi:pantry # bat_buoc
 _Pantry tối mờ. Ai cũng ra đây ngồi buôn chuyện vì không có gì để làm. {chi_dai} vừa thoát khỏi thang máy, mặt còn hầm hầm, kéo bạn vào góc cạnh tủ lạnh._
 chi_dai: *(đưa bạn ly trà đá)* Bà nhìn mặt kìa. Hai tuần nay bà ngủ được mấy tiếng? Có chuyện gì nói tui nghe.
-* [🤝 "Hương, nói nhỏ thôi. Trang 47 hợp đồng. Thất bại là hoàn gấp đôi. 10 tỷ."]
+* [🤝 "{chi_dai}, nói nhỏ thôi. Trang 47 hợp đồng. Thất bại là hoàn gấp đôi. 10 tỷ."]
     ~ kt_ke_huong = 2
     ~ kt_ngu(-20)
     ~ qh("chi_dai", 15)
@@ -100,7 +100,7 @@ chi_dai: *(đưa bạn ly trà đá)* Bà nhìn mặt kìa. Hai tuần nay bà n
     ~ kt_ke_huong = 0
     ~ kt_ngu(5)
     chi_dai: Bà hông uống cà phê. *(thở dài)* Thôi được. Lúc nào muốn nói thì nói.
-* [🗄️ "Hương, nếu công ty sập, tui có để dành một ít. Đủ trả mọi người một tháng."]
+* [🗄️ "{chi_dai}, nếu công ty sập, tui có để dành một ít. Đủ trả mọi người một tháng."]
     ~ kt_ke_huong = 1
     ~ kt_huong_biet_quy_den = true
     _{chi_dai} im lặng rất lâu. Rồi nắm tay bạn. Tay {chi_dai} to, chai, ấm._
@@ -125,7 +125,7 @@ _Bạn đứng ở cửa, tay ôm cuốn sổ. Bạn nhớ mình đã mua đĩa 
     ~ kt_ngu(-10)
     ~ cang_thang(-10)
     _Hết bài, {idol_het_thoi} nhìn thấy bạn, giật mình đeo kính vào. Rồi tháo ra._
-    idol_het_thoi: Chị Thương… chị nghe hả?
+    idol_het_thoi: Chị {ke_toan}… chị nghe hả?
     ke_toan: Tui có mua đĩa năm 2015. Còn giữ hóa đơn.
     idol_het_thoi: *(cười, mắt đỏ)* … Thật hả bà?
     ~ qh("idol_het_thoi", 15)
@@ -142,7 +142,16 @@ _Bạn đứng ở cửa, tay ôm cuốn sổ. Bạn nhớ mình đã mua đĩa 
 === ke_toan_1610_cho_5_gio ===
 # ngay:16 # gio:05:00 # noi:cho_pho_cu # bat_buoc
 _Ngày Lương thực Thế giới. Tối nay công ty liên hoan buffet. Ngân sách buffet: 8 triệu. Bạn tới chợ Phố Cũ lúc 5 giờ sáng._
-* [🛒 Bắt đầu mặc cả.]
+_Chợ vừa thắp đèn. Mùi cà phê vợt, mùi rau ướt sương. Đây là nơi duy nhất trong thành phố mà bạn thấy con số trở nên dễ thương._
+_Danh sách gồm 47 món. {giam_doc} nhắn lúc 4:50: "{ke_toan} ơi thêm tôm hùm nhé anh không ép tùy em."_
+* [🦞 Trả lời: "Tôm hùm không có trong dự toán. Tôm đất thì có."]
+    ~ kt_keo(3)
+    giam_doc: *(5 phút sau)* … Tôm đất cũng là tôm.
+* [😇 Thêm tôm hùm vào danh sách. Một con. Cho sếp vui.]
+    ~ kt_quy(-1)
+    ~ qh("giam_doc", 3)
+- _Bạn chọn bắt đầu thế nào?_
+* [🛒 Bắt đầu mặc cả một mình.]
     -> ke_toan_mg_cho_mac_ca_mo_dau
 * [📞 Rủ {chi_dai} đi cùng. Hai người hai sạp.]
     chi_dai: *(giọng ngái ngủ)* … 5 giờ sáng? … Rồi. Tui tới.
@@ -153,7 +162,7 @@ _Ngày Lương thực Thế giới. Tối nay công ty liên hoan buffet. Ngân 
 === ke_toan_1610_duyet_gameshow ===
 # ngay:16 # gio:08:30 # noi:phong_ke_toan # bat_buoc
 _Gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng, 14:00. {quan_ly_idol} đặt lên bàn bạn ba tờ đề nghị: trang phục mới, xe đưa đón, bánh chuối chiên phòng chờ._
-quan_ly_idol: Thương ơi duyệt giùm anh trước 10 giờ nha. Khoan, anh nghe máy chút… Không kịp là {sieu_nhan_hong} lên sóng bằng bộ đồ cũ bạc màu đó!
+quan_ly_idol: {ke_toan} ơi duyệt giùm anh trước 10 giờ nha. Khoan, anh nghe máy chút… Không kịp là {sieu_nhan_hong} lên sóng bằng bộ đồ cũ bạc màu đó!
 * [✅ Duyệt cả ba, ngay bây giờ.]
     ~ kt_duyet_gameshow = true
     ~ kt_quy(-25)
@@ -198,5 +207,5 @@ _Buffet công ty bày kín tầng 1. Đồ ăn bạn mua từ 5 giờ sáng. Ai 
     ~ qh("thuc_tap_sinh", 10)
     ~ qh("it", 5)
     ~ qh("dan_dau_tu", 5)
-    _Mười hai hộp, mỗi hộp ghi tên. {it} nhận hộp có ghi "Bảo – không phải mì ly". Lần đầu tiên bạn thấy {it} cười._
+    _Mười hai hộp, mỗi hộp ghi tên. {it} nhận hộp có ghi "{it} – không phải mì ly". Lần đầu tiên bạn thấy {it} cười._
 - -> END

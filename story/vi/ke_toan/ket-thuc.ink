@@ -43,7 +43,7 @@
     -> ke_toan_kt_mat_ngu_vinh_vien
 }
 _Bạn đang cộng một cột số. Con số thứ 47 nhòe đi. Rồi cả cột nhòe đi. Rồi cái bàn nghiêng._
-_Tiếng cuối cùng bạn nghe là {thuc_tap_sinh}: "Chị Thương! Chị Thương ơi!"_
+_Tiếng cuối cùng bạn nghe là {thuc_tap_sinh}: "Chị {ke_toan}! Chị {ke_toan} ơi!"_
 _Bạn tỉnh dậy ở Phòng khám Đa Khoa Khỏe Re. Dây truyền nước trên tay. Bác sĩ đeo kính, rất dễ tính._
 bac_si_khoe_re: Mất ngủ kéo dài, kiệt sức. Nằm đây 2 ngày. Không điện thoại, không con số.
 * [😮‍💨 Gật đầu. Nhắm mắt.]
@@ -72,7 +72,7 @@ giam_doc: Mười năm nay, có người lo cho các em hơn cả anh.
 _Anh ấy mở cuốn sổ, đọc to từng dòng._
 giam_doc: "Tháng 1 năm 2024. Cộng 8 triệu. Không đi du lịch Tết." … "Tháng 9 năm 2025. Cộng 5 triệu. Không mua kính mới, dùng kính lúp." …
 _Cả phòng quay sang nhìn bạn. Bạn nhìn xuống bàn. Bạn đếm vân gỗ trên bàn. Bốn mươi bảy vân._
-giam_doc: Hai trăm chín mươi bảy triệu. Một tháng lương cho hai mươi mốt người. Và… *(lật trang cuối)* … sáu mươi cây xúc xích cho Tuất.
+giam_doc: Hai trăm chín mươi bảy triệu. Một tháng lương cho hai mươi mốt người. Và… *(lật trang cuối)* … sáu mươi cây xúc xích cho {cho}.
 cho: *(ở ngoài cửa)* Gâu!
 _Có người bật cười. Có người khóc. {thuc_tap_sinh} khóc to nhất._
 giam_doc: Từ hôm nay, {ke_toan} là Giám đốc Tài chính của công ty. Anh không ép. Lần này là anh xin.
@@ -101,7 +101,7 @@ _Bạn về nhà số 18. Đi thẳng tới tủ lạnh._
 { kt_trang_47_tu_lanh:
     _Tờ giấy "trang 47 chữ cỡ 20" vẫn dán ở đó, mép đã quăn. Bạn gỡ nó xuống. Gấp làm tư. Không vứt. Bỏ vào ngăn kéo, dán nhãn "Đã xong"._
 - else:
-    _Tủ lạnh trống trơn, chỉ có hộp cơm ghi tên "Thương". Bạn ăn nó. Không ai lấy được nữa._
+    _Tủ lạnh trống trơn, chỉ có hộp cơm ghi tên "{ke_toan}". Bạn ăn nó. Không ai lấy được nữa._
 }
 _Bạn tắt điện thoại. Kéo rèm. Nằm xuống._
 { kt_mat_ngu < 40:
@@ -148,11 +148,11 @@ _"ĐÃ DUYỆT."_
 # ket_thuc:ke_bien_thu # loai:buon
 _Họp đánh giá. Màn hình lớn phòng "Sáng Tạo" chiếu một tấm ảnh: két sắt sau bức tranh, nhà số 18, Phố Cũ. Cửa két hé mở. Những xấp tiền buộc dây thun._
 _Ai chụp, không ai nói. {ran_doc} nhìn xuống bàn. {thuc_tap_sinh} nhìn bạn, mắt đỏ, như muốn xin lỗi vì đã đếm ra con số lệch._
-hr: *(cười, nụ cười buồn nhất bạn từng thấy)* Thương ơi, mình lên phòng anh uống trà xíu.
+hr: *(cười, nụ cười buồn nhất bạn từng thấy)* {ke_toan} ơi, mình lên phòng anh uống trà xíu.
 _Cuốn sổ tay ghi tay nằm trong túi xách bạn. Từng đồng, từng tháng, từng lý do. Không ai hỏi xem nó._
 _Bạn uống trà với {hr}. Trà Lắng Nghe. Anh ấy lắng nghe rất kỹ, rồi đưa bạn một tờ giấy để ký._
 _Chiều. Bạn ôm một thùng carton, bên trong toàn hóa đơn đã dán nhãn, đi xuống cầu thang. Không ai đứng dậy._
-_Bạn đi ngang bảng thông báo. Tờ giấy vẫn dán ở đó, mép đã ngả vàng: "Ai lấy hộp cơm có ghi tên Thương, trả lại."_
+_Bạn đi ngang bảng thông báo. Tờ giấy vẫn dán ở đó, mép đã ngả vàng: "Ai lấy hộp cơm có ghi tên {ke_toan}, trả lại."_
 _Bạn không gỡ nó xuống._
 _Ở cổng, Bác {bac_bao_ve} đứng sẵn. Bác mở cổng. Rồi nói nhỏ, chỉ đủ cho một mình bạn nghe._
 bac_bao_ve: Bác biết cháu không lấy đồng nào.
@@ -178,7 +178,7 @@ _Ngày 1/11, giấy đòi 10 tỷ tới. Bạn ký nhận. Chữ ký không run.
     _Đêm đó, ở nhà số 18, bạn gỡ bức tranh. Mở két. {kt_quy_den} triệu. Cuốn sổ ghi tay._
     _Bạn ngồi cả đêm, bỏ từng phong bì. Hai mươi mốt cái. Mỗi cái một tháng lương, ghi tên từng người bằng bút bi kế toán._
 }
-_Phong bì cuối cùng, bạn ghi: "Tuất – 60 cây xúc xích"._
+_Phong bì cuối cùng, bạn ghi: "{cho} – 60 cây xúc xích"._
 _Sáng ra, bạn đi phát từng phong bì. {thuc_tap_sinh} cúi đầu cảm ơn 90 độ. {hong_hot} ôm bạn, không nói được câu nào. Bác {bac_bao_ve} nhận phong bì, nhìn bạn, gật đầu chậm._
 _Ai cũng cảm ơn. Không ai hỏi tiền ở đâu ra. Không ai biết đây là hai năm không đi du lịch Tết, không mua kính mới, không mua áo._
 _Bạn về nhà. Mở máy tính. Hộp thư còn một email cũ, ngày 27/10, người gửi Lưu Lực: "Ở LL, chúng tôi chưa bao giờ trả lương trễ."_
@@ -205,5 +205,5 @@ _Năm phút sau, bạn mở mắt._
 _Bạn lén lấy tờ giấy ghi đơn thuốc trên tủ, lật mặt sau. Lấy cây bút bi kế toán trong túi áo bệnh nhân. Không ai biết sao nó lại ở đó._
 _Bạn bắt đầu tính: viện phí, bảo hiểm trả bao nhiêu phần trăm, phần còn lại chia mấy tháng._
 _Y tá đi ngang, nhìn tờ giấy kín số, lắc đầu, nhưng không giật._
-_Ngoài cửa sổ, Thành Phố Ước Mơ tối dần. Ở góc tờ đơn thuốc, bạn viết nhỏ thêm một dòng không phải con số: "Ngủ đi, Thương."_
+_Ngoài cửa sổ, Thành Phố Ước Mơ tối dần. Ở góc tờ đơn thuốc, bạn viết nhỏ thêm một dòng không phải con số: "Ngủ đi, {ke_toan}."_
 -> END

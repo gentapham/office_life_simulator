@@ -12,7 +12,7 @@ ran_doc: Dạ em chào sếp! Sếp uống gì em pha nha. Mà sếp có nghe g�
 * [💬 "Nghe gì? Em nói anh nghe."]
     ran_doc: Nói nhỏ thôi nha… em thấy chị {ke_toan} hay ở lại muộn, ôm cuốn sổ tay ghi tay riêng, hông phải sổ công ty. Tui chỉ nói sự thật thôi mà.
     ~ phat_hien(quy_den_thuong)
-    ** [🧾 "Thương giữ sổ cho công ty mười năm rồi. Em đừng nói linh tinh."]
+    ** [🧾 "{ke_toan} giữ sổ cho công ty mười năm rồi. Em đừng nói linh tinh."]
         ran_doc: Dạ dạ, em nói vậy thôi chứ hông có ý gì đâu.
         ~ qh("ke_toan", 5)
         ~ qh("ran_doc", -5)
@@ -43,7 +43,7 @@ truong_phong: Anh {giam_doc} ơi, anh có 5 phút không ạ? Em muốn sync nha
     truong_phong: Ơ… vâng, thế mình take note lại, họp tiếp sau nhé anh.
     ~ gd_sua("hop_ngan")
     ~ qh("truong_phong", -3)
-* [👑 "Nhật này, cậu muốn ghế Phó Giám đốc lắm à?"]
+* [👑 "{truong_phong} này, cậu muốn ghế Phó Giám đốc lắm à?"]
     truong_phong: Em… em chỉ muốn đóng góp nhiều hơn cho công ty thôi ạ.
     giam_doc: Thế cái teaser tuần trước, ai dựng?
     truong_phong: *(dừng lại hơi lâu)* … Team mình dựng ạ. Team.
@@ -67,7 +67,7 @@ thanh_ninh: Dạ sếp ơi! Hôm nay sếp mặc áo này nhìn chuẩn CEO quá
     thanh_ninh: Dạ em đặt rồi ạ! Em biết sếp kiểu gì cũng muốn đi mà!
     ~ qh("thanh_ninh", 5)
     ~ gd_uy(-2)
-* [🔍 "Nhi, mật khẩu email của anh em vẫn giữ à?"]
+* [🔍 "{thanh_ninh}, mật khẩu email của anh em vẫn giữ à?"]
     thanh_ninh: Dạ… dạ em giữ để… để lọc thư rác cho sếp ạ.
     giam_doc: Thư ngân hàng có lọt vào thư rác không em?
     thanh_ninh: *(cười hơi cứng)* Dạ… em không đọc thư ngân hàng đâu sếp ạ.
@@ -169,7 +169,7 @@ chua_te_deadline: Ủa anh. Chill, còn sớm mà. Kịp hết.
 # npc:thuc_tap_sinh
 _{thuc_tap_sinh} đang photo 300 bản kịch bản, mồ hôi đầy trán. Thấy bạn, đứng thẳng như chào cờ._
 thuc_tap_sinh: Dạ em chào anh {giam_doc} ạ! Anh cần em làm gì ạ!
-* [🏦 "Duy, em có biết gì về ngân hàng không? Anh hỏi chuyện… của một người bạn."]
+* [🏦 "{thuc_tap_sinh}, em có biết gì về ngân hàng không? Anh hỏi chuyện… của một người bạn."]
     thuc_tap_sinh: *(khựng lại rất nhẹ)* Dạ… em có nghe qua một chút ạ. Người bạn của anh nên xin giãn nợ trước hạn 30 ngày, đừng chờ quá hạn ạ. Nhân viên tín dụng sẽ dễ duyệt hơn.
     _Câu trả lời chuẩn như sách. Bạn nhìn {thuc_tap_sinh}. Gương mặt này… hình như đã gặp ở đâu đó, sau một cái bàn có biển tên. Bạn không nhớ ra._
     ~ gd_no(-3)
@@ -202,7 +202,7 @@ ke_toan: Anh. Anh lên đây là có chuyện tiền. Em nghe.
     ** [🙅 "Anh không ép, tùy em."]
         ~ gd_tuy_em("ke_toan")
         ke_toan: Tùy em thì em không duyệt.
-* [😮‍💨 "Thương… em có ngủ được không?"]
+* [😮‍💨 "{ke_toan}… em có ngủ được không?"]
     ke_toan: *(bỏ kính lúp xuống)* Từ 1/10 tới giờ em ngủ được tổng cộng chắc bằng một ngày rưỡi anh.
     giam_doc: Anh xin lỗi. Vì trang 47.
     ke_toan: … Anh xin lỗi lần đầu đó anh. Em ghi vô sổ.
@@ -259,7 +259,7 @@ it: Restart chưa anh?
     it: … Cảm ơn anh.
     ~ qh("it", 15)
     ~ tien_cong(-15000)
-* [💰 "Chương nợ em 3 triệu đúng không? Anh trả giúp."]
+* [💰 "{dan_dau_tu} nợ em 3 triệu đúng không? Anh trả giúp."]
     it: *(dừng đũa)* Anh biết hả? … Thôi anh. Nợ người nào người đó trả.
     ~ qh("it", 5)
     ~ qh("dan_dau_tu", 3)
@@ -278,7 +278,7 @@ idol_het_thoi: Ồ, anh cả! Em biết anh là ai! *(cười, tháo kính)*
 * [💸 "Anh nghe nói em đang nợ tiền nhà."]
     idol_het_thoi: *(đeo kính lại)* Ai nói vậy anh? Fan em đông lắm mà.
     giam_doc: Em không cần diễn với anh. Năm 2015 em ngủ ở quán cà phê, anh biết mà.
-    idol_het_thoi: *(tháo kính, im lặng)* … 54 triệu anh ạ. Anh đừng nói với Thái.
+    idol_het_thoi: *(tháo kính, im lặng)* … 54 triệu anh ạ. Anh đừng nói với {quan_ly_idol}.
     ~ qh("idol_het_thoi", 10)
 * [🩷 "Em có ghét {sieu_nhan_hong} không?"]
     idol_het_thoi: Ghét gì anh. Em chỉ sợ. Năm 2015 anh tìm ra em. Năm nay anh tìm ra người khác.
@@ -418,7 +418,7 @@ chi_dai: Anh. Ăn cơm chưa?
     chi_dai: Anh lo cái khác. Cái nặng để em.
     ~ qh("chi_dai", 5)
     ~ nghi(-5)
-* {gd_noi_that_huong} [🔒 "Hương… cảm ơn em hôm thang máy."]
+* {gd_noi_that_huong} [🔒 "{chi_dai}… cảm ơn em hôm thang máy."]
     chi_dai: Cảm ơn gì. Anh nói thật thì em gánh. Anh nói dối thì em đập. Đơn giản vậy thôi.
     ~ qh("chi_dai", 10)
     ~ cang_thang(-10)
@@ -435,7 +435,7 @@ dan_dau_tu: Anh! Đáy rồi anh. Đáy thật rồi. Vào là ăn.
     dan_dau_tu: *(thở dài, mở tab khác)* … Clip thật có tỷ lệ chia sẻ gấp 12 lần clip dựng. Anh muốn lên thì cho {sieu_nhan_hong} đi giúp người nhiều hơn, quay lại thật.
     ~ follow(5000)
     ~ qh("dan_dau_tu", 5)
-* [💸 "Ông nợ Bác Bình 2 triệu. Trả bác đi."]
+* [💸 "Ông nợ Bác {bac_bao_ve} 2 triệu. Trả bác đi."]
     dan_dau_tu: Anh… sao anh biết?
     giam_doc: Bác không nói. Tôi thấy ông đi cửa sau.
     dan_dau_tu: … Cuối tháng em trả. Lần này là trả thật.
@@ -481,8 +481,8 @@ thanh_xin_nghi: Dạ… em chào anh. Em hơi sốt… nhưng em vẫn đi làm 
 // ------------------------------------------------------------
 === giam_doc_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
-_Chòi bảo vệ. Ấm trà, cái radio, cái ghế bố. Bác Bình đang nghe tin thời tiết. {cho} nằm dưới chân._
-bac_bao_ve: Cậu Thắng. Ngồi.
+_Chòi bảo vệ. Ấm trà, cái radio, cái ghế bố. Bác {bac_bao_ve} đang nghe tin thời tiết. {cho} nằm dưới chân._
+bac_bao_ve: Cậu {giam_doc}. Ngồi.
 ~ gd_tra_binh = gd_tra_binh + 1
 * [☕ Ngồi uống trà, không nói gì.]
     _Mười phút. Radio báo mai mưa. Bác rót thêm trà hai lần._
@@ -495,7 +495,7 @@ bac_bao_ve: Cậu Thắng. Ngồi.
     bac_bao_ve: Thế thì tập lại. Ba mươi bảy tuổi vẫn tập được.
     ~ qh("bac_bao_ve", 10)
 * [🍌 "Bác có cần gì không ạ? Cháu mua."]
-    bac_bao_ve: Bác chẳng cần gì. Thằng Tuất cần xúc xích.
+    bac_bao_ve: Bác chẳng cần gì. Thằng {cho} cần xúc xích.
     { co(xuc_xich):
         ~ mat(xuc_xich)
         ~ qh("cho", 15)
@@ -521,7 +521,7 @@ sieu_nhan_hong: Sếp! Vì công lý và lượt view! *(tạo dáng)* Sếp ăn
 * [📈 "Em có muốn nổi tiếng thật không? Hay chỉ muốn giúp người?"]
     sieu_nhan_hong: *(đứng im, không tạo dáng)* … Nổi tiếng thì giúp được nhiều người hơn. Mà… cũng có người nhớ tên mình.
     giam_doc: Tên thật của em là gì?
-    sieu_nhan_hong: *(nói rất nhỏ)* … Nguyên. Mà sếp đừng gọi trước mặt ai nha.
+    sieu_nhan_hong: *(nói rất nhỏ)* … {sieu_nhan_hong}. Mà sếp đừng gọi trước mặt ai nha.
     ~ qh("sieu_nhan_hong", 15)
 * [🎭 "Tháo mũ một lần thôi, anh hứa viral."]
     sieu_nhan_hong: *(lùi lại)* Điều khoản số 1 mà sếp…
@@ -547,7 +547,7 @@ cho: Gâu.
 * [🐾 Xoa đầu.]
     ~ qh("cho", 5)
     cho: Gâu. *(nhắm mắt lại, hơi hé miệng cười kiểu chó)*
-* [👔 "Tuất, mày có biết sếp là ai không?"]
+* [👔 "{cho}, mày có biết sếp là ai không?"]
     cho: … *(ngáp, quay mông lại)*
     _Thông điệp rõ ràng._
     ~ gd_uy(-1)

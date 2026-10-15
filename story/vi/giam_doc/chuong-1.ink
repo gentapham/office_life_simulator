@@ -55,7 +55,7 @@ _Phóng viên của một trang tin nhỏ đã lên đèn flash. Mười giây n
     ~ qh("ke_toan", 15)
     _Bạn vẫn ký. Vì không ký thì tháng này không có lương cho ai cả. Nhưng lần này bạn ký chậm._
     sieu_nhan_hong: Sếp này cẩn thận ghê! Em thích!
-* [🎭 "Thương cứ để đấy, tí anh đọc."]
+* [🎭 "{ke_toan} cứ để đấy, tí anh đọc."]
     ~ gd_ky_khong_doc = true
     ~ gd_hua()
     _Bạn ký luôn, nụ cười hướng về ống kính. {ke_toan} nhìn bạn đúng một giây. Một giây rất dài._
@@ -113,14 +113,14 @@ _{thanh_ninh} chìa ra danh sách 22 ly trà sữa, size L, thêm trân châu._
 // ------------------------------------------------------------
 === giam_doc_0110_mung_bac_binh ===
 # ngay:1 # gio:15:00 # noi:choi_bao_ve # bat_buoc
-_Ngày Quốc tế Người cao tuổi. Cả công ty kéo xuống chòi bảo vệ, cầm theo một cái bánh bông lan cắm chữ "Bác Bình muôn năm"._
+_Ngày Quốc tế Người cao tuổi. Cả công ty kéo xuống chòi bảo vệ, cầm theo một cái bánh bông lan cắm chữ "Bác {bac_bao_ve} muôn năm"._
 bac_bao_ve: Thôi thôi… các cháu bày vẽ làm gì. Bác có già đâu.
 cho: Gâu! *(nhảy lên đòi bánh)*
 _Ai cũng quay sang nhìn bạn. Sếp phải nói vài câu._
-* [🎤 Kể chuyện ngày đầu: "Năm 2010, căn phòng 20 mét vuông, có anh và Bác Bình…"]
+* [🎤 Kể chuyện ngày đầu: "Năm 2010, căn phòng 20 mét vuông, có anh và Bác {bac_bao_ve}…"]
     ~ gd_uy(3)
     _Bạn kể 12 phút. {hong_hot} ngáp. {chua_te_deadline} ngủ đứng._
-    bac_bao_ve: Cậu Thắng kể sai rồi. Hôm ấy cậu đi dép lê, không phải giày tây.
+    bac_bao_ve: Cậu {giam_doc} kể sai rồi. Hôm ấy cậu đi dép lê, không phải giày tây.
     _Cả công ty cười ồ. Bạn đỏ mặt, nhưng thấy ấm._
     ~ qh("bac_bao_ve", 5)
 * [😇 Rót trà mời bác, nói ngắn: "Mười sáu năm rồi bác nhỉ. Cảm ơn bác."]
@@ -128,12 +128,12 @@ _Ai cũng quay sang nhìn bạn. Sếp phải nói vài câu._
     ~ qh("bac_bao_ve", 10)
     ~ gd_tra_binh = gd_tra_binh + 1
     ~ uong(15)
-* [🎭 "Bác Bình ơi, sang năm cháu mua cho bác cái chòi mới, có điều hòa!"]
+* [🎭 "Bác {bac_bao_ve} ơi, sang năm cháu mua cho bác cái chòi mới, có điều hòa!"]
     ~ gd_hua()
     bac_bao_ve: Thế à. Bác chờ.
     _Bác không cười. Bác chỉ nhìn sang cái tủ gỗ nhỏ trong góc chòi rồi rót thêm trà._
 - cho: Gâu gâu! *(ăn mất miếng bánh có chữ "muôn")*
-_Bánh còn lại "Bác Bình năm". Không ai sửa._
+_Bánh còn lại "Bác {bac_bao_ve} năm". Không ai sửa._
 -> END
 
 // ------------------------------------------------------------
@@ -195,7 +195,7 @@ _Mọi ánh mắt đổ về bạn. Đây là lúc chốt con số._
 _Bạn đang leo cầu thang lên sân thượng, túi gậy golf trên vai. Đối tác Răng Hồng hẹn đánh thử vài gậy._
 _Tiếng dép lẹp xẹp đuổi theo. {ke_toan}, tay cầm bản hợp đồng, có kẹp một cái kính lúp._
 ke_toan: Anh {giam_doc}! Anh chờ em chút!
-giam_doc: Thương à, anh đang vội. Có gì nói nhanh nhé. # hen_gio:8
+giam_doc: {ke_toan} à, anh đang vội. Có gì nói nhanh nhé. # hen_gio:8
 * {gd_ky_khong_doc} [🧐 "Trang 47 à? Đưa anh xem nào."]
     ~ gd_doc_trang_47 = true
     ~ phat_hien(trang_47)
@@ -207,7 +207,7 @@ giam_doc: Thương à, anh đang vội. Có gì nói nhanh nhé. # hen_gio:8
     ~ qh("ke_toan", 15)
 * {gd_doc_trang_47} [😮‍💨 "Anh đọc rồi. Anh biết. Em đừng nói với ai nhé."]
     ke_toan: Em làm sổ cho anh từ 2024 rồi. Em có nói với ai đâu.
-    _Hai người đứng im. Ở trên, đối tác gọi "Anh Thắng ơi, tee-off!"._
+    _Hai người đứng im. Ở trên, đối tác gọi "Anh {giam_doc} ơi, tee-off!"._
     ~ qh("ke_toan", 10)
 * [🙅 "Em lo xa quá. Anh không ép, tùy em."]
     ~ gd_tuy_em("ke_toan")
@@ -227,7 +227,7 @@ giam_doc: Thương à, anh đang vội. Có gì nói nhanh nhé. # hen_gio:8
 # ngay:3 # gio:08:00 # noi:biet_thu
 _Thứ 7. Sân golf mini sau biệt thự. Cỏ đã ba tuần chưa cắt vì bạn cho anh làm vườn nghỉ "tạm thời"._
 _Điện thoại hiện số lạ. Bạn biết là ai._
-nv_ngan_hang: Dạ anh Thắng ơi, em bên Tín Dụng Đen Đủi ạ. Khoản vay của anh tới hạn ngày 15/11 rồi ạ.
+nv_ngan_hang: Dạ anh {giam_doc} ơi, em bên Tín Dụng Đen Đủi ạ. Khoản vay của anh tới hạn ngày 15/11 rồi ạ.
 * [💼 "Em yên tâm. Công ty anh vừa ký một deal 5 tỷ."]
     nv_ngan_hang: Dạ vậy là anh tất toán được luôn hả anh?
     giam_doc: Ờ… tiền ấy là tiền chiến dịch. Nhưng cuối tháng sẽ có thêm 5 tỷ nữa.
@@ -253,8 +253,8 @@ sieu_nhan_hong: Ố ồ! Cún mặc áo hoa kìa! Gâu gâu! *(giả tiếng s�
 cho: GRỪ… GÂU GÂU GÂU!
 _{cho} lao tới, ngoạm được chiếc găng tay hồng của {sieu_nhan_hong}, chạy biến vào gầm cầu thang._
 sieu_nhan_hong: Ê! Găng tay của anh! Trả đây!
-bac_bao_ve: Tuất! Về đây! *(nhìn bạn)* Cậu Thắng xem…
-* [💼 Bênh đối tác: "Bác Bình, bác nhốt con chó lại giúp cháu. Đối tác 5 tỷ đấy."]
+bac_bao_ve: {cho}! Về đây! *(nhìn bạn)* Cậu {giam_doc} xem…
+* [💼 Bênh đối tác: "Bác {bac_bao_ve}, bác nhốt con chó lại giúp cháu. Đối tác 5 tỷ đấy."]
     ~ qh("sieu_nhan_hong", 10)
     ~ qh("bac_bao_ve", -15)
     ~ qh("cho", -20)
@@ -266,7 +266,7 @@ bac_bao_ve: Tuất! Về đây! *(nhìn bạn)* Cậu Thắng xem…
     ~ qh("cho", 20)
     ~ qh("sieu_nhan_hong", -5)
     sieu_nhan_hong: Hơ… anh nói cũng đúng. Thôi em hông chọc nữa… hôm nay.
-    _Bác Bình gật đầu với bạn. Một cái gật rất nhẹ._
+    _Bác {bac_bao_ve} gật đầu với bạn. Một cái gật rất nhẹ._
 * [🤝 Lấy xúc xích trong xe ra, ngồi xuống dỗ cả hai.]
     { co(xuc_xich):
         ~ mat(xuc_xich)
@@ -280,7 +280,7 @@ bac_bao_ve: Tuất! Về đây! *(nhìn bạn)* Cậu Thắng xem…
     cho: Gâu. *(nhai, vẫn lườm cái mũ hồng)*
 - _Trong lúc mọi người đuổi theo {cho}, {sieu_nhan_hong} lén nhét con gà cao su của {cho} vào sau tủ mạng tầng 1, cười khúc khích._
 * [😶 Giả vờ không thấy.]
-    _Bạn không thấy gì. Giống Bác Bình._
+    _Bạn không thấy gì. Giống Bác {bac_bao_ve}._
 * [💬 "Anh {sieu_nhan_hong}, trả gà cho nó đi."]
     sieu_nhan_hong: Hì hì, em giấu cho vui thôi mà! Mai em trả!
     _Câu "mai em trả" nghe quen quen. Giống giọng bạn._

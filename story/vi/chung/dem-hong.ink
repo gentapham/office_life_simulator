@@ -433,6 +433,7 @@ _Đoạn đó được cắt ra, đăng lại, lên xu hướng thêm hai ngày.
 { vai != "dan_dau_tu":
     dan_dau_tu: Số liệu nói, người ta theo dõi cái mặt nhiều hơn cái mũ 34%. Lần đầu tiên số liệu làm anh muốn khóc.
 }
+_Tờ phụ lục gia hạn được {ke_toan} kẹp vào bìa hồ sơ, ngay sau trang 47. Lần này chị đọc nó ba lần, rồi gật đầu._
 _{cong_ty} sống thêm một mùa. Nguyễn {sieu_nhan_hong} được yêu thương bằng chính gương mặt của mình._
 -> chung_3110_mot_thang_sau
 
@@ -488,6 +489,7 @@ _Có một trường mẫu giáo ở Ven Đô mời Siêu Nhân Hồng tới "t�
 - else:
     _Siêu Nhân Hồng đỡ đứa nhỏ dậy. Nó nói: "Chú cũng té hoài mà!" Trong mũ có tiếng cười, to tới mức kính mũ bị mờ._
 }
+_Tờ phụ lục gia hạn tới Tết được {ke_toan} kẹp ngay sau trang 47, kèm ghi chú bút chì: "Lần này đọc rồi."_
 _{cong_ty} sống. Siêu Nhân Hồng không phải siêu sao. Siêu Nhân Hồng là meme quốc dân._
 -> chung_3110_mot_thang_sau
 
@@ -538,6 +540,10 @@ _Sáng hôm sau, 6 giờ 30, cổng {cong_ty} vẫn mở. Như mười sáu năm
     thuc_tap_sinh: *(thu dọn bàn thực tập)* Dạ… em hết thực tập rồi ạ. Em… em cảm ơn mọi người ạ. *(cúi chào 90 độ, lâu hơn mọi khi)*
 }
 _Ở góc kho, chiếc găng tay hồng từ ngày 4/10 vẫn nằm trong đống báu vật dưới gầm cầu thang. Không ai còn đi tìm nó._
+_Một tuần sau, nội quy "mỗi ngày một món đồ hồng" bị gỡ khỏi bảng thông báo. Không ai gỡ cái nơ hồng trên cổng. Nó bạc màu dần dưới nắng._
+_Trên mạng, cái tên "Siêu Nhân Hồng" được nhắc đúng một lần trong tháng 11, trong một bài tổng hợp "Những chiến dịch quảng bá thất bại năm 2026". Ở vị trí số 7. Không có ảnh._
+_Có một buổi chiều mưa, ở Đại Lộ Kẹt Xe, có người thấy một chiếc xe chết máy được ai đó đẩy giùm lên lề. Người đẩy không mặc đồ hồng. Chỉ mặc áo mưa. Không ai quay._
+_Người được giúp hỏi tên. Người kia chỉ cười, gãi đầu, rồi đi._
 _Siêu Nhân Hồng chìm nghỉm. Không ai biết người trong bộ đồ hồng tên gì._
 -> chung_3110_mot_thang_sau
 
@@ -588,6 +594,9 @@ _Cả phòng họp im lặng. Rồi {chi_dai} đứng dậy, rót trà cho từn
 { vai != "bac_bao_ve":
     _Tối đó, bác {bac_bao_ve} đặt lên bàn chòi một phong bì dán kín. Bác nhìn nó cả đêm. Chưa mở._
 }
+_Một tuần sau, hashtag rơi khỏi top xu hướng. Không phải vì người ta tha thứ. Mà vì người ta đã tìm được người khác để ghét._
+_Lượt theo dõi dừng lại ở một con số không ai muốn chụp màn hình._
+_Fanpage {cong_ty} khóa bình luận. Bài đăng cuối cùng là tấm ảnh Siêu Nhân Hồng tạo dáng chữ V ở cổng ngày 1/10, chưa ai bình luận gì xấu. Hồi đó chưa ai biết Siêu Nhân Hồng là ai._
 _Siêu Nhân Hồng bị tẩy chay. Mạng xã hội quay lưng. Chỉ có những người được giúp, ngoài đời thật, là chưa bao giờ quay lưng. Nhưng họ không ở trên mạng._
 -> chung_3110_mot_thang_sau
 
@@ -639,6 +648,9 @@ _Trong kho dưới gầm cầu thang, chiếc găng tay hồng vẫn nằm đó,
 { vai != "thuc_tap_sinh":
     thuc_tap_sinh: Dạ… em vẫn thấy người trong phim của chị {bien_kich} giống một người lắm ạ. Mà chắc em nhớ nhầm ạ.
 }
+_Phòng chờ ở tầng 2 được dọn sạch. Đĩa bánh chuối chiên cuối cùng được cất vào tủ lạnh, dán nhãn "CỦA N. - ĐỪNG ĐỤNG". Một tháng sau vẫn không ai đụng._
+_Điều khoản số 4 của hợp đồng không còn hiệu lực. Nhưng sáng nào cô Năm cơm tấm cũng hỏi: "Cậu đồ hồng hôm nay không ghé hả con?"_
+_Trên fanpage LL-Entertainment, mỗi bài đăng về Siêu Nhân Hồng đều có hàng nghìn lượt thích. Và luôn có một bình luận, từ một tài khoản tên "Hội Chó Cổng G": một tấm ảnh chụp chó vàng ngồi trước cổng, không chú thích._
 _Siêu Nhân Hồng bị cướp mất, ngay trước buổi diễn lớn nhất. Người theo dõi đi theo. Chiếc mũ thì không bao giờ quay lại._
 -> chung_3110_mot_thang_sau
 

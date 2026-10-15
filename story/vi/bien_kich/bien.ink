@@ -72,7 +72,12 @@ VAR bk_ghi_cong_co_nam = false
 
 === function bk_that(n) ===
 // Không chặn trên 100: hai loại ý tưởng được so với nhau ngày 30/10
-~ bk_y_tuong_that = bk_y_tuong_that + n
+// Ý tưởng thật lớn chậm hơn ý tưởng mượn: mỗi lần chỉ được 2/3 số điểm
+{ n > 0:
+    ~ bk_y_tuong_that = bk_y_tuong_that + (n * 2) / 3
+- else:
+    ~ bk_y_tuong_that = bk_y_tuong_that + n
+}
 { bk_y_tuong_that < 0:
     ~ bk_y_tuong_that = 0
 }

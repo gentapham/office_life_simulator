@@ -6,6 +6,7 @@
 // ------------------------------------------------------------
 === truong_phong_2110_len_phong_sep ===
 # ngay:21 # gio:10:00 # noi:phong_giam_doc # bat_buoc
+~ tp_lich_co_dinh()
 _Mốc 3: 500.000 người theo dõi. Sáng nay, một bài đăng trên trang Confession G-Entertainment bóc chuyện {giam_doc} thế chấp biệt thự. Cả công ty xôn xao._
 _{giam_doc} ngồi sau bàn, cạnh tấm bằng "Doanh nhân của năm", mắt thâm như vừa thức với ngân hàng cả đêm._
 { nguoi_theo_doi < 500000 || tp_so_cuoc_hop >= 45:
@@ -98,6 +99,7 @@ _{editor} không quay lại. Bạn đứng ở cửa một lúc, rồi lên máy
 // ------------------------------------------------------------
 === truong_phong_2210_thue ===
 # ngay:22 # gio:09:20 # noi:phong_san_xuat # bat_buoc
+~ tp_lich_co_dinh()
 _Đoàn kiểm tra thuế bất ngờ tới. Trưởng đoàn là Chú Liêm, 55 tuổi, cặp da đen, đi đâu cũng nhìn xuống đất xem có chó không._
 ke_toan: *(nói rất chậm)* Anh Nhật. Đoàn thuế lên tầng 2 rồi. Phòng anh làm ơn trông giống như đang làm việc.
 * [📅 "Cả phòng vào phòng họp. Mình họp nhanh 5 phút về… mọi thứ."]
@@ -150,6 +152,9 @@ chu_liem: File gốc đâu? Có file gốc là xong.
 // ------------------------------------------------------------
 === truong_phong_2210_phong_thu_tang_30 ===
 # ngay:22 # gio:21:00 # noi:sky_ao_tang_30 # dieu_kien:tp_mo_phong_thu
+{ not tp_mo_phong_thu:
+    -> END
+}
 _Tối thứ Năm. Penthouse tầng 30, Sky Ảo. Rộng, trống, lạnh. Bể cá to hơn cả phòng khách nhà bạn._
 _{con_ong_chau_cha} mở khóa căn phòng cuối hành lang. Một cây đàn, một bàn phím, một cái micro, và một màn hình có 41 tệp tên "Hồng Là Thái Độ – bản 1" tới "bản 41"._
 con_ong_chau_cha: Ông là người thứ nhất bước vô đây đó. Chú tui còn chưa vô.
@@ -172,6 +177,7 @@ _Bạn dựng cái bảng trắng gấp gọn lên cạnh cây đàn. Nó lạc 
 // ------------------------------------------------------------
 === truong_phong_2310_chuan_bi_livestream ===
 # ngay:23 # gio:13:00 # noi:studio_tang_2 # bat_buoc
+~ tp_lich_co_dinh()
 _Sinh nhật Siêu Nhân Hồng, 31 tuổi. Livestream lúc 15:00, bạn làm đạo diễn. Kịch bản có màn "nhà tài trợ BTT Global, Mr. Kevin Trộn, gửi lời chúc". Nhưng Mr. Kevin Trộn… không có thật._
 sales: *(kéo bạn ra góc)* Anh Nhật, cứu em. Cần một người đóng Mr. Kevin Trộn, đeo kính đen, nói tiếng Anh vài câu.
 * [👔 Chọn {thuc_tap_sinh}: "Duy mặc vest trông rất… tài chính."]
@@ -322,6 +328,7 @@ _Chủ nhật. Căn 501. Bạn đứng trước bảng trắng, định tổ ch�
 // ------------------------------------------------------------
 === truong_phong_2610_giao_ban_tin_don ===
 # ngay:26 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
+~ tp_lich_co_dinh()
 _Họp giao ban. Tin đồn "cắt giảm nhân sự nếu Siêu Nhân Hồng thất bại" lan khắp công ty. Nghe nói danh sách có tên {thuc_tap_sinh}._
 ~ tp_hop(1)
 thuc_tap_sinh: *(nhỏ giọng)* Dạ… anh Nhật… nếu em bị cắt thì em… dạ em hiểu ạ.
@@ -343,6 +350,9 @@ thuc_tap_sinh: *(nhỏ giọng)* Dạ… anh Nhật… nếu em bị cắt thì 
 // ------------------------------------------------------------
 === truong_phong_2610_trinh_bay_bai_hat ===
 # ngay:26 # gio:11:00 # noi:phong_giam_doc # dieu_kien:tp_giup_long_trinh_bay
+{ not tp_giup_long_trinh_bay:
+    -> END
+}
 _Phòng giám đốc. {con_ong_chau_cha} đứng trước mặt chú, tay cầm cái loa nhỏ. Bạn đứng phía sau, cầm cái bảng trắng gấp gọn như cầm khiên._
 con_ong_chau_cha: Chú… cháu có bài này. Cháu tự viết. Cho Siêu Nhân Hồng.
 _Bản 41 vang lên. {giam_doc} ngồi im. Tới đoạn bridge, {giam_doc} cởi kính ra._
@@ -399,6 +409,7 @@ _Kênh có con cú. Kênh bạn học mỗi đêm. Giọng ngái ngủ nói "ren
 // ------------------------------------------------------------
 === truong_phong_2710_ll_toi ===
 # ngay:27 # gio:10:30 # noi:sanh_tang_tret # bat_buoc
+~ tp_lich_co_dinh()
 _LL-Entertainment ra tay. Lưu Lực đích thân tới, vest trắng, tóc vuốt keo, ôm một tập hồ sơ màu xanh lá chuối. Lời mời gấp ba cho Siêu Nhân Hồng._
 luu_luc: Chào các bạn {cong_ty}. Việc hôm nay phải xong từ hôm qua. Mà hôm qua các bạn đang… họp thì phải?
 _Lưu Lực liếc thẳng vào bạn. Rồi ánh mắt Lưu Lực dừng ở {chi_dai}, đang đứng ở chân cầu thang. Tập hồ sơ rơi xuống đất, giấy bay tứ tung._

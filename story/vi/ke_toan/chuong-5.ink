@@ -38,14 +38,14 @@ _Mốc 3: 500.000 người theo dõi. Hiện tại: {nguoi_theo_doi}._
     _Kèm theo tin đồn là một chi tiết rất cụ thể: "Nghe nói hợp đồng có trang 47, thất bại là hoàn 10 tỷ." Chỉ có hai người nghe bạn nói câu đó ở pantry. Một người là {chi_dai}._
     ~ kt_ngu(10)
 }
-hr: *(gõ cửa, cười)* Thương ơi, em tính giùm anh chi phí trợ cấp thôi việc cho… 7 người. Anh chỉ muốn chuẩn bị thôi.
+hr: *(gõ cửa, cười)* {ke_toan} ơi, em tính giùm anh chi phí trợ cấp thôi việc cho… 7 người. Anh chỉ muốn chuẩn bị thôi.
 * [🧾 "Tên 7 người đâu anh? Không có tên thì không có số."]
     hr: *(do dự)* … Có {thuc_tap_sinh} với {thanh_xin_nghi}.
     _Hai người lương thấp nhất. Bạn nhớ cái thẻ kim cương, nhớ tấm thẻ thí sinh cuộc thi hát. Không ai trong danh sách là người dễ thay._
     ~ kt_ngu(5)
     ~ phat_hien(danh_sach_cat_giam)
-* [🗄️ "Anh Tuấn, đừng lập danh sách. Nếu tới lúc đó, có tiền cho mọi người một tháng."]
-    hr: *(nụ cười tắt)* … Tiền ở đâu ra Thương?
+* [🗄️ "Anh {hr}, đừng lập danh sách. Nếu tới lúc đó, có tiền cho mọi người một tháng."]
+    hr: *(nụ cười tắt)* … Tiền ở đâu ra {ke_toan}?
     ke_toan: Đến lúc đó anh sẽ biết. Giờ thì cất danh sách đi.
     ~ qh("hr", 10)
     ~ kt_them_dau_vet(1)
@@ -58,7 +58,7 @@ hr: *(gõ cửa, cười)* Thương ơi, em tính giùm anh chi phí trợ cấp
 === ke_toan_2210_thue_go_cua ===
 # ngay:22 # gio:08:30 # noi:phong_ke_toan # bat_buoc
 _8:30. {thanh_ninh} chạy lên tầng 2, mặt trắng bệch._
-thanh_ninh: Chị Thương ơi! Đoàn kiểm tra thuế! Ba người! Đang ở sảnh! Trưởng đoàn tên Liêm, nhìn như chưa từng cười chị ơi!
+thanh_ninh: Chị {ke_toan} ơi! Đoàn kiểm tra thuế! Ba người! Đang ở sảnh! Trưởng đoàn tên Liêm, nhìn như chưa từng cười chị ơi!
 _Cả công ty lập tức giả vờ làm việc chăm chỉ. {chua_te_deadline} lần đầu mở file Excel. {hong_hot} tắt Tóp-tóp, mở… Word._
 _Bạn có 30 phút trước khi họ lên tầng 2. Mười năm hồ sơ._
 ~ kt_ngu(10)
@@ -74,7 +74,7 @@ _Bạn có 30 phút trước khi họ lên tầng 2. Mười năm hồ sơ._
 # ngay:22 # gio:10:30 # noi:phong_ke_toan # bat_buoc
 _Chú Liêm ngồi đối diện bạn, đọc sổ cái tháng 9 rất chậm. {cho} đi ngang cửa phòng, chú Liêm co chân lên ghế._
 chu_liem: Chó… chó ai đây?! *(rồi lấy lại bình tĩnh, đẩy kính lão)*
-chu_liem: Cô Thương. Sổ cô sạch quá. Sạch quá thì tôi nghi. Cô có khoản tiền mặt nào ngoài sổ không?
+chu_liem: Cô {ke_toan}. Sổ cô sạch quá. Sạch quá thì tôi nghi. Cô có khoản tiền mặt nào ngoài sổ không?
 _{thuc_tap_sinh} đang đứng sau lưng chú Liêm, ôm xấp hồ sơ, nhìn bạn._ # hen_gio:6
 * [🤝 "Dạ có. Đây là sổ tay ghi từng khoản, cháu để dành trả lương nếu công ty gặp khó. Cháu xin nộp lại vào sổ chung ngay hôm nay."]
     _Chú Liêm đọc cuốn sổ tay 10 phút. Từng trang. Từng dòng: "+8. Không đi du lịch Tết." "+5. Không mua kính mới."_
@@ -142,10 +142,10 @@ _Bạn mở két. Nhìn cuốn sổ. Đóng két._
 === ke_toan_2310_phong_cho ===
 # ngay:23 # gio:09:30 # noi:phong_cho_snh # bat_buoc
 _Sinh nhật {sieu_nhan_hong}, 31 tuổi. Phòng chờ. {sieu_nhan_hong} vừa ăn bánh chuối chiên vừa ký tặng, dầu dính đầy giấy._
-sieu_nhan_hong: Thương ơi! Ăn bánh hông em? Hôm ký hợp đồng anh cũng ăn y vầy nè, ngon dữ lắm!
+sieu_nhan_hong: {ke_toan} ơi! Ăn bánh hông em? Hôm ký hợp đồng anh cũng ăn y vầy nè, ngon dữ lắm!
 _Bạn nhìn tờ giấy ký tặng dính dầu. Hai tờ giấy dính vào nhau, cầm lên tưởng là một._
 _Bạn chợt nhớ: sáng 1/10, tờ trang 47 trong bản gốc… dày hơn các tờ khác._
-* [🧾 "Anh Nguyên, phòng chờ có bánh là đúng điều khoản số 4 rồi. Hóa đơn bánh tuần này đâu anh?"]
+* [🧾 "Anh {sieu_nhan_hong}, phòng chờ có bánh là đúng điều khoản số 4 rồi. Hóa đơn bánh tuần này đâu anh?"]
     ~ kt_hoa_don()
     sieu_nhan_hong: *(cười nghiêng ngả)* Em đúng là kế toán chính hiệu!
     ~ qh("sieu_nhan_hong", 5)
@@ -154,10 +154,10 @@ _Bạn chợt nhớ: sáng 1/10, tờ trang 47 trong bản gốc… dày hơn c�
     ~ kt_manh_moi_47b = true
     ~ kt_ngu(-5)
     _Tim bạn đập lỡ một nhịp._
-    ** {qh_sieu_nhan_hong >= 30} [🔒 "Anh Nguyên, trang 47b anh viết gì? Anh nói thật với em đi."]
+    ** {qh_sieu_nhan_hong >= 30} [🔒 "Anh {sieu_nhan_hong}, trang 47b anh viết gì? Anh nói thật với em đi."]
         _{sieu_nhan_hong} nhìn quanh. Rồi tháo mũ. Một gương mặt bình thường, hơi rụt rè._
         sieu_nhan_hong: Ờm… anh sợ mọi người cực vì anh. Nếu không thành thì thôi, anh hông lấy lại tiền.
-        sieu_nhan_hong: Mà… anh quên kêu anh Thắng ký. Anh tưởng ký trang chính là đủ rồi.
+        sieu_nhan_hong: Mà… anh quên kêu anh {giam_doc} ký. Anh tưởng ký trang chính là đủ rồi.
         ~ kt_mo_nhanh_47b = true
         ~ phat_hien(trang_47b)
         ~ kt_ngu(-40)
@@ -192,7 +192,7 @@ sales: Chị ơi! Ứng em 3 triệu thuê bộ vest với cặp kính đen cho 
     bac_bao_ve: Ừ. Ngồi đi.
     ~ kt_ngu(-5)
     ~ qh("bac_bao_ve", 5)
-- _Cuối livestream, {sieu_nhan_hong} cầm micro: "{chua_te_deadline} ơi… em thích anh." Hashtag \#VũƠiTrảLờiĐi lên xu hướng trong 20 phút._
+- _Cuối livestream, {sieu_nhan_hong} cầm micro: "{chua_te_deadline} ơi… em thích anh." Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên xu hướng trong 20 phút._
 _Rồi {cho} lao vào bàn. Cái bánh kem hồng đổ ụp. Bạn ghi vào sổ: "Bánh kem: 1.200.000đ. Hư hỏng: 100%. Lượt xem: rất nhiều."_
 ~ follow(60000)
 -> END
@@ -229,7 +229,7 @@ _Bạn gọi nó là trang 47b. Bạn ngồi nhìn nó rất lâu. Rồi bạn k
 * [📁 Bỏ vào bìa nhựa, cất vào két. Mai đi xin chữ ký.]
     ~ kt_keo(3)
 * [📞 Gọi {giam_doc} ngay bây giờ.]
-    giam_doc: *(giọng ngái ngủ)* Thương à… có chuyện gì thế em?
+    giam_doc: *(giọng ngái ngủ)* {ke_toan} à… có chuyện gì thế em?
     ke_toan: Anh. Mai anh lên sớm. Em có một trang anh phải đọc. Lần này anh phải đọc.
     giam_doc: … Ừ. Anh đọc.
     ~ qh("giam_doc", 5)
@@ -265,7 +265,7 @@ _Cùng lúc, điện thoại cả phòng rung: clip {idol_het_thoi} hát trong b
     -> END
 }
 _Chủ nhật. Bạn đứng trước cổng sắt biệt thự số 1, Đồi Ngân Hàng, ôm cái bìa nhựa có trang 47b. Cỏ sân golf mọc cao tới mắt cá._
-giam_doc: *(mở cổng, áo thun cũ, dép lê)* Thương? Chủ nhật mà em…
+giam_doc: *(mở cổng, áo thun cũ, dép lê)* {ke_toan}? Chủ nhật mà em…
 * [📄 "Anh đọc trang này. Rồi ký."]
     _{giam_doc} đọc. Đọc lần thứ hai. Tay cầm tờ giấy hơi run._
     giam_doc: Cậu ấy… không đòi tiền lại nếu mình cố hết sức?
@@ -308,7 +308,7 @@ giam_doc: *(mở cổng, áo thun cũ, dép lê)* Thương? Chủ nhật mà em�
 === ke_toan_2610_mua_kenh ===
 # ngay:26 # gio:10:00 # noi:phong_giam_doc # bat_buoc
 _Thứ Hai. Tin đồn "cắt giảm nếu Siêu Nhân Hồng thất bại" lan khắp công ty. Chiều qua chiếu thử phim ngắn "Người Hùng Không Tên". Hay. Hay tới mức {thuc_tap_sinh} ngồi khóc ở hàng cuối._
-giam_doc: Thương, duyệt cho anh 200 triệu. Anh mua kênh Diu-túp "Cú Đêm Cắt Ghép" của {editor}. Gần một triệu người đăng ký. Đổi tên thành kênh của {sieu_nhan_hong}.
+giam_doc: {ke_toan}, duyệt cho anh 200 triệu. Anh mua kênh Diu-túp "Cú Đêm Cắt Ghép" của {editor}. Gần một triệu người đăng ký. Đổi tên thành kênh của {sieu_nhan_hong}.
 * [🧾 "Anh hỏi {editor} chưa? Kênh của người ta làm 6 năm."]
     giam_doc: … Chưa.
     ke_toan: Vậy hóa đơn chưa có, người bán chưa có. Em không duyệt.
@@ -333,11 +333,11 @@ giam_doc: Thương, duyệt cho anh 200 triệu. Anh mua kênh Diu-túp "Cú Đ�
 # ngay:27 # gio:11:00 # noi:cong_cong_ty # bat_buoc
 _11:00. Một chiếc xe trắng đỗ trước cổng. Lưu Lực bước xuống, vest trắng, tóc vuốt keo, ôm tập hồ sơ xanh lá chuối._
 _Đúng lúc đó, {chi_dai} từ kho sự kiện đi ra. Lưu Lực nhìn {chi_dai}, mặt trắng bệch. Tập hồ sơ rơi xuống, giấy bay khắp sân._
-luu_luc: C… chị Hương… Quán Ốc Đêm… mười năm trước…
+luu_luc: C… chị {chi_dai}… Quán Ốc Đêm… mười năm trước…
 chi_dai: Ủa? À… cái ông bị tô ốc len hả?
 _Một tờ giấy bay tới chân bạn. "Thư mời: Kế toán trưởng LL-Entertainment. Người nhận: {ke_toan}. Lương: gấp đôi."_
 * [🧾 Nhặt lên, đưa lại cho Lưu Lực: "Anh làm rơi hóa đơn nè."]
-    luu_luc: *(giật lại)* Chị Thương… chị đọc rồi thì càng tốt. Tối nay em gửi email.
+    luu_luc: *(giật lại)* Chị {ke_toan}… chị đọc rồi thì càng tốt. Tối nay em gửi email.
     ke_toan: Em đọc rồi. Chữ cỡ 12, dễ đọc lắm anh.
     ~ phat_hien(ll_moi_nguyen)
 * [😂 Đứng xem Lưu Lực nhặt giấy 4 phút. Không giúp.]
@@ -354,7 +354,7 @@ _Một tờ giấy bay tới chân bạn. "Thư mời: Kế toán trưởng LL-E
 === ke_toan_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:15:30 # noi:phong_ke_toan
 _{sales} chạy vào, thở hổn hển._
-sales: Chị Thương! Sữa Chua Hồng Hào ở Ven Đô gọi em! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thật! Lần này thật!
+sales: Chị {ke_toan}! Sữa Chua Hồng Hào ở Ven Đô gọi em! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thật! Lần này thật!
 _Phòng kế toán im lặng. Bạn có 312 triệu lý do để không tin._
 * [📞 "Đưa số đây. Chị gọi xác minh. Ngay."]
     _Đầu dây bên kia: một giọng bà cụ, chậm rãi. "Bên cô thấy cậu Siêu Nhân giúp người, cô thương. Cô tài trợ. Hóa đơn đỏ cô xuất được, con cứ yên tâm."_
@@ -379,7 +379,7 @@ _Phòng kế toán im lặng. Bạn có 312 triệu lý do để không tin._
 === ke_toan_2710_email_23h ===
 # ngay:27 # gio:23:00 # noi:nha_so_18 # bat_buoc
 _23:00. Email mới. Người gửi: Lưu Lực, CEO LL-Entertainment._
-luu_luc: *(email)* "Chào chị Thương. Ở LL-Entertainment, lương luôn về đúng ngày, hóa đơn luôn đủ, và không ai ký hợp đồng mà không đọc. Lương gấp đôi. Chị suy nghĩ nhé."
+luu_luc: *(email)* "Chào chị {ke_toan}. Ở LL-Entertainment, lương luôn về đúng ngày, hóa đơn luôn đủ, và không ai ký hợp đồng mà không đọc. Lương gấp đôi. Chị suy nghĩ nhé."
 _Hôm nay LL cũng gửi lời mời gấp ba cho {sieu_nhan_hong}. Bạn chưa biết người ta đã trả lời chưa._
 * [🧾 Trả lời: "Cảm ơn anh. Hóa đơn của lời mời này đâu anh?"]
     ~ kt_ll_email = 1

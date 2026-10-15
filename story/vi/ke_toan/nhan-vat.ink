@@ -8,7 +8,7 @@
 === ke_toan_tudo_giam_doc ===
 # npc:giam_doc
 _Phòng giám đốc. {giam_doc} đang tập swing gậy golf giữa phòng kính, suýt trúng cái bằng khen BTT Global trên tường._
-giam_doc: Thương à! Vào đi em. Có chuyện tiền à?
+giam_doc: {ke_toan} à! Vào đi em. Có chuyện tiền à?
 * [🧾 "Anh nộp hóa đơn tiền xăng ba tuần nay chưa?"]
     ~ kt_hoa_don()
     giam_doc: *(lục túi, ra một nắm giấy nhàu)* … Có đây. Hơi… nhàu.
@@ -41,7 +41,7 @@ giam_doc: Thương à! Vào đi em. Có chuyện tiền à?
 === ke_toan_tudo_ran_doc ===
 # npc:ran_doc
 _{ran_doc} đứng ở cửa phòng kế toán, tay cầm phiếu tạm ứng, nụ cười rất ngọt._
-ran_doc: Dạ chị Thương ơi, em xin tạm ứng 500 nghìn tổ chức sinh nhật cho phòng mình. Mà nói nhỏ thôi nha… chị có nghe gì về anh Siêu Nhân Hồng chưa?
+ran_doc: Dạ chị {ke_toan} ơi, em xin tạm ứng 500 nghìn tổ chức sinh nhật cho phòng mình. Mà nói nhỏ thôi nha… chị có nghe gì về anh Siêu Nhân Hồng chưa?
 * [🧾 "Danh sách sinh nhật đâu em? Hóa đơn bánh đâu em?"]
     ~ kt_hoa_don()
     ran_doc: *(đưa ra ngay, đủ cả)* Dạ đây chị.
@@ -51,7 +51,7 @@ ran_doc: Dạ chị Thương ơi, em xin tạm ứng 500 nghìn tổ chức sinh
     ran_doc: Tui chỉ nói sự thật thôi mà… nghe nói ảnh hồi nhỏ hay bắt nạt con nít trong xóm. Chị giữ sổ, chị có thấy ảnh trả tiền gì lạ hông?
     ke_toan: Chị giữ sổ công ty. Không giữ chuyện xóm.
     ~ qh("ran_doc", -5)
-* [🐍 "Hiếu. Mấy hôm trước em đứng ở cửa nhà vệ sinh pantry lâu lắm đúng không?"]
+* [🐍 "{ran_doc}. Mấy hôm trước em đứng ở cửa nhà vệ sinh pantry lâu lắm đúng không?"]
     ran_doc: *(nụ cười không đổi, nhưng mắt chớp một cái)* Dạ… em đau bụng chị ơi.
     { kt_ran_doc_nghe_47:
         ke_toan: Đau bụng mà nghe rõ hai chữ "trang 47".
@@ -66,14 +66,14 @@ ran_doc: Dạ chị Thương ơi, em xin tạm ứng 500 nghìn tổ chức sinh
 === ke_toan_tudo_truong_phong ===
 # npc:truong_phong
 _{truong_phong} ôm laptop, đứng chờ ngoài cửa phòng kế toán từ lúc nào._
-truong_phong: Chị Thương ơi, em xin duyệt ngân sách cho… một cuộc họp về việc giảm số cuộc họp ạ. Tiền nước, tiền in slide.
+truong_phong: Chị {ke_toan} ơi, em xin duyệt ngân sách cho… một cuộc họp về việc giảm số cuộc họp ạ. Tiền nước, tiền in slide.
 * [🧾 "Họp về việc giảm họp thì có bao nhiêu slide?"]
     truong_phong: Dạ… 46 slide ạ.
     ke_toan: In 46 slide cho 12 người là 552 tờ giấy. Em chiếu lên tường đi.
     ~ kt_hoa_don()
     ~ kt_keo(3)
     ~ qh("truong_phong", -3)
-* [💬 "Nhật, mấy cái MV đó… em dựng hay {editor} dựng?"]
+* [💬 "{truong_phong}, mấy cái MV đó… em dựng hay {editor} dựng?"]
     truong_phong: *(ho khan)* … Team mình dựng ạ.
     ke_toan: Bảng chấm công đêm ghi tên {editor} 47 đêm. Tên em 0 đêm.
     truong_phong: … Vâng. Em sẽ ghi tên em ấy vào credit.
@@ -91,7 +91,7 @@ truong_phong: Chị Thương ơi, em xin duyệt ngân sách cho… một cuộc
 === ke_toan_tudo_thanh_ninh ===
 # npc:thanh_ninh
 _{thanh_ninh} gõ cửa, tay cầm hóa đơn tiệm nail Lung Linh._
-thanh_ninh: Chị Thương ơi, chị duyệt giùm em hóa đơn làm móng nha chị. Em làm móng để… tiếp khách cho sếp ạ. Chị hôm nay da đẹp quá chị ơi!
+thanh_ninh: Chị {ke_toan} ơi, chị duyệt giùm em hóa đơn làm móng nha chị. Em làm móng để… tiếp khách cho sếp ạ. Chị hôm nay da đẹp quá chị ơi!
 * [🧾 "Làm móng để tiếp khách thì khách tên gì em?"]
     ~ kt_hoa_don()
     thanh_ninh: Dạ… khách… ờ… khách VIP ạ.
@@ -113,7 +113,7 @@ thanh_ninh: Chị Thương ơi, chị duyệt giùm em hóa đơn làm móng nha
 === ke_toan_tudo_hong_hot ===
 # npc:hong_hot
 _{hong_hot} lao vào phòng kế toán, đóng cửa, thì thầm thật to._
-hong_hot: Chị Thương! Nghe gì chưa?! Ối dồi ôi, biến căng rồi chị ơi!
+hong_hot: Chị {ke_toan}! Nghe gì chưa?! Ối dồi ôi, biến căng rồi chị ơi!
 * [🧾 "Chuyện gì cũng được. Nhưng hóa đơn ring light tháng trước đâu em?"]
     ~ kt_hoa_don()
     hong_hot: *(móc từ túi ra, nhàu)* Đây chị! Mà chị nghe nè…
@@ -134,7 +134,7 @@ hong_hot: Chị Thương! Nghe gì chưa?! Ối dồi ôi, biến căng rồi ch
 === ke_toan_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
 _{con_ong_chau_cha} đứng trước bàn, cầm hóa đơn cà phê Sống Ảo: 47 ly trong một tháng._
-con_ong_chau_cha: Chị Thương, chị duyệt giùm em mấy cái này nha. Em làm việc ở quán, chill lắm.
+con_ong_chau_cha: Chị {ke_toan}, chị duyệt giùm em mấy cái này nha. Em làm việc ở quán, chill lắm.
 * [🧾 "47 ly cà phê, một mình em. Làm việc gì em?"]
     ~ kt_hoa_don()
     con_ong_chau_cha: Dạ… làm… nhạc. À không, làm marketing.
@@ -162,7 +162,7 @@ chua_te_deadline: Chị duyệt nha. Họp thật mà. Chill.
     chua_te_deadline: Dạ… dự án… đánh bi cho đẹp. Ok mom.
     ke_toan: Chị nhỏ hơn mẹ em nhiều đó.
     ~ qh("chua_te_deadline", -3)
-* [💾 "Vũ. File gốc dự án tháng 6, hợp đồng 800 triệu. Đoàn thuế mà hỏi thì em đưa gì?"]
+* [💾 "{chua_te_deadline}. File gốc dự án tháng 6, hợp đồng 800 triệu. Đoàn thuế mà hỏi thì em đưa gì?"]
     chua_te_deadline: *(bỏ chân xuống, ngồi thẳng)* … ÉT O ÉT. Chị… biết hả?
     ke_toan: Chị biết khoản 800 triệu đó chưa có biên bản nghiệm thu.
     ~ phat_hien(usb_cua_vu)
@@ -183,16 +183,16 @@ _{thuc_tap_sinh} mang lên một xấp phiếu chi đã điền sẵn, không sa
 thuc_tap_sinh: Dạ chị, em điền giúp chị mấy phiếu này rồi ạ. Dạ em mới vô nên chưa biết, chị coi giúp em ạ.
 * [🔍 Soi từng phiếu bằng kính lúp.]
     _Không sai một chữ. Chữ số viết kiểu ngân hàng: số 7 có gạch ngang, số 1 có mũ._
-    ke_toan: Duy. Trước đây em làm ngân hàng đúng không?
+    ke_toan: {thuc_tap_sinh}. Trước đây em làm ngân hàng đúng không?
     thuc_tap_sinh: *(đứng hình)* … Dạ… chị đừng nói với ai được không ạ? Em sợ bị nhờ… vay tiền ạ.
     ~ phat_hien(duy_tung_lam_ngan_hang)
     ~ qh("thuc_tap_sinh", 10)
 * [😇 "Cảm ơn em. Mà em ăn trưa chưa? Lại mì gói hả?"]
     thuc_tap_sinh: Dạ… mì gói là món em thích nhất ạ.
-    _Bạn đưa {thuc_tap_sinh} hộp cơm có ghi tên "Thương". Lần đầu tiên bạn tự nguyện đưa hộp cơm cho ai._
+    _Bạn đưa {thuc_tap_sinh} hộp cơm có ghi tên "{ke_toan}". Lần đầu tiên bạn tự nguyện đưa hộp cơm cho ai._
     ~ qh("thuc_tap_sinh", 15)
     ~ an(-10)
-* [💬 "Duy. Mình bằng tuổi. Gọi tên được rồi."]
+* [💬 "{thuc_tap_sinh}. Mình bằng tuổi. Gọi tên được rồi."]
     thuc_tap_sinh: Dạ… dạ thôi chị. Ở đây em là thực tập. Dạ em quen rồi ạ.
     ~ qh("thuc_tap_sinh", 5)
 + [👋 "Thôi, em đi làm tiếp đi."]
@@ -203,15 +203,15 @@ thuc_tap_sinh: Dạ chị, em điền giúp chị mấy phiếu này rồi ạ. 
 === ke_toan_tudo_hr ===
 # npc:hr
 _{hr} đứng ở cửa phòng kế toán, cười. Tay cầm hai ly trà._
-hr: Thương rảnh không, uống trà xíu. Trà "Cân Bằng". Hợp với kế toán.
+hr: {ke_toan} rảnh không, uống trà xíu. Trà "Cân Bằng". Hợp với kế toán.
 * [🍵 "Uống. Nhưng không bàn danh sách cắt giảm."]
-    hr: Không bàn. *(ngồi xuống)* … Thương nè, nếu một ngày anh mở một quán trà nhỏ, kiểu… "Phòng Trà Nhân Sự", ai tới cũng được lắng nghe… anh cần một người giữ sổ.
+    hr: Không bàn. *(ngồi xuống)* … {ke_toan} nè, nếu một ngày anh mở một quán trà nhỏ, kiểu… "Phòng Trà Nhân Sự", ai tới cũng được lắng nghe… anh cần một người giữ sổ.
     ke_toan: Quán trà mà cần kế toán trưởng hả anh?
     hr: Quán trà nào cũng cần người biết nói "hóa đơn đâu em". *(cười, lần này thật)*
     ~ qh("hr", 10)
-* [🧾 "Anh Tuấn, hóa đơn 40 loại trà trong phòng anh, ai trả?"]
+* [🧾 "Anh {hr}, hóa đơn 40 loại trà trong phòng anh, ai trả?"]
     ~ kt_hoa_don()
-    hr: Anh tự trả mà Thương. Không tin em lên căn hộ 604 xem, có cả sổ.
+    hr: Anh tự trả mà {ke_toan}. Không tin em lên căn hộ 604 xem, có cả sổ.
     ke_toan: Anh cũng có sổ hả?
     hr: Học em đó.
     ~ qh("hr", 5)
@@ -226,17 +226,17 @@ hr: Thương rảnh không, uống trà xíu. Trà "Cân Bằng". Hợp với k�
 # npc:it
 _Phòng server. Lạnh. {it} đang ăn mì ly, cạnh chồng 9 ly mì rỗng._
 it: Máy kế toán lỗi gì? Restart chưa?
-* [🍱 "Không lỗi. Chị tới hỏi hộp cơm có ghi tên Thương hôm thứ 3."]
+* [🍱 "Không lỗi. Chị tới hỏi hộp cơm có ghi tên {ke_toan} hôm thứ 3."]
     it: *(dừng đũa)* … Lỗi người dùng. Em tưởng của chung.
     ke_toan: Chị ghi tên to vậy mà.
     it: … Em xin lỗi. *(đẩy sang một ly mì chưa mở)* Đền.
     ~ qh("it", 5)
-* [💻 "Anh Bảo, sao lưu dữ liệu kế toán mười năm, có không anh?"]
+* [💻 "Anh {it}, sao lưu dữ liệu kế toán mười năm, có không anh?"]
     it: Có. Ổ "KHÔNG ĐƯỢC MỞ". Từ 2016. Kế toán, file dự án, cả bản thu "Công Viên" chưa mix.
     ke_toan: Lỡ thuế hỏi thì anh mở giùm em nha.
     it: … Chị hỏi tử tế thì em mở.
     ~ qh("it", 10)
-* [💸 "Anh Chương nợ anh 3 triệu đúng không? Em có thể trừ lương ảnh trả anh."]
+* [💸 "Anh {dan_dau_tu} nợ anh 3 triệu đúng không? Em có thể trừ lương ảnh trả anh."]
     it: *(lắc đầu)* Nợ người nào người đó trả. Mà… cảm ơn chị.
     ~ qh("it", 5)
 + [👋 "Thôi, anh ăn đi."]
@@ -270,8 +270,8 @@ idol_het_thoi: Bà biết tui là ai không? Đi hát mà không có phòng ch�
 === ke_toan_tudo_quan_ly_idol ===
 # npc:quan_ly_idol
 _{quan_ly_idol} gọi tới bằng cả hai điện thoại cùng lúc. Bạn nghe hai giọng {quan_ly_idol} lệch nhau nửa giây._
-quan_ly_idol: Thương ơi, duyệt giùm anh tiền xe cho Phát đi hát đám cưới tối nay. Khoan, anh nghe máy chút…
-* [🧾 "Anh Thái, tháng 7 có ai trả giùm một tháng tiền nhà cho {idol_het_thoi}. Không qua công ty. Anh biết là ai hông?"]
+quan_ly_idol: {ke_toan} ơi, duyệt giùm anh tiền xe cho {idol_het_thoi} đi hát đám cưới tối nay. Khoan, anh nghe máy chút…
+* [🧾 "Anh {quan_ly_idol}, tháng 7 có ai trả giùm một tháng tiền nhà cho {idol_het_thoi}. Không qua công ty. Anh biết là ai hông?"]
     quan_ly_idol: *(im lặng ba giây, cả hai máy)* … Chuyện này để anh lo. Em đừng ghi vô sổ.
     ke_toan: Em không ghi. Tiền riêng thì sổ riêng.
     ~ phat_hien(thai_thuong_phat)
@@ -293,7 +293,7 @@ quan_ly_idol: Thương ơi, duyệt giùm anh tiền xe cho Phát đi hát đám
 === ke_toan_tudo_bien_kich ===
 # npc:bien_kich
 _{bien_kich} đặt lên bàn bạn hóa đơn mua một cái máy đánh chữ cổ: "để lấy cảm hứng"._
-bien_kich: Chị Thương. Một kịch bản hay cần nỗi đau. Còn một cái máy đánh chữ thì cần… chị duyệt.
+bien_kich: Chị {ke_toan}. Một kịch bản hay cần nỗi đau. Còn một cái máy đánh chữ thì cần… chị duyệt.
 * [🧾 "Nỗi đau thì miễn phí. Máy đánh chữ thì 3 triệu. Em chọn cái nào?"]
     ~ kt_hoa_don()
     bien_kich: *(trầm ngâm)* … Câu đó hay. Em mượn được không?
@@ -319,7 +319,7 @@ bien_kich: Chị Thương. Một kịch bản hay cần nỗi đau. Còn một c
 === ke_toan_tudo_editor ===
 # npc:editor
 _3 giờ sáng. Bạn quay lại công ty lấy cái kính lúp bỏ quên. Phòng dựng phim còn sáng đèn. {editor} đang ngồi, thanh render chạy 63%._
-editor: *(ngáp)* … Chị Thương? Giờ này chị còn ở đây?
+editor: *(ngáp)* … Chị {ke_toan}? Giờ này chị còn ở đây?
 * [😶 "Chị không ngủ được. Em cũng vậy hả?"]
     editor: Em ngủ ban ngày chị. Ban đêm em mới tỉnh.
     _Hai người ngồi xem thanh render chạy. Không ai nói gì. 64%. 65%._
@@ -353,12 +353,12 @@ designer: Chị duyệt giùm em tiền font. Font miễn phí xấu lắm chị
     _Màn hình kịp sáng một giây: một bộ hồ sơ màu xanh lá chuối, tên dự án "Hồng Ngoại"._
     ~ phat_hien(quynh_lam_cho_ll)
     ~ qh("designer", -5)
-* [🤝 "Hôm hòa giải chị nói chuyện với Huyền rồi. Hai đứa em đừng giận chị nữa."]
+* [🤝 "Hôm hòa giải chị nói chuyện với {sales} rồi. Hai đứa em đừng giận chị nữa."]
     { qh_sales >= 10:
-        designer: *(thở ra)* … Huyền kể rồi. Ok chị. Hòa.
+        designer: *(thở ra)* … {sales} kể rồi. Ok chị. Hòa.
         ~ qh("designer", 15)
     - else:
-        designer: Huyền chưa nói gì với em hết chị.
+        designer: {sales} chưa nói gì với em hết chị.
     }
 + [👋 "Thôi, em làm tiếp đi."]
     designer: Dạ. Sửa nhẹ thôi là sửa cái gì ạ… à em nói quen miệng.
@@ -368,13 +368,13 @@ designer: Chị duyệt giùm em tiền font. Font miễn phí xấu lắm chị
 === ke_toan_tudo_sales ===
 # npc:sales
 _{sales} ngồi phịch xuống ghế đối diện, đặt lên bàn một tờ giấy ăn. Lần này viết bằng son._
-sales: Chị Thương! Tạm ứng em 10 triệu thôi. Lần này chắc kèo thiệt!
-* [🧾 "Thân chưa mà giỡn, Huyền. Hóa đơn đâu em?"]
+sales: Chị {ke_toan}! Tạm ứng em 10 triệu thôi. Lần này chắc kèo thiệt!
+* [🧾 "Thân chưa mà giỡn, {sales}. Hóa đơn đâu em?"]
     ~ kt_hoa_don()
     ~ kt_so_hoa_don_gia = kt_so_hoa_don_gia + 1
     sales: *(cười phá lên)* Chị bắt trend hả chị! Thôi được, em đi lấy hóa đơn!
     ~ qh("sales", 3)
-* [💬 "Huyền, em 26 tuổi. Em mệt hông?"]
+* [💬 "{sales}, em 26 tuổi. Em mệt hông?"]
     sales: Mệt gì chị. Em là chị cả mà. *(rồi nhỏ giọng)* … Mệt chút chút.
     ke_toan: Không có hóa đơn thì không có tiền. Nhưng có mệt thì có trà. Ngồi đi.
     ~ qh("sales", 15)
@@ -424,8 +424,8 @@ chi_dai: Bà. Ăn cơm chưa? Mặt bà xanh như hóa đơn điện tử.
 === ke_toan_tudo_dan_dau_tu ===
 # npc:dan_dau_tu
 _{dan_dau_tu} vào phòng kế toán bằng cửa sau. Phòng kế toán không có cửa sau. Anh ấy đi vòng qua phòng HR._
-dan_dau_tu: Thương. Bảng lương tháng sau… em ứng anh trước được không? Lần này là lên thật.
-* [🧾 "Anh Chương, sổ nợ của anh: {con_ong_chau_cha} 10 triệu, {sales} 5, {it} 3, Bác Bình 2, bốn người khác mỗi người 500 nghìn. Tổng 22 triệu."]
+dan_dau_tu: {ke_toan}. Bảng lương tháng sau… em ứng anh trước được không? Lần này là lên thật.
+* [🧾 "Anh {dan_dau_tu}, sổ nợ của anh: {con_ong_chau_cha} 10 triệu, {sales} 5, {it} 3, Bác {bac_bao_ve} 2, bốn người khác mỗi người 500 nghìn. Tổng 22 triệu."]
     dan_dau_tu: *(tái mặt)* … Em ghi hết hả?
     ke_toan: Em không ghi. Họ tới hỏi em có trừ lương anh được không. Từng người một.
     ~ qh("dan_dau_tu", -5)
@@ -453,7 +453,7 @@ thanh_xin_nghi: Dạ chị… em xin nghỉ một ngày ạ. Giọng em yếu l�
     ~ qh("thanh_xin_nghi", -3)
 * [🔍 Soi giấy khám bằng kính lúp.]
     _Dưới con dấu phòng khám có một dòng in mờ của tờ giấy khác bị in chồng lên: "Thí sinh vòng bán kết – Giọng Ca Ước Mơ"._
-    ke_toan: Sơn. Em đi thi hát hả?
+    ke_toan: {thanh_xin_nghi}. Em đi thi hát hả?
     thanh_xin_nghi: *(đứng hình)* … Chị đừng nói với anh {hr} nha chị.
     ~ phat_hien(son_thi_hat)
     ~ qh("thanh_xin_nghi", 10)
@@ -469,7 +469,7 @@ thanh_xin_nghi: Dạ chị… em xin nghỉ một ngày ạ. Giọng em yếu l�
 === ke_toan_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
 _Chòi bảo vệ. Ấm trà, cái radio, ghế bố. Bác {bac_bao_ve} rót sẵn một ly._
-bac_bao_ve: Cháu Thương. Ngồi.
+bac_bao_ve: Cháu {ke_toan}. Ngồi.
 * [☕ Ngồi uống trà, không nói gì.]
     ~ kt_ngu(-10)
     ~ uong(20)
@@ -477,7 +477,7 @@ bac_bao_ve: Cháu Thương. Ngồi.
     _Radio báo mai mưa. Bác rót thêm trà hai lần. Bạn đếm: hai lần._
 * [🧾 "Bác ơi, tiền trà đá tháng này, bác cho con xin hóa đơn."]
     bac_bao_ve: *(cười)* Mười năm, mỗi cháu hỏi bác câu đấy. *(đưa một tờ giấy viết tay)* Đây.
-    _Tờ giấy ghi: "Trà tháng 10. 120 nghìn. Bình." Kèm chữ ký ngay ngắn như chữ học trò._
+    _Tờ giấy ghi: "Trà tháng 10. 120 nghìn. {bac_bao_ve}." Kèm chữ ký ngay ngắn như chữ học trò._
     ~ kt_hoa_don()
     ~ qh("bac_bao_ve", 5)
 * [💬 "Bác ơi, nếu một ngày con làm một việc mà người ta hiểu lầm… bác có tin con không?"]
@@ -503,19 +503,19 @@ bac_bao_ve: Cháu Thương. Ngồi.
 === ke_toan_tudo_sieu_nhan_hong ===
 # npc:sieu_nhan_hong
 _Phòng chờ. {sieu_nhan_hong} vừa tạo dáng trước gương vừa ăn bánh chuối chiên. Dầu dính lên gương._
-sieu_nhan_hong: Thương! Vì công lý và lượt view! Ăn bánh hông em?
+sieu_nhan_hong: {ke_toan}! Vì công lý và lượt view! Ăn bánh hông em?
 * [🍌 Nhận một cái.]
     ~ nhan(chuoi_chien)
     ~ qh("sieu_nhan_hong", 5)
     sieu_nhan_hong: Cất làm chi, ăn liền đi em!
-* [🧾 "Anh Nguyên, phòng chờ tuần này hết 3 triệu bánh chuối chiên. Anh ăn một mình hả?"]
+* [🧾 "Anh {sieu_nhan_hong}, phòng chờ tuần này hết 3 triệu bánh chuối chiên. Anh ăn một mình hả?"]
     ~ kt_hoa_don()
     sieu_nhan_hong: Hông! Anh chia cho bảo vệ, cho shipper, cho mấy đứa nhỏ ngoài cổng… Mà con chó hông chịu ăn bánh của anh!
     _Bạn ghi vào sổ: "Bánh chuối chiên: chi phí từ thiện." Hơi khó hạch toán. Nhưng thật._
     ~ qh("sieu_nhan_hong", 10)
-* {kt_manh_moi_47b && not kt_mo_nhanh_47b && qh_sieu_nhan_hong >= 30} [🔒 "Anh Nguyên, tờ viết tay sau trang 47… anh viết thật lòng hả?"]
+* {kt_manh_moi_47b && not kt_mo_nhanh_47b && qh_sieu_nhan_hong >= 30} [🔒 "Anh {sieu_nhan_hong}, tờ viết tay sau trang 47… anh viết thật lòng hả?"]
     _{sieu_nhan_hong} nhìn quanh, rồi tháo mũ. Gương mặt bình thường, rụt rè._
-    sieu_nhan_hong: Ờm… thật. Anh sợ mọi người cực vì anh. Mà anh quên kêu anh Thắng ký.
+    sieu_nhan_hong: Ờm… thật. Anh sợ mọi người cực vì anh. Mà anh quên kêu anh {giam_doc} ký.
     ~ kt_mo_nhanh_47b = true
     ~ phat_hien(trang_47b)
     ~ kt_ngu(-30)
@@ -540,12 +540,12 @@ cho: Gâu.
     }
     ~ qh("cho", 15)
     cho: Gâu gâu! *(vẫy đuôi, nhai, nhìn bạn với ánh mắt biết ơn)*
-    _Bạn ghi vào sổ riêng: "Xúc xích Tuất: 1/60."_
+    _Bạn ghi vào sổ riêng: "Xúc xích {cho}: 1/60."_
 * [🐾 Xoa đầu.]
     ~ qh("cho", 5)
     cho: *(nhắm mắt, dụi đầu vào tay bạn)*
     ~ kt_ngu(-3)
-* [📁 "Tuất, mày có thấy xấp hồ sơ năm 2017 của chị hông?"]
+* [📁 "{cho}, mày có thấy xấp hồ sơ năm 2017 của chị hông?"]
     cho: … *(đứng dậy, đi xuống gầm cầu thang, quay lại với một xấp giấy ướt nhẹp)*
     _Hồ sơ năm 2017. Có vết răng. Nhưng đủ trang._
     ~ qh("cho", 5)

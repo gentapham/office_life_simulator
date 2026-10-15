@@ -34,6 +34,7 @@ VAR bv_da_no = false
 VAR bv_lo_day = false               // Lộ Thân Phận chạm 100
 VAR bv_thang_biet = false           // Thắng đã biết toàn bộ sự thật (G, thư, tủ gỗ)
 VAR bv_tuat_o_lai = true            // 17/10 Tuất ở lại với bác
+VAR bv_tuat_di_gameshow = false     // 16/10 Tuất trốn lên xe đi gameshow
 VAR bv_thay_mat_nguyen = false      // 6/10 thấy mặt thật Nguyên
 VAR bv_nguoi_dem_17 = ""            // "ran_thu_hai" / "vu" / "bao"
 VAR bv_bat_qua_tang_17 = false

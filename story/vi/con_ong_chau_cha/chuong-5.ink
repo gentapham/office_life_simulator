@@ -109,6 +109,9 @@ _Bạn đếm. Một. Là mình._
 // ------------------------------------------------------------
 === con_ong_chau_cha_2210_nhat_len_phong_thu ===
 # ngay:22 # gio:21:00 # noi:sky_ao_tang_30 # dieu_kien:long_mo_phong_thu_nhat
+{ not long_mo_phong_thu_nhat:
+    -> END
+}
 _Tối thứ Năm. Chuông cửa. {truong_phong} đứng ngoài, cặp kè cái bảng trắng gấp gọn, như đến dự một cuộc họp quan trọng._
 truong_phong: Tớ đến nghe demo. Không phải họp.
 _Bạn mở khóa căn phòng cuối hành lang. Lần đầu tiên có người bước vào ngoài bạn._
@@ -300,6 +303,9 @@ _Đúng. Lần đầu tiên trong đời bạn cần tiền thật. Penthouse s�
 // ------------------------------------------------------------
 === con_ong_chau_cha_2510_tap_trinh_bay ===
 # ngay:25 # gio:15:00 # noi:sky_ao_tang_30 # dieu_kien:long_nhat_nghe_demo
+{ not long_nhat_nghe_demo:
+    -> END
+}
 _Chiều Chủ nhật. Bạn nhắn {truong_phong}: "Ông rảnh hông? Tui muốn cho chú nghe bài. Mà tui sợ."_
 _Ba mươi phút sau, {truong_phong} đứng trước cửa, kẹp cái bảng trắng gấp gọn._
 truong_phong: Cách trình bày: mở bằng bản 41, kết bằng câu "cháu muốn tự làm". Không dùng chữ "chill".

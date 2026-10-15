@@ -9,7 +9,7 @@ _8:15. Trang "Confession {cong_ty}" đăng một bài ẩn danh: "Có ai biết 
 _840 lượt thích. 312 bình luận. Bình luận đầu tiên: "Ủa alo?"_
 ~ gd_no(20)
 { gd_noi_that_lua_trai || gd_noi_that_huong:
-    _Có người đã nghe chuyện này từ chính miệng bạn. Lần này, nhiều bình luận viết: "Biết rồi. Thương sếp."_
+    _Có người đã nghe chuyện này từ chính miệng bạn. Lần này, nhiều bình luận viết: "Biết rồi. {ke_toan} sếp."_
     ~ gd_no(-10)
     ~ gd_uy(5)
 }
@@ -71,12 +71,12 @@ _Trang 2, nét chữ của chính bạn: "Người cuối cùng: {hr}." Bạn vi
 _8:30. Đoàn kiểm tra thuế tới bất ngờ. Trưởng đoàn là Chú Liêm, 55 tuổi, kính lão, chưa từng cười. Cả công ty lập tức giả vờ làm việc chăm chỉ. {chua_te_deadline} lần đầu tiên mở file Excel._
 chu_liem: Chào anh Giám đốc. Tôi cần: bản gốc giấy tờ thành lập, hợp đồng tài trợ với BTT Global, bằng chứng nghiệm thu dự án tháng 6, và nguồn gốc khoản 5 tỷ.
 _Bạn phải chọn ai ra tiếp đoàn._
-* [🧾 "Thương tiếp anh. Sổ sách cô ấy giữ."]
+* [🧾 "{ke_toan} tiếp anh. Sổ sách cô ấy giữ."]
     ~ gd_nguoi_tiep_thue = "ke_toan"
     ke_toan: Dạ mời chú lên tầng 2. Hóa đơn đủ hết, từng đồng.
     ~ qh("ke_toan", 5)
     ~ gd_no(-5)
-* [🙇 "Nhi tiếp anh. Em ấy ăn nói khéo."]
+* [🙇 "{thanh_ninh} tiếp anh. Em ấy ăn nói khéo."]
     ~ gd_nguoi_tiep_thue = "thanh_ninh"
     thanh_ninh: Dạ em chào chú! Chú đeo kính lão mà nhìn trẻ quá chú ơi!
     chu_liem: *(không cười)* Cô cho tôi xem sổ.
@@ -89,7 +89,7 @@ _Bạn phải chọn ai ra tiếp đoàn._
 * [👔 "Tôi tự tiếp anh."]
     ~ gd_nguoi_tiep_thue = "giam_doc"
     chu_liem: Khoản 5 tỷ. Anh giải thích.
-    ** [😮‍💨 Nói thật: "Tiền đối tác trả trước. Sau khi trả nợ lương và lãi vay thế chấp còn 2 tỷ. Thương có đủ chứng từ."]
+    ** [😮‍💨 Nói thật: "Tiền đối tác trả trước. Sau khi trả nợ lương và lãi vay thế chấp còn 2 tỷ. {ke_toan} có đủ chứng từ."]
         chu_liem: *(ghi chép)* Thế chấp nhà riêng để trả lương nhân viên. Ừm.
         ~ gd_no(-20)
         ~ gd_tu_thu = true
@@ -104,7 +104,7 @@ _Bạn phải chọn ai ra tiếp đoàn._
 === giam_doc_2210_giay_to_goc ===
 # ngay:22 # gio:10:30 # noi:choi_bao_ve # bat_buoc
 _Bản gốc giấy tờ thành lập. Bạn lục tung két công ty. Không có. Mười năm nay bạn chưa từng thấy nó._
-_Bác Bình đứng ở cửa phòng, tay cầm một túi nilon bọc ba lớp._
+_Bác {bac_bao_ve} đứng ở cửa phòng, tay cầm một túi nilon bọc ba lớp._
 bac_bao_ve: Cậu tìm cái này à? Sáng nay bác về Ven Đô lấy.
 _Bản gốc. Đứng tên Genta. Con dấu đỏ hình chữ G. Giấy hơi ngả vàng nhưng không một vết gấp._
 * [😶 Cầm lấy, không nói nên lời.]
@@ -135,7 +135,7 @@ _Bằng chứng nghiệm thu dự án quảng cáo tháng 6, hợp đồng 800 t
 chua_te_deadline: *(mặt trắng bệch)* Anh… em làm mất USB từ tháng 9. ÉT O ÉT. AI CỨU EM VỚI.
 _Đúng lúc đó, {cho} đi qua cửa phòng, miệng ngậm một cái USB không nhãn, có mùi cà phê sữa đá. Chú Liêm đứng bật dậy, lùi ba bước._
 chu_liem: Chó! Ai cho chó vào đây?!
-* {gd_bene_tuat || qh_cho >= 20} [🐕 Ngồi xuống: "Tuất, đưa đây. Ngoan."]
+* {gd_bene_tuat || qh_cho >= 20} [🐕 Ngồi xuống: "{cho}, đưa đây. Ngoan."]
     cho: Gâu. *(nhả USB vào tay bạn, vẫy đuôi)*
     ~ nhan(usb_khong_nhan)
     ~ phat_hien(usb_cua_vu)
@@ -143,7 +143,7 @@ chu_liem: Chó! Ai cho chó vào đây?!
     ~ gd_no(-10)
     ~ qh("cho", 10)
     ~ qh("chua_te_deadline", 15)
-    chua_te_deadline: Nước tới chân mới nhảy… mà nhảy là phải đẹp. Cảm ơn Tuất!
+    chua_te_deadline: Nước tới chân mới nhảy… mà nhảy là phải đẹp. Cảm ơn {cho}!
 * [🔌 Gọi {it}: "Ổ cứng sao lưu của em có không?"]
     { qh_it >= 20:
         it: … Có. Ổ "KHÔNG ĐƯỢC MỞ". Lần này em mở. Vì anh hỏi tử tế.
@@ -193,7 +193,7 @@ _Sinh nhật {sieu_nhan_hong}, 31 tuổi. Phòng chờ chất đầy quà hồng
 # ngay:23 # gio:14:00 # noi:studio # bat_buoc
 _Livestream sinh nhật. Kịch bản có màn "Nhà tài trợ BTT Global, Mr. Kevin Trộn, gửi lời chúc mừng". Mr. Kevin Trộn không có thật._
 sales: *(thì thầm)* Anh ơi, cần một người đóng vai Mr. Kevin Trộn. Đeo kính đen, nói giọng Tây. 5 phút nữa lên sóng!
-_Ứng viên: {thuc_tap_sinh}, {dan_dau_tu}, và… Bác Bình đang mang trà lên._
+_Ứng viên: {thuc_tap_sinh}, {dan_dau_tu}, và… Bác {bac_bao_ve} đang mang trà lên._
 * [🐣 "{thuc_tap_sinh} đóng."]
     thuc_tap_sinh: Dạ em làm liền ạ! Hello… ờ… em là Kevin… Kevin Trộn ạ!
     _Lễ phép quá mức. Mr. Kevin Trộn cúi chào khán giả 90 độ, "dạ" ba lần. Bình luận: "Nhà tài trợ dễ thương nhất năm"._
@@ -204,7 +204,7 @@ _Ứng viên: {thuc_tap_sinh}, {dan_dau_tu}, và… Bác Bình đang mang trà l
     _Ba người xem nhận ra {dan_dau_tu} vì từng bị ông vay tiền. Bình luận: "Ủa anh trả tiền tui chưa?"._
     ~ follow(-5000)
     ~ scandal()
-* [🛡️ "Bác Bình… bác giúp cháu được không ạ?"]
+* [🛡️ "Bác {bac_bao_ve}… bác giúp cháu được không ạ?"]
     { qh_bac_bao_ve >= 30:
         bac_bao_ve: *(đeo kính đen, ngồi xuống, nói đúng một câu)* Chúc mừng sinh nhật. Cố lên.
         _Không giọng Tây, không diễn. Nhưng câu chúc chậm rãi ấy làm phần bình luận chững lại. "Ông chú này có tâm ghê."_
@@ -218,7 +218,7 @@ _Ứng viên: {thuc_tap_sinh}, {dan_dau_tu}, và… Bác Bình đang mang trà l
     sales: Anh!… *(rồi im)* … Dạ.
     ~ qh("sales", -10)
     ~ gd_uy(5)
-- _Cuối livestream, {sieu_nhan_hong} cầm micro, nhìn thẳng ống kính: "{chua_te_deadline} ơi… em thích anh." Hashtag \#VũƠiTrảLờiĐi lên xu hướng trong 20 phút._
+- _Cuối livestream, {sieu_nhan_hong} cầm micro, nhìn thẳng ống kính: "{chua_te_deadline} ơi… em thích anh." Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên xu hướng trong 20 phút._
 ~ follow(60000)
 -> END
 
@@ -232,7 +232,7 @@ _{cho} đang nhìn bánh chính. {idol_het_thoi} đang đứng rất gần cái 
     ~ follow(15000)
     ~ qh("thuc_tap_sinh", -3)
 * [🐕 Đặt bánh xúc xích ngay cửa để dụ {cho}.]
-    _{cho} ăn sạch bánh xúc xích, nằm ngửa bụng. Bánh chính an toàn tới khi… {idol_het_thoi} "vấp", cả cái bánh đổ ụp. Phát chỉ tay vào {cho} đang nằm ngủ._
+    _{cho} ăn sạch bánh xúc xích, nằm ngửa bụng. Bánh chính an toàn tới khi… {idol_het_thoi} "vấp", cả cái bánh đổ ụp. {idol_het_thoi} chỉ tay vào {cho} đang nằm ngủ._
     ~ follow(20000)
     ~ qh("cho", 10)
     ~ qh("idol_het_thoi", -5)
@@ -248,7 +248,7 @@ _{cho} đang nhìn bánh chính. {idol_het_thoi} đang đứng rất gần cái 
 # ngay:24 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Bàn xếp cặp: {truong_phong} với {con_ong_chau_cha}, {designer} với {bien_kich}, {sales} với {ke_toan}, {hr} với {thanh_xin_nghi}, {chi_dai} với {thanh_ninh}. Bàn riêng "chủ nợ" cho {dan_dau_tu}._
 chi_dai: Anh ngồi đâu cũng được. Nhưng ngồi là phải nghe, không được phát biểu.
-_Cùng lúc đó, điện thoại cả phòng rung: clip {idol_het_thoi} hát "Công Viên" trong bóng tối hôm mất điện đang viral. Và một bài bóc: fan của Phát có 80.000 tài khoản ảo._
+_Cùng lúc đó, điện thoại cả phòng rung: clip {idol_het_thoi} hát "Công Viên" trong bóng tối hôm mất điện đang viral. Và một bài bóc: fan của {idol_het_thoi} có 80.000 tài khoản ảo._
 * [🪑 Ngồi bàn "chủ nợ" với {dan_dau_tu}.]
     dan_dau_tu: Anh ngồi đây làm gì?
     giam_doc: Anh cũng là con nợ mà.
@@ -274,17 +274,17 @@ _Cùng lúc đó, điện thoại cả phòng rung: clip {idol_het_thoi} hát "C
 # ngay:24 # gio:20:00 # noi:choi_bao_ve # bat_buoc # dieu_kien:gd_doc_thu_g
 _Tối 24/10. Thư đi đường bộ mất 5 ngày. Gửi tối nay thì ngày 29 tới tay người nhận. Gửi mai là muộn._
 { not gd_doc_thu_g:
-    _Bạn đi ngang chòi bảo vệ. Bác Bình đang nghe radio. Bạn chưa đọc lá thư, nên không biết phải viết gì._
+    _Bạn đi ngang chòi bảo vệ. Bác {bac_bao_ve} đang nghe radio. Bạn chưa đọc lá thư, nên không biết phải viết gì._
     -> END
 }
 { gd_viet_thu_hoi_am:
-    _Thư đã gửi từ hôm trước. Bác Bình chỉ gật đầu với bạn: "Đi rồi."_
+    _Thư đã gửi từ hôm trước. Bác {bac_bao_ve} chỉ gật đầu với bạn: "Đi rồi."_
     -> END
 }
-_Bác Bình đặt lên bàn một tờ giấy trắng và một cây bút bi, như đã chờ sẵn._
+_Bác {bac_bao_ve} đặt lên bàn một tờ giấy trắng và một cây bút bi, như đã chờ sẵn._
 bac_bao_ve: Tối nay là hạn chót đấy cậu.
 * [✉️ Viết thật hết: khoản vay, biệt thự, trang 47, và xin lỗi.]
-    _"Anh Genta. Em xin lỗi. Năm 2024 em thế chấp nhà để trả lương. Em giấu anh vì sợ anh thất vọng. Em ký một hợp đồng mà không đọc trang 47. Nếu tháng này em không làm được, em sẽ không trốn. — Thắng."_
+    _"Anh Genta. Em xin lỗi. Năm 2024 em thế chấp nhà để trả lương. Em giấu anh vì sợ anh thất vọng. Em ký một hợp đồng mà không đọc trang 47. Nếu tháng này em không làm được, em sẽ không trốn. — {giam_doc}."_
     _Bạn viết 3 trang. Bàn tay run ở dòng cuối._
     ~ gd_viet_thu_hoi_am = true
     ~ gd_tu_thu = true
@@ -356,7 +356,7 @@ editor: *(đứng trước bàn, ngáp)* Anh gọi em ạ?
 === giam_doc_2610_email_luu_luc ===
 # ngay:26 # gio:23:40 # noi:biet_thu
 _23:40. Email mới. Người gửi: Lưu Lực, CEO LL-Entertainment._
-luu_luc: *(email)* "Anh Thắng thân mến. Ngày mai tôi sẽ mời {sieu_nhan_hong} với giá gấp ba. Báo trước cho anh vì tôi tôn trọng đối thủ. Việc hôm nay phải xong từ hôm qua."
+luu_luc: *(email)* "Anh {giam_doc} thân mến. Ngày mai tôi sẽ mời {sieu_nhan_hong} với giá gấp ba. Báo trước cho anh vì tôi tôn trọng đối thủ. Việc hôm nay phải xong từ hôm qua."
 ~ gd_ll_moi_thang = true
 ~ phat_hien(ll_moi_nguyen)
 * [📞 Gọi ngay cho {sieu_nhan_hong}.]
@@ -376,7 +376,7 @@ luu_luc: *(email)* "Anh Thắng thân mến. Ngày mai tôi sẽ mời {sieu_nha
 === giam_doc_2710_cuoc_goi_luu_luc ===
 # ngay:27 # gio:09:00 # noi:phong_giam_doc # bat_buoc
 _9:00. Điện thoại. Giọng diễn giả truyền cảm hứng, vang như đang nói trên sân khấu._
-luu_luc: Anh Thắng! Anh có muốn bán lại Siêu Nhân Hồng không, hay để em lấy miễn phí?
+luu_luc: Anh {giam_doc}! Anh có muốn bán lại Siêu Nhân Hồng không, hay để em lấy miễn phí?
 * [💼 "Cậu có tiền. Tôi có người. Người không bán."]
     luu_luc: Người nào cũng có giá anh ạ. Anh thì có, đúng không? Biệt thự số 1, Đồi Ngân Hàng.
     ~ gd_no(5)
@@ -397,7 +397,7 @@ _11:00. Một chiếc xe trắng dừng trước cổng. Lưu Lực bước xu�
 cho: GRỪ… GÂU GÂU!
 _Đúng lúc đó, {chi_dai} từ kho sự kiện đi ra, tay xách thùng nước._
 _Lưu Lực nhìn {chi_dai}. Mặt anh ta trắng bệch. Tập hồ sơ rơi xuống đất, giấy bay khắp sân._
-luu_luc: C… chị… chị Hương… Quán Ốc Đêm… mười năm trước…
+luu_luc: C… chị… chị {chi_dai}… Quán Ốc Đêm… mười năm trước…
 chi_dai: *(nhíu mày)* Ủa? À… cái ông bị tô ốc len hả?
 * [😂 Đứng xem. Không cứu ai cả.]
     _Lưu Lực nhặt giấy trong 4 phút. {cho} tha mất 2 tờ. Bạn không giúp. Ngày hôm nay bạn thấy mình hơi xấu tính, và rất vui._
@@ -407,7 +407,7 @@ chi_dai: *(nhíu mày)* Ủa? À… cái ông bị tô ốc len hả?
     ~ phat_hien(ll_moi_thai)
     ~ gd_uy(5)
     luu_luc: Cảm ơn anh. *(giật lại)* Anh đọc rồi thì càng tốt. Người của anh, ai cũng có giá.
-* [🦁 Đứng cạnh {chi_dai}: "Hương, em tiếp khách giúp anh."]
+* [🦁 Đứng cạnh {chi_dai}: "{chi_dai}, em tiếp khách giúp anh."]
     chi_dai: Dạ. *(đặt thùng nước xuống, xắn tay áo)*
     luu_luc: Thôi! Thôi, em… em xin phép đi trước!
     ~ qh("chi_dai", 10)
@@ -472,7 +472,7 @@ _Cả phòng kính im lặng. {ke_toan} đứng ở cửa, khoanh tay. Không ai
     ~ qh("ke_toan", 5)
     sales: *(khóc thật)* Em cảm ơn anh… lần đầu có người tin em.
     ke_toan: Hợp đồng gửi lên đây em. Hóa đơn đỏ đầy đủ. Lần này chị duyệt liền.
-* [🧾 "Thương kiểm tra giúp anh rồi tính."]
+* [🧾 "{ke_toan} kiểm tra giúp anh rồi tính."]
     ke_toan: Để em gọi xác minh. Chậm 2 ngày.
     ~ gd_tien_cty(500)
     ~ qh("sales", 5)

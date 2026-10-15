@@ -26,7 +26,7 @@ hong_hot: *(che miệng cười)*
     ~ gd_uy(5)
     truong_phong: Ơ… thế còn 1 tiếng 55 phút còn lại ạ?
     chi_dai: Em lấy. Em đi dựng sân khấu.
-* [🙅 "Nhật chủ trì đi. Anh không ép, tùy em."]
+* [🙅 "{truong_phong} chủ trì đi. Anh không ép, tùy em."]
     ~ gd_tuy_em("truong_phong")
     _{truong_phong} họp tiếp 2 tiếng. Lúc ra, mặt ai cũng như vừa đi thi._
     ~ gd_uy(-3)
@@ -153,7 +153,7 @@ _Bạn nhớ: tuần trước {truong_phong} trình MV teaser, nói "em dựng c
     ~ qh("editor", 15)
     ~ qh("chi_dai", 5)
     editor: Dạ… em cảm ơn anh. *(ngáp)* Lần đầu có người cho em nghỉ sáng.
-* [💬 "Lĩnh, cái teaser tuần trước… em dựng à?"]
+* [💬 "{editor}, cái teaser tuần trước… em dựng à?"]
     editor: *(im lặng ba giây)* … Render xong là xong anh.
     _Câu trả lời đó là có._
     ~ qh("editor", 5)
@@ -285,7 +285,7 @@ _Ba người miền Bắc, một ấm trà, một cái radio. {cho} ngủ dướ
 === giam_doc_1110_anh_hoi_nho ===
 # ngay:11 # gio:20:00 # noi:biet_thu
 _Ngày Quốc tế Trẻ em gái. Cả công ty đăng ảnh hồi nhỏ. {sieu_nhan_hong} đăng ảnh xóm Cây Me: một đám nhóc, một đứa đang khóc._
-_Bạn lục album. Không có ảnh hồi nhỏ. Chỉ có một tấm năm 2010: căn phòng 20 mét vuông, cái bàn nhựa, Bác Bình ngồi ở cửa. Người cầm máy ảnh hôm đó là Genta._
+_Bạn lục album. Không có ảnh hồi nhỏ. Chỉ có một tấm năm 2010: căn phòng 20 mét vuông, cái bàn nhựa, Bác {bac_bao_ve} ngồi ở cửa. Người cầm máy ảnh hôm đó là Genta._
 * [📸 Đăng tấm ảnh 2010: "Ngày đầu tiên. Lúc đó anh 21 tuổi, chưa có gì ngoài sợ nghèo."]
     ~ gd_uy(5)
     ~ qh("bac_bao_ve", 5)
@@ -329,7 +329,7 @@ ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao 
     ~ gd_tuy_em("ke_toan")
     ~ gd_uy(-15)
     _Group anti sếp: 37 tin nhắn mới trong 5 phút._
-* {biet(quy_den_thuong)} [🔒 "Thương… anh biết em có để dành một khoản phòng thân."]
+* {biet(quy_den_thuong)} [🔒 "{ke_toan}… anh biết em có để dành một khoản phòng thân."]
     _{ke_toan} im lặng rất lâu. Rất, rất lâu._
     ke_toan: Ai nói với anh?
     giam_doc: Anh cần lương về hôm nay.
@@ -381,7 +381,7 @@ sales: Lương trễ mà sếp vẫn đi golf. Sao mà căng.
     ~ gd_danh_sach_den = gd_danh_sach_den + 1
     ~ gd_da_tra_thu = true
     ~ qh("hong_hot", -15)
-* [📲 Nhắn group công ty (bằng tài khoản thật): "Lương về trễ là lỗi của anh, không phải của Thương. Anh xin lỗi."]
+* [📲 Nhắn group công ty (bằng tài khoản thật): "Lương về trễ là lỗi của anh, không phải của {ke_toan}. Anh xin lỗi."]
     ~ gd_uy(5)
     ~ qh("ke_toan", 15)
     ~ gd_no(5)
@@ -402,12 +402,12 @@ _Tấm bằng khen in màu, dấu đỏ hơi nhòe. Logo BTT trông như vẽ b�
     ~ qh("sales", 10)
     ~ qh("thanh_ninh", 5)
     _Bằng khen hơi nghiêng. Bạn sửa cho thẳng. Bạn không hỏi Mr. Kevin Trộn là ai._
-* [🧾 "Huyền, cho anh số điện thoại của Mr. Kevin Trộn. Anh gọi cảm ơn."]
+* [🧾 "{sales}, cho anh số điện thoại của Mr. Kevin Trộn. Anh gọi cảm ơn."]
     sales: Dạ… ổng đang ở… nước ngoài! Lệch múi giờ lắm anh!
     ~ qh("sales", -10)
     ~ gd_uy(5)
     _Bạn vẫn treo tấm bằng. Hơi buồn khi biết mình được khen bởi một người không có thật._
-* [🌸 "Nhi, bài khen để dành dịp khác. Bó hoa này mang xuống tặng chị lao công."]
+* [🌸 "{thanh_ninh}, bài khen để dành dịp khác. Bó hoa này mang xuống tặng chị lao công."]
     thanh_ninh: Dạ… sếp tặng hoa cho chị lao công… sếp nhân văn quá anh ơi!
     ~ gd_sua("tra_sua")
     ~ gd_uy(5)
@@ -427,8 +427,8 @@ _Tấm bằng khen in màu, dấu đỏ hơi nhòe. Logo BTT trông như vẽ b�
 === giam_doc_1110_nha_vuon_ven_do ===
 # ngay:11 # gio:15:00 # noi:nha_vuon_binh
 _Chủ nhật. Bạn lái xe ra Ven Đô, đường đất đỏ, ruộng rau xanh rì. Trên ghế phụ: một hộp trà mạn và hai cây xúc xích._
-_Nhà cấp 4 có vườn. Bác Bình đang đánh cờ tướng với Ông Ba trà đá. {cho} chạy ra cổng, ngửi giày bạn, rồi vẫy đuôi._
-bac_bao_ve: Ơ, cậu Thắng. Ra đây làm gì?
+_Nhà cấp 4 có vườn. Bác {bac_bao_ve} đang đánh cờ tướng với Ông Ba trà đá. {cho} chạy ra cổng, ngửi giày bạn, rồi vẫy đuôi._
+bac_bao_ve: Ơ, cậu {giam_doc}. Ra đây làm gì?
 { qh_bac_bao_ve >= 20:
     giam_doc: Hôm qua là sinh nhật bác. Cháu mang ít trà.
     bac_bao_ve: *(cầm hộp trà, xoay xoay)* … Ừ. Vào nhà đi.

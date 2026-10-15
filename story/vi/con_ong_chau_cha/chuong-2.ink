@@ -55,7 +55,7 @@ designer: Không có đèn này thì hình ra như chụp trong hầm.
     _Bạn tháo bóng đèn phòng "Sáng Tạo". Sáng đó {truong_phong} họp trong ánh sáng lờ mờ, không hiểu vì sao._
     ~ long_tl(5)
     ~ qh("it", 3)
-    ~ qh("truong_phong", -3)
+    ~ qh("truong_phong", -1)
     ~ follow(5000)
 * [😎 Kệ, chụp tối cũng được, gọi là "nghệ thuật".]
     designer: Nghệ thuật cái gì anh… hết cứu.

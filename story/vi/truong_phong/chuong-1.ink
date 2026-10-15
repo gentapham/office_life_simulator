@@ -6,6 +6,7 @@
 // ------------------------------------------------------------
 === truong_phong_0110_sang_som ===
 # ngay:1 # gio:07:30 # noi:phong_hop_sang_tao # bat_buoc
+~ tp_lich_co_dinh()
 _7 giờ 30. Phòng họp "Sáng Tạo" còn thơm mùi nước lau sàn. Bạn đặt laptop, quyển sổ kẻ ô và ba cây bút lông bảng trắng thẳng hàng như quân duyệt binh._
 _Lịch hôm nay: 8:00 họp chuẩn bị lễ ký. 8:30 họp chuẩn bị cho cuộc họp lúc 8:00. 9:00 lễ ký hợp đồng. 10:00 họp rút kinh nghiệm lễ ký._
 thuc_tap_sinh: Dạ em chào thầy… à dạ, anh Nhật ạ! Em tới từ 7 giờ, em xếp ghế xong rồi ạ.
@@ -112,6 +113,7 @@ _Bác {bac_bao_ve} đỏ mặt. {cho} sủa hai tiếng như phát biểu thay c
 // ------------------------------------------------------------
 === truong_phong_0210_hop_chien_dich ===
 # ngay:2 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
+~ tp_lich_co_dinh()
 _Họp chiến dịch "Hồng Hóa Việt Nam". Mục tiêu: 1.000.000 người theo dõi trước 31/10. Bạn đã vẽ sẵn trên bảng trắng một sơ đồ 4 tầng, 3 màu bút, 1 ngôi sao vàng._
 ~ tp_hop(1)
 truong_phong: Tầng 1 là MV. Tầng 2 là gameshow. Tầng 3 là livestream. Tầng 4 là… cảm xúc.

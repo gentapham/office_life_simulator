@@ -13,7 +13,7 @@ thanh_ninh: Dạ sếp ơi, hôm nay có 10 tờ ạ. Tờ nào sếp ký cũng 
 _Tờ trên cùng: "Đề xuất tăng lương 50% cho Phó phòng Marketing. Người đề xuất: Phó phòng Marketing."_
 * [✍️ Bắt đầu soi từng tờ. Kéo phải là ký, kéo trái là từ chối.]
     giam_doc: Đưa đây. Hôm nay anh đọc hết chữ nhỏ.
-* [💬 "Nhi, em lọc hộ anh mấy tờ có chữ cỡ 6 trước nhé."]
+* [💬 "{thanh_ninh}, em lọc hộ anh mấy tờ có chữ cỡ 6 trước nhé."]
     thanh_ninh: Dạ… dạ chữ cỡ 6 là cỡ nào ạ sếp? Em thấy tờ nào cũng đẹp hết á.
     ~ qh("thanh_ninh", 3)
 - -> END
@@ -87,7 +87,7 @@ _Ba phút sau, group "Hội Anti Sếp" có tin mới: "Sếp vừa nói chữ '
 === giam_doc_mg_golf_mo_dau ===
 # noi:san_thuong # gio:14:00 # dieu_kien:co_doi_tac
 _Sân thượng công ty. Một tấm thảm cỏ nhựa, một cái lỗ, và một vị đối tác bụng to, đánh golf rất tệ nhưng rất tự tin._
-doi_tac: Anh Thắng, nghe nói anh đánh hay lắm. Nhẹ tay với em nha!
+doi_tac: Anh {giam_doc}, nghe nói anh đánh hay lắm. Nhẹ tay với em nha!
 _Mẹo của nghề: đánh hơi kém đối tác một chút. Đối tác vui thì đối tác ký._
 { gd_co_ao_golf:
     _Bạn mặc áo golf. Đối tác nhìn cái áo, gật gù: "Dân chơi thật."_
@@ -103,7 +103,7 @@ _Mẹo của nghề: đánh hơi kém đối tác một chút. Đối tác vui t
 === giam_doc_mg_golf_thanh_cong ===
 # noi:san_thuong # dieu_kien:minigame_golf_dat
 _Bóng của bạn dừng cách lỗ đúng một gang tay. Bóng của đối tác lăn vào lỗ sau 7 gậy. Đối tác giơ hai tay lên trời như vô địch._
-doi_tac: Ha ha! Anh Thắng thua em rồi nhé! Thôi, hợp đồng em ký luôn!
+doi_tac: Ha ha! Anh {giam_doc} thua em rồi nhé! Thôi, hợp đồng em ký luôn!
 ~ gd_so_lan_thua_golf = gd_so_lan_thua_golf + 1
 { RANDOM(1, 3):
 - 1: ~ gd_tien_cty(50)
@@ -134,7 +134,7 @@ _Bạn đứng một mình trên sân thượng, cầm quả bóng vô địch. 
 === giam_doc_mg_quan_oc_mo_dau ===
 # noi:quan_oc_dem # gio:19:30 # dieu_kien:co_hen_doi_tac
 _Quán Ốc Đêm. Bàn nhựa đỏ, đĩa ốc hương xào bơ thơm điếc mũi. Đối tác rót đầy ly._
-doi_tac: Anh Thắng, uống cạn rồi mình nói chuyện tiền!
+doi_tac: Anh {giam_doc}, uống cạn rồi mình nói chuyện tiền!
 _Thanh Tỉnh Táo phải giữ trên 30%. Mỗi ly là một lần chọn: uống, kể chuyện, hay "đi vệ sinh" đổ ly._
 sales: *(ngồi bên cạnh, thì thầm)* Anh cứ để em, em quen hết mà.
 * [🍻 "Một trăm phần trăm!"]
@@ -146,7 +146,7 @@ sales: *(ngồi bên cạnh, thì thầm)* Anh cứ để em, em quen hết mà.
 === giam_doc_mg_quan_oc_thanh_cong ===
 # noi:quan_oc_dem # dieu_kien:minigame_quan_oc_dat
 _Bạn tỉnh. Đối tác thì không. Bạn đặt tờ hợp đồng lên bàn đúng lúc anh ta đang hát._
-doi_tac: Ký! Ký luôn! Anh Thắng là anh em!
+doi_tac: Ký! Ký luôn! Anh {giam_doc} là anh em!
 ~ gd_tien_cty(100)
 ~ an(50)
 ~ follow(8000)
@@ -170,7 +170,7 @@ _Sáng hôm sau, bạn thấy trong điện thoại một đoạn video 40 giây
 === giam_doc_mg_ngan_hang_mo_dau ===
 # noi:phong_giam_doc # gio:09:40 # dieu_kien:moi_tuan_mot_lan
 _Bạn khóa cửa phòng kính, kéo rèm. Bấm số của Ngân hàng Tín Dụng Đen Đủi._
-nv_ngan_hang: Dạ em chào anh Thắng! Hôm nay anh gọi tất toán hả anh?
+nv_ngan_hang: Dạ em chào anh {giam_doc}! Hôm nay anh gọi tất toán hả anh?
 _Chọn câu: xin xỏ, câu "doanh nhân", hay câu hứa hẹn._
 * [💼 Giọng doanh nhân: "Em à, anh có một cái vision cho khoản vay này…"]
     nv_ngan_hang: Dạ, vision là gì em ghi vô mục nào hả anh?

@@ -42,7 +42,7 @@
 === giam_doc_tudo_lo_no_100 ===
 # bat_buoc # dieu_kien:gd_lo_no>=100
 _Sáng hôm đó, cả công ty đều đã biết. Ngân hàng gọi tới tận quầy lễ tân. Group Zalo-lô không còn ai nói chuyện khác._
-_Bác Bình đi lên tầng 2, tay cầm một phong bì dán kín. Bác không gõ cửa._
+_Bác {bac_bao_ve} đi lên tầng 2, tay cầm một phong bì dán kín. Bác không gõ cửa._
 ~ chot_ket_thuc("ghe_ai_nguoi_nay_ngoi")
 -> giam_doc_kt_ghe_ai_nguoi_nay_ngoi
 
@@ -55,7 +55,7 @@ _Một triệu người theo dõi. Top 10 xu hướng. Pháo giấy hồng rơi 
 _5 tỷ thưởng về tài khoản lúc 23:47. {ke_toan} nhắn: "Em chuyển trả ngân hàng rồi anh. Hết nợ."_
 _Bạn đọc tin đó bốn lần. Lần thứ tư mới tin._
 _Sáng 1/11. Ngân hàng Tín Dụng Đen Đủi. Cô nhân viên tín dụng đóng một con dấu đỏ lên tờ giấy thế chấp: "ĐÃ TẤT TOÁN"._
-nv_ngan_hang: Dạ chúc mừng anh Thắng. Anh có muốn vay thêm để… mở rộng hông anh?
+nv_ngan_hang: Dạ chúc mừng anh {giam_doc}. Anh có muốn vay thêm để… mở rộng hông anh?
 giam_doc: Thôi em. Anh xin.
 _Bạn lái xe về biệt thự số 1, Đồi Ngân Hàng. Cỏ sân golf đã cao tới mắt cá chân. Bạn để nguyên._
 _Phòng khách. Bức tường ảnh. Bạn bắt tay ca sĩ. Bạn ôm diễn viên. Bạn chụp với người dẫn chương trình. Năm 2015. Năm 2016. Năm 2017._
@@ -68,7 +68,7 @@ _Điện thoại rung. Group công ty. Không phải 22 giờ. Là 9 giờ sáng
 _Rồi {chi_dai}: "Chúc mừng sếp. Mai họp ngắn thôi nha."_
 _Rồi cả công ty. Hai mươi hai cái "Dạ"._
 giam_doc: Anh không ép… *(dừng lại, xóa đi, gõ lại)* Cảm ơn các em.
-_Bạn pha một ấm trà, ngồi trước bức tường. Ở góc phải, sát mép khung, có tấm ảnh năm 2010: căn phòng 20 mét vuông, Bác Bình ngồi ở cửa._
+_Bạn pha một ấm trà, ngồi trước bức tường. Ở góc phải, sát mép khung, có tấm ảnh năm 2010: căn phòng 20 mét vuông, Bác {bac_bao_ve} ngồi ở cửa._
 _Người cầm máy ảnh hôm đó chắc cũng đang mỉm cười, ở một nơi rất xa._
 -> END
 
@@ -78,10 +78,10 @@ _Người cầm máy ảnh hôm đó chắc cũng đang mỉm cười, ở một
 === giam_doc_kt_thu_hoi_am ===
 # ket_thuc:thu_hoi_am # loai:co_hau
 _Một buổi chiều đầu tháng 11. Trời Thành Phố Ước Mơ hửng nắng sau mưa. Bạn ghé chòi bảo vệ, như đã quen._
-_Bác Bình đang rót trà. Trên bàn có một phong bì, nét chữ quen thuộc. Ngoài phong bì ghi: "Bình đọc cho Thắng nghe."_
+_Bác {bac_bao_ve} đang rót trà. Trên bàn có một phong bì, nét chữ quen thuộc. Ngoài phong bì ghi: "{bac_bao_ve} đọc cho {giam_doc} nghe."_
 bac_bao_ve: Thư về rồi. Người ta dặn bác đọc. Cậu ngồi xuống.
 _Bạn ngồi xuống cái ghế nhựa. {cho} chui ra từ gầm bàn, nằm xuống, gác đầu lên giày bạn._
-bac_bao_ve: *(đeo kính, đọc chậm)* "Thắng."
+bac_bao_ve: *(đeo kính, đọc chậm)* "{giam_doc}."
 bac_bao_ve: "Tôi biết từ năm ngoái rồi. Tôi chờ cậu nói."
 _Bác dừng lại. Uống một ngụm trà. Bạn không thở._
 bac_bao_ve: "Nợ thì mình trả cùng nhau."
@@ -94,7 +94,7 @@ giam_doc: Bác ơi… cái slogan ấy. Hóa ra là câu đùa thật ạ?
 bac_bao_ve: Ừ. Nửa câu sau người ta chưa kịp nói thì cậu đã in lên tường rồi.
 _Hai người cùng cười. {cho} ngẩng đầu lên nhìn, rồi lại gác xuống giày bạn, thở dài một tiếng rất chó._
 _Tối đó, bạn mở một tờ giấy trắng. Không phải để giao việc lúc 22 giờ. Bạn viết lá thư thứ hai cho Genta. Lần này, chỉ kể chuyện công ty: ai vừa được gia hạn hợp đồng, ai vừa dựng xong một video có con cú, ai mới học được cách làm việc sớm._
-_Cuối thư, bạn viết: "Mấy đứa nhỏ vẫn thương nhau anh ạ. — Thắng."_
+_Cuối thư, bạn viết: "Mấy đứa nhỏ vẫn thương nhau anh ạ. — {giam_doc}."_
 -> END
 
 // ------------------------------------------------------------
@@ -116,7 +116,7 @@ _Rồi một thông báo: "{hong_hot} đã đổi tên nhóm thành: Hội Thư�
 _Rồi một thông báo nữa: "{hong_hot} đã chỉ định Hoa Hướng Dương 1989 làm phó admin."_
 hong_hot: Sếp làm phó admin. Admin vẫn là em nha. Mà sếp có quyền xóa tin nhắn chửi sếp. Nhưng sếp hông được xóa.
 ran_doc: Tui chỉ nói sự thật thôi mà… mà sếp cũng được.
-_Bạn cười một mình trong xe. Cười tới mức bác Bình gõ cửa kính hỏi "Cậu có sao không?"._
+_Bạn cười một mình trong xe. Cười tới mức bác {bac_bao_ve} gõ cửa kính hỏi "Cậu có sao không?"._
 _Bạn gõ tin nhắn đầu tiên với tư cách phó admin. Gõ dài. Xóa. Gõ "Anh không ép…". Xóa._
 _Cuối cùng, bạn gửi một sticker: bông hoa hướng dương cúi chào._
 _Hai mươi người thả tim. Một người thả haha. Là {chua_te_deadline}. Có lẽ chỉ vì nó buồn cười thật._
@@ -138,12 +138,12 @@ _Chuyến bị hủy._
 _Bạn xách thùng carton đi bộ xuống đồi. Thùng nặng hơn bạn nghĩ. Ảnh của người nổi tiếng thì ra cũng nặng._
 giam_doc: Anh không ép… tùy em…
 _Không ai nghe. Câu đó lần đầu tiên không có ai để nói._
-_Giữa dốc, một chiếc xe máy cũ dừng lại. Bác Bình. {cho} ngồi trong giỏ xe, đầu đội cái nón bảo hiểm trẻ con._
+_Giữa dốc, một chiếc xe máy cũ dừng lại. Bác {bac_bao_ve}. {cho} ngồi trong giỏ xe, đầu đội cái nón bảo hiểm trẻ con._
 bac_bao_ve: Lên đi. Thùng để đằng trước.
 giam_doc: Bác… sao bác biết cháu ở đây?
 bac_bao_ve: Bác không biết gì đâu. Bác đi ngang.
 _Đồi Ngân Hàng cách chòi bảo vệ 40 phút. Không ai "đi ngang" cả._
-_Bạn ngồi sau xe Bác Bình, ôm thùng ảnh. {cho} quay lại liếm tay bạn một cái. Chiếc xe chạy chậm, rất chậm, xuống con dốc dài._
+_Bạn ngồi sau xe Bác {bac_bao_ve}, ôm thùng ảnh. {cho} quay lại liếm tay bạn một cái. Chiếc xe chạy chậm, rất chậm, xuống con dốc dài._
 -> END
 
 // ------------------------------------------------------------
@@ -154,7 +154,7 @@ _Bạn ngồi sau xe Bác Bình, ôm thùng ảnh. {cho} quay lại liếm tay b
 { gd_pho_giam_doc == "":
     ~ gd_pho_giam_doc = "truong_phong"
 }
-_Phòng họp "Sáng Tạo". Cả công ty ngồi kín. Bác Bình đứng ở đầu bàn, chỗ bạn vẫn đứng phát biểu mỗi thứ Hai._
+_Phòng họp "Sáng Tạo". Cả công ty ngồi kín. Bác {bac_bao_ve} đứng ở đầu bàn, chỗ bạn vẫn đứng phát biểu mỗi thứ Hai._
 _Trên tay bác là phong bì dán kín, ngoài ghi: "Chỉ mở khi công ty sắp sập"._
 { gd_lo_no >= 100:
     bac_bao_ve: Cả công ty biết chuyện nợ rồi. Ngân hàng gọi tới quầy lễ tân. Thế là đủ rồi.
@@ -162,7 +162,7 @@ _Trên tay bác là phong bì dán kín, ngoài ghi: "Chỉ mở khi công ty s�
     bac_bao_ve: Công ty còn tiền. Nhưng người trong công ty hết tin nhau rồi. Bác nghĩ… sập kiểu đấy cũng là sập.
 }
 _Bác xé phong bì. Tiếng giấy rách nghe rõ trong phòng im lặng._
-bac_bao_ve: *(đọc chậm)* "Quyết định của người sáng lập. Giao quyền điều hành tạm thời cho người vừa được bầu làm Phó Giám đốc. Giữ Thắng lại, chức danh: Cố vấn Văn hóa Doanh nghiệp. Nó nói về văn hóa nhiều, để nó làm cái nó thích. — G."
+bac_bao_ve: *(đọc chậm)* "Quyết định của người sáng lập. Giao quyền điều hành tạm thời cho người vừa được bầu làm Phó Giám đốc. Giữ {giam_doc} lại, chức danh: Cố vấn Văn hóa Doanh nghiệp. Nó nói về văn hóa nhiều, để nó làm cái nó thích. — G."
 _Mọi ánh mắt quay sang {ten(gd_pho_giam_doc)}. Rồi quay sang bạn._
 _Bạn gật đầu. Bạn không nói "Anh không ép, tùy em". Lần này không có gì để tùy._
 _Sáng thứ Hai tuần sau. 8:30. Bạn ngồi ở ghế cuối phòng họp, cạnh cửa sổ. Lần đầu tiên bạn thấy phòng họp từ góc này. Nó rộng hơn bạn tưởng._
@@ -195,11 +195,11 @@ _Mỗi ngày từ 26/10, có một người nộp đơn. Lời hứa nào của 
 _Qua vách kính, phía bên kia thành phố, tòa nhà xanh lá chuối của LL-Entertainment bắn pháo hoa Đêm Hồng. Màu hồng. Rồi màu xanh. Rồi màu hồng._
 _Trên màn hình lớn của tòa nhà kia, {sieu_nhan_hong} đang tạo dáng. Bên dưới là dòng chữ "LL Presents"._
 _Bạn mở group Zalo-lô "{cong_ty} - Toàn công ty". Thành viên: 2._
-_{giam_doc}. Và Bác Bình._
+_{giam_doc}. Và Bác {bac_bao_ve}._
 _Đồng hồ trên máy tính nhảy sang 22:00. Ngón tay bạn tự gõ, theo thói quen mười năm:_
 giam_doc: Mai các em đi làm nhé.
 _Gửi._
-_Không ai "đã xem". Bác Bình đã ngủ từ 9 giờ._
+_Không ai "đã xem". Bác {bac_bao_ve} đã ngủ từ 9 giờ._
 _Bạn ngồi nhìn tin nhắn của mình. Một dấu tích xám._
 _Dưới cổng, {cho} sủa một tiếng về phía pháo hoa. Rồi im._
 { gd_co_lich_ngan_hang:

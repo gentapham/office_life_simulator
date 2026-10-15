@@ -6,6 +6,7 @@
 // ------------------------------------------------------------
 === truong_phong_2810_moc_4 ===
 # ngay:28 # gio:09:00 # noi:phong_san_xuat # bat_buoc
+~ tp_lich_co_dinh()
 _Mốc 4: 800.000 người theo dõi. Cả phòng nhìn con số trên màn hình {hong_hot} như nhìn bảng điểm thi đại học._
 { nguoi_theo_doi >= 800000:
     hong_hot: QUA RỒI! Qua mốc 4 rồi! Ét o ét, tui khóc đây nè!
@@ -194,6 +195,7 @@ con_ong_chau_cha: Né ra ông Nhật! Bản thu cuối! Phải tới phòng Lĩn
 // ------------------------------------------------------------
 === truong_phong_3010_don_kho ===
 # ngay:30 # gio:07:45 # noi:gam_cau_thang
+~ tp_lich_co_dinh()
 _Sáng 30/10. Trước giờ họp đánh giá, {hr} cho dọn kho. Gầm cầu thang là kho đồ của {cho}: chìa khóa, son môi, một chiếc găng tay hồng, một cái USB không nhãn._
 hr: Anh Nhật, phòng anh dọn giúp gầm cầu thang nha. Dọn sạch cho hành trình mới.
 cho: Grừ… *(nằm chắn trước đống đồ)*

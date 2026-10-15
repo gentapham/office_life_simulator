@@ -25,9 +25,9 @@ _Đẹp tới mức đáng ngờ. Hồ sơ thật thì thường xấu hơn._
 // ------------------------------------------------------------
 === ke_toan_0510_to_giay_an ===
 # ngay:5 # gio:10:30 # noi:phong_ke_toan # bat_buoc
-sales: Chị Thương, tạm ứng em 50 triệu nha. Nhà tài trợ lớn nhất năm, tối nay chốt ở Quán Ốc Đêm. Tin chị đi, deal này chắc kèo!
-_Trên bàn là một tờ giấy ăn, ghi bằng bút kẻ mắt: "Tạm ứng 50tr – Huyền"._
-ke_toan: Em nhỏ hơn chị bốn tuổi đó Huyền.
+sales: Chị {ke_toan}, tạm ứng em 50 triệu nha. Nhà tài trợ lớn nhất năm, tối nay chốt ở Quán Ốc Đêm. Tin chị đi, deal này chắc kèo!
+_Trên bàn là một tờ giấy ăn, ghi bằng bút kẻ mắt: "Tạm ứng 50tr – {sales}"._
+ke_toan: Em nhỏ hơn chị bốn tuổi đó {sales}.
 sales: Thì… tin em đi chị!
 * [🧾 "Hóa đơn đâu em? Hợp đồng đâu em? Tên nhà tài trợ đâu em?"]
     ~ kt_hoa_don()
@@ -35,7 +35,7 @@ sales: Thì… tin em đi chị!
     ~ qh("sales", -15)
     ~ qh("designer", -10)
     sales: Sao mà căng vậy chị…
-    _Ba ngày sau đó, {designer} gặp bạn ở pantry là quay đi. Huyền và Quỳnh cùng phe._
+    _Ba ngày sau đó, {designer} gặp bạn ở pantry là quay đi. {sales} và {designer} cùng phe._
 * [💸 "Chị ứng em 5 triệu tiền ốc. Chốt được thật thì đem hợp đồng lên lấy 45 triệu còn lại."]
     ~ kt_tam_ung_huyen = 5
     ~ kt_quy(-5)
@@ -49,7 +49,7 @@ sales: Thì… tin em đi chị!
     sales: Chị số một! No cap!
     _Năm mươi triệu đi ra khỏi tài khoản. Bạn biết nó sẽ không quay lại. Bạn vẫn ký. Có lẽ hôm nay bạn quá mệt._
     ~ kt_ngu(5)
-* {kt_bat_bai_huyen} [🔒 "Huyền, chị gọi số điện thoại nhà tài trợ trên hồ sơ rồi. Đó là số tiệm nail Lung Linh."]
+* {kt_bat_bai_huyen} [🔒 "{sales}, chị gọi số điện thoại nhà tài trợ trên hồ sơ rồi. Đó là số tiệm nail Lung Linh."]
     _{sales} tái mặt. Lần đầu tiên bạn thấy {sales} không nói được câu nào._
     sales: Chị… chị đừng nói với ai nha chị.
     ke_toan: Chị không nói. Nhưng từ giờ, không có giấy thì đừng lên đây.
@@ -63,9 +63,9 @@ sales: Thì… tin em đi chị!
 === ke_toan_0510_hoa_thay_co ===
 # ngay:5 # gio:14:00 # noi:phong_ke_toan
 _Ngày Nhà giáo Thế giới. {thuc_tap_sinh} gõ cửa, ôm một bông hồng và một tấm thiệp._
-thuc_tap_sinh: Dạ, em tặng chị Thương ạ. Chị dạy em cách điền phiếu chi ạ!
+thuc_tap_sinh: Dạ, em tặng chị {ke_toan} ạ. Chị dạy em cách điền phiếu chi ạ!
 _Thiệp ghi: "Kính tặng cô {ke_toan}, người thầy của những tờ hóa đơn."_
-* [😊 "Cảm ơn em. Mà Duy, mình bằng tuổi đó. Gọi tên thôi."]
+* [😊 "Cảm ơn em. Mà {thuc_tap_sinh}, mình bằng tuổi đó. Gọi tên thôi."]
     thuc_tap_sinh: Dạ… dạ thôi chị, em thực tập mà. Phải đúng phép ạ.
     ~ qh("thuc_tap_sinh", 10)
 * [🧾 "Bông hồng này mua bao nhiêu? Có hóa đơn hông?"]
@@ -84,7 +84,7 @@ _Thiệp ghi: "Kính tặng cô {ke_toan}, người thầy của những tờ h�
 # ngay:6 # gio:11:00 # noi:phong_ke_toan # bat_buoc
 _Buổi chụp poster đầu tiên. Tiền thuê studio 12 triệu, đã chuyển khoản từ hôm qua._
 _10:15, {sieu_nhan_hong} bỏ ngang buổi chụp, chạy ra ngã tư giúp một bà cụ. Điều khoản số 3: công ty không được trừ tiền._
-quan_ly_idol: *(gọi tới, hụt hơi)* Thương ơi, studio đòi tính thêm 6 triệu vì chụp lố giờ. Khoan, anh nghe máy chút… Em duyệt giùm anh nha!
+quan_ly_idol: *(gọi tới, hụt hơi)* {ke_toan} ơi, studio đòi tính thêm 6 triệu vì chụp lố giờ. Khoan, anh nghe máy chút… Em duyệt giùm anh nha!
 _Cùng lúc, {hong_hot} đăng clip {sieu_nhan_hong} dắt bà cụ qua đường. Ba mươi nghìn lượt xem trong một giờ. Clip quay bằng điện thoại. Chi phí: 0 đồng._
 * [🧾 "Studio tính lố giờ thì đưa biên bản giờ vào ra. Không có thì không trả."]
     ~ kt_hoa_don()
@@ -206,7 +206,7 @@ _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Trang 47 vẫn dán trên tủ lạnh
 # ngay:9 # gio:15:00 # noi:tang_1 # bat_buoc
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc ra mắt MV: trứng luộc, trứng chiên, trứng ốp la hình trái tim hồng._
 _Và trà sữa. Lần thứ hai trong 9 ngày. Kèm "lương tuần" của mấy người chọn nhận theo tuần._
-giam_doc: Thương ơi, trà sữa mừng MV, quỹ công ty nhé!
+giam_doc: {ke_toan} ơi, trà sữa mừng MV, quỹ công ty nhé!
 * [🧮 Ngồi tính: 9 ngày, 2 lần trà sữa, nhân với 22 tuần còn lại của năm…]
     _Gần 20 triệu một năm tiền trà sữa, nếu cứ "mừng" kiểu này. Bạn viết con số lên ly trà sữa của {giam_doc} bằng bút dạ._
     giam_doc: *(đọc ly)* … Ờ. Tuần sau anh tự trả.
@@ -229,7 +229,7 @@ giam_doc: Thương ơi, trà sữa mừng MV, quỹ công ty nhé!
 === ke_toan_0910_hong_coin ===
 # ngay:9 # gio:22:30 # noi:nha_so_18
 _Gần nửa đêm. Điện thoại rung. {dan_dau_tu}._
-dan_dau_tu: Thương ơi, ứng anh 10 triệu lương tháng sau được không? Có đồng coin mới tên Hồng Coin, vừa ra, đáy thật rồi! Lần này là lên thật!
+dan_dau_tu: {ke_toan} ơi, ứng anh 10 triệu lương tháng sau được không? Có đồng coin mới tên Hồng Coin, vừa ra, đáy thật rồi! Lần này là lên thật!
 * [🧾 "Ứng lương để mua coin thì không có trong quy chế anh. Hóa đơn coin đâu anh?"]
     ~ kt_hoa_don()
     dan_dau_tu: Coin làm gì có hóa đơn em…
@@ -239,7 +239,7 @@ dan_dau_tu: Thương ơi, ứng anh 10 triệu lương tháng sau được khôn
     ~ kt_quy(-2)
     ~ qh("dan_dau_tu", 5)
     dan_dau_tu: Em là người tốt nhất công ty! x10 về anh trả em gấp đôi!
-* [💬 "Anh Chương, anh đang nợ bao nhiêu người trong công ty?"]
+* [💬 "Anh {dan_dau_tu}, anh đang nợ bao nhiêu người trong công ty?"]
     dan_dau_tu: *(im lặng 5 giây)* … Em hỏi chi vậy?
     ke_toan: Em giữ sổ lương. Em thấy ai cũng cho anh vay.
     dan_dau_tu: … Hai mươi hai triệu. Mà sắp trả hết rồi.
@@ -253,7 +253,7 @@ dan_dau_tu: Thương ơi, ứng anh 10 triệu lương tháng sau được khôn
 _Thứ 7, ngày 10. Ngày nhận lương. Bạn bấm lệnh chuyển lương từ tối thứ 6._
 _Tin nhắn ngân hàng lúc 8:30: "Lệnh chuyển tiền của Quý khách đang được tạm giữ để kiểm tra giao dịch lớn."_
 _Mười năm chưa từng bị giữ. Bạn biết vì sao. Khoản vay thế chấp biệt thự đang quá hạn, nên mọi giao dịch của công ty bị soi._
-_Group Zalo-lô bắt đầu: "Ủa lương đâu mọi người?" — "Ét o ét." — "Chị Thương ơi???"_
+_Group Zalo-lô bắt đầu: "Ủa lương đâu mọi người?" — "Ét o ét." — "Chị {ke_toan} ơi???"_
 ~ kt_ngu(10)
 * [📞 Gọi {giam_doc}: "Anh. Ngân hàng giữ lệnh. Anh biết vì sao mà."]
     giam_doc: *(im lặng)* … Thứ Hai anh nói với em.
@@ -323,7 +323,7 @@ _Bạn lục album. Một tấm ảnh năm 7 tuổi: bạn ngồi bên bàn tín
 * [📸 Đăng ảnh, ghi: "Từ nhỏ đã biết hóa đơn quan trọng."]
     ~ qh("hong_hot", 5)
     ~ qh("chi_dai", 5)
-    hong_hot: Ối dồi ôi chị Thương hồi nhỏ y chang bây giờ! Đáng yêu dữ!
+    hong_hot: Ối dồi ôi chị {ke_toan} hồi nhỏ y chang bây giờ! Đáng yêu dữ!
     ~ cang_thang(-5)
     ~ follow(2000)
 * [🩷 Bình luận dưới ảnh {sieu_nhan_hong}: "Dễ thương. Đứa nhỏ đang khóc là ai vậy anh?"]
@@ -338,11 +338,25 @@ _Bạn lục album. Một tấm ảnh năm 7 tuổi: bạn ngồi bên bàn tín
 === ke_toan_1210_bang_luong ===
 # ngay:12 # gio:08:30 # noi:phong_ke_toan # bat_buoc
 _Thứ Hai. 8:30 ngân hàng mở lệnh, nhưng chỉ cho chuyển từng đợt. 21 người. Group Zalo-lô đã bực từ thứ 7._
-hong_hot: *(nhắn group)* Chị Thương ơi lương về chưa chị, em sắp ăn mì gói lần thứ 6 rồi.
+hong_hot: *(nhắn group)* Chị {ke_toan} ơi lương về chưa chị, em sắp ăn mì gói lần thứ 6 rồi.
+sales: *(nhắn group)* Lương trễ mà sếp vẫn đi golf. Sao mà căng.
+thuc_tap_sinh: *(nhắn group)* Dạ em không sao ạ. Em còn 4 gói mì ạ.
+_Bạn nhìn cái tin của {thuc_tap_sinh}. Bốn gói mì. Bạn ghi con số đó vào lề bảng lương._
+{ kt_phong_bi_1010:
+    _Ba người khó nhất đã nhận phong bì từ thứ 7. Hôm nay bạn trừ lại phần đã ứng, ghi rõ từng dòng._
+}
 * [💸 Bắt đầu xếp lịch chuyển lương.]
     -> ke_toan_mg_bang_luong_mo_dau
-* [📢 Nhắn trước group: "Lương về trong hôm nay. Ai đỏ nhất được trước."]
+* [📢 Nhắn trước group: "Lương về trong hôm nay. Ai kẹt nhất được trước. Chị xin lỗi mọi người."]
     ~ qh("hong_hot", 3)
+    ~ qh("thuc_tap_sinh", 5)
+    _Group im lặng một phút. Rồi {chi_dai} gửi một sticker cái ôm. Rồi {thuc_tap_sinh} gửi "Dạ"._
+    -> ke_toan_mg_bang_luong_mo_dau
+* [🧾 Nhắn riêng {giam_doc}: "Anh. Lương trễ là chuyện của anh. Anh tự nói với mọi người đi."]
+    giam_doc: *(trả lời sau 5 phút)* … Ừ. Anh nói.
+    _Mười phút sau, group công ty: "Lương về trễ là lỗi của anh, không phải của {ke_toan}. Anh xin lỗi." Lần đầu tiên sếp xin lỗi trên group._
+    ~ qh("giam_doc", 5)
+    ~ qh("hong_hot", 5)
     -> ke_toan_mg_bang_luong_mo_dau
 
 // ------------------------------------------------------------
@@ -350,7 +364,7 @@ hong_hot: *(nhắn group)* Chị Thương ơi lương về chưa chị, em sắp
 # ngay:12 # gio:11:00 # noi:phong_giam_doc # bat_buoc
 _Bạn đóng cửa phòng kính sau lưng, đặt xấp bảng lương lên bàn {giam_doc}._
 ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao dịch lớn". Mấy năm nay họ chưa soi bao giờ. Anh có chuyện gì với ngân hàng mà em không biết không?
-giam_doc: *(nhìn ra cửa sổ rất lâu)* … Khoản thế chấp quá hạn rồi Thương ạ. Hạn cuối 15/11.
+giam_doc: *(nhìn ra cửa sổ rất lâu)* … Khoản thế chấp quá hạn rồi {ke_toan} ạ. Hạn cuối 15/11.
 * [😮‍💨 "Em biết. Em làm sổ cho anh. Em chỉ muốn anh tự nói."]
     giam_doc: … Cảm ơn em. Mười năm rồi nhỉ.
     ~ qh("giam_doc", 10)
@@ -379,7 +393,7 @@ giam_doc: *(nhìn ra cửa sổ rất lâu)* … Khoản thế chấp quá hạn
 === ke_toan_1210_nu_hoang_luong_tre ===
 # ngay:12 # gio:21:00 # noi:nha_so_18
 _Tối. Lương đã về hết lúc 17:00. Trễ đúng 2 ngày. Group "Hội Anti Sếp" mà bạn không ở trong đó, nhưng ai cũng chụp màn hình gửi bạn._
-_Ảnh 1: {hong_hot}: "Từ nay gọi chị Thương là Nữ Hoàng Lương Trễ nha mấy bà." 47 lượt thích._
+_Ảnh 1: {hong_hot}: "Từ nay gọi chị {ke_toan} là Nữ Hoàng Lương Trễ nha mấy bà." 47 lượt thích._
 _Ảnh 2: {con_ong_chau_cha} đăng story ở Sống Ảo: "Thẻ bị từ chối. Quê muốn độn thổ." Thẻ phụ đó gắn với tài khoản riêng của {giam_doc}. Bạn biết tài khoản đó đang 0 đồng._
 _Ảnh 3: ai đó chụp lén {thuc_tap_sinh} ở quán cơm: một chiếc thẻ ngân hàng màu bạc, hạng kim cương, rơi ra bàn._
 * [😶 Đọc hết. Không trả lời ai.]
@@ -406,7 +420,7 @@ _Quỹ đen: {kt_quy_den} triệu. Mục tiêu: 297._
 * [🗄️ Cất 5 triệu lương tuần này.]
     ~ kt_cat_ket(5)
     ~ tien_cong(-5000000)
-    _Sổ ghi tay: "+5. Không đi cà phê Sống Ảo với Hương tuần này."_
+    _Sổ ghi tay: "+5. Không đi cà phê Sống Ảo với {chi_dai} tuần này."_
     ~ kt_ngu(2)
 * [🧾 Cất 3 triệu "tiết kiệm được" từ những khoản đã từ chối chi trong tuần.]
     ~ kt_cat_ket(3)

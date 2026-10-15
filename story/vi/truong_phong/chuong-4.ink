@@ -161,6 +161,7 @@ _Mặt {con_ong_chau_cha} trắng bệch như tờ giấy A4 chưa in._
 // ------------------------------------------------------------
 === truong_phong_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
+~ tp_lich_co_dinh()
 _Họp giao ban sau team building. Không ai nhìn mặt ai. {chua_te_deadline} nhìn trần nhà. {designer} nhìn {bien_kich}. {bien_kich} nhìn cuốn sổ của mình như sợ ai đọc._
 ~ tp_hop(1)
 _Bạn đếm được 7 lần thở dài trong 10 phút đầu._
@@ -206,6 +207,7 @@ _Tối. Siêu thị mini. Mai là 20/10, bạn phải có quà cho {bien_kich} v
 // ------------------------------------------------------------
 === truong_phong_2010_logo_16_nam ===
 # ngay:20 # gio:09:00 # noi:phong_giam_doc # bat_buoc
+~ tp_lich_co_dinh()
 _Sinh nhật công ty 16 tuổi. {giam_doc} gọi bạn và {designer} lên phòng._
 giam_doc: Logo kỷ niệm 16 năm! Phải wow! Mà phải giữ được cái hồn 2010!
 _{designer} trình bản thứ 38. {giam_doc} nhìn rất lâu, rồi mở ngăn kéo lấy ra… logo gốc năm 2010._
@@ -312,4 +314,28 @@ _Cả phòng hét lên. Bạn ngồi cạnh {con_ong_chau_cha}. {con_ong_chau_ch
     con_ong_chau_cha: Tui cũng đang muốn hỏi câu đó. Mà hỏi ai giờ.
     ~ qh("con_ong_chau_cha", 6)
     _Hai người cùng nhìn {giam_doc} đang hát. Hai đối thủ, cùng một nỗi lo._
+- -> END
+
+// ------------------------------------------------------------
+=== truong_phong_1910_hoc_dem ===
+# ngay:19 # gio:22:30 # noi:phong_dung_phim
+_22 giờ 30. Sau một ngày không ai nhìn mặt ai, phòng dựng là chỗ duy nhất không có tiếng thở dài._
+{ tp_linh_nghi_om:
+    _Bàn của {editor} trống. Từ hôm gameshow, {editor} vẫn còn mệt, về sớm. Trên bàn có tờ giấy: "Máy phụ em cài sẵn bài 'Chỉnh màu da'. Đừng tắt máy ngang."_
+    ~ qh("editor", 2)
+}
+* [🌙 Học một bài.]
+    -> truong_phong_mg_hoc_lom
+* [🎞️ Tự dựng lại clip kéo co ở Vũng Tàu cho vui.]
+    { tp_tay_nghe >= 25:
+        _Clip 40 giây. {con_ong_chau_cha} ngã sấp, bạn ngã ngửa, {thuc_tap_sinh} đứng cười. Bạn chèn nhạc. Không ai giao việc này. Bạn làm vì muốn làm._
+        ~ tp_tn(8)
+        ~ follow(4000)
+        ~ tp_so_video_toptop = tp_so_video_toptop + 1
+    - else:
+        _Bạn kéo nhầm clip. Cảnh kéo co thành cảnh bãi biển trống. Ba mươi giây sóng vỗ. Nhìn cũng… thư giãn._
+        ~ tp_tn(3)
+    }
+* [🚪 Về nhà ngủ.]
+    ~ nghi(15)
 - -> END

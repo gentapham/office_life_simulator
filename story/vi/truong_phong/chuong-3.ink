@@ -6,6 +6,7 @@
 // ------------------------------------------------------------
 === truong_phong_1310_doanh_nhan ===
 # ngay:13 # gio:09:45 # noi:phong_giam_doc # bat_buoc
+~ tp_lich_co_dinh()
 _Ngày Doanh nhân Việt Nam. {giam_doc} tự mua hoa tặng mình, cắm đầy phòng. {thanh_ninh} vừa đọc xong bài phát biểu khen sếp dài 15 phút._
 _{sales} bước vào, hai tay nâng một tấm bằng mạ vàng: "Doanh nhân của năm – BTT Global trao tặng"._
 sales: Anh Thắng! Mr. Kevin Trộn gửi tặng anh nè! No cap, bên đó quý anh lắm!
@@ -32,6 +33,7 @@ _{giam_doc} quay sang bạn, mắt lấp lánh như chờ một câu gì đó._
 // ------------------------------------------------------------
 === truong_phong_1410_poster_long ===
 # ngay:14 # gio:10:30 # noi:ban_thiet_ke
+~ tp_lich_co_dinh()
 _{designer} trình 3 bản poster mới. {con_ong_chau_cha} ghé qua, tay cầm ly cà phê kem._
 con_ong_chau_cha: Marketing là phòng tui mà, để tui duyệt cho. *(chỉ vào bản xấu nhất)* Cái này nè. Nhìn nó chill.
 designer: *(nhìn bạn, mắt cầu cứu)* Anh Nhật…
@@ -112,6 +114,9 @@ _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn b�
 // ------------------------------------------------------------
 === truong_phong_1510_hop_duoi_nen ===
 # ngay:15 # gio:09:00 # noi:phong_hop_sang_tao # dieu_kien:tp_giu_hop_nen
+{ not tp_giu_hop_nen:
+    -> END
+}
 _Ánh nến lắc lư. Không có slide để trốn sau, mọi người bắt đầu nói thật._
 bien_kich: Em nói luôn nha anh Nhật. Kịch bản MV em viết lại 6 lần. Lần 6 giống y lần 1. Kịch bản này cần thêm nỗi đau, và anh đã cho nó thêm rồi đó.
 designer: Poster em cũng vậy. Bản cuối là bản đầu đổi tên.
@@ -223,6 +228,7 @@ hong_hot: Ét o ét anh Nhật ơi! Clip đâu anh? Bên LL đăng clip chọc m
         ~ tp_tn(15)
         ~ tp_gameshow_xong = true
         ~ tp_huy_hieu_tu_render = true
+        ~ tp_ghe(5)
         hong_hot: Ủa… ai dựng vậy? Đẹp nha!
         truong_phong: Anh.
         _Câu trả lời ngắn nhất đời bạn. Và là câu thật nhất._
@@ -240,6 +246,7 @@ hong_hot: Ét o ét anh Nhật ơi! Clip đâu anh? Bên LL đăng clip chọc m
     ~ follow(50000)
     ~ tp_gameshow_xong = true
     ~ tp_linh_nghi_om = true
+    ~ tp_ghe(3)
     ~ qh("editor", -10)
 * [📞 Gọi {chua_te_deadline}: "Cậu xử lý giúp tớ."]
     chua_te_deadline: Còn sớm mà anh.
@@ -260,6 +267,7 @@ hong_hot: Ét o ét anh Nhật ơi! Clip đâu anh? Bên LL đăng clip chọc m
 // ------------------------------------------------------------
 === truong_phong_1610_buffet ===
 # ngay:16 # gio:12:00 # noi:pantry
+~ tp_lich_co_dinh()
 _Ngày Lương thực Thế giới. Công ty tổ chức buffet trưa trước khi đi quay. Trà sữa thứ Sáu cũng tới cùng lúc._
 _Bạn có thẻ ăn trưa công ty, nhưng hôm nay ai cũng ăn miễn phí. Lần đầu tiên bạn không có đặc quyền gì._
 * [🍱 Lấy một đĩa đầy, mang lên phòng dựng cho {editor}.]
@@ -282,3 +290,36 @@ _Bạn có thẻ ăn trưa công ty, nhưng hôm nay ai cũng ăn miễn phí. L
 - ~ an(30)
 ~ nhan(tra_sua)
 -> END
+
+// ------------------------------------------------------------
+=== truong_phong_1310_ca_dem ===
+# ngay:13 # gio:22:20 # noi:phong_dung_phim
+_22 giờ 20. Tòa nhà tắt đèn gần hết. Phòng dựng vẫn sáng một màn hình._
+{ tp_mo_ca_dem:
+    -> hai_nguoi
+- else:
+    -> mot_minh
+}
+
+= hai_nguoi
+editor: *(không quay lại)* Anh tới rồi hả. Bài hôm nay: ghép nhạc khớp nhịp. Nghe tiếng trống, cắt đúng chỗ trống.
+* [🥁 Đeo tai nghe, đếm nhịp, cắt.]
+    _Một, hai, ba, cắt. Một, hai, ba, cắt. Lần thứ bảy thì khớp. {editor} gõ nhẹ hai cái lên bàn, kiểu vỗ tay của người lười vỗ tay._
+    ~ tp_tn(10)
+    ~ nghi(-15)
+    ~ qh("editor", 4)
+* [💬 "Em học dựng ở đâu thế?"]
+    editor: Tự học. Ban đêm. Trên mạng. *(ngừng)* Giống anh bây giờ.
+    _Bạn không hỏi thêm. Nhưng bạn có cảm giác câu trả lời thật nằm ngay trên màn hình kia, ở góc có con cú._
+    ~ tp_tn(4)
+    ~ qh("editor", 6)
+- -> END
+
+= mot_minh
+_Phòng dựng trống. {editor} đã đi mua mì. Máy dựng phụ ở góc đang mở sẵn._
+* [🌙 Học lén một bài.]
+    -> truong_phong_mg_hoc_lom
+* [📝 Soạn slide cho cuộc họp sáng mai.]
+    ~ tp_hop(1)
+    _Slide 14 trang. Lúc bạn soạn xong thì {editor} đã ăn xong mì, dựng xong 3 phút phim. Hai người cùng thức, mỗi người một kiểu._
+- -> END

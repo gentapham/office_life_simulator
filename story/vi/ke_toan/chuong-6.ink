@@ -16,7 +16,7 @@ _Mốc 4: 800.000 người theo dõi. Hiện tại: {nguoi_theo_doi}._
 }
 _10:20. Fanpage công ty tự đăng một video lạ: toàn cảnh {quan_ly_idol} cười, ngủ gật, cầm hai điện thoại. Cuối video: "Em thích anh. — Cú." Cả công ty nín thở._
 _10:40. {dan_dau_tu} gõ cửa, ôm một tờ in._
-dan_dau_tu: Thương. Bộ lọc của anh lần ra 80.000 tài khoản ảo theo dõi {idol_het_thoi}. Dịch vụ "Like Thật 100%". 18 triệu. Hóa đơn… gửi về công ty tháng 7, ghi "chi phí truyền thông nghệ sĩ".
+dan_dau_tu: {ke_toan}. Bộ lọc của anh lần ra 80.000 tài khoản ảo theo dõi {idol_het_thoi}. Dịch vụ "Like Thật 100%". 18 triệu. Hóa đơn… gửi về công ty tháng 7, ghi "chi phí truyền thông nghệ sĩ".
 _Bạn nhớ tờ hóa đơn đó. Bạn đã từ chối. Rồi ai đó đã tự trả._
 * [🧾 "Em từ chối từ tháng 7. Ai trả thì người đó biết."]
     _Bạn biết là ai. Một người có hai cái điện thoại và trả tiền nhà giùm người khác mà không nói._
@@ -27,7 +27,7 @@ _Bạn nhớ tờ hóa đơn đó. Bạn đã từ chối. Rồi ai đó đã t�
     ke_toan: Tui không cho tiền. Tui cho sổ. Mỗi tháng trả bao nhiêu, ghi vô, gạch đi. Gạch hết là hết nợ.
     ~ qh("idol_het_thoi", 20)
     ~ phat_hien(fan_ao_phat)
-* [📢 "Anh Chương, đăng số liệu đó lên. Sự thật thì không cần hóa đơn."]
+* [📢 "Anh {dan_dau_tu}, đăng số liệu đó lên. Sự thật thì không cần hóa đơn."]
     ~ scandal()
     ~ follow(20000)
     ~ qh("idol_het_thoi", -20)
@@ -77,13 +77,13 @@ _4G một vạch. Ngân hàng chỉ còn cách đi tận nơi. Đại Lộ Kẹt
 === ke_toan_2910_giay_nhan_tin ===
 # ngay:29 # gio:15:30 # noi:choi_bao_ve
 _Không wifi. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác {bac_bao_ve} ngồi giữa núi giấy note. {cho} chạy đưa thư lên các tầng. {chi_dai} điều phối bằng bộ đàm._
-bac_bao_ve: Cháu Thương. Có ba tờ cho cháu.
+bac_bao_ve: Cháu {ke_toan}. Có ba tờ cho cháu.
 _Tờ 1, chữ của {thuc_tap_sinh}: "Dạ chị ơi, hóa đơn ghế Đêm Hồng em để trên bàn chị rồi ạ. 400 cái ghế, em đếm 3 lần ạ."_
-_Tờ 2, không ký tên: "Chị Thương ơi, nghe nói chị có két sắt riêng hả?"_
-_Tờ 3, chữ của {hr}: "Thương rảnh không, mai trước giờ họp lên phòng anh uống trà xíu. Chuyện công việc."_
+_Tờ 2, không ký tên: "Chị {ke_toan} ơi, nghe nói chị có két sắt riêng hả?"_
+_Tờ 3, chữ của {hr}: "{ke_toan} rảnh không, mai trước giờ họp lên phòng anh uống trà xíu. Chuyện công việc."_
 * [✍️ Trả lời tờ 2: "Két sắt nào cũng có. Hóa đơn đâu em?"]
     ~ kt_hoa_don()
-    _Bác Bình đọc, khẽ cười, đưa cho {cho}._
+    _Bác {bac_bao_ve} đọc, khẽ cười, đưa cho {cho}._
 * [🔥 Xé tờ 2. Không trả lời.]
     ~ kt_ngu(5)
     bac_bao_ve: Xé thì người ta biết là có đấy cháu.
@@ -102,7 +102,7 @@ _Tờ 3, chữ của {hr}: "Thương rảnh không, mai trước giờ họp lê
 }
 _Tối 29/10. Trang 47b trong bìa nhựa, trên bàn. Còn thiếu chữ ký. Còn hai ngày._
 * {not kt_ky_thang_47b} [📄 Lên phòng giám đốc. {giam_doc} vẫn đang ngồi, không có wifi, đọc giấy note.]
-    giam_doc: Thương? … Em đưa anh xem.
+    giam_doc: {ke_toan}? … Em đưa anh xem.
     _Anh ấy đọc, rất chậm, không bỏ dòng nào._
     giam_doc: Lần này anh đọc rồi mới ký.
     ~ kt_ky_thang_47b = true
@@ -137,7 +137,7 @@ _Tối 29/10. Trang 47b trong bìa nhựa, trên bàn. Còn thiếu chữ ký. C
 _8:00. Còn một tiếng nữa là họp đánh giá. Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ._
 { kt_quy_den_lo && not kt_tu_khai:
     _Trên bàn {giam_doc} là một tấm ảnh in: két sắt sau bức tranh, nhà số 18. Ai chụp, ai gửi, không rõ._
-    giam_doc: Thương. Đây là gì?
+    giam_doc: {ke_toan}. Đây là gì?
     -> ke_toan_3010_bi_lo
 }
 { kt_tu_khai:
@@ -176,7 +176,7 @@ _Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng "Sáng Tạo"
     ~ kt_ngu(30)
     -> ke_toan_tudo_ngat_xiu
 }
-giam_doc: Thương trình bày tình hình tài chính trước nhé.
+giam_doc: {ke_toan} trình bày tình hình tài chính trước nhé.
 _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Bạn đọc từng con số. Không làm tròn số nào._
 * [📊 Đọc hết, kể cả trang 47. Cả công ty cần biết.]
     _Phòng họp im lặng khi bạn đọc tới "10 tỷ"._
@@ -204,10 +204,10 @@ _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Bạn đọc từng con số. Không 
 - { kt_quy_den_lo:
     _Việc cuối: chuyện cái két sắt. Mọi ánh mắt quay về bạn._
     { kt_tu_khai:
-        giam_doc: *(cầm cuốn sổ ghi tay giơ lên)* Chuyện này anh biết. Thương tự nói với anh. Mọi người đọc sổ xong rồi hãy bàn.
+        giam_doc: *(cầm cuốn sổ ghi tay giơ lên)* Chuyện này anh biết. {ke_toan} tự nói với anh. Mọi người đọc sổ xong rồi hãy bàn.
         ~ qh("giam_doc", 5)
     - else:
-        hr: Thương ơi, sau buổi họp mình lên phòng anh uống trà xíu nha.
+        hr: {ke_toan} ơi, sau buổi họp mình lên phòng anh uống trà xíu nha.
         _Nụ cười của {hr} hôm nay không làm bạn sợ. Nó làm bạn buồn._
     }
 }

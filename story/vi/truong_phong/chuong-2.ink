@@ -6,6 +6,7 @@
 // ------------------------------------------------------------
 === truong_phong_0510_giao_ban ===
 # ngay:5 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
+~ tp_lich_co_dinh()
 _Họp giao ban đầu tuần. Theo lịch: 30 phút. Theo kinh nghiệm: 2 tiếng._
 ~ tp_hop(1)
 _{thuc_tap_sinh} bước vào, ôm một bó hoa to hơn cả người. Hôm nay là Ngày Nhà giáo Thế giới._
@@ -42,6 +43,7 @@ con_ong_chau_cha: *(lẩm bẩm)* "Nhân viên xin tăng lương, em nói gì?"�
 // ------------------------------------------------------------
 === truong_phong_0610_chup_poster ===
 # ngay:6 # gio:09:30 # noi:studio_tang_2 # bat_buoc
+~ tp_lich_co_dinh()
 _Buổi chụp poster đầu tiên. Đèn studio sáng trưng. {sieu_nhan_hong} tạo dáng thứ 47._
 designer: Anh Nhật, cho em xin feedback cụ thể được hông? "Hồng hơn nữa" là hồng cỡ nào ạ?
 _Đúng lúc đó, điện thoại của {sieu_nhan_hong} reo. Ngoài cửa sổ, một bà cụ đánh rơi cả giỏ cam giữa đường._
@@ -102,6 +104,7 @@ dan_dau_tu: *(ló đầu qua vách ngăn)* Số liệu cho thấy: đăng thêm 
 // ------------------------------------------------------------
 === truong_phong_0710_moc_1 ===
 # ngay:7 # gio:17:00 # noi:phong_giam_doc
+~ tp_lich_co_dinh()
 _Mốc 1 của chiến dịch: 50.000 người theo dõi. {giam_doc} gọi bạn lên phòng._
 { nguoi_theo_doi >= 50000:
     giam_doc: Qua mốc rồi! Nhật, anh thấy phòng em chạy tốt đấy. Cứ giữ cái energy này.
@@ -129,6 +132,7 @@ giam_doc: Mà này. Ghế Phó Giám đốc, anh chưa quyết đâu. Long nó c
 // ------------------------------------------------------------
 === truong_phong_0810_linh_di_kham_mat ===
 # ngay:8 # gio:10:00 # noi:phong_dung_phim
+~ tp_lich_co_dinh()
 _Ngày Thị giác Thế giới. {hr} bắt {editor} đi khám mắt. Phòng dựng trống không. Còn đúng một ngày nữa là ra MV._
 _Trên màn hình, timeline MV đang mở. Bản dựng còn thiếu cảnh cuối. Con trỏ nhấp nháy._
 * [🛠️ Ngồi vào ghế của Lĩnh, thử kéo một đoạn clip.]
@@ -169,6 +173,7 @@ _Giọng người hướng dẫn ngái ngủ: "Mấy bạn nhớ nha, render xon
 // ------------------------------------------------------------
 === truong_phong_0910_credits ===
 # ngay:9 # gio:06:30 # noi:phong_dung_phim # bat_buoc
+~ tp_lich_co_dinh()
 _6 giờ 30 sáng ngày ra MV. {editor} ngồi đó từ hôm qua, mắt đỏ như đèn ghi hình._
 editor: *(ngáp)* Anh Nhật… file credits đây. Anh duyệt rồi em… render. Render xong là xong.
 _Màn hình cuối của MV: "Sản xuất: Nhật". Không có tên ai khác._
@@ -317,6 +322,7 @@ _Chủ nhật, Ngày Quốc tế Trẻ em gái. Group công ty rủ nhau đăng 
 // ------------------------------------------------------------
 === truong_phong_1210_hop_luong_tre ===
 # ngay:12 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
+~ tp_lich_co_dinh()
 _Thứ Hai. Lương vẫn chưa về. Group Zalo-lô sôi như nồi lẩu. Bạn quyết định: phải họp._
 ~ tp_hop(1)
 truong_phong: Hôm nay mình họp về việc lương về trễ.

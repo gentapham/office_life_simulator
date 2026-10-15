@@ -42,7 +42,7 @@ _Ngày Internet Quốc tế. Wifi sập cả tòa nhà. 4G trong phòng kính ch
 _Bạn không đọc được group "Hội Anti Sếp". Không nhắn được group công ty. Video của {editor} kẹt ở 99%._
 it: *(chạy qua cửa, cả công ty đuổi theo sau)* Em đang sửa! Em đang sửa! Đừng ai hỏi em restart chưa!
 _Không ai biết vì sao sập. Mỗi người đoán một kiểu. {hong_hot} đoán ba kiểu._
-* [🔌 "Bảo, em cần gì? Anh đi mua ngay."]
+* [🔌 "{it}, em cần gì? Anh đi mua ngay."]
     it: … Lần đầu có sếp hỏi em cần gì. Một cuộn dây với một ly cà phê sữa đá.
     ~ tien_cong(-235000)
     ~ qh("it", 15)
@@ -88,15 +88,15 @@ _Tầng 1 im lặng khi bạn bước vào. Hai mươi cái đầu ngẩng lên 
 // ------------------------------------------------------------
 === giam_doc_2910_tong_dai_giay ===
 # ngay:29 # gio:15:00 # noi:choi_bao_ve
-_Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác Bình ngồi giữa núi giấy note, {cho} chạy đưa thư lên các tầng. {chi_dai} điều phối bằng bộ đàm._
-bac_bao_ve: Cậu Thắng có giấy này. Không ký tên.
+_Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác {bac_bao_ve} ngồi giữa núi giấy note, {cho} chạy đưa thư lên các tầng. {chi_dai} điều phối bằng bộ đàm._
+bac_bao_ve: Cậu {giam_doc} có giấy này. Không ký tên.
 _Tờ giấy note màu vàng: "Sếp ơi, mai họp đánh giá, sếp có giữ lời tăng lương không? — Một người trong group."_
 * {gd_hua_tang_luong_20} [✍️ Viết trả lời: "Anh giữ. Mai anh nói."]
     ~ gd_uy(5)
-    _Bác Bình cầm tờ giấy, đọc, gật đầu, đưa cho {cho}. {cho} chạy đi, tờ giấy phấp phới._
+    _Bác {bac_bao_ve} cầm tờ giấy, đọc, gật đầu, đưa cho {cho}. {cho} chạy đi, tờ giấy phấp phới._
 * {gd_hua_tang_luong_20} [✍️ Viết trả lời: "Anh không biết nữa. Anh xin lỗi."]
     ~ gd_uy(-5)
-    _Bác Bình cầm tờ giấy, đọc, không nói gì. Rồi đưa cho {cho}._
+    _Bác {bac_bao_ve} cầm tờ giấy, đọc, không nói gì. Rồi đưa cho {cho}._
 * [✍️ Viết trả lời: "Mai anh nói thật hết."]
     ~ gd_uy(3)
     bac_bao_ve: Nói thật hết thì nói từ hôm nay cũng được.
@@ -152,7 +152,7 @@ _Bông hoa hướng dương vẫn ở đó. Ba mươi ngày. Bạn đã sửa {g
 _Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng "Sáng Tạo". Không ai cầm gối. Hôm nay ai cũng tỉnh._
 _Trên bàn: hợp đồng gia hạn của {idol_het_thoi}, hết hạn ngày mai. Danh sách đề cử Phó Giám đốc. Và lời hứa tăng lương, nếu bạn đã lỡ hứa._
 _Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ với người cầm chổi._
-* [🐕 Nhắn {hr}: "Gầm cầu thang để nguyên. Của Tuất."]
+* [🐕 Nhắn {hr}: "Gầm cầu thang để nguyên. Của {cho}."]
     ~ qh("cho", 15)
     ~ qh("bac_bao_ve", 5)
 * [😶 Kệ. Dọn hết.]

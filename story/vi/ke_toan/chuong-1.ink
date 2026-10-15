@@ -38,7 +38,7 @@ _Cây bút hồng đã chạm giấy._ # hen_gio:5
 * [✋ Kéo tay áo {giam_doc} lần nữa: "Anh. Mười tỷ."]
     ~ kt_keo_tay_ao = true
     _{giam_doc} khựng lại nửa giây, liếc về phía ống kính, rồi cười gượng._
-    giam_doc: Thương cứ để đấy, tí anh đọc.
+    giam_doc: {ke_toan} cứ để đấy, tí anh đọc.
     _Anh ấy ký. Đèn flash nổ. {sieu_nhan_hong} nhìn bạn, hơi tò mò._
     ~ qh("giam_doc", -5)
     ~ qh("sieu_nhan_hong", 3)
@@ -131,7 +131,7 @@ _Họp lên chiến dịch "Hồng Hóa Việt Nam". Ngày Nụ cười Thế gi
 giam_doc: Mục tiêu: một triệu người theo dõi trước 31/10!
 sales: Em có 3 nhà tài trợ, tổng 2 tỷ! BTT Global, chủ tịch Mr. Kevin Trộn! Tin chị… à tin em đi, chắc kèo!
 _Cả phòng vỗ tay. Bạn mở sổ._
-* [🧾 "Huyền, hợp đồng BTT đâu em? Mã số thuế đâu em?"]
+* [🧾 "{sales}, hợp đồng BTT đâu em? Mã số thuế đâu em?"]
     ~ kt_hoa_don()
     sales: Dạ… tuần sau em đưa chị! Sao mà căng vậy chị!
     ~ qh("sales", -5)
@@ -153,7 +153,7 @@ _{bien_kich} ghi chép rất nhanh. Bạn để ý: ý tưởng này không tố
 === ke_toan_0210_cau_thang ===
 # ngay:2 # gio:14:00 # noi:cau_thang # bat_buoc
 _Bạn đuổi theo {giam_doc} trên cầu thang lên sân thượng, tay cầm bản hợp đồng có kẹp kính lúp._
-giam_doc: Thương à, anh đang vội. Có gì nói nhanh nhé. Anh sắp tee-off với đối tác rồi. # hen_gio:8
+giam_doc: {ke_toan} à, anh đang vội. Có gì nói nhanh nhé. Anh sắp tee-off với đối tác rồi. # hen_gio:8
 * [🔍 "Anh đọc trang 47 chưa? Trượt mục tiêu là hoàn 10 tỷ."]
     _{giam_doc} khựng lại, đứng im 3 giây, rồi cười._
     giam_doc: Thì mình không trượt. Mindset em phải positive lên.
@@ -187,7 +187,7 @@ chi_dai: Bà nhìn mặt kìa. Mắt thâm như gấu trúc. Tối qua mấy gi�
     chi_dai: Có bà đi chợ là tui khỏi lo.
     ~ tien_cong(3000)
     ~ qh("chi_dai", 5)
-* [🤝 "Hương… nếu công ty có chuyện, bà có ở lại không?"]
+* [🤝 "{chi_dai}… nếu công ty có chuyện, bà có ở lại không?"]
     chi_dai: *(dừng lại giữa sạp cá)* Chuyện gì? … Thôi, bà chưa muốn nói thì thôi. Mà có chuyện gì, tui ở.
     ~ qh("chi_dai", 10)
     ~ kt_ngu(-5)

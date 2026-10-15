@@ -181,7 +181,7 @@ _Dưới sân, đèn chòi bảo vệ vẫn sáng. Bác {bac_bao_ve} thấy hế
 === truong_phong_mg_hoc_lom_thang ===
 # noi:phong_dung_phim # dieu_kien:hoan thanh bai hoc
 ~ tp_so_bai_hoc_dem = tp_so_bai_hoc_dem + 1
-~ tp_tn(8)
+~ tp_tn(10)
 ~ nghi(-30)
 ~ an(15)
 ~ uong(15)

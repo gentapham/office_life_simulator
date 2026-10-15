@@ -55,19 +55,19 @@ quan_ly_idol: Anh ơi, {sieu_nhan_hong} buồn, bỏ đi giúp người từ sá
 # ngay:15 # gio:08:05 # noi:thang_may # bat_buoc
 _8:05 sáng. Mất điện. Thang máy dừng giữa tầng 1 và tầng 2. Tối om. Chỉ có tiếng thở của {chi_dai}._
 _Không điện, không sóng điện thoại, không {thanh_ninh}. Chỉ có hai người và một cái nút cứu hộ không sáng._
-chi_dai: Anh Thắng. Em hỏi một lần thôi. Anh giấu gì cả công ty vậy? # hen_gio:8
-* [😮‍💨 "Công ty nợ ngân hàng. Anh cầm cả nhà rồi, Hương ạ."]
+chi_dai: Anh {giam_doc}. Em hỏi một lần thôi. Anh giấu gì cả công ty vậy? # hen_gio:8
+* [😮‍💨 "Công ty nợ ngân hàng. Anh cầm cả nhà rồi, {chi_dai} ạ."]
     ~ gd_noi_that_huong = true
     ~ phat_hien(the_chap_biet_thu)
     ~ gd_no(10)
     ~ qh("chi_dai", 25)
     ~ gd_uy(10)
     chi_dai: Sao giờ mới nói? Đứa nào đòi nợ anh, chỉ mặt em.
-    giam_doc: Ngân hàng, Hương ạ. Cả cái ngân hàng.
+    giam_doc: Ngân hàng, {chi_dai} ạ. Cả cái ngân hàng.
     chi_dai: Vậy thì em chỉ còn cách làm show cho thật tốt.
     _Trong bóng tối, bạn nghe {chi_dai} vỗ vai mình hai cái. Mạnh. Hơi đau. Nhưng ấm._
 * [🎭 "Giấu gì đâu, anh đang nghĩ cái vision cho năm sau thôi."]
-    chi_dai: Dạ. Vậy lát có điện em đi hỏi Thương.
+    chi_dai: Dạ. Vậy lát có điện em đi hỏi {ke_toan}.
     ~ gd_no(5)
     ~ qh("chi_dai", -5)
 * [😶 Bấm nút gọi cứu hộ liên tục.]
@@ -178,7 +178,7 @@ thanh_ninh: Dạ sếp ơi, em giữ ghế đẹp nhất cho sếp rồi ạ! Ng
     ~ gd_uy(3)
     ~ qh("thanh_ninh", 5)
     _Cả buổi, camera 2 quay bạn đúng 4 giây. Bạn đang ngáp._
-* [🤝 "Hương ngồi đi. Show này em gánh."]
+* [🤝 "{chi_dai} ngồi đi. Show này em gánh."]
     chi_dai: Thôi anh, em đứng cánh gà quen rồi.
     giam_doc: Anh không ép… À không. Lần này anh ép thật. Ngồi đi.
     ~ qh("chi_dai", 15)
@@ -200,7 +200,7 @@ _Sai lời. Khán giả cười ồ. MC nhìn về phía đạo diễn._
 _Ở cánh gà, {idol_het_thoi} đứng nắm chặt rèm. Anh ấy nhìn bạn._
 * [🎤 Gật đầu với {idol_het_thoi}: "Lên đi. Hát bè."]
     _{idol_het_thoi} cầm micro dự phòng, hát bè từ cánh gà. "…cá viên chiên, tại công viên…" Giọng thật, ấm, chuẩn từng nốt._
-    _Khán giả đứng dậy. Có người khóc. Có người hét "Anh Phát ơi!"._
+    _Khán giả đứng dậy. Có người khóc. Có người hét "Anh {idol_het_thoi} ơi!"._
     ~ follow(40000)
     ~ qh("idol_het_thoi", 20)
     ~ qh("sieu_nhan_hong", 10)

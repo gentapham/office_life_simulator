@@ -180,7 +180,6 @@ _Bí đang nằm cạnh bàn phím, giả vờ ngủ. Bí chưa bao giờ ngủ 
 _Lạch cạch tới 2 giờ sáng. Mười trang. Có một câu hay tới mức bạn đọc to lên, và Bí vẫy đuôi._
 ~ bk_trang(10)
 ~ bk_cam(5)
-~ bk_that(3)
 ~ uong(25)
 ~ cang_thang(-10)
 { not bk_da_doi_ten:

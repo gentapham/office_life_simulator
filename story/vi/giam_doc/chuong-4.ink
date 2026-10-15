@@ -146,8 +146,8 @@ con_ong_chau_cha: Chú ơi… con vừa thấy penthouse của con, à của ch�
 // ------------------------------------------------------------
 === giam_doc_1810_bao_cao_cua_bac ===
 # ngay:18 # gio:19:00 # noi:choi_bao_ve
-_Xe về tới công ty. Bác Bình đứng chờ ở cổng, tay cầm đèn pin, {cho} đứng cạnh._
-bac_bao_ve: Cậu Thắng. Đêm qua cả công ty đi vắng, bác ở lại trực. Hai giờ sáng có người trong phòng giám đốc.
+_Xe về tới công ty. Bác {bac_bao_ve} đứng chờ ở cổng, tay cầm đèn pin, {cho} đứng cạnh._
+bac_bao_ve: Cậu {giam_doc}. Đêm qua cả công ty đi vắng, bác ở lại trực. Hai giờ sáng có người trong phòng giám đốc.
 _Ngăn kéo thứ ba bàn bạn bị mở. Giấy tờ ngân hàng vẫn còn, nhưng bị xếp lại sai thứ tự._
 * [😨 "Ai ạ? Bác thấy mặt không?"]
     bac_bao_ve: Tối quá. Bác chỉ ngửi thấy mùi nước hoa. Xanh xanh, như lá chuối.
@@ -191,10 +191,10 @@ designer: Dạ, logo kỷ niệm 16 năm, em làm 3 phương án rồi ạ.
 // ------------------------------------------------------------
 === giam_doc_2010_la_thu_g ===
 # ngay:20 # gio:07:45 # noi:choi_bao_ve # bat_buoc
-_Sáng 20/10. Sinh nhật công ty 16 tuổi. Bạn đi ngang chòi bảo vệ. Bác Bình đang đọc một lá thư tay. Cuối thư, một chữ ký: "G"._
+_Sáng 20/10. Sinh nhật công ty 16 tuổi. Bạn đi ngang chòi bảo vệ. Bác {bac_bao_ve} đang đọc một lá thư tay. Cuối thư, một chữ ký: "G"._
 _Nét chữ đó. Nét chữ đã viết "Nhận" trên hồ sơ xin việc của bạn năm 2010._
 _Trên bàn còn một phong bì dán kín, ghi: "Chỉ mở khi công ty sắp sập"._
-* [💬 "Bác Bình… thư của anh Genta ạ?"]
+* [💬 "Bác {bac_bao_ve}… thư của anh Genta ạ?"]
     bac_bao_ve: *(gấp thư lại)* Ừ. Tháng nào cũng có. Cậu không biết à?
     giam_doc: Mười năm nay… anh ấy không viết cho cháu lá nào.
     bac_bao_ve: Thế à. Có khi người ta chờ cậu viết trước.
@@ -267,7 +267,7 @@ _Chữ G 7 màu, nét vẽ tay hơi run. Bản gốc. Lần sửa thứ 38: quay
     ~ qh("designer", -10)
 - editor: Còn clip "16 năm" ạ… *(ngáp)* em thiếu cảnh dự án quảng cáo tháng 6. File gốc… không còn.
 chua_te_deadline: *(nhìn đi chỗ khác, lướt Tóp-tóp rất chăm chú)*
-* [🔍 "Vũ. File tháng 6 là em giữ đúng không?"]
+* [🔍 "{chua_te_deadline}. File tháng 6 là em giữ đúng không?"]
     chua_te_deadline: Dạ… còn sớm mà anh. Chill, kịp hết.
     ~ qh("chua_te_deadline", -5)
     _Không ai tin. Clip "16 năm" chiếu thiếu một đoạn, chỗ đó {editor} chèn một con cú._
@@ -275,13 +275,13 @@ chua_te_deadline: *(nhìn đi chỗ khác, lướt Tóp-tóp rất chăm chú)*
     ~ qh("editor", 10)
     ~ qh("chua_te_deadline", 10)
 - { gd_doc_thu_g:
-    _Cuối tiệc, Bác Bình đứng lên, cầm lá thư. Cả phòng im._
+    _Cuối tiệc, Bác {bac_bao_ve} đứng lên, cầm lá thư. Cả phòng im._
     bac_bao_ve: G gửi các cháu. "Mười sáu năm rồi. Các cháu còn đi làm với nhau là tôi mừng. Nhờ bác để ý giùm tôi, sổ sách dạo này có ổn không."
-    _Ở bàn bên, {ke_toan} đánh rơi ly nước. Bác Bình nhìn {ke_toan}. Rồi nhìn bạn. Bác gấp một đoạn lại, không đọc._
+    _Ở bàn bên, {ke_toan} đánh rơi ly nước. Bác {bac_bao_ve} nhìn {ke_toan}. Rồi nhìn bạn. Bác gấp một đoạn lại, không đọc._
     ~ gd_no(10)
     ~ qh("bac_bao_ve", 5)
 - else:
-    _Cuối tiệc, Bác Bình chỉ đứng lên chúc một câu: "Sinh nhật vui vẻ." Lá thư vẫn trong túi áo bác._
+    _Cuối tiệc, Bác {bac_bao_ve} chỉ đứng lên chúc một câu: "Sinh nhật vui vẻ." Lá thư vẫn trong túi áo bác._
 }
 ~ follow(10000)
 ~ an(30)
@@ -315,13 +315,13 @@ sales: Tin em đi anh, chỉ cần anh hứa một câu là năm sau cả công 
 // ------------------------------------------------------------
 === giam_doc_2010_tra_dem ===
 # ngay:20 # gio:23:00 # noi:choi_bao_ve # dieu_kien:sau_tiec
-_Tàn tiệc. Bạn đi bộ về công ty lấy xe. Chòi bảo vệ còn sáng đèn, dù Bác Bình thường ngủ lúc 9 giờ._
-bac_bao_ve: *(rót trà, chậm rãi)* Cậu Thắng ngồi đây. Sáng nay cậu nhìn lá thư này mãi. Có một đoạn nhắc tới cậu. Đọc hay không là việc của cậu.
+_Tàn tiệc. Bạn đi bộ về công ty lấy xe. Chòi bảo vệ còn sáng đèn, dù Bác {bac_bao_ve} thường ngủ lúc 9 giờ._
+bac_bao_ve: *(rót trà, chậm rãi)* Cậu {giam_doc} ngồi đây. Sáng nay cậu nhìn lá thư này mãi. Có một đoạn nhắc tới cậu. Đọc hay không là việc của cậu.
 ~ gd_tra_binh = gd_tra_binh + 1
 * [📖 Đọc đoạn bác chỉ.]
     ~ gd_doc_thu_g = true
     ~ phat_hien(binh_tai_mat_g)
-    _"Bình, mấy đứa nhỏ còn thương nhau không? Thắng làm giám đốc 10 năm rồi. Nó có chuyện gì khó thì bảo nó nói với tôi một câu. — G."_
+    _"{bac_bao_ve}, mấy đứa nhỏ còn thương nhau không? {giam_doc} làm giám đốc 10 năm rồi. Nó có chuyện gì khó thì bảo nó nói với tôi một câu. — G."_
     _Bạn đọc ba lần. Ly trà nguội từ lúc nào._
     giam_doc: Bác ơi… anh ấy biết rồi, đúng không ạ?
     bac_bao_ve: Bác không biết người ta biết gì. Bác chỉ biết người ta đang chờ.
@@ -332,7 +332,7 @@ bac_bao_ve: *(rót trà, chậm rãi)* Cậu Thắng ngồi đây. Sáng nay c�
     bac_bao_ve: Ừ. Thế cũng được.
     _Bác cất lá thư vào tủ gỗ. Tiếng khóa kêu "cạch"._
     ~ gd_no(5)
-* {gd_tham_nha_binh} [🔒 "Bác Bình… bác viết thư cho Genta về cháu à?"]
+* {gd_tham_nha_binh} [🔒 "Bác {bac_bao_ve}… bác viết thư cho Genta về cháu à?"]
     bac_bao_ve: Bác không thấy gì đâu. Nhưng bác không nói dối cậu bao giờ.
     ~ gd_nguoi_giu_chia_khoa = true
     ~ gd_doc_thu_g = true
