@@ -7,7 +7,7 @@
 # ngay:28 # gio:16:30 # noi:choi_bao_ve # bat_buoc
 _Mốc 4. {nguoi_theo_doi} người theo dõi. Bác không xem số. Bác xem người._
 _4 giờ 30. {quan_ly_idol} đi xuống cổng, hai điện thoại trên tay, cả hai đều tắt. Lần đầu bác thấy anh tắt điện thoại._
-_Fanpage công ty vừa lỡ đăng một video 2 phút: toàn cảnh {quan_ly_idol} ngủ gật trên xe, cười với {idol_het_thoi}, cầm hai điện thoại chạy giữa trời mưa. Cuối video: "Anh Thái ơi, em thích anh lâu rồi." Góc khung hình có một con cú nhỏ._
+_Fanpage công ty vừa lỡ đăng một video 2 phút: toàn cảnh {quan_ly_idol} ngủ gật trên xe, cười với {idol_het_thoi}, cầm hai điện thoại chạy giữa trời mưa. Cuối video: "Anh {quan_ly_idol} ơi, em thích anh lâu rồi." Góc khung hình có một con cú nhỏ._
 quan_ly_idol: Bác… cho con ngồi đây năm phút. Ở trên đấy con không thở được.
 * [🍵 Rót trà. Đặt lên bàn. Không hỏi.]
     _Anh uống. Năm phút thành ba mươi phút. Anh kể: thằng nhỏ {editor} dựng video ấy. Anh không biết. Ba năm nay anh không biết._
@@ -67,7 +67,7 @@ _{cho} đã đi tìm con gà cao su. Bị giấu sau tủ mạng từ 4/10._
     ~ bv_so_truc_dung = bv_so_truc_dung + 1
     ~ qh("cho", 15)
     ~ qh("it", 5)
-* [🐕 "Tuất. Ra đây." Dắt về chòi.]
+* [🐕 "{cho}. Ra đây." Dắt về chòi.]
     cho: *(cúi đầu)* …Ẳng.
     ~ qh("cho", -2)
 - -> tong_dai
@@ -119,9 +119,9 @@ _Rồi một tờ gấp tư, chữ nghiêng, mực hồng: "Gửi {chua_te_deadl
 // ------------------------------------------------------------
 === bac_bao_ve_2910_email_nhi ===
 # ngay:29 # gio:17:10 # noi:cong_cong_ty
-_5 giờ 10 chiều. Wifi vừa có lại được mười phút. Từ cửa tòa nhà, {thanh_ninh} chạy ra, mắt đỏ, túi xách ôm trước ngực._
+_5 giờ 10 chiều. Wifi công ty vẫn chết, chỉ có mạng điện thoại "nghegichua" của {hong_hot}. Từ cửa tòa nhà, {thanh_ninh} chạy ra, mắt đỏ, túi xách ôm trước ngực._
 _Bác vừa nghe tầng 1 xôn xao: một email "Em đồng ý về LL ạ" vừa gửi nhầm vào hộp thư "G-Entertainment - Toàn công ty"._
-* [🍵 Gọi lại: "Cháu Nhi. Ngồi xuống đây đã. Đi đâu mà vội."]
+* [🍵 Gọi lại: "Cháu {thanh_ninh}. Ngồi xuống đây đã. Đi đâu mà vội."]
     _{thanh_ninh} khựng lại. Rồi ngồi xuống cái ghế nhựa, ôm mặt khóc. Không phải khóc nịnh. Khóc như một đứa trẻ._
     thanh_ninh: Bác… con gửi nhầm. Con chưa quyết mà. Con… con chỉ muốn có chỗ người ta không bỏ con lại.
     bac_bao_ve: Ở đây cũng chưa ai bỏ cháu. Cháu chạy trước thôi.
@@ -138,7 +138,7 @@ _Bác vừa nghe tầng 1 xôn xao: một email "Em đồng ý về LL ạ" vừ
 _Họp đánh giá cuối tháng. 7 giờ sáng. Bác đứng ở hộp thư._
 { bv_so_thu >= 4:
     _Hồi âm thứ tư. Ngắn nhất từ trước tới nay._
-    _"Bình. Bốn lá thư. Tôi đọc mỗi lá ba lần. Tháng này tôi biết hết rồi."_
+    _"{bac_bao_ve}. Bốn lá thư. Tôi đọc mỗi lá ba lần. Tháng này tôi biết hết rồi."_
     _"Nếu tới ngày 30 mà con số chưa đủ, anh mở phong bì. Đọc to. Đọc xong thì xuống cổng rót trà. G."_
     ~ bv_g(5)
 - else:
@@ -174,7 +174,7 @@ cho: *(đứng chắn trước thùng, run run)* Grừ…
     ~ bv_giu_kho_tuat = true
     ~ qh("cho", 15)
 * [💬 Lục thùng trả từng món về chủ.]
-    _Son môi trả {hong_hot}. Chìa khóa trả {con_ong_chau_cha}. Găng tay hồng, bác cất riêng: "Để mai trả cậu Nguyên"._
+    _Son môi trả {hong_hot}. Chìa khóa trả {con_ong_chau_cha}. Găng tay hồng, bác cất riêng: "Để mai trả cậu {sieu_nhan_hong}"._
     _{cho} nhìn kho báu của mình vơi đi từng món. Buồn. Nhưng không cắn ai._
     ~ nhan(gang_tay_hong)
     ~ bv_giu_kho_tuat = true
@@ -203,7 +203,7 @@ _Họp đánh giá cuối tháng. Cả công ty. Bác ở cổng, như mọi nă
 
 = duoc_moi
 _9 giờ 10. {giam_doc} tự đi xuống cổng. Không gọi qua bộ đàm. Không nhờ ai. Anh đứng trước chòi, cúi đầu._
-giam_doc: Bác Bình. Em mời bác lên phòng họp. Em nghĩ… bác có thứ cần đọc cho mọi người nghe.
+giam_doc: Bác {bac_bao_ve}. Em mời bác lên phòng họp. Em nghĩ… bác có thứ cần đọc cho mọi người nghe.
 _Bác đứng dậy. Chỉnh lại áo đồng phục. Đeo kính lão. Phong bì trong túi áo trong._
 _Lần đầu tiên trong 16 năm, bác ngồi trong một cuộc họp của {cong_ty}. Không ngồi. Đứng. Ở cuối phòng._
 * [✉️ Đọc. Chậm rãi. Từng chữ.]
@@ -214,9 +214,9 @@ _Lần đầu tiên trong 16 năm, bác ngồi trong một cuộc họp của {c
 
 = doc
 _Cả phòng họp im phăng phắc. Giọng Bắc chậm rãi:_
-bac_bao_ve: "Gửi các cháu ở G. Đây là quyết định của tôi, Genta, người lập ra công ty này."
-bac_bao_ve: "Công ty giữ lại. Thắng làm giám đốc thêm một năm. Không đứa nào bị đuổi vì cái lỗi ký không đọc của Thắng."
-bac_bao_ve: "Điều kiện duy nhất: không nhắn tin cho nhân viên sau 22 giờ. Ai thấy Thắng nhắn, báo bác Bình."
+bac_bao_ve: "Gửi các cháu ở G. Đây là quyết định của tôi, Genta, người lập ra công ty này. Tôi không cần biết nó lời hay lỗ. Tôi chỉ muốn biết các cháu còn thương nhau không."
+bac_bao_ve: "Công ty giữ lại. {giam_doc} làm giám đốc thêm một năm. Không đứa nào bị đuổi vì cái lỗi ký không đọc của {giam_doc}."
+bac_bao_ve: "Điều kiện duy nhất: không nhắn tin cho nhân viên sau 22 giờ. Ai thấy {giam_doc} nhắn, báo bác {bac_bao_ve}."
 _Cả phòng bật cười. Rồi đứng dậy. Rồi vỗ tay. {giam_doc} vừa cười vừa khóc. {hr} lặng lẽ gấp tập hồ sơ màu hồng lại, không mở ra nữa._
 _Bác gấp thư. Nói đúng một câu:_
 bac_bao_ve: Bác đọc xong rồi.
@@ -312,7 +312,7 @@ _20:10. {sieu_nhan_hong} chuẩn bị bước ra. Ở cổng sau, một gã áo 
 === bac_bao_ve_tudo_noi_chuyen_choi ===
 # dieu_kien:bv_lo_day
 _Chòi bảo vệ. {giam_doc} đứng ở cửa. Trên tay anh: tấm ảnh căn phòng 20 mét vuông, bản sao giấy tờ thành lập, và một phong bì cũ ký "G" mà {cho} tha ra từ đâu đó._
-giam_doc: Bác Bình. Em hỏi bác một câu thôi. Mười năm nay… bác viết thư cho anh Genta về em, đúng không?
+giam_doc: Bác {bac_bao_ve}. Em hỏi bác một câu thôi. Mười năm nay… bác viết thư cho anh Genta về em, đúng không?
 ~ bv_lo_day = false
 * [🍵 "Đúng. Ngồi xuống. Bác kể hết."]
     _Bác kể. Từ năm 2016. Từng lá thư. Từng chuyện. Cả chuyện ngân hàng. Cả chuyện anh ngồi tới 11 giờ đêm._

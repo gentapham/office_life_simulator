@@ -38,6 +38,8 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 | [docs/gameplay/mo-dau-va-am-thanh.md](docs/gameplay/mo-dau-va-am-thanh.md) | Mở đầu game, ngày đầu hướng dẫn chơi, màn kết, âm thanh và bài hát |
 | [docs/gameplay/vat-pham-va-cong-viec.md](docs/gameplay/vat-pham-va-cong-viec.md) | Đồ ăn uống, vật phẩm, giá cả, việc chung, job freelancer |
 | [docs/huong-dan-viet-truyen.md](docs/huong-dan-viet-truyen.md) | Hướng dẫn viết thoại và câu chuyện |
+| [docs/so-tay-su-that.md](docs/so-tay-su-that.md) | Sổ tay sự thật: nguồn chuẩn cho mọi chi tiết, bảng điểm chiến dịch |
+| [story/](story/) | **Toàn bộ thoại trong game** (Ink): 23 nhân vật + sự kiện chung, Đêm Hồng, kết thúc |
 | [docs/can-bo-sung.md](docs/can-bo-sung.md) | Tình trạng tài liệu: đã xong và còn lại |
 
 ## Công nghệ dự kiến
@@ -53,6 +55,7 @@ Khi phát hành, game sẽ chạy tại: **https://gentapham.github.io/office_li
 
 - [x] Chốt ý tưởng, nền tảng, phong cách
 - [x] Hoàn thiện tài liệu thế giới và truyện của 23 nhân vật (bản nháp, chờ duyệt)
+- [x] Viết đủ thoại cho 23 nhân vật và nội dung chung (Ink)
 - [ ] Bản chạy thử: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
 - [ ] Rắn Độc chơi được trọn 30 ngày với 6 kết thúc
 - [ ] Mở rộng thế giới và thêm role

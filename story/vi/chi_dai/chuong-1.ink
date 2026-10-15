@@ -342,11 +342,11 @@ _Bạn biết đây mới là hiệp một._
 === chi_dai_0610_chup_poster ===
 # ngay:6 # gio:10:00 # noi:studio_tang_2 # bat_buoc
 _Buổi chụp poster đầu tiên. Bạn thuê đèn, thuê phông, mượn quạt gió của tiệm tóc đầu hẻm. {designer} chỉnh góc. {thuc_tap_sinh} cầm hắt sáng._
-_{sieu_nhan_hong} vừa tạo dáng thứ ba thì nhìn qua cửa sổ. Dưới đường, một bà cụ đang loay hoay với cái xe đẩy kẹt bánh giữa dòng xe._
+_{sieu_nhan_hong} vừa tạo dáng thứ ba thì nhìn qua cửa sổ. Dưới đường, một bà cụ bán chè đang loay hoay với cái xe chè sụp bánh xuống ổ gà giữa dòng xe._
 sieu_nhan_hong: Xin lỗi cả nhà! Có người cần giúp! Hợp đồng điều 3!
 _{sieu_nhan_hong} lao ra cửa. Đèn vẫn sáng. Tiền thuê đèn vẫn tính theo giờ._
 * [🏃 Chạy theo kéo về. Mỗi phút là tiền.]
-    _Bạn chạy xuống hai tầng lầu, ra tới đường thì {sieu_nhan_hong} đã đẩy xe giùm bà cụ qua bên kia ngã tư, còn mua giùm bà bịch cam._
+    _Bạn chạy xuống hai tầng lầu, ra tới đường thì {sieu_nhan_hong} đã đẩy xe chè của bà cụ ra khỏi ổ gà, đang ngồi ăn ly chè bà mời bằng cái ống hút luồn qua mũ._
     sieu_nhan_hong: Chị Đại ơi, bà nói cảm ơn chị nữa nè!
     _Bà cụ nhìn bạn, móm mém cười. Bạn đứng thở dốc giữa ngã tư, không biết nên giận ai._
     ~ cd_nk(10)
@@ -354,7 +354,7 @@ _{sieu_nhan_hong} lao ra cửa. Đèn vẫn sáng. Tiền thuê đèn vẫn tín
 * [📻 Bộ đàm: "Cả đoàn xuống đường. Mang theo máy. Chụp luôn cảnh này."]
     designer: Chị chắc hông? Poster mà nền là ngã tư kẹt xe?
     chi_dai: Chắc. Đẹp là cái thật.
-    _Mười phút sau, bạn có 200 tấm ảnh {sieu_nhan_hong} đẩy xe đẩy cho bà cụ, nắng chiếu nghiêng qua bộ đồ hồng. Và một đoạn clip {hong_hot} quay dọc._
+    _Mười phút sau, bạn có 200 tấm ảnh {sieu_nhan_hong} đẩy xe chè cho bà cụ, ăn chè bằng ống hút luồn qua mũ, nắng chiếu nghiêng qua bộ đồ hồng. Và một đoạn clip {hong_hot} quay dọc._
     ~ cd_chup_ba_cu = true
     ~ follow(15000)
     ~ cd_uy(5)

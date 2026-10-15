@@ -464,7 +464,7 @@ _Cả phòng im lặng. Rồi {hong_hot} cười. Rồi {dan_dau_tu} cười. R�
 truong_phong: Thôi em, BTT Global cũng "thật" mà.
 _{sales} đứng giữa phòng, điện thoại vẫn sáng: "Hồng Hào - Phòng Marketing"._
 * [🤝 "Đưa chị số. Chị gọi lại."]
-    _Bạn gọi. Một chị nói giọng Ven Đô, rất thật: "Dạ, bên em thích clip giúp bà cụ. Bên em muốn tài trợ Đêm Hồng ạ. Mai em qua ký."_
+    _Bạn gọi. Người nghe máy là một bà cụ, chủ cơ sở, giọng Ven Đô: "Con ơi, cậu áo hồng từng đẩy xe sữa cho bà giữa trời mưa. Bà muốn tài trợ Đêm Hồng. Mai bà ký."_
     _Bạn cúp máy. Nhìn cả phòng. Cả phòng thôi cười._
     chi_dai: Thật.
     sales: *(òa khóc)* Lần đầu tiên em nói thật mà không ai tin…

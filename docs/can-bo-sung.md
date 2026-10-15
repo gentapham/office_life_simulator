@@ -62,6 +62,6 @@ Theo dõi những gì đã xong và những gì còn lại. Ký hiệu:
 ### Mình làm khi bắt đầu code
 - [ ] 🤖 Lời đầy đủ các bài hát
 - [ ] 🤖 Bản tiếng Anh của toàn bộ thoại
-- [ ] 🤖 Chuyển truyện sang file Ink
+- [x] 🤖 **Toàn bộ thoại bằng Ink**: 23 nhân vật + nội dung chung, gần 2.900 cảnh, khoảng 76.000 dòng, tất cả qua kiểm tra → [story/](../story/)
 - [ ] 🤖 Bảng màu, giao diện, model 3D, bản đồ tỉ lệ thật
 - [ ] 🤖 Dựng khung dự án (Vite + Three.js), tự động deploy lên GitHub Pages, tạo branch `main`

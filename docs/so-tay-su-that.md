@@ -269,3 +269,14 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 ### Địa điểm & thương hiệu nhại mới
 - Mật khẩu wifi quán Sống Ảo: "khongcopass".
 - Tiệc cưới "Hạnh Phúc Trăm Năm" (sảnh B), "Cá Viên Ông Tám", nước tăng lực "Trâu Cày" / "Trâu Cụng", "Thẻ Hồng" (gói tài trợ 300 triệu qua anh Tư).
+
+### Hương & Bình
+- Đêm Hương đổ tô ốc lên đầu Lưu Lực, Bác Bình ngồi ở bàn bên cạnh và vẫn nhận ra Lưu Lực. Hương giữ một tấm ảnh đêm đó ở nhà số 45 (có Bình ở góc ảnh), tìm thấy ngày 11/10.
+- Logo chữ G: Genta vẽ trên tờ khăn giấy ở quán phở, tô bằng bút sáp màu mượn của một đứa nhỏ hàng xóm. Mặt sau tấm ảnh căn phòng 20m² năm 2010 ghi: *"Cái quý nhất trong căn phòng 20m² là con người."*
+- Thư đầu tiên của G (2016): *"Giấy tờ để ở công ty thì thằng Thắng làm mất. Anh giữ giùm. Việc hôm nay cứ để ngày mai tính."*
+- Bình viết thư cho G mỗi chủ nhật (4, 11, 18, 25/10). Thư trả lời tới ngày 9, 16, 23, 30/10. Lời khuyên của G: "Nhìn giày" (16/10), "Trả phong bì, giữ chén trà" (23/10). Thư 9/10 kèm 500.000đ "mua xương cho con chó".
+- Trong lượt chơi Bình, phong bì dán kín (nếu đọc ngày 30/10) ghi quyết định của G: giữ công ty, cho Thắng thêm một năm, không ai bị đuổi vì Thắng ký không đọc, không nhắn tin cho nhân viên sau 22 giờ.
+- Bình nhặt được Tuất giữa trời mưa năm 2020, tính ngày 4/10 là sinh nhật Tuất. Ngày 1/10 Bình sơn riêng một ô đỗ xe ghi "HỒNG" cho Nguyên.
+- Kết thúc tốt nhất của Bình: G tặng bác quán trà đá ở cổng sau (quà riêng, không liên quan quyền hạn công ty).
+- Hương có thể dùng mối quen cũ (thợ điện ở Chợ Phố Cũ) để kiếm 2 giàn đèn còn thiếu ngày 28/10. Đóng góp của Hương ở Đêm Hồng: +150.000 nếu tiến độ ≥ 80%, +40.000 nếu 50–79%, −100.000 nếu dưới 50% (sập sân khấu).
+- Chương có thể vay Bình thêm 2 triệu ngày 12/10.

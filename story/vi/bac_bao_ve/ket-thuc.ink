@@ -73,7 +73,7 @@
 # ngay:31
 _Sáng 1/11. 6 giờ 30. Bác mở cổng. Tiếng then sắt kêu "két" như mọi sáng suốt 16 năm. Radio bật kênh thời sự._
 _Trong hộp thư có một lá thư mới. Tem nước ngoài. Chữ nghiêng nghiêng. Không phải chủ nhật, không phải ngày hồi âm. G viết thêm một lá._
-_"Bình. Cảm ơn anh. Tháng này tôi ngủ ngon."_
+_"{bac_bao_ve}. Cảm ơn anh. Tháng này tôi ngủ ngon."_
 _"Bốn lá thư của anh, không lá nào nói dối tôi. Có lá làm tôi buồn. Nhưng buồn vì biết thật thì tôi chịu được. Buồn vì không biết gì mới khó."_
 _"Kèm theo đây là cái quán trà đá cổng sau. Tôi mua lại từ tháng trước, đứng tên anh. Không phải trả công. Là cảm ơn. G."_
 _Trong phong bì là một tờ giấy sang tên. Quán trà đá cổng sau: hai cái bàn gỗ, bốn cái ghế nhựa, một cây bàng._
@@ -96,11 +96,11 @@ _Bác rót trà. Ly nào cũng đầy. Ai uống đặc, ai uống nhạt, ai c�
 _Người ta sẽ kể về buổi họp đánh giá ngày 30/10 rất nhiều năm sau._
 _Kể rằng phòng họp "Sáng Tạo" chật kín, người đứng tới cửa. Rằng {hr} đã cầm tập hồ sơ màu hồng. Rằng ai cũng nín thở._
 _Rồi ông bảo vệ đi lên. Lần đầu tiên trong 16 năm. Đứng ở cuối phòng. Đeo kính lão. Mở một phong bì đã ố vàng._
-_Giọng Bắc chậm rãi, từng chữ: "Công ty giữ lại. Thắng làm giám đốc thêm một năm. Không đứa nào bị đuổi vì cái lỗi ký không đọc của Thắng. Điều kiện duy nhất: không nhắn tin cho nhân viên sau 22 giờ."_
+_Giọng Bắc chậm rãi, từng chữ: "Công ty giữ lại. {giam_doc} làm giám đốc thêm một năm. Không đứa nào bị đuổi vì cái lỗi ký không đọc của {giam_doc}. Điều kiện duy nhất: không nhắn tin cho nhân viên sau 22 giờ."_
 _Cả phòng họp đứng dậy vỗ tay. {giam_doc} khóc. {hr} gấp tập hồ sơ màu hồng lại, mãi mãi._
 _Và ông bảo vệ gấp thư lại, nói đúng một câu: "Bác đọc xong rồi." Rồi đi xuống cổng, rót trà, đeo lại cái thẻ "Bảo vệ"._
 _Không ai hỏi bác vì sao bác giữ thư. Không ai hỏi vì sao bác có giấy tờ gốc năm 2010. Không ai cần hỏi._
-_Một tuần sau, {giam_doc} đặt một cái bảng nhỏ ở cổng, chữ in tay: "Sau 22 giờ: liên hệ bác Bình."_
+_Một tuần sau, {giam_doc} đặt một cái bảng nhỏ ở cổng, chữ in tay: "Sau 22 giờ: liên hệ bác {bac_bao_ve}."_
 _Tối thứ 2 đầu tiên của tháng 11, đúng 22 giờ 01, điện thoại {giam_doc} sáng lên. Anh gõ một tin nhắn cho group công ty. Ngón tay lơ lửng trên nút gửi._
 _Từ chòi bảo vệ, một tin nhắn tới trước: "Anh {giam_doc}. Ngủ đi."_
 _Anh bật cười. Xóa tin. Tắt máy._

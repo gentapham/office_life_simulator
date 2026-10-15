@@ -29,22 +29,22 @@ _Bác uống ngụm trà. Doanh nhận. Cũng đúng với tháng này._
 
 // ------------------------------------------------------------
 === bac_bao_ve_1410_do_dai ===
-# ngay:14 # gio:10:00 # noi:choi_bao_ve # bat_buoc
+# ngay:14 # gio:07:00 # noi:choi_bao_ve # bat_buoc
 _Mốc 2. Ngày Hội Nông dân. Sáng nay {thanh_xin_nghi} gửi tin nhắn xin nghỉ: "Dạ em về quê phụ gặt lúa ạ."_
-_10 giờ, một chiếc xe máy chạy ngang cổng. Người lái đội mũ bảo hiểm kín mít, nhưng cái áo khoác thì không kín: kim tuyến bạc, lấp lánh dưới nắng như cái đèn sân khấu. Hướng đi: Ven Đô, Đài Tivi Hóng._
-_Bác uống trà. Bật radio. Vặn núm dò đài, tìm bản tin giao thông._
+_7 giờ sáng, một chiếc xe máy chạy ngang cổng. Người lái đội mũ bảo hiểm kín mít, nhưng cái áo khoác thì không kín: kim tuyến bạc, lấp lánh dưới nắng như cái đèn sân khấu. Hướng đi: Ven Đô, Đài Tivi Hóng._
+_10 giờ. Bác uống trà. Bật radio. Vặn núm dò đài, tìm bản tin giao thông._
 -> bac_bao_ve_mg_do_dai_mo_dau
 
 // ------------------------------------------------------------
 === bac_bao_ve_1410_sau_do_dai ===
 # ngay:14 # gio:11:30 # noi:choi_bao_ve
-_Radio rè rè bắt được một chương trình trực tiếp: "Giọng Ca Ước Mơ, vòng 2. Thí sinh số 17…"_
+_Radio rè rè bắt được một chương trình trực tiếp: "Giọng Ca Ước Mơ, vòng 2. Thí sinh số 27…"_
 _Một giọng hát cất lên. Trong, cao, run nhẹ ở đầu câu rồi vững dần. Giọng này bác nghe mỗi ngày qua cổng: "Dạ em chào bác, hôm qua em ốm ạ"._
 { nguoi_theo_doi < 200000:
     _Cùng lúc đó, trên tivi nhỏ chạy dòng chữ: "Siêu Nhân Hồng chưa đạt 200.000 người theo dõi". Xe hồng chạy ra cổng, {sieu_nhan_hong} vẫy tay: "Hôm nay con đi giúp người cả ngày nha bác!"_
 }
 * [📻 Vặn to lên. Nghe hết bài.]
-    _Bài hát hết. MC đọc: "Thí sinh số 17 vào vòng trong!". Bác gật gù, như vừa xem cháu mình thi._
+    _Bài hát hết. MC đọc: "Thí sinh số 27 vào vòng trong!". Bác gật gù, như vừa xem cháu mình thi._
     ~ bv_biet_son_hat = true
     ~ phat_hien(son_thi_hat)
     ~ bv_bm(3)
@@ -70,7 +70,7 @@ _Một giọng hát cất lên. Trong, cao, run nhẹ ở đầu câu rồi vữ
 === bac_bao_ve_1510_thang_may ===
 # ngay:15 # gio:08:05 # noi:thang_may # bat_buoc
 _8 giờ 05. Cả tòa nhà tắt phụt. Quạt chòi ngừng quay. Radio vẫn chạy, vì radio chạy pin. Đèn pin vẫn sáng, vì đèn pin chạy pin._
-_Bộ đàm bên hông rè rè: giọng {chi_dai}, bình tĩnh: "Bác Bình, thang máy kẹt giữa tầng trệt với tầng 1. Có sếp ở trong. Bình tĩnh, hông gấp."_
+_Bộ đàm bên hông rè rè: giọng {chi_dai}, bình tĩnh: "Bác {bac_bao_ve}, thang máy kẹt giữa tầng trệt với tầng 1. Có sếp ở trong. Bình tĩnh, hông gấp."_
 * [🔧 Lấy tay quay cứu hộ trong tủ dụng cụ. Đi ngay.]
     _Cái tay quay nằm trong tủ từ 2014, chưa ai dùng trừ bác. Bác quay chậm, đều, như quay máy xay ngô. Thang nhích từng phân._
     -> mo_cua
@@ -140,7 +140,7 @@ hong_hot: Tới bác! Bác kể một chuyện đi bác!
     bac_bao_ve: Một người ở xa.
     ~ bv_lo_than(10)
     ~ bv_qh_ca_cong_ty(3)
-* [🐕 "Năm 2020, bác nhặt được con Tuất dưới mưa, ở đầu hẻm. Nó bé bằng chiếc dép."]
+* [🐕 "Năm 2020, bác nhặt được con {cho} dưới mưa, ở đầu hẻm. Nó bé bằng chiếc dép."]
     cho: *(nghe tên mình, ngóc đầu)* Gâu?
     _Cả đám "ồ" lên. {thuc_tap_sinh} xoa đầu {cho}. Câu chuyện không có bí mật nào, chỉ có một con chó ướt và một ông bảo vệ cũng ướt._
     ~ bv_qh_ca_cong_ty(2)
@@ -187,13 +187,13 @@ _Dưới chân cầu thang có tiếng bước chân đi lên, có cả ánh fla
 _6 giờ 30. Bác mở cổng. Ổ của {cho} trống. Bát nước còn nguyên. Không có tiếng sủa chào buổi sáng._
 _Bác tìm khắp bãi xe. Gầm cầu thang. Nóc chòi. Không thấy. Chỉ thấy ba chiếc xe tải đạo cụ đi gameshow đang xếp hàng ở cổng._
 _Thùng đạo cụ số 7 trên xe số 2 phát ra một tiếng: "…Ẳng."_
-* [📻 Bộ đàm cho {chi_dai}: "Cháu Hương. Thùng số 7. Có Tuất."]
+* [📻 Bộ đàm cho {chi_dai}: "Cháu {chi_dai}. Thùng số 7. Có {cho}."]
     _Bộ đàm im 3 giây. Rồi giọng {chi_dai}: "Dạ. Con biết rồi bác. Để con xử."_
     ~ qh("chi_dai", 3)
     { RANDOM(1, 2) == 1:
         ~ bv_tuat_di_gameshow = true
     }
-* [🐕 Đi tới, gõ vào thùng: "Tuất. Ra."]
+* [🐕 Đi tới, gõ vào thùng: "{cho}. Ra."]
     _Thùng im lặng. Rồi một tiếng gâu rất nhỏ, như nói "không". {cho} ôm chiếc găng tay hồng trong đó, quyết đi gameshow bằng được._
     ~ qh("cho", -2)
     ~ bv_tuat_di_gameshow = true
@@ -232,9 +232,9 @@ _Trên tivi, khán giả đứng dậy. Bác ngồi yên, uống ngụm trà. Đ
     -> END
 }
 _Hồi âm thứ hai của G. Kèm một hộp chè Thái Nguyên, gói giấy báo cẩn thận._
-_"Bình. Chè quê. Anh pha cho đặc, uống một mình thì phí, mời ai đó uống cùng."_
+_"{bac_bao_ve}. Chè quê. Anh pha cho đặc, uống một mình thì phí, mời ai đó uống cùng."_
 { bv_ke_tot_thang:
-    _"Anh nói Thắng sợ làm tôi thất vọng. Anh bảo nó: thất vọng là chuyện của tôi, không phải chuyện của nó. Nó cứ làm cho tử tế."_
+    _"Anh nói {giam_doc} sợ làm tôi thất vọng. Anh bảo nó: thất vọng là chuyện của tôi, không phải chuyện của nó. Nó cứ làm cho tử tế."_
     ~ bv_g(2)
 }
 _"Còn một chuyện. Anh hay nhìn mặt người ta mà đoán. Nhìn giày ấy. Đôi giày nói thật hơn cái miệng. G."_

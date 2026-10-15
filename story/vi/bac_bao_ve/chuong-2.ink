@@ -31,9 +31,9 @@ thuc_tap_sinh: Dạ, bác dạy con dắt xe vô bãi không đụng xe anh {con
 // ------------------------------------------------------------
 === bac_bao_ve_0610_sau_choi ===
 # ngay:6 # gio:10:40 # noi:sau_choi_bao_ve # bat_buoc
-_10 giờ 40. Đang buổi chụp poster thì {sieu_nhan_hong} lao ra cổng như tên bắn, chạy thẳng tới ngã tư, đẩy giùm một bà cụ chiếc xe đẩy kẹt bánh._
+_10 giờ 40. Đang buổi chụp poster thì {sieu_nhan_hong} lao ra cổng như tên bắn, chạy thẳng tới ngã tư, đẩy chiếc xe chè của một bà cụ ra khỏi ổ gà. {cho} sủa ầm lên, đuổi theo bộ đồ hồng ra tận ngã tư, rồi mất hút._
 _Bác đứng ở cổng nhìn theo. Cả đoàn chụp ảnh chạy ra sau. Có người quay clip._
-_Hai mươi phút sau, {sieu_nhan_hong} quay lại, không vào cổng chính mà đi vòng ra sau chòi, ngồi phịch xuống đất, thở dốc. Rồi tháo mũ._
+_Hai mươi phút sau, {sieu_nhan_hong} quay lại, tay bế {cho} lấm lem bùn, lạc ở đầu hẻm bên kia. Cậu không vào cổng chính mà đi vòng ra sau chòi, đặt {cho} xuống, ngồi phịch xuống đất, thở dốc. Rồi tháo mũ._
 _Một anh chàng bình thường. Tóc bết mồ hôi. Mũi hơi to. Mắt hiền. Trên mu bàn tay trái có một vết sẹo nhỏ._
 * [🍵 Lặng lẽ đặt một ly trà đá xuống cạnh cậu ta, rồi quay đi.]
     sieu_nhan_hong: *(giật mình, vội đội mũ)* Bác… bác thấy rồi hả bác?
@@ -133,20 +133,20 @@ _Chiều, một bưu phẩm bọc giấy màu xanh lá chuối tới, ghi tên n
 # ngay:9 # gio:18:00 # noi:cong_cong_ty # bat_buoc
 _Ra mắt MV đầu tiên của {sieu_nhan_hong}. Mời 40 người, tới 70. Hàng người dài từ cổng ra tới quán cơm tấm. Ngày Trứng Thế giới, ai cũng cầm một quả trứng luộc của căn tin._
 _{hong_hot} cầm điện thoại chạy ra cổng, mắt sáng rực._
-hong_hot: Bác ơi! Cho con quay clip Tuất rượt Siêu Nhân Hồng quanh bãi xe được hông bác? Dân mạng mê "Tuất và Hồng" lắm á!
+hong_hot: Bác ơi! Cho con quay clip {cho} rượt Siêu Nhân Hồng quanh bãi xe được hông bác? Dân mạng mê "{cho} và Hồng" lắm á!
 * [🐕 "Ừ. Một lần thôi. Bác đứng ngay đây."]
     _{cho} được thả. {sieu_nhan_hong} hét lên, chạy ba vòng quanh bãi xe, nhảy qua yên xe của {con_ong_chau_cha}. {cho} rượt sát gót, ngoạm hụt chiếc mũ hai lần._
-    _Clip "Tuất và Hồng" lên mạng lúc 18:20. Tới 21 giờ, nhiều lượt xem hơn cả MV._
+    _Clip "{cho} và Hồng" lên mạng lúc 18:20. Tới 21 giờ, nhiều lượt xem hơn cả MV._
     ~ follow(30000)
     ~ bv_tam(-5)
     ~ qh("hong_hot", 8)
     ~ qh("sieu_nhan_hong", -3)
 * [😐 "Không. Nó cắn rách mũ thật thì cháu đền à?"]
-    hong_hot: Dạ… thôi con quay Tuất ăn trứng vậy.
+    hong_hot: Dạ… thôi con quay {cho} ăn trứng vậy.
     _Clip {cho} ăn 30 quả trứng cút cũng được 10.000 lượt xem. Ít hơn, nhưng mũ còn nguyên._
     ~ follow(5000)
     ~ qh("hong_hot", -2)
-* [🤝 "Quay bác với Tuất ngồi gác cổng thôi. Đừng quay cậu áo hồng."]
+* [🤝 "Quay bác với {cho} ngồi gác cổng thôi. Đừng quay cậu áo hồng."]
     _Clip 15 giây: bác uống trà, {cho} gác cằm lên đùi bác, phía sau là MV đang chiếu qua cửa kính. Có người bình luận: "Bình yên quá"._
     ~ follow(8000)
     ~ bv_lo_than(3)
@@ -164,16 +164,16 @@ _Trên tivi nhỏ trong chòi, bác bấm sang kênh thời sự. Tin cuối b�
     -> END
 }
 _9 giờ tối. Hồi âm của G. Phong bì mỏng, tem nước ngoài, chữ viết tay nghiêng nghiêng quen thuộc. Trong phong bì có một tờ thư, và 500.000đ kẹp giữa._
-_"Bình. Thư anh tôi đọc ba lần. Đây là tiền nhờ anh mua xương cho con chó."_
+_"{bac_bao_ve}. Thư anh tôi đọc ba lần. Đây là tiền nhờ anh mua xương cho con chó."_
 { bv_ke_ngan_hang:
-    _"Chuyện ngân hàng… tôi đoán được từ năm ngoái. Thằng Thắng giấu tôi vì sợ tôi buồn. Tôi không trách nó. Anh cứ để ý giùm. Đừng nói với nó là tôi biết."_
+    _"Chuyện ngân hàng… tôi đoán được từ năm ngoái. Thằng {giam_doc} giấu tôi vì sợ tôi buồn. Tôi không trách nó. Anh cứ để ý giùm. Đừng nói với nó là tôi biết."_
     ~ bv_g(3)
 }
 { bv_ke_tot_thang:
     _"Anh nói nó trả lương đủ, ngồi tới 11 giờ đêm. Nó cố thì tôi biết. Nhưng anh bảo nó đừng nhắn tin cho mấy đứa nhỏ lúc khuya."_
 }
 { bv_thu_dep > bv_thu_that:
-    _"Thư anh tuần này nhiều chuyện vui. Vui thì tốt. Nhưng anh Bình, tôi nhờ anh không phải để nghe chuyện vui."_
+    _"Thư anh tuần này nhiều chuyện vui. Vui thì tốt. Nhưng anh {bac_bao_ve}, tôi nhờ anh không phải để nghe chuyện vui."_
     ~ bv_g(-3)
 }
 _Dòng cuối: "Mai anh tròn 50 rồi đấy. Thiệp tôi gửi kèm, mai hẵng mở. G."_
@@ -191,7 +191,7 @@ _Một tấm thiệp nhỏ, ngoài ghi: "Mở ngày 10"._
 === bac_bao_ve_1010_tra_ha_noi ===
 # ngay:10 # gio:15:00 # noi:choi_bao_ve # bat_buoc
 _Thứ 7. Ngày Giải phóng Thủ đô. Lương tháng chưa về, công ty vắng hoe. Nhưng chiều nay có hai người ghé chòi: {giam_doc} và {truong_phong}._
-giam_doc: Bác Bình! Hôm nay 10/10, ba người Bắc mình ngồi uống chén trà nhé. Em mang ít bánh cốm Hàng Than đây ạ.
+giam_doc: Bác {bac_bao_ve}! Hôm nay 10/10, ba người Bắc mình ngồi uống chén trà nhé. Em mang ít bánh cốm Hàng Than đây ạ.
 truong_phong: Cháu mang ô mai ạ. Ô mai sấu.
 _Ba người ngồi ghế nhựa. Ấm trà. Radio bật bài hát về Hà Nội. Ba giọng Bắc giữa một phường toàn giọng Nam._
 truong_phong: Cháu nhớ phở gánh ở Hàng Chiếu. Ở đây phở có giá đỗ, cháu ăn không quen.
@@ -222,7 +222,7 @@ _Bác rót trà. Tay không run. Bác giỏi im lặng nhất công ty._
 // ------------------------------------------------------------
 === bac_bao_ve_1010_sinh_nhat_50 ===
 # ngay:10 # gio:20:30 # noi:choi_bao_ve
-_8 giờ 30 tối. Bác mở tấm thiệp "Mở ngày 10". Bên trong một dòng: "Năm mươi tuổi rồi Bình ơi. Công ty dạo này thế nào? – G"._
+_8 giờ 30 tối. Bác mở tấm thiệp "Mở ngày 10". Bên trong một dòng: "Năm mươi tuổi rồi {bac_bao_ve} ơi. Công ty dạo này thế nào? – G"._
 _Năm mươi tuổi. Cả công ty không ai biết. Chỉ có G nhớ._
 { qh_thuc_tap_sinh >= 15 || qh_chi_dai >= 20:
     -> co_nguoi
@@ -261,16 +261,16 @@ _Bác ngồi im. Một lúc lâu. {cho} đứng dậy, ngửi cái bánh, rồi 
 # ngay:11 # gio:10:00 # noi:nha_vuon_ven_do
 _Chủ nhật. Ngày Quốc tế Trẻ em gái. Cả công ty đăng ảnh hồi nhỏ lên group. Bác không có ảnh hồi nhỏ. Bác có một tấm ảnh năm 2010._
 _Trong tủ gỗ, kẹp giữa xấp thư "G", có tấm ảnh căn phòng 20 mét vuông. Một cái bàn là thùng mì. Một cậu sinh viên gầy nhom đeo kính, cười toe: {giam_doc} năm 21 tuổi. Đứng cạnh là bác, 34 tuổi, tóc còn đen._
-_Người chụp ảnh không có trong ảnh. Người chụp ảnh là G._
-* [📱 Chụp lại tấm ảnh, gửi vào group công ty.]
-    _Ba phút sau, group nổ tung. "Ủa sếp hồi xưa ốm dữ vậy!", "Bác Bình đẹp trai quá trời!", "Ai chụp vậy bác?"._
-    _{giam_doc} nhắn riêng cho bác đúng một dòng: "Bác còn giữ ảnh này ạ? Em tưởng mất rồi."_
+_Người chụp ảnh không có trong ảnh. Người chụp ảnh là G. Mặt sau có hàng chữ bút bi đã nhòe: "Cái quý nhất trong căn phòng 20m² là con người."_
+_10 giờ 15. Điện thoại rung. {giam_doc} vừa đăng vào group công ty đúng tấm ảnh ấy, bản chụp lại từ một tấm in cũ: "Hồi đó…". Group nổ tung: "Ủa sếp hồi xưa ốm dữ vậy!", "Bác {bac_bao_ve} đẹp trai quá trời!", "Ai chụp vậy sếp?"._
+_{giam_doc} trả lời: "Một người anh. Người lập ra công ty này."_
+* [📱 Trả lời trong group: "Bác còn giữ bản in. Mặt sau có chữ."]
+    _Ba phút sau, {giam_doc} nhắn riêng cho bác: "Chữ gì hả bác?". Bác chụp mặt sau gửi anh. Anh không trả lời. Mười phút sau anh chỉ gửi lại một dòng: "Em nhớ rồi ạ."_
     ~ bv_lo_than(10)
     ~ qh("giam_doc", 12)
     ~ bv_qh_ca_cong_ty(2)
-    ~ follow(2000)
-* [🤫 Cất lại vào tủ. Ảnh này không phải để khoe.]
-    _Bác vuốt tấm ảnh cho phẳng, kẹp lại giữa xấp thư. Có những thứ chỉ để mình nhớ._
+* [🤫 Không trả lời. Cất ảnh lại vào tủ.]
+    _Bác vuốt tấm ảnh cho phẳng, kẹp lại giữa xấp thư. Có những thứ chỉ để mình nhớ. Ở trong group, {giam_doc} nhận được 47 cái tim._
     ~ bv_tam(5)
 - _Điện thoại rung. Một ảnh khác trong group: {sieu_nhan_hong} đăng ảnh xóm Cây Me năm 2003. Một đứa bé ôm con ếch nhựa đứng khóc trong góc._
 _Bác nhìn đứa bé đó. Cái mũi. Cái miệng méo khi khóc. Bác đã thấy cái miệng đó, ở cổng công ty, ngày 1/10._
@@ -291,13 +291,13 @@ _Tối chủ nhật. Bàn gỗ ở nhà Ven Đô. Ếch kêu ngoài vườn. Lá
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_g(5)
     -> chon
-* {bv_thay_mat_nguyen} [✉️ "Cậu áo hồng hôm 6/10 bỏ buổi chụp đi đẩy xe cho bà cụ. Cậu ấy tốt. Cậu ấy sợ người ta biết mặt."]
+* {bv_thay_mat_nguyen} [✉️ "Cậu áo hồng hôm 6/10 bỏ buổi chụp đi đẩy xe chè cho bà cụ, còn bế con Tuất đi lạc về. Cậu ấy tốt. Cậu ấy sợ người ta biết mặt."]
     _Bác không tả khuôn mặt. Chỉ viết "cậu ấy sợ"._
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_g(3)
     -> chon
-* {bac_bao_ve_1010_tra_ha_noi} [✉️ "Thắng nhắc tên ông hôm 10/10. Nó nói nó sợ làm ông thất vọng."]
+* {bac_bao_ve_1010_tra_ha_noi} [✉️ "{giam_doc} nhắc tên ông hôm 10/10. Nó nói nó sợ làm ông thất vọng."]
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_ke_tot_thang = true
@@ -384,12 +384,12 @@ dan_dau_tu: Bác ơi, bác cho em mượn thêm 2 triệu nữa thôi. Lần nà
     ~ bv_rot_tra("dan_dau_tu", 5)
 * {bv_tuat_thay_bien_lai} [🔒 "Hôm qua cháu bán cái đồng hồ ở tiệm cầm đồ Cứu Nguy rồi, đúng không?"]
     dan_dau_tu: *(tái mặt)* Sao… sao bác biết?
-    bac_bao_ve: Tuất biết. Tuất tha về cho bác.
+    bac_bao_ve: {cho} biết. {cho} tha về cho bác.
     _{dan_dau_tu} ngồi xuống ghế nhựa. Rất lâu. Rồi rút điện thoại, mở app coin, nhìn con số đỏ._
     dan_dau_tu: Em… em cắt lỗ. Hôm nay. Em hứa với bác.
     ~ bv_chuong_cat_lo = true
     ~ qh("dan_dau_tu", 12)
     ~ bv_bm(2)
-- _Chiều, lương về. {ke_toan} mang phong bì xuống tận chòi, kèm một túi xúc xích: "Lương của Tuất, con bù luôn hai ngày." {cho} vẫy đuôi tới mức cả mông lắc theo._
+- _Chiều, lương về. {ke_toan} mang phong bì xuống tận chòi, kèm một túi xúc xích: "Lương của {cho}, con bù luôn hai ngày." {cho} vẫy đuôi tới mức cả mông lắc theo._
 ~ nhan(xuc_xich)
 -> END

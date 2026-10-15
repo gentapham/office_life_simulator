@@ -11,7 +11,7 @@ _Mốc 3. Sáng nay cả công ty dán mắt vào điện thoại. Trang "Confes
     ~ tinh_than_cong_ty = tinh_than_cong_ty - 5
 }
 _9 giờ, {hr} và {it} cùng xuống chòi. Một người cầm sổ tay, một người cầm laptop._
-hr: Bác Bình, cháu chỉ muốn hỏi bác một chút thôi. Đêm 20, sau liên hoan, có ai quay lại công ty không ạ?
+hr: Bác {bac_bao_ve}, cháu chỉ muốn hỏi bác một chút thôi. Đêm 20, sau liên hoan, có ai quay lại công ty không ạ?
 it: Có người đăng nhập từ máy trong tòa nhà. 23 giờ 12.
 _Bác ngủ lúc 21 giờ. Nhưng sổ trực thì không ngủ. 23 giờ 10, bác dậy đi vệ sinh, thấy đèn tầng 2 bàn trợ lý sáng. Bác đã ghi lại._
 * [📒 Mở sổ trực, chỉ vào dòng "23:10. Đèn bàn trợ lý tầng 2."]
@@ -140,7 +140,7 @@ _Bác đứng ở cửa, vì vẫn chưa ai bảo bác về. Bác nhớ một th
 }
 _Hồi âm thứ ba. Ngắn hơn hai lá trước. Chữ viết nghiêng hơn, như viết vội._
 { bv_ke_trang_47:
-    _"Bình. Mười tỷ. Tôi đọc dòng đó năm lần. Anh đừng nói gì với Thắng. Tôi có cách của tôi. Anh giữ cái phong bì cho kỹ."_
+    _"{bac_bao_ve}. Mười tỷ. Tôi đọc dòng đó năm lần. Anh đừng nói gì với {giam_doc}. Tôi có cách của tôi. Anh giữ cái phong bì cho kỹ."_
     ~ bv_g(4)
 }
 { bv_ke_dem_17:
@@ -192,7 +192,7 @@ sales: Bác nhìn là người ta tin liền. Bác có cái… cái uy ấy bác
 # ngay:23 # gio:19:45 # noi:sanh_cong_ty # bat_buoc
 _Livestream. 10.000 người xem. Sảnh tầng trệt rực đèn hồng._
 { bv_kevin_tron:
-    _Bác bước ra trong bộ vest, giọng Bắc chậm rãi đọc đúng ba câu: "Chúc mừng sinh nhật. Làm việc tốt. Ngủ đúng giờ." Bình luận nổ tung: "Ông Kevin này thật quá!", "Kevin Trộn gốc Hà Nội hả?". Có người nhận ra: "Ủa ông bảo vệ trong clip Tuất mà?"._
+    _Bác bước ra trong bộ vest, giọng Bắc chậm rãi đọc đúng ba câu: "Chúc mừng sinh nhật. Làm việc tốt. Ngủ đúng giờ." Bình luận nổ tung: "Ông Kevin này thật quá!", "Kevin Trộn gốc Hà Nội hả?". Có người nhận ra: "Ủa ông bảo vệ trong clip {cho} mà?"._
     ~ follow(15000)
 }
 _{sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline}: "{chua_te_deadline} ơi. Anh thích em. Không phải PR đâu. Em trả lời anh đi!". Bình luận chạy như thác: "\#VũƠiTrảLờiĐi"._
@@ -203,7 +203,7 @@ _Ở bên kia sảnh, {idol_het_thoi} đứng sát xe bánh. Quá sát. Chân an
     _Nhưng {cho} vẫn ngồi cạnh bác, cách 8 mét, dây xích căng. 10.000 người xem thấy rõ._
     -> phat_vap
 * [😶 Thả lỏng tay một chút. Cho nó đi.]
-    _{cho} phóng như tên. Không nhắm vào bánh. Nhắm vào chiếc mũ. Nhưng đường bay đi qua đúng cái bánh. Ba tầng kem hồng đổ ụp. Clip "Tuất phá bánh" lan khắp Tóp-tóp._
+    _{cho} phóng như tên. Không nhắm vào bánh. Nhắm vào chiếc mũ. Nhưng đường bay đi qua đúng cái bánh. Ba tầng kem hồng đổ ụp. Clip "{cho} phá bánh" lan khắp Tóp-tóp._
     ~ follow(90000)
     ~ scandal()
     ~ qh("cho", 5)
@@ -221,7 +221,7 @@ _Ở bên kia sảnh, {idol_het_thoi} đứng sát xe bánh. Quá sát. Chân an
     ~ bv_khong_thay_gi()
     ~ follow(90000)
     ~ qh("cho", -5)
-* [📒 Đi tới chỗ {quan_ly_idol}, nói nhỏ: "Con chó ngồi với bác. Cháu Phát vấp."]
+* [📒 Đi tới chỗ {quan_ly_idol}, nói nhỏ: "Con chó ngồi với bác. Cháu {idol_het_thoi} vấp."]
     quan_ly_idol: *(nhắm mắt, thở dài)* Con biết, bác. Chuyện này để con lo.
     _{quan_ly_idol} không nói với ai. Nhưng tối đó {idol_het_thoi} xuống chòi, đưa {cho} một cây xúc xích, không nói gì._
     ~ follow(90000)
@@ -263,7 +263,7 @@ _Một tin nhắn trên điện thoại cậu, của người lạ: "Ủa Hồng
 === bac_bao_ve_2410_chu_toa ===
 # ngay:24 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "Hội nghị hòa giải". Phòng họp xếp thành từng cặp bàn đối mặt._
-chi_dai: Bác Bình, con mời bác ngồi ghế chủ tọa. Vì bác không theo phe nào.
+chi_dai: Bác {bac_bao_ve}, con mời bác ngồi ghế chủ tọa. Vì bác không theo phe nào.
 _Bác ngồi xuống ghế chủ tọa. Lần thứ ba trong tháng bác lên tầng 2. Trước mặt: bốn cặp bàn. Và một bàn riêng ở góc, biển "BÀN CHỦ NỢ", nơi {dan_dau_tu} ngồi đối diện 7 cái ghế._
 _Một trong 7 cái ghế đó ghi tên bác._
 * [⚖️ Ngồi ghế chủ tọa. Bỏ trống ghế chủ nợ của mình.]
@@ -353,7 +353,7 @@ _Lá thư thứ tư. Lá cuối của tháng. Bác viết chậm hơn mọi lầ
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_g(5)
     -> chon
-* [✉️ "Thằng Thắng gầy đi. Nó đi làm từ 7 giờ, về lúc 11 giờ. Nó vẫn chưa bỏ ai."]
+* [✉️ "Thằng {giam_doc} gầy đi. Nó đi làm từ 7 giờ, về lúc 11 giờ. Nó vẫn chưa bỏ ai."]
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_ke_tot_thang = true
@@ -371,7 +371,7 @@ _Lá thư thứ tư. Lá cuối của tháng. Bác viết chậm hơn mọi lầ
 
 = gui
 ~ bv_so_thu = bv_so_thu + 1
-_Dưới chữ ký, bác viết thêm một dòng nhỏ, lần đầu tiên trong mười năm: "Ông giữ sức khỏe. Bình."_
+_Dưới chữ ký, bác viết thêm một dòng nhỏ, lần đầu tiên trong mười năm: "Ông giữ sức khỏe. {bac_bao_ve}."_
 ~ bv_g(2)
 -> END
 
@@ -449,9 +449,9 @@ giam_doc: Bác viết cho anh ấy chưa? Anh ấy… biết chưa?
 === bac_bao_ve_2710_vest_trang ===
 # ngay:27 # gio:09:55 # noi:cong_cong_ty # bat_buoc
 _9 giờ 55. Một chiếc xe xanh lá chuối đậu ngay cổng. Người bước xuống: vest trắng, tóc vuốt keo bóng như gương, cặp hồ sơ da. Lưu Lực. Bác đã thấy gương mặt này mười năm trước, ướt đẫm nước cốt dừa._
-luu_luc: *(cười, đưa một phong bì dày)* Chào bác! Bác chuyển giùm em cái này cho anh Nguyên nha. Còn phong bì nhỏ này là chút quà cho bác uống trà. Ở LL, bảo vệ lương 15 triệu lận đó bác.
+luu_luc: *(cười, đưa một phong bì dày)* Chào bác! Bác chuyển giùm em cái này cho anh {sieu_nhan_hong} nha. Còn phong bì nhỏ này là chút quà cho bác uống trà. Ở LL, bảo vệ lương 15 triệu lận đó bác.
 _Phong bì nhỏ, căng phồng. Bác nhìn nó. Rồi nhìn giày hắn: giày da trắng, đế không một vết bẩn. Người không bao giờ phải đi bộ._
-* [🚪 "Cậu Nguyên chưa tới. Cháu để lại tên, bác báo."]
+* [🚪 "Cậu {sieu_nhan_hong} chưa tới. Cháu để lại tên, bác báo."]
     luu_luc: *(nụ cười cứng lại)* Em đợi được không bác?
     bac_bao_ve: Cổng không có ghế cho khách. Ghế nhựa là của nhân viên.
     _Lưu Lực đứng 20 phút dưới nắng, vest trắng ướt mồ hôi, rồi để lại phong bì lớn và đi. Bác cất nó vào ngăn kéo. Sáng mai mới đưa._
@@ -467,7 +467,7 @@ _Phong bì nhỏ, căng phồng. Bác nhìn nó. Rồi nhìn giày hắn: giày 
     _Lưu Lực khựng lại. Bàn tay đang chìa phong bì nhỏ lơ lửng giữa không trung. Bác nhận phong bì lớn để chuyển, đặt lên bàn._
     ~ bv_g(10)
     ~ bv_tam(5)
-* [🐕 Đặt ấm trà xuống, nhìn {cho}: "Tuất, khách."]
+* [🐕 Đặt ấm trà xuống, nhìn {cho}: "{cho}, khách."]
     _{cho} đi ra, ngửi bộ vest trắng từ dưới lên trên. Rồi đứng lên hai chân sau, để lại một vệt chân bùn ngay đầu gối trắng tinh._
     _Lưu Lực nhìn đầu gối mình. Nhìn {cho}. Bỏ về, quên luôn phong bì lớn trên bàn chòi._
     ~ bv_ll_tre = true
@@ -489,7 +489,7 @@ _Phong bì nhỏ, căng phồng. Bác nhìn nó. Rồi nhìn giày hắn: giày 
 _10 giờ 30. Qua vách kính sảnh, bác thấy Lưu Lực quay lại, lần này đi thẳng vào sảnh để tìm {quan_ly_idol}._
 _Rồi hắn thấy {chi_dai}, đang đứng ở quầy lễ tân, bộ đàm bên hông. Cặp hồ sơ tuột khỏi tay hắn. Giấy văng khắp sảnh._
 _{chi_dai} nhíu mày, nhìn hắn như cố nhớ một khuôn mặt._
-* [📻 Bấm bộ đàm cho {chi_dai}: "Cháu Hương. Quán Ốc Đêm. Mười năm trước. Thằng ấy đấy."]
+* [📻 Bấm bộ đàm cho {chi_dai}: "Cháu {chi_dai}. Quán Ốc Đêm. Mười năm trước. Thằng ấy đấy."]
     _Qua vách kính, bác thấy {chi_dai} đứng thẳng lưng lên. Từ từ. Như con hổ vừa nhớ ra mùi con mồi._
     _Lưu Lực nhặt vội giấy tờ, lùi ra cửa, suýt vấp chân bác. Hắn đi thẳng ra xe. Không quay lại._
     ~ qh("chi_dai", 15)
@@ -518,7 +518,7 @@ sieu_nhan_hong: *(hạ kính)* Bác… con chưa về được. Con không biế
     -> END
 
 = loi_khuyen
-* [😊 "Bên này có người nhớ tên cháu. Bác nhớ. Nguyễn Nguyên."]
+* [😊 "Bên này có người nhớ tên cháu. Bác nhớ. Nguyễn {sieu_nhan_hong}."]
     _Cậu ngẩng lên. Lần đầu có người ở đây gọi đủ họ tên. Cậu nhìn cái phong bì trên đùi rất lâu._
     { qh_sieu_nhan_hong >= 40 || bv_ll_tre:
         _Rồi xé đôi. Bỏ vào thùng rác cạnh chòi. "Con ở lại, bác."_

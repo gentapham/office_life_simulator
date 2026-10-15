@@ -379,7 +379,7 @@ _5 giờ chiều. Bộ đàm của bạn rè rè. Giọng Bác {bac_bao_ve}, ch�
 _Trên bàn trong chòi có một lá thư tay, giấy kẻ ô học sinh. Ký tên một chữ: "G". Cạnh đó là một phong bì nhỏ dán kín, ngoài ghi: "Chỉ mở khi công ty sắp sập."_
 bac_bao_ve: Thư của… một người bạn cũ. Người làm ra cái công ty này. Mỗi năm ngày này lại có một lá.
 bac_bao_ve: Năm nay ông ấy viết cho cả công ty. Bác đọc trước mọi người, hay để yên? Bác hỏi cháu, vì cháu là người hiểu mấy đứa nhỏ nhất.
-_Bạn liếc đoạn đầu: "Gửi các cháu ở G. Mười sáu năm rồi. Các cháu còn đứng đó là anh vui…"_
+_Bạn liếc dòng đầu: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui…"_
 * [📢 "Đọc đi bác. Tối nay ở liên hoan. Mấy đứa nhỏ cần nghe."]
     bac_bao_ve: *(gật đầu chậm)* Ừ. Thế thì bác đọc. Đọc xong rồi thì… người ta biết bác là ai đấy.
     chi_dai: Thì người ta biết bác là bác {bac_bao_ve}. Có gì đâu.
@@ -413,10 +413,8 @@ _Bàn dài 23 chỗ. Một cái bánh kem sinh nhật 16 nến. {cho} được B
     -> END
 }
 _Bác {bac_bao_ve} đứng dậy, gõ đũa vào ly trà. Cả quán ốc im bặt. Bác đeo kính lão, mở lá thư._
-bac_bao_ve: Gửi các cháu ở G. Mười sáu năm rồi. Các cháu còn đứng đó là anh vui.
-bac_bao_ve: Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. Anh không cần biết nó lời hay lỗ. Anh chỉ muốn biết các cháu còn thương nhau không.
-bac_bao_ve: {giam_doc}, em vẫn hay nhắn tin khuya phải không. Thôi đi em. Để các cháu nó ngủ.
-_{giam_doc} đứng hình. Cả quán quay sang nhìn {giam_doc}. Rồi quay sang nhìn bác._
+bac_bao_ve: Mười sáu năm rồi. Các cháu còn đứng đó là anh vui.
+bac_bao_ve: Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có.
 bac_bao_ve: Ký tên: G. *(gấp thư)* Thế thôi. Bác đọc xong rồi.
 _Im lặng ba giây. Rồi {thuc_tap_sinh} vỗ tay. Rồi cả quán vỗ tay. {giam_doc} cúi đầu, lấy khăn giấy lau mắt, nói là "do ớt"._
 ~ tinh_than_cong_ty = tinh_than_cong_ty + 15

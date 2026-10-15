@@ -22,7 +22,7 @@ _Đây là lá thứ tư trong tháng. Tháng trước có ba lá._
     ~ bv_bm(1)
 - _Radio đọc tin: "Hôm nay là Ngày Quốc tế Người cao tuổi…". Bác vặn nhỏ lại. Không phải chuyện của bác._
 cho: Gâu.
-bac_bao_ve: Ừ. Hôm nay đông người đấy, Tuất. Mày ngoan vào.
+bac_bao_ve: Ừ. Hôm nay đông người đấy, {cho}. Mày ngoan vào.
 ~ uong(20)
 -> END
 
@@ -30,7 +30,7 @@ bac_bao_ve: Ừ. Hôm nay đông người đấy, Tuất. Mày ngoan vào.
 === bac_bao_ve_0110_bo_hoa ===
 # ngay:1 # gio:08:30 # noi:cong_cong_ty # bat_buoc
 _8 giờ 30. Cả công ty ùa ra cổng. {thuc_tap_sinh} ôm bó hoa cúc vàng to bằng cái thúng. {hong_hot} cầm ly trà sữa trân châu, ống hút cắm sẵn. {chi_dai} đứng sau cùng, khoanh tay, cười._
-giam_doc: Bác Bình ơi, hôm nay Quốc tế Người cao tuổi, cả công ty mừng bác nhé! Bác là "legacy" của mình đấy ạ. Bác có muốn phát biểu vài câu không?
+giam_doc: Bác {bac_bao_ve} ơi, hôm nay Quốc tế Người cao tuổi, cả công ty mừng bác nhé! Bác là "legacy" của mình đấy ạ. Bác có muốn phát biểu vài câu không?
 _Bác cầm bó hoa. Tay lóng ngóng. Mặt nóng ran. Mười sáu năm đứng cổng, đây là lần đầu có người đứng trước cổng để nhìn bác._
 * [😊 "Ừ… cảm ơn các cháu. Thôi, vào làm đi, muộn giờ chấm công."]
     _Cả công ty cười ồ. {hr} nhìn đồng hồ, gật gù đồng ý._
@@ -40,7 +40,7 @@ _Bác cầm bó hoa. Tay lóng ngóng. Mặt nóng ran. Mười sáu năm đứn
     giam_doc: Ơ… vâng ạ. Em… em sẽ "note" lại ạ.
     ~ bv_tam(5)
     ~ bv_qh_ca_cong_ty(2)
-* [🤫 "Anh Thắng nhớ hồi công ty có mỗi cái phòng 20 mét vuông không?"]
+* [🤫 "Anh {giam_doc} nhớ hồi công ty có mỗi cái phòng 20 mét vuông không?"]
     giam_doc: Ơ… bác còn nhớ à? Hồi ấy em mới 21 tuổi, ngồi ghế nhựa, bàn là cái thùng mì…
     _Anh dừng lại giữa câu. Nhìn bác hơi lâu. Rồi cười, vỗ vai bác._
     _Ở góc sân, cậu nhân viên mới tên {ran_doc} rút cuốn sổ tay ra, ghi một dòng gì đó._
@@ -67,7 +67,7 @@ _{cho} lao ra, sủa như gặp kẻ thù truyền kiếp. Mà mới gặp lần
     _Chiều đó bác lấy sơn kẻ một ô vuông ở góc bãi, viết chữ "HỒNG". Nguệch ngoạc mà rõ ràng._
     ~ qh("sieu_nhan_hong", 5)
     ~ tien_cong(80000)
-* [🐕 "Tuất. Về chỗ."]
+* [🐕 "{cho}. Về chỗ."]
     cho: *(lùi lại hai bước, vẫn gầm gừ)* Grừ…
     sieu_nhan_hong: *(cúi xuống, giả tiếng sủa)* Gâu gâu! Gâu! Hehe, nó dễ thương ghê bác!
     _{cho} không thấy dễ thương. {cho} thấy bị xúc phạm._
@@ -92,7 +92,7 @@ _Bác là người duy nhất ở cổng không reo. Bác nhìn xấp thư ngân
 === bac_bao_ve_0110_banh_bong_lan ===
 # ngay:1 # gio:15:00 # noi:choi_bao_ve
 _3 giờ chiều. {chi_dai} xuống chòi, tay ôm một ổ bánh bông lan to bằng cái mũ bảo hiểm, tay kia cầm một cái ấm trà mới, men xanh._
-chi_dai: Bác Bình! Ấm cũ của bác sứt vòi từ 2015 rồi. Con đổi cho bác cái mới.
+chi_dai: Bác {bac_bao_ve}! Ấm cũ của bác sứt vòi từ 2015 rồi. Con đổi cho bác cái mới.
 _Bác nhìn cái ấm cũ. Vòi sứt một miếng nhỏ, chỗ đó bác đã quen rót nghiêng tay một chút._
 * [😊 "Ừ… bày vẽ thế làm gì." Nhận lấy, đỏ mặt.]
     chi_dai: Bày vẽ một năm một lần thôi bác.
@@ -102,7 +102,7 @@ _Bác nhìn cái ấm cũ. Vòi sứt một miếng nhỏ, chỗ đó bác đã 
     ~ qh("chi_dai", 10)
     ~ bv_tam(5)
 - _Bác rót trà vào ấm mới. Rót cho {chi_dai} một ly. Cắt bánh. Miếng thứ hai đưa {cho}. {cho} nuốt không nhai._
-bac_bao_ve: Cháu Hương này. Cái công ty này nó vui hôm nay. Nhưng cháu để ý anh {giam_doc} giúp bác nhé.
+bac_bao_ve: Cháu {chi_dai} này. Cái công ty này nó vui hôm nay. Nhưng cháu để ý anh {giam_doc} giúp bác nhé.
 chi_dai: Sao vậy bác?
 * [🙈 "Không sao. Bác không thấy gì đâu."]
     _{chi_dai} nhìn bác rất lâu. Rồi gật đầu. {chi_dai} hiểu: khi bác nói "không thấy gì" là bác đã thấy hết._
@@ -118,7 +118,7 @@ chi_dai: Sao vậy bác?
 === bac_bao_ve_0110_nguyen_ve ===
 # ngay:1 # gio:17:40 # noi:cong_cong_ty
 _5 giờ 40. {sieu_nhan_hong} ra xe. Đi ngang ổ của {cho}, cúi xuống, kéo hai má làm mặt xấu, lè lưỡi._
-sieu_nhan_hong: Bai bai Tuất nha! Mai anh tới chọc tiếp! Gâu gâu!
+sieu_nhan_hong: Bai bai {cho} nha! Mai anh tới chọc tiếp! Gâu gâu!
 cho: GÂU! GÂU GÂU GÂU GÂU!
 _Xe hồng chạy khuất. {cho} vẫn sủa. Sủa tới đầu đường. Sủa tới lúc trời tối._
 * [🐕 Ngồi xuống xoa đầu {cho}: "Thôi. Nó đi rồi."]
@@ -137,7 +137,7 @@ _Chủ nhật này viết. Viết gì thì… chủ nhật tính._
 # ngay:2 # gio:07:55 # noi:may_cham_cong
 _Ngày Nụ cười Thế giới. {hr} dán tờ giấy lên máy chấm công: "HÔM NAY CHẤM CÔNG PHẢI CƯỜI. MÁY CÓ CAMERA."_
 _Bác không phải chấm công. Bác ở đây 24 giờ. Nhưng {hr} vẫn đi ra cổng, cười với bác._
-hr: Bác Bình, bác cười với cháu một cái được không ạ? Cháu chỉ muốn lan tỏa năng lượng tích cực thôi.
+hr: Bác {bac_bao_ve}, bác cười với cháu một cái được không ạ? Cháu chỉ muốn lan tỏa năng lượng tích cực thôi.
 * [😐 Nhìn {hr}. Không cười.]
     hr: *(nụ cười cứng lại)* Dạ… cháu hiểu. Bác giữ năng lượng.
     _Ba nhân viên đứng xếp hàng sau lưng {hr} cười phá lên. Năng lượng tích cực lan tỏa thật._
@@ -190,7 +190,7 @@ _Và một chồng thư tay, cột bằng dây thun. Thư nào cũng ký một c
     _Đồ gửi của bạn. Giữ cho kỹ là được. Bác lau từng góc, như lau bàn thờ._
     ~ bv_tam(8)
 * [✉️ Đọc lại lá thư cũ nhất, năm 2016.]
-    _"Bình, tôi đi rồi. Giấy tờ để ở công ty thì thằng {giam_doc} làm mất. Anh giữ giùm. Việc hôm nay cứ để ngày mai tính. G."_
+    _"{bac_bao_ve}, tôi đi rồi. Giấy tờ để ở công ty thì thằng {giam_doc} làm mất. Anh giữ giùm. Việc hôm nay cứ để ngày mai tính. G."_
     _Bác bật cười. Câu đùa đó bây giờ in to trên tường sảnh. Thằng {giam_doc} tưởng thật._
     ~ bv_tam(5)
     ~ bv_g(2)
@@ -215,7 +215,7 @@ _Bác cười. Không phải lì. Đã hứa với bạn thì đứng thôi._
 # ngay:4 # gio:07:00 # noi:choi_bao_ve # bat_buoc
 _Chủ nhật. Ngày Động vật Thế giới. Cũng là ngày bác nhặt được {cho} năm ấy, dưới mưa, ở đầu hẻm. Bác tính đấy là sinh nhật nó._
 _Năm nào ngày này bác cũng tắm cho nó. Năm nào cũng thất bại._
-bac_bao_ve: Tuất. Lại đây. Tắm.
+bac_bao_ve: {cho}. Lại đây. Tắm.
 cho: *(nhảy lên nóc chòi, nhìn xuống)* …
 * [🪣 Bưng chậu nước, trèo lên ghế, cố bắt.]
     _Bác trèo lên ghế. {cho} nhảy xuống. Bác trèo xuống. {cho} nhảy lên. Ba vòng. Chậu nước đổ vào… bác._
@@ -229,7 +229,7 @@ cho: *(nhảy lên nóc chòi, nhìn xuống)* …
     ~ bv_tam(3)
 - _9 giờ. {chi_dai} xuất hiện ở cổng, tay áo xắn cao. Nhìn bác ướt từ đầu tới chân, cười._
 chi_dai: Bác lại thua nó hả bác?
-_{chi_dai} đứng trước chòi, chống nạnh: "Tuất. Xuống." Ba giây. {cho} leo xuống, đi thẳng vào chậu, ngồi im như tượng._
+_{chi_dai} đứng trước chòi, chống nạnh: "{cho}. Xuống." Ba giây. {cho} leo xuống, đi thẳng vào chậu, ngồi im như tượng._
 bac_bao_ve: *(lắc đầu)* Bác nuôi nó 6 năm…
 * [🎀 Phụ việc: cầm khăn, cầm áo len cam, cầm cái nơ hồng.]
     _Mười lăm phút sau, {cho} sạch sẽ, mặc áo len cam chữ G, đội nơ hồng, nhìn hai người như bị xúc phạm sâu sắc._
@@ -245,7 +245,7 @@ bac_bao_ve: *(lắc đầu)* Bác nuôi nó 6 năm…
 === bac_bao_ve_0410_nguyen_choc ===
 # ngay:4 # gio:10:30 # noi:cong_cong_ty
 _10 giờ 30. Xe hồng tới. {sieu_nhan_hong} thấy {cho} mặc áo đội nơ, cười ré lên._
-sieu_nhan_hong: Trời ơi Tuất! Bữa nay đẹp trai dữ vậy! Gâu gâu! Gâu gâu gâu! *(làm mặt xấu)*
+sieu_nhan_hong: Trời ơi {cho}! Bữa nay đẹp trai dữ vậy! Gâu gâu! Gâu gâu gâu! *(làm mặt xấu)*
 cho: GRỪỪỪ…
 _{cho} hạ thấp người. Mắt dán vào chiếc mũ hồng. Lần này không phải sủa. Lần này là định cắn._
 -> bac_bao_ve_mg_giu_tuat_mo_dau
@@ -256,12 +256,12 @@ _{cho} hạ thấp người. Mắt dán vào chiếc mũ hồng. Lần này khô
 _Cuối cùng thì {cho} vẫn cướp được một thứ: chiếc găng tay hồng tuột khỏi tay {sieu_nhan_hong}. {cho} ngậm nó chạy mất dưới gầm cầu thang._
 sieu_nhan_hong: Găng của anh! Đôi đó anh… à thôi, anh có 12 đôi.
 _Mười phút sau, bác thấy {sieu_nhan_hong} lén nhét con gà cao su của {cho} vào sau tủ mạng tầng 1, cười khúc khích._
-* [🗣️ "Cháu Nguyên. Trả con gà cho nó."]
+* [🗣️ "Cháu {sieu_nhan_hong}. Trả con gà cho nó."]
     sieu_nhan_hong: *(giật mình)* Bác thấy hả bác?
     bac_bao_ve: Bác không thấy gì đâu. Nhưng cháu trả đi.
     _{sieu_nhan_hong} gãi mũ. Rồi… vẫn để đó. "Mai con trả bác nha!" Rồi chạy mất._
     ~ bv_khong_thay_gi()
-* [📒 Ghi sổ: "Gà cao su của Tuất: sau tủ mạng tầng 1."]
+* [📒 Ghi sổ: "Gà cao su của {cho}: sau tủ mạng tầng 1."]
     _Ghi để nhớ. Có ngày cần._
     ~ bv_bm(1)
 * [🙈 Chuyện trẻ con. Bác không xen vào.]
@@ -284,7 +284,7 @@ _"Gửi G,". Bác ngồi nhìn hai chữ đó mười phút. Tháng này có nhi
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_g(3)
     -> chon
-* [✉️ Chuyện ngân hàng: "Tháng này có 4 lá thư ngân hàng gửi Thắng. Nó đi xe máy, ô tô không thấy đâu."]
+* [✉️ Chuyện ngân hàng: "Tháng này có 4 lá thư ngân hàng gửi {giam_doc}. Nó đi xe máy, ô tô không thấy đâu."]
     _Viết xong câu này, bác ngồi im rất lâu. Rồi không gạch đi._
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
@@ -292,7 +292,7 @@ _"Gửi G,". Bác ngồi nhìn hai chữ đó mười phút. Tháng này có nhi
     ~ bv_g(6)
     ~ bv_tam(-5)
     -> chon
-* [✉️ Chuyện Thắng: "Thằng Thắng tháng nào cũng trả lương đủ. Nó ngồi phòng tới 11 giờ đêm. Nó cố lắm."]
+* [✉️ Chuyện {giam_doc}: "Thằng {giam_doc} tháng nào cũng trả lương đủ. Nó ngồi phòng tới 11 giờ đêm. Nó cố lắm."]
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_ke_tot_thang = true
@@ -303,7 +303,7 @@ _"Gửi G,". Bác ngồi nhìn hai chữ đó mười phút. Tháng này có nhi
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_g(2)
     -> chon
-* [🎀 Chuyện vui: "Tuất được tắm, mặc áo, đội nơ hồng. Nó giận cả buổi."]
+* [🎀 Chuyện vui: "{cho} được tắm, mặc áo, đội nơ hồng. Nó giận cả buổi."]
     _Chuyện thật, nhưng là chuyện để G cười. Không phải chuyện G cần biết._
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_dep = bv_thu_dep + 1

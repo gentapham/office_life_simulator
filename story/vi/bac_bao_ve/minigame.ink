@@ -190,7 +190,7 @@ bac_bao_ve: Mai bác không giữ nữa đâu.
 
 === bac_bao_ve_mg_giu_tuat_that_bai ===
 _Dây xích tuột. {cho} phóng lên như lò xo. Răng sượt qua vành mũ hồng, để lại một vết rách nhỏ. {sieu_nhan_hong} hét lên, ôm đầu chạy vào trong._
-_{hong_hot} quay được hết. Clip "Tuất cắn mũ" có 50.000 lượt xem trong một buổi chiều._
+_{hong_hot} quay được hết. Clip "{cho} cắn mũ" có 50.000 lượt xem trong một buổi chiều._
 ~ follow(15000)
 ~ qh("sieu_nhan_hong", -5)
 ~ bv_tam(-5)

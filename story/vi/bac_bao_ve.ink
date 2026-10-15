@@ -9,6 +9,9 @@ INCLUDE bac_bao_ve/chuong-2.ink
 INCLUDE bac_bao_ve/chuong-3.ink
 INCLUDE bac_bao_ve/chuong-4.ink
 INCLUDE bac_bao_ve/chuong-5.ink
+INCLUDE bac_bao_ve/chuong-6.ink
+INCLUDE bac_bao_ve/nhan-vat.ink
 INCLUDE bac_bao_ve/minigame.ink
+INCLUDE bac_bao_ve/ket-thuc.ink
 
 -> END

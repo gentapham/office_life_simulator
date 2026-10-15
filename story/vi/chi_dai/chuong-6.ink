@@ -14,7 +14,7 @@ _Mốc 4: 800.000. Bãi đất trống giờ đã có khung sân khấu, giàn g
 }
 _Đội đèn báo: thiếu 2 giàn đèn lớn. Ngân sách hết. Không có 2 giàn đó, nửa sân khấu sẽ tối._
 * {cd_tin_sua_chua} [🔒 Gọi Sữa Chua Hồng Hào: "Chị ơi, 1 tỷ tài trợ, cho em ứng trước 60 triệu tiền đèn."]
-    _Chị marketing Hồng Hào cười: "Dạ được ạ. Chiều em chở thêm 2 thùng sữa chua cho anh chị em dựng sân khấu."_
+    _Bà chủ Hồng Hào cười móm mém qua điện thoại: "Được con. Chiều ký ở Sống Ảo xong bà ứng luôn. Bà chở thêm 2 thùng sữa chua cho tụi nhỏ dựng sân khấu."_
     _Hai giàn đèn tới lúc 3 giờ chiều. Kèm 200 hộp sữa chua. {cho} ăn 6 hộp._
     ~ cd_td(12)
     ~ cd_uy(5)
@@ -49,7 +49,7 @@ _Đội đèn báo: thiếu 2 giàn đèn lớn. Ngân sách hết. Không có 2
 # ngay:28 # gio:16:00 # noi:phong_dung_phim
 _Fanpage công ty vừa đăng một video lạ. 2 phút. Dựng rất đẹp. Toàn cảnh {quan_ly_idol}: cầm hai điện thoại, ngủ gật trên xe, cười với {idol_het_thoi}. Cuối video: "Anh {quan_ly_idol} ơi, em thích anh lâu rồi."_
 _Góc khung hình có một con cú nhỏ xíu._
-_{editor} ngồi trong phòng dựng, hai tay ôm đầu. Video đã có 30.000 lượt xem._
+_{editor} ngồi trong phòng dựng, hai tay ôm đầu. Video nằm trên fanpage 6 phút, đã có 2.000 lượt xem._
 editor: Em… em bấm nhầm xuất bản. Em định lưu nháp. Chị ơi… em muốn biến mất.
 * [🛡️ Gỡ video xuống ngay. Rồi đứng trước cửa phòng dựng, không ai được vào.]
     _Bạn gọi {hong_hot}: "Gỡ. Ngay. Ai hỏi thì nói lỗi kỹ thuật." Rồi bạn đứng ở cửa phòng dựng hai tiếng. {hong_hot} tới, {sales} tới, {dan_dau_tu} tới. Không ai qua._
@@ -121,7 +121,7 @@ hong_hot: Mật khẩu "nghegichua" nha mọi người!
 // ------------------------------------------------------------
 === chi_dai_2910_email_nhi ===
 # ngay:29 # gio:16:50 # noi:ban_tro_ly
-_4 giờ 50 chiều. Wifi vừa có lại. {thanh_ninh} ngồi trước màn hình, con trỏ chuột lơ lửng trên nút "Gửi". Tiêu đề: "Em đồng ý về LL ạ"._
+_4 giờ 50 chiều. Wifi vẫn chết. {thanh_ninh} bắt mạng điện thoại "nghegichua" của {hong_hot}, ngồi trước màn hình, con trỏ chuột lơ lửng trên nút "Gửi". Tiêu đề: "Em đồng ý về LL ạ"._
 { cd_hoa_voi_nhi:
     -> da_hoa
 - else:

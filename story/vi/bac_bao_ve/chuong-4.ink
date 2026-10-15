@@ -8,7 +8,7 @@
 _6 giờ sáng. Xe 29 chỗ đậu trước cổng. Cả công ty đi Vũng Tàu, 2 ngày 1 đêm. Bác ở lại giữ tòa nhà, như mọi năm._
 _{chi_dai} cầm còi đứng ở cửa xe. {hr} cầm danh sách phòng. {thuc_tap_sinh} ôm một túi bánh mì cho cả xe._
 _{cho} ngồi ở chân bậc xe, nhìn lên. Đuôi quét qua quét lại. Mắt nhìn bác._
-* [🐕 "Tuất. Ở nhà với bác."]
+* [🐕 "{cho}. Ở nhà với bác."]
     cho: *(nhìn xe, nhìn bác, nhìn xe)* …Ẳng.
     _{cho} lững thững đi về chòi, nằm xuống, quay lưng về phía xe. Giận. Nhưng ở lại._
     ~ bv_tuat_o_lai = true
@@ -20,14 +20,14 @@ _{cho} ngồi ở chân bậc xe, nhìn lên. Đuôi quét qua quét lại. Mắ
     ~ qh("chi_dai", 3)
 * [🙈 Quay đi pha trà. Nó muốn đi đâu thì đi.]
     { RANDOM(1, 2) == 1:
-        _Khi bác quay lại, {cho} đã biến mất. Năm phút sau, {hong_hot} nhắn: "Bác ơi Tuất trốn dưới ghế xe nè! Tụi con mang theo nha!"_
+        _Khi bác quay lại, {cho} đã biến mất. Năm phút sau, {hong_hot} nhắn: "Bác ơi {cho} trốn dưới ghế xe nè! Tụi con mang theo nha!"_
         ~ bv_tuat_o_lai = false
     - else:
         _Khi bác quay lại, {cho} vẫn ngồi đó. Xe chạy rồi. Nó chọn ở lại với bác._
         ~ bv_tuat_o_lai = true
         ~ qh("cho", 5)
     }
-- giam_doc: *(thò đầu ra cửa sổ xe)* Bác Bình! Em nhờ bác trông nhà nhé! Có gì bác gọi em!
+- giam_doc: *(thò đầu ra cửa sổ xe)* Bác {bac_bao_ve}! Em nhờ bác trông nhà nhé! Có gì bác gọi em!
 bac_bao_ve: Ừ. Anh đi đi. Uống ít thôi.
 _Xe chạy. Cổng vắng. Lần đầu tiên trong tháng, tòa nhà ba tầng im phăng phắc._
 -> END
@@ -244,7 +244,7 @@ _Tối chủ nhật. Lá thư thứ ba. Tháng này nhiều chuyện quá, tờ 
 { bv_dong_thu >= 3:
     -> gui
 }
-* {biet(trang_47)} [✉️ "Trang 47 hợp đồng. Nếu cậu áo hồng không đủ 1 triệu người theo dõi trước 31/10, công ty phải hoàn 10 tỷ. Thắng ký không đọc."]
+* {biet(trang_47)} [✉️ "Trang 47 hợp đồng. Nếu cậu áo hồng không đủ 1 triệu người theo dõi trước 31/10, công ty phải hoàn 10 tỷ. {giam_doc} ký không đọc."]
     _Bác viết câu này ba lần. Lần đầu tay run. Lần thứ hai chữ xấu. Lần thứ ba thì gửi được._
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
@@ -252,7 +252,7 @@ _Tối chủ nhật. Lá thư thứ ba. Tháng này nhiều chuyện quá, tờ 
     ~ bv_g(8)
     ~ bv_tam(-8)
     -> chon
-* {bv_bat_qua_tang_17} [✉️ "Đêm 17, 1 giờ sáng, có người vào phòng Thắng. Bác biết là ai."]
+* {bv_bat_qua_tang_17} [✉️ "Đêm 17, 1 giờ sáng, có người vào phòng {giam_doc}. Bác biết là ai."]
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_ke_dem_17 = true
@@ -269,7 +269,7 @@ _Tối chủ nhật. Lá thư thứ ba. Tháng này nhiều chuyện quá, tờ 
     ~ bv_g(1)
     ~ bv_tam(3)
     -> chon
-* {bac_bao_ve_1810_ca_cong_ty_ve} [✉️ "Thắng đang bán penthouse thằng cháu nó ở. Thằng {con_ong_chau_cha} không biết."]
+* {bac_bao_ve_1810_ca_cong_ty_ve} [✉️ "{giam_doc} đang bán penthouse thằng cháu nó ở. Thằng {con_ong_chau_cha} không biết."]
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_that = bv_thu_that + 1
     ~ bv_ke_ngan_hang = true
@@ -319,7 +319,7 @@ it: *(cụt lủn)* Bác. Log server. Có người gửi file hợp đồng Siê
 * [📢 "Mai lên báo anh {giam_doc}."]
     it: *(lắc đầu)* Lộ là lộ cả việc cháu đọc log. Không được.
     ~ qh("it", -15)
-- _Chủ quán ốc mang ra một đĩa ốc len xào dừa, đặt trước mặt bác: "Bác Bình, lâu rồi không thấy bác. Hồi đó bác ngồi đúng bàn này, cái đêm con nhỏ úp tô ốc lên đầu thằng kia đó."_
+- _Chủ quán ốc mang ra một đĩa ốc len xào dừa, đặt trước mặt bác: "Bác {bac_bao_ve}, lâu rồi không thấy bác. Hồi đó bác ngồi đúng bàn này, cái đêm con nhỏ úp tô ốc lên đầu thằng kia đó."_
 it: *(ngẩng lên)* Hả?
 bac_bao_ve: Chuyện cũ. Ăn đi.
 ~ an(40)
@@ -330,15 +330,15 @@ bac_bao_ve: Chuyện cũ. Ăn đi.
 # ngay:20 # gio:07:30 # noi:choi_bao_ve # bat_buoc
 _20/10. Ngày Phụ nữ Việt Nam. Sinh nhật {cong_ty} 16 tuổi. Mười sáu năm bác đứng ở cổng này._
 _7 giờ 30. Anh bưu tá đưa tận tay một lá thư tem nước ngoài. Dày hơn mọi tháng. Bên trong: một lá thư tay ký "G", và một phong bì nhỏ dán kín, ngoài ghi: "Chỉ mở khi công ty sắp sập."_
-_Bác đọc lá thư. "Gửi các cháu ở G. Mười sáu năm rồi. Các cháu còn đứng đó là anh vui…". Lá thư này viết cho cả công ty._
-_Cuối thư có một dòng riêng cho bác: "Bình. Phong bì kia anh giữ. Tới lúc thì chỉ anh được mở, và anh đọc to cho mấy đứa nhỏ nghe. Anh không phải quyết gì. Tôi quyết rồi."_
+_Bác đọc lá thư. "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui…". Lá thư này viết cho cả công ty._
+_Cuối thư có một dòng riêng cho bác: "{bac_bao_ve}. Phong bì kia anh giữ. Tới lúc thì chỉ anh được mở, và anh đọc to cho mấy đứa nhỏ nghe. Anh không phải quyết gì. Tôi quyết rồi."_
 ~ bv_co_phong_bi_g = true
 ~ nhan(thu_g)
 -> thang_toi
 
 = thang_toi
 _Một bóng người đứng ở cửa chòi. {giam_doc}, tới sớm hơn mọi ngày 2 tiếng, tay cầm bó hoa tặng chị em._
-giam_doc: Bác Bình, thư gì mà bác đọc chăm thế ạ? Chữ ký "G" à? Ơ… chữ này em thấy quen quen.
+giam_doc: Bác {bac_bao_ve}, thư gì mà bác đọc chăm thế ạ? Chữ ký "G" à? Ơ… chữ này em thấy quen quen.
 * [😶 Gấp thư bỏ túi: "Thư của bạn cũ ở quê thôi anh."]
     giam_doc: Vâng… *(nhìn theo cái túi áo rất lâu)* …Bạn cũ của bác viết chữ đẹp thế.
     ~ bv_lo_than(10)
@@ -425,15 +425,15 @@ giam_doc: Bác ơi, em chọn lại logo gốc. Chữ G 7 màu. Bác có nhớ�
 * [🍵 "Vẽ trên tờ giấy ăn ở quán phở. Bút bi xanh. Rồi tô màu bằng bút sáp của con nhà hàng xóm."]
     giam_doc: *(đứng hình)* Bác… sao bác nhớ rõ thế ạ?
     bac_bao_ve: Bác ngồi bàn bên.
-    _{giam_doc} nhìn bác. Rất lâu. Anh bắt đầu ghép các mảnh: bác Bình, năm 2010, căn phòng 20 mét vuông, quán phở, lá thư ký "G" sáng nay._
+    _{giam_doc} nhìn bác. Rất lâu. Anh bắt đầu ghép các mảnh: bác {bac_bao_ve}, năm 2010, căn phòng 20 mét vuông, quán phở, lá thư ký "G" sáng nay._
     ~ bv_lo_than(15)
     ~ qh("giam_doc", 5)
 - -> END
 
 = da_biet
 giam_doc: *(cười)* À mà em hỏi thừa. Bác biết hết mà.
-bac_bao_ve: Vẽ trên tờ giấy ăn ở quán phở. Ông ấy bảo: "Bảy màu cho vui. Làm giải trí thì phải vui."
-giam_doc: Bảy màu cho vui… Ừ. Em dùng lại bản ấy.
+bac_bao_ve: Vẽ trên tờ giấy ăn ở quán phở. Ông ấy bảo: "Bảy màu, vì công ty sẽ có đủ loại người, màu nào cũng phải có chỗ."
+giam_doc: Màu nào cũng phải có chỗ… Ừ. Em dùng lại bản ấy.
 ~ qh("giam_doc", 8)
 -> END
 
@@ -449,9 +449,8 @@ _Liên hoan sinh nhật công ty ở Quán Ốc Đêm. Cái quán bác ngồi m�
 
 = doc_thu
 _Bác đứng dậy, gõ đũa vào ly trà. Cả quán ốc im bặt. Bác đeo kính lão, mở lá thư. Giọng Bắc chậm rãi:_
-bac_bao_ve: Gửi các cháu ở G. Mười sáu năm rồi. Các cháu còn đứng đó là anh vui.
-bac_bao_ve: Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. Anh không cần biết nó lời hay lỗ. Anh chỉ muốn biết các cháu còn thương nhau không.
-bac_bao_ve: {giam_doc}, em vẫn hay nhắn tin khuya phải không. Thôi đi em. Để các cháu nó ngủ. Ký tên: G.
+bac_bao_ve: Mười sáu năm rồi. Các cháu còn đứng đó là anh vui.
+bac_bao_ve: Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. Ký tên: G.
 _Bác gấp thư. Im lặng ba giây. Rồi {thuc_tap_sinh} vỗ tay. Rồi cả quán vỗ tay. {giam_doc} cúi đầu, lấy khăn giấy lau mắt, nói là "do ớt"._
 _{hong_hot} hỏi to: "G là ai vậy bác?". Bác uống ngụm trà: "Là người làm ra cái công ty này. Bác chỉ là người giữ thư."_
 ~ bv_lo_than(40)
