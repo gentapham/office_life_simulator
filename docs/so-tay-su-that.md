@@ -197,3 +197,75 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 | 🏃 Bị Cướp Mất | Nguyên nhận lời LL ngày 27/10 (bất kể con số) |
 | 🔥 Bị Tẩy Chay | Có scandal lớn bị bóc sau 28/10 và < 800.000 |
 | 📉 Chìm Nghỉm | Các trường hợp còn lại |
+
+---
+
+## 9. Chốt các điểm lệch giữa các file thoại
+
+| Điểm | Chốt |
+|---|---|
+| Tiền trọ Hẻm 69 | 2.400.000đ/tháng **gồm điện**, Bà Tư thu ngày 5 |
+| Căn 1203 Sky Ảo (Huyền) | 12.000.000đ/tháng |
+| Tài khoản riêng của Thắng | Gần như trống từ tháng 8 (còn khoảng 4,2 triệu ngày 12/10). Vì vậy thẻ phụ của Long bị từ chối |
+| Phòng ở Vũng Tàu (bản Tuấn xếp chuẩn) | 201 Duy + Long (Tuất ngủ ké nếu lên xe) · 202 Quỳnh + Huyền · 203 Tuấn · 205 Hiếu + Nguyên · 206 Nhi + Ngân · 207 Hương + Thương. Nếu Tuấn xếp sai: 207 Hương + Nhi. Các lượt chơi khác có thể ghép khác (ví dụ Nhật + Vũ) |
+| Tuất đi lạc, Nguyên bế về | Lần chính: **6/10**, khi Tuất đuổi theo Nguyên. Trong lượt chơi Nguyên có thể xảy ra thêm lần nữa ngày 29/10 |
+| Việc tốt ngày 6/10 của Nguyên | Đẩy xe chè của một bà cụ ra khỏi ổ gà, rồi ăn chè bằng ống hút luồn qua mũ |
+| Thư "G" ngày 20/10 (phần đọc to) | *"Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."* Phong bì dán kín: tùy lượt chơi, có thể không bao giờ mở, mở mà không tiết lộ, hoặc (kết thúc "Ghế Ai Người Nấy Ngồi" của Thắng) ghi chức danh mới cho Thắng |
+| Sữa Chua Hồng Hào | Do một bà cụ làm chủ. Bà nhớ Nguyên vì từng được Nguyên đẩy xe sữa giữa trời mưa. Lượt nhắc tên tăng 400% sau clip Nguyên vừa sửa mái nhà vừa uống sữa chua. 1 tỷ nếu Huyền kiểm tra ngay, 500 triệu nếu kiểm tra trễ, mất nếu gạt đi |
+| Người đóng "Mr. Kevin Trộn" (23/10) | Ngẫu nhiên giữa Duy, Chương, Bình (hoặc do người chơi chọn ở một số vai) |
+| Giờ đăng bài "chuẩn" của Chương | Mỗi lần Chương nói một giờ khác (19:47, 21:07…). Đó là trò đùa: số liệu của Chương đổi theo tâm trạng |
+| Bài hát của Long | Các file demo đánh số "Rong_demo_01…43". Bản 41 là "Hồng Là Thái Độ" (tên file xuất: "HLTD_demo41"). Bản 42 làm ngày 29/10, bản 43 chỉ có trong kết thúc bí mật |
+| Con cú của Lĩnh | Giấu ở một khung hình trong mọi video Lĩnh dựng: khung 812 (poster), giây 2:47 (MV), khung 1.031 và trên cánh cửa gỗ (video "16 năm"), góc giấy chứng nhận BTT |
+| Thời điểm chốt kết thúc nhân vật | Mọi cảnh `<mã>_3010_danh_gia` chạy **sau Đêm Hồng tối 31/10** (23:00 – 23:45), dùng toàn bộ lựa chọn tới hết 31/10. Một số kết thúc có thể xảy ra sớm khi chỉ số chạm 100 |
+| Mã người nói phụ | Gom trong [story/ten-nguoi-noi.json](../story/ten-nguoi-noi.json) |
+
+## 10. Chi tiết bổ sung từ thoại
+
+### Thắng & công ty
+- Mật khẩu email của Thắng: "{tên Thắng}@family2010". Nhi có thể đổi thành "@family2026" ngày 20/10. Genta không bao giờ dùng email.
+- 23:12 ngày 20/10, máy lạ tên **"LL-GUEST"** đăng nhập email Thắng. Cùng máy đó đã vào wifi công ty ngày 17/10. Đêm 17/10 một máy tên **"MAY-IN-2"** cố mở thư mục "Hop_dong_SNH". Thiết bị đăng bài Confession 21/10 cũng là của con rắn thứ hai, người này ký sổ trực chòi bảo vệ lúc 22:41 ngày 23/10.
+- Thắng uống trà sữa "ít đường, nhiều trân châu đen". Tiền trà Thắng đưa Nhi luôn là 80.000đ. Sân golf: "Sân Đồi Xanh".
+- Biệt thự có bàn ăn 10 ghế. Thắng là người nhập hồ sơ nhân sự của Bình năm 2010 nên biết sinh nhật bác. Năm 2015 Thắng lén thuê người vỗ tay ở show đầu tiên của Phát.
+- Genta chụp tấm ảnh căn phòng 20m² năm 2010 (Thắng đăng lại ngày 11/10). Genta từng nói: logo có 7 màu *"vì công ty sẽ có đủ loại người, màu nào cũng phải có chỗ"* và *"cái quý nhất trong căn phòng 20m² là con người"*.
+- Giấy tờ thành lập đóng dấu đỏ chữ "G". Ngày 22/10 Bình về Ven Đô lấy cho đoàn thuế.
+- Group Zalo-lô công ty: 22 thành viên (21 nhân viên + Thắng), 23 khi thêm Nguyên. Nội quy có thêm điều 11, 12 sau khi Tuất "để lại quà" trong phòng giám đốc.
+- Quà 20/10: phong bì 2.100.000đ cho các chị em; Thắng tặng 7 chiếc khăn cam giống hệt nhau; Nhật tặng sổ ô li ghi "Kế hoạch tuần"; Thắng tặng riêng Thương một chiếc kính lúp kèm thiệp *"Cảm ơn em đã đọc trang 47 thay anh."*
+- Tiền thuê sân khấu Đêm Hồng: 80 triệu, hạn 17:00 ngày 29/10. Hồ sơ xin phép biểu diễn dài 14 trang.
+- LL treo băng rôn đối diện G-Entertainment từ 14/10. Đêm Hồng, màn hình LED khổng lồ trên tòa LL chiếu bộ nhận diện "Hồng Ngoại" quay thẳng về sân khấu.
+
+### Nhân viên
+- **Hiếu:** vẽ cái lỗ thông gió hình con cá vào sổ từ năm 8 tuổi (con cá có 23 cái vảy). Có thể thành thành viên thứ 15 của "Hội Anti Sếp". 27/10 thư ký LL mời Hiếu về LL để đổi lấy lịch Đêm Hồng.
+- **Ngân:** tài khoản admin Confession tên "{tên Ngân} Nghe Gì Chưa", trang có 3.112 bài trong 4 năm.
+- **Nhi:** danh bạ lưu "LL - Chị Tuyển Dụng"; thư ký LL luôn ký 💚; phỏng vấn ở LL 9:00 ngày 25/10, tầng 20. Thỏi son mẫu màu "Hồng Thái Độ".
+- **Nhật:** 3 cuộc họp cố định mỗi ngày làm việc (trừ 15/10 và 29/10). Cà phê đen ít đường không đá. Lén học dựng phim trên kênh của Lĩnh với tên "{tên Nhật} Sáng Tạo", không biết phím tắt "C".
+- **Long:** làm thêm dưới tên "Rồng" (bưng bê ở Sống Ảo, giao đồ ăn). 13/10 giao đồ tới căn 1808, thấy giấy báo nợ của Phát. 28/10 bị Duy bắt gặp. LL mời mua bài hát 300 triệu (27/10), rồi 500 triệu (29/10). Ba hợp đồng quảng cáo Long có thể ký: "Móng Hồng Thái Độ" (20 triệu), "Ốc Hồng Đêm Halloween" (50 triệu), "Tập Như Siêu Nhân" (80 triệu). Penthouse có người đặt cọc ngày 30/10.
+- **Vũ:** 3/10 phát hiện mình làm rơi USB ở bãi xe (nhờ tờ vé gửi xe tháng 9). Cảnh Thắng thích nhất trong dự án tháng 6: drone bay qua cầu lúc hoàng hôn.
+- **Duy:** sếp cũ "anh Tư" ở Ngân hàng Tín Dụng Đen Đủi mời về làm phó giám đốc chi nhánh 60 triệu/tháng, giữ chỗ tới 1/11. Ba bạn cùng phòng: tài xế xe ôm công nghệ, sinh viên, thợ hồ. Tiền tiêu bằng thẻ kim cương lấy từ tiền tiết kiệm cũ, không trừ vào ví. Phát hiện điều 9 trong hợp đồng LL phạt hủy gấp 5 lần.
+- **Thương:** két sắt nhà số 18 mở bằng ngày thành lập công ty. Đêm 1/10 đếm được 47 vết nứt trên trần nhà. Mua đĩa "Công Viên" năm 2015, còn giữ hóa đơn. **Bảo là người ăn hộp cơm dán nhãn của Thương.**
+- **Tuấn:** 12 loại trà ở công ty, 40 loại ở nhà (bắt đầu bằng Atiso). Ô long số 23 pha cho người mình quý. Người đúng cho vị trí "nhân viên chăm sóc Siêu Nhân Hồng" là **chị Hạnh**, ứng viên số 3. Quán "Phòng Trà Nhân Sự" có cánh cửa gỗ sơn cam ở Phố Cũ. Bình chọn cho "Sơn Kim Tuyến" 47 lần từ số điện thoại đuôi …604.
+- **Bảo:** quỹ riêng mua router 6.000.000đ. Mật khẩu wifi "router2014quanbangkeo". Ổ "KHÔNG ĐƯỢC MỞ" có thêm 10 năm sao lưu kế toán, hồ sơ nhân sự 2010 và file `test_mic_trua_08.wav` (47 phút Sơn tập hát).
+- **Phát:** mật khẩu là ngày phát hành "Công Viên". Fan ảo đều dùng ảnh đại diện hoa sen. Cúp 2015 cầm được 6 triệu ở Cứu Nguy (chuộc trước 30/10 thêm 300 nghìn tiền lãi, sau đó bị bán 9 triệu). Gia hạn hợp đồng 30/10 thì Thắng thưởng thêm 10 triệu. 29/10 có thể được tiệc cưới "Hạnh Phúc Trăm Năm" đặt cọc 20 triệu cả mùa cưới. Bài mới: "Hát Cho Người Ta Cưới".
+- **Thái:** năm 2018 từ chối LL vì LL không nhận Phát. Đưa Phát chìa khóa dự phòng studio 0905 từ 2016. Cà phê đen đá ít đường, từ ly thứ 5 chuyển sang cà phê sữa. Có điện thoại thứ ba chỉ để gọi Sơn.
+- **Oánh:** con mèo tên Bí. Cuốn sổ rơi ở ghế số 14 trên xe đi Vũng Tàu. Tranh chấp slogan tiệm nail với Quỳnh từ 2021.
+- **Lĩnh:** thư mục "Thái" có 214 clip trong 4 năm. USB hình con cú. Video tỏ tình xuất nhầm tên "Thai_final_v12", ảnh bìa là Thái ngủ gục trong xe, nằm trên fanpage 6 phút với khoảng 2.000 lượt xem. Wifi có lại lúc 22:47 ngày 29/10, video "16 năm" chạy tới 100%.
+- **Quỳnh:** các job cho LL: logo tiệm trà sữa (800 nghìn), băng rôn quán nướng (800 nghìn mỗi cái), "Hồng Ngoại" (cọc 1 triệu ngày 8/10, giao USB ở quầy lễ tân LL ngày 25/10). Poster lỗi "Siêu Nhân Hồn" ngày 9/10 được lưu lúc 6:12 vào thư mục "POSTER HỒNG".
+- **Huyền:** số điện thoại của "BTT Global" thật ra là của tiệm nail Lung Linh. Tổng tạm ứng không hóa đơn năm nay: 312 triệu. Giấy chứng nhận BTT giả có con dấu hình bánh tráng, tạo trên máy "QUYNH-PC". Ký với Sữa Chua Hồng Hào ở Sống Ảo lúc 15:00 ngày 28/10.
+- **Chương:** các chủ nợ (trừ Huyền) có group chat 7 người. Hải sản Vũng Tàu ký nợ thêm 6.800.000đ (tôm hùm) hoặc 3.200.000đ (lẩu), nên tổng nợ có thể vượt 22 triệu.
+- **Sơn:** thí sinh số 27. Tập hát ở phòng trên tiệm sửa đàn ghi-ta, 300 nghìn mỗi buổi. Bộ đồ diễn mới giá 1,2 triệu, hoặc mượn áo gi-lê kim tuyến tím năm 2015 của Phát. Lịch thi: vòng 2 ngày 14/10 (có mặt 7:30), tổng duyệt bán kết 17:00 ngày 23/10, bán kết 25/10, tổng duyệt chung kết 14:00 ngày 29/10, chung kết 20:00 ngày 31/10. Đài thông báo Siêu Nhân Hồng làm khách mời chung kết ngày 28/10 nếu Sơn mời Nguyên ngày 26/10.
+- **Bình:** ghi sổ ra vào bằng tay từ năm 2010. Thiệp sinh nhật 50 tuổi của G gửi sớm, ghi "mở ngày 10": *"Năm mươi tuổi rồi Bình ơi. Công ty dạo này thế nào? – G"*.
+
+### Nguyên & Tuất
+- Nguyên tặng Vũ: bút dạ quang hồng (2/10, kèm lời nhắn *"Chill nha. —SNH"*), cốc giữ nhiệt "Chill" (5/10), hộp cơm trứng (9/10), gối kê cổ (14/10), bánh chuối chiên, hộp cơm hồng (20/10). Fan gọi cặp này là **"Hồng Chill"**.
+- Nguyên có 3 bộ đồ dự phòng. Tối 4/10 mặc găng tay hồng dự phòng vì đôi chính bị Tuất cướp. Mỗi tuần lén tới quán trà đá Hẻm 69 bê két nước giúp Ông Ba, không camera. Cuống vé số nằm trong ví, sau tấm ảnh xóm Cây Me. Thích chuối chiên ở xe đẩy đầu hẻm hơn chuối chiên ở tiệm.
+- Gameshow ngày 16/10: Hiếu có thể tráo câu hỏi cuối thành *"Hồi nhỏ anh từng bắt nạt ai chưa?"*, tạo ra xu hướng **#XinLỗiNhàKho**. Lỗi "khoai chiên" tạo ra bản remix "Khoai Chiên Thái Độ". Biệt danh mạng của Nguyên: "Siêu Nhân Gâu".
+- Kho báu của Tuất lúc đầu có 6 món: chùm chìa khóa, thỏi son, điện thoại cũ, một chiếc tất sọc cam, nắp bút hồng, chiếc USB. Lĩnh trả Tuất pa-tê làm "nhuận bút" cho video ngày 4/10. Ở Vũng Tàu, nếu Tuất đi lạc, cô bán hải sản đổi tên Tuất thành "Vàng".
+- Đồ thất lạc trên xe ngày 19/10: kính râm của Phát, dây buộc tóc của Hương, sạc dự phòng của Thái, đôi dép tổ ong của Bình (cho Duy mượn).
+
+### Vũng Tàu & Đêm Hồng
+- Khu nghỉ "Sóng Vỗ", chỉ có một cục wifi ở quầy lễ tân. Quán hải sản cùng tên.
+- Đêm Hồng cộng thêm 100.000 – 300.000 người theo dõi. Vượt mốc 1 triệu ngay trong đêm diễn thì được tính là lọt top 10 xu hướng, trừ khi có scandal lớn sau 28/10.
+- Ở kết thúc "Tháo Mũ" và "Meme Quốc Dân", Nguyên ký phụ lục gia hạn mục tiêu tới Tết, nên công ty được cứu.
+
+### Địa điểm & thương hiệu nhại mới
+- Mật khẩu wifi quán Sống Ảo: "khongcopass".
+- Tiệc cưới "Hạnh Phúc Trăm Năm" (sảnh B), "Cá Viên Ông Tám", nước tăng lực "Trâu Cày" / "Trâu Cụng", "Thẻ Hồng" (gói tài trợ 300 triệu qua anh Tư).

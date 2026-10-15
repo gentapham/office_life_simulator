@@ -83,9 +83,9 @@ Không mua được, chỉ nhặt hoặc nhận qua câu chuyện. Ví dụ: th�
 
 | Khoản | Số tiền | Khi nào |
 |---|---|---|
-| Tiền trọ (Hẻm 69) | 2.500.000đ | Ngày 5 hằng tháng. Trễ thì bà chủ trọ đứng chờ ở cửa |
+| Tiền trọ (Hẻm 69) | 2.400.000đ (gồm điện) | Ngày 5 hằng tháng, Bà Tư thu. Trễ thì bà đứng chờ ở cửa |
 | Tiền căn hộ (Phố Mới) | 6.000.000đ | Ngày 5 |
-| Tiền căn hộ (Sky Ảo) | 15.000.000đ | Ngày 5 |
+| Tiền căn hộ (Sky Ảo) | 12.000.000đ – 15.000.000đ tùy căn (căn 1203 của Huyền: 12 triệu) | Ngày 5 |
 | Điện nước | 300.000đ – 800.000đ | Ngày 25 |
 | Xăng xe | 80.000đ / tuần | Hết xăng thì phải dắt bộ |
 | Grab | 30.000đ – 120.000đ / chuyến | Giờ cao điểm giá gấp đôi |
