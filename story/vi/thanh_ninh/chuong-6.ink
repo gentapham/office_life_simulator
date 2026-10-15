@@ -7,7 +7,7 @@
 # ngay:28 # gio:09:30 # noi:phong_giam_doc # bat_buoc
 _Mốc 4: 800.000 người theo dõi. Con số: {nguoi_theo_doi}._
 _Sáng nay fanpage công ty tự dưng đăng một video lạ: một người dựng phim tỏ tình với "anh quản lý", giọng run run. Video của {editor}, xuất nhầm. Đã có 50.000 lượt xem._
-giam_doc: Nhi! Cái video này là sao? Gỡ đi! Không… khoan… lượt xem đang lên… Em nói xem anh nên làm gì?
+giam_doc: {thanh_ninh}! Cái video này là sao? Gỡ đi! Không… khoan… lượt xem đang lên… Em nói xem anh nên làm gì?
 * [😇 "Anh hỏi {editor} trước đi anh. Video của người ta mà."]
     giam_doc: … Ừ. Đúng. Gọi nó lên đây.
     ~ qh("editor", 10)
@@ -35,7 +35,7 @@ _Hết giờ làm. Bàn trợ lý. Bạn mở một file trắng. Gõ: "ĐƠN XI
 { tn_nhan_viec_ll:
     _Email từ LL vẫn nằm đó: "Trợ lý Hành chính, thử việc 2 tháng, bắt đầu 2/11". Một công việc thật. Không ai đòi bạn mang theo gì._
 }
-* {tn_nhan_viec_ll} [📝 Viết đơn đàng hoàng, in ra, ký tên, đặt lên bàn sếp kèm ly trà.]
+* {tn_nhan_viec_ll} [🔒 📝 Viết đơn đàng hoàng, in ra, ký tên, đặt lên bàn sếp kèm ly trà.]
     ~ tn_don_nghi_viec = true
     _Sáng mai sếp sẽ thấy. Bạn viết đúng ba dòng, không một chữ "tâm"._
     ~ cang_thang(10)
@@ -58,12 +58,12 @@ _Bạn mở hộp thư nháp. Thư trả lời LL đã soạn sẵn, chờ có m
 - else:
     _Tiêu đề: "Em đồng ý về LL ạ"._
 }
-bac_bao_ve: *(qua bộ đàm của {chi_dai})* Cháu Nhi. Anh {giam_doc} nhờ bác chuyển giấy: "Nhi lên phòng anh."
+bac_bao_ve: *(qua bộ đàm của {chi_dai})* Cháu {thanh_ninh}. Anh {giam_doc} nhờ bác chuyển giấy: "{thanh_ninh} lên phòng anh."
 * [🙇 Chạy lên ngay, mang theo trà.]
     giam_doc: Không có mạng, anh không biết làm gì. Ngồi đây nói chuyện với anh tí.
     ~ qh("giam_doc", 5)
     _Hai người ngồi nhìn cái router đèn đỏ. Sếp kể chuyện năm 2010, lần này bạn nghe như lần đầu._
-* [👇 Gửi {thuc_tap_sinh} lên thay: "Duy lên hỏi sếp cần gì giùm chị."]
+* [👇 Gửi {thuc_tap_sinh} lên thay: "{thuc_tap_sinh} lên hỏi sếp cần gì giùm chị."]
     ~ tn_dap_duy()
     _{thuc_tap_sinh} quay xuống: "Dạ sếp nói sếp cần chị ạ, không cần em ạ."_
 * [🤝 Xuống chòi bảo vệ phụ Bác {bac_bao_ve} chuyển giấy cho cả công ty.]
@@ -121,7 +121,7 @@ _21 người nhận được email. {hong_hot} chụp màn hình trong 0,5 giây
     ~ tn_ninh(-10)
     _Email kể bạn đã đi phỏng vấn. Và đã từ chối. Cả công ty đọc cả hai._
 }
-chi_dai: *(qua bộ đàm)* Nhi. Ra sân thượng gặp chị.
+chi_dai: *(qua bộ đàm)* {thanh_ninh}. Ra sân thượng gặp chị.
 * {tn_hoc_nghe_chi_dai} [🔒 Lên sân thượng.]
     chi_dai: Gửi nhầm rồi thì đứng thẳng lên mà chịu. Rồi đi nói với ổng trước khi ổng đọc. Đi liền.
     _Bạn chạy xuống. Sếp chưa mở hộp thư. Bạn kể hết._
@@ -141,7 +141,7 @@ chi_dai: *(qua bộ đàm)* Nhi. Ra sân thượng gặp chị.
 # ngay:30 # gio:08:00 # noi:gam_cau_thang
 _Trước buổi họp đánh giá, {hr} cho dọn kho. Thùng carton xếp đầy hành lang. {thuc_tap_sinh} đang lôi đồ ra từ gầm cầu thang: một chiếc găng tay hồng, một con gà cao su, một cái USB không nhãn._
 { tn_email_gui_nham:
-    hr: *(mỉm cười)* Nhi à, em rảnh không, lát lên phòng anh uống trà xíu.
+    hr: *(mỉm cười)* {thanh_ninh} à, em rảnh không, lát lên phòng anh uống trà xíu.
     _Bạn biết câu đó nghĩa là gì. Cả công ty biết._
     ~ cang_thang(20)
 }
@@ -150,7 +150,7 @@ cho: GRỪ! *(lao tới giành lại kho báu)*
     ~ qh("cho", -15)
     ~ qh("hr", 3)
     _{cho} nhìn bạn như nhìn một shipper._
-* [🤝 "Anh {hr}, để góc này lại. Kho của Tuất. Bác {bac_bao_ve} nói mấy thứ trong đó có người cần."]
+* [🤝 "Anh {hr}, để góc này lại. Kho của {cho}. Bác {bac_bao_ve} nói mấy thứ trong đó có người cần."]
     ~ qh("cho", 15)
     ~ qh("bac_bao_ve", 10)
     hr: *(nhún vai)* Ừ. Anh không ép, tùy em… à, câu của sếp.
@@ -166,9 +166,9 @@ cho: GRỪ! *(lao tới giành lại kho báu)*
 === thanh_ninh_3010_hop_danh_gia ===
 # ngay:30 # gio:15:00 # noi:phong_hop_tang_2 # bat_buoc
 _Họp đánh giá cuối tháng. Sếp đứng đầu bàn, cầm tờ giấy. Hợp đồng {idol_het_thoi} hết hạn mai, chưa ai nói gì. Ghế Phó Giám đốc vẫn trống._
-_Thanh "Sếp gọi ai" trên điện thoại bạn: Nhi {tn_sep_goi_nhi}, {ran_doc} {tn_sep_goi_hieu}._
+_Thanh "Sếp gọi ai" trên điện thoại bạn: {thanh_ninh} {tn_sep_goi_nhi}, {ran_doc} {tn_sep_goi_hieu}._
 { tn_sep_goi_nhi > tn_sep_goi_hieu:
-    giam_doc: Tháng này người anh muốn cảm ơn đầu tiên là Nhi. Ba năm nay không trễ ngày nào. Và… mấy đêm anh ngồi lại, Nhi đều ở lại.
+    giam_doc: Tháng này người anh muốn cảm ơn đầu tiên là {thanh_ninh}. Ba năm nay không trễ ngày nào. Và… mấy đêm anh ngồi lại, {thanh_ninh} đều ở lại.
     _Bạn cúi đầu. Sếp chưa bao giờ nói câu đó. Bạn tưởng sếp chưa bao giờ để ý._
     ~ tn_ninh(10)
 - else:
@@ -177,7 +177,7 @@ _Thanh "Sếp gọi ai" trên điện thoại bạn: Nhi {tn_sep_goi_nhi}, {ran_
     ~ tn_ninh(-5)
 }
 _Sau họp, sếp gọi bạn vào phòng. Cửa đóng. Sếp nhìn ra cửa sổ, phía tòa nhà kính xanh lá chuối ở xa._
-giam_doc: Nhi. Mai Đêm Hồng. Nếu không đạt… anh không biết nói với anh Genta thế nào.
+giam_doc: {thanh_ninh}. Mai Đêm Hồng. Nếu không đạt… anh không biết nói với anh Genta thế nào.
 * [🙇 "Dạ anh nói chuẩn quá anh ơi, mình chắc chắn đạt mà anh!"]
     ~ tn_khen()
     giam_doc: … Ừ.
@@ -191,11 +191,11 @@ giam_doc: Nhi. Mai Đêm Hồng. Nếu không đạt… anh không biết nói v
     _Tối đó, sếp ngồi viết tay. Lần đầu tiên bạn không phải viết thay sếp._
     ~ qh("giam_doc", 15)
     ~ qh("bac_bao_ve", 10)
-* {tn_noi_that_2} [😇 "Anh. Em đã nói thật một lần rồi. Giờ anh nói thật đi: anh cần em ở lại hông?"]
+* {tn_noi_that_2} [🔒 😇 "Anh. Em đã nói thật một lần rồi. Giờ anh nói thật đi: anh cần em ở lại hông?"]
     giam_doc: Anh cần một người nói thật. Nếu em ở lại để làm việc đó thì ở lại.
     ~ qh("giam_doc", 10)
     ~ tn_ninh(5)
-* {tn_don_nghi_viec} [📝 "Anh đã đọc đơn của em chưa anh?"]
+* {tn_don_nghi_viec} [🔒 📝 "Anh đã đọc đơn của em chưa anh?"]
     giam_doc: Đọc rồi. *(rút từ ngăn kéo ra một tấm thiệp viết tay)* Mai em mang theo.
     _Trên thiệp, nét chữ của sếp: "Đi vui nhé. Anh không ép, tùy em."_
 - -> END
@@ -205,7 +205,7 @@ giam_doc: Nhi. Mai Đêm Hồng. Nếu không đạt… anh không biết nói v
 # ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc
 _Đêm Hồng Halloween. Sân khấu ở Phường Tân Drama. Sếp hóa trang "Ông Kẹ Ngân Hàng" do {designer} chọn: vest, cà vạt in hình tờ tiền, một xấp giấy báo nợ giả dán quanh người._
 _Không ai dám nói với sếp đó là trò đùa. Sếp tưởng là "concept tài chính"._
-giam_doc: Nhi, anh nhìn thế nào?
+giam_doc: {thanh_ninh}, anh nhìn thế nào?
 * [🙇 "Dạ anh như ông trùm tài chính quốc tế luôn anh!"]
     ~ tn_khen()
     giam_doc: Haha! Chuẩn!
@@ -236,6 +236,6 @@ _19:30. Màn mở đầu: phim ngắn "Người Hùng Không Tên", rồi video 
 * [👏 Vỗ tay khi màn hình chiếu tên từng người trong công ty.]
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
 * [📱 Mở ứng dụng ghi chú "SẾP GỌI AI", nhìn lần cuối.]
-    _Nhi {tn_sep_goi_nhi}. {ran_doc} {tn_sep_goi_hieu}. Bạn xóa ghi chú. Không ai thắng cuộc thi này cả._
+    _{thanh_ninh} {tn_sep_goi_nhi}. {ran_doc} {tn_sep_goi_hieu}. Bạn xóa ghi chú. Không ai thắng cuộc thi này cả._
 * [😶 Nhìn lên sân khấu, chờ.]
 - -> thanh_ninh_3010_danh_gia

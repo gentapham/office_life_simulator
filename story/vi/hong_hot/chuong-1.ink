@@ -7,7 +7,7 @@
 # ngay:1 # gio:08:05 # noi:may_cham_cong # bat_buoc
 _8 giờ 05. Bạn phóng vào sảnh, ba cái điện thoại trên tay, cái nào cũng đang sáng. Trễ 5 phút. Như mọi ngày._
 _{hr} đứng cạnh máy chấm công, mỉm cười, cầm sổ._
-hr: Em Ngân. 8 giờ 05. Năm mươi nghìn vào quỹ trà sữa nha em. Anh chỉ ghi nhận thôi.
+hr: Em {hong_hot}. 8 giờ 05. Năm mươi nghìn vào quỹ trà sữa nha em. Anh chỉ ghi nhận thôi.
 * [😇 "Dạ em nộp. Coi như em mời cả công ty trà sữa thứ 6."]
     ~ tien_cong(-50000)
     ~ qh("hr", 2)
@@ -80,9 +80,9 @@ bac_bao_ve: Thôi… thôi các cháu. Bác có già lắm đâu.
 === hong_hot_0110_hang_xom_moi ===
 # ngay:1 # gio:19:30 # noi:hem_69 # bat_buoc
 _Hẻm 69. Dãy A. Bạn ôm ring light về phòng 5 thì thấy cửa phòng 3 kế bên mở. Có người mới dọn vào._
-ran_doc: *(đứng ở cửa phòng 3, cười)* Ủa, bà là Ngân bên mạng xã hội đúng hông? Trời, mình ở sát vách luôn nè.
+ran_doc: *(đứng ở cửa phòng 3, cười)* Ủa, bà là {hong_hot} bên mạng xã hội đúng hông? Trời, mình ở sát vách luôn nè.
 _Nhân viên mới. Ngày đầu tiên. Sát vách. Bạn nghe thấy mùi drama._
-* [👀 "Ét o ét! Hàng xóm hóng chung! Nghe gì chưa, anh Nhật hôm nay họp 4 tiếng đó!"]
+* [👀 "Ét o ét! Hàng xóm hóng chung! Nghe gì chưa, anh {truong_phong} hôm nay họp 4 tiếng đó!"]
     ~ qh("ran_doc", 15)
     ~ hh_ke_tin()
     ran_doc: Bốn tiếng hả? Trời. Bà kể thêm đi, tui mới vô chưa biết gì hết.
@@ -104,7 +104,7 @@ ba_tu: Nay mùng mấy rồi con? Mùng 1 hả. Mùng 5 nộp tiền trọ nha h
 === hong_hot_0210_hop_chien_dich ===
 # ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
 _Họp lên chiến dịch "Hồng Hóa Việt Nam". Sếp đứng trước slide, tay chỉ con số to tướng: 1.000.000._
-giam_doc: Mục tiêu: một triệu người theo dõi trước 31/10. Ngân lo fanpage nhé. Anh không ép, tùy em.
+giam_doc: Mục tiêu: một triệu người theo dõi trước 31/10. {hong_hot} lo fanpage nhé. Anh không ép, tùy em.
 _Không ai hỏi ý bạn. Bạn tính nhẩm: 1.000.000 trừ 5.000, chia 29 ngày. Mỗi ngày 33.000 người._
 * [😱 "Ối dồi ôi." *(nói to hơn mình tưởng)*]
     giam_doc: Em nói gì?
@@ -112,7 +112,7 @@ _Không ai hỏi ý bạn. Bạn tính nhẩm: 1.000.000 trừ 5.000, chia 29 ng
     ~ qh("giam_doc", -2)
     ~ qh("chua_te_deadline", 3)
 * [📊 "Dạ anh, mỗi ngày 33.000 người. Em cần ngân sách quảng cáo với một người đăng bài phụ."]
-    giam_doc: Ngân sách thì… để Nhi trình. Người phụ thì… em có {ran_doc} đấy.
+    giam_doc: Ngân sách thì… để {thanh_ninh} trình. Người phụ thì… em có {ran_doc} đấy.
     ~ uy_tin = uy_tin + 3
     ~ hh_tt(2)
 * [😶 Mở Tóp-tóp xem trend đang lên.]
@@ -161,10 +161,10 @@ _Phòng 5, dãy A. Ring light bật. Ba điện thoại xếp hàng. 19:30, gi�
 _Thứ 7. Hẻm 69. Chú Sáu karaoke chưa bắt đầu hát. Hẻm yên tới mức bạn nghe được tiếng bút bi sột soạt từ phòng 3 bên kia vách._
 _{ran_doc} đang viết. Viết rất lâu. Thỉnh thoảng lật trang._
 * [🧱 Áp tai vào tường.]
-    _"…Ngân… fanpage… 29 tuổi… kể chuyện không giữ được quá 2 tiếng…"_
+    _"…{hong_hot}… fanpage… 29 tuổi… kể chuyện không giữ được quá 2 tiếng…"_
     _Bạn nghe thấy tên mình. Bạn ngồi bật dậy._
     ~ hh_tin(2)
-* {hh_go_tuong} [🤝 Gõ ba cái: "có chuyện".]
+* {hh_go_tuong} [🔒 🤝 Gõ ba cái: "có chuyện".]
     ran_doc: *(vọng qua tường)* Gì đó bà?
     hong_hot: Ông viết gì mà sột soạt hoài vậy? Viết nhật ký hả?
     ran_doc: Tui… viết bản tin nội bộ. Công việc thôi.
@@ -184,14 +184,14 @@ _Cả hẻm cười. Bà Tư chủ trọ là Thánh Hóng phiên bản ngoài đ
 # ngay:4 # gio:10:00 # noi:san_cong_ty # bat_buoc
 _Chủ nhật, Ngày Động vật Thế giới. {chi_dai} vừa tắm cho {cho}, người duy nhất {cho} cho tắm. Bạn mặc cho nó áo hồng, đội nơ hồng. {cho} rất không vui._
 _{sieu_nhan_hong} tới, giả tiếng sủa, giấu con gà cao su của {cho} sau lưng._
-sieu_nhan_hong: Gâu gâu! Tuất ơi, gà đâu rồi? Hehe!
+sieu_nhan_hong: Gâu gâu! {cho} ơi, gà đâu rồi? Hehe!
 cho: GRỪ! *(giật đứt dây nơ, lao tới)*
 _{cho} đuổi {sieu_nhan_hong} ba vòng quanh sân, ngoạm được chiếc găng tay hồng, chạy mất xuống gầm cầu thang. Bạn quay được hết, 4K._
 * [🔥 Đăng nguyên clip, caption: "Ai mới là idol thật của công ty?"]
     ~ hh_follow(40000)
     ~ hh_tuat_noi_hon_nguyen = true
     ~ hh_tt(10)
-    _Clip lên xu hướng trong 3 tiếng. 30% người theo dõi mới là fan của {cho}. Hashtag \#TuấtVàHồng xuất hiện._
+    _Clip lên xu hướng trong 3 tiếng. 30% người theo dõi mới là fan của {cho}. Hashtag \#{cho}VàHồng xuất hiện._
     ~ qh("sieu_nhan_hong", -5)
     ~ qh("cho", 5)
 * [✂️ Cắt đoạn {cho} cắn găng, chỉ giữ cảnh rượt đuổi dễ thương.]

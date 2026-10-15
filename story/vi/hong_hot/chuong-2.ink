@@ -67,7 +67,7 @@ _Bên kia vách, {ran_doc} gõ hai cái: "mượn mì gói"._
 # ngay:6 # gio:10:45 # noi:studio_tang_2 # bat_buoc
 _Buổi chụp poster đầu tiên. Đang chụp dở, {sieu_nhan_hong} thấy một bà cụ bị giật túi ở đầu đường, hét "Biến hình!" rồi chạy mất._
 _Năm phút sau, một người qua đường đăng clip: {sieu_nhan_hong} đỡ bà cụ, trả túi, cúi chào. Clip có 800 lượt xem._
-dan_dau_tu: *(nghiêng màn hình về phía bạn)* Ngân. Đừng đăng giờ này. Khung 19:47 tối nay tệp người xem rảnh nhất tuần. Tin anh, số liệu không nói dối. Coin thì có.
+dan_dau_tu: *(nghiêng màn hình về phía bạn)* {hong_hot}. Đừng đăng giờ này. Khung 19:47 tối nay tệp người xem rảnh nhất tuần. Tin anh, số liệu không nói dối. Coin thì có.
 * [📊 Nghe {dan_dau_tu}, chờ tới 19:47, viết caption "Một ngày Siêu Nhân Hồng bỏ việc".]
     ~ hh_follow(120000)
     ~ hh_tt(15)
@@ -112,7 +112,7 @@ dan_dau_tu: *(ghé tai)* Làm đẹp số liệu hả? Một ly cà phê sữa �
         ~ cang_thang(15)
         ~ nghi(-15)
     - else:
-        giam_doc: Tốt! Ngân giỏi!
+        giam_doc: Tốt! {hong_hot} giỏi!
         ~ qh("giam_doc", 5)
     }
 * [👀 Báo cho group "Hội Anti Sếp" trước, báo sếp sau.]
@@ -190,7 +190,7 @@ _Cuộc chiến giờ vàng._
 === hong_hot_0910_hong_coin ===
 # ngay:9 # gio:23:10 # noi:nha_hong_hot
 _23:10. Một tài khoản ẩn danh đăng trong nhóm fan: "Ra mắt HỒNG COIN ($HONG)! Ủng hộ Siêu Nhân Hồng bằng tiền điện tử!"_
-_{dan_dau_tu} nhắn bạn ngay: "Ngân! Có coin mang tên idol mình! Mua đáy đi em! Lần này là lên thật!"_
+_{dan_dau_tu} nhắn bạn ngay: "{hong_hot}! Có coin mang tên idol mình! Mua đáy đi em! Lần này là lên thật!"_
 * [🧂 Chụp lại, đăng group "Hội Anti Sếp": "Nghe gì chưa, có coin của Siêu Nhân Hồng rồi!"]
     ~ hh_ke_tin()
     _14 người mua thử. Trong đó có {con_ong_chau_cha} mua 50 triệu "cho vui"._
@@ -234,7 +234,7 @@ _Hộp thư Confession: 19 bài mới. Bài nào cũng có chữ "lương"._
 === hong_hot_1010_banh_sinh_nhat_bac ===
 # ngay:10 # gio:17:20 # noi:choi_bao_ve # ngau_nhien
 _Bạn ghé công ty lấy cục sạc để quên. Chòi bảo vệ có một chiếc bánh bông lan nhỏ cắm đúng một cây nến. Bác {bac_bao_ve} ngồi một mình, cạnh một tấm thiệp viết tay ký chữ "G"._
-bac_bao_ve: Ơ… cháu Ngân. *(úp vội cái ly lên bánh)*
+bac_bao_ve: Ơ… cháu {hong_hot}. *(úp vội cái ly lên bánh)*
 * [🎥 "Bác ơi sinh nhật bác hả? Để con quay chúc mừng, đăng lên trang công ty nha!"]
     bac_bao_ve: Đừng cháu. Bác xin.
     _Lần đầu bác nói "xin". Bạn hạ điện thoại xuống._
@@ -247,7 +247,7 @@ bac_bao_ve: Ơ… cháu Ngân. *(úp vội cái ly lên bánh)*
     cho: Hú… *(hú theo)*
     _Bạn giữ tin này. Tin dễ thương nhất tháng, mà không đăng._
 * [👀 Liếc tấm thiệp ký "G".]
-    _"Năm mươi tuổi rồi Bình ơi. Công ty dạo này thế nào? – G"_
+    _"Năm mươi tuổi rồi {bac_bao_ve} ơi. Công ty dạo này thế nào? – G"_
     ~ hh_tin(3)
     ~ phat_hien(binh_tai_mat_g)
     _"G". Genta. Người sáng lập. Viết thư tay cho bác bảo vệ. Bạn cảm thấy mình vừa đọc được trang đầu của một cuốn sách rất dày._
@@ -295,7 +295,7 @@ _Bài hot nhất: "Lương về trễ, sếp đi đánh golf". Kèm ảnh sếp 
 * [🤐 Không đăng bài nào về lương.]
     ~ hh_kin(8)
     ~ hh_lo(-5)
-    _Trang Confession chỉ đăng một bài: "Ai lấy hộp cơm có dán tên Thương trong tủ lạnh thì trả lại giùm". {ke_toan} rất cảm kích._
+    _Trang Confession chỉ đăng một bài: "Ai lấy hộp cơm có dán tên {ke_toan} trong tủ lạnh thì trả lại giùm". {ke_toan} rất cảm kích._
 - -> END
 
 // ------------------------------------------------------------
@@ -315,7 +315,7 @@ _{thuc_tap_sinh} lặng lẽ rút ví. Trong ví có một tấm thẻ màu kim 
     ~ qh("con_ong_chau_cha", 10)
     con_ong_chau_cha: *(cười gượng)* Chắc… lỗi hệ thống. Chill.
     _Bạn gật đầu, rất nghiêm túc: "Ừ, lỗi hệ thống."_
-* [🔍 Hỏi nhỏ {thuc_tap_sinh}: "Anh Duy, thẻ đó… màu gì vậy anh?"]
+* [🔍 Hỏi nhỏ {thuc_tap_sinh}: "Anh {thuc_tap_sinh}, thẻ đó… màu gì vậy anh?"]
     thuc_tap_sinh: Dạ… thẻ… thẻ tích điểm siêu thị ạ.
     ~ phat_hien(duy_tung_lam_ngan_hang)
     ~ hh_tin(2)

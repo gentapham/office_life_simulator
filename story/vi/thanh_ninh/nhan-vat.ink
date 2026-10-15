@@ -31,7 +31,7 @@ ran_doc: *(cười ngọt)* Chị {thanh_ninh}! Em mới mua bánh flan, chị �
 === thanh_ninh_tudo_giam_doc ===
 # npc:giam_doc
 _Sếp bước vào phòng. Bạn đọc mặt sếp: lông mày hơi chùng, cà vạt hơi lệch, điện thoại úp xuống bàn._
-giam_doc: Nhi à. Hôm nay anh thấy… ờ, anh không ép, tùy em… em thấy anh có già đi không?
+giam_doc: {thanh_ninh} à. Hôm nay anh thấy… ờ, anh không ép, tùy em… em thấy anh có già đi không?
 * [🙇 "Dạ anh trẻ hơn hôm qua đó anh! Cà vạt này trẻ ra năm tuổi!"]
     ~ tn_ninh(3)
     ~ tn_khen()
@@ -41,7 +41,7 @@ giam_doc: Nhi à. Hôm nay anh thấy… ờ, anh không ép, tùy em… em th�
     ~ qh("giam_doc", 5)
     ~ tn_ninh(-1)
 * [🍵 Đặt ly trà sen xuống: "Anh uống đi rồi hãy hỏi em."]
-    giam_doc: *(uống)* Ừ. Thế mới đúng là Nhi.
+    giam_doc: *(uống)* Ừ. Thế mới đúng là {thanh_ninh}.
     ~ qh("giam_doc", 3)
 - giam_doc: Mà này… em thấy {ran_doc} thế nào? Anh định giao nó viết bài phát biểu thứ 2.
 * [🙇 "Dạ ẻm giỏi lắm anh. Mà bài thứ 2 anh vẫn để em viết nha, em quen giọng anh rồi."]
@@ -61,7 +61,7 @@ giam_doc: Nhi à. Hôm nay anh thấy… ờ, anh không ép, tùy em… em th�
 // ------------------------------------------------------------
 === thanh_ninh_tudo_truong_phong ===
 # npc:truong_phong
-truong_phong: Nhi, lịch sếp chiều nay trống không? Mình cần họp nhanh 5 phút về KPI họp.
+truong_phong: {thanh_ninh}, lịch sếp chiều nay trống không? Mình cần họp nhanh 5 phút về KPI họp.
 * [🚪 "Dạ chiều nay sếp kín rồi anh. Thứ 6 tuần sau nha anh."]
     truong_phong: Thứ 6 tuần sau? Thế thì mình họp để bàn xem họp lúc nào nhé.
     ~ qh("truong_phong", -3)
@@ -75,7 +75,7 @@ truong_phong: Nhi, lịch sếp chiều nay trống không? Mình cần họp nh
 - truong_phong: À, nghe nói sếp đang cân nhắc ghế Phó Giám đốc. Sếp có nhắc tên ai không em?
 * [🙇 "Dạ sếp có nhắc anh đó anh, nhắc… à, nhắc mấy lần."]
     truong_phong: *(sáng mắt)* Thật à? Mấy lần?
-    _Bạn nói dối. Sếp nhắc tên {truong_phong} đúng một lần: "Nhật họp lâu thế."_
+    _Bạn nói dối. Sếp nhắc tên {truong_phong} đúng một lần: "{truong_phong} họp lâu thế."_
     ~ qh("truong_phong", 8)
 * [😶 "Dạ em hông được phép nói anh."]
     truong_phong: Hiểu. Hiểu. Take note.
@@ -86,7 +86,7 @@ truong_phong: Nhi, lịch sếp chiều nay trống không? Mình cần họp nh
 // ------------------------------------------------------------
 === thanh_ninh_tudo_hong_hot ===
 # npc:hong_hot
-hong_hot: Nhi ơi! Nghe gì chưa? Mà thôi, bà ngồi gần sếp, bà nghe trước tui rồi. Kể đi!
+hong_hot: {thanh_ninh} ơi! Nghe gì chưa? Mà thôi, bà ngồi gần sếp, bà nghe trước tui rồi. Kể đi!
 * [🧂 "Nói nhỏ nè: sếp mới đặt bộ gậy golf mới."]
     hong_hot: Gậy golf? Trời, chán. Có gì cay hơn hông?
     ~ qh("hong_hot", 2)
@@ -101,7 +101,7 @@ hong_hot: Nhi ơi! Nghe gì chưa? Mà thôi, bà ngồi gần sếp, bà nghe t
 * [🙇 "Tui mà vô group chửi sếp hả? Bà điên hả?"]
     hong_hot: Ờ ha, quên, bà là fan cứng.
 * [🐍 "Vô. Mà đừng nói tui là ai."]
-    hong_hot: Ok! Tên bà trong group là gì? Nhi Nịnh hả? Haha!
+    hong_hot: Ok! Tên bà trong group là gì? {thanh_ninh} Nịnh hả? Haha!
     ~ qh("hong_hot", 5)
     _Group có một thành viên tên "Hoa Hướng Dương 1989", lúc nào cũng thả haha. Đăng nhập lúc 22:01. Một phút sau khi sếp nhắn group công ty. Bạn nhìn con số đó rất lâu._
     ~ phat_hien(clone_thang)
@@ -110,8 +110,8 @@ hong_hot: Nhi ơi! Nghe gì chưa? Mà thôi, bà ngồi gần sếp, bà nghe t
 // ------------------------------------------------------------
 === thanh_ninh_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
-con_ong_chau_cha: Nhi ơi, chú anh có trong phòng hông? Anh cần ký cái đề xuất tăng ngân sách cà phê.
-* [🙇 "Dạ anh Long vô liền đi anh! Sếp đang chờ anh đó!"]
+con_ong_chau_cha: {thanh_ninh} ơi, chú anh có trong phòng hông? Anh cần ký cái đề xuất tăng ngân sách cà phê.
+* [🙇 "Dạ anh {con_ong_chau_cha} vô liền đi anh! Sếp đang chờ anh đó!"]
     ~ qh("con_ong_chau_cha", 5)
     _Sếp không chờ ai cả. Sếp đang gọi cho ngân hàng._
     con_ong_chau_cha: *(mở cửa, đóng lại ngay)* Ờ… chú đang nói chuyện gì căng lắm.
@@ -121,7 +121,7 @@ con_ong_chau_cha: Nhi ơi, chú anh có trong phòng hông? Anh cần ký cái �
 * [💬 "Ngân sách cà phê bao nhiêu vậy anh?"]
     con_ong_chau_cha: 30 triệu. Ủa sao không mua máy mới luôn?
     _Máy pha cà phê hỏng từ ngày 1/10. Bạn biết vì sao không ai sửa._
-- con_ong_chau_cha: Mà Nhi… em thấy anh có hợp làm Phó Giám đốc hông? Nói thiệt.
+- con_ong_chau_cha: Mà {thanh_ninh}… em thấy anh có hợp làm Phó Giám đốc hông? Nói thiệt.
 * [🙇 "Dạ anh hợp nhất công ty luôn!"]
     con_ong_chau_cha: *(thở dài)* Ai cũng nói vậy hết.
     ~ qh("con_ong_chau_cha", 1)
@@ -135,7 +135,7 @@ con_ong_chau_cha: Nhi ơi, chú anh có trong phòng hông? Anh cần ký cái �
 // ------------------------------------------------------------
 === thanh_ninh_tudo_chua_te_deadline ===
 # npc:chua_te_deadline
-chua_te_deadline: *(lướt Tóp-tóp)* Nhi, nếu sếp hỏi tiến độ MV thì nói là 80% nha.
+chua_te_deadline: *(lướt Tóp-tóp)* {thanh_ninh}, nếu sếp hỏi tiến độ MV thì nói là 80% nha.
 * [💬 "Thiệt là bao nhiêu?"]
     chua_te_deadline: Thiệt là… 8%. Còn sớm mà, chill.
     ~ qh("chua_te_deadline", 2)
@@ -153,7 +153,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* Nhi, nếu sếp hỏi tiến độ MV t
     ~ qh("chua_te_deadline", 3)
     ~ qh("sieu_nhan_hong", 3)
 * [🧂 "Ờ, kịch bản đó. Cứ phối hợp đi."]
-    chua_te_deadline: Ok. Content couple, để Ngân lo.
+    chua_te_deadline: Ok. Content couple, để {hong_hot} lo.
 - -> END
 
 // ------------------------------------------------------------
@@ -164,19 +164,19 @@ thuc_tap_sinh: Dạ chị {thanh_ninh}, chị cần em làm gì không ạ? Em m
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em làm liền ạ!
     _Ba mươi tuổi. "Dạ em làm liền ạ." Không một chút chần chừ. Bạn không biết nên ngưỡng mộ hay áy náy._
-* [🤝 "Hông, Duy ngồi nghỉ đi. Uống ly trà sen nè."]
+* [🤝 "Hông, {thuc_tap_sinh} ngồi nghỉ đi. Uống ly trà sen nè."]
     ~ qh("thuc_tap_sinh", 8)
     ~ tn_gian(-3)
     thuc_tap_sinh: Dạ… dạ em cảm ơn chị ạ. Trà ngon quá chị.
-* [💬 "Duy, hồi trước Duy làm gì vậy?"]
+* [💬 "{thuc_tap_sinh}, hồi trước {thuc_tap_sinh} làm gì vậy?"]
     thuc_tap_sinh: Dạ em… làm văn phòng thôi ạ. Văn phòng… có két sắt ạ.
     ~ qh("thuc_tap_sinh", 2)
 - thuc_tap_sinh: Dạ chị ơi, chị có thấy anh {giam_doc} dạo này mệt không ạ? Em thấy anh ấy ký giấy mà tay run.
-* [🙇 "Sếp mệt vì lo cho cả công ty đó Duy."]
+* [🙇 "Sếp mệt vì lo cho cả công ty đó {thuc_tap_sinh}."]
     thuc_tap_sinh: Dạ… em hiểu ạ. Người lo nợ hay run tay như vậy ạ.
     _"Người lo nợ". Anh ấy nói câu đó như một người từng ngồi bên kia bàn._
     ~ tn_email(1)
-* [😇 "Ừ. Mệt lắm. Duy để ý giùm chị nha."]
+* [😇 "Ừ. Mệt lắm. {thuc_tap_sinh} để ý giùm chị nha."]
     thuc_tap_sinh: Dạ em để ý ạ!
     ~ qh("thuc_tap_sinh", 5)
 - -> END
@@ -184,7 +184,7 @@ thuc_tap_sinh: Dạ chị {thanh_ninh}, chị cần em làm gì không ạ? Em m
 // ------------------------------------------------------------
 === thanh_ninh_tudo_ke_toan ===
 # npc:ke_toan
-ke_toan: Nhi. Hóa đơn tiền trà sen tháng này đâu em?
+ke_toan: {thanh_ninh}. Hóa đơn tiền trà sen tháng này đâu em?
 * [🙇 "Dạ chị nhắc chuẩn quá chị ơi! Em gửi liền ạ."]
     ke_toan: Đừng khen chị. Gửi hóa đơn.
     ~ qh("ke_toan", 2)
@@ -207,7 +207,7 @@ ke_toan: Nhi. Hóa đơn tiền trà sen tháng này đâu em?
 // ------------------------------------------------------------
 === thanh_ninh_tudo_hr ===
 # npc:hr
-hr: Nhi à, em rảnh không, lên phòng anh uống trà xíu.
+hr: {thanh_ninh} à, em rảnh không, lên phòng anh uống trà xíu.
 _Câu nói đáng sợ nhất công ty. Nhưng đây là trà Ô Long, loại sếp thích._
 * [🙇 "Dạ anh pha trà khéo quá anh ơi, em học hỏi!"]
     hr: Anh chỉ muốn lắng nghe em thôi. Gần đây em có… đi đâu xa không? Ven Đô chẳng hạn?
@@ -277,7 +277,7 @@ idol_het_thoi: *(kính đen trong nhà)* Em biết anh là ai không?
 // ------------------------------------------------------------
 === thanh_ninh_tudo_quan_ly_idol ===
 # npc:quan_ly_idol
-quan_ly_idol: Khoan, anh nghe máy chút. *(2 điện thoại cùng reo)* … Nhi, xếp cho anh 15 phút gặp sếp chiều nay.
+quan_ly_idol: Khoan, anh nghe máy chút. *(2 điện thoại cùng reo)* … {thanh_ninh}, xếp cho anh 15 phút gặp sếp chiều nay.
 * [🚪 "Dạ sếp kín lịch rồi anh, sáng mai 8 giờ được hông anh?"]
     quan_ly_idol: 8 giờ? Sếp tới 9 rưỡi mà em.
     _Bạn đã lộ: lịch sếp có lúc trống hơn bạn nói._
@@ -285,7 +285,7 @@ quan_ly_idol: Khoan, anh nghe máy chút. *(2 điện thoại cùng reo)* … Nh
 * [🤝 "Dạ 4 giờ chiều nha anh, em giữ chỗ."]
     quan_ly_idol: Cảm ơn em. Chuyện này để anh lo, đừng ai đăng gì hết.
     ~ qh("quan_ly_idol", 6)
-- quan_ly_idol: À Nhi… nghe nói em hay qua bên Ven Đô hả? Anh có lần thấy xe em ở gần tòa nhà kính.
+- quan_ly_idol: À {thanh_ninh}… nghe nói em hay qua bên Ven Đô hả? Anh có lần thấy xe em ở gần tòa nhà kính.
 * [😶 "Dạ em đi làm móng ở đó anh."]
     quan_ly_idol: Ừ. Anh cũng… đi làm móng ở đó. *(cười mệt mỏi)*
     _Hai người hiểu nhau không cần nói thêm._
@@ -297,7 +297,7 @@ quan_ly_idol: Khoan, anh nghe máy chút. *(2 điện thoại cùng reo)* … Nh
 // ------------------------------------------------------------
 === thanh_ninh_tudo_bien_kich ===
 # npc:bien_kich
-bien_kich: Nhi. Bài phát biểu của sếp lần trước có câu "ngọn hải đăng trên biển nợ". Ai viết?
+bien_kich: {thanh_ninh}. Bài phát biểu của sếp lần trước có câu "ngọn hải đăng trên biển nợ". Ai viết?
 * [🙇 "Dạ em viết đó bà. Hay hông?"]
     bien_kich: Hay. Hơi lộ. "Biển nợ" á?
     _Bạn đỏ mặt. Bạn chép nhầm từ ghi chú cá nhân._
@@ -316,7 +316,7 @@ bien_kich: Nhi. Bài phát biểu của sếp lần trước có câu "ngọn h�
 // ------------------------------------------------------------
 === thanh_ninh_tudo_editor ===
 # npc:editor
-editor: *(ngáp)* Chị Nhi… sếp muốn sửa video lần thứ mấy rồi chị…
+editor: *(ngáp)* Chị {thanh_ninh}… sếp muốn sửa video lần thứ mấy rồi chị…
 * [🙇 "Lần cuối thôi em, sếp nói vậy."]
     editor: Lần cuối lần thứ 6. Đợi render xong…
     ~ qh("editor", -2)
@@ -336,7 +336,7 @@ editor: *(ngáp)* Chị Nhi… sếp muốn sửa video lần thứ mấy rồi 
 // ------------------------------------------------------------
 === thanh_ninh_tudo_designer ===
 # npc:designer
-designer: Nhi, sếp nói poster "chưa đủ wow". Wow là bao nhiêu? Bà ngồi gần sếp, cho tui feedback cụ thể được không?
+designer: {thanh_ninh}, sếp nói poster "chưa đủ wow". Wow là bao nhiêu? Bà ngồi gần sếp, cho tui feedback cụ thể được không?
 * [🙇 "Sếp thích to, đỏ, có mặt sếp."]
     designer: Có mặt sếp trên poster Siêu Nhân Hồng?
     _Bạn gật. Bạn nói thật. Đó mới là vấn đề._
@@ -358,15 +358,15 @@ designer: Nhi, sếp nói poster "chưa đủ wow". Wow là bao nhiêu? Bà ng�
 // ------------------------------------------------------------
 === thanh_ninh_tudo_sales ===
 # npc:sales
-sales: Chị Nhi! Chị xếp em 30 phút gặp sếp nha. Deal này chắc kèo, tin chị đi!
+sales: Chị {thanh_ninh}! Chị xếp em 30 phút gặp sếp nha. Deal này chắc kèo, tin chị đi!
 * [🙇 "Dạ em giỏi quá, chị xếp liền."]
-    sales: Chị Nhi là nhất! Hôm nào em dẫn chị đi nhậu với Mr. Kevin Trộn!
+    sales: Chị {thanh_ninh} là nhất! Hôm nào em dẫn chị đi nhậu với Mr. Kevin Trộn!
     ~ qh("sales", 5)
 * [💬 "Deal với ai em? Có hợp đồng chưa?"]
     sales: Hợp đồng… đang in. Tin chị đi.
     _{sales} nhỏ hơn bạn hai tuổi, xưng "chị" với bạn rất tự nhiên. Bạn không dám cãi._
     ~ qh("sales", -2)
-- sales: Mà chị Nhi, chị khen sếp hay vậy, chị dạy em vài chiêu đi. Em nói phét giỏi mà khen dở lắm.
+- sales: Mà chị {thanh_ninh}, chị khen sếp hay vậy, chị dạy em vài chiêu đi. Em nói phét giỏi mà khen dở lắm.
 * [😇 "Khen thì phải có một chút thật. Một chút thôi, mà phải thật."]
     sales: *(ghi lại)* Một chút thật… ok. Khó đó.
     ~ qh("sales", 6)
@@ -382,9 +382,9 @@ sales: Chị Nhi! Chị xếp em 30 phút gặp sếp nha. Deal này chắc kèo
     chi_dai: *(không ngẩng lên)* Gì.
 - else:
     { tn_gian_chi_dai <= 30:
-        chi_dai: Ê Nhi. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
+        chi_dai: Ê {thanh_ninh}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
     - else:
-        chi_dai: Nhi. Có việc gì?
+        chi_dai: {thanh_ninh}. Có việc gì?
     }
 }
 * [🙇 "Dạ chị hôm nay đẹp quá chị ơi!"]
@@ -412,7 +412,7 @@ sales: Chị Nhi! Chị xếp em 30 phút gặp sếp nha. Deal này chắc kèo
 // ------------------------------------------------------------
 === thanh_ninh_tudo_dan_dau_tu ===
 # npc:dan_dau_tu
-dan_dau_tu: Nhi, sếp có nói gì về thị trường không? Nghe nói sếp đang bán tài sản hả?
+dan_dau_tu: {thanh_ninh}, sếp có nói gì về thị trường không? Nghe nói sếp đang bán tài sản hả?
 * [😶 "Em không biết anh ơi."]
     dan_dau_tu: Không biết là có. Ok, short.
     ~ qh("dan_dau_tu", 1)
@@ -433,14 +433,14 @@ dan_dau_tu: Nhi, sếp có nói gì về thị trường không? Nghe nói sếp
 // ------------------------------------------------------------
 === thanh_ninh_tudo_thanh_xin_nghi ===
 # npc:thanh_xin_nghi
-thanh_xin_nghi: *(ho khụ khụ rất có nhịp)* Nhi ơi… mai tui xin nghỉ… bà ngoại…
+thanh_xin_nghi: *(ho khụ khụ rất có nhịp)* {thanh_ninh} ơi… mai tui xin nghỉ… bà ngoại…
 * [🚪 "Bà ngoại ông bệnh lần này là lần thứ mấy rồi?"]
     thanh_xin_nghi: Thứ… chín. Mà lần này nặng.
     ~ qh("thanh_xin_nghi", -2)
 * [🤝 "Ok, tui trình sếp lúc sếp đang vui."]
-    thanh_xin_nghi: Nhi là người tốt nhất tầng 2!
+    thanh_xin_nghi: {thanh_ninh} là người tốt nhất tầng 2!
     ~ qh("thanh_xin_nghi", 6)
-- thanh_xin_nghi: *(hạ giọng, giọng tự nhiên trong veo)* Mà Nhi… lỡ bà thấy tui ở đâu đó trên tivi… bà giữ giùm tui nha.
+- thanh_xin_nghi: *(hạ giọng, giọng tự nhiên trong veo)* Mà {thanh_ninh}… lỡ bà thấy tui ở đâu đó trên tivi… bà giữ giùm tui nha.
 * {biet(son_thi_hat)} [🔒 "Thí sinh số 17 hát hay lắm. Tui bình chọn rồi."]
     thanh_xin_nghi: *(đỏ mặt)* Thiệt hả? Cảm ơn bà! Đừng nói anh {hr} nha!
     ~ qh("thanh_xin_nghi", 12)
@@ -451,7 +451,7 @@ thanh_xin_nghi: *(ho khụ khụ rất có nhịp)* Nhi ơi… mai tui xin ngh�
 // ------------------------------------------------------------
 === thanh_ninh_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
-bac_bao_ve: Cháu Nhi. Lại xuống lấy thư cho anh {giam_doc} à?
+bac_bao_ve: Cháu {thanh_ninh}. Lại xuống lấy thư cho anh {giam_doc} à?
 * [🙇 "Dạ bác, có thư nào cho sếp con hông bác?"]
     bac_bao_ve: Có hai thư ngân hàng. Bác đưa tận tay anh ấy.
     _Bác không bao giờ đưa thư ngân hàng cho bạn. Ba năm rồi._
@@ -472,15 +472,15 @@ bac_bao_ve: Cháu Nhi. Lại xuống lấy thư cho anh {giam_doc} à?
 // ------------------------------------------------------------
 === thanh_ninh_tudo_sieu_nhan_hong ===
 # npc:sieu_nhan_hong
-sieu_nhan_hong: Nhi ơi! Hồng không phải màu, Hồng là thái độ! *(tạo dáng)*
+sieu_nhan_hong: {thanh_ninh} ơi! Hồng không phải màu, Hồng là thái độ! *(tạo dáng)*
 * [🙇 "Dạ anh tạo dáng slay quá anh!"]
     sieu_nhan_hong: Thiệt hả? Hehe! Mà… anh hỏi thiệt, anh có giả trân hông?
     ~ qh("sieu_nhan_hong", 4)
 * [💬 "Anh ơi, anh có cần em xếp lịch gì hông anh?"]
-    sieu_nhan_hong: Có! Em xếp cho anh 5 phút mỗi ngày ngồi gần anh Vũ được hông?
+    sieu_nhan_hong: Có! Em xếp cho anh 5 phút mỗi ngày ngồi gần anh {chua_te_deadline} được hông?
     _Bạn cười. Đó là cái lịch dễ thương nhất bạn từng được nhờ._
     ~ qh("sieu_nhan_hong", 5)
-- sieu_nhan_hong: *(nhỏ giọng)* Nhi viết bài cho sếp hay lắm. Hồi nào em viết cho anh vài câu nha. Anh cầm micro là run.
+- sieu_nhan_hong: *(nhỏ giọng)* {thanh_ninh} viết bài cho sếp hay lắm. Hồi nào em viết cho anh vài câu nha. Anh cầm micro là run.
 * [😇 "Anh cứ nói điều anh thật sự nghĩ. Em sửa chính tả thôi."]
     sieu_nhan_hong: Điều anh thật sự nghĩ… *(im)* … Khó hơn đánh nhau với chó.
     ~ qh("sieu_nhan_hong", 8)
@@ -493,10 +493,10 @@ sieu_nhan_hong: Nhi ơi! Hồng không phải màu, Hồng là thái độ! *(t�
 === thanh_ninh_tudo_cho ===
 # npc:cho
 cho: Gâu? *(nhìn ly trà sen trong tay bạn)*
-* [🙇 Cúi xuống: "Tuất đẹp trai quá! Lông bóng mượt, có tâm ghê!"]
+* [🙇 Cúi xuống: "{cho} đẹp trai quá! Lông bóng mượt, có tâm ghê!"]
     cho: … *(nghiêng đầu, không hiểu, nhưng thấy lạ)*
     ~ tn_khen()
-* {co(xuc_xich)} [🌭 Đưa xúc xích.]
+* {co(xuc_xich)} [🔒 🌭 Đưa xúc xích.]
     ~ mat(xuc_xich)
     ~ qh("cho", 15)
     cho: Gâu gâu! *(vẫy đuôi như cánh quạt)*

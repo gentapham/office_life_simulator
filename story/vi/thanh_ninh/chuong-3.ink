@@ -47,7 +47,7 @@ _Ông ấy hát hay. Hay thật sự._
     ~ tien_cong(-10000)
     _Một tin nhắn bình chọn 10.000đ. Một bí mật giá 10.000đ._
 * [💬 Nhắn {thanh_xin_nghi}: "Hát hay đó. Mà lúa ngoài ruộng có nghe hông?"]
-    thanh_xin_nghi: *(1 phút sau)* … Nhi đừng nói ai nha. Tui năn nỉ.
+    thanh_xin_nghi: *(1 phút sau)* … {thanh_ninh} đừng nói ai nha. Tui năn nỉ.
     ~ qh("thanh_xin_nghi", 3)
     _Bạn có thêm một người nợ mình. Cảm giác này quen lắm._
 - -> END
@@ -59,8 +59,8 @@ _8 giờ 05. Điện cúp. Toàn tòa nhà tối om. Thang máy đứng giữa t
 _Trong thang máy: sếp. Và {chi_dai}._
 _Bạn đứng ngoài cửa thang máy, tay cầm ly trà sen vừa pha. Bốn mươi phút._
 * [🙇 Đập cửa: "Anh ơi anh có sao hông anh! Em ở ngoài đây! Anh bình tĩnh nha anh!"]
-    giam_doc: *(vọng ra)* Anh… anh không sao. Nhi đi gọi {it} đi em.
-    chi_dai: *(vọng ra)* Nhi, im lặng một chút cho chị nói chuyện với ổng.
+    giam_doc: *(vọng ra)* Anh… anh không sao. {thanh_ninh} đi gọi {it} đi em.
+    chi_dai: *(vọng ra)* {thanh_ninh}, im lặng một chút cho chị nói chuyện với ổng.
     ~ tn_gian(5)
     _Bạn im. Qua khe cửa, bạn nghe tiếng {chi_dai}: "Anh giấu gì cả công ty vậy?"_
 * [🏃 Chạy đi tìm {it}.]
@@ -92,15 +92,15 @@ giam_doc: *(thấy ly trà trong tay bạn)* Trà… nguội rồi à em.
 === thanh_ninh_1510_hop_nen ===
 # ngay:15 # gio:09:30 # noi:phong_hop_tang_2
 _{truong_phong} họp thắp nến ở phòng "Sáng Tạo". Chín cây nến thơm mùi vani. {thuc_tap_sinh} tung ra 5 cục sạc dự phòng: "Dạ mọi người dùng chung ạ!"_
-truong_phong: Mất điện nhưng không mất tinh thần. Mình sync nhanh 5 phút nhé. Nhi, sếp có dự không?
+truong_phong: Mất điện nhưng không mất tinh thần. Mình sync nhanh 5 phút nhé. {thanh_ninh}, sếp có dự không?
 * [🚪 "Sếp đang nghỉ. Anh họp đi, có gì em tóm tắt lại cho sếp."]
     ~ qh("truong_phong", 3)
     truong_phong: Tốt. Thế em ghi biên bản nhé.
     _Bạn ghi biên bản dưới ánh nến hai tiếng. Biên bản dài một dòng: "Họp tiếp sau khi có điện."_
-* [👇 "Duy ghi biên bản đi, chị lo sếp."]
+* [👇 "{thuc_tap_sinh} ghi biên bản đi, chị lo sếp."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em ghi ạ! Mà em ghi bằng gì ạ, máy hết pin rồi…
-* [💬 Mượn một cục sạc của {thuc_tap_sinh}: "Duy, sạc xịn vậy, mua ở đâu?"]
+* [💬 Mượn một cục sạc của {thuc_tap_sinh}: "{thuc_tap_sinh}, sạc xịn vậy, mua ở đâu?"]
     thuc_tap_sinh: Dạ… dạ em mua hồi còn đi làm… ờ… hồi trước ạ.
     _Cục sạc có logo của một ngân hàng lớn, khắc chữ "Quà tặng khách hàng kim cương"._
     ~ qh("thuc_tap_sinh", 3)
@@ -113,10 +113,10 @@ _Pantry tối om. Cả công ty ngồi bệt dưới sàn, kể chuyện bằng 
 _Ở góc tối nhất, {ke_toan} đang thì thầm gì đó với {chi_dai}. Bạn chỉ nghe được hai chữ: "gấp đôi"._
 _Bỗng điện thoại bạn reo. Nhạc chuông to nhất tầng. Màn hình sáng rực: "LL - Chị Tuyển Dụng"._
 _Cả pantry im lặng. Hai mươi khuôn mặt quay về phía bạn._
-hong_hot: Ủa… "LL" là ai vậy Nhi? # hen_gio:5
+hong_hot: Ủa… "LL" là ai vậy {thanh_ninh}? # hen_gio:5
 * [📞 Nghe máy: "Dạ alo, em nghe ạ."]
     ~ tn_xanh(10)
-    _Giọng bên kia, to và rõ, vang khắp pantry: "Nhi ơi chị bên LL nè, lịch 25/10 vẫn ok hen em?"_
+    _Giọng bên kia, to và rõ, vang khắp pantry: "{thanh_ninh} ơi chị bên LL nè, lịch 25/10 vẫn ok hen em?"_
     ~ tn_gian(10)
     chi_dai: … Ừ. LL.
     hong_hot: Ối dồi ôi.
@@ -128,7 +128,7 @@ hong_hot: Ủa… "LL" là ai vậy Nhi? # hen_gio:5
         hong_hot: Spam mà lưu tên "Chị Tuyển Dụng" hả bà?
         ~ tn_gian(5)
     }
-* [👇 Đưa điện thoại cho {thuc_tap_sinh}: "Duy nghe giùm chị, nói chị bận."]
+* [👇 Đưa điện thoại cho {thuc_tap_sinh}: "{thuc_tap_sinh} nghe giùm chị, nói chị bận."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ alo ạ… Dạ chị {thanh_ninh} bận ạ… Dạ, phỏng vấn ạ? Dạ em nhắn lại ạ!
     _{thuc_tap_sinh} nói to, rõ, lễ phép, từng chữ một. Cả pantry nghe hết._
@@ -161,11 +161,11 @@ _{editor} giơ điện thoại lên quay, đèn tắt. {quan_ly_idol} ngồi yê
 === thanh_ninh_1610_hop_bao ===
 # ngay:16 # gio:08:30 # noi:dai_tivi_hong # bat_buoc
 _Đài Tivi Hóng, phòng chờ. Họp báo trước gameshow "Hồng Hay Không Hồng". {sieu_nhan_hong} cầm tờ giấy trắng, run run._
-sieu_nhan_hong: Nhi ơi… anh hông biết nói gì hết. Lúc mặc đồ thì tự tin, mà cầm micro là… ờm…
-quan_ly_idol: Khoan, anh nghe máy chút. Nhi viết giùm ảnh vài câu đi, em viết cho sếp hoài mà.
+sieu_nhan_hong: {thanh_ninh} ơi… anh hông biết nói gì hết. Lúc mặc đồ thì tự tin, mà cầm micro là… ờm…
+quan_ly_idol: Khoan, anh nghe máy chút. {thanh_ninh} viết giùm ảnh vài câu đi, em viết cho sếp hoài mà.
 * [✍️ Viết cho {sieu_nhan_hong} một bài ngắn, thật, về việc giúp người.]
     _"Em không giỏi gì hết. Em chỉ thích giúp người. Nếu mọi người thấy em, em giúp được nhiều người hơn."_
-    sieu_nhan_hong: *(đọc xong, sụt sịt)* Nhi… Nhi viết cho anh mãi được hông?
+    sieu_nhan_hong: *(đọc xong, sụt sịt)* {thanh_ninh}… {thanh_ninh} viết cho anh mãi được hông?
     ~ follow(20000)
     ~ qh("sieu_nhan_hong", 15)
     _Lần đầu có người muốn bạn viết cho họ, mà không cần bạn khen họ._
@@ -186,7 +186,7 @@ quan_ly_idol: Khoan, anh nghe máy chút. Nhi viết giùm ảnh vài câu đi, 
 # ngay:16 # gio:10:00 # noi:dai_tivi_hong # bat_buoc
 _Gameshow sắp bắt đầu. Hàng ghế khách mời có camera chĩa vào, chỉ còn đúng một ghế. Sếp, {con_ong_chau_cha}, {truong_phong}, ai cũng muốn ngồi._
 _Và theo kịch bản, ghế đó là của {sieu_nhan_hong} trong phần giới thiệu._
-giam_doc: *(nói nhỏ)* Nhi, chỗ nào được lên hình thì xếp anh nhé. Anh không ép, tùy em.
+giam_doc: *(nói nhỏ)* {thanh_ninh}, chỗ nào được lên hình thì xếp anh nhé. Anh không ép, tùy em.
 * [🙇 Xếp sếp ngồi ghế khách mời. {sieu_nhan_hong} ra đứng cánh gà.]
     ~ tn_ninh(10)
     ~ tn_sep_goi("nhi")
@@ -198,7 +198,7 @@ giam_doc: *(nói nhỏ)* Nhi, chỗ nào được lên hình thì xếp anh nhé
     ~ follow(10000)
     giam_doc: Bao quát à… Ừ, bao quát cũng được.
     _Máy quay vẫn lia qua sếp 2 lần, vì sếp vỗ tay to nhất._
-* [💬 Xếp {con_ong_chau_cha} ngồi ghế đó: "Anh Long đẹp trai, lên hình thu hút."]
+* [💬 Xếp {con_ong_chau_cha} ngồi ghế đó: "Anh {con_ong_chau_cha} đẹp trai, lên hình thu hút."]
     ~ qh("con_ong_chau_cha", 10)
     ~ qh("truong_phong", -10)
     ~ tn_ninh(-3)
@@ -211,7 +211,7 @@ giam_doc: *(nói nhỏ)* Nhi, chỗ nào được lên hình thì xếp anh nhé
 === thanh_ninh_1610_buffet_tuan ===
 # ngay:16 # gio:17:00 # noi:pantry
 _Ngày Lương thực Thế giới: buffet ở công ty. Bạn đang gắp chả giò thì thấy {hr} cầm danh sách xếp phòng Vũng Tàu, mỉm cười._
-hr: Nhi à, em có nguyện vọng gì về phòng ngủ không? Anh chỉ muốn lắng nghe em thôi.
+hr: {thanh_ninh} à, em có nguyện vọng gì về phòng ngủ không? Anh chỉ muốn lắng nghe em thôi.
 * [🙏 "Dạ… anh xếp em xa chị {chi_dai} giùm em nha anh."]
     ~ tn_xin_phong_vung_tau = 1
     hr: *(ghi chép)* Anh hiểu. Ngân sách hơi eo hẹp, nhưng anh sẽ cố.

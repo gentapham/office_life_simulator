@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === thanh_ninh_0510_hop_thu_sang ===
 # ngay:5 # gio:07:50 # noi:ban_tro_ly # bat_buoc
-_Thứ 2. Trước giờ sếp tới, bạn mở hộp thư của sếp. Mật khẩu sếp đưa ba năm trước: "Thang@family2010". Chưa đổi lần nào._
+_Thứ 2. Trước giờ sếp tới, bạn mở hộp thư của sếp. Mật khẩu sếp đưa ba năm trước: "{giam_doc}@family2010". Chưa đổi lần nào._
 _Tuần trước: 3 email từ Ngân hàng Tín Dụng Đen Đủi. Sáng nay đã có 2._
 * [📧 Mở minigame "Lọc Hộp Thư".]
     -> thanh_ninh_mg_loc_hop_thu
@@ -26,14 +26,14 @@ thuc_tap_sinh: Dạ chị {thanh_ninh}, hoa của chị ạ. Chị dạy em pha 
     ~ tn_ninh(5)
     ~ tn_khen()
     ~ qh("thuc_tap_sinh", -3)
-    giam_doc: Ơ… thằng Duy nó tặng em mà?
+    giam_doc: Ơ… thằng {thuc_tap_sinh} nó tặng em mà?
     thuc_tap_sinh: Dạ… dạ không sao đâu ạ.
     ~ tn_gian(5)
-* [😇 "Cảm ơn Duy. Bông này chị giữ."]
+* [😇 "Cảm ơn {thuc_tap_sinh}. Bông này chị giữ."]
     ~ qh("thuc_tap_sinh", 8)
     ~ tn_gian(-3)
     _Bạn cắm bông hoa vào ly nước trên bàn mình. Lần đầu có ai cảm ơn bạn vì một việc bạn đã làm._
-* [👇 "Ừa. Mà Duy, cuộc họp này em ghi biên bản giùm chị nha."]
+* [👇 "Ừa. Mà {thuc_tap_sinh}, cuộc họp này em ghi biên bản giùm chị nha."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em ghi liền ạ!
 - truong_phong: Rồi, mình sync nhanh nhé. Mục tiêu tuần này là… ờ… mình take note lại, sau đó họp tiếp nhé.
@@ -45,7 +45,7 @@ _10 giờ 32. Kết thúc cuộc họp 5 phút._
 === thanh_ninh_0510_gac_cong ===
 # ngay:5 # gio:14:00 # noi:ban_tro_ly
 _Bàn trợ lý ngoài vách kính phòng giám đốc. Bạn là cánh cửa. Không ai gặp được sếp nếu không qua bạn._
-thanh_xin_nghi: *(giọng yếu ớt)* Nhi ơi… cho tui gặp sếp xíu. Tui xin nghỉ thứ 4 tuần sau. Bà ngoại tui…
+thanh_xin_nghi: *(giọng yếu ớt)* {thanh_ninh} ơi… cho tui gặp sếp xíu. Tui xin nghỉ thứ 4 tuần sau. Bà ngoại tui…
 * [🚪 "Sếp đang bận lắm ông. Để đơn đây, chiều tui trình."]
     _Bạn đặt đơn của {thanh_xin_nghi} dưới cùng chồng giấy. Dưới 14 tờ khác._
     ~ qh("thanh_xin_nghi", -5)
@@ -53,7 +53,7 @@ thanh_xin_nghi: *(giọng yếu ớt)* Nhi ơi… cho tui gặp sếp xíu. Tui 
 * [🤝 "Vô đi, sếp đang vui. Mà nói ngắn thôi nha."]
     ~ qh("thanh_xin_nghi", 8)
     _Năm phút sau {thanh_xin_nghi} đi ra, mặt tươi rói. Sếp duyệt._
-    giam_doc: Nhi, lần sau ai xin nghỉ thì em lọc giúp anh nhé.
+    giam_doc: {thanh_ninh}, lần sau ai xin nghỉ thì em lọc giúp anh nhé.
     ~ tn_ninh(-1)
 * [💬 "Bà ngoại ông bệnh lần thứ mấy rồi?"]
     thanh_xin_nghi: Lần… thứ tám. Mà lần này bệnh thiệt.
@@ -94,7 +94,7 @@ _Bạn đọc hai lần. Rồi lần thứ ba, chậm hơn._
 _Buổi chụp poster đầu tiên. Đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ, thấy một bà cụ bị giật túi ở đầu đường._
 sieu_nhan_hong: Biến hình! Vì công lý và lượt view!
 _Và chạy mất. Điều khoản số 3: được bỏ ngang buổi quay để đi giúp người, không bị trừ tiền._
-giam_doc: *(mặt đỏ)* Ơ thế là thế nào? Thuê studio cả buổi đấy! Nhi! Gọi bên quản lý nghệ sĩ lên đây!
+giam_doc: *(mặt đỏ)* Ơ thế là thế nào? Thuê studio cả buổi đấy! {thanh_ninh}! Gọi bên quản lý nghệ sĩ lên đây!
 _{hong_hot} vẫy bạn, chìa điện thoại: một đoạn clip người qua đường quay, {sieu_nhan_hong} đỡ bà cụ, trả lại túi, cúi chào._
 * [🙇 "Dạ anh nói chuẩn quá, mất tiền studio! Em gọi anh {quan_ly_idol} lên liền."]
     ~ tn_ninh(2)
@@ -130,7 +130,7 @@ _Mốc 1: 50.000 người theo dõi. Con số hiện tại: {nguoi_theo_doi}._
     -> truot
 }
 = dat
-giam_doc: Đạt rồi! Đạt rồi Nhi ơi! Chuẩn bị bài cho anh phát biểu tối nay trong group nhé!
+giam_doc: Đạt rồi! Đạt rồi {thanh_ninh} ơi! Chuẩn bị bài cho anh phát biểu tối nay trong group nhé!
 * [🙇 "Dạ để em viết! 'Thành công hôm nay là nhờ tầm nhìn của anh'…"]
     ~ tn_ninh(3)
     ~ tn_khen()
@@ -175,9 +175,9 @@ giam_doc: Thứ 6 MV ra mắt, anh phải có mặt. Còn sáng thứ 6 anh có 
 // ------------------------------------------------------------
 === thanh_ninh_0810_tin_nhan_ll ===
 # ngay:8 # gio:21:40 # noi:nha_thanh_ninh
-_Tin nhắn từ số lạ: "Chào em Nhi, chị bên tuyển dụng LL. Em xác nhận lịch phỏng vấn giúp chị nhé. Chủ nhật 25/10, 9:00."_
-_Một tin nữa: "À, nghe nói em làm trợ lý cho anh Thắng bên G hả? Giỏi ghê."_
-* [🟢 "Dạ em xác nhận ạ. Dạ đúng rồi chị, em lo hết lịch của anh Thắng."]
+_Tin nhắn từ số lạ: "Chào em {thanh_ninh}, chị bên tuyển dụng LL. Em xác nhận lịch phỏng vấn giúp chị nhé. Chủ nhật 25/10, 9:00."_
+_Một tin nữa: "À, nghe nói em làm trợ lý cho anh {giam_doc} bên G hả? Giỏi ghê."_
+* [🟢 "Dạ em xác nhận ạ. Dạ đúng rồi chị, em lo hết lịch của anh {giam_doc}."]
     ~ tn_xanh(10)
     _"Tuyệt vời! Hẹn em nha 💚". Trái tim màu xanh lá chuối._
 * [😶 "Dạ em xác nhận ạ." Không trả lời câu thứ hai.]
@@ -202,7 +202,7 @@ _Vest. Hộp gỗ. "Từ nước ngoài". Bạn nghĩ tới đúng một ngườ
     ~ cang_thang(10)
     hong_hot: *(chụp lia lịa)* Ối dồi ôi, content!
     ~ qh("hong_hot", 3)
-* [👇 "Duy! Xuống ký nhận giùm chị."]
+* [👇 "{thuc_tap_sinh}! Xuống ký nhận giùm chị."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em xuống liền ạ!
     _{thuc_tap_sinh} nhìn phiếu giao hàng 2 giây: "Dạ đây là shipper ạ, gậy golf ạ."_
@@ -210,9 +210,9 @@ _Vest. Hộp gỗ. "Từ nước ngoài". Bạn nghĩ tới đúng một ngườ
 * [🧐 "Anh cho em xem phiếu giao hàng."]
     shipper_teo: Đây chị. Gậy golf, ship COD, anh {giam_doc} trả trước rồi.
     ~ tn_ninh(5)
-    giam_doc: *(trên lầu nói vọng xuống)* Gậy golf của anh à? Nhi làm việc chuẩn chỉ!
+    giam_doc: *(trên lầu nói vọng xuống)* Gậy golf của anh à? {thanh_ninh} làm việc chuẩn chỉ!
     ~ tn_sep_goi("nhi")
-- cho: GÂU GÂU GÂU! *(Tuất ghét shipper)*
+- cho: GÂU GÂU GÂU! *({cho} ghét shipper)*
 shipper_teo: Con chó này lần nào cũng vậy!
 -> END
 
@@ -221,7 +221,7 @@ shipper_teo: Con chó này lần nào cũng vậy!
 # ngay:9 # gio:14:30 # noi:phong_giam_doc # bat_buoc
 _MV đầu tiên của {sieu_nhan_hong} ra mắt tối nay. {hong_hot} cần ngân sách chạy quảng cáo. Tờ trình nằm trên bàn bạn từ sáng._
 _Cùng giờ đó, LL tung MV của nghệ sĩ bên họ. Cuộc chiến giờ vàng._
-giam_doc: *(bước vào, thở dài, ngồi phịch xuống)* Nhi ơi, pha cho anh ấm trà.
+giam_doc: *(bước vào, thở dài, ngồi phịch xuống)* {thanh_ninh} ơi, pha cho anh ấm trà.
 * [🍵 Đọc mặt sếp, pha trà, rồi kẹp tờ trình dưới khay.]
     { tn_diem_ninh >= 50:
         giam_doc: *(uống một ngụm)* Trà này… ừ. Tờ gì đấy?
@@ -271,7 +271,7 @@ giam_doc: *(gọi video)* Bao nhiêu rồi em? Bao nhiêu view rồi?
 _Thứ 7, ngày 10. Ngày lương. Ứng dụng ngân hàng: không có gì._
 _Hộp thư của sếp, 8:47: "Ngân hàng Tín Dụng Đen Đủi: Lệnh chuyển lương của Quý công ty đang được tạm giữ để kiểm tra giao dịch lớn."_
 _Bạn biết vì sao. Vì cái biệt thự trên đồi._
-_Group Zalo-lô công ty bắt đầu sôi. Tin nhắn riêng nhảy liên tục: "Nhi ơi lương sao chưa về?"_
+_Group Zalo-lô công ty bắt đầu sôi. Tin nhắn riêng nhảy liên tục: "{thanh_ninh} ơi lương sao chưa về?"_
 * [😶 Trả lời ai cũng một câu: "Thứ 7 ngân hàng nghỉ mà, thứ 2 về nha."]
     _Câu trả lời đúng một nửa. Nửa còn lại nằm trong thư mục "Ngân hàng"._
     ~ tn_email(1)
@@ -310,7 +310,7 @@ bac_bao_ve: Ơ, cháu đấy à. *(ngượng, lấy cái ly úp lên bánh)*
 # ngay:11 # gio:20:30 # noi:nha_thanh_ninh
 _Chủ nhật, Ngày Quốc tế Trẻ em gái. Fanpage phát động trend "ảnh hồi nhỏ". Cả công ty đăng._
 _{sieu_nhan_hong} đăng ảnh một xóm có cây me. Trong góc ảnh có một thằng nhóc đang khóc. {ran_doc} đăng ảnh rồi xóa sau 3 phút._
-_Đến lượt bạn. Album hồi nhỏ: bé Nhi đứng cuối lớp, vỗ tay cho bạn được khen._
+_Đến lượt bạn. Album hồi nhỏ: bé {thanh_ninh} đứng cuối lớp, vỗ tay cho bạn được khen._
 * [🙇 Đăng ảnh hồi nhỏ, tag sếp: "Từ nhỏ đã biết ngưỡng mộ người giỏi 👏"]
     ~ tn_ninh(3)
     giam_doc: *(bình luận)* Dễ thương quá! Anh hồi nhỏ thì toàn được vỗ tay thôi haha.
@@ -327,7 +327,7 @@ _Đến lượt bạn. Album hồi nhỏ: bé Nhi đứng cuối lớp, vỗ tay
 === thanh_ninh_1210_luong_tre ===
 # ngay:12 # gio:08:00 # noi:khu_lam_viec_chung # bat_buoc
 _Thứ 2. Lương về trễ 2 ngày, sáng nay mới về. Cả phòng nhìn bạn. Bạn là người gần sếp nhất, tức là người phải biết._
-hong_hot: Nhi, nói thiệt đi, sao lương trễ vậy? Bà biết mà!
+hong_hot: {thanh_ninh}, nói thiệt đi, sao lương trễ vậy? Bà biết mà!
 sales: Tin chị đi, chị nghe nói ngân hàng bên đó đổi hệ thống.
 dan_dau_tu: Hay công ty đem tiền lương đi đầu tư? Mua đáy hả?
 * [😶 "Ngân hàng kiểm tra giao dịch lớn thôi. Về rồi đó, mọi người check đi."]
@@ -353,15 +353,15 @@ dan_dau_tu: Hay công ty đem tiền lương đi đầu tư? Mua đáy hả?
 === thanh_ninh_1210_the_long ===
 # ngay:12 # gio:21:15 # noi:nha_thanh_ninh
 _Điện thoại reo. {con_ong_chau_cha}._
-con_ong_chau_cha: Nhi ơi, thẻ phụ của anh bị từ chối ở quán ốc. Trước mặt cả bàn luôn. Chú anh có biết hông?
+con_ong_chau_cha: {thanh_ninh} ơi, thẻ phụ của anh bị từ chối ở quán ốc. Trước mặt cả bàn luôn. Chú anh có biết hông?
 _Hộp thư của sếp có một email đã đọc lúc 19:00: "Thẻ phụ liên kết tài khoản cá nhân đã bị tạm khóa do số dư không đủ"._
-* [🙇 "Dạ chắc lỗi hệ thống anh Long ơi. Để mai em báo sếp liền."]
+* [🙇 "Dạ chắc lỗi hệ thống anh {con_ong_chau_cha} ơi. Để mai em báo sếp liền."]
     ~ qh("con_ong_chau_cha", 5)
     con_ong_chau_cha: Ờ… lỗi hệ thống. Chắc vậy. Chill.
     _Giọng {con_ong_chau_cha} không chill chút nào._
-* [😇 "Anh Long… anh hỏi thẳng chú anh đi anh. Em hông nói thay được."]
+* [😇 "Anh {con_ong_chau_cha}… anh hỏi thẳng chú anh đi anh. Em hông nói thay được."]
     ~ qh("con_ong_chau_cha", 3)
-    con_ong_chau_cha: … Ừ. Cảm ơn Nhi. Lần đầu có người nói vậy với anh.
+    con_ong_chau_cha: … Ừ. Cảm ơn {thanh_ninh}. Lần đầu có người nói vậy với anh.
     ~ tn_gian(-2)
 * [📧 Đọc thêm email cũ của sếp, xem thẻ đó gắn với tài khoản nào.]
     ~ tn_email(2)
@@ -393,7 +393,7 @@ bien_kich: *(đi ngang)* Đang viết hả? Cần thêm nỗi đau. Với ẩn d
 _Ngày Doanh nhân Việt Nam. Sếp tự mua một bó hoa hồng to cho chính mình. Thẻ ghi: "Gửi Doanh nhân {giam_doc}, từ {giam_doc}"._
 _{sales} vừa trao cho sếp giải "Doanh nhân của năm" của BTT Global. Cúp nhựa mạ vàng. Sếp treo nó ngay giữa tường._
 sales: Mr. Kevin Trộn gửi lời chúc mừng anh nha. No cap.
-giam_doc: Nhi! Chụp ảnh! Anh, bó hoa, cái cúp!
+giam_doc: {thanh_ninh}! Chụp ảnh! Anh, bó hoa, cái cúp!
 * [🙇 "Anh xứng đáng quá anh ơi! Doanh nhân có tâm nhất Quận Hóng!"]
     ~ tn_ninh(3)
     ~ tn_khen()
@@ -403,14 +403,14 @@ giam_doc: Nhi! Chụp ảnh! Anh, bó hoa, cái cúp!
     ~ phat_hien(btt_global_gia)
     _Nụ cười đó y chang nụ cười của bạn mỗi khi khen sếp._
 * [😶 Chụp ảnh, không nói gì.]
-    giam_doc: Nhi hôm nay ít nói thế. Để dành cho bài phát biểu à? Haha!
+    giam_doc: {thanh_ninh} hôm nay ít nói thế. Để dành cho bài phát biểu à? Haha!
 - -> END
 
 // ------------------------------------------------------------
 === thanh_ninh_1310_phat_bieu ===
 # ngay:13 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
 _Phòng họp "Sáng Tạo". Cả công ty ngồi kín. Bạn cầm bài phát biểu. Ở cuối phòng, {chi_dai} khoanh tay, cầm bút và một tờ giấy trắng._
-giam_doc: Hôm nay… anh không cần ai khen đâu. Nhưng Nhi đã chuẩn bị rồi thì… anh không ép, tùy em.
+giam_doc: Hôm nay… anh không cần ai khen đâu. Nhưng {thanh_ninh} đã chuẩn bị rồi thì… anh không ép, tùy em.
 * [✍️ Bắt đầu đọc. (Minigame "Viết Bài Phát Biểu")]
     -> thanh_ninh_mg_bai_phat_bieu
 * [😇 "Dạ hôm nay em xin đọc ngắn thôi ạ, 3 phút."]
@@ -426,7 +426,7 @@ giam_doc: Hôm nay… anh không cần ai khen đâu. Nhưng Nhi đã chuẩn b�
 === thanh_ninh_1310_sau_phat_bieu ===
 # ngay:13 # gio:11:30 # noi:hanh_lang_tang_2
 _Hành lang tầng 2. {chi_dai} chặn bạn lại, chìa tờ giấy. Trên đó chỉ có một hàng gạch: 23 vạch._
-chi_dai: Hai mươi ba lần chữ "tâm". Em định xây chùa hả Nhi?
+chi_dai: Hai mươi ba lần chữ "tâm". Em định xây chùa hả {thanh_ninh}?
 * [🙇 "Dạ chị đếm kỹ quá chị ơi, chị đúng là có tâm…"]
     ~ tn_gian(10)
     chi_dai: Hai mươi bốn.

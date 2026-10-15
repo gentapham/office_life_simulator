@@ -40,7 +40,7 @@ _9 giờ 30. Sếp bước vào, không nhìn bạn. Cửa kính đóng lại. M
 === thanh_ninh_2110_tra_voi_tuan ===
 # ngay:21 # gio:14:00 # noi:phong_hr
 _Phòng HR. Ấm trà Ô Long. {hr} mỉm cười._
-hr: Em Nhi. Anh chỉ muốn lắng nghe em thôi. Trong công ty, ai đọc được email của sếp?
+hr: Em {thanh_ninh}. Anh chỉ muốn lắng nghe em thôi. Trong công ty, ai đọc được email của sếp?
 * [🙇 "Dạ… em. Sếp nhờ em lọc thư mà anh. Sếp tin em lắm."]
     hr: Anh biết. Vì vậy anh mới mời em đầu tiên.
     ~ qh("hr", 3)
@@ -53,7 +53,7 @@ hr: Em Nhi. Anh chỉ muốn lắng nghe em thôi. Trong công ty, ai đọc đ�
         ~ tn_xanh(5)
     }
 * {tn_dong_minh_ke_toan} [🔒 "Chị {ke_toan} cũng biết từ đầu. Hai đứa em giữ kín cho sếp, hông ai nói ra ngoài."]
-    hr: *(đặt chén xuống)* … Thương biết à.
+    hr: *(đặt chén xuống)* … {ke_toan} biết à.
     _{hr} im một lúc lâu. Lần đầu bạn thấy {hr} hết cười._
     hr: Em về làm việc đi. Anh sẽ tìm theo hướng khác.
     ~ qh("hr", 5)
@@ -122,9 +122,9 @@ chu_liem: Con… con chó của ai đây?!
 * [🙇 Ôm {cho} ra ngoài, quay lại khen chú "dáng đứng trên ghế rất uy nghiêm".]
     ~ tn_khen()
     chu_liem: *(leo xuống, chỉnh cà vạt)* … Thôi được. Làm tiếp.
-* [👇 "Duy! Dắt chó ra!"]
+* [👇 "{thuc_tap_sinh}! Dắt chó ra!"]
     ~ tn_dap_duy()
-    thuc_tap_sinh: Dạ em dắt liền ạ! Tuất ơi đi với anh!
+    thuc_tap_sinh: Dạ em dắt liền ạ! {cho} ơi đi với anh!
 - -> END
 
 // ------------------------------------------------------------
@@ -157,7 +157,7 @@ _Sinh nhật {sieu_nhan_hong}, 31 tuổi. Sếp đưa bạn tiền túi lần n�
 === thanh_ninh_2310_loi_chuc ===
 # ngay:23 # gio:13:00 # noi:ban_tro_ly
 _Sếp nhờ bạn viết lời chúc để đọc trong livestream sinh nhật. Livestream cần thêm người đóng vai "Mr. Kevin Trộn" chúc mừng qua video. {sales} đang đứng sau bạn, nhìn danh sách nhân sự._
-sales: Chị Nhi, tin em đi, chú {bac_bao_ve} đóng Kevin Trộn là chắc kèo!
+sales: Chị {thanh_ninh}, tin em đi, chú {bac_bao_ve} đóng Kevin Trộn là chắc kèo!
 * [✍️ Viết lời chúc ngắn, nói về những lần {sieu_nhan_hong} bỏ quay để giúp người.]
     _Sếp đọc nháp. Gật. Sửa đúng một chữ: "chúng tôi" thành "chúng anh"._
     ~ follow(5000)
@@ -166,8 +166,8 @@ sales: Chị Nhi, tin em đi, chú {bac_bao_ve} đóng Kevin Trộn là chắc k
     ~ tn_ninh(3)
     giam_doc: Hay! Hay! Nhưng hơi nhiều anh quá… thôi kệ, đọc.
     ~ follow(-2000)
-* [💬 "Huyền, Kevin Trộn hông có thật đúng hông em?"]
-    sales: *(cười rạng rỡ)* … Chị Nhi nói gì kỳ vậy. Tin em đi.
+* [💬 "{sales}, Kevin Trộn hông có thật đúng hông em?"]
+    sales: *(cười rạng rỡ)* … Chị {thanh_ninh} nói gì kỳ vậy. Tin em đi.
     ~ phat_hien(btt_global_gia)
     _Nụ cười của {sales} có một vết nứt rất nhỏ. Bạn nhận ra vì bạn cũng có vết nứt đó._
     ~ qh("sales", 2)
@@ -176,10 +176,10 @@ sales: Chị Nhi, tin em đi, chú {bac_bao_ve} đóng Kevin Trộn là chắc k
 // ------------------------------------------------------------
 === thanh_ninh_2310_banh_kem ===
 # ngay:23 # gio:19:30 # noi:san_khau_su_kien # bat_buoc
-_Livestream sinh nhật. Bánh kem hồng 3 tầng. {sieu_nhan_hong} vừa tỏ tình giữa livestream. Màn hình bình luận chạy chữ \#VũƠiTrảLờiĐi._
+_Livestream sinh nhật. Bánh kem hồng 3 tầng. {sieu_nhan_hong} vừa tỏ tình giữa livestream. Màn hình bình luận chạy chữ \#{chua_te_deadline}ƠiTrảLờiĐi._
 _Rồi {cho} lao ra. Bánh kem đổ úp. Kem hồng dính đầy mũ. 10.000 người đang xem._
 _Sếp quay sang bạn, mặt cắt không còn giọt máu._
-giam_doc: Nhi… em nói xem anh nên làm gì?
+giam_doc: {thanh_ninh}… em nói xem anh nên làm gì?
 _Lần đầu tiên trong ba năm, sếp hỏi ý kiến thật của bạn._
 ~ tn_sep_hoi_y_kien = true
 * [🙇 "Dạ anh làm gì cũng đúng hết anh ơi!"]
@@ -204,7 +204,7 @@ _Lần đầu tiên trong ba năm, sếp hỏi ý kiến thật của bạn._
 === thanh_ninh_2410_hoa_giai ===
 # ngay:24 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai}. Các cặp: {truong_phong} với {con_ong_chau_cha}, {designer} với {bien_kich}, {sales} với {ke_toan}, {hr} với {thanh_xin_nghi}. Bàn riêng "chủ nợ" cho {dan_dau_tu}._
-ke_toan: Bà làm chủ tọa thì bà cũng phải hòa giải. Ngồi xuống đi. Nhi ngồi đối diện đó.
+ke_toan: Bà làm chủ tọa thì bà cũng phải hòa giải. Ngồi xuống đi. {thanh_ninh} ngồi đối diện đó.
 _{chi_dai} ngồi xuống đối diện bạn. Chị nhìn bạn thẳng._
 { tn_gian_chi_dai <= 30:
     chi_dai: Thôi khỏi nói. Chủ nhật này về nhà chị ăn cơm.
@@ -252,7 +252,7 @@ designer: … Ủa, đường này đi ra Chợ Phố Cũ hả bà?
 === thanh_ninh_2510_phong_van ===
 # ngay:25 # gio:09:00 # noi:ll_entertainment # bat_buoc
 _Phòng họp tầng 20. Ghế xoay da trắng. Người ngồi trên đó không phải chị tuyển dụng. Là Lưu Lực. Vest trắng, tóc vuốt keo._
-luu_luc: *(xoay ghế, giọng diễn giả)* Em Nhi. Ở LL, việc hôm nay phải xong từ hôm qua. Anh nghe nói em pha trà rất ngon.
+luu_luc: *(xoay ghế, giọng diễn giả)* Em {thanh_ninh}. Ở LL, việc hôm nay phải xong từ hôm qua. Anh nghe nói em pha trà rất ngon.
 * [🎭 "Dạ anh Lực nói chuẩn quá anh ơi! Văn phòng anh đẹp quá anh!"]
     ~ tn_xanh(15)
     ~ tn_khen()
@@ -303,13 +303,13 @@ _Hộp thư của sếp: email gửi {hr}, tiêu đề "Danh sách". Có tên {t
 * [😶 Đóng email. Không nói ai.]
     _Bạn đi ngang bàn {thuc_tap_sinh}. Anh ấy đang photo hồ sơ cho phòng khác, cười chào bạn._
     ~ cang_thang(5)
-* [🤝 Nói nhỏ với {thuc_tap_sinh}: "Duy, tuần này làm gì cũng ghi lại, rồi gửi chị. Chị trình sếp."]
+* [🤝 Nói nhỏ với {thuc_tap_sinh}: "{thuc_tap_sinh}, tuần này làm gì cũng ghi lại, rồi gửi chị. Chị trình sếp."]
     thuc_tap_sinh: Dạ… chị lo cho em ạ?
     ~ qh("thuc_tap_sinh", 15)
     ~ tn_gian(-8)
     _Lần đầu bạn dùng cái bàn trợ lý để đỡ một người ở dưới, chứ không phải đạp._
 * [🙇 Gõ cửa phòng sếp: "Anh ơi, em xin tên {ran_doc} vô danh sách nha anh. Em nói thiệt lòng."]
-    giam_doc: *(nhíu mày)* Nhi. Đừng thế.
+    giam_doc: *(nhíu mày)* {thanh_ninh}. Đừng thế.
     ~ tn_ninh(-6)
     ~ qh("ran_doc", -10)
 - -> END
@@ -319,7 +319,7 @@ _Hộp thư của sếp: email gửi {hr}, tiêu đề "Danh sách". Có tên {t
 # ngay:26 # gio:16:00 # noi:phong_hop_tang_2
 _Chiếu thử nội bộ phim "Người Hùng Không Tên". Biên kịch: {bien_kich}. Một người gác két ngân hàng, một cơn mưa, một chiếc xe chết máy, một người mặc đồ hồng._
 _Bạn quay sang. {thuc_tap_sinh} đang ngồi hàng cuối, mắt đỏ hoe. Bạn nhớ hôm 2/10 ở pantry._
-* [💬 Nói nhỏ với {bien_kich} lúc đèn bật: "Ý tưởng này Duy kể ở pantry mà bà."]
+* [💬 Nói nhỏ với {bien_kich} lúc đèn bật: "Ý tưởng này {thuc_tap_sinh} kể ở pantry mà bà."]
     bien_kich: *(tái mặt)* Đây không phải đạo… *(rồi im)*
     ~ qh("bien_kich", -10)
     ~ qh("thuc_tap_sinh", 5)
@@ -360,11 +360,11 @@ _Lưu Lực cố tình gửi trước để dọa. Sếp chưa đọc. Sếp đa
 _6 giờ sáng. Một trang showbiz vừa đăng tin LL mời Siêu Nhân Hồng gấp ba. Một tiếng nữa cả thành phố sẽ biết._
 _Bạn đang cầm điện thoại. Số của sếp ở đầu danh bạ, mục "Yêu thích"._
 * [📞 Gọi sếp dậy.]
-    giam_doc: *(giọng ngái ngủ)* Nhi à… mấy giờ rồi em…
+    giam_doc: *(giọng ngái ngủ)* {thanh_ninh} à… mấy giờ rồi em…
     _Bạn kể hết. Cả chuyện email tối qua. Cả chuyện bạn đã đọc email trong thùng rác._
     giam_doc: … Em đọc cả thư đã xóa của anh à?
     _Im lặng 5 giây._
-    giam_doc: Ừ. Cảm ơn em. Anh qua chỗ {quan_ly_idol} và Nguyên ngay bây giờ.
+    giam_doc: Ừ. Cảm ơn em. Anh qua chỗ {quan_ly_idol} và {sieu_nhan_hong} ngay bây giờ.
     ~ tn_bao_truoc_loi_moi = true
     ~ tn_ninh(-5)
     ~ qh("giam_doc", 15)
@@ -384,7 +384,7 @@ _Bạn đang cầm điện thoại. Số của sếp ở đầu danh bạ, mục
 === thanh_ninh_2710_luu_luc_toi ===
 # ngay:27 # gio:10:00 # noi:sanh_cong_ty # bat_buoc
 _Lưu Lực tới tận nơi. Vest trắng, cặp hồ sơ xanh lá chuối. Đi ngang qua sảnh, thấy {chi_dai}, ông ta làm rơi cả tập hồ sơ._
-_Hồ sơ tung ra sàn. Lời mời cho Nguyên, cho {quan_ly_idol}, cho {ke_toan}, cho {dan_dau_tu}… và một tờ ghi tên bạn: "Nhi: cộng tác đặc biệt"._
+_Hồ sơ tung ra sàn. Lời mời cho {sieu_nhan_hong}, cho {quan_ly_idol}, cho {ke_toan}, cho {dan_dau_tu}… và một tờ ghi tên bạn: "{thanh_ninh}: cộng tác đặc biệt"._
 luu_luc: *(nhặt vội, mồ hôi chảy qua lớp keo tóc)* Chào… chào chị.
 { tn_bao_truoc_loi_moi:
     _Sếp đã ngồi sẵn với {quan_ly_idol} và {sieu_nhan_hong} trong phòng họp từ 8 giờ. Cửa đóng._
@@ -405,7 +405,7 @@ luu_luc: *(nhặt vội, mồ hôi chảy qua lớp keo tóc)* Chào… chào ch
         ~ tn_xanh(5)
     }
 * [🦶 Lén giẫm lên tờ giấy có tên mình trước khi ai đọc được.]
-    _Bạn đứng im, chân đè lên tờ "Nhi: cộng tác đặc biệt". Lưu Lực nhặt hết, chỉ thiếu đúng một tờ._
+    _Bạn đứng im, chân đè lên tờ "{thanh_ninh}: cộng tác đặc biệt". Lưu Lực nhặt hết, chỉ thiếu đúng một tờ._
     { RANDOM(1, 10) <= 3:
         ran_doc: *(cúi xuống nhặt giùm)* Chị {thanh_ninh}, rớt gì nè… ủa?
         { tn_hai_mang:
@@ -413,7 +413,7 @@ luu_luc: *(nhặt vội, mồ hôi chảy qua lớp keo tóc)* Chào… chào ch
         }
     }
 - { tn_hai_mang && not tn_bao_truoc_loi_moi && not tn_co_ghi_am_luu_luc && tn_xanh_la_chuoi >= 80:
-    _Chiều đó, {sieu_nhan_hong} không trả lời tin nhắn của ai. Mọi điều Lưu Lực nói với Nguyên đều trúng đúng chỗ, như đã đọc trước lịch của cả công ty._
+    _Chiều đó, {sieu_nhan_hong} không trả lời tin nhắn của ai. Mọi điều Lưu Lực nói với {sieu_nhan_hong} đều trúng đúng chỗ, như đã đọc trước lịch của cả công ty._
     ~ nguyen_theo_ll = true
 }
 -> END
@@ -421,7 +421,7 @@ luu_luc: *(nhặt vội, mồ hôi chảy qua lớp keo tóc)* Chào… chào ch
 // ------------------------------------------------------------
 === thanh_ninh_2710_lich_dem_hong ===
 # ngay:27 # gio:21:00 # noi:nha_thanh_ninh # dieu_kien:tn_xanh_la_chuoi>=40
-_Thư ký LL nhắn: "Em ơi, cho chị xin lịch Đêm Hồng chi tiết nha: giờ diễn, lối vào hậu trường, ai đứng cạnh Nguyên. Chị cảm ơn 💚"_
+_Thư ký LL nhắn: "Em ơi, cho chị xin lịch Đêm Hồng chi tiết nha: giờ diễn, lối vào hậu trường, ai đứng cạnh {sieu_nhan_hong}. Chị cảm ơn 💚"_
 _Lịch Đêm Hồng nằm trong hộp thư sếp. {chi_dai} gửi lúc 17:00, đánh dấu "MẬT – chỉ anh đọc"._
 * [🟢 Gửi.]
     ~ tn_gui_lich_dem_hong = true

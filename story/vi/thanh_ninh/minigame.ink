@@ -46,7 +46,7 @@ _Quy tắc vàng: lịch ngân hàng phải ghi tên giả "Gặp đối tác ch
 === thanh_ninh_mg_sap_lich_thanh_cong ===
 # dieu_kien:minigame_sap_lich_thanh_cong
 _Lịch kín mà không chồng chéo. Ngân hàng nằm gọn trong ô "Gặp đối tác chiến lược" sáng thứ 6, giữa golf và họp._
-giam_doc: Gọn quá! Nhi xếp lịch như đánh cờ ấy.
+giam_doc: Gọn quá! {thanh_ninh} xếp lịch như đánh cờ ấy.
 ~ tien_cong(150000)
 ~ tn_email(1)
 ~ tn_ninh(3)
@@ -124,14 +124,14 @@ _Sân đặt lúc 7 giờ, trước cơn mưa 10 giờ. Nhà hàng có món chay
 ~ tn_co_phieu_buffet = true
 ~ uong(30)
 ~ tn_ninh(3)
-giam_doc: Chuẩn! Không mưa! Nhi gọi điện có tâm thật.
+giam_doc: Chuẩn! Không mưa! {thanh_ninh} gọi điện có tâm thật.
 _Sân golf tặng bạn một phiếu ăn buffet trưa và một chai nước dừa. Nước dừa ngọt. Bạn uống hết trước khi sếp đổi ý._
 -> END
 
 === thanh_ninh_mg_dat_san_golf_that_bai ===
 # dieu_kien:minigame_dat_san_golf_that_bai
 _Sân đặt lúc 10 giờ. 10 giờ 02, mưa như trút. Nhà hàng dọn ra đĩa bò lúc lắc cho vị đối tác ăn chay trường._
-giam_doc: *(nhắn)* Nhi. Đối tác ăn chay mà em.
+giam_doc: *(nhắn)* {thanh_ninh}. Đối tác ăn chay mà em.
 _Bạn nhìn ghi chú: "đối tác ăn chay" nằm ngay dưới dòng "sếp ghét hành"._
 ~ tn_ninh(-4)
 ~ cang_thang(8)
@@ -152,13 +152,13 @@ _Hộp thư sạch bong. Màn hình chính của sếp chỉ còn 3 email: lời
 _Thư mục "Ngân hàng" dày thêm._
 ~ tien_cong(120000)
 ~ tn_email(2)
-_Giữa đống email có một email lạ: "LL-Entertainment: Gửi anh Thắng, chúng tôi rất ngưỡng mộ…"._
+_Giữa đống email có một email lạ: "LL-Entertainment: Gửi anh {giam_doc}, chúng tôi rất ngưỡng mộ…"._
 * [🗑️ Xóa luôn, không đọc.]
     ~ tn_xanh(-3)
 * [🟢 Đọc hết, rồi mới xóa.]
     ~ tn_email(1)
     ~ tn_xanh(5)
-    _Email kết thúc bằng câu: "Nếu G-Entertainment cần người đỡ bớt gánh nặng nhân sự, LL luôn rộng cửa." Bạn đọc chữ "nhân sự" thành chữ "Nhi"._
+    _Email kết thúc bằng câu: "Nếu G-Entertainment cần người đỡ bớt gánh nặng nhân sự, LL luôn rộng cửa." Bạn đọc chữ "nhân sự" thành chữ "{thanh_ninh}"._
 - -> END
 
 === thanh_ninh_mg_loc_hop_thu_that_bai ===
@@ -206,7 +206,7 @@ _Sếp đưa thêm một thỏi son mẫu thử đối tác biếu. Màu "Hồng
     ~ qh("sieu_nhan_hong", -5)
 - else:
     _Quà của bạn là túi xách. Quà của {chi_dai} là móc khóa. {hong_hot} đăng ảnh so sánh lên group trong 4 phút._
-    chi_dai: Nhi. Móc khóa hả. Ừ.
+    chi_dai: {thanh_ninh}. Móc khóa hả. Ừ.
     ~ tn_gian(15)
 }
 ~ tn_ninh(-3)
@@ -218,7 +218,7 @@ _Trong túi còn tiền thối. Hóa đơn ghi rõ con số._
     ~ tien_cong(150000)
     ~ tn_giu_tien_thoi = true
     { RANDOM(1, 10) <= 3:
-        ke_toan: *(chìa hóa đơn)* Nhi. 150.000đ tiền thối đâu em?
+        ke_toan: *(chìa hóa đơn)* {thanh_ninh}. 150.000đ tiền thối đâu em?
         ~ qh("ke_toan", -15)
         ~ tn_ninh(-5)
         ~ tien_cong(-150000)

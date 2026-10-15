@@ -35,7 +35,7 @@ sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ!
 * [🙇 Đứng sát sếp nhất khung hình, giơ máy selfie lên cao.]
     ~ tn_ninh(5)
     ~ tn_sep_goi("nhi")
-    giam_doc: Đấy! Thế mới là ảnh! Nhi chụp lúc nào cũng thấy anh trẻ ra mười tuổi.
+    giam_doc: Đấy! Thế mới là ảnh! {thanh_ninh} chụp lúc nào cũng thấy anh trẻ ra mười tuổi.
     _Trong ảnh: sếp, bạn, một nửa cái mũ hồng, và cái khuỷu tay của {chi_dai}._
     chi_dai: *(lẩm bẩm)* Lễ ký hợp đồng hay lễ cưới của hai người vậy trời.
     ~ tn_gian(3)
@@ -72,17 +72,17 @@ _Ba năm. Ba năm bạn mới biết sếp thích ít đường. Thằng nhỏ n
 * [🙇 "Dạ anh {ran_doc} giỏi quá! Mà anh {giam_doc} buổi sáng uống trà sen cho ấm bụng nha anh, trà sữa để chiều em hâm lại."]
     ~ tn_ninh(3)
     ~ tn_khen()
-    giam_doc: Ừ, Nhi lo chu đáo. Để đấy anh uống cả hai.
+    giam_doc: Ừ, {thanh_ninh} lo chu đáo. Để đấy anh uống cả hai.
     ran_doc: *(vẫn cười)* Dạ chị {thanh_ninh} chu đáo thật.
     _Nụ cười đó ngọt quá. Ngọt kiểu đường hóa học._
 * [👇 "Em {ran_doc} ơi, xuống photo giùm chị 52 trang hợp đồng, mỗi người một bản nha."]
     ~ qh("ran_doc", -5)
     ran_doc: Dạ chị, em đi liền.
-    giam_doc: Nhi, nhân viên mới mà, cho nó làm quen dần đã.
+    giam_doc: {thanh_ninh}, nhân viên mới mà, cho nó làm quen dần đã.
     ~ tn_ninh(-2)
 * [😶 Đặt khay trà xuống, lùi ra, mỉm cười.]
-    giam_doc: Nhi, ở lại đây anh nhờ tí. À thôi, không có gì.
-- _Trên điện thoại bạn, một ứng dụng ghi chú mới được tạo: "SẾP GỌI AI". Hiếu: 1. Nhi: …_
+    giam_doc: {thanh_ninh}, ở lại đây anh nhờ tí. À thôi, không có gì.
+- _Trên điện thoại bạn, một ứng dụng ghi chú mới được tạo: "SẾP GỌI AI". {ran_doc}: 1. {thanh_ninh}: …_
 _Cuộc thi ngầm bắt đầu._
 -> END
 
@@ -90,11 +90,11 @@ _Cuộc thi ngầm bắt đầu._
 === thanh_ninh_0110_trua_dat_com ===
 # ngay:1 # gio:12:00 # noi:ban_tro_ly
 _Giờ trưa. Bạn đặt cơm cho sếp trước, ăn sau. Như mọi ngày._
-giam_doc: Nhi ơi, trưa nay anh ăn với đối tác Siêu Nhân Hồng. Em đặt bàn đâu cho sang nhé. Nhưng đừng đắt quá. Anh không ép, tùy em.
+giam_doc: {thanh_ninh} ơi, trưa nay anh ăn với đối tác Siêu Nhân Hồng. Em đặt bàn đâu cho sang nhé. Nhưng đừng đắt quá. Anh không ép, tùy em.
 * [⛳ "Dạ để em đặt nhà hàng chay Sen Hồng, có phòng riêng, có màu hồng luôn anh."]
     ~ tn_ninh(4)
     ~ tien_cong(50000)
-    giam_doc: Chuẩn! Màu hồng! Nhi nghĩ chu đáo thật.
+    giam_doc: Chuẩn! Màu hồng! {thanh_ninh} nghĩ chu đáo thật.
     _Sếp dúi vào tay bạn 50.000đ "tiền xăng". Bạn cầm, cười, cảm ơn ba lần._
 * [💬 "Dạ anh muốn sang cỡ nào ạ? Quỹ còn…"]
     giam_doc: *(ho)* Thôi, cơm tấm vỉa hè đi em. Cho gần gũi.
@@ -135,7 +135,7 @@ hr: Hôm nay ai chấm công cũng phải cười nha em. Anh chụp lại gửi
     _8:15, {ran_doc} gửi ảnh cười chụp chung với Bác {bac_bao_ve} và {cho}, chú thích: "Người giữ cổng, người giữ lửa"._
     _Sếp thả tim ảnh của {ran_doc} trước. Ảnh của bạn: "đã xem"._
     ~ tn_sep_goi("hieu")
-* [🤝 Kéo {thuc_tap_sinh} vô chụp chung: "Cười lên Duy, cười cho chị coi."]
+* [🤝 Kéo {thuc_tap_sinh} vô chụp chung: "Cười lên {thuc_tap_sinh}, cười cho chị coi."]
     ~ qh("thuc_tap_sinh", 5)
     thuc_tap_sinh: Dạ… dạ em cười đây ạ! *(cười như đang đi phỏng vấn ngân hàng)*
     ~ tn_gian(-2)
@@ -150,7 +150,7 @@ hr: Hôm nay ai chấm công cũng phải cười nha em. Anh chụp lại gửi
 # ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
 _Họp lên chiến dịch "Hồng Hóa Việt Nam". Sếp vừa chốt mục tiêu 1 triệu người theo dõi trước 31/10. {hong_hot} ở cuối bàn lẩm nhẩm chia: "Mỗi ngày 33 nghìn… ối dồi ôi."_
 _{sales} vừa hứa 3 nhà tài trợ, 2 tỷ, từ "Tập đoàn Bánh Tráng Trộn Toàn Cầu". Không ai hỏi gì thêm._
-giam_doc: Nhi này, bài phát biểu hôm qua anh nói thế nào? Nói thật đi, anh không ép, tùy em.
+giam_doc: {thanh_ninh} này, bài phát biểu hôm qua anh nói thế nào? Nói thật đi, anh không ép, tùy em.
 _{ran_doc} đứng ngay cạnh, đang bưng ly trà sữa lên cho sếp._
 * [🙇 "Anh nói chuẩn quá anh ơi! Đỉnh nóc, kịch trần, bay phấp phới luôn anh!"]
     ~ tn_ninh(5)
@@ -188,11 +188,11 @@ _Giải lao. Ở pantry, {thuc_tap_sinh} đang kể say sưa cho {bien_kich} ngh
 thuc_tap_sinh: …là một người gác két ngân hàng ạ, một ngày bỏ hết đi, rồi trời mưa, xe chết máy, có người mặc đồ hồng đẩy xe giùm…
 bien_kich: *(ghi ghi chép chép)* Hay… hay đó. Cần thêm nỗi đau.
 _Bạn đang cần ly nước. Và cần một người đi photo 52 trang hợp đồng._
-* [👇 "Duy, kể xong chưa? Photo giùm chị cái hợp đồng, 22 bản."]
+* [👇 "{thuc_tap_sinh}, kể xong chưa? Photo giùm chị cái hợp đồng, 22 bản."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em làm liền ạ!
     _{bien_kich} vẫn cúi đầu ghi tiếp. Không ai hỏi ý tưởng đó của ai._
-* [💬 "Hay đó Duy. Chuyện thiệt hả?"]
+* [💬 "Hay đó {thuc_tap_sinh}. Chuyện thiệt hả?"]
     thuc_tap_sinh: Dạ… dạ cũng gần thiệt ạ. Mà chuyện cũ rồi chị.
     ~ qh("thuc_tap_sinh", 5)
     ~ tn_gian(-3)
@@ -213,10 +213,10 @@ _Trên khay còn 2 ly: một ly ít đá, một ly full topping._
     _Bạn đứng giữa phòng sếp, cầm ly trà sữa, không biết nên uống hay nên khen._
     ~ uong(25)
     ~ cang_thang(-5)
-* [👇 Cầm ly ít đá: "Duy uống ly kia đi, chị đang ho."]
+* [👇 Cầm ly ít đá: "{thuc_tap_sinh} uống ly kia đi, chị đang ho."]
     ~ tn_dap_duy()
     ~ tn_gian(10)
-    chi_dai: Nhi. Ly đó của ai?
+    chi_dai: {thanh_ninh}. Ly đó của ai?
     _Không khí giảm 3 độ._
     ~ uong(25)
 * [🤝 Đưa ly ít đá cho {thuc_tap_sinh}, giữ ly còn lại.]
@@ -231,7 +231,7 @@ _Trên khay còn 2 ly: một ly ít đá, một ly full topping._
 === thanh_ninh_0310_sep_nhan_cuoi_tuan ===
 # ngay:3 # gio:08:15 # noi:nha_thanh_ninh
 _Thứ 7. 8 giờ 15 sáng. Bạn đang đắp mặt nạ thì điện thoại reo. Sếp._
-giam_doc: Nhi à, sáng nay anh định đánh golf với anh bên ngân hàng… à, với đối tác. Em đặt sân giúp anh nhé. Cuối tuần, anh không ép, tùy em.
+giam_doc: {thanh_ninh} à, sáng nay anh định đánh golf với anh bên ngân hàng… à, với đối tác. Em đặt sân giúp anh nhé. Cuối tuần, anh không ép, tùy em.
 * [⛳ "Dạ có liền anh! Em đặt sân, đặt luôn nhà hàng nha anh."]
     ~ tn_ninh(3)
     -> thanh_ninh_mg_dat_san_golf
@@ -257,7 +257,7 @@ chi_nail: Ngồi đây chị kể nghe nè… Hôm qua có đứa bên công ty 
     chi_nail: Ờ, sếp em giỏi mà sao hôm bữa thấy ổng đi xe máy?
     _Bạn cười, không trả lời. Bạn biết vì sao._
 * [🧂 "Nói nhỏ nghe nè chị, sếp em sắp mua xe mới."]
-    chi_nail: Thiệt hả? Để chị kể con Ngân!
+    chi_nail: Thiệt hả? Để chị kể con {hong_hot}!
     _Bạn vừa tạo ra tin đồn đầu tiên của tháng. Nó sai hoàn toàn._
     ~ qh("hong_hot", 2)
 * [😶 "Em hông biết đâu chị. Sơn màu xanh lá chuối giùm em."]
@@ -273,9 +273,9 @@ chi_nail: Ngồi đây chị kể nghe nè… Hôm qua có đứa bên công ty 
 # ngay:4 # gio:10:00 # noi:san_cong_ty
 _Chủ nhật, Ngày Động vật Thế giới. Sếp muốn ảnh "{cong_ty} yêu động vật" cho fanpage, nên bạn phải tới công ty._
 _{cho} vừa được tắm, mặc áo, đội nơ. {cho} không vui. {sieu_nhan_hong} tới chọc, {cho} càng không vui._
-sieu_nhan_hong: Gâu gâu! Hehe, Tuất ơi, anh sủa giống hông?
+sieu_nhan_hong: Gâu gâu! Hehe, {cho} ơi, anh sủa giống hông?
 cho: Grừ…
-giam_doc: *(qua điện thoại)* Nhi chụp cho anh tấm anh bế con Tuất nhé. Anh qua liền.
+giam_doc: *(qua điện thoại)* {thanh_ninh} chụp cho anh tấm anh bế con {cho} nhé. Anh qua liền.
 * [🙇 "Dạ để em giữ nó cho anh bế!"]
     _Bạn cúi xuống ôm {cho}. {cho} nhìn bạn. Bạn nhìn {cho}. Hai bên hiểu nhau._
     cho: Ẳng! *(vùng ra, lao thẳng về phía {sieu_nhan_hong})*
@@ -283,25 +283,25 @@ giam_doc: *(qua điện thoại)* Nhi chụp cho anh tấm anh bế con Tuất n
     sieu_nhan_hong: Găng tay của anh!
     ~ qh("cho", -5)
     ~ tn_ninh(1)
-* {co(xuc_xich)} [🤝 Đưa {cho} cây xúc xích trước khi ôm.]
+* {co(xuc_xich)} [🔒 🤝 Đưa {cho} cây xúc xích trước khi ôm.]
     ~ mat(xuc_xich)
     ~ qh("cho", 15)
     cho: Gâu! *(vẫy đuôi, cho bế)*
     _Sếp tới, bế {cho}, cười tươi. Ảnh đẹp nhất năm. {cho} vẫn liếc {sieu_nhan_hong}._
     ~ tn_ninh(5)
     _Ba phút sau, {cho} vẫn giật được chiếc găng tay hồng. Chuyện đó không ai cản được._
-* [👇 Gọi {thuc_tap_sinh}: "Duy, ra giữ con chó cho chị."]
+* [👇 Gọi {thuc_tap_sinh}: "{thuc_tap_sinh}, ra giữ con chó cho chị."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em tới liền ạ! Chủ nhật mà em cũng đang ở gần đây ạ.
     _{chi_dai} cũng đang ở đây. Chị là người duy nhất {cho} cho tắm._
-    chi_dai: Chủ nhật mà còn sai thằng nhỏ. Em giỏi ghê ha Nhi.
+    chi_dai: Chủ nhật mà còn sai thằng nhỏ. Em giỏi ghê ha {thanh_ninh}.
 - -> END
 
 // ------------------------------------------------------------
 === thanh_ninh_0410_toi_dem_nguoc ===
 # ngay:4 # gio:22:10 # noi:nha_thanh_ninh
 _Tối Chủ nhật. Bạn mở ứng dụng ghi chú "SẾP GỌI AI"._
-_Nhi: {tn_sep_goi_nhi}. {ran_doc}: {tn_sep_goi_hieu}._
+_{thanh_ninh}: {tn_sep_goi_nhi}. {ran_doc}: {tn_sep_goi_hieu}._
 { tn_sep_goi_nhi > tn_sep_goi_hieu:
     _Bạn đang dẫn. Nhưng mới có bốn ngày._
 - else:

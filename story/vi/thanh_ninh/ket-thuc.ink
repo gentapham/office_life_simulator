@@ -89,7 +89,7 @@ _Bên kia đường lớn, rất xa, tòa nhà tím của {cong_ty} vẫn sáng 
 # dieu_kien:ket_thuc_loi_that_dau_tien
 _Đêm Hồng, 31/10. 19 giờ 20. Hậu trường. MC của đêm diễn gọi điện báo kẹt xe ở Đại lộ Kẹt Xe, chưa biết mấy giờ tới._
 _{chi_dai} cầm bộ đàm, nhìn quanh, rồi nhìn bạn._
-chi_dai: Nhi. *(dúi micro vào tay bạn)* MC đêm nay là em.
+chi_dai: {thanh_ninh}. *(dúi micro vào tay bạn)* MC đêm nay là em.
 thanh_ninh: Chị… em chỉ biết khen thôi chị.
 chi_dai: Thì đêm nay đừng khen. Kể. Ai làm gì, kể đúng như vậy. Em biết hết mà.
 _Đèn sân khấu bật. Một nghìn khán giả. Ba cái máy quay. {hong_hot} giơ ba điện thoại._
@@ -115,7 +115,7 @@ _{ke_toan} gật. Bạn không nghe thấy câu đó. Nhưng đêm nay, lần đ
 # dieu_kien:ket_thuc_email_gui_nham
 _Sáng 30/10. 7 giờ 45. Bạn tới trước sếp như mọi ngày. Bình trà sen nóng hổi._
 _{hr} đứng cạnh máy chấm công, mỉm cười._
-hr: Nhi à. Em rảnh không, lên phòng anh uống trà xíu.
+hr: {thanh_ninh} à. Em rảnh không, lên phòng anh uống trà xíu.
 _Trà Ô Long. Loại sếp thích. {hr} rót cho bạn một ly. Không ai nhắc tới email "Em đồng ý về LL ạ". Không cần nhắc. Nó đã được in ra, nằm trong tập hồ sơ màu hồng trên bàn._
 hr: Mình cùng nhìn lại hành trình nha em.
 _Hành trình kéo dài 12 phút. Ba năm, mười hai phút._
@@ -165,7 +165,7 @@ _Xe cộ chạy qua hai bên. Không ai bấm còi gọi bạn. Bạn không bi�
 { nguoi_theo_doi < 1000000:
     _Đêm Hồng kết thúc lúc 22 giờ. Con số dừng lại ở {nguoi_theo_doi}. Không đủ._
     _Sếp đứng dưới khán đài trong bộ đồ "Ông Kẹ Ngân Hàng", nhìn con số rất lâu. Rồi tháo cà vạt in hình tờ tiền ra, gấp gọn, bỏ vào túi._
-    giam_doc: Nhi về đi em. Mai… không cần tới sớm đâu.
+    giam_doc: {thanh_ninh} về đi em. Mai… không cần tới sớm đâu.
     _Mười tỷ. Trang 47. Bạn biết từ đầu. Bạn đã biết mọi thứ từ đầu, và đã dùng nó để giữ ghế của mình._
 - else:
     _Đêm Hồng thành công. Con số nhảy qua một triệu. Cả công ty ôm nhau._
