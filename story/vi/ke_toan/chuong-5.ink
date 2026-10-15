@@ -307,7 +307,7 @@ giam_doc: *(mở cổng, áo thun cũ, dép lê)* {ke_toan}? Chủ nhật mà em
 // ------------------------------------------------------------
 === ke_toan_2610_mua_kenh ===
 # ngay:26 # gio:10:00 # noi:phong_giam_doc # bat_buoc
-_Thứ Hai. Tin đồn "cắt giảm nếu Siêu Nhân Hồng thất bại" lan khắp công ty. Chiều qua chiếu thử phim ngắn "Người Hùng Không Tên". Hay. Hay tới mức {thuc_tap_sinh} ngồi khóc ở hàng cuối._
+_Thứ Hai. Tin đồn "cắt giảm nếu Siêu Nhân Hồng thất bại" lan khắp công ty. Sáng nay vừa chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Hay. Hay tới mức {thuc_tap_sinh} ngồi khóc ở hàng cuối._
 giam_doc: {ke_toan}, duyệt cho anh 200 triệu. Anh mua kênh Diu-túp "Cú Đêm Cắt Ghép" của {editor}. Gần một triệu người đăng ký. Đổi tên thành kênh của {sieu_nhan_hong}.
 * [🧾 "Anh hỏi {editor} chưa? Kênh của người ta làm 6 năm."]
     giam_doc: … Chưa.

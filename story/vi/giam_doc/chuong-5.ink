@@ -334,7 +334,7 @@ _Sáng thứ Hai. Tin đồn "cắt giảm nếu Siêu Nhân Hồng thất bại
     _{hr} báo: đã có người đặt lịch phỏng vấn ở LL. Hứa lèo quá nhiều, người ta không chờ nữa._
     ~ gd_uy(-5)
 }
-_Chiều qua chiếu thử phim ngắn "Người Hùng Không Tên". Cuối phim, một khung hình có con cú nhỏ. Bạn đã tra: kênh Diu-túp "Cú Đêm Cắt Ghép", 980.000 người đăng ký. Chủ kênh là {editor}._
+_9 giờ sáng nay, công ty chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Cuối phim, một khung hình có con cú nhỏ. Bạn đã tra: kênh Diu-túp "Cú Đêm Cắt Ghép", 980.000 người đăng ký. Chủ kênh là {editor}._
 editor: *(đứng trước bàn, ngáp)* Anh gọi em ạ?
 * [💰 "Anh mua kênh của em. 200 triệu. Đổi tên thành kênh của {sieu_nhan_hong}."]
     editor: *(tỉnh hẳn)* … Kênh đó em làm 6 năm. Không bán anh.
