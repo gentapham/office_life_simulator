@@ -137,14 +137,16 @@ Ngoài mặt, Rắn Độc là người dễ thương nhất phòng: nhớ sinh 
 
 ## 6. Sáu kết thúc
 
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+
 | # | Tên | Điều kiện chính | Tóm tắt |
 |---|---|---|---|
-| 1 | 👑 **Trùm Cuối** | Độ Độc ≥ 80, Độ Nghi Ngờ < 40, đã loại được cả 2 ứng viên phó giám đốc | Cả công ty đấu đá nhau tan nát, và người duy nhất "sạch sẽ" còn lại là bạn. Giám đốc đề bạt bạn làm phó giám đốc. Cảnh cuối: bạn ngồi ghế mới, mở group Zalo và gõ *"Nghe gì chưa?"* |
-| 2 | 🔥 **Bị Lật Tẩy** | Độ Nghi Ngờ đạt 100 (có thể xảy ra bất cứ lúc nào) | Cả phòng đối chất. Ảnh chụp tin nhắn của bạn được chiếu lên màn hình phòng họp. HR mời bạn đi "uống trà" lần cuối. Ôm thùng carton ra về, chỉ có {cho} tiễn bạn ra cổng |
-| 3 | 😇 **Hoàn Lương** | Độ Tin Tưởng ≥ 80, đã hòa giải ít nhất 3 cặp xích mích, kể thật động cơ với ít nhất 1 người | Bạn bỏ nghề rắn. Lần đầu tiên có người rủ bạn đi ăn trưa mà không vì muốn nghe chuyện. Kết thúc khó nhất, cũng là kết thúc ấm áp nhất |
-| 4 | 🐍 **Rắn Cắn Rắn** | Không phát hiện con rắn giấu mặt trước ngày 27 | Con rắn thứ hai đã gom đủ bằng chứng về bạn từ lâu, và tung ra đúng ngày phán xét. Bạn bị đuổi, còn nó lên chức. *"Tui chỉ nói sự thật thôi mà."* |
-| 5 | 💥 **Công Ty Sập** | Độ Độc ≥ 100, tuyến Siêu Nhân Hồng thất bại | Drama quá nhiều, nhân viên nghỉ hàng loạt, Siêu Nhân Hồng bỏ đi, G-Entertainment phá sản. Cảnh cuối: cả công ty cũ ngồi ở Quán Ốc Đêm, và lần đầu tiên… nói chuyện thật lòng với nhau |
-| 6 | 🔒 **Kết thúc bí mật: Biên Tập Viên** | Thu thập đủ 15 tin mật, không tung tin nào ra ngoài trong 10 ngày cuối, động cơ là "Nhiệm vụ bí mật" | Bạn quay ngược lại tố cáo công ty đối thủ đã cài mình vào. Kho tin mật trở thành cuốn sách bán chạy *"30 Ngày Làm Rắn"*. Bạn nghỉ việc, đi ký tặng sách |
+| 1 | 😄 👑 **Trùm Cuối** | Độ Độc ≥ 80, Độ Nghi Ngờ < 40, đã loại được cả 2 ứng viên phó giám đốc | Cả công ty đấu đá nhau tan nát, và người duy nhất "sạch sẽ" còn lại là bạn. Giám đốc đề bạt bạn làm phó giám đốc. Cảnh cuối: bạn ngồi ghế mới, mở group Zalo và gõ *"Nghe gì chưa?"* |
+| 2 | 😢 🔥 **Bị Lật Tẩy** | Độ Nghi Ngờ đạt 100 (có thể xảy ra bất cứ lúc nào) | Cả phòng đối chất. Ảnh chụp tin nhắn của bạn được chiếu lên màn hình phòng họp. HR mời bạn đi "uống trà" lần cuối. Ôm thùng carton ra về, chỉ có {cho} tiễn bạn ra cổng |
+| 3 | 😄 😇 **Hoàn Lương** | Độ Tin Tưởng ≥ 80, đã hòa giải ít nhất 3 cặp xích mích, kể thật động cơ với ít nhất 1 người | Bạn bỏ nghề rắn. Lần đầu tiên có người rủ bạn đi ăn trưa mà không vì muốn nghe chuyện. Kết thúc khó nhất, cũng là kết thúc ấm áp nhất |
+| 4 | 😢 🐍 **Rắn Cắn Rắn** | Không phát hiện con rắn giấu mặt trước ngày 27 | Con rắn thứ hai đã gom đủ bằng chứng về bạn từ lâu, và tung ra đúng ngày phán xét. Bạn bị đuổi, còn nó lên chức. *"Tui chỉ nói sự thật thôi mà."* |
+| 5 | 😢 💥 **Công Ty Sập** | Độ Độc ≥ 100, và Độ Nổi Tiếng của Siêu Nhân Hồng dưới mức trung bình | Drama quá nhiều, nhân viên nghỉ hàng loạt, Siêu Nhân Hồng bỏ đi, G-Entertainment phá sản. Cảnh cuối: cả công ty cũ ngồi ở Quán Ốc Đêm, và lần đầu tiên… nói chuyện thật lòng với nhau |
+| 6 | 😄 🔒 **Kết thúc bí mật: Biên Tập Viên** | Thu thập đủ 15 tin mật, không tung tin nào ra ngoài trong 10 ngày cuối, động cơ là "Nhiệm vụ bí mật" | Bạn quay ngược lại tố cáo công ty đối thủ đã cài mình vào. Kho tin mật trở thành cuốn sách bán chạy *"30 Ngày Làm Rắn"*. Bạn nghỉ việc, đi ký tặng sách |
 
 ---
 

@@ -1,4 +1,4 @@
-# Danh sách 23 role
+# Danh sách nhân vật
 
 > **Tên mặc định**, **giới tính**, **tuổi** và **vùng miền** đã chốt (bảng bên dưới). Người chơi đổi được tên, còn các thông tin khác của mỗi role là cố định.
 > Giọng thoại: phần lớn nhân vật nói **giọng miền Nam**. Ba người nói **giọng miền Bắc**: Thắng, Nhật, Bình.
@@ -68,7 +68,7 @@
 - 🪑⚔️ **Nhật ✖ Long**: tranh ghế phó giám đốc.
 - 🦁⚔️ **Hương ✖ Nhi**: Chị Đại ghét Thánh Nịnh.
 
-Nhân viên công ty là role 1 đến 21 (người chơi mặc định là nhân viên thứ 21, Rắn Độc tên Hiếu). Siêu Nhân Hồng là khách bên ngoài, Chó Công Ty là… chó.
+**Người chơi chọn 1 trong 22 nhân viên** (role 1 đến 21 và chó Tuất). Mặc định là Rắn Độc Hiếu. **Siêu Nhân Hồng không chơi được**: đó là siêu sao mà cả công ty phải lăng xê, và có kết thúc riêng.
 
 ---
 
@@ -361,7 +361,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
 - **Tính cách:** mới 30 tuổi mà sống như ông cụ 70: uống trà đá cả ngày, nghe radio, 9 giờ tối là ngủ. Vì vậy cả công ty gọi là "Bác". Ít nói, hiền, thấy hết mọi chuyện nhưng không bao giờ nói.
 - **Cách nói:** giọng miền Bắc, chậm rãi, ngắn gọn, thâm thúy. "Ừ…", "Chuyện người ta, bác không biết đâu", "Thế à".
 - **Câu cửa miệng:** *"Bác không thấy gì đâu."*
-- **Bí mật:** là người đồng sáng lập thật sự của công ty. Năm 22 tuổi cùng Thắng mở công ty, rồi nhường hết cho Thắng và lui về làm bảo vệ "cho đỡ mệt". Hoặc không, tùy lần chơi.
+- **Bí mật:** là người duy nhất biết nhà sáng lập Genta giờ đang ở đâu. Thỉnh thoảng có người gửi thư tay cho Bình, ký tên "G".
 - **Quan hệ:** chủ của Chó Công Ty. Bạn nhậu của IT. Bị Dân Đầu Tư nợ tiền.
 - **Ý tưởng truyện:**
   - Đêm trực phát hiện có người vào công ty lén lút.

@@ -139,16 +139,18 @@ Dùng **vừa phải**, tối đa 1 meme mỗi đoạn hội thoại, và hợp 
 
 ## 5. Kết thúc
 
-Mỗi role có **đúng 6 kết thúc**, theo khung:
+Mỗi nhân viên có **đúng 6 kết thúc**: **3 kết thúc có hậu** và **3 kết thúc buồn**.
 
-| Loại | Số lượng | Mô tả |
+| Loại | Số lượng | Ví dụ |
 |---|---|---|
-| Tốt | 1 – 2 | Lên chức, lên lương, hạnh phúc |
-| Xấu | 1 – 2 | Bị đuổi việc, bị lật tẩy, phá sản |
-| Bựa | 1 | Kết thúc vô lý, hài nhất |
-| Bí mật | 1 | Điều kiện khó, cần chơi nhiều lần mới mở được |
+| 😄 Có hậu | 3 | Lên chức, lên lương, tìm được tình yêu, nghỉ việc làm điều mình thích |
+| 😢 Buồn | 3 | Bị đuổi việc, bị lật tẩy, phá sản, mất hết bạn bè |
 
-Mỗi kết thúc cần ghi rõ: **tên**, **điều kiện** (theo chỉ số và sự kiện đã xảy ra), và **cảnh cuối** (1 đoạn ngắn mô tả hình ảnh cuối cùng người chơi thấy).
+Nên có ít nhất một kết thúc **bí mật** (điều kiện khó, phải chơi nhiều lần mới mở được), nằm trong 6 kết thúc trên. Kết thúc có thể bựa, miễn vẫn rõ là có hậu hay buồn.
+
+Mỗi kết thúc cần ghi rõ: **tên**, **loại** (có hậu / buồn), **điều kiện** (theo chỉ số và sự kiện đã xảy ra), và **cảnh cuối** (1 đoạn ngắn mô tả hình ảnh cuối cùng người chơi thấy).
+
+Ngoài kết thúc của nhân vật, mỗi lượt chơi còn có **kết thúc của Siêu Nhân Hồng** (xem [GDD.md](GDD.md), mục 7.3). Khi viết truyện cho một role, nhớ cho role đó **cách góp sức hoặc phá** việc lăng xê Siêu Nhân Hồng theo đúng nghề của họ.
 
 ---
 

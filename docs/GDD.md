@@ -7,7 +7,7 @@ Tài liệu này là "kim chỉ nam" cho cả dự án. Mọi quyết định v�
 
 Các tài liệu liên quan:
 - [Thế giới & bản đồ](world/the-gioi.md)
-- [Danh sách 23 role](roles/README.md)
+- [Danh sách nhân vật](roles/README.md)
 - [Role Rắn Độc (chi tiết)](roles/ran-doc.md)
 - [Hướng dẫn viết truyện](huong-dan-viet-truyen.md)
 
@@ -17,13 +17,15 @@ Các tài liệu liên quan:
 
 **Một câu:** game giả lập đi làm ở một công ty giải trí đầy drama, nơi mỗi câu nói của bạn có thể khiến người khác lên chức, bị đuổi việc, hoặc bị đánh ghen.
 
+**Cốt truyện chung:** công ty **G-Entertainment** được **Genta** thành lập ngày **20/10/2010**. Công ty có **22 nhân viên** và một siêu sao mới nổi là **Siêu Nhân Hồng**. Nhiệm vụ chung của cả công ty là **đưa Siêu Nhân Hồng nổi tiếng trong giới showbiz Việt Nam**. Người chơi nhập vai một trong 22 nhân viên, vừa góp sức (hoặc phá đám) nhiệm vụ chung, vừa khám phá bí ẩn và drama trong công ty.
+
 **Đối tượng:** dân văn phòng Việt Nam, 20 đến 35 tuổi. Đi làm 8 tiếng xong, tối về chơi game "đi làm" tiếp cho vui.
 
 **Giọng điệu:** bựa, troll, châm biếm đời văn phòng Việt Nam. Dùng meme và tiếng lóng mấy năm gần đây. Cười là chính, nhưng thỉnh thoảng có một chút thật lòng để người chơi thấy mình trong đó.
 
 ### Bốn trụ cột
 
-1. **Chuyện nhiều không đếm xuể.** Mỗi lần chơi ra một chuyện khác. Câu chuyện vừa viết tay, vừa tự sinh ra từ việc 23 nhân vật tương tác với nhau.
+1. **Chuyện nhiều không đếm xuể.** Mỗi lần chơi ra một chuyện khác. Câu chuyện vừa viết tay, vừa tự sinh ra từ việc 23 nhân vật (22 nhân viên và Siêu Nhân Hồng) tương tác với nhau.
 2. **Lời nói có hậu quả.** Mọi lựa chọn trong hội thoại đều được ghi nhớ. Tin đồn lan, biến dạng, rồi quay lại cắn người tung ra nó.
 3. **Ai cũng có câu chuyện riêng.** Mỗi role có công việc thật, cách nói chuyện riêng, bí mật riêng và 6 kết thúc riêng.
 4. **Đời thường mà hài.** Đói, khát, hết tiền, kẹt xe, deadline, sếp gọi lúc 11 giờ đêm.
@@ -97,7 +99,7 @@ Các tài liệu liên quan:
 ## 4. Chọn role & đặt tên
 
 1. Màn hình đầu tiên: **chọn ngôn ngữ** (Tiếng Việt / English).
-2. **Chọn role** trong 23 role. Mặc định gợi ý **Rắn Độc**.
+2. **Chọn role** trong **22 nhân viên** (21 người và chó Tuất). Mặc định gợi ý **Rắn Độc**. Siêu Nhân Hồng **không chơi được**: đó là nhân vật mà cả công ty phải lăng xê.
 3. **Đặt tên** cho nhân vật của mình và cho các NPC (không bắt buộc):
    - Mỗi tên tối đa **16 ký tự**, có dấu tiếng Việt.
    - Mỗi role có **tên mặc định** (danh sách bạn sẽ gửi) và **danh sách tên gợi ý** để chọn nhanh.
@@ -179,7 +181,29 @@ Mỗi NPC nhớ: ai từng giúp mình, ai nói xấu mình, ai nợ tiền mìn
 Yêu đương, đánh ghen, nói xấu (cả nói xấu sếp), tranh ghế, lên chức, lên lương, bị đuổi việc, đi trễ, tăng ca, team building, phốt mạng xã hội, showbiz, nợ nần, đầu tư thua lỗ.
 
 ### 7.3. Kết thúc
-- **23 role × 6 kết thúc = 138 kết thúc.**
+**Mỗi lượt chơi kết thúc bằng 2 cái kết:**
+1. **Kết thúc của nhân vật người chơi chọn**: 6 kết thúc cho mỗi nhân viên, gồm **3 kết thúc có hậu và 3 kết thúc buồn**.
+2. **Kết thúc của Siêu Nhân Hồng**: Siêu Nhân Hồng có nổi tiếng hay không, tùy vào việc cả công ty (và người chơi) đã làm gì trong 30 ngày. Có 6 kết thúc, cũng gồm 3 có hậu và 3 buồn.
+
+Hai cái kết độc lập với nhau, nên có những tổ hợp trớ trêu: bạn lên chức nhưng Siêu Nhân Hồng thất bại, hoặc bạn bị đuổi việc nhưng Siêu Nhân Hồng thành siêu sao.
+
+**Tổng: 22 nhân viên × 6 + 6 kết thúc của Siêu Nhân Hồng = 138 kết thúc.**
+
+#### Thanh "Độ Nổi Tiếng" của Siêu Nhân Hồng
+- Là chỉ số chung của cả lượt chơi, hiện trên điện thoại trong game (lượt follow, lượt view, top trending).
+- Mỗi role đóng góp theo nghề của mình: Designer làm poster, Editor dựng MV, Ngân đăng bài, Huyền tìm nhà tài trợ, Hương tổ chức show…
+- Drama trong công ty cũng ảnh hưởng: có drama làm Siêu Nhân Hồng nổi hơn (scandal cũng là PR), có drama làm mọi thứ đổ bể.
+- Các NPC cũng tự góp sức (hoặc phá) theo tính cách và quan hệ của họ.
+
+#### Sáu kết thúc của Siêu Nhân Hồng (bản nháp)
+| Loại | Tên | Tóm tắt |
+|---|---|---|
+| 😄 Có hậu | 🌟 **Siêu Sao Hạng A** | Siêu Nhân Hồng thống trị mọi bảng xếp hạng, G-Entertainment trả hết nợ |
+| 😄 Có hậu | 🤡 **Meme Quốc Dân** | Không ai nhớ bài hát, nhưng cả nước dùng ảnh Siêu Nhân Hồng làm meme. Vẫn nổi, theo kiểu khác |
+| 😄 Có hậu | 💗 **Tháo Mũ** | Siêu Nhân Hồng lộ mặt thật trên sóng truyền hình, và khán giả còn yêu hơn |
+| 😢 Buồn | 📉 **Chìm Nghỉm** | Không ai biết Siêu Nhân Hồng là ai. Bộ đồ hồng được treo trong kho công ty |
+| 😢 Buồn | 🔥 **Bị Tẩy Chay** | Một scandal quá đà, cả mạng xã hội quay lưng |
+| 😢 Buồn | 🏃 **Bị Cướp Mất** | Công ty đối thủ ký hợp đồng với Siêu Nhân Hồng, ngay trước buổi diễn lớn nhất |
 - Mỗi role có kết thúc tốt, xấu, bựa, và ít nhất một **kết thúc bí mật** khó mở.
 - Có **bộ sưu tập kết thúc**: những kết thúc đã mở hiện đầy đủ, chưa mở thì chỉ hiện gợi ý mờ.
 
@@ -221,7 +245,7 @@ Nói thật: game chạy hoàn toàn trên trình duyệt thì **không chặn �
 - **File save có chữ ký kiểm tra**: sửa tay file save (ví dụ tự cộng tiền) thì game phát hiện và báo "file save bị lỗi".
 - **Đây là game một người chơi**: ai hack thì chỉ tự làm mất vui của họ. Nếu sau này có **bảng xếp hạng** thì mới cần máy chủ để kiểm tra.
 
-**Đã chốt: repo để công khai.** Ai vào repo cũng đọc được truyện gốc, kể cả 138 kết thúc. Chấp nhận điều này, coi như game mã nguồn mở. Mã hóa truyện khi build chỉ để người chơi bình thường không lỡ đọc trước kết thúc trong lúc chơi.
+**Đã chốt: repo để công khai.** Ai vào repo cũng đọc được truyện gốc, kể cả toàn bộ các kết thúc. Chấp nhận điều này, coi như game mã nguồn mở. Mã hóa truyện khi build chỉ để người chơi bình thường không lỡ đọc trước kết thúc trong lúc chơi.
 
 ---
 
@@ -237,7 +261,7 @@ Nói thật: game chạy hoàn toàn trên trình duyệt thì **không chặn �
 
 | Giai đoạn | Nội dung |
 |---|---|
-| **0. Thiết kế** (đang làm) | GDD, thế giới, 23 role, hướng dẫn viết truyện |
+| **0. Thiết kế** (đang làm) | GDD, thế giới, 23 nhân vật, hướng dẫn viết truyện |
 | **1. Bản chạy thử** | Văn phòng + nhà trọ, đi lại góc nhìn thứ 3, hội thoại có lựa chọn, 1 ngày làm việc, lưu game |
 | **2. Rắn Độc chơi được** | Tuyến truyện Rắn Độc đầy đủ 30 ngày, hệ thống tin đồn, 6 kết thúc |
 | **3. Thế giới mở rộng** | Siêu thị, quán ăn, rạp phim, quán nhậu, công viên, góc nhìn thứ 1, điện thoại trong game |

@@ -26,7 +26,8 @@ Mục nào xong thì đánh dấu `[x]`.
 
 ## 🏢 Công ty G-Entertainment
 
-- [ ] 🙋 **Lịch sử công ty**: thành lập năm nào, ai sáng lập, khởi nghiệp ra sao.
+- [x] 🙋 **Lịch sử công ty**: Genta thành lập ngày 20/10/2010.
+- [ ] 🙋 **Genta** có xuất hiện trong game không? Giờ Genta đang ở đâu, quan hệ thế nào với Giám Đốc Thắng?
 - [ ] 🙋 **Công ty đang làm gì**: các sản phẩm đang chạy (MV, gameshow, phim, show thực tế). Đặt tên cho vài sản phẩm.
 - [ ] 🙋 **Công ty đối thủ**: tên, ai đứng đầu, đã "giành" gì của G-Entertainment.
 - [ ] 🙋 **Slogan, logo, màu nhận diện** của công ty.
@@ -56,7 +57,7 @@ Mục nào xong thì đánh dấu `[x]`.
 - [ ] 🙋 **Hiếu (Rắn Độc)**: chọn 1 trong 3 động cơ cố định, hay để ngẫu nhiên mỗi lần chơi?
 - [ ] 🙋 **Gia đình**: vợ Giám Đốc, 2 con của Chị Đại, bà ngoại "hay ốm" của Sơn… có xuất hiện trong game không?
 
-### NPC phụ (ngoài 23 role)
+### NPC phụ (ngoài 23 nhân vật chính)
 - [ ] 🤖 Bà chủ trọ Hẻm 69
 - [ ] 🤖 Cô bán cơm tấm
 - [ ] 🤖 Thu ngân cửa hàng tiện lợi (ca đêm)
@@ -71,10 +72,10 @@ Mục nào xong thì đánh dấu `[x]`.
 ## 📖 Câu chuyện
 
 - [ ] 🤖 **Truyện chi tiết 22 role còn lại**, giống file Rắn Độc. Mới xong 1/23.
-- [ ] 🤖 **138 kết thúc**. Mới xong 6/138.
+- [ ] 🤖 **138 kết thúc** (22 nhân viên × 6 + 6 của Siêu Nhân Hồng). Mới xong 6 của Rắn Độc, và bản nháp 6 của Siêu Nhân Hồng.
 - [ ] 🤖 **Lịch sự kiện 30 ngày**: sự kiện chung của công ty theo từng ngày (nhận lương, sinh nhật, team building, ra mắt phim, kiểm tra thuế, mất điện…).
 - [ ] 🤖 **Mở đầu game**: đoạn giới thiệu và ngày đầu tiên có hướng dẫn chơi.
-- [ ] 🙋 **Có cốt truyện lớn chung cho cả công ty không?** Ví dụ "công ty sắp phá sản, Siêu Nhân Hồng là hy vọng cuối cùng" làm xương sống cho mọi role.
+- [x] 🙋 **Cốt truyện chung**: cả công ty phải đưa Siêu Nhân Hồng nổi tiếng. Mỗi lượt chơi có 2 kết thúc: của nhân vật người chơi và của Siêu Nhân Hồng.
 - [ ] 🙋 **Sau ngày 30 thì sao?** Kết thúc hẳn, hay chơi tiếp "mùa 2"?
 
 ---
