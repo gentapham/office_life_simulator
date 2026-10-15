@@ -91,7 +91,7 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 
 ### Chương 2: "Hộp Thư Của Sếp" (5/10 – 13/10)
 - Nhi lọc hộp thư mỗi sáng và đếm: 3 email ngân hàng một tuần, rồi 5, rồi 8. Nhi hiểu vì sao sếp không nhận lương.
-- **9/10:** một người đàn ông mặc vest đứng ở sảnh, ôm một hộp gỗ, nói *"Hàng gửi anh Thắng, từ nước ngoài"*. Nhi tưởng là đại diện của nhà đầu tư, pha trà, mời ngồi ghế sofa, nịnh 10 phút. Hóa ra là **shipper** mặc vest đi đám cưới về. Hộp gỗ là bộ gậy golf sếp đặt online. Tuất sủa ầm (Tuất ghét shipper).
+- **9/10:** một người đàn ông mặc vest đứng ở sảnh, ôm một hộp gỗ, nói *"Hàng gửi anh Thắng, từ nước ngoài"*. Nhi tưởng là đại diện của nhà đầu tư, pha trà, mời ngồi ghế sofa, nịnh 10 phút. Hóa ra là **anh shipper Tèo**, hôm nay mặc vest vì vừa đi đám cưới về. Hộp gỗ là bộ gậy golf sếp đặt online. Tuất sủa ầm (Tuất ghét shipper).
 - **12/10:** lương về trễ. Nhi biết vì sao. Cả phòng hỏi Nhi. Nhi giữ kín, hay nói nhỏ với một người (và cả công ty biết)?
 - **13/10 (Ngày Doanh nhân):** Nhi đọc bài phát biểu khen sếp 15 phút. Minigame đặc biệt. Hương đứng cuối phòng khoanh tay. Chị Đại đếm được 23 lần chữ "tâm".
 
@@ -101,7 +101,7 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 - **16/10:** gameshow ở Đài Tivi Hóng. Nhi xếp chỗ ngồi khách mời: sếp, Long, Nhật, ai được lên hình?
 
 ### Chương 4: "Phòng Đôi Với Chị Đại" (17/10 – 20/10)
-- **17/10:** Tuấn xếp phòng ở Vũng Tàu. Nhi ngủ chung phòng với **Hương**. Không ai dám đổi.
+- **17/10:** Tuấn xếp phòng ở Vũng Tàu. Luật bất thành văn là "Hương không ở với Nhi", nhưng Thương đã cắt ngân sách còn một nửa, thiếu phòng. Nếu Tuấn xếp sai (hoặc cố tình), Nhi ngủ chung phòng với **Hương**. Không ai dám đổi. Nếu không, Nhi gặp Hương ở đêm lửa trại.
 - Đêm đó mất điện khách sạn 10 phút. Hương kể chuyện hồi trẻ làm "chị đại" cả quận. Nhi kể một chuyện thật duy nhất trong tháng: Nhi sợ bị đuổi việc tới mất ngủ. Cơn Giận Chị Đại có thể giảm mạnh, hoặc tăng nếu Nhi nịnh Hương lúc đó.
 - **Đêm lửa trại**, trò "nói thật": có người hỏi *"Nhi, nói thật đi, bà có thấy sếp phát biểu hay không?"*. Cả công ty nín thở.
 - **20/10:** Nhi đi mua quà 20/10 cho 7 chị em thay sếp, trong đó có chính mình. Mua cho mình quà xịn hơn thì bị phát hiện. Tối đó ở Quán Ốc Đêm, sếp say, Nhi có thể ngăn sếp **lỡ hứa tăng lương 20%**, hoặc vỗ tay to nhất.
@@ -155,16 +155,16 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 
 > *(Một người đàn ông mặc vest, ôm hộp gỗ, đứng ở quầy lễ tân. {cho} sủa ầm từ chòi bảo vệ.)*
 >
-> **Người mặc vest:** Ờ… cho hỏi anh Thắng có đây hông? Đồ gửi từ nước ngoài nè.
+> **Người mặc vest:** Ờ… cho hỏi anh Thắng có đây hông? Đồ gửi từ nước ngoài nè, ra lấy giùm em!
 >
 > 1. 🙇 *"Dạ anh ngồi sofa nha anh! Anh dùng trà sen hay trà gừng ạ? Chuyến bay của anh mệt hông anh?"*
->    - Mất 10 phút nịnh. Người đó là **shipper** vừa đi đám cưới về. "Cô ơi ký nhận giùm, tui còn 30 đơn." Điểm Nịnh với sếp +0, cả sảnh cười. Thành tựu "Nịnh Nhầm Người"
+>    - Mất 10 phút nịnh. Người đó là **anh shipper Tèo**, vừa đi đám cưới về. "Chị ơi ký nhận giùm, em còn 30 đơn." Điểm Nịnh với sếp +0, cả sảnh cười. Thành tựu "Nịnh Nhầm Người"
 > 2. 👇 *"Duy! Xuống ký nhận giùm chị."* (Đạp Dưới)
 >    - {thuc_tap_sinh}: "Dạ em xuống liền ạ!". Cơn Giận Chị Đại +10
 > 3. 🧐 *"Anh cho em xem phiếu giao hàng."*
 >    - Đúng là shipper. Nhận gậy golf. Sếp khen "em làm việc chuẩn chỉ". Điểm Nịnh +5
 
-### Mẫu 4: Phòng đôi ở Vũng Tàu (17/10, 23:30)
+### Mẫu 4: Phòng đôi ở Vũng Tàu (17/10, 23:30, nếu Tuấn xếp hai người chung phòng)
 
 > *(Mất điện khách sạn. Trong bóng tối chỉ có tiếng sóng.)*
 >

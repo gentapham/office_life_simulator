@@ -21,14 +21,15 @@ Nhưng Thương không ác. Thương chỉ là người duy nhất trong công t
 - Vấn đề: một nửa quỹ đen là tiền công ty để ngoài sổ. Lộ ra đúng lúc thì Thương là người hùng. Lộ ra sai lúc thì Thương là kẻ biển thủ.
 
 ### Trang 47
-- **Đêm 1/10**, cả công ty đi ăn mừng, Thương ngồi ở nhà đọc hợp đồng Siêu Nhân Hồng từ trang 1. Tới **trang 47, chữ cỡ 6**, Thương phải lấy kính lúp: thất bại thì **hoàn trả gấp đôi, 10 tỷ**.
+- **Sáng 1/10**, nửa tiếng trước giờ ký, Thương lật nhanh bản hợp đồng 52 trang và khựng lại ở **trang 47, chữ cỡ 6**: thất bại thì **hoàn trả gấp đôi, 10 tỷ**. Thương đẩy hợp đồng sang, thì thầm *"Anh đọc giúp em trang 47"*. Thắng ký luôn để kịp chụp ảnh.
+- **Đêm 1/10**, cả công ty đi ăn mừng, Thương ngồi ở nhà đọc lại từ trang 1 bằng kính lúp, hy vọng mình đọc nhầm. Không nhầm.
 - Thắng ký mà không đọc. Thương đọc mà không ngủ được. Từ đêm đó, Độ Mất Ngủ của Thương bắt đầu tăng.
 
-### Sự thật Thương chưa biết: trang 48
-Hợp đồng có **48 trang**, không phải 47. Trang cuối bị **dính chặt vào trang 47 bởi một miếng bánh chuối chiên** (Nguyên vừa ăn vừa ký). Trang 48 là một trang viết tay của Nguyên:
+### Sự thật Thương chưa biết: trang 47b
+Mặt sau trang 47 có **một tờ giấy viết tay không đánh số**, bị **dính chặt vào trang 47 bởi một miếng bánh chuối chiên** (Nguyên vừa ăn vừa ký). Hai tờ dính khít tới mức ai lật cũng tưởng là một. Thương sẽ gọi nó là **trang 47b**:
 > *"Nếu cả công ty đã cố hết sức mà Hồng vẫn không nổi, em không lấy lại đồng nào. Coi như em mua 30 ngày được làm siêu sao. Còn nếu có người cố tình phá, thì giữ nguyên trang 47. Ký tên: Hồng."*
 
-Trang 48 chỉ có chữ ký của Nguyên. **Muốn có hiệu lực, phải có chữ ký của Thắng và một người làm chứng trước 31/10.** Ở mọi lượt chơi khác, trang 48 vẫn dính ở đó, không ai biết.
+Trang 47b chỉ có chữ ký của Nguyên. **Muốn có hiệu lực, phải có chữ ký của Thắng và một người làm chứng trước 31/10.** Ở mọi lượt chơi khác, trang 47b vẫn dính ở đó, không ai biết.
 
 ---
 
@@ -38,7 +39,7 @@ Trang 48 chỉ có chữ ký của Nguyên. **Muốn có hiệu lực, phải c�
 |---|---|---|---|
 | 💰 **Quỹ Công Ty** | Tiền công ty còn trong tài khoản. Ngày 1/10 nhận 5 tỷ, trả nợ lương, lãi ngân hàng và nợ nhà cung cấp xong **còn 2 tỷ** cho cả tháng | Từ chối chi vô lý, mặc cả, nhận tiền tài trợ thật | Duyệt chi chiến dịch, ứng lương, bị lừa bằng hóa đơn giả |
 | 🗄️ **Quỹ Đen** | Tiền trong két sắt sau bức tranh. Bắt đầu 250 triệu, mục tiêu 297 triệu | Cất thêm lương của mình, giữ lại khoản "tiết kiệm được" | Dùng để cứu ai đó, bị phát hiện và phải nộp lại |
-| 😵 **Độ Mất Ngủ** | Thương lo tới đâu (0–100). Bắt đầu ở 30 sau đêm đọc trang 47 | Mốc chiến dịch trượt, kiểm tra thuế, Thắng chi tiền bừa | Ngủ đủ, kể chuyện với Hương, tìm ra trang 48 |
+| 😵 **Độ Mất Ngủ** | Thương lo tới đâu (0–100). Bắt đầu ở 30 sau đêm đọc trang 47 | Mốc chiến dịch trượt, kiểm tra thuế, Thắng chi tiền bừa | Ngủ đủ, kể chuyện với Hương, tìm ra trang 47b |
 | 🧾 **Độ Keo** | Thương chặt chẽ tới đâu (0–100). Keo cao thì Quỹ Công Ty an toàn, nhưng ai cũng ghét và chiến dịch chậm | Từ chối chi, đòi hóa đơn, bắt ký 3 chữ ký | Duyệt chi nhanh, cho ứng lương, mời cả phòng trà sữa |
 
 **Dấu vết quỹ đen:** game đếm số manh mối người khác có được về quỹ đen (sổ ghi tay để quên, Duy đếm ra số lệch, Hiếu nghe lén…). Đủ **3 dấu vết** thì quỹ đen bị lộ, và cách nó lộ quyết định Thương là người hùng hay kẻ biển thủ.
@@ -86,7 +87,7 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 | Từ chối tạm ứng 50 triệu cho "nhà tài trợ" của Huyền | Không đổi, nhưng **chặn được một khoản mất trắng** | Nếu duyệt, 50 triệu biến mất vào một nhà tài trợ không tồn tại |
 | Giữ Độ Keo ≥ 80 cả tháng | **−5.000 mỗi ngày** (việc gì cũng chậm) | Quỹ Công Ty rất an toàn, và rất buồn |
 | Đề xuất chiến dịch "Hồng 0 Đồng": quay lại những lần Nguyên đi giúp người, không tốn tiền | **+60.000** | Cần quan hệ với {sieu_nhan_hong} ≥ 30. Người duy nhất làm được nội dung vừa rẻ vừa thật là người keo nhất |
-| 🔒 Làm cho trang 48 có hiệu lực | Không đổi Độ Nổi Tiếng | **Công ty không phá sản** dù chiến dịch thất bại (chỉ trong kết thúc bí mật của Thương) |
+| 🔒 Làm cho trang 47b có hiệu lực | Không đổi Độ Nổi Tiếng | **Công ty không phá sản** dù chiến dịch thất bại (chỉ trong kết thúc bí mật của Thương) |
 
 ---
 
@@ -95,8 +96,9 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 ### Chương 1: "Trang 47" (1/10 – 4/10)
 - **1/10:** 5 tỷ về tài khoản. Cả công ty ăn mừng bằng trà sữa. Thắng gọi 22 ly. Thương hỏi: *"Hóa đơn đâu anh?"* Cả phòng im lặng. Lựa chọn: duyệt luôn (Độ Keo −10, quan hệ cả công ty +5), hay đòi hóa đơn (Độ Keo +10, Thắng ngượng).
 - Trong ngày, Thương chuyển trả nợ lương 3 tháng, lãi ngân hàng, nợ nhà in. Còn lại 2 tỷ.
-- **Đêm 1/10:** đọc hợp đồng. Trang 47. Kính lúp. Đồng hồ chỉ 2 giờ sáng. Độ Mất Ngủ 30.
-- **2/10:** họp chiến dịch. Thương tìm cách nói với Thắng về trang 47 trong lúc Thắng đang đi ra sân thượng đánh golf. Thắng: *"Em lo xa quá. Anh không ép, tùy em."*
+- Lễ ký: Thương thì thầm *"Anh đọc giúp em trang 47"*. Thắng ký mà không đọc. Lựa chọn: kéo tay áo Thắng lần nữa (Thắng ngượng trước mặt Nguyên, quan hệ −5), hay im lặng.
+- **Đêm 1/10:** đọc lại hợp đồng. Trang 47. Kính lúp. Đồng hồ chỉ 2 giờ sáng. Độ Mất Ngủ 30.
+- **2/10:** họp chiến dịch. Thương tìm cách nói lại với Thắng về trang 47 (lần thứ hai) trong lúc Thắng đang đi ra sân thượng đánh golf. Thắng: *"Em lo xa quá. Anh không ép, tùy em."*
 - **4/10 (chủ nhật):** Thương mở két sau bức tranh, đếm lại quỹ đen. 250 triệu. Thiếu 47 triệu.
 
 ### Chương 2: "Ngày 10 Không Có Lương" (5/10 – 12/10)
@@ -122,7 +124,7 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 ### Chương 5: "Thuế Gõ Cửa" (21/10 – 27/10)
 - **21/10 (Mốc 3, 500.000).**
 - **22/10:** **đoàn kiểm tra thuế**, trưởng đoàn là **chú Liêm** (55 tuổi, kính lão, chưa từng cười). Cả công ty giả vờ làm việc chăm chỉ. Minigame "Thuế Tới Rồi". Duy xin phụ một tay, xếp hồ sơ nhanh như một người từng làm ngân hàng. Nếu chú Liêm hỏi tới "các khoản tiền mặt ngoài sổ", Thương phải chọn: nói thật về quỹ đen, hay lảng.
-- **23/10:** sinh nhật Nguyên. Nguyên ngồi phòng chờ ăn bánh chuối chiên, vừa ăn vừa ký tặng. Thương nhìn tờ giấy dính dầu, chợt nhớ ra: **bản hợp đồng gốc dày hơn 47 trang**. Nếu quan hệ với {sieu_nhan_hong} ≥ 30, mở nhánh "Trang 48".
+- **23/10:** sinh nhật Nguyên. Nguyên ngồi phòng chờ ăn bánh chuối chiên, vừa ăn vừa ký tặng. Thương nhìn tờ giấy dính dầu, chợt nhớ ra: **tờ trang 47 trong bản gốc dày gấp đôi các tờ khác**. Nếu quan hệ với {sieu_nhan_hong} ≥ 30, mở nhánh "Trang 47b".
 - **24/10:** Hương tổ chức "hội nghị hòa giải". Thương bị xếp ngồi cạnh Huyền.
 - **27/10:** LL-Entertainment gửi hợp đồng gấp ba cho Nguyên. Cùng ngày, Lưu Lực gửi cho Thương một email riêng: *"Kế toán trưởng LL-Entertainment, lương gấp đôi. Ở LL, chúng tôi chưa bao giờ trả lương trễ."*
 
@@ -198,9 +200,9 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 > 1. 🧾 *"Anh Nguyên, phòng chờ có bánh là đúng điều khoản số 4 rồi. Hóa đơn bánh tuần này đâu anh?"*
 >    - {sieu_nhan_hong} cười nghiêng ngả. Quan hệ +5. Không có gì khác xảy ra
 > 2. 🔍 *"Hôm ký hợp đồng… anh vừa ăn vừa ký hả?"*
->    - {sieu_nhan_hong}: "Ừa! Dính tùm lum luôn. Mà trang cuối anh viết tay đó, em đọc chưa?" Mở manh mối "Trang 48"
-> 3. 🔒 *"Anh Nguyên, trang 48 anh viết gì? Anh nói thật với em đi."* (Chỉ hiện nếu đã có manh mối "Trang 48" và quan hệ với {sieu_nhan_hong} ≥ 30)
->    - {sieu_nhan_hong} tháo mũ, giọng nhỏ lại: "Ờm… anh sợ mọi người cực vì anh. Nếu không thành thì thôi, anh hông lấy lại tiền. Mà anh quên kêu anh Thắng ký." Mở nhánh bí mật "Trang 48": cần chữ ký Thắng + một người làm chứng trước 31/10. Độ Mất Ngủ −40
+>    - {sieu_nhan_hong}: "Ừa! Dính tùm lum luôn. Mà có một tờ anh viết tay, kẹp sau trang 47 đó, em đọc chưa?" Mở manh mối "Trang 47b"
+> 3. 🔒 *"Anh Nguyên, trang 47b anh viết gì? Anh nói thật với em đi."* (Chỉ hiện nếu đã có manh mối "Trang 47b" và quan hệ với {sieu_nhan_hong} ≥ 30)
+>    - {sieu_nhan_hong} tháo mũ, giọng nhỏ lại: "Ờm… anh sợ mọi người cực vì anh. Nếu không thành thì thôi, anh hông lấy lại tiền. Mà anh quên kêu anh Thắng ký." Mở nhánh bí mật "Trang 47b": cần chữ ký Thắng + một người làm chứng trước 31/10. Độ Mất Ngủ −40
 
 ### Mẫu 6: Email lúc 23:00 (27/10)
 
@@ -223,9 +225,9 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 |---|---|---|---|
 | 1 | 😄 🦸 **Người Hùng Quỹ Đen** | Quỹ đen đạt ≥ 297 triệu, được lộ ra **một cách chủ động** (tự khai với Thắng hoặc chú Liêm), quan hệ với {giam_doc} ≥ 40 | Họp đánh giá 30/10, Thắng đứng trước cả công ty, cầm cuốn sổ tay ghi tay của bạn: *"Mười năm nay, có người lo cho các em hơn cả anh."* Cả phòng quay sang nhìn bạn. Bạn được bổ nhiệm **Giám đốc Tài chính**. Bạn phát biểu đúng một câu: "Lương tháng 11 về đúng ngày 10. Hóa đơn đâu mọi người?" Cả phòng cười tới mức Tuất sủa theo |
 | 2 | 😄 😴 **Sổ Sạch, Ngủ Ngon** | Qua kiểm tra thuế không bị phạt, chiến dịch Siêu Nhân Hồng đạt 1 triệu người theo dõi, Độ Mất Ngủ < 40 vào ngày 31/10 | Đêm Hồng, pháo giấy hồng vừa nổ, 5 tỷ thưởng thêm về tài khoản. Bạn chuyển khoản trả hết nợ ngân hàng ngay trên điện thoại, giữa đám đông đang nhảy. Rồi bạn về nhà số 18, gỡ tờ giấy "trang 47 chữ cỡ 20" khỏi tủ lạnh, tắt điện thoại, và ngủ một mạch 14 tiếng. Sáng ra, có 37 tin nhắn của Thắng. Bạn để "đã xem" |
-| 3 | 😄 🔒 **Kết thúc bí mật: Trang 48** | Đã mở nhánh "Trang 48", lấy được chữ ký của {giam_doc} và một người làm chứng ({chi_dai} hoặc {bac_bao_ve}) trước 31/10, chưa từng duyệt khoản chi nào để phá chiến dịch | Dù Đêm Hồng thành công hay thất bại, công ty vẫn còn. Cảnh cuối: bạn ngồi một mình trong phòng kế toán, lấy khăn ướt lau sạch vết dầu bánh chuối chiên trên trang 48, bỏ vào bìa nhựa, cất vào két. Ngoài cửa sổ, Nguyên đang chọc Tuất, Tuất đang đòi cắn mũ. Bạn ghi vào sổ: *"Khoản thu bất ngờ: một người tốt. Không có hóa đơn."* Và lần đầu tiên, bạn duyệt |
+| 3 | 😄 🔒 **Kết thúc bí mật: Trang 47b** | Đã mở nhánh "Trang 47b", lấy được chữ ký của {giam_doc} và một người làm chứng ({chi_dai} hoặc {bac_bao_ve}) trước 31/10, chưa từng duyệt khoản chi nào để phá chiến dịch | Dù Đêm Hồng thành công hay thất bại, công ty vẫn còn. Cảnh cuối: bạn ngồi một mình trong phòng kế toán, lấy khăn ướt lau sạch vết dầu bánh chuối chiên trên trang 47b, bỏ vào bìa nhựa, cất vào két. Ngoài cửa sổ, Nguyên đang chọc Tuất, Tuất đang đòi cắn mũ. Bạn ghi vào sổ: *"Khoản thu bất ngờ: một người tốt. Không có hóa đơn."* Và lần đầu tiên, bạn duyệt |
 | 4 | 😢 🚨 **Kẻ Biển Thủ** | Đủ 3 dấu vết quỹ đen và quỹ đen bị **người khác** lộ ra (Hiếu tung tin, Duy đếm ra, chú Liêm phát hiện), chưa từng tự khai | Ảnh chụp két sắt sau bức tranh được chiếu lên màn hình phòng họp. Không ai đọc cuốn sổ tay ghi từng đồng. Tuấn mời bạn đi uống trà. Bạn ôm thùng carton toàn hóa đơn đi ra cổng, đi ngang bảng thông báo còn dán tờ "Ai lấy hộp cơm có ghi tên Thương, trả lại". Bác Bình mở cổng, nói nhỏ: "Bác biết cháu không lấy đồng nào." Nhưng bác chỉ nói với mình bạn |
-| 5 | 😢 📉 **Phá Sản** | Chiến dịch thất bại (dưới 1 triệu người theo dõi ngày 31/10), trang 48 chưa có hiệu lực | Ngày 1/11, giấy đòi 10 tỷ tới. Bạn mở két quỹ đen, ngồi cả đêm ở nhà số 18 bỏ từng phong bì: 21 cái, mỗi cái một tháng lương, ghi tên từng người. Cái cuối cùng ghi "Tuất – 60 cây xúc xích". Sáng ra bạn đi phát từng phong bì. Ai cũng cảm ơn. Không ai biết đây là tiền bạn để dành suốt 2 năm. Bạn về, mở email của Lưu Lực, và lần này bạn không đóng nó |
+| 5 | 😢 📉 **Phá Sản** | Chiến dịch thất bại (dưới 1 triệu người theo dõi ngày 31/10), trang 47b chưa có hiệu lực | Ngày 1/11, giấy đòi 10 tỷ tới. Bạn mở két quỹ đen, ngồi cả đêm ở nhà số 18 bỏ từng phong bì: 21 cái, mỗi cái một tháng lương, ghi tên từng người. Cái cuối cùng ghi "Tuất – 60 cây xúc xích". Sáng ra bạn đi phát từng phong bì. Ai cũng cảm ơn. Không ai biết đây là tiền bạn để dành suốt 2 năm. Bạn về, mở email của Lưu Lực, và lần này bạn không đóng nó |
 | 6 | 😢 🏥 **Mất Ngủ Vĩnh Viễn** | Độ Mất Ngủ đạt 100 hai lần trong tháng | Lần thứ hai bạn ngất ở phòng kế toán, ngay ngày 30/10. Bạn tỉnh dậy ở Phòng khám Khỏe Re, đeo dây truyền nước. Trên điện thoại là video Đêm Hồng mà bạn không được đi. Bác sĩ dặn nghỉ 2 tháng, tránh mọi con số. Bạn gật đầu, rồi lén lấy giấy ghi đơn thuốc ra tính xem viện phí có được bảo hiểm trả bao nhiêu phần trăm |
 
 ---
@@ -236,8 +238,8 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 |---|---|
 | 🧾 **Hóa Đơn Đâu Em?** | Nói câu này 50 lần trong một lượt chơi |
 | 🧻 **Giấy Ăn Không Phải Hóa Đơn** | Bắt được 10 hóa đơn giả của Huyền |
-| 🔍 **Chữ Cỡ 6** | Đọc trang 47 trước khi chương 1 kết thúc |
-| 🍌 **Dính Như Bánh Chuối** | Tìm ra trang 48 |
+| 🔍 **Chữ Cỡ 6** | Khiến Thắng tự tay đọc trang 47 trước 4/10 |
+| 🍌 **Dính Như Bánh Chuối** | Tìm ra trang 47b |
 | 🖊️ **Ba Chữ Ký Cho Một Cây Bút** | Hoàn thành minigame "Ba Chữ Ký" trong vòng 10 phút |
 | 🛒 **Khéo Mua** | Mặc cả thành công với cả 5 cô bán hàng ở chợ Phố Cũ |
 | 💤 **Một Đêm Không Mơ Tới Con Số** | Kết thúc một ngày với Độ Mất Ngủ bằng 0 |

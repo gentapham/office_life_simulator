@@ -90,7 +90,7 @@ Duy là "chân tay" của chiến dịch: việc nhỏ, nhưng không có ai là
 
 ### Chương 1: "Dạ Em Mới Vô" (1/10 – 4/10)
 - **1/10:** máy pha cà phê hỏng (Ngày Cà phê Quốc tế). Vũ nhờ Duy ra quán mua 22 ly. Duy không đủ tiền mặt, thẻ thì là thẻ kim cương. Lựa chọn đầu tiên của game: quẹt thẻ (Độ Lộ +15), chạy về Hẻm 69 lấy tiền mặt (trễ lễ ký hợp đồng), hay gom tiền từng người (bị nói "thực tập sinh gì mà đi đòi tiền").
-- Cảnh ký hợp đồng: 5 tỷ về tài khoản. Duy nhìn tờ hợp đồng từ xa và theo phản xạ nghề nghiệp, nghĩ: *"Hợp đồng 47 trang mà ký trong 30 giây, ai cho vay mà dám vậy."*
+- Cảnh ký hợp đồng: 5 tỷ về tài khoản. Duy nhìn tờ hợp đồng từ xa và theo phản xạ nghề nghiệp, nghĩ: *"Hợp đồng 52 trang mà ký trong 30 giây, ai cho vay mà dám vậy."*
 - **2/10:** Ngày Nụ cười. Tuấn bắt cười khi chấm công. Duy cười chuẩn tới mức Tuấn khen "nụ cười chuyên nghiệp ghê", và Duy suýt nói "dạ hồi trước em tiếp khách VIP".
 - **4/10:** Ngày Động vật. Minigame tắm cho Tuất. Tuất được Duy tắm thì ngoan, rồi thấy Nguyên đi tới là vùng ra, cả hai cùng ướt.
 

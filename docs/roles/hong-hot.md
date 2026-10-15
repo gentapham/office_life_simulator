@@ -23,7 +23,7 @@ Ngân có hai bí mật lớn:
 3. **Hóng cho bằng hết.** Tháng 10 là tháng nhiều drama nhất lịch sử công ty, và Ngân không muốn bỏ lỡ tập nào.
 
 ### Sự thật Ngân chưa biết
-- Thành viên **"Mèo Mập Văn Phòng"** trong group Hội Anti Sếp, cái tài khoản lúc nào cũng thả haha mà chưa từng chửi sếp câu nào, **chính là Thắng**.
+- Thành viên **"Hoa Hướng Dương 1989"** trong group Hội Anti Sếp, cái tài khoản lúc nào cũng thả haha mà chưa từng chửi sếp câu nào, **chính là Thắng**.
 - Hiếu, ông hàng xóm dễ thương sát vách, mỗi đêm ghi chép chuyện của từng đồng nghiệp vào một cuốn sổ. Mà nguồn tin nhiều nhất trong cuốn sổ đó là **Ngân**.
 
 ---
@@ -51,7 +51,7 @@ Ngân có hai bí mật lớn:
 | 🎬 **Đu Trend** | Bắt trend Tóp-tóp đang lên và quay ngay với Siêu Nhân Hồng | Trend có thể đã lỗi thời. Đu trend cũ thì bị cười |
 | 🔴 **Livestream** | Lên sóng trực tiếp ở bất cứ đâu | Không cắt được những gì camera thấy. Mọi bí mật trong khung hình đều lên sóng |
 | 🧱 **Áp Tai Vào Tường** | Ở nhà, nghe xuyên tường phòng Hiếu | Hiếu cũng có thể làm vậy với Ngân |
-| 🫣 **Đổ Cho Clone** | Khi bị nghi là admin, hướng sự nghi ngờ sang "Mèo Mập Văn Phòng" | Nếu Mèo Mập là sếp thật thì… thôi rồi |
+| 🫣 **Đổ Cho Clone** | Khi bị nghi là admin, hướng sự nghi ngờ sang "Hoa Hướng Dương 1989" | Nếu Hoa Hướng Dương là sếp thật thì… thôi rồi |
 
 ---
 
@@ -65,7 +65,7 @@ Lương tháng của Ngân: **13.000.000đ** (khoảng 590.000đ mỗi ngày là
 | 🎵 **Đu Trend Tóp-tóp** | Quay Siêu Nhân Hồng nhảy theo nhịp: bấm đúng lúc để giữ khung hình đẹp. Thỉnh thoảng Tuất lao vào khung hình: né hay giữ lại? | 200.000đ + 1 bịch khô gà (+No). Giữ cảnh Tuất cắn mũ: view x2, nhưng Nguyên dỗi nửa ngày |
 | 💬 **Trực Comment** | Bình luận trôi lên liên tục. Xóa bình luận độc hại và tài khoản ảo của LL (avatar xanh lá chuối), trả lời fan bằng câu dễ thương. Bấm nhầm xóa fan thật thì mất điểm | 100.000đ + 1 lon nước tăng lực. Dọn sạch 50 bình luận LL: Tương Tác +10 |
 | 🔴 **Livestream** | Điều phối một buổi phát trực tiếp: chọn góc máy, đọc bình luận cho Nguyên trả lời, cảnh giác những thứ không được lên hình (giấy tờ, bảng trắng, người đang khóc) | Quà livestream quy đổi 300.000đ + 1 hộp quà fan gửi (gấu bông hồng, bánh, thiệp). Người theo dõi +30.000 nếu suôn sẻ |
-| 📮 **Duyệt Confession** | Buổi tối ở nhà. 10 bài gửi tới, chọn đăng hay bỏ, có sửa tên cho đỡ lộ hay không | Kho Tin Mật +1 mỗi bài đọc. Có bạn đọc "mời admin ly cà phê" 50.000đ qua ví điện tử. Đăng bài cay: Độ Lộ Admin +5 |
+| 📮 **Duyệt Confession** | Ban đêm, thường khoảng 23 giờ, trên máy "NGAN-LAPTOP". 10 bài gửi tới, chọn đăng hay bỏ, có sửa tên cho đỡ lộ hay không | Kho Tin Mật +1 mỗi bài đọc. Có bạn đọc "mời admin ly cà phê" 50.000đ qua ví điện tử. Đăng bài cay: Độ Lộ Admin +5 |
 | 📊 **Báo Cáo Số Liệu** | Thứ 6, ngồi với Chương đối chiếu số liệu fanpage. Chương hay "làm tròn" con số theo hướng có lợi; Ngân phải bắt lỗi | 100.000đ + 1 ổ bánh mì (Chương hứa trả tiền, chưa trả). Bắt đủ 3 lỗi: Uy tín +5 |
 
 ---
@@ -93,11 +93,11 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 - **4/10 (Ngày Động vật):** Tuất bị mặc áo, đội nơ. Nguyên tới chọc. Ngân quay được cảnh Tuất giật đứt dây nơ rồi đuổi Nguyên quanh sân. Đăng hay không đăng?
 
 ### Chương 2: "Hội Anti Sếp" (5/10 – 12/10)
-- Ngân mời Hiếu vào group "Hội Anti Sếp". Mỗi tối group có 200 tin nhắn. Ngân để ý **"Mèo Mập Văn Phòng"**: vào group từ tháng 6, chưa từng chửi sếp, chỉ thả haha, và luôn online đúng 22:01, một phút sau khi sếp nhắn group công ty.
+- Ngân mời Hiếu vào group "Hội Anti Sếp". Mỗi tối group có 200 tin nhắn. Ngân để ý **"Hoa Hướng Dương 1989"**: vào group từ tháng 6, chưa từng chửi sếp, chỉ thả haha, và luôn online đúng 22:01, một phút sau khi sếp nhắn group công ty.
 - **7/10 (Mốc 1):** 50.000 người theo dõi. Ngân là người đầu tiên biết đạt hay không, và có thể "làm đẹp" con số trong báo cáo gửi sếp (Chương sẽ giúp, với giá 1 ly cà phê).
 - **9/10:** MV ra mắt. Cùng giờ đó, LL tung MV của nghệ sĩ bên họ. Cuộc chiến giờ vàng.
 - **11/10:** Ngân phát động trend "ảnh hồi nhỏ" trên fanpage. Nguyên gửi ảnh hồi nhỏ ở một xóm có cây me. Ngân đăng lên, và nghe thấy tiếng Hiếu đập bàn ở phòng bên.
-- **12/10:** lương về trễ. Trang Confession nhận 47 bài trong một buổi sáng. Đăng bài nào? Đăng bao nhiêu? Sếp có đọc trang này không?
+- **12/10:** lương về trễ. Trang Confession nhận 47 bài trong một buổi sáng. Đăng bài nào? Đăng bao nhiêu? Nếu Ngân đăng bài "Lương về trễ, sếp đi đánh golf", Thắng lặng lẽ nhờ Bảo kiểm tra log. Bảo thấy tên máy "NGAN-LAPTOP", và có thể giữ kín hoặc không (xem tuyến của Bảo).
 
 ### Chương 3: "Pin 3%" (13/10 – 16/10)
 - **14/10 (Mốc 2):** chưa đủ 200.000 thì Nguyên buồn, bỏ đi giúp người cả ngày. Ngân phải đi theo quay, biến chuyện buồn thành nội dung: *"Một ngày Siêu Nhân Hồng không cần ai thấy."*
@@ -141,18 +141,18 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 > 3. 🧐 *"Mà sao phòng ông sạch dữ vậy? Đáng nghi à nha."*
 >    - {ran_doc} cười gượng. Kho Tin Mật +1: "Hiếu có một cuốn sổ"
 
-### Mẫu 2: Con mèo đáng ngờ (chương 2)
+### Mẫu 2: Bông hoa đáng ngờ (chương 2)
 
-> *(Group "Hội Anti Sếp", 22:01. "Mèo Mập Văn Phòng" vừa online, thả haha vào ảnh chế sếp.)*
+> *(Group "Hội Anti Sếp", 22:01. "Hoa Hướng Dương 1989" vừa online, thả haha vào ảnh chế sếp.)*
 >
-> **{designer}:** Bà ơi, con mèo này là ai vậy? Vô group 4 tháng chưa chửi sếp câu nào. Red flag nha.
+> **{designer}:** Bà ơi, bông hoa này là ai vậy? Vô group 4 tháng chưa chửi sếp câu nào. Red flag nha.
 >
 > 1. 🫣 *"Chắc người mới, nhát. Kệ đi bà."*
->    - Không có gì xảy ra. Mèo Mập tiếp tục đọc hết
-> 2. 🔍 *Nhắn riêng cho Mèo Mập: "Ê bạn là ai vậy? Group này phải xác minh danh tính nha."*
->    - Mèo Mập trả lời sau 4 phút: "Mình là… nhân viên mới ạ. Mình thích mèo." Kho Tin Mật +1: "Mèo Mập trả lời bằng chữ ạ"
-> 3. 🔒 *Nhắn {it}: "Anh Bảo, coi giùm em con mèo này đăng nhập từ máy nào."* (Chỉ hiện nếu quan hệ với {it} ≥ 40)
->    - {it}: "Lỗi người dùng." Rồi 1 phút sau: "Máy phòng tầng 2. Vách kính." Ngân làm rơi điện thoại. Mở nhánh "Mèo Mập Là Ai"
+>    - Không có gì xảy ra. Hoa Hướng Dương tiếp tục đọc hết
+> 2. 🔍 *Nhắn riêng cho Hoa Hướng Dương: "Ê bạn là ai vậy? Group này phải xác minh danh tính nha."*
+>    - Hoa Hướng Dương trả lời sau 4 phút: "Mình là… nhân viên mới ạ. Mình thích hoa hướng dương." Kho Tin Mật +1: "Hoa Hướng Dương trả lời bằng chữ ạ"
+> 3. 🔒 *Nhắn {it}: "Anh Bảo, coi giùm em cái tài khoản hoa này đăng nhập từ máy nào."* (Chỉ hiện nếu quan hệ với {it} ≥ 40)
+>    - {it}: "Lỗi người dùng." Rồi 1 phút sau: "Máy phòng tầng 2. Vách kính." Ngân làm rơi điện thoại. Mở nhánh "Hoa Hướng Dương Là Ai"
 
 ### Mẫu 3: Trang 47 (15/10, mất điện, pantry)
 
@@ -187,7 +187,7 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 >
 > 1. 😇 *"Dạ em đâu biết đâu anh. Em lo fanpage công ty còn hông kịp."*
 >    - 🎲 Giả nai: thành công nếu Độ Lộ Admin < 50
-> 2. 🫣 *"Em nghi cái tài khoản Mèo Mập Văn Phòng trong… à, trong một group em biết."* (Đổ Cho Clone)
+> 2. 🫣 *"Em nghi cái tài khoản Hoa Hướng Dương 1989 trong… à, trong một group em biết."* (Đổ Cho Clone)
 >    - {hr} ghi lại. Ba ngày sau, {hr} được sếp gọi lên dặn "thôi, không cần tìm nữa". Độ Lộ Admin −20. {hr} bắt đầu tò mò
 > 3. 🙋 *"Là em đó anh. Mà bài bóc phốt sếp hông phải em viết. Có người gửi vô."*
 >    - Độ Lộ Admin = 100 với riêng {hr}. {hr} im lặng: "…Vậy ai gửi?" Mở nhánh "Người đọc email sếp"
@@ -215,7 +215,7 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 |---|---|---|---|
 | 1 | 😄 📈 **Trưởng Nhóm Mạng Xã Hội** | Siêu Nhân Hồng đạt 1 triệu người theo dõi, phần đóng góp của Ngân ≥ 300.000, Độ Lộ Admin < 60 | Ngày 30/10, Ngân được đề bạt trưởng nhóm, có hai nhân viên mới dưới quyền. Đêm 31/10, con số nhảy qua 1.000.000. Ngân đăng bài đầu tiên với chức danh mới, chỉ ba chữ: *"Nghe gì chưa?"*. Lần đầu tiên trong đời, tin nóng nhất Ngân kể là tin ai cũng được phép biết |
 | 2 | 😄 🤐 **Cái Miệng Vàng** | Độ Kín Miệng ≥ 80 vào 30/10, đã giữ kín ít nhất 3 tin cấp cao (trang 47, khoản nợ của sếp, chuyện "Hiếu Ếch" hoặc chuyện Nhi phỏng vấn ở LL) | Một tháng sau, bàn của Ngân có thêm một chiếc ghế. Người trong công ty lần lượt tới ngồi, kể chuyện, khóc, cười. Ngân úp ba cái điện thoại xuống bàn, chỉ nghe. Trên màn hình khóa của Ngân là dòng chữ: *"Hóng để hiểu, không phải để kể."* |
-| 3 | 😄 🔒 **Kết thúc bí mật: Confession Cuối Cùng** | Kho Tin Mật ≥ 25, không đăng confession nào làm tổn thương đồng nghiệp trong 10 ngày cuối, quan hệ với Bảo ≥ 50, đã mở nhánh "Mèo Mập Là Ai" | Giữa Đêm Hồng, trang Confession đăng bài cuối cùng, ký tên thật: *"Admin là Ngân. Đây là những điều tốt đẹp nhất mà các bạn từng gửi cho trang này."* Bài viết lên top 1 xu hướng, kéo theo Siêu Nhân Hồng. Dưới khán đài, Thắng đọc tới dòng cuối thì đỏ mắt. Bảo đứng cạnh, gật đầu đúng một lần |
+| 3 | 😄 🔒 **Kết thúc bí mật: Confession Cuối Cùng** | Kho Tin Mật ≥ 25, không đăng confession nào làm tổn thương đồng nghiệp trong 10 ngày cuối, quan hệ với Bảo ≥ 50, đã mở nhánh "Hoa Hướng Dương Là Ai" | Giữa Đêm Hồng, trang Confession đăng bài cuối cùng, ký tên thật: *"Admin là Ngân. Đây là những điều tốt đẹp nhất mà các bạn từng gửi cho trang này."* Bài viết lên top 1 xu hướng, kéo theo Siêu Nhân Hồng. Dưới khán đài, Thắng đọc tới dòng cuối thì đỏ mắt. Bảo đứng cạnh, gật đầu đúng một lần |
 | 4 | 😢 🕶️ **Lộ Mặt Admin** | Độ Lộ Admin đạt 100 (có thể xảy ra bất cứ lúc nào) | Màn hình phòng họp chiếu ảnh chụp trang quản trị Confession, góc trên ghi tên tài khoản của Ngân. Trưa đó ở pantry, mọi người dịch ghế ra xa Ngân một chút. Chỉ có Quỳnh vẫn ngồi cạnh, nhưng không nói gì. Về Hẻm 69, Ngân áp tai vào tường, phòng bên im lặng |
 | 5 | 😢 🔴 **Lỡ Tay Bấm Live** | Livestream nhầm một cuộc họp nội bộ có chữ "nợ" hoặc "trang 47" (22/10, 20/10 hoặc 30/10) | 12.000 người đang xem Thắng nói trong phòng họp: *"…nếu thất bại thì mình nợ mười tỷ…"*. Ngân nhìn thấy chấm đỏ 🔴 ở góc màn hình. Bấm dừng thì đã muộn 3 phút. *"Ối dồi ôi."* Sáng hôm sau, Tuấn mời Ngân đi uống trà |
 | 6 | 😢 🎭 **Nhân Vật Chính** | Độ Kín Miệng < 20 vào 30/10 và có một tin đồn về chính Ngân lan tới ít nhất 15 người | Lần đầu tiên, tin nóng nhất công ty là tin về Ngân. Ai cũng biết, ai cũng kể, không ai kể với Ngân. Đêm 31/10, Ngân ngồi một mình trong phòng trọ đầy đèn LED. Qua bức tường mỏng, Ngân nghe giọng ai đó ở phòng bên: *"Nghe gì chưa?"* |
@@ -229,7 +229,7 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 | 📡 **Trạm Phát Sóng Hẻm 69** | Một tin Ngân kể lan tới cả 22 nhân vật |
 | 🔋 **Ông Trùm Pin Dự Phòng** | Đổi pin lấy 6 tin mật trong ngày mất điện 15/10 |
 | 🐕 **Idol Bốn Chân** | Clip có Tuất đạt nhiều view hơn mọi clip của Siêu Nhân Hồng |
-| 🐱 **Mèo Mập Là Ai** | Phát hiện danh tính thật của "Mèo Mập Văn Phòng" |
+| 🌻 **Hoa Hướng Dương Là Ai** | Phát hiện danh tính thật của "Hoa Hướng Dương 1989" |
 | 🤐 **Ba Ngày Nín Thở** | Giữ một tin cấp cao quá 3 ngày |
 | 🔴 **Live Không Nhầm** | Livestream 10 lần mà không lộ một bí mật nào |
 | 📶 **Trạm Phát 4G** | Phát wifi cho cả công ty trong ngày 29/10 |
