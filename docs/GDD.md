@@ -50,8 +50,12 @@ Các tài liệu liên quan:
 ### Góc nhìn camera
 - **Góc nhìn thứ 3** (mặc định): camera sau lưng nhân vật.
 - **Góc nhìn thứ 1**: nhìn qua mắt nhân vật. Hợp để nghe lén, núp, hóng chuyện.
+  - **Thấy 2 tay** của nhân vật ở góc dưới màn hình. Đi thì tay đung đưa theo bước chân, đứng yên thì tay thả lỏng.
+  - **Tay tương tác với đồ vật**: cầm ly cà phê, gõ bàn phím, bấm điện thoại, mở cửa, đưa quà, xoa đầu chó Tuất (hoặc rụt tay lại khi Tuất gầm gừ).
+  - Mỗi nhân vật có **tay riêng**: tay áo đúng trang phục, phụ kiện riêng (đồng hồ của Thắng, găng tay hồng của Siêu Nhân Hồng, chân trước của Tuất khi chơi role chó).
 - **Bản đồ isometric**: nhìn chéo từ trên xuống toàn khu vực, dùng làm bản đồ lớn.
 - Đổi góc nhìn bằng phím `V`. Trên điện thoại có nút riêng.
+- **Hội thoại hiển thị giống nhau ở cả 2 góc nhìn**: khung thoại, tên người nói, các lựa chọn trả lời và bong bóng chữ trên đầu NPC đều đầy đủ như nhau. Đổi góc nhìn giữa chừng cuộc hội thoại cũng được.
 
 ### Điều khiển
 | Hành động | Máy tính | Điện thoại |
