@@ -17,7 +17,7 @@ giam_doc: {ran_doc} à. Vào đây. Em làm truyền thông nội bộ, em thấ
         giam_doc: *(nuốt nước bọt)* Em… dập được à? Em giỏi đấy. Anh không ép, nhưng có gì báo anh trước nhé.
         ~ qh("giam_doc", 5)
         ~ rd_tin_mat()
-    * * -> ran_doc_tudo_het_chuyen
+    + + -> ran_doc_tudo_het_chuyen
 * [🧂 "Dạ có vài người than lương trễ, mà em nghĩ chắc tại ngân hàng."]
     giam_doc: Đúng! Tại ngân hàng! Em hiểu vấn đề. Em check lại cái mindset cho mọi người giúp anh.
     ~ qh("giam_doc", 3)
@@ -29,7 +29,7 @@ giam_doc: {ran_doc} à. Vào đây. Em làm truyền thông nội bộ, em thấ
     ~ rd_nghi(5)
     ~ qh("giam_doc", -10)
     ~ uy_tin = uy_tin + 10
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -49,7 +49,7 @@ truong_phong: {ran_doc}! Đúng lúc. Mình sync nhanh 5 phút về bản tin nh
     truong_phong: Không, cái bát là cái bát. Cái tô là cái tô to hơn. Ở đây các cậu gọi lẫn lộn hết.
     truong_phong: Mà sao em hỏi? Thôi, cái này mình take note, họp sau nhé.
     ~ qh("truong_phong", 3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -62,7 +62,7 @@ thanh_ninh: Ủa {ran_doc}. Chị nói em nghe nè, muốn gặp sếp thì ph�
 * [🙇 "Dạ chị nói chuẩn quá chị ơi."]
     thanh_ninh: *(nheo mắt)* Ủa… câu đó của chị mà. Em đang nịnh chị hả? Được. Chị thích.
     ~ qh("thanh_ninh", 8)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - thanh_ninh: Mà em làm truyền thông nội bộ, đừng có viết gì làm sếp buồn nha. Sếp buồn là chị buồn.
 * [🐍 "Dạ. Mà chị ơi, sảnh LL-Entertainment có máy lạnh mát hông chị?"]
     thanh_ninh: *(mặt trắng bệch)* Em… em nói gì chị không hiểu.
@@ -72,7 +72,7 @@ thanh_ninh: Ủa {ran_doc}. Chị nói em nghe nè, muốn gặp sếp thì ph�
 * [😇 "Dạ em biết rồi. Có gì chị chỉ em thêm."]
     thanh_ninh: Ngoan. Có gì hay thì kể chị trước nha.
     ~ qh("thanh_ninh", 5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -91,7 +91,7 @@ hong_hot: Ê ê, nghe gì chưa? Ối dồi ôi hôm nay có chuyện này hay l
 * [😇 "Thôi tui không hóng nữa, mệt."]
     hong_hot: Ủa alo? Ông bị gì vậy? Ông bệnh hả? Uống thuốc chưa?
     ~ rd_tin(3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - hong_hot: Mà phòng mình sát vách đó, tối nay đừng có hát karaoke như chú Sáu nha.
 * [🤝 "Bà livestream nhỏ nhỏ thôi là được."]
     hong_hot: Hông hứa. Mà dễ thương ha. Hàng xóm tốt.
@@ -100,7 +100,7 @@ hong_hot: Ê ê, nghe gì chưa? Ối dồi ôi hôm nay có chuyện này hay l
     hong_hot: *(đứng hình)* …Nghe tới đoạn nào?
     ~ rd_tin_mat()
     ~ qh("hong_hot", -5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -115,7 +115,7 @@ con_ong_chau_cha: Ê {ran_doc}. Ngồi đi. Ly này 85 nghìn, để tui bao. Ch
     con_ong_chau_cha: *(cười mà không vui)* Ai cũng nói vậy. Để anh gọi chú anh… à mà thôi, gọi làm gì.
     ~ qh("con_ong_chau_cha", -5)
     ~ rd_tin_mat()
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - con_ong_chau_cha: Ông thấy cái điệp khúc này sao? *(ngân nga)* "Hồng là thái độ… không phải là màu…"
 * [🤝 "Hay đó. Ông tự viết hả? Sao không đưa cho Siêu Nhân Hồng hát?"]
     con_ong_chau_cha: Suỵt! Đừng nói ai. Tui… tui chưa dám. Ông là người đầu tiên nghe đó.
@@ -124,7 +124,7 @@ con_ong_chau_cha: Ê {ran_doc}. Ngồi đi. Ly này 85 nghìn, để tui bao. Ch
 * [🐍 "Nghe giống bài quảng cáo bột giặt."]
     con_ong_chau_cha: *(im lặng, cất điện thoại)* Ờ. Chắc vậy.
     ~ qh("con_ong_chau_cha", -10)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -139,7 +139,7 @@ chua_te_deadline: Gì đó ông? Còn sớm mà. Chill, kịp hết.
     chua_te_deadline: *(ngừng lướt)* …Ai nói ông vậy?
     ~ rd_tin_mat()
     ~ qh("chua_te_deadline", -5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - chua_te_deadline: Mà nè, cái ông Siêu Nhân Hồng cứ tặng tui đồ hồng hoài. Chiêu PR ha? Mà PR với tui làm chi, tui có phải KOL đâu.
 * [🐍 "Chắc là PR đó. Ổng tặng ai cũng vậy hết."]
     chua_te_deadline: Ờ. Biết mà. *(lướt tiếp, mà lướt chậm hơn)*
@@ -151,7 +151,7 @@ chua_te_deadline: Gì đó ông? Còn sớm mà. Chill, kịp hết.
     ~ qh("chua_te_deadline", 5)
 * [😶 Nhún vai.]
     chua_te_deadline: Ờ. Kệ. Còn sớm mà.
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -171,7 +171,7 @@ thuc_tap_sinh: Dạ anh {ran_doc} ơi, em mới vô nên chưa biết. Anh {truo
     ~ rd_tai_mat_duy = true
     ~ rd_tin_mat()
     _Nếu chuyện này lộ ra, {chi_dai} sẽ không tha cho bạn._
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - thuc_tap_sinh: Dạ mà anh ơi, 6-7 nghĩa là gì vậy ạ? Mấy bạn trẻ nói hoài mà em không hiểu.
 * [😇 "Không nghĩa gì hết. Nói cho vui thôi."]
     thuc_tap_sinh: Dạ… 6-7! *(cười rất tự hào)*
@@ -179,7 +179,7 @@ thuc_tap_sinh: Dạ anh {ran_doc} ơi, em mới vô nên chưa biết. Anh {truo
     thuc_tap_sinh: Dạ em đi liền ạ!
     ~ rd_tung_tin(3, 2)
     _5 phút sau, {hr} được một thực tập sinh 30 tuổi nhìn vào mắt nói "6-7". Nụ cười của {hr} lần đầu tiên bị lệch._
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -192,7 +192,7 @@ ke_toan: Gì đó em? Hóa đơn đâu em?
 * [💬 "Chị ơi, cho em ứng trước ít lương."]
     ke_toan: Không có hóa đơn là không có tiền. Mà lương thì không có hóa đơn. Em hiểu ý chị không?
     ~ cang_thang(3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - ke_toan: Em làm truyền thông thì nhắc mọi người giùm chị: bảo hiểm có theo luật, đừng hỏi chị nữa.
 * {biet(trang_47)} [🔒 "Chị ơi, trang 47… chị định làm gì?"]
     ke_toan: *(đặt bút xuống)* Em biết bao nhiêu?
@@ -207,7 +207,7 @@ ke_toan: Gì đó em? Hóa đơn đâu em?
     ~ qh("sales", -3)
 * [😇 "Dạ em nhắc liền."]
     ~ qh("ke_toan", 3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -225,7 +225,7 @@ _Phòng HR. Kệ trà 40 loại, xếp theo bảng chữ cái. {hr} rót trà, c
         hr: Có vài câu chuyện… tên em xuất hiện hơi nhiều.
         ~ cang_thang(10)
     }
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - hr: Mà nè. Nếu em nghe ai nói về một "danh sách", em báo anh trước nha.
 * [🐍 "Danh sách gì anh? Có tên em hông?"]
     hr: *(cười rộng hơn)* Em hỏi khéo đó. Uống trà đi em.
@@ -238,7 +238,7 @@ _Phòng HR. Kệ trà 40 loại, xếp theo bảng chữ cái. {hr} rót trà, c
     hr: *(im lặng rất lâu)* …Không. Không vui chút nào.
     ~ qh("hr", 10)
     ~ rd_tin_mat()
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -252,11 +252,11 @@ it: Chuyện gì.
     * * [😶 "Dạ… chưa."]
         it: Lỗi người dùng.
         ~ cang_thang(3)
-    * * -> ran_doc_tudo_het_chuyen
+    + + -> ran_doc_tudo_het_chuyen
 * [🍜 Đưa một ly mì ly.]
     it: …Cảm ơn.
     ~ qh("it", 8)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - it: Mà. Log máy anh có vài cái lạ. Giờ lạ, chỗ lạ.
 * [😇 "Anh thấy gì cứ nói em, em sửa."]
     it: Không sửa được. Chỉ đừng làm thêm. *(quay lại màn hình)*
@@ -266,7 +266,7 @@ it: Chuyện gì.
     it: Biết. Không nói. Như anh vậy. Tôi cũng không nói về anh.
     ~ rd_tin_mat()
     ~ rd_nghi(5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -282,7 +282,7 @@ idol_het_thoi: Em là ai? À, nhân viên mới. Em biết anh là ai không?
     ~ rd_tung_tin(12, 8)
     ~ qh("idol_het_thoi", -5)
     _{idol_het_thoi} và {sieu_nhan_hong} đối đầu. Nhưng {quan_ly_idol} sẽ truy ra ai là nguồn tin._
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - idol_het_thoi: Hồi anh còn nổi, fan anh đông lắm. Giờ… cũng còn đông. 80.000 người theo dõi lận.
 * {biet(fan_ao_phat)} [🔒 "80.000 nick đó comment giống nhau quá anh."]
     idol_het_thoi: *(mặt tái)* Em… em muốn gì?
@@ -291,7 +291,7 @@ idol_het_thoi: Em là ai? À, nhân viên mới. Em biết anh là ai không?
 * [😇 "Một fan thật bằng mấy chục nghìn fan ảo đó anh."]
     idol_het_thoi: …Em nói gì vậy. *(đeo kính lại, mà tay hơi run)*
     ~ qh("idol_het_thoi", 5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -306,7 +306,7 @@ quan_ly_idol: Rồi. Em cần gì?
 * [🤝 "Anh uống cà phê không, em mua giùm."]
     quan_ly_idol: Em là thiên thần. Đen đá, không đường. Ly thứ năm.
     ~ qh("quan_ly_idol", 8)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - quan_ly_idol: Mà nè. Gần đây có tin đồn lạ về {idol_het_thoi}. Em làm truyền thông nội bộ, em có nghe gì không?
 * [😇 "Dạ em không nghe gì. Có gì em báo anh liền."]
     quan_ly_idol: Cảm ơn em. Nó… nó dễ tổn thương lắm. Đừng để ai làm nó buồn.
@@ -316,7 +316,7 @@ quan_ly_idol: Rồi. Em cần gì?
     quan_ly_idol: *(hai điện thoại cùng reo, anh không bắt máy)* Ai nói em?
     ~ rd_tung_tin(8, 8)
     ~ qh("quan_ly_idol", -10)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -330,7 +330,7 @@ bien_kich: Suỵt. Tôi đang tìm cảm hứng. Gió hôm nay có vị của s�
     bien_kich: *(mắt sáng lên)* Kể. Kể đi. Tôi trả bằng một chương có tên em.
     ~ rd_them_mam(3, 2)
     ~ qh("bien_kich", 8)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - bien_kich: Em có thấy cuốn sổ bìa da của tôi không? Tôi làm rơi đâu đó.
 * {co(so_tay_oanh)} [🔒 "Tui có. Chương 12 viết về tui hả?"]
     bien_kich: *(trắng bệch)* Em đọc rồi?
@@ -343,10 +343,10 @@ bien_kich: Suỵt. Tôi đang tìm cảm hứng. Gió hôm nay có vị của s�
         bien_kich: Em… muốn gì?
         ~ rd_do_doc = gioi_han(rd_do_doc + 10)
         ~ qh("bien_kich", -15)
-    * * -> ran_doc_tudo_het_chuyen
+    + + -> ran_doc_tudo_het_chuyen
 * [😶 "Không thấy."]
     bien_kich: Ừ. Nếu thấy… đừng đọc.
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -360,7 +360,7 @@ editor: *(ngáp)* Đợi render xong… À, {ran_doc}. Gì đó ông?
     editor: *(im lặng)* Render xong là xong. Tên ai đâu quan trọng.
     ~ rd_tin_mat()
     ~ qh("editor", -3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - editor: Mà… ông thấy anh {quan_ly_idol} dạo này có mệt không?
 * [😇 "Mệt. Ổng uống 5 ly cà phê một ngày."]
     editor: 6 ly. Hôm qua 6. *(nói xong mới thấy mình lỡ lời)*
@@ -369,7 +369,7 @@ editor: *(ngáp)* Đợi render xong… À, {ran_doc}. Gì đó ông?
 * [🐍 "Sao ông quan tâm ổng dữ vậy?"]
     editor: Ờ… thì… đồng nghiệp. Tui đi render tiếp đây.
     ~ rd_tin_mat()
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -384,7 +384,7 @@ designer: Đừng nói gì. Tui đang sửa lần thứ 23. Sửa nhẹ thôi l�
     ~ rd_tin_mat()
     ~ qh("designer", -8)
     ~ qh("sales", -3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - designer: Ông thấy logo này sao? Đủ wow chưa?
 * [😇 "Bản đầu tiên đẹp nhất. Nói thật."]
     designer: Ai cũng nói vậy. Rồi sếp cũng chọn bản đầu. Hết cứu.
@@ -393,7 +393,7 @@ designer: Đừng nói gì. Tui đang sửa lần thứ 23. Sửa nhẹ thôi l�
     designer: Cái NỒI?! Ổng nói vậy hả?!
     ~ rd_them_mam(5, 3)
     ~ qh("giam_doc", -2)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -407,7 +407,7 @@ sales: Em trai! Tin chị đi, tháng này chị chốt deal 2 tỷ. BTT Global.
     sales: *(cười rất tươi)* Ổng bận lắm em. Ổng ở… nước ngoài. Ổng chỉ nhắn tin qua chị thôi.
     ~ rd_tin_mat()
     ~ phat_hien(btt_global_gia)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - sales: Mà em làm truyền thông, đăng giùm chị bài khoe deal mới nha. No cap.
 * [😇 "Dạ em đăng. Mà chị gửi em hợp đồng để em chụp hình."]
     sales: Hợp đồng… bảo mật. Chụp tay chị ký là được.
@@ -416,7 +416,7 @@ sales: Em trai! Tin chị đi, tháng này chị chốt deal 2 tỷ. BTT Global.
     sales: *(nụ cười cứng lại)* Em dễ thương ghê ha. Mà thôi để chị tự đăng.
     ~ qh("sales", -10)
     ~ qh("designer", -5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -431,7 +431,7 @@ chi_dai: {ran_doc}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
     chi_dai: Nghe rồi. Không cần em kể. Chị không thích nghe chuyện sau lưng ai.
     ~ qh("chi_dai", -5)
     ~ rd_nghi(5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - chi_dai: Chị nói thật. Em mới vô mà chị thấy em đi khắp nơi. Đi nhiều thì nghe nhiều. Nghe nhiều thì phải biết giữ.
 { rd_nghi_ngo >= 60:
     chi_dai: Mà dạo này chị nghe tên em hơi nhiều. Đứa nào làm em khóc thì chỉ mặt chị. Còn em làm đứa khác khóc thì… chị chỉ mặt em.
@@ -443,7 +443,7 @@ chi_dai: {ran_doc}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
 * [😶 Cúi đầu ăn cơm.]
     chi_dai: Ăn đi. Ăn no rồi tính.
     ~ an(10)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -456,7 +456,7 @@ dan_dau_tu: Em ơi! Nhìn chart nè. Đây là đáy. Đáy thật rồi. Lần 
 * [🤝 "Anh xem giúp em số liệu Siêu Nhân Hồng với. Anh giỏi số mà."]
     dan_dau_tu: Ơ… có người nhờ anh làm việc thật à? Để anh xem! *(mắt sáng rỡ)*
     ~ qh("dan_dau_tu", 10)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - dan_dau_tu: Em có muốn góp vốn không? Một ít thôi. Anh trả lãi bằng… niềm tin.
 * [😇 "Em còn trả tiền trọ anh ơi."]
     dan_dau_tu: Ừ. Phải. Tiền trọ quan trọng. *(gật gù, buồn buồn)*
@@ -465,7 +465,7 @@ dan_dau_tu: Em ơi! Nhìn chart nè. Đây là đáy. Đáy thật rồi. Lần 
     dan_dau_tu: Anh không biết! Thề! Nhưng ví tạo coin có giao dịch đầu tiên… lúc 23:02 đêm ra MV. Ai thức khuya nhất công ty?
     ~ rd_tin_mat()
     ~ qh("dan_dau_tu", 5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -481,14 +481,14 @@ thanh_xin_nghi: *(giọng yếu ớt)* Ông ơi… tui hơi sốt… chắc chi�
     thanh_xin_nghi: Ông là người tốt nhất cái công ty này. Tui ghi nhớ.
     ~ qh("thanh_xin_nghi", 10)
     ~ qh("hr", -3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - thanh_xin_nghi: Mà nè, ông có quen ai ở Đài Tivi Hóng hông? Hỏi… hỏi chơi thôi.
 * {biet(son_thi_hat)} [🔒 "Tui bình chọn cho ông rồi. Đừng lo."]
     thanh_xin_nghi: *(mắt đỏ hoe)* Ông… ông biết hả? Đừng nói ai nha. Bà ngoại tui… à không, tui… tui cảm ơn ông.
     ~ qh("thanh_xin_nghi", 20)
 * [😶 "Hông quen."]
     thanh_xin_nghi: Ờ. Thôi. Xu cà na.
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -502,7 +502,7 @@ bac_bao_ve: Cháu đấy à. Ngồi đi. Uống trà.
 * [💬 "Bác ơi, bác làm ở đây từ hồi nào vậy bác?"]
     bac_bao_ve: Từ ngày đầu. 2010. Cái phòng 20 mét vuông. Lúc đấy cậu {giam_doc} còn là sinh viên.
     ~ rd_tin_mat()
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - bac_bao_ve: Bác nói một câu thôi. Ai làm gì ở công ty này, bác đều thấy. Bác không nói. Nhưng bác thấy.
 { rd_nghi_ngo >= 50:
     bac_bao_ve: Cháu ấy à. Đi lại nhiều quá. Cẩn thận.
@@ -517,7 +517,7 @@ bac_bao_ve: Cháu đấy à. Ngồi đi. Uống trà.
     bac_bao_ve: Ngày 4/10, mấy năm trước. Nó nằm co ở cổng, ướt sũng. Thế là bác tính đấy là sinh nhật nó.
     ~ qh("bac_bao_ve", 5)
     ~ qh("cho", 5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -540,14 +540,14 @@ sieu_nhan_hong: Ê em! Vô đây ăn bánh chuối chiên nè! Điều khoản s
     sieu_nhan_hong: Nóng chứ. Mà mặc vô thì anh là Siêu Nhân Hồng. Cởi ra thì… anh hông biết mình là ai.
     ~ rd_tin_mat()
     ~ rd_han(-3)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - sieu_nhan_hong: Mà em có muốn chụp chung một tấm hông? Làm kỷ niệm!
 * [😇 Chụp.]
     _Tấm ảnh: một bộ đồ hồng tạo dáng, và bạn cười gượng. Bạn phóng to bàn tay hắn. Vết sẹo vẫn ở đó._
     ~ follow(2000)
 * [😶 "Thôi anh, em xấu lắm."]
     sieu_nhan_hong: Ai nói! Mà thôi, hông ép. Điều khoản số 1 của anh cũng là hông ai ép ai.
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 // ------------------------------------------------------------
@@ -564,7 +564,7 @@ cho: Gâu? *(ngẩng đầu khỏi ổ, nhìn túi áo bạn)*
     cho: …Gâu. *(gác cằm lên chân bạn)*
 * [😶 Đi ngang qua.]
     cho: Gâu! *(đi theo bạn 3 bước, rồi quay về ổ)*
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - _Ở góc chòi, một chiếc mũ hồng để quên trên ghế trong phòng chờ hiện ra trong đầu bạn. {cho} cũng đang nhìn về phía tầng 2._
 cho: Grừ… *(nhìn về phía phòng chờ của Siêu Nhân Hồng)*
 * {co(xuc_xich)} [🦴 Cho thêm miếng nữa, rồi chỉ tay về phía phòng chờ.]
@@ -580,7 +580,7 @@ cho: Grừ… *(nhìn về phía phòng chờ của Siêu Nhân Hồng)*
 * [🐾 Ngồi chơi thêm với {cho}.]
     ~ qh("cho", 5)
     ~ cang_thang(-5)
-* -> ran_doc_tudo_het_chuyen
++ -> ran_doc_tudo_het_chuyen
 - -> END
 
 

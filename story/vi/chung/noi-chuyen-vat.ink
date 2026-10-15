@@ -1497,7 +1497,7 @@
     - dan_dau_tu: Mỗi lần {x} bán là nó lên. Mỗi lần {x} mua là nó xuống. Thị trường để ý {x} ghê.
     - dan_dau_tu: Sổ nợ này dày hơn sổ tiết kiệm. Mà sổ tiết kiệm thì không có.
     - dan_dau_tu: Cửa sau công ty có khe hàng rào vừa người. {x} biết vì {x} đo rồi.
-    - dan_dau_tu: Ngày 8 tháng 8 là sinh nhật {x}. {idol_het_thoi} phát. Năm nay chưa phát.
+    - dan_dau_tu: Ngày 8 tháng 8 là sinh nhật {x}. Phát phát. Năm nay chưa phát.
     - dan_dau_tu: Biểu đồ người theo dõi của Siêu Nhân Hồng là biểu đồ đẹp nhất {x} từng thấy.
     - dan_dau_tu: Lần này là lên thật.
     - dan_dau_tu: Sắp x10 rồi.

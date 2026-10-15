@@ -83,6 +83,9 @@ _Cả trường quay đứng dậy. {thanh_xin_nghi} nhìn xuống hàng ghế �
 _Bạn giơ ngón cái._
 thanh_xin_nghi: *(cầm micro, thở dốc)* Con cảm ơn bà ngoại… à không. *(cả trường quay cười)* Em cảm ơn anh Thái. Người duy nhất chưa bao giờ đòi em giấy phòng khám.
 _Cả trường quay cười. Bạn cũng cười. Ở hàng ghế thứ ba, {hr} đang vỗ tay to nhất, rồi giật mình, ngồi xuống, giả vờ ghi sổ._
+_Sau buổi diễn, ở bãi xe đài truyền hình, {thanh_xin_nghi} ôm bạn một cái thật mạnh, kim tuyến dính đầy áo blazer đen của bạn._
+thanh_xin_nghi: Anh Thái. Mười năm em giấu cái này. Anh là người đầu tiên em dám cho coi.
+quan_ly_idol: Ừ. Anh biết cảm giác giấu mười năm.
 _Suốt buổi tối, cái điện thoại duy nhất của bạn im lặng._
 _Bạn không kiểm tra nó lần nào._
 -> END

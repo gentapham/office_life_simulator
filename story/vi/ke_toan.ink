@@ -9,6 +9,8 @@ INCLUDE ke_toan/chuong-2.ink
 INCLUDE ke_toan/chuong-3.ink
 INCLUDE ke_toan/chuong-4.ink
 INCLUDE ke_toan/chuong-5.ink
+INCLUDE ke_toan/chuong-6.ink
 INCLUDE ke_toan/minigame.ink
+INCLUDE ke_toan/ket-thuc.ink
 
 -> END

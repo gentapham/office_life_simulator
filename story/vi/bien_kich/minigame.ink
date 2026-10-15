@@ -184,7 +184,7 @@ _Lạch cạch tới 2 giờ sáng. Mười trang. Có một câu hay tới mứ
 ~ uong(25)
 ~ cang_thang(-10)
 { not bk_da_doi_ten:
-    ~ bk_lo(5)
+    ~ bk_lo(2)
 }
 _Phần thưởng: một ấm trà nóng. Mười trang là một ấm trà, luật của gác mái số 7._
 { bk_trang_tieu_thuyet >= 200:

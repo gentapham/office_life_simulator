@@ -392,3 +392,31 @@ _Ảnh 3: ai đó chụp lén {thuc_tap_sinh} ở quán cơm: một chiếc th�
     ~ phat_hien(duy_tung_lam_ngan_hang)
     _Người có thẻ kim cương mà đi thực tập 4 triệu. Hoặc là đi lạc. Hoặc là đi tìm thứ gì đó tiền không mua được._
 - -> END
+
+// ------------------------------------------------------------
+// Cảnh tự do: tối cuối tuần ở nhà số 18, cất thêm vào két.
+=== ke_toan_tudo_cat_ket ===
+# noi:nha_so_18 # gio:21:00 # ngau_nhien # dieu_kien:cuoi_tuan_va_chua_nop_quy_den
+{ kt_quy_den_nop:
+    _Két sau bức tranh trống trơn từ hôm nộp quỹ vào sổ chung. Bạn treo lại bức tranh. Thấy nhẹ._
+    -> END
+}
+_Tối cuối tuần. Nhà số 18 yên ắng. Bức tranh phong cảnh trên tường hơi lệch, vì bạn vừa mở két hôm trước._
+_Quỹ đen: {kt_quy_den} triệu. Mục tiêu: 297._
+* [🗄️ Cất 5 triệu lương tuần này.]
+    ~ kt_cat_ket(5)
+    ~ tien_cong(-5000000)
+    _Sổ ghi tay: "+5. Không đi cà phê Sống Ảo với Hương tuần này."_
+    ~ kt_ngu(2)
+* [🧾 Cất 3 triệu "tiết kiệm được" từ những khoản đã từ chối chi trong tuần.]
+    ~ kt_cat_ket(3)
+    _Tiền công ty để ngoài sổ. Bạn ghi từng khoản, từng ngày, từng lý do từ chối. Nếu ai thấy dòng này mà không đọc hết, bạn là kẻ biển thủ._
+    { kt_huong_biet_quy_den && RANDOM(1, 10) <= 2:
+        ~ kt_them_dau_vet(1)
+        _Điện thoại rung. {chi_dai}: "Bà ở nhà hả? Tui ghé đưa ít trái cây." Chuông cửa reo ngay lúc két còn mở._
+    }
+* [😶 Không cất. Tuần này mua cho mình một đôi dép mới.]
+    ~ tien_cong(-150000)
+    ~ cang_thang(-10)
+    _Dép mới êm. Bạn đi qua đi lại trong nhà ba vòng. Rồi dán nhãn vào đế dép._
+- -> END

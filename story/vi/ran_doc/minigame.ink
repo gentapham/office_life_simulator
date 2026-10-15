@@ -36,6 +36,7 @@ _Trong sổ tay có tin an toàn ("Máy pha cà phê đã sửa") và tin cay ("
     truong_phong: Gọn, sạch, đúng giờ. Cái này mình take note làm mẫu nhé.
     ~ qh("truong_phong", 5)
     ~ rd_tin(3)
+    ~ rd_nghi(-5)
 }
 _150.000đ vào tài khoản. Ai cũng đọc bản tin. Không ai biết người viết đang nghĩ gì._
 -> END
@@ -83,6 +84,7 @@ chi_dai: Thằng nhỏ {ran_doc} đó. Được việc.
 ~ rd_tin(5)
 ~ qh("chi_dai", 5)
 ~ qh("hong_hot", 5)
+~ rd_nghi(-5)
 { ngay == 20:
     giam_doc: Sinh nhật công ty mà vui thế này thì anh… anh không ép, nhưng năm sau em lại lo nhé.
     ~ qh("giam_doc", 10)
@@ -133,6 +135,7 @@ _Cạnh đó là một tấm ảnh {hong_hot} vừa gửi nhầm vào group côn
 - else:
     _Group sạch bong. Thông báo họp ghim đầu. Không ai đi lạc phòng họp. Một ngày hiếm hoi._
     ~ uy_tin = uy_tin + 3
+    ~ rd_nghi(-3)
 }
 _100.000đ tiền quản trò. Người giữ chìa khóa group là người biết mọi thứ._
 -> END
@@ -173,6 +176,7 @@ thuc_tap_sinh: Dạ đúng ít ngọt luôn ạ! Anh {ran_doc} giỏi quá ạ!
 ~ qh("designer", 5)
 ~ qh("thuc_tap_sinh", 5)
 ~ rd_tin(3)
+~ rd_nghi(-3)
 { nguoi_theo_doi > 0:
     _{hong_hot} chụp ảnh 21 ly trà sữa xếp hình trái tim hồng, đăng lên trang Siêu Nhân Hồng: "Team hậu trường của Hồng!"_
     ~ follow(3000)
@@ -204,6 +208,7 @@ _Mỗi cánh cửa đi qua là một cuộc nói chuyện dở dang. Tai rắn t
 # minigame:chay_giay # ket_qua:thang
 ~ tien_cong(50000)
 ~ rd_tin_mat()
+~ rd_nghi(-3)
 ~ qh("bac_bao_ve", 5)
 _Giao đủ, đúng người, đúng giờ. Đi ngang phòng kế toán, bạn nghe được một câu. Đi ngang phòng HR, nghe thêm một câu._
 { RANDOM(1, 3):

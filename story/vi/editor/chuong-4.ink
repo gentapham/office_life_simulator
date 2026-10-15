@@ -85,6 +85,9 @@ quan_ly_idol: *(nói thật nhỏ, sợ {idol_het_thoi} thức)* Cảm ơn em nh
 === editor_1710_dem_tinh_nhat ===
 # ngay:17 # gio:23:50 # noi:vung_tau_khach_san
 _Gần nửa đêm. Cả đoàn ngủ hết. Bạn ngồi ở ban công khách sạn, laptop trên đùi, gió biển mằn mặn._
+_Phòng bên vọng ra tiếng ngáy đều đặn của {thuc_tap_sinh}, xen tiếng {con_ong_chau_cha} nói mớ "để anh gọi chú anh". Dưới sân, đống lửa trại chỉ còn than hồng._
+_Điện thoại rung: {hong_hot} đăng lại đoạn livestream lúc tối. Ba giây {sieu_nhan_hong} đưa tay lên mũ. Bình luận: "Tháo đi!", "Đừng tháo!", "Ủa ai đắp chăn cho hai anh kia dễ thương vậy?"_
+_Bạn tắt thông báo. Có những khung hình mình không muốn ai bình luận._
 _Đồng hồ báo thức trên điện thoại hiện câu hỏi bạn tự đặt từ tuần trước: "5:00 – Bình minh? (Lần này đã ngủ chưa?)"_
 * [😴 Đóng laptop. Đi ngủ. Để 5 giờ thức dậy như một người bình thường.]
     ~ ed_ngu_du()
@@ -179,7 +182,6 @@ it: Không.
     _Đêm đó bạn dựng tới 5 giờ sáng. Không phải vì deadline. Vì bạn không dừng được._
 - else:
     _Bạn dựng video 16 năm bằng 30 tấm ảnh chụp màn hình fanpage từ 2019 trở lại. Ba phút. Nhạc buồn. Bạn biết nó thiếu._
-    ~ ed_thuc_dem()
 }
 -> END
 

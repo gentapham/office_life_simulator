@@ -234,7 +234,11 @@ _Cả phòng lạnh đi. {thuc_tap_sinh} cúi đầu. Ghế của {thanh_xin_ngh
     _Không ai được xin cho. Nhưng không ai bị đọc tên thêm._
 * [😶 Ngồi im. Mình không phải nhân viên.]
     _{hr} đọc tiếp. Bạn nhìn xuống tay mình. Hợp đồng cho bạn quyền bỏ ngang buổi quay để đi giúp người. Hợp đồng không nói gì về việc giúp người ngồi cạnh._
-- _Cuối buổi, {idol_het_thoi} được gia hạn hợp đồng thêm một năm. {quan_ly_idol} quay đi, lấy tay dụi mắt, nói là bụi._
+- { snh_xin_cho != "":
+    _Lúc ra khỏi phòng họp, {ran_doc} đi ngang qua bạn, dừng nửa giây: "Anh xin cho người ta… cũng được đó." Rồi đi tiếp._
+    ~ snh_hieu(-5)
+}
+_Cuối buổi, {idol_het_thoi} được gia hạn hợp đồng thêm một năm. {quan_ly_idol} quay đi, lấy tay dụi mắt, nói là bụi._
 -> END
 
 // ------------------------------------------------------------

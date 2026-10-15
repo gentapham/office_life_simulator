@@ -32,6 +32,17 @@ thuc_tap_sinh: Dạ… anh không phải nhân viên… mà anh dạy em một �
 # ngay:6 # gio:09:30 # noi:studio_tang_2 # bat_buoc
 _Buổi chụp poster đầu tiên. {designer} cầm bản phác, 10 kiểu dáng, mỗi kiểu 3 giây. {cho} nằm canh ở cửa studio, mắt không rời bộ đồ hồng._
 designer: Anh ơi, mình làm 10 kiểu nha. Đúng hình là được, sai là sửa. Mà em ghét sửa lắm.
+quan_ly_idol: *(điện thoại kẹp vai)* Chụp nhanh nhé. 11 giờ anh có lịch khác cho em.
+* [🦸 Khởi động: xoay cổ, xoay tay, hô "Biến hình!" ba lần.]
+    designer: *(bịt tai)* Một lần là đủ rồi anh…
+    ~ follow(1000)
+* [💬 "Em cho anh xin feedback cụ thể trước được hông? Anh sợ làm em sửa."]
+    designer: *(sững người)* Anh… là người đầu tiên hỏi câu đó. Ok: cằm hơi nâng, tay không quá vai, đừng cười quá tám cái răng.
+    ~ qh("designer", 10)
+* [🐕 Nháy mắt với {cho} ở cửa: "Lát em lên hình chung với anh nha!"]
+    ~ snh_choc_tuat()
+    cho: GRỪ… *(đứng dậy, đi vòng vòng ngoài cửa như đang tính kế)*
+- _{designer} giơ bản phác đầu tiên. Đèn flash nổ._
 -> sieu_nhan_hong_mg_poster
 
 // ------------------------------------------------------------
@@ -108,6 +119,17 @@ _Mốc 1: 50.000 người theo dõi._
 # ngay:8 # gio:14:00 # noi:san_thuong
 _Ngày Thị giác Thế giới. {editor} bị lôi đi khám mắt. Còn bạn bị {hong_hot} lôi lên sân thượng tập nhảy trend Tóp-tóp._
 hong_hot: Anh ơi, trend này đang hot! Nhịp 1-2-3-xoay-chỉ tay. Mặc bộ đồ đó nhảy khó gấp đôi đó nha. Em quay đây!
+* [🙂 "Cho anh tập không mũ một lần trước được hông? Em quay lưng đi."]
+    hong_hot: *(quay lưng thật)* Ok ok. Tui không nhìn. Thề. Mà tui nghe tiếng anh thở dốc á nha.
+    ~ snh_thao_mu(false)
+    _Không mũ, bạn nhảy đúng nhịp ngay lần đầu. Gió sân thượng mát rượi. Rồi bạn đội mũ lại, và mọi thứ khó gấp đôi._
+    ~ qh("hong_hot", 5)
+* [🦸 "Không cần tập! Siêu nhân sinh ra để nhảy!"]
+    hong_hot: Tự tin dữ ha! Ối dồi ôi, quay liền!
+* [💬 "Hôm nay {editor} đi khám mắt rồi hả? Ai dựng clip này?"]
+    hong_hot: Tui tự dựng. Dở thì kệ. {editor} mà thấy chắc ổng xỉu, khỏi cần khám mắt luôn.
+    ~ qh("hong_hot", 3)
+- hong_hot: Rồi! Nhạc lên!
 -> sieu_nhan_hong_mg_tiktok
 
 // ------------------------------------------------------------
@@ -138,6 +160,17 @@ idol_het_thoi: *(ngồi hàng cuối, kính đen)* Hát nhép. Thời anh toàn 
 _Sau MV là livestream bán hàng đầu tiên. {sales} bày lên bàn: nước tăng lực "Hồng Hào", bàn chải "Răng Hồng"._
 sales: Anh ơi, hoa hồng 10% nha. Tin chị đi, đêm nay chốt nghìn đơn!
 it: *(đeo tai nghe)* Mạng ổn. Đừng ai mở Tóp-tóp.
+_Bình luận đã bắt đầu chạy trước cả khi lên sóng: "Lộ mặt đi anh ơi", "Tháo mũ đi", "Mặt thật đâu?"._
+* [💬 Hỏi nhỏ {sales}: "Nước tăng lực Hồng Hào… uống vô có hồng hào thật hông em?"]
+    sales: Tin chị đi! *(ngừng)* …Thì cũng có màu hồng mà anh.
+    ~ qh("sales", 3)
+* [🙂 Nhờ {it}: "Anh lọc giùm em mấy bình luận đòi lộ mặt được hông?"]
+    it: Được. Lọc từ khóa "mặt". *(gõ)* Giờ người ta sẽ viết "m.ặ.t".
+    ~ snh_mat(-3)
+    ~ qh("it", 5)
+* [🦸 Tạo dáng chờ lên sóng.]
+    ~ follow(1000)
+- it: Lên sóng. 3… 2… 1.
 -> sieu_nhan_hong_mg_livestream
 
 // ------------------------------------------------------------
@@ -262,4 +295,13 @@ _Cùng lúc, {thuc_tap_sinh} làm rơi một cái thẻ đen viền kim cương 
 # ngay:12 # gio:14:30 # noi:ban_lam_viec
 _{chua_te_deadline} đang ngồi lướt Tóp-tóp. Trên bàn: ly mì ly nguội, bông hoa hôm trước vẫn cắm trong ly bút._
 _Bạn mang theo một món quà hồng. Câu hỏi là: đưa lúc nào, đưa ở đâu, và có ai đang cầm điện thoại không._
--> sieu_nhan_hong_mg_qua_vu
+* [💬 Hỏi {hong_hot}: "Em ơi, {chua_te_deadline} thích gì vậy?"]
+    hong_hot: Ổng hả? Thích ngủ. Thích mì ly. Thích nói "còn sớm mà". Ối dồi ôi, anh định tặng gì? Kể tui nghe!
+    ~ qh("hong_hot", 3)
+* [🙂 Đứng xa quan sát 5 phút.]
+    _Cậu ta ngáp 3 lần, gãi đầu 2 lần, mở mì ly rồi để nguội. Lịch trên màn hình: deadline thứ 6. Hôm nay mới thứ 2. Còn sớm thật._
+    ~ snh_tim(2)
+* [🦸 Tạo dáng thật lố để cậu ta để ý.]
+    chua_te_deadline: *(liếc lên)* Gì đó anh? Quay content hả?
+    ~ snh_tim(-1)
+- -> sieu_nhan_hong_mg_qua_vu

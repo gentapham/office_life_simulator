@@ -140,7 +140,7 @@ _{ran_doc} nằm giường bên cửa sổ, quay mặt vào tường._
         ran_doc: *(im lặng rất lâu)* …Ừ.
         ~ snh_hieu(-5)
         -> END
-    * [🦸 Tháo mũ, ngủ luôn, kệ cậu ta thấy.]
+    * [🙂 Tháo mũ, ngủ luôn, kệ cậu ta thấy.]
         ~ snh_thao_mu(false)
         _Bạn ngủ ngon nhất tháng. Sáng ra, thấy {ran_doc} đã dậy từ lâu, ngồi ở mép giường nhìn bạn, tay cầm điện thoại._
         _Cậu ta không chụp. Hoặc đã chụp rồi xóa. Bạn không biết._
@@ -226,8 +226,9 @@ _Bác {bac_bao_ve} đứng ở góc, tay cầm một lá thư ký tên "G". Bác
     ~ phat_hien(thu_g)
     _Rồi bác đứng lên, đeo kính, đọc bằng giọng Bắc chậm rãi._
     bac_bao_ve: "…Mười sáu năm rồi. Tôi không hỏi doanh thu. Tôi chỉ muốn hỏi một câu: mấy đứa nhỏ còn thương nhau không."
-    _Cả sảnh im lặng. {giam_doc} cúi đầu. Bạn tháo găng, lau mắt dưới mũ._
+    _Cả sảnh im lặng. {giam_doc} cúi đầu. Bạn tháo găng, lau mắt dưới mũ. Ở cuối sảnh, {ran_doc} cũng cúi đầu._
     ~ snh_no(-10)
+    ~ snh_hieu(-5)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
 - else:
     _Rồi bác gấp lá thư, bỏ vào túi áo, ngồi xuống. Không ai biết trong đó viết gì. Chỉ có bạn để ý thấy tay bác hơi run._

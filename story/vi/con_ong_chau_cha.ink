@@ -8,5 +8,10 @@ INCLUDE con_ong_chau_cha/chuong-1.ink
 INCLUDE con_ong_chau_cha/chuong-2.ink
 INCLUDE con_ong_chau_cha/chuong-3.ink
 INCLUDE con_ong_chau_cha/chuong-4.ink
+INCLUDE con_ong_chau_cha/chuong-5.ink
+INCLUDE con_ong_chau_cha/chuong-6.ink
+INCLUDE con_ong_chau_cha/nhan-vat.ink
+INCLUDE con_ong_chau_cha/minigame.ink
+INCLUDE con_ong_chau_cha/ket-thuc.ink
 
 -> END

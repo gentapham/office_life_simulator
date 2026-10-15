@@ -148,6 +148,8 @@ hong_hot: {editor}! Nghe gì chưa? À mà ông nghe gì được, ông ngủ su
     hong_hot: *(đứng hình)* … *(thì thầm)* Được. Tui thề. Lần này thề thật. Có {it} làm chứng.
     ~ ed_lo(10)
     ~ qh("hong_hot", 10)
++ [😴 "Dạ… đợi render xong…"]
+    hong_hot: Render hoài! Tui đi hóng chỗ khác!
 - -> END
 
 // ------------------------------------------------------------
@@ -200,6 +202,8 @@ chua_te_deadline: {editor} ơi. Ông ơi. Ông dễ thương nhất công ty. Ô
 * {ed_biet_file_vu} [🔒 "Ông lo file tháng 6 trước đi. Bản sao nằm trong ổ của anh {it}."]
     chua_te_deadline: *(mắt mở to)* Thiệt hả?! Ông… ông là thánh! Thánh cú!
     ~ qh("chua_te_deadline", 15)
++ [😶 "Ông lướt Tóp-tóp tiếp đi."]
+    chua_te_deadline: Ok mom.
 - -> END
 
 // ------------------------------------------------------------
@@ -371,6 +375,8 @@ quan_ly_idol: *(hai điện thoại, cả hai đang rung)* {editor}! Khoan, anh 
     quan_ly_idol: *(nhìn bạn rất lâu)* Em nghe hôm sân thượng hả? *(thở dài)* Anh chưa biết. Anh mà đi thì ai lo cho {idol_het_thoi}.
     quan_ly_idol: Mà… em nữa. Ai mua cà phê cho anh.
     ~ ed_can(5)
++ [😴 "Dạ… đợi render xong…"]
+    quan_ly_idol: *(cười)* Ừ. Render xong thì ngủ nha.
 - -> END
 
 // ------------------------------------------------------------
@@ -475,6 +481,8 @@ chi_dai: {editor}. Ăn cơm chưa? Đừng nói "đợi render xong". Chị hỏ
     chi_dai: *(ngồi xuống cạnh, giọng nhỏ lại)* Thì ngủ. Mai chị nói với {truong_phong}: {editor} nghỉ một ngày. Đứa nào cãi, chị lo.
     ~ ed_ngu_du()
     ~ qh("chi_dai", 10)
++ [😴 "Dạ… em ăn rồi mà chị."]
+    chi_dai: Ăn rồi thì ăn thêm. *(đặt thêm hộp sữa)*
 - -> END
 
 // ------------------------------------------------------------

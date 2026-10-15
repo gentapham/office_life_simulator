@@ -98,7 +98,7 @@ _Ở góc tầng 1, {editor} ngủ gục trên bàn, mặt áp vào bàn phím. 
     _Mười phút sau {editor} tỉnh dậy. Đọc tờ giấy. Gấp nó lại làm tư, bỏ vào túi áo. Bạn không thấy._
     ~ qh("editor", 10)
 * [🥤 Đưa ly của mình cho Bác {bac_bao_ve}.]
-    bac_bao_ve: Ơ, cậu Thái. Cậu uống đi, cậu mệt hơn bác.
+    bac_bao_ve: Ơ, Thái à. Cháu uống đi, cháu mệt hơn bác.
     _Bác vẫn nhận. Rồi bác lén đổ một nửa sang cốc trà đá, trả lại cho bạn._
     ~ qh("bac_bao_ve", 8)
 * [☕ Lấy tua vít mở máy pha cà phê ra, tự sửa.]
@@ -203,7 +203,7 @@ _Clip "yêu động vật" giờ thành clip "bị động vật cướp đồ".
 * [🐕 Bò vào gầm cầu thang đòi lại.]
     cho: GRỪ…
     _Gầm cầu thang tối om, đầy chìa khóa, son môi, điện thoại cũ. Một kho báu. Và một con chó đang bảo vệ nó bằng cả mạng sống._
-    bac_bao_ve: *(từ chòi)* Thôi cậu Thái. Nó lấy cái gì thì nó không trả đâu. Bác nuôi nó tám năm rồi.
+    bac_bao_ve: *(từ chòi)* Thôi Thái à. Nó lấy cái gì thì nó không trả đâu. Bác nuôi nó tám năm rồi.
     ~ qh("cho", -5)
     ~ thai_p(-10)
 * [📞 "{hong_hot}, đừng đăng! Chuyện này để anh lo, đừng ai đăng gì hết!"]
@@ -228,8 +228,8 @@ _Máy trái: Phát hỏi lần hai về show. Máy phải: {sieu_nhan_hong} gử
     ~ qh("designer", 5)
     ~ tien_cong(-60000)
 * [🧤 Ghé nhà Bác {bac_bao_ve} ở Ven Đô hỏi "kho" của {cho}.]
-    bac_bao_ve: Kho nó ở gầm cầu thang công ty cơ. Mà nó không trả đâu. Cậu đi tìm cái mới đi.
-    bac_bao_ve: Ngồi uống chén trà đã. Chủ nhật mà cậu cũng chạy à.
+    bac_bao_ve: Kho nó ở gầm cầu thang công ty cơ. Mà nó không trả đâu. Cháu đi tìm cái mới đi.
+    bac_bao_ve: Ngồi uống chén trà đã. Chủ nhật mà cháu cũng chạy à.
     ~ qh("bac_bao_ve", 8)
     ~ nghi(10)
     ~ uong(10)

@@ -35,6 +35,7 @@ quan_ly_idol: *(xông vào phòng dựng, hai điện thoại trên tay)* {edito
     ~ uy_tin = uy_tin + 5
     ~ qh("quan_ly_idol", 10)
     ~ ed_can(3)
+    ~ ed_thuc_dem()
     _Bộ đồ hồng nhìn ra hồng sang, không phải hồng chả lụa. Cảnh {sieu_nhan_hong} ăn chè bằng ống hút qua khe mũ, bạn để chậm lại đúng một nhịp._
     quan_ly_idol: *(xem xong, im ba giây)* Trời. Em… em giỏi quá. Cảm ơn em nha.
     _Ba giây im lặng đó, bạn sẽ dựng lại trong đầu cả tuần._
@@ -48,7 +49,6 @@ quan_ly_idol: *(xông vào phòng dựng, hai điện thoại trên tay)* {edito
     ~ qh("quan_ly_idol", 5)
     _Con cú núp sau xe chè, 1/25 giây. Một ngày nào đó, nó sẽ là bằng chứng._
 - _Về sau, cái clip này được xem gấp mười hai lần cái MV. Nhưng chiều hôm đó, nó chỉ là một file tên "ba_cu_FINAL_final2.mp4"._
-~ ed_thuc_dem()
 -> END
 
 // ------------------------------------------------------------
@@ -223,7 +223,7 @@ _Radio đang đọc tin: "Hôm nay, 10/10, kỷ niệm Ngày Giải phóng Thủ
     ~ qh("cho", 5)
 * [🎥 Lấy điện thoại quay bác thổi nến, dựng thành clip 30 giây tặng bác.]
     _Clip 30 giây. Ánh nến, cái chòi, con chó, ông bác cười. Bạn chỉnh màu cho ấm như đèn dầu._
-    bac_bao_ve: *(xem trên cái điện thoại cũ)* Ừ. Để bác gửi cho… một người bạn ở xa. Ông ấy hay hỏi bác dạo này thế nào.
+    bac_bao_ve: *(xem trên cái điện thoại cũ)* Ừ. Có một người bạn ở xa, năm nào cũng nhớ ngày này. Năm nay bác có thêm chuyện để kể trong thư.
     ~ qh("bac_bao_ve", 15)
 * [😶 Ngồi xuống, rót trà đá, ngồi cạnh bác. Không nói gì.]
     bac_bao_ve: *(rót thêm trà)* Cháu ít nói nhỉ. Giống bác.

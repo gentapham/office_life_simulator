@@ -278,7 +278,7 @@ _22:00. Anh {giam_doc} nhắn group như mọi tối: "Mai cả nhà mình cháy
     _Màn hình hiện: "Giao dịch thành công." Bạn ngồi nhìn dòng chữ đó lâu hơn nhìn bất kỳ bình luận nào trong ba năm._
     ~ cang_thang(-20)
 * [🧹 Gỡ bớt poster trên tường. Để lại một tấm.]
-    _Bạn gỡ 30 tấm. Để lại tấm năm 2015 ở hội chợ, trời mưa, có cậu kỹ thuật viên bị điện giật ở góc. Tường trống ra một khoảng lớn. Dễ thở._
+    _Bạn gỡ 30 tấm. Để lại tấm năm 2016 ở hội chợ, trời mưa, có cậu kỹ thuật viên bị điện giật ở góc. Tường trống ra một khoảng lớn. Dễ thở._
     ~ phat_tt(-10)
 * [📱 Nhắn anh {quan_ly_idol}: "Mai anh đứng ở đâu?"]
     quan_ly_idol: *(trả lời sau 4 giây)* Ở chỗ thấy em rõ nhất.

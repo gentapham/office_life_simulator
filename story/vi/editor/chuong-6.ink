@@ -5,25 +5,19 @@
 // ------------------------------------------------------------
 === editor_2810_xuat_nham ===
 # ngay:28 # gio:03:00 # noi:phong_dung_phim # bat_buoc
-{ not ed_dung_video_thai:
-    _3 giờ sáng. Bạn xuất bản dựng teaser Đêm Hồng. Lần này bạn chọn đúng thư mục, đúng tên file. Bạn kiểm tra hai lần, rồi ngủ gục lên bàn phím._
-    ~ ed_thuc_dem()
-    -> END
-}
-_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đêm Hồng cho fanpage công ty, và bản lưu của video thư mục "{quan_ly_idol}"._
+~ ed_dung_video_thai = true
+_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đêm Hồng cho fanpage công ty, và bản lưu của video thư mục "Thái"._
 _Mắt bạn mờ. Ô "Đích xuất file" có hai dòng giống nhau tới mức đáng sợ: "Fanpage G-Entertainment (hẹn giờ)" và "Ổ_riêng/Thai_final"._
-_Bạn bấm. Thanh tiến trình chạy. Màn hình hiện: "Đã thêm vào hàng chờ. Đăng lúc 09:00, 29/10 – Fanpage G-Entertainment"._
-_Bạn không đọc dòng đó. Bạn đang ngủ._
+* [✂️ Xuất teaser trước, video "Thái" sau.]
+    _Teaser xong. Bạn kéo video "Thái" vào ô đích. Con trỏ trượt xuống một dòng. Bạn không thấy._
+* [⏳ Xuất cả hai cùng lúc cho nhanh. Ngủ trong lúc chờ.]
+    _Hai thanh tiến trình chạy song song. Bạn gục xuống trước khi kịp nhìn thanh nào đi đâu._
+    ~ nghi(10)
+- _Màn hình hiện: "Đã thêm vào hàng chờ. Đăng lúc 09:00, 29/10 – Fanpage G-Entertainment". Video: "Thai_final"._
+_Bạn không đọc dòng đó. Bạn đang ngủ, má áp lên phím "J"._
 ~ ed_video_xuat_nham = true
 ~ ed_thuc_dem()
-* [😴 (Ngủ tiếp.)]
-    _Bạn mơ thấy thanh render chạy tới 100% rồi chạy tiếp, 101%, 102%, ra khỏi màn hình, chạy mất._
-* {ed_dem_thuc <= 2} [👀 Giật mình tỉnh lúc 3 giờ 07, liếc lại hàng chờ.]
-    _Fanpage G-Entertainment. Hẹn giờ 9 giờ sáng mai. Video "Thai_final"._
-    _Tim bạn ngừng một nhịp. Bạn bấm hủy. Hàng chờ trống. Video về lại thư mục. Bạn ngồi thở như vừa chạy hai cây số._
-    ~ ed_video_xuat_nham = false
-    ~ cang_thang(15)
-- -> END
+-> END
 
 // ------------------------------------------------------------
 === editor_2810_moc_4 ===

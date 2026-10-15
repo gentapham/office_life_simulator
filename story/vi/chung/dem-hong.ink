@@ -118,7 +118,7 @@ _Sân khấu Đêm Hồng, Phường Tân Drama. Ba tuần trước, chỗ này 
 - else:
     _Khán đài lưa thưa. Hàng ghế đầu là người của {cong_ty}. Hàng ghế sau là người nhà của người của {cong_ty}. Hàng ghế cuối là mấy chiếc xe đẩy cá viên chiên._
 }
-_Cả công ty hóa trang. Sếp {giam_doc} mặc bộ "Ông Kẹ {hong_hot} Hàng" mà {designer} chọn, tay cầm cuốn sổ nợ bằng giấy bìa, không ai dám nói với sếp đó là một trò đùa._
+_Cả công ty hóa trang. Sếp {giam_doc} mặc bộ "Ông Kẹ Ngân Hàng" mà {designer} chọn, tay cầm cuốn sổ nợ bằng giấy bìa, không ai dám nói với sếp đó là một trò đùa._
 _Sau cánh gà, {chi_dai} đeo bộ đàm, một tay giữ cầu dao, một tay giữ dây xích của {cho}. {chua_te_deadline} đeo tai nghe, cầm cue sheet. {it} ngồi ở bàn ánh sáng, mì ly để sẵn bên cạnh._
 _Bác {bac_bao_ve} đứng ở cổng sân khấu như mọi ngày, trên ngực đeo tấm thẻ "Khách mời đặc biệt" mà bác không quen đeo, cứ chốc chốc lại sờ vào túi áo._
 _{quan_ly_idol} liếc điện thoại liên tục. 20 giờ tối nay, Đài Tivi Hóng phát trực tiếp chung kết "Giọng Ca Ước Mơ"._
@@ -324,7 +324,7 @@ _20 giờ. Màn hình LED bật tên bạn. Cùng lúc, bên kia đường, có 
 _🌟 SIÊU SAO HẠNG A_
 _0 giờ 00, ngày 1/11. Bảng xếp hạng xu hướng làm mới. Ở vị trí số 3: \#ĐêmHồng. Số 5: \#HồngLàTháiĐộ. Số 8: \#SiêuNhânHồng._
 _Ba trên mười. Hợp đồng chỉ cần một._
-giam_doc: *(vẫn mặc bộ Ông Kẹ {hong_hot} Hàng, ôm điện thoại)* Một triệu… Một triệu thật à? Các em ơi, một triệu thật à?!
+giam_doc: *(vẫn mặc bộ Ông Kẹ Ngân Hàng, ôm điện thoại)* Một triệu… Một triệu thật à? Các em ơi, một triệu thật à?!
 { vai != "ke_toan":
     ke_toan: *(nhìn màn hình, gỡ kính xuống, lau, đeo lại)* Thật. Tui đếm ba lần rồi.
 }
@@ -553,7 +553,7 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
     { chung_cong_ty_song:
         _Sếp {giam_doc} đã chuộc lại biệt thự trước ngày 15/11. Giờ sếp nhắn group lúc 21 giờ thay vì 22 giờ. Ai cũng coi đó là một bước tiến lớn._
     - else:
-        _Sếp {giam_doc} dọn khỏi biệt thự trên Đồi {hong_hot} Hàng. Cây gậy golf mini giờ dựng ở góc một căn phòng thuê 20 mét vuông. Sếp nói: "Anh từng bắt đầu ở đây mà."_
+        _Sếp {giam_doc} dọn khỏi biệt thự trên Đồi Ngân Hàng. Cây gậy golf mini giờ dựng ở góc một căn phòng thuê 20 mét vuông. Sếp nói: "Anh từng bắt đầu ở đây mà."_
     }
 }
 { vai != "truong_phong":
@@ -590,7 +590,7 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
     _{quan_ly_idol} vẫn cầm hai điện thoại. Một cái rung ít hơn trước. Cái còn lại, danh bạ vẫn lưu một cái tên kèm ghi chú "(đừng bắt máy lúc đang họp, mà bắt cũng được)"._
 }
 { vai != "bien_kich":
-    _{bien_kich} {chung_phim_ghi_ten_duy: bắt đầu viết kịch bản thứ hai. Trang đầu ghi: "Đồng tác giả: (để trống, chờ người kể chuyện tiếp theo)."|ngồi ở gác mái số 7 với con mèo Bí. Cuốn tiểu thuyết "Công Ty Là Gia Đình" đã tới chương 31. {dan_dau_tu} nào cũng có người thật. {dan_dau_tu} 31 có cả chính {bien_kich}.}_
+    _{bien_kich} {chung_phim_ghi_ten_duy: bắt đầu viết kịch bản thứ hai. Trang đầu ghi: "Đồng tác giả: (để trống, chờ người kể chuyện tiếp theo)."|ngồi ở gác mái số 7 với con mèo Bí. Cuốn tiểu thuyết "Công Ty Là Gia Đình" đã tới chương 31. Chương nào cũng có người thật. Chương 31 có cả chính {bien_kich}.}_
 }
 { vai != "editor":
     _{editor} vẫn làm đêm. Kênh "Cú Đêm Cắt Ghép" có thêm một video mới, không quảng cáo, không tiêu đề, chỉ có một con cú đội mũ len hồng ngồi cạnh hai cái ly cà phê._

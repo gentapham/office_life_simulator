@@ -170,6 +170,8 @@ chua_te_deadline: …Đèn có lại thì nói lại câu đó coi.
     _Cái giọng đó. Không phải giọng của đại ca xóm Cây Me. Là giọng của một người sợ bị nhìn thấy._
 * [🤝 Bước ra hát bè theo {idol_het_thoi}: "…thích ăn chuối chiên…"]
     idol_het_thoi: *(dừng lại, rồi cười)* Em biết bài này hả? Em biết anh là ai không?
+    _Ở bàn bên, cái bóng không đội mũ cũng khe khẽ hát theo. Sai lời. Giọng run run như con nít._
+    ~ rd_han(-3)
     ~ qh("idol_het_thoi", 15)
     ~ phat_hien(kenh_cu_dem)
     _{editor} quay được cả bạn. Trong video sau này, bạn là cái bóng hát bè lạc tông nhất._

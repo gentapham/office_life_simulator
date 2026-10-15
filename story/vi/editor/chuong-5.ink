@@ -316,7 +316,8 @@ _Chưa bao giờ dựng. Chưa bao giờ gửi. Đêm nay, lần đầu tiên, b
     ~ ed_dung_video_thai = true
     ~ ed_can(15)
     _Bạn gõ dòng chữ đó, xóa, gõ lại bảy lần. Lần thứ tám, bạn để yên._
-* [😶 Đóng thư mục. Chưa phải lúc.]
-    ~ ed_can(-5)
-    _Bạn đóng thư mục. Ba màn hình tối dần. Thanh render không chạy. Có những thứ chưa nên render._
+* [😶 Dựng, nhưng không cho mình xem lại. Lưu xong là đóng máy.]
+    ~ ed_dung_video_thai = true
+    ~ ed_can(-3)
+    _Bạn dựng như dựng quảng cáo tiệm ốc: nhanh, gọn, không nhìn kỹ. Lưu xong là gập máy. Có những thứ dựng xong rồi mới thấy sợ._
 - -> END

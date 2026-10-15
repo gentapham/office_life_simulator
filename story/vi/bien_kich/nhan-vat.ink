@@ -26,6 +26,7 @@ ran_doc: Chị {bien_kich}! Nói nhỏ thôi nha… chị đang viết gì về 
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Em ký cho chị dùng tên em trong tiểu thuyết nha?"]
     ran_doc: Được thôi. *(ký nhanh, chữ ký rất đẹp)* Nhớ viết tui là người tốt nha chị.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Hông biết gì hết em."]
     ~ bk_that(1)
 - -> END
@@ -58,6 +59,7 @@ giam_doc: {bien_kich} à! Đúng lúc quá. Anh đang cần một câu slogan ch
     giam_doc: *(ký luôn, không đọc)* Ký! Anh tin em.
     _Ký mà không đọc. Đúng nhân vật. Bạn không biết nên vui hay lo._
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Dạ em viết chơi thôi anh."]
     ~ bk_lo(-2)
 - -> END
@@ -87,6 +89,7 @@ truong_phong: {bien_kich}, rảnh không? Mình sync nhanh 5 phút về tiến �
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Em note. Mà anh ký giúp em tờ này: đồng ý cho em viết anh vào tiểu thuyết."]
     truong_phong: Tiểu thuyết à? *(ký)* Viết anh chăm chỉ nhé. Đừng viết chuyện họp.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [🙅 "Anh nhờ {thuc_tap_sinh} đi, ảnh note đẹp hơn em."]
     truong_phong: Ừ… cũng đúng.
 - -> END
@@ -116,6 +119,7 @@ thanh_ninh: Chị {bien_kich} ơi, chị nói em nghe nè. Tuần này sếp c�
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Bà ký cho tui dùng tên bà trong sách hông?"]
     thanh_ninh: Ký… nhưng chị đổi giùm em cái nghề. Đừng ghi là trợ lý. Ghi là… cố vấn chiến lược.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Nói là chị chưa viết gì."]
     ~ bk_lo(-2)
 - -> END
@@ -145,6 +149,7 @@ hong_hot: Bà! Nghe gì chưa? Tui có tin này nóng hổi, mà bà phải đ�
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Tiểu thuyết. Có bà trong đó. Bà ký cho tui để tên thật nha."]
     hong_hot: TUI LÀ NHÂN VẬT?! Ký! Ký ba lần cũng được! Viết tui xinh nha!
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
     ~ qh("hong_hot", 5)
 + [🎭 "Bí mật quốc gia."]
     hong_hot: Bí mật thì sớm muộn gì cũng tới tai tui. Tui chờ.
@@ -172,6 +177,7 @@ con_ong_chau_cha: Ủa {bien_kich}. Chill hông? Tui mới mở cà phê Sống 
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Đổi lại, ông ký cho tui dùng tên ông trong tiểu thuyết."]
     con_ong_chau_cha: Được. Mà đừng viết tui là "cháu giám đốc". Viết tui là… một người đang tập tự lập.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Tui chỉ viết văn xuôi thôi."]
     con_ong_chau_cha: Ờ. Tiếc ghê.
 - -> END
@@ -199,6 +205,7 @@ chua_te_deadline: *(đang lướt Tóp-tóp)* {bien_kich}. Còn sớm mà. Chill
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Ký cho tui để tên ông trong sách, tui viết ông thành người làm xong việc sớm."]
     chua_te_deadline: Hư cấu dữ vậy? Ký. Hư cấu thì tui chịu.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Hết câu rồi."]
     chua_te_deadline: Ok mom.
 - -> END
@@ -229,6 +236,7 @@ thuc_tap_sinh: Dạ chị {bien_kich}! Chị cần em pha cà phê, photo, hay c
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Anh ký cho chị viết anh vào tiểu thuyết nha?"]
     thuc_tap_sinh: Dạ em ký ạ! Mà… em có được đọc trước hông ạ?
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [🎭 "Để luyện cho anh quen. Mai mốt anh làm sếp."]
     thuc_tap_sinh: Dạ? Dạ thôi chị ơi!
 - -> END
@@ -256,6 +264,7 @@ ke_toan: {bien_kich}. Em đề xuất mua cái máy đánh chữ cho công ty à
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Chị ký cho em dùng tên thật được hông chị?"]
     ke_toan: *(đọc kỹ tờ giấy hai lần, cả mặt sau)* Được. Có chữ ký, có ngày tháng. Hợp lệ.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Dạ."]
     -> END
 - -> END
@@ -283,6 +292,7 @@ hr: {bien_kich} rảnh không, lên phòng anh uống trà xíu.
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Anh ký cho em viết anh vào sách. Em viết anh hiền hơn ngoài đời."]
     hr: Hiền hơn ngoài đời? *(cười thật lần đầu)* Ký.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 Uống hết trà, cảm ơn, đi về.]
     ~ cang_thang(-5)
 - -> END
@@ -313,6 +323,7 @@ it: Gì.
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Anh ký cho em để tên anh trong tiểu thuyết."]
     it: *(ký)* Viết ít thoại thôi.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Hết rồi anh."]
     -> END
 - -> END
@@ -339,6 +350,7 @@ idol_het_thoi: *(kính đen, trong nhà)* Em biết anh là ai không?
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Đổi lại, anh ký cho em viết anh vào tiểu thuyết."]
     idol_het_thoi: Ký. Mà nhớ ghi là "ngôi sao". Không có "hết thời".
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [📎 "Em mượn đại giai điệu cũ rồi đổi lời được hông anh?"]
     idol_het_thoi: Mượn? Em biết anh là ai không?
     ~ qh("idol_het_thoi", -5)
@@ -370,6 +382,9 @@ quan_ly_idol: *(tay trái một điện thoại, tay phải một điện thoạ
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Anh ký cho em để tên anh trong sách. Em hứa viết anh là người tốt nhất công ty."]
     quan_ly_idol: Ký. Mà đừng viết anh có thời gian ngủ. Không ai tin đâu.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
++ [😶 "Dạ không có gì đâu anh."]
+    quan_ly_idol: Ừ. *(điện thoại lại reo)* Khoan, anh nghe máy chút…
 - -> END
 
 // ------------------------------------------------------------
@@ -402,6 +417,9 @@ editor: *(ngáp)* Dạ chị {bien_kich}… đợi render xong…
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Em ký cho chị viết em vào sách nha. Chị viết em là người dựng giỏi nhất."]
     editor: Dạ… ghi đúng tên em nha chị. Lần này thôi.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
++ [😶 "Thôi em làm tiếp đi."]
+    editor: Dạ… render xong là xong.
 - -> END
 
 // ------------------------------------------------------------
@@ -431,6 +449,7 @@ designer: Gì? Bà tới "tham khảo" cái gì nữa?
     designer: Bìa trong ghi tên tui to. Không thì không ký.
     bien_kich: To. Hứa.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [🎭 "Không cần. Phim tui tự đẹp."]
     designer: Ờ. Tự đẹp. Để coi.
     ~ qh("designer", -3)
@@ -457,6 +476,7 @@ sales: Chị {bien_kich}… à em… à chị ơi! Tin chị đi, chị có deal
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Em ký cho chị để tên em trong sách hông? Viết em là sales giỏi nhất."]
     sales: Ký! No cap! Mà viết KPI của em 300% nha.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [🎭 "Em nhỏ nhất công ty mà nói như sếp tổng ghê."]
     sales: Tuổi là con số. Deal mới là đời.
 - -> END
@@ -486,6 +506,7 @@ chi_dai: {bien_kich}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Chị ký giùm em tờ đồng ý."]
     chi_dai: *(ký, nét chữ như dao)* Viết sai một chữ chị tìm tới nhà.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Dạ đâu có chị."]
     chi_dai: Ừ. Chị tin. Tạm.
 - -> END
@@ -511,6 +532,7 @@ dan_dau_tu: *(che màn hình)* {bien_kich}! Em đừng nhìn. Chart đang đẹp
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Anh ký cho em để tên thật nha."]
     dan_dau_tu: Ký. Chữ ký anh sau này có giá đó.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [🎭 "Viết anh là cây nến đỏ."]
     dan_dau_tu: Nến đỏ là đáy. Đáy là cơ hội. Cảm ơn em.
 - -> END
@@ -534,9 +556,11 @@ thanh_xin_nghi: *(giọng yếu ớt)* {bien_kich} ơi… tui hơi sốt… bà 
 * [🖋️ "Đổi rồi. Ông tên 'Sang', bà ngoại ông tên 'Bà Nội'."]
     thanh_xin_nghi: Ờ… vậy cũng được. Lạ mà được.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Hay ông ký cho tui dùng tên thật? Tui viết ông thành ca sĩ."]
     thanh_xin_nghi: *(ngập ngừng, rồi ký)* Ca sĩ thì… được. Ghi là "giọng ca ước mơ".
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 "Chưa biết nữa."]
     ~ bk_lo(2)
 - -> END
@@ -563,6 +587,7 @@ bac_bao_ve: Ừ. Cháu ngồi đi. Uống trà đá không?
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Bác ký cho con dùng tên bác trong sách nha. Con viết bác là người giữ cửa."]
     bac_bao_ve: *(cầm bút rất lâu, rồi ký)* Giữ cửa thì được. Còn giữ gì khác thì cháu đừng viết.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [😶 Gật đầu, uống nốt ly trà.]
     -> END
 - -> END
@@ -594,6 +619,7 @@ sieu_nhan_hong: Biến hình! Ủa, em biên kịch nè! Hồng không phải m�
 * {bk_trang_tieu_thuyet >= 30} [🔒 "Anh ký cho em viết anh vào sách nha. Em không viết chuyện cái mũ."]
     sieu_nhan_hong: Ký! *(ký bằng bút hồng, kèm hình trái tim)* Mà em không viết chuyện cái mũ thiệt nha.
     ~ bk_chu_ky_dong_y = bk_chu_ky_dong_y + 1
+    ~ bk_lo(-3)
 + [🎭 "Bí mật nghề nghiệp."]
     sieu_nhan_hong: Ờ! Anh cũng có bí mật nghề nghiệp! *(chỉ vào mũ)*
 - -> END

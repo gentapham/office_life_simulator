@@ -168,7 +168,18 @@ idol_het_thoi: Bài của anh. Người ta cho em hát bài của anh. Em biết
 === sieu_nhan_hong_1610_gameshow ===
 # ngay:16 # gio:19:00 # noi:dai_tivi_hong # bat_buoc
 _Gameshow "Hồng Hay Không Hồng". Đèn sân khấu chói lóa. Khán giả trường quay vỗ tay theo nhạc._
-mc_tivi_hong: Xin chào quý vị và các bạn! Khách mời hôm nay: Siêu Nhân Hồng!
+_Phòng chờ 5 phút trước giờ lên sóng. Gương to, đèn vàng, một đĩa bánh chuối chiên mà ai đó ở công ty đã gửi tới tận đài. Điều khoản số 4._
+thanh_xin_nghi: Anh ơi, lên sóng trực tiếp đó. Đừng chạy đi giúp ai giữa chừng nha. Em xin anh.
+* [🙂 Tháo mũ, hít thở sâu trước gương.]
+    _Trong gương là Nguyễn {sieu_nhan_hong}, mặt tái, tay run. Bạn nhìn cái mặt đó 10 giây. Rồi đội mũ lại. Siêu Nhân Hồng nhìn lại bạn, tự tin._
+    ~ cang_thang(-10)
+* [📱 Nhắn {chua_te_deadline}: "Em có coi hông?"]
+    chua_te_deadline: *(tin nhắn)* Coi gì anh? À gameshow. Em đang ở quán bida, tivi có chiếu. Chill. Hát đúng lời là được.
+    ~ snh_tim(3)
+* [🍌 Ăn hết đĩa bánh chuối chiên.]
+    ~ an(20)
+    thanh_xin_nghi: Anh ăn nhiều vậy lát vượt chướng ngại vật sao anh?!
+- mc_tivi_hong: Xin chào quý vị và các bạn! Khách mời hôm nay: Siêu Nhân Hồng!
 -> sieu_nhan_hong_mg_gameshow
 
 // ------------------------------------------------------------

@@ -21,7 +21,7 @@
 - "thuc_tap_sinh": ~ return "Phòng 12, dãy B, Hẻm 69. Ba người ở chung còn ngáy. Tháp mì gói vẫn đứng vững."
 - "it": ~ return "Phòng server công ty. Quạt tản nhiệt ru bạn ngủ như mưa."
 - "dan_dau_tu": ~ return "Gác lửng Hẻm 69. Màn hình chart sáng cả đêm, toàn màu đỏ."
-- "giam_doc": ~ return "Biệt thự số 1, Đồi {hong_hot} Hàng. Rộng, đẹp, và không thật sự là của bạn."
+- "giam_doc": ~ return "Biệt thự số 1, Đồi Ngân Hàng. Rộng, đẹp, và không thật sự là của bạn."
 - "con_ong_chau_cha": ~ return "Penthouse tầng 30, Sky Ảo. Bể cá to hơn phòng trọ của người khác."
 - "idol_het_thoi": ~ return "Căn 1808, Sky Ảo. Poster của chính bạn năm 2015 nhìn xuống giường."
 - "sales": ~ return "Căn 1203, Sky Ảo. Nội thất sang. Tủ lạnh trống."
@@ -251,7 +251,7 @@ _Một chiếc xe màu hồng đỗ chéo ngay giữa cổng. Một người m�
     _{chi_dai} dẫn bạn tới bàn đầu tiên. Người ngồi đó là {thuc_tap_sinh}, đứng bật dậy cúi chào 90 độ._
     thuc_tap_sinh: Dạ em chào anh ạ! Em là {thuc_tap_sinh}, thực tập sinh ạ!
 - else:
-    ran_doc: Chào {chung_ban_hoa("ran_doc")}! {chung_toi_hoa("ran_doc")} là {ran_doc}, truyền thông nội bộ. Sinh nhật {chung_ban("ran_doc")} ngày mấy? {chung_toi_hoa("ran_doc")} ghi lại, sau này tổ chức.
+    ran_doc: Chào {chung_goi("ran_doc")}! {chung_xung_hoa("ran_doc")} là {ran_doc}, truyền thông nội bộ. Sinh nhật {chung_goi("ran_doc")} ngày mấy? {chung_xung_hoa("ran_doc")} ghi lại, sau này tổ chức.
 }
 * [😇 Bắt tay thân thiện.]
     { vai == "ran_doc":

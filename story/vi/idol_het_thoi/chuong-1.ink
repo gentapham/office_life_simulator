@@ -167,6 +167,12 @@ chua_te_deadline: Anh Phát, nghe nói anh đóng phạt tháng này 0 đồng. 
     chua_te_deadline: Ủa thiệt hả? Vậy mai mình đua coi ai trễ hơn.
     ~ qh("chua_te_deadline", 5)
     ~ phat_tt(-2)
+* [🧂 "Bí kíp là anh {hr} hông dám phạt người từng hát ở đám cưới ổng."]
+    chua_te_deadline: Ủa thiệt hả? Anh {hr} cưới rồi hả?
+    _Chưa. Bạn bịa. {chua_te_deadline} kể lại cho cả tầng trong 10 phút. {hr} nghe được lúc 15 giờ 20._
+    ~ qh("chua_te_deadline", 3)
+    ~ qh("hr", -5)
+    ~ phat_tt(3)
 - ~ uong(25)
 ~ an(5)
 -> END
@@ -246,9 +252,9 @@ _Tin nhắn từ "Like Thật 100%": "Gói tháng của anh hết hạn ngày 5/
 * [💸 Chỉ gia hạn gói cũ, không mua thêm.]
     ~ phat_them_no(1500000)
     _80.000 tài khoản hoa sen tiếp tục yêu bạn thêm một tháng._
-* [😶 Để đó, chưa bấm gì. Mở clip "Công Viên" năm 2015 ra coi.]
-    _Clip quay ở hội chợ. Trời mưa. Một cậu kỹ thuật viên trẻ đang kéo dây loa thì bị điện giật nhẹ, nhảy dựng lên. Khán giả tưởng là múa phụ họa, vỗ tay rần rần._
-    _Năm 2015, không có ai tên hoa sen. Ai cũng có mặt._
+* [😶 Để đó, chưa bấm gì. Mở clip "Công Viên" hồi xưa ra coi.]
+    _Clip quay ở hội chợ năm 2016, cuối tour "Công Viên". Trời mưa. Một cậu kỹ thuật viên trẻ đang kéo dây loa thì bị điện giật nhẹ, nhảy dựng lên. Khán giả tưởng là múa phụ họa, vỗ tay rần rần._
+    _Hồi đó, không có ai tên hoa sen. Ai cũng có mặt thật._
     ~ phat_tt(-3)
     ~ cang_thang(5)
 - _Điện thoại báo tin nhắn mới. Máy của anh {quan_ly_idol}, 22:47: "Mai 6 giờ chiều khai trương tiệm trà sữa nha em. Đừng đeo kính đen trong tiệm, tối lắm."_

@@ -11,19 +11,20 @@ _Tư liệu: 14 ảnh {giam_doc} chụp với người nổi tiếng (người n
 * [🎬 Dựng hoành tráng: nhạc sử thi, slow-motion cú đánh golf… cắt trước lúc hụt bóng.]
     ~ qh("giam_doc", 10)
     ~ uy_tin = uy_tin + 3
+    ~ ed_thuc_dem()
     giam_doc: *(xem xong, mắt ướt)* Đây. Đây là anh. Đây là văn hóa.
     _{giam_doc} đăng lúc 17:00. 41 lượt thích. 40 lượt là nhân viên. 1 lượt là ngân hàng._
 * [😏 Dựng hoành tráng… nhưng để nguyên cú hụt bóng, kèm hiệu ứng âm thanh "toang".]
     ~ qh("giam_doc", -5)
     ~ qh("hong_hot", 5)
     ~ follow(3000)
+    ~ ed_thuc_dem()
     giam_doc: *(xem, im lặng, rồi bật cười)* Thôi được. Đời doanh nhân cũng có lúc hụt. Đăng.
     _Video được chia sẻ trong group "Hội Anti Sếp" 14 lần. Một tài khoản tên "Hoa Hướng Dương 1989" thả haha đầu tiên._
 * [🦉 Dựng bình thường, ba phút, gọn. Giấu con cú trên tấm bằng BTT Global.]
     ~ ed_dau_cu_chung_minh = ed_dau_cu_chung_minh + 1
     _Con cú đậu trên chữ "Global". 1/25 giây. Bạn thấy hợp lý: cú đêm và một tập đoàn không tồn tại, hai thứ ít người nhìn thấy._
-- ~ ed_thuc_dem()
--> END
+- -> END
 
 // ------------------------------------------------------------
 === editor_1410_moc_2 ===
@@ -43,7 +44,6 @@ _Thí sinh số 17 bước ra. Áo kim tuyến. Giọng vang như chuông chùa.
     _Năm phút sau: "Trời đất ơi. Thằng này." Rồi: "Đừng ai đăng gì hết." Rồi: "Mà nó hát hay ghê ha."_
     ~ ed_can(2)
 * [📺 Lưu lại clip vào ổ riêng. Biết đâu sau này cần.]
-    ~ ed_sub_cong(0)
     _Thư mục "Lưu_phòng_khi_cần" có thêm một file. Bạn không phải người hay dùng bí mật. Bạn chỉ là người hay lưu file._
 - -> END
 

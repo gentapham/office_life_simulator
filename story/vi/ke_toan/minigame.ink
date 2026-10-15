@@ -118,12 +118,19 @@ _Mỗi cô có một điểm yếu riêng: cô bán thịt thích được khen 
 # noi:cho_pho_cu # dieu_kien:minigame_cho_mac_ca_dat
 _Năm cô bán hàng, năm lần thắng. Tổng hóa đơn ít hơn dự toán gần một phần tư. Cô bán xôi dúi vào tay bạn một gói xôi đậu xanh và một bịch kẹo gừng._
 co_ban_hang: Cho con nhỏ khéo mua nè. Lấy chồng thì nhớ mời cô nha.
-~ kt_quy(4)
 ~ an(35)
 ~ kt_keo(3)
 ~ cang_thang(-10)
-_Bạn ghi vào sổ: "Tiết kiệm 4 triệu. Có hóa đơn tay, đủ chữ ký của năm cô." Năm chữ ký, nhiều hơn đơn mua bút bi._
--> END
+_Tiết kiệm được 4 triệu so với dự toán. Hóa đơn tay, đủ chữ ký của năm cô. Năm chữ ký, nhiều hơn đơn mua bút bi._
+* [🧾 Ghi đủ 4 triệu tiết kiệm vào Quỹ Công Ty.]
+    ~ kt_quy(4)
+* {not kt_quy_den_nop} [🗄️ Ghi dự toán cũ vào sổ công ty. Khoản dôi ra cất két.]
+    ~ kt_cat_ket(4)
+    _Bạn ghi khoản 4 triệu vào cuốn sổ tay riêng, kèm hóa đơn tay của năm cô. Không ai biết. Trừ cô bán xôi, người đang nhìn bạn đếm tiền._
+    { RANDOM(1, 10) <= 2:
+        ~ kt_them_dau_vet(1)
+    }
+- -> END
 
 === ke_toan_mg_cho_mac_ca_that_bai ===
 # noi:cho_pho_cu # dieu_kien:minigame_cho_mac_ca_truot

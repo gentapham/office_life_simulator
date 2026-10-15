@@ -15,6 +15,14 @@
 // 2. chung_ngoi_ba(ma) : "ổng" / "bả" / "nó" (Tuất), dùng khi buôn chuyện.
 //    chung_ten_buon(ma): "ông Long", "bà Ngân", "bác Bình", "sếp Thắng", "con Tuất".
 // 3. Biến chung cho Đêm Hồng & kết thúc sự nghiệp (game hoặc file nhân vật đặt).
+// 4. Mã người nói cho NPC phụ (không có biến tên, game hiển thị tên cố định):
+//      npc_teo (Anh shipper Tèo), npc_ba_tu (Bà Tư chủ trọ), npc_chu_sau (Chú Sáu
+//      karaoke), npc_co_bay (Cô Bảy bánh mì), npc_ong_ba (Ông Ba trà đá),
+//      npc_co_nam (Cô Năm cơm tấm), npc_khoa (Thu ngân ca đêm Khoa),
+//      npc_chi_nail (Chị chủ tiệm nail Lung Linh), npc_bac_si (Bác sĩ Khỏe Re),
+//      npc_grab (Tài xế Grab hay hủy chuyến), npc_paparazzi (Paparazzi Mắt Diều Hâu),
+//      npc_fan_phat (Fan cuồng số 1 của Phát), npc_thu_ky_ll (Thư ký của Lưu Lực),
+//      npc_cam_do (Chủ tiệm cầm đồ Cứu Nguy), npc_cong_an (Anh công an phường).
 // ============================================================
 
 // ---------- Biến cho Đêm Hồng & kết thúc sự nghiệp ----------

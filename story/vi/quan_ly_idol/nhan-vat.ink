@@ -436,16 +436,16 @@ thanh_xin_nghi: *(ho nhẹ)* Anh Thái… em hơi sốt. Chiều nay em xin…
 // ------------------------------------------------------------
 === quan_ly_idol_tudo_bac_bao_ve ===
 # npc:bac_bao_ve
-bac_bao_ve: Cậu Thái. Ngồi uống chén trà đá. Cậu đi qua đi lại cổng này hai mươi lần một ngày rồi đấy.
+bac_bao_ve: Thái à. Ngồi uống chén trà đá. Cháu đi qua đi lại cổng này hai mươi lần một ngày rồi đấy.
 * [😇 "Dạ, em ngồi chút."]
     _Bác rót trà. Radio phát bài hát cũ. Bạn tắt một máy. Rồi tắt luôn máy kia._
-    bac_bao_ve: Năm 2015 cậu cũng đi qua cổng này hai mươi lần một ngày. Đi theo thằng Phát.
+    bac_bao_ve: Năm 2015 cháu cũng đi qua cổng này hai mươi lần một ngày. Đi theo thằng Phát.
     ~ qh("bac_bao_ve", 8)
     ~ uong(15)
     ~ thai_p(10)
 * [📱 "Dạ em có việc, bác ơi."]
     bac_bao_ve: Ừ. Đi đi.
-- bac_bao_ve: Bác hỏi cậu một câu. Người ta ở lại một chỗ mười hai năm, là vì chỗ đó, hay vì người ở chỗ đó?
+- bac_bao_ve: Bác hỏi cháu một câu. Người ta ở lại một chỗ mười hai năm, là vì chỗ đó, hay vì người ở chỗ đó?
 * [😶 Im lặng. Uống trà.]
     bac_bao_ve: *(gật đầu)* Ừ. Bác cũng thế. Mười sáu năm rồi.
     _Bác nói về ai thì bác không nói. Bác uống trà, như chưa nói gì._

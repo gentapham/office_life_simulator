@@ -169,7 +169,11 @@ _Giữa buổi, {hong_hot} đưa micro cho bạn. Ống kính chĩa vào bạn. 
 * [⏱️ (Không chọn kịp)]
     _Cái bánh đổ. {idol_het_thoi} đứng cạnh bàn bánh, phủi tay: "Con chó! Con chó làm đó!". Con chó ở cách đó 2 mét._
     ~ follow(20000)
-- -> END
+- { snh_mo_nhanh_hieu_ech:
+    _Cuối buổi, bạn cắt miếng bánh còn sót lại, đưa {ran_doc} trước tiên. "Em nhỏ hơn anh, phần em trước." Lần này hông ai giật của ai._
+    ~ snh_hieu(-5)
+}
+-> END
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_2310_dem_12_ghe ===
@@ -207,6 +211,7 @@ _Cùng lúc, {hong_hot} chìa điện thoại: clip {idol_het_thoi} hát trong b
     ~ follow(10000)
     ~ qh("idol_het_thoi", 25)
     ~ qh("quan_ly_idol", 15)
+    ~ snh_hieu(-3)
     _Clip hát lấn át phốt fan ảo. {idol_het_thoi} nhắn riêng bạn, lần đầu tiên không kèm câu "em biết anh là ai không": "Cảm ơn em."_
 * [😶 Ngồi một góc, ăn bánh.]
     _Không ai cần bạn hòa giải. Hay là ai cũng cần, mà bạn không đủ sức._
@@ -243,7 +248,8 @@ _Bạn ngồi hàng cuối, không thở. Cái áo sơ mi trắng. Cái cặp da
 _{thuc_tap_sinh} ngồi hàng đầu, nắm chặt tay vịn ghế. Cậu ta không biết người đẩy xe hôm đó đang ngồi sau lưng mình._
 * [🙂 Sau buổi chiếu, kéo {thuc_tap_sinh} ra hành lang: "Hôm đó mưa lớn ha. Cái cặp da của em ướt hết."]
     thuc_tap_sinh: *(sững người)* Dạ… sao anh biết… Là anh hả? Là anh hả anh?!
-    _{thuc_tap_sinh} ôm chầm lấy bạn. Một người 30 tuổi khóc như con nít giữa hành lang._
+    _{thuc_tap_sinh} ôm chầm lấy bạn. Một người 30 tuổi khóc như con nít giữa hành lang. Ở cuối hành lang, {ran_doc} đứng nhìn, rồi lặng lẽ quay đi._
+    ~ snh_hieu(-5)
     thuc_tap_sinh: Hôm đó em định quay lại ngân hàng. Anh đẩy xe xong, em nghĩ… đời còn người tốt, em thử làm cái mình thích.
     ~ qh("thuc_tap_sinh", 25)
     ~ snh_no(-5)

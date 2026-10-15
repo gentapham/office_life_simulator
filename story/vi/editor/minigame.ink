@@ -58,7 +58,7 @@ _Phần thưởng: 200.000đ và một lon nước tăng lực "Trâu Cụng". U
 === editor_mg_dua_render_thua ===
 _99%. "Lỗi xuất file." Bạn nhìn con số 99 rất lâu, như nhìn một người quen._
 ~ ed_loi_99 = ed_loi_99 + 1
-~ ed_thuc_dem()
+~ nghi(-15)
 ~ cang_thang(10)
 { ed_loi_99 >= 5:
     _Lần thứ năm. Bạn không còn giận nữa. Bạn và con số 99 đã thành bạn bè._

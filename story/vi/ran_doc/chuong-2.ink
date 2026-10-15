@@ -14,7 +14,6 @@ truong_phong: Mốc 1 là thứ 4 này, 50.000 người theo dõi. Hiện tại 
     truong_phong: Đơn giản mà hiệu quả. Cái này mình take note nhé.
     ~ rd_giup(5000)
     ~ uy_tin = uy_tin + 3
-    ~ rd_han(2)
     _Bạn vừa giúp kẻ thù. Để không ai nghi, đôi khi phải vậy._
 * [🐍 Thì thầm với {thuc_tap_sinh}: "Ông biết hông, đứa thực tập trước bị ổng đuổi vì pha cà phê ngọt quá đó."]
     thuc_tap_sinh: *(tái mặt)* Dạ… dạ thật hả anh? Sáng nay em pha cho ảnh hai muỗng đường…
@@ -77,6 +76,8 @@ _File poster gốc đang mở trên laptop của {designer}. {designer} đi ra n
     ~ rd_giup(5000)
     ~ qh("designer", 10)
     designer: Cảm ơn ông! Tưởng nay lại phải sửa lần thứ 12.
+    sieu_nhan_hong: Cảm ơn em nha! Đèn đẹp ghê!
+    ~ rd_han(-3)
 * [😶 Đứng xem, không làm gì.]
     _Bạn khoanh tay đứng xem. Đứng xem cũng là một kỹ năng._
 - _Đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ. Dưới lề đường, một bà cụ bị kẹt bánh xe lăn ở rãnh nước._
@@ -133,6 +134,8 @@ _Mốc 1. Màn hình to giữa tầng 1 hiện con số người theo dõi của
     _{nguoi_theo_doi} người. Không đạt. {giam_doc} đứng giữa phòng, mặt đỏ tía tai._
     giam_doc: Họp khẩn! Tất cả lên phòng họp! Anh truyền lửa cho các em 3 tiếng!
     _3 tiếng sau, lửa thì chưa thấy, chỉ thấy cả công ty khét như cơm cháy._
+    _Cuối buổi, {sieu_nhan_hong} đi từng bàn, cúi đầu xin lỗi từng người, rồi xuống tiệm mua nước suối cho cả công ty. Bạn cầm chai nước, không mở._
+    ~ rd_han(-3)
     ~ cang_thang(15)
     ~ tinh_than_cong_ty = tinh_than_cong_ty - 5
 }
@@ -221,9 +224,9 @@ sieu_nhan_hong: Cả nhà ơi! Cảm ơn mọi người! Hồng không phải m�
 _Mọi người vỗ tay. {sieu_nhan_hong} đi bắt tay từng người, tới bạn thì giơ tay đập tay._
 sieu_nhan_hong: High five nè em!
 * [😇 Đập tay.]
-    sieu_nhan_hong: Tay em khỏe ghê, lần trước bắt tay anh nhớ hoài!
-    _Nhớ cái bắt tay. Mà không nhớ cái mặt._
-    ~ rd_han(3)
+    sieu_nhan_hong: Cảm ơn em đã tới nha. Anh thấy em vỗ tay to nhất đó.
+    _Bạn vỗ tay to nhất vì sợ người ta để ý mình không vỗ. Hắn lại tưởng thật._
+    ~ rd_han(-3)
 * [😶 Để tay hắn lơ lửng giữa không trung.]
     _{sieu_nhan_hong} giữ tay thêm 2 giây, rồi tự đập vào tay mình, cười xòa._
     chi_dai: *(nhìn bạn)* …
@@ -333,7 +336,9 @@ _Nhưng ở quầy lễ tân, {con_ong_chau_cha} đang nhìn cái máy quẹt th
 con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Sao lại từ chối? Để anh gọi chú anh.
 _Cùng lúc đó, {thuc_tap_sinh} rút ví trả tiền cà phê cho cả phòng. Một cái thẻ đen viền kim cương rơi xuống sàn._
 hong_hot: Ủa alo? Thẻ kim cương? Thực tập sinh mà thẻ kim cương?!
-thuc_tap_sinh: Dạ… dạ… thẻ… của ba em… à không, của… người quen ạ!
+thuc_tap_sinh: Dạ… dạ… thẻ… của… người quen ạ!
+_{sieu_nhan_hong} bước ra giữa sảnh, tạo dáng thật lố cho cả sảnh nhìn sang. Lúc quay lưng, hắn lấy chân đẩy cái thẻ về phía {thuc_tap_sinh}. Bạn thấy._
+~ rd_han(-3)
 * [🔥 "{con_ong_chau_cha} ơi, thẻ phụ của sếp mà bị từ chối, chắc tài khoản sếp có chuyện rồi đó."]
     ~ rd_tung_tin(10, 8)
     con_ong_chau_cha: *(mặt tái)* Ủa… vậy hả? Chú anh… hông có nói gì hết.
@@ -400,4 +405,14 @@ _1989. Năm sinh của {giam_doc}. Sếp ngồi trong group nói xấu sếp, t�
 _Bản Tin Thứ 2 số đầu tiên của bạn. {truong_phong} muốn nó lên trước 17:00._
 truong_phong: Em gửi anh trước 17 giờ nhé. Nhớ có mục "Câu chuyện cảm hứng" và một chút hồng.
 _Trong sổ tay của bạn có {rd_so_tin_mat} tin mật. Cái nào an toàn, cái nào cay?_
--> ran_doc_mg_ban_tin
+hong_hot: *(ghé qua vai bạn)* Ê, bản tin số đầu hả? Cho tui một góc "Ai là người…" đi. Hóng lắm á.
+* [😇 "Bản tin nội bộ chứ có phải confession đâu bà."]
+    hong_hot: Chán ông ghê. *(đi về bàn, nhưng vẫn ngoái lại)*
+    ~ rd_tin(2)
+* [🧂 "Có góc 'Ai là người…'. Mà bà phải kể tui một chuyện trước."]
+    hong_hot: Deal! Nghe nói tủ lạnh tầng 1 mất hộp cơm lần thứ 6, mà người ăn vụng có đeo kính đen trong nhà!
+    ~ rd_tin_mat()
+* [💬 Hỏi {thuc_tap_sinh} xin một "câu chuyện cảm hứng" cho mục chính.]
+    thuc_tap_sinh: Dạ… em kể chuyện em 30 tuổi đi thực tập được không ạ? Em… em thấy cũng cảm hứng ạ.
+    ~ qh("thuc_tap_sinh", 5)
+- -> ran_doc_mg_ban_tin

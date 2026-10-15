@@ -50,7 +50,7 @@
 # ngay:31 # gio:21:45 # noi:san_khau_dem_hong
 _Đêm Hồng. 21 giờ 45. Trên màn hình lớn, bộ đếm người theo dõi của {sieu_nhan_hong} chạy như đồng hồ đếm ngược ngày Tết._
 _999.812. 999.904. 999.977._
-_Cả nghìn người đếm to theo. {hong_hot} hét vào micro livestream. {giam_doc} trong bộ Ông Kẹ Ngân Hàng nắm tay {ke_toan}, {ke_toan} không rút tay ra._
+_Cả nghìn người đếm to theo. {hong_hot} hét vào micro livestream. {giam_doc} trong bộ Ông Kẹ Ngân Hàng ôm chầm lấy {it}, {it} không kịp né._
 _1.000.000._
 _Pháo hoa hồng nổ. Sân khấu rung lên. {sieu_nhan_hong} nhảy cẫng, cái mũ suýt văng._
 _Cùng lúc đó, sau khán đài, trong cái lều đen, điện thoại của bạn rung một cái._

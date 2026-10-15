@@ -177,7 +177,6 @@ sieu_nhan_hong: {cho} ơi! Gâu gâu! Anh về nha! Biến hình! *(nhảy lên 
 cho: GÂU GÂU GÂU GÂU!
 bac_bao_ve: Thế đấy. Ngày nào nó cũng thế.
 _Bạn nhìn chiếc xe hồng khuất dần. Hai mươi năm rồi mà cái tật chọc người khác vẫn y nguyên._
-~ rd_han(5)
 -> END
 
 // ------------------------------------------------------------
@@ -296,7 +295,20 @@ ba_tu: Hôm qua con {hong_hot} phòng bên nói ổng giàu lắm, tiền đựn
     ba_tu: Con này ngoan. Trọ ở đây ba năm chưa ai đưa sớm. Có gì cần cứ nói bà.
     _Bà Tư biết hết chuyện cả hẻm. Có bà đứng về phía mình là có cả một mạng lưới._
     ~ rd_tin_mat()
-- _Chiều, bạn ngồi quán trà đá đầu hẻm, mở Phây-búc của Siêu Nhân Hồng. 5.400 người theo dõi. Bài đăng mới nhất: "Hôm nay Hồng giúp một chị bán vé số đẩy xe! Slay!"_
+- _Chiều, đầu hẻm. Một bộ đồ hồng đang khiêng giùm ông Ba trà đá mấy két nước ngọt. Không ai quay. Không ai biết. Hắn không thấy bạn._
+* [😶 Đứng nhìn từ xa.]
+    ~ rd_han(-8)
+    _Hắn khiêng xong, cúi đầu chào ông Ba, rồi đi. Không tạo dáng. Không có ai để tạo dáng cho._
+* [🤝 Ra phụ một tay.]
+    ~ rd_han(-10)
+    ~ qh("sieu_nhan_hong", 5)
+    sieu_nhan_hong: Ủa em! Em ở hẻm này hả? Cảm ơn nha! Nặng ghê!
+    _Hai người khiêng két nước. Hắn không nhận ra bạn. Nhưng hắn nói "cảm ơn" tới ba lần._
+* [🐍 Nói với ông Ba: "Ổng diễn đó ông. Lát có người quay cho coi."]
+    ong_ba_tra_da: Quay gì con. Thằng nhỏ tuần nào cũng ghé, có ai quay đâu.
+    ~ rd_han(3)
+    ~ rd_biet_chuoc_loi = true
+- _Tối, bạn mở Phây-búc của Siêu Nhân Hồng. 5.400 người theo dõi. Bài đăng mới nhất: "Hôm nay Hồng giúp một chị bán vé số đẩy xe! Slay!"_
 _Bạn bấm "Ẩn bài viết". Rồi lại bấm vào xem lại._
 -> END
 

@@ -149,6 +149,14 @@ sieu_nhan_hong: Hôm nay hông có mạng, hông livestream được. Anh đi đ
     ~ rd_han(-10)
     ~ rd_nguyen_xin_loi = true
     _Hắn biết. Hắn biết bạn là người phá. Và hắn vẫn ngồi đây, mua trà cho bạn._
+* {not rd_mo_nhanh_hieu_ech && rd_moi_han < 60} [🔒 "Anh còn nhớ cái nhà kho có lỗ thông gió hình con cá hông?"]
+    _{sieu_nhan_hong} đặt ly trà xuống. Tay run. Nhìn bạn rất lâu._
+    sieu_nhan_hong: …{ran_doc}. {ran_doc} Ếch. Là em hả?
+    sieu_nhan_hong: Anh xin lỗi. Không có camera. Không có ai. Anh xin lỗi em.
+    ~ rd_mo_nhanh_hieu_ech = true
+    ~ rd_nguyen_xin_loi = true
+    ~ rd_han(-20)
+    _Ông Ba trà đá quay đi chỗ khác, quạt mo thật mạnh, như sợ người ta thấy mình nghe._
 * [🐍 "Không có camera thì anh cũng chỉ là người thường thôi ha."]
     sieu_nhan_hong: *(cười rất nhẹ)* Ừ. Anh biết. Anh sợ nhất là người ta biết điều đó.
     ~ rd_han(3)
