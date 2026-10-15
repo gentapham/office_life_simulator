@@ -80,10 +80,6 @@ VAR tp_co_so_ke_o = true
 // Lịch họp cố định mỗi ngày làm việc (giao ban, sync, rà soát…): 3 cuộc, không tính vào "quá tải"
 === function tp_lich_co_dinh() ===
 ~ tp_so_cuoc_hop = tp_so_cuoc_hop + 3
-~ cang_thang(2)
-{ stress >= 100:
-    ~ tp_kiet_suc = true
-}
 
 === function tp_ghe(n) ===
 ~ tp_ghe_pho = tp_kep(tp_ghe_pho + n)

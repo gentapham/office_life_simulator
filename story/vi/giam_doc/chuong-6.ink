@@ -5,6 +5,11 @@
 // ------------------------------------------------------------
 === giam_doc_2810_moc_4 ===
 # ngay:28 # gio:10:00 # noi:phong_giam_doc # bat_buoc
+{ gd_hua_leo >= 5:
+    ~ gd_nhan_vien_bo_di = gd_nhan_vien_bo_di + 1
+    ~ gd_uy(-5)
+    _Trên bàn bạn có thêm một lá đơn nghỉ việc. Người nộp sẽ sang LL từ tháng sau. Lá thứ ba kể từ 26/10._
+}
 _Mốc 4: 800.000 người theo dõi. Số hiện tại: {nguoi_theo_doi}._
 { nguoi_theo_doi < 800000:
     _Trượt. Lưu Lực đăng một bài trên Phây-búc: "Có những đối tác xứng đáng với sân khấu lớn hơn."_
@@ -38,6 +43,11 @@ _Cùng lúc, {dan_dau_tu} gõ cửa: bộ lọc số liệu của ông lần ra 
 // ------------------------------------------------------------
 === giam_doc_2910_wifi_sap ===
 # ngay:29 # gio:08:30 # noi:phong_giam_doc # bat_buoc
+{ gd_hua_leo >= 5:
+    ~ gd_nhan_vien_bo_di = gd_nhan_vien_bo_di + 1
+    ~ gd_uy(-5)
+    _Không wifi, nhưng đơn nghỉ việc thì vẫn tới, bằng giấy. Thêm một người sang LL._
+}
 _Ngày Internet Quốc tế. Wifi sập cả tòa nhà. 4G trong phòng kính chỉ có một vạch, chập chờn._
 _Bạn không đọc được group "Hội Anti Sếp". Không nhắn được group công ty. Video của {editor} kẹt ở 99%._
 it: *(chạy qua cửa, cả công ty đuổi theo sau)* Em đang sửa! Em đang sửa! Đừng ai hỏi em restart chưa!
@@ -149,6 +159,11 @@ _Bông hoa hướng dương vẫn ở đó. Ba mươi ngày. Bạn đã sửa {g
 // ------------------------------------------------------------
 === giam_doc_3010_hop_danh_gia ===
 # ngay:30 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
+{ gd_hua_leo >= 5:
+    ~ gd_nhan_vien_bo_di = gd_nhan_vien_bo_di + 1
+    ~ gd_uy(-5)
+    _Phòng họp có vài ghế trống. Những người đã nộp đơn sang LL không tới họp nữa._
+}
 _Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng "Sáng Tạo". Không ai cầm gối. Hôm nay ai cũng tỉnh._
 _Trên bàn: hợp đồng gia hạn của {idol_het_thoi}, hết hạn ngày mai. Danh sách đề cử Phó Giám đốc. Và lời hứa tăng lương, nếu bạn đã lỡ hứa._
 _Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ với người cầm chổi._
