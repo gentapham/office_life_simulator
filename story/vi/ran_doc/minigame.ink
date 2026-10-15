@@ -212,7 +212,7 @@ _Giao đủ, đúng người, đúng giờ. Đi ngang phòng kế toán, bạn n
 - 2:
     _"…danh sách đó anh chưa nộp đâu…" Giọng {hr}._
 - 3:
-    _"…anh Thái mà đi thì ai lo cho ảnh…" Giọng {thanh_xin_nghi}, qua điện thoại._
+    _"…anh {quan_ly_idol} mà đi thì ai lo cho ảnh…" Giọng {thanh_xin_nghi}, qua điện thoại._
 }
 bac_bao_ve: Ừ. Được việc. Uống miếng trà.
 ~ uong(20)

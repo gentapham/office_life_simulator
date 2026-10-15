@@ -53,16 +53,7 @@ hr: Bla bla… bla bla bla? # phu_de:Lại "về quê gặt lúa"? Tháng 10 g�
     ~ phat_hien(son_thi_hat)
 }
 { nguoi_theo_doi < 200000:
-    _Hôm nay là ngày của một con số lớn. Con số không đạt. Chiếc xe hồng không ghé cổng. Nghe nói bộ đồ hồng buồn, đi giúp người cả ngày ở đâu đó._
-    _Cổng yên tĩnh. Không ai giả tiếng sủa. Không ai giấu bóng._
-    * [😴 Ngủ trưa trọn vẹn. Cuối cùng cũng yên.]
-        ~ nghi(30)
-        _Bạn ngủ ngon. Rất ngon. Chỉ là thỉnh thoảng bạn mở một mắt, nhìn ra cổng. Không vì lý do gì cả._
-    * [👃 Ra đứng ở cổng, ngửi về phía đường lớn.]
-        _Bạn đứng ở cổng rất lâu. Gió mang tới mùi khói xe, mùi cơm tấm, không có mùi bánh chuối chiên._
-        _Bạn không nhớ nó. Chắc chắn là không nhớ. Bạn chỉ đứng đó canh, phòng khi nó tới thì sủa._
-        ~ ch_hong_doi(-3)
-    - -> END
+    -> cho_1410_vang_hong
 }
 _Chiếc xe hồng tới. Bộ đồ hồng nhảy xuống, mặt mũ tươi rói. Tay cầm một cây xúc xích._
 sieu_nhan_hong: Gâu! Bla bla… TUẤT… XÚC XÍCH… bla bla! # phu_de:Gâu! {cho} ơi, xúc xích nè! Mốc 2 đạt rồi, anh vui, anh hối lộ em đó!
@@ -84,19 +75,49 @@ sieu_nhan_hong: Gâu! Bla bla… TUẤT… XÚC XÍCH… bla bla! # phu_de:Gâu!
     ~ ch_hong_doi(-4)
 - -> END
 
+= cho_1410_vang_hong
+_Hôm nay là ngày của một con số lớn. Con số không đạt. Chiếc xe hồng không ghé cổng. Nghe nói bộ đồ hồng buồn, đi giúp người cả ngày ở đâu đó._
+_Cổng yên tĩnh. Không ai giả tiếng sủa. Không ai giấu bóng._
+* [😴 Ngủ trưa trọn vẹn. Cuối cùng cũng yên.]
+    ~ nghi(30)
+    _Bạn ngủ ngon. Rất ngon. Chỉ là thỉnh thoảng bạn mở một mắt, nhìn ra cổng. Không vì lý do gì cả._
+* [👃 Ra đứng ở cổng, ngửi về phía đường lớn.]
+    _Bạn đứng ở cổng rất lâu. Gió mang tới mùi khói xe, mùi cơm tấm, không có mùi bánh chuối chiên._
+    _Bạn không nhớ nó. Chắc chắn là không nhớ. Bạn chỉ đứng đó canh, phòng khi nó tới thì sủa._
+    ~ ch_hong_doi(-3)
+- -> END
+
 // ------------------------------------------------------------
 === cho_1410_tu_lanh ===
 # ngay:14 # gio:12:10 # noi:pantry # ngau_nhien
 _Trưa. Pantry. Tủ lạnh chung kêu ù ù. Bên trong là cả một vũ trụ: hộp cơm thịt kho, hộp cơm gà, sữa chua, nửa cái bánh kem từ tuần trước._
 _Bạn nằm rình sau thùng nước suối. Mắt dán vào tay nắm cửa tủ._
--> cho_mg_tu_lanh
+_Bên bàn ăn, {ke_toan} đang ăn trưa, mắt dán vào sổ. {thanh_ninh} đứng pha trà cho sếp, mắt dán vào… mọi thứ._
+* [🦴 Rình. Chờ đúng lúc có người mở tủ.]
+    _Bạn nằm im như một cái thảm chùi chân. Tim đập. Đuôi không được vẫy. Đuôi, làm ơn đừng vẫy._
+    -> cho_mg_tu_lanh
+* [🥺 Thôi, đi xin {ke_toan} cho chắc ăn.]
+    _Bạn ra ngồi trước mặt {ke_toan}. Thẳng lưng. Mắt cún._
+    ke_toan: Bla bla… bla bla bla? # phu_de:Hóa đơn đâu em?
+    { RANDOM(1, 3) == 1:
+        _Người này nhìn bạn rất lâu, rồi gắp một miếng thịt kho, đặt xuống. Rồi ghi sổ._
+        ~ ch_an(15)
+        ~ qh("ke_toan", 2)
+    - else:
+        _Người này lật sang trang sổ mới. Bạn thua. Bạn quay lại sau thùng nước suối._
+    }
+* [👃 Đánh hơi khe cửa tủ lạnh trước, chọn mục tiêu.]
+    ~ ch_mui(2)
+    _Hộp cơm thịt kho: kệ giữa. Sữa chua của {giam_doc}: kệ trên, có dán tên. Nửa cái bánh kem: hôi rồi, bỏ qua. Mục tiêu đã chọn._
+    -> cho_mg_tu_lanh
+- -> END
 
 // ------------------------------------------------------------
 === cho_1510_thang_may ===
 # ngay:15 # gio:08:05 # noi:sanh_tang_tret # bat_buoc
 _8 giờ 5. "Phụt." Tất cả tắt. Đèn, quạt, máy chấm công, cái radio của bác. Cả tòa nhà thở ra một hơi dài rồi im._
 _Rồi từ trong cái hộp sắt giữa sảnh, nơi người ta đứng đi lên đi xuống, vang ra hai giọng nói._
-giam_doc: Bla bla bla! Bla bla! # phu_de:Ơ! Kẹt rồi! Kẹt thang máy rồi! Nhi ơi! Gọi ai đi!
+giam_doc: Bla bla bla! Bla bla! # phu_de:Ơ! Kẹt rồi! Kẹt thang máy rồi! {thanh_ninh} ơi! Gọi ai đi!
 chi_dai: Bla bla. Bla bla bla. # phu_de:Anh bình tĩnh. Đừng có đập cửa. Đập nữa là tui đập anh.
 _Bạn biết giọng thứ hai. Giọng của người tắm cho bạn. Người đó đang bị nhốt trong hộp sắt._
 * [😤 Sủa vào khe cửa thang máy cho tới khi có người tới.]
@@ -236,7 +257,7 @@ _Giọng hát hay. Không giống tiếng người ta hát ở karaoke. Giống 
 _Sáng sớm. Ba chiếc xe tải chở đạo cụ đỗ ở bãi xe, chuẩn bị đi Đài Tivi Hóng. Trong thùng xe có mùi bánh chuối chiên. Rất nhiều bánh chuối chiên._
 _Bạn đã nằm sẵn trong thùng xe số 2 từ 6 giờ. Giữa hai cái hộp đạo cụ. Không ai biết._
 _Rồi tấm bạt bị kéo ra. Một gương mặt. Mùi dầu xoa bóp. Bộ đàm kêu rè rè._
-chi_dai: Bla bla… TUẤT. Bla bla bla bla. # phu_de:{cho}. Em làm chị trễ 30 phút là chị bán em cho tiệm thịt cầy nha. Giỡn thôi. Ra.
+chi_dai: Bla bla… TUẤT. Bla bla bla bla. # phu_de:{cho}. Em làm chị trễ 30 phút là chị cột em vô bao cát tập đấm luôn nha. Giỡn thôi. Ra.
 * [🐾 Ngoan ngoãn nhảy xuống.]
     _Bạn nhảy xuống. {chi_dai} xoa đầu bạn một cái nhanh, rồi hét vào bộ đàm. Xe chạy đúng giờ._
     ~ qh("chi_dai", 5)

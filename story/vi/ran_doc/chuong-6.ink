@@ -114,7 +114,7 @@ bac_bao_ve: Cháu {ran_doc}. Cháu chạy giấy giúp bác được không? Ch�
 _Trên tay bạn là cả xấp tin nhắn của cả công ty. Không mã hóa. Không xóa được. Không ai kiểm tra._
 * [😇 Chạy giấy đàng hoàng, không đọc.]
     -> ran_doc_mg_chay_giay
-* [🐍 Viết thêm một tờ giả: "Siêu Nhân Hồng đã ký với LL. — Thái".]
+* [🐍 Viết thêm một tờ giả: "Siêu Nhân Hồng đã ký với LL. — {quan_ly_idol}".]
     ~ rd_tung_tin(20, 20)
     _Tờ giấy đi từ tầng 1 lên tầng 2 trong 4 phút. Tới tay {quan_ly_idol}. Anh ta đọc, nhìn chữ ký, rồi đi thẳng xuống chòi._
     quan_ly_idol: Bác {bac_bao_ve}, tờ này ai đưa bác?

@@ -113,7 +113,7 @@ sieu_nhan_hong: Gâu! Bla bla… TUẤT… XÚC XÍCH… bla bla! # phu_de:Gâu!
     sieu_nhan_hong: Bla bla! Bla bla bla! # phu_de:Ăn rồi! Ăn của anh rồi nha! Mình là bạn rồi!
     _Bạn không phải bạn. Bạn chỉ đói. Nhưng bạn vẫn cho người đó xoa đầu một cái. Một cái thôi._
     { ch_ghet_hong <= 30:
-        hong_hot: Bla bla bla… bla bla! # phu_de:Khoan! Đứng yên! Chụp chung một tấm! Tuất với Hồng, hòa bình!
+        hong_hot: Bla bla bla… bla bla! # phu_de:Khoan! Đứng yên! Chụp chung một tấm! {cho} với Hồng, hòa bình!
         _Bạn ngồi cạnh bộ đồ hồng. Không gầm gừ. Tách. "Cuối cùng cũng hòa bình!" Tấm ảnh lên mạng ngay khi có wifi._
         ~ ch_chup_anh_hoa_binh = true
         ~ follow(30000)
@@ -327,4 +327,15 @@ _Cái {ch_mu()} nằm đó. Không ai canh. Thứ bạn muốn ngoạm nhất tr
 _23 giờ. Đêm Hồng kết thúc. Bác chở bạn về chòi. Cổng công ty vắng tanh, chỉ có đèn đường vàng và mấy quả bóng bay hồng xẹp lăn theo gió._
 _Mũi bạn mỏi. Chân bạn mỏi. Nhưng đuôi bạn vẫn còn sức vẫy một chút._
 bac_bao_ve: Bla bla… TUẤT… bla. # phu_de:Xong rồi, {cho} ạ. Một tháng. Về nhà thôi.
+_Một chiếc xe màu hồng chạy chầm chậm qua cổng. Không dừng. Rồi dừng. Đèn xe nháy hai cái, như chào._
+* [😤 Sủa theo chiếc xe hồng, lần cuối trong tháng.]
+    cho: Gâu! Gâu gâu!
+    _Chiếc xe bấm còi đáp lại: "tít tít". Bác phì cười. Một tháng, và hai bên vẫn chào nhau đúng kiểu của mình._
+* [🐾 Vẫy đuôi với chiếc xe hồng.]
+    _Bạn vẫy đuôi. Một cái. Không ai thấy, trừ bác. Bác không nói gì. Bác không thấy gì đâu._
+    ~ ch_hong_doi(-3)
+* [😴 Đi thẳng vào ổ. Mai tính.]
+    _Bạn đi thẳng vào ổ, cuộn tròn. Việc hôm nay cứ để ngày mai tính. Câu này bạn không hiểu, nhưng bạn sống đúng như vậy cả đời._
+    ~ nghi(30)
+- _Bác tắt radio. Đèn chòi tắt. Đèn đường vẫn sáng. Tháng 10 hết rồi._
 -> cho_3010_danh_gia

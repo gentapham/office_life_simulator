@@ -38,7 +38,6 @@ _Quán cà phê đầu đường. 22 ly. 660 nghìn. Bạn mở ví: 85 nghìn t
 _Cái thẻ hạng kim cương nằm trong ví, sáng lấp lánh như đang nói: "Quẹt đi. Một giây thôi."_
 * [💳 Quẹt thẻ kim cương.]
     _"Tít." Cô thu ngân nhìn cái thẻ, rồi nhìn bạn, rồi gọi quản lý ra chào. Quản lý cúi đầu: "Dạ quý khách hạng kim cương lần sau ghé, bên em tặng thêm topping ạ."_
-    ~ tien_cong(-660000)
     ~ duy_lo(15)
     _Bạn xách 22 ly về đúng 8 giờ 50. Không ai thấy cái thẻ. Chỉ có quán cà phê thấy, và quán cà phê ở cạnh tiệm nail Lung Linh._
     ~ qh("chua_te_deadline", 5)

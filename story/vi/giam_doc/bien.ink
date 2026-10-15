@@ -75,7 +75,11 @@ VAR gd_so_lan_thua_golf = 0
 === function gd_uy(n) ===
 ~ gd_uy_quyen = gioi_han(gd_uy_quyen + n)
 
+// Đã gửi thư thú nhận cho Genta thì không còn gì để "lộ" nữa.
 === function gd_no(n) ===
+{ gd_viet_thu_hoi_am && n > 0:
+    ~ return
+}
 ~ gd_lo_no = gioi_han(gd_lo_no + n)
 
 === function gd_tien_cty(n) ===

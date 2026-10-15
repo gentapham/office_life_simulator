@@ -258,10 +258,10 @@ idol_het_thoi: Em là ai? À, nhân viên mới. Em biết anh là ai không?
     idol_het_thoi: *(tháo kính)* Em thuộc thật hả? Hát thử anh nghe đoạn điệp khúc coi.
     ~ qh("idol_het_thoi", 10)
 * [🐍 "Dạ biết. Anh là người sắp bị Siêu Nhân Hồng thay thế."]
-    idol_het_thoi: *(đứng bật dậy)* Cái gì? Ai nói? Thái nói hả?!
+    idol_het_thoi: *(đứng bật dậy)* Cái gì? Ai nói? {quan_ly_idol} nói hả?!
     ~ rd_tung_tin(12, 8)
     ~ qh("idol_het_thoi", -5)
-    _Phát và Nguyên đối đầu. Nhưng {quan_ly_idol} sẽ truy ra ai là nguồn tin._
+    _{idol_het_thoi} và {sieu_nhan_hong} đối đầu. Nhưng {quan_ly_idol} sẽ truy ra ai là nguồn tin._
 - idol_het_thoi: Hồi anh còn nổi, fan anh đông lắm. Giờ… cũng còn đông. 80.000 người theo dõi lận.
 * {biet(fan_ao_phat)} [🔒 "80.000 nick đó comment giống nhau quá anh."]
     idol_het_thoi: *(mặt tái)* Em… em muốn gì?

@@ -2,6 +2,9 @@
 // THỰC TẬP SINH: DUY · biến riêng (tiền tố duy_)
 // ============================================================
 
+// Ghi chú: 💳 Quẹt Thẻ Kim Cương trả bằng tiền tiết kiệm thời ngân hàng,
+// KHÔNG trừ vào ví `tien` (lương thực tập). Chỉ tăng Độ Lộ Thân Phận.
+
 // ---------- Chỉ số riêng ----------
 VAR duy_do_ngo = 70            // 😶 Độ Ngơ 0..100
 VAR duy_kinh_nghiem = 0        // 📚 Kinh Nghiệm 0..100 (cần ≥ 60 để có cơ hội được giữ lại)
@@ -15,6 +18,7 @@ VAR duy_so_lan_noi_loan = 0    // Số lần dùng Nổi Loạn
 VAR duy_lan_goi_huong = 0      // Số lần dùng 🛡️ Gọi Chị Hương
 VAR duy_so_lan_da = 0          // Số lần "Dạ em làm liền ạ"
 VAR duy_so_nguoi_muon = 0      // Số người đã cho mượn tiền
+VAR duy_muon_chuong = false    // Đã tính {dan_dau_tu} vào số người mượn
 VAR duy_ngay_mac_giong_long = 0 // Số ngày mặc giống Long
 VAR duy_an_do_thua = 0         // Số lần ăn đồ thừa sau họp
 VAR duy_co_the_may_in = false  // Vật phẩm "Bạn Của Máy In"

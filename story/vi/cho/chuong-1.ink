@@ -111,7 +111,7 @@ _Bạn nhìn theo bóng hồng khuất sau cầu thang. Bạn chưa biết tên 
 # ngay:1 # gio:15:30 # noi:choi_bao_ve
 _Chiều. Cả đám người từ trong công ty kéo ra chòi, tay cầm hoa, tay cầm ly trà sữa._
 _Hôm nay họ uống trà sữa rất nhiều. Máy pha cà phê hỏng, mà lại có "5 tỷ" gì đó. Bạn không biết 5 tỷ là bao nhiêu xúc xích, nhưng ai cũng cười._
-chi_dai: Bla bla… BÁC… bla bla bla! # phu_de:Bác Bình ơi, hôm nay Ngày Người cao tuổi, cả công ty tặng bác nè!
+chi_dai: Bla bla… BÁC… bla bla bla! # phu_de:Bác {bac_bao_ve} ơi, hôm nay Ngày Người cao tuổi, cả công ty tặng bác nè!
 thuc_tap_sinh: Bla bla… BÁC… bla. # phu_de:Dạ con chúc bác mạnh khỏe sống lâu ạ!
 bac_bao_ve: Bla… bla bla… bla. # phu_de:Ơ… các cháu bày vẽ làm gì. Bác ngại lắm.
 _Mặt bác đỏ như cái ghế nhựa. Bác ôm bó hoa mà không biết để đâu. Bạn chưa thấy bác lúng túng bao giờ._
@@ -190,6 +190,8 @@ _Hai ông ngồi đánh cờ. Một tiếng không nói. Bạn có cả buổi s
     _Bạn đào. Đất bay tung tóe. Bạn tìm được một cái rễ cây, một hòn sỏi tròn và một con giun rất bất ngờ._
     bac_bao_ve: TUẤT! KHÔNG! Bla bla… bla! # phu_de:{cho}! Không! Luống hành của bác!
     _Bạn nhìn xuống chân. À. Cái hố nằm giữa luống hành._
+    _Bạn ngậm hòn sỏi tròn, giữ nó suốt đường về thành phố. Thứ 2, nó nằm trong kho dưới gầm cầu thang. Kỷ vật quê nhà._
+    ~ ch_tha_ve_kho()
     ~ ch_cung(-2)
     ~ ch_do_no = gioi_han(ch_do_no - 10)
 * [😴 Nằm dưới bàn cờ, gác cằm lên dép của bác.]
@@ -274,7 +276,7 @@ _14 giờ. Chiếc xe hồng lại tới. Mùi bánh chuối chiên và nước 
 sieu_nhan_hong: Bla bla bla! Gâu! Gâu gâu! Bla bla… TUẤT… bla! # phu_de:Trời ơi! Gâu! Gâu gâu! {cho} ơi, nơ của em hồng giống anh nè! Mình là đồng đội rồi!
 _Đồng đội. Bạn không hiểu từ đó, nhưng bạn hiểu giọng điệu đó._
 _Người đồ hồng cúi xuống sát mặt bạn, hai bàn tay đeo găng hồng chống đầu gối. Ở phía sau, {hong_hot} đã giơ điện thoại lên._
-hong_hot: Bla bla… bla bla! # phu_de:Quay nè quay nè! Tuất với Hồng, phần 2!
+hong_hot: Bla bla… bla bla! # phu_de:Quay nè quay nè! {cho} với Hồng, phần 2!
 _Một chiếc găng tay hồng đang ở ngay trước mũi bạn._ # hen_gio:3
 * [🎁 Ngoạm chiếc găng tay. Chạy.]
     { RANDOM(1, 10) <= 7:
@@ -293,7 +295,7 @@ _Một chiếc găng tay hồng đang ở ngay trước mũi bạn._ # hen_gio:3
     }
 * [😤 Sủa đuổi quanh bãi xe.]
     _Bạn lao lên. Người đồ hồng bỏ chạy, vừa chạy vừa cười, vòng quanh bãi xe ba vòng. Cái nơ của bạn đứt dây, bay đi._
-    hong_hot: Bla bla bla! Bla! # phu_de:Trời ơi view nổ rồi! Chạy nữa đi Tuất!
+    hong_hot: Bla bla bla! Bla! # phu_de:Trời ơi view nổ rồi! Chạy nữa đi {cho}!
     ~ follow(20000)
     ~ ch_lan_sua_hong = ch_lan_sua_hong + 1
     { RANDOM(1, 10) <= 3:

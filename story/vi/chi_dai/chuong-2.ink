@@ -66,15 +66,15 @@ dan_dau_tu: Mấy anh chị ơi! Fan nào đó vừa tạo "Hồng Coin", ký hi
 hong_hot: Ủa coin gì? Ai tạo?
 dan_dau_tu: Không ai biết! Thế mới là cơ hội!
 * [🗣️ Nhắn: "Không ai được rủ thằng {thuc_tap_sinh} mua coin. Đứa nào rủ, gặp chị."]
-    dan_dau_tu: Dạ… em rủ cả công ty chứ đâu riêng {thuc_tap_sinh} chị.
+    dan_dau_tu: Ơ… anh rủ cả công ty chứ đâu riêng {thuc_tap_sinh} đâu em.
     thuc_tap_sinh: Dạ em không mua đâu chị ạ. Em cảm ơn chị.
     ~ cd_uy(3)
     ~ qh("dan_dau_tu", -3)
     ~ qh("thuc_tap_sinh", 5)
-* [💬 Nhắn riêng {dan_dau_tu}: "Anh nợ ai bao nhiêu rồi, nói thiệt chị nghe."]
-    dan_dau_tu: Dạ… 22 triệu. Chia nhiều người. Mà cái coin này lên là em trả hết.
-    chi_dai: Coin chưa lên thì đừng hứa. Anh trả bác Bình trước. Bác 50 tuổi rồi.
-    dan_dau_tu: …Dạ.
+* [💬 Nhắn riêng {dan_dau_tu}: "Anh nợ ai bao nhiêu rồi, nói thiệt em nghe."]
+    dan_dau_tu: Ờ… 22 triệu. Chia nhiều người. Mà cái coin này lên là anh trả hết.
+    chi_dai: Coin chưa lên thì đừng hứa. Anh trả bác Bình trước. Bác 50 tuổi rồi đó anh.
+    dan_dau_tu: …Ừ. Anh biết rồi.
     ~ qh("dan_dau_tu", 5)
 * [😶 Tắt điện thoại. Ngủ.]
     _Sáng hôm sau group có 147 tin nhắn. Bạn không đọc tin nào. Bạn ngủ ngon nhất tuần._
@@ -316,7 +316,7 @@ _Bộ đàm rè rè, bắt nhầm sóng taxi: "…Taxi 37 về bến Ven Đô…
     ~ cd_td(6)
     ~ cd_met(8)
 * [💬 Gọi {it} ra coi cột điện: "Cái này kéo điện được hông?"]
-    it: *(nhìn 30 giây)* Được. Nhưng nó cũ hơn em.
+    it: *(nhìn 30 giây)* Được. Nhưng nó cũ hơn tui.
     chi_dai: Vậy thuê máy phát.
     it: Thuê hai cái. Một cái dự phòng.
     ~ cd_td(5)

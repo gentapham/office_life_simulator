@@ -164,7 +164,7 @@ _Bên cạnh có một thư mục tên "dung_xoa_ban_loi". Trong đó là bản 
     ~ rd_giup(5000)
     ~ qh("editor", 15)
 * [💬 Lục thử các thư mục khác.]
-    _Một thư mục tên "Thái". Bên trong là mười mấy video dựng riêng cho nghệ sĩ của {quan_ly_idol}, chưa bao giờ gửi._
+    _Một thư mục tên "{quan_ly_idol}". Bên trong là mười mấy video dựng riêng cho nghệ sĩ của {quan_ly_idol}, chưa bao giờ gửi._
     _Một thư mục khác tên "Cu_dem". Logo một con cú. Kênh Diu-túp gần 1 triệu người đăng ký._
     ~ rd_tin_mat()
     ~ rd_tin_mat()
@@ -294,7 +294,7 @@ _Bác {bac_bao_ve} 50 tuổi hôm nay. Không ai trong công ty biết._
     ~ rd_tin(5)
     cho: Gâu! *(nhìn cái bánh, rồi nhìn bạn)*
     _Bạn bẻ cho {cho} một góc. Ba sinh vật ăn bánh bông lan trong chòi bảo vệ, không ai nói gì. Dễ chịu lạ._
-* [🐍 Ghi vào sổ: "Bác Bình, 50 tuổi, ai đó tên G nhớ sinh nhật bác. G là ai?"]
+* [🐍 Ghi vào sổ: "Bác {bac_bao_ve}, 50 tuổi, ai đó tên G nhớ sinh nhật bác. G là ai?"]
     ~ rd_tin_mat()
     _Một cái tên viết tắt. Một người nhớ sinh nhật bảo vệ. Bạn không biết dùng thế nào, nhưng có cảm giác đây là con bài lớn._
 - -> END
@@ -333,7 +333,7 @@ con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Sao lại từ chối? �
 _Cùng lúc đó, {thuc_tap_sinh} rút ví trả tiền cà phê cho cả phòng. Một cái thẻ đen viền kim cương rơi xuống sàn._
 hong_hot: Ủa alo? Thẻ kim cương? Thực tập sinh mà thẻ kim cương?!
 thuc_tap_sinh: Dạ… dạ… thẻ… của ba em… à không, của… người quen ạ!
-* [🔥 "Long ơi, thẻ phụ của sếp mà bị từ chối, chắc tài khoản sếp có chuyện rồi đó."]
+* [🔥 "{con_ong_chau_cha} ơi, thẻ phụ của sếp mà bị từ chối, chắc tài khoản sếp có chuyện rồi đó."]
     ~ rd_tung_tin(10, 8)
     con_ong_chau_cha: *(mặt tái)* Ủa… vậy hả? Chú anh… hông có nói gì hết.
     _Cái thẻ phụ gắn với tài khoản riêng của {giam_doc}. Không ai biết vì sao nó trống. Nhưng giờ thì ai cũng bắt đầu đoán._

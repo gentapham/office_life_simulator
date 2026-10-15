@@ -141,7 +141,7 @@ _Bạn chui vào ổ. Bạn vẫn ghét bộ đồ hồng. Chắc chắn. Chỉ 
 _Thứ 4. Hôm nay có một con số quan trọng. Bạn không biết đếm, nhưng bạn biết đọc mặt người._
 { nguoi_theo_doi >= 50000:
     _Mặt ai cũng tươi. {giam_doc} đi ngang chòi, vỗ vai bác, cười lớn, rồi cúi xuống xoa đầu bạn. Ông này xoa đầu mạnh như đang lắc chai nước mắm._
-    giam_doc: Bla bla… TUẤT… bla bla bla! # phu_de:Mốc 1 đạt rồi! Clip con {cho} đuổi anh Nguyên cũng góp công đấy! Văn hóa doanh nghiệp đấy!
+    giam_doc: Bla bla… TUẤT… bla bla bla! # phu_de:Mốc 1 đạt rồi! Clip con {cho} đuổi anh {sieu_nhan_hong} cũng góp công đấy! Văn hóa doanh nghiệp đấy!
     ~ qh("giam_doc", 5)
     ~ ch_cung(3)
 - else:
@@ -195,6 +195,22 @@ _Mũ bảo hiểm. Áo khoác giao hàng. Mùi xăng và mùi 40 loại đồ ă
 _KẺ THÙ SỐ HAI._
 shipper_teo: Bla bla bla, bla bla! # phu_de:Hàng tới rồi, ra lấy giùm em!
 bac_bao_ve: TUẤT… bla bla. # phu_de:{cho}, bình tĩnh. Người ta đi làm thôi.
+_Người ra nhận hàng là {designer}. Gói hàng nhỏ, giấy gói màu xanh lá chuối. {designer} ôm nó vào ngực rất nhanh, nhìn quanh, như ôm một bí mật._
+designer: *(thì thầm vào điện thoại)* Bla bla… bla bla bla. # phu_de:Dạ em nhận rồi anh Lá Chuối. Dự án Hồng Ngoại, em làm liền ạ.
+* [😤 Sủa shipper. Đó là nghĩa vụ.]
+    cho: GÂU! GÂU! GÂU!
+    _Shipper lùi lại, suýt làm rơi cả túi trà sữa. {designer} giật mình, gói hàng rơi xuống đất. Bạn ngửi được: giấy in mới, mực xanh lá chuối._
+    ~ ch_khong_sua_shipper = 0
+    ~ ch_mui(1)
+* [👃 Bỏ qua shipper, đánh hơi gói hàng của {designer}.]
+    ~ ch_mui(2)
+    _Gói hàng mùi kính lạnh, máy lạnh, tiền mới. Mùi một tòa nhà rất cao ở rất xa._
+    designer: Bla bla… KHÔNG… bla bla. # phu_de:Không không, cái này không phải đồ ăn đâu {cho}. Đi chỗ khác chơi.
+    ~ qh("designer", -2)
+* [😶 Ngồi im cạnh chân bác, nhìn shipper chằm chằm.]
+    _Bạn không sủa. Nhưng bạn nhìn. Nhìn không chớp mắt. Shipper giao hàng xong trong 9 giây, kỷ lục của đời hắn._
+    ~ ch_khong_sua_shipper = ch_khong_sua_shipper + 1
+- _Bác đặt ấm trà xuống, vỗ đùi. Buổi trực cổng chiều nay bắt đầu._
 -> cho_mg_truc_cong
 
 // ------------------------------------------------------------
@@ -312,7 +328,7 @@ _KHÔNG. Và XÚC XÍCH. Trong cùng một câu. Đó là câu đáng sợ nhấ
 # ngay:10 # gio:19:00 # noi:nha_vuon_ven_do
 _Tối. Hôm nay bác lạ lắm. Bác lấy ra một cái bánh bao, cắm vào đó một que tăm. Ngồi nhìn cái bánh bao rất lâu._
 _Bạn không biết hôm nay là ngày gì. Bạn chỉ biết: bác đang buồn mà không nói._
-_Điện thoại bác rung một cái. Một tin nhắn. Bác đọc, rồi cười. Cười một mình._
+_Bác lấy trong túi áo ra một tấm thiệp nhỏ, gửi tới chòi từ đầu tháng, ngoài phong bì ghi "mở ngày 10". Bác đọc, rồi cười. Cười một mình._
 bac_bao_ve: Bla bla… bla… bla bla. # phu_de:Năm mươi rồi đấy, {cho} ạ. Cả công ty chả ai nhớ. Có mỗi ông ấy nhớ.
 * [🎁 Chạy đi tìm một món quà.]
     { ch_co_hoa_bac:

@@ -10,6 +10,8 @@ INCLUDE giam_doc/chuong-3.ink
 INCLUDE giam_doc/chuong-4.ink
 INCLUDE giam_doc/chuong-5.ink
 INCLUDE giam_doc/chuong-6.ink
+INCLUDE giam_doc/nhan-vat.ink
 INCLUDE giam_doc/minigame.ink
+INCLUDE giam_doc/ket-thuc.ink
 
 -> END

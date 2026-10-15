@@ -8,6 +8,10 @@ INCLUDE chi_dai/chuong-1.ink
 INCLUDE chi_dai/chuong-2.ink
 INCLUDE chi_dai/chuong-3.ink
 INCLUDE chi_dai/chuong-4.ink
+INCLUDE chi_dai/chuong-5.ink
+INCLUDE chi_dai/chuong-6.ink
+INCLUDE chi_dai/nhan-vat.ink
 INCLUDE chi_dai/minigame.ink
+INCLUDE chi_dai/ket-thuc.ink
 
 -> END

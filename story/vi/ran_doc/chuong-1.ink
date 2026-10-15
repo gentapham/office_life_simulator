@@ -7,7 +7,7 @@
 # ngay:1 # gio:07:58 # noi:cong_cong_ty
 _7 giờ 58. Bạn phóng xe vào cổng, tim đập thình thịch. Ngày đầu đi làm mà trễ là toang._
 cho: Gâu! Gâu gâu!
-bac_bao_ve: Tuất, im nào. Cháu là nhân viên mới à? Gửi xe bên kia, còn 2 phút nữa là 8 giờ đấy.
+bac_bao_ve: {cho}, im nào. Cháu là nhân viên mới à? Gửi xe bên kia, còn 2 phút nữa là 8 giờ đấy.
 * [😇 "Dạ con cảm ơn bác! Con là {ran_doc}, mới vô làm hôm nay ạ."]
     ~ qh("bac_bao_ve", 5)
     bac_bao_ve: Ừ. Đi nhanh lên. Máy chấm công hay đơ lắm.
@@ -173,7 +173,7 @@ _Bạn để ý trên bàn trong chòi có một xấp phong bì cũ, nét chữ
     cho: Gâu gâu! *(liếm tay bạn)*
     bac_bao_ve: Nó nhớ mặt cháu rồi đấy. Sáng nay cháu chạy qua nó còn chưa kịp sủa.
 - _Đúng lúc đó, bộ đồ hồng lấp ló ở cổng. {cho} gầm gừ, lông dựng ngược._
-sieu_nhan_hong: Tuất ơi! Gâu gâu! Anh về nha! Biến hình! *(nhảy lên xe hồng)*
+sieu_nhan_hong: {cho} ơi! Gâu gâu! Anh về nha! Biến hình! *(nhảy lên xe hồng)*
 cho: GÂU GÂU GÂU GÂU!
 bac_bao_ve: Thế đấy. Ngày nào nó cũng thế.
 _Bạn nhìn chiếc xe hồng khuất dần. Hai mươi năm rồi mà cái tật chọc người khác vẫn y nguyên._
@@ -282,7 +282,7 @@ sieu_nhan_hong: Ai ghi order đó? Cho anh một ly trà sữa dâu, topping h�
 # ngay:3 # gio:09:30 # noi:hem_69
 _Thứ 7. Bà Tư chủ trọ ngồi ghế đẩu đầu dãy, quạt nan phành phạch._
 ba_tu: Nay mùng mấy rồi con? Mùng 3. Mùng 5 tiền trọ nha con. Mà con làm ở cái công ty có ông siêu nhân hồng hả?
-ba_tu: Hôm qua con Ngân phòng bên nói ổng giàu lắm, tiền đựng trong vali!
+ba_tu: Hôm qua con {hong_hot} phòng bên nói ổng giàu lắm, tiền đựng trong vali!
 * [🧂 "Dạ, nghe nói vali đó toàn tiền mệnh giá lớn, ổng đếm bằng máy luôn bà."]
     ba_tu: Trời đất! Để chiều bà kể cho chú Sáu nghe.
     ~ rd_them_mam(3, 0)
@@ -307,11 +307,11 @@ _Chủ nhật, Ngày Động vật Thế giới. Bạn ghé công ty lấy lapto
 _{cho} mặc áo, đội nơ hồng, lông còn ướt. {chi_dai} vừa tắm cho nó xong. Mặt {cho} là mặt của một con chó đã mất hết niềm tin vào cuộc sống._
 chi_dai: Đứng yên. Đẹp trai lắm rồi. Đứa nào cười là chị xử.
 _Xe hồng đỗ xịch trước cổng. {sieu_nhan_hong} nhảy ra, giả tiếng sủa._
-sieu_nhan_hong: Gâu! Gâu gâu! Tuất ơi, nơ của em hồng giống anh nè! Mình là anh em đó!
+sieu_nhan_hong: Gâu! Gâu gâu! {cho} ơi, nơ của em hồng giống anh nè! Mình là anh em đó!
 cho: GRỪ… GÂU GÂU GÂU!
 _{cho} lao tới. Trong một giây hỗn loạn, chiếc găng tay hồng bay khỏi tay {sieu_nhan_hong}. {cho} ngậm lấy, chạy mất vào gầm cầu thang._
-sieu_nhan_hong: Ê! Găng tay của anh! Tuất ơi trả anh đi mà!
-bac_bao_ve: Cậu Nguyên, hôm nay nó đã khổ lắm rồi. Tha cho nó.
+sieu_nhan_hong: Ê! Găng tay của anh! {cho} ơi trả anh đi mà!
+bac_bao_ve: Cậu {sieu_nhan_hong}, hôm nay nó đã khổ lắm rồi. Tha cho nó.
 * [🐾 Đi theo {cho} xuống gầm cầu thang.]
     -> ran_doc_0410_kho_gam_cau_thang
 * [🐍 Cười thật to: "Siêu nhân mà thua con chó kìa!"]
@@ -321,7 +321,7 @@ bac_bao_ve: Cậu Nguyên, hôm nay nó đã khổ lắm rồi. Tha cho nó.
     _Khoan. Bạn vừa làm hắn nổi thêm tám nghìn người._
     -> END
 * [😇 "Anh đừng chọc nó nữa. Chó cũng có tự trọng mà anh."]
-    sieu_nhan_hong: *(gãi đầu dưới mũ)* Ờ… ờm… em nói đúng. Anh xin lỗi Tuất.
+    sieu_nhan_hong: *(gãi đầu dưới mũ)* Ờ… ờm… em nói đúng. Anh xin lỗi {cho}.
     _Lần đầu tiên bạn thấy Nguyễn {sieu_nhan_hong} xin lỗi ai đó. Mà là xin lỗi một con chó._
     ~ rd_han(-5)
     ~ qh("chi_dai", 5)

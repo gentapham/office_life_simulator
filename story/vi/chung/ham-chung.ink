@@ -197,3 +197,13 @@ VAR chung_cong_ty_song = false
 // Người chơi là ai (tên hiển thị)
 === function chung_ten_toi() ===
 ~ return ten(vai)
+
+// Như chung_ten_buon nhưng viết hoa chữ đầu (đứng đầu câu)
+=== function chung_ten_buon_hoa(ma) ===
+{ ma:
+- "cho": ~ return "Con " + cho
+- "bac_bao_ve": ~ return "Bác " + bac_bao_ve
+- "giam_doc": ~ return "Sếp " + giam_doc
+- "sieu_nhan_hong": ~ return "Siêu Nhân Hồng"
+}
+~ return chung_hoa(ong_ba_cua(ma)) + " " + ten(ma)

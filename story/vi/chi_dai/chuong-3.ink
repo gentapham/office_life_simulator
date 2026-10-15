@@ -140,8 +140,8 @@ _{sieu_nhan_hong} đang cầm chiếc mũ hồng trên tay. Mặt thật. Ngồi
 _Cầu thang phía dưới có tiếng bước chân. Ai đó đang đi lên, tay cầm điện thoại sáng đèn flash._
 * [🛡️ Đứng chắn đầu cầu thang. Không ai đi qua đây lúc này.]
     _Bạn đứng đó 5 phút, như tượng. Người đi lên nhìn bạn, quay xuống. Khi bạn quay lại, {sieu_nhan_hong} đã đội mũ, vẫy tay cảm ơn._
-    sieu_nhan_hong: Chị… chị không thấy gì hết, đúng hông?
-    chi_dai: Chị thấy. Mà chị không nói.
+    sieu_nhan_hong: Chị Đại… chị không thấy gì hết, đúng hông?
+    chi_dai: Tui thấy. Mà tui không nói.
     ~ qh("sieu_nhan_hong", 15)
     ~ cd_paparazzi_bi_duoi = true
 * [😶 Quay vào pantry. Chuyện của người ta.]

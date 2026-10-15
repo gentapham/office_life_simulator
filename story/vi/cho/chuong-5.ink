@@ -85,6 +85,8 @@ _Một xấp giấy rơi xuống sàn, ngay trước mũi bạn. Mùi giấy r�
 * [🎁 Tha xấp giấy chạy đi. Trò đuổi bắt!]
     _Bạn ngoạm, chạy. {thuc_tap_sinh} đuổi theo. Vòng quanh tầng 2. Vòng quanh phòng họp. Xấp giấy bay tứ tung như pháo giấy._
     ke_toan: TUẤT! Bla bla bla bla! # phu_de:{cho}! Đó là hồ sơ năm 2024!
+    _Họ nhặt lại được gần hết. Gần hết. Một tờ có con dấu đỏ của ngân hàng Tín Dụng Đen Đủi đã nằm yên trong kho dưới gầm cầu thang._
+    ~ ch_tha_ve_kho()
     ~ ch_cung(-6)
     ~ qh("ke_toan", -6)
     ~ cang_thang(3)
@@ -114,23 +116,23 @@ _Ở góc sảnh, có một người mặc vest bóng, đeo kính râm, dán ria
     bac_bao_ve: *(thì thầm)* Bla… TUẤT… KHÔNG… bla bla. # phu_de:Suỵt! {cho}, không! Hôm nay bác là… "Mr. Kevin"!
     ~ qh("bac_bao_ve", 3)
 - 2:
-    _Bạn ngửi. Ria mép giả. Keo dán. Và bên dưới: mùi mì gói và nước xả vải rẻ tiền. {thuc_tap_sinh}? Vậy ai đang ôm bánh? À, người ôm bánh là người khác rồi._
+    _Bạn ngửi. Ria mép giả. Keo dán. Và bên dưới: mùi mì gói và nước xả vải rẻ tiền. {thuc_tap_sinh}! Người này vừa dúi hộp bánh cho {hr}, rồi chạy đi dán ria, đóng vai chủ tịch tập đoàn._
     _Thôi, loài người tự hiểu nhau. Bạn chỉ chắc một điều: Mr. Kevin không phải người lạ._
 - else:
     _Bạn ngửi. Ria mép giả. Keo dán. Và bên dưới: mùi chart cả đêm và mùi bánh mì ăn lén. {dan_dau_tu}._
     _Người này đang đóng vai chủ tịch tập đoàn. Người nợ nửa công ty. Bạn không hiểu loài người, nhưng bạn thấy buồn cười._
 }
-* [🐾 Đi theo {thuc_tap_sinh} như cái bóng, nhìn hộp bánh.]
-    _Bạn đi theo. {thuc_tap_sinh} đi đâu, bạn đi đó. Người đó đổ mồ hôi. Bạn không làm gì cả. Bạn chỉ nhìn._
+* [🐾 Đi theo người đang giữ hộp bánh như cái bóng.]
+    _Bạn đi theo. Người giữ bánh đi đâu, bạn đi đó. Người đó đổ mồ hôi. Bạn không làm gì cả. Bạn chỉ nhìn._
     _Áp lực của một cái nhìn chó._
-    ~ qh("thuc_tap_sinh", -2)
+    ~ cang_thang(-2)
 * [😴 Ngủ trước. Tối mới là trận chính.]
     ~ nghi(30)
     _Bạn ngủ dưới gầm cầu thang, cạnh chiếc găng tay hồng. Trong mơ, có một cái bánh to bằng tòa nhà._
 * [👃 Đi đánh hơi quanh sảnh.]
     ~ ch_mui(3)
     _Sau rèm sân khấu có mùi dây điện mới của {it}. Ở phòng chờ có mùi bánh chuối chiên và mùi hồi hộp. Ở bàn điều khiển có mùi cà phê sữa đá và một người đang lướt điện thoại._
--> END
+- -> END
 
 // ------------------------------------------------------------
 === cho_2310_banh_kem ===

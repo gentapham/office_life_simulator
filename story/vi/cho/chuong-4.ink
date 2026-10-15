@@ -129,7 +129,7 @@ _Nó ở sau cái tủ. Bạn thò mõm vào khe. Mõm chạm một sợi dây. 
     _Bạn cắn. Kéo. Sợi dây tuột ra khỏi một cái lỗ. Một cái đèn xanh nhỏ trên tủ tắt phụt._
     bac_bao_ve: TUẤT! KHÔNG! Bla bla… bla bla. # phu_de:{cho}! Không! Cắn gì ở đấy thế?
     _Bác cắm lại sợi dây, buộc bằng dây thun, rồi bấm điện thoại một tin ngắn._
-    bac_bao_ve: Bla… bla bla bla. # phu_de:"Tuất cắn dây gì ở tủ mạng ấy. Bác buộc lại rồi." Gửi.
+    bac_bao_ve: Bla… bla bla bla. # phu_de:"{cho} cắn dây gì ở tủ mạng ấy. Bác buộc lại rồi." Gửi.
     ~ ch_cung(-2)
 * [🐾 Ngồi trước cái tủ, nhìn bác, rên khe khẽ.]
     cho: Ẳng… ẳng…
@@ -178,6 +178,16 @@ _Sáng. Bạn tỉnh dậy dưới sạp hàng. Một người phụ nữ đang 
 co_hai_san: Bla bla… bla bla bla? Bla… ĂN… bla. # phu_de:Ủa, chó ai lạc vậy nè? Tội nghiệp. Lại đây, ăn miếng cơm nè.
 _Bà cho bạn cơm trộn cá. Ngon. Bạn ăn, rồi ngẩng lên, ngửi về phía biển. Phía biển không có mùi trà mạn và dầu gió._
 _Rất xa, có tiếng một chiếc xe buýt nổ máy._
+* [🏃 Chạy về phía tiếng xe buýt.]
+    _Bạn chạy. Qua chợ, qua bãi đá, qua một con dốc. Tiếng xe to dần, rồi nhỏ dần, rồi mất. Chỉ còn tiếng sóng._
+    _Bạn đứng ở ngã ba. Ba con đường. Ba trăm mùi. Không mùi nào là mùi trà mạn._
+* [👃 Hít thật sâu, cố tìm mùi {thuc_tap_sinh}.]
+    _Mì gói? Có, nhưng là mì của một quán ăn sáng. Nước xả vải? Có, nhưng là của một tiệm giặt. Mùi nào cũng giống, mà không mùi nào đúng._
+    ~ ch_mui(2)
+* [😴 Nằm lại dưới sạp. Biết đâu họ quay lại tìm.]
+    _Bạn nằm chờ. Cả buổi sáng. Người phụ nữ áo bà ba thỉnh thoảng cúi xuống nhìn, lắc đầu, đặt thêm một bát nước._
+- co_hai_san: Bla bla… bla bla… bla. # phu_de:Thôi, ở với cô. Cô nuôi. Chừng nào chủ mày tới thì cô trả.
+_Bạn không hiểu. Nhưng bàn tay đó có mùi tôm cá, ấm, và không chọc chó._
 ~ chot_ket_thuc("lac_o_vung_tau")
 -> cho_kt_lac_o_vung_tau
 
@@ -355,23 +365,26 @@ _Sinh nhật công ty 16 tuổi, kiêm Ngày Phụ nữ. Sảnh đầy bóng bay
 dan_dau_tu: Bla bla bla! 8386! Bla bla! # phu_de:Chúc cả công ty 8386! Phát lộc phát tài! Lần này là lên thật!
 _Các chị em được tặng quà. Ai tặng ai cái gì, ai không được tặng gì, mùi giận dỗi bay lên ngang mùi gà rán._
 { ch_co_la_thu_g:
-    _Bác đi quanh chòi, tìm cái gì đó. Bác không nói. Bác nhìn bạn một lần, rất lâu. Rồi bác thôi tìm._
-    _Lá thư vẫn nằm trong kho. Không ai đọc nó trước công ty. Hôm nay, chuyện của ông "G" vẫn là chuyện của bác._
-    * [🐾 Ngồi cạnh bác cả buổi liên hoan.]
-        _Bạn ngồi cạnh bác. Bác bẻ cho bạn nửa cái đùi gà. Không ai hỏi gì, bác cũng không kể gì._
-        ~ ch_an(20)
-        ~ qh("bac_bao_ve", 3)
-    * [🎁 Chạy về kho, tha lá thư ra trả bác, ngay giữa sân liên hoan.]
-        ~ ch_co_la_thu_g = false
-        ~ ch_so_mon_kho = ch_so_mon_kho - 1
-        -> cho_2010_doc_thu
-    - -> END
+    -> cho_2010_thu_trong_kho
 }
 { ch_thu_g_den_tay_bac:
     _Lá thư nằm trong túi áo ngực của bác. Giữa liên hoan, {giam_doc} cầm micro gọi bác lên phát biểu "với tư cách người lâu năm nhất". Bác đứng lên. Tay bác chạm vào túi áo._
     -> cho_2010_doc_thu
 }
 -> END
+
+= cho_2010_thu_trong_kho
+_Bác đi quanh chòi, tìm cái gì đó. Bác không nói. Bác nhìn bạn một lần, rất lâu. Rồi bác thôi tìm._
+_Lá thư vẫn nằm trong kho. Không ai đọc nó trước công ty. Hôm nay, chuyện của ông "G" vẫn là chuyện của bác._
+* [🐾 Ngồi cạnh bác cả buổi liên hoan.]
+    _Bạn ngồi cạnh bác. Bác bẻ cho bạn nửa cái đùi gà. Không ai hỏi gì, bác cũng không kể gì._
+    ~ ch_an(20)
+    ~ qh("bac_bao_ve", 3)
+    -> END
+* [🎁 Chạy về kho, tha lá thư ra trả bác, ngay giữa sân liên hoan.]
+    ~ ch_co_la_thu_g = false
+    ~ ch_so_mon_kho = ch_so_mon_kho - 1
+    -> cho_2010_doc_thu
 
 = cho_2010_doc_thu
 _Bác đứng giữa sân, cầm lá thư. Cả công ty nhìn bác. Bạn ngồi dưới chân, cảm thấy tay bác run qua lớp dép._

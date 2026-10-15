@@ -242,7 +242,7 @@ bac_bao_ve: *(nói nhỏ)* Cháu… cái micro kia có chạy không?
 _Bạn hiểu: nếu micro chạy, bác có thể đọc. Nếu không, bác có cớ để không đọc. Bác đang hỏi bạn giúp bác quyết định._
 * [🎤 "Chạy bác. Con đứng đây."]
     _Bạn bật micro, chỉnh âm thật ấm. Bác {bac_bao_ve} bước lên bục, giọng Bắc chậm rãi vang khắp sảnh._
-    bac_bao_ve: Thư của… một người bạn cũ của công ty. "Gửi anh Bình và các cháu. Mười sáu năm rồi. Cố lên."
+    bac_bao_ve: Thư của… một người bạn cũ của công ty. "Gửi anh {bac_bao_ve} và các cháu. Mười sáu năm rồi. Cố lên."
     _Ngắn vậy thôi. Nhưng cả sảnh im phăng phắc. {giam_doc} cúi mặt rất lâu._
     ~ qh("bac_bao_ve", 15)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 10

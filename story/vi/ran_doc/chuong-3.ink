@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === ran_doc_1310_doanh_nhan ===
 # ngay:13 # gio:09:40 # noi:phong_giam_doc
-_Ngày Doanh nhân Việt Nam. {giam_doc} ôm một bó hoa thật to bước vào phòng. Tấm thiệp ghi: "Gửi Thắng, từ Thắng."_
+_Ngày Doanh nhân Việt Nam. {giam_doc} ôm một bó hoa thật to bước vào phòng. Tấm thiệp ghi: "Gửi {giam_doc}, từ {giam_doc}."_
 _Trên tường phòng giám đốc vừa treo thêm một tấm bằng mạ vàng: "DOANH NHÂN CỦA NĂM, trao bởi BTT Global"._
 sales: Tin chị đi anh, Mr. Kevin Trộn đích thân ký đó. Bên đó quý anh lắm.
 thanh_ninh: *(cầm 6 trang giấy)* Dạ em xin phép đọc bài phát biểu chúc mừng anh, em viết hết đêm qua. "Anh {giam_doc}, người thuyền trưởng…"
@@ -75,7 +75,7 @@ bac_bao_ve: Thang máy này mười năm nay vẫn thế. Bác có chìa khóa c
     ~ rd_tin(3)
     _Cửa mở. {giam_doc} bước ra, mồ hôi như tắm. {chi_dai} bước ra, tóc không rối một sợi._
 * [📸 Ghi âm. Sếp đang nói chuyện thật lòng trong thang máy.]
-    giam_doc: *(vọng ra)* Hương này… nếu công ty có chuyện gì… em lo cho mấy đứa nhỏ giúp anh nhé.
+    giam_doc: *(vọng ra)* {chi_dai} này… nếu công ty có chuyện gì… em lo cho mấy đứa nhỏ giúp anh nhé.
     chi_dai: *(vọng ra)* Có chuyện gì là chuyện gì? Anh nói rõ ra coi.
     giam_doc: *(vọng ra)* …Thôi. Không có gì.
     ~ rd_tin_mat()
@@ -119,7 +119,7 @@ _{editor} ngồi góc phòng, ngáp. Bạn biết ai dựng clip đó. Bạn đ�
 # ngay:15 # gio:15:00 # noi:pantry # bat_buoc
 _Pantry tối om, chỉ có ánh đèn điện thoại. Bạn ngồi trong góc sau tủ lạnh, ăn bánh. Không ai thấy bạn._
 _{ke_toan} và {chi_dai} bước vào, nói rất nhỏ._
-ke_toan: Hương. Bà đọc giùm tui cái này. Trang 47. Chữ cỡ 6.
+ke_toan: {chi_dai}. Bà đọc giùm tui cái này. Trang 47. Chữ cỡ 6.
 chi_dai: *(nheo mắt dưới đèn pin)* "…nếu không đạt mục tiêu… bên B hoàn trả gấp đôi…" Gấp đôi là sao?
 ke_toan: 10 tỷ. Quỹ còn 2 tỷ. Ổng ký mà không đọc. Siêu Nhân Hồng mà không tới một triệu người theo dõi là công ty sập. Sập hết. Ai cũng mất việc.
 chi_dai: Trời đất…

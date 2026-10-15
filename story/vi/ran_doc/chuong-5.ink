@@ -159,11 +159,11 @@ _Livestream sinh nhật. 30.000 người đang xem. {hong_hot} cầm máy, {it} 
 _Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline}._
 sieu_nhan_hong: Vũ ơi… anh thích em. Hông phải PR đâu. Thật đó.
 _Hashtag VũƠiTrảLờiĐi lên xu hướng sau 6 phút. {chua_te_deadline} đứng hình, tay vẫn cầm điện thoại đang lướt Tóp-tóp._
-chua_te_deadline: *(nói nhỏ)* …Anh Thái dặn anh nói vậy hả?
+chua_te_deadline: *(nói nhỏ)* …Anh {quan_ly_idol} dặn anh nói vậy hả?
 ~ follow(60000)
 _Rồi từ cửa, một cái bóng đen lao vào. {cho}. Thẳng về phía cái bánh 3 tầng._ # hen_gio:4
-* [🐾 Hô: "Tuất! Bánh đó!"]
-    _{cho} hiểu đúng hai chữ: "Tuất" và "Bánh". Cái bánh đổ ụp. Kem hồng bay lên mũ {sieu_nhan_hong}, lên mặt {giam_doc}, lên máy quay._
+* [🐾 Hô: "{cho}! Bánh đó!"]
+    _{cho} hiểu đúng hai chữ: "{cho}" và "Bánh". Cái bánh đổ ụp. Kem hồng bay lên mũ {sieu_nhan_hong}, lên mặt {giam_doc}, lên máy quay._
     ~ rd_pha(0)
     ~ rd_so_lan_dung_tuat = rd_so_lan_dung_tuat + 1
     ~ follow(30000)
@@ -236,7 +236,7 @@ con_ong_chau_cha: Ông lấy đi. Tui đâu có muốn.
 * [😶 Ghi biên bản, không nói gì.]
     _Biên bản ghi: "09:17. Không có gì để ghi." Một câu rất an toàn._
 - _Cuối hội nghị, {hong_hot} chìa điện thoại: clip {idol_het_thoi} hát "Công Viên" trong bóng tối, do {editor} quay hôm mất điện, đang lan khắp mạng._
-hong_hot: Mà cùng lúc có bài bóc fan ảo của ổng nữa. 80.000 nick, comment y chang nhau: "Anh Phát đỉnh nóc kịch trần".
+hong_hot: Mà cùng lúc có bài bóc fan ảo của ổng nữa. 80.000 nick, comment y chang nhau: "Anh {idol_het_thoi} đỉnh nóc kịch trần".
 * {biet(fan_ao_phat)} [🐍 "Tui có bằng chứng ổng thuê fan ảo nè. Bà đăng hông?"]
     ~ rd_tung_tin(15, 10)
     ~ scandal()

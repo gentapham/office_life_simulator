@@ -7,5 +7,13 @@
 INCLUDE chung/bien-chung.ink
 INCLUDE cho/bien.ink
 INCLUDE cho/chuong-1.ink
+INCLUDE cho/chuong-2.ink
+INCLUDE cho/chuong-3.ink
+INCLUDE cho/chuong-4.ink
+INCLUDE cho/chuong-5.ink
+INCLUDE cho/chuong-6.ink
+INCLUDE cho/nhan-vat.ink
+INCLUDE cho/minigame.ink
+INCLUDE cho/ket-thuc.ink
 
 -> END

@@ -182,7 +182,7 @@ _Ở cuối bàn, {ke_toan} lắc đầu rất nhẹ. Một lần. Hai lần._
     ~ cd_td(3)
     ~ qh("giam_doc", 5)
 - sieu_nhan_hong: *(giơ tay)* Cho em hỏi! Đêm Hồng có bánh chuối chiên hông? Hợp đồng ghi rồi đó!
-chi_dai: Có. Bánh chuối chiên thì chị lo được. Cái chị lo hổng được là… cái cột điện giữa bãi đất.
+chi_dai: Có. Bánh chuối chiên thì tui lo được. Cái tui lo hổng được là… cái cột điện giữa bãi đất.
 sieu_nhan_hong: Cột điện gì?
 chi_dai: Thì cái sân khấu mình thuê đó. Chưa có sân khấu. Có bãi đất. Với cái cột điện.
 ~ cd_td(2)
@@ -280,13 +280,13 @@ sieu_nhan_hong: Trời ơi Tuất! Bữa nay đẹp trai dữ vậy! Gâu gâu! 
 cho: GRỪỪỪ… GÂU! GÂU GÂU!
 _{cho} hạ thấp người. Mắt dán vào bàn tay đeo găng hồng của {sieu_nhan_hong}._
 * [🛡️ Bước ra đứng giữa hai bên: "Hai người. Ngừng. Ngay."]
-    sieu_nhan_hong: Em giỡn thôi mà chị!
+    sieu_nhan_hong: Tui giỡn thôi mà chị Đại!
     chi_dai: Nó hổng giỡn. Nhìn mắt nó đi.
     _{cho} vẫn gầm gừ, nhưng không lao lên. Bạn đứng đó, như tấm khiên._
     _Rồi trong một tích tắc bạn quay đầu nghe bộ đàm, {cho} lao qua chân bạn, ngoạm chiếc găng tay hồng tuột khỏi tay {sieu_nhan_hong}, chạy mất dưới gầm cầu thang._
     ~ cd_uy(3)
 * [🗣️ Quát {sieu_nhan_hong}: "Hợp đồng cho chọc chó chứ hông cho chọc chó đang mặc đồ đẹp!"]
-    sieu_nhan_hong: *(rụt cổ)* Dạ… dạ em xin lỗi chị.
+    sieu_nhan_hong: *(rụt cổ)* Dạ… dạ tui xin lỗi chị Đại.
     _{cho} nhìn bạn đầy biết ơn. Rồi tranh thủ lúc {sieu_nhan_hong} cúi đầu xin lỗi, nhảy lên giật phăng chiếc găng tay hồng, chạy biến._
     ~ qh("sieu_nhan_hong", -3)
     ~ qh("cho", 5)
@@ -295,11 +295,11 @@ _{cho} hạ thấp người. Mắt dán vào bàn tay đeo găng hồng của {s
     _{sieu_nhan_hong} sủa. {cho} sủa. {sieu_nhan_hong} sủa to hơn. {cho} cướp luôn chiếc găng tay hồng, chạy mất dưới gầm cầu thang._
     _Bác Bình uống trà. Bạn uống trà. Hai người không ai nói gì._
     ~ cd_nk(5)
-- sieu_nhan_hong: Găng tay của em! Đôi đó em mua ở… à thôi, em có 12 đôi.
+- sieu_nhan_hong: Găng tay của tui! Đôi đó tui mua ở… à thôi, tui có 12 đôi.
 _Mười phút sau, bạn thấy {sieu_nhan_hong} lén nhét con gà cao su của {cho} vào sau tủ mạng tầng 1, cười khúc khích._
 * [🦁 "Trả con gà lại cho nó."]
-    sieu_nhan_hong: Nó lấy găng của em mà!
-    chi_dai: Nó là chó. Cậu là người lớn. Trả.
+    sieu_nhan_hong: Nó lấy găng của tui mà!
+    chi_dai: Nó là chó. Ông là người lớn. Trả.
     _{sieu_nhan_hong} lí nhí "dạ" rồi… đi mất. Con gà vẫn ở sau tủ mạng. Bạn ghi nhớ chỗ đó._
     ~ cd_uy(2)
 * [😶 Thôi kệ. Chuyện của hai đứa con nít.]
@@ -347,7 +347,7 @@ sieu_nhan_hong: Xin lỗi cả nhà! Có người cần giúp! Hợp đồng đi
 _{sieu_nhan_hong} lao ra cửa. Đèn vẫn sáng. Tiền thuê đèn vẫn tính theo giờ._
 * [🏃 Chạy theo kéo về. Mỗi phút là tiền.]
     _Bạn chạy xuống hai tầng lầu, ra tới đường thì {sieu_nhan_hong} đã đẩy xe giùm bà cụ qua bên kia ngã tư, còn mua giùm bà bịch cam._
-    sieu_nhan_hong: Chị ơi, bà nói cảm ơn chị nữa nè!
+    sieu_nhan_hong: Chị Đại ơi, bà nói cảm ơn chị nữa nè!
     _Bà cụ nhìn bạn, móm mém cười. Bạn đứng thở dốc giữa ngã tư, không biết nên giận ai._
     ~ cd_nk(10)
     ~ cd_met(5)
@@ -373,7 +373,7 @@ _{sieu_nhan_hong} lao ra cửa. Đèn vẫn sáng. Tiền thuê đèn vẫn tín
 # ngay:6 # gio:17:00 # noi:tang_1
 _Clip {sieu_nhan_hong} giúp bà cụ đang lên xu hướng. Lượt xem nhảy như giá coin của {dan_dau_tu}, chỉ khác là đi lên._
 hong_hot: Ối dồi ôi! Clip này gấp 12 lần mọi thứ mình làm từ đầu tháng! Trong khi tụi mình đâu có làm gì!
-dan_dau_tu: *(đẩy kính)* Em xem số liệu rồi. Người ta không thích Siêu Nhân Hồng tạo dáng. Người ta thích Siêu Nhân Hồng làm việc tốt.
+dan_dau_tu: *(đẩy kính)* Anh xem số liệu rồi. Người ta không thích Siêu Nhân Hồng tạo dáng. Người ta thích Siêu Nhân Hồng làm việc tốt.
 dan_dau_tu: Nếu mình đăng thêm ảnh hậu trường, đúng giờ 8 giờ tối, gắn thẻ đúng chỗ, con số còn gấp bốn.
 { cd_chup_ba_cu:
     designer: Ảnh hậu trường thì tụi em có 200 tấm. Chị {chi_dai} bắt chụp hết.
@@ -392,9 +392,9 @@ dan_dau_tu: Nếu mình đăng thêm ảnh hậu trường, đúng giờ 8 giờ
 * [😶 "Mấy đứa lo truyền thông. Chị lo sân khấu thôi."]
     _Bạn về sớm. Clip vẫn lên, nhưng không ai đẩy._
     ~ cd_nk(-5)
-- dan_dau_tu: Mà chị… nói vậy thôi chứ chị có muốn nghe về Hồng… à thôi, chưa có. Chưa có gì.
-chi_dai: Chưa có gì là sao?
-dan_dau_tu: Dạ không. Lần này là lên thật. À mà em nói số liệu thôi chị.
+- dan_dau_tu: Mà Hương… em có muốn nghe về Hồng… à thôi, chưa có. Chưa có gì.
+chi_dai: Chưa có gì là sao anh?
+dan_dau_tu: Không không. Lần này là lên thật. À mà anh nói số liệu thôi.
 -> END
 
 // ------------------------------------------------------------

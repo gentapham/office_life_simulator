@@ -63,7 +63,7 @@ _{thuc_tap_sinh} chạy tới, đưa bạn chai nước suối ướp lạnh, ch
 
 === chi_dai_mg_bo_dam_that_bai ===
 _Bạn gửi {it} đi lấy đá, gửi {thuc_tap_sinh} đi sửa loa, gửi {hong_hot} đi tìm {cho}. Ba lần sai. Ba thảm họa nhỏ._
-it: *(bộ đàm)* Chị. Em ở tiệm đá. Loa vẫn chập.
+it: *(bộ đàm)* Bà. Tui ở tiệm đá. Loa vẫn chập.
 thuc_tap_sinh: *(bộ đàm)* Dạ chị ơi em chạm vô loa thì nó… nó nổ bụp ạ. Em không sao ạ!
 _Bạn ném bộ đàm xuống ghế. Rồi nhặt lên. Rồi lau nó. Bộ đàm không có lỗi._
 ~ cd_nk(15)
@@ -184,7 +184,7 @@ _Nhà số 45. Mâm cơm nóng hổi. Đúng món {ten(cd_khach_com)} thích. {t
 ~ an(60)
 { cd_khach_com:
 - "thanh_ninh":
-    thanh_ninh: Chị… em kể chị nghe chuyện này. Lưu Lực không muốn em làm trợ lý. Ổng muốn em làm nội gián.
+    thanh_ninh: Chị… em đi phỏng vấn bên LL ba lần rồi. Chiều nay chính ông Lưu Lực phỏng vấn em. Thư ký bên đó hỏi em có giữ mật khẩu email anh {giam_doc} hông. Trợ lý gì mà hỏi vậy chị?
     ~ cd_hoa_voi_nhi = true
 - "thuc_tap_sinh":
     thuc_tap_sinh: Dạ… em kể chị nghe. Trước em làm trưởng phòng tín dụng ngân hàng ạ. Em bỏ hết để đi làm cái em thích.
@@ -204,7 +204,7 @@ _Nhà số 45. Mâm cơm nóng hổi. Đúng món {ten(cd_khach_com)} thích. {t
     thanh_xin_nghi: Chị… em hông về quê gặt lúa. Em đi thi hát. "Giọng Ca Ước Mơ". Em vô tới bán kết rồi.
     ~ phat_hien(son_thi_hat)
 - "sieu_nhan_hong":
-    sieu_nhan_hong: *(tháo mũ, ăn rất chậm)* Nhà em có cái bàn 12 ghế. Em ngồi một mình. Lâu lắm rồi mới có người nấu cho em ăn.
+    sieu_nhan_hong: *(tháo mũ, ăn rất chậm)* Nhà tui có cái bàn 12 ghế. Tui ngồi một mình. Lâu lắm rồi mới có người nấu cho tui ăn.
 - else:
     _{ten(cd_khach_com)} kể bạn nghe một chuyện chưa từng kể với ai. Bạn gật đầu, ghi nhớ, và không bao giờ kể lại._
 }

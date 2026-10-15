@@ -61,12 +61,12 @@ chua_te_deadline: Đi thẳng… rẽ trái… ờ… chill… cứ đi đi.
 _{sieu_nhan_hong} đi thẳng xuống biển. Vẫn cười._
 * [🛡️ Lội xuống kéo {sieu_nhan_hong} lên trước khi sóng đánh tuột mũ.]
     _Bạn ướt tới ngực. {sieu_nhan_hong} được kéo lên, mũ còn nguyên. {hong_hot} quay được hết._
-    sieu_nhan_hong: Chị Hương là siêu nhân thật!
+    sieu_nhan_hong: Chị Đại là siêu nhân thật!
     ~ qh("sieu_nhan_hong", 8)
     ~ follow(12000)
 * [📯 Thổi còi phạt {chua_te_deadline}: "Em dẫn đường kiểu gì vậy?"]
     chua_te_deadline: Ảnh đi nhanh quá mà chị!
-    sieu_nhan_hong: *(từ dưới nước)* Không sao! Anh {chua_te_deadline} dẫn đi đâu em cũng đi!
+    sieu_nhan_hong: *(từ dưới nước)* Không sao! {chua_te_deadline} dẫn đi đâu anh cũng đi!
     _Cả bãi biển "ồ" lên. {chua_te_deadline} quay đi, giả bộ coi điện thoại._
     ~ follow(5000)
     ~ qh("chua_te_deadline", -3)
@@ -131,7 +131,7 @@ hr: Anh không định điền ai hết. Sếp bắt 7 tên trước 26/10. Anh 
 # ngay:17 # gio:22:30 # noi:bai_bien_vung_tau # bat_buoc
 _Lửa trại. Cả công ty ngồi thành vòng tròn. Trò "nói thật". Chai nước suối quay, đầu chai chỉ vào ai, người đó trả lời một câu hỏi._
 _Chai chỉ vào {sieu_nhan_hong}. Câu hỏi: "Chuyện xấu nhất anh từng làm?"_
-sieu_nhan_hong: *(im một lúc)* Hồi nhỏ… em nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi chiều. Em không nhớ tên nó. Em chỉ nhớ cái lỗ thông gió hình con cá.
+sieu_nhan_hong: *(im một lúc)* Hồi nhỏ… tui nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi chiều. Tui không nhớ tên nó. Tui chỉ nhớ cái lỗ thông gió hình con cá.
 _Cả vòng tròn im lặng. Bên kia đống lửa, {ran_doc} ngồi bất động, mặt sáng đỏ trong ánh lửa._
 { cd_de_y_ran_doc:
     _Bạn nhìn {ran_doc}. Tay {ran_doc} siết chặt cái ly nhựa tới móp méo. Bạn nhớ tấm ảnh xóm Cây Me._
@@ -200,8 +200,8 @@ _Còn bạn, bạn chỉ giận một người. {hr} ngồi ghế đầu, đeo k
         ~ cd_uy(5)
     }
 * [🤝 Ngồi cạnh {dan_dau_tu}: "Mất bao nhiêu?"]
-    dan_dau_tu: Dạ… còn cái nịt chị ơi. Mà lần sau là lên thật.
-    chi_dai: Lần sau anh mua coin thì báo chị. Chị đứng cạnh đấm vô vai cho tỉnh.
+    dan_dau_tu: Còn cái nịt em ơi. Mà lần sau là lên thật.
+    chi_dai: Lần sau anh mua coin thì báo em. Em đứng cạnh đấm vô vai cho tỉnh.
     ~ qh("dan_dau_tu", 5)
     ~ cd_bao_ke(de_dan_dau_tu)
 * [😶 Đeo tai nghe. Ngủ. Hai ngày rồi chưa ngủ.]
