@@ -1,73 +1,56 @@
-# Office Life Simulator
+# G-Entertainment: Office Life Simulator
 
-Trò chơi mô phỏng cuộc sống dân văn phòng: đi làm, xử lý công việc, giao tiếp với đồng nghiệp, quản lý thời gian, năng lượng và tinh thần để thăng tiến trong sự nghiệp.
+Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đầy drama. Chọn một trong 23 role, đi làm, nói chuyện, hóng hớt, nói xấu, yêu đương, đánh ghen… Mỗi câu trả lời của bạn quyết định ai lên chức, ai bị đuổi việc, và câu chuyện kết thúc ra sao.
 
-> 🚧 Dự án đang ở giai đoạn khởi tạo. Nội dung README sẽ được cập nhật dần theo tiến độ phát triển.
+Đi làm 8 tiếng chưa đủ? Tối về đi làm tiếp trong game :v
 
-## Mục lục
+> 🚧 Dự án đang ở giai đoạn **thiết kế**, chưa có code.
 
-- [Giới thiệu](#giới-thiệu)
-- [Tính năng dự kiến](#tính-năng-dự-kiến)
-- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
-- [Cài đặt](#cài-đặt)
-- [Cách chơi](#cách-chơi)
-- [Cấu trúc thư mục](#cấu-trúc-thư-mục)
-- [Lộ trình phát triển](#lộ-trình-phát-triển)
-- [Đóng góp](#đóng-góp)
-- [Giấy phép](#giấy-phép)
+## Điểm chính
 
-## Giới thiệu
+- **Chơi trên web**, không cần cài đặt. Ưu tiên máy tính, tối ưu thêm cho điện thoại.
+- **3D low-poly** dựng bằng Three.js. Đổi được giữa góc nhìn thứ 1 và thứ 3, có bản đồ isometric.
+- **23 role**: 20 nhân viên, người chơi là nhân viên thứ 21 (mặc định là role **Rắn Độc**), cộng thêm **Siêu Nhân Hồng** (đối tác chiến lược) và **Chó Công Ty**.
+- **Đặt tên** cho mọi nhân vật, hoặc dùng tên mặc định.
+- **Hội thoại nhiều lựa chọn**, tin đồn lan và biến dạng giữa các nhân vật.
+- **138 kết thúc**: 6 kết thúc cho mỗi role.
+- **Thế giới rộng**: công ty, nhà trọ, siêu thị, quán cơm, quán cà phê, rạp phim, quán nhậu, công viên…
+- **Sinh tồn đời văn phòng**: đói, khát, năng lượng, stress, lương ngày 10, làm thêm freelancer.
+- **Song ngữ** Tiếng Việt / English, có âm thanh.
+- **Lưu game ngay trên trình duyệt**, không cần máy chủ.
 
-Người chơi vào vai một nhân viên văn phòng mới vào nghề. Mỗi ngày làm việc là một chuỗi lựa chọn: nhận task nào, họp hay không họp, ăn trưa với ai, tăng ca hay về sớm… Mọi quyết định đều ảnh hưởng tới các chỉ số của nhân vật và con đường sự nghiệp.
+## Tài liệu thiết kế
 
-## Tính năng dự kiến
+| Tài liệu | Nội dung |
+|---|---|
+| [docs/GDD.md](docs/GDD.md) | Tài liệu thiết kế game: hệ thống, vòng lặp, kỹ thuật, lộ trình |
+| [docs/world/the-gioi.md](docs/world/the-gioi.md) | Thế giới, bản đồ, địa điểm |
+| [docs/roles/README.md](docs/roles/README.md) | 23 role: công việc, tính cách, bí mật, ý tưởng truyện |
+| [docs/roles/ran-doc.md](docs/roles/ran-doc.md) | Role Rắn Độc chi tiết: tuyến truyện, hội thoại mẫu, 6 kết thúc |
+| [docs/huong-dan-viet-truyen.md](docs/huong-dan-viet-truyen.md) | Hướng dẫn viết thoại và câu chuyện |
 
-- **Chu kỳ ngày làm việc**: check-in, làm việc, nghỉ trưa, họp, tan làm.
-- **Hệ thống chỉ số**: năng lượng, stress, hiệu suất, mối quan hệ, tài chính.
-- **Công việc & deadline**: nhận task, ưu tiên công việc, hoàn thành để nhận đánh giá.
-- **Đồng nghiệp & sếp**: tương tác, xây dựng quan hệ, sự kiện ngẫu nhiên.
-- **Thăng tiến**: đánh giá định kỳ, tăng lương, lên chức.
-- **Sự kiện ngẫu nhiên**: sinh nhật đồng nghiệp, sự cố hệ thống, team building…
+## Công nghệ dự kiến
 
-## Công nghệ sử dụng
+- [Three.js](https://threejs.org/): đồ họa 3D
+- [Vite](https://vitejs.dev/): build và chạy thử
+- [Ink](https://www.inklestudios.com/ink/): viết truyện nhiều lựa chọn
+- GitHub Pages + GitHub Actions: host và tự động deploy
 
-_TODO: cập nhật khi chốt stack (ngôn ngữ, engine/framework, công cụ build)._
+Khi phát hành, game sẽ chạy tại: **https://gentapham.github.io/office_life_simulator/**
 
-## Cài đặt
+## Lộ trình
 
-_TODO: bổ sung hướng dẫn sau khi có mã nguồn._
-
-```bash
-git clone https://github.com/gentapham/office_life_simulator.git
-cd office_life_simulator
-# các bước cài đặt dependencies và chạy game sẽ được bổ sung
-```
-
-## Cách chơi
-
-_TODO: mô tả điều khiển và luật chơi cơ bản._
-
-## Cấu trúc thư mục
-
-_TODO: cập nhật khi có cấu trúc dự án._
-
-## Lộ trình phát triển
-
-- [ ] Chốt ý tưởng gameplay và công nghệ
-- [ ] Dựng khung dự án
-- [ ] Vòng lặp ngày làm việc cơ bản
-- [ ] Hệ thống chỉ số nhân vật
-- [ ] Hệ thống task & deadline
-- [ ] Tương tác đồng nghiệp
-- [ ] Sự kiện ngẫu nhiên
-- [ ] Lưu / tải game
+- [x] Chốt ý tưởng, nền tảng, phong cách
+- [ ] Hoàn thiện tài liệu thiết kế và truyện của các role
+- [ ] Bản chạy thử: văn phòng, nhà trọ, đi lại, hội thoại, 1 ngày làm việc, lưu game
+- [ ] Rắn Độc chơi được trọn 30 ngày với 6 kết thúc
+- [ ] Mở rộng thế giới và thêm role
+- [ ] Âm thanh, tiếng Anh, tối ưu điện thoại
 
 ## Đóng góp
 
-1. Tạo branch mới từ `main`.
+1. Tạo branch mới từ branch chính.
 2. Commit với message rõ ràng.
 3. Mở Pull Request mô tả thay đổi.
 
-## Giấy phép
-
-_TODO: chọn giấy phép (ví dụ MIT)._
+Muốn viết thêm truyện? Đọc [hướng dẫn viết truyện](docs/huong-dan-viet-truyen.md) trước nhé.
