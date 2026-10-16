@@ -1,6 +1,6 @@
 // Bản đọc thử: chơi toàn bộ thoại Ink theo từng ngày của tháng 10/2026.
 import { Story } from "inkjs/dist/ink-es6.js";
-import { NHAN_VAT, THEO_MA, thuCuaNgay, SU_KIEN_NGAY } from "./nhan-vat.js";
+import { NHAN_VAT, THEO_MA, thuCuaNgay, ngayDayDu, SU_KIEN_NGAY } from "./nhan-vat.js";
 import { DIA_DIEM } from "./dia-diem.js";
 
 const app = document.getElementById("app");
@@ -104,7 +104,7 @@ function renderHome() {
         h("span", { class: "note16" }, h("b", {}, "16+"), "Có nhậu, đánh ghen, nợ nần và ngôn ngữ văn phòng."),
       ),
       save ? h("div", { class: "resume" },
-        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma]?.vai || save.ma}, ngày ${save.ngay}/10.`),
+        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma]?.vai || save.ma}, ${ngayDayDu(save.ngay)}.`),
         h("span", { class: "top-actions" },
           h("button", { class: "btn primary", onclick: () => openRole(save.ma, { tiepTuc: true }) }, "Chơi tiếp"),
           h("button", { class: "btn ghost", onclick: () => { saveWrite(null); renderHome(); } }, "Xóa bản lưu"),
@@ -310,14 +310,14 @@ function renderIntro(body) {
   const n = THEO_MA[L.ma];
   const chinh = L.knots.filter(k => tag(k.tags, "ngay") != null).length;
   body.append(h("section", { class: "stage" },
-    h("div", { class: "dayline" }, h("b", {}, "Bắt đầu"), h("span", {}, "Thứ 5, 1/10/2026")),
+    h("div", { class: "dayline" }, h("b", {}, "Bắt đầu"), h("span", {}, ngayDayDu(1))),
     h("div", { class: "log" },
       h("p", { class: "narr" }, `Bạn sẽ sống 31 ngày trong vai ${n.vai} ${L.v(L.ma) || n.ten}. Mỗi ngày có các cảnh chính theo giờ. Hết cảnh trong ngày, bạn có thể nói chuyện thêm với đồng nghiệp rồi đi ngủ.`),
       h("p", { class: "narr" }, `Nhân vật này có ${L.knots.length} cảnh (${chinh} cảnh gắn ngày).`),
       h("p", { class: "narr" }, "Tối 31/10 là Đêm Hồng: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
     ),
     h("div", { class: "choices" },
-      h("button", { class: "choice", onclick: () => { saveWrite(null); L.batDauNgay(1); render3D(); } }, "▶ Bắt đầu ngày 1/10"),
+      h("button", { class: "choice", onclick: () => { saveWrite(null); L.batDauNgay(1); render3D(); } }, `Bắt đầu ${ngayDayDu(1)}`),
       h("button", { class: "choice", onclick: () => { saveWrite(null); const g = L.batDauNgay(1); renderRole("choi"); g.forEach(x => addSys(x)); nextScene(); } }, "Chơi dạng chữ"),
     ),
   ));
@@ -339,7 +339,7 @@ function updateDayline(gio, noi) {
   if (!UI.dayline) return;
   const ev = SU_KIEN_NGAY[L.ngay];
   UI.dayline.replaceChildren(
-    h("b", {}, `${thuCuaNgay(L.ngay)}, ${L.ngay}/10${gio ? " · " + gio : ""}`),
+    h("b", {}, `${ngayDayDu(L.ngay)}${gio ? " · " + gio : ""}`),
     h("span", {}, [noi ? prettyNoi(noi) : null, ev].filter(Boolean).join(" · ")),
   );
 }
@@ -431,14 +431,16 @@ function runStory(story, playerCode, onEnd) {
       const total = henGio; let left = total;
       const bar = h("i", { style: "width:100%" });
       UI.choices.append(h("div", { class: "timer", "aria-label": `Còn ${left} giây` }, bar));
-      timerHandle = setInterval(() => {
+      const chay = () => { timerHandle = setInterval(() => {
         left -= 0.2; bar.style.width = Math.max(0, left / total * 100) + "%";
         if (left <= 0) {
           clearInterval(timerHandle);
           const idx = choices.findIndex(c => c.text.trim().startsWith("⏱️"));
           pick(idx >= 0 ? idx : choices.length - 1);
         }
-      }, 200);
+      }, 200); };
+      // bản 3D: chỉ bắt đầu đếm khi người chơi đã đọc hết câu thoại và thấy lựa chọn
+      if (CHE_DO === "3d" && UI.khiHienLuaChon) UI.khiHienLuaChon(chay); else chay();
       henGio = null;
     }
     choices.forEach((c, i) => UI.choices.append(h("button", { class: "choice", onclick: () => pick(i) }, c.text)));
@@ -510,7 +512,7 @@ function dayEnd() {
   if (L.ngay >= 31) { finale(); return; }
   const npcs = L.npcKnots().filter(k => !L.npcDone.has(k.name));
   UI.choices.replaceChildren(
-    h("p", { class: "hint" }, `Hết các cảnh chính của ngày ${L.ngay}/10.`),
+    h("p", { class: "hint" }, `Hết các cảnh chính của ${ngayDayDu(L.ngay)}.`),
     npcs.length ? h("details", {},
       h("summary", {}, "Nói chuyện thêm với đồng nghiệp"),
       h("div", { class: "klist" }, npcs.map(k => {
@@ -518,7 +520,7 @@ function dayEnd() {
         return h("button", { class: "btn", onclick: () => { L.npcDone.add(k.name); addSys(`Nói chuyện với ${L.v(ma) || n?.ten || ma}`); playKnot(k.name, v => { afterScene(v); UI.choices.replaceChildren(h("button", { class: "choice", onclick: dayEnd }, "Xong ▸")); }); } },
           `${L.v(ma) || n?.ten || ma}`);
       }))) : null,
-    h("button", { class: "choice", onclick: () => { const g = L.batDauNgay(L.ngay + 1); addSys(`Đi ngủ. Sáng ${thuCuaNgay(L.ngay)}, ${L.ngay}/10`); g.forEach(x => addSys(x)); updateSide(); nextScene(); } }, `Đi ngủ, sang ngày ${L.ngay + 1}/10 ▸`),
+    h("button", { class: "choice", onclick: () => { const g = L.batDauNgay(L.ngay + 1); addSys(`Đi ngủ. Sáng ${ngayDayDu(L.ngay)}`); g.forEach(x => addSys(x)); updateSide(); nextScene(); } }, `Đi ngủ, sang ${ngayDayDu(L.ngay + 1)} ▸`),
   );
 }
 
@@ -598,48 +600,87 @@ async function render3D() {
   const khung = h("div", { class: "g3d-khung" });
   UI.dayline = h("div", { class: "g3d-ngay" });
   const ttEl = h("div", { class: "g3d-tt" });
-  UI.log = h("div", { class: "g3d-log", "aria-live": "polite" });
+  UI.log = h("div", { class: "g3d-log", "aria-live": "off" });
   UI.choices = h("div", { class: "g3d-choices" });
   UI.side = h("aside", { class: "side" });
-  const tieuDe = h("b", {});
-  const dlg = h("section", { class: "g3d-dlg", hidden: true, role: "dialog", "aria-label": "Hội thoại" }, h("header", {}, tieuDe), UI.log, UI.choices);
-  const keChiSo = h("div", { class: "g3d-drawer", hidden: true }, h("div", { class: "g3d-drawer-head" }, h("b", {}, "Chỉ số"), h("button", { class: "g3d-btn", onclick: () => { keChiSo.hidden = true; } }, "Đóng")), UI.side);
-  const mtChu = h("span", {}), mtPhu = h("small", {}), mtMui = h("i", { class: "g3d-mui" });
-  const mucTieu = h("div", { class: "g3d-muctieu", hidden: true }, mtMui, h("div", {}, mtChu, mtPhu));
-  const goiY = h("button", { class: "g3d-goiy", hidden: true, onclick: () => G?.tuongTac() });
-  const btnGoc = h("button", { class: "g3d-btn", onclick: () => G?.doiGoc() }, "Góc nhìn thứ nhất");
+
+  // ----- khung thoại: mỗi lần một câu, bấm hoặc Space để đọc tiếp -----
+  const kt = taoKhungThoai(UI.log, UI.choices);
+  const lichSu = h("div", { class: "g3d-lichsu", hidden: true },
+    h("div", { class: "g3d-ke-dau" }, h("b", {}, "Lịch sử hội thoại"), h("button", { class: "g3d-btn", onclick: () => { lichSu.hidden = true; } }, "Đóng")), UI.log);
+  kt.onLichSu = () => { lichSu.hidden = !lichSu.hidden; if (!lichSu.hidden) UI.log.scrollTop = UI.log.scrollHeight; };
+  const keChiSo = h("div", { class: "g3d-drawer", hidden: true }, h("div", { class: "g3d-ke-dau" }, h("b", {}, "Chỉ số"), h("button", { class: "g3d-btn", onclick: () => { keChiSo.hidden = true; } }, "Đóng")), UI.side);
+  const bangChiSo = () => { updateSide(); keChiSo.hidden = !keChiSo.hidden; };
+
+  const mtChu = h("b", {}), mtPhu = h("small", {}), mtMui = h("i", { class: "g3d-mui" });
+  const mucTieu = h("div", { class: "g3d-muctieu", hidden: true }, mtMui, h("div", {}, h("span", { class: "g3d-nhan" }, "Tiếp theo"), mtChu, mtPhu));
+  const goiY = h("button", { class: "g3d-goiy" + (matchMedia("(pointer: coarse)").matches ? " cham" : ""), hidden: true, onclick: () => G?.tuongTac() });
+  const btnGoc = h("button", { class: "g3d-btn", onclick: () => G?.doiGoc() }, "Góc nhìn 1");
   const toast = h("div", { class: "g3d-toast", "aria-live": "polite" });
   const man = h("div", { class: "g3d-man" });
-  const tamNgung = h("div", { class: "g3d-pause", hidden: true },
-    h("div", {},
-      h("b", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`),
-      h("p", {}, "W A S D: đi · Shift: chạy · Chuột: nhìn · E: nói chuyện, tương tác · V: đổi góc nhìn · Esc: tạm dừng"),
-      h("button", { class: "btn primary", onclick: () => G?.canvas.requestPointerLock?.() }, "Vào văn phòng")));
+  // máy tính: sau hội thoại chuột đang thả tự do, nhắc bấm vào màn hình để điều khiển tiếp (không bật bảng tạm dừng)
+  const bamTiep = h("button", { class: "g3d-bamtiep", hidden: true, onclick: () => G?.canvas.requestPointerLock?.() }, "Bấm vào màn hình để đi tiếp");
+
+  // ----- bảng hướng dẫn phím tắt (hiện khi vào game, khi tạm dừng) -----
+  const dienThoai = matchMedia("(pointer: coarse)").matches;
+  const phim = (...k) => h("span", { class: "g3d-phim" }, k.map(x => h("kbd", {}, x)));
+  const dongPhim = dienThoai ? [
+    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Cần gạt trái")), "Di chuyển"],
+    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Kéo nửa phải")), "Nhìn quanh"],
+    [h("span", { class: "g3d-phim" }, h("kbd", { class: "cam" }, "Nút cam")), "Nói chuyện, tương tác"],
+    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Chạm khung thoại")), "Đọc câu tiếp theo"],
+  ] : [
+    [phim("W", "A", "S", "D"), "Di chuyển"], [phim("Shift"), "Chạy"], [phim("Chuột"), "Nhìn quanh"],
+    [phim("E"), "Nói chuyện, tương tác"], [phim("V"), "Đổi góc nhìn thứ nhất / thứ ba"],
+    [phim("Space", "Enter"), "Đọc câu thoại tiếp theo"], [phim("1", "–", "9"), "Chọn câu trả lời"],
+    [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("Esc"), "Tạm dừng, mở bảng này"],
+  ];
+  const nutVao = h("button", { class: "btn primary", onclick: () => { if (dienThoai || G?.khoa) { tamNgung.hidden = true; daVao = true; } else G?.canvas.requestPointerLock?.(); } }, "Vào văn phòng");
+  const hdTieuDe = h("small", {}, "Hướng dẫn");
+  const tamNgung = h("div", { class: "g3d-pause" },
+    h("div", { class: "g3d-hd" },
+      h("header", {}, hdTieuDe, h("h2", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`), h("p", {}, `${ngayDayDu(L.ngay)}${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`)),
+      h("div", { class: "g3d-hd-cot" },
+        h("section", {}, h("h3", {}, "Phím tắt"), h("dl", {}, dongPhim.flatMap(([k, mo]) => [h("dt", {}, k), h("dd", {}, mo)]))),
+        h("section", {}, h("h3", {}, "Cách chơi"), h("ol", {},
+          h("li", {}, "Đi tới vòng sáng màu cam để mở cảnh tiếp theo. Mũi tên trên cùng chỉ hướng đi."),
+          h("li", {}, "Đứng cạnh đồng nghiệp để nói chuyện riêng."),
+          h("li", {}, "Cảnh ở ngoài công ty: ra cổng để đi tới đó."),
+          h("li", {}, "Hết việc trong ngày, ra cổng để về nhà ngủ. Game tự lưu."))),
+      ),
+      h("footer", {}, nutVao)));
+  let daVao = false;
+  const moHuongDan = () => { tamNgung.hidden = false; g?.moKhoaChuot(); };
+
   app.replaceChildren(h("div", { class: "g3d" },
     khung,
-    h("div", { class: "g3d-hud-trai" }, UI.dayline, ttEl),
+    h("div", { class: "g3d-hud-trai" }, h("div", { class: "g3d-the-ngay" }, UI.dayline, ttEl)),
     mucTieu,
     h("div", { class: "g3d-hud-phai" }, btnGoc,
-      h("button", { class: "g3d-btn", onclick: () => { updateSide(); keChiSo.hidden = !keChiSo.hidden; } }, "Chỉ số"),
+      h("button", { class: "g3d-btn", onclick: bangChiSo }, "Chỉ số"),
+      h("button", { class: "g3d-btn", onclick: () => { hdTieuDe.textContent = "Hướng dẫn"; nutVao.textContent = "Tiếp tục"; moHuongDan(); } }, "Hướng dẫn"),
       h("button", { class: "g3d-btn", onclick: () => renderRole("choi") }, "Dạng chữ"),
       h("button", { class: "g3d-btn", onclick: renderHome }, "Thoát")),
     h("div", { class: "g3d-tam" }),
-    goiY, toast, dlg, keChiSo, tamNgung, man,
+    goiY, bamTiep, toast, kt.el, lichSu, keChiSo, tamNgung, man,
   ));
 
   G = new Game3D(khung, { vai: L.ma, tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma, tenVai: ma => THEO_MA[ma]?.vai || "" });
   const g = G;
   window.__g3d = g; // để kiểm thử tự động
   const tam = app.querySelector(".g3d-tam");
-  g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn thứ nhất" : "Góc nhìn thứ ba"; tam.hidden = goc !== "1"; };
+  g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn 1" : "Góc nhìn 3"; tam.hidden = goc !== "1"; };
   g.onDoiGoc(g.goc);
   g.onThoiTiet = moTa => { ttEl.textContent = moTa; };
   const datGioTT = (gio, phut = 0) => { g.datGio(gio, phut); g.datThoiTiet(thoiTietLuc(L.ngay, gio)); };
-  g.onKhoaChuot = khoa => { tamNgung.hidden = khoa || g.khoa || g.dienThoai; };
-  if (!g.dienThoai) tamNgung.hidden = false;
+  g.onKhoaChuot = khoa => {
+    if (khoa) { tamNgung.hidden = true; bamTiep.hidden = true; daVao = true; return; }
+    if (!g.khoa && daVao) { hdTieuDe.textContent = "Tạm dừng"; nutVao.textContent = "Tiếp tục"; tamNgung.hidden = false; }
+  };
+  UI.bangChiSo = bangChiSo; UI.lichSu = kt.onLichSu;
   g.onGoiY = gy => {
-    const chu = gy ? (g.dienThoai ? gy.nhan : `E · ${gy.nhan}`) : "";
-    if (goiY.textContent !== chu) goiY.textContent = chu;
+    const chu = gy ? gy.nhan : "";
+    if (goiY.dataset.chu !== chu) { goiY.dataset.chu = chu; goiY.replaceChildren(...(g.dienThoai ? [] : [h("kbd", {}, "E")]), chu); }
     goiY.hidden = !gy;
   };
   g.onKhung = () => {
@@ -654,8 +695,11 @@ async function render3D() {
   g.onCong = () => { if (L.qi >= L.queue.length) hoiDiNgu(); else thongBao3D("Hôm nay vẫn còn việc ở công ty."); };
 
   // ----- hội thoại -----
-  moHoiThoai = ten => { tieuDe.textContent = ten || ""; UI.log.replaceChildren(); dlg.hidden = false; tamNgung.hidden = true; g.datKhoa(true); };
-  dongHoiThoai = () => { dlg.hidden = true; clearInterval(timerHandle); g.datKhoa(false); if (!g.dienThoai && document.pointerLockElement !== g.canvas) tamNgung.hidden = false; };
+  moHoiThoai = ten => { kt.mo(ten); bamTiep.hidden = true; if (daVao) tamNgung.hidden = true; lichSu.hidden = true; g.datKhoa(true); app.querySelector(".g3d")?.classList.add("dang-thoai"); };
+  dongHoiThoai = () => {
+    kt.dong(); clearInterval(timerHandle); g.datKhoa(false); app.querySelector(".g3d")?.classList.remove("dang-thoai");
+    if (!g.dienThoai && daVao && document.pointerLockElement !== g.canvas) bamTiep.hidden = false;
+  };
   thongBao3D = text => {
     const el = h("div", {}, text); toast.append(el);
     setTimeout(() => el.classList.add("het"), 2600); setTimeout(() => el.remove(), 3200);
@@ -706,13 +750,13 @@ async function render3D() {
     moHoiThoai("Cổng công ty");
     UI.choices.replaceChildren(
       h("button", { class: "choice", onclick: () => {
-        chuyenCanh(`Sáng ${thuCuaNgay(L.ngay + 1)}, ${L.ngay + 1}/10`, () => {
+        chuyenCanh(`Sáng ${ngayDayDu(L.ngay + 1)}`, () => {
           const ghiChu = L.batDauNgay(L.ngay + 1);
           g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
           ghiChu.forEach(x => thongBao3D(x));
           nextScene3D();
         });
-      } }, `Về nhà ngủ, sang ngày ${L.ngay + 1}/10`),
+      } }, `Về nhà ngủ, sang ${ngayDayDu(L.ngay + 1)}`),
       h("button", { class: "choice", onclick: () => { dongHoiThoai(); datMucTieuHUD("Ra cổng để về nhà"); g.datMucTieu("ra_ngoai", hoiDiNgu, { phaiRoiKhoi: true }); } }, "Ở lại thêm"),
     );
   };
@@ -729,19 +773,73 @@ async function render3D() {
   g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
   if (!L.queue.length && L.qi === 0 && L.ngay === 1 && !L.played.size) L.batDauNgay(1);
   updateDayline();
-  thongBao3D(`${thuCuaNgay(L.ngay)}, ${L.ngay}/10${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`);
+  thongBao3D(`${ngayDayDu(L.ngay)}${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`);
   nextScene3D();
 }
 let moHoiThoai = () => {}, dongHoiThoai = () => {}, thongBao3D = () => {}, nextScene3D = () => {}, dayEnd3D = () => {};
-// Phím tắt trong hội thoại 3D: 1-9 chọn, Enter/Space khi chỉ có một lựa chọn
+// Phím tắt bản 3D: Space/Enter đọc tiếp, 1-9 chọn, H lịch sử, Tab chỉ số
 addEventListener("keydown", e => {
-  if (CHE_DO !== "3d" || !G?.khoa || e.target.closest?.("input, textarea, button")) return;
+  if (CHE_DO !== "3d" || e.target.closest?.("input, textarea")) return;
+  if (e.code === "Tab") { e.preventDefault(); UI.bangChiSo?.(); return; }
+  if (e.code === "KeyH" && G?.khoa) { e.preventDefault(); UI.lichSu?.(); return; }
+  if (!G?.khoa || e.target.closest?.("button")) return;
+  if ((e.code === "Space" || e.code === "Enter") && UI.khungThoai?.conCho()) { e.preventDefault(); UI.khungThoai.tiep(); return; }
   const nut = [...(UI.choices?.querySelectorAll(".choice") || [])];
-  if (!nut.length) return;
+  if (!nut.length || UI.khungThoai?.conCho()) return;
   const so = /^Digit([1-9])$/.exec(e.code)?.[1];
   if (so && nut[+so - 1]) { e.preventDefault(); nut[+so - 1].click(); }
   else if ((e.code === "Enter" || e.code === "Space") && nut.length === 1) { e.preventDefault(); nut[0].click(); }
 });
+
+// Khung thoại 3D: lấy từng dòng runStory ghi vào log (log giữ làm lịch sử), hiện lần lượt từng câu
+function taoKhungThoai(log, luaChon) {
+  const ten = h("span", { class: "g3d-ten" }), noi = h("span", { class: "g3d-noi" });
+  const chu = h("div", { class: "g3d-chu" }), phu = h("div", { class: "g3d-phude" });
+  const tiepEl = h("span", { class: "g3d-tiep", "aria-hidden": "true" });
+  const nutBoQua = h("button", { class: "g3d-nho", onclick: e => { e.stopPropagation(); boQua(); } }, "Bỏ qua");
+  const nutLS = h("button", { class: "g3d-nho", onclick: e => { e.stopPropagation(); kt.onLichSu?.(); } }, "Lịch sử");
+  const the = h("div", { class: "g3d-the", role: "button", tabindex: "0", "aria-label": "Câu thoại. Bấm để đọc tiếp", onclick: () => tiep() },
+    h("div", { class: "g3d-the-dau" }, ten, noi, h("span", { class: "g3d-the-nut" }, nutLS, nutBoQua)), chu, phu, tiepEl);
+  const el = h("section", { class: "g3d-thoai", hidden: true, role: "dialog", "aria-label": "Hội thoại" }, the, luaChon);
+  let hang = [], choCb = null, coCau = false;
+  const MAU = ["#f0a46e", "#7fc8ff", "#9be38b", "#f7a6c8", "#ffd166", "#c9a8ff", "#8fe0d2", "#ff9c8a"];
+  const mauTen = t => { let s = 0; for (const c of t) s = (s * 31 + c.charCodeAt(0)) >>> 0; return MAU[s % MAU.length]; };
+  const doc = n => {
+    if (n.matches?.(".line")) return { ten: n.querySelector(".who")?.textContent || "", html: n.querySelector(".say")?.innerHTML || "", me: n.classList.contains("me"), phu: n.querySelector(".sub")?.textContent || "" };
+    if (n.matches?.("p.narr")) { const c = n.cloneNode(true); const s = c.querySelector(".sub"); s?.remove(); return { narr: true, html: c.innerHTML, phu: s?.textContent || "" }; }
+    return null;
+  };
+  const capNhat = () => {
+    tiepEl.hidden = !hang.length; nutBoQua.hidden = hang.length < 2;
+    el.classList.toggle("cho-doc", hang.length > 0);
+    if (!hang.length && choCb) { const cb = choCb; choCb = null; cb(); }
+  };
+  const hien = c => {
+    coCau = true; the.hidden = false;
+    ten.hidden = !!c.narr; ten.textContent = c.me ? `${c.ten} (bạn)` : c.ten;
+    ten.style.setProperty("--mau", c.me ? "#e8702a" : mauTen(c.ten || ""));
+    chu.className = "g3d-chu" + (c.narr ? " narr" : "") + (c.me ? " me" : "");
+    chu.innerHTML = c.html; phu.textContent = c.phu ? "Phụ đề: " + c.phu : ""; phu.hidden = !c.phu;
+    chu.classList.remove("vao"); void chu.offsetWidth; chu.classList.add("vao");
+  };
+  const tiep = () => { if (hang.length) hien(hang.shift()); capNhat(); };
+  const boQua = () => { if (hang.length) { hien(hang[hang.length - 1]); hang = []; } capNhat(); };
+  new MutationObserver(ds => {
+    for (const d of ds) for (const n of d.addedNodes) { const c = doc(n); if (c) hang.push(c); }
+    if (!coCau && hang.length) hien(hang.shift());
+    capNhat();
+  }).observe(log, { childList: true });
+  const kt = {
+    el,
+    conCho: () => hang.length > 0,
+    tiep,
+    mo(tieuDe) { hang = []; choCb = null; coCau = false; noi.textContent = tieuDe || ""; chu.innerHTML = ""; ten.hidden = true; phu.hidden = true; the.hidden = true; log.replaceChildren(); el.hidden = false; capNhat(); },
+    dong() { el.hidden = true; hang = []; choCb = null; },
+  };
+  UI.khungThoai = kt;
+  UI.khiHienLuaChon = cb => setTimeout(() => { if (hang.length) choCb = cb; else cb(); }, 0);
+  return kt;
+}
 const CAU_BAN = ["Đang bận, lát nói nha.", "Deadline tới cổ rồi, mai nói.", "Ủa, có gì hông?", "Đi ngang thôi hả? Ok.", "Để em xong cái này đã."];
 
 // ============================================================
@@ -788,7 +886,7 @@ function renderBrowser(body, ma = L.ma, knots = META.roles[ma].knots) {
   body.append(h("div", { class: "browser" },
     h("p", { class: "hint" }, "Bấm một cảnh để đọc riêng (mỗi cảnh chạy với chỉ số mặc định, không ảnh hưởng lượt chơi chính)."),
     days.length ? h("details", { open: true }, h("summary", {}, `Theo ngày (${days.length} ngày)`),
-      days.map(d => h("div", {}, h("p", { class: "hint" }, `${thuCuaNgay(+d)}, ${d}/10${SU_KIEN_NGAY[d] ? " · " + SU_KIEN_NGAY[d] : ""}`), list(groups["Theo ngày"][d])))) : null,
+      days.map(d => h("div", {}, h("p", { class: "hint" }, `${ngayDayDu(+d)}${SU_KIEN_NGAY[d] ? " · " + SU_KIEN_NGAY[d] : ""}`), list(groups["Theo ngày"][d])))) : null,
     ["Nói chuyện với đồng nghiệp", "Minigame", "Kết thúc", "Khác"].filter(g => groups[g].length).map(g =>
       h("details", {}, h("summary", {}, `${g} (${groups[g].length})`), list(groups[g]))),
     viewer,

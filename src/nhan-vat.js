@@ -27,9 +27,13 @@ export const NHAN_VAT = [
 
 export const THEO_MA = Object.fromEntries(NHAN_VAT.map(n => [n.ma, n]));
 
-export const THU = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
+export const THU = ["Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"];
 export function thuCuaNgay(ngay) {
   return THU[new Date(2026, 9, ngay).getDay()];
+}
+// Ngày đầy đủ trong game: "Thứ 5 - 01/10/2026"
+export function ngayDayDu(ngay) {
+  return `${thuCuaNgay(ngay)} - ${String(ngay).padStart(2, "0")}/10/2026`;
 }
 
 // Sự kiện lớn trong tháng (hiện ở thanh ngày)
