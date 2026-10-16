@@ -8,11 +8,15 @@ import { taoNguoiNgauNhien, taoNguoiLaiXe } from "./nhan-vat-3d.js";
 import { taoNguoiBua, fanQuyDo, tuongBac, phuKienXeMay } from "./nguoi-bua.js";
 import { themO, themAoMua, themDienThoai, themTui, taoNguoiDatCho, taoNguoiChayBo, taoHocSinh, taoLaoCong, aoMuaXeMay } from "./nguoi-pho.js";
 import { vlCong, vlDiem, ganDiem, ganSuong, texChum, texTron, trongGio } from "./chi-tiet-pho.js";
+import { gopKhoi } from "./gop-khoi.js";
+import { BoLap } from "./toi-uu.js";
 
 const duoiDuong = (x, z) => (z > 32.5 && z < 41.5) || (x > 47 && x < 57 && z > -130 && z < 160);
 const CHU_KY = [["chinh", "xanh", 16], ["chinh", "vang", 3], ["ngang", "xanh", 13], ["ngang", "vang", 3]];
 const MAU_SO = { xanh: "#3aff6a", vang: "#ffc23a", do: "#ff3a2a" };
 const kep = (v, a, b) => Math.max(a, Math.min(b, v));
+const GEO_LY = new THREE.CylinderGeometry(0.045, 0.04, 0.12, 8);
+const VL_LY = [0x5a3a22, 0xc89a5a].map(color => new THREE.MeshLambertMaterial({ color, transparent: true, opacity: 0.85 }));
 
 // độ sáng ban ngày theo giờ (giống cách bầu trời tính vị trí mặt trời)
 function doNgay(h) {
@@ -43,11 +47,16 @@ export class GiaoThong {
         const g = new THREE.Group();
         let dai2 = 1.8, toc = 9 + rnd() * 4, ngang = lan.oto, ao = null;
         if (loai === "xeMay") {
-          const xm = taoXeMay(chon(MAU_XE), rnd() < 0.5 ? "ga" : "so"); g.add(xm);
+          // xe và người ngồi trên xe không cử động riêng: gộp chung một khối (một lượt vẽ)
+          const khoi = new THREE.Group();
+          const xm = taoXeMay(chon(MAU_XE), rnd() < 0.5 ? "ga" : "so"); khoi.add(xm);
           const xeOm = rnd() < 0.15;
-          const lx = taoNguoiLaiXe(rnd, { aoXeOm: xeOm }); lx.position.set(0, 0.86, -0.18); g.add(lx);
+          const lx = taoNguoiLaiXe(rnd, { aoXeOm: xeOm }); lx.position.set(0, 0.86, -0.18); khoi.add(lx);
           const coSau = rnd() < 0.35;
-          if (coSau) { const sau = taoNguoiLaiXe(rnd, { sau: true }); sau.position.set(0, 0.9, -0.62); g.add(sau); }
+          if (coSau) { const sau = taoNguoiLaiXe(rnd, { sau: true }); sau.position.set(0, 0.9, -0.62); khoi.add(sau); }
+          gopKhoi(khoi, { deQuy: true, atlas: false });
+          for (const c of [...khoi.children]) if (!c.isMesh) khoi.remove(c);
+          g.add(khoi);
           if (!xeOm && rnd() < 0.12) { const pk = phuKienXeMay(rnd); g.add(pk); g.userData.pk = pk; } // áo choàng siêu nhân / cờ Quỷ Đỏ
           if (rnd2() < 0.9) { ao = aoMuaXeMay(rnd2, coSau); g.add(ao); }
           ngang = lan.xeMay + (rnd() - 0.5) * 0.9; // không chạy sát mép vỉa hè
@@ -128,13 +137,13 @@ export class GiaoThong {
     for (const p of this.nguoi) { p.lech = kep(p.lech, p.l.bien[0], p.l.bien[1]); p.lechHt = p.lech; }
 
     // người đứng / ngồi một chỗ (quán trà đá, bán hàng, chờ xe buýt, cà phê cóc, ngồi trước nhà trong hẻm)
-    this.dungYen = [];
+    this.dungYen = []; this._ly = [];
     const ngoiCho = (c, coLy) => {
       const nv = taoNguoiNgauNhien(rnd, { them: c.them || [] });
       nv.group.position.set(c.x, c.ngoi ? -0.42 : 0, c.z); nv.group.rotation.y = c.huong;
       if (c.ngoi && "ngoi" in nv) {
         nv.ngoi = "nghi"; // ngồi thật trên ghế nhựa: co chân, tay để lên đùi
-        if (coLy) { const ly = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.04, 0.12, 8), new THREE.MeshLambertMaterial({ color: c.loai === "caPhe" ? 0x5a3a22 : 0xc89a5a, transparent: true, opacity: 0.85 })); ly.position.set(0, -0.7, 0.07); nv.tayP.add(ly); }
+        if (coLy) { const ly = new THREE.Mesh(GEO_LY, VL_LY[c.loai === "caPhe" ? 0 : 1]); ly.position.set(0, -0.7, 0.07); nv.tayP.add(ly); this._ly.push(ly); }
       }
       // dungYen vẫn là danh sách nhân vật (game3d đọc nv.group); giờ giấc, chỗ ngồi gắn thêm vào _cho
       nv._cho = { gio: c.gio || [[0, 24]], x: c.x, z: c.z, an: false, chiuMua: !!c.mai };
@@ -155,6 +164,26 @@ export class GiaoThong {
       }
       this.nhomNoi.push({ ds, gio: c.gio, x: c.x, z: c.z, an: false, nguoiNoi: 0, doi: 0 });
     }
+
+    // ---------- Đồ lặp lại (ô, áo mưa, ly): mỗi loại một lượt vẽ cho cả phố ----------
+    this.lap = [];
+    const lap = (ds, hinh = null, phu = null) => {
+      ds = ds.filter(Boolean); if (!ds.length) return;
+      const vl = ds[0].material.clone(); vl.color.set(0xffffff);
+      const b = new BoLap(hinh || ds[0].geometry, vl, this.nhom);
+      for (const m of ds) b.them(m, phu ? phu(m) : null);
+      this.lap.push(b);
+    };
+    const doCao = m => new THREE.Matrix4().makeScale(1, m.geometry.parameters.height, 1);
+    const nguoiO = this.nguoi.filter(p => p.o), nguoiAo = this.nguoi.filter(p => p.aoMua);
+    lap(nguoiO.map(p => p.o.non));
+    lap(nguoiO.map(p => p.o.can), new THREE.BoxGeometry(0.025, 1, 0.025), doCao);
+    lap(nguoiO.map(p => p.o.dinh));
+    lap(nguoiAo.map(p => p.aoMua.than), new THREE.CylinderGeometry(0.2, 0.44, 1, 10, 1, true), doCao);
+    lap(nguoiAo.map(p => p.aoMua.mu));
+    lap(this.xe.map(x => x.ao?.children[0]));
+    lap(this.xe.map(x => x.ao?.children[1]));
+    for (const i of [0, 1]) lap(this._ly.filter(l => l.material === VL_LY[i]));
 
     // ---------- Đèn xe ban đêm: chùm pha trên mặt đường + quầng đèn (mỗi loại một lượt vẽ) ----------
     const N = this.xe.length;
@@ -186,6 +215,8 @@ export class GiaoThong {
     this._kt = 0;
   }
 
+  // gọi ngay trước khi vẽ (ma trận đã cập nhật): chép vị trí ô, áo mưa... vào các khối lặp
+  capNhatLap() { if (this.nhom.visible) for (const b of this.lap) b.capNhat(); }
   // game3d gọi mỗi khung hình: { gio, ngay, mua, uot, sang } lấy từ bầu trời
   datMoiTruong(mt) { this._mt = mt; }
   moiTruong() {

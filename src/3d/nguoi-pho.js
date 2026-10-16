@@ -31,18 +31,20 @@ const banTay = (tay, hx, hy, hz) => { const n = new THREE.Vector3(hx, hy, hz).no
 // ---------- Ô (dù) ----------
 const MAU_O = [0x1c1c1f, 0x23406f, 0xc0262d, 0xf26fa6, 0x2e8b57, 0x7b4bb3, 0xe9e04a, 0xb8c6d6];
 const vlO = MAU_O.map(c => vl(c, { side: THREE.DoubleSide }));
+const GEO_NON_O = new THREE.ConeGeometry(0.64, 0.3, 8, 1, true);
+const GEO_MU_MUA = new THREE.SphereGeometry(0.255, 10, 6, Math.PI / 2 + 0.95, Math.PI * 2 - 1.9, 0, Math.PI * 0.62);
 export function themO(nv, rnd) {
   const g = new THREE.Group(); g.visible = false; nv.group.add(g);
   const tay = nv.tayP, ben = tay.position.x > 0 ? 1 : -1;
   const h = banTay(tay, -0.4 * ben, -0.62, 0.66);
   const dinh = nv.dau.position.y + 0.42;
   const tam = [0.02, dinh, 0.1];
-  g.add(thanh([h.x, h.y - 0.05, h.z], tam, 0.025, 0x3a3a3a));
-  const non = new THREE.Mesh(new THREE.ConeGeometry(0.64, 0.3, 8, 1, true), vlO[Math.floor(rnd() * vlO.length)]);
+  const can = thanh([h.x, h.y - 0.05, h.z], tam, 0.025, 0x3a3a3a); g.add(can);
+  const non = new THREE.Mesh(GEO_NON_O, vlO[Math.floor(rnd() * vlO.length)]);
   non.position.set(tam[0], dinh - 0.04, tam[2]); g.add(non);
-  g.add(hop(0.03, 0.12, 0.03, 0x3a3a3a, tam[0], dinh + 0.15, tam[2]));
+  const dinhO = hop(0.03, 0.12, 0.03, 0x3a3a3a, tam[0], dinh + 0.15, tam[2]); g.add(dinhO);
   return {
-    g,
+    g, can, non, dinh: dinhO, // các phần để giao-thong vẽ chung (InstancedMesh)
     cam(bat) {
       g.visible = bat;
       if (bat) chiTay(tay, h.x, h.y, h.z, { co: false }); else thaTay(tay);
@@ -58,9 +60,9 @@ export function themAoMua(nv, rnd) {
   const vai = nv.tayP.position.y, co = vai + 0.14;
   const g = new THREE.Group(); g.visible = false; nv.group.add(g);
   const than = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.44, co - 0.5, 10, 1, true), m); than.position.y = (co + 0.5) / 2; g.add(than);
-  const mu = new THREE.Mesh(new THREE.SphereGeometry(0.255, 10, 6, Math.PI / 2 + 0.95, Math.PI * 2 - 1.9, 0, Math.PI * 0.62), m);
+  const mu = new THREE.Mesh(GEO_MU_MUA, m);
   mu.position.set(0, 0.02, -0.01); mu.visible = false; nv.dau.add(mu);
-  return { g, mac(bat) { g.visible = bat; mu.visible = bat; } };
+  return { g, than, mu, mac(bat) { g.visible = bat; mu.visible = bat; } };
 }
 
 // ---------- Điện thoại: áp tai / giơ lên chụp ảnh ----------
@@ -174,11 +176,12 @@ export function taoLaoCong(rnd) {
 }
 
 // ---------- Áo mưa cánh dơi trùm cả người lái và đầu xe ----------
+const GEO_AO_XE = [new THREE.CylinderGeometry(0.17, 0.52, 0.72, 10, 1, true), new THREE.CylinderGeometry(0.16, 0.44, 0.62, 8, 1, true)];
 const vlAoXe = MAU_AO_MUA.map(c => vl(c, { side: THREE.DoubleSide, transparent: true, opacity: 0.88 }));
 export function aoMuaXeMay(rnd, coSau) {
   const g = new THREE.Group(); g.visible = false;
   const m = vlAoXe[Math.floor(rnd() * vlAoXe.length)];
-  const a = new THREE.Mesh(new THREE.CylinderGeometry(0.17, 0.52, 0.72, 10, 1, true), m); a.position.set(0, 1.2, -0.02); a.scale.z = 1.55; a.rotation.x = 0.12; g.add(a);
-  if (coSau) { const b = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.44, 0.62, 8, 1, true), m); b.position.set(0, 1.22, -0.62); b.scale.z = 1.3; g.add(b); }
+  const a = new THREE.Mesh(GEO_AO_XE[0], m); a.position.set(0, 1.2, -0.02); a.scale.z = 1.55; a.rotation.x = 0.12; g.add(a);
+  if (coSau) { const b = new THREE.Mesh(GEO_AO_XE[1], m); b.position.set(0, 1.22, -0.62); b.scale.z = 1.3; g.add(b); }
   return g;
 }

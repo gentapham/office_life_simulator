@@ -14,6 +14,7 @@ import { DoiSong } from "./doi-song.js";
 import { cauBan as cauBanNV } from "../loi-noi-nho.js";
 import { THANG_MAY, capNhatChiTiet } from "./chi-tiet-cong-ty.js";
 import { dungNgoaiCanh, NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi, trongNhaNgoai } from "./ngoai-canh.js";
+import { caiToiUu } from "./toi-uu.js";
 export { NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi };
 
 // âm thanh nền của từng địa điểm ngoài công ty
@@ -129,6 +130,7 @@ export class Game3D {
     this.datGio(8, 0);
     this.capNhatGoc();
     this._resize = () => this.resize(); addEventListener("resize", this._resize); this.resize();
+    caiToiUu(this); // gộp nhân vật, đồ lặp (ô, áo mưa), tắt gương ở xa: bớt lượt vẽ
     this._loop = this.loop.bind(this); this.dongHo = new THREE.Clock(); this.renderer.setAnimationLoop(this._loop);
   }
 

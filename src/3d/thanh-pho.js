@@ -474,6 +474,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     { truc: "z", co: 10, tu: 47, den: 80, bien: [-0.9, 0.9] },
   ];
   const chiTiet = dungChiTietPho({ nhom, can, NHA, DEN, CAY, thanDung, matUot, denDem, vlDenDuong, veRanh, DEM, choNgoi, nhomNoi, vatCan: vatCanDiBo, dienThoai });
+  for (const m of matUot) m.userData.dong = true; // màu đổi theo độ ướt: không gộp vào atlas
   return { matUot, kinhDem, trongQuan, denGT, lan, loiDi, choNguoiDung, rnd, DEM, chiTiet, vatCanDiBo, choNgoi, nhomNoi, diemMua, vachQua: chiTiet.vachQua,
     cuaHang: NHA.map(n => ({ ten: n.ten, nhom: n.nhomQuan, x: n.g.position.x, z: n.g.position.z, huong: n.huong, w: n.w, hem: n.hem })) };
 }

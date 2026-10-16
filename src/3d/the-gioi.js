@@ -96,7 +96,7 @@ export const CHO_NGOI = {
   con_ong_chau_cha: { tang: 0, ...NGOI(BAN_CHUNG[9]) },
   // ngoi: true = ngồi ghế gõ máy; nghi: true = ngồi chơi (tay để trên đùi, lâu lâu nâng ly); yNgoi: hạ thân bao nhiêu (mặt đệm 0,51 m → −0,36)
   ke_toan: { tang: 0, x: -15, z: -11.4, ngoi: true }, hr: { tang: 0, x: -6, z: -11.5, ngoi: true },
-  it: { tang: 0, x: 2.7, z: -6.52, huong: Math.PI, ngoi: true },                 // bàn laptop cạnh cửa phòng server
+  it: { tang: 0, x: 2.88, z: -6.52, huong: Math.PI, ngoi: true },                // bàn laptop cạnh cửa phòng server
   chi_dai: { tang: 0, x: 8, z: -10.3, ngoi: true },                             // bàn điều phối trong kho sự kiện, nhìn ra cửa
   bac_bao_ve: { tang: 0, x: -6.9, z: 23.98, huong: 0.25, ngoi: true, nghi: true, yNgoi: -0.42 }, // ghế nhựa dưới cửa sổ chòi, bàn trà trước mặt, nhìn ra cổng
   cho: { tang: 0, x: -3.6, z: 25.4, huong: 0.9 },

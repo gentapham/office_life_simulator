@@ -17,6 +17,7 @@ if (typeof CanvasRenderingContext2D !== "undefined" && !CanvasRenderingContext2D
   CanvasRenderingContext2D.prototype.__vuaKhung = true;
 }
 import { gopKhoi } from "./gop-khoi.js";
+import { gopNguoi } from "./toi-uu.js"; // gộp cả người thành một khối xương cứng (ít lượt vẽ)
 
 // ---------- Vật liệu dùng chung ----------
 const vlCache = new Map();
@@ -236,8 +237,8 @@ function taoToc(dau, kieu, mau, mau2) {
 // ---------- Người ----------
 export function taoNguoi(ma, nhRieng = null) {
   const nh = nhRieng || NGOAI_HINH[ma] || NGOAI_HINH.ran_doc;
-  if (nh.cho) return taoCho();
-  if (nh.sieuNhan) return taoSieuNhan();
+  if (nh.cho) return gopNguoi(taoCho());
+  if (nh.sieuNhan) return gopNguoi(taoSieuNhan());
   const g = new THREE.Group();
   const s = nh.cao ? 1.05 : nh.nho ? 0.93 : 1;
   const r = nh.beo ? 1.16 : nh.gay ? 0.9 : nh.nu ? 0.92 : 1;
@@ -566,7 +567,7 @@ export function taoNguoi(ma, nhRieng = null) {
       }
     },
   };
-  return o;
+  return gopNguoi(o);
 }
 const XUONG = new THREE.Vector3(0, -1, 0);
 const GEO_DT = new THREE.BoxGeometry(0.07, 0.13, 0.015);

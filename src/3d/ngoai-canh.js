@@ -397,7 +397,7 @@ function taoBo(id, vat, dienThoai) {
     const ds = []; nhom.traverse(o => { if (o.isMesh && o.userData.sang) ds.push(o); });
     for (const m of ds) sang.attach(m);
     if (ds.length) {
-      gopKhoi(sang, { deQuy: true });
+      gopKhoi(sang, { deQuy: true, atlas: false });
       for (const m of sang.children) { if (m.isMesh && m.material.vertexColors) m.material = new THREE.MeshBasicMaterial({ vertexColors: true, fog, side: m.material.side }); m.userData.rieng = true; }
     }
     dongNhom.traverse(o => { o.userData.rieng = true; });

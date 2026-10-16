@@ -284,7 +284,7 @@ export function taoVatLieuDem() {
   const cuaCuon = {}, toiBien = {}, khe = {}, hatRa = {};
   const tc = texCuaCuon();
   for (const k of NHOM) {
-    cuaCuon[k] = new THREE.MeshLambertMaterial({ map: tc });
+    cuaCuon[k] = dong(new THREE.MeshLambertMaterial({ map: tc })); // ẩn/hiện theo giờ mở cửa
     toiBien[k] = new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.62, depthWrite: false });
     khe[k] = vlCong(texHat(), 0xffc87a);     // ánh đèn lọt qua khe cửa cuốn
     hatRa[k] = vlCong(texHat(), 0xffd69a);   // ánh đèn trong quán hắt ra vỉa hè
