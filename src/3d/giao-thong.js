@@ -3,7 +3,9 @@
 import * as THREE from "three";
 import { taoXeMay, taoOto, taoXeBuyt, MAU_XE } from "./xe-3d.js";
 import { taoNguoiNgauNhien, taoNguoiLaiXe } from "./nhan-vat-3d.js";
+import { taoNguoiBua, fanQuyDo, tuongBac, phuKienXeMay } from "./nguoi-bua.js";
 
+const duoiDuong = (x, z) => (z > 32.5 && z < 41.5) || (x > 47 && x < 57 && z > -130 && z < 160);
 const CHU_KY = [["chinh", "xanh", 16], ["chinh", "vang", 3], ["ngang", "xanh", 13], ["ngang", "vang", 3]];
 
 export class GiaoThong {
@@ -31,7 +33,8 @@ export class GiaoThong {
           const xeOm = rnd() < 0.15;
           const lx = taoNguoiLaiXe(rnd, { aoXeOm: xeOm }); lx.position.set(0, 0.86, -0.18); g.add(lx);
           if (rnd() < 0.35) { const sau = taoNguoiLaiXe(rnd, { sau: true }); sau.position.set(0, 0.9, -0.62); g.add(sau); }
-          ngang = lan.xeMay + (rnd() - 0.5) * 1.6; toc = 8 + rnd() * 5; dai2 = 1.7;
+          if (!xeOm && rnd() < 0.12) { const pk = phuKienXeMay(rnd); g.add(pk); g.userData.pk = pk; } // áo choàng siêu nhân / cờ Quỷ Đỏ
+          ngang = lan.xeMay + (rnd() - 0.5) * 0.9; // không chạy sát mép vỉa hè toc = 8 + rnd() * 5; dai2 = 1.7;
         } else if (loai === "buyt") { g.add(taoXeBuyt()); dai2 = 10.8; toc = 7.5; ngang = lan.oto; }
         else { g.add(taoOto(loai === "taxi" ? 0xf2f2f2 : chon(MAU_XE), { taxi: loai === "taxi" })); dai2 = 4.3; toc = 10 + rnd() * 3; }
         const s = lan.tu + (i + rnd() * 0.6) * dai / ds.length;
@@ -41,15 +44,20 @@ export class GiaoThong {
         this.nhom.add(g); this.xe.push(xe);
       });
     }
-    // người đi bộ
+    // người đi bộ: khoảng một phần ba là dân "độc lạ" (siêu anh hùng tự phong, hội Quỷ Đỏ đi thành nhóm...)
     this.nguoi = [];
     const soNguoi = Math.round(30 * he);
     const loiDi = pho.loiDi;
-    for (let i = 0; i < soNguoi; i++) {
+    const them = (nv, l, s, huong, toc, lech) => { const p = { nv, l, s, huong, toc, lech, cho: 0 }; this.nhom.add(nv.group); this.nguoi.push(p); };
+    for (let i = 0; this.nguoi.length < soNguoi; i++) {
       const l = loiDi[i % loiDi.length];
-      const nv = taoNguoiNgauNhien(rnd, { them: rnd() < 0.08 ? ["nonLa"] : [] });
-      const p = { nv, l, s: l.tu + rnd() * (l.den - l.tu), huong: rnd() < 0.5 ? 1 : -1, toc: 1.0 + rnd() * 0.5, lech: (rnd() - 0.5) * 1.2, cho: 0 };
-      this.nhom.add(nv.group); this.nguoi.push(p);
+      const s = l.tu + rnd() * (l.den - l.tu), huong = rnd() < 0.5 ? 1 : -1, toc = 1.0 + rnd() * 0.5, lech = (rnd() - 0.5) * 1.2;
+      const r = rnd();
+      if (r < 0.08 && this.nguoi.length + 3 <= soNguoi) {
+        // nhóm cổ động viên Quỷ Đỏ đi cùng nhau
+        for (let k = 0; k < 3; k++) them(fanQuyDo(rnd, { coCo: k === 0 }), l, Math.max(l.tu, Math.min(l.den, s - huong * k * 1.1)), huong, 1.15, (k - 1) * 0.55);
+      } else if (r < 0.36) them(taoNguoiBua(rnd).nv, l, s, huong, toc * 0.9, lech);
+      else them(taoNguoiNgauNhien(rnd, { them: rnd() < 0.08 ? ["nonLa"] : [] }), l, s, huong, toc, lech);
     }
     // người đứng / ngồi một chỗ (quán trà đá, bán hàng, chờ xe buýt)
     this.dungYen = [];
@@ -58,6 +66,8 @@ export class GiaoThong {
       nv.group.position.set(c.x, c.ngoi ? -0.38 : 0, c.z); nv.group.rotation.y = c.huong;
       this.nhom.add(nv.group); this.dungYen.push(nv);
     }
+    // tượng người bạc đứng biểu diễn trên vỉa hè
+    for (const [x, z, h] of [[-62, 31.1, 0], [86, 43.0, Math.PI]]) { const t = tuongBac(); t.group.position.x = x; t.group.position.z = z; t.group.rotation.y = h; this.nhom.add(t.group); this.dungYen.push(t); }
   }
   // điểm (x, z) có nằm trong thân xe nào không (người chơi không đi xuyên xe)
   chan(px, pz) {
@@ -109,7 +119,8 @@ export class GiaoThong {
         const kcVach = (lan.dung - dau) * lan.huong;
         if (den !== "xanh" && kcVach > -0.5 && kcVach < 14) vMuc = Math.min(vMuc, Math.max(0, (kcVach - 0.4) * 1.2));
         // người chơi đứng trước đầu xe
-        if (nguoiChoi.tang === 0) {
+        // chỉ nhường khi người chơi đang ở dưới lòng đường (đứng trên vỉa hè thì xe vẫn chạy)
+        if (nguoiChoi.tang === 0 && duoiDuong(nguoiChoi.x, nguoiChoi.z)) {
           const doc = lan.truc === "x" ? (nguoiChoi.x - dau) * lan.huong : (nguoiChoi.z - dau) * lan.huong;
           const ngang = lan.truc === "x" ? Math.abs(nguoiChoi.z - x.ngang) : Math.abs(nguoiChoi.x - x.ngang);
           if (doc > -0.3 && doc < 7 && ngang < (x.loai === "xeMay" ? 1.0 : 1.6)) vMuc = Math.min(vMuc, Math.max(0, (doc - 1.2) * 1.5));
@@ -121,6 +132,8 @@ export class GiaoThong {
         x.g.visible = Math.abs(x.g.position.x - nguoiChoi.x) + Math.abs(x.g.position.z - nguoiChoi.z) < 120;
         // xe máy lắc nhẹ khi chạy
         if (x.loai === "xeMay") x.g.rotation.z = Math.sin(t * 2 + x.s) * 0.03 * (x.v / x.vMax);
+        const pk = x.g.userData.pk;
+        if (pk?.userData.choang && x.g.visible) pk.userData.choang.rotation.x = 0.4 + 0.75 * (x.v / x.vMax) + Math.sin(t * 14 + x.s) * 0.08;
       }
     }
     // người đi bộ

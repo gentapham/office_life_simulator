@@ -94,7 +94,7 @@ export const NGOAI_HINH = {
     ao: { kieu: "yem", vai: VAI.soc(0xf6f6f2, 0x23262c), mau: 0xf6f6f2, yem: VAI.jean(0x3f6f9f) }, quan: { kieu: "jean", mau: 0x3f6f9f }, giay: ["converse", 0xc0262d], pk: ["butCamUng"] },
   sales: { da: DA.sang, nu: true, nho: true, toc: ["dai_song", 0x2a1c14], mat: { mat: "to", may: "nhuong", mieng: "cuoi_to", son: 0xe0262f, maHong: true, mi: true },
     ao: { kieu: "vest_nu", mau: 0xd8262f, trong: 0x111111 }, quan: { kieu: "vay_but", mau: 0xd8262f }, giay: ["caoGot", 0x111111], pk: ["dienThoaiTai", "tuiXach"] },
-  chi_dai: { da: DA.ngam, nu: true, toc: ["tem", 0x111111], mat: { mat: "hep", may: "day", mieng: "nhech", son: 0x9a4a4a },
+  chi_dai: { da: DA.vua, nu: true, toc: ["duoi_ngua_dai", 0x111111], mat: { mat: "hep", may: "day", mieng: "nhech", son: 0xb0404a, mi: true, maHong: true },
     ao: { kieu: "thun", mau: 0x7d1424, bo: true }, quan: { kieu: "tuihop", mau: 0x4b5130 }, giay: ["sneaker", 0x2a2c31], pk: ["boDam"] },
   dan_dau_tu: { da: DA.vua, toc: ["thua_lech", 0x2d2622], mat: { mat: "tron", may: "cau", mieng: "meu", quang: 1, nhan: 1, rau: true },
     ao: { kieu: "somi", mau: 0xe8e8e2, nhan: true }, quan: { kieu: "tay", mau: 0x3a3d44 }, giay: ["tay", 0x231f1c], pk: ["caVatLong", "dienThoai", "vongTay"] },
@@ -198,6 +198,7 @@ function taoToc(dau, kieu, mau, mau2) {
     case "gon": nap(0.07); lung(0.06); ben(0.0); them(0.32, 0.05, 0.05, T, 0, 0.18, 0.14); break;
     case "buoi_cao": nap(0.06); lung(0.06); ben(0.02); them(0.15, 0.13, 0.15, T, 0, 0.27, -0.06); them(0.16, 0.03, 0.16, 0x8a5a3c, 0, 0.215, -0.06); break;
     case "lat": nap(0.08); lung(0.06); ben(0.0); { const q = hop(0.3, 0.1, 0.12, T, 0, 0.25, 0.1); q.rotation.x = -0.35; dau.add(q); } break;
+    case "duoi_ngua_dai": nap(0.08); lung(0.12); ben(0.08); them(0.3, 0.05, 0.06, T, 0, 0.16, 0.15); them(0.1, 0.1, 0.1, T, 0, 0.12, -0.21); them(0.09, 0.5, 0.08, T, 0, -0.18, -0.24); them(0.1, 0.04, 0.1, 0xc0262d, 0, 0.12, -0.2); break;
     case "buoc": nap(0.07); lung(0.08); ben(0.02); them(0.07, 0.3, 0.07, T, 0, -0.06, -0.21); them(0.08, 0.04, 0.08, 0xc0262d, 0, 0.08, -0.2); break;
     case "mullet": nap(0.1); lung(0.34); ben(0.06);
       for (let i = 0; i < 5; i++) { const b = hop(0.06, 0.1, 0.07, i % 2 ? mau2 : T, -0.12 + i * 0.06, 0.26, 0.04); b.rotation.z = (i - 2) * 0.2; dau.add(b); }
@@ -277,6 +278,11 @@ export function taoNguoi(ma, nhRieng = null) {
     const rong = ao.rong ? 1.12 : 1;
     than.add(vat(W * rong * (nh.nu ? 1 : 1.02), W * rong * (nh.nu ? 0.82 : 0.94), CAO_THAN, D, vlAo, 0, yThan));
     if (nh.beo) than.add(vat(W * 0.7, W * 0.8, 0.3, 0.12, vlAo, 0, y0 + 0.24, D / 2));
+  }
+  // dáng nữ: ngực, eo thon, hông nở hơn
+  if (nh.nu) {
+    for (const sd of [-1, 1]) { const n = new THREE.Mesh(new THREE.SphereGeometry(0.075, 8, 6), vlAo); n.scale.set(1, 0.85, 0.75); n.position.set(sd * 0.07, y0 + 0.07 + CAO_THAN * 0.68, D / 2 - 0.01); than.add(n); }
+    if (q.kieu !== "da" && q.kieu !== "vay_but") than.add(hop(0.41 * r, 0.12, D, q.kieu === "jean" ? VAI.jean(q.mau) : vl(q.mau), 0, y0 - 0.04, 0));
   }
   const truoc = D / 2 + 0.006;
   const coY = y0 + 0.07 + CAO_THAN;
@@ -368,6 +374,7 @@ export function taoNguoi(ma, nhRieng = null) {
   // ----- Đầu -----
   const dau = new THREE.Group(); const dauY = coY + 0.07 + 0.17; dau.position.y = dauY;
   const vlDa = vl(da);
+  if (nh.nu && nh.mat) nh.mat = { mi: true, maHong: true, son: 0xc75b6c, ...nh.mat }; // nữ: lông mi, má hồng, son
   const matTruoc = veMat(nh);
   dau.add(new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.34, 0.3), [vlDa, vlDa, vlDa, vlDa, matTruoc, vlDa]));
   dau.add(hop(0.04, 0.08, 0.06, da, -0.165, 0.0, 0), hop(0.04, 0.08, 0.06, da, 0.165, 0.0, 0)); // tai
@@ -388,6 +395,7 @@ export function taoNguoi(ma, nhRieng = null) {
   if (pk.includes("butCamUng")) { const b = hop(0.012, 0.012, 0.14, 0xf6f6f2, 0.175, 0.07, 0.0); dau.add(b); }
   if (pk.includes("nonLa")) { const n = new THREE.Mesh(new THREE.ConeGeometry(0.34, 0.2, 10, 1, true), vl(0xe6d39a, { side: THREE.DoubleSide })); n.position.y = 0.26; dau.add(n); }
   if (pk.includes("muBaoHiem")) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.2, 8, 5, 0, Math.PI * 2, 0, Math.PI / 2), vl(nh.mauMu || 0xc0262d)); m.position.y = 0.07; m.scale.set(1.05, 1, 1.1); dau.add(m); dau.add(hop(0.3, 0.02, 0.08, toiMau(nh.mauMu || 0xc0262d, 0.7), 0, 0.08, 0.18)); }
+  if (nh.nu) for (const x of [-0.17, 0.17]) dau.add(hop(0.03, 0.05, 0.03, 0xe8c547, x, -0.07, 0.01)); // bông tai
   if (pk.includes("khauTrangVai")) dau.add(hop(0.24, 0.12, 0.03, nh.mauKhauTrang || 0x3a4250, 0, -0.1, 0.155));
   g.add(dau);
   // gộp phần đầu tĩnh (giữ mesh mặt riêng vì có nhiều vật liệu)
@@ -395,11 +403,11 @@ export function taoNguoi(ma, nhRieng = null) {
 
   g.scale.setScalar(s);
   return {
-    group: g, chieuCao: (dauY + 0.3) * s,
+    group: g, chieuCao: (dauY + 0.3) * s, tayT, tayP, dau, than, dauY,
     hoatDong(t, dangDi, toc = 1) {
       const goc = dangDi ? Math.sin(t * 8 * toc) * 0.55 : 0;
       chanT.rotation.x = goc; chanP.rotation.x = -goc;
-      tayT.rotation.x = -goc * 0.8;
+      if (!tayT.userData.coDinh) tayT.rotation.x = -goc * 0.8;
       if (!tayP.userData.coDinh) tayP.rotation.x = goc * 0.8;
       const nhun = dangDi ? Math.abs(Math.sin(t * 8 * toc)) * 0.025 : Math.sin(t * 1.6) * 0.006;
       than.position.y = nhun; dau.position.y = dauY + nhun; tayT.position.y = tayP.position.y = vaiY + nhun;

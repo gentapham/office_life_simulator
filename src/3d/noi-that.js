@@ -7,7 +7,7 @@ const texCache = new Map();
 function tranh(key, w, h, ve) {
   if (texCache.has(key)) return texCache.get(key);
   const c = document.createElement("canvas"); c.width = w; c.height = h; ve(c.getContext("2d"), w, h);
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; texCache.set(key, t); return t;
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; texCache.set(key, t); return t;
 }
 const chu = (key, w, h, nen, mau, dong, co = 40) => tranh(key, w, h, (g) => {
   g.fillStyle = nen; g.fillRect(0, 0, w, h); g.fillStyle = mau; g.textAlign = "center"; g.textBaseline = "middle";
@@ -150,8 +150,10 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   { const ch = new THREE.Mesh(new THREE.SphereGeometry(0.6, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2.5), vl(0xe6e6e6, { side: THREE.DoubleSide })); ch.rotation.x = -1.1; ch.position.set(17, y3 + 1.6, 12); nhom.add(ch); hop(0.06, 1.3, 0.06, 0x666666, 17, y3, 12, { tang: 2 }); }
 
   // ===== SÂN TRƯỚC =====
-  T(2.2, 0.8, chu("biencong", 440, 160, "#2a2c31", "#e8702a", ["G-ENTERTAINMENT", "Thành lập 20/10/2010"], 46), -2.1, 2.2, 30.2, 0);
-  hop(0.5, 3, 0.5, 0x8a8d92, -2.1, 0, 30.6, { can: true });
+  // biển tên công ty đứng ngoài hàng rào, mặt nhìn ra phố, hai chân trụ phía sau biển (không che chữ)
+  T(2.6, 0.95, chu("biencong", 1040, 380, "#2a2c31", "#e8702a", ["G-ENTERTAINMENT", "Thành lập 20/10/2010"], 110), -2.4, 2.25, 30.86, 0);
+  hop(2.75, 1.08, 0.12, 0x1c1c1f, -2.4, 1.71, 30.77, { can: false });
+  for (const x of [-3.5, -1.3]) hop(0.14, 1.75, 0.14, 0x8a8d92, x, 0, 30.62, { can: true });
   for (const [x, z] of [[-14, 16], [16, 16], [-20, 27], [20, 27]]) { hop(3, 0.45, 1.2, 0xb5a58a, x, 0, z); for (let i = 0; i < 4; i++) cau(0.3, [0xf26fa6, 0xe9e04a, 0xc0262d, 0xf6f6f2][i], x - 1 + i * 0.65, 0.65, z); }
   hop(0.12, 1.1, 0.12, 0xe8702a, 5.5, 0, 29.3); { const tb = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.08, 3.6), vl(0xf2f2f2)); tb.position.set(5.5, 1.2, 27.7); tb.rotation.x = -1.2; nhom.add(tb); }
 }

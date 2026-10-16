@@ -111,10 +111,7 @@ function renderHome() {
       h("div", { class: "luoi-vai" },
         NHAN_VAT.map(n => h("button", { class: "the-vai", style: `--mau:${n.mau}`, onclick: () => renderDatTen(n.ma) },
           anhVai(n),
-          h("div", { class: "the-vai-tt" }, h("b", {}, n.vai), h("small", {}, n.chuc), h("p", {}, n.cau)))),
-        h("button", { class: "the-vai the-chung", onclick: () => openChung() },
-          h("div", { class: "anh-vai" }, h("span", { class: "anh-vai-chu" }, "+")),
-          h("div", { class: "the-vai-tt" }, h("b", {}, "Nội dung chung"), h("small", {}, "Sự kiện, tin đồn, Đại Nhạc Hội Siêu Nhân"), h("p", {}, "Đọc các cảnh dùng chung cho mọi vai.")))),
+          h("div", { class: "the-vai-tt" }, h("b", {}, n.vai), h("small", {}, n.chuc), h("p", {}, n.cau))))),
     ),
   );
   napChanDung();
@@ -309,61 +306,8 @@ async function openRole(ma, opts = {}) {
   L = new LuotChoi(ma, json);
   const save = saveLoad();
   if (opts.tiepTuc && save && save.ma === ma) L.fromSave(save);
-  renderRole(opts.tiepTuc && save && save.ma === ma ? "3d" : "gioi_thieu");
-}
-
-function renderRole(tab) {
-  tatG3D();
-  if (tab === "3d") { render3D(); return; }
-  const n = THEO_MA[L.ma];
-  const tabs = [["3d", "Chơi 3D"], ["choi", "Chơi dạng chữ"], ["duyet", "Duyệt từng cảnh"]];
-  const body = h("div", {});
-  app.replaceChildren(
-    h("div", { class: "wrap" },
-      h("header", { class: "top" },
-        h("div", { class: "role-head" }, h("div", {}, h("h2", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`), h("p", {}, n.chuc))),
-        h("div", { class: "top-actions" },
-          h("div", { class: "tabs", role: "tablist" }, tabs.map(([id, label]) =>
-            h("button", { class: "btn", role: "tab", "aria-selected": String(tab === id || (tab === "gioi_thieu" && id === "3d")), onclick: () => renderRole(id) }, label))),
-          h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật"),
-        ),
-      ),
-      body,
-    ),
-  );
-  if (tab === "duyet") renderBrowser(body);
-  else if (tab === "gioi_thieu") renderIntro(body);
-  else renderPlay(body);
-  window.scrollTo(0, 0);
-}
-
-function renderIntro(body) {
-  const n = THEO_MA[L.ma];
-  const chinh = L.knots.filter(k => tag(k.tags, "ngay") != null).length;
-  body.append(h("section", { class: "stage" },
-    h("div", { class: "dayline" }, h("b", {}, "Bắt đầu"), h("span", {}, ngayDayDu(1))),
-    h("div", { class: "log" },
-      h("p", { class: "narr" }, `Bạn sẽ sống 31 ngày trong vai ${n.vai} ${L.v(L.ma) || n.ten}. Mỗi ngày có các cảnh chính theo giờ. Hết cảnh trong ngày, bạn có thể nói chuyện thêm với đồng nghiệp rồi đi ngủ.`),
-      h("p", { class: "narr" }, `Nhân vật này có ${L.knots.length} cảnh (${chinh} cảnh gắn ngày).`),
-      h("p", { class: "narr" }, "Tối 31/10 là Đại Nhạc Hội Siêu Nhân: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
-    ),
-    h("div", { class: "choices" },
-      h("button", { class: "choice", onclick: () => { saveWrite(null); L.batDauNgay(1); render3D(); } }, `Bắt đầu ${ngayDayDu(1)}`),
-      h("button", { class: "choice", onclick: () => { saveWrite(null); const g = L.batDauNgay(1); renderRole("choi"); g.forEach(x => addSys(x)); nextScene(); } }, "Chơi dạng chữ"),
-    ),
-  ));
-}
-
-function renderPlay(body) {
-  UI.dayline = h("div", { class: "dayline" });
-  UI.log = h("div", { class: "log", "aria-live": "polite" });
-  UI.choices = h("div", { class: "choices" });
-  UI.side = h("aside", { class: "side" });
-  body.append(h("div", { class: "layout" }, h("section", { class: "stage" }, UI.dayline, UI.log, UI.choices), UI.side));
-  updateDayline();
-  updateSide();
-  if (L.qi === 0 && L.queue.length === 0 && L.ngay === 1 && !L.played.size) { const g = L.batDauNgay(1); g.forEach(x => addSys(x)); }
-  nextScene();
+  else { saveWrite(null); L.batDauNgay(1); }
+  render3D();
 }
 
 function updateDayline(gio, noi) {
@@ -625,7 +569,7 @@ async function render3D() {
   app.replaceChildren(h("div", { class: "g3d" }, h("p", { class: "g3d-loading" }, "Đang dựng văn phòng…")));
   G3D_MOD ||= { ...(await import("./3d/game3d.js")), ...(await import("./3d/the-gioi.js")), ...(await import("./3d/bau-troi.js")) };
   if (CHE_DO !== "3d") return;
-  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY, thoiTietLuc } = G3D_MOD;
+  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY, CHO_XEM, CHO_NGOI: CHO_NGOI_3D, thoiTietLuc } = G3D_MOD;
   const n = THEO_MA[L.ma];
 
   const khung = h("div", { class: "g3d-khung" });
@@ -690,7 +634,6 @@ async function render3D() {
     h("div", { class: "g3d-hud-phai" }, btnGoc,
       h("button", { class: "g3d-btn", onclick: bangChiSo }, "Chỉ số"),
       h("button", { class: "g3d-btn", onclick: () => { hdTieuDe.textContent = "Hướng dẫn"; nutVao.textContent = "Tiếp tục"; moHuongDan(); } }, "Hướng dẫn"),
-      h("button", { class: "g3d-btn", onclick: () => renderRole("choi") }, "Dạng chữ"),
       h("button", { class: "g3d-btn", onclick: renderHome }, "Thoát")),
     h("div", { class: "g3d-tam" }),
     goiY, bamTiep, toast, kt.el, lichSu, keChiSo, tamNgung, man,
@@ -703,7 +646,7 @@ async function render3D() {
   g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn 1" : "Góc nhìn 3"; tam.hidden = goc !== "1"; };
   g.onDoiGoc(g.goc);
   g.onThoiTiet = moTa => { ttEl.textContent = moTa; };
-  const datGioTT = (gio, phut = 0) => { g.datGio(gio, phut); g.datThoiTiet(thoiTietLuc(L.ngay, gio)); };
+  const datGioTT = (gio, phut = 0) => { g.datNgay(L.ngay); g.datGio(gio, phut); g.datThoiTiet(thoiTietLuc(L.ngay, gio)); };
   g.onKhoaChuot = khoa => {
     if (khoa) { tamNgung.hidden = true; bamTiep.hidden = true; daVao = true; return; }
     if (!g.khoa && daVao) { hdTieuDe.textContent = "Tạm dừng"; nutVao.textContent = "Tiếp tục"; tamNgung.hidden = false; }
@@ -751,25 +694,40 @@ async function render3D() {
       const noi = tag(k?.tags, "noi"), gio = tag(k?.tags, "gio");
       const khu = khuCuaNoi(noi) || khuMacDinh();
       const kv = KHU[khu];
+      // đang ở sân khấu mà cảnh tiếp theo ở công ty: đưa về cổng
+      if (!kv.ngoai && g.tang === 0 && g.p.x > 80) g.datViTri(DIEM_DAU_NGAY);
       const m = String(gio || "").match(/(\d{1,2}):(\d{2})/);
       if (m) datGioTT(+m[1], +m[2]);
       updateDayline(gio && gio !== true ? gio : null, null);
       dongHoiThoai();
       const tenNoi = khu === "ra_ngoai" ? prettyNoi(noi) : kv.ten;
       datMucTieuHUD(tenNoi, khu === "ra_ngoai" ? "Ra cổng công ty để đi" : (huongDanTang(kv) || (gio && gio !== true ? `Lúc ${gio}` : "")));
+      if (kv.ngoai) { // sân khấu Đại Nhạc Hội: ra cổng rồi tới thẳng khán đài
+        const toi = () => { datMucTieuHUD(""); L.qi++; chuyenCanh(kv.ten, () => { g.datViTri(CHO_XEM); moHoiThoai(kv.ten); playKnot(name, v => afterScene(v)); }); };
+        if (g.p.x > 80) toi(); else g.datMucTieu("ra_ngoai", toi);
+        return;
+      }
+      const nguoi = (k?.noi || []).find(m => m !== L.ma && m in CHO_NGOI_3D) || null;
+      if (nguoi) datMucTieuHUD(`${tenNoi}: gặp ${L.v(nguoi) || THEO_MA[nguoi]?.ten || ""}`, huongDanTang(kv) || "Tới gần để nói chuyện");
       g.datMucTieu(khu, () => {
         datMucTieuHUD("");
         L.qi++;
         const mo = () => { moHoiThoai(tenNoi); playKnot(name, v => afterScene(v)); };
         if (khu === "ra_ngoai") chuyenCanh(tenNoi, mo); else mo();
-      });
+      }, { nguoi: khu === "ra_ngoai" ? null : nguoi });
       return;
     }
     dayEnd3D();
   };
   dayEnd3D = () => {
     saveWrite(L.toSave());
-    if (L.ngay >= 31) { moHoiThoai("Đại Nhạc Hội Siêu Nhân"); finale(); return; }
+    if (L.ngay >= 31) {
+      // 19:30 Đại Nhạc Hội: ra cổng, tới khán đài đứng giữa đám đông rồi mới bắt đầu
+      dongHoiThoai(); datGioTT(19, 30); updateDayline("19:30", "san_khau_dem_hong");
+      const vao = () => { datMucTieuHUD(""); chuyenCanh("Sân khấu Đại Nhạc Hội", () => { g.datViTri(CHO_XEM); moHoiThoai("Đại Nhạc Hội Siêu Nhân"); finale(); }); };
+      if (g.p.x > 80) vao(); else { datMucTieuHUD("Đại Nhạc Hội Siêu Nhân sắp bắt đầu", "Ra cổng để tới sân khấu"); g.datMucTieu("ra_ngoai", vao); }
+      return;
+    }
     dongHoiThoai();
     datGioTT(18, 30);
     updateDayline("18:30", null);
@@ -872,93 +830,5 @@ function taoKhungThoai(log, luaChon) {
   return kt;
 }
 const CAU_BAN = ["Đang bận, lát nói nha.", "Deadline tới cổ rồi, mai nói.", "Ủa, có gì hông?", "Đi ngang thôi hả? Ok.", "Để em xong cái này đã."];
-
-// ============================================================
-// DUYỆT TỪNG CẢNH
-// ============================================================
-function renderBrowser(body, ma = L.ma, knots = META.roles[ma].knots) {
-  const groups = { "Theo ngày": {}, "Nói chuyện với đồng nghiệp": [], "Minigame": [], "Kết thúc": [], "Khác": [] };
-  for (const k of knots) {
-    if (tag(k.tags, "npc") != null) groups["Nói chuyện với đồng nghiệp"].push(k);
-    else if (/_mg_|minigame/.test(k.name) || tag(k.tags, "minigame") != null) groups["Minigame"].push(k);
-    else if (/_kt_|_3010_danh_gia|ket_thuc/.test(k.name) || tag(k.tags, "ket_thuc") != null) groups["Kết thúc"].push(k);
-    else if (tag(k.tags, "ngay") != null && tag(k.tags, "ngau_nhien") == null) {
-      const d = tag(k.tags, "ngay"); (groups["Theo ngày"][d] ||= []).push(k);
-    } else groups["Khác"].push(k);
-  }
-  const viewer = h("section", { class: "stage" });
-  const play = k => {
-    UI.dayline = h("div", { class: "dayline" });
-    UI.log = h("div", { class: "log" });
-    UI.choices = h("div", { class: "choices" });
-    viewer.replaceChildren(UI.dayline, UI.log, UI.choices);
-    const story = new Story(JSON_CACHE[ma]);
-    apDungTen(story);
-    const d = parseInt(tag(k.tags, "ngay"), 10);
-    if (d) story.variablesState["ngay"] = d;
-    story.variablesState["vai"] = ma === "chung" ? "ran_doc" : ma;
-    UI.dayline.replaceChildren(h("b", {}, k.name), h("span", {}, k.tags.join(" · ")));
-    try {
-      if (/^chung_td_/.test(k.name)) {
-        const ai = NHAN_VAT[Math.floor(Math.random() * 22)].ma;
-        story.ChoosePathString(k.name, true, [ai, 1 + Math.floor(Math.random() * 3)]);
-      } else story.ChoosePathString(k.name);
-    } catch (e) { UI.log.append(h("p", { class: "narr" }, "Không mở được cảnh này: " + e.message)); return; }
-    runStory(story, ma === "chung" ? "ran_doc" : ma, () => UI.choices.replaceChildren(
-      h("p", { class: "hint" }, "Hết cảnh."),
-      h("button", { class: "choice", onclick: () => play(k) }, "Chơi lại cảnh này")));
-    viewer.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-  const nhan = k => { const kt = k.name.match(/_kt_(\w+)$/); if (kt) return tenKetThuc(kt[1]);
-    const td = k.name.match(/_tudo_(\w+)$/); const nv = td && THEO_MA[td[1]];
-    return nv ? `Nói chuyện: ${nv.ten} (${nv.vai})` : null; };
-  const list = arr => h("div", { class: "klist" }, arr.map(k => h("button", { class: "btn", onclick: () => play(k) }, nhan(k) || k.name.replace(/^[a-z]+(_[a-z]+)*?_(?=\d{4}|tudo|mg|kt|nn|td|nc|mo|0110|3110|3010)/, "").replace(/_/g, " ") || k.name)));
-  const days = Object.keys(groups["Theo ngày"]).sort((a, b) => a - b);
-  body.append(h("div", { class: "browser" },
-    h("p", { class: "hint" }, "Bấm một cảnh để đọc riêng (mỗi cảnh chạy với chỉ số mặc định, không ảnh hưởng lượt chơi chính)."),
-    days.length ? h("details", { open: true }, h("summary", {}, `Theo ngày (${days.length} ngày)`),
-      days.map(d => h("div", {}, h("p", { class: "hint" }, `${ngayDayDu(+d)}${SU_KIEN_NGAY[d] ? " · " + SU_KIEN_NGAY[d] : ""}`), list(groups["Theo ngày"][d])))) : null,
-    ["Nói chuyện với đồng nghiệp", "Minigame", "Kết thúc", "Khác"].filter(g => groups[g].length).map(g =>
-      h("details", {}, h("summary", {}, `${g} (${groups[g].length})`), list(groups[g]))),
-    viewer,
-  ));
-}
-
-async function openChung() {
-  app.replaceChildren(h("div", { class: "wrap" }, h("p", {}, "Đang tải…")));
-  await loadMeta();
-  await loadStoryJson("chung");
-  const knots = META.roles.chung.knots;
-  const body = h("div", {});
-  const nhom = { "Mở đầu & hướng dẫn": k => /mo_dau|0110_huong_dan/.test(k), "Sự kiện ngẫu nhiên": k => /_nn_/.test(k), "Tin đồn": k => /_td_/.test(k), "Nói vu vơ": k => /_nc_/.test(k), "Đại Nhạc Hội Siêu Nhân & kết thúc": k => /3110|_kt_/.test(k) };
-  app.replaceChildren(h("div", { class: "wrap" },
-    h("header", { class: "top" },
-      h("div", { class: "role-head" }, h("div", {}, h("h2", {}, "Nội dung chung"), h("p", {}, "Dùng cho mọi nhân vật. Đọc với vai mặc định là Hiếu."))),
-      h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật")),
-    body));
-  const viewer = h("section", { class: "stage" });
-  const play = k => {
-    UI.dayline = h("div", { class: "dayline" }); UI.log = h("div", { class: "log" }); UI.choices = h("div", { class: "choices" });
-    viewer.replaceChildren(UI.dayline, UI.log, UI.choices);
-    const story = new Story(JSON_CACHE.chung);
-    apDungTen(story);
-    story.variablesState["vai"] = "ran_doc";
-    const d = parseInt(tag(k.tags, "ngay") || tag(k.tags, "ngay_tu"), 10); if (d) story.variablesState["ngay"] = d;
-    UI.dayline.replaceChildren(h("b", {}, k.name), h("span", {}, k.tags.join(" · ")));
-    try {
-      if (/^chung_td_/.test(k.name)) story.ChoosePathString(k.name, true, [NHAN_VAT[Math.floor(Math.random() * 22)].ma, 1 + Math.floor(Math.random() * 3)]);
-      else story.ChoosePathString(k.name);
-    } catch (e) { UI.log.append(h("p", { class: "narr" }, "Cảnh này cần tham số, không mở riêng được.")); return; }
-    runStory(story, "ran_doc", () => UI.choices.replaceChildren(h("p", { class: "hint" }, "Hết cảnh."), h("button", { class: "choice", onclick: () => play(k) }, "Chơi lại (kết quả ngẫu nhiên có thể khác)")));
-    viewer.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-  body.append(h("div", { class: "browser" },
-    Object.entries(nhom).map(([ten, f]) => {
-      const arr = knots.filter(k => f(k.name));
-      return h("details", {}, h("summary", {}, `${ten} (${arr.length})`),
-        h("div", { class: "klist" }, arr.map(k => h("button", { class: "btn", onclick: () => play(k) }, k.name.replace(/^chung_(nn|td|nc|kt|0110_huong_dan|3110)_?/, "").replace(/_/g, " ") || k.name))));
-    }),
-    viewer));
-}
 
 renderHome();

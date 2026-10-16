@@ -30,6 +30,7 @@ const sharedVars = [...fs.readFileSync(path.join(SRC, "chung/bien-chung.ink"), "
 const sharedLists = [...fs.readFileSync(path.join(SRC, "chung/bien-chung.ink"), "utf8").matchAll(/^LIST\s+([a-z0-9_]+)/gm)].map(m => m[1]);
 
 const meta = { sharedVars, sharedLists, roles: {} };
+const MA_NV = new Set(["ran_doc","giam_doc","truong_phong","thanh_ninh","hong_hot","con_ong_chau_cha","chua_te_deadline","thuc_tap_sinh","ke_toan","hr","it","idol_het_thoi","quan_ly_idol","bien_kich","editor","designer","sales","chi_dai","dan_dau_tu","thanh_xin_nghi","bac_bao_ve","sieu_nhan_hong","cho"]);
 const roots = fs.readdirSync(SRC).filter(f => f.endsWith(".ink")).map(f => f.slice(0, -4)).sort();
 
 for (const code of roots) {
@@ -43,6 +44,19 @@ for (const code of roots) {
     let tags = [];
     try { tags = (story.TagsForContentAtPath(name) || []).map(t => t.trim()).filter(Boolean); } catch { tags = []; }
     knots.push({ name, tags });
+  }
+  // người nói đầu tiên của mỗi cảnh (game 3D cho NPC đó đứng ở chỗ diễn ra cảnh, tới gần mới mở thoại)
+  if (code !== "chung") for (const k of knots) {
+    try {
+      const st = new ink.Story(json); st.variablesState["vai"] = code;
+      st.ChoosePathString(k.name);
+      const ds = [];
+      for (let i = 0; i < 30 && st.canContinue && ds.length < 3; i++) {
+        const m = st.Continue().match(/^([a-z_]+):\s/);
+        if (m && MA_NV.has(m[1]) && m[1] !== code && !ds.includes(m[1])) ds.push(m[1]);
+      }
+      if (ds.length) k.noi = ds;
+    } catch {}
   }
   // Biến riêng của nhân vật (khai báo trong <mã>/bien.ink)
   let roleVars = [];

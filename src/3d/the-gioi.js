@@ -33,6 +33,7 @@ export const KHU = {
   dung_phim:   { ten: "Phòng dựng phim", tang: 1, x: -2, z: 7 },
   san_xuat:    { ten: "Phòng sản xuất", tang: 1, x: 14, z: 7 },
   san_thuong:  { ten: "Sân thượng", tang: 2, x: 0, z: 0 },
+  san_khau:    { ten: "Sân khấu Đại Nhạc Hội", tang: 0, x: 110, z: 9.5, ngoai: true },
 };
 
 // Điểm chuyển tầng (bấm tương tác để đi)
@@ -73,6 +74,7 @@ export function khuCuaNoi(noi) {
   if (!noi || noi === true) return null;
   const n = String(noi);
   const co = re => re.test(n);
+  if (co(/san_khau_dem_hong|san_khau_dai_nhac|quang_truong_hong/)) return "san_khau";
   if (co(/san_thuong/)) return "san_thuong";
   if (co(/pho_giam_doc/)) return "pho_giam_doc";
   if (co(/giam_doc|ban_tro_ly/)) return "giam_doc";

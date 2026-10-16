@@ -5,6 +5,8 @@ import { taoTheGioi, KHU, CAU_THANG, CHO_NGOI, CAO_TANG } from "./the-gioi.js";
 import { taoNguoi, taoBangTen, taoDoiTay } from "./nhan-vat-3d.js";
 import { BauTroi } from "./bau-troi.js";
 import { GiaoThong } from "./giao-thong.js";
+import { SanKhau, CHO_XEM } from "./san-khau.js";
+export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
 const BAN_KINH = 0.32;       // bán kính người chơi khi va chạm
@@ -46,6 +48,8 @@ export class Game3D {
     this.theGioi = taoTheGioi(this.scene, { dienThoai: this.dienThoai });
     this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot });
     this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.dienThoai });
+    this.sanKhau = new SanKhau(this.scene, { dienThoai: this.dienThoai });
+    this.THREE = THREE; // cho công cụ kiểm thử tự động
     this.dem = null; this.moTaTT = "";
 
     // Người chơi: thân (góc nhìn 3) + đôi tay (góc nhìn 1)
@@ -161,17 +165,30 @@ export class Game3D {
     if (huong != null) { this.yaw = huong; this.pitch = 0; }
   }
   // Giờ trong ngày và thời tiết: bầu trời, ánh sáng, đèn đường do BauTroi tính mỗi khung hình
-  datGio(gio, phut = 0) { this.bauTroi.gio = gio + phut / 60; }
+  datGio(gio, phut = 0) { this.bauTroi.gio = gio + phut / 60; this.sanKhau.datGio(gio); }
+  datNgay(ngay) { this.sanKhau.datNgay(ngay); }
   datThoiTiet(loai) { this.bauTroi.datThoiTiet(loai); }
   trongNha() { return this.tang < 2 && Math.abs(this.p.x) < 20 && this.p.z > -14 && this.p.z < 14; }
   capNhatTen() { for (const n of this.npc) n.bang.doiTen(this.tenCua(n.ma), this.tenVai(n.ma)); }
 
   // Mục tiêu: đi tới khu để mở cảnh tiếp theo
-  datMucTieu(khu, onToi, { phaiRoiKhoi = false } = {}) {
-    const k = KHU[khu]; if (!k) return;
+  datMucTieu(khu, onToi, { phaiRoiKhoi = false, nguoi = null } = {}) {
+    let k = KHU[khu]; if (!k) return;
+    this.traNpcVeCho();
+    // người nói đầu tiên của cảnh ra đứng ở khu đó; người chơi phải tới sát người này mới mở thoại
+    const n = nguoi && this.npc.find(x => x.ma === nguoi);
+    if (n) {
+      const lech = khu === "cong" || khu === "ra_ngoai" ? [1.4, -1.2] : [1.0, 0];
+      const x = k.x + lech[0], z = k.z + lech[1];
+      n.nv.group.position.set(x, k.tang * CAO_TANG, z); n.tang = k.tang; n.daDoi = true;
+      k = { ...k, x, z, nguoi: n };
+    }
     this.mucTieu = { khu, k, onToi, daToi: false, choRoi: phaiRoiKhoi };
     this.marker.position.set(k.x, k.tang * CAO_TANG, k.z);
     this.marker.visible = true;
+  }
+  traNpcVeCho() {
+    for (const n of this.npc) if (n.daDoi) { const c = CHO_NGOI[n.ma]; n.nv.group.position.set(c.x, c.tang * CAO_TANG, c.z); n.tang = c.tang; n.nv.group.rotation.y = n.goc0; n.daDoi = false; }
   }
   xoaMucTieu() { this.mucTieu = null; this.marker.visible = false; }
   khoangCachMucTieu() {
@@ -214,7 +231,7 @@ export class Game3D {
     this.khoa = k; this.phim = {}; if (this.stick) this.stick.x = this.stick.y = 0;
     this.tay.voiRa(k ? 0.6 : 0);
     if (k) this.moKhoaChuot();
-    if (!k) for (const n of this.npc) n.nv.group.rotation.y = n.goc0;
+    if (!k) for (const n of this.npc) if (!n.daDoi) n.nv.group.rotation.y = n.goc0;
   }
 
   // ---------- Vòng lặp ----------
@@ -236,10 +253,12 @@ export class Game3D {
     // hướng nhìn: (−sin yaw, −cos yaw)
     const dx = (-sy * f + cy * s) * toc, dz = (-cy * f - sy * s) * toc;
     const vat = this.theGioi.vat[this.tang];
+    // đang bị xe ép sát (xe vừa chạy tới chỗ mình đứng) thì bỏ qua va chạm xe để bước ra được
+    const keoXe = this.tang === 0 && this.p.z > 29 && this.giaoThong.chan(this.p.x, this.p.z);
     const dung = (x, z) => {
       for (const b of vat) if (x > b.minX - BAN_KINH && x < b.maxX + BAN_KINH && z > b.minZ - BAN_KINH && z < b.maxZ + BAN_KINH) return true;
       for (const n of this.npc) if (n.tang === this.tang && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.55) return true;
-      if (this.tang === 0 && z > 29 && this.giaoThong.chan(x, z)) return true;
+      if (!keoXe && this.tang === 0 && z > 29 && this.giaoThong.chan(x, z)) return true;
       return false;
     };
     if (!dung(this.p.x + dx, this.p.z)) this.p.x += dx;
@@ -288,7 +307,11 @@ export class Game3D {
     if (this.mucTieu && !this.mucTieu.daToi && !this.khoa) {
       const m = this.khoangCachMucTieu();
       if (this.mucTieu.choRoi) { if (m.tang !== this.tang || m.d > DUNG_O_KHU + 0.8) this.mucTieu.choRoi = false; }
-      else if (m.tang === this.tang && m.d < DUNG_O_KHU) { this.mucTieu.daToi = true; const cb = this.mucTieu.onToi; this.xoaMucTieu(); cb?.(); }
+      else if (m.tang === this.tang && m.d < (this.mucTieu.k.nguoi ? TAM_NOI - 0.3 : DUNG_O_KHU)) {
+        this.mucTieu.daToi = true; const cb = this.mucTieu.onToi, ng = this.mucTieu.k.nguoi; this.xoaMucTieu();
+        if (ng) { const gp = ng.nv.group.position; ng.nv.group.rotation.y = Math.atan2(this.p.x - gp.x, this.p.z - gp.z); this.yaw = Math.atan2(this.p.x - gp.x, this.p.z - gp.z); this.pitch = -0.05; }
+        cb?.();
+      }
     }
     // bầu trời, thời tiết, đèn buổi tối
     const trong = this.trongNha();
@@ -303,6 +326,7 @@ export class Game3D {
     this._tt = (this._tt || 0) + dt;
     if (this._tt > 1) { this._tt = 0; const m = this.bauTroi.moTa(); if (m !== this.moTaTT) { this.moTaTT = m; this.onThoiTiet?.(m); } }
     // giao thông: ẩn khi đang ở sâu trong tòa nhà cho nhẹ máy
+    if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
     this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2);
     this.onGoiY?.(this.khoa ? null : this.timTuongTac());
     this.onKhung?.();
