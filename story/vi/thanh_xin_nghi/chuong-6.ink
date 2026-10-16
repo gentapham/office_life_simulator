@@ -32,7 +32,11 @@ _Cả phòng họp quay sang người giữ lịch. Bạn._
 * [😶 "Dạ chắc bên đài tự mời ạ."]
     _Anh {hr} nhìn bạn. Rồi nhìn cái lịch 31/10 trên màn chiếu. Rồi nhìn lại bạn._
     ~ son_soi(10)
-- ~ son_di_lam()
+- { qh_it >= 10:
+    _Tan họp, {it} đi ngang bàn bạn, không dừng lại, chỉ nói một câu: "Cùng giờ hai sân khấu hả. Cần nối sóng thì nói. Tui có cáp."_
+    ~ son_bao_giup = true
+}
+~ son_di_lam()
 -> END
 
 // ------------------------------------------------------------
