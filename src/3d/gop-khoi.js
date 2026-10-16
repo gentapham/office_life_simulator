@@ -8,9 +8,10 @@ const VL_MAU_DINH_2MAT = new THREE.MeshLambertMaterial({ vertexColors: true, fla
 
 const nuongDuoc = m => !m.map && !m.userData.dong && !m.transparent && !m.vertexColors && (m.isMeshLambertMaterial || m.isMeshBasicMaterial);
 
-function chuanBi(o, matTran, mau) {
+function chuanBi(o, matTran, mau, giuMau = false) {
   const g = (o.geometry.index ? o.geometry.toNonIndexed() : o.geometry.clone()).applyMatrix4(matTran);
-  for (const k of Object.keys(g.attributes)) if (!["position", "normal", "uv"].includes(k)) g.deleteAttribute(k);
+  for (const k of Object.keys(g.attributes)) if (!["position", "normal", "uv", ...(giuMau ? ["color"] : [])].includes(k)) g.deleteAttribute(k);
+  if (giuMau) { if (!g.attributes.uv) g.setAttribute("uv", new THREE.Float32BufferAttribute(new Float32Array(g.attributes.position.count * 2), 2)); g.groups = []; return g; }
   if (!g.attributes.normal) g.computeVertexNormals();
   if (!g.attributes.uv) g.setAttribute("uv", new THREE.Float32BufferAttribute(new Float32Array(g.attributes.position.count * 2), 2));
   const n = g.attributes.position.count, c = new Float32Array(n * 3);
@@ -33,7 +34,9 @@ export function gopKhoi(nhom, { deQuy = false } = {}) {
     if (an) return;
     const tran = new THREE.Matrix4().multiplyMatrices(nghich, o.matrixWorld);
     const m = o.material;
-    if (nuongDuoc(m)) (m.side === THREE.DoubleSide ? nuong2 : nuong).push(chuanBi(o, tran, m.color));
+    // khối đã gộp từ trước (màu nằm sẵn trong đỉnh): giữ nguyên màu, gộp tiếp
+    if (m.vertexColors && !m.map && !m.transparent && o.geometry.attributes.color) (m.side === THREE.DoubleSide ? nuong2 : nuong).push(chuanBi(o, tran, null, true));
+    else if (nuongDuoc(m)) (m.side === THREE.DoubleSide ? nuong2 : nuong).push(chuanBi(o, tran, m.color));
     else {
       const g = chuanBi(o, tran, null); g.deleteAttribute("color");
       if (!theoVL.has(m)) theoVL.set(m, []); theoVL.get(m).push(g);

@@ -55,9 +55,9 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   hop(0.4, 1.2, 0.4, 0xe8e8e8, -3.2, 0, -0.9); tru(0.14, 0.4, 0x7fb8e0, -3.2, 1.2, -0.9);
   dieuHoa(-19.75, 2.9, 4, Math.PI / 2); dieuHoa(-19.75, 2.9, 10, Math.PI / 2);
   T(2.6, 1.4, tranh("tiendo", 520, 280, (g, w, h) => {
-    g.fillStyle = "#fafafa"; g.fillRect(0, 0, w, h); g.fillStyle = "#222"; g.font = "800 34px 'Be Vietnam Pro', system-ui"; g.fillText("MỤC TIÊU: 1.000.000 FOLLOW", 24, 50);
+    g.fillStyle = "#fafafa"; g.fillRect(0, 0, w, h); g.fillStyle = "#222"; g.font = "800 34px 'Be Vietnam Pro', system-ui"; g.fillText("MỤC TIÊU: 1.000.000 FOLLOW", 24, 50, w - 48);
     g.strokeStyle = "#222"; g.lineWidth = 4; g.strokeRect(24, 90, 470, 50); g.fillStyle = "#f26fa6"; g.fillRect(26, 92, 120, 46);
-    g.fillStyle = "#c0262d"; g.font = "600 24px system-ui"; g.fillText("Hạn chót: 31/10 - Đại Nhạc Hội Siêu Nhân", 24, 190); g.fillText("Ai làm biếng: trừ lương (đùa thôi)", 24, 230);
+    g.fillStyle = "#c0262d"; g.font = "600 24px system-ui"; g.fillText("Hạn chót: 31/10 - Đại Nhạc Hội Siêu Nhân", 24, 190, w - 48); g.fillText("Ai làm biếng: trừ lương (đùa thôi)", 24, 230);
   }), -11, 1.6, 13.84, Math.PI);
   T(1, 0.7, chu("lich", 200, 140, "#ffffff", "#c0262d", ["THÁNG 10", "2026"], 42), -19.84, 1.9, 1.5, Math.PI / 2);
   for (let i = 0; i < 4; i++) { tru(0.17, 0.4, 0x2e8b57, -16.5 + i * 3, 0, 4.5); }
@@ -98,7 +98,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
     g.fillStyle = "#b08a5a"; g.fillRect(0, 0, w, h);
     [["THÔNG BÁO", "Lương về trễ 2 ngày"], ["TEAM BUILDING", "Vũng Tàu 17-18/10"], ["CẤM", "Hâm cá trong lò vi sóng"]].forEach(([a, b], i) => {
       g.fillStyle = ["#fff7a8", "#ffffff", "#ffd3e0"][i]; g.save(); g.translate(20 + i * 140, 30 + (i % 2) * 20); g.rotate((i - 1) * 0.06); g.fillRect(0, 0, 125, 150);
-      g.fillStyle = "#c0262d"; g.font = "800 17px system-ui"; g.fillText(a, 8, 30); g.fillStyle = "#222"; g.font = "15px system-ui"; b.split(" ").reduce((y, wd, k, arr) => { g.fillText(arr.slice(k * 3, k * 3 + 3).join(" "), 8, 60 + k * 22); return y; }, 0); g.restore();
+      g.fillStyle = "#c0262d"; g.font = "800 17px system-ui"; g.fillText(a, 8, 30, 110); g.fillStyle = "#222"; g.font = "15px system-ui"; b.split(" ").reduce((y, wd, k, arr) => { g.fillText(arr.slice(k * 3, k * 3 + 3).join(" "), 8, 60 + k * 22, 110); return y; }, 0); g.restore();
     });
   }), -12, 1.7, -5.86, 0);
   binhCuuHoa(-19.5, -5.5); binhCuuHoa(19.5, -2.5);

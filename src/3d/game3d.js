@@ -65,8 +65,10 @@ export class Game3D {
       nv.group.rotation.y = cho.huong ?? 0;
       const bang = taoBangTen(tenCua(ma), tenVai(ma)); bang.position.y = nv.chieuCao + 0.35; nv.group.add(bang);
       this.scene.add(nv.group);
-      this.npc.push({ ma, nv, bang, tang: cho.tang, goc0: cho.huong ?? 0 });
+      this.npc.push({ ma, nv, bang, tang: cho.tang, goc0: cho.huong ?? 0, cho });
     }
+    for (const n of this.npc) this.veCho(n);
+    this.tgDiDao = 6;
 
     // Điểm đánh dấu mục tiêu: vòng sáng + cột sáng
     const mk = new THREE.Group();
@@ -180,7 +182,7 @@ export class Game3D {
     if (n) {
       const lech = khu === "cong" || khu === "ra_ngoai" ? [1.4, -1.2] : [1.0, 0];
       const x = k.x + lech[0], z = k.z + lech[1];
-      n.nv.group.position.set(x, k.tang * CAO_TANG, z); n.tang = k.tang; n.daDoi = true;
+      n.diDao = null; n.nv.ngoi = false; n.nv.vietTay = 0; n.nv.group.position.set(x, k.tang * CAO_TANG, z); n.tang = k.tang; n.daDoi = true;
       k = { ...k, x, z, nguoi: n };
     }
     this.mucTieu = { khu, k, onToi, daToi: false, choRoi: phaiRoiKhoi };
@@ -188,7 +190,58 @@ export class Game3D {
     this.marker.visible = true;
   }
   traNpcVeCho() {
-    for (const n of this.npc) if (n.daDoi) { const c = CHO_NGOI[n.ma]; n.nv.group.position.set(c.x, c.tang * CAO_TANG, c.z); n.tang = c.tang; n.nv.group.rotation.y = n.goc0; n.daDoi = false; }
+    for (const n of this.npc) if (n.daDoi) { n.daDoi = false; this.veCho(n); }
+  }
+  // về chỗ của mình: có ghế thì ngồi xuống gõ máy
+  veCho(n) {
+    const c = n.cho; n.diDao = null; n.nv.vietTay = 0;
+    n.nv.ngoi = !!c.ngoi;
+    n.nv.group.position.set(c.x, c.tang * CAO_TANG - (c.ngoi ? 0.36 : 0), c.z); n.tang = c.tang; n.nv.group.rotation.y = n.goc0;
+  }
+  dungDay(n) { n.nv.ngoi = false; n.nv.group.position.y = n.tang * CAO_TANG; }
+  // Thỉnh thoảng một người ở khu làm việc chung đứng dậy đi lấy nước, in tài liệu, lục tủ hồ sơ rồi quay về
+  chonDiDao() {
+    const ranh = this.npc.filter(n => n.cho.ban && !n.daDoi && !n.diDao && n.tang === this.tang0(n));
+    if (!ranh.length) return;
+    const n = ranh[Math.floor(Math.random() * ranh.length)];
+    const c = n.cho, hang2 = c.ban.z > 5, loi = hang2 ? 9.95 : 4.6;
+    const DIEM = hang2
+      ? [{ x: -18.7, z: 11.2, huong: -Math.PI / 2, qua: [[-18.7, loi]] }, { x: -3.2, z: 11.9, huong: Math.PI, qua: [[-3.2, loi]] }]
+      : [{ x: -3.2, z: -0.2, huong: 0, qua: [[-3.9, loi], [-3.9, -0.2]] }, { x: -3.2, z: 11.9, huong: Math.PI, qua: [[-3.9, loi], [-3.9, 11.9]] }];
+    const d = DIEM[Math.floor(Math.random() * DIEM.length)];
+    const di = [[c.x, loi], ...d.qua, [d.x, d.z]];
+    n.diDao = { di, i: 0, cho: 0, d, ve: false };
+    this.dungDay(n);
+  }
+  tang0(n) { return n.cho.tang; }
+  capNhatDiDao(dt) {
+    this.tgDiDao -= dt;
+    if (this.tgDiDao <= 0) { this.tgDiDao = 8 + Math.random() * 14; this.chonDiDao(); }
+    for (const n of this.npc) {
+      const dd = n.diDao; if (!dd) continue;
+      const g = n.nv.group;
+      if (dd.cho > 0) { // đang thao tác ở đồ vật
+        dd.cho -= dt; n.nv.vietTay = 1;
+        if (dd.cho <= 0) { n.nv.vietTay = 0; dd.ve = true; dd.di = [...dd.di.slice(0, -1).reverse(), [n.cho.x, n.cho.z]]; dd.i = 0; }
+        continue;
+      }
+      const [tx, tz] = dd.di[dd.i];
+      const dx = tx - g.position.x, dz = tz - g.position.z, kc = Math.hypot(dx, dz);
+      // nhường đường người chơi
+      if (this.tang === n.tang && Math.hypot(this.p.x - g.position.x, this.p.z - g.position.z) < 0.9) continue;
+      if (kc < 0.05) {
+        dd.i++;
+        if (dd.i >= dd.di.length) {
+          if (dd.ve) { this.veCho(n); continue; }
+          dd.cho = 4 + Math.random() * 5; g.rotation.y = dd.d.huong; continue;
+        }
+        continue;
+      }
+      const buoc = Math.min(kc, 1.15 * dt);
+      g.position.x += dx / kc * buoc; g.position.z += dz / kc * buoc;
+      g.rotation.y = Math.atan2(dx, dz);
+      n.dangDi = true;
+    }
   }
   xoaMucTieu() { this.mucTieu = null; this.marker.visible = false; }
   khoangCachMucTieu() {
@@ -221,7 +274,7 @@ export class Game3D {
     this.tay.voiRa(1); setTimeout(() => !this.khoa && this.tay.voiRa(0), 400);
     if (g.loai === "npc") {
       const n = this.npc.find(x => x.ma === g.ma);
-      n.nv.group.rotation.y = Math.atan2(this.p.x - n.nv.group.position.x, this.p.z - n.nv.group.position.z);
+      if (!n.nv.ngoi) n.nv.group.rotation.y = Math.atan2(this.p.x - n.nv.group.position.x, this.p.z - n.nv.group.position.z);
       this.onNoiChuyen?.(g.ma);
     } else if (g.loai === "cau_thang") {
       this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
@@ -297,8 +350,9 @@ export class Game3D {
     }
     this.than.hoatDong(this.t, this.dangDi, this.phim.ShiftLeft ? 1.5 : 1);
     this.tay.hoatDong(this.t, this.dangDi, dt);
+    if (!this.khoa) this.capNhatDiDao(dt);
     for (const n of this.npc) {
-      n.nv.hoatDong(this.t + n.goc0 * 3, false);
+      n.nv.hoatDong(this.t + n.goc0 * 3, !!(n.diDao && n.dangDi && !n.diDao.cho && !this.khoa)); n.dangDi = false;
       n.bang.visible = n.tang === this.tang && Math.hypot(n.nv.group.position.x - this.p.x, n.nv.group.position.z - this.p.z) < 9;
     }
     for (const l of this.theGioi.nhapNhay) l.visible = Math.sin(this.t * 6 + l.position.x * 9) > -0.3;

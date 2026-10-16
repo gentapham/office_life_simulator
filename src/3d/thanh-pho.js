@@ -55,8 +55,8 @@ function gachVia() {
 function quangCao(chu, phu, nen, mau) {
   return chuTex("qc" + chu, 512, 256, (g, w, h) => {
     const gr = g.createLinearGradient(0, 0, w, h); gr.addColorStop(0, nen[0]); gr.addColorStop(1, nen[1]); g.fillStyle = gr; g.fillRect(0, 0, w, h);
-    g.fillStyle = mau; g.textAlign = "center"; g.font = "800 52px 'Baloo 2', system-ui, sans-serif"; g.fillText(chu, w / 2, 110);
-    g.font = "600 28px 'Be Vietnam Pro', system-ui, sans-serif"; g.fillText(phu, w / 2, 170);
+    g.fillStyle = mau; g.textAlign = "center"; g.font = "800 52px 'Baloo 2', system-ui, sans-serif"; g.fillText(chu, w / 2, 110, w - 30);
+    g.font = "600 28px 'Be Vietnam Pro', system-ui, sans-serif"; g.fillText(phu, w / 2, 170, w - 30);
   });
 }
 function cuaSoCaoOc(mau, sang) {
@@ -198,7 +198,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   // Chợ Phố Cũ (tháp đồng hồ)
   H(24, 7, 26, 0xf2d27a, 74, 0, 5); can(62, 86, -8, 18);
   H(25, 0.6, 27, 0xa8503a, 74, 7, 5);
-  H(5, 14, 5, 0xf2d27a, 62.8, 0, 5); H(5.4, 1.2, 5.4, 0xa8503a, 62.8, 14, 5);
+  H(5, 14, 5, 0xf2d27a, 62.8, 0, 5); can(60.3, 65.3, 2.5, 7.5); H(5.4, 1.2, 5.4, 0xa8503a, 62.8, 14, 5);
   const dh = new THREE.Mesh(new THREE.CircleGeometry(1.5, 20), new THREE.MeshBasicMaterial({ map: dongHo() })); dh.position.set(60.27, 11, 5); dh.rotation.y = -Math.PI / 2; nhom.add(dh);
   const bc = new THREE.Mesh(new THREE.PlaneGeometry(10, 1.6), new THREE.MeshBasicMaterial({ map: bienHieu("CHỢ PHỐ CŨ", ["#c0262d", "#ffe14d"]) })); bc.position.set(61.98, 5.5, 5); bc.rotation.y = -Math.PI / 2; nhom.add(bc);
   for (let z = -6; z <= 16; z += 4) if (Math.abs(z - 5) > 2) { const c = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 3), trongQuan); c.position.set(61.98, 1.5, z); c.rotation.y = -Math.PI / 2; nhom.add(c); }
@@ -217,6 +217,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const t = ccTex.clone(); t.needsUpdate = true; t.repeat.set(w / 6, h / 6);
     const vl1 = new THREE.MeshLambertMaterial({ map: t }), vl2 = vl(0xd6c9a0);
     const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), [vl2, vl2, vl2, vl2, vl1, vl1]); m.position.set(x, h / 2, z); m.rotation.y = xoay; m.userData.rieng = true; nhom.add(m);
+    can(x - w / 2, x + w / 2, z - d / 2, z + d / 2);
   };
   chungCu(-60, 72, 30, 14, 18); chungCu(-20, 74, 24, 12, 15); chungCu(-80, -40, 28, 12, 18, Math.PI);
   // Cao ốc kính
@@ -224,6 +225,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const t = cuaSoCaoOc(mau, true).clone(); t.needsUpdate = true; t.repeat.set(w / 4, h / 4);
     const v = new THREE.MeshLambertMaterial({ map: t }), m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), [v, v, vl(0x4a5560), v, v, v]);
     m.position.set(x, h / 2, z); m.userData.rieng = true; nhom.add(m);
+    can(x - w / 2, x + w / 2, z - d / 2, z + d / 2);
     if (ten) {
       const b = new THREE.Mesh(new THREE.PlaneGeometry(w * 0.9, w * 0.22), new THREE.MeshBasicMaterial({ map: bienHieu(ten, mauTen), fog: false }));
       b.position.set(x, h - w * 0.15, z + d / 2 + 0.05); nhom.add(b);
@@ -231,12 +233,12 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     }
   };
   caoOc(25, 100, 16, 16, 62, "#5a86a8", "SKY ẢO", ["#1c1c1f", "#7fd3ff"]);
-  caoOc(48, 104, 14, 14, 54, "#5a86a8", "SKY ẢO 2", ["#1c1c1f", "#7fd3ff"]);
+  caoOc(25, 122, 14, 14, 54, "#5a86a8", "SKY ẢO 2", ["#1c1c1f", "#7fd3ff"]);
   caoOc(-95, 90, 18, 18, 70, "#2a2c31", "LL-ENTERTAINMENT", ["#7a1424", "#ffffff"]);
   caoOc(110, 85, 20, 20, 96, "#6f8fa8", "LANDMARK ƯỚC MƠ", ["#1f4fa8", "#ffffff"]);
   caoOc(-30, -75, 18, 18, 44, "#8a9aa8", "THƯƠNG XÁ HÓNG", ["#e8702a", "#ffffff"]);
   caoOc(90, -60, 16, 16, 38, "#9aa8b0", null);
-  caoOc(-130, 30, 18, 18, 34, "#a8b0a0", null);
+  caoOc(-130, 8, 18, 18, 34, "#a8b0a0", null);
   caoOc(140, 10, 18, 18, 50, "#5a86a8", null);
   // khối nhà xa làm nền
   for (let i = 0; i < 28; i++) {
@@ -344,7 +346,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     can(x - 0.75, x + 0.75, z - 0.4, z + 0.4);
     choNguoiDung.push({ x, z: z - 0.8, huong: 0, them: rnd() < 0.5 ? ["nonLa"] : [] });
   };
-  const xeDung = (x, z, xoay) => { const m = taoXeMay(chon(MAU_XE), rnd() < 0.5 ? "ga" : "so"); m.position.set(x, 0, z); m.rotation.y = xoay; nhom.add(m); };
+  const xeDung = (x, z, xoay) => { const m = taoXeMay(chon(MAU_XE), rnd() < 0.5 ? "ga" : "so"); m.position.set(x, 0, z); m.rotation.y = xoay; nhom.add(m); if (z < 37) can(x - 0.85, x + 0.85, z - 0.4, z + 0.4); };
   // xe máy dựng trước nhà (dãy nam)
   for (let x = -146; x < 140; x += 3.4) {
     if ((x > 6 && x < 14) || (x > 42 && x < 62)) continue;

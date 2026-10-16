@@ -1,6 +1,21 @@
 // Nhân vật low-poly: mặt vẽ riêng từng người, 21 kiểu tóc, trang phục tách khối rõ ràng (áo, quần, giày, phụ kiện).
 // Ngoại hình theo docs/roles/ngoai-hinh.md. Nhân vật quay mặt về +z, đứng trên y = 0.
 import * as THREE from "three";
+
+// Chữ vẽ lên ảnh (bảng hiệu, poster, bảng tên) không bao giờ tràn khỏi khung: nếu không truyền độ rộng tối đa,
+// tự tính theo chỗ còn trống trong khung và co chữ lại cho vừa.
+if (typeof CanvasRenderingContext2D !== "undefined" && !CanvasRenderingContext2D.prototype.__vuaKhung) {
+  const goc = CanvasRenderingContext2D.prototype.fillText;
+  CanvasRenderingContext2D.prototype.fillText = function (t, x, y, maxW) {
+    if (maxW === undefined) {
+      const W = this.canvas.width, m = 6, a = this.textAlign;
+      maxW = a === "center" ? 2 * Math.min(x, W - x) - 2 * m : a === "right" || a === "end" ? x - m : W - x - m;
+      if (!(maxW > 0) || this.measureText(t).width <= maxW) return goc.call(this, t, x, y);
+    }
+    return goc.call(this, t, x, y, maxW);
+  };
+  CanvasRenderingContext2D.prototype.__vuaKhung = true;
+}
 import { gopKhoi } from "./gop-khoi.js";
 
 // ---------- Vật liệu dùng chung ----------
@@ -402,9 +417,27 @@ export function taoNguoi(ma, nhRieng = null) {
   gop(dau);
 
   g.scale.setScalar(s);
-  return {
-    group: g, chieuCao: (dauY + 0.3) * s, tayT, tayP, dau, than, dauY,
+  const o = {
+    group: g, chieuCao: (dauY + 0.3) * s, tayT, tayP, dau, than, dauY, chanT, chanP,
+    ngoi: false,     // ngồi ghế gõ máy tính
+    vietTay: 0,      // >0: với tay thao tác đồ vật (máy in, cây nước, tủ hồ sơ)
     hoatDong(t, dangDi, toc = 1) {
+      if (o.ngoi) {
+        chanT.rotation.x = chanP.rotation.x = -1.42;
+        tayT.rotation.set(-1.12 + Math.sin(t * 13) * 0.05, 0, 0.12); tayP.rotation.set(-1.12 + Math.sin(t * 13 + 1.7) * 0.05, 0, -0.12);
+        than.position.y = 0; dau.position.y = dauY; tayT.position.y = tayP.position.y = vaiY;
+        dau.rotation.set(0.12 + Math.sin(t * 0.3) * 0.04, Math.sin(t * 0.4) * 0.15, 0);
+        return;
+      }
+      if (o.vietTay > 0) {
+        chanT.rotation.x = chanP.rotation.x = 0;
+        tayP.rotation.set(-1.25 + Math.sin(t * 5) * 0.15, 0, 0); tayT.rotation.set(-0.3, 0, 0);
+        dau.rotation.set(0.15, 0, 0);
+        return;
+      }
+      dau.rotation.x = 0;
+      if (!tayT.userData.coDinh) tayT.rotation.z = 0;
+      if (!tayP.userData.coDinh) tayP.rotation.z = 0;
       const goc = dangDi ? Math.sin(t * 8 * toc) * 0.55 : 0;
       chanT.rotation.x = goc; chanP.rotation.x = -goc;
       if (!tayT.userData.coDinh) tayT.rotation.x = -goc * 0.8;
@@ -414,6 +447,7 @@ export function taoNguoi(ma, nhRieng = null) {
       dau.rotation.y = dangDi ? 0 : Math.sin(t * 0.5) * 0.12;
     },
   };
+  return o;
 }
 
 // ---------- Người đi đường ngẫu nhiên ----------
@@ -528,18 +562,24 @@ function taoCho() {
 
 // Bảng tên lơ lửng trên đầu
 export function taoBangTen(ten, phu = "") {
+  // khung tự dài ra theo chữ (tên và tên vai), không bao giờ tràn
   const cv = document.createElement("canvas"); cv.width = 512; cv.height = 128;
-  const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+  let tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false }));
   sp.scale.set(1.6, 0.4, 1);
   sp.renderOrder = 10;
+  const F1 = "700 46px 'Be Vietnam Pro', system-ui, sans-serif", F2 = "500 30px 'Be Vietnam Pro', system-ui, sans-serif";
   const ve = (t, p) => {
-    const c = cv.getContext("2d"); c.clearRect(0, 0, 512, 128);
-    c.font = "700 46px 'Be Vietnam Pro', system-ui, sans-serif"; c.textAlign = "center";
-    const w = Math.min(500, Math.max(c.measureText(t).width, p ? 200 : 0) + 48);
-    c.fillStyle = "rgba(20,18,14,.78)"; c.beginPath(); c.roundRect(256 - w / 2, p ? 4 : 24, w, p ? 120 : 80, 22); c.fill();
-    c.fillStyle = "#fff"; c.fillText(t, 256, p ? 56 : 80);
-    if (p) { c.font = "500 30px 'Be Vietnam Pro', system-ui, sans-serif"; c.fillStyle = "#f0a46e"; c.fillText(p, 256, 102); }
+    let c = cv.getContext("2d");
+    c.font = F1; let w = c.measureText(t).width;
+    if (p) { c.font = F2; w = Math.max(w, c.measureText(p).width); }
+    const rong = Math.ceil(Math.max(200, w + 56));
+    if (cv.width !== rong) { cv.width = rong; tex.dispose(); tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace; sp.material.map = tex; sp.material.needsUpdate = true; c = cv.getContext("2d"); }
+    sp.scale.set(0.4 * rong / 128, 0.4, 1);
+    c.clearRect(0, 0, rong, 128); c.textAlign = "center";
+    c.fillStyle = "rgba(20,18,14,.78)"; c.beginPath(); c.roundRect(2, p ? 4 : 24, rong - 4, p ? 120 : 80, 22); c.fill();
+    c.font = F1; c.fillStyle = "#fff"; c.fillText(t, rong / 2, p ? 56 : 80);
+    if (p) { c.font = F2; c.fillStyle = "#f0a46e"; c.fillText(p, rong / 2, 102); }
     tex.needsUpdate = true;
   };
   ve(ten, phu);
