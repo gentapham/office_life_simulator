@@ -395,7 +395,8 @@ export function taoNguoi(ma, nhRieng = null) {
   const vlDa = vl(da);
   if (nh.nu && nh.mat) nh.mat = { mi: true, maHong: true, son: 0xc75b6c, ...nh.mat }; // nữ: lông mi, má hồng, son
   const matTruoc = veMat(nh);
-  dau.add(new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.34, 0.3), [vlDa, vlDa, vlDa, vlDa, matTruoc, vlDa]));
+  const hopDau = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.34, 0.3), [vlDa, vlDa, vlDa, vlDa, matTruoc, vlDa]);
+  dau.add(hopDau);
   dau.add(hop(0.04, 0.08, 0.06, da, -0.165, 0.0, 0), hop(0.04, 0.08, 0.06, da, 0.165, 0.0, 0)); // tai
   dau.add(hop(0.05, 0.07, 0.045, toiMau(da, 0.95), 0, -0.03, 0.17)); // mũi
   dau.add(hop(0.2, 0.06, 0.04, da, 0, -0.15, 0.12)); // cằm
@@ -421,47 +422,157 @@ export function taoNguoi(ma, nhRieng = null) {
   gop(dau);
 
   g.scale.setScalar(s);
+
+  // ----- Cử chỉ: ngáp, vươn vai, gãi đầu, gọi điện, uống, xem điện thoại, cười, gật/lắc đầu, nói -----
+  // Cánh tay là một khối cứng xoay quanh vai: muốn đưa bàn tay tới một điểm (tai, miệng, đỉnh đầu) thì xoay tay
+  // hướng về điểm đó và co ngắn lại cho vừa (trông như gập khuỷu tay).
+  const dienThoai = new THREE.Mesh(GEO_DT, vl(0x1a1a1a)); dienThoai.position.set(0, -0.69, 0.05); dienThoai.visible = false; tayP.add(dienThoai);
+  const coSan = pk.some(x => ["tachTra", "cocRender", "binhGiuNhiet"].includes(x)); // đã cầm sẵn ly
+  const coc = new THREE.Mesh(GEO_COC, vl(0xf6f6f2)); coc.position.set(0, -0.7, 0.06); coc.visible = false; tayP.add(coc);
+  const matGoc = hopDau.material, matCu = {};
+  const doiMat = kieu => {
+    if (!kieu) { matGoc[4] = matTruoc; return; }
+    if (!matCu[kieu]) {
+      const m = nh.mat || {};
+      matCu[kieu] = veMat({ ...nh, mat: kieu === "ngap" ? { ...m, mieng: "ngap", mat: m.mat === "cuoi" ? "cuoi" : "met" } : { ...m, mieng: "cuoi_to", mat: "cuoi" } });
+    }
+    matGoc[4] = matCu[kieu];
+  };
+  const _v = new THREE.Vector3(), _q = new THREE.Quaternion(), _q0 = new THREE.Quaternion();
+  const huongTay = (tay, x, y, z, k) => {
+    if (tay.userData.coDinh || k <= 0) return;
+    _v.set(x - tay.position.x, y - tay.position.y, z - tay.position.z);
+    const d = _v.length(); _v.divideScalar(d);
+    _q.setFromUnitVectors(XUONG, _v);
+    if (k < 1) { _q0.copy(tay.quaternion); _q.slerpQuaternions(_q0, _q, k); }
+    tay.quaternion.copy(_q);
+    const co = Math.min(1, Math.max(0.42, d / 0.66));
+    tay.scale.y = 1 + (co - 1) * k;
+  };
+  const muot = x => x * x * (3 - 2 * x);
+  const ketThucCu = () => { o.cu = null; doiMat(null); };
+  const apCu = (c, p, t) => {
+    const e = p < 0.16 ? muot(p / 0.16) : p > 0.8 ? muot((1 - p) / 0.2) : 1;
+    const giua = p > 0.18 && p < 0.82;
+    switch (c.loai) {
+      case "ngap":
+        doiMat(p > 0.12 && p < 0.85 ? "ngap" : null);
+        dau.rotation.x -= 0.38 * e;
+        if (c.bien) { huongTay(tayT, -0.22, dauY + 0.6, -0.02, e); huongTay(tayP, 0.22, dauY + 0.6, -0.02, e); }
+        else huongTay(tayP, 0.03, dauY - 0.1, 0.25, e);
+        break;
+      case "vuon": {
+        const ra = p < 0.5 ? 0 : muot(Math.min(1, (p - 0.5) / 0.2));
+        const x = 0.2 + ra * 0.5, y = dauY + 0.62 - ra * 0.55;
+        huongTay(tayT, -x, y, -0.02, e); huongTay(tayP, x, y, -0.02, e);
+        dau.rotation.x -= 0.22 * e;
+        break;
+      }
+      case "gai_dau":
+        huongTay(tayP, 0.1 + Math.sin(t * 24) * 0.025, dauY + 0.19, 0.05, e);
+        dau.rotation.z += 0.12 * e; dau.rotation.x += 0.06 * e;
+        break;
+      case "goi_dt":
+        dienThoai.visible ||= e > 0.5; dienThoai.scale.y = 1 / Math.max(0.3, tayP.scale.y);
+        huongTay(tayP, 0.19, dauY + 0.01, 0.04, e);
+        dau.rotation.z -= 0.1 * e; dau.rotation.x += Math.sin(t * 1.7) * 0.05 * e;
+        if (!o.ngoi) huongTay(tayT, -0.32, 1.05 + Math.sin(t * 2.2) * 0.08, 0.3 + Math.sin(t * 1.3) * 0.06, e * 0.7);
+        break;
+      case "uong": {
+        if (!coSan) { coc.visible ||= e > 0.3; coc.scale.y = 1 / Math.max(0.3, tayP.scale.y); }
+        const len = p > 0.3 && p < 0.7 ? 1 : p <= 0.3 ? muot(Math.max(0, (p - 0.1) / 0.2)) : muot(Math.max(0, (0.9 - p) / 0.2));
+        huongTay(tayP, 0.12 - len * 0.09, 1.0 + len * (dauY - 1.12), 0.3 - len * 0.06, e);
+        dau.rotation.x -= 0.28 * len;
+        break;
+      }
+      case "xem_dt": {
+        dienThoai.visible ||= e > 0.4; dienThoai.scale.y = 1 / Math.max(0.3, tayP.scale.y);
+        const run = Math.sin(t * 9) * 0.008;
+        huongTay(tayP, 0.06, dauY - 0.5 + run, 0.32, e); huongTay(tayT, -0.05, dauY - 0.53, 0.3, e);
+        dau.rotation.x += 0.38 * e;
+        break;
+      }
+      case "cuoi": {
+        doiMat(giua ? "cuoi" : null);
+        const rung = Math.sin(t * 17);
+        dau.rotation.x += (-0.18 + rung * 0.07) * e;
+        than.position.y += Math.abs(rung) * 0.014 * e; dau.position.y += Math.abs(rung) * 0.014 * e;
+        huongTay(tayT, -0.1, 1.02, 0.2, e * 0.8);
+        break;
+      }
+      case "gat_dau": dau.rotation.x += Math.sin(p * Math.PI * 4) * 0.2 * e; break;
+      case "lac_dau": dau.rotation.y += Math.sin(p * Math.PI * 4) * 0.3 * e; break;
+      case "noi":
+        huongTay(tayP, 0.24 + Math.sin(t * 3.1) * 0.06, 1.12 + Math.sin(t * 4.3) * 0.07, 0.36, e * 0.9);
+        dau.rotation.x += Math.sin(t * 5.3) * 0.035 * e;
+        break;
+    }
+  };
+
   const o = {
     group: g, chieuCao: (dauY + 0.3) * s, tayT, tayP, dau, than, dauY, chanT, chanP,
     ngoi: false,     // ngồi ghế gõ máy tính
     vietTay: 0,      // >0: với tay thao tác đồ vật (máy in, cây nước, tủ hồ sơ)
+    cu: null,        // cử chỉ đang làm { loai, dai, t0 }
+    quayDau: 0,      // quay đầu thêm (nhìn người đang nói chuyện cùng)
+    cam: null,       // "coc" | "dt": cầm ly / điện thoại trên tay phải
+    lamCu(loai, dai, bien = Math.random() < 0.5) { if (o.cu) ketThucCu(); o.cu = { loai, dai: dai ?? THOI_CU[loai] ?? 2, t0: null, bien }; },
+    huyCu() { if (o.cu) ketThucCu(); },
     hoatDong(t, dangDi, toc = 1) {
+      tayT.scale.y = tayP.scale.y = 1; dau.rotation.z = 0;
+      // đồ đang cầm (ly cà phê mang về chỗ, điện thoại); cử chỉ có thể hiện thêm
+      coc.visible = o.cam === "coc" && !coSan; dienThoai.visible = o.cam === "dt";
+      coc.scale.y = dienThoai.scale.y = 1;
+      if (!tayT.userData.coDinh) tayT.rotation.y = 0;
+      if (!tayP.userData.coDinh) tayP.rotation.y = 0;
       if (o.ngoi === "nghi") { // ngồi quán / ghế chờ: tay đặt lên đùi, lâu lâu nâng ly uống, nhìn quanh
         chanT.rotation.x = -1.45; chanP.rotation.x = -1.38;
-        const chu = (t + (o.lech ||= Math.random() * 9)) % 9, uong = chu < 1.6 ? Math.sin(chu / 1.6 * Math.PI) : 0;
+        const chu = (t + (o.lech ||= Math.random() * 9)) % 9, uong = o.cu || o.khongUong ? 0 : chu < 1.6 ? Math.sin(chu / 1.6 * Math.PI) : 0;
         tayT.rotation.set(-0.55, 0, 0.12); tayP.rotation.set(-0.6 - uong * 1.5, 0, -0.1 - uong * 0.25);
         than.position.y = 0; dau.position.y = dauY; tayT.position.y = tayP.position.y = vaiY;
         dau.rotation.set(-uong * 0.25, Math.sin(t * 0.35 + o.lech) * 0.5, 0);
-        return;
-      }
-      if (o.ngoi) {
+      } else if (o.ngoi) {
         chanT.rotation.x = chanP.rotation.x = -1.42;
-        tayT.rotation.set(-1.12 + Math.sin(t * 13) * 0.05, 0, 0.12); tayP.rotation.set(-1.12 + Math.sin(t * 13 + 1.7) * 0.05, 0, -0.12);
+        const go = o.cu ? 0.012 : 0.05; // đang làm cử chỉ thì ngừng gõ phím
+        tayT.rotation.set(-1.12 + Math.sin(t * 13) * go, 0, 0.12); tayP.rotation.set(-1.12 + Math.sin(t * 13 + 1.7) * go, 0, -0.12);
         than.position.y = 0; dau.position.y = dauY; tayT.position.y = tayP.position.y = vaiY;
         dau.rotation.set(0.12 + Math.sin(t * 0.3) * 0.04, Math.sin(t * 0.4) * 0.15, 0);
-        return;
-      }
-      if (o.vietTay > 0) {
+      } else if (o.vietTay > 0) {
         chanT.rotation.x = chanP.rotation.x = 0;
         tayP.rotation.set(-1.25 + Math.sin(t * 5) * 0.15, 0, 0); tayT.rotation.set(-0.3, 0, 0);
         dau.rotation.set(0.15, 0, 0);
-        return;
+      } else {
+        dau.rotation.x = 0;
+        if (!tayT.userData.coDinh) tayT.rotation.z = 0;
+        if (!tayP.userData.coDinh) tayP.rotation.z = 0;
+        const goc = dangDi ? Math.sin(t * 8 * toc) * 0.55 : 0;
+        chanT.rotation.x = goc; chanP.rotation.x = -goc;
+        if (vayDong) { vayDong.rotation.z = goc * 0.12; vayDong.rotation.x = Math.abs(goc) * -0.15; }
+        if (!tayT.userData.coDinh) tayT.rotation.x = -goc * 0.8;
+        if (!tayP.userData.coDinh) tayP.rotation.x = o.cam ? -0.6 + goc * 0.1 : goc * 0.8; // cầm ly thì giữ tay trước ngực
+        const nhun = dangDi ? Math.abs(Math.sin(t * 8 * toc)) * 0.025 : Math.sin(t * 1.6) * 0.006;
+        than.position.y = nhun; dau.position.y = dauY + nhun; tayT.position.y = tayP.position.y = vaiY + nhun;
+        dau.rotation.y = dangDi ? 0 : Math.sin(t * 0.5) * 0.12;
       }
-      dau.rotation.x = 0;
-      if (!tayT.userData.coDinh) tayT.rotation.z = 0;
-      if (!tayP.userData.coDinh) tayP.rotation.z = 0;
-      const goc = dangDi ? Math.sin(t * 8 * toc) * 0.55 : 0;
-      chanT.rotation.x = goc; chanP.rotation.x = -goc;
-      if (vayDong) { vayDong.rotation.z = goc * 0.12; vayDong.rotation.x = Math.abs(goc) * -0.15; }
-      if (!tayT.userData.coDinh) tayT.rotation.x = -goc * 0.8;
-      if (!tayP.userData.coDinh) tayP.rotation.x = goc * 0.8;
-      const nhun = dangDi ? Math.abs(Math.sin(t * 8 * toc)) * 0.025 : Math.sin(t * 1.6) * 0.006;
-      than.position.y = nhun; dau.position.y = dauY + nhun; tayT.position.y = tayP.position.y = vaiY + nhun;
-      dau.rotation.y = dangDi ? 0 : Math.sin(t * 0.5) * 0.12;
+      dau.rotation.y += o.quayDau;
+      const c = o.cu;
+      if (c) {
+        if (dangDi && c.loai !== "goi_dt" && c.loai !== "xem_dt") ketThucCu();
+        else {
+          if (c.t0 == null) c.t0 = t;
+          const p = (t - c.t0) / c.dai;
+          if (p >= 1 || p < 0) ketThucCu(); else apCu(c, p, t);
+        }
+      }
     },
   };
   return o;
 }
+const XUONG = new THREE.Vector3(0, -1, 0);
+const GEO_DT = new THREE.BoxGeometry(0.07, 0.13, 0.015);
+const GEO_COC = new THREE.CylinderGeometry(0.045, 0.038, 0.11, 8);
+// thời lượng mặc định của từng cử chỉ (giây)
+export const THOI_CU = { ngap: 2.6, vuon: 2.6, gai_dau: 2.2, goi_dt: 8, uong: 3, xem_dt: 5, cuoi: 1.9, gat_dau: 1.2, lac_dau: 1.2, noi: 2.5 };
 
 // ---------- Người đi đường ngẫu nhiên ----------
 const NGAU = {
@@ -535,9 +646,15 @@ function taoSieuNhan() {
   const dau = new THREE.Group(); dau.position.y = 1.74;
   dau.add(hop(0.34, 0.36, 0.34, HONG, 0, 0, 0), hop(0.28, 0.12, 0.03, 0x0b0b0b, 0, 0.03, 0.17), hop(0.36, 0.05, 0.36, DAM, 0, -0.17, 0), hop(0.05, 0.05, 0.37, TRANG, 0, 0.18, 0));
   g.add(gop(dau));
-  return {
-    group: g, chieuCao: 1.95,
+  const o = {
+    group: g, chieuCao: 1.95, ngoi: false,
     hoatDong(t, dangDi) {
+      if (o.ngoi) { // ngồi: co chân; ngồi máy thì hai tay gõ phím, ngồi chơi thì chống tay lên đùi
+        cT.rotation.x = cP.rotation.x = -1.42;
+        if (o.ngoi === "nghi") { tT.rotation.set(-0.55, 0, 0.12); tP.rotation.set(-0.6, 0, -0.1); }
+        else { tT.rotation.set(-1.12 + Math.sin(t * 13) * 0.05, 0, 0.12); tP.rotation.set(-1.12 + Math.sin(t * 13 + 1.7) * 0.05, 0, -0.12); }
+        return;
+      }
       const goc = dangDi ? Math.sin(t * 8) * 0.55 : 0;
       cT.rotation.x = goc; cP.rotation.x = -goc;
       // đứng yên thì tạo dáng: một tay chống hông, một tay giơ lên
@@ -545,6 +662,7 @@ function taoSieuNhan() {
       tP.rotation.set(dangDi ? goc * 0.8 : -2.6 + Math.sin(t * 2) * 0.1, 0, dangDi ? 0 : -0.2);
     },
   };
+  return o;
 }
 
 // Chó ta lông vàng, tai vểnh, đuôi cuộn, vòng cổ đỏ có chuông
@@ -629,11 +747,22 @@ export function taoDoiTay(ma) {
     return g.children[g.children.length - 1];
   };
   const trai = mot(-1), phai = mot(1);
-  let voi = 0;
+  let voi = 0, go = 0;
   return {
     group: g,
     voiRa(v) { voi = v; },
-    hoatDong(t, dangDi) {
+    datGo(v) { go = v ? 1 : 0; }, // ngồi bàn làm việc: hai tay đặt lên bàn phím gõ
+    hoatDong(t, dangDi, dt = 0.016) {
+      this._go = (this._go ?? 0) + (go - (this._go ?? 0)) * Math.min(1, dt * 6);
+      const k = this._go;
+      if (k > 0.01) {
+        for (const [tay, ben, lech] of [[trai, -1, 0], [phai, 1, 1.9]]) {
+          const nhan = Math.max(0, Math.sin(t * 15 + lech)) * 0.012 + Math.max(0, Math.sin(t * 23 + lech * 2)) * 0.006;
+          tay.position.set(ben * (0.2 - 0.07 * k), -0.26 - 0.05 * k + nhan * k, -0.16 - 0.1 * k);
+          tay.rotation.set(0.08 - 0.3 * k, -0.12 * ben * (1 - k) + 0.08 * ben * k, 0);
+        }
+        return;
+      } else { trai.rotation.set(0.08, 0.12, 0); phai.rotation.set(0.08, -0.12, 0); trai.position.x = -0.2; phai.position.x = 0.2; }
       const nhip = dangDi ? 9 : 1.6, bien = dangDi ? 0.025 : 0.006;
       trai.position.y = -0.26 + Math.sin(t * nhip) * bien + voi * 0.08;
       phai.position.y = -0.26 + Math.sin(t * nhip + Math.PI) * bien + voi * 0.1;
