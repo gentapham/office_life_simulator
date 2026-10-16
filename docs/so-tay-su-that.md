@@ -28,7 +28,7 @@
 | Trang 47b | Tờ viết tay của Nguyên, dính sau trang 47 bằng miếng bánh chuối chiên: *nếu cả công ty đã cố hết sức thì Nguyên không đòi tiền lại*. Có hiệu lực khi có chữ ký Thắng + 1 người làm chứng trước 31/10. **Chỉ dùng trong kết thúc bí mật của Thương**. Mọi lượt chơi khác: nó vẫn dính đó, không ai biết |
 | Quỹ công ty | Sau khi trả nợ ngày 1/10: còn **2 tỷ** |
 | Quỹ đen của Thương | Két sắt nhà số 18, Phố Cũ. Hiện **250 triệu**, mục tiêu 297 triệu (1 tháng lương 21 người, không tính Thắng, + 60 cây xúc xích cho Tuất) |
-| Biệt thự Thắng | Thế chấp năm 2024 ở Ngân hàng Tín Dụng Đen Đủi. **Đến hạn 15/11/2026**. Người duyệt khoản vay năm đó là **Duy** (khi còn là trưởng phòng tín dụng). Hai người không nhận ra nhau |
+| Biệt thự Thắng | Thế chấp năm 2024 ở Ngân hàng Tín Dụng Đen Đủi. **Đến hạn 15/11/2026**. Người duyệt khoản vay năm đó là **Duy** (khi còn là trưởng phòng tín dụng). Hai người không nhận ra nhau cho tới ngày 22/10, khi đoàn kiểm tra thuế lật hồ sơ thế chấp (một số lượt chơi của Duy) |
 | Ngân sách team building | Tuấn đề xuất 120 triệu, Thương cắt còn 60 triệu |
 
 ### Sổ nợ của Chương (tổng 22.000.000đ)
@@ -128,7 +128,7 @@
 | 14/10 | Sơn quay vòng 2 cuộc thi "Giọng Ca Ước Mơ" (lý do xin nghỉ: "về quê gặt lúa") |
 | 15/10 | Mất điện. 8:05 Thắng và Hương kẹt thang máy. Nhật họp thắp nến ở phòng "Sáng Tạo". Duy tung 5 cục sạc dự phòng. Thương nói với Hương về trang 47 ở pantry (Hiếu nghe lén được). Phát hát "Công Viên" trong pantry tối, Lĩnh quay lại. Nguyên tháo mũ, có cảnh với Vũ |
 | 16/10 | Gameshow **"Hồng Hay Không Hồng"** (giải 10 triệu) ở Đài Tivi Hóng. Phần "Hit Một Thời": Nguyên hát "Công Viên" sai lời ("khoai chiên"), Phát có thể hát bè từ cánh gà |
-| 17/10 | Vũng Tàu. Phòng: Hiếu ở chung với Nguyên, Duy ở chung với Long, Hương không ở chung với Nhi (trừ khi Tuấn xếp sai). Huyền say, hứa mời "ca sĩ nổi tiếng nhất nước". Thắng say, hứa tăng lương cả công ty (bị quay clip). Lửa trại: Nguyên kể chuyện nhốt một đứa nhỏ trong kho. Phát ngủ gục lên vai Thái, Lĩnh đắp chăn cho cả hai. Ngân đang livestream đúng lúc Nguyên tháo mũ (3 giây để chọn). Đêm đó Bác Bình ở lại trực, bắt gặp người lạ trong phòng giám đốc (tùy lượt: con rắn thứ hai, Vũ tìm file, hoặc Bảo ngủ quên) |
+| 17/10 | Vũng Tàu. Phòng: Hiếu ở chung với Nguyên, Duy ở chung với Long, Hương không ở chung với Nhi (trừ khi Tuấn xếp sai). Huyền say, hứa mời "ca sĩ nổi tiếng nhất nước". Thắng say, hứa tăng lương cả công ty (bị quay clip). Lửa trại: Nguyên kể chuyện nhốt một đứa nhỏ trong kho. Phát ngủ gục lên vai Thái, Lĩnh đắp chăn cho cả hai. Ngân đang livestream đúng lúc Nguyên tháo mũ (3 giây để chọn). Đêm đó Bác Bình ở lại trực, bắt gặp người lạ trong phòng giám đốc (tùy lượt: con rắn thứ hai, hoặc Bảo ngủ quên vì không đi Vũng Tàu). Vũ đi Vũng Tàu nên không thể là người lạ này |
 | 18/10 | Hồng Coin sập. Long phát hiện penthouse bị rao bán |
 | 20/10 | Sinh nhật công ty 16 tuổi + Phụ nữ Việt Nam. Thư "G" tới sáng nay, Bình quyết định có đọc trước công ty không. Thắng đòi logo kỷ niệm 16 năm, rồi chọn lại logo gốc 2010 (lần sửa thứ 38). Sau quán ốc, ở karaoke, Thắng say có thể hứa tăng lương 20% |
 | 21/10 | Bài Confession bóc chuyện thế chấp. Tuấn và Bảo truy tìm admin |

@@ -34,11 +34,11 @@ dan_dau_tu: Bộ lọc của anh mới lần ra: 80.000 tài khoản fan ảo đ
 // ------------------------------------------------------------
 === truong_phong_2810_video_lo_tay ===
 # ngay:28 # gio:08:00 # noi:phong_dung_phim
-_8 giờ sáng. Cả công ty đã biết: 2 giờ 10 đêm qua, fanpage công ty tự đăng một video lạ tên "Thai_final_v12". Những đoạn cắt ghép {quan_ly_idol} cầm hai điện thoại, ngủ gục trong xe, cười một mình. Dòng chữ cuối: "Anh có biết không?"_
-_Video nằm trên trang 6 phút, khoảng 2.000 lượt xem, rồi {it} gỡ. {editor} ngồi trước màn hình, mặt trắng bệch. Đây là video tỏ tình._
+_8 giờ sáng. Cả công ty đã biết: 2 giờ 10 đêm qua, kênh của {editor} tự đăng bản nháp video "16 năm" của {editor}. Chưa xong, nhạc tạm, giữa video có một đoạn dài toàn cảnh {quan_ly_idol} cầm hai điện thoại, ngủ gục trong xe, cười một mình, lấy nhầm từ thư mục riêng._
+_Video nằm trên kênh 6 phút, khoảng 2.000 lượt xem, rồi bị gỡ. {editor} ngồi trước màn hình, mặt trắng bệch. Ai xem đoạn đó cũng hiểu._
 editor: Em… em bấm nhầm tài khoản. Em… *(không nói tiếp được)*
 * [🗑️ "Anh nhận là lỗi của phòng."]
-    _Bạn đăng một dòng lên fanpage: "Video thử nghiệm của phòng Sản xuất, đăng nhầm lúc 2:10. Xin lỗi." Ký tên: {truong_phong}._
+    _Bạn đăng một dòng lên fanpage công ty: "Bản nháp '16 năm' của phòng Sản xuất bị đăng nhầm lúc 2:10. Lỗi quy trình của phòng. Xin lỗi." Ký tên: {truong_phong}._
     ~ qh("editor", 20)
     ~ tp_ghe(-3)
     editor: Anh… nhận lỗi giùm em hả?

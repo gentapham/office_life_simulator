@@ -19,14 +19,14 @@ _Mốc 4: 800.000 người theo dõi. Số hiện tại: {nguoi_theo_doi}._
     _Đạt. Bạn không mời bánh mì. Bạn đi xuống tầng 1, bắt tay từng người. Tay ai cũng lạnh vì máy lạnh, nhưng ai cũng cười._
     ~ gd_uy(5)
 }
-_Trên bàn có tờ báo cáo của {it}: 2:10 sáng nay, fanpage công ty tự đăng một video tên "Thai_final_v12". Toàn cảnh {quan_ly_idol} cười, {quan_ly_idol} ngủ gục trong xe, {quan_ly_idol} cầm hai điện thoại. Cuối video: "Em thích anh. — Cú." Video nằm trên trang 6 phút, khoảng 2.000 lượt xem, rồi {it} gỡ._
+_Trên bàn có tờ báo cáo của {it}: 2:10 sáng nay, kênh của {editor} tự đăng bản nháp video "16 năm" của {editor}. Chưa xong, nhạc tạm, giữa video có cả một đoạn dài toàn cảnh {quan_ly_idol}, lấy nhầm từ thư mục riêng. Video nằm trên kênh 6 phút, khoảng 2.000 lượt xem, rồi bị gỡ. Bản chính vẫn chưa xong._
 _Cùng lúc, {dan_dau_tu} gõ cửa: bộ lọc số liệu của ông lần ra 80.000 tài khoản ảo đang theo dõi… {idol_het_thoi}._
 * [🗑️ Nhắn group công ty: "Chuyện riêng của nhân viên không ai được đăng lại. Anh nói một lần."]
     ~ qh("editor", 10)
     ~ gd_uy(5)
     _{editor} nhắn cho bạn đúng một chữ: "Dạ." Rồi thêm: "Cảm ơn anh."_
     _Hai nghìn người đã xem. Không gỡ được khỏi trí nhớ ai. Nhưng không ai trong công ty đăng lại._
-* [😠 Gọi {editor} lên: "Fanpage công ty không phải chỗ tỏ tình."]
+* [😠 Gọi {editor} lên: "Video của công ty mà lên kênh riêng của em à?"]
     ~ qh("editor", -15)
     ~ gd_uy(-5)
     editor: Em không bấm đăng. Em thề. *(ngáp không nổi)*

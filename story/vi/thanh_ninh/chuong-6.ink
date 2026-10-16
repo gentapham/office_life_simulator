@@ -6,7 +6,7 @@
 === thanh_ninh_2810_moc_4 ===
 # ngay:28 # gio:09:30 # noi:phong_giam_doc # bat_buoc
 _Mốc 4: 800.000 người theo dõi. Con số: {nguoi_theo_doi}._
-_2 giờ 10 đêm qua, fanpage công ty tự đăng một video lạ tên "Thai_final_v12": một người dựng phim tỏ tình với "anh quản lý". Video của {editor}, xuất nhầm. Nằm trên trang 6 phút, khoảng 2.000 lượt xem, rồi {it} gỡ._
+_2 giờ 10 đêm qua, kênh của {editor} tự đăng bản nháp video "16 năm" của {editor}, chưa xong. Giữa video có cả một đoạn dài toàn cảnh "anh quản lý" {quan_ly_idol}, lấy nhầm từ thư mục riêng. Nằm trên kênh 6 phút, khoảng 2.000 lượt xem, rồi bị gỡ._
 giam_doc: {thanh_ninh}! Cái video đêm qua là sao? Có người lưu lại rồi đấy. Em nói xem anh nên làm gì?
 * [😇 "Anh hỏi {editor} trước đi anh. Video của người ta mà."]
     giam_doc: … Ừ. Đúng. Gọi nó lên đây.

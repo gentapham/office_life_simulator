@@ -33,11 +33,11 @@ dan_dau_tu: Em ơi, anh lọc ra 80.000 nick ảo bình luận y chang nhau. Ch�
 === ran_doc_2810_video_linh ===
 # ngay:28 # gio:02:10 # noi:hem_69
 _2 giờ 10 sáng. Bên kia vách, {hong_hot} hét lên một tiếng rồi đập vách rầm rầm: "Ông ơi dậy! Fanpage!"_
-_Fanpage công ty vừa đăng một video lạ, tên file "Thai_final_v12": 3 phút, nhạc piano, toàn cảnh {quan_ly_idol} làm việc, ảnh bìa là {quan_ly_idol} ngủ gục trong xe. Đoạn cuối có dòng chữ: "Anh có biết em đã dựng bao nhiêu đêm vì anh không?"_
-_Không phải video quảng cáo. Là video tỏ tình. Của {editor}. Bị xuất nhầm._
+_Kênh Diu-túp của {editor} vừa tự đăng một video: bản nháp video "16 năm" của {editor}, chưa xong, nhạc tạm. Giữa video có cả một đoạn dài lấy nhầm từ thư mục "{quan_ly_idol}": {quan_ly_idol} làm việc, {quan_ly_idol} ngủ gục trong xe, quay rất lâu, rất kỹ._
+_Ai xem đoạn đó cũng hiểu người quay nghĩ gì về người được quay. Bị xuất nhầm._
 editor: *(nhắn group, toàn chữ hoa)* ANH {it} ƠI GỠ GIÙM EM! GỠ GIÙM EM!
 ~ phat_hien(linh_thich_thai)
-* [🤝 Gọi điện đánh thức {it}, đọc mật khẩu fanpage {hong_hot} vừa đưa.]
+* [🤝 Gọi điện đánh thức {it}, rồi gọi {editor} dậy gỡ video.]
     ~ qh("editor", 20)
     ~ qh("it", 5)
     _Video bị gỡ sau 6 phút. 6 phút đủ để khoảng 2.000 người xem. Nhưng không đủ để thành drama._
@@ -47,7 +47,7 @@ editor: *(nhắn group, toàn chữ hoa)* ANH {it} ƠI GỠ GIÙM EM! GỠ GIÙM
 * [🐍 Tải video về trước khi bị gỡ.]
     ~ rd_tin_mat()
     ~ rd_nghi(5)
-    _Bạn có một video tỏ tình trong máy. Bạn chưa biết làm gì với nó. Bạn chỉ biết mình không nên làm gì với nó._
+    _Bạn có bản nháp đó trong máy, cả đoạn quay {quan_ly_idol}. Bạn chưa biết làm gì với nó. Bạn chỉ biết mình không nên làm gì với nó._
 * [🔥 Chia sẻ lại vào group Anti Sếp: "Ối dồi ôi, đám cá tươi tới rồi!"]
     ~ rd_tung_tin(12, 10)
     ~ qh("editor", -25)
