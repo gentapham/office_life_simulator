@@ -221,7 +221,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   hop(0.6, 1.4, 0.5, 0x3a3d44, -0.8, 0, 12.8); // máy chấm công
   chauCay(scene, -1.2, 13, vat[0]); chauCay(scene, 8.2, 13, vat[0]);
   // Cầu thang (góc sảnh)
-  for (let i = 0; i < 7; i++) hop(2.4, 0.3 + i * 0.5, 0.6, 0xbfb6a4, 6.5, 0, 2.1 - i * 0.6, { can: i > 1 });
+  for (let i = 0; i < 7; i++) hop(2.4, 0.3 + i * 0.5, 0.6, i % 2 ? 0xd9b48a : 0xcfa87c, 6.5, 0, 2.1 - i * 0.6, { can: i > 1 });
   // Khu làm việc chung
   BAN_CHUNG.forEach((b, i) => banLamViec(scene, b.x, b.z, vat[0], denDem, i % 3 === 0));
   bangTrang(scene, -19.85, 1.4, 6, Math.PI / 2);
@@ -270,8 +270,8 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // Sản xuất
   hop(3, 0.75, 1.2, 0xd8c7a3, 14, y2, 10.6, { tang: 1 }); manHinh(scene, 14, y2 + 0.75, 10.8, 0, denDem); bangTrang(scene, 19.85, y2 + 1.4, 8, -Math.PI / 2);
   // Chiếu nghỉ: cầu thang xuống và lên sân thượng
-  for (let i = 0; i < 4; i++) hop(2.4, 0.2 + i * 0.25, 0.5, 0xbfb6a4, 5, y2, 3.2 + i * 0.5, { tang: 1, can: false });
-  for (let i = 0; i < 6; i++) hop(2, 0.3 + i * 0.55, 0.5, 0xbfb6a4, 5, y2, 13.6 - i * 0.05, { tang: 1, can: false });
+  for (let i = 0; i < 4; i++) hop(2.4, 0.2 + i * 0.25, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 3.2 + i * 0.5, { tang: 1, can: false });
+  for (let i = 0; i < 6; i++) hop(2, 0.3 + i * 0.55, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 13.6 - i * 0.05, { tang: 1, can: false });
   hop(2.6, 0.3, 0.3, 0xbfb6a4, 5, y2, 13.75, { tang: 1 });
   // Sân thượng
   const y3 = Y(2);

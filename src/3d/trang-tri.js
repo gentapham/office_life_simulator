@@ -4,6 +4,7 @@
 import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { taoOto } from "./xe-3d.js";
+import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 
 const texCache = new Map();
 function tranh(key, w, h, ve) {
@@ -171,6 +172,80 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
     const dm = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.12, 0.12), vl(0xffd23a)); dm.position.y = 0.24; meo.add(dm);
     const ta = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.14, 0.04), vl(0xffd23a)); ta.position.set(0.07, 0.3, 0); meo.add(ta); meo.userData.tayVay = ta; add(meo); }
   for (const x of [-19.2, -8.8]) { tru(0.3, 0.55, 0x8a5a3a, x, y2, -4.8); cau(0.5, 0x3d7a34, x, y2 + 1.1, -4.8); cau(0.32, 0x4f8a3c, x, y2 + 1.55, -4.8); }
+
+  // ================= SƠN HÀNH LANG VÀ TƯỜNG PHÒNG =================
+  // sơn một mặt tường (trục 'z' hoặc 'x' tại tọa độ c), phía mat (+1/-1), từ tu tới den, chừa cửa;
+  // tren: màu phần trên, duoi: màu ốp chân tường (cao 1,1 m, có viền trắng), tang: tầng
+  const CAO_T = 3.82, CUA_CAO = 2.4;
+  // mọi mảng sơn gộp thành một khối duy nhất (màu nằm trong đỉnh), vẽ nhích lên trước mặt tường để không nhấp nháy
+  const lopSon = [];
+  const lop = (w, h, mau, x, y, z, rotY) => {
+    const g = new THREE.PlaneGeometry(w, h).toNonIndexed();
+    g.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), new THREE.Quaternion().setFromEuler(new THREE.Euler(0, rotY, 0)), new THREE.Vector3(1, 1, 1)));
+    const c = new THREE.Color(mau), n = g.attributes.position.count, a = new Float32Array(n * 3);
+    for (let k = 0; k < n; k++) { a[k * 3] = c.r; a[k * 3 + 1] = c.g; a[k * 3 + 2] = c.b; }
+    g.setAttribute("color", new THREE.BufferAttribute(a, 3)); lopSon.push(g);
+  };
+  const sonTuong = (truc, c, mat, tu, den, cua, tang, tren, duoi = null) => {
+    const y0 = tang * CAO, dm = c + mat * 0.128;
+
+    const rot = truc === "z" ? (mat > 0 ? 0 : Math.PI) : (mat > 0 ? Math.PI / 2 : -Math.PI / 2);
+    const mieng = (a, b, ya, yb, mau) => { if (b - a < 0.05 || yb - ya < 0.02) return; const g = (a + b) / 2; truc === "z" ? lop(b - a, yb - ya, mau, g, y0 + (ya + yb) / 2, dm, rot) : lop(b - a, yb - ya, mau, dm, y0 + (ya + yb) / 2, g, rot); };
+    const doan = []; let d = tu;
+    for (const [a, b] of [...cua].sort((p, q) => p[0] - q[0])) { if (a > d) doan.push([d, a]); d = b; }
+    if (d < den) doan.push([d, den]);
+    for (const [a, b] of doan) {
+      if (duoi) { mieng(a, b, 0.01, 1.1, duoi); mieng(a, b, 1.1, 1.16, 0xffffff); mieng(a, b, 1.16, CAO_T, tren); }
+      else mieng(a, b, 0.01, CAO_T, tren);
+    }
+    for (const [a, b] of cua) mieng(a, b, CUA_CAO, CAO_T, tren); // phần tường trên khung cửa
+  };
+  // hành lang lầu 1 (mặt bắc tường z = -6) và sảnh
+  sonTuong("z", -6, 1, -19.87, 19.87, [[-16, -14], [-7, -5], [0, 2], [7, 9], [15, 17]], 0, 0xffe6ef, 0x22305a);
+  sonTuong("x", -2, 1, -2, 14, [[3, 8]], 0, 0xfff4c2, 0xe8702a);      // sảnh, tường trái
+  sonTuong("x", 9, -1, -2, 14, [[3, 8]], 0, 0xfff4c2, 0xe8702a);      // sảnh, tường phải
+  sonTuong("z", 14, -1, -1.87, 8.87, [[0, 4]], 0, 0xfff4c2, 0xe8702a); // sảnh, tường mặt tiền
+  // khu làm việc chung: tường trong mặt tiền và vách giáp sảnh
+  sonTuong("z", 14, -1, -19.87, -2.13, [], 0, 0xffe0c7, 0x7b4bb3);
+  sonTuong("x", -2, -1, -2, 14, [[3, 8]], 0, 0xffe0c7, 0x7b4bb3);
+  // pantry: tường trong mặt tiền và vách giáp sảnh
+  sonTuong("x", 9, 1, -2, 14, [[3, 8]], 0, 0xdaf2b0, 0x2e8b57);
+  // hành lang lầu 2 (giữa tường z = -4 và z = 2)
+  sonTuong("z", -4, 1, -19.87, 19.87, [[-15, -13], [-5, -3], [5, 7], [15, 17]], 1, 0xfff0d6, 0x2fa39a);
+  sonTuong("z", 2, -1, -19.87, 19.87, [[-14, -12], [-3, -1], [2.5, 7.5], [13, 15]], 1, 0xd9f0ff, 0x2fa39a);
+  // tường bên trong từng phòng: cùng tông với mảng tường chính
+  const phong = (tang, x1, x2, z1, z2, mau, boMat = []) => {
+    if (!boMat.includes("tay")) sonTuong("x", x1, 1, z1 + 0.13, z2 - 0.13, [], tang, mau);
+    if (!boMat.includes("dong")) sonTuong("x", x2, -1, z1 + 0.13, z2 - 0.13, [], tang, mau);
+  };
+  phong(0, -20, -10, -14, -6, 0xfff7d6);   // kế toán
+  phong(0, -10, -2, -14, -6, 0xe2f7ec);    // HR
+  phong(0, -2, 4, -14, -6, 0x5a6684);      // server
+  phong(0, 4, 12, -14, -6, 0xeef0f3);      // kho
+  phong(1, -20, -8, -14, -4, 0x3f7466);    // giám đốc
+  phong(1, -8, 0, -14, -4, 0xffe6c4);      // phó giám đốc
+  phong(1, 0, 12, -14, -4, 0xe2f1fa);      // phòng họp
+  phong(1, 12, 20, -14, -4, 0xefe3fa);     // nghệ sĩ
+  phong(1, -20, -6, 2, 14, 0xffd6e6);      // studio
+  phong(1, -6, 2, 2, 14, 0x4a4d5a);        // dựng phim
+  phong(1, 8, 20, 2, 14, 0xfff6c8, ["dong"]); // sản xuất (tường phải có bảng trắng)
+  // tường sau của studio, phòng dựng, sản xuất (mặt nhìn vào phòng, phía hành lang z = 2)
+  sonTuong("z", 2, 1, -19.87, -6.13, [[-14, -12]], 1, 0xffd6e6);
+  sonTuong("z", 2, 1, -5.87, 1.87, [[-3, -1]], 1, 0x4a4d5a);
+  sonTuong("z", 2, 1, 8.13, 19.87, [[13, 15]], 1, 0xfff6c8);
+  // tường trước của các phòng lầu 2 dãy sau (mặt nhìn vào phòng, tường z = -4)
+  sonTuong("z", -4, -1, -19.87, -8.13, [[-15, -13]], 1, 0x3f7466);
+  sonTuong("z", -4, -1, -7.87, -0.13, [[-5, -3]], 1, 0xffe6c4);
+  sonTuong("z", -4, -1, 0.13, 11.87, [[5, 7]], 1, 0xe2f1fa);
+  sonTuong("z", -4, -1, 12.13, 19.87, [[15, 17]], 1, 0xefe3fa);
+  // tường trước các phòng lầu 1 dãy sau (tường z = -6, mặt nhìn vào phòng)
+  sonTuong("z", -6, -1, -19.87, -10.13, [[-16, -14]], 0, 0xfff7d6);
+  sonTuong("z", -6, -1, -9.87, -2.13, [[-7, -5]], 0, 0xe2f7ec);
+  sonTuong("z", -6, -1, -1.87, 3.87, [[0, 2]], 0, 0x5a6684);
+  sonTuong("z", -6, -1, 4.13, 11.87, [[7, 9]], 0, 0xeef0f3);
+
+  { const m = new THREE.Mesh(mergeGeometries(lopSon), new THREE.MeshLambertMaterial({ vertexColors: true, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 }));
+    m.userData.rieng = true; m.userData.khongCan = true; add(m); }
 
   // ================= BẢNG TÊN PHÒNG (gắn trên cửa, phía hành lang) =================
   const bienPhong = (so, ten, ghi, x, y, z, rotY) => dung(1.7, 0.46, new THREE.MeshLambertMaterial({ map: tranh("bp" + so, 544, 148, (g, w, h) => {
