@@ -18,6 +18,8 @@ if (typeof CanvasRenderingContext2D !== "undefined" && !CanvasRenderingContext2D
 }
 import { gopKhoi } from "./gop-khoi.js";
 import { gopNguoi } from "./toi-uu.js"; // gộp cả người thành một khối xương cứng (ít lượt vẽ)
+import { cheDoNhe } from "../cai-dat.js";
+const MAT_PX = cheDoNhe() ? 128 : 256;
 
 // ---------- Vật liệu dùng chung ----------
 const vlCache = new Map();
@@ -127,8 +129,8 @@ function veMat(nh) {
   const m = nh.mat || {};
   const key = JSON.stringify([nh.da, m, nh.toc?.[1]]);
   if (texCache.has("mat" + key)) return texCache.get("mat" + key);
-  const c = document.createElement("canvas"); c.width = c.height = 256;
-  const g = c.getContext("2d");
+  const c = document.createElement("canvas"); c.width = c.height = MAT_PX; // máy yếu: ảnh mặt 128 px cho nhẹ bộ nhớ
+  const g = c.getContext("2d"); g.scale(MAT_PX / 256, MAT_PX / 256);
   const da = new THREE.Color(nh.da), daToi = "#" + da.clone().multiplyScalar(0.78).getHexString();
   g.fillStyle = hex(nh.da); g.fillRect(0, 0, 256, 256);
   const mauMay = nh.toc ? hex(toiMau(nh.toc[1], nh.toc[1] > 0x909090 ? 0.6 : 1)) : "#2a2018";

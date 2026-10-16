@@ -12,10 +12,16 @@ import { VL_MAU_DINH, VL_MAU_DINH_2MAT } from "./gop-khoi.js";
 // ---------- Nhân vật: gộp thành một khối xương cứng ----------
 const hangDoi = [];
 // gọi khi tạo xong nhân vật ({ group, ... }); trả lại chính nó
-export function gopNguoi(o) { if (o?.group) hangDoi.push(o); return o; }
-export function xuLyHangDoi(toiDa = 16) {
-  for (let i = 0; i < toiDa && hangDoi.length; i++) { try { gopNguoiNgay(hangDoi.shift()); } catch (e) { console.warn("gopNguoi", e); } }
+// tuyChon.xuongRieng: mỗi khối là một xương riêng (khối tự xoay/di chuyển: đuôi mèo, cánh chim, mây trôi);
+//   khối gốc vẫn nằm trong cây (để code cũ xoay nó) nhưng không tự vẽ.
+// tuyChon.khongCat: không loại theo khung nhìn (các phần đi rất xa vị trí gốc)
+export function gopNguoi(o, tuyChon = {}) { if (o?.group) hangDoi.push([o, tuyChon]); return o; }
+// gộp dần, mỗi khung hình tối đa ~6 ms (máy nhanh xong trong vài khung hình đầu)
+export function xuLyHangDoi(ms = 6) {
+  const t0 = performance.now();
+  while (hangDoi.length && performance.now() - t0 < ms) { const [o, tc] = hangDoi.shift(); try { gopNguoiNgay(o, tc); } catch (e) { console.warn("gopNguoi", e); } }
 }
+export const conChoGop = () => hangDoi.length;
 
 const nuongDuoc = m => !m.map && !m.userData.dong && !m.transparent && !m.vertexColors && (m.isMeshLambertMaterial || m.isMeshBasicMaterial);
 const daNuong = m => m.vertexColors && !m.map && !m.transparent && (m.isMeshLambertMaterial || m.isMeshBasicMaterial);
@@ -46,7 +52,7 @@ function chuan(g, mau, xuong) {
   return g;
 }
 
-function gopNguoiNgay(o) {
+function gopNguoiNgay(o, { xuongRieng = false, khongCat = false } = {}) {
   const goc = o.group;
   if (!goc || goc.userData.daGopNguoi) return;
   goc.userData.daGopNguoi = true;
@@ -62,10 +68,11 @@ function gopNguoiNgay(o) {
       if (c.isMesh && !c.isSkinnedMesh && !c.isInstancedMesh && !c.children.length && !c.userData.rieng && c.renderOrder === 0 && c.layers.mask === 1 && c.geometry?.attributes.position) {
         const ms = Array.isArray(c.material) ? c.material : [c.material];
         if (!ms.some(khongGop)) {
-          const b = c.parent;
+          const b = xuongRieng ? c : c.parent;
           if (!soXuong.has(b)) { soXuong.set(b, xuong.length); xuong.push(b); }
           const ix = soXuong.get(b);
           const g0 = (c.geometry.index ? c.geometry.toNonIndexed() : c.geometry.clone()).applyMatrix4(_m.multiplyMatrices(nghich, c.matrixWorld));
+          for (const k of Object.keys(g0.morphAttributes)) delete g0.morphAttributes[k];
           const nhom = Array.isArray(c.material) ? (g0.groups.length ? g0.groups : [{ start: 0, count: g0.attributes.position.count, materialIndex: 0 }]) : [null];
           for (const gr of nhom) {
             const m = gr ? c.material[gr.materialIndex] : c.material; if (!m) continue;
@@ -97,12 +104,13 @@ function gopNguoiNgay(o) {
   if (dsHinh.some(g => !g)) { console.warn("gopNguoi: không gộp được"); return; }
   const hinh = mergeGeometries(dsHinh, true);
   if (!hinh) return;
-  for (const c of bo) c.parent.remove(c);
+  for (const c of bo) if (xuongRieng) c.layers.disableAll(); else c.parent.remove(c);
   const me = new THREE.SkinnedMesh(hinh, vls.length === 1 ? vls[0] : vls);
   goc.add(me); me.updateMatrixWorld(true);
   me.bind(new THREE.Skeleton(xuong));
   hinh.computeBoundingSphere();
   me.boundingSphere = hinh.boundingSphere.clone(); me.boundingSphere.radius += 0.6; // tay chân vung ra khi cử động
+  if (khongCat) me.frustumCulled = false;
   me.userData.nguoiGop = true;
   o.khoiGop = me;
 }
@@ -151,7 +159,7 @@ export function caiToiUu(game) {
   scene.onBeforeRender = function (r, s, cam, rt) {
     truoc?.call(this, r, s, cam, rt);
     if (cam !== camera) return; // lượt vẽ phụ (phản chiếu gương)
-    xuLyHangDoi(16);
+    xuLyHangDoi(hangDoi.length > 40 ? 12 : 6);
     // gương thật vẽ lại cả cảnh: chỉ bật khi đứng gần (không thì tấm kính vẽ sẵn phía sau hiện ra)
     cam.getWorldPosition(_p);
     for (const gu of guong) { gu.getWorldPosition(_g); gu.visible = _p.distanceToSquared(_g) < 64 && Math.abs(_p.y - _g.y) < 2.5; }

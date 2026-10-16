@@ -73,7 +73,12 @@ function xepAtlas(dsAnh, tiLe) {
   const theoTrang = new Map(), viTri = new Map();
   for (const t of dsAnh) { const k = khoaTrang(t); if (!theoTrang.has(k)) theoTrang.set(k, []); theoTrang.get(k).push(t); }
   for (const ds of theoTrang.values()) {
-    const kt = t => [Math.max(2, Math.round(t.image.width * tiLe)), Math.max(2, Math.round(t.image.height * tiLe))];
+    // ảnh rộng đúng nửa trang (biển hiệu 1024 px) thu lại vài px cho vừa hai ảnh một hàng kể cả viền đệm
+    const kt = t => {
+      const w = t.image.width * tiLe, h = t.image.height * tiLe, nua = RONG / 2 - DEM * 2;
+      const k = w > nua && w <= RONG / 2 + 1 ? nua / w : 1;
+      return [Math.max(2, Math.round(w * k)), Math.max(2, Math.round(h * k))];
+    };
     ds.sort((a, b) => kt(b)[1] - kt(a)[1] || kt(b)[0] - kt(a)[0]);
     const trang = []; let cur = null, x = 0, y = 0, cao = 0;
     const moi = () => { cur = { ds: [], cao: 0 }; trang.push(cur); x = 0; y = 0; cao = 0; };

@@ -8,23 +8,29 @@ import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { am } from "../am-thanh-game.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+import { cheDoNhe } from "../cai-dat.js";
 
 const CAO = 4, TC = 3.82, NUA = 0.125;
 const FONT = "'Be Vietnam Pro', system-ui, sans-serif";
 
 // ================= ẢNH GHÉP (ATLAS) =================
 class Atlas {
-  constructor(w, h) { this.c = document.createElement("canvas"); this.c.width = w; this.c.height = h; this.g = this.c.getContext("2d"); this.ke = []; this.day = 0; this.vung = new Map(); }
+  // máy yếu: ảnh ghép vẽ ở nửa độ phân giải (toạ độ xếp chỗ vẫn tính theo kích thước gốc) cho đỡ tốn bộ nhớ
+  constructor(w, h, tiLe = cheDoNhe() ? 0.5 : 1) {
+    this.w = w; this.h = h; this.s = tiLe;
+    this.c = document.createElement("canvas"); this.c.width = Math.round(w * tiLe); this.c.height = Math.round(h * tiLe);
+    this.g = this.c.getContext("2d"); this.g.scale(tiLe, tiLe); this.ke = []; this.day = 0; this.vung = new Map();
+  }
   // xếp theo kệ: chọn kệ có chiều cao vừa nhất còn chỗ, không có thì mở kệ mới
   lay(ten, w, h, ve) {
     if (this.vung.has(ten)) return this.vung.get(ten);
-    const P = 4, W = this.c.width, H = this.c.height;
+    const P = 4, W = this.w, H = this.h, e = 0.5 / this.s;
     let ke = null;
     for (const k of this.ke) if (k.h >= h && k.x + w <= W && (!ke || k.h < ke.h)) ke = k;
     if (!ke) { if (this.day + h > H) { console.warn("Ảnh ghép đầy, bỏ:", ten); return this.vung.values().next().value; } ke = { y: this.day, h, x: 0 }; this.ke.push(ke); this.day += h + P; }
     const x = ke.x, y = ke.y; ke.x += w + P;
     const g = this.g; g.save(); g.translate(x, y); g.beginPath(); g.rect(0, 0, w, h); g.clip(); ve(g, w, h); g.restore();
-    const uv = { u0: (x + 0.5) / W, u1: (x + w - 0.5) / W, v0: 1 - (y + h - 0.5) / H, v1: 1 - (y + 0.5) / H };
+    const uv = { u0: (x + e) / W, u1: (x + w - e) / W, v0: 1 - (y + h - e) / H, v1: 1 - (y + e) / H };
     this.vung.set(ten, uv); return uv;
   }
 }
@@ -809,7 +815,7 @@ export function themChiTietCongTy(nhom, hop, vat, { banChung = [] } = {}) {
   K(0.5, 1.8, 0.36, 0xf2f2ee, 3.45, 0, -13.5); K(0.4, 0.5, 0.37, 0xc9ccd0, 3.45, 1.1, -13.5); K(0.44, 0.04, 0.37, 0x3fb8e0, 3.45, 1.66, -13.5); // máy lạnh tủ đứng
   P(0.4, 0.2, layBien("khong_rut", 200, 100), VL_BIEN, 0.7, 0.55, -12.69);
   binhChuaChay(-1.6, 0, -13.5, 0x1c1c1f);
-  { const lap = new THREE.Group(); lap.position.set(2.7, 0.73, -7.2); // nắp laptop trên bàn IT
+  { const lap = new THREE.Group(); lap.position.set(2.7, 0.73, -7.2); lap.rotation.y = Math.PI; // nắp laptop trên bàn IT (màn quay về ghế của Bảo phía trong phòng)
     const nap = new THREE.Group(); nap.position.set(0, 0, -0.175); nap.rotation.x = -0.25; lap.add(nap);
     const n1 = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.32, 0.012), vl(0x222222)); n1.position.y = 0.16; nap.add(n1);
     const mh = new THREE.Mesh(hinhPhang(0.46, 0.28, layMan("laptop_it")), VL_MAN); mh.position.set(0, 0.165, 0.007); nap.add(mh); them(lap); }

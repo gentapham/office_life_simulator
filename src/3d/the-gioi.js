@@ -96,7 +96,7 @@ export const CHO_NGOI = {
   con_ong_chau_cha: { tang: 0, ...NGOI(BAN_CHUNG[9]) },
   // ngoi: true = ngồi ghế gõ máy; nghi: true = ngồi chơi (tay để trên đùi, lâu lâu nâng ly); yNgoi: hạ thân bao nhiêu (mặt đệm 0,51 m → −0,36)
   ke_toan: { tang: 0, x: -15, z: -11.4, ngoi: true }, hr: { tang: 0, x: -6, z: -11.5, ngoi: true },
-  it: { tang: 0, x: 2.88, z: -6.52, huong: Math.PI, ngoi: true },                // bàn laptop cạnh cửa phòng server
+  it: { tang: 0, x: 2.8, z: -7.95, huong: 0, ngoi: true },                      // bàn laptop phòng server, quay mặt ra cửa
   chi_dai: { tang: 0, x: 8, z: -10.3, ngoi: true },                             // bàn điều phối trong kho sự kiện, nhìn ra cửa
   bac_bao_ve: { tang: 0, x: -6.9, z: 23.98, huong: 0.25, ngoi: true, nghi: true, yNgoi: -0.42 }, // ghế nhựa dưới cửa sổ chòi, bàn trà trước mặt, nhìn ra cổng
   cho: { tang: 0, x: -3.6, z: 25.4, huong: 0.9 },
@@ -270,6 +270,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   hop(2.6, 2.2, 0.1, 0x8a7a64, 8, 0, -13.85);
   // bàn điều phối sự kiện của Chị Đại: giữa kho, quay mặt ra cửa
   banDon(scene, 8, -9.45, 1.6, 0.8, 0x7a5a3a, 0, vat[0]); manHinh(scene, 8.15, 0.76, -9.3, Math.PI, denDem, "chart2");
+  hop(0.46, 0.022, 0.15, 0x2a2a2a, 8, 0.76, -9.68, { can: false }); hop(0.06, 0.022, 0.1, 0x2a2a2a, 8.36, 0.76, -9.68, { can: false }); // bàn phím, chuột
   gheXoay(scene, CHO_NGOI.chi_dai, vat[0], { mau: 0x7d1424 });
   // IT: ghế xoay trước bàn laptop (bàn dựng trong noi-that.js)
   gheXoay(scene, CHO_NGOI.it, vat[0], { mau: 0x2a2c31, tayVin: false });
@@ -303,6 +304,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   gheDaoDien(scene, CHO_NGOI.idol_het_thoi, vat[1]);
   // Hành lang tầng 2: bàn trợ lý
   hop(2.2, 0.75, 0.9, 0xf5b9cf, -10.8, y2, -0.6, { tang: 1 }); manHinh(scene, -10.6, y2 + 0.75, -0.82, 0, denDem, "mac_dinh");
+  hop(0.46, 0.022, 0.15, 0xf6f6f2, -10.75, y2 + 0.75, -0.36, { tang: 1, can: false }); hop(0.06, 0.022, 0.1, 0xf26fa6, -11.12, y2 + 0.75, -0.36, { tang: 1, can: false }); // bàn phím trắng, chuột hồng
   gheXoay(scene, CHO_NGOI.thanh_ninh, vat[1], { mau: 0xf26fa6 });
   // Studio
   const phong = new THREE.Mesh(new THREE.PlaneGeometry(10, 3.4), vl(0xf7a8c8)); phong.position.set(-13, y2 + 1.7, 13.8); phong.rotation.y = Math.PI; scene.add(phong);

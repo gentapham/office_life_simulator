@@ -2,6 +2,7 @@
 // rắc vụn bánh mì thì sà xuống), bể cá ở sảnh (cá bơi, ngắm được).
 import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
+import { gopNguoi } from "./toi-uu.js";
 
 const hop = (w, h, d, c, x = 0, y = 0, z = 0) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof c === "number" ? vl(c) : c); m.position.set(x, y, z); return m; };
 
@@ -59,6 +60,10 @@ export class DongVat {
     for (const [z, h] of [[-0.35, 0.3], [0.3, 0.22], [0.05, 0.18]]) be.add(hop(0.03, h, 0.03, 0x2e8b57, 0.05, 0.86 + h / 2, z)); // rong
     be.add(hop(0.5, 0.05, 1.2, 0x2a2c31, 0, 1.38, 0));                  // nắp
     this.ca = [0xff8a3a, 0xffd23a, 0xff4f6a, 0x3fa8ff, 0xffffff].map((c, i) => { const f = new THREE.Group(); f.add(hop(0.03, 0.04, 0.08, c)); const vay = hop(0.005, 0.04, 0.03, c, 0, 0, -0.05); f.add(vay); f.userData = { pha: i * 1.3, y: 0.95 + (i % 3) * 0.12, vay }; be.add(f); return f; });
+    // mỗi con vật (và cả bể cá) gộp thành một khối xương cứng: mỗi khối nhỏ là một xương, vẫn cử động như cũ
+    for (const m of this.meo) gopNguoi({ group: m.g }, { xuongRieng: true });
+    for (const c of this.chim) gopNguoi({ group: c.g }, { xuongRieng: true });
+    gopNguoi({ group: be }, { xuongRieng: true });
     this.be = be; vat[0].push({ minX: -1.82, maxX: -1.28, minZ: 1.58, maxZ: 2.82 });
     this.vung = 0;
   }

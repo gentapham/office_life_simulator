@@ -1,5 +1,6 @@
 // Bầu trời và thời tiết: vòm trời theo giờ, mặt trời, mặt trăng, sao, mây trôi, mưa, sét, sương mù, đường ướt.
 import * as THREE from "three";
+import { gopNguoi } from "./toi-uu.js";
 
 // Các kiểu thời tiết. may: số đám mây, mauMay: độ tối của mây, mua: số hạt mưa, set: có sét
 export const THOI_TIET = {
@@ -72,7 +73,9 @@ export class BauTroi {
 
     // Mây: mỗi đám là nhiều khối đa giác gộp lại
     this.vlMay = new THREE.MeshLambertMaterial({ color: 0xffffff, emissive: 0x777777, flatShading: true, fog: false });
+    this.vlMay.userData.dong = true; // màu đổi theo giờ
     this.may = [];
+    const nhomMay = new THREE.Group(); g.add(nhomMay);
     for (let i = 0; i < 60; i++) {
       const parts = [];
       const n = 4 + Math.floor(Math.random() * 5);
@@ -88,8 +91,10 @@ export class BauTroi {
       m.position.set(Math.cos(goc) * kc, 85 + Math.random() * 45, Math.sin(goc) * kc);
       m.rotation.y = Math.random() * Math.PI;
       m.userData.toc = 2 + Math.random() * 3;
-      g.add(m); this.may.push(m);
+      nhomMay.add(m); this.may.push(m);
     }
+    // cả bầu mây một lượt vẽ: mỗi đám mây là một xương (trôi, ẩn bằng cách thu nhỏ)
+    gopNguoi({ group: nhomMay }, { xuongRieng: true, khongCat: true });
 
     // Mưa: các vạch rơi quanh camera
     const N = 2600;
@@ -150,7 +155,7 @@ export class BauTroi {
     this.vlMay.color.copy(mix(0x1d2236, 0xffffff, sangMay)).lerp(new THREE.Color(0xf6a070), hoangHon * 0.5 * tt.mauMay);
     this.vlMay.emissive.copy(this.vlMay.color).multiplyScalar(0.45 + loe * 0.5);
     this.may.forEach((m, i) => {
-      m.visible = i < soMay;
+      m.scale.setScalar(i < soMay ? 1 : 1e-4); // đã gộp chung một khối: ẩn bằng cách thu nhỏ
       m.position.x += m.userData.toc * dt * (tt.mua ? 2 : 1);
       if (m.position.x > 330) m.position.x = -330;
       m.position.y = tt.mua ? 70 + (i % 5) * 4 : 85 + (i % 7) * 6;

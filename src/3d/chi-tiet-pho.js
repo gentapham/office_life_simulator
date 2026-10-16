@@ -6,13 +6,16 @@ import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { vl, taoNguoiLaiXe } from "./nhan-vat-3d.js";
 import { taoXeMay, MAU_XE } from "./xe-3d.js";
+import { cheDoNhe } from "../cai-dat.js";
 
 // ---------- Ảnh vẽ bằng canvas ----------
 const texCache = new Map();
-export function veTex(key, w, h, ve, { lap = false, srgb = true } = {}) {
+// tiLe < 1: vẽ ảnh nhỏ hơn (toạ độ vẽ vẫn như cũ) cho máy yếu
+export function veTex(key, w, h, ve, { lap = false, srgb = true, tiLe = 1 } = {}) {
   if (texCache.has(key)) return texCache.get(key);
-  const c = document.createElement("canvas"); c.width = w; c.height = h;
-  ve(c.getContext("2d"), w, h);
+  const c = document.createElement("canvas"); c.width = Math.round(w * tiLe); c.height = Math.round(h * tiLe);
+  const g = c.getContext("2d"); if (tiLe !== 1) g.scale(tiLe, tiLe);
+  ve(g, w, h);
   const t = new THREE.CanvasTexture(c); if (srgb) t.colorSpace = THREE.SRGBColorSpace;
   if (lap) t.wrapS = t.wrapT = THREE.RepeatWrapping;
   texCache.set(key, t); return t;
@@ -326,7 +329,7 @@ export function texDenCaoOc(hat) {
     let s = hat; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
     g.fillStyle = "#000"; g.fillRect(0, 0, 256, 256);
     for (let i = 0; i < 16; i++) for (let j = 0; j < 16; j++) if (r() < 0.38) { g.fillStyle = r() < 0.6 ? "#ffd890" : "#cfe2f2"; g.fillRect(i * 16 + 2, j * 16 + 3, 12, 10); }
-  }, { lap: true });
+  }, { lap: true, tiLe: cheDoNhe() ? 0.5 : 1 });
 }
 export function texDenChungCu(hat) {
   return veTex("dcc" + hat, 512, 512, (g) => {
@@ -338,7 +341,7 @@ export function texDenChungCu(hat) {
       g.fillStyle = "rgba(0,0,0,.6)"; for (let k = 0; k < 6; k++) g.fillRect(x + 10 + k * 8, y + 12, 2, 34); // song sắt chuồng cọp
       g.fillRect(x + 14, y + 20, 8, 14); g.fillRect(x + 30, y + 20, 8, 12); // quần áo phơi che bớt
     }
-  }, { lap: true });
+  }, { lap: true, tiLe: cheDoNhe() ? 0.5 : 1 });
 }
 
 // ---------- Dựng chi tiết phố ----------
