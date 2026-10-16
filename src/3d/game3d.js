@@ -292,8 +292,8 @@ export class Game3D {
   veCho(n) {
     this.doiSong?.huyNpc(n);
     const c = n.cho; n.diDao = null; n.nv.vietTay = 0; n.ngu = false; n.tuanTra = null; n.tt = "ban"; n.nv.group.visible = true;
-    n.nv.ngoi = !!c.ngoi;
-    n.nv.group.position.set(c.x, c.tang * CAO_TANG - (c.ngoi ? 0.36 : 0), c.z); n.tang = c.tang; n.nv.group.rotation.y = n.goc0;
+    n.nv.ngoi = c.ngoi ? (c.nghi ? "nghi" : true) : false; // ghế bàn máy: gõ phím; ghế bành, sofa, ghế nhựa: ngồi chơi
+    n.nv.group.position.set(c.x, c.tang * CAO_TANG + (c.ngoi ? c.yNgoi ?? -0.36 : 0), c.z); n.tang = c.tang; n.nv.group.rotation.y = n.goc0;
   }
   dungDay(n) { n.nv.ngoi = false; n.nv.group.position.y = n.tang * CAO_TANG; }
   tang0(n) { return n.cho.tang; }
@@ -389,10 +389,12 @@ export class Game3D {
       if (d < 1.3 && d < dMin) { dMin = d; gan = { loai: "do_vat", v, nhan: v.nhan }; }
     }
     // ghế trống gần đó: ngồi xuống
+    // (ghế cà phê cóc nằm sau dãy bàn thấp có rào va chạm: với xa hơn một chút)
     if (this.vai !== "cho") for (const gh of this.doiSong.ghe) {
-      if (gh.tang !== this.tang || Math.abs(gh.x - this.p.x) > 1.4 || Math.abs(gh.z - this.p.z) > 1.4) continue;
+      const tam = gh.tam ?? 1.35;
+      if (gh.tang !== this.tang || Math.abs(gh.x - this.p.x) > tam + 0.05 || Math.abs(gh.z - this.p.z) > tam + 0.05) continue;
       const d = Math.hypot(gh.x - this.p.x, gh.z - this.p.z) + 0.05; // cùng khoảng cách thì nhường người / đồ vật
-      if (d < 1.35 && d < dMin && this.gheTrongChoNguoiChoi(gh)) { dMin = d; gan = { loai: "ghe", ghe: gh, nhan: gh.chu === this.vai ? "Ngồi vào bàn của mình" : "Ngồi xuống" }; }
+      if (d < tam && d < dMin && this.gheTrongChoNguoiChoi(gh)) { dMin = d; gan = { loai: "ghe", ghe: gh, nhan: gh.chu === this.vai ? "Ngồi vào bàn của mình" : "Ngồi xuống" }; }
     }
     const dv = this.dongVat.timGan(this.p, this.tang);
     if (dv) { const d = dv.loai === "chim" ? 1.5 : 0; if (d < dMin) { dMin = d; gan = { loai: "do_vat", v: dv, nhan: dv.nhan }; } }
@@ -428,7 +430,9 @@ export class Game3D {
   // ---------- Ngồi ghế ----------
   gheTrongChoNguoiChoi(gh) {
     if (!this.doiSong.gheTrong(gh)) return false;
-    if (gh.loai === "tra_da") for (const nv of this.giaoThong.dungYen || []) if (nv.group.visible && Math.hypot(nv.group.position.x - gh.x, nv.group.position.z - gh.z) < 0.35) return false;
+    // ghế ngoài phố (trà đá, cà phê cóc, ghế nhựa trong hẻm): khách qua đường đang ngồi thì thôi
+    // (khách đang ẩn vì ở xa vẫn tính là có chỗ nếu tới giờ ngồi: _cho.an chỉ đổi khi người chơi đi khuất, không hiện chồng lên người chơi)
+    if (gh.pho) for (const nv of this.giaoThong.dungYen || []) if ((nv._cho ? !nv._cho.an : nv.group.visible) && Math.hypot(nv.group.position.x - gh.x, nv.group.position.z - gh.z) < 0.35) return false;
     return true;
   }
   ngoiXuong(gh) {
@@ -443,8 +447,9 @@ export class Game3D {
   datLamViec(co) {
     if (!this.ngoiGhe) return;
     this.lamViec = co; this._tLV = 0;
-    this.tay.datGo?.(co);
-    this.than.ngoi = co ? true : "nghi";
+    const goPhim = co && !this.ngoiGhe.nghi; // ghế không có bàn phím (ghế trực cổng, sofa, ghế bành): làm việc mà không gõ máy
+    this.tay.datGo?.(goPhim);
+    this.than.ngoi = goPhim ? true : "nghi";
     if (co) this.pitch = Math.min(this.pitch, -0.2);
   }
   // bỏ trạng thái ngồi (không tìm chỗ đứng: dùng khi dịch chuyển đi nơi khác)
@@ -459,7 +464,7 @@ export class Game3D {
     const vat = this.theGioi.vat[this.tang];
     const trong = (x, z) => !vat.some(b => x > b.minX - BAN_KINH && x < b.maxX + BAN_KINH && z > b.minZ - BAN_KINH && z < b.maxZ + BAN_KINH)
       && !this.npc.some(n => n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.6);
-    for (const kc of [0.75, 1.05, 1.4]) for (const lech of [Math.PI, Math.PI / 2, -Math.PI / 2, 0.75 * Math.PI, -0.75 * Math.PI, 0]) {
+    for (const kc of [0.75, 1.05, 1.4, 1.9, 2.4]) for (const lech of [Math.PI, Math.PI / 2, -Math.PI / 2, 0.75 * Math.PI, -0.75 * Math.PI, 0]) {
       const a = gh.huong + lech, x = gh.x + Math.sin(a) * kc, z = gh.z + Math.cos(a) * kc;
       if (trong(x, z)) { this.p.x = x; this.p.z = z; am.phat("ghe", gh.x, gh.z); return; }
     }
@@ -558,7 +563,7 @@ export class Game3D {
     // ngồi làm việc ở bàn mình: tiếng gõ phím, báo cho main.js mỗi giây
     if (this.lamViec && this.ngoiGhe && !this.khoa) {
       this._tLV += dt;
-      if (Math.random() < dt * 5) am.phat("go_phim", this.p.x, this.p.z);
+      if (!this.ngoiGhe.nghi && Math.random() < dt * 5) am.phat("go_phim", this.p.x, this.p.z);
       if (this._tLV >= 1) { const s = Math.floor(this._tLV); this._tLV -= s; this.onLamViec?.(s); }
     }
     if (!this.khoa) this.capNhatTuanTra(dt);

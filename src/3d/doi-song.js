@@ -3,7 +3,7 @@
 // phòng họp, ghế chờ, sân thượng). Đường đi tìm trên lưới dựng từ chính các khối va chạm của từng tầng nên không xuyên
 // tường hay đồ đạc. Nhân vật đang do truyện điều khiển (daDoi) thì không đụng tới.
 import * as THREE from "three";
-import { CHO_NGOI, CAO_TANG } from "./the-gioi.js";
+import { CHO_NGOI, CAO_TANG, GHE_LE } from "./the-gioi.js";
 import { am } from "../am-thanh-game.js";
 import { THEO_MA } from "../nhan-vat.js";
 import { chonLoi, chonHoiThoai, cauAlo, cauGheCuaTui, cauChoQua } from "../loi-noi-nho.js";
@@ -67,10 +67,12 @@ class BongBong {
 
 // ---------- Ghế ngồi được (cho người chơi và cho đồng nghiệp đi nghỉ) ----------
 // y: hạ thân xuống bao nhiêu khi ngồi; loai: ban (bàn có máy tính), pantry, hop (phòng họp), sofa, cho (ghế chờ), tra_da...
-export function taoDsGhe() {
+export function taoDsGhe(choNgoiPho = []) {
   const ds = [];
-  const them = (tang, x, z, huong, y, loai, chu = null) => ds.push({ tang, x, z, huong, y, loai, chu, id: ds.length });
-  for (const [ma, c] of Object.entries(CHO_NGOI)) if (c.ngoi) them(c.tang, c.x, c.z, c.huong ?? 0, -0.36, "ban", ma);
+  const them = (tang, x, z, huong, y, loai, chu = null, them_ = null) => ds.push({ tang, x, z, huong, y, loai, chu, id: ds.length, ...them_ });
+  // chỗ ngồi riêng của từng người (bàn làm việc, ghế giám đốc, sofa phòng nghệ sĩ, ghế trực của bác bảo vệ...)
+  for (const [ma, c] of Object.entries(CHO_NGOI)) if (c.ngoi) them(c.tang, c.x, c.z, c.huong ?? 0, c.yNgoi ?? -0.36, "ban", ma, c.nghi ? { nghi: true } : null);
+  for (const c of GHE_LE) them(c.tang, c.x, c.z, c.huong, c.y, c.loai, null, { nghi: !!c.nghi });
   for (const [x, z] of [[12, 6], [16, 6]]) for (const dx of [-0.7, 0.7]) { them(0, x + dx, z + 0.9, PI, -0.36, "pantry"); them(0, x + dx, z - 0.9, 0, -0.36, "pantry"); }
   them(0, -7.4, -9.5, PI, -0.36, "khach"); them(0, -4.6, -9.5, PI, -0.36, "khach");     // ghế khách phòng HR
   for (let i = 0; i < 3; i++) them(0, -0.7 + i * 0.6, 4.2, 0, -0.36, "cho");            // ghế chờ sảnh
@@ -79,8 +81,12 @@ export function taoDsGhe() {
   them(1, 16, 0.5, PI, -0.36, "cho"); them(1, 16.7, 0.5, PI, -0.36, "cho");              // ghế chờ hành lang tầng 2
   for (const [x, z] of [[-2, 6], [-1, 6.6], [-3, 6.6]]) them(2, x, z, PI, -0.36, "san_thuong");
   // ghế nhựa quán trà đá vỉa hè
-  for (const x of [-120, -86, -52, -14, 22, 76, 112]) { them(0, x - 0.6, 43.4, PI / 2, -0.43, "tra_da"); them(0, x + 0.6, 43.4, -PI / 2, -0.43, "tra_da"); them(0, x, 43.95, PI, -0.43, "tra_da"); }
-  for (const z of [-40, 0, 64, 100]) { them(0, 44.8, z, PI / 2, -0.43, "tra_da"); them(0, 46, z, -PI / 2, -0.43, "tra_da"); them(0, 45.4, z + 0.55, PI, -0.43, "tra_da"); }
+  const P = { pho: true, nghi: true };
+  for (const x of [-120, -86, -52, -14, 22, 76, 112]) { them(0, x - 0.6, 43.4, PI / 2, -0.43, "tra_da", null, P); them(0, x + 0.6, 43.4, -PI / 2, -0.43, "tra_da", null, P); them(0, x, 43.95, PI, -0.43, "tra_da", null, P); }
+  for (const z of [-40, 0, 64, 100]) { them(0, 44.8, z, PI / 2, -0.43, "tra_da", null, P); them(0, 46, z, -PI / 2, -0.43, "tra_da", null, P); them(0, 45.4, z + 0.55, PI, -0.43, "tra_da", null, P); }
+  // ghế nhựa thấp quán cà phê cóc, ghế nhựa trước nhà trong hẻm (thanh-pho.js dựng, ghi vào pho.choNgoi)
+  // cà phê cóc nằm sau dãy bàn thấp có rào va chạm nên tầm với (tam) xa hơn
+  for (const c of choNgoiPho) them(0, c.x, c.z, c.huong, -0.42, c.loai === "caPhe" ? "ca_phe_coc" : "ghe_hem", null, { ...P, tam: c.loai === "caPhe" ? 1.95 : 1.35 });
   return ds;
 }
 
@@ -112,7 +118,7 @@ export class DoiSong {
     this.hoi = [];       // các cuộc tán gẫu đang diễn ra
     this.hen = [];       // việc hẹn giờ nhỏ (đặt ly xuống, nhấc máy...)
     this.luoi = {};
-    this.ghe = taoDsGhe();
+    this.ghe = taoDsGhe(game.theGioi.pho?.choNgoi || []);
     this.tChuyen = 3; this.tKiem = 1; this.tCu = 1; this.tHoi = 6; this.tBarkSau = 0;
   }
 
@@ -309,8 +315,8 @@ export class DoiSong {
         for (let i = i0; i <= i1; i++) { const cx = x0 + (i + 0.5) * O; if (cx > a - BK && cx < b + BK) chan[j * nx + i] = 1; } }
     };
     for (const b of this.g.theGioi.vat[tang] || []) if (b.maxX > x0 && b.minX < x1 && b.maxZ > z0 && b.minZ < z1) danh(b.minX, b.maxX, b.minZ, b.maxZ);
-    // ghế bàn làm việc không có khối va chạm: vẫn tránh đi xuyên qua
-    for (const c of Object.values(CHO_NGOI)) if (c.ban && c.tang === tang) danh(c.x - 0.26, c.x + 0.26, c.z - 0.26, c.z + 0.26);
+    // ghế ngồi riêng (ghế bàn chung không có khối va chạm): vẫn tránh đi xuyên qua
+    for (const c of [...Object.values(CHO_NGOI), ...GHE_LE]) if ((c.ngoi || c.loai) && c.tang === tang) danh(c.x - 0.26, c.x + 0.26, c.z - 0.26, c.z + 0.26);
     return (this.luoi[tang] = { x0, z0, nx, nz, chan });
   }
   o(L, x, z) { const i = Math.floor((x - L.x0) / O), j = Math.floor((z - L.z0) / O); return i < 0 || j < 0 || i >= L.nx || j >= L.nz ? -1 : j * L.nx + i; }
@@ -499,7 +505,9 @@ export class DoiSong {
   // chỗ đứng cạnh bàn một người (cách 0,8 – 1,1 m, không vướng đồ)
   choDungCanh(m) {
     const L = this.luoiTang(m.tang), c = m.cho;
-    const thu = c.ban ? [[0.85, 0.15], [-0.85, 0.15], [0.6, 0.85], [-0.6, 0.85]] : [];
+    // người ngồi: đứng cạnh hông hoặc chếch sau lưng (mẫu tính cho ghế quay về −z, xoay theo hướng ghế)
+    const h = (c.huong ?? 0) - PI, ch = Math.cos(h), sh = Math.sin(h);
+    const thu = c.ngoi ? [[0.85, 0.15], [-0.85, 0.15], [0.6, 0.85], [-0.6, 0.85]].map(([x, z]) => [x * ch + z * sh, -x * sh + z * ch]) : [];
     for (let i = 0; i < 8; i++) { const a = (c.huong ?? 0) + i * PI / 4; thu.push([Math.sin(a) * 1.05, Math.cos(a) * 1.05]); }
     for (const [dx, dz] of thu) if (this.trong(L, c.x + dx, c.z + dz) && this.thay(L, [c.x + dx, c.z + dz], [c.x + dx * 0.4, c.z + dz * 0.4])) return [c.x + dx, c.z + dz];
     for (const [dx, dz] of thu) if (this.trong(L, c.x + dx, c.z + dz)) return [c.x + dx, c.z + dz];

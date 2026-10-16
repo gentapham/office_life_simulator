@@ -94,12 +94,24 @@ export const CHO_NGOI = {
   thuc_tap_sinh: { tang: 0, ...NGOI(BAN_CHUNG[3]) }, bien_kich: { tang: 0, ...NGOI(BAN_CHUNG[4]) }, designer: { tang: 0, ...NGOI(BAN_CHUNG[5]) },
   sales: { tang: 0, ...NGOI(BAN_CHUNG[6]) }, dan_dau_tu: { tang: 0, ...NGOI(BAN_CHUNG[7]) }, thanh_xin_nghi: { tang: 0, ...NGOI(BAN_CHUNG[8]) },
   con_ong_chau_cha: { tang: 0, ...NGOI(BAN_CHUNG[9]) },
-  ke_toan: { tang: 0, x: -15, z: -11.4, ngoi: true }, hr: { tang: 0, x: -6, z: -11.5, ngoi: true }, it: { tang: 0, x: 1, z: -11.8 },
-  chi_dai: { tang: 0, x: 8, z: -9 }, bac_bao_ve: { tang: 0, x: -5.4, z: 24.6, huong: 0.5 }, cho: { tang: 0, x: -3.6, z: 25.4, huong: 0.9 },
-  giam_doc: { tang: 1, x: -12.2, z: -11.8 }, thanh_ninh: { tang: 1, x: -12, z: -1.6 }, truong_phong: { tang: 1, x: 14, z: 9.5 },
-  editor: { tang: 1, x: -2, z: 10.2 }, idol_het_thoi: { tang: 1, x: 15, z: -8 }, quan_ly_idol: { tang: 1, x: 17.5, z: -10.5 },
-  sieu_nhan_hong: { tang: 1, x: -13, z: 9.5 },
+  // ngoi: true = ngồi ghế gõ máy; nghi: true = ngồi chơi (tay để trên đùi, lâu lâu nâng ly); yNgoi: hạ thân bao nhiêu (mặt đệm 0,51 m → −0,36)
+  ke_toan: { tang: 0, x: -15, z: -11.4, ngoi: true }, hr: { tang: 0, x: -6, z: -11.5, ngoi: true },
+  it: { tang: 0, x: 2.7, z: -6.52, huong: Math.PI, ngoi: true },                 // bàn laptop cạnh cửa phòng server
+  chi_dai: { tang: 0, x: 8, z: -10.3, ngoi: true },                             // bàn điều phối trong kho sự kiện, nhìn ra cửa
+  bac_bao_ve: { tang: 0, x: -6.9, z: 23.98, huong: 0.25, ngoi: true, nghi: true, yNgoi: -0.42 }, // ghế nhựa dưới cửa sổ chòi, bàn trà trước mặt, nhìn ra cổng
+  cho: { tang: 0, x: -3.6, z: 25.4, huong: 0.9 },
+  giam_doc: { tang: 1, x: -14.7, z: -11.75, huong: 0, ngoi: true },             // ghế da sau bàn giám đốc, nhìn ra cửa phòng
+  thanh_ninh: { tang: 1, x: -10.8, z: 0.36, huong: Math.PI, ngoi: true },       // bàn trợ lý ngoài hành lang, nhìn thẳng cửa phòng sếp
+  truong_phong: { tang: 1, x: 14, z: 9.55, huong: 0, ngoi: true },
+  editor: { tang: 1, x: -2, z: 10.15, huong: 0, ngoi: true },
+  idol_het_thoi: { tang: 1, x: 18.9, z: -8.95, huong: Math.PI / 2, ngoi: true, nghi: true }, // ghế đạo diễn trước gương trang điểm
+  quan_ly_idol: { tang: 1, x: 16.7, z: -12.68, huong: 0, ngoi: true, nghi: true },          // sofa tím phòng nghệ sĩ, hai cái điện thoại
+  sieu_nhan_hong: { tang: 1, x: -13, z: 10.6, huong: Math.PI, ngoi: true, nghi: true },      // ghế bành hồng trước máy quay, phông hồng sau lưng
 };
+// ghế ngồi được nhưng không của ai (người chơi ngồi thử được)
+export const GHE_LE = [
+  { tang: 1, x: -4.4, z: -11.65, huong: 0, y: -0.36, loai: "pho_gd" }, // ghế phó giám đốc: ghế trống mà ai cũng nhắm tới
+];
 
 // Tag "noi" của cảnh -> khu trong bản đồ. Địa điểm ngoài công ty đi qua cổng.
 export function khuCuaNoi(noi) {
@@ -191,8 +203,9 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   hop(4.4, 0.25, 3.6, 0x2f3c52, -8, 2.6, 22, { can: false });
   hop(2.2, 0.9, 0.06, 0x9fd3f2, -8, 1.1, 20.38, { can: false });
   hop(2.2, 0.9, 0.06, 0x9fd3f2, -8, 1.1, 23.62, { can: false }); // cửa sổ nhìn ra cổng
-  // chỗ ngồi của bác bảo vệ: trước chòi, nhìn ra cổng
+  // chỗ ngồi của bác bảo vệ: ghế nhựa tựa lưng sát chòi, bàn trà trước mặt, nhìn ra cổng
   hop(1, 0.75, 0.6, 0x7a5a3a, -6.9, 0, 24.6); // bàn trà
+  gheNhuaTua(scene, CHO_NGOI.bac_bao_ve, vat[0]);
   const amTra = new THREE.Mesh(new THREE.SphereGeometry(0.12, 6, 4), vl(0xece6da)); amTra.position.set(-6.9, 0.85, 24.6); scene.add(amTra);
   // Bãi xe máy
   for (let i = 0; i < 6; i++) xeMay(scene, 10 + i * 1.6, 23 + (i % 2) * 0.3, vat);
@@ -255,6 +268,11 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // Kho sự kiện
   for (let i = 0; i < 3; i++) { hop(2.6, 0.06, 0.8, 0x8a7a64, 8, 0.6 + i * 0.7, -13.4, { can: false }); hop(0.6, 0.5, 0.5, [0xe8702a, 0xf26fa6, 0x5b6b8c][i], 7.2 + i * 0.7, 0.66 + i * 0.7, -13.4, { can: false }); }
   hop(2.6, 2.2, 0.1, 0x8a7a64, 8, 0, -13.85);
+  // bàn điều phối sự kiện của Chị Đại: giữa kho, quay mặt ra cửa
+  banDon(scene, 8, -9.45, 1.6, 0.8, 0x7a5a3a, 0, vat[0]); manHinh(scene, 8.15, 0.76, -9.3, Math.PI, denDem, "chart2");
+  gheXoay(scene, CHO_NGOI.chi_dai, vat[0], { mau: 0x7d1424 });
+  // IT: ghế xoay trước bàn laptop (bàn dựng trong noi-that.js)
+  gheXoay(scene, CHO_NGOI.it, vat[0], { mau: 0x2a2c31, tayVin: false });
   // Toilet: dựng chi tiết trong noi-that.js (buồng, bồn cầu, bồn tiểu, lavabo, gương)
 
   // ---- Tầng 2 ----
@@ -263,28 +281,39 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   tuong(-20, 2, 20, 2, 1, [[-14, -12], [-3, -1], [2.5, 7.5], [13, 15]], trong);
   for (const x of [-6, 2, 8]) tuong(x, 2, x, 14, 1, [], trong);
   const y2 = Y(1);
-  // Giám đốc
-  hop(3.2, 0.8, 1.4, 0x5a3d2a, -14, y2, -10.6, { tang: 1 }); hop(0.8, 1.3, 0.8, 0x1d1f24, -14, y2, -12.2, { tang: 1 });
+  // Giám đốc: bàn gỗ lớn, ghế da lưng cao sau bàn, nhìn ra cửa phòng
+  hop(3.2, 0.8, 1.4, 0x5a3d2a, -14, y2, -10.6, { tang: 1 });
+  gheGiamDoc(scene, CHO_NGOI.giam_doc, vat[1], 0x241a16);
   hop(4, 2.4, 0.5, 0x6b4a2f, -14, y2, -13.6, { tang: 1 }); logoG(scene, -14, y2 + 3.1, -13.8);
   hop(2.4, 0.5, 1, 0x22305a, -18, y2, -6.5, { tang: 1 });
   // Phó giám đốc (ghế trống mà ai cũng nhắm tới)
-  hop(2.4, 0.75, 1.2, 0x8a6a4a, -4, y2, -10.6, { tang: 1 }); hop(0.8, 1.3, 0.8, 0xe8702a, -4, y2, -12, { tang: 1 });
+  hop(2.4, 0.75, 1.2, 0x8a6a4a, -4, y2, -10.6, { tang: 1 });
+  gheGiamDoc(scene, GHE_LE[0], vat[1], 0xd8642a);
   // Phòng họp
   hop(7, 0.75, 2.2, 0xd6cbb6, 6, y2, -9, { tang: 1 });
   for (let i = 0; i < 4; i++) for (const z of [-10.6, -7.4]) hop(0.6, 0.5, 0.6, 0x3a3d44, 3.6 + i * 1.6, y2, z, { tang: 1 });
   bangTrang(scene, 6, y2 + 1.4, -13.85, 0);
   // Phòng nghệ sĩ
-  hop(2.8, 0.5, 1, 0x7b4bb3, 16, y2, -12.8, { tang: 1 }); hop(1.4, 2, 0.1, 0xf2e6c8, 19.8, y2 + 0.3, -9, { tang: 1, can: false });
+  // sofa tím có tựa lưng, tay vịn (chỗ quản lý ngồi gọi điện)
+  hop(2.8, 0.38, 1, 0x7b4bb3, 16, y2, -12.8, { tang: 1 }); hop(2.5, 0.12, 0.8, 0x8d5fc4, 16, y2 + 0.38, -12.7, { tang: 1, can: false });
+  hop(2.8, 0.5, 0.22, 0x6a3fa0, 16, y2 + 0.38, -13.19, { tang: 1, can: false });
+  for (const dx of [-1.29, 1.29]) hop(0.22, 0.3, 1, 0x6a3fa0, 16 + dx, y2 + 0.38, -12.8, { tang: 1, can: false });
+  // bàn trang điểm sát tường, gương (viền bóng đèn dựng trong noi-that.js), ghế đạo diễn của Phát
+  hop(0.46, 0.75, 1.3, 0xf2e6c8, 19.64, y2, -8.95, { tang: 1 }); hop(0.03, 1.12, 1.36, 0xc9dbe6, 19.86, y2 + 0.84, -9.0, { tang: 1, can: false });
+  gheDaoDien(scene, CHO_NGOI.idol_het_thoi, vat[1]);
   // Hành lang tầng 2: bàn trợ lý
-  hop(2.2, 0.75, 0.9, 0xf5b9cf, -12, y2, -0.6, { tang: 1 });
+  hop(2.2, 0.75, 0.9, 0xf5b9cf, -10.8, y2, -0.6, { tang: 1 }); manHinh(scene, -10.6, y2 + 0.75, -0.82, 0, denDem, "mac_dinh");
+  gheXoay(scene, CHO_NGOI.thanh_ninh, vat[1], { mau: 0xf26fa6 });
   // Studio
   const phong = new THREE.Mesh(new THREE.PlaneGeometry(10, 3.4), vl(0xf7a8c8)); phong.position.set(-13, y2 + 1.7, 13.8); phong.rotation.y = Math.PI; scene.add(phong);
   const vong = new THREE.Mesh(new THREE.TorusGeometry(0.45, 0.06, 6, 16), new THREE.MeshBasicMaterial({ color: 0xfff5e0 })); vong.position.set(-10.5, y2 + 1.7, 11); scene.add(vong);
   hop(0.12, 1.5, 0.12, 0x222222, -10.5, y2, 11, { tang: 1 }); hop(0.4, 0.3, 0.5, 0x111111, -13, y2 + 1.3, 6, { tang: 1, can: false }); hop(0.1, 1.3, 0.1, 0x222222, -13, y2, 6, { tang: 1 });
+  gheBanh(scene, CHO_NGOI.sieu_nhan_hong, vat[1], 0xf26fa6);
   // Dựng phim
   hop(3.4, 0.75, 1.2, 0x2a2c31, -2, y2, 11.2, { tang: 1 }); for (const dx of [-1, 0, 1]) manHinh(scene, -2 + dx, y2 + 0.75, 11.45, Math.PI, denDem, ["edit_mau", "edit_timeline", "edit_render"][dx + 1]);
+  gheXoay(scene, CHO_NGOI.editor, vat[1], { mau: 0x1c1c1f, vien: 0xe8702a, lungCao: 0.82, tuaDau: true }); // ghế gaming của cú đêm
   // Sản xuất
-  hop(3, 0.75, 1.2, 0xd8c7a3, 14, y2, 10.6, { tang: 1 }); manHinh(scene, 14, y2 + 0.75, 10.85, Math.PI, denDem, "truong_phong"); bangTrang(scene, 19.85, y2 + 1.4, 8, -Math.PI / 2);
+  hop(3, 0.75, 1.2, 0xd8c7a3, 14, y2, 10.6, { tang: 1 }); manHinh(scene, 14, y2 + 0.75, 10.85, Math.PI, denDem, "truong_phong"); gheXoay(scene, CHO_NGOI.truong_phong, vat[1], { mau: 0x5b6b8c }); bangTrang(scene, 19.85, y2 + 1.4, 8, -Math.PI / 2);
   // Chiếu nghỉ: cầu thang xuống và lên sân thượng
   for (let i = 0; i < 4; i++) hop(2.4, 0.2 + i * 0.25, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 3.2 + i * 0.5, { tang: 1, can: false });
   for (let i = 0; i < 6; i++) hop(2, 0.3 + i * 0.55, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 13.6 - i * 0.05, { tang: 1, can: false });
@@ -337,6 +366,120 @@ function banLamViec(scene, x, z, vat, denDem, chu) {
   manHinh(scene, x, 0.78, z - 0.25, 0, denDem, chu);
   add(0.5, 0.03, 0.18, 0x2a2a2a, x, 0.78, z + 0.15);
   vat.push({ minX: x - 1, maxX: x + 1, minZ: z - 0.5, maxZ: z + 0.5 });
+}
+// ---------- Bàn, ghế ngồi được ----------
+// Mọi ghế quay theo cho.huong (người ngồi nhìn về +z cục bộ), mặt đệm cao 0,51 m để khớp dáng ngồi (thân hạ 0,36 m).
+// Khối va chạm nhỏ cỡ chân ghế: người chơi không đi xuyên ghế, lưới tìm đường của đồng nghiệp cũng tránh.
+function nhomGhe(scene, cho, vatTang, r = 0.27) {
+  const g = new THREE.Group(); g.position.set(cho.x, cho.tang * CAO_TANG, cho.z); g.rotation.y = cho.huong ?? 0; scene.add(g);
+  vatTang.push({ minX: cho.x - r, maxX: cho.x + r, minZ: cho.z - r, maxZ: cho.z + r, ghe: true });
+  const add = (geo, m, x, y, z, rx = 0, ry = 0, rz = 0, cha = g) => { const o = new THREE.Mesh(geo, m); o.position.set(x, y, z); o.rotation.set(rx, ry, rz); cha.add(o); return o; };
+  const hop = (w, h, d, m, x, y, z, rx = 0, cha = g) => add(new THREE.BoxGeometry(w, h, d), m, x, y + h / 2, z, rx, 0, 0, cha); // y: đáy khối
+  const tru = (r1, r2, h, m, x, y, z, rx = 0, rz = 0, seg = 8, cha = g) => // y: tâm trụ
+    add(new THREE.CylinderGeometry(r1, r2, h, seg), m, x, y, z, rx, 0, rz, cha);
+  return { g, add, hop, tru };
+}
+const VL_KIM = () => vl(0xa9aeb4), VL_NHUA_DEN = () => vl(0x1c1c1f);
+// da bóng nhẹ (ghế giám đốc): vật liệu riêng theo màu, dùng chung giữa các ghế cùng màu
+const VL_DA = new Map();
+function vlDa(mau) {
+  if (!VL_DA.has(mau)) VL_DA.set(mau, new THREE.MeshPhongMaterial({ color: mau, specular: 0x3a3430, shininess: 38, flatShading: true }));
+  return VL_DA.get(mau);
+}
+// chân sao 5 cánh có bánh xe, trụ hơi, mâm ghế (dùng cho ghế xoay và ghế giám đốc)
+function chanSao(G, rCanh = 0.3, kim = true) {
+  const M = kim ? VL_KIM() : VL_NHUA_DEN();
+  for (let i = 0; i < 5; i++) {
+    const a = i * Math.PI * 2 / 5 + Math.PI / 5; // không có cánh chĩa thẳng ra trước (chân người ngồi)
+    G.add(new THREE.BoxGeometry(0.05, 0.035, rCanh), M, Math.sin(a) * rCanh / 2, 0.085, Math.cos(a) * rCanh / 2, 0, a, 0);
+    G.tru(0.012, 0.012, 0.05, M, Math.sin(a) * (rCanh - 0.01), 0.065, Math.cos(a) * (rCanh - 0.01), 0, 0, 6);
+    G.add(new THREE.CylinderGeometry(0.032, 0.032, 0.035, 8), VL_NHUA_DEN(), Math.sin(a) * (rCanh - 0.01), 0.032, Math.cos(a) * (rCanh - 0.01), 0, a, Math.PI / 2);
+  }
+  G.tru(0.06, 0.07, 0.05, M, 0, 0.09, 0, 0, 0, 10);
+  G.tru(0.03, 0.03, 0.26, VL_NHUA_DEN(), 0, 0.22, 0, 0, 0, 8);   // trụ hơi
+  G.tru(0.038, 0.038, 0.1, M, 0, 0.3, 0, 0, 0, 8);
+  G.hop(0.24, 0.04, 0.24, VL_NHUA_DEN(), 0, 0.36, 0);            // mâm ghế
+}
+// Ghế xoay văn phòng: đệm vải, lưng lưới hơi ngả, tay vịn; tùy chọn viền màu và gối đầu (ghế gaming)
+function gheXoay(scene, cho, vatTang, { mau = 0x3a3d44, vien = null, lungCao = 0.58, tayVin = true, tuaDau = false } = {}) {
+  const G = nhomGhe(scene, cho, vatTang), V = vl(mau), D = VL_NHUA_DEN();
+  chanSao(G, 0.3, false);
+  G.hop(0.5, 0.08, 0.48, V, 0, 0.43, 0.01);          // đệm ngồi: mặt trên 0,51
+  G.hop(0.46, 0.03, 0.08, V, 0, 0.465, 0.235, 0.3);  // mép trước bo xuống
+  // cần nối lưng + tấm lưng ngả 8°
+  G.hop(0.06, 0.24, 0.04, D, 0, 0.4, -0.26);
+  const lung = new THREE.Group(); lung.position.set(0, 0.56, -0.27); lung.rotation.x = -0.14; G.g.add(lung);
+  G.hop(0.46, lungCao, 0.06, V, 0, 0, 0, 0, lung);
+  G.hop(0.4, 0.12, 0.03, vien != null ? vl(vien) : V, 0, 0.08, 0.035, 0, lung); // gối đỡ thắt lưng
+  if (vien != null) for (const s of [-1, 1]) G.hop(0.05, lungCao, 0.08, vl(vien), s * 0.235, 0, 0.005, 0, lung);
+  if (tuaDau) { G.hop(0.32, 0.16, 0.08, V, 0, lungCao - 0.02, 0.0, 0, lung); G.hop(0.26, 0.08, 0.03, vien != null ? vl(vien) : V, 0, lungCao + 0.02, 0.04, 0, lung); }
+  if (tayVin) for (const s of [-1, 1]) {
+    G.hop(0.035, 0.2, 0.04, D, s * 0.25, 0.44, -0.04);
+    G.hop(0.06, 0.03, 0.26, D, s * 0.25, 0.64, 0.0);
+  }
+  return G.g;
+}
+// Ghế giám đốc: da bọc dày, lưng cao có gối đầu, may chần ngang, tay vịn bọc da trên khung kim loại, chân sao mạ crôm
+function gheGiamDoc(scene, cho, vatTang, mau) {
+  const G = nhomGhe(scene, cho, vatTang, 0.3), DA = vlDa(mau), CHI = vl(new THREE.Color(mau).multiplyScalar(0.6).getHex()), K = VL_KIM();
+  chanSao(G, 0.34, true);
+  G.hop(0.58, 0.13, 0.54, DA, 0, 0.38, 0.01);                  // đệm ngồi dày, mặt trên 0,51
+  G.tru(0.065, 0.065, 0.56, DA, 0, 0.445, 0.26, 0, Math.PI / 2, 10); // mép trước cuộn tròn
+  for (const dz of [-0.1, 0.08]) G.hop(0.5, 0.006, 0.012, CHI, 0, 0.511, dz);
+  G.hop(0.08, 0.25, 0.05, K, 0, 0.42, -0.29);                  // khung nối lưng
+  const lung = new THREE.Group(); lung.position.set(0, 0.55, -0.3); lung.rotation.x = -0.16; G.g.add(lung);
+  G.hop(0.58, 0.72, 0.13, DA, 0, 0, 0, 0, lung);
+  for (const s of [-1, 1]) G.hop(0.07, 0.68, 0.17, DA, s * 0.27, 0.02, 0.02, 0, lung); // hai bên lưng ôm người
+  for (let i = 0; i < 4; i++) G.hop(0.44, 0.012, 0.012, CHI, 0, 0.14 + i * 0.15, 0.068, 0, lung); // đường chần
+  G.hop(0.44, 0.2, 0.14, DA, 0, 0.74, 0.01, 0, lung);         // gối đầu
+  G.hop(0.36, 0.012, 0.012, CHI, 0, 0.83, 0.083, 0, lung);
+  for (const s of [-1, 1]) {
+    G.hop(0.04, 0.18, 0.05, K, s * 0.31, 0.45, 0.1); G.hop(0.04, 0.05, 0.3, K, s * 0.31, 0.6, -0.04);
+    G.hop(0.08, 0.05, 0.36, DA, s * 0.31, 0.64, -0.02);       // tay vịn bọc da
+  }
+  return G.g;
+}
+// Ghế đạo diễn (phòng nghệ sĩ): khung gỗ chân chéo, mặt và lưng vải bố, tên in sau lưng
+function gheDaoDien(scene, cho, vatTang) {
+  const G = nhomGhe(scene, cho, vatTang), GO = vl(0x8a5a32), VAI = vl(0x3a1d5a), VAN = vl(0xd8b45a);
+  for (const s of [-1, 1]) {
+    for (const r of [-1, 1]) G.hop(0.035, 0.6, 0.035, GO, s * 0.26, -0.03, 0, r * 0.62);   // chân chéo
+    G.hop(0.04, 0.04, 0.48, GO, s * 0.26, 0.01, 0); G.hop(0.04, 0.04, 0.5, GO, s * 0.26, 0.47, 0);
+    G.hop(0.06, 0.04, 0.46, GO, s * 0.26, 0.7, 0.01);                                       // tay vịn
+    G.hop(0.035, 0.7, 0.035, GO, s * 0.26, 0.45, -0.23);                                    // trụ lưng
+  }
+  G.hop(0.5, 0.025, 0.44, VAI, 0, 0.485, 0);                                                 // mặt vải: trên 0,51
+  G.hop(0.52, 0.24, 0.02, VAI, 0, 0.9, -0.235); G.hop(0.36, 0.05, 0.005, VAN, 0, 0.92, -0.247); // lưng vải, chữ vàng
+  return G.g;
+}
+// Ghế bành bọc nỉ (studio): khối đệm dày, lưng cong ba mảng, tay vịn tròn
+function gheBanh(scene, cho, vatTang, mau) {
+  const G = nhomGhe(scene, cho, vatTang, 0.36), V = vl(mau), DAM = vl(new THREE.Color(mau).multiplyScalar(0.78).getHex());
+  for (const [x, z] of [[-0.28, -0.26], [0.28, -0.26], [-0.28, 0.26], [0.28, 0.26]]) G.tru(0.025, 0.018, 0.12, vl(0xd8b45a), x, 0.06, z, 0, 0, 6);
+  G.hop(0.74, 0.29, 0.66, DAM, 0, 0.12, 0);
+  G.hop(0.54, 0.1, 0.56, V, 0, 0.41, 0.04);                                                   // nệm ngồi: trên 0,51
+  G.hop(0.62, 0.55, 0.16, DAM, 0, 0.41, -0.27, -0.12);                                        // lưng
+  for (const s of [-1, 1]) { G.tru(0.07, 0.07, 0.6, V, s * 0.31, 0.6, 0.03, Math.PI / 2, 0, 10); G.hop(0.12, 0.19, 0.6, DAM, s * 0.31, 0.41, 0.03); }
+  G.hop(0.5, 0.36, 0.1, V, 0, 0.5, -0.15, -0.12);                                            // gối tựa
+  return G.g;
+}
+// Ghế nhựa đỏ có tựa lưng (bác bảo vệ): mặt 0,45 m, chân loe
+function gheNhuaTua(scene, cho, vatTang) {
+  const G = nhomGhe(scene, cho, vatTang, 0.25), N = vl(0xc0262d);
+  for (const [x, z] of [[-0.19, -0.18], [0.19, -0.18], [-0.19, 0.18], [0.19, 0.18]]) G.hop(0.045, 0.42, 0.045, N, x, 0, z, z > 0 ? 0.08 : -0.08);
+  G.hop(0.44, 0.035, 0.42, N, 0, 0.41, 0);
+  G.hop(0.42, 0.36, 0.03, N, 0, 0.48, -0.22, -0.12); G.hop(0.3, 0.05, 0.035, vl(0x9a1c22), 0, 0.72, -0.25, -0.12);
+  return G.g;
+}
+// bàn làm việc đơn: mặt gỗ, hai hộc chân, tấm che chân phía trước (người ngồi phía -z cục bộ khi quay = 0)
+function banDon(scene, x, z, w, d, mau, tang, vatTang) {
+  const y = tang * CAO_TANG;
+  const add = (bw, bh, bd, c, px, py, pz) => { const m = new THREE.Mesh(new THREE.BoxGeometry(bw, bh, bd), vl(c)); m.position.set(px, y + py + bh / 2, pz); scene.add(m); };
+  add(w, 0.04, d, mau, x, 0.72, z);
+  add(0.04, 0.72, d - 0.04, 0x6b5a48, x - w / 2 + 0.03, 0, z); add(0.4, 0.72, d - 0.04, 0x6b5a48, x + w / 2 - 0.22, 0, z);
+  add(w - 0.06, 0.4, 0.03, 0x6b5a48, x, 0.3, z + d / 2 - 0.05);
+  for (let i = 0; i < 3; i++) add(0.12, 0.02, 0.02, 0xc9ccd0, x + w / 2 - 0.22, 0.12 + i * 0.22, z - d / 2 + 0.005);
+  vatTang.push({ minX: x - w / 2, maxX: x + w / 2, minZ: z - d / 2, maxZ: z + d / 2 });
 }
 // màn hình máy tính: nội dung theo việc của chủ bàn (ảnh ghép chung, không chịu ánh sáng nên luôn sáng)
 function manHinh(scene, x, y, z, rotY, denDem, noiDung = "mac_dinh") {

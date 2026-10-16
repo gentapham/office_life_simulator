@@ -185,7 +185,8 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   hop(0.4, 0.02, 0.3, 0x2a2c31, 6, y2 + 0.75, -8.8, { can: false, tang: 1 });
   chauCay(1, -13, 1);
   // Phòng nghệ sĩ: gương có bóng đèn, giá đồ diễn, đàn guitar, poster Phát 2015
-  for (let i = 0; i < 8; i++) { const b = new THREE.Mesh(new THREE.SphereGeometry(0.05, 6, 4), new THREE.MeshBasicMaterial({ color: 0xfff1c8 })); b.position.set(19.75, y2 + 0.4 + (i < 4 ? i * 0.5 : 2.0), -9.75 + (i < 4 ? 0 : (i - 4) * 0.5)); nhom.add(b); }
+  // viền bóng đèn quanh gương trang điểm (gương, bàn trang điểm: the-gioi.js): cột trái, hàng trên, cột phải trên mặt bàn
+  for (let i = 0; i < 10; i++) { const b = new THREE.Mesh(new THREE.SphereGeometry(0.05, 6, 4), new THREE.MeshBasicMaterial({ color: 0xfff1c8 })); b.position.set(19.75, y2 + (i < 4 ? 0.9 + i * 0.37 : i < 8 ? 2.05 : 1.05 + (i - 8) * 0.5), i < 4 ? -9.75 : i < 8 ? -9.75 + (i - 4) * 0.5 : -8.25); nhom.add(b); }
   T(1, 1.4, chu("phat2015", 200, 280, "#3a1d5a", "#ffd166", ["PHÁT", "CÔNG VIÊN", "2015"], 40), 12.16, y2 + 1.8, -8, Math.PI / 2);
   hop(0.05, 1.6, 1.6, 0x9a9a9a, 14, y2, -6, { can: false, tang: 1 });
   { const gt = new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.5, 0.1), vl(0xb5653a)); gt.position.set(18.5, y2 + 0.4, -13.5); nhom.add(gt); hop(0.06, 0.6, 0.04, 0x3a2a1a, 18.5, y2 + 0.6, -13.5, { can: false, tang: 1 }); }
