@@ -773,6 +773,13 @@ async function render3D() {
     goiY, bamTiep, toast, kt.el, lichSu, keChiSo, tamNgung, man,
   ));
 
+  // trạm xe buýt số 69: đứng trước trạm bấm E để đón xe (thêm một lần vào danh sách đồ vật tương tác)
+  const TRAM_BUYT = [
+    { ten: "Trạm Phố Hóng Tây", x: -30, z: 41.9, huong: 0 },
+    { ten: "Trạm Đại lộ Kẹt Xe", x: 45.4, z: -12, huong: -Math.PI / 2 },
+    { ten: "Trạm Quảng trường Hồng", x: 90, z: 41.9, huong: 0 },
+  ];
+  if (!G3D_MOD.DO_VAT.some(v => v.loai === "xe_buyt")) for (const t of TRAM_BUYT) G3D_MOD.DO_VAT.push({ loai: "xe_buyt", tang: 0, x: t.x, z: t.z, nhan: "Đón xe buýt số 69 (7.000đ)" });
   G = new Game3D(khung, { vai: L.ma, tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma, tenVai: ma => THEO_MA[ma]?.vai || "" });
   const g = G;
   window.__g3d = g; window.__L = L; window.__tiep = () => nextScene3D(); // để kiểm thử tự động
@@ -932,7 +939,37 @@ async function render3D() {
   const CHO_DUNG = { meo: 25, ca: 20, chim: 30, wc: 60, tieu: 60, rua_mat: 30, uong_nuoc: 8, tu_lanh: 90, mi_ly: 90, ca_phe: 20, trai_cay: 30, tra_bac_binh: 45, banh_mi: 30, hu_tieu: 45, nuoc_mia: 20, che: 30, tra_da: 15 };
   const CAU_CHO = { meo: "Mèo vừa được vuốt rồi, nó đang ngúng nguẩy. Để nó yên một lát.", ca: "Cá vẫn bơi vậy thôi. Lát quay lại ngắm tiếp.", chim: "Bồ câu đang no, chưa thèm vụn bánh mì nữa.", wc: "Vừa đi vệ sinh xong rồi.", tieu: "Vừa đi vệ sinh xong rồi.", rua_mat: "Mặt còn ướt nhẹp, rửa nữa thì tróc da.", tra_bac_binh: "Bác Bình: \"Từ từ cháu, ấm trà đang pha lại.\"" };
   const lanDung = new Map();
+  // đi xe buýt: chọn trạm xuống, chờ xe, ngồi trên xe một lúc rồi xuống trạm
+  const GIA_BUYT = 7000;
+  const diXeBuyt = v => {
+    const gio = L.phutGame / 60;
+    if (gio < 5 || gio >= 22) { thongBao3D("Xe buýt số 69 nghỉ từ 22:00 tới 5:00 sáng. Gọi xe ôm trong điện thoại nhé."); return; }
+    const tien = Number(L.v("tien")) || 0;
+    if (tien < GIA_BUYT) { thongBao3D(`Không đủ tiền vé. Ví còn ${vnd(tien)}.`); return; }
+    const di = TRAM_BUYT.filter(t => Math.hypot(t.x - v.x, t.z - v.z) > 5);
+    moHoiThoai("Trạm xe buýt số 69");
+    UI.choices.replaceChildren(
+      ...di.map(t => h("button", { class: "choice", onclick: () => {
+        dongHoiThoai(); thongBao3D("Đang chờ xe buýt số 69…");
+        setTimeout(() => {
+          L.set("tien", (Number(L.v("tien")) || 0) - GIA_BUYT); L.ghiGiaoDich(`Vé xe buýt số 69 tới ${t.ten}`, -GIA_BUYT); am.phat("tien");
+          chuyenCanh("Lên xe buýt số 69", () => {
+            g.denNgoai("xe_buyt", "Xe buýt số 69", []);
+            thongBao3D(`Xe buýt đang chạy tới ${t.ten}. Tìm chỗ ngồi đi.`); sinhTon?.veLai(); updateSide();
+            setTimeout(() => {
+              if (G !== g || !g.oNgoai()) return;
+              chuyenCanh(`Xuống ${t.ten}`, () => {
+                g.traNpcVeCho(); g.datViTri({ tang: 0, x: t.x, z: t.z + (t.huong === 0 ? -0.8 : 0), huong: t.huong }); // xuống xe, quay mặt ra đường
+                L.phutGame = Math.min(L.phutGame + 12, Math.max(L.phutGame, tranGio())); hienGio();
+              });
+            }, 15000);
+          });
+        }, 3500);
+      } }, `Đi tới ${t.ten} (${vnd(GIA_BUYT)})`)),
+      h("button", { class: "choice", onclick: () => dongHoiThoai() }, "Thôi, không đi"));
+  };
   g.onDoVat = v => {
+    if (v.loai === "xe_buyt") return diXeBuyt(v);
     const d = DUNG_DO[v.loai]; if (!d) return;
     const khoa = v.loai + ":" + (v.meo?.ten || `${Math.round(v.x ?? 0)},${Math.round(v.z ?? 0)}`);
     const conCho = (CHO_DUNG[v.loai] || 10) * 1000 - (Date.now() - (lanDung.get(khoa) || 0));
