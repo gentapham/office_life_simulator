@@ -20,12 +20,12 @@ giam_doc: Ơ… thực tập sinh, em không sao chứ?
     giam_doc: *(khựng lại)* Ơ… cái đấy là chuyện riêng của anh. Em check lại cái mindset hỏi han giúp anh.
     _Cả sảnh im. {ke_toan} nhìn bạn. {thanh_ninh} nhìn {giam_doc}. {ran_doc} nhìn tất cả mọi người._
     ~ qh("giam_doc", -5)
-    ~ duy_lo(8)
+    ~ duy_lo(3)
     ~ duy_ngo(-5)
 * [🏦 Nhìn kỹ dáng đi, giọng nói của {giam_doc}.]
     _Bạn nhìn. Dáng người. Giọng Bắc. Cái cách nói "anh không ép, tùy em". Năm 2024, ông khách đeo kính đen cũng nói đúng câu đó, khi bạn hỏi có muốn đọc lại điều khoản không._
-    ~ duy_kn(3)
-    ~ duy_lo(3)
+    ~ duy_kn(2)
+    ~ duy_lo(1)
     ~ cang_thang(15)
 - _Tối đó, bạn ngồi trên giường tầng, nhìn tờ lịch. 15/11. Ngày đáo hạn của khoản vay mà bạn nhớ mang máng. Bạn không chắc. Bạn không dám chắc._
 -> END
@@ -43,18 +43,18 @@ _Một file Excel 14 tab. Tab nào cũng tên "Lich_moi". Màu đỏ, vàng, xan
     _40 phút. 14 tab thành 1 tab. Màu đỏ là trễ, vàng là sắp tới, xanh là xong. Có cột "người chịu trách nhiệm". Có cả công thức tự đếm ngày._
     quan_ly_idol: *(nhìn màn hình, đặt cả hai điện thoại xuống)* Em… em làm cái này hả? Ai dạy em?
     thuc_tap_sinh: Dạ… em mới vô nên tự mò thôi ạ.
-    ~ duy_kn(10)
-    ~ duy_lo(10)
+    ~ duy_kn(6)
+    ~ duy_lo(4)
     ~ qh("quan_ly_idol", 10)
 * [📞 Gọi điện hỏi từng người: "Dạ hôm nay anh chị rảnh giờ nào ạ?"]
     _Bạn gọi 9 cuộc. Ai cũng rảnh "tùy". Bạn ghi "tùy" vào 9 ô. Lịch tuần này: tùy._
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ nghi(-15)
 * [🛡️ Đi tìm {chi_dai}: "Dạ chị ơi, em không biết làm ạ."]
     ~ duy_lan_goi_huong++
     chi_dai: Đưa đây. *(làm trong 10 phút)* Lần sau em tự làm. Chị chỉ một lần.
     ~ qh("chi_dai", 3)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
 - _17 giờ. Mốc 2: 200.000 người theo dõi._
 { nguoi_theo_doi >= 200000:
     hong_hot: {nguoi_theo_doi}! Qua mốc 2!
@@ -80,7 +80,7 @@ _Hôm nay cũng là Ngày Thanh niên Việt Nam. Trên group, {hong_hot} vừa 
     ~ qh("chi_dai", 5)
     ~ qh("giam_doc", 5)
     ~ qh("bac_bao_ve", 3)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 * [🙋 Đứng giữa sảnh: "Dạ em 30 tuổi nhưng em vẫn là thanh niên ạ!"]
     hong_hot: *(bật đèn điện thoại quay)* Ối dồi ôi! Thanh niên 30 tuổi điểm danh!
     _Clip lên group. 22 người thả "haha". 1 người thả tim. Người đó là {con_ong_chau_cha}._
@@ -90,7 +90,7 @@ _Hôm nay cũng là Ngày Thanh niên Việt Nam. Trên group, {hong_hot} vừa 
 * [🙇 "Dạ để em lên tầng 1 xếp đèn sạc cho mọi người ạ."]
     ~ duy_da()
     ~ duy_day_viec(1)
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 - _Ở phòng họp "Sáng Tạo", {truong_phong} thắp nến, họp. Ánh nến hắt lên bảng trắng. Bạn được giao cầm nến._
 -> END
 
@@ -102,14 +102,14 @@ _Trong balo bạn có 5 cục sạc dự phòng. Vỏ nhôm. Sạc nhanh. Loại
 * [🔋 Phát hết cả 5 cục cho mọi người.]
     _Cục 1 cho {chua_te_deadline}. Cục 2 cho {hong_hot}. Cục 3 cho {quan_ly_idol}, người cầm 2 điện thoại. Cục 4 cho {chi_dai}. Cục 5 cho {editor}._
     hong_hot: *(soi cục sạc dưới đèn điện thoại)* Ủa… cái hãng này… sao thực tập sinh có nhiều sạc xịn vậy?
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     ~ qh("chua_te_deadline", 10)
     ~ qh("hong_hot", 3)
     ~ qh("quan_ly_idol", 5)
     ~ follow(5000)
 * [🔋 Đưa 1 cục cho {chua_te_deadline} thôi, giấu 4 cục còn lại.]
     chua_te_deadline: Cứu tinh! Anh {thuc_tap_sinh} ơi em thương anh!
-    ~ duy_lo(5)
+    ~ duy_lo(3)
     ~ qh("chua_te_deadline", 8)
 * [😶 Không đưa. Ai lại thắc mắc.]
     _4 tiếng sau, {chua_te_deadline} hết pin. Bạn nghe tiếng thở dài ở góc pantry. Tay bạn sờ vào balo mấy lần._
@@ -139,7 +139,7 @@ chi_dai: Ăn đi. Mà nè, chị hỏi thiệt. Hồi trước em làm gì? Th�
     con_ong_chau_cha: Người mẫu nam?
     ran_doc: *(từ bóng tối, rất nhẹ)* Ngân hàng.
     _Cả pantry im một giây. Rồi ai đó cười, nói "giỡn hoài". Nhưng {ran_doc} không cười._
-    ~ duy_lo(20)
+    ~ duy_lo(8)
 - _Trong bóng tối, bạn nghe Siêu Nhân Hồng nói gì đó với {chua_te_deadline}, giọng nhỏ, run run. Bạn không nghe rõ. Bạn chỉ nghĩ: người mặc đồ hồng hóa ra cũng biết run._
 -> END
 
@@ -159,7 +159,7 @@ _Bạn thấy ở cánh gà, {idol_het_thoi} đứng chết trân. Bạn ngồi 
     _{sieu_nhan_hong} thấy. {sieu_nhan_hong} hát lại câu cuối, sửa thành "chuối chiên", rồi tạo dáng chỉ thẳng vào bạn. Camera quay theo._
     ~ follow(10000)
     ~ qh("sieu_nhan_hong", 8)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 * [😶 Ngồi im, cầm bảng.]
     _"Khoai chiên" lên xu hướng trong 20 phút. Bạn ngồi im, bảng cổ vũ trên đùi, nghĩ: mình 30 tuổi rồi, đứng dậy hát giữa trường quay thì kỳ._
     ~ duy_ngo(3)
@@ -188,7 +188,7 @@ _Bàn buffet còn: nửa khay gà rán, 2 hộp cơm chiên, một đĩa bánh b
     ~ duy_da()
     ~ duy_day_viec(1)
     ~ nghi(-20)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     chi_dai: *(sáng mai đi ngang kho)* Ai dọn? … Thằng nhỏ này. Thằng nhỏ 30 tuổi này.
     ~ qh("chi_dai", 5)
 - -> END

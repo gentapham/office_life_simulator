@@ -22,6 +22,7 @@ const [ma, soLuotArg, ...rest] = process.argv.slice(2);
 if (!ma) { console.error("Cách dùng: node tools/thu-ket-thuc.mjs <mã vai> [số lượt]"); process.exit(1); }
 const SO_LUOT = parseInt(soLuotArg || "300", 10);
 const bienXem = (rest[rest.indexOf("--bien") + 1] || "").split(",").filter(Boolean);
+const LUONG = (await import("../src/nhan-vat.js")).NHAN_VAT.find(n => n.ma === ma)?.luong || 0;
 const jsonVai = bienDich(`story/vi/${ma}.ink`);
 const jsonChung = bienDich("story/vi/chung.ink");
 const bc = fs.readFileSync("story/vi/chung/bien-chung.ink", "utf8");
@@ -91,6 +92,7 @@ for (let l = 0; l < SO_LUOT; l++) {
       s.variablesState["nguoi_theo_doi"] += (tt >= 70 ? 20000 : tt <= 30 ? 5000 : 12000) + Math.round(Math.random() * 5000);
     }
     const cd = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay]; if (cd) s.variablesState["nguoi_theo_doi"] += cd;
+    if (ngay === 12 && LUONG) s.variablesState["tien"] = (Number(s.variablesState["tien"]) || 0) + LUONG; // lương về như trong game
     for (const ten of canhTrongNgay(ngay, s)) {
       const k = knots.find(x => x.name === ten); const m = String(tag(k.tags, "gio") || "").match(/(\d{1,2}):(\d{2})/);
       if (m) { s.variablesState["gio"] = +m[1]; s.variablesState["phut"] = +m[2]; }

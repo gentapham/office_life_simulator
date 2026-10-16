@@ -22,7 +22,7 @@ _Máy in kêu "tạch", rồi chạy êm như chưa từng có chuyện gì._
 designer: *(nhận poster còn ấm)* Ơ… nhanh vậy. Cảm ơn em. Nè, ổ bánh mì chị mua dư.
 ~ tien_cong(30000)
 ~ nhan(banh_mi)
-~ duy_kn(2)
+~ duy_kn(1)
 ~ qh("designer", 3)
 { not duy_co_the_may_in:
     _Cả ngày hôm nay máy không kẹt thêm lần nào. {it} đi ngang, đặt lên bàn bạn một tấm thẻ nhựa tự in: "Bạn Của Máy In". Rồi đi tiếp, không nói gì._
@@ -59,7 +59,7 @@ truong_phong: … Đúng là như mọi khi. Sao cậu biết?
 thuc_tap_sinh: Dạ em để ý mấy cái ly anh bỏ thùng rác ạ.
 ~ tien_cong(50000)
 ~ nhan(ca_phe)
-~ duy_kn(3)
+~ duy_kn(2)
 ~ qh("editor", 3)
 ~ qh("designer", 3)
 ~ qh("truong_phong", 3)
@@ -92,7 +92,7 @@ _Họp xong, mọi người về. Trên bàn còn 3 cái bánh bông lan, nửa 
 ~ an(30)
 ~ nhan(nuoc_suoi)
 ~ duy_an_do_thua++
-~ duy_kn(3)
+~ duy_kn(2)
 chi_dai: *(đi ngang, gật đầu)* Ghế hôm nay xếp có tâm. Chị ngồi không phải nhìn mặt ai.
 ~ qh("chi_dai", 3)
 -> END
@@ -124,7 +124,7 @@ sieu_nhan_hong: *(chạy lại, đưa bịch bánh)* Bánh chuối chiên của 
 ~ tien_cong(60000)
 ~ nhan(chuoi_chien)
 ~ follow(10000)
-~ duy_kn(5)
+~ duy_kn(3)
 ~ duy_lua_doi(3)
 ~ qh("designer", 5)
 ~ qh("sieu_nhan_hong", 3)
@@ -155,7 +155,7 @@ _1 triệu 250 nghìn. Không tính tờ âm phủ. Khớp với sổ của {ke_
 ke_toan: Đúng. Ly trà sữa đầu tiên là của em. 20 nghìn tiền lẻ dư, em cầm luôn.
 ~ nhan(tra_sua)
 ~ tien_cong(20000)
-~ duy_kn(2)
+~ duy_kn(1)
 ~ qh("ke_toan", 5)
 _Bạn uống ngụm trà sữa đầu tiên của buổi trà sữa thứ 6. Ngọt. Ngọt hơn mọi ly cà phê ở phòng kính tầng 15._
 -> END
@@ -168,7 +168,7 @@ ke_toan: … Em học đếm tiền ở đâu vậy em?
 thuc_tap_sinh: Dạ… dạ em hay đếm tiền lẻ bán vé số giùm má ạ.
 ~ nhan(tra_sua)
 ~ tien_cong(20000)
-~ duy_lo(10)
+~ duy_lo(4)
 ~ qh("ke_toan", 3)
 -> END
 
@@ -201,7 +201,7 @@ _Nước văng tung tóe. Cả bạn lẫn Siêu Nhân Hồng ướt sũng. Như
 ~ nhan(xuc_xich)
 ~ qh("cho", 10)
 ~ qh("bac_bao_ve", 5)
-~ duy_kn(2)
+~ duy_kn(1)
 bac_bao_ve: Bác cho cháu 2 cây xúc xích. Một cho nó, một cho cháu. Hay cả hai cho nó, tùy cháu.
 * [🦴 Đưa cả hai cây cho {cho}.]
     ~ mat(xuc_xich)

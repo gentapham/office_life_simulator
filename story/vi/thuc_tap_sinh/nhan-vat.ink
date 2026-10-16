@@ -24,7 +24,7 @@ ran_doc: Anh {thuc_tap_sinh}! Nói nhỏ thôi nha… anh có biết hồi nhỏ
     ~ tien_cong(-500000)
     ~ duy_so_nguoi_muon++
     ~ qh("ran_doc", 5)
-    ~ duy_lo(3)
+    ~ duy_lo(1)
     ran_doc: Anh tốt ghê. Tui sẽ nhớ.
     _Câu "tui sẽ nhớ" của {ran_doc} nghe giống câu đe dọa hơn câu cảm ơn._
 + [😶 "Dạ em cũng đang kẹt ạ."]
@@ -54,13 +54,13 @@ ran_doc: Anh {thuc_tap_sinh}! Nói nhỏ thôi nha… anh có biết hồi nhỏ
     giam_doc: Ở… ở nước ngoài! Tập đoàn lớn lắm! {sales} quen chủ tịch đấy!
     _Bạn tra mã số doanh nghiệp in trên giấy khen trong 3 giây. Không tồn tại. Bạn quyết định không nói._
     ~ phat_hien(btt_global_gia)
-    ~ duy_lo(3)
+    ~ duy_lo(1)
 + {duy_kinh_nghiem >= 30} [🏦 "Dạ anh, em thấy anh hay gọi ngân hàng. Anh có cần ai đọc giúp hợp đồng không ạ?"]
     giam_doc: *(nhìn bạn rất lâu)* Em… đọc được hợp đồng ngân hàng à?
     thuc_tap_sinh: Dạ… em đọc chậm thôi ạ.
     giam_doc: Ừ… để anh nghĩ. Để anh nghĩ đã.
     ~ qh("giam_doc", 8)
-    ~ duy_lo(8)
+    ~ duy_lo(3)
 - giam_doc: Thực tập sinh 30 tuổi. Anh hỏi thật, em vào đây làm gì? Lương 4 triệu thì ai sống nổi?
 + [😇 "Dạ em thích làm truyền hình từ nhỏ ạ. Xem phim xong em hay viết lại cái kết."]
     giam_doc: Viết lại cái kết… *(cười)* Anh cũng muốn viết lại cái kết của mấy năm nay lắm.
@@ -80,7 +80,7 @@ _{truong_phong} 28 tuổi, bạn 30. Hai tháng rồi {truong_phong} vẫn chưa
     ~ duy_day_viec(1)
     truong_phong: *(thở phào)* Được. Em. Tốt. Gọn.
     ~ qh("truong_phong", 5)
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 + [❓ "Dạ cuộc họp này họp về gì ạ, để em chuẩn bị biểu mẫu ạ?"]
     truong_phong: Họp về… *(nhìn lịch)* … cách giảm số cuộc họp.
     thuc_tap_sinh: Dạ… vậy mình có cần họp không ạ?
@@ -101,7 +101,7 @@ _{truong_phong} 28 tuổi, bạn 30. Hai tháng rồi {truong_phong} vẫn chưa
 + [😇 "Dạ em biết J, K, L, với phím C ạ."]
     truong_phong: *(nhỏ giọng)* Tớ… tớ còn chưa biết phím C. Đừng nói ai nhé.
     ~ qh("truong_phong", 5)
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 + [😶 "Dạ em còn kém lắm ạ."]
     truong_phong: Ừ. Cứ từ từ.
 - -> END
@@ -153,13 +153,13 @@ hong_hot: Ê ông thực tập sinh! Nghe gì chưa? Ối dồi ôi, cả công 
     ~ duy_da()
     ~ duy_day_viec(2)
     ~ follow(8000)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     hong_hot: Ông là nhất! Ông là nhân viên của tháng! À không, ông là thực tập sinh của tháng!
 + [😇 "Dạ em viết, nhưng chị ghi tên em ở cuối bài được không ạ?"]
     hong_hot: *(khựng)* Ghi tên hả… Ờ được! Ghi "Bài: {thuc_tap_sinh}". Hợp lý mà!
     ~ follow(8000)
     ~ duy_lua_doi(8)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 - -> END
 
 // ------------------------------------------------------------
@@ -177,7 +177,7 @@ con_ong_chau_cha: Anh {thuc_tap_sinh}! Chill hông? Cà phê Sống Ảo hông? 
     ~ duy_so_nguoi_muon++
     con_ong_chau_cha: Thiệt hả anh? Lần đầu anh được thực tập sinh bao. Chú anh mà biết chắc xỉu.
     ~ qh("con_ong_chau_cha", 8)
-    ~ duy_lo(5)
+    ~ duy_lo(3)
 + [😶 "Dạ em đi photo ạ."]
     con_ong_chau_cha: Ờ. Anh đi photo với anh được hông? Anh chưa photo bao giờ.
     _Bạn dạy {con_ong_chau_cha} photo. {con_ong_chau_cha} vui như được đồ chơi mới._
@@ -207,14 +207,14 @@ chua_te_deadline: Anh {thuc_tap_sinh} ơi, em nhờ xíu…
 ~ duy_day_viec(1)
 + [🙇 "Dạ em làm liền ạ!"]
     ~ duy_da()
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ nghi(-15)
     chua_te_deadline: Anh là nhất. Anh mua giùm em 2 lon Trâu Cày với cái bánh chuối chiên cho anh Hồng nha.
     ~ qh("chua_te_deadline", 3)
 + [❓ "Dạ việc này gấp không ạ, hay để em xếp sau việc anh {truong_phong} giao ạ?"]
     chua_te_deadline: *(khựng)* Ờ… hông gấp. Để em tự làm. Tại em quen miệng nhờ anh á.
     ~ duy_ngo(-2)
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 + {duy_mo_noi_loan} [😤 "Dạ hôm nay em xin phép không ạ. Anh tự làm một việc, em làm hai việc."]
     ~ duy_so_lan_noi_loan++
     { RANDOM(1, 10) <= 6:
@@ -244,8 +244,8 @@ ke_toan: {thuc_tap_sinh}. Ngồi xuống. Phiếu chi photo tháng này em làm 
 + [📄 Đưa xấp hóa đơn đã xếp theo ngày, có đánh số, có tổng cộng.]
     ke_toan: *(lật từng tờ, chậm rãi)* … Em xếp hóa đơn như người làm kiểm toán.
     ~ qh("ke_toan", 8)
-    ~ duy_lo(5)
-    ~ duy_kn(2)
+    ~ duy_lo(3)
+    ~ duy_kn(1)
 + [😶 "Dạ em làm liền ạ, em quên ạ."]
     ~ duy_da()
     ke_toan: Không sao. Lần đầu. Chị nhắc lần hai thì không còn là lần đầu nữa.
@@ -268,7 +268,7 @@ ke_toan: *(nói nhỏ, cửa đóng)* Khoản 15/11. Em có tính ra cách nào 
     thuc_tap_sinh: Dạ… người từng duyệt nó ạ.
     _{ke_toan} nhìn bạn. Lần đầu tiên trong 2 tháng, chị cười. Một cái cười nhẹ như vừa tìm ra hóa đơn bị mất._
     ~ qh("ke_toan", 10)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 + [😶 "Dạ em chưa ạ."]
     ke_toan: Ừ. Hai đứa mình cùng chưa.
 - -> END
@@ -305,14 +305,14 @@ hr: Em {thuc_tap_sinh}. Em rảnh không, lên phòng anh uống trà xíu.
 it: Gì?
 + [🖨️ "Dạ máy in lại kẹt ạ."]
     it: Đá góc trái phía sau. 3 phân dưới logo. Nhẹ thôi.
-    ~ duy_kn(2)
+    ~ duy_kn(1)
     ~ qh("it", 2)
 + [🍜 Đưa ly mì ly nóng.]
     it: … *(nhận, ăn)* Ừ.
     ~ qh("it", 8)
 + [💬 "Dạ anh dạy em thêm phần mềm dựng phim được không ạ?"]
     it: Hỏi {editor}. Mà {editor} ngủ. Ngồi đây. 15 phút.
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("it", 3)
 - it: Anh {dan_dau_tu} nợ em bao nhiêu?
 + [😇 "Dạ 500 nghìn ạ."]
@@ -320,7 +320,7 @@ it: Gì?
     ~ qh("it", 3)
 + {duy_so_nguoi_muon >= 3} [😅 "Dạ… em cho nhiều người mượn lắm ạ."]
     it: *(nhìn bạn)* Log chuyển khoản của em dài hơn log của anh {dan_dau_tu}. Cẩn thận.
-    ~ duy_lo(3)
+    ~ duy_lo(1)
 + {duy_mo_noi_loan} [😤 "Dạ anh hỏi chi ạ? Chuyện tiền của em mà."]
     ~ duy_so_lan_noi_loan++
     it: … Ừ. Đúng. *(quay lại màn hình)*
@@ -343,15 +343,15 @@ idol_het_thoi: *(kính đen, trong nhà)* Em biết anh là ai không?
 + [🙇 "Dạ em gửi anh ạ."]
     ~ tien_cong(-2000000)
     ~ duy_so_nguoi_muon++
-    ~ duy_lo(5)
+    ~ duy_lo(3)
     idol_het_thoi: *(gỡ hẳn kính)* … Cảm ơn em. Anh trả. Anh hứa. Bằng tiền hát đám cưới.
     ~ qh("idol_het_thoi", 10)
 + [🧮 "Dạ anh ơi, anh nợ 3 tháng nhà là 36 triệu. 2 triệu không giải quyết được ạ. Mình lập kế hoạch trả nợ đi anh."]
     idol_het_thoi: *(nhìn bạn, sững người)* … Sao em biết anh nợ bao nhiêu?
     thuc_tap_sinh: Dạ… em đoán theo giá thuê ở Sky Ảo ạ.
-    ~ duy_lo(10)
+    ~ duy_lo(4)
     ~ qh("idol_het_thoi", 3)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 + [😶 "Dạ em chỉ có 300 nghìn tới cuối tuần ạ."]
     idol_het_thoi: Ừ… thôi. Hồi anh còn nổi, anh bao cả đoàn.
 - -> END
@@ -369,8 +369,8 @@ quan_ly_idol: Khoan, anh nghe máy chút… *(3 phút)* Rồi. Em, giữ giùm a
     _10 phút. Một bảng. Lịch {idol_het_thoi} màu xanh, lịch Siêu Nhân Hồng màu hồng. Chỗ trùng tô đỏ._
     quan_ly_idol: *(đặt cả hai điện thoại xuống)* … Em ở đâu ra vậy em?
     ~ qh("quan_ly_idol", 10)
-    ~ duy_kn(5)
-    ~ duy_lo(5)
+    ~ duy_kn(3)
+    ~ duy_lo(3)
 - quan_ly_idol: Em… em nghĩ sao về {idol_het_thoi}? Thật lòng.
 + [😇 "Dạ, anh {idol_het_thoi} hát thật ạ. Mấy cái comment thì không thật, nhưng giọng anh ấy thật ạ."]
     quan_ly_idol: *(im lặng)* … Ừ. Giọng thật. Anh biết. Anh biết từ 2015.
@@ -432,7 +432,7 @@ editor: *(ngáp)* Ông… à, anh… à, em kiếm tui hả. Đợi render xong�
 + [🎬 "Dạ anh cho em ngồi xem anh dựng được không ạ?"]
     editor: Ngồi đi. Đừng hỏi. Xem thôi.
     _Bạn xem 30 phút. Trong một khung hình, có một con cú nhỏ đậu trên vai Siêu Nhân Hồng. Bạn không hỏi. Đó là bí mật của {editor}._
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("editor", 5)
 - editor: Em làm thực tập mà làm còn nhiều hơn tui. Em hông mệt hả?
 + [😇 "Dạ mệt ạ. Mà em vui ạ."]
@@ -460,7 +460,7 @@ designer: Em {thuc_tap_sinh}! Cho chị xin feedback cụ thể được không?
     ~ duy_day_viec(1)
     designer: Cắt giùm chị 40 tấm ảnh nền. Em biết cắt nền không?
     thuc_tap_sinh: Dạ… em học liền ạ.
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 - designer: Mà em nè, {sales} có nhờ em gì kỳ kỳ hông?
 + [😶 "Dạ không ạ."]
     designer: Ừ. Có thì nói chị.
@@ -477,7 +477,7 @@ _{sales} 26 tuổi. Nhỏ nhất công ty. Gọi bạn là "em". Bạn "dạ ch�
 + [🙇 "Dạ em gửi chị ạ."]
     ~ tien_cong(-3000000)
     ~ duy_so_nguoi_muon++
-    ~ duy_lo(5)
+    ~ duy_lo(3)
     sales: Em là nhất! Tin chị đi, em có tương lai!
     ~ qh("sales", 10)
 + [🧮 "Dạ chị ơi, BTT Global không có mã số doanh nghiệp ạ."]
@@ -485,7 +485,7 @@ _{sales} 26 tuổi. Nhỏ nhất công ty. Gọi bạn là "em". Bạn "dạ ch�
     thuc_tap_sinh: Dạ em tra ạ.
     sales: *(nói nhỏ)* Đừng nói ai. Chị… chị đang tìm nhà tài trợ thật. Thật đó. No cap. Lần này no cap thiệt.
     ~ phat_hien(btt_global_gia)
-    ~ duy_lo(8)
+    ~ duy_lo(3)
     ~ qh("sales", -5)
 + {duy_mo_noi_loan} [😤 "Dạ chị nhỏ hơn em 4 tuổi mà chị mượn em hoài ạ."]
     ~ duy_so_lan_noi_loan++
@@ -540,7 +540,7 @@ chi_dai: {thuc_tap_sinh}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
 }
 + [🧮 Nhìn chart 3 giây: "Dạ đây chưa phải đáy ạ. Đây là… tầng hầm ạ."]
     dan_dau_tu: *(cười khổ)* Tầng hầm… Ừ. Em nói đúng mỗi lần. Anh ghét điều đó.
-    ~ duy_lo(5)
+    ~ duy_lo(3)
     ~ qh("dan_dau_tu", 3)
 + [😶 "Dạ em không biết xem chart ạ."]
     dan_dau_tu: Không biết thì càng tốt! Người không biết toàn trúng!
@@ -552,7 +552,7 @@ chi_dai: {thuc_tap_sinh}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
         ~ duy_so_nguoi_muon++
         ~ duy_muon_chuong = true
     }
-    ~ duy_lo(3)
+    ~ duy_lo(1)
     ~ duy_lua_doi(-2)
 + {duy_tin_dung_hem_69} [📄 "Dạ anh trả xong đợt cũ đã ạ. Tuần này anh trả 200 nghìn chưa ạ?"]
     dan_dau_tu: *(lục ví, đưa đúng 200 nghìn)* Rồi! Đúng hạn! Lần đầu trong đời!
@@ -570,7 +570,7 @@ thanh_xin_nghi: *(ho khụ khụ)* Dạ anh {thuc_tap_sinh}… em hơi sốt. An
 ~ duy_day_viec(1)
 + [🙇 "Dạ em làm liền ạ!"]
     ~ duy_da()
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     thanh_xin_nghi: Anh là người tốt nhất công ty!
     ~ qh("thanh_xin_nghi", 5)
 + [❓ "Dạ anh sốt mà sao giọng anh trong vậy ạ? Như ca sĩ ạ."]

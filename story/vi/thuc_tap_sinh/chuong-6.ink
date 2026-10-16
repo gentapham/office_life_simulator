@@ -19,7 +19,7 @@ _Cả tầng 1 rối như tơ vò. Bạn đứng giữa, tay cầm xấp giấy 
     ~ qh("idol_het_thoi", 15)
 * [🧮 Phụ {dan_dau_tu} kiểm tra lại bộ lọc.]
     _Bạn nhìn bảng số liệu 3 giây. "Dạ cột F trùng 2 nghìn tài khoản, phải trừ ra ạ." {dan_dau_tu} sửa. Bạn đúng._
-    ~ duy_lo(10)
+    ~ duy_lo(4)
     ~ qh("dan_dau_tu", 5)
 - -> END
 
@@ -41,10 +41,10 @@ _Bạn đứng ngoài cửa. Giờ thì cả công ty đã biết, hoặc gần 
     ~ chung_tien_do_dem_hong = gioi_han(chung_tien_do_dem_hong + 15)
     _300 triệu. Đủ trả 80 triệu tiền thuê sân khấu hạn 17 giờ mai, đủ thuê thêm hai giàn đèn mà {chi_dai} đang thiếu._
     ~ follow(30000)
-    ~ duy_lo(25)
+    ~ duy_lo(10)
     ~ phat_hien(duy_tung_lam_ngan_hang)
     ~ qh("giam_doc", 20)
-    ~ duy_kn(10)
+    ~ duy_kn(6)
     _Từ hôm đó, ai cũng biết {thuc_tap_sinh} là ai._
 * [😶 Đứng ngoài. Đi photo tiếp.]
     ~ duy_lua_doi(-3)
@@ -86,7 +86,7 @@ _Mốc 4: 800.000 người theo dõi._
 }
 _Tối đó, bạn ngồi viết bảng tổng kết thực tập: những gì đã học, những gì đã làm, những gì đã sai. 4 trang, chữ nghiêng, đều. Theo mẫu báo cáo thẩm định._
 * [📝 Viết thật hết, kể cả những lần bị đẩy việc.]
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     _Trang cuối, bạn viết: "Em vẫn muốn ở lại."_
 * [📝 Viết đẹp, khiêm tốn, như mọi thực tập sinh khác.]
     ~ duy_ngo(3)
@@ -105,9 +105,9 @@ _Bạn đứng giữa tầng 1. 8 năm ngân hàng. 3 lần hệ thống sập �
     truong_phong: Cậu… cậu làm cái này ở đâu ra?
     thuc_tap_sinh: Dạ… hồi trước em làm… à, dạ em mới vô nên tự nghĩ ạ.
     ~ duy_toa_sang_2910 = true
-    ~ duy_kn(15)
+    ~ duy_kn(9)
     ~ duy_lua_doi(15)
-    ~ duy_lo(10)
+    ~ duy_lo(4)
     ~ qh("truong_phong", 15)
     ~ qh("chi_dai", 10)
     ~ uy_tin = uy_tin + 15
@@ -115,13 +115,13 @@ _Bạn đứng giữa tầng 1. 8 năm ngân hàng. 3 lần hệ thống sập �
 * [🙇 "Dạ để em chạy giấy giữa các tầng ạ."]
     ~ duy_da()
     ~ duy_day_viec(3)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ nghi(-30)
     _Bạn chạy 3 tầng, 41 lượt. Đôi giày lười bắt chước {con_ong_chau_cha} mòn gót._
 * [🛡️ Gọi {chi_dai} điều phối.]
     ~ duy_lan_goi_huong++
     chi_dai: *(bộ đàm)* Kênh 3. Ai cần gì gọi chị. {thuc_tap_sinh}, em đứng cạnh chị, ghi lại.
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("chi_dai", 3)
 - -> END
 
@@ -134,7 +134,7 @@ _Một tờ giấy mới tới, chữ của {ke_toan}: "Gửi {thuc_tap_sinh}. H
 * [🤝 Lên phòng kế toán ngay.]
     _Bạn bổ sung trong 30 phút. {ke_toan} ký nhận, rồi nói nhỏ: "Chị đã đề xuất tên em trong buổi họp ngày mai."_
     ~ qh("ke_toan", 10)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
 * [🍵 Ngồi phụ bác chuyển giấy một lúc.]
     _Bạn với bác ngồi phân giấy. Bác đọc từng tờ, chậm rãi, như đọc thư. Có tờ của {chua_te_deadline} gửi {it}: "Cue 12 {cho} ăn mất rồi, gửi lại giùm."_
     bac_bao_ve: Cháu biết không, có những người ở xa, bác cũng chuyển thư như thế này. Họ tin bác. Bác cũng tin cháu.
@@ -160,7 +160,7 @@ chua_te_deadline: Anh {thuc_tap_sinh}… em xin lỗi. Tháng này em nhờ anh 
     _22 giờ 47, wifi có lại. Video của {editor} chạy tới 100%. Bản trong USB hình con cú thành bản dự phòng. {editor} nhắn bạn một chữ: "Đẹp."_
     ~ qh("chua_te_deadline", 8)
     ~ qh("editor", 8)
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 - -> END
 
 // ------------------------------------------------------------
@@ -177,8 +177,8 @@ cho: *(đứng chắn trước kho, nhìn bạn)* Grừ… *(rồi nhận ra b�
 * [🧹 Dọn sạch, gom hết vào thùng "đồ thất lạc", để ở chòi bảo vệ.]
     _Bạn ghi nhãn từng món: "Chìa khóa (chưa rõ chủ)", "Son (hồng)", "USB không nhãn (mùi cà phê)". Như lập biên bản tài sản. Bác {bac_bao_ve} nhận thùng, gật đầu._
     bac_bao_ve: Cháu làm như người ta kiểm kê kho tiền ấy.
-    ~ duy_kn(3)
-    ~ duy_lo(3)
+    ~ duy_kn(2)
+    ~ duy_lo(1)
     ~ qh("cho", -5)
 * [🙇 Đổ hết vào bao rác như {hr} dặn.]
     ~ duy_da()
@@ -210,7 +210,7 @@ hr: Mình cùng nhìn lại hành trình nha em. Em muốn ở lại không?
     giam_doc: Chỗ khác? Ở đâu?
     thuc_tap_sinh: Dạ… ngân hàng ạ.
     _Cả hàng ghế im lặng. {hr} ngưng cười. Lần đầu tiên._
-- { duy_kinh_nghiem >= 60 && duy_lua >= 50 && qh_truong_phong >= 20 && not duy_nhan_loi_ngan_hang:
+- { duy_kinh_nghiem >= 50 && duy_lua >= 50 && qh_truong_phong >= 5 && not duy_nhan_loi_ngan_hang:
     ~ duy_giu_lai = true
     hr: *(đẩy qua một tờ giấy)* Hợp đồng chính thức. 13 triệu. Em đọc rồi ký nha em.
     _Bạn đọc nguyên 8 trang. Từng điều khoản. Phản xạ nghề. Cả phòng chờ 11 phút. Không ai giục._
@@ -257,7 +257,7 @@ _Một bạn sinh viên tình nguyện chạy tới, rụt rè: "Dạ anh ơi, c
     _Bạn chỉ. Cách cầm tấm hắt sáng. Cách xếp ghế để {chi_dai} không ngồi cạnh {thanh_ninh}. Cách gỡ kẹt máy in, đá đúng chỗ._
     _Bạn sinh viên ghi vào sổ. Bạn thấy mình trong cuốn sổ đó._
     ~ duy_lua_doi(5)
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 * [🙇 "Dạ để anh làm cho, em nghỉ đi."]
     ~ duy_da()
     _Bạn làm luôn phần của bạn sinh viên. Thói quen hai tháng khó bỏ._
@@ -268,7 +268,7 @@ _Một bạn sinh viên tình nguyện chạy tới, rụt rè: "Dạ anh ơi, c
 === thuc_tap_sinh_3110_dem_hong ===
 # ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
 _19 giờ 15. Mười lăm phút nữa mở màn. Bạn đứng ở chân sân khấu, cầm tấm hắt sáng tròn, to như cái nắp chảo. Lần cuối. Hoặc lần đầu._
-{ duy_doi_chat_oanh && qh_bien_kich >= -20:
+{ duy_doi_chat_oanh && qh_bien_kich >= 0:
     _{bien_kich} đi ngang, dúi vào tay bạn một tờ giấy in dòng chữ cuối phim. "Ý tưởng: {thuc_tap_sinh}. Kịch bản: {bien_kich} & {thuc_tap_sinh}." Chị nói nhỏ: "Tui sửa file rồi. Tối nay chiếu bản này."_
     ~ chung_phim_ghi_ten_duy = true
 - else:
@@ -280,7 +280,7 @@ _19 giờ 15. Mười lăm phút nữa mở màn. Bạn đứng ở chân sân k
 _Ánh đèn tổng duyệt chiếu lệch. Một nửa sân khấu bị tối._
 * [💡 Đứng đúng chỗ đánh dấu, tập lại góc hắt sáng một lượt.]
     _Bạn đi trái, đi phải, đếm bước. Tay mỏi từ lượt thứ 3. Bạn không hạ tay._
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ nghi(-20)
 * [🛡️ Gọi bộ đàm cho {it} chỉnh đèn chính.]
     it: *(bộ đàm)* Rồi.

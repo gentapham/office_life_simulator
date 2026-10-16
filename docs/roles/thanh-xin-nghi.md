@@ -130,7 +130,7 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
   - Đi thi, bỏ Đại Nhạc Hội Siêu Nhân (giao lịch cho Duy, cầu trời).
   - Xin nghỉ "bà ngoại nhập viện" để đi thi.
   - Chạy cả hai bằng xe ôm công nghệ qua Đại Lộ Kẹt Xe.
-  - 🔒 Thuyết phục đài nối sóng trực tiếp chung kết với sân khấu Đại Nhạc Hội Siêu Nhân (cần đã mời Nguyên làm khách mời, Bảo hứa nối sóng, quan hệ với Nguyên ≥ 40, và Thái biết bí mật hoặc quan hệ với Thái ≥ 30).
+  - 🔒 Thuyết phục đài nối sóng trực tiếp chung kết với sân khấu Đại Nhạc Hội Siêu Nhân (cần đã mời Nguyên làm khách mời, Bảo hứa nối sóng, quan hệ với Nguyên ≥ 30, và Thái biết bí mật hoặc quan hệ với Thái ≥ 20).
 
 ---
 

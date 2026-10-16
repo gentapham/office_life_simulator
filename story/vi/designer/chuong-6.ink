@@ -220,7 +220,7 @@ _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng g
 
 = sua_poster
 truong_phong: À {designer}, poster Đại Nhạc Hội mai in. Mọi người góp ý gì thì em sửa theo nhé. Sửa nhẹ thôi.
-{ ds_so_lan_bi_sua >= 45:
+{ ds_so_lan_bi_sua >= 50:
     _Góp ý tới từ khắp phòng. "Chữ to lên." "Logo to lên." "Thêm hồng." "Thêm pháo hoa." Bạn nói "Dạ" từng câu một. Tới 11 giờ đêm, file trên màn hình tên là "poster_DNH_sua_lan_100.psd"._
     ~ ds_so_lan_bi_sua = 100
     ~ ds_toi(-30)

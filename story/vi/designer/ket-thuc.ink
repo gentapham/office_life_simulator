@@ -1,40 +1,43 @@
 // ============================================================
-// DESIGNER · KẾT THÚC
-// Thứ tự ưu tiên khi đánh giá (30/10):
-//   1. Lộ Logo Lá Chuối   (Độ Lộ = 100, có thể xảy ra bất cứ lúc nào)
-//   2. Đổi Màu Áo          (Máu Cam ≤ 20 + đã nhận full-time LL)
-//   3. Bản Sửa Thứ 100     (Số Lần Bị Sửa ≥ 100 + Cái Tôi ≤ 10)
-//   4. Hai Mang Chính Nghĩa (bí mật)
-//   5. Bản Đầu Tiên Muôn Năm
-//   6. Song Kiếm Hợp Bích
-//   Không khớp kết thúc nào: Cái Tôi + Máu Cam ≥ 110 thì "Bản Đầu Tiên Muôn Năm",
-//   còn lại "Bản Sửa Thứ 100".
+// DESIGNER · ĐÁNH GIÁ & 6 KẾT THÚC
+// Chạy sau Đại Nhạc Hội Siêu Nhân (31/10, 23:30), dùng mọi lựa chọn tới hết 31/10.
+// Đọc ket_thuc_su_nghiep / chung_cong_ty_song khi nhắc tới Nguyên và công ty.
+// Thứ tự: bí mật > 2 vui > 3 buồn > mặc định
+//   1. 🔒 Hai Mang Chính Nghĩa (bí mật)
+//   2. Bản Đầu Tiên Muôn Năm
+//   3. Song Kiếm Hợp Bích
+//   4. Lộ Logo Lá Chuối   (Độ Lộ ≥ 70 cuối tháng)
+//   5. Đổi Màu Áo          (Máu Cam ≤ 20 + đã nhận full-time LL)
+//   6. Bản Sửa Thứ 100     (poster Đại Nhạc Hội bị sửa tới bản 100 tối 30/10)
+//   Mặc định: đã nhận full-time LL và Máu Cam ≤ 40 thì Đổi Màu Áo; Cái Tôi ≥ 60 và Máu Cam ≥ 40 thì Bản Đầu Tiên; còn lại Bản Sửa Thứ 100
 // ============================================================
 
 // ------------------------------------------------------------
 === designer_3010_danh_gia ===
-# ngay:30 # gio:17:30 # noi:ban_thiet_ke # bat_buoc
-_17 giờ 30. Buổi đánh giá đã xong. Bạn ngồi một mình ở bàn thiết kế, nhìn màn hình tắt. Mọi thứ đã được quyết định._
+# ngay:31 # gio:23:30 # bat_buoc # dieu_kien:sau_dem_hong
 {
-- ds_do_lo >= 100:
+- ds_nhan_hong_ngoai && ds_giau_chu_g && ds_mau_cam >= 70 && ds_do_lo < 70 && not nguyen_theo_ll && not ds_nhan_fulltime_ll:
+    ~ chot_ket_thuc("hai_mang_chinh_nghia")
+    -> designer_kt_hai_mang_chinh_nghia
+- ds_cai_toi >= 80 && ds_mau_cam >= 60 && ds_gianh_lai_cong && ds_do_lo < 70 && ds_so_lan_bi_sua < 100 && not ds_nhan_fulltime_ll:
+    ~ chot_ket_thuc("ban_dau_tien_muon_nam")
+    -> designer_kt_ban_dau_tien_muon_nam
+- qh_sales >= 60 && ds_cat_dut_ll && ds_huyen_deal_that && ds_do_lo < 70:
+    ~ chot_ket_thuc("song_kiem_hop_bich")
+    -> designer_kt_song_kiem_hop_bich
+- ds_do_lo >= 70:
     ~ chot_ket_thuc("lo_logo_la_chuoi")
     -> designer_kt_lo_logo_la_chuoi
 - ds_mau_cam <= 20 && ds_nhan_fulltime_ll:
     ~ chot_ket_thuc("doi_mau_ao")
     -> designer_kt_doi_mau_ao
-- ds_so_lan_bi_sua >= 100 && ds_cai_toi <= 10:
+- ds_so_lan_bi_sua >= 100:
     ~ chot_ket_thuc("ban_sua_thu_100")
     -> designer_kt_ban_sua_thu_100
-- ds_nhan_hong_ngoai && ds_giau_chu_g && ds_mau_cam >= 80 && ds_do_lo < 50 && not nguyen_theo_ll:
-    ~ chot_ket_thuc("hai_mang_chinh_nghia")
-    -> designer_kt_hai_mang_chinh_nghia
-- ds_cai_toi >= 70 && ds_mau_cam >= 60 && nguoi_theo_doi >= 1000000 && ds_gianh_lai_cong:
-    ~ chot_ket_thuc("ban_dau_tien_muon_nam")
-    -> designer_kt_ban_dau_tien_muon_nam
-- qh_sales >= 80 && ds_cat_dut_ll && ds_tien_freelance >= 8000000 && ds_huyen_deal_that:
-    ~ chot_ket_thuc("song_kiem_hop_bich")
-    -> designer_kt_song_kiem_hop_bich
-- ds_cai_toi + ds_mau_cam >= 110:
+- ds_nhan_fulltime_ll && ds_mau_cam <= 40:
+    ~ chot_ket_thuc("doi_mau_ao")
+    -> designer_kt_doi_mau_ao
+- ds_cai_toi >= 60 && ds_mau_cam >= 40:
     ~ chot_ket_thuc("ban_dau_tien_muon_nam")
     -> designer_kt_ban_dau_tien_muon_nam
 - else:
@@ -43,13 +46,13 @@ _17 giờ 30. Buổi đánh giá đã xong. Bạn ngồi một mình ở bàn th
 }
 
 // ------------------------------------------------------------
-// Sự kiện tức thời: Độ Lộ Lá Chuối chạm 100
+// Sự kiện tức thời: Độ Lộ Lá Chuối chạm 100 (chỉ là cảnh, kết thúc vẫn chốt sau đêm diễn)
 === designer_tudo_lat_tay ===
-# ngau_nhien # bat_buoc # dieu_kien:ds_do_lo>=100
-_Điện thoại rung liên tục. Group công ty. Rồi tin nhắn riêng của {hr}: "Em rảnh không, lên phòng họp tầng 2 xíu."_
-_Không phải "uống trà". Là "phòng họp". Bạn biết rồi._
-~ chot_ket_thuc("lo_logo_la_chuoi")
--> designer_kt_lo_logo_la_chuoi
+# ngau_nhien # dieu_kien:ds_do_lo>=100
+_Điện thoại rung liên tục. Group công ty. Ai đó gửi ảnh chụp thư mục "LL_HongNgoai_final" trên máy của bạn._
+_Rồi tin nhắn riêng của {hr}: "Sau Đại Nhạc Hội em lên phòng họp tầng 2 xíu nha." Không phải "uống trà". Là "phòng họp". Bạn biết rồi._
+~ cang_thang(20)
+-> END
 
 // ------------------------------------------------------------
 // Sự kiện: Số Lần Bị Sửa chạm 100
@@ -78,16 +81,19 @@ sales: Không. Bả đang… nghỉ. Ai bắt bả sửa nữa là chị chỉ m
 // 😄 1. BẢN ĐẦU TIÊN MUÔN NĂM
 // ============================================================
 === designer_kt_ban_dau_tien_muon_nam ===
-# dieu_kien:ket_thuc_ban_dau_tien_muon_nam
+# ket_thuc:ban_dau_tien_muon_nam # loai:co_hau # noi:phong_giam_doc
 _Một tuần sau Đại Nhạc Hội Siêu Nhân._
-{ nguoi_theo_doi >= 1000000:
+{ ket_thuc_su_nghiep == "sieu_sao_hang_a":
     _Siêu Nhân Hồng vượt một triệu người theo dõi. Tấm backdrop của bạn được báo chí gọi là "bầu trời hồng có học"._
 - else:
     _Siêu Nhân Hồng chưa tới một triệu. Nhưng tấm backdrop của bạn thì ai cũng chụp lại, và người ta nhớ nó lâu hơn con số._
 }
+{ not chung_cong_ty_song:
+    _Công ty đang phải hoàn tiền hợp đồng. Hành lang ngổn ngang thùng carton. Vậy mà sáng nay {giam_doc} vẫn gọi bạn lên._
+}
 _Phòng giám đốc. {giam_doc} ngồi sau bàn, trên tường vẫn là logo chữ G bản năm 2010._
 giam_doc: {designer}. Anh đọc lại hết rồi. Poster dắt bà cụ, phông vẽ tay, backdrop. Không phải ý tưởng của {truong_phong}.
-giam_doc: Từ tháng 11, em là Trưởng nhóm Thiết kế. Lương tăng 20%. Lần này anh hứa có giấy.
+giam_doc: {chung_cong_ty_song: Từ tháng 11, em là Trưởng nhóm Thiết kế. Lương tăng 20%. Lần này anh hứa có giấy.|Anh không biết công ty còn được bao lâu. Nhưng anh ký cho em tờ này: Trưởng nhóm Thiết kế, ghi rõ những gì em đã làm. Đi đâu em cũng cầm theo được.}
 _Ông đưa bạn tờ quyết định. Giấy trắng, mộc đỏ, chữ ký nguệch ngoạc._
 giam_doc: À mà… em sửa nhẹ cái quyết định này giúp anh nhé? Font nhìn hơi… chưa đủ wow.
 _Bạn nhìn tờ giấy. Rồi nhìn {giam_doc}. Rồi bạn cười, lần đầu tiên trong tháng, cười thật to._
@@ -107,9 +113,9 @@ _Ngoài cửa sổ, cây lưỡi hổ trên ban công vừa đâm thêm một l�
 // 😄 2. SONG KIẾM HỢP BÍCH
 // ============================================================
 === designer_kt_song_kiem_hop_bich ===
-# dieu_kien:ket_thuc_song_kiem_hop_bich
+# ket_thuc:song_kiem_hop_bich # loai:co_hau # noi:studio_pho_moi
 _Tháng 12. Tầng trệt chung cư mini Phố Mới. Một mặt bằng 20 mét vuông, tường sơn trắng, cửa kính._
-_Biển hiệu treo trên cửa: "QUỲNH VẼ, HUYỀN BÁN". Do bạn thiết kế. Bên dưới là dòng chữ nhỏ: "Khách hàng không được sửa biển hiệu."_
+_Biển hiệu treo trên cửa: "{designer} VẼ, {sales} BÁN". Do bạn thiết kế. Bên dưới là dòng chữ nhỏ: "Khách hàng không được sửa biển hiệu."_
 sales: Chị {designer}! Khách đầu tiên tới rồi! Tin… à không. Mọi người tin em nha!
 _Cửa mở. Một bộ đồ hồng bước vào, tay ôm đĩa bánh chuối chiên._
 sieu_nhan_hong: Biến hình! Em đặt bộ nhận diện cho… mùa hai của em! Có hồng, có cam, có chút xanh lá… à không, thôi bỏ xanh lá!
@@ -130,22 +136,26 @@ _Trên tường studio, bạn treo một khung ảnh: bản phác thảo BTT Glo
 // 😄 3. HAI MANG CHÍNH NGHĨA (bí mật)
 // ============================================================
 === designer_kt_hai_mang_chinh_nghia ===
-# dieu_kien:ket_thuc_hai_mang_chinh_nghia
-_Đêm 31/10. 21 giờ 07. Đại Nhạc Hội Siêu Nhân đang ở đoạn cao trào._
+# ket_thuc:hai_mang_chinh_nghia # loai:co_hau # bi_mat # noi:san_khau_dem_hong
+_Đêm 31/10, 23 giờ 30. Quảng trường đã vãn. Bạn vẫn đứng đó, nhìn về phía tòa nhà kính. Hai tiếng rưỡi trước, lúc 21 giờ 07, mọi chuyện đã xảy ra như thế này._
 _Bên kia đường, màn hình LED trên tòa nhà kính 20 tầng của LL-Entertainment bật lên, phóng to thiết kế Hồng Ngoại, đúng như kế hoạch của Lưu Lực._
 _Lá chuối. Vệt hồng. Rồi máy quay của đài truyền hình zoom vào. Và giữa họa tiết lá chuối, to bằng cả một tầng lầu…_
 _…hiện ra chữ G 7 màu. Bên dưới là dòng chữ: "Hồng là của G"._
 hong_hot: *(hét vào micro livestream)* MẤY BÀ ƠI! NHÌN BÊN KIA ĐƯỜNG KÌA! ÉT O ÉT!
-_Cả quảng trường quay đầu. Ngàn chiếc điện thoại giơ lên. Trong 4 phút, ảnh màn hình LED đứng top 1 xu hướng._
+_Cả quảng trường quay đầu. Hàng trăm chiếc điện thoại giơ lên. Trong 4 phút, ảnh màn hình LED lên xu hướng._
 _Trên tầng 20, ai đó chạy loạn. Màn hình chớp chớp, rồi tắt. Muộn 3 phút. Ba phút là cả một đời trên mạng xã hội._
-~ follow(100000)
 sieu_nhan_hong: *(trên sân khấu, chỉ tay về phía tòa nhà kính)* Hồng là của G! Hồng là thái độ! Và em ở lại!
+{ chung_cong_ty_song:
+    _Tới cuối đêm, bộ đếm dừng ở con số đủ cứu công ty. Bạn biết trong con số đó có ba phút của mình._
+- else:
+    _Tới cuối đêm, bộ đếm vẫn không đủ. Nhưng ba phút đó thì không ai lấy lại được: cả mạng đã thấy Hồng là của ai._
+}
 _Bạn đứng giữa đám đông, cầm cuộn vải hồng, run tới mức không cầm nổi ly nước._
 _Điện thoại rung. Tin nhắn cuối cùng từ Anh Lá Chuối._
 la_chuoi: Em giỏi lắm. Mai anh xin nghỉ.
 la_chuoi: À… nếu bên em còn tuyển, cho anh gửi CV nha.
 _Bạn bật cười, giữa tiếng hò reo._
-_Sáng hôm sau, {giam_doc} gọi bạn lên phòng. Trên bàn ông là ảnh chụp màn hình LED, in khổ lớn._
+_Sáng thứ 2, {giam_doc} gọi bạn lên phòng. Trên bàn ông là ảnh chụp màn hình LED, in khổ lớn._
 giam_doc: Anh không hỏi em làm sao làm được. Anh chỉ hỏi: em có muốn vẽ cái này lên tường sảnh không?
 designer: Dạ… y nguyên, không sửa ạ?
 giam_doc: Y nguyên. Anh hứa.
@@ -156,8 +166,8 @@ _Từ đó, ở sảnh {cong_ty} có một bức tường vẽ chữ G 7 màu n�
 // 😢 4. LỘ LOGO LÁ CHUỐI
 // ============================================================
 === designer_kt_lo_logo_la_chuoi ===
-# dieu_kien:ket_thuc_lo_logo_la_chuoi
-_Phòng họp tầng 2. Rèm kéo kín. Màn hình lớn sáng lên._
+# ket_thuc:lo_logo_la_chuoi # loai:buon # noi:phong_hop_tang_2
+_Sáng thứ 2 sau Đại Nhạc Hội. Phòng họp tầng 2. Rèm kéo kín. Màn hình lớn sáng lên._
 it: *(giọng đều, không cảm xúc)* Log tải file. Wifi công ty. Thư mục "LL_HongNgoai_final". Máy của {designer}.
 _Danh sách hiện ra, dòng này nối dòng kia. Giờ, ngày, tên file. Toàn những đêm bạn tưởng không ai thấy._
 _Cả phòng im lặng. {truong_phong} nhìn xuống bàn. {hong_hot} che miệng. {giam_doc} không nói gì, chỉ nhìn chữ "LL" rất lâu._
@@ -181,7 +191,7 @@ _Chữ G 7 màu vẫn sáng. Lần đầu tiên bạn thấy nó đẹp. Đúng 
 // 😢 5. BẢN SỬA THỨ 100
 // ============================================================
 === designer_kt_ban_sua_thu_100 ===
-# dieu_kien:ket_thuc_ban_sua_thu_100
+# ket_thuc:ban_sua_thu_100 # loai:buon # noi:can_203
 _Bạn không còn cãi ai nữa._
 _"Chữ to lên." Dạ. "Logo to lên." Dạ. "Thêm hồng." Dạ. "Thêm cầu vồng." Dạ. "Thêm pháo hoa." Dạ._
 _Số Lần Bị Sửa: {ds_so_lan_bi_sua}. Bạn không đếm nữa. Con số tự nhảy._
@@ -190,7 +200,7 @@ _Tấm poster cuối cùng là một mảng hồng chói lóa, chữ chồng lê
 _Không đọc được chữ nào. Nhưng ai cũng nói "đẹp"._
 hong_hot: *(nhìn bạn, nói nhỏ)* Bà ơi… bà ổn hông?
 designer: Ổn. Sửa xong rồi mà.
-_Đêm 31/10, bạn không ở lại Đại Nhạc Hội Siêu Nhân. Bạn về căn 203._
+_Đêm 31/10, bạn không ở lại tới lúc màn hình tắt. Bạn về căn 203 trước 23 giờ._
 _Bàn vẽ phủ một lớp bụi mỏng. Hộp bút chì còn nguyên, chưa gọt từ tháng 9. Cây lưỡi hổ trên ban công đã héo một lá._
 _Bạn ngồi xuống, cầm bút chì lên. Đặt bút xuống tờ giấy trắng. Chờ._
 _Chờ ai đó nói phải vẽ gì._
@@ -206,7 +216,7 @@ _Không ai nói. Và bạn nhận ra: bạn đã quên mất cảm giác vẽ ch
 // 😢 6. ĐỔI MÀU ÁO
 // ============================================================
 === designer_kt_doi_mau_ao ===
-# dieu_kien:ket_thuc_doi_mau_ao
+# ket_thuc:doi_mau_ao # loai:buon # noi:toa_ll
 _Thứ 2, ngày 2 tháng 11. Tầng 18, tòa nhà kính LL-Entertainment. Máy lạnh 18 độ. Bàn làm việc trắng tinh, màn hình 32 inch, ghế công thái học._
 _Lương gấp đôi. Không ai hỏi "hóa đơn đâu em". Không ai họp 5 phút kéo dài 2 tiếng._
 _9 giờ đúng. Một người mặc vest trắng đi ngang, đặt một xấp brief lên bàn bạn. Lưu Lực._
@@ -214,7 +224,7 @@ luu_luc: Chào em. Việc này phải xong từ hôm qua nhé em.
 _Ông đi tiếp, không đợi bạn trả lời. Ở đây không ai đợi ai trả lời._
 _Bạn mở brief. Yêu cầu: "Poster idol mới. Tông xanh lá chuối. Không hồng."_
 _Bạn đứng dậy, ra cửa kính rót nước. Từ tầng 18 nhìn xuống, bên kia đường là tòa nhà 3 tầng màu tím._
-{ nguoi_theo_doi >= 1000000:
+{ chung_cong_ty_song:
     _Tòa nhà vẫn sáng đèn. Họ đã làm được, không cần bạn. Trên cửa sổ tầng 1, bạn thấy ai đó đang dán poster mới. Không phải nét của bạn._
 - else:
     _Tòa nhà tắt đèn. Hai người đàn ông đang dùng thang gỡ chữ G 7 màu xuống khỏi tường. Từng màu một. Đỏ, cam, vàng…_

@@ -302,7 +302,7 @@ Mọi vai nhắc tới các mốc dưới đây phải dùng đúng giờ và đ
 | 22/10 | 9:00 – 16:00 | Phòng kế toán | Đoàn kiểm tra thuế |
 | 23/10 | 20:00 | Studio tầng 2 | Livestream sinh nhật Nguyên |
 | 24/10 | 14:00 | Phòng họp tầng 2 | Họp hòa giải |
-| 25/10 | 10:00 · 15:00 · 20:00 | LL-Entertainment · công ty · Đài Tivi Hóng | Thái tới LL · Nhi phỏng vấn · Sơn thi bán kết |
+| 25/10 | 9:00 · 10:00 · 20:00 | LL-Entertainment tầng 20 · LL-Entertainment · Đài Tivi Hóng | Nhi phỏng vấn ở LL · Thái tới LL · Sơn thi bán kết |
 | 26/10 | 16:00 | Phòng họp tầng 2 | Chiếu phim "Người Hùng Không Tên" |
 | 27/10 | 11:00 · 15:00 | Văn phòng · sảnh công ty | Cuộc gọi Sữa Chua Hồng Hào · Lưu Lực tới |
 | 28/10 | 02:10 | Kênh của Lĩnh | Video "16 năm" lên sóng 6 phút, khoảng 2.000 lượt xem rồi bị gỡ |

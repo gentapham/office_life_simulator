@@ -24,7 +24,7 @@ _Trang đó viết: "Chương 14. Thực tập sinh 30 tuổi, tên thật là {
 * [📓 Giữ cuốn sổ lại, đọc tiếp lúc không ai thấy.]
     ~ nhan(so_tay_oanh)
     _Cuốn sổ ghi chép của tiểu thuyết "Công Ty Là Gia Đình". Dùng tên thật của tất cả mọi người. Bạn nằm ở chương 14, chương 22, và chương 31._
-    ~ duy_kn(2)
+    ~ duy_kn(1)
     ~ duy_ngo(-5)
 * [🤝 Đưa trả {bien_kich} ngay khi chị lên xe.]
     bien_kich: *(chộp lấy, mặt tái)* Em… em đọc gì chưa?
@@ -47,8 +47,8 @@ _Đội bên kia có {chi_dai}. Một mình {chi_dai} kéo như ba người._
 * [🧮 Đề xuất chiến thuật: "Dạ mình xếp người nặng nhất ra cuối, cả đội ngả người 45 độ ạ."]
     _Đội bạn làm theo. Và… thắng! Lần đầu tiên trong lịch sử team building, đội không có {chi_dai} thắng kéo co._
     chi_dai: *(nhìn bạn, nheo mắt)* Ai dạy em tính góc lực vậy?
-    ~ duy_lo(5)
-    ~ duy_kn(3)
+    ~ duy_lo(3)
+    ~ duy_kn(2)
     ~ qh("chua_te_deadline", 5)
 * [🙇 Xin làm trọng tài, phát nước cho cả hai đội.]
     ~ duy_da()
@@ -82,7 +82,7 @@ _Mọi ánh mắt dồn về bạn. {bien_kich} ngồi đối diện, ngừng nh
 * [🏦 "Dạ… trước khi vô đây, em là trưởng phòng tín dụng ở một ngân hàng ạ."]
     _Lửa trại tắt tiếng. {dan_dau_tu} rơi ly bia. {sales} mở to mắt. {ran_doc} mỉm cười như người vừa trúng số._
     hong_hot: ÉT O ÉT! TRƯỞNG PHÒNG?!
-    ~ duy_lo(40)
+    ~ duy_lo(16)
     ~ phat_hien(duy_tung_lam_ngan_hang)
     ~ duy_ngo(-15)
     { duy_huong_biet:
@@ -107,7 +107,7 @@ con_ong_chau_cha: Anh {thuc_tap_sinh}, anh có bao giờ muốn… bỏ hết, l
     ~ qh("con_ong_chau_cha", 25)
     ~ duy_long_biet = true
     ~ duy_lua_doi(10)
-    ~ duy_lo(5)
+    ~ duy_lo(3)
 * [👔 "Chill đi anh."]
     con_ong_chau_cha: *(bật cười, ném gối qua)* Anh học câu đó của em rồi trả lại em hả!
     ~ qh("con_ong_chau_cha", 10)
@@ -127,13 +127,13 @@ chua_te_deadline: Anh {thuc_tap_sinh} ơi, em nhờ xíu. Anh gửi file cho đ�
 }
 * [🙇 "Dạ em làm liền ạ!"]
     ~ duy_da()
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ nghi(-30)
     ~ duy_lua_doi(-5)
     _Bạn làm hết. 21 giờ. Không ai nói cảm ơn, vì ai cũng đang giận ai._
 * [❓ "Dạ ba việc này, việc nào gấp nhất ạ?"]
     chua_te_deadline: *(khựng lại)* … Ờ. File cho đài. Hai cái kia để em.
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ nghi(-10)
     ~ duy_ngo(-3)
 * {duy_mo_noi_loan} [😤 "Dạ hôm nay em xin phép không ạ. Anh tự làm một việc, em làm hai việc."]
@@ -154,7 +154,7 @@ chua_te_deadline: Anh {thuc_tap_sinh} ơi, em nhờ xíu. Anh gửi file cho đ�
     dan_dau_tu: *(đứng dậy, đi thẳng tới bàn bạn, cúi đầu)* Thầy. Từ hôm nay em gọi anh là thầy.
     _{dan_dau_tu} 37 tuổi. Bạn 30. Cả tầng 1 nhìn hai người. Bạn không biết đặt tay vào đâu._
     ~ qh("dan_dau_tu", 30)
-    ~ duy_lo(5)
+    ~ duy_lo(3)
 }
 -> END
 
@@ -188,7 +188,7 @@ _Cả phòng im. Rồi tất cả nhìn bạn._
 * [❓ "Dạ ngân sách quà bao nhiêu ạ? Em lên danh sách cho anh duyệt ạ."]
     truong_phong: *(khựng lại)* Ngân sách… Tớ… tớ hỏi chị {ke_toan} đã.
     ke_toan: 0 đồng. Không có hóa đơn là không có tiền. Mà quà thì không có hóa đơn.
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ duy_ngo(-2)
 - -> END
 
@@ -202,7 +202,7 @@ _Hôm qua bạn đi chợ, rồi đi trung tâm thương mại, rồi quẹt cá
     sales: *(lật mác)* Ủa… cái này… hàng thật hả em?
     hong_hot: Ối dồi ôi! Nước hoa này 3 triệu một chai đó mấy bà! Thực tập sinh lương 4 triệu mua 3 chai?!
     _Cả phòng bắt đầu bàn tán. Không phải về quà. Về bạn._
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     ~ qh("hong_hot", 8)
     ~ qh("designer", 8)
     ~ qh("sales", 10)
@@ -212,7 +212,7 @@ _Hôm qua bạn đi chợ, rồi đi trung tâm thương mại, rồi quẹt cá
     ~ qh("bien_kich", 5)
 * [🌷 Bóc mác hết, nói là "đồ chợ Phố Cũ, 50 nghìn một món".]
     _Không ai tin hoàn toàn. Nhưng không ai lật mác được nữa. {ke_toan} sờ chất vải khăn lụa, nhìn bạn một cái dài._
-    ~ duy_lo(5)
+    ~ duy_lo(3)
     ~ qh("hong_hot", 5)
     ~ qh("designer", 5)
     ~ qh("sales", 5)
@@ -254,13 +254,13 @@ _Lúc tính tiền: 4 triệu 800. {giam_doc} đã ngủ trên sofa. {con_ong_ch
 * [💳 Quẹt thẻ kim cương. Trả hết.]
     _"Tít." Cô thu ngân mở to mắt. Quản lý karaoke chạy ra tặng bạn một đĩa trái cây "dành cho khách kim cương"._
     _Cả phòng nghe thấy chữ "kim cương". {dan_dau_tu} tỉnh rượu hẳn, ghi gì đó vào điện thoại._
-    ~ duy_lo(25)
+    ~ duy_lo(10)
     ~ qh("con_ong_chau_cha", 5)
     ~ qh("dan_dau_tu", 5)
 * [🤝 Đề xuất chia đều, tự cầm sổ ghi từng người.]
     _Bạn chia, ghi sổ, thu đủ trong 7 phút. Không ai bị lẻ. Không ai bị quên. {ke_toan} nhìn cuốn sổ của bạn, gật đầu: "Đẹp sổ."_
     ~ tien_cong(-250000)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ qh("ke_toan", 8)
 * [🛡️ Gọi {chi_dai}.]
     ~ duy_lan_goi_huong++

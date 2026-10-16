@@ -38,7 +38,7 @@ _Quán cà phê đầu đường. 22 ly. 660 nghìn. Bạn mở ví: 85 nghìn t
 _Cái thẻ hạng kim cương nằm trong ví, sáng lấp lánh như đang nói: "Quẹt đi. Một giây thôi."_
 * [💳 Quẹt thẻ kim cương.]
     _"Tít." Cô thu ngân nhìn cái thẻ, rồi nhìn bạn, rồi gọi quản lý ra chào. Quản lý cúi đầu: "Dạ quý khách hạng kim cương lần sau ghé, bên em tặng thêm topping ạ."_
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     _Bạn xách 22 ly về đúng 8 giờ 50. Không ai thấy cái thẻ. Chỉ có quán cà phê thấy, và quán cà phê ở cạnh tiệm nail Lung Linh._
     ~ qh("chua_te_deadline", 5)
 * [🏃 Chạy về Hẻm 69 lấy tiền mặt trong hộp bánh.]
@@ -53,7 +53,7 @@ _Cái thẻ hạng kim cương nằm trong ví, sáng lấp lánh như đang nó
     _Bạn đi từng bàn. "Dạ anh chị cho em xin 30 nghìn tiền cà phê ạ."_
     hong_hot: Ủa thực tập sinh gì mà đi đòi tiền vậy?
     ke_toan: *(đưa đúng 30 nghìn, kèm hóa đơn lẻ)* Em ghi tên chị vào. Không có ghi tên là không có tiền.
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ qh("hong_hot", -3)
     ~ qh("ke_toan", 3)
     _Bạn gom đủ 19 ly. 3 ly còn lại bạn tự trả: của {chua_te_deadline}, của {editor}, và của chính mình._
@@ -82,10 +82,10 @@ _Theo phản xạ nghề nghiệp 8 năm, bạn nghĩ: "Hợp đồng 52 trang m
     ~ qh("ke_toan", 5)
     ~ qh("giam_doc", -3)
     ~ duy_ngo(-5)
-    ~ duy_lo(3)
+    ~ duy_lo(1)
 * [📝 Ghi vào sổ: "Hợp đồng SNH. 52 trang. Ký 30 giây. Trang 47?"]
     _Bạn ghi. Chữ nghiêng, đều, như chữ trên một biên bản thẩm định. Bạn chưa viết kiểu chữ này 1 năm rồi._
-    ~ duy_kn(2)
+    ~ duy_kn(1)
 - _5 tỷ về tài khoản. Cả phòng reo hò. {sieu_nhan_hong} đi vòng bắt tay từng người. Tới chỗ bạn, Siêu Nhân Hồng bắt tay rất chặt._
 sieu_nhan_hong: Chào em! Em là… ờm, nhân viên hả?
 * [😇 "Dạ em là thực tập sinh ạ. Em mới vô nên chưa biết ạ."]
@@ -112,7 +112,7 @@ _Bác đỏ mặt. Bạn để ý bác không uống trà sữa. Bác chỉ nhì
     bac_bao_ve: Ừ… *(cầm ly, không uống, để xuống)*
     ~ qh("bac_bao_ve", 2)
 * [📋 Đứng ra sau, xếp lại ghế cho mọi người ngồi.]
-    ~ duy_kn(2)
+    ~ duy_kn(1)
     chi_dai: Ê, em thực tập sinh kia. Em tên gì?
     thuc_tap_sinh: Dạ em là {thuc_tap_sinh} ạ.
     chi_dai: Ừ. Đứa nào bắt nạt em, chỉ mặt chị.
@@ -131,7 +131,7 @@ hr: *(dừng bút)* Ồ… Nụ cười chuyên nghiệp ghê. Em học ở đâ
     hr: Tiếp khách V gì em?
     thuc_tap_sinh: Dạ… tiếp khách… vào… vào hẻm ạ. Nhà em ở hẻm.
     _{hr} cười. Bạn không chắc {hr} có tin. Nụ cười của {hr} thì không bao giờ cho biết gì._
-    ~ duy_lo(5)
+    ~ duy_lo(3)
 * [😶 "Dạ em mới vô nên chưa biết ạ."]
     hr: Mới vô mà cười đẹp vậy, ở lâu chắc cười đẹp hơn nữa. Anh ghi nhận.
     ~ duy_ngo(3)
@@ -161,7 +161,7 @@ _{bien_kich} ngồi thẳng lên, mở laptop. Bạn liếc thấy màn hình: m
     _Cả phòng im. {bien_kich} đóng laptop lại hơi mạnh tay._
     bien_kich: Ý tưởng… cũng được. Nghe hơi quen. Chắc ai cũng từng nghĩ tới.
     truong_phong: Tớ take note lại nhé. Ý hay đấy, {thuc_tap_sinh}… à, cậu {thuc_tap_sinh}.
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ duy_lua_doi(5)
     ~ qh("bien_kich", -3)
     ~ duy_ngo(-3)
@@ -173,7 +173,7 @@ _{bien_kich} ngồi thẳng lên, mở laptop. Bạn liếc thấy màn hình: m
 * [📝 Ghi chép, hỏi ngây thơ: "Dạ phim ngắn thì ai viết ý tưởng gốc ạ?"]
     bien_kich: *(khựng)* Tui. Đương nhiên là tui. Đây không phải đạo… ờ, ý tui là, tui viết.
     _Bạn chưa hiểu vì sao {bien_kich} nói câu đó. Bạn ghi lại: "Đây không phải đạo"._
-    ~ duy_kn(2)
+    ~ duy_kn(1)
     ~ duy_ngo(-2)
 - -> END
 
@@ -202,7 +202,7 @@ _Bạn trùm mền, sờ xuống gối. Cái thẻ vẫn đó._
 * [🖥️ Ra quán net Gõ Phím, học phần mềm dựng phim.]
     _Máy số 15. Máy số 14 là {it}, đang chơi game, đeo tai nghe, không nói gì._
     it: *(liếc màn hình bạn)* Phím tắt cắt cảnh là C. Đừng kéo chuột.
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("it", 5)
     ~ tien_cong(-15000)
 * [📖 Nằm viết tiếp kịch bản "Người Gác Két" vào sổ.]

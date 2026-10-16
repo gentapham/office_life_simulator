@@ -18,7 +18,7 @@ _{sales} 26 tuổi. Bạn 30. Cả phòng nhìn nhau ngại giùm. Chỉ có b�
 * [❓ "Dạ chị dạy em gì ạ? Để em ghi vào sổ."]
     sales: *(ngưng 2 giây)* … Dạy em… tự tin! Ừ, tự tin. Ghi đi.
     _Bạn ghi: "Bài học từ chị {sales}: tự tin." Bên dưới, bạn ghi thêm nhỏ xíu: "kể cả khi không có cơ sở"._
-    ~ duy_kn(2)
+    ~ duy_kn(1)
     ~ qh("sales", 3)
 - _Bông cuối cùng, bạn để trên bàn {truong_phong}. {truong_phong} nhìn bông hoa như nhìn một biên bản chưa được duyệt._
 truong_phong: Cảm ơn cậu. Tớ… à, anh… à, cảm ơn.
@@ -66,7 +66,7 @@ chua_te_deadline: Anh {thuc_tap_sinh}, chạy theo quay lại! Quay dọc cũng 
         ~ follow(5000)
         ~ duy_lua_doi(3)
     }
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ nghi(-15)
 * [🤝 Chạy theo, bỏ điện thoại, phụ đẩy xe.]
     _Bạn và Siêu Nhân Hồng cùng đẩy. Bà Bảy cho mỗi người một ly chè đậu. {sieu_nhan_hong} ăn bằng ống hút luồn qua mũ. Không ai quay được gì._
@@ -90,7 +90,7 @@ chua_te_deadline: Anh {thuc_tap_sinh} ơi, em nhờ xíu. Anh photo giùm em 300
 * [🙇 "Dạ em làm liền ạ!"]
     ~ duy_da()
     ~ duy_day_viec(3)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ nghi(-30)
     ~ qh("chua_te_deadline", 5)
     _Bạn về tới Hẻm 69 lúc 21 giờ. 3 bạn cùng phòng đã ăn hết mì. Tháp mì gói thấp đi 4 tầng._
@@ -99,7 +99,7 @@ chua_te_deadline: Anh {thuc_tap_sinh} ơi, em nhờ xíu. Anh photo giùm em 300
     ~ duy_day_viec(2)
     ~ nghi(-10)
     ~ duy_ngo(-3)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 * {duy_mo_noi_loan} [😤 "Dạ hôm nay em xin phép không ạ. Anh tự làm một việc, em làm hai việc."]
     ~ duy_so_lan_noi_loan++
     { RANDOM(1, 10) <= 6:
@@ -115,7 +115,7 @@ chua_te_deadline: Anh {thuc_tap_sinh} ơi, em nhờ xíu. Anh photo giùm em 300
     _{chua_te_deadline} đã đặt xấp giấy lên bàn và đi mất._
     ~ duy_da()
     ~ duy_day_viec(3)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ nghi(-30)
 - -> END
 
@@ -130,7 +130,7 @@ editor: *(ngáp)* Bác sĩ nói mắt tui như mắt người 60 tuổi. Cấm n
     thuc_tap_sinh: Dạ em mới biết phím C là cắt ạ.
     editor: *(cười một tiếng)* Đủ rồi. Tối nay tui nhắm mắt chỉ, ông bấm.
     _Đêm đó bạn ngồi phòng dựng tới 3 giờ sáng. {editor} nhắm mắt, đọc từng khung hình theo trí nhớ. Bạn bấm. Lần đầu bạn hiểu dựng phim là gì._
-    ~ duy_kn(10)
+    ~ duy_kn(6)
     ~ duy_lua_doi(8)
     ~ qh("editor", 10)
     ~ nghi(-30)
@@ -140,7 +140,7 @@ editor: *(ngáp)* Bác sĩ nói mắt tui như mắt người 60 tuổi. Cấm n
 * [🏦 Đọc kỹ hóa đơn phòng khám, phát hiện tính trùng 2 lần phí soi đáy mắt.]
     _Bạn đọc hóa đơn trong 3 giây. "Dạ cô ơi, mục 4 với mục 7 là một ạ." Cô thu ngân sửa, trả lại 180 nghìn._
     editor: Ông… đọc hóa đơn nhanh dữ vậy?
-    ~ duy_lo(10)
+    ~ duy_lo(4)
     ~ qh("editor", 5)
     ~ duy_ngo(-5)
 - -> END
@@ -196,7 +196,7 @@ _Bạn đi ngang, liếc màn hình. Một file tên "NguoiHungKhongTen_ban9.doc
     ~ cang_thang(15)
 * [📸 Chụp lại màn hình bằng điện thoại.]
     _Một bức ảnh. Có ngày giờ. Theo thói quen của người từng lưu hồ sơ 8 năm: không có bằng chứng thì không có gì._
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ duy_ngo(-5)
 * [❓ Đợi {bien_kich} quay lại: "Dạ chị ơi, phim này giống ý em kể hồi tháng 9 ghê ạ."]
     bien_kich: *(đứng sững ở cửa)* … Giống hả? Ý tưởng thì ai cũng giống ai. Đây không phải đạo, đây là cảm hứng.
@@ -229,7 +229,7 @@ bac_bao_ve: *(nhìn cây nến rất lâu)* … Sao cháu biết?
     bac_bao_ve: *(đặt ly trà xuống)* Cháu biết những chuyện ấy à?
     thuc_tap_sinh: Dạ… em đọc báo ạ.
     _Bác nhìn bạn. Bác không nói gì. Nhưng bạn có cảm giác bác vừa ghi nhớ điều gì đó, rất cẩn thận._
-    ~ duy_lo(5)
+    ~ duy_lo(3)
 - -> END
 
 // ------------------------------------------------------------
@@ -254,7 +254,7 @@ _Bạn nhìn cái chart trên điện thoại. 3 giây. Bơm, giữ, chuẩn b�
 * [🧮 "Dạ anh ơi, cái chart này là mô hình bơm xả, nến đỏ tuần sau là sập đó anh."]
     dan_dau_tu: *(sững người)* … Sao em biết?
     thuc_tap_sinh: Dạ… em xem video trên Tóp-tóp ạ.
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     ~ duy_chuong_coi_la_thay = true
     _{dan_dau_tu} nhìn bạn rất lâu, rồi nhìn cái chart, rồi lại nhìn bạn. Rồi vẫn quyết định không tin._
 * {duy_kinh_nghiem >= 20} [🔒 "Dạ em hông cho mượn thêm. Mà khoản 500 nghìn cũ, mình làm giấy, trả góp 5 tuần, mỗi tuần 100 nghìn nha anh."]
@@ -263,8 +263,8 @@ _Bạn nhìn cái chart trên điện thoại. 3 giây. Bơm, giữ, chuẩn b�
     thuc_tap_sinh: Dạ em học trên mạng ạ.
     ~ duy_muon_chuong = true
     ~ duy_tin_dung_hem_69 = true
-    ~ duy_lo(10)
-    ~ duy_kn(5)
+    ~ duy_lo(4)
+    ~ duy_kn(3)
     ~ qh("dan_dau_tu", 10)
 - -> END
 
@@ -287,7 +287,7 @@ truong_phong: Có ai có ý gì không? Đừng ngại.
         _Lần đầu tiên tên bạn được ghi lên bảng trắng phòng họp, cạnh một ý tưởng._
         ~ duy_y_tuong_24h = true
         ~ follow(20000)
-        ~ duy_kn(10)
+        ~ duy_kn(6)
         ~ duy_lua_doi(15)
         ~ qh("truong_phong", 10)
     }
@@ -316,13 +316,13 @@ hong_hot: Ủa… thẻ gì mà lấp lánh vậy ông {thuc_tap_sinh}?
 * [💳 Quẹt luôn. "Dạ… thẻ tích điểm ạ, có hoàn tiền ạ."]
     _"Tít." Quản lý quán chạy ra, cúi chào: "Dạ cảm ơn quý khách hạng kim cương ạ."_
     _Cả bàn nhìn bạn. Không ai nói gì. {hong_hot} đặt ly cà phê xuống rất chậm._
-    ~ duy_lo(25)
+    ~ duy_lo(10)
     ~ qh("con_ong_chau_cha", 10)
     con_ong_chau_cha: Chill… cảm ơn anh. Mà… anh là ai vậy?
 * [😶 Nhét thẻ vào lại. "Dạ thẻ tích điểm siêu thị ạ. Mình chia đều đi ạ."]
     _Cả bàn chia đều. Mỗi người 105 nghìn. Không ai tin đó là thẻ tích điểm. Nhưng không ai hỏi tiếp, vì hóa đơn vẫn nằm đó._
     ~ tien_cong(-105000)
-    ~ duy_lo(10)
+    ~ duy_lo(4)
 * [🍜 Ăn một gói mì tôm sống cho mọi người thấy (Mì gói trước mặt mọi người).]
     _Bạn rút từ balo ra một gói mì, bẻ ăn sống, giòn rụm. Cả bàn quên luôn cái thẻ. Người đàn ông ăn mì sống thì không thể là đại gia._
     ~ duy_lo(-5)
@@ -344,6 +344,6 @@ it: *(không quay sang)* Thẻ kim cương hả. Hôm nay cả công ty nói.
     ~ qh("it", 10)
 * [🖥️ "Dạ anh chỉ em thêm phím tắt dựng phim được hông ạ?"]
     it: J, K, L. Lùi, dừng, tiến. Tập đi.
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("it", 3)
 - -> END

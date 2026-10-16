@@ -22,7 +22,7 @@ hr: Em {thuc_tap_sinh}, tối qua em làm gì từ 22 tới 23 giờ? Anh chỉ 
 * [🏦 "Dạ… nếu thế chấp thật thì mình nên xem ngày đáo hạn ạ."]
     hr: *(ngưng cười một giây)* Em nói gì?
     thuc_tap_sinh: Dạ… em đọc báo ạ.
-    ~ duy_lo(8)
+    ~ duy_lo(3)
 - -> thuc_tap_sinh_2110_moc_3
 
 = thuc_tap_sinh_2110_moc_3
@@ -45,8 +45,8 @@ _{ke_toan} bị ngập giấy tờ tới cằm. Bạn xung phong phụ._
 ke_toan: Em xếp được không? 10 năm hồ sơ. Không theo thứ tự nào hết.
 _Bạn xếp. Theo năm, theo loại, theo số chứng từ, có thẻ màu. Chuẩn ngân hàng. 20 phút._
 ke_toan: *(nhìn chồng hồ sơ, nhìn đồng hồ, nhìn bạn)* … 20 phút. Chị làm 3 ngày chưa xong.
-~ duy_kn(10)
-~ duy_lo(10)
+~ duy_kn(6)
+~ duy_lo(4)
 _Rồi trong xấp năm 2024, bạn cầm lên một tờ giấy: Hợp đồng thế chấp căn biệt thự số 1, Đồi Ngân Hàng. Người vay: {giam_doc}. Ngân hàng Tín Dụng Đen Đủi._
 _Góc dưới, ô "Phê duyệt": Trưởng phòng Tín dụng, D. Một chữ ký nghiêng, đều. Chữ ký của chính bạn. 2 năm trước._
 _Ngày đáo hạn: 15/11/2026._
@@ -62,18 +62,18 @@ ke_toan: {thuc_tap_sinh}, xếp xong chưa em? Đoàn đòi hồ sơ năm 2024 k
     thuc_tap_sinh: Dạ… em… em từng làm ở đó ạ.
     ke_toan: *(đóng cửa phòng kế toán lại)* Ngồi xuống. Từ giờ, hai đứa mình biết sổ. Không ai khác.
     ~ duy_hai_nguoi_biet_so = true
-    ~ duy_lo(25)
+    ~ duy_lo(10)
     ~ qh("ke_toan", 20)
-* {duy_kinh_nghiem >= 50 && qh_giam_doc >= 30} [🔒 "Dạ chị cho em gặp anh {giam_doc} 10 phút. Em nghĩ em giúp được khoản này."]
+* {duy_kinh_nghiem >= 35 && qh_giam_doc >= 10} [🔒 "Dạ chị cho em gặp anh {giam_doc} 10 phút. Em nghĩ em giúp được khoản này."]
     ke_toan: *(nhíu mày, rồi gật)* 17 giờ. Phòng giám đốc. Chị đi cùng.
     ~ duy_nhanh_nguoi_gac_ket = true
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     ~ qh("ke_toan", 10)
 * [📞 Ra hành lang, gọi cho sếp cũ ở ngân hàng.]
     _"Alo, anh Tư ạ… Dạ em {thuc_tap_sinh}… Dạ em hỏi khoản vay thế chấp biệt thự số 1 Đồi Ngân Hàng, có cách nào giãn không anh?"_
     _Sếp cũ cười: "Mày hỏi khoản đó làm gì? À mà mày về đi. Ghế phó giám đốc chi nhánh còn trống. Chủ nhật anh gọi lại."_
-    ~ duy_kn(3)
-    ~ duy_lo(5)
+    ~ duy_kn(2)
+    ~ duy_lo(3)
 - -> END
 
 // ------------------------------------------------------------
@@ -86,7 +86,7 @@ _Chú Liêm nhảy lên ghế lễ tân với tốc độ của một vận đ�
     cho: *(ngồi xuống ngay, vẫy đuôi)* Gâu.
     _Chú Liêm bước xuống, chỉnh kính: "Cảm ơn cháu. Chú… dị ứng lông chó." Rồi chú hỏi tên bạn, ghi vào sổ. "Cháu xếp hồ sơ hả? Xếp đẹp. Lâu rồi chú mới thấy bộ hồ sơ có thẻ màu."_
     ~ qh("cho", 5)
-    ~ duy_kn(3)
+    ~ duy_kn(2)
 * [🦴 Lấy xúc xích dụ {cho} ra chòi.]
     { co(xuc_xich):
         ~ mat(xuc_xich)
@@ -120,14 +120,14 @@ giam_doc: Ông… là ông ria mép?
     _{giam_doc} bật cười. Cười tới chảy nước mắt. Rồi nước mắt không phải vì cười nữa._
     giam_doc: Em giúp anh được không?
     ~ qh("giam_doc", 25)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
 * [😶 "Dạ… em chỉ muốn anh biết. Em không đòi gì hết."]
     giam_doc: … Anh cảm ơn em. Anh… anh xin lỗi vì hôm đó nhìn em như nhìn con nợ. À không, em nhìn anh như nhìn con nợ.
     thuc_tap_sinh: Dạ, anh lúc đó đúng là con nợ mà anh.
     giam_doc: *(cười khổ)* Ừ. Vẫn là con nợ.
     ~ qh("giam_doc", 15)
 - ~ phat_hien(nguoi_gac_ket)
-~ duy_lo(10)
+~ duy_lo(4)
 -> END
 
 // ------------------------------------------------------------
@@ -153,7 +153,7 @@ sales: Em {thuc_tap_sinh}! Em đeo vest đẹp nhất công ty! Tin chị đi, e
     _Bạn lên sóng. Vest. Kính gọng vàng. Giọng trầm, chậm, chuyên nghiệp: "BTT Global chúc mừng đối tác chiến lược. Chúng tôi đánh giá cao tiềm năng tăng trưởng của thương hiệu Hồng."_
     _Livestream bùng nổ. Bình luận: "Ông chủ tịch này nhìn thật dữ vậy?", "Giọng như giám đốc ngân hàng"._
     ~ follow(20000)
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     ~ qh("sales", 15)
     giam_doc: *(đứng sau camera, nhìn bạn, lẩm bẩm)* Cái dáng này… quen quá…
 * [🙅 "Dạ em ngại lắm chị. Để anh {dan_dau_tu} đóng ạ."]
@@ -206,12 +206,12 @@ chi_dai: Mỗi chủ nợ nói một câu với {dan_dau_tu}. Không chửi. Kh�
     dan_dau_tu: *(nhìn bạn)* Em… em chắc hông?
     _{sales} nhìn bạn như nhìn một vị thánh. {it} nhìn bạn như nhìn một lỗi hệ thống._
     ~ qh("dan_dau_tu", 10)
-    ~ duy_lo(5)
+    ~ duy_lo(3)
 * [🧮 Lập bảng trả nợ cho cả 8 chủ nợ, chia theo thu nhập của anh {dan_dau_tu}.]
     _10 phút. Một bảng. Mỗi tuần trả bao nhiêu, cho ai, tới tháng nào xong. {chi_dai} đọc, gật đầu, dán lên tường._
     chi_dai: Bảng này dán đây. Đứa nào thấy {dan_dau_tu} mua coin thì báo chị.
-    ~ duy_kn(5)
-    ~ duy_lo(10)
+    ~ duy_kn(3)
+    ~ duy_lo(4)
     ~ qh("chi_dai", 8)
 - -> END
 
@@ -247,12 +247,12 @@ _Cả phòng nhìn bạn. Như mọi khi._
 ~ duy_day_viec(2)
 * [🙇 "Dạ em làm liền ạ."]
     ~ duy_da()
-    ~ duy_kn(3)
+    ~ duy_kn(2)
     ~ nghi(-15)
 * [❓ "Dạ, mình có thể ghi lên bảng ai giao việc gì cho em không ạ, để em xếp thứ tự ạ?"]
     truong_phong: *(khựng lại)* … Hợp lý. Tớ thích bảng. Ghi đi.
     _Bảng trắng có 14 dòng. 9 dòng tên {chua_te_deadline}. {chua_te_deadline} nhìn bảng, ho nhẹ._
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("truong_phong", 5)
     ~ duy_ngo(-3)
 * {duy_mo_noi_loan && duy_so_lan_noi_loan >= 1} [😤 Đứng dậy. Đọc to danh sách 47 việc vặt đã bị đẩy trong tháng, kể tên từng người.]
@@ -292,7 +292,7 @@ _{ran_doc} đưa bạn một cái USB. Mỉm cười. Ngọt như trà sữa._
     _Lần đầu tiên bạn hiểu vì sao {chi_dai} hay nhìn {ran_doc} bằng ánh mắt đó._
     ~ qh("ran_doc", -30)
     ~ duy_ngo(-10)
-    ~ duy_kn(5)
+    ~ duy_kn(3)
     ~ qh("designer", 5)
 - -> END
 
@@ -332,7 +332,7 @@ _Bạn cúi xuống nhặt giấy giùm, theo phản xạ. Một tờ: "Đề ng
 * [🧮 "Dạ anh ơi, điều khoản 9 phạt hủy hợp đồng gấp 5 lần, là bẫy ạ." (nói to)]
     _Lưu Lực khựng lại. {quan_ly_idol} đứng gần đó nghe thấy, chụp lại điều khoản 9 bằng điện thoại._
     quan_ly_idol: Em… đọc hợp đồng 3 giây ra điều khoản phạt?
-    ~ duy_lo(15)
+    ~ duy_lo(5)
     ~ qh("quan_ly_idol", 10)
     ~ follow(10000)
 * [😶 Đưa trả giấy, cúi đầu: "Dạ của anh ạ."]
@@ -375,8 +375,8 @@ _Bạn nhìn màn hình điện thoại của {sales}. Số máy bàn, đầu s�
     thuc_tap_sinh: Dạ, em tin cái máy bàn ạ. Mà cũng tin chị ạ.
     ~ qh("sales", 20)
     ~ follow(15000)
-    ~ duy_kn(5)
-    ~ duy_lo(5)
+    ~ duy_kn(3)
+    ~ duy_lo(3)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 * [😶 Cười theo cả phòng.]
     sales: *(mắt đỏ hoe)* … Ừ. Thôi. Tin chị đi, mấy người sẽ hối hận.

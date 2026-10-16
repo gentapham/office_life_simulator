@@ -286,7 +286,7 @@ giam_doc: {thanh_xin_nghi}! Xe đón Siêu Nhân Hồng đâu? Lịch chạy ch�
     ~ son_chon_dem_31 = "ca_hai"
     _Bạn nhét bộ đàm vào túi quần, ôm bộ đồ kim tuyến, chạy ra đường gọi xe. 19 giờ 25. Đại Lộ Kẹt Xe đỏ rực đèn hậu._
     -> END
-* {son_moi_nguyen_khach_moi && son_bao_giup && (son_thai_biet || qh_quan_ly_idol >= 30) && qh_sieu_nhan_hong >= 40} [🔒 "Sếp, em có cách cho Siêu Nhân Hồng lên sóng toàn quốc tối nay. Anh tin em một lần."]
+* {son_moi_nguyen_khach_moi && son_bao_giup && (son_thai_biet || qh_quan_ly_idol >= 20) && qh_sieu_nhan_hong >= 30} [🔒 "Sếp, em có cách cho Siêu Nhân Hồng lên sóng toàn quốc tối nay. Anh tin em một lần."]
     giam_doc: *(nhìn bạn, nhìn {quan_ly_idol}, nhìn {it} đang ôm cuộn cáp)* …Anh không ép. Anh tin.
     ~ son_chon_dem_31 = "noi_song"
     _{it} ôm cuộn cáp chạy về bàn kỹ thuật. Bạn nhảy lên xe ôm qua đài, {sieu_nhan_hong} ở lại sân khấu này. 20 giờ, hai sân khấu sẽ nối làm một._

@@ -304,7 +304,7 @@ luu_luc: *(xoay ghế, giọng diễn giả)* Em {thanh_ninh}. Ở LL, việc h�
     ~ tn_xanh(-10)
     luu_luc: *(mỉm cười, gập hồ sơ)* Anh sẽ liên lạc lại.
     _Bạn biết câu đó. Bạn đã nói câu đó cả trăm lần thay sếp. Nó có nghĩa là "không bao giờ"._
-    { tn_xanh_la_chuoi < 50:
+    { tn_xanh_la_chuoi < 70:
         _Nhưng chiều đó, có một email: "LL mời em vị trí Trợ lý Hành chính, thử việc 2 tháng." Một công việc thật. Không cần mang theo gì._
         ~ tn_nhan_viec_ll = true
     }
