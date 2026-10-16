@@ -856,6 +856,9 @@ async function render3D() {
   app.querySelector(".g3d").append(nutTin);
   const kiemTraNgauNhien = () => {
     if (g.khoa || dangNgauNhien) return;
+    // không chen ngang: đang có hội thoại, đang chuyển cảnh, hay sắp tới chỗ mở cảnh chính
+    if (!app.querySelector(".g3d-thoai")?.hidden || man.classList.contains("on")) return;
+    const mt = g.khoangCachMucTieu(); if (mt && mt.tang === g.tang && mt.d < 4) return;
     let tin = null;
     for (const ten of L.nnHomNay) {
       const k = timKnotNN(ten); if (!k) continue;
@@ -1102,7 +1105,7 @@ async function render3D() {
     g.xoaMucTieu(); datMucTieuHUD("");
     moHoiThoai(g.oNgoai() ? "Hết một ngày" : "Cổng công ty");
     UI.choices.replaceChildren(
-      h("button", { class: "choice", onclick: () => tongKetNgay(() => {
+      h("button", { class: "choice", onclick: () => { UI.choices.replaceChildren(); tongKetNgay(() => {
         chuyenCanh(`Sáng ${ngayDayDu(L.ngay + 1)}`, () => {
           const ghiChu = L.batDauNgay(L.ngay + 1);
           g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0); g.xepLichNgay(); nutTin.hidden = true;
@@ -1110,7 +1113,7 @@ async function render3D() {
           soCaPhe = 0; sinhTon?.ngayMoi();
           nextScene3D();
         });
-      }) }, `Về nhà ngủ, sang ${ngayDayDu(L.ngay + 1)}`),
+      }); } }, `Về nhà ngủ, sang ${ngayDayDu(L.ngay + 1)}`),
       h("button", { class: "choice", onclick: () => {
         dongHoiThoai();
         const o = () => { datMucTieuHUD("Ra cổng để về nhà"); g.datMucTieu("ra_ngoai", hoiDiNgu, { phaiRoiKhoi: true }); };
@@ -1129,7 +1132,9 @@ async function render3D() {
   };
 
   // ----- tổng kết cuối ngày -----
+  let dangSangNgay = false; // chặn bấm liên tục làm nhảy nhiều ngày
   const tongKetNgay = tiep => {
+    if (dangSangNgay || app.querySelector(".tk-lop")) return;
     const dau = L.dauNgay || L.chupChiSo(), nay = L.chupChiSo();
     const lech = (k, dv = "") => { const d = nay[k] - dau[k]; return (d > 0 ? "+" : d < 0 ? "−" : "") + (dv === "đ" ? vnd(Math.abs(d)) : so(Math.abs(d))); };
     const qh = NHAN_VAT.filter(n => n.ma !== L.ma).map(n => [n, nay["qh_" + n.ma] - dau["qh_" + n.ma]]).filter(([, d]) => d).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 5);
@@ -1146,7 +1151,7 @@ async function render3D() {
       qh.length ? h("div", { class: "tk-nhom" }, h("small", {}, "Quan hệ thay đổi"),
         qh.map(([n, d]) => dong_(L.v(n.ma) || n.ten, (d > 0 ? "+" : "−") + Math.abs(d), d < 0))) : null,
       h("p", { class: "tk-con" }, L.ngay < 31 ? `Còn ${31 - L.ngay} ngày tới Đại Nhạc Hội Siêu Nhân.` : ""),
-      h("button", { class: "btn primary", onclick: () => { lop.remove(); tiep(); } }, "Đi ngủ")));
+      h("button", { class: "btn primary", onclick: () => { if (dangSangNgay) return; dangSangNgay = true; lop.remove(); tiep(); setTimeout(() => { dangSangNgay = false; }, 1500); } }, "Đi ngủ")));
     app.querySelector(".g3d").append(lop); lop.querySelector("button").focus();
     if (Number(L.v("nguoi_theo_doi")) >= MUC_TIEU) moThanhTuu(ghiNhan("mot_trieu", 1, { dat: true }));
   };
