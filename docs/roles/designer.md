@@ -114,14 +114,14 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 ### Chương 5: "Logo Quên Xóa" (21/10 – 27/10)
 - **22/10 (kiểm tra thuế):** đoàn kiểm tra yêu cầu xem máy tính và hóa đơn phần mềm. Laptop thứ hai đang trong balo, có file Hồng Ngoại với logo LL ở góc. Thương nhìn Quỳnh: *"Máy này hóa đơn đâu em?"*. Xem Mẫu 4.
 - **23/10:** sinh nhật Nguyên. Quỳnh thiết kế bánh kem hồng hình mũ siêu nhân. Tuất phá tan bánh. Nếu đã làm bộ sticker "Tuất Không Vui", clip Tuất phá bánh kèm sticker viral cả mạng.
-- **24/10:** "hội nghị hòa giải" của Hương. Quỳnh và Oánh bị xếp ngồi chung bàn, phải cùng vẽ "bức tranh đoàn kết".
-- **25/10 (Chủ nhật):** Quỳnh tới tòa nhà kính của LL để giao file. Ở sảnh, gặp **Nhi** đang đi phỏng vấn lén. Hai người nhìn nhau ba giây, rồi cùng giả vờ là đi lạc.
-- **27/10:** Lưu Lực gửi hợp đồng gấp ba cho Nguyên. Thái mang bìa hồ sơ về văn phòng: **trên bìa là bộ nhận diện "Hồng Ngoại" do Quỳnh vẽ**. Quỳnh nhận ra font chữ của mình. Lựa chọn: thú nhận với Thái, im lặng, hay phá hồ sơ từ bên trong.
+- **24/10 (14:00, phòng họp tầng 2):** "hội nghị hòa giải" của Hương. Quỳnh và Oánh bị xếp ngồi chung bàn, phải cùng vẽ "bức tranh đoàn kết".
+- **25/10 (Chủ nhật, 10:30):** Quỳnh tới tòa nhà kính của LL để giao file. Ở sảnh, gặp **Nhi** đang đi phỏng vấn lén, rồi thấy Thái bước ra từ thang máy. Hai người nhìn nhau ba giây, rồi cùng giả vờ là đi lạc.
+- **27/10:** 10:00 LL gửi lời mời gấp ba cho Nguyên. 15:00 Lưu Lực tới sảnh, thấy Hương thì làm rơi tập hồ sơ. 15:20 Thái mang tập hồ sơ lên phòng nghệ sĩ: **trên bìa là bộ nhận diện "Hồng Ngoại" do Quỳnh vẽ**. Quỳnh nhận ra font chữ của mình. Lựa chọn: thú nhận với Thái, im lặng, hay phá hồ sơ từ bên trong.
 
 ### Chương 6: "Final_Thật_Rồi.psd" (28/10 – 31/10)
 - **28/10 (Mốc 4):** Quỳnh có một ngày để hoàn thành backdrop, standee và vé mời Đại Nhạc Hội Siêu Nhân.
 - **29/10 (wifi sập):** không gửi được file. Quỳnh phải chạy USB khắp công ty, in banner ở tiệm photo đầu phố, và tranh máy in với Hiếu (đang in bản tin nội bộ).
-- **30/10:** họp đánh giá. Nhật đọc "thành tích" của Phòng Sản xuất, trong đó có 6 poster của Quỳnh được ghi là "ý tưởng của anh Nhật". Lựa chọn: lên tiếng, im lặng, hay nhờ Lĩnh (cũng bị Nhật lấy công) đứng lên cùng.
+- **30/10:** 7:45 dọn kho, có thể cứu kho báu của Tuất và đưa USB không nhãn cho Vũ. 14:00 họp đánh giá ở phòng họp tầng 2 (Phó Giám đốc, danh sách cắt giảm). Nhật đọc "thành tích" của Phòng Sản xuất, trong đó có 6 poster của Quỳnh được ghi là "ý tưởng của anh Nhật". Lựa chọn: lên tiếng, im lặng, hay nhờ Lĩnh (cũng bị Nhật lấy công) đứng lên cùng.
 - **31/10 (Đại Nhạc Hội Siêu Nhân):** backdrop khổng lồ của Quỳnh được kéo lên. Bên dưới, Quỳnh đứng giữa đám đông, cầm cuộn vải hồng, và thấy bên kia đường, trên tòa nhà kính của LL, màn hình LED đang chạy… thiết kế của chính mình.
 
 ---

@@ -220,7 +220,7 @@ giam_doc: {thanh_ninh}, anh nhìn thế nào?
 
 // ------------------------------------------------------------
 === thanh_ninh_3110_mc ===
-# ngay:31 # gio:19:20 # noi:canh_ga_dem_hong # dieu_kien:tn_noi_that_1 && tn_noi_that_2 && tn_hoc_nghe_chi_dai && not tn_hai_mang && tn_gian_chi_dai <= 65 && tn_khuyen_viet_thu_genta
+# ngay:31 # gio:19:20 # noi:canh_ga_dem_hong # dieu_kien:tn_noi_that_2 && tn_hoc_nghe_chi_dai && not tn_hai_mang && tn_gian_chi_dai <= 65
 _19 giờ 20. Hậu trường. MC của đêm diễn gọi điện báo kẹt xe ở Đại lộ Kẹt Xe, chưa biết mấy giờ tới._
 _{chi_dai} cầm bộ đàm, nhìn quanh, rồi nhìn bạn._
 chi_dai: {thanh_ninh}. *(dúi micro vào tay bạn)* MC đêm nay là em.
