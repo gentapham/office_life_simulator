@@ -38,7 +38,7 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   let i = 0;
   for (let x = -19.2; x <= 19.2; x += 1.2) { if ((x > -4.5 && x < 8.5) || (x > 13.4 && x < 16.6)) continue; K(0.12, 2.7, 0.55, MAU_LAM[i++ % 4], x, 4.55, Z + 0.32); }
   // trụ hai bên cửa chính và khung cửa kính trượt
-  K(0.5, 2.9, 0.3, 0x2fa39a, -0.25, 0, Z + 0.15); K(0.5, 2.9, 0.3, 0x2fa39a, 4.25, 0, Z + 0.15);
+  V(0.5, 2.9, 0.3, 0x2fa39a, -0.25, 0, Z + 0.15); V(0.5, 2.9, 0.3, 0x2fa39a, 4.25, 0, Z + 0.15);
   // băng rôn dọc treo mặt tiền
   dung(1.6, 3.2, new THREE.MeshLambertMaterial({ map: tranh("bangronsnh", 160, 320, (g, w, h) => {
     const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, "#f26fa6"); gr.addColorStop(1, "#b8336f"); g.fillStyle = gr; g.fillRect(0, 0, w, h);

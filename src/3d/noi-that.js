@@ -124,7 +124,6 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
     g.fillStyle = "#c0262d"; g.font = "600 24px system-ui"; g.fillText("Hạn chót: 31/10 - Đại Nhạc Hội Siêu Nhân", 24, 190, w - 48); g.fillText("Ai làm biếng: trừ lương (đùa thôi)", 24, 230);
   }), -11, 1.6, 13.84, Math.PI);
   T(1, 0.7, chu("lich", 200, 140, "#ffffff", "#c0262d", ["THÁNG 10", "2026"], 42), -19.84, 1.9, 1.5, Math.PI / 2);
-  for (let i = 0; i < 4; i++) { tru(0.17, 0.4, 0x2e8b57, -16.5 + i * 3, 0, 4.5); }
   // giá treo mũ bảo hiểm
   hop(0.08, 1.7, 0.08, 0x5a3d2a, -19.4, 0, -1.3);
   for (const [dy, c] of [[1.6, 0xc0262d], [1.4, 0xf6f6f2], [1.2, 0x2a5aa8]]) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.15, 8, 5, 0, 7, 0, 1.6), vl(c)); m.position.set(-19.25, dy, -1.3); nhom.add(m); }

@@ -222,7 +222,6 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   for (let i = 0; i < 7; i++) hop(2.4, 0.3 + i * 0.5, 0.6, 0xbfb6a4, 6.5, 0, 2.1 - i * 0.6, { can: i > 1 });
   // Khu làm việc chung
   BAN_CHUNG.forEach((b, i) => banLamViec(scene, b.x, b.z, vat[0], denDem, i % 3 === 0));
-  hop(0.2, 1.2, 4, 0xa9b9a8, -10.5, 0, 4.5, { can: false });
   bangTrang(scene, -19.85, 1.4, 6, Math.PI / 2);
   // Pantry
   hop(8, 0.95, 1, 0xd9d2c4, 14.5, 0, 13); hop(1, 2, 0.9, 0xe8e8e8, 19.2, 0, 12.8); // quầy + tủ lạnh
