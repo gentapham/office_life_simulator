@@ -2,6 +2,7 @@
 import { Story } from "inkjs/dist/ink-es6.js";
 import { NHAN_VAT, THEO_MA, thuCuaNgay, ngayDayDu, SU_KIEN_NGAY } from "./nhan-vat.js";
 import { taoSinhTon } from "./sinh-ton.js";
+import { moCaiDat } from "./cai-dat.js";
 import { DIA_DIEM } from "./dia-diem.js";
 import { logoSVG } from "./logo.js";
 
@@ -33,7 +34,16 @@ const so = n => (Math.round(Number(n) || 0)).toLocaleString("vi-VN");
 const tag = (tags, key) => { const t = (tags || []).find(t => t === key || t.startsWith(key + ":")); return t == null ? null : (t.includes(":") ? t.slice(key.length + 1).trim() : true); };
 const gioSo = g => { if (!g) return 9999; const m = String(g).match(/(\d{1,2}):(\d{2})/); return m ? (+m[1]) * 60 + (+m[2]) : 9999; };
 const prettyNoi = s => s ? (DIA_DIEM[s] || s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase())) : "";
-const saveLoad = () => { try { return JSON.parse(localStorage.getItem(SAVE_KEY) || "null"); } catch { return null; } };
+// Mỗi vai một bản lưu riêng: chơi vai khác không mất lượt đang dở
+const LUU_KEY = ma => "owfad_luu_v2_" + ma;
+const saveLoad = ma => { try { return JSON.parse(localStorage.getItem(LUU_KEY(ma)) || "null"); } catch { return null; } };
+const dsBanLuu = () => NHAN_VAT.map(n => saveLoad(n.ma)).filter(Boolean).sort((a, b) => (b.luc || 0) - (a.luc || 0));
+// chuyển bản lưu cũ (một bản chung) sang bản lưu theo vai
+try {
+  const cu = JSON.parse(localStorage.getItem(SAVE_KEY) || "null");
+  if (cu?.ma && !localStorage.getItem(LUU_KEY(cu.ma))) localStorage.setItem(LUU_KEY(cu.ma), JSON.stringify(cu));
+  localStorage.removeItem(SAVE_KEY);
+} catch {}
 // Tên đồng nghiệp do người chơi đặt (dùng chung cho mọi vai). Tên Nguyên của Siêu Nhân Hồng cố định.
 const TEN_KEY = "owfad_ten_v1";
 const TEN_CO_DINH = "sieu_nhan_hong";
@@ -43,7 +53,7 @@ const tenCua = ma => ma === TEN_CO_DINH ? THEO_MA[ma].ten : (tenDaDat()[ma] || T
 function apDungTen(story) {
   for (const n of NHAN_VAT) if (n.ma !== TEN_CO_DINH) { try { story.variablesState[n.ma] = tenCua(n.ma); } catch {} }
 }
-const saveWrite = v => { try { v ? localStorage.setItem(SAVE_KEY, JSON.stringify(v)) : localStorage.removeItem(SAVE_KEY); } catch {} };
+const saveWrite = (v, ma = v?.ma || L?.ma) => { if (!ma) return; try { v ? localStorage.setItem(LUU_KEY(ma), JSON.stringify({ ...v, luc: Date.now() })) : localStorage.removeItem(LUU_KEY(ma)); } catch {} };
 
 async function loadMeta() {
   if (META) return;
@@ -94,8 +104,7 @@ function danhGiaDieuKien(expr, story) {
 // ============================================================
 function renderHome() {
   tatG3D();
-  const save = saveLoad();
-  const nvSave = save && THEO_MA[save.ma];
+  const dsLuu = dsBanLuu().filter(x => THEO_MA[x.ma]);
   app.replaceChildren(
     h("div", { class: "wrap trang-chon" },
       dauTrang(),
@@ -103,27 +112,39 @@ function renderHome() {
         h("h1", {}, "Chọn vai của bạn"),
         h("p", {}, "G-Entertainment, tháng 10/2026. Cả công ty có 31 ngày để đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đại Nhạc Hội Siêu Nhân."),
         h("div", { class: "nhan-nho" }, h("span", { class: "nhan-16" }, "16+"), h("span", {}, "23 vai"), h("span", {}, "6 kết thúc mỗi vai"), h("span", {}, "Tự lưu trên trình duyệt"))),
-      nvSave ? h("div", { class: "choi-do", style: `--mau:${nvSave.mau}` },
-        anhVai(nvSave, "nho"),
-        h("div", { class: "choi-do-tt" }, h("small", {}, "Đang chơi dở"), h("b", {}, nvSave.vai), h("span", {}, ngayDayDu(save.ngay))),
-        h("div", { class: "choi-do-nut" },
-          h("button", { class: "btn primary", onclick: () => openRole(save.ma, { tiepTuc: true }) }, "Chơi tiếp"),
-          h("button", { class: "btn ghost", onclick: () => { saveWrite(null); renderHome(); } }, "Xóa bản lưu"))) : null,
+      dsLuu.length ? h("section", { class: "ds-choi-do" },
+        h("h2", {}, "Đang chơi dở"),
+        h("div", { class: "ds-choi-do-luoi" }, dsLuu.map(sv => {
+          const nv = THEO_MA[sv.ma];
+          return h("div", { class: "choi-do", style: `--mau:${nv.mau}` },
+            anhVai(nv, "nho"),
+            h("div", { class: "choi-do-tt" }, h("b", {}, nv.vai), h("span", {}, ngayDayDu(sv.ngay)), h("small", {}, `${so(sv.theoDoi || 0)} người theo dõi`)),
+            h("div", { class: "choi-do-nut" },
+              h("button", { class: "btn primary", onclick: () => openRole(sv.ma, { tiepTuc: true }) }, "Chơi tiếp"),
+              h("button", { class: "btn ghost", onclick: e => xacNhanXoa(e.currentTarget, () => { saveWrite(null, sv.ma); renderHome(); }) }, "Xóa")));
+        }))) : null,
       h("div", { class: "luoi-vai" },
         NHAN_VAT.map(n => h("button", { class: "the-vai", style: `--mau:${n.mau}`, onclick: () => renderDatTen(n.ma) },
           anhVai(n),
+          dsLuu.some(x => x.ma === n.ma) ? h("span", { class: "the-vai-luu" }, `Đang chơi · ${dsLuu.find(x => x.ma === n.ma).ngay}/10`) : null,
           h("div", { class: "the-vai-tt" }, h("b", {}, n.vai), h("small", {}, n.chuc), h("p", {}, n.cau))))),
     ),
   );
   napChanDung();
   window.scrollTo(0, 0);
 }
+// bấm lần đầu đổi chữ thành "Bấm lần nữa để xóa", bấm lần hai mới xóa
+function xacNhanXoa(nut, xoa) {
+  if (nut.dataset.hoi) { xoa(); return; }
+  nut.dataset.hoi = "1"; const cu = nut.textContent; nut.textContent = "Bấm lần nữa để xóa";
+  setTimeout(() => { if (nut.isConnected) { delete nut.dataset.hoi; nut.textContent = cu; } }, 3000);
+}
 
 // Đầu trang: logo + tên game
 function dauTrang(...phai) {
   return h("header", { class: "dau-trang" },
     h("div", { class: "logo", html: logoSVG(40) + '<div class="logo-chu"><small>Office Worker For A Day</small><b>Giả Lập Một Ngày Làm Nhân Viên Văn Phòng</b></div>' }),
-    phai.length ? h("div", { class: "top-actions" }, phai) : null);
+    h("div", { class: "top-actions" }, phai, h("button", { class: "btn ghost", onclick: () => moCaiDat(h) }, "Cài đặt")));
 }
 
 // Ảnh chân dung 3D của vai (chụp từ mô hình trong game); khi chưa có thì hiện chữ viết tắt
@@ -203,6 +224,9 @@ function renderDatTen(ma) {
           anhVai(vaiChon, "to"),
           h("div", { class: "dat-ten-vai" }, h("small", {}, "Vai của bạn"), h("h2", {}, vaiChon.vai), h("p", { class: "chuc" }, vaiChon.chuc), h("p", { class: "cau" }, `"${vaiChon.cau}"`)),
           h("p", { class: "dat-ten-mo" }, "Giữ tên mặc định hoặc đặt lại tên cho cả công ty. Tên được lưu cho các lần chơi sau."),
+          saveLoad(ma) ? h("div", { class: "dat-ten-luu" },
+            h("span", {}, `Bạn đang chơi dở vai này (${ngayDayDu(saveLoad(ma).ngay)}). Bắt đầu mới sẽ thay bản lưu cũ.`),
+            h("button", { class: "btn primary", type: "button", onclick: () => openRole(ma, { tiepTuc: true }) }, "Chơi tiếp bản lưu")) : null,
           h("div", { class: "dat-ten-nut" },
             h("button", { class: "btn primary", type: "submit" }, "Bắt đầu với tên đã đặt"),
             h("button", { class: "btn", type: "button", onclick: () => batDau(true) }, "Dùng tên mặc định"),
@@ -235,7 +259,7 @@ class LuotChoi {
     this.dichTiengNguoi = true;
   }
   toSave() {
-    return { ma: this.ma, ngay: this.ngay, queue: this.queue, qi: this.qi, played: [...this.played], npcDone: [...this.npcDone], state: this.story.state.ToJson() };
+    return { ma: this.ma, theoDoi: Number(this.v("nguoi_theo_doi")) || 0, ngay: this.ngay, queue: this.queue, qi: this.qi, played: [...this.played], npcDone: [...this.npcDone], state: this.story.state.ToJson() };
   }
   fromSave(s) {
     this.ngay = s.ngay; this.queue = s.queue; this.qi = s.qi;
@@ -303,7 +327,7 @@ let timerHandle = null;
 let CHE_DO = "chu";      // "chu" | "3d"
 let G = null;            // Game3D đang chạy
 let G3D_MOD = null;      // module 3D (tải khi cần)
-function tatG3D() { SINH_TON?.huy(); SINH_TON = null; if (G) { G.huy(); G = null; } CHE_DO = "chu"; document.body.classList.remove("g3d-on"); }
+function tatG3D() { SINH_TON?.huy(); SINH_TON = null; if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on"); }
 
 async function openRole(ma, opts = {}) {
   tatG3D();
@@ -311,7 +335,7 @@ async function openRole(ma, opts = {}) {
   await loadMeta();
   const json = await loadStoryJson(ma);
   L = new LuotChoi(ma, json);
-  const save = saveLoad();
+  const save = saveLoad(ma);
   if (opts.tiepTuc && save && save.ma === ma) L.fromSave(save);
   else { saveWrite(null); L.batDauNgay(1); }
   render3D();
@@ -336,6 +360,7 @@ function doiTenMacDinh(chu) {
 }
 
 function updateSide() {
+  UI.capNhatTheoDoi?.();
   if (!UI.side) return;
   const st = L.story;
   const v = n => Number(L.v(n)) || 0;
@@ -600,6 +625,21 @@ async function render3D() {
   const goiY = h("button", { class: "g3d-goiy" + (matchMedia("(pointer: coarse)").matches ? " cham" : ""), hidden: true, onclick: () => G?.tuongTac() });
   const btnGoc = h("button", { class: "g3d-btn", onclick: () => G?.doiGoc() }, "Góc nhìn 1");
   const toast = h("div", { class: "g3d-toast", "aria-live": "polite" });
+  // tiến độ mục tiêu 1 triệu người theo dõi của Siêu Nhân Hồng
+  const tdSo = h("b", {}), tdThanh = h("i", {}), tdCon = h("span", {});
+  const theoDoiEl = h("div", { class: "g3d-theodoi", title: "Mục tiêu của cả công ty" },
+    h("div", { class: "g3d-theodoi-dau" }, h("span", {}, "Siêu Nhân Hồng"), tdCon), tdSo, h("div", { class: "g3d-theodoi-thanh" }, tdThanh));
+  let tdCu = null;
+  UI.capNhatTheoDoi = () => {
+    const v = Math.max(0, Number(L.v("nguoi_theo_doi")) || 0);
+    if (v === tdCu) return;
+    if (tdCu != null && v > tdCu) { theoDoiEl.classList.add("tang"); setTimeout(() => theoDoiEl.classList.remove("tang"), 1500); }
+    tdCu = v;
+    tdSo.replaceChildren(so(v), h("small", {}, ` / ${so(MUC_TIEU)}`));
+    tdThanh.style.width = Math.min(100, v / MUC_TIEU * 100) + "%";
+    const ngayCon = Math.max(0, 31 - L.ngay);
+    tdCon.textContent = v >= MUC_TIEU ? "Đã đạt mục tiêu" : ngayCon ? `Còn ${ngayCon} ngày` : "Đêm diễn";
+  };
   const man = h("div", { class: "g3d-man" });
   // máy tính: sau hội thoại chuột đang thả tự do, nhắc bấm vào màn hình để điều khiển tiếp (không bật bảng tạm dừng)
   const bamTiep = h("button", { class: "g3d-bamtiep", hidden: true, onclick: () => G?.canvas.requestPointerLock?.() }, "Bấm vào màn hình để đi tiếp");
@@ -631,17 +671,18 @@ async function render3D() {
           h("li", {}, "Cảnh ở ngoài công ty: ra cổng để đi tới đó."),
           h("li", {}, "Hết việc trong ngày, ra cổng để về nhà ngủ. Game tự lưu."))),
       ),
-      h("footer", {}, nutVao, h("button", { class: "btn ghost", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát ra màn hình chính"))));
+      h("footer", {}, nutVao, h("button", { class: "btn ghost", onclick: () => moCaiDat(h, { trongGame: true }) }, "Cài đặt"), h("button", { class: "btn ghost", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát ra màn hình chính"))));
   let daVao = false;
   const moHuongDan = () => { tamNgung.hidden = false; g?.moKhoaChuot(); };
 
   app.replaceChildren(h("div", { class: "g3d" },
     khung,
-    h("div", { class: "g3d-hud-trai" }, h("div", { class: "g3d-the-ngay" }, UI.dayline, ttEl)),
+    h("div", { class: "g3d-hud-trai" }, h("div", { class: "g3d-the-ngay" }, UI.dayline, ttEl), theoDoiEl),
     mucTieu,
     h("div", { class: "g3d-hud-phai" }, btnGoc,
       h("button", { class: "g3d-btn", onclick: bangChiSo }, "Chỉ số"),
       h("button", { class: "g3d-btn", onclick: () => { hdTieuDe.textContent = "Hướng dẫn"; nutVao.textContent = "Tiếp tục"; moHuongDan(); } }, "Hướng dẫn"),
+      h("button", { class: "g3d-btn", onclick: () => { g.moKhoaChuot(); moCaiDat(h, { trongGame: true }); } }, "Cài đặt"),
       h("button", { class: "g3d-btn", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát")),
     h("div", { class: "g3d-tam" }),
     goiY, bamTiep, toast, kt.el, lichSu, keChiSo, tamNgung, man,
@@ -859,6 +900,7 @@ async function render3D() {
   };
 
   // bắt đầu
+  const henTD = setInterval(() => { if (G !== g) clearInterval(henTD); else UI.capNhatTheoDoi?.(); }, 1000);
   g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
   if (!L.queue.length && L.qi === 0 && L.ngay === 1 && !L.played.size) L.batDauNgay(1);
   setTimeout(() => sinhTon?.ngayMoi(), 2500);

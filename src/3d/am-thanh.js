@@ -1,6 +1,7 @@
 // Âm thanh sân khấu tự tạo bằng Web Audio (không cần file nhạc):
 // đêm diễn: trống, bass, giai điệu theo vòng hợp âm Am - F - C - G, kèm tiếng khán giả hò reo;
 // những ngày trước: thử loa (vài tiếng trống, bass lẻ tẻ).
+import { amLuong } from "../cai-dat.js";
 export class AmThanhSanKhau {
   constructor() { this.ctx = null; this.cheDo = "im"; this.amLuong = 0; this.buoc = 0; this.reo = 0; }
   batDau() {
@@ -26,7 +27,7 @@ export class AmThanhSanKhau {
   }
   datCheDo(cheDo) { this.cheDo = cheDo; }
   // âm lượng 0..1 theo khoảng cách tới sân khấu
-  datAmLuong(v) { this.amLuong = v; if (this.ctx) this.tong.gain.setTargetAtTime(v * (this.cheDo === "im" ? 0 : 0.55), this.ctx.currentTime, 0.3); }
+  datAmLuong(v) { this.amLuong = v; if (this.ctx) this.tong.gain.setTargetAtTime(v * amLuong("amNhac") * (this.cheDo === "im" ? 0 : 0.55), this.ctx.currentTime, 0.3); }
   reoHo() { this.reo = 1; }
   // ---- nhạc cụ ----
   kick(t, to = 1) { const c = this.ctx, o = c.createOscillator(), g = c.createGain(); o.frequency.setValueAtTime(140, t); o.frequency.exponentialRampToValueAtTime(42, t + 0.18); g.gain.setValueAtTime(0.9 * to, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.32); o.connect(g); g.connect(this.tong); o.start(t); o.stop(t + 0.35); }

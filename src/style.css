@@ -417,3 +417,41 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .g3d-xiu-nut { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
 @media (max-width: 720px) { .g3d-sinhton { min-width: 0; font-size: 11px; padding: 6px 10px; } .st-dong { grid-template-columns: 64px 1fr; } }
 .g3d.cap-cuu .g3d-hud-trai, .g3d.cap-cuu .g3d-hud-phai, .g3d.cap-cuu .g3d-muctieu, .g3d.cap-cuu .g3d-goiy, .g3d.cap-cuu .g3d-tam { display: none !important; }
+
+/* ---- Bản lưu theo vai ---- */
+.ds-choi-do { display: grid; gap: 10px; margin: 0 0 22px; }
+.ds-choi-do h2 { font-size: 15px; margin: 0; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.ds-choi-do-luoi { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.ds-choi-do .choi-do-tt small { text-transform: none; letter-spacing: 0; font-weight: 600; font-size: 12px; }
+.the-vai { position: relative; }
+.the-vai-luu { position: absolute; top: 8px; right: 8px; z-index: 2; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 999px; }
+.dat-ten-luu { display: grid; gap: 8px; padding: 10px 12px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, transparent); font-size: 13px; }
+
+/* ---- Cài đặt ---- */
+.cd-lop { position: fixed; inset: 0; z-index: 100; background: rgba(8, 7, 5, .6); display: grid; place-items: center; padding: 16px; backdrop-filter: blur(3px); }
+.cd-bang { width: min(520px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; background: #1d1a17; color: #f4eee6; border: 1px solid rgba(255, 255, 255, .12); border-radius: 18px; padding: 18px 20px; display: grid; gap: 16px; box-shadow: 0 20px 60px rgba(0, 0, 0, .5); }
+.cd-bang header, .cd-bang footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.cd-bang h2 { margin: 0; font-size: 20px; }
+.cd-bang h3 { margin: 0 0 6px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #e8702a; }
+.cd-bang section { display: grid; gap: 4px; }
+.cd-hang { display: grid; grid-template-columns: minmax(110px, 1fr) minmax(120px, 1.6fr) 52px; align-items: center; gap: 10px; min-height: 38px; font-size: 14px; }
+.cd-hang output { text-align: right; font-variant-numeric: tabular-nums; color: #cfc6ba; font-size: 13px; }
+.cd-hang input[type=range] { width: 100%; accent-color: #e8702a; }
+.cd-bat { grid-template-columns: 1fr auto; }
+.cd-bat input { width: 20px; height: 20px; accent-color: #e8702a; }
+.cd-chon { grid-template-columns: minmax(110px, 1fr) auto; }
+.cd-nhom { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.cd-nhom button { background: rgba(255, 255, 255, .07); color: inherit; border: 1px solid rgba(255, 255, 255, .12); border-radius: 999px; padding: 6px 12px; font-size: 13px; }
+.cd-nhom button.on { background: #e8702a; border-color: #e8702a; color: #fff; }
+.cd-ghi { margin: 2px 0 0; font-size: 12px; color: #a9a095; }
+@media (max-width: 480px) { .cd-hang { grid-template-columns: 1fr 52px; } .cd-hang input[type=range] { grid-column: 1 / -1; grid-row: 2; } .cd-bat, .cd-chon { grid-template-columns: 1fr auto; } }
+
+/* ---- Mục tiêu người theo dõi trên HUD ---- */
+.g3d-theodoi { margin-top: 8px; background: var(--g-nen); border: 1px solid var(--g-vien); border-radius: 14px; padding: 8px 12px; display: grid; gap: 5px; backdrop-filter: blur(8px); box-shadow: var(--g-bong); min-width: 190px; color: var(--g-chu); }
+.g3d-theodoi-dau { display: flex; justify-content: space-between; gap: 10px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+.g3d-theodoi b { font-size: 15px; font-variant-numeric: tabular-nums; }
+.g3d-theodoi b small { font-weight: 500; opacity: .7; font-size: 12px; }
+.g3d-theodoi-thanh { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, .14); overflow: hidden; }
+.g3d-theodoi-thanh i { display: block; height: 100%; background: linear-gradient(90deg, #ff6fae, #ff9bc8); border-radius: inherit; transition: width .8s ease; }
+.g3d-theodoi.tang b { color: #ff9bc8; }
+@media (max-width: 700px) { .g3d-theodoi { min-width: 0; padding: 6px 10px; } .g3d-theodoi b { font-size: 13px; } }

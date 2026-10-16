@@ -8,6 +8,7 @@ import { GiaoThong } from "./giao-thong.js";
 import { SanKhau, CHO_XEM } from "./san-khau.js";
 import { DongVat } from "./dong-vat.js";
 import { CapCuu } from "./cap-cuu.js";
+import { caiDat, khiDoiCaiDat, cheDoNhe, tiLeDiemAnh } from "../cai-dat.js";
 export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
@@ -33,24 +34,25 @@ export class Game3D {
     this.t = 0;
     this.onNoiChuyen = null; this.onCauThang = null; this.onToiMucTieu = null; this.onGoiY = null;
 
-    this.renderer = new THREE.WebGLRenderer({ antialias: !this.dienThoai, powerPreference: "high-performance" });
-    this.renderer.setPixelRatio(Math.min(devicePixelRatio, this.dienThoai ? 1.5 : 2));
+    this.nhe = cheDoNhe(); // máy yếu: bớt người, xe, chi tiết
+    this.renderer = new THREE.WebGLRenderer({ antialias: !this.nhe && caiDat().chatLuong !== "vua", powerPreference: "high-performance" });
+    this.renderer.setPixelRatio(tiLeDiemAnh());
     this.canvas = this.renderer.domElement; this.canvas.className = "g3d-canvas";
     khung.append(this.canvas);
 
     this.scene = new THREE.Scene();
     this.scene.fog = new THREE.Fog(0xbfd9ec, 40, 130);
-    this.camera = new THREE.PerspectiveCamera(70, 1, 0.05, 1000);
+    this.camera = new THREE.PerspectiveCamera(caiDat().tamNhin, 1, 0.05, 1000);
     this.scene.add(this.camera);
     this.hemi = new THREE.HemisphereLight(0xffffff, 0xb8ad96, 1.6);
     this.nen = new THREE.AmbientLight(0xffffff, 0.55); this.scene.add(this.nen);
     this.mat_troi = new THREE.DirectionalLight(0xfff1d6, 1.6); this.mat_troi.position.set(30, 50, 40);
     this.scene.add(this.hemi, this.mat_troi);
 
-    this.theGioi = taoTheGioi(this.scene, { dienThoai: this.dienThoai });
+    this.theGioi = taoTheGioi(this.scene, { dienThoai: this.nhe });
     this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot });
-    this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.dienThoai });
-    this.sanKhau = new SanKhau(this.scene, { dienThoai: this.dienThoai });
+    this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.nhe });
+    this.sanKhau = new SanKhau(this.scene, { dienThoai: this.nhe });
     this.THREE = THREE; // cho công cụ kiểm thử tự động
     this.dongVat = new DongVat(this.scene, this.theGioi.vat, CAO_TANG);
     this.dem = null; this.moTaTT = "";
@@ -82,6 +84,10 @@ export class Game3D {
     mk.add(vong, cot); mk.visible = false; this.scene.add(mk); this.marker = mk;
 
     this.taoDieuKhien();
+    this._boCaiDat = khiDoiCaiDat(c => {
+      this.renderer.setPixelRatio(tiLeDiemAnh()); this.resize();
+      if (this.camera.fov !== c.tamNhin) { this.camera.fov = c.tamNhin; this.camera.updateProjectionMatrix(); }
+    });
     this.datGio(8, 0);
     this.capNhatGoc();
     this._resize = () => this.resize(); addEventListener("resize", this._resize); this.resize();
@@ -146,6 +152,7 @@ export class Game3D {
     }
   }
   xoay(dx, dy) {
+    const c = caiDat(); dx *= c.doNhay; dy *= c.doNhay * (c.daoTrucY ? -1 : 1);
     this.yaw -= dx;
     this.pitch = Math.max(-1.25, Math.min(1.2, this.pitch - dy));
   }
@@ -415,6 +422,7 @@ export class Game3D {
     this.capCuu = new CapCuu(this, { onPha, onXong });
   }
   huy() {
+    this._boCaiDat?.();
     this.sanKhau?.huy();
     this.renderer.setAnimationLoop(null);
     removeEventListener("resize", this._resize); removeEventListener("keydown", this._keydown); removeEventListener("keyup", this._keyup); removeEventListener("blur", this._blur);
