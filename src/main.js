@@ -651,7 +651,7 @@ async function render3D() {
   app.replaceChildren(h("div", { class: "g3d" }, h("p", { class: "g3d-loading" }, "Đang dựng văn phòng…")));
   G3D_MOD ||= { ...(await import("./3d/game3d.js")), ...(await import("./3d/the-gioi.js")), ...(await import("./3d/bau-troi.js")) };
   if (CHE_DO !== "3d") return;
-  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY, CHO_XEM, CHO_NGOI: CHO_NGOI_3D, thoiTietLuc } = G3D_MOD;
+  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY, CHO_XEM, CHO_NGOI: CHO_NGOI_3D, thoiTietLuc, diaDiemCuaNoi, DIEM_PHO } = G3D_MOD;
   const n = THEO_MA[L.ma];
 
   const khung = h("div", { class: "g3d-khung" });
@@ -953,16 +953,31 @@ async function render3D() {
       const name = L.queue[L.qi];
       const k = L.knots.find(x => x.name === name);
       const noi = tag(k?.tags, "noi"), gio = tag(k?.tags, "gio");
-      const khu = khuCuaNoi(noi) || khuMacDinh();
+      // địa điểm ngoài công ty có bối cảnh 3D riêng, hoặc một góc phố có sẵn trong thành phố
+      const idNgoai = diaDiemCuaNoi(noi), diemPho = !idNgoai && noi && DIEM_PHO[noi];
+      const khu = idNgoai || diemPho ? "ra_ngoai" : (khuCuaNoi(noi) || khuMacDinh());
       const kv = KHU[khu];
-      // đang ở sân khấu mà cảnh tiếp theo ở công ty: đưa về cổng
-      if (!kv.ngoai && g.tang === 0 && g.p.x > 80) g.datViTri(DIEM_DAU_NGAY);
+      // đang ở sân khấu hay ở ngoài mà cảnh tiếp theo ở công ty: đưa về cổng
+      if (!kv.ngoai && khu !== "ra_ngoai" && g.tang === 0 && (g.p.x > 80 || g.oNgoai())) { g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); }
       dongHoiThoai();
       const tenNoi = khu === "ra_ngoai" ? prettyNoi(noi) : kv.ten;
       datMucTieuHUD(tenNoi, khu === "ra_ngoai" ? "Ra cổng công ty để đi" : (huongDanTang(kv) || (gio && gio !== true ? `Lúc ${gio}` : "")));
       if (kv.ngoai) { // sân khấu Đại Nhạc Hội: ra cổng rồi tới thẳng khán đài
         const toi = () => { datMucTieuHUD(""); L.qi++; toiGioCanh(gio); chuyenCanh(kv.ten, () => { g.datViTri(CHO_XEM); moHoiThoai(kv.ten); playKnot(name, v => afterScene(v)); }); };
         if (g.p.x > 80) toi(); else g.datMucTieu("ra_ngoai", toi);
+        return;
+      }
+      if (idNgoai || diemPho) {
+        const dsNguoi = (k?.noi || []).filter(m => m !== L.ma && m in CHO_NGOI_3D);
+        const toi = () => {
+          datMucTieuHUD(""); L.qi++; toiGioCanh(gio); sinhTon?.quaCanh();
+          chuyenCanh(tenNoi, () => {
+            if (idNgoai) g.denNgoai(noi, tenNoi, dsNguoi);
+            else { g.traNpcVeCho(); g.xoaMucTieu(); g.datViTri({ tang: 0, ...diemPho }); if (dsNguoi[0]) g.goiNguoiToi(dsNguoi[0]); }
+            moHoiThoai(tenNoi); playKnot(name, v => afterScene(v));
+          });
+        };
+        if (g.oNgoai() || g.p.x > 80) toi(); else g.datMucTieu("ra_ngoai", toi);
         return;
       }
       const nguoi = (k?.noi || []).find(m => m !== L.ma && m in CHO_NGOI_3D) || null;
@@ -984,28 +999,33 @@ async function render3D() {
       // 19:30 Đại Nhạc Hội: ra cổng, tới khán đài đứng giữa đám đông rồi mới bắt đầu
       dongHoiThoai(); datGioTT(19, 30); updateDayline("19:30", "san_khau_dem_hong");
       const vao = () => { datMucTieuHUD(""); chuyenCanh("Sân khấu Đại Nhạc Hội", () => { g.datViTri(CHO_XEM); moHoiThoai("Đại Nhạc Hội Siêu Nhân"); finale(); }); };
-      if (g.p.x > 80) vao(); else { datMucTieuHUD("Đại Nhạc Hội Siêu Nhân sắp bắt đầu", "Ra cổng để tới sân khấu"); g.datMucTieu("ra_ngoai", vao); }
+      if (g.p.x > 80 || g.oNgoai()) vao(); else { datMucTieuHUD("Đại Nhạc Hội Siêu Nhân sắp bắt đầu", "Ra cổng để tới sân khấu"); g.datMucTieu("ra_ngoai", vao); }
       return;
     }
     dongHoiThoai();
     if (L.phutGame < 17 * 60 + 30) datGioTT(17, 30);
+    if (g.oNgoai()) { hoiDiNgu(); return; } // đang ở ngoài: về thẳng nhà
     datMucTieuHUD("Hết giờ làm. Ra cổng để về nhà", "Có thể nói chuyện với đồng nghiệp trước khi về");
     g.datMucTieu("ra_ngoai", hoiDiNgu);
   };
   const hoiDiNgu = () => {
     g.xoaMucTieu(); datMucTieuHUD("");
-    moHoiThoai("Cổng công ty");
+    moHoiThoai(g.oNgoai() ? "Hết một ngày" : "Cổng công ty");
     UI.choices.replaceChildren(
       h("button", { class: "choice", onclick: () => {
         chuyenCanh(`Sáng ${ngayDayDu(L.ngay + 1)}`, () => {
           const ghiChu = L.batDauNgay(L.ngay + 1);
-          g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0); g.xepLichNgay(); nutTin.hidden = true;
+          g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0); g.xepLichNgay(); nutTin.hidden = true;
           ghiChu.forEach(x => thongBao3D(x));
           soCaPhe = 0; sinhTon?.ngayMoi();
           nextScene3D();
         });
       } }, `Về nhà ngủ, sang ${ngayDayDu(L.ngay + 1)}`),
-      h("button", { class: "choice", onclick: () => { dongHoiThoai(); datMucTieuHUD("Ra cổng để về nhà"); g.datMucTieu("ra_ngoai", hoiDiNgu, { phaiRoiKhoi: true }); } }, "Ở lại thêm"),
+      h("button", { class: "choice", onclick: () => {
+        dongHoiThoai();
+        const o = () => { datMucTieuHUD("Ra cổng để về nhà"); g.datMucTieu("ra_ngoai", hoiDiNgu, { phaiRoiKhoi: true }); };
+        if (g.oNgoai()) chuyenCanh("Quay lại công ty", () => { g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); o(); }); else o();
+      } }, g.oNgoai() ? "Quay lại công ty" : "Ở lại thêm"),
     );
   };
   const noiChuyen3D = ma => {

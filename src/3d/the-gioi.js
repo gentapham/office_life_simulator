@@ -101,7 +101,9 @@ export function khuCuaNoi(noi) {
   if (!noi || noi === true) return null;
   const n = String(noi);
   const co = re => re.test(n);
-  if (co(/san_khau_dem_hong|san_khau_dai_nhac|quang_truong_hong/)) return "san_khau";
+  if (co(/san_khau_dem_hong|san_khau_dai_nhac|quang_truong_hong|canh_ga_dem_hong|hau_truong_dem_hong/)) return "san_khau";
+  if (co(/toa_nha_ban_dem/)) return "sanh";
+  if (co(/phong_pho_phong/)) return "khu_lam_viec";
   if (co(/san_thuong/)) return "san_thuong";
   if (co(/pho_giam_doc/)) return "pho_giam_doc";
   if (co(/giam_doc|ban_tro_ly/)) return "giam_doc";
@@ -317,7 +319,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   }
   for (const l of nhapNhay) l.userData.rieng = true;
   gopKhoi(scene, { deQuy: true });
-  return { vat, denDem, nhapNhay, pho };
+  return { vat, denDem, nhapNhay, pho, nhom: scene };
 }
 
 const dong = m => { m.userData.dong = true; return m; };

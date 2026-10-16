@@ -10,6 +10,17 @@ import { DongVat } from "./dong-vat.js";
 import { CapCuu } from "./cap-cuu.js";
 import { caiDat, khiDoiCaiDat, cheDoNhe, tiLeDiemAnh } from "../cai-dat.js";
 import { am } from "../am-thanh-game.js";
+import { dungNgoaiCanh, NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi, trongNhaNgoai } from "./ngoai-canh.js";
+export { NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi };
+
+// âm thanh nền của từng địa điểm ngoài công ty
+const AM_NGOAI = {
+  quan_oc: { pho: 0.55, dongNguoi: 0.9, beMat: "da" }, dai_tivi: { trongNha: true, dongNguoi: 0.3, beMat: "gach" },
+  karaoke: { trongNha: true, dongNguoi: 0.4, beMat: "tham" }, ca_phe: { trongNha: true, dongNguoi: 0.6, pho: 0.15, beMat: "go" },
+  tiem: { trongNha: true, dongNguoi: 0.2, pho: 0.15, beMat: "gach" }, phong_tro: { pho: 0.3, dongNguoi: 0.3, beMat: "da" },
+  ll_tower: { trongNha: true, dongNguoi: 0.35, beMat: "gach" }, xe_khach: { trongNha: true, pho: 0.6, beMat: "tham" },
+  nha_vuon: { gio: 0.15, beMat: "da" }, sky_ao: { trongNha: true, beMat: "go" }, vung_tau: { bien: 1, gio: 0.3, dongNguoi: 0.3, beMat: "cat" },
+};
 export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
@@ -64,6 +75,7 @@ export class Game3D {
     this.sanKhau = new SanKhau(this.scene, { dienThoai: this.nhe });
     this.THREE = THREE; // cho công cụ kiểm thử tự động
     this.dongVat = new DongVat(this.scene, this.theGioi.vat, CAO_TANG);
+    this.ngoaiCanh = dungNgoaiCanh(this.scene, this.theGioi.vat, { dienThoai: this.nhe });
     this.dem = null; this.moTaTT = "";
 
     // Người chơi: thân (góc nhìn 3) + đôi tay (góc nhìn 1)
@@ -189,7 +201,23 @@ export class Game3D {
   datGio(gio, phut = 0) { this.bauTroi.gio = gio + phut / 60; this.sanKhau.datGio(gio); }
   datNgay(ngay) { this.sanKhau.datNgay(ngay); }
   datThoiTiet(loai) { this.bauTroi.datThoiTiet(loai); }
-  trongNha() { return this.tang < 2 && Math.abs(this.p.x) < 20 && this.p.z > -14 && this.p.z < 14; }
+  trongNha() { return this.oNgoai() ? trongNhaNgoai(this.p.x, this.p.z) : this.tang < 2 && Math.abs(this.p.x) < 20 && this.p.z > -14 && this.p.z < 14; }
+  // đang ở một địa điểm ngoài công ty (các khu dựng riêng ở xa thành phố)
+  oNgoai() { return this.tang === 0 && this.p.z < -300; }
+  viTriNgoai() { const id = this.oNgoai() && this.ngoaiCanh.dangO(); return id ? AM_NGOAI[id] || {} : null; }
+  // đưa người chơi tới một địa điểm ngoài công ty, các nhân vật trong cảnh ngồi/đứng sẵn ở đó
+  denNgoai(noi, ten, dsNguoi = []) {
+    const d = this.ngoaiCanh.chuanBi(noi, ten); if (!d) return false;
+    this.traNpcVeCho(); this.xoaMucTieu();
+    this.datViTri({ tang: 0, ...d.vao });
+    dsNguoi.slice(0, d.cho.length).forEach((ma, i) => {
+      const n = this.npc.find(x => x.ma === ma); if (!n) return;
+      const c = d.cho[i];
+      n.diDao = null; n.ngu = false; n.tuanTra = null; n.nv.vietTay = 0; n.daDoi = true; n.tang = 0; n.nv.group.visible = true;
+      n.nv.ngoi = !!c.ngoi; n.nv.group.position.set(c.x, c.ngoi ? -0.36 : 0, c.z); n.nv.group.rotation.y = c.huong;
+    });
+    return true;
+  }
   capNhatTen() { for (const n of this.npc) n.bang.doiTen(this.tenCua(n.ma), this.tenVai(n.ma)); }
 
   // Mục tiêu: đi tới khu để mở cảnh tiếp theo
@@ -490,8 +518,11 @@ export class Game3D {
     // giao thông: ẩn khi đang ở sâu trong tòa nhà cho nhẹ máy
     this.dongVat.capNhat(dt, this.t, this.p, this.tang);
     if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
-    this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2);
+    this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !this.oNgoai() && (!(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2));
     this.capCuu?.capNhat(dt);
+    this.ngoaiCanh.capNhat(dt, this.t, this.tang === 0 ? this.p : null);
+    const ngoai = this.oNgoai(); // ở địa điểm ngoài công ty: ẩn cả thành phố cho nhẹ máy
+    if (this.theGioi.nhom.visible === ngoai) { this.theGioi.nhom.visible = !ngoai; this.dongVat.nhom.visible = !ngoai; }
     am.capNhatGame(this, dt);
     this.onGoiY?.(this.khoa || this.capCuu ? null : this.timTuongTac());
     this.onKhung?.();
@@ -505,6 +536,7 @@ export class Game3D {
   }
   huy() {
     am.huyGame();
+    this.ngoaiCanh?.huy();
     this._boCaiDat?.();
     this.sanKhau?.huy();
     this.renderer.setAnimationLoop(null);

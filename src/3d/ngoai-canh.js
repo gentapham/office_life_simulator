@@ -703,7 +703,7 @@ function dungKaraoke(k) {
   // chấm sáng trên sàn
   const vlCham = new THREE.MeshBasicMaterial({ map: texTron(), color: 0xffffff, transparent: true, opacity: 0.5, depthWrite: false, blending: THREE.AdditiveBlending, vertexColors: false, fog: false });
   const cham = [];
-  for (let i = 0; i < (k.dienThoai ? 4 : 8); i++) { const m = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.5), vlCham.clone()); m.material.color.set(mauChum[i % 4]); m.rotation.x = -Math.PI / 2; m.position.y = 0.012; k.dong(m); cham.push(m); }
+  for (let i = 0; i < 4; i++) { const m = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.5), vlCham.clone()); m.material.color.set(mauChum[i % 4]); m.rotation.x = -Math.PI / 2; m.position.y = 0.012; k.dong(m); cham.push(m); }
   const mau = new THREE.Color();
   k.moi((dt, t) => {
     mau.setHSL((t * 0.08) % 1, 0.85, 0.55); vlLed.color.copy(mau);
