@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "kiem-tra-ink": "node tools/kiem-tra-ink.mjs --all",
+    "thu-ket-thuc": "node tools/thu-ket-thuc.mjs",
     "dev": "vite",
     "build:story": "node tools/build-story.mjs",
     "build": "node tools/build-story.mjs && vite build",

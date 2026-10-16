@@ -276,7 +276,7 @@ class LuotChoi {
       const npc = 5000 + Math.round(Math.random() * 10000);
       this.set("nguoi_theo_doi", (Number(this.v("nguoi_theo_doi")) || 0) + tang + npc);
     }
-    const coDinh = { 9: 40000, 16: 80000, 23: 60000 }[ngay];
+    const coDinh = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay];
     if (coDinh) { this.set("nguoi_theo_doi", (Number(this.v("nguoi_theo_doi")) || 0) + coDinh); ghiChu.push(`Sự kiện cố định: +${so(coDinh)} người theo dõi`); }
     const luong = THEO_MA[this.ma]?.luong || 0;
     if (ngay === 12 && luong) { this.set("tien", (Number(this.v("tien")) || 0) + luong); ghiChu.push(`Lương tháng về (trễ 2 ngày): +${vnd(luong)}`); }
