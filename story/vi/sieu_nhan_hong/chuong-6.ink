@@ -258,7 +258,7 @@ _Đại Nhạc Hội Siêu Nhân. Sân khấu ngoài trời mới dựng trên q
 _Cánh gà. Một tiếng nữa mở màn, hai tiếng nữa tới lượt bạn. Bạn ngồi trên thùng loa, mũ đặt trên đùi. Qua khe rèm, hàng rào chắn trước sân khấu đã có vài chục người đứng chờ._
 { snh_mai >= 5:
     ~ chung_mai_den_xem = true
-    _Ở góc hàng rào, giữa mấy cây lightstick hồng, có một người không cầm lightstick. Cầm một ly chè. Tóc buộc bằng sợi thun._
+    _Ở hàng đầu, sát hàng rào, giữa mấy cây lightstick hồng, có một người không cầm lightstick. Cầm một ly chè. Tóc buộc bằng sợi thun._
     _Mai. Quán chè đóng sớm một bữa. Cô không tìm cánh gà, không tìm Siêu Nhân Hồng. Cô chỉ đứng đó, múc chè ăn, như đi coi hát ngoài đình._
 }
 * [💬 Tìm {chua_te_deadline}.]

@@ -5,8 +5,8 @@
 // ------------------------------------------------------------
 === designer_0810_kham_mat ===
 # ngay:8 # gio:13:15 # noi:ban_thiet_ke
-_Ngày Thị giác Thế giới. {chi_dai} kéo {editor} ra cửa như kéo một bao gạo biết ngáp._
-chi_dai: Đi khám mắt! Mắt em đỏ như đèn giao thông rồi đó {editor}!
+_Ngày Thị giác Thế giới. {hr} đứng ở bàn {editor}, tay cầm giấy hẹn phòng khám, nụ cười cố định._
+hr: {editor} rảnh không, mình đi khám mắt xíu nha. Mắt em đỏ như đèn giao thông rồi. Công ty đặt lịch rồi đó em.
 editor: *(ngáp)* Em… đang render…
 editor: {designer}… canh giùm tui cái thanh render… tới 100 thì bấm lưu… đừng bấm gì khác…
 * [🤝 "Đi đi, tui canh cho. Thanh render là thứ duy nhất trong công ty chạy đúng tiến độ."]
@@ -192,11 +192,11 @@ sales: *(nhỏ giọng)* Dạ. Còn 47 nghìn tới ngày 10.
 
 // ------------------------------------------------------------
 === designer_0910_ra_mat_mv ===
-# ngay:9 # gio:19:00 # noi:phong_hop_sang_tao # bat_buoc
-_19 giờ. MV đầu tiên của Siêu Nhân Hồng lên sóng. Cả công ty chen trong phòng họp, ăn bánh mì trứng, nhìn con số nhảy._
+# ngay:9 # gio:20:00 # noi:phong_hop_tang_2 # bat_buoc
+_20 giờ. MV "Hồng Hóa Việt Nam" của Siêu Nhân Hồng lên sóng. Cả công ty chen trong phòng họp, ăn bánh mì trứng, nhìn con số nhảy._
 { ds_poster_mv_dep:
     hong_hot: Ảnh bìa đẹp quá trời! Bình luận khen poster còn nhiều hơn khen bài hát nè!
-    ~ follow(25000)
+    ~ follow(15000)
     ~ qh("hong_hot", 3)
 - else:
     hong_hot: Ảnh bìa… ờm… nổi bật. Rất nổi bật.
@@ -208,7 +208,7 @@ _{sieu_nhan_hong} ngồi cuối phòng, xem MV của chính mình, tay nắm ch�
 * [😇 Đi tới ngồi cạnh: "Anh hồi hộp hả?"]
     ~ qh("sieu_nhan_hong", 8)
     sieu_nhan_hong: Dạ… em sợ người ta coi xong thấy… cũng thường.
-    designer: Người thường mà dắt bà cụ qua đường giữa trưa nắng thì hông thường đâu anh.
+    designer: Người thường mà bỏ buổi chụp đi đẩy xe chè cho bà cụ thì hông thường đâu anh.
     sieu_nhan_hong: *(im một lúc)* Chị nói câu đó… em nhớ lâu đó.
 * [📱 Làm thêm một thumbnail đẩy MV lên xu hướng.]
     -> designer_mg_thumbnail_mo_dau

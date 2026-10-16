@@ -98,31 +98,31 @@ Phát là **kình địch tự nhiên** của Nguyên. Nhưng cũng là người
 - **4/10:** Nguyên chọc Tuất ở cổng công ty. Tuất sủa. Phát đứng xem và cười lần đầu tiên trong tháng. Có thể mở quan hệ với Tuất (kẻ thù của kẻ thù).
 
 ### Chương 2: "Fan Ảo, Nợ Thật" (5/10 – 12/10)
-- **6/10:** buổi chụp poster đầu tiên. Phát "tình cờ" đi ngang khung hình 14 lần. Nguyên bỏ đi giúp một bà cụ. Thợ chụp hỏi Phát có muốn chụp vài tấm không. Phát chụp 200 tấm.
-- **9/10:** MV đầu tiên của Nguyên ra mắt. Cùng giờ, Phát đăng lại MV "Công Viên" bản 2015 và mua 50.000 view ảo. **Lựa chọn lớn đầu tiên:** đua view bằng tiền, hay bấm chia sẻ MV của Nguyên.
-- **10/10 – 12/10 (lương về trễ):** lương 8 triệu chưa về, bà quản lý Sky Ảo dán thông báo lên cửa căn 1808. Phát ra **tiệm cầm đồ Cứu Nguy** với cái cúp "Ca khúc của năm 2015". Có thể gặp Chương ở đó, cũng đang cầm đồ.
+- **6/10:** buổi chụp poster đầu tiên. Phát "tình cờ" đi ngang khung hình 14 lần. Khoảng 10:30 Nguyên bỏ ngang để đẩy xe chè của Bà Bảy ra khỏi ổ gà. Phát có thể chạy xuống đẩy phụ. Thợ chụp hỏi Phát có muốn chụp vài tấm không. Phát chụp 200 tấm.
+- **9/10:** 20:00, MV "Hồng Hóa Việt Nam" của Nguyên ra mắt. Cùng giờ, Phát đăng lại MV "Công Viên" bản 2015 và mua 50.000 view ảo. **Lựa chọn lớn đầu tiên:** đua view bằng tiền, hay bấm chia sẻ MV của Nguyên.
+- **10/10 – 12/10 (lương về trễ, 10:00 thứ Hai mới về):** lương 8 triệu chưa về, bà quản lý Sky Ảo dán thông báo lên cửa căn 1808. Phát ra **tiệm cầm đồ Cứu Nguy** với cái cúp "Ca khúc của năm 2015". Có thể gặp Chương ở đó, cũng đang cầm đồ.
 - **11/10:** cả công ty đăng ảnh hồi nhỏ. Phát đăng ảnh năm 2015 và gọi đó là "hồi nhỏ".
 
 ### Chương 3: "Cúp Điện, Còn Giọng" (13/10 – 16/10)
 - **15/10 (mất điện):** cả công ty ngồi ở pantry trong bóng tối. Không micro, không loa, không đèn. Ai đó nói *"Chán quá, có ai hát gì đi"*. Phát hát "Công Viên", không kính đen, không ai thấy mặt. **Cả công ty hát theo, lần đầu tiên thật lòng.** Lĩnh lặng lẽ quay lại bằng điện thoại.
-- **16/10 (gameshow ở Đài Tivi Hóng):** Phát đi theo với tư cách "khách mời phụ". Phần "Hit Một Thời": đài bắt **Nguyên hát "Công Viên"**. Phát đứng trong cánh gà nghe bài của mình qua giọng người khác. ⏱️ Lựa chọn: cướp micro, hát bè từ cánh gà, hay đi ra ngoài.
+- **16/10 (gameshow ở Đài Tivi Hóng, quay 14:00, phát sóng 20:00):** Phát đi theo với tư cách "khách mời phụ". Phần "Hit Một Thời": đài bắt **Nguyên hát "Công Viên"**. Phát đứng trong cánh gà nghe bài của mình qua giọng người khác. ⏱️ Lựa chọn: cướp micro, hát bè từ cánh gà, hay đi ra ngoài.
 
 ### Chương 4: "Vũng Tàu Không Ai Nhận Ra" (17/10 – 20/10)
 - **17/10:** team building. Phát đeo kính đen ra biển, không ai xin chụp hình. Một cô bán cá viên chiên dạo trên bãi nói: *"Con giống thằng ca sĩ hồi xưa ghê. Bài gì mà có cá viên chiên đó."* Phát mua hết xe cá viên của cô.
 - Đêm lửa trại: Thái ngồi cạnh Phát, rất lâu, như sắp nói gì đó. Phát ngủ gục lên vai Thái giữa chừng vì say. Phát không biết sáng hôm sau Thái thức trắng.
-- **20/10 (sinh nhật công ty):** Thắng phát biểu, nhắc tới năm 2015 và "cậu sinh viên ở quán cà phê". Phát được mời lên hát. Hát cho Thắng, cho công ty, hay hát bài mới tự viết mà chưa ai nghe?
+- **20/10 (sinh nhật công ty):** 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G" (hoặc không). Thắng phát biểu, nhắc tới năm 2015 và "cậu sinh viên ở quán cà phê". Phát được mời lên hát. Hát cho Thắng, cho công ty, hay hát bài mới tự viết mà chưa ai nghe?
 
 ### Chương 5: "Hai Phốt Một Ngày" (21/10 – 27/10)
 - **22/10 (kiểm tra thuế):** đoàn thanh tra hỏi về tiền cát-xê đám cưới không có hóa đơn. Thương nhìn Phát. Phát nhìn Thái. Thái nhận hết.
-- **23/10 (sinh nhật Nguyên):** Phát được giao hát chúc mừng sinh nhật trên livestream. Tuất phá bánh kem hồng. Phát có thể cứu tình huống bằng **Hát Cứu Cháy**, hoặc để mặc.
+- **23/10 (sinh nhật Nguyên, livestream 20:00):** Phát được giao hát chúc mừng sinh nhật. Nguyên tỏ tình Vũ, rồi bánh kem hồng đổ (Tuất, hoặc Phát cố tình vấp rồi đổ cho Tuất). Phát có thể cứu tình huống bằng **Hát Cứu Cháy**, hoặc để mặc.
 - **24/10 – 25/10:** **hai chuyện nổ cùng lúc**: một bài bóc phốt *"Phát thuê 80.000 fan ảo"* (từ Confession, Hiếu hoặc con rắn thứ hai), và **clip hát trong bóng tối ngày 15/10** lên xu hướng. Người ta vừa chửi vừa nghe lại bài hát.
 - Phát thấy Thái thức 2 đêm liền để dập phốt cho mình. Lần đầu tiên Phát hỏi: *"Sao anh lo cho em dữ vậy?"*
 - **27/10:** LL mời Nguyên với giá gấp ba, và mời Thái với lương gấp đôi nếu mang Nguyên theo. Phát biết tin. Lần đầu tiên Phát sợ một chuyện không liên quan tới sự nổi tiếng: **Thái đi**.
 
 ### Chương 6: "Công Viên Năm Ấy" (28/10 – 31/10)
-- **29/10 (wifi sập):** 80.000 fan ảo im lặng. Không like, không comment. Phát ra **Công viên Hồ Cá Mập**, ôm đàn ngồi ghế đá, hát cho người thật nghe. Có 7 người dừng lại. Một em bé đòi nghe lại.
-- **30/10:** họp đánh giá. Thắng quyết định có gia hạn hợp đồng cho Phát hay không.
-- **31/10 (Đại Nhạc Hội Siêu Nhân):** Phát là ca sĩ mở màn, là người song ca, là kẻ phá đám, hoặc là khán giả ngồi hàng cuối, tùy những gì đã làm.
+- **29/10 (wifi sập 9:00 – 22:47):** 80.000 fan ảo im lặng. Không like, không comment. Phát ra **Công viên Hồ Cá Mập**, ôm đàn ngồi ghế đá, hát cho người thật nghe. Có 7 người dừng lại. Một em bé đòi nghe lại. Nếu Phát đã bớt tinh tướng, chị quản lý tiệc cưới "Hạnh Phúc Trăm Năm" đặt cọc 20 triệu cả mùa cưới, trừ thẳng vào tiền nhà.
+- **30/10:** 14:00 họp đánh giá. Thắng quyết định có gia hạn hợp đồng (hết hạn 31/10) cho Phát hay không, kèm thưởng 10 triệu nếu gia hạn.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** 18:30 hậu trường, 19:20 cánh gà. Phát là ca sĩ mở màn, người song ca, kẻ phá đám, khán giả đứng sát rào, hoặc (nếu Nguyên đã sang LL) người hát thay trên sân khấu trống. Đêm diễn do cảnh chung kể.
 
 ---
 
@@ -214,18 +214,18 @@ Phát là **kình địch tự nhiên** của Nguyên. Nhưng cũng là người
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `idol_het_thoi_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân** (23:30 ngày 31/10), khi `ket_thuc_su_nghiep` và `chung_cong_ty_song` đã được chốt. Cảnh 31/10 của Phát chỉ là hậu trường (18:30) và cánh gà (19:20); đêm diễn do cảnh chung kể.
+
+Thứ tự xét: Đôi Bạn Thân → Công Viên Hồng → Ca Sĩ Đám Cưới → Tủ Kính → Fan Ảo Bỏ Đi → Sân Khấu Trống. Mặc định: còn hợp đồng thì Ca Sĩ Đám Cưới, không thì Tủ Kính.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🌟 **Công Viên Hồng** | Song ca "Công Viên Hồng" trong Đại Nhạc Hội Siêu Nhân, Độ Nổi Tiếng ≥ 70, Fan Ảo = 0, chiến dịch Siêu Nhân Hồng thành công | Bản remix vào top 1 xu hướng. Cả nước lại hát *"thích ăn chuối chiên"*, lần này kèm điệu nhảy hồng. Sáng 1/11, bà quản lý Sky Ảo gõ cửa căn 1808, Phát tưởng bị đòi nợ. Bà chìa ra cuốn sổ: *"Ký cho con gái cô một chữ."* Tiền nhà thì vẫn phải đóng |
-| 2 | 😄 💒 **Ca Sĩ Đám Cưới Số Một Quận Hóng** | Độ Tinh Tướng ≤ 20, hát ít nhất 8 đám cưới hoặc khai trương, Tiền Nợ về 0, không giành spotlight của Nguyên lần nào sau 16/10 | Một đám cưới cuối tháng 11. Cô dâu chú rể quen nhau vì cùng hát "Công Viên" ở karaoke năm 2015. Họ mời Phát lên hát. Phát tháo kính đen, đặt lên bàn tiệc, hát cho đúng hai người nghe. Cả rạp cưới hát theo. Phát nhận ra: được một người cần thì cũng là nổi tiếng |
-| 3 | 😄 🔒 **Kết thúc bí mật: Đôi Bạn Thân** | Phát hiện "ChuoiChien89" là Thái, tìm thấy tấm ảnh trong ngăn kéo nhà Thái, quan hệ với Thái ≥ 80, Thái từ chối lời mời của LL | Sau Đại Nhạc Hội Siêu Nhân, Phát mua hai bịch chuối chiên ở cổng Sân khấu Đại Nhạc Hội Siêu Nhân, đưa Thái một bịch. *"Mười một năm nay em hát về đôi bạn thân bán cá viên chiên. Mà giờ em mới để ý người đứng cạnh em suốt là ai."* Thái cầm bịch chuối chiên, cả hai điện thoại đổ chuông. Lần đầu tiên, Thái không nghe máy |
-| 4 | 😢 🤖 **Fan Ảo Bỏ Đi** | Fan Ảo ≥ 100.000 khi bị bóc phốt, không dùng clip 15/10 để lật lại | Phát livestream đêm 31/10 để "đáp trả anti fan". Có 3 người xem. Cả 3 đều là tài khoản ảo đã bị khóa, lần lượt hiện dòng chữ: *"Người dùng đã rời khỏi phòng."* Phát vẫn đeo kính đen trong căn phòng tối |
-| 5 | 😢 💍 **Tủ Kính Tiệm Cầm Đồ** | Tiền Nợ ≥ 80.000.000đ vào ngày 30/10, hoặc đã cầm cúp mà không chuộc lại | Hợp đồng không được gia hạn. Phát dọn ra khỏi căn 1808. Đi ngang tiệm cầm đồ Cứu Nguy, Phát thấy cái cúp "Ca khúc của năm 2015" trong tủ kính, dán giá 9.000.000đ. Một cậu sinh viên đứng ngắm, hỏi chủ tiệm: *"Cúp này của ai vậy chú?"* Chủ tiệm: *"Của ca sĩ nào đó, chú quên rồi."* |
-| 6 | 😢 🎤 **Sân Khấu Trống** | Phá chiến dịch Siêu Nhân Hồng thành công ít nhất 3 lần, chiến dịch thất bại | Công ty phá sản. Hợp đồng độc quyền của Phát trở thành tờ giấy vô giá trị. Sáng 1/11, công nhân tháo dỡ Sân khấu Đại Nhạc Hội Siêu Nhân. Phát đứng giữa sân khấu, không micro, hát "Công Viên" cho mấy chú công nhân nghe. Một chú nói: *"Hay đó. Mà dời qua cho tụi chú tháo cái đèn."* Phát nhớ ra mình chưa từng sợ Nguyên. Mình chỉ sợ bị quên |
-
----
+| 1 | 😄 🔒 **Kết thúc bí mật: Đôi Bạn Thân** | Phát hiện "ChuoiChien89" là Thái, thấy tấm ảnh trong ngăn kéo nhà Thái, quan hệ với Thái ≥ 80, Thái từ chối LL | Sau đêm diễn, Phát mua hai bịch chuối chiên ở cổng, đưa Thái một bịch: *"Mười một năm nay em hát về đôi bạn thân bán cá viên chiên. Mà giờ em mới để ý người đứng cạnh em suốt là ai."* Lần đầu tiên Thái không nghe máy. Chuyện sau đó chưa ai biết |
+| 2 | 😄 🌟 **Công Viên Hồng** | Song ca "Công Viên Hồng" với Nguyên (cần nhận lời song ca 28/10, có người làm remix, quan hệ với Nguyên ≥ 30), **hoặc** hát thay khi Nguyên đã sang LL; Fan Ảo = 0; Độ Nổi Tiếng ≥ 35 | Song ca: bản remix vào top 1 xu hướng, cả nước hát *"thích ăn chuối chiên"*. Hát thay: clip Phát hát một mình cạnh vệt đèn hồng trống được 3 triệu lượt xem thật. Công ty sống: Thắng nhắn cảm ơn cả nhà; không sống: Thắng nhắn "bài hát thì giữ được". Sáng 1/11 bà quản lý Sky Ảo xin chữ ký, rồi nhắc tiền nhà |
+| 3 | 😄 💒 **Ca Sĩ Đám Cưới Số Một Quận Hóng** | Độ Tinh Tướng ≤ 50, không giành spotlight của Nguyên sau 16/10, được gia hạn hoặc đã hát ít nhất 2 show, không để cúp nằm ở tiệm cầm đồ | Cuối tháng 11, đám cưới thứ 23 ở Hạnh Phúc Trăm Năm. Phát tháo kính, hát cho hai người nghe, cả rạp hát theo. Được một người cần thì cũng là nổi tiếng |
+| 4 | 😢 💍 **Tủ Kính Tiệm Cầm Đồ** | Đã cầm cúp mà không chuộc trước 30/10, hoặc không được gia hạn mà Tiền Nợ còn ≥ 40.000.000đ | Sáng 2/11 Phát dọn khỏi căn 1808 (tiền nhà 12 triệu một tháng). Trong tủ kính tiệm Cứu Nguy, cái cúp năm 2015 dán giá 9.000.000đ. Cậu sinh viên hỏi *"Cúp này của ai vậy chú?"*, chủ tiệm đã quên |
+| 5 | 😢 🤖 **Fan Ảo Bỏ Đi** | Fan Ảo ≥ 100.000 khi bị bóc phốt, không dùng clip 15/10 để lật lại | 23:30, đêm diễn tan, Phát về căn 1808 livestream "đáp trả anti fan". 3 người xem, cả 3 là tài khoản hoa sen vừa bị khóa |
+| 6 | 😢 🎤 **Sân Khấu Trống** | Phá chiến dịch ít nhất 2 lần (giật micro, tung ảnh, vấp đổ bánh, giữ fan ảo…) và công ty không sống | Công ty phá sản (có nhắc nếu Nguyên đã sang LL). Sáng 1/11 Phát hát "Công Viên" cho mấy chú công nhân tháo sân khấu. Phát nhận ra mình chưa từng sợ Nguyên, chỉ sợ bị quên |
 
 ## 9. Thành tựu
 

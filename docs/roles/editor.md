@@ -72,13 +72,13 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 
 | Hành động | Ảnh hưởng tới Độ Nổi Tiếng | Ghi chú |
 |---|---|---|
-| Dựng MV 9/10 đúng phách, kịp giờ | +30.000 | Cần qua được đêm 8/10 sau khi khám mắt |
-| Dựng highlight gameshow 16/10 trong đêm | +40.000 | Đăng trước 8 giờ sáng 17/10, trước khi lên xe đi Vũng Tàu |
+| Dựng MV 9/10 đúng phách, kịp 20:00 | +20.000 | Cần qua được đêm 8/10 sau khi khám mắt |
+| Dựng highlight gameshow 16/10 trong đêm (quay 14:00, phát 20:00) | +15.000 | Đăng trước 8 giờ sáng 17/10, trước khi lên xe đi Vũng Tàu |
 | Video tiện tay cho Nguyên (mỗi cái) | +5.000 đến +15.000 | Số Đêm Thức Trắng +1 |
-| Đăng clip Phát hát trong bóng tối 15/10 | +30.000 (cho cả Phát và chiến dịch) | Phải hỏi Phát hoặc Thái, không thì thành phốt |
-| **Lộ danh tính và kêu gọi người xem kênh "Cú Đêm Cắt Ghép" follow Siêu Nhân Hồng** | **+150.000** | Mất sự ẩn danh. Công ty sẽ muốn "mua lại" kênh |
+| Clip Phát hát trong bóng tối 15/10 | Không cộng ngay: clip chỉ lan ra ngày 24–25/10 | Gửi Thái thì Thái giữ; tự đăng lên kênh riêng thì thành phốt |
+| **Lộ danh tính và kêu gọi người xem kênh "Cú Đêm Cắt Ghép" follow Siêu Nhân Hồng** (26/10 hoặc 28/10) | **+100.000** | Mất sự ẩn danh. Công ty sẽ muốn "mua lại" kênh |
 | Đình công 1 ngày đúng hôm có sự kiện | −20.000 | Nhưng Công Bị Nhận Vơ có thể giảm mạnh |
-| Dựng video tổng kết chiếu ở Đại Nhạc Hội Siêu Nhân | +50.000 | Đêm 30/10 là đêm trắng cuối cùng |
+| Video "16 năm" chiếu ở Đại Nhạc Hội Siêu Nhân | Do cảnh chung tính (−20.000 nếu không chiếu được) | Ngất lần thứ hai thì video không ai chạy được |
 
 ---
 
@@ -91,31 +91,32 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 
 ### Chương 2: "Khám Mắt" (5/10 – 12/10)
 - **8/10 (Ngày Thị giác Thế giới):** HR bắt Lĩnh đi khám mắt ở Phòng khám Đa Khoa Khỏe Re. Bác sĩ bật đèn, Lĩnh nheo mắt. Bác sĩ tắt đèn, Lĩnh đọc được dòng chữ nhỏ nhất. Kết luận: *"Mắt cậu là mắt cú."*
-- **9/10:** MV ra mắt. Nhật đứng trước cả công ty: *"Cái này anh dựng mất 3 đêm."* Lĩnh ngồi hàng cuối. **Lựa chọn đầu tiên:** im lặng, nói nhỏ với người bên cạnh, hay chỉ vào khung hình có con cú.
+- **9/10, 20:00:** MV "Hồng Hóa Việt Nam" ra mắt. Nhật đứng trước cả công ty: *"Cái này anh dựng mất 3 đêm."* Lĩnh ngồi hàng cuối. **Lựa chọn đầu tiên:** im lặng, nói nhỏ với người bên cạnh, hay chỉ vào khung hình có con cú.
 - Đêm 9/10: Lĩnh dựng thêm một video tiện tay cho Phát (đang bị lấn át). Sáng ra Thái thấy, cười: *"Thuật toán Diu-túp hôm nay thương Phát ghê."*
 - **10/10 – 12/10 (lương về trễ):** cả công ty than. Lĩnh không than, vì tiền quảng cáo kênh riêng về đúng ngày. Ngân để ý: *"Ủa sao Lĩnh hông than gì hết vậy? Có nguồn thu bí mật hả?"*
 
 ### Chương 3: "Render Trong Bóng Tối" (13/10 – 16/10)
 - **15/10 (mất điện):** bản render dở dang. Nếu Bảo cấp điện cho server thì cứu được, không thì làm lại từ đầu.
 - Ở pantry tối om, Phát hát "Công Viên". Lĩnh lặng lẽ quay lại bằng điện thoại. Ánh sáng duy nhất là màn hình điện thoại. Trong khung hình, góc xa nhất, có Thái đang nhìn Phát. Lĩnh dừng quay. Lĩnh biết.
-- **16/10 (gameshow):** Lĩnh dựng highlight trong đêm. Phải chọn đưa vào cảnh nào: Nguyên hát sai lời "Công Viên" (hài, dễ viral) hay cảnh Phát hát bè trong cánh gà (cảm động, làm Thái vui).
+- **16/10 (gameshow, quay 14:00, phát 20:00):** Lĩnh quay hậu trường buổi quay rồi dựng highlight trong đêm. Phải chọn đưa vào cảnh nào: Nguyên hát sai lời "Công Viên" (hài, dễ viral) hay cảnh Phát hát bè trong cánh gà (cảm động, làm Thái vui).
 
 ### Chương 4: "Cú Đêm Ở Vũng Tàu" (17/10 – 20/10)
 - **17/10:** Lĩnh ngủ suốt chuyến xe, ngủ suốt trò chơi tập thể ban ngày (bị Hương kéo dậy 4 lần). Tối tới thì tỉnh nhất đoàn.
 - Đêm lửa trại: Phát say, ngủ trên vai Thái. Lĩnh ngồi bên kia đống lửa. Lĩnh mang chăn ra đắp cho cả hai, rồi về phòng trước.
 - **18/10, 5 giờ sáng:** Lĩnh ra biển ngắm bình minh (lần đầu thấy mặt trời mọc mà không phải vì chưa ngủ). Thái cũng ra biển, để gọi điện. Hai người đứng cạnh nhau 10 phút. Đây là cơ hội nói chuyện riêng duy nhất trong tháng.
-- **20/10 (sinh nhật công ty 16 tuổi):** Lĩnh được giao dựng video "16 năm G-Entertainment". Không có tư liệu cũ, trừ khi Bảo mở ổ cứng "KHÔNG ĐƯỢC MỞ". Nếu có, video có cảnh Phát năm 2015, Thắng năm 21 tuổi, và Bác Bình đứng gác cổng từ ngày đầu. Cả công ty im lặng xem.
+- **20/10 (sinh nhật công ty 16 tuổi):** 18:30 ở Quán Ốc Đêm, sau khi Bác Bình đọc thư "G", bản đầu tiên của video "16 năm G-Entertainment" được chiếu lên tấm vải căng trên vách quán. Không có tư liệu cũ, trừ khi Bảo mở ổ cứng "KHÔNG ĐƯỢC MỞ". Nếu có, video có cảnh Phát năm 2015, Thắng năm 21 tuổi, và Bác Bình đứng gác cổng từ ngày đầu. Cả công ty im lặng xem.
 
 ### Chương 5: "Ai Là Cú Đêm?" (21/10 – 27/10)
 - **22/10 (kiểm tra thuế):** thanh tra hỏi Thương về "nhân viên có thu nhập ngoài từ kênh Diu-túp hay không". Lĩnh đổ mồ hôi. Thương nhìn Lĩnh, Lĩnh nhìn xuống đất.
 - **23/10 (sinh nhật Nguyên):** livestream. Tuất phá bánh. Lĩnh dựng lại cảnh đó thành clip slow-motion có nhạc hành động. Đăng hay không?
 - **26/10:** ai đó (Ngân, Hiếu hoặc Bảo đọc log) phát hiện Lĩnh là "Cú Đêm Cắt Ghép". Thắng gọi Lĩnh lên phòng: *"Em à, kênh của em gần 1 triệu người. Công ty mua lại nhé, 200 triệu. Anh không ép, tùy em."*
-- **27/10:** Lĩnh nghe được Thái nói chuyện điện thoại ở sân thượng: LL mời Thái về, lương gấp đôi. Thái có thể đi. Đêm đó Lĩnh mở thư mục "Thái", lần đầu tiên dựng chúng thành một video hoàn chỉnh.
+- **27/10, 12:30:** Lĩnh nằm ghế bố trên sân thượng, mũ trùm mặt, nghe Thái kể với Sơn: LL mời Thái 36 triệu một tháng, kèm Nguyên, còn Phát thì "thì thôi". Thái có thể đi. Đêm đó Lĩnh mở thư mục "Thái", lần đầu tiên dựng chúng thành một video hoàn chỉnh.
 
 ### Chương 6: "Xuất Nhầm" (28/10 – 31/10)
-- **28/10, 3 giờ sáng:** sau 6 đêm thức trắng, Lĩnh bấm xuất file. Chọn nhầm đích: **fanpage công ty**, hẹn giờ đăng 9 giờ sáng 29/10.
-- **29/10 (wifi sập cả ngày):** video kẹt ở **99%**. Cả công ty than không có mạng. Chỉ có Lĩnh cầu cho mạng đừng bao giờ có lại. Lĩnh có cả ngày để chọn: hủy, để nó đăng, hay tự tay đưa cho Thái xem trước.
-- **30/10:** họp đánh giá. Ô "Người thực hiện" trên báo cáo cuối tháng ghi tên ai?
+- **28/10, 2 giờ 10 sáng:** Lĩnh tải bản nháp video "16 năm" lên kênh riêng, quên chuyển sang riêng tư. Cuối video còn sót đoạn bốn phút "Thai_final_v12" (ảnh bìa: Thái ngủ gục trong xe). **Sáu phút, khoảng 2.000 lượt xem**, Vũ la lên thì Lĩnh mới gỡ. Lĩnh chọn: chép bản gốc vào USB con cú, xóa vĩnh viễn, hay để đó.
+- **28/10, 9 giờ 30:** ảnh chụp khung hình cuối lan trong group. Lĩnh nói đó là "quảng cáo hậu trường", nói thật với Thái, hay im lặng để Nhật nhận lỗi giùm.
+- **29/10 (wifi sập 9:00 – 22:47):** bản chính thức video "16 năm" kẹt ở **99%**. Xin 4G "nghegichua" của Ngân, ngồi chờ, hay hủy để dựng tiếp. 22:47 wifi có lại, video lên 100%.
+- **30/10:** 12:15 trên sân thượng, có thể đưa USB con cú cho Thái. 14:00 họp đánh giá (Phó Giám đốc, danh sách cắt giảm). Ô "Người thực hiện" trên báo cáo cuối tháng ghi tên ai?
 - **31/10 (Đại Nhạc Hội Siêu Nhân):** Lĩnh ngồi ở bàn dựng phía sau khán đài, dựng trực tiếp. Video cuối cùng chiếu trên màn hình lớn sẽ là gì, do Lĩnh quyết định.
 
 ---
@@ -187,31 +188,29 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 
 ### Mẫu 6: 99% (29/10, wifi sập)
 
-> *(Màn hình: "Đang tải lên Fanpage G-Entertainment… 99%". Wifi chập chờn. Ở phòng bên, Bảo đang hét: "Sắp có mạng lại rồi!")*
+> *(Màn hình: "Đang tải lên… 99%". Bản chính thức video "16 năm" cho Đại Nhạc Hội. 9 giờ, wifi sập cả tòa.)*
 >
-> ⏱️ *5 giây để chọn:*
-> 1. ❌ *Bấm hủy.*
->    - Video biến mất khỏi hàng chờ. An toàn. Độ Can Đảm −10. Video vẫn nằm trong thư mục "Thái"
-> 2. 🙈 *Không làm gì. Để số phận quyết định.*
->    - Mạng có lại. Video lên fanpage công ty. Mọi chuyện tiếp theo phụ thuộc vào Độ Can Đảm và nhánh "Người Dựng Đêm"
-> 3. 🏃 *Rút dây mạng máy mình, xóa hàng chờ, chép video vào USB.*
->    - Mở lựa chọn tự tay đưa USB cho Thái trước Đại Nhạc Hội Siêu Nhân
-> 4. *(Không chọn kịp)*: Bảo cắm lại dây. 100%. "Đã đăng." Bạn nhìn màn hình rất lâu
+> 1. 📶 *Xin Ngân phát wifi điện thoại, mật khẩu "nghegichua".*
+>    - 4 giờ chiều video lên 100%. Ngân hết sạch 4G
+> 2. ⏳ *Ngồi chờ.*
+>    - 22:47 wifi có lại, video chạy tới 100%
+> 3. ✂️ *Hủy tải lên, dựng tiếp đoạn kết.*
+>    - Đoạn kết dài thêm mười giây, có con cú trên cánh cửa gỗ. Thêm một đêm thức
 
 ---
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được chốt **sau Đại Nhạc Hội Siêu Nhân** (31/10, 23:30, cảnh `editor_3010_danh_gia`), dùng mọi lựa chọn tới hết 31/10, và đọc `ket_thuc_su_nghiep` / `chung_cong_ty_song` khi nhắc tới Nguyên và công ty. Ngất lần thứ hai thì cảnh 31/10 đặt `chung_video_16_nam = false` (đêm diễn chiếu ảnh của Thắng thay video). Thứ tự xét: bí mật, 2 vui, 3 buồn, rồi mặc định (Công Bị Nhận Vơ ≤ 60 thì Tên Trong Ô, còn lại Tưởng Là Video Quảng Cáo).
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 📺 **Một Triệu Con Cú** | Tự công khai mình là "Cú Đêm Cắt Ghép", không bán kênh, kêu gọi người xem follow Siêu Nhân Hồng, chiến dịch thành công | Đêm 31/10, trên màn hình lớn Sân khấu Đại Nhạc Hội Siêu Nhân, bộ đếm của Nguyên nhảy qua 1.000.000. Cùng lúc, điện thoại Lĩnh rung: kênh "Cú Đêm Cắt Ghép" cũng vừa tròn 1.000.000. Nguyên chỉ xuống khán đài, nói vào micro: *"Cảm ơn con cú!"* Cả nghìn người quay lại nhìn. Lĩnh, lần đầu tiên, không trốn vào bóng tối |
-| 2 | 😄 🏷️ **Tên Trong Ô Người Thực Hiện** | Công Bị Nhận Vơ ≤ 20 vào ngày 30/10, Số Đêm Thức Trắng chưa bao giờ đạt 7, Uy tín ≥ 60 | Báo cáo cuối tháng, ô "Người thực hiện" ghi: *Lĩnh*. Thắng đề bạt Lĩnh làm Trưởng nhóm Hậu kỳ, kèm điều kiện kỳ lạ: *"Từ nay em phải ngủ ban đêm, anh không ép."* Đêm đó Lĩnh ngủ lúc 10 giờ tối. Sáng hôm sau, lần đầu tiên sau 4 năm, Lĩnh kéo rèm đen ở căn 701 ra. Nắng tràn vào, 3 màn hình tắt. Lĩnh hắt hơi |
-| 3 | 😄 🔒 **Kết thúc bí mật: Bản Dựng Cuối Cùng** | Mở nhánh "Người Dựng Đêm", chép video vào USB ngày 29/10 (không để đăng lên fanpage), Độ Can Đảm ≥ 80, tự tay đưa USB cho Thái | Sau Đại Nhạc Hội Siêu Nhân, ở hậu trường. Thái cắm USB vào laptop, xem 4 phút video dựng từ thư mục "Thái": Thái nghe điện thoại, Thái ngủ gật trong xe, Thái cười một mình. Lần đầu tiên Thái thấy mình qua mắt người khác. Thái úp cả hai điện thoại xuống bàn. *"Em dựng đẹp vậy… sao giờ anh mới thấy?"* Im lặng một lúc. *"Đi ăn sáng hông? Anh bao."* Lĩnh: *"Dạ… em chưa ăn sáng bao giờ."* Trời bắt đầu sáng |
-| 4 | 😢 🛏️ **Ngất Ở Bàn Dựng** | Số Đêm Thức Trắng đạt 7 lần thứ hai | Lĩnh ngất trên bàn phím lúc 4 giờ sáng ngày 30/10, mặt in hình các phím. Tỉnh dậy ở Phòng khám Khỏe Re. Trên TV phòng khám, Đại Nhạc Hội Siêu Nhân đang chiếu video tổng kết Lĩnh dựng dở. Cuối video hiện dòng chữ: *"Thực hiện: Nhật."* Lĩnh quay mặt vào tường |
-| 5 | 😢 💌 **Tưởng Là Video Quảng Cáo** | Video lên fanpage công ty ngày 29/10, và Độ Can Đảm < 50 (chưa từng mở nhánh "Người Dựng Đêm") | Video được 50.000 lượt xem. Ai cũng tưởng đó là video "hậu trường quản lý nghệ sĩ" để PR cho công ty. Thái cũng vậy. Thái bình luận dưới video: *"Dựng hay ghê! Em dựng cho Phát một cái y vậy nha, gấp."* Lĩnh đọc bình luận ở căn 701, rèm đen kín. Lĩnh mở phần mềm, bắt đầu dựng video cho Phát |
-| 6 | 😢 🏢 **Kênh Bị Mua** | Bán kênh cho công ty ngày 26/10 | Kênh "Cú Đêm Cắt Ghép" giờ tên "G-Entertainment Official". Logo con cú đeo tai nghe bị thay bằng chữ G 7 màu. Video đầu tiên của kênh mới: Nhật đứng chỉ tay vào màn hình, giới thiệu *"kênh do anh xây dựng từ con số 0"*. Lĩnh bấm nút hủy đăng ký kênh của chính mình. 200 triệu nằm trong tài khoản. Lĩnh không biết mua gì |
+| 1 | 😄 📺 **Một Triệu Con Cú** | Công khai mình là "Cú Đêm Cắt Ghép", không bán kênh, kêu gọi người xem follow Siêu Nhân Hồng, kênh riêng chạm 1.000.000 người đăng ký, chưa ngất lần thứ hai | 23:30, Lĩnh đang cuộn dây cáp trong lều đen thì kênh tròn 1.000.000. Câu tả bộ đếm của Nguyên đổi theo kết thúc sự nghiệp. Nguyên chỉ xuống khán đài: *"Cảm ơn con cú!"* Lĩnh, lần đầu tiên, không trốn vào bóng tối |
+| 2 | 😄 🏷️ **Tên Trong Ô Người Thực Hiện** | Công Bị Nhận Vơ ≤ 20, chưa ngất lần nào, không bán kênh, ô "Người thực hiện" 30/10 có tên Lĩnh. Cũng là kết thúc mặc định khi Công Bị Nhận Vơ ≤ 60 | Hậu trường sau đêm diễn, Thắng đọc biên bản: "Người thực hiện: Lĩnh", đề bạt Trưởng nhóm Hậu kỳ (thêm câu "nếu thứ 2 còn công ty" khi công ty phải hoàn tiền), kèm điều kiện *"Từ nay em phải ngủ ban đêm."* Sáng hôm sau Lĩnh kéo rèm đen ra, nắng tràn vào, Lĩnh hắt hơi |
+| 3 | 😄 🔒 **Kết thúc bí mật: Bản Dựng Cuối Cùng** | Nói thật với Thái về đoạn "Thai_final_v12" (28/10), có bản gốc trong USB con cú, đưa USB cho Thái (30/10) hoặc Độ Can Đảm ≥ 85, chưa ngất lần thứ hai, không bán kênh | 23:30, hậu trường. Thái cắm USB, xem bốn phút. Úp cả hai điện thoại xuống. *"Em dựng đẹp vậy… sao giờ anh mới thấy?"* Rồi: *"Đi ăn sáng hông? Anh bao."* Lĩnh: *"Dạ… em chưa ăn sáng bao giờ."* |
+| 4 | 😢 🛏️ **Ngất Ở Bàn Dựng** | Số Đêm Thức Trắng chạm 7 lần thứ hai | 19:15 đêm 31/10 Lĩnh gục trên bàn trộn hình trong lều đen, không ai khác mở được file "16 năm". 23:30 ở Phòng khám Khỏe Re, TV chiếu lại đêm diễn: thay video là chuỗi ảnh mờ của sếp. Lĩnh quay mặt vào tường |
+| 5 | 😢 💌 **Tưởng Là Video Quảng Cáo** | Nói với mọi người đoạn "Thai_final_v12" là "quảng cáo hậu trường" (28/10) và chưa nói thật với Thái | Sau đêm diễn, Thái vỗ vai Lĩnh: *"Cái đoạn hậu trường hôm 28 dựng hay ghê! Em dựng cho Phát một cái y vậy nha, gấp."* Hai nghìn người đã coi, người cần coi thì tưởng là quảng cáo. Lĩnh về căn 701, mở dự án mới "Phát_tien_tay_215" |
+| 6 | 😢 🏢 **Kênh Bị Mua** | Bán kênh cho công ty ngày 26/10 (chỉ chọn được khi Công Bị Nhận Vơ ≥ 25) | 23:30 ở căn 701. Kênh giờ là "G-Entertainment Official", đăng bản ghi đêm diễn với logo chữ G ở góc, Nhật giới thiệu *"kênh do công ty xây dựng từ con số 0"*. Lĩnh bấm hủy đăng ký kênh của chính mình |
 
 ---
 

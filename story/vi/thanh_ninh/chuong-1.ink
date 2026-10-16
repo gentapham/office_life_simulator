@@ -296,24 +296,3 @@ giam_doc: *(qua điện thoại)* {thanh_ninh} chụp cho anh tấm anh bế con
     _{chi_dai} cũng đang ở đây. Chị là người duy nhất {cho} cho tắm._
     chi_dai: Chủ nhật mà còn sai thằng nhỏ. Em giỏi ghê ha {thanh_ninh}.
 - -> END
-
-// ------------------------------------------------------------
-=== thanh_ninh_0410_toi_dem_nguoc ===
-# ngay:4 # gio:22:10 # noi:nha_thanh_ninh
-_Tối Chủ nhật. Bạn mở ứng dụng ghi chú "SẾP GỌI AI"._
-_{thanh_ninh}: {tn_sep_goi_nhi}. {ran_doc}: {tn_sep_goi_hieu}._
-{ tn_sep_goi_nhi > tn_sep_goi_hieu:
-    _Bạn đang dẫn. Nhưng mới có bốn ngày._
-- else:
-    _Bạn đang thua một người vào công ty được bốn ngày._
-}
-* [📖 Mở sổ tay "Sếp thích nghe gì vào thứ mấy", viết thêm trang về {ran_doc}.]
-    _"{ran_doc}: ngọt, nhớ sinh nhật, cười nhiều. Điểm yếu: chưa biết sếp ghét ai."_
-    ~ tn_ninh(2)
-* [🟢 Lên trang LL-Entertainment, xem ảnh văn phòng xanh lá chuối.]
-    ~ tn_xanh(5)
-    _Họ có máy pha cà phê không hỏng. Họ có ghế công thái học. Họ có slogan "Việc hôm nay phải xong từ hôm qua". Nghe mệt, mà thấy sang._
-* [😴 Đi ngủ sớm.]
-    ~ nghi(20)
-    ~ cang_thang(-5)
-- -> END

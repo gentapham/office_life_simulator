@@ -90,32 +90,30 @@ _Bạn đọc hai lần. Rồi lần thứ ba, chậm hơn._
 
 // ------------------------------------------------------------
 === thanh_ninh_0610_clip_ba_cu ===
-# ngay:6 # gio:10:40 # noi:studio_tang_2
-_Buổi chụp poster đầu tiên. Đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ, thấy một bà cụ bị giật túi ở đầu đường._
-sieu_nhan_hong: Biến hình! Vì công lý và lượt view!
+# ngay:6 # gio:10:30 # noi:studio_tang_2
+_Buổi chụp poster đầu tiên. 10 giờ 30, đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ xuống Đường Hóng: gần đầu Hẻm 69, xe chè của Bà Bảy sụp một bánh xuống ổ gà._
+sieu_nhan_hong: Biến hình! Điều khoản số 3!
 _Và chạy mất. Điều khoản số 3: được bỏ ngang buổi quay để đi giúp người, không bị trừ tiền._
 giam_doc: *(mặt đỏ)* Ơ thế là thế nào? Thuê studio cả buổi đấy! {thanh_ninh}! Gọi bên quản lý nghệ sĩ lên đây!
-_{hong_hot} vẫy bạn, chìa điện thoại: một đoạn clip người qua đường quay, {sieu_nhan_hong} đỡ bà cụ, trả lại túi, cúi chào._
+_{hong_hot} vẫy bạn, chìa điện thoại: một đoạn clip người qua đường quay, {sieu_nhan_hong} ghé vai đẩy xe chè lên khỏi ổ gà, rồi đứng ăn một ly chè bằng ống hút luồn qua mũ._
 * [🙇 "Dạ anh nói chuẩn quá, mất tiền studio! Em gọi anh {quan_ly_idol} lên liền."]
     ~ tn_ninh(2)
     ~ qh("quan_ly_idol", -5)
-    _{quan_ly_idol} lên, bị sếp mắng 15 phút. Clip của bà cụ nằm im trong điện thoại {hong_hot}._
-    ~ follow(30000)
+    _{quan_ly_idol} lên, bị sếp mắng 15 phút. Clip xe chè nằm im trong điện thoại {hong_hot}, chỉ lan theo kiểu người qua đường tự đăng._
 * [🍵 Đưa sếp ly trà, rồi chìa clip: "Anh coi cái này đi anh. Người ta tự quay, mình chưa tốn đồng nào."]
     { tn_diem_ninh >= 45:
         giam_doc: *(xem, im lặng)* … Ừ. Đẩy cái này lên đi. {it} {hong_hot} với {dan_dau_tu} tính giờ đăng.
-        ~ follow(80000)
+        ~ follow(60000)
         ~ tn_ninh(5)
         ~ qh("hong_hot", 10)
         _Tối đó clip lên xu hướng. Lượt xem gấp mười hai lần MV sau này._
     - else:
         giam_doc: Em đừng bênh. Không có kỷ luật thì…
         _Sếp vẫn mắng. Nhưng lúc bạn ra ngoài, sếp lén xem lại clip lần nữa._
-        ~ follow(40000)
     }
 * [😶 Nhắn {hong_hot}: "Đăng liền đi bà, tui lo sếp."]
     ~ qh("hong_hot", 8)
-    ~ follow(50000)
+    ~ follow(40000)
     hong_hot: Ok, đẩy liền!
     _Bạn đứng trước cửa phòng sếp, nói chuyện golf suốt 20 phút để sếp không mở điện thoại._
 - -> END
@@ -234,15 +232,15 @@ giam_doc: *(bước vào, thở dài, ngồi phịch xuống)* {thanh_ninh} ơi,
     - else:
         giam_doc: Để mai anh xem. Hôm nay anh mệt.
         _Mai là thứ 7. MV ra tối nay._
-        ~ follow(5000)
+        ~ follow(-10000)
     }
 * [🙇 "Anh ơi, LL họ ra MV cùng giờ. Anh mà để họ thắng là họ cười anh đó."]
     giam_doc: Cười anh à? *(ký liền, không đọc)*
-    ~ follow(40000)
+    ~ follow(30000)
     ~ tn_ninh(2)
     _Sếp ký vì sợ bị cười. Bạn ghi nhớ: đây là nút bấm nhanh nhất._
 * [😶 Để tờ trình tới mai.]
-    ~ follow(5000)
+    ~ follow(-10000)
     hong_hot: *(nhắn)* Bà ơi tờ trình đâu??? MV lên mà hông có quảng cáo là chết chìm đó!
     ~ qh("hong_hot", -10)
 - -> END
@@ -250,8 +248,7 @@ giam_doc: *(bước vào, thở dài, ngồi phịch xuống)* {thanh_ninh} ơi,
 // ------------------------------------------------------------
 === thanh_ninh_0910_toi_mv ===
 # ngay:9 # gio:20:00 # noi:khu_lam_viec_chung
-_20 giờ. Cả phòng truyền thông ngồi canh màn hình. MV lên sóng. Hôm nay là Ngày Trứng Thế giới, cả ngày căn tin chỉ bán trứng, nên trên bàn ai cũng có một hộp trứng luộc._
-~ follow(40000)
+_20 giờ. Cả phòng truyền thông ngồi canh màn hình. MV "Hồng Hóa Việt Nam" lên kênh Tóp-tóp và Diu-túp của công ty. Hôm nay là Ngày Trứng Thế giới, cả ngày căn tin chỉ bán trứng, nên trên bàn ai cũng có một hộp trứng luộc._
 giam_doc: *(gọi video)* Bao nhiêu rồi em? Bao nhiêu view rồi?
 * [🙇 Báo con số, cộng thêm một câu "Nhờ anh duyệt kịp đó anh!"]
     ~ tn_ninh(2)

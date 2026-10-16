@@ -296,7 +296,7 @@ _Hậu trường Đại Nhạc Hội Siêu Nhân, quảng trường mới phía 
 { nguyen_theo_ll:
     -> vang_nguyen
 }
-{ phat_song_ca and phat_nguoi_remix != "" and qh_sieu_nhan_hong >= 40:
+{ phat_song_ca and phat_nguoi_remix != "" and qh_sieu_nhan_hong >= 30:
     ~ phat_vai_dem_hong = "song_ca"
     _Danh sách tiết mục: "Công Viên Hồng", {sieu_nhan_hong} và {idol_het_thoi}. Tên bạn in cùng cỡ chữ với tên {sieu_nhan_hong}._
 - else:

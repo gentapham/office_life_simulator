@@ -149,7 +149,7 @@ bac_bao_ve: Cháu tìm bác à?
 // ------------------------------------------------------------
 === thanh_ninh_2310_qua_sinh_nhat ===
 # ngay:23 # gio:08:00 # noi:sieu_thi_mini # bat_buoc
-_Sinh nhật {sieu_nhan_hong}, 31 tuổi. Sếp đưa bạn tiền túi lần nữa: mua quà thay mặt công ty. Phong bì mỏng hơn hôm 20/10._
+_Sinh nhật {sieu_nhan_hong}. Sếp đưa bạn tiền túi lần nữa: mua quà thay mặt công ty. Phong bì mỏng hơn hôm 20/10._
 * [🎁 Đi chọn quà. (Minigame "Mua Quà Thay Sếp")]
     -> thanh_ninh_mg_mua_qua
 

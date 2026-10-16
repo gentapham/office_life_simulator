@@ -47,6 +47,8 @@ VAR ds_backdrop_xong = false        // backdrop Đại Nhạc Hội Siêu Nhân 
 VAR ds_gianh_lai_cong = false       // lên tiếng ở buổi đánh giá 30/10
 VAR ds_noi_that_lua_trai = false
 VAR ds_co_hong_coin = false        // mua 200.000đ Hồng Coin ngày 9/10
+VAR ds_nhuom_gang_thai = false     // 4/10 nhuộm găng "Hồng Thái Độ" cho Thái (manh mối font Hồng Ngoại)
+VAR ds_dua_usb_tuat = false        // 30/10 đưa USB không nhãn trong kho của Tuất cho Vũ
 
 // ============================================================
 // HÀM RIÊNG

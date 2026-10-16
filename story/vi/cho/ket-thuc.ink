@@ -18,7 +18,7 @@
 - ch_lac_vung_tau:
     ~ chot_ket_thuc("lac_o_vung_tau")
     -> cho_kt_lac_o_vung_tau
-- ch_so_mon_kho >= 7 && ch_tha_vao_phong_hop && not ch_kho_bi_don && ((ch_co_giay_dem_17 && ch_nguoi_la_dem_17 == ran_thu_hai) || ch_chi_ra_ran_thu_hai):
+- ch_so_mon_kho >= 6 && ch_tha_vao_phong_hop && not ch_kho_bi_don && ((ch_co_giay_dem_17 && ch_nguoi_la_dem_17 == ran_thu_hai) || ch_chi_ra_ran_thu_hai):
     ~ chot_ket_thuc("kho_bau_cong_ly")
     -> cho_kt_kho_bau_cong_ly
 - ch_ghet_hong <= 35 && ch_xuc_xich_tu_nguyen >= 3 && not nguyen_theo_ll && (ch_tang_gang_tay || ch_nam_ngua_dem_hong || ch_nguyen_cong_ve):

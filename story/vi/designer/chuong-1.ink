@@ -191,8 +191,8 @@ _Thứ 7. Quán Sống Ảo đèn vàng, cây xanh, wifi mạnh. Bạn ngồi g�
 { ds_huyen_canh_cua:
     sales: *(ngồi bàn cạnh cửa, đeo kính râm)* Chị cứ làm. Có ai quen là em ho ba tiếng.
 }
-_Trên laptop thứ nhất: poster Siêu Nhân Hồng, bản nháp 3. Trên laptop thứ hai: logo tiệm trà sữa của LL, tông xanh lá chuối._
-* [🥬 Làm job Lá Chuối cho xong, cuối tuần mà.]
+_Trên laptop thứ nhất: poster Siêu Nhân Hồng, bản nháp 3. Trên laptop thứ hai: job mới của Anh Lá Chuối, băng rôn khai trương cho một quán nướng, tông xanh lá chuối._
+* [🥬 Làm băng rôn quán nướng cho xong, cuối tuần mà.]
     ~ ds_job_ll(800000)
     ~ ds_cam(-5)
     ~ nghi(-15)
@@ -247,7 +247,15 @@ _Khoảnh khắc vàng. {cho} ngậm găng tay, nơ lệch, mắt trợn ngượ
         ~ qh("cho", -2)
     }
 - _{cho} biến mất dưới gầm cầu thang. Chiếc găng tay hồng không bao giờ được trả lại. Ít nhất là trong tháng này._
--> END
+_Chiều đó, {quan_ly_idol} gọi, giọng như chạy cả buổi chợ: "{designer} ơi, anh mua được đôi găng trắng size L. Em nhuộm hồng giùm anh được hông? Mai quay rồi."_
+* [🎨 "Gửi đây. Em nhuộm màu 'Hồng Thái Độ', gửi kèm bảng phối màu luôn."]
+    ~ ds_nhuom_gang_thai = true
+    ~ qh("quan_ly_idol", 5)
+    _Tối đó bạn nhuộm, hong khô bằng máy sấy tóc, rồi gửi kèm một file PDF bảng phối màu, góc dưới ký bằng nét chữ bạn hay dùng cho các job riêng. Bạn không nghĩ gì về chuyện đó._
+* [😶 "Em là designer mà anh… Anh ra chợ Phố Cũ hỏi thử coi."]
+    ~ ds_toi(2)
+    _{quan_ly_idol} thở dài qua điện thoại, rồi cúp máy đi tìm tiếp._
+- -> END
 
 // ------------------------------------------------------------
 === designer_0510_giao_ban ===
@@ -336,7 +344,7 @@ bien_kich: Nửa giây cũng đủ để đau nếu đủ sâu.
     bien_kich: Cảm hứng không có deadline, {designer}.
     thuc_tap_sinh: *(run tay, hắt sáng lệch sang mặt {bien_kich})* Dạ em xin lỗi ạ!
 - _Đang chụp tới kiểu thứ 6, {sieu_nhan_hong} bỗng đứng thẳng, nhìn ra cửa sổ._
-sieu_nhan_hong: Có bà cụ đứng giữa ngã tư kìa! Điều khoản số 3! Em đi chút rồi về!
+sieu_nhan_hong: Xe chè của bà cụ sụp ổ gà ngoài đầu hẻm kìa! Điều khoản số 3! Em đi chút rồi về!
 _Và ảnh đi thật. Bộ đồ hồng phóng xuống cầu thang. Đĩa bánh chuối chiên vẫn còn trên ghế._
 truong_phong: Thế bây giờ poster thế nào? Mai cần!
 * [💻 Ghép ảnh {sieu_nhan_hong} vào phông bằng Photoshop. Nhanh, gọn, giả.]
@@ -350,27 +358,28 @@ truong_phong: Thế bây giờ poster thế nào? Mai cần!
 - -> END
 
 = chay_theo
-_Ngã tư Đại lộ Kẹt Xe. {sieu_nhan_hong} một tay dắt bà cụ, một tay giơ lên chặn dòng xe máy. Nắng 11 giờ trưa đổ xuống bộ đồ hồng._
-_Bạn bấm máy. Một khung hình: bàn tay đeo găng hồng nắm bàn tay nhăn nheo. Không cần chỉnh màu._
+_10 giờ 30. Đường Hóng, gần đầu Hẻm 69. Xe chè của Bà Bảy sụp một bánh xuống ổ gà. {sieu_nhan_hong} cúi xuống, hai tay đẩy, bộ đồ hồng căng ra dưới nắng. Xe nhích lên khỏi ổ gà._
+_Bà Bảy múc một ly chè. {sieu_nhan_hong} luồn ống hút qua khe mũ mà uống. Cô cháu gái phụ bán đứng sau xe chè, nhìn {sieu_nhan_hong} như vừa nghe ra một giọng quen._
+_Bạn bấm máy. Một khung hình: bàn tay đeo găng hồng đặt trên thành xe chè, cạnh bàn tay nhăn nheo của bà cụ. Không cần chỉnh màu._
 sieu_nhan_hong: Ủa chị {designer}? Chị đi theo em hả?
-* [😇 "Anh cứ dắt bà đi. Em chụp thôi, hông làm phiền."]
+* [😇 "Anh cứ đẩy xe giùm bà đi. Em chụp thôi, hông làm phiền."]
     ~ qh("sieu_nhan_hong", 15)
     sieu_nhan_hong: *(nhỏ giọng)* Dạ… cảm ơn chị. Ít ai chụp lúc em không tạo dáng.
 * [🧂 "Anh tạo dáng một kiểu đi, cho poster!"]
     sieu_nhan_hong: Biến hình! Vì công lý và lượt view!
-    _Bà cụ cũng giơ tay tạo dáng. Tấm này hài, nhưng không đẹp bằng tấm trước._
+    _Bà Bảy cũng giơ cái vá múc chè lên tạo dáng. Tấm này hài, nhưng không đẹp bằng tấm trước._
     ~ qh("sieu_nhan_hong", 5)
 - ~ ds_toi(10)
 ~ ds_cam(5)
 ~ nghi(-20)
 ~ an(-10)
-_Cả buổi chiều mất trắng. Nhưng trong máy bạn có tấm hình đẹp nhất năm. Bạn gửi cho {hong_hot} kèm dòng "đăng giờ vàng nha bà"._
+_Cả buổi sáng mất trắng. Nhưng trong máy bạn có tấm hình đẹp nhất năm. Bạn gửi cho {hong_hot} kèm dòng "đăng giờ vàng nha bà"._
 -> END
 
 // ------------------------------------------------------------
 === designer_0610_clip_ba_cu ===
 # ngay:6 # gio:20:30 # noi:can_203
-_Tối. Clip ai đó quay cảnh Siêu Nhân Hồng dắt bà cụ đang lên xu hướng._
+_Tối. Clip một người qua đường quay cảnh Siêu Nhân Hồng đẩy xe chè cho bà cụ đang lên xu hướng._
 { ds_chay_theo_ba_cu:
     hong_hot: BÀ ƠI! Tấm hình bà chụp lên xu hướng chung với clip luôn! Ét o ét, fanpage nổ thông báo!
     ~ follow(15000)

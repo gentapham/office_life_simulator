@@ -7,6 +7,9 @@
 // ------------------------------------------------------------
 === cho_tudo_ran_doc ===
 # npc:ran_doc # noi:tang_1
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _{ran_doc} ngồi ở bàn, cuốn sổ tay mở, bút bi gõ gõ. Mùi trà sữa. Mùi giấy sổ. Mùi bực bội đã quen thuộc như mùi nhà._
 _Người này nhìn bạn. Không cười, không xua. Nhìn như nhìn một quân cờ._
 ran_doc: Bla bla… TUẤT… bla bla… HỒNG… bla? # phu_de:{cho}, mày cũng ghét cái tên mặc đồ hồng đó hả? Vậy mình là đồng minh rồi.
@@ -34,6 +37,9 @@ ran_doc: Bla bla… TUẤT… bla bla… HỒNG… bla? # phu_de:{cho}, mày cũ
 // ------------------------------------------------------------
 === cho_tudo_giam_doc ===
 # npc:giam_doc # noi:phong_giam_doc
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Phòng kính tầng 2. Cửa có dán nội quy số 8. Bạn vẫn không biết đọc._
 ~ ch_vao_phong_gd = ch_vao_phong_gd + 1
 giam_doc: *(đang gọi điện, giọng ngọt bất thường)* Bla bla… bla bla bla… bla. # phu_de:Dạ vâng, em biết khoản vay đến hạn 15/11 rồi ạ… dạ… em sẽ thu xếp…
@@ -58,6 +64,9 @@ giam_doc: TUẤT. Bla bla… KHÔNG… bla bla bla. # phu_de:{cho}. Lại vào �
 // ------------------------------------------------------------
 === cho_tudo_truong_phong ===
 # npc:truong_phong # noi:phong_hop_tang_2
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Phòng họp "Sáng Tạo". {truong_phong} ngồi một mình trước bảng trắng. Trên bảng: một sơ đồ rất phức tạp. Tiêu đề: "Họp để giảm số cuộc họp"._
 truong_phong: Bla bla… TUẤT. Bla bla bla… bla. # phu_de:{cho} à. Vào họp với anh 5 phút. Không ai chịu họp với anh nữa.
 * [🐾 Nhảy lên ghế, ngồi ngay ngắn như người tham dự.]
@@ -79,6 +88,9 @@ truong_phong: Bla bla… TUẤT. Bla bla bla… bla. # phu_de:{cho} à. Vào h�
 // ------------------------------------------------------------
 === cho_tudo_thanh_ninh ===
 # npc:thanh_ninh # noi:ban_tro_ly
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Bàn trợ lý ngoài phòng giám đốc. {thanh_ninh} đang soạn bài phát biểu khen sếp. Mùi nước hoa ngọt. Thỉnh thoảng có thêm một mùi lạ: sàn đá lạnh, điều hòa rất mạnh, kính rất cao._
 thanh_ninh: Bla… TUẤT… KHÔNG… bla bla. # phu_de:{cho}, không được vô phòng sếp nha. Ra ngoài. Chó gì mà cứ thích vô chỗ sang.
 * [🐾 Ngồi trước bàn, làm mặt ngoan.]
@@ -104,6 +116,9 @@ thanh_ninh: Bla… TUẤT… KHÔNG… bla bla. # phu_de:{cho}, không được 
 // ------------------------------------------------------------
 === cho_tudo_hong_hot ===
 # npc:hong_hot # noi:tang_1
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Bàn mạng xã hội. Ba cái điện thoại, một cái đèn tròn, một túi khô gà. {hong_hot} thấy bạn là mắt sáng rỡ như thấy tin nóng._
 hong_hot: TUẤT! Bla bla bla… bla bla! # phu_de:{cho}! Nghe gì chưa? Clip của em được nhiều view hơn anh {sieu_nhan_hong} rồi đó! Ối dồi ôi!
 * [🦴 Mắt cún nhìn túi khô gà.]
@@ -128,6 +143,9 @@ hong_hot: TUẤT! Bla bla bla… bla bla! # phu_de:{cho}! Nghe gì chưa? Clip c
 // ------------------------------------------------------------
 === cho_tudo_con_ong_chau_cha ===
 # npc:con_ong_chau_cha # noi:sanh_tang_tret
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _{con_ong_chau_cha} bước vào lúc 10 giờ, kính râm, ly cà phê đá, đôi giày da bóng đến mức bạn thấy mặt mình trong đó._
 con_ong_chau_cha: Bla bla… TUẤT. Bla bla bla? # phu_de:Ê {cho}. Sao mày không có cái ổ xịn hơn? Để anh mua cho cái ổ nhập khẩu.
 * [🐾 Vẫy đuôi, đi theo người này.]
@@ -151,6 +169,9 @@ con_ong_chau_cha: Bla bla… TUẤT. Bla bla bla? # phu_de:Ê {cho}. Sao mày kh
 // ------------------------------------------------------------
 === cho_tudo_chua_te_deadline ===
 # npc:chua_te_deadline # noi:tang_1
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Bàn của {chua_te_deadline}. Người này đang nằm ngửa trên ghế, điện thoại trên mặt, lướt Tóp-tóp. Mùi cà phê sữa đá. Mùi gối ôm màu hồng._
 chua_te_deadline: Bla… TUẤT. Bla bla. # phu_de:Ờ, {cho}. Chill đi, còn sớm mà.
 { ch_tra_usb_cho_vu:
@@ -179,6 +200,9 @@ chua_te_deadline: Bla… TUẤT. Bla bla. # phu_de:Ờ, {cho}. Chill đi, còn s
 // ------------------------------------------------------------
 === cho_tudo_thuc_tap_sinh ===
 # npc:thuc_tap_sinh # noi:pantry
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Pantry. {thuc_tap_sinh} đang úp mì gói, tay áo xắn cao, chân trái đứng chân phải xếp ghế. Người này lúc nào cũng làm ba việc một lúc._
 thuc_tap_sinh: Dạ… TUẤT! Bla bla… bla bla! # phu_de:Dạ… à không, {cho}! Em đó hả! Ăn mì với anh hông?
 + [🦴 Ngồi chờ phần mì.]
@@ -198,6 +222,9 @@ thuc_tap_sinh: Dạ… TUẤT! Bla bla… bla bla! # phu_de:Dạ… à không, {
 // ------------------------------------------------------------
 === cho_tudo_ke_toan ===
 # npc:ke_toan # noi:phong_ke_toan
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Phòng kế toán. Mọi thứ dán nhãn. Bút bi dán nhãn. Ly nước dán nhãn. Cái ghế cho khách dán nhãn "khách". {ke_toan} ngẩng lên, nhìn bạn qua cặp kính._
 ke_toan: TUẤT. Bla bla… bla bla bla? # phu_de:{cho}. Lại tới xin ăn hả? Hóa đơn đâu em?
 * [🦴 Ngồi ngay ngắn, mắt cún.]
@@ -223,6 +250,9 @@ ke_toan: TUẤT. Bla bla… bla bla bla? # phu_de:{cho}. Lại tới xin ăn h�
 // ------------------------------------------------------------
 === cho_tudo_hr ===
 # npc:hr # noi:phong_hr
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Phòng HR. Mùi trà ô long, mùi giấy in còn nóng, mùi một tập hồ sơ màu hồng giấu trong ngăn kéo khóa. {hr} cười. Như mọi khi._
 hr: TUẤT. Bla bla… bla bla bla… bla. # phu_de:{cho}. Em rảnh không, vào phòng anh uống trà xíu.
 _Câu này, ai trong công ty nghe cũng sợ. Bạn thì không hiểu, nên bạn vào._
@@ -245,6 +275,9 @@ _Câu này, ai trong công ty nghe cũng sợ. Bạn thì không hiểu, nên b�
 // ------------------------------------------------------------
 === cho_tudo_it ===
 # npc:it # noi:phong_server
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Phòng server. Ấm. Ù ù. Ba màn hình. Năm ly mì rỗng. {it} ngồi trong bóng tối như một con cú, không nói gì._
 it: … # phu_de:…
 _Người này đẩy một cái hộp các-tông về phía bạn bằng chân. Bên trong lót áo cũ. Một cái ổ. Người này làm ổ cho bạn trong phòng server từ bao giờ?_
@@ -266,6 +299,9 @@ _Người này đẩy một cái hộp các-tông về phía bạn bằng chân.
 // ------------------------------------------------------------
 === cho_tudo_idol_het_thoi ===
 # npc:idol_het_thoi # noi:studio_tang_2
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Studio. {idol_het_thoi} đeo kính đen trong nhà, luyện thanh. "Mi mi mi… Công Viên… mi mi…". Mùi cá viên chiên trong túi áo._
 idol_het_thoi: Bla bla… TUẤT. Bla bla bla… bla? # phu_de:{cho}. Em biết anh là ai không? Hồi anh còn nổi, chưa có ai mặc đồ hồng hết.
 { ch_ghet_hong >= 70:
@@ -292,6 +328,9 @@ idol_het_thoi: Bla bla… TUẤT. Bla bla bla… bla? # phu_de:{cho}. Em biết 
 // ------------------------------------------------------------
 === cho_tudo_quan_ly_idol ===
 # npc:quan_ly_idol # noi:phong_nghe_si
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _{quan_ly_idol} đi qua sảnh, hai điện thoại kẹp hai tai, một ly cà phê kẹp giữa cằm và vai. Như một cái cây treo đầy thứ._
 quan_ly_idol: Bla bla! Bla bla… TUẤT… bla bla bla! # phu_de:Khoan anh nghe máy chút! {cho}, tránh đường giùm anh, chuyện này để anh lo!
 * [🐾 Đi theo, ngồi cạnh khi người này ngồi xuống.]
@@ -314,6 +353,9 @@ quan_ly_idol: Bla bla! Bla bla… TUẤT… bla bla bla! # phu_de:Khoan anh nghe
 // ------------------------------------------------------------
 === cho_tudo_bien_kich ===
 # npc:bien_kich # noi:san_thuong
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Sân thượng. {bien_kich} ngồi trên ghế nhựa "tìm cảm hứng". Cuốn sổ trên đùi. Mùi mực, mùi mèo, mùi cà phê sống ảo._
 bien_kich: Bla bla… TUẤT… bla bla bla. # phu_de:{cho}. Em là nhân vật phụ hay nhất trong tiểu thuyết của chị đó. Chương 2: "Con chó lùi lại".
 * [👃 Đánh hơi cuốn sổ.]
@@ -333,6 +375,9 @@ bien_kich: Bla bla… TUẤT… bla bla bla. # phu_de:{cho}. Em là nhân vật 
 // ------------------------------------------------------------
 === cho_tudo_editor ===
 # npc:editor # noi:phong_dung_phim
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Phòng dựng phim tối om. 13 giờ. {editor} vừa tới, mắt như chưa tới._
 editor: *(ngáp)* Bla… TUẤT… bla bla. # phu_de:{cho}… đợi render xong… rồi chơi…
 * [😴 Nằm cạnh, chờ render.]
@@ -353,6 +398,9 @@ editor: *(ngáp)* Bla… TUẤT… bla bla. # phu_de:{cho}… đợi render xong
 // ------------------------------------------------------------
 === cho_tudo_designer ===
 # npc:designer # noi:ban_thiet_ke
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Bàn thiết kế. Hai laptop. Một cái mở file poster hồng. Một cái… vừa đóng lại khi nghe tiếng móng bạn gõ trên sàn._
 designer: Bla! Bla… TUẤT. Bla bla. # phu_de:Hú hồn! À… {cho}. Tưởng ai.
 * [😤 Gầm gừ khi người này giơ điện thoại lên.]
@@ -378,6 +426,9 @@ designer: Bla! Bla… TUẤT. Bla bla. # phu_de:Hú hồn! À… {cho}. Tưởng
 // ------------------------------------------------------------
 === cho_tudo_sales ===
 # npc:sales # noi:sanh_tang_tret
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _{sales} vừa gọi điện vừa đi, giọng to, tự tin, như đang mua cả tòa nhà._
 sales: Bla bla bla… bla bla! TUẤT! Bla bla bla bla! # phu_de:Dạ deal này chắc kèo! À {cho}! Chị mới ký hợp đồng tài trợ cho em đó, 10 tấn xúc xích, tin chị đi!
 _10 tấn xúc xích. Bạn không biết 10 tấn là bao nhiêu. Nhưng nghe có chữ XÚC XÍCH là đủ._
@@ -400,6 +451,9 @@ _10 tấn xúc xích. Bạn không biết 10 tấn là bao nhiêu. Nhưng nghe c
 // ------------------------------------------------------------
 === cho_tudo_chi_dai ===
 # npc:chi_dai # noi:kho_su_kien
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Kho sự kiện. Mùi dầu xoa bóp. Bao cát tập đấm treo giữa kho. {chi_dai} đang đấm bao cát, mỗi cú một tên người (bạn đoán vậy)._
 chi_dai: TUẤT. Bla bla… ĂN… bla bla? # phu_de:{cho}. Ăn cơm chưa? Ngồi xuống chị cho thịt kho.
 + [🦴 Ngồi xuống, ăn thịt kho.]
@@ -420,6 +474,9 @@ chi_dai: TUẤT. Bla bla… ĂN… bla bla? # phu_de:{cho}. Ăn cơm chưa? Ng�
 // ------------------------------------------------------------
 === cho_tudo_dan_dau_tu ===
 # npc:dan_dau_tu # noi:ban_so_lieu
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Bàn số liệu. Màn hình đầy đường đỏ đường xanh. {dan_dau_tu} nhìn chằm chằm, miệng lẩm bẩm như cầu kinh._
 dan_dau_tu: Bla bla… bla bla… bla. TUẤT? Bla bla bla. # phu_de:Đáy rồi… đáy thật rồi… {cho}? Mày có tiền không? Lần này là lên thật.
 * [🪙 Ngậm đồng xu trong khe ghế, đặt lên bàn người này.]
@@ -439,6 +496,9 @@ dan_dau_tu: Bla bla… bla bla… bla. TUẤT? Bla bla bla. # phu_de:Đáy rồi
 // ------------------------------------------------------------
 === cho_tudo_thanh_xin_nghi ===
 # npc:thanh_xin_nghi # noi:tang_1
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 { RANDOM(1, 3) == 1:
     _Bàn điều phối trống. Lại trống. Trên ghế: mùi kim tuyến, mùi đèn sân khấu, mùi nước súc miệng bạc hà._
     _Bạn ngửi cái ghế. Bạn nằm lên ghế. Bạn trở thành người duy nhất có mặt ở bàn điều phối hôm nay._
@@ -467,6 +527,9 @@ thanh_xin_nghi: *(thì thầm)* Bla… TUẤT… bla bla bla. # phu_de:{cho}… 
 // ------------------------------------------------------------
 === cho_tudo_bac_bao_ve ===
 # npc:bac_bao_ve # noi:choi_bao_ve
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Chòi bảo vệ. Ấm trà. Radio. Ghế bố. Ổ của bạn. Mùi trà mạn và dầu gió. Nhà._
 bac_bao_ve: TUẤT. Bla bla. # phu_de:{cho}. Lại đây.
 + [🙃 Nằm ngửa.]
@@ -495,6 +558,9 @@ bac_bao_ve: TUẤT. Bla bla. # phu_de:{cho}. Lại đây.
 // ------------------------------------------------------------
 === cho_tudo_sieu_nhan_hong ===
 # npc:sieu_nhan_hong # noi:cong_cong_ty
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Mùi bánh chuối chiên. Mùi nước hoa hồng. Lông gáy bạn dựng lên trước cả khi bạn kịp quay đầu._
 { ch_ghet_hong >= 60:
     sieu_nhan_hong: Gâu! Gâu gâu! Bla bla… TUẤT… {ch_hong()}… bla bla! # phu_de:Gâu! Gâu gâu! {cho} ơi, nhìn anh nè, hôm nay anh hồng hơn hôm qua!
@@ -547,6 +613,9 @@ _Mùi bánh chuối chiên. Mùi nước hoa hồng. Lông gáy bạn dựng lê
 // NPC phụ: anh shipper Tèo, kẻ thù số hai
 === cho_tudo_shipper_teo ===
 # npc:shipper_teo # noi:cong_cong_ty # ngau_nhien
+{ ch_lac_vung_tau:
+    -> cho_tudo_xa_nha
+}
 _Tiếng xe máy. Tiếng còi. Mũ bảo hiểm. Mùi xăng và 40 loại đồ ăn. KẺ THÙ SỐ HAI._
 shipper_teo: Bla bla bla… bla bla! # phu_de:Hàng tới rồi, ra lấy giùm em!
 + [😤 Sủa. Như mọi lần.]
@@ -572,3 +641,10 @@ shipper_teo: Bla bla bla… bla bla! # phu_de:Hàng tới rồi, ra lấy giùm 
     _Không phải ghét. Đó là luyện tập. Có một cái mũ khác, màu hồng, bạn cần tập trước._
 + -> END
 - -> END
+
+
+// ------------------------------------------------------------
+// Khi Tuất đã lạc ở Vũng Tàu, không gặp được ai ở công ty
+=== cho_tudo_xa_nha ===
+_Gió từ phía thành phố thổi tới. Bạn tưởng mình ngửi thấy người đó. Bạn quay đầu. Chỉ có mùi biển._
+-> END

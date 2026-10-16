@@ -52,7 +52,7 @@ _23 giờ 30. Quảng trường vắng dần. Bạn ngồi trên bậc sân kh�
 // 😄 1. KPI THẬT 100%
 // ============================================================
 === sales_kt_kpi_that_100 ===
-# dieu_kien:ket_thuc_kpi_that_100
+# ket_thuc:kpi_that_100 # loai:co_hau
 _Thứ hai, 2/11. Họp giao ban đầu tháng. Màn hình chiếu lại hai cột: KPI Trên Giấy và KPI Thật._
 _Lần đầu tiên trong lịch sử Phòng Kinh doanh, hai cột cao bằng nhau. {dan_dau_tu} phải phóng to màn hình để chắc mình không nhìn nhầm._
 dan_dau_tu: Ờ… khớp. Khớp thật. Anh nhìn chart ba năm nay, lần đầu thấy cột của em không có trục tung ảo.
@@ -80,7 +80,7 @@ _Có những thứ thật tới mức không cần ai xem._
 // 😄 2. SONG KIẾM HỢP BÍCH
 // ============================================================
 === sales_kt_song_kiem_hop_bich ===
-# dieu_kien:ket_thuc_song_kiem_hop_bich
+# ket_thuc:song_kiem_hop_bich # loai:co_hau
 _Tháng 12. Tầng trệt chung cư mini Phố Mới. Một mặt bằng 20 mét vuông, tường trắng, cửa kính, chưa có bàn._
 _Biển hiệu: "QUỲNH VẼ, HUYỀN BÁN". Do {designer} thiết kế. Dòng chữ nhỏ bên dưới: "Khách hàng không được sửa biển hiệu."_
 designer: Biển hiệu này là bản 1. Không sửa.
@@ -106,7 +106,7 @@ sales: Dạ. Em đi sớm. Thật.
 // 😄 3. KEVIN TRỘN CÓ THẬT (bí mật)
 // ============================================================
 === sales_kt_kevin_tron_co_that ===
-# dieu_kien:ket_thuc_kevin_tron_co_that
+# ket_thuc:kevin_tron_co_that # loai:co_hau # bi_mat
 {
 - ket_thuc_su_nghiep == "sieu_sao_hang_a":
     _Một tuần sau Đại Nhạc Hội Siêu Nhân. Siêu Nhân Hồng vượt một triệu người theo dõi. Nhưng thứ đứng top tìm kiếm trên mạng lại là…_
@@ -136,7 +136,7 @@ _Mr. Kevin Trộn chưa bao giờ có thật. Nhưng từ hôm nay, anh ta có m
 // 😢 4. BONG BÓNG BỂ
 // ============================================================
 === sales_kt_bong_bong_be ===
-# dieu_kien:ket_thuc_bong_bong_be
+# ket_thuc:bong_bong_be # loai:buon
 _Thứ hai, 2/11. {hong_hot} đang livestream fanpage, lia máy quanh văn phòng chào khán giả. "Đây là bàn của chị {sales}, sales số một công ty nè mọi người!"_
 _Máy quay dừng 2 giây trên màn hình laptop của bạn. Trang tra cứu doanh nghiệp đang mở. Dòng chữ đỏ:_
 _"BTT Global: Không tìm thấy doanh nghiệp."_
@@ -164,7 +164,7 @@ _Bạn bước ra Đại lộ Kẹt Xe. Điện thoại rung liên tục. Lần 
 // 😢 5. CÔ BÉ CHĂN CỪU
 // ============================================================
 === sales_kt_co_be_chan_cuu ===
-# dieu_kien:ket_thuc_co_be_chan_cuu
+# ket_thuc:co_be_chan_cuu # loai:buon
 _Bạn nhìn lại cả buổi tối. Bạn đã đứng dưới khán đài, giữa đám đông, không phải sau cánh gà. Không ai cần bạn ở cánh gà nữa._
 { sl_ky_sua_chua:
     _Logo Sữa Chua Hồng Hào nằm trên sân khấu của bạn. Bà cụ ký thật, tiền về thật. Nhưng lúc MC đọc tên nhà tài trợ, dưới khán đài có người xì xào: "Lại nhà tài trợ của {sales} hả? Chắc cũng như BTT thôi."_
@@ -195,7 +195,7 @@ _Bạn đổi tên nó thành "Lần sau nói thật". Rồi cất điện tho�
 // 😢 6. TỦ LẠNH TRỐNG MÃI
 // ============================================================
 === sales_kt_tu_lanh_trong_mai ===
-# dieu_kien:ket_thuc_tu_lanh_trong_mai
+# ket_thuc:tu_lanh_trong_mai # loai:buon
 _Ngày 1 tháng 11. Sổ Tạm Ứng: {sl_tam_ung}đ chưa có hóa đơn. Ví: gần như bằng không. {ke_toan} trừ dần vào lương, mỗi tháng một ít, đều đặn như mưa._
 _Bạn trả lại căn 1203 ở Sky Ảo. Sofa nhung, đèn chùm, view thành phố: trả hết. Trong tủ lạnh chỉ còn chai tương ớt. Bạn để lại cho người thuê sau._
 _Hẻm 69. Gác lửng. Bà Tư chủ trọ đưa chìa khóa: "Phòng này mát, 2 triệu 4 tính luôn điện, sát vách thằng {dan_dau_tu}. Mùng 5 bà lên thu nghen con."_

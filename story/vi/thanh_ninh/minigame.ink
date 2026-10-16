@@ -178,8 +178,8 @@ _9 giờ 30, sếp mở máy. Qua vách kính, bạn thấy sếp ngồi im 4 ph
 { ngay == 23:
     _Quà sinh nhật cho {sieu_nhan_hong}, thay mặt công ty. Phong bì: 500.000đ. Phải có màu hồng. Phải "xịn". Phải vừa túi tiền một ông giám đốc đã ba tháng không nhận lương._
 - else:
-    _Quà 20/10 cho 7 chị em: {ke_toan}, {chi_dai}, {hong_hot}, {bien_kich}, {designer}, {sales}… và chính bạn. Phong bì: 2.100.000đ._
-    _Mua giống nhau thì bị chê. Mua khác nhau thì drama "ai được quà xịn hơn"._
+    _Quà 20/10 cho 7 chị em: {ke_toan}, {chi_dai}, {hong_hot}, {bien_kich}, {designer}, {sales}… và chính bạn. Tiền sếp đưa: 700.000đ._
+    _Sếp dặn 7 chiếc khăn cam giống hệt nhau, đúng màu logo. Siêu thị có mười hai sắc cam. Chỉ một sắc là đúng._
 }
 -> END
 
@@ -189,7 +189,7 @@ _9 giờ 30, sếp mở máy. Qua vách kính, bạn thấy sếp ngồi im 4 ph
     _Một chiếc gối ôm hình chuối chiên màu hồng và một hộp bánh chuối chiên làm riêng. {sieu_nhan_hong} ôm cái gối, im lặng rất lâu dưới chiếc mũ._
     ~ qh("sieu_nhan_hong", 10)
 - else:
-    _Bảy món quà khác nhau, cùng một kiểu gói. Không ai được hơn ai. Riêng quà của bạn: một hũ trà sen. Rẻ nhất trong bảy._
+    _Bảy chiếc khăn cam giống hệt nhau, đúng màu logo, gói cùng một kiểu. Không ai được hơn ai, kể cả bạn._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
 }
 giam_doc: Khéo! Em mua khéo thật. Đây, anh thưởng.
@@ -205,8 +205,8 @@ _Sếp đưa thêm một thỏi son mẫu thử đối tác biếu. Màu "Hồng
     _Bạn mua một chiếc khăn lụa xanh lá chuối vì "đang giảm giá". {sieu_nhan_hong} cầm khăn, cười gượng. Điều khoản số 2: phải có màu hồng._
     ~ qh("sieu_nhan_hong", -5)
 - else:
-    _Quà của bạn là túi xách. Quà của {chi_dai} là móc khóa. {hong_hot} đăng ảnh so sánh lên group trong 4 phút._
-    chi_dai: {thanh_ninh}. Móc khóa hả. Ừ.
+    _Siêu thị chỉ còn sáu chiếc đúng màu. Chiếc thứ bảy cam đậm hơn, và nó rơi vào tay {chi_dai}. {hong_hot} đăng ảnh so sánh lên group trong 4 phút._
+    chi_dai: {thanh_ninh}. Cam đậm hả. Ừ.
     ~ tn_gian(15)
 }
 ~ tn_ninh(-3)

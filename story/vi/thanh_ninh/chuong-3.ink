@@ -33,8 +33,8 @@ _{thanh_xin_nghi} sống ở Ven Đô. Nhà ông ấy trồng rau muống._
 // ------------------------------------------------------------
 === thanh_ninh_1410_tivi_toi ===
 # ngay:14 # gio:20:15 # noi:nha_thanh_ninh
-_Đài Tivi Hóng, vòng 2 "Giọng Ca Ước Mơ". Thí sinh số 17 bước ra trong bộ đồ kim tuyến. Bạn suýt sặc trà._
-_Thí sinh số 17 là {thanh_xin_nghi}. Người đang "gặt lúa"._
+_Đài Tivi Hóng, vòng 2 "Giọng Ca Ước Mơ". Thí sinh số 27 bước ra trong bộ đồ kim tuyến. Bạn suýt sặc trà._
+_Thí sinh số 27 là {thanh_xin_nghi}. Người đang "gặt lúa"._
 _Ông ấy hát hay. Hay thật sự._
 ~ phat_hien(son_thi_hat)
 * [🙇 Chụp màn hình gửi sếp: "Anh ơi, gặt lúa nè anh."]
@@ -42,7 +42,7 @@ _Ông ấy hát hay. Hay thật sự._
     giam_doc: *(5 phút sau)* … Hát hay đấy. Nhưng mai bảo nó lên gặp anh. Không, bảo {hr}.
     ~ qh("thanh_xin_nghi", -15)
     ~ qh("hr", 5)
-* [😶 Bình chọn cho thí sinh số 17. Không kể ai.]
+* [😶 Bình chọn cho thí sinh số 27. Không kể ai.]
     ~ qh("thanh_xin_nghi", 5)
     ~ tien_cong(-10000)
     _Một tin nhắn bình chọn 10.000đ. Một bí mật giá 10.000đ._
@@ -90,8 +90,8 @@ giam_doc: *(thấy ly trà trong tay bạn)* Trà… nguội rồi à em.
 
 // ------------------------------------------------------------
 === thanh_ninh_1510_hop_nen ===
-# ngay:15 # gio:09:30 # noi:phong_hop_tang_2
-_{truong_phong} họp thắp nến ở phòng "Sáng Tạo". Chín cây nến thơm mùi vani. {thuc_tap_sinh} tung ra 5 cục sạc dự phòng: "Dạ mọi người dùng chung ạ!"_
+# ngay:15 # gio:10:00 # noi:phong_hop_tang_2
+_{truong_phong} họp thắp nến ở phòng "Sáng Tạo". Sáu cây nến thơm mùi vani. {thuc_tap_sinh} tung ra 5 cục sạc dự phòng: "Dạ mọi người dùng chung ạ!"_
 truong_phong: Mất điện nhưng không mất tinh thần. Mình sync nhanh 5 phút nhé. {thanh_ninh}, sếp có dự không?
 * [🚪 "Sếp đang nghỉ. Anh họp đi, có gì em tóm tắt lại cho sếp."]
     ~ qh("truong_phong", 3)
@@ -166,31 +166,29 @@ quan_ly_idol: Khoan, anh nghe máy chút. {thanh_ninh} viết giùm ảnh vài c
 * [✍️ Viết cho {sieu_nhan_hong} một bài ngắn, thật, về việc giúp người.]
     _"Em không giỏi gì hết. Em chỉ thích giúp người. Nếu mọi người thấy em, em giúp được nhiều người hơn."_
     sieu_nhan_hong: *(đọc xong, sụt sịt)* {thanh_ninh}… {thanh_ninh} viết cho anh mãi được hông?
-    ~ follow(20000)
+    ~ follow(10000)
     ~ qh("sieu_nhan_hong", 15)
     _Lần đầu có người muốn bạn viết cho họ, mà không cần bạn khen họ._
 * [🙇 Viết bài cảm ơn sếp {giam_doc} là chính, {sieu_nhan_hong} là phụ.]
     sieu_nhan_hong: "…cảm ơn anh {giam_doc}, người có tầm nhìn…" Ờm… anh đọc vậy hả?
     ~ tn_ninh(4)
-    ~ follow(3000)
     _Phóng viên ngáp. Sếp xem qua màn hình, cười rạng rỡ._
 * [👇 "{thuc_tap_sinh}, viết giùm chị đi, em có văn."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em viết liền ạ! *(viết rất nghiêm túc, như soạn tờ trình tín dụng)*
-    ~ follow(8000)
     _Bài phát biểu có câu "Lợi nhuận kỳ vọng của sự tử tế". Không ai hiểu, nhưng nghe sang._
 - -> END
 
 // ------------------------------------------------------------
 === thanh_ninh_1610_xep_cho_ngoi ===
-# ngay:16 # gio:10:00 # noi:dai_tivi_hong # bat_buoc
+# ngay:16 # gio:13:40 # noi:dai_tivi_hong # bat_buoc
 _Gameshow sắp bắt đầu. Hàng ghế khách mời có camera chĩa vào, chỉ còn đúng một ghế. Sếp, {con_ong_chau_cha}, {truong_phong}, ai cũng muốn ngồi._
 _Và theo kịch bản, ghế đó là của {sieu_nhan_hong} trong phần giới thiệu._
 giam_doc: *(nói nhỏ)* {thanh_ninh}, chỗ nào được lên hình thì xếp anh nhé. Anh không ép, tùy em.
 * [🙇 Xếp sếp ngồi ghế khách mời. {sieu_nhan_hong} ra đứng cánh gà.]
     ~ tn_ninh(10)
     ~ tn_sep_goi("nhi")
-    ~ follow(-15000)
+    ~ follow(-10000)
     _Phần giới thiệu, máy quay lia qua sếp 12 giây. {sieu_nhan_hong} thì 3 giây. Khán giả hỏi nhau: "Siêu nhân đâu?"_
     ~ qh("sieu_nhan_hong", -5)
 * [🤝 Giữ ghế cho {sieu_nhan_hong}, xếp sếp ngồi hàng đầu khán giả "để bao quát".]
@@ -203,8 +201,7 @@ giam_doc: *(nói nhỏ)* {thanh_ninh}, chỗ nào được lên hình thì xếp
     ~ qh("truong_phong", -10)
     ~ tn_ninh(-3)
     truong_phong: *(nghiến răng)* Thế nhé. Ghi nhận.
-- _Phần "Hit Một Thời", {sieu_nhan_hong} hát "Công Viên" sai lời: "…bán khoai chiên tại công viên…". Từ cánh gà có ai đó hát bè đúng lời._
-~ follow(80000)
+- _14 giờ bắt đầu quay. Phần "Hit Một Thời", {sieu_nhan_hong} hát "Công Viên" sai lời: "…bán khoai chiên tại công viên…". Từ cánh gà có ai đó hát bè đúng lời. 20 giờ tối nay mới phát sóng._
 -> END
 
 // ------------------------------------------------------------

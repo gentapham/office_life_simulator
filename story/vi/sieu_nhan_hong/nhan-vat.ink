@@ -175,7 +175,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* Ủa anh. Gì đó? Còn sớm mà.
 - chua_te_deadline: Mà nè anh. Quà hồng của anh… em để hết trên bàn đó. {quan_ly_idol} nói anh tặng để có content hả?
 * [🙂 "Hông phải. Anh tặng vì anh muốn tặng."]
     { snh_tim_hong >= 60:
-        chua_te_deadline: *(ngừng lướt)* …Ừ. Em bắt đầu thấy vậy.
+        chua_te_deadline: *(ngừng lướt)* …Ừ. Anh tốt với ai cũng vậy mà. Em biết. Anh coi em như em út trong team.
         ~ snh_tim(5)
     - else:
         chua_te_deadline: Ok ok. Em hiểu mà. *(lướt tiếp)* Content xịn.

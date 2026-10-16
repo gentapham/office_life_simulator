@@ -179,7 +179,7 @@ hr: Dọn hết đi em. Rác cả mà.
 # ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
 _Họp đánh giá cuối tháng. Màn hình chiếu: "Thành tích Phòng Sản xuất Nội dung, tháng 10/2026". {truong_phong} cầm bút laser._
 truong_phong: Tháng này phòng mình có 6 poster được chia sẻ nhiều nhất. Đều là… ý tưởng của anh.
-_Slide chiếu poster dắt bà cụ. Phông gameshow vẽ tay. Backdrop Đại Nhạc Hội Siêu Nhân. Chú thích: "Ý tưởng: {truong_phong}"._
+_Slide chiếu poster xe chè. Phông gameshow vẽ tay. Backdrop Đại Nhạc Hội Siêu Nhân. Chú thích: "Ý tưởng: {truong_phong}"._
 _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng ghi "Đạo diễn: {truong_phong}"._ # hen_gio:8
 * [🎨 Đứng lên: "Dạ anh, cho em xin feedback cụ thể: ý tưởng nào là của anh ạ?"]
     ~ ds_gianh_lai_cong = true

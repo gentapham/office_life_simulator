@@ -18,7 +18,7 @@
     ~ chot_ket_thuc("doi_ban_than")
     -> idol_het_thoi_kt_doi_ban_than
 // 1. Công Viên Hồng: đã song ca (hoặc hát thay khi Nguyên vắng), không còn fan ảo
-- (phat_song_ca_dem_hong or phat_vai_dem_hong == "thay_nguyen") and phat_fan_ao == 0 and phat_noi_tieng >= 40:
+- (phat_song_ca_dem_hong or phat_vai_dem_hong == "thay_nguyen") and phat_fan_ao == 0 and phat_noi_tieng >= 35:
     ~ chot_ket_thuc("cong_vien_hong")
     -> idol_het_thoi_kt_cong_vien_hong
 // 2. Ca Sĩ Đám Cưới

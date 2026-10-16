@@ -193,9 +193,9 @@ _20 giờ 30. Đèn sân khấu tắt hết. Một luồng sáng hồng duy nh�
     _Tiếng vỗ tay lẻ tẻ. Nhưng ở hàng rào, cả {cong_ty} vỗ tay to như cả nghìn người._
 }
 { vai == "sieu_nhan_hong" && chung_mai_den_xem:
-    _Ở góc hàng rào, giữa mấy cây lightstick hồng, có một ly chè giơ lên. Chỉ một ly. Bạn thấy nó trước cả màn hình LED._
+    _Ở hàng đầu, sát hàng rào, giữa mấy cây lightstick hồng, có một ly chè giơ lên. Chỉ một ly. Bạn thấy nó trước cả màn hình LED._
 - else:
-    _Ở góc hàng rào, giữa mấy cây lightstick hồng, có một cô gái buộc tóc bằng sợi thun giơ lên một ly chè. Không ai hiểu vì sao. Cô cũng không giải thích._
+    _Ở hàng đầu, sát hàng rào, giữa mấy cây lightstick hồng, có một cô gái buộc tóc bằng sợi thun giơ lên một ly chè. Không ai hiểu vì sao. Cô cũng không giải thích._
 }
 { so_scandal + chung_so_meme >= 3:
     _Đâu đó ở hàng rào có người hét: "Siêu Nhân Gâu!". Cả quảng trường cười ồ, rồi hô theo. Một nửa người xem ở đây vì meme._
@@ -263,7 +263,7 @@ _Giữa bài, bạn đứng giữa sân khấu, thở dốc. Tay đưa lên mũ.
     - "hieu":
         _Bài cuối. Bạn mời {ran_doc} lên sân khấu. Tháo mũ. "Hai mươi năm trước, anh nhốt em này trong nhà kho. Anh xin lỗi. Trước mặt mọi người." {ran_doc} đứng im rất lâu, rồi gật đầu một cái._
     - "mai":
-        _Bài cuối. Bạn tháo mũ. Không nhìn màn hình LED, không nhìn máy quay. Bạn nhìn về góc hàng rào, chỗ có một ly chè đang giơ lên. Rồi bạn cười, không tạo dáng._
+        _Bài cuối. Bạn tháo mũ. Không nhìn màn hình LED, không nhìn máy quay. Bạn nhìn về hàng đầu, chỗ có một ly chè đang giơ lên. Rồi bạn cười, không tạo dáng._
     }
 }
 {

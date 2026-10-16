@@ -83,7 +83,7 @@ _Sếp đang đi thẳng về phía bạn. Phía sau bạn là {ran_doc}._
 
 // ------------------------------------------------------------
 === thanh_ninh_1710_lua_trai ===
-# ngay:17 # gio:21:00 # noi:bai_bien_vung_tau # bat_buoc
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc
 _Đêm lửa trại. Sếp đã ngà ngà, vừa hứa tăng lương cả công ty. {hong_hot} quay được. {sales} vừa hứa mời "ca sĩ nổi tiếng nhất nước" về hát Đại Nhạc Hội Siêu Nhân._
 _{sieu_nhan_hong} tháo mũ, kể chuyện hồi nhỏ từng nhốt một đứa nhỏ trong nhà kho. {ran_doc} ngồi bất động như tượng._
 _Rồi tới trò "nói thật". Chai nước suối quay, dừng ngay trước mặt bạn._
@@ -168,8 +168,8 @@ chi_dai: {thanh_ninh}, lại đây. Bài một: một sự kiện có ba thứ. 
 
 // ------------------------------------------------------------
 === thanh_ninh_1810_xe_ve ===
-# ngay:18 # gio:15:00 # noi:xe_ve_thanh_pho
-_Xe về thành phố. Ai cũng giận ai. {con_ong_chau_cha} nhìn điện thoại, mặt trắng bệch: penthouse đang bị rao bán. Clip sếp say hứa tăng lương đã có 4.000 lượt xem trong group._
+# ngay:18 # gio:12:30 # noi:xe_ve_thanh_pho
+_Trưa, xe về thành phố, 15 giờ mới tới cổng công ty. Ai cũng giận ai. {con_ong_chau_cha} nhìn điện thoại, mặt trắng bệch: penthouse đang bị rao bán. Clip sếp say hứa tăng lương đã có 4.000 lượt xem trong group._
 giam_doc: *(nhắn riêng bạn)* {thanh_ninh} ơi… cái clip tối qua… em xử lý giúp anh được không?
 * [🙇 "Dạ để em nói khéo với {hong_hot} gỡ xuống nha anh."]
     ~ tn_ninh(4)
@@ -190,9 +190,9 @@ giam_doc: *(nhắn riêng bạn)* {thanh_ninh} ơi… cái clip tối qua… em 
 === thanh_ninh_1910_giao_ban_lanh ===
 # ngay:19 # gio:08:30 # noi:phong_hop_tang_2
 _Họp giao ban. Không ai nhìn mặt ai. {truong_phong} không dám nói "5 phút"._
-_Sau họp, sếp gọi bạn vào, đưa một phong bì: tiền túi của sếp, để mua quà 20/10 cho 7 chị em._
-giam_doc: Em mua giúp anh nhé. Mỗi người một món. Đừng giống nhau quá, mà cũng đừng khác nhau quá. Anh không ép, tùy em.
-_Bạn đếm: 7 người, trong đó có chính bạn. Phong bì có 2.100.000đ._
+_Sau họp, sếp gọi bạn vào, đưa 700.000đ tiền túi của sếp, để mua quà 20/10 cho 7 chị em. Phong bì 2.100.000đ cho các chị em thì {ke_toan} lo riêng._
+giam_doc: Em mua giúp anh 7 cái khăn màu cam, giống hệt nhau, đúng màu logo. Giống nhau cho khỏi ai tị. Anh không ép, tùy em.
+_Bạn đếm: 7 người, trong đó có chính bạn. Bảy cái khăn giống hệt nhau. Ba năm nay, đây là lần đầu sếp nghĩ ra một cách không ai cãi được._
 * [🙇 "Dạ anh tinh tế quá anh ơi! Em lo liền."]
     ~ tn_ninh(2)
     ~ tn_khen()
@@ -229,10 +229,10 @@ _Ngày Phụ nữ Việt Nam và sinh nhật công ty 16 tuổi. Siêu thị min
 
 // ------------------------------------------------------------
 === thanh_ninh_2010_thu_g ===
-# ngay:20 # gio:09:00 # noi:choi_bao_ve
+# ngay:20 # gio:07:50 # noi:choi_bao_ve
 _Sáng nay có một lá thư tay ký "G" tới chòi bảo vệ. Kèm một phong bì dán kín: "Chỉ mở khi công ty sắp sập"._
 _Sếp chưa tới. Bác {bac_bao_ve} đang ngồi cầm thư, nhìn ra cổng rất lâu._
-bac_bao_ve: Cháu {thanh_ninh}. Bác đang nghĩ có nên đọc lá thư này trước cả công ty không.
+bac_bao_ve: Cháu {thanh_ninh}. Tối nay ở Quán Ốc Đêm, bác đang nghĩ có nên đọc lá thư này trước cả công ty không.
 * [🙇 "Dạ bác để con đưa lên sếp, sếp đọc trước rồi quyết nha bác."]
     bac_bao_ve: Thư không gửi anh ấy. Bác giữ.
     ~ qh("bac_bao_ve", -3)
@@ -269,8 +269,13 @@ designer: *(đứng ở cửa, mắt vô hồn)* Sửa nhẹ thôi là sửa cá
 
 // ------------------------------------------------------------
 === thanh_ninh_2010_quan_oc ===
-# ngay:20 # gio:21:30 # noi:quan_oc_dem # bat_buoc
-_Quán Ốc Đêm, rồi karaoke Hát Cho Nhau Nghe. Sếp say. Sếp cầm micro, đứng lên bàn._
+# ngay:20 # gio:21:00 # noi:karaoke # bat_buoc
+{ qh_bac_bao_ve >= 8:
+    _Lúc 18 giờ 30 ở Quán Ốc Đêm, Bác {bac_bao_ve} đã đứng lên đọc lá thư G: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G." Cả quán im phăng phắc. Sếp cúi đầu rất lâu._
+- else:
+    _Lúc 18 giờ 30 ở Quán Ốc Đêm, Bác {bac_bao_ve} chỉ đứng lên chúc một câu "Sinh nhật vui vẻ". Lá thư vẫn trong túi áo bác._
+}
+_21 giờ, tăng hai ở Karaoke Chú Sáu. Sếp say. Sếp cầm micro, đứng lên bàn._
 giam_doc: Các em! Mười sáu năm! Anh tuyên bố… tháng sau… tăng lương… hai mươi…
 _Bạn ngồi sát sếp nhất. Tay bạn với tới cái micro được. Còn {hong_hot} đã giơ điện thoại lên._ # hen_gio:5
 * [🎤 Giật nhẹ micro: "Dạ anh hát tặng chị em bài 'Công Viên' đi anh!"]

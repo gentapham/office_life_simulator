@@ -44,7 +44,7 @@ _23 giờ. Khán đài vắng dần. Bạn ngồi trên bậc thấp nhất, đi
 // ------------------------------------------------------------
 // 😄 📊 NHÀ PHÂN TÍCH THẬT SỰ
 === dan_dau_tu_kt_nha_phan_tich ===
-# noi:phong_gac_lung
+# ket_thuc:nha_phan_tich # loai:co_hau # noi:phong_gac_lung
 { chung_cong_ty_song:
     _Sáng thứ hai, 2/11. Họp giao ban. {giam_doc} gọi tên bạn, đứng dậy, bắt tay._
     giam_doc: Từ tháng 11, {dan_dau_tu} là Trưởng nhóm Dữ liệu. Lương tăng 20%. Anh không ép, nhưng anh cũng không cho em từ chối.
@@ -73,7 +73,7 @@ _Bên kia hẻm, Karaoke Chú Sáu vọng sang "Công Viên". Sai lời. Bạn h
 // ------------------------------------------------------------
 // 😄 🧾 SỔ NỢ VỀ 0
 === dan_dau_tu_kt_so_no_ve_0 ===
-# noi:tang_1
+# ket_thuc:so_no_ve_0 # loai:co_hau # noi:tang_1
 { ddt_so_no == 0:
     _Thứ hai, 2/11. Bạn đi một vòng công ty với cuốn sổ nợ, cuốn sổ đã theo bạn ba năm. Trang nào cũng gạch xóa. Hôm nay chỉ để đóng sổ._
 - else:
@@ -99,7 +99,7 @@ _Bạn mở cuốn sổ nợ, trang cuối, viết một chữ "0". Rồi gấp 
 // ------------------------------------------------------------
 // 😄 🔒 KẾT THÚC BÍ MẬT: THƯ TAY CỦA G
 === dan_dau_tu_kt_thu_tay_g ===
-# noi:choi_bao_ve
+# ket_thuc:thu_tay_g # loai:co_hau # bi_mat # noi:choi_bao_ve
 _23 giờ 45. Bộ đàm rè lên giọng Bác {bac_bao_ve}: "Cậu {dan_dau_tu} ra chòi bác một lát."_
 _Chòi bảo vệ. Ấm trà nóng. {cho} nằm trên ghế bố, đuôi vẫy nhẹ khi thấy bạn, lần đầu tiên trong tháng._
 bac_bao_ve: Thư ông ấy trả lời, tới chiều hôm qua, ngày 30. Bác giữ tới đêm nay, đợi xong việc mới đưa. Có một đoạn cho cậu.
@@ -119,7 +119,7 @@ _Mà vẫn đẹp._
 // ------------------------------------------------------------
 // 😢 💀 CÒN CÁI NỊT
 === dan_dau_tu_kt_con_cai_nit ===
-# noi:ben_xe_ven_do
+# ket_thuc:con_cai_nit # loai:buon # noi:ben_xe_ven_do
 _Sáng 1/11. Bến xe Ven Đô. Bạn ngồi trên băng ghế nhựa, ba lô dưới chân. Trong ba lô: hai bộ đồ, cái sạc điện thoại, và cuốn sổ nợ không còn trang trống._
 _Tài khoản đầu tư: {ddt_tai_khoan} đồng. Sổ nợ: {ddt_so_no} đồng. Còn cái nịt. Mà cái nịt bạn cũng đem cầm rồi._
 _Xe đi miền Tây lăn bánh lúc 8 giờ. Bạn ngồi cạnh cửa sổ. Thành Phố Ước Mơ lùi dần, rồi nhỏ dần, như một cây nến đỏ._
@@ -139,7 +139,7 @@ _Xe đã lăn bánh được 200 cây số._
 // ------------------------------------------------------------
 // 😢 🪤 CHỦ NỢ VÂY THÀNH
 === dan_dau_tu_kt_chu_no_vay_thanh ===
-# noi:phong_hop_tang_2
+# ket_thuc:chu_no_vay_thanh # loai:buon # noi:phong_hop_tang_2
 _Thứ hai, 2/11. {hr} mời cả phòng ban lên phòng họp, tay cầm tập hồ sơ màu hồng. Hai dòng đầu đã đọc từ hôm 30: {thuc_tap_sinh}, {thanh_xin_nghi}._
 hr: Em chỉ muốn cùng mọi người nhìn lại hành trình. Dòng ba… anh {dan_dau_tu}. Có ai muốn nói gì cho anh {dan_dau_tu} không ạ?
 _Phòng họp im lặng. Bạn nhìn quanh. Tám người từng cho bạn mượn tiền đang ngồi trong phòng._
@@ -154,7 +154,7 @@ _Bác {bac_bao_ve} đứng trong chòi, không nói gì. Bác mở cổng rộng
 // ------------------------------------------------------------
 // 😢 📉 ĐU ĐỈNH BÊN KIA
 === dan_dau_tu_kt_du_dinh_ben_kia ===
-# noi:cong_cong_ty
+# ket_thuc:du_dinh_ben_kia # loai:buon # noi:cong_cong_ty
 _Bạn đã trả bớt được nợ. Bằng 15 triệu của LL. Từng người nhận phong bì, cảm ơn, không ai hỏi tiền ở đâu ra._
 { chung_cong_ty_song:
     _Đêm qua công ty vẫn sống sót. Không nhờ bạn. Bạn biết rõ từng khung giờ LL chen vào, từng tệp khán giả LL cắt mất, vì chính bạn bán cho họ bản đồ._

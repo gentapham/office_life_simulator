@@ -1,6 +1,6 @@
 # 🐕 Chó Công Ty: Tuất
 
-> **Tên mặc định:** Tuất · **Giới tính:** Chó đực · **Tuổi:** không ai nhớ. Bác Bình bảo "nó về đây từ hôm mưa to" · **Giọng:** "Gâu" (không vùng miền)
+> **Tên mặc định:** Tuất · **Giới tính:** Chó đực · **Tuổi:** 6 tuổi. Bác Bình nhặt được Tuất giữa trời mưa năm 2020, tính ngày 4/10 là sinh nhật · **Giọng:** "Gâu" (không vùng miền)
 > **Chức danh:** Chó của Bác Bảo Vệ, linh vật không chính thức của G-Entertainment. Lương: **2 cây xúc xích mỗi ngày**
 > **Nhà:** Ổ cạnh chòi bảo vệ ở cổng công ty. Và một **kho báu bí mật dưới gầm cầu thang**
 > **Câu cửa miệng:** *"Gâu."* (Tùy ngữ cảnh, nghĩa là "chào", "đói", "ghét", hoặc "Bác ơi có người lạ")
@@ -117,7 +117,7 @@ Tuất không biết có chiến dịch. Nhưng mạng xã hội thì biết Tu�
 - **4/10 (Ngày Động vật):** từ khóa **TẮM** xuất hiện. Minigame "chạy trốn khỏi Bác Bình và cái chậu". Thua thì bị tắm, mặc áo, đội nơ. Nguyên tới chọc. Nếu Tuất ngoạm được chiếc **găng tay hồng** lúc Nguyên đang cúi xuống, nó vào kho, món đầu tiên của "bộ sưu tập Hồng". Tuất học được từ **HỒNG**.
 
 ### Chương 2: "Lương Xúc Xích Về Trễ" (5/10 – 12/10)
-- **6/10:** buổi chụp poster. Tuất phục kích ở studio tầng 2. Nguyên bỏ đi giúp bà cụ, Tuất đuổi theo tới tận đầu đường, rồi lạc mất mùi. Lần đầu Tuất thấy người đồ hồng đẩy xe lăn cho bà cụ. Tuất… vẫn ghét. Nhưng Độ Ghét Hồng −5.
+- **6/10:** buổi chụp poster. Tuất phục kích ở studio tầng 2. Khoảng 10:30 Nguyên bỏ đi đẩy xe chè của Bà Bảy ra khỏi ổ gà ở đầu Hẻm 69, Tuất đuổi theo, rồi theo mùi cá khô qua chợ và lạc. Nguyên tìm thấy và bế Tuất về (Mũi Thính đủ cao thì Tuất tự về). Tuất… vẫn ghét. Nhưng Độ Ghét Hồng −5.
 - **9/10 (Ngày Trứng):** căn tin chỉ bán trứng. Ai cũng chia cho Tuất một miếng trứng. Độ No đầy.
 - **10/10 – 12/10:** lương Bác Bình về trễ, nên **lương xúc xích của Tuất cũng về trễ**. Mỗi ngày chỉ còn 1 cây. Minigame Săn Tiền Rơi thành việc chính. Tuất cũng phát hiện: Chương có mùi tiệm cầm đồ.
 - **11/10:** Ngân đăng ảnh Tuất hồi nhỏ (ảnh Bác Bình chụp hôm mưa to). Lượt thích nhiều hơn ảnh hồi nhỏ của cả công ty cộng lại.
@@ -147,7 +147,7 @@ Tuất không biết có chiến dịch. Nhưng mạng xã hội thì biết Tu�
 
 ## 7. Hội thoại mẫu
 
-> Tên trong ngoặc nhọn `{...}` là biến. Ở file này, người chơi là {cho}. Người nói chỉ hiện từ khóa, phần còn lại là *"bla bla"*. Dòng *(Phụ đề người: …)* màu xám chỉ hiện khi đã mở kết thúc tương ứng trong bộ sưu tập, để người chơi xem lại sau.
+> Tên trong ngoặc nhọn `{...}` là biến. Ở file này, người chơi là {cho}. Người nói chỉ hiện từ khóa, phần còn lại là *"bla bla"*. Dòng *(Phụ đề người: …)* màu xám (thẻ `phu_de`) chỉ hiện khi bật chế độ "dịch tiếng người" (mặc định bật).
 
 ### Mẫu 1: Buổi sáng ở chòi
 
@@ -244,12 +244,12 @@ Tuất không biết có chiến dịch. Nhưng mạng xã hội thì biết Tu�
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🏅 **Linh Vật Chính Thức** | Độ Được Cưng ≥ 85, không "để lại quà" trong văn phòng 10 ngày cuối, kết thúc sự nghiệp của Siêu Nhân Hồng không phải "Bị Tẩy Chay" | Họp đánh giá 30/10. Thắng đeo lên cổ Tuất một tấm thẻ nhân viên màu cam: *"Tuất. Linh vật. Lương: 3 cây xúc xích/ngày."* Tăng lương 50%, người duy nhất trong công ty được tăng hơn 20%. Cả phòng họp vỗ tay. Tuất gặm góc tấm thẻ |
-| 2 | 😄 🔒 **Kết thúc bí mật: Kho Báu Công Lý** | Kho có ít nhất 15 món, trong đó có bằng chứng của "con rắn thứ hai" (chiếc giày đêm 17/10, hoặc mùi xanh lá chuối đã được chỉ ra ngày 27/10), và đã tự tha từng món vào phòng họp 30/10 | Phòng họp đánh giá. Tuất tha vào từng món: chìa khóa, son môi, chiếc giày, cái USB. Mỗi món làm một người tái mặt. Món cuối cùng làm "con rắn thứ hai" đứng bật dậy. Bảo mở log, Bác Bình mở sổ trực, mọi thứ khớp. Tối đó Tuất được thưởng **một cây giò lụa nguyên cây**, ăn từ từ dưới gầm cầu thang, giờ đã có biển gỗ ghi "Kho Báu Của Tuất" |
-| 3 | 😄 🌸 **Hòa Bình Hồng** | Độ Ghét Hồng ≤ 10 vào 31/10, đã nhận xúc xích từ tay Nguyên ít nhất 15 lần, đã chọn 🔒 ở Mẫu 4 hoặc nằm ngửa ở Mẫu 6 | 23:00, cổng công ty vắng sau Đại Nhạc Hội Siêu Nhân. Người đồ hồng ngồi trên bậc thềm, không đội mũ. Tuất đi tới, nằm xuống, gác đầu lên giày của Nguyên. *"…bla bla… **TUẤT** … **NGOAN**…"* Lần đầu tiên, mùi nước hoa hồng không còn khó chịu nữa |
-| 4 | 😢 🌊 **Lạc Ở Vũng Tàu** | Đã lẻn lên xe buýt 17/10, Mũi Thính < 40, và chạy theo mùi cua nướng ra xa bãi biển trong đêm lửa trại | Xe buýt cam chạy về thành phố, đếm người đủ, không ai đếm chó. Một cô bán hải sản ở bến cho Tuất ở tạm, ngày nào cũng cho cơm. Tuất ngồi ở bến xe, nhìn từng chiếc xe buýt cam chạy qua. Ở Thành Phố Ước Mơ, Bác Bình dán tờ giấy "Tìm chó" ở cổng, mỗi ngày một tờ mới |
-| 5 | 😢 📦 **Kho Báu Bị Dọn** | Kho bị đội dọn dẹp tìm thấy trước 30/10 (chưa dẫn ai tới, hoặc Hiếu đã phát hiện kho trước), hoặc Mũi Thính < 30 khiến Tuất không giữ được đồ | Gầm cầu thang được quét sạch, sơn trắng, dán biển "Kho chứa đồ vệ sinh". Mọi bằng chứng bị gom vào túi rác, không ai đọc. Tuất nằm ở góc trống, gặm cái nắp bút hồng, món duy nhất còn sót lại |
-| 6 | 😢 🏡 **Gửi Về Vườn** | Độ Được Cưng < 20, hoặc đã "để lại quà" trong phòng giám đốc 3 lần | Thắng ký quyết định: *"Chó không được ở công ty."* Tuất về nhà vườn của Bác Bình ở Ven Đô. Có vườn rau, có bể cá, có bát xúc xích đầy. Nhưng ngày thường bác ở chòi bảo vệ trên phố. Từ thứ 2 tới thứ 6, Tuất nằm ở cổng vườn, mũi hướng về phía thành phố, chờ tiếng xe máy chiều thứ 7 |
+| 1 | 😄 🏅 **Linh Vật Chính Thức** | Độ Được Cưng ≥ 75, không "để lại quà" trong văn phòng 10 ngày cuối, ít hơn 2 lần trong phòng giám đốc, kho không bị dọn. Nếu công ty không sống nổi, Thắng vẫn giữ linh vật ở "căn phòng 20 mét vuông" | Họp đánh giá 30/10. Thắng đeo lên cổ Tuất một tấm thẻ nhân viên màu cam: *"Tuất. Linh vật. Lương: 3 cây xúc xích/ngày."* Tăng lương 50%, người duy nhất trong công ty được tăng hơn 20%. Cả phòng họp vỗ tay. Tuất gặm góc tấm thẻ |
+| 2 | 😄 🔒 **Kết thúc bí mật: Kho Báu Công Lý** | Kho có ít nhất 6 món, Tuất tự tha đồ vào phòng họp đánh giá 30/10, kho không bị dọn, và có bằng chứng về "con rắn thứ hai" (chiếc giày đêm 17/10 của đúng người đó, hoặc đã chỉ ra người có mùi xanh lá chuối ngày 27/10, cần Mũi Thính ≥ 60) | Phòng họp đánh giá. Tuất tha vào từng món: chìa khóa, son môi, chiếc giày, cái USB. Mỗi món làm một người tái mặt. Món cuối cùng làm "con rắn thứ hai" đứng bật dậy. Bảo mở log, Bác Bình mở sổ trực, mọi thứ khớp. Tối đó Tuất được thưởng **một cây giò lụa nguyên cây**, ăn từ từ dưới gầm cầu thang, giờ đã có biển gỗ ghi "Kho Báu Của Tuất" |
+| 3 | 😄 🌸 **Hòa Bình Hồng** | Độ Ghét Hồng ≤ 35, đã nhận xúc xích từ tay Nguyên ít nhất 3 lần, Nguyên không theo LL, và (đã trả găng tay ngày 23/10, hoặc nằm ngửa ở cánh gà 31/10, hoặc được Nguyên bế về ngày 6/10) | 23:00, cổng công ty vắng sau Đại Nhạc Hội Siêu Nhân. Người đồ hồng ngồi trên bậc thềm, không đội mũ. Tuất đi tới, nằm xuống, gác đầu lên giày của Nguyên. *"…bla bla… **TUẤT** … **NGOAN**…"* Lần đầu tiên, mùi nước hoa hồng không còn khó chịu nữa |
+| 4 | 😢 🌊 **Lạc Ở Vũng Tàu** | Đã lẻn lên xe buýt 17/10, chạy theo mùi cua nướng trong đêm lửa trại, và Mũi Thính < 52 nên không tìm được đường về. Từ 18/10 Tuất sống ở bến xe Vũng Tàu với tên "Vàng", xem Đại Nhạc Hội qua điện thoại | Xe buýt cam chạy về thành phố, đếm người đủ, không ai đếm chó. Một cô bán hải sản ở bến cho Tuất ở tạm, ngày nào cũng cho cơm. Tuất ngồi ở bến xe, nhìn từng chiếc xe buýt cam chạy qua. Ở Thành Phố Ước Mơ, Bác Bình dán tờ giấy "Tìm chó" ở cổng, mỗi ngày một tờ mới |
+| 5 | 😢 📦 **Kho Báu Bị Dọn** | Kho bị đội dọn dẹp dọn sạch sáng 30/10 (Tuất nằm chắn mà chưa có ai đồng minh biết chỗ kho) | Gầm cầu thang được quét sạch, sơn trắng, dán biển "Kho chứa đồ vệ sinh". Mọi bằng chứng bị gom vào túi rác, không ai đọc. Tuất nằm ở góc trống, gặm cái nắp bút hồng, món duy nhất còn sót lại |
+| 6 | 😢 🏡 **Gửi Về Vườn** | Độ Được Cưng < 40, hoặc đã "để lại quà" trong phòng giám đốc 2 lần; cũng là kết thúc mặc định. Sáng 2/11 Thắng báo tin (nếu công ty đóng cửa, chủ mới không nhận chó) | Thắng ký quyết định: *"Chó không được ở công ty."* Tuất về nhà vườn của Bác Bình ở Ven Đô. Có vườn rau, có bể cá, có bát xúc xích đầy. Nhưng ngày thường bác ở chòi bảo vệ trên phố. Từ thứ 2 tới thứ 6, Tuất nằm ở cổng vườn, mũi hướng về phía thành phố, chờ tiếng xe máy chiều thứ 7 |
 
 ---
 

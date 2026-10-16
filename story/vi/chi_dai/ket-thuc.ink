@@ -39,7 +39,7 @@
 // 😄 🦁 NỮ HOÀNG SỰ KIỆN
 // ------------------------------------------------------------
 === chi_dai_kt_nu_hoang_su_kien ===
-# ngay:31
+# ket_thuc:nu_hoang_su_kien # loai:co_hau
 _Đại Nhạc Hội Siêu Nhân hoàn hảo. Một triệu người theo dõi. Top 10 xu hướng. Không một bóng đèn chập, không một tiếng loa rè, không một vết kem trên mũ._
 _{cho} ngồi đúng chỗ của {cho}. {sieu_nhan_hong} đi đúng lối của {sieu_nhan_hong}. Hai con đường không gặp nhau một lần nào._
 _Sáng 1/11. Phòng giám đốc. {giam_doc} tự đứng dậy, tự kéo ghế, và lần này tự pha trà, không gọi ai._
@@ -65,7 +65,7 @@ _Dưới ảnh, ai đó lấy bút dạ ghi một dòng nhỏ: "Do chị đứng
 // 😄 🛡️ KHÔNG AI BỊ GẠCH TÊN
 // ------------------------------------------------------------
 === chi_dai_kt_khong_ai_bi_gach_ten ===
-# ngay:31
+# ket_thuc:khong_ai_bi_gach_ten # loai:co_hau
 _Sáng 1/11. Bàn làm việc của bạn trong kho sự kiện. {hr} bước vào, tay cầm tập hồ sơ màu hồng. Tập hồ sơ cả tháng nay ai cũng sợ._
 _{hr} đặt nó lên bàn trước mặt bạn. Không cười. Lần đầu tiên bạn thấy {hr} không cười._
 hr: Anh không đọc nữa.
@@ -90,7 +90,7 @@ _Bạn nâng ly trà đá. Cả sân nâng theo. Không ai nói câu chúc nào.
 // 😄 🔒 KẾT THÚC BÍ MẬT: TÔ ỐC THỨ HAI
 // ------------------------------------------------------------
 === chi_dai_kt_to_oc_thu_hai ===
-# ngay:31
+# ket_thuc:to_oc_thu_hai # loai:co_hau # bi_mat
 _Đại Nhạc Hội Siêu Nhân chạy trọn vẹn. {sieu_nhan_hong} ở lại {cong_ty}. Không có phong bì xanh lá chuối nào tới tay cậu ấy cả. Chỉ bạn biết vì sao._
 _Hôm sau. Quán Ốc Đêm. Bàn số 7, đúng cái bàn năm bạn 20 tuổi. Bạn đặt trước, ngồi trước, gọi trước một ấm trà đá._
 _Bảy giờ tối. Một chiếc xe xanh lá chuối đậu xa quán đúng 50 mét. Lưu Lực đi bộ vào, vest trắng, tóc vuốt keo, mắt nhìn quanh như người đi qua bãi mìn._
@@ -117,7 +117,7 @@ _Hai người ngồi đó, cách nhau 2 mét, ăn hết một tô ốc. Cả Qu�
 // 😢 🔥 CLIP CHỊ ĐẠI
 // ------------------------------------------------------------
 === chi_dai_kt_clip_chi_dai ===
-# ngay:31
+# ket_thuc:clip_chi_dai # loai:buon
 _Clip dài 14 giây. Bạn lật bàn. Ly bay. Bánh bay. Giọng bạn vang lên, rõ từng chữ, trên sóng._
 _Ba giờ sau, clip có 1 triệu lượt xem. Sáng hôm sau, 5 triệu. Nhiều hơn mọi video của {sieu_nhan_hong} cộng lại._
 _Người ta ghép nhạc. Người ta làm meme. Người ta làm filter "Mặt Chị Đại Lật Bàn". Trẻ con ở Hẻm 69 chơi trò "chị Đại" bằng bàn nhựa._
@@ -140,7 +140,7 @@ _Trên điện thoại, clip vẫn đang chạy. Lượt xem: 5.214.006. Và v�
 // 😢 🎭 SHOW TOANG
 // ------------------------------------------------------------
 === chi_dai_kt_show_toang ===
-# ngay:31
+# ket_thuc:show_toang # loai:buon
 _20:00. Sân khấu Đại Nhạc Hội Siêu Nhân. Cả nghìn khán giả. Truyền hình trực tiếp._
 _Giàn đèn bên trái chập. Một tiếng "bụp", rồi khói. Nửa sân khấu tối om._
 _Loa rè. Câu chào của MC biến thành tiếng ong vò vẽ. MC đi lạc ra phía bãi giữ xe, cầm micro hỏi đường bảo vệ._
@@ -163,7 +163,7 @@ _Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi S�
 // 😢 🥀 MỘT MÌNH GÁNH TEAM
 // ------------------------------------------------------------
 === chi_dai_kt_mot_minh_ganh_team ===
-# ngay:31
+# ket_thuc:mot_minh_ganh_team # loai:buon
 { chung_cong_ty_song:
     _Đại Nhạc Hội Siêu Nhân thành công. Pháo giấy hồng. Khán giả hát. {giam_doc} ôm {sieu_nhan_hong} trên sân khấu, khóc như đứa trẻ._
 - else:
