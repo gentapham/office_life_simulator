@@ -5,8 +5,8 @@
 // ------------------------------------------------------------
 === hr_2810_video_linh ===
 # ngay:28 # gio:10:00 # noi:phong_hr # bat_buoc
-_10 giờ sáng. Fanpage công ty vừa đăng một video lạ: những đoạn dựng tay, tỉ mỉ, toàn cảnh {quan_ly_idol} cầm 2 điện thoại, ngủ gục trong xe, cười với {idol_het_thoi}. Dòng cuối: "Anh có biết là có người luôn nhìn anh không?"_
-_Video lên fanpage do lỗi xuất file. Người dựng là ai thì cả công ty đoán được trong 3 phút._
+_10 giờ sáng. Cả công ty chỉ kể một chuyện: 2:10 đêm qua, fanpage công ty đăng một video lạ tên "Thai_final_v12". Những đoạn dựng tay, tỉ mỉ, toàn cảnh {quan_ly_idol} cầm 2 điện thoại, ngủ gục trong xe, cười với {idol_het_thoi}._
+_Video nằm trên fanpage 6 phút, khoảng 2.000 lượt xem, rồi bị gỡ. Người dựng là ai thì cả công ty đoán được trong 3 phút._
 _Cửa phòng HR mở. {editor} đứng đó, giữa ban ngày, mắt đỏ, không ngáp._
 editor: Anh {hr}… em tự lên. Em biết là em sai quy trình đăng bài. Anh kỷ luật em đi.
 ~ hr_so_nguoi_tu_len = hr_so_nguoi_tu_len + 1
@@ -21,9 +21,9 @@ editor: Anh {hr}… em tự lên. Em biết là em sai quy trình đăng bài. A
     ~ hr_so(5)
     ~ qh("editor", -10)
     editor: Dạ. *(gật đầu, đi ra, quên luôn cả cái ly đang cầm)*
-* [🤝 "Em chưa xóa video đúng hông? Đừng xóa. 40.000 người xem rồi. Người ta thả tim, không ai chê."]
-    ~ follow(15000)
+* [🤝 "Hai nghìn người xem trong 6 phút. Anh đọc hết bình luận rồi. Người ta thả tim, không ai chê."]
     ~ qh("editor", 5)
+    ~ hr_nghe(3)
     editor: *(nhìn điện thoại)* …Thật hả anh?
     _Ở hành lang, {quan_ly_idol} đứng nhìn điện thoại rất lâu, không nghe cuộc gọi nào._
 - -> END
@@ -57,9 +57,9 @@ _Họp xong, {idol_het_thoi} ngồi lại một mình, kính đen trong phòng k
 
 // ------------------------------------------------------------
 === hr_2910_cham_cong_giay ===
-# ngay:29 # gio:07:30 # noi:cong_cong_ty # bat_buoc
-_Ngày Internet Quốc tế. Wifi sập từ 6 giờ sáng. Máy chấm công vân tay không đồng bộ. {it} bị cả công ty truy đuổi từ cổng tới sân thượng._
-_Bạn mang một cuốn sổ, một cây bút, một cái ghế đẩu, ngồi ở cổng cạnh {bac_bao_ve}. Chấm công bằng tay._
+# ngay:29 # gio:09:10 # noi:cong_cong_ty # bat_buoc
+_Ngày Internet Quốc tế. 9 giờ, wifi sập cả tòa nhà. Máy chấm công vân tay mất sạch dữ liệu sáng nay. {it} bị cả công ty truy đuổi từ cổng tới sân thượng._
+_Bạn mang một cuốn sổ, một cây bút, một cái ghế đẩu, ra cổng ngồi cạnh {bac_bao_ve}. Chép lại giờ đến sáng nay từ sổ ra vào của bác, rồi chấm công bằng tay tới hết ngày._
 ~ hr_dung_cong_29 = true
 bac_bao_ve: Cháu ngồi đây cả ngày à? Ghế đẩu đau lưng lắm đấy.
 hr: Dạ, hôm nay con làm Bác {bac_bao_ve} một ngày.
@@ -78,7 +78,7 @@ chua_te_deadline: Ủa sao anh ngồi đây? À wifi sập. Chill. Ghi em 8 gi�
 
 // ------------------------------------------------------------
 === hr_2910_tong_dai_giay ===
-# ngay:29 # gio:13:00 # noi:chong_bao_ve
+# ngay:29 # gio:13:00 # noi:choi_bao_ve
 _Chiều. Không mạng, chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Ai cần nhắn ai thì viết giấy, {cho} ngậm đi giao (giao sai 50%). {chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua"._
 _Video tổng kết "16 năm" của {editor} kẹt ở 99%. Cả công ty đứng nhìn thanh tiến trình như nhìn người bệnh._
 _Một tờ giấy được đưa tới cho bạn. Chữ của {giam_doc}: "Mai họp đánh giá. Em mang tập hồ sơ lên. Anh."_
@@ -101,6 +101,30 @@ bac_bao_ve: Bác ghi thế này từ năm 2010. Ai về muộn nhất, bác bi�
 - -> END
 
 // ------------------------------------------------------------
+=== hr_2910_email_nhi ===
+# ngay:29 # gio:17:05 # noi:choi_bao_ve # bat_buoc
+_17:02. Điện thoại cả cổng rung cùng lúc, nhờ cục wifi "nghegichua" của {hong_hot}._
+{ RANDOM(1, 2) == 2:
+    _Chỉ là tin nhắn của {chi_dai} qua bộ đàm: "Đèn sân khấu thiếu 2 giàn." Rồi tin của {editor}: "99%." Bạn cất điện thoại._
+    _{thanh_ninh} đi ngang cổng, cầm điện thoại, ngón cái để rất lâu trên nút "Gửi". Rồi không bấm._
+    -> END
+}
+_Một email gửi tới "{cong_ty} - Toàn công ty". Người gửi: {thanh_ninh}. Nội dung đúng một dòng: "Em đồng ý về LL ạ."_
+_Ba phút sau, {thanh_ninh} chạy xuống cổng, mặt trắng như tờ giấy chấm công. Email đó lẽ ra chỉ gửi cho một người._
+* [🍵 Kéo ghế đẩu cho {thanh_ninh}. "Ngồi đi em. Uống trà. Rồi mình tính, không ghi sổ."]
+    ~ hr_tra()
+    ~ hr_nghe(8)
+    ~ qh("thanh_ninh", 10)
+    thanh_ninh: *(cầm ly trà bằng hai tay)* Em chưa ký gì hết anh. Em chỉ… sợ ở lại mà công ty sập.
+    hr: Anh cũng sợ. Nhưng anh ở lại. Mai em muốn đi hay ở, anh làm thủ tục đàng hoàng cho em.
+* [📓 "Em biết quy định bảo mật rồi đó. Anh phải báo sếp."]
+    ~ hr_so(8)
+    ~ qh("thanh_ninh", -10)
+    thanh_ninh: Dạ… em biết rồi ạ.
+    _{thanh_ninh} đi lên lầu, không quay lại. Tối đó, group "Hội Anti Sếp" có thêm một chủ đề: "HR báo cáo ai tiếp theo?"_
+- -> END
+
+// ------------------------------------------------------------
 === hr_2910_ve_muon ===
 # ngay:29 # gio:21:00 # noi:cong_cong_ty
 _9 giờ tối. Bạn vẫn ngồi ở cổng. {bac_bao_ve} đã ngủ trong chòi, radio còn mở rè rè. Tầng 2 vẫn sáng 3 ô cửa sổ._
@@ -119,14 +143,14 @@ _Trong tập hồ sơ hồng, cả ba cái tên đều có thể bị gạch ho�
     ~ an(10)
 * [😶 Về nhà.]
     _Bạn tắt đèn cổng. Không, đèn cổng là việc của {bac_bao_ve}. Bạn để nó sáng._
-- _10 giờ 47, wifi trở lại. Video "16 năm" lên 100%. Ba ô cửa sổ tắt dần._
+- _22 giờ 47, wifi trở lại. Video "16 năm" lên 100%. Ba ô cửa sổ tắt dần._
 -> END
 
 // ------------------------------------------------------------
 === hr_3010_don_kho ===
 # ngay:30 # gio:07:30 # noi:gam_cau_thang # bat_buoc
-_Sáng 30/10. Trước họp đánh giá, HR cho dọn kho để "phòng họp gọn gàng chào đón tháng mới". Bạn đeo găng tay, đi một vòng tầng trệt._
-_Gầm cầu thang. Một đống đồ lặt vặt: chìa khóa, son môi, điện thoại cũ, một chiếc găng tay hồng, một cái USB không nhãn dính mùi cà phê sữa đá, một con gà cao su… và tờ giấy nhắn bạn gửi {giam_doc} hôm qua._
+_Sáng 30/10. Trước họp đánh giá lúc 14:00, HR cho dọn kho để "phòng họp gọn gàng chào đón tháng mới". Bạn đeo găng tay, đi một vòng tầng trệt._
+_Gầm cầu thang. Một đống đồ lặt vặt: chìa khóa, son môi, điện thoại cũ, một chiếc tất sọc cam, một chiếc găng tay hồng, một cái USB không nhãn dính mùi cà phê sữa đá… và tờ giấy nhắn bạn gửi {giam_doc} hôm qua._
 cho: Grừ… *(đứng chắn trước đống đồ, nhe răng)*
 * [🧹 Dọn hết. Kho là kho, không phải ổ chó.]
     ~ hr_don_kho_tuat = true
@@ -195,9 +219,17 @@ _…trống trơn. Ở cuối hành lang, ai đó thấy bạn, quay đi rất n
 
 // ------------------------------------------------------------
 === hr_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Họp đánh giá cuối tháng. 21 người trong phòng "Sáng Tạo". {giam_doc} ngồi đầu bàn. Bạn đứng cạnh máy chiếu, tay cầm tập hồ sơ hồng. Bạn là người đọc kết quả._
-_Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi thẳng lưng, kính đen._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14:00. Họp đánh giá cuối tháng. 21 người trong phòng họp tầng 2. {giam_doc} ngồi đầu bàn. Bạn đứng cạnh máy chiếu, tay cầm tập hồ sơ hồng. Bạn là người đọc kết quả._
+_Mục 0, bạn đọc theo tờ {giam_doc} đưa: "Ghế Phó Giám đốc: chốt sau Đại Nhạc Hội." {truong_phong} gật đầu ba lần. {con_ong_chau_cha} nhìn ra cửa sổ, như không nghe._
+_Rồi {sales} giơ tay: "Còn vụ tăng lương 20% hôm karaoke?" Cả phòng nhìn bạn. Vì ai cũng biết tăng lương 20% thì phải bớt người._
+* [🤝 "Tăng lương thì để {ke_toan} tính. Phòng nhân sự chỉ hứa một điều: không ai bị cắt vì một lời hứa lúc say."]
+    ~ hr_nghe(5)
+    ~ hr_so(-5)
+    ~ qh("ke_toan", 3)
+* [📋 "Lời hứa đó chưa có văn bản. Phòng nhân sự ghi nhận."]
+    ~ hr_so(3)
+- _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi thẳng lưng, kính đen._
 * [🤝 "Em đề xuất gia hạn. 'Công Viên' vẫn là bài cả nước thuộc. Và ảnh hát bè cứu cả gameshow 16/10."]
     ~ qh("idol_het_thoi", 15)
     ~ qh("quan_ly_idol", 10)
@@ -219,7 +251,7 @@ _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi 
     thanh_xin_nghi: *(giật mình)* Dạ…?
     hr: Không có gì. Mục này anh để sau họp. Anh với em uống trà riêng.
     ~ qh("thanh_xin_nghi", 5)
-* {hr_biet_son_kim_tuyen} [🔒 "Sơn nghỉ nhiều. Nhưng mỗi ngày nghỉ, em ấy làm một việc rất nghiêm túc. Phòng nhân sự xác nhận đó không phải trốn việc."]
+* {hr_biet_son_kim_tuyen} [🔒 "{thanh_xin_nghi} nghỉ nhiều. Nhưng mỗi ngày nghỉ, em ấy làm một việc rất nghiêm túc. Phòng nhân sự xác nhận đó không phải trốn việc."]
     _Cả phòng quay sang {thanh_xin_nghi}. {thanh_xin_nghi} quay sang bạn, mắt mở to._
     ~ qh("thanh_xin_nghi", 25)
     ~ hr_nghe(5)
@@ -259,7 +291,8 @@ _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi 
     hr: Anh ơi, danh sách này anh viết trang 2. Trang 1 anh tự viết luôn đi anh.
     _{giam_doc} cầm tập hồ sơ. Nhìn trang 2. Nhìn bạn. Không mở ra._
     ~ qh("giam_doc", 5)
-- -> hr_3010_danh_gia
+- _Họp tan. Danh sách nằm lại trên bàn, chờ con số tối mai._
+-> END
 
 // ------------------------------------------------------------
 === hr_3110_cong_soat_ve ===
@@ -281,11 +314,11 @@ thuc_tap_sinh: Dạ anh còn trà Zzz không ạ? Em hồi hộp quá.
 // ------------------------------------------------------------
 === hr_3110_chung_ket ===
 # ngay:31 # gio:20:00 # noi:san_khau_dem_hong
-_20 giờ. Trên sân khấu Đại Nhạc Hội Siêu Nhân, phim ngắn "Người Hùng Không Tên" vừa chiếu xong, tới video "16 năm" của {editor}. Ở cổng, bạn mở điện thoại: "Giọng Ca Ước Mơ", chung kết trực tiếp._
+_20 giờ. Sau lưng bạn, phần mở màn đang chiếu. Màn hình lớn bên hông sân khấu sắp chuyển sang Đài Tivi Hóng: "Giọng Ca Ước Mơ", chung kết trực tiếp._
 { hr_biet_son_kim_tuyen:
     _Bạn biết người sắp bước ra là ai. Bạn nhìn quanh sân khấu Đại Nhạc Hội Siêu Nhân, tìm {thanh_xin_nghi}._
 - else:
-    _Sơn Kim Tuyến. Thí sinh bạn bình chọn từ đầu mùa. Bạn để điện thoại tựa vào bình trà._
+    _{thanh_xin_nghi} Kim Tuyến. Thí sinh bạn bình chọn từ đầu mùa. Bạn để điện thoại tựa vào bình trà._
 }
 * [📱 Bình chọn. Cho đủ 47 lần.]
     { hr_so_lan_vote < 47:

@@ -130,13 +130,13 @@ _Chiều, một bưu phẩm bọc giấy màu xanh lá chuối tới, ghi tên n
 
 // ------------------------------------------------------------
 === bac_bao_ve_0910_ra_mat_mv ===
-# ngay:9 # gio:18:00 # noi:cong_cong_ty # bat_buoc
-_Ra mắt MV đầu tiên của {sieu_nhan_hong}. Mời 40 người, tới 70. Hàng người dài từ cổng ra tới quán cơm tấm. Ngày Trứng Thế giới, ai cũng cầm một quả trứng luộc của căn tin._
+# ngay:9 # gio:19:30 # noi:cong_cong_ty # bat_buoc
+_Tối nay 8 giờ, MV đầu tiên của {sieu_nhan_hong} lên kênh của công ty. Tiệc ra mắt ở studio tầng 2. Mời 40 người, tới 70. Hàng người dài từ cổng ra tới quán cơm tấm. Ngày Trứng Thế giới, ai cũng cầm một quả trứng luộc của căn tin._
 _{hong_hot} cầm điện thoại chạy ra cổng, mắt sáng rực._
 hong_hot: Bác ơi! Cho con quay clip {cho} rượt Siêu Nhân Hồng quanh bãi xe được hông bác? Dân mạng mê "{cho} và Hồng" lắm á!
 * [🐕 "Ừ. Một lần thôi. Bác đứng ngay đây."]
     _{cho} được thả. {sieu_nhan_hong} hét lên, chạy ba vòng quanh bãi xe, nhảy qua yên xe của {con_ong_chau_cha}. {cho} rượt sát gót, ngoạm hụt chiếc mũ hai lần._
-    _Clip "{cho} và Hồng" lên mạng lúc 18:20. Tới 21 giờ, nhiều lượt xem hơn cả MV._
+    _Clip "{cho} và Hồng" lên mạng lúc 19:50. Tới 22 giờ, nhiều lượt xem hơn cả MV._
     ~ follow(30000)
     ~ bv_tam(-5)
     ~ qh("hong_hot", 8)
@@ -151,7 +151,7 @@ hong_hot: Bác ơi! Cho con quay clip {cho} rượt Siêu Nhân Hồng quanh bã
     ~ follow(8000)
     ~ bv_lo_than(3)
     ~ qh("hong_hot", 3)
-- _MV chiếu. Bác nghe vọng ra cổng câu "Hồng là thái độ" lặp lại 14 lần. Bác đếm._
+- _8 giờ. MV chiếu. Bác nghe vọng ra cổng câu "Hồng là thái độ" lặp lại 14 lần. Bác đếm._
 _Trên tivi nhỏ trong chòi, bác bấm sang kênh thời sự. Tin cuối bản tin: "Đồng tiền ảo tên Hồng Coin vừa được một fan ẩn danh tạo ra…". Bác tắt tivi._
 -> END
 

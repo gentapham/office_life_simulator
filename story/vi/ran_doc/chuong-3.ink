@@ -43,7 +43,7 @@ _Mốc 2: 200.000 người theo dõi. Ngày Hội Nông dân. {thanh_xin_nghi} x
     _Bạn nên vui. Bạn đã muốn điều này. Sao lại thấy như vừa nuốt phải cục đá?_
     ~ rd_han(-3)
 }
-_Tivi ở pantry đang chiếu cuộc thi "Giọng Ca Ước Mơ", vòng 2. Một thí sinh áo kim tuyến hát rất hay. Gương mặt quen quen._
+_Tivi ở pantry đang chiếu cuộc thi "Giọng Ca Ước Mơ", vòng 2. Thí sinh số 27, áo kim tuyến, hát rất hay. Gương mặt quen quen._
 hong_hot: Ủa… ủa alo? Đó là {thanh_xin_nghi} mà?! Gặt lúa kiểu gì mà gặt trên Đài Tivi Hóng?
 * [🐍 Quay màn hình, gửi riêng cho {hr}.]
     ~ rd_tung_tin(10, 5)
@@ -65,7 +65,7 @@ hong_hot: Ủa… ủa alo? Đó là {thanh_xin_nghi} mà?! Gặt lúa kiểu g�
 // ------------------------------------------------------------
 === ran_doc_1510_thang_may ===
 # ngay:15 # gio:08:05 # noi:sanh_tang_tret # bat_buoc
-_8:05. Cúp điện cả khu. Thang máy đứng giữa tầng trệt và tầng 1. Bên trong có tiếng hai người._
+_8:05. Cúp điện cả khu. Thang máy đứng giữa tầng 1 và tầng 2. Bên trong có tiếng hai người._
 giam_doc: *(vọng ra)* Bình tĩnh! Bình tĩnh nhé! Anh là giám đốc, anh rất bình tĩnh!
 chi_dai: *(vọng ra)* Anh đứng xa em ra. Anh đạp chân em ba lần rồi.
 bac_bao_ve: Thang máy này mười năm nay vẫn thế. Bác có chìa khóa cứu hộ. Đợi bác tí.
@@ -147,7 +147,10 @@ _Bạn nín thở. Chỉ cần Siêu Nhân Hồng thất bại là cả công ty
     ~ rd_tin(10)
     ~ rd_nghi(-5)
     ~ rd_han(-5)
-- -> END
+- _Lúc bạn chui ra khỏi góc tủ lạnh, một luồng đèn pin rọi thẳng vào mặt. Bác {bac_bao_ve} đi tuần tòa nhà mất điện._
+bac_bao_ve: Cháu ngồi trong ấy từ bao giờ? *(nhìn bạn một lúc lâu)* Thôi. Bác không thấy gì đâu.
+~ rd_nghi(3)
+-> END
 
 // ------------------------------------------------------------
 === ran_doc_1510_pantry_toi ===
@@ -157,7 +160,7 @@ idol_het_thoi: *(hát)* Ngày xưa có đôi bạn thân… bán cá viên chiê
 _Giọng hát mộc, không nhạc, không kính đen. Hay tới nổi da gà. Ở góc, ánh đèn đỏ nhỏ xíu của một cái máy quay. Là {editor} đang quay lén._
 _Ở bàn bên kia, hai cái bóng ngồi sát nhau. Một cái bóng không đội mũ. Giọng nói nhỏ, rụt rè, khác hẳn giọng hô "Biến hình!"._
 sieu_nhan_hong: *(rất nhỏ)* Dạ… ờm… {chua_te_deadline} nè. Mấy món quà… hông phải PR đâu.
-chua_te_deadline: …Đèn có lại thì nói lại câu đó coi.
+chua_te_deadline: …Ý tưởng PR mới hả anh? Tối thui vầy ai quay.
 * [📸 Bật đèn flash điện thoại chụp mặt {sieu_nhan_hong}.]
     _Bạn giơ điện thoại lên. Ngón tay đặt trên nút chụp._
     _Rồi {cho} sủa ầm từ dưới cầu thang. {sieu_nhan_hong} đội mũ lại trong nửa giây._
@@ -199,27 +202,25 @@ _Thẻ cuối cùng: "Siêu Nhân Hồng ơi, anh có dám tháo mũ không?"_
 // ------------------------------------------------------------
 === ran_doc_1610_gameshow ===
 # ngay:16 # gio:20:00 # noi:pantry # bat_buoc
-_Ngày Lương thực Thế giới: buffet ở công ty. Cả công ty vừa ăn vừa xem gameshow trực tiếp trên tivi pantry._
+_Ngày Lương thực Thế giới: buffet tối ở công ty. Gameshow quay ở Đài Tivi Hóng từ 14 giờ chiều, 20 giờ tối nay mới phát sóng. Cả công ty vừa ăn vừa xem trên tivi pantry._
 ~ an(100)
 mc_tivi_hong: Phần thi "Hit Một Thời"! Siêu Nhân Hồng sẽ hát lại bài hit 2015, "Công Viên"!
 sieu_nhan_hong: *(trên tivi, hát)* Ngày xưa có đôi bạn thân… bán… khoai chiên tại công viên!
 _Cả trường quay cười ồ. Từ cánh gà, một giọng hát bè cất lên, sửa lại cho đúng. Giọng {idol_het_thoi}._
-idol_het_thoi: *(ngồi cạnh bạn ở pantry, kính đen)* Nó hát sai lời bài của anh. Trên sóng truyền hình. Em biết anh là ai không?
-~ follow(80000)
+idol_het_thoi: *(ngồi cạnh bạn ở pantry, kính đen, nhìn chính mình trên tivi)* Chiều nay anh đứng trong cánh gà đấy. Nó hát sai lời bài của anh. Trên sóng truyền hình. Em biết anh là ai không?
 mc_tivi_hong: Và câu hỏi cuối cùng, trị giá 10 triệu đồng…
 { rd_doi_kich_ban_gameshow:
     mc_tivi_hong: *(đọc thẻ, ngập ngừng)* "Hồi nhỏ anh từng bắt nạt ai chưa?" Ủa câu này ai viết vậy?
     _Trên màn hình, {sieu_nhan_hong} đứng im rất lâu. Trường quay im lặng theo._
     sieu_nhan_hong: *(trên tivi)* …Có. Anh từng nhốt một đứa nhỏ trong nhà kho. Anh xin lỗi. Nếu em đang xem… anh xin lỗi.
     _Trường quay vỗ tay như sấm. Hashtag "XinLỗiNhàKho" lên xu hướng trong 20 phút._
-    ~ follow(50000)
+    ~ follow(40000)
     ~ rd_han(-10)
     ~ rd_biet_chuoc_loi = true
     _Bạn định làm hắn bẽ mặt. Hắn lại xin lỗi. Trên sóng truyền hình. Mà không biết bạn đang ngồi xem._
 - else:
     mc_tivi_hong: Anh có dám tháo mũ ngay tại đây không?
     sieu_nhan_hong: *(tạo dáng trên tivi)* Hồng không phải màu, Hồng là thái độ! Mà thái độ của anh là… để dành!
-    ~ follow(20000)
 }
 hong_hot: Ối dồi ôi! Tối nay trang mình nổ thông báo luôn!
 * [🐍 Nhắn group Anti Sếp: "Hát sai lời bài hit của chính công ty mình, nhục quá."]

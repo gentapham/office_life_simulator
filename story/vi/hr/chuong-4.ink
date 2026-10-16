@@ -7,8 +7,13 @@
 # ngay:17 # gio:06:30 # noi:cong_cong_ty # bat_buoc
 _6 giờ 30 sáng thứ 7. Ngày Quốc tế Xóa nghèo. Trước cổng công ty là một chiếc xe khách thường, không máy lạnh. Ghế bọc da… giả, rách một nửa._
 _Bạn đề xuất 120 triệu. {ke_toan} cắt còn 60. Kết quả là chiếc xe này, và 10 phòng khách sạn hướng thẳng ra… bãi xe._
-dan_dau_tu: Từ hôm nay anh thoát nghèo! Coin của anh x5 rồi! Chuyến này anh bao nước mía!
+dan_dau_tu: Từ hôm nay anh thoát nghèo! Coin của anh x10 rồi! Chuyến này anh bao nước mía!
 ke_toan: Anh {dan_dau_tu} trả nợ trước rồi bao sau.
+_Trước khi xe chạy, {giam_doc} dúi vào tay bạn một tập hồ sơ hồng thứ hai, dày hơn tập của bạn: "Bản của anh. Em giữ luôn, mang theo. Để ở công ty anh không yên tâm."_
+_Lên xe, bạn mở ra. Trang 1 giống hệt của bạn. Trang 2 chỉ có một dòng, chữ của {giam_doc}: "Người cuối cùng: {hr} (sau khi HR cắt xong hết)."_
+~ hr_da_xem_trang_2 = true
+~ cang_thang(10)
+_Bạn đọc hai lần. Rồi kẹp trang 2 vào sau tập của mình, như kẹp một hóa đơn chưa biết trình ai. Bạn không nói với ai._
 _Bạn là trưởng đoàn. Trên tay là danh sách 22 người, 1 con chó, và 1 tờ giấy trắng: sơ đồ phòng._
 sieu_nhan_hong: {hr} ơi! Cho anh ở chung phòng với nhân viên mới nha! Để gắn kết tập thể!
 ran_doc: *(mặt cứng đờ, cười)* Dạ… em… sao cũng được ạ.
@@ -35,7 +40,7 @@ _Bánh chuối chiên đi qua miệng {thuc_tap_sinh}, {con_ong_chau_cha}, {hong
 chi_dai: {cho} thắng! Ai cãi?
 * [📱 Quay clip {sieu_nhan_hong} chơi trò tập thể, gửi {hong_hot} đăng.]
     { hr_vi_pham_phong == 0:
-        ~ follow(50000)
+        ~ follow(30000)
         ~ hr_clip_tro_choi = true
         _Clip "Siêu Nhân Hồng thua chó trong trò truyền bánh" lên xu hướng Tóp-tóp. {hong_hot} hét lên mỗi 5 phút._
     - else:
@@ -63,8 +68,11 @@ chi_dai: {cho} thắng! Ai cãi?
 
 // ------------------------------------------------------------
 === hr_1710_lua_trai ===
-# ngay:17 # gio:21:00 # noi:bai_bien_vung_tau # bat_buoc
-_Đêm lửa trại. Bia lon, mực nướng{hr_hai_san:, và một khay hải sản nướng mà bạn được nhà nghỉ tặng vì "trưởng đoàn xếp phòng giỏi quá"|}. Trò "nói thật"._
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc
+_Lúc ăn hải sản ở quán Sóng Vỗ, bạn bỏ quên tập hồ sơ hồng trên ghế. Khi bạn quay lại tìm, nó nằm trên tay {chi_dai}, mở ở trang 2. Bả không nói gì, chỉ nhìn bạn rất lâu, rồi trả lại._
+~ qh("chi_dai", 3)
+~ hr_ro_ri(10)
+_20:00. Đêm lửa trại. Bia lon, mực nướng{hr_hai_san:, và một khay hải sản nướng mà bạn được nhà nghỉ tặng vì "trưởng đoàn xếp phòng giỏi quá"|}. Trò "nói thật"._
 { hr_hai_san:
     ~ an(40)
 }
@@ -115,7 +123,7 @@ _Gần nửa đêm. Phòng 203. Bạn vừa nằm xuống thì điện thoại r
 }
 
 = s_cai_nhau
-_Cuộc gọi 1: {chi_dai}. "Tuấn, nhỏ {thanh_ninh} ngáy." Cuộc gọi 2: {truong_phong}. "Anh muốn họp với {con_ong_chau_cha} về vấn đề điều hòa." Cuộc gọi 3: {dan_dau_tu}, giọng thì thầm: "Ba chủ nợ đang ngồi đếm tiền trên giường anh."_
+_Cuộc gọi 1: {chi_dai}. "{hr}, nhỏ {thanh_ninh} ngáy." Cuộc gọi 2: {truong_phong}. "Anh muốn họp với {con_ong_chau_cha} về vấn đề điều hòa." Cuộc gọi 3: {dan_dau_tu}, giọng thì thầm: "Ba chủ nợ đang ngồi đếm tiền trên giường anh."_
 _Bạn chạy qua chạy lại giữa 3 tầng trong dép tổ ong._
 * [🗣️ Ngôn Ngữ Nhân Sự: "Mình cùng nhìn lại hành trình đêm nay nha mọi người."]
     { RANDOM(1, 2) == 1:
@@ -131,7 +139,7 @@ _Bạn chạy qua chạy lại giữa 3 tầng trong dép tổ ong._
     ~ qh("dan_dau_tu", 10)
     ~ nghi(-20)
     ~ hr_nghe(5)
-    _Bạn ngủ trên ghế sảnh khách sạn, cạnh {cho}. Nửa đêm, {bac_bao_ve} gọi từ công ty: "Bác bắt gặp người lạ trong phòng giám đốc. Đi rồi. Bác chỉ báo thế thôi."_
+    _Bạn ngủ trên ghế sảnh khách sạn, cạnh {cho}. 1 giờ sáng, {bac_bao_ve} gọi từ công ty: "1 giờ 4 phút, bác bắt gặp người lạ trong phòng giám đốc. Đi rồi. Bác chỉ báo thế thôi."_
 - -> END
 
 = s_yen_binh
@@ -141,15 +149,16 @@ _Bạn đứng ở ban công phòng 203. Ngoài kia là bãi xe, xa hơn là bi�
     ~ nghi(30)
     ~ cang_thang(-10)
 * [📱 Gọi về chòi bảo vệ hỏi thăm {bac_bao_ve}.]
-    bac_bao_ve: Bác đây. Ở công ty có người lạ vào phòng giám đốc lúc 11 giờ. Bác đuổi rồi. Không thấy mặt. Cháu ngủ đi.
+    bac_bao_ve: Bác đây. Yên cả. Bác trực tới sáng. Cháu ngủ đi.
     ~ qh("bac_bao_ve", 5)
+    _1 giờ 4 phút sáng, điện thoại rung lần nữa. Tin nhắn của bác: "Có người lạ vào phòng giám đốc. Bác đuổi rồi. Không thấy mặt."_
     ~ hr_ro_ri(5)
-    _Phòng giám đốc. Nơi có tập hồ sơ hồng thứ hai._
+    _Phòng giám đốc. Người đó tìm tập hồ sơ hồng thứ hai thì tìm nhầm chỗ. Nó đang nằm trong ba lô của bạn._
 - -> END
 
 // ------------------------------------------------------------
 === hr_1810_xe_ve ===
-# ngay:18 # gio:14:00 # noi:xe_khach # bat_buoc
+# ngay:18 # gio:13:00 # noi:xe_khach # bat_buoc
 _Xe về. Nóng. Chật. Ai cũng giận ai._
 dan_dau_tu: *(nhìn điện thoại, mặt trắng bệch)* Hồng Coin… về 0. Người tạo ôm tiền biến mất rồi. Còn cái nịt.
 con_ong_chau_cha: *(nhìn điện thoại, mặt còn trắng hơn)* Penthouse của anh… đang bị rao bán trên mạng. Chú anh không nói gì với anh hết.
@@ -252,9 +261,9 @@ _{cho} ngồi xuống trước ấm trà Zzz, ngửi, rồi nằm dài dưới c
 === hr_2010_qua_chi_em ===
 # ngay:20 # gio:09:00 # noi:van_phong_tang_1 # bat_buoc
 _Ngày Phụ nữ Việt Nam + sinh nhật công ty 16 tuổi. Bạn đứng giữa văn phòng với 7 phần quà cho 7 chị em: {thanh_ninh}, {hong_hot}, {ke_toan}, {bien_kich}, {designer}, {sales}, {chi_dai}._
-_Ngân sách quà: {ke_toan} duyệt 700.000đ. 100.000đ một người. Quà giống hệt nhau: một hộp trà hoa hồng và một tấm thiệp._
+_Ngân sách quà: {ke_toan} duyệt một phong bì 2.100.000đ cho các chị em, 300.000đ một người. Bạn kèm thêm mỗi phần một hộp trà hoa hồng mua bằng tiền túi._
 dan_dau_tu: Chúc các chị em 8386! Phát lộc phát tài!
-_Rồi drama bắt đầu. {thanh_ninh} được {giam_doc} tặng riêng một bó hoa 99 bông. {chi_dai} nhìn bó hoa. {sales} khoe hộp quà "từ Mr. Kevin Trộn" (bạn thấy rõ nhãn siêu thị mini)._
+_Rồi drama bắt đầu. {giam_doc} tặng 7 chiếc khăn cam giống hệt nhau. {truong_phong} tặng mỗi người một cuốn sổ ô li ghi "Kế hoạch tuần". {sales} khoe hộp quà "từ Mr. Kevin Trộn" (bạn thấy rõ nhãn siêu thị mini). Riêng {ke_toan} được {giam_doc} tặng thêm một cái kính lúp._
 designer: Ủa, quà của tui sao hộp trà móp vậy anh?
 * [🍵 "Đổi cho em hộp của anh nè. Anh mua dư một hộp cho mình."]
     ~ qh("designer", 8)
@@ -277,20 +286,20 @@ designer: Ủa, quà của tui sao hộp trà móp vậy anh?
 
 // ------------------------------------------------------------
 === hr_2010_thu_g ===
-# ngay:20 # gio:11:00 # noi:chong_bao_ve # bat_buoc
-_Chòi bảo vệ. {bac_bao_ve} cầm một lá thư tay, ký tên "G". Bên trong còn một phong bì dán kín, đề: "Chỉ mở khi công ty sắp sập"._
-_Cả công ty đứng ngoài cổng chuẩn bị tiệc sinh nhật 16 tuổi. {bac_bao_ve} nhìn bạn._
-bac_bao_ve: Cháu {hr}. Thư của ông G gửi. Bác không biết có nên đọc trước mọi người không. Bác chỉ là người giữ thư thôi.
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18:30. Quán Ốc Đêm, tiệc sinh nhật công ty 16 tuổi. {bac_bao_ve} ngồi đầu bàn, cầm một lá thư tay tới chòi sáng nay, ký tên "G". Kẹp theo là một phong bì dán kín, đề: "Chỉ mở khi công ty sắp sập"._
+_Bác nghiêng sang bạn, nói nhỏ._
+bac_bao_ve: Cháu {hr}. Thư của G. Bác không biết có nên đọc trước mọi người không. Bác chỉ là người giữ thư thôi.
 * [🤝 "Bác đọc đi bác. Mọi người cần nghe một người không phải sếp nói về công ty."]
     ~ hr_doc_thu_g = true
-    _{bac_bao_ve} đứng lên ghế đẩu. Đọc chậm, giọng Bắc trầm: "…16 năm rồi. Tôi vẫn nhớ căn phòng 20 mét vuông. Gửi lời cảm ơn tới từng người còn ở lại…"_
-    _Cả sân im lặng. {giam_doc} đứng phía sau, mặt tái đi rồi đỏ lên, không rõ vì xúc động hay vì sợ._
+    _{bac_bao_ve} đứng dậy. Đọc chậm, giọng Bắc trầm: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."_
+    _Cả quán im lặng. {giam_doc} đứng phía sau, mặt tái đi rồi đỏ lên, không rõ vì xúc động hay vì sợ._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 8
     ~ qh("bac_bao_ve", 8)
     ~ qh("giam_doc", -5)
 * [😶 "Chuyện của bác với ông G, con không dám có ý kiến."]
     bac_bao_ve: Ừ. Thế bác cất đi.
-    _Lá thư vào tủ gỗ. Phong bì dán kín vẫn dán kín._
+    _Lá thư vào túi áo trong. Phong bì dán kín vẫn dán kín._
     ~ qh("bac_bao_ve", 3)
 * [💬 "Phong bì 'chỉ mở khi công ty sắp sập'… bác nghĩ giờ đã tới lúc chưa?"]
     bac_bao_ve: Chưa. Lúc nào sập thật thì bác biết. Bác ngồi cổng 16 năm rồi.
@@ -299,8 +308,8 @@ bac_bao_ve: Cháu {hr}. Thư của ông G gửi. Bác không biết có nên đ�
 
 // ------------------------------------------------------------
 === hr_2010_karaoke ===
-# ngay:20 # gio:22:00 # noi:karaoke_hat_cho_nhau_nghe
-_Sau quán ốc, tăng hai ở Karaoke Hát Cho Nhau Nghe. {idol_het_thoi} hát "Công Viên" lần thứ 3. {giam_doc} say, cầm micro, đứng lên bàn._
+# ngay:20 # gio:21:00 # noi:karaoke
+_Sau quán ốc, tăng hai ở Karaoke Chú Sáu. {idol_het_thoi} hát "Công Viên" lần thứ 3. {giam_doc} say, cầm micro, đứng lên bàn._
 giam_doc: Các em! Anh tuyên bố! Tháng sau… tăng lương 20%! Cả công ty!
 _Cả phòng karaoke nổ tung. {hong_hot} quay. {ke_toan} lấy tay che mặt._
 _Rồi {giam_doc} nhìn thấy bạn, mắt hơi tỉnh lại. Ông ấy ngồi xuống cạnh bạn, nói nhỏ:_

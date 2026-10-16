@@ -88,28 +88,31 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 ## 6. Tuyến truyện chính (theo lịch tháng 10)
 
 ### Chương 1: "Biến Căng Ngày Đầu" (1/10 – 4/10)
-- **1/10:** Ngân livestream lễ ký hợp đồng. 312 người xem, trong đó 40 người là nhân viên công ty và mẹ của họ. Ngân gặp Hiếu, nhân viên mới, và phát hiện ổng ở ngay sát vách phòng trọ. *"Trời đất ơi, mình là hàng xóm hả? Từ nay tui có bạn hóng chung rồi!"*
+- **1/10:** Ngân livestream lễ ký hợp đồng. 312 người xem, trong đó 20 người là nhân viên công ty và mẹ của họ. Ngân gặp Hiếu, nhân viên mới, và phát hiện ổng ở ngay sát vách phòng trọ. *"Trời đất ơi, mình là hàng xóm hả? Từ nay tui có bạn hóng chung rồi!"*
 - **2/10:** họp lên chiến dịch. Thắng chốt mục tiêu 1 triệu người theo dõi mà chưa hỏi Ngân. Ngân tính nhẩm: mỗi ngày phải thêm 33.000 người. *"Ối dồi ôi."*
 - **4/10 (Ngày Động vật):** Tuất bị mặc áo, đội nơ. Nguyên tới chọc. Ngân quay được cảnh Tuất giật đứt dây nơ rồi đuổi Nguyên quanh sân. Đăng hay không đăng?
 
 ### Chương 2: "Hội Anti Sếp" (5/10 – 12/10)
 - Ngân mời Hiếu vào group "Hội Anti Sếp". Mỗi tối group có 200 tin nhắn. Ngân để ý **"Hoa Hướng Dương 1989"**: vào group từ tháng 6, chưa từng chửi sếp, chỉ thả haha, và luôn online đúng 22:01, một phút sau khi sếp nhắn group công ty.
 - **7/10 (Mốc 1):** 50.000 người theo dõi. Ngân là người đầu tiên biết đạt hay không, và có thể "làm đẹp" con số trong báo cáo gửi sếp (Chương sẽ giúp, với giá 1 ly cà phê).
-- **9/10:** MV ra mắt. Cùng giờ đó, LL tung MV của nghệ sĩ bên họ. Cuộc chiến giờ vàng.
+- **6/10:** khoảng 10:30, Nguyên bỏ ngang buổi chụp poster để đẩy xe chè của Bà Bảy ra khỏi ổ gà ở đầu Hẻm 69. Ngân chọn giờ đăng clip.
+- **9/10:** 20:00 MV "Hồng Hóa Việt Nam" ra mắt. 19:25, LL tung MV của nghệ sĩ bên họ. Cuộc chiến giờ vàng trong nửa tiếng chờ.
 - **11/10:** Ngân phát động trend "ảnh hồi nhỏ" trên fanpage. Nguyên gửi ảnh hồi nhỏ ở một xóm có cây me. Ngân đăng lên, và nghe thấy tiếng Hiếu đập bàn ở phòng bên.
+- **12/10:** lương về lúc 10:00. 12:30 ở Cà Phê Sống Ảo, Ngân thấy thẻ phụ của Long bị từ chối và thẻ kim cương của Duy.
 - **12/10:** lương về trễ. Trang Confession nhận 47 bài trong một buổi sáng. Đăng bài nào? Đăng bao nhiêu? Nếu Ngân đăng bài "Lương về trễ, sếp đi đánh golf", Thắng lặng lẽ nhờ Bảo kiểm tra log. Bảo thấy tên máy "NGAN-LAPTOP", và có thể giữ kín hoặc không (xem tuyến của Bảo).
 
 ### Chương 3: "Pin 3%" (13/10 – 16/10)
 - **14/10 (Mốc 2):** chưa đủ 200.000 thì Nguyên buồn, bỏ đi giúp người cả ngày. Ngân phải đi theo quay, biến chuyện buồn thành nội dung: *"Một ngày Siêu Nhân Hồng không cần ai thấy."*
 - **15/10 (mất điện):** cả công ty ngồi pantry. Ngân có 3 cục pin dự phòng, và đó là quyền lực. Ai muốn sạc điện thoại thì phải kể Ngân nghe một chuyện. Kho Tin Mật có thể tăng +6 trong một ngày.
+- **15/10, chiều:** trong bóng tối, Ngân thấy cuốn sổ "Người Gác Két" của Duy, và Tuấn ngồi xuống cạnh. Ngân có thể kể với Tuấn mình là admin. Nếu kể, ngày 21/10 Tuấn đã biết và che cho Ngân.
 - Ở góc pantry, Ngân nghe Thương nói nhỏ với Hương về **điều khoản trang 47**: thất bại thì hoàn tiền gấp đôi. Đây là tin nặng nhất Ngân từng nghe. Độ Kín Miệng bị thử thách thật sự.
 - **16/10:** gameshow ở Đài Tivi Hóng. Ngân ngồi khán đài, vừa xem vừa đăng clip ngắn. LL thả 2.000 tài khoản ảo vào bình luận chê Nguyên.
 
 ### Chương 4: "Vũng Tàu Lên Sóng" (17/10 – 20/10)
-- **17/10:** team building Vũng Tàu. Ngân được giao livestream cả chuyến đi cho fanpage. Trò chơi tập thể, ăn hải sản, Nhật gọi họp lúc 6 giờ sáng, tất cả đều lên sóng.
+- **17/10:** team building Vũng Tàu. Ngân được giao livestream cả chuyến đi cho fanpage. Trò chơi tập thể, ăn hải sản, Nhật gọi họp lúc 6 giờ sáng, tất cả đều lên sóng. Ngân ở phòng 206 với Nhi; đêm mất điện, Nhi kể chuyện LL hẹn phỏng vấn.
 - **Đêm lửa trại:** Nguyên tháo mũ, kể chuyện hồi nhỏ từng bắt nạt một đứa em trong xóm. Điện thoại của Ngân **vẫn đang live**, góc máy chĩa về đống lửa. Ngân có 3 giây.
 - **18/10:** về thành phố, ai cũng giận ai. Trang Confession nhận 30 bài về chuyến đi.
-- **20/10:** sinh nhật công ty và ngày Phụ nữ. Ngân thống kê ai tặng gì cho ai và đăng lên group anti sếp. Tối ở Quán Ốc Đêm, sếp say. Livestream hay cất điện thoại?
+- **20/10:** sinh nhật công ty và ngày Phụ nữ. Ngân thống kê ai tặng gì cho ai (phong bì 2.100.000đ, 7 khăn cam, kính lúp riêng cho Thương) và có thể đăng lên group anti sếp. 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G" nếu Ngân tắt live. 21:00 ở Karaoke Chú Sáu, sếp say. Livestream hay cất điện thoại?
 
 ### Chương 5: "Ai Là Admin?" (21/10 – 27/10)
 - **21/10:** trang Confession nhận một bài **bóc phốt giám đốc**: "Sếp đang thế chấp nhà, công ty sắp sập." Bài viết quá chi tiết, như có người đọc được email của sếp. Đăng hay không? Nếu đăng, Thắng ra lệnh **truy tìm admin**: Tuấn mời từng người lên uống trà, Bảo được giao kiểm tra log.
@@ -119,9 +122,9 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 - **27/10:** Ngân là người đầu tiên thấy tin **LL mời Nguyên với giá gấp ba**, vì một trang showbiz đăng lúc 7 giờ sáng. Báo cho sếp, báo cho group, hay đăng lên trang Confession?
 
 ### Chương 6: "Không Wifi Thì Hóng Bằng Gì" (28/10 – 31/10)
-- **28/10 (Mốc 4):** cần 800.000. Ngân thức trắng lên bài.
+- **28/10 (Mốc 4):** cần 800.000. Ngân thức trắng lên bài, nên thấy video tỏ tình của Lĩnh lên fanpage lúc 2:10 (6 phút, khoảng 2.000 lượt xem). Chiều, bộ lọc của Chương lần ra fan ảo của Phát.
 - **29/10:** wifi sập cả ngày. Cả công ty đứng hình, trừ Ngân: điện thoại có 4G. Phát wifi cho cả công ty, cho riêng phòng dựng, hay giữ cho riêng mình để "lướt cho đỡ buồn"? Bảo bị cả công ty đuổi, chỉ có Ngân biết chỗ Bảo trốn (phòng server).
-- **30/10:** họp đánh giá. Nếu Độ Lộ Admin cao, đây là ngày danh tính bị công bố.
+- **30/10:** 14:00 họp đánh giá. Nếu Độ Lộ Admin cao, đây là ngày danh tính bị công bố. Nếu phần đóng góp đủ lớn, sếp hứa đề bạt Ngân "nếu mai công ty còn đứng được".
 - **31/10:** Đại Nhạc Hội Siêu Nhân. Ngân đứng giữa khán đài, ba điện thoại trên tay, đếm từng người theo dõi tới con số 1 triệu. Hoặc tới con số khác.
 
 ---
@@ -151,7 +154,7 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 >    - Không có gì xảy ra. Hoa Hướng Dương tiếp tục đọc hết
 > 2. 🔍 *Nhắn riêng cho Hoa Hướng Dương: "Ê bạn là ai vậy? Group này phải xác minh danh tính nha."*
 >    - Hoa Hướng Dương trả lời sau 4 phút: "Mình là… nhân viên mới ạ. Mình thích hoa hướng dương." Kho Tin Mật +1: "Hoa Hướng Dương trả lời bằng chữ ạ"
-> 3. 🔒 *Nhắn {it}: "Anh Bảo, coi giùm em cái tài khoản hoa này đăng nhập từ máy nào."* (Chỉ hiện nếu quan hệ với {it} ≥ 40)
+> 3. 🔒 *Nhắn {it}: "Anh Bảo, coi giùm em cái tài khoản hoa này đăng nhập từ máy nào."* (Chỉ hiện nếu Kho Tin Mật ≥ 4 hoặc quan hệ với {it} ≥ 20)
 >    - {it}: "Lỗi người dùng." Rồi 1 phút sau: "Máy phòng tầng 2. Vách kính." Ngân làm rơi điện thoại. Mở nhánh "Hoa Hướng Dương Là Ai"
 
 ### Mẫu 3: Trang 47 (15/10, mất điện, pantry)
@@ -213,12 +216,14 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 📈 **Trưởng Nhóm Mạng Xã Hội** | Siêu Nhân Hồng đạt 1 triệu người theo dõi, phần đóng góp của Ngân ≥ 300.000, Độ Lộ Admin < 60 | Ngày 30/10, Ngân được đề bạt trưởng nhóm, có hai nhân viên mới dưới quyền. Đêm 31/10, con số nhảy qua 1.000.000. Ngân đăng bài đầu tiên với chức danh mới, chỉ ba chữ: *"Nghe gì chưa?"*. Lần đầu tiên trong đời, tin nóng nhất Ngân kể là tin ai cũng được phép biết |
-| 2 | 😄 🤐 **Cái Miệng Vàng** | Độ Kín Miệng ≥ 80 vào 30/10, đã giữ kín ít nhất 3 tin cấp cao (trang 47, khoản nợ của sếp, chuyện "Hiếu Ếch" hoặc chuyện Nhi phỏng vấn ở LL) | Một tháng sau, bàn của Ngân có thêm một chiếc ghế. Người trong công ty lần lượt tới ngồi, kể chuyện, khóc, cười. Ngân úp ba cái điện thoại xuống bàn, chỉ nghe. Trên màn hình khóa của Ngân là dòng chữ: *"Hóng để hiểu, không phải để kể."* |
-| 3 | 😄 🔒 **Kết thúc bí mật: Confession Cuối Cùng** | Kho Tin Mật ≥ 25, không đăng confession nào làm tổn thương đồng nghiệp trong 10 ngày cuối, quan hệ với Bảo ≥ 50, đã mở nhánh "Hoa Hướng Dương Là Ai" | Giữa Đại Nhạc Hội Siêu Nhân, trang Confession đăng bài cuối cùng, ký tên thật: *"Admin là Ngân. Đây là những điều tốt đẹp nhất mà các bạn từng gửi cho trang này."* Bài viết lên top 1 xu hướng, kéo theo Siêu Nhân Hồng. Dưới khán đài, Thắng đọc tới dòng cuối thì đỏ mắt. Bảo đứng cạnh, gật đầu đúng một lần |
-| 4 | 😢 🕶️ **Lộ Mặt Admin** | Độ Lộ Admin đạt 100 (có thể xảy ra bất cứ lúc nào) | Màn hình phòng họp chiếu ảnh chụp trang quản trị Confession, góc trên ghi tên tài khoản của Ngân. Trưa đó ở pantry, mọi người dịch ghế ra xa Ngân một chút. Chỉ có Quỳnh vẫn ngồi cạnh, nhưng không nói gì. Về Hẻm 69, Ngân áp tai vào tường, phòng bên im lặng |
-| 5 | 😢 🔴 **Lỡ Tay Bấm Live** | Livestream nhầm một cuộc họp nội bộ có chữ "nợ" hoặc "trang 47" (22/10, 20/10 hoặc 30/10) | 12.000 người đang xem Thắng nói trong phòng họp: *"…nếu thất bại thì mình nợ mười tỷ…"*. Ngân nhìn thấy chấm đỏ 🔴 ở góc màn hình. Bấm dừng thì đã muộn 3 phút. *"Ối dồi ôi."* Sáng hôm sau, Tuấn mời Ngân đi uống trà |
-| 6 | 😢 🎭 **Nhân Vật Chính** | Độ Kín Miệng < 20 vào 30/10 và có một tin đồn về chính Ngân lan tới ít nhất 15 người | Lần đầu tiên, tin nóng nhất công ty là tin về Ngân. Ai cũng biết, ai cũng kể, không ai kể với Ngân. Đêm 31/10, Ngân ngồi một mình trong phòng trọ đầy đèn LED. Qua bức tường mỏng, Ngân nghe giọng ai đó ở phòng bên: *"Nghe gì chưa?"* |
+| 1 | 😄 📈 **Trưởng Nhóm Mạng Xã Hội** | Công ty sống sau Đại Nhạc Hội (kết thúc sự nghiệp Siêu Sao Hạng A, Tháo Mũ hoặc Meme Quốc Dân), phần đóng góp của Ngân ≥ 120.000, Độ Lộ Admin < 60 | Đêm 31/10 tùy kết thúc sự nghiệp: bộ đếm nhảy qua 1.000.000, hoặc clip tháo mũ do Ngân quay, hoặc meme "Siêu Nhân Gâu" ghi nguồn fanpage công ty. Thứ hai 2/11, Ngân được đề bạt trưởng nhóm (nếu họp 30/10 sếp đã hứa thì sếp giữ lời), có hai nhân viên mới. Ngân đăng bài đầu tiên với chức danh mới, chỉ ba chữ: *"Nghe gì chưa?"* |
+| 2 | 😄 🤐 **Cái Miệng Vàng** | Độ Kín Miệng ≥ 70, đã giữ kín ít nhất 2 tin cấp cao (trang 47, khoản nợ của sếp, chuyện Nhi đi LL, chuyện "Hiếu Ếch"), tin đồn về chính Ngân lan tới dưới 22 người. Mặc định khi không khớp kết thúc nào khác và Độ Kín Miệng ≥ 45 | Sau đêm diễn, Ngân đếm những bí mật mình đã không kể. Những tuần sau (ở bàn mạng xã hội nếu công ty sống, ở Cà Phê Sống Ảo nếu công ty đóng cửa), bàn của Ngân có thêm một chiếc ghế nhựa đỏ. Người trong công ty lần lượt tới ngồi, kể chuyện. Ngân chỉ nghe. Màn hình khóa: *"Hóng để hiểu, không phải để kể."* |
+| 3 | 😄 🔒 **Kết thúc bí mật: Confession Cuối Cùng** | Kho Tin Mật ≥ 20, không đăng confession nào làm tổn thương đồng nghiệp trong 10 ngày cuối, Bảo đã giữ kín cho Ngân (12/10 hoặc 21/10), đã mở nhánh "Hoa Hướng Dương Là Ai" (8/10) | 23:10 đêm 31/10, sau cánh gà, trang Confession đăng bài cuối cùng, ký tên thật: *"Admin là Ngân. Đây là những điều tốt đẹp nhất mà các bạn từng gửi cho trang này."* Công ty sống thì bài kéo hashtag Siêu Nhân Hồng thêm một vòng, công ty trượt thì bài không cứu được con số nhưng không ai thả haha. Thắng đọc tới dòng "sếp cũng chưa về" thì đỏ mắt. "Hoa Hướng Dương 1989" thả tim. Bảo: "Đổi tên máy được rồi." |
+| 4 | 😢 🕶️ **Lộ Mặt Admin** | Độ Lộ Admin đạt 100 (tự khai với Tuấn, hoặc ≥ 80 lúc họp đánh giá 30/10). Mặc định khi Độ Lộ Admin ≥ 70 | Màn hình phòng họp chiếu ảnh trang quản trị Confession, góc trên ghi tên tài khoản của Ngân. Mọi người dịch ghế ra xa. Chỉ có Quỳnh vẫn ngồi cạnh. Đêm 31/10 Ngân đứng ở rìa khán đài, fanpage đã giao cho Hiếu. Về Hẻm 69, phòng bên im lặng |
+| 5 | 😢 🔴 **Lỡ Tay Bấm Live** | Livestream nhầm chữ "nợ" hoặc "trang 47": karaoke 20/10, đoàn thuế 22/10, hoặc họp đánh giá 30/10 | Cảnh hồi tưởng đúng lần lỡ tay (sếp say ở Karaoke Chú Sáu, giọng {ke_toan} sau cửa kính phòng kế toán, hoặc sếp trong họp đánh giá). Clip bị cắt thành 40 phiên bản, LL chia sẻ đầu tiên. Sáng thứ hai, Tuấn mời Ngân đi uống trà |
+| 6 | 😢 🎭 **Nhân Vật Chính** | Tin đồn về chính Ngân lan tới ≥ 22 người, hoặc Độ Kín Miệng < 40 và tin đồn ≥ 6. Mặc định cuối cùng | Lần đầu tiên, tin nóng nhất công ty là tin về Ngân. Ngân bị mời ra khỏi chính group mình lập. Ngân về Hẻm 69 trước khi bộ đếm dừng. 23 giờ, qua bức tường mỏng, Ngân nghe giọng ai đó ở phòng bên: *"Nghe gì chưa?"*, rồi nghe thấy tên mình |
+
+Thứ tự xét (cảnh `hong_hot_3010_danh_gia`, game gọi sau Đại Nhạc Hội Siêu Nhân): Lỡ Tay Bấm Live → Lộ Mặt Admin → Confession Cuối Cùng → Trưởng Nhóm → Cái Miệng Vàng → Nhân Vật Chính → mặc định.
 
 ---
 

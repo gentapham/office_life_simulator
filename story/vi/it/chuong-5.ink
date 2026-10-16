@@ -4,9 +4,9 @@
 
 // ------------------------------------------------------------
 === it_2110_confession_the_chap ===
-# ngay:21 # gio:09:00 # noi:phong_hr # bat_buoc
+# ngay:21 # gio:09:00 # noi:phong_server # bat_buoc
 _Sáng 21/10. Trang Confession đăng bài ẩn danh: "Có ai biết biệt thự của sếp đang thế chấp ngân hàng không? Hạn 15/11 đó."_
-_{hr} mời bạn lên phòng HR. Có trà. Trà ngon. Chuyện thì không ngon._
+_9 giờ, {hr} xuống phòng server, tay xách một ấm trà. Trà ngon. Chuyện thì không ngon._
 hr: Anh {it} ơi, em chỉ muốn lắng nghe thôi. Anh giúp em truy người gửi bài này nha. Sếp đang… không chill.
 _Bạn mở log. Bài được đăng từ "NGAN-LAPTOP", như mọi khi. Nhưng {hong_hot} chỉ là người đăng. Người gửi bài qua form ẩn danh là một người khác._
 * [📜 Truy ngược form gửi bài.]
@@ -77,17 +77,17 @@ _Bạn mở log. Bài được đăng từ "NGAN-LAPTOP", như mọi khi. Nhưng
 === it_2210_vu_mat_file ===
 # ngay:22 # gio:00:30 # noi:phong_server # bat_buoc
 _0 giờ 30 sáng. Có tiếng gõ cửa phòng server. Lần đầu tiên trong đời, {chua_te_deadline} đứng đó mà không cười._
-chua_te_deadline: Anh {it}… em nói cái này anh đừng la nha. File gốc dự án quảng cáo hồi tháng 6… em làm mất rồi. Sáng mai đoàn thuế đòi bằng chứng nghiệm thu.
-* [💾 "Đưa ổ đây. Đi mua mì."]
+chua_te_deadline: Anh {it}… em nói cái này anh đừng la nha. File gốc dự án quảng cáo hồi tháng 6… chỉ còn trong cái USB em làm rơi ở bãi xe hồi tháng 9. Trên máy chủ em xóa rồi cho nhẹ. Sáng mai đoàn thuế đòi bằng chứng nghiệm thu.
+* [💾 "Để anh cứu file đã xóa trên máy chủ. Đi mua mì."]
     chua_te_deadline: Dạ! Mì gì anh? Mì ly hay mì gói?
     it: Cả hai.
-    _Bạn cắm cái ổ cứng cũ của {chua_te_deadline}. Màn hình hiện ra một lưới ô vuông như bãi mìn. Đêm nay sẽ dài._
+    _Bạn quét vùng đã xóa trên ổ máy chủ. Màn hình hiện ra một lưới ô vuông như bãi mìn. Đêm nay sẽ dài._
     ~ nghi(-40)
     -> it_mg_cuu_file
 * [😐 "Ủa alo? Tháng 6 mà giờ mới nói?"]
     chua_te_deadline: Thì… nước tới chân mới nhảy mà anh. Mà giờ nước tới cổ rồi.
     ~ qh("chua_te_deadline", -5)
-    ** [💾 "Đưa ổ đây."]
+    ** [💾 "Để anh cứu trên máy chủ."]
         ~ nghi(-40)
         -> it_mg_cuu_file
     ** {it_biet_o_cung} [🔒 "Khoan. Ở nhà anh có cái ổ ghi 'KHÔNG ĐƯỢC MỞ'…"]
@@ -113,7 +113,8 @@ _Bạn nghe hết bài. Rồi nghe lại lần nữa._
 // ------------------------------------------------------------
 === it_2210_kiem_tra_thue ===
 # ngay:22 # gio:09:30 # noi:phong_ke_toan # bat_buoc
-_Đoàn kiểm tra thuế tới bất ngờ. Trưởng đoàn là Chú Liêm, 55 tuổi, cặp da đen, mắt nhìn sổ sách như nhìn bài kiểm tra._
+_9 giờ, đoàn kiểm tra thuế tới, làm tới 4 giờ chiều. Trưởng đoàn là Chú Liêm, 55 tuổi, cặp da đen, mắt nhìn sổ sách như nhìn bài kiểm tra. Bốn thứ phải có: bản gốc giấy tờ thành lập, hợp đồng BTT, nghiệm thu dự án tháng 6, và nguồn gốc 5 tỷ._
+_Bác {bac_bao_ve} đã chạy xe về nhà Ven Đô lấy giấy tờ thành lập từ sớm, tờ nào cũng đóng dấu đỏ chữ "G"._
 _Cả công ty giả vờ làm việc chăm chỉ. {chua_te_deadline} lần đầu mở Excel. {dan_dau_tu} tắt chart._
 _{ke_toan} kéo bạn ra góc, giọng run run._
 ke_toan: Ông {it}… đoàn xin xem máy tính kế toán. Ông làm cho máy chạy… chậm chậm một chút được hông? Tui cần thời gian sắp xếp.
@@ -138,8 +139,11 @@ ke_toan: Ông {it}… đoàn xin xem máy tính kế toán. Ông làm cho máy c
     ~ qh("ke_toan", 15)
     ~ uy_tin = uy_tin + 5
 - chu_liem: Còn bằng chứng nghiệm thu dự án tháng 6, 800 triệu. File gốc đâu?
+{ it_co_o_cung:
+    _Trong ổ cứng sao lưu của bạn còn có cả hồ sơ nhân sự năm 2010 và mười năm sao lưu kế toán. {ke_toan} nhìn bạn như nhìn một cái két sắt biết đi._
+}
 { it_cuu_file_vu:
-    _Bạn cắm USB, mở file. Chú Liêm xem 3 phút, gật đầu, ký biên bản. {chua_te_deadline} đứng ở cửa, giơ ngón cái run run._
+    _Bạn cắm USB chép bản cứu được, mở file. Chú Liêm xem 3 phút, gật đầu, ký biên bản. {chua_te_deadline} đứng ở cửa, giơ ngón cái run run._
     ~ uy_tin = uy_tin + 10
     ~ qh("giam_doc", 10)
 - else:
@@ -212,24 +216,30 @@ _Bạn biết tin nhắn đó gửi cho ai. Cả công ty biết. Chỉ có ngư
 
 // ------------------------------------------------------------
 === it_2310_livestream_sinh_nhat ===
-# ngay:23 # gio:19:00 # noi:studio # bat_buoc
-_Sinh nhật {sieu_nhan_hong}, 31 tuổi, kiêm livestream lớn. Studio toàn bóng bay hồng. Bánh kem hồng ba tầng đặt giữa bàn._
-_Ai đó phải đóng vai "Mr. Kevin Trộn" của BTT Global để lên sóng chúc mừng. {sales} đứng nhìn quanh tìm người với ánh mắt tuyệt vọng._
+# ngay:23 # gio:20:00 # noi:studio # bat_buoc
+~ temp kevin = RANDOM(1, 3)
+_20:00. Sinh nhật {sieu_nhan_hong}, 31 tuổi, kiêm livestream lớn ở studio tầng 2. Studio toàn bóng bay hồng. Bánh kem hồng ba tầng đặt giữa bàn._
+_Màn "Mr. Kevin Trộn của BTT Global gửi lời chúc" do {kevin == 1:{thuc_tap_sinh}|{kevin == 2:{dan_dau_tu}|Bác {bac_bao_ve}}} đóng, bộ vest mượn rộng hơn người hai số._
 _10.000 người đang xem. Rồi 12.000._
 sieu_nhan_hong: Cảm ơn mọi người! Hôm nay em có một điều muốn nói… với một người…
-sieu_nhan_hong: {chua_te_deadline} ơi… em thích anh. Không phải PR đâu. \#VũƠiTrảLờiĐi
-_Bình luận nổ tung. Server nóng ran. Đúng lúc đó, {cho} lao vào bánh kem, kéo theo sợi dây mạng chạy ngang sàn._
+sieu_nhan_hong: {chua_te_deadline} ơi… em thích anh. Không phải PR đâu.
+_\#{chua_te_deadline}ƠiTrảLờiĐi. Bình luận nổ tung. Server nóng ran. {chua_te_deadline} cười: "Ý tưởng PR hay đó anh."_
+{ RANDOM(1, 2) == 1:
+    _Đúng lúc đó, {cho} lao vào bánh kem, kéo theo sợi dây mạng chạy ngang sàn._
+- else:
+    _Đúng lúc đó, {idol_het_thoi} đi ngang bàn bánh, vấp một cái rất chuyên nghiệp. Bánh kem đổ ụp lên sợi dây mạng chạy ngang sàn. {idol_het_thoi} chỉ tay về phía {cho}._
+}
 _Màn hình livestream đứng hình. Bạn có 5 giây._ # hen_gio:5
 * [🔌 Nhào tới cắm lại dây.]
     _Bạn trượt trên kem hồng, nhưng tay vẫn kịp cắm sợi dây vào. Livestream sống lại sau 4 giây._
-    ~ follow(40000)
+    ~ follow(15000)
     ~ it_livestream_23_on = true
     ~ qh("hong_hot", 10)
     hong_hot: Anh {it} trượt kem mà vẫn cắm trúng cổng! Huyền thoại!
 * [📱 Chuyển sang phát 4G dự phòng.]
     { it_on_dinh >= 60:
         _Điểm phát 4G bạn cài sẵn từ chiều tự động nhận. Livestream chỉ khựng 1 giây._
-        ~ follow(35000)
+        ~ follow(12000)
         ~ it_livestream_23_on = true
     - else:
         _Điểm phát 4G chưa được cài sẵn. Mất 30 giây để bật. 30 giây đó, 4.000 người rời đi._
@@ -245,12 +255,12 @@ _Màn hình livestream đứng hình. Bạn có 5 giây._ # hen_gio:5
         _Rồi tấm ảnh chụp màn hình "Siêu Nhân Hồng đứng hình với mặt dính kem" thành meme._
         ~ follow(10000)
     }
-- _Cái bánh kem đã đổ. Nhưng chữ \#VũƠiTrảLờiĐi đang lên xu hướng._
+- _Cái bánh kem đã đổ. Nhưng chữ \#{chua_te_deadline}ƠiTrảLờiĐi đang lên xu hướng._
 -> END
 
 // ------------------------------------------------------------
 === it_2410_ban_chu_no ===
-# ngay:24 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Bạn được xếp vào một bàn đặc biệt: bàn chủ nợ của {dan_dau_tu}._
 _Quanh bàn: {sales}, Bác {bac_bao_ve}, {con_ong_chau_cha}, {thanh_xin_nghi}, {thuc_tap_sinh}, {bien_kich}, {idol_het_thoi}. Và bạn. 3.000.000đ._
 chi_dai: Rồi. Anh {dan_dau_tu}, mời anh trình bày. Ai ngắt lời thì ra ngoài.
@@ -311,7 +321,7 @@ bac_bao_ve: Cháu cứ sửa đi. Bác pha trà.
     bac_bao_ve: Cháu là đứa duy nhất bác cho vào nhà này sửa đồ đấy.
     ~ qh("bac_bao_ve", 10)
     ~ it_lt(5)
-* {qh_bac_bao_ve >= 80} [🔒 "Bác ơi, mấy cái thư tay bác nhận… con thấy đóng dấu bưu điện nước ngoài."]
+* {qh_bac_bao_ve >= 50} [🔒 "Bác ơi, mấy cái thư tay bác nhận… con thấy đóng dấu bưu điện nước ngoài."]
     _Bác {bac_bao_ve} đặt ấm trà xuống. Im lặng rất lâu. {cho} cũng im._
     bac_bao_ve: Bác không thấy gì đâu. Mà cháu cũng không thấy gì nhé.
     it: Dạ. Con không thấy.
@@ -332,8 +342,8 @@ bac_bao_ve: Cháu cứ sửa đi. Bác pha trà.
 
 // ------------------------------------------------------------
 === it_2610_chieu_thu_phim ===
-# ngay:26 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
-_Sáng giao ban, tin đồn "cắt giảm nếu Siêu Nhân Hồng thất bại" lan khắp công ty. Chiều, chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Bạn lo máy chiếu._
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2 # bat_buoc
+_Sáng giao ban, tin đồn "cắt giảm nếu Siêu Nhân Hồng thất bại" lan khắp công ty. 16:00, chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Bạn lo máy chiếu._
 _Máy chiếu lần này chạy ngon. Bạn đã tắt đi bật lại nó 3 lần từ sáng, để chắc._
 _Phim chiếu tới cảnh người mặc đồ hồng đẩy chiếc xe chết máy trong mưa. Bạn nghe tiếng ghế bên cạnh rung nhẹ: {thuc_tap_sinh} đang nắm chặt tay vịn._
 thuc_tap_sinh: *(thì thầm)* Dạ… cái này… là chuyện của em mà anh…
@@ -388,7 +398,7 @@ _Bạn nhìn ly cà phê. Rồi nghĩ tới cái router quấn băng keo, giờ 
 
 // ------------------------------------------------------------
 === it_2710_camera_cong ===
-# ngay:27 # gio:16:40 # noi:phong_server
+# ngay:27 # gio:15:00 # noi:phong_server
 _Bạn đang upload trailer phim ngắn thì camera cổng báo có chuyển động. Một chiếc xe màu trắng dừng trước cổng._
 _Lưu Lực bước xuống, ôm tập hồ sơ, đi thẳng vào sảnh. Đúng lúc đó {chi_dai} đi ra từ thang bộ._
 _Trên màn hình camera, Lưu Lực khựng lại, làm rơi tập hồ sơ. Giấy bay tứ tung. {chi_dai} nhìn Lưu Lực, khoanh tay, không nói một chữ._
@@ -401,5 +411,4 @@ _Lưu Lực nhặt giấy, quay lưng đi thẳng ra xe._
     ~ it_lt(3)
     ~ qh("chi_dai", 5)
 - _Thanh upload trailer: 100%. Dòng chữ "Kịch bản: {bien_kich}" lên mạng cùng lúc._
-~ follow(15000)
 -> END

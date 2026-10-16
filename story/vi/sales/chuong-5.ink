@@ -27,10 +27,7 @@ _{hr} và {it} đi từng bàn. {it} mở log truy cập mạng. Lịch sử tì
 * [🗣️ Đăng vào group: "Mọi người bình tĩnh, BTT Global vẫn cam kết tài trợ!"]
     ~ sl_phet(10)
     _Không ai trả lời. Trong một ngày như hôm nay, chẳng ai muốn nghe thêm một tập đoàn nào._
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
--> END
+- -> END
 
 // ------------------------------------------------------------
 === sales_2210_cuu_quynh ===
@@ -135,10 +132,7 @@ dan_dau_tu: Anh nhìn chart cả đời. Cột của em cao 300%, tiền về th
 * [😶 "Anh muốn sao thì làm vậy."]
     dan_dau_tu: Anh chưa biết. *(gấp tờ giấy, bỏ túi)*
     ~ cang_thang(10)
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
--> END
+- -> END
 
 // ------------------------------------------------------------
 === sales_2210_tuyen_chu_tich ===
@@ -201,13 +195,30 @@ _Sinh nhật {sieu_nhan_hong}, 31 tuổi. Tập diễn ở góc studio, sau tấ
     _Không có Kevin Trộn nào hôm nay. Bạn phụ {chi_dai} canh bánh kem, cách {cho} 5 mét._
     ~ qh("chi_dai", 5)
 }
+{ sl_kevin_dien_vien != "":
+    -> vest
+}
 ~ nghi(-10)
+-> END
+
+= vest
+_Còn một việc: bộ vest cho "chủ tịch". Tiệm cho thuê đầu phố báo giá bộ xịn nhất: 3 triệu, cọc trước._
+* [💳 Lên phòng kế toán tạm ứng 3 triệu. Chủ tịch thì phải ra chủ tịch.]
+    ~ sl_ung(3000000)
+    ~ tien_cong(-3000000)
+    ~ sl_phet(5)
+    ke_toan: *(ký, không ngẩng lên)* Ba triệu. Tiền vest cho một người không có thật. Chị ghi rõ vậy nha em.
+    _Sổ Tạm Ứng của bạn dày thêm một trang._
+* [👔 Mượn áo vest cũ treo sau cửa phòng {giam_doc}.]
+    _Áo hơi rộng, có mùi long não. Nhưng lên hình thì ai biết._
+    ~ qh("giam_doc", 2)
+- ~ nghi(-10)
 -> END
 
 // ------------------------------------------------------------
 === sales_2310_livestream ===
-# ngay:23 # gio:19:00 # noi:studio # bat_buoc
-_19 giờ. Livestream sinh nhật. 12.000 người xem. Bánh kem hồng 3 tầng giữa phòng._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ. Studio tầng 2. Livestream sinh nhật. 12.000 người xem. Bánh kem hồng 3 tầng giữa phòng._
 { sl_kevin_dien_vien != "":
     -> kevin
 - else:
@@ -260,10 +271,7 @@ giam_doc: Và bây giờ, xin mời chủ tịch Tập đoàn Bánh Tráng Trộ
     }
 }
 { sl_kevin_thanh_cong:
-    ~ follow(30000)
-}
-{ sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
+    ~ follow(20000)
 }
 -> to_tinh
 
@@ -289,8 +297,8 @@ cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
 
 // ------------------------------------------------------------
 === sales_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:09:30 # noi:sanh_tang_tret
-_Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Bạn bị xếp ngồi đối diện {ke_toan}._
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Liên Hợp Quốc. 14 giờ, phòng họp tầng 2. {chi_dai} tổ chức "hội nghị hòa giải". Bạn bị xếp ngồi đối diện {ke_toan}._
 chi_dai: Hai đứa viết cho nhau một điều tốt. Thật lòng. Ai viết xạo chị biết liền.
 _{ke_toan} viết xong trước, gấp đôi tờ giấy, đẩy sang. Bạn mở ra._
 _"Em nói chuyện hay. Nếu nói thật thì càng hay."_
@@ -317,8 +325,8 @@ _"Em nói chuyện hay. Nếu nói thật thì càng hay."_
 
 // ------------------------------------------------------------
 === sales_2410_ban_chu_no ===
-# ngay:24 # gio:14:00 # noi:sanh_tang_tret
-_{chi_dai} xếp riêng cho {dan_dau_tu} một bàn: "bàn chủ nợ". Bạn, {it}, Bác {bac_bao_ve}, {con_ong_chau_cha}, {thanh_xin_nghi}, {thuc_tap_sinh}, {bien_kich}, {idol_het_thoi} ngồi quanh._
+# ngay:24 # gio:15:30 # noi:phong_hop_tang_2
+_Cuối buổi hòa giải, {chi_dai} xếp riêng cho {dan_dau_tu} một bàn: "bàn chủ nợ". Bạn, {it}, Bác {bac_bao_ve}, {con_ong_chau_cha}, {thanh_xin_nghi}, {thuc_tap_sinh}, {bien_kich}, {idol_het_thoi} ngồi quanh._
 dan_dau_tu: *(đứng trước bảng trắng)* Kế hoạch trả nợ: giai đoạn 1, tích lũy. Giai đoạn 2, bứt phá. Giai đoạn 3…
 chi_dai: Giai đoạn 3 là trả. Nói con số.
 _Phần nợ của bạn còn: {sl_no_chuong}đ._
@@ -347,7 +355,8 @@ _Phần nợ của bạn còn: {sl_no_chuong}đ._
 # ngay:25 # gio:10:00 # noi:ho_boi_sky_ao
 _Chủ nhật. Hồ bơi Sky Ảo. {con_ong_chau_cha} ngồi mép hồ, chân thả xuống nước, không có phao con vịt._
 con_ong_chau_cha: {sales}. Penthouse của anh bị rao bán rồi. Chú anh không nói gì. Anh đọc trên mạng.
-_Ở một tòa nhà khác, giờ này có người đang đi phỏng vấn lén ở LL, có người đang đàm phán lương. Ở đây, chỉ có tiếng nước._
+_Điện thoại rung. {designer} nhắn: "Chị vừa giao USB ở quầy lễ tân LL. Đụng con {thanh_ninh} ở sảnh. Hai đứa giả bộ đi lạc. Đừng hỏi."_
+_Ở một tòa nhà khác, giờ này {quan_ly_idol} đang ngồi trong phòng Lưu Lực, nghe đâu được mời 36 triệu một tháng. Ở đây, chỉ có tiếng nước._
 * [💬 "Anh có muốn tự làm gì hông? Em bán giùm cho."]
     con_ong_chau_cha: *(nhìn bạn)* Bán… bán gì? Anh có gì đâu mà bán.
     sales: Ai cũng có cái để bán. Chỉ là chưa ai giúp mình gọi tên nó.
@@ -390,9 +399,65 @@ _Chiều nay còn chiếu thử phim "Người Hùng Không Tên". Tối qua, ng
 - -> END
 
 // ------------------------------------------------------------
+=== sales_2710_cuoc_goi ===
+# ngay:27 # gio:11:00 # noi:ban_sales # bat_buoc
+_11 giờ. Một số lạ gọi tới. Giọng một bà cụ, chậm, rõ, có tiếng máy khuấy sữa phía sau._
+sua_chua_hong_hao: Alo, cô {sales} hả con? Bà là chủ xưởng Sữa Chua Hồng Hào ở Ven Đô. Bà muốn tài trợ cái Đại Nhạc Hội của cậu Siêu Nhân Hồng. Một tỷ.
+sua_chua_hong_hao: Hồi tháng trước trời mưa, xe sữa của bà chết máy giữa dốc, cậu đó đẩy giùm bà một khúc dài, không ai quay phim hết. Bà nhớ.
+_Bạn đứng chết lặng. Rồi bạn hét lên. Rồi bạn kể với cả phòng._
+hong_hot: Ủa alo? Sữa Chua Hồng Hào gọi tài trợ 1 tỷ hả? Thôi {sales} ơi, tháng này bà kể 7 nhà tài trợ rồi đó.
+_Cả phòng cười. Không ai tin. Kể cả bạn, một chút._ # hen_gio:8
+* [🤝 "Lần này thật mà {hong_hot}. Thật tới mức… chị sợ."]
+    ~ sl_tin_cuoc_goi = true
+    ~ sl_that_long()
+    hong_hot: *(cười)* Ờ, ờ. Tui tin. *(không tin)*
+    _Bạn ghi lại số điện thoại, giờ hẹn: 15 giờ mai, quán Sống Ảo. Bà cụ nói cháu bà sẽ chở bà lên._
+    -> dong_minh
+* [📱 Bật loa ngoài, gọi lại số vừa nãy trước mặt cả phòng.]
+    ~ sl_tin_cuoc_goi = true
+    ~ sl_chung_minh_cuoc_goi = true
+    ~ sl_phet(-20)
+    ~ sl_that_long()
+    _Tút… tút… "Alo, Sữa Chua Hồng Hào nghe nè con." Vẫn giọng bà cụ, vẫn tiếng máy khuấy sữa._
+    _Cả phòng im phăng phắc. {hong_hot} buông điện thoại. {ke_toan} đứng dậy từ bàn bên kia._
+    ke_toan: *(nói nhỏ)* Hẹn ký ở đâu em?
+    sales: Dạ… 15 giờ mai, Sống Ảo.
+    ~ qh("ke_toan", 10)
+    ~ qh("hong_hot", 5)
+    -> dong_minh
+* [🗣️ "Thật ra bả tài trợ 3 tỷ, mà chị nói 1 cho khiêm tốn."]
+    ~ sl_tin_cuoc_goi = true
+    ~ sl_phet(20)
+    hong_hot: 3 tỷ?! Đăng liền!
+    _20 phút sau, bà cụ gọi lại: "Con ơi, sao trên mạng ghi bà tài trợ 3 tỷ? Bà có 3 tỷ đâu con." Giọng không còn vui._
+* [😶 "Chắc ai chọc mình thôi." Cúp máy, không gọi lại.]
+    _Bạn cười cùng cả phòng. Cười to nhất. Rồi lưu số đó tên "chắc ai chọc"._
+    _Ở Ven Đô, một bà cụ đặt điện thoại xuống, nói với đứa cháu: "Bên G không nghe máy. Thôi thử bên LL coi."_
+* [⏱️ (Không chọn kịp)]
+    _Bạn đứng đơ quá lâu. Cuộc gọi tự ngắt. Bạn gọi lại: thuê bao không liên lạc được. Bạn nhìn màn hình, không biết nên tin ai._
+    ~ sl_tin_cuoc_goi = true
+- -> END
+
+= dong_minh
+{ qh_chi_dai >= 15:
+    chi_dai: *(giật điện thoại của bạn, bấm gọi lại, nghe 10 giây)* Thật. Giọng này không phải giọng diễn. Đứa nào còn cười thì ra ngoài cười.
+}
+{ qh_dan_dau_tu >= 15:
+    dan_dau_tu: *(gõ máy)* Lượt nhắc tên "Sữa Chua Hồng Hào" tăng 400% từ tuần trước. Không phải số ảo. Anh đứng về phía em.
+}
+{ qh_thuc_tap_sinh >= 20:
+    thuc_tap_sinh: *(nhìn nhật ký cuộc gọi)* Dạ số cố định ở Ven Đô, đăng ký từ năm 2009 ạ. Không phải số rác đâu chị.
+}
+{ qh_giam_doc >= 20:
+    giam_doc: *(từ cửa phòng)* Anh không ép, nhưng lần này anh tin em. Mai đi ký đi.
+}
+_Lần đầu tiên trong tháng, có người tin bạn mà bạn không phải nói "tin chị đi"._
+-> END
+
+// ------------------------------------------------------------
 === sales_2710_luu_luc_toi ===
-# ngay:27 # gio:14:00 # noi:sanh_tang_tret
-_14 giờ. Một chiếc xe trắng đỗ trước cổng. Lưu Lực bước xuống: vest trắng, tóc vuốt keo, tay cầm tập hồ sơ dày._
+# ngay:27 # gio:15:00 # noi:sanh_tang_tret
+_15 giờ. Một chiếc xe màu xanh lá chuối đỗ trước cổng. Lưu Lực bước xuống: vest trắng, tóc vuốt keo, tay cầm tập hồ sơ dày._
 luu_luc: Chào cả nhà {cong_ty}. Việc hôm nay phải xong từ hôm qua. Tôi tới gặp {sieu_nhan_hong}.
 cho: Grừ… GÂU!
 _Lưu Lực bước vào sảnh. Khựng lại. Ở cầu thang, {chi_dai} đang khoanh tay. Tập hồ sơ rơi xuống sàn. Lưu Lực lùi một bước, quay ra xe._
@@ -405,46 +470,6 @@ chi_dai: *(nhướng mày)* Ủa, ổng bị gì vậy?
     chi_dai: Để chị giữ. Chị không đọc. Mà đứa nào cần đọc thì chị không thấy.
     ~ qh("chi_dai", 8)
 - -> END
-
-// ------------------------------------------------------------
-=== sales_2710_cuoc_goi ===
-# ngay:27 # gio:16:00 # noi:ban_sales # bat_buoc
-_16 giờ. Một số lạ gọi tới._
-sua_chua_hong_hao: Chào chị, bên em là Sữa Chua Hồng Hào ở Ven Đô. Bên em muốn tài trợ Đại Nhạc Hội 1 tỷ. Chị {sales} phụ trách phải không ạ?
-_Bạn đứng chết lặng. Rồi bạn hét lên. Rồi bạn kể với cả phòng._
-hong_hot: Ủa alo? Sữa Chua Hồng Hào gọi tài trợ 1 tỷ hả? Thôi {sales} ơi, tháng này em kể 7 nhà tài trợ rồi đó.
-_Cả phòng cười. Không ai tin. Kể cả bạn, một chút._ # hen_gio:8
-* [🤝 "Lần này thật mà chị {hong_hot}. Thật tới mức… chị sợ."]
-    ~ sl_tin_cuoc_goi = true
-    ~ sl_that_long()
-    hong_hot: *(cười)* Ờ, ờ. Chị tin. *(không tin)*
-    _Không ai tin. Bạn vẫn tin. Bạn ghi lại số điện thoại, giờ hẹn: 15 giờ ngày mai, quán Sống Ảo._
-* [📱 Bật loa ngoài, gọi lại số vừa nãy trước mặt cả phòng.]
-    ~ sl_tin_cuoc_goi = true
-    ~ sl_chung_minh_cuoc_goi = true
-    ~ sl_phet(-20)
-    ~ sl_that_long()
-    _Tút… tút… "Dạ Sữa Chua Hồng Hào xin nghe." Giọng chuyên nghiệp, rõ ràng._
-    _Cả phòng im phăng phắc. {hong_hot} buông điện thoại. {ke_toan} đứng dậy từ bàn bên kia._
-    ke_toan: *(nói nhỏ)* Hẹn ký ở đâu em?
-    sales: Dạ… 15 giờ mai, Sống Ảo.
-    ~ qh("ke_toan", 10)
-    ~ qh("hong_hot", 5)
-* [🗣️ "Thật ra họ tài trợ 3 tỷ, mà chị nói 1 cho khiêm tốn."]
-    ~ sl_tin_cuoc_goi = true
-    ~ sl_phet(20)
-    hong_hot: 3 tỷ?! Đăng liền!
-    _20 phút sau, Sữa Chua Hồng Hào gọi lại: "Ủa chị, sao trên mạng ghi bên em tài trợ 3 tỷ?". Giọng không còn vui._
-* [😶 "Chắc ai chọc mình thôi." Cúp máy, không gọi lại.]
-    _Bạn cười cùng cả phòng. Cười to nhất. Rồi xóa lịch sử cuộc gọi._
-    _Ở Ven Đô, một người đặt điện thoại xuống, ghi vào sổ: "Bên G không phản hồi. Thử bên LL."_
-* [⏱️ (Không chọn kịp)]
-    _Bạn đứng đơ quá lâu. Cuộc gọi tự ngắt. Bạn gọi lại: thuê bao không liên lạc được. Bạn nhìn màn hình, không biết nên tin ai._
-    ~ sl_tin_cuoc_goi = true
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
--> END
 
 // ------------------------------------------------------------
 === sales_2710_dem_quynh ===

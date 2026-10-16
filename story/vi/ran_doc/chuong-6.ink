@@ -31,16 +31,19 @@ dan_dau_tu: Em ơi, anh lọc ra 80.000 nick ảo bình luận y chang nhau. Ch�
 
 // ------------------------------------------------------------
 === ran_doc_2810_video_linh ===
-# ngay:28 # gio:14:10 # noi:phong_dung_phim
-_Fanpage công ty vừa đăng một video lạ: 3 phút, nhạc piano, toàn cảnh {quan_ly_idol} làm việc. Đoạn cuối có dòng chữ: "Anh có biết em đã dựng bao nhiêu đêm vì anh không?"_
+# ngay:28 # gio:02:10 # noi:hem_69
+_2 giờ 10 sáng. Bên kia vách, {hong_hot} hét lên một tiếng rồi đập vách rầm rầm: "Ông ơi dậy! Fanpage!"_
+_Fanpage công ty vừa đăng một video lạ, tên file "Thai_final_v12": 3 phút, nhạc piano, toàn cảnh {quan_ly_idol} làm việc, ảnh bìa là {quan_ly_idol} ngủ gục trong xe. Đoạn cuối có dòng chữ: "Anh có biết em đã dựng bao nhiêu đêm vì anh không?"_
 _Không phải video quảng cáo. Là video tỏ tình. Của {editor}. Bị xuất nhầm._
-editor: *(gõ cửa phòng server liên tục)* Anh {it}! Gỡ giùm em! GỠ GIÙM EM!
+editor: *(nhắn group, toàn chữ hoa)* ANH {it} ƠI GỠ GIÙM EM! GỠ GIÙM EM!
 ~ phat_hien(linh_thich_thai)
-* [🤝 Chạy vào phòng server, đọc mật khẩu fanpage cho {it}.]
+* [🤝 Gọi điện đánh thức {it}, đọc mật khẩu fanpage {hong_hot} vừa đưa.]
     ~ qh("editor", 20)
     ~ qh("it", 5)
-    _Video bị gỡ sau 6 phút. 6 phút đủ để 2.000 người xem. Nhưng không đủ để thành drama._
-    editor: *(ngồi bệt xuống sàn)* Cảm ơn ông. Thật sự cảm ơn ông.
+    _Video bị gỡ sau 6 phút. 6 phút đủ để khoảng 2.000 người xem. Nhưng không đủ để thành drama._
+    it: *(giọng ngái ngủ)* Gỡ rồi. Mà lạ. Lệnh xuất không đi từ máy {editor}. Đi từ một máy khác, đăng nhập lúc 02:09.
+    ~ rd_manh_moi_ran_hai = rd_manh_moi_ran_hai + 1
+    editor: *(nhắn riêng bạn)* Cảm ơn ông. Thật sự cảm ơn ông.
 * [🐍 Tải video về trước khi bị gỡ.]
     ~ rd_tin_mat()
     ~ rd_nghi(5)
@@ -49,7 +52,7 @@ editor: *(gõ cửa phòng server liên tục)* Anh {it}! Gỡ giùm em! GỠ GI
     ~ rd_tung_tin(12, 10)
     ~ qh("editor", -25)
     ~ qh("quan_ly_idol", -10)
-    _{editor} không ra khỏi phòng dựng cả ngày hôm đó. Ở bàn bên kia, {quan_ly_idol} xem video ba lần, mặt không biểu cảm._
+    _Sáng hôm đó, {editor} không ra khỏi phòng dựng. Ở bàn bên kia, {quan_ly_idol} xem lại bản tải về ba lần, mặt không biểu cảm._
 - -> END
 
 // ------------------------------------------------------------
@@ -73,7 +76,7 @@ it: Tôi in log được. Mà anh định làm gì?
 === ran_doc_2910_wifi_sap ===
 # ngay:29 # gio:08:40 # noi:tang_1 # bat_buoc
 _Ngày Internet Quốc tế. Wifi sập. Cả công ty truy đuổi {it} từ tầng 2 xuống tầng trệt._
-_Video "16 năm" của {editor} kẹt ở 99%. Chiến dịch mạng xã hội đứng hình._
+_Video "16 năm" của {editor} kẹt ở 99%. Chiến dịch mạng xã hội đứng hình. Phải tới 22 giờ 47 tối nay mạng mới có lại._
 { rd_biet_ran_hai:
     _Bạn không chạy theo đám đông. Bạn đi thẳng ra tủ mạng sau cầu thang. Và bắt gặp {ten(ran_thu_hai)} đang cầm cây kéo, cạnh sợi dây mạng bị cắt đứt._
     * [📸 Chụp ảnh.]
@@ -162,6 +165,7 @@ sieu_nhan_hong: Hôm nay hông có mạng, hông livestream được. Anh đi đ
     ~ rd_han(3)
     _Bạn vừa nói trúng nỗi sợ của hắn. Lẽ ra phải thấy thắng. Mà không thấy gì cả._
 - _Bác {bac_bao_ve} đánh cờ ở bàn bên với ông Ba trà đá. Làm như không nghe thấy gì._
+_Uống xong, hắn đứng dậy, đi thẳng sang quán Chè Bà Bảy ở đầu hẻm. Cô cháu gái của bà, Mai, ngẩng lên, không hỏi gì về bộ đồ hồng, chỉ hỏi: "Anh ăn chè gì?". Hắn cười. Cái cười đó bạn chưa thấy bao giờ, kể cả hồi ở xóm Cây Me._
 -> END
 
 // ------------------------------------------------------------
@@ -188,19 +192,19 @@ hr: Mình cùng nhìn lại không gian làm việc nha em. Gầm cầu thang n�
 
 // ------------------------------------------------------------
 === ran_doc_3010_hop_danh_gia ===
-# ngay:30 # gio:10:00 # noi:phong_hop_sang_tao # bat_buoc
-_Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng "Sáng Tạo". {sieu_nhan_hong} dự với tư cách đối tác. Trên bàn {hr} là tập hồ sơ màu hồng._
-giam_doc: Hôm nay anh công bố ghế Phó Giám đốc, tăng lương, và… những thay đổi về nhân sự.
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ. Họp đánh giá cuối tháng ở phòng họp tầng 2. Cả công ty ngồi kín. { nguyen_theo_ll: Ghế đối tác bỏ trống, chỉ còn tấm bảng tên "Siêu Nhân Hồng" úp mặt xuống bàn. | {sieu_nhan_hong} dự với tư cách đối tác. } Trên bàn {hr} là tập hồ sơ màu hồng. {thanh_ninh} ngồi sát ghế sếp, liếc bạn một cái rất nhanh._
+giam_doc: Hôm nay anh điểm lại cả tháng, gia hạn hợp đồng cho {idol_het_thoi}, và… những thay đổi về nhân sự. Còn ai ở, ai đi, ai lên ghế nào thì anh chốt sau Đại Nhạc Hội.
 { rd_nghi_ngo >= 100:
     _Màn hình chiếu tự bật. Ảnh chụp tin nhắn của bạn. Từng cái một. Group Anti Sếp. Nick ảo. File MV. Tờ giấy giả chữ ký._
-    _Cả phòng quay lại nhìn bạn. Không ai nói gì. Không cần ai nói gì._
+    _Cả phòng quay lại nhìn bạn. {giam_doc} tắt máy chiếu, giọng rất khẽ: "Mai diễn xong đã. Thứ 2 em lên phòng anh."_
     -> END
 }
 { not rd_biet_ran_hai:
     _{ten(ran_thu_hai)} đứng dậy, cắm USB vào máy chiếu. Trên màn hình: tập "bằng chứng" có tên bạn. Ảnh, tin nhắn, ghi âm. Cái gì cũng thật. Chỉ thiếu phần của chính người đó._
     _"Tui chỉ nói sự thật thôi mà."_
-    _Câu cửa miệng của bạn. Từ miệng người khác._
-    ~ rd_nghi(40)
+    _Câu cửa miệng của bạn. Từ miệng người khác. {giam_doc} giơ tay: "Để sau 31. Giờ ai về việc nấy."_
+    ~ rd_nghi(30)
     -> END
 }
 _{ten(ran_thu_hai)} đứng dậy, cầm USB đi về phía máy chiếu. Bạn đứng dậy cùng lúc._
@@ -227,8 +231,8 @@ _{ten(ran_thu_hai)} đứng dậy, cầm USB đi về phía máy chiếu. Bạn 
 -
 { rd_do_doc >= 80 && rd_nghi_ngo < 40 && rd_loai_nhat && rd_loai_long:
     giam_doc: Ghế Phó Giám đốc. {truong_phong} thì… nhiều chuyện quá. {con_ong_chau_cha} thì… anh không bênh được nữa.
-    giam_doc: Người duy nhất không dính vào chuyện gì trong tháng này là… {ran_doc}.
-    _Cả phòng quay lại nhìn bạn. Bạn mỉm cười. Ngọt như đường hóa học._
+    giam_doc: Người duy nhất không dính vào chuyện gì trong tháng này là… {ran_doc}. Anh chưa chốt. Nhưng anh nói trước để em chuẩn bị tinh thần.
+    _Cả phòng quay lại nhìn bạn. Ở ghế bên cạnh sếp, {thanh_ninh} đánh rơi cây bút. Bạn mỉm cười. Ngọt như đường hóa học._
 - else:
     giam_doc: Ghế Phó Giám đốc… anh xin phép để sau Đại Nhạc Hội. Tháng này nhiều chuyện quá.
 }
@@ -285,54 +289,68 @@ chi_dai: {ran_doc}, em hóa trang gì? Chị chưa thấy.
 // ------------------------------------------------------------
 === ran_doc_3110_canh_ga ===
 # ngay:31 # gio:19:20 # noi:canh_ga_dem_hong # bat_buoc
-_Cánh gà. 10 phút nữa mở màn. Tủ điện sân khấu nằm sau tấm phông đen. Cầu dao tổng: một cái cần gạt đỏ._
-_{chi_dai} đưa bạn bộ đàm: "Em giữ khu này giùm chị. Không ai được đụng vào tủ điện."_
+_Cánh gà. 10 phút nữa mở màn. {chi_dai} đứng cạnh tủ điện, một tay đặt lên cầu dao tổng, tay kia cầm bộ đàm. Không ai qua được chị._
+chi_dai: {ran_doc}, em đứng bàn cue với {chua_te_deadline}. Có gì báo chị.
+_Bàn cue có một cái laptop mở sẵn: lịch chạy chương trình, phút nào ai lên. Bên kia đường, màn hình LED trên tòa LL-Entertainment tối om, như đang chờ ai đó bấm nút._
 { rd_bao_ll_lich_dien:
-    _Một người lạ áo xanh lá chuối đứng gần tủ điện. Người của LL. Cầm đúng bản lịch bạn đã gửi._
+    _Điện thoại bạn rung. Số của thư ký LL: "Anh nhắn em đúng giây Siêu Nhân Hồng bước ra nha anh." Kèm một trái tim xanh lá._
 }
-_Bạn đứng một mình với cái cần gạt đỏ. Gạt xuống là Đại Nhạc Hội Siêu Nhân tối om, trước cả nghìn khán giả và mấy chục máy quay._
-* [💥 Gạt cầu dao vào đúng lúc {sieu_nhan_hong} bước ra.]
+* [💥 Nhắn cho LL đúng giây {sieu_nhan_hong} bước ra.]
     ~ rd_cat_dien_dem_hong = true
-    ~ rd_pha(150000)
-    _Tối om. Cả sân khấu hét lên. 3 giây. 5 giây. Rồi từ khán đài, một ánh đèn điện thoại bật lên. Rồi hai. Rồi một nghìn._
-    _Giữa biển đèn điện thoại, {sieu_nhan_hong} đứng một mình, không nhạc, không micro, và bắt đầu hát "Công Viên". Sai lời. Cả khán đài hát theo._
-    ~ follow(100000)
-    _Bạn phá. Bạn lại vừa tạo ra khoảnh khắc đẹp nhất đêm nay. Bạn ngồi bệt xuống sau tủ điện, không biết nên cười hay khóc._
-* [🤝 Đứng chắn trước tủ điện suốt buổi diễn.]
+    ~ rd_pha(30000)
+    ~ rd_nghi(10)
+    _Bạn bấm gửi. Lát nữa, đúng lúc bộ đồ hồng bước vào luồng sáng, màn hình LED bên kia đường sẽ bật "Hồng Ngoại" lên, to bằng cả tòa nhà. Nửa khán đài sẽ quay đầu._
+    _{chua_te_deadline} liếc màn hình điện thoại của bạn, rồi nhìn bạn rất lâu. Không nói gì._
+* [🤝 Báo {chi_dai}: "Chị ơi, LL có lịch chạy chương trình. Họ canh giờ bật màn hình LED."]
     ~ rd_giu_cau_dao = true
-    ~ rd_giup(30000)
+    ~ rd_giup(20000)
+    chi_dai: *(bộ đàm)* {it}! Đẩy tiết mục chính sớm ba phút. Đừng hỏi.
     { rd_bao_ll_lich_dien:
-        _Người áo xanh lá chuối tiến lại gần. Bạn không nhúc nhích. Người đó nhìn bạn, nhìn bộ đàm, rồi lùi đi. Bạn đã gửi lịch cho họ. Giờ bạn đứng chặn họ._
+        _Bạn đã gửi lịch cho họ. Giờ bạn đứng phá cái lịch của chính mình. {chi_dai} không hỏi bạn biết bằng cách nào. Chị chỉ gật đầu._
         ~ rd_han(-5)
     - else:
-        _Không ai tới gần tủ điện. Bạn đứng đó cả đêm, nghe nhạc vọng từ sân khấu, và thấy mình giống bác {bac_bao_ve}: người giữ cổng._
+        _{chi_dai} nhìn bạn. Lần đầu tiên trong tháng, ánh mắt đó không có chữ "nghi"._
+        ~ rd_nghi(-5)
     }
-* [😶 Đưa bộ đàm cho {it}, đi xuống khán đài.]
-    it: Ừ. Đi đi. Tôi giữ.
+* [😶 Đưa tai nghe cho {chua_te_deadline}, đi xuống khán đài.]
+    chua_te_deadline: Ừ. Đi đi. Tui giữ.
     _Bạn đi xuống khán đài. Đứng ở hàng cuối, giữa đám đông, như một người lạ._
 - -> END
 
 // ------------------------------------------------------------
-=== ran_doc_3110_dem_hong ===
-# ngay:31 # gio:21:30 # noi:san_khau_dem_hong # bat_buoc
-_Phim ngắn "Người Hùng Không Tên" mở màn. Rồi video "16 năm" của {editor}. Rồi đèn tắt, và bộ đồ hồng bước ra giữa sân khấu._
+=== ran_doc_3110_truoc_gio_dien ===
+# ngay:31 # gio:19:25 # noi:canh_ga_dem_hong # bat_buoc
+{ nguyen_theo_ll:
+    _19 giờ 25. Phòng thay đồ của Siêu Nhân Hồng trống trơn. Chỉ còn cái móc áo hồng và một hộp chè Bà Bảy chưa mở._
+    _Bên kia đường, trên tầng thượng tòa LL, có một bóng hồng viền xanh lá chuối đang đứng. Bạn nhìn lên. Bạn không biết mình muốn thấy gì._
+    { rd_day_nguyen_sang_ll:
+        ~ rd_han(-5)
+        _Câu "Gấp ba mà anh" của bạn hôm 27 vẫn còn văng vẳng. Lần này không ai bị nhốt trong nhà kho. Người ta tự bước vào._
+    }
+    -> END
+}
+_19 giờ 25. Năm phút nữa mở màn. {sieu_nhan_hong} đứng một mình sau tấm phông đen, chỉnh lại găng tay. Thấy bạn, hắn khựng lại._
 { rd_mo_nhanh_hieu_ech && rd_moi_han < 40:
-    sieu_nhan_hong: *(micro rung)* Trước khi hát, anh muốn mời một người lên đây. Người đó tên {ran_doc}.
-    _Cả nghìn ánh mắt quay lại tìm bạn._
-    * [😇 Bước lên sân khấu.]
-        _Bạn bước lên. Đèn chói. {sieu_nhan_hong} tháo mũ, trước cả nghìn người và mấy chục máy quay._
+    sieu_nhan_hong: *(nói rất nhỏ)* {ran_doc}. Hết show, anh muốn mời em lên sân khấu. Anh muốn nói chuyện nhà kho trước mặt mọi người. Em cho phép hông?
+    * [😇 "Ừ. Em lên."]
+        ~ rd_len_san_khau = true
         ~ nguyen_thao_mu_dem_hong = true
-        sieu_nhan_hong: Hồi nhỏ, anh nhốt em này trong nhà kho cả buổi chiều. Anh gọi em là {ran_doc} Ếch. Anh xin lỗi. Trước mặt mọi người.
-        _Hắn cúi đầu. Rất lâu._
-        ~ rd_han(-20)
-        ~ rd_nguyen_xin_loi = true
+        ~ rd_han(-10)
+        sieu_nhan_hong: *(hít một hơi thật sâu)* Vậy… tối nay anh tháo mũ luôn. Lâu rồi anh muốn làm vậy.
         -> END
-    * [😶 Đứng yên dưới khán đài.]
-        _Bạn không bước lên. {sieu_nhan_hong} đợi 10 giây, rồi gật đầu, như đã hiểu. Hắn hát. Bài hát dành cho một người đứng ở hàng cuối._
+    * [😶 "Anh nói với em là đủ rồi. Đừng kéo em lên."]
+        sieu_nhan_hong: *(gật đầu)* Ừ. Anh hiểu. Em đứng ở đâu anh cũng biết.
         ~ rd_han(-5)
         -> END
 - else:
-    _{sieu_nhan_hong} tạo dáng giữa pháo hoa. "Hồng không phải màu, Hồng là thái độ!" Cả khán đài hô theo._
-    _Bạn đứng nhìn. Con số trên màn hình lớn sau sân khấu chạy liên tục: {nguoi_theo_doi}._
+    sieu_nhan_hong: Ủa em! Em đứng cue hả? Tối nay nhờ em nha!
+    * [😇 "Diễn tốt nha anh."]
+        sieu_nhan_hong: *(tạo dáng chữ V)* Hồng là thái độ!
+        ~ rd_han(-3)
+        -> END
+    * [🐍 Mỉm cười, không trả lời.]
+        _Hắn chờ một câu trả lời không tới, rồi gãi đầu dưới mũ, đi ra phía ánh đèn._
+        ~ rd_han(3)
+        -> END
 }
 -> END

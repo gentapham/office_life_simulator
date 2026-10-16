@@ -206,8 +206,8 @@ _Thùng đạo cụ số 7 trên xe số 2 phát ra một tiếng: "…Ẳng."_
 
 // ------------------------------------------------------------
 === bac_bao_ve_1610_tivi_trong_choi ===
-# ngay:16 # gio:14:00 # noi:choi_bao_ve # bat_buoc
-_2 giờ chiều. Gameshow "Hồng Hay Không Hồng" phát trực tiếp trên Đài Tivi Hóng. Bác ngồi trước cái tivi 14 inch trong chòi. Ăng-ten phải xoay ba lần mới rõ hình._
+# ngay:16 # gio:20:00 # noi:choi_bao_ve # bat_buoc
+_8 giờ tối. Gameshow "Hồng Hay Không Hồng", quay từ chiều, giờ mới phát sóng trên Đài Tivi Hóng. Bác ngồi trước cái tivi 14 inch trong chòi. Ăng-ten phải xoay ba lần mới rõ hình._
 _Phần "Hit Một Thời". {sieu_nhan_hong} cầm micro hát "Công Viên": "…thích ăn… KHOAI chiên…"._
 _Bác nhíu mày. Sai lời rồi. Rồi từ trong cánh gà vang lên một giọng hát khác, đúng lời, khàn khàn quen thuộc: "…thích ăn CHUỐI chiên…"._
 * [📺 Vặn to âm lượng hết cỡ.]
@@ -218,14 +218,14 @@ _Bác nhíu mày. Sai lời rồi. Rồi từ trong cánh gà vang lên một gi
     _Chuông đổ một hồi. {idol_het_thoi} nghe máy, giọng còn run: "Bác… bác xem hả bác?". "Ừ. Hát hay." Tút tút._
     ~ qh("idol_het_thoi", 10)
 - { bv_tuat_di_gameshow:
-    _Cuối chương trình, máy quay số 3 lia vào cánh gà: {cho} đứng đó, ngậm găng tay hồng. Khán giả trường quay vỗ tay. Bác vỗ tay một mình trong chòi._
+    _Cuối chương trình, máy quay số 3 lia vào cánh gà: {cho} đứng đó, ngậm một miếng bánh chuối chiên của phòng chờ. Khán giả trường quay vỗ tay. Bác vỗ tay một mình trong chòi._
 }
 _Trên tivi, khán giả đứng dậy. Bác ngồi yên, uống ngụm trà. Đôi khi một bài hát cũ còn hay hơn khi người ta hát sai lời._
 -> END
 
 // ------------------------------------------------------------
 === bac_bao_ve_1610_hoi_am_2 ===
-# ngay:16 # gio:20:30 # noi:choi_bao_ve
+# ngay:16 # gio:21:30 # noi:choi_bao_ve
 { bv_so_thu < 2:
     _Hộp thư trống. Bác ngồi nhìn cái hộp thư một lúc lâu, rồi tắt đèn._
     ~ bv_tam(-5)

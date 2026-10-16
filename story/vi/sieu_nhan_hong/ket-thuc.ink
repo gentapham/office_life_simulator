@@ -9,58 +9,83 @@
 
 === sieu_nhan_hong_3010_danh_gia ===
 # ngay:31 # gio:23:00 # bat_buoc # danh_gia_ket_thuc
-// 1. Cây ATM Hồng: Độ Lộ Tiền đầy (có thể xảy ra bất cứ lúc nào)
+// Thứ tự xét: bí mật, rồi 3 vui, rồi 3 buồn; Người Trong Bộ Đồ là mặc định.
+// Kết thúc vui không xảy ra khi bí mật vé số đã lộ (Độ Lộ Tiền 100).
+// 1. Bí mật: Bạn Bốn Chân
+{ snh_lo_tien < 100 && snh_chuoi_hien_tai() >= 7 && snh_so_xuc_xich_tuat >= 3 && snh_cong_tuat_ve && qh_cho >= 40:
+    ~ chot_ket_thuc("ban_bon_chan")
+    -> sieu_nhan_hong_kt_ban_bon_chan
+}
+// 2. Nửa Kia Ở Quán Chè: người nhìn thấy Nguyên, không phải bộ đồ
+{ snh_lo_tien < 100 && snh_mai_nhan_ra && snh_mai >= 8 && not snh_quy_vu_san_khau:
+    ~ chot_ket_thuc("nua_kia_o_quan_che")
+    -> sieu_nhan_hong_kt_nua_kia_o_quan_che
+}
+// 3. Cây Kem Xóm Cây Me
+{ snh_lo_tien < 100 && snh_mo_nhanh_hieu_ech && snh_xin_loi_hieu_kin && snh_han_cua_hieu < 60:
+    ~ chot_ket_thuc("cay_kem_xom_cay_me")
+    -> sieu_nhan_hong_kt_cay_kem_xom_cay_me
+}
+// 4. Cây ATM Hồng: Độ Lộ Tiền đầy
 { snh_lo_tien >= 100:
     ~ chot_ket_thuc("cay_atm_hong")
     -> sieu_nhan_hong_kt_cay_atm_hong
 }
-// 2. Chiêu PR Hay Ghê: tỏ tình trên livestream / sân khấu khi Tim Hồng < 60
-{ snh_to_tinh_pr:
+// 5. Chiêu PR Hay Ghê: quỳ tặng hoa Vũ trên sân khấu, hoặc tỏ tình trên sóng mà vẫn chưa nhìn ra ai thật sự thấy mình
+{ snh_quy_vu_san_khau || (snh_to_tinh_camera && snh_mai < 5):
     ~ chot_ket_thuc("chieu_pr_hay_ghe")
     -> sieu_nhan_hong_kt_chieu_pr_hay_ghe
 }
-// 3. Bí mật: Bạn Bốn Chân
-{ snh_chuoi_hien_tai() >= 10 && snh_so_xuc_xich_tuat >= 15 && snh_cong_tuat_ve && qh_cho >= 80:
-    ~ chot_ket_thuc("ban_bon_chan")
-    -> sieu_nhan_hong_kt_ban_bon_chan
-}
-// 4. Không Phải PR
-{ snh_tim_hong >= 80 && snh_thao_mu_truoc_vu >= 2 && not snh_qua_truoc_camera && not snh_to_tinh_camera:
-    ~ chot_ket_thuc("khong_phai_pr")
-    -> sieu_nhan_hong_kt_khong_phai_pr
-}
-// 5. Cây Kem Xóm Cây Me
-{ snh_mo_nhanh_hieu_ech && snh_no_xom_cu <= 20 && snh_xin_loi_hieu_kin && snh_han_cua_hieu < 40:
-    ~ chot_ket_thuc("cay_kem_xom_cay_me")
-    -> sieu_nhan_hong_kt_cay_kem_xom_cay_me
-}
-// 6. Người Trong Bộ Đồ (cũng là kết thúc mặc định khi không khớp điều kiện nào)
+// 6. Người Trong Bộ Đồ (mặc định)
 ~ chot_ket_thuc("nguoi_trong_bo_do")
 -> sieu_nhan_hong_kt_nguoi_trong_bo_do
 
 // ------------------------------------------------------------
-// 😄 💗 KHÔNG PHẢI PR
+// 😄 NỬA KIA Ở QUÁN CHÈ
 // ------------------------------------------------------------
-=== sieu_nhan_hong_kt_khong_phai_pr ===
-# ket_thuc:khong_phai_pr # loai:co_hau
-_Đại Nhạc Hội Siêu Nhân tan. 0 giờ 40. Sân thượng {cong_ty}. Ghế nhựa, cây phơi đồ, thùng nước. Đèn thành phố nhấp nháy như ai đó đang gõ phím._
-_Bạn ngồi trên ghế nhựa. Không mặc đồ. Áo thun xám, tóc bết, tay còn dính kim tuyến pháo hoa._
-_Cửa sân thượng kêu két. {chua_te_deadline} bước lên, tay cầm hai ly trà sữa. Một ly nhiều đá. Một ly topping hồng, hồng nhiều nhiều._
-chua_te_deadline: Em đoán anh ở đây. Em đoán đúng một lần trong đời.
-_Cậu ta ngồi xuống ghế bên cạnh. Lục túi. Đưa bạn một tờ giấy gấp làm tư._
-_Bạn mở ra. Chữ viết tay, xấu, nghiêng như chạy deadline:_
-_"KẾ HOẠCH ĐI ĂN TỐI. Địa điểm: quán ốc. Người đi: em, anh. Không camera. Deadline: tối mai."_
-_Dòng cuối, gạch chân hai lần: "Trạng thái: làm xong từ hôm qua rồi."_
-sieu_nhan_hong: Em… làm xong sớm hả?
-chua_te_deadline: Lần đầu tiên trong đời. Cả công ty mà biết chắc nghĩ em bị bệnh.
-chua_te_deadline: Em nghĩ cả tháng. Mấy món quà, cái hộp cơm, cái pantry hôm mất điện. Không có camera nào hết.
-chua_te_deadline: Không phải PR. Em biết rồi. Biết hơi trễ. Mà em quen trễ rồi.
-_Bạn cười. Không tạo dáng. Không hô "Biến hình". Chỉ cười, mũi đỏ._
-_Chiếc mũ hồng nằm trên cái ghế nhựa thứ ba. Bạn nhìn nó một lúc. Rồi không đội lại._
-chua_te_deadline: Mai 7 giờ nha anh. Em tới đúng giờ. Thề.
-sieu_nhan_hong: Còn sớm mà. Chill.
-chua_te_deadline: *(cười)* Câu của em mà.
-_Dưới sân, {cho} sủa một tiếng. Rồi im. Thành phố vẫn sáng. Ở cuối một con đường không tên, căn nhà 12 ghế tối đèn. Tối nay không ai cần về đó sớm._
+=== sieu_nhan_hong_kt_nua_kia_o_quan_che ===
+# ket_thuc:nua_kia_o_quan_che # loai:co_hau
+_23 giờ 15, đêm 31/10. Đại Nhạc Hội tan. Bạn không về căn nhà 12 ghế. Bạn đi bộ ngược về phía Đường Hóng, {nguyen_thao_mu_dem_hong:không đội mũ|mũ hồng kẹp dưới nách}, áo choàng vắt vai, kim tuyến pháo giấy còn dính trên tóc._
+{ ket_thuc_su_nghiep == "bi_cuop_mat":
+    _Bạn đi từ tòa kính bên kia. Lưu Lực gọi ba cuộc. Bạn để máy rung trong túi. Sáng mai họp báo. Tối nay thì chưa._
+}
+_Đầu Hẻm 69, bóng đèn vàng vẫn treo trên cành me. Quán Chè Bà Bảy chưa dọn. Sáu cái ghế nhựa thấp, năm cái đã úp lên bàn. Cái thứ sáu còn để ngửa._
+{ chung_mai_den_xem:
+    _Trên xe chè là cái ly nhựa hồi tối Mai cầm ở hàng rào, đã rửa sạch, úp ngược. Cô về trước bạn mười lăm phút, chạy cho kịp mở lại quán._
+}
+mai: Anh ăn chè gì?
+_Cả tháng nay, người ta hỏi bạn: bao nhiêu người theo dõi, tháo mũ hay không, đi hay ở, tiền ở đâu ra. Chỉ có câu này là không đổi._
+{ snh_vu_noi_pr:
+    _Bạn nhớ câu "Ý tưởng PR hay đó anh". {chua_te_deadline} không sai. Cậu ấy quý bạn, theo kiểu của cậu ấy, qua một ống kính. Còn ở đây không có ống kính nào._
+}
+sieu_nhan_hong: Dạ… ờm… như mọi khi. Mà… em ngồi ăn chung với anh được hông?
+mai: *(nhìn cái ghế thứ sáu, rồi lật thêm một cái ghế xuống)* Được. Mà anh trả tiền hai ly. Hôm nay anh nổi tiếng rồi, hông thối 2 nghìn nữa.
+_Bà Bảy trên ghế bố mở một mắt._
+ba_bay: Thằng nhỏ ăn chè khuya đó hả con?
+mai: Dạ. Ảnh đó bà.
+ba_bay: Ừ. Vậy là nó tới đúng chỗ rồi. *(nhắm mắt, ngủ tiếp)*
+{ ket_thuc_su_nghiep:
+- "sieu_sao_hang_a":
+    _Điện thoại bạn rung không ngừng: một triệu người, top 10 xu hướng, hợp đồng 3 năm. Bạn úp nó xuống bàn nhựa. Mai liếc qua, không hỏi con số._
+- "thao_mu":
+    _Từ tối nay cả nước biết mặt bạn. Mai thì biết từ mấy tháng trước. Cô nói chuyện đó cũng hông có gì đặc biệt, rồi đẩy thêm chén nước cốt dừa sang._
+- "meme_quoc_dan":
+    _Trên tivi nhỏ của xe chè, người ta chiếu lại clip Siêu Nhân Gâu lần thứ năm. Bà Bảy cười trong lúc ngủ. Mai tắt tivi, nói: "Ăn đi, nguội."_
+- "bi_cuop_mat":
+    _Phía xa, màn hình LED của tòa kính đang chiếu bộ đồ viền xanh lá chuối. Mai nhìn nó, rồi nhìn bạn. "Cái người trên kia đâu có ăn chè đậu trắng." Bạn bật cười._
+- else:
+    _Con số người theo dõi dừng ở {nguoi_theo_doi}. Mai không hỏi. Ở quán này, người ta chỉ đếm số ly chè._
+}
+{ chung_cong_ty_song:
+    _Sáng thứ hai, {cong_ty} vẫn mở cổng lúc 6 giờ 30. Tối thứ hai, quán chè vẫn mở tới 12 giờ. Bạn biết mình sẽ có mặt ở cả hai._
+- else:
+    _Không ai biết {cong_ty} còn mở cửa được bao lâu. Nhưng quán chè này thì mở tới 12 giờ khuya, tối nào cũng vậy. Mai đã nói thế._
+}
+_Hai ly chè đậu trắng. Hai cái muỗng. Một bóng đèn vàng trên cành me. Mai kể chuyện bà Bảy hồi trẻ đẩy xe chè qua ba con phố. Bạn kể chuyện cái bàn 12 ghế. Lần này người nghe không nói "quay content được đó". Người nghe chỉ hỏi: "Rồi anh ngồi ghế nào?"_
+_Tuần sau, bạn mang tới quán một cái ghế nhựa màu hồng, xếp vào làm ghế thứ bảy._
+mai: Ghế xấu quá anh.
+_Rồi Mai để nguyên đó. Tối nào cũng lật nó xuống trước tiên._
+_Ở cuối một con đường không tên, căn nhà 12 ghế tối đèn. Tối nay không ai cần về đó sớm._
 -> END
 
 // ------------------------------------------------------------
@@ -95,7 +120,7 @@ _{cho} nằm dưới gầm bàn bác, liếc lên nhìn hai cây kem, rồi li�
 # ket_thuc:ban_bon_chan # loai:co_hau # bi_mat
 _23:00 ngày 31/10. Đại Nhạc Hội Siêu Nhân đã tàn. Cổng {cong_ty} vắng tanh. Đèn chòi bảo vệ còn sáng._
 _Bạn ghé lại lấy chiếc xe hồng. Vẫn mặc nguyên bộ đồ. Mỏi tới mức không muốn tạo dáng nữa._
-_Từ gầm cầu thang, có tiếng chân lạch bạch. {cho} chạy ra, chân sau còn hơi khập khiễng từ hôm bị lạc. Trong miệng nó ngậm một thứ màu hồng._
+_Từ gầm cầu thang, có tiếng chân lạch bạch. {cho} chạy ra, tai cụp, đuôi vẫy chậm. Trong miệng nó ngậm một thứ màu hồng._
 _Chiếc găng tay hồng. Cái bạn làm mất từ ngày 4/10. Bẩn, rách một ngón, dính lông chó và mùi cà phê sữa đá. Nó đã giữ suốt 27 ngày._
 _{cho} đặt chiếc găng xuống chân bạn. Lùi lại một bước. Nhìn bạn._
 _Rồi nó nằm ngửa ra, bốn chân chổng lên trời, bụng phơi ra. Đòi gãi bụng._
@@ -119,14 +144,18 @@ _Bạn lấy bút, gạch dòng đó đi. Viết lại: "Có con chó ở cổng
 === sieu_nhan_hong_kt_nguoi_trong_bo_do ===
 # ket_thuc:nguoi_trong_bo_do # loai:buon
 _Căn nhà ở cuối con đường không tên. Bàn ăn 12 ghế. Bạn ngồi ở cái ghế duy nhất có dấu ngồi._
-_Tivi đang chiếu lại Đại Nhạc Hội Siêu Nhân. Siêu Nhân Hồng tạo dáng giữa pháo hoa. Cả khán đài hô: "Hồng không phải màu, Hồng là thái độ!"_
-_Trên màn hình, con số người theo dõi: {nguoi_theo_doi}._
+{ nguyen_thao_mu_dem_hong:
+    _Tivi đang chiếu lại Đại Nhạc Hội Siêu Nhân. Khúc bạn tháo mũ được chiếu chậm, ba lần. Cả nước vừa biết mặt bạn. Người ta gọi bạn bằng tên trên tivi, đọc sai dấu._
+- else:
+    _Tivi đang chiếu lại Đại Nhạc Hội Siêu Nhân. Siêu Nhân Hồng tạo dáng giữa pháo giấy. Hàng rào phía trước hô: "Hồng không phải màu, Hồng là thái độ!"_
+}
+_Trên màn hình, con số người theo dõi: {nguoi_theo_doi}. {chung_cong_ty_song:Công ty sống. Ai cũng mừng.|Công ty có lẽ không sống nổi. Ai cũng buồn, và ai cũng có người để buồn cùng.}_
 _Trên bàn là đĩa bánh chuối chiên mang về từ phòng chờ. Điều khoản số 4. Đã nguội._
 _Bộ đồ hồng treo trên móc ở góc phòng. Từ đây nhìn sang, nó giống một người khác đang đứng đó, nhìn bạn ăn tối._
 _Điện thoại có 214 thông báo. "Anh Hồng ơi đỉnh quá!", "Slay!", "Bao giờ có MV mới anh?". Bạn đọc từng cái._
-_Không cái nào gọi tên Nguyễn {sieu_nhan_hong}._
+_{nguyen_thao_mu_dem_hong:Cái nào cũng gọi tên Nguyễn {sieu_nhan_hong}. Không cái nào hỏi Nguyễn {sieu_nhan_hong} có mệt không.|Không cái nào gọi tên Nguyễn {sieu_nhan_hong}.}_
 { snh_tim_hong >= 40:
-    _Có một tin nhắn chưa đọc từ {chua_te_deadline}: "Anh diễn đẹp lắm. Mai công ty ăn mừng, anh tới hông?". Bạn gõ "Dạ". Rồi xóa. Rồi để đó._
+    _Có một tin nhắn chưa đọc từ {chua_te_deadline}: "Anh diễn đẹp lắm. Clip đêm nay chắc viral. Mai công ty ăn mừng, anh tới hông?". Bạn gõ "Dạ". Rồi xóa. Rồi để đó._
 - else:
     _Khung chat với {chua_te_deadline} vẫn dừng ở tin cuối: một sticker ngón cái, gửi từ tuần trước._
 }
@@ -134,8 +163,8 @@ _Không cái nào gọi tên Nguyễn {sieu_nhan_hong}._
     _Trong ví, tấm ảnh xóm Cây Me vẫn nằm sau tấm vé số cắt góc. Thằng nhóc gầy nhom ở góc ảnh vẫn đang khóc. Bạn vẫn chưa biết tên nó._
 }
 _Bạn cắn một miếng bánh chuối chiên. Nguội, mà vẫn ngọt._
-_Ngoài kia, cả nước biết Siêu Nhân Hồng._
-_Trong căn nhà này, không ai biết Nguyễn {sieu_nhan_hong} đã ăn tối chưa._
+_Ngoài kia, cả nước biết {nguyen_thao_mu_dem_hong:mặt Nguyễn {sieu_nhan_hong}|Siêu Nhân Hồng}._
+_Trong căn nhà này, không ai hỏi Nguyễn {sieu_nhan_hong} đã ăn tối chưa._
 _Mười một cái ghế trống. Đèn vẫn chiếu xuống từng cái, như đang đợi._
 -> END
 
@@ -144,20 +173,29 @@ _Mười một cái ghế trống. Đèn vẫn chiếu xuống từng cái, như
 // ------------------------------------------------------------
 === sieu_nhan_hong_kt_chieu_pr_hay_ghe ===
 # ket_thuc:chieu_pr_hay_ghe # loai:buon
-_Đại Nhạc Hội Siêu Nhân. Giữa sân khấu, giữa pháo hoa, bạn quỳ xuống. Một bó hoa hồng. Cả khán đài hét đến khản cổ._
-_{chua_te_deadline} bị đẩy ra giữa sân khấu, tay vẫn cầm bộ đàm. Ánh đèn rọi thẳng vào mặt. Cậu ta cười. Một nụ cười rất chuyên nghiệp._
-_Cậu ta nhận hoa. Ghé sát micro, nói nhỏ, nhưng micro bắt được hết:_
-chua_te_deadline: Chiêu này đỉnh nóc kịch trần luôn anh ơi. KPI vượt rồi.
-_Khán đài cười ồ, vỗ tay. Ai cũng nghĩ đó là câu đùa dễ thương nhất đêm nay. Bạn cũng cười. Vì cả nghìn người đang nhìn._
-_Pháo hoa nổ. Bạn đứng dậy, tạo dáng. Tay vẫn còn run._
+{ snh_quy_vu_san_khau:
+    _Đại Nhạc Hội Siêu Nhân, bài cuối. Giữa sân khấu, giữa pháo giấy, bạn quỳ xuống. Một bó hoa hồng. Năm mươi người ở hàng rào hét như năm nghìn. Màn hình LED phóng to bó hoa lên bằng bức tường._
+    _{chua_te_deadline} bị đẩy ra giữa sân khấu, tay vẫn cầm bộ đàm. Ánh đèn rọi thẳng vào mặt. Cậu ta cười. Một nụ cười rất chuyên nghiệp._
+    _Cậu ta nhận hoa. Ghé sát micro, nói nhỏ, nhưng micro bắt được hết:_
+    chua_te_deadline: Ý tưởng PR hay đó anh. Lần hai còn đỉnh hơn lần một. KPI vượt rồi.
+- else:
+    _23 giờ. Đại Nhạc Hội tan. Trên điện thoại, clip tỏ tình hôm 23/10 vẫn được chia sẻ lại, kèm câu trả lời của {chua_te_deadline}: "Ý tưởng PR hay đó anh."_
+    _Cả tuần nay bạn chờ một câu khác. Câu khác không tới. Cậu ta vẫn đưa bạn ly trà sữa, vẫn nói "chill", vẫn coi bạn là đồng nghiệp tốt nhất. Chỉ là đồng nghiệp._
+}
+_Ai cũng nghĩ đó là chuyện dễ thương nhất tháng. Bạn cũng cười. Vì có người đang nhìn._
 _Sáng hôm sau, 7 giờ 02. Điện thoại rung. Một tin nhắn từ {chua_te_deadline}._
-_Một file báo cáo: "Màn tỏ tình Đại Nhạc Hội Siêu Nhân: 4,7 triệu lượt xem, 312.000 lượt chia sẻ, top 1 xu hướng 6 tiếng liền. Tương tác tăng 840%."_
+_Một file báo cáo: "Màn tỏ tình của anh Hồng: 4,7 triệu lượt xem, 312.000 lượt chia sẻ, top 1 xu hướng 6 tiếng liền. Tương tác tăng 840%."_
 _Kèm một sticker ngón cái._
 _Bên dưới, một dòng: "Anh với anh {quan_ly_idol} làm content giỏi thiệt. Em học được nhiều lắm. Chill."_
 _Bạn đọc đi đọc lại. Không có chữ nào sai. Chỉ là không có chữ nào đúng._
 _Bạn gõ: "Hông phải PR đâu em." Ngón tay dừng ở nút gửi._
 _Rồi bạn xóa. Gửi lại một sticker ngón cái._
 _Căn nhà 12 ghế. Bó hoa hồng ai đó mang về giùm, cắm trong cái ly giữa bàn. Đẹp như trên tivi._
+{ chung_cong_ty_song:
+    _Công ty còn. Mai bạn vẫn tới. Vẫn đưa trà sữa. Vẫn nghe "chill". Như vậy cũng được. Chắc vậy._
+- else:
+    _Công ty có lẽ không còn bao lâu nữa. Bản báo cáo lượt xem kia là thứ cuối cùng cậu ta làm xong sớm._
+}
 -> END
 
 // ------------------------------------------------------------
@@ -184,13 +222,6 @@ _Bạn nhìn bộ đồ hồng trên móc. Hồi 2019, bạn mua nó để khôn
 // ------------------------------------------------------------
 // SỰ KIỆN BẤT KỲ LÚC NÀO
 // ------------------------------------------------------------
-
-// Độ Lộ Tiền đầy 100: mở ngay kết thúc "Cây ATM Hồng"
-=== sieu_nhan_hong_tudo_lo_tien_day ===
-# dieu_kien:snh_lo_tien>=100 # bat_buoc
-_Sáng nay, ai đó đã ghép đủ các mảnh: vụ trả lương hộ, cái thẻ lạ, tiền đền Hồng Coin, 10 tỷ nói như 10 nghìn. Một bài viết dài 12 trang đang lan khắp mạng._
-~ chot_ket_thuc("cay_atm_hong")
--> sieu_nhan_hong_kt_cay_atm_hong
 
 // Độ Lộ Mặt đầy 100: mặt thật bị lộ, theo cách người chơi không chọn được
 === sieu_nhan_hong_tudo_lo_mat ===

@@ -87,10 +87,8 @@ designer: Anh {con_ong_chau_cha}… anh cũng duyệt hả?
 // ------------------------------------------------------------
 === con_ong_chau_cha_1410_hoi_chuong ===
 # ngay:14 # gio:15:00 # noi:ban_so_lieu
-_Bàn số liệu. {dan_dau_tu} đang nhìn chart, ăn bánh mì lén. Bạn chợt nhớ ra một chuyện._
-con_ong_chau_cha: Anh {dan_dau_tu}, cái vốn góp chung hồi năm ngoái sao rồi?
-_{dan_dau_tu} cứng người như chart vừa đỏ._
-dan_dau_tu: À… cái đó… nằm… đáy. Đáy thật.
+_Bàn số liệu. {dan_dau_tu} đang nhìn chart, ăn bánh mì lén. Từ hôm thẻ bị từ chối, bạn bắt đầu đếm tiền. Và bạn nhớ ra cái vốn góp 10 triệu, lần này không hỏi chơi._
+dan_dau_tu: *(cứng người như chart vừa đỏ)* Em… hỏi thật hả? Lần trước em hỏi chơi mà.
 * [😎 "Ờ, hông sao. Tui hỏi chơi."]
     dan_dau_tu: *(thở phào)* Em đúng là người có tầm nhìn dài hạn!
     ~ qh("dan_dau_tu", 5)
@@ -190,10 +188,10 @@ idol_het_thoi: *(tháo kính đen, giọng như đang trả lời phỏng vấn)
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1510_sau_chiec_mu ===
-# ngay:15 # gio:18:40 # noi:san_thuong
-_Chạng vạng. Vẫn mất điện. Bạn lên sân thượng tìm gió. Ở góc, có hai người ngồi. Một người không đội mũ._
+# ngay:15 # gio:20:10 # noi:pantry
+_20 giờ 10. Vẫn mất điện. Bạn quay lại pantry lấy cây đàn bỏ quên. Ở góc tối, dưới ánh đèn điện thoại, có hai người ngồi. Một người không đội mũ._
 _Bạn nhận ra bộ đồ hồng. Nhưng gương mặt kia… bình thường. Rất bình thường. {sieu_nhan_hong} đang ngồi cạnh {chua_te_deadline}, nói nhỏ, tay vân vê chiếc mũ._
-* [🤫 Lặng lẽ quay xuống.]
+* [🤫 Lặng lẽ lui ra.]
     _Bạn không thấy gì. Như Bác {bac_bao_ve} hay nói. Nhưng bạn nhớ cái cách {sieu_nhan_hong} cầm chiếc mũ: như cầm một thứ vừa là áo giáp vừa là gánh nặng._
     ~ long_bh(8)
     ~ qh("sieu_nhan_hong", 3)
@@ -229,8 +227,7 @@ _Chú bạn tới, muốn ngồi giữa để lên hình. {thanh_ninh} đang c�
 // ------------------------------------------------------------
 === con_ong_chau_cha_1610_mc_hoi ===
 # ngay:16 # gio:15:20 # noi:dai_tivi_hong # bat_buoc
-_Phần "Hit Một Thời". {sieu_nhan_hong} hát "Công Viên" sai lời: "bán… khoai chiên…". Cả trường quay cười ồ. Trong cánh gà, {idol_het_thoi} mấp máy môi đúng lời._
-~ follow(80000)
+_Ghi hình từ 14 giờ, 20 giờ tối nay mới phát sóng. Phần "Hit Một Thời". {sieu_nhan_hong} hát "Công Viên" sai lời: "bán… khoai chiên…". Cả trường quay cười ồ. Từ cánh gà, có một giọng hát bè đúng lời. Bạn ngồi gần lối đi nên thấy rõ: kính đen, áo khoác da, {idol_het_thoi}._
 _Hết phần thi. MC bất ngờ đi xuống hàng ghế khách mời, chĩa micro vào bạn._
 mc_tivi_hong: Xin chào! Anh là ai trong ê-kíp của Siêu Nhân Hồng?
 _Đèn chiếu thẳng vào mặt. Bạn chưa bao giờ phải tự giới thiệu mình mà không có chữ "chú"._ # hen_gio:6
@@ -265,6 +262,8 @@ _Ngày Lương thực Thế giới. Buffet trưa ở công ty trước khi đi q
 * [🍱 Ngồi chung bàn với {thuc_tap_sinh}, {editor}, {it}.]
     _{thuc_tap_sinh} lấy đầy một hộp, nói "để dành tối ăn". {editor} ăn trong lúc ngủ. {it} ăn mì ly dù có buffet._
     it: Quen rồi.
+    _Ở bàn bên, {quan_ly_idol} nói nhỏ vào điện thoại: "…năm mươi tư triệu. Ba tháng nhà, cộng tiền… dịch vụ. Em lo." Bạn nhớ tờ giấy đỏ ở căn 1808._
+    ~ long_biet_phat_no = true
     _Bạn nhìn ba người, mỗi người một kiểu sống. Có một câu hát: "mỗi người một cái tô, chung một cái bàn"._
     ~ long_bh(5)
     ~ an(40)

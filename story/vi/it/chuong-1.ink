@@ -109,8 +109,8 @@ _Bạn nghĩ tới con router đời 2014 quấn băng keo đen. Nó không có 
 
 // ------------------------------------------------------------
 === it_0110_mung_bac_binh ===
-# ngay:1 # gio:17:40 # noi:choi_bao_ve
-_Ngày Quốc tế Người cao tuổi. Cả công ty kéo xuống chòi bảo vệ mừng Bác {bac_bao_ve}, mỗi người cầm một ly trà sữa ăn mừng 5 tỷ. Bác ngại đỏ cả mặt._
+# ngay:1 # gio:12:00 # noi:choi_bao_ve
+_Trưa. Ngày Quốc tế Người cao tuổi. Cả công ty kéo xuống chòi bảo vệ mừng Bác {bac_bao_ve}, mỗi người cầm một ly trà sữa ăn mừng 5 tỷ. Bác ngại đỏ cả mặt._
 bac_bao_ve: Thôi, thôi các cháu. Bác còn trẻ chán. Mỗi tội cái radio của bác nó cứ rè rè.
 cho: Gâu! *(đánh hơi ly trà sữa của bạn)*
 * [🤝 "Đưa con coi cái radio."]
@@ -135,8 +135,8 @@ cho: Gâu! *(đánh hơi ly trà sữa của bạn)*
 
 // ------------------------------------------------------------
 === it_0210_hop_chien_dich ===
-# ngay:2 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp chiến dịch "Hồng Hóa Việt Nam". Trên bảng trắng, {truong_phong} vẽ một mũi tên đi lên rất tự tin, đi từ 5.000 tới 1.000.000._
+# ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
+_9:30. Họp chiến dịch "Hồng Hóa Việt Nam". Trên bảng trắng, {truong_phong} vẽ một mũi tên đi lên rất tự tin, đi từ 5.000 tới 1.000.000._
 truong_phong: Mình họp nhanh 5 phút thôi nhé. Mục tiêu một triệu người theo dõi trước 31/10.
 giam_doc: Anh muốn mỗi tối mình livestream 4K từ sân thượng. View thành phố, gió lộng, Siêu Nhân Hồng đứng giữa. Rất là cinematic.
 _Mọi ánh mắt quay về phía bạn. Bạn nghĩ tới cái router quấn băng keo, rồi nghĩ tới cái sân thượng không có ổ điện._

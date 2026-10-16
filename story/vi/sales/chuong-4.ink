@@ -4,10 +4,10 @@
 
 // ------------------------------------------------------------
 === sales_1710_chuong_x10 ===
-# ngay:17 # gio:06:40 # noi:xe_khach # bat_buoc
-_6 giờ 40. Xe khách đi Vũng Tàu. {dan_dau_tu} đứng ở cửa xe, giơ điện thoại lên trời như giơ cúp._
+# ngay:17 # gio:15:30 # noi:vung_tau_resort # bat_buoc
+_15 giờ 30. Khu nghỉ Sóng Vỗ. {dan_dau_tu} chạy từ quầy lễ tân, chỗ duy nhất có wifi, ra bãi cát, giơ điện thoại lên trời như giơ cúp._
 dan_dau_tu: Ngày Quốc tế Xóa nghèo! Hồng Coin x10! Từ nay anh thoát nghèo! Tối nay anh bao cả đoàn hải sản!
-_Cả xe vỗ tay. Bạn không vỗ. Bạn nhìn {dan_dau_tu} như nhìn một con cá vừa tự nhảy lên thớt._
+_Cả bãi biển vỗ tay. Bạn không vỗ. Bạn nhìn {dan_dau_tu} như nhìn một con cá vừa tự nhảy lên thớt._
 _Hôm nay là ngày duy nhất trong năm ông ấy "giàu"._
 * [💁 "Anh {dan_dau_tu}. Tin chị đi, hôm nay mà anh trả đủ 5 triệu thì coin của anh sẽ x100."]
     { RANDOM(1, 10) <= 4:
@@ -46,7 +46,7 @@ _{hr} đang cầm loa điểm danh trò kéo co lần thứ 3._
     ~ sl_ung(500000)
     ~ tien_cong(-500000)
     ~ qh("designer", 12)
-    _31 cánh tay giơ lên. Không ai để ý {designer} lẻn đi. Tiền trà sữa: tiền tạm ứng. Sổ Tạm Ứng thêm 500 nghìn._
+    _Hai chục cánh tay giơ lên. Không ai để ý {designer} lẻn đi. Tiền trà sữa: tiền tạm ứng. Sổ Tạm Ứng thêm 500 nghìn._
     _Bạn không hối hận. Bạn sẽ nhớ cái nhìn {designer} gửi lại từ đầu ngõ._
 * [🤝 Kéo {hr} ra hỏi chuyện team building, câu giờ 20 phút.]
     hr: *(cười)* Em muốn góp ý về team building à? Anh chỉ muốn lắng nghe em thôi. Mình ngồi đây nhé.
@@ -61,8 +61,8 @@ _{hr} đang cầm loa điểm danh trò kéo co lần thứ 3._
 
 // ------------------------------------------------------------
 === sales_1710_nhau_hai_san ===
-# ngay:17 # gio:19:30 # noi:vung_tau_quan_hai_san # bat_buoc
-_Quán hải sản sát biển. {dan_dau_tu} bao thật: ghẹ, mực, tôm hùm (một con, chia 31 người). Bạn ngồi cạnh {giam_doc}. Ly thứ 5._
+# ngay:17 # gio:18:30 # noi:vung_tau_quan_hai_san # bat_buoc
+_Quán hải sản Sóng Vỗ, sát biển. {dan_dau_tu} bao thật: ghẹ, mực, tôm hùm (một con, chia 23 người). Bạn ngồi cạnh {giam_doc}. Ly thứ 5._
 ~ an(60)
 giam_doc: {sales} này, Đại Nhạc Hội mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không? Anh không ép, tùy em.
 _Rượu chạy lên má. Lưỡi bạn nhẹ như bong bóng._ # hen_gio:6
@@ -72,10 +72,7 @@ _Rượu chạy lên má. Lưỡi bạn nhẹ như bong bóng._ # hen_gio:6
     ~ follow(20000)
     giam_doc: *(đập bàn)* Thế anh tăng lương cả công ty!
     _Ba cái điện thoại đang quay. {hong_hot} quay bằng hai cái. Ngày mai sẽ vui đây._
-    { sl_bong_bong >= 100:
-        -> sales_tudo_bong_bong_be
-    }
-* {sl_goi_y_phat} [🎤 "Mình có anh {idol_het_thoi} mà sếp. Bài 'Công Viên' remix là cả nước hát theo."]
+    * {sl_goi_y_phat} [🎤 "Mình có anh {idol_het_thoi} mà sếp. Bài 'Công Viên' remix là cả nước hát theo."]
     giam_doc: *(rơm rớm)* Năm 2015… anh phát hiện thằng bé ở quán cà phê… Em nói đúng. Đúng quá.
     ~ qh("idol_het_thoi", 20)
     ~ qh("giam_doc", 8)
@@ -95,8 +92,8 @@ _Rượu chạy lên má. Lưỡi bạn nhẹ như bong bóng._ # hen_gio:6
 
 // ------------------------------------------------------------
 === sales_1710_lua_trai ===
-# ngay:17 # gio:21:30 # noi:vung_tau_bai_bien # bat_buoc
-_Lửa trại. Trò "nói thật". Chai nước suối dừng trước mặt {designer}._
+# ngay:17 # gio:20:00 # noi:vung_tau_bai_bien # bat_buoc
+_20 giờ. Lửa trại. Trò "nói thật". Chai nước suối dừng trước mặt {designer}._
 hr: Câu hỏi cho {designer}: "Bạn từng làm gì sau lưng công ty?"
 _{designer} quay sang nhìn bạn. Balo laptop thứ hai nằm ngay sau lưng chị ấy._ # hen_gio:6
 * [💁 Đứng bật dậy: "Để chị trả lời giùm! Tháng 3, chị với {designer} lén mượn xe công ty đi Đà Lạt, hết xăng giữa đèo!"]
@@ -115,7 +112,7 @@ sieu_nhan_hong: Hồi nhỏ… em từng nhốt một đứa nhỏ trong kho. N�
 _Cả vòng im bặt. {ran_doc} đứng phắt dậy, đi thẳng ra biển._
 _Rồi chai nước quay một vòng cuối. Dừng trước mặt bạn._
 hong_hot: Câu cho {sales}! "Nhà tài trợ BTT Global có thật không?"
-_Ánh lửa. Tiếng sóng. 30 cặp mắt._ # hen_gio:5
+_Ánh lửa. Tiếng sóng. Hai mươi mấy cặp mắt._ # hen_gio:5
 * [🗣️ "Có chứ! Mai chủ tịch Kevin Trộn gọi điện chúc mừng cả đoàn!"]
     ~ sl_phet(10)
     hong_hot: Ối dồi ôi! Nhớ bật loa ngoài nha!
@@ -133,10 +130,7 @@ _Ánh lửa. Tiếng sóng. 30 cặp mắt._ # hen_gio:5
 * [⏱️ (Không chọn kịp)]
     hong_hot: Hông trả lời là có chuyện! Có chuyện thiệt rồi!
     ~ sl_phet(8)
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
-_Cuối đêm, {idol_het_thoi} ngủ gục lên vai {quan_ly_idol}. {editor} đắp chăn cho cả hai rồi ngồi một mình nhìn sóng._
+- _Cuối đêm, {idol_het_thoi} ngủ gục lên vai {quan_ly_idol}. {editor} đắp chăn cho cả hai rồi ngồi một mình nhìn sóng._
 -> END
 
 // ------------------------------------------------------------
@@ -145,7 +139,7 @@ _Cuối đêm, {idol_het_thoi} ngủ gục lên vai {quan_ly_idol}. {editor} đ�
 _8 giờ sáng. Đầu bạn như có ai đánh trống. Điện thoại: 87 tin nhắn trong group công ty._
 { sl_hua_ca_si:
     _Clip: bạn, má đỏ, giơ ly: "Tin chị đi, ca sĩ nổi tiếng nhất nước, chị gọi một cuộc là tới!". {giam_doc} đập bàn: "Thế anh tăng lương cả công ty!". 400 lượt xem._
-    _Bình luận đầu tiên của {hong_hot}: "Lưu clip làm bằng chứng nha mọi người 📌"._
+    _Bình luận đầu tiên của {hong_hot}: "Lưu clip làm bằng chứng nha mọi người"._
 - else:
     _Clip: {giam_doc}, má đỏ, đập bàn hứa tăng lương cả công ty. Bạn ở góc khung hình, đang gắp mực. Ít ra không phải bạn._
 }
@@ -168,11 +162,11 @@ _Cả nhà nghỉ ai cũng giận ai. Riêng bạn giận chính mình._
 
 // ------------------------------------------------------------
 === sales_1810_coin_sap ===
-# ngay:18 # gio:15:30 # noi:xe_khach
-_Trên xe về. {dan_dau_tu} ngồi hàng cuối, mặt xám như nền xi măng. Hồng Coin về 0. Người tạo ôm tiền biến mất._
+# ngay:18 # gio:12:30 # noi:xe_ve_thanh_pho
+_Trên xe về. {dan_dau_tu} ngồi hàng cuối, mặt xám như nền xi măng. Từ 10 giờ 15 sáng, Hồng Coin về 0. Người tạo ôm tiền biến mất._
 dan_dau_tu: Đáy… đáy thật rồi. Lần này là đáy thật.
 { sl_no_chuong <= 0:
-    _Bạn nhìn số dư của mình: 5 triệu nợ đã về đủ từ hôm qua. Bạn là người duy nhất trên xe vừa thắng {dan_dau_tu}. Bạn không thấy vui như tưởng._
+    _Bạn nhìn số dư của mình: 5 triệu nợ đã về đủ từ chiều qua. Bạn là người duy nhất trên xe vừa thắng {dan_dau_tu}. Bạn không thấy vui như tưởng._
 }
 * [🤝 Đưa {dan_dau_tu} chai nước suối, ngồi xuống cạnh.]
     dan_dau_tu: *(nhận chai nước)* {sales}… anh xin lỗi. Nợ em, anh sẽ trả. Không phải bằng coin.
@@ -223,10 +217,7 @@ _Bạn biết bó hoa đó. Bạn đặt nó tối qua. 900 nghìn. Tiền tạm
     _Cả phòng trầm trồ. {chi_dai} cầm tấm thiệp lên, nhìn. Rồi nhìn bạn. Không nói gì._
     _Cái im lặng đó nặng hơn cả bó hoa._
     ~ qh("chi_dai", -5)
-    { sl_bong_bong >= 100:
-        -> sales_tudo_bong_bong_be
-    }
-* [😇 Rút tấm thiệp ra trước khi ai thấy, viết lại: "Tự thưởng cho mình. H."]
+    * [😇 Rút tấm thiệp ra trước khi ai thấy, viết lại: "Tự thưởng cho mình. H."]
     ~ sl_that_long()
     ~ tien_cong(-900000)
     chi_dai: *(nhìn thiệp)* Tự tặng mình hả? *(cười)* Chị thích. Phụ nữ phải biết thương mình.
@@ -242,29 +233,29 @@ _Bạn biết bó hoa đó. Bạn đặt nó tối qua. 900 nghìn. Tiền tạm
 
 // ------------------------------------------------------------
 === sales_2010_sinh_nhat_cong_ty ===
-# ngay:20 # gio:15:00 # noi:sanh_tang_tret
-_Sinh nhật {cong_ty} 16 tuổi. Bánh kem cam. Bác {bac_bao_ve} cầm một phong thư, tay hơi run._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18 giờ 30. Quán Ốc Đêm. Sinh nhật {cong_ty} 16 tuổi, cả công ty ngồi kín bốn bàn nhựa. Bác {bac_bao_ve} cầm một phong thư, tay hơi run._
 bac_bao_ve: Sáng nay có thư. Ký tên "G". Gửi cả công ty.
 _Kèm theo là một phong bì dán kín, đề: "Chỉ mở khi công ty sắp sập". {giam_doc} tái mặt._
 bac_bao_ve: Bác… chưa biết có nên đọc không. Bác chỉ là người giữ thư.
 * [😇 "Bác đọc đi bác. Tụi con muốn nghe."]
     ~ qh("bac_bao_ve", 5)
-    _Bác đọc chậm. Đúng lúc đó {cho} sủa ầm ĩ vì anh shipper Tèo. Bạn chỉ nghe rõ mấy chữ "mười sáu năm". Nhưng bạn thấy {giam_doc} quay đi lau mắt._
+    bac_bao_ve: *(đọc chậm)* "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
+    _Cả quán im. Chú chủ quán ốc cũng tắt bếp. Bạn thấy {giam_doc} quay đi lau mắt._
 * [😶 Im lặng. Việc của bác.]
-    bac_bao_ve: *(gấp thư)* Thôi. Bác giữ. Mọi người ăn bánh đi.
+    bac_bao_ve: *(gấp thư)* Thôi. Bác giữ. Mọi người ăn ốc đi.
     _{giam_doc} thở phào rất to._
 * [💁 "Bác ơi, tin con đi, công ty mình còn lâu mới sập."]
     bac_bao_ve: *(nhìn bạn, gật nhẹ)* Ừ. Thế thì cái phong bì này còn nằm lâu.
     ~ sl_tin_chi_di = sl_tin_chi_di + 1
     ~ qh("bac_bao_ve", 3)
-- ~ an(20)
-~ nhan(banh_kem)
+- ~ an(30)
 -> END
 
 // ------------------------------------------------------------
 === sales_2010_karaoke ===
-# ngay:20 # gio:21:30 # noi:karaoke
-_Karaoke Hát Cho Nhau Nghe. {giam_doc} cầm micro, mặt đỏ như logo bản 7 màu._
+# ngay:20 # gio:21:00 # noi:karaoke
+_21 giờ. Karaoke Chú Sáu. {giam_doc} cầm micro, mặt đỏ như logo bản 7 màu._
 giam_doc: Các em! Siêu Nhân Hồng thành công, anh tăng lương 20%! Anh hứa!
 _Lần này có 6 cái điện thoại quay. Bạn nhìn {idol_het_thoi} đang ngồi góc phòng, ôm micro, chưa ai mời hát._
 * {sl_goi_y_phat} [🎤 Ngồi xuống cạnh {idol_het_thoi}: "Anh ơi. Đại Nhạc Hội. 'Công Viên' bản remix. Anh hát nha."]

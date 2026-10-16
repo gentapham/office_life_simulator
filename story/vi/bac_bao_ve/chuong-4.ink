@@ -382,6 +382,7 @@ _Bác bóc phong bì. Tay không run. Bác đã đợi cái này mười năm m�
 _Bên trong là quyết định của G về tương lai công ty, viết tay, ký tên, ghi ngày từ tháng 9. Bác đọc một lần. Gấp lại. Bỏ vào túi áo trong._
 _Bác biết rồi. Và bác biết người sẽ phải đứng lên đọc nó, trước mặt tất cả mọi người, là bác._
 ~ bv_mo_phong_bi = true
+~ chung_binh_da_mo_phong_bi = true
 ~ bv_tam(-30)
 giam_doc: Bác? Bác sao thế? Mặt bác…
 bac_bao_ve: Không sao. Anh lên đi. Hôm nay sinh nhật công ty.
@@ -439,8 +440,8 @@ giam_doc: Màu nào cũng phải có chỗ… Ừ. Em dùng lại bản ấy.
 
 // ------------------------------------------------------------
 === bac_bao_ve_2010_lien_hoan ===
-# ngay:20 # gio:20:00 # noi:quan_oc_dem # bat_buoc
-_Liên hoan sinh nhật công ty ở Quán Ốc Đêm. Cái quán bác ngồi mười năm trước. {chi_dai} xếp chỗ, {cho} buộc ở gốc cây cách bánh kem 5 mét._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18 giờ 30. Liên hoan sinh nhật công ty ở Quán Ốc Đêm. Cái quán bác ngồi mười năm trước. {chi_dai} xếp chỗ, {cho} buộc ở gốc cây cách bánh kem 5 mét._
 { bv_doc_thu_cong_ty:
     -> doc_thu
 - else:

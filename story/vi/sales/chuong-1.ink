@@ -71,18 +71,20 @@ _Khách hàng hay hỏi bạn ở đâu. Bạn trả lời "Sky Ảo" bằng gi�
 
 // ------------------------------------------------------------
 === sales_0210_hop_chien_dich ===
-# ngay:2 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Ngày Nụ cười Thế giới. {hr} bắt mọi người cười khi chấm công. Bạn cười như đang chụp ảnh thẻ cho visa._
+# ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Nụ cười Thế giới. 9 giờ 30, phòng họp tầng 2. {hr} bắt mọi người cười khi chấm công. Bạn cười như đang chụp ảnh thẻ cho visa._
 truong_phong: Chiến dịch "Hồng Hóa Việt Nam". Mục tiêu 1 triệu người theo dõi trước 31/10. Mình cần ngân sách cho Đại Nhạc Hội.
 _Giữa buổi, {thuc_tap_sinh} rụt rè kể ý tưởng phim về một người bỏ nghề ngân hàng. {bien_kich} ghi chép chăm chú._
 ke_toan: Ngân sách hiện tại không đủ dựng sân khấu lớn. Cần tài trợ.
 _Cả phòng im lặng. Bạn cảm thấy chân mình tự đứng dậy, như có ai giật dây._ # hen_gio:6
-* [🗣️ "Tin chị đi! Chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đại Nhạc Hội!"]
+* [🗣️ "Tin chị đi! Tập đoàn Bánh Tráng Trộn Toàn Cầu, BTT Global. Chủ tịch Mr. Kevin Trộn. Ba gói, tổng 2 tỷ, trước Đại Nhạc Hội!"]
     ~ sl_phet(10)
     ~ sl_giay(50)
-    giam_doc: Tuyệt vời! Mọi người vỗ tay cho {sales}!
-    _{ke_toan} lặng lẽ ghi vào sổ: "2 tỷ. {sales}. Chưa có hóa đơn."_
-    _Bạn ngồi xuống. Tim đập như trống. Bạn chưa có nhà tài trợ nào cả._
+    ~ sl_btt_dat_ten = true
+    ~ phat_hien(btt_global_gia)
+    giam_doc: Tập đoàn à? Tuyệt vời! Mọi người vỗ tay cho {sales}!
+    _{ke_toan} lặng lẽ ghi vào sổ: "2 tỷ. BTT Global. {sales}. Chưa có hóa đơn."_
+    _Bạn ngồi xuống. Tim đập như trống. Cái tên đó bạn nghĩ ra đúng lúc nhìn thấy bịch bánh tráng trộn trên bàn {hong_hot}. Bạn chưa có nhà tài trợ nào cả._
 * [🤝 "Dạ em sẽ đi chào từng quán trong quận. Nhỏ thôi, nhưng thật."]
     ~ sl_that_long()
     giam_doc: Nhỏ thôi à? Hơi… khiêm tốn nhỉ. Anh thích cái gì đó wow hơn.
@@ -98,16 +100,17 @@ _Cả phòng im lặng. Bạn cảm thấy chân mình tự đứng dậy, như 
 === sales_0210_dem_1203 ===
 # ngay:2 # gio:23:40 # noi:can_1203 # bat_buoc
 _23 giờ 40. Bạn mở tủ lạnh. Trống. Bạn đóng lại. Mở ra lần nữa, như thể đồ ăn tự mọc._
-{ sl_kpi_giay >= 350:
-    _2 tỷ. Bạn đã nói 2 tỷ. Trước mặt sếp, trước mặt {ke_toan}, trước cả cái sổ của {ke_toan}._
+{ sl_btt_dat_ten:
+    _2 tỷ. BTT Global. Bạn đã nói cả hai. Trước mặt sếp, trước mặt {ke_toan}, trước cả cái sổ của {ke_toan}._
+    sales: Chị {designer} ơi, em lỡ có một tập đoàn rồi. Giờ nó cần một bộ hồ sơ.
 - else:
     _Bạn không hứa 2 tỷ. Nhưng {giam_doc} vẫn nhắn: "Em ơi, có đối tác nào to không, anh cần cho slide gửi nhà đầu tư."_
+    sales: Chị {designer} ơi, tụi mình cần một tập đoàn.
 }
-_Bạn cầm điện thoại, nhắn cho người duy nhất có thể giúp._
-sales: Chị {designer} ơi, tụi mình cần một tập đoàn.
 designer: *(trả lời sau 30 giây)* Em nói lại coi? Một… tập đoàn?
-* [🗣️ "Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch Mr. Kevin Trộn. Em vừa đặt tên lúc ăn bánh tráng trộn."]
+* [🗣️ "Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch Mr. Kevin Trộn. Chị làm giùm em logo với cái hồ sơ."]
     ~ sl_phet(10)
+    ~ sl_btt_dat_ten = true
     ~ phat_hien(btt_global_gia)
     designer: …{sales}. Cái tập đoàn đó có thật hông em?
     sales: Có chứ! …Sắp có.
@@ -126,28 +129,6 @@ designer: *(trả lời sau 30 giây)* Em nói lại coi? Một… tập đoàn?
     _Bạn ngủ lúc 3 giờ, sau khi lướt 400 video Tóp-tóp về "cách nói chuyện với nhà đầu tư"._
     ~ nghi(-10)
 - -> END
-
-// ------------------------------------------------------------
-=== sales_0310_ho_boi_sky_ao ===
-# ngay:3 # gio:10:00 # noi:ho_boi_sky_ao
-_Thứ 7. Hồ bơi chung cư Sky Ảo. Bạn mặc đồ bơi, đeo kính râm, nằm ghế dài chụp ảnh. Không xuống nước, vì nước làm trôi lớp nền._
-_Ghế bên cạnh: {con_ong_chau_cha}, đang nổi lềnh bềnh trên phao hình con vịt._
-con_ong_chau_cha: Ủa {sales}. Em cũng ở đây hả? Chill ghê.
-* [💁 "Dạ anh {con_ong_chau_cha}, tin chị đi, anh nên tài trợ Đại Nhạc Hội. Logo anh trên áo Siêu Nhân Hồng."]
-    con_ong_chau_cha: Tài trợ? Bằng tiền của anh hả? *(nghĩ)* Anh… không có tiền của anh. Toàn tiền của chú anh.
-    _Câu đó nghe như câu đùa. Nhưng mặt {con_ong_chau_cha} không đùa._
-    ~ qh("con_ong_chau_cha", 3)
-* [💬 "Anh có muốn làm gì đó… của riêng anh hông?"]
-    con_ong_chau_cha: *(ngồi dậy trên phao)* Sao em hỏi vậy?
-    sales: Em đoán thôi. Người ở penthouse mà nằm phao con vịt là người buồn.
-    con_ong_chau_cha: *(cười nhẹ)* Em nói chuyện như… người đã từng buồn.
-    ~ qh("con_ong_chau_cha", 10)
-* [📸 Nhờ anh chụp giùm tấm ảnh "đi gặp đối tác ở hồ bơi".]
-    con_ong_chau_cha: Ok. *(chụp 40 tấm, tấm nào cũng nghiêng)*
-    ~ danh_tieng = danh_tieng + 3
-    ~ qh("con_ong_chau_cha", 3)
-- ~ cang_thang(-10)
--> END
 
 // ------------------------------------------------------------
 === sales_0410_ngay_dong_vat ===
@@ -186,6 +167,10 @@ ke_toan: Cái gì đây em?
 sales: Dạ, đề nghị tạm ứng. Để chốt nhà tài trợ lớn nhất năm.
 ke_toan: Hóa đơn đâu em? Hợp đồng đâu em?
 ~ sl_hoi_hoa_don = sl_hoi_hoa_don + 2
+{ sl_btt_dat_ten:
+    ke_toan: À, số điện thoại "văn phòng BTT Global" em ghi trên slide. Hôm qua chị gọi thử. Tiệm Nail Lung Linh bắt máy, hỏi chị muốn sơn màu gì.
+    _{ke_toan} không nói thêm. Chị chỉ gạch một dòng trong sổ, rồi nhìn bạn. Từ hôm nay, chị nắm đuôi bạn._
+}
 * [💁 "Tin chị đi! Mai chị đưa hợp đồng!"]
     ke_toan: Em nhỏ hơn chị bốn tuổi đó {sales}.
     _{ke_toan} trả lại tờ giấy ăn, kèm một câu: "Em lau miệng đi, son lem kìa."_
@@ -244,19 +229,19 @@ _{thuc_tap_sinh} 30 tuổi. Bạn 26. Anh ấy cúi đầu "dạ chị" như h�
 # ngay:6 # gio:10:30 # noi:studio
 _Buổi chụp poster đầu tiên. Bạn đã hứa với chị chủ Tiệm Nail & Tóc Lung Linh: "Siêu Nhân Hồng sẽ giơ bàn tay làm nail của tiệm trong một tấm poster"._
 _Đang chụp tới kiểu thứ 6, {sieu_nhan_hong} nhìn ra cửa sổ._
-sieu_nhan_hong: Có bà cụ đứng giữa ngã tư kìa! Điều khoản số 3! Em đi chút rồi về!
+sieu_nhan_hong: Có xe chè của bà cụ sụp ổ gà ngoài Đường Hóng kìa! Điều khoản số 3! Em đi chút rồi về!
 _Và ảnh đi thật. Chị chủ tiệm nail gọi tới: "Ủa em, nail của chị đâu?"_
 * [📞 Điện Thoại Giả: "Alo chủ tịch hả? Dạ em qua liền!" rồi cúp máy chị nail.]
     ~ sl_phet(5)
     _Chị chủ nail gọi lại 4 lần. Bạn để im lặng. Lần thứ 5, bạn bắt máy, nói "Bên em đang xử lý."_
     ~ cang_thang(5)
 * [🏃 Chạy theo {sieu_nhan_hong}, mang theo bộ móng giả của tiệm.]
-    _Ngã tư Đại lộ Kẹt Xe. {sieu_nhan_hong} dắt bà cụ qua đường. Bà cụ dừng ngay trước cửa Tiệm Nail Lung Linh để thở._
+    _Đường Hóng, gần đầu Hẻm 69. {sieu_nhan_hong} đẩy xe chè của Bà Bảy ra khỏi ổ gà, rồi được bà mời một ly chè, ăn bằng ống hút luồn qua mũ. Xe chè dừng ngay trước cửa Tiệm Nail Lung Linh._
     _Bạn chớp thời cơ, nhờ bà cụ cầm hộ bộ móng giả. Bà cụ cười, giơ lên. Ai đó quay clip._
     ~ sl_that(2)
     ~ follow(5000)
     ~ qh("sieu_nhan_hong", 5)
-    _Tối đó, clip giúp bà cụ lên xu hướng. Góc phải khung hình: bảng hiệu Tiệm Nail Lung Linh. Chị chủ tiệm gửi bạn 6 trái tim._
+    _Tối đó, clip đẩy xe chè lên xu hướng. Góc phải khung hình: bảng hiệu Tiệm Nail Lung Linh. Chị chủ tiệm gửi bạn 6 trái tim._
 * [🤝 Gọi lại chị nail, nói thật: "Chị ơi, ảnh đi giúp người, em xin dời qua tuần sau."]
     ~ sl_that_long()
     _Chị nail im lặng một lúc. "Đi giúp người hả? …Ừ, vậy thì chị đợi. Chị thích người tử tế."_

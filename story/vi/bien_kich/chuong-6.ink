@@ -139,11 +139,11 @@ _Đêm 29. Gác mái. Bản thảo "Công Ty Là Gia Đình" dày {bk_trang_tieu
 === bien_kich_3010_o_credit ===
 # ngay:30 # gio:09:00 # noi:phong_dung_phim # bat_buoc
 { not bk_kich_ban_phim_xong:
-    _Không có phim, nên không có ô credit nào. {editor} đưa bạn ly cà phê, không nói gì. Đôi khi im lặng là cách tử tế nhất._
-    ~ bk_credit = "trong"
-    -> END
+    _Phòng dựng. Cảnh cuối của phim là ba trang {thuc_tap_sinh} viết tay trong hai đêm, {editor} dựng trong một đêm. Bạn chưa sửa chữ nào. Bạn không sửa được._
+- else:
+    _Phòng dựng. {editor} xoay màn hình về phía bạn._
 }
-_Phòng dựng. {editor} xoay màn hình về phía bạn. Danh sách credit cuối phim. Ô "Ý tưởng / Kịch bản" đang để trống._
+_Danh sách credit cuối phim. Ô "Ý tưởng / Kịch bản" đang để trống. Ô "Dựng phim" ghi sẵn: "{editor}". Lần đầu tiên tháng này {editor} được điền tên trước._
 editor: Chị điền đi. *(ngáp)* Render xong là xong. Không sửa được nữa đâu.
 { bk_ghi_cong_duy:
     _Ngoài cửa, {thuc_tap_sinh} đứng chờ từ 7 giờ sáng, tay cầm hai ly cà phê, một ly đen đá không đường cho {editor}._
@@ -162,15 +162,17 @@ editor: Chị điền đi. *(ngáp)* Render xong là xong. Không sửa được
     _{editor} biết ai là người dựng mọi thứ mà không được ghi tên. Cái "dạ" đó dài hơn bình thường._
 * [😶 Để trống. "Phim này… không phải của ai hết."]
     ~ bk_credit = "trong"
-    editor: Để trống thì màn hình đen ba giây. Ba giây trên màn hình lớn dài lắm đó chị.
+    editor: Để trống thì màn hình đen ba giây. Ba giây trên màn hình lớn dài lắm đó chị. *(im một lúc)* Mà thôi, không kịp đổi khuôn chữ nữa. Em để tên chị như bản trailer nha.
     ~ cang_thang(10)
-- -> END
+- ~ chung_phim_ghi_ten_duy = bk_credit == "ca_hai"
+-> END
 
 // ------------------------------------------------------------
 === bien_kich_3010_hop_danh_gia ===
-# ngay:30 # gio:15:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp đánh giá cuối tháng. Phòng họp tầng 2, đông như ngày ký hợp đồng. Chỉ khác là không ai cười._
-_{giam_doc} cầm tập hồ sơ. {hr} ngồi bên cạnh, nụ cười cố định. {ke_toan} lật sổ, không ngẩng lên._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+~ bk_phim_thanh_cong = bk_kich_ban_phim_xong && (bk_y_tuong_that + bk_y_tuong_muon) >= 50
+_14 giờ. Họp đánh giá cuối tháng. Phòng họp tầng 2, đông như ngày ký hợp đồng. Chỉ khác là không ai cười._
+_{giam_doc} cầm tập hồ sơ: ghế Phó Giám đốc, danh sách cắt giảm, hợp đồng của {idol_het_thoi}. {hr} ngồi bên cạnh, nụ cười cố định. {ke_toan} lật sổ, không ngẩng lên._
 giam_doc: Các em. Một tháng qua… *(dừng lại)* Một tháng qua anh nghe nhiều chuyện. Có chuyện anh vui. Có chuyện anh vừa mới biết.
 truong_phong: Phòng Sản xuất xin báo cáo. Kịch bản phim ngắn… *(nhìn sang bạn)* {bien_kich} nói đi.
 * [🙇 Đứng dậy nói hết: chuyện của ai, của ai, của ai.]
@@ -187,7 +189,10 @@ truong_phong: Phòng Sản xuất xin báo cáo. Kịch bản phim ngắn… *(n
 * [😶 "Dạ, xin để phim tự nói vào tối mai."]
     ~ bk_cam(5)
     giam_doc: Được. Anh không ép.
-- -> bien_kich_3010_danh_gia
+- { bk_ghi_cong_duy:
+    _Lúc {hr} đọc danh sách cắt giảm, tên {thuc_tap_sinh} đã bị gạch bằng mực đỏ. Bên lề ghi: "Tác giả ý tưởng phim. Giữ lại."_
+}
+-> END
 
 // ------------------------------------------------------------
 === bien_kich_3110_hau_truong ===
@@ -197,13 +202,12 @@ _Hậu trường chật cứng. Ngoài kia cả nghìn người đang tới. Mà
 { bk_hai_cay_so:
     _{thuc_tap_sinh} đứng cạnh bạn ở cánh gà, áo sơ mi ủi phẳng tới mức có thể cắt giấy. Cách đó năm mét, bộ đồ hồng đang tập động tác "Biến hình!"._
 }
-* {bk_hai_cay_so} [🔒 Dẫn {thuc_tap_sinh} tới trước {sieu_nhan_hong}: "Anh có nhớ một cái xe máy chết giữa mưa, đẩy tới cây xăng?"]
-    sieu_nhan_hong: Xe máy… mưa… *(nhìn {thuc_tap_sinh} rất lâu qua khe mũ)* Anh đẩy nhiều lắm… mà… cái áo sơ mi trắng ướt nhẹp… ôm cái thùng giấy…?
-    thuc_tap_sinh: Dạ… dạ là em. Thùng giấy là đồ ở bàn làm việc cũ của em ạ.
-    sieu_nhan_hong: Trời ơi! Là em hả?! Anh nhớ rồi! Em khóc quá trời, anh tưởng do mưa!
-    _Hai người đứng đó, một người mặc đồ hồng, một người mặc sơ mi trắng. Không ai nói thêm gì. Không cần._
+* {bk_hai_cay_so} [🔒 Đứng giữa hai người, không nói gì. Để chuyện của ai người nấy giữ.]
+    _{sieu_nhan_hong} đi ngang, dừng lại trước {thuc_tap_sinh}, đưa cho anh ấy một cái bánh chuối chiên. "Em run hả? Ăn đi cho đỡ run." Rồi đi tiếp tập động tác "Biến hình!"._
+    thuc_tap_sinh: *(cầm cái bánh bằng hai tay)* Dạ… anh {sieu_nhan_hong} tốt ghê chị. Mà sao em thấy quen quen.
+    _Bạn biết vì sao. Bạn không nói. Có những chuyện, người viết chỉ được giữ, không được lấy._
     ~ qh("thuc_tap_sinh", 15)
-    ~ qh("sieu_nhan_hong", 15)
+    ~ qh("sieu_nhan_hong", 10)
     ~ bk_that(10)
 * [😇 Đứng cạnh {thuc_tap_sinh}, đưa cho anh ấy chai nước: "Chút nữa mình coi chung nha."]
     thuc_tap_sinh: Dạ. *(cầm chai nước bằng hai tay)* Em run quá chị.
@@ -215,26 +219,15 @@ _Hậu trường chật cứng. Ngoài kia cả nghìn người đang tới. Mà
 
 // ------------------------------------------------------------
 === bien_kich_3110_mo_man ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đèn tắt. Cả nghìn người im lặng. Màn hình lớn sáng lên: "NGƯỜI HÙNG KHÔNG TÊN"._
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
+_Bạn đứng ở cánh gà. Mười lăm phút nữa phim của bạn mở màn. Phần còn lại của đêm nay không còn nằm trong tay người viết._
 { not bk_kich_ban_phim_xong:
-    _Không. Màn hình sáng lên: "15 PHÚT CÙNG CEO". {giam_doc} bước ra trong bộ đồ Ông Kẹ Ngân Hàng, cầm micro._
-    giam_doc: Hồi khởi nghiệp…
-    _Ở hàng ghế khán giả, có người bắt đầu ngáp. Rồi người thứ hai._
-    -> END
-}
-{ bk_phim_thanh_cong:
-    _Mười lăm phút. Người ta cười ở cảnh ly chè. Người ta im ở cảnh mưa. Người ta khóc ở cảnh cuối, khi người hùng quay lưng đi._
-    ~ follow(120000)
-    { bk_credit == "ca_hai" && bk_ghi_cong_duy:
-        ~ follow(50000)
-    }
-    { bk_hai_cay_so:
-        ~ follow(50000)
-    }
+    _Bạn biết cảnh cuối không phải của mình. Ba trang của {thuc_tap_sinh}, chữ nắn nót, không một câu "tham khảo"._
 - else:
-    _Mười lăm phút. Phim ổn. Người ta vỗ tay. Không ai khóc, nhưng cũng không ai về sớm._
-    ~ follow(30000)
+    { bk_phim_thanh_cong:
+        _Bạn đã coi bản cuối mười một lần. Lần nào tới cảnh mưa bạn cũng nín thở._
+    - else:
+        _Phim ổn. Bạn biết nó chỉ ổn. Có một chỗ nào đó trong phim bạn chưa dám viết thật._
+    }
 }
-_Màn hình đen dần. Dòng chữ cuối phim bắt đầu chạy lên…_
 -> END

@@ -80,14 +80,14 @@ _File poster gốc đang mở trên laptop của {designer}. {designer} đi ra n
     ~ rd_han(-3)
 * [😶 Đứng xem, không làm gì.]
     _Bạn khoanh tay đứng xem. Đứng xem cũng là một kỹ năng._
-- _Đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ. Dưới lề đường, một bà cụ bị kẹt bánh xe lăn ở rãnh nước._
+- _10 giờ 30. Đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ xuống Đường Hóng. Gần đầu Hẻm 69, xe chè của Bà Bảy sụp một bánh xuống ổ gà, nồi chè đậu đỏ nghiêng chực đổ._
 sieu_nhan_hong: Khoan! Ngoài kia có người cần giúp! Điều khoản số 3! Biến hình! *(chạy biến)*
 designer: ANH ƠI! Còn 7 kiểu nữa!
-_Bạn nhìn xuống. Hắn quỳ giữa trời nắng, nhấc từng bánh xe, đẩy bà cụ qua đường, rồi đứng nghe bà kể chuyện thêm 10 phút._
+_Bạn nhìn xuống. Hắn ghé vai vào thành xe, đẩy một hơi lên khỏi ổ gà, rồi đứng lại ăn một ly chè bằng ống hút luồn qua mũ. Cô gái phụ bán chè nhìn hắn rất lâu, như vừa nhận ra một giọng quen._
 * [📸 Quay lại bằng điện thoại.]
     ~ rd_co_clip_ba_cu = true
     ~ rd_han(-3)
-    _Bạn quay. Bạn tự nhủ là để có bằng chứng hắn bỏ ngang buổi chụp. Chỉ vậy thôi._
+    _Bạn quay. Bạn tự nhủ là để có bằng chứng hắn bỏ ngang buổi chụp. Chỉ vậy thôi. Xe chè Bà Bảy ở ngay đầu hẻm nhà bạn. Bạn đã ăn chè ở đó cả trăm lần._
 * [🐍 Nhắn group công ty: "Siêu sao bỏ ngang buổi chụp, tiền thuê studio ai chịu?"]
     ~ rd_tung_tin(10, 8)
     ke_toan: *(trả lời trong 4 giây)* Tiền studio là 3 triệu 2. Hóa đơn chị giữ. Ai bỏ ngang thì chị ghi sổ.
@@ -100,25 +100,24 @@ _Bạn nhìn xuống. Hắn quỳ giữa trời nắng, nhấc từng bánh xe, 
 // ------------------------------------------------------------
 === ran_doc_0610_clip_ba_cu ===
 # ngay:6 # gio:20:00 # noi:hem_69
-_Tối. Clip ai đó quay {sieu_nhan_hong} đẩy xe lăn cho bà cụ đang lan trên Tóp-tóp. 30.000 lượt xem… rồi 50.000._
+_Tối. Clip ai đó quay {sieu_nhan_hong} đẩy xe chè Bà Bảy khỏi ổ gà đang lan trên Tóp-tóp. 30.000 lượt xem… rồi 50.000. Cảnh ăn chè bằng ống hút luồn qua mũ được cắt riêng làm meme._
 _Tin nhắn riêng từ {dan_dau_tu}: "Em ơi, anh nhìn chart rồi. Clip này mà đăng lại đúng giờ vàng, kèm nhạc buồn, là x4. Lần này là lên thật."_
 { rd_co_clip_ba_cu:
-    _Bạn mở thư viện ảnh. Clip của bạn quay gần hơn, rõ hơn, thấy cả lúc bà cụ nắm tay hắn cảm ơn._
+    _Bạn mở thư viện ảnh. Clip của bạn quay gần hơn, rõ hơn, thấy cả lúc Bà Bảy nắm tay hắn cảm ơn._
 }
 * {rd_co_clip_ba_cu} [🤝 Gửi clip của mình cho {dan_dau_tu}.]
     ~ rd_dua_clip_cho_chuong = true
-    ~ rd_giup(90000)
+    ~ rd_giup(60000)
     ~ qh("dan_dau_tu", 10)
     dan_dau_tu: Góc máy này đỉnh! Anh canh 21:07 đăng. Em thấy chưa, đường xu hướng dựng đứng luôn!
-    _Clip vượt 1 triệu lượt xem trong đêm, gấp 12 lần cái MV còn chưa ra mắt. Bạn nằm nhìn trần nhà. Vừa làm gì vậy?_
+    _Clip vượt 1 triệu lượt xem trong đêm. Sau này người ta còn nhắc: cái clip chè này nhiều lượt xem gấp 12 lần MV chính thức. Bạn nằm nhìn trần nhà. Vừa làm gì vậy?_
     ~ rd_han(-5)
 * [🐍 Bình luận dưới clip bằng nick ảo: "Diễn đó mấy bà, có ekip quay sẵn rồi."]
     ~ rd_tung_tin(10, 5)
-    ~ follow(15000)
+    ~ follow(10000)
     _Bình luận của bạn lên top. Người ta cãi nhau dưới đó. Mà cãi nhau thì… thuật toán càng đẩy. Clip càng lan._
     _Chiêu này hình như phản tác dụng._
 * [😶 Tắt điện thoại.]
-    ~ follow(30000)
     _Clip vẫn lan mà không cần bạn. Có những thứ không cần ai đẩy._
 - -> END
 
@@ -181,7 +180,7 @@ _Bên cạnh có một thư mục tên "dung_xoa_ban_loi". Trong đó là bản 
 # ngay:9 # gio:12:05 # noi:can_tin
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Trứng chiên, trứng luộc, trứng kho, trứng ốp la hình trái tim hồng (nội quy tháng 10)._
 thuc_tap_sinh: Dạ anh {ran_doc} ăn trứng gì ạ? Em mời. Hôm nay em có lương tuần.
-_Lương tuần thực tập sinh là 1 triệu. Mà ví của {thuc_tap_sinh} thò ra một cái thẻ màu bạc lấp lánh._
+_Lương tuần thực tập sinh là 1 triệu. Mà ví của {thuc_tap_sinh} thò ra một góc thẻ màu đen, viền lấp lánh._
 * [🤝 "Ông lớn hơn tui, để tui mời. Mà ông gọi tên tui được rồi."]
     thuc_tap_sinh: Dạ… dạ thôi anh. Mà… cảm ơn anh. Ở đây chưa ai nói vậy với em hết.
     _Mắt {thuc_tap_sinh} đỏ hoe. Vì một quả trứng._
@@ -194,7 +193,7 @@ _Lương tuần thực tập sinh là 1 triệu. Mà ví của {thuc_tap_sinh} t
     ~ rd_tin_mat()
     _Từ hôm nay, bạn có một đôi tai ở phòng Sản xuất. Đôi tai này pha cà phê cho cả phòng mỗi sáng._
     ~ an(30)
-* [🐍 Nhìn cái thẻ, cười: "Thẻ đẹp ha. Thực tập mà xài thẻ bạch kim."]
+* [🐍 Nhìn cái thẻ, cười: "Thẻ đẹp ha. Thực tập mà xài thẻ đen viền kim cương."]
     thuc_tap_sinh: *(nhét vội vào ví)* Dạ… thẻ… thẻ của người quen cho mượn ạ.
     ~ rd_tin_mat()
     ~ qh("thuc_tap_sinh", -5)
@@ -202,22 +201,45 @@ _Lương tuần thực tập sinh là 1 triệu. Mà ví của {thuc_tap_sinh} t
 - -> END
 
 // ------------------------------------------------------------
+=== ran_doc_0910_hoi_lich_son ===
+# ngay:9 # gio:16:30 # noi:ban_dieu_phoi # bat_buoc
+_Bàn điều phối. {thanh_xin_nghi} giữ cuốn lịch quay của Siêu Nhân Hồng, bìa dán sticker kim tuyến. Bạn ghé qua, tay cầm hai ly trà sữa._
+* [🐍 "Ông giữ lịch anh {sieu_nhan_hong} hả? Tuần sau ảnh quay ở đâu? Tui đăng bản tin cho mọi người cổ vũ."]
+    { qh_thanh_xin_nghi >= 0:
+        _{thanh_xin_nghi} mở cuốn lịch cho bạn xem. Bạn chụp 4 tấm, rất nhanh. Giờ đón xe, địa điểm, cả cửa sau studio._
+        ~ rd_tin_mat()
+        ~ rd_tin_mat()
+        _Tối đó, bạn gửi một tấm cho số "Mắt Diều Hâu". Mấy buổi quay tuần sau, lúc nào cũng có một ống kính dài thò ra từ bụi cây._
+        ~ rd_pha(10000)
+        ~ rd_nghi(5)
+    - else:
+        thanh_xin_nghi: Lịch nội bộ, tui không đưa được. Ông hỏi anh {quan_ly_idol} nha.
+        _Từ hôm đó, mỗi lần bạn đi ngang, {thanh_xin_nghi} úp cuốn lịch xuống._
+        ~ rd_nghi(3)
+    }
+* [😇 Để ly trà sữa lên bàn, không hỏi gì.]
+    thanh_xin_nghi: Ủa, cho tui hả? Cảm ơn ông nha.
+    ~ qh("thanh_xin_nghi", 8)
+    ~ rd_tin(2)
+- -> END
+
+// ------------------------------------------------------------
 === ran_doc_0910_ra_mat_mv ===
-# ngay:9 # gio:19:00 # noi:studio_tang_2 # bat_buoc
-_Ra mắt MV "Hồng Hóa Việt Nam". Cả công ty ngồi trước màn hình chiếu. {sieu_nhan_hong} đứng giữa, tạo dáng chờ._
+# ngay:9 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ. MV "Hồng Hóa Việt Nam" lên kênh Tóp-tóp và Diu-túp của công ty. Cả công ty ngồi trước màn hình chiếu. {sieu_nhan_hong} đứng giữa, tạo dáng chờ._
 { rd_doi_file_mv:
     _Nhạc lên. Hình lên… chậm hơn nhạc 2 giây. {sieu_nhan_hong} hô "Biến hình!" mà miệng vẫn còn ngậm._
     editor: *(bật dậy)* Cái gì vậy?! Đây là bản lỗi! Ai đổi file của tui?!
     _Bình luận trên mạng: "MV lồng tiếng như phim bộ 2005", "ảnh nói xong rồi mới mở miệng". Có người cắt ghép làm meme._
-    ~ follow(10000)
+    ~ follow(-15000)
+    ~ chung_so_meme = chung_so_meme + 1
     ~ rd_so_lan_pha = rd_so_lan_pha + 1
     ~ qh("editor", -5)
     it: *(liếc về phía bạn, cắn mì ly)* Lỗi người dùng.
     ~ rd_nghi(10)
-    _MV bị chê, nhưng meme thì lan. Siêu Nhân Hồng nổi thêm vì… bị chê. Thế giới này kỳ lạ thật._
+    _MV bị chê, người bỏ theo dõi nhiều hơn người bấm theo dõi. Nhưng cái meme thì lan. Thế giới này kỳ lạ thật._
 - else:
     _Nhạc lên. Bộ đồ hồng lướt giữa phố, khói màu, pháo giấy. Không đỉnh nóc kịch trần, nhưng xem được._
-    ~ follow(40000)
     giam_doc: Đấy! Thấy chưa! Đấy là vision!
 }
 sieu_nhan_hong: Cả nhà ơi! Cảm ơn mọi người! Hồng không phải màu, Hồng là thái độ!
@@ -330,14 +352,14 @@ _Bạn nhớ hết. Cái nhà kho. Buổi chiều tối dần. Cái lỗ thông 
 
 // ------------------------------------------------------------
 === ran_doc_1210_luong_ve ===
-# ngay:12 # gio:09:15 # noi:tang_1 # bat_buoc
-_Thứ 2. Lương về trễ 2 ngày. Cả tầng 1 thở phào như vừa thoát nạn._
-_Nhưng ở quầy lễ tân, {con_ong_chau_cha} đang nhìn cái máy quẹt thẻ. "TỪ CHỐI GIAO DỊCH". Lần thứ ba._
+# ngay:12 # gio:12:30 # noi:ca_phe_song_ao # bat_buoc
+_Thứ 2. 10 giờ sáng lương mới về, trễ 2 ngày. Cả tầng 1 thở phào như vừa thoát nạn. Trưa, nửa phòng kéo nhau ra Cà Phê Sống Ảo ăn mừng._
+_12 giờ 30. Ở quầy thu ngân, {con_ong_chau_cha} đang nhìn cái máy quẹt thẻ. "TỪ CHỐI GIAO DỊCH". Lần thứ ba._
 con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Sao lại từ chối? Để anh gọi chú anh.
 _Cùng lúc đó, {thuc_tap_sinh} rút ví trả tiền cà phê cho cả phòng. Một cái thẻ đen viền kim cương rơi xuống sàn._
 hong_hot: Ủa alo? Thẻ kim cương? Thực tập sinh mà thẻ kim cương?!
 thuc_tap_sinh: Dạ… dạ… thẻ… của… người quen ạ!
-_{sieu_nhan_hong} bước ra giữa sảnh, tạo dáng thật lố cho cả sảnh nhìn sang. Lúc quay lưng, hắn lấy chân đẩy cái thẻ về phía {thuc_tap_sinh}. Bạn thấy._
+_{sieu_nhan_hong} đang ngồi bàn ngoài hiên, bật dậy tạo dáng thật lố cho cả quán nhìn sang. Lúc quay lưng, hắn lấy chân đẩy cái thẻ về phía {thuc_tap_sinh}. Bạn thấy._
 ~ rd_han(-3)
 * [🔥 "{con_ong_chau_cha} ơi, thẻ phụ của sếp mà bị từ chối, chắc tài khoản sếp có chuyện rồi đó."]
     ~ rd_tung_tin(10, 8)

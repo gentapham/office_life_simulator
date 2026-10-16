@@ -1,33 +1,39 @@
 // ============================================================
 // KẾ TOÁN · SÁU KẾT THÚC
-// Đánh giá dựa trên họp đánh giá 30/10 và con số cuối cùng sau
-// Đại Nhạc Hội Siêu Nhân, nên cảnh đánh giá chạy cuối ngày 31/10.
-// Thứ tự ưu tiên:
-//   1. Mất Ngủ Vĩnh Viễn    (ngất lần thứ hai)
-//   2. 🔒 Trang 47b (bí mật) (47b có hiệu lực, không phá chiến dịch)
-//   3. Người Hùng Quỹ Đen   (tự khai, quỹ ≥ 297, quan hệ sếp ≥ 40)
-//   4. Kẻ Biển Thủ          (đủ 3 dấu vết, người khác lộ, chưa tự khai)
-//   5. Sổ Sạch, Ngủ Ngon    (qua thuế, ≥ 1 triệu, Mất Ngủ < 40)
-//   6. Phá Sản              (dưới 1 triệu)
-//   Còn lại (đủ 1 triệu nhưng chưa trọn điều kiện 5): Sổ Sạch, Ngủ Ngon
+// Chạy sau Đại Nhạc Hội Siêu Nhân (23:30 ngày 31/10), sau khi
+// chung_3110_dem_hong đã chốt ket_thuc_su_nghiep và chung_cong_ty_song.
+// Thứ tự xét:
+//   0. 🔒 Trang 47b (bí mật)   47b có hiệu lực, không phá chiến dịch
+//   1. Người Hùng Quỹ Đen     tự khai, quỹ đen còn ≥ 250, quan hệ sếp ≥ 40
+//   2. Sổ Sạch, Ngủ Ngon      công ty sống, không ngất lần hai, quỹ đen không bị người khác lộ
+//   3. Mất Ngủ Vĩnh Viễn      ngất lần thứ hai
+//   4. Kẻ Biển Thủ            đủ 3 dấu vết, người khác lộ, chưa tự khai
+//   5. Phá Sản                công ty không sống
+//   Mặc định: Sổ Sạch, Ngủ Ngon
 // ============================================================
 
 === ke_toan_3010_danh_gia ===
-# ngay:31 # gio:23:30 # bat_buoc
+# ngay:31 # gio:23:30 # bat_buoc # dieu_kien:sau_dem_hong
+{ ket_thuc_su_nghiep == "":
+    ~ chung_chot_ket_thuc_su_nghiep()
+}
 {
-- kt_lan_ngat >= 2:
-    ~ chot_ket_thuc("mat_ngu_vinh_vien")
-    -> ke_toan_kt_mat_ngu_vinh_vien
 - kt_47b_hieu_luc && not kt_pha_chien_dich:
     ~ chot_ket_thuc("trang_47b")
     -> ke_toan_kt_trang_47b
-- kt_tu_khai && kt_quy_den >= 297 && qh_giam_doc >= 40:
+- kt_tu_khai && kt_quy_den >= 250 && qh_giam_doc >= 40 && kt_lan_ngat < 2:
     ~ chot_ket_thuc("nguoi_hung_quy_den")
     -> ke_toan_kt_nguoi_hung_quy_den
+- chung_cong_ty_song && kt_lan_ngat < 2 && not (kt_quy_den_lo && kt_lo_boi_nguoi_khac && not kt_tu_khai):
+    ~ chot_ket_thuc("so_sach_ngu_ngon")
+    -> ke_toan_kt_so_sach_ngu_ngon
+- kt_lan_ngat >= 2:
+    ~ chot_ket_thuc("mat_ngu_vinh_vien")
+    -> ke_toan_kt_mat_ngu_vinh_vien
 - kt_quy_den_lo && kt_lo_boi_nguoi_khac && not kt_tu_khai:
     ~ chot_ket_thuc("ke_bien_thu")
     -> ke_toan_kt_ke_bien_thu
-- nguoi_theo_doi < 1000000:
+- not chung_cong_ty_song:
     ~ chot_ket_thuc("pha_san")
     -> ke_toan_kt_pha_san
 - else:
@@ -36,11 +42,14 @@
 }
 
 // Độ Mất Ngủ chạm 100: ngất ở phòng kế toán, nằm viện 2 ngày.
+// Không chốt kết thúc ở đây: cảnh đánh giá cuối ngày 31/10 mới chốt.
 === ke_toan_tudo_ngat_xiu ===
 # bat_buoc # noi:phong_ke_toan # dieu_kien:kt_dang_nam_vien
 { kt_lan_ngat >= 2:
-    ~ chot_ket_thuc("mat_ngu_vinh_vien")
-    -> ke_toan_kt_mat_ngu_vinh_vien
+    _Lần thứ hai. Chữ số trên bàn bơi đi. Bạn nghe tiếng {chi_dai} gọi tên mình rất xa._
+    _Bạn tỉnh dậy ở Phòng khám Đa Khoa Khỏe Re. Bác sĩ không nói gì, chỉ lắc đầu và giật cây bút bi khỏi tay bạn._
+    ~ kt_dang_nam_vien = false
+    -> END
 }
 _Bạn đang cộng một cột số. Con số thứ 47 nhòe đi. Rồi cả cột nhòe đi. Rồi cái bàn nghiêng._
 _Tiếng cuối cùng bạn nghe là {thuc_tap_sinh}: "Chị {ke_toan}! Chị {ke_toan} ơi!"_
@@ -66,22 +75,33 @@ _{chi_dai} ngồi bên giường, gọt táo, nói đúng một câu: "Lần sau
 // ------------------------------------------------------------
 === ke_toan_kt_nguoi_hung_quy_den ===
 # ket_thuc:nguoi_hung_quy_den # loai:co_hau
-_Họp đánh giá 30/10. Phòng "Sáng Tạo". Không ai cầm gối, không ai ngủ gật._
-_{giam_doc} đứng ở đầu bàn, không cầm slide, không nói tiếng Anh. Trên tay anh ấy là cuốn sổ tay ghi tay của bạn, bìa sờn, góc quăn._
+_23:30. Đại Nhạc Hội tan. Cả công ty kéo nhau về Quán Ốc Đêm, không ai muốn về nhà._
+_{giam_doc} đứng lên ở đầu bàn, vẫn mặc bộ đồ "Ông Kẹ Ngân Hàng". Không cầm slide, không nói tiếng Anh. Trên tay anh ấy là cuốn sổ tay ghi tay của bạn, bìa sờn, góc quăn._
 giam_doc: Mười năm nay, có người lo cho các em hơn cả anh.
 _Anh ấy mở cuốn sổ, đọc to từng dòng._
-giam_doc: "Tháng 1 năm 2024. Cộng 8 triệu. Không đi du lịch Tết." … "Tháng 9 năm 2025. Cộng 5 triệu. Không mua kính mới, dùng kính lúp." …
-_Cả phòng quay sang nhìn bạn. Bạn nhìn xuống bàn. Bạn đếm vân gỗ trên bàn. Bốn mươi bảy vân._
-giam_doc: Hai trăm chín mươi bảy triệu. Một tháng lương cho hai mươi mốt người. Và… *(lật trang cuối)* … sáu mươi cây xúc xích cho {cho}.
-cho: *(ở ngoài cửa)* Gâu!
+giam_doc: "Tháng 1 năm 2024. Cộng 8 triệu. Không đi du lịch Tết." … "Tháng 9 năm 2025. Cộng 5 triệu. Không mua kính mới, dùng kính lúp."
+_Cả bàn quay sang nhìn bạn. Bạn nhìn xuống bàn. Bạn đếm vân gỗ trên bàn. Bốn mươi bảy vân._
+{ kt_quy_den >= 297:
+    giam_doc: Hai trăm chín mươi bảy triệu. Một tháng lương cho hai mươi mốt người. Và… *(lật trang cuối)* … sáu mươi cây xúc xích cho {cho}.
+- else:
+    giam_doc: {kt_quy_den} triệu. Mục tiêu là hai trăm chín mươi bảy: một tháng lương cho hai mươi mốt người, và sáu mươi cây xúc xích cho {cho}. Phần còn thiếu… *(gập sổ)* … anh bán bộ gậy golf.
+}
+cho: *(dưới gầm bàn)* Gâu!
 _Có người bật cười. Có người khóc. {thuc_tap_sinh} khóc to nhất._
-giam_doc: Từ hôm nay, {ke_toan} là Giám đốc Tài chính của công ty. Anh không ép. Lần này là anh xin.
-_Cả phòng vỗ tay. {chi_dai} vỗ mạnh tới mức cái bàn rung._
-_Bạn đứng dậy. Bạn có cả một bài phát biểu trong đầu, có số liệu, có biểu đồ. Bạn nói đúng một câu._
-ke_toan: Lương tháng 11 về đúng ngày 10. Hóa đơn đâu mọi người?
-_Cả phòng cười. Cười tới mức {cho} ngoài cửa cũng sủa theo, sủa liên tục, không ai bảo dừng._
-_Tối đó, bạn về nhà số 18. Bức tranh phong cảnh vẫn treo đó. Két sắt phía sau giờ trống trơn._
-_Bạn treo lên tường, ngay cạnh bức tranh, tấm thẻ tên mới: "Giám đốc Tài chính". Bạn dán nhãn cho nó: "Thẻ tên – KHÔNG MƯỢN"._
+{ chung_cong_ty_song:
+    giam_doc: Từ thứ Hai, {ke_toan} là Giám đốc Tài chính của công ty. Anh không ép. Lần này là anh xin.
+    _Cả bàn vỗ tay. {chi_dai} vỗ mạnh tới mức dĩa ốc nhảy lên._
+    _Bạn đứng dậy. Bạn có cả một bài phát biểu trong đầu, có số liệu, có biểu đồ. Bạn nói đúng một câu._
+    ke_toan: Lương tháng 11 về đúng ngày 10. Hóa đơn đâu mọi người?
+- else:
+    giam_doc: Công ty không qua được tháng này. Nhưng nhờ {ke_toan}, không ai ra về tay trắng. Anh xin lỗi. Và anh cảm ơn.
+    _Không ai vỗ tay. Mọi người đứng dậy, lần lượt, ôm bạn. {chi_dai} ôm lâu nhất._
+    _Bạn có cả một bài phát biểu trong đầu. Bạn nói đúng một câu._
+    ke_toan: Thứ Hai lên phòng kế toán nhận phong bì. Nhớ ký nhận. Hóa đơn đâu mọi người?
+}
+_Cả bàn cười. Cười tới mức {cho} dưới gầm bàn cũng sủa theo, sủa liên tục, không ai bảo dừng._
+_Khuya đó, bạn về nhà số 18. Bức tranh phong cảnh vẫn treo đó. Két sắt phía sau, lần đầu tiên, không còn là bí mật._
+_Bạn dán lên cửa két một nhãn mới: "Quỹ chung. Ai cũng được hỏi."_
 -> END
 
 // ------------------------------------------------------------
@@ -89,10 +109,16 @@ _Bạn treo lên tường, ngay cạnh bức tranh, tấm thẻ tên mới: "Gi�
 // ------------------------------------------------------------
 === ke_toan_kt_so_sach_ngu_ngon ===
 # ket_thuc:so_sach_ngu_ngon # loai:co_hau
-_Đại Nhạc Hội Siêu Nhân. Pháo giấy hồng vừa nổ. Con số trên màn hình lớn vượt một triệu. Top 10 xu hướng._
-_Đám đông nhảy. {hong_hot} hét. {chi_dai} nhấc bổng {thuc_tap_sinh} lên. {giam_doc} đứng khóc trong bộ đồ hóa trang, không ai nhận ra._
-_23:47. Điện thoại bạn rung. "Tài khoản công ty +5.000.000.000đ."_
-_Ngay giữa đám đông đang nhảy, bạn mở ngân hàng điện tử. Wifi có lại rồi. Chuyển khoản trả hết nợ ngân hàng. Khoản vay thế chấp biệt thự số 1, Đồi Ngân Hàng: tất toán._
+{ ket_thuc_su_nghiep == "sieu_sao_hang_a":
+    _Đại Nhạc Hội Siêu Nhân. Pháo giấy hồng vừa nổ. Con số trên màn hình lớn vượt một triệu. Top 10 xu hướng._
+    _Đám đông nhảy. {hong_hot} hét. {chi_dai} nhấc bổng {thuc_tap_sinh} lên. {giam_doc} đứng khóc trong bộ đồ "Ông Kẹ Ngân Hàng", không ai nhận ra._
+    _23:47. Điện thoại bạn rung. "Tài khoản công ty +5.000.000.000đ."_
+    _Ngay giữa đám đông đang nhảy, bạn mở ngân hàng điện tử. Chuyển khoản trả hết nợ ngân hàng. Khoản vay thế chấp biệt thự số 1, Đồi Ngân Hàng: tất toán._
+- else:
+    _Đại Nhạc Hội Siêu Nhân tan. Con số không tới một triệu. Nhưng 23:40, luật sư của {sieu_nhan_hong} gửi một bản phụ lục: mục tiêu gia hạn tới Tết. Không ai phải hoàn 10 tỷ. Chưa phải._
+    _Bạn đọc phụ lục ngay giữa sân khấu đang dọn. Đọc cả chữ cỡ 6. Không có trang nào dính bánh chuối chiên. Bạn ký nháy, rồi đưa {giam_doc} ký. Lần này anh ấy đọc trước._
+    _Khoản vay thế chấp biệt thự vẫn đến hạn 15/11. Nhưng bạn có một bảng dòng tiền tới Tết, và lần đầu tiên, nó không có ô đỏ nào._
+}
 _Bạn bấm "Xác nhận". Lần đầu tiên trong mười năm, bấm xong không phải lo gì._
 { kt_bi_phat_thue:
     _Biên bản phạt thuế 200 triệu vẫn nằm trong ngăn kéo. Nhưng đã đóng đủ. Có hóa đơn._
@@ -118,11 +144,18 @@ _Bạn để "đã xem". Rồi đi pha một ly cà phê. Có hóa đơn._
 // ------------------------------------------------------------
 === ke_toan_kt_trang_47b ===
 # ket_thuc:trang_47b # loai:co_hau # bi_mat
-{ nguoi_theo_doi >= 1000000:
+{ ket_thuc_su_nghiep == "sieu_sao_hang_a":
     _Đại Nhạc Hội Siêu Nhân thành công. Một triệu người. Năm tỷ thưởng. Không ai cần tới trang 47b._
 - else:
-    _Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. Không đủ. Giấy đòi 10 tỷ chưa kịp gửi thì luật sư của {sieu_nhan_hong} đã gửi một tờ khác: "Căn cứ trang 47b, Bên A không yêu cầu hoàn trả."_
-    _Công ty vẫn còn. Cả công ty đã cố hết sức. Có ba chữ ký làm chứng cho điều đó._
+    { chung_cong_ty_song:
+        _Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. {sieu_nhan_hong} ký phụ lục gia hạn tới Tết. Bạn kẹp trang 47b phía sau phụ lục, cho chắc._
+    - else:
+        _Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. Không đủ. Giấy đòi 10 tỷ chưa kịp gửi thì luật sư của {sieu_nhan_hong} đã gửi một tờ khác: "Căn cứ trang 47b, Bên A không yêu cầu hoàn trả."_
+        { nguyen_theo_ll:
+            _Người viết trang 47b giờ đứng ở tòa nhà bên kia đường. Nhưng chữ ký thì vẫn ở đây. Anh ấy không rút lại._
+        }
+        _Công ty vẫn còn. Cả công ty đã cố hết sức. Có ba chữ ký làm chứng cho điều đó._
+    }
 }
 _Sáng 1/11. Phòng kế toán, tầng 2. Chưa ai tới. Bạn đến sớm như mọi khi._
 _Bạn lấy trang 47b ra khỏi bìa nhựa. Tờ giấy viết tay, mực tím, chữ nghiêng. Chữ ký của {sieu_nhan_hong}. Chữ ký của {giam_doc}, lần đầu tiên ký sau khi đọc._
@@ -146,19 +179,24 @@ _"ĐÃ DUYỆT."_
 // ------------------------------------------------------------
 === ke_toan_kt_ke_bien_thu ===
 # ket_thuc:ke_bien_thu # loai:buon
-_Họp đánh giá. Màn hình lớn phòng "Sáng Tạo" chiếu một tấm ảnh: két sắt sau bức tranh, nhà số 18, Phố Cũ. Cửa két hé mở. Những xấp tiền buộc dây thun._
-_Ai chụp, không ai nói. {ran_doc} nhìn xuống bàn. {thuc_tap_sinh} nhìn bạn, mắt đỏ, như muốn xin lỗi vì đã đếm ra con số lệch._
-hr: *(cười, nụ cười buồn nhất bạn từng thấy)* {ke_toan} ơi, mình lên phòng anh uống trà xíu.
+_23:30. Đại Nhạc Hội vừa tan. Group Zalo-lô công ty có thêm một tấm ảnh, ai đó gửi lúc pháo giấy đang nổ: két sắt sau bức tranh, nhà số 18, Phố Cũ. Cửa két hé mở. Những xấp tiền buộc dây thun._
+_Ai chụp, không ai nói. Ở bãi giữ xe, {ran_doc} nhìn xuống điện thoại. {thuc_tap_sinh} nhìn bạn, mắt đỏ, như muốn xin lỗi vì đã đếm ra con số lệch._
+hr: *(cười, nụ cười buồn nhất bạn từng thấy)* {ke_toan} ơi, thứ Hai mình lên phòng anh uống trà xíu.
 _Cuốn sổ tay ghi tay nằm trong túi xách bạn. Từng đồng, từng tháng, từng lý do. Không ai hỏi xem nó._
 _Bạn uống trà với {hr}. Trà Lắng Nghe. Anh ấy lắng nghe rất kỹ, rồi đưa bạn một tờ giấy để ký._
-_Chiều. Bạn ôm một thùng carton, bên trong toàn hóa đơn đã dán nhãn, đi xuống cầu thang. Không ai đứng dậy._
+_Chiều thứ Hai. Bạn ôm một thùng carton, bên trong toàn hóa đơn đã dán nhãn, đi xuống cầu thang. Không ai đứng dậy._
 _Bạn đi ngang bảng thông báo. Tờ giấy vẫn dán ở đó, mép đã ngả vàng: "Ai lấy hộp cơm có ghi tên {ke_toan}, trả lại."_
 _Bạn không gỡ nó xuống._
 _Ở cổng, Bác {bac_bao_ve} đứng sẵn. Bác mở cổng. Rồi nói nhỏ, chỉ đủ cho một mình bạn nghe._
 bac_bao_ve: Bác biết cháu không lấy đồng nào.
 _Bạn gật đầu. Bác chỉ nói với mình bạn. Như mọi lần, bác không nói với ai khác._
 cho: *(đi theo bạn tới đầu đường, rồi ngồi xuống, nhìn theo)*
-_Tối đó, ở nhà số 18, bạn mở cuốn sổ. Viết dòng cuối: "30/10. Còn lại: {kt_quy_den} triệu. Chưa ai nhận."_
+{ chung_cong_ty_song:
+    _Công ty vẫn sống. Chỉ có bạn là không còn ở đó._
+- else:
+    _Công ty cũng không qua được tháng này. Không ai còn ở lại để đọc cuốn sổ._
+}
+_Tối đó, ở nhà số 18, bạn mở cuốn sổ. Viết dòng cuối: "2/11. Còn lại: {kt_quy_den} triệu. Chưa ai nhận."_
 -> END
 
 // ------------------------------------------------------------
@@ -166,7 +204,11 @@ _Tối đó, ở nhà số 18, bạn mở cuốn sổ. Viết dòng cuối: "30/
 // ------------------------------------------------------------
 === ke_toan_kt_pha_san ===
 # ket_thuc:pha_san # loai:buon
-_Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. Không đủ một triệu. Không vào top 10._
+{ nguyen_theo_ll:
+    _Đại Nhạc Hội Siêu Nhân không có {sieu_nhan_hong}. Trên nóc tòa LL bên kia đường, màn hình LED chiếu chữ "Hồng Ngoại". Hợp đồng ghi rõ: Bên A rút, mục tiêu coi như không đạt._
+- else:
+    _Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. Không đủ một triệu. Không vào top 10. Không có phụ lục nào._
+}
 { kt_47b_hieu_luc && kt_pha_chien_dich:
     _Trang 47b có đủ chữ ký. Nhưng tờ giấy viết rõ: "Nếu có người cố tình phá, thì giữ nguyên trang 47." Bạn là người đó. Bạn biết._
 }
@@ -181,11 +223,11 @@ _Ngày 1/11, giấy đòi 10 tỷ tới. Bạn ký nhận. Chữ ký không run.
 _Phong bì cuối cùng, bạn ghi: "{cho} – 60 cây xúc xích"._
 _Sáng ra, bạn đi phát từng phong bì. {thuc_tap_sinh} cúi đầu cảm ơn 90 độ. {hong_hot} ôm bạn, không nói được câu nào. Bác {bac_bao_ve} nhận phong bì, nhìn bạn, gật đầu chậm._
 _Ai cũng cảm ơn. Không ai hỏi tiền ở đâu ra. Không ai biết đây là hai năm không đi du lịch Tết, không mua kính mới, không mua áo._
-_Bạn về nhà. Mở máy tính. Hộp thư còn một email cũ, ngày 27/10, người gửi Lưu Lực: "Ở LL, chúng tôi chưa bao giờ trả lương trễ."_
+_Bạn về nhà. Mở máy tính. Hộp thư có hai email cũ. Một của Lưu Lực, ngày 27/10: "Ở LL, chúng tôi chưa bao giờ trả lương trễ." Một của {hr}, tiêu đề "Thư mời làm việc: Phòng Trà Nhân Sự", chưa đọc._
 { kt_ll_email == 1:
     _Bạn từng hỏi lại: "Hóa đơn của lời mời này đâu anh?". Anh ta chưa bao giờ trả lời._
 }
-_Lần này, bạn không đóng nó._
+_Bạn để con trỏ chuột giữa hai email rất lâu. Lần này, bạn không đóng cái nào._
 -> END
 
 // ------------------------------------------------------------
@@ -193,14 +235,13 @@ _Lần này, bạn không đóng nó._
 // ------------------------------------------------------------
 === ke_toan_kt_mat_ngu_vinh_vien ===
 # ket_thuc:mat_ngu_vinh_vien # loai:buon
-_Lần thứ hai. Phòng kế toán, ngày 30/10. Bạn đang đọc con số cuối cùng của bảng tổng kết. Rồi chữ số bắt đầu bơi._
-_Bạn tỉnh dậy ở Phòng khám Đa Khoa Khỏe Re. Dây truyền nước trên tay trái. Trần nhà màu trắng, không có vết nứt nào để đếm._
+_Lần thứ hai trong tháng. Phòng khám Đa Khoa Khỏe Re. Dây truyền nước trên tay trái. Trần nhà màu trắng, không có vết nứt nào để đếm._
 bac_si_khoe_re: Lại là em à? *(lật hồ sơ)* Lần thứ hai trong tháng. Lần này nghỉ 2 tháng. Tránh mọi con số.
 ke_toan: Dạ… mọi con số là sao bác sĩ?
 bac_si_khoe_re: Là mọi con số. Kể cả giờ đồng hồ.
 _Bác sĩ đi ra. Bạn nằm. Điện thoại trên tủ đầu giường sáng lên. {chi_dai} gửi video._
-_Đại Nhạc Hội Siêu Nhân. Đèn hồng. Pháo giấy. Tiếng hét. {sieu_nhan_hong} tạo dáng. Hàng ghế cuối, chỗ bạn định ngồi, có một cái ghế trống. Ai đó đặt lên ghế một máy tính bỏ túi._
-_Bạn xem video ba lần. Lần thứ ba, bạn để ý con số người theo dõi ở góc màn hình: {nguoi_theo_doi}. Bạn nhắm mắt lại. Bạn hứa với bác sĩ rồi._
+_Đại Nhạc Hội Siêu Nhân. Đèn hồng. Pháo giấy. Tiếng hét. {nguyen_theo_ll:Sân khấu không có {sieu_nhan_hong}.|{sieu_nhan_hong} tạo dáng.} Sát rào chắn, chỗ bạn định đứng, có một khoảng trống. Ai đó đặt lên rào một máy tính bỏ túi._
+_Bạn xem video ba lần. Lần thứ ba, bạn để ý con số người theo dõi ở góc màn hình: {nguoi_theo_doi}. {chung_cong_ty_song:Công ty sống. Không cần bạn ký.|Công ty không qua được. Bạn không ở đó để ký nhận.} Bạn nhắm mắt lại. Bạn hứa với bác sĩ rồi._
 _Năm phút sau, bạn mở mắt._
 _Bạn lén lấy tờ giấy ghi đơn thuốc trên tủ, lật mặt sau. Lấy cây bút bi kế toán trong túi áo bệnh nhân. Không ai biết sao nó lại ở đó._
 _Bạn bắt đầu tính: viện phí, bảo hiểm trả bao nhiêu phần trăm, phần còn lại chia mấy tháng._

@@ -41,6 +41,8 @@ VAR thai_noi_that_lua_trai = ""      // "vo_hai", "ll", "mot_nua"
 // ---------- Đồ vật riêng ----------
 VAR thai_co_sac_du_phong = false     // cục sạc dự phòng: hồi đầy Pin 1 lần
 VAR thai_co_gang_tay_moi = false     // găng tay hồng size L mua thay
+VAR thai_gang_quynh_nhuom = false    // găng do Quỳnh nhuộm màu "Hồng Thái Độ" (manh mối font Hồng Ngoại)
+VAR thai_giu_usb_linh = false        // 30/10 nhận giữ USB con cú của Lĩnh
 
 // ============================================================
 // HÀM RIÊNG
@@ -57,14 +59,18 @@ VAR thai_co_gang_tay_moi = false     // găng tay hồng size L mua thay
     ~ thai_tung_chay_may = true
 }
 
+// Pin về 0 chỉ tính một lần mỗi lần sập (đang 0 mà tụt tiếp thì không tính thêm)
 === function thai_p(n) ===
+~ temp truoc = thai_pin
 ~ thai_pin = thai_pin + n
 { thai_pin > 100:
     ~ thai_pin = 100
 }
 { thai_pin <= 0:
     ~ thai_pin = 0
-    ~ thai_pin_ve_0 = thai_pin_ve_0 + 1
+    { truoc > 0:
+        ~ thai_pin_ve_0 = thai_pin_ve_0 + 1
+    }
 }
 
 === function thai_gk(n) ===

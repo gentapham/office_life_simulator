@@ -254,7 +254,7 @@ _{cho} hạ thấp người. Mắt dán vào chiếc mũ hồng. Lần này khô
 === bac_bao_ve_0410_sau_giu_tuat ===
 # ngay:4 # gio:11:00 # noi:cong_cong_ty
 _Cuối cùng thì {cho} vẫn cướp được một thứ: chiếc găng tay hồng tuột khỏi tay {sieu_nhan_hong}. {cho} ngậm nó chạy mất dưới gầm cầu thang._
-sieu_nhan_hong: Găng của anh! Đôi đó anh… à thôi, anh có 12 đôi.
+sieu_nhan_hong: Găng của anh! Đôi đó anh… à thôi, anh còn ba bộ dự phòng.
 _Mười phút sau, bác thấy {sieu_nhan_hong} lén nhét con gà cao su của {cho} vào sau tủ mạng tầng 1, cười khúc khích._
 * [🗣️ "Cháu {sieu_nhan_hong}. Trả con gà cho nó."]
     sieu_nhan_hong: *(giật mình)* Bác thấy hả bác?

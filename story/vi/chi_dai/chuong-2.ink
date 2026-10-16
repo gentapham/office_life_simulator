@@ -34,8 +34,8 @@ _Bác sĩ: "Em này cận thêm 1 độ. Còn chị… chị khỏe. Nhưng nhì
 
 // ------------------------------------------------------------
 === chi_dai_0910_ra_mat_mv ===
-# ngay:9 # gio:18:00 # noi:sanh_cong_ty # bat_buoc
-_Ra mắt MV đầu tiên của {sieu_nhan_hong}. Sảnh tầng trệt thành sân khấu mini: màn chiếu, bóng bay hồng, 40 người được mời, 70 người tới._
+# ngay:9 # gio:19:00 # noi:sanh_cong_ty # bat_buoc
+_Ra mắt MV "Hồng Hóa Việt Nam". 20 giờ MV lên kênh Tóp-tóp và Diu-túp của công ty, nhưng từ 19 giờ sảnh tầng trệt đã thành sân khấu mini: màn chiếu, bóng bay hồng, 40 người được mời, 70 người tới._
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc ra mắt MV vì vậy cũng chỉ có… trứng. Trứng luộc, trứng chiên, trứng cút._
 thuc_tap_sinh: *(qua bộ đàm)* Dạ chị ơi, máy chiếu không nhận laptop ạ!
 it: *(qua bộ đàm)* Restart chưa?
@@ -53,7 +53,7 @@ hong_hot: *(qua bộ đàm)* Chị ơi khách tràn ra cổng rồi! {cho} đang
     _{it} tự sửa máy chiếu. {hong_hot} tự gọi thêm ghế. Không ai lo {cho}. {cho} ăn hết 30 quả trứng cút trên bàn tiệc._
     ~ cd_td(1)
     ~ qh("cho", 5)
-- _Đèn tắt. MV chạy. {sieu_nhan_hong} múa trên nền hồng, hát một bài có câu "Hồng là thái độ" lặp lại 14 lần._
+- _20 giờ. Đèn tắt. MV chạy. {sieu_nhan_hong} múa trên nền hồng, hát một bài có câu "Hồng là thái độ" lặp lại 14 lần._
 _Khán giả vỗ tay. Có người khóc, không rõ vì cảm động hay vì khói trứng chiên._
 idol_het_thoi: *(đứng ở góc, kính đen)* MV năm 2015 của anh có 3 cảnh quay ở công viên. Cái này có 1. Thôi, cũng được.
 -> END
@@ -162,20 +162,20 @@ _Bên cạnh là một gã thanh niên tóc ướt nhẹp, ốc len dính trên 
 # ngay:12 # gio:09:35 # noi:phong_giam_doc # bat_buoc
 _Thứ 2, 12/10. Lương vẫn chưa về. Group Zalo-lô sôi như nồi lẩu. Bạn đi lên tầng 2._
 _Bạn đẩy cửa phòng giám đốc. {giam_doc} tự động đứng dậy, kéo ghế, và gọi vọng ra ngoài: "{thanh_ninh} ơi, pha trà!"._
-giam_doc: Ơ {chi_dai}, ngồi đi em. Lương thì… ngân hàng nó xử lý chậm, chiều về. Em hiểu cho anh, công ty là gia đình mà.
+giam_doc: Ơ {chi_dai}, ngồi đi em. Lương thì… ngân hàng hẹn 10 giờ. Mà ngân hàng hẹn thì em biết rồi đấy. Em hiểu cho anh, công ty là gia đình mà.
 * [👊 Đập bàn: "Gia đình thì không để con nhịn đói tới ngày 12 nha sếp!"]
     ~ cd_dap_ban()
     ~ cd_dap_ban_luong = true
     _RẦM. Ly trà {thanh_ninh} vừa bưng vào nhảy lên 2 phân._
     { RANDOM(1, 10) <= 7:
-        giam_doc: Được… được rồi. {thanh_ninh}, gọi {ke_toan} lên cho anh. Chuyển lương ngay sáng nay, phí gì anh chịu.
-        _11 giờ. Lương về tài khoản cả công ty. Group Zalo-lô im bặt, rồi nổ tung bằng 200 cái sticker. Ai cũng biết là nhờ ai._
+        giam_doc: Được… được rồi. {thanh_ninh}, gọi {ke_toan} lên cho anh. Gọi ngân hàng, giục cho bằng được, phí gì anh chịu.
+        _10 giờ đúng. Lương về tài khoản cả công ty. Group Zalo-lô im bặt, rồi nổ tung bằng 200 cái sticker. Ai cũng nghĩ là nhờ ai._
         ~ cd_luong_ve_som = true
         ~ cd_uy(15)
         ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
     - else:
         giam_doc: Em {chi_dai}. Anh tôn trọng em. Nhưng ở đây là văn phòng, không phải… quán ốc.
-        _Lương về lúc 4 giờ chiều như dự kiến. 22:00, {giam_doc} nhắn group: "Về văn hóa ứng xử nơi công sở". 900 chữ. Không nhắc tên ai. Ai cũng biết là ai._
+        _Lương về lúc 10 giờ như ngân hàng hẹn, không nhanh hơn một phút. 22:00, {giam_doc} nhắn group: "Về văn hóa ứng xử nơi công sở". 900 chữ. Không nhắc tên ai. Ai cũng biết là ai._
         ~ cd_nk(10)
         ~ qh("giam_doc", -5)
     }
@@ -199,25 +199,24 @@ giam_doc: Ơ {chi_dai}, ngồi đi em. Lương thì… ngân hàng nó xử lý 
 
 // ------------------------------------------------------------
 === chi_dai_1210_the_phu_long ===
-# ngay:12 # gio:12:10 # noi:quan_com_tam
-_Quán cơm tấm Cô Năm. {con_ong_chau_cha} hiếm hoi ăn trưa cùng mọi người, vì hôm nay lương chưa về mà nhà hàng không nhận nợ._
+# ngay:12 # gio:12:30 # noi:cafe_song_ao
+_12 giờ 30. Cà Phê Sống Ảo. Bạn ghé lấy ly cà phê mang về. Bàn trong góc: {con_ong_chau_cha} bao {hong_hot}, {ran_doc} và {thuc_tap_sinh} mừng lương về._
 _Tới lúc trả tiền, {con_ong_chau_cha} đưa thẻ phụ. Máy kêu "tít tít". Từ chối._
 con_ong_chau_cha: Ủa? Thẻ này chú anh đưa mà. Chưa bao giờ bị vậy.
-_{thuc_tap_sinh} vội vàng móc ví trả giùm. Cái thẻ trong ví {thuc_tap_sinh} lóe lên màu kim cương dưới đèn quán, rồi biến mất vào túi rất nhanh._
+_{thuc_tap_sinh} vội vàng móc ví trả giùm. Cái thẻ trong ví {thuc_tap_sinh} lóe lên màu kim cương dưới đèn quầy, rồi biến mất vào túi rất nhanh._
 * [🕵️ Nhìn {thuc_tap_sinh}: "Thẻ gì đẹp vậy em? Chị thấy rồi đó."]
     thuc_tap_sinh: Dạ… thẻ… thẻ tích điểm siêu thị ạ!
     chi_dai: Ờ. Siêu thị nào cho thẻ kim cương thì chỉ chị với.
     _{thuc_tap_sinh} cúi gằm, ăn hột cơm cuối cùng chậm như đang đếm._
     ~ phat_hien(duy_tung_lam_ngan_hang)
     ~ qh("thuc_tap_sinh", -3)
-* [🤝 Trả luôn cho cả bàn: "Hôm nay chị bao. Lương về rồi chị lấy lại bằng công việc."]
+* [🤝 Trả luôn cho cả bàn: "Hôm nay chị bao. Mai mốt mấy đứa trả chị bằng công việc."]
     ~ tien_cong(-180000)
     ~ cd_uy(5)
     ~ qh("con_ong_chau_cha", 5)
-    ~ an(55)
-* [😶 Ăn tiếp. Thẻ của ai thì người đó lo.]
-    ~ an(55)
-- _Cô Năm cơm tấm vừa thu chén vừa nói vọng: "Thẻ ông chú bị khóa, tức là ông chú hết tiền đó con. Cô bán ở đây 20 năm, cô biết."_
+* [😶 Cầm ly cà phê đi về. Thẻ của ai thì người đó lo.]
+    ~ uong(20)
+- hong_hot: *(thì thầm với bạn)* Chị ơi, thẻ phụ bị từ chối là tài khoản chính hết tiền đó. Em đọc trên mạng rồi.
 con_ong_chau_cha: *(cười gượng)* Chill đi cô. Chú con giàu mà.
 -> END
 

@@ -51,7 +51,7 @@ _Hai mươi người bịt mắt lao về phía bạn như sóng thần._
 
 // ------------------------------------------------------------
 === giam_doc_1710_nhau_hai_san ===
-# ngay:17 # gio:19:30 # noi:vung_tau
+# ngay:17 # gio:18:00 # noi:vung_tau
 _Quán hải sản ven biển. Bàn dài, bia lạnh. {dan_dau_tu} vừa bao cả team vì Hồng Coin tăng x10. {sales} đã say._
 sales: Mọi người nghe nè! Đại Nhạc Hội chị… à em mời ca sĩ nổi tiếng nhất nước về hát! Tin em đi! Chắc kèo!
 _Cả bàn vỗ tay. Rồi tất cả quay sang bạn. Ly bia thứ năm trong tay bạn._
@@ -76,7 +76,7 @@ thanh_ninh: Sếp ơi sếp nói một câu đi sếp! Một câu thôi!
 
 // ------------------------------------------------------------
 === giam_doc_1710_lua_trai ===
-# ngay:17 # gio:22:00 # noi:vung_tau # bat_buoc
+# ngay:17 # gio:20:00 # noi:vung_tau # bat_buoc
 _Đêm lửa trại. Gió biển lạnh. {sieu_nhan_hong} vừa kể xong một chuyện hồi nhỏ: từng nhốt một đứa nhỏ trong nhà kho, lỗ thông gió hình con cá. Giọng nhỏ dần._
 _Ở góc kia, {idol_het_thoi} ngủ gục trên vai {quan_ly_idol}. {editor} lặng lẽ đắp một cái chăn cho cả hai._
 _{hong_hot} đang livestream. Đúng lúc đó, gió giật. {sieu_nhan_hong} đưa tay lên… tháo mũ ra lau mồ hôi._
@@ -87,12 +87,12 @@ _Ba giây. Ống kính của {hong_hot} chĩa thẳng vào._ # hen_gio:3
     ~ qh("hong_hot", -5)
 * [😶 Không làm gì.]
     _Livestream bắt được nửa khuôn mặt. Mờ, tối, nhưng đủ để mạng xã hội bàn tán cả tuần._
-    ~ follow(50000)
+    ~ follow(30000)
     ~ scandal()
     ~ qh("sieu_nhan_hong", -10)
 * [⏱️ (Không chọn kịp)]
     _Livestream bắt được nửa khuôn mặt. {sieu_nhan_hong} vội đội mũ, tay run run._
-    ~ follow(50000)
+    ~ follow(30000)
     ~ scandal()
     ~ qh("sieu_nhan_hong", -5)
 - _Rồi tới trò "nói thật". Chai nước ngọt xoay. Dừng lại ở bạn._
@@ -119,8 +119,8 @@ hr: Sếp nói thật một chuyện đi sếp!
 
 // ------------------------------------------------------------
 === giam_doc_1810_ve_thanh_pho ===
-# ngay:18 # gio:16:00 # noi:xe_khach # bat_buoc
-_Trên xe về thành phố. Hồng Coin vừa sập về 0, người tạo ôm tiền biến mất. {dan_dau_tu} ngồi nhìn cửa sổ, im như tượng._
+# ngay:18 # gio:12:30 # noi:xe_khach # bat_buoc
+_Trưa, trên xe về thành phố. Hồng Coin vừa sập về 0, người tạo ôm tiền biến mất. {dan_dau_tu} ngồi nhìn cửa sổ, im như tượng._
 _Không ai nói với ai. Ai cũng đang giận ai về một chuyện gì đó tối qua._
 _Điện thoại bạn rung. {con_ong_chau_cha}._
 con_ong_chau_cha: Chú ơi… con vừa thấy penthouse của con, à của chú, được rao bán trên mạng. Chú bán hả chú?
@@ -145,8 +145,8 @@ con_ong_chau_cha: Chú ơi… con vừa thấy penthouse của con, à của ch�
 
 // ------------------------------------------------------------
 === giam_doc_1810_bao_cao_cua_bac ===
-# ngay:18 # gio:19:00 # noi:choi_bao_ve
-_Xe về tới công ty. Bác {bac_bao_ve} đứng chờ ở cổng, tay cầm đèn pin, {cho} đứng cạnh._
+# ngay:18 # gio:15:00 # noi:choi_bao_ve
+_15 giờ, xe về tới công ty. Bác {bac_bao_ve} đứng chờ ở cổng, tay cầm đèn pin, {cho} đứng cạnh._
 bac_bao_ve: Cậu {giam_doc}. Đêm qua cả công ty đi vắng, bác ở lại trực. Hai giờ sáng có người trong phòng giám đốc.
 _Ngăn kéo thứ ba bàn bạn bị mở. Giấy tờ ngân hàng vẫn còn, nhưng bị xếp lại sai thứ tự._
 * [😨 "Ai ạ? Bác thấy mặt không?"]
@@ -215,41 +215,40 @@ _Trên bàn còn một phong bì dán kín, ghi: "Chỉ mở khi công ty sắp 
 
 // ------------------------------------------------------------
 === giam_doc_2010_qua_20_10 ===
-# ngay:20 # gio:10:00 # noi:phong_giam_doc # bat_buoc
-_Ngày Phụ nữ Việt Nam. Bạn phải mua quà cho 7 chị em: {thanh_ninh}, {hong_hot}, {ke_toan}, {bien_kich}, {designer}, {sales}, {chi_dai}. Bằng tiền túi. Ví hiện có: {tien} đồng._
-* [🌹 Mua 7 bó hồng giống hệt nhau.]
+# ngay:20 # gio:09:00 # noi:phong_giam_doc # bat_buoc
+_Ngày Phụ nữ Việt Nam. 9 giờ, tặng hoa xong, giờ tới quà. Phong bì 2.100.000đ cho các chị em đã có {ke_toan} lo. Phần quà riêng của sếp thì bạn tự mua, bằng tiền túi: 7 chiếc khăn cam giống hệt nhau, màu logo công ty, cho {thanh_ninh}, {hong_hot}, {ke_toan}, {bien_kich}, {designer}, {sales}, {chi_dai}._
+_Ví hiện có: {tien} đồng. Còn thiếu gì nữa không?_
+* [🔍 Mua thêm một chiếc kính lúp, viết thiệp riêng cho {ke_toan}: "Cảm ơn em đã đọc trang 47 thay anh."]
     ~ gd_qua_20_10 = "giong_nhau"
-    ~ tien_cong(-210000)
-    designer: Hoa giống nhau hết hả anh? *(chụp ảnh đăng story: "quà sếp, bản sao số 7")*
-    sales: Năm ngoái cũng hoa hồng.
+    ~ tien_cong(-420000)
+    _{ke_toan} cầm chiếc kính lúp, soi tấm thiệp. Soi rất lâu, lâu hơn cần thiết với một dòng chữ._
+    ke_toan: … Dạ. Lần sau anh tự đọc nha anh.
+    ~ qh("ke_toan", 15)
+    designer: Khăn giống nhau hết hả anh? *(chụp ảnh đăng story: "quà sếp, bản sao số 7")*
     ~ qh("designer", -3)
-    ~ qh("sales", -3)
-* [🎁 Mua 7 món khác nhau, mỗi người một món hợp ý.]
+    ~ gd_uy(5)
+* [💌 Kèm mỗi chiếc khăn một tấm thiệp viết tay, mỗi tấm một điều cảm ơn thật.]
+    ~ gd_qua_20_10 = "thiep"
+    ~ tien_cong(-350000)
+    ~ cang_thang(5)
+    _Bạn viết 3 tiếng. Tấm của {chi_dai}: "Cảm ơn em đã hỏi anh trong thang máy." Tấm của {hong_hot}: "Cảm ơn em đã giữ fanpage sống."_
+    ~ qh("chi_dai", 10)
+    ~ qh("hong_hot", 5)
+    ~ qh("thanh_ninh", -5)
+    ~ gd_uy(5)
+* [🎁 Thêm một cái túi xách cho {thanh_ninh}. Trợ lý mà.]
     ~ gd_qua_20_10 = "khac_nhau"
     ~ tien_cong(-1500000)
-    _Kính lúp mới cho {ke_toan}. Sổ da cho {bien_kich}. Bộ đàm xịn cho {chi_dai}. Ring light cho {hong_hot}…_
-    ~ qh("ke_toan", 10)
-    ~ qh("chi_dai", 10)
-    ~ qh("bien_kich", 5)
-    ~ qh("hong_hot", 5)
-    _Đến trưa, group "Hội Anti Sếp" đã có bảng so sánh giá từng món. {thanh_ninh} được cái túi xách, đắt nhất. Drama "ai được quà xịn hơn" kéo dài tới 3 giờ chiều._
+    _Đến trưa, group "Hội Anti Sếp" đã có bảng so sánh: 6 chiếc khăn, 1 chiếc khăn kèm túi xách. Drama "ai được quà xịn hơn" kéo dài tới 3 giờ chiều._
     ~ qh("thanh_ninh", 15)
     ~ qh("designer", -5)
     ~ qh("sales", -5)
-* [💌 Viết tay 7 tấm thiệp, mỗi tấm một điều cảm ơn thật.]
-    ~ gd_qua_20_10 = "thiep"
-    ~ tien_cong(-70000)
-    ~ cang_thang(5)
-    _Bạn viết 3 tiếng. Tấm của {ke_toan}: "Cảm ơn em đã đọc trang 47 thay anh." Tấm của {chi_dai}: "Cảm ơn em đã hỏi anh trong thang máy."_
-    ~ qh("ke_toan", 15)
-    ~ qh("chi_dai", 10)
-    ~ qh("thanh_ninh", -5)
-    ~ gd_uy(5)
-* [🙅 "Năm nay công ty tặng chung một bánh kem. Anh không ép, tùy các em ăn hay không."]
+    ~ gd_uy(-5)
+* [🙅 Đưa {thanh_ninh} túi khăn: "Em phát giúp anh. Anh không ép, tùy em nói gì."]
     ~ gd_qua_20_10 = "khong_mua"
-    ~ gd_so_lan_tuy_em = gd_so_lan_tuy_em + 1
-    ~ gd_uy(-10)
-    _Bánh kem ngon. Nhưng không ai chụp ảnh._
+    ~ gd_tuy_em("thanh_ninh")
+    ~ gd_uy(-5)
+    _Khăn đẹp. Nhưng không ai biết là quà của sếp hay quà của {thanh_ninh}._
 - -> END
 
 // ------------------------------------------------------------
@@ -274,23 +273,31 @@ chua_te_deadline: *(nhìn đi chỗ khác, lướt Tóp-tóp rất chăm chú)*
 * [🤝 "Không sao. Chiếu những gì mình có. Mười sáu năm, thiếu một cảnh cũng được."]
     ~ qh("editor", 10)
     ~ qh("chua_te_deadline", 10)
-- { gd_doc_thu_g:
-    _Cuối tiệc, Bác {bac_bao_ve} đứng lên, cầm lá thư. Cả phòng im._
-    bac_bao_ve: G gửi các cháu. "Mười sáu năm rồi. Các cháu còn đi làm với nhau là tôi mừng. Nhờ bác để ý giùm tôi, sổ sách dạo này có ổn không."
-    _Ở bàn bên, {ke_toan} đánh rơi ly nước. Bác {bac_bao_ve} nhìn {ke_toan}. Rồi nhìn bạn. Bác gấp một đoạn lại, không đọc._
-    ~ gd_no(10)
+- _Tiệc cắt bánh xong, cả công ty kéo sang Quán Ốc Đêm._
+-> END
+
+// ------------------------------------------------------------
+=== giam_doc_2010_quan_oc_dem ===
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18:30. Quán Ốc Đêm. Hai bàn dài kê sát nhau, ốc len xào dừa bốc khói. {cho} nằm dưới gầm bàn, chờ ai đó làm rơi con ốc nào._
+{ gd_doc_thu_g:
+    _Giữa bữa, Bác {bac_bao_ve} đứng lên, đeo kính, cầm lá thư. Cả quán im, kể cả bàn bên cạnh._
+    bac_bao_ve: G gửi các cháu. "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
+    _Bác đọc xong thì gấp thư lại, không đọc thêm trang thứ hai. Bác nhìn bạn một lúc, rồi ngồi xuống._
+    _"Ngày mai thì phải có." Bạn nghĩ tới tờ giấy ngân hàng trong túi áo vest._
+    ~ gd_no(5)
     ~ qh("bac_bao_ve", 5)
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 - else:
-    _Cuối tiệc, Bác {bac_bao_ve} chỉ đứng lên chúc một câu: "Sinh nhật vui vẻ." Lá thư vẫn trong túi áo bác._
+    _Bác {bac_bao_ve} chỉ đứng lên chúc một câu: "Sinh nhật vui vẻ." Lá thư vẫn trong túi áo bác._
 }
-~ follow(10000)
 ~ an(30)
 -> END
 
 // ------------------------------------------------------------
 === giam_doc_2010_quan_oc_karaoke ===
 # ngay:20 # gio:21:00 # noi:karaoke # bat_buoc
-_Tăng một ở Quán Ốc Đêm, tăng hai ở Karaoke Hát Cho Nhau Nghe. Bạn đã uống 5 ly. Đèn nháy bảy màu như logo công ty._
+_Tăng hai ở Karaoke Chú Sáu. Bạn đã uống 5 ly. Đèn nháy bảy màu như logo công ty._
 thanh_ninh: Sếp ơi, hôm nay sinh nhật công ty mà sếp nói câu nào cũng chuẩn quá anh ơi! Sếp nói thêm một câu nữa đi sếp!
 sales: Tin em đi anh, chỉ cần anh hứa một câu là năm sau cả công ty cày gấp đôi, chắc kèo!
 * [🍻 Nâng ly: "Tháng sau anh tăng lương 20% cho cả nhà!"]
@@ -314,7 +321,7 @@ sales: Tin em đi anh, chỉ cần anh hứa một câu là năm sau cả công 
 
 // ------------------------------------------------------------
 === giam_doc_2010_tra_dem ===
-# ngay:20 # gio:23:00 # noi:choi_bao_ve # dieu_kien:sau_tiec
+# ngay:20 # gio:23:00 # noi:choi_bao_ve
 _Tàn tiệc. Bạn đi bộ về công ty lấy xe. Chòi bảo vệ còn sáng đèn, dù Bác {bac_bao_ve} thường ngủ lúc 9 giờ._
 bac_bao_ve: *(rót trà, chậm rãi)* Cậu {giam_doc} ngồi đây. Sáng nay cậu nhìn lá thư này mãi. Có một đoạn nhắc tới cậu. Đọc hay không là việc của cậu.
 ~ gd_tra_binh = gd_tra_binh + 1

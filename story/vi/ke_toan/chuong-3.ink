@@ -37,7 +37,7 @@ _Mốc 2: 200.000 người theo dõi. Hiện tại: {nguoi_theo_doi}._
 giam_doc: 400 triệu. Em duyệt nhé. Anh không ép, tùy em.
 * [✅ Duyệt 400 triệu.]
     ~ kt_quy(-400)
-    ~ follow(120000)
+    ~ follow(50000)
     ~ kt_ngu(15)
     ~ kt_keo(-10)
     _Bạn bấm nút. Tay lạnh ngắt. Quỹ Công Ty: {kt_quy_cong_ty} triệu._
@@ -49,7 +49,7 @@ giam_doc: 400 triệu. Em duyệt nhé. Anh không ép, tùy em.
     ke_toan: Em lo đúng 10 tỷ thôi anh. Không xa đâu.
 * {qh_sieu_nhan_hong >= 30} [🩷 "Em có ý này: chiến dịch 'Hồng 0 Đồng'. Quay lại những lần {sieu_nhan_hong} đi giúp người. Thật. Không tốn tiền."]
     ~ kt_hong_0_dong = true
-    ~ follow(60000)
+    ~ follow(40000)
     ~ kt_keo(5)
     ~ qh("sieu_nhan_hong", 15)
     ~ qh("giam_doc", 5)
@@ -57,7 +57,7 @@ giam_doc: 400 triệu. Em duyệt nhé. Anh không ép, tùy em.
     sieu_nhan_hong: *(đứng ở cửa, nghe hết)* Chị {ke_toan}… vậy là em cứ đi giúp người là được hả? Vì công lý và lượt view!
 * [✂️ "Em duyệt 100. Còn lại anh đi golf tìm tài trợ đi."]
     ~ kt_quy(-100)
-    ~ follow(30000)
+    ~ follow(15000)
     ~ kt_ngu(5)
     giam_doc: … Ừ. Anh đi golf. Thật đấy.
 - -> END
@@ -92,10 +92,8 @@ chi_dai: *(đưa bạn ly trà đá)* Bà nhìn mặt kìa. Hai tuần nay bà n
     ~ kt_ngu(-20)
     ~ qh("chi_dai", 15)
     chi_dai: *(im lặng ba giây)* … Rồi. Từ giờ show nào chị cũng gánh.
-    { RANDOM(1, 10) <= 5:
-        ~ kt_ran_doc_nghe_47 = true
-        _Cửa nhà vệ sinh cuối pantry khép hờ. Bạn không thấy ai. Nhưng có một đôi giày đứng yên rất lâu ở khe cửa._
-    }
+    ~ kt_ran_doc_nghe_47 = true
+    _Cửa nhà vệ sinh cuối pantry khép hờ. Bạn không thấy ai. Nhưng có một đôi giày đứng yên rất lâu ở khe cửa. Giày của người mới vào ngày 1/10._
 * [😶 "Không có gì. Tui mất ngủ do uống cà phê thôi."]
     ~ kt_ke_huong = 0
     ~ kt_ngu(5)
@@ -161,12 +159,12 @@ _Danh sách gồm 47 món. {giam_doc} nhắn lúc 4:50: "{ke_toan} ơi thêm tô
 // ------------------------------------------------------------
 === ke_toan_1610_duyet_gameshow ===
 # ngay:16 # gio:08:30 # noi:phong_ke_toan # bat_buoc
-_Gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng, 14:00. {quan_ly_idol} đặt lên bàn bạn ba tờ đề nghị: trang phục mới, xe đưa đón, bánh chuối chiên phòng chờ._
+_Gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng: 14:00 quay, 20:00 phát sóng. {quan_ly_idol} đặt lên bàn bạn ba tờ đề nghị: trang phục mới, xe đưa đón, bánh chuối chiên phòng chờ._
 quan_ly_idol: {ke_toan} ơi duyệt giùm anh trước 10 giờ nha. Khoan, anh nghe máy chút… Không kịp là {sieu_nhan_hong} lên sóng bằng bộ đồ cũ bạc màu đó!
 * [✅ Duyệt cả ba, ngay bây giờ.]
     ~ kt_duyet_gameshow = true
     ~ kt_quy(-25)
-    ~ follow(30000)
+    ~ follow(15000)
     ~ qh("quan_ly_idol", 10)
     ~ qh("sieu_nhan_hong", 5)
     quan_ly_idol: Em là cứu tinh! Chuyện này để anh lo, à em lo xong rồi!
@@ -175,20 +173,19 @@ quan_ly_idol: {ke_toan} ơi duyệt giùm anh trước 10 giờ nha. Khoan, anh 
     _{quan_ly_idol} chạy đi săn chữ ký. Về tới nơi là 11:40. Xe đặt được, bánh có, nhưng trang phục không kịp may._
     ~ follow(10000)
     ~ qh("quan_ly_idol", -5)
-    _Trên sóng truyền hình, bộ đồ hồng hơi bạc ở đầu gối. Mạng xã hội gọi là "Hồng Bạc Màu"._
+    _Tối đó, trên sóng truyền hình, bộ đồ hồng hơi bạc ở đầu gối. Mạng xã hội gọi là "Hồng Bạc Màu"._
 * [🧾 "Bánh chuối chiên mà cũng tính tiền công ty? Không có điều khoản nào…"]
     ke_toan: … À. Có. Điều khoản số 4.
     _Bạn tự bật cười. Duyệt cả ba. Kèm một câu: "Hóa đơn bánh chuối chiên giữ kỹ cho chị."_
     ~ kt_duyet_gameshow = true
     ~ kt_quy(-25)
-    ~ follow(30000)
+    ~ follow(15000)
 - -> END
 
 // ------------------------------------------------------------
 === ke_toan_1610_gameshow_va_buffet ===
-# ngay:16 # gio:19:00 # noi:tang_1
-_Buổi tối. Clip gameshow đang lên xu hướng: {sieu_nhan_hong} hát "Công Viên" sai lời, "bán khoai chiên tại công viên". Và một giọng hát bè từ cánh gà, chuẩn từng nốt._
-~ follow(80000)
+# ngay:16 # gio:20:00 # noi:tang_1
+_20:00. Cái tivi ở tầng 1 đang phát gameshow quay từ chiều: {sieu_nhan_hong} hát "Công Viên" sai lời, "bán khoai chiên tại công viên". Và một giọng hát bè từ cánh gà, chuẩn từng nốt. Mười phút sau, clip đã lên xu hướng._
 _Buffet công ty bày kín tầng 1. Đồ ăn bạn mua từ 5 giờ sáng. Ai cũng ăn như chưa từng được ăn._
 ~ an(100)
 * [🧾 Đứng cạnh bàn buffet, cầm sổ, đếm từng đĩa.]

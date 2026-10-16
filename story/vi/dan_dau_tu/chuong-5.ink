@@ -7,14 +7,14 @@
 # ngay:21 # gio:10:00 # noi:phong_giam_doc # bat_buoc
 _Mốc 3: 500.000 người theo dõi. Sáng nay trang Confession vừa bóc chuyện biệt thự của {giam_doc} đang thế chấp. Không khí phòng giám đốc đặc như keo._
 _Bạn bước vào, ôm theo bảng phân tích. {quan_ly_idol} được gọi lên ngồi cạnh, hai điện thoại úp xuống bàn._
-giam_doc: {dan_dau_tu}, em nói khán giả thích Siêu Nhân Hồng đi… giúp bà cụ hơn là xem MV à? Thế 300 triệu tiền MV anh đổ sông à? Anh không ép, nhưng em giải thích anh nghe.
-* {ddt_bieu_do_tay} [📊 Chiếu biểu đồ vẽ tay ngày mất điện: clip bà cụ 2,4 triệu lượt xem, MV 200 nghìn.]
+giam_doc: {dan_dau_tu}, em nói khán giả thích Siêu Nhân Hồng đi… đẩy xe chè hơn là xem MV à? Thế 300 triệu tiền MV anh đổ sông à? Anh không ép, nhưng em giải thích anh nghe.
+* {ddt_bieu_do_tay} [📊 Chiếu biểu đồ vẽ tay ngày mất điện: clip xe chè 2,4 triệu lượt xem, MV 200 nghìn.]
     { ddt_do_chuan >= 70:
         _{giam_doc} nhìn tờ giấy vẽ tay, nét bút bi run run, rất lâu. Rồi quay sang {quan_ly_idol}._
         giam_doc: {quan_ly_idol}. Từ mai, lịch của {sieu_nhan_hong} là đi giúp người thật. Quay thật. Không kịch bản.
         quan_ly_idol: Chuyện này để anh lo. Mà… cảm ơn ông, {dan_dau_tu}. Ông thấy cái mà cả công ty không thấy.
         ~ ddt_thuyet_phuc_21 = true
-        ~ follow(50000)
+        ~ follow(40000)
         ~ uy_tin = uy_tin + 15
         ~ qh("giam_doc", 10)
         ~ qh("quan_ly_idol", 15)
@@ -37,7 +37,7 @@ giam_doc: {dan_dau_tu}, em nói khán giả thích Siêu Nhân Hồng đi… gi�
     _Bạn nói. 40 phút. {giam_doc} ghi chép. Lần đầu tiên, {giam_doc} ghi chép lời nhân viên._
     ~ ddt_nhanh_trang_47 = true
     ~ ddt_thuyet_phuc_21 = true
-    ~ follow(60000)
+    ~ follow(50000)
     ~ uy_tin = uy_tin + 20
     ~ qh("giam_doc", 15)
     ~ qh("quan_ly_idol", 10)
@@ -117,12 +117,12 @@ _Hôm nay bạn đã không mở nó lần nào. Lần đầu tiên trong một 
 - -> END
 
 // ------------------------------------------------------------
-=== dan_dau_tu_2310_kevin_tron ===
-# ngay:23 # gio:17:00 # noi:studio # bat_buoc
-_Sinh nhật {sieu_nhan_hong}, kiêm livestream. Một vấn đề: kịch bản có đoạn "Mr. Kevin Trộn, chủ tịch BTT Global" lên sóng chúc mừng. Mr. Kevin Trộn không tồn tại._
+=== dan_dau_tu_2210_kevin_tron ===
+# ngay:22 # gio:19:30 # noi:ban_so_lieu # bat_buoc
+_Tối 22. Mai là sinh nhật {sieu_nhan_hong}, kiêm livestream. Một vấn đề: {giam_doc} muốn "Mr. Kevin Trộn, chủ tịch BTT Global" lên sóng chúc mừng. Mr. Kevin Trộn không tồn tại._
 sales: *(kéo bạn vào góc)* Anh {dan_dau_tu}! Anh 37 tuổi, mặt nhìn… rất giống chủ tịch tập đoàn bánh tráng trộn. Anh đóng giùm em 2 phút thôi!
 * [🕶️ Đeo kính đen, mặc vest mượn, lên sóng.]
-    _Bạn lên sóng, nói giọng lơ lớ: "Hello Pink Hero, happy birthday, BTT Global love you." Bình luận: "Ông này nhìn quen quen", "Giống ông bán coin trên mạng"._
+    _Tối hôm sau, bạn lên sóng, nói giọng lơ lớ: "Hello Pink Hero, happy birthday, BTT Global love you." Bình luận: "Ông này nhìn quen quen", "Giống ông bán coin trên mạng"._
     ~ qh("sales", 15)
     ~ follow(5000)
     { ddt_mua_hong or ddt_mua_sau_18:
@@ -131,7 +131,7 @@ sales: *(kéo bạn vào góc)* Anh {dan_dau_tu}! Anh 37 tuổi, mặt nhìn… 
     }
 * [😇 "Không. Anh hết đóng vai rồi. Em nhờ Bác {bac_bao_ve} đi."]
     sales: Bác {bac_bao_ve}? Bác chịu hả?
-    _Bác {bac_bao_ve} chịu. Bác đeo kính đen, ngồi trước camera đúng 10 giây._
+    _Bác {bac_bao_ve} chịu. Tối hôm sau, bác đeo kính đen, ngồi trước camera đúng 10 giây._
     bac_bao_ve: Chúc mừng sinh nhật cháu. Thế thôi.
     _Bình luận: "Ông chủ tịch này ngầu quá", "Kiệm lời mà sang". {sales} thở phào. Bạn thì thấy nhẹ cả người vì đã nói "không"._
     ~ qh("sales", 5)
@@ -139,18 +139,18 @@ sales: *(kéo bạn vào góc)* Anh {dan_dau_tu}! Anh 37 tuổi, mặt nhìn… 
     ~ ddt_dc(3)
 * [🤝 "Kêu {thuc_tap_sinh}. {thuc_tap_sinh} nói tiếng Anh giỏi."]
     thuc_tap_sinh: Dạ em á? Dạ… "Good evening, Pink Hero." Em hồi trước hay… tiếp khách nước ngoài ạ.
-    _{thuc_tap_sinh} đóng Mr. Kevin Trộn hoàn hảo tới mức {sales} suýt tin là thật._
+    _Tối hôm sau, {thuc_tap_sinh} đóng Mr. Kevin Trộn hoàn hảo tới mức {sales} suýt tin là thật._
     ~ qh("thuc_tap_sinh", 5)
     ~ qh("sales", 10)
 - -> END
 
 // ------------------------------------------------------------
 === dan_dau_tu_2310_livestream ===
-# ngay:23 # gio:19:30 # noi:studio # bat_buoc
-_Livestream sinh nhật. 12.000 người xem. Bạn ngồi sau camera, mở bảng lượt xem theo từng giây._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ. Studio tầng 2. Livestream sinh nhật. 12.000 người xem. Bạn ngồi sau camera, mở bảng lượt xem theo từng giây._
 { ddt_thuyet_phuc_21:
     _Theo đề xuất của bạn, nửa đầu buổi livestream là clip {sieu_nhan_hong} cả tuần qua đi giúp người thật: sửa mái nhà, dắt chó lạc về, đẩy xe trong mưa. Đường lượt xem dựng đứng._
-    ~ follow(60000)
+    ~ follow(30000)
 }
 _Giữa buổi, {sieu_nhan_hong} đọc bình luận, rồi khựng lại._
 sieu_nhan_hong: Ủa… có đồng tiền tên em hả? "Hồng Coin"? Ai làm vậy? Sao lại lấy tên em?
@@ -171,13 +171,12 @@ sieu_nhan_hong: Ủa… có đồng tiền tên em hả? "Hồng Coin"? Ai làm 
     ~ follow(-5000)
 - _Rồi {sieu_nhan_hong} nhìn thẳng vào camera: "{chua_te_deadline} ơi… em thích anh. Không phải PR đâu." Bảng lượt xem của bạn nổ tung._
 _Ngay sau đó, {cho} lao vào bánh kem hồng. Bánh đổ. Nhưng \#VũƠiTrảLờiĐi đã lên xu hướng._
-~ follow(30000)
 -> END
 
 // ------------------------------------------------------------
 === dan_dau_tu_2410_ban_chu_no ===
-# ngay:24 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
-_Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai}. Các cặp ngồi đối diện nhau. Bạn được xếp riêng một bàn tròn có bảng tên: "BÀN CHỦ NỢ"._
+# ngay:24 # gio:15:30 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai} bắt đầu từ 14 giờ. Các cặp ngồi đối diện nhau. Bạn được xếp riêng một bàn tròn có bảng tên: "BÀN CHỦ NỢ"._
 _Quanh bàn: {sales}, {it}, Bác {bac_bao_ve}, {con_ong_chau_cha}, {thanh_xin_nghi}, {thuc_tap_sinh}, {bien_kich}, {idol_het_thoi}. Tám người. Tám ly trà._
 chi_dai: Rồi. Hôm nay hòa giải. Anh {dan_dau_tu}, mời anh trình bày. Ai ngắt lời thì ra ngoài.
 * [📊 Chiếu bảng "Lộ trình trả nợ": mỗi tháng trả mỗi người một phần, ưu tiên Bác {bac_bao_ve} trước.]
@@ -261,7 +260,7 @@ hr: Anh {dan_dau_tu} ơi, em chỉ muốn cùng anh nhìn lại hành trình th�
 
 // ------------------------------------------------------------
 === dan_dau_tu_2610_chieu_thu_phim ===
-# ngay:26 # gio:15:00 # noi:phong_hop_tang_2
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2
 _Chiếu thử phim ngắn "Người Hùng Không Tên". Cảnh người mặc đồ hồng đẩy chiếc xe chết máy trong mưa. Bên cạnh bạn, {thuc_tap_sinh} nắm chặt tay vịn ghế._
 _Bạn nhớ: ngày 2/10, {thuc_tap_sinh} đã kể ý tưởng này trong cuộc họp chiến dịch. Bạn có ghi biên bản._
 * [📄 Mở biên bản họp 2/10 trên điện thoại, đưa cho {thuc_tap_sinh} xem.]
@@ -279,7 +278,7 @@ _Bạn nhớ: ngày 2/10, {thuc_tap_sinh} đã kể ý tưởng này trong cuộ
 // ------------------------------------------------------------
 === dan_dau_tu_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:11:00 # noi:ban_so_lieu # bat_buoc
-_Sáng 27. Cả công ty xôn xao: LL-Entertainment gửi hợp đồng cho {sieu_nhan_hong}, giá gấp ba. Lưu Lực tới tận cổng, thấy {chi_dai} thì làm rơi tập hồ sơ._
+_11 giờ sáng 27. Cả công ty xôn xao: nghe nói LL-Entertainment sắp mời {sieu_nhan_hong} giá gấp ba, chiều nay Lưu Lực tới tận nơi._
 _Giữa lúc đó, {sales} chạy vào, mặt đỏ bừng._
 sales: Mọi người! "Sữa Chua Hồng Hào" ở Ven Đô gọi! Họ muốn tài trợ 1 tỷ! Thật đó! Lần này em không nói phét!
 _Không ai tin. {hong_hot} cười. {ke_toan} không ngẩng đầu. {sales} nhìn quanh, rồi nhìn bạn._

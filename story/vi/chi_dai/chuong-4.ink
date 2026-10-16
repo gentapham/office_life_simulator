@@ -74,9 +74,9 @@ _{sieu_nhan_hong} đi thẳng xuống biển. Vẫn cười._
 
 // ------------------------------------------------------------
 === chi_dai_1710_danh_sach_cat_giam ===
-# ngay:17 # gio:21:00 # noi:quan_nhau_vung_tau # bat_buoc
-_Bàn nhậu ven biển. Ghẹ, mực, bia. {sales} đã say, đứng lên ghế tuyên bố:_
-sales: Tin chị đi! Đại Nhạc Hội, chị mời ca sĩ nổi tiếng nhất nước về hát! No cap!
+# ngay:17 # gio:18:30 # noi:quan_hai_san_vung_tau # bat_buoc
+_Quán hải sản Sóng Vỗ, sát biển. Ghẹ, mực, bia, một con tôm hùm {dan_dau_tu} bao bằng tiền coin. {sales} đã say, đứng lên ghế tuyên bố:_
+sales: Tin chị đi! Đại Nhạc Hội, chị mời ca sĩ nổi tiếng nhất nước về hát! Chị gọi một cuộc là tới!
 _Cả bàn vỗ tay. Không ai hỏi ca sĩ nào._
 _{giam_doc} cũng say. Anh cầm ly bia, đứng dậy, mắt long lanh:_
 giam_doc: Các em! Anh hứa! Tháng sau… tăng lương cả công ty! Anh nói là làm!
@@ -128,8 +128,8 @@ hr: Anh không định điền ai hết. Sếp bắt 7 tên trước 26/10. Anh 
 
 // ------------------------------------------------------------
 === chi_dai_1710_lua_trai ===
-# ngay:17 # gio:22:30 # noi:bai_bien_vung_tau # bat_buoc
-_Lửa trại. Cả công ty ngồi thành vòng tròn. Trò "nói thật". Chai nước suối quay, đầu chai chỉ vào ai, người đó trả lời một câu hỏi._
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc
+_20 giờ. Lửa trại. Cả công ty ngồi thành vòng tròn. Trò "nói thật". Chai nước suối quay, đầu chai chỉ vào ai, người đó trả lời một câu hỏi._
 _Chai chỉ vào {sieu_nhan_hong}. Câu hỏi: "Chuyện xấu nhất anh từng làm?"_
 sieu_nhan_hong: *(im một lúc)* Hồi nhỏ… tui nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi chiều. Tui không nhớ tên nó. Tui chỉ nhớ cái lỗ thông gió hình con cá.
 _Cả vòng tròn im lặng. Bên kia đống lửa, {ran_doc} ngồi bất động, mặt sáng đỏ trong ánh lửa._
@@ -157,6 +157,17 @@ hong_hot: Chị {chi_dai}! Vụ tô ốc ở Quán Ốc Đêm năm đó có th�
     ~ cd_hoi_bac_binh = true
     ~ cd_uy(8)
     ~ qh("bac_bao_ve", 5)
+- _Lửa nhỏ dần. {thanh_xin_nghi} ngồi ôm gối, lẩm nhẩm theo tiếng sóng một giai điệu mà ai nghe cũng thấy hay hơn cần thiết._
+* [🎤 "{thanh_xin_nghi}. Hát một bài coi. Chị nghe em ngân nãy giờ rồi."]
+    thanh_xin_nghi: Dạ… em… em hát dở lắm chị.
+    chi_dai: Dở thì chị chịu. Hát.
+    _{thanh_xin_nghi} hát. Cả vòng lửa im phăng phắc. Hết bài, bạn là người vỗ tay đầu tiên. Lâu lắm rồi không ai dám hỏi {thanh_xin_nghi} học hát ở đâu._
+    ~ phat_hien(son_thi_hat)
+    ~ qh("thanh_xin_nghi", 10)
+    ~ cd_bao_ke(de_thanh_xin_nghi)
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
+* [😶 Để thằng nhỏ yên. Ai cũng cần một góc riêng.]
+    ~ cd_nk(-3)
 - _Gần nửa đêm. {idol_het_thoi} ngủ gục lên vai {quan_ly_idol}. {quan_ly_idol} ngồi im, không dám cử động. {editor} lặng lẽ đắp một cái chăn lên cả hai, rồi đi ra biển một mình._
 _{sieu_nhan_hong} nóng quá, tháo mũ ra lau mồ hôi. Đúng lúc đó, bạn thấy đèn livestream của {hong_hot} đang đỏ, chĩa thẳng về phía này._
 _Ba giây. Chỉ có ba giây._ # hen_gio:3
@@ -179,9 +190,9 @@ _Ba giây. Chỉ có ba giây._ # hen_gio:3
 
 // ------------------------------------------------------------
 === chi_dai_1810_ve_thanh_pho ===
-# ngay:18 # gio:15:00 # noi:xe_vung_tau
-_Xe về. Không ai nói chuyện với ai._
-_{dan_dau_tu} ngồi ôm điện thoại, mặt xám như tro: Hồng Coin về 0. Người tạo ôm tiền biến mất. Hôm qua anh còn bao cả team ăn hải sản._
+# ngay:18 # gio:12:30 # noi:xe_vung_tau
+_Xe về. 15 giờ mới tới công ty. Không ai nói chuyện với ai._
+_{dan_dau_tu} ngồi ôm điện thoại, mặt xám như tro: 10 giờ 15 sáng nay, Hồng Coin về 0. Người tạo ôm tiền biến mất. Hôm qua anh còn bao cả team ăn hải sản._
 _{con_ong_chau_cha} nhìn chằm chằm một tin rao bán: "Penthouse Sky Ảo, tầng 30, giá thương lượng". Penthouse anh đang ở._
 _Còn bạn, bạn chỉ giận một người. {hr} ngồi ghế đầu, đeo kính râm, không quay lại._
 * [🗣️ Đi lên ghế đầu, ngồi xuống cạnh {hr}: "Nói chuyện tiếp đi."]
@@ -404,28 +415,27 @@ bac_bao_ve: Cái này… bác chỉ là người giữ. Người quyết là ôn
 _Liên hoan sinh nhật công ty ở Quán Ốc Đêm. Bạn chọn chỗ này vì rẻ, vì gần, và vì… bạn chưa quay lại đây từ năm 20 tuổi._
 _Chủ quán nhìn thấy bạn, đánh rơi cái vá. Rồi tự động mang ra một đĩa ốc len xào dừa: "Quán mời. Lâu quá rồi."_
 _Bàn dài 23 chỗ. Một cái bánh kem sinh nhật 16 nến. {cho} được Bác {bac_bao_ve} dắt theo, buộc ở gốc cây, cách bánh đúng 5 mét._
+{
+- cd_khuyen_doc_thu == "doc":
+    _Bác {bac_bao_ve} đứng dậy, gõ đũa vào ly trà. Cả quán ốc im bặt. Bác đeo kính lão, mở lá thư._
+    bac_bao_ve: Mười sáu năm rồi. Các cháu còn đứng đó là anh vui.
+    bac_bao_ve: Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có.
+    bac_bao_ve: Ký tên: G. *(gấp thư)* Thế thôi. Bác đọc xong rồi.
+    _Im lặng ba giây. Rồi {thuc_tap_sinh} vỗ tay. Rồi cả quán vỗ tay. {giam_doc} cúi đầu, lấy khăn giấy lau mắt, nói là "do ớt"._
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 15
+    ~ cd_nk(-15)
+    ~ qh("bac_bao_ve", 10)
+- cd_khuyen_doc_thu == "thang":
+    _Giữa bữa, Bác {bac_bao_ve} lặng lẽ đặt lá thư cạnh chén nước chấm của {giam_doc}. Sếp đọc xong, gấp lại, rồi bỏ ra ngoài đứng hút gió một mình rất lâu._
+- else:
+    _Bác {bac_bao_ve} ngồi cuối bàn, tay để trên túi áo trong. Lá thư vẫn nằm đó cả buổi._
+}
 -> chi_dai_mg_lien_hoan_mo_dau
 
 // ------------------------------------------------------------
-=== chi_dai_2010_doc_thu ===
-# ngay:20 # gio:20:00 # noi:quan_oc_dem # dieu_kien:cd_khuyen_doc_thu_doc
-{ cd_khuyen_doc_thu != "doc":
-    -> END
-}
-_Bác {bac_bao_ve} đứng dậy, gõ đũa vào ly trà. Cả quán ốc im bặt. Bác đeo kính lão, mở lá thư._
-bac_bao_ve: Mười sáu năm rồi. Các cháu còn đứng đó là anh vui.
-bac_bao_ve: Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có.
-bac_bao_ve: Ký tên: G. *(gấp thư)* Thế thôi. Bác đọc xong rồi.
-_Im lặng ba giây. Rồi {thuc_tap_sinh} vỗ tay. Rồi cả quán vỗ tay. {giam_doc} cúi đầu, lấy khăn giấy lau mắt, nói là "do ớt"._
-~ tinh_than_cong_ty = tinh_than_cong_ty + 15
-~ cd_nk(-15)
-~ qh("bac_bao_ve", 10)
--> END
-
-// ------------------------------------------------------------
 === chi_dai_2010_karaoke ===
-# ngay:20 # gio:22:00 # noi:karaoke_hat_cho_nhau_nghe
-_Tăng hai. Karaoke Hát Cho Nhau Nghe. Phòng VIP 2, sức chứa 15 người, đang chứa 21._
+# ngay:20 # gio:21:00 # noi:karaoke
+_21 giờ. Tăng hai. Karaoke Chú Sáu. Phòng VIP 2, sức chứa 15 người, đang chứa 21._
 _{idol_het_thoi} hát "Công Viên" lần thứ ba. {giam_doc} đã say, cầm micro đứng lên bàn:_
 giam_doc: Các em! Năm nay sinh nhật 16 tuổi! Anh hứa… nếu Đại Nhạc Hội thành công, tăng lương 20%! Cả công ty!
 _Cả phòng gào lên. {hong_hot} bấm quay._
@@ -445,7 +455,7 @@ _Cả phòng gào lên. {hong_hot} bấm quay._
     }
     ~ cd_uy(3)
 * [🎤 Giành micro hát một bài bolero, đổi không khí.]
-    _Bạn hát "Đêm buồn tỉnh lẻ". Cả phòng im lặng nghe. Chị Đại hát bolero hay một cách vô lý._
+    _Bạn hát một bài bolero buồn thiu về chuyến xe đêm. Cả phòng im lặng nghe. Chị Đại hát bolero hay một cách vô lý._
     ~ cd_nk(-10)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
 - _1 giờ sáng. Bạn gọi taxi cho từng người. Người cuối cùng là {giam_doc}. Bạn đọc địa chỉ "Biệt thự số 1, Đồi Ngân Hàng" cho tài xế, rồi đứng nhìn chiếc xe đi khuất._

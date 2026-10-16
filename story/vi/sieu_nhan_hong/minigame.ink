@@ -20,13 +20,13 @@ designer: Sẵn sàng chưa anh? Kiểu 1: "Siêu nhân nhìn về tương lai".
 designer: *(nhìn màn hình, im lặng 5 giây)* …Không cần sửa. Lần đầu tiên trong năm em không phải sửa.
 ~ snh_cat_xe(300000)
 ~ an(15)
-~ follow(RANDOM(5000, 15000))
+~ follow(RANDOM(2000, 7000))
 ~ qh("designer", 10)
 _Điều khoản số 4: một đĩa bánh chuối chiên còn nóng chờ sẵn trong phòng chờ. 300.000đ cát-xê vào Ví Cát-xê. Tiền sạch, ai cũng thấy._
 { RANDOM(1, 4) == 1:
     _Kiểu thứ 10, {cho} đi ngang khung hình đúng lúc bấm máy. {designer} định xóa, rồi dừng lại._
     designer: Khoan… tấm này đẹp. Siêu nhân và chó. Để làm poster phụ.
-    ~ snh_meme(5000)
+    ~ snh_meme(2000)
 }
 -> END
 
@@ -39,7 +39,7 @@ designer: Hết cứu. *(ôm đầu)* Mai chụp lại. Lần thứ 2. Em đếm
 ~ cang_thang(10)
 ~ qh("designer", -3)
 _Nhưng {hong_hot} quay được cảnh siêu nhân bị chó kéo áo choàng. Clip lên Tóp-tóp tối đó._
-~ snh_meme(15000)
+~ snh_meme(7000)
 -> END
 
 // ------------------------------------------------------------
@@ -59,14 +59,14 @@ _Đơn chạy liên tục. {sales} nhảy lên ghế: "Tin chị đi, kỷ lục
 ~ nhan(nuoc_tang_luc)
 ~ uong(15)
 ~ nghi(20)
-~ follow(15000)
+~ follow(7000)
 ~ qh("sales", 10)
 _Một bình luận nổi lên: "Lộ mặt đi anh ơi"._
 * [🦸 "Mặt anh là thái độ! Mua Hồng Hào là thấy mặt anh trong gương!"]
-    ~ follow(5000)
+    ~ follow(2000)
     _Câu trả lời thành meme dễ thương. Đơn chạy thêm._
 * [🙂 "Mặt anh bình thường lắm. Mấy em xem anh vì mấy việc anh làm được hông?"]
-    ~ follow(3000)
+    ~ follow(1000)
     ~ snh_no(-1)
     _Bình luận im một nhịp. Rồi: "Được anh ơi". Rồi một chuỗi trái tim._
 - _Hết buổi, {sales} đưa bạn một thùng nước tăng lực mẫu, kèm hóa đơn hoa hồng. {ke_toan} nhìn hóa đơn, gật đầu. Lần đầu tiên chị gật đầu với hóa đơn của {sales}._
@@ -81,7 +81,7 @@ chua_te_deadline: *(ở góc phòng, giấu điện thoại)* …Không phải e
 ~ cang_thang(10)
 ~ qh("sales", -3)
 _Ảnh chụp màn hình siêu nhân há miệng, chú thích "Hào Hồng", thành meme._
-~ snh_meme(10000)
+~ snh_meme(4000)
 -> END
 
 // ------------------------------------------------------------
@@ -96,10 +96,9 @@ sieu_nhan_hong: *(hát)* Ngày xưa có đôi bạn thân… bán… khoai chiê
 _Trường quay cười ồ. Bạn hát sai lời._
 { qh_idol_het_thoi >= 10:
     _Từ cánh gà, một giọng hát bè cất lên, sửa lại cho đúng: "…cá viên chiên tại công viên…". {idol_het_thoi}. Trường quay vỗ tay rần rần._
-    ~ follow(20000)
+    ~ follow(9000)
     ~ qh("idol_het_thoi", 10)
 }
-~ follow(80000)
 -> END
 
 === sieu_nhan_hong_mg_gameshow_thang ===
@@ -107,37 +106,45 @@ _Trường quay cười ồ. Bạn hát sai lời._
 mc_tivi_hong: Xuất sắc! Siêu Nhân Hồng vượt qua vòng 1 và vòng 2! Một giỏ quà từ nhà tài trợ!
 ~ nhan(nuoc_tang_luc)
 ~ an(15)
-~ follow(10000)
+~ follow(4000)
 -> sieu_nhan_hong_mg_gameshow_cau_cuoi
 
 === sieu_nhan_hong_mg_gameshow_thua ===
 # minigame:gameshow # ket_qua:thua
 _Vòng 2. Bộ đồ hồng mắc vào chướng ngại vật số 3. Bạn treo lơ lửng trên cái xà như một cái lồng đèn._
 mc_tivi_hong: Ối! Siêu Nhân Hồng… bị treo! Quý vị cho một tràng pháo tay!
-~ snh_meme(25000)
+~ snh_meme(11000)
 ~ cang_thang(10)
 -> sieu_nhan_hong_mg_gameshow_cau_cuoi
 
 === sieu_nhan_hong_mg_gameshow_cau_cuoi ===
+{ snh_han_cua_hieu >= 70:
+    _Trước câu cuối, MC nhìn tấm thẻ trong tay, khựng lại nửa giây, rồi đọc một câu không có trong kịch bản._
+    mc_tivi_hong: Câu hỏi từ khán giả: "Hồi nhỏ anh từng bắt nạt ai chưa?"
+    _Bạn đứng im ba giây. Trường quay im theo. Không ai biết tấm thẻ đã bị ai tráo. Tối đó, khi chương trình phát sóng, hashtag #XinLỗiNhàKho lên xu hướng._
+    ~ snh_no(5)
+    ~ snh_meme(4000)
+    mc_tivi_hong: …À, ban tổ chức xin đọc lại câu cuối chính thức!
+}
 mc_tivi_hong: Câu hỏi cuối cùng, trị giá 10 triệu đồng! Siêu Nhân Hồng ơi, khán giả muốn biết: anh có dám tháo mũ ngay tại đây không?
 _Khán giả trường quay đếm ngược: 5… 4…_ # hen_gio:5
 * [🦸 Tạo dáng: "Hồng không phải màu, Hồng là thái độ! Mà thái độ của anh là… để dành!"]
     mc_tivi_hong: Ôi, khéo quá! Nhưng không có 10 triệu nha anh!
-    ~ follow(20000)
+    ~ follow(9000)
 * [🙂 Đưa tay lên mũ, kéo lên tới cằm, rồi dừng.]
     ~ snh_mat(25)
-    ~ follow(50000)
+    ~ follow(22000)
     ~ snh_thuong_gameshow = true
     mc_tivi_hong: Gần như tháo rồi! Ban giám khảo… tính! 10 triệu là của anh!
     _Đêm đó, ảnh cái cằm của bạn được phóng to trên khắp mạng xã hội. Người ta đoán đủ kiểu._
 * [🆘 "Khoan! Ngoài kia có người cần giúp!" *(chạy khỏi trường quay)*]
     { RANDOM(1, 10) <= 3:
         _Ngoài cổng đài có thật một chiếc xe chết máy. Bạn đẩy nó giữa ánh đèn camera của cả đoàn quay._
-        ~ follow(40000)
+        ~ follow(18000)
         ~ snh_giup_nguoi()
     - else:
         _Ngoài cổng không có ai. Bên trong, MC đứng một mình trên sân khấu, cười gượng 30 giây._
-        ~ snh_meme(10000)
+        ~ snh_meme(4000)
     }
 * [⏱️ (Không chọn kịp)]
     mc_tivi_hong: Vậy là anh chọn im lặng! Không có tiền thưởng!
@@ -163,7 +170,7 @@ _Một chú xe ôm đẩy xe xong, dúi vào tay bạn ổ bánh mì. Một bà 
 ~ cang_thang(-10)
 { RANDOM(1, 10) <= 3:
     _Có người quay lại. Tối đó, clip "Siêu nhân gỡ diều cho con nít" lên xu hướng._
-    ~ follow(RANDOM(20000, 50000))
+    ~ follow(RANDOM(9000, 22000))
 - else:
     _Không ai quay. Không ai biết. Chỉ có đứa nhỏ cầm con diều vẫy tay chào tới khi bạn khuất ở cuối đường._
 }
@@ -195,7 +202,7 @@ hong_hot: Ối dồi ôi! Chuẩn từng nhịp! Đăng liền!
 ~ nhan(tra_sua)
 ~ uong(30)
 ~ snh_cat_xe(200000)
-~ follow(10000)
+~ follow(4000)
 ~ qh("hong_hot", 10)
 _{hong_hot} đãi bạn ly trà sữa dâu. Clip "Siêu nhân nhảy trend" có 200.000 lượt xem trước giờ ăn tối. Phần lớn bình luận: "Slay!"._
 -> END
@@ -206,7 +213,7 @@ _Nhịp "xoay". Áo choàng quấn vào chân. Bạn xoay thêm nửa vòng rồ
 hong_hot: Trời đất ơi! Anh có sao hông?! *(nhưng vẫn quay)*
 ~ nghi(-10)
 ~ uong(10)
-~ snh_meme(25000)
+~ snh_meme(11000)
 _Clip "Siêu nhân cắm đầu vào thùng nước" lên xu hướng hạng 4. Người theo dõi tăng vọt. Mà toàn người theo dõi để… chờ bạn té tiếp._
 -> END
 
@@ -224,7 +231,7 @@ _Quà Cho {chua_te_deadline}. Chọn quà, chọn lúc tặng. Đừng tặng l�
     ~ snh_mg_qua_dat_tien = false
 * [⌚ Đồng hồ hồng mạ vàng, đặt từ nước ngoài.]
     ~ snh_mg_qua_dat_tien = true
-    ~ snh_ket(15)
+    ~ snh_ket(9)
 - _Ở bàn bên, {hong_hot} đang cầm điện thoại. Không biết có đang quay không._
 * [😶 Đợi {hong_hot} đi khỏi rồi mới tặng.]
     ~ snh_mg_qua_co_camera = false
@@ -237,7 +244,7 @@ _Quà Cho {chua_te_deadline}. Chọn quà, chọn lúc tặng. Đừng tặng l�
 { snh_mg_qua_co_camera:
     ~ snh_qua_truoc_camera = true
     ~ snh_tim(3)
-    ~ follow(5000)
+    ~ follow(2000)
     chua_te_deadline: *(nhìn {hong_hot} đang quay, rồi nhìn món quà)* À… PR hả anh? Ok, em cười nè. *(cười vào máy)*
     _Clip được 5.000 lượt thích. Cậu ta để món quà trên bàn, chưa mở._
 - else:
@@ -245,7 +252,7 @@ _Quà Cho {chua_te_deadline}. Chọn quà, chọn lúc tặng. Đừng tặng l�
         chua_te_deadline: *(mở hộp, đứng hình)* Anh… cái này bao nhiêu tiền vậy? Em… em hông nhận được đâu.
         ~ snh_tim(5)
         _Cậu ta trả lại, lịch sự. Nhưng tối đó bạn thấy cậu ta lên mạng tra giá cái đồng hồ. Rồi tra "Siêu Nhân Hồng giàu cỡ nào"._
-        ~ snh_tien(5)
+        ~ snh_tien(3)
     - else:
         ~ snh_tim(RANDOM(10, 15))
         chua_te_deadline: *(mở quà, nhìn rất lâu)* …Cảm ơn anh.
@@ -266,7 +273,7 @@ chua_te_deadline: Anh ơi… anh để đó đi. Nước tới chân rồi. Đ�
 { snh_mg_qua_co_camera:
     ~ snh_qua_truoc_camera = true
     _{hong_hot} quay được cảnh bạn bị đuổi khéo. Clip "Siêu nhân bị từ chối" có 10.000 lượt xem._
-    ~ snh_meme(10000)
+    ~ snh_meme(4000)
 }
 _Món quà nằm trên góc bàn tới tối. Sáng hôm sau, nó vẫn ở đó. Tới chiều thì biến mất. Không ai biết cậu ta mang về hay vứt._
 -> END

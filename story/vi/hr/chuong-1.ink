@@ -93,7 +93,7 @@ _Bút ký. 5 tỷ về tài khoản. Cả phòng hò reo. {hong_hot} đã livest
 
 // ------------------------------------------------------------
 === hr_0110_mung_bac_binh ===
-# ngay:1 # gio:12:00 # noi:chong_bao_ve # bat_buoc
+# ngay:1 # gio:12:00 # noi:choi_bao_ve # bat_buoc
 _Trưa. Cả công ty kéo nhau ra chòi bảo vệ với một ổ bánh bông lan và một tấm thiệp ghi "Mừng Ngày Người Cao Tuổi"._
 _{bac_bao_ve} đứng giữa, tay cầm ly trà đá, mặt đỏ như gấc. {cho} đội một cái nơ hồng ai đó đã kịp gắn lên đầu._
 chi_dai: {hr}! HR phát biểu đi chớ, đứng đó cười hoài.
@@ -127,7 +127,7 @@ giam_doc: {hr} đấy à. Ngồi đi em. Em uống gì? À, em mang trà theo r�
 _{giam_doc} đẩy qua bàn một tập hồ sơ. Màu hồng. Từ tháng 10, cái gì cũng phải hồng._
 _Trang bìa: "PHƯƠNG ÁN TÁI CẤU TRÚC NHÂN SỰ (NẾU CHIẾN DỊCH THẤT BẠI)"._
 giam_doc: Cái này chỉ là phương án dự phòng thôi. Anh tin Siêu Nhân Hồng. Nhưng 26/10 em cho anh 7 cái tên. Anh không ép, tùy em.
-_Bên trong chỉ có đúng 1 trang. 21 cái tên, không kể {giam_doc}. Tên bạn không có trong đó._
+_Bên trong chỉ có đúng 1 trang. 20 cái tên, không kể {giam_doc}, không kể bạn._
 * [☕ "Dạ sếp. Mình cùng nhìn lại hành trình của từng bạn rồi em gửi anh."]
     giam_doc: Tốt! Em hiểu anh nhất. Mindset của HR là phải thế.
     ~ qh("giam_doc", 5)
@@ -162,7 +162,7 @@ _Bạn ôm tập hồ sơ hồng ra khỏi phòng kính. Ở bàn trợ lý, {th
 === hr_0110_dem_604 ===
 # ngay:1 # gio:22:00 # noi:can_ho_604
 _Căn 604. Kệ trà 40 loại sắp theo bảng chữ cái, từ Atiso tới trà Zzz. Bạn ngồi trước laptop, tách trà hoa cúc nguội từ lúc nào._
-_Điện thoại rung. Group Zalo-lô công ty. {giam_doc}: "Hôm nay là ngày lịch sử. Mai 8h30 họp chiến dịch nhé cả nhà. Anh không ép."_
+_Điện thoại rung. Group Zalo-lô công ty. {giam_doc}: "Hôm nay là ngày lịch sử. Mai 9h30 họp chiến dịch nhé cả nhà. Anh không ép."_
 _14 người "đã xem". 0 người trả lời._
 * [💬 Trả lời: "Dạ, cả nhà nghỉ ngơi sớm nha 😊"]
     ~ hr_so(3)
@@ -284,7 +284,7 @@ chi_dai: {hr}, mai Ngày Động vật, tui tắm cho {cho}. Ông qua phụ hôn
 * [😶 "Mai tui bận… việc riêng."]
     chi_dai: Việc riêng gì? Ông mà có việc riêng thì tui là hoa hậu. Thôi tùy ông.
     _"Việc riêng" là tập hồ sơ hồng. Nhưng bạn không nói được._
-* [💬 "Hương, hỏi thiệt, bà có sợ tui hông?"]
+* [💬 "{chi_dai}, hỏi thiệt, bà có sợ tui hông?"]
     chi_dai: Sợ ông? *(cười khẩy)* Ông cười nữa là tui đấm à nha. Tui chỉ sợ ông cô đơn quá rồi hóa điên thôi.
     ~ hr_nghe(3)
     ~ qh("chi_dai", 3)

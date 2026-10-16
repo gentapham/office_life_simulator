@@ -3,7 +3,7 @@
 // ---------- 4 chỉ số riêng ----------
 VAR snh_lo_mat = 0          // 🎭 Độ Lộ Mặt (0..100). Đầy 100: mặt thật bị lộ
 VAR snh_lo_tien = 10        // 💸 Độ Lộ Tiền (0..100). Đầy 100: kết thúc "Cây ATM Hồng"
-VAR snh_tim_hong = 10       // 💗 Tim Hồng: Vũ hiểu lòng Nguyên tới đâu (0..100)
+VAR snh_tim_hong = 10       // 💗 Tim Hồng: Vũ quý Nguyên tới đâu (0..100). Vũ chỉ coi Nguyên là bạn, mọi cử chỉ vẫn là PR
 VAR snh_no_xom_cu = 70      // 🩹 Món Nợ Xóm Cũ (0..100)
 
 // ---------- Hai cái ví ----------
@@ -51,6 +51,12 @@ VAR snh_tra_luong_ho = false
 VAR snh_thuong_gameshow = false     // 16/10: giành được 10 triệu tiền thưởng
 VAR snh_xin_cho = ""                // 30/10: người Nguyên đứng ra xin cho
 VAR snh_thao_mu_dem_hong_truoc = "" // 31/10: tháo mũ trước ai ("vu", "hieu", "khan_gia")
+
+// ---------- Mai (quán Chè Bà Bảy, đầu Hẻm 69) ----------
+VAR snh_mai = 0                     // Mai nhìn thấy Nguyễn Nguyên tới đâu (0..10). Không phải Siêu Nhân Hồng, là Nguyên
+VAR snh_mai_nhan_ra = false         // 6/10: Mai nhận ra giọng anh khách ăn chè khuya trong bộ đồ hồng
+VAR snh_vu_noi_pr = false           // 23/10: Vũ trả lời màn tỏ tình bằng "Ý tưởng PR hay đó anh"
+VAR snh_quy_vu_san_khau = false     // 31/10: định quỳ tặng hoa Vũ trên sân khấu
 
 // ---------- Minigame ----------
 VAR snh_mg_qua_co_camera = false   // Quà Cho Vũ: lần này có camera gần đó
@@ -122,6 +128,13 @@ VAR snh_mg_qua_dat_tien = false    // Quà Cho Vũ: món quà quá đắt
     ~ return hien
 }
 ~ return snh_chuoi_khong_choc
+
+// Thêm một bước gần Mai
+=== function snh_gan_mai(n) ===
+~ snh_mai = snh_mai + n
+{ snh_mai > 10:
+    ~ snh_mai = 10
+}
 
 // Cho Tuất xúc xích
 === function snh_cho_xuc_xich() ===

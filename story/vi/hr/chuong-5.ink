@@ -9,7 +9,7 @@ _Sáng 21/10. Trang "Confession G-Entertainment" đăng một bài ẩn danh: "C
 _{giam_doc} gọi bạn lên, mặt xám ngoét: "Tìm cho anh admin trang đó. Tìm bằng được." Bạn xuống phòng server._
 _Phòng server lạnh như tủ đông. {it} ngồi giữa 3 màn hình, ly mì ăn dở._
 it: Biết anh xuống vì gì rồi. Restart chưa? À không, câu đó không dùng được ở đây.
-* [💬 "Bảo, anh biết admin là ai đúng hông?"]
+* [💬 "{it}, ông biết admin là ai đúng hông?"]
     it: *(nhìn màn hình, không nhìn bạn)* Lỗi người dùng.
     hr: Nghĩa là biết.
     it: Nghĩa là… người ta làm admin một trang thì đó là việc của người ta. Tui chỉ đọc log. Tui không đọc người.
@@ -81,8 +81,9 @@ giam_doc: Thêm tên vào đi em.
 // ------------------------------------------------------------
 === hr_2210_doan_thue ===
 # ngay:22 # gio:09:00 # noi:phong_ke_toan # bat_buoc
-_Đoàn kiểm tra thuế tới bất ngờ. Trưởng đoàn: Chú Liêm, 55 tuổi, cặp da đen, nhìn ai cũng như nhìn hóa đơn sai._
-phu_chu_liem: Cho xem toàn bộ hợp đồng lao động. 22 người, đúng không? Kèm bảng chấm công 3 tháng.
+_9 giờ đúng. Đoàn kiểm tra thuế. Trưởng đoàn: Chú Liêm, 55 tuổi, cặp da đen, nhìn ai cũng như nhìn hóa đơn sai._
+_Chú đòi bốn thứ: bản gốc giấy tờ thành lập (Bác {bac_bao_ve} đã chạy xe về nhà Ven Đô lấy), hợp đồng BTT Global ({sales} tái mặt), bằng chứng nghiệm thu dự án tháng 6 ({it} ôm ổ cứng lên), và nguồn gốc 5 tỷ ({ke_toan} lo). Còn một thứ thứ năm, phần của bạn._
+phu_chu_liem: Cho xem toàn bộ hợp đồng lao động. 21 nhân viên, đúng không? Kèm bảng chấm công 3 tháng.
 _Cả công ty giả vờ làm việc chăm chỉ. {chua_te_deadline} lần đầu tiên mở file Excel. {cho} bước vào phòng, vẫy đuôi._
 phu_chu_liem: *(nhảy lên ghế)* Ối! Chó! Ai cho chó vào đây?!
 * [🐕 Bế {cho} ra ngoài, nhờ {bac_bao_ve} giữ.]
@@ -110,7 +111,7 @@ phu_chu_liem: Nhân viên này… nghỉ 31 ngày trong 9 tháng, có giấy ph�
         ~ hr_them_ten_son = true
     }
     _Chú Liêm gật gù. Câu đó nghe như một lời chuẩn bị._
-- _Hai người làm tới 9 giờ tối. Đoàn thuế đi rồi, còn lại bạn và {ke_toan} giữa núi giấy._
+- _4 giờ chiều, đoàn thuế về. Bạn và {ke_toan} ở lại xếp núi giấy tới 9 giờ tối._
 ~ nghi(-30)
 -> END
 
@@ -141,8 +142,8 @@ _Im lặng. Tiếng mì. Bạn nghĩ tới bản nháp email trong laptop ở c�
 
 // ------------------------------------------------------------
 === hr_2310_an_ninh_banh_kem ===
-# ngay:23 # gio:14:00 # noi:san_khau_su_kien # bat_buoc
-_Sinh nhật Siêu Nhân Hồng, 31 tuổi. Sự kiện livestream. Nhiệm vụ của bạn: an ninh. Nói cho đúng: giữ {cho} tránh xa cái bánh kem hồng 5 tầng._
+# ngay:23 # gio:19:30 # noi:studio # bat_buoc
+_Sinh nhật Siêu Nhân Hồng, 31 tuổi. 20:00 livestream ở studio tầng 2. Nhiệm vụ của bạn từ giờ tới lúc đó: an ninh. Nói cho đúng: giữ {cho} tránh xa cái bánh kem hồng 5 tầng._
 _{cho} ngồi cách cái bánh 3 mét. Mắt không rời. Đuôi không vẫy. Đây là tư thế săn mồi._
 * [🌭 Dụ {cho} bằng xúc xích, dắt ra chòi bảo vệ.]
     ~ qh("cho", 5)
@@ -153,25 +154,14 @@ _{cho} ngồi cách cái bánh 3 mét. Mắt không rời. Đuôi không vẫy. 
 * [🙏 Nhờ {chi_dai} giữ. {cho} chỉ nghe lời bả.]
     ~ qh("chi_dai", 3)
     chi_dai: Được. Mà tui chỉ giữ được tới lúc tui đi lấy nước.
-- -> hr_2310_an_ninh_banh_kem.s_do
-
-= s_do
-_7 giờ tối. Livestream đông nghẹt. {sieu_nhan_hong} cúi xuống thổi nến. Một vệt vàng lao qua. Cái bánh 5 tầng đổ nghiêng như tháp Pisa, rồi đổ hẳn._
-_Kem hồng dính lên mặt {sieu_nhan_hong}, lên màn hình livestream, lên cà vạt {giam_doc}. {cho} đứng giữa đống kem, liếm mép, vẫy đuôi._
-sieu_nhan_hong: *(cười tới chảy nước mắt sau lớp mũ dính kem)* {cho}! Quà sinh nhật của anh hả!
-~ follow(60000)
-_Bình luận chạy như thác. Không ai giận. Clip "Chó phá bánh sinh nhật siêu nhân" đang chạy._
-* [😊 Cười to. Lần này không cần giữ.]
-    ~ hr_so(-5)
-    _Cả sân khấu cười. Bạn cười. Chẳng ai để ý HR đang cười, vì ai cũng đang cười._
-* [📓 Ghi sổ: "Sự cố an ninh: 1. Thủ phạm: 1 chó."]
-    _Bạn ghi xong, xé tờ giấy, bỏ túi. Có những vụ không ai nên bị ghi sổ._
-- -> END
+- _19:55. {cho} vẫn ngồi đâu đó trong studio. Bạn không chắc ở đâu._
+-> END
 
 // ------------------------------------------------------------
 === hr_2310_livestream ===
-# ngay:23 # gio:20:00 # noi:san_khau_su_kien
-_Livestream tiếp tục sau vụ bánh kem. {sales} hớt hải: "Mr. Kevin Trộn phải lên sóng chúc mừng mà ảnh… kẹt xe ở Singapore. Cần người đóng thế!"_
+# ngay:23 # gio:20:00 # noi:studio # bat_buoc
+~ temp kevin = RANDOM(1, 3)
+_20:00. Livestream bắt đầu. {sales} hớt hải: "Mr. Kevin Trộn phải lên sóng chúc mừng mà ảnh… kẹt xe ở Singapore. Cần người đóng thế!" Năm phút sau, Mr. Kevin Trộn lên sóng trong bộ vest mượn: {kevin == 1:{thuc_tap_sinh}|{kevin == 2:{dan_dau_tu}|Bác {bac_bao_ve}}}._
 _Bên cánh gà, ai đó đang ngân nga rất khẽ trong lúc dọn kem. Micro livestream bắt được. Bình luận: "Ai hát nền hay vậy?"_
 _Bạn đứng cứng người. Cái giọng đó. Bạn đã nghe nó hàng chục tối, qua cái tivi ở căn 604._
 * [🕵️ Bước ra sau cánh gà xem ai.]
@@ -195,18 +185,30 @@ _Bạn đứng cứng người. Cái giọng đó. Bạn đã nghe nó hàng ch�
     ~ cang_thang(-5)
 - _Rồi {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang đứng sau máy quay._
 sieu_nhan_hong: {chua_te_deadline} ơi… anh thích em. Không phải PR đâu. Thiệt đó.
-_Cả livestream nổ tung. Hashtag VũƠiTrảLờiĐi lên top xu hướng trong 10 phút. {chua_te_deadline} đứng đơ, tay vẫn bấm máy quay._
+_Cả livestream nổ tung. Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên top xu hướng trong 10 phút. {chua_te_deadline} đứng đơ, tay vẫn bấm máy quay, rồi nói: "Ý tưởng PR hay đó anh."_
 * [🤝 Lại gần {chua_te_deadline}, nói nhỏ: "Em không cần trả lời ngay. Mai lên phòng anh uống trà, nếu muốn."]
     ~ qh("chua_te_deadline", 8)
     ~ hr_nghe(5)
 * [😊 Vỗ tay theo đám đông.]
-    ~ follow(5000)
+    ~ hr_so(-2)
+- _{sieu_nhan_hong} cúi xuống thổi nến._
+{ RANDOM(1, 2) == 1:
+    _Một vệt vàng lao qua. Cái bánh kem hồng 5 tầng đổ nghiêng như tháp Pisa, rồi đổ hẳn. {cho} đứng giữa đống kem, liếm mép, vẫy đuôi._
+- else:
+    _{idol_het_thoi} đi ngang bàn bánh, vấp một cái rất chuyên nghiệp. Cái bánh kem hồng 5 tầng đổ hẳn. {idol_het_thoi} chỉ tay về phía {cho}. {cho} không nhận._
+}
+sieu_nhan_hong: *(cười tới chảy nước mắt sau lớp mũ dính kem)* Quà sinh nhật của anh hả!
+* [😊 Cười to. Lần này không cần giữ.]
+    ~ hr_so(-5)
+    _Cả studio cười. Bạn cười. Chẳng ai để ý HR đang cười, vì ai cũng đang cười._
+* [📓 Ghi sổ: "Sự cố an ninh: 1."]
+    _Bạn ghi xong, xé tờ giấy, bỏ túi. Có những vụ không ai nên bị ghi sổ._
 - -> END
 
 // ------------------------------------------------------------
 === hr_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:09:30 # noi:phong_hop_sang_tao # bat_buoc
-_Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai}. Bàn xếp theo cặp: {truong_phong}–{con_ong_chau_cha}, {designer}–{bien_kich}, {sales}–{ke_toan}, {chi_dai}–{thanh_ninh}, và bạn–{thanh_xin_nghi}. Bàn riêng góc phòng có bảng "Chủ nợ" cho {dan_dau_tu}._
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Liên Hợp Quốc. 14:00. "Hội nghị hòa giải" của {chi_dai}. Bàn xếp theo cặp: {truong_phong}–{con_ong_chau_cha}, {designer}–{bien_kich}, {sales}–{ke_toan}, {chi_dai}–{thanh_ninh}, và bạn–{thanh_xin_nghi}. Bàn riêng góc phòng có bảng "Chủ nợ" cho {dan_dau_tu}._
 _Tin đồn về danh sách cắt giảm đã lan cả tuần. Ai cũng biết. Không ai dám hỏi._
 _Rồi {chi_dai} đập bàn._
 chi_dai: {hr}! Ông có danh sách cắt giảm đúng hông? Có tên ai, nói luôn. Đứa nào bị đuổi mà khóc, tui chỉ mặt ông. # hen_gio:5
@@ -242,7 +244,7 @@ chi_dai: {hr}! Ông có danh sách cắt giảm đúng hông? Có tên ai, nói 
 
 // ------------------------------------------------------------
 === hr_2410_cap_tuan_son ===
-# ngay:24 # gio:10:30 # noi:phong_hop_sang_tao
+# ngay:24 # gio:15:00 # noi:phong_hop_tang_2
 _Phần hòa giải theo cặp. Bạn ngồi đối diện {thanh_xin_nghi}. Trên bàn là tờ "Câu hỏi hòa giải" của {chi_dai}: "1. Điều bạn chưa từng nói với người kia là gì?"_
 thanh_xin_nghi: Dạ… anh hỏi trước đi ạ.
 * [😇 "Anh chưa từng nói: anh không ghét em. Anh chỉ tò mò bà ngoại em là ai."]
@@ -268,7 +270,7 @@ thanh_xin_nghi: Dạ… anh hỏi trước đi ạ.
 # ngay:25 # gio:20:00 # noi:can_ho_604
 _Chủ nhật. Căn 604. Tối nay bán kết "Giọng Ca Ước Mơ". Bạn pha sẵn trà hoa cúc, kéo ghế sát tivi._
 _Sáng nay {hong_hot} đăng story mập mờ: "Có người thấy anh {quan_ly_idol} ở sảnh LL. Có người thấy cả {thanh_ninh}. Ối dồi ôi." Bạn đã lưu lại để mai xử lý. Tối nay là của {thanh_xin_nghi} Kim Tuyến._
-_Sơn Kim Tuyến bước ra. Đèn sân khấu. Kim tuyến. Một bài ballad về người đi làm xa nhà._
+_{thanh_xin_nghi} Kim Tuyến bước ra. Đèn sân khấu. Kim tuyến. Một bài ballad về người đi làm xa nhà._
 { hr_biet_son_kim_tuyen:
     _Lần này, bạn biết người đứng đó là ai. Bạn nhìn cái cách em nó nắm micro. Giống hệt cách em nó nắm cuốn lịch của Siêu Nhân Hồng._
 }
@@ -292,7 +294,7 @@ _Sơn Kim Tuyến bước ra. Đèn sân khấu. Kim tuyến. Một bài ballad 
 // ------------------------------------------------------------
 === hr_2610_tin_don ===
 # ngay:26 # gio:08:30 # noi:van_phong_tang_1 # bat_buoc
-_Thứ 2. Hạn chót 7 tên. Cả văn phòng xì xào. Tin đồn "cắt giảm nhân sự nếu Siêu Nhân Hồng thất bại" đã thành chuyện ai cũng nói, chỉ chưa ai thấy tận mắt._
+_Thứ 2. Hạn chót {hr_han_chot} tên. Cả văn phòng xì xào. Tin đồn "cắt giảm nhân sự nếu Siêu Nhân Hồng thất bại" đã thành chuyện ai cũng nói, chỉ chưa ai thấy tận mắt._
 { not hr_tu_thu_danh_sach:
     ~ hr_ro_ri(20)
 }
@@ -344,12 +346,10 @@ _Ai đã làm rò rỉ? Bạn có ba cái tên trong đầu._
 # ngay:26 # gio:16:00 # noi:phong_giam_doc # bat_buoc
 _4 giờ chiều. Bạn ôm tập hồ sơ hồng lên phòng kính. Danh sách có {hr_danh_sach_den} tên. Hạn chót: {hr_han_chot}._
 giam_doc: Ngồi đi em. Đưa anh xem.
-_{giam_doc} mở tập của bạn. Tập của ông ấy nằm ngay bên cạnh. Cũng màu hồng. Dày hơn. Gió từ máy lạnh lật trang đầu của nó lên._
-_Trang 2. Một dòng viết tay: "Người cuối cùng: {hr} (sau khi HR cắt xong hết)."_
-~ hr_da_xem_trang_2 = true
-_Bạn đọc nó hai lần. Rồi ba lần. Rồi {giam_doc} ngẩng lên, thấy bạn đang nhìn gì._
-* [😶 Không nói gì. Chụp lại bằng mắt. Gật đầu chào, đi ra.]
-    _Bạn đi ra như người vừa uống nhầm cả ấm trà gừng. {giam_doc} gọi theo "Tuấn…", nhưng không nói gì thêm._
+_Bạn đặt tập của bạn lên bàn. Rồi đặt cạnh đó tập thứ hai, tập {giam_doc} dúi cho bạn hôm đi Vũng Tàu. Trang 2 nằm trên cùng: "Người cuối cùng: {hr} (sau khi HR cắt xong hết)."_
+_{giam_doc} nhìn tờ giấy. Rồi nhìn bạn. Ông ấy hiểu bạn đã đọc từ 17/10._
+* [😶 Không nói gì. Gật đầu chào, đi ra.]
+    _Bạn đi ra như người vừa uống nhầm cả ấm trà gừng. {giam_doc} gọi theo "{hr}…", nhưng không nói gì thêm._
     ~ cang_thang(15)
 * [💬 "Anh… viết cái này khi nào vậy anh?"]
     giam_doc: *(gập tập hồ sơ lại)* Ngày 1/10. Cùng ngày với em. {hr}, anh… anh không ép…
@@ -372,7 +372,7 @@ _Bạn đọc nó hai lần. Rồi ba lần. Rồi {giam_doc} ngẩng lên, th�
 // ------------------------------------------------------------
 === hr_2610_email_dem ===
 # ngay:26 # gio:23:30 # noi:can_ho_604 # bat_buoc
-_Căn 604. Trên màn hình là bản nháp "Thư mời làm việc" gửi {ke_toan}. Bên cạnh là trang 2 bạn đã thấy trên bàn {giam_doc}, giờ nằm trong đầu bạn như một tấm ảnh: "Người cuối cùng: Tuấn"._
+_Căn 604. Trên màn hình là bản nháp "Thư mời làm việc" gửi {ke_toan}. Bên cạnh là trang 2 bạn đã đọc trên xe đi Vũng Tàu, giờ nằm trong đầu bạn như một tấm ảnh: "Người cuối cùng: {hr}"._
 _Kệ trà 40 loại im lặng nhìn bạn._
 * [☕ Xóa email. Pha một ấm trà Zzz, đi ngủ.]
     _Thùng rác. Rồi "dọn thùng rác". Rồi trà Zzz. Bạn không ngủ được, nhưng ít ra không có thêm kế hoạch nào để lo._
@@ -381,10 +381,10 @@ _Kệ trà 40 loại im lặng nhìn bạn._
     ~ hr_da_gui_email = true
     _"Đã gửi". 23:41. Bạn ngồi nhìn chữ "Đã gửi" rất lâu, như nhìn một ấm trà vừa đổ ra không lấy lại được._
     ~ cang_thang(10)
-* {hr_da_xem_trang_2 && hr_do_lang_nghe >= 60} [🔒 Mở tập hồ sơ hồng, gạch hết tên, chỉ ghi lại một tên: "Tuấn".]
+* {hr_da_xem_trang_2 && hr_do_lang_nghe >= 45} [🔒 Mở tập hồ sơ hồng, gạch hết tên, chỉ ghi lại một tên: tên mình.]
     ~ hr_tu_ghi_ten_minh = true
     ~ hr_danh_sach_den = 1
-    _Bạn gạch từng cái tên. Mỗi đường gạch là một ngôi nhà được giữ lại. Rồi bạn viết, chữ đẹp nhất bạn từng viết: "Tuấn."_
+    _Bạn gạch từng cái tên. Mỗi đường gạch là một ngôi nhà được giữ lại. Rồi bạn viết, chữ đẹp nhất bạn từng viết: "{hr}."_
     _Đêm đó bạn ngủ ngon nhất 7 năm._
     ~ nghi(40)
     ~ cang_thang(-30)
@@ -415,7 +415,7 @@ ke_toan: Ông muốn bỏ công ty?
     ke_toan: Ông gửi nhầm lúc 11 giờ 41 tối? Ừ. Tui xóa.
     ~ qh("ke_toan", -5)
 - { RANDOM(1, 3) == 1:
-    _Ở cửa pantry, {hong_hot} đứng cầm ly cà phê, mắt tròn xoe. Trong 1 giờ, cả công ty biết tin: "Tuấn với {ke_toan} sắp bỏ công ty!"_
+    _Ở cửa pantry, {hong_hot} đứng cầm ly cà phê, mắt tròn xoe. Trong 1 giờ, cả công ty biết tin: "{hr} với {ke_toan} sắp bỏ công ty!"_
     ~ hr_tin_don_bo_cong_ty = true
     ~ tinh_than_cong_ty = tinh_than_cong_ty - 10
     ~ hr_ro_ri(15)
@@ -424,8 +424,8 @@ ke_toan: Ông muốn bỏ công ty?
 
 // ------------------------------------------------------------
 === hr_2710_luu_luc ===
-# ngay:27 # gio:11:00 # noi:sanh_le_tan # bat_buoc
-_LL-Entertainment ra tay. Lưu Lực đích thân tới. Vest trắng, tóc vuốt keo, đi giữa hai thư ký mặc đồ xanh lá chuối._
+# ngay:27 # gio:15:00 # noi:sanh_cong_ty # bat_buoc
+_15:00. LL-Entertainment ra tay. Lưu Lực đích thân tới. Vest trắng, tóc vuốt keo, đi giữa hai thư ký mặc đồ xanh lá chuối._
 phu_luu_luc: Việc hôm nay phải xong từ hôm qua. Tôi tới gặp Siêu Nhân Hồng. Và vài người khác.
 _Rồi Lưu Lực nhìn thấy {chi_dai} đang đứng ở quầy lễ tân, tay cầm bộ đàm. Ông ta đứng hình. Tập hồ sơ trên tay rơi xuống sàn, giấy bay tung tóe._
 chi_dai: Ủa… Quán Ốc Đêm. Mười năm trước. Tô ốc len. Nhớ hông?
@@ -443,7 +443,7 @@ _Lưu Lực lùi lại 3 bước, cúi nhặt giấy lia lịa._
 
 // ------------------------------------------------------------
 === hr_2710_phong_van_nghi_viec ===
-# ngay:27 # gio:15:00 # noi:phong_hr # bat_buoc
+# ngay:27 # gio:16:00 # noi:phong_hr # bat_buoc
 _Chiều. Bạn ngồi trong phòng HR với một ấm trà và một danh sách mới: những người đang muốn đi. Mỗi cuộc là một "phỏng vấn nghỉ việc". Mỗi cuộc là một ấm trà._
 _Người đầu tiên: {thanh_ninh}, cầm một lá đơn chưa ký._
 thanh_ninh: Anh {hr}… em chỉ hỏi thử thôi ạ. Nếu em… đi, thì thủ tục thế nào ạ?

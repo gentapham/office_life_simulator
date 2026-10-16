@@ -98,7 +98,7 @@ _Bạn gọi Phòng khám Khỏe Re. Bác sĩ nghe máy._
 phu_bac_si_khoe_re: Anh hỏi bệnh nhân hả? Bí mật bệnh nhân nha anh. Mà anh là ai mà soi đời tư người ta kỹ vậy?
 ~ hr_nghe(-10)
 ~ hr_so(3)
-_Chiều đó, cả pantry xì xào: "HR gọi tới phòng khám soi bệnh án của Sơn". Bạn chưa kịp đọc bệnh án nào._
+_Chiều đó, cả pantry xì xào: "HR gọi tới phòng khám soi bệnh án của {thanh_xin_nghi}". Bạn chưa kịp đọc bệnh án nào._
 -> END
 
 // ============ 🎤 PHỎNG VẤN "NHÂN VIÊN CHĂM SÓC SIÊU NHÂN HỒNG" ============

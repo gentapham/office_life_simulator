@@ -38,6 +38,14 @@ _Quá chi tiết. Ngày quá hạn, số biệt thự, cả tên chi nhánh. Nh�
 # ngay:21 # gio:14:00 # noi:phong_hr # bat_buoc
 _Phòng HR. Ấm trà Ô Long. {hr} mỉm cười, rót trà cho bạn._
 hr: Em {hong_hot}. Anh chỉ muốn lắng nghe em thôi. Em có biết ai là admin trang Confession không?
+{ hh_tam_su_hr:
+    _{hr} nhìn bạn lâu hơn bình thường. Hôm mất điện, trong pantry tối, bạn đã kể với anh rồi. Câu hỏi này là để người khác ngoài cửa nghe._
+}
+* {hh_tam_su_hr} [🔒 🤝 "Anh biết rồi mà. Bài thế chấp có người gửi vô, em hông viết."]
+    hr: *(gật, hạ giọng)* Anh biết. Anh sẽ báo sếp là "chưa xác định được". Em tìm giúp anh người gửi.
+    ~ hh_nhanh_nguoi_doc_email = true
+    ~ hh_lo(-15)
+    ~ qh("hr", 8)
 * [😇 "Dạ em đâu biết đâu anh. Em lo fanpage công ty còn hông kịp."]
     { hh_lo_admin < 50:
         hr: Ừ. Anh tin em. Em uống trà đi.
@@ -115,22 +123,30 @@ _Máy đang chĩa thẳng vào phòng kế toán kính mờ. Bên trong, giọng
     ~ hh_tt(5)
     _Clip "Cán bộ thuế trèo lên ghế vì một con chó vẫy đuôi" được cắt ra và viral. Bạn không đăng, nhưng 900 người đã quay màn hình._
 * [⏱️ (Không chọn kịp)]
-    ke_toan: *(qua cửa kính)* …trang 47. Thất bại thì hoàn gấp đôi.
-    ~ hh_live_nham_hop = true
-    ~ scandal()
-    ~ hh_follow(-60000)
-    _"Trang 47". "Hoàn gấp đôi". 2.100 người xem. Bạn tắt live ở phút thứ 3. "Ối dồi ôi."_
+    { RANDOM(1, 10) <= 3:
+        ke_toan: *(qua cửa kính)* …trang 47. Thất bại thì hoàn gấp đôi.
+        ~ hh_live_nham_hop = true
+        ~ hh_live_nham_ngay = 22
+        ~ scandal()
+        ~ hh_follow(-60000)
+        _"Trang 47". "Hoàn gấp đôi". 2.100 người xem. Bạn tắt live ở phút thứ 3. "Ối dồi ôi."_
+    - else:
+        _{cho} chạy ngang, đuôi quất trúng điện thoại. Máy rơi úp xuống thảm, live tự tắt. Lần đầu tiên bạn muốn mua xúc xích cho {cho}._
+        ~ qh("cho", 5)
+    }
 - -> END
 
 // ------------------------------------------------------------
 === hong_hot_2210_chu_liem ===
 # ngay:22 # gio:15:30 # noi:pantry
 _Chú Liêm ngồi ở pantry, uống trà {thanh_ninh} pha, mắt vẫn canh cửa xem {cho} có quay lại không._
-chu_liem: Cháu là người làm mạng xã hội à? Cái trang… Confession gì đó, bên cháu quản lý à?
-* [😇 "Dạ hông chú, trang đó ẩn danh, ai cũng gửi được."]
-    chu_liem: Ừ. Ẩn danh. *(gõ bút lên sổ)* Chú đọc bài thế chấp rồi.
-    _Chú không nói thêm. Nhưng chú ghi gì đó vào sổ._
+chu_liem: Cháu là người làm mạng xã hội à? Cái trang… Confession gì đó, bên cháu quản lý à? Chú đọc bài thế chấp rồi. Chú còn muốn biết 5 tỷ tiền trả trước kia từ đâu ra.
+_Ở phòng kế toán, {ke_toan} đang lật tập chứng từ dày cộm. Ngồi photo giúp chị là {thuc_tap_sinh}, tay lật giấy nhanh như người từng đếm tiền cả chục năm._
+* [😇 "Dạ hông chú, trang đó ẩn danh, ai cũng gửi được. Còn tiền thì chị {ke_toan} nắm rõ nhất ạ."]
+    chu_liem: Ừ. Ẩn danh. *(gõ bút lên sổ)*
+    _Chú không nói thêm. Nhưng chú ghi gì đó vào sổ, rồi đi về phía phòng kế toán._
     ~ hh_lo(3)
+    ~ qh("ke_toan", 2)
 * [🐕 "Dạ chú ơi, con chó lại tới kìa chú!"]
     chu_liem: *(nhảy dựng)* Đâu? Đâu?!
     _Không có con chó nào. Chú Liêm quên luôn câu hỏi. Bạn hơi áy náy._
@@ -139,48 +155,49 @@ chu_liem: Cháu là người làm mạng xã hội à? Cái trang… Confession 
 
 // ------------------------------------------------------------
 === hong_hot_2310_livestream_sinh_nhat ===
-# ngay:23 # gio:19:30 # noi:san_khau_su_kien # bat_buoc
-_Sinh nhật {sieu_nhan_hong}, 31 tuổi. Livestream lớn nhất tháng. Bánh kem hồng 3 tầng do {designer} thiết kế._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ, studio tầng 2. Sinh nhật {sieu_nhan_hong}, 31 tuổi. Livestream lớn nhất tháng. Bánh kem hồng 3 tầng do {designer} thiết kế._
 _Cần một người đóng "Mr. Kevin Trộn" chúc mừng qua video. {sales} đã chọn xong người._
 * [🔴 Điều phối buổi live. (Minigame "Livestream")]
     -> hong_hot_mg_livestream
 * [🎥 Đứng một góc, quay bằng một điện thoại, không điều phối gì.]
-    ~ hh_follow(30000)
     _Không ai đọc bình luận cho {sieu_nhan_hong}. {sieu_nhan_hong} tự đọc. Đọc trúng câu "Có phải anh tạo Hồng Coin để lừa fan không?"_
     sieu_nhan_hong: Ờm… Hồng Coin là gì vậy mọi người? Sao có coin tên anh?
     ~ scandal()
-    -> hong_hot_2310_banh_kem
+    -> END
 
+// ------------------------------------------------------------
 === hong_hot_2310_banh_kem ===
-# ngay:23 # gio:20:15 # noi:san_khau_su_kien # bat_buoc
-_Giữa livestream, {sieu_nhan_hong} cầm micro: "Anh {chua_te_deadline}… anh có thể… ờm… em thích anh. Thiệt đó." Bình luận nổ tung: \#{chua_te_deadline}ƠiTrảLờiĐi._
-_{chua_te_deadline} đứng sau máy quay, điện thoại rơi xuống đất._
+# ngay:23 # gio:20:15 # noi:studio_tang_2 # bat_buoc
+_Giữa livestream, {sieu_nhan_hong} cầm micro: "{chua_te_deadline} ơi… anh… ờm… anh thích em. Thiệt đó." Bình luận nổ tung: \#{chua_te_deadline}ƠiTrảLờiĐi._
+_{chua_te_deadline} đứng sau máy quay, nhặt cái điện thoại vừa rơi, giơ ngón cái: "Ý tưởng PR hay đó anh!" Cả studio cười. Chỉ có {sieu_nhan_hong} cười chậm hơn mọi người nửa nhịp._
 _Rồi {cho} lao ra. Bánh kem đổ úp. Kem hồng dính đầy mũ. Clip đang trên tay bạn._
 * [🎬 Giữ cảnh {cho} phá bánh trong clip tổng kết.]
-    ~ hh_follow(120000)
+    ~ hh_follow(20000)
     ~ hh_tt(10)
     sieu_nhan_hong: *(lau kem trên mũ, cười gượng)* Thôi… sinh nhật ai mà chẳng có đổ vỡ…
     ~ qh("sieu_nhan_hong", -5)
     ~ hh_tuat_noi_hon_nguyen = true
 * [✂️ Cắt cảnh đó.]
-    ~ hh_follow(60000)
+    ~ hh_follow(5000)
     ~ qh("sieu_nhan_hong", 10)
-    _Clip sạch sẽ, ấm áp. Lời tỏ tình vẫn còn. {chua_te_deadline} xem đi xem lại đúng đoạn đó._
+    _Clip sạch sẽ, ấm áp. Lời tỏ tình vẫn còn. {chua_te_deadline} xem lại đúng đoạn đó, rồi gửi vô group dự án: "Tương tác đẹp nha mọi người, PR chuẩn bài."_
 - -> END
 
 // ------------------------------------------------------------
 === hong_hot_2410_thu_ky_hoa_giai ===
-# ngay:24 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _"Hội nghị hòa giải" của {chi_dai}. Các cặp: {truong_phong}–{con_ong_chau_cha}, {designer}–{bien_kich}, {sales}–{ke_toan}, {hr}–{thanh_xin_nghi}, {chi_dai}–{thanh_ninh}. Bàn riêng "chủ nợ" cho {dan_dau_tu}._
 chi_dai: {hong_hot}. Em làm thư ký ghi biên bản. Không ai tin em ghi mà không kể. Nên chị tin em lần này.
 * [🤐 Ghi biên bản đầy đủ, cất vào tủ, đưa {chi_dai} chìa khóa.]
     ~ hh_kin(15)
     ~ qh("chi_dai", 10)
     ~ hh_tin(5)
-    _Bạn nghe {thanh_ninh} khóc kể chuyện đi phỏng vấn LL. Bạn nghe {dan_dau_tu} xin lỗi từng chủ nợ. Bạn ghi hết. Bạn không kể ai._
-    ~ phat_hien(ran_thu_hai_lo_mat)
-    ~ hh_giu_nhi_ll = true
-    ~ hh_giu_tin_cap_cao()
+    _Bạn nghe {thanh_ninh} khóc, kể sáng mai phải đi phỏng vấn ở LL mà chưa biết nên đi hay không. Bạn nghe {dan_dau_tu} xin lỗi từng chủ nợ. Bạn ghi hết. Bạn không kể ai._
+    { not hh_giu_nhi_ll:
+        ~ hh_giu_nhi_ll = true
+        ~ hh_giu_tin_cap_cao()
+    }
 * [📸 Chụp biên bản, gửi {designer}: "Bà coi nè, vui lắm."]
     ~ hh_ke_tin()
     ~ hh_kin(-10)
@@ -217,10 +234,12 @@ _Tóc dài, ôm laptop: {designer}. Áo dài hồng: {thanh_ninh}. Cả hai ở 
     ~ qh("designer", -20)
     ~ qh("thanh_ninh", -15)
     _{designer} là bạn thân của bạn. {designer} đọc tin nhắn. Không trả lời._
-* [🤐 "Chắc chị nhìn nhầm. {thanh_xin_nghi} cho em màu đỏ nha chị."]
+* [🤐 "Chắc chị nhìn nhầm. Chị sơn cho em màu đỏ nha chị."]
     ~ hh_kin(10)
-    ~ hh_giu_nhi_ll = true
-    ~ hh_giu_tin_cap_cao()
+    { not hh_giu_nhi_ll:
+        ~ hh_giu_nhi_ll = true
+        ~ hh_giu_tin_cap_cao()
+    }
     ~ qh("designer", 5)
     chi_nail: Ờ, chắc nhầm. Mà sao em hôm nay ít nói vậy?
 * [💬 Nhắn riêng {designer}: "Bà ổn hông?"]
@@ -264,7 +283,7 @@ _Trong một khung hình mưa, góc trái, có một con cú nhỏ xíu. Dấu h
 * {hh_kin_mieng < 40} [📣 Thì thầm với người bên cạnh: "Thấy con cú hông? {editor} là Cú Đêm Cắt Ghép đó!"]
     ~ hh_ke_tin()
     ~ phat_hien(kenh_cu_dem)
-    _Người bên cạnh là sếp. Sáng hôm sau, sếp gọi {editor} lên: "Kênh của em gần 1 triệu người. Công ty mua lại nhé, 200 triệu. Anh không ép, tùy em."_
+    _Người bên cạnh là sếp. Đèn vừa bật, sếp gọi {editor} lại: "Kênh của em gần 1 triệu người. Công ty mua lại nhé, 200 triệu. Anh không ép, tùy em."_
     ~ qh("editor", -15)
 * [🤐 Không nói gì. Nhắn riêng {editor}: "Con cú dễ thương ghê."]
     editor: *(3 phút sau)* … Chị giữ giùm em nha chị.
@@ -305,8 +324,8 @@ _Ba điện thoại. Ba lựa chọn._
 
 // ------------------------------------------------------------
 === hong_hot_2710_luu_luc_den ===
-# ngay:27 # gio:10:00 # noi:sanh_cong_ty # bat_buoc
-_Lưu Lực tới tận nơi. Vest trắng. Đi ngang sảnh, thấy {chi_dai}, ông ta làm rơi cả tập hồ sơ._
+# ngay:27 # gio:15:00 # noi:sanh_cong_ty # bat_buoc
+_15 giờ. Lưu Lực tới tận nơi. Vest trắng. Đi ngang sảnh, thấy {chi_dai}, ông ta làm rơi cả tập hồ sơ._
 _Giấy tung ra sàn: lời mời cho {quan_ly_idol}, {ke_toan}, {dan_dau_tu}, {it}… Bạn đứng cách hai mét, camera đang mở._
 * [📸 Chụp lia lịa mọi tờ giấy rơi.]
     ~ hh_tin(5)
@@ -325,5 +344,5 @@ _Giấy tung ra sàn: lời mời cho {quan_ly_idol}, {ke_toan}, {dan_dau_tu}, {
     ~ hh_kin(10)
     luu_luc: Cảm ơn em. Em… làm ở đây lâu chưa? Bên anh đang cần người làm mạng xã hội.
     _Bạn cười, không trả lời. Bên cạnh, {chi_dai} khoanh tay._
-- _Chiều đó trailer phim ngắn ra mắt, đề tên {bien_kich}. Và {sales} nhận một cuộc gọi từ "Sữa Chua Hồng Hào" ở Ven Đô, mời tài trợ 1 tỷ. Không ai tin. Cả {sales}._
+- _Một ngày nhiều tin quá. Trưa nay trailer phim ngắn ra mắt, đề tên {bien_kich}. 11 giờ, {sales} nhận một cuộc gọi từ "Sữa Chua Hồng Hào" ở Ven Đô, mời tài trợ 1 tỷ. Không ai tin. Cả {sales}._
 -> END

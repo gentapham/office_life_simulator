@@ -28,6 +28,7 @@ ran_doc: Bla bla… TUẤT… bla bla… HỒNG… bla? # phu_de:{cho}, mày cũ
     ran_doc: Bla bla… bla bla. # phu_de:Ồ… mày là thánh hóng còn hơn {hong_hot} nữa đó.
     ~ ch_kho_bi_lo = true
     ~ qh("ran_doc", 4)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -51,6 +52,7 @@ giam_doc: TUẤT. Bla bla… KHÔNG… bla bla bla. # phu_de:{cho}. Lại vào �
     ~ ch_de_qua("phong_gd")
     giam_doc: TUẤT! Bla bla bla bla! Bla! # phu_de:{cho}! Lần thứ mấy rồi! {thanh_ninh}! Gọi bác {bac_bao_ve}! Viết thêm nội quy số 11!
     ~ qh("giam_doc", -10)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -71,6 +73,7 @@ truong_phong: Bla bla… TUẤT. Bla bla bla… bla. # phu_de:{cho} à. Vào h�
     cho: Gâu!
     truong_phong: Bla… bla bla. # phu_de:Ừ… phản hồi đã nhận. Cuộc họp kết thúc.
     _Lần đầu tiên trong tháng, có một cuộc họp của {truong_phong} kéo dài đúng 5 phút._
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -95,6 +98,7 @@ thanh_ninh: Bla… TUẤT… KHÔNG… bla bla. # phu_de:{cho}, không được 
     ~ ch_vao_phong_gd = ch_vao_phong_gd + 1
     _Bạn lẻn vào. Ngồi lên ghế sofa của sếp. Mềm. Êm. Người này quay lại, hét lên một tiếng như còi cứu hỏa._
     ~ qh("thanh_ninh", -3)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -118,6 +122,7 @@ hong_hot: TUẤT! Bla bla bla… bla bla! # phu_de:{cho}! Nghe gì chưa? Clip c
     ~ ch_mui(2)
     _Laptop mùi nửa đêm: mì gói, đèn LED, ring light nóng. Và một mùi hồi hộp của người đang giữ một bí mật rất to._
     hong_hot: *(gập laptop nhanh như chớp)* Bla bla… bla. # phu_de:Ủa ngửi gì ngửi. Không có gì hết á.
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -140,6 +145,7 @@ con_ong_chau_cha: Bla bla… TUẤT. Bla bla bla? # phu_de:Ê {cho}. Sao mày kh
     ~ ch_de_qua("van_phong")
     con_ong_chau_cha: Bla bla! Bla bla bla! # phu_de:Ủa! Đôi giày này 20 triệu! Để anh gọi chú anh!
     ~ qh("con_ong_chau_cha", -8)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -167,6 +173,7 @@ chua_te_deadline: Bla… TUẤT. Bla bla. # phu_de:Ờ, {cho}. Chill đi, còn s
     chua_te_deadline: Bla bla! ÉT O ÉT! Bla bla bla! # phu_de:Ủa mấy giờ rồi! Ét o ét! Ai cứu tui với!
     _Người này nhảy khỏi ghế, mở máy tính, gõ như bão. Bạn vừa làm được điều mà {truong_phong} không làm được cả tháng._
     ~ qh("truong_phong", 2)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -185,6 +192,7 @@ thuc_tap_sinh: Dạ… TUẤT! Bla bla… bla bla! # phu_de:Dạ… à không, {
     thuc_tap_sinh: Bla bla… bla bla bla. # phu_de:Hồi trước làm ngân hàng, cả năm anh không cười như vầy.
     ~ qh("thuc_tap_sinh", 6)
     ~ ch_cung(2)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -209,6 +217,7 @@ ke_toan: TUẤT. Bla bla… bla bla bla? # phu_de:{cho}. Lại tới xin ăn h�
     ~ ch_cung(3)
 * [👃 Hộp cơm thịt kho đâu rồi? Cái mùi bị lấy mất!]
     -> cho_mg_theo_dau
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -230,6 +239,7 @@ _Câu này, ai trong công ty nghe cũng sợ. Bạn thì không hiểu, nên b�
     cho: Grừ…
     hr: Bla bla… bla bla bla. # phu_de:Ừ. Anh hiểu. Ai vô phòng này cũng muốn gầm gừ vậy hết.
     ~ qh("hr", -2)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -250,6 +260,7 @@ _Người này đẩy một cái hộp các-tông về phía bạn bằng chân.
     it: TUẤT. KHÔNG. # phu_de:{cho}. Không. Lỗi người dùng có lông.
     _Người này không giận. Chỉ lấy sợi dây ra khỏi miệng bạn, đưa cho bạn một cái nắp chai để gặm. Chuyên nghiệp._
     ~ qh("it", 2)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -275,6 +286,7 @@ idol_het_thoi: Bla bla… TUẤT. Bla bla bla… bla? # phu_de:{cho}. Em biết 
     _Bạn ngậm cái kính. Chạy. Người này đuổi theo, mặt trần, giữa hành lang. Ai đi qua cũng quay lại nhìn: "Ủa, mắt anh {idol_het_thoi} đẹp vậy hả?"_
     _Người này dừng lại, ngơ ngác. Không ai nói câu đó với người này từ năm 2015._
     ~ qh("idol_het_thoi", 2)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -296,6 +308,7 @@ quan_ly_idol: Bla bla! Bla bla… TUẤT… bla bla bla! # phu_de:Khoan anh nghe
     { ch_mui_thinh >= 80:
         _Và một mùi mới: xanh lá chuối, mùi tòa nhà kính. Rất nhẹ. Như vừa đi ngang qua đó._
     }
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -314,6 +327,7 @@ bien_kich: Bla bla… TUẤT… bla bla bla. # phu_de:{cho}. Em là nhân vật 
     cho: Gâu! Gâu!
     bien_kich: Bla bla… bla. # phu_de:Bí gửi lời chào em đó. Bí vẫn thắng nha.
     _Bạn lùi lại một bước. Không phải vì sợ. Chỉ là… chiến lược._
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -333,6 +347,7 @@ editor: *(ngáp)* Bla… TUẤT… bla bla. # phu_de:{cho}… đợi render xong
 * [👃 Đánh hơi thư mục trên màn hình (mùi bàn phím).]
     ~ ch_mui(1)
     _Bàn phím có mùi tay người này, và một mùi khác, rất nhẹ: cà phê đen, taxi 2 giờ sáng. Có người khác ngồi đây, lâu rồi. Người này không lau phím._
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -357,6 +372,7 @@ designer: Bla! Bla… TUẤT. Bla bla. # phu_de:Hú hồn! À… {cho}. Tưởng
 * [🐾 Nằm lên bàn chân người này cho đỡ căng.]
     _Người này thở ra. Rồi cúi xuống gãi tai bạn. Rồi nói nhỏ: "Sửa nhẹ thôi là sửa cái gì vậy {cho}?". Bạn không biết. Người này cũng không._
     ~ qh("designer", 5)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -378,6 +394,7 @@ _10 tấn xúc xích. Bạn không biết 10 tấn là bao nhiêu. Nhưng nghe c
 * [😤 Sủa khi người này nói "chắc kèo".]
     cho: Gâu!
     sales: Bla bla… bla bla! # phu_de:Ủa con chó này cũng không tin chị hả! Sao mà căng!
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -397,6 +414,7 @@ chi_dai: TUẤT. Bla bla… ĂN… bla bla? # phu_de:{cho}. Ăn cơm chưa? Ng�
 * [🐾 Đi theo người này cả buổi.]
     _Người này đi đâu, bạn đi đó. Kho sự kiện, sân khấu, phòng họp. Ai thấy hai người cũng tránh đường. Bạn chưa bao giờ thấy mình oai như vậy._
     ~ qh("chi_dai", 4)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -415,6 +433,7 @@ dan_dau_tu: Bla bla… bla bla… bla. TUẤT? Bla bla bla. # phu_de:Đáy rồi
 * [😴 Nằm dưới chân, nghe người này lẩm bẩm.]
     _Người này lẩm bẩm về x10, về đáy, về "còn cái nịt". Bạn ngủ. Giọng người này đều đều như radio của bác._
     ~ nghi(15)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -442,6 +461,7 @@ thanh_xin_nghi: *(thì thầm)* Bla… TUẤT… bla bla bla. # phu_de:{cho}… 
     cho: Gâu! Gâu!
     _{hr} ngẩng lên từ phòng bên. {thanh_xin_nghi} ho to hơn. Một màn kịch ba người, trong đó chỉ có bạn là thật._
     ~ qh("thanh_xin_nghi", -4)
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -469,6 +489,7 @@ bac_bao_ve: TUẤT. Bla bla. # phu_de:{cho}. Lại đây.
     { ch_dong_minh_kho == "":
         ~ ch_dong_minh_kho = "bac_bao_ve"
     }
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -519,6 +540,7 @@ _Mùi bánh chuối chiên. Mùi nước hoa hồng. Lông gáy bạn dựng lê
         _Người đó đặt cây xúc xích xuống đất, rồi đi. Không chọc gì cả. Bạn nhìn cây xúc xích rất lâu, rồi ăn._
         ~ ch_an_cua_nguyen()
     }
++ -> END
 - -> END
 
 // ------------------------------------------------------------
@@ -548,4 +570,5 @@ shipper_teo: Bla bla bla… bla bla! # phu_de:Hàng tới rồi, ra lấy giùm 
     _Bạn ngoạm. Chạy. Cái mũ to quá, nặng quá, bạn chạy được ba mét thì phải đặt xuống. Hắn đuổi kịp, đội lại, nhìn bạn với vẻ khó hiểu._
     shipper_teo: Bla bla… {ch_mu()}… bla bla? # phu_de:Mày ghét cái mũ của anh hả? Mũ bảo hiểm mà, đội cho an toàn!
     _Không phải ghét. Đó là luyện tập. Có một cái mũ khác, màu hồng, bạn cần tập trước._
++ -> END
 - -> END

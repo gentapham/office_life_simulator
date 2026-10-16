@@ -5,8 +5,8 @@
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1710_phong_ngu ===
-# ngay:17 # gio:08:00 # noi:khach_san_vung_tau # bat_buoc
-_Vũng Tàu. Team building 2 ngày 1 đêm. {hr} xếp phòng: bạn ở chung với {thuc_tap_sinh}._
+# ngay:17 # gio:09:30 # noi:khach_san_vung_tau # bat_buoc
+_Xe chạy từ 6 giờ 30. Giờ là khu nghỉ Sóng Vỗ, Vũng Tàu. Team building 2 ngày 1 đêm. {hr} xếp phòng: bạn ở phòng 201 với {thuc_tap_sinh}._
 _{thuc_tap_sinh} bước ra từ phòng tắm, mặc y chang bộ đồ đi biển của bạn. Từ cái kính râm tới đôi dép tông._
 * [😄 "Ủa sao anh mặc giống em vậy, mà đẹp hơn."]
     thuc_tap_sinh: *(đỏ mặt)* Dạ… dạ thật hả anh? Dạ em cảm ơn anh!
@@ -24,7 +24,7 @@ _{thuc_tap_sinh} bước ra từ phòng tắm, mặc y chang bộ đồ đi bi�
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1710_keo_co ===
-# ngay:17 # gio:10:00 # noi:bai_bien_vung_tau # bat_buoc
+# ngay:17 # gio:10:30 # noi:bai_bien_vung_tau # bat_buoc
 _Kéo co: đội Sản xuất của {truong_phong} đấu "đội Marketing", gồm bạn và những ai chưa được chia đội. {thuc_tap_sinh} tự xin vào đội bạn, mặt nghiêm như ra trận._
 giam_doc: Cố lên {truong_phong}! Cố lên {con_ong_chau_cha}! Anh ủng hộ… cả hai!
 _{truong_phong} đứng đầu dây bên kia, kính trễ xuống mũi, nắm dây như nắm cái ghế Phó Giám đốc._
@@ -54,8 +54,8 @@ _{truong_phong} đứng đầu dây bên kia, kính trễ xuống mũi, nắm d�
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1710_nhau_toi ===
-# ngay:17 # gio:20:00 # noi:nha_hang_vung_tau
-_Bữa tối hải sản. {dan_dau_tu} bao cả đoàn vì Hồng Coin vừa tăng gấp mười. Chú bạn đã uống tới ly thứ bảy._
+# ngay:17 # gio:18:30 # noi:nha_hang_vung_tau
+_Bữa tối ở quán hải sản Sóng Vỗ. {dan_dau_tu} bao cả đoàn vì Hồng Coin vừa tăng gấp mười. Chú bạn đã uống tới ly thứ bảy._
 giam_doc: Các em! Tháng sau… anh tăng lương cả công ty! Anh không ép, anh tự nguyện!
 _Mười cái điện thoại giơ lên quay. Bạn nhìn chú. Lần đầu tiên bạn tự hỏi: chú lấy đâu ra tiền?_
 * [🍺 Giữ ly của chú lại: "Chú ơi, đủ rồi."]
@@ -73,8 +73,8 @@ _Mười cái điện thoại giơ lên quay. Bạn nhìn chú. Lần đầu ti�
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1710_lua_trai ===
-# ngay:17 # gio:22:30 # noi:bai_bien_vung_tau # bat_buoc
-_Lửa trại. {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứa nhỏ trong nhà kho. Giọng nhỏ dần. {ran_doc} ngồi bên kia đống lửa, mặt cứng như đá._
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc
+_20 giờ. Lửa trại. {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứa nhỏ trong nhà kho. Giọng nhỏ dần. {ran_doc} ngồi bên kia đống lửa, mặt cứng như đá._
 _{idol_het_thoi} ngủ gục trên vai {quan_ly_idol}. {editor} lặng lẽ đắp chăn cho cả hai. Ai đó đưa bạn cây đàn ghi-ta của khách sạn._
 * [🎸 Hát "Hồng Là Thái Độ". Lần đầu trước nhiều người.]
     _Bạn hát. Đoạn đầu run. Tới điệp khúc thì không run nữa. Sóng biển như đánh nhịp._
@@ -92,7 +92,7 @@ _{idol_het_thoi} ngủ gục trên vai {quan_ly_idol}. {editor} lặng lẽ đ�
     -> END
 
 = sau_bai_hat
-{ qh_truong_phong >= 30:
+{ qh_truong_phong >= 20:
     _Im lặng hai giây. Rồi có người vỗ tay. Người đầu tiên. Là {truong_phong}._
     truong_phong: Bài này cậu viết à? Hay hơn nhạc MV phòng tớ đấy.
     ~ long_mo_phong_thu_nhat = true
@@ -143,8 +143,8 @@ _Bạn ngồi bật dậy._
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1810_coin_sap ===
-# ngay:18 # gio:08:30 # noi:khach_san_vung_tau
-_Chủ nhật, sáng ngày thứ hai ở Vũng Tàu. Điện thoại {dan_dau_tu} đỏ rực: Hồng Coin về 0. Người tạo ôm tiền biến mất._
+# ngay:18 # gio:09:00 # noi:khach_san_vung_tau
+_Chủ nhật, 9 giờ sáng ngày thứ hai ở Vũng Tàu. Cuộc họp "5 phút" lúc 6 giờ trên bãi biển của {truong_phong} vừa xong._ Điện thoại {dan_dau_tu} đỏ rực: Hồng Coin về 0. Người tạo ôm tiền biến mất._
 dan_dau_tu: *(cười méo)* Đây là đáy… đáy thật rồi…
 { long_dau_tu_moi > 0:
     _Số tiền bạn bỏ vào kèo của {dan_dau_tu} hôm 4/10 cũng đang nằm ở đáy. Không thấy đáy đâu._
@@ -228,7 +228,7 @@ ba_tu: Nay mùng mấy rồi con? Coi phòng hả? Nhìn con hông giống ngư�
 // ------------------------------------------------------------
 === con_ong_chau_cha_2010_sinh_nhat_cong_ty ===
 # ngay:20 # gio:10:00 # noi:sanh_tang_tret # bat_buoc
-_Sinh nhật công ty 16 tuổi kiêm Ngày Phụ nữ Việt Nam. Ai cũng cầm quà. Bác {bac_bao_ve} đứng ở góc, cầm một lá thư tay và một phong bì dán kín, chưa quyết có đọc trước mọi người không._
+_Sinh nhật công ty 16 tuổi kiêm Ngày Phụ nữ Việt Nam. Chú phát mỗi chị em một phong bì 2.100.000đ, kèm bảy chiếc khăn cam giống hệt nhau. Bác {bac_bao_ve} đứng ở góc, cầm một lá thư tay ký "G" và một phong bì dán kín._
 _Năm ngoái bạn quẹt thẻ mua nước hoa cho cả chục chị em. Năm nay thẻ bằng 0._
 * [🌷 Mua hoa bằng tiền lương, tặng mỗi chị một bông. Đơn giản.]
     ~ tien_cong(-350000)
@@ -247,13 +247,14 @@ _Năm ngoái bạn quẹt thẻ mua nước hoa cho cả chục chị em. Năm n
     _Chú bạn đang đứng cạnh, nghe thấy, mặt hơi tái. Chú chưa lo gì cả._
     ~ long_goi_chu()
     ~ qh("giam_doc", -3)
-- _Bác {bac_bao_ve} gấp lá thư lại, cất vào túi. Phong bì dán kín vẫn dán kín. Chú bạn nhìn theo lá thư, như người đang chờ điểm thi._
+- _Bác {bac_bao_ve} cất lá thư vào túi áo: tối nay ở Quán Ốc Đêm mới đọc. Phong bì dán kín vẫn dán kín. Chú bạn nhìn theo lá thư, như người đang chờ điểm thi._
 -> END
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_2010_quan_oc ===
-# ngay:20 # gio:20:30 # noi:quan_oc_dem # bat_buoc
-_Quán Ốc Đêm. Liên hoan sinh nhật công ty. Chú bạn say. Chú ngồi một mình ở đầu bàn, nhìn cái ly rỗng._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18 giờ 30, Quán Ốc Đêm. Liên hoan sinh nhật công ty. Bác {bac_bao_ve} đứng dậy, đọc to lá thư: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."_
+_Cả quán im lặng. Một tiếng sau, chú bạn đã say. Chú ngồi một mình ở đầu bàn, nhìn cái ly rỗng._
 _Bạn biết chú đang giấu điều gì đó. Căn penthouse. Cái thẻ. Những cuộc gọi không bắt máy._
 * [💬 Ngồi xuống, hỏi thẳng: "Chú ơi, chú đang nợ hả?"]
     giam_doc: *(nhìn bạn rất lâu)* …Ai nói với cháu?
@@ -279,8 +280,8 @@ _Bạn biết chú đang giấu điều gì đó. Căn penthouse. Cái thẻ. Nh
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_2010_karaoke ===
-# ngay:20 # gio:22:30 # noi:karaoke_hat_cho_nhau_nghe
-_Tăng hai: karaoke Hát Cho Nhau Nghe. Chú cầm micro, hét: "Tháng sau tăng lương 20%! Cả công ty!" Cả phòng hét theo. Bạn ngồi im, bạn biết chú lấy đâu ra tiền._
+# ngay:20 # gio:21:00 # noi:karaoke_chu_sau
+_21 giờ. Tăng hai: Karaoke Chú Sáu. Chú cầm micro, hét: "Tháng sau tăng lương 20%! Cả công ty!" Cả phòng hét theo. Bạn ngồi im, bạn biết chú lấy đâu ra tiền._
 _{truong_phong} ngồi xuống cạnh bạn. Không ai hát. Hai người cùng nhìn chú._
 truong_phong: Chú cậu… có ổn không?
 * {long_mo_phong_thu_nhat} [🔒 "Hông ổn. Mà thôi. Tối thứ Năm ông lên tầng 30 nghe demo đi. Trước khi nhà bị bán."]

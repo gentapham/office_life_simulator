@@ -49,10 +49,11 @@ _Bốc trúng sít rịt. Hai mươi năm trước, người này nhốt bạn t
 
 // ------------------------------------------------------------
 === ran_doc_1710_lua_trai ===
-# ngay:17 # gio:21:00 # noi:bai_bien_vung_tau # bat_buoc
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc
 _Đêm lửa trại. Trò "nói thật". Lửa làm mặt ai cũng đỏ. Tới lượt {sieu_nhan_hong}. Hắn ngồi đối diện bạn._
 chi_dai: Nói đi em. Chuyện gì mà nhìn mặt em như sắp khóc vậy?
 _{sieu_nhan_hong} tháo mũ. Dưới ánh lửa là một gương mặt bình thường, tóc bết mồ hôi. Cái mặt bạn nhớ hai mươi năm._
+_Ở góc kia, điện thoại của {hong_hot} đang livestream. Ba giây. Ba giây mặt thật lên sóng trước khi {hong_hot} kịp quay ống kính xuống cát. Bạn thấy rõ: {hong_hot} chọn quay đi._
 sieu_nhan_hong: *(giọng nhỏ)* Hồi nhỏ… anh từng ăn hiếp một thằng nhóc trong xóm. Nhốt nó trong nhà kho. Tới giờ anh vẫn không biết nó ở đâu để xin lỗi.
 sieu_nhan_hong: Anh đi giúp người… một phần cũng vì vậy. Giúp hoài mà vẫn thấy nợ.
 ~ rd_biet_chuoc_loi = true
@@ -141,8 +142,8 @@ con_ong_chau_cha: Ủa… đây là nhà tui mà. Chú tui… rao bán nhà tui?
 
 // ------------------------------------------------------------
 === ran_doc_1810_xe_ve ===
-# ngay:18 # gio:16:00 # noi:xe_buyt
-_Xe về thành phố. Ai cũng giận ai. {dan_dau_tu} giận coin. {con_ong_chau_cha} giận chú. Cả xe giận clip {giam_doc} hứa tăng lương mà sáng nay ổng nói "anh không nhớ"._
+# ngay:18 # gio:12:00 # noi:xe_buyt
+_Trưa, xe về thành phố, 15 giờ mới tới cổng công ty. Ai cũng giận ai. {dan_dau_tu} giận coin. {con_ong_chau_cha} giận chú. Cả xe giận clip {giam_doc} hứa tăng lương mà sáng nay ổng nói "anh không nhớ"._
 _{sieu_nhan_hong} ngồi giữa xe, chuyền kẹo cho từng người, cố làm hòa cho tất cả._
 sieu_nhan_hong: Ăn kẹo hồng nè! Giận nhau thì kẹo hết ngọt!
 { rd_mo_nhanh_hieu_ech:
@@ -210,23 +211,23 @@ bac_bao_ve: Người gửi thư này muốn bác đọc trước cả công ty t
 
 // ------------------------------------------------------------
 === ran_doc_2010_tiec_sinh_nhat ===
-# ngay:20 # gio:16:00 # noi:sanh_tang_tret # bat_buoc
-_Tiệc sinh nhật {cong_ty} 16 tuổi, kiêm Ngày Phụ nữ Việt Nam. Do bạn tổ chức._
-_{giam_doc} vừa chọn logo kỷ niệm: bản gốc năm 2010. Lần sửa thứ 38. {designer} cười như người vừa mất hết hy vọng._
-_{sieu_nhan_hong} đi tặng hoa hồng cho tất cả chị em. Rồi lén để một hộp cơm hồng lên bàn {chua_te_deadline}._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_Tiệc sinh nhật {cong_ty} 16 tuổi, kiêm Ngày Phụ nữ Việt Nam, ở Quán Ốc Đêm. Do bạn tổ chức._
+_Chiều nay {giam_doc} chọn logo kỷ niệm: bản gốc năm 2010. Lần sửa thứ 38. {designer} cười như người vừa mất hết hy vọng._
+_Sáng 9 giờ đã tặng hoa ở công ty. Giờ tới quà: phong bì cho các chị em, và 7 chiếc khăn cam giống hệt nhau mà {giam_doc} tự tay đi mua. {sieu_nhan_hong} lén để một hộp cơm hồng lên chỗ ngồi của {chua_te_deadline}._
 dan_dau_tu: 8386! Chúc cả công ty phát tài phát lộc! Lần này là lên thật!
 { biet(thu_g):
     _Bác {bac_bao_ve} đứng lên, đeo kính, đọc lá thư bằng giọng Bắc chậm rãi._
-    bac_bao_ve: "…Mười sáu năm rồi. Tôi chỉ muốn hỏi một câu: mấy đứa nhỏ còn thương nhau không…"
+    bac_bao_ve: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
     _Cả sảnh im lặng. {giam_doc} cúi đầu. {sieu_nhan_hong} tháo găng tay, lau mắt dưới mũ._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
     ~ rd_han(-5)
 }
-_Đây là tiệc của bạn. Bánh kem, hoa, loa, micro. Cơ hội vàng._
-* [🧨 Đổi bài nhạc mở màn thành nhạc chế "Hồng Là Thái Độ… Hổng Có Thái Độ".]
+_Đây là tiệc của bạn. Bánh kem, loa kéo, micro. Cơ hội vàng._
+* [🧨 Đổi bài nhạc mở màn thành bản nhạc chế khẩu hiệu: "Hồng không phải màu… Hổng có thái độ".]
     ~ rd_pha(15000)
     ~ rd_nghi(12)
-    _Nhạc vang lên. Cả sảnh khựng lại. Rồi {cho} sủa theo nhịp. Rồi {hong_hot} cười sặc. {sieu_nhan_hong} vẫn nhảy theo. Hắn nhảy theo nhạc chế bài của chính mình._
+    _Nhạc vang lên. Cả sảnh khựng lại. Rồi {cho} sủa theo nhịp. Rồi {hong_hot} cười sặc. {sieu_nhan_hong} vẫn nhảy theo. Hắn nhảy theo bản chế khẩu hiệu của chính mình._
     hong_hot: Ối dồi ôi, ai làm nhạc này vậy? Đỉnh nóc!
     _Nửa công ty cười. Nửa còn lại nhìn bạn. Bạn là người cầm cái loa._
 * [🤝 Mời {sieu_nhan_hong} lên cắt bánh cùng {giam_doc}.]
@@ -241,8 +242,8 @@ _Đây là tiệc của bạn. Bánh kem, hoa, loa, micro. Cơ hội vàng._
 
 // ------------------------------------------------------------
 === ran_doc_2010_karaoke ===
-# ngay:20 # gio:22:00 # noi:karaoke
-_Karaoke Hát Cho Nhau Nghe, sau quán ốc. {giam_doc} đã say, cầm micro đứng trên ghế sofa._
+# ngay:20 # gio:21:00 # noi:karaoke
+_Karaoke Chú Sáu, sau quán ốc. {giam_doc} đã say, cầm micro đứng trên ghế sofa._
 giam_doc: Các em! Anh hứa! Tháng sau tăng lương 20%! Anh không ép! Anh hứa!
 _Cả phòng hét. {hong_hot} đang quay. {ke_toan} ngồi góc phòng, mặt trắng bệch._
 * [📸 Quay lại, gửi vào group công ty kèm chữ: "Sếp đã hứa. Sếp nhớ nha!"]

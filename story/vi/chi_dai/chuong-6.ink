@@ -46,13 +46,13 @@ _Đội đèn báo: thiếu 2 giàn đèn lớn. Ngân sách hết. Không có 2
 
 // ------------------------------------------------------------
 === chi_dai_2810_video_linh ===
-# ngay:28 # gio:16:00 # noi:phong_dung_phim
-_Fanpage công ty vừa đăng một video lạ. 2 phút. Dựng rất đẹp. Toàn cảnh {quan_ly_idol}: cầm hai điện thoại, ngủ gật trên xe, cười với {idol_het_thoi}. Cuối video: "Anh {quan_ly_idol} ơi, em thích anh lâu rồi."_
+# ngay:28 # gio:09:00 # noi:phong_dung_phim
+_2 giờ 10 sáng nay, fanpage công ty đăng một video lạ. 2 phút. Dựng rất đẹp. Toàn cảnh {quan_ly_idol}: cầm hai điện thoại, ngủ gật trên xe, cười với {idol_het_thoi}. Cuối video: "Anh {quan_ly_idol} ơi, em thích anh lâu rồi."_
 _Góc khung hình có một con cú nhỏ xíu._
-_{editor} ngồi trong phòng dựng, hai tay ôm đầu. Video nằm trên fanpage 6 phút, đã có 2.000 lượt xem._
+_{editor} ngồi trong phòng dựng, hai tay ôm đầu, mắt thâm như chưa ngủ. Video nằm trên fanpage 6 phút, khoảng 2.000 lượt xem, rồi mới được gỡ. Sáng nay ai cũng đã coi bản ghi màn hình._
 editor: Em… em bấm nhầm xuất bản. Em định lưu nháp. Chị ơi… em muốn biến mất.
 * [🛡️ Gỡ video xuống ngay. Rồi đứng trước cửa phòng dựng, không ai được vào.]
-    _Bạn gọi {hong_hot}: "Gỡ. Ngay. Ai hỏi thì nói lỗi kỹ thuật." Rồi bạn đứng ở cửa phòng dựng hai tiếng. {hong_hot} tới, {sales} tới, {dan_dau_tu} tới. Không ai qua._
+    _Bạn gọi {hong_hot}: "Bản ghi màn hình nào trong group thì gỡ hết. Ai hỏi thì nói lỗi kỹ thuật." Rồi bạn đứng ở cửa phòng dựng hai tiếng. {hong_hot} tới, {sales} tới, {dan_dau_tu} tới. Không ai qua._
     ~ qh("editor", 15)
     ~ cd_bao_ke(de_editor)
     ~ cd_uy(3)
@@ -71,8 +71,8 @@ editor: Em… em bấm nhầm xuất bản. Em định lưu nháp. Chị ơi… 
 
 // ------------------------------------------------------------
 === chi_dai_2910_wifi_sap ===
-# ngay:29 # gio:08:10 # noi:tang_1 # bat_buoc
-_Ngày Internet Quốc tế. Wifi sập. Cả tòa nhà. Zalo-lô chết, Phây-búc chết, Tóp-tóp chết. Chiến dịch mạng xã hội đứng hình._
+# ngay:29 # gio:09:00 # noi:tang_1 # bat_buoc
+_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập. Cả tòa nhà. Zalo-lô chết, Phây-búc chết, Tóp-tóp chết. Chiến dịch mạng xã hội đứng hình._
 _{it} bị 14 người đuổi từ tầng 2 xuống tầng trệt. Video tổng kết của {editor} kẹt ở 99%._
 _Chỉ còn một thứ chạy được: bộ đàm. Không cần wifi. Không cần sóng điện thoại._
 it: *(thở hổn hển)* Dây mạng tủ tầng 1. Bị cắn. Hoặc bị cắt. Chưa biết.
@@ -218,8 +218,8 @@ _{cho} đứng ở chân cầu thang, gầm gừ, run run._
 
 // ------------------------------------------------------------
 === chi_dai_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Họp đánh giá cuối tháng. Cả công ty. Phòng họp không đủ ghế, người đứng tới cửa._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ, phòng họp tầng 2. Họp đánh giá cuối tháng. Cả công ty. Phòng họp không đủ ghế, người đứng tới cửa._
 _{giam_doc} công bố: hợp đồng {idol_het_thoi} được gia hạn thêm 6 tháng. {quan_ly_idol} thở phào. {idol_het_thoi} tháo kính đen ra, lần đầu tiên trong năm._
 _Rồi {hr} đứng lên, cầm tập hồ sơ màu hồng._
 hr: Về điều chỉnh nhân sự… Dòng một: {thuc_tap_sinh}…
@@ -314,7 +314,7 @@ _Không ai lên. Cả công ty đang ở karaoke bên kia đường. Bạn nghe 
 _31/10. Đại Nhạc Hội Siêu Nhân. 19:30 mở màn. Còn 9 tiếng rưỡi._
 _{giam_doc} tới sân khấu trong bộ hóa trang "Ông Kẹ Ngân Hàng": áo vest đen, mặt nạ, tay cầm một cuốn sổ nợ giả. Không ai cười, vì không ai chắc anh đang đùa._
 _{thanh_xin_nghi} đứng ở chân sân khấu, gãi đầu, cầm tờ giấy xin nghỉ: "Dạ… tối nay em xin về sớm lúc 7 giờ ạ… bà ngoại em…"_
-_Bạn biết. 20:00 tối nay là chung kết trực tiếp "Giọng Ca Ước Mơ" ở Đài Tivi Hóng._
+_Bạn biết. 20:00 tối nay là chung kết trực tiếp "Giọng Ca Ước Mơ" ở Đài Tivi Hóng, thí sinh số 27. Màn hình lớn ở sân khấu sẽ chiếu đúng chương trình đó._
 * [🤝 "Đi đi. Chị thấy em trên tivi bữa giờ. Hát cho đã."]
     thanh_xin_nghi: *(ngẩng phắt lên)* Chị… biết?
     chi_dai: Biết lâu rồi. Bà ngoại em mà nghe em hát chắc khỏi bệnh liền.
@@ -330,25 +330,27 @@ _Bạn biết. 20:00 tối nay là chung kết trực tiếp "Giọng Ca Ước 
 * [😶 "Hôm nay hông ai được nghỉ."]
     _{thanh_xin_nghi} gật đầu, đi ra. Tới 7 giờ thì không thấy đâu nữa._
     ~ qh("thanh_xin_nghi", -10)
-- _Bạn bấm bộ đàm. Kiểm tra lần cuối: đèn, loa, máy phát, lối thoát hiểm, lối của {sieu_nhan_hong}, lối của {cho}._
+- ~ chung_tien_do_dem_hong = cd_tien_do
+_Bạn bấm bộ đàm. Kiểm tra lần cuối: đèn, loa, máy phát, lối thoát hiểm, lối của {sieu_nhan_hong}, lối của {cho}._
 _Mọi tiếng trả lời đều là: "Rõ, chị Đại."_
 -> END
 
 // ------------------------------------------------------------
 === chi_dai_3110_canh_ga ===
-# ngay:31 # gio:19:30 # noi:canh_ga_dem_hong # bat_buoc
+# ngay:31 # gio:19:00 # noi:canh_ga_dem_hong # bat_buoc
 ~ cd_dang_quay = true
-_19:30. Sân khấu Đại Nhạc Hội Siêu Nhân. Cả nghìn khán giả. Truyền hình trực tiếp. Mở màn bằng phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
-_Bạn đứng sau cánh gà, bộ đàm bên tai, tay đặt lên cầu dao tổng._
+~ chung_tien_do_dem_hong = cd_tien_do
+_19:00. Cánh gà Đại Nhạc Hội Siêu Nhân. Còn 30 phút nữa mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}. 20:00, màn hình lớn chiếu trực tiếp chung kết của {thanh_xin_nghi} từ Đài Tivi Hóng. Rồi tới tiết mục chính._
+_Bạn đứng sau cánh gà, bộ đàm bên tai, tay đặt lên cầu dao tổng. Đài truyền hình đã dựng máy quay ở hậu trường._
 {
 - cd_tien_do >= 80:
-    _Mọi thứ chạy như đồng hồ. Đèn đổi màu đúng nhịp. Loa trong. Khói lan đúng lúc._
+    _Chạy thử lần cuối: đèn đổi màu đúng nhịp, loa trong, khói lan đúng lúc. Mọi thứ như đồng hồ._
 - cd_tien_do >= 50:
-    _Mọi thứ chạy. Có lúc loa trái rè một nhịp, có lúc đèn chậm nửa giây. Khán giả không để ý. Bạn để ý hết._
+    _Chạy thử lần cuối: loa trái rè một nhịp, đèn chậm nửa giây. Khán giả sẽ không để ý. Bạn để ý hết._
 - else:
-    _Đèn chớp. Loa rè. MC hỏi qua bộ đàm "Em ra lúc nào?" ba lần. Bạn nghiến răng._
+    _Chạy thử lần cuối: đèn chớp, loa rè, một góc sân khấu kêu "rắc". MC hỏi qua bộ đàm "Em ra lúc nào?" ba lần. Bạn nghiến răng._
 }
-_20:10. {sieu_nhan_hong} chuẩn bị bước ra. Bộ đàm của Bác {bac_bao_ve} rè rè: "Cổng sau. Thằng áo nhiều túi, máy ảnh ống dài. Nó vào được rồi."_
+_Bộ đàm của Bác {bac_bao_ve} rè rè: "Cổng sau. Thằng áo nhiều túi, máy ảnh ống dài. Nó vào được rồi."_
 _Paparazzi Mắt Diều Hâu. Đang đi về phía phòng chờ của {sieu_nhan_hong}._
 * [🛡️ Bỏ cầu dao cho {it}, tự đi chặn paparazzi.]
     _Bạn đứng chắn ở cửa phòng chờ. Gã paparazzi giơ máy ảnh: "Một tấm thôi, một tấm!"_
@@ -360,17 +362,11 @@ _Paparazzi Mắt Diều Hâu. Đang đi về phía phòng chờ của {sieu_nhan
     _Mười giây sau, tiếng sủa vang khắp hậu trường. Gã paparazzi bị {cho} rượt chạy vòng quanh cột điện quấn đèn hồng, ba vòng, rồi ra cổng._
     ~ cd_paparazzi_bi_duoi = true
     ~ qh("cho", 5)
-    ~ follow(10000)
 * {cd_no_khi >= 70} [🥋 Ra Tay. Năm giây.]
-    _Bạn đi thẳng tới, giật máy ảnh, rút thẻ nhớ, trả máy. Năm giây. Đúng lúc đó, một camera truyền hình lia qua._
+    _Bạn đi thẳng tới, giật máy ảnh, rút thẻ nhớ, trả máy. Năm giây. Đúng lúc đó, máy quay của đài truyền hình lia qua._
     ~ cd_nk(30)
     ~ cd_paparazzi_bi_duoi = true
     ~ scandal()
-    { RANDOM(1, 10) <= 5:
-        ~ follow(50000)
-    - else:
-        ~ follow(-80000)
-    }
 * [😶 Giữ cầu dao. Sân khấu quan trọng hơn.]
     _Bạn không rời cầu dao. Gã paparazzi lách vào được phòng chờ. Bạn nghe tiếng màn trập máy ảnh, liên tục._
     ~ cd_nk(10)
@@ -378,36 +374,20 @@ _Paparazzi Mắt Diều Hâu. Đang đi về phía phòng chờ của {sieu_nhan
     ~ cd_vua_no = false
     -> chi_dai_tudo_bung_no
 }
-_20:20. {sieu_nhan_hong} bước ra sân khấu. Hát. Múa. Rồi giữa bài, đứng im. Hai tay đặt lên chiếc mũ hồng._
-_Bộ đàm của bạn im lặng. Cả nghìn người im lặng._
-* [📻 Bộ đàm cho đội đèn: "Rọi đèn trắng. Một luồng. Vào giữa."]
-    _Một luồng đèn trắng rọi xuống. {sieu_nhan_hong} tháo mũ. Mặt thật. Một anh chàng bình thường, mắt đỏ, đang cười._
-    _Khán giả im ba giây. Rồi đứng dậy. Rồi vỗ tay. Rồi hét tên. Tên thật._
+_19:20. {sieu_nhan_hong} ngồi trong phòng chờ, cầm cue sheet. Tới dòng cuối, cậu ngẩng lên hỏi bạn: "Chị Đại… nếu giữa bài em đưa tay lên mũ, thì đèn sao?"_
+* [📻 "Đèn trắng. Một luồng. Rọi vào giữa. Em muốn tháo thì tháo, chị lo phần sáng."]
+    _{sieu_nhan_hong} im một lúc lâu. Rồi gật đầu, rất chậm._
+    sieu_nhan_hong: Đèn trắng thì… chắc em tháo.
     ~ nguyen_thao_mu_dem_hong = true
     ~ cd_td(3)
-* [🛡️ Bộ đàm: "Tắt đèn sân khấu 5 giây. Cho cậu ấy chọn trong bóng tối."]
-    _Đèn tắt. Năm giây. Khi đèn bật lại, {sieu_nhan_hong} vẫn đội mũ. Khán giả gào lên. Có những thứ nên để bí ẩn._
-* [😶 Không làm gì. Đây là khoảnh khắc của cậu ấy.]
-    _{sieu_nhan_hong} đứng đó rất lâu. Rồi hạ tay xuống, cười, hát tiếp._
-- -> chi_dai_3110_ket_dem
-
-// ------------------------------------------------------------
-=== chi_dai_3110_ket_dem ===
-# ngay:31 # gio:22:00 # noi:san_khau_dem_hong
-~ cd_dang_quay = false
-{
-- cd_tien_do >= 80:
-    _22:00. Bài cuối. Pháo giấy hồng. Khán giả hát theo "Hồng là thái độ" tới khản cổ. Trên mạng: \#DemHong lên top 3 xu hướng._
-    ~ follow(150000)
-- cd_tien_do >= 50:
-    _22:00. Show kết thúc. Không hoàn hảo, nhưng tròn trịa. Khán giả về, vừa đi vừa hát._
-    ~ follow(40000)
-- else:
-    _22:00. Một góc sân khấu sụp xuống trong bài cuối. Không ai bị thương. Nhưng clip "sân khấu sập" chạy khắp mạng nhanh hơn mọi bài hát._
-    ~ follow(-100000)
-}
-_Bạn tháo bộ đàm ra. Nó nóng như vừa chạy cả một tháng. Đúng là nó vừa chạy cả một tháng._
--> chi_dai_3010_danh_gia
+* [🛡️ "Tắt đèn 5 giây. Em chọn trong bóng tối, không ai thấy em chọn."]
+    _{sieu_nhan_hong} cười sau lớp mũ: "Năm giây là đủ cho em đổi ý hai lần."_
+* [😶 "Đó là khoảnh khắc của em. Chị không quyết giùm."]
+    _{sieu_nhan_hong} gật đầu, gấp cue sheet bỏ túi._
+- ~ cd_dang_quay = false
+~ chung_tien_do_dem_hong = cd_tien_do
+_19:30. Đèn khán đài tắt. Bạn đặt tay lên cầu dao tổng. Bộ đàm rè rè: "Rõ, chị Đại."_
+-> END
 
 // ------------------------------------------------------------
 === chi_dai_tudo_bung_no ===
@@ -420,10 +400,10 @@ _Nộ Khí: 100. Bạn nghe tiếng máu dồn lên tai, như tiếng bao cát �
     ~ cd_no_tren_song = true
     ~ scandal()
     { RANDOM(1, 10) <= 5:
-        ~ follow(-50000)
+        ~ follow(-30000)
     - else:
         _Một phút sau, có người cắt clip, ghép chữ "CHỊ ĐẠI HỒNG". Không ai đoán được nó sẽ đi về đâu._
-        ~ follow(30000)
+        ~ follow(15000)
     }
 - else:
     _May mà không có máy quay. Bạn đập tay xuống bàn ba lần, đi ra sân thượng, hét một tiếng vào trời chiều. Con chim trên cây phơi đồ bay mất._

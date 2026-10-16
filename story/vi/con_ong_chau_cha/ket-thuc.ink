@@ -5,11 +5,11 @@
 // ============================================================
 
 // ------------------------------------------------------------
-// Đánh giá kết thúc. Chốt sau họp đánh giá 30/10, chiếu sau Đại Nhạc Hội Siêu Nhân.
+// Đánh giá kết thúc. Game gọi sau chung_3110_dem_hong (đã chốt ket_thuc_su_nghiep, chung_cong_ty_song).
 === con_ong_chau_cha_3010_danh_gia ===
-# ngay:31 # gio:23:30 # bat_buoc # dieu_kien:sau Dem Hong, chot ket thuc cua Long
+# ngay:31 # gio:23:00 # bat_buoc # dieu_kien:sau_dem_hong
 // 1. Bí mật: hai người đề cử nhau
-{ qh_truong_phong >= 60 && long_mo_phong_thu_nhat && long_de_cu_nhat && long_nhat_de_cu_long:
+{ long_mo_phong_thu_nhat && long_de_cu_nhat && long_nhat_de_cu_long:
     ~ chot_ket_thuc("ban_pho_hai_nguoi")
     -> con_ong_chau_cha_kt_ban_pho_hai_nguoi
 }
@@ -18,23 +18,23 @@
     ~ chot_ket_thuc("bai_hat_bi_cuop")
     -> con_ong_chau_cha_kt_bai_hat_bi_cuop
 }
-// 3. Mãi là cháu
-{ long_nhan_ghe && long_o_du >= 70:
-    ~ chot_ket_thuc("mai_la_chau")
-    -> con_ong_chau_cha_kt_mai_la_chau
-}
-// 4. Nhạc sĩ không cần ô
-{ long_bai_hat >= 100 && long_tang_bai_nguyen && not long_ban_cho_ll && long_ghi_ten && (long_nguoi_hat == "nguyen" || long_nguoi_hat == "song_ca"):
+// 3. Nhạc sĩ không cần ô: bài được hát ở Đại Nhạc Hội, ghi đúng tên Long
+{ long_bai_hat >= 80 && long_ghi_ten && long_bai_phat_hanh && long_nguoi_hat != "":
     ~ chot_ket_thuc("nhac_si_khong_can_o")
     -> con_ong_chau_cha_kt_nhac_si_khong_can_o
 }
+// 4. Mãi là cháu
+{ long_nhan_ghe && long_o_du >= 60:
+    ~ chot_ket_thuc("mai_la_chau")
+    -> con_ong_chau_cha_kt_mai_la_chau
+}
 // 5. Tự thuê trọ
-{ long_tu_lap >= 80 && long_o_du <= 20 && long_tu_choi_ghe && long_so_ca_lam_them >= 5:
+{ long_tu_lap >= 70 && long_o_du <= 30 && long_tu_choi_ghe && long_so_ca_lam_them >= 2:
     ~ chot_ket_thuc("tu_thue_tro")
     -> con_ong_chau_cha_kt_tu_thue_tro
 }
-// 6. Chú ơi cứu cháu: chiến dịch thất bại, chưa tự đứng được
-{ nguoi_theo_doi < 1000000 && long_tu_lap < 30:
+// 6. Chú ơi cứu cháu: chưa tự đứng được
+{ long_tu_lap < 40:
     ~ chot_ket_thuc("chu_oi_cuu_chau")
     -> con_ong_chau_cha_kt_chu_oi_cuu_chau
 }
@@ -43,7 +43,7 @@
     ~ chot_ket_thuc("mai_la_chau")
     -> con_ong_chau_cha_kt_mai_la_chau
 }
-{ long_tu_lap >= 40:
+{ long_tu_lap >= 55 && long_so_ca_lam_them >= 1:
     ~ chot_ket_thuc("tu_thue_tro")
     -> con_ong_chau_cha_kt_tu_thue_tro
 }
@@ -54,17 +54,19 @@
 // 😄 🎵 NHẠC SĨ KHÔNG CẦN Ô
 === con_ong_chau_cha_kt_nhac_si_khong_can_o ===
 # noi:san_khau_dem_hong
-_Đại Nhạc Hội Siêu Nhân. 20 giờ 30. Sân khấu tối om. Một vệt đèn hồng rọi xuống giữa sân khấu._
-{ long_nguoi_hat == "song_ca":
+_Bạn vẫn nhớ từng giây của tiết mục 20 giờ. Sân khấu tối om. Một vệt đèn hồng rọi xuống giữa sân khấu._
+{ long_nguoi_hat:
+- "song_ca":
     _{sieu_nhan_hong} và {idol_het_thoi} đứng chung một vệt sáng. Một người từng là siêu sao, một người đang muốn thành siêu sao._
+- "phat":
+    _Sân khấu không có {sieu_nhan_hong}. {idol_het_thoi} đứng một mình trong vệt sáng hồng, không kính đen, giọng khàn hơn hồi 2015. Hay hơn hồi 2015._
 - else:
     _{sieu_nhan_hong} đứng một mình, tay cầm micro, tay kia cầm chiếc USB nhỏ bạn tặng hôm sinh nhật, như cầm bùa hộ mệnh._
 }
 _Nhạc dạo "Hồng Là Thái Độ". Tiếng đàn ghi-ta mộc, đúng hợp âm bạn đã gảy 100 lần ở phòng thu tầng 30._
-sieu_nhan_hong: Hồng không phải màu… Hồng là thái độ…
-_Điệp khúc lần đầu: khán đài im phăng phắc. Mười nghìn người nín thở._
-_Điệp khúc lần thứ hai: cả khán đài hát theo. Mười nghìn người hát câu bạn viết lúc 3 giờ sáng._
-_Đoạn bridge: "Sau chiếc mũ là một người bình thường. Người bình thường cũng cần ai đó gọi tên." {sieu_nhan_hong} hát câu đó, nghẹn một nhịp, rồi hát tiếp._
+_Điệp khúc lần đầu: khán đài im phăng phắc._
+_Điệp khúc lần thứ hai: cả khán đài hát theo câu bạn viết lúc 3 giờ sáng._
+_Đoạn bridge: "Sau chiếc mũ là một người bình thường. Người bình thường cũng cần ai đó gọi tên." Người hát nghẹn một nhịp, rồi hát tiếp._
 _Bài hát kết thúc. Màn hình lớn chạy chữ, chậm rãi:_
 _"Nhạc & lời: {con_ong_chau_cha}."_
 _Không có chữ "cháu" nào phía trước._
@@ -79,17 +81,22 @@ _Lần đầu tiên trong đời, như vậy là đủ._
 // 😄 🏠 TỰ THUÊ TRỌ
 === con_ong_chau_cha_kt_tu_thue_tro ===
 # noi:hem_69
+{ chung_cong_ty_song:
+    _Công ty qua được đêm 31/10. Chú vẫn là giám đốc. Nhưng bạn đã nói "cháu hông nhận", và lần này bạn giữ lời._
+- else:
+    _Công ty không qua được đêm 31/10. Bạn không còn ghế nào để từ chối. Nhưng bạn vẫn có hai bàn tay._
+}
 _Tháng 11. Căn penthouse tầng 30 đã có chủ mới. Bể cá to hơn phòng trọ đã được chuyển đi đâu đó._
 _Hẻm 69. Hẻm sâu, hai xe máy tránh nhau phải nín thở. Bạn xách một cây đàn và một cái vali. Hết._
 _Phòng 15m². Cửa sổ nhìn thẳng vào tường nhà bên. Quạt trần kêu cót két. Bạn giang tay ra, chạm được hai bức tường._
 ba_tu: Nay mùng mấy rồi con? Mùng 5 là đóng tiền đó nghe. Đặt cọc một tháng.
-_Bạn mở ví. Lương tháng 10, tiền 5 ca làm "Rồng", tiền hoa hồng 3 nhãn hàng. Bạn đếm từng tờ. Từng tờ một. Không có thẻ nào._
+_Bạn mở ví. Lương tháng 10, tiền {long_so_ca_lam_them} ca làm "Rồng"{ long_so_nhan_hang > 0:, tiền hoa hồng {long_so_nhan_hang} nhãn hàng}. Bạn đếm từng tờ. Từng tờ một. Không có thẻ nào._
 ba_tu: Đủ rồi con. *(nhìn bạn từ đầu tới chân)* Nhìn con hông giống người ở trọ.
 con_ong_chau_cha: Dạ. Giờ thì giống rồi bà.
 _Tối đó, bạn dựng cây đàn vào góc tường. Trải chiếu. Nằm nhìn trần nhà có một vệt ố hình con cá._
 _10 giờ đêm. Nhà bên, ông chú bắt đầu hát karaoke. Lạc tông. To. Bài "Công Viên"._
 _"Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên…"_
-_Ở penthouse, bạn sẽ đóng cửa kính, bật máy lọc không khí. Ở đây, bạn mở cửa sổ ra._
+_Ở penthouse, bạn từng đóng cửa kính, bật máy lọc không khí. Ở đây, bạn mở cửa sổ ra._
 _Bạn bấm ghi âm. Tiếng ông chú hát. Tiếng xe máy. Tiếng bà Tư la ai đó quên tắt đèn. Tiếng một con chó sủa cuối hẻm._
 _Bạn mỉm cười. Bài thứ hai sẽ bắt đầu từ đây._
 { qh_thuc_tap_sinh >= 40:
@@ -126,12 +133,17 @@ _Ba người ăn bánh mì trên bậc thềm sân thượng. Không ai nhắc t
 // 😢 👑 MÃI LÀ CHÁU
 === con_ong_chau_cha_kt_mai_la_chau ===
 # noi:phong_pho_giam_doc
+{ chung_cong_ty_song:
+    _Công ty qua được đêm 31/10. Ghế Phó Giám đốc vẫn còn đó cho bạn ngồi._
+- else:
+    _Công ty trượt hợp đồng. Chú bán xe, bán đồng hồ, xin ngân hàng giãn nợ. Thứ duy nhất chú giữ lại được là cái ghế cho cháu._
+}
 _Tháng 11. Phòng Phó Giám đốc. Vách kính. Ghế da. Bảng tên mạ vàng: "Phó Giám đốc: {con_ong_chau_cha}"._
-_Trên bàn có chứng chỉ "Quản Lý Có Tâm", đóng khung. Có một ly cà phê kem. Có một chồng giấy chờ ký, nút "Ký luôn cho lẹ" giờ là một cây bút thật._
+_Trên bàn có {long_co_chung_chi:chứng chỉ "Quản Lý Có Tâm", đóng khung|cuốn sách "Khóa Quản Lý Có Tâm", chưa đọc quá trang 3}. Có một ly cà phê kem. Có một chồng giấy chờ ký, nút "Ký luôn cho lẹ" giờ là một cây bút thật._
 _Dưới gầm bàn là hộp đàn. Phủ một lớp bụi mỏng. Bạn không nhớ lần cuối mở nó là khi nào._
 _Cửa gõ nhẹ. {thuc_tap_sinh} bước vào, mặc y chang bộ vest bạn mặc hôm qua, hai tay bưng ly cà phê._
 thuc_tap_sinh: Dạ anh {con_ong_chau_cha} đỉnh quá ạ! Dạ… sếp {con_ong_chau_cha} đỉnh quá ạ!
-_Bạn cười. Bạn nhận ly cà phê. Bạn nói "Chill đi anh Duy". Mọi thứ đều đúng như mọi khi._
+_Bạn cười. Bạn nhận ly cà phê. Bạn nói "Chill đi anh {thuc_tap_sinh}". Mọi thứ đều đúng như mọi khi._
 _Ngoài kia, ai đi qua cũng gật đầu: "Chào sếp."_
 _Trong đầu bạn, bạn vẫn nghe rõ, rất rõ, mọi người đang nói: "Cháu sếp."_
 { long_bai_hat >= 50:
@@ -175,8 +187,12 @@ _{cho} thức dậy, dụi đầu vào chân bạn. Ít nhất có một ngườ
 // 😢 💸 CHÚ ƠI CỨU CHÁU
 === con_ong_chau_cha_kt_chu_oi_cuu_chau ===
 # noi:atm
-_Tháng 11. Siêu Nhân Hồng không đạt mục tiêu. {cong_ty} phải hoàn 10 tỷ. Biển hiệu chữ G bảy màu đã được tháo xuống._
-_11 giờ đêm. Một cây ATM ở góc Đại lộ Kẹt Xe. Bạn đứng trước màn hình, đút thẻ vào._
+{ chung_cong_ty_song:
+    _Tháng 11. Công ty qua được đêm 31/10. Nhưng khoản thế chấp biệt thự vẫn đến hạn 15/11, và chú bảo từ nay mỗi người tự lo cho mình. Căn penthouse đã bán. Thẻ phụ đã khóa._
+- else:
+    _Tháng 11. Siêu Nhân Hồng không đạt mục tiêu. {cong_ty} phải hoàn 10 tỷ. Biển hiệu chữ G bảy màu đã được tháo xuống._
+}
+_11 giờ đêm. Một cây ATM ở góc Đại lộ Kẹt Xe. Bạn đứng trước màn hình, đút cái thẻ cuối cùng vào._
 _Màn hình nhấp nháy: "Thẻ của quý khách đã bị thu giữ. Vui lòng liên hệ ngân hàng."_
 _Máy nuốt thẻ. Không trả lại._
 _Bạn đứng đó, tay vẫn đưa ra như chờ cái thẻ chui ra. Không có gì chui ra._
@@ -186,7 +202,11 @@ _Lần này chú bắt máy._
 _Im lặng. Rất lâu. Bạn nghe tiếng gió đầu dây bên kia. Có lẽ chú cũng đang đứng ngoài đường._
 con_ong_chau_cha: Chú ơi… thẻ cháu bị nuốt.
 _Im lặng tiếp. Rồi giọng chú, khàn đặc, giọng Bắc chưa bao giờ nghe mệt như vậy:_
-giam_doc: Chú cũng đang không biết gọi ai, {con_ong_chau_cha} ạ.
+{ chung_cong_ty_song:
+    giam_doc: Chú vừa giữ được công ty, {con_ong_chau_cha} ạ. Chú không giữ thêm được cháu nữa đâu. Cháu phải tự đứng.
+- else:
+    giam_doc: Chú cũng đang không biết gọi ai, {con_ong_chau_cha} ạ.
+}
 _Hai chú cháu cùng im lặng. Mỗi người một đầu dây._
 _Không ai cúp máy._
 _Cây ATM tắt màn hình, chuyển sang chế độ chờ. Ánh sáng xanh hắt lên mặt bạn. Trên kính, bạn thấy mình: một người 28 tuổi, chưa từng tự đứng một lần nào._

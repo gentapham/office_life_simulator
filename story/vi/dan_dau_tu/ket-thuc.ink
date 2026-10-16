@@ -1,72 +1,44 @@
 // ============================================================
-// DÂN ĐẦU TƯ: CHƯƠNG · ĐÁNH GIÁ 30/10 & 6 KẾT THÚC
-// Thứ tự ưu tiên:
-//   1. du_dinh_ben_kia    (bán số liệu thật cho LL + Nguyên ký LL / chiến dịch thất bại)
-//   2. con_cai_nit        (Tài Khoản = 0, Sổ Nợ ≥ 40 triệu)
-//   3. chu_no_vay_thanh   (≥ 5 chủ nợ ghét + bỏ bàn chủ nợ 24/10)
-//   4. thu_tay_g          (bí mật)
-//   5. nha_phan_tich
-//   6. so_no_ve_0
-//   Không khớp điều kiện nào: chọn kết thúc gần nhất theo chỉ số.
+// DÂN ĐẦU TƯ: CHƯƠNG · ĐÁNH GIÁ & 6 KẾT THÚC
+// Game gọi dan_dau_tu_3010_danh_gia sau Đại Nhạc Hội Siêu Nhân (23:00 – 23:45 ngày 31/10),
+// khi ket_thuc_su_nghiep và chung_cong_ty_song đã chốt.
+// Thứ tự xét (docs/so-tay-su-that.md mục 12):
+//   Bí mật: Thư Tay Của G      (thân Bác Bình ≥ 60, trả hoặc hứa trả Bác Bình trước, Độ Chuẩn ≥ 80, nhánh trang 47)
+//   Vui:    Nhà Phân Tích       (Độ Chuẩn ≥ 80, thuyết phục sếp 21/10; văn bản đổi theo số phận công ty)
+//           Sổ Nợ Về 0          (có lộ trình trả nợ 24/10 hoặc đã hết nợ, nợ ≤ 20 triệu,
+//                                không tiền LL, không mua coin sau 18/10)
+//   Buồn:   Đu Đỉnh Bên Kia     (bán số liệu thật cho LL)
+//           Chủ Nợ Vây Thành    (nhiều chủ nợ ghét, hoặc bỏ bàn chủ nợ 24/10)
+//           Còn Cái Nịt         (còn lại: nợ chưa trả xong, không ai giữ)
 // ============================================================
 
 === dan_dau_tu_3010_danh_gia ===
-# ngay:30 # gio:16:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp đánh giá cuối tháng. Bạn là người trình chiếu số liệu cả tháng. Máy chiếu bật lên. Laptop của bạn có hai cửa sổ đang mở._
-_Cửa sổ nào hiện lên trước cả công ty, tùy cả tháng qua bạn nhìn cái nào nhiều hơn._
-{ ddt_man_hinh_trai >= ddt_man_hinh_phai:
-    _Màn hình trái. Bảng số liệu chiến dịch, sạch sẽ, có ghi chú tay ở từng mốc. Cả phòng im lặng đọc._
-    giam_doc: Cái này… em làm cả tháng à?
-    dan_dau_tu: Dạ. Mỗi ngày.
-    ~ uy_tin = uy_tin + 5
+# ngay:31 # gio:23:00 # noi:san_khau_dem_hong # dieu_kien:sau_dem_hong # danh_gia
+_23 giờ. Khán đài vắng dần. Bạn ngồi trên bậc thấp nhất, điện thoại úp trên đùi. Con số cuối cùng đã đứng yên._
+{ chung_cong_ty_song:
+    _{cong_ty} còn sống. Bạn biết trước cả khi màn hình lớn tắt: bạn đọc số giỏi, và lần này số đi đúng chiều._
 - else:
-    _Màn hình phải. Một cây nến đỏ to tướng phủ kín bức tường phòng họp. Dòng chữ "$HONG −99%" sáng chói._
-    _Cả phòng im lặng. Rồi {hong_hot} bật cười trước. Bạn tắt nó đi, tay run._
-    giam_doc: Ờ… Em chiếu lại cái kia đi.
-    ~ uy_tin = uy_tin - 5
+    _Con số dừng lại dưới mức cần. Bạn biết từ 22 giờ, khi đường tăng bắt đầu nằm ngang. Đọc số giỏi, đôi khi là biết tin xấu sớm hơn người khác một tiếng._
 }
-hr: Anh {dan_dau_tu} ơi, em chỉ muốn cùng anh nhìn lại hành trình. Sổ nợ của anh hôm nay: {ddt_so_no} đồng. Độ chuẩn số liệu: {ddt_do_chuan}.
-{ ddt_bao_ll:
-    giam_doc: Và anh cảm ơn em vì đã báo chuyện LL mua số liệu. Người khác thì đã cầm 15 triệu rồi.
-}
-~ ddt_danh_gia_chon()
-{ ket_thuc_nhan_vat:
-- "du_dinh_ben_kia": -> dan_dau_tu_kt_du_dinh_ben_kia
-- "con_cai_nit": -> dan_dau_tu_kt_con_cai_nit
-- "chu_no_vay_thanh": -> dan_dau_tu_kt_chu_no_vay_thanh
-- "thu_tay_g": -> dan_dau_tu_kt_thu_tay_g
-- "nha_phan_tich": -> dan_dau_tu_kt_nha_phan_tich
-- else: -> dan_dau_tu_kt_so_no_ve_0
-}
-
-// Chọn kết thúc theo thứ tự ưu tiên
-=== function ddt_danh_gia_chon() ===
 {
-- ddt_ban_so_lieu_ll and (not ddt_chien_dich_on()):
-    ~ chot_ket_thuc("du_dinh_ben_kia")
-- ddt_tai_khoan <= 0 and ddt_so_no >= 40000000:
-    ~ chot_ket_thuc("con_cai_nit")
-- ddt_dem_chu_no_ghet() >= 5 and ddt_bo_ban_chu_no:
-    ~ chot_ket_thuc("chu_no_vay_thanh")
-- qh_bac_bao_ve >= 80 and ddt_tra_binh_dau_tien and ddt_do_chuan >= 85 and ddt_nhanh_trang_47:
+- qh_bac_bao_ve >= 60 && (ddt_tra_binh_dau_tien || ddt_hua_binh) && ddt_do_chuan >= 80 && ddt_nhanh_trang_47 && not ddt_ban_so_lieu_ll:
     ~ chot_ket_thuc("thu_tay_g")
-- ddt_do_chuan >= 80 and ddt_thuyet_phuc_21 and ddt_chien_dich_on():
+    -> dan_dau_tu_kt_thu_tay_g
+- ddt_do_chuan >= 80 && ddt_thuyet_phuc_21 && not ddt_ban_so_lieu_ll:
     ~ chot_ket_thuc("nha_phan_tich")
-- ddt_so_no == 0 and (not ddt_dung_tien_ll) and (not ddt_mua_sau_18):
+    -> dan_dau_tu_kt_nha_phan_tich
+- (ddt_so_no == 0 || ddt_ban_chu_no_ok) && ddt_so_no <= 20000000 && not ddt_dung_tien_ll && not ddt_mua_sau_18:
     ~ chot_ket_thuc("so_no_ve_0")
-// --- Không khớp hẳn: chọn gần nhất ---
+    -> dan_dau_tu_kt_so_no_ve_0
 - ddt_ban_so_lieu_ll:
     ~ chot_ket_thuc("du_dinh_ben_kia")
-- ddt_so_no >= 30000000:
-    ~ chot_ket_thuc("con_cai_nit")
-- ddt_dem_chu_no_ghet() >= 3:
+    -> dan_dau_tu_kt_du_dinh_ben_kia
+- ddt_dem_chu_no_ghet() >= 3 || ddt_bo_ban_chu_no:
     ~ chot_ket_thuc("chu_no_vay_thanh")
-- ddt_do_chuan >= 70:
-    ~ chot_ket_thuc("nha_phan_tich")
-- ddt_so_no <= 5000000:
-    ~ chot_ket_thuc("so_no_ve_0")
+    -> dan_dau_tu_kt_chu_no_vay_thanh
 - else:
     ~ chot_ket_thuc("con_cai_nit")
+    -> dan_dau_tu_kt_con_cai_nit
 }
 
 // ------------------------------------------------------------

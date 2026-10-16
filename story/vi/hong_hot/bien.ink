@@ -40,6 +40,8 @@ VAR hh_nhanh_nguoi_doc_email = false // Nhánh "Người đọc email sếp" (th
 VAR hh_biet_email_tuan = false       // Tin "email chưa gửi của Tuấn"
 VAR hh_nhan_vien_moi = false         // Được hứa đề bạt trưởng nhóm
 VAR hh_co_so_oanh = false            // Nhặt được sổ ghi chép của Oánh trên xe
+VAR hh_tam_su_hr = false            // 15/10 trong bóng tối đã kể với Tuấn mình là admin
+VAR hh_live_nham_ngay = 0           // Ngày lỡ bấm live (20, 22 hoặc 30)
 
 // ============================================================
 // HÀM RIÊNG

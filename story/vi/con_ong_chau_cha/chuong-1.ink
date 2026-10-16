@@ -154,25 +154,6 @@ _Cả phòng gật đầu như những người không hiểu gì. Mọi ngườ
 - -> END
 
 // ------------------------------------------------------------
-=== con_ong_chau_cha_0210_cuoi_cham_cong ===
-# ngay:2 # gio:09:05 # noi:sanh_tang_tret
-_Ngày Nụ cười Thế giới. {hr} đứng cạnh máy chấm công, cầm tấm bảng "CƯỜI RỒI MỚI CHẤM". Bạn tới trễ, máy đã ghi tên bạn vào "quỹ trà sữa"._
-hr: {con_ong_chau_cha}. Cười một cái cho hành trình nha em. Mà em trễ 1 tiếng 5 phút. Phạt 50.000 cho quỹ trà sữa.
-* [💵 Đưa 50.000đ bằng tiền mặt của mình.]
-    ~ tien_cong(-50000)
-    ~ long_tl(2)
-    hr: Em tự trả hả? *(ghi chú)* Đáng ghi nhận.
-* [☂️ "Anh ghi vô… phần của chú em được hông?"]
-    hr: *(cười rộng hơn)* Em rảnh không, chiều lên phòng anh uống trà xíu.
-    ~ long_od(2)
-    ~ long_tl(-3)
-    ~ cang_thang(5)
-* [😁 Cười thật tươi.]
-    hr: Đẹp. Nhưng vẫn 50.000 nha em.
-    ~ tien_cong(-50000)
-- -> END
-
-// ------------------------------------------------------------
 === con_ong_chau_cha_0210_tra_sua ===
 # ngay:2 # gio:15:00 # noi:phong_san_xuat
 _Trà sữa thứ Sáu. Quỹ trà sữa vừa đủ cho 15 ly. Công ty có 22 người._

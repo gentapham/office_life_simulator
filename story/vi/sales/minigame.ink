@@ -67,9 +67,6 @@ _Lon thứ 6. Thanh "Tỉnh Táo" chạm đáy. Bạn nghe chính mình nói: "T
 ~ nghi(-30)
 ~ cang_thang(10)
 _Sáng hôm sau, bạn tỉnh dậy với một tin nhắn: "Chú chờ Siêu Nhân Hồng thứ 7 này nha con." Bạn không nhớ đã hứa gì._
-{ sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
 -> END
 
 // ============================================================
@@ -103,9 +100,6 @@ dan_dau_tu: *(dừng lại, chỉ vào màn hình)* Ủa em, trục tung bắt �
 ~ cang_thang(10)
 ~ qh("dan_dau_tu", -3)
 _Mất thưởng. {dan_dau_tu} nhún vai: "Anh vẽ chart cả đời, em lừa ai chứ không lừa được anh."_
-{ sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
 -> END
 
 // ============================================================

@@ -36,7 +36,7 @@ _Chủ cuốn sổ, {bien_kich}, đang ngủ gục ở ghế trên._
 # ngay:17 # gio:15:00 # noi:bai_bien_vung_tau
 _Trò chơi tập thể bắt buộc: "Bịt mắt bắt sếp". Sếp bị bịt mắt, đi lò dò trên cát. {sieu_nhan_hong} chơi nhiệt tình nhất, ngã dập mặt ba lần._
 * [🔴 Live toàn bộ trò chơi.]
-    ~ hh_follow(50000)
+    ~ hh_follow(10000)
     ~ hh_tt(10)
     ~ hh_so_live_sach = hh_so_live_sach + 1
     _Clip Siêu Nhân Hồng ngã cắm đầu xuống cát, chân giơ lên trời, lên xu hướng. Caption của bạn: "Hồng cắm rễ"._
@@ -44,7 +44,7 @@ _Trò chơi tập thể bắt buộc: "Bịt mắt bắt sếp". Sếp bị bị
     ~ qh("sieu_nhan_hong", 5)
     ~ qh("giam_doc", 3)
     ~ cang_thang(-15)
-    ~ hh_follow(20000)
+    ~ hh_follow(5000)
     _Sếp bắt được bạn. Bạn phải hát. Bạn hát "Công Viên" sai tông. {idol_het_thoi} nhăn mặt nhưng vẫn vỗ tay._
 - -> END
 
@@ -72,8 +72,8 @@ _Điện thoại bạn đang quay. Cả hai câu đều nằm gọn trong khung 
 
 // ------------------------------------------------------------
 === hong_hot_1710_lua_trai_live ===
-# ngay:17 # gio:21:30 # noi:bai_bien_vung_tau # bat_buoc
-_Đêm lửa trại. Điện thoại của bạn vẫn đang live, góc máy chĩa về đống lửa._
+# ngay:17 # gio:20:30 # noi:bai_bien_vung_tau # bat_buoc
+_Lửa trại bắt đầu từ 20 giờ. Đã nửa tiếng._ Điện thoại của bạn vẫn đang live, góc máy chĩa về đống lửa._
 _{sieu_nhan_hong} vừa tháo mũ. Giọng nhỏ, run run: "Hồi nhỏ… anh từng ăn hiếp một thằng nhóc trong xóm… nhốt nó trong nhà kho…"_
 _Góc màn hình: 🔴 LIVE · 8.412 người xem. Bên kia đống lửa, {ran_doc} ngồi bất động như tượng._ # hen_gio:3
 * [✂️ Tắt live ngay.]
@@ -82,13 +82,13 @@ _Góc màn hình: 🔴 LIVE · 8.412 người xem. Bên kia đống lửa, {ran_
     ~ hh_so_live_sach = hh_so_live_sach + 1
     _Mất 8.000 người xem đang tăng. Nhưng không ai thấy mặt thật của {sieu_nhan_hong}._
 * [🔥 Xoay máy về phía đống lửa, giữ tiếng.]
-    ~ hh_follow(60000)
+    ~ hh_follow(20000)
     ~ hh_tt(10)
     _Clip "Siêu Nhân Hồng kể chuyện bên lửa trại" lên xu hướng. Không lộ mặt, nhưng lộ giọng thật. {ran_doc} xem lại clip này 30 lần. Bạn nghe tiếng clip vọng qua vách suốt đêm hôm sau._
     ~ phat_hien(hieu_ech)
 * [📸 Giữ nguyên góc máy.]
     ~ hh_lo_mat_nguyen = true
-    ~ hh_follow(150000)
+    ~ hh_follow(40000)
     ~ scandal()
     _Mặt thật lên sóng. Vi phạm điều khoản số 1._
     quan_ly_idol: Chuyện này để anh lo, đừng ai đăng gì hết!
@@ -97,7 +97,7 @@ _Góc màn hình: 🔴 LIVE · 8.412 người xem. Bên kia đống lửa, {ran_
     ~ qh("quan_ly_idol", -20)
 * [⏱️ (Không chọn kịp)]
     ~ hh_lo_mat_nguyen = true
-    ~ hh_follow(150000)
+    ~ hh_follow(40000)
     ~ scandal()
     _Ba giây trôi qua. Mặt thật của {sieu_nhan_hong}, ướt nước mắt, trong ánh lửa, trước 8.412 người._
     _Bạn tắt live ở giây thứ 5. Đã quá muộn._
@@ -110,19 +110,23 @@ _Góc màn hình: 🔴 LIVE · 8.412 người xem. Bên kia đống lửa, {ran_
 // ------------------------------------------------------------
 === hong_hot_1710_dem_phong ===
 # ngay:17 # gio:23:40 # noi:khach_san_vung_tau
-_Mất điện khách sạn 10 phút. Bạn ở chung phòng với {designer}. Trong bóng tối, {designer} thì thầm._
-designer: Bà… nếu tui kể bà một chuyện, bà hứa giữ được hông? Lần này thiệt.
+_Phòng 206, khu nghỉ Sóng Vỗ. Mất điện 10 phút. Bạn ở chung phòng với {thanh_ninh}. Điện thoại của {thanh_ninh} sáng lên trên gối: một tin nhắn từ số lưu tên "LL - Chị Tuyển Dụng"._
+_Trong bóng tối, {thanh_ninh} úp điện thoại xuống, thì thầm._
+thanh_ninh: Bà… nếu tui kể bà một chuyện, bà hứa giữ được hông? Lần này thiệt.
 * [🤐 "Hứa. Lần này thiệt."]
-    designer: Tui đang nhận job freelancer… cho LL. Dự án tên "Hồng Ngoại". Nói là làm cho idol mới.
-    ~ phat_hien(quynh_lam_cho_ll)
+    thanh_ninh: Bên LL hẹn tui phỏng vấn. Chủ nhật tuần sau. Tui chưa biết có đi không.
     ~ hh_tin(3)
     ~ hh_kin(10)
-    ~ qh("designer", 10)
-    _Bạn nằm im. "Hồng Ngoại". Nghe giống… hồng. Bạn không nói gì. Lần đầu tiên bạn thấy cái miệng của mình nặng như thế._
+    ~ qh("thanh_ninh", 10)
+    { not hh_giu_nhi_ll:
+        ~ hh_giu_nhi_ll = true
+        ~ hh_giu_tin_cap_cao()
+    }
+    _Bạn nằm im. Người ngồi gần sếp nhất công ty sắp đi gặp LL. Bạn không nói gì. Lần đầu tiên bạn thấy cái miệng của mình nặng như thế._
 * [😅 "Bà biết tui mà. Đừng kể thì hơn."]
-    designer: … Ờ. Bà biết mình ghê.
+    thanh_ninh: … Ờ. Bà biết mình ghê.
     ~ hh_kin(5)
-    ~ qh("designer", 3)
+    ~ qh("thanh_ninh", 3)
 - -> END
 
 // ------------------------------------------------------------
@@ -194,19 +198,19 @@ giam_doc: {hong_hot}. Cái clip tối thứ 7… em quay à?
 
 // ------------------------------------------------------------
 === hong_hot_2010_thu_g ===
-# ngay:20 # gio:09:00 # noi:sanh_cong_ty # bat_buoc
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
 _Ngày Phụ nữ Việt Nam và sinh nhật công ty 16 tuổi. Sáng nay chòi bảo vệ nhận một lá thư tay ký "G", kèm một phong bì dán kín: "Chỉ mở khi công ty sắp sập"._
-_Bác {bac_bao_ve} đứng giữa sảnh, cầm lá thư. Cả công ty đứng quanh. Bác đang quyết định có đọc trước mọi người không._
+_18 giờ 30, Quán Ốc Đêm. Cả công ty kéo bàn dài. Bác {bac_bao_ve} đứng dậy, cầm lá thư. Bác đang quyết định có đọc trước mọi người không._
 _Bạn đang cầm điện thoại. Đang live "Sinh nhật 16 tuổi"._
 * [🔴 Giữ live, lia máy về phía bác.]
     bac_bao_ve: *(thấy máy quay, gấp thư lại)* … Thôi. Để sau.
     ~ qh("bac_bao_ve", -10)
-    _Bác bỏ thư vào túi áo. Cả sảnh thở dài. Không ai trách bạn. Mà cũng không ai cần trách._
+    _Bác bỏ thư vào túi áo. Cả bàn thở dài. Không ai trách bạn. Mà cũng không ai cần trách._
 * [📵 Tắt live, cất điện thoại vào túi.]
     ~ qh("bac_bao_ve", 10)
     ~ hh_kin(5)
-    bac_bao_ve: *(nhìn bạn, gật nhẹ, rồi mở thư)* Anh ấy viết: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui."
-    _Cả sảnh im lặng. Sếp đứng cuối, quay mặt đi chỗ khác. Bạn không quay. Bạn nhớ._
+    bac_bao_ve: *(nhìn bạn, gật nhẹ, rồi mở thư)* Anh ấy viết: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
+    _Cả quán im lặng. Sếp đứng cuối, quay mặt đi chỗ khác. Bạn không quay. Bạn nhớ._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 8
 * [👀 Ghé sát nhìn phong bì dán kín.]
     _"Chỉ mở khi công ty sắp sập". Chữ viết tay. Mép phong bì đóng dấu sáp đỏ._
@@ -217,35 +221,43 @@ _Bạn đang cầm điện thoại. Đang live "Sinh nhật 16 tuổi"._
 // ------------------------------------------------------------
 === hong_hot_2010_thong_ke_qua ===
 # ngay:20 # gio:14:00 # noi:khu_lam_viec_chung
-_Quà 20/10. Sếp nhờ {thanh_ninh} mua quà cho 7 chị em. {con_ong_chau_cha} tặng mỗi người một bó hoa to. {thuc_tap_sinh} tặng mỗi người một cái thiệp tự vẽ._
+_Quà 20/10. Mỗi chị em một phong bì 2.100.000đ. Sếp tặng thêm 7 chiếc khăn cam giống hệt nhau. {truong_phong} tặng mỗi người một cuốn sổ ô li ghi "Kế hoạch tuần"._
+_Riêng {ke_toan} được sếp tặng thêm một chiếc kính lúp, kèm tấm thiệp. Bạn đứng đủ gần để đọc được chữ "trang 47" trên thiệp._
 _Bạn đã ghi chép lại hết: ai tặng gì, cho ai, giá bao nhiêu._
 * [📊 Đăng bảng thống kê lên group "Hội Anti Sếp".]
     ~ hh_ke_tin()
     ~ hh_tt(2)
-    ~ qh("thanh_ninh", -10)
-    _"{thanh_ninh} tự mua cho mình quà đắt nhất?" 47 bình luận. {thanh_ninh} rời bàn đi pha trà, lâu hơn bình thường._
+    ~ qh("ke_toan", -10)
+    _"Chị {ke_toan} được quà riêng, kính lúp, có thiệp?" 47 bình luận. {ke_toan} rời bàn đi pha trà, lâu hơn bình thường._
     ~ hh_bi_don(1)
 * [💐 Không thống kê. Đăng ảnh 7 chị em chụp chung lên fanpage.]
     ~ hh_follow(8000)
     ~ qh("thanh_ninh", 3)
     ~ qh("chi_dai", 3)
     ~ qh("ke_toan", 3)
-- _Bạn mở quà của mình. Một hũ trà sen. {thanh_ninh} cũng được một hũ y hệt._
+- _Bạn quàng chiếc khăn cam lên cổ. Cả bảy chị em quàng khăn cam, đứng cạnh nhau như một đội bóng._
 -> END
 
 // ------------------------------------------------------------
 === hong_hot_2010_quan_oc_live ===
-# ngay:20 # gio:21:30 # noi:quan_oc_dem # bat_buoc
-_Quán Ốc Đêm, rồi karaoke Hát Cho Nhau Nghe. Sếp say. Sếp cầm micro, đứng lên bàn._
+# ngay:20 # gio:21:00 # noi:karaoke_chu_sau # bat_buoc
+_21 giờ. Từ Quán Ốc Đêm, cả công ty kéo sang Karaoke Chú Sáu. Sếp say. Sếp cầm micro, đứng lên bàn._
 giam_doc: Các em! Mười sáu năm! Anh nói thật… công ty mình đang… đang… *(nấc)*
 _Điện thoại bạn đang trên tay. Nút LIVE đỏ cách ngón cái 2 milimet._
 * [🔴 Bấm live: "Cả nhà ơi sếp sắp phát biểu nè!"]
-    giam_doc: …đang nợ. Nợ nhiều lắm. Nhưng anh hứa tăng lương 20%!
-    _Chữ "nợ" lên sóng. 3.200 người đang xem._
-    ~ hh_live_nham_hop = true
-    ~ scandal()
-    ~ hh_follow(-30000)
-    _Bạn tắt live ở phút thứ 3. "Ối dồi ôi." Đã quá muộn._
+    { RANDOM(1, 10) <= 3:
+        giam_doc: …đang nợ. Nợ nhiều lắm. Nhưng anh hứa tăng lương 20%!
+        _Chữ "nợ" lên sóng. 3.200 người đang xem._
+        ~ hh_live_nham_hop = true
+        ~ hh_live_nham_ngay = 20
+        ~ scandal()
+        ~ hh_follow(-30000)
+        _Bạn tắt live ở phút thứ 3. "Ối dồi ôi." Đã quá muộn._
+    - else:
+        giam_doc: …đang… cố gắng! Và anh hứa tăng lương 20%!
+        _{hr} đứng ngay sau sếp, nhẹ nhàng đỡ micro xuống trước khi sếp kịp nói thêm. Bạn tắt live, tim đập thình thịch._
+        ~ hh_follow(5000)
+    }
 * [📵 Úp điện thoại xuống bàn.]
     giam_doc: …đang… cố gắng! Và anh hứa tăng lương 20%!
     _Không ai nghe thấy chữ bị nuốt vào. Trừ bạn, ngồi gần nhất._

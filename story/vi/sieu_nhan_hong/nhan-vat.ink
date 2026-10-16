@@ -110,7 +110,7 @@ thanh_ninh: Dạ anh {sieu_nhan_hong}! Bộ đồ hôm nay của anh hồng chu�
 hong_hot: Anh ơi! Nghe gì chưa? Fanpage anh vừa có bình luận lạ lắm: "Siêu Nhân Hồng là tỷ phú bí ẩn". Ối dồi ôi, thật hông anh?
 * [🦸 "Tỷ phú… thái độ! Haha!"]
     hong_hot: Né khéo ghê! Mà tui hóng lắm á.
-    ~ snh_tien(2)
+    ~ snh_tien(1)
 * [🙂 "Em đừng đăng mấy cái đó nha. Anh xin em."]
     hong_hot: *(nhìn bạn)* Anh nói nghiêm túc hả? …Ok. Tui ẩn bình luận đó. Mà anh nợ tui một ly trà sữa.
     ~ qh("hong_hot", 5)
@@ -118,7 +118,7 @@ hong_hot: Anh ơi! Nghe gì chưa? Fanpage anh vừa có bình luận lạ lắm
 + -> sieu_nhan_hong_tudo_het_chuyen
 - hong_hot: Mà nè, tối nay livestream thêm một buổi nha anh? Tui có ý tưởng: anh đọc bình luận ác ý rồi trả lời dễ thương.
 * [🤝 "Ok! Gét gô!"]
-    ~ follow(5000)
+    ~ follow(2000)
     ~ qh("hong_hot", 5)
     hong_hot: Đỉnh nóc! Anh dễ thương nhất công ty luôn á.
 * [💬 "Em làm admin fanpage, có bao giờ em… đăng gì ẩn danh hông?"]
@@ -132,7 +132,7 @@ hong_hot: Anh ơi! Nghe gì chưa? Fanpage anh vừa có bình luận lạ lắm
 # npc:con_ong_chau_cha # noi:ca_phe_song_ao
 con_ong_chau_cha: Ê anh. Ngồi đi. Chill. Ly này 85 nghìn, em bao. À mà anh giàu hơn em, thôi anh bao.
 * [💸 "Ok, anh bao cả quán luôn!"]
-    ~ snh_ket(5)
+    ~ snh_ket(3)
     con_ong_chau_cha: *(nhìn bạn)* Ủa… anh bao thiệt hả? Anh lấy tiền đâu dữ vậy? Chú em còn không dám.
 * [🙂 "Mỗi người tự trả ly của mình. Vậy cho vui."]
     con_ong_chau_cha: *(cười to)* Lần đầu có người nói vậy với em. Hay ghê. Ok.
@@ -219,7 +219,7 @@ ke_toan: Anh {sieu_nhan_hong}. Ngồi đi. Hóa đơn đâu anh? *(rồi nhớ r
     ~ qh("ke_toan", 5)
 * [💸 "Chị cần tiền gì cứ nói em, em lo."]
     ke_toan: *(đặt bút xuống)* Anh nói câu đó nhiều lần quá. Một người bình thường không nói câu đó.
-    ~ snh_tien(5)
+    ~ snh_tien(3)
     ke_toan: Tôi không hỏi anh tiền đâu ra. Nhưng đoàn thuế sẽ hỏi. Anh chuẩn bị đi.
 + -> sieu_nhan_hong_tudo_het_chuyen
 - ke_toan: Nếu anh có gì cần tôi xoay giúp trên sổ sách… thì nói sớm. Đừng để nước tới chân.
@@ -303,7 +303,7 @@ idol_het_thoi: Em biết anh là ai không?
     idol_het_thoi: Để anh hỏi {quan_ly_idol}… à không. Anh tự quyết. Ừ. Anh hát.
     ~ qh("idol_het_thoi", 20)
 * [💸 "Em nghe nói anh nợ tiền nhà. Em trả giùm anh nha."]
-    ~ snh_ket(10)
+    ~ snh_ket(6)
     idol_het_thoi: *(đứng bật dậy)* Em thương hại anh hả? Em biết anh là ai không?!
     ~ qh("idol_het_thoi", -10)
     _Anh ta đi ra, đóng sầm cửa. Bạn vừa làm một việc tốt theo cách tệ nhất._
@@ -415,7 +415,7 @@ sales: Anh trai! Tin chị đi, tháng này chị chốt BTT Global, 2 tỷ, Mr.
     ~ phat_hien(btt_global_gia)
     ~ qh("sales", 10)
 * [💸 "Anh đóng tiền tài trợ luôn, mình khỏi cần Kevin."]
-    ~ snh_ket(15)
+    ~ snh_ket(9)
     sales: *(trợn mắt)* Anh… anh nói thiệt hả? Anh lấy tiền đâu?
     ~ qh("sales", 5)
 + -> sieu_nhan_hong_tudo_het_chuyen
@@ -453,11 +453,11 @@ dan_dau_tu: Anh ơi! Nhìn chart nè! Người theo dõi của anh đang hình t
 * [🙂 "Em giỏi số thật đó. Sao em không làm số liệu cho công ty nhiều hơn?"]
     dan_dau_tu: *(khựng lại)* Có người khen em giỏi số thật à? Không phải giỏi đoán coin?
     ~ qh("dan_dau_tu", 10)
-    ~ follow(3000)
+    ~ follow(1000)
 + -> sieu_nhan_hong_tudo_het_chuyen
 - dan_dau_tu: Mà anh… anh có muốn góp vốn không? Em thấy anh… có vẻ có điều kiện.
 * [💸 "Em nợ bao nhiêu? Anh trả hết cho."]
-    ~ snh_ket(15)
+    ~ snh_ket(9)
     dan_dau_tu: 22 triệu… *(mắt sáng rồi tắt)* Mà thôi anh. Em tự trả. Em muốn một lần tự trả.
     ~ qh("dan_dau_tu", 5)
 * [🙂 "Anh không góp vốn. Mà tối nay anh bao em tô hủ tiếu."]
@@ -491,7 +491,7 @@ thanh_xin_nghi: *(giọng yếu ớt)* Anh ơi… lịch quay chiều nay… em 
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_tudo_bac_bao_ve ===
-# npc:bac_bao_ve # noi:chot_bao_ve
+# npc:bac_bao_ve # noi:choi_bao_ve
 bac_bao_ve: Cậu đấy à. Ngồi đi. Uống trà.
 ~ uong(25)
 * [🙂 Tháo mũ ra trước khi ngồi.]
@@ -515,14 +515,13 @@ bac_bao_ve: Cậu đấy à. Ngồi đi. Uống trà.
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_tudo_cho ===
-# npc:cho # noi:chot_bao_ve
+# npc:cho # noi:choi_bao_ve
 { snh_chuoi_hien_tai() >= 10:
     cho: *(ngẩng đầu, nhìn bộ đồ hồng, rồi… vẫy đuôi một cái)* Gâu.
 - else:
     cho: GRỪ… GÂU GÂU! *(lông dựng, nhìn chằm chằm vào mũ)*
 }
 + {co(xuc_xich)} [🦴 Cho {cho} một cây xúc xích.]
-    ~ mat(xuc_xich)
     ~ snh_cho_xuc_xich()
     cho: *(ăn sạch, liếm mép)* …Gâu.
     { qh_cho >= 60:

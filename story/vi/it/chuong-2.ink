@@ -61,26 +61,23 @@ _Trong lúc dọn máy, bạn thấy góc trình duyệt có hai tài khoản Ph
 _Buổi chụp poster đầu tiên. Bạn treo đèn, kéo dây, chỉnh màu. Đèn hồng, đèn hồng nữa, đèn hồng thêm._
 designer: Anh {it}, cho em hồng ấm hơn chút. Hồng này hồng lạnh quá, hồng như cái bill tiền điện.
 sieu_nhan_hong: Biến hình! Vì công lý và lượt view!
-_Đang chụp tấm thứ 12 thì {sieu_nhan_hong} nhìn ra cửa sổ: một bà cụ đang loay hoay qua đường với giỏ rau._
+_10:30. Đang chụp tấm thứ 12 thì {sieu_nhan_hong} nhìn ra cửa sổ: ngoài Đường Hóng, gần đầu Hẻm 69, xe chè của Bà Bảy sụp bánh xuống ổ gà._
 sieu_nhan_hong: Khoan! Khoan! Có người cần giúp! Hợp đồng điều 3 nha mọi người!
 _{sieu_nhan_hong} chạy mất. Cả studio đứng hình. Camera quay test của bạn vẫn đang chạy, chĩa ra cửa sổ._
-* [🎥 Để camera chạy tiếp, quay trọn cảnh dắt bà cụ.]
-    _Bạn xoay camera, zoom vào. Một bộ đồ hồng dắt bà cụ qua đường, xách giùm giỏ rau, còn cúi xuống buộc lại dây dép cho bà._
+* [🎥 Để camera chạy tiếp, quay trọn cảnh đẩy xe chè.]
+    _Bạn xoay camera, zoom vào. Một bộ đồ hồng đẩy xe chè lên khỏi ổ gà, rồi ngồi xuống ghế nhựa, ăn ly chè bằng ống hút luồn qua mũ. Cô gái phụ bán chè nhìn anh rất lâu._
     _Bạn gửi file cho {hong_hot}. {hong_hot} đăng lúc 11:00._
     hong_hot: Anh {it} ơi! Clip này bay rồi! Bay cao hơn cái MV đang làm nữa!
-    ~ follow(30000)
     ~ qh("hong_hot", 10)
     ~ qh("sieu_nhan_hong", 5)
 * [💡 Tắt đèn, tiết kiệm điện trong lúc chờ.]
     _Bạn tắt đèn. Studio tối om. Ai đó ngoài đường quay được clip bằng điện thoại, mờ mờ, nhưng vẫn lên mạng._
-    ~ follow(15000)
     designer: Ủa sao tắt đèn? Em đang chỉnh màu mà!
     ~ qh("designer", -3)
 * [😶 Ngồi xuống ăn mì ly.]
     _Bạn ăn mì. Lúc {sieu_nhan_hong} quay lại thì mì vừa hết. Thời gian rất khớp._
     ~ an(25)
-    ~ follow(10000)
-- _Buổi chụp xong lúc 6 giờ chiều. {designer} nói poster "chưa đủ wow". Bạn đồng ý: đèn hồng không thể đủ wow bằng một bà cụ._
+- _Buổi chụp xong lúc 6 giờ chiều. {designer} nói poster "chưa đủ wow". Bạn đồng ý: đèn hồng không thể đủ wow bằng một xe chè._
 -> END
 
 // ------------------------------------------------------------
@@ -189,13 +186,12 @@ _Bạn mở bảng băng thông. Cả công ty đang dùng: {chua_te_deadline} x
     ~ cang_thang(15)
     ~ it_on(-5)
 - _19:58. Thanh tiến trình: 100%. Bạn thở ra. {editor} ngủ gục trên bàn phím._
-~ follow(20000)
 -> END
 
 // ------------------------------------------------------------
 === it_0910_cong_chieu ===
 # ngay:9 # gio:20:00 # noi:studio # bat_buoc
-_20:00. Công chiếu MV kèm livestream. {sieu_nhan_hong} vẫy tay trước camera. 2.000 người đang xem. 5.000. 8.000._
+_20:00. Công chiếu MV "Hồng Hóa Việt Nam" kèm livestream. {sieu_nhan_hong} vẫy tay trước camera. 2.000 người đang xem. 5.000. 8.000._
 _Đèn trên router chớp đỏ. Một lần. Hai lần._
 hong_hot: Anh {it}! Hình đang giật! Mặt Siêu Nhân Hồng đứng hình giữa lúc đang há miệng! # hen_gio:5
 * [🔄 Khởi động lại router.]
@@ -314,7 +310,7 @@ _Bạn biết câu trả lời: "NGAN-LAPTOP, 23:04"._
 
 // ------------------------------------------------------------
 === it_1210_luong_ve ===
-# ngay:12 # gio:10:15 # noi:phong_server # bat_buoc
+# ngay:12 # gio:10:00 # noi:phong_server # bat_buoc
 _Thứ 2, 12/10. Lương về trễ 2 ngày. Điện thoại "ting". Cả công ty đồng loạt thở ra một hơi, nghe như tiếng quạt server._
 _Bạn nhìn số dư, rồi nhìn tờ đề xuất router 12.000.000đ dán trên tường, đã ngả vàng._
 * [💾 Chuyển 5 triệu vào "quỹ router".]
@@ -358,7 +354,7 @@ dan_dau_tu: {it}! Ờ… em khỏe hông? Anh định… tìm em đó.
 // ------------------------------------------------------------
 === it_1210_the_phu_long ===
 # ngay:12 # gio:12:30 # noi:quan_ca_phe_song_ao
-_Giờ trưa. {con_ong_chau_cha} gọi bạn ra quán cà phê Sống Ảo gấp._
+_12:30. {con_ong_chau_cha} gọi bạn ra quán cà phê Sống Ảo gấp. Cùng bàn có {hong_hot}, {ran_doc} và {thuc_tap_sinh}, ai cũng đang cầm ly mà chưa ai trả tiền._
 con_ong_chau_cha: Anh {it}! Máy quẹt thẻ ở đây hư rồi. Quẹt thẻ em nó cứ báo "từ chối". Anh sửa giùm em đi.
 _Bạn nhìn màn hình máy quẹt. Nó không hư. Nó chỉ nói thật._
 * [😇 "Máy không hư. Thẻ bị khóa."]

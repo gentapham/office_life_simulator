@@ -48,6 +48,7 @@ VAR kt_ll_email = 0            // 1 hỏi hóa đơn, 2 để đó, 3 chuyển c
 VAR kt_co_but_bi = false       // hộp bút bi (minigame Ba Chữ Ký)
 VAR kt_chu_ky = 0              // số chữ ký đã săn được cho đơn bút bi
 VAR kt_ngan_sach_vung_tau = 60
+VAR kt_sep_hua_20 = false     // 20/10 Thắng say hứa tăng lương 20%
 
 // ============================================================
 // HÀM RIÊNG

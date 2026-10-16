@@ -1,5 +1,7 @@
 // ============================================================
-// BÁC BẢO VỆ: BÌNH · CHƯƠNG 6: "CUỘC HỌP CỔ ĐÔNG Ở CỔNG" (28/10 – 31/10)
+// BÁC BẢO VỆ: BÌNH · CHƯƠNG 6: "NGƯỜI GIỮ THƯ Ở CỔNG" (28/10 – 31/10)
+// Ngày 31/10 vai chỉ có cảnh trước 19:30. Đêm diễn chạy ở chung_3110_dem_hong,
+// rồi game gọi bac_bao_ve_3010_danh_gia (23:00 – 23:45).
 // ============================================================
 
 // ------------------------------------------------------------
@@ -104,7 +106,7 @@ _Rồi một tờ gấp tư, chữ nghiêng, mực hồng: "Gửi {chua_te_deadl
     ~ tien_cong(100000)
 * [🤫 Tờ mực hồng: tự tay đưa cho {chua_te_deadline}, đứng đợi cậu ta đọc xong.]
     _{chua_te_deadline} đọc. Đọc lại. Rồi xé một tờ giấy kẻ ô, viết một dòng, đưa bác: "Bác chuyển giùm con."_
-    _Bác không đọc. Bác chỉ thấy, lúc nhận tờ trả lời, {sieu_nhan_hong} đứng trong chòi cười một mình rất lâu, rồi giấu mặt vào chiếc mũ._
+    _Bác không đọc. Bác chỉ thấy, lúc nhận tờ trả lời, {sieu_nhan_hong} đứng trong chòi đọc rất lâu, rồi cười, gãi đầu qua chiếc mũ: "Em ấy nói "ý tưởng hay đó anh", bác ạ."_
     ~ qh("sieu_nhan_hong", 8)
     ~ qh("chua_te_deadline", 5)
     ~ bv_bm(2)
@@ -156,6 +158,7 @@ _Phong bì dán kín vẫn nằm trong túi áo trong. "Chỉ mở khi công ty 
     _Bác bóc phong bì bằng con dao rọc giấy. Từng chút một. Bên trong là quyết định của G về tương lai công ty, viết tay, ký tên, ghi ngày từ tháng 9._
     _Bác đọc một lần. Gấp lại. Hai tay đặt trên đầu gối. Mười phút._
     ~ bv_mo_phong_bi = true
+    ~ chung_binh_da_mo_phong_bi = true
     ~ bv_tam(-20)
 * [🤫 Chưa. Chưa tới lúc. Công ty chưa sập.]
     _Bác cài nút túi áo. Giữ là được. Đọc khi tới lúc._
@@ -188,7 +191,7 @@ cho: *(đứng chắn trước thùng, run run)* Grừ…
 
 // ------------------------------------------------------------
 === bac_bao_ve_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Họp đánh giá cuối tháng. Cả công ty. Bác ở cổng, như mọi năm. Mười sáu năm, bác chưa bao giờ dự một cuộc họp._
 { bv_lo_day && not bv_thang_biet:
     -> bac_bao_ve_tudo_noi_chuyen_choi
@@ -202,7 +205,7 @@ _Họp đánh giá cuối tháng. Cả công ty. Bác ở cổng, như mọi nă
 -> o_cong
 
 = duoc_moi
-_9 giờ 10. {giam_doc} tự đi xuống cổng. Không gọi qua bộ đàm. Không nhờ ai. Anh đứng trước chòi, cúi đầu._
+_14 giờ 10. {giam_doc} tự đi xuống cổng. Không gọi qua bộ đàm. Không nhờ ai. Anh đứng trước chòi, cúi đầu._
 giam_doc: Bác {bac_bao_ve}. Em mời bác lên phòng họp. Em nghĩ… bác có thứ cần đọc cho mọi người nghe.
 _Bác đứng dậy. Chỉnh lại áo đồng phục. Đeo kính lão. Phong bì trong túi áo trong._
 _Lần đầu tiên trong 16 năm, bác ngồi trong một cuộc họp của {cong_ty}. Không ngồi. Đứng. Ở cuối phòng._
@@ -222,6 +225,8 @@ _Bác gấp thư. Nói đúng một câu:_
 bac_bao_ve: Bác đọc xong rồi.
 _Rồi bác đi xuống cổng. Rót trà. Đeo lại cái thẻ "Bảo vệ"._
 ~ bv_doc_quyet_dinh = true
+~ chung_g_giu_cong_ty = true
+~ chung_binh_da_mo_phong_bi = true
 ~ tinh_than_cong_ty = tinh_than_cong_ty + 20
 ~ bv_qh_ca_cong_ty(10)
 ~ qh("giam_doc", 15)
@@ -246,7 +251,7 @@ _Rồi thấy {thuc_tap_sinh} đi ra sau lưng {chi_dai}. Rồi {thanh_xin_nghi}
     ~ bv_qh_ca_cong_ty(5)
     ~ bv_lo_than(5)
 * [🍵 Pha một ấm trà lớn. Lát nữa ai xuống cũng có trà.]
-    _11 giờ, họp xong. Hai mươi người đi xuống cổng. Ai cũng cầm một ly trà. Không ai kể với bác chuyện gì xảy ra. Bác không cần nghe._
+    _16 giờ, họp xong. Hai mươi người đi xuống cổng. Ai cũng cầm một ly trà. Không ai kể với bác chuyện gì xảy ra. Bác không cần nghe._
     ~ bv_so_ly_tra = bv_so_ly_tra + 20
     ~ bv_qh_ca_cong_ty(2)
 - -> END
@@ -254,19 +259,19 @@ _Rồi thấy {thuc_tap_sinh} đi ra sau lưng {chi_dai}. Rồi {thanh_xin_nghi}
 // ------------------------------------------------------------
 === bac_bao_ve_3110_cong_san_khau ===
 # ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
-_31/10. Đại Nhạc Hội Siêu Nhân. 6 giờ 30 chiều. Bác đứng ở cổng Sân khấu Đại Nhạc Hội Siêu Nhân. Không phải cổng công ty, nhưng cổng nào thì cũng là cổng._
+_31/10. Đại Nhạc Hội Siêu Nhân. 6 giờ 30 chiều. Bác đứng ở lối vào quảng trường mới phía đông bắc công ty. Một sân khấu lớn ngoài trời, một màn hình LED to bằng bức tường, một hàng rào chắn sắt. Không phải cổng công ty, nhưng cổng nào thì cũng là cổng._
 _{giam_doc} tới, hóa trang "Ông Kẹ Ngân Hàng": vest đen, mặt nạ, tay cầm một cuốn sổ nợ giả. Không ai cười, vì không ai chắc anh đang đùa._
-_Anh tháo mặt nạ, đưa bác một tấm thẻ đeo cổ: "KHÁCH MỜI ĐẶC BIỆT – HÀNG GHẾ ĐẦU"._
-giam_doc: Bác ngồi hàng đầu nhé. Năm nay em muốn bác xem, không phải gác.
-* [🪑 Đeo thẻ. Ngồi hàng ghế đầu. Lần đầu tiên.]
-    _Bác ngồi ghế đầu. Thẻ đeo cổ. Không quen. Tay cứ sờ lên ngực tìm cái bộ đàm không có ở đó. {cho} nằm dưới chân ghế._
+_Anh tháo mặt nạ, đưa bác một tấm thẻ đeo cổ: "KHÁCH MỜI ĐẶC BIỆT"._
+giam_doc: Bác đứng chỗ khách mời sát hàng rào nhé. Năm nay em muốn bác xem, không phải gác.
+* [🪑 Đeo thẻ. Đứng sát hàng rào, chỗ khách mời. Lần đầu tiên.]
+    _Bác đứng sát hàng rào. Thẻ đeo cổ. Không quen. Tay cứ sờ lên ngực tìm cái bộ đàm không có ở đó. {cho} nằm dưới chân bác._
     ~ bv_ghe_khach_moi = true
     ~ qh("giam_doc", 5)
 * [🚪 "Bác đứng cổng quen rồi. Thẻ này anh để cho người khác."]
-    giam_doc: *(cười)* Em biết bác sẽ nói thế. Thôi, bác đeo thẻ mà đứng cổng vậy.
-    _Bác đeo thẻ "Khách mời đặc biệt", đứng ở cổng, soát vé. Cả nghìn khán giả đi qua, ai cũng nhìn cái thẻ._
+    giam_doc: *(cười)* Em biết bác sẽ nói thế. Thôi, bác đeo thẻ mà đứng lối vào vậy.
+    _Bác đeo thẻ "Khách mời đặc biệt", đứng ở lối vào. Năm mươi khán giả đi qua, ai cũng nhìn cái thẻ._
     ~ bv_tam(5)
-- _7 giờ 50. {thanh_xin_nghi} chạy ngang cổng, ôm túi nilon đựng bộ đồ kim tuyến: "Con đi đây bác! Chung kết 8 giờ!"_
+- _6 giờ 45. {thanh_xin_nghi} chạy ngang lối vào, ôm túi nilon đựng bộ đồ kim tuyến: "Con đi đây bác! 8 giờ chung kết! Màn hình to kia chiếu con đó bác!"_
 * [😊 "Hát cho tử tế."]
     thanh_xin_nghi: Dạ! *(chạy được ba bước, quay lại cúi chào, rồi chạy tiếp)*
     ~ qh("thanh_xin_nghi", 8)
@@ -275,36 +280,37 @@ giam_doc: Bác ngồi hàng đầu nhé. Năm nay em muốn bác xem, không ph�
 - -> END
 
 // ------------------------------------------------------------
-=== bac_bao_ve_3110_dem_hong ===
-# ngay:31 # gio:20:10 # noi:san_khau_dem_hong # bat_buoc
-_19:30 mở màn: phim ngắn "Người Hùng Không Tên". Rồi video "16 năm" của {editor}: căn phòng 20 mét vuông, cái bàn thùng mì, một ông bảo vệ tóc còn đen. Cả nghìn người im lặng._
-_20:10. {sieu_nhan_hong} chuẩn bị bước ra. Ở cổng sau, một gã áo khoác nhiều túi, máy ảnh ống dài, đang lách qua hàng rào._
+=== bac_bao_ve_3110_truoc_gio_dien ===
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
+_19 giờ 15. Mười lăm phút nữa mở màn. Ở hàng rào phía sau, một gã áo khoác nhiều túi, máy ảnh ống dài, đang lách qua khe hở giữa hai tấm chắn, nhắm về phía cánh gà._
 { bv_ghe_khach_moi:
-    _Bác đang ngồi hàng ghế đầu. Bác thấy gã. Không ai khác thấy._
+    _Bác đang đứng chỗ khách mời. Bác thấy gã. Không ai khác thấy._
 }
-* [🚪 Đứng dậy. Đi ra cổng sau. Chặn.]
+* [🚪 Đi ra chỗ khe hở. Chặn.]
     _Bác đứng chắn. Gã giơ máy ảnh: "Một tấm thôi chú, một tấm!". Bác nhìn giày gã: đế mòn một bên. Người đứng chờ lâu. Bác cũng là người đứng chờ lâu._
     bac_bao_ve: Cháu đứng đây với bác. Xem cũng được. Chụp thì không.
     _Gã nhìn bác. Hạ máy ảnh. Đứng xem cạnh bác tới hết đêm._
     ~ bv_chan_paparazzi = bv_chan_paparazzi + 1
-    ~ follow(10000)
 * [🐕 Huýt sáo một tiếng.]
-    _{cho} lao ra như tên bắn. Gã paparazzi bị rượt chạy ba vòng quanh cái cột điện quấn đèn hồng, rồi ra cổng. Khán giả tưởng là tiết mục, vỗ tay._
+    _{cho} lao ra như tên bắn. Gã paparazzi bị rượt chạy ba vòng quanh cái cột điện quấn đèn hồng, rồi ra khỏi quảng trường. Mấy người đứng ở hàng rào tưởng là tiết mục, vỗ tay._
     ~ bv_chan_paparazzi = bv_chan_paparazzi + 1
-    ~ follow(15000)
     ~ qh("cho", 5)
 * [🙈 Bác không thấy gì đâu. Hôm nay bác là khách.]
     _Gã lách vào được tận cánh gà. Tiếng màn trập máy ảnh liên tục._
     ~ bv_khong_thay_gi()
-- _20:20. {sieu_nhan_hong} bước ra sân khấu. Hát. Múa. Rồi giữa bài, đứng im. Hai tay đặt lên chiếc mũ hồng. Nhìn xuống hàng ghế đầu. Nhìn bác._
+- { nguyen_theo_ll:
+    _Ô "HỒNG" ở bãi xe công ty trống từ sáng. Phía xa, bên kia quảng trường, nóc tòa kính LL bắt đầu sáng đèn. Bác đứng nhìn về phía đó một lúc, rồi quay lại với sân khấu._
+    -> END
+}
+_19 giờ 20. {sieu_nhan_hong} trong bộ đồ hồng đi ra lối vào, mũ cầm trên tay, mặt thật, mắt đỏ. Cậu đứng trước bác, như đứng trước cổng công ty mỗi sáng._
+sieu_nhan_hong: Bác ơi… bài cuối, con có nên tháo mũ hông bác?
 * [😊 Gật đầu. Một cái thôi.]
-    _{sieu_nhan_hong} tháo mũ. Một anh chàng bình thường. Mũi hơi to. Mắt hiền. Vết sẹo nhỏ trên mu bàn tay trái. Cả nghìn người im ba giây. Rồi đứng dậy vỗ tay. Rồi hét tên. Tên thật._
+    _Cậu nhìn bác rất lâu. Rồi gật lại. Đội mũ lên, đi về phía cánh gà, lưng thẳng hơn lúc đi ra._
     ~ nguyen_thao_mu_dem_hong = true
     ~ qh("sieu_nhan_hong", 10)
-* [🙈 Nhìn xuống. Chuyện của cậu ấy, cậu ấy quyết.]
-    _{sieu_nhan_hong} đứng đó rất lâu. Rồi hạ tay xuống, cười, hát tiếp. Có những thứ để dành cho người ta tự quyết._
-- _22:00. Bài cuối. Pháo giấy hồng. Bác về lại cổng, như mọi đêm. {cho} nằm dưới chân. Radio để kênh Đài Tivi Hóng: "…và quán quân Giọng Ca Ước Mơ năm nay là…"_
--> bac_bao_ve_3010_danh_gia
+* [🙈 "Chuyện của cháu, cháu quyết. Bác chỉ giữ cổng."]
+    _Cậu cười, gãi đầu. Đội mũ lên. Có những thứ để dành cho người ta tự quyết._
+- -> END
 
 // ------------------------------------------------------------
 // CẢNH TỰ DO (game mở khi đủ điều kiện)

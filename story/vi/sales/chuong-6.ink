@@ -14,7 +14,7 @@ _Mốc 4: 800.000 người theo dõi. Hiện tại: {nguoi_theo_doi}._
     ~ cang_thang(20)
     -> END
 }
-_14 giờ 50. Bạn ôm xấp hồ sơ đề xuất {designer} làm đêm qua, chuẩn bị chạy sang Sống Ảo. Hẹn 15 giờ._
+_14 giờ 50. Bạn ôm xấp hồ sơ đề xuất {designer} làm đêm qua, chuẩn bị chạy sang Sống Ảo. Hẹn 15 giờ. Bà cụ chủ xưởng không đợi ai quá lâu: tới đúng giờ thì 1 tỷ, trễ thì bà tính lại._
 _Điện thoại reo. {giam_doc}._
 { sl_hua_ca_si:
     giam_doc: {sales}, lên phòng anh ngay. Cái clip Vũng Tàu. Ca sĩ nổi tiếng nhất nước đâu em? Còn 3 ngày.
@@ -34,37 +34,48 @@ _15 giờ. Hai nơi. Một người._ # hen_gio:8
     -> song_ao
 
 = song_ao
-_Quán Sống Ảo. Một cô mặc áo hồng nhạt, bảng tên "Sữa Chua Hồng Hào", ngồi nhìn đồng hồ._
-sua_chua_hong_hao: Chào chị {sales}. Bên em đọc hồ sơ rồi. Đẹp. Mà… bên em hỏi thật: công ty chị có bao nhiêu nhà tài trợ rồi?
+_Quán Sống Ảo. Một bà cụ tóc bạc, áo bà ba hồng nhạt, ngồi cạnh đứa cháu trai đang ôm cặp hồ sơ. Trên bàn: hai hộp sữa chua và một cái đồng hồ đeo tay đặt ngửa._
+sua_chua_hong_hao: Con là {sales} hả? Bà đọc hồ sơ rồi. Đẹp. Mà bà hỏi thật nghen: công ty con có bao nhiêu nhà tài trợ rồi?
 * [🤝 "Dạ, nói thật: bên em chỉ có quán ốc, tiệm nail, phòng khám. Chị là nhà tài trợ lớn đầu tiên."]
     ~ sl_that_long()
-    sua_chua_hong_hao: *(bật cười)* Tôi thích sự thật thà đó. Bên tôi cũng chỉ là xưởng sữa chua nhỏ ở Ven Đô mà.
+    sua_chua_hong_hao: *(bật cười)* Bà thích con nói vậy. Bà cũng chỉ là cái xưởng sữa chua nhỏ ở Ven Đô thôi mà.
     -> ky
 * [🗣️ "Dạ, ba tập đoàn lớn, trong đó có BTT Global!"]
     ~ sl_phet(10)
-    sua_chua_hong_hao: BTT Global? *(lướt điện thoại)* Em tra không ra. Chị có mã số thuế không?
+    sua_chua_hong_hao: BTT Global? *(quay sang đứa cháu, đứa cháu lắc đầu)* Thằng cháu bà tra không ra. Con có mã số thuế hông?
     _Bạn cảm thấy cả quán Sống Ảo im lặng, dù không ai im lặng._
     ** [🤝 "…Dạ không có. Em xin lỗi. Cái đó em bịa."]
         ~ sl_that_long()
         ~ sl_tu_nhan_btt_gia = true
-        sua_chua_hong_hao: *(nhìn bạn rất lâu)* Chị nói thật lúc bị hỏi tới. Vậy cũng được. Ký.
+        sua_chua_hong_hao: *(nhìn bạn rất lâu)* Con nói thật lúc bị hỏi tới. Vậy cũng được. Ký.
         -> ky
     ** [📞 Điện Thoại Giả: "Dạ chủ tịch gọi, chị chờ em xíu!"]
-        _Bạn quay lại sau 5 phút. Ghế trống. Trên bàn để lại tờ giấy: "Bên tôi cần đối tác nói thật. Chúc chị may mắn."_
+        _Bạn quay lại sau 5 phút. Ghế trống. Trên bàn để lại tờ giấy, chữ run run: "Bà cần người nói thật. Chúc con may mắn."_
         ~ sl_phet(10)
         -> END
 
 = ky
 _Hợp đồng được ký. Thật. Có mộc đỏ. 1 tỷ đồng tài trợ Đại Nhạc Hội Siêu Nhân. Không ai phải ghép ảnh trụ sở._
+~ sl_that(1000)
 { sl_duy_xem_hop_dong:
     _Bạn đã nhờ {thuc_tap_sinh} đọc trước. Anh chỉ ra 2 điều khoản bất lợi, bạn đã xin sửa. Deal an toàn tuyệt đối._
 - else:
     _Điều khoản 7 ghi: "Siêu Nhân Hồng ăn sữa chua trên sân khấu, tối thiểu 3 hộp". Bạn quyết định ảnh sẽ vui._
 }
+-> da_ky
+
+= ky_tre
+_Sáng 29/10, 9 giờ, xưởng sữa chua ở Ven Đô. Bà cụ đọc hợp đồng thật chậm, rồi lấy bút sửa một con số._
+sua_chua_hong_hao: Con tới trễ một bữa. Bà không giận. Mà bà làm ăn thì phải giữ lời với chính bà: trễ thì nửa thôi. 500 triệu nghen con.
+_Có mộc đỏ. 500 triệu. Vẫn là tiền thật. Lần đầu tiên, bạn thấy một nửa sự thật vẫn nặng hơn hai tỷ lời phét._
+~ sl_that(500)
+-> da_ky
+
+= da_ky
 ~ sl_ky_sua_chua = true
-~ sl_that(1000)
-~ follow(100000)
-_Bạn bước ra khỏi quán. Đứng giữa vỉa hè. Rồi bạn khóc. Không ai thấy. Lần này bạn không chụp story._
+~ follow(50000)
+_Bạn bước ra đứng giữa vỉa hè. Rồi bạn khóc. Không ai thấy. Lần này bạn không chụp story._
+chi_dai: *(nhắn, chỉ 5 phút sau)* Nghe nói có tiền thật rồi hả? Chị xin 60 triệu thuê hai giàn đèn còn thiếu. Lần này chị đi xin, không phải em.
 -> END
 
 = phong_sep
@@ -83,21 +94,18 @@ giam_doc: Em nói đi. Anh nghe.
 * [💬 "Sếp ơi, em có hẹn ký với nhà tài trợ thật. Ngay bây giờ. Sếp cho em đi được hông?"]
     giam_doc: Thật à? *(nhìn đồng hồ)* Thế còn đứng đây làm gì! Đi!
     ~ qh("giam_doc", 5)
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
-_15 giờ 40. Bạn chạy như bay sang Sống Ảo._
+- _15 giờ 40. Bạn chạy như bay sang Sống Ảo._
 { qh_designer >= 50:
     _{designer} đang ngồi đối diện khách, laptop mở, trình bày phần hình ảnh. Khách đang cười. {designer} quay lại, nháy mắt: "Tới rồi đó chị."_
     -> ky
 - else:
-    _Ghế trống. Ly sữa chua uống dở. Trên bàn để lại tấm danh thiếp, mặt sau ghi: "Gọi lại cho em trước 17 giờ."_
+    _Ghế trống. Hộp sữa chua ăn dở. Trên bàn để lại tấm danh thiếp, mặt sau ghi: "Gọi lại cho bà trước 17 giờ."_
     * [📞 Gọi lại ngay, nói thật vì sao trễ.]
         ~ sl_that_long()
-        _"Bị sếp gọi lên vì một lời hứa cũ." Đầu dây bên kia im lặng, rồi bật cười: "Ai cũng có sếp. Mai 9 giờ, ở Ven Đô nhé."_
-        -> ky
+        _"Bị sếp gọi lên vì một lời hứa cũ." Đầu dây bên kia im lặng, rồi bà cụ bật cười: "Ai cũng có sếp. Mai 9 giờ, xuống Ven Đô gặp bà."_
+        -> ky_tre
     * [🗣️ Gọi lại: "Dạ em bị kẹt cuộc họp với tập đoàn đa quốc gia!"]
-        _"Chị ơi, bên em cần đối tác nói thật." Tút tút tút._
+        _"Con ơi, bà cần người nói thật." Tút tút tút._
         ~ sl_phet(10)
         -> END
 }
@@ -126,7 +134,7 @@ _Cùng lúc, bộ lọc số liệu của {dan_dau_tu} lần ra 80.000 tài kho�
 }
 
 // ------------------------------------------------------------
-=== sales_2910_grab_ven_do ===
+=== sales_2910_xe_ven_do ===
 # ngay:29 # gio:09:30 # noi:ban_sales # bat_buoc
 _Ngày Internet Quốc tế. Wifi sập cả ngày. {it} bị cả công ty rượt quanh 3 tầng._
 { sl_ky_sua_chua:
@@ -136,14 +144,14 @@ _Ngày Internet Quốc tế. Wifi sập cả ngày. {it} bị cả công ty rư�
     ~ cang_thang(10)
     -> END
 }
-_Bạn đặt Grab. Tài xế nhận. Rồi hủy: "Em xin lỗi, xe em bể bánh."_
+_Bạn đặt xe ôm công nghệ. Tài xế nhận. Rồi hủy: "Em xin lỗi, xe em bể bánh."_
 _Đặt lại. Nhận. Hủy: "Em xin lỗi, trời sắp mưa."_
 * [🏍️ Mượn xe máy của {thuc_tap_sinh}, tự chạy ra Ven Đô.]
     thuc_tap_sinh: Dạ chị lấy đi ạ! Xe em hơi yếu, tới dốc chị đẩy giùm em nha chị!
     _Một tiếng. Đường đất đỏ. Một con dốc phải đẩy bộ. Bạn tới nơi, giày cao gót cầm trên tay, áo vest dính bụi._
     ~ nghi(-30)
     ~ qh("thuc_tap_sinh", 5)
-    sua_chua_hong_hao: *(nhìn bạn từ đầu tới chân)* Chị chạy xe ra đây hả? *(cười)* Bên em làm ăn với chị dài dài.
+    sua_chua_hong_hao: *(nhìn bạn từ đầu tới chân)* Con chạy xe ra tới đây hả? *(cười)* Bà làm ăn với con dài dài.
     ~ sl_that(50)
 * [📞 Đặt lần thứ 3, nhắn tài xế: "Anh ơi, tin chị đi, chuyến này quan trọng lắm, em boa gấp đôi."]
     ~ sl_tin_chi_di = sl_tin_chi_di + 1
@@ -164,7 +172,7 @@ bac_bao_ve: Tầng 2 gửi tầng 1: "Hóa đơn đâu em?". Thế à. Ừ.
 _{chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua". Video của {editor} kẹt ở 99%._
 bac_bao_ve: Cháu {sales}. Có giấy cho cháu.
 { sl_ky_sua_chua:
-    _Mảnh giấy của {ke_toan}: "Tiền tài trợ về rồi. 1 tỷ. Có hóa đơn. Chị khóc. T."_
+    _Mảnh giấy của {ke_toan}: "Tiền tài trợ về rồi. Có hóa đơn. Chị khóc. T."_
     ~ cang_thang(-20)
     ~ qh("ke_toan", 5)
 - else:
@@ -194,17 +202,26 @@ _7 giờ 45. {hr} cho dọn kho. Trong ngăn bàn bạn: một xấp hợp đồ
     ~ qh("cho", 12)
     ~ qh("hr", -2)
     _{cho} đi theo bạn, đuôi vẫy như cánh quạt._
+* [🔍 Ngồi xuống cạnh ổ của {cho}, nhìn kỹ đống báu vật.]
+    _Chùm chìa khóa, thỏi son, một chiếc tất sọc cam. Và một chiếc USB không nhãn, thơm mùi cà phê sữa đá._
+    _Dân sales nhìn đồ là biết chủ. Mùi này chỉ có ở bàn {chua_te_deadline}._
+    ~ nhan(usb_khong_nhan)
+    chua_te_deadline: *(nhận USB, cắm thử, đứng im mấy giây)* …File tháng 6. Tìm cả tháng nay. Em lấy đâu ra vậy?
+    sales: Đồ thất lạc thì phải về đúng chủ. Lần này em không bán.
+    ~ mat(usb_khong_nhan)
+    ~ qh("chua_te_deadline", 15)
+    ~ qh("cho", -3)
 * [😶 Đi lên họp.]
     _Sau lưng bạn, {cho} sủa một tiếng rất dài._
 - -> END
 
 // ------------------------------------------------------------
 === sales_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Họp đánh giá cuối tháng. {dan_dau_tu} được giao đối chiếu số liệu. Màn hình chiếu hai cột: KPI Trên Giấy và KPI Thật._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ, phòng họp tầng 2. Họp đánh giá cuối tháng. {dan_dau_tu} được giao đối chiếu số liệu. Màn hình chiếu hai cột: KPI Trên Giấy và KPI Thật._
 _Cột cam: {sl_kpi_giay}%. Cột xám: {sl_kpi_that} triệu đồng._
 { sl_ky_sua_chua:
-    _Lần đầu tiên, cột xám cao vút. 1 tỷ từ Sữa Chua Hồng Hào. Cả phòng xì xào._
+    _Lần đầu tiên, cột xám cao vút. Tiền thật từ Sữa Chua Hồng Hào. Cả phòng xì xào._
 }
 dan_dau_tu: Phòng Kinh doanh. {sales}, em có 30 giây trước khi anh chuyển slide.
 _Ba mươi giây. Đồng hồ trên tường tích tắc._ # hen_gio:10
@@ -213,7 +230,7 @@ _Ba mươi giây. Đồng hồ trên tường tích tắc._ # hen_gio:10
     ~ sl_phet(-30)
     { not sl_tu_nhan_btt_gia:
         _Bạn nói thêm: "BTT Global cũng không có thật." Lần này trước cả công ty._
-        ~ sl_bi_mat_lo = true
+        ~ sl_tu_nhan_btt_gia = true
     }
     _Im lặng. Rồi {ke_toan} vỗ tay. Rồi {chi_dai}. Rồi {giam_doc}._
     ~ qh("ke_toan", 10)
@@ -227,94 +244,57 @@ _Ba mươi giây. Đồng hồ trên tường tích tắc._ # hen_gio:10
     ~ sl_hoi_hoa_don = sl_hoi_hoa_don + 1
 * [⏱️ (Không chọn kịp)]
     _{dan_dau_tu} bấm chuyển slide. Hai cột biến mất. Câu chuyện của bạn trôi qua như mọi khi._
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
-_Cuối buổi, {giam_doc} gia hạn hợp đồng cho {idol_het_thoi}. Không ai nhắc tới con số 20% đã hứa ở karaoke._
+- _Cuối buổi, {giam_doc} gia hạn hợp đồng cho {idol_het_thoi}. Không ai nhắc tới con số 20% đã hứa ở karaoke._
 -> END
 
 // ------------------------------------------------------------
 === sales_3110_canh_ga ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng", vest đen, cặp táp, mặt nạ cười._
+# ngay:31 # gio:19:15 # noi:canh_ga_dem_hong # bat_buoc
+_19 giờ 15. Cánh gà Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng", vest đen, cặp táp, mặt nạ cười._
+_Lịch chạy dán trên vách: 19 giờ 30 mở màn bằng phim ngắn "Người Hùng Không Tên" của {bien_kich}, rồi video "16 năm" của {editor}. 20 giờ, màn hình lớn chiếu trực tiếp chung kết "Giọng Ca Ước Mơ" của {thanh_xin_nghi}, thí sinh số 27, rồi tới tiết mục chính._
 { sl_ky_sua_chua:
-    _Trên sân khấu lớn, logo Sữa Chua Hồng Hào sáng rực. Sân khấu to gấp ba dự kiến. Đèn đủ, âm thanh đủ, khói đủ._
-    ~ follow(30000)
+    _Trên phông sân khấu, logo Sữa Chua Hồng Hào sáng rực. Đèn đủ, âm thanh đủ, khói đủ. {chi_dai} đi ngang, gõ vào vai bạn một cái: "Hai giàn đèn đó là của em."_
 - else:
     _Sân khấu nhỏ hơn dự kiến. Logo nhà tài trợ: Quán Ốc Đêm, Tiệm Nail Lung Linh, Phòng khám Khỏe Re. Và một khoảng trống, nơi lẽ ra là BTT Global._
 }
+_Bên kia quảng trường, màn hình LED trên tòa LL bật bộ nhận diện "Hồng Ngoại" màu xanh lá chuối, quay thẳng về sân khấu._
 _Bạn đứng sau cánh gà, cầu trời không ai hỏi chủ tịch Kevin Trộn đâu._
-mc_tivi_hong: *(trên sân khấu)* Và xin cảm ơn các nhà tài trợ!
+mc_tivi_hong: *(thử micro trước giờ mở màn)* Một, hai, ba… Và xin cảm ơn các nhà tài trợ!
 { sl_btt_cong_bo && not sl_tu_nhan_btt_gia:
-    mc_tivi_hong: …À, có khán giả hỏi: đại diện Tập đoàn BTT Global đâu ạ?
-    _Ánh đèn rọi về phía cánh gà. Về phía bạn._ # hen_gio:5
-    * [🤝 Bước ra: "Dạ, BTT Global không có thật. Nhà tài trợ thật là những người đang có logo trên kia."]
-        ~ sl_that_long()
-        ~ sl_tu_nhan_btt_gia = true
-        ~ sl_bi_mat_lo = true
-        ~ sl_phet(-30)
-        _Khán đài im lặng 3 giây. Rồi ai đó vỗ tay. Rồi cả quảng trường vỗ tay. Mạng xã hội gọi đó là "cú quay xe thật thà nhất năm"._
-        ~ follow(20000)
-        -> ca_si
-    * [💁 "Chủ tịch đang trên đường ạ! Tin chị đi!"]
-        ~ sl_phet(20)
-        -> ca_si
-    * [⏱️ (Không chọn kịp)]
-        _MC tự lấp: "Chắc chủ tịch kẹt xe!". Khán giả cười. Bạn không cười._
-        ~ sl_phet(5)
-        -> ca_si
-- else:
-    -> ca_si
+    -> hoi_btt
 }
+-> ca_si
+
+= hoi_btt
+mc_tivi_hong: …À, có khán giả hỏi: đại diện Tập đoàn BTT Global đâu ạ?
+_Ánh đèn rọi về phía cánh gà. Về phía bạn._ # hen_gio:5
+* [🤝 Bước ra: "Dạ, BTT Global không có thật. Nhà tài trợ thật là những người đang có logo trên kia."]
+    ~ sl_that_long()
+    ~ sl_tu_nhan_btt_gia = true
+    ~ sl_phet(-30)
+    _Khán đài im lặng 3 giây. Rồi ai đó vỗ tay. Rồi cả quảng trường vỗ tay. Mạng xã hội gọi đó là "cú quay xe thật thà nhất năm"._
+* [💁 "Chủ tịch đang trên đường ạ! Tin chị đi!"]
+    ~ sl_phet(20)
+* [⏱️ (Không chọn kịp)]
+    _MC tự lấp: "Chắc chủ tịch kẹt xe!". Khán giả cười. Bạn không cười._
+    ~ sl_phet(5)
+- -> ca_si
 
 = ca_si
-{ sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
 { sl_hua_ca_si:
     { sl_phat_nhan_loi:
-        _Đèn tắt. Một giọng hát cất lên từ bóng tối: "Ngày xưa có đôi bạn thân…". {idol_het_thoi}, bản remix. Cả quảng trường hát theo, từ người 15 tuổi tới người 45 tuổi._
-        _"Ca sĩ nổi tiếng nhất nước" là một lời phét. Nhưng đêm nay, trong 4 phút, nó là sự thật._
-        ~ follow(40000)
+        _{idol_het_thoi} đứng cạnh bạn sau cánh gà, ôm micro, môi lẩm nhẩm "Ngày xưa có đôi bạn thân…". Tiết mục "Công Viên" bản remix đã có tên trên lịch chạy._
+        _"Ca sĩ nổi tiếng nhất nước" là một lời phét. Nhưng tối nay, trong 4 phút, nó sắp thành sự thật._
         ~ qh("idol_het_thoi", 10)
     - else:
-        _Khán giả bắt đầu hô: "Ca sĩ đâu! Ca sĩ đâu!". Clip Vũng Tàu được chiếu lại trên hàng trăm điện thoại._
-        ~ follow(-50000)
+        _Dưới khán đài, mấy người cầm điện thoại chiếu lại clip Vũng Tàu, hô: "Ca sĩ đâu! Ca sĩ đâu!". Clip của bạn thành meme trước cả khi màn mở._
         ~ scandal()
         ~ cang_thang(20)
     }
 - else:
     { sl_phat_nhan_loi:
-        _Không ai hứa gì, nhưng {idol_het_thoi} vẫn bước ra, hát "Công Viên" bản remix. Cả quảng trường hát theo._
-        ~ follow(30000)
+        _Không ai hứa gì, nhưng {idol_het_thoi} đã có tên trên lịch chạy: "Công Viên" bản remix. Anh đứng sau cánh gà, gỡ kính đen ra lau, đeo lại, rồi gỡ ra lần nữa._
     }
 }
-_{sieu_nhan_hong} bước ra giữa sân khấu. Cả quảng trường hét lên. Bạn đứng sau cánh gà, tay nắm chặt tấm rèm._
--> END
-
-// ------------------------------------------------------------
-=== sales_3110_sau_dem_hong ===
-# ngay:31 # gio:23:30 # noi:san_khau_dem_hong
-_23 giờ 30. Quảng trường vắng dần. Bạn ngồi trên bậc sân khấu, giày cao gót cầm tay. {designer} ngồi xuống cạnh, đưa bạn một hộp sữa chua._
-designer: Hồng Hào. Hàng tài trợ. Còn dư 200 hộp.
-{ sl_ky_sua_chua:
-    sales: Chị {designer}. Lần đầu tiên em ký được cái gì thật.
-    designer: Chị biết. Chị thấy em khóc ở vỉa hè Sống Ảo.
-    sales: Chị thấy hả?!
-    designer: Chị không thấy gì đâu. *(cười)* Câu của Bác {bac_bao_ve}.
-- else:
-    sales: Chị {designer}. Em mệt quá.
-    designer: Ừ. Ăn sữa chua đi. Mệt thì ăn.
-}
-* [😇 "Chị {designer}… mai mình làm gì?"]
-    designer: Mai chủ nhật. Mai ngủ.
-    sales: Còn mốt?
-    designer: Mốt tính. Slogan công ty mà.
-    ~ qh("designer", 5)
-* [💁 "Tin chị đi, tụi mình sẽ ổn."]
-    designer: *(nhìn bạn)* Câu đó em nói thật hay em đang bán?
-    sales: *(nghĩ lâu)* …Lần này thật.
-    ~ sl_that_long()
-    ~ qh("designer", 5)
-- _Hai đứa ngồi ăn sữa chua dưới ánh đèn sân khấu đang tắt dần. Câu chuyện của bạn sắp có hồi kết._
+_Đèn khán đài tắt. Phim của {bien_kich} bắt đầu. Bạn nắm chặt tấm rèm cánh gà._
 -> END

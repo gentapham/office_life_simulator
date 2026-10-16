@@ -36,8 +36,9 @@ VAR rd_bao_ll_lich_dien = false    // đã báo LL lịch Đại Nhạc Hội Si
 VAR rd_day_nguyen_sang_ll = false  // 27/10: đẩy Nguyên sang LL
 VAR rd_giu_nguyen_lai = false      // 27/10: giữ Nguyên lại
 VAR rd_nguyen_xin_loi = false      // Nguyên đã xin lỗi trực tiếp
-VAR rd_giu_cau_dao = false         // 31/10: đứng sau cánh gà giữ cầu dao
-VAR rd_cat_dien_dem_hong = false   // 31/10: đã sập cầu dao
+VAR rd_giu_cau_dao = false         // 31/10: báo {chi_dai} chặn kế hoạch màn hình LED của LL
+VAR rd_cat_dien_dem_hong = false   // 31/10: nhắn giờ cho LL bật màn hình LED phá đêm diễn
+VAR rd_len_san_khau = false        // 31/10: nhận lời lên sân khấu sau show
 
 // ---------- Minigame ----------
 VAR rd_mg_ban_tin_cay = false      // bản tin tuần này chọn tin cay
@@ -51,7 +52,8 @@ VAR rd_so_ban_tin = 0              // số bản tin đã ra
 // Tung một tin (độc, nghi): ghi nhận để tính kết thúc
 === function rd_tung_tin(doc, nghi_ngo_them) ===
 ~ rd_do_doc = gioi_han(rd_do_doc + doc)
-~ rd_nghi_ngo = gioi_han(rd_nghi_ngo + nghi_ngo_them)
+// tin đồn lan qua nhiều miệng nên chỉ một nửa độ nghi dồn về người tung
+~ rd_nghi_ngo = gioi_han(rd_nghi_ngo + (nghi_ngo_them / 2))
 ~ rd_so_tin_don = rd_so_tin_don + 1
 ~ rd_ngay_tung_tin_cuoi = ngay
 
@@ -64,9 +66,13 @@ VAR rd_so_ban_tin = 0              // số bản tin đã ra
 === function rd_tin_mat() ===
 ~ rd_so_tin_mat = rd_so_tin_mat + 1
 
-// Đổi độ nghi ngờ (giới hạn 0..100)
+// Đổi độ nghi ngờ (giới hạn 0..100). Phần tăng tính một nửa: người ta quên nhanh hơn mình tưởng.
 === function rd_nghi(n) ===
-~ rd_nghi_ngo = gioi_han(rd_nghi_ngo + n)
+{ n > 0:
+    ~ rd_nghi_ngo = gioi_han(rd_nghi_ngo + (n / 2))
+- else:
+    ~ rd_nghi_ngo = gioi_han(rd_nghi_ngo + n)
+}
 
 // Đổi mối hận (giới hạn 0..100)
 === function rd_han(n) ===

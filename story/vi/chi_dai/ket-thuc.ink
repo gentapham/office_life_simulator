@@ -1,40 +1,35 @@
 // ============================================================
 // CHỊ ĐẠI: HƯƠNG · ĐÁNH GIÁ & 6 KẾT THÚC
-// Cảnh đánh giá chạy sau Đại Nhạc Hội Siêu Nhân (cần kết quả đêm diễn),
-// theo thứ tự ưu tiên:
-//   1. Clip Chị Đại      (nổ Nộ Khí trước máy quay)
-//   2. Show Toang        (Tiến Độ < 50%)
-//   3. Tô Ốc Thứ Hai     (bí mật)
-//   4. Nữ Hoàng Sự Kiện
-//   5. Không Ai Bị Gạch Tên
-//   6. Một Mình Gánh Team
-//   Không khớp gì: không ai bị đuổi thì 5, còn lại thì 6.
+// Game gọi cảnh đánh giá sau Đại Nhạc Hội Siêu Nhân (23:00 – 23:45 ngày 31/10),
+// khi ket_thuc_su_nghiep và chung_cong_ty_song đã chốt.
+// Thứ tự xét (docs/so-tay-su-that.md mục 12):
+//   Bí mật: Tô Ốc Thứ Hai        (nhận ra Lưu Lực, ép LL rút lời mời, Tiến Độ ≥ 70)
+//   Vui:    Nữ Hoàng Sự Kiện     (Tiến Độ ≥ 90, Uy Lực ≥ 80, Siêu Sao Hạng A)
+//           Không Ai Bị Gạch Tên (không ai bị đuổi, công ty sống, Đàn Em ≥ 3)
+//   Buồn:   Clip Chị Đại         (nổ Nộ Khí trước máy quay)
+//           Show Toang           (Tiến Độ < 50)
+//           Một Mình Gánh Team   (còn lại)
+// Ba kết thúc vui đều đòi chưa nổ Nộ Khí trên sóng.
 // ============================================================
 
 === chi_dai_3010_danh_gia ===
 # ngay:31 # gio:23:00 # bat_buoc # dieu_kien:sau_dem_hong
 {
+- cd_nhan_ra_ll && cd_ep_ll_rut && cd_tien_do >= 70 && not cd_no_tren_song:
+    ~ chot_ket_thuc("to_oc_thu_hai")
+    -> chi_dai_kt_to_oc_thu_hai
+- cd_tien_do >= 90 && cd_uy_luc >= 80 && ket_thuc_su_nghiep == "sieu_sao_hang_a" && not cd_no_tren_song:
+    ~ chot_ket_thuc("nu_hoang_su_kien")
+    -> chi_dai_kt_nu_hoang_su_kien
+- cd_khong_ai_bi_duoi && chung_cong_ty_song && cd_dan_em >= 3 && cd_tien_do >= 50 && not cd_no_tren_song:
+    ~ chot_ket_thuc("khong_ai_bi_gach_ten")
+    -> chi_dai_kt_khong_ai_bi_gach_ten
 - cd_no_tren_song:
     ~ chot_ket_thuc("clip_chi_dai")
     -> chi_dai_kt_clip_chi_dai
 - cd_tien_do < 50:
     ~ chot_ket_thuc("show_toang")
     -> chi_dai_kt_show_toang
-- cd_nhan_ra_ll && cd_ep_ll_rut && cd_tien_do >= 70:
-    ~ chot_ket_thuc("to_oc_thu_hai")
-    -> chi_dai_kt_to_oc_thu_hai
-- cd_tien_do >= 90 && cd_uy_luc >= 80 && nguoi_theo_doi >= 1000000:
-    ~ chot_ket_thuc("nu_hoang_su_kien")
-    -> chi_dai_kt_nu_hoang_su_kien
-- cd_dan_em >= 5 && cd_doi_chat_tuan && cd_khong_ai_bi_duoi:
-    ~ chot_ket_thuc("khong_ai_bi_gach_ten")
-    -> chi_dai_kt_khong_ai_bi_gach_ten
-- cd_so_lan_kiet_suc >= 3 && qh_ke_toan < 30:
-    ~ chot_ket_thuc("mot_minh_ganh_team")
-    -> chi_dai_kt_mot_minh_ganh_team
-- cd_khong_ai_bi_duoi:
-    ~ chot_ket_thuc("khong_ai_bi_gach_ten")
-    -> chi_dai_kt_khong_ai_bi_gach_ten
 - else:
     ~ chot_ket_thuc("mot_minh_ganh_team")
     -> chi_dai_kt_mot_minh_ganh_team
@@ -96,7 +91,7 @@ _Bạn nâng ly trà đá. Cả sân nâng theo. Không ai nói câu chúc nào.
 // ------------------------------------------------------------
 === chi_dai_kt_to_oc_thu_hai ===
 # ngay:31
-_Đại Nhạc Hội Siêu Nhân thành công. {sieu_nhan_hong} ở lại {cong_ty}. Không có phong bì xanh lá chuối nào tới tay cậu ấy cả. Chỉ bạn biết vì sao._
+_Đại Nhạc Hội Siêu Nhân chạy trọn vẹn. {sieu_nhan_hong} ở lại {cong_ty}. Không có phong bì xanh lá chuối nào tới tay cậu ấy cả. Chỉ bạn biết vì sao._
 _Hôm sau. Quán Ốc Đêm. Bàn số 7, đúng cái bàn năm bạn 20 tuổi. Bạn đặt trước, ngồi trước, gọi trước một ấm trà đá._
 _Bảy giờ tối. Một chiếc xe xanh lá chuối đậu xa quán đúng 50 mét. Lưu Lực đi bộ vào, vest trắng, tóc vuốt keo, mắt nhìn quanh như người đi qua bãi mìn._
 luu_luc: Chị {chi_dai}. Chị hẹn tôi… nói chuyện làm ăn?
@@ -169,8 +164,12 @@ _Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi S�
 // ------------------------------------------------------------
 === chi_dai_kt_mot_minh_ganh_team ===
 # ngay:31
-_Đại Nhạc Hội Siêu Nhân thành công. Pháo giấy hồng. Khán giả hát. {giam_doc} ôm {sieu_nhan_hong} trên sân khấu, khóc như đứa trẻ._
-_Sau show, cả công ty kéo nhau qua Karaoke Hát Cho Nhau Nghe. Group Zalo-lô nổ tin nhắn: "Phòng VIP 2 nha mọi người!", "Ai chưa tới?"._
+{ chung_cong_ty_song:
+    _Đại Nhạc Hội Siêu Nhân thành công. Pháo giấy hồng. Khán giả hát. {giam_doc} ôm {sieu_nhan_hong} trên sân khấu, khóc như đứa trẻ._
+- else:
+    _Đại Nhạc Hội Siêu Nhân chạy trọn vẹn tới bài cuối. Sân khấu không sập, đèn không tắt. Chỉ có con số là không đủ. {giam_doc} cảm ơn từng người, giọng khàn đặc, rồi nói: "Thôi, đi hát một bữa đã."_
+}
+_Sau show, cả công ty kéo nhau qua Karaoke Chú Sáu. Group Zalo-lô nổ tin nhắn: "Phòng VIP 2 nha mọi người!", "Ai chưa tới?"._
 _Không ai nhắn cho bạn. Không ai quên bạn. Chỉ là ai cũng nghĩ: "Chị {chi_dai} chắc bận dọn sân khấu." "Chị {chi_dai} chắc mệt." "Chị {chi_dai} lúc nào chả có việc."_
 _Họ nói đúng. Bạn bận. Bạn mệt. Bạn có việc. Ba lần trong tháng này, bạn kiệt sức tới mức ngồi bệt ở kho mà không đứng dậy nổi. Không ai biết._
 _23:30. Bạn dọn xong cái loa cuối cùng. Về công ty cất bộ đàm. Leo lên sân thượng. Hai cái ghế nhựa. Một cây phơi đồ. Một cái ghế trống._

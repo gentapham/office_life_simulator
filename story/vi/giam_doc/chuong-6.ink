@@ -19,18 +19,17 @@ _Mốc 4: 800.000 người theo dõi. Số hiện tại: {nguoi_theo_doi}._
     _Đạt. Bạn không mời bánh mì. Bạn đi xuống tầng 1, bắt tay từng người. Tay ai cũng lạnh vì máy lạnh, nhưng ai cũng cười._
     ~ gd_uy(5)
 }
-_10:20. Fanpage công ty tự đăng một video lạ: hai tiếng dựng tay, toàn cảnh {quan_ly_idol} cười, {quan_ly_idol} ngủ gật, {quan_ly_idol} cầm hai điện thoại. Cuối video có dòng chữ: "Em thích anh. — Cú."_
+_Trên bàn có tờ báo cáo của {it}: 2:10 sáng nay, fanpage công ty tự đăng một video tên "Thai_final_v12". Toàn cảnh {quan_ly_idol} cười, {quan_ly_idol} ngủ gục trong xe, {quan_ly_idol} cầm hai điện thoại. Cuối video: "Em thích anh. — Cú." Video nằm trên trang 6 phút, khoảng 2.000 lượt xem, rồi {it} gỡ._
 _Cùng lúc, {dan_dau_tu} gõ cửa: bộ lọc số liệu của ông lần ra 80.000 tài khoản ảo đang theo dõi… {idol_het_thoi}._
-* [🗑️ "Gỡ video ngay. Chuyện riêng của nhân viên không lên fanpage."]
+* [🗑️ Nhắn group công ty: "Chuyện riêng của nhân viên không ai được đăng lại. Anh nói một lần."]
     ~ qh("editor", 10)
+    ~ gd_uy(5)
     _{editor} nhắn cho bạn đúng một chữ: "Dạ." Rồi thêm: "Cảm ơn anh."_
-    _Video đã có 40.000 lượt xem. Không gỡ được khỏi trí nhớ ai._
-    ~ follow(10000)
-* [📈 "Để nguyên. Đang viral."]
-    ~ follow(50000)
-    ~ scandal()
-    ~ qh("editor", -20)
-    ~ qh("quan_ly_idol", -10)
+    _Hai nghìn người đã xem. Không gỡ được khỏi trí nhớ ai. Nhưng không ai trong công ty đăng lại._
+* [😠 Gọi {editor} lên: "Fanpage công ty không phải chỗ tỏ tình."]
+    ~ qh("editor", -15)
+    ~ gd_uy(-5)
+    editor: Em không bấm đăng. Em thề. *(ngáp không nổi)*
     _{editor} không đến công ty buổi chiều. Lần đầu tiên trong 4 năm._
 * [🎤 "Vụ fan ảo của {idol_het_thoi}, gọi nó lên đây. Anh nói chuyện riêng trước khi ai đăng gì."]
     idol_het_thoi: *(không đeo kính)* Anh… em nợ 18 triệu tiền thuê fan. Em sợ hết người nghe.
@@ -121,6 +120,33 @@ _Tờ giấy note màu vàng: "Sếp ơi, mai họp đánh giá, sếp có giữ
 - -> END
 
 // ------------------------------------------------------------
+=== giam_doc_2910_email_nhi ===
+# ngay:29 # gio:17:05 # noi:phong_giam_doc # bat_buoc
+_17:05. Điện thoại bạn bắt được wifi "nghegichua" của {hong_hot}. Hộp thư tải về một lượt. Email mới nhất, gửi tới "{cong_ty} - Toàn công ty", lúc 17:02._
+_Người gửi: {thanh_ninh}. Tiêu đề: "Em đồng ý về LL ạ"._
+_Bên ngoài vách kính, tầng 2 im phăng phắc. Hai mươi cái điện thoại cùng sáng lên một lúc._
+{ gd_ll_moi_thang:
+    _Bạn nhớ cái email gấp ba của Lưu Lực đêm 26. Hóa ra Lưu Lực không chỉ mua mỗi Siêu Nhân Hồng._
+}
+* [🚪 Gọi {thanh_ninh} vào phòng, đóng cửa: "Em ngồi đi. Anh nghe."]
+    _{thanh_ninh} ngồi xuống, tay run, mắt đỏ. "Em… em bấm nhầm người nhận, sếp ơi. Em chưa ký gì hết."_
+    giam_doc: Anh không hỏi em ký chưa. Anh hỏi em có muốn đi không.
+    _Lần đầu tiên trong ba năm, {thanh_ninh} không khen bạn câu nào._
+    ~ qh("thanh_ninh", 15)
+    ~ gd_uy(5)
+* [📢 Trả lời toàn công ty: "Ai muốn đi, anh không giữ. Anh không ép, tùy các em."]
+    ~ gd_tuy_em("thanh_ninh")
+    ~ gd_uy(-5)
+    _Mười phút sau, có thêm hai email hỏi "Ủa vậy LL còn tuyển hông?". Có lẽ là đùa. Có lẽ không._
+    { gd_hua_leo >= 5:
+        ~ gd_nhan_vien_bo_di = gd_nhan_vien_bo_di + 1
+    }
+* [😶 Tắt điện thoại. Mai họp đánh giá rồi tính.]
+    ~ cang_thang(10)
+    ~ qh("thanh_ninh", -5)
+- -> END
+
+// ------------------------------------------------------------
 === giam_doc_3010_cong_khai_hoa ===
 # ngay:30 # gio:07:30 # noi:biet_thu # dieu_kien:gd_dung_clone
 _7:30. Wifi đã có lại. Group "Hội Anti Sếp" có 112 tin chưa đọc. Bạn đọc hết._
@@ -158,24 +184,25 @@ _Bông hoa hướng dương vẫn ở đó. Ba mươi ngày. Bạn đã sửa {g
 
 // ------------------------------------------------------------
 === giam_doc_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 { gd_hua_leo >= 5:
     ~ gd_nhan_vien_bo_di = gd_nhan_vien_bo_di + 1
     ~ gd_uy(-5)
     _Phòng họp có vài ghế trống. Những người đã nộp đơn sang LL không tới họp nữa._
 }
-_Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng "Sáng Tạo". Không ai cầm gối. Hôm nay ai cũng tỉnh._
+_14:00. Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng họp tầng 2. Không ai cầm gối. Hôm nay ai cũng tỉnh._
 _Trên bàn: hợp đồng gia hạn của {idol_het_thoi}, hết hạn ngày mai. Danh sách đề cử Phó Giám đốc. Và lời hứa tăng lương, nếu bạn đã lỡ hứa._
-_Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ với người cầm chổi._
+_Sáng nay, trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ với người cầm chổi._
 * [🐕 Nhắn {hr}: "Gầm cầu thang để nguyên. Của {cho}."]
     ~ qh("cho", 15)
     ~ qh("bac_bao_ve", 5)
 * [😶 Kệ. Dọn hết.]
     ~ qh("cho", -15)
 - _Việc thứ nhất: hợp đồng của {idol_het_thoi}._
-* [✍️ Gia hạn 1 năm, giữ nguyên lương.]
+* [✍️ Gia hạn 1 năm, giữ nguyên lương, thưởng ký mới 10 triệu.]
     ~ qh("idol_het_thoi", 15)
     ~ qh("quan_ly_idol", 10)
+    ~ gd_tien_cty(-10)
     idol_het_thoi: *(tháo kính)* Cảm ơn anh. Em sẽ… em sẽ hát cho đàng hoàng.
 * [✂️ Không gia hạn. "Em tự do rồi, đi tìm chỗ hợp hơn."]
     ~ qh("idol_het_thoi", -20)
@@ -185,7 +212,8 @@ _Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang,
 * [👑 {con_ong_chau_cha}.]
     ~ gd_pho_giam_doc = "con_ong_chau_cha"
     con_ong_chau_cha: Dạ… chú ơi, con… con không muốn ghế đó. Con muốn làm nhạc.
-    _Cả phòng sững sờ. {truong_phong} sững sờ nhất._
+    _Cả phòng sững sờ. {truong_phong} sững sờ nhất. Cái ghế Phó Giám đốc vẫn trống._
+    ~ gd_pho_giam_doc = ""
     ~ qh("con_ong_chau_cha", 10)
     ~ qh("truong_phong", -20)
     ~ gd_uy(-10)
@@ -200,6 +228,13 @@ _Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang,
     ~ qh("chi_dai", 20)
     ~ qh("truong_phong", -10)
     ~ gd_uy(10)
+* [👀 {ran_doc}. Người mới, mà không dính vào chuyện gì.]
+    ~ gd_pho_giam_doc = "ran_doc"
+    ran_doc: *(cười rất ngọt)* Dạ em cảm ơn anh. Em sẽ cố gắng không phụ lòng anh ạ.
+    _{chi_dai} nhìn {ran_doc} rất lâu. {thanh_ninh} đánh rơi cây bút. {it} lẩm bẩm gì đó, nghe như "lỗi người dùng"._
+    ~ qh("ran_doc", 20)
+    ~ qh("chi_dai", -10)
+    ~ qh("thanh_ninh", -10)
 * [💰 {ke_toan}.]
     ~ gd_pho_giam_doc = "ke_toan"
     ke_toan: *(lấy kính lúp ra soi tờ quyết định)* … Dạ. Em nhận. Hóa đơn đâu mọi người?
@@ -261,63 +296,29 @@ designer: Dạ… em chọn bộ này cho anh. Hợp vibe ạ. *(không dám nh�
 - -> END
 
 // ------------------------------------------------------------
-=== giam_doc_3110_dem_hong ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
+=== giam_doc_3110_truoc_gio_dien ===
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
 { nguyen_theo_ll:
-    _19:30. Sân khấu Đại Nhạc Hội Siêu Nhân dựng xong, đèn bật, 400 ghế {thuc_tap_sinh} xếp thẳng tắp. Nhưng không có Siêu Nhân Hồng._
-    _Phía bên kia thành phố, tòa nhà xanh lá chuối bắn pháo hoa. {sieu_nhan_hong} đứng trên sân khấu của LL._
-    _{idol_het_thoi} cầm micro, hát "Công Viên" cho 400 cái ghế. Có 60 người ngồi. Ai cũng khóc._
-    ~ follow(20000)
+    _19:15. Sân khấu Đại Nhạc Hội Siêu Nhân dựng xong, đèn bật, 400 ghế {thuc_tap_sinh} xếp thẳng tắp. Phòng thay đồ của Siêu Nhân Hồng trống trơn._
+    _Bên kia đường, màn hình LED khổng lồ trên tòa LL sáng lên, quay thẳng về phía sân khấu của bạn._
+    _{chi_dai} đặt bộ đàm vào tay bạn: "Anh mở màn đi. Show vẫn chạy."_
     -> END
 }
-_19:30. Mở màn: phim ngắn "Người Hùng Không Tên". Rồi video tổng kết "16 năm"._
-_Bạn đứng dưới khán đài, trong bộ đồ hóa trang, tay cầm điện thoại. Con số nhảy từng nghìn: {nguoi_theo_doi}._
-_Rồi {sieu_nhan_hong} bước ra. Đèn hồng. Khán giả hét._
-~ follow(100000)
-{ qh_sieu_nhan_hong >= 50:
-    ~ follow(50000)
-}
-{ gd_uy_quyen >= 60:
-    _Nhân viên của bạn làm việc như chưa từng làm. Ánh sáng chuẩn, âm thanh chuẩn, không ai ngủ gật._
-    ~ follow(50000)
-}
-{ qh_chi_dai >= 40:
-    ~ follow(30000)
-}
-_Giữa bài hát cuối, {sieu_nhan_hong} dừng lại, nhìn xuống khán đài, tìm bạn._
-sieu_nhan_hong: Sếp ơi… em có nên tháo mũ hông?
-* [🙅 Lắc đầu: "Đó là của em. Em quyết."]
-    _{sieu_nhan_hong} gật đầu. Hát tiếp. Bạn không ép. Lần này "tùy em" nghĩa là tùy em thật._
-    ~ follow(30000)
+_19:15. Sau cánh gà. {sieu_nhan_hong} đã mặc đồ xong, ngồi một mình trên thùng loa, hai tay đan vào nhau. Thấy bạn, cậu ấy đứng bật dậy._
+sieu_nhan_hong: Sếp ơi… lát hát bài cuối, em có nên tháo mũ hông?
+* [🙅 "Đó là của em. Em quyết."]
+    _{sieu_nhan_hong} gật đầu. Bạn không ép. Lần này "tùy em" nghĩa là tùy em thật._
     ~ qh("sieu_nhan_hong", 10)
-* [🔥 Gật đầu thật mạnh: "Tháo đi! Tạo sốc!"]
+* [🔥 "Tháo đi! Tạo sốc!"]
     { qh_sieu_nhan_hong >= 60:
-        _{sieu_nhan_hong} tháo mũ. Một gương mặt bình thường, rụt rè, mắt ướt. Khán giả im lặng một giây, rồi gào lên._
+        sieu_nhan_hong: *(im lặng rất lâu, rồi gật đầu)* … Dạ. Lâu rồi em cũng muốn vậy.
         ~ nguyen_thao_mu_dem_hong = true
-        ~ follow(150000)
     - else:
-        _{sieu_nhan_hong} khựng lại, rồi lùi vào cánh gà. Điều khoản số 1: không ai được ép. Đêm diễn mất 10 phút im lặng._
-        ~ follow(-50000)
-        ~ qh("sieu_nhan_hong", -20)
+        sieu_nhan_hong: *(lùi một bước)* Điều khoản số 1, sếp. Hông ai được ép em.
+        _Cậu ấy quay đi. Bạn vừa làm đúng cái việc hợp đồng cấm. Năm phút trước giờ diễn._
+        ~ qh("sieu_nhan_hong", -15)
     }
-* [😶 Giơ điện thoại lên. Quay. Không ra hiệu gì.]
-    ~ follow(10000)
-- _Đâu đó, chung kết "Giọng Ca Ước Mơ" đang phát trên điện thoại của ai đó. Người đứng trên sân khấu đó trông rất giống {thanh_xin_nghi}._
+* [😶 Vỗ vai, không nói gì.]
+    sieu_nhan_hong: *(cười dưới mũ)* Dạ. Em hiểu rồi.
+- _{chi_dai} gọi bộ đàm: "Sếp ơi, ra cầm micro. Mười lăm phút nữa mở màn."_
 -> END
-
-// ------------------------------------------------------------
-=== giam_doc_3110_sau_man ===
-# ngay:31 # gio:22:30 # noi:choi_bao_ve
-_22:30. Sân khấu đã tắt đèn. Bạn đi bộ về công ty, vẫn mặc nguyên bộ hóa trang. Chòi bảo vệ còn sáng._
-bac_bao_ve: *(rót trà)* Ông Kẹ Ngân Hàng. Hợp với cậu đấy.
-cho: Gâu. *(ngửi túi tiền rỗng, thất vọng)*
-_Điện thoại bạn sáng lên. Con số cuối cùng: {nguoi_theo_doi}._
-* [☕ Ngồi xuống. Uống trà. Không nhìn điện thoại nữa.]
-    ~ gd_tra_binh = gd_tra_binh + 1
-    ~ cang_thang(-20)
-    bac_bao_ve: Mười sáu năm. Năm nay là năm cậu nói thật nhiều nhất đấy.
-* [📲 Mở group công ty lúc 22:00 như thói quen. Gõ… rồi xóa.]
-    ~ gd_sua("nhan_22h")
-    _Bạn xóa từng chữ. Rồi gõ lại: "Cảm ơn các em." Gửi. Không giao việc. Không emoji._
-    _Hai mươi hai người "đã xem". Mười chín người trả lời "Dạ". Một người thả tim. Là {chi_dai}._
-- -> END

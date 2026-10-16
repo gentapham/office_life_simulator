@@ -90,12 +90,12 @@ _Rồi bạn nghĩ tới sổ nợ của mình: 22 triệu. Lần đầu tiên t
 _Trời bắt đầu tối. Không máy tính. Bạn lấy một xấp giấy in hỏng và cây bút bi, ngồi ở bàn pantry._
 _Bạn bắt đầu vẽ lại biểu đồ lượt xem của chiến dịch, từ trí nhớ. Cột này là MV. Cột này là poster. Cột này là…_
 { ddt_thay_clip_ba_cu:
-    _…cái cột bạn đã dán mẩu giấy ghi chú hôm 6/10: clip bà cụ._
+    _…cái cột bạn đã dán mẩu giấy ghi chú hôm 6/10: clip xe chè._
 - else:
     _…một cái cột mà bạn chỉ nhớ mang máng là rất cao. Hôm 6/10 bạn mải nhìn chart nên không để ý kỹ._
 }
 _Bạn vẽ xong. Bạn nhìn tờ giấy. Rồi nhìn lại lần nữa._
-_Clip {sieu_nhan_hong} dắt bà cụ: gấp 12 lần MV chính thức. Clip buộc dây giày cho em nhỏ: gấp 5 lần. Mọi video {sieu_nhan_hong} đi giúp người thật: gấp nhiều lần mọi video {sieu_nhan_hong} diễn._
+_Clip {sieu_nhan_hong} đẩy xe chè cho Bà Bảy: gấp 12 lần MV chính thức. Clip buộc dây giày cho em nhỏ: gấp 5 lần. Mọi video {sieu_nhan_hong} đi giúp người thật: gấp nhiều lần mọi video {sieu_nhan_hong} diễn._
 _Khán giả không thích {sieu_nhan_hong} khi diễn. Họ thích {sieu_nhan_hong} khi giúp người thật._
 * [📊 Viết to lên đầu tờ giấy: "ĐỔI HƯỚNG." Gạch chân ba lần.]
     ~ ddt_bieu_do_tay = true
@@ -119,7 +119,7 @@ _Khán giả không thích {sieu_nhan_hong} khi diễn. Họ thích {sieu_nhan_h
 // ------------------------------------------------------------
 === dan_dau_tu_1510_cong_vien ===
 # ngay:15 # gio:19:30 # noi:pantry
-_Tối. Pantry chỉ còn ánh đèn pin của {it}. {idol_het_thoi} ngồi trên quầy bếp, ôm cây guitar, hát "Công Viên" bằng giọng thật. {editor} lặng lẽ quay._
+_Tối. Pantry chỉ còn ánh đèn pin của {it}. {idol_het_thoi} ngồi trên quầy bếp, ôm cây đàn ghi-ta, hát "Công Viên" bằng giọng thật. {editor} lặng lẽ quay._
 _Bạn nợ {idol_het_thoi} 500.000đ tiền ăn trưa. {idol_het_thoi} hát bài hit duy nhất của đời mình trong bóng tối, cho 6 người nghe._
 * [👏 Vỗ tay thật to khi hết bài.]
     idol_het_thoi: Cảm ơn! Hồi anh còn nổi, tiếng vỗ tay như vầy là của 5 nghìn người đó.
@@ -135,25 +135,25 @@ _Bạn nợ {idol_het_thoi} 500.000đ tiền ăn trưa. {idol_het_thoi} hát bà
 
 // ------------------------------------------------------------
 === dan_dau_tu_1610_canh_ga ===
-# ngay:16 # gio:09:30 # noi:dai_tivi_hong # bat_buoc
-_Gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng. Bạn ngồi sau cánh gà, điện thoại mở bảng lượt xem trực tiếp theo từng phút._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14 giờ. Ghi hình gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng, 20 giờ tối nay phát sóng. Bạn ngồi sau cánh gà, điện thoại mở bảng đo phản ứng khán giả trường quay theo từng phút mà đài cho mượn._
 _Bên cạnh là {chi_dai}, cầm bộ đàm._
 chi_dai: {dan_dau_tu}. Lúc nào khán giả chán, nói chị. Chị không đọc được số, nhưng chị đọc được em.
-_Phần "Hit Một Thời": {sieu_nhan_hong} hát "Công Viên" sai lời, "bán khoai chiên". Đường lượt xem rung lên: người ta cười, nhưng không tắt._
-_Phút thứ 22: đường lượt xem bắt đầu đi xuống. Khán giả chán phần trò chơi._
+_Phần "Hit Một Thời": {sieu_nhan_hong} hát "Công Viên" sai lời, "bán khoai chiên". Từ cánh gà, {idol_het_thoi} hát bè đúng lời. Đường phản ứng rung lên: người ta cười, nhưng không ai rời mắt._
+_Phút thứ 22: đường phản ứng bắt đầu đi xuống. Khán giả trường quay chán phần trò chơi, bắt đầu cầm điện thoại lên lướt._
 * {ddt_phan_tich_cao} [🔒 "Chị, cho {sieu_nhan_hong} xuống giúp bà cụ hàng ghế đầu đang loay hoay với cái dù."]
     chi_dai: *(vào bộ đàm)* Hồng. Hàng một, ghế ba. Bà cụ. Đi.
-    _{sieu_nhan_hong} nhảy khỏi sân khấu, mở dù giùm bà cụ, đỡ bà ngồi lại. Camera đài bắt trọn. Đường lượt xem dựng đứng._
-    ~ follow(50000)
+    _{sieu_nhan_hong} nhảy khỏi sân khấu, mở dù giùm bà cụ, đỡ bà ngồi lại. Camera đài bắt trọn. Đường phản ứng dựng đứng. Tối nay lên sóng, đoạn này sẽ được cắt riêng._
+    ~ follow(30000)
     ~ qh("chi_dai", 15)
     ~ ddt_lam_that(5)
 * [📊 "Chị, cắt quảng cáo sớm 2 phút."]
     chi_dai: *(vào bộ đàm)* Đạo diễn, cắt quảng cáo. Ngay.
-    _Lượt xem không tụt thêm. Không tăng, nhưng không tụt._
+    _Đường phản ứng không tụt thêm. Không tăng, nhưng không tụt._
     ~ follow(15000)
     ~ ddt_lam_that(3)
 * [📈 Lén mở chart $HONG xem gameshow có làm coin tăng không.]
-    _$HONG nhích 4%. Bạn mỉm cười. Phút thứ 22 trôi qua mà không ai báo {chi_dai}. Khán giả chuyển kênh._
+    _$HONG nhích 4%. Bạn mỉm cười. Phút thứ 22 trôi qua mà không ai báo {chi_dai}. Nửa trường quay ngồi lướt điện thoại._
     ~ ddt_soi_chart()
     ~ follow(-10000)
     ~ qh("chi_dai", -5)
@@ -161,8 +161,8 @@ _Phút thứ 22: đường lượt xem bắt đầu đi xuống. Khán giả ch�
 
 // ------------------------------------------------------------
 === dan_dau_tu_1610_buffet ===
-# ngay:16 # gio:12:30 # noi:pantry
-_Ngày Lương thực Thế giới. Công ty mở buffet ăn mừng gameshow. Miễn phí. Bạn đã chờ ngày này cả tuần._
+# ngay:16 # gio:19:30 # noi:sanh_cong_ty
+_Ngày Lương thực Thế giới. Xe của đoàn về tới công ty lúc 19 giờ. Liên hoan buffet ở sảnh, 20 giờ cả công ty xem gameshow phát sóng trên tivi. Miễn phí. Bạn đã chờ ngày này cả tuần._
 _Bạn là người đầu tiên cầm đĩa. Và là người duy nhất mang theo hộp nhựa._
 * [🍱 Ăn một đĩa đầy. Ăn đàng hoàng.]
     ~ an(100)
@@ -180,10 +180,10 @@ _Bạn là người đầu tiên cầm đĩa. Và là người duy nhất mang t
 
 // ------------------------------------------------------------
 === dan_dau_tu_1610_tra_sua_thu_6 ===
-# ngay:16 # gio:15:00 # noi:tang_1
-_Trà sữa thứ 6 từ quỹ phạt đi trễ. Tháng này quỹ dày vì {chua_te_deadline} đi trễ 9 lần._
-_{sales} đứng chia trà sữa. Ly của bạn được đưa tới kèm một câu:_
-sales: Anh {dan_dau_tu}, ly này là em tặng nha. Không tính vô nợ. Tháng này em vui vì gameshow nổ.
+# ngay:16 # gio:17:30 # noi:xe_khach
+_Trên xe về từ Đài Tivi Hóng. Trà sữa thứ 6 từ quỹ phạt đi trễ, mua ở căn tin của đài. Tháng này quỹ dày vì {chua_te_deadline} đi trễ 9 lần._
+_{sales} đi dọc lối xe chia trà sữa. Ly của bạn được đưa tới kèm một câu:_
+sales: Anh {dan_dau_tu}, ly này là em tặng nha. Không tính vô nợ. Hôm nay em vui vì gameshow quay ngon.
 * [😇 "Cảm ơn em. Anh sẽ trả. Thật."]
     sales: Anh nói "thật" mà không có "lần này là lên" phía trước, nghe lạ ghê. Em tin… 30%.
     ~ qh("sales", 5)

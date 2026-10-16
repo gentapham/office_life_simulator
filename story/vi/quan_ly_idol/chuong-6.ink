@@ -16,21 +16,21 @@
     _Phòng chờ trống. Biển "Phòng chờ Siêu Nhân Hồng" vẫn còn. Đĩa bánh chuối chiên nguội ngắt. Không còn ai để ghép song ca._
     -> END
 }
-_Còn ba ngày tới Đại Nhạc Hội Siêu Nhân. Bạn có một ý tưởng từ hôm gameshow: {idol_het_thoi} và Nguyên song ca "Công Viên Hồng". Một bản remix. Muốn làm được, phải làm hòa cả hai._
-_Bạn gọi cả hai vào phòng chờ. {idol_het_thoi} đứng ở cửa. Nguyên ngồi trên ghế, mũ cầm tay._
-* {qh_idol_het_thoi >= 40 and qh_sieu_nhan_hong >= 40} [🤝 "Hai đứa hát chung. Mỗi người một nửa bài. Nguyên nhớ: CHUỐI chiên."]
+_Còn ba ngày tới Đại Nhạc Hội Siêu Nhân. Bạn có một ý tưởng từ hôm gameshow: {idol_het_thoi} và {sieu_nhan_hong} song ca "Công Viên Hồng". Một bản remix. Muốn làm được, phải làm hòa cả hai._
+_Bạn gọi cả hai vào phòng chờ. {idol_het_thoi} đứng ở cửa. {sieu_nhan_hong} ngồi trên ghế, mũ cầm tay._
+* {qh_idol_het_thoi >= 40 and qh_sieu_nhan_hong >= 40} [🤝 "Hai đứa hát chung. Mỗi người một nửa bài. {sieu_nhan_hong} nhớ: CHUỐI chiên."]
     sieu_nhan_hong: *(bật dậy)* Dạ em nhớ! Em viết lên tay luôn!
-    idol_het_thoi: *(nhìn Nguyên viết chữ "CHUỐI" lên mu bàn tay, rồi nhìn bạn)* …Ừ. Hát chung.
+    idol_het_thoi: *(nhìn {sieu_nhan_hong} viết chữ "CHUỐI" lên mu bàn tay, rồi nhìn bạn)* …Ừ. Hát chung.
     ~ thai_song_ca_ghep = true
     ~ qh("idol_het_thoi", 5)
     ~ qh("sieu_nhan_hong", 5)
-* [📞 "Nguyên hát chính. {idol_het_thoi} đứng bè."]
+* [📞 "{sieu_nhan_hong} hát chính. {idol_het_thoi} đứng bè."]
     idol_het_thoi: *(cười nhạt)* Đứng bè bài của em hả anh?
-    _Phát đi ra. Cửa phòng chờ đóng hơi mạnh._
+    _{idol_het_thoi} đi ra. Cửa phòng chờ đóng hơi mạnh._
     ~ qh("idol_het_thoi", -15)
-* [🎤 "Phát hát chính. Nguyên đứng bè."]
+* [🎤 "{idol_het_thoi} hát chính. {sieu_nhan_hong} đứng bè."]
     sieu_nhan_hong: Dạ được! Em đứng bè!
-    _Phát gật đầu. Nhưng {giam_doc} đi ngang, nghe được: "Thái, Đại Nhạc Hội Siêu Nhân là show của Nguyên mà."_
+    _{idol_het_thoi} gật đầu. Nhưng {giam_doc} đi ngang, nghe được: "{quan_ly_idol}, Đại Nhạc Hội Siêu Nhân là show của {sieu_nhan_hong} mà."_
     ~ thai_song_ca_ghep = true
     ~ qh("idol_het_thoi", 10)
     ~ qh("giam_doc", -5)
@@ -71,21 +71,22 @@ dan_dau_tu: {quan_ly_idol}. Tui lọc tài khoản ảo trước khi nền tản
 
 // ------------------------------------------------------------
 === quan_ly_idol_2810_xuat_nham ===
-# ngay:28 # gio:18:30 # noi:phong_dung
-_Chiều. {hong_hot} chạy tới: "Anh {quan_ly_idol}, nghe gì chưa? Fanpage công ty đang tự tải lên một video lạ! Tên file là… 'Thai_final_v12'!"_
-_Bạn chạy xuống phòng dựng. {editor} ngồi trước màn hình, mặt trắng bệch. Thanh tải lên: 73%. Rồi 74%._
-editor: *(không quay lại)* Dạ… em lỡ bấm nhầm. Anh… anh đừng coi.
+# ngay:28 # gio:09:00 # noi:phong_dung
+_9 giờ sáng. {hong_hot} chạy tới: "Anh {quan_ly_idol}, nghe gì chưa? 2 giờ 10 sáng nay kênh của {editor} tự lên bản nháp video '16 năm'! Sáu phút, hai nghìn lượt xem, rồi bị gỡ. Mà cuối video dính thêm một đoạn lạ, tên file 'Thai_final_v12'!"_
+_Bạn xuống phòng dựng. {editor} ngồi trước màn hình, mặt trắng bệch, mắt thâm như chưa từng ngủ trong đời._
+editor: *(không quay lại)* Dạ… em ghép nhầm file lúc xuất. Em gỡ rồi. Anh… anh đừng coi.
 * [😇 "Ừ. Anh không coi. Em tự xử lý nha. Anh ra ngoài."]
     editor: *(nói rất nhỏ)* Dạ… cảm ơn anh.
-    _Bạn ra ngoài. Đứng ở hành lang. Bạn không coi. Nhưng bạn đã kịp thấy ảnh thu nhỏ của video: một người cầm hai điện thoại, ngủ gục trong xe._
+    _Bạn ra ngoài. Đứng ở hành lang. Bạn không coi. Nhưng {hong_hot} đã kịp gửi bạn ảnh chụp khung hình cuối: một người cầm hai điện thoại, ngủ gục trong xe._
     ~ qh("editor", 10)
-* [💬 "Video gì mà tên anh vậy {editor}?"]
-    editor: Dạ… video… cho một người. *(dừng)* Em… em xin anh đừng hỏi hôm nay.
-    _Bạn không hỏi. Bạn để một ly cà phê sữa lên bàn {editor}, rồi đi._
+* [💬 "Đoạn gì mà mang tên anh vậy {editor}?"]
+    editor: Dạ… một đoạn… cho một người. *(dừng)* Em… em xin anh đừng hỏi hôm nay.
+    _Bạn không hỏi. Bạn để một ly cà phê đen không đường lên bàn {editor}, rồi đi._
     ~ qh("editor", 8)
-* [📞 "Anh gọi {it} hủy tải lên giùm em."]
-    it: *(qua điện thoại)* Hủy được. Mai. Hôm nay đang… *(tiếng gõ phím)* Mai.
+* [📞 Gọi {it}: "Kiểm tra coi còn ai tải lại bản đó hông. Có thì báo gỡ."]
+    it: *(qua điện thoại)* Hai nghìn lượt, sáu phút, lúc hai giờ sáng. Người coi toàn cú đêm. *(tiếng gõ phím)* Tui báo gỡ ba bản tải lại rồi.
     ~ qh("editor", 3)
+    ~ thai_dap()
 - -> END
 
 // ------------------------------------------------------------
@@ -95,7 +96,7 @@ editor: *(không quay lại)* Dạ… em lỡ bấm nhầm. Anh… anh đừng c
 _Ngày Internet Quốc tế. Wifi sập cả ngày. Cả công ty đuổi theo {it}. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. {chi_dai} điều phối bằng bộ đàm. {hong_hot} phát 4G, mật khẩu "nghegichua"._
 _Không mạng. Không bài báo mới. Không ai đăng gì. Lần đầu tiên trong một tháng, Khủng Hoảng không tăng._
 ~ thai_kh(-1)
-_Ở phòng dựng, video của {editor} kẹt ở 99%. {editor} ngồi nhìn thanh tải lên như cầu nguyện._
+_Ở phòng dựng, bản chính thức của video "16 năm" mà {editor} tải lên lại từ 8 giờ 50 kẹt ở 99%. {editor} ngồi nhìn thanh tải lên như cầu nguyện._
 * [✉️ Viết giấy gửi qua chòi bảo vệ cho {idol_het_thoi}: "Ăn trưa chưa?"]
     _Mười phút sau, tờ giấy quay về, chữ {idol_het_thoi}: "Chưa. Anh mua gì em ăn nấy." Kèm hình vẽ một xiên cá viên chiên, vẽ xấu._
     bac_bao_ve: *(đưa giấy)* Bác chuyển thư cả đời rồi. Thư này dễ thương nhất hôm nay đấy.
@@ -117,7 +118,7 @@ _Ở phòng dựng, video của {editor} kẹt ở 99%. {editor} ngồi nhìn th
 _Chùa Phố Cũ. Cây bồ đề lớn, mùi nhang trầm, tiếng chuông xa. Bạn chưa từng tới đây vào ngày thường._
 _Không có mạng. Không có ai gọi. Bạn cầm một nén nhang. Bạn có một điều muốn cầu, nhưng không dám nói thành lời, kể cả trong đầu._
 ~ thai_nhang = thai_nhang + 1
-* [🙏 Cầu cho Đại Nhạc Hội suôn sẻ. Cho công ty. Cho Nguyên.]
+* [🙏 Cầu cho Đại Nhạc Hội suôn sẻ. Cho công ty. Cho {sieu_nhan_hong}.]
     _Một điều nói ra được. Bạn nói ra. Nhẹ hơn một chút._
     ~ thai_tt(5)
     ~ cang_thang(-10)
@@ -135,14 +136,14 @@ _Không có mạng. Không có ai gọi. Bạn cầm một nén nhang. Bạn có
 // ------------------------------------------------------------
 === quan_ly_idol_2910_linh_hoi ===
 # ngay:29 # gio:21:00 # noi:phong_dung
-_Tối. Vẫn chưa có mạng. Phòng dựng tối om, chỉ có ánh màn hình. Thanh tải lên vẫn ở 99%. {editor} ngồi đó, ôm gối._
+_Tối. Vẫn chưa có mạng. Phòng dựng tối om, chỉ có ánh màn hình. Thanh tải lên video "16 năm" vẫn ở 99%. {editor} ngồi đó, ôm gối._
 editor: Anh {quan_ly_idol}… em hỏi anh một câu nha. Nếu có người dựng video cho anh… anh có muốn coi hông?
 _Câu hỏi treo lơ lửng giữa phòng tối, như thanh tải lên 99%._
 * [😊 "Có chứ. Ai dựng cho anh thì anh coi. Mà ai rảnh dựng cho anh?"]
     editor: *(cười rất nhỏ)* Dạ… ai đó thôi.
-    _{editor} không nói thêm. Bạn không hỏi thêm. Đêm đó, cái video vẫn 99%._
+    _{editor} không nói thêm. Bạn không hỏi thêm. 22 giờ 47, wifi có lại. Thanh tải lên nhảy lên 100%. {editor} thở ra như vừa được thả khỏi thang máy kẹt._
     ~ qh("editor", 5)
-* {thai_nguoi_dung_dem} [💬 "Lĩnh. Anh biết em lo cho anh. Anh cảm ơn em. Mà anh…"]
+* {thai_nguoi_dung_dem} [💬 "{editor}. Anh biết em lo cho anh. Anh cảm ơn em. Mà anh…"]
     editor: *(ngắt lời, rất nhẹ)* Dạ em biết. Anh nhìn anh {idol_het_thoi} lâu hơn người khác một giây. Em dựng phim mà anh. Em thấy hết.
     _Bạn không nói gì được. Mười hai năm giấu, hóa ra có người thấy từ lâu, và vẫn ở đây._
     editor: Em không cần anh trả lời. Em chỉ muốn anh biết là… có người thức cùng.
@@ -151,6 +152,24 @@ _Câu hỏi treo lơ lửng giữa phòng tối, như thanh tải lên 99%._
 * [📱 "Mai có mạng, em dựng giùm anh cái teaser Đại Nhạc Hội nha."]
     editor: *(im lâu)* … Dạ. Em dựng.
     ~ qh("editor", -3)
+- -> END
+
+// ------------------------------------------------------------
+=== quan_ly_idol_3010_usb ===
+# ngay:30 # gio:12:15 # noi:san_thuong
+_12 giờ 15. Sân thượng, giờ nghỉ trưa. Bạn lên đây gọi điện. {editor} đã đứng sẵn cạnh cây phơi đồ, tay cầm một chiếc USB hình con cú._
+editor: Anh {quan_ly_idol}. Bản gốc "Thai_final_v12". Bản duy nhất còn lại, em xóa hết trên máy rồi. Anh muốn coi thì coi. Không muốn thì… anh bỏ vô ngăn kéo nào đó cũng được.
+* [🦉 Nhận USB, bỏ vào túi áo trong, chỗ không để điện thoại.]
+    _{editor} gật đầu, đi xuống cầu thang. Bạn đứng lại một mình. Túi áo trong nhẹ tênh, mà bạn cứ thấy nặng._
+    ~ thai_giu_usb_linh = true
+    ~ qh("editor", 10)
+    ~ cang_thang(-5)
+* [😶 "Em giữ đi. Anh… chưa coi được."]
+    editor: *(cất USB lại)* Dạ. Em giữ. Lúc nào anh coi được thì nói em.
+    ~ qh("editor", 3)
+* [📞 Điện thoại reo. Bạn giơ một ngón tay: "Chờ anh chút."]
+    _Cuộc gọi kéo dài mười hai phút. Khi bạn quay lại, sân thượng không còn ai. Trên ghế nhựa có một ly cà phê đen đá ít đường, đá đã tan._
+    ~ thai_dap()
 - -> END
 
 // ------------------------------------------------------------
@@ -180,8 +199,8 @@ thanh_xin_nghi: Anh {quan_ly_idol}… mai chung kết. 20 giờ. Đại Nhạc H
 // ------------------------------------------------------------
 === quan_ly_idol_3010_hop_danh_gia ===
 # ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng họp. Đề bạt, tăng lương, cắt giảm. Mục cuối: "Gia hạn hợp đồng ca sĩ độc quyền: {idol_het_thoi}"._
-_Phát ngồi ở ghế phụ sát cửa. Không đeo kính._
+_Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng họp. Mục một: ghế Phó Giám đốc, {truong_phong} và {con_ong_chau_cha} ngồi hai đầu bàn, không nhìn nhau. Mục hai: danh sách cắt giảm của {hr}, úp mặt trên bàn, chưa ai được đọc. Mục cuối: "Gia hạn hợp đồng ca sĩ độc quyền: {idol_het_thoi}. Hết hạn 31/10."_
+_{idol_het_thoi} ngồi ở ghế phụ sát cửa. Không đeo kính._
 giam_doc: {quan_ly_idol}. Cậu là quản lý của nó. Nói đi. Gia hạn hay không?
 * {uy_tin >= 30} [🎲 "Gia hạn. Em đặt cược uy tín của em. Một năm nữa không lên, em nghỉ trước nó."]
     _Cả phòng im lặng. {hr} ngừng ghi chép. {idol_het_thoi} quay phắt sang nhìn bạn._
@@ -207,10 +226,10 @@ giam_doc: {quan_ly_idol}. Cậu là quản lý của nó. Nói đi. Gia hạn ha
         giam_doc: Chưa gia hạn.
     }
 - { thai_phat_gia_han:
-    _Phát nhìn bạn. Không cười. Chỉ gật đầu một cái, rất chậm, như cúi chào sau một bài hát._
+    _{idol_het_thoi} nhìn bạn. Không cười. Chỉ gật đầu một cái, rất chậm, như cúi chào sau một bài hát._
     ~ thai_tt(10)
 - else:
-    _Phát đứng dậy, ra ngoài. Bạn muốn đi theo. Máy phải reo: đạo diễn Đại Nhạc Hội Siêu Nhân. Bạn nghe máy._
+    _{idol_het_thoi} đứng dậy, ra ngoài. Bạn muốn đi theo. Máy phải reo: đạo diễn Đại Nhạc Hội Siêu Nhân. Bạn nghe máy._
     ~ thai_kh(1)
     ~ thai_tt(-10)
 }
@@ -231,7 +250,7 @@ _Máy trái sáng. {idol_het_thoi}: "Mai anh đứng ở đâu?"_
 * [📱 "Cánh gà. Như mọi khi."]
     idol_het_thoi: Như mọi khi.
     ~ thai_gk(3)
-* {thai_ky_ll} [💚 Không trả lời. Mở tin nhắn của Lưu Lực: "Mai 18 giờ, xe LL đón anh và Nguyên."]
+* {thai_ky_ll} [💚 Không trả lời. Mở tin nhắn của Lưu Lực: "Mai 18 giờ, xe LL đón anh và {sieu_nhan_hong}."]
     _Bạn đọc hai tin nhắn, một trên một dưới. Bạn trả lời tin dưới: "Ok." Tin trên, bạn để đó._
     ~ thai_tt(-10)
 - _Bạn đóng ngăn kéo. Lần này không kiểm tra lại._
@@ -246,9 +265,8 @@ _Đại Nhạc Hội Siêu Nhân. Sân khấu Đại Nhạc Hội Siêu Nhân, P
     _Nhưng bạn không ở đó. Bạn ở tầng 18 tòa nhà kính xanh lá chuối, ngồi trước màn hình livestream._
     -> END
 }
-{ thai_khung_hoang >= 5:
-    _Bạn không ở đó. Bạn đang nằm ở Phòng khám Đa Khoa Khỏe Re._
-    -> END
+{ thai_khung_hoang >= 4:
+    _Bạn tới bằng xe ôm, ly cà phê thứ bảy trong tay. Tay run tới mức đổ nửa ly lên giày. {chi_dai} nhìn bạn, nói "ông ngồi xuống chút đi". Bạn không ngồi._
 }
 _Hậu trường ồn như chợ. Máy phải: đạo diễn sân khấu. Máy trái: {idol_het_thoi}, đứng cách bạn 3 mét._
 { thai_doi_lich_son >= 3 and not thai_to_son:
@@ -276,15 +294,13 @@ _Hậu trường ồn như chợ. Máy phải: đạo diễn sân khấu. Máy t
     -> END
 }
 _19 giờ 30. Đại Nhạc Hội Siêu Nhân bắt đầu. Phim ngắn "Người Hùng Không Tên" mở màn, rồi video "16 năm" của {editor}. Trong video có một cảnh năm 2015: một cậu trợ lý booking đứng sau cậu sinh viên ôm đàn, tay cầm một cái điện thoại cục gạch._
-_Cả bãi năm nghìn người không ai biết người đó là bạn. {editor} thì biết. {editor} đã giữ khung hình đó lâu hơn các khung khác một giây._
+_Cả khán đài không ai biết người đó là bạn. {editor} thì biết. {editor} đã giữ khung hình đó lâu hơn các khung khác một giây._
 { thai_song_ca_ghep and not nguyen_theo_ll:
-    _Tiết mục số 3. "Công Viên Hồng". {idol_het_thoi} và Nguyên. Nhạc dạo bản remix vang lên. Nguyên nhìn mu bàn tay trái, đọc to: "…thích ăn CHUỐI chiên!"_
-    _Năm nghìn người hét theo. {giam_doc} ở hàng đầu, bộ đồ Ông Kẹ ướt đẫm nước mắt._
-    ~ follow(150000)
+    _Tiết mục số 3. "Công Viên Hồng". {idol_het_thoi} và {sieu_nhan_hong}. Nhạc dạo bản remix vang lên. {sieu_nhan_hong} nhìn mu bàn tay trái, đọc to: "…thích ăn CHUỐI chiên!"_
+    _Cả khán đài hét theo. {giam_doc} ở hàng đầu, bộ đồ Ông Kẹ ướt đẫm nước mắt._
 - else:
     { thai_phat_gia_han:
-        _Phát mở màn phần ca nhạc. "Công Viên". Nửa bãi hát theo._
-        ~ follow(20000)
+        _{idol_het_thoi} mở màn phần ca nhạc. "Công Viên". Nửa khán đài hát theo._
     }
 }
 { thai_vi_tri_dem_hong == "hang_dau":
@@ -298,7 +314,7 @@ _Cả bãi năm nghìn người không ai biết người đó là bạn. {edito
     ~ cang_thang(-10)
 * [📞 Nghe máy đạo diễn: chuẩn bị tiết mục tiếp theo.]
     ~ uy_tin = uy_tin + 2
-    ~ follow(10000)
+    ~ thai_p(-10)
 * {thai_doi_lich_son >= 3 and not thai_to_son} [📺 Mở máy thứ ba coi {thanh_xin_nghi} hát chung kết.]
     _Màn hình nhỏ xíu. {thanh_xin_nghi} trong bộ vest kim tuyến, hát nốt cao, không ho tiếng nào._
     _Bạn giơ ngón cái lên trước màn hình. Không ai thấy. {thanh_xin_nghi} thì như thấy._

@@ -19,7 +19,7 @@ thuc_tap_sinh: Dạ… anh không phải nhân viên… mà anh dạy em một �
     _Chiều, cậu ta thức dậy, nhìn bông hoa, nhìn quanh. Không biết ai. Nhưng không vứt._
 * [🎁 Gọi {hong_hot} quay lại cảnh mình tặng hoa cho người đang ngủ.]
     ~ snh_qua_truoc_camera = true
-    ~ follow(5000)
+    ~ follow(2000)
     hong_hot: Ối dồi ôi, siêu nhân tặng hoa cho chúa tể deadline đang ngủ! Đám cá tươi!
     chua_te_deadline: *(tỉnh dậy, chói đèn)* …Hả? Quay gì vậy? À, PR hả anh. Ok ok.
     ~ snh_tim(-2)
@@ -47,39 +47,97 @@ quan_ly_idol: *(điện thoại kẹp vai)* Chụp nhanh nhé. 11 giờ anh có 
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_0610_ba_cu ===
-# ngay:6 # gio:10:40 # noi:studio_tang_2 # bat_buoc
-_Đang chụp dở. Qua cửa sổ studio, bạn thấy một bà cụ bị kẹt bánh xe lăn ở rãnh nước. Xe cộ bóp còi inh ỏi._
+# ngay:6 # gio:10:30 # noi:duong_truoc_cong_ty # bat_buoc
+_10 giờ 30. Đang chụp dở. Qua cửa sổ studio, bạn thấy dưới Đường Hóng, gần đầu Hẻm 69, một chiếc xe chè kẹt bánh trong ổ gà. Một bà cụ tóc bạc đang cố đẩy. Xe cộ bóp còi inh ỏi._
+_Bạn biết chiếc xe đó. Bóng đèn vàng treo trên cành me. Sáu cái ghế nhựa thấp xếp chồng bên hông. Xe chè của Bà Bảy._
 designer: Anh ơi, còn 7 kiểu nữa!
 * [🆘 "Khoan! Ngoài kia có người cần giúp! Điều khoản số 3!" *(chạy biến)*]
     ~ snh_bo_chup_giup_ba_cu = true
     ~ snh_giup_nguoi()
-    _Bạn quỳ giữa nắng, nhấc từng bánh xe, đẩy bà cụ qua đường. Bà nắm tay bạn, kể chuyện con cháu đi làm xa._
-    ba_cu: Con đeo cái mũ chi cho nóng vậy con? Mà thôi, đẹp. Cảm ơn con nha.
     ~ qh("designer", -5)
-    ~ follow(30000)
-    _Có ai đó quay lại. Bạn không biết. Bạn chỉ biết bà cười._
+    _Bạn chạy xuống, nguyên bộ đồ hồng, quỳ giữa nắng, nhấc bánh xe ra khỏi ổ gà. Nồi chè đậu trắng sóng sánh mà không đổ giọt nào._
+    -> sieu_nhan_hong_0610_xe_che
 * [📸 Nhờ {hong_hot} quay, rồi mới chạy xuống.]
     ~ snh_giup_nguoi()
     hong_hot: Ok ok! Em quay rồi! Anh chạy đi!
-    _Bạn đẩy xe. Bà cụ cảm ơn. Clip rõ nét, góc đẹp. Nhưng lúc xem lại, bạn thấy mình… tạo dáng ở giây thứ 12._
-    ~ follow(20000)
+    _Bạn đẩy xe ra khỏi ổ gà. Clip rõ nét, góc đẹp. Nhưng lúc xem lại, bạn thấy mình… tạo dáng ở giây thứ 12._
     ~ snh_no(2)
+    -> sieu_nhan_hong_0610_xe_che
 * [😶 Làm tiếp buổi chụp. Có người khác giúp rồi.]
-    _Bạn nhìn xuống. Một anh shipper đã đẩy xe giùm bà cụ. Bạn chụp tiếp kiểu thứ 4. Mắt cứ nhìn ra cửa sổ._
+    _Bạn nhìn xuống. Một anh shipper đã dừng xe, đẩy giùm. Một cô gái buộc tóc bằng sợi thun chạy từ trong hẻm ra, đỡ lấy bà cụ. Bạn chụp tiếp kiểu thứ 4. Mắt cứ nhìn ra cửa sổ._
     ~ snh_no(5)
     ~ qh("designer", 5)
+    -> END
+
+= sieu_nhan_hong_0610_xe_che
+ba_bay: Con đeo cái mũ chi cho nóng vậy con? Mà thôi, đẹp. Cảm ơn con nha.
+_Từ trong hẻm, một cô gái buộc tóc bằng sợi thun chạy ra, tay còn cầm cái vá. Mai. Cô đỡ bà Bảy, rồi quay sang cảm ơn bộ đồ hồng._
+mai: Cảm ơn anh siêu nhân nha. Bà em cứ đòi tự đẩy, nói hoài hông nghe.
+* ["Dạ… ờm… hông có chi. Bà đi chậm thôi nha bà."]
+    _Bạn nói bằng giọng thật. Quên mất là phải nói giọng siêu nhân._
+    _Mai khựng lại. Nhìn cái mũ hồng. Nhìn đôi dép lê bạn quên chưa thay ra giày. Nghiêng đầu._
+    mai: Khoan. Cái giọng này… "Dạ ờm"… Anh ăn chè khuya đó hả?
+    ~ snh_mai_nhan_ra = true
+    ~ snh_gan_mai(2)
+    * * [Đưa ngón tay lên trước cái mũ: "Suỵt."]
+        mai: *(bật cười, lấy tay che miệng)* Trời đất. Vậy mà tuần nào cũng thối anh 2 nghìn.
+        _Mai không la lên. Không giơ điện thoại. Chỉ múc cho bạn một ly chè đậu trắng, cắm một cái ống hút thật dài._
+    * * ["Hông phải đâu. Anh là… Siêu Nhân Hồng!" *(tạo dáng)*]
+        mai: Dạ, Siêu Nhân Hồng. *(gật đầu rất nghiêm túc)* Siêu Nhân Hồng ăn chè gì?
+        _Câu đó. Ngay cả khi bạn đang đội mũ._
+        ~ snh_gan_mai(1)
+    - - _Bạn luồn ống hút qua khe mũ, ăn chè giữa vỉa hè. Bà Bảy cười móm mém. Ở trên lầu, {designer} gõ cửa kính, chỉ đồng hồ._
+* [🦸 "Vì công lý và lượt view!" *(tạo dáng, giọng siêu nhân)*]
+    ~ follow(1000)
+    mai: *(cười lịch sự)* Dạ. Cảm ơn anh.
+    _Mai đỡ bà vào hẻm. Bạn đứng nhìn theo. Lần đầu tiên bạn thấy cái giọng siêu nhân của mình nghe hơi… lạc lõng._
 - -> END
+
+// ------------------------------------------------------------
+// Lần chính Tuất đi lạc (sổ tay sự thật mục 9): Tuất đuổi theo bộ đồ hồng rồi lạc, Nguyên bế về.
+=== sieu_nhan_hong_0610_tuat_lac ===
+# ngay:6 # gio:11:30 # noi:cong_cong_ty # bat_buoc
+_11 giờ 30. Chụp xong kiểu thứ 10. Bạn xuống cổng thì thấy Bác {bac_bao_ve} đứng giữa đường, tay che nắng, gọi khắp phố._
+bac_bao_ve: {cho} ơi! {cho}! *(quay sang bạn)* Nó chạy theo cái bộ đồ hồng của cậu từ lúc mười rưỡi. Bác tưởng nó về rồi. Chưa về.
+_Bạn chạy dọc Đường Hóng. Qua đầu Hẻm 69, Mai đứng ở xe chè chỉ tay về phía chợ: "Con chó vàng chạy hướng kia đó anh!"_
+_Qua ba ngã tư. Qua cái chợ. Rồi bạn thấy {cho}: ngồi co ro giữa ngã tư, tai cụp, run run, mũi hít về đủ mọi hướng mà không hướng nào đúng._
+cho: …Ẳng.
+* [🙂 Ngồi xổm xuống, tháo áo choàng hồng quấn quanh {cho}, bế về.]
+    ~ snh_cong_tuat_ve = true
+    ~ qh("cho", 15)
+    ~ qh("bac_bao_ve", 10)
+    _Ba ngã tư. Không gọi xe. Không ai quay. {cho} gầm gừ suốt quãng đường đầu, rồi im, rồi gục mõm lên vai bạn._
+* [Chạy vào tiệm tạp hóa đầu chợ, mua một bịch xúc xích, dỗ {cho} trước.]
+    ~ nhan(xuc_xich)
+    ~ snh_cat_xe(-30000)
+    ~ snh_cho_xuc_xich()
+    ~ snh_cong_tuat_ve = true
+    ~ qh("cho", 10)
+    ~ qh("bac_bao_ve", 10)
+    _{cho} ăn một cây, vẫn gầm gừ, nhưng để bạn bế. Bịch xúc xích còn lại nằm trong túi áo choàng. Bạn có cảm giác sẽ còn cần tới nó._
+* [🦸 Gọi điện cho bác {bac_bao_ve}, đứng canh {cho} tới khi bác tới.]
+    ~ qh("cho", 3)
+    ~ qh("bac_bao_ve", 5)
+    _Bạn đứng canh, giơ tay chặn xe cho {cho} khỏi chạy ra đường. Mười lăm phút sau bác đạp xe tới. {cho} nhảy vào giỏ xe, không thèm nhìn bạn._
+- _Về tới cổng, bác đỡ lấy {cho}, nhìn bạn rất lâu._
+bac_bao_ve: Cảm ơn cậu. Nó lạc thì bác không biết tìm đâu.
+{ not co(xuc_xich):
+    _Bác lục ngăn bàn, dúi vào tay bạn một bịch xúc xích còn nguyên._
+    bac_bao_ve: Cậu cầm lấy. Lần sau gặp nó thì đưa một cây. Ăn của ai thì nó nhớ người ấy.
+    ~ nhan(xuc_xich)
+}
+-> END
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_0610_clip_lan ===
 # ngay:6 # gio:20:30 # noi:nha_nguyen # dieu_kien:snh_bo_chup_giup_ba_cu
-_Tối. Clip bạn đẩy xe lăn cho bà cụ đang lan trên Tóp-tóp. 50.000 lượt xem… 200.000…_
+_Tối. Clip bạn đẩy xe chè của Bà Bảy ra khỏi ổ gà, rồi ăn chè bằng ống hút luồn qua mũ, đang lan trên Tóp-tóp. 50.000 lượt xem… 200.000…_
 _Tin nhắn từ {dan_dau_tu}: "Anh ơi, em nhìn chart rồi. Clip này đăng lại 21:07, kèm nhạc buồn, là x4. Lần này là lên thật."_
 * [🤝 "Em làm đi. Mà đừng cắt mặt bà cụ, bà không thích."]
     dan_dau_tu: Dạ! Có người giao việc thật cho em! Em làm liền!
-    ~ follow(90000)
+    ~ follow(40000)
     ~ qh("dan_dau_tu", 10)
-    _Clip vượt 1 triệu lượt xem trong đêm. Gấp 12 lần cái MV còn chưa ra mắt. Người ta không thích Siêu Nhân Hồng tạo dáng. Người ta thích Siêu Nhân Hồng quỳ xuống giữa nắng._
+    _Clip vượt 1 triệu lượt xem trong đêm. Gấp 12 lần cái MV còn chưa ra mắt. Người ta không thích Siêu Nhân Hồng tạo dáng. Người ta thích Siêu Nhân Hồng quỳ xuống giữa nắng, rồi ngồi ăn chè trên ghế nhựa thấp._
 * [🙂 "Thôi em. Cứ để vậy. Anh hông muốn câu view từ bà cụ."]
     dan_dau_tu: Dạ… anh tốt quá. Mà phí quá anh ơi.
     ~ snh_no(-3)
@@ -102,7 +160,7 @@ _Mốc 1: 50.000 người theo dõi._
     ~ cang_thang(10)
 }
 * [🦸 Đứng lên bàn, tạo dáng: "Mốc sau mình gấp đôi! Gét gô!"]
-    ~ follow(3000)
+    ~ follow(1000)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
     _Cái bàn hơi lung lay. Không ai cười. Rồi {hong_hot} cười. Rồi cả phòng cười. Được._
 * [🙂 Đi xuống pantry, mua nước cho từng người.]
@@ -134,14 +192,13 @@ hong_hot: Anh ơi, trend này đang hot! Nhịp 1-2-3-xoay-chỉ tay. Mặc bộ
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_0910_ra_mat_mv ===
-# ngay:9 # gio:19:00 # noi:studio_tang_2 # bat_buoc
-_Ra mắt MV "Hồng Hóa Việt Nam". Ngày Trứng Thế giới, căn tin chỉ bán trứng, nên tiệc ra mắt có… trứng ốp la hình trái tim._
+# ngay:9 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ. MV "Hồng Hóa Việt Nam" lên kênh Tóp-tóp và Diu-túp của công ty. Ngày Trứng Thế giới, căn tin chỉ bán trứng, nên tiệc ra mắt ở studio có… trứng ốp la hình trái tim._
 _Nhạc lên. Bộ đồ hồng lướt giữa phố, khói màu, pháo giấy. Bạn đứng xem chính mình trên màn hình lớn._
-~ follow(40000)
 giam_doc: Đấy! Đấy là vision!
 idol_het_thoi: *(ngồi hàng cuối, kính đen)* Hát nhép. Thời anh toàn hát live.
 * [🦸 Đi bắt tay từng người: "Cảm ơn cả nhà! Hồng không phải màu, Hồng là thái độ!"]
-    ~ follow(2000)
+    ~ follow(1000)
     _Tới {ran_doc}, bạn giơ tay đập tay. Cậu ta để tay bạn lơ lửng 2 giây rồi mới đập. Chắc cậu ta ngại._
     ~ snh_hieu(3)
 * [🙂 Đi tới hàng cuối, ngồi cạnh {idol_het_thoi}: "Anh hát live hay hơn em nhiều. Em biết mà."]
@@ -156,7 +213,7 @@ idol_het_thoi: *(ngồi hàng cuối, kính đen)* Hát nhép. Thời anh toàn 
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_0910_livestream_dau ===
-# ngay:9 # gio:20:30 # noi:studio_tang_2 # bat_buoc
+# ngay:9 # gio:20:40 # noi:studio_tang_2 # bat_buoc
 _Sau MV là livestream bán hàng đầu tiên. {sales} bày lên bàn: nước tăng lực "Hồng Hào", bàn chải "Răng Hồng"._
 sales: Anh ơi, hoa hồng 10% nha. Tin chị đi, đêm nay chốt nghìn đơn!
 it: *(đeo tai nghe)* Mạng ổn. Đừng ai mở Tóp-tóp.
@@ -183,7 +240,7 @@ _{dan_dau_tu} nhắn: "Anh ơi! Có phải anh tạo hông? Nếu phải thì an
     ~ qh("dan_dau_tu", 5)
     _Ít xíu của {dan_dau_tu} là bao nhiêu, bạn không dám hỏi._
 * [🦸 Đăng bài: "Hồng không bán coin! Hồng chỉ bán… thái độ!"]
-    ~ follow(5000)
+    ~ follow(2000)
     _Bài đăng được 5.000 lượt thích. Coin vẫn tăng. Người ta nghĩ bạn đang úp mở._
 * [😶 Tắt điện thoại.]
     _Bạn tắt điện thoại. Đồng coin mang tên bạn vẫn chạy, không cần bạn._
@@ -220,7 +277,7 @@ _Group Zalo-lô công ty: 87 tin nhắn trong 1 tiếng. "Lương đâu?", "Ét 
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_1010_sinh_nhat_bac_binh ===
-# ngay:10 # gio:16:30 # noi:chot_bao_ve # dieu_kien:qh_bac_bao_ve>=10
+# ngay:10 # gio:16:30 # noi:choi_bao_ve # dieu_kien:qh_bac_bao_ve>=10
 _Chòi bảo vệ. Bác {bac_bao_ve} ngồi một mình, trước mặt là ly trà và một tờ lịch cũ. Ngày 10/10 khoanh bút đỏ. Bên cạnh có chữ "G": "Chúc mừng 50 tuổi"._
 * [🙂 Tháo mũ, ngồi xuống: "Bác ơi, hôm nay sinh nhật bác hả?"]
     ~ snh_thao_mu(false)
@@ -234,7 +291,6 @@ _Chòi bảo vệ. Bác {bac_bao_ve} ngồi một mình, trước mặt là ly t
     ~ qh("bac_bao_ve", 5)
     ~ qh("cho", -3)
 * {co(xuc_xich)} [🦴 Tặng bác… và {cho} một cây xúc xích.]
-    ~ mat(xuc_xich)
     ~ snh_cho_xuc_xich()
     bac_bao_ve: Cậu tặng sinh nhật bác mà đưa xúc xích cho con chó à? *(cười lần đầu tiên)*
     ~ qh("bac_bao_ve", 10)
@@ -249,7 +305,7 @@ _Góc ảnh có một thằng nhóc gầy nhom, mặt lấm lem, đang khóc. B�
 * [📤 Đăng: "Hồi nhỏ Hồng ở một cái xóm có cây me to lắm nè!"]
     ~ snh_dang_anh_cay_me = true
     ~ snh_no(10)
-    ~ follow(5000)
+    ~ follow(2000)
     ~ snh_hieu(10)
     _10 phút sau, có một bình luận: "Thằng nhỏ góc ảnh khóc vì ai vậy anh?". Nick không có ảnh đại diện._
     * * [🙂 Trả lời: "Vì anh. Anh đang tìm nó để xin lỗi."]
@@ -263,9 +319,9 @@ _Góc ảnh có một thằng nhóc gầy nhom, mặt lấm lem, đang khóc. B�
     ~ snh_no(3)
     _Bạn để tấm ảnh trong ví, ngay sau tấm vé số đã cắt góc năm 2019. Hai thứ bạn không bao giờ kể cho ai._
 * [🦸 Đăng ảnh khác: ảnh bộ đồ hồng đầu tiên, năm 2019.]
-    ~ follow(3000)
+    ~ follow(1000)
     hong_hot: *(bình luận)* Ủa anh mặc đồ này từ 2019 hả? Tiền đâu mua đồ xịn vậy anh?
-    ~ snh_tien(5)
+    ~ snh_tien(3)
 - -> END
 
 // ------------------------------------------------------------
@@ -275,7 +331,7 @@ _Thứ 2. Lương về trễ 2 ngày. Ở quầy lễ tân, {con_ong_chau_cha} �
 con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Để anh gọi chú anh.
 _Cùng lúc, {thuc_tap_sinh} làm rơi một cái thẻ đen viền kim cương xuống sàn. {hong_hot} hét "Ủa alo?"._
 * [💸 Rút thẻ của mình ra: "Để anh trả cho."]
-    ~ snh_ket(10)
+    ~ snh_ket(6)
     con_ong_chau_cha: Ủa, thẻ anh màu gì vậy? Chưa thấy loại này bao giờ.
     hong_hot: Ối dồi ôi, thẻ siêu nhân! Anh giàu cỡ nào vậy?
     _Hai cái thẻ lạ trong cùng một buổi sáng. Cả sảnh bắt đầu thì thầm._

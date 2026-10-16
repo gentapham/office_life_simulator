@@ -7,7 +7,7 @@
 # ngay:17 # gio:06:30 # noi:xe_khach # bat_buoc
 ~ thai_ly_ca_phe = 0
 _Team building Vũng Tàu. Xe khách 29 chỗ. {dan_dau_tu} tuyên bố thoát nghèo nhờ Hồng Coin. Bạn ngồi ghế giữa, hai tai hai điện thoại: máy trái đài truyền hình, máy phải nhà hàng hải sản xác nhận bàn._
-_Phát lên xe trễ nhất. Ghế trống cạnh bạn. {idol_het_thoi} nhìn ghế đó một giây, rồi ngồi xuống._
+_{idol_het_thoi} lên xe trễ nhất. Ghế trống cạnh bạn. {idol_het_thoi} nhìn ghế đó một giây, rồi ngồi xuống._
 * [📞 Tiếp tục nghe hai máy. Việc là việc.]
     _Qua trạm thu phí, cả hai máy cùng hết pin. Bạn ngủ gục lên cửa kính._
     _Khi tỉnh dậy, có một cái áo khoác kê giữa đầu bạn và cửa kính. Áo sơ mi lụa hoa văn. Của {idol_het_thoi}._
@@ -29,47 +29,53 @@ _Phát lên xe trễ nhất. Ghế trống cạnh bạn. {idol_het_thoi} nhìn g
 _Bãi Sau. Cả công ty tắm biển. Bạn không được nghỉ: {sieu_nhan_hong} đi giúp ngư dân kéo lưới, bộ đồ hồng ướt sũng, và ba nhóm khách du lịch đang quay Tóp-tóp._
 _Máy phải rung liên tục. Một clip đã lên: "Siêu Nhân Hồng kéo lưới, té ngửa, lưới toàn rong"._
 * [✅ Duyệt ngay trên bãi biển: chia sẻ lại, ghi "Hồng không sợ ướt".]
-    ~ follow(25000)
+    ~ follow(15000)
     ~ uy_tin = uy_tin + 3
     ~ thai_p(-10)
 * [🙏 Nhắn {hong_hot} (đang nằm phơi nắng) đẩy clip lên fanpage.]
-    hong_hot: *(dậy liền)* Gét gô! Mà anh ơi, có clip Nguyên tháo mũ lau mặt nữa nè, đăng hông?
+    hong_hot: *(dậy liền)* Gét gô! Mà anh ơi, có clip {sieu_nhan_hong} tháo mũ lau mặt nữa nè, đăng hông?
     ** [😤 "KHÔNG. Xóa liền."]
         hong_hot: Dạ dạ, em xóa! *(xóa thật)*
-        ~ follow(20000)
+        ~ follow(10000)
         ~ qh("hong_hot", 3)
     ** [🤔 "Để anh coi đã."]
-        _Bạn coi. Mặt Nguyên mờ, ngược nắng, không ai nhận ra. Bạn vẫn xóa. Nhưng {hong_hot} đã lỡ gửi cho {designer}._
-        ~ follow(20000)
+        _Bạn coi. Mặt {sieu_nhan_hong} mờ, ngược nắng, không ai nhận ra. Bạn vẫn xóa. Nhưng {hong_hot} đã lỡ gửi cho {designer}._
+        ~ follow(10000)
         ~ thai_kh(1)
 * [😶 Ngồi xuống cát. Nhìn biển 5 phút. Rồi mới mở máy.]
     _Năm phút. Biển xanh. Ai đó đặt xuống cạnh bạn một xiên cá viên chiên. {idol_het_thoi}, đi ngang, không nói gì._
     ~ nghi(10)
     ~ an(10)
     ~ cang_thang(-10)
-    ~ follow(10000)
+    ~ follow(5000)
 - -> END
 
 // ------------------------------------------------------------
 === quan_ly_idol_1710_nhau_toi ===
-# ngay:17 # gio:19:00 # noi:nha_hang_vung_tau
-_Tiệc hải sản. Hồng Coin x10, {dan_dau_tu} bao. {sales} say, đứng lên ghế hứa mời "ca sĩ nổi tiếng nhất nước" về hát Đại Nhạc Hội Siêu Nhân._
-_{giam_doc} cũng say, giơ ly: "Anh hứa! Tháng sau tăng lương cả công ty!" {hong_hot} đang quay. Ai cũng thấy, trừ {giam_doc}._
-_Đây không phải nghệ sĩ của bạn. Nhưng mười hai năm làm khủng hoảng, tay bạn tự động thò vào túi lấy điện thoại._
-* [🧯 Đi tới cạnh {hong_hot}: "Clip đó giữ trong máy thôi nha. Coi như quà sinh nhật anh xin trước."]
-    hong_hot: *(nhìn bạn, nhìn {giam_doc})* Ối dồi ôi… ok anh. Em giữ. Mà giữ là giữ thôi nha, hông hứa xóa.
-    ~ qh("giam_doc", 5)
-    ~ qh("hong_hot", 2)
-* [😶 Kệ. Hôm nay là ngày nghỉ.]
-    _Bạn uống một ngụm bia. Lần đầu tiên trong tháng bạn để một cuộc khủng hoảng tự chạy._
-    ~ cang_thang(-5)
-* [🎤 Quay sang {sales}: "Ca sĩ nổi tiếng nhất nước là ai em? Để anh book."]
-    sales: *(nấc, chỉ thẳng vào {idol_het_thoi})* Đó! Ảnh đó!
-    _Phát đang gắp ghẹ, đứng hình, rồi ưỡn ngực. Cả bàn vỗ tay vì vui. Bạn vỗ to nhất._
-    ~ qh("idol_het_thoi", 5)
-    ~ qh("sales", 3)
-    ~ thai_gk(-2)
-- ~ an(50)
+# ngay:17 # gio:20:00 # noi:lua_trai_vung_tau
+_20 giờ. Lửa trại vừa nhóm. Tiệc hải sản còn dư nửa nồi ghẹ: Hồng Coin x10, {dan_dau_tu} bao. {sales} say, hứa mời "ca sĩ nổi tiếng nhất nước". {giam_doc} say, hứa tăng lương cả công ty. Mấy chuyện đó không phải việc của bạn tối nay._
+_Việc của bạn đang ngồi sát đống lửa: {sieu_nhan_hong}, mồ hôi chảy ròng trong bộ đồ hồng, hai tay đưa lên mũ. Cách đó hai bước, {hong_hot} đang livestream, điện thoại chĩa thẳng vào đống lửa._
+_Chiếc mũ nhích lên một chút. Bạn có đúng ba giây._ # hen_gio:3
+* [🏃 Lao tới, đứng chắn giữa ống kính và {sieu_nhan_hong}.]
+    _Livestream của {hong_hot} có 3 giây lưng áo blazer đen của bạn. Bình luận: "Ông chú cầm hai điện thoại lại xuất hiện". Sau lưng bạn, {sieu_nhan_hong} lau mặt xong, đội mũ lại._
+    hong_hot: Ối dồi ôi anh! Em đang live mà!
+    quan_ly_idol: Anh biết. Vì vậy anh mới đứng đây.
+    ~ uy_tin = uy_tin + 3
+    ~ qh("hong_hot", -3)
+    ~ qh("sieu_nhan_hong", 5)
+* [📱 Nhắn {hong_hot}: "TẮT LIVE."]
+    _{hong_hot} đọc tin nhắn ở giây thứ hai, tắt live ở giây thứ ba. Khung hình cuối cùng là một cái cằm mờ trong ánh lửa. Bình luận đoán già đoán non tới sáng._
+    ~ follow(5000)
+    ~ thai_kh(1)
+* [😶 Đứng yên. Mười hai năm rồi, có những thứ nên để tự nó xảy ra.]
+    _Ba giây. Chiếc mũ không lên hẳn. {sieu_nhan_hong} chỉ lau mồ hôi dưới cằm rồi kéo xuống. Livestream có 3 giây "suýt", và 20.000 lượt chia sẻ trong đêm._
+    ~ follow(10000)
+    ~ thai_kh(1)
+* [⏱️ (Không chọn kịp)]
+    _Ba giây trôi qua. Bạn còn đang cầm hai điện thoại. Clip "Siêu Nhân Hồng suýt lộ mặt" lên Tóp-tóp trước khi bạn kịp gọi cho ai._
+    ~ thai_kh(2)
+    ~ scandal()
+- ~ an(30)
 ~ uong(20)
 -> END
 
@@ -108,7 +114,7 @@ _Cả đống lửa nhìn bạn. {idol_het_thoi} ngồi đối diện, ánh lử
 # ngay:17 # gio:23:30 # noi:lua_trai_vung_tau # bat_buoc
 _Lửa tàn dần. Mọi người về phòng gần hết. Bạn ngồi cạnh {idol_het_thoi}. {idol_het_thoi} đã uống năm lon bia. Hay bảy._
 _Bạn định nói gì đó. Đã định suốt mười một năm._
-* [💬 "Phát nè… mười một năm rồi đó em. Có lúc nào em muốn bỏ hông?"]
+* [💬 "{idol_het_thoi} nè… mười một năm rồi đó em. Có lúc nào em muốn bỏ hông?"]
     { qh_idol_het_thoi >= 40:
         idol_het_thoi: *(nhìn lửa)* Có. Tối nào em cũng muốn bỏ. Mà sáng ra thấy anh gọi là em lại đi.
         _Bạn quay mặt đi chỗ khác. Rất lâu._
@@ -128,10 +134,10 @@ editor: *(ngáp)* Anh {quan_ly_idol}… gió biển lạnh. Anh đừng thức n
     editor: Dạ… em quen thức rồi.
     ~ qh("editor", 10)
     _{editor} quay đi. Bạn vẫn không nhận ra gì._
-* [📱 "Ừ. Mà {editor}, mai dựng anh cái clip Nguyên kéo lưới nha, gấp."]
+* [📱 "Ừ. Mà {editor}, mai dựng anh cái clip {sieu_nhan_hong} kéo lưới nha, gấp."]
     editor: Dạ… em dựng liền.
     _{editor} đi về phòng. Đèn phòng {editor} sáng tới 5 giờ sáng._
-* {thai_video_tien_tay >= 5 or thai_nguoi_dung_dem} [🔒 "Mấy cái video 'tiện tay' cho {idol_het_thoi} với Nguyên tuần nào cũng có… là em làm hả?"]
+* {thai_video_tien_tay >= 5 or thai_nguoi_dung_dem} [🔒 "Mấy cái video 'tiện tay' cho {idol_het_thoi} với {sieu_nhan_hong} tuần nào cũng có… là em làm hả?"]
     _{editor} đứng im. Rồi gật đầu._
     editor: Dạ… tại em thấy anh mệt.
     _Bí mật của bạn vẫn nằm yên chỗ cũ. Nhưng lần đầu tiên, giữa bãi biển lúc nửa đêm, có ai đó lo cho bạn. Bạn không biết đặt cảm giác đó ở đâu._
@@ -158,7 +164,7 @@ _Hai người đứng cạnh nhau. Mặt trời lên từ từ._
 * [📞 "Ừ đẹp. Khoan, anh nghe máy chút."]
     _Bạn nghe máy 10 phút. Khi quay lại, {editor} đã về phòng. Trên cát có dấu chân đứng rất lâu ở một chỗ._
     ~ thai_dap()
-* {thai_nguoi_dung_dem} [💬 "Lĩnh. Mấy video đó… cảm ơn em nha. Thằng nhỏ này."]
+* {thai_nguoi_dung_dem} [💬 "{editor}. Mấy video đó… cảm ơn em nha. Thằng nhỏ này."]
     _Bạn vỗ vai {editor} một cái. {editor} đứng thẳng như bị điện giật nhẹ._
     editor: Dạ… dạ không có gì ạ.
     _Mặt trời lên hẳn. Tai {editor} đỏ. Chắc tại nắng sớm._
@@ -198,28 +204,28 @@ thanh_xin_nghi: Anh {quan_ly_idol}. Ông nói thiệt đi. Ông có tính đi LL
 # ngay:19 # gio:08:30 # noi:phong_hop_tang_2
 ~ thai_ly_ca_phe = 0
 _Thứ 2. Họp giao ban. Không ai nhìn mặt ai. {dan_dau_tu} ngồi sát tường, tránh ánh mắt của nửa phòng là chủ nợ. Mai là sinh nhật công ty 16 tuổi._
-truong_phong: Anh {quan_ly_idol}, tiết mục văn nghệ mai. Mọi năm anh {idol_het_thoi} hát mở màn. Năm nay có Nguyên. Anh xếp sao?
-* [🎤 "Phát mở màn như mọi năm. Nguyên hát kết."]
+truong_phong: Anh {quan_ly_idol}, tiết mục văn nghệ mai. Mọi năm anh {idol_het_thoi} hát mở màn. Năm nay có {sieu_nhan_hong}. Anh xếp sao?
+* [🎤 "{idol_het_thoi} mở màn như mọi năm. {sieu_nhan_hong} hát kết."]
     truong_phong: Ừ. Truyền thống. Mình take note.
     ~ qh("idol_het_thoi", 5)
     ~ thai_gk(-3)
-* [🩷 "Nguyên mở màn. Năm nay là năm của Nguyên."]
+* [🩷 "{sieu_nhan_hong} mở màn. Năm nay là năm của {sieu_nhan_hong}."]
     truong_phong: Hợp lý. Chiến dịch mà.
     _Bạn nói câu hợp lý. Rồi suốt buổi họp không nhìn về phía cửa, chỗ {idol_het_thoi} hay đứng._
     ~ follow(5000)
     ~ qh("idol_het_thoi", -8)
     ~ thai_gk(5)
 * [🗓️ "Để {thanh_xin_nghi} xếp. Nó giữ lịch."]
-    thanh_xin_nghi: Dạ… em xếp anh {idol_het_thoi} mở màn. Còn một ô trống em… ghi "khách mời bí mật".
-    _Bạn nhìn ô "khách mời bí mật". Nhìn {thanh_xin_nghi}. {thanh_xin_nghi} nhìn xuống bàn._
+    thanh_xin_nghi: Dạ… em xếp anh {idol_het_thoi} mở màn, anh {sieu_nhan_hong} hát kết.
+    _Lúc {thanh_xin_nghi} gập sổ, bạn thấy ở trang sau một ô khoanh đỏ: "31/10, 20:00". Không ghi gì thêm. {thanh_xin_nghi} nhìn xuống bàn._
     ~ qh("thanh_xin_nghi", 5)
 - -> END
 
 // ------------------------------------------------------------
 === quan_ly_idol_2010_qua ===
-# ngay:20 # gio:10:00 # noi:tang_1
-_Ngày Phụ nữ Việt Nam. Bạn có nhiệm vụ mua quà cho chị em thay mặt hai nghệ sĩ. Ngân sách: 500 nghìn, tiền túi. Bảy chị em. {dan_dau_tu} đi từng bàn chúc "8386", không tặng gì._
-* [🌹 Bảy hộp bánh giống hệt nhau, thiệp ký tên "Phát & Nguyên".]
+# ngay:20 # gio:09:00 # noi:tang_1
+_Ngày Phụ nữ Việt Nam, 9 giờ, giờ tặng hoa. Bạn có nhiệm vụ mua quà cho chị em thay mặt hai nghệ sĩ. Ngân sách: 500 nghìn, tiền túi. Bảy chị em. {dan_dau_tu} đi từng bàn chúc "8386", không tặng gì._
+* [🌹 Bảy hộp bánh giống hệt nhau, thiệp ký tên "{idol_het_thoi} & {sieu_nhan_hong}".]
     _Không ai so được hộp nào to hơn. {chi_dai}: "Khôn đó." {thanh_ninh}: "Anh {quan_ly_idol} chu đáo quá anh ơi!"_
     ~ tien_cong(-490000)
     ~ qh("chi_dai", 5)
@@ -230,13 +236,13 @@ _Ngày Phụ nữ Việt Nam. Bạn có nhiệm vụ mua quà cho chị em thay 
     ~ qh("bien_kich", 3)
     ~ qh("thanh_ninh", 3)
 * [🩷 Bảy cái nơ hồng, thiệp ký "Siêu Nhân Hồng".]
-    _Nguyên chụp hình với từng chị. Fanpage có bộ ảnh "Hồng Tặng Hồng". {idol_het_thoi} không có trong ảnh nào._
+    _{sieu_nhan_hong} chụp hình với từng chị. Fanpage có bộ ảnh "Hồng Tặng Hồng". {idol_het_thoi} không có trong ảnh nào._
     ~ follow(8000)
     ~ tien_cong(-300000)
     ~ qh("idol_het_thoi", -3)
 * [🎤 Không mua quà. Nhờ {idol_het_thoi} hát tặng một bài, gọi tên từng người.]
     idol_het_thoi: Anh nhờ em hả? *(cười)* Ừ, em hát.
-    _Phát hát, đổi lời gọi tên bảy chị em. Tới tên {thanh_ninh} thì {chi_dai} ho. Tới tên {chi_dai} thì {thanh_ninh} ho lại._
+    _{idol_het_thoi} hát, đổi lời gọi tên bảy chị em. Tới tên {thanh_ninh} thì {chi_dai} ho. Tới tên {chi_dai} thì {thanh_ninh} ho lại._
     ~ qh("idol_het_thoi", 5)
     ~ qh("hong_hot", 3)
     ~ thai_gk(-2)
@@ -244,26 +250,28 @@ _Ngày Phụ nữ Việt Nam. Bạn có nhiệm vụ mua quà cho chị em thay 
 
 // ------------------------------------------------------------
 === quan_ly_idol_2010_sinh_nhat ===
-# ngay:20 # gio:18:30 # noi:san_khau_cong_ty # bat_buoc
-_Sinh nhật {cong_ty} 16 tuổi. Phông nền là logo chữ G bảy màu bản gốc 2010, sau 38 lần sửa. {giam_doc} cầm micro, giọng run._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_Sinh nhật {cong_ty} 16 tuổi. Quán Ốc Đêm, 18 giờ 30. Phông nền dán tạm trên vách quán là logo chữ G bảy màu bản gốc 2010, sau 38 lần sửa._
+_Bác {bac_bao_ve} đứng dậy, đeo kính lão, đọc to lá thư "G" tới sáng nay: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."_
+_Cả quán im. Rồi {giam_doc} cầm micro karaoke của quán, giọng run._
 giam_doc: Năm 2015, anh ngồi ở một quán cà phê, nghe một cậu sinh viên hát về cá viên chiên. Anh đem cậu ấy về, và anh nói với một cậu trợ lý booking: "Lo cho thằng bé này nhé."
 _{giam_doc} nhìn xuống chỗ bạn đứng._
 giam_doc: Cái thằng {quan_ly_idol} ấy. Mười hai năm chưa xin nghỉ ngày nào. Năm 2018 người ta mời đi, nó ở lại. Anh chưa bao giờ cảm ơn nó. Hôm nay anh cảm ơn.
 ~ thai_tt(10)
-_Cả sảnh vỗ tay. Bạn đứng giữa tiếng vỗ tay, hai tay hai điện thoại, không biết để đâu._
+_Cả quán vỗ tay. Bạn đứng giữa tiếng vỗ tay, hai tay hai điện thoại, không biết để đâu._
 * [😶 Cúi đầu. Không nói gì.]
     ~ qh("giam_doc", 5)
     ~ thai_gk(3)
 * [💬 Cầm micro: "Em cảm ơn anh. Mà người nên được cảm ơn là {idol_het_thoi}. Em chỉ đi theo thôi."]
-    _Cả sảnh quay sang nhìn {idol_het_thoi}. {idol_het_thoi} đỏ mặt, lần đầu tiên không biết tạo dáng gì._
+    _Cả quán quay sang nhìn {idol_het_thoi}. {idol_het_thoi} đỏ mặt, lần đầu tiên không biết tạo dáng gì._
     ~ qh("idol_het_thoi", 10)
     ~ qh("giam_doc", 5)
     ~ thai_gk(-8)
 - giam_doc: {idol_het_thoi}! Lên đây hát đi em!
-_Phát bước lên. Hát "Công Viên". Lệch tông câu thứ ba, như năm đó, cố ý. {giam_doc} bật cười, lấy tay che mắt._
+_{idol_het_thoi} đứng lên ghế nhựa. Hát "Công Viên". Lệch tông câu thứ ba, như năm đó, cố ý. {giam_doc} bật cười, lấy tay che mắt._
 _Bạn đứng dưới sân khấu. Lần này bạn có quay. Video dài 4 phút 12 giây, rung, mờ, toàn mặt {idol_het_thoi}._
 * [📲 Đăng lên kênh nghệ sĩ, ghi: "Sinh nhật công ty, sinh nhật bài hát."]
-    ~ follow(10000)
+    ~ follow(5000)
     ~ qh("idol_het_thoi", 3)
 * [🔒 Giữ lại trong máy. Không đăng.]
     _Thư mục ảnh của bạn có 2.341 tấm. 2.200 tấm có {idol_het_thoi}._
@@ -272,8 +280,8 @@ _Bạn đứng dưới sân khấu. Lần này bạn có quay. Video dài 4 phú
 
 // ------------------------------------------------------------
 === quan_ly_idol_2010_karaoke ===
-# ngay:20 # gio:22:40 # noi:karaoke
-_Tăng hai, Karaoke Hát Cho Nhau Nghe. {giam_doc} say rất say, hứa tăng lương 20%. {hong_hot} quay. {giam_doc} giơ ngón cái vào ống kính._
+# ngay:20 # gio:21:00 # noi:karaoke
+_Tăng hai, Karaoke Chú Sáu. {giam_doc} say rất say, hứa tăng lương 20%. {hong_hot} quay. {giam_doc} giơ ngón cái vào ống kính._
 _Rồi {giam_doc} ngồi phịch xuống cạnh bạn._
 giam_doc: {quan_ly_idol}. Hợp đồng thằng {idol_het_thoi} hết hạn 31. Anh sợ giữ nó lại để nó hát đám cưới thêm mười năm. Cậu nói đi. Giữ hay thả?
 * [🛡️ "Giữ anh. Nó còn hát được. Em lo."]

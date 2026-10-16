@@ -46,7 +46,7 @@ _Mốc 2: 200.000 người theo dõi. Con số: {nguoi_theo_doi}._
 * [🎥 Đi theo, quay series "Một ngày Siêu Nhân Hồng không cần ai thấy".]
     _Dắt một cụ già qua đường. Gỡ diều cho con nít. Đẩy xe ba gác lên dốc. Nhặt rác ở Công viên Hồ Cá Mập. Không camera, chỉ có bạn, đứng xa._
     _Cuối ngày, xe hồng của {sieu_nhan_hong} hết xăng giữa đường. Không ai đẩy giùm. Bạn đẩy._
-    ~ hh_follow(60000)
+    ~ hh_follow(20000)
     ~ qh("sieu_nhan_hong", 15)
     ~ nghi(-25)
     ~ hh_tt(10)
@@ -56,22 +56,22 @@ _Mốc 2: 200.000 người theo dõi. Con số: {nguoi_theo_doi}._
 * [💬 Nhắn {sieu_nhan_hong}: "Anh ơi, buồn thì nói với em. Đừng đi một mình."]
     sieu_nhan_hong: *(30 phút sau)* … Cảm ơn em. Anh đi một mình quen rồi.
     ~ qh("sieu_nhan_hong", 8)
-    ~ hh_follow(10000)
+    ~ hh_follow(5000)
 - -> END
 
 // ------------------------------------------------------------
 === hong_hot_1410_son_tren_tivi ===
 # ngay:14 # gio:20:15 # noi:nha_hong_hot
 _Ngày Hội Nông dân. {thanh_xin_nghi} xin nghỉ "về quê phụ gặt lúa"._
-_20:15, Đài Tivi Hóng, vòng 2 "Giọng Ca Ước Mơ". Thí sinh số 17 bước ra trong bộ đồ kim tuyến. Bạn suýt rớt ring light._
-_Thí sinh số 17 là {thanh_xin_nghi}. Hát hay. Hay thật sự._
+_20:15, Đài Tivi Hóng, vòng 2 "Giọng Ca Ước Mơ". Thí sinh số 27 bước ra trong bộ đồ kim tuyến. Bạn suýt rớt ring light._
+_Thí sinh số 27 là {thanh_xin_nghi}. Hát hay. Hay thật sự._
 ~ phat_hien(son_thi_hat)
 ~ hh_tin(2)
 * {hh_kin_mieng < 40} [📣 Quay màn hình tivi, đăng group: "GẶT LÚA NÈ MẤY BÀ!"]
     ~ hh_ke_tin()
     ~ qh("thanh_xin_nghi", -15)
     _Trong 5 phút, cả group biết. Trong 30 phút, {hr} biết. Sáng mai, {thanh_xin_nghi} được mời "uống trà"._
-* [🤐 Bình chọn cho thí sinh số 17. Không kể ai.]
+* [🤐 Bình chọn cho thí sinh số 27. Không kể ai.]
     ~ tien_cong(-10000)
     ~ hh_kin(8)
     ~ qh("thanh_xin_nghi", 5)
@@ -89,7 +89,7 @@ _Thí sinh số 17 là {thanh_xin_nghi}. Hát hay. Hay thật sự._
 // ------------------------------------------------------------
 === hong_hot_1510_pin_du_phong ===
 # ngay:15 # gio:09:30 # noi:pantry # bat_buoc
-_Mất điện cả ngày. 8:05 sếp và {chi_dai} kẹt thang máy 40 phút. Cả công ty ngồi bệt ở pantry tối om._
+_Mất điện cả ngày. 8:05 sếp và {chi_dai} kẹt thang máy. Cả công ty ngồi bệt ở pantry tối om._
 _Bạn có ba cục pin dự phòng đầy. Ở đây, đó là quyền lực._
 designer: Bà ơi cho tui sạc ké. Máy tui 3%.
 _Quy tắc mới, do bạn đặt ra ba phút trước: ai muốn sạc thì phải kể một chuyện._
@@ -160,6 +160,25 @@ designer: *(chìa điện thoại hết pin)* Bà ơi cho tui sạc ké. Mà bà
 - -> END
 
 // ------------------------------------------------------------
+=== hong_hot_1510_bong_toi ===
+# ngay:15 # gio:16:30 # noi:pantry # bat_buoc
+_Vẫn mất điện. Pantry chỉ còn ánh sáng từ mấy cục sạc logo ngân hàng của {thuc_tap_sinh}. Trên bàn, cuốn sổ của {thuc_tap_sinh} mở toang. Trang đầu ghi: "Người Gác Két – ý tưởng phim". Bên dưới là một người mặc đồ hồng đẩy xe trong mưa, vẽ bằng bút bi._
+_{hr} ngồi xuống cạnh bạn, ly trà trên tay. Trong bóng tối, không ai thấy ai mỉm cười._
+hr: Em {hong_hot}. Tối thế này, người ta hay nói thật. Em có chuyện gì muốn kể anh không?
+* [🙊 "Anh {hr}… em là admin một cái trang. Em mệt giữ một mình rồi."]
+    ~ hh_tam_su_hr = true
+    ~ qh("hr", 8)
+    hr: *(im lặng rất lâu)* Ừ. Anh nghe rồi. Trong phòng tối này thôi.
+    _Lần đầu tiên bạn kể một tin mà người nghe không hỏi thêm câu nào._
+* [😅 "Dạ hông có gì anh. Mà anh coi nè, sổ của anh {thuc_tap_sinh} vẽ đẹp ghê."]
+    ~ phat_hien(nguoi_gac_ket)
+    ~ hh_tin(2)
+    hr: *(liếc qua, rồi gấp cuốn sổ lại giùm {thuc_tap_sinh})* Của người ta thì để người ta giữ, em ạ.
+* [🤐 Uống trà, không nói gì.]
+    ~ hh_kin(3)
+- -> END
+
+// ------------------------------------------------------------
 === hong_hot_1510_phat_hat ===
 # ngay:15 # gio:19:00 # noi:pantry
 _Vẫn mất điện. Pantry còn vài người. Trong bóng tối, {idol_het_thoi} hát khe khẽ "Công Viên". Không kính đen, không micro, giọng mộc._
@@ -179,22 +198,19 @@ _Bạn cũng đang cầm điện thoại. Pin 3%._
 
 // ------------------------------------------------------------
 === hong_hot_1610_gameshow ===
-# ngay:16 # gio:10:00 # noi:dai_tivi_hong # bat_buoc
-_Đài Tivi Hóng. Gameshow "Hồng Hay Không Hồng", giải 10 triệu. Bạn ngồi khán đài, vừa xem vừa cắt clip ngắn._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_Đài Tivi Hóng, 14 giờ. Ghi hình gameshow "Hồng Hay Không Hồng", giải 10 triệu. 20 giờ tối nay mới phát sóng. Bạn ngồi khán đài, vừa xem vừa cắt clip ngắn cho tối nay._
 mc_tivi_hong: Xin chào quý vị và các bạn! Phần thi "Hit Một Thời"!
 _{sieu_nhan_hong} hát "Công Viên" sai lời: "…bán khoai chiên tại công viên…". Từ cánh gà, có ai đó hát bè đúng lời. Giọng quen lắm._
-_Cùng lúc, 2.000 tài khoản avatar xanh lá chuối tràn vào bình luận livestream: "Hát dở", "Giả trân", "Trả tiền vé"._
+_Đài cho phát trực tiếp hậu trường. Cùng lúc, 2.000 tài khoản avatar xanh lá chuối tràn vào bình luận: "Hát dở", "Giả trân", "Trả tiền vé"._
 * [💬 Trực comment, xóa tài khoản xanh lá chuối. (Minigame "Trực Comment")]
-    ~ hh_follow(80000)
     -> hong_hot_mg_truc_comment
 * [🎬 Cắt clip "khoai chiên" đăng liền, caption: "Hồng hát sai cũng có thái độ".]
-    ~ hh_follow(80000)
-    ~ hh_follow(25000)
+    ~ hh_follow(15000)
     ~ hh_tt(10)
     _Clip "khoai chiên" thành meme. Một nửa bình luận cười, một nửa hỏi: "Ai hát bè vậy?"_
     ~ scandal()
 * [🔍 Lia máy về cánh gà, tìm người hát bè.]
-    ~ hh_follow(80000)
     _Kính đen. Áo khoác da. {idol_het_thoi}. Đứng một mình trong bóng tối cánh gà, hát đúng lời bài hát của chính mình._
     ~ hh_tin(2)
     ~ qh("idol_het_thoi", 3)
@@ -205,6 +221,7 @@ _Cùng lúc, 2.000 tài khoản avatar xanh lá chuối tràn vào bình luận 
 # ngay:16 # gio:15:30 # noi:ban_so_lieu
 _Thứ 6. Trà sữa thứ 6 từ quỹ phạt đi trễ. Một nửa quỹ là tiền của bạn._
 _Rồi tới giờ ngồi với {dan_dau_tu} đối chiếu số liệu fanpage. Anh ấy đã "làm tròn" sẵn ba con số._
+_Bộ lọc mới của {dan_dau_tu} còn tô vàng một cột lạ: vài chục nghìn tài khoản dùng chung ảnh đại diện hoa sen, comment y hệt nhau dưới mọi bài có {idol_het_thoi}. "Để anh soi tiếp," anh nói, "số liệu này có mùi."_
 * [📊 Bắt lỗi từng dòng. (Minigame "Báo Cáo Số Liệu")]
     -> hong_hot_mg_bao_cao
 * [🧋 Uống trà sữa, ký đại cho xong.]
@@ -218,10 +235,10 @@ _Rồi tới giờ ngồi với {dan_dau_tu} đối chiếu số liệu fanpage.
 === hong_hot_1610_buffet ===
 # ngay:16 # gio:17:30 # noi:pantry
 _Ngày Lương thực Thế giới: buffet ở công ty. {hr} đi vòng quanh, cầm danh sách xếp phòng Vũng Tàu._
-hr: Em {hong_hot}, mai em được giao livestream cả chuyến đi cho fanpage nha. Em có nguyện vọng gì về phòng không?
-* [🙋 "Dạ cho em ở với {designer}!"]
-    hr: Ừ. Anh ghi nhận. *(gạch gạch)*
-    ~ qh("designer", 3)
+hr: Em {hong_hot}, mai em được giao livestream cả chuyến đi cho fanpage nha. Phòng em là 206, ở với {thanh_ninh}.
+* [🙋 "Dạ cho em ở với {designer} được hông anh?"]
+    hr: {designer} ở 202 với {sales} rồi em. Anh ghi nhận nguyện vọng thôi. *(không gạch gì)*
+    ~ qh("thanh_ninh", 2)
 * [👀 "Dạ em ở đâu cũng được, miễn có ổ cắm. Mà anh xếp chị {chi_dai} với ai vậy?"]
     hr: *(mỉm cười, gập danh sách)* Bí mật nhân sự, em ạ.
     ~ hh_tin(1)

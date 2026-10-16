@@ -3,25 +3,6 @@
 // ============================================================
 
 // ------------------------------------------------------------
-=== ran_doc_0110_cong_cong_ty ===
-# ngay:1 # gio:07:58 # noi:cong_cong_ty
-_7 giờ 58. Bạn phóng xe vào cổng, tim đập thình thịch. Ngày đầu đi làm mà trễ là toang._
-cho: Gâu! Gâu gâu!
-bac_bao_ve: {cho}, im nào. Cháu là nhân viên mới à? Gửi xe bên kia, còn 2 phút nữa là 8 giờ đấy.
-* [😇 "Dạ con cảm ơn bác! Con là {ran_doc}, mới vô làm hôm nay ạ."]
-    ~ qh("bac_bao_ve", 5)
-    bac_bao_ve: Ừ. Đi nhanh lên. Máy chấm công hay đơ lắm.
-* [🐾 Cúi xuống xoa đầu {cho} trước đã.]
-    ~ qh("cho", 10)
-    cho: Gâu! *(vẫy đuôi)*
-    bac_bao_ve: Nó quý cháu đấy. Ít ai nó quý ngay đâu. Mà nhanh lên, 7 giờ 59 rồi!
-    ~ cang_thang(5)
-* [🏃 Chạy thẳng vào trong, không nói gì.]
-    bac_bao_ve: …
-    _Bác {bac_bao_ve} nhìn theo bạn, uống một ngụm trà đá._
-- -> END
-
-// ------------------------------------------------------------
 === ran_doc_0110_ky_hop_dong ===
 # ngay:1 # gio:09:00 # noi:phong_hop_tang_2
 _Phòng họp tầng 2 chật kín người. Trên bàn là một xấp hợp đồng dày cộp. Ở đầu bàn, một người mặc bộ đồ siêu nhân màu hồng đang tạo dáng chụp hình._
@@ -52,6 +33,29 @@ sieu_nhan_hong: *(đi vòng bàn bắt tay từng người, dừng lại trướ
     ~ qh("chi_dai", -5)
 - _{sieu_nhan_hong} đi tiếp sang người khác. Bạn nhìn theo bộ đồ hồng, bàn tay vẫn còn nắm chặt._
 _Cả công ty muốn Siêu Nhân Hồng nổi tiếng. Còn bạn thì không._
+-> END
+
+// ------------------------------------------------------------
+=== ran_doc_0110_tra_sua_sep ===
+# ngay:1 # gio:10:30 # noi:phong_giam_doc # bat_buoc
+_Cả công ty ăn mừng bằng trà sữa. Lúc nãy ở đầu cầu thang, {chi_dai} lỡ miệng: sếp uống ít đường, nhiều trân châu đen. Bạn đặt riêng một ly, mang lên phòng giám đốc._
+giam_doc: Ơ, sao em biết anh uống thế này? Thằng bé này được việc đấy!
+_Sau lưng bạn, {thanh_ninh} đứng ở cửa, tay bưng khay trà sen. Nụ cười của cô ta đứng im, chỉ có mắt là chạy từ ly trà sữa sang mặt bạn._
+thanh_ninh: Dạ anh {ran_doc} giỏi quá. Mà buổi sáng sếp uống trà sen cho ấm bụng ạ. Em {ran_doc} ơi, tiện xuống photo giùm chị 52 trang hợp đồng nha.
+* [😇 "Dạ chị, em đi liền."]
+    ~ qh("thanh_ninh", 3)
+    ~ rd_tin(3)
+    giam_doc: {thanh_ninh}, nhân viên mới mà, cho nó làm quen dần đã.
+    _Bạn photo 52 trang. Tới trang 47 thì máy kẹt giấy. Bạn rút tờ đó ra, vuốt phẳng, và đọc được ba chữ cỡ 6: "hoàn trả gấp đôi"._
+    ~ rd_tin_mat()
+* [🐍 "Dạ chị {thanh_ninh} chu đáo thật. Sếp có chị là có tất cả."]
+    _Câu đó ngọt quá. Ngọt kiểu đường hóa học. {giam_doc} cười khà khà, không nghe ra. {thanh_ninh} nghe ra._
+    ~ qh("giam_doc", 5)
+    ~ qh("thanh_ninh", -10)
+    ~ rd_do_doc = gioi_han(rd_do_doc + 5)
+* [😶 Đặt ly trà sữa xuống, lùi ra, mỉm cười.]
+    ~ qh("giam_doc", 2)
+- _Từ hôm nay, ở tầng 2 có hai người tranh nhau một cái tai của sếp. Bạn chưa cần cái tai đó. Nhưng có thêm một cái thì không thừa._
 -> END
 
 // ------------------------------------------------------------
@@ -88,7 +92,7 @@ _Người này nhìn lớn tuổi hơn bạn. Nhiều._
     ~ qh("thuc_tap_sinh", 15)
 * [🐍 "Thực tập mà lớn tuổi vậy, chắc có chuyện gì hả?"]
     thuc_tap_sinh: *(cười gượng)* Dạ… em đổi nghề thôi ạ.
-    _{thuc_tap_sinh} giấu cái thẻ ngân hàng màu bạc lấp lánh vào túi rất nhanh._
+    _{thuc_tap_sinh} giấu một cái thẻ ngân hàng màu đen, viền lấp lánh, vào túi rất nhanh._
     ~ rd_so_tin_mat = rd_so_tin_mat + 1
     ~ qh("thuc_tap_sinh", -5)
 - ~ an(55)
@@ -123,7 +127,7 @@ ke_toan: Khụ khụ. Nói gì vui vậy mấy đứa? # hen_gio:5
 // ------------------------------------------------------------
 === ran_doc_0110_chi_dai_dan_di ===
 # ngay:1 # gio:08:10 # noi:tang_1 # bat_buoc
-_Một chị tóc buộc cao, đeo bộ đàm bên hông, chặn bạn ngay đầu cầu thang._
+_7 giờ 58, bạn phóng xe qua cổng, suýt cán đuôi một con chó vàng. Bác bảo vệ già chỉ chỗ gửi xe, không nói thừa chữ nào. Lên tới đầu cầu thang, một chị tóc buộc cao, đeo bộ đàm bên hông, chặn bạn lại._
 chi_dai: Em là {ran_doc} hả? Chị là {chi_dai}, lo sự kiện. Đi theo chị, chị dẫn đi chào cả công ty.
 chi_dai: Ăn sáng chưa? Chưa thì cầm cái bánh bao này. Nhân viên mới mà đói là chị không chịu.
 * [😇 "Dạ em cảm ơn chị, em ăn rồi mà chị cho thì em ăn nữa."]
@@ -197,7 +201,7 @@ _Bên kia vách, tiếng {hong_hot} đang livestream: "Cả nhà ơi, công ty e
     ~ rd_han(5)
     ~ cang_thang(5)
 - _Đúng 22:00, điện thoại rung. Group Zalo-lô công ty._
-giam_doc: Các em ngủ sớm nhé, mai 8h30 họp chiến dịch "Hồng Hóa Việt Nam". Anh không ép, tùy các em. Nhưng ai không đến thì anh buồn.
+giam_doc: Các em ngủ sớm nhé, mai 9h30 họp chiến dịch "Hồng Hóa Việt Nam". Anh không ép, tùy các em. Nhưng ai không đến thì anh buồn.
 _22 người "đã xem". Không ai trả lời. Bạn thả một trái tim. Ngày đầu, phải ngoan._
 ~ qh("giam_doc", 2)
 -> END
@@ -226,7 +230,7 @@ hr: Chào em! Hôm nay ai chấm công cũng phải cười nha. Anh chỉ muố
 
 // ------------------------------------------------------------
 === ran_doc_0210_hop_chien_dich ===
-# ngay:2 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
+# ngay:2 # gio:09:30 # noi:phong_hop_sang_tao # bat_buoc
 _Phòng họp "Sáng Tạo". Trên màn hình là dòng chữ to: CHIẾN DỊCH HỒNG HÓA VIỆT NAM. MỤC TIÊU: 1.000.000._
 giam_doc: Các em, một triệu người theo dõi trước 31/10. Anh tin các em. Cái này là mindset, các em hiểu không?
 truong_phong: Mình sync nhanh 5 phút thôi nhé. Mỗi bộ phận nói một ý tưởng.
@@ -252,7 +256,7 @@ truong_phong: Còn em, {ran_doc}? Truyền thông nội bộ có ý gì không?
     _Bạn ghi hai dòng. Một ý tưởng phim mà {bien_kich} đang chép lia lịa. Một ông chủ tịch nghe tên như món ăn vặt._
     ~ rd_tin_mat()
     ~ rd_tin_mat()
-- truong_phong: Ok, họp "5 phút" của mình xong rồi. *(đồng hồ chỉ 10:47)*
+- truong_phong: Ok, họp "5 phút" của mình xong rồi. *(đồng hồ chỉ 11:47)*
 -> END
 
 // ------------------------------------------------------------
@@ -280,7 +284,7 @@ sieu_nhan_hong: Ai ghi order đó? Cho anh một ly trà sữa dâu, topping h�
 === ran_doc_0310_cuoi_tuan_hem_69 ===
 # ngay:3 # gio:09:30 # noi:hem_69
 _Thứ 7. Bà Tư chủ trọ ngồi ghế đẩu đầu dãy, quạt nan phành phạch._
-ba_tu: Nay mùng mấy rồi con? Mùng 3. Mùng 5 tiền trọ nha con. Mà con làm ở cái công ty có ông siêu nhân hồng hả?
+ba_tu: Nay mùng mấy rồi con? Mùng 3. Mùng 5 tiền trọ nha con, hai triệu tư, gồm điện luôn. Mà con làm ở cái công ty có ông siêu nhân hồng hả?
 ba_tu: Hôm qua con {hong_hot} phòng bên nói ổng giàu lắm, tiền đựng trong vali!
 * [🧂 "Dạ, nghe nói vali đó toàn tiền mệnh giá lớn, ổng đếm bằng máy luôn bà."]
     ba_tu: Trời đất! Để chiều bà kể cho chú Sáu nghe.
@@ -291,7 +295,7 @@ ba_tu: Hôm qua con {hong_hot} phòng bên nói ổng giàu lắm, tiền đựn
     _Bạn nắm chặt ly trà đá._
     ~ rd_han(5)
 * [😇 Đưa trước tiền trọ cho bà Tư.]
-    ~ tien_cong(-2500000)
+    ~ tien_cong(-2400000)
     ba_tu: Con này ngoan. Trọ ở đây ba năm chưa ai đưa sớm. Có gì cần cứ nói bà.
     _Bà Tư biết hết chuyện cả hẻm. Có bà đứng về phía mình là có cả một mạng lưới._
     ~ rd_tin_mat()

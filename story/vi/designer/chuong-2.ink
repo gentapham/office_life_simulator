@@ -93,10 +93,10 @@ _3 triệu. Gần bằng tiền thuê căn 203. Lương thì còn 4 ngày nữa 
 # ngay:9 # gio:05:30 # noi:can_203
 _5 giờ 30. Bạn thức trắng làm thumbnail cho MV ra mắt tối nay. Cây lưỡi hổ nhìn bạn đầy thương hại._
 _Ngoài trời bắt đầu sáng. Còn 1 việc: chọn ảnh bìa._
-* [🎨 Tấm Nguyên đứng ngược sáng, tay giơ lên, không tạo dáng. Đẹp mà buồn.]
+* [🎨 Tấm {sieu_nhan_hong} đứng ngược sáng, tay giơ lên, không tạo dáng. Đẹp mà buồn.]
     ~ ds_toi(5)
     ~ ds_poster_mv_dep = true
-* [🔥 Tấm Nguyên chu môi, chữ "BIẾN HÌNH!!!" vàng viền đỏ.]
+* [🔥 Tấm {sieu_nhan_hong} chu môi, chữ "BIẾN HÌNH!!!" vàng viền đỏ.]
     ~ ds_toi(-5)
     ~ ds_giat_tit = ds_giat_tit + 1
 * [🤝 Gửi cả hai cho {hong_hot}, để bả chọn.]
@@ -341,7 +341,7 @@ sales: Chị {designer}. Em không chịu thua. Em cần một cái bằng khen.
     giam_doc: Tập đoàn quốc tế công nhận anh! Treo lên! Treo chỗ dễ thấy nhất!
     _Nó được treo trên tường phòng giám đốc. Ngay cạnh cửa sổ. Ai đi ngang cũng thấy._
     _Bạn có cảm giác vừa ký tên mình vào một quả bom hẹn giờ. Tên file: "QuynhDesign"._
-* [💬 "Huyền, cái này treo lên tường sếp đó. Lỡ ai tra BTT thì sao?"]
+* [💬 "{sales}, cái này treo lên tường sếp đó. Lỡ ai tra BTT thì sao?"]
     sales: Ai rảnh mà tra chị ơi! *(dừng lại)* …Thôi được. Làm đơn giản thôi, không con dấu.
     ~ qh("sales", 3)
     ~ ds_toi(2)

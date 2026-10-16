@@ -95,7 +95,7 @@ _Bạn cầm cây bút máy mực hồng. Tờ thiệp trắng nhìn bạn, ch�
     ~ cang_thang(5)
 * [💬 Hỏi bác trước: "Bác nhớ ngày đầu tiên của công ty hông bác?"]
     bac_bao_ve: Nhớ chứ. Năm ấy công ty có một phòng 20 mét vuông. Bác ngồi gác cái cửa, chẳng có gì để trộm.
-    bac_bao_ve: Thế mà người ta vẫn bảo bác gác cho cẩn thận. {it} là "cái quý nhất ở trong ấy là con người".
+    bac_bao_ve: Thế mà người ta vẫn bảo bác gác cho cẩn thận. bảo là "cái quý nhất ở trong ấy là con người".
     _Bạn định hỏi "người ta" là ai. Bác {bac_bao_ve} đã quay sang uống trà sữa, như chưa nói gì._
     ~ bk_that(5)
     ~ bk_cam(10)

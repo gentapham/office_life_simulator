@@ -121,7 +121,7 @@ _Tờ giấy chữ chú, nét run: "Tối mai sau họp, chú cháu mình nói c
 // ------------------------------------------------------------
 === con_ong_chau_cha_2910_luu_luc_nhan_lai ===
 # ngay:29 # gio:21:00 # noi:sky_ao_tang_30 # dieu_kien:da tu choi ban bai cho LL
-{ not long_ban_cho_ll && not long_ghi_am_luu_luc && long_tu_lap < 60:
+{ not long_ban_cho_ll && not long_ghi_am_luu_luc && long_tu_lap < 40:
     -> nhan_lai
 - else:
     _Đêm. Không có mạng. Không có tin nhắn. Penthouse yên lặng như bể cá. Bạn ngủ sớm lần đầu trong tháng._
@@ -138,7 +138,7 @@ _Lưu Lực biết penthouse bị bán. Lưu Lực biết thẻ bằng 0. Lưu L
     ~ long_ban_cho_ll = true
     ~ long_bai_phat_hanh = true
     ~ long_tl(15)
-    ~ follow(-150000)
+    ~ follow(-50000)
     _Tiền về lúc 23:47. Bạn nhìn con số rất lâu. Rồi tắt màn hình. Phòng thu tối om._
 * [🙅 Chặn số.]
     _Bạn chặn. Rồi mở phòng thu, nghe bản cuối một lần nữa. Bạn vẫn không có nhà. Nhưng bạn có bài này._
@@ -152,9 +152,9 @@ _Lưu Lực biết penthouse bị bán. Lưu Lực biết thẻ bằng 0. Lưu L
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp đánh giá cuối tháng. Bạn tới lúc 8 giờ 55. Sớm. Cả phòng ngạc nhiên. {truong_phong} đặt sổ kẻ ô ngay ngắn trước mặt._
-_Hợp đồng của {idol_het_thoi} hết hạn hôm nay. Danh sách cắt giảm nằm đâu đó trong tập hồ sơ hồng của {hr}._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ, họp đánh giá cuối tháng. Bạn tới lúc 13 giờ 55. Sớm. Cả phòng ngạc nhiên. {truong_phong} đặt sổ kẻ ô ngay ngắn trước mặt._
+_Hợp đồng của {idol_het_thoi} hết hạn ngày mai, hôm nay phải gia hạn. Danh sách cắt giảm nằm đâu đó trong tập hồ sơ hồng của {hr}._
 giam_doc: *(trước cả phòng họp)* Ghế Phó Giám đốc, anh đề xuất… {con_ong_chau_cha}. Cháu… à, em có ý kiến gì không? Anh không ép, tùy em.
 _{truong_phong} đặt bút xuống. Cả phòng nín thở._
 * [👑 "Dạ, cháu nhận."]
@@ -172,7 +172,7 @@ _{truong_phong} đặt bút xuống. Cả phòng nín thở._
     { long_ke_nhat_khong_muon_ghe:
         _{truong_phong} nhìn bạn. Lần này không phải ánh nhìn của đối thủ._
     }
-* {long_mo_phong_thu_nhat && qh_truong_phong >= 60} [🔒 "Cháu đề cử ông {truong_phong}. Ổng làm việc thật. Cháu chỉ xin lo phần âm nhạc."]
+* {long_mo_phong_thu_nhat && qh_truong_phong >= 20} [🔒 "Cháu đề cử ông {truong_phong}. Ổng làm việc thật. Cháu chỉ xin lo phần âm nhạc."]
     ~ long_de_cu_nhat = true
     ~ long_tu_choi_ghe = true
     ~ long_o_du = 0
@@ -182,7 +182,7 @@ _{truong_phong} đặt bút xuống. Cả phòng nín thở._
 - -> END
 
 = nhat_tra_loi
-{ long_nhat_nghe_demo && qh_truong_phong >= 60:
+{ long_nhat_nghe_demo && qh_truong_phong >= 25:
     truong_phong: *(đứng dậy, rút trong sổ ra một tờ giấy)* Em cũng có một lá đơn đề cử. Em đề cử {con_ong_chau_cha}. {con_ong_chau_cha} lo âm nhạc, em lo sản xuất.
     ~ long_nhat_de_cu_long = true
     _Hai lá đơn đề cử nằm trên bàn chú, chỉ vào nhau như hai mũi tên trên sơ đồ của {truong_phong}._
@@ -221,21 +221,22 @@ giam_doc: {con_ong_chau_cha}. Chú xin lỗi chuyện căn nhà. Chú định n�
 // ------------------------------------------------------------
 === con_ong_chau_cha_3110_truoc_gio ===
 # ngay:31 # gio:17:00 # noi:san_khau_dem_hong # bat_buoc
-_Đại Nhạc Hội Siêu Nhân. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Chú bạn hóa trang "Ông Kẹ Ngân Hàng". {truong_phong} hóa trang thành cuốn lịch để bàn. Bạn không hóa trang. Bạn ôm cây đàn._
+_Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Còn hai tiếng rưỡi nữa mới mở màn. Chú bạn hóa trang "Ông Kẹ Ngân Hàng". {truong_phong} hóa trang thành cuốn lịch để bàn. Bạn không hóa trang. Bạn ôm cây đàn._
 { long_ban_cho_ll:
     _Bài "Hồng Là Thái Độ" đã thuộc về LL. Đêm nay Đại Nhạc Hội Siêu Nhân dùng nhạc nền không lời. Bạn đứng ở cánh gà, tay trống không._
     ~ long_nguoi_hat = ""
     -> END
 }
 { long_bai_hat < 50:
-    _Bài hát mới xong một nửa. Không đủ để hát trước 10.000 người. Đại Nhạc Hội Siêu Nhân dùng nhạc nền không lời. Bạn ngồi dưới khán đài, nghe giai điệu của người khác._
+    _Bài hát mới xong một nửa. Không đủ để hát trước cả khán đài. Đêm nay dùng nhạc nền không lời. Bạn sẽ ngồi dưới khán đài, nghe giai điệu của người khác._
     -> END
 }
+{ nguyen_theo_ll: -> vang_nguyen }
 { long_nguoi_hat == "phat":
-    _{idol_het_thoi} đã có bài, theo cách của {idol_het_thoi}. Đêm nay {idol_het_thoi} sẽ hát nó ở tiết mục khách mời._
+    _{idol_het_thoi} đã có bài, theo cách của {idol_het_thoi}. Đêm nay {idol_het_thoi} muốn hát nó ở tiết mục khách mời._
     -> phat_hat
 }
-_{quan_ly_idol} chạy tới, cầm 2 cái điện thoại: "Long, cần chốt: bài của em, ai hát? Dòng 'Nhạc & lời' ghi gì?"_
+_{quan_ly_idol} chạy tới, cầm 2 cái điện thoại: "{con_ong_chau_cha}, cần chốt: bài của em, ai hát? Dòng 'Nhạc & lời' ghi gì?"_
 * {long_tang_bai_nguyen || qh_sieu_nhan_hong >= 30} [🩷 "Siêu Nhân Hồng hát. Ghi: 'Nhạc & lời: {con_ong_chau_cha}'. Không có chữ gì phía trước."]
     ~ long_nguoi_hat = "nguyen"
     ~ long_ghi_ten = true
@@ -245,7 +246,7 @@ _{quan_ly_idol} chạy tới, cầm 2 cái điện thoại: "Long, cần chốt:
     ~ long_nguoi_hat = "song_ca"
     ~ long_ghi_ten = true
     ~ long_tang_bai_nguyen = true
-    quan_ly_idol: *(khựng lại)* {idol_het_thoi}… với Nguyên? Em chắc hông? *(rồi gật, rất nhanh)* Được.
+    quan_ly_idol: *(khựng lại)* {idol_het_thoi}… với {sieu_nhan_hong}? Em chắc hông? *(rồi gật, rất nhanh)* Được.
     ~ qh("quan_ly_idol", 8)
 * [🙈 "Siêu Nhân Hồng hát. Đừng ghi tên tui."]
     ~ long_nguoi_hat = "nguyen"
@@ -267,55 +268,46 @@ _{quan_ly_idol} chạy tới, cầm 2 cái điện thoại: "Long, cần chốt:
     _Bạn ngồi xuống hàng ghế cuối. Đêm nay, giai điệu của bạn sẽ có giọng của người khác._
 - -> END
 
-// ------------------------------------------------------------
-=== con_ong_chau_cha_3110_dem_hong ===
-# ngay:31 # gio:20:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30, Đại Nhạc Hội Siêu Nhân mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}. 20 giờ 30, tới tiết mục chính._
-{ long_nguoi_hat:
-- "nguyen":
-    _Nhạc dạo "Hồng Là Thái Độ" vang lên. {sieu_nhan_hong} cầm micro. Bạn đứng trong cánh gà, nắm chặt rèm như {idol_het_thoi} hôm gameshow._
-    _Điệp khúc lần đầu: khán đài im lặng nghe. Điệp khúc lần thứ hai: cả khán đài hát theo._
-    ~ long_bai_phat_hanh = true
-    ~ follow(100000)
-    { long_bai_hat >= 80:
-        ~ follow(200000)
-    }
-- "song_ca":
-    _{sieu_nhan_hong} và {idol_het_thoi} đứng chung sân khấu. Hai người từng ghét nhau, giờ hát chung một điệp khúc. {quan_ly_idol} khóc ở cánh gà. {editor} đứng cạnh, đưa khăn giấy._
-    ~ long_bai_phat_hanh = true
-    ~ follow(80000)
-    { long_bai_hat >= 80:
-        ~ follow(100000)
-    }
-- "phat":
-    _{idol_het_thoi} hát ở tiết mục khách mời. Giai điệu của bạn, lời của người khác. Khán giả vỗ tay. Bạn vỗ tay theo, chậm hơn mọi người nửa nhịp._
-    ~ long_bai_phat_hanh = true
-    ~ follow(30000)
-- else:
-    _Nhạc nền không lời. Sân khấu đẹp, pháo giấy hồng. Nhưng thiếu một thứ gì đó mà chỉ bạn biết là gì._
-    ~ follow(50000)
+= vang_nguyen
+_Phòng chờ của {sieu_nhan_hong} trống trơn. Bên kia đường, màn hình LED của LL đang thử hình bộ đồ hồng viền xanh lá chuối. Bài viết cho {sieu_nhan_hong} giờ không còn người hát._
+{ long_nguoi_hat == "song_ca" || long_hua_song_ca_ghi_ten || long_nguoi_hat == "phat":
+    _{idol_het_thoi} đứng ở cửa phòng chờ, kính đen, tay cầm micro không dây._
+    idol_het_thoi: Nếu tối nay sân khấu trống… anh lên. Bài của em hay bài của anh, em chọn.
 }
-{ long_bai_phat_hanh && long_ghi_ten:
-    _Màn hình lớn chạy chữ: "Nhạc & lời: {con_ong_chau_cha}." Không có chữ "cháu" nào phía trước._
-}
-{ long_bai_phat_hanh && not long_ghi_ten && long_nguoi_hat == "nguyen":
-    _Màn hình lớn chạy chữ: "Nhạc & lời: Rồng." Trong đám đông, {thuc_tap_sinh} quay sang bạn, mắt mở to. {thuc_tap_sinh} biết Rồng là ai._
-}
-* [😭 Đứng trong cánh gà, không giấu nước mắt.]
-    ~ cang_thang(-20)
-* [📸 Check-in: "Đêm nay."]
-    ~ long_so_lan_check_in = long_so_lan_check_in + 1
-    ~ follow(5000)
-* [🤝 Tìm chú ở hàng ghế đầu.]
-    _Chú ngồi hàng đầu, mặc đồ "Ông Kẹ Ngân Hàng", tay vỗ không ngừng. Chú không nhìn sân khấu. Chú nhìn cánh gà, nơi bạn đứng._
-    ~ qh("giam_doc", 6)
+* {long_nguoi_hat == "song_ca" || long_hua_song_ca_ghi_ten || long_nguoi_hat == "phat"} [🎤 "Anh hát bài của tui. Ghi tên tui."]
+    ~ long_nguoi_hat = "phat"
+    ~ long_ghi_ten = true
+    ~ long_bai_phat_hanh = true
+    idol_het_thoi: *(gật)* Ghi tên em. Anh hứa lần thứ hai.
+* [🙅 "Anh hát 'Công Viên' đi. Bài của tui đợi người của nó về."]
+    ~ long_nguoi_hat = ""
+    _Bạn cất ổ cứng vào túi. Có những bài phải đợi đúng người._
 - -> END
 
 // ------------------------------------------------------------
-=== con_ong_chau_cha_3110_sau_dem_hong ===
-# ngay:31 # gio:22:30 # noi:san_khau_dem_hong # bat_buoc
-_22 giờ 30. Đèn sân khấu tắt dần. Pháo giấy hồng phủ kín sàn. Cả công ty ngồi bệt xuống. {thuc_tap_sinh} ngồi cạnh bạn, mặc đồ y chang bạn, như mọi ngày._
-thuc_tap_sinh: Dạ anh {con_ong_chau_cha}… mai anh làm gì ạ?
+=== con_ong_chau_cha_3110_canh_ga ===
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
+_19 giờ 15. Mười lăm phút nữa mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}, rồi 20 giờ là tiết mục chính. Bạn đứng trong cánh gà. {thuc_tap_sinh} đứng cạnh, mặc đồ y chang bạn, như mọi ngày._
+{ long_nguoi_hat:
+- "nguyen":
+    _Trên bàn âm thanh của {it} có một ổ cứng dán băng keo ghi "HLTD". Tờ cue sheet của {chua_te_deadline} ghi: "20:00 – Hồng Là Thái Độ. Nhạc & lời: {long_ghi_ten: {con_ong_chau_cha}|Rồng}"._
+- "song_ca":
+    _Trên bàn âm thanh của {it} có một ổ cứng dán băng keo ghi "HLTD". {idol_het_thoi} đứng tập hơi ở góc cánh gà, lần đầu không đeo kính đen. Tờ cue sheet ghi: "20:00 – Hồng Là Thái Độ (song ca). Nhạc & lời: {con_ong_chau_cha}"._
+- "phat":
+    _{idol_het_thoi} đứng ở góc cánh gà, lẩm nhẩm lời. Giai điệu của bạn, giọng của người khác.{ long_ghi_ten: Ít nhất tên bạn sẽ nằm trên màn hình.}_
+    ~ long_bai_phat_hanh = true
+- else:
+    _Tờ cue sheet của {chua_te_deadline} ghi: "20:00 – Nhạc nền chủ đề (không lời)". Bạn đọc dòng đó ba lần._
+}
+// Long công khai là tác giả và Siêu Nhân Hồng hát: Đại Nhạc Hội chung sẽ phát bài này
+{ (long_nguoi_hat == "nguyen" || long_nguoi_hat == "song_ca") && long_ghi_ten && not nguyen_theo_ll:
+    ~ chung_hat_hong_la_thai_do = true
+    ~ long_bai_phat_hanh = true
+}
+{ long_nguoi_hat == "nguyen" && not long_ghi_ten:
+    ~ long_bai_phat_hanh = true
+}
+thuc_tap_sinh: Dạ anh {con_ong_chau_cha}… xong đêm nay anh làm gì ạ?
 * [🎸 "Viết bài thứ hai."]
     thuc_tap_sinh: Dạ! Em nghe đầu tiên được hông ạ?
     con_ong_chau_cha: Anh nghe thứ hai. Người đầu tiên đã đặt chỗ rồi.
@@ -323,6 +315,8 @@ thuc_tap_sinh: Dạ anh {con_ong_chau_cha}… mai anh làm gì ạ?
 * [🛵 "Đi làm ca sáng. Rồng cần tiền trọ."]
     thuc_tap_sinh: Dạ… em xin làm chung ạ.
     ~ qh("thuc_tap_sinh", 5)
-* [😎 "Ngủ. Chill đi anh."]
-    thuc_tap_sinh: Dạ… chill ạ. *(vẫn ngồi nghiêm)*
-- -> con_ong_chau_cha_3010_danh_gia
+    ~ long_tl(3)
+* [🤝 Ra hàng ghế đầu tìm chú.]
+    _Chú ngồi hàng đầu, mặc đồ "Ông Kẹ Ngân Hàng", tay cầm cuốn sổ nợ bằng bìa giấy. Thấy bạn, chú vỗ vào ghế trống bên cạnh: "Xong tiết mục thì ra đây ngồi với chú."_
+    ~ qh("giam_doc", 6)
+- -> END

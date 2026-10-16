@@ -28,7 +28,7 @@ _Ai cũng nhìn bạn, như thể bạn mang theo cái router trong ba lô. Th�
 
 // ------------------------------------------------------------
 === it_1710_hai_san ===
-# ngay:17 # gio:19:00 # noi:vung_tau_nha_hang
+# ngay:17 # gio:18:00 # noi:vung_tau_nha_hang
 _Hồng Coin vừa tăng gấp 10 trong 4 tiếng. {dan_dau_tu} đứng giữa nhà hàng, giơ tay gọi món như một vị vua._
 dan_dau_tu: Cua! Ghẹ! Tôm hùm! Hôm nay tui bao hết! Lần này là lên thật!
 _Cả đoàn hô vang: "Anh {dan_dau_tu} đỉnh nóc!"_
@@ -53,8 +53,8 @@ _Bạn nhìn con tôm hùm, rồi nhìn {dan_dau_tu}. Trong đầu bạn hiện 
 
 // ------------------------------------------------------------
 === it_1710_lua_trai ===
-# ngay:17 # gio:21:00 # noi:vung_tau_bai_bien # bat_buoc
-_Đêm lửa trại. Bạn lo cái loa kéo. {chi_dai} giao: "Loa mà rè là em ngủ ngoài bãi."_
+# ngay:17 # gio:20:00 # noi:vung_tau_bai_bien # bat_buoc
+_20:00. Lửa trại. Bạn lo cái loa kéo. {chi_dai} giao: "Loa mà rè là em ngủ ngoài bãi."_
 _{idol_het_thoi} cầm micro, hát "Công Viên". Bạn chỉnh âm cho {idol_het_thoi}, lần đầu tiên sau 10 năm. Giọng ấm, không hú, không rè._
 idol_het_thoi: *(hát xong, nhìn bạn)* Ủa… em là thằng nhỏ bị điện giật hồi hội chợ hả? Năm 2016? Trời mưa?
 * [😇 "Dạ. Dây loa anh."]
@@ -111,7 +111,7 @@ _Bạn nhìn tin nhắn. "Buộc lại". Dây mạng không phải dây phơi đ
     -> END
 
 = it_1710_dem_cong_ty
-_1 giờ sáng. Công ty tối om. Bác {bac_bao_ve} mở cổng, {cho} chạy ra ngửi chân bạn, vẻ mặt hơi tội lỗi._
+_0 giờ 40. Công ty tối om. Bác {bac_bao_ve} mở cổng, {cho} chạy ra ngửi chân bạn, vẻ mặt hơi tội lỗi._
 _Ở tủ mạng tầng trệt, một sợi dây chính bị gặm sờn, quấn băng keo cá nhân hình con gấu. Bạn thay sợi dây mới._
 ~ it_on(15)
 { not it_lay_ga_cao_su:
@@ -127,9 +127,9 @@ _Ở tủ mạng tầng trệt, một sợi dây chính bị gặm sờn, quấn
     _Công ty không có máy in 2._
     ~ it_truy_cap(10)
     ~ phat_hien(ran_thu_hai_lo_mat)
-    bac_bao_ve: Lúc gần nửa đêm bác có thấy đèn phòng giám đốc sáng. Bác lên thì không thấy ai. Chỉ thấy mùi gì như… lá chuối.
+    bac_bao_ve: Máy với chả móc. Bác chỉ thấy cái đèn wifi nó nháy cả tối.
 - _Bạn lên phòng giám đốc kiểm tra modem phụ, ngồi xuống ghế của {giam_doc} một chút. Chiếc ghế êm như mây._
-_Bạn tỉnh dậy lúc 5 giờ sáng vì ánh đèn pin rọi thẳng vào mặt._
+_Bạn vừa chợp mắt thì 1 giờ 4 phút, một ánh đèn pin rọi thẳng vào mặt._
 bac_bao_ve: Bác cứ tưởng trộm. Hóa ra là cháu. Thôi, xuống chòi bác pha trà.
 ~ qh("bac_bao_ve", 10)
 -> END
@@ -235,19 +235,19 @@ hong_hot: Ủa anh {it}, quà 20/10 của anh là… sửa điện thoại hả?
 
 // ------------------------------------------------------------
 === it_2010_thu_g ===
-# ngay:20 # gio:10:00 # noi:sanh_tang_tret # bat_buoc
-_Lễ sinh nhật 16 tuổi của {cong_ty}. Bánh kem, bong bóng, logo năm 2010 treo giữa sảnh._
-_Bác {bac_bao_ve} đứng ở góc, cầm một lá thư tay ký chữ "G" vừa tới sáng nay. Bác nhìn cái micro trên bục, rồi nhìn bạn._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18:30. Tiệc sinh nhật 16 tuổi của {cong_ty} ở Quán Ốc Đêm. Logo năm 2010 in trên băng rôn. Bạn được giao cái loa kéo với micro của quán._
+_Bác {bac_bao_ve} ngồi đầu bàn, cầm một lá thư tay ký chữ "G" tới chòi sáng nay, kẹp theo một phong bì dán kín. Bác nhìn cái micro, rồi nhìn bạn._
 bac_bao_ve: *(nói nhỏ)* Cháu… cái micro kia có chạy không?
 _Bạn hiểu: nếu micro chạy, bác có thể đọc. Nếu không, bác có cớ để không đọc. Bác đang hỏi bạn giúp bác quyết định._
 * [🎤 "Chạy bác. Con đứng đây."]
-    _Bạn bật micro, chỉnh âm thật ấm. Bác {bac_bao_ve} bước lên bục, giọng Bắc chậm rãi vang khắp sảnh._
-    bac_bao_ve: Thư của… một người bạn cũ của công ty. "Gửi anh {bac_bao_ve} và các cháu. Mười sáu năm rồi. Cố lên."
-    _Ngắn vậy thôi. Nhưng cả sảnh im phăng phắc. {giam_doc} cúi mặt rất lâu._
+    _Bạn bật micro, chỉnh âm thật ấm. Bác {bac_bao_ve} đứng dậy, giọng Bắc chậm rãi vang khắp quán._
+    bac_bao_ve: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
+    _Ngắn vậy thôi. Nhưng cả quán im phăng phắc. {giam_doc} cúi mặt rất lâu. Phong bì dán kín vẫn nằm trong túi áo bác._
     ~ qh("bac_bao_ve", 15)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
 * [🔇 "Micro hư rồi bác." Rút pin ra.]
-    bac_bao_ve: *(thở ra)* Ừ. Thế thì thôi. Để bác cất.
+    bac_bao_ve: *(thở ra)* Ừ. Thế thì thôi. Để bác cất. Ốc nguội mất.
     _Bác cất lá thư vào túi áo, gật đầu với bạn. Như cảm ơn. Như hiểu._
     ~ qh("bac_bao_ve", 10)
     ~ it_lt(3)
@@ -261,8 +261,8 @@ _Bạn hiểu: nếu micro chạy, bác có thể đọc. Nếu không, bác có
 
 // ------------------------------------------------------------
 === it_2010_karaoke ===
-# ngay:20 # gio:21:30 # noi:karaoke_hat_cho_nhau_nghe
-_Sau quán ốc, cả công ty kéo qua Karaoke Hát Cho Nhau Nghe. Dàn máy của quán hư, bạn được gọi vào sửa như mọi khi._
+# ngay:20 # gio:21:00 # noi:karaoke
+_Sau quán ốc, cả công ty kéo qua Karaoke Chú Sáu. Dàn máy của quán hư, bạn được gọi vào sửa như mọi khi._
 _{giam_doc} đã say. Cầm micro, đứng lên ghế._
 giam_doc: Anh tuyên bố! Nếu Siêu Nhân Hồng đạt một triệu, cả công ty tăng lương 20%! Anh không ép, tùy… tùy anh!
 _Cả phòng gào lên. Màn hình karaoke có nút "Ghi âm" đang nhấp nháy. Bạn là người duy nhất biết nút đó ở đâu._

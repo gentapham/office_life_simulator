@@ -6,10 +6,10 @@
 === editor_2810_xuat_nham ===
 # ngay:28 # gio:03:00 # noi:phong_dung_phim # bat_buoc
 ~ ed_dung_video_thai = true
-_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đại Nhạc Hội Siêu Nhân cho fanpage công ty, và bản lưu của video thư mục "Thái"._
+_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đại Nhạc Hội Siêu Nhân cho fanpage công ty, và bản lưu của video thư mục "{quan_ly_idol}"._
 _Mắt bạn mờ. Ô "Đích xuất file" có hai dòng giống nhau tới mức đáng sợ: "Fanpage G-Entertainment (hẹn giờ)" và "Ổ_riêng/Thai_final"._
-* [✂️ Xuất teaser trước, video "Thái" sau.]
-    _Teaser xong. Bạn kéo video "Thái" vào ô đích. Con trỏ trượt xuống một dòng. Bạn không thấy._
+* [✂️ Xuất teaser trước, video "{quan_ly_idol}" sau.]
+    _Teaser xong. Bạn kéo video "{quan_ly_idol}" vào ô đích. Con trỏ trượt xuống một dòng. Bạn không thấy._
 * [⏳ Xuất cả hai cùng lúc cho nhanh. Ngủ trong lúc chờ.]
     _Hai thanh tiến trình chạy song song. Bạn gục xuống trước khi kịp nhìn thanh nào đi đâu._
     ~ nghi(10)

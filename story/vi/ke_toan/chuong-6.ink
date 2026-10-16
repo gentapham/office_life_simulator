@@ -14,12 +14,12 @@ _Mốc 4: 800.000 người theo dõi. Hiện tại: {nguoi_theo_doi}._
     ~ uong(30)
     ~ kt_ngu(-5)
 }
-_10:20. Fanpage công ty tự đăng một video lạ: toàn cảnh {quan_ly_idol} cười, ngủ gật, cầm hai điện thoại. Cuối video: "Em thích anh. — Cú." Cả công ty nín thở._
+_Sáng nay cả công ty chỉ kể một chuyện: 2:10 đêm qua, fanpage tự đăng một video lạ tên "Thai_final_v12", toàn cảnh {quan_ly_idol} cười, ngủ gật, cầm hai điện thoại. Video nằm đó 6 phút, khoảng 2.000 lượt xem, rồi biến mất. Không ai dám hỏi {editor}._
 _10:40. {dan_dau_tu} gõ cửa, ôm một tờ in._
 dan_dau_tu: {ke_toan}. Bộ lọc của anh lần ra 80.000 tài khoản ảo theo dõi {idol_het_thoi}. Dịch vụ "Like Thật 100%". 18 triệu. Hóa đơn… gửi về công ty tháng 7, ghi "chi phí truyền thông nghệ sĩ".
-_Bạn nhớ tờ hóa đơn đó. Bạn đã từ chối. Rồi ai đó đã tự trả._
-* [🧾 "Em từ chối từ tháng 7. Ai trả thì người đó biết."]
-    _Bạn biết là ai. Một người có hai cái điện thoại và trả tiền nhà giùm người khác mà không nói._
+_Bạn nhớ tờ hóa đơn đó. Bạn đã từ chối. Nên 18 triệu đó vẫn là nợ riêng của {idol_het_thoi}, cộng với ba tháng tiền nhà._
+* [🧾 "Em từ chối từ tháng 7. Khoản đó ổng tự nợ."]
+    _Cũng tháng 7, bạn thấy {quan_ly_idol} rút 12 triệu ở cây ATM tầng 1, ghi lên tờ giấy: "tiền nhà 1808". Một người có hai cái điện thoại và trả tiền nhà giùm người khác mà không nói._
     ~ phat_hien(fan_ao_phat)
     ~ phat_hien(thai_thuong_phat)
 * [🤝 Gọi {idol_het_thoi} lên: "Ông nợ bao nhiêu? Mình lập kế hoạch trả, có sổ."]
@@ -78,7 +78,7 @@ _4G một vạch. Ngân hàng chỉ còn cách đi tận nơi. Đại Lộ Kẹt
 # ngay:29 # gio:15:30 # noi:choi_bao_ve
 _Không wifi. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác {bac_bao_ve} ngồi giữa núi giấy note. {cho} chạy đưa thư lên các tầng. {chi_dai} điều phối bằng bộ đàm._
 bac_bao_ve: Cháu {ke_toan}. Có ba tờ cho cháu.
-_Tờ 1, chữ của {thuc_tap_sinh}: "Dạ chị ơi, hóa đơn ghế Đại Nhạc Hội Siêu Nhân em để trên bàn chị rồi ạ. 400 cái ghế, em đếm 3 lần ạ."_
+_Tờ 1, chữ của {thuc_tap_sinh}: "Dạ chị ơi, hóa đơn rào chắn sân khấu Đại Nhạc Hội em để trên bàn chị rồi ạ. 12 tấm rào, em đếm 3 lần ạ."_
 _Tờ 2, không ký tên: "Chị {ke_toan} ơi, nghe nói chị có két sắt riêng hả?"_
 _Tờ 3, chữ của {hr}: "{ke_toan} rảnh không, mai trước giờ họp lên phòng anh uống trà xíu. Chuyện công việc."_
 * [✍️ Trả lời tờ 2: "Két sắt nào cũng có. Hóa đơn đâu em?"]
@@ -133,8 +133,8 @@ _Tối 29/10. Trang 47b trong bìa nhựa, trên bàn. Còn thiếu chữ ký. C
 
 // ------------------------------------------------------------
 === ke_toan_3010_truoc_gio_hop ===
-# ngay:30 # gio:08:00 # noi:phong_giam_doc # bat_buoc
-_8:00. Còn một tiếng nữa là họp đánh giá. Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ._
+# ngay:30 # gio:12:30 # noi:phong_giam_doc # bat_buoc
+_12:30. Còn một tiếng rưỡi nữa là họp đánh giá. Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang, gầm gừ._
 { kt_quy_den_lo && not kt_tu_khai:
     _Trên bàn {giam_doc} là một tấm ảnh in: két sắt sau bức tranh, nhà số 18. Ai chụp, ai gửi, không rõ._
     giam_doc: {ke_toan}. Đây là gì?
@@ -169,12 +169,16 @@ _Cuốn sổ ghi tay nằm trong túi xách. Quỹ đen: {kt_quy_den} triệu. B
 
 // ------------------------------------------------------------
 === ke_toan_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng "Sáng Tạo". Trên bàn: hợp đồng gia hạn của {idol_het_thoi} (hết hạn ngày mai), và bảng tổng kết tài chính bạn làm tới 3 giờ sáng._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14:00. Họp đánh giá cuối tháng. Cả công ty ngồi kín phòng họp tầng 2. Trên bàn: hợp đồng gia hạn của {idol_het_thoi} (hết hạn ngày mai), và bảng tổng kết tài chính bạn làm tới 3 giờ sáng._
 { kt_lan_ngat >= 1 && kt_mat_ngu >= 85:
     _Đèn phòng họp chói quá. Chữ trên bảng tổng kết nhảy múa. Bạn đứng lên trình bày, rồi thấy sàn nhà nghiêng dần…_
     ~ kt_ngu(30)
     -> ke_toan_tudo_ngat_xiu
+}
+_Việc đầu tiên, {giam_doc} nói nhanh như sợ đổi ý: ghế Phó Giám đốc chốt sau Đại Nhạc Hội. {truong_phong} gật đầu ba lần. {con_ong_chau_cha} nhìn ra cửa sổ, như không nghe._
+{ kt_sep_hua_20:
+    _Rồi {sales} giơ tay: "Còn vụ tăng lương 20% hôm karaoke sếp hứa?" Cả phòng nhìn bạn, vì ai cũng biết bạn bấm máy tính hôm đó. Bạn đọc to: 60 triệu một tháng. {giam_doc} nói: "Khi nào {ke_toan} nói được, thì được." Không ai cãi._
 }
 giam_doc: {ke_toan} trình bày tình hình tài chính trước nhé.
 _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Bạn đọc từng con số. Không làm tròn số nào._
@@ -215,60 +219,50 @@ _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Bạn đọc từng con số. Không 
 
 // ------------------------------------------------------------
 === ke_toan_3110_hang_ghe_cuoi ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
+# ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
 { kt_dang_nam_vien:
     _Bạn đang nằm ở Phòng khám Khỏe Re. Đại Nhạc Hội Siêu Nhân ở ngoài kia. Bạn xem qua điện thoại._
     -> END
 }
-_Đại Nhạc Hội Siêu Nhân. Sân khấu ngoài trời, 400 cái ghế {thuc_tap_sinh} xếp. Bạn ngồi hàng cuối cùng, máy tính bỏ túi trong tay._
-_Mở màn: phim ngắn "Người Hùng Không Tên". Rồi video "16 năm" của {editor}. Rồi đèn hồng bật._
+_18:30. Quảng trường mới phía đông bắc. Một tiếng nữa là Đại Nhạc Hội Siêu Nhân. Sân khấu đã dựng xong, dàn đèn bạn trả 80 triệu đang thử màu. Trên nóc tòa LL bên kia đường, màn hình LED khổng lồ chiếu chữ "Hồng Ngoại"._
+_Bạn đứng sau rào chắn, máy tính bỏ túi trong tay, đếm hóa đơn của đêm nay lần cuối._
 { nguyen_theo_ll:
-    _Không có {sieu_nhan_hong}. {idol_het_thoi} cầm micro hát "Công Viên" cho 400 cái ghế. 60 người ngồi. Bạn đếm. Bạn không cần đếm cũng biết._
-    ~ follow(20000)
-    -> END
+    _Phòng chờ có đĩa bánh chuối chiên, đúng điều khoản số 4. Không ai ăn. Người cần ăn nó đang ở tòa nhà bên kia đường. Bạn vẫn ghi vào sổ: "Bánh chuối chiên: 1 đĩa. Đã chi."_
+- else:
+    _Sau cánh gà, {sieu_nhan_hong} vừa ăn bánh chuối chiên vừa khởi động. Thấy bạn, anh giơ ngón cái dính dầu._
 }
-_{sieu_nhan_hong} bước ra. Khán giả hét. Bạn mở điện thoại, đếm số người theo dõi như đếm tiền: {nguoi_theo_doi}…_
-~ follow(100000)
 { kt_hong_0_dong:
-    _Màn hình lớn chiếu lại những lần {sieu_nhan_hong} đi giúp người: đẩy xe, dắt bà cụ, gỡ diều. Không dàn dựng. Khán giả im lặng, rồi vỗ tay rất lâu._
-    ~ follow(60000)
+    _{hong_hot} chạy tới: "Chị ơi, đoạn 'Hồng 0 Đồng' em chèn vào màn hình lớn rồi nha. Toàn clip thật!" Bạn gật. Đoạn rẻ nhất của đêm nay._
 }
-{ tinh_than_cong_ty >= 60:
-    ~ follow(50000)
-}
-{ kt_duyet_gameshow:
-    ~ follow(20000)
-}
-* [🧮 Bấm máy tính theo từng con số nhảy.]
-    _Một nghìn. Hai nghìn. Bạn bấm "+" liên tục, như cộng sổ cuối năm._
+* [🧮 Cộng lại toàn bộ chi phí đêm nay một lần nữa.]
+    _Sân khấu, đèn, rào, bánh, nước. Khớp tới từng nghìn. Bạn gập sổ lại, thấy tay mình không run._
     ~ kt_ngu(5)
-* [📵 Cất điện thoại. Xem diễn.]
-    _Lần đầu tiên trong tháng, bạn nhìn {sieu_nhan_hong} mà không thấy con số. Chỉ thấy một người mặc đồ hồng đang rất cố gắng._
+* [📵 Cất điện thoại. Tối nay không đếm số người theo dõi.]
+    _Lần đầu tiên trong tháng, bạn quyết định nhìn {sieu_nhan_hong} mà không nhìn con số._
     ~ kt_ngu(-15)
-    ~ follow(10000)
-* [🙌 Đứng lên, hét theo đám đông.]
-    _{chi_dai} ở hàng đầu quay lại, thấy bạn đứng hét, há hốc miệng. Rồi hét to hơn._
+* [🦁 Đi tìm {chi_dai}, đứng cạnh bà ấy ở hàng đầu.]
+    _{chi_dai} đang hét vào bộ đàm. Thấy bạn, bà ấy dúi cho bạn một cây đèn phát sáng màu hồng._
     ~ kt_ngu(-10)
     ~ qh("chi_dai", 5)
-- _Đâu đó, trên điện thoại của ai đó, chung kết "Giọng Ca Ước Mơ" đang phát. Thí sinh trên sân khấu trông rất giống {thanh_xin_nghi}. Bạn nhớ đơn nghỉ phép "gặt lúa"._
+- _19:25. Đèn tắt dần. Bạn đứng ở chỗ khán giả đứng, sát sân khấu, cùng khoảng năm chục người. Bạn không cần đếm._
 -> END
 
 // ------------------------------------------------------------
 === ke_toan_3110_sang_cuoi_thang ===
-# ngay:31 # gio:08:00 # noi:nha_so_18
-_Sáng thứ 7, 31/10. Ngày cuối. Bạn thức dậy lúc 5 giờ, theo thói quen. Tủ lạnh vẫn dán tờ trang 47 chữ cỡ 20, nếu bạn đã dán._
+# ngay:30 # gio:21:00 # noi:nha_so_18 # bat_buoc
+_Tối thứ 6, 30/10. Họp xong. Nhà số 18. Tủ lạnh vẫn dán tờ trang 47 chữ cỡ 20, nếu bạn đã dán._
 { not kt_quy_den_nop:
     _Bạn mở két. {kt_quy_den} triệu. Mục tiêu 297._
 }
 * {not kt_quy_den_nop} [🗄️ Cất nốt lương tháng 10 của mình vào két.]
     ~ kt_cat_ket(12)
     ~ tien_cong(-12000000)
-    _Ghi sổ: "31/10. +12. Không mua gì cho mình tháng này. Không sao."_
-* [🛒 Đi chợ Phố Cũ với {chi_dai}, ăn xôi, không nghĩ gì.]
+    _Ghi sổ: "30/10. +12. Không mua gì cho mình tháng này. Không sao."_
+* [🐌 Đi ăn ốc khuya với {chi_dai}, không nghĩ gì.]
     ~ an(35)
     ~ kt_ngu(-10)
     ~ qh("chi_dai", 5)
-* [😴 Ngủ thêm 2 tiếng.]
+* [😴 Đi ngủ sớm. Mai là ngày dài nhất tháng.]
     ~ kt_ngu(-15)
     ~ nghi(30)
 - -> END

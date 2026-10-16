@@ -100,9 +100,9 @@ Tuấn không làm ra sản phẩm, nhưng Tuấn **quyết định con người
 
 ### Chương 2: "Tuyển Người Chăm Siêu Nhân" (5/10 – 12/10)
 - **5/10:** Thắng giao tuyển gấp "nhân viên chăm sóc Siêu Nhân Hồng". Minigame phỏng vấn kéo dài cả tuần.
-- **6/10:** buổi chụp poster, Nguyên bỏ ngang đi giúp một bà cụ. Vũ chạy tới phòng HR: *"Anh tuyển giùm em người nào giữ được ổng đi!"*
-- **9/10:** MV ra mắt, lương tuần. Sơn xin nghỉ "đi khám mắt chung với Lĩnh cho vui".
-- **10–12/10:** lương về trễ. Thắng ra chỉ thị: *"Em quản lý cảm xúc của anh em giúp anh."* Tuấn phải vào group Zalo-lô trấn an 21 người đang nổi điên. Mỗi tin nhắn Tuấn gửi lại khiến group nổi điên thêm, vì ai cũng tưởng HR vào để ghi tên.
+- **6/10:** buổi chụp poster, khoảng 10:30 Nguyên bỏ ngang để đẩy xe chè của Bà Bảy ra khỏi ổ gà. Vũ chạy tới phòng HR: *"Anh tuyển giùm em người nào giữ được ổng đi!"*
+- **9/10:** 19:30 cả công ty ở lại chờ MV "Hồng Hóa Việt Nam" lên sóng lúc 20:00; Tuấn quyết chuyện "share". Sơn xin nghỉ "đi khám mắt chung với Lĩnh cho vui".
+- **10–12/10:** lương về trễ, 10:00 thứ Hai mới về. 12:30 ở Sống Ảo, thẻ phụ của Long bị từ chối, Duy làm rơi thẻ kim cương. Thắng ra chỉ thị: *"Em quản lý cảm xúc của anh em giúp anh."* Tuấn phải vào group Zalo-lô trấn an 21 người đang nổi điên. Mỗi tin nhắn Tuấn gửi lại khiến group nổi điên thêm, vì ai cũng tưởng HR vào để ghi tên.
 
 ### Chương 3: "Bóng Tối Không Có Danh Sách" (13/10 – 16/10)
 - **14/10:** Sơn xin nghỉ "về quê phụ gặt lúa". Nhà Sơn ở Ven Đô, là vườn rau. Minigame "Thám Tử Đơn Nghỉ Phép".
@@ -110,26 +110,27 @@ Tuấn không làm ra sản phẩm, nhưng Tuấn **quyết định con người
 - **16/10:** Tuấn đi theo đoàn gameshow tới Đài Tivi Hóng (giữ "nhân viên chăm sóc" mới). Nếu Sơn xin nghỉ hôm đó, Tuấn có thể thấy một bóng người mặc đồ kim tuyến ở hành lang trường quay bên cạnh. Lựa chọn: đuổi theo, chụp hình, hay giả vờ không thấy. Tối về liên hoan buffet.
 
 ### Chương 4: "Vũng Tàu Đổ Bể" (17/10 – 20/10)
-- **17/10:** Tuấn là trưởng đoàn. Thương đã cắt ngân sách còn một nửa: xe khách thường, phòng hướng bãi xe. Minigame "Xếp Phòng Vũng Tàu". Nguyên tự đòi ngủ chung phòng với nhân viên mới "để gắn kết tập thể".
+- **17/10:** trước khi xe chạy, Thắng dúi cho Tuấn tập hồ sơ của mình. Trên xe Tuấn đọc **trang 2**: "Người cuối cùng: Tuấn". Tối đó Tuấn bỏ quên tập hồ sơ ở quán hải sản, Hương lật tới trang 2 (khớp với tuyến của Hương). Tuấn là trưởng đoàn. Thương đã cắt ngân sách còn một nửa: xe khách thường, phòng hướng bãi xe. Minigame "Xếp Phòng Vũng Tàu". Nguyên tự đòi ngủ chung phòng với nhân viên mới "để gắn kết tập thể".
 - Trò chơi tập thể bắt buộc: "Kéo co các phòng ban", "Truyền bánh chuối chiên bằng miệng" (Tuất thắng).
 - **Đêm lửa trại**, trò "nói thật": tới lượt Tuấn. Ai cũng chờ Tuấn nói về danh sách. Tuấn có thể nói về trà, nói về 11 người đã nghỉ sau khi uống trà, hoặc nói thật.
 - **18/10:** xe về tới thành phố, ai cũng giận ai. Tuấn bị cả xe đổ lỗi vì "ai xếp phòng vậy trời".
 - **19/10:** họp giao ban, không ai nhìn mặt ai. Tuấn đề xuất "buổi trà làm lành".
-- **20/10:** sinh nhật công ty + Ngày Phụ nữ. Tuấn tổ chức tặng quà cho các chị em. Drama ai tặng gì cho ai. Thư tay của Genta được Bác Bình đọc (hoặc không).
+- **20/10:** sinh nhật công ty + Ngày Phụ nữ. 9:00 Tuấn phát phong bì 2.100.000đ cho các chị em, Thắng tặng 7 khăn cam giống hệt nhau, Nhật tặng sổ ô li. 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G" (hoặc không). 21:00 karaoke Chú Sáu.
 
 ### Chương 5: "Danh Sách Rò Rỉ" (21/10 – 27/10)
 - **21/10 (Mốc 3, 500.000):** nếu trượt, Thắng gọi Tuấn lên: *"Thêm tên vào đi em."*
-- **22/10:** đoàn kiểm tra thuế yêu cầu xem toàn bộ hợp đồng lao động. Tuấn và Thương làm việc tới 21:00. Đêm đó, ngồi ăn mì ở phòng kế toán, Tuấn suýt kể về email "Thư mời làm việc".
-- **23/10:** sinh nhật Nguyên. Tuấn phụ trách an ninh sự kiện, tức là phụ trách giữ Tuất tránh xa cái bánh. (Không thành công.)
+- **22/10:** 9:00–16:00 đoàn kiểm tra thuế đòi bốn thứ (giấy tờ thành lập, hợp đồng BTT, nghiệm thu tháng 6, nguồn gốc 5 tỷ) và phần của HR: toàn bộ hợp đồng lao động. Tuấn và Thương làm việc tới 21:00. Đêm đó, ngồi ăn mì ở phòng kế toán, Tuấn suýt kể về email "Thư mời làm việc".
+- **23/10:** sinh nhật Nguyên, livestream 20:00 ở studio tầng 2. Tuấn phụ trách an ninh, tức là giữ Tuất tránh xa cái bánh. Nguyên tỏ tình Vũ, rồi bánh đổ (Tuất, hoặc Phát cố tình vấp).
 - **24/10:** "hội nghị hòa giải" của Hương. Hương hỏi thẳng trước mọi người: *"Ông có danh sách cắt giảm đúng hông?"* ⏱️
 - **26/10:** hạn chót 7 tên. Tin đồn cắt giảm lan khắp công ty. Nếu Độ Rò Rỉ cao, danh sách bị đăng lên Confession. Tuấn đi tìm kẻ làm rò rỉ: Hiếu, Ngân, hay "con rắn thứ hai".
-- Lên phòng Thắng nộp danh sách, Tuấn thấy **bản của Thắng có trang 2**. Tên mình ở cuối.
+- Lên phòng Thắng nộp danh sách, Tuấn đặt trang 2 lên bàn, đối chất với Thắng.
 - **27/10:** LL-Entertainment ra tay. Tuấn phải làm "phỏng vấn nghỉ việc" cho những ai đang muốn đi (Nhi, Thái, Quỳnh, tùy lượt chơi). Mỗi cuộc là một ấm trà.
 
 ### Chương 6: "Người Tắt Đèn" (28/10 – 31/10)
 - **28/10 (Mốc 4, 800.000).**
-- **29/10:** wifi sập, máy chấm công vân tay không đồng bộ. Tuấn chấm công bằng tay, bằng giấy, đứng ở cổng cạnh Bác Bình. Lần đầu tiên Tuấn đứng ở cổng cả ngày, và thấy những gì Bác Bình thấy mỗi ngày: ai tới sớm, ai về muộn, ai ở lại một mình làm việc tới khuya.
-- **30/10:** họp đánh giá. Tuấn là người đọc kết quả. Trong tay là tập hồ sơ hồng. Đọc, xé, hay đưa lại cho Thắng.
+- **29/10:** 9:00 wifi sập (có lại 22:47), máy chấm công vân tay không đồng bộ. Tuấn chấm công bằng tay, bằng giấy, đứng ở cổng cạnh Bác Bình. Lần đầu tiên Tuấn đứng ở cổng cả ngày, và thấy những gì Bác Bình thấy mỗi ngày: ai tới sớm, ai về muộn, ai ở lại một mình làm việc tới khuya.
+- **29/10, 17:02:** (tùy lượt) email "Em đồng ý về LL ạ" của Nhi lọt vào hộp thư toàn công ty.
+- **30/10:** 14:00 họp đánh giá. Tuấn là người đọc kết quả: ghế Phó Giám đốc để sau Đại Nhạc Hội, câu hỏi về lời hứa tăng lương 20%, gia hạn hợp đồng Phát, rồi danh sách. Trong tay là tập hồ sơ hồng. Đọc, xé, hay đưa lại cho Thắng.
 - **31/10:** Đại Nhạc Hội Siêu Nhân. Tuấn đứng ở cổng soát vé. Pha sẵn một bình trà lớn cho ai cần.
 
 ---
@@ -205,31 +206,33 @@ Tuấn không làm ra sản phẩm, nhưng Tuấn **quyết định con người
 
 ### Mẫu 6: Bức email chưa gửi (26/10, đêm)
 
-> *(Căn 604. Trên màn hình là bản nháp "Thư mời làm việc" gửi {ke_toan}. Bên cạnh là trang 2 bạn vừa chụp được trên bàn Thắng: "Người cuối cùng: Tuấn".)*
+> *(Căn 604. Trên màn hình là bản nháp "Thư mời làm việc" gửi {ke_toan}. Bên cạnh là trang 2 bạn đọc trên xe đi Vũng Tàu: "Người cuối cùng: Tuấn".)*
 >
 > 1. ☕ *Xóa email. Pha một ấm trà Zzz, đi ngủ.*
 >    - Độ Lắng Nghe giữ nguyên. Không có kế hoạch dự phòng
 > 2. 📨 *Bấm gửi.*
 >    - Sáng hôm sau, {ke_toan} gọi bạn ra pantry: "Ông muốn bỏ công ty?" Lựa chọn tiếp theo quyết định nhánh "Phòng Trà Nhân Sự". 🎲 Nếu {hong_hot} đứng gần đó, tin "Tuấn sắp bỏ công ty" lan ra trong 1 giờ
-> 3. 🔒 *Mở tập hồ sơ hồng, gạch hết 7 cái tên, chỉ ghi lại một tên: "Tuấn".* (Chỉ hiện nếu đã thấy trang 2 và Độ Lắng Nghe ≥ 60)
+> 3. 🔒 *Mở tập hồ sơ hồng, gạch hết 7 cái tên, chỉ ghi lại một tên: "Tuấn".* (Chỉ hiện nếu Độ Lắng Nghe ≥ 45)
 >    - Danh Sách Đen về 1. Mở nhánh "Người Tắt Đèn Tự Nguyện". Đêm đó bạn ngủ ngon nhất 7 năm
 
 ---
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `hr_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân** (23:30 ngày 31/10), khi `ket_thuc_su_nghiep` và `chung_cong_ty_song` đã được chốt. Họp đánh giá 30/10 (14:00) không chốt kết thúc.
+
+Thứ tự xét: Phòng Trà Nhân Sự → Xé Danh Sách → Trà Ngon Người Hiền → Rò Rỉ → Văn Phòng Trống → Người Tắt Đèn. Mặc định: công ty sống thì Xé Danh Sách, không thì Người Tắt Đèn.
+
+"Rò rỉ" ở đây nghĩa là: Độ Rò Rỉ từng chạm 100, hoặc còn ≥ 70 cuối tháng, hoặc ≥ 40 mà đã nói "Không có danh sách nào hết" ở hội nghị hòa giải.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🍵 **Trà Ngon Người Hiền** | Độ Đáng Sợ ≤ 20, Độ Lắng Nghe ≥ 70, ít nhất 5 người **tự lên** phòng HR uống trà mà không bị mời | Sáng 30/10, cửa phòng HR có một hàng người xếp hàng, không phải vì bị gọi, mà vì muốn uống trà. Thắng đề bạt bạn làm **Trưởng phòng Nhân sự**. Đại Nhạc Hội Siêu Nhân, bạn đứng ở cổng với bình trà lớn, ai đi qua cũng dừng lại xin một ly. Duy hỏi: "Dạ anh còn trà Zzz không ạ?" Bạn cười. Lần đầu tiên không ai sợ cái cười đó |
-| 2 | 😄 ✂️ **Xé Danh Sách** | Chiến dịch Siêu Nhân Hồng đạt 1 triệu người theo dõi, Danh Sách Đen ≤ 3 vào ngày 30/10, Độ Rò Rỉ chưa bao giờ đạt 100 | Đại Nhạc Hội Siêu Nhân, giữa lúc pháo giấy hồng rơi, bạn lấy tập hồ sơ hồng ra, xé làm đôi, làm tư, làm tám, rồi tung lên trời cùng pháo giấy. Không ai biết đó là gì. Chỉ có Hương nhìn thấy, gật đầu, giơ ngón cái. Thắng đứng cạnh, nói nhỏ: "Trang 2 anh xé từ hôm qua rồi." |
-| 3 | 😄 🔒 **Kết thúc bí mật: Phòng Trà Nhân Sự** | Đã gửi email "Thư mời làm việc", đã mở nhánh "Người Tắt Đèn Tự Nguyện", quan hệ với {ke_toan} ≥ 50, Độ Lắng Nghe ≥ 80 | Bất kể Đại Nhạc Hội Siêu Nhân ra sao, bạn nộp đơn nghỉ việc ngày 30/10 để không ai khác phải bị cắt. Ba tháng sau, ở Phố Cũ mở một quán nhỏ: **"Phòng Trà Nhân Sự"**. Kệ trà 40 loại, sắp theo bảng chữ cái. Thương ngồi quầy, sổ sách ghi từng đồng. Trên tường có tấm bảng: *"Ở đây, mời uống trà nghĩa là mời uống trà."* Khách đầu tiên là Sơn, mặc đồ kim tuyến, xin nghỉ… để tới uống trà |
-| 4 | 😢 💡 **Người Tắt Đèn** | Danh Sách Đen ≥ 7 vào 30/10, chiến dịch thất bại | Bạn mời từng người lên phòng uống trà. 7 người, 7 ấm trà, 7 lần "cảm ơn em đã đồng hành". Rồi Thắng đưa cho bạn trang 2. Tên bạn ở cuối. Tối đó, bạn là người cuối cùng trong tòa nhà. Bạn đi từng tầng tắt từng bóng đèn. Ở cổng, Bác Bình đưa cho bạn một ly trà đá, lần đầu tiên có người pha trà cho bạn |
-| 5 | 😢 📂 **Rò Rỉ** | Độ Rò Rỉ đạt 100 trước 30/10, và bạn đã chọn "Không có danh sách nào hết" ở hội nghị hòa giải | Ảnh chụp tập hồ sơ hồng lên trang Confession lúc 23:00. Sáng ra, cả công ty đứng chờ ở cửa phòng HR. Không ai cầm hồ sơ xin việc, ai cũng cầm đơn xin nghỉ. Thắng mời bạn lên phòng kính. Trên bàn có một ấm trà. *"Em rảnh không, ngồi xuống uống trà xíu."* Lần đầu tiên bạn hiểu cảm giác của 19 người kia |
-| 6 | 😢 🪑 **Văn Phòng Trống** | Độ Đáng Sợ đạt 100 bất kỳ lúc nào | Không cần danh sách nữa. Ai cũng sợ bạn tới mức tự nghỉ trước. Ngày 30/10, phòng làm việc tầng 1 chỉ còn ghế trống và máy tính tắt. Bạn ngồi một mình ở pantry với 40 cái ly, rót trà đủ 40 loại. Chỉ có {cho} chạy vào, ngửi từng ly, rồi nằm xuống cạnh chân bạn. Nó không sợ bạn. Nó chỉ không biết uống trà |
-
----
+| 1 | 😄 🔒 **Kết thúc bí mật: Phòng Trà Nhân Sự** | Đã gửi email "Thư mời làm việc", đã tự ghi tên mình vào danh sách (đêm 26/10, cần Độ Lắng Nghe ≥ 45), quan hệ với {ke_toan} ≥ 30, Độ Lắng Nghe ≥ 60 | 23:30, sau đêm diễn, bạn đặt đơn nghỉ việc lên đùi Thắng: đã đọc trang 2 từ 17/10. Ba tháng sau, quán **"Phòng Trà Nhân Sự"** ở Phố Cũ, Thương giữ sổ. Khách đầu tiên là Sơn, mặc đồ kim tuyến |
+| 2 | 😄 ✂️ **Xé Danh Sách** | Không rò rỉ, Danh Sách Đen ≤ 3, và công ty sống (`chung_cong_ty_song`) **hoặc** bạn đã xé tập hồ sơ ở họp 30/10 | Sau đêm diễn, bạn xé tập hồ sơ thành 16 mảnh, tung lên cùng pháo giấy. Siêu Sao Hạng A: con số vượt 1 triệu. Tháo Mũ / Meme Quốc Dân: Nguyên ký phụ lục gia hạn tới Tết. Công ty không sống: không ai bị đuổi trước ai. Thắng: "Trang 2 anh xóa từ hôm qua rồi." |
+| 3 | 😄 🍵 **Trà Ngon Người Hiền** | Không rò rỉ, Độ Đáng Sợ ≤ 80, Độ Lắng Nghe ≥ 70, ít nhất 4 người **tự lên** phòng HR uống trà | Sau đêm diễn, bình trà 20 lít ở cổng còn một phần ba, ai về cũng xin một ly. Công ty sống: Thắng đề bạt bạn làm **Trưởng phòng Nhân sự**. Công ty không sống: Thắng xin bạn pha thêm một ấm, ở bất cứ đâu |
+| 4 | 😢 📂 **Rò Rỉ** | Rò rỉ (xem trên) | Ảnh tập hồ sơ hồng lên trang Confession (hoặc được ghim lên đầu trang ngay đêm diễn). Thứ Hai, cả công ty xếp hàng trước phòng HR, ai cũng cầm đơn xin nghỉ. Thắng: *"Em rảnh không, ngồi xuống uống trà xíu."* |
+| 5 | 😢 🪑 **Văn Phòng Trống** | Độ Đáng Sợ từng chạm 100 và vẫn ≥ 95 cuối tháng | Không ai xin trà ở cổng. Thứ Hai có mười một tờ đơn dưới cửa phòng HR. Bạn ngồi một mình ở pantry với 40 ly trà. Chỉ có {cho} chạy vào |
+| 6 | 😢 💡 **Người Tắt Đèn** | Công ty không sống (Chìm Nghỉm, Bị Tẩy Chay, Bị Cướp Mất) | Thứ Hai 2/11, giấy đòi tiền tới. Bạn mời từng người uống trà và nói "cảm ơn em đã đồng hành". Người cuối là Thắng, bạn đặt trang 2 lên bàn. Tối đó bạn tắt từng bóng đèn. Bác Bình đưa bạn ly trà đá |
 
 ## 9. Thành tựu
 

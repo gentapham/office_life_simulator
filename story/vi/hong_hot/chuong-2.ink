@@ -30,7 +30,7 @@ _10 giờ 32._
 === hong_hot_0510_tien_tro ===
 # ngay:5 # gio:18:30 # noi:hem_69
 _Mùng 5. Bà Tư ngồi chặn đầu dãy, quạt nan, sổ thu tiền trên đùi._
-ba_tu: Nay mùng mấy rồi con? Mùng 5. Một triệu tám tiền trọ, cộng điện. Mà sao tháng này điện phòng con lên 600 nghìn vậy?
+ba_tu: Nay mùng mấy rồi con? Mùng 5. Hai triệu tư, gồm điện rồi đó. Mà phòng con xài điện như cái rạp hát, bà lỗ nha.
 _Ring light. Ba cái điện thoại sạc cả đêm. Đèn LED dán quanh tường._
 * [💸 Nộp đủ, cười trừ.]
     ~ tien_cong(-2400000)
@@ -40,7 +40,7 @@ _Ring light. Ba cái điện thoại sạc cả đêm. Đèn LED dán quanh tư�
     ~ tien_cong(-2400000)
     ~ hh_ke_tin()
     ba_tu: Năm tỷ? Vậy tháng sau bà tăng tiền trọ nha.
-    _Tin của bạn vừa tăng giá phòng trọ cả dãy A._
+    _Tin của bạn vừa tăng giá phòng trọ cả dãy A. Trên lầu, cửa sổ phòng 3 đang mở. Tiếng bút bi sột soạt ngừng một chút, rồi viết tiếp: "5 tỷ"._
 - -> END
 
 // ------------------------------------------------------------
@@ -65,22 +65,21 @@ _Bên kia vách, {ran_doc} gõ hai cái: "mượn mì gói"._
 // ------------------------------------------------------------
 === hong_hot_0610_clip_ba_cu ===
 # ngay:6 # gio:10:45 # noi:studio_tang_2 # bat_buoc
-_Buổi chụp poster đầu tiên. Đang chụp dở, {sieu_nhan_hong} thấy một bà cụ bị giật túi ở đầu đường, hét "Biến hình!" rồi chạy mất._
-_Năm phút sau, một người qua đường đăng clip: {sieu_nhan_hong} đỡ bà cụ, trả túi, cúi chào. Clip có 800 lượt xem._
+_Buổi chụp poster đầu tiên. 10 giờ 30, đang chụp dở, {sieu_nhan_hong} nhìn qua cửa sổ, thấy xe chè của Bà Bảy sụp bánh vào ổ gà trên Đường Hóng, ngay đầu Hẻm 69. Hét "Biến hình!" rồi chạy mất._
+_Mười lăm phút sau, một người qua đường đăng clip: {sieu_nhan_hong} đẩy xe chè ra khỏi ổ gà, rồi được bà mời ly chè đậu, ăn bằng ống hút luồn qua mũ. Cô bán chè đứng cạnh nhìn {sieu_nhan_hong} hơi lâu, như vừa nghe thấy một giọng quen. Clip có 800 lượt xem._
 dan_dau_tu: *(nghiêng màn hình về phía bạn)* {hong_hot}. Đừng đăng giờ này. Khung 19:47 tối nay tệp người xem rảnh nhất tuần. Tin anh, số liệu không nói dối. Coin thì có.
 * [📊 Nghe {dan_dau_tu}, chờ tới 19:47, viết caption "Một ngày Siêu Nhân Hồng bỏ việc".]
-    ~ hh_follow(120000)
+    ~ hh_follow(30000)
     ~ hh_tt(15)
     ~ qh("dan_dau_tu", 10)
     _19:47. Clip nổ. Lượt xem gấp mười hai lần MV sau này. Lần đầu tiên con số trên fanpage chạy nhanh hơn ngón tay bạn bấm._
 * [⚡ Đăng ngay lập tức, tốc độ là tất cả.]
-    ~ hh_follow(30000)
     ~ hh_tt(5)
     _Clip lên lúc 10:52, giữa giờ làm. Người ta xem, thả tim, rồi quay lại họp._
 * [🎞️ Gửi {editor} dựng lại cho "xịn" rồi mới đăng.]
     editor: *(ngáp)* Đợi render xong…
     _Render xong lúc 2 giờ sáng. Clip đẹp như phim. Nhưng có trang khác đã đăng bản gốc từ chiều._
-    ~ hh_follow(45000)
+    ~ hh_follow(10000)
     ~ qh("editor", 3)
 - giam_doc: *(lên tầng, mặt đỏ)* Bỏ ngang buổi chụp thế này à! Thuê studio cả buổi đấy!
 _Bạn chìa điện thoại cho sếp xem bình luận. Sếp đọc. Sếp im._
@@ -152,7 +151,7 @@ _Bạn để ý: Hoa Hướng Dương luôn online đúng 22:01. Một phút sau
     _Hoa Hướng Dương 1989: "Mình là… nhân viên mới ạ. Mình thích hoa hướng dương."_
     ~ hh_tin(1)
     _"Ạ". Trong group này không ai nói "ạ". Trừ {thuc_tap_sinh}, mà {thuc_tap_sinh} dùng tên thật._
-* {qh_it >= 40} [🔒 Nhắn {it}: "Anh {it}, coi giùm em cái tài khoản hoa này đăng nhập từ máy nào."]
+* {hh_kho_tin >= 4 || qh_it >= 20} [🔒 Nhắn {it}: "Anh {it}, coi giùm em cái tài khoản hoa này đăng nhập từ máy nào."]
     it: Lỗi người dùng.
     _1 phút sau._
     it: Máy phòng tầng 2. Vách kính.
@@ -165,23 +164,22 @@ _Bạn để ý: Hoa Hướng Dương luôn online đúng 22:01. Một phút sau
 // ------------------------------------------------------------
 === hong_hot_0910_mv_gio_vang ===
 # ngay:9 # gio:19:30 # noi:ban_mang_xa_hoi # bat_buoc
-_Ngày Trứng Thế giới, căn tin chỉ bán trứng. Và tối nay MV đầu tiên của {sieu_nhan_hong} ra mắt._
-_19:25, LL tung MV của nghệ sĩ bên họ, cùng giờ. Avatar xanh lá chuối tràn vào bình luận: "MV gì mà như quảng cáo bột giặt"._
-_Cuộc chiến giờ vàng._
-* [⏰ Lùi MV xuống 20:00, cho LL "hết hơi" trước.]
-    ~ hh_follow(40000)
+_Ngày Trứng Thế giới, căn tin chỉ bán trứng. Và 20:00 tối nay, MV "Hồng Hóa Việt Nam" ra mắt trên Tóp-tóp và Diu-túp của công ty._
+_19:25, LL tung MV của nghệ sĩ bên họ, sớm hơn đúng 35 phút. Avatar xanh lá chuối tràn vào trang công ty: "MV gì mà như quảng cáo bột giặt"._
+_Cuộc chiến giờ vàng. Giờ ra mắt đã chốt, không đổi được. Bạn chỉ chọn được nửa tiếng chờ._
+* [⏰ Đăng đồng hồ đếm ngược 30 phút, mỗi 5 phút hé một khung hình.]
+    ~ hh_follow(15000)
     ~ hh_tt(8)
     _20:00, khán giả xem xong MV bên kia, lướt xuống thấy MV hồng. Ai cũng tò mò so sánh. So sánh là tương tác._
-* [⚔️ Đăng đúng 19:30, đối đầu trực diện.]
+* [⚔️ Đăng ảnh chế "Hồng hay lá chuối?", rủ hai bên vào cãi nhau.]
     { RANDOM(1, 10) <= 5:
-        ~ hh_follow(50000)
-        _Ăn may. MV bên kia bị lỗi âm thanh. MV hồng thắng giờ vàng._
+        ~ hh_follow(20000)
+        _Ăn may. MV bên kia bị lỗi âm thanh. Bình chọn nghiêng về màu hồng._
     - else:
-        ~ hh_follow(25000)
-        _MV hồng chìm dưới MV bên kia hai tiếng đầu. Rồi mới ngoi lên._
+        ~ hh_follow(-10000)
+        _Fan bên kia đông hơn. Bài ảnh chế thành chỗ người ta chê MV hồng trước khi nó ra mắt._
     }
-* [💬 Đăng MV, rồi ngồi trực comment xóa tài khoản xanh lá chuối. (Minigame "Trực Comment")]
-    ~ hh_follow(40000)
+* [💬 20:00 MV lên, bạn ngồi trực comment xóa tài khoản xanh lá chuối. (Minigame "Trực Comment")]
     -> hong_hot_mg_truc_comment
 - ~ an(15)
 -> END
@@ -193,7 +191,7 @@ _23:10. Một tài khoản ẩn danh đăng trong nhóm fan: "Ra mắt HỒNG CO
 _{dan_dau_tu} nhắn bạn ngay: "{hong_hot}! Có coin mang tên idol mình! Mua đáy đi em! Lần này là lên thật!"_
 * [🧂 Chụp lại, đăng group "Hội Anti Sếp": "Nghe gì chưa, có coin của Siêu Nhân Hồng rồi!"]
     ~ hh_ke_tin()
-    _14 người mua thử. Trong đó có {con_ong_chau_cha} mua 50 triệu "cho vui"._
+    _14 người mua thử. Trong đó có {con_ong_chau_cha} mua một triệu "cho vui"._
 * [🚫 Báo cáo bài đăng: "Không phải của công ty".]
     ~ uy_tin = uy_tin + 3
     ~ hh_tt(2)
@@ -280,7 +278,7 @@ _{sieu_nhan_hong} gửi ảnh chụp ở một xóm có cây me to. Trong góc �
 // ------------------------------------------------------------
 === hong_hot_1210_47_confession ===
 # ngay:12 # gio:09:00 # noi:ban_mang_xa_hoi # bat_buoc
-_Thứ 2. Lương về trễ 2 ngày, sáng nay mới về. Trang Confession nhận 47 bài trong một buổi sáng._
+_Thứ 2. Lương trễ 2 ngày, ngân hàng báo 10 giờ sáng nay mới chuyển. Trang Confession nhận 47 bài trước cả khi lương về._
 _Bài hot nhất: "Lương về trễ, sếp đi đánh golf". Kèm ảnh sếp cầm gậy golf mới hôm 9/10._
 * [📮 Đăng bài "Lương về trễ, sếp đi đánh golf". Đăng ngay.]
     ~ hh_dang_bai_luong_tre = true
@@ -300,8 +298,8 @@ _Bài hot nhất: "Lương về trễ, sếp đi đánh golf". Kèm ảnh sếp 
 
 // ------------------------------------------------------------
 === hong_hot_1210_the_long ===
-# ngay:12 # gio:20:30 # noi:quan_oc_dem
-_Lương về. {con_ong_chau_cha} dẫn {thuc_tap_sinh}, {ran_doc} và bạn đi Quán Ốc Đêm, giành trả tiền như mọi lần._
+# ngay:12 # gio:12:30 # noi:ca_phe_song_ao
+_12 giờ 30. Lương về từ 10 giờ. {con_ong_chau_cha} dẫn {thuc_tap_sinh}, {ran_doc} và bạn ra Cà Phê Sống Ảo ăn trưa, giành trả tiền như mọi lần._
 _Máy quẹt thẻ kêu "tít" hai lần. "Thẻ bị từ chối"._
 _Cả bàn im lặng. {con_ong_chau_cha} quẹt lại. "Thẻ bị từ chối". Bạn đã kịp nhìn thấy._
 _{thuc_tap_sinh} lặng lẽ rút ví. Trong ví có một tấm thẻ màu kim cương lấp lánh. Anh ấy trả rất nhanh, như không muốn ai thấy._
@@ -310,7 +308,7 @@ _{thuc_tap_sinh} lặng lẽ rút ví. Trong ví có một tấm thẻ màu kim 
     ~ hh_ke_tin()
     ~ qh("con_ong_chau_cha", -15)
     _Trong 30 phút, 14 người biết. Sáng mai, cả công ty biết._
-* [🤐 Cất điện thoại, gắp ốc cho {con_ong_chau_cha}.]
+* [🤐 Cất điện thoại, đẩy ly cà phê muối của mình qua cho {con_ong_chau_cha}.]
     ~ hh_kin(10)
     ~ qh("con_ong_chau_cha", 10)
     con_ong_chau_cha: *(cười gượng)* Chắc… lỗi hệ thống. Chill.

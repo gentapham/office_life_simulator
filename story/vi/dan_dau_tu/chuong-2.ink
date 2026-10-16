@@ -12,7 +12,7 @@ _Bạn tháo chiếc đồng hồ trên tay. Quà sinh nhật 30 tuổi. Nó v�
 * {ddt_co_dong_ho} [💍 Cầm đồng hồ.]
     -> dan_dau_tu_mg_cam_do
 * [🚶 Đứng trước cửa tiệm 10 phút, rồi quay về.]
-    _Bạn đứng nhìn tủ kính. Trong đó có một cây đàn guitar, một cái máy ảnh, một chiếc nhẫn. Mỗi món là một câu chuyện "lần này là lên thật"._
+    _Bạn đứng nhìn tủ kính. Trong đó có một cây đàn ghi-ta, một cái máy ảnh, một chiếc nhẫn. Và một chiếc cúp mạ vàng khắc chữ "Ca sĩ triển vọng 2015", tên người nhận bị dán băng keo che mất một nửa. Mỗi món là một câu chuyện "lần này là lên thật"._
     _Bạn về nhà. Ăn mì gói. Tiền trọ vẫn nợ. Nhưng đồng hồ vẫn trên tay._
     ~ an(20)
     ~ cang_thang(5)
@@ -46,7 +46,7 @@ hong_hot: Anh {dan_dau_tu}! Tối nay MV ra mắt. Anh coi giùm tui khung giờ
 // ------------------------------------------------------------
 === dan_dau_tu_0910_mv_ra_mat ===
 # ngay:9 # gio:20:00 # noi:ban_so_lieu # bat_buoc
-_20:00. MV đầu tiên của {sieu_nhan_hong} ra mắt. Bạn ngồi trước hai màn hình. Màn hình trái: lượt xem MV, từng giây._
+_20:00. MV "Hồng Hóa Việt Nam" của {sieu_nhan_hong} lên kênh Tóp-tóp và Diu-túp của công ty. Bạn ngồi trước hai màn hình. Màn hình trái: lượt xem MV, từng giây._
 _2.000. 5.000. 12.000. Con số nhảy đều đặn như nhịp tim._
 _Bạn để ý một chuyện: video hậu trường {sieu_nhan_hong} cúi xuống buộc dây giày cho một em nhỏ ở trường quay có tỷ lệ xem hết cao hơn chính MV._
 * [📊 Ghi chú, gửi cho {quan_ly_idol}: "Cắt clip buộc dây giày, đăng riêng."]
@@ -91,7 +91,8 @@ _Người tạo coin: ẩn danh. Ví của người tạo: đang giữ 70% tổn
     _Ngủ được 3 tiếng. Ít, nhưng là 3 tiếng không có nến._
     ~ ddt_so_lan_tat_app = ddt_so_lan_tat_app + 1
     ~ ddt_dc(3)
-- -> END
+- _Gần nửa đêm, group công ty có thêm một tin của {chi_dai}: "Không ai được rủ thằng {thuc_tap_sinh} mua coin. Đứa nào rủ, gặp chị." Rồi một tin nhắn riêng, gửi cho bạn: "Anh nợ ai thì trả bác {bac_bao_ve} trước. Bác 50 tuổi rồi đó anh."_
+-> END
 
 // ------------------------------------------------------------
 === dan_dau_tu_1010_giay_nhac_no ===
@@ -100,7 +101,7 @@ _Ngày 10. Lẽ ra lương về. Nhưng là thứ 7, ngân hàng giữ lệnh. G
 _Bạn về tới gác lửng thì thấy {sales} đang đứng trước cửa, tay cầm cuộn băng keo và tờ giấy thứ 7._
 sales: Anh {dan_dau_tu}! Tờ thứ 7! Em làm thành bộ sưu tập rồi đó. Tin em đi, dán đủ 10 tờ là em đóng khung!
 * [😇 "Lương chưa về em. Thứ 2 anh trả em trước."]
-    sales: Thứ 2 nha. Em ghi âm câu này rồi đó. No cap.
+    sales: Thứ 2 nha. Em ghi âm câu này rồi đó. Tin em đi, em mở lại cho anh nghe.
     ~ qh("sales", 3)
 * [🏃 Quay xe, chạy lên công ty ngủ ở sân thượng.]
     _Đêm đó bạn nằm trên ghế nhựa sân thượng công ty, đắp áo khoác, nhìn sao. Sao không có nến đỏ. Đẹp._
@@ -152,8 +153,8 @@ con_ong_chau_cha: Ủa anh {dan_dau_tu}, cái Hồng Coin là gì vậy? {hong_h
 
 // ------------------------------------------------------------
 === dan_dau_tu_1210_luong_ve ===
-# ngay:12 # gio:10:15 # noi:ban_so_lieu # bat_buoc
-_Thứ 2. "Ting." Lương về, trễ 2 ngày. Cả công ty thở ra cùng lúc._
+# ngay:12 # gio:10:00 # noi:ban_so_lieu # bat_buoc
+_Thứ 2, 10 giờ. "Ting." Lương về, trễ 2 ngày. Cả công ty thở ra cùng lúc._
 _Trong 3 giây, bạn nhận được 4 tin nhắn: {sales} gửi một sticker con mèo cầm dao. {it} gửi: "Restart cái ví chưa anh?". Bác {bac_bao_ve} không gửi gì. Bà Tư gửi: "Nay mùng mấy rồi con?"._
 _Màn hình phải: $HONG đang xanh nhẹ._
 * [📒 Trả nợ. Bác {bac_bao_ve} trước tiên, rồi tiền trọ, rồi {sales}.]

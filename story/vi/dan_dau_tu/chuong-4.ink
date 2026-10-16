@@ -61,8 +61,8 @@ _15 giờ. Clip gameshow hôm qua viral. Điện thoại bạn rung liên tục.
 
 // ------------------------------------------------------------
 === dan_dau_tu_1710_hai_san ===
-# ngay:17 # gio:19:00 # noi:vung_tau_nha_hang # bat_buoc
-_Nhà hàng hải sản Sóng Vỗ. Cả đoàn ngồi kín ba bàn. Không ai nói ra, nhưng ai cũng nhìn về phía bạn._
+# ngay:17 # gio:18:30 # noi:vung_tau_nha_hang # bat_buoc
+_18 giờ 30. Nhà hàng hải sản Sóng Vỗ. Cả đoàn ngồi kín ba bàn. Không ai nói ra, nhưng ai cũng nhìn về phía bạn._
 hong_hot: Anh {dan_dau_tu} ơi, ngày Xóa nghèo mà! Anh tuyên bố thoát nghèo rồi mà!
 sales: Tin em đi, bao một bữa là lấy lại uy tín cả năm!
 _Không biết bằng cách nào, bạn đã đứng dậy, giơ tay gọi phục vụ._
@@ -78,6 +78,7 @@ _Không biết bằng cách nào, bạn đã đứng dậy, giơ tay gọi phụ
     ~ an(90)
     ~ ddt_qh_chu_no(3)
 - ~ ddt_tinh_tong()
+_Ly thứ năm, {giam_doc} đứng lên ghế: "Các em! Anh hứa! Tăng lương cả công ty!" {hong_hot} đã bấm quay từ chữ "Các em". Ở bàn bên, {sales} say, hứa mời "ca sĩ nổi tiếng nhất nước"._
 _Tới lúc tính tiền. Bạn bấm "Rút tiền" trên sàn. Màn hình hiện: "Hệ thống rút tiền đang bảo trì. Vui lòng thử lại sau 72 giờ."_
 _Bạn ký nợ nhà hàng. Chủ quán nhìn chữ ký của bạn như nhìn một tờ vé số đã xổ._
 _Bạn đứng trước mặt cả đoàn, nói to:_
@@ -105,9 +106,9 @@ _Cả đoàn vỗ tay. Trong túi áo, hóa đơn nhà hàng nặng như một c
 
 // ------------------------------------------------------------
 === dan_dau_tu_1710_lua_trai ===
-# ngay:17 # gio:21:30 # noi:vung_tau_bai_bien
-_Đêm lửa trại. {idol_het_thoi} hát. {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứa trẻ trong nhà kho, giọng nhỏ, không giống giọng siêu nhân._
-_{giam_doc} say, đứng lên ghế: "Anh hứa! Tăng lương cả công ty!" Ai đó đang quay clip._
+# ngay:17 # gio:20:00 # noi:vung_tau_bai_bien
+_20 giờ. Đêm lửa trại. {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứa trẻ trong nhà kho, giọng nhỏ, không giống giọng siêu nhân._
+_Clip {giam_doc} hứa tăng lương lúc ăn hải sản đã chạy vòng vòng trong group. {giam_doc} ngồi cuối vòng lửa, giả vờ không biết._
 _Bạn ngồi xa đống lửa một chút. Trên điện thoại, livestream của {hong_hot} đang có 1.200 người xem. Đường lượt xem dựng lên mỗi khi {sieu_nhan_hong} nói chuyện thật lòng._
 * [📊 Ghi nhận: "Lúc nói thật, người xem ở lại."]
     _Bạn ghi vào điện thoại, ngay dưới ghi chú "ĐỔI HƯỚNG". Bằng chứng thứ hai._
@@ -127,17 +128,17 @@ _Bạn ngồi xa đống lửa một chút. Trên điện thoại, livestream c�
 
 // ------------------------------------------------------------
 === dan_dau_tu_1810_coin_sap ===
-# ngay:18 # gio:10:30 # noi:xe_ve_thanh_pho # bat_buoc
+# ngay:18 # gio:12:30 # noi:xe_ve_thanh_pho # bat_buoc
 { ddt_nguyen_quang_ba_coin:
     _Trước cả tin coin sập, clip {sieu_nhan_hong} nói "Mua Hồng Coin đi" đã bị cắt ra, lan khắp mạng với tiêu đề: "Siêu Nhân Hồng lùa gà?"._
     _{quan_ly_idol} gọi cho bạn 6 cuộc. Bạn không dám nghe cuộc nào._
     ~ scandal()
-    ~ follow(-120000)
+    ~ follow(-100000)
     ~ qh("quan_ly_idol", -20)
     ~ qh("sieu_nhan_hong", -15)
 }
 { not ddt_mua_hong:
-    _10:15. Người tạo Hồng Coin ôm tiền biến mất. $HONG về 0 trong 15 phút. Trên xe về, {hong_hot} đọc tin to: "Ai mua coin là còn cái nịt!"_
+    _10:15 sáng nay, người tạo Hồng Coin ôm tiền biến mất. $HONG về 0 trong 15 phút. Trên xe về, {hong_hot} đọc lại tin to: "Ai mua coin là còn cái nịt!"_
     _Bạn không có đồng nào. Bạn nhìn ra cửa sổ, thở ra một hơi rất dài. Như người đứng nhìn cây cầu sập ngay sau khi mình đi qua._
     { ddt_canh_bao_coin:
         quan_ly_idol: *(quay xuống)* {dan_dau_tu}. Hồi đó ông nhắn group, may mà không ai trong công ty mua. Cảm ơn ông.
@@ -147,11 +148,11 @@ _Bạn ngồi xa đống lửa một chút. Trên điện thoại, livestream c�
     -> END
 }
 { ddt_ban_hong_17:
-    _10:15. $HONG về 0 trong 15 phút. Người tạo coin ôm tiền biến mất. Bạn đã bán đêm qua. Không lời, không lỗ. Chỉ còn tờ hóa đơn nhà hàng._
+    _10:15 sáng nay, $HONG về 0 trong 15 phút. Người tạo coin ôm tiền biến mất. Bạn đã bán đêm qua. Không lời, không lỗ. Chỉ còn tờ hóa đơn nhà hàng._
     ~ ddt_nt(-10)
     -> END
 }
-_10:15. Trên xe về. Điện thoại bạn rung một lần, rồi im._
+_10:15 sáng nay, điện thoại bạn rung một lần, rồi im. Giờ trên xe về, bạn vẫn chưa dám mở lại._
 _$HONG: −99%. Người tạo coin ôm tiền biến mất. Còn cái nịt._
 ~ ddt_tai_khoan = ddt_tai_khoan - ddt_hong
 ~ ddt_hong = 0
@@ -247,22 +248,28 @@ _Ngày Phụ nữ Việt Nam. Bàn nào cũng có hoa. Bạn không còn tiền 
 - -> END
 
 // ------------------------------------------------------------
-=== dan_dau_tu_2010_thu_g ===
+=== dan_dau_tu_2010_bieu_do_16_nam ===
 # ngay:20 # gio:10:00 # noi:sanh_tang_tret # bat_buoc
-_Lễ sinh nhật 16 tuổi của {cong_ty}. Bạn chiếu biểu đồ "16 năm" lên màn hình lớn._
+_Lễ sinh nhật 16 tuổi của {cong_ty}. Bạn chiếu biểu đồ "16 năm" lên màn hình lớn ở sảnh._
 { ddt_man_hinh_trai > ddt_man_hinh_phai:
     _Biểu đồ thật: núi năm 2015, rồi dốc xuống, rồi một cột nhỏ nhô lên tháng 10/2026. Cả sảnh im lặng nhìn. {idol_het_thoi} đứng nhìn cái núi năm 2015 rất lâu._
     ~ qh("idol_het_thoi", 5)
 - else:
     _Biểu đồ đi lên đều 16 năm. Cả sảnh vỗ tay. {ke_toan} không vỗ._
 }
-_Rồi Bác {bac_bao_ve} bước lên bục, cầm một lá thư tay ký chữ "G" vừa tới sáng nay. Bác nhìn micro, rồi đọc._
-bac_bao_ve: "Gửi anh {bac_bao_ve} và các cháu. Mười sáu năm rồi. Cố lên."
+_Ở cổng, Bác {bac_bao_ve} ngồi trong chòi, tay đặt trên túi áo. Sáng nay bác nhận một lá thư ký chữ "G". Bác chưa đọc cho ai nghe._
+-> END
+
+// ------------------------------------------------------------
+=== dan_dau_tu_2010_quan_oc ===
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18 giờ 30. Quán Ốc Đêm. Cả công ty ngồi kín bốn bàn nhựa. Bác {bac_bao_ve} đứng dậy, gõ đũa vào ly trà, mở lá thư._
+bac_bao_ve: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
 _Ngắn vậy thôi. {giam_doc} cúi mặt. Bạn nghĩ tới 2.000.000đ, và người đàn ông 50 tuổi chưa bao giờ nhắc tới nó._
-* { ddt_no_binh > 0 } [💸 Sau buổi lễ, đi thẳng ra chòi.]
+* { ddt_no_binh > 0 } [💸 Đợi bác ngồi xuống, đặt phong bì cạnh ly trà của bác.]
     { tien >= ddt_no_binh:
         ~ ddt_tra("bac_bao_ve", ddt_no_binh)
-        _Bạn đặt phong bì lên bàn trà. Bác nhìn phong bì, rồi nhìn bạn._
+        _Bác nhìn phong bì, rồi nhìn bạn._
         bac_bao_ve: Cậu trả hết rồi à? … Ừ. Hôm nay là ngày đẹp để trả.
         ~ qh("bac_bao_ve", 20)
     - else:
@@ -271,14 +278,15 @@ _Ngắn vậy thôi. {giam_doc} cúi mặt. Bạn nghĩ tới 2.000.000đ, và n
         bac_bao_ve: Từ từ. Không vội.
         ~ qh("bac_bao_ve", 10)
     }
-* [😶 Đứng nghe, rồi quay về bàn.]
+* [😶 Ngồi im, bóc ốc.]
     ~ cang_thang(5)
-- -> END
+- ~ an(40)
+-> END
 
 // ------------------------------------------------------------
 === dan_dau_tu_2010_karaoke ===
-# ngay:20 # gio:21:30 # noi:karaoke_hat_cho_nhau_nghe
-_Quán ốc xong, cả công ty kéo qua Karaoke Hát Cho Nhau Nghe. {giam_doc} say, đứng lên ghế, cầm micro._
+# ngay:20 # gio:21:00 # noi:karaoke
+_21 giờ. Quán ốc xong, cả công ty kéo qua Karaoke Chú Sáu. {giam_doc} say, đứng lên ghế, cầm micro._
 giam_doc: Anh tuyên bố! Nếu Siêu Nhân Hồng đạt một triệu, cả công ty tăng lương 20%! Anh không ép, tùy… tùy anh!
 _Cả phòng gào lên. {ke_toan} ôm đầu. Bạn là người duy nhất trong phòng tính nhẩm nhanh hơn tiếng nhạc._
 * [🧮 Ghé tai {ke_toan}: "20% lương, mỗi tháng thêm hơn 60 triệu. Thưởng 5 tỷ gánh được 6 năm."]

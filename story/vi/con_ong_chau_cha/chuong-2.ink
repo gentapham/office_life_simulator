@@ -65,7 +65,7 @@ designer: Không có đèn này thì hình ra như chụp trong hầm.
 // ------------------------------------------------------------
 === con_ong_chau_cha_0610_quan_voi_duy ===
 # ngay:6 # gio:11:00 # noi:quan_ca_phe_song_ao # bat_buoc
-_Đang chụp thì {sieu_nhan_hong} bỏ đi giúp một bà cụ (điều khoản số 3). Cả đoàn nghỉ. Bạn ra quán Sống Ảo. {thuc_tap_sinh} lẽo đẽo theo sau, mặc đúng bộ đồ của bạn hôm thứ Năm._
+_10 giờ 30, đang chụp thì {sieu_nhan_hong} nhìn qua cửa sổ, hét "Biến hình!" rồi chạy xuống Đường Hóng: xe chè của Bà Bảy sụp bánh vào ổ gà ở đầu Hẻm 69 (điều khoản số 3). Cả đoàn nghỉ. Bạn ra quán Sống Ảo. {thuc_tap_sinh} lẽo đẽo theo sau, mặc đúng bộ đồ của bạn hôm thứ Năm._
 thuc_tap_sinh: Dạ… em ngồi đây được hông anh {con_ong_chau_cha}?
 * [🤝 "Ngồi đi. Uống gì? Tui mời."]
     thuc_tap_sinh: Dạ… dạ nước lọc thôi ạ.
@@ -76,7 +76,7 @@ thuc_tap_sinh: Dạ… em ngồi đây được hông anh {con_ong_chau_cha}?
     ~ follow(3000)
     _Story của bạn có góc áo của {thuc_tap_sinh}. Bình luận: "Hai anh mặc đồ đôi hả?"_
     ~ qh("thuc_tap_sinh", 2)
-- _Im lặng một lúc. Ngoài kia, clip {sieu_nhan_hong} nhặt cam cho bà cụ bắt đầu lan trên Tóp-tóp._
+- _Im lặng một lúc. Trên Tóp-tóp, clip {sieu_nhan_hong} đẩy xe chè ra khỏi ổ gà, rồi ăn chè bằng ống hút luồn qua mũ, bắt đầu lan._
 * [👂 "Anh {thuc_tap_sinh}, trước khi đi thực tập anh làm gì vậy?"]
     thuc_tap_sinh: Dạ… làm văn phòng thôi ạ. *(nhìn xuống ly)* Ngồi văn phòng cao lắm anh. Cao mà… lạnh.
     _Bạn nhớ tới tầng 30. Cao, mà lạnh. Bạn không nói gì. Bạn chỉ nhớ câu đó._
@@ -136,7 +136,7 @@ _Chị chủ tiệm móng dài lấp lánh, ngồi nghe {hong_hot} và {sales} b
 // ------------------------------------------------------------
 === con_ong_chau_cha_0910_ra_mat_mv ===
 # ngay:9 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
-_Ra mắt MV đầu tiên của Siêu Nhân Hồng. Căn tin chỉ bán trứng (Ngày Trứng Thế giới), nên ai cũng ngồi xem MV với một quả trứng luộc trên tay._
+_Chiếu thử nội bộ MV "Hồng Hóa Việt Nam", 20 giờ tối nay mới lên Tóp-tóp và Diu-túp. Căn tin chỉ bán trứng (Ngày Trứng Thế giới), nên ai cũng ngồi xem MV với một quả trứng luộc trên tay._
 _MV chạy. Hình đẹp, nhịp nhanh, hồng rực. Nhưng nhạc… nhạc như nhạc chờ điện thoại._
 giam_doc: Đỉnh! Ai làm cái này?
 _Mọi người nhìn {truong_phong}. Ở hàng ghế cuối, {editor} lặng lẽ bóc vỏ trứng rất chậm._
@@ -154,33 +154,25 @@ _Mọi người nhìn {truong_phong}. Ở hàng ghế cuối, {editor} lặng l�
 - -> END
 
 // ------------------------------------------------------------
-=== con_ong_chau_cha_0910_trung ===
-# ngay:9 # gio:12:10 # noi:can_tin
-_Trưa. Căn tin: "HÔM NAY CHỈ CÓ TRỨNG". Trứng luộc, trứng chiên, trứng hấp, trứng… trứng._
-* [🛒 "Ủa sao hông gọi đồ ngoài?" Đặt pizza cho cả bàn.]
-    { long_quet(600000):
-        _Pizza tới. Cả bàn reo hò. {chi_dai} lắc đầu: "Ngày Trứng mà, ăn trứng là văn hóa."_
-        ~ an(40)
-        ~ long_od(2)
-    - else:
-        _Thẻ báo lỗi. Bạn ăn trứng._
-        ~ an(30)
-    }
-* [🍳 Ăn trứng chiên với {thuc_tap_sinh} và {chi_dai}.]
-    chi_dai: Thấy chưa, trứng ngon mà. Ăn đi, người gì gầy nhom.
-    ~ an(35)
-    ~ qh("chi_dai", 5)
-    ~ long_tl(1)
-* [👂 Ngồi gần bàn cô chú căn tin, nghe họ kể chuyện tiền chợ.]
-    _"Trứng lên giá 500 đồng một quả rồi", cô bán căn tin nói. Bạn chưa bao giờ biết trứng giá bao nhiêu._
-    ~ long_bh(4)
-    ~ an(30)
+=== con_ong_chau_cha_0910_kiem_tra_khoa ===
+# ngay:9 # gio:16:00 # noi:phong_pho_phong_marketing
+_Thứ Sáu, hết tuần học "Khóa Quản Lý Có Tâm". {thanh_ninh} đặt lên bàn bạn một tờ bài kiểm tra 20 câu, kèm lời nhắn của chú: "Làm thật nhé. Anh không ép, tùy cháu."_
+* [📝 Làm bài thật.]
+    -> con_ong_chau_cha_mg_khoa_quan_ly
+* [🙏 Nhờ {thuc_tap_sinh} làm giùm.]
+    thuc_tap_sinh: Dạ… em làm giùm anh được ạ. Mà em làm đúng hết thì chú anh biết liền á anh.
+    _{thuc_tap_sinh} khoanh 20 câu trong 4 phút, không cần đọc đề. Bạn cầm tờ giấy, thấy nó nặng hơn bình thường._
+    ~ long_od(3)
+    ~ long_tl(-4)
+* [🗑️ Úp tờ giấy xuống. Về phòng thu.]
+    ~ long_bh(3)
+    ~ long_tl(2)
 - -> END
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_0910_ban_1 ===
 # ngay:9 # gio:23:50 # noi:sky_ao_tang_30
-_Gần nửa đêm. Phòng thu tầng 30. Bạn bật lại nhạc MV, nghe ba lần, lắc đầu._
+_Gần nửa đêm. MV đã lên sóng từ 20 giờ. Phòng thu tầng 30. Bạn bật lại nhạc MV, nghe ba lần, lắc đầu._
 _Bạn mở file mới. Đặt tên: "Hồng Là Thái Độ – bản 1"._
 _Điện thoại rung. {dan_dau_tu} nhắn group: "Hồng Coin vừa ra đời! Fan nào đó tạo! Ai vô hông?"_
 * [🎹 Tắt điện thoại, làm nhạc.]
@@ -245,7 +237,7 @@ _Cả phòng quay sang. Bạn chưa bao giờ phải lo lương. Bạn có thẻ
     ~ long_tl(3)
     ~ qh("chua_te_deadline", 3)
     ~ qh("truong_phong", 3)
-* [😎 "Chill đi, chiều nay về à."]
+* [😎 "Chill đi, chút nữa về à."]
     designer: Ông chill vì ông có thẻ. Tui chill bằng gì?
     _Câu đó làm bạn khựng lại. Không ai cười._
     ~ qh("designer", -5)
@@ -254,15 +246,15 @@ _Cả phòng quay sang. Bạn chưa bao giờ phải lo lương. Bạn có thẻ
 
 // ------------------------------------------------------------
 === con_ong_chau_cha_1210_the_bi_tu_choi ===
-# ngay:12 # gio:19:30 # noi:quan_ca_phe_song_ao # bat_buoc
+# ngay:12 # gio:12:30 # noi:quan_ca_phe_song_ao # bat_buoc
 ~ long_the_phu = 0
-_Tối. Lương vừa về. Bạn dẫn {thuc_tap_sinh}, {ran_doc}, {hong_hot} đi quán Sống Ảo ăn mừng, giành trả tiền như mọi lần._
+_12 giờ 30. Lương vừa về lúc 10 giờ. Bạn dẫn {thuc_tap_sinh}, {ran_doc}, {hong_hot} ra Cà Phê Sống Ảo ăn trưa mừng lương, giành trả tiền như mọi lần._
 thu_ngan_song_ao: Dạ anh ơi, thẻ của anh bị từ chối rồi ạ. Anh có thẻ khác hông?
 _{hong_hot}, {ran_doc} và {thuc_tap_sinh} đang ngồi chờ. Phía sau có 6 người xếp hàng._ # hen_gio:6
 * [☂️ "Để anh gọi chú anh."]
     ~ long_goi_chu()
     ~ long_od(-15)
-    _Chú không bắt máy. Lần đầu tiên chú không bắt máy hai lần trong một ngày. {hong_hot} đã kịp chụp màn hình "Cuộc gọi nhỡ: Chú Thắng"._
+    _Chú không bắt máy. Lần đầu tiên chú không bắt máy hai lần trong một ngày. {hong_hot} đã kịp chụp màn hình "Cuộc gọi nhỡ: Chú {giam_doc}"._
     ~ long_so_nguoi_thay_the_tu_choi = long_so_nguoi_thay_the_tu_choi + 3
 * {tien >= 420000} [💵 Rút ví, trả bằng lương của chính mình.]
     ~ tien_cong(-420000)
@@ -281,7 +273,7 @@ _{hong_hot}, {ran_doc} và {thuc_tap_sinh} đang ngồi chờ. Phía sau có 6 n
     ~ qh("hong_hot", 3)
     ~ long_so_nguoi_thay_the_tu_choi = long_so_nguoi_thay_the_tu_choi + 3
 - ~ long_the_bi_tu_choi = true
-_Trên đường về, không ai nói gì nhiều. {thuc_tap_sinh} đi sát bên bạn, như sợ bạn ngã._
+_Trên đường về công ty, không ai nói gì nhiều. {thuc_tap_sinh} đi sát bên bạn, như sợ bạn ngã._
 -> END
 
 // ------------------------------------------------------------

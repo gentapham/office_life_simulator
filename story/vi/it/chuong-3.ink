@@ -43,7 +43,7 @@ _Chữ ký của "Mr. Kevin Trộn" có thuộc tính file: "Tạo bởi máy QU
 === it_1410_giong_ca_uoc_mo ===
 # ngay:14 # gio:20:15 # noi:phong_server
 _Mốc 2: 200.000 người theo dõi. Bạn ngồi trong phòng server, ăn mì, mở cái TV cũ lên cho đỡ buồn._
-_Đài Tivi Hóng đang phát vòng 2 "Giọng Ca Ước Mơ". Thí sinh số 14 bước ra, bộ đồ kim tuyến lấp lánh._
+_Đài Tivi Hóng đang phát vòng 2 "Giọng Ca Ước Mơ". Thí sinh số 27 bước ra, bộ đồ kim tuyến lấp lánh._
 _Đó là {thanh_xin_nghi}. Người sáng nay xin nghỉ "về quê phụ gặt lúa"._
 { nguoi_theo_doi < 200000:
     _Điện thoại bạn rung: tin nhắn của {hong_hot}: "Mình trượt mốc 2 rồi. Siêu Nhân Hồng buồn, bỏ đi giúp người cả ngày. Ét o ét."_
@@ -61,7 +61,7 @@ _Điện thoại rung lần nữa. {hr}: "Anh {it} ơi, anh check giúp em hôm 
     ~ qh("hr", 10)
     ~ qh("thanh_xin_nghi", -30)
     ~ it_lt(-5)
-* [📱 Bình chọn cho thí sinh số 14. Rồi không trả lời {hr}.]
+* [📱 Bình chọn cho thí sinh số 27. Rồi không trả lời {hr}.]
     _Bạn nhắn tin bình chọn 5 lần. Mỗi lần 1.000đ. Đây là khoản đầu tư duy nhất của bạn trong năm._
     ~ tien_cong(-5000)
     ~ qh("thanh_xin_nghi", 5)
@@ -188,10 +188,10 @@ _{idol_het_thoi} bắt đầu hát "Công Viên". Không phải giọng sân kh�
 
 // ------------------------------------------------------------
 === it_1610_tai_nghe_hong ===
-# ngay:16 # gio:07:30 # noi:dai_tivi_hong
+# ngay:16 # gio:13:00 # noi:dai_tivi_hong
 _Đài Tivi Hóng, phòng kỹ thuật. Đài có đủ thiết bị. Chỉ thiếu một thứ: tai nghe in-ear màu hồng. {sieu_nhan_hong} nhất quyết không đeo tai nghe đen._
 sieu_nhan_hong: Ông {it} ơi, tai nghe đen nó không hợp thái độ. Hồng không phải màu, hồng là thái độ mà!
-quan_ly_idol: Khoan, anh nghe máy chút… Ừ… Ừ… {it}, em xử lý giùm anh, 9 giờ là lên sóng rồi.
+quan_ly_idol: Khoan, anh nghe máy chút… Ừ… Ừ… {it}, em xử lý giùm anh, 2 giờ là quay rồi.
 * [💅 Mượn lọ sơn móng tay hồng của {hong_hot}, sơn lên tai nghe.]
     hong_hot: Màu "Hồng Drama" đó nha anh. Trả lại tui nguyên lọ!
     _Bạn sơn hai lớp, thổi khô bằng máy sấy của phòng hóa trang. Tai nghe giờ hồng chói lóa._
@@ -213,8 +213,8 @@ quan_ly_idol: Khoan, anh nghe máy chút… Ừ… Ừ… {it}, em xử lý giù
 
 // ------------------------------------------------------------
 === it_1610_hit_mot_thoi ===
-# ngay:16 # gio:09:40 # noi:dai_tivi_hong # bat_buoc
-_Gameshow "Hồng Hay Không Hồng" đang phát trực tiếp. Phần "Hit Một Thời". Ban nhạc chơi "Công Viên". {sieu_nhan_hong} cầm micro, tự tin bước ra._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14:00. Gameshow "Hồng Hay Không Hồng" bắt đầu quay, 20:00 tối nay phát sóng. Phần "Hit Một Thời". Ban nhạc chơi "Công Viên". {sieu_nhan_hong} cầm micro, tự tin bước ra._
 sieu_nhan_hong: Ngày xưa có đôi bạn thân, bán… *(ngập ngừng)* …bán khoai chiên tại công viên…
 _Khán giả cười. MC Đài Tivi Hóng nhướng mày. Ở cánh gà, {idol_het_thoi} đứng nhìn, mặt đanh lại._
 _Bạn ngồi sau bàn kỹ thuật phụ, tay đặt trên kênh tai nghe của {sieu_nhan_hong} và kênh micro dự phòng ở cánh gà._
@@ -226,7 +226,7 @@ _Bạn ngồi sau bàn kỹ thuật phụ, tay đặt trên kênh tai nghe của
 * [🎤 Mở micro dự phòng ở cánh gà, chỗ {idol_het_thoi} đang đứng.]
     _Đèn đỏ trên micro cánh gà bật sáng. {idol_het_thoi} nhìn nó. Nhìn bạn. Rồi cất giọng hát bè._
     _Hai giọng hòa vào nhau: một giọng sai lời nhưng nhiệt tình, một giọng đúng lời và đã đợi mười năm._
-    ~ follow(40000)
+    ~ follow(30000)
     ~ qh("idol_het_thoi", 20)
     ~ qh("quan_ly_idol", 10)
     quan_ly_idol: *(từ xa, môi mấp máy)* Cảm ơn em.
@@ -239,8 +239,8 @@ _Bạn ngồi sau bàn kỹ thuật phụ, tay đặt trên kênh tai nghe của
 
 // ------------------------------------------------------------
 === it_1610_buffet ===
-# ngay:16 # gio:17:00 # noi:pantry
-_Ngày Lương thực Thế giới. Công ty mở tiệc buffet mừng gameshow. Ai cũng ăn mừng. Ai cũng cần sạc điện thoại._
+# ngay:16 # gio:19:00 # noi:pantry
+_Ngày Lương thực Thế giới. 19:00, công ty mở tiệc buffet chờ gameshow lên sóng lúc 20:00. Ai cũng ăn mừng. Ai cũng cần sạc điện thoại._
 quan_ly_idol: {it}, cho anh mượn cục sạc. Anh có 2 điện thoại, cả hai đều 3%.
 _Đây là lần thứ 16 trong tháng {quan_ly_idol} mượn sạc. Không lần nào trả._
 * [🔌 Đưa cục sạc. Như mọi ngày.]

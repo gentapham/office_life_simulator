@@ -83,9 +83,9 @@ _Thiệp ghi: "Kính tặng cô {ke_toan}, người thầy của những tờ h�
 === ke_toan_0610_ba_cu ===
 # ngay:6 # gio:11:00 # noi:phong_ke_toan # bat_buoc
 _Buổi chụp poster đầu tiên. Tiền thuê studio 12 triệu, đã chuyển khoản từ hôm qua._
-_10:15, {sieu_nhan_hong} bỏ ngang buổi chụp, chạy ra ngã tư giúp một bà cụ. Điều khoản số 3: công ty không được trừ tiền._
+_10:30, {sieu_nhan_hong} bỏ ngang buổi chụp, chạy ra Đường Hóng, đẩy xe chè của Bà Bảy ra khỏi ổ gà ở đầu Hẻm 69. Điều khoản số 3: công ty không được trừ tiền._
 quan_ly_idol: *(gọi tới, hụt hơi)* {ke_toan} ơi, studio đòi tính thêm 6 triệu vì chụp lố giờ. Khoan, anh nghe máy chút… Em duyệt giùm anh nha!
-_Cùng lúc, {hong_hot} đăng clip {sieu_nhan_hong} dắt bà cụ qua đường. Ba mươi nghìn lượt xem trong một giờ. Clip quay bằng điện thoại. Chi phí: 0 đồng._
+_Cùng lúc, {hong_hot} đăng clip {sieu_nhan_hong} đẩy xe chè, rồi ngồi ăn chè bằng ống hút luồn qua mũ. Ba mươi nghìn lượt xem trong một giờ. Clip quay bằng điện thoại. Chi phí: 0 đồng._
 * [🧾 "Studio tính lố giờ thì đưa biên bản giờ vào ra. Không có thì không trả."]
     ~ kt_hoa_don()
     ~ kt_quy(6)
@@ -99,8 +99,7 @@ _Cùng lúc, {hong_hot} đăng clip {sieu_nhan_hong} dắt bà cụ qua đườn
     ~ kt_keo(2)
     _Bạn tô vàng dòng này. Một ý tưởng nhỏ bắt đầu nhú lên: chiến dịch rẻ nhất có khi lại là chiến dịch thật nhất._
     ~ qh("sieu_nhan_hong", 5)
-- ~ follow(30000)
--> END
+- -> END
 
 // ------------------------------------------------------------
 === ke_toan_0710_moc_1 ===
@@ -169,20 +168,20 @@ _Bạn nhìn {editor}, rồi nhìn cái kính lúp trong tay mình. Mắt bạn 
 // ------------------------------------------------------------
 === ke_toan_0910_duyet_quang_cao ===
 # ngay:9 # gio:09:00 # noi:phong_ke_toan # bat_buoc
-_Ngày ra mắt MV. {hong_hot} đứng trước bàn bạn, ôm laptop như ôm con. Bên cạnh là tờ đề nghị đã có chữ ký {giam_doc}._
+_Ngày ra mắt MV "Hồng Hóa Việt Nam", 20:00 tối nay. {hong_hot} đứng trước bàn bạn, ôm laptop như ôm con. Bên cạnh là tờ đề nghị đã có chữ ký {giam_doc}._
 hong_hot: Chị ơi! Duyệt 200 triệu quảng cáo Phây-búc với Tóp-tóp cho MV đi chị! Không chạy là MV chìm như đá liền!
 _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Trang 47 vẫn dán trên tủ lạnh nhà bạn._
 * [✅ Duyệt đủ 200 triệu.]
     ~ kt_duyet_qc = true
     ~ kt_quy(-200)
-    ~ follow(100000)
+    ~ follow(40000)
     ~ kt_ngu(10)
     ~ kt_keo(-5)
     ~ qh("hong_hot", 15)
     hong_hot: Chị đỉnh! Em chạy liền! Từ nay em hông gọi chị là… thôi em hông nói.
 * [✂️ "100 triệu. Chạy thử 3 ngày, có số liệu thì chị duyệt tiếp."]
     ~ kt_quy(-100)
-    ~ follow(45000)
+    ~ follow(15000)
     ~ kt_ngu(5)
     hong_hot: Dạ… 3 ngày là MV nguội rồi chị ơi.
     ~ qh("hong_hot", -3)
@@ -192,19 +191,19 @@ _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Trang 47 vẫn dán trên tủ lạnh
     ** [✅ "Rồi. Có kế hoạch là có tiền."]
         ~ kt_duyet_qc = true
         ~ kt_quy(-200)
-        ~ follow(110000)
+        ~ follow(45000)
         ~ kt_ngu(8)
         ~ qh("hong_hot", 10)
     ** [✂️ "Vẫn 100 thôi em."]
         ~ kt_quy(-100)
-        ~ follow(45000)
+        ~ follow(15000)
         ~ qh("hong_hot", -5)
 - -> END
 
 // ------------------------------------------------------------
 === ke_toan_0910_tra_sua_lan_hai ===
 # ngay:9 # gio:15:00 # noi:tang_1 # bat_buoc
-_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc ra mắt MV: trứng luộc, trứng chiên, trứng ốp la hình trái tim hồng._
+_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc chờ MV lên sóng lúc 20:00: trứng luộc, trứng chiên, trứng ốp la hình trái tim hồng._
 _Và trà sữa. Lần thứ hai trong 9 ngày. Kèm "lương tuần" của mấy người chọn nhận theo tuần._
 giam_doc: {ke_toan} ơi, trà sữa mừng MV, quỹ công ty nhé!
 * [🧮 Ngồi tính: 9 ngày, 2 lần trà sữa, nhân với 22 tuần còn lại của năm…]
@@ -222,8 +221,7 @@ giam_doc: {ke_toan} ơi, trà sữa mừng MV, quỹ công ty nhé!
     ~ an(15)
     _{chi_dai} bỏ vào tay bạn thêm hai quả trứng. "Ăn đi. Gầy như que tăm."_
     ~ qh("chi_dai", 3)
-- ~ follow(40000)
--> END
+- -> END
 
 // ------------------------------------------------------------
 === ke_toan_0910_hong_coin ===
@@ -270,13 +268,13 @@ _Group Zalo-lô bắt đầu: "Ủa lương đâu mọi người?" — "Ét o é
 
 // ------------------------------------------------------------
 === ke_toan_1010_phong_bi ===
-# ngay:10 # gio:15:00 # noi:choi_bao_ve # bat_buoc
+# ngay:10 # gio:15:00 # noi:nha_so_18 # bat_buoc
 _Chiều thứ 7. Bạn đứng trước két sắt sau bức tranh. Ba người khó nhất: {thuc_tap_sinh} (lương 4 triệu, phòng ghép 4 người), Bác {bac_bao_ve}, {idol_het_thoi} (nợ tiền nhà)._
 _Rút từ quỹ đen, bỏ phong bì, trả đúng ngày. Hay để mọi người chờ tới thứ Hai._
 * [🗄️ Rút 20 triệu, bỏ ba phong bì, đi phát tận tay.]
     ~ kt_phong_bi_1010 = true
     ~ kt_cat_ket(-20)
-    _Chòi bảo vệ. Bác {bac_bao_ve} đang nghe radio. Bạn đặt phong bì lên bàn._
+    _Bạn chạy xe tới chòi bảo vệ. Bác {bac_bao_ve} đang nghe radio. Bạn đặt phong bì lên bàn._
     bac_bao_ve: Lương về rồi à cháu?
     ke_toan: Dạ… ứng trước thôi bác. Thứ Hai có lương chính thức.
     _Bác nhìn phong bì. Tiền mặt, không phải chuyển khoản. Bác nhìn bạn. Bác không hỏi._
@@ -328,7 +326,7 @@ _Bạn lục album. Một tấm ảnh năm 7 tuổi: bạn ngồi bên bàn tín
     ~ follow(2000)
 * [🩷 Bình luận dưới ảnh {sieu_nhan_hong}: "Dễ thương. Đứa nhỏ đang khóc là ai vậy anh?"]
     sieu_nhan_hong: *(trả lời sau 20 phút)* Ờm… anh hông nhớ nữa. Chắc là bị anh chọc. Hồi đó anh hư lắm.
-    _Câu trả lời thật thà một cách lạ lùng, cho một siêu sao._
+    _Câu trả lời thật thà một cách lạ lùng, cho một siêu sao. Xóm Cây Me. Bạn từng đọc cái tên này ở đâu rồi. Bạn mở tủ hồ sơ nhân sự: hồ sơ của {ran_doc}, mục địa chỉ cũ, "xóm Cây Me"._
     ~ qh("sieu_nhan_hong", 5)
 * [😶 Không đăng gì. Cất ảnh lại.]
     _Bạn để tấm ảnh trên bàn, cạnh cuốn sổ. Đứa bé 7 tuổi nhìn bạn. Nó chưa biết trang 47 là gì._
@@ -337,7 +335,7 @@ _Bạn lục album. Một tấm ảnh năm 7 tuổi: bạn ngồi bên bàn tín
 // ------------------------------------------------------------
 === ke_toan_1210_bang_luong ===
 # ngay:12 # gio:08:30 # noi:phong_ke_toan # bat_buoc
-_Thứ Hai. 8:30 ngân hàng mở lệnh, nhưng chỉ cho chuyển từng đợt. 21 người. Group Zalo-lô đã bực từ thứ 7._
+_Thứ Hai. 8:30 ngân hàng gọi: lệnh được mở, tiền sẽ vào tài khoản mọi người lúc 10:00. Còn một tiếng rưỡi để xếp bảng lương cho 21 người. Group Zalo-lô đã bực từ thứ 7._
 hong_hot: *(nhắn group)* Chị {ke_toan} ơi lương về chưa chị, em sắp ăn mì gói lần thứ 6 rồi.
 sales: *(nhắn group)* Lương trễ mà sếp vẫn đi golf. Sao mà căng.
 thuc_tap_sinh: *(nhắn group)* Dạ em không sao ạ. Em còn 4 gói mì ạ.
@@ -363,9 +361,9 @@ _Bạn nhìn cái tin của {thuc_tap_sinh}. Bốn gói mì. Bạn ghi con số 
 === ke_toan_1210_noi_chuyen_voi_sep ===
 # ngay:12 # gio:11:00 # noi:phong_giam_doc # bat_buoc
 _Bạn đóng cửa phòng kính sau lưng, đặt xấp bảng lương lên bàn {giam_doc}._
-ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao dịch lớn". Mấy năm nay họ chưa soi bao giờ. Anh có chuyện gì với ngân hàng mà em không biết không?
+ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao dịch lớn". Em biết vì sao rồi. Em làm sổ cho anh mà. Anh tự nói đi.
 giam_doc: *(nhìn ra cửa sổ rất lâu)* … Khoản thế chấp quá hạn rồi {ke_toan} ạ. Hạn cuối 15/11.
-* [😮‍💨 "Em biết. Em làm sổ cho anh. Em chỉ muốn anh tự nói."]
+* [😮‍💨 "Vậy là đủ rồi anh. Em chỉ cần anh tự nói ra."]
     giam_doc: … Cảm ơn em. Mười năm rồi nhỉ.
     ~ qh("giam_doc", 10)
     ~ kt_ngu(-5)
@@ -392,10 +390,10 @@ giam_doc: *(nhìn ra cửa sổ rất lâu)* … Khoản thế chấp quá hạn
 // ------------------------------------------------------------
 === ke_toan_1210_nu_hoang_luong_tre ===
 # ngay:12 # gio:21:00 # noi:nha_so_18
-_Tối. Lương đã về hết lúc 17:00. Trễ đúng 2 ngày. Group "Hội Anti Sếp" mà bạn không ở trong đó, nhưng ai cũng chụp màn hình gửi bạn._
+_Tối. Lương đã về hết lúc 10:00. Trễ đúng 2 ngày. Group "Hội Anti Sếp" mà bạn không ở trong đó, nhưng ai cũng chụp màn hình gửi bạn._
 _Ảnh 1: {hong_hot}: "Từ nay gọi chị {ke_toan} là Nữ Hoàng Lương Trễ nha mấy bà." 47 lượt thích._
-_Ảnh 2: {con_ong_chau_cha} đăng story ở Sống Ảo: "Thẻ bị từ chối. Quê muốn độn thổ." Thẻ phụ đó gắn với tài khoản riêng của {giam_doc}. Bạn biết tài khoản đó đang 0 đồng._
-_Ảnh 3: ai đó chụp lén {thuc_tap_sinh} ở quán cơm: một chiếc thẻ ngân hàng màu bạc, hạng kim cương, rơi ra bàn._
+_Ảnh 2: {con_ong_chau_cha} đăng story ở Sống Ảo: "Thẻ bị từ chối. Quê muốn độn thổ." Thẻ phụ đó gắn với tài khoản riêng của {giam_doc}. Bạn biết tài khoản đó chỉ còn khoảng 4,2 triệu._
+_Ảnh 3: cũng ở Sống Ảo, trưa nay, ai đó chụp lén {thuc_tap_sinh}: một chiếc thẻ ngân hàng màu bạc, hạng kim cương, rơi ra bàn._
 * [😶 Đọc hết. Không trả lời ai.]
     ~ kt_ngu(5)
     ~ cang_thang(10)

@@ -88,7 +88,8 @@ _Cả tầng 1 đứng hình. Kịch bản sáng nay không có cảnh này. M�
 * [⏱️ (Không chọn kịp)]
     _{cho} đi tới, ngửi giày chú Liêm, rồi nằm xuống ngay chân chú. Chú Liêm không dám nhúc nhích suốt 20 phút._
     _Đoàn kiểm tra hôm đó về sớm. Không ai hiểu vì sao._
-- chu_liem: Còn khoản 5 tỷ. Và bản gốc giấy tờ thành lập. Mai tôi quay lại.
+- chu_liem: Còn khoản 5 tỷ. Và bản gốc giấy tờ thành lập. Tôi ngồi đây tới 4 giờ chiều. Ai có thì đem tới.
+_Bác {bac_bao_ve} gật đầu một cái, dắt xe ra cổng, chạy về hướng Ven Đô._
 -> END
 
 // ------------------------------------------------------------
@@ -120,8 +121,8 @@ sales: Chị… à em… à chị ơi! Tối nay phải có "Mr. Kevin Trộn" c
 
 // ------------------------------------------------------------
 === bien_kich_2310_livestream ===
-# ngay:23 # gio:19:30 # noi:studio_tang_2 # bat_buoc
-_Livestream sinh nhật. Mười hai nghìn người đang xem. {sieu_nhan_hong} cầm micro, giọng run run dưới lớp mũ._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ. Livestream sinh nhật. Mười hai nghìn người đang xem. {sieu_nhan_hong} cầm micro, giọng run run dưới lớp mũ._
 sieu_nhan_hong: Hôm nay sinh nhật em, em có một điều muốn nói… *(quay sang góc phòng)* Anh {chua_te_deadline}, em thích anh. Thiệt. Không phải PR.
 _Góc phòng, {chua_te_deadline} đang lướt Tóp-tóp. Thấy chính mình trên Tóp-tóp. Ngẩng đầu lên._
 hong_hot: *(gõ điên cuồng)* Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên top xu hướng rồi mấy bà ơi!
@@ -155,7 +156,7 @@ cho: Gâu! *(ngồi giữa đống kem, mặt đầy kem hồng, rất hài lòn
 
 // ------------------------------------------------------------
 === bien_kich_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Bảng tên trên bàn: "{bien_kich} – {designer}"._
 chi_dai: Hai đứa cùng vẽ "bức tranh đoàn kết". Một đứa viết chữ, một đứa vẽ hình. Không xong thì không ăn trưa.
 designer: *(đặt bút chì xuống)* Bà viết trước hay tui vẽ trước?
@@ -196,7 +197,7 @@ _Ở bàn bên, {dan_dau_tu} ngồi giữa "bàn chủ nợ". Bạn cũng có t�
 === bien_kich_2510_chot_kich_ban ===
 # ngay:25 # gio:21:00 # noi:gac_mai_so_7 # bat_buoc
 _Chủ nhật. Hạn chót kịch bản phim là nửa đêm nay. Gác mái chỉ có tiếng máy đánh chữ, tiếng mèo, và tiếng tim bạn đập._
-_Trên mạng, người ta chia nhau tin {thanh_xin_nghi} vào bán kết một cuộc thi hát. Bạn không có thời gian hóng._
+_Trên mạng, người ta chia nhau clip {thanh_xin_nghi} vừa hát bán kết một cuộc thi trên Đài Tivi Hóng. Bạn không có thời gian hóng._
 { bk_tien_do_phim >= 60:
     _Kịch bản gần xong. Chỉ còn cảnh cuối: người hùng quay lưng đi._
 - else:
@@ -237,14 +238,14 @@ _Trên mạng, người ta chia nhau tin {thanh_xin_nghi} vào bán kết một 
 === bien_kich_2610_chieu_thu ===
 # ngay:26 # gio:16:00 # noi:phong_hop_tang_2 # bat_buoc
 { not bk_kich_ban_phim_xong:
-    _Buổi chiếu thử bị hủy. Màn chiếu trắng trơn. {truong_phong} đứng trước cả phòng, giọng khô khốc._
-    truong_phong: Phim không kịp. Đại Nhạc Hội mình thay bằng 15 phút anh {giam_doc} phát biểu nhé.
-    _Cả phòng thở dài cùng một nhịp. Bạn nhìn xuống tay mình. Không có cây bút nào trong đó._
+    _16 giờ, phòng họp tầng 2. Chiếu thử bản dựng dở của {editor}. Phim dừng ở cảnh 14: người đàn ông đứng cạnh chiếc xe chết máy, trời mưa, rồi màn hình đen. Không có cảnh cuối._
+    truong_phong: Phim không kịp hạn. Mà lịch Đại Nhạc Hội in rồi, phim vẫn phải chiếu. Ai viết được cảnh cuối trước thứ 6 thì viết nhé.
+    _Cả phòng thở dài cùng một nhịp. Ở hàng cuối, {thuc_tap_sinh} rụt rè giơ tay: "Dạ… em biết cảnh cuối ạ." Bạn nhìn xuống tay mình. Không có cây bút nào trong đó._
     ~ bk_cam(-20)
     ~ cang_thang(20)
     -> END
 }
-_Chiếu thử nội bộ "Người Hùng Không Tên", bản dựng của {editor}. Đèn tắt. {thuc_tap_sinh} ngồi hàng cuối._
+_16 giờ, phòng họp tầng 2. Chiếu thử nội bộ "Người Hùng Không Tên", bản dựng của {editor}. Đèn tắt. {thuc_tap_sinh} ngồi hàng cuối._
 _Phút thứ 3: người hùng đẩy xe chè cho bà cụ. Có người cười. Phút thứ 6: người hùng ăn chè bằng ống hút. Cả phòng cười._
 _Phút thứ 9: trời mưa. Một người đàn ông đứng cạnh chiếc xe chết máy. Một bóng hồng chạy tới, không nói gì, đẩy xe đi._
 _Ở hàng cuối, {thuc_tap_sinh} quay sang nhìn bạn._
@@ -262,11 +263,11 @@ _Màn hình đen. Dòng chữ tạm: "Kịch bản: {bien_kich}". Bạn không d
 === bien_kich_2610_duy_hanh_lang ===
 # ngay:26 # gio:17:10 # noi:hanh_lang_tang_2 # bat_buoc
 { not bk_kich_ban_phim_xong:
-    _Hành lang. {thuc_tap_sinh} đưa bạn ly cà phê, không nói gì. Rồi nói: "Dạ… lần sau mình làm tiếp nha chị." Lần sau. Như thể còn lần sau._
+    _Hành lang. {thuc_tap_sinh} đưa bạn ly cà phê, không nói gì. Rồi nói: "Dạ… cảnh cuối em viết thử nha chị. Em viết xong chị sửa." Bạn gật. Bạn không còn sức để lắc đầu._
     ~ qh("thuc_tap_sinh", 5)
     -> END
 }
-_Hành lang. {thuc_tap_sinh} đứng đó, cầm ly cà phê vừa pha cho cả phòng._
+_Hành lang. {thuc_tap_sinh} đứng đó, cầm ly cà phê vừa pha cho cả phòng. Sáng nay {hr} đã nộp danh sách cắt giảm. Nghe nói có tên một thực tập sinh ba mươi tuổi._
 thuc_tap_sinh: Dạ chị {bien_kich}… cái cảnh đẩy xe trong mưa… là chuyện của em ạ. Em kể hôm mất điện. Mà… phim hay lắm chị. Em xem mà khóc.
 * {not bk_ghi_cong_duy} [📎 "Trùng hợp thôi anh. Siêu nhân nào chẳng đẩy xe."]
     thuc_tap_sinh: Dạ… dạ chắc vậy ạ.
@@ -284,10 +285,11 @@ thuc_tap_sinh: Dạ chị {bien_kich}… cái cảnh đẩy xe trong mưa… là
     ~ bk_muon(-10)
     _{thuc_tap_sinh} đứng im. Rồi cười. Cái cười ba mươi tuổi mà vẫn như thằng nhỏ._
     thuc_tap_sinh: Dạ… lần đầu tiên tên em lên màn hình ạ.
+    _Tối đó bạn gửi {hr} một tin nhắn dài: ý tưởng phim là của {thuc_tap_sinh}. Nếu danh sách có tên anh ấy, xin {hr} đọc tin nhắn này trước khi chốt._
 * {bk_thay_nguyen_day_xe} [🔒 "Người mặc đồ hồng đẩy xe cho anh… anh có muốn biết là ai hông?"]
     ~ bk_hai_cay_so = true
     thuc_tap_sinh: *(mở to mắt, ly cà phê nghiêng một bên)* Chị… chị biết hả chị?
-    bien_kich: Chị đoán. Người đó đẩy xe cho cả phố, nên chắc hông nhớ anh. Nhưng anh thì nhớ người ta.
+    bien_kich: Chị đoán thôi. Mà đoán thì chị giữ. Người đó đẩy xe cho cả phố, chắc hông nhớ anh. Nhưng anh thì nhớ người ta, vậy là đủ cho một bộ phim.
     bien_kich: Đại Nhạc Hội, anh đứng cánh gà với chị nha.
     thuc_tap_sinh: Dạ… *(gật đầu ba lần liền)* Dạ.
     ~ qh("thuc_tap_sinh", 10)
@@ -325,7 +327,7 @@ _Kèm theo là ảnh chụp một trang sổ bìa da. Trang "Chương 1: Ngày N
 === bien_kich_2710_trailer ===
 # ngay:27 # gio:15:30 # noi:khu_lam_viec_chung # bat_buoc
 { not bk_kich_ban_phim_xong:
-    _Không có trailer nào. Fanpage đăng ảnh {giam_doc} cầm micro: "Đại Nhạc Hội Siêu Nhân: 15 phút cùng CEO". Bình luận đầu tiên: "Thôi khỏi."_
+    _Trailer lên fanpage: ba mươi giây mưa hồng, cắt ngang đúng chỗ người hùng chạy tới. Không ai biết là vì phim chưa có cảnh cuối. Dòng chữ: "Kịch bản: {bien_kich}". Bạn nhìn tên mình như nhìn tên người khác._
     ~ cang_thang(10)
     -> END
 }
@@ -337,8 +339,8 @@ _Trailer "Người Hùng Không Tên" lên fanpage. Ba mươi giây mưa hồng,
     _Bàn cuối. {thuc_tap_sinh} xem trailer, rồi tắt điện thoại, rồi đi pha cà phê cho cả phòng. Như mọi ngày._
     ~ follow(8000)
 }
-_Ở bàn bên, {sales} đang nghe điện thoại, mặt ngơ ngác._
-sales: Dạ… Sữa Chua Hồng Hào ở Ven Đô hả? Tài trợ 1 tỷ? Thật hả? *(cúp máy)* Mấy người… có nhà tài trợ thật gọi em nè!
+_Ở bàn bên, {sales} vẫn ngồi nhìn điện thoại, mặt ngơ ngác từ 11 giờ sáng tới giờ._
+sales: Mấy người… sáng nay Sữa Chua Hồng Hào ở Ven Đô gọi em. Tài trợ 1 tỷ. Thật đó!
 hong_hot: Lại BTT Global hả bà?
 _Không ai tin. Không một ai._
 * [😇 "Tui tin. Lần này giọng em run. Người nói phét thì không run."]

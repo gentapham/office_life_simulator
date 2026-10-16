@@ -247,16 +247,16 @@ thuc_tap_sinh: Dạ… em có cần làm gì cho phim hông ạ?
 
 // ------------------------------------------------------------
 === bien_kich_2010_bai_phat_bieu ===
-# ngay:20 # gio:09:00 # noi:sanh_tang_tret # bat_buoc
-_Sinh nhật {cong_ty} 16 tuổi, kiêm Ngày Phụ nữ Việt Nam. Sảnh treo bong bóng cam và hồng, đụng nhau chan chát._
-_Sáng nay, ở chòi bảo vệ, bác {bac_bao_ve} nhận một lá thư tay ký "G". Bác cất vào túi áo, chưa mở._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_Sinh nhật {cong_ty} 16 tuổi, kiêm Ngày Phụ nữ Việt Nam. Quán Ốc Đêm, 18 giờ 30. Bàn công ty kê nối nhau, bong bóng cam và hồng buộc vào chân ghế nhựa._
+_Bác {bac_bao_ve} vừa đứng dậy đọc to lá thư "G" tới sáng nay: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui." Cả quán còn chưa hết im. Tới lượt sếp phát biểu._
 _Bạn cầm bản nháp bài phát biểu. Có một câu bạn viết lúc 2 giờ sáng, chưa biết nên giữ hay bỏ:_
 _"Và hôm nay, chúng ta cảm ơn người sáng lập ở phương xa, người đã tin rằng thứ quý nhất trong căn phòng 20 mét vuông là con người."_
 * [💡 Giữ câu đó. Đó là câu bác {bac_bao_ve} kể cho mình ngày 1/10.]
     ~ bk_that(5)
     ~ qh("bac_bao_ve", 10)
     _{giam_doc} đọc tới câu đó. Đọc chậm lại, như vấp phải một bậc thềm cũ._
-    _Ở cuối sảnh, bác {bac_bao_ve} cúi đầu. Tay đặt lên túi áo, chỗ lá thư._
+    _Ở cuối bàn, bác {bac_bao_ve} cúi đầu. Tay đặt lên túi áo, chỗ lá thư._
     ~ bk_cam(10)
 * [🎤 Bỏ câu đó. Thêm năm từ khóa sếp thích cho chắc ăn.]
     _"Gia đình, mindset, hồi khởi nghiệp, văn hóa, cùng nhau." Đủ năm từ, đúng năm từ._
@@ -302,8 +302,8 @@ _Lần đầu từ Vũng Tàu, hai người suýt cười chung._
 
 // ------------------------------------------------------------
 === bien_kich_2010_karaoke ===
-# ngay:20 # gio:22:15 # noi:karaoke_hat_cho_nhau_nghe
-_Karaoke Hát Cho Nhau Nghe, tăng hai sau quán ốc. {giam_doc} cầm micro, mặt đỏ như đèn phòng hát._
+# ngay:20 # gio:21:00 # noi:karaoke
+_Karaoke Chú Sáu, tăng hai sau quán ốc. {giam_doc} cầm micro, mặt đỏ như đèn phòng hát._
 giam_doc: Các em! Anh tuyên bố! Nếu Đại Nhạc Hội thành công, cả công ty tăng lương… hai mươi phần trăm!
 _Cả phòng gào lên. {hong_hot} quay clip. {ke_toan} đứng dậy, ngồi xuống, rồi đứng dậy lần nữa._
 ke_toan: Anh ơi… lời nói không phải là hóa đơn đâu anh.

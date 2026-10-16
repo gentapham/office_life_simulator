@@ -52,8 +52,8 @@ it: *(liếc {hong_hot}, rồi nhìn đi chỗ khác)* Không biết. Lỗi ngư
 
 // ------------------------------------------------------------
 === chi_dai_2210_doan_thue ===
-# ngay:22 # gio:08:00 # noi:cau_thang_tang_2 # bat_buoc
-_8 giờ sáng. Bộ đàm của Bác {bac_bao_ve} rè rè: "Ba người. Cặp tài liệu. Đồ tối màu. Đoàn thuế. Bác giữ được 2 phút."_
+# ngay:22 # gio:08:50 # noi:cau_thang_tang_2 # bat_buoc
+_8 giờ 50 sáng. Bộ đàm của Bác {bac_bao_ve} rè rè: "Ba người. Cặp tài liệu. Đồ tối màu. Đoàn thuế. Bác giữ được 2 phút."_
 _{ke_toan} lao ra hành lang, mặt trắng bệch: "Bà ơi, tui cần 15 phút. Hóa đơn tháng 6 còn nằm trong thùng mì."_
 _Bạn đứng chắn ở đầu cầu thang tầng 2. Trưởng đoàn đi lên trước: Chú Liêm, 55 tuổi, kính dày, cặp da sờn._
 chu_liem: Chào cô. Đoàn kiểm tra. Cho xem sổ sách.
@@ -76,13 +76,13 @@ chu_liem: Chào cô. Đoàn kiểm tra. Cho xem sổ sách.
     ke_toan: *(nhìn bạn, ánh mắt "bà phản tui hả")*
     ~ qh("ke_toan", -10)
     ~ cd_nk(5)
-- _Trong phòng họp, Chú Liêm mở cặp, đọc danh sách: "Một: bản gốc giấy tờ thành lập năm 2010. Hai: hợp đồng tài trợ với BTT Global. Ba: bằng chứng nghiệm thu dự án quảng cáo tháng 6. Bốn: nguồn gốc khoản 5 tỷ."_
+- _9 giờ, phòng kế toán. Chú Liêm mở cặp, đọc danh sách: "Một: bản gốc giấy tờ thành lập năm 2010. Hai: hợp đồng tài trợ với BTT Global. Ba: bằng chứng nghiệm thu dự án quảng cáo tháng 6. Bốn: nguồn gốc khoản 5 tỷ."_
 _{giam_doc} vã mồ hôi. {sales} vã mồ hôi. {chua_te_deadline} vã mồ hôi. Ba người, ba lý do khác nhau._
 -> END
 
 // ------------------------------------------------------------
 === chi_dai_2210_che_huyen ===
-# ngay:22 # gio:14:00 # noi:phong_hop_tang_2
+# ngay:22 # gio:14:00 # noi:phong_ke_toan
 _Chiều. Đoàn thuế hỏi tới mục hai: hợp đồng BTT Global. {sales} đứng dậy, rồi ngồi xuống, rồi đứng dậy._
 sales: Dạ… hợp đồng… bên đó đang… đang ký điện tử ạ. Mr. Kevin Trộn đi công tác…
 chu_liem: Tôi tra mã số thuế BTT Global rồi. Không có.
@@ -105,7 +105,7 @@ _{sales} nhìn quanh. Mắt dừng ở bạn. Ánh mắt "cứu em"._
     ~ qh("sales", 10)
     ~ cd_uy(5)
 - { cd_chan_doan_thue:
-    _Cuối ngày, {ke_toan} nộp đủ hóa đơn. Đoàn thuế về lúc 5 giờ. {ke_toan} gục đầu xuống bàn, thì thầm: "Bà cứu tui một mạng."_
+    _Cuối ngày, {ke_toan} nộp đủ hóa đơn. Đoàn thuế về lúc 4 giờ. {ke_toan} gục đầu xuống bàn, thì thầm: "Bà cứu tui một mạng."_
     ~ qh("ke_toan", 5)
 }
 _Lúc về, bạn thấy Bác {bac_bao_ve} đang lau một tập giấy tờ cũ ố vàng, cất vào túi nilon. Bạn không hỏi. Bác không nói._
@@ -113,8 +113,8 @@ _Lúc về, bạn thấy Bác {bac_bao_ve} đang lau một tập giấy tờ cũ
 
 // ------------------------------------------------------------
 === chi_dai_2310_chuan_bi_livestream ===
-# ngay:23 # gio:14:00 # noi:sanh_cong_ty # bat_buoc
-_Sinh nhật 31 tuổi của {sieu_nhan_hong}, kiêm livestream lớn. Sảnh tầng trệt thành sân khấu. Bánh kem hồng 3 tầng do {designer} thiết kế đang nằm trong tủ mát._
+# ngay:23 # gio:14:00 # noi:studio_tang_2 # bat_buoc
+_Sinh nhật 31 tuổi của {sieu_nhan_hong}, kiêm livestream lớn lúc 20 giờ. Studio tầng 2 thành sân khấu. Bánh kem hồng 3 tầng do {designer} thiết kế đang nằm trong tủ mát._
 _Vấn đề: kịch bản có đoạn "nhà tài trợ BTT Global lên chúc mừng". Nhà tài trợ không có thật. Cần người đóng vai Mr. Kevin Trộn._
 sales: *(van nài)* Chị ơi… chị chọn giùm em một người…
 * [🤝 {thuc_tap_sinh}: vest cũ, cà vạt, nói giọng ngân hàng.]
@@ -144,10 +144,10 @@ sales: *(van nài)* Chị ơi… chị chọn giùm em một người…
 
 // ------------------------------------------------------------
 === chi_dai_2310_banh_kem ===
-# ngay:23 # gio:19:30 # noi:sanh_cong_ty # bat_buoc
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
 ~ cd_dang_quay = true
 ~ cd_livestream_on = true
-_Livestream đang chạy. 10.000 người xem. {hong_hot} cầm máy. {sieu_nhan_hong} vừa nhận lời chúc từ "Mr. Kevin Trộn"._
+_20 giờ. Studio tầng 2. Livestream đang chạy. 10.000 người xem. {hong_hot} cầm máy. {sieu_nhan_hong} vừa nhận lời chúc từ "Mr. Kevin Trộn"._
 {
 - cd_kevin_tron == "bac_bao_ve":
     _Bác {bac_bao_ve} trong bộ vest, đọc đúng ba câu, giọng Bắc chậm rãi: "Chúc mừng sinh nhật. Làm việc tốt. Ngủ đúng giờ." Bình luận nổ tung: "Ông Kevin này thật quá!", "Kevin Trộn gốc Hà Nội hả?"._
@@ -162,25 +162,26 @@ _Livestream đang chạy. 10.000 người xem. {hong_hot} cầm máy. {sieu_nhan
 _Rồi {sieu_nhan_hong} cầm micro, quay sang góc phòng, nơi {chua_te_deadline} đang lướt điện thoại._
 sieu_nhan_hong: {chua_te_deadline} ơi. Anh thích em. Không phải PR đâu. Em trả lời anh đi!
 _Bình luận chạy như thác: "\#VũƠiTrảLờiĐi". {chua_te_deadline} đứng như tượng, màn hình điện thoại vẫn đang chạy một video mèo._
-~ follow(20000)
 _Rồi bánh kem hồng 3 tầng được đẩy ra. Ở cuối sảnh, {cho} hạ thấp người. Mắt dán vào chiếc mũ hồng trên đầu {sieu_nhan_hong}._
 thuc_tap_sinh: *(bộ đàm)* Dạ chị ơi, {cho} thoát rồi ạ! # hen_gio:3
 * {co(xuc_xich)} [🍖 Ném xúc xích về phía ngược lại.]
     ~ mat(xuc_xich)
-    _{cho} quay đầu giữa không trung, phi theo cây xúc xích. Bánh kem an toàn. {sieu_nhan_hong} thổi nến. 10.000 người hát chúc mừng._
+    _{cho} quay đầu giữa không trung, phi theo cây xúc xích. Bánh kem an toàn được đúng hai giây. Rồi {idol_het_thoi} vấp dây điện, chúi cả người vào xe bánh. Ba tầng kem hồng đổ ụp._
+    idol_het_thoi: *(chỉ tay ra cửa)* Con chó! Con chó nó chạy ngang!
+    _{cho} đang ở tuốt ngoài hành lang, miệng ngậm xúc xích. Không ai cãi giùm nó. {sieu_nhan_hong} vẫn thổi nến trên miếng bánh còn sót. 10.000 người hát chúc mừng._
     ~ cd_td(5)
-    ~ follow(60000)
+    ~ follow(15000)
 * [🦁 Hét: "{cho}! NGỒI!"]
     ~ cd_nk(15)
     { RANDOM(1, 10) <= 5:
-        _{cho} phanh gấp, ngồi xuống ngay giữa sân khấu, ngẩng đầu nhìn bạn. Bình luận: "CHỊ ĐẠI HUẤN LUYỆN CHÓ!", "Người thuần chó!"._
-        ~ follow(80000)
+        _{cho} phanh gấp, ngồi xuống ngay giữa sân khấu, ngẩng đầu nhìn bạn. Cái đuôi vẫy một cái, đúng vào chân xe bánh. Ba tầng kem nghiêng, chao, rồi đổ. Bình luận: "CHỊ ĐẠI HUẤN LUYỆN CHÓ!", "Chó ngồi rồi mà bánh vẫn đổ!"._
+        ~ follow(20000)
         ~ cd_uy(8)
         ~ qh("cho", 5)
     - else:
         _{cho} giật mình, lao thẳng vào bánh. Ba tầng kem hồng đổ ụp. {sieu_nhan_hong} dính kem đầy mũ, đứng cười trong đống kem như một cái bánh biết đi._
         _Clip "{cho} phá bánh" lan khắp Tóp-tóp._
-        ~ follow(90000)
+        ~ follow(25000)
         ~ scandal()
     }
 * [🛡️ Lao người ra chắn trước xe bánh.]
@@ -188,7 +189,7 @@ thuc_tap_sinh: *(bộ đàm)* Dạ chị ơi, {cho} thoát rồi ạ! # hen_gio:
     _Bình luận: "Chị này là ai mà ngầu vậy?", "Ăn bánh bằng cả người luôn"._
     ~ cd_uy(10)
     ~ cd_met(15)
-    ~ follow(60000)
+    ~ follow(15000)
     ~ qh("sieu_nhan_hong", 10)
 * [⏱️ (Không chọn kịp)]
     _{cho} nhảy lên. Không nhắm vào bánh. Nhắm vào chiếc mũ. Một cú giật. Chiếc mũ hồng bay khỏi đầu {sieu_nhan_hong}._
@@ -199,13 +200,13 @@ thuc_tap_sinh: *(bộ đàm)* Dạ chị ơi, {cho} thoát rồi ạ! # hen_gio:
 = mat_that
 ~ cd_mat_that_tren_song = true
 * [🧥 Cởi áo khoác, trùm lên đầu {sieu_nhan_hong}, kéo vào cánh gà.]
-    _Hai giây. Không ai kịp chụp rõ. Chỉ thấy một chị mặc áo đen trùm áo khoác cho Siêu Nhân Hồng như vệ sĩ chuyên nghiệp._
-    ~ follow(40000)
+    _Hai giây. Không ai kịp chụp rõ. Chỉ thấy một chị mặc áo đen trùm áo khoác cho Siêu Nhân Hồng như vệ sĩ chuyên nghiệp. Bánh kem dưới chân hai người nát bét._
+    ~ follow(20000)
     ~ qh("sieu_nhan_hong", 15)
     ~ cd_uy(8)
 * [🗣️ Hét vào bộ đàm: "{hong_hot}! TẮT MÁY!"]
-    _{hong_hot} tắt máy. Muộn 4 giây. Ảnh chụp màn hình gương mặt mờ mờ của {sieu_nhan_hong} bắt đầu lan đi. Có người khen đẹp, có người chê thường._
-    ~ follow(50000)
+    _{hong_hot} tắt máy. Muộn 4 giây. Bánh kem nằm úp dưới sàn từ lúc nào không ai để ý. Ảnh chụp màn hình gương mặt mờ mờ của {sieu_nhan_hong} bắt đầu lan đi. Có người khen đẹp, có người chê thường._
+    ~ follow(20000)
     ~ scandal()
     ~ cd_nk(20)
 - -> ket
@@ -223,7 +224,7 @@ thuc_tap_sinh: *(bộ đàm)* Dạ chị ơi, {cho} thoát rồi ạ! # hen_gio:
 // ------------------------------------------------------------
 === chi_dai_2310_sau_livestream ===
 # ngay:23 # gio:21:30 # noi:sau_choi_bao_ve
-_Livestream tắt. Sảnh tan. Bạn ra sau chòi bảo vệ thay áo. Ở đó, {sieu_nhan_hong} đang ngồi bệt dưới đất, mũ đặt bên cạnh, mặt thật, cầm cái khăn Bác {bac_bao_ve} đưa._
+_Livestream tắt. Studio tan. Bạn ra sau chòi bảo vệ thay áo. Ở đó, {sieu_nhan_hong} đang ngồi bệt dưới đất, mũ đặt bên cạnh, mặt thật, cầm cái khăn Bác {bac_bao_ve} đưa._
 sieu_nhan_hong: *(giọng nhỏ, khác hẳn trên sóng)* Chị Đại… {chua_te_deadline} không trả lời tui. Nó tưởng là PR.
 _Một tin nhắn trên điện thoại {sieu_nhan_hong}, của ai đó: "Ủa Hồng Coin là của anh hả? Sao có coin tên anh?"_
 sieu_nhan_hong: Tui còn không biết coin là gì.
@@ -245,8 +246,8 @@ sieu_nhan_hong: Tui còn không biết coin là gì.
 
 // ------------------------------------------------------------
 === chi_dai_2410_hoi_nghi ===
-# ngay:24 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Ngày Liên Hợp Quốc. Bạn tổ chức "Hội nghị hòa giải". Phòng họp xếp thành từng cặp bàn đối mặt, như phòng thi._
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Liên Hợp Quốc. 14 giờ, phòng họp tầng 2. Bạn tổ chức "Hội nghị hòa giải". Phòng họp xếp thành từng cặp bàn đối mặt, như phòng thi._
 _Cặp 1: {truong_phong} – {con_ong_chau_cha}. Cặp 2: {designer} – {bien_kich}. Cặp 3: {sales} – {ke_toan}. Cặp 4: {hr} – {thanh_xin_nghi}._
 _Và một bàn riêng ở góc, có biển "BÀN CHỦ NỢ": {dan_dau_tu} ngồi một mình, đối diện 7 cái ghế._
 _Luật: không ai được về trước khi bắt tay._
@@ -276,7 +277,7 @@ _Ở bàn chủ nợ, {dan_dau_tu} vừa hứa trả {sales} 5 triệu "sau Đ�
 
 // ------------------------------------------------------------
 === chi_dai_2410_hoa_giai_nhi ===
-# ngay:24 # gio:10:30 # noi:phong_hop_sang_tao
+# ngay:24 # gio:15:30 # noi:phong_hop_tang_2
 _Bạn ngồi xuống. Đối diện là {thanh_ninh}. Mắt thâm quầng. Bàn tay bấu vào nhau._
 thanh_ninh: Dạ… em chào chị {chi_dai} ạ.
 * [🤝 "Chị ghét em vì em nịnh. Nhưng chị biết em mệt. Em muốn gì ở công ty này, nói thật đi."]
@@ -311,7 +312,7 @@ thanh_ninh: Dạ… em chào chị {chi_dai} ạ.
 # ngay:25 # gio:09:00 # noi:cho_pho_cu
 _Chủ nhật. Chợ Phố Cũ. Hôm nay là ngày nấu cơm đãi khách._
 { cd_moi_nhi_an_com:
-    _Bạn đã hẹn {thanh_ninh}. 11 giờ. {thanh_ninh} nhắn từ sáng sớm: "Dạ em tới được ạ. Chiều em có hẹn bên Ven Đô, em đi sau ạ."_
+    _Bạn đã hẹn {thanh_ninh}. 11 giờ. {thanh_ninh} nhắn từ sáng sớm: "Dạ em tới được ạ. Hôm nay em có hẹn một chỗ, ăn xong là em phải đi liền ạ."_
     ~ cd_khach_com = "thanh_ninh"
     -> chi_dai_mg_com_nha_mo_dau
 }
@@ -328,7 +329,7 @@ _Bạn mời ai tối nay?_
 
 // ------------------------------------------------------------
 === chi_dai_2610_chieu_thu_phim ===
-# ngay:26 # gio:15:00 # noi:phong_hop_sang_tao # bat_buoc
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2 # bat_buoc
 _Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". 15 phút. Biên kịch: {bien_kich}._
 _Trên màn hình: một nhân viên ngân hàng bỏ việc trong ngày mưa, xe chết máy, và một người mặc đồ hồng đẩy xe giùm anh 2 cây số._
 _Bạn liếc sang. {thuc_tap_sinh} ngồi bất động. Nước mắt chảy dài. Môi mấp máy: "Chuyện… chuyện của em…"_
@@ -353,7 +354,7 @@ _Bạn liếc sang. {thuc_tap_sinh} ngồi bất động. Nước mắt chảy d
 
 // ------------------------------------------------------------
 === chi_dai_2610_tin_don_cat_giam ===
-# ngay:26 # gio:17:30 # noi:san_thuong
+# ngay:26 # gio:17:45 # noi:san_thuong
 _Hạn chót danh sách 7 tên của {giam_doc}. Tin đồn đã lan khắp công ty. Sân thượng chật người hút gió, ai cũng thì thầm._
 _{editor} ngồi một góc, cầm điện thoại: tin nhắn của {giam_doc}: "Anh trả 200 triệu, mua lại kênh Cú Đêm của em nhé. Cho công ty."_
 editor: Chị… em không bán. Mà em không bán thì em có trong danh sách hông chị?
@@ -379,8 +380,8 @@ _Đêm đó, một email lạ tới hộp thư {giam_doc}. Bạn không biết. 
 
 // ------------------------------------------------------------
 === chi_dai_2710_luu_luc_o_sanh ===
-# ngay:27 # gio:10:00 # noi:sanh_cong_ty # bat_buoc
-_10 giờ sáng. Một chiếc xe xanh lá chuối đậu ngay cổng. Một người bước xuống: vest trắng, tóc vuốt keo bóng như gương, tay cầm cặp hồ sơ da._
+# ngay:27 # gio:15:00 # noi:sanh_cong_ty # bat_buoc
+_15 giờ. Một chiếc xe xanh lá chuối đậu ngay cổng. Một người bước xuống: vest trắng, tóc vuốt keo bóng như gương, tay cầm cặp hồ sơ da._
 _Lưu Lực. CEO LL-Entertainment. Bước vào sảnh như bước lên sân khấu._
 _Rồi Lưu Lực thấy bạn, đang đứng ở quầy lễ tân, bộ đàm bên hông._
 _Cặp hồ sơ rơi xuống sàn. Giấy văng ra cả sảnh._
@@ -422,8 +423,8 @@ chi_dai: Biết rồi.
 
 // ------------------------------------------------------------
 === chi_dai_2710_sau_cuoc_gap ===
-# ngay:27 # gio:14:00 # noi:tang_2
-_Buổi chiều. Cả tầng 2 thì thầm: Lưu Lực mời {sieu_nhan_hong} gấp ba. Mời {quan_ly_idol} 36 triệu một tháng. Mời {ke_toan} làm kế toán trưởng. Ai cũng có một phong bì xanh lá chuối._
+# ngay:27 # gio:16:30 # noi:tang_2
+_Cuối chiều. Cả tầng 2 thì thầm: Lưu Lực mời {sieu_nhan_hong} gấp ba. Mời {quan_ly_idol} 36 triệu một tháng. Mời {ke_toan} làm kế toán trưởng. Ai cũng có một phong bì xanh lá chuối._
 _Trailer phim ngắn vừa ra mắt trên fanpage. Đề tên: "Biên kịch: {bien_kich}"._
 { cd_ep_ll_rut:
     _Riêng phong bì của {sieu_nhan_hong} thì không có. Lưu Lực rút lại trước khi tới tay. Không ai hiểu vì sao. Trừ bạn._
@@ -457,14 +458,14 @@ _Ở cuối hành lang, {sieu_nhan_hong} ngồi một mình, phong bì gấp ba 
 
 // ------------------------------------------------------------
 === chi_dai_2710_sua_chua_hong_hao ===
-# ngay:27 # gio:16:30 # noi:tang_1
-_{sales} chạy vào phòng, điện thoại trên tay, mặt đỏ bừng._
+# ngay:27 # gio:11:00 # noi:tang_1
+_11 giờ. {sales} chạy vào phòng, điện thoại trên tay, mặt đỏ bừng._
 sales: Mấy anh chị! Bên Sữa Chua Hồng Hào ở Ven Đô gọi! Họ muốn tài trợ Đại Nhạc Hội 1 tỷ! Thật! Lần này thật!
 _Cả phòng im lặng. Rồi {hong_hot} cười. Rồi {dan_dau_tu} cười. Rồi cả phòng cười._
 truong_phong: Thôi em, BTT Global cũng "thật" mà.
-_{sales} đứng giữa phòng, điện thoại vẫn sáng: "Hồng Hào - Phòng Marketing"._
+_{sales} đứng giữa phòng, điện thoại vẫn sáng: "Sữa Chua Hồng Hào - Ven Đô"._
 * [🤝 "Đưa chị số. Chị gọi lại."]
-    _Bạn gọi. Người nghe máy là một bà cụ, chủ cơ sở, giọng Ven Đô: "Con ơi, cậu áo hồng từng đẩy xe sữa cho bà giữa trời mưa. Bà muốn tài trợ Đại Nhạc Hội Siêu Nhân. Mai bà ký."_
+    _Bạn gọi. Người nghe máy là một bà cụ, chủ cơ sở, giọng Ven Đô: "Con ơi, cậu áo hồng từng đẩy xe sữa cho bà giữa trời mưa. Bà muốn tài trợ Đại Nhạc Hội Siêu Nhân. Mai 3 giờ bà lên Sống Ảo ký."_
     _Bạn cúp máy. Nhìn cả phòng. Cả phòng thôi cười._
     chi_dai: Thật.
     sales: *(òa khóc)* Lần đầu tiên em nói thật mà không ai tin…

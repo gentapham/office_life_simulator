@@ -103,7 +103,7 @@ sales: Em cần: danh thiếp, backdrop BTT, và một cái hộp quà to có lo
 _Một tập đoàn không có thật sắp lên sóng trực tiếp. Và logo của nó do chính tay bạn vẽ._
 * [🗂️ Làm đủ hết. Đã lỡ thì lỡ cho đẹp.]
     -> designer_mg_deal_ma_mo_dau
-* [💬 "Huyền. Hay mình dừng ở đây? Chị sợ."]
+* [💬 "{sales}. Hay mình dừng ở đây? Chị sợ."]
     sales: *(im rất lâu)* Em cũng sợ chị. Nhưng giờ dừng là sếp hỏi 2 tỷ đâu.
     sales: Qua Đại Nhạc Hội, em sẽ nói thật. Em hứa. Lần này hông phải "tin chị đi". Là "tin em đi".
     ~ qh("sales", 10)
@@ -149,7 +149,7 @@ _Bình luận nổ tung. Hashtag \#VũƠiTrảLờiĐi lên xu hướng trong 4 
 _Đúng lúc đó, một bóng đen lao vào từ cửa. {cho}. Chiếc mũ bằng đường. Bánh kem bay._
 cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
 { ds_co_sticker_tuat:
-    hong_hot: Bà ơi! Bộ sticker "Tuất Không Vui"! Ghép vô clip này là nổ!
+    hong_hot: Bà ơi! Bộ sticker "{cho} Không Vui"! Ghép vô clip này là nổ!
 - else:
     hong_hot: Trời ơi bánh! Mà… clip này hay quá, đăng luôn!
 }
@@ -158,7 +158,7 @@ cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
     ~ follow(50000)
     ~ qh("hong_hot", 10)
     ~ qh("cho", -3)
-    _Clip "Tuất Không Vui phá bánh sinh nhật" kèm sticker lan khắp 22 group chat trong một đêm. {cho} chính thức nổi tiếng hơn nhiều ca sĩ._
+    _Clip "{cho} Không Vui phá bánh sinh nhật" kèm sticker lan khắp 22 group chat trong một đêm. {cho} chính thức nổi tiếng hơn nhiều ca sĩ._
 * {ds_co_sticker_tuat} [😇 "Thôi bà, để hôm nay là ngày của ảnh."]
     ~ qh("sieu_nhan_hong", 10)
     _Bạn cất sticker. Đêm nay là của người khác._

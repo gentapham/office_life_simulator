@@ -8,7 +8,7 @@
 _Ngày Thị giác Thế giới. {chi_dai} kéo {editor} đi khám mắt ở Phòng khám Khỏe Re. {editor} ngáp suốt dọc hành lang._
 _Bạn nhìn theo. Phòng khám. Khám mắt. Một ý tưởng lóe lên như đèn LED._
 * [💁 Gọi Phòng khám Khỏe Re: "Tin chị đi, mình quay clip 'Editor cú đêm đi khám mắt', logo phòng khám chình ình."]
-    _Bác sĩ phòng khám, giọng rất dễ tính: "Lại là bên công ty G à? Thằng {thanh_xin_nghi} khám 8 lần rồi đó em."_
+    _Bác sĩ phòng khám, giọng rất dễ tính: "Lại là bên công ty G à? Thằng {thanh_xin_nghi} khám 8 lần rồi đó em. Lần nào cũng xin giấy, mà lần nào cổ họng cũng khàn như mới hát xong."_
     _Nhưng bác đồng ý. Gói nhỏ: 2 triệu, kèm 5 suất khám miễn phí cho nhân viên._
     ~ sl_that(2)
     ~ follow(3000)
@@ -65,20 +65,17 @@ _KPI Thật của bạn: {sl_kpi_that} triệu. KPI Trên Giấy tuần trước
 
 // ------------------------------------------------------------
 === sales_0910_ra_mat_mv ===
-# ngay:9 # gio:19:00 # noi:phong_hop_sang_tao # bat_buoc
-_19 giờ. MV đầu tiên của Siêu Nhân Hồng lên sóng. Cả công ty chen trong phòng họp, ăn bánh mì trứng._
+# ngay:9 # gio:20:00 # noi:phong_hop_tang_2 # bat_buoc
+_20 giờ. MV "Hồng Hóa Việt Nam" lên kênh Tóp-tóp và Diu-túp của công ty. Cả công ty chen trong phòng họp tầng 2, ăn bánh mì trứng._
 giam_doc: Các em! Đêm nay mình cần một tin lớn. Một tin để báo chí đăng kèm MV. {sales}, nhà tài trợ của em đâu?
 _Mọi ánh mắt dồn về bạn. {designer} đứng ở góc phòng, lắc đầu rất nhẹ._ # hen_gio:6
 * [🗣️ "Tin chị đi! Tập đoàn BTT Global chính thức đồng hành cùng Siêu Nhân Hồng!"]
     ~ sl_btt_cong_bo = true
     ~ sl_phet(30)
     ~ sl_giay(50)
-    ~ follow(30000)
+    ~ follow(20000)
     hong_hot: Đăng liền! "Tập đoàn lớn tài trợ Siêu Nhân Hồng"!
     _Hai trang báo mạng đăng lại trong 40 phút. Không ai gọi điện xác minh. Chưa ai._
-    { sl_bong_bong >= 100:
-        -> sales_tudo_bong_bong_be
-    }
 * [🤝 "Dạ có Quán Ốc Đêm, Tiệm Nail Lung Linh, phòng khám Khỏe Re. Nhỏ, nhưng thật."]
     ~ sl_that_long()
     giam_doc: Quán ốc… với tiệm nail à? *(gãi đầu)* Thôi, cũng là tài trợ.
@@ -193,10 +190,10 @@ giam_doc: Phòng Kinh doanh báo cáo nhanh nhé. {sales}?
 
 // ------------------------------------------------------------
 === sales_1210_luong_ve ===
-# ngay:12 # gio:10:45 # noi:ban_sales # bat_buoc
-_10 giờ 45. "Ting." Lương về. Cả tầng 1 vang lên một tiếng "Á!" đồng thanh._
+# ngay:12 # gio:12:30 # noi:cafe_song_ao # bat_buoc
+_10 giờ sáng, "Ting." Lương về. Cả tầng 1 vang lên một tiếng "Á!" đồng thanh._
 ~ cang_thang(-10)
-_Ở cửa, {con_ong_chau_cha} quẹt thẻ mua trà sữa cho cả phòng. Thẻ bị từ chối. Lần hai. Lần ba._
+_12 giờ 30, Cà Phê Sống Ảo. Bạn tới hẹn một chủ quán nhậu, ngồi ngay bàn sau lưng {hong_hot}, {ran_doc} và {thuc_tap_sinh}. Ở quầy, {con_ong_chau_cha} quẹt thẻ trả tiền cả bàn. Thẻ bị từ chối. Lần hai. Lần ba._
 con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Chắc máy lỗi.
 _{thuc_tap_sinh} lặng lẽ rút thẻ của mình ra trả. Thẻ màu bạc, viền kim cương. Cả phòng đứng hình._
 thuc_tap_sinh: Dạ… thẻ… thẻ em mượn ạ!
@@ -226,7 +223,7 @@ _Lương chuyên viên 13 triệu. Bạn làm toán. Toán không thương ai._
 * [😇 Hỏi thử giá phòng trọ Hẻm 69.]
     ~ sl_that_long()
     ~ tien_cong(-12000000)
-    _Bà Tư chủ trọ báo giá: 2 triệu rưỡi, có cửa sổ nhìn ra tường. Bạn lưu số. Chưa dám gọi. Nhưng đã lưu._
+    _Bà Tư chủ trọ báo giá: 2 triệu 4, tính luôn tiền điện, có cửa sổ nhìn ra tường. Bạn lưu số. Chưa dám gọi. Nhưng đã lưu._
 - { tien < 0:
     _Số dư: âm. Bạn chưa bao giờ biết ví điện tử hiện được số âm._
 }
@@ -247,9 +244,6 @@ _Bạn không chịu thua. Không bao giờ._
     thanh_ninh: *(nghiến răng cười)* Đẹp quá anh ơi. Đẹp… chuẩn quá anh ơi.
     ~ qh("giam_doc", 10)
     ~ qh("thanh_ninh", -8)
-    { sl_bong_bong >= 100:
-        -> sales_tudo_bong_bong_be
-    }
 * [🎁 Tặng {giam_doc} một voucher làm nail.]
     { sl_co_voucher_nail:
         ~ sl_co_voucher_nail = false
@@ -300,7 +294,4 @@ _Lần đầu tiên có người hỏi bản gốc. Lần đầu tiên bạn ngh
 * [⏱️ (Không chọn kịp)]
     _Bạn đứng đơ. {ke_toan} gật đầu như đã hiểu hết, rồi quay lại màn hình. Đó là cái gật đầu đáng sợ nhất tháng._
     ~ cang_thang(10)
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
--> END
+- -> END

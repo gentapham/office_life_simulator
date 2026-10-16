@@ -61,27 +61,23 @@ _Mỗi câu chê là một việc có thể sửa. Hoặc một cái tên có th
 
 // ------------------------------------------------------------
 === giam_doc_0610_ba_cu ===
-# ngay:6 # gio:10:15 # noi:studio # bat_buoc
+# ngay:6 # gio:10:30 # noi:studio # bat_buoc
 _Buổi chụp poster đầu tiên. Đèn, phông, máy ảnh, {designer} đứng sẵn với bảng màu 7 sắc hồng._
-_Giữa chừng, {sieu_nhan_hong} nhìn qua cửa sổ, thấy một bà cụ đang lóng ngóng giữa ngã tư._
+_10 giờ 30. Giữa chừng, {sieu_nhan_hong} nhìn qua cửa sổ xuống Đường Hóng. Gần đầu Hẻm 69, xe chè của Bà Bảy sụp một bánh xuống ổ gà, nồi chè nghiêng chực đổ._
 sieu_nhan_hong: Khoan! Có người cần giúp! Biến hình! *(chạy mất)*
 quan_ly_idol: Ơ! Khoan, anh nghe máy chút… ơ đi đâu rồi?!
 designer: Sửa nhẹ thôi là sửa cái gì ạ? Người mẫu chạy mất rồi ạ.
-_Điều khoản số 3: Siêu Nhân Hồng được bỏ ngang buổi quay để giúp người, công ty không được trừ tiền. Mất 12 triệu thuê studio._
+_Điều khoản số 3: Siêu Nhân Hồng được bỏ ngang buổi quay để giúp người, công ty không được trừ tiền. Mất 3 triệu 2 thuê studio. {ke_toan} đã kẹp hóa đơn vào sổ._
 * [😡 "Gọi về ngay! Chụp xong rồi giúp ai thì giúp!"]
     ~ qh("sieu_nhan_hong", -10)
     ~ gd_uy(-3)
-    _Không ai dám gọi. {hong_hot} thì đã đứng ở cửa sổ quay clip từ đầu._
-    ~ follow(30000)
+    _Không ai dám gọi. {hong_hot} thì đã đứng ở cửa sổ quay clip từ đầu: bộ đồ hồng ghé vai đẩy xe chè lên khỏi ổ gà, rồi đứng ăn chè bằng ống hút luồn qua mũ._
 * [📱 "{hong_hot}, quay lại hết đi. Clip này hay hơn poster."]
     hong_hot: Em quay từ nãy rồi sếp! Sếp thấy hông, em biết mà!
     ~ qh("hong_hot", 10)
-    ~ follow(30000)
     -> giam_doc_0610_day_clip
-* [🤝 Tự xuống ngã tư giúp một tay.]
-    _Bạn chạy xuống. Bà cụ nhìn hai người, một áo hồng, một áo vest, rồi đưa túi rau cho người mặc vest xách._
-    ~ qh("sieu_nhan_hong", 15)
-    ~ follow(30000)
+* [🤝 Tự xuống đường giúp một tay.]
+    _Bạn chạy xuống. Hai người, một áo hồng, một áo vest, cùng ghé vai đẩy xe chè lên khỏi ổ gà. Bà Bảy múc cho mỗi người một ly chè đậu đỏ. Cô cháu gái phụ bán nhìn bộ đồ hồng rất lâu, như vừa nhận ra một giọng quen._
     ~ nghi(-10)
     sieu_nhan_hong: Sếp ơi sếp ngầu dữ vậy!
 - -> END
@@ -91,7 +87,7 @@ _Chiều. {dan_dau_tu} gõ cửa phòng kính, mang theo một tờ biểu đồ
 dan_dau_tu: Anh, số liệu cho thấy clip thật có tỷ lệ chia sẻ gấp 12 lần nội dung dàn dựng. Đẩy đúng giờ vàng tối nay thì được gấp bốn.
 * [✍️ "Duyệt 30 triệu chạy quảng cáo cho clip này. Ngay."]
     ~ gd_tien_cty(-30)
-    ~ follow(90000)
+    ~ follow(60000)
     ~ qh("dan_dau_tu", 15)
     dan_dau_tu: Lần này là lên thật anh!
     _Lần đầu tiên câu đó của {dan_dau_tu} đúng._
@@ -187,7 +183,7 @@ ke_toan: *(nhắn)* "Anh nhớ lãi ngân hàng tuần này."
 * [🙅 "Không chạy. Nội dung hay thì tự viral. Anh không ép, tùy em."]
     ~ gd_tuy_em("hong_hot")
     ~ gd_tien_cty(0)
-    ~ follow(-30000)
+    ~ follow(-10000)
     ~ gd_no(-10)
     hong_hot: Dạ. Tùy em thì em… khóc.
 - -> END
@@ -195,7 +191,7 @@ ke_toan: *(nhắn)* "Anh nhớ lãi ngân hàng tuần này."
 // ------------------------------------------------------------
 === giam_doc_0910_ra_mat_mv ===
 # ngay:9 # gio:15:00 # noi:phong_hop_tang_2 # bat_buoc
-_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc ra mắt MV: trứng luộc, trứng chiên, trứng ốp la xếp hình trái tim hồng._
+_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc chiếu thử MV nội bộ: trứng luộc, trứng chiên, trứng ốp la xếp hình trái tim hồng. 20 giờ tối nay MV mới lên kênh._
 _MV "Hồng Hóa Việt Nam" chiếu trên màn hình lớn. {sieu_nhan_hong} xoay ba vòng, chỉ tay vào ống kính._
 sieu_nhan_hong: Cả nhà thấy em slay hông?!
 _Mọi người vỗ tay. {idol_het_thoi} đứng ở góc, đeo kính đen, khoanh tay._
@@ -211,8 +207,7 @@ idol_het_thoi: Hồi anh ra "Công Viên", cả nước hát trong một tuần.
     idol_het_thoi: … Cảm ơn anh. *(bóc trứng, ăn rất chậm)*
     ~ an(10)
     ~ qh("idol_het_thoi", 5)
-- ~ follow(40000)
-~ an(20)
+- ~ an(20)
 -> END
 
 // ------------------------------------------------------------
@@ -302,7 +297,7 @@ _Bạn lục album. Không có ảnh hồi nhỏ. Chỉ có một tấm năm 201
 
 // ------------------------------------------------------------
 === giam_doc_1210_luong_ve_tre ===
-# ngay:12 # gio:09:45 # noi:phong_giam_doc # bat_buoc
+# ngay:12 # gio:09:00 # noi:phong_giam_doc # bat_buoc
 _Thứ Hai. Lương vẫn chưa về. {ke_toan} đóng cửa phòng kính sau lưng, đặt xấp bảng lương lên bàn._
 ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao dịch lớn". Mấy năm nay họ chưa soi bao giờ. Anh có chuyện gì với ngân hàng mà em không biết không?
 * [⌚ Tháo đồng hồ đặt lên bàn: "Em mang ra tiệm cầm đồ, ứng trước cho mấy đứa đang kẹt tiền nhé."]
@@ -337,8 +332,8 @@ ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao 
     ~ qh("ke_toan", -30)
     ~ gd_sua("luong_dung_han")
     ~ gd_uy(5)
-    _Lương về lúc 15:00. {ke_toan} không nhìn bạn suốt buổi chiều. Có lẽ sẽ không bao giờ tin bạn hoàn toàn nữa._
-- _17:00, ngân hàng mở lệnh. Lương về trễ đúng 2 ngày._
+    _Một tiếng sau ngân hàng mở lệnh, khoản phòng thân không cần dùng tới. Nhưng {ke_toan} không nhìn bạn suốt buổi chiều. Có lẽ sẽ không bao giờ tin bạn hoàn toàn nữa._
+- _10:00, ngân hàng mở lệnh. Lương về trễ đúng 2 ngày._
 ~ gd_no(3)
 -> END
 
@@ -347,8 +342,8 @@ ke_toan: Anh. Ngân hàng giữ lệnh hai ngày nay, nói là "kiểm tra giao 
 # ngay:12 # gio:12:30 # noi:quan_com_tam
 _Trưa. Điện thoại réo. {con_ong_chau_cha}._
 con_ong_chau_cha: Chú ơi! Thẻ phụ của con bị từ chối ở Sống Ảo! Quê muốn độn thổ luôn! Thẻ đó gắn tài khoản riêng của chú mà?
-_Tài khoản riêng của bạn đã về 0 từ tháng 8._
-_Bên cạnh, {thuc_tap_sinh} rút ví trả tiền cơm. Một chiếc thẻ màu bạc lấp lánh, hạng kim cương, rơi ra bàn._
+_Tài khoản riêng của bạn gần như trống từ tháng 8. Sáng nay còn đúng 4,2 triệu._
+_Bên cạnh, {thuc_tap_sinh} rút ví trả tiền cơm. Một chiếc thẻ màu đen viền kim cương rơi ra bàn._
 thuc_tap_sinh: Dạ… dạ thẻ này… em nhặt được ạ! *(nhét vội vào túi)*
 * [😮‍💨 Nói với {con_ong_chau_cha}: "Chú đang khó. Tháng này cháu tự lo nhé."]
     con_ong_chau_cha: … Chú khó hả? Chú mà cũng khó hả?
@@ -368,7 +363,7 @@ thuc_tap_sinh: Dạ… dạ thẻ này… em nhặt được ạ! *(nhét vội 
 === giam_doc_1210_group_soi_suc ===
 # ngay:12 # gio:22:30 # noi:biet_thu
 _Group "Hội Anti Sếp" như chảo dầu._
-hong_hot: Lương về lúc 5 giờ chiều mấy bà ơi. Tui đặt tên chị {ke_toan} là "nữ hoàng lương trễ" nha.
+hong_hot: Lương trễ hai ngày, 10 giờ sáng nay mới về mấy bà ơi. Tui đặt tên chị {ke_toan} là "nữ hoàng lương trễ" nha.
 sales: Lương trễ mà sếp vẫn đi golf. Sao mà căng.
 { gd_dong_ho_bi_thay:
     hong_hot: Mà khoan… mấy bà để ý hông, sếp hông đeo đồng hồ nữa.

@@ -8,59 +8,39 @@
 //   4. Người Đọc Thư          (bí mật)
 //   5. Người Gác Cổng Được Tin
 //   6. Về Vườn
-//   Không khớp gì: Lòng Tin ≥ 60 thì 5, còn lại thì 4 (Thư Không Hồi Âm).
+//   Thứ tự xét thật (theo sổ tay mục 12): bí mật Người Đọc Thư, Được Tin, Về Vườn,
+//   rồi Bị Cho Nghỉ Hưu, Gác Cổng Cho Người Lạ; mặc định Thư Không Hồi Âm.
 // ============================================================
 
-// Chiến dịch Siêu Nhân Hồng có kết thúc có hậu không (Siêu Sao / Tháo Mũ / Meme)
+// Kết thúc sự nghiệp của Nguyên đã được chung_3110_dem_hong chốt trước khi cảnh này chạy:
+// ket_thuc_su_nghiep và chung_cong_ty_song.
+// Chiến dịch có kết thúc có hậu không (Siêu Sao / Tháo Mũ / Meme)
 === function bv_chien_dich_ok() ===
-{ nguyen_theo_ll:
-    ~ return false
-}
-{ nguoi_theo_doi >= 1000000:
-    ~ return true
-}
-{ nguoi_theo_doi >= 800000 && nguyen_thao_mu_dem_hong:
-    ~ return true
-}
-{ nguoi_theo_doi >= 600000 && so_scandal >= 3:
-    ~ return true
-}
-~ return false
+~ return ket_thuc_su_nghiep == "sieu_sao_hang_a" || ket_thuc_su_nghiep == "thao_mu" || ket_thuc_su_nghiep == "meme_quoc_dan"
 
-// Chiến dịch rơi vào "Bị Cướp Mất" hoặc "Chìm Nghỉm"
+// Chiến dịch mất: Bị Cướp Mất, Chìm Nghỉm, Bị Tẩy Chay
 === function bv_chien_dich_mat() ===
-{ nguyen_theo_ll || ket_thuc_su_nghiep == "bi_cuop_mat" || ket_thuc_su_nghiep == "chim_nghim":
-    ~ return true
-}
-{ nguoi_theo_doi < 600000 && so_scandal < 3:
-    ~ return true
-}
-~ return false
+~ return not bv_chien_dich_ok()
 
 === bac_bao_ve_3010_danh_gia ===
 # ngay:31 # gio:23:00 # bat_buoc # dieu_kien:sau_dem_hong
+// Thứ tự: bí mật, 3 vui, 3 buồn; Thư Không Hồi Âm là mặc định.
 {
-- (bv_lo >= 100 && not bv_thang_biet) || qh_giam_doc <= -40:
-    ~ chot_ket_thuc("bi_cho_nghi_huu")
-    -> bac_bao_ve_kt_bi_cho_nghi_huu
-- bv_nhan_tien_ll && bv_chien_dich_mat():
-    ~ chot_ket_thuc("gac_cong_cho_nguoi_la")
-    -> bac_bao_ve_kt_gac_cong_cho_nguoi_la
-- bv_long_tin_g <= 30:
-    ~ chot_ket_thuc("thu_khong_hoi_am")
-    -> bac_bao_ve_kt_thu_khong_hoi_am
 - bv_mo_phong_bi && bv_mang_giay_to && bv_bi_mat >= 40 && bv_doc_quyet_dinh:
     ~ chot_ket_thuc("nguoi_doc_thu")
     -> bac_bao_ve_kt_nguoi_doc_thu
-- bv_long_tin_g >= 80 && bv_so_thu >= 4 && bv_lo < 50 && not bv_nhan_tien_ll:
+- bv_long_tin_g >= 70 && bv_so_thu >= 3 && bv_lo < 85 && not bv_nhan_tien_ll && qh_giam_doc > -40:
     ~ chot_ket_thuc("nguoi_gac_cong_duoc_tin")
     -> bac_bao_ve_kt_nguoi_gac_cong_duoc_tin
-- bv_chien_dich_ok() && bv_qh_tb() >= 50 && bv_binh_tam >= 70:
+- chung_cong_ty_song && bv_qh_tb() >= 18 && bv_binh_tam >= 65 && not bv_nhan_tien_ll:
     ~ chot_ket_thuc("ve_vuon")
     -> bac_bao_ve_kt_ve_vuon
-- bv_long_tin_g >= 60:
-    ~ chot_ket_thuc("nguoi_gac_cong_duoc_tin")
-    -> bac_bao_ve_kt_nguoi_gac_cong_duoc_tin
+- (bv_lo >= 100 && not bv_thang_biet) || qh_giam_doc <= -40:
+    ~ chot_ket_thuc("bi_cho_nghi_huu")
+    -> bac_bao_ve_kt_bi_cho_nghi_huu
+- bv_nhan_tien_ll && bv_chien_dich_mat() && not chung_cong_ty_song:
+    ~ chot_ket_thuc("gac_cong_cho_nguoi_la")
+    -> bac_bao_ve_kt_gac_cong_cho_nguoi_la
 - else:
     ~ chot_ket_thuc("thu_khong_hoi_am")
     -> bac_bao_ve_kt_thu_khong_hoi_am
@@ -70,8 +50,13 @@
 // 😄 ✉️ NGƯỜI GÁC CỔNG ĐƯỢC TIN
 // ------------------------------------------------------------
 === bac_bao_ve_kt_nguoi_gac_cong_duoc_tin ===
-# ngay:31
+# ket_thuc:nguoi_gac_cong_duoc_tin # loai:co_hau
 _Sáng 1/11. 6 giờ 30. Bác mở cổng. Tiếng then sắt kêu "két" như mọi sáng suốt 16 năm. Radio bật kênh thời sự._
+{ chung_cong_ty_song:
+    _Đêm qua, Đại Nhạc Hội xong, công ty vẫn còn. Sáng nay cổng vẫn mở đúng giờ._
+- else:
+    _Đêm qua, Đại Nhạc Hội xong, ai cũng biết công ty khó giữ. Bác vẫn mở cổng đúng giờ. Cổng thì không biết công ty sắp đóng._
+}
 _Trong hộp thư có một lá thư mới. Tem nước ngoài. Chữ nghiêng nghiêng. Không phải chủ nhật, không phải ngày hồi âm. G viết thêm một lá._
 _"{bac_bao_ve}. Cảm ơn anh. Tháng này tôi ngủ ngon."_
 _"Bốn lá thư của anh, không lá nào nói dối tôi. Có lá làm tôi buồn. Nhưng buồn vì biết thật thì tôi chịu được. Buồn vì không biết gì mới khó."_
@@ -92,7 +77,8 @@ _Bác rót trà. Ly nào cũng đầy. Ai uống đặc, ai uống nhạt, ai c�
 // 😄 🔒 KẾT THÚC BÍ MẬT: NGƯỜI ĐỌC THƯ
 // ------------------------------------------------------------
 === bac_bao_ve_kt_nguoi_doc_thu ===
-# ngay:31
+# ket_thuc:nguoi_doc_thu # loai:co_hau # bi_mat
+_23 giờ, đêm 31/10. Đại Nhạc Hội tan. Bác về lại cổng công ty, rót ấm trà cuối ngày. {ket_thuc_su_nghiep == "sieu_sao_hang_a":Siêu Nhân Hồng đã chạm một triệu.|Siêu Nhân Hồng ra sao thì công ty cũng đã được giữ.}_
 _Người ta sẽ kể về buổi họp đánh giá ngày 30/10 rất nhiều năm sau._
 _Kể rằng phòng họp "Sáng Tạo" chật kín, người đứng tới cửa. Rằng {hr} đã cầm tập hồ sơ màu hồng. Rằng ai cũng nín thở._
 _Rồi ông bảo vệ đi lên. Lần đầu tiên trong 16 năm. Đứng ở cuối phòng. Đeo kính lão. Mở một phong bì đã ố vàng._
@@ -111,7 +97,7 @@ _Dưới chòi, bác tắt đèn. Đúng 9 giờ như mọi khi. Hôm nay muộn
 // 😄 🌱 VỀ VƯỜN
 // ------------------------------------------------------------
 === bac_bao_ve_kt_ve_vuon ===
-# ngay:31
+# ket_thuc:ve_vuon # loai:co_hau
 _Đại Nhạc Hội Siêu Nhân thành công. Siêu Nhân Hồng nổi tiếng. {cong_ty} sống. Bác nhìn tất cả những thứ đó từ cổng sân khấu và nghĩ: thế là đủ._
 _Tháng 11, bác nộp đơn nghỉ hưu. Viết tay, giấy kẻ ô học sinh. {hr} đọc xong, ngồi im năm phút, rồi ký. Lần đầu tiên anh làm thủ tục nghỉ việc mà khóc._
 _Bác về nhà cấp 4 ở Ven Đô. Vườn rau muống. Bể cá. Tủ gỗ. Ghế bố mang từ chòi về, kê dưới gốc cây._
@@ -131,14 +117,18 @@ _Bác ngồi bên bể, rót trà, nhìn ba con cá. Mười sáu năm gác cổ
 // 😢 📭 THƯ KHÔNG HỒI ÂM
 // ------------------------------------------------------------
 === bac_bao_ve_kt_thu_khong_hoi_am ===
-# ngay:31
+# ket_thuc:thu_khong_hoi_am # loai:buon
 _Tháng 11. Hộp thư ở chòi trống._
 _Bác vẫn viết. Tối chủ nhật. Giấy kẻ ô học sinh. Bút bi. "Gửi G,"._
-_Bác kể chuyện Đại Nhạc Hội Siêu Nhân. Kể chuyện {cho} lại cắn dây mạng. Kể chuyện thằng {thuc_tap_sinh} đã biết nói "không"._
+_Bác kể chuyện Đại Nhạc Hội Siêu Nhân. {chung_cong_ty_song:Kể là công ty vẫn còn.|Kể là công ty có lẽ không giữ được.} Kể chuyện {cho} lại cắn dây mạng. Kể chuyện thằng {thuc_tap_sinh} đã biết nói "không"._
 _Năm ngày. Mười ngày. Hộp thư vẫn trống._
 _Tháng 12. Bác viết thật hơn. Viết hết những gì tháng 10 bác đã giấu, đã tô đẹp, đã bỏ không gửi. Viết dài ba trang. Gửi._
 _Hộp thư vẫn trống._
-_Tháng 1. Tết. Công ty treo câu đối. {giam_doc} xuống chòi lì xì bác một phong bao đỏ: "Bác ơi, dạo này bác ít cười thế ạ?"_
+{ chung_cong_ty_song:
+    _Tháng 1. Tết. Công ty treo câu đối. {giam_doc} xuống chòi lì xì bác một phong bao đỏ: "Bác ơi, dạo này bác ít cười thế ạ?"_
+- else:
+    _Tháng 1. Tết. Công ty đã đóng cửa. Bác vẫn được chủ nhà mới thuê trông tòa nhà trống. {giam_doc} ghé qua, lì xì bác một phong bao đỏ: "Bác ơi, dạo này bác ít cười thế ạ?"_
+}
 _Bác cười. Một cái thôi._
 _Có những thứ bác hiểu mà không cần ai nói. G không giận. G chỉ… không còn hỏi. Khi người ta thôi hỏi, là vì người ta thôi tin câu trả lời._
 _Bác vẫn viết. Mỗi tối chủ nhật. Không phải để được trả lời. Mà vì bác đã hứa._
@@ -152,9 +142,9 @@ _Về tới cổng, {cho} chạy ra đón. Hộp thư trống. Bác rót trà, n
 // 😢 🚪 BỊ CHO NGHỈ HƯU
 // ------------------------------------------------------------
 === bac_bao_ve_kt_bi_cho_nghi_huu ===
-# ngay:31
+# ket_thuc:bi_cho_nghi_huu # loai:buon
 _Sáng 1/11. {giam_doc} đứng trước chòi. Không mang hoa. Không mang bánh cốm. Mang một tờ quyết định đánh máy._
-giam_doc: Bác nghỉ ngơi đi ạ. Công ty sẽ thuê bảo vệ dịch vụ.
+giam_doc: Bác nghỉ ngơi đi ạ. {chung_cong_ty_song:Công ty sẽ thuê bảo vệ dịch vụ.|Công ty còn hay không em chưa biết. Nhưng em không làm việc với bác được nữa.}
 _Giọng Bắc đều đều, như đọc một bản tin. Anh không nhìn vào mắt bác. Anh nhìn cái ấm trà sứt vòi._
 giam_doc: Em… em không trách bác. Em chỉ không biết mười năm nay, cái gì em làm cũng có người kể cho người khác. Em không làm việc được như thế, bác ạ.
 _Bác gật đầu. Không giải thích. Có những thứ giải thích muộn thì thành biện minh._
@@ -173,7 +163,7 @@ _{cho} lùi ra khỏi cổng. Lần đầu tiên trong đời, nó đứng ở p
 // 😢 💚 GÁC CỔNG CHO NGƯỜI LẠ
 // ------------------------------------------------------------
 === bac_bao_ve_kt_gac_cong_cho_nguoi_la ===
-# ngay:31
+# ket_thuc:gac_cong_cho_nguoi_la # loai:buon
 _Tháng 12. {cong_ty} không còn nữa. LL-Entertainment mua lại tòa nhà ba tầng với giá rẻ như mua cái chòi._
 _Một sáng thứ 2, xe cẩu tới. Biển chữ "G" bảy màu được tháo xuống. Cái biển Genta vẽ trên tờ giấy ăn ở quán phở năm 2010._
 _Thay vào là chữ "LL" màu xanh lá chuối, đèn LED, sáng cả ngày lẫn đêm._

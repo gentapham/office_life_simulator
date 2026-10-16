@@ -41,7 +41,7 @@ Bây giờ Thái quản lý **hai nghệ sĩ cùng lúc**: Phát, người Thái
 | 🤫 **Độ Giấu Kín** | Tình cảm của Thái với Phát còn kín tới đâu (bắt đầu ở 100) | Đánh trống lảng, nói "anh làm vì công việc" | Gánh hộ Phát, nhìn Phát quá lâu, để người khác thấy tấm ảnh |
 | 🧭 **Lòng Trung Thành** | Thái nghiêng về G-Entertainment hay LL (0 là đã sang LL, 100 là ở lại tới cùng) | Được Thắng tin, Phát cần mình, công ty đối xử tốt | Lương về trễ, bị đổ lỗi, bị Phát làm tổn thương, LL gọi điện |
 
-**Khủng Hoảng đạt 5** thì Thái gục, xem kết thúc "Cháy Máy". **Độ Giấu Kín về 0** thì cả công ty biết, và Thái phải chọn có nói thật với Phát hay không.
+**Khủng Hoảng cao tới cuối tháng** hoặc Pin sập quá nhiều lần thì Thái gục sau đêm diễn, xem kết thúc "Cháy Máy". **Độ Giấu Kín về 0** thì cả công ty biết, và Thái phải chọn có nói thật với Phát hay không.
 
 ---
 
@@ -78,10 +78,10 @@ Thái là **người cầm lịch, cầm hợp đồng, cầm điện thoại** 
 
 | Hành động | Ảnh hưởng tới Độ Nổi Tiếng | Ghi chú |
 |---|---|---|
-| Book gameshow 16/10 ở Đài Tivi Hóng đúng khung giờ vàng | +50.000 | Cần Ép Giá thành công |
+| Giành phần cuối chương trình gameshow 16/10 (quay 14:00, phát 20:00) có quảng bá | +15.000 | Cần Ép Giá thành công |
 | Dập phốt nhanh trong 6 tiếng | Chặn được −20.000 đến −40.000 | Mỗi lần dập Pin −20 |
-| Biến scandal thành PR ("Siêu Nhân Hồng bỏ quay đi giúp bà cụ") | +30.000 | Cần Ngân và Lĩnh hợp tác |
-| Ghép Phát và Nguyên song ca | +150.000 (chung với Phát) | Phải làm hòa cả hai |
+| Biến clip 6/10 (xe chè Bà Bảy) thành PR | +10.000 đến +45.000 (ngoài mốc cố định của game) | Cần Ngân, Lĩnh và Chương hợp tác |
+| Ghép Phát và Nguyên song ca | +20.000 ở gameshow; ở Đại Nhạc Hội chỉ là tiết mục, điểm đêm diễn do cảnh chung tính | Phải làm hòa cả hai |
 | Để lịch trình lọt ra ngoài | −30.000, mở cửa cho paparazzi | Có thể do Sơn, Hiếu hoặc Bảo |
 | **Mang Nguyên sang LL** ngày 27/10 | Nguyên vẫn nổi, nhưng **với LL**. G-Entertainment nhận kết thúc "Bị Cướp Mất" | Lòng Trung Thành về 0 |
 
@@ -96,34 +96,35 @@ Thái là **người cầm lịch, cầm hợp đồng, cầm điện thoại** 
 - **4/10:** Nguyên chọc Tuất, Tuất cắn rách găng tay hồng. Thái mất cả buổi chủ nhật đi tìm găng tay hồng size L.
 
 ### Chương 2: "Bỏ Ngang" (5/10 – 12/10)
-- **6/10:** buổi chụp poster. Nguyên bỏ đi giúp một bà cụ. Phát nhảy vào khung hình. Thái phải chọn: đuổi theo Nguyên, hay chặn Phát.
+- **6/10:** buổi chụp poster. Khoảng 10:30 Nguyên bỏ ngang, chạy xuống đẩy xe chè của Bà Bảy ra khỏi ổ gà ở đầu Hẻm 69, rồi uống chè bằng ống hút luồn qua mũ. Phát nhảy vào khung hình. Thái phải chọn: đuổi theo Nguyên, hay chặn Phát.
 - **7/10 (mốc 50.000):** nếu chưa đạt, Thắng họp khẩn 3 tiếng. Thái nghe trong khi cầm máy dưới gầm bàn trả lời mẹ cô dâu.
 - **9/10:** MV ra mắt. Phát mua 50.000 view ảo cùng giờ. Thái phát hiện. Lựa chọn lớn: nói thẳng với Phát, âm thầm hủy gói, hay lờ đi.
-- **10/10 – 12/10 (lương về trễ):** Phát nhắn lúc 2 giờ sáng: *"Anh ơi, bà quản lý dán giấy lên cửa nhà em."* Thái mở ví điện tử. Còn 9.000.000đ.
+- **10/10 – 12/10 (lương về trễ):** 9:30 sáng 10/10, Phát gọi: *"Anh ơi, bà quản lý dán giấy lên cửa nhà em."* (nợ 3 tháng, hạn 15/10). Thái có thể lén trả 12 triệu tiền nhà tháng 10.
 - Lưu Lực gọi lần đầu: *"Anh Thái, em mời anh ly cà phê. Chỉ cà phê thôi."*
 
 ### Chương 3: "Mất Điện, Mất Sóng" (13/10 – 16/10)
-- **15/10 (mất điện):** hai điện thoại còn 12% pin. Ổ cắm không có điện. Lần đầu tiên sau nhiều năm, Thái **không gọi được cho ai**, phải ngồi yên ở pantry.
+- **15/10 (mất điện):** hai điện thoại còn 12% pin. Ổ cắm không có điện. Lần đầu tiên sau nhiều năm, Thái **không gọi được cho ai**. 11:00 ở cầu thang bộ, Sơn hỏi chuyện LL. Chiều tối ngồi yên ở pantry.
 - Trong bóng tối, Phát hát "Công Viên". Thái ngồi ở góc xa nhất. Không ai thấy mặt Thái lúc đó. Trừ Lĩnh, ngồi ngay bên cạnh, đang cầm điện thoại quay lại cảnh Phát hát.
-- **16/10 (gameshow ở Đài Tivi Hóng):** Thái book được khung giờ vàng. Đài ép Nguyên hát "Công Viên" trong phần "Hit Một Thời". Phát đứng trong cánh gà. Thái đứng giữa hai người, ⏱️ phải chọn ai trước.
+- **16/10 (gameshow ở Đài Tivi Hóng):** Buổi quay lúc 14:00, phát sóng 20:00. Thái giành được phần cuối chương trình. Đài ép Nguyên hát "Công Viên" trong phần "Hit Một Thời". Phát đứng trong cánh gà. Thái đứng giữa hai người, ⏱️ phải chọn ai trước.
 
 ### Chương 4: "Đêm Lửa Trại" (17/10 – 20/10)
-- **17/10 (Vũng Tàu):** Thái không được nghỉ. Nguyên đi giúp ngư dân kéo lưới, bị Tóp-tóp quay lại, phải duyệt clip ngay trên bãi biển.
+- **17/10 (Vũng Tàu):** Thái không được nghỉ. 20:00 lửa trại, Ngân đang livestream đúng lúc Nguyên đưa tay lên mũ: Thái có 3 giây. Nguyên đi giúp ngư dân kéo lưới, bị Tóp-tóp quay lại, phải duyệt clip ngay trên bãi biển.
 - Đêm lửa trại, trò "nói thật": đến lượt Thái. Lựa chọn: nói một sự thật vô hại, nói về LL, hay nói một nửa sự thật về "người mình lo suốt mười một năm".
 - Phát say, ngủ gục trên vai Thái. Thái ngồi im tới khi lửa tàn. Lĩnh ở bên kia đống lửa, mang ra một cái chăn đắp cho cả hai, rồi đi ngủ trước.
 - **18/10:** Sơn (người không đi team building vì "bà ngoại ốm") gọi: *"Ông nói thiệt đi, ông có tính đi LL hông?"*
-- **20/10 (sinh nhật công ty):** Thắng phát biểu, nhắc tới năm 2015. Thắng nhìn Thái: *"Cái thằng Thái ấy, mười hai năm chưa xin nghỉ ngày nào."* Lòng Trung Thành +10.
+- **20/10 (sinh nhật công ty):** 9:00 tặng hoa. 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G", rồi Thắng phát biểu, nhắc tới năm 2015. 21:00 karaoke Chú Sáu. Thắng nhìn Thái: *"Cái thằng Thái ấy, mười hai năm chưa xin nghỉ ngày nào."* Lòng Trung Thành +10.
 
 ### Chương 5: "Hai Phốt Một Ngày" (21/10 – 27/10)
 - **22/10 (kiểm tra thuế):** cát-xê đám cưới của Phát không có hóa đơn. Thái dùng **Gánh Hộ**, hoặc để Phát tự giải trình.
-- **23/10 (sinh nhật Nguyên):** livestream. Tuất phá bánh kem. Thái phải viết thông cáo "Đó là kịch bản" trong 4 phút.
+- **23/10 (sinh nhật Nguyên):** livestream 20:00 ở studio tầng 2, 12.000 người xem. Tuất phá bánh kem. Thái phải viết thông cáo trong 4 phút (có thể nhận lỗi về mình: Gánh Hộ).
 - **24/10 – 25/10:** phốt **"Phát thuê 80.000 fan ảo"** và **clip hát trong bóng tối** nổ cùng một ngày. Khủng Hoảng +2. Thái thức hai đêm. Phát hỏi: *"Sao anh lo cho em dữ vậy?"*
-- **25/10 (chủ nhật):** Thái đến tòa nhà kính LL ở Ven Đô. Lưu Lực đặt hợp đồng lên bàn: 36 triệu mỗi tháng, *"kèm Nguyên"*.
-- **27/10:** LL gửi lời mời chính thức cho Nguyên, gấp ba. Nguyên hỏi Thái: *"Anh Thái, anh nói em nên đi hông?"* **Lựa chọn lớn nhất của Thái.**
+- **25/10 (chủ nhật):** 10:00 Thái đến tòa nhà kính LL ở Ven Đô. Lưu Lực đặt hợp đồng lên bàn: 36 triệu mỗi tháng, *"kèm Nguyên"*. Lúc ra về, Thái thấy Quỳnh ở quầy lễ tân, cả hai giả vờ đi lạc.
+- **27/10:** 10:00 LL gửi lời mời chính thức cho Nguyên, gấp ba. 12:30 Thái hẹn Sơn trên sân thượng (Lĩnh nằm ghế bố giả ngủ). 15:00 Lưu Lực tới sảnh, thấy Hương thì làm rơi tập hồ sơ "Hồng Ngoại". Nguyên hỏi Thái: *"Anh Thái, anh nói em nên đi hông?"* **Lựa chọn lớn nhất của Thái.**
 
 ### Chương 6: "Tắt Máy" (28/10 – 31/10)
-- **29/10 (wifi sập):** không mạng, không phốt mới. Lần đầu tiên sau một tháng, Khủng Hoảng không tăng. Thái ra **Chùa Phố Cũ**, thắp một nén nhang, cầu một điều không dám nói thành lời.
-- **30/10:** họp đánh giá. Thắng quyết định gia hạn hợp đồng cho Phát hay không. Thái có thể đặt cược uy tín của mình để giữ Phát.
+- **28/10:** 2:10 sáng, bản nháp video "16 năm" của Lĩnh tự lên kênh của Lĩnh, cuối video dính đoạn "Thai_final_v12". Sáu phút, khoảng 2.000 lượt xem, rồi bị gỡ. Thái chỉ thấy ảnh chụp khung hình cuối.
+- **29/10 (wifi sập 9:00 – 22:47):** không mạng, không phốt mới. Video "16 năm" kẹt 99%, tới 22:47 mới lên. Lần đầu tiên sau một tháng, Khủng Hoảng không tăng. Thái ra **Chùa Phố Cũ**, thắp một nén nhang, cầu một điều không dám nói thành lời.
+- **30/10:** 12:15 trên sân thượng, Lĩnh đưa Thái chiếc USB con cú chứa bản gốc "Thai_final_v12". 14:00 họp đánh giá (ghế Phó Giám đốc, danh sách cắt giảm, hợp đồng Phát hết hạn 31/10). Thắng quyết định gia hạn hợp đồng cho Phát hay không. Thái có thể đặt cược uy tín của mình để giữ Phát.
 - **31/10 (Đại Nhạc Hội Siêu Nhân):** Thái đứng sau cánh gà với hai cái điện thoại, hoặc ngồi ở LL xem livestream, hoặc ngồi hàng ghế đầu, cả hai máy đã tắt.
 
 ---
@@ -214,16 +215,16 @@ Thái là **người cầm lịch, cầm hợp đồng, cầm điện thoại** 
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được chốt **sau Đại Nhạc Hội Siêu Nhân** (31/10, 23:30, cảnh `quan_ly_idol_3010_danh_gia`), dùng mọi lựa chọn tới hết 31/10. Cảnh cuối đọc `ket_thuc_su_nghiep` và `chung_cong_ty_song` để nói đúng số phận của Nguyên và công ty. Thứ tự xét: bí mật, 2 vui, 3 buồn, rồi mặc định (Quản Lý Của Năm nếu Phát được gia hạn và Thái chưa từng gánh hộ, còn lại là Gánh Hộ Tới Cùng).
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🏆 **Quản Lý Của Năm** | Khủng Hoảng ≤ 1 vào ngày 30/10, chiến dịch Siêu Nhân Hồng thành công, hợp đồng của Phát được gia hạn, Lòng Trung Thành ≥ 70 | Thắng đề bạt Thái làm Trưởng phòng Nghệ sĩ, lương +20%, kèm một trợ lý. Đêm 31/10, sau buổi diễn, Thái ngồi ở bậc thang sân khấu, lấy điện thoại bên phải ra, bấm tắt nguồn. Rồi nhìn điện thoại bên trái rất lâu, và để nó sáng |
-| 2 | 😄 🎙️ **Người Phát Hiện Giọng Hát** | Giúp Sơn đi tiếp trong cuộc thi hát truyền hình (không tố Sơn với HR, đổi lịch cho Sơn ít nhất 3 lần), quan hệ với Sơn ≥ 80, không mang Nguyên sang LL | Thái nghỉ G-Entertainment, mở một công ty quản lý nghệ sĩ nhỏ xíu, chỉ có một bàn và một điện thoại. Nghệ sĩ đầu tiên: Sơn. Đêm chung kết ở Đài Tivi Hóng, Sơn hát xong, nhìn xuống hàng ghế đầu. Thái giơ ngón cái. Sơn cầm micro: *"Con cảm ơn bà ngoại… à không, em cảm ơn anh Thái."* Cả trường quay cười. Thái cũng cười, và điện thoại duy nhất của Thái im lặng suốt buổi |
-| 3 | 😄 🔒 **Kết thúc bí mật: Chuối Chiên Cho Hai Người** | Mở nhánh "Đôi Bạn Thân", từ chối LL, Phát hủy fan ảo, quan hệ với Phát ≥ 80, Khủng Hoảng không bao giờ đạt 5 | Sau Đại Nhạc Hội Siêu Nhân, Phát mua hai bịch chuối chiên ở cổng sân khấu, đưa Thái một bịch. *"Anh đừng đi đâu hết nha. Em… chưa biết nói sao. Mà anh đừng đi."* Hai cái điện thoại trong túi Thái cùng reo. Thái không nghe máy. Lần đầu tiên trong mười hai năm, Thái để mọi chuyện tự lo |
-| 4 | 😢 💚 **Sang Bên Kia Đường** | Ký với LL, dắt Nguyên đi trước Đại Nhạc Hội Siêu Nhân | Thái ngồi văn phòng tầng 18 tòa nhà kính màu xanh lá chuối, chỉ cầm một điện thoại. Qua cửa kính, nhìn thấy tòa nhà tím của G-Entertainment bên kia đường. Ở bậc thềm, một người đeo kính đen ngồi ôm đàn. Điện thoại bên trái không còn ai gọi. Thái mở nhóm "Hội Cá Viên Chiên", gõ một tin, rồi xóa |
-| 5 | 😢 🔥 **Cháy Máy** | Khủng Hoảng đạt 5, hoặc Pin về 0 ba lần trong tuần | Thái ngất ở hành lang Đài Tivi Hóng. Tỉnh dậy ở Phòng khám Đa Khoa Khỏe Re, bác sĩ cấm dùng điện thoại 2 tuần. Trên bàn đầu giường, ba cái điện thoại rung liên tục. Đại Nhạc Hội Siêu Nhân diễn ra mà không có quản lý. Thái xem qua TV phòng khám, tắt tiếng |
-| 6 | 😢 🛡️ **Gánh Hộ Tới Cùng** | Dùng Gánh Hộ ≥ 4 lần, Uy tín ≤ 20 vào ngày 30/10, Độ Giấu Kín vẫn ≥ 80 | Thái bị cắt giảm trong đợt đánh giá. Phát được giữ lại, vì "lỗi toàn là do quản lý". Thái ôm thùng carton đi xuống cầu thang. Phát đi lên, đeo kính đen: *"Ủa anh Thái đi đâu vậy?"* Thái cười: *"Anh đi công chuyện xíu."* Phát gật đầu, đi tiếp. Phát không bao giờ biết |
+| 1 | 😄 🏆 **Quản Lý Của Năm** | Không dắt Nguyên sang LL, hợp đồng Phát được gia hạn ngày 30/10, Khủng Hoảng ≤ 2 cuối tháng, Gánh Hộ ≤ 1 lần, Lòng Trung Thành ≥ 60 | Sau đêm diễn, Thắng đề bạt Thái làm Trưởng phòng Nghệ sĩ, kèm một trợ lý. Câu mở đầu đổi theo kết thúc sự nghiệp (một triệu và top xu hướng, Nguyên tháo mũ, hay "Siêu Nhân Gâu" ký phụ lục tới Tết). Thái ngồi ở bậc thang sân khấu, tắt điện thoại bên phải, và để điện thoại bên trái sáng |
+| 2 | 😄 🎙️ **Người Phát Hiện Giọng Hát** | Không tố Sơn với HR, đổi lịch cho Sơn ít nhất 3 lần, quan hệ với Sơn ≥ 60, không dắt Nguyên sang LL | 23:30 đêm 31/10, Thái coi đoạn video Sơn ôm cúp sau cánh gà chung kết. Ba tháng sau Thái mở công ty quản lý nhỏ xíu, một bàn một điện thoại, nghệ sĩ đầu tiên là Sơn (công ty cũ còn sống hay đã đóng cửa thì câu tiễn đổi theo `chung_cong_ty_song`) |
+| 3 | 😄 🔒 **Kết thúc bí mật: Chuối Chiên Cho Hai Người** | Mở nhánh "Đôi Bạn Thân" (3 giờ sáng 25/10, Độ Giấu Kín ≤ 40), đặt cược uy tín giữ Phát ngày 30/10, không ký LL, Phát hủy fan ảo, quan hệ với Phát ≥ 80, Khủng Hoảng ≤ 3 và Pin về 0 dưới 5 lần | Sau Đại Nhạc Hội, Phát mua hai bịch chuối chiên ở cổng sân khấu, đưa Thái một bịch: *"Anh đừng đi đâu hết nha."* Hai điện thoại cùng reo, Thái úp cả hai xuống. Lần đầu tiên trong mười hai năm, Thái để mọi chuyện tự lo |
+| 4 | 😢 💚 **Sang Bên Kia Đường** | Ký với LL (25/10) và dắt Nguyên đi (27/10) | Một tháng sau, Thái ngồi văn phòng tầng 18 tòa LL, chỉ cầm một điện thoại. Bên kia đường, một người đeo kính đen ngồi ôm đàn ở bậc thềm tòa nhà tím. Thái mở nhóm "Hội Cá Viên Chiên", gõ một tin, rồi xóa |
+| 5 | 😢 🔥 **Cháy Máy** | Khủng Hoảng ≥ 4 cuối tháng, hoặc Pin về 0 từ 5 lần trở lên (chỉ tính lúc Pin rơi xuống 0) | 23:00 đêm 31/10, màn hình lớn vừa tắt, Thái ngất ở hậu trường sân khấu. Tỉnh dậy ở Phòng khám Đa Khoa Khỏe Re, bị cấm điện thoại hai tuần. TV chiếu lại đêm diễn, dòng chữ chạy đổi theo số phận công ty. Lĩnh ngồi canh ở góc phòng (thấy cả chiếc USB con cú nếu Thái đã nhận ngày 30/10) |
+| 6 | 😢 🛡️ **Gánh Hộ Tới Cùng** | Gánh Hộ ≥ 2 lần (thuế 22/10, giật micro 16/10, bánh kem 23/10, thông cáo fan ảo 24/10). Cũng là kết thúc mặc định | Thứ 2 sau đêm diễn, Thái bị cắt giảm. Công ty còn sống thì vì "cái gì cũng do quản lý"; công ty phải hoàn tiền thì Thái xin gạch tên Sơn khỏi danh sách và ghi tên mình vào. Phát được giữ lại nếu đã gia hạn. Thái ôm thùng carton xuống cầu thang: *"Anh đi công chuyện xíu."* Phát không bao giờ biết |
 
 ---
 

@@ -29,7 +29,7 @@ _Bạn biết công ty có bao nhiêu tiền. Bạn là người duy nhất bi�
 // ------------------------------------------------------------
 === ke_toan_0110_ky_hop_dong ===
 # ngay:1 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Phòng họp tầng 2 chật kín. Vali hồng 5 tỷ trên bàn. {sieu_nhan_hong} tạo dáng cho phóng viên._
+_Phòng họp tầng 2 chật kín. Bản hợp đồng 52 trang nằm giữa bàn, cây bút hồng nằm trên đó. {sieu_nhan_hong} tạo dáng cho phóng viên._
 sieu_nhan_hong: Chào cả nhà! Hồng không phải màu, Hồng là thái độ!
 _Bạn đẩy bản hợp đồng sang trước mặt {giam_doc}, nói rất chậm, đủ cho một mình anh ấy nghe._
 ke_toan: Anh {giam_doc}. Trước khi ký… anh đọc giúp em trang 47.

@@ -20,11 +20,11 @@ _17:00. Mốc 3: 500.000 người theo dõi._
     giam_doc: Mà… cảm ơn em đã hỏi. Cả tuần nay chưa ai hỏi anh "ổn không".
     ~ qh("giam_doc", 10)
 * [🦸 Livestream ngay: "Cả nhà ơi, giúp Hồng lên nửa triệu nha! Hồng hứa sẽ…" *(tạo dáng)*]
-    ~ follow(15000)
+    ~ follow(7000)
     _Bạn hứa sẽ nhảy trend mới. Rồi sẽ đi giúp 100 người. Rồi sẽ… bạn hứa hơi nhiều._
 * [💸 Thuê dịch vụ "Like Thật 100%" mua 100.000 người theo dõi bằng Két Vé Số.]
     ~ snh_mua_fan_ao = true
-    ~ snh_ket(15)
+    ~ snh_ket(9)
     ~ follow(100000)
     _Con số nhảy vọt trong một đêm. Sáng mai cả công ty sẽ vui. Bạn sẽ không vui bằng._
 - -> END
@@ -49,20 +49,20 @@ _{ke_toan} nhìn bạn. Cả phòng kế toán im phăng phắc._
     { snh_tra_luong_ho:
         chu_liem: Còn khoản chuyển ngày 10/10 thì sao? Cũng từ anh Siêu Nhân?
         ke_toan: *(nuốt nước bọt)* Dạ… cái đó em… em sẽ bổ sung.
-        ~ snh_tien(15)
+        ~ snh_tien(9)
     - else:
         chu_liem: Được. Tuần sau nộp bổ sung.
-        ~ snh_tien(5)
+        ~ snh_tien(3)
     }
     ~ qh("ke_toan", 5)
 * [🎲 Tạo dáng: "Nguồn gốc của Hồng là… thái độ!"]
     { RANDOM(1, 2) == 1:
         chu_liem: *(bật cười)* Hồi trẻ chú cũng thích siêu nhân. Thôi được, tuần sau nộp bổ sung.
-        ~ follow(5000)
+        ~ follow(2000)
     - else:
         chu_liem: Anh đùa với đoàn kiểm tra à? *(ghi biên bản)*
-        ~ snh_tien(10)
-        ~ snh_meme(20000)
+        ~ snh_tien(6)
+        ~ snh_meme(9000)
         _Ai đó quay clip "siêu nhân tạo dáng trước đoàn thuế". Đêm đó nó lên xu hướng._
     }
 - _Đúng lúc đó, {cho} lững thững đi ngang. Chú Liêm lùi ba bước, nép sau cột: "Con chó đó có xích không?"_
@@ -94,7 +94,7 @@ _Sau lưng cậu ta là gầm cầu thang. Kho của {cho}._
     ~ snh_choc_tuat()
     cho: GÂU GÂU GÂU! *(cắn vào tay áo hồng, kéo ra)*
     _Không lấy được gì. Mất thêm một mảnh tay áo._
-    ~ snh_meme(5000)
+    ~ snh_meme(2000)
 * [🙂 Ngồi xuống cạnh {chua_te_deadline}: "Để anh ngồi đây với em."]
     chua_te_deadline: Ngồi thì có giải quyết gì đâu anh.
     _Nhưng cậu ta không bảo bạn đi._
@@ -124,34 +124,38 @@ _Điện thoại có 3 tin nhắn: ngân hàng chúc mừng sinh nhật, nhà m�
 # ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
 _Livestream sinh nhật. Bánh kem hồng 3 tầng. Cả công ty đội mũ sinh nhật hồng. 30.000 người đang xem._
 sales: Và đây là lời chúc từ chủ tịch BTT Global, Mr. Kevin Trộn!
-_Bước ra là… {thuc_tap_sinh}, đeo kính râm, vest, nói giọng lơ lớ. Diễn quá tốt. Như từng làm sếp ngân hàng thật._
-~ follow(60000)
+{ RANDOM(1, 3):
+- 1:
+    _Bước ra là… {thuc_tap_sinh}, đeo kính râm, vest, nói giọng lơ lớ. Diễn quá tốt. Như từng làm sếp ngân hàng thật._
+- 2:
+    _Bước ra là… {dan_dau_tu}, đeo kính râm, vest đi mượn, nói "lần này là lên thật" bằng giọng Tây. Ba chủ nợ ngồi hàng đầu vỗ tay to nhất._
+- else:
+    _Bước ra là… Bác {bac_bao_ve}, đeo kính râm, vest, ria mép giả. Bác nói đúng một câu "Hello. Good." rồi đứng im như đang trực cổng. Bình luận nổ tung._
+}
 _Giữa buổi, {hong_hot} đưa micro cho bạn. Ống kính chĩa vào bạn. {chua_te_deadline} đứng sau máy quay, đang lướt điện thoại._
-* [🦸 "Vũ ơi… anh thích em. Hông phải PR đâu. Thật đó."]
+* [🦸 "{chua_te_deadline} ơi… anh thích em. Hông phải PR đâu. Thật đó."]
     ~ snh_to_tinh_camera = true
+    ~ snh_vu_noi_pr = true
     { snh_tim_hong < 60:
         ~ snh_to_tinh_pr = true
     }
-    ~ follow(50000)
-    _Hashtag VũƠiTrảLờiĐi lên xu hướng sau 6 phút. {chua_te_deadline} đứng hình, tay vẫn cầm điện thoại._
-    { snh_tim_hong < 60:
-        chua_te_deadline: *(nói nhỏ)* …Anh {quan_ly_idol} dặn anh nói vậy hả? Đỉnh ghê. Lên top luôn.
-        ~ snh_tim(-5)
-    - else:
-        chua_te_deadline: *(nói nhỏ, không cười)* …Anh nói gì kỳ vậy. Trên sóng mà.
-        _Cậu ta quay đi. Nhưng tai đỏ._
-    }
+    ~ follow(14000)
+    _Hashtag #VũƠiTrảLờiĐi lên xu hướng sau 6 phút. {hong_hot} chĩa micro về phía máy quay. {chua_te_deadline} ngẩng lên khỏi điện thoại, chớp mắt hai cái, rồi cười rất tươi._
+    chua_te_deadline: Ý tưởng PR hay đó anh. *(giơ ngón cái vào ống kính)* Mọi người thả tim cho anh Hồng đi!
+    _Bình luận chạy kín màn hình: "Hồng Chill có thật!", "Diễn đỉnh quá". Không ai nghe ra chữ "thật đó"._
+    _Bạn cười, tạo dáng. Bên trong mũ, mặt bạn nóng ran. Không phải vì đèn._
+    ~ snh_tim(-3)
 * [🙂 Nói vào micro: "Cảm ơn mọi người đã ở đây. Năm nay là năm đầu tiên anh không ăn sinh nhật một mình."]
-    ~ follow(30000)
+    ~ follow(14000)
     ~ snh_no(-3)
     _Bình luận chạy chậm lại. Rồi một loạt trái tim. Người ta không cần siêu nhân. Người ta cần một câu thật._
     ~ snh_tim(5)
 * [🦸 Tạo dáng: "Hồng 31 tuổi vẫn là thái độ!"]
-    ~ follow(20000)
+    ~ follow(9000)
 - _Rồi từ cửa, một cái bóng vàng lao vào. {cho}. Thẳng về phía cái bánh 3 tầng._ # hen_gio:4
 * [😂 Cười, giang tay: "{cho} ơi, ăn đi em!"]
     _Cái bánh đổ ụp. Kem hồng bay lên mũ bạn, lên mặt {giam_doc}, lên máy quay. Bạn cười lăn. 30.000 người cười theo._
-    ~ snh_meme(30000)
+    ~ snh_meme(14000)
     ~ qh("cho", 5)
 * [😤 "{cho}! Bánh của anh!"]
     _Cái bánh vẫn đổ. Bạn hét trên sóng trực tiếp. Bình luận: "Siêu nhân giận chó", "Hồng là thái độ… xấu"._
@@ -159,20 +163,48 @@ _Giữa buổi, {hong_hot} đưa micro cho bạn. Ống kính chĩa vào bạn. 
     ~ qh("cho", -5)
 * [🐕 Nằm xuống sàn chơi với {cho}, cho nó liếm kem trên mũ.]
     _{cho} khựng lại. Rồi liếm kem. Rồi nằm cạnh bạn. Lần đầu tiên, nó không cắn mũ._
-    ~ snh_meme(25000)
+    ~ snh_meme(11000)
     ~ qh("cho", 15)
     { co(xuc_xich):
-        ~ mat(xuc_xich)
         ~ snh_cho_xuc_xich()
         _Bạn lấy cây xúc xích trong túi ra. Nó ăn. Rồi vẫn sủa bạn một tiếng. Nhưng sủa nhỏ._
     }
 * [⏱️ (Không chọn kịp)]
     _Cái bánh đổ. {idol_het_thoi} đứng cạnh bàn bánh, phủi tay: "Con chó! Con chó làm đó!". Con chó ở cách đó 2 mét._
-    ~ follow(20000)
+    ~ follow(9000)
 - { snh_mo_nhanh_hieu_ech:
     _Cuối buổi, bạn cắt miếng bánh còn sót lại, đưa {ran_doc} trước tiên. "Em nhỏ hơn anh, phần em trước." Lần này hông ai giật của ai._
     ~ snh_hieu(-5)
 }
+_Giữa đống kem đổ, bạn hỏi vào micro một câu thắc mắc từ hôm 9/10: "Ủa mà sao có đồng coin mang tên anh vậy mọi người?" Không ai trả lời. {dan_dau_tu} nhìn xuống đất._
+-> END
+
+// ------------------------------------------------------------
+=== sieu_nhan_hong_2310_che_sinh_nhat ===
+# ngay:23 # gio:22:30 # noi:hem_69 # bat_buoc
+_22 giờ 30. Livestream tắt. Bạn tháo mũ, ngồi im mười phút, rồi không về nhà. Bạn đi bộ ra đầu Hẻm 69._
+_Quán Chè Bà Bảy còn hai cái ghế trống. Trên bàn nhựa thấp có sẵn một ly chè đậu trắng. Trên ly chè cắm một cây nến nhỏ, loại nến que mua ở tiệm tạp hóa._
+mai: Em coi livestream trên điện thoại của bà. *(quẹt diêm, châm nến)* Sinh nhật mà. Ngồi đi.
+{ snh_vu_noi_pr:
+    mai: Cái câu "thật đó" hồi tối… em nghe ra mà. Người ta không nghe thì thôi.
+- else:
+    mai: Cái bánh kem bị con chó vàng làm đổ hả? Ở đây hông có kem. Có chè.
+}
+_Bà Bảy ngồi trên ghế bố, vỗ tay hát chúc mừng sinh nhật lạc giọng, ba câu thì quên hai._
+* [Thổi nến. Ngồi ăn chè với Mai tới khi quán dọn.]
+    _Bạn thổi nến. Mai ngồi xuống ghế đối diện, ăn chung, ly thứ hai. Không ai hỏi bạn có bao nhiêu người theo dõi._
+    _Năm nay là năm đầu tiên bạn không ăn sinh nhật một mình. Lần này là thật. Không có camera nào._
+    ~ snh_gan_mai(3)
+    ~ cang_thang(-15)
+* [Hỏi: "Sao em biết hôm nay sinh nhật anh?"]
+    mai: Cả nước biết sinh nhật Siêu Nhân Hồng. *(rồi nhỏ giọng)* Em chỉ hông biết sinh nhật thì anh ăn chè gì. Nên em đoán.
+    _Đoán đúng. Đậu trắng, nhiều nước cốt dừa. Như mọi khi._
+    ~ snh_gan_mai(3)
+* [🦸 "Cảm ơn em. Mai Siêu Nhân Hồng đăng bài cảm ơn quán chè nha!"]
+    mai: Thôi anh. *(thổi tắt cây nến giùm bạn)* Đăng lên rồi mai quán đông, bà em mệt.
+    _Bạn gãi đầu. Lần đầu tiên có người từ chối được bạn quảng cáo cho._
+    ~ snh_gan_mai(1)
+- ~ an(10)
 -> END
 
 // ------------------------------------------------------------
@@ -182,15 +214,19 @@ _Căn nhà 12 ghế. Bạn ngồi ở cái ghế có dấu ngồi. Trên bàn l�
 { snh_tim_hong >= 50:
     ~ snh_tin_nhan_vu_sinh_nhat = true
     _Điện thoại rung. Một tin nhắn._
-    chua_te_deadline: *(tin nhắn)* Sinh nhật vui nha anh. Không phải PR đâu. —{chua_te_deadline}
-    * [🙂 Trả lời: "Cảm ơn em. Anh vui."]
+    { snh_vu_noi_pr:
+        chua_te_deadline: *(tin nhắn)* Sinh nhật vui nha anh. Màn hồi tối đỉnh thiệt, tương tác tăng gấp 4. Ý tưởng PR hay nhất năm. —{chua_te_deadline}
+    - else:
+        chua_te_deadline: *(tin nhắn)* Sinh nhật vui nha anh. Livestream ổn áp, mai team mình họp rút kinh nghiệm vụ cái bánh. —{chua_te_deadline}
+    }
+    * [🙂 Trả lời: "Cảm ơn em."]
         ~ snh_tim(5)
-        _Ba chấm nhảy lên. Rồi tắt. Rồi nhảy lên. "Ngủ đi anh. Mai còn chạy deadline." Bạn ngủ với điện thoại trên ngực._
+        _Ba chấm nhảy lên. Rồi tắt. "Ngủ đi anh. Mai còn chạy deadline." Bạn úp điện thoại xuống bàn._
         -> END
     * [🙂 Gửi một tấm ảnh: cái bàn 12 ghế, chỉ có một cái ghế có người.]
-        ~ snh_tim(10)
-        chua_te_deadline: *(tin nhắn)* …Nhà anh to dữ. Mà trống ghê.
-        chua_te_deadline: *(tin nhắn)* Bữa nào em qua ngồi một ghế. Còn 11 ghế mà.
+        ~ snh_tim(5)
+        chua_te_deadline: *(tin nhắn)* Ủa nhà anh to dữ! Bữa nào mượn quay content "Siêu nhân ăn tối một mình" nha. Chắc viral.
+        _Bạn nhìn tin nhắn rất lâu. Cậu ta không sai. Chỉ là cậu ta nhìn cái bàn qua ống kính._
         -> END
 - else:
     _Điện thoại im lặng. Bạn ăn góc bánh, nhìn 11 cái ghế trống. Dưới ánh đèn, cái nào cũng như đang đợi ai._
@@ -200,7 +236,7 @@ _Căn nhà 12 ghế. Bạn ngồi ở cái ghế có dấu ngồi. Trên bàn l�
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_2410_hoi_nghi ===
-# ngay:24 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức hội nghị hòa giải. Các cặp ngồi cạnh nhau: {truong_phong}–{con_ong_chau_cha}, {designer}–{bien_kich}, {sales}–{ke_toan}, {hr}–{thanh_xin_nghi}, {chi_dai}–{thanh_ninh}._
 chi_dai: Em {sieu_nhan_hong} không phải nhân viên, nên làm "đại sứ hòa bình". Đi từng bàn. Ai cãi thì em tạo dáng cho tụi nó cười.
 _Cùng lúc, {hong_hot} chìa điện thoại: clip {idol_het_thoi} hát trong bóng tối hôm mất điện đang lan. Và cùng lúc, có bài bóc 80.000 fan ảo của anh ta._
@@ -208,7 +244,7 @@ _Cùng lúc, {hong_hot} chìa điện thoại: clip {idol_het_thoi} hát trong b
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 8
     _{truong_phong} và {con_ong_chau_cha} bật cười cùng lúc, rồi nhìn nhau ngượng ngùng. {designer} và {bien_kich} cãi nhau xem dáng nào xấu hơn. Ít ra là cãi chuyện khác._
 * [🤝 Đăng bài trên trang mình: "Ai cũng có lúc cần người vỗ tay. Clip hát này của anh {idol_het_thoi} là thật. Mình nghe chính tai."]
-    ~ follow(10000)
+    ~ follow(4000)
     ~ qh("idol_het_thoi", 25)
     ~ qh("quan_ly_idol", 15)
     ~ snh_hieu(-3)
@@ -254,7 +290,7 @@ _{thuc_tap_sinh} ngồi hàng đầu, nắm chặt tay vịn ghế. Cậu ta kh�
     ~ qh("thuc_tap_sinh", 25)
     ~ snh_no(-5)
 * [🦸 Đứng dậy vỗ tay: "Phim hay quá! Người hùng ơi, anh là ai vậy?"]
-    ~ follow(5000)
+    ~ follow(2000)
     bien_kich: *(mỉm cười, cúi chào)* Cảm ơn. Đây là cảm hứng từ… cuộc sống.
     _{thuc_tap_sinh} nhìn {bien_kich}, rồi nhìn xuống. Bạn thấy hết._
 * [💬 Nói nhỏ với {bien_kich}: "Ý tưởng này của {thuc_tap_sinh} mà, em ghi tên cậu ấy đi."]
@@ -291,7 +327,7 @@ luu_luc: Đội ngũ chuyên nghiệp, tòa nhà 20 tầng. Bên đó… chỉ c
     _Bạn ra khỏi quán. Đi ngang {cong_ty}. Không ai biết. Chưa ai biết._
 * {snh_biet_trang_47} [🔒 "Anh có biết G-Entertainment có cái trang 47 hông? Anh trả luôn 10 tỷ cho tụi nó thì anh ký."]
     ~ snh_tu_choi_ll = true
-    ~ snh_tien(5)
+    ~ snh_tien(3)
     luu_luc: *(tái mặt)* Mười… tỷ?
     _Ông ta cất hợp đồng, đứng dậy. Từ nay LL không dám ra giá nữa. Bạn ngồi lại, uống hết ly cà phê. Nói chuyện tiền tỷ bình thản quá, chính bạn cũng thấy lạ._
 - -> END
@@ -304,18 +340,24 @@ _Bạn mở khung chat với {chua_te_deadline}. Gõ: "Em muốn anh ở lại k
 * [🙂 Gửi.]
     { snh_tim_hong >= 60:
         _Ba chấm. Rất lâu. Rồi:_
-        chua_te_deadline: *(tin nhắn)* Em không giỏi trả lời mấy câu này. Em chỉ giỏi để tới phút chót.
-        chua_te_deadline: *(tin nhắn)* Mà phút chót thì em chưa bao giờ trễ. Anh nhớ vậy là được.
-        ~ snh_tim(10)
+        chua_te_deadline: *(tin nhắn)* Anh ở lại thì team mình khỏi làm lại kế hoạch Đại Nhạc Hội. Em mừng. Đồng nghiệp tốt khó kiếm lắm anh.
+        chua_te_deadline: *(tin nhắn)* Mà anh đi thì em cũng ủng hộ. Chill. Ngủ sớm nha anh.
+        ~ snh_tim(5)
     - else:
         chua_te_deadline: *(tin nhắn)* Anh ở đâu thì PR cũng được mà anh. Chill. Em ủng hộ anh hết.
-        _Không sai. Không đúng. Không phải câu bạn muốn nghe._
-        ~ cang_thang(10)
     }
+    _Không sai. Không đúng. Chỉ là câu trả lời của một đồng nghiệp tốt. Bạn tắt màn hình._
+    ~ cang_thang(10)
 * [😶 Xóa. Gõ lại: "Ngủ ngon." Gửi.]
     chua_te_deadline: *(tin nhắn)* Ngủ ngon anh. Ủa mà anh có đi LL hông? Cả công ty hỏi em.
     _Cả công ty hỏi cậu ta. Không ai hỏi bạn có muốn đi không._
 * [📱 Không gửi gì. Mở trang LL, nhìn tấm ảnh tòa kính 20 tầng.]
     ~ snh_no(3)
     _Tòa nhà đẹp. Cửa kính sáng. Không có con chó nào ở cổng. Cũng không có bác bảo vệ nào rót trà._
+* {snh_mai >= 3} [Không gửi gì. Đi bộ ra đầu Hẻm 69.]
+    _Quán Chè Bà Bảy đang dọn. Mai chừa lại một cái ghế, như biết thế nào bạn cũng tới._
+    mai: Nghe nói có công ty bên kia mời anh hả? Cả hẻm bàn tán. *(đặt ly chè xuống)* Anh đi đâu thì đi. Quán em bán tới 12 giờ khuya. Tối nào anh về cũng có chè.
+    _Cả tháng nay ai cũng hỏi bạn "đi hay ở". Chỉ có một người nói "tối nào về cũng có chè"._
+    ~ snh_gan_mai(2)
+    ~ cang_thang(-10)
 - -> END

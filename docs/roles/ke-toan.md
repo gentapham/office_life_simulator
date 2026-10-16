@@ -119,12 +119,12 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 - Ở Vũng Tàu, Thương là người duy nhất giữ hóa đơn của cả đoàn, kể cả hóa đơn 7 dĩa mực nướng Chương gọi "cho cả phòng" mà ăn một mình.
 - **Đêm lửa trại:** trò "nói thật". Nếu Độ Mất Ngủ ≥ 60, Thương lỡ nói: *"Tháng này mà không xong, mình không còn công ty mà team building đâu."* Cả đám im lặng.
 - **18/10:** về thành phố, ai cũng giận ai. Thương thì giận chính mình.
-- **20/10:** sinh nhật công ty 16 tuổi + Ngày Phụ nữ. Thắng muốn tiệc lớn. Bác Bình đọc thư tay của Genta (hoặc không). Nếu thư được đọc, có một câu: *"Nhờ bác để ý giùm tôi, sổ sách dạo này có ổn không."* Thương đánh rơi ly nước. Bác Bình nhìn Thương. Bác không nói gì.
+- **20/10:** sinh nhật công ty 16 tuổi + Ngày Phụ nữ. 10:00 Thắng tặng Thương kính lúp kèm thiệp *"Cảm ơn em đã đọc trang 47 thay anh."* 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G" (hoặc không): *"Mười sáu năm rồi. Các cháu còn đứng đó là anh vui…"* rồi giơ phong bì dán kín "Chỉ mở khi công ty sắp sập". Thương đánh rơi ly nước. 21:00 karaoke Chú Sáu, Thắng say có thể hứa tăng lương 20%.
 
 ### Chương 5: "Thuế Gõ Cửa" (21/10 – 27/10)
 - **21/10 (Mốc 3, 500.000).**
-- **22/10:** **đoàn kiểm tra thuế**, trưởng đoàn là **chú Liêm** (55 tuổi, kính lão, chưa từng cười). Cả công ty giả vờ làm việc chăm chỉ. Minigame "Thuế Tới Rồi". Duy xin phụ một tay, xếp hồ sơ nhanh như một người từng làm ngân hàng. Nếu chú Liêm hỏi tới "các khoản tiền mặt ngoài sổ", Thương phải chọn: nói thật về quỹ đen, hay lảng.
-- **23/10:** sinh nhật Nguyên. Nguyên ngồi phòng chờ ăn bánh chuối chiên, vừa ăn vừa ký tặng. Thương nhìn tờ giấy dính dầu, chợt nhớ ra: **tờ trang 47 trong bản gốc dày gấp đôi các tờ khác**. Nếu quan hệ với {sieu_nhan_hong} ≥ 30, mở nhánh "Trang 47b".
+- **22/10:** **đoàn kiểm tra thuế**, trưởng đoàn là **chú Liêm** (55 tuổi, kính lão, chưa từng cười). Cả công ty giả vờ làm việc chăm chỉ. Minigame "Thuế Tới Rồi". Duy xin phụ một tay, xếp hồ sơ nhanh như một người từng làm ngân hàng. Chú Liêm đòi đủ bốn thứ: bản gốc giấy tờ thành lập (Bác Bình về Ven Đô lấy), hợp đồng BTT (số điện thoại là tiệm nail Lung Linh), nghiệm thu dự án tháng 6 (bản sao trên ổ cứng của Bảo) và nguồn gốc 5 tỷ (trang 47). Rồi chú hỏi tới "các khoản tiền mặt ngoài sổ", Thương phải chọn: nói thật về quỹ đen, hay lảng.
+- **23/10:** sinh nhật Nguyên. Nguyên ngồi phòng chờ ăn bánh chuối chiên, vừa ăn vừa ký tặng. Thương nhìn tờ giấy dính dầu, chợt nhớ ra: **tờ trang 47 trong bản gốc dày gấp đôi các tờ khác**. Nếu quan hệ với {sieu_nhan_hong} ≥ 20, mở nhánh "Trang 47b".
 - **24/10:** Hương tổ chức "hội nghị hòa giải". Thương bị xếp ngồi cạnh Huyền.
 - **27/10:** LL-Entertainment gửi hợp đồng gấp ba cho Nguyên. Cùng ngày, Lưu Lực gửi cho Thương một email riêng: *"Kế toán trưởng LL-Entertainment, lương gấp đôi. Ở LL, chúng tôi chưa bao giờ trả lương trễ."*
 
@@ -132,7 +132,8 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 - **28/10 (Mốc 4, 800.000).**
 - **29/10:** wifi sập, ngân hàng điện tử không vào được. Tiền thuê sân khấu Đại Nhạc Hội Siêu Nhân phải trả trước 17:00, không thì bên cho thuê tháo dỡ. Lựa chọn: chạy xe ra ngân hàng (kẹt xe Đại Lộ Kẹt Xe 1 tiếng), hay mở két quỹ đen trả tiền mặt (Dấu vết +1, nhưng Đại Nhạc Hội Siêu Nhân được cứu).
 - **30/10:** họp đánh giá. Nếu quỹ đen đã bị lộ, đây là ngày Thắng quyết định Thương là ai.
-- **31/10:** Đại Nhạc Hội Siêu Nhân. Thương ngồi hàng ghế cuối, máy tính bỏ túi trong tay, đếm từng nghìn người theo dõi trên điện thoại như đếm tiền.
+- **30/10:** 14:00 họp đánh giá: ghế Phó Giám đốc để sau Đại Nhạc Hội, câu hỏi về lời hứa tăng lương 20%, gia hạn hợp đồng của Phát. Tối 30/10 cất nốt 12 triệu vào két.
+- **31/10:** 18:30, trước giờ diễn, Thương đếm hóa đơn đêm diễn lần cuối ở sân khấu. Đêm diễn do cảnh chung kể. Kết thúc riêng chốt lúc 23:30.
 
 ---
 
@@ -219,18 +220,18 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `ke_toan_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân** (23:30 ngày 31/10), khi `ket_thuc_su_nghiep` và `chung_cong_ty_song` đã được chốt. Không có kết thúc nào chốt sớm, kể cả khi Thương ngất lần hai.
+
+Thứ tự xét: Trang 47b → Người Hùng Quỹ Đen → Sổ Sạch, Ngủ Ngon → Mất Ngủ Vĩnh Viễn → Kẻ Biển Thủ → Phá Sản. Mặc định: Sổ Sạch, Ngủ Ngon.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🦸 **Người Hùng Quỹ Đen** | Quỹ đen đạt ≥ 297 triệu, được lộ ra **một cách chủ động** (tự khai với Thắng hoặc chú Liêm), quan hệ với {giam_doc} ≥ 40 | Họp đánh giá 30/10, Thắng đứng trước cả công ty, cầm cuốn sổ tay ghi tay của bạn: *"Mười năm nay, có người lo cho các em hơn cả anh."* Cả phòng quay sang nhìn bạn. Bạn được bổ nhiệm **Giám đốc Tài chính**. Bạn phát biểu đúng một câu: "Lương tháng 11 về đúng ngày 10. Hóa đơn đâu mọi người?" Cả phòng cười tới mức Tuất sủa theo |
-| 2 | 😄 😴 **Sổ Sạch, Ngủ Ngon** | Qua kiểm tra thuế không bị phạt, chiến dịch Siêu Nhân Hồng đạt 1 triệu người theo dõi, Độ Mất Ngủ < 40 vào ngày 31/10 | Đại Nhạc Hội Siêu Nhân, pháo giấy hồng vừa nổ, 5 tỷ thưởng thêm về tài khoản. Bạn chuyển khoản trả hết nợ ngân hàng ngay trên điện thoại, giữa đám đông đang nhảy. Rồi bạn về nhà số 18, gỡ tờ giấy "trang 47 chữ cỡ 20" khỏi tủ lạnh, tắt điện thoại, và ngủ một mạch 14 tiếng. Sáng ra, có 37 tin nhắn của Thắng. Bạn để "đã xem" |
-| 3 | 😄 🔒 **Kết thúc bí mật: Trang 47b** | Đã mở nhánh "Trang 47b", lấy được chữ ký của {giam_doc} và một người làm chứng ({chi_dai} hoặc {bac_bao_ve}) trước 31/10, chưa từng duyệt khoản chi nào để phá chiến dịch | Dù Đại Nhạc Hội Siêu Nhân thành công hay thất bại, công ty vẫn còn. Cảnh cuối: bạn ngồi một mình trong phòng kế toán, lấy khăn ướt lau sạch vết dầu bánh chuối chiên trên trang 47b, bỏ vào bìa nhựa, cất vào két. Ngoài cửa sổ, Nguyên đang chọc Tuất, Tuất đang đòi cắn mũ. Bạn ghi vào sổ: *"Khoản thu bất ngờ: một người tốt. Không có hóa đơn."* Và lần đầu tiên, bạn duyệt |
-| 4 | 😢 🚨 **Kẻ Biển Thủ** | Đủ 3 dấu vết quỹ đen và quỹ đen bị **người khác** lộ ra (Hiếu tung tin, Duy đếm ra, chú Liêm phát hiện), chưa từng tự khai | Ảnh chụp két sắt sau bức tranh được chiếu lên màn hình phòng họp. Không ai đọc cuốn sổ tay ghi từng đồng. Tuấn mời bạn đi uống trà. Bạn ôm thùng carton toàn hóa đơn đi ra cổng, đi ngang bảng thông báo còn dán tờ "Ai lấy hộp cơm có ghi tên Thương, trả lại". Bác Bình mở cổng, nói nhỏ: "Bác biết cháu không lấy đồng nào." Nhưng bác chỉ nói với mình bạn |
-| 5 | 😢 📉 **Phá Sản** | Chiến dịch thất bại (dưới 1 triệu người theo dõi ngày 31/10), trang 47b chưa có hiệu lực | Ngày 1/11, giấy đòi 10 tỷ tới. Bạn mở két quỹ đen, ngồi cả đêm ở nhà số 18 bỏ từng phong bì: 21 cái, mỗi cái một tháng lương, ghi tên từng người. Cái cuối cùng ghi "Tuất – 60 cây xúc xích". Sáng ra bạn đi phát từng phong bì. Ai cũng cảm ơn. Không ai biết đây là tiền bạn để dành suốt 2 năm. Bạn về, mở email của Lưu Lực, và lần này bạn không đóng nó |
-| 6 | 😢 🏥 **Mất Ngủ Vĩnh Viễn** | Độ Mất Ngủ đạt 100 hai lần trong tháng | Lần thứ hai bạn ngất ở phòng kế toán, ngay ngày 30/10. Bạn tỉnh dậy ở Phòng khám Khỏe Re, đeo dây truyền nước. Trên điện thoại là video Đại Nhạc Hội Siêu Nhân mà bạn không được đi. Bác sĩ dặn nghỉ 2 tháng, tránh mọi con số. Bạn gật đầu, rồi lén lấy giấy ghi đơn thuốc ra tính xem viện phí có được bảo hiểm trả bao nhiêu phần trăm |
-
----
+| 1 | 😄 🔒 **Kết thúc bí mật: Trang 47b** | Mở nhánh "Trang 47b" (23/10, quan hệ với {sieu_nhan_hong} ≥ 20), lấy được chữ ký của {giam_doc} và một người làm chứng ({chi_dai} hoặc {bac_bao_ve}) trước 31/10 (25/10 hoặc 29/10), chưa từng cố tình phá chiến dịch | Nếu Siêu Sao Hạng A thì không ai cần tới 47b. Nếu công ty sống nhờ phụ lục gia hạn thì 47b kẹp sau phụ lục. Nếu không, luật sư của Nguyên gửi giấy "căn cứ trang 47b, không yêu cầu hoàn trả", kể cả khi Nguyên đã sang LL. Sáng 1/11 bạn lau vết dầu bánh chuối chiên trên trang 47b, cất vào két công ty, ghi sổ: *"Khoản thu bất ngờ: một người tốt. Không có hóa đơn."* |
+| 2 | 😄 🦸 **Người Hùng Quỹ Đen** | Đã **tự khai** quỹ đen (với Thắng ngày 12/10 hoặc 30/10, hay với chú Liêm ngày 22/10), quỹ đen còn ≥ 250 triệu, quan hệ với {giam_doc} ≥ 40, chưa ngất lần hai | Quán Ốc Đêm sau Đại Nhạc Hội. Thắng (vẫn mặc đồ "Ông Kẹ Ngân Hàng") đọc to cuốn sổ ghi tay. Đủ 297 triệu thì đọc đúng con số, thiếu thì Thắng bán gậy golf bù. Công ty sống: bạn thành Giám đốc Tài chính, "Lương tháng 11 về đúng ngày 10". Công ty không sống: quỹ đen trả mỗi người một tháng lương, không ai ra về tay trắng |
+| 3 | 😄 😴 **Sổ Sạch, Ngủ Ngon** | `chung_cong_ty_song` (Siêu Sao Hạng A, Tháo Mũ hoặc Meme Quốc Dân), chưa ngất lần hai, quỹ đen không bị người khác lộ | Siêu Sao Hạng A: 5 tỷ thưởng về, bạn tất toán khoản thế chấp biệt thự ngay giữa đám đông. Tháo Mũ / Meme Quốc Dân: bạn đọc kỹ phụ lục gia hạn tới Tết, đưa Thắng đọc trước khi ký. Rồi về nhà số 18, gỡ tờ "trang 47 chữ cỡ 20" khỏi tủ lạnh và ngủ một mạch |
+| 4 | 😢 🏥 **Mất Ngủ Vĩnh Viễn** | Độ Mất Ngủ chạm 100 hai lần trong tháng | Phòng khám Khỏe Re, nghỉ 2 tháng, tránh mọi con số. Bạn xem video Đại Nhạc Hội trên điện thoại, chỗ bạn định đứng có một cái máy tính bỏ túi. Rồi lén lấy đơn thuốc ra tính viện phí |
+| 5 | 😢 🚨 **Kẻ Biển Thủ** | Đủ 3 dấu vết quỹ đen và quỹ đen bị **người khác** lộ ra, chưa từng tự khai | Ảnh két sắt bị gửi vào group ngay lúc pháo giấy nổ. Thứ Hai, Tuấn mời bạn uống trà rồi đưa giấy ký. Bạn ôm thùng carton hóa đơn ra cổng. Bác Bình nói nhỏ: "Bác biết cháu không lấy đồng nào." |
+| 6 | 😢 📉 **Phá Sản** | `not chung_cong_ty_song` (Chìm Nghỉm, Bị Tẩy Chay, Bị Cướp Mất) | Ngày 1/11, giấy đòi 10 tỷ tới. Bạn bỏ 21 phong bì lương từ quỹ đen (hoặc từ tiền tiết kiệm nếu đã nộp quỹ), cái cuối ghi "Tuất – 60 cây xúc xích". Về nhà, hộp thư có email của Lưu Lực và thư mời "Phòng Trà Nhân Sự" của Tuấn. Bạn không đóng cái nào |
 
 ## 9. Thành tựu
 

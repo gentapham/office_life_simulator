@@ -51,9 +51,9 @@ _Dưới sân, nghe tiếng xe Tèo, {cho} bắt đầu sủa như báo động 
 
 // ------------------------------------------------------------
 === hr_0610_vu_chay_toi ===
-# ngay:6 # gio:10:30 # noi:phong_hr # bat_buoc
+# ngay:6 # gio:11:00 # noi:phong_hr # bat_buoc
 _Cửa phòng HR bật mở. {chua_te_deadline} đứng đó, thở hồng hộc, tóc dựng như vừa bị điện giật._
-chua_te_deadline: Anh {hr}! Ổng bỏ đi rồi! Đang chụp poster thì thấy bà cụ xách giỏ qua đường, ổng bỏ ngang luôn! Studio thuê theo giờ đó anh!
+chua_te_deadline: Anh {hr}! Ổng bỏ đi rồi! Đang chụp poster thì thấy xe chè của Bà Bảy sụp ổ gà ngoài Đường Hóng, ổng bỏ ngang luôn! Studio thuê theo giờ đó anh!
 chua_te_deadline: Anh tuyển giùm em người nào giữ được ổng đi! Em lạy anh!
 _{chua_te_deadline} đứng trong phòng HR. Lần đầu tiên có người tự vào phòng HR mà không bị mời._
 * [🍵 "Ngồi xuống, uống ly trà bạc hà cho hạ hỏa đã em."]
@@ -69,8 +69,7 @@ _{chua_te_deadline} đứng trong phòng HR. Lần đầu tiên có người t�
     ~ qh("chua_te_deadline", -10)
     chua_te_deadline: Ok mom. *(quay đi)* Biết vậy hông lên.
 * [💬 "Bà cụ đó sao rồi em?"]
-    chua_te_deadline: Hả? À… ổng dắt bả qua đường, xách giỏ về tận nhà, sửa luôn cái quạt máy. Có đứa quay clip lại. *(mở điện thoại)* Ủa… sao nó lên 200 ngàn view rồi?
-    ~ follow(10000)
+    chua_te_deadline: Hả? À… ổng đẩy xe chè lên khỏi ổ gà, rồi ngồi ăn chè bằng ống hút luồn qua mũ. Có người quay clip lại. *(mở điện thoại)* Ủa… sao nó lên cả chục ngàn view rồi?
     _Clip giúp bà cụ đang lan nhanh hơn mọi poster công ty từng làm._
 - -> END
 
@@ -170,32 +169,30 @@ _Trên đường về, {editor} ngủ gục trên vai bạn ở ghế sau xe ôm
 
 // ------------------------------------------------------------
 === hr_0910_mv_ra_mat ===
-# ngay:9 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
-_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Ra mắt MV đầu tiên của Siêu Nhân Hồng. Cả công ty chen chúc trước màn chiếu._
-_MV mở đầu bằng cảnh {sieu_nhan_hong} bay qua thành phố (cẩu treo), kết thúc bằng cảnh tạo dáng trước một quả trứng khổng lồ màu hồng. Không ai hiểu vì sao có quả trứng._
-sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! Mọi người share giùm nha!
-~ follow(40000)
-_Lượt xem nhảy liên tục. {dan_dau_tu} hét lên mỗi lần qua một mốc nghìn._
+# ngay:9 # gio:19:30 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Trứng Thế giới. 19:30. Còn nửa tiếng nữa MV "Hồng Hóa Việt Nam" lên kênh Tóp-tóp và Diu-túp của công ty. Cả công ty ở lại, chen chúc trước màn chiếu phòng họp tầng 2._
+sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! Tám giờ đúng mọi người share giùm nha!
+_Mọi ánh mắt quay về phía bạn. Vì chuyện "share" là chuyện của HR._
 * {hr_kpi_share} [📋 Nhắc KPI share bài trong group.]
     ~ follow(5000)
     ~ hr_so(3)
-    _21 người share trong 3 phút. Ai cũng sợ HR kiểm tra. Group "Hội Anti Sếp" cũng share, kèm caption "bị ép"._
+    _20:00. MV lên sóng. 21 người share trong 3 phút. Ai cũng sợ HR kiểm tra. Group "Hội Anti Sếp" cũng share, kèm caption "bị ép"._
 * [🎉 Hoạt Động Gắn Kết: "Cả nhà đứng dậy, nắm tay thành vòng tròn, hô 'Hồng là thái độ'!"]
     { RANDOM(1, 2) == 1:
         ~ tinh_than_cong_ty = tinh_than_cong_ty + 6
         ~ cang_thang(-5)
         ~ follow(8000)
         ~ hr_so(-5)
-        _Vòng tròn 22 người. {hong_hot} livestream. {cho} chạy vòng quanh sủa theo nhịp. Clip "công ty hô khẩu hiệu như giáo phái" lên Tóp-tóp._
+        _20:00. MV lên sóng. Vòng tròn 22 người. {hong_hot} livestream. {cho} chạy vòng quanh sủa theo nhịp. Clip "công ty hô khẩu hiệu như giáo phái" lên Tóp-tóp._
     - else:
         ~ hr_so(3)
         _Không ai đứng dậy. Chỉ có {thuc_tap_sinh} và {sieu_nhan_hong} nắm tay nhau, thành một vòng tròn… 2 người. Rất buồn._
     }
-* [🥚 Ra căn tin mua trứng luộc cho cả phòng.]
+* [🥚 Mở túi trứng luộc mua ở căn tin hồi chiều, chia cho cả phòng.]
     ~ tien_cong(-66000)
     ~ an(15)
     ~ hr_so(-2)
-    _22 quả trứng. Ai cũng nhận, không ai hỏi "trứng này có ý gì không anh". Trứng là thứ duy nhất HR đưa mà không ai sợ._
+    _20:00. MV lên sóng, có cả một quả trứng khổng lồ màu hồng. 22 quả trứng thật trong phòng. Ai cũng nhận, không ai hỏi "trứng này có ý gì không anh". Trứng là thứ duy nhất HR đưa mà không ai sợ._
 - -> END
 
 // ------------------------------------------------------------
@@ -250,7 +247,7 @@ _Ứng viên số 5: một anh chàng đẹp trai, nói tiếng Anh như gió, k
 # ngay:10 # gio:10:00 # noi:can_ho_604 # bat_buoc
 _Thứ 7, ngày 10. Ngày lương. Lương chưa về. Ngân hàng "kiểm tra giao dịch lớn"._
 _Group Zalo-lô công ty: 312 tin nhắn trong 2 tiếng. Toàn dấu chấm hỏi._
-_Tin nhắn riêng của {giam_doc}: "Tuấn ơi, em quản lý cảm xúc của anh em giúp anh nhé. Anh đang nói chuyện với ngân hàng. Hôm nay Ngày Giải phóng Thủ đô, anh nhớ Hà Nội quá."_
+_Tin nhắn riêng của {giam_doc}: "{hr} ơi, em quản lý cảm xúc của anh em giúp anh nhé. Anh đang nói chuyện với ngân hàng. Hôm nay Ngày Giải phóng Thủ đô, anh nhớ Hà Nội quá."_
 _Bạn gõ tin nhắn vào group. Ngón tay lơ lửng._
 * [💬 "Cả nhà bình tĩnh nha, lương sẽ về sớm thôi 😊"]
     ~ hr_so(5)
@@ -322,20 +319,20 @@ chi_dai: {hr}! HR đứng đó cười là sao? Ông biết gì nói đi!
     ~ hr_tra()
     ~ hr_so(-2)
     _Trà gừng cho người đang nóng giận. Sai bài. {sales} uống một ngụm, mặt đỏ như trái ớt._
-- _10 giờ 47. Điện thoại cả phòng rung cùng lúc. "Tài khoản +…". Lương về. Tiếng thở phào to tới mức {cho} dưới sân cũng sủa theo._
+- _10 giờ đúng. Điện thoại cả phòng rung cùng lúc. "Tài khoản +…". Lương về. Tiếng thở phào to tới mức {cho} dưới sân cũng sủa theo._
 ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 ~ cang_thang(-10)
 -> END
 
 // ------------------------------------------------------------
 === hr_1210_the_bi_tu_choi ===
-# ngay:12 # gio:12:30 # noi:quan_com_tam
-_Quán cơm tấm. Cô Năm mang ra 9 đĩa. {con_ong_chau_cha} rút thẻ, hào phóng: "Hôm nay anh bao!"_
-phu_co_nam: Thẻ bị từ chối nè con.
+# ngay:12 # gio:12:30 # noi:song_ao
+_Trưa, Cà Phê Sống Ảo. Lương vừa về, cả bàn gọi 9 ly. {hong_hot}, {ran_doc}, {thuc_tap_sinh} ngồi cùng bàn với bạn. {con_ong_chau_cha} rút thẻ, hào phóng: "Hôm nay anh bao!"_
+phu_chu_quan_song_ao: Thẻ bị từ chối nè em.
 con_ong_chau_cha: Ủa? Thẻ phụ của chú anh mà. Chưa bao giờ… Để anh gọi chú anh.
 _Không ai bắt máy. {con_ong_chau_cha} ngồi xuống, mặt trắng bệch. Cả bàn im lặng._
 thuc_tap_sinh: Dạ… để em trả cho ạ!
-_{thuc_tap_sinh} rút ví. Một cái thẻ lấp lánh rơi ra bàn. Hạng kim cương. Cả bàn nhìn. {thuc_tap_sinh} vội nhét lại, đổi sang tiền mặt._
+_{thuc_tap_sinh} rút ví. Một cái thẻ lấp lánh rơi ra bàn. Hạng kim cương. Cả bàn nhìn. {hong_hot} đã kịp chụp. {thuc_tap_sinh} vội nhét lại, đổi sang tiền mặt._
 * [😶 Giả vờ không thấy, trả tiền phần mình rồi đứng dậy.]
     ~ qh("thuc_tap_sinh", 5)
     _HR biết nhiều chuyện. HR giỏi nhất là biết mà không nói._

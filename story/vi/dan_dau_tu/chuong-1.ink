@@ -51,8 +51,8 @@ sales: Anh {dan_dau_tu}… cái số này là…
 // ------------------------------------------------------------
 === dan_dau_tu_0110_tra_sua ===
 # ngay:1 # gio:15:30 # noi:tang_1
-_Cả công ty ăn mừng 5 tỷ bằng trà sữa. Bạn nhận ly của mình. Trên khay còn một ly nữa, dán tên {thanh_xin_nghi}, người hôm nay nghỉ vì "bà ngoại ốm"._
-_Bạn nợ {thanh_xin_nghi} 500.000đ "tiền ăn trưa". Về mặt kế toán, uống ly trà sữa này có thể coi là… lãi âm._
+_Cả công ty ăn mừng 5 tỷ bằng trà sữa. Bạn nhận ly của mình. Trên khay còn một ly nữa, dán tên {idol_het_thoi}, người chiều nay đi hát đám cưới ở Ven Đô._
+_Bạn nợ {idol_het_thoi} 500.000đ "tiền ăn trưa". Về mặt kế toán, uống ly trà sữa này có thể coi là… lãi âm._
 * [🧋 Uống luôn ly của {thanh_xin_nghi}.]
     _Ngọt. Hơi tội lỗi. Chủ yếu là ngọt._
     ~ uong(30)
@@ -62,9 +62,9 @@ _Bạn nợ {thanh_xin_nghi} 500.000đ "tiền ăn trưa". Về mặt kế toán
         hong_hot: *(chụp hình)* Ủa anh {dan_dau_tu} uống hai ly hả? Lên group liền!
         ~ danh_tieng = danh_tieng - 5
     }
-* [📦 Cất vào tủ lạnh, dán giấy "Của {thanh_xin_nghi}. Đừng ai uống. Kể cả tui."]
-    _Hôm sau {thanh_xin_nghi} đi làm, thấy ly trà sữa còn nguyên với tờ giấy. Nhắn bạn: "Anh {dan_dau_tu} tử tế ghê."_
-    ~ qh("thanh_xin_nghi", 10)
+* [📦 Cất vào tủ lạnh, dán giấy "Của {idol_het_thoi}. Đừng ai uống. Kể cả tui."]
+    _Hôm sau {idol_het_thoi} đi làm, thấy ly trà sữa còn nguyên với tờ giấy. Nhắn bạn: "Em {dan_dau_tu} tử tế ghê. Fan anh mà biết chắc cảm động."_
+    ~ qh("idol_het_thoi", 10)
     ~ uong(30)
 - -> END
 
@@ -90,8 +90,8 @@ _Bạn có… cái điện thoại đang mở chart, và 87.000đ trong ví._
 
 // ------------------------------------------------------------
 === dan_dau_tu_0210_hop_chien_dich ===
-# ngay:2 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp chiến dịch "Hồng Hóa Việt Nam". {truong_phong} vẽ một mũi tên đi lên trên bảng trắng. {sales} hứa ba nhà tài trợ 2 tỷ từ "BTT Global"._
+# ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
+_9 giờ 30. Họp chiến dịch "Hồng Hóa Việt Nam". {truong_phong} vẽ một mũi tên đi lên trên bảng trắng. {sales} hứa ba nhà tài trợ 2 tỷ từ "Tập đoàn Bánh Tráng Trộn Toàn Cầu, BTT Global", chủ tịch "Mr. Kevin Trộn"._
 _{thuc_tap_sinh} kể lại một ý tưởng phim về "người gác két". Không ai để ý lắm, trừ {bien_kich}, đang ghi chép rất nhanh._
 giam_doc: {dan_dau_tu}. Mục tiêu một triệu người theo dõi trong 30 ngày. Có khả thi không? Em là người của số liệu, em nói anh nghe.
 _Bạn mở bảng số liệu. 5.000 người theo dõi. Tăng tự nhiên khoảng 12.000 một ngày. Nhân 30. Cộng các sự kiện lớn…_
@@ -162,6 +162,9 @@ chua_te_deadline: Anh {dan_dau_tu}, làm ván không? Thua thì bao nước.
     ~ ddt_dc(2)
     ~ qh("chua_te_deadline", 5)
 - chua_te_deadline: Mà anh, nghe nói anh nợ nửa công ty hả? Tui thì chưa cho anh mượn. Chắc vì tui cũng không có.
+_{chua_te_deadline} móc ví trả tiền bàn. Một tờ vé gửi xe tháng 9 rơi ra. {chua_te_deadline} nhặt lên, nhìn rất lâu, mặt tái dần._
+chua_te_deadline: …Bãi xe. Tháng 9. Cái USB của tui. Chắc rớt ở đó.
+_Bạn ghi nhớ. Người của số liệu nhớ mọi thứ có ngày tháng._
 -> END
 
 // ------------------------------------------------------------
@@ -195,9 +198,9 @@ _Ngày 5. Bà Tư chủ trọ ngồi ghế đẩu đầu dãy, quạt nan phe ph
 _Cửa gác lửng của bạn dán 6 tờ giấy nhắc nợ của {sales}. Bà Tư nhìn chúng như nhìn một bộ sưu tập._
 ba_tu: Nay mùng mấy rồi con?
 * [💸 "Dạ mùng 5. Con gửi tiền trọ đây bà."]
-    { tien >= 1500000:
-        ~ tien_cong(-1500000)
-        ba_tu: Giỏi. Mà mấy tờ trên cửa, bao giờ con gỡ?
+    { tien >= 2400000:
+        ~ tien_cong(-2400000)
+        ba_tu: Giỏi. Hai triệu tư, tính luôn tiền điện. Mà mấy tờ trên cửa, bao giờ con gỡ?
         _Bạn không trả lời. Bạn chỉ dán thêm băng keo cho tờ thứ 6 khỏi rơi._
     - else:
         _Bạn mở ví. Bà Tư nhìn vào ví. Bà thở dài, rất dài._
@@ -240,11 +243,11 @@ _Bạn nợ {thuc_tap_sinh} 500.000đ. Người cho bạn mượn tiền đang t
 // ------------------------------------------------------------
 === dan_dau_tu_0610_clip_ba_cu ===
 # ngay:6 # gio:14:00 # noi:ban_so_lieu # bat_buoc
-_Buổi chụp poster sáng nay đổ bể: {sieu_nhan_hong} bỏ ngang để dắt một bà cụ qua đường. Ai đó quay clip, {hong_hot} đăng lên._
-_Màn hình trái: cột lượt xem của clip bà cụ vọt lên như tên lửa, cao gấp nhiều lần mọi video khác._
+_Buổi chụp poster sáng nay đổ bể: khoảng 10 giờ rưỡi, {sieu_nhan_hong} bỏ ngang để đẩy xe chè của Bà Bảy ra khỏi ổ gà trên Đường Hóng, rồi ngồi ăn chè bằng ống hút luồn qua mũ. Ai đó quay clip, {hong_hot} đăng lên._
+_Màn hình trái: cột lượt xem của clip xe chè vọt lên như tên lửa, cao gấp nhiều lần mọi video khác._
 _Màn hình phải: Một đồng coin vừa nhảy 3%. Nến xanh. Nhỏ, nhưng xanh._
 * [📊 Phóng to màn hình trái. Nhìn kỹ cái cột đó.]
-    _Clip bà cụ: lượt xem đang gấp 12 lần trung bình. Tỷ lệ chia sẻ cao bất thường. Bình luận: "Thương quá", "Siêu nhân thật đây rồi"._
+    _Clip xe chè: lượt xem đang gấp 12 lần trung bình. Tỷ lệ chia sẻ cao bất thường. Bình luận: "Thương quá", "Siêu nhân thật đây rồi"._
     _Bạn ghi vào một mẩu giấy: "Khán giả thích… đi giúp người?" Rồi dán nó lên mép màn hình._
     ~ ddt_thay_clip_ba_cu = true
     ~ ddt_lam_that(5)

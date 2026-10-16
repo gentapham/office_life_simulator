@@ -29,8 +29,8 @@ _Bạn đứng ngay trước cửa thang máy, tay cầm ly trà sữa, điện 
 
 // ------------------------------------------------------------
 === sales_1510_trang_47 ===
-# ngay:15 # gio:10:30 # noi:pantry # bat_buoc
-_Pantry tối. Cả công ty ngồi bệt dưới sàn. Bạn ngồi cạnh {ke_toan} và {chi_dai}, vừa được cứu khỏi thang máy, mặt còn hầm hầm._
+# ngay:15 # gio:14:00 # noi:pantry # bat_buoc
+_14 giờ. Pantry tối. Cả công ty ngồi bệt dưới sàn. Bạn ngồi cạnh {ke_toan} và {chi_dai}, vừa được cứu khỏi thang máy, mặt vẫn còn hầm hầm từ vụ thang máy sáng nay._
 ke_toan: *(thì thầm với {chi_dai})* {chi_dai}. Trang 47. Nếu không đủ 1 triệu người theo dõi, công ty hoàn lại 10 tỷ.
 chi_dai: Mười… tỷ?
 ke_toan: Và ngân sách Đại Nhạc Hội thì đang tính 2 tỷ của {sales}.
@@ -51,14 +51,11 @@ _Lần đầu tiên, 2 tỷ không còn là con số để phét. Nếu không c
     ke_toan: *(không quay sang)* Ừ. Chị ghi nhận.
     _Lần này, chính bạn cũng nghe ra câu đó rỗng tuếch tới mức nào._
     ~ cang_thang(10)
-- { sl_bong_bong >= 100:
-    -> sales_tudo_bong_bong_be
-}
--> END
+- -> END
 
 // ------------------------------------------------------------
 === sales_1510_noi_that_voi_duy ===
-# ngay:15 # gio:14:00 # noi:cau_thang
+# ngay:15 # gio:15:30 # noi:cau_thang
 _Chiều. Vẫn mất điện. Cầu thang bộ tối om. Bạn ngồi ở bậc thứ 7, nơi duy nhất không có ai. Rồi {thuc_tap_sinh} ngồi xuống bậc thứ 6, đưa bạn một cục sạc dự phòng._
 thuc_tap_sinh: Dạ chị xài đi ạ. Em… em có dư 5 cục ạ.
 _Trong bóng tối, không ai thấy mặt ai. Có lẽ vì vậy mà câu này tự bật ra._
@@ -101,10 +98,10 @@ _Bạn nghe và nghĩ: năm 2015, cả nước hát bài này. Cả nước. M�
 
 // ------------------------------------------------------------
 === sales_1610_buc_bi_doi ===
-# ngay:16 # gio:10:30 # noi:dai_tivi_hong # bat_buoc
+# ngay:16 # gio:13:30 # noi:dai_tivi_hong # bat_buoc
 _Đài Tivi Hóng, trường quay "Hồng Hay Không Hồng". Bạn đã bán cho Tiệm Nail Lung Linh một suất "logo trên bục". 5 triệu. Tiền thật. Đã nhận._
 _Nhưng bục đã bị đổi chỗ. Logo tiệm nail giờ nằm… sau cây cột, chỉ camera số 4 quay tới, mà camera số 4 hỏng._
-dao_dien_tivi_hong: Em ơi, sân khấu chốt rồi. Còn 10 phút là lên sóng. Không đổi được. # hen_gio:8
+dao_dien_tivi_hong: Em ơi, sân khấu chốt rồi. 14 giờ là bấm máy. Không đổi được. # hen_gio:8
 * [🗣️ "Anh ơi, tin chị đi, tiệm nail này là nhà tài trợ chiến lược của tập đoàn đa quốc gia!"]
     { RANDOM(1, 10) <= 4:
         dao_dien_tivi_hong: Đa quốc gia hả? …Thôi được, dời bục 1 mét.
@@ -127,11 +124,11 @@ dao_dien_tivi_hong: Em ơi, sân khấu chốt rồi. Còn 10 phút là lên só
         _Bạn không có voucher. Bạn đưa một tấm danh thiếp. Đạo diễn bỏ vào túi, không nhìn._
     }
 * [⏱️ (Không chọn kịp)]
-    _Đèn đỏ "ON AIR" bật lên. Bục giữ nguyên chỗ cũ. Logo tiệm nail chìm sau cây cột._
+    _Đèn đỏ bật lên, máy quay chạy. Bục giữ nguyên chỗ cũ. Logo tiệm nail chìm sau cây cột._
 - { sl_nail_logo_buc:
     ~ sl_that(5)
     ~ follow(5000)
-    _Logo Tiệm Nail Lung Linh hiện rõ trên sóng. Chị chủ tiệm gửi bạn ảnh chụp màn hình tivi kèm 12 trái tim._
+    _Logo Tiệm Nail Lung Linh nằm ngay giữa khung hình. 20 giờ tối, chương trình phát sóng, chị chủ tiệm gửi bạn ảnh chụp màn hình tivi kèm 12 trái tim._
 - else:
     _Chị chủ tiệm nail nhắn: "Em ơi, logo chị đâu?". Bạn nhìn tin nhắn rất lâu, rồi lên phòng kế toán xin hoàn lại 5 triệu cho chị. Tiền thật thì trả cũng phải thật._
     ke_toan: Hoàn tiền mà có lý do rõ ràng. *(ký)* Lần đầu chị duyệt cho em mà không cần hỏi hóa đơn.
@@ -142,8 +139,8 @@ dao_dien_tivi_hong: Em ơi, sân khấu chốt rồi. Còn 10 phút là lên só
 
 // ------------------------------------------------------------
 === sales_1610_gameshow ===
-# ngay:16 # gio:15:00 # noi:dai_tivi_hong # bat_buoc
-_Phần "Hit Một Thời". {sieu_nhan_hong} cầm micro, hát "Công Viên"._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14 giờ, bấm máy. Phần "Hit Một Thời". {sieu_nhan_hong} cầm micro, hát "Công Viên"._
 sieu_nhan_hong: *(hát)* Ngày xưa có đôi bạn thân… bán… khoai chiên… tại công viên…
 _Sai lời. Cả trường quay ồ lên. Rồi từ cánh gà, một giọng hát bè vang lên, đúng lời, đúng nốt. Là {idol_het_thoi}._
 _Khán giả trường quay đứng dậy. Có người khóc. Bạn đứng ở hậu trường, ngay cạnh {quan_ly_idol}, mắt ông đỏ hoe._
@@ -161,15 +158,15 @@ _Khán giả trường quay đứng dậy. Có người khóc. Bạn đứng ở
 
 // ------------------------------------------------------------
 === sales_1610_buffet ===
-# ngay:16 # gio:18:30 # noi:pantry
-_Ngày Lương thực Thế giới. Công ty liên hoan buffet: gà rán, bánh mì, chè, trà sữa thứ 6. Lương tuần cũng về._
+# ngay:16 # gio:19:30 # noi:sanh_cong_ty
+_Ngày Lương thực Thế giới. Xe của đoàn về tới công ty lúc 19 giờ. Liên hoan buffet ở sảnh: gà rán, bánh mì, chè. 20 giờ, cái tivi ở sảnh sẽ phát gameshow quay chiều nay._
 _Tủ lạnh căn 1203 trống ba ngày rồi. Bạn mở túi xách "hàng hiệu", lặng lẽ xếp hộp nhựa vào._
 * [🍗 Gói 6 cái đùi gà, 2 hộp chè. Nhanh, gọn, chuyên nghiệp.]
     ~ nhan(com_tam)
     ~ an(30)
-    _{ke_toan} đi ngang. Dừng lại. Nhìn túi bạn._
+    _{ke_toan} đi ngang. Dừng lại. Nhìn túi bạn. Chị nhìn lâu hơn cần thiết._
     ke_toan: …Gói thêm hộp xôi đi em. Để đó cũng đổ.
-    _{ke_toan} quay đi. Bạn không chắc mình vừa thấy {ke_toan} cười._
+    _{ke_toan} quay đi. Bạn không chắc mình vừa thấy {ke_toan} cười. Bạn chỉ chắc một điều: chị đã biết tủ lạnh nhà bạn trống._
     ~ qh("ke_toan", 5)
 * [🤝 Rủ {designer} cùng gói, chia đôi.]
     designer: Mình là đồng phạm rồi đó em.
@@ -177,7 +174,7 @@ _Tủ lạnh căn 1203 trống ba ngày rồi. Bạn mở túi xách "hàng hi�
     ~ an(30)
 * [😇 Ăn tại chỗ cho no. Không gói gì.]
     ~ an(60)
-    _Bạn ăn 4 cái đùi gà. Ngày mai thì ngày mai tính. Slogan công ty mà._
+    _Bạn ăn 4 cái đùi gà, vừa ăn vừa xem {sieu_nhan_hong} hát "khoai chiên" trên tivi. Ngày mai thì ngày mai tính. Slogan công ty mà._
 - ~ nhan(tra_sua)
 ~ uong(20)
 -> END

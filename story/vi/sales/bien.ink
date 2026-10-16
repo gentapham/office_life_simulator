@@ -21,6 +21,7 @@ VAR sl_noi_that = 0            // số lần nói thật
 VAR sl_mo_noi_that = false     // kỹ năng ẩn Nói Thật (mở sau chương 3)
 
 // ---------- Deal ma BTT Global ----------
+VAR sl_btt_dat_ten = false   // đã nói tên BTT Global & Mr. Kevin Trộn (2/10)
 VAR sl_btt_cong_bo = false     // công bố BTT Global tài trợ (9/10)
 VAR sl_bang_khen_btt = false   // tặng Thắng bằng khen BTT (13/10)
 VAR sl_hoa_btt = false         // tự đặt hoa "Mr. Kevin Trộn" (20/10)

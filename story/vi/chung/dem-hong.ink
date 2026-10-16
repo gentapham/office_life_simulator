@@ -1,16 +1,21 @@
 // ============================================================
 // ĐẠI NHẠC HỘI SIÊU NHÂN 31/10 · KẾT THÚC SỰ NGHIỆP · MỘT THÁNG SAU
 //
-// Thứ tự:
-//   chung_3110_dem_hong              (19:30, cảnh chung, có 1–2 lựa chọn)
-//     -> cuối cảnh chốt ket_thuc_su_nghiep, chung_cong_ty_song rồi dừng
-//   <mã>_3010_danh_gia               (game gọi: kết thúc riêng của vai)
-//   chung_3110_ket_thuc_su_nghiep    (dùng ket_thuc_su_nghiep đã chốt)
-//     -> chung_kt_<id>                (1 trong 6 cảnh kết thúc sự nghiệp)
-//       -> chung_3110_mot_thang_sau   (phần kết "Một tháng sau…")
+// Thứ tự (game gọi lần lượt, mỗi cảnh tự dừng bằng -> END):
+//   chung_3110_dem_hong              19:30 – 22:50, đêm diễn, có 1–2 lựa chọn.
+//                                    Cuối cảnh cộng điểm Đại Nhạc Hội (nơi DUY NHẤT cộng
+//                                    +100.000 – 300.000), chốt ket_thuc_su_nghiep và
+//                                    chung_cong_ty_song, rồi dừng.
+//   <mã>_3010_danh_gia               23:00 – 23:45, kết thúc riêng của vai.
+//   chung_3110_ket_thuc_su_nghiep    sau 23:45, một trong 6 cảnh chung_kt_<id>.
+//   chung_3110_mot_thang_sau         phần kết "Một tháng sau…".
+//
+// Sân khấu: sân khấu lớn ngoài trời mới dựng trên quảng trường phía đông bắc công ty,
+// có màn hình LED, khoảng 50 khán giả đứng sát hàng rào chắn. 20:00 màn hình LED
+// chiếu chung kết "Giọng Ca Ước Mơ" của Sơn từ Đài Tivi Hóng.
 //
 // Biến đọc: nguoi_theo_doi, nguyen_theo_ll, so_scandal, nguyen_thao_mu_dem_hong,
-//   tinh_than_cong_ty, các biến chung_* trong ham-chung.ink.
+//   tinh_than_cong_ty và các biến chung_* trong bien-chung.ink.
 // Quy đổi kết thúc theo docs/so-tay-su-that.md mục 8, theo thứ tự ưu tiên:
 //   1. 🏃 bi_cuop_mat     : nguyen_theo_ll (bất kể con số)
 //   2. 🌟 sieu_sao_hang_a : ≥ 1.000.000 và top 10 xu hướng
@@ -88,22 +93,23 @@
 === chung_3110_dem_hong ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
 { vai == "sieu_nhan_hong" && nguyen_theo_ll: -> ben_kia_duong }
+{ vai == "cho" && chung_tuat_lac: -> ben_kia_bien }
 _Thứ bảy, 31/10/2026. 19 giờ 30._
-_Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Ba tuần trước, chỗ này là một bãi đất trống, một cột điện và rất nhiều ếch. Tối nay, nó hồng rực như ai đó lật ngược một ly trà sữa dâu lên cả quận._
+_Sân khấu Đại Nhạc Hội Siêu Nhân, trên quảng trường mới ở phía đông bắc công ty. Ba tuần trước, chỗ này là một bãi đất trống, một cột điện và rất nhiều ếch. Tối nay có một sân khấu lớn ngoài trời, một màn hình LED to bằng bức tường, và nó hồng rực như ai đó lật ngược một ly trà sữa dâu lên cả quận._
 {
 - nguoi_theo_doi >= 800000:
-    _Khán đài kín người. Có người đội mũ bảo hiểm sơn hồng, có người mặc áo choàng làm từ khăn tắm, có một bà cụ cầm bảng "SIÊU NHÂN ĐẨY XE GIÙM TUI HÔM MƯA"._
+    _Khoảng năm mươi người đứng sát hàng rào chắn, chen nhau như năm trăm. Có người đội mũ bảo hiểm sơn hồng, có người mặc áo choàng làm từ khăn tắm, có một bà cụ cầm bảng "SIÊU NHÂN ĐẨY XE GIÙM TUI HÔM MƯA". Phía sau họ là hàng nghìn người xem livestream trên điện thoại._
 - nguoi_theo_doi >= 500000:
-    _Khán đài đông vừa phải. Phía trước chen chúc, phía sau còn chỗ cho mấy chiếc xe đẩy cá viên chiên tranh thủ bán._
+    _Khoảng năm mươi người đứng sát hàng rào chắn. Phía trước chen chúc, phía sau còn chỗ cho mấy chiếc xe đẩy cá viên chiên tranh thủ bán. Livestream đếm người xem nhảy đều đều._
 - else:
-    _Khán đài lưa thưa. Hàng ghế đầu là người của {cong_ty}. Hàng ghế sau là người nhà của người của {cong_ty}. Hàng ghế cuối là mấy chiếc xe đẩy cá viên chiên._
+    _Chừng năm mươi người đứng ở hàng rào, một nửa là người của {cong_ty}, nửa còn lại là người nhà của người của {cong_ty}. Phía sau là mấy chiếc xe đẩy cá viên chiên._
 }
 _Cả công ty hóa trang. Sếp {giam_doc} mặc bộ "Ông Kẹ Ngân Hàng" mà {designer} chọn, tay cầm cuốn sổ nợ bằng giấy bìa, không ai dám nói với sếp đó là một trò đùa._
 _Sau cánh gà, {chi_dai} đeo bộ đàm, một tay giữ cầu dao, một tay giữ dây xích của {cho}. {chua_te_deadline} đeo tai nghe, cầm cue sheet. {it} ngồi ở bàn ánh sáng, mì ly để sẵn bên cạnh._
-_Bác {bac_bao_ve} đứng ở cổng sân khấu như mọi ngày, trên ngực đeo tấm thẻ "Khách mời đặc biệt" mà bác không quen đeo, cứ chốc chốc lại sờ vào túi áo._
-_{quan_ly_idol} liếc điện thoại liên tục. 20 giờ tối nay, Đài Tivi Hóng phát trực tiếp chung kết "Giọng Ca Ước Mơ"._
+_Bác {bac_bao_ve} đứng ở lối vào quảng trường như đứng ở cổng công ty, trên ngực đeo tấm thẻ "Khách mời đặc biệt" mà bác không quen đeo, cứ chốc chốc lại sờ vào túi áo._
+_{quan_ly_idol} liếc điện thoại liên tục. 20 giờ tối nay, Đài Tivi Hóng phát trực tiếp chung kết "Giọng Ca Ước Mơ", và màn hình LED của sân khấu sẽ chiếu lại y như vậy._
 { vai != "giam_doc":
-    giam_doc: *(cầm micro, giọng Bắc vang khắp khán đài)* Kính thưa quý vị! Mười sáu năm trước, {cong_ty} bắt đầu trong một căn phòng 20 mét vuông. Tối nay… tối nay, anh không ép, nhưng mời quý vị cùng xem!
+    giam_doc: *(cầm micro, giọng Bắc vang khắp quảng trường)* Kính thưa quý vị! Mười sáu năm trước, {cong_ty} bắt đầu trong một căn phòng 20 mét vuông. Tối nay… tối nay, anh không ép, nhưng mời quý vị cùng xem!
 - else:
     _Bạn cầm micro. Tay hơi run. Bạn định kể chuyện căn phòng 20 mét vuông năm 2010, nhưng chỉ nói được: "Mời quý vị cùng xem." Lần đầu tiên trong đời, bạn phát biểu dưới một phút._
 }
@@ -112,17 +118,17 @@ _{quan_ly_idol} liếc điện thoại liên tục. 20 giờ tối nay, Đài Ti
 = phim_ngan
 _Đèn tắt. Màn hình lớn sáng lên. Dòng chữ trắng trên nền đen: "NGƯỜI HÙNG KHÔNG TÊN"._
 _Mười lăm phút. Một người đàn ông bỏ việc ở ngân hàng, đứng giữa cơn mưa, chiếc xe chết máy. Rồi một bóng áo hồng đi tới, không nói gì, đẩy xe cho anh suốt hai cây số. Không camera. Không khẩu hiệu. Chỉ có tiếng mưa và tiếng bánh xe._
-_Cả khán đài im phăng phắc. Có người sụt sịt. Ở hàng ghế thứ ba, {thuc_tap_sinh} ngồi thẳng lưng, hai tay đặt trên đầu gối như đang phỏng vấn xin việc, mắt đỏ hoe._
+_Cả quảng trường im phăng phắc. Có người sụt sịt. Ở hàng rào, {thuc_tap_sinh} đứng thẳng lưng, hai tay nắm thanh chắn như đang phỏng vấn xin việc, mắt đỏ hoe._
 { vai != "thuc_tap_sinh":
     thuc_tap_sinh: *(thì thầm, không với ai cả)* Dạ… giống quá ạ. Giống hồi đó quá ạ.
 }
 { chung_phim_ghi_ten_duy:
     _Màn hình chạy chữ: "Ý tưởng: {thuc_tap_sinh}. Kịch bản: {bien_kich} & {thuc_tap_sinh}."_
-    _Có ai đó vỗ tay trước. Rồi cả khán đài. {thuc_tap_sinh} đứng dậy, cúi chào 90 độ về bốn phía, khóc như con nít._
+    _Có ai đó vỗ tay trước. Rồi cả quảng trường. {thuc_tap_sinh} cúi chào 90 độ về bốn phía, khóc như con nít._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 - else:
     _Màn hình chạy chữ: "Kịch bản: {bien_kich}."_
-    _Khán đài vỗ tay rất lâu. Ở hàng ghế thứ ba, {thuc_tap_sinh} cũng vỗ tay, rất lâu, và không hiểu sao thấy trong lòng thiếu mất một chữ._
+    _Mọi người vỗ tay rất lâu. Ở hàng rào, {thuc_tap_sinh} cũng vỗ tay, rất lâu, và không hiểu sao thấy trong lòng thiếu mất một chữ._
 }
 -> video_16_nam
 
@@ -130,55 +136,81 @@ _Cả khán đài im phăng phắc. Có người sụt sịt. Ở hàng ghế th
 _Màn hình chuyển sang dòng chữ: "16 NĂM. {cong_ty}." Video của {editor}._
 { chung_video_16_nam:
     _Một căn phòng 20 mét vuông năm 2010. Một cậu sinh viên đeo cà vạt mượn. Một ông bảo vệ 34 tuổi đứng ở cửa, tay cầm ấm trà._
-    _Năm 2015, cả nước hát "Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên". Khán đài tự hát theo, không ai bảo._
+    _Năm 2015, cả nước hát "Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên". Hàng rào tự hát theo, không ai bảo._
     _Rồi những năm vắng show, những buổi quay quảng cáo cho tiệm nail và quán ốc, những bữa trưa mì gói. Rồi tháng 10 này: áo cam, đồ hồng, những người đi làm muộn, về muộn, cãi nhau, làm lành._
     _Ở khung hình thứ 1.031, trong góc tấm ảnh chụp sân thượng, có một con cú nhỏ đội mũ len hồng. Chỉ vài người tinh mắt thấy._
     _Dòng chữ cuối: "Còn tiếp…"_
 - else:
     _Video kẹt lại từ hôm wifi sập. Thay vào đó là một chuỗi ảnh chụp điện thoại của sếp {giam_doc}: mờ, nghiêng, có ngón tay che một góc._
-    _Nhưng ảnh nào cũng có người. Ảnh nào cũng có người cười. Lạ thay, nhìn mấy tấm ảnh mờ đó, khán đài vẫn im lặng rất lâu._
+    _Nhưng ảnh nào cũng có người. Ảnh nào cũng có người cười. Lạ thay, nhìn mấy tấm ảnh mờ đó, cả quảng trường vẫn im lặng rất lâu._
 }
 { vai != "bac_bao_ve":
-    _Ở cổng, bác {bac_bao_ve} đưa tay lau mắt, rồi bảo với không ai cả: "Bụi."_
+    _Ở lối vào, bác {bac_bao_ve} đưa tay lau mắt, rồi bảo với không ai cả: "Bụi."_
 }
+-> son_chung_ket
+
+= son_chung_ket
+_20 giờ. Màn hình LED chuyển sang kênh Đài Tivi Hóng: chung kết trực tiếp "Giọng Ca Ước Mơ"._
+{ vai == "thanh_xin_nghi":
+    _Cùng lúc đó, ở Đài Tivi Hóng, bạn đứng sau cánh gà chờ gọi số 27. Điện thoại rung: một tấm ảnh cả {cong_ty} đứng trước màn hình LED ở quảng trường, giơ tấm bìa các-tông viết tay "SỐ 27"._
+- else:
+    _Thí sinh số 27 bước ra. Áo gi-lê kim tuyến, tay cầm micro hơi run. {thanh_xin_nghi}. Người "về quê gặt lúa" cả tháng nay._
+    _Năm mươi người ở hàng rào quay lưng lại với sân khấu thật, nhìn lên màn hình. {hr} giơ tấm bìa các-tông viết tay "SỐ 27". Bác {bac_bao_ve} đứng nghiêm như nghe quốc ca._
+    _Hát xong, cả quảng trường vỗ tay như thể người hát đang đứng ngay đây._
+}
+_Kết quả chung kết công bố lúc 22 giờ. Màn hình LED tắt, trả lại sân khấu cho đêm diễn._
 -> tiet_muc
 
 = tiet_muc
 { nguyen_theo_ll: -> san_khau_trong }
-_20 giờ. Đèn sân khấu tắt hết. Một luồng sáng hồng duy nhất chiếu xuống giữa sân khấu._
+_20 giờ 30. Đèn sân khấu tắt hết. Một luồng sáng hồng duy nhất chiếu xuống giữa sân khấu._
 { chung_hat_hong_la_thai_do:
-    _Nhạc dạo vang lên: "Hồng Là Thái Độ". Màn hình lớn chạy chữ: "Nhạc & lời: {con_ong_chau_cha}". Ở hàng ghế giữa, có một người đeo kính râm trong đêm, cúi đầu thật thấp, và cười._
+    _Nhạc dạo vang lên: "Hồng Là Thái Độ". Màn hình LED chạy chữ: "Nhạc & lời: {con_ong_chau_cha}". Ở cuối hàng rào, có một người đeo kính râm trong đêm, cúi đầu thật thấp, và cười._
 - else:
     _Nhạc nền chủ đề vang lên. Không lời. Trống dồn như tim đập._
 }
-{ vai == "sieu_nhan_hong":
-    _Bạn bước ra giữa luồng sáng. Áo choàng hồng. Mũ kín đầu. Tim đập to hơn tiếng trống._
+{ chung_tuat_giat_mu:
+    { vai == "sieu_nhan_hong":
+        _Bạn bước ra giữa luồng sáng. Không có mũ. Cái mũ đã nằm trong miệng {cho} từ trước giờ diễn, và cả quảng trường đã thấy mặt bạn từ lúc đó._
+    - else:
+        _Siêu Nhân Hồng bước ra giữa luồng sáng. Không có mũ. Từ trước giờ diễn, khi {cho} ngậm chiếc mũ chạy ngang sân khấu, cả quảng trường đã thấy gương mặt này._
+        sieu_nhan_hong: Dạ… ờm… Hồng không phải màu… Hồng là thái độ!
+    }
 - else:
-    _Siêu Nhân Hồng bước ra giữa luồng sáng, tạo dáng chữ V._
-    sieu_nhan_hong: Hồng không phải màu… Hồng là thái độ!
+    { vai == "sieu_nhan_hong":
+        _Bạn bước ra giữa luồng sáng. Áo choàng hồng. Mũ kín đầu. Tim đập to hơn tiếng trống._
+    - else:
+        _Siêu Nhân Hồng bước ra giữa luồng sáng, tạo dáng chữ V._
+        sieu_nhan_hong: Hồng không phải màu… Hồng là thái độ!
+    }
 }
 {
 - nguoi_theo_doi >= 800000:
-    _Khán đài gào lên. Có người hô tên. Có người khóc. Cái bảng "SIÊU NHÂN ĐẨY XE GIÙM TUI HÔM MƯA" được giơ cao nhất._
+    _Hàng rào gào lên. Có người hô tên. Có người khóc. Cái bảng "SIÊU NHÂN ĐẨY XE GIÙM TUI HÔM MƯA" được giơ cao nhất. Bình luận livestream chạy không kịp đọc._
 - nguoi_theo_doi >= 500000:
-    _Khán đài vỗ tay, hô theo khẩu hiệu. Mấy đứa nhỏ ở hàng đầu tạo dáng chữ V theo._
+    _Hàng rào vỗ tay, hô theo khẩu hiệu. Mấy đứa nhỏ đứng hàng đầu tạo dáng chữ V theo._
 - else:
-    _Tiếng vỗ tay lẻ tẻ. Nhưng hàng ghế đầu, cả {cong_ty} đứng dậy vỗ tay to như cả nghìn người._
+    _Tiếng vỗ tay lẻ tẻ. Nhưng ở hàng rào, cả {cong_ty} vỗ tay to như cả nghìn người._
+}
+{ vai == "sieu_nhan_hong" && chung_mai_den_xem:
+    _Ở góc hàng rào, giữa mấy cây lightstick hồng, có một ly chè giơ lên. Chỉ một ly. Bạn thấy nó trước cả màn hình LED._
+- else:
+    _Ở góc hàng rào, giữa mấy cây lightstick hồng, có một cô gái buộc tóc bằng sợi thun giơ lên một ly chè. Không ai hiểu vì sao. Cô cũng không giải thích._
 }
 { so_scandal + chung_so_meme >= 3:
-    _Đâu đó trên khán đài có người hét: "Siêu Nhân Gâu!". Cả khán đài cười ồ, rồi hô theo. Một nửa khán giả ở đây vì meme._
+    _Đâu đó ở hàng rào có người hét: "Siêu Nhân Gâu!". Cả quảng trường cười ồ, rồi hô theo. Một nửa người xem ở đây vì meme._
 }
 { vai == "cho": -> lua_chon_cho }
 { vai == "sieu_nhan_hong": -> lua_chon_nguyen }
 -> lua_chon_chung
 
 = lua_chon_chung
-_Bạn đứng giữa khán đài. Điện thoại trong tay. Con số người theo dõi đang nhảy._
+_Bạn đứng ở hàng rào. Điện thoại trong tay. Con số người theo dõi đang nhảy._
 * [📱 Livestream từ khán đài cho bạn bè xem.]
     _Livestream của bạn có 600 người xem. Một người trong đó chia sẻ lại. Rồi một người nữa._
     ~ follow(10000)
 * [🩷 Hô khẩu hiệu cùng cả khán đài.]
-    _"Hồng không phải màu! Hồng là thái độ!" Bạn hô to tới khản giọng. Người bên cạnh, không quen, quay sang đập tay với bạn._
+    _"Hồng không phải màu! Hồng là thái độ!" Bạn hô to tới khản giọng. Người đứng bên cạnh, không quen, quay sang đập tay với bạn._
     ~ follow(5000)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
 * [🐕 Chạy ra cánh gà giữ {cho} giúp {chi_dai}.]
@@ -193,7 +225,7 @@ _Bạn đứng giữa khán đài. Điện thoại trong tay. Con số người 
 _Mùi hồng. Rất nhiều mùi hồng. Bộ đồ hồng ở ngay đó, giữa ánh đèn. Dây xích trong tay {chi_dai} lỏng ra một chút._
 * [🏃 Lao lên sân khấu.]
     cho: GÂU GÂU GÂU! # phu_de: Lần này tao không tha!
-    _Bạn chạy một vòng quanh Siêu Nhân Hồng. Siêu Nhân Hồng chạy theo bạn. Khán đài tưởng là tiết mục, cười như điên. Clip lên Tóp-tóp trước khi bạn kịp về cánh gà._
+    _Bạn chạy một vòng quanh Siêu Nhân Hồng. Siêu Nhân Hồng chạy theo bạn. Hàng rào tưởng là tiết mục, cười như điên. Clip lên Tóp-tóp trước khi bạn kịp về cánh gà._
     ~ chung_so_meme = chung_so_meme + 1
     ~ follow(20000)
 * [🐾 Ngồi yên ở cánh gà, nhìn.]
@@ -203,24 +235,41 @@ _Mùi hồng. Rất nhiều mùi hồng. Bộ đồ hồng ở ngay đó, giữa
     ~ qh("bac_bao_ve", 5)
 * [🎵 Hú theo nhạc.]
     cho: Hú… hú uuuu… # phu_de: Bài này hay. Hay hơn người hát.
-    _{it} ở bàn âm thanh thấy vậy, đẩy micro về phía bạn. Tiếng hú vang khắp khán đài. Mọi người vỗ tay theo nhịp._
+    _{it} ở bàn âm thanh thấy vậy, đẩy micro về phía bạn. Tiếng hú vang khắp quảng trường. Mọi người vỗ tay theo nhịp._
     ~ follow(8000)
 - -> man_cuoi
 
 = lua_chon_nguyen
 { chung_da_chon_thao_mu: -> man_cuoi }
-_Giữa bài, bạn đứng giữa sân khấu, thở dốc. Tay đưa lên mũ. Khán đài nín thở. Không ai ép. Điều khoản số 1 nói vậy._ # hen_gio:6
+_Giữa bài, bạn đứng giữa sân khấu, thở dốc. Tay đưa lên mũ. Hàng rào nín thở. Không ai ép. Điều khoản số 1 nói vậy._ # hen_gio:6
 * [🙂 Tháo mũ.]
     ~ nguyen_thao_mu_dem_hong = true
 * [🦸 Tạo dáng: "Thái độ của anh là… để dành!"]
-    _Khán đài cười ồ, vỗ tay. Chiếc mũ vẫn ở trên đầu. Bên trong, mặt bạn đỏ như bộ đồ._
+    _Hàng rào cười ồ, vỗ tay. Chiếc mũ vẫn ở trên đầu. Bên trong, mặt bạn đỏ như bộ đồ._
 * [⏱️ (Không chọn kịp)]
     _Tay bạn hạ xuống. Nhạc chuyển đoạn. Khoảnh khắc trôi qua như một chiếc xe chạy qua vũng nước._
 - ~ chung_da_chon_thao_mu = true
 -> man_cuoi
 
 = man_cuoi
-{ nguyen_thao_mu_dem_hong:
+{ vai == "sieu_nhan_hong":
+    { chung_snh_ke_hoach:
+    - "quy_vu":
+        _Bài cuối. Bạn quỳ xuống giữa sân khấu, tay cầm bó hoa hồng {designer} mua giùm. Hàng rào hét. Màn hình LED phóng bó hoa lên bằng bức tường._
+        _{chua_te_deadline} bị đẩy ra giữa sân khấu, tay vẫn cầm bộ đàm. Cậu ta nhận hoa, cười rất chuyên nghiệp, giơ ngón cái vào ống kính._
+    - "canh_ga_vu":
+        _Bài cuối. Bạn đi vào cánh gà bên trái, tháo mũ trước một người duy nhất. {chua_te_deadline} nhìn bạn, nhìn đồng hồ, rồi đẩy nhẹ vai bạn: "Anh vô đây chi? Còn một bài nữa mà, ra đi anh, đúng cue!"_
+        _Bạn đội mũ lại, đi ra. Cậu ta vẫn không thấy gì khác ngoài một tiết mục trễ cue._
+    - "hieu":
+        _Bài cuối. Bạn mời {ran_doc} lên sân khấu. Tháo mũ. "Hai mươi năm trước, anh nhốt em này trong nhà kho. Anh xin lỗi. Trước mặt mọi người." {ran_doc} đứng im rất lâu, rồi gật đầu một cái._
+    - "mai":
+        _Bài cuối. Bạn tháo mũ. Không nhìn màn hình LED, không nhìn máy quay. Bạn nhìn về góc hàng rào, chỗ có một ly chè đang giơ lên. Rồi bạn cười, không tạo dáng._
+    }
+}
+{
+- chung_tuat_giat_mu:
+    _Bài cuối kết thúc. Siêu Nhân Hồng không mũ cúi chào. Ở cánh gà, {cho} vẫn ngậm chiếc mũ hồng, không chịu nhả._
+- nguyen_thao_mu_dem_hong:
     _Rồi Siêu Nhân Hồng làm một việc không có trong cue sheet. Hai tay đưa lên, tháo chiếc mũ ra._
     _Bên dưới là một gương mặt bình thường. Tóc bết mồ hôi, lông mày rậm, mắt không dám nhìn ai quá hai giây._
     { vai == "sieu_nhan_hong":
@@ -228,22 +277,22 @@ _Giữa bài, bạn đứng giữa sân khấu, thở dốc. Tay đưa lên mũ.
     - else:
         sieu_nhan_hong: *(giọng nhỏ hẳn)* Dạ… ờm… em tên là Nguyễn {sieu_nhan_hong}.
     }
-    _Ba giây im lặng. Rồi khán đài nổ tung._
+    _Ba giây im lặng. Rồi cả quảng trường nổ tung._
 - else:
-    _Bài hát kết thúc. Siêu Nhân Hồng tạo dáng cuối cùng giữa mưa pháo giấy hồng. Chiếc mũ vẫn kín, phản chiếu cả nghìn ánh đèn điện thoại._
+    _Bài hát kết thúc. Siêu Nhân Hồng tạo dáng cuối cùng giữa mưa pháo giấy hồng. Chiếc mũ vẫn kín, phản chiếu năm mươi ánh đèn điện thoại và một màn hình LED._
 }
 { vai != "chua_te_deadline":
     _Sau cánh gà, {chua_te_deadline} hô "Pháo giấy… Go!" vào bộ đàm, rồi đứng im nhìn sân khấu lâu hơn cần thiết._
 }
 ~ temp d = chung_diem_dem_hong()
 ~ follow(d)
-_Màn hình lớn hiện bộ đếm người theo dõi. Con số nhảy liên tục suốt một tiếng sau đó._
+_Màn hình LED hiện bộ đếm người theo dõi. Con số nhảy liên tục suốt hai tiếng sau đó._
 -> dem_so
 
 = san_khau_trong
-_20 giờ. Đèn sân khấu tắt hết. Một luồng sáng hồng chiếu xuống giữa sân khấu. Không có ai bước ra._
-_Một phút. Hai phút. Khán đài bắt đầu xì xào._
-_Bên kia đường, trên tòa nhà kính 20 tầng của LL-Entertainment, màn hình LED khổng lồ bật sáng: Siêu Nhân Hồng, trong bộ đồ hồng viền xanh lá chuối, đang tạo dáng. Dòng chữ chạy: "LL PRESENTS: SIÊU NHÂN HỒNG – ĐÊM ĐẦU TIÊN"._
+_20 giờ 30. Đèn sân khấu tắt hết. Một luồng sáng hồng chiếu xuống giữa sân khấu. Không có ai bước ra._
+_Một phút. Hai phút. Hàng rào bắt đầu xì xào._
+_Phía xa, bên kia quảng trường, trên nóc một tòa nhà kính của LL-Entertainment, màn hình LED khổng lồ bật sáng: Siêu Nhân Hồng, trong bộ đồ hồng viền xanh lá chuối, đang tạo dáng. Dòng chữ chạy: "LL PRESENTS: SIÊU NHÂN HỒNG – ĐÊM ĐẦU TIÊN"._
 { vai != "chi_dai":
     chi_dai: *(bộ đàm, giọng khàn)* Không ai được bỏ về. Show vẫn chạy. Ai lên được thì lên.
 }
@@ -253,21 +302,21 @@ _Bên kia đường, trên tòa nhà kính 20 tầng của LL-Entertainment, mà
     _Một người đứng dậy từ hàng ghế giữa. Tháo kính râm. Đi lên sân khấu. {idol_het_thoi}._
 }
 _"Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên…"_
-_Không ai bảo. Khán đài hát theo. Lần này không phải vì meme._
+_Không ai bảo. Cả quảng trường hát theo. Lần này không phải vì meme._
 { vai == "cho":
     cho: Hú… # phu_de: Tao vẫn ghét bộ đồ hồng. Nhưng chỗ này trống trơn thì buồn quá.
 }
 -> dem_so
 
 = dem_so
-_23 giờ 59._
+_22 giờ 50. Đèn sân khấu tắt dần. Bộ đếm trên màn hình LED chạy chậm lại._
 {
 - nguoi_theo_doi >= 1000000:
     _Bộ đếm dừng ở {chung_so(nguoi_theo_doi)}. Có người hét lên. Có người ôm nhau. Có người ngồi bệt xuống đất._
 - nguoi_theo_doi >= 800000:
     _Bộ đếm dừng ở {chung_so(nguoi_theo_doi)}. Gần lắm. Gần tới mức đau._
 - else:
-    _Bộ đếm dừng ở {chung_so(nguoi_theo_doi)}. Khán đài đã về gần hết. Trên sân khấu chỉ còn pháo giấy và mấy cái ghế nhựa._
+    _Bộ đếm dừng ở {chung_so(nguoi_theo_doi)}. Hàng rào đã về gần hết. Trên sân khấu chỉ còn pháo giấy và mấy cái ghế nhựa._
 }
 ~ chung_chot_ket_thuc_su_nghiep()
 _Màn hình tắt._ # hien_ket_thuc_nhan_vat
@@ -276,17 +325,29 @@ _Màn hình tắt._ # hien_ket_thuc_nhan_vat
 = ben_kia_duong
 _Thứ bảy, 31/10/2026. 19 giờ 30. Tầng thượng tòa nhà kính LL-Entertainment._
 _Bộ đồ của bạn có viền xanh lá chuối mới may. Nó vừa, nhưng không quen. Lưu Lực vỗ vai bạn, nói gì đó về "đêm đầu tiên của một kỷ nguyên". Bạn không nghe rõ._
-_Bên kia đường, Sân khấu Đại Nhạc Hội Siêu Nhân sáng hồng rực. Bạn thấy một bóng người đứng ở cổng, lưng hơi còng, tay sờ túi áo. Bạn thấy một con chó vàng ngồi cạnh, nhìn thẳng về phía tòa nhà này._
-_20 giờ. Màn hình LED bật tên bạn. Cùng lúc, bên kia đường, có ai đó cầm micro hát "Công Viên". Cả khán đài bên đó hát theo._
+_Phía xa, bên kia quảng trường, sân khấu Đại Nhạc Hội Siêu Nhân sáng hồng rực. Bạn thấy một bóng người đứng ở lối vào, lưng hơi còng, tay sờ túi áo. Bạn thấy một con chó vàng ngồi cạnh, nhìn thẳng về phía tòa nhà này._
+_20 giờ 30. Màn hình LED trên nóc tòa kính bật tên bạn. Cùng lúc, bên kia quảng trường, có ai đó cầm micro hát "Công Viên". Cả hàng rào bên đó hát theo._
 * [🦸 Tạo dáng cho màn hình LED.]
     _Bạn tạo dáng chữ V. Màn hình phóng to bạn lên 20 tầng. Bạn chưa bao giờ to như vậy. Cũng chưa bao giờ thấy mình nhỏ như vậy._
 * [🙂 Quay lưng lại với màn hình, nhìn sang bên kia đường.]
     _Bạn đứng nhìn rất lâu. Lưu Lực hỏi bạn có ổn không. Bạn nói: "Dạ… ờm… ổn."_
 - -> dem_so
 
+= ben_kia_bien
+// Lượt chơi Tuất, khi Tuất đã lạc ở Vũng Tàu từ 18/10
+_Thứ bảy, 31/10/2026. 19 giờ 30. Một bến xe nhỏ ở Vũng Tàu._
+_Bạn nằm dưới sạp hải sản, cằm gác lên chân trước. Người ta gọi bạn là "Vàng". Bạn không quay đầu khi nghe tên đó._
+co_hai_san: Bla bla… VÀNG… bla bla bla. # phu_de:Vàng ơi, coi nè. Thành phố bên đó có hội diễn gì đó, hồng quá trời.
+_Trên điện thoại của cô bán hải sản là một sân khấu ngoài trời, một màn hình LED, khoảng năm mươi người đứng ở hàng rào. Một bộ đồ hồng nhỏ xíu giữa màn hình._
+_Bạn không ngửi được gì từ cái điện thoại. Không bánh chuối chiên. Không trà mạn. Không dầu gió._
+_Nhưng ở góc màn hình, ở lối vào quảng trường, có một ông đứng nghiêm, lưng hơi còng. Tai bạn dựng lên. Đuôi bạn đập xuống nền xi măng một cái. Rồi thêm một cái._
+~ temp d = chung_diem_dem_hong()
+~ follow(d)
+-> dem_so
+
 // ============================================================
 === chung_3110_ket_thuc_su_nghiep ===
-# ngay:31 # gio:23:59 # ket_thuc_su_nghiep
+# ngay:31 # gio:23:50 # ket_thuc_su_nghiep
 { ket_thuc_su_nghiep == "":
     ~ chung_chot_ket_thuc_su_nghiep()
 }
@@ -357,21 +418,29 @@ _Bên kia đường, màn hình LED của LL-Entertainment chạy quảng cáo m
     _Ở chòi bảo vệ, bác {bac_bao_ve} viết một lá thư rất ngắn gửi ra nước ngoài, rồi dán tem. Bác cười một mình, lần đầu tiên sau nhiều năm._
 }
 _{cong_ty} sống. Siêu Nhân Hồng là siêu sao hạng A._
--> chung_3110_mot_thang_sau
+-> END
 
 // ============================================================
 // 💗 THÁO MŨ (có hậu)
 === chung_kt_thao_mu ===
 # ket_thuc_su_nghiep:thao_mu # loai:co_hau
 _💗 THÁO MŨ_
-_Clip dài 41 giây. Một người mặc đồ siêu nhân màu hồng đứng giữa sân khấu, tháo mũ ra, nói nhỏ: "Dạ… ờm… em tên là Nguyễn {sieu_nhan_hong}."_
+{ chung_tuat_giat_mu:
+    _Clip dài 41 giây. Một con chó vàng ngậm chiếc mũ hồng chạy ngang sân khấu. Phía sau, một người mặc đồ siêu nhân màu hồng, không mũ, chạy đuổi theo, rồi đứng lại giữa ánh đèn, gãi đầu, nói nhỏ: "Dạ… ờm… em tên là Nguyễn {sieu_nhan_hong}."_
+- else:
+    _Clip dài 41 giây. Một người mặc đồ siêu nhân màu hồng đứng giữa sân khấu, tháo mũ ra, nói nhỏ: "Dạ… ờm… em tên là Nguyễn {sieu_nhan_hong}."_
+}
 _Đến sáng 1/11, clip có 9 triệu lượt xem. Bình luận nhiều nhất: "Ủa, anh bình thường vậy hả? Thích ghê."_
 _Bình luận thứ hai: "Đây là người đẩy xe cho tui hôm mưa! Tui nhận ra cái lông mày!"_
 _Bình luận thứ ba, của một tài khoản không có ảnh đại diện: "Đẩy xe cho tui hai cây số, năm đó, lúc tui bỏ ngân hàng. Giờ mới biết tên anh."_
 { vai == "thuc_tap_sinh":
     _Tài khoản đó là của bạn. Bạn gõ, xóa, gõ lại bảy lần mới dám bấm gửi._
 }
-_Con số người theo dõi không kịp chạm một triệu trước nửa đêm 31/10. Trên giấy, hợp đồng đã trượt._
+{ nguoi_theo_doi >= 1000000:
+    _Con số người theo dõi chạm một triệu. Nhưng vụ bóc phốt sau ngày 28/10 kéo tên Siêu Nhân Hồng ra khỏi top 10 xu hướng. Trên giấy, hợp đồng vẫn trượt._
+- else:
+    _Con số người theo dõi không kịp chạm một triệu trước nửa đêm 31/10. Trên giấy, hợp đồng đã trượt._
+}
 { vai != "ke_toan":
     ke_toan: *(đặt bản hợp đồng lên bàn, lật tới trang 47)* {sieu_nhan_hong}. Điều khoản này. Em có biết nó viết gì không?
 - else:
@@ -390,7 +459,7 @@ _Ba nhãn hàng gọi điện trong tuần đó. Không ai đòi Siêu Nhân H�
     quan_ly_idol: Chuyện này để anh lo. *(cúp máy, quay sang)* …Mà lần này anh không cần dập gì hết. Lạ ghê.
 }
 { vai != "chua_te_deadline":
-    _{chua_te_deadline} lưu clip 41 giây vào điện thoại, đặt tên file là "khong_phai_PR.mp4"._
+    _{chua_te_deadline} lưu clip 41 giây vào điện thoại, đặt tên file là "y_tuong_PR_hay_nhat_nam.mp4"._
 }
 _Chiếc mũ hồng được treo trong phòng chờ, cạnh đĩa bánh chuối chiên. Thỉnh thoảng {sieu_nhan_hong} vẫn đội nó đi giúp người. Nhưng giờ người ta gọi tên thật._
 { vai != "cho":
@@ -417,7 +486,7 @@ _Đoạn đó được cắt ra, đăng lại, lên xu hướng thêm hai ngày.
 }
 _Tờ phụ lục gia hạn được {ke_toan} kẹp vào bìa hồ sơ, ngay sau trang 47. Lần này chị đọc nó ba lần, rồi gật đầu._
 _{cong_ty} sống thêm một mùa. Nguyễn {sieu_nhan_hong} được yêu thương bằng chính gương mặt của mình._
--> chung_3110_mot_thang_sau
+-> END
 
 // ============================================================
 // 🤡 MEME QUỐC DÂN (có hậu)
@@ -473,7 +542,7 @@ _Có một trường mẫu giáo ở Ven Đô mời Siêu Nhân Hồng tới "t�
 }
 _Tờ phụ lục gia hạn tới Tết được {ke_toan} kẹp ngay sau trang 47, kèm ghi chú bút chì: "Lần này đọc rồi."_
 _{cong_ty} sống. Siêu Nhân Hồng không phải siêu sao. Siêu Nhân Hồng là meme quốc dân._
--> chung_3110_mot_thang_sau
+-> END
 
 // ============================================================
 // 📉 CHÌM NGHỈM (buồn)
@@ -488,6 +557,10 @@ _Sáng thứ hai, {ke_toan} lật hợp đồng tới trang 47 lần cuối. Ho�
 - else:
     _Bạn mở miệng định nói về mindset. Không có chữ nào ra. Cuối cùng bạn chỉ nói được: "Anh xin lỗi. Anh đã không đọc."_
 }
+{ chung_g_giu_cong_ty:
+    _Rồi {ke_toan} lấy trong cặp ra một tờ giấy chép tay, bản chép lại quyết định của G mà bác {bac_bao_ve} đã đọc trong buổi họp ngày 30/10: "Công ty giữ lại. {giam_doc} làm giám đốc thêm một năm." Bên dưới, G viết thêm một dòng gửi kèm: "Tiền hoàn, anh lo. Các cháu lo phần còn lại."_
+    _Siêu Nhân Hồng chìm. {cong_ty} thì không._
+}
 { vai == "sieu_nhan_hong":
     _Bạn ngồi trong phòng chờ, nhìn đĩa bánh chuối chiên nguội. Bạn không hiểu trang 47 viết gì. Bạn chỉ hiểu là mọi người đã cố hết sức, còn bạn thì không đủ để người ta nhớ._
 - else:
@@ -496,12 +569,27 @@ _Sáng thứ hai, {ke_toan} lật hợp đồng tới trang 47 lần cuối. Ho�
 }
 _Chiều hôm đó, bộ đồ siêu nhân màu hồng được treo vào kho công ty, giữa đống đèn sân khấu cũ và tấm phông "Công Viên Tour 2015"._
 _Ai đó dán lên móc treo một mẩu giấy: "Đồ dự phòng số 1. Đừng mặc thử."_
-{ vai != "bac_bao_ve":
-    _Tối đó, bác {bac_bao_ve} ngồi trong chòi rất lâu. Trên bàn là một phong bì dán kín, ngoài ghi: "Chỉ mở khi công ty sắp sập."_
-    _Bác pha một ấm trà. Uống hết. Rồi bác mở phong bì. Bác đọc, gấp lại, bỏ vào túi áo ngực, không nói với ai bên trong viết gì._
+{
+- chung_g_giu_cong_ty:
+    { vai != "bac_bao_ve":
+        _Tối đó, bác {bac_bao_ve} ngồi trong chòi, pha một ấm trà, đặt hai cái chén. Phong bì của G đã mở từ hôm 30/10, giờ nằm trong túi áo ngực của bác, cạnh tim._
+    - else:
+        _Tối đó, bạn ngồi trong chòi, pha một ấm trà, đặt hai cái chén. Phong bì của G đã mở từ hôm 30/10. Lời G đã được đọc to. Việc của bạn giờ chỉ là rót trà._
+    }
+- chung_binh_da_mo_phong_bi:
+    { vai != "bac_bao_ve":
+        _Tối đó, bác {bac_bao_ve} ngồi trong chòi rất lâu. Phong bì của G bác đã mở từ trước. Bác biết bên trong viết gì. Bác chưa nói với ai._
+    - else:
+        _Tối đó, bạn ngồi trong chòi rất lâu. Phong bì của G bạn đã mở từ trước. Bạn biết bên trong viết gì. Chuyện này bạn sẽ chỉ nói một lần, với đúng một người._
+    }
 - else:
-    _Tối đó, bạn ngồi trong chòi rất lâu. Trên bàn là phong bì dán kín: "Chỉ mở khi công ty sắp sập." Bạn pha một ấm trà, uống hết, rồi mở ra._
-    _Bạn đọc. Bạn gấp lại, bỏ vào túi áo ngực. Chuyện này bạn sẽ chỉ nói một lần, với đúng một người._
+    { vai != "bac_bao_ve":
+        _Tối đó, bác {bac_bao_ve} ngồi trong chòi rất lâu. Trên bàn là một phong bì dán kín, ngoài ghi: "Chỉ mở khi công ty sắp sập."_
+        _Bác pha một ấm trà. Uống hết. Rồi bác mở phong bì. Bác đọc, gấp lại, bỏ vào túi áo ngực, không nói với ai bên trong viết gì._
+    - else:
+        _Tối đó, bạn ngồi trong chòi rất lâu. Trên bàn là phong bì dán kín: "Chỉ mở khi công ty sắp sập." Bạn pha một ấm trà, uống hết, rồi mở ra._
+        _Bạn đọc. Bạn gấp lại, bỏ vào túi áo ngực. Chuyện này bạn sẽ chỉ nói một lần, với đúng một người._
+    }
 }
 { vai != "cho":
     _{cho} nằm trước cửa kho cả đêm. Không ai hiểu vì sao. Có lẽ nó cũng không hiểu. Nó chỉ thấy thiếu một thứ để ghét._
@@ -518,7 +606,7 @@ _Sáng hôm sau, 6 giờ 30, cổng {cong_ty} vẫn mở. Như mười sáu năm
 { vai != "chua_te_deadline":
     _{chua_te_deadline} lật cái đồng hồ cát trên bàn. Lần đầu tiên. Cát chảy. {chua_te_deadline} ngồi nhìn tới hạt cuối cùng._
 }
-{ vai != "thuc_tap_sinh":
+{ vai != "thuc_tap_sinh" && not chung_g_giu_cong_ty:
     thuc_tap_sinh: *(thu dọn bàn thực tập)* Dạ… em hết thực tập rồi ạ. Em… em cảm ơn mọi người ạ. *(cúi chào 90 độ, lâu hơn mọi khi)*
 }
 _Ở góc kho, chiếc găng tay hồng từ ngày 4/10 vẫn nằm trong đống báu vật dưới gầm cầu thang. Không ai còn đi tìm nó._
@@ -527,7 +615,7 @@ _Trên mạng, cái tên "Siêu Nhân Hồng" được nhắc đúng một lần
 _Có một buổi chiều mưa, ở Đại Lộ Kẹt Xe, có người thấy một chiếc xe chết máy được ai đó đẩy giùm lên lề. Người đẩy không mặc đồ hồng. Chỉ mặc áo mưa. Không ai quay._
 _Người được giúp hỏi tên. Người kia chỉ cười, gãi đầu, rồi đi._
 _Siêu Nhân Hồng chìm nghỉm. Không ai biết người trong bộ đồ hồng tên gì._
--> chung_3110_mot_thang_sau
+-> END
 
 // ============================================================
 // 🔥 BỊ TẨY CHAY (buồn)
@@ -574,13 +662,21 @@ _Thứ hai, {ke_toan} gửi email toàn công ty: "Họp về trang 47. 9 giờ.
 }
 _Cả phòng họp im lặng. Rồi {chi_dai} đứng dậy, rót trà cho từng người. Không ai uống. Nhưng ai cũng cầm._
 { vai != "bac_bao_ve":
-    _Tối đó, bác {bac_bao_ve} đặt lên bàn chòi một phong bì dán kín. Bác nhìn nó cả đêm. Chưa mở._
+    { chung_g_giu_cong_ty:
+        _Tối đó, bác {bac_bao_ve} đọc lại lần nữa quyết định của G đã mở hôm 30/10: công ty giữ lại. Bác gấp nó lại, rót trà, mang lên tầng 2 cho {giam_doc}._
+    - else:
+        { chung_binh_da_mo_phong_bi:
+            _Tối đó, bác {bac_bao_ve} ngồi trong chòi rất lâu, tay đặt lên túi áo ngực, chỗ cái phong bì đã mở. Bác chưa nói với ai._
+        - else:
+            _Tối đó, bác {bac_bao_ve} đặt lên bàn chòi một phong bì dán kín. Bác nhìn nó cả đêm. Chưa mở._
+        }
+    }
 }
 _Một tuần sau, hashtag rơi khỏi top xu hướng. Không phải vì người ta tha thứ. Mà vì người ta đã tìm được người khác để ghét._
 _Lượt theo dõi dừng lại ở một con số không ai muốn chụp màn hình._
 _Fanpage {cong_ty} khóa bình luận. Bài đăng cuối cùng là tấm ảnh Siêu Nhân Hồng tạo dáng chữ V ở cổng ngày 1/10, chưa ai bình luận gì xấu. Hồi đó chưa ai biết Siêu Nhân Hồng là ai._
 _Siêu Nhân Hồng bị tẩy chay. Mạng xã hội quay lưng. Chỉ có những người được giúp, ngoài đời thật, là chưa bao giờ quay lưng. Nhưng họ không ở trên mạng._
--> chung_3110_mot_thang_sau
+-> END
 
 // ============================================================
 // 🏃 BỊ CƯỚP MẤT (buồn)
@@ -594,7 +690,10 @@ _Ảnh bìa: Lưu Lực, vest trắng, bắt tay một người mặc đồ hồ
 - else:
     _Trong ảnh, Siêu Nhân Hồng vẫn tạo dáng chữ V. Nhưng ai từng đứng gần đủ lâu sẽ thấy hai ngón tay hơi cong, như đang cố tạo dáng mà quên mất vì sao._
 }
-_Bên kia đường, {cong_ty} nhận thư của luật sư về hợp đồng 52 trang. {ke_toan} mở ra, đọc, rồi đặt nó cạnh tờ trang 47 đã quăn mép._
+_Bên kia quảng trường, {cong_ty} nhận thư của luật sư về hợp đồng 52 trang. {ke_toan} mở ra, đọc, rồi đặt nó cạnh tờ trang 47 đã quăn mép._
+{ chung_g_giu_cong_ty:
+    _Bên dưới thư luật sư là tờ chép tay quyết định của G mà bác {bac_bao_ve} đã đọc hôm 30/10: "Công ty giữ lại." {ke_toan} kẹp hai tờ vào nhau. Mất Siêu Nhân Hồng. Không mất công ty._
+}
 { vai != "giam_doc":
     giam_doc: *(nhìn sang tòa nhà kính)* Họ có 20 tầng. Mình có 3 tầng với một con chó. *(im lặng)* …Mà anh vẫn thích bên mình hơn.
 }
@@ -634,7 +733,7 @@ _Phòng chờ ở tầng 2 được dọn sạch. Đĩa bánh chuối chiên cu�
 _Điều khoản số 4 của hợp đồng không còn hiệu lực. Nhưng sáng nào cô Năm cơm tấm cũng hỏi: "Cậu đồ hồng hôm nay không ghé hả con?"_
 _Trên fanpage LL-Entertainment, mỗi bài đăng về Siêu Nhân Hồng đều có hàng nghìn lượt thích. Và luôn có một bình luận, từ một tài khoản tên "Hội Chó Cổng G": một tấm ảnh chụp chó vàng ngồi trước cổng, không chú thích._
 _Siêu Nhân Hồng bị cướp mất, ngay trước buổi diễn lớn nhất. Người theo dõi đi theo. Chiếc mũ thì không bao giờ quay lại._
--> chung_3110_mot_thang_sau
+-> END
 
 // ============================================================
 // MỘT THÁNG SAU…
@@ -667,7 +766,7 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
     _{con_ong_chau_cha} {chung_hat_hong_la_thai_do: được mời viết nhạc cho hai nghệ sĩ khác. Lần đầu tiên, người ta gọi {con_ong_chau_cha} bằng nghệ danh "Rồng" chứ không phải "cháu sếp".|vẫn khóa cửa căn phòng trong penthouse. Có đêm hàng xóm nghe tiếng đàn rất hay vọng ra. Rồi im.}_
 }
 { vai != "chua_te_deadline":
-    _{chua_te_deadline} {ket_thuc_su_nghiep == "bi_cuop_mat": lật chiếc đồng hồ cát trên bàn lần đầu tiên. Nhìn cát chảy hết. Rồi lật lại.|vẫn ôm chiếc gối hồng ngủ trưa. Vẫn đi trễ. Nhưng tuần này có hai buổi trưa, người ta thấy {chua_te_deadline} đi ăn cơm tấm với một người không đội mũ.}_
+    _{chua_te_deadline} {ket_thuc_su_nghiep == "bi_cuop_mat": lật chiếc đồng hồ cát trên bàn lần đầu tiên. Nhìn cát chảy hết. Rồi lật lại.|vẫn ôm chiếc gối hồng ngủ trưa. Vẫn đi trễ. Nhưng tuần này có hai buổi trưa, người ta thấy {chua_te_deadline} đi ăn cơm tấm với một người không đội mũ, hai người cãi nhau xem ai trễ deadline nhiều hơn. Bạn bè thì vậy.}_
 }
 { vai != "thuc_tap_sinh":
     _{thuc_tap_sinh} hết thực tập ngày 31/10. {chung_cong_ty_song: Sáng 2/11, {thuc_tap_sinh} vẫn đến công ty lúc 7 giờ, cúi chào bác {bac_bao_ve} 90 độ, và không ai bảo về. Thẻ thực tập sinh được đổi sang thẻ nhân viên. Dây đeo vẫn màu hồng.|{thuc_tap_sinh} nhận được ba lời mời quay lại ngân hàng. Từ chối cả ba. Giờ đang viết kịch bản đầu tay ở quán net Gõ Phím.}_
@@ -728,6 +827,13 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
 }
 { vai != "cho":
     _Còn {cho}? {cho} vẫn ghét shipper Tèo. Vẫn ghét màu hồng. Vẫn ngủ dưới gầm cầu thang, trên một đống đồ mà không ai dám dọn._
+}
+{ vai == "sieu_nhan_hong" && ket_thuc_nhan_vat == "nua_kia_o_quan_che":
+    _Ở đầu Hẻm 69, quán Chè Bà Bảy có thêm một cái ghế nhựa màu hồng. Tối thứ bảy nào nó cũng được lật xuống đầu tiên. Bà Bảy bảo cháu gái: "Cái ghế xấu đó là của thằng nhỏ ăn chè khuya." Mai không cãi._
+- else:
+    { ket_thuc_su_nghiep != "bi_cuop_mat":
+        _Ở đầu Hẻm 69, quán Chè Bà Bảy vẫn mở tới 12 giờ khuya. Thỉnh thoảng có một anh không đội mũ ghé ăn chè, ngồi rất lâu. Cô bán chè chỉ hỏi đúng một câu: "Anh ăn chè gì?"_
+    }
 }
 { biet(ran_thu_hai_lo_mat) && ran_thu_hai != "thanh_ninh" && ran_thu_hai != vai:
     _Riêng {ten(ran_thu_hai)}, từ sau khi bị lộ, đã chuyển sang tòa nhà kính bên Ven Đô. Mỗi sáng đi ngang cổng {cong_ty}, vẫn có một con chó vàng sủa đúng một tiếng._

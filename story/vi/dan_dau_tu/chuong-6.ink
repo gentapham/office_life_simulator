@@ -30,7 +30,7 @@ _Bạn nợ {idol_het_thoi} 500.000đ. Và bạn vừa thấy bí mật lớn nh
     ~ phat_hien(fan_ao_phat)
 * [📈 Để nguyên. Số càng to càng đẹp cho mốc 4.]
     _Con số trông đẹp thêm 80.000. Hai ngày sau, nền tảng rà soát và trừ thẳng tay._
-    ~ follow(-100000)
+    ~ follow(-80000)
     ~ ddt_dc(-10)
 - -> END
 
@@ -43,8 +43,8 @@ giam_doc: {dan_dau_tu}. Mốc cuối trước Đại Nhạc Hội. Em đoán đi
 
 // ------------------------------------------------------------
 === dan_dau_tu_2910_wifi_sap ===
-# ngay:29 # gio:08:15 # noi:ban_so_lieu # bat_buoc
-_Ngày Internet Quốc tế. Wifi sập cả ngày. Cả công ty truy đuổi {it} từ tầng 2 xuống tầng trệt. Chiến dịch đứng hình._
+# ngay:29 # gio:09:00 # noi:ban_so_lieu # bat_buoc
+_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập, tới tận 22 giờ 47 mới có lại. Cả công ty truy đuổi {it} từ tầng 2 xuống tầng trệt. Chiến dịch đứng hình._
 _Bạn lại không có chart. Ngày thứ hai trong tháng sống như người bình thường._
 { ddt_xoa_app:
     _Thật ra, bạn đã không có chart từ hôm 22. Hôm nay chỉ là ngày cả công ty cùng bị như bạn._
@@ -103,7 +103,7 @@ _Bạn cầm cây bút. Có 8 cái tên bạn nợ. Bạn chưa bao giờ viết
 // ------------------------------------------------------------
 === dan_dau_tu_3010_tra_no_cuoi ===
 # ngay:30 # gio:08:30 # noi:tang_1 # bat_buoc
-_Sáng 30. Họp đánh giá chiều nay. Lương tuần về. Bạn mở sổ nợ lần cuối trước buổi họp._
+_Sáng 30. Họp đánh giá lúc 14 giờ. Bạn mở sổ nợ lần cuối trước buổi họp._
 { ddt_so_no == 0:
     _Sổ nợ: 0 đồng. Bạn nhìn con số 0 rất lâu. Đây là con số đẹp nhất bạn từng thấy, đẹp hơn mọi cây nến xanh._
     -> END
@@ -140,6 +140,42 @@ _Sổ nợ còn: {ddt_so_no} đồng. Ví bạn có: {tien} đồng._
 - -> END
 
 // ------------------------------------------------------------
+=== dan_dau_tu_3010_hop_danh_gia ===
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ, phòng họp tầng 2. Họp đánh giá cuối tháng. Bạn là người trình chiếu số liệu cả tháng. Máy chiếu bật lên. Laptop của bạn có hai cửa sổ đang mở._
+_Cửa sổ nào hiện lên trước cả công ty, tùy cả tháng qua bạn nhìn cái nào nhiều hơn._
+{ ddt_man_hinh_trai >= ddt_man_hinh_phai:
+    _Màn hình trái. Bảng số liệu chiến dịch, sạch sẽ, có ghi chú tay ở từng mốc. Cả phòng im lặng đọc._
+    giam_doc: Cái này… em làm cả tháng à?
+    dan_dau_tu: Dạ. Mỗi ngày.
+    ~ uy_tin = uy_tin + 5
+- else:
+    _Màn hình phải. Một cây nến đỏ to tướng phủ kín bức tường phòng họp. Dòng chữ "$HONG −99%" sáng chói._
+    _Cả phòng im lặng. Rồi {hong_hot} bật cười trước. Bạn tắt nó đi, tay run._
+    giam_doc: Ờ… Em chiếu lại cái kia đi.
+    ~ uy_tin = uy_tin - 5
+}
+{ ddt_bao_ll:
+    giam_doc: Và anh cảm ơn em vì đã báo chuyện LL mua số liệu. Người khác thì đã cầm 15 triệu rồi.
+}
+_Cuối buổi, {hr} đứng lên, cầm tập hồ sơ màu hồng. "Về điều chỉnh nhân sự… Dòng một: {thuc_tap_sinh}. Dòng hai: {thanh_xin_nghi}."_
+_Hai cái tên đúng như bạn đoán. Người lương thấp nhất và người nghỉ nhiều nhất. Còn năm dòng trống._
+* [📊 Giơ tay: "Anh {hr}, cắt hai người đó tiết kiệm 17 triệu một tháng. Một đêm Đại Nhạc Hội tốt mang về gấp trăm lần. Đợi số đêm mai."]
+    { ddt_do_chuan >= 70:
+        hr: *(gấp tập hồ sơ lại)* Số của anh {dan_dau_tu} tháng này chưa sai lần nào. Mình đợi.
+        ~ qh("hr", 5)
+        ~ qh("thuc_tap_sinh", 10)
+        ~ qh("thanh_xin_nghi", 10)
+    - else:
+        hr: *(cười nhẹ)* Anh {dan_dau_tu}, số của anh thì… mình cũng biết rồi. Em đọc tiếp nhé.
+        _{hr} ghi thêm một dòng bằng bút chì. Bạn không nhìn rõ. Nhưng bạn đoán được._
+    }
+* [😶 Nhìn xuống bàn. Nhẩm xem dòng ba là ai.]
+    _Bạn nhẩm. Người hay nhìn chart trong giờ làm nhất công ty. Bạn không cần số liệu để biết._
+    ~ cang_thang(10)
+- -> END
+
+// ------------------------------------------------------------
 === dan_dau_tu_3110_truoc_gio ===
 # ngay:31 # gio:17:30 # noi:san_khau_dem_hong # bat_buoc
 _Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} hóa trang "Ông Kẹ Ngân Hàng", tay cầm cuốn sổ nợ bằng bìa cứng. Bạn nhìn cuốn sổ, thấy hơi quen._
@@ -155,29 +191,23 @@ _Trên điện thoại, {thanh_xin_nghi} nhắn: "Anh {dan_dau_tu}, 20:00 em thi
 
 // ------------------------------------------------------------
 === dan_dau_tu_3110_khan_dai ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19:30. Đèn tắt. Phim ngắn "Người Hùng Không Tên". Rồi video "16 năm" của {editor}. Bạn đứng ở góc khán đài, điện thoại sáng trong tay._
-_Con số người theo dõi nhảy từng giây: {nguoi_theo_doi}…_
-_{sieu_nhan_hong} bước ra. Khán đài hô. Con số nhảy nhanh hơn._
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
+_19 giờ 15. Khán đài kín dần. 15 phút nữa mở màn bằng phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}. Bạn đứng ở góc khán đài, điện thoại sáng trong tay._
+_Con số người theo dõi lúc này: {nguoi_theo_doi}._
 { ddt_thuyet_phuc_21:
-    _Giữa chương trình, màn hình lớn chiếu clip {sieu_nhan_hong} cả tháng đi giúp người thật. Ý tưởng của bạn. Khán đài lặng đi, rồi vỗ tay rất lâu._
-    ~ follow(50000)
+    _Trong lịch chạy có một đoạn bạn đề xuất: màn hình lớn chiếu clip {sieu_nhan_hong} cả tháng đi giúp người thật. Bạn hồi hộp như lúc bấm "Mua", chỉ khác là lần này bạn không sợ._
 }
-_Lần đầu tiên trong đời, bạn nhìn một con số đi lên, và mong nó đi lên, không phải vì tiền của mình._
-* [🙏 Cất điện thoại. Nhìn sân khấu bằng mắt thật.]
-    _Bạn tắt màn hình. Trên sân khấu, {sieu_nhan_hong} đang hát, sai lời, nhưng cả khán đài hát theo. Bạn hát theo, cũng sai lời._
+_20 giờ, màn hình lớn sẽ chiếu trực tiếp chung kết "Giọng Ca Ước Mơ" của {thanh_xin_nghi}, thí sinh số 27. Lần đầu tiên trong đời, bạn mong một con số đi lên, không phải vì tiền của mình._
+* [🙏 Cất điện thoại. Tối nay nhìn sân khấu bằng mắt thật.]
+    _Bạn tắt màn hình, bỏ điện thoại vào túi. Tay hơi trống. Nhưng mắt thì rảnh._
     ~ cang_thang(-20)
     ~ ddt_nt(-10)
-* [📊 Nhắn {hong_hot} từng phút: lúc nào đăng clip, lúc nào ghim bình luận.]
-    hong_hot: Anh là cái radar sống hả? Ok, đăng! Ghim! Đăng!
-    { qh_hong_hot >= 30:
-        ~ follow(30000)
-    - else:
-        ~ follow(10000)
-    }
+* [📊 Soạn sẵn cho {hong_hot} lịch đăng từng phút: lúc nào đăng clip, lúc nào ghim bình luận.]
+    hong_hot: Anh là cái radar sống hả? Ok, tối nay anh nhắn, tui đăng!
     ~ ddt_lam_that(3)
-* [📱 Mở kênh Đài Tivi Hóng, canh lượt bình chọn cho {thanh_xin_nghi}.]
-    _Bạn chia đôi màn hình: một bên Đại Nhạc Hội Siêu Nhân, một bên "Giọng Ca Ước Mơ". Hai con số, hai người, cùng đi lên._
+    ~ qh("hong_hot", 5)
+* [📱 Mở sẵn kênh Đài Tivi Hóng để canh lượt bình chọn cho {thanh_xin_nghi}.]
+    _Bạn chia đôi màn hình: một bên Đại Nhạc Hội Siêu Nhân, một bên "Giọng Ca Ước Mơ". Hai con số, hai người. Tối nay bạn canh cả hai._
     ~ qh("thanh_xin_nghi", 10)
-- _22 giờ. Đèn sân khấu tắt dần. Bạn đứng yên ở góc khán đài thêm một lúc, như người vừa xem xong một bộ phim về cuộc đời mình._
+- _Đèn khán đài tắt. Phim bắt đầu._
 -> END

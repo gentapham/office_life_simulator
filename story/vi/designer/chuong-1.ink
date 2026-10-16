@@ -167,7 +167,7 @@ sales: Chủ tịch tên Mr. Kevin Trộn. Em mới đặt lúc nãy, khi đang 
     ~ qh("sales", 10)
     sales: Trời ơi chị là thiên thần! Mai em bao ốc! Quán Ốc Đêm, gọi gì gọi!
     -> designer_mg_deal_ma_mo_dau
-* [😇 "Huyền, cái tập đoàn đó có thật hông em?"]
+* [😇 "{sales}, cái tập đoàn đó có thật hông em?"]
     ~ qh("sales", -5)
     sales: Có chứ! …Sắp có.
     sales: Chị {designer}, em biết là kỳ. Nhưng 2 tỷ em lỡ nói rồi. Chị giúp em lần này thôi.
@@ -226,7 +226,7 @@ _Một chiếc xe hồng đỗ xịch trước cổng. {sieu_nhan_hong} bước 
 sieu_nhan_hong: Gâu gâu! Ê {cho}! Mặc đồ hồng giống anh rồi nè! Mình là anh em đó!
 cho: GÂU! GÂU GÂU! *(lao ra, ngoạm phăng một chiếc găng tay hồng)*
 _Khoảnh khắc vàng. {cho} ngậm găng tay, nơ lệch, mắt trợn ngược. Tay bạn đang cầm điện thoại._
-* [📸 Bấm máy liên tục. Bộ sticker "Tuất Không Vui" ra đời.]
+* [📸 Bấm máy liên tục. Bộ sticker "{cho} Không Vui" ra đời.]
     ~ ds_co_sticker_tuat = true
     ~ qh("cho", -5)
     ~ follow(5000)
@@ -339,7 +339,7 @@ bien_kich: Nửa giây cũng đủ để đau nếu đủ sâu.
 sieu_nhan_hong: Có bà cụ đứng giữa ngã tư kìa! Điều khoản số 3! Em đi chút rồi về!
 _Và ảnh đi thật. Bộ đồ hồng phóng xuống cầu thang. Đĩa bánh chuối chiên vẫn còn trên ghế._
 truong_phong: Thế bây giờ poster thế nào? Mai cần!
-* [💻 Ghép ảnh Nguyên vào phông bằng Photoshop. Nhanh, gọn, giả.]
+* [💻 Ghép ảnh {sieu_nhan_hong} vào phông bằng Photoshop. Nhanh, gọn, giả.]
     ~ ds_sua(1)
     ~ follow(3000)
     _Bạn ghép 6 kiểu đã chụp lên phông. Đẹp, nhưng cái bóng đổ sai hướng mặt trời. Chỉ bạn thấy. Bạn thấy suốt tối._

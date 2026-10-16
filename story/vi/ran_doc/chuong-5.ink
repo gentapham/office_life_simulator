@@ -129,7 +129,7 @@ ke_toan: Em lên đây làm gì? Hóa đơn đâu em? *(cười mệt)* Giỡn t
 // ------------------------------------------------------------
 === ran_doc_2310_chuan_bi_banh ===
 # ngay:23 # gio:10:00 # noi:studio_tang_2 # bat_buoc
-_23/10. Sinh nhật {sieu_nhan_hong}, 31 tuổi. Bạn được giao tổ chức. Cái bánh kem hồng 3 tầng vừa giao tới, to như cái tủ lạnh mini._
+_23/10. Sinh nhật {sieu_nhan_hong}. Bạn được giao tổ chức. Cái bánh kem hồng 3 tầng vừa giao tới, to như cái tủ lạnh mini._
 sales: Tối nay livestream phải có Mr. Kevin Trộn chúc mừng! Ai đóng giả? {thuc_tap_sinh}, {dan_dau_tu}, hay bác {bac_bao_ve}?
 _Hộp bánh thơm mùi kem dâu… và một mùi lạ. Nước hoa. Mùi lá chuối xanh._
 { rd_dong_minh_tuat:
@@ -155,18 +155,19 @@ _Hộp bánh thơm mùi kem dâu… và một mùi lạ. Nước hoa. Mùi lá c
 // ------------------------------------------------------------
 === ran_doc_2310_livestream ===
 # ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
-_Livestream sinh nhật. 30.000 người đang xem. {hong_hot} cầm máy, {it} lo âm thanh, cả công ty đội mũ sinh nhật hồng._
+_20 giờ, studio tầng 2. Livestream sinh nhật. 30.000 người đang xem. {hong_hot} cầm máy, {it} lo âm thanh, cả công ty đội mũ sinh nhật hồng._
 _Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline}._
 sieu_nhan_hong: {chua_te_deadline} ơi… anh thích em. Hông phải PR đâu. Thật đó.
 _Hashtag VũƠiTrảLờiĐi lên xu hướng sau 6 phút. {chua_te_deadline} đứng hình, tay vẫn cầm điện thoại đang lướt Tóp-tóp._
-chua_te_deadline: *(nói nhỏ)* …Anh {quan_ly_idol} dặn anh nói vậy hả?
-~ follow(60000)
+chua_te_deadline: *(cười, vỗ vai {sieu_nhan_hong})* Ý tưởng PR hay đó anh.
+_{sieu_nhan_hong} cười theo. Chỉ có bạn, đứng gần nhất, thấy bàn tay có sẹo nắm chặt micro tới trắng bệch._
 _Rồi từ cửa, một cái bóng đen lao vào. {cho}. Thẳng về phía cái bánh 3 tầng._ # hen_gio:4
 * [🐾 Hô: "{cho}! Bánh đó!"]
     _{cho} hiểu đúng hai chữ: "{cho}" và "Bánh". Cái bánh đổ ụp. Kem hồng bay lên mũ {sieu_nhan_hong}, lên mặt {giam_doc}, lên máy quay._
     ~ rd_pha(0)
     ~ rd_so_lan_dung_tuat = rd_so_lan_dung_tuat + 1
-    ~ follow(30000)
+    ~ chung_so_meme = chung_so_meme + 1
+    ~ follow(10000)
     _Clip "chó phá bánh siêu sao" lên xu hướng. Phá mà vẫn thành giúp. Bạn bắt đầu ghét thuật toán._
 * [🤝 Lao ra ôm {cho} lại.]
     _Bạn ôm được {cho}. Nhưng {idol_het_thoi} vừa "vấp" ngay cạnh bàn bánh. Cái bánh đổ ụp._
@@ -175,10 +176,8 @@ _Rồi từ cửa, một cái bóng đen lao vào. {cho}. Thẳng về phía cá
     ~ phat_hien(fan_ao_phat)
     ~ rd_tin_mat()
     ~ qh("cho", 10)
-    ~ follow(30000)
 * [⏱️ (Không chọn kịp)]
     _Cái bánh đổ. Kem hồng bay khắp nơi. {sieu_nhan_hong} nằm xuống sàn, cười, cho {cho} liếm kem trên mũ. 30.000 người xem cười theo._
-    ~ follow(30000)
 - {rd_mo_nhanh_hieu_ech:
     _Cuối buổi, {sieu_nhan_hong} cắt miếng bánh còn sót lại, đưa bạn. "Em nhỏ hơn anh, phần em trước."_
     ~ rd_han(-5)
@@ -208,7 +207,7 @@ _Có ai đó đang làm đúng việc của bạn. Chỉ có điều, người �
 
 // ------------------------------------------------------------
 === ran_doc_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_sang_tao # bat_buoc
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Bàn tròn, giấy ghi tên, mỗi cặp ngồi cạnh nhau._
 chi_dai: {truong_phong} với {con_ong_chau_cha}. {designer} với {bien_kich}. {sales} với {ke_toan}. {hr} với {thanh_xin_nghi}. Chị với {thanh_ninh}.
 chi_dai: Còn {dan_dau_tu} thì ngồi bàn riêng. Bàn "chủ nợ". Đứa nào cho mượn tiền thì ra đó ngồi.
@@ -218,7 +217,7 @@ con_ong_chau_cha: Ông lấy đi. Tui đâu có muốn.
 * [🔥 Đổ dầu: "Ông {con_ong_chau_cha} đừng tin. Anh {truong_phong} viết đơn xin đề bạt sửa tới 14 lần, còn kể xấu ông với sếp nữa."]
     truong_phong: Cái gì?! Ai cho em xem đơn của tớ?!
     con_ong_chau_cha: Kể xấu tui với chú tui hả? Được. Để anh gọi chú anh!
-    _Hai người đứng bật dậy. Biên bản hội nghị hòa giải của bạn ghi: "09:17, cãi nhau to"._
+    _Hai người đứng bật dậy. Biên bản hội nghị hòa giải của bạn ghi: "14:17, cãi nhau to"._
     ~ rd_tung_tin(15, 10)
     ~ rd_loai_nhat = true
     ~ rd_loai_long = true
@@ -227,14 +226,14 @@ con_ong_chau_cha: Ông lấy đi. Tui đâu có muốn.
 * [😇 "Hai anh nói thật lòng đi. Em ghi biên bản, không ai đọc đâu."]
     con_ong_chau_cha: Tui… thật ra tui chỉ muốn làm nhạc. Cái ghế đó ông lấy đi.
     truong_phong: *(sững sờ)* Cậu nói thật à?
-    _Hai người bắt tay. Biên bản của bạn ghi: "09:17, làm hòa"._
+    _Hai người bắt tay. Biên bản của bạn ghi: "14:17, làm hòa"._
     ~ rd_tin(10)
     ~ qh("truong_phong", 10)
     ~ qh("con_ong_chau_cha", 10)
     ~ rd_do_doc = gioi_han(rd_do_doc - 10)
     ~ phat_hien(bai_hat_long)
 * [😶 Ghi biên bản, không nói gì.]
-    _Biên bản ghi: "09:17. Không có gì để ghi." Một câu rất an toàn._
+    _Biên bản ghi: "14:17. Không có gì để ghi." Một câu rất an toàn._
 - _Cuối hội nghị, {hong_hot} chìa điện thoại: clip {idol_het_thoi} hát "Công Viên" trong bóng tối, do {editor} quay hôm mất điện, đang lan khắp mạng._
 hong_hot: Mà cùng lúc có bài bóc fan ảo của ổng nữa. 80.000 nick, comment y chang nhau: "Anh {idol_het_thoi} đỉnh nóc kịch trần".
 * {biet(fan_ao_phat)} [🐍 "Tui có bằng chứng ổng thuê fan ảo nè. Bà đăng hông?"]
@@ -253,9 +252,9 @@ hong_hot: Mà cùng lúc có bài bóc fan ảo của ổng nữa. 80.000 nick, 
 
 // ------------------------------------------------------------
 === ran_doc_2510_sanh_ll ===
-# ngay:25 # gio:10:30 # noi:sanh_ll_entertainment
-_Chủ nhật. Bạn đi theo một linh cảm tới khu Ven Đô. Tòa nhà kính 20 tầng của LL-Entertainment, sảnh lát đá, máy lạnh mùi lá chuối xanh._
-_Ở sảnh, {designer} và {thanh_ninh} đứng cách nhau 3 mét, cùng ôm bìa hồ sơ, cùng nhìn lên trần nhà._
+# ngay:25 # gio:10:00 # noi:sanh_ll_entertainment
+_Chủ nhật. Bạn đi theo một linh cảm, băng qua đường. Tòa nhà kính 20 tầng của LL-Entertainment nằm ngay đối diện {cong_ty}, sảnh lát đá, máy lạnh mùi lá chuối xanh._
+_Ở sảnh, {designer} và {thanh_ninh} đứng cách nhau 3 mét, cùng ôm bìa hồ sơ, cùng nhìn lên trần nhà. {designer} cầm một cái USB. {thanh_ninh} mặc áo xanh lá, sớm hơn cái hẹn chiều nay của mình cả mấy tiếng._
 designer: Ủa… tui đi lạc.
 thanh_ninh: Em cũng đi lạc. Đi lạc trùng hợp ghê chị.
 _Rồi thang máy mở. {quan_ly_idol} bước ra, hai điện thoại, mặt như vừa nghe một con số rất lớn. Sau anh ta là thư ký của Lưu Lực._
@@ -308,6 +307,26 @@ _Trên bàn {hr} có một tập hồ sơ màu hồng. Góc giấy lòi ra: "Dan
 - -> END
 
 // ------------------------------------------------------------
+=== ran_doc_2610_usb_duy ===
+# ngay:26 # gio:10:15 # noi:tang_1 # bat_buoc
+_Tin đồn cắt giảm đã thành tin chính thức trong lòng mọi người. Trên bàn bạn có cái USB chứa poster Đại Nhạc Hội, bản {designer} gửi hôm qua để {hong_hot} đăng trưa nay._
+* [🧨 Sửa poster: đổi giờ mở màn thành 21:30. Nhờ {thuc_tap_sinh} mang USB qua cho {hong_hot}.]
+    _Bạn ghé bàn {thuc_tap_sinh}, nói rất nhỏ: "Nghe nói danh sách cắt giảm có tên thực tập sinh đầu tiên. Anh gửi giùm file này, tui nói tốt cho anh với anh {hr}."_
+    { qh_thuc_tap_sinh >= 20:
+        _{thuc_tap_sinh} cầm USB, nhìn nó, rồi nhìn bạn. "Dạ… anh {ran_doc} gửi thì hay hơn ạ. Em sợ em làm hỏng." Không biết vô tình hay cố ý, {thuc_tap_sinh} vừa né được một cái bẫy._
+        ~ rd_nghi(3)
+    - else:
+        _{thuc_tap_sinh} gửi liền, không mở ra xem. Poster sai giờ lên fanpage 40 phút mới bị {chi_dai} phát hiện. Ai cũng nhìn {thuc_tap_sinh}._
+        ~ rd_pha(10000)
+        ~ qh("thuc_tap_sinh", -5)
+        ~ rd_nghi(5)
+    }
+* [😇 Tự mang USB qua cho {hong_hot}.]
+    hong_hot: Ông đi giao hàng hả? Cảm ơn nha. Poster đẹp ghê, lần này bà {designer} sửa có 4 lần.
+    ~ rd_tin(2)
+- -> END
+
+// ------------------------------------------------------------
 === ran_doc_2610_chieu_thu_phim ===
 # ngay:26 # gio:16:00 # noi:phong_hop_sang_tao
 _Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên", 15 phút. Kịch bản: {bien_kich}._
@@ -347,6 +366,11 @@ _Bạn ngồi bàn bên, đội nón, cầm ly cà phê muối. Rồi {sieu_nhan
     ~ rd_do_doc = gioi_han(rd_do_doc + 15)
     ~ rd_han(5)
     sieu_nhan_hong: Sắp sập… hả em? *(nhìn về phía Lưu Lực rất lâu)*
+    { rd_moi_han >= 70 && not rd_mo_nhanh_hieu_ech:
+        _Hắn quay về bàn. Cầm cây bút. Lưu Lực mỉm cười, chỉ vào ô chữ ký. Bạn nghe tiếng ngòi bút sột soạt từ bàn bên._
+        ~ nguyen_theo_ll = true
+        ~ phat_hien(ll_moi_nguyen)
+    }
     _Bạn vừa nói điều bạn muốn nói từ ngày 1/10. Sao lại thấy như mình vừa đẩy ai đó vào nhà kho?_
 * [😇 "Ở lại đi anh. Cả công ty đang cố vì anh. Kể cả… em."]
     ~ rd_giu_nguyen_lai = true
@@ -389,8 +413,13 @@ thu_ky_ll: Sếp em chỉ cần một thứ: lịch chi tiết Đại Nhạc H�
 // ------------------------------------------------------------
 === ran_doc_2710_ran_gap_ran ===
 # ngay:27 # gio:19:00 # noi:pantry # bat_buoc
-_Tối. Lưu Lực tới tận công ty, thấy {chi_dai} đứng ở sảnh thì làm rơi cả tập hồ sơ, đi thẳng ra xe. Cả công ty bàn tán._
+_Tối. Cả công ty vẫn bàn tán chuyện 15 giờ chiều nay: Lưu Lực tới tận sảnh, thấy {chi_dai} thì làm rơi cả tập hồ sơ, đi thẳng ra xe._
 _Ở pantry chỉ còn bạn và {ten(ran_thu_hai)}._
+{ not rd_biet_ran_hai && rd_manh_moi_ran_hai >= 4:
+    _Mùi lá chuối xanh. Chữ ký 22:41. Thiết bị lạ trong log của {it}. Mấy mảnh ghép trong sổ tay của bạn tự khớp vào nhau, ngay lúc người đó đưa ly cà phê cho bạn._
+    ~ rd_biet_ran_hai = true
+    ~ phat_hien(ran_thu_hai_lo_mat)
+}
 { rd_biet_ran_hai:
     _Bạn biết. Người đó cũng biết bạn biết. Hai con rắn trong một cái pantry._
     * [🐍 "Tập hồ sơ có tên tui, {ong_ba_cua(ran_thu_hai)} in mấy bản rồi?"]

@@ -34,10 +34,10 @@ _Phòng họp tầng 2 chật kín người. Trên bàn là bản hợp đồng 
 giam_doc: Các em! Hôm nay là một ngày lịch sử của {cong_ty}! Xin giới thiệu đối tác chiến lược của chúng ta: Siêu Nhân Hồng!
 * [🦸 "Chào cả nhà! Hồng không phải màu, Hồng là thái độ!" *(tạo dáng)*]
     _Cả phòng vỗ tay. Có người huýt sáo. Tim bạn đập nhanh vì vui. Lâu lắm rồi mới có nhiều người vỗ tay vậy._
-    ~ follow(2000)
+    ~ follow(1000)
 * [🦸 "Vì công lý và lượt view!" *(tạo dáng hai tay)*]
     hong_hot: *(quay video)* Ối dồi ôi, câu này phải làm slogan!
-    ~ follow(3000)
+    ~ follow(1000)
 - _Bạn tháo găng tay để ký. Vết sẹo nhỏ trên mu bàn tay trái lộ ra. Bạn quen rồi, không giấu._
 ke_toan: *(thì thầm với {giam_doc})* Anh ơi, anh đọc giúp em trang 47 trước khi ký đã…
 giam_doc: Thôi em, đối tác đang chờ. Anh không ép, tùy em… mà thôi ký luôn.
@@ -53,7 +53,7 @@ ran_doc: Dạ, em chào anh. Em là {ran_doc}.
     ran_doc: Chắc tên em phổ biến thôi anh.
     _Bạn không nhớ ra. Nhưng có cái gì đó nhói lên trong ngực, như chạm vào vết thương cũ._
 * [📸 "Chụp chung một tấm làm kỷ niệm ngày đầu nha em!"]
-    ~ follow(2000)
+    ~ follow(1000)
     _Tách. Tấm ảnh nằm trong điện thoại {ran_doc}. Bạn không biết cậu ta sẽ phóng to nó, đúng chỗ vết sẹo._
     ~ snh_hieu(5)
 - -> END
@@ -114,7 +114,7 @@ _Điện thoại rung. Group Zalo-lô công ty vừa thêm bạn vào. 23 thành
 giam_doc: *(22:00)* Các em ngủ sớm nhé, mai 8h30 họp chiến dịch "Hồng Hóa Việt Nam". Anh không ép, tùy các em.
 * [🦸 Gửi sticker siêu nhân tạo dáng.]
     _12 người thả "haha". Bạn đếm đi đếm lại. 12. Như số ghế._
-    ~ follow(500)
+    ~ follow(1000)
 * [🙂 Gõ "Chúc cả nhà ngủ ngon", rồi xóa. Rồi gõ lại. Rồi xóa.]
     _Bạn để màn hình sáng tới khi nó tự tắt._
     ~ cang_thang(5)
@@ -136,7 +136,7 @@ bien_kich: *(ghi chép lia lịa)* Hay. Cần thêm nỗi đau.
 truong_phong: Anh {sieu_nhan_hong}, anh có ý kiến gì không?
 * [🦸 "Anh tình nguyện đi gặp tất cả mọi người! Gét gô!"]
     truong_phong: Tuyệt vời. Mình take note.
-    ~ follow(3000)
+    ~ follow(1000)
     _Cả phòng vỗ tay. Bạn sẽ đi gặp tất cả. Kể cả con chó ở cổng._
 * [🙂 "Dạ… ờm… ý tưởng phim của em {thuc_tap_sinh} hay đó. Anh muốn đóng."]
     thuc_tap_sinh: *(đỏ mặt)* Dạ… dạ anh thích thật hả ạ?
@@ -165,7 +165,7 @@ _Đến lượt bạn._
     ~ snh_tim(3)
     ~ uong(30)
 * [💸 "Hôm nay anh bao cả công ty! Mỗi người thêm một ly!"]
-    ~ snh_ket(8)
+    ~ snh_ket(5)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
     hong_hot: TRỜI ƠI! Đại gia hồng!
     ke_toan: *(nhìn hóa đơn)* Anh trả bằng… tiền gì đây anh?
@@ -183,12 +183,40 @@ _Ngã tư Đại Lộ Kẹt Xe: một chị bán vé số bị kẹt xe đẩy g
 * [📸 Giúp chị bán vé số, nhờ chị quay giùm một clip.]
     ~ snh_giup_nguoi()
     _Chị quay. Clip rung, mờ, có ngón tay che một góc. Bạn đăng lên._
-    ~ follow(3000)
+    ~ follow(1000)
     _"Hôm nay Hồng giúp một chị bán vé số đẩy xe! Slay!" 47 lượt thích. 3 bình luận: "Diễn hả?", "Mặt đâu?", "Hồng đẹp á"._
 * [😴 Về nhà ngủ bù.]
     ~ nghi(30)
     _Căn nhà 12 ghế. Ngủ tới trưa. Không ai gọi._
 - -> END
+
+// ------------------------------------------------------------
+// Mai: cháu gái Bà Bảy, phụ bán ở quán Chè Bà Bảy đầu Hẻm 69.
+// Mai biết mặt thật Nguyên từ những lần ăn chè khuya, nhưng chưa biết anh là Siêu Nhân Hồng.
+=== sieu_nhan_hong_0310_che_khuya ===
+# ngay:3 # gio:22:30 # noi:hem_69 # bat_buoc
+_22 giờ 30. Đầu Hẻm 69, sát lề Đường Hóng. Quán Chè Bà Bảy chỉ có một chiếc xe đẩy, sáu cái ghế nhựa thấp và một bóng đèn vàng treo trên cành me._
+_Bạn không mặc đồ. Áo thun xám, quần short, dép lê. Không ai nhìn bạn tới lần thứ hai. Vì vậy mà bạn hay ghé đây vào giờ này._
+_Bà Bảy ngủ gật trên cái ghế bố sau xe chè. Người đứng bán là cháu gái bà, Mai. Tóc buộc bằng sợi thun, tay cầm cái vá, nhìn bạn như nhìn một khách quen._
+mai: Anh ăn chè gì?
+_Tuần nào bạn cũng nghe câu này. Trên đời chỉ có một người hỏi bạn câu này mà không cần biết bạn là ai._
+* [Như mọi khi. Chè đậu trắng, nhiều nước cốt dừa.]
+    mai: Biết rồi. Hỏi cho có thôi. *(múc, không cần nhìn)*
+    ~ snh_gan_mai(1)
+    _Ly chè đặt xuống. Mai không hỏi bạn làm nghề gì. Mấy tháng nay chưa hỏi lần nào._
+* ["Em thấy món nào ngon thì cho anh món đó."]
+    mai: Vậy chè bưởi. Bưởi bà Bảy lột từ chiều, ngọt lắm. Anh mà chê là bà dậy đó.
+    ~ snh_gan_mai(1)
+    _Ngon. Bạn ăn hết, cạo sạch đáy ly. Mai liếc thấy, cười, không nói gì._
+* [Mua mang về, ăn ở nhà.]
+    mai: Mang về hả? Nhà anh xa hông, chè chảy hết đá à nha.
+    _Bạn nói "gần thôi". Về tới căn nhà 12 ghế thì chè chảy hết đá thật. Bạn ăn ở cái ghế duy nhất có dấu ngồi._
+- ~ an(10)
+_Lúc bạn trả tiền, Mai thối lại đúng 2 nghìn, như mọi lần. Bà Bảy trở mình trên ghế bố, nói mớ._
+ba_bay: Thằng nhỏ ăn chè khuya đó hả con?
+mai: Dạ. Ảnh đó bà.
+_"Ảnh đó." Không phải Siêu Nhân Hồng. Không phải đối tác 5 tỷ. Chỉ là "ảnh". Bạn đi bộ ra đầu hẻm, thấy nhẹ cả người._
+-> END
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_0410_ngay_dong_vat ===
@@ -201,7 +229,7 @@ bac_bao_ve: Cậu {sieu_nhan_hong}, hôm nay nó đã khổ lắm rồi. Tha cho
     ~ snh_choc_tuat()
     cho: GÂU GÂU GÂU!
     hong_hot: *(từ đâu xuất hiện, điện thoại giơ cao)* Quay được rồi! Siêu nhân chọc chó!
-    ~ follow(8000)
+    ~ follow(4000)
     -> sieu_nhan_hong_0410_mat_gang
 * [🙂 Ngồi xuống, tháo cái nơ ra cho {cho}.]
     _Bạn tháo găng, tháo cái nơ. {cho} khựng lại, ngửi bàn tay có vết sẹo. Không sủa._
@@ -211,7 +239,6 @@ bac_bao_ve: Cậu {sieu_nhan_hong}, hôm nay nó đã khổ lắm rồi. Tha cho
     _Rồi {cho} ngoạm chiếc găng tay bạn vừa đặt xuống đất, chạy biến._
     -> sieu_nhan_hong_0410_mat_gang
 * {co(xuc_xich)} [🦴 Lấy xúc xích trong túi ra.]
-    ~ mat(xuc_xich)
     ~ snh_cho_xuc_xich()
     cho: *(ăn sạch, rồi vẫn sủa)* GÂU!
     bac_bao_ve: Ăn thì ăn, ghét thì vẫn ghét. Nó thế đấy.
@@ -223,7 +250,7 @@ _{cho} chạy vào gầm cầu thang. Chiếc găng tay hồng biến mất cùn
 * [🐕 Đuổi theo, giả làm chó bò vào gầm cầu thang.]
     ~ snh_choc_tuat()
     cho: GRỪ! *(chắn cửa kho, nhe răng)*
-    ~ snh_meme(10000)
+    ~ snh_meme(4000)
     hong_hot: Siêu nhân bò bằng bốn chân! Clip này mà không lên xu hướng tui đi bằng đầu!
 * [🙂 "Thôi, em giữ đi. Coi như quà Ngày Động vật."]
     bac_bao_ve: Thế à. *(gật đầu)* Cậu này được.

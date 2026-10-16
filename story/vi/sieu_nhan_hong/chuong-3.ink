@@ -9,11 +9,11 @@ _Ngày Doanh nhân Việt Nam. {giam_doc} ôm bó hoa tự tặng mình. Trên t
 sales: Anh {sieu_nhan_hong} ơi, chụp chung với sếp và tấm bằng đi! Đối tác chiến lược mà!
 _Bạn nhìn kỹ tấm bằng. Con dấu là hình… cái bánh tráng. Không có mã số thuế._
 * [🦸 Tạo dáng chụp chung, giơ ngón cái.]
-    ~ follow(3000)
+    ~ follow(1000)
     ~ qh("giam_doc", 5)
     ~ qh("sales", 5)
     _Ảnh đăng lên. Có người bình luận: "Con dấu hình bánh tráng hả?". Bình luận đó có 2.000 lượt thích._
-    ~ snh_meme(5000)
+    ~ snh_meme(2000)
 * [🙂 Nói nhỏ với {sales}: "Em ơi, cái dấu này… hình như là bánh tráng thiệt."]
     sales: *(cười rất tươi)* Anh tinh mắt ghê. Thôi anh đừng nói ai nha. Tin chị đi, chị lo được.
     ~ phat_hien(btt_global_gia)
@@ -49,19 +49,45 @@ _Bạn đi ra cổng. Không tạo dáng. Không lên xe. Đi bộ._
     ~ uong(25)
     ~ qh("bac_bao_ve", 5)
     _Bác không hỏi. Bạn không kể. Con chó nằm cách bạn 2 mét, lần đầu tiên không sủa._
+    { co(xuc_xich):
+        _Bạn lấy một cây xúc xích trong túi, đặt xuống đất, đẩy nhẹ về phía nó. Nó nhìn cây xúc xích, nhìn bạn, rồi ăn. Không sủa._
+        ~ snh_cho_xuc_xich()
+    }
 - -> END
 
 // ------------------------------------------------------------
+=== sieu_nhan_hong_1410_che_con_so ===
+# ngay:14 # gio:21:30 # noi:hem_69 # bat_buoc
+_Tối. Quán Chè Bà Bảy. Bạn không mặc đồ. Mai lau bàn, ngẩng lên, nhận ra bạn từ xa. Từ hôm 6/10, cô nhìn bạn hơi lâu hơn một chút, rồi thôi._
+mai: Siêu nhân tới. *(nói nhỏ, chỉ đủ hai người nghe)* Anh ăn chè gì?
+* [Kể: "Hôm nay công ty anh đếm người theo dõi. {nguoi_theo_doi} người."]
+    mai: *(múc chè, nghĩ một lúc)* {nguoi_theo_doi} người… nhiều hay ít vậy anh?
+    sieu_nhan_hong: Dạ… ờm… cần một triệu.
+    mai: Vậy còn thiếu. *(đặt ly chè xuống)* Mà ở đây em chỉ cần đếm một người thôi: người đang ngồi ăn chè. Đậu trắng nha.
+    _Bạn bật cười. Lần đầu tiên trong tháng, có người không hỏi con số nào khác ngoài số ly chè._
+    ~ snh_gan_mai(2)
+    ~ cang_thang(-10)
+* [Không kể gì. "Như mọi khi."]
+    mai: Như mọi khi. *(múc chè đậu trắng, nhiều nước cốt dừa)*
+    _Mai không hỏi. Bạn không kể. Bà Bảy coi tivi, cười một mình với một chương trình hài._
+    ~ snh_gan_mai(1)
+* [🦸 Tạo dáng nhỏ: "Siêu Nhân Hồng sắp có một triệu người theo dõi đó nha."]
+    mai: Dạ, chúc mừng anh. *(rồi nhìn bạn, không cười)* Mà anh ăn chè gì?
+    _Câu hỏi đó, vẫn câu đó. Không có thêm chữ nào vì bạn sắp nổi tiếng._
+- ~ an(10)
+-> END
+
+// ------------------------------------------------------------
 === sieu_nhan_hong_1510_mat_dien ===
-# ngay:15 # gio:09:00 # noi:sanh_tang_tret # bat_buoc
-_Ngày Thanh niên Việt Nam. Mất điện cả khu. Bạn tới cổng lúc 9:00, nghe tiếng la trong thang máy từ hồi 8:05._
+# ngay:15 # gio:08:15 # noi:sanh_tang_tret # bat_buoc
+_Ngày Thanh niên Việt Nam. Mất điện cả khu từ 8 giờ 05. Bạn tới cổng lúc 8 giờ 15, nghe tiếng la vọng ra từ thang máy._
 giam_doc: *(vọng ra)* Bình tĩnh! Anh là giám đốc, anh rất bình tĩnh!
 chi_dai: *(vọng ra)* Anh đứng xa em ra!
 bac_bao_ve: Bác đang mở. Cái chìa khóa cứu hộ nó kẹt.
 * [🦸 "Biến hình! Để Siêu Nhân Hồng!" *(cầm chìa khóa, cạy cửa thang máy)*]
     _Cửa mở được một nửa. {giam_doc} bò ra, mồ hôi như tắm. {chi_dai} bước ra, tóc không rối sợi nào._
     giam_doc: Cảm ơn em! Em là siêu nhân thật!
-    ~ follow(5000)
+    ~ follow(2000)
     ~ qh("giam_doc", 10)
     ~ qh("chi_dai", 5)
     _{hong_hot} quay được. Clip "siêu nhân cứu sếp khỏi thang máy" lan khắp quận trước 10 giờ._
@@ -92,13 +118,14 @@ ke_toan: Anh có đọc trang 47 hợp đồng không?
 ~ snh_biet_trang_47 = true
 ~ phat_hien(trang_47)
 _Bạn ngồi im. Bạn không bao giờ đòi 10 tỷ. Bạn không cần. Nhưng chữ ký là chữ ký._
+_Bạn chợt nhớ hôm ký, bạn có viết vội một tờ giấy nhỏ, kẹp vào đâu đó trong tập hợp đồng, dính miếng bánh chuối chiên. Viết gì nhỉ? Kẹp ở trang nào? Bạn không nhớ._
 * [🙂 "Chị ơi, anh hông đòi đâu. Anh viết giấy liền cho chị."]
     ke_toan: *(nhìn bạn rất lâu)* Anh tốt. Nhưng giấy phải có chữ ký giám đốc và người làm chứng. Mà ổng thì… thôi.
     ke_toan: Anh cứ cố tới một triệu. Đó là cách sạch nhất.
     ~ qh("ke_toan", 15)
     ~ snh_no(-3)
 * [💸 "Hay anh trả luôn 10 tỷ cho công ty, coi như xong?"]
-    ~ snh_ket(15)
+    ~ snh_ket(9)
     ke_toan: *(đặt bút xuống)* Anh nói 10 tỷ như nói 10 nghìn. Anh lấy tiền đâu ra?
     _Bạn im. {ke_toan} không hỏi nữa. Nhưng chị ghi một dòng vào sổ._
 * [🦸 Đứng dậy: "Vậy thì mình lên một triệu! Hồng là thái độ!"]
@@ -119,7 +146,7 @@ chua_te_deadline: Ai đó? Ủa… anh {sieu_nhan_hong} hả? Không có mũ ngh
     ~ snh_thao_mu(true)
     chua_te_deadline: Mất điện thì deadline cũng mất điện mà anh. Chill.
     ~ snh_tim(10)
-    _Hai người ngồi trong bóng tối. Cậu ta kể về con mèo trong ảnh đại diện. Bạn kể về cái bàn 12 ghế. Lần đầu tiên bạn kể cho ai nghe._
+    _Hai người ngồi trong bóng tối. Cậu ta kể về con mèo trong ảnh đại diện. Bạn kể về cái bàn 12 ghế. Cậu ta nghe, gật gù, rồi nói: "Bàn to vậy mà quay content ăn tối là hết ý." Bạn cười. Cậu ta nghe chuyện thật của bạn như nghe một ý tưởng hay._
 * [🦸 Đội mũ vào lại thật nhanh: "Biến hình! Đừng sợ, có Siêu Nhân Hồng đây!"]
     chua_te_deadline: *(cười)* Diễn hoài hông mệt hả anh?
     ~ snh_dang_mac_do = true
@@ -129,18 +156,11 @@ chua_te_deadline: Ai đó? Ủa… anh {sieu_nhan_hong} hả? Không có mũ ngh
         chua_te_deadline: Em biết mà. Anh {quan_ly_idol} dặn anh nói vậy đúng hông?
         ~ snh_tim(5)
     - else:
-        _{chua_te_deadline} im lặng rất lâu. Lâu tới mức bạn tưởng cậu ta ngủ rồi._
-        chua_te_deadline: …Đèn có lại thì nói lại câu đó coi.
-        ~ snh_tim(20)
+        _{chua_te_deadline} im lặng một lúc._
+        chua_te_deadline: Em biết mà anh. Anh tặng quà cho cả công ty, tặng em nhiều hơn vì em hay bị la nhất. Chill. Em coi anh như anh ruột.
+        _"Anh ruột." Trong bóng tối, bạn gật đầu. Không ai thấy bạn gật đầu._
+        ~ snh_tim(10)
     }
-* {co(usb_khong_nhan)} [🔒 Đưa cho {chua_te_deadline} cái USB tìm được trong kho của {cho}.]
-    ~ snh_thao_mu(true)
-    ~ mat(usb_khong_nhan)
-    ~ phat_hien(usb_cua_vu)
-    chua_te_deadline: *(cầm USB, ngửi)* Mùi cà phê sữa đá… Trời đất… file gốc! Anh lấy ở đâu ra vậy?
-    ~ snh_tim(30)
-    ~ snh_nguoi_duy_nhat_biet = true
-    chua_te_deadline: Anh là người duy nhất biết em làm mất cái này. Đừng nói ai nha. Em… em nợ anh.
 - _Ở góc kia, {idol_het_thoi} vẫn hát. "…thích ăn chuối chiên…". Bạn hát theo trong đầu. Sai lời._
 -> END
 
@@ -166,15 +186,15 @@ idol_het_thoi: Bài của anh. Người ta cho em hát bài của anh. Em biết
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_1610_gameshow ===
-# ngay:16 # gio:19:00 # noi:dai_tivi_hong # bat_buoc
-_Gameshow "Hồng Hay Không Hồng". Đèn sân khấu chói lóa. Khán giả trường quay vỗ tay theo nhạc._
-_Phòng chờ 5 phút trước giờ lên sóng. Gương to, đèn vàng, một đĩa bánh chuối chiên mà ai đó ở công ty đã gửi tới tận đài. Điều khoản số 4._
-thanh_xin_nghi: Anh ơi, lên sóng trực tiếp đó. Đừng chạy đi giúp ai giữa chừng nha. Em xin anh.
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14 giờ. Gameshow "Hồng Hay Không Hồng" bắt đầu quay, 8 giờ tối phát sóng. Đèn sân khấu chói lóa. Khán giả trường quay vỗ tay theo nhạc._
+_Phòng chờ 5 phút trước giờ quay. Gương to, đèn vàng, một đĩa bánh chuối chiên mà ai đó ở công ty đã gửi tới tận đài. Điều khoản số 4._
+thanh_xin_nghi: Anh ơi, quay một lần là xong, không quay lại đâu. Đừng chạy đi giúp ai giữa chừng nha. Em xin anh.
 * [🙂 Tháo mũ, hít thở sâu trước gương.]
     _Trong gương là Nguyễn {sieu_nhan_hong}, mặt tái, tay run. Bạn nhìn cái mặt đó 10 giây. Rồi đội mũ lại. Siêu Nhân Hồng nhìn lại bạn, tự tin._
     ~ cang_thang(-10)
 * [📱 Nhắn {chua_te_deadline}: "Em có coi hông?"]
-    chua_te_deadline: *(tin nhắn)* Coi gì anh? À gameshow. Em đang ở quán bida, tivi có chiếu. Chill. Hát đúng lời là được.
+    chua_te_deadline: *(tin nhắn)* Coi gì anh? À gameshow. 8 giờ tối mới phát mà. Chill. Hát đúng lời là được.
     ~ snh_tim(3)
 * [🍌 Ăn hết đĩa bánh chuối chiên.]
     ~ an(20)
@@ -185,7 +205,8 @@ thanh_xin_nghi: Anh ơi, lên sóng trực tiếp đó. Đừng chạy đi giúp
 // ------------------------------------------------------------
 === sieu_nhan_hong_1610_sau_gameshow ===
 # ngay:16 # gio:22:00 # noi:pantry
-_Công ty vẫn còn buffet Ngày Lương thực. Cả công ty vừa xem bạn trên tivi. Bạn về tới, cả tầng 1 vỗ tay._
+_Công ty vẫn còn buffet Ngày Lương thực. Cả công ty vừa xem bạn trên tivi lúc 8 giờ. Bạn về tới, cả tầng 1 vỗ tay._
+_Trên mạng, đoạn "bán… khoai chiên tại công viên" đã có bản remix "Khoai Chiên Thái Độ". Có người gọi bạn là "Siêu Nhân Gâu", vì cứ clip nào có bạn là có tiếng chó sủa._
 { snh_lo_mat >= 25:
     hong_hot: Anh ơi! Ảnh cái cằm của anh lên top xu hướng rồi! Người ta đoán anh là ca sĩ, diễn viên, có người đoán là chủ tiệm nail Lung Linh!
 }
@@ -198,7 +219,7 @@ _Công ty vẫn còn buffet Ngày Lương thực. Cả công ty vừa xem bạn 
 }
 _Trên bàn là phong bì 10 triệu tiền thưởng của gameshow. {quan_ly_idol} gọi hai cuộc liền._
 * [🤝 Quyên góp hết cho quỹ người già neo đơn ở Phường Tân Drama.]
-    ~ follow(40000)
+    ~ follow(18000)
     ~ snh_no(-5)
     quan_ly_idol: Ok, chuyện này để anh lo. Anh đăng bài liền. Mà… em tốt thiệt.
     ~ qh("quan_ly_idol", 10)
@@ -213,3 +234,26 @@ _Trên bàn là phong bì 10 triệu tiền thưởng của gameshow. {quan_ly_i
     _Cả công ty hát theo. Đúng lời._
     ~ qh("idol_het_thoi", 5)
 - -> END
+
+// ------------------------------------------------------------
+=== sieu_nhan_hong_1610_che_sau_gameshow ===
+# ngay:16 # gio:23:15 # noi:hem_69 # bat_buoc
+_23 giờ 15. Quán Chè Bà Bảy sắp dọn. Cái tivi nhỏ trên xe chè vẫn mở kênh Đài Tivi Hóng, đang chiếu lại gameshow lúc 8 giờ._
+_Bạn ngồi xuống ghế nhựa thấp, không mặc đồ, tóc còn bết keo xịt của trường quay._
+ba_bay: *(chỉ lên tivi)* Thằng siêu nhân này hát sai lời quá trời. Khoai chiên. Bà cười muốn rụng cái răng còn lại.
+mai: *(liếc bạn, mím môi nhịn cười)* Dạ. Hát sai thiệt bà.
+_Mai múc một ly chè, đặt trước mặt bạn. Không hỏi. Chè khoai môn._
+mai: Khoai. *(rất nghiêm túc)* Cho đúng lời bài hát.
+* [Bật cười tới mức suýt sặc.]
+    _Bạn cười tới chảy nước mắt. Cả ngày hôm nay, ở đài, ở công ty, ai cũng cười bạn. Chỉ có ở đây, bạn cười cùng người ta._
+    ~ snh_gan_mai(2)
+* [Hỏi nhỏ: "Em… thấy anh trên tivi có kỳ hông?"]
+    mai: Kỳ. *(rồi ngồi xuống ghế đối diện)* Mà ngoài đời anh còn kỳ hơn. Ăn chè khuya, thối 2 nghìn hông lấy, ngồi hoài hông về.
+    mai: Em thấy cái người ngồi đây dễ coi hơn cái người trên tivi.
+    ~ snh_gan_mai(2)
+    ~ snh_no(-2)
+* [Nhìn điện thoại, đọc bình luận về "Siêu Nhân Gâu".]
+    _Bạn đọc tới bình luận thứ 200. Ly chè khoai môn nguội dần. Mai dọn ghế xung quanh, chừa lại cái ghế của bạn tới cuối cùng._
+    ~ snh_gan_mai(1)
+- ~ an(10)
+-> END

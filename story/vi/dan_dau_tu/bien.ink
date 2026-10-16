@@ -196,6 +196,6 @@ VAR ddt_co_to_nhac_no_7 = false
 ~ qh("bien_kich", n)
 ~ qh("idol_het_thoi", n)
 
-// Chiến dịch "trên đà" thành công (dùng lúc đánh giá 30/10)
+// Chiến dịch cứu được công ty (đọc kết quả chung chốt sau Đại Nhạc Hội Siêu Nhân)
 === function ddt_chien_dich_on() ===
-~ return nguoi_theo_doi >= 850000 and not nguyen_theo_ll
+~ return chung_cong_ty_song

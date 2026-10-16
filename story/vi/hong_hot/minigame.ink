@@ -21,13 +21,13 @@ _20:04. Bài lên. 3 phút đầu: 1.000 lượt thích. Bình luận đầu ti�
 ~ hh_chuoi_gio_vang = hh_chuoi_gio_vang + 1
 ~ hh_tt(5)
 { RANDOM(1, 10) <= 4:
-    ~ hh_follow(20000)
+    ~ hh_follow(12000)
 - else:
-    ~ hh_follow(8000)
+    ~ hh_follow(5000)
 }
 { hh_chuoi_gio_vang == 7:
     _Bảy ngày liên tiếp đúng giờ vàng. Thuật toán bắt đầu "thương" trang của bạn._
-    ~ hh_follow(50000)
+    ~ hh_follow(20000)
 }
 _Quán trà sữa đầu hẻm gửi một ly "cảm ơn ad đã tag quán"._
 -> END
@@ -124,13 +124,10 @@ _Cảnh giác những thứ không được lên hình: giấy tờ trên bàn, 
 _Buổi live suôn sẻ. Góc máy sạch. Bình luận được đọc đúng lúc. "Mr. Kevin Trộn" chúc mừng qua video, không ai nhận ra giọng quen quen._
 ~ tien_cong(300000)
 ~ nhan(gau_bong)
-~ hh_follow(30000)
+~ hh_follow(20000)
 ~ hh_so_live_sach = hh_so_live_sach + 1
 ~ hh_tt(8)
 _Fan gửi tới một hộp quà: một con gấu bông hồng, một cái bánh, và một tấm thiệp ghi "Cảm ơn ad đã cho tụi em thấy Hồng mỗi ngày"._
-{ ngay == 23:
-    -> hong_hot_2310_banh_kem
-}
 -> END
 
 === hong_hot_mg_livestream_that_bai ===
@@ -141,9 +138,6 @@ _Livestream rớt 3.000 người trong 1 phút. Rồi tăng lại 5.000 vì dram
 ~ scandal()
 ~ hh_follow(10000)
 ~ hh_tt(-3)
-{ ngay == 23:
-    -> hong_hot_2310_banh_kem
-}
 -> END
 
 // ============================================================
@@ -184,7 +178,7 @@ _Sáng hôm sau, người bị nhắc tên đi vòng quanh văn phòng, hỏi t�
 # dieu_kien:minigame_bao_cao_mo_dau
 _Thứ 6. Bàn số liệu. {dan_dau_tu} xoay màn hình: một bảng số đẹp tới mức đáng ngờ._
 dan_dau_tu: Anh làm tròn thôi. Làm tròn lên. Thị trường thích số đẹp. Tin anh.
-_Tìm 3 chỗ "làm tròn": lượt xem cộng trùng, tài khoản ảo "user123…", và một con số 0 thừa._
+_Tìm 3 chỗ "làm tròn": lượt xem cộng trùng, một cụm tài khoản ảo cùng ảnh đại diện hoa sen, và một con số 0 thừa._
 -> END
 
 === hong_hot_mg_bao_cao_thanh_cong ===

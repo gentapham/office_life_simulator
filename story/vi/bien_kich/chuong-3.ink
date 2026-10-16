@@ -184,7 +184,7 @@ hong_hot: Mà phim của bà tên "Người Hùng Không Tên". Hai cái này c�
     ~ cang_thang(10)
 * [🍲 Gắp cho {hong_hot} miếng chả to nhất, đổi chủ đề sang chuyện {sieu_nhan_hong} tháo mũ hôm qua.]
     ~ qh("hong_hot", 5)
-    hong_hot: TÁO MŨ?! Ai thấy? Thấy mặt chưa? Kể! Kể liền!
+    hong_hot: THÁO MŨ?! Ai thấy? Thấy mặt chưa? Kể! Kể liền!
     _Cuốn sổ ô ly bị quên trong ba giây. Nhưng {hong_hot} chưa bao giờ quên cái gì quá ba ngày._
     { RANDOM(1, 10) <= 5:
         ~ bk_ai_biet_chuyen = true
@@ -194,24 +194,25 @@ hong_hot: Mà phim của bà tên "Người Hùng Không Tên". Hai cái này c�
 
 // ------------------------------------------------------------
 === bien_kich_1610_gameshow ===
-# ngay:16 # gio:19:30 # noi:dai_tivi_hong # bat_buoc
-_Đài Tivi Hóng. Gameshow "Hồng Hay Không Hồng", giải 10 triệu. Bạn ngồi trong phòng điều khiển, tay nắm chặt tập câu hỏi._
-mc_tivi_hong: Xin chào quý vị và các bạn! Câu hỏi tiếp theo dành cho Siêu Nhân Hồng!
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_Đài Tivi Hóng, 14 giờ, buổi quay gameshow "Hồng Hay Không Hồng", giải 10 triệu. Tối nay 20 giờ mới phát sóng. Bạn ngồi trong phòng điều khiển, tay nắm chặt tập câu hỏi._
+mc_tivi_hong: Xin chào quý vị và các bạn! Câu hỏi cuối cùng dành cho Siêu Nhân Hồng!
 { bk_bi_trao_cau_hoi:
-    mc_tivi_hong: "Kể tên 5 loại chó ghét bạn nhất."
-    _{sieu_nhan_hong} đứng hình. Cả trường quay đứng hình. Bạn chưa từng viết câu này._
-    sieu_nhan_hong: Dạ… chó… {cho}… chó {cho}… chó {cho} lúc đói… chó {cho} lúc no… và… chó {cho} đội nơ ạ?
-    _Khán giả cười rần. Không biết là cười với, hay cười vào._
+    mc_tivi_hong: "Hồi nhỏ anh từng bắt nạt ai chưa?"
+    _{sieu_nhan_hong} đứng hình. Cả trường quay đứng hình. Bạn chưa từng viết câu này. Trong tập câu hỏi của bạn, câu cuối là về màu hồng._
+    sieu_nhan_hong: Dạ… có. Hồi nhỏ em nhốt một đứa trong nhà kho. Nó khóc quá trời. Em… em chưa bao giờ xin lỗi nó.
+    _Trường quay im phăng phắc. Tối đó, khi chương trình lên sóng, hashtag #XinLỗiNhàKho chạy khắp mạng._
+    ~ chung_so_meme = chung_so_meme + 1
 - else:
     { bk_cau_hoi_gameshow == "vua":
         mc_tivi_hong: "Màu hồng có bao nhiêu sắc thái?"
         sieu_nhan_hong: Dạ hai ạ! Hồng vui và hồng hơi vui!
         _Khán giả cười, mà là kiểu cười thương. Bạn thở phào. Câu hỏi vừa sức. Câu trả lời ngố. Đúng y kịch bản._
-        ~ follow(40000)
+        ~ follow(20000)
     - else:
         { bk_cau_hoi_gameshow == "kho":
             mc_tivi_hong: "Nêu ba nguyên nhân kinh tế vĩ mô dẫn tới sự sụp đổ của thị trường bánh tráng trộn năm 2019."
-            _{sieu_nhan_hong} đứng im mười giây trên sóng trực tiếp. Mười giây trên truyền hình dài bằng một mùa mưa._
+            _{sieu_nhan_hong} đứng im mười giây trước máy quay. Mười giây trên truyền hình dài bằng một mùa mưa._
             ~ follow(-10000)
         - else:
             mc_tivi_hong: "Siêu Nhân Hồng mặc đồ màu gì?"
@@ -241,16 +242,17 @@ _Sai lời. Từ cánh gà, một giọng hát bè cất lên, đúng từng ch�
 
 // ------------------------------------------------------------
 === bien_kich_1610_sau_show ===
-# ngay:16 # gio:22:00 # noi:dai_tivi_hong
-_Hậu trường sau gameshow. Đèn đã tắt một nửa. {sieu_nhan_hong} ngồi trên thùng đạo cụ, ăn bánh chuối chiên qua khe mũ._
+# ngay:16 # gio:17:00 # noi:dai_tivi_hong
+_Hậu trường sau buổi quay. Đèn đã tắt một nửa. {sieu_nhan_hong} ngồi trên thùng đạo cụ, ăn bánh chuối chiên qua khe mũ._
 { bk_bi_trao_cau_hoi:
-    sieu_nhan_hong: Em ơi… cái câu chó ghét… là em viết hả?
+    sieu_nhan_hong: Em ơi… cái câu bắt nạt… là em viết hả?
 - else:
     sieu_nhan_hong: Câu hỏi hôm nay vui ghê! Em viết hả? Cảm ơn em nha!
 }
 * {bk_bi_trao_cau_hoi} [😇 "Không phải em. Có người tráo. Em xin lỗi anh."]
     ~ qh("sieu_nhan_hong", 5)
-    sieu_nhan_hong: Hông sao! Mà công nhận câu đó hài. {cho} mà coi chắc nó gật đầu.
+    sieu_nhan_hong: Hông sao. *(im một lúc)* Mà câu đó… đúng là anh nợ người ta một câu xin lỗi thiệt.
+    _Ở cuối hành lang, {ran_doc} đứng tựa tường, nhìn {sieu_nhan_hong} rất lâu. Bạn ghi lại khuôn mặt đó vào sổ, chưa hiểu vì sao._
 * {bk_bi_trao_cau_hoi} [🎭 "Đó là… câu hỏi mở rộng, để khán giả thấy anh dễ thương."]
     ~ qh("sieu_nhan_hong", -5)
     sieu_nhan_hong: *(im một lúc)* Ờ… dễ thương. Ờ.

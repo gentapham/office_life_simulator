@@ -183,7 +183,7 @@ _Đài Tivi Hóng. Trường quay "Hồng Hay Không Hồng". Giải thưởng 1
 _MC (vest bóng, nụ cười truyền hình): "Và bây giờ là phần Hit Một Thời! Siêu Nhân Hồng sẽ hát lại một bài hit năm 2015!"_
 _Nhạc "Công Viên" vang lên. {sieu_nhan_hong} cầm micro, tự tin hát:_
 sieu_nhan_hong: "Ngày xưa có đôi bạn thân… bán cá viên chiên tại công viên… thích ăn… KHOAI chiên…"
-_Khán giả khựng lại. Trong cánh gà, {idol_het_thoi} đứng như trời trồng. {quan_ly_idol} quay sang nhìn bạn._
+_Khán giả khựng lại. Trong cánh gà, {idol_het_thoi} đứng như trời trồng. {dan_dau_tu} ngồi xổm cạnh bạn, ôm laptop: "Khán giả trường quay bắt đầu cầm điện thoại lên. Mười giây nữa là mất họ." {quan_ly_idol} quay sang nhìn bạn._
 quan_ly_idol: {chi_dai}, sai lời rồi. Chuyện này để anh lo… mà anh không biết lo sao.
 * [📻 Bộ đàm cho {it}: "Mở micro cánh gà. Ngay." Rồi đẩy {idol_het_thoi} ra sát rèm.]
     chi_dai: Ông hát bè. Hát đúng lời. Hát đi.
@@ -191,7 +191,7 @@ quan_ly_idol: {chi_dai}, sai lời rồi. Chuyện này để anh lo… mà anh 
     chi_dai: Thì hát cho người ta nhớ ai là ca sĩ chính.
     _Từ cánh gà vang lên giọng hát thật: "…thích ăn CHUỐI chiên…". {sieu_nhan_hong} quay đầu, cười rạng rỡ, hát theo. Song ca bất đắc dĩ. Khán giả đứng dậy._
     ~ cd_gameshow_on = true
-    ~ follow(40000)
+    ~ follow(30000)
     ~ cd_uy(8)
     ~ qh("idol_het_thoi", 10)
     ~ qh("quan_ly_idol", 8)
@@ -247,8 +247,9 @@ _Bàn dài 23 chỗ. Và một danh sách những người đang giận nhau dà
     ~ qh("cho", -2)
     ~ cd_td(2)
     ~ an(60)
-- { cd_gameshow_on:
-    giam_doc: *(nâng ly)* Hôm nay gameshow thành công! Anh nghe đài nói clip song ca đang lên xu hướng! Cảm ơn em {chi_dai}! Cảm ơn {idol_het_thoi}!
+- _20 giờ. Cái tivi ở sảnh phát gameshow quay chiều nay. Cả bàn tiệc im bặt, rồi cười, rồi la._
+{ cd_gameshow_on:
+    giam_doc: *(nâng ly)* Gameshow thành công! Mới phát mười phút mà clip song ca đã lên xu hướng! Cảm ơn em {chi_dai}! Cảm ơn {idol_het_thoi}!
     idol_het_thoi: *(gãi đầu)* Dạ… em hát bè thôi anh.
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 }

@@ -210,7 +210,7 @@ _Lần sửa thứ 38 trong lịch sử logo. Bạn hít một hơi dài._
     ~ uy_tin = uy_tin - 5
     ~ ds_sua(1)
 * [💬 "Sếp ơi, logo năm 2010 là ai duyệt vậy ạ?"]
-    giam_doc: Anh Genta duyệt. Hồi đó anh ấy bảo: "Thắng ạ, 7 màu là vì công ty mình sẽ có đủ loại người. Màu nào cũng phải có chỗ."
+    giam_doc: Anh Genta duyệt. Hồi đó anh ấy bảo: "{giam_doc} ạ, 7 màu là vì công ty mình sẽ có đủ loại người. Màu nào cũng phải có chỗ."
     _Rồi {giam_doc} kể chuyện khởi nghiệp 40 phút. Lần này bạn nghe. Lần này có đoạn bạn chưa nghe bao giờ._
     giam_doc: …Anh ấy đi lâu rồi. Thỉnh thoảng anh vẫn sợ anh ấy về thấy công ty thế này.
     ~ qh("giam_doc", 10)

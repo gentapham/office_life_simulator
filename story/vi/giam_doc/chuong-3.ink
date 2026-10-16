@@ -170,7 +170,7 @@ _Ngân Sách: {gd_ngan_sach} triệu._
 
 // ------------------------------------------------------------
 === giam_doc_1610_hang_ghe_khach_moi ===
-# ngay:16 # gio:13:30 # noi:dai_tivi_hong
+# ngay:16 # gio:13:40 # noi:dai_tivi_hong
 _Trường quay Đài Tivi Hóng. Hàng ghế khách mời có đúng 3 chỗ trước ống kính._
 _Ghế 1: {con_ong_chau_cha} đã ngồi sẵn, đang selfie. Ghế 2: {truong_phong} đứng cạnh, tay cầm bộ đàm "để chỉ đạo". Ghế 3: {thanh_ninh} giữ chỗ bằng cái túi xách._
 thanh_ninh: Dạ sếp ơi, em giữ ghế đẹp nhất cho sếp rồi ạ! Ngay camera 2!
@@ -192,8 +192,8 @@ thanh_ninh: Dạ sếp ơi, em giữ ghế đẹp nhất cho sếp rồi ạ! Ng
 
 // ------------------------------------------------------------
 === giam_doc_1610_hit_mot_thoi ===
-# ngay:16 # gio:15:00 # noi:dai_tivi_hong # bat_buoc
-_Phần "Hit Một Thời". MC Đài Tivi Hóng mời {sieu_nhan_hong} hát một bài hit năm 2015._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14 giờ, bắt đầu quay. 20 giờ tối nay mới phát sóng. Phần "Hit Một Thời". MC Đài Tivi Hóng mời {sieu_nhan_hong} hát một bài hit năm 2015._
 mc_dai_tivi: Xin chào quý vị và các bạn! Và bài hát là… "Công Viên"!
 sieu_nhan_hong: *(hát, tự tin tuyệt đối)* "Ngày xưa có đôi bạn thân, bán khoai chiên tại công viên…"
 _Sai lời. Khán giả cười ồ. MC nhìn về phía đạo diễn._
@@ -201,13 +201,12 @@ _Ở cánh gà, {idol_het_thoi} đứng nắm chặt rèm. Anh ấy nhìn bạn.
 * [🎤 Gật đầu với {idol_het_thoi}: "Lên đi. Hát bè."]
     _{idol_het_thoi} cầm micro dự phòng, hát bè từ cánh gà. "…cá viên chiên, tại công viên…" Giọng thật, ấm, chuẩn từng nốt._
     _Khán giả đứng dậy. Có người khóc. Có người hét "Anh {idol_het_thoi} ơi!"._
-    ~ follow(40000)
+    ~ follow(30000)
     ~ qh("idol_het_thoi", 20)
     ~ qh("sieu_nhan_hong", 10)
     ~ qh("quan_ly_idol", 15)
 * [😶 Lắc đầu. Không phải lúc.]
-    _{idol_het_thoi} buông rèm, quay vào trong. {sieu_nhan_hong} hát hết bài với "khoai chiên". Mạng xã hội gọi là "Hồng Khoai Chiên"._
-    ~ follow(10000)
+    _{idol_het_thoi} buông rèm, quay vào trong. {sieu_nhan_hong} hát hết bài với "khoai chiên". Tối đó, mạng xã hội có bản remix "Khoai Chiên Thái Độ"._
     ~ qh("idol_het_thoi", -10)
 * [🔥 Tự chạy ra sân khấu hát cùng.]
     _Bạn hát lạc tông, to, rất tự tin. MC không biết bạn là ai._
@@ -221,11 +220,10 @@ _Ở cánh gà, {idol_het_thoi} đứng nắm chặt rèm. Anh ấy nhìn bạn.
         ~ gd_uy(-10)
     }
 - { gd_mua_gameshow:
-    ~ follow(80000)
-- else:
+    _Suất khách mời chính đáng tiền: camera dí sát {sieu_nhan_hong} cả buổi._
     ~ follow(20000)
 }
-_Buổi tối, công ty liên hoan buffet Ngày Lương thực. Ai cũng ăn như chưa từng được ăn._
+_Buổi tối, công ty liên hoan buffet Ngày Lương thực, vừa ăn vừa xem gameshow phát sóng lúc 20 giờ. Ai cũng ăn như chưa từng được ăn._
 ~ an(100)
 -> END
 

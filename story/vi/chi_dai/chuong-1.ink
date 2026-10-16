@@ -146,15 +146,15 @@ _Phía sau bạn, {thuc_tap_sinh} đang tập cười trước gương điện t
     _Máy kêu "Bíp. Nụ cười đạt 98%." {hr} ghi nhận vào sổ._
     ~ qh("thuc_tap_sinh", 8)
     ~ cd_bao_ke(de_thuc_tap_sinh)
-- hr: À, em {chi_dai} này. Chiều nay họp chiến dịch, sếp có giao việc lớn cho em đó. Em chuẩn bị tinh thần nha.
+- hr: À, em {chi_dai} này. 9 giờ 30 họp chiến dịch, sếp có giao việc lớn cho em đó. Em chuẩn bị tinh thần nha.
 chi_dai: Việc lớn hay ngân sách lớn?
 hr: *(cười, nụ cười làm người ta sợ)* Anh chỉ lo nhân sự thôi em.
 -> END
 
 // ------------------------------------------------------------
 === chi_dai_0210_hop_chien_dich ===
-# ngay:2 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Phòng họp "Sáng Tạo". Trên bảng trắng, {truong_phong} viết to: "HỒNG HÓA VIỆT NAM: 1.000.000 NGƯỜI THEO DÕI TRƯỚC 31/10"._
+# ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
+_Phòng họp tầng 2. Trên bảng trắng, {truong_phong} viết to: "HỒNG HÓA VIỆT NAM: 1.000.000 NGƯỜI THEO DÕI TRƯỚC 31/10"._
 truong_phong: Mình sync nhanh 5 phút thôi nhé.
 _Hai tiếng sau._
 sales: Tin chị đi! Em có 3 nhà tài trợ, tổng 2 tỷ, bên Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch là Mr. Kevin Trộn, thân em lắm!
@@ -295,7 +295,7 @@ _{cho} hạ thấp người. Mắt dán vào bàn tay đeo găng hồng của {s
     _{sieu_nhan_hong} sủa. {cho} sủa. {sieu_nhan_hong} sủa to hơn. {cho} cướp luôn chiếc găng tay hồng, chạy mất dưới gầm cầu thang._
     _Bác {bac_bao_ve} uống trà. Bạn uống trà. Hai người không ai nói gì._
     ~ cd_nk(5)
-- sieu_nhan_hong: Găng tay của tui! Đôi đó tui mua ở… à thôi, tui có 12 đôi.
+- sieu_nhan_hong: Găng tay của tui! Thôi… tối nay tui đeo đôi dự phòng vậy.
 _Mười phút sau, bạn thấy {sieu_nhan_hong} lén nhét con gà cao su của {cho} vào sau tủ mạng tầng 1, cười khúc khích._
 * [🦁 "Trả con gà lại cho nó."]
     sieu_nhan_hong: Nó lấy găng của tui mà!
@@ -371,7 +371,7 @@ _{sieu_nhan_hong} lao ra cửa. Đèn vẫn sáng. Tiền thuê đèn vẫn tín
 // ------------------------------------------------------------
 === chi_dai_0610_clip_ba_cu ===
 # ngay:6 # gio:17:00 # noi:tang_1
-_Clip {sieu_nhan_hong} giúp bà cụ đang lên xu hướng. Lượt xem nhảy như giá coin của {dan_dau_tu}, chỉ khác là đi lên._
+_Clip {sieu_nhan_hong} đẩy xe chè cho Bà Bảy đang lên xu hướng. Lượt xem nhảy như giá coin của {dan_dau_tu}, chỉ khác là đi lên._
 hong_hot: Ối dồi ôi! Clip này gấp 12 lần mọi thứ mình làm từ đầu tháng! Trong khi tụi mình đâu có làm gì!
 dan_dau_tu: *(đẩy kính)* Anh xem số liệu rồi. Người ta không thích Siêu Nhân Hồng tạo dáng. Người ta thích Siêu Nhân Hồng làm việc tốt.
 dan_dau_tu: Nếu mình đăng thêm ảnh hậu trường, đúng giờ 8 giờ tối, gắn thẻ đúng chỗ, con số còn gấp bốn.

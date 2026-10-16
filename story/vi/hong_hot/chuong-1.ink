@@ -27,7 +27,7 @@ hr: Em {hong_hot}. 8 giờ 05. Năm mươi nghìn vào quỹ trà sữa nha em. 
 // ------------------------------------------------------------
 === hong_hot_0110_live_ky_hop_dong ===
 # ngay:1 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Phòng họp "Sáng Tạo". Bạn đang livestream lễ ký hợp đồng lên fanpage công ty. 🔴 LIVE · 312 người xem. Trong đó 40 người là nhân viên công ty, và mẹ của họ._
+_Phòng họp "Sáng Tạo". Bạn đang livestream lễ ký hợp đồng lên fanpage công ty. 🔴 LIVE · 312 người xem. Trong đó 20 người là nhân viên công ty, và mẹ của họ._
 sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! *(tạo dáng)*
 giam_doc: Các em! Hôm nay là một ngày lịch sử của {cong_ty}!
 _Đúng lúc sếp cầm bút, {ke_toan} cúi sát tai sếp. Micro điện thoại của bạn bắt được tiếng thì thầm: "…anh đọc giúp em trang 47…"_
@@ -133,7 +133,9 @@ _Không ai hỏi ý bạn. Bạn tính nhẩm: 1.000.000 trừ 5.000, chia 29 ng
 # ngay:2 # gio:08:05 # noi:may_cham_cong
 _Ngày Nụ cười Thế giới. {hr} bắt mọi người cười khi chấm công. Bạn trễ 5 phút, lại. Nhưng bạn có ý tưởng._
 * [🎬 Quay series "Nụ cười chấm công": từng người cười trước máy.]
-    _Nụ cười chuẩn 8 răng của {thanh_ninh}. Nụ cười đi phỏng vấn ngân hàng của {thuc_tap_sinh}. Nụ cười làm người ta sợ của {hr}._
+    _Nụ cười chuẩn 8 răng của {thanh_ninh}. Nụ cười làm người ta sợ của {hr}. Và nụ cười của {thuc_tap_sinh}: hai tay đặt trước bụng, hơi cúi, như sắp hỏi "Dạ quý khách cần giao dịch gì ạ?"._
+    _Bạn xem lại đoạn đó ba lần. Thực tập sinh gì mà cười giống nhân viên quầy ngân hàng dữ vậy?_
+    ~ hh_tin(1)
     ~ hh_follow(4000)
     ~ hh_tt(4)
     ~ qh("thanh_ninh", 3)
@@ -188,14 +190,14 @@ sieu_nhan_hong: Gâu gâu! {cho} ơi, gà đâu rồi? Hehe!
 cho: GRỪ! *(giật đứt dây nơ, lao tới)*
 _{cho} đuổi {sieu_nhan_hong} ba vòng quanh sân, ngoạm được chiếc găng tay hồng, chạy mất xuống gầm cầu thang. Bạn quay được hết, 4K._
 * [🔥 Đăng nguyên clip, caption: "Ai mới là idol thật của công ty?"]
-    ~ hh_follow(40000)
+    ~ hh_follow(15000)
     ~ hh_tuat_noi_hon_nguyen = true
     ~ hh_tt(10)
     _Clip lên xu hướng trong 3 tiếng. 30% người theo dõi mới là fan của {cho}. Hashtag \#{cho}VàHồng xuất hiện._
     ~ qh("sieu_nhan_hong", -5)
     ~ qh("cho", 5)
 * [✂️ Cắt đoạn {cho} cắn găng, chỉ giữ cảnh rượt đuổi dễ thương.]
-    ~ hh_follow(20000)
+    ~ hh_follow(10000)
     ~ hh_tt(5)
     _Clip dễ thương, an toàn. Bình luận: "Siêu nhân chạy cũng có thái độ ghê"._
     ~ qh("sieu_nhan_hong", 3)

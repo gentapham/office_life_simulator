@@ -80,6 +80,19 @@ VAR chung_tien_do_dem_hong = 70
 VAR chung_da_chon_thao_mu = false
 // Công ty còn sống sau Đại Nhạc Hội Siêu Nhân (do chung_3110_ket_thuc_su_nghiep tính)
 VAR chung_cong_ty_song = false
+// Bình đọc quyết định của G trước công ty ngày 30/10: công ty được giữ lại dù chiến dịch ra sao
+VAR chung_g_giu_cong_ty = false
+// Phong bì dán kín "Chỉ mở khi công ty sắp sập" đã được Bình mở trong lượt chơi này
+VAR chung_binh_da_mo_phong_bi = false
+// Tuất giật mũ Nguyên trước giờ diễn 31/10: mặt thật lộ từ trước khi Nguyên bước ra
+VAR chung_tuat_giat_mu = false
+// Lượt chơi Tuất: Tuất lạc ở Vũng Tàu từ 18/10, không có mặt ở Đại Nhạc Hội
+VAR chung_tuat_lac = false
+// Mai (cháu Bà Bảy, quán chè đầu Hẻm 69) đứng ở hàng rào Đại Nhạc Hội, tay cầm ly chè
+VAR chung_mai_den_xem = false
+// Lượt chơi Nguyên: việc Nguyên đã định làm trên sân khấu (chọn ở phòng chờ trước giờ diễn)
+// "" · "giu_mu" · "khan_gia" · "hieu" · "quy_vu" · "canh_ga_vu" · "mai"
+VAR chung_snh_ke_hoach = ""
 
 // ---------- Quan hệ giữa người chơi và từng nhân vật (-100..100) ----------
 VAR qh_ran_doc = 0
@@ -304,5 +317,5 @@ LIST bi_mat = trang_47, trang_47b, clone_thang, admin_confession, the_chap_biet_
 // Chốt kết thúc sự nghiệp và số phận công ty (gọi cuối đêm diễn)
 === function chung_chot_ket_thuc_su_nghiep() ===
 ~ ket_thuc_su_nghiep = chung_tinh_ket_thuc_su_nghiep()
-~ chung_cong_ty_song = ket_thuc_su_nghiep == "sieu_sao_hang_a" || ket_thuc_su_nghiep == "thao_mu" || ket_thuc_su_nghiep == "meme_quoc_dan"
+~ chung_cong_ty_song = ket_thuc_su_nghiep == "sieu_sao_hang_a" || ket_thuc_su_nghiep == "thao_mu" || ket_thuc_su_nghiep == "meme_quoc_dan" || chung_g_giu_cong_ty
 

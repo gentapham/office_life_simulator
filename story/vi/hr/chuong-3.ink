@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === hr_1310_doanh_nhan ===
 # ngay:13 # gio:09:30 # noi:phong_giam_doc # bat_buoc
-_Ngày Doanh nhân Việt Nam. {giam_doc} tự đặt một bó hoa to trên bàn mình, thiệp ghi: "Gửi {giam_doc}, từ Thắng"._
+_Ngày Doanh nhân Việt Nam. {giam_doc} tự đặt một bó hoa to trên bàn mình, thiệp ghi: "Gửi {giam_doc}, từ {giam_doc}"._
 _{thanh_ninh} đọc bài phát biểu khen 15 phút. Tới phút thứ 9, {sales} bước vào với một tấm bằng khung vàng._
 sales: Anh {giam_doc}! Tập đoàn BTT Global trao anh giải "Doanh nhân của năm"! Mr. Kevin Trộn gửi lời chúc mừng, ảnh bận họp ở Singapore!
 giam_doc: Ôi… anh không ngờ. *(ôm tấm bằng, mắt rưng rưng)* {hr}! Tổ chức cho anh em vỗ tay đi!
@@ -229,8 +229,7 @@ _Bạn đứng ở cửa. Rồi bạn nghe tiếng giấy sột soạt ở phía
 # ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
 _Đài Tivi Hóng. Gameshow "Hồng Hay Không Hồng", giải 10 triệu. Bạn đi theo đoàn {hr_tuyen_dung_text()}._
 _Phần "Hit Một Thời": {sieu_nhan_hong} hát "Công Viên". Hát sai lời: "…bán cá viên chiên, thích ăn… khoai chiên". Cả trường quay cười ngặt nghẽo._
-_Từ cánh gà, một giọng hát bè vang lên, đúng lời, đúng tông. Là {idol_het_thoi}._
-~ follow(80000)
+_Từ cánh gà, một giọng hát bè vang lên, đúng lời, đúng tông. Là {idol_het_thoi}. Tối nay 20:00 mới phát sóng, nhưng cả trường quay đã biết đoạn nào sẽ thành meme._
 _Giữa giờ nghỉ, bạn đi dọc hành lang tìm nhà vệ sinh. Ở hành lang trường quay bên cạnh, có một bóng người mặc đồ kim tuyến lấp lánh, tóc giả, đang thử đồ. Dáng đi… quen quen._
 _Bóng người quay lại, thấy bạn, rồi biến vào phòng thay đồ nhanh như một cơn gió kim tuyến._
 * [🏃 Đuổi theo.]
@@ -247,7 +246,7 @@ _Bóng người quay lại, thấy bạn, rồi biến vào phòng thay đồ nh
     _Ai cũng có quyền có một hành lang của riêng mình. Bạn đi tiếp, tìm nhà vệ sinh._
     ~ hr_nghe(3)
 - _Lúc quay về, {thanh_xin_nghi} đang đứng cạnh {sieu_nhan_hong}, thở hơi gấp, trên má còn dính một hạt kim tuyến._
-* [💬 "Sơn, má em dính gì kìa."]
+* [💬 "{thanh_xin_nghi}, má em dính gì kìa."]
     thanh_xin_nghi: Dạ… dạ… bụi trường quay đó anh! *(lau lia lịa)*
     {hr_thay_bong_kim_tuyen:
         _Bạn nhìn hạt kim tuyến. Bạn nhìn {thanh_xin_nghi}. Một ý nghĩ lóe lên, rồi bạn tự cười: "Không thể nào. {thanh_xin_nghi} Kim Tuyến hát hay vậy mà."_
@@ -263,7 +262,7 @@ _Bóng người quay lại, thấy bạn, rồi biến vào phòng thay đồ nh
 _Ngày Lương thực Thế giới. Liên hoan buffet ở công ty. Bánh mì, gỏi cuốn, xúc xích (một nửa đã nằm trong bụng {cho})._
 _Bạn ngồi cạnh {thanh_xin_nghi}. Không ai muốn ngồi cạnh HR, trừ người tới trễ nhất, chỗ trống cuối cùng._
 thanh_xin_nghi: Dạ… anh {hr} ăn đi ạ.
-* [💬 "Sơn, em có xem 'Giọng Ca Ước Mơ' hông? Anh mê một thí sinh, tên {thanh_xin_nghi} Kim Tuyến."]
+* [💬 "{thanh_xin_nghi}, em có xem 'Giọng Ca Ước Mơ' hông? Anh mê một thí sinh, tên {thanh_xin_nghi} Kim Tuyến."]
     _{thanh_xin_nghi} sặc gỏi cuốn. Ho thật, lần đầu tiên trong năm._
     thanh_xin_nghi: Khụ khụ! Dạ… dạ em… có nghe tên ạ.
     hr: Giọng hay lắm em. Anh nhắn bình chọn hoài. {hr_so_lan_vote > 0:Đã {hr_so_lan_vote} lần rồi.|Định bình chọn mà chưa có dịp.}
@@ -271,7 +270,7 @@ thanh_xin_nghi: Dạ… anh {hr} ăn đi ạ.
     ~ hr_so_lan_vote = hr_so_lan_vote + 2
     ~ qh("thanh_xin_nghi", 10)
     _Bạn không hiểu sao {thanh_xin_nghi} ăn hết buổi mà không nói thêm câu nào, nhưng cứ cười một mình._
-* [📓 "Sơn, tuần này em nghỉ 1 ngày, đi trễ 2 ngày. Thứ 2 lên phòng anh uống trà nha."]
+* [📓 "{thanh_xin_nghi}, tuần này em nghỉ 1 ngày, đi trễ 2 ngày. Thứ 2 lên phòng anh uống trà nha."]
     ~ hr_so(5)
     ~ qh("thanh_xin_nghi", -8)
     thanh_xin_nghi: Dạ… *(đặt đũa xuống, hết muốn ăn)*
