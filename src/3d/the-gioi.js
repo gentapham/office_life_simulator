@@ -5,6 +5,7 @@ import { gopKhoi } from "./gop-khoi.js";
 import { vl } from "./nhan-vat-3d.js";
 import { taoThanhPho } from "./thanh-pho.js";
 import { themNoiThat } from "./noi-that.js";
+import { trangTriCongTy } from "./trang-tri.js";
 
 export const CAO_TANG = 4;
 const TUONG_CAO = 3.82, DAY = 0.25; // tường cao chạm trần (không hở khe nhìn thấy trời)
@@ -176,7 +177,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   for (let i = 0; i < 6; i++) xeMay(scene, 10 + i * 1.6, 23 + (i % 2) * 0.3, vat);
 
   // ---------- Tòa nhà ----------
-  const ngoai = 0xf3ece0, trong = 0xe9e3d6;
+  const ngoai = 0xfdf7ec, trong = 0xf6f1e8; // sơn mới: kem sáng bên ngoài, trắng ngà bên trong
   for (const t of [0, 1]) {
     const y = Y(t);
     const san = hop(40, 0.2, 28, t === 0 ? 0xcfc6b4 : 0xd8cfbd, 0, y - 0.2, 0, { can: false });
@@ -285,6 +286,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   }
   const truocNoiThat = scene.children.length;
   themNoiThat(scene, hop, CAO_TANG, denDem);
+  trangTriCongTy(scene, hop, CAO_TANG, denDem);
   // đồ nội thất dựng rời (tủ, ghế, cây, máy in...) cũng có khối va chạm theo đúng kích thước của nó
   const hopBao = new THREE.Box3(), kt = new THREE.Vector3();
   for (const o of scene.children.slice(truocNoiThat)) {
