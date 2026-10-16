@@ -302,6 +302,11 @@ const NOI_VOI_CHO = {
 const ALO = { nam: ["Alo, nghe nè.", "Dạ alo, em nghe.", "Alo? Nói lớn lên chút coi."], bac: ["A lô, nghe đây.", "A lô, ai đấy?"] };
 // Khi bị người chơi ngồi mất ghế
 const GHE_CUA_TUI = { nam: ["Ủa, ghế của tui mà?", "Ngồi êm hông? Ghế tui đó.", "Thôi được, tui đứng xíu cũng được."], bac: ["Ơ, ghế của tớ đấy.", "Ngồi thoải mái nhé. Ghế tớ đấy."] };
+const GHE_RIENG = { thuc_tap_sinh: "Dạ... ghế đó của em ạ. Mà hông sao ạ.", sales: "Ghế của chị đó em. Chị đứng chốt deal cũng được.", con_ong_chau_cha: "Ghế đó của anh. Để anh gọi chú anh.", ke_toan: "Ghế đó có trong sổ tài sản của tui đó nha." };
+
+// Bị người chơi đứng chắn lối đi
+const CHO_QUA = { nam: ["Cho qua xíu nha.", "Nhường đường xíu nè.", "Ủa, cho qua với."], bac: ["Cho tớ đi qua với.", "Nhường đường tí nào."] };
+const CHO_QUA_RIENG = { bac_bao_ve: "Cho bác đi qua với nào.", giam_doc: "Cho anh qua tí nào.", thuc_tap_sinh: "Dạ cho em qua xíu ạ.", cho: "Gâu? (đứng chờ)", sales: "Tránh đường cho chị đi chốt deal nè." };
 
 // ---------- Tán gẫu giữa hai đồng nghiệp ----------
 // Mỗi dòng: [người nói (0 = người thứ nhất trong khóa, 1 = người thứ hai), câu, cử chỉ người nói?, cử chỉ người nghe?]
@@ -471,7 +476,8 @@ export function cauBan(ma, c) {
 
 // câu nhấc máy / câu khi bị chiếm ghế
 export function cauAlo(ma) { return ma === "quan_ly_idol" ? "Chuyện này để anh lo, đừng ai đăng gì hết!" : chon(GIONG_BAC.has(ma) ? ALO.bac : ALO.nam); }
-export function cauGheCuaTui(ma) { return chon(GIONG_BAC.has(ma) ? GHE_CUA_TUI.bac : GHE_CUA_TUI.nam); }
+export function cauChoQua(ma) { return CHO_QUA_RIENG[ma] || chon(GIONG_BAC.has(ma) ? CHO_QUA.bac : CHO_QUA.nam); }
+export function cauGheCuaTui(ma) { return GHE_RIENG[ma] || chon(GIONG_BAC.has(ma) ? GHE_CUA_TUI.bac : GHE_CUA_TUI.nam); }
 
 // Chọn một đoạn tán gẫu cho hai người a, b (đã có mặt). Trả về [{ai: ma, chu, cu, nghe}] hoặc null
 export function chonHoiThoai(a, b, c) {

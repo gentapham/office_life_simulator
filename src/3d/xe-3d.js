@@ -7,6 +7,12 @@ const banh = (g, r, rong, x, y, z) => { const m = new THREE.Mesh(new THREE.Cylin
 const den = c => new THREE.MeshBasicMaterial({ color: c });
 const DEN_TRUOC = den(0xfff3c4), DEN_SAU = den(0xd02020);
 
+// vị trí đèn trước, đèn sau của từng loại xe (toạ độ của xe, đầu xe hướng +z) cho quầng sáng ban đêm
+export const DEN_XE = {
+  xeMay: { truoc: [[0, 1.0, 0.74]], sau: [[0, 0.82, -0.82]] },
+  oto: { truoc: [[-0.62, 0.82, 2.14], [0.62, 0.82, 2.14]], sau: [[-0.62, 0.86, -2.14], [0.62, 0.86, -2.14]] },
+  buyt: { truoc: [[-0.9, 0.95, 5.34], [0.9, 0.95, 5.34]], sau: [[-0.95, 1.0, -5.34], [0.95, 1.0, -5.34]], bien: [0, 2.95, 5.34] },
+};
 export const MAU_XE = [0xc0262d, 0x1c1c1f, 0xf2f2f2, 0x2a5aa8, 0x8a8d92, 0xe8702a, 0x2e8b57, 0x6b3fa0, 0xd9c9a8, 0x7a1424];
 
 // Xe máy: kieu "so" (xe số) hoặc "ga" (tay ga)

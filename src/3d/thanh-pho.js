@@ -464,11 +464,12 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     { truc: "z", huong: -1, oto: 53.4, xeMay: 55.7, tu: -130, den: 160, dung: 42.4, nhom: "ngang" },
   ];
   const loiDi = [
-    { truc: "x", co: 31.0, tu: -145, den: -1 }, { truc: "x", co: 31.0, tu: 5, den: 44 }, { truc: "x", co: 31.0, tu: 61, den: 145 },
-    { truc: "x", co: 42.7, tu: -145, den: 44 }, { truc: "x", co: 42.7, tu: 61, den: 145 },
-    { truc: "z", co: 45.6, tu: -90, den: 29 }, { truc: "z", co: 45.6, tu: 46, den: 130 },
-    { truc: "z", co: 58.4, tu: -90, den: 29 }, { truc: "z", co: 58.4, tu: 46, den: 130 },
-    { truc: "z", co: 10, tu: 47, den: 80 },
+    // bien: khoảng lệch ngang được phép (né cột, cây, hàng xe dựng)
+    { truc: "x", co: 31.0, tu: -145, den: -1, bien: [-0.55, 0.75] }, { truc: "x", co: 31.0, tu: 5, den: 44, bien: [-0.55, 0.75] }, { truc: "x", co: 31.0, tu: 61, den: 145, bien: [-0.55, 0.75] },
+    { truc: "x", co: 42.7, tu: -145, den: 44, bien: [-0.6, 0.42] }, { truc: "x", co: 42.7, tu: 61, den: 145, bien: [-0.6, 0.42] },
+    { truc: "z", co: 45.6, tu: -90, den: 29, bien: [-1.1, 0.55] }, { truc: "z", co: 45.6, tu: 46, den: 130, bien: [-1.1, 0.55] },
+    { truc: "z", co: 58.4, tu: -90, den: 29, bien: [-0.55, 1.1] }, { truc: "z", co: 58.4, tu: 46, den: 130, bien: [-0.55, 1.1] },
+    { truc: "z", co: 10, tu: 47, den: 80, bien: [-0.9, 0.9] },
   ];
   const chiTiet = dungChiTietPho({ nhom, can, NHA, DEN, CAY, thanDung, matUot, denDem, vlDenDuong, veRanh, DEM, choNgoi, nhomNoi, vatCan: vatCanDiBo, dienThoai });
   return { matUot, kinhDem, trongQuan, denGT, lan, loiDi, choNguoiDung, rnd, DEM, chiTiet, vatCanDiBo, choNgoi, nhomNoi, diemMua, vachQua: chiTiet.vachQua };

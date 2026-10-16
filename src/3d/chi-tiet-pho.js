@@ -244,7 +244,7 @@ export function taoVatLieuDem() {
       // cửa cuốn, khe sáng, bảng hiệu tắt đèn
       for (const k of NHOM) {
         const mo = trongGio(h, GIO_MO[k]);
-        const thuc = k === "nha" ? trongGio(h, [[17, 23.6], [5, 6]]) : trongGio(h, [[GIO_MO[k][0][1] % 24, 23.6]]); // còn người thức sau khi đóng cửa
+        const thuc = k === "nha" ? trongGio(h, [[17, 23.6], [5, 6]]) : k === "A" || k === "B" ? trongGio(h, [[GIO_MO[k][0][1], 23.6], [5.2, 6]]) : false; // còn người thức sau khi đóng cửa
         cuaCuon[k].visible = !mo;
         toiBien[k].visible = !mo && toi > 0.3;
         khe[k].uniforms.doSang.value = !mo && thuc ? toi * 0.9 : 0; khe[k].visible = khe[k].uniforms.doSang.value > 0.01;
@@ -290,6 +290,13 @@ export function dungChiTietPho(ctx) {
   const capNhatDs = [];
 
   // ===== 1. Đèn đường: vũng sáng, quầng, cột sáng =====
+  // đèn tường trong hẻm (bóng tròn có chụp), đặt ở ranh giữa hai căn, trên mái hiên
+  for (const [z, x] of [[60.5, 8.05], [69, 11.95], [77, 8.05]]) {
+    const s = x < 10 ? 1 : -1, zz = veRanh(x < 10 ? "dong:8" : "tay:12", z);
+    H(0.4, 0.06, 0.06, 0x3a3d44, x + s * 0.2, 3.3, zz); const b = new THREE.Mesh(new THREE.SphereGeometry(0.09, 8, 6), vlDenDuong); b.position.set(x + s * 0.4, 3.22, zz); nhom.add(b); denDem.push(b);
+    H(0.26, 0.05, 0.26, 0x3a3d44, x + s * 0.4, 3.3, zz);
+    DEN.push({ x: x + s * 0.4, y: 3.2, z: zz, mau: 0xffd890, r: 3.6, loai: "hem" });
+  }
   const vungDen = new BoQuad(), nonDen = [];
   const quangDen = [];
   for (const d of DEN) {
@@ -422,12 +429,6 @@ export function dungChiTietPho(ctx) {
   };
   xeDay(11.3, 72, -Math.PI / 2, "XÔI GÀ");
   xeDay(-96.5, 43.55, Math.PI, "BÁNH CĂN");
-  // đèn tường trong hẻm (bóng tròn có chụp)
-  for (const z of [60.5, 69, 77]) {
-    const x = rnd() < 0.5 ? 8.05 : 11.95, s = x < 10 ? 1 : -1;
-    H(0.08, 0.08, 0.4, 0x3a3d44, x + s * 0.2, 3.0, z); const b = new THREE.Mesh(new THREE.SphereGeometry(0.09, 8, 6), vlDenDuong); b.position.set(x + s * 0.38, 2.95, z); nhom.add(b); denDem.push(b);
-    H(0.24, 0.04, 0.24, 0x3a3d44, x + s * 0.38, 3.04, z);
-  }
 
   // ===== 4. Mặt đường: nắp cống, vá đường, vạch qua đường, sơn bó vỉa, biển báo =====
   for (let x = -176; x < 176; x += 23 + Math.floor(rnd() * 9)) if (x < 40 || x > 64) cong.nen(x, rnd() < 0.5 ? 35.4 : 38.6, 0.85, 0.85, rnd() * 3, 0.017, [0, 0, 0.5, 1]);
