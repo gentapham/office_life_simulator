@@ -734,7 +734,7 @@ async function render3D() {
     [phim("W", "A", "S", "D"), "Di chuyển"], [phim("Shift"), "Chạy"], [phim("Chuột"), "Nhìn quanh"],
     [phim("E"), "Nói chuyện, tương tác"], [phim("V"), "Đổi góc nhìn thứ nhất / thứ ba"],
     [phim("Space", "Enter"), "Đọc câu thoại tiếp theo"], [phim("1", "–", "9"), "Chọn câu trả lời"],
-    [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("Esc"), "Tạm dừng, mở bảng này"],
+    [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("P"), "Điện thoại"], [phim("M"), "Bản đồ"], [phim("Esc"), "Tạm dừng, mở bảng này"],
   ];
   const nutVao = h("button", { class: "btn primary", onclick: () => { if (dienThoai || G?.khoa) { tamNgung.hidden = true; daVao = true; } else G?.canvas.requestPointerLock?.(); } }, "Vào văn phòng");
   const hdTieuDe = h("small", {}, "Hướng dẫn");
