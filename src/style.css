@@ -364,7 +364,7 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .g3d-hd dd { margin: 0; font-size: 14px; }
 .g3d-phim { display: inline-flex; gap: 4px; align-items: center; }
 .g3d-hd ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 14px; color: #e6dfd0; line-height: 1.45; }
-.g3d-hd footer { display: flex; flex-direction: row-reverse; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.g3d-hd footer { display: flex; flex-direction: row-reverse; justify-content: flex-start; gap: 10px; flex-wrap: wrap; }
 .g3d-hd footer .btn { padding: 10px 22px; font-size: 15px; }
 
 /* Cần gạt di chuyển trên điện thoại */
