@@ -172,6 +172,33 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
     const ta = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.14, 0.04), vl(0xffd23a)); ta.position.set(0.07, 0.3, 0); meo.add(ta); meo.userData.tayVay = ta; add(meo); }
   for (const x of [-19.2, -8.8]) { tru(0.3, 0.55, 0x8a5a3a, x, y2, -4.8); cau(0.5, 0x3d7a34, x, y2 + 1.1, -4.8); cau(0.32, 0x4f8a3c, x, y2 + 1.55, -4.8); }
 
+  // ================= BẢNG TÊN PHÒNG (gắn trên cửa, phía hành lang) =================
+  const bienPhong = (so, ten, ghi, x, y, z, rotY) => dung(1.7, 0.46, new THREE.MeshLambertMaterial({ map: tranh("bp" + so, 544, 148, (g, w, h) => {
+    g.fillStyle = "#22305a"; g.fillRect(0, 0, w, h); g.fillStyle = "#e8702a"; g.fillRect(0, h - 10, w, 10);
+    g.fillStyle = "#e8702a"; g.fillRect(14, 18, 92, 92);
+    g.fillStyle = "#ffffff"; g.textAlign = "center"; g.textBaseline = "middle"; g.font = "900 30px 'Be Vietnam Pro', system-ui"; g.fillText(so, 60, 64);
+    g.textAlign = "left"; g.font = "800 40px 'Be Vietnam Pro', system-ui"; g.fillText(ten, 126, ghi ? 52 : 68, w - 140);
+    if (ghi) { g.font = "600 22px 'Be Vietnam Pro', system-ui"; g.fillStyle = "#ffd9a8"; g.fillText(ghi, 126, 98, w - 140); }
+  }) }), x, y, z, rotY);
+  const Y1 = 3.15, Y2 = y2 + 3.15;
+  // lầu 1: dãy phòng phía sau (cửa trên tường z = -6, nhìn ra hành lang)
+  bienPhong("101", "PHÒNG KẾ TOÁN", "Hóa đơn đâu em?", -15, Y1, -5.86, 0);
+  bienPhong("102", "PHÒNG NHÂN SỰ", "Mời vô uống trà xíu", -6, Y1, -5.86, 0);
+  bienPhong("103", "PHÒNG SERVER", "Không phận sự miễn vào", 1, Y1, -5.86, 0);
+  bienPhong("104", "KHO SỰ KIỆN", "Đồ diễn Siêu Nhân Hồng", 8, Y1, -5.86, 0);
+  bienPhong("105", "NHÀ VỆ SINH", "Nam - Nữ", 16, Y1 + 0.2, -5.86, 0);
+  bienPhong("106", "KHU LÀM VIỆC CHUNG", "Open space - Open drama", -1.86, Y1, 5.5, Math.PI / 2);
+  bienPhong("107", "PANTRY", "Cà phê - Mì ly - Chuyện phiếm", 8.86, Y1, 5.5, -Math.PI / 2);
+  // lầu 2: dãy phía sau (tường z = -4) và dãy phía trước (tường z = 2)
+  bienPhong("201", "PHÒNG GIÁM ĐỐC", "Gõ cửa trước khi vào", -14, Y2, -3.86, 0);
+  bienPhong("202", "PHÓ GIÁM ĐỐC", "(ghế đang trống)", -4, Y2, -3.86, 0);
+  bienPhong("203", "PHÒNG HỌP", "Họp xong nhớ tắt đèn", 6, Y2, -3.86, 0);
+  bienPhong("204", "PHÒNG NGHỆ SĨ", "Phát & Siêu Nhân Hồng", 16, Y2, -3.86, 0);
+  bienPhong("205", "STUDIO", "Đang quay: giữ im lặng", -13, Y2, 1.86, Math.PI);
+  bienPhong("206", "PHÒNG DỰNG PHIM", "Đang render, đừng rút điện", -2, Y2, 1.86, Math.PI);
+  bienPhong("207", "CẦU THANG", "Lên sân thượng", 5, Y2, 1.86, Math.PI);
+  bienPhong("208", "PHÒNG SẢN XUẤT", "Deadline là hôm qua", 14, Y2, 1.86, Math.PI);
+
   // ================= SÂN THƯỢNG =================
   tru(0.55, 1.5, 0xd5d9dd, -16, y3 + 0.4, 10); V(1.4, 0.4, 1.4, 0x8a8d92, -16, y3, 10, 2);  // bồn nước inox
   for (let k = 0; k < 3; k++) { const p = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.05, 1.0), vl(0x1f3a6a)); p.position.set(10 + k * 1.8, y3 + 0.7, 1.5); p.rotation.x = -0.35; add(p); K(0.06, 0.6, 0.06, 0x8a8d92, 10 + k * 1.8, y3, 1.8, 2); } // pin mặt trời

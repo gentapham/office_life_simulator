@@ -676,11 +676,15 @@ async function render3D() {
     wc: { chu: "Đi vệ sinh", ket: ["Nhẹ cả người.", "Xả nước rồi nha. Bác Bình dặn.", "Ngồi lướt điện thoại hơi lâu. Ai đó gõ cửa."], doi: { stress: -8, nang_luong: 2 } },
     tieu: { chu: "Đi vệ sinh", ket: ["Nhẹ cả người.", "Vách ngăn hơi thấp. Không ai nhìn ai."], doi: { stress: -5 } },
     rua_mat: { chu: "Rửa mặt", ket: ["Nước mát. Tỉnh hẳn.", "Nhìn vào gương: mặt mình hôm nay trông như deadline.", "Rửa mặt xong thấy đời cũng không đến nỗi."], doi: { nang_luong: 15, stress: -3 } },
+    meo: { chu: "", ket: ["Meo~. Nó cọ đầu vào tay bạn.", "Nó nằm ngửa ra cho gãi bụng. Một cái bẫy: bạn bị cào nhẹ.", "Nó nhìn bạn một lúc, rồi quay đi như sếp nhìn đề xuất tăng lương.", "Rừ rừ rừ. Stress bay đi đâu mất."], doi: { stress: -4 } },
+    ca: { chu: "", ket: ["Con cá vàng bơi một vòng rồi quên luôn bạn là ai. Ghen tị ghê.", "Nhìn cá bơi, tự nhiên thấy deadline cũng chỉ là nước.", "Con cá đỏ đớp đớp như đang họp."], doi: { stress: -3 } },
+    chim: { chu: "", ket: ["Cả bầy bồ câu sà xuống. Bạn thấy mình như người nổi tiếng.", "Một con bồ câu giành vụn bánh mì với con khác. Giống hệt chuyện tranh ghế phó giám đốc.", "Bồ câu mổ lia lịa. Bác Bình nhìn từ chòi bảo vệ, lắc đầu: \"Lát cháu quét sân nhé.\""], doi: { stress: -2 } },
     uong_nuoc: { chu: "Uống nước", ket: ["Một ly nước lọc mát lạnh.", "Cây nước kêu ọc ọc như đồng nghiệp lúc 4 giờ chiều."], doi: { khat: 30 } },
   };
   g.onDoVat = v => {
     const d = DUNG_DO[v.loai]; if (!d) return;
-    chuyenCanh(d.chu + "…", () => {
+    const lam = cb => d.chu ? chuyenCanh(d.chu + "…", cb) : cb(); // vuốt mèo, ngắm cá: làm ngay, không chuyển cảnh
+    lam(() => {
       for (const [k, x] of Object.entries(d.doi)) L.set(k, Math.max(0, Math.min(100, (Number(L.v(k)) || 0) + x)));
       thongBao3D(d.ket[Math.floor(Math.random() * d.ket.length)]);
       const chiSo = Object.entries(d.doi).map(([k, x]) => `${{ stress: "Stress", nang_luong: "Năng lượng", khat: "Khát" }[k]} ${x > 0 ? "+" : ""}${x}`).join(" · ");

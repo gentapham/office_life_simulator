@@ -6,6 +6,7 @@ import { taoNguoi, taoBangTen, taoDoiTay } from "./nhan-vat-3d.js";
 import { BauTroi } from "./bau-troi.js";
 import { GiaoThong } from "./giao-thong.js";
 import { SanKhau, CHO_XEM } from "./san-khau.js";
+import { DongVat } from "./dong-vat.js";
 export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
@@ -50,6 +51,7 @@ export class Game3D {
     this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.dienThoai });
     this.sanKhau = new SanKhau(this.scene, { dienThoai: this.dienThoai });
     this.THREE = THREE; // cho công cụ kiểm thử tự động
+    this.dongVat = new DongVat(this.scene, this.theGioi.vat, CAO_TANG);
     this.dem = null; this.moTaTT = "";
 
     // Người chơi: thân (góc nhìn 3) + đôi tay (góc nhìn 1)
@@ -268,6 +270,8 @@ export class Game3D {
       const d = Math.hypot(v.x - this.p.x, v.z - this.p.z);
       if (d < 1.3 && d < dMin) { dMin = d; gan = { loai: "do_vat", v, nhan: v.nhan }; }
     }
+    const dv = this.dongVat.timGan(this.p, this.tang);
+    if (dv) { const d = dv.loai === "chim" ? 1.5 : 0; if (d < dMin) { dMin = d; gan = { loai: "do_vat", v: dv, nhan: dv.nhan }; } }
     if (this.tang === 0) {
       const d = Math.hypot(2 - this.p.x, 29 - this.p.z);
       if (d < 2.4 && d < dMin) { dMin = d; gan = { loai: "cong", nhan: "Ra khỏi công ty" }; }
@@ -283,7 +287,11 @@ export class Game3D {
       this.onNoiChuyen?.(g.ma);
     } else if (g.loai === "cau_thang") {
       this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
-    } else if (g.loai === "do_vat") this.onDoVat?.(g.v);
+    } else if (g.loai === "do_vat") {
+      if (g.v.loai === "meo") this.dongVat.vuot(g.v.meo);
+      if (g.v.loai === "chim") this.dongVat.rac(this.p);
+      this.onDoVat?.(g.v);
+    }
     else if (g.loai === "cong") this.onCong?.();
   }
   datKhoa(k) {
@@ -386,6 +394,7 @@ export class Game3D {
     this._tt = (this._tt || 0) + dt;
     if (this._tt > 1) { this._tt = 0; const m = this.bauTroi.moTa(); if (m !== this.moTaTT) { this.moTaTT = m; this.onThoiTiet?.(m); } }
     // giao thông: ẩn khi đang ở sâu trong tòa nhà cho nhẹ máy
+    this.dongVat.capNhat(dt, this.t, this.p, this.tang);
     if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
     this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2);
     this.onGoiY?.(this.khoa ? null : this.timTuongTac());

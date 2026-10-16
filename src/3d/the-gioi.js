@@ -46,7 +46,7 @@ export const DO_VAT = [
   { loai: "rua_mat", tang: 0, x: 13.1, z: -8.1, nhan: "Rửa mặt" },
   { loai: "rua_mat", tang: 0, x: 13.1, z: -9.6, nhan: "Rửa mặt" },
   { loai: "uong_nuoc", tang: 0, x: -3.2, z: -0.3, nhan: "Uống nước" },
-  { loai: "uong_nuoc", tang: 0, x: 8.4, z: 4.6, nhan: "Uống nước" },
+  { loai: "uong_nuoc", tang: 0, x: 7.8, z: 10.4, nhan: "Uống nước" },
 ];
 
 // Điểm chuyển tầng (bấm tương tác để đi)
@@ -213,7 +213,9 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // Sảnh lễ tân
   hop(4, 1.1, 1, 0xe8702a, 2, 0, 8.5);
   hop(4.2, 0.08, 1.2, 0xf6f1e8, 2, 1.1, 8.5, { can: false });
-  logoG(scene, 2, 2.2, -1.85);
+  // vách logo sau quầy lễ tân (trước đây logo và đồng hồ treo lơ lửng giữa không trung)
+  hop(4.2, TUONG_CAO, 0.2, 0x2fa39a, 2, 0, -1.97); logoG(scene, 2, 2.2, -1.85);
+  hop(4.3, 0.12, 0.26, 0xe8702a, 2, 0.95, -1.97, { can: false });
   hop(3, 0.5, 1, 0x5b6b8c, 6.5, 0, 12); hop(3, 0.6, 0.25, 0x5b6b8c, 6.5, 0.5, 12.5, { can: false }); // sofa
   hop(1.2, 0.4, 0.6, 0x8a6a4a, 6.5, 0, 10.8);
   hop(0.6, 1.4, 0.5, 0x3a3d44, -0.8, 0, 12.8); // máy chấm công
@@ -247,7 +249,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   const y2 = Y(1);
   // Giám đốc
   hop(3.2, 0.8, 1.4, 0x5a3d2a, -14, y2, -10.6, { tang: 1 }); hop(0.8, 1.3, 0.8, 0x1d1f24, -14, y2, -12.2, { tang: 1 });
-  hop(4, 2.4, 0.5, 0x6b4a2f, -14, y2, -13.6, { tang: 1 }); logoG(scene, -14, y2 + 2.6, -13.3);
+  hop(4, 2.4, 0.5, 0x6b4a2f, -14, y2, -13.6, { tang: 1 }); logoG(scene, -14, y2 + 3.1, -13.8);
   hop(2.4, 0.5, 1, 0x22305a, -18, y2, -6.5, { tang: 1 });
   // Phó giám đốc (ghế trống mà ai cũng nhắm tới)
   hop(2.4, 0.75, 1.2, 0x8a6a4a, -4, y2, -10.6, { tang: 1 }); hop(0.8, 1.3, 0.8, 0xe8702a, -4, y2, -12, { tang: 1 });

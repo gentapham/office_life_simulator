@@ -107,12 +107,13 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   for (const [dz, c] of [[-0.05, 0xe8702a], [0.1, 0x6aa84f], [0.25, 0xe9e04a]]) cau(0.07, c, -1.4, 1.02, 10.45 + dz);
   tru(0.06, 0.1, 0xc9b26a, -1.4, 0.96, 10.95); { const d = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.12, 0.05), new THREE.MeshBasicMaterial({ color: 0xff3a2a })); d.position.set(-1.7, 1.1, 10.5); nhom.add(d); }
   T(5.2, 0.7, chu("khauhieu", 1024, 128, "#e8702a", "#ffffff", ["VIỆC HÔM NAY CỨ ĐỂ NGÀY MAI TÍNH"], 64), 2, 3.0, 7.95);
-  hop(0.4, 1.2, 0.4, 0xe8e8e8, 8.4, 0, 4); tru(0.14, 0.4, 0x7fb8e0, 8.4, 1.2, 4);
+  hop(0.4, 1.2, 0.4, 0xe8e8e8, 8.4, 0, 10.4); tru(0.14, 0.4, 0x7fb8e0, 8.4, 1.2, 10.4); // cây nước (không chắn cửa pantry)
+  for (const x of [-0.4, 4.4]) hop(0.02, 0.5, 0.02, 0x8a8d92, x, 3.3, 7.95, { can: false }); // dây treo băng rôn
   T(1.6, 0.9, chu("tvsanh", 320, 180, "#f26fa6", "#ffffff", ["SIÊU NHÂN HỒNG", "1.000.000 FOLLOW"], 44), 8.84, 2.0, 9, -Math.PI / 2);
   for (let i = 0; i < 3; i++) ghe(-0.7 + i * 0.6, 4.2, Math.PI / 2 * 0, 0, 0x5b6b8c);
   T(1.2, 1.6, chu("poster1", 240, 320, "#1c1c1f", "#f26fa6", ["ĐẠI NHẠC HỘI", "SIÊU NHÂN", "31.10"], 46), 8.84, 1.9, 12.5, -Math.PI / 2);
   dongHoTuong(2, 3.2, -1.95, 0);
-  chauCay(-1.2, 1, 0, 1.2); chauCay(8.4, 7.6, 0);
+  chauCay(-1.2, 1, 0, 1.2); chauCay(8.4, 1.6, 0);
   // Khu làm việc chung: tủ hồ sơ, máy in, cây nước, điều hòa, bảng tiến độ
   for (let i = 0; i < 4; i++) tuHoSo(-19.5, 10.3 + i * 0.95, Math.PI / 2);
   hop(1.1, 0.9, 0.7, 0xd9d9d9, -3.2, 0, 12.6); hop(0.9, 0.2, 0.5, 0x3a3d44, -3.2, 0.9, 12.6, { can: false });
@@ -187,7 +188,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   hop(0.05, 1.6, 1.6, 0x9a9a9a, 14, y2, -6, { can: false, tang: 1 });
   { const gt = new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.5, 0.1), vl(0xb5653a)); gt.position.set(18.5, y2 + 0.4, -13.5); nhom.add(gt); hop(0.06, 0.6, 0.04, 0x3a2a1a, 18.5, y2 + 0.6, -13.5, { can: false, tang: 1 }); }
   // Hành lang tầng 2: ghế chờ, cây, ảnh kỷ niệm
-  for (let i = 0; i < 4; i++) T(0.8, 0.6, chu("anh" + i, 160, 120, ["#f2e6c8", "#d9e6f2", "#ffd3e0", "#e6f2d9"][i], "#333", [["2010", "2015", "2020", "2026"][i], "G-ENT"], 36), 8 + i * 2.5, y2 + 1.8, -3.86, 0);
+  for (let i = 0; i < 4; i++) T(0.8, 0.6, chu("anh" + i, 160, 120, ["#f2e6c8", "#d9e6f2", "#ffd3e0", "#e6f2d9"][i], "#333", [["2010", "2015", "2020", "2026"][i], "G-ENT"], 36), 8.2 + i * 2, y2 + 1.8, -3.86, 0);
   ghe(16, 0.5, Math.PI, 1); ghe(16.7, 0.5, Math.PI, 1); chauCay(19, -3, 1); binhCuuHoa(-19.5, -3.5, 1);
   // Studio: đèn softbox, micro boom, trái tim hồng
   for (const x of [-16, -10]) { hop(0.06, 1.6, 0.06, 0x222222, x, y2, 9, { can: false, tang: 1 }); const sb = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.6, 0.3), new THREE.MeshBasicMaterial({ color: 0xfaf6ee })); sb.position.set(x, y2 + 1.9, 9); sb.lookAt(-13, y2 + 1.5, 12); nhom.add(sb); }
