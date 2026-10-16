@@ -5,8 +5,8 @@
 // ------------------------------------------------------------
 === thuc_tap_sinh_2810_video_linh ===
 # ngay:28 # gio:09:30 # noi:tang_1 # bat_buoc
-_Đêm qua 2 giờ 10, fanpage công ty tự đăng một video lạ: cảnh {quan_ly_idol} ngủ gục trên xe, cầm hai điện thoại, đắp áo cho {idol_het_thoi}. Cuối video: "Em thích anh lâu rồi."_
-_{editor} xuất nhầm. Video nằm trên fanpage 6 phút, khoảng 2.000 lượt xem rồi bị gỡ. Sáng nay cả tầng 1 vẫn nói về nó._
+_Đêm qua 2 giờ 10, bản nháp video "16 năm" của {editor} lên kênh của {editor} ở chế độ công khai. Cuối bản nháp còn sót một đoạn: {quan_ly_idol} ngủ gục trên xe, cầm hai điện thoại, đắp áo cho {idol_het_thoi}. Câu cuối: "Em thích anh lâu rồi."_
+_Video nằm đó 6 phút, khoảng 2.000 lượt xem rồi bị gỡ. Sáng nay cả tầng 1 vẫn nói về nó._
 _Cùng lúc, {dan_dau_tu} đứng bật dậy: "Bộ lọc của tui lần ra 80 nghìn tài khoản ảo. Tất cả comment 'Anh {idol_het_thoi} đỉnh nóc kịch trần'."_
 _Cả tầng 1 rối như tơ vò. Bạn đứng giữa, tay cầm xấp giấy photo._
 * [☕ Pha một ly cà phê đen đá không đường, để lên bàn {editor}, không nói gì.]

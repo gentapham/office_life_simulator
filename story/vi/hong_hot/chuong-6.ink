@@ -6,7 +6,7 @@
 === hong_hot_2810_moc_4 ===
 # ngay:28 # gio:08:10 # noi:ban_mang_xa_hoi # bat_buoc
 _Mốc 4: 800.000 người theo dõi. Con số: {nguoi_theo_doi}. Bạn thức trắng đêm qua lên bài._
-_Vì thức trắng nên bạn thấy nó: 2 giờ 10 sáng, một video lạ hiện lên fanpage. File tên "Thai_final_v12", ảnh bìa là {quan_ly_idol} ngủ gục trong xe, một giọng run run tỏ tình với "anh quản lý". Video của {editor}, xuất nhầm. Sáu phút sau nó biến mất, khoảng 2.000 lượt xem._
+_Vì thức trắng nên bạn thấy nó: 2 giờ 10 sáng, kênh "Cú Đêm Cắt Ghép" đăng công khai bản nháp video "16 năm" của {editor}. Cuối video còn sót bốn phút tên "Thai_final_v12": {quan_ly_idol} ngủ gục trong xe, một giọng run run tỏ tình với "anh quản lý". Sáu phút sau video biến mất, khoảng 2.000 lượt xem._
 _Giờ là 8:10. Trong máy bạn vẫn còn bản quay màn hình._
 * [🗑️ Xóa bản quay màn hình. Nhắn {editor}: "Chị thấy rồi, chị xóa rồi."]
     ~ qh("editor", 15)

@@ -122,7 +122,7 @@ Ngân là **người góp nhiều người theo dõi nhất** cho Siêu Nhân H�
 - **27/10:** Ngân là người đầu tiên thấy tin **LL mời Nguyên với giá gấp ba**, vì một trang showbiz đăng lúc 7 giờ sáng. Báo cho sếp, báo cho group, hay đăng lên trang Confession?
 
 ### Chương 6: "Không Wifi Thì Hóng Bằng Gì" (28/10 – 31/10)
-- **28/10 (Mốc 4):** cần 800.000. Ngân thức trắng lên bài, nên thấy video tỏ tình của Lĩnh lên fanpage lúc 2:10 (6 phút, khoảng 2.000 lượt xem). Chiều, bộ lọc của Chương lần ra fan ảo của Phát.
+- **28/10 (Mốc 4):** cần 800.000. Ngân thức trắng lên bài, nên thấy bản nháp video "16 năm" của Lĩnh (cuối có đoạn tỏ tình sót lại) lên kênh của Lĩnh lúc 2:10, 6 phút, khoảng 2.000 lượt xem. Chiều, bộ lọc của Chương lần ra fan ảo của Phát.
 - **29/10:** wifi sập cả ngày. Cả công ty đứng hình, trừ Ngân: điện thoại có 4G. Phát wifi cho cả công ty, cho riêng phòng dựng, hay giữ cho riêng mình để "lướt cho đỡ buồn"? Bảo bị cả công ty đuổi, chỉ có Ngân biết chỗ Bảo trốn (phòng server).
 - **30/10:** 14:00 họp đánh giá. Nếu Độ Lộ Admin cao, đây là ngày danh tính bị công bố. Nếu phần đóng góp đủ lớn, sếp hứa đề bạt Ngân "nếu mai công ty còn đứng được".
 - **31/10:** Đại Nhạc Hội Siêu Nhân. Ngân đứng giữa khán đài, ba điện thoại trên tay, đếm từng người theo dõi tới con số 1 triệu. Hoặc tới con số khác.

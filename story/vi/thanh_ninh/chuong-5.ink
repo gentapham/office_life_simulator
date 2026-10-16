@@ -231,8 +231,8 @@ _{chi_dai} ngồi xuống đối diện bạn. Chị nhìn bạn thẳng._
 
 // ------------------------------------------------------------
 === thanh_ninh_2510_sanh_ll ===
-# ngay:25 # gio:10:00 # noi:sanh_ll_entertainment # bat_buoc
-_Chủ nhật. Lịch phỏng vấn là 15 giờ, mà 10 giờ bạn đã đứng ở sảnh, mặc áo xanh lá cho "hợp tông". Tòa nhà kính 20 tầng xanh lá chuối nằm ngay đối diện {cong_ty}, cách một con đường. Slogan trên tường: "Việc hôm nay phải xong từ hôm qua."_
+# ngay:25 # gio:08:45 # noi:sanh_ll_entertainment # bat_buoc
+_Chủ nhật. Lịch phỏng vấn 9 giờ, tầng 20. 8 giờ 45 bạn đã đứng ở sảnh, mặc áo xanh lá cho "hợp tông". Tòa nhà kính 20 tầng xanh lá chuối nằm ngay đối diện {cong_ty}, cách một con đường. Slogan trên tường: "Việc hôm nay phải xong từ hôm qua."_
 _Ở sảnh, bạn đụng mặt một người ôm laptop, đeo khẩu trang: {designer}._
 _Hai người nhìn nhau ba giây._
 designer: … Ủa, đường này đi ra Chợ Phố Cũ hả bà?
@@ -246,7 +246,12 @@ designer: … Ủa, đường này đi ra Chợ Phố Cũ hả bà?
 * [🙇 Quay lưng, giả vờ gọi điện: "Dạ anh {giam_doc}, em tới chỗ đối tác rồi ạ."]
     _{designer} nghe rõ từng chữ. Ở công ty này, ai cũng nghe rõ từng chữ._
     ~ qh("designer", -3)
-- _Thang máy mở. {quan_ly_idol} bước ra, hai điện thoại trên tay. Bạn quay mặt vào tường. Sau cột, hình như có ai đó của công ty đang đứng nhìn. Bạn không dám nhìn lại._
+- -> END
+
+// ------------------------------------------------------------
+=== thanh_ninh_2510_ra_sanh ===
+# ngay:25 # gio:10:15 # noi:sanh_ll_entertainment
+_Phỏng vấn xong. Bạn xuống sảnh. Thang máy mở. {quan_ly_idol} bước ra, hai điện thoại trên tay. Bạn quay mặt vào tường. Sau cột, hình như có ai đó của công ty đang đứng nhìn. Bạn không dám nhìn lại._
 _Điện thoại rung. Tin nhắn của sếp: "Em đi lạc à?" Bên kia đường, cổng công ty, sếp đang đứng cạnh xe, tay cầm túi gậy golf._
 * [🙇 "Dạ em đi làm nail ạ, tiệm ở tầng 20 ạ!"]
     _Tòa LL không có tiệm nail. Sếp không trả lời._
@@ -260,7 +265,7 @@ _Điện thoại rung. Tin nhắn của sếp: "Em đi lạc à?" Bên kia đư�
 // ------------------------------------------------------------
 === thanh_ninh_2510_cho_pho_cu ===
 # ngay:25 # gio:11:00 # noi:cho_pho_cu
-_11 giờ. Bạn trốn khỏi sảnh LL, đi bộ ra Chợ Phố Cũ cho bình tĩnh. Ở sạp đồ điện, {chi_dai} đang mặc cả hai cuộn dây điện với ông thợ quen._
+_11 giờ. Bạn đi bộ ra Chợ Phố Cũ cho bình tĩnh. Ở sạp đồ điện, {chi_dai} đang mặc cả hai cuộn dây điện với ông thợ quen._
 chi_dai: Ủa. {thanh_ninh}. Đi lạc tới đây luôn hả?
 { tn_gian_chi_dai <= 70:
     chi_dai: Tiện thì đi theo chị. Bài hai: mua đồ cho sự kiện. Thứ gì rẻ thì mua hai cái, thứ gì quan trọng thì mua của người quen.
@@ -281,7 +286,7 @@ chi_dai: Ủa. {thanh_ninh}. Đi lạc tới đây luôn hả?
 
 // ------------------------------------------------------------
 === thanh_ninh_2510_phong_van ===
-# ngay:25 # gio:15:00 # noi:ll_entertainment # bat_buoc
+# ngay:25 # gio:09:00 # noi:ll_entertainment # bat_buoc
 _Phòng họp tầng 20. Ghế xoay da trắng. Người ngồi trên đó không phải chị tuyển dụng. Là Lưu Lực. Vest trắng, tóc vuốt keo._
 luu_luc: *(xoay ghế, giọng diễn giả)* Em {thanh_ninh}. Ở LL, việc hôm nay phải xong từ hôm qua. Anh nghe nói em pha trà rất ngon.
 * [🎭 "Dạ anh Lực nói chuẩn quá anh ơi! Văn phòng anh đẹp quá anh!"]

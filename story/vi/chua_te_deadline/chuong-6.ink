@@ -5,9 +5,9 @@
 // ------------------------------------------------------------
 === chua_te_deadline_2810_video_linh ===
 # ngay:28 # gio:09:20 # noi:phong_dung_phim # bat_buoc
-_9 giờ 20. {editor} ngồi giữa phòng dựng, mặt trắng như màn hình lỗi. Đêm qua 2 giờ 10, fanpage công ty tự đăng một video tên "Thai_final_v12": cảnh {quan_ly_idol} ngủ gục trên xe, {quan_ly_idol} cầm hai điện thoại, {quan_ly_idol} đắp áo cho {idol_het_thoi}. Cuối video: "Em thích anh lâu rồi. Đừng lo, render xong là xong."_
+_9 giờ 20. {editor} ngồi giữa phòng dựng, mặt trắng như màn hình lỗi. Đêm qua 2 giờ 10, bản nháp video "16 năm" lên kênh "Cú Đêm Cắt Ghép" ở chế độ công khai. Cuối bản nháp còn sót bốn phút tên "Thai_final_v12": cảnh {quan_ly_idol} ngủ gục trên xe, {quan_ly_idol} cầm hai điện thoại, {quan_ly_idol} đắp áo cho {idol_het_thoi}. Câu cuối: "Em thích anh lâu rồi. Đừng lo, render xong là xong."_
 _Sáu phút sau nó biến mất. Khoảng 2.000 lượt xem._
-editor: Tui… xuất nhầm. Tui chọn nhầm "Fanpage" thay vì "Lưu nháp". Gỡ kịp rồi. Mà 2.000 người đó…
+editor: Tui… chọn nhầm "Công khai" thay vì "Riêng tư". Gỡ kịp rồi. Mà 2.000 người đó…
 * [🧯 "Hai nghìn người lúc 2 giờ sáng thì 1.900 người đang ngủ gật. Để tui nhờ {hong_hot} dọn mấy cái bản lưu."]
     hong_hot: Dọn rồi! Gỡ được trên page, hông gỡ được trong đầu người ta. Nhưng tui hứa hông nhắc.
     editor: *(ngồi phịch xuống)* Ừ.

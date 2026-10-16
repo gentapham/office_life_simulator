@@ -254,7 +254,7 @@ hong_hot: Mà cùng lúc có bài bóc fan ảo của ổng nữa. 80.000 nick, 
 === ran_doc_2510_sanh_ll ===
 # ngay:25 # gio:10:00 # noi:sanh_ll_entertainment
 _Chủ nhật. Bạn đi theo một linh cảm, băng qua đường. Tòa nhà kính 20 tầng của LL-Entertainment nằm ngay đối diện {cong_ty}, sảnh lát đá, máy lạnh mùi lá chuối xanh._
-_Ở sảnh, {designer} và {thanh_ninh} đứng cách nhau 3 mét, cùng ôm bìa hồ sơ, cùng nhìn lên trần nhà. {designer} cầm một cái USB. {thanh_ninh} mặc áo xanh lá, sớm hơn cái hẹn chiều nay của mình cả mấy tiếng._
+_Ở sảnh, {designer} và {thanh_ninh} đứng cách nhau 3 mét, cùng ôm bìa hồ sơ, cùng nhìn lên trần nhà. {designer} cầm một cái USB. {thanh_ninh} mặc áo xanh lá, vừa từ thang máy tầng 20 đi xuống._
 designer: Ủa… tui đi lạc.
 thanh_ninh: Em cũng đi lạc. Đi lạc trùng hợp ghê chị.
 _Rồi thang máy mở. {quan_ly_idol} bước ra, hai điện thoại, mặt như vừa nghe một con số rất lớn. Sau anh ta là thư ký của Lưu Lực._

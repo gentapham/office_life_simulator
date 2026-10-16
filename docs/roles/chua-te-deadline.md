@@ -130,7 +130,7 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 
 ### Chương 6: "Nhảy Là Phải Đẹp" (28/10 – 31/10)
 - **28/10 (Mốc 4, 800.000).** Vũ khoanh tròn đêm 29/10 là "Đêm Thần Tốc cuối cùng".
-- **28/10:** video tỏ tình của Lĩnh lên fanpage lúc 2:10, 6 phút, khoảng 2.000 lượt xem.
+- **28/10:** bản nháp video "16 năm" của Lĩnh (cuối sót đoạn tỏ tình) lên kênh của Lĩnh lúc 2:10, 6 phút, khoảng 2.000 lượt xem rồi bị gỡ. Bản chính thức tải lên 29/10, kẹt 99%, xong lúc 22:47.
 - **29/10:** wifi sập từ 9:00 tới 22:47 (Tuất cắn dây sau tủ mạng khi đi tìm con gà cao su), đúng đêm Vũ định làm cue sheet và tải file lên mạng. Lựa chọn: ra quán cà phê Sống Ảo (đắt, wifi mạnh), quán net Gõ Phím (rẻ, ồn, gặp Duy), hay **làm bằng giấy bút lần đầu tiên trong đời**.
 - **30/10:** họp đánh giá. Nhật trình bày "tác phong làm việc" của Vũ. Thắng đọc kết quả.
 - **31/10:** 18:30 Vũ ghé phòng chờ của Nguyên (nếu Nguyên đã theo LL thì nhắn tin rủ đi ăn chè sau show). 19:15 Vũ chốt cue pháo giấy với Bảo, ảnh hưởng tiến độ Đại Nhạc Hội chung. Kết thúc của Vũ hiện sau đêm diễn.
