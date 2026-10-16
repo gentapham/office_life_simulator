@@ -46,9 +46,11 @@ for (const code of roots) {
     knots.push({ name, tags });
   }
   // người nói đầu tiên của mỗi cảnh (game 3D cho NPC đó đứng ở chỗ diễn ra cảnh, tới gần mới mở thoại)
-  if (code !== "chung") for (const k of knots) {
+  // kho chung: chỉ sự kiện bất ngờ (người chơi là ai thì bỏ khỏi danh sách lúc chơi)
+  for (const k of knots) {
+    if (code === "chung" && !k.tags.includes("ngau_nhien")) continue;
     try {
-      const st = new ink.Story(json); st.variablesState["vai"] = code;
+      const st = new ink.Story(json); st.variablesState["vai"] = code === "chung" ? "ran_doc" : code;
       st.ChoosePathString(k.name);
       const ds = [];
       for (let i = 0; i < 30 && st.canContinue && ds.length < 3; i++) {

@@ -48,7 +48,7 @@ export class CapCuu {
     than.visible = true; than.position.copy(this.P); than.rotation.set(-Math.PI / 2, game.yaw, 0, "YXZ"); than.position.y += 0.18;
     game.tay.group.visible = false;
     // đồng nghiệp ở gần chạy tới vây quanh
-    this.dongNghiep = game.npc.filter(n => n.tang === this.tang && n.nv.group.position.distanceTo(this.P) < 18)
+    this.dongNghiep = game.npc.filter(n => n.nv.group.visible && n.tang === this.tang && n.nv.group.position.distanceTo(this.P) < 18)
       .sort((a, b) => a.nv.group.position.distanceTo(this.P) - b.nv.group.position.distanceTo(this.P)).slice(0, 3)
       .map((n, i) => { const goc = i * 2.1 + 0.6; n.diDao = null; n.nv.ngoi = false; n.nv.vietTay = 0; n.nv.group.position.y = n.tang * 4; return { n, muc: new THREE.Vector3(this.P.x + Math.sin(goc) * 1.1, n.tang * 4, this.P.z + Math.cos(goc) * 1.1) }; });
     // xe cấp cứu và hai nhân viên y tế khiêng cáng

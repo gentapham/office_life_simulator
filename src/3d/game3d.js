@@ -17,6 +17,14 @@ const TOC_DI = 3.2, TOC_CHAY = 5.6;
 const TAM_NOI = 2.3;         // khoảng cách bấm nói chuyện
 const DUNG_O_KHU = 1.6;      // tới gần tâm khu bao nhiêu thì mở cảnh
 
+// Lịch sinh hoạt của đồng nghiệp: tới công ty, đi ăn trưa, tan làm (giờ dạng số thập phân)
+const VE_MUON = { chua_te_deadline: 21.5, editor: 22, truong_phong: 20, giam_doc: 19.5, sieu_nhan_hong: 20.5, idol_het_thoi: 19, quan_ly_idol: 19.2, it: 19 };
+// chỗ đứng ăn ở các xe đồ ăn bên kia đường (bánh mì, chè Bà Bảy, hủ tiếu gõ), quay mặt vào xe
+const CHO_AN_PHO = [[-6.9, 42.5], [-5.1, 42.5], [12.6, 42.5], [14.4, 42.5], [39.1, 42.5], [40.9, 42.5], [-14.8, 42.4], [-13.2, 42.4], [21.2, 42.4], [22.8, 42.4]];
+// bác Bình tuần tra sân ban đêm: từ chòi ra cổng rồi dọc lối đi vào sảnh
+const TUAN_TRA = [[-3.4, 25.6], [2, 25.6], [2, 16.6], [2, 25.6]];
+const bam = (ma, muoi = 0) => { let s = 2166136261 + muoi; for (const c of ma) s = Math.imul(s ^ c.charCodeAt(0), 16777619); return ((s >>> 0) % 1000) / 1000; };
+
 export class Game3D {
   constructor(khung, { vai, tenCua, tenVai }) {
     this.khung = khung;
@@ -73,7 +81,7 @@ export class Game3D {
       this.npc.push({ ma, nv, bang, tang: cho.tang, goc0: cho.huong ?? 0, cho });
     }
     for (const n of this.npc) this.veCho(n);
-    this.tgDiDao = 6;
+    this.tgDiDao = 6; this.tgLich = 0; this._fr = new THREE.Frustum(); this._mt = new THREE.Matrix4(); this._v3 = new THREE.Vector3();
 
     // Điểm đánh dấu mục tiêu: vòng sáng + cột sáng
     const mk = new THREE.Group();
@@ -192,26 +200,42 @@ export class Game3D {
     if (n) {
       const lech = khu === "cong" || khu === "ra_ngoai" ? [1.4, -1.2] : [1.0, 0];
       const x = k.x + lech[0], z = k.z + lech[1];
-      n.diDao = null; n.nv.ngoi = false; n.nv.vietTay = 0; n.nv.group.position.set(x, k.tang * CAO_TANG, z); n.tang = k.tang; n.daDoi = true;
+      n.diDao = null; n.ngu = false; n.tuanTra = null; n.nv.group.visible = true; n.nv.ngoi = false; n.nv.vietTay = 0; n.nv.group.position.set(x, k.tang * CAO_TANG, z); n.tang = k.tang; n.daDoi = true;
       k = { ...k, x, z, nguoi: n };
     }
     this.mucTieu = { khu, k, onToi, daToi: false, choRoi: phaiRoiKhoi };
     this.marker.position.set(k.x, k.tang * CAO_TANG, k.z);
     this.marker.visible = true;
   }
+  // gọi một đồng nghiệp tới đứng trước mặt người chơi (sự kiện bất ngờ): chọn chỗ trống không vướng đồ
+  goiNguoiToi(ma) {
+    const n = this.npc.find(x => x.ma === ma); if (!n) return false;
+    const vat = this.theGioi.vat[this.tang];
+    const trong = (x, z) => !vat.some(b => x > b.minX - 0.35 && x < b.maxX + 0.35 && z > b.minZ - 0.35 && z < b.maxZ + 0.35);
+    for (const lech of [0, 0.7, -0.7, 1.4, -1.4, Math.PI]) {
+      const a = this.yaw + lech, x = this.p.x - Math.sin(a) * 1.3, z = this.p.z - Math.cos(a) * 1.3;
+      if (!trong(x, z) || !trong((x + this.p.x) / 2, (z + this.p.z) / 2)) continue;
+      n.diDao = null; n.ngu = false; n.tuanTra = null; n.nv.ngoi = false; n.nv.vietTay = 0; n.daDoi = true; n.nv.group.visible = true;
+      n.nv.group.position.set(x, this.tang * CAO_TANG, z); n.tang = this.tang;
+      n.nv.group.rotation.y = Math.atan2(this.p.x - x, this.p.z - z);
+      this.yaw = Math.atan2(this.p.x - x, this.p.z - z); this.pitch = -0.05;
+      return true;
+    }
+    return false;
+  }
   traNpcVeCho() {
     for (const n of this.npc) if (n.daDoi) { n.daDoi = false; this.veCho(n); }
   }
   // về chỗ của mình: có ghế thì ngồi xuống gõ máy
   veCho(n) {
-    const c = n.cho; n.diDao = null; n.nv.vietTay = 0;
+    const c = n.cho; n.diDao = null; n.nv.vietTay = 0; n.ngu = false; n.tuanTra = null; n.tt = "ban"; n.nv.group.visible = true;
     n.nv.ngoi = !!c.ngoi;
     n.nv.group.position.set(c.x, c.tang * CAO_TANG - (c.ngoi ? 0.36 : 0), c.z); n.tang = c.tang; n.nv.group.rotation.y = n.goc0;
   }
   dungDay(n) { n.nv.ngoi = false; n.nv.group.position.y = n.tang * CAO_TANG; }
   // Thỉnh thoảng một người ở khu làm việc chung đứng dậy đi lấy nước, in tài liệu, lục tủ hồ sơ rồi quay về
   chonDiDao() {
-    const ranh = this.npc.filter(n => n.cho.ban && !n.daDoi && !n.diDao && n.tang === this.tang0(n));
+    const ranh = this.npc.filter(n => n.cho.ban && n.tt === "ban" && n.nv.group.visible && !n.daDoi && !n.diDao && n.tang === this.tang0(n));
     if (!ranh.length) return;
     const n = ranh[Math.floor(Math.random() * ranh.length)];
     const c = n.cho, hang2 = c.ban.z > 5, loi = hang2 ? 9.95 : 4.6;
@@ -253,6 +277,59 @@ export class Game3D {
       n.dangDi = true;
     }
   }
+  // trạng thái mong muốn của một đồng nghiệp theo giờ
+  lichCua(n, gio) {
+    const ma = n.ma;
+    if (ma === "bac_bao_ve") return gio >= 19 || gio < 6 ? "tuan_tra" : "ban";
+    if (ma === "cho") return gio >= 21 || gio < 6.5 ? "ngu" : "ban";
+    const den = 7.55 + bam(ma, 1) * 0.75, ve = VE_MUON[ma] ?? 17.4 + bam(ma, 2) * 1.2;
+    if (gio < den || gio >= ve) return "vang";
+    const tr0 = 11.95 + bam(ma, 3) * 0.2, tr1 = 12.9 + bam(ma, 4) * 0.25;
+    if (gio >= tr0 && gio < tr1 && bam(ma, 5) < 0.6) return "pho";
+    return "ban";
+  }
+  // người chơi có đang nhìn thấy điểm này không (để người ra vào không hiện/biến mất ngay trước mắt)
+  dangThay(tang, x, z) {
+    if (tang !== this.tang) return false;
+    if (Math.hypot(x - this.p.x, z - this.p.z) > 22) return false;
+    return this._fr.containsPoint(this._v3.set(x, tang * CAO_TANG + 1, z));
+  }
+  capNhatLich(dt, ngay = false) {
+    this.tgLich -= dt; if (this.tgLich > 0 && !ngay) return; this.tgLich = 0.5;
+    this._mt.multiplyMatrices(this.camera.projectionMatrix, this.camera.matrixWorldInverse); this._fr.setFromProjectionMatrix(this._mt);
+    const gio = this.bauTroi.gio;
+    let iPho = 0;
+    for (const n of this.npc) {
+      const muon = this.lichCua(n, gio);
+      if (muon === "pho") n.choPho = CHO_AN_PHO[iPho++ % CHO_AN_PHO.length];
+      if (n.daDoi || n.diDao || muon === n.tt) continue;
+      const g = n.nv.group.position;
+      const toi = muon === "pho" ? { tang: 0, x: n.choPho[0], z: n.choPho[1] } : muon === "tuan_tra" ? { tang: 0, x: TUAN_TRA[0][0], z: TUAN_TRA[0][1] } : n.cho;
+      if (!ngay && ((n.nv.group.visible && this.dangThay(n.tang, g.x, g.z)) || (muon !== "vang" && this.dangThay(toi.tang, toi.x, toi.z)))) continue;
+      this.apLich(n, muon);
+    }
+  }
+  apLich(n, tt) {
+    this.veCho(n); n.tt = tt;
+    const g = n.nv.group;
+    if (tt === "vang") g.visible = false;
+    else if (tt === "pho") { n.nv.ngoi = false; n.tang = 0; g.position.set(n.choPho[0], 0, n.choPho[1]); g.rotation.y = 0; n.nv.vietTay = 0.6; }
+    else if (tt === "tuan_tra") { n.nv.ngoi = false; n.tang = 0; g.position.set(TUAN_TRA[0][0], 0, TUAN_TRA[0][1]); n.tuanTra = { i: 1 }; }
+    else if (tt === "ngu") { n.ngu = true; g.position.y -= 0.12; }
+  }
+  // đổi ngày, nhảy giờ: xếp lại mọi người theo lịch ngay, không chờ khuất tầm nhìn
+  xepLichNgay() { this.capNhatLich(0, true); }
+  capNhatTuanTra(dt) {
+    for (const n of this.npc) {
+      const tt = n.tuanTra; if (!tt || n.daDoi) continue;
+      const g = n.nv.group.position, [tx, tz] = TUAN_TRA[tt.i];
+      if (this.tang === 0 && Math.hypot(this.p.x - g.x, this.p.z - g.z) < 1) continue; // nhường đường
+      const dx = tx - g.x, dz = tz - g.z, kc = Math.hypot(dx, dz);
+      if (kc < 0.05) { tt.i = (tt.i + 1) % TUAN_TRA.length; continue; }
+      const b = Math.min(kc, 0.9 * dt); g.x += dx / kc * b; g.z += dz / kc * b;
+      n.nv.group.rotation.y = Math.atan2(dx, dz); n.dangDi = true;
+    }
+  }
   xoaMucTieu() { this.mucTieu = null; this.marker.visible = false; }
   khoangCachMucTieu() {
     if (!this.mucTieu) return null;
@@ -264,7 +341,7 @@ export class Game3D {
   timTuongTac() {
     let gan = null, dMin = Infinity;
     for (const n of this.npc) {
-      if (n.tang !== this.tang) continue;
+      if (n.tang !== this.tang || !n.nv.group.visible) continue;
       const d = Math.hypot(n.nv.group.position.x - this.p.x, n.nv.group.position.z - this.p.z);
       if (d < TAM_NOI && d < dMin) { dMin = d; gan = { loai: "npc", ma: n.ma, nhan: `Nói chuyện với ${this.tenCua(n.ma)}` }; }
     }
@@ -337,7 +414,7 @@ export class Game3D {
     const keoXe = this.tang === 0 && this.p.z > 29 && this.giaoThong.chan(this.p.x, this.p.z);
     const dung = (x, z) => {
       for (const b of vat) if (x > b.minX - BAN_KINH && x < b.maxX + BAN_KINH && z > b.minZ - BAN_KINH && z < b.maxZ + BAN_KINH) return true;
-      for (const n of this.npc) if (n.tang === this.tang && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.55) return true;
+      for (const n of this.npc) if (n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.55) return true;
       if (!keoXe && this.tang === 0 && z > 29 && this.giaoThong.chan(x, z)) return true;
       return false;
     };
@@ -377,10 +454,13 @@ export class Game3D {
     }
     this.than.hoatDong(this.t, this.dangDi, this.phim.ShiftLeft ? 1.5 : 1);
     this.tay.hoatDong(this.t, this.dangDi, dt);
-    if (!this.khoa) this.capNhatDiDao(dt);
+    if (!this.khoa) { this.capNhatDiDao(dt); this.capNhatTuanTra(dt); }
+    this.capNhatLich(dt);
     for (const n of this.npc) {
-      n.nv.hoatDong(this.t + n.goc0 * 3, !!(n.diDao && n.dangDi && !n.diDao.cho && !this.khoa)); n.dangDi = false;
-      n.bang.visible = n.tang === this.tang && Math.hypot(n.nv.group.position.x - this.p.x, n.nv.group.position.z - this.p.z) < 9;
+      if (!n.nv.group.visible) { n.bang.visible = false; continue; }
+      if (!n.ngu) n.nv.hoatDong(this.t + n.goc0 * 3, !!(n.dangDi && !n.diDao?.cho && !this.khoa)); n.dangDi = false;
+      const kc = Math.hypot(n.nv.group.position.x - this.p.x, n.nv.group.position.z - this.p.z);
+      n.bang.visible = n.tang === this.tang && kc < 9 && !(this.khoa && kc < 3); // đang nói chuyện sát mặt thì ẩn bảng tên
     }
     for (const l of this.theGioi.nhapNhay) l.visible = Math.sin(this.t * 6 + l.position.x * 9) > -0.3;
     if (this.marker.visible) this.marker.children[0].scale.setScalar(1 + Math.sin(this.t * 4) * 0.08);
