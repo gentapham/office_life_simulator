@@ -9,7 +9,7 @@
 //   4. Lộ Logo Lá Chuối   (Độ Lộ ≥ 70 cuối tháng)
 //   5. Đổi Màu Áo          (Máu Cam ≤ 20 + đã nhận full-time LL)
 //   6. Bản Sửa Thứ 100     (poster Đại Nhạc Hội bị sửa tới bản 100 tối 30/10)
-//   Mặc định: đã nhận full-time LL và Máu Cam ≤ 40 thì Đổi Màu Áo; Cái Tôi ≥ 60 và Máu Cam ≥ 40 thì Bản Đầu Tiên; còn lại Bản Sửa Thứ 100
+//   Mặc định: đã nhận full-time LL và Máu Cam ≤ 40 thì Đổi Màu Áo; Cái Tôi ≥ 70 và Máu Cam ≥ 50 thì Bản Đầu Tiên; còn lại Bản Sửa Thứ 100
 // ============================================================
 
 // ------------------------------------------------------------
@@ -22,7 +22,7 @@
 - ds_cai_toi >= 80 && ds_mau_cam >= 60 && ds_gianh_lai_cong && ds_do_lo < 70 && ds_so_lan_bi_sua < 100 && not ds_nhan_fulltime_ll:
     ~ chot_ket_thuc("ban_dau_tien_muon_nam")
     -> designer_kt_ban_dau_tien_muon_nam
-- qh_sales >= 60 && ds_cat_dut_ll && ds_huyen_deal_that && ds_do_lo < 70:
+- qh_sales >= 45 && ds_cat_dut_ll && ds_huyen_deal_that && ds_do_lo < 70:
     ~ chot_ket_thuc("song_kiem_hop_bich")
     -> designer_kt_song_kiem_hop_bich
 - ds_do_lo >= 70:
@@ -37,7 +37,7 @@
 - ds_nhan_fulltime_ll && ds_mau_cam <= 40:
     ~ chot_ket_thuc("doi_mau_ao")
     -> designer_kt_doi_mau_ao
-- ds_cai_toi >= 60 && ds_mau_cam >= 40:
+- ds_cai_toi >= 70 && ds_mau_cam >= 50:
     ~ chot_ket_thuc("ban_dau_tien_muon_nam")
     -> designer_kt_ban_dau_tien_muon_nam
 - else:
@@ -194,7 +194,7 @@ _Chữ G 7 màu vẫn sáng. Lần đầu tiên bạn thấy nó đẹp. Đúng 
 # ket_thuc:ban_sua_thu_100 # loai:buon # noi:can_203
 _Bạn không còn cãi ai nữa._
 _"Chữ to lên." Dạ. "Logo to lên." Dạ. "Thêm hồng." Dạ. "Thêm cầu vồng." Dạ. "Thêm pháo hoa." Dạ._
-_Số Lần Bị Sửa: {ds_so_lan_bi_sua}. Bạn không đếm nữa. Con số tự nhảy._
+_Số Lần Bị Sửa: {ds_so_lan_bi_sua >= 100: một trăm|{ds_so_lan_bi_sua}, mà cảm giác như một trăm}. Bạn không đếm nữa. Con số tự nhảy._
 truong_phong: Poster Đại Nhạc Hội đẹp lắm em. Đúng ý anh. Đúng ý sếp. Đúng ý anh {con_ong_chau_cha}. Đúng ý tất cả.
 _Tấm poster cuối cùng là một mảng hồng chói lóa, chữ chồng lên chữ, logo chồng lên mặt, pháo hoa chồng lên pháo hoa._
 _Không đọc được chữ nào. Nhưng ai cũng nói "đẹp"._

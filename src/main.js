@@ -251,14 +251,18 @@ class LuotChoi {
       .filter(k => tag(k.tags, "ngay") == String(ngay))
       .filter(k => k.name !== evalName && !/_mg_|_kt_|minigame/.test(k.name))
       .filter(k => !["npc", "ngau_nhien", "minigame", "ket_qua", "ket_thuc", "danh_gia", "danh_gia_ket_thuc", "mot_thang_sau"].some(t => tag(k.tags, t) != null))
-      .filter(k => {
-        const dk = tag(k.tags, "dieu_kien");
-        if (dk == null) return true;
-        if (dk === "sau_dem_hong") return false;
-        return danhGiaDieuKien(dk, this.story) === true;
-      })
+      .filter(k => tag(k.tags, "dieu_kien") !== "sau_dem_hong")
       .sort((a, b) => gioSo(tag(a.tags, "gio")) - gioSo(tag(b.tags, "gio")))
       .map(k => k.name);
+  }
+  // điều kiện của cảnh xét ngay lúc sắp diễn (lựa chọn trước đó trong cùng ngày cũng tính)
+  boQuaCanhKhongDu() {
+    while (this.qi < this.queue.length) {
+      const k = this.knots.find(x => x.name === this.queue[this.qi]);
+      const dk = tag(k?.tags, "dieu_kien");
+      if (dk == null || danhGiaDieuKien(dk, this.story) === true) return;
+      this.qi++;
+    }
   }
   npcKnots() { return this.knots.filter(k => tag(k.tags, "npc") != null); }
 
@@ -446,6 +450,7 @@ function timMinigame(visited) {
 function nextScene() {
   if (CHE_DO === "3d") return nextScene3D();
   saveWrite(L.toSave());
+  L.boQuaCanhKhongDu();
   if (L.qi < L.queue.length) {
     const name = L.queue[L.qi++];
     playKnot(name, () => afterScene());
@@ -705,6 +710,7 @@ async function render3D() {
 
   nextScene3D = () => {
     saveWrite(L.toSave());
+    L.boQuaCanhKhongDu();
     if (L.qi < L.queue.length) {
       const name = L.queue[L.qi];
       const k = L.knots.find(x => x.name === name);

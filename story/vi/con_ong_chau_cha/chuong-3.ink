@@ -109,7 +109,7 @@ dan_dau_tu: *(cứng người như chart vừa đỏ)* Em… hỏi thật hả? 
 === con_ong_chau_cha_1510_mat_dien ===
 # ngay:15 # gio:08:10 # noi:sanh_tang_tret # bat_buoc
 _Hôm nay bạn tới sớm (8 giờ 10) vì không ngủ được. Vừa bước vào sảnh: "Phụt." Mất điện cả khu._
-_Từ thang máy vọng ra tiếng đập cửa. Tiếng chú bạn và tiếng {chi_dai}: "Bảo ơi! Mở cửa!"_
+_Từ thang máy vọng ra tiếng đập cửa. Tiếng chú bạn và tiếng {chi_dai}: "{it} ơi! Mở cửa!"_
 giam_doc: *(trong thang máy)* {con_ong_chau_cha} hả? {con_ong_chau_cha}! Gọi người cứu chú!
 * [☂️ "Để cháu gọi… à." *(chú đang ở trong đó)*]
     _Lần đầu tiên câu cửa miệng của bạn vô dụng. Người bạn hay gọi đang kẹt trong thang máy._

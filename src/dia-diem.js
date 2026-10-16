@@ -74,6 +74,7 @@ export const DIA_DIEM = {
  "toilet": "Toilet",
  "quan_ca_phe": "Quán cà phê",
  "hem_69": "Hẻm 69",
+  "quan_che_ba_bay": "Quán Chè Bà Bảy",
  "quan_tra_da": "Quán trà đá",
  "chua_pho_cu": "Chùa phố cũ",
  "karaoke": "Karaoke",

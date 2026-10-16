@@ -89,7 +89,7 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 - **1/10:** 5 tỷ về tài khoản. Thắng muốn **banner ăn mừng trong 30 phút**, "hoành tráng mà tiết kiệm mực". Quỳnh vẽ xong, Thắng bắt sửa 4 lần rồi chọn bản đầu. Số Lần Bị Sửa: 41. Hương dẫn nhân viên mới {ran_doc} tới chào, Hiếu khen poster "đẹp quá trời", và hỏi luôn file gốc để ở thư mục nào.
 - **2/10:** họp chiến dịch "Hồng Hóa Việt Nam". Nguyên đọc điều khoản số 2: *"Mọi sản phẩm phải có ít nhất một chút màu hồng."* Quỳnh hỏi: *"Một chút là bao nhiêu phần trăm ạ?"*. Không ai trả lời được.
 - **4/10 (Ngày Động vật):** Tuất bị mặc áo nơ hồng, mặt cực kỳ khó chịu. Quỳnh có thể chụp làm bộ sticker "Tuất Không Vui". Nguyên tới chọc, Tuất sủa, khoảnh khắc vàng để bấm máy.
-- **6/10:** buổi chụp poster đầu tiên. Nguyên bỏ ngang đi giúp một bà cụ. Lựa chọn: ghép ảnh Nguyên vào phông bằng Photoshop (nhanh, nhưng giả), hay chạy theo chụp cảnh Nguyên dắt bà cụ qua đường (thật, nhưng mất buổi chiều).
+- **6/10:** buổi chụp poster đầu tiên. Khoảng 10:30 Nguyên bỏ ngang, chạy xuống đầu Hẻm 69 đẩy xe chè của Bà Bảy ra khỏi ổ gà. Lựa chọn: ghép ảnh Nguyên vào phông bằng Photoshop (nhanh, nhưng giả), hay chạy theo chụp cảnh thật (mất buổi sáng).
 - **7/10 (Mốc 1):** nếu poster của Quỳnh đủ đẹp, chiến dịch đạt 50.000 người theo dõi.
 
 ### Chương 2: "Dự Án Hồng Ngoại" (8/10 – 14/10)
@@ -212,16 +212,16 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được chốt **sau Đại Nhạc Hội Siêu Nhân** (31/10, 23:30, cảnh `designer_3010_danh_gia`), dùng mọi lựa chọn tới hết 31/10, và đọc `ket_thuc_su_nghiep` / `chung_cong_ty_song` khi nhắc tới Nguyên và công ty. Độ Lộ chạm 100 giữa tháng chỉ mở một cảnh báo, không chốt kết thúc sớm. Thứ tự xét: bí mật, 2 vui, 3 buồn, rồi mặc định (đã nhận full-time LL và Máu Cam ≤ 40 thì Đổi Màu Áo; Cái Tôi ≥ 70 và Máu Cam ≥ 50 thì Bản Đầu Tiên; còn lại Bản Sửa Thứ 100).
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🖼️ **Bản Đầu Tiên Muôn Năm** | Cái Tôi Nghệ Thuật ≥ 70, Máu Cam ≥ 60, chiến dịch đạt 1 triệu người theo dõi, đã lên tiếng giành lại công ở buổi đánh giá 30/10 | Đại Nhạc Hội Siêu Nhân thành công. Thắng đề bạt bạn làm **Trưởng nhóm Thiết kế**, lương tăng 20%. Thắng đưa tờ quyết định, rồi hỏi: "Em sửa nhẹ cái quyết định này giúp anh nhé?". Bạn cười, đóng khung nó y nguyên, đặt tên file là `ban_1_khong_sua.pdf` |
-| 2 | 😄 🤝 **Song Kiếm Hợp Bích** | Quan hệ với {sales} ≥ 80, đã cắt đứt với LL trước 30/10, tổng tiền freelancer kiếm được ≥ 8.000.000đ, Huyền ký được ít nhất 1 deal thật | Bạn và Huyền nghỉ việc, mở **studio nhỏ ở tầng trệt chung cư Phố Mới**: Quỳnh vẽ, Huyền bán. Khách đầu tiên là Siêu Nhân Hồng. Biển hiệu do bạn thiết kế, khách hàng không được sửa |
-| 3 | 😄 🔒 **Kết thúc bí mật: Hai Mang Chính Nghĩa** | Đã nhận job Hồng Ngoại, giấu chữ G vào file (Mẫu 6), Máu Cam ≥ 80, Độ Lộ < 50, Nguyên từ chối LL ngày 27/10 | Đêm 31/10, màn hình LED trên tòa nhà kính của LL bật lên, phóng to thiết kế Hồng Ngoại… và giữa họa tiết hiện ra chữ G 7 màu cùng dòng chữ "Hồng là của G". Cả mạng xã hội chụp lại. Lưu Lực tắt màn hình không kịp. Anh Lá Chuối nhắn: "Em giỏi lắm. Mai anh xin nghỉ" |
-| 4 | 😢 🥬 **Lộ Logo Lá Chuối** | Độ Lộ Lá Chuối đạt 100 (có thể xảy ra bất cứ lúc nào) | Bảo chiếu log tải file lên màn hình phòng họp: thư mục "LL_HongNgoai_final". Tuấn mời bạn đi "uống trà" lần cuối. Huyền đứng dậy định nói đỡ, bạn lắc đầu. Bạn ôm thùng carton có chậu sen đá ra cổng, Bác Bình nói khẽ: "Bác không thấy gì đâu." |
-| 5 | 😢 💀 **Bản Sửa Thứ 100** | Số Lần Bị Sửa ≥ 100 và Cái Tôi Nghệ Thuật ≤ 10 tới ngày 30/10 | Bạn không còn cãi ai nữa. Ai bảo gì sửa nấy: chữ to lên, logo to lên, thêm hồng, thêm cầu vồng. Poster Đại Nhạc Hội Siêu Nhân là một mảng hồng chói lóa không đọc được chữ nào. Đêm đó bạn về căn 203, nhìn bàn vẽ phủ bụi, và nhận ra mình đã quên cảm giác vẽ cho vui là thế nào |
-| 6 | 😢 🏃 **Đổi Màu Áo** | Máu Cam ≤ 20, đã nhận lời làm full-time cho LL ở Mẫu 6 | Bạn có bàn làm việc ở tầng 18 tòa nhà kính, lương gấp đôi. Buổi sáng đầu tiên, Lưu Lực duyệt bài: "Việc này phải xong từ hôm qua nhé em." Bạn nhìn qua cửa kính, thấy tòa nhà 3 tầng màu tím bên kia đường tắt đèn, và chữ G sặc sỡ bị gỡ xuống |
+| 1 | 😄 🖼️ **Bản Đầu Tiên Muôn Năm** | Cái Tôi ≥ 80, Máu Cam ≥ 60, đã lên tiếng giành lại công ở buổi đánh giá 30/10, Độ Lộ < 70, chưa bị sửa tới bản 100, không nhận full-time LL | Một tuần sau đêm diễn, Thắng trao quyết định Trưởng nhóm Thiết kế (công ty phải hoàn tiền thì là tờ xác nhận để Quỳnh mang đi), rồi hỏi "Em sửa nhẹ giúp anh nhé?". Quỳnh cười, đóng khung y nguyên, đặt tên file `ban_1_khong_sua.pdf` |
+| 2 | 😄 🤝 **Song Kiếm Hợp Bích** | Quan hệ với Huyền ≥ 45, đã cắt đứt với LL, giúp Huyền chốt deal thật với Sữa Chua Hồng Hào (28/10), Độ Lộ < 70 | Tháng 12, Quỳnh và Huyền mở studio nhỏ ở tầng trệt chung cư Phố Mới, biển hiệu "{designer} VẼ, {sales} BÁN". Khách đầu tiên là Siêu Nhân Hồng |
+| 3 | 😄 🔒 **Kết thúc bí mật: Hai Mang Chính Nghĩa** | Nhận job Hồng Ngoại, giấu chữ G vào file đêm 27/10, Máu Cam ≥ 70, Độ Lộ < 70, Nguyên không theo LL, không nhận full-time LL | 21:07 đêm 31/10, màn hình LED tòa LL chạy thiết kế Hồng Ngoại và hiện ra chữ G 7 màu cùng dòng "Hồng là của G". Cảnh 31/10 của vai đặt `chung_top_10_xu_huong = true` (cảnh này không tự cộng người theo dõi). Kết thúc kể lại lúc 23:30, câu về con số đổi theo `chung_cong_ty_song` |
+| 4 | 😢 🥬 **Lộ Logo Lá Chuối** | Độ Lộ Lá Chuối ≥ 70 cuối tháng | Sáng thứ 2 sau đêm diễn, Bảo chiếu log tải file "LL_HongNgoai_final" ở phòng họp. Tuấn mời "uống trà" lần cuối. Quỳnh ôm thùng carton ra cổng, Bác Bình nói khẽ: "Bác không thấy gì đâu." |
+| 5 | 😢 💀 **Bản Sửa Thứ 100** | Im lặng ở buổi đánh giá 30/10 khi đã bị sửa từ 50 lần trở lên: poster Đại Nhạc Hội bị sửa theo góp ý từng người tới file "poster_DNH_sua_lan_100.psd" | Quỳnh không còn cãi ai nữa. Poster là một mảng hồng chói lóa không đọc được chữ nào. Đêm 31/10 Quỳnh về căn 203 trước 23 giờ, nhìn bàn vẽ phủ bụi |
+| 6 | 😢 🏃 **Đổi Màu Áo** | Máu Cam ≤ 20 và đã nhận full-time LL (hoặc mặc định: full-time LL và Máu Cam ≤ 40) | Thứ 2, 2/11, bàn làm việc tầng 18 tòa LL. Qua cửa kính, tòa nhà tím bên kia đường còn sáng đèn hoặc đang gỡ chữ G, tùy `chung_cong_ty_song` |
 
 ---
 

@@ -64,7 +64,7 @@ ke_toan: {thuc_tap_sinh}, xếp xong chưa em? Đoàn đòi hồ sơ năm 2024 k
     ~ duy_hai_nguoi_biet_so = true
     ~ duy_lo(10)
     ~ qh("ke_toan", 20)
-* {duy_kinh_nghiem >= 35 && qh_giam_doc >= 10} [🔒 "Dạ chị cho em gặp anh {giam_doc} 10 phút. Em nghĩ em giúp được khoản này."]
+* {duy_kinh_nghiem >= 25} [🔒 "Dạ chị cho em gặp anh {giam_doc} 10 phút. Em nghĩ em giúp được khoản này."]
     ke_toan: *(nhíu mày, rồi gật)* 17 giờ. Phòng giám đốc. Chị đi cùng.
     ~ duy_nhanh_nguoi_gac_ket = true
     ~ duy_lo(5)
@@ -82,7 +82,7 @@ ke_toan: {thuc_tap_sinh}, xếp xong chưa em? Đoàn đòi hồ sơ năm 2024 k
 _Chú Liêm xuống sảnh xem "cơ sở vật chất". Đúng lúc {cho} chạy ra từ gầm cầu thang._
 cho: Gâu!
 _Chú Liêm nhảy lên ghế lễ tân với tốc độ của một vận động viên 25 tuổi._
-* [🐕 "Tuất, ngồi!" (giọng của người đã tắm cho nó)]
+* [🐕 "{cho}, ngồi!" (giọng của người đã tắm cho nó)]
     cho: *(ngồi xuống ngay, vẫy đuôi)* Gâu.
     _Chú Liêm bước xuống, chỉnh kính: "Cảm ơn cháu. Chú… dị ứng lông chó." Rồi chú hỏi tên bạn, ghi vào sổ. "Cháu xếp hồ sơ hả? Xếp đẹp. Lâu rồi chú mới thấy bộ hồ sơ có thẻ màu."_
     ~ qh("cho", 5)
@@ -171,7 +171,7 @@ sales: Em {thuc_tap_sinh}! Em đeo vest đẹp nhất công ty! Tin chị đi, e
 // ------------------------------------------------------------
 === thuc_tap_sinh_2310_giu_banh_kem ===
 # ngay:23 # gio:20:30 # noi:studio_tang_2 # bat_buoc
-_Bạn được giao giữ cái bánh kem hồng 3 tầng khỏi {cho}, vì "Tuất thương Duy"._
+_Bạn được giao giữ cái bánh kem hồng 3 tầng khỏi {cho}, vì "{cho} thương {thuc_tap_sinh}"._
 _Giữa livestream, {sieu_nhan_hong} vừa tháo găng tay, nhìn thẳng camera, tỏ tình với {chua_te_deadline}. {chua_te_deadline} giơ ngón cái: "Ý tưởng PR hay đó anh!". Cả studio náo loạn. Bình luận chạy như thác._
 _Dưới chân bạn, {cho} ngồi im. Nhìn bạn. Nhìn bánh. Nhìn Siêu Nhân Hồng. Nhìn bạn._
 cho: … *(vẫy đuôi một lần, rất chậm)* # hen_gio:5
@@ -219,7 +219,7 @@ chi_dai: Mỗi chủ nợ nói một câu với {dan_dau_tu}. Không chửi. Kh�
 === thuc_tap_sinh_2510_sep_cu_goi ===
 # ngay:25 # gio:10:00 # noi:hem_69 # bat_buoc
 _Chủ nhật. 10 giờ. Phòng 12 dãy B. Điện thoại reo. Số máy bàn ngân hàng. Bạn biết số này thuộc lòng._
-_"Duy hả. Anh Tư đây. Quay về đi. Ghế phó giám đốc chi nhánh còn trống. 60 triệu. Xe đưa đón. Phòng kính tầng 15, có cửa sổ nhìn xuống đường."_
+_"{thuc_tap_sinh} hả. Anh Tư đây. Quay về đi. Ghế phó giám đốc chi nhánh còn trống. 60 triệu. Xe đưa đón. Phòng kính tầng 15, có cửa sổ nhìn xuống đường."_
 _Bạn nhìn cái cửa sổ phòng trọ. Nó nhìn thẳng vào bức tường nhà bên. Có rêu._
 _Anh thợ hồ ngủ giường trên ngáy. Bạn sinh viên học bài. Anh xe ôm đếm tiền lẻ._
 * [🏦 "Dạ… em nhận ạ. Em về sau 31/10."]

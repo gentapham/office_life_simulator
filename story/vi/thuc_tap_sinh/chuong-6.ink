@@ -225,7 +225,7 @@ hr: Mình cùng nhìn lại hành trình nha em. Em muốn ở lại không?
 === thuc_tap_sinh_3010_cuoc_goi_cuoi ===
 # ngay:30 # gio:20:00 # noi:hem_69
 _20 giờ. Phòng 12 dãy B. Điện thoại reo. Anh Tư, sếp cũ._
-_"Duy. Mai là 31. Ghế phó giám đốc anh giữ tới hôm nay. Mày về không?"_
+_"{thuc_tap_sinh}. Mai là 31. Ghế phó giám đốc anh giữ tới hôm nay. Mày về không?"_
 { duy_nhan_loi_ngan_hang:
     _Bạn đã nhận lời từ chủ nhật. Anh Tư chỉ gọi để nhắc giờ: "Thứ 2, 8 giờ. Mặc vest. Đeo kính."_
     -> END

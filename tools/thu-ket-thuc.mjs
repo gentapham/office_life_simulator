@@ -49,7 +49,7 @@ function canhTrongNgay(ngay, story) {
   return knots.filter(k => tag(k.tags, "ngay") == String(ngay))
     .filter(k => k.name !== `${ma}_3010_danh_gia` && !/_mg_|_kt_|minigame/.test(k.name))
     .filter(k => !["npc", "ngau_nhien", "minigame", "ket_qua", "ket_thuc", "danh_gia", "danh_gia_ket_thuc", "mot_thang_sau"].some(t => tag(k.tags, t) != null))
-    .filter(k => { const dk = tag(k.tags, "dieu_kien"); if (dk == null) return true; if (dk === "sau_dem_hong") return false; return dieuKien(dk, story) === true; })
+    .filter(k => tag(k.tags, "dieu_kien") !== "sau_dem_hong")
     .sort((a, b) => gioSo(tag(a.tags, "gio")) - gioSo(tag(b.tags, "gio"))).map(k => k.name);
 }
 const dongBo = (tu, den) => { for (const n of sharedVars) { try { const v = tu.variablesState[n]; if (v !== undefined && typeof v !== "object") den.variablesState[n] = v; } catch {} } };
@@ -94,6 +94,7 @@ for (let l = 0; l < SO_LUOT; l++) {
     const cd = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay]; if (cd) s.variablesState["nguoi_theo_doi"] += cd;
     if (ngay === 12 && LUONG) s.variablesState["tien"] = (Number(s.variablesState["tien"]) || 0) + LUONG; // lương về như trong game
     for (const ten of canhTrongNgay(ngay, s)) {
+      { const dk = tag(knots.find(x => x.name === ten).tags, "dieu_kien"); if (dk != null && dieuKien(dk, s) !== true) continue; } // xét lúc sắp diễn như game
       const k = knots.find(x => x.name === ten); const m = String(tag(k.tags, "gio") || "").match(/(\d{1,2}):(\d{2})/);
       if (m) { s.variablesState["gio"] = +m[1]; s.variablesState["phut"] = +m[2]; }
       const v = chay(s, ten, chon);

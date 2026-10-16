@@ -8,7 +8,7 @@
 === thuc_tap_sinh_3010_danh_gia ===
 # ngay:31 # gio:23:00 # bat_buoc # dieu_kien:sau_dem_hong
 {
-- duy_nhanh_nguoi_gac_ket && duy_kinh_nghiem >= 50 && qh_giam_doc >= 25 && not duy_nhan_loi_ngan_hang && not duy_ve_ngan_hang:
+- duy_nhanh_nguoi_gac_ket && duy_kinh_nghiem >= 45 && qh_giam_doc >= 20 && not duy_nhan_loi_ngan_hang && not duy_ve_ngan_hang:
     ~ chot_ket_thuc("nguoi_gac_ket")
     -> thuc_tap_sinh_kt_nguoi_gac_ket
 - chung_phim_ghi_ten_duy && duy_lua >= 50 && not duy_ve_ngan_hang:
@@ -125,7 +125,7 @@ _"Dạ anh ơi… em mới vô nên chưa biết ạ."_
 === thuc_tap_sinh_kt_cay_atm_biet_di ===
 # ket_thuc:cay_atm_biet_di # loai:buon # noi:hem_69
 _Cả công ty biết bạn từng là trưởng phòng ngân hàng. Từ tuần trước._
-_Không ai sai bạn photo nữa. Ai cũng gọi "anh Duy". Ai cũng mời bạn đi ăn. {thanh_ninh} pha trà cho bạn. {sales} gọi bạn là "anh" lần đầu tiên._
+_Không ai sai bạn photo nữa. Ai cũng gọi "anh {thuc_tap_sinh}". Ai cũng mời bạn đi ăn. {thanh_ninh} pha trà cho bạn. {sales} gọi bạn là "anh" lần đầu tiên._
 _Rồi ai cũng có "việc gấp cần mượn chút"._
 _{idol_het_thoi}: tiền nhà. {sales}: tiếp khách. {thanh_xin_nghi}: "tiền xăng". {ran_doc}: "kẹt chút". {con_ong_chau_cha}: "thẻ bị khóa"._
 _Và {dan_dau_tu}: 200 triệu, "đợt cuối, lần này là lên thật"._

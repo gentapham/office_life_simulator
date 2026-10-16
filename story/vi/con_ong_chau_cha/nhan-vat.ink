@@ -154,7 +154,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* Ông {con_ong_chau_cha}. Ngồi đi. Chi
     chua_te_deadline: …Ủa. Ai làm? Bài này lên trend được đó.
     ~ long_bh(6)
     ~ qh("chua_te_deadline", 5)
-+ [💬 "Ông với anh Nguyên… là sao vậy?"]
++ [💬 "Ông với anh {sieu_nhan_hong}… là sao vậy?"]
     chua_te_deadline: *(đỏ tai)* PR thôi. Chắc PR. *(im lặng)* …Mà ông thấy có phải PR hông?
     con_ong_chau_cha: Tui thấy ổng nhìn ông như tui nhìn cây đàn.
     chua_te_deadline: …Câu đó nghe hơi sến mà hơi đúng.
@@ -388,7 +388,7 @@ sales: Anh {con_ong_chau_cha}! Tin chị đi… à, tin em đi! Mr. Kevin Trộn
     ~ long_goi_chu()
     sales: Đó! Thấy chưa! Anh là người có tầm nhìn!
     ~ qh("sales", 5)
-+ [📊 "Huyền. Cho tui số điện thoại Mr. Kevin. Tui gọi thử."]
++ [📊 "{sales}. Cho tui số điện thoại Mr. Kevin. Tui gọi thử."]
     sales: *(tái mặt)* Ổng… ổng ở nước ngoài. Lệch múi giờ. Gọi giờ này ổng ngủ.
     con_ong_chau_cha: Nước nào?
     sales: Sao mà căng!

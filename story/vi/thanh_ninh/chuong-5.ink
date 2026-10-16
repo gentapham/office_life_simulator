@@ -262,7 +262,7 @@ _Điện thoại rung. Tin nhắn của sếp: "Em đi lạc à?" Bên kia đư�
 # ngay:25 # gio:11:00 # noi:cho_pho_cu
 _11 giờ. Bạn trốn khỏi sảnh LL, đi bộ ra Chợ Phố Cũ cho bình tĩnh. Ở sạp đồ điện, {chi_dai} đang mặc cả hai cuộn dây điện với ông thợ quen._
 chi_dai: Ủa. {thanh_ninh}. Đi lạc tới đây luôn hả?
-{ tn_gian_chi_dai <= 50:
+{ tn_gian_chi_dai <= 70:
     chi_dai: Tiện thì đi theo chị. Bài hai: mua đồ cho sự kiện. Thứ gì rẻ thì mua hai cái, thứ gì quan trọng thì mua của người quen.
     * [✍️ Đi theo, ghi chép.]
         ~ tn_hoc_nghe_chi_dai = true

@@ -22,7 +22,7 @@
     -> thanh_ninh_kt_email_gui_nham
 }
 // 1. 🫱 Cánh Tay Phải Chính Thức
-{ tn_diem_ninh >= 75 && tn_xanh_la_chuoi < 30 && tn_sep_goi_nhi > tn_sep_goi_hieu:
+{ tn_diem_ninh >= 70 && tn_xanh_la_chuoi < 40 && tn_sep_goi_nhi >= tn_sep_goi_hieu:
     ~ chot_ket_thuc("canh_tay_phai")
     -> thanh_ninh_kt_canh_tay_phai
 }

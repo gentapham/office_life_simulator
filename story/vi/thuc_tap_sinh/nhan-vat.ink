@@ -40,7 +40,7 @@ ran_doc: Anh {thuc_tap_sinh}! Nói nhỏ thôi nha… anh có biết hồi nhỏ
 # npc:giam_doc
 { duy_nhanh_nguoi_gac_ket:
     giam_doc: Anh {thuc_tap_sinh}! Vào đây, vào đây. Ngồi đi. Anh pha trà.
-    _Từ hôm 22/10, {giam_doc} gọi một thực tập sinh là "anh Duy". Cả tầng 2 không hiểu vì sao._
+    _Từ hôm 22/10, {giam_doc} gọi một thực tập sinh là "anh {thuc_tap_sinh}". Cả tầng 2 không hiểu vì sao._
 - else:
     giam_doc: Thực tập sinh! Vào đây anh nhờ tí. Anh không ép, tùy em.
 }

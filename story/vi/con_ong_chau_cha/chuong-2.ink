@@ -196,7 +196,7 @@ quan_ly_quan: Tên gì em?
 * [😅 "Dạ thôi, em hỏi giùm bạn."]
     _Bạn quay ra. Tim đập nhanh như vừa làm chuyện xấu. Thật ra bạn chỉ vừa định làm một chuyện tốt._
     ~ cang_thang(3)
-* [😎 "Long. Cháu của…" *(khựng lại)*]
+* [😎 "{con_ong_chau_cha}. Cháu của…" *(khựng lại)*]
     quan_ly_quan: Cháu của ai?
     con_ong_chau_cha: …Cháu của… bà ngoại em. Em tên Rồng.
     -> con_ong_chau_cha_mg_lam_them
