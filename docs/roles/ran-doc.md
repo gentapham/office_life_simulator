@@ -202,16 +202,20 @@ Hiếu cũng có thể **đổi phe**: giúp chiến dịch thật lòng nếu M
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được xét lúc 23:00 ngày 31/10, **sau** Đại Nhạc Hội Siêu Nhân (`chung_3110_dem_hong`), nên đọc được `ket_thuc_su_nghiep` và `chung_cong_ty_song`. Không cảnh nào chốt kết thúc trước đó.
+
+Thứ tự xét: Bị Lật Tẩy → 30 Ngày Làm Rắn → Hiếu Ếch Tha Thứ → Trùm Cuối → Trả Thù Thành Công → Rắn Cắn Rắn → còn lại: Bị Lật Tẩy nếu Độ Nghi Ngờ ≥ 80, không thì Hiếu Ếch Tha Thứ.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 👑 **Trùm Cuối** | Độ Độc ≥ 80, Độ Nghi Ngờ < 40, đã loại được cả Nhật và Long khỏi cuộc đua Phó Giám đốc | Cả công ty đấu đá nhau tan nát, người duy nhất "sạch sẽ" còn lại là bạn. Thắng đề bạt bạn làm Phó Giám đốc. Bạn ngồi ghế mới, mở group Zalo-lô và gõ *"Nghe gì chưa?"* |
-| 2 | 😄 🤝 **Hiếu Ếch Tha Thứ** | Đã mở nhánh "Hiếu Ếch", Mối Hận < 20, đã giúp chiến dịch ít nhất 3 lần | Đại Nhạc Hội Siêu Nhân, Nguyên mời bạn lên sân khấu, kể chuyện hồi nhỏ trước cả nghìn người và cúi đầu xin lỗi. Bạn cầm micro: *"Tui chỉ nói sự thật thôi mà… Tui tha cho ông rồi."* Cả khán đài vỗ tay |
-| 3 | 😄 🔒 **Kết thúc bí mật: 30 Ngày Làm Rắn** | Thu thập đủ 20 tin mật, không tung tin nào trong 7 ngày cuối, lật mặt được con rắn thứ hai | Bạn tố cáo LL-Entertainment đã cài người vào công ty. Kho tin mật trở thành cuốn sách bán chạy *"30 Ngày Làm Rắn"*. Bạn nghỉ việc, đi ký tặng sách, còn Nguyên đứng xếp hàng xin chữ ký |
-| 4 | 😢 🔥 **Bị Lật Tẩy** | Độ Nghi Ngờ đạt 100 (có thể xảy ra bất cứ lúc nào) | Ảnh chụp tin nhắn của bạn được chiếu lên màn hình phòng họp. Tuấn mời bạn đi "uống trà" lần cuối. Ôm thùng carton ra về, chỉ có {cho} tiễn bạn ra cổng |
-| 5 | 😢 🐍 **Rắn Cắn Rắn** | Không phát hiện con rắn thứ hai trước 27/10 | Con rắn thứ hai tung hết bằng chứng ra đúng ngày phán xét, đổ mọi tội cho bạn. Bạn bị đuổi, còn nó lên chức. Nó nhìn bạn và cười: *"Tui chỉ nói sự thật thôi mà."* |
-| 6 | 😢 💥 **Trả Thù Thành Công** | Mối Hận vẫn ≥ 80 tới ngày 31/10, chiến dịch Siêu Nhân Hồng thất bại | Bạn thắng. Siêu Nhân Hồng thất bại, công ty phá sản, ai cũng mất việc, kể cả bạn. Đêm 31/10 bạn ngồi một mình ở quán trà đá đầu hẻm, đọc tin Nguyên đã đi giúp người ở tỉnh khác. Bạn không thấy vui như mình tưởng |
+| 1 | 😄 👑 **Trùm Cuối** | Độ Độc ≥ 70, Độ Nghi Ngờ < 70, đã loại cả Nhật và Long khỏi cuộc đua Phó Giám đốc, đã biết con rắn thứ hai | Một tuần sau, Hiếu ngồi phòng kính "Phó Giám đốc". Nếu công ty đổ (`chung_cong_ty_song` sai), đó là ghế phó của một công ty đang thanh lý. Hiếu mở group, gõ *"Nghe gì chưa?"*. Không ai trả lời |
+| 2 | 😄 🤝 **Hiếu Ếch Tha Thứ** | Đã mở nhánh "Hiếu Ếch", Mối Hận < 30, đã giúp chiến dịch ít nhất 3 lần | Nếu 19:25 ngày 31/10 Hiếu nhận lời, Nguyên gọi Hiếu lên sân khấu sau show và xin lỗi trước khán giả. Nếu không, hai người nói chuyện sau cánh gà. Nếu Nguyên đã sang LL, lời xin lỗi diễn ra ở quán trà đá Hẻm 69. Dòng cuối nhắc số phận công ty |
+| 3 | 😄 🔒 **Kết thúc bí mật: 30 Ngày Làm Rắn** | Đã lật mặt con rắn thứ hai, ≥ 25 tin mật, không tung tin nào từ 28/10 | Ba tháng sau, Hiếu ký tặng cuốn *"30 Ngày Làm Rắn"*. Nguyên đứng xếp hàng xin chữ ký |
+| 4 | 😢 🔥 **Bị Lật Tẩy** | Độ Nghi Ngờ đạt 100 | Thứ Hai 2/11, tin nhắn của Hiếu được chiếu lên màn hình phòng họp. Tuấn mời "uống trà" lần cuối. Chỉ có Tuất tiễn ra cổng |
+| 5 | 😢 🐍 **Rắn Cắn Rắn** | Không lật được mặt con rắn thứ hai | Thứ Hai 2/11, con rắn thứ hai chiếu tập bằng chứng có tên Hiếu. Hiếu bị đuổi. Công ty sống thì người đó lên chức; công ty đổ thì người đó sang thẳng LL |
+| 6 | 😢 💥 **Trả Thù Thành Công** | Mối Hận ≥ 60 và công ty không qua được (`chung_cong_ty_song` sai, kể cả khi Nguyên sang LL) | Hiếu thắng: công ty phá sản, ai cũng mất việc, kể cả Hiếu. Đêm 31/10 ở quán trà đá đầu hẻm, Hiếu không thấy vui như mình tưởng |
+
+Biến quyết định đều đặt ở cảnh chính: `rd_biet_ran_hai` (25/10 hoặc 27/10), `rd_lat_mat_ran_hai` (họp đánh giá 30/10, 14:00), `rd_mo_nhanh_hieu_ech` (lửa trại 17/10 hoặc trà đá 29/10). Nếu Hiếu đẩy Nguyên sang LL ngày 27/10 khi Mối Hận ≥ 70 và chưa mở "Hiếu Ếch", Nguyên ký với LL (`nguyen_theo_ll`).
 
 ---
 

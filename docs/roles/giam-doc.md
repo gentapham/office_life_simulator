@@ -229,16 +229,20 @@ Thắng không trực tiếp làm poster hay MV, nhưng **mọi đồng tiền**
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được xét lúc 23:00 ngày 31/10, **sau** Đại Nhạc Hội Siêu Nhân (`chung_3110_dem_hong`), nên đọc được `ket_thuc_su_nghiep` và `chung_cong_ty_song`. Không cảnh nào chốt kết thúc trước đó.
+
+Thứ tự xét: Còn Mỗi Mình Sếp → Ghế Ai Người Nấy Ngồi → Hoa Hướng Dương Lộ Diện → Doanh Nhân Của Năm → Thư Hồi Âm → Biệt Thự Có Chủ Mới → còn lại: Ghế Ai Người Nấy Ngồi.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🏆 **Doanh Nhân Của Năm (Thật)** | Siêu Nhân Hồng đạt 1 triệu người theo dõi, Ngân Sách ≥ 0, Uy Quyền ≥ 60, Hứa Lèo = 0 vào 30/10 (kể cả đã giữ lời tăng lương 20% nếu lỡ hứa) | Sáng 1/11, Thắng mang tờ giấy thế chấp đã đóng dấu "ĐÃ TẤT TOÁN" về biệt thự, treo nó lên bức tường ảnh, ngay giữa những tấm chụp với người nổi tiếng. Đó là tấm ảnh duy nhất Thắng chụp với chính mình |
-| 2 | 😄 ✉️ **Thư Hồi Âm** | Đã đọc thư "G" ngày 20/10, tự viết thư thú nhận khoản nợ và nhờ Bác Bình gửi trước 25/10 (thư hồi âm mất 5 ngày). Nguy Cơ Lộ Nợ được giải về 0 bằng tự thú | Một buổi chiều ở chòi bảo vệ, Bác Bình đọc thư trả lời cho Thắng nghe: *"Tôi biết từ năm ngoái rồi. Tôi chờ cậu nói. Nợ thì mình trả cùng nhau. Việc hôm nay cứ để ngày mai tính, trừ chuyện thật lòng. — G."* Thắng cúi mặt vào ly trà đá. Tuất nằm gác đầu lên giày sếp |
-| 3 | 😄 🔒 **Kết thúc bí mật: Hoa Hướng Dương Lộ Diện** | Ở lại group "Hội Anti Sếp" tới 29/10 mà không trả thù ai, sửa ít nhất 5 điều bị chê (bỏ nhắn 22 giờ, họp ngắn lại, trả lương đúng hạn…), rồi tự công khai danh tính trong group | Ngày 30/10, Thắng đăng trong group: *"Hoa Hướng Dương 1989 là anh đây. Cảm ơn các em đã chửi anh đúng."* Group im lặng 3 phút. Rồi Ngân đổi tên group thành "Hội Thương Sếp (Một Chút)" và cho Thắng làm phó admin. Tin nhắn đầu tiên của Thắng: một sticker bông hoa hướng dương cúi chào |
-| 4 | 😢 🏚️ **Biệt Thự Có Chủ Mới** | Siêu Nhân Hồng thất bại (dưới 1 triệu), công ty phải hoàn 10 tỷ | Ngân hàng dán thông báo lên cổng sắt biệt thự số 1. Thắng gom ảnh chụp với người nổi tiếng vào một thùng carton, đứng chờ Grab. Tài xế hủy chuyến. Thắng xách thùng đi bộ xuống đồi, vừa đi vừa tự nói: *"Anh không ép, tùy em…"* |
-| 5 | 😢 🪑 **Ghế Ai Người Nấy Ngồi** | Nguy Cơ Lộ Nợ đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Uy Quyền < 20 vào 30/10 | Trước toàn công ty, Bác Bình mở phong bì dán kín của G, ngoài ghi *"Chỉ mở khi công ty sắp sập"*. Bác đọc quyết định của G bên trong: giao quyền điều hành tạm thời cho người vừa được bầu làm Phó Giám đốc. Thắng được giữ lại làm "Cố vấn Văn hóa Doanh nghiệp". Sáng thứ Hai, Thắng ngồi cuối phòng họp, nghe Nhật mở đầu: *"Họp nhanh 5 phút thôi nhé."* Thắng lặng lẽ ghi chép |
-| 6 | 😢 🏃 **Còn Mỗi Mình Sếp** | Hứa Lèo ≥ 5 và LL-Entertainment cướp được Siêu Nhân Hồng ngày 27/10 | Đêm 31/10, Thắng ngồi một mình trong văn phòng tầng 2. Qua vách kính, tòa nhà xanh lá chuối của LL sáng rực pháo hoa Đại Nhạc Hội Siêu Nhân. Group Zalo-lô công ty chỉ còn 2 thành viên: Thắng và Bác Bình. Thắng gõ lúc 22:00: *"Mai các em đi làm nhé."* Không ai "đã xem" |
+| 1 | 😄 🏆 **Doanh Nhân Của Năm (Thật)** | Công ty sống (`chung_cong_ty_song`), Uy Quyền ≥ 50, Hứa Lèo ≤ 4 | Siêu Sao Hạng A: 5 tỷ thưởng về sáng thứ Hai, giấy thế chấp đóng dấu "ĐÃ TẤT TOÁN". Tháo Mũ / Meme: Nguyên ký phụ lục gia hạn tới Tết, ngân hàng giãn nợ 6 tháng. Thắng treo tờ giấy giữa bức tường ảnh |
+| 2 | 😄 ✉️ **Thư Hồi Âm** | Đã đọc thư "G" và tự viết thư thú nhận gửi trước 25/10 | Đầu tháng 11, Bác Bình đọc thư trả lời của G. Thắng viết lá thư thứ hai, kể cả chuyện công ty còn hay mất |
+| 3 | 😄 🔒 **Kết thúc bí mật: Hoa Hướng Dương Lộ Diện** | Dùng tài khoản clone, không trả thù ai, sửa ≥ 5 điều bị chê, tự công khai ngày 30/10 | Ngân đổi tên group thành "Hội Thương Sếp (Một Chút)", cho Thắng làm phó admin. Công ty đổ thì group vẫn không giải tán |
+| 4 | 😢 🏚️ **Biệt Thự Có Chủ Mới** | Công ty không qua được (không thuộc 3 kết thúc sự nghiệp cứu công ty) | Ngân hàng dán thông báo lên cổng biệt thự. Thắng ôm thùng ảnh đi bộ xuống dốc, Bác Bình chạy xe máy tới đón |
+| 5 | 😢 🪑 **Ghế Ai Người Nấy Ngồi** | Nguy Cơ Lộ Nợ đạt 100 hoặc Uy Quyền < 20; hoặc công ty sống nhưng không đủ điều kiện Doanh Nhân | Sáng thứ Hai sau Đại Nhạc Hội, Bác Bình mở phong bì "Chỉ mở khi công ty sắp sập": quyền điều hành giao cho Phó Giám đốc, Thắng làm Cố vấn Văn hóa Doanh nghiệp. Nếu Long từ chối ghế, ghế mặc định về Nhật |
+| 6 | 😢 🏃 **Còn Mỗi Mình Sếp** | Hứa Lèo ≥ 6 và (LL cướp được Nguyên ngày 27/10, hoặc ≥ 3 người đã nộp đơn sang LL) | 23 giờ đêm 31/10, Thắng đứng một mình trên sân khấu đã tan. Group công ty còn `22 − số người bỏ đi` thành viên. *"Mai các em đi làm nhé."* Không ai "đã xem" |
+
+Ngày 27/10, Nguyên chỉ đi theo LL khi Thắng hứa suông lần thứ 7, hoặc nói "tùy em" lúc quan hệ với Nguyên < 5. Cảnh 31/10 của Thắng (19:15) chỉ hỏi chuyện tháo mũ trước giờ diễn; điểm Đại Nhạc Hội do `chung_3110_dem_hong` cộng.
 
 ---
 

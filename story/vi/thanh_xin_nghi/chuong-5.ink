@@ -259,7 +259,7 @@ _Đèn bật. {thuc_tap_sinh} khóc. {bien_kich} nhận lời khen. Tin đồn c
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2710_thai_loi_moi ===
-# ngay:27 # gio:10:00 # noi:san_thuong # bat_buoc
+# ngay:27 # gio:12:30 # noi:san_thuong # bat_buoc
 _LL-Entertainment ra tay. Sáng nay Lưu Lực gửi lời mời cho Siêu Nhân Hồng: lăng xê miễn phí, trả gấp ba. Cả công ty như ngồi trên lửa._
 _Sân thượng. Anh {quan_ly_idol} kéo bạn lên, tay cầm 2 điện thoại, giọng mệt._
 quan_ly_idol: {thanh_xin_nghi}, anh nói thiệt. LL mời anh về, 36 triệu một tháng, kèm {sieu_nhan_hong}. Em đi với anh không? Bên đó không ai bắt giấy phòng khám đâu.

@@ -12,7 +12,7 @@
     ~ vu_tin_that_long = 0
 }
 {
-- vu_xong_som && vu_chuoi_ngay_it_luot >= 3 && vu_so_lan_nho_xiu <= 3:
+- vu_xong_som && vu_chuoi_ngay_it_luot >= 2 && vu_so_lan_nho_xiu <= 3:
     ~ chot_ket_thuc("nguoi_den_som")
     -> chua_te_deadline_kt_nguoi_den_som
 - vu_cue_sheet >= 47 && vu_cue_chuan && uy_tin >= 50 && vu_lo_file < 100 && vu_nuoc_toi_chan < 100:

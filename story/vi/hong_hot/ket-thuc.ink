@@ -52,7 +52,7 @@
 // 😄 📈 TRƯỞNG NHÓM MẠNG XÃ HỘI
 // ------------------------------------------------------------
 === hong_hot_kt_truong_nhom_mxh ===
-# dieu_kien:ket_thuc_truong_nhom_mxh
+# ket_thuc:truong_nhom_mxh # loai:co_hau
 { ket_thuc_su_nghiep:
 - "sieu_sao_hang_a":
     _23 giờ 59 tối qua. Bạn đứng giữa khán đài, ba điện thoại trên tay. Một cái live. Một cái đếm. Một cái để đọc tin nhắn._
@@ -84,7 +84,7 @@ _Và nó vẫn nóng như vậy._
 // 😄 🤐 CÁI MIỆNG VÀNG
 // ------------------------------------------------------------
 === hong_hot_kt_cai_mieng_vang ===
-# dieu_kien:ket_thuc_cai_mieng_vang
+# ket_thuc:cai_mieng_vang # loai:co_hau
 _23 giờ. Đại Nhạc Hội Siêu Nhân tan. Bạn không đếm con số. Bạn đếm những bí mật mình đã không kể:{ hh_giu_trang_47: trang 47,}{ hh_giu_no_sep: khoản nợ của sếp,}{ hh_giu_nhi_ll: chuyện {thanh_ninh} đi LL,}{ hh_giu_hieu_ech: một nhà kho có lỗ thông gió hình con cá,} và vài chuyện nhỏ hơn mà không ai biết bạn biết._
 _Mỗi cái nặng như một hòn đá. Và bạn vẫn đứng được._
 { chung_cong_ty_song:
@@ -107,7 +107,7 @@ _"Hóng để hiểu, không phải để kể."_
 // 😄 🔒 CONFESSION CUỐI CÙNG (bí mật)
 // ------------------------------------------------------------
 === hong_hot_kt_confession_cuoi_cung ===
-# dieu_kien:ket_thuc_confession_cuoi_cung
+# ket_thuc:confession_cuoi_cung # loai:co_hau # bi_mat
 _23 giờ 10. Khán đài đã vãn. Bạn ngồi bệt sau cánh gà, mở máy "NGAN-LAPTOP" lần cuối._
 _Mười ngày nay bạn không đăng một bài cay nào. Bạn chỉ đọc. Và lưu lại những bài tốt nhất, những bài không ai thả haha._
 _Bạn gõ. Ký tên thật._
@@ -136,7 +136,7 @@ _Bạn cười. Tên máy mới: "Nghe-Gi-Chua". Lần này không ai cần đo�
 // 😢 🕶️ LỘ MẶT ADMIN
 // ------------------------------------------------------------
 === hong_hot_kt_lo_mat_admin ===
-# dieu_kien:ket_thuc_lo_mat_admin
+# ket_thuc:lo_mat_admin # loai:buon
 _Bạn nhớ mãi buổi chiều đó, ở phòng họp tầng 2. Màn hình lớn chiếu ảnh chụp trang quản trị Confession {cong_ty}. Góc trên ghi tên tài khoản: "{hong_hot} Nghe Gì Chưa"._
 _Bên dưới là danh sách bài đã đăng. Bài "Lương về trễ, sếp đi đánh golf". Bài về chuyến đi Vũng Tàu. Những bài có tên thật của từng người trong phòng._
 _Không ai nói gì. Sếp nhìn màn hình. {hr} mỉm cười. {it} nhìn xuống bàn._
@@ -154,7 +154,7 @@ _Lần đầu tiên, không có gì để hóng. Và lần đầu tiên, bạn t
 // 😢 🔴 LỠ TAY BẤM LIVE
 // ------------------------------------------------------------
 === hong_hot_kt_lo_tay_bam_live ===
-# dieu_kien:ket_thuc_lo_tay_bam_live
+# ket_thuc:lo_tay_bam_live # loai:buon
 _Ba phút. Chỉ có ba phút. Bạn vẫn nghe lại nó trong đầu, kể cả giữa tiếng nhạc Đại Nhạc Hội tối nay._
 { hh_live_nham_ngay:
 - 20:
@@ -187,7 +187,7 @@ _Ở bàn mạng xã hội tầng 1, ba cái điện thoại của bạn nằm �
 // 😢 🎭 NHÂN VẬT CHÍNH
 // ------------------------------------------------------------
 === hong_hot_kt_nhan_vat_chinh ===
-# dieu_kien:ket_thuc_nhan_vat_chinh
+# ket_thuc:nhan_vat_chinh # loai:buon
 _Tuần cuối tháng 10, lần đầu tiên, tin nóng nhất công ty là tin về bạn._
 _Không ai chắc nó bắt đầu từ đâu. Từ chuyện đổi pin lấy bí mật. Từ ảnh chụp màn hình email. Từ một câu bạn lỡ kể với một người, người đó kể với hai người._
 _Ai cũng biết. Ai cũng kể. Không ai kể với bạn._

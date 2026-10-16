@@ -53,7 +53,7 @@
 // ------------------------------------------------------------
 // 😄 🎵 NHẠC SĨ KHÔNG CẦN Ô
 === con_ong_chau_cha_kt_nhac_si_khong_can_o ===
-# noi:san_khau_dem_hong
+# ket_thuc:nhac_si_khong_can_o # loai:co_hau # noi:san_khau_dem_hong
 _Bạn vẫn nhớ từng giây của tiết mục 20 giờ. Sân khấu tối om. Một vệt đèn hồng rọi xuống giữa sân khấu._
 { long_nguoi_hat:
 - "song_ca":
@@ -80,7 +80,7 @@ _Lần đầu tiên trong đời, như vậy là đủ._
 // ------------------------------------------------------------
 // 😄 🏠 TỰ THUÊ TRỌ
 === con_ong_chau_cha_kt_tu_thue_tro ===
-# noi:hem_69
+# ket_thuc:tu_thue_tro # loai:co_hau # noi:hem_69
 { chung_cong_ty_song:
     _Công ty qua được đêm 31/10. Chú vẫn là giám đốc. Nhưng bạn đã nói "cháu hông nhận", và lần này bạn giữ lời._
 - else:
@@ -107,7 +107,7 @@ _Bạn mỉm cười. Bài thứ hai sẽ bắt đầu từ đây._
 // ------------------------------------------------------------
 // 😄 🔒 BAN PHÓ HAI NGƯỜI (kết thúc bí mật, chung với Nhật)
 === con_ong_chau_cha_kt_ban_pho_hai_nguoi ===
-# noi:phong_hop_tang_2
+# ket_thuc:ban_pho_hai_nguoi # loai:co_hau # bi_mat # noi:phong_hop_tang_2
 _Họp đánh giá 30/10. Trên bàn chú có hai lá đơn đề cử. Lá của bạn ghi tên {truong_phong}. Lá của {truong_phong} ghi tên bạn._
 _Chú nhìn lá này. Nhìn lá kia. Đeo kính vào nhìn lại. Tháo kính ra. Gãi đầu._
 giam_doc: Thế thì… hai đứa cùng làm. Anh không ép, tùy các em.
@@ -132,7 +132,7 @@ _Ba người ăn bánh mì trên bậc thềm sân thượng. Không ai nhắc t
 // ------------------------------------------------------------
 // 😢 👑 MÃI LÀ CHÁU
 === con_ong_chau_cha_kt_mai_la_chau ===
-# noi:phong_pho_giam_doc
+# ket_thuc:mai_la_chau # loai:buon # noi:phong_pho_giam_doc
 { chung_cong_ty_song:
     _Công ty qua được đêm 31/10. Ghế Phó Giám đốc vẫn còn đó cho bạn ngồi._
 - else:
@@ -158,7 +158,7 @@ _Bạn trả lời: "Dạ." Trong 4 giây._
 // ------------------------------------------------------------
 // 😢 🎤 BÀI HÁT BỊ CƯỚP
 === con_ong_chau_cha_kt_bai_hat_bi_cuop ===
-# noi:chot_bao_ve
+# ket_thuc:bai_hat_bi_cuop # loai:buon # noi:chot_bao_ve
 _Một buổi trưa tháng 11. Chòi bảo vệ. Ấm trà, cái radio cũ, {cho} ngủ dưới ghế bố._
 _Bạn ghé qua, không vì lý do gì. Bác {bac_bao_ve} rót trà, không hỏi gì._
 _Radio đang phát một bài hát mới. Tiếng đàn mở đầu. Bạn khựng lại._
@@ -186,7 +186,7 @@ _{cho} thức dậy, dụi đầu vào chân bạn. Ít nhất có một ngườ
 // ------------------------------------------------------------
 // 😢 💸 CHÚ ƠI CỨU CHÁU
 === con_ong_chau_cha_kt_chu_oi_cuu_chau ===
-# noi:atm
+# ket_thuc:chu_oi_cuu_chau # loai:buon # noi:atm
 { chung_cong_ty_song:
     _Tháng 11. Công ty qua được đêm 31/10. Nhưng khoản thế chấp biệt thự vẫn đến hạn 15/11, và chú bảo từ nay mỗi người tự lo cho mình. Căn penthouse đã bán. Thẻ phụ đã khóa._
 - else:

@@ -107,7 +107,7 @@ _Khán đài cười. Rồi vỗ tay. Không phải vỗ tay xã giao. Vỗ tay 
 _Cuối cùng bạn giới thiệu sếp. Bạn chỉ nói một câu: "Anh {giam_doc}, người ở lại tới cuối, kể cả những đêm không ai thấy."_
 _Dưới khán đài, sếp vỗ tay to nhất. Sếp không cần ai khen. Lần đầu tiên, sếp được ai đó nói đúng._
 { tn_khuyen_viet_thu_genta:
-    _Trong túi áo sếp có bản nháp một lá thư viết tay đã gửi đi. Gửi anh Genta. Kể hết. Người khuyên sếp viết lá thư đó đang cầm micro trên sân khấu._
+    _Trong túi áo sếp có bản nháp một lá thư viết tay đã gửi đi. Gửi anh Genta. Kể hết. Người khuyên sếp viết lá thư đó lúc ấy đang cầm micro trên sân khấu._
 }
 { not chung_cong_ty_song:
     _Con số không đủ. Công ty sẽ phải thanh lý. Nhưng đêm nay, ít nhất có một nghìn người biết tên những người đã làm nên nó._

@@ -207,16 +207,20 @@ Nhật chịu trách nhiệm **sản xuất mọi nội dung**: MV, gameshow, li
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được xét lúc 23:00 ngày 31/10, **sau** Đại Nhạc Hội Siêu Nhân (`chung_3110_dem_hong`), nên đọc được `ket_thuc_su_nghiep` và `chung_cong_ty_song`. Không cảnh nào chốt kết thúc trước đó.
+
+Thứ tự xét: Phím Cách Là Chạy → Họp Tới Kiệt Sức → Ban Phó Hai Người → Phó Giám Đốc Nhật → Đạo Diễn Thật → còn lại: Bản Nháp Thứ 15.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🪑 **Phó Giám Đốc Nhật** | Điểm Ghế Phó ≥ 70, Độ Lộ < 50, MV và gameshow hoàn thành đúng hạn, Siêu Nhân Hồng đạt ít nhất Mốc 3 | Sáng thứ Hai đầu tháng 11, Nhật ngồi ghế mới, mở email soạn lời mời "Họp nhanh 5 phút". Ngón tay dừng trên nút gửi. Nhật xóa hết, gõ lại: *"Tuần này không họp. Ai cần gì thì lên phòng anh."* Bấm gửi. Ngoài vách kính, cả phòng Sản xuất đứng dậy vỗ tay |
-| 2 | 😄 🎬 **Đạo Diễn Thật** | Tay Nghề Thật ≥ 80, đã Ghi Công cho Lĩnh ít nhất 3 lần, đã mở nhánh "Ca đêm hai người" | Đại Nhạc Hội Siêu Nhân kết thúc, màn hình lớn chạy credits: *"Đạo diễn: Nhật. Dựng phim: Lĩnh."* Hai dòng to bằng nhau. 2 giờ sáng, phòng dựng chỉ còn hai người. Nhật tự cắt xong clip đầu tiên trong đời. Lĩnh ngáp, gật đầu: *"Render xong là xong anh."* |
-| 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Quan hệ với Long ≥ 60, đã mở nhánh "Phòng thu tầng 30", giúp Long trình bày bài hát với Thắng, và ngày 30/10 Nhật đề cử Long trong khi Long đề cử Nhật | Thắng nhìn hai lá đơn đề cử lẫn nhau, gãi đầu: *"Thế thì… hai đứa cùng làm. Anh không ép, tùy các em."* Một tháng sau, Nhật lo sản xuất, Long lo âm nhạc, hai người dùng chung một cái bàn. Trên lịch chỉ có đúng một cuộc họp mỗi ngày: *"Họp nhanh 5 phút: trưa nay ăn gì?"* |
-| 4 | 😢 ⌨️ **Phím Cách Là Chạy** | Độ Lộ đạt 100 (có thể xảy ra bất cứ lúc nào, thường vào 16/10 hoặc 29/10) | Phòng họp chật kín. Thắng chỉ vào máy dựng: *"Em mở cho anh xem em làm thế nào."* Con trỏ nhấp nháy. Mười giây. Hai mươi giây. Duy rụt rè thì thầm từ cuối phòng: *"Dạ… bấm phím cách là nó chạy ạ."* Tuần sau, Lĩnh được đề bạt Trưởng phòng |
-| 5 | 😢 📄 **Bản Nháp Thứ 15** | Người khác (thường là Long) được đề bạt Phó Giám đốc, và Nhật chưa từng biết Long không muốn ghế | Tối 30/10, căn 501 Phố Mới. Nhật đứng trước bảng trắng, viết dòng tiêu đề "Đơn xin đề bạt, bản 15". Viết được nửa trang, Nhật dừng lại, xóa hết, viết vào góc bảng: *"Họp với chính mình: 5 phút."* Nhật ngồi xuống sàn. Cuộc họp kéo dài tới sáng |
-| 6 | 😢 🕯️ **Họp Tới Kiệt Sức** | Số Cuộc Họp ≥ 120 trong tháng, hoặc Stress đầy giữa một cuộc họp | Giữa cuộc họp thứ 121, Nhật đứng dậy chỉ vào bảng trắng rồi ngã ngồi xuống ghế. Mọi người lặng lẽ đi ra từng người một, đóng cửa nhẹ nhàng. Nhật tỉnh dậy ở Phòng khám Khỏe Re, điện thoại hiện 14 lời mời họp. Người gửi: Nhật |
+| 1 | 😄 🪑 **Phó Giám Đốc Nhật** | Thắng bổ nhiệm Nhật ở cuộc họp 30/10 (14:40): Điểm Ghế Phó ≥ 55, Độ Lộ < 50, MV kịp chiếu thử, đăng được clip gameshow; hoặc Long từ chối và đề cử Nhật | Sáng thứ Hai đầu tháng 11, Nhật xóa lời mời "Họp nhanh 5 phút", gõ *"Tuần này không họp."* Nếu công ty đổ, Nhật làm phó trong tháng thanh lý và viết thư giới thiệu cho từng người |
+| 2 | 😄 🎬 **Đạo Diễn Thật** | Tay Nghề Thật ≥ 30, Ghi Công ≥ 3 lần, đã mở nhánh "Ca đêm hai người" (9/10 hoặc nói thật dưới nến 15/10) | Credits "Đạo diễn: Nhật. Dựng phim: Lĩnh." to bằng nhau. 2 giờ sáng, Nhật tự dựng xong clip đầu tiên |
+| 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Nhánh "Phòng thu" (pantry 15/10 hoặc lửa trại 17/10), quan hệ với Long ≥ 40, Long biết được giúp (25/10) hoặc đã nói thật (27/10), hai người đề cử nhau ngày 30/10 | Thắng cho hai người cùng làm Phó. Một tháng sau, một bàn dài, một cây đàn, một cuộc họp mỗi ngày: *"trưa nay ăn gì?"* |
+| 4 | 😢 ⌨️ **Phím Cách Là Chạy** | Độ Lộ ≥ 85 | Thứ Hai sau Đại Nhạc Hội, Thắng bảo Nhật mở máy dựng. Duy thì thầm: *"Bấm phím cách là nó chạy ạ."* Lĩnh được đề bạt |
+| 5 | 😢 📄 **Bản Nháp Thứ 15** | Mặc định: ghế về Long hoặc để trống | Gần nửa đêm 31/10, căn 501. "Đơn xin đề bạt, bản 15", rồi xóa hết. Công ty đổ thì không còn ai để gửi đơn |
+| 6 | 😢 🕯️ **Họp Tới Kiệt Sức** | Số Cuộc Họp ≥ 98 trong tháng (3 cuộc cố định mỗi ngày làm việc + họp thêm), hoặc Stress đầy giữa một cuộc họp | Thứ Hai sau Đại Nhạc Hội, Nhật ngã giữa cuộc họp. Tỉnh dậy ở Phòng khám Khỏe Re với 14 lời mời họp do chính mình gửi |
+
+Cảnh 31/10 của Nhật (19:15) là chạy thử ở cánh gà; nếu đã giúp Long trình bày bài hát thì đặt `chung_hat_hong_la_thai_do`. Không cảnh nào nhảy thẳng tới kết thúc giữa tháng.
 
 ---
 

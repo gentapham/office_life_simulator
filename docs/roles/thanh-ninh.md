@@ -208,16 +208,20 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được xét lúc 23:00 ngày 31/10, **sau** Đại Nhạc Hội Siêu Nhân (`chung_3110_dem_hong`), nên đọc được `ket_thuc_su_nghiep` và `chung_cong_ty_song`. Không cảnh nào chốt kết thúc trước đó.
+
+Thứ tự xét: Lời Thật Đầu Tiên → Hai Mang → Email Gửi Nhầm → Cánh Tay Phải → Nhảy Đúng Lúc → còn lại: Hết Người Để Nịnh.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🫱 **Cánh Tay Phải Chính Thức** | Điểm Nịnh ≥ 80, Độ Xanh Lá Chuối < 30, thắng Hiếu trong cuộc thi "sếp gọi ai", Siêu Nhân Hồng đạt ít nhất Mốc 3 | Ngày 30/10, Thắng gắn lên bàn Nhi tấm biển mới: **"Chánh Văn phòng"**, lương tăng 20%. Sáng hôm sau, Nhi bưng trà vào phòng sếp như mọi ngày. Lần đầu tiên, sếp đứng dậy rót cho Nhi một ly trước. *"Anh pha có chuẩn không em?"* Nhi uống một ngụm: *"Dạ… hơi đắng anh."* Cả hai cùng cười |
-| 2 | 😄 🟢 **Nhảy Đúng Lúc** | Nhận việc ở LL như một nhân viên thật (không phải tai mắt), không mang theo bí mật nào của Thắng, gửi đơn nghỉ việc đàng hoàng trước 30/10 | Nhi nhận thẻ nhân viên LL màu xanh lá chuối, lương gấp đôi. Trên bàn làm việc mới có một tấm thiệp viết tay của Thắng: *"Đi vui nhé. Anh không ép, tùy em."* Giờ nghỉ trưa, Nhi tự mua cho mình một ly trà sữa, lần đầu tiên không cần khen ai để được uống |
-| 3 | 😄 🔒 **Kết thúc bí mật: Lời Thật Đầu Tiên** | Đã mở cả hai cờ `nhi_noi_that_1` và `nhi_noi_that_2`, mở nhánh "Học Nghề Chị Đại", từ chối LL, Cơn Giận Chị Đại ≤ 20, và ngày 30/10 nói với sếp: *"Anh phải viết thư cho Genta"* | Đại Nhạc Hội Siêu Nhân, Hương đưa micro cho Nhi: *"MC đêm nay là em."* Trước nghìn khán giả, Nhi không khen ai cả. Nhi chỉ giới thiệu từng người trong công ty đã làm gì, đúng sự thật. Dưới khán đài, sếp vỗ tay to nhất. Hương nói nhỏ với Thương: *"Con nhỏ này được."* |
-| 4 | 😢 📧 **Email Gửi Nhầm** | Email "Em đồng ý về LL ạ" tới tay toàn công ty ngày 29/10 và Nhi không tự thú trước | Sáng 30/10, Tuấn mỉm cười: *"Em rảnh không, lên phòng anh uống trà xíu."* Nhi ôm thùng carton, trên cùng là tấm ảnh chụp chung với sếp, phóng to, đóng khung. Đi ngang chòi bảo vệ, Bác Bình nói: *"Bác không thấy gì đâu."* Tuất không sủa. Thế mới buồn |
-| 5 | 😢 🐍 **Hai Mang** | Độ Xanh Lá Chuối ≥ 80 và bị lộ (Hiếu, Bảo hoặc Ngân phát hiện), hoặc LL bỏ rơi Nhi sau khi cướp được Nguyên | Nhi đứng giữa đường lớn khu Ven Đô, một bên là tòa nhà kính xanh lá chuối của LL, phía xa là tòa nhà tím của G-Entertainment. Thẻ từ của cả hai công ty đều bị khóa. Nhi mở danh bạ, lướt từ A tới Z, không biết nên nịnh ai |
-| 6 | 😢 🪞 **Hết Người Để Nịnh** | Siêu Nhân Hồng thất bại, công ty phá sản, Nhi ở lại tới ngày cuối | Căn 302 Phố Mới, đêm 31/10. Nhi đứng trước gương, tập: *"Chị nói chuẩn quá chị ơi."* Rồi: *"Em nói chuẩn quá em ơi."* Trong gương chỉ có một người, và không ai cần được khen |
+| 1 | 😄 🫱 **Cánh Tay Phải Chính Thức** | Điểm Nịnh ≥ 70, Độ Xanh Lá Chuối < 40, "sếp gọi Nhi" không ít hơn Hiếu | Thứ Hai 2/11, biển "Chánh Văn phòng". Công ty sống: lương tăng 20%. Công ty đổ: Thắng hứa ký thư giới thiệu cho Nhi đầu tiên. Sếp rót trà cho Nhi trước: *"Dạ… hơi đắng anh."* |
+| 2 | 😄 🟢 **Nhảy Đúng Lúc** | Nhận việc thật ở LL, không mang bí mật nào của Thắng sang LL, và (đã nộp đơn nghỉ việc 27/10 hoặc đã tự thú với sếp) | Thứ Hai 2/11, Nhi dọn bàn, băng qua đường sang LL. Thiệp của sếp: *"Đi vui nhé. Anh không ép, tùy em."* |
+| 3 | 😄 🔒 **Kết thúc bí mật: Lời Thật Đầu Tiên** | Đã tự thú với sếp (`tn_noi_that_2`), học nghề Chị Đại (17/10 hoặc chợ Phố Cũ 25/10), không làm hai mang, Cơn Giận Chị Đại ≤ 65 | 19:20 ngày 31/10 Hương đưa micro: *"MC đêm nay là em."* (cảnh `thanh_ninh_3110_mc`). Sau show, Nhi nhớ lại từng câu giới thiệu thật về mọi người. Hương: *"Con nhỏ này được."* |
+| 4 | 😢 📧 **Email Gửi Nhầm** | Email "Em đồng ý về LL ạ" (17:02 ngày 29/10, gửi qua wifi điện thoại của Ngân) tới tay toàn công ty, Nhi không tự thú | Thứ Hai 2/11, Tuấn mời "uống trà". Nhi ôm thùng carton. Tuất không sủa |
+| 5 | 😢 🐍 **Hai Mang** | Độ Xanh Lá Chuối ≥ 80 và bị lộ, hoặc LL cướp được Nguyên | LL bỏ rơi Nhi. Gần nửa đêm 31/10, Nhi đứng giữa con đường, một bên tòa LL, một bên G-Entertainment, không biết nên nịnh ai |
+| 6 | 😢 🪞 **Hết Người Để Nịnh** | Mặc định | Đêm 31/10, căn 302. Công ty đổ hay sống, Nhi vẫn đứng trước gương tập khen, và không ai cần được khen |
+
+Cảnh 31/10 của Nhi (19:20 làm MC nếu đủ điều kiện, 19:25 trước giờ diễn) kết thúc bằng `-> END`; game tự chạy `chung_3110_dem_hong` rồi mới tới `thanh_ninh_3010_danh_gia`.
 
 ---
 
