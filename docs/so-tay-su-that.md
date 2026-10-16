@@ -138,7 +138,7 @@
 | 25/10 | Thái tới tòa LL, được mời 36 triệu/tháng. Nhi được Lưu Lực phỏng vấn. Bán kết "Giọng Ca Ước Mơ" của Sơn |
 | 26/10 | Chiếu thử nội bộ phim "Người Hùng Không Tên". Thắng ra giá 200 triệu mua kênh của Lĩnh. Đêm 26/10 Lưu Lực gửi email lời mời gấp ba cho Thắng sớm |
 | 27/10 | LL ra tay (xem mục 5). Lưu Lực tới tận nơi, thấy Hương thì làm rơi tập hồ sơ. Trailer phim ngắn ra mắt, đề tên Oánh. "Sữa Chua Hồng Hào" (nhà tài trợ thật duy nhất, ở Ven Đô) gọi Huyền mời tài trợ 1 tỷ, không ai tin |
-| 28/10 | Lĩnh lỡ xuất video tỏ tình lên fanpage. Bộ lọc của Chương lần ra fan ảo là của Phát |
+| 28/10 | 02:10 Lĩnh lỡ xuất bản nháp video "16 năm" lên kênh của mình; cuối bản nháp dính đoạn clip Thái (file "Thai_final_v12"). Video nằm 6 phút, khoảng 2.000 lượt xem rồi bị gỡ. Bộ lọc của Chương lần ra fan ảo là của Phát |
 | 29/10 | Wifi sập. Nguyên nhân (tùy lượt): Tuất cắn dây mạng (đi tìm con gà cao su), hoặc con rắn thứ hai cắt dây. Video của Lĩnh kẹt ở 99%. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Hương điều phối bằng bộ đàm. Ngân phát wifi điện thoại, mật khẩu "nghegichua" |
 | 30/10 | Họp đánh giá. Gia hạn hợp đồng của Phát (hết hạn 31/10). Trước họp, HR cho dọn kho, có thể dọn mất kho đồ của Tuất |
 | 31/10 | Đại Nhạc Hội Siêu Nhân 19:30. Chung kết trực tiếp "Giọng Ca Ước Mơ" của Sơn lúc 20:00, cùng tối. Thắng hóa trang "Ông Kẹ Ngân Hàng" |
@@ -167,9 +167,9 @@
 Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt đầu ngày 1/10 ở **5.000** (người quen của Nguyên).
 
 ### Tăng tự nhiên
-- Mỗi ngày tự tăng **+12.000** nếu tinh thần công ty bình thường, **+20.000** nếu cao, **+5.000** nếu thấp.
-- 22 NPC tự làm việc của mình, cộng chung khoảng **+0 đến +5.000 mỗi ngày** tùy quan hệ và tâm trạng.
-- Tổng nếu người chơi không làm gì: khoảng **600.000 – 700.000** trước đêm diễn (đã gồm các mốc cố định), cộng đêm diễn thành **700.000 – 1.000.000**. Người chơi phải góp sức (hoặc phá). Tổng phần cộng/trừ trong file thoại của một vai trong cả tháng nên nằm trong khoảng **−200.000 đến +250.000**.
+- Mỗi ngày tự tăng **+16.000** nếu tinh thần công ty bình thường, **+24.000** nếu cao, **+8.000** nếu thấp.
+- 22 NPC tự làm việc của mình, cộng chung khoảng **+1.000 đến +7.000 mỗi ngày** tùy quan hệ và tâm trạng.
+- Tổng nếu người chơi không làm gì: khoảng **750.000 – 850.000** trước đêm diễn (đã gồm các mốc cố định), cộng đêm diễn thành **850.000 – 1.150.000**. Người chơi phải góp sức (hoặc phá). Tổng phần cộng/trừ trong file thoại của một vai trong cả tháng nên nằm trong khoảng **−200.000 đến +250.000**.
 
 ### Cỡ tác động của một hành động
 | Cỡ | Ví dụ | Người theo dõi |
@@ -248,7 +248,7 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - **Phát:** mật khẩu là ngày phát hành "Công Viên". Fan ảo đều dùng ảnh đại diện hoa sen. Cúp 2015 cầm được 6 triệu ở Cứu Nguy (chuộc trước 30/10 thêm 300 nghìn tiền lãi, sau đó bị bán 9 triệu). Gia hạn hợp đồng 30/10 thì Thắng thưởng thêm 10 triệu. 29/10 có thể được tiệc cưới "Hạnh Phúc Trăm Năm" đặt cọc 20 triệu cả mùa cưới. Bài mới: "Hát Cho Người Ta Cưới".
 - **Thái:** năm 2018 từ chối LL vì LL không nhận Phát. Đưa Phát chìa khóa dự phòng studio 0905 từ 2016. Cà phê đen đá ít đường, từ ly thứ 5 chuyển sang cà phê sữa. Có điện thoại thứ ba chỉ để gọi Sơn.
 - **Oánh:** con mèo tên Bí. Cuốn sổ rơi ở ghế số 14 trên xe đi Vũng Tàu. Tranh chấp slogan tiệm nail với Quỳnh từ 2021.
-- **Lĩnh:** thư mục "Thái" có 214 clip trong 4 năm. USB hình con cú. Video tỏ tình xuất nhầm tên "Thai_final_v12", ảnh bìa là Thái ngủ gục trong xe, nằm trên fanpage 6 phút với khoảng 2.000 lượt xem. Wifi có lại lúc 22:47 ngày 29/10, video "16 năm" chạy tới 100%.
+- **Lĩnh:** thư mục "Thái" có 214 clip trong 4 năm. USB hình con cú. 28/10 lúc 02:10, bản nháp video "16 năm" lên nhầm kênh của Lĩnh, cuối video dính đoạn clip Thái ("Thai_final_v12", Thái ngủ gục trong xe); nằm 6 phút với khoảng 2.000 lượt xem rồi bị gỡ. Wifi có lại lúc 22:47 ngày 29/10, video "16 năm" chạy tới 100%.
 - **Quỳnh:** các job cho LL: logo tiệm trà sữa (800 nghìn), băng rôn quán nướng (800 nghìn mỗi cái), "Hồng Ngoại" (cọc 1 triệu ngày 8/10, giao USB ở quầy lễ tân LL ngày 25/10). Poster lỗi "Siêu Nhân Hồn" ngày 9/10 được lưu lúc 6:12 vào thư mục "POSTER HỒNG".
 - **Huyền:** số điện thoại của "BTT Global" thật ra là của tiệm nail Lung Linh. Tổng tạm ứng không hóa đơn năm nay: 312 triệu. Giấy chứng nhận BTT giả có con dấu hình bánh tráng, tạo trên máy "QUYNH-PC". Ký với Sữa Chua Hồng Hào ở Sống Ảo lúc 15:00 ngày 28/10.
 - **Chương:** các chủ nợ (trừ Huyền) có group chat 7 người. Hải sản Vũng Tàu ký nợ thêm 6.800.000đ (tôm hùm) hoặc 3.200.000đ (lẩu), nên tổng nợ có thể vượt 22 triệu.
@@ -279,7 +279,7 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - Trong lượt chơi Bình, phong bì dán kín (nếu đọc ngày 30/10) ghi quyết định của G: giữ công ty, cho Thắng thêm một năm, không ai bị đuổi vì Thắng ký không đọc, không nhắn tin cho nhân viên sau 22 giờ.
 - Bình nhặt được Tuất giữa trời mưa năm 2020, tính ngày 4/10 là sinh nhật Tuất. Ngày 1/10 Bình sơn riêng một ô đỗ xe ghi "HỒNG" cho Nguyên.
 - Kết thúc tốt nhất của Bình: G tặng bác quán trà đá ở cổng sau (quà riêng, không liên quan quyền hạn công ty).
-- Hương có thể dùng mối quen cũ (thợ điện ở Chợ Phố Cũ) để kiếm 2 giàn đèn còn thiếu ngày 28/10. Đóng góp của Hương ở Đại Nhạc Hội Siêu Nhân: +150.000 nếu tiến độ ≥ 80%, +40.000 nếu 50–79%, −100.000 nếu dưới 50% (sập sân khấu).
+- Hương có thể dùng mối quen cũ (thợ điện ở Chợ Phố Cũ) để kiếm 2 giàn đèn còn thiếu ngày 28/10. Tiến độ của Hương (chung_tien_do_dem_hong) quyết định đêm diễn suôn sẻ hay sập; phần cộng người theo dõi do cảnh đêm diễn chung tính (sập sân khấu).
 - Chương có thể vay Bình thêm 2 triệu ngày 12/10.
 
 ## 11. Đồng hồ chung (giờ và nơi chốt cho mọi vai)

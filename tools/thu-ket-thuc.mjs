@@ -89,7 +89,7 @@ for (let l = 0; l < SO_LUOT; l++) {
     s.variablesState["ngay"] = ngay;
     if (ngay > 1) {
       const tt = Number(s.variablesState["tinh_than_cong_ty"]) || 50;
-      s.variablesState["nguoi_theo_doi"] += (tt >= 70 ? 20000 : tt <= 30 ? 5000 : 12000) + Math.round(Math.random() * 5000);
+      s.variablesState["nguoi_theo_doi"] += (tt >= 70 ? 24000 : tt <= 30 ? 8000 : 16000) + 1000 + Math.round(Math.random() * 6000);
     }
     const cd = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay]; if (cd) s.variablesState["nguoi_theo_doi"] += cd;
     if (ngay === 12 && LUONG) s.variablesState["tien"] = (Number(s.variablesState["tien"]) || 0) + LUONG; // lương về như trong game

@@ -71,7 +71,7 @@ _Người tạo coin: ẩn danh. Ví của người tạo: đang giữ 70% tổn
     ~ ddt_hong = ddt_tai_khoan
     ~ ddt_nt(15)
     _Bạn bấm "Mua". Ngay sau đó, giá $HONG giảm 12%. Như mọi lần bạn bấm "Mua"._
-    ~ ddt_tai_khoan = ddt_tai_khoan - ddt_tai_khoan * 12 / 100
+    ~ ddt_tai_khoan = ddt_tai_khoan - (ddt_tai_khoan * 12) / 100
     ~ ddt_hong = ddt_tai_khoan
     ~ ddt_noi_day()
     _"Đáy rồi," bạn tự nhủ. "Lần này là lên thật." Bạn thức tới 4 giờ sáng nhìn nó._
