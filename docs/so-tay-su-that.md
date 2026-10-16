@@ -168,8 +168,8 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 
 ### Tăng tự nhiên
 - Mỗi ngày tự tăng **+12.000** nếu tinh thần công ty bình thường, **+20.000** nếu cao, **+5.000** nếu thấp.
-- 22 NPC tự làm việc của mình, cộng chung khoảng **+5.000 đến +15.000 mỗi ngày** tùy quan hệ và tâm trạng.
-- Tổng nếu người chơi không làm gì: khoảng **550.000 – 700.000**, tức là **không đủ**. Người chơi phải góp sức (hoặc phá).
+- 22 NPC tự làm việc của mình, cộng chung khoảng **+0 đến +5.000 mỗi ngày** tùy quan hệ và tâm trạng.
+- Tổng nếu người chơi không làm gì: khoảng **600.000 – 700.000** trước đêm diễn (đã gồm các mốc cố định), cộng đêm diễn thành **700.000 – 1.000.000**. Người chơi phải góp sức (hoặc phá). Tổng phần cộng/trừ trong file thoại của một vai trong cả tháng nên nằm trong khoảng **−200.000 đến +250.000**.
 
 ### Cỡ tác động của một hành động
 | Cỡ | Ví dụ | Người theo dõi |

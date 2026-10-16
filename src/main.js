@@ -273,7 +273,7 @@ class LuotChoi {
     if (ngay > 1) {
       const tt = Number(this.v("tinh_than_cong_ty")) || 50;
       const tang = tt >= 70 ? 20000 : tt <= 30 ? 5000 : 12000;
-      const npc = 5000 + Math.round(Math.random() * 10000);
+      const npc = Math.round(Math.random() * 5000);
       this.set("nguoi_theo_doi", (Number(this.v("nguoi_theo_doi")) || 0) + tang + npc);
     }
     const coDinh = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay];
