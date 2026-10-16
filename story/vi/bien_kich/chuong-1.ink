@@ -42,7 +42,7 @@ idol_het_thoi: …Ờ. Vậy thì tốt.
 _{idol_het_thoi} đứng thêm ba giây, không biết làm gì tiếp, rồi ngồi xuống ghế cuối._
 quan_ly_idol: *(nói nhỏ vào điện thoại)* Không, không có gì đâu, ảnh chỉ… chào hỏi thôi.
 _Ở đầu bàn, {ke_toan} cúi sát tai {giam_doc}, thì thầm gì đó về "trang 47". {giam_doc} xua tay, cầm bút ký luôn._
-_Tay bạn tự mò vào túi. {dan_dau_tu} 1 của tiểu thuyết vừa tự viết ra trước mắt._
+_Tay bạn tự mò vào túi. Chương 1 của tiểu thuyết vừa tự viết ra trước mắt._
 * {co(so_tay_oanh)} [✍️ Mở sổ bìa da, ghi lại hết. Tên thật, câu thoại thật.]
     ~ bk_lo(10)
     ~ bk_cam(15)

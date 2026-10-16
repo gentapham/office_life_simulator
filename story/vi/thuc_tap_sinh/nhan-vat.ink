@@ -416,7 +416,7 @@ _Trong balo bạn vẫn là cuốn sổ bìa da của {bien_kich}, nhặt trên 
     ~ mat(so_tay_oanh)
     bien_kich: *(ôm cuốn sổ)* Em… đọc chưa?
     thuc_tap_sinh: Dạ, chương 14 ạ.
-    bien_kich: *(nhắm mắt)* {dan_dau_tu} 14 tui sẽ viết lại. Có tên em. Tên thật. Ở đúng chỗ.
+    bien_kich: *(nhắm mắt)* Chương 14 tui sẽ viết lại. Có tên em. Tên thật. Ở đúng chỗ.
     ~ qh("bien_kich", 15)
 * [😶 Giữ thêm ít hôm.]
     _Cuốn sổ nằm lại trong balo. Nặng hơn cân nặng của nó._

@@ -242,7 +242,7 @@ _Bác {bac_bao_ve} đứng ở góc, tay cầm một lá thư ký tên "G". Bác
     chua_te_deadline: *(nhận hoa, cười)* Ủa, em đâu phải chị em? Mà chiêu này hay. {hong_hot} ơi quay góc này nè.
     ~ snh_tim(-3)
 * [🙂 Ngồi cạnh bác {bac_bao_ve}: "Bác ơi, người viết thư… chắc thương mọi người lắm bác ha."]
-    bac_bao_ve: *(gấp lá thư)* Ừ. {ke_toan} thì mới hỏi.
+    bac_bao_ve: *(gấp lá thư)* Ừ. Thương thì mới hỏi.
     ~ qh("bac_bao_ve", 10)
 - -> END
 

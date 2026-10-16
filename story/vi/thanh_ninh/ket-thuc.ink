@@ -116,7 +116,7 @@ _{ke_toan} gật. Bạn không nghe thấy câu đó. Nhưng đêm nay, lần đ
 _Sáng 30/10. 7 giờ 45. Bạn tới trước sếp như mọi ngày. Bình trà sen nóng hổi._
 _{hr} đứng cạnh máy chấm công, mỉm cười._
 hr: {thanh_ninh} à. Em rảnh không, lên phòng anh uống trà xíu.
-_Trà Ô {con_ong_chau_cha}. Loại sếp thích. {hr} rót cho bạn một ly. Không ai nhắc tới email "Em đồng ý về LL ạ". Không cần nhắc. Nó đã được in ra, nằm trong tập hồ sơ màu hồng trên bàn._
+_Trà Ô Long. Loại sếp thích. {hr} rót cho bạn một ly. Không ai nhắc tới email "Em đồng ý về LL ạ". Không cần nhắc. Nó đã được in ra, nằm trong tập hồ sơ màu hồng trên bàn._
 hr: Mình cùng nhìn lại hành trình nha em.
 _Hành trình kéo dài 12 phút. Ba năm, mười hai phút._
 _Bạn ôm thùng carton xuống cầu thang. Trên cùng là tấm ảnh chụp chung với sếp, phóng to, đóng khung. Nó to quá, che mất nửa mặt bạn._

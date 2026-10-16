@@ -140,7 +140,7 @@ _LL chia sẻ clip đầu tiên, kèm một trái tim xanh lá chuối._
 _Sáng hôm sau, 7 giờ 59. Bạn tới sớm. Lần đầu tiên trong năm bạn không trễ 5 phút._
 _{hr} đứng cạnh máy chấm công, mỉm cười._
 hr: Em {hong_hot}. Em rảnh không, lên phòng anh uống trà xíu.
-_Trà Ô {con_ong_chau_cha}. {hr} rót. Bạn nhìn ly trà. Trong ly có bóng của chính bạn, méo mó, đỏ hoe._
+_Trà Ô Long. {hr} rót. Bạn nhìn ly trà. Trong ly có bóng của chính bạn, méo mó, đỏ hoe._
 hr: Anh chỉ muốn lắng nghe em thôi.
 _Lần này, bạn là người không có gì để kể._
 _Ở bàn mạng xã hội tầng 1, ba cái điện thoại của bạn nằm úp. Không cái nào sáng._

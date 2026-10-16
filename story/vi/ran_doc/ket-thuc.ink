@@ -105,7 +105,7 @@ _Sau buổi diễn, bạn mở cuốn sổ tay. Trang đầu tiên: con cá. B�
 # ket_thuc:30_ngay_lam_ran # loai:co_hau # bi_mat
 _Ba tháng sau. Nhà sách lớn nhất Thành Phố Ước Mơ. Băng rôn: "Ra mắt sách: 30 NGÀY LÀM RẮN. Tác giả ký tặng."_
 _Bìa sách: một con rắn đeo dây thẻ nhân viên màu cam. Tên tác giả: {ran_doc}._
-_Chương 1: "Ma Mới, Thù Cũ". {dan_dau_tu} cuối: "Rắn Gặp Rắn", kể lại ngày bạn đứng giữa phòng họp, chiếu từng bằng chứng LL-Entertainment cài người vào {cong_ty}._
+_Chương 1: "Ma Mới, Thù Cũ". Chương cuối: "Rắn Gặp Rắn", kể lại ngày bạn đứng giữa phòng họp, chiếu từng bằng chứng LL-Entertainment cài người vào {cong_ty}._
 _Không có tên thật. Không có bí mật của ai bị bóc. Chỉ có những chuyện ai đi làm văn phòng cũng gật gù: group chat lúc 11 giờ đêm, họp 5 phút kéo dài 2 tiếng, trà sữa thứ 6._
 _Nhà phê bình gọi đây là "cuốn sách độc nhất năm". Theo nghĩa tốt._
 _Bạn đã nghỉ việc từ tuần thứ hai của tháng 11. {hr} mời bạn uống trà lần cuối, rót trà ô long số 23, rồi nói: "Anh lắng nghe em suốt một tháng. Giờ tới lượt cả nước nghe em."_

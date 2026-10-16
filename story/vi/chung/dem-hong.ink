@@ -3,9 +3,9 @@
 //
 // Thứ tự:
 //   chung_3110_dem_hong              (19:30, cảnh chung, có 1–2 lựa chọn)
-//     -> dòng có thẻ # hien_ket_thuc_nhan_vat : game chèn kết thúc của nhân vật
-//        người chơi ở đây (đã chốt từ họp 30/10), rồi chạy tiếp
-//   chung_3110_ket_thuc_su_nghiep    (tính & chốt ket_thuc_su_nghiep)
+//     -> cuối cảnh chốt ket_thuc_su_nghiep, chung_cong_ty_song rồi dừng
+//   <mã>_3010_danh_gia               (game gọi: kết thúc riêng của vai)
+//   chung_3110_ket_thuc_su_nghiep    (dùng ket_thuc_su_nghiep đã chốt)
 //     -> chung_kt_<id>                (1 trong 6 cảnh kết thúc sự nghiệp)
 //       -> chung_3110_mot_thang_sau   (phần kết "Một tháng sau…")
 //
@@ -83,26 +83,6 @@
     ~ d = 300000
 }
 ~ return d
-
-// Game có thể gọi để biết trước kết thúc sẽ là gì
-=== function chung_tinh_ket_thuc_su_nghiep() ===
-~ temp top10 = chung_top_10_xu_huong || (nguoi_theo_doi >= 1000000 && not chung_scandal_lon_sau_2810)
-{ nguyen_theo_ll:
-    ~ return "bi_cuop_mat"
-}
-{ nguoi_theo_doi >= 1000000 && top10:
-    ~ return "sieu_sao_hang_a"
-}
-{ nguoi_theo_doi >= 800000 && nguyen_thao_mu_dem_hong:
-    ~ return "thao_mu"
-}
-{ nguoi_theo_doi >= 600000 && so_scandal + chung_so_meme >= 3:
-    ~ return "meme_quoc_dan"
-}
-{ chung_scandal_lon_sau_2810 && nguoi_theo_doi < 800000:
-    ~ return "bi_tay_chay"
-}
-~ return "chim_nghim"
 
 // ============================================================
 === chung_3110_dem_hong ===
@@ -289,8 +269,9 @@ _23 giờ 59._
 - else:
     _Bộ đếm dừng ở {chung_so(nguoi_theo_doi)}. Khán đài đã về gần hết. Trên sân khấu chỉ còn pháo giấy và mấy cái ghế nhựa._
 }
+~ chung_chot_ket_thuc_su_nghiep()
 _Màn hình tắt._ # hien_ket_thuc_nhan_vat
--> chung_3110_ket_thuc_su_nghiep
+-> END
 
 = ben_kia_duong
 _Thứ bảy, 31/10/2026. 19 giờ 30. Tầng thượng tòa nhà kính LL-Entertainment._
@@ -306,8 +287,9 @@ _20 giờ. Màn hình LED bật tên bạn. Cùng lúc, bên kia đường, có 
 // ============================================================
 === chung_3110_ket_thuc_su_nghiep ===
 # ngay:31 # gio:23:59 # ket_thuc_su_nghiep
-~ ket_thuc_su_nghiep = chung_tinh_ket_thuc_su_nghiep()
-~ chung_cong_ty_song = ket_thuc_su_nghiep == "sieu_sao_hang_a" || ket_thuc_su_nghiep == "thao_mu" || ket_thuc_su_nghiep == "meme_quoc_dan"
+{ ket_thuc_su_nghiep == "":
+    ~ chung_chot_ket_thuc_su_nghiep()
+}
 { ket_thuc_su_nghiep:
 - "bi_cuop_mat": -> chung_kt_bi_cuop_mat
 - "sieu_sao_hang_a": -> chung_kt_sieu_sao_hang_a
@@ -706,7 +688,7 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
     _{quan_ly_idol} vẫn cầm hai điện thoại. Một cái rung ít hơn trước. Cái còn lại, danh bạ vẫn lưu một cái tên kèm ghi chú "(đừng bắt máy lúc đang họp, mà bắt cũng được)"._
 }
 { vai != "bien_kich":
-    _{bien_kich} {chung_phim_ghi_ten_duy: bắt đầu viết kịch bản thứ hai. Trang đầu ghi: "Đồng tác giả: (để trống, chờ người kể chuyện tiếp theo)."|ngồi ở gác mái số 7 với con mèo Bí. Cuốn tiểu thuyết "Công Ty Là Gia Đình" đã tới chương 31. {dan_dau_tu} nào cũng có người thật. {dan_dau_tu} 31 có cả chính {bien_kich}.}_
+    _{bien_kich} {chung_phim_ghi_ten_duy: bắt đầu viết kịch bản thứ hai. Trang đầu ghi: "Đồng tác giả: (để trống, chờ người kể chuyện tiếp theo)."|ngồi ở gác mái số 7 với con mèo Bí. Cuốn tiểu thuyết "Công Ty Là Gia Đình" đã tới chương 31. Chương nào cũng có người thật. Chương 31 có cả chính {bien_kich}.}_
 }
 { vai != "editor":
     _{editor} vẫn làm đêm. Kênh "Cú Đêm Cắt Ghép" có thêm một video mới, không quảng cáo, không tiêu đề, chỉ có một con cú đội mũ len hồng ngồi cạnh hai cái ly cà phê._

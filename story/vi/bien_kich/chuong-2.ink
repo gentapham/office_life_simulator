@@ -351,7 +351,7 @@ thuc_tap_sinh: Dạ… dạ thẻ của… của ba em ạ! Dạ không, của�
     chi_dai: *(đi ngang bàn bạn)* Gia đình không tính toán từng ngày ha. Lương về rồi đó, nhà văn.
     ~ cang_thang(5)
 }
-* [✍️ Ghi lại cả hai cảnh: thẻ bị từ chối và thẻ kim cương. {dan_dau_tu} 4 đây rồi.]
+* [✍️ Ghi lại cả hai cảnh: thẻ bị từ chối và thẻ kim cương. Chương 4 đây rồi.]
     ~ bk_cam(15)
     ~ bk_trang(4)
     ~ bk_lo(5)

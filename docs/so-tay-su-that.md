@@ -73,7 +73,8 @@
 
 ### Quan hệ tình cảm (chỉ có những cặp này)
 - **Lĩnh → Thái → Phát**: một chiều, ấm áp, chưa có kết quả. Thái là admin ẩn danh "ChuoiChien89" của fan club "Hội Cá Viên Chiên" (khoảng 300 thành viên) của Phát.
-- **Nguyên → Vũ**: Vũ tưởng là chiêu PR. 23/10 Nguyên tỏ tình giữa livestream, hashtag **#VũƠiTrảLờiĐi**. Đêm 27/10 Nguyên nhắn Vũ: *"Em muốn anh ở lại không?"*
+- **Nguyên → Vũ**: **một chiều**. Vũ tin mọi cử chỉ của Nguyên là chiêu PR và không bao giờ đáp lại như người yêu (tối đa là bạn thân). 23/10 Nguyên tỏ tình giữa livestream, hashtag **#VũƠiTrảLờiĐi**; Vũ trả lời "Ý tưởng PR hay đó anh". Đêm 27/10 Nguyên nhắn Vũ: *"Em muốn anh ở lại không?"*, Vũ trả lời như đồng nghiệp.
+- **Nguyên ↔ Mai** (người ngoài công ty): Mai 28 tuổi, cháu gái Bà Bảy, phụ bán ở **quán Chè Bà Bảy** đầu Hẻm 69. Mai là người duy nhất ngoài công ty biết mặt thật Nguyên: Nguyên hay ghé ăn chè lúc khuya khi đã tháo mũ, Mai không biết anh là Siêu Nhân Hồng cho tới 6/10, khi Nguyên (đội mũ) đẩy xe chè của bà ra khỏi ổ gà và Mai nhận ra giọng. Mai không quan tâm người theo dõi, chỉ hỏi "Anh ăn chè gì?". Đây là kết thúc tình cảm duy nhất có hồi đáp của Nguyên ("Nửa Kia Ở Quán Chè").
 
 ### Phe phái & thù hằn
 - Huyền + Quỳnh cùng phe. Studio chung của hai người (nếu có) ở tầng trệt tòa Phố Mới.
@@ -119,8 +120,8 @@
 | 1/10 | Ký hợp đồng 9:00. Hiếu nhận ra Nguyên. Thương nói về trang 47 |
 | 2/10 | Họp chiến dịch. Duy kể lại ý tưởng phim. Huyền hứa 3 nhà tài trợ 2 tỷ từ "Tập đoàn Bánh Tráng Trộn Toàn Cầu (BTT Global)", chủ tịch "Mr. Kevin Trộn" (không có thật) |
 | 4/10 | Ngày Động vật. Hương là người duy nhất Tuất cho tắm. Tuất cướp găng tay hồng của Nguyên. Nguyên giấu con gà cao su của Tuất sau tủ mạng |
-| 6/10 | Nguyên bỏ ngang buổi chụp để giúp bà cụ. Clip này sau đó có lượt xem gấp **12 lần MV** |
-| 9/10 | Ra mắt MV. Hồng Coin ra đời |
+| 6/10 | Khoảng 10:30, Nguyên bỏ ngang buổi chụp để đẩy xe chè của Bà Bảy ra khỏi ổ gà trên Đường Hóng, gần đầu Hẻm 69. Mai nhận ra giọng Nguyên. Clip này sau đó có lượt xem gấp **12 lần MV** |
+| 9/10 | 20:00 ra mắt MV **"Hồng Hóa Việt Nam"** (không phải "Hồng Là Thái Độ", đó là bài bí mật của Long). Hồng Coin ra đời |
 | 11/10 | Ảnh hồi nhỏ. Nguyên có thể đăng ảnh xóm Cây Me có Hiếu lúc nhỏ đang khóc |
 | 12/10 | Lương về. Thẻ phụ của Long bị từ chối (gắn với tài khoản riêng của Thắng). Duy vô tình lộ thẻ kim cương |
 | 13/10 | Ngày Doanh nhân. Huyền tặng Thắng giải "Doanh nhân của năm" giả của BTT, Thắng treo trong phòng |
@@ -209,14 +210,14 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 | Tài khoản riêng của Thắng | Gần như trống từ tháng 8 (còn khoảng 4,2 triệu ngày 12/10). Vì vậy thẻ phụ của Long bị từ chối |
 | Phòng ở Vũng Tàu (bản Tuấn xếp chuẩn) | 201 Duy + Long (Tuất ngủ ké nếu lên xe) · 202 Quỳnh + Huyền · 203 Tuấn · 205 Hiếu + Nguyên · 206 Nhi + Ngân · 207 Hương + Thương. Nếu Tuấn xếp sai: 207 Hương + Nhi. Các lượt chơi khác có thể ghép khác (ví dụ Nhật + Vũ) |
 | Tuất đi lạc, Nguyên bế về | Lần chính: **6/10**, khi Tuất đuổi theo Nguyên. Trong lượt chơi Nguyên có thể xảy ra thêm lần nữa ngày 29/10 |
-| Việc tốt ngày 6/10 của Nguyên | Đẩy xe chè của một bà cụ ra khỏi ổ gà, rồi ăn chè bằng ống hút luồn qua mũ |
+| Việc tốt ngày 6/10 của Nguyên | Đẩy xe chè của **Bà Bảy** ra khỏi ổ gà, rồi ăn chè bằng ống hút luồn qua mũ |
 | Thư "G" ngày 20/10 (phần đọc to) | *"Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."* Phong bì dán kín: tùy lượt chơi, có thể không bao giờ mở, mở mà không tiết lộ, hoặc (kết thúc "Ghế Ai Người Nấy Ngồi" của Thắng) ghi chức danh mới cho Thắng |
 | Sữa Chua Hồng Hào | Do một bà cụ làm chủ. Bà nhớ Nguyên vì từng được Nguyên đẩy xe sữa giữa trời mưa. Lượt nhắc tên tăng 400% sau clip Nguyên vừa sửa mái nhà vừa uống sữa chua. 1 tỷ nếu Huyền kiểm tra ngay, 500 triệu nếu kiểm tra trễ, mất nếu gạt đi |
 | Người đóng "Mr. Kevin Trộn" (23/10) | Ngẫu nhiên giữa Duy, Chương, Bình (hoặc do người chơi chọn ở một số vai) |
 | Giờ đăng bài "chuẩn" của Chương | Mỗi lần Chương nói một giờ khác (19:47, 21:07…). Đó là trò đùa: số liệu của Chương đổi theo tâm trạng |
 | Bài hát của Long | Các file demo đánh số "Rong_demo_01…43". Bản 41 là "Hồng Là Thái Độ" (tên file xuất: "HLTD_demo41"). Bản 42 làm ngày 29/10, bản 43 chỉ có trong kết thúc bí mật |
 | Con cú của Lĩnh | Giấu ở một khung hình trong mọi video Lĩnh dựng: khung 812 (poster), giây 2:47 (MV), khung 1.031 và trên cánh cửa gỗ (video "16 năm"), góc giấy chứng nhận BTT |
-| Thời điểm chốt kết thúc nhân vật | Mọi cảnh `<mã>_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân tối 31/10** (23:00 – 23:45), dùng toàn bộ lựa chọn tới hết 31/10. Một số kết thúc có thể xảy ra sớm khi chỉ số chạm 100 |
+| Thời điểm chốt kết thúc nhân vật | Mọi cảnh `<mã>_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân tối 31/10** (23:00 – 23:45), dùng toàn bộ lựa chọn tới hết 31/10. Không vai nào chốt kết thúc vào 30/10 |
 | Mã người nói phụ | Gom trong [story/ten-nguoi-noi.json](../story/ten-nguoi-noi.json) |
 
 ## 10. Chi tiết bổ sung từ thoại
@@ -280,3 +281,52 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - Kết thúc tốt nhất của Bình: G tặng bác quán trà đá ở cổng sau (quà riêng, không liên quan quyền hạn công ty).
 - Hương có thể dùng mối quen cũ (thợ điện ở Chợ Phố Cũ) để kiếm 2 giàn đèn còn thiếu ngày 28/10. Đóng góp của Hương ở Đại Nhạc Hội Siêu Nhân: +150.000 nếu tiến độ ≥ 80%, +40.000 nếu 50–79%, −100.000 nếu dưới 50% (sập sân khấu).
 - Chương có thể vay Bình thêm 2 triệu ngày 12/10.
+
+## 11. Đồng hồ chung (giờ và nơi chốt cho mọi vai)
+
+Mọi vai nhắc tới các mốc dưới đây phải dùng đúng giờ và đúng nơi. Vai nào không có mặt thì chỉ nghe kể lại.
+
+| Ngày | Giờ | Nơi | Sự kiện |
+|---|---|---|---|
+| 1/10 | 9:00 | Phòng họp tầng 2 | Ký hợp đồng Siêu Nhân Hồng |
+| 2/10 | 9:30 | Phòng họp tầng 2 | Họp chiến dịch |
+| 6/10 | khoảng 10:30 | Đường Hóng, đầu Hẻm 69 | Nguyên đẩy xe chè Bà Bảy, Lĩnh (hoặc người qua đường) quay clip |
+| 9/10 | 20:00 | Kênh Tóp-tóp và Diu-túp của công ty | Ra mắt MV "Hồng Hóa Việt Nam" |
+| 12/10 | 10:00 | Cả công ty | Lương về |
+| 12/10 | 12:30 | Cà Phê Sống Ảo | Thẻ phụ của Long bị từ chối. Ngân, Hiếu, Duy chứng kiến |
+| 15/10 | 8:05 – 17:30 | Cả tòa nhà | Mất điện |
+| 16/10 | 14:00 quay, 20:00 phát sóng | Đài Tivi Hóng | Gameshow |
+| 17/10 | 6:30 xe chạy, 20:00 lửa trại | Vũng Tàu | Du lịch công ty |
+| 18/10 | 6:00 họp bãi biển, 15:00 về tới công ty | Vũng Tàu | Ngày thứ hai |
+| 20/10 | 9:00 tặng hoa · 18:30 · 21:00 | Công ty · Quán Ốc Đêm · Karaoke Chú Sáu | 18:30 Bác Bình đọc thư "G" ở Quán Ốc Đêm, 21:00 karaoke |
+| 22/10 | 9:00 – 16:00 | Phòng kế toán | Đoàn kiểm tra thuế |
+| 23/10 | 20:00 | Studio tầng 2 | Livestream sinh nhật Nguyên |
+| 24/10 | 14:00 | Phòng họp tầng 2 | Họp hòa giải |
+| 25/10 | 10:00 · 15:00 · 20:00 | LL-Entertainment · công ty · Đài Tivi Hóng | Thái tới LL · Nhi phỏng vấn · Sơn thi bán kết |
+| 26/10 | 16:00 | Phòng họp tầng 2 | Chiếu phim "Người Hùng Không Tên" |
+| 27/10 | 11:00 · 15:00 | Văn phòng · sảnh công ty | Cuộc gọi Sữa Chua Hồng Hào · Lưu Lực tới |
+| 28/10 | 02:10 | Kênh của Lĩnh | Video "16 năm" lên sóng 6 phút, khoảng 2.000 lượt xem rồi bị gỡ |
+| 29/10 | 9:00 – 22:47 | Cả tòa nhà | Mất wifi, có lại lúc 22:47 |
+| 30/10 | 14:00 | Phòng họp tầng 2 | Họp đánh giá cuối tháng |
+| 31/10 | 19:30 | Sân khấu Đại Nhạc Hội (quảng trường mới, phía đông bắc) | Đại Nhạc Hội Siêu Nhân, khoảng 50 khán giả đứng sát sân khấu |
+| 31/10 | 20:00 | Đài Tivi Hóng | Sơn thi chung kết (chiếu trên màn hình lớn ở sân khấu) |
+| 31/10 | 23:00 – 23:45 | Tùy vai | Kết thúc từng nhân vật |
+
+## 12. Quy tắc kỹ thuật cho cốt truyện
+
+### Người theo dõi
+- Game tự cộng các sự kiện cố định ở mục 8 (6/10, 9/10, 16/10, 23/10). File thoại của vai **không được cộng lại** các mốc này, chỉ cộng phần chênh do lựa chọn của người chơi (cỡ Nhỏ hoặc Vừa).
+- Chỉ `chung_3110_dem_hong` được cộng điểm Đại Nhạc Hội (+100.000 đến +300.000). Cảnh 31/10 của từng vai không cộng thêm.
+
+### Thứ tự đêm 31/10
+1. `chung_3110_dem_hong`: đêm diễn. Cuối cảnh tính `ket_thuc_su_nghiep` và `chung_cong_ty_song`, rồi dừng.
+2. `<mã>_3010_danh_gia`: kết thúc riêng của vai (3 vui, 3 buồn). Được đọc `ket_thuc_su_nghiep` và `chung_cong_ty_song` để nhắc tới số phận của Nguyên và công ty.
+3. `chung_3110_ket_thuc_su_nghiep`: kết thúc sự nghiệp của Nguyên.
+4. `chung_3110_mot_thang_sau`: một tháng sau.
+
+Cảnh 31/10 của vai **không được** chuyển thẳng sang `_3010_danh_gia`; game tự gọi theo thứ tự trên. Điều kiện kết thúc của vai dùng `ket_thuc_su_nghiep` (ví dụ `ket_thuc_su_nghiep == "sieu_sao_hang_a"`) thay vì so trực tiếp `nguoi_theo_doi >= 1000000`.
+
+### Mỗi vai đúng 6 kết thúc
+- 3 vui, 3 buồn, tất cả **đều đạt được** trong một lượt chơi bình thường. Ngưỡng chỉ số phải nằm trong tầm mà các lựa chọn của vai cộng tới được.
+- Biến quyết định kết thúc phải được đặt ở cảnh chính (không chỉ ở sự kiện ngẫu nhiên, vì game không chạy sự kiện ngẫu nhiên theo lịch).
+- Thứ tự xét: kết thúc đặc biệt, rồi 3 vui, rồi 3 buồn, cuối cùng là một kết thúc mặc định trong 6 kết thúc đó.

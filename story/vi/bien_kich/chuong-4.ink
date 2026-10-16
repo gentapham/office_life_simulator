@@ -318,7 +318,7 @@ ke_toan: Anh ơi… lời nói không phải là hóa đơn đâu anh.
     ~ cang_thang(-15)
     idol_het_thoi: *(bật dậy)* Bài của anh! Để anh hát bè!
     ~ qh("idol_het_thoi", 5)
-* [✍️ Ngồi góc phòng ghi lại hết. {dan_dau_tu} 8 đây rồi.]
+* [✍️ Ngồi góc phòng ghi lại hết. Chương 8 đây rồi.]
     ~ bk_trang(5)
     ~ bk_lo(5)
     ~ bk_cam(15)

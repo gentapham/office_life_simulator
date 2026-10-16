@@ -77,7 +77,7 @@ _Mọi ánh mắt dồn về bạn. {bien_kich} ngồi đối diện, ngừng nh
     ~ qh("bien_kich", -15)
     ~ duy_ngo(-10)
     { co(so_tay_oanh):
-        _Trong balo bạn, cuốn sổ của {bien_kich} vẫn nằm đó. {dan_dau_tu} 14. Bạn không lấy ra. Một bằng chứng đủ rồi._
+        _Trong balo bạn, cuốn sổ của {bien_kich} vẫn nằm đó. Chương 14. Bạn không lấy ra. Một bằng chứng đủ rồi._
     }
 * [🏦 "Dạ… trước khi vô đây, em là trưởng phòng tín dụng ở một ngân hàng ạ."]
     _Lửa trại tắt tiếng. {dan_dau_tu} rơi ly bia. {sales} mở to mắt. {ran_doc} mỉm cười như người vừa trúng số._

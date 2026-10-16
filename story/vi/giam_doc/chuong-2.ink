@@ -196,7 +196,7 @@ ke_toan: *(nhắn)* "Anh nhớ lãi ngân hàng tuần này."
 === giam_doc_0910_ra_mat_mv ===
 # ngay:9 # gio:15:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Tiệc ra mắt MV: trứng luộc, trứng chiên, trứng ốp la xếp hình trái tim hồng._
-_MV "Hồng Là Thái Độ" chiếu trên màn hình lớn. {sieu_nhan_hong} xoay ba vòng, chỉ tay vào ống kính._
+_MV "Hồng Hóa Việt Nam" chiếu trên màn hình lớn. {sieu_nhan_hong} xoay ba vòng, chỉ tay vào ống kính._
 sieu_nhan_hong: Cả nhà thấy em slay hông?!
 _Mọi người vỗ tay. {idol_het_thoi} đứng ở góc, đeo kính đen, khoanh tay._
 idol_het_thoi: Hồi anh ra "Công Viên", cả nước hát trong một tuần. Còn này…

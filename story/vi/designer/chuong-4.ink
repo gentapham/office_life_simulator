@@ -21,7 +21,7 @@ _Cả xe vỗ tay. {chi_dai} nhìn {dan_dau_tu} như nhìn một quả bom đã 
 * [🎨 Ngồi phác thảo cảnh biển qua cửa kính.]
     ~ ds_toi(5)
     bien_kich: *(ghế sau, ngó qua)* Biển này buồn ghê. Cho tui mượn làm mở đầu chương 3 nha.
-    designer: {dan_dau_tu} 3 của cái gì bà?
+    designer: Chương 3 của cái gì bà?
     bien_kich: *(giật mình)* Của… kịch bản. Trò chơi. Tối nay.
 * [💬 Hỏi {dan_dau_tu}: "Anh ơi, x10 rồi bán chưa?"]
     dan_dau_tu: Bán là thua em ơi. Lần này là lên thật. X100.

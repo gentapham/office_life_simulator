@@ -135,7 +135,7 @@ hong_hot: Anh ơi, trend này đang hot! Nhịp 1-2-3-xoay-chỉ tay. Mặc bộ
 // ------------------------------------------------------------
 === sieu_nhan_hong_0910_ra_mat_mv ===
 # ngay:9 # gio:19:00 # noi:studio_tang_2 # bat_buoc
-_Ra mắt MV "Hồng Là Thái Độ". Ngày Trứng Thế giới, căn tin chỉ bán trứng, nên tiệc ra mắt có… trứng ốp la hình trái tim._
+_Ra mắt MV "Hồng Hóa Việt Nam". Ngày Trứng Thế giới, căn tin chỉ bán trứng, nên tiệc ra mắt có… trứng ốp la hình trái tim._
 _Nhạc lên. Bộ đồ hồng lướt giữa phố, khói màu, pháo giấy. Bạn đứng xem chính mình trên màn hình lớn._
 ~ follow(40000)
 giam_doc: Đấy! Đấy là vision!

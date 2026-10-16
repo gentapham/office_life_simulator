@@ -156,7 +156,7 @@ hong_hot: *(nhắn group Anti Sếp)* Ai thấy mặt sếp hồi nãy hông? Tu
 # ngay:8 # gio:14:00 # noi:phong_dung_phim
 _Ngày Thị giác Thế giới. {editor} bị {chi_dai} lôi đi khám mắt, vì mắt đỏ như mắt thỏ sau 3 đêm thức trắng._
 editor: *(ngáp)* {ran_doc} ơi, trông giùm phòng dựng chút. Đang render cái MV. Đừng đụng gì nha. Render xong là xong.
-_Phòng dựng tối om, rèm đen. Thanh tiến trình chạy 63%. Trên màn hình là file MV "Hồng Là Thái Độ" sẽ ra mắt ngày mai._
+_Phòng dựng tối om, rèm đen. Thanh tiến trình chạy 63%. Trên màn hình là file MV "Hồng Hóa Việt Nam" sẽ ra mắt ngày mai._
 _Bên cạnh có một thư mục tên "dung_xoa_ban_loi". Trong đó là bản dựng thử, âm thanh lệch hình 2 giây._
 * [🧨 Đổi tên bản lỗi thành bản chính.]
     ~ rd_doi_file_mv = true
@@ -204,7 +204,7 @@ _Lương tuần thực tập sinh là 1 triệu. Mà ví của {thuc_tap_sinh} t
 // ------------------------------------------------------------
 === ran_doc_0910_ra_mat_mv ===
 # ngay:9 # gio:19:00 # noi:studio_tang_2 # bat_buoc
-_Ra mắt MV "Hồng Là Thái Độ". Cả công ty ngồi trước màn hình chiếu. {sieu_nhan_hong} đứng giữa, tạo dáng chờ._
+_Ra mắt MV "Hồng Hóa Việt Nam". Cả công ty ngồi trước màn hình chiếu. {sieu_nhan_hong} đứng giữa, tạo dáng chờ._
 { rd_doi_file_mv:
     _Nhạc lên. Hình lên… chậm hơn nhạc 2 giây. {sieu_nhan_hong} hô "Biến hình!" mà miệng vẫn còn ngậm._
     editor: *(bật dậy)* Cái gì vậy?! Đây là bản lỗi! Ai đổi file của tui?!

@@ -36,7 +36,7 @@ _Quá chi tiết. Ngày quá hạn, số biệt thự, cả tên chi nhánh. Nh�
 // ------------------------------------------------------------
 === hong_hot_2110_tra_voi_hr ===
 # ngay:21 # gio:14:00 # noi:phong_hr # bat_buoc
-_Phòng HR. Ấm trà Ô {con_ong_chau_cha}. {hr} mỉm cười, rót trà cho bạn._
+_Phòng HR. Ấm trà Ô Long. {hr} mỉm cười, rót trà cho bạn._
 hr: Em {hong_hot}. Anh chỉ muốn lắng nghe em thôi. Em có biết ai là admin trang Confession không?
 * [😇 "Dạ em đâu biết đâu anh. Em lo fanpage công ty còn hông kịp."]
     { hh_lo_admin < 50:

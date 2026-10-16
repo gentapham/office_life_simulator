@@ -68,7 +68,7 @@ _Lần đầu tiên, tin nóng nhất công ty có tên bạn trong đó._
 _Ngày Internet Quốc tế. Wifi sập cả ngày. Cả công ty đứng hình. Video của {editor} kẹt ở 99%. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy._
 _Cả công ty đi tìm {it}. Không ai biết {it} ở đâu. Trừ bạn: phòng server._
 _Bạn có 4G. 30GB. Ba cục pin dự phòng._
-chua_te_deadline: {hong_hot} ơi! Ét o ét! Không có wifi tui hông gửi file cho phòng dựng được! {idol_het_thoi} 4G cho tui đi, tui đội ơn bà!
+chua_te_deadline: {hong_hot} ơi! Ét o ét! Không có wifi tui hông gửi file cho phòng dựng được! Phát 4G cho tui đi, tui đội ơn bà!
 * [📶 "Ok, tui đặt mật khẩu 'nghegichua'. Ai cần thì vô."]
     ~ hh_phat_wifi_ca_cty = true
     _Cả công ty dùng 4G của bạn. Chiến dịch không đứng hình. Pin cạn lúc 16:00._

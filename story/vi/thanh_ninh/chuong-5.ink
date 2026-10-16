@@ -39,7 +39,7 @@ _9 giờ 30. Sếp bước vào, không nhìn bạn. Cửa kính đóng lại. M
 // ------------------------------------------------------------
 === thanh_ninh_2110_tra_voi_tuan ===
 # ngay:21 # gio:14:00 # noi:phong_hr
-_Phòng HR. Ấm trà Ô {con_ong_chau_cha}. {hr} mỉm cười._
+_Phòng HR. Ấm trà Ô Long. {hr} mỉm cười._
 hr: Em {thanh_ninh}. Anh chỉ muốn lắng nghe em thôi. Trong công ty, ai đọc được email của sếp?
 * [🙇 "Dạ… em. Sếp nhờ em lọc thư mà anh. Sếp tin em lắm."]
     hr: Anh biết. Vì vậy anh mới mời em đầu tiên.

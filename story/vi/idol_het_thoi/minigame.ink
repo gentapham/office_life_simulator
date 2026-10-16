@@ -15,7 +15,7 @@ _Sảnh tiệc cưới. Cổng hoa, đèn chớp, MC thử micro "a lô a lô". 
 - 2:
     _Bảng ghi: "Ngọc Hân & Văn Hải". Phù dâu tên Ngọc Hằng. Ai đặt tên vậy trời._
 - else:
-    _Bảng ghi: "Kim {hong_hot} & {it} Long". Chú rể có người anh song sinh tên {it} Lân, đứng ngay cạnh._
+    _Bảng ghi: "Kim Ngân & Bảo Long". Chú rể có người anh song sinh tên Bảo Lân, đứng ngay cạnh._
 }
 quan_ly_idol: *(đưa bạn chai nước)* Nhịp chậm, đừng chen nốt. Tới đoạn chúc mừng nhớ đọc ĐÚNG tên. Mẹ cô dâu ngồi bàn đầu, bà nhìn dữ lắm.
 * [🎤 Lên sân khấu.]

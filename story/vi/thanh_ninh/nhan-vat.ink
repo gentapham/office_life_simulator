@@ -208,7 +208,7 @@ ke_toan: {thanh_ninh}. Hóa đơn tiền trà sen tháng này đâu em?
 === thanh_ninh_tudo_hr ===
 # npc:hr
 hr: {thanh_ninh} à, em rảnh không, lên phòng anh uống trà xíu.
-_Câu nói đáng sợ nhất công ty. Nhưng đây là trà Ô {con_ong_chau_cha}, loại sếp thích._
+_Câu nói đáng sợ nhất công ty. Nhưng đây là trà Ô Long, loại sếp thích._
 * [🙇 "Dạ anh pha trà khéo quá anh ơi, em học hỏi!"]
     hr: Anh chỉ muốn lắng nghe em thôi. Gần đây em có… đi đâu xa không? Ven Đô chẳng hạn?
     _Ven Đô. Nơi có tòa nhà kính xanh lá chuối._

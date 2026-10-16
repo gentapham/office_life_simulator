@@ -41,7 +41,7 @@ _Ngày Internet Quốc tế. 8 giờ 10. Wifi sập. Cả tòa nhà. Không mộ
 _Bạn nghe tiếng bước chân dồn dập từ tầng 2 xuống: {truong_phong}, {hong_hot}, {sales}, {dan_dau_tu}, {chua_te_deadline}…_
 hong_hot: ANH {it}! Chiến dịch đứng hình rồi! Fanpage không đăng được! Tóp-tóp không lên!
 editor: *(mắt đỏ)* Video "16 năm"… kẹt ở 99%… anh {it} ơi…
-* [📱 {idol_het_thoi} 4G từ điện thoại cho máy của {hong_hot} trước.]
+* [📱 Phát 4G từ điện thoại cho máy của {hong_hot} trước.]
     hong_hot: Được rồi! Để tui phát tiếp cho cả phòng. Mật khẩu: "nghegichua"!
     _Mạng tạm bợ chạy được. Chiến dịch nhích từng bước như người bò trong sa mạc._
     ~ follow(5000)

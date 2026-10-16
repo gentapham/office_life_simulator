@@ -25,26 +25,6 @@
 //      npc_cam_do (Chủ tiệm cầm đồ Cứu Nguy), npc_cong_an (Anh công an phường).
 // ============================================================
 
-// ---------- Biến cho Đại Nhạc Hội Siêu Nhân & kết thúc sự nghiệp ----------
-// Nguyên đã vào top 10 xu hướng (game đặt khi đạt, ví dụ Tiến Độ Đại Nhạc Hội Siêu Nhân ≥ 80%)
-VAR chung_top_10_xu_huong = false
-// Có scandal lớn bị bóc sau ngày 28/10 (vụ fan ảo, email Nhi, Hồng Coin...)
-VAR chung_scandal_lon_sau_2810 = false
-// Số lần Siêu Nhân Hồng thành meme trong tháng (té khi nhảy, bị Tuất đuổi trên sóng...)
-VAR chung_so_meme = 0
-// Long công khai là tác giả, "Hồng Là Thái Độ" được hát ở Đại Nhạc Hội Siêu Nhân
-VAR chung_hat_hong_la_thai_do = false
-// Phim "Người Hùng Không Tên" ghi đúng tên Duy ở dòng ý tưởng
-VAR chung_phim_ghi_ten_duy = false
-// Video "16 năm" của Lĩnh chiếu được (false nếu kẹt 99% mà không ai cứu)
-VAR chung_video_16_nam = true
-// Tiến độ Đại Nhạc Hội Siêu Nhân của Hương, 0..100
-VAR chung_tien_do_dem_hong = 70
-// File nhân vật đã tự hỏi chuyện tháo mũ rồi thì đặt true để Đại Nhạc Hội Siêu Nhân chung không hỏi lại
-VAR chung_da_chon_thao_mu = false
-// Công ty còn sống sau Đại Nhạc Hội Siêu Nhân (do chung_3110_ket_thuc_su_nghiep tính)
-VAR chung_cong_ty_song = false
-
 // ---------- Tuổi ----------
 === function chung_tuoi(ma) ===
 { ma:

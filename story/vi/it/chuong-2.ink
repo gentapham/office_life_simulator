@@ -213,7 +213,7 @@ hong_hot: Anh {it}! Hình đang giật! Mặt Siêu Nhân Hồng đứng hình g
             ~ follow(10000)
         }
     }
-* [📱 {idol_het_thoi} 4G từ điện thoại của bạn cho máy livestream.]
+* [📱 Phát 4G từ điện thoại của bạn cho máy livestream.]
     _Bạn bật điểm phát sóng. Livestream chạy tiếp, mượt. Gói 4G của bạn chết lúc 20:47, nhưng đã đủ._
     ~ follow(25000)
     ~ qh("hong_hot", 10)
