@@ -94,7 +94,7 @@ export class Game3D {
     this._keydown = e => {
       if (e.target.closest?.("input, textarea")) return;
       this.phim[e.code] = true;
-      if (this.khoa) return;
+      if (this.khoa || e.repeat) return; // giữ phím không lặp lại thao tác
       if (e.code === "KeyV") this.doiGoc();
       if (e.code === "KeyE" || e.code === "Enter") this.tuongTac();
     };
@@ -280,6 +280,9 @@ export class Game3D {
     return gan;
   }
   tuongTac() {
+    const bayGio = performance.now();
+    if (bayGio - (this._lanTT || 0) < 450) return; // chống bấm dồn dập
+    this._lanTT = bayGio;
     const g = this.timTuongTac(); if (!g) return;
     this.tay.voiRa(1); setTimeout(() => !this.khoa && this.tay.voiRa(0), 400);
     if (g.loai === "npc") {

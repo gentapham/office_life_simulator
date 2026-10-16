@@ -729,10 +729,21 @@ async function render3D() {
   };
   const TEN_CHI_SO = { stress: "Stress", nang_luong: "Năng lượng", khat: "Nước", no: "No" };
   let soCaPhe = 0;
+  // thời gian chờ giữa hai lần dùng cùng một thứ (giây), như ngoài đời
+  const CHO_DUNG = { meo: 25, ca: 20, chim: 30, wc: 60, tieu: 60, rua_mat: 30, uong_nuoc: 8, tu_lanh: 90, mi_ly: 90, ca_phe: 20, trai_cay: 30, tra_bac_binh: 45, banh_mi: 30, hu_tieu: 45, nuoc_mia: 20, che: 30, tra_da: 15 };
+  const CAU_CHO = { meo: "Mèo vừa được vuốt rồi, nó đang ngúng nguẩy. Để nó yên một lát.", ca: "Cá vẫn bơi vậy thôi. Lát quay lại ngắm tiếp.", chim: "Bồ câu đang no, chưa thèm vụn bánh mì nữa.", wc: "Vừa đi vệ sinh xong rồi.", tieu: "Vừa đi vệ sinh xong rồi.", rua_mat: "Mặt còn ướt nhẹp, rửa nữa thì tróc da.", tra_bac_binh: "Bác Bình: \"Từ từ cháu, ấm trà đang pha lại.\"" };
+  const lanDung = new Map();
   g.onDoVat = v => {
     const d = DUNG_DO[v.loai]; if (!d) return;
+    const khoa = v.loai + ":" + (v.meo?.ten || `${Math.round(v.x ?? 0)},${Math.round(v.z ?? 0)}`);
+    const conCho = (CHO_DUNG[v.loai] || 10) * 1000 - (Date.now() - (lanDung.get(khoa) || 0));
+    if (conCho > 0) { thongBao3D(CAU_CHO[v.loai] || `Vừa ${(d.chu || "dùng").toLowerCase()} xong. Đợi khoảng ${Math.ceil(conCho / 1000)} giây nữa.`); return; }
+    // no quá thì không ăn nổi, không khát thì không uống
+    const tang = Object.entries(d.doi).filter(([k, x]) => (k === "no" || k === "khat") && x > 0);
+    if (tang.length && tang.every(([k]) => (Number(L.v(k)) || 0) >= 95)) { thongBao3D(tang[0][0] === "no" ? "No căng bụng rồi, ăn nữa là bể bụng." : "Không khát nữa. Uống thêm chỉ chạy WC."); return; }
     const gia = v.gia ?? d.gia ?? 0, tien = Number(L.v("tien")) || 0;
     if (gia > tien) { thongBao3D(`Không đủ tiền. Ví còn ${tien.toLocaleString("vi-VN")}đ.`); return; }
+    lanDung.set(khoa, Date.now());
     const lam = cb => d.chu ? chuyenCanh(d.chu + "…", cb) : cb(); // vuốt mèo, ngắm cá, trà đá: làm ngay
     lam(() => {
       const doi = { ...d.doi };
@@ -754,9 +765,14 @@ async function render3D() {
     kt.dong(); clearInterval(timerHandle); g.datKhoa(false); app.querySelector(".g3d")?.classList.remove("dang-thoai");
     if (!g.dienThoai && daVao && document.pointerLockElement !== g.canvas) bamTiep.hidden = false;
   };
+  // thông báo: câu đang hiện thì không lặp lại (chỉ gia hạn), tối đa 3 dòng cùng lúc
   thongBao3D = text => {
-    const el = h("div", {}, text); toast.append(el);
-    setTimeout(() => el.classList.add("het"), 2600); setTimeout(() => el.remove(), 3200);
+    const cu = [...toast.children].find(x => x.textContent === text && !x.classList.contains("het"));
+    const henGio = el => { clearTimeout(el._t1); clearTimeout(el._t2); el._t1 = setTimeout(() => el.classList.add("het"), 2600); el._t2 = setTimeout(() => el.remove(), 3200); };
+    if (cu) { henGio(cu); return; }
+    const el = h("div", {}, text); toast.append(el); henGio(el);
+    const conHien = [...toast.children].filter(x => !x.classList.contains("het"));
+    for (const x of conHien.slice(0, Math.max(0, conHien.length - 3))) { x.classList.add("het"); setTimeout(() => x.remove(), 400); }
   };
   const datMucTieuHUD = (chu, phu) => { mtChu.textContent = chu; mtPhu.textContent = phu || ""; mucTieu.hidden = !chu; };
   const chuyenCanh = (chu, xong) => {
@@ -855,6 +871,7 @@ let moHoiThoai = () => {}, dongHoiThoai = () => {}, thongBao3D = () => {}, nextS
 // Phím tắt bản 3D: Space/Enter đọc tiếp, 1-9 chọn, H lịch sử, Tab chỉ số
 addEventListener("keydown", e => {
   if (CHE_DO !== "3d" || e.target.closest?.("input, textarea")) return;
+  if (e.repeat && e.code !== "Tab") return; // giữ phím không tua thoại hay chọn liên tục
   if (e.code === "Tab") { e.preventDefault(); UI.bangChiSo?.(); return; }
   if (e.code === "KeyH" && G?.khoa) { e.preventDefault(); UI.lichSu?.(); return; }
   if (!G?.khoa || e.target.closest?.("button")) return;
