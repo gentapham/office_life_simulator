@@ -490,7 +490,7 @@ function runStory(story, playerCode, onEnd) {
       if (CHE_DO === "3d" && UI.khiHienLuaChon) UI.khiHienLuaChon(chay); else chay();
       henGio = null;
     }
-    choices.forEach((c, i) => UI.choices.append(h("button", { class: "choice", onclick: () => pick(i) }, c.text)));
+    choices.forEach((c, i) => UI.choices.append(h("button", { class: "choice", onclick: () => pick(i) }, c.text.replace(/\*\(([^)]*)\)\*/g, "($1)"))));
   };
   const pick = i => {
     clearInterval(timerHandle);
@@ -1099,8 +1099,10 @@ function taoKhungThoai(log, luaChon) {
   const tiep = () => { if (hang.length) hien(hang.shift()); capNhat(); };
   const boQua = () => { if (hang.length) { hien(hang[hang.length - 1]); hang = []; } capNhat(); };
   new MutationObserver(ds => {
-    for (const d of ds) for (const n of d.addedNodes) { const c = doc(n); if (c) hang.push(c); }
-    if (!coCau && hang.length) hien(hang.shift());
+    let vuaChon = false;
+    for (const d of ds) for (const n of d.addedNodes) { if (n.matches?.(".chosen")) { vuaChon = true; hang = []; continue; } const c = doc(n); if (c) hang.push(c); }
+    // vừa chọn đáp án: hiện ngay câu tiếp theo, không phải bấm thêm
+    if ((!coCau || vuaChon) && hang.length) hien(hang.shift());
     capNhat();
   }).observe(log, { childList: true });
   const kt = {
