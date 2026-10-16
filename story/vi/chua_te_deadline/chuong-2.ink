@@ -33,39 +33,18 @@ truong_phong: Rồi. {chua_te_deadline}, cậu báo cáo tiến độ MV đi. Ng
     ~ vu_so_lan_ne_nhat++
     _Bạn lên sân thượng. Trên ghế nhựa, {ran_doc} đang ngồi bấm điện thoại, ngẩng lên cười._
     ran_doc: Ủa, ông cũng trốn họp hả? Nói nhỏ thôi nha, tui hổng nói ai đâu.
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
     ~ qh("truong_phong", -5)
 - -> END
 
 // ------------------------------------------------------------
-=== chua_te_deadline_0510_hoa_nha_giao ===
-# ngay:5 # gio:11:00 # noi:ban_lam_viec
-_Ngày Nhà giáo Thế giới. {thuc_tap_sinh} đi một vòng tặng hoa cho từng "thầy cô" trong phòng. Tới bàn bạn, {thuc_tap_sinh} cúi đầu rất thấp._
-thuc_tap_sinh: Dạ em cảm ơn anh {chua_te_deadline} đã dạy em nhiều điều ạ.
-_Tuần rồi bạn đã dạy {thuc_tap_sinh} đúng một điều: cách mua 22 ly cà phê._
-* [😅 "Anh {thuc_tap_sinh} lớn hơn tui 2 tuổi mà, thôi kỳ lắm."]
-    thuc_tap_sinh: Dạ ở đây anh là tiền bối mà anh.
-    ~ qh("thuc_tap_sinh", 5)
-* [🤝 Nhận hoa, rồi chỉ {thuc_tap_sinh} cách đặt tên file cho đàng hoàng.]
-    _Lần đầu tiên bạn dạy {thuc_tap_sinh} một điều có ích: "final" là để người khác viết, mình đừng viết._
-    thuc_tap_sinh: *(ghi vào sổ)* Dạ… "final là để người khác viết". Hay quá anh.
-    ~ qh("thuc_tap_sinh", 10)
-    ~ uy_tin = uy_tin + 2
-* [🙏 Nhận hoa, rồi "nhân tiện anh chép giùm em cái lịch quay tuần này".]
-    ~ vu_so_lan_nho_xiu++
-    ~ vu_nho_duy++
-    thuc_tap_sinh: Dạ em làm liền ạ!
-    ~ qh("thuc_tap_sinh", -5)
-- -> END
-
-// ------------------------------------------------------------
 === chua_te_deadline_0610_chup_poster ===
-# ngay:6 # gio:09:40 # noi:studio_tang_2 # bat_buoc
+# ngay:6 # gio:10:30 # noi:studio_tang_2 # bat_buoc
 _Buổi chụp poster đầu tiên. {designer} đã chuẩn bị 3 phông, {thuc_tap_sinh} cầm tấm hắt sáng, {it} lo đèn, {quan_ly_idol} cầm 2 điện thoại._
-_9 giờ 40. {sieu_nhan_hong} đang tạo dáng thứ 14 thì nhìn ra cửa sổ, thấy một bà cụ đẩy xe ve chai lên dốc._
+_10 giờ 30. {sieu_nhan_hong} đang tạo dáng thứ 14 thì nhìn ra cửa sổ: dưới Đường Hóng, ngay đầu Hẻm 69, xe chè của Bà Bảy sụp một bánh xuống ổ gà._
 sieu_nhan_hong: Điều khoản số 3! Hồng đi đây! *(phóng qua cửa sổ… à không, phóng xuống cầu thang)*
-quan_ly_idol: Khoan, anh nghe máy chút… Ủa NGUYÊN ĐÂU RỒI?
-_Studio thuê theo giờ. {it} phải đi lắp mạng lúc 10 giờ 30. {designer} có lịch nộp banner 11 giờ. Mọi ánh mắt dồn về bạn._
+quan_ly_idol: Khoan, anh nghe máy chút… Ủa {sieu_nhan_hong} ĐÂU RỒI?
+_Studio thuê theo giờ. {it} phải đi lắp mạng lúc 11 giờ. {designer} có lịch nộp banner 11 giờ 30. Mọi ánh mắt dồn về bạn._
 designer: {chua_te_deadline}, tính sao ông? 15 phút. # hen_gio:8
 * [🧯 "Chụp {cho} trước! Poster teaser: 'Siêu Nhân Hồng đang bận cứu người'."]
     _{cho} được đặt lên ghế. Nó nhìn ống kính bằng ánh mắt khinh bỉ cả thế giới. Tấm ảnh đẹp không tưởng._
@@ -78,24 +57,24 @@ designer: {chua_te_deadline}, tính sao ông? 15 phút. # hen_gio:8
     ~ vu_so_lan_nho_xiu++
     ~ vu_nho_duy++
     thuc_tap_sinh: Dạ em làm liền ạ! *(cầm nguyên tấm hắt sáng chạy theo)*
-    _20 phút sau, {thuc_tap_sinh} quay về, thở không ra hơi, đưa điện thoại. Clip rung như động đất, nhưng thật tới nao lòng._
-    ~ follow(30000)
+    _20 phút sau, {thuc_tap_sinh} quay về, thở không ra hơi, đưa điện thoại. Clip rung như động đất, nhưng thật tới nao lòng: góc thứ hai của vụ đẩy xe chè, gửi {hong_hot} đăng kèm._
+    ~ follow(15000)
     ~ qh("thuc_tap_sinh", 3)
 * [⏱️ (Không chọn kịp)]
     _Cả đoàn đứng chờ. Studio tính tiền thêm 1 tiếng. {ke_toan} sẽ hỏi hóa đơn._
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
+    ~ vu_nuoc(10)
     ~ qh("designer", -5)
     ~ uy_tin = uy_tin - 5
-- _Nửa tiếng sau {sieu_nhan_hong} quay về, mồ hôi ướt đẫm bộ đồ, tay cầm bịch bánh chuối chiên của bà cụ cho._
-sieu_nhan_hong: Xin lỗi cả nhà! Bà cụ cho bánh nè. *(đưa riêng cho bạn cái to nhất)* Cái này… cho producer.
-* [🍌 Nhận, ăn luôn.]
+- _Nửa tiếng sau {sieu_nhan_hong} quay về, mồ hôi ướt đẫm bộ đồ, ống hút còn cắm qua khe mũ, tay xách mấy ly chè đậu Bà Bảy gửi. Cô bán chè đứng dưới đường nhìn lên cửa sổ studio một lúc rồi mới quay đi._
+sieu_nhan_hong: Xin lỗi cả nhà! Bà cho chè nè. *(đưa riêng cho bạn ly đầy nhất)* Ly này… cho producer.
+* [🥤 Nhận, ăn luôn.]
     ~ an(15)
-    ~ vu_tin_that_long = vu_tin_that_long + 3
+    ~ vu_tin(3)
     sieu_nhan_hong: Ngon hông? *(hỏi nhỏ, không tạo dáng)*
-* [📸 "Anh cầm bánh tạo dáng cái, đăng story là đẹp."]
+* [📸 "Anh cầm ly chè tạo dáng cái, đăng story là đẹp."]
     sieu_nhan_hong: À… ừ. Biến hình! *(tạo dáng, nhưng hơi chậm)*
     ~ follow(3000)
-    ~ vu_tin_that_long = vu_tin_that_long - 2
+    ~ vu_tin(-2)
 - -> END
 
 // ------------------------------------------------------------
@@ -118,11 +97,11 @@ _Mốc 1: 50.000 người theo dõi. {hong_hot} cầm điện thoại đứng gi
 = chua_te_deadline_0710_qua_moc
 sieu_nhan_hong: *(ló đầu vào cửa)* Qua mốc rồi hả? Vì công lý và lượt view!
 * [😎 "Thấy chưa, chill là kịp hết."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
     truong_phong: Lần này may thôi, {chua_te_deadline}.
 * [🤝 "Nhờ cái clip giúp bà cụ đó anh. Anh làm thật nên người ta thích thật."]
     sieu_nhan_hong: *(đứng im, quên tạo dáng)* … Thiệt hả em?
-    ~ vu_tin_that_long = vu_tin_that_long + 5
+    ~ vu_tin(5)
     ~ qh("sieu_nhan_hong", 5)
 - -> END
 
@@ -146,7 +125,7 @@ _Giờ thứ 2. {editor} ngủ gục. {dan_dau_tu} mở chart dưới gầm bàn
 // ------------------------------------------------------------
 === chua_te_deadline_0810_linh_kham_mat ===
 # ngay:8 # gio:19:00 # noi:phong_dung_phim # bat_buoc
-_Ngày Thị giác Thế giới. Đêm nay phải dựng xong MV để sáng mai ra mắt. Điện thoại rung._
+_Ngày Thị giác Thế giới. Đêm nay phải dựng xong MV "Hồng Hóa Việt Nam", 8 giờ sáng mai gửi bản cuối cho {hong_hot} lên lịch, 20 giờ tối mai ra mắt. Điện thoại rung._
 editor: *(gọi điện, ngáp)* Tui đang ở phòng khám nè. Bác sĩ nói mắt tui như mắt người 60 tuổi. Cấm nhìn màn hình 3 ngày.
 _Bạn nhìn đồng hồ: 19 giờ. Nhìn phần mềm dựng phim trên máy {editor}: 47 lớp hình, 12 lớp nhạc. Bạn chưa bao giờ mở nó quá 10 phút._
 * [🙏 "Ông nhắm một mắt dựng thôi, mắt kia để mai nghỉ."]
@@ -186,27 +165,26 @@ _7 giờ 58. 99%. Điện thoại rung: {truong_phong} gọi._ # hen_gio:6
 * [📤 Bấm "Gửi" đúng 7:59, không nghe máy.]
     { vu_nuoc_toi_chan >= 80 && RANDOM(1, 10) <= 2:
         _Gửi lúc 7:59! Nhưng… lỗi phút chót: 3 giây cuối MV là màn hình đen có chữ "nhớ xóa dòng này"._
-        ~ follow(25000)
-        hong_hot: ÔNG ƠI CÁI DÒNG CUỐI! Ủa mà khoan, cư dân mạng tưởng cố ý, đang khen "meta" kìa!
+        hong_hot: ÔNG ƠI CÁI DÒNG CUỐI! Thôi khỏi sửa, tui để vậy, tối nay ai thấy thì tưởng cố ý.
         ~ vu_mv_dung_ngay = true
     - else:
         _7:59:00. Gửi. Bạn ngả ra ghế. Nước tới chân mới nhảy, mà nhảy là phải đẹp._
         ~ vu_mv_dung_ngay = true
     }
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 20
+    ~ vu_nuoc(-20)
 * [📞 Nghe máy {truong_phong} trước.]
     truong_phong: Cậu xong chưa? Tớ chỉ hỏi thôi. Không có ý gì.
     _Trong lúc {truong_phong} "chỉ hỏi thôi" trong 4 phút, thanh xuất file treo ở 99%._
-    _8 giờ 03 mới gửi được. Trễ 4 phút, nhưng {hong_hot} vẫn đăng kịp trong ngày._
+    _8 giờ 03 mới gửi được. Trễ 4 phút, nhưng {hong_hot} vẫn lên lịch kịp 20 giờ._
     ~ vu_mv_dung_ngay = true
     ~ qh("truong_phong", 3)
     ~ uy_tin = uy_tin - 3
 * [⏱️ (Không chọn kịp)]
     _Bạn ngủ gục lên bàn phím, đúng phím Esc. Thanh xuất file biến mất._
-    _MV phải xuất lại từ đầu. Ra mắt trễ 1 ngày. {hong_hot} phải đăng bài xin lỗi lúc 9 giờ._
-    ~ follow(-25000)
+    _MV phải xuất lại từ đầu. 19 giờ 50 mới xong, bỏ luôn khâu chỉnh màu. 20 giờ MV vẫn lên sóng, hồng hơi ngả cam._
+    ~ follow(-15000)
     ~ uy_tin = uy_tin - 10
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
+    ~ vu_nuoc(10)
 - ~ nghi(-30)
 -> END
 
@@ -214,25 +192,23 @@ _7 giờ 58. 99%. Điện thoại rung: {truong_phong} gọi._ # hen_gio:6
 === chua_te_deadline_0910_mv_ra_mat ===
 # ngay:9 # gio:12:10 # noi:can_tin
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng: trứng luộc, trứng chiên, trứng ốp la, trứng "đặc biệt" (là trứng luộc cắt đôi)._
-_Trên màn hình tivi căn tin, MV đầu tiên của Siêu Nhân Hồng đang chạy. Lượt xem nhảy liên tục._
+_Trên màn hình tivi căn tin, kênh Tóp-tóp của công ty đang chạy đồng hồ đếm ngược: "20:00 TỐI NAY – HỒNG HÓA VIỆT NAM"._
 { vu_mv_dung_ngay:
-    ~ follow(40000)
-    hong_hot: 200 nghìn lượt xem sau 4 tiếng! Ét o ét, tui hông theo kịp bình luận nữa!
+    hong_hot: Bản cuối tui nhận rồi nha! 20 giờ lên sóng. LL mà chơi xấu là tui chiến!
 - else:
-    ~ follow(15000)
-    hong_hot: Xin lỗi xong rồi mới đăng nên người ta… hơi nguội. Nhưng vẫn lên nha!
+    hong_hot: Ông xuất lại kịp 20 giờ hông đó? Tui đăng đồng hồ đếm ngược rồi á!
 }
 idol_het_thoi: *(kính đen, nhìn tivi)* MV gì mà không có nốt cao nào. Hồi anh còn nổi…
 _Bên cạnh bạn, một hộp cơm trứng màu hồng. Có tờ giấy: "Producer ăn trứng cho có sức. Hôm nay ngày Trứng mà."_
 ~ vu_qua_hong++
 * [🍳 Ăn hộp cơm, chụp hình gửi {hong_hot}: "Content couple tập 3 nè."]
     ~ an(50)
-    ~ vu_tin_that_long = vu_tin_that_long - 3
+    ~ vu_tin(-3)
     hong_hot: Tui đã nói tui hông có lên kịch bản gì hết mà ông!
     _Bạn không tin. Bạn ăn hết hộp cơm. Ngon thiệt._
 * [🍳 Ăn hộp cơm, không chụp hình.]
     ~ an(50)
-    ~ vu_tin_that_long = vu_tin_that_long + 3
+    ~ vu_tin(3)
     _Lần đầu tiên bạn ăn một món quà hồng mà không nghĩ tới chuyện đăng nó lên đâu._
 * [🤝 Chia nửa hộp cho {idol_het_thoi}.]
     ~ an(25)
@@ -255,7 +231,7 @@ editor: File gốc tháng 6 đâu ông?
 * [🧯 "À, nó nằm trong ổ cứng ngoài ở nhà tui. Mai tui mang."]
     editor: Ờ. *(gật đầu, nhưng không quay lại màn hình)*
     ~ vu_lo_file = vu_lo_file + 5
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
 * [⏳ "Đang render lại bản chất lượng cao, ông chờ tui tuần sau."]
     { RANDOM(1, 10) <= 4:
         editor: Render file gốc? File gốc thì render cái gì? *(nheo mắt)*
@@ -311,14 +287,14 @@ _Dưới ảnh, {sieu_nhan_hong} nhắn riêng cho bạn: "Còn em hồi nhỏ t
 * [📷 Gửi ảnh mình hồi 5 tuổi ngủ gục trên bài tập.]
     sieu_nhan_hong: Trời ơi dễ thương. Từ 5 tuổi đã để bài tập tới phút chót rồi hả?
     _Bạn bật cười. Thật._
-    ~ vu_tin_that_long = vu_tin_that_long + 5
+    ~ vu_tin(5)
 * [😎 "Ảnh em hồi nhỏ là bí mật quốc gia nha anh."]
     sieu_nhan_hong: Vậy anh chờ. Anh quen chờ rồi.
-    ~ vu_tin_that_long = vu_tin_that_long + 2
+    ~ vu_tin(2)
 * [📱 "Anh đăng ảnh này lên page đi, content nostalgia đang trend."]
     sieu_nhan_hong: … Ờ ha. Để anh gửi {hong_hot}.
     ~ follow(5000)
-    ~ vu_tin_that_long = vu_tin_that_long - 2
+    ~ vu_tin(-2)
 - -> END
 
 // ------------------------------------------------------------
@@ -332,7 +308,7 @@ truong_phong: Tuần này là tuần gameshow. Thứ 6, 16/10, Đài Tivi Hóng.
     truong_phong: Thứ 5. Tớ ghi rồi đấy nhé. Tớ ghi bằng mực không xóa được.
     ~ vu_chuoi_ngay_it_luot = vu_chuoi_ngay_it_luot + 1
 * [🌊 "Dạ, 8 giờ 59 thứ 6 em nộp. Đúng phong cách."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
+    ~ vu_nuoc(10)
     truong_phong: Tớ không hiểu sao cậu nói câu đó với vẻ tự hào thế.
     ~ qh("truong_phong", -5)
 * [🙏 "Anh {editor} với chị {bien_kich} viết giùm phần câu hỏi rồi á anh."]
@@ -341,31 +317,28 @@ truong_phong: Tuần này là tuần gameshow. Thứ 6, 16/10, Đài Tivi Hóng.
     editor: *(ngáp)* Tui là dựng phim mà ông…
     ~ qh("bien_kich", -3)
     ~ qh("editor", -5)
-- _Giữa cuộc họp, điện thoại cả phòng cùng rung một lúc. "Tài khoản của quý khách vừa được cộng…". Lương về!_
+- _10 giờ, giữa cuộc họp, điện thoại cả phòng cùng rung một lúc. "Tài khoản của quý khách vừa được cộng…". Lương về!_
 _Cả phòng reo lên như vừa ghi bàn. {truong_phong} cố gắng giữ trật tự 4 giây rồi bỏ cuộc._
 ~ tien_cong(3000000)
 -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_1210_luong_ve ===
-# ngay:12 # gio:12:15 # noi:nha_hang_gan_cong_ty
-_Lương về. {con_ong_chau_cha} rủ cả phòng đi ăn nhà hàng "anh bao"._
-_Tới lúc tính tiền, thẻ phụ của {con_ong_chau_cha} bị từ chối. Thẻ đó gắn với tài khoản riêng của {giam_doc}._
-con_ong_chau_cha: Ủa? Sao kỳ vậy. Để anh gọi chú anh…
-_{con_ong_chau_cha} gọi. {giam_doc} không nghe máy. Cả bàn im lặng. Rồi {thuc_tap_sinh} rút ví, để lộ ra một góc thẻ lấp lánh như kim cương, rồi nhét vội vào lại._
-* [💬 "Ủa anh {thuc_tap_sinh}, thẻ gì mà lấp lánh vậy?"]
+# ngay:12 # gio:13:35 # noi:ban_lam_viec
+_13 giờ 35. Bạn ăn trưa bằng hộp mì ở bàn. {con_ong_chau_cha}, {thuc_tap_sinh}, {ran_doc}, {hong_hot} vừa đi Cà Phê Sống Ảo về. Không ai nói gì. {con_ong_chau_cha} đi thẳng vào phòng, đóng cửa._
+hong_hot: *(ghé tai bạn, thì thầm)* Nghe gì chưa? Thẻ của ổng bị từ chối. Hai lần. Rồi ông {thuc_tap_sinh} trả giùm bằng một cái thẻ… màu kim cương.
+* [💬 Hỏi {thuc_tap_sinh}: "Ủa anh, thẻ gì mà lấp lánh vậy?"]
     thuc_tap_sinh: D-dạ… thẻ… thẻ tích điểm siêu thị ạ!
-    _Không ai tin. Nhưng cũng không ai hỏi tiếp, vì hóa đơn vẫn nằm đó._
+    _Không ai tin. Nhưng cũng không ai hỏi tiếp._
     ~ qh("thuc_tap_sinh", -3)
-* [🤝 "Chia đều đi mọi người. Tui vừa có lương."]
-    ~ tien_cong(-180000)
-    con_ong_chau_cha: Chill… cảm ơn nha. Lần đầu anh được chia đều. Lạ ghê.
+* [🤝 Gõ cửa phòng {con_ong_chau_cha}: "Chiều nay ông bao tui ly trà đá nha. Tui trả."]
+    ~ tien_cong(-20000)
+    con_ong_chau_cha: *(mở cửa, cười gượng)* Chill… cảm ơn nha. Lần đầu có người mời anh trà đá. Lạ ghê.
     ~ qh("con_ong_chau_cha", 8)
-    ~ qh("thuc_tap_sinh", 5)
-* [😶 Giả vờ đi vệ sinh, quay lại khi mọi thứ đã xong.]
-    _Bạn quay lại. Hóa đơn đã thanh toán. Không ai nói ai trả. {thuc_tap_sinh} nhìn xuống đất._
-    ~ qh("con_ong_chau_cha", -3)
-- ~ an(60)
+* [😶 "Chuyện của người ta mà bà." Ăn tiếp hộp mì.]
+    hong_hot: Ối dồi ôi, ông bữa nay đứng đắn ghê!
+    ~ qh("con_ong_chau_cha", 2)
+- ~ an(30)
 -> END
 
 // ------------------------------------------------------------
@@ -373,6 +346,8 @@ _{con_ong_chau_cha} gọi. {giam_doc} không nghe máy. Cả bàn im lặng. R�
 # ngay:12 # gio:21:00 # noi:quan_bida_co_ban
 _Tối thứ 2, quán bida dưới nhà. {dan_dau_tu} đang đứng một mình, tay cầm cơ, mắt dán vào điện thoại._
 dan_dau_tu: Ê {chua_te_deadline}! Vừa có lương hả? Đánh một ván. Mà nói nghe nè, có đồng Hồng Coin mới ra đêm thứ 6, theo tên Siêu Nhân Hồng đó. Lần này là lên thật.
+_Rồi anh hạ giọng, như nhớ ra: "À, chị {ke_toan} hỏi anh cái hóa đơn 800 triệu dự án tháng 6 của em đó. Nghe nói tuần sau có đoàn kiểm tra. Em còn giữ biên bản nghiệm thu chứ?"_
+~ vu_nuoc(5)
 * [🎱 "Đánh thì đánh, coin thì thôi."]
     -> chua_te_deadline_mg_bida_mo_dau
 * [💬 "Hồng Coin? Ai tạo vậy anh?"]
@@ -381,6 +356,6 @@ dan_dau_tu: Ê {chua_te_deadline}! Vừa có lương hả? Đánh một ván. M�
     ~ qh("dan_dau_tu", 3)
 * [😴 "Tui lên ngủ. Thứ 6 gameshow rồi."]
     ~ nghi(20)
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 3
+    ~ vu_nuoc(-3)
     dan_dau_tu: Ờ… ngủ đi. Người ngủ sớm hông bao giờ giàu, mà cũng hông bao giờ nghèo. Hay ha.
 - -> END

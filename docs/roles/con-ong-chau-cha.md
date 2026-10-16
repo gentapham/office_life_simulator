@@ -94,32 +94,34 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 
 ### Chương 2: "Khóa Quản Lý" (5/10 – 12/10)
 - **5/10:** Thắng tuyên bố: tuần này Long phải **làm việc thật**, học "Khóa Quản Lý Có Tâm" và tự lên kế hoạch quảng bá MV. Lần đầu tiên Long ngồi họp giao ban đủ 2 tiếng.
-- **6/10:** buổi chụp poster. Nguyên bỏ đi giúp bà cụ. Long ngồi lại quán, lần đầu nghe Duy kể chuyện mình từng làm gì trước khi đi thực tập (Duy chỉ nói "dạ làm văn phòng thôi ạ"). Bài Hát +5.
-- **9/10:** MV ra mắt. Long nghe nhạc MV ở phòng thu tầng 30 lúc nửa đêm, lắc đầu, mở file mới: "Hồng Là Thái Độ - bản 1".
-- **12/10:** lương về trễ. Tối đó Long dẫn Duy, Hiếu, Ngân đi quán, giành trả tiền như mọi lần. **Thẻ bị từ chối.** Cả bàn im lặng. Ngân đã kịp nhìn thấy.
+- **6/10:** buổi chụp poster. Khoảng 10:30 Nguyên bỏ ngang buổi chụp, chạy xuống đầu Hẻm 69 đẩy xe chè của Bà Bảy ra khỏi ổ gà. Long ra Cà Phê Sống Ảo ngồi, lần đầu nghe Duy kể chuyện mình từng làm gì trước khi đi thực tập (Duy chỉ nói "dạ làm văn phòng thôi ạ"). Bài Hát +5.
+- **9/10:** chiếu thử nội bộ MV "Hồng Hóa Việt Nam" lúc 10:00, 20:00 MV lên sóng. Chiều, Long làm bài kiểm tra cuối "Khóa Quản Lý Có Tâm". Long nghe nhạc MV ở phòng thu tầng 30 lúc nửa đêm, lắc đầu, mở file mới: "Hồng Là Thái Độ - bản 1".
+- **12/10:** lương về lúc 10:00. 12:30 Long dẫn Duy, Hiếu, Ngân ra Cà Phê Sống Ảo ăn trưa, giành trả tiền như mọi lần. **Thẻ bị từ chối.** Cả bàn im lặng. Ngân đã kịp nhìn thấy.
 
 ### Chương 3: "Bản Demo" (13/10 – 16/10)
 - **13/10 (Ngày Doanh nhân):** Long tặng chú một bó hoa, rồi hỏi nhỏ: *"Chú ơi, thẻ của cháu bị sao vậy?"*. Thắng nói "lỗi ngân hàng". Long tin, nhưng chỉ một nửa.
 - **15/10 (mất điện):** không máy lạnh, không wifi, cả công ty ngồi pantry. Ai đó đưa cho Long cây đàn cũ trong kho studio. Long ngân nga một đoạn "Hồng Là Thái Độ". Cả pantry im lặng nghe. **Phát** đứng ở cửa, nghe hết, rồi hỏi: *"Bài này của ai vậy em?"*
-- **16/10:** gameshow ở Đài Tivi Hóng. Long được xếp ngồi hàng ghế khách mời. MC bất ngờ chĩa micro: *"Anh là ai trong ê-kíp của Siêu Nhân Hồng?"*. Long chưa bao giờ phải tự giới thiệu mình mà không có chữ "chú".
+- **15/10, 20:10:** Long quay lại pantry lấy đàn, thấy Nguyên không đội mũ ngồi cạnh Vũ ở góc tối.
+- **16/10:** gameshow ở Đài Tivi Hóng (ghi hình 14:00, phát sóng 20:00). Từ hàng ghế khách mời, Long thấy Phát hát bè từ cánh gà. Long được xếp ngồi hàng ghế khách mời. MC bất ngờ chĩa micro: *"Anh là ai trong ê-kíp của Siêu Nhân Hồng?"*. Long chưa bao giờ phải tự giới thiệu mình mà không có chữ "chú".
 
 ### Chương 4: "Lửa Trại" (17/10 – 20/10)
-- **17/10:** team building Vũng Tàu. Kéo co: đội Sản xuất của Nhật đấu "đội Marketing" (Long và những ai chưa được chia đội). Duy xin vào đội Long.
-- **Đêm lửa trại:** Long ôm đàn hát một bài không ai từng nghe. Nếu quan hệ với Nhật ≥ 30, Nhật là người vỗ tay đầu tiên. Nếu Hiếu và Nguyên đang có chuyện, bài hát của Long là thứ duy nhất làm cả hai ngồi im.
+- **17/10:** team building Vũng Tàu, Long ở phòng 201 với Duy. Kéo co: đội Sản xuất của Nhật đấu "đội Marketing" (Long và những ai chưa được chia đội). Duy xin vào đội Long.
+- **Đêm lửa trại:** Long ôm đàn hát một bài không ai từng nghe. Lửa trại bắt đầu 20:00. Nếu quan hệ với Nhật ≥ 20, Nhật là người vỗ tay đầu tiên và mở nhánh "Phòng thu tầng 30" (nếu lỡ, tối 20/10 ở karaoke Long vẫn có thể rủ Nhật lên nghe demo). Nếu Hiếu và Nguyên đang có chuyện, bài hát của Long là thứ duy nhất làm cả hai ngồi im.
 - **18/10:** về tới Sky Ảo, Long gặp một người môi giới nhà đất dẫn khách lên xem **căn penthouse của mình**. *"Ủa, chủ nhà rao bán từ tháng 9 mà anh hông biết hả?"*
-- **20/10:** sinh nhật công ty. Long biết chú đang giấu điều gì đó. Tối ở Quán Ốc Đêm, chú say. Long có thể hỏi thẳng, hay ngồi cạnh chú, lần đầu tiên rót bia cho chú thay vì ngược lại.
+- **20/10:** sinh nhật công ty. Chú phát phong bì 2.100.000đ và 7 khăn cam. 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G", rồi chú say. 21:00 tăng hai ở Karaoke Chú Sáu. Long có thể hỏi thẳng, hay ngồi cạnh chú, lần đầu tiên rót bia cho chú thay vì ngược lại.
 
 ### Chương 5: "Ai Hát Bài Này?" (21/10 – 27/10)
-- **21/10:** Phát hẹn Long ở karaoke Hát Cho Nhau Nghe: *"Em cho anh mượn bài đó đi. Anh hát, mình cùng nổi."*. Phát cần một bài hit để thoát nợ. Long cần một người hát.
+- **21/10:** Long đi chào hàng quảng bá Đại Nhạc Hội (Quán Ốc Đêm, phòng gym Cơ Bắp Ảo; thêm một lượt ngày 25/10). Tối, Phát hẹn Long ở Karaoke Chú Sáu, phòng số 5: *"Em cho anh mượn bài đó đi. Anh hát, mình cùng nổi."*. Phát cần một bài hit để thoát nợ. Long cần một người hát.
 - **22/10:** kiểm tra thuế. Cán bộ thuế hỏi: *"Phó phòng Marketing lương 25 triệu, phòng có mấy nhân viên?"*. Long đếm: một. Là mình.
-- **23/10:** sinh nhật Nguyên. Long tặng gì cho người giàu nhất công ty? Đồng hồ (quẹt thẻ, nếu còn), hay một chiếc USB có bản demo.
+- **23/10:** sinh nhật Nguyên. Livestream 20:00 ở studio tầng 2, Nguyên tỏ tình Vũ, Vũ đáp "Ý tưởng PR hay đó anh". Long tặng gì cho một người lúc nào cũng nói "anh có đủ rồi"? Đồng hồ (quẹt thẻ, nếu còn), hay một chiếc USB có bản demo.
 - **25/10 (Chủ nhật):** Chương quay lại, lần này mang theo "kèo coin chắc thắng" để Long gỡ lại tiền nhà. Long đang cần tiền thật sự lần đầu tiên.
 - **27/10:** cùng ngày LL ra giá gấp ba cho Nguyên, Lưu Lực nhắn riêng cho Long: *"Nghe nói em viết nhạc. 300 triệu cho bài đó, kèm ghế nhạc sĩ ở LL."*
 
 ### Chương 6: "Không Ô" (28/10 – 31/10)
 - **29/10:** wifi sập. Long phải mang ổ cứng chứa bản thu cuối cùng chạy tới phòng dựng của Lĩnh bằng thang bộ (thang máy kẹt). Lần đầu tiên Long chạy trong công ty.
-- **30/10:** họp đánh giá. Thắng gọi tên Long cho ghế Phó Giám đốc. Cả phòng quay lại nhìn. Nhận, từ chối, hay đề cử người khác?
-- **31/10:** Đại Nhạc Hội Siêu Nhân. "Hồng Là Thái Độ" có được hát không, ai hát, và trên màn hình lớn có tên ai ở dòng "Nhạc & lời"?
+- **28/10:** ca tối ở Sống Ảo, Duy nhận ra "Rồng" nhờ đôi sneaker trắng.
+- **30/10:** 14:00 họp đánh giá (hợp đồng của Phát hết hạn ngày mai, hôm nay gia hạn). Thắng gọi tên Long cho ghế Phó Giám đốc. Cả phòng quay lại nhìn. Nhận, từ chối, hay đề cử người khác?
+- **31/10:** 17:00 Long chốt với Thái: "Hồng Là Thái Độ" có được hát không, ai hát, và trên màn hình lớn có tên ai ở dòng "Nhạc & lời". Nếu Nguyên đã theo LL, chỉ còn Phát hát hoặc dùng nhạc nền. Nếu Nguyên (hoặc song ca) hát và ghi tên Long, Đại Nhạc Hội chung phát bài này lúc 20:00 (`chung_hat_hong_la_thai_do`).
 
 ---
 
@@ -209,12 +211,14 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🎵 **Nhạc Sĩ Không Cần Ô** | Bài Hát Bí Mật = 100%, tặng bài cho Siêu Nhân Hồng, không bán cho LL, không để Phát hát mà không ghi tên | Đại Nhạc Hội Siêu Nhân, Siêu Nhân Hồng hát "Hồng Là Thái Độ". Cả khán đài hát theo điệp khúc từ lần thứ hai. Màn hình lớn chạy chữ: *"Nhạc & lời: Long."* Không có chữ "cháu" nào phía trước. Trong đám đông, Duy quay sang người bên cạnh: *"Thần tượng của tui đó!"* |
-| 2 | 😄 🏠 **Tự Thuê Trọ** | Độ Tự Lập ≥ 80, Ô Dù ≤ 20, đã từ chối ghế Phó Giám đốc, đã làm thêm ít nhất 5 ca | Tháng 11, căn penthouse đã bán. Long xách một cây đàn và một cái vali vào một phòng trọ 15m² ở Hẻm 69, cửa sổ nhìn thẳng vào tường nhà bên. Bà chủ trọ đòi đặt cọc. Long trả bằng tiền lương của mình, đếm từng tờ. Tối đó, ông chú hàng xóm hát karaoke lúc 10 giờ đêm. Long mở cửa sổ, ghi âm lại, mỉm cười |
-| 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Quan hệ với Nhật ≥ 60, đã mở nhánh "Phòng thu tầng 30", ngày 30/10 Long đề cử Nhật trong khi Nhật đề cử Long | Thắng nhìn hai lá đơn, gãi đầu: *"Thế thì… hai đứa cùng làm."* Một tháng sau, Nhật lo sản xuất, Long lo âm nhạc, hai người dùng chung một cái bàn. Trên bàn có một cây đàn và một tấm bảng trắng nhỏ. Lịch chỉ có đúng một cuộc họp mỗi ngày: *"Họp nhanh 5 phút: trưa nay ăn gì?"* |
-| 4 | 😢 👑 **Mãi Là Cháu** | Ô Dù ≥ 70 vào 30/10 và nhận ghế Phó Giám đốc | Long ngồi trong phòng làm việc mới, vách kính, ghế da. Dưới gầm bàn là hộp đàn, phủ một lớp bụi mỏng. Duy gõ cửa, mang cà phê vào: *"Anh Long đỉnh quá ạ!"*. Long cười. Ngoài kia, ai cũng gọi Long là "sếp". Trong đầu Long, mọi người vẫn đang nói "cháu sếp" |
-| 5 | 😢 🎤 **Bài Hát Bị Cướp** | Bán bài cho LL, hoặc để Phát giữ đoạn ghi âm ngày 15/10 mà không ghi tên Long, và bài hát được phát hành | Một buổi trưa, radio ở chòi bảo vệ phát "Hồng Là Thái Độ". Giai điệu của Long, giọng của người khác. Phát thanh viên đọc: *"Sáng tác: …"*. Không có tên Long. Bác Bình vặn nhỏ radio, rót cho Long một ly trà đá: *"Bác không thấy gì đâu. Nhưng bác nghe thấy."* |
-| 6 | 😢 💸 **Chú Ơi Cứu Cháu** | Siêu Nhân Hồng thất bại, công ty phá sản, Độ Tự Lập < 30 | Long đứng trước ATM, thẻ bị nuốt. Long gọi cho chú như mọi lần. Lần này chú bắt máy. Im lặng rất lâu. Rồi Thắng nói, giọng khàn: *"Chú cũng đang không biết gọi ai, Long ạ."* Hai chú cháu cùng im lặng, mỗi người một đầu dây |
+| 1 | 😄 🎵 **Nhạc Sĩ Không Cần Ô** | Bài Hát Bí Mật ≥ 80%, không bán cho LL, bài được hát ở Đại Nhạc Hội (Nguyên, song ca Nguyên–Phát, hoặc Phát nếu Nguyên đã theo LL) và ghi đúng tên Long | Tiết mục 20:00. "Hồng Là Thái Độ" vang lên, cả khán đài hát theo điệp khúc từ lần thứ hai. Màn hình lớn chạy chữ: *"Nhạc & lời: Long."* Không có chữ "cháu" nào phía trước. Trong đám đông, Duy quay sang người bên cạnh: *"Thần tượng của tui đó!"* |
+| 2 | 😄 🏠 **Tự Thuê Trọ** | Độ Tự Lập ≥ 70, Ô Dù ≤ 30, đã từ chối ghế Phó Giám đốc, đã làm thêm ít nhất 2 ca "Rồng". Mặc định nếu chưa nhận ghế, Độ Tự Lập ≥ 55 và có ít nhất 1 ca | Tháng 11, căn penthouse đã bán. Long xách một cây đàn và một cái vali vào một phòng trọ 15m² ở Hẻm 69. Long trả cọc bằng tiền lương và tiền ca "Rồng", đếm từng tờ. Tối đó, ông chú hàng xóm hát karaoke lúc 10 giờ đêm. Long mở cửa sổ, ghi âm lại, mỉm cười |
+| 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Đã mở nhánh "Phòng thu tầng 30" (lửa trại 17/10 hoặc karaoke 20/10), Nhật đã nghe demo 22/10, ngày 30/10 Long đề cử Nhật (quan hệ với Nhật ≥ 20) trong khi Nhật đề cử Long (quan hệ ≥ 25) | Thắng nhìn hai lá đơn, gãi đầu: *"Thế thì… hai đứa cùng làm."* Một tháng sau, Nhật lo sản xuất, Long lo âm nhạc, hai người dùng chung một cái bàn. Lịch chỉ có đúng một cuộc họp mỗi ngày: *"Họp nhanh 5 phút: trưa nay ăn gì?"* |
+| 4 | 😢 👑 **Mãi Là Cháu** | Nhận ghế Phó Giám đốc và Ô Dù ≥ 60 (hoặc nhận ghế mà không khớp kết thúc nào khác) | Long ngồi trong phòng làm việc mới, vách kính, ghế da (công ty trượt hợp đồng thì đó là thứ duy nhất chú giữ lại được cho cháu). Dưới gầm bàn là hộp đàn, phủ bụi. Duy mang cà phê vào: *"Anh Long đỉnh quá ạ!"*. Ngoài kia ai cũng gọi Long là "sếp". Trong đầu Long, mọi người vẫn đang nói "cháu sếp" |
+| 5 | 😢 🎤 **Bài Hát Bị Cướp** | Bán bài cho LL (27/10, chỉ khi chưa nói thật với chú; hoặc 29/10), hoặc Phát hát bài mà không ghi tên Long | Một buổi trưa tháng 11, radio ở chòi bảo vệ phát giai điệu của Long, giọng của người khác. *"Sáng tác: …"*. Không có tên Long. Bác Bình vặn nhỏ radio, rót cho Long một ly trà đá: *"Bác không thấy gì đâu. Nhưng bác nghe thấy."* |
+| 6 | 😢 💸 **Chú Ơi Cứu Cháu** | Độ Tự Lập < 40 (và không khớp các kết thúc trên). Mặc định cuối cùng | Long đứng trước ATM, thẻ cuối cùng bị nuốt, gọi chú như mọi lần. Nếu công ty trượt hợp đồng: biển chữ G bị tháo, chú nói *"Chú cũng đang không biết gọi ai, Long ạ."* Nếu công ty sống: chú vừa giữ được công ty nhưng khoản thế chấp vẫn đến hạn 15/11, *"Chú không giữ thêm được cháu nữa đâu. Cháu phải tự đứng."* Hai chú cháu im lặng, không ai cúp máy |
+
+Thứ tự xét (cảnh `con_ong_chau_cha_3010_danh_gia`, game gọi sau Đại Nhạc Hội Siêu Nhân): Ban Phó Hai Người → Bài Hát Bị Cướp → Nhạc Sĩ Không Cần Ô → Mãi Là Cháu → Tự Thuê Trọ → Chú Ơi Cứu Cháu → mặc định.
 
 ---
 

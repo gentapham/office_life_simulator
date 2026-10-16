@@ -139,8 +139,8 @@ _"Người Gác Két." "Người Hùng Không Tên." Không phải ý tưởng. 
 
 // ------------------------------------------------------------
 === bien_kich_1510_phat_hat ===
-# ngay:15 # gio:19:10 # noi:pantry
-_Tối. Điện chưa có. Không ai về, vì về nhà cũng mất điện. Ai đó nói: "Chán quá, có ai hát gì đi."_
+# ngay:15 # gio:16:45 # noi:pantry
+_Gần 5 giờ chiều. Điện chưa có, trời đổ mưa, pantry không cửa sổ tối như đêm. Ai đó nói: "Chán quá, có ai hát gì đi."_
 _Một giọng cất lên trong bóng tối, không micro, không kính đen._
 idol_het_thoi: "Ngày xưa có đôi bạn thân… bán cá viên chiên tại công viên…"
 _Cả pantry im lặng. Rồi một người hát theo. Rồi hai người. Rồi cả công ty._

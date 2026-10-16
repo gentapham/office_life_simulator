@@ -256,6 +256,10 @@ _Bạn hiểu: nếu micro chạy, bác có thể đọc. Nếu không, bác có
     it: Bác đọc. Con giữ micro.
     _Bác đọc. Giọng run. Micro không hú một lần nào._
     ~ qh("bac_bao_ve", 20)
+    { qh_bac_bao_ve >= 40:
+        _Tan tiệc, bác dúi vào tay bạn cái phong bì không, tem nước ngoài, chữ "G" ở góc: "Cháu giữ giùm bác cái vỏ này. Đừng hỏi ai gửi." Bạn không hỏi._
+        ~ it_nhanh_nguoi_gui_thu = true
+    }
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
 - -> END
 

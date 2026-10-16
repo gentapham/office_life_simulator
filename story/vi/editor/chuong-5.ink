@@ -82,8 +82,8 @@ chua_te_deadline: *(lao vào phòng dựng, mặt trắng bệch)* {editor}. Ét
 
 // ------------------------------------------------------------
 === editor_2310_livestream_banh ===
-# ngay:23 # gio:19:30 # noi:studio_tang_2 # bat_buoc
-_Sinh nhật {sieu_nhan_hong}, 31 tuổi. Livestream. Bạn ngồi bàn điều khiển, ba máy quay, mười hai nghìn người xem._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_Sinh nhật {sieu_nhan_hong}, 31 tuổi. 20 giờ, livestream ở studio tầng 2. Bạn ngồi bàn điều khiển, ba máy quay, mười hai nghìn người xem._
 _{thuc_tap_sinh} đóng vai "Mr. Kevin Trộn" của BTT Global, đeo kính râm, đọc lời chúc bằng giọng chủ tịch ngân hàng. Diễn tốt tới mức đáng ngờ._
 _Rồi {sieu_nhan_hong} cầm micro: "Anh {chua_te_deadline}, em thích anh. Không phải PR." Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên xu hướng trong ba phút._
 _Và rồi một bóng vàng lao vào khung hình. Chiếc bánh kem hồng ba tầng đổ ụp. {cho} ngồi giữa đống kem, rất hài lòng._ # hen_gio:5
@@ -129,27 +129,28 @@ _Một phút mười giây. Đẹp. Hài. Hơi ác với chiếc bánh._
 
 // ------------------------------------------------------------
 === editor_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
-_Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai}. Các cặp ngồi đối mặt: {truong_phong} – {con_ong_chau_cha}, {designer} – {bien_kich}, {chi_dai} – {thanh_ninh}…_
-_Bạn không có cặp. Bạn được giao quay phim "biên bản hòa giải"._
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Liên Hợp Quốc. 14 giờ, "hội nghị hòa giải" của {chi_dai}. Các cặp ngồi đối mặt: {truong_phong} – {con_ong_chau_cha}, {designer} – {bien_kich}, {chi_dai} – {thanh_ninh}…_
+_Bạn không có cặp. {chi_dai} giao bạn quay phim "biên bản hòa giải", quay xong thì ngồi vào một cái bàn phụ trong góc. Ở đó đã có {quan_ly_idol}, laptop mở, hai điện thoại úp bên cạnh._
+chi_dai: Hai đứa mắt thâm nhất công ty. Ngồi đây. Không cần hòa giải, cần ngủ.
 { ed_clip_phat_toi == "gui_thai" || ed_clip_phat_toi == "dang_kenh":
-    _Đúng sáng nay, clip {idol_het_thoi} hát trong bóng tối viral lại lần hai. Cùng lúc, có người bóc chuyện fan ảo của {idol_het_thoi}. Một ngày, hai cái khủng hoảng ngược chiều._
+    _Sáng nay clip {idol_het_thoi} hát trong bóng tối bắt đầu lan khắp mạng. Cùng lúc, có người bóc chuyện fan ảo của {idol_het_thoi}. Một ngày, hai cái khủng hoảng ngược chiều._
 - else:
-    _Sáng nay, có người bóc chuyện {idol_het_thoi} thuê fan ảo. {quan_ly_idol} không có mặt ở hội nghị. Anh ấy ở phòng nghệ sĩ, cầm hai điện thoại, không cái nào ngừng rung._
+    _Sáng nay, có người bóc chuyện {idol_het_thoi} thuê fan ảo. {quan_ly_idol} gõ thông cáo ngay giữa hội nghị, hai cái điện thoại úp mà vẫn rung._
 }
-* [🎁 Lẻn ra khỏi hội nghị, dựng một Video Tiện Tay: {idol_het_thoi} hát đám cưới, toàn khách thật, mặt thật, khóc thật.]
+* [🎁 Ngồi bàn phụ, mở laptop dựng một Video Tiện Tay: {idol_het_thoi} hát đám cưới, toàn khách thật, mặt thật, khóc thật.]
     ~ ed_tien_tay()
     ~ follow(8000)
     ~ qh("idol_het_thoi", 5)
-    _Video đăng lúc 14:00, qua kênh nghệ sĩ. Bình luận: "Fan ảo thì có, mà cô dâu khóc này là thật." {quan_ly_idol} đăng lại, không caption._
+    _Bốn mươi phút sau, video lên kênh nghệ sĩ. Bình luận: "Fan ảo thì có, mà cô dâu khóc này là thật." {quan_ly_idol} ngồi ngay cạnh, đăng lại, không caption, không biết người dựng đang ngồi cách mình nửa mét._
     ~ ed_can(3)
 * [🎥 Ở lại quay hội nghị. Đúng việc được giao.]
     ~ uy_tin = uy_tin + 3
     _Bạn quay được {designer} và {bien_kich} vẽ chung một bức tranh hai bàn tay giật bút của nhau. {chi_dai} gật gù như trọng tài._
     ~ qh("chi_dai", 5)
-* [🤝 Mang cà phê qua phòng nghệ sĩ cho {quan_ly_idol}. Không nói gì. Đặt xuống rồi đi.]
-    _Bạn đặt ly cà phê cạnh hai cái điện thoại. {quan_ly_idol} ngẩng lên, chưa kịp nói gì thì bạn đã ra tới cửa._
-    quan_ly_idol: *(nói vọng theo)* {editor}! … Cảm ơn em.
+* [🤝 Gục xuống bàn phụ, giả vờ ngủ. Để anh ấy khỏi phải nói chuyện với ai.]
+    _Bạn gục xuống. Không ngủ. {quan_ly_idol} nói nhỏ: "Ngủ tiếp đi {editor}. Anh canh cho." Tai bạn đỏ suốt hai tiếng._
+    quan_ly_idol: *(lúc tan hội nghị, nói rất nhỏ)* … Cảm ơn em.
     ~ ed_can(3)
     ~ qh("quan_ly_idol", 5)
 - -> END
@@ -209,7 +210,7 @@ hong_hot: {editor}! Là ông hả?! Con cú đeo tai nghe là ông hả?!
 giam_doc: {editor} à, anh mới biết em là cái kênh con cú gần 1 triệu người. Giỏi thế mà giấu anh.
 giam_doc: Công ty mua lại nhé, 200 triệu. Đổi tên thành "G-Entertainment Official". Anh không ép, tùy em.
 _Bạn nhìn tấm bằng "Doanh nhân của năm" BTT Global sau lưng {giam_doc}. Con cú bạn giấu trên chữ "Global" vẫn ở đó, trong một video mà anh ấy đã xem hai mươi lần._
-* [💸 "Dạ… em bán."]
+* {ed_cong_bi_nhan_vo >= 25} [💸 "Dạ… em bán. Đằng nào tên em cũng không ở trên đó."]
     ~ ed_ban_kenh = true
     ~ tien_cong(200000000)
     ~ ed_sub_cong(-290000)
@@ -219,12 +220,13 @@ _Bạn nhìn tấm bằng "Doanh nhân của năm" BTT Global sau lưng {giam_do
 * [🦉 "Dạ hông bán. Nhưng em có thể kêu gọi người xem kênh follow Siêu Nhân Hồng. Miễn phí."]
     ~ ed_keu_goi_follow = true
     ~ ed_cong_khai_kenh = true
-    ~ follow(150000)
+    ~ follow(100000)
+    ~ ed_sub_cong(10000)
     ~ uy_tin = uy_tin + 20
     ~ ed_can(5)
     giam_doc: *(đứng dậy, mắt đỏ)* Em… em đúng là người của gia đình mình.
     _Tối đó, kênh "Cú Đêm Cắt Ghép" đăng video 40 giây: con cú đeo tai nghe chỉ vào một bộ đồ hồng. "Cú đêm nhờ cả nhà một việc."_
-    _Một trăm năm mươi nghìn người bấm theo dõi trong một đêm._
+    _Một trăm nghìn người bấm theo dõi trong một đêm. Kênh của bạn cũng có thêm mười nghìn con cú._
 * [✋ "Dạ, mà em hỏi anh trước: ô 'Người thực hiện' tháng này ghi tên ai ạ?"]
     giam_doc: *(nhìn bạn, rồi nhìn ra phòng {truong_phong})* …Anh hiểu rồi.
     ~ ed_vo(-25)
@@ -234,8 +236,8 @@ _Bạn nhìn tấm bằng "Doanh nhân của năm" BTT Global sau lưng {giam_do
 
 // ------------------------------------------------------------
 === editor_2610_chieu_thu_phim ===
-# ngay:26 # gio:16:30 # noi:phong_hop_tang_2
-_Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Kịch bản của {bien_kich}. Bản dựng của bạn. Bạn ngồi phòng máy chiếu, nhìn qua ô kính._
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2
+_16 giờ. Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Kịch bản của {bien_kich}. Bản dựng của bạn. Bạn ngồi phòng máy chiếu, nhìn qua ô kính._
 _Phút thứ 9: cảnh đẩy xe trong mưa. Ở hàng cuối, {thuc_tap_sinh} quay sang nhìn {bien_kich}. Bạn thấy hết từ ô kính. Người dựng phim luôn thấy hàng ghế cuối._
 _Hết phim. Màn hình hiện credit tạm. Dòng "Dựng phim" đang để trống, chờ bạn tự điền._
 * [✍️ Điền "Dựng phim: {editor}".]
@@ -254,17 +256,18 @@ _Hết phim. Màn hình hiện credit tạm. Dòng "Dựng phim" đang để tr�
 
 // ------------------------------------------------------------
 === editor_2710_san_thuong_thai ===
-# ngay:27 # gio:11:00 # noi:san_thuong # bat_buoc
-_LL-Entertainment ra tay với {sieu_nhan_hong}. Cả công ty nhốn nháo. Bạn lên sân thượng trốn ồn, mang theo ly cà phê đen._
-_Sau cái cây phơi đồ, có tiếng {quan_ly_idol} nói điện thoại. Giọng nhỏ, khác mọi khi._
-quan_ly_idol: Dạ… ba mươi sáu triệu một tháng… em hiểu. Gấp đôi… Dạ, nếu em đi thì phải mang theo {sieu_nhan_hong}… Còn {idol_het_thoi} thì sao? … Dạ, em hiểu. Không cần.
-_"Không cần." Hai chữ đó rơi xuống sân thượng như cái ly nhựa._
+# ngay:27 # gio:12:30 # noi:san_thuong # bat_buoc
+_LL-Entertainment ra tay với {sieu_nhan_hong}. Cả công ty nhốn nháo. Bạn lên sân thượng ngủ trưa trên ghế bố, mũ trùm mặt, ly cà phê đen để dưới chân._
+_12 giờ 30, có tiếng bước chân. {quan_ly_idol} và {thanh_xin_nghi}. Họ tưởng bạn ngủ._
+quan_ly_idol: {thanh_xin_nghi}. LL mời anh ba mươi sáu triệu một tháng. Kèm {sieu_nhan_hong}. Còn {idol_het_thoi} thì… người ta nói "thì thôi".
+_"Thì thôi." Hai chữ đó rơi xuống sân thượng như cái ly nhựa. Dưới cái mũ, bạn mở mắt._
+_Hai người nói thêm một lúc. Rồi {thanh_xin_nghi} đi xuống trước. {quan_ly_idol} đứng lại, nhìn xuống đường rất lâu._
 ~ ed_biet_ll_moi_thai = true
 ~ phat_hien(ll_moi_thai)
-* [😶 Đứng im sau cây phơi đồ, chờ anh ấy đi.]
-    _{quan_ly_idol} cúp máy, đứng nhìn xuống đường rất lâu. Rồi đi xuống. Không thấy bạn. Bạn đứng thêm mười phút, ly cà phê nguội._
+* [😶 Nằm im dưới cái mũ, chờ anh ấy đi.]
+    _{quan_ly_idol} đứng thêm năm phút rồi đi xuống. Bạn nằm thêm mười phút, ly cà phê nguội._
     ~ cang_thang(10)
-* [🤝 Bước ra. Đưa ly cà phê: "Em chưa uống. Anh uống đi."]
+* [🤝 Ngồi dậy. Đưa ly cà phê: "Em chưa uống. Anh uống đi."]
     quan_ly_idol: *(giật mình, rồi cười mệt)* Em nghe hết rồi hả?
     editor: Dạ… một chút.
     quan_ly_idol: Đừng ai đăng gì hết. *(uống một ngụm)* Đen không đường. Giống em ha.

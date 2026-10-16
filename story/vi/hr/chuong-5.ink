@@ -457,7 +457,7 @@ thanh_ninh: Anh {hr}… em chỉ hỏi thử thôi ạ. Nếu em… đi, thì th
     thanh_ninh: Dạ… em chưa tính. *(cất lá đơn đi)*
     ~ hr_so(3)
 - _Người thứ hai: {quan_ly_idol}, hai điện thoại, mắt thâm._
-quan_ly_idol: {hr}. Anh nói thẳng. LL mời anh 36 triệu, kèm Nguyên. Anh chưa quyết.
+quan_ly_idol: {hr}. Anh nói thẳng. LL mời anh 36 triệu, kèm {sieu_nhan_hong}. Anh chưa quyết.
 * [🍵 "Anh {quan_ly_idol} uống trà sen hông? Rồi kể em nghe, ai sẽ lo cho ông {idol_het_thoi} nếu anh đi?"]
     _{quan_ly_idol} khựng lại rất lâu. Một điện thoại rung. Anh ấy tắt._
     quan_ly_idol: …Không ai.

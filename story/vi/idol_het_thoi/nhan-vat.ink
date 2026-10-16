@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_ran_doc ===
 # npc:ran_doc
-ran_doc: Anh {idol_het_thoi}! Em nghe nói nhỏ thôi nha… Nguyên được giao luôn phòng thu tầng 2 vào thứ 6. Giờ của anh đó. Em nói vậy thôi chứ không có ý gì đâu.
+ran_doc: Anh {idol_het_thoi}! Em nghe nói nhỏ thôi nha… {sieu_nhan_hong} được giao luôn phòng thu tầng 2 vào thứ 6. Giờ của anh đó. Em nói vậy thôi chứ không có ý gì đâu.
 + [😤 "Thiệt hả? Để anh lên giành lại."]
     ran_doc: Dạ anh cứ từ từ… mà em nghe nói vậy thôi nha.
     ~ qh("ran_doc", 5)
@@ -55,7 +55,7 @@ giam_doc: {idol_het_thoi} à. Vào đây. Anh vừa đọc cái báo cáo lượ
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_truong_phong ===
 # npc:truong_phong
-truong_phong: Anh {idol_het_thoi} ơi, mình sync nhanh 5 phút nhé. Về việc anh xuất hiện trong khung hình các buổi quay của Nguyên.
+truong_phong: Anh {idol_het_thoi} ơi, mình sync nhanh 5 phút nhé. Về việc anh xuất hiện trong khung hình các buổi quay của {sieu_nhan_hong}.
 + [🕶️ "Anh xuất hiện là có lý do nghệ thuật."]
     truong_phong: Cái lý do nghệ thuật ấy mình take note lại, họp tiếp sau nhé.
     ~ phat_tt(3)
@@ -146,7 +146,7 @@ chua_te_deadline: Anh {idol_het_thoi}. Anh tới 11 giờ mà hông bị phạt.
 + [😇 "Bí kíp là hông có giờ làm. Mà cũng hông có lương làm thêm."]
     chua_te_deadline: Ờ ha. Vậy thôi em chịu phạt.
     ~ qh("chua_te_deadline", 5)
-- chua_te_deadline: Mà anh nè… cái ông Nguyên tặng em gối ôm hồng. Anh nghĩ ổng PR hay ổng thiệt?
+- chua_te_deadline: Mà anh nè… cái ông {sieu_nhan_hong} tặng em gối ôm hồng. Anh nghĩ ổng PR hay ổng thiệt?
 + [💬 "Anh nghĩ người ta tặng gối thì hông phải PR. PR thì tặng cái gì chụp hình đẹp."]
     chua_te_deadline: *(ngừng lướt Tóp-tóp)* …Chill. Để em nghĩ. Mai em nghĩ.
     ~ qh("chua_te_deadline", 8)
@@ -213,7 +213,7 @@ hr: Anh {idol_het_thoi}, anh rảnh không, lên phòng anh uống trà xíu.
     ~ qh("hr", -5)
     ~ phat_tt(3)
 - hr: À anh {idol_het_thoi}, ông có thấy {thanh_xin_nghi} hôm nay đâu không?
-+ [🤝 "Thấy. Nó đi khảo sát địa điểm quay cho Nguyên."]
++ [🤝 "Thấy. Nó đi khảo sát địa điểm quay cho {sieu_nhan_hong}."]
     hr: *(nhìn bạn rất lâu)* Thế à.
     ~ qh("thanh_xin_nghi", 5)
     ~ qh("hr", -2)
@@ -317,7 +317,7 @@ editor: *(ngáp)* Dạ… anh {idol_het_thoi}. Em đang render. Anh cần gì h�
 // ------------------------------------------------------------
 === idol_het_thoi_tudo_designer ===
 # npc:designer
-designer: Anh {idol_het_thoi}. Poster đám cưới của anh, mẹ cô dâu muốn sửa chữ "Phát" to hơn chữ "Cô dâu". Sửa nhẹ thôi là sửa cái gì ạ?
+designer: Anh {idol_het_thoi}. Poster đám cưới của anh, mẹ cô dâu muốn sửa chữ "{idol_het_thoi}" to hơn chữ "Cô dâu". Sửa nhẹ thôi là sửa cái gì ạ?
 + [😇 "Sửa ngược lại đi. Tên cô dâu to nhất. Hôm đó là ngày của người ta."]
     designer: *(nhìn bạn ngạc nhiên)* Lần đầu có người nhờ em sửa cho ĐÚNG đó anh.
     ~ qh("designer", 10)
@@ -326,7 +326,7 @@ designer: Anh {idol_het_thoi}. Poster đám cưới của anh, mẹ cô dâu mu�
     designer: *(thở dài)* Dạ. Lần sửa thứ 9.
     ~ qh("designer", -5)
     ~ phat_tt(3)
-- designer: Mà anh nè… màu tím của anh với màu hồng của Nguyên đứng chung poster thì hợp lắm. Em nói vậy thôi.
+- designer: Mà anh nè… màu tím của anh với màu hồng của {sieu_nhan_hong} đứng chung poster thì hợp lắm. Em nói vậy thôi.
 + [🎨 "Thiệt hả? Em vẽ thử anh coi."]
     designer: Dạ để em vẽ… à, khi nào em rảnh. *(liếc cái laptop thứ hai đang mở)*
     ~ qh("designer", 5)
@@ -369,7 +369,7 @@ chi_dai: {idol_het_thoi}. Ăn cơm chưa? Ngồi xuống đây. Đeo kính đen 
     ~ an(30)
     ~ qh("chi_dai", 10)
     ~ phat_tt(-5)
-- chi_dai: Thằng Nguyên nó hát bài ông sai lời hoài. Ông có giận hông?
+- chi_dai: Thằng {sieu_nhan_hong} nó hát bài ông sai lời hoài. Ông có giận hông?
 + [😤 "Giận chứ. Bài của tui mà."]
     chi_dai: Giận thì dạy nó. Đứng đó giận thì bài cũng không đúng lời được.
     ~ qh("chi_dai", 3)

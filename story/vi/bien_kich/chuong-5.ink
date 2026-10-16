@@ -303,7 +303,7 @@ _LL-Entertainment ra tay. Cả công ty nhốn nháo. Còn bạn thì nhận đ�
 luu_luc: Chị {bien_kich}, em đọc được vài trang rồi (đừng hỏi làm sao). Văn chị hay. Bên em trả 50 triệu, mua luôn cuốn sách, giữ nguyên tên thật.
 luu_luc: Cuốn sách sẽ ra đúng ngày 1/11. Việc hôm nay phải xong từ hôm qua, chị nhé.
 _Kèm theo là ảnh chụp một trang sổ bìa da. Trang "Chương 1: Ngày Năm Tỷ". Chữ của bạn._
-* [💸 "Chuyển khoản trước."]
+* {bk_do_lo >= 50} [💸 "Chuyển khoản trước."]
     ~ bk_ban_cho_ll = true
     ~ tien_cong(50000000)
     _Ting. +50.000.000đ. Con số đẹp nhất bạn từng thấy trên app ngân hàng._

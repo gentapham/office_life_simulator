@@ -45,7 +45,7 @@ giam_doc: Qua mốc 3 rồi. Phòng em làm tốt. Nhưng cái bài confession�
 
 // ------------------------------------------------------------
 === truong_phong_2110_hop_giam_hop ===
-# ngay:21 # gio:14:00 # noi:phong_hop_sang_tao
+# noi:phong_hop_sang_tao
 _Cuộc họp để bàn về việc giảm số cuộc họp. Bắt đầu lúc 14:00. Bạn đã chuẩn bị 9 slide._
 ~ tp_hop(3)
 ~ tp_hop_ve_giam_hop = true
@@ -176,27 +176,26 @@ _Bạn dựng cái bảng trắng gấp gọn lên cạnh cây đàn. Nó lạc 
 
 // ------------------------------------------------------------
 === truong_phong_2310_chuan_bi_livestream ===
-# ngay:23 # gio:13:00 # noi:studio_tang_2 # bat_buoc
+# ngay:23 # gio:16:00 # noi:studio_tang_2 # bat_buoc
 ~ tp_lich_co_dinh()
-_Sinh nhật Siêu Nhân Hồng, 31 tuổi. Livestream lúc 15:00, bạn làm đạo diễn. Kịch bản có màn "nhà tài trợ BTT Global, Mr. Kevin Trộn, gửi lời chúc". Nhưng Mr. Kevin Trộn… không có thật._
+_Sinh nhật Siêu Nhân Hồng. Livestream lúc 20:00 ở studio tầng 2, bạn làm đạo diễn. Kịch bản có màn "nhà tài trợ BTT Global, Mr. Kevin Trộn, gửi lời chúc". Nhưng Mr. Kevin Trộn… không có thật._
 sales: *(kéo bạn ra góc)* Anh {truong_phong}, cứu em. Cần một người đóng Mr. Kevin Trộn, đeo kính đen, nói tiếng Anh vài câu.
-* [👔 Chọn {thuc_tap_sinh}: "Duy mặc vest trông rất… tài chính."]
+* [👔 Chọn {thuc_tap_sinh}: "{thuc_tap_sinh} mặc vest trông rất… tài chính."]
     thuc_tap_sinh: Dạ… em mặc vest quen rồi ạ… à dạ, em thử ạ!
     _{thuc_tap_sinh} khoác vest vào, đứng thẳng, nói "Good afternoon" chuẩn như người đã đọc báo cáo quý 10 năm. Cả phòng im lặng._
     ~ qh("thuc_tap_sinh", 8)
     ~ qh("sales", 8)
-    ~ follow(10000)
+    ~ follow(5000)
 * [📉 Chọn {dan_dau_tu}: "Anh {dan_dau_tu} có khí chất người hay… nói về tiền."]
     dan_dau_tu: Đóng chủ tịch tập đoàn hả? Lần này là lên thật!
     _{dan_dau_tu} diễn hơi quá, lỡ mời khán giả "đầu tư vào tương lai Hồng". Phải cắt gấp._
     ~ qh("dan_dau_tu", 5)
-    ~ follow(3000)
 * [🛡️ Hỏi bác {bac_bao_ve}.]
     bac_bao_ve: Bác à? Bác không biết tiếng Anh. Bác chỉ biết "ô kê".
     _Bác đeo kính đen, ngồi yên, nói đúng một câu "Ô kê. Happy birthday." Bình luận nổ tung: "Ông chú này ngầu quá!"_
     ~ qh("bac_bao_ve", 8)
     ~ qh("sales", 5)
-    ~ follow(8000)
+    ~ follow(5000)
 * [😶 "Cắt màn đó đi. Không có thật thì đừng diễn."]
     sales: Ủa anh! Sao mà căng!
     ~ qh("sales", -10)
@@ -205,11 +204,11 @@ sales: *(kéo bạn ra góc)* Anh {truong_phong}, cứu em. Cần một người
 
 // ------------------------------------------------------------
 === truong_phong_2310_livestream ===
-# ngay:23 # gio:15:30 # noi:studio_tang_2 # bat_buoc
-_Livestream đang chạy. 40.000 người xem. Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang đứng cầm bảng nhắc chữ._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20 giờ. Livestream đang chạy. 30.000 người xem. Giữa buổi, {sieu_nhan_hong} cầm micro, quay về phía {chua_te_deadline} đang đứng cầm bảng nhắc chữ._
 sieu_nhan_hong: {chua_te_deadline} ơi… em… à, anh… anh thích em lâu rồi. Không phải PR đâu.
-_Màn hình bình luận chạy như thác: \#VũƠiTrảLờiĐi. {chua_te_deadline} đứng hình, bảng nhắc chữ rơi xuống đất._
-~ follow(60000)
+_Màn hình bình luận chạy như thác: \#VũƠiTrảLờiĐi. {chua_te_deadline} đứng hình một giây, rồi cười, nhặt bảng nhắc chữ lên._
+chua_te_deadline: Ý tưởng PR hay đó anh.
 _Đúng lúc đó, cửa studio hé mở. {cho} thò mũi vào. Mắt {cho} khóa chặt vào cái bánh kem hồng ba tầng._ # hen_gio:5
 * [✂️ Hô "Cắt!" và chuyển sang camera phụ.]
     ~ tp_cat_kip_banh_kem = true
@@ -220,32 +219,30 @@ _Đúng lúc đó, cửa studio hé mở. {cho} thò mũi vào. Mắt {cho} khó
 * [🎥 Để máy quay chạy.]
     _{cho} lao vào. Bánh kem bay. Kem hồng dính đầy mũ của {sieu_nhan_hong}. {sieu_nhan_hong} vừa tỏ tình xong, giờ đứng giữa đống kem, cười như mếu._
     { RANDOM(1, 10) <= 6:
-        ~ follow(60000)
+        ~ follow(20000)
         hong_hot: Ối dồi ôi! Clip lên xu hướng rồi! "Tỏ tình xong bị chó phá bánh"!
-        ~ scandal()
+        ~ chung_so_meme = chung_so_meme + 1
     - else:
-        ~ follow(10000)
         _Clip có lượt xem, nhưng nhiều người bình luận "dàn dựng". {sieu_nhan_hong} buồn cả tối._
         ~ qh("sieu_nhan_hong", -5)
     }
 * [📅 Bấm bộ đàm: "Ê-kíp họp khẩn 1 phút!"]
     ~ tp_hop(1)
     _Một phút họp khẩn. Đủ để {cho} ăn hết tầng một của bánh, trực tiếp trên sóng._
-    ~ follow(5000)
     ~ tp_ghe(-3)
 * [⏱️ (Không chọn kịp)]
-    _Bạn đứng hình như {chua_te_deadline}. Hai người đàn ông đứng hình trong cùng một buổi livestream._
-    ~ follow(20000)
+    _Bạn đứng hình. {cho} không đứng hình. Cái bánh đổ ụp, ngay trên sóng._
 - -> END
 
 // ------------------------------------------------------------
 === truong_phong_2310_sau_livestream ===
-# ngay:23 # gio:19:30 # noi:phong_san_xuat
+# ngay:23 # gio:22:00 # noi:phong_san_xuat
 _Tối. Phòng Sản xuất vắng. {chua_te_deadline} ngồi một mình, nhìn điện thoại. \#VũƠiTrảLờiĐi vẫn đứng top 3._
-chua_te_deadline: Anh {truong_phong}… anh nghĩ đó là PR hông?
+chua_te_deadline: Anh {truong_phong}… anh {quan_ly_idol} lên kịch bản vụ này hả? PR khéo ghê. Lượt tương tác gấp ba.
 * [💬 "Anh không biết. Nhưng anh thấy anh ấy run."]
-    chua_te_deadline: *(im lặng)* …Ờ. Tui cũng thấy.
-    ~ qh("chua_te_deadline", 10)
+    chua_te_deadline: *(nhún vai)* Run vì diễn chớ anh. Ảnh diễn giỏi mà.
+    _Bạn định nói thêm. Rồi thôi. Có những chuyện không phải việc của trưởng phòng._
+    ~ qh("chua_te_deadline", 6)
 * [📅 "Cái này cậu cần một cuộc họp với chính mình đấy."]
     chua_te_deadline: Trời. Anh {truong_phong} đúng là anh {truong_phong}.
     _Nhưng {chua_te_deadline} cười. Và không lướt Tóp-tóp nữa._
@@ -256,8 +253,24 @@ chua_te_deadline: Anh {truong_phong}… anh nghĩ đó là PR hông?
 - -> END
 
 // ------------------------------------------------------------
+=== truong_phong_2410_email_cue_sheet ===
+# ngay:24 # gio:07:30 # noi:can_501_pho_moi
+_7 giờ 30. Email mới, gửi lúc 23:58 tối qua. Người gửi: {chua_te_deadline}. Đính kèm: cue sheet Đại Nhạc Hội Siêu Nhân, đủ 47 cue. Sớm 8 ngày._
+_{chua_te_deadline} chưa bao giờ nộp cái gì sớm. Bạn đọc lại tiêu đề ba lần._
+* [📞 Gọi ngay: "{chua_te_deadline}. Cậu bị ai đe dọa à? Chớp mắt hai lần nếu cần giúp."]
+    chua_te_deadline: *(giọng ngái ngủ)* Anh… đây là gọi điện mà anh. Tui chớp mắt anh đâu có thấy.
+    truong_phong: Thế cậu có bị đe dọa không?
+    chua_te_deadline: Hông. Tui chỉ… làm xong. Lạ ha.
+    ~ qh("chua_te_deadline", 6)
+* [📝 Trả lời: "Đã nhận. Cảm ơn cậu." Không thêm cuộc họp nào.]
+    ~ qh("chua_te_deadline", 8)
+    ~ tp_ca_phong(2)
+    _Bạn bấm gửi. Rồi ngồi nhìn cái lịch hôm nay: không có dòng "rà soát cue sheet". Lạ thật._
+- -> END
+
+// ------------------------------------------------------------
 === truong_phong_2410_hoa_giai ===
-# ngay:24 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Thứ Bảy, Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Mỗi bàn một cặp. Bàn số 1: bạn và {con_ong_chau_cha}._
 chi_dai: Luật nè: mỗi người khen người kia ba câu. Khen thật. Đứa nào khen xạo chị biết liền.
 _Bàn bên cạnh, {dan_dau_tu} ngồi một mình giữa một vòng tròn chủ nợ. {ke_toan} và {sales} không ai nhìn ai._
@@ -341,7 +354,7 @@ thuc_tap_sinh: *(nhỏ giọng)* Dạ… anh {truong_phong}… nếu em bị c�
     _Câu trả lời đúng. Nhưng không ai thấy đỡ lo._
 * [📊 "Mình làm bảng tổng kết đóng góp từng người, anh mang lên sếp."]
     ~ tp_hop(1)
-    _Bạn ghi tên từng người cạnh việc họ làm. Lần này, cột "Người thực hiện" không có chữ "Nhật"._
+    _Bạn ghi tên từng người cạnh việc họ làm. Lần này, cột "Người thực hiện" không có chữ "{truong_phong}"._
     ~ tp_ghi_cong()
     ~ tp_ca_phong(6)
     ~ tp_lo(-5)
@@ -377,7 +390,7 @@ con_ong_chau_cha: Từ lâu rồi chú.
 # ngay:26 # gio:16:00 # noi:phong_hop_tang_2
 _Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". 15 phút. Biên kịch: {bien_kich}. Một anh nhân viên ngân hàng bỏ việc, được một người mặc đồ hồng đẩy xe trong mưa._
 _Bạn nhớ cuộc họp 2/10. Nhớ {thuc_tap_sinh} kể "một người hùng không ai biết tên"._
-_Sau buổi chiếu, {giam_doc} quay sang {editor}: "Lĩnh, anh nghe nói em có kênh Diu-túp gần 1 triệu sub, 'Cú Đêm Cắt Ghép'. Anh trả 200 triệu, bán cho công ty nhé?"_
+_Sau buổi chiếu, {giam_doc} quay sang {editor}: "{editor}, anh nghe nói em có kênh Diu-túp gần 1 triệu sub, 'Cú Đêm Cắt Ghép'. Anh trả 200 triệu, bán cho công ty nhé?"_
 _Kênh có con cú. Kênh bạn học mỗi đêm. Giọng ngái ngủ nói "render xong là xong"._
 ~ tp_biet_linh_la_cu_dem = true
 ~ phat_hien(kenh_cu_dem)
@@ -408,7 +421,7 @@ _Kênh có con cú. Kênh bạn học mỗi đêm. Giọng ngái ngủ nói "ren
 
 // ------------------------------------------------------------
 === truong_phong_2710_ll_toi ===
-# ngay:27 # gio:10:30 # noi:sanh_tang_tret # bat_buoc
+# ngay:27 # gio:15:00 # noi:sanh_tang_tret # bat_buoc
 ~ tp_lich_co_dinh()
 _LL-Entertainment ra tay. Lưu Lực đích thân tới, vest trắng, tóc vuốt keo, ôm một tập hồ sơ màu xanh lá chuối. Lời mời gấp ba cho Siêu Nhân Hồng._
 luu_luc: Chào các bạn {cong_ty}. Việc hôm nay phải xong từ hôm qua. Mà hôm qua các bạn đang… họp thì phải?
@@ -453,7 +466,7 @@ _Trailer phim ngắn "Người Hùng Không Tên" ra mắt. Dòng chữ cuối: 
         ~ tp_tn(2)
         ~ tp_lo(3)
     }
-- ~ follow(20000)
+- ~ follow(5000)
 -> END
 
 // ------------------------------------------------------------

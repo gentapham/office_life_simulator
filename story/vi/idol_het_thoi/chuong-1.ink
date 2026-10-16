@@ -43,13 +43,13 @@ giam_doc: *(giọng như nói với em trai)* {idol_het_thoi}. Ngồi xuống đ
 * [🕶️ "Anh là người hát 'Công Viên'. Cả nước từng hát bài của anh đó em."]
     ~ phat_tt(5)
     sieu_nhan_hong: Ủa trời! "Ngày xưa có đôi bạn thân" đó hả anh? Hồi lớp 9 em hát hoài luôn á!
-    _Nguyên nói "hồi lớp 9". Lớp 9 của Nguyên là năm 2010. Bài của bạn ra năm 2015. Nhưng bạn không sửa._
+    _{sieu_nhan_hong} nói "hồi lớp 9". Lớp 9 của {sieu_nhan_hong} là năm 2010. Bài của bạn ra năm 2015. Nhưng bạn không sửa._
     ~ qh("sieu_nhan_hong", 5)
     ~ phat_nt(1)
 * [😤 "Anh là ca sĩ độc quyền của công ty này. Từ trước khi em biết hát."]
     sieu_nhan_hong: *(tạo dáng)* Dạ, vậy là đàn anh! Hồng không phải màu, Hồng là thái độ! Em xin được chỉ giáo!
     _Bạn định nói thêm, nhưng anh {quan_ly_idol} đã đứng dậy, khoác vai bạn rất nhẹ._
-    quan_ly_idol: Giới thiệu với Nguyên, đây là anh {idol_het_thoi}, đàn anh của em đó. Thôi {idol_het_thoi}, ra ngoài anh nói cái này.
+    quan_ly_idol: Giới thiệu với {sieu_nhan_hong}, đây là anh {idol_het_thoi}, đàn anh của em đó. Thôi {idol_het_thoi}, ra ngoài anh nói cái này.
     ~ qh("sieu_nhan_hong", -5)
     ~ qh("quan_ly_idol", 5)
     ~ phat_tt(5)
@@ -102,11 +102,11 @@ sieu_nhan_hong: *(ló đầu ra từ sau tủ quần áo, tạo dáng)* Ủa anh
 
 // ------------------------------------------------------------
 === idol_het_thoi_0110_tra_sua ===
-# ngay:1 # gio:15:00 # noi:tang_1
-_Tầng 1. Hai mươi mấy ly trà sữa xếp thành hình trái tim trên bàn. Hôm nay còn là Ngày Quốc tế Người cao tuổi: cả công ty mừng Bác {bac_bao_ve}, bác ngại đỏ cả mặt._
+# ngay:1 # gio:12:00 # noi:choi_bao_ve
+_Trưa. Hôm nay còn là Ngày Quốc tế Người cao tuổi: cả công ty kéo xuống chòi bảo vệ mừng Bác {bac_bao_ve}, tay ai cũng cầm ly trà sữa sếp mời hồi sáng. Bác ngại đỏ cả mặt._
 _Máy pha cà phê hỏng đúng Ngày Cà phê Quốc tế. Anh {quan_ly_idol} nhìn cái máy như nhìn người yêu cũ._
 hong_hot: Anh {idol_het_thoi}! Ly của anh nè, size L, trân châu hồng. Ủa mà anh có tên trong danh sách hông ta? Thôi kệ, uống đi anh!
-* [😇 Mang ly của mình ra chòi bảo vệ, đưa Bác {bac_bao_ve}.]
+* [😇 Đưa ly của mình cho Bác {bac_bao_ve}.]
     bac_bao_ve: Ơ… bác uống trà đá quen rồi. Thôi, cháu đã mang ra thì bác nhận.
     bac_bao_ve: Năm 2015 cháu đứng ở cổng này ký tặng cả buổi chiều đấy. Bác nhớ.
     _Bạn quên mất chuyện đó. Bác thì nhớ._
@@ -129,7 +129,7 @@ _Group Zalo-lô: {sieu_nhan_hong} vừa đăng ảnh chụp chung cả công ty.
 
 // ------------------------------------------------------------
 === idol_het_thoi_0210_hop_chien_dich ===
-# ngay:2 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:2 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Nụ cười Thế giới. Sáng nay {hr} đứng cạnh máy chấm công, bắt ai cũng phải cười mới cho quẹt thẻ. Bạn cười kiểu năm 2015. {hr} ghi vào sổ: "Cười hơi quá."_
 _Phòng họp tầng 2: họp chiến dịch "Hồng Hóa Việt Nam". Lần này bạn có ghế. Ghế phụ, kê sát cửa._
 truong_phong: Mình sync nhanh 5 phút thôi nhé. Mục tiêu: 1 triệu người theo dõi trước 31/10.
@@ -137,7 +137,7 @@ sales: Tin chị đi, deal này chắc kèo! Chị có 3 nhà tài trợ, 2 tỷ
 thuc_tap_sinh: Dạ… em có ý tưởng phim ngắn ạ. Về một người gác két, ờ, người hùng không ai biết tên…
 _Không ai nghe {thuc_tap_sinh}. Trừ {bien_kich}, đang ghi chép rất chăm._
 truong_phong: Còn ai có ý tưởng gì không? Anh {idol_het_thoi}?
-* [🎤 "Remix 'Công Viên' cho Nguyên hát. Bài có sẵn, khán giả có sẵn."]
+* [🎤 "Remix 'Công Viên' cho {sieu_nhan_hong} hát. Bài có sẵn, khán giả có sẵn."]
     truong_phong: Ơ… cái này cũng hay đấy. Mình take note lại, họp tiếp sau nhé.
     _"Take note lại" nghĩa là không. Nhưng {sieu_nhan_hong} ở cuối bàn thì gật đầu lia lịa._
     ~ qh("sieu_nhan_hong", 5)

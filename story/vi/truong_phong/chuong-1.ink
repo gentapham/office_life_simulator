@@ -20,7 +20,7 @@ _{thuc_tap_sinh}, 30 tuổi, thực tập sinh, đứng nghiêm như đang chào
     thuc_tap_sinh: Dạ… họp về cái ghế em vừa xếp hả anh?
     _Cuộc họp kéo dài 25 phút. Kết luận: ghế vẫn để nguyên chỗ cũ._
     ~ cang_thang(3)
-* [☕ "Duy pha giúp anh cốc cà phê được không?"]
+* [☕ "{thuc_tap_sinh} pha giúp anh cốc cà phê được không?"]
     thuc_tap_sinh: Dạ… máy pha cà phê hỏng rồi anh ơi. Đúng ngày Cà phê Quốc tế luôn ạ.
     _Bạn nhìn cái máy. Cái máy nhìn lại bạn, nhấp nháy đèn đỏ như đang cười._
     ~ cang_thang(5)
@@ -128,7 +128,7 @@ _{bien_kich} lặng lẽ cầm bút, ghi lại từng chữ._
     ~ qh("thuc_tap_sinh", 12)
     ~ qh("bien_kich", -5)
     bien_kich: *(khựng lại nửa giây)* Dạ… em ghi rồi anh.
-    _Bạn không biết dòng chữ "ý của Duy" sẽ còn ở đó bao lâu._
+    _Bạn không biết dòng chữ "ý của {thuc_tap_sinh}" sẽ còn ở đó bao lâu._
 * [⏰ Quay sang {chua_te_deadline}: "Cậu làm lại bảng tiến độ, có ngày, có người, có màu."]
     chua_te_deadline: Ok mom… à dạ, ok anh.
     ~ qh("chua_te_deadline", -5)
@@ -209,9 +209,9 @@ _Trên bàn là "Đơn xin đề bạt Phó Giám đốc, bản 14". Bản 13 n�
     ~ tp_ban_nhap_so = tp_ban_nhap_so + 1
     _Bản 15. Bạn thêm chữ "tận tâm" vào đoạn hai, xóa chữ "tận tâm" ở đoạn ba. Nhìn lại, vẫn như bản 14._
     ~ cang_thang(5)
-* [🧱 Vẽ lên bảng: "Long" ở bên trái, "Nhật" ở bên phải, kẻ hai cột ưu và nhược.]
-    _Cột "Long – ưu": cháu sếp. Cột "Long – nhược": đi trễ, ít họp, hay nói "chill"._
-    _Bạn nhìn cột "Nhật – ưu" rất lâu. Bạn viết: "họp nhiều". Rồi bạn không chắc đó là ưu hay nhược._
+* [🧱 Vẽ lên bảng: "{con_ong_chau_cha}" ở bên trái, "{truong_phong}" ở bên phải, kẻ hai cột ưu và nhược.]
+    _Cột "{con_ong_chau_cha} – ưu": cháu sếp. Cột "{con_ong_chau_cha} – nhược": đi trễ, ít họp, hay nói "chill"._
+    _Bạn nhìn cột "{truong_phong} – ưu" rất lâu. Bạn viết: "họp nhiều". Rồi bạn không chắc đó là ưu hay nhược._
     ~ cang_thang(3)
 * [🌙 Mở video hướng dẫn dựng phim trên Diu-túp, kênh có hình con cú.]
     _Kênh "Cú Đêm Cắt Ghép", gần 1 triệu người đăng ký. Giọng người hướng dẫn nhỏ, ngái ngủ, cứ nói "render xong là xong"._

@@ -4,7 +4,7 @@
 
 // ------------------------------------------------------------
 === cho_2110_confession ===
-# ngay:21 # gio:10:00 # noi:tang_1
+# ngay:21 # gio:10:00 # noi:tang_1 # dieu_kien:not ch_lac_vung_tau
 _Thứ 4. Cả tầng 1 xì xào. Ai cũng cầm điện thoại, ai cũng đọc một bài gì đó, ai cũng liếc nhau._
 _Ở phòng server, {hr} và {it} chụm đầu bên màn hình. {hr} hôm nay không cười. Đáng sợ hơn lúc cười._
 hr: Bla bla… bla bla… bla bla bla? # phu_de:Bài Confession bóc chuyện thế chấp biệt thự. Admin là ai? Em tìm được máy đăng bài không?
@@ -40,7 +40,7 @@ hr: TUẤT… bla bla… bla bla bla? # phu_de:{cho}, em ngửi giỏi lắm ph�
 
 // ------------------------------------------------------------
 === cho_2210_chu_liem ===
-# ngay:22 # gio:09:00 # noi:sanh_tang_tret # bat_buoc
+# ngay:22 # gio:09:00 # noi:sanh_tang_tret # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 5. Ba người mặc đồ tối màu bước qua cổng, tay xách cặp. Cả công ty bỗng gõ phím rất nhanh. Nhanh một cách đáng ngờ._
 _Người đi đầu, tóc hoa râm, nhìn thấy bạn thì đứng sững. Mùi của ông ấy đổi ngay lập tức: mùi sợ chó. Mùi này bạn biết rất rõ, giống mùi của mọi shipper._
 chu_liem: Bla… bla bla… bla bla bla? # phu_de:Con… con chó này có cắn không? Cho tôi xin… cột nó lại được không?
@@ -77,7 +77,7 @@ _Trong cặp của ông ấy có mùi bánh bao nhân thịt. Một cái. Còn �
 
 // ------------------------------------------------------------
 === cho_2210_ho_so ===
-# ngay:22 # gio:14:00 # noi:phong_ke_toan
+# ngay:22 # gio:14:00 # noi:phong_ke_toan # dieu_kien:not ch_lac_vung_tau
 _Phòng kế toán. Mười năm hồ sơ chất thành núi. {ke_toan} và {thuc_tap_sinh} xếp như chạy giặc. {thuc_tap_sinh} xếp nhanh tới mức đáng ngờ, như người đã làm việc này cả đời._
 ke_toan: Bla bla… bla bla bla… bla. # phu_de:2016 qua đây, 2017 qua kia. Em… sao em biết cái này là hồ sơ tín dụng vậy?
 thuc_tap_sinh: Bla… bla bla… bla! # phu_de:Dạ… em… đoán ạ!
@@ -102,7 +102,7 @@ _Một xấp giấy rơi xuống sàn, ngay trước mũi bạn. Mùi giấy r�
 
 // ------------------------------------------------------------
 === cho_2310_sang_sinh_nhat ===
-# ngay:23 # gio:09:00 # noi:sanh_tang_tret # bat_buoc
+# ngay:23 # gio:09:00 # noi:sanh_tang_tret # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 6. Sảnh trang trí hồng từ trần tới sàn. Bóng bay hồng. Thảm hồng. Ruy băng hồng. Mùi nước hoa hồng phun khắp nơi để "đồng bộ thương hiệu"._
 _Mũi bạn muốn đình công._
 hr: Bla bla… TUẤT… bla bla bla… KHÔNG… bla. # phu_de:Anh phụ trách an ninh sự kiện. Nhiệm vụ số một: giữ {cho} cách cái bánh 5 mét. Không ngoại lệ.
@@ -136,19 +136,20 @@ _Ở góc sảnh, có một người mặc vest bóng, đeo kính râm, dán ria
 
 // ------------------------------------------------------------
 === cho_2310_banh_kem ===
-# ngay:23 # gio:19:30 # noi:sanh_tang_tret # bat_buoc
-_Livestream đang chạy. Mười nghìn người đang xem. Đèn hồng. Nhạc hồng. Rồi cánh cửa mở ra, {thuc_tap_sinh} đẩy vào một chiếc xe nhỏ._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc # dieu_kien:not ch_lac_vung_tau
+_8 giờ tối, studio tầng 2. Livestream đang chạy. Mười nghìn người đang xem. Đèn hồng. Nhạc hồng. Rồi cánh cửa mở ra, {thuc_tap_sinh} đẩy vào một chiếc xe nhỏ._
 _Trên xe: một cái bánh kem 3 tầng màu hồng, hình cái mũ siêu nhân. Mùi kem bơ. Mùi nước hoa hồng. Mùi đường. Mùi kẻ thù được làm thành đồ ăn._
-~ follow(60000)
 giam_doc: Bla bla… ĂN… bla bla… bla… HỒNG! # phu_de:Cả nhà mình ra cắt bánh nào! Siêu Nhân Hồng của chúng ta tròn 31 tuổi!
-sieu_nhan_hong: Bla bla bla… bla bla… bla bla bla bla. # phu_de:Cảm ơn mọi người! Mà khoan… trước khi cắt bánh, em có chuyện muốn nói với một người. {chua_te_deadline} ơi, em thích anh. Thật đó. Không phải PR.
-_Cả sảnh nín thở. Mười nghìn bình luận chạy. Ở bàn điều khiển, có tiếng một cái điện thoại rơi xuống sàn._
+sieu_nhan_hong: Bla bla bla… bla bla… bla bla bla bla. # phu_de:Cảm ơn mọi người! Mà khoan… trước khi cắt bánh, anh có chuyện muốn nói với một người. {chua_te_deadline} ơi, anh thích em. Thật đó. Không phải PR.
+_Cả phòng nín thở. Mười nghìn bình luận chạy. Ở bàn điều khiển, có người ngẩng lên khỏi điện thoại, cười rất tươi._
+chua_te_deadline: Bla bla… bla bla bla! # phu_de:Ý tưởng PR hay đó anh! Mọi người thả tim cho anh Hồng đi!
+_Mùi của bộ đồ hồng đổi khác. Một mùi bạn biết: mùi của người vừa bị lấy mất cục xương mà vẫn phải vẫy đuôi._
 _Không ai nhìn bạn. Không ai cả. Bạn đang đứng ngay cạnh chân bàn._ # hen_gio:5
 * [🏃 Lao lên.]
     _Bạn lao lên. Bánh đổ. Kem hồng bay khắp nơi, lên tóc {giam_doc}, lên vest Mr. Kevin, lên cả cái {ch_mu()} của bộ đồ hồng._
     _Mười nghìn người xem. Một trăm nghìn người chia sẻ. Bạn ngồi giữa đống kem, liếm mép, thỏa mãn như vừa trả được thù cả tháng._
     ~ ch_pha_banh = true
-    ~ follow(50000)
+    ~ follow(25000)
     ~ scandal()
     ~ ch_an(100)
     ~ ch_hong_doi(-10)
@@ -178,27 +179,27 @@ _Không ai nhìn bạn. Không ai cả. Bạn đang đứng ngay cạnh chân b�
     ~ ch_so_mon_kho = ch_so_mon_kho - 1
     ~ ch_tang_gang_tay = true
     ~ ch_lo_mat_nguyen = ch_lo_mat_nguyen + 30
-    ~ follow(80000)
+    ~ follow(30000)
     ~ ch_hong_doi(-20)
     ~ qh("sieu_nhan_hong", 25)
 * [⏱️ (Không chọn kịp)]
     _Bạn còn đang phân vân thì cơ thể đã tự quyết. Chân bạn bật lên trước não. Bánh đổ._
     ~ ch_pha_banh = true
-    ~ follow(50000)
+    ~ follow(25000)
     ~ scandal()
     ~ ch_an(100)
     ~ ch_hong_doi(-10)
-- _Giữa hỗn loạn, bộ đồ hồng cầm micro, hỏi một câu không ai hiểu: "Ủa mà sao có đồng coin mang tên em vậy mọi người?"_
-_Ở bàn điều khiển, {chua_te_deadline} vẫn chưa nhặt cái điện thoại lên._
+- _Giữa hỗn loạn, bộ đồ hồng cầm micro, hỏi một câu không ai hiểu: "Ủa mà sao có đồng coin mang tên anh vậy mọi người?"_
+_Ở bàn điều khiển, {chua_te_deadline} đang chụp màn hình lượt xem, gật gù, như vừa xong một deadline đẹp._
 -> END
 
 // ------------------------------------------------------------
 === cho_2310_sau_choi ===
-# ngay:23 # gio:21:30 # noi:choi_bao_ve
+# ngay:23 # gio:21:30 # noi:choi_bao_ve # dieu_kien:not ch_lac_vung_tau
 _Khuya. Livestream tắt. Đèn hồng tắt. Sau chòi bảo vệ, chỗ không có camera, có một người ngồi trên bậc thềm._
 _Người đó tháo cái {ch_mu()} đặt bên cạnh. Mặt dính kem. Hoặc nước mắt. Mũi bạn nói là cả hai._
 _Bác đi ra, không nói gì, đưa cho người đó một cái khăn. Rồi quay vào chòi. Bác luôn biết lúc nào nên đi vào._
-sieu_nhan_hong: *(rất nhỏ)* Bla bla… bla… bla bla. # phu_de:Ảnh không trả lời. Chắc ảnh nghĩ em làm PR. Ai cũng nghĩ vậy.
+sieu_nhan_hong: *(rất nhỏ)* Bla bla… bla… bla bla. # phu_de:"Ý tưởng PR hay đó anh." Em ấy nói vậy đó {cho}. Ai cũng nghĩ vậy.
 _Cái {ch_mu()} nằm đó. Không ai canh. Ngay cạnh chân bạn._
 * [🎁 Ngoạm cái mũ chạy đi.]
     _Bạn ngoạm. Nhưng rồi bạn đứng lại. Người đó không đuổi theo. Người đó chỉ ngồi nhìn bạn, không có sức để đuổi._
@@ -221,7 +222,7 @@ _Cái {ch_mu()} nằm đó. Không ai canh. Ngay cạnh chân bạn._
 
 // ------------------------------------------------------------
 === cho_2410_hoa_giai ===
-# ngay:24 # gio:09:30 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 7. "Hội nghị hòa giải" của {chi_dai}. Bàn ghế xếp từng cặp: những người ghét nhau ngồi đối diện nhau. Không khí đặc như hồ dán._
 chi_dai: Bla bla bla. Bla bla bla bla. # phu_de:Hôm nay Ngày Liên Hợp Quốc. Không hòa giải xong thì không ai về.
 _Hai người đối diện nhau, không ai nói. Nhưng tay thì cùng thò xuống gầm bàn. Vuốt đầu bạn. Cả hai cùng lúc._
@@ -248,9 +249,9 @@ _Bạn đi từ bàn này sang bàn kia. Ở đâu cũng có tay vuốt đầu. 
 -> END
 
 // ------------------------------------------------------------
-=== cho_2510_vu_tim_kho ===
-# ngay:25 # gio:09:00 # noi:gam_cau_thang # dieu_kien:not ch_tra_usb_cho_vu
-_Chủ nhật. Bác ở lại trực vì đội của {chi_dai} chuẩn bị sân khấu. Tòa nhà vắng. Có tiếng bước chân lén lút xuống gầm cầu thang. KHO CỦA BẠN._
+=== cho_2410_vu_tim_kho ===
+# ngay:24 # gio:07:30 # noi:gam_cau_thang # dieu_kien:(not ch_tra_usb_cho_vu) and not ch_lac_vung_tau
+_Thứ 7. 7 giờ 30. Tòa nhà còn vắng, chiều nay mới có hội nghị. Có tiếng bước chân lén lút xuống gầm cầu thang. KHO CỦA BẠN._
 _Mùi cà phê sữa đá. {chua_te_deadline}. Người đó đang soi đèn điện thoại vào góc tối, lẩm bẩm._
 chua_te_deadline: Bla bla… bla bla… bla bla bla. # phu_de:Bác {bac_bao_ve} nói "bác không thấy gì đâu" lâu quá… chắc chắn có gì đó ở đây…
 * [😤 Gầm gừ. Đây là kho của bạn!]
@@ -283,11 +284,11 @@ chua_te_deadline: Bla bla… bla bla… bla bla bla. # phu_de:Bác {bac_bao_ve} 
 
 // ------------------------------------------------------------
 === cho_2510_ven_do_ll ===
-# ngay:25 # gio:16:00 # noi:ven_do
-_Chiều. Bác chở bạn về Ven Đô. Trên đường, xe đi ngang một tòa nhà kính 20 tầng, xanh lá chuối từ chân tới đỉnh._
+# ngay:25 # gio:09:50 # noi:ven_do # dieu_kien:not ch_lac_vung_tau
+_Chủ nhật. Ven Đô. Bác chở bạn đi chợ về. Trên đường, xe đi ngang một tòa nhà kính 20 tầng, xanh lá chuối từ chân tới đỉnh._
 _Mùi tòa nhà đó: kính lạnh, máy lạnh, tiền mới, và một mùi nước hoa xanh lá chuối nồng như vừa được phun cả bình._
 ~ ch_mui(5)
-_Ở sảnh tòa nhà, qua lớp kính, bạn thấy hai người quen đứng cách nhau năm mét, cùng nhìn lên trần nhà, cùng giả vờ đọc biển chỉ đường._
+_Ở sảnh tòa nhà, qua lớp kính, bạn thấy hai người quen ngồi cách nhau năm mét, cùng nhìn lên trần nhà, cùng giả vờ đọc biển chỉ đường. Mùi của họ đã đọng ở sảnh từ gần một tiếng trước._
 _{designer} và {thanh_ninh}. Ở đây. Cùng lúc. Đều đang làm mặt "tui đi lạc"._
 _Và từ thang máy, một người cầm hai điện thoại bước ra, mặt nặng như vác cả tòa nhà trên vai: {quan_ly_idol}._
 * [😤 Sủa từ trên xe máy. Chào hỏi kiểu chó.]
@@ -312,7 +313,7 @@ _Và từ thang máy, một người cầm hai điện thoại bước ra, mặt
 
 // ------------------------------------------------------------
 === cho_2610_chieu_thu_phim ===
-# ngay:26 # gio:16:00 # noi:phong_hop_tang_2
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2 # dieu_kien:not ch_lac_vung_tau
 _Thứ 2. Phòng họp tầng 2 kéo rèm, tắt đèn. Chiếu thử phim ngắn "Người Hùng Không Tên". Bạn nằm ở hàng ghế đầu, vì ghế đầu có ít chân nhất._
 _Trên màn hình: trời mưa. Một chiếc xe máy chết máy. Một người mặc đồ hồng đẩy chiếc xe đó, hai cây số, trong mưa._
 _Mùi trong phòng đổi. Ở hàng ghế cuối, {thuc_tap_sinh} khóc. Không thành tiếng. Mùi nước mắt mặn như biển Vũng Tàu._
@@ -338,8 +339,8 @@ _Tối đó, tin đồn "cắt giảm" chạy khắp công ty. Bác ngồi trong
 
 // ------------------------------------------------------------
 === cho_2710_vest_trang ===
-# ngay:27 # gio:09:45 # noi:cong_cong_ty # bat_buoc
-_Thứ 3. Một chiếc xe màu trắng đỗ trước cổng. Một người đàn ông bước xuống. Vest trắng. Tóc vuốt keo bóng như mặt hồ._
+# ngay:27 # gio:15:00 # noi:cong_cong_ty # bat_buoc # dieu_kien:not ch_lac_vung_tau
+_Thứ 3, 15 giờ. Một chiếc xe màu trắng đỗ trước cổng. Một người đàn ông bước xuống. Vest trắng. Tóc vuốt keo bóng như mặt hồ._
 _Và cái mùi. Xanh lá chuối. Kính tòa nhà cao tầng. Tiền mới. Đúng cái mùi trong ngăn "kẻ thù" bạn cất hôm chủ nhật._
 luu_luc: Bla bla bla… bla bla… XÚC XÍCH… bla. # phu_de:Việc hôm nay phải xong từ hôm qua. Nào, cún con, xúc xích cho em. Cho anh vào gặp Siêu Nhân Hồng nhé.
 _Người đó chìa ra một cây xúc xích. To. Bóng. Hàng nhập khẩu. Bạn chưa từng thấy cây xúc xích nào đẹp như vậy._
@@ -365,7 +366,7 @@ _Bác ngồi trong chòi, không nói gì. Bác nhìn bạn._
     ~ follow(5000)
     ~ qh("bac_bao_ve", 5)
     ~ ch_nguy_co_ll = ch_nguy_co_ll - 8
-* {ch_mui_thinh >= 80} [🔒 👃 Đánh hơi thật kỹ, rồi chạy vào văn phòng tìm người có cùng mùi.]
+* {ch_mui_thinh >= 60} [🔒 👃 Đánh hơi thật kỹ, rồi chạy vào văn phòng tìm người có cùng mùi.]
     _Bạn hít một hơi thật sâu. Xanh lá chuối. Rồi bạn quay đầu, chạy vào trong, lên tầng 1, qua từng bàn._
     _Không phải bàn này. Không phải bàn này. Không phải…_
     _Bạn dừng lại. Ngồi xuống. Trước bàn của {ten(ran_thu_hai)}. Thẳng lưng. Nhìn thẳng._
@@ -380,7 +381,7 @@ _Bác ngồi trong chòi, không nói gì. Bác nhìn bạn._
 
 // ------------------------------------------------------------
 === cho_2710_ho_so_roi ===
-# ngay:27 # gio:10:30 # noi:sanh_tang_tret
+# ngay:27 # gio:15:20 # noi:sanh_tang_tret # dieu_kien:not ch_lac_vung_tau
 { ch_nguy_co_ll > 0:
     _Người vest trắng đã vào được sảnh. Đang nói chuyện rất ngọt với bộ đồ hồng ở chân cầu thang. Tay cầm một tập hồ sơ màu xanh lá chuối._
 - else:
@@ -408,7 +409,7 @@ _Người vest trắng bỏ chạy, quên luôn mấy tờ giấy. Một tờ tr
 
 // ------------------------------------------------------------
 === cho_2710_dem ===
-# ngay:27 # gio:22:30 # noi:cong_cong_ty
+# ngay:27 # gio:22:30 # noi:cong_cong_ty # dieu_kien:not ch_lac_vung_tau
 _Khuya. Bác đã ngủ. Radio rè rè. Ở bậc thềm cổng, lại có một người ngồi. Đồ hồng. Mũ để bên cạnh. Điện thoại sáng trên tay._
 _Người đó gõ một tin nhắn. Xóa. Gõ lại. Xóa. Gõ lại. Bạn ngửi thấy hồi hộp, mạnh hơn cả hôm sinh nhật._
 sieu_nhan_hong: *(lẩm bẩm)* Bla bla… bla bla bla? # phu_de:"Em muốn anh ở lại không?" …Gửi hông ta?
@@ -432,5 +433,10 @@ sieu_nhan_hong: *(lẩm bẩm)* Bla bla… bla bla bla? # phu_de:"Em muốn anh 
 - { ch_nhan_qua_hong():
     _Người đó đứng dậy, đặt xuống cạnh ổ của bạn một cây xúc xích. Rồi lên chiếc xe hồng, biến mất._
     ~ ch_an_cua_nguyen()
+}
+// Tuất góp vào quyết định của Nguyên với LL (ch_nguy_co_ll dương là đẩy Nguyên về phía LL)
+{ ch_nguy_co_ll >= 5 && not nguyen_theo_ll:
+    ~ nguyen_theo_ll = true
+    _Sáng hôm sau, chiếc xe hồng không đỗ ở ô "HỒNG". Tập hồ sơ xanh lá chuối cũng không còn trên bậc thềm. Bạn ngửi thấy mùi tòa nhà kính ở chỗ người đó từng ngồi._
 }
 -> END

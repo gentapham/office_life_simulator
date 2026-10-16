@@ -18,7 +18,7 @@ _{hr} cầm danh sách xếp chỗ. Bạn lên trễ nhất, như một ngôi sa
     ~ phat_tt(-3)
 * [🍌 Ngồi cạnh {sieu_nhan_hong}, chìa ra một bịch chuối chiên.]
     sieu_nhan_hong: Ủa anh {idol_het_thoi}! Anh mua cho em hả? *(cầm bằng hai tay)* Dạ em cảm ơn! Chuối là thái độ!
-    _Nguyên hỏi bạn đủ thứ: cách lấy hơi, cách cúi chào, cách nhìn ống kính mà không run. Bạn trả lời hết. Ba tiếng trôi qua nhanh như một bài hát._
+    _{sieu_nhan_hong} hỏi bạn đủ thứ: cách lấy hơi, cách cúi chào, cách nhìn ống kính mà không run. Bạn trả lời hết. Ba tiếng trôi qua nhanh như một bài hát._
     ~ qh("sieu_nhan_hong", 12)
     { phat_tinh_tuong <= 60:
         ~ phat_day_nguyen = true
@@ -88,22 +88,22 @@ _{hong_hot} đang quay clip. Ai cũng thấy {hong_hot} đang quay clip. Trừ {
 
 // ------------------------------------------------------------
 === idol_het_thoi_1710_lua_trai ===
-# ngay:17 # gio:21:45 # noi:lua_trai_vung_tau # bat_buoc
+# ngay:17 # gio:20:00 # noi:lua_trai_vung_tau # bat_buoc
 _Đêm lửa trại. Gió biển. {it} lo loa kéo, chỉnh âm cho bạn hát "Công Viên". Lần đầu tiên sau mười năm có người chỉnh âm cho bạn đàng hoàng._
 idol_het_thoi: Ủa, em là thằng nhỏ bị điện giật ở hội chợ năm đó hả?
 it: …Ừ. Năm 2016. Anh hát tiếp đi.
 ~ qh("it", 8)
-_Hát xong, tới lượt {sieu_nhan_hong} kể chuyện. Nguyên ngồi sát lửa, giọng nhỏ hơn mọi ngày._
+_Hát xong, tới lượt {sieu_nhan_hong} kể chuyện. {sieu_nhan_hong} ngồi sát lửa, giọng nhỏ hơn mọi ngày._
 sieu_nhan_hong: Hồi nhỏ… em từng nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi. Em không nhớ tên nó. Em chỉ nhớ cái lỗ thông gió hình con cá.
-_Nguyên đưa tay tháo mũ để lau mắt. {hong_hot} đang livestream, điện thoại chĩa đúng về phía lửa._
+_{sieu_nhan_hong} đưa tay tháo mũ để lau mắt. {hong_hot} đang livestream, điện thoại chĩa đúng về phía lửa._
 _Bạn ngồi ngay giữa hai người. Ba giây._ # hen_gio:3
 * [🎤 Đứng bật dậy, che ống kính, hát to: "NGÀY XƯA CÓ ĐÔI BẠN THÂN…"]
-    _Cả đống lửa hát theo. Livestream của {hong_hot} chỉ thấy lưng áo sơ mi lụa của bạn. Sau lưng bạn, Nguyên đội mũ lại._
+    _Cả đống lửa hát theo. Livestream của {hong_hot} chỉ thấy lưng áo sơ mi lụa của bạn. Sau lưng bạn, {sieu_nhan_hong} đội mũ lại._
     ~ qh("sieu_nhan_hong", 15)
     ~ qh("hong_hot", -3)
     ~ phat_tt(-5)
 * [😤 Nghiêng người, để camera thấy rõ.]
-    _Livestream bắt được 1 giây mặt Nguyên, mờ, ngược sáng. Không ai nhìn rõ. Nhưng bình luận nổ tung: "Mặt thật kìa!!!"_
+    _Livestream bắt được 1 giây mặt {sieu_nhan_hong}, mờ, ngược sáng. Không ai nhìn rõ. Nhưng bình luận nổ tung: "Mặt thật kìa!!!"_
     ~ phat_gianh()
     ~ phat_pha_chien_dich = phat_pha_chien_dich + 1
     ~ follow(-20000)
@@ -236,7 +236,7 @@ _Mười một năm bạn không viết được bài nào. Không phải vì b�
 // ------------------------------------------------------------
 === idol_het_thoi_2010_qua_20_10 ===
 # ngay:20 # gio:09:30 # noi:tang_1
-_Ngày Phụ nữ Việt Nam. Bàn chị em ngập hoa. {dan_dau_tu} đi từng bàn chúc "8386, phát lộc nha mấy bà!", không tặng gì._
+_Ngày Phụ nữ Việt Nam. Bàn chị em đã có phong bì 2.100.000đ của công ty và 7 chiếc khăn cam giống hệt nhau của {giam_doc}. {dan_dau_tu} đi từng bàn chúc "8386, phát lộc nha mấy bà!", không tặng gì._
 _Bạn có 200 nghìn trong ví và một thùng… à không, một bịch kẹo ngậm còn dư. Có bảy chị em trong công ty._
 * [🌹 Mua bảy bông hồng lẻ ở xe hoa đầu đường, tặng mỗi người một bông.]
     ~ tien_cong(-140000)
@@ -261,11 +261,17 @@ _Bạn có 200 nghìn trong ví và một thùng… à không, một bịch kẹ
 
 // ------------------------------------------------------------
 === idol_het_thoi_2010_sinh_nhat_cong_ty ===
-# ngay:20 # gio:18:30 # noi:san_khau_cong_ty # bat_buoc
-_Sinh nhật {cong_ty} 16 tuổi. Sảnh tầng trệt treo bong bóng cam và hồng. Logo trên phông là chữ G bảy màu bản gốc năm 2010: {giam_doc} đã chọn lại sau 38 lần sửa._
-_{giam_doc} cầm micro phát biểu. Hôm nay không có từ tiếng Anh nào sai chỗ. Hôm nay giọng anh run._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18:30. Quán Ốc Đêm. Sinh nhật {cong_ty} 16 tuổi. Bàn công ty kê nối nhau, treo bong bóng cam và hồng. Logo trên băng rôn là chữ G bảy màu bản gốc năm 2010: {giam_doc} đã chọn lại sau 38 lần sửa._
+{ RANDOM(1, 2) == 1:
+    _Bác {bac_bao_ve} đứng dậy, đeo kính, đọc lá thư tay ký chữ "G" tới chòi sáng nay: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."_
+    _Cả quán im. Bác cất một phong bì dán kín vào túi áo, ngồi xuống, gắp ốc như chưa có gì._
+- else:
+    _Bác {bac_bao_ve} cầm một lá thư tay, nhìn nó rất lâu, rồi cất vào túi áo cùng một phong bì dán kín. Bác không đọc. Không ai hỏi._
+}
+_Rồi {giam_doc} cầm micro của quán. Hôm nay không có từ tiếng Anh nào sai chỗ. Hôm nay giọng anh run._
 giam_doc: Năm 2015, anh ngồi trong một quán cà phê đầu ngõ. Có một cậu sinh viên ôm đàn hát một bài về hai đứa bạn bán cá viên chiên…
-_Cả sảnh quay sang nhìn bạn._
+_Cả quán quay sang nhìn bạn._
 giam_doc: {idol_het_thoi}. Lên đây em. Hát đi.
 * [🎤 Hát "Công Viên" cho anh {giam_doc}. Đúng bản ở quán cà phê năm 2015.]
     _Bạn hát lệch tông câu thứ ba, như năm đó. Cố ý. Anh {giam_doc} nghe tới câu thứ ba thì bật cười, rồi lấy tay che mắt._
@@ -273,14 +279,14 @@ giam_doc: {idol_het_thoi}. Lên đây em. Hát đi.
     ~ phat_nt(3)
     ~ phat_tt(-5)
 * [🎤 Hát "Công Viên" cho cả công ty, kéo mọi người lên sân khấu.]
-    _{thuc_tap_sinh} lên đầu tiên. Rồi {hong_hot}, {chi_dai}, {sieu_nhan_hong}. Cuối cùng là cả sảnh. Bác {bac_bao_ve} đứng ở cửa, gõ nhịp lên cái bàn trà._
+    _{thuc_tap_sinh} đứng lên đầu tiên. Rồi {hong_hot}, {chi_dai}, {sieu_nhan_hong}. Cuối cùng là cả quán, cả mấy bàn khách lạ. Bác {bac_bao_ve} gõ nhịp lên dĩa ốc._
     ~ phat_nt(5)
     ~ follow(10000)
     ~ qh("sieu_nhan_hong", 8)
     ~ qh("chi_dai", 5)
     ~ phat_tt(-8)
 * {phat_bai_moi} [✍️ Hát bài mới: "Hát Cho Người Ta Cưới". Chưa ai từng nghe.]
-    _Cả sảnh im lặng nghe. Không ai biết lời để hát theo. Không ai cần hát theo._
+    _Cả quán im lặng nghe. Không ai biết lời để hát theo. Không ai cần hát theo._
     _Hát xong, im ba giây. Rồi anh {giam_doc} vỗ tay đầu tiên. Anh {quan_ly_idol} đứng ở góc phòng, không vỗ tay, chỉ nhìn._
     ~ phat_nt(8)
     ~ qh("giam_doc", 10)
@@ -295,8 +301,8 @@ giam_doc: {idol_het_thoi}. Lên đây em. Hát đi.
 
 // ------------------------------------------------------------
 === idol_het_thoi_2010_karaoke_tang_hai ===
-# ngay:20 # gio:22:40 # noi:karaoke
-_Sau quán ốc, tăng hai ở Karaoke Hát Cho Nhau Nghe. {giam_doc} say. Rất say._
+# ngay:20 # gio:21:00 # noi:karaoke
+_Sau quán ốc, tăng hai ở Karaoke Chú Sáu. {giam_doc} say. Rất say._
 giam_doc: Anh hứa! Tăng lương… 20%! Cả công ty! Ai quay thì quay đi, anh không sợ!
 _{hong_hot} quay. Lần này {giam_doc} nhìn thẳng vào ống kính, giơ ngón cái._
 _Rồi {giam_doc} quay sang bạn, mắt đỏ._

@@ -60,6 +60,7 @@ designer: Anh ơi, còn 7 kiểu nữa!
 * [📸 Nhờ {hong_hot} quay, rồi mới chạy xuống.]
     ~ snh_giup_nguoi()
     hong_hot: Ok ok! Em quay rồi! Anh chạy đi!
+    ~ snh_bo_chup_giup_ba_cu = true
     _Bạn đẩy xe ra khỏi ổ gà. Clip rõ nét, góc đẹp. Nhưng lúc xem lại, bạn thấy mình… tạo dáng ở giây thứ 12._
     ~ snh_no(2)
     -> sieu_nhan_hong_0610_xe_che
@@ -130,7 +131,12 @@ bac_bao_ve: Cảm ơn cậu. Nó lạc thì bác không biết tìm đâu.
 
 // ------------------------------------------------------------
 === sieu_nhan_hong_0610_clip_lan ===
-# ngay:6 # gio:20:30 # noi:nha_nguyen # dieu_kien:snh_bo_chup_giup_ba_cu
+# ngay:6 # gio:20:30 # noi:nha_nguyen
+{ not snh_bo_chup_giup_ba_cu:
+    _Tối. Clip một anh shipper đẩy xe chè giùm bà cụ ở đầu Hẻm 69 đang lan trên Tóp-tóp. Bạn xem đi xem lại. Lẽ ra người đó là bạn._
+    ~ snh_no(2)
+    -> END
+}
 _Tối. Clip bạn đẩy xe chè của Bà Bảy ra khỏi ổ gà, rồi ăn chè bằng ống hút luồn qua mũ, đang lan trên Tóp-tóp. 50.000 lượt xem… 200.000…_
 _Tin nhắn từ {dan_dau_tu}: "Anh ơi, em nhìn chart rồi. Clip này đăng lại 21:07, kèm nhạc buồn, là x4. Lần này là lên thật."_
 * [🤝 "Em làm đi. Mà đừng cắt mặt bà cụ, bà không thích."]

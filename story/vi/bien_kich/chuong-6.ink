@@ -116,16 +116,16 @@ _"Dạ chị ơi, mai là hạn nộp ô credit cuối phim. Em không dám hỏ
 === bien_kich_2910_trang_cuoi ===
 # ngay:29 # gio:23:00 # noi:gac_mai_so_7
 _Đêm 29. Gác mái. Bản thảo "Công Ty Là Gia Đình" dày {bk_trang_tieu_thuyet} trang._
-{ bk_trang_tieu_thuyet >= 160 && not bk_ban_cho_ll:
+{ bk_trang_tieu_thuyet >= 60 && not bk_ban_cho_ll:
     _Còn một chút nữa thôi. Bạn có thể gõ tới sáng._
 - else:
     _Còn xa lắm. Nhưng đêm nay vẫn có thể gõ thêm vài trang._
 }
 * [⌨️ Gõ tới sáng. Bí ngủ, phố ngủ, chỉ có bạn với cái máy.]
-    ~ bk_trang(40)
+    ~ bk_trang(50)
     ~ nghi(-30)
     ~ bk_cam(-5)
-    { bk_trang_tieu_thuyet >= 200:
+    { bk_trang_tieu_thuyet >= 110:
         _5 giờ 40 sáng. Bạn gõ chữ "HẾT" lần thứ hai trong tuần. Lần này là của bạn. Toàn bộ._
         ~ bk_cam(20)
     }

@@ -5,12 +5,11 @@
 // ------------------------------------------------------------
 === chua_te_deadline_2810_video_linh ===
 # ngay:28 # gio:09:20 # noi:phong_dung_phim # bat_buoc
-_9 giờ 20. Fanpage công ty vừa đăng một video lạ: 3 phút dựng toàn cảnh {quan_ly_idol} ngủ gục trên xe, {quan_ly_idol} cầm hai điện thoại, {quan_ly_idol} đắp áo cho {idol_het_thoi}. Góc phải khung hình thứ 2.041 có một con cú nhỏ._
-_Cuối video: "Em thích anh lâu rồi. Đừng lo, render xong là xong."_
-_{editor} đứng giữa phòng dựng, mặt trắng như màn hình lỗi._
-editor: Tui… xuất nhầm. Tui chọn nhầm "Fanpage" thay vì "Lưu nháp".
-* [🧯 "Gỡ liền. Tui gọi {hong_hot}." ]
-    hong_hot: Gỡ rồi! 4 phút, 12 nghìn lượt xem, 300 lượt chia sẻ… Gỡ được trên page, hông gỡ được trong đầu người ta.
+_9 giờ 20. {editor} ngồi giữa phòng dựng, mặt trắng như màn hình lỗi. Đêm qua 2 giờ 10, fanpage công ty tự đăng một video tên "Thai_final_v12": cảnh {quan_ly_idol} ngủ gục trên xe, {quan_ly_idol} cầm hai điện thoại, {quan_ly_idol} đắp áo cho {idol_het_thoi}. Cuối video: "Em thích anh lâu rồi. Đừng lo, render xong là xong."_
+_Sáu phút sau nó biến mất. Khoảng 2.000 lượt xem._
+editor: Tui… xuất nhầm. Tui chọn nhầm "Fanpage" thay vì "Lưu nháp". Gỡ kịp rồi. Mà 2.000 người đó…
+* [🧯 "Hai nghìn người lúc 2 giờ sáng thì 1.900 người đang ngủ gật. Để tui nhờ {hong_hot} dọn mấy cái bản lưu."]
+    hong_hot: Dọn rồi! Gỡ được trên page, hông gỡ được trong đầu người ta. Nhưng tui hứa hông nhắc.
     editor: *(ngồi phịch xuống)* Ừ.
     ~ qh("editor", 5)
 * [🤝 Ngồi xuống cạnh {editor}. Không nói gì. Đưa ly cà phê.]
@@ -20,7 +19,6 @@ editor: Tui… xuất nhầm. Tui chọn nhầm "Fanpage" thay vì "Lưu nháp".
 * [📊 "Video này… lượt tương tác cao gấp 4 lần MV đó ông."]
     editor: Ông nói câu đó lúc này thiệt hả?
     ~ qh("editor", -8)
-    ~ follow(5000)
 - _Cùng lúc đó, ở bàn số liệu, {dan_dau_tu} đứng bật dậy: "Bộ lọc của tui lần ra 80 nghìn tài khoản ảo. Tất cả đều comment 'Anh {idol_het_thoi} đỉnh nóc kịch trần'."_
 _Cả phòng quay sang {idol_het_thoi}. {idol_het_thoi} đeo kính đen vào. Trong phòng. Lúc 9 giờ 30 sáng._
 -> END
@@ -50,34 +48,34 @@ _Bạn về chỗ. Lấy cây bút đỏ, khoanh tròn ngày 29/10 trên lịch.
         ~ follow(15000)
     - else:
         _1 tiếng, 200 video, 0 ý tưởng. Một con mèo đội nồi cơm. Thế thôi._
-        ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+        ~ vu_nuoc(5)
     }
 - -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_2910_wifi_sap ===
-# ngay:29 # gio:08:30 # noi:ban_lam_viec # bat_buoc
-_Ngày Internet Quốc tế. 8 giờ 30: wifi sập. Cả công ty. Tất cả máy tính hiện cùng một con khủng long._
-_{it} bị cả công ty truy đuổi qua 3 tầng. Ở gầm cầu thang, một sợi dây mạng bị cắn đứt, bên cạnh có một con gà cao su._
+# ngay:29 # gio:09:00 # noi:ban_lam_viec # bat_buoc
+_Ngày Internet Quốc tế. 9 giờ: wifi sập. Cả công ty. Tất cả máy tính hiện cùng một con khủng long._
+_{it} bị cả công ty truy đuổi qua 3 tầng. Sau tủ mạng, một sợi dây bị cắn đứt. Dưới đáy tủ là con gà cao su của {cho}, ai đó giấu từ hôm 4/10. Nghe nói 22 giờ 47 mới có mạng lại._
 _Video của {editor} kẹt ở 99%. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua", 14 người chen nhau vào._
 _Hôm nay là đêm bạn định làm cue sheet và tải toàn bộ file Đại Nhạc Hội Siêu Nhân lên mạng._
 * [☕ Ra quán cà phê Sống Ảo. Đắt, nhưng wifi mạnh.]
     ~ tien_cong(-150000)
     _Ly nước 75 nghìn, gọi 2 ly để ngồi cả ngày. Bàn bên cạnh có {designer} đang mở 2 laptop, thấy bạn thì gập một cái lại._
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 10
+    ~ vu_nuoc(-10)
     ~ uong(30)
 * [🖥️ Ra quán net Gõ Phím. Rẻ, ồn, có máy lạnh.]
     ~ tien_cong(-20000)
     _Máy số 14. Máy số 15 là {thuc_tap_sinh}, đang in sổ giao việc cho cả công ty bằng tay nghề của người từng sống qua 3 lần hệ thống ngân hàng sập ngày quyết toán._
     thuc_tap_sinh: Dạ anh {chua_te_deadline}! Em in giùm anh phiếu chuyển file luôn nha anh, 5 phút là xong ạ!
     ~ qh("thuc_tap_sinh", 5)
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 10
+    ~ vu_nuoc(-10)
 * [✍️ Làm bằng giấy bút. Lần đầu tiên trong đời.]
     _Bạn xin {bac_bao_ve} một xấp giấy A4 và một cây bút bi. Chòi bảo vệ hôm nay thành "tổng đài nhắn tin bằng giấy": ai cần gì thì viết giấy, {bac_bao_ve} chuyển._
     bac_bao_ve: Bác chuyển thư cho người ta mười mấy năm rồi. Thêm vài tờ có sao.
     ~ qh("bac_bao_ve", 5)
     ~ vu_chuoi_ngay_it_luot = vu_chuoi_ngay_it_luot + 1
-    ~ vu_cue_sheet = vu_cue_sheet + 5
+    ~ vu_cue(5)
 - _Bộ đàm kêu rè rè. Giọng {chi_dai}: "Tất cả nghe đây. Không có mạng thì có chị. Ai cần gì, gọi bộ đàm kênh 3."_
 -> END
 
@@ -85,12 +83,12 @@ _Hôm nay là đêm bạn định làm cue sheet và tải toàn bộ file Đạ
 === chua_te_deadline_2910_bo_dam ===
 # ngay:29 # gio:15:00 # noi:sanh_tang_tret
 _15 giờ. Bộ đàm kênh 3 kêu liên tục. Cả công ty phối hợp bằng giấy, bộ đàm và chân chạy._
-chi_dai: *(bộ đàm)* {chua_te_deadline}, kênh 3. Danh sách cue cần {it} chuẩn bị âm thanh ánh sáng. Em gửi bằng gì?
+chi_dai: *(bộ đàm)* {chua_te_deadline}, kênh 3. Tiền thuê sân khấu 80 triệu chị nộp rồi, kịp hạn 17 giờ. Giờ tới em: danh sách cue cần {it} chuẩn bị âm thanh ánh sáng. Em gửi bằng gì?
 * [📻 Đọc qua bộ đàm từng cue.]
     _Bạn đọc 20 cue qua bộ đàm, mỗi cue {it} trả lời đúng một chữ: "Rồi." Nhanh hơn email._
     ~ qh("it", 5)
     ~ qh("chi_dai", 3)
-    ~ vu_cue_sheet = vu_cue_sheet + 3
+    ~ vu_cue(3)
 * [🐕 Nhét giấy vào vòng cổ {cho}, nhờ nó chạy lên phòng server.]
     _{cho} chạy lên. 5 phút sau quay về, tờ giấy vẫn trên cổ, có thêm chữ của {it}: "Ok. Mà nó ăn mất cue 12 rồi."_
     ~ qh("cho", 5)
@@ -119,13 +117,13 @@ _Cue sheet Đại Nhạc Hội Siêu Nhân: {vu_cue_sheet} trên 47. Trên bàn:
 * [🌙 Bắt đầu. 47 cue. 7 giờ 59 phải gửi.]
     -> chua_te_deadline_mg_dem_than_toc_mo_dau
 * [😶 "Mai làm. Mai là 30, Đại Nhạc Hội là 31 mà."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 30
+    ~ vu_nuoc(30)
     _Bạn đi ngủ. Lần đầu tiên trong đời, bạn nằm mơ thấy một cái deadline có mặt người._
     -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_3010_don_kho ===
-# ngay:30 # gio:08:00 # noi:gam_cau_thang # bat_buoc
+# ngay:30 # gio:10:00 # noi:gam_cau_thang # bat_buoc
 _Sáng 30/10. {hr} cho dọn kho trước họp đánh giá. Cái chổi đầu tiên đang tiến về phía gầm cầu thang, nơi {cho} cất kho báu._
 { vu_co_file:
     -> chua_te_deadline_3010_giu_kho
@@ -148,19 +146,20 @@ _Cái USB không nhãn. Nó vẫn nằm trong đống đồ đó. Đây là cơ 
     ~ phat_hien(usb_cua_vu)
     ~ qh("cho", 5)
 * [⏱️ (Không chọn kịp)]
-    _Chổi quét qua. Bao rác buộc lại. Xe rác tới lúc 9 giờ. Cái USB đi theo xe rác ra bãi Ven Đô._
+    _Chổi quét qua. Bao rác buộc lại. Xe rác tới lúc 11 giờ. Cái USB đi theo xe rác ra bãi Ven Đô._
+    ~ vu_usb_ra_bai_rac = true
     ~ vu_lo_file = vu_lo_file + 20
 - -> END
 
 = chua_te_deadline_3010_giu_kho
-_Bạn đã có file. Bạn chỉ đứng nhìn. {cho} ôm con gà cao su, nhìn cái chổi bằng ánh mắt của một ông chủ ngân hàng sắp bị kiểm toán._
+_Bạn đã có file. Bạn chỉ đứng nhìn. {cho} ôm chiếc găng tay hồng, nhìn cái chổi bằng ánh mắt của một ông chủ ngân hàng sắp bị kiểm toán._
 * [🛡️ "Anh {hr}, chỗ này để em dọn."]
     hr: Ồ? Em chủ động dọn dẹp à? Anh ghi nhận nha em.
     _Bạn "dọn" bằng cách đứng chắn trước gầm cầu thang 10 phút. Kho của {cho} được giữ nguyên._
     ~ qh("cho", 10)
     ~ qh("hr", 3)
 * [😶 Để yên.]
-    _Cái chổi quét qua. {cho} ôm được con gà cao su chạy thoát. Phần còn lại vào bao rác._
+    _Cái chổi quét qua. {cho} ôm được chiếc găng tay hồng chạy thoát. Phần còn lại vào bao rác._
     ~ qh("cho", -5)
 - -> END
 
@@ -187,8 +186,12 @@ giam_doc: {chua_te_deadline}, em có gì muốn nói không?
     giam_doc: *(bật cười)* Slogan ấy là anh in nhầm đấy. Nhưng em sống đúng nó thật.
     ~ qh("giam_doc", 2)
 * {vu_co_file && vu_lo_file < 100} [💾 "Dạ, và em xin nộp lại file gốc dự án tháng 6. Lần sau em sẽ nhớ chỗ để đồ."]
-    giam_doc: File gốc? Nó mất bao giờ?
-    _Thì ra {giam_doc} chưa từng biết nó mất. Bạn quyết định không giải thích._
+    { vu_bi_phat_thue:
+        giam_doc: Muộn một tuần. Nhưng còn hơn không. Em đưa {ke_toan} nộp bổ sung cho đoàn thuế đi.
+    - else:
+        giam_doc: File gốc? Nó mất bao giờ?
+        _Thì ra {giam_doc} chưa từng biết nó mất. Bạn quyết định không giải thích._
+    }
     ~ uy_tin = uy_tin + 5
 - { uy_tin >= 60 && vu_moc_truot <= 1 && vu_lo_file < 100:
     ~ vu_duoc_de_bat = true
@@ -205,27 +208,27 @@ giam_doc: {chua_te_deadline}, em có gì muốn nói không?
 # ngay:30 # gio:21:00 # noi:phong_gac_quan_bida
 _Tối 30/10. Đêm cuối trước Đại Nhạc Hội Siêu Nhân. Cue sheet: {vu_cue_sheet} trên 47._
 { vu_cue_sheet < 47:
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 20
+    ~ vu_nuoc(20)
     _Nước tới chân. Không. Tới gối. Tới bụng. Bạn ngồi xuống, mở file._
 - else:
     _Mọi thứ đã xong. Bạn nằm trên nệm, nghe tiếng bi dưới nhà, thấy lạ vì không có gì để lo._
 }
 _Trên bàn có một hộp bánh chuối chiên. Không có giấy nhắn. Không cần._
 ~ vu_qua_hong++
-* [💌 Nhắn {sieu_nhan_hong}: "Mai diễn vui nha anh. Mai em trả lời."]
+* [💌 Nhắn {sieu_nhan_hong}: "Mai diễn vui nha anh. Xong show em nói chuyện với anh."]
     { vu_tin_bi_khoa:
         _Tin nhắn hiện "Đã gửi". Không hiện "Đã xem"._
     - else:
         sieu_nhan_hong: Ừ. Anh biết em làm phút chót mà. Anh chờ.
-        ~ vu_tin_that_long = vu_tin_that_long + 5
+        ~ vu_tin(5)
     }
 * {vu_cue_sheet < 47} [✍️ Làm nốt cue sheet tới sáng.]
-    ~ vu_cue_sheet = vu_cue_sheet + 15
+    ~ vu_cue(15)
     ~ nghi(-40)
     { vu_cue_sheet >= 47:
         ~ vu_cue_sheet = 47
         _5 giờ sáng. Cue 47: "Pháo giấy… Go!". Xong. Bạn ngủ gục lên bàn phím._
-        ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 30
+        ~ vu_nuoc(-30)
     - else:
         _5 giờ sáng. {vu_cue_sheet} trên 47. Mắt không mở nổi nữa._
     }
@@ -249,7 +252,7 @@ _Chung kết "Giọng Ca Ước Mơ" phát trực tiếp lúc 20 giờ. Bạn đ
 * [📋 "Ông đi thì ai cầm lịch cue đội nghệ sĩ?"]
     thanh_xin_nghi: Dạ… em làm sẵn rồi nè anh. *(đưa tờ giấy, chữ đẹp tới bất ngờ)*
     _Lần đầu tiên bạn thấy {thanh_xin_nghi} làm xong việc trước hạn. Hóa ra ai có deadline thật cũng biết làm sớm._
-    ~ vu_cue_sheet = vu_cue_sheet + 2
+    ~ vu_cue(2)
     ~ qh("thanh_xin_nghi", 5)
 * [🙏 "Ở lại giùm tui đi, tối nay tui cần người."]
     thanh_xin_nghi: … Dạ. *(cúi đầu)*
@@ -258,65 +261,75 @@ _Chung kết "Giọng Ca Ước Mơ" phát trực tiếp lúc 20 giờ. Bạn đ
 - -> END
 
 // ------------------------------------------------------------
+=== chua_te_deadline_3110_phong_cho ===
+# ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
+{ nguyen_theo_ll: -> ben_kia_duong }
+_18 giờ 30. Phòng chờ. {sieu_nhan_hong} ngồi một mình, cái mũ đặt trên đùi, đĩa bánh chuối chiên chưa đụng miếng nào._
+{ vu_tin_bi_khoa:
+    _{sieu_nhan_hong} thấy bạn ở cửa, đội mũ lên liền. "Chào producer!" Giọng chào máy quay._
+    -> END
+}
+sieu_nhan_hong: Ờm… em tới hỏi cue hả?
+* {vu_hen_dem_hong || vu_tra_loi_2710 == "hen_31"} [🤝 "Hông. Em tới nói trước: xong show, em ngồi với anh. Lần này hông để phút chót."]
+    ~ vu_da_tra_loi_nguyen = true
+    ~ vu_tin(5)
+    sieu_nhan_hong: *(ngẩng lên)* … Ừ. Anh chờ.
+* [🍌 Ngồi xuống, ăn một miếng bánh chuối chiên của anh.]
+    ~ an(10)
+    ~ vu_tin(5)
+    _Hai người ăn bánh, không nói gì. Lúc bạn đứng dậy đi, {sieu_nhan_hong} nói nhỏ: "Cảm ơn em đã làm show cho anh."_
+    ~ vu_da_tra_loi_nguyen = true
+* [📋 "Dạ, cue 20 giờ anh bước ra từ trái nha. Đừng tạo dáng sớm."]
+    sieu_nhan_hong: Dạ… ờm, trái. Ừ. Cue. *(đội mũ lên)*
+    ~ vu_tin(-3)
+- -> END
+
+= ben_kia_duong
+_18 giờ 30. Phòng chờ của {sieu_nhan_hong} trống trơn. Bên kia đường, màn hình LED của LL đang thử hình bộ đồ hồng viền xanh lá chuối._
+_Điện thoại bạn rung. {sieu_nhan_hong} nhắn từ tầng thượng tòa nhà kính: "Tối nay em làm show bên đó hả? Anh nhìn qua thấy đèn hồng đẹp ghê."_
+* {not vu_tin_bi_khoa} [💌 "Dạ. Xong show anh qua đường ăn chè hông? Quán đầu Hẻm 69 mở tới khuya."]
+    ~ vu_da_tra_loi_nguyen = true
+    ~ vu_tin(5)
+    _Ba chấm hiện lên, rất lâu. "Ừ. Anh qua."_
+* [📋 Úp điện thoại. Cue sheet còn một ô trống cần lấp.]
+    ~ vu_cue(1)
+- -> END
+
+// ------------------------------------------------------------
 === chua_te_deadline_3110_canh_ga ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đại Nhạc Hội Siêu Nhân. Bạn đeo tai nghe đứng cánh gà, tay cầm cue sheet. Dưới sân khấu, biển người đội mũ hồng._
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
+_19 giờ 15. Mười lăm phút nữa mở màn. Bạn đeo tai nghe đứng cánh gà, tay cầm cue sheet. Dưới sân khấu, khán giả đội mũ hồng bắt đầu đứng sát rào._
 { vu_cue_sheet >= 47:
-    _47 cue. Mỗi cue một tiếng "Go!". Lần đầu tiên trong đời, bạn biết chính xác điều gì sẽ xảy ra trong 3 tiếng tới._
+    _47 cue. Cue 1: đèn tắt. Cue 2: phim của {bien_kich}. Cue 3: video "16 năm" của {editor}. Lần đầu tiên trong đời, bạn biết chính xác điều gì sẽ xảy ra trong 3 tiếng tới._
 - else:
     _Cue sheet có {vu_cue_sheet} dòng. Phần còn lại là… cảm hứng. Và cầu nguyện._
 }
-it: *(bộ đàm)* Cue 1?
-* [🎬 "Cue 1: đèn tắt. Cue 2: phim của {bien_kich}… Go!"]
-    _Màn hình sáng lên. "Người Hùng Không Tên". Rồi clip "16 năm" của {editor}._
-    { vu_co_file:
-        _Cảnh drone tháng 6 bay qua cầu lúc hoàng hôn. Cả khán đài "ồ" lên một tiếng._
-        { vu_file_truoc_2010:
-            ~ follow(20000)
-        - else:
-            ~ follow(50000)
-        }
-    - else:
-        _Clip "16 năm" toàn ảnh chụp điện thoại. Khán giả vỗ tay lịch sự._
-    }
-* {vu_cue_sheet < 47} [😰 "Cue 1 là… đèn… sáng? À không, tắt!"]
-    _Đèn sáng, rồi tắt, rồi sáng. Khán giả tưởng hiệu ứng, vỗ tay. {it} thở dài vào bộ đàm một tiếng rất dài._
-    ~ qh("it", -5)
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
-- _Giữa đêm diễn. {sieu_nhan_hong} đang hát câu buồn nhất của "Hồng Là Thái Độ". Bộ đàm của {it}: "Pháo giấy khi nào?"_ # hen_gio:4
-* {vu_cue_sheet >= 47} [📋 Nhìn cue sheet: "Chưa. Cue 47. Chờ câu cuối."]
-    _Bạn chờ. Câu cuối. Nguyên giơ tay. "Pháo giấy… Go!". Pháo hồng phủ kín sân khấu. Khán đài nổ tung._
-    ~ follow(150000)
-    ~ uy_tin = uy_tin + 10
-* [🎯 Đoán: "Go!"]
+{ nguyen_theo_ll:
+    _Dòng "20:00 – Siêu Nhân Hồng" giờ là một ô trống. {chi_dai} gạch nó bằng bút đỏ, viết bên cạnh: "Ai lên được thì lên."_
+}
+it: *(bộ đàm)* Chốt lần cuối. Pháo giấy khi nào?
+* {vu_cue_sheet >= 47} [📋 "Cue 47. Chờ câu cuối, tui hô."]
+    ~ vu_cue_chuan = true
+    ~ chung_tien_do_dem_hong = chung_tien_do_dem_hong + 15
+    it: Rồi.
+    _Một chữ. Từ {it}, một chữ đó bằng một bài diễn văn._
+* [🎯 "Lúc nào thấy đẹp thì tui hô."]
     { RANDOM(1, 10) <= 4:
-        _Trúng! Pháo nổ đúng lúc Nguyên giơ tay. Có những người sinh ra để đoán đúng._
-        ~ follow(60000)
+        ~ chung_tien_do_dem_hong = chung_tien_do_dem_hong + 5
+        it: … Rồi. Tui tin cái mắt của ông.
     - else:
-        _Pháo nổ giữa câu buồn nhất. Khán giả giật mình, rồi cười. Nguyên đứng giữa mưa pháo giấy, ngơ ngác._
-        ~ follow(-20000)
-        ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 20
+        ~ chung_tien_do_dem_hong = chung_tien_do_dem_hong - 10
+        ~ vu_nuoc(10)
+        it: *(thở dài vào bộ đàm rất lâu)* Rồi.
     }
-* [⏱️ (Không chọn kịp)]
-    _Không ai ra lệnh. {cho} chạy lên sân khấu trước. Cả khán đài hét. {cho} ngồi xuống cạnh Nguyên, nhìn khán giả như chủ show._
-    ~ follow(10000)
-    ~ scandal()
-- _Cuối đêm, {sieu_nhan_hong} đứng giữa sân khấu, tay để lên mũ._
-{ vu_tin_that_long >= 60 && not vu_tin_bi_khoa:
-    _Nguyên nhìn về phía cánh gà. Về phía bạn._
+* [🙏 "Chị {chi_dai} ơi, chị cầm cue giùm em…"]
+    ~ vu_so_lan_nho_xiu++
+    ~ vu_nuoc(15)
+    ~ chung_tien_do_dem_hong = chung_tien_do_dem_hong + 5
+    chi_dai: *(bộ đàm)* Đưa đây. Em đứng cạnh chị, học.
+- { vu_cue_sheet < 30:
+    ~ chung_tien_do_dem_hong = chung_tien_do_dem_hong - 20
 }
--> chua_te_deadline_3110_sau_show
-
-= chua_te_deadline_3110_sau_show
-_22 giờ 30. Show tan. Sân khấu tắt đèn từng dãy. Bạn tháo tai nghe. Tai vẫn còn ù tiếng "Go!"._
-{ vu_hen_dem_hong && not vu_tin_bi_khoa:
-    _Nguyên ngồi ở mép sân khấu, không mũ, tóc bết mồ hôi. Đồng hồ: 22 giờ 31. Còn 1 tiếng 28 phút tới hết ngày 31._
-}
-* {vu_hen_dem_hong && not vu_tin_bi_khoa} [🩷 Đi tới. Lần này không để tới phút chót.]
-    ~ vu_da_tra_loi_nguyen = true
-    -> chua_te_deadline_3010_danh_gia
-* [🎧 Ở lại cánh gà, cuộn dây cáp, đếm lại cue.]
-    -> chua_te_deadline_3010_danh_gia
-* [😴 Nằm xuống bãi cỏ sau sân khấu.]
-    ~ nghi(20)
-    -> chua_te_deadline_3010_danh_gia
+~ chung_tien_do_dem_hong = gioi_han(chung_tien_do_dem_hong)
+_19 giờ 29. Bạn hít một hơi. "Cue 1: đèn tắt… Go."_
+-> END

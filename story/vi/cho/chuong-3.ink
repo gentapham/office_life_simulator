@@ -312,8 +312,7 @@ _Bàn buffet cao. Mùi gà rán, mùi chả giò, mùi bánh chuối chiên (cò
 # ngay:16 # gio:20:00 # noi:choi_bao_ve # bat_buoc
 _Tối. Bác bật cái tivi nhỏ trong chòi. Màn hình hiện một sân khấu sáng choang, chữ to: "HỒNG HAY KHÔNG HỒNG"._
 _Và giữa sân khấu: NÓ._
-bac_bao_ve: Bla bla… HỒNG… bla. # phu_de:Đây, anh {sieu_nhan_hong} lên tivi rồi.
-~ follow(80000)
+bac_bao_ve: Bla bla… HỒNG… bla. # phu_de:Đây, anh {sieu_nhan_hong} lên tivi rồi. Quay từ chiều, giờ mới phát.
 * [😤 Sủa vào màn hình. Không ngừng.]
     cho: GÂU! GÂU! GÂU GÂU GÂU!
     ~ ch_lan_sua_hong = ch_lan_sua_hong + 1

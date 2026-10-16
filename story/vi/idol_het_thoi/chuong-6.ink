@@ -24,30 +24,30 @@ sieu_nhan_hong: *(giọng nhỏ, rụt rè)* Dạ… anh {idol_het_thoi}… em m
     ~ phat_song_ca = true
     ~ phat_tt(10)
     ~ qh("sieu_nhan_hong", 5)
-    quan_ly_idol: *(đứng ở cửa từ lúc nào)* {idol_het_thoi}… Đại Nhạc Hội là show của Nguyên mà em…
+    quan_ly_idol: *(đứng ở cửa từ lúc nào)* {idol_het_thoi}… Đại Nhạc Hội là show của {sieu_nhan_hong} mà em…
 * [🎶 "Hát chung. Mỗi người một nửa. Mà em phải nhớ là CHUỐI chiên."]
     sieu_nhan_hong: *(bật cười, dụi mắt)* Chuối chiên! Em nhớ rồi! Em viết lên tay luôn!
-    _Nguyên lấy bút bi viết lên mu bàn tay trái, ngay cạnh vết sẹo nhỏ: "CHUỐI"._
+    _{sieu_nhan_hong} lấy bút bi viết lên mu bàn tay trái, ngay cạnh vết sẹo nhỏ: "CHUỐI"._
     ~ phat_song_ca = true
     ~ phat_sua_loi_nguyen = phat_sua_loi_nguyen + 1
     ~ qh("sieu_nhan_hong", 25)
     ~ phat_tt(-10)
     _Giờ chỉ cần một người làm bản remix "Công Viên Hồng"._
 * [😤 "Em có tiền, em có fan, giờ em lấy luôn bài của anh hả?"]
-    _Nguyên đội mũ lại. Đứng dậy. Đi ra. Không nói gì._
+    _{sieu_nhan_hong} đội mũ lại. Đứng dậy. Đi ra. Không nói gì._
     ~ qh("sieu_nhan_hong", -30)
     ~ follow(-10000)
     ~ phat_pha_chien_dich = phat_pha_chien_dich + 1
     ~ phat_tt(10)
-    _Chiều đó Nguyên hủy một buổi quay. Lần đầu tiên không phải vì đi giúp ai._
+    _Chiều đó {sieu_nhan_hong} hủy một buổi quay. Lần đầu tiên không phải vì đi giúp ai._
 - -> END
 
 = khong_moi
 _Phòng chờ hé cửa. {sieu_nhan_hong} đang tập "Công Viên" một mình, không nhạc. Hát sai đúng câu đó: "…thích ăn khoai chiên…" Rồi tự gõ đầu mình._
-_Nguyên không thấy bạn. Hoặc thấy, mà không dám mời._
+_{sieu_nhan_hong} không thấy bạn. Hoặc thấy, mà không dám mời._
 * {phat_tinh_tuong <= 60} [🎤 Gõ cửa: "Lấy hơi ở bụng. Đừng ở cổ. Và là CHUỐI."]
     sieu_nhan_hong: *(giật mình)* Dạ… dạ! Anh dạy em thêm được hông?
-    _Bạn dạy 30 phút. Nguyên hát đúng được 2 lần trong 10 lần. Vậy là tiến bộ._
+    _Bạn dạy 30 phút. {sieu_nhan_hong} hát đúng được 2 lần trong 10 lần. Vậy là tiến bộ._
     ~ phat_day_nguyen = true
     ~ phat_sua_loi_nguyen = phat_sua_loi_nguyen + 1
     ~ qh("sieu_nhan_hong", 15)
@@ -57,7 +57,7 @@ _Nguyên không thấy bạn. Hoặc thấy, mà không dám mời._
     _Tiếng hát trong phòng chờ tắt ngay._
     ~ qh("sieu_nhan_hong", -10)
     ~ phat_tt(5)
-* [😶 Đóng cửa giùm cho Nguyên tập.]
+* [😶 Đóng cửa giùm cho {sieu_nhan_hong} tập.]
     ~ qh("sieu_nhan_hong", 3)
 - -> END
 
@@ -156,11 +156,11 @@ em_be: Chú ơi hát lại đi! Hát lại cái bài cá viên chiên!
     ~ phat_nt(5)
     ~ phat_tt(-15)
     ~ cang_thang(-20)
-    { phat_tinh_tuong <= 40:
-        _Chị áo dài đưa bạn tấm danh thiếp: "Mùa cưới năm nay em kín lịch. Anh nhận hết hông? Em đặt cọc luôn."_
-        ~ tien_cong(20000000)
+    { phat_tinh_tuong <= 60:
+        _Chị áo dài đưa bạn tấm danh thiếp: "Tiệc cưới Hạnh Phúc Trăm Năm. Mùa cưới năm nay em kín lịch. Anh nhận hết hông? Em đặt cọc luôn."_
+        ~ phat_tra_no(20000000)
         ~ phat_so_show = phat_so_show + 1
-        _Hai mươi triệu tiền cọc cho cả mùa cưới. Bạn cầm phong bì, tay run hơn lúc nhận cúp năm 2015._
+        _Hai mươi triệu tiền cọc cho cả mùa cưới. Bạn chuyển thẳng cho bà quản lý Sky Ảo, trừ vào tiền nhà. Bạn cầm tờ biên nhận, tay run hơn lúc nhận cúp năm 2015._
     }
 * [📖 Kể cho 7 người nghe chuyện năm 2015, rồi mới hát lại.]
     _Bà cụ ngồi nghe hết. Em bé ngủ gục trên vai mẹ. Chú chạy bộ đã chạy đi. Còn 4 người. Bốn người nghe thật._
@@ -213,7 +213,7 @@ chu_tiem_cam_do: Chuộc hông con? 6 triệu, thêm 300 nghìn lãi. Mai là ti
 // ------------------------------------------------------------
 === idol_het_thoi_3010_don_kho ===
 # ngay:30 # gio:08:20 # noi:gam_cau_thang
-_Sáng sớm, hiếm hoi bạn tới trước 9 giờ. {hr} đang chỉ đạo dọn kho trước buổi họp đánh giá. Hai anh lao công đang lôi đồ dưới gầm cầu thang ra: chìa khóa, son môi, điện thoại cũ, một con gà cao su, một chiếc găng tay hồng._
+_Sáng sớm, hiếm hoi bạn tới trước 9 giờ. {hr} đang chỉ đạo dọn kho trước buổi họp đánh giá. Hai anh lao công đang lôi đồ dưới gầm cầu thang ra: chìa khóa, son môi, điện thoại cũ, một chiếc tất sọc cam, một chiếc găng tay hồng._
 _Kho báu của {cho}. {cho} đứng đó, sủa không ra tiếng, nhìn từng món bị bỏ vào bao rác._
 * [🐾 Đứng chắn trước gầm cầu thang: "Đồ này của anh. Anh gửi đó. Đừng dọn."]
     hr: Của anh {idol_het_thoi} hết hả? Son môi cũng của anh?
@@ -243,7 +243,7 @@ giam_doc: {idol_het_thoi}. Anh hỏi em một câu thôi. Em muốn ở lại đ
     giam_doc: *(nhìn bạn rất lâu)* Năm 2015 em cũng nói câu đấy. Ở quán cà phê.
     ~ qh("giam_doc", 10)
     ~ phat_tt(-10)
-* {phat_song_ca} [🎶 "Để đêm mai hát 'Công Viên Hồng' với Nguyên. Rồi để anh quyết."]
+* {phat_song_ca} [🎶 "Để đêm mai hát 'Công Viên Hồng' với {sieu_nhan_hong}. Rồi để anh quyết."]
     giam_doc: *(lần đầu trong tháng, cười thật)* Thế thì đêm mai anh ngồi hàng đầu.
     ~ qh("giam_doc", 8)
     ~ qh("sieu_nhan_hong", 5)
@@ -292,43 +292,60 @@ _22:00. Anh {giam_doc} nhắn group như mọi tối: "Mai cả nhà mình cháy
 // ------------------------------------------------------------
 === idol_het_thoi_3110_hau_truong ===
 # ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
-_Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Hậu trường ồn như chợ. Cả công ty hóa trang Halloween. {giam_doc} mặc đồ "Ông Kẹ Ngân Hàng", không ai dám cười._
-{ phat_song_ca and phat_nguoi_remix != "" and qh_sieu_nhan_hong >= 50:
+_Hậu trường Đại Nhạc Hội Siêu Nhân, quảng trường mới phía đông bắc. Ồn như chợ. Cả công ty hóa trang Halloween. {giam_doc} mặc đồ "Ông Kẹ Ngân Hàng", không ai dám cười._
+{ nguyen_theo_ll:
+    -> vang_nguyen
+}
+{ phat_song_ca and phat_nguoi_remix != "" and qh_sieu_nhan_hong >= 40:
     ~ phat_vai_dem_hong = "song_ca"
-    _Danh sách tiết mục: số 3, "Công Viên Hồng", {sieu_nhan_hong} và {idol_het_thoi}. Tên bạn in cùng cỡ chữ với tên Nguyên._
+    _Danh sách tiết mục: "Công Viên Hồng", {sieu_nhan_hong} và {idol_het_thoi}. Tên bạn in cùng cỡ chữ với tên {sieu_nhan_hong}._
 - else:
     { phat_gia_han:
         ~ phat_vai_dem_hong = "mo_man"
         _Danh sách tiết mục: sau phim ngắn và video "16 năm", phần ca nhạc mở màn: {idol_het_thoi}, "Công Viên"._
     - else:
         ~ phat_vai_dem_hong = "khan_gia"
-        _Danh sách tiết mục không có tên bạn. Bạn có một tấm vé. Hàng cuối._
+        _Danh sách tiết mục không có tên bạn. Bạn đứng chung với khán giả, sát sân khấu._
     }
 }
 _Sau cánh gà, dây micro của {sieu_nhan_hong} nằm ngay dưới chân bạn. Không ai để ý. Một cú giật là đủ._
-* [😤 Giật dây micro.]
+* [😤 Rút đầu jack micro khỏi bàn mixer.]
     ~ phat_vai_dem_hong = "pha_dam"
     ~ phat_gianh()
     ~ phat_pha_chien_dich = phat_pha_chien_dich + 1
-    _Bạn cúi xuống. Tay bạn chạm vào dây. Bạn giật._
-    _Ba mươi phút sau, khi Nguyên bước ra, micro câm. Ba mươi giây im lặng trước năm nghìn khán giả. {it} chạy như bay._
-    ~ follow(-50000)
     ~ scandal()
+    _Bạn cúi xuống. Tay bạn chạm vào dây. Bạn giật. Đầu jack bung ra, nằm im dưới gầm bàn. Không ai thấy. Trừ anh {quan_ly_idol}, đang đứng ở cửa cánh gà._
+    ~ qh("quan_ly_idol", -25)
 * [🤝 Gom dây micro lại, dán băng keo xuống sàn cho khỏi ai vấp.]
     it: *(đi ngang, nhìn băng keo)* …Cảm ơn.
     ~ qh("it", 5)
     ~ qh("sieu_nhan_hong", 3)
-* {co(gang_tay_hong)} [🧤 Đưa Nguyên chiếc găng tay hồng: "Của em nè. Tìm được ở kho của con {cho}."]
+* {co(gang_tay_hong)} [🧤 Đưa {sieu_nhan_hong} chiếc găng tay hồng: "Của em nè. Tìm được ở kho của con {cho}."]
     sieu_nhan_hong: *(đeo vào, một tay hồng cũ, một tay hồng mới)* Anh… tìm cho em hả? Trời ơi…
     ~ mat(gang_tay_hong)
     ~ qh("sieu_nhan_hong", 15)
     ~ qh("cho", -5)
 - -> END
 
+= vang_nguyen
+~ phat_vai_dem_hong = "thay_nguyen"
+_Phòng chờ của {sieu_nhan_hong} trống trơn. Đĩa bánh chuối chiên vẫn nằm đó, đúng điều khoản số 4. Bên kia đường, màn hình LED trên tòa LL chiếu chữ "Hồng Ngoại"._
+_{chi_dai} đi thẳng tới chỗ bạn, bộ đàm trên tay._
+chi_dai: {idol_het_thoi}. Không có {sieu_nhan_hong}. Sân khấu không thể trống. Ông lên được hông?
+* [🎤 "Được. Đưa micro đây."]
+    ~ phat_tt(-10)
+    ~ qh("chi_dai", 10)
+    _Bạn tháo kính đen, bỏ vào túi áo. Tối nay không cần nó._
+* [🕶️ "Lên thì lên. Mà tên anh phải in to."]
+    ~ phat_tt(5)
+    chi_dai: Không có thời gian in. Lên đi.
+- _Anh {quan_ly_idol} đưa bạn chai nước, không nói gì. Hai điện thoại của anh đều tắt._
+-> END
+
 // ------------------------------------------------------------
 === idol_het_thoi_3110_dem_hong ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đại Nhạc Hội Siêu Nhân bắt đầu. Phim ngắn "Người Hùng Không Tên" mở màn, rồi video "16 năm" của {editor}. Năm nghìn người ngồi kín bãi. Cùng giờ, ở Đài Tivi Hóng, chung kết "Giọng Ca Ước Mơ" chuẩn bị lên sóng._
+# ngay:31 # gio:19:20 # noi:san_khau_dem_hong # bat_buoc
+_19:20. Mười phút nữa đèn tắt. Cùng giờ này, ở Đài Tivi Hóng, chung kết "Giọng Ca Ước Mơ" chuẩn bị lên sóng._
 { phat_vai_dem_hong:
 - "song_ca":
     -> song_ca
@@ -336,72 +353,76 @@ _19 giờ 30. Đại Nhạc Hội Siêu Nhân bắt đầu. Phim ngắn "Ngườ
     -> mo_man
 - "pha_dam":
     -> pha_dam
+- "thay_nguyen":
+    -> thay_nguyen
 - else:
     -> khan_gia
 }
 
 = song_ca
-_Tiết mục số 3. Đèn tắt. Nhạc dạo của bản remix vang lên: vẫn là "Công Viên", nhưng nhanh hơn, hồng hơn, có tiếng trống như tim đập._
+_Cánh gà. {sieu_nhan_hong} đứng cạnh bạn, giơ mu bàn tay trái lên cho bạn xem: chữ "CHUỐI" viết bằng bút bi, đã tô lại ba lần._
 { phat_nguoi_remix == "bao":
-    _Giữa bản remix, chèn một đoạn giọng mộc năm 2015, giọng bạn năm 19 tuổi. Năm nghìn người im lặng nghe một cậu sinh viên hát._
+    _Trong bản remix có chèn một đoạn giọng mộc năm 2015, giọng bạn năm 19 tuổi. Lát nữa cả quảng trường sẽ nghe một cậu sinh viên hát._
 }
-sieu_nhan_hong: *(vào micro)* Ngày xưa có đôi bạn thân…
-_Bạn hát câu tiếp theo. Hai giọng, một bài. Tới câu đó, Nguyên nhìn mu bàn tay trái, đọc to: "…thích ăn CHUỐI chiên!"_
-_Năm nghìn người hét theo. Có người đứng dậy nhảy. Có người khóc. {giam_doc} ở hàng đầu, bộ đồ Ông Kẹ Ngân Hàng ướt đẫm nước mắt._
+sieu_nhan_hong: *(nói nhỏ)* Anh ơi, em run.
 ~ phat_song_ca_dem_hong = true
-~ follow(150000)
-~ phat_nt(20)
-* [🕶️ Tháo kính đen, ném xuống khán giả.]
-    _Một em bé bắt được. Đeo vào. Kính to che hết nửa mặt._
+* [🕶️ Tháo kính đen, đeo lên mũ {sieu_nhan_hong}: "Giờ em ngầu rồi. Hết run."]
+    sieu_nhan_hong: *(cười sau lớp mũ)* Ngầu thiệt!
     ~ phat_tt(-10)
-* [🎶 Lùi lại nửa bước, để Nguyên hát điệp khúc cuối một mình.]
-    _Nguyên hát. Đúng lời. Khán giả hát theo. Bạn đứng phía sau, nhìn lưng áo hồng, và lần đầu tiên không thấy ghen._
+    ~ qh("sieu_nhan_hong", 5)
+* [🎶 "Điệp khúc cuối em hát một mình. Anh đứng sau."]
+    sieu_nhan_hong: Thiệt hả anh?
+    _Bạn gật đầu. Lần đầu tiên bạn nhường điệp khúc cho ai đó mà không thấy ghen._
     ~ qh("sieu_nhan_hong", 10)
     ~ phat_tt(-10)
-- -> END
+- _19:30. Đèn tắt. Bạn nghe tiếng tim mình to hơn tiếng trống._
+-> END
 
 = mo_man
-_Phần ca nhạc mở màn. Bạn bước ra với "Công Viên". Năm nghìn người. Không có ai đeo áo in hình bạn, trừ một người: cô fan cuồng số 1, giơ băng rôn "Công Viên muôn năm"._
-{ phat_noi_tieng >= 50:
-    _Tới điệp khúc, nửa bãi hát theo. Bạn nghe được cả giọng anh {quan_ly_idol} ở cánh gà._
-    ~ follow(30000)
-    ~ phat_nt(5)
-- else:
-    _Tới điệp khúc, vài trăm người hát theo. Số còn lại đang chờ Siêu Nhân Hồng. Vậy cũng được._
-    ~ follow(5000)
-}
-* [😇 Kết bài: "Mời mọi người đón Siêu Nhân Hồng!"]
-    _Bạn nhường sân khấu. Khi đi vào cánh gà, Nguyên đập tay với bạn._
+_Cánh gà. Sau phim ngắn và video "16 năm" là tới bạn. Ngoài kia, sát sân khấu, có một băng rôn "Công Viên muôn năm" của cô fan cuồng số 1._
+* [😇 Ghi vào giấy note: "Hát xong mời {sieu_nhan_hong} ra. Đừng hát thêm."]
+    _Bạn dán tờ note lên mặt sau micro, chỗ chỉ mình bạn thấy._
     ~ qh("sieu_nhan_hong", 5)
-    ~ follow(10000)
-* [🕶️ Hát thêm một bài, dù không có trong kịch bản.]
-    _{chi_dai} cầm bộ đàm: "Phát. Ra." Bạn ra._
+    ~ phat_tt(-5)
+* [🕶️ Nhẩm thêm một bài nữa, phòng khi khán giả đòi.]
+    _{chi_dai} cầm bộ đàm, nhìn bạn: "{idol_het_thoi}. Một bài. Hết." Bạn gật. Bạn vẫn nhẩm._
     ~ phat_gianh()
-    ~ follow(-5000)
-- -> END
+    ~ phat_tt(5)
+- _19:30. Đèn tắt._
+-> END
 
 = pha_dam
-_Micro của Nguyên câm 30 giây. Năm nghìn người xì xào. Rồi Nguyên tháo mũ, hát không micro, hét thật to cho hàng cuối nghe. Có người quay lại. Có người cười._
-_Bạn đứng trong bóng tối cánh gà. Không ai biết bạn làm. Trừ anh {quan_ly_idol}, đang nhìn bạn, và không nói gì._
-~ qh("quan_ly_idol", -25)
+_Cánh gà. Đầu jack micro vẫn nằm dưới gầm bàn mixer. {it} đang kiểm tra lần cuối, chưa thấy._
 * [😶 Đi ra cổng sau.]
     ~ phat_tt(5)
-* [🔌 Chạy ra cắm lại dây micro.]
-    _Bạn cắm lại. Micro sống lại giữa câu hát. Nguyên quay lại nhìn cánh gà. Không biết ai cắm. Gật đầu cảm ơn._
-    ~ follow(20000)
+    _Bạn đứng ngoài cổng sau, nghe tiếng nhạc mở màn vọng ra. Bạn không quay lại._
+* [🔌 Cúi xuống, cắm lại đầu jack.]
+    _Bạn cắm lại. Không ai biết. {sieu_nhan_hong} đi ngang, gật đầu chào bạn như mọi khi._
     ~ qh("quan_ly_idol", 10)
-- -> END
+    ~ phat_pha_chien_dich = phat_pha_chien_dich - 1
+- _19:30. Đèn tắt._
+-> END
+
+= thay_nguyen
+_Cánh gà. Danh sách tiết mục bị gạch hết, chỉ còn một dòng viết tay của {chi_dai}: "{idol_het_thoi}. Công Viên. Hát tới khi nào khán giả về."_
+_Sát sân khấu chỉ có mấy chục người. Họ tới để xem một người mặc đồ hồng. Họ sẽ thấy một người đeo kính đen._
+* [🎤 Không cần nhạc nền. Chỉ cần cây đàn.]
+    ~ phat_nt(5)
+    ~ phat_tt(-10)
+    _Bạn mượn cây đàn thùng của ban nhạc. Mười một năm rồi bạn không hát với đàn trước đám đông._
+* [🎶 Nhờ {it} chiếu một vệt đèn hồng lên chỗ trống bên cạnh.]
+    ~ qh("it", 5)
+    ~ phat_nt(3)
+    _Bạn sẽ hát cạnh một vệt sáng hồng. Cho ai đó không có mặt._
+- _19:30. Đèn tắt._
+-> END
 
 = khan_gia
-_Hàng cuối. Bạn đeo kính đen, ngồi giữa hai người lạ. Bên trái là một bác xe ôm, bên phải là một cô sinh viên đang livestream._
-_Siêu Nhân Hồng hát. Rồi giữa bài, Nguyên dừng lại, nói vào micro:_
-sieu_nhan_hong: Bài tiếp theo là của một đàn anh em rất quý. Ảnh dạy em là CHUỐI chiên. Hông phải khoai.
-_Nhạc dạo "Công Viên" vang lên. Cô sinh viên bên cạnh hát theo. Bác xe ôm cũng hát theo._
-* [🎤 Hát theo từ hàng cuối, thật to.]
-    _Không ai biết giọng to nhất hàng cuối là ai. Nhưng cô sinh viên quay sang nhìn bạn rất lâu._
+_Sát rào chắn. Bạn đeo kính đen, đứng giữa hai người lạ. Bên trái là một bác xe ôm, bên phải là một cô sinh viên đang livestream._
+* [🎤 Hỏi cô sinh viên: "Em có biết bài 'Công Viên' hông?"]
+    _Cô sinh viên gật đầu, hát luôn câu đầu. Sai lời: "khoai chiên". Bạn sửa: "chuối". Cô quay sang nhìn bạn rất lâu._
     ~ phat_nt(3)
-    ~ follow(5000)
-* [😶 Ngồi im nghe bài của mình.]
-    _Bạn nghe bài của mình như một khán giả. Lần đầu tiên. Nó hay hơn bạn nhớ._
+* [😶 Đứng im, chờ đèn tắt.]
     ~ phat_tt(-5)
-- -> END
+- _19:30. Đèn tắt._
+-> END

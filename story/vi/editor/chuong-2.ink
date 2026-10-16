@@ -27,11 +27,11 @@ _Tin nhắn của {truong_phong} gửi lúc 8:31: "{editor} vắng họp giao ba
 // ------------------------------------------------------------
 === editor_0610_chup_poster ===
 # ngay:6 # gio:15:30 # noi:phong_dung_phim # bat_buoc
-_Buổi chụp poster sáng nay bể kèo: {sieu_nhan_hong} bỏ ngang để đi giúp một bà cụ đẩy xe chè. Cả đoàn ngồi chờ ba tiếng._
-_Nhưng {hong_hot} quay được hết bằng điện thoại. 4 phút rung lắc, sai màu, có cả ngón tay {hong_hot} che một góc._
+_Buổi chụp poster sáng nay bể kèo: khoảng 10 giờ 30, {sieu_nhan_hong} bỏ ngang, chạy xuống đầu Hẻm 69 đẩy xe chè của Bà Bảy ra khỏi ổ gà. Cả đoàn ngồi chờ gần một tiếng._
+_Một người qua đường quay được hết bằng điện thoại, rồi gửi cho {hong_hot}. 4 phút rung lắc, sai màu, có cả ngón tay người quay che một góc._
 quan_ly_idol: *(xông vào phòng dựng, hai điện thoại trên tay)* {editor}! Cái clip bà cụ, em cứu được hông? Phải biến cái này thành PR trước 6 giờ chiều. Đừng ai đăng gì hết khi chưa có bản của em!
 * [🎨 Cứu Màu, chống rung, cắt còn 59 giây, nhạc piano nhẹ. Không thêm chữ.]
-    ~ follow(30000)
+    ~ follow(20000)
     ~ uy_tin = uy_tin + 5
     ~ qh("quan_ly_idol", 10)
     ~ ed_can(3)
@@ -40,11 +40,11 @@ quan_ly_idol: *(xông vào phòng dựng, hai điện thoại trên tay)* {edito
     quan_ly_idol: *(xem xong, im ba giây)* Trời. Em… em giỏi quá. Cảm ơn em nha.
     _Ba giây im lặng đó, bạn sẽ dựng lại trong đầu cả tuần._
 * [✂️ Dựng kiểu meme: nhạc hành động, chữ to "SIÊU NHÂN BỎ VIỆC ĐI ĐẨY XE".]
-    ~ follow(15000)
+    ~ follow(10000)
     ~ qh("hong_hot", 10)
     quan_ly_idol: Hài ha. *(cười mệt)* Mà hơi… hơi giống chọc ảnh. Thôi đăng đi, kịp giờ là được.
 * [🦉 Dựng bản đẹp, rồi giấu thêm một con cú ở khung hình thứ 812.]
-    ~ follow(28000)
+    ~ follow(18000)
     ~ ed_dau_cu_chung_minh = ed_dau_cu_chung_minh + 1
     ~ qh("quan_ly_idol", 5)
     _Con cú núp sau xe chè, 1/25 giây. Một ngày nào đó, nó sẽ là bằng chứng._
@@ -120,13 +120,13 @@ _Tin nhắn {truong_phong}, 22:14: "Em cho cảnh anh đứng chỉ tay vào b�
 
 // ------------------------------------------------------------
 === editor_0910_mv_ra_mat ===
-# ngay:9 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:9 # gio:20:00 # noi:phong_hop_tang_2 # bat_buoc
 { ed_mv_kip:
-    _MV ra mắt đúng giờ. Bạn xuất file lúc 7 giờ 59. 8 giờ, file lên. 8 giờ 01, bạn ngủ trên bàn phím._
+    _MV "Hồng Hóa Việt Nam" ra mắt đúng 20 giờ. Bạn xuất file lúc 19 giờ 59. 20 giờ, file lên. 20 giờ 01, bạn suýt ngủ trên bàn phím._
 - else:
-    _MV ra mắt trễ ba tiếng. Cả công ty ngồi nhìn màn hình xoay vòng. {chua_te_deadline} nói "Chill" bốn lần, lần nào giọng cũng run hơn._
+    _MV "Hồng Hóa Việt Nam" lên đúng 20 giờ, nhưng là bản chưa kịp chỉnh nhịp: mấy đoạn chuyển cảnh lệch phách nửa nhịp. {chua_te_deadline} nói "Chill" bốn lần, lần nào giọng cũng run hơn._
 }
-_10 giờ. Phòng họp tầng 2. {truong_phong} đứng trước màn hình lớn, tay cầm bút laser._
+_Phòng họp tầng 2, cả công ty ở lại xem MV lên sóng. {truong_phong} đứng trước màn hình lớn, tay cầm bút laser._
 truong_phong: Cái MV này anh làm 3 đêm liền đấy mọi người ạ. Nhất là đoạn chuyển cảnh theo nhạc, anh tính từng khung hình.
 _Cả phòng vỗ tay. Bạn ngồi hàng cuối, mũ len, quầng thâm, cốc RENDER._
 chua_te_deadline: *(nói nhỏ)* Ủa {editor}, đoạn đó ông dựng mà?
@@ -149,7 +149,7 @@ chua_te_deadline: *(nói nhỏ)* Ủa {editor}, đoạn đó ông dựng mà?
     chua_te_deadline: *(nhún vai)* Tui mà nói to thì ổng hỏi file gốc tháng 6. Thôi, chill.
     ~ ed_vo(2)
 - { ed_mv_dung_phach && ed_mv_kip:
-    ~ follow(30000)
+    ~ follow(20000)
     _Bình luận: "MV cắt nhạc phê quá", "Ai dựng vậy, ra mắt đi!". Không ai ra mắt._
 - else:
     { ed_mv_kip:
@@ -218,7 +218,7 @@ bac_bao_ve: Ơ… cháu à. *(hơi lúng túng, định thổi nến)* Không c�
 _Radio đang đọc tin: "Hôm nay, 10/10, kỷ niệm Ngày Giải phóng Thủ đô…". Trên cái bánh có cắm tờ giấy nhỏ, nét chữ của chính bác: "50"._
 * [🎂 "Sinh nhật bác hả bác? Con hát cho bác nghe nha."]
     _Bạn hát "Mừng sinh nhật" bằng giọng của người chưa ngủ hai ngày. Lạc tông. {cho} hú theo. Bác {bac_bao_ve} bật cười, cười to._
-    bac_bao_ve: Năm mươi tuổi. Cả công ty không ai biết. *(thổi nến)* Giờ thì có một đứa biết.
+    bac_bao_ve: Năm mươi tuổi. Hôm 1/10 cả công ty mừng bác rồi, bác bảo thôi, để đúng ngày bác tự ăn. *(thổi nến)* Ai ngờ đúng ngày lại có một đứa ở đây.
     ~ qh("bac_bao_ve", 20)
     ~ qh("cho", 5)
 * [🎥 Lấy điện thoại quay bác thổi nến, dựng thành clip 30 giây tặng bác.]

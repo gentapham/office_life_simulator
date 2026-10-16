@@ -145,7 +145,7 @@ _Bên trong chỉ có đúng 1 trang. 20 cái tên, không kể {giam_doc}, khô
 * {qh_giam_doc >= 50} [🔒 "Anh, danh sách này có tên anh không?"]
     _{giam_doc} im lặng. Rồi cười to, to hơn mức cần thiết._
     giam_doc: Anh là giám đốc mà em! Giám đốc thì ai cắt?
-    _Thắng đã né câu hỏi. Bạn ghi nhận. Bạn luôn ghi nhận._
+    _{giam_doc} đã né câu hỏi. Bạn ghi nhận. Bạn luôn ghi nhận._
     ~ hr_nghi_trang_2 = true
 - ~ hr_ro_ri(5)
 _Bạn ôm tập hồ sơ hồng ra khỏi phòng kính. Ở bàn trợ lý, {thanh_ninh} liếc theo màu hồng rất lâu._

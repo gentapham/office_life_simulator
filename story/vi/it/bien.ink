@@ -79,6 +79,6 @@ VAR it_co_o_cung = false            // đã mang ổ cứng "KHÔNG ĐƯỢC M�
     ~ it_doc_trom_sau_15 = true
 }
 
-// Chiến dịch đang "trên đà" thành công (dùng lúc đánh giá 30/10)
+// Công ty còn sống sau Đại Nhạc Hội (dùng ở cảnh kết thúc tối 31/10)
 === function it_chien_dich_on() ===
-~ return nguoi_theo_doi >= 850000 and not nguyen_theo_ll
+~ return chung_cong_ty_song

@@ -148,8 +148,8 @@ thanh_xin_nghi: *(nói nhỏ)* Anh {quan_ly_idol}. Dạo này anh lạ lắm. C�
 
 // ------------------------------------------------------------
 === quan_ly_idol_1510_pantry ===
-# ngay:15 # gio:17:40 # noi:pantry # bat_buoc
-_Chiều tối. Vẫn chưa có điện. Ngoài trời mưa. Cả công ty ngồi bệt dưới sàn pantry. Bếp ga mini của {chi_dai} đun ấm nước._
+# ngay:15 # gio:16:45 # noi:pantry # bat_buoc
+_Gần 5 giờ chiều. Vẫn chưa có điện. Ngoài trời mưa, pantry không cửa sổ tối như đêm. Cả công ty ngồi bệt dưới sàn. Bếp ga mini của {chi_dai} đun ấm nước._
 _Bạn ngồi ở góc xa nhất. Điện thoại cả hai đều đã sập._
 _Rồi {hong_hot} nói: "Chán quá, có ai hát gì đi." {chi_dai}: "{idol_het_thoi}. Hát đi."_
 _Trong bóng tối, giọng {idol_het_thoi} vang lên, không micro, không loa: "Ngày xưa có đôi bạn thân… bán cá viên chiên…"_
@@ -174,7 +174,7 @@ _{idol_het_thoi} quay về phía góc tối. Bạn biết {idol_het_thoi} không
 // ------------------------------------------------------------
 === quan_ly_idol_1510_nhan_linh ===
 # ngay:15 # gio:23:50 # noi:studio_0905
-_Điện về lúc 10 giờ tối. Hai điện thoại sống lại, 46 tin nhắn, 19 cuộc gọi nhỡ. Bạn đọc hết, trả lời hết. Rồi mở Zalo-lô, tìm tên {editor}._
+_Điện về lúc 5 giờ rưỡi chiều. Tới khuya bạn mới cắm sạc xong. Hai điện thoại sống lại, 46 tin nhắn, 19 cuộc gọi nhỡ. Bạn đọc hết, trả lời hết. Rồi mở Zalo-lô, tìm tên {editor}._
 * [📱 "{editor} ơi, hồi chiều có ai quay lúc {idol_het_thoi} hát hông em? Anh muốn coi lại."]
     _Mười phút sau. Một file video, đã dựng lại: ánh sáng chỉnh ấm, giọng {idol_het_thoi} rõ, tiếng cả công ty hát theo lọt vào vừa đủ. Không có góc nào có mặt bạn._
     editor: Dạ em có quay nè anh. Em cắt cho gọn.

@@ -187,19 +187,18 @@ it: Không.
 
 // ------------------------------------------------------------
 === editor_2010_chieu_video_16_nam ===
-# ngay:20 # gio:10:00 # noi:sanh_tang_tret # bat_buoc
-_Sinh nhật {cong_ty} 16 tuổi, kiêm Ngày Phụ nữ Việt Nam. Sảnh treo bong bóng cam và hồng. Sáng nay chòi bảo vệ nhận một lá thư tay ký "G"._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_Sinh nhật {cong_ty} 16 tuổi, kiêm Ngày Phụ nữ Việt Nam. Quán Ốc Đêm, 18 giờ 30. Bác {bac_bao_ve} vừa đọc to lá thư "G" tới sáng nay. Cả quán còn chưa hết im._
 _{giam_doc} vừa chốt logo kỷ niệm 16 năm. Sau 37 bản, anh chọn lại logo gốc năm 2010. Lần sửa thứ 38._
-truong_phong: Và bây giờ, video "16 năm", do anh… do phòng Sản xuất thực hiện.
-_Đèn tắt._
+truong_phong: Và bây giờ, bản đầu tiên của video "16 năm", do anh… do phòng Sản xuất thực hiện.
+_Cô chủ quán tắt đèn. Máy chiếu mượn của {it} rọi lên tấm vải căng trên vách quán._
 { ed_tu_lieu_16_nam:
     _Căn phòng 20 mét vuông. Một cậu sinh viên tên {giam_doc}, 21 tuổi, đang dán chữ G bằng băng keo lên tường._
     _Năm 2015. {idol_het_thoi} ôm cúp. Tiếng hát gốc "Công Viên", bản thu chưa mix, giọng trẻ và run._
     _Và cảnh cuối: một người bảo vệ 34 tuổi, đứng trước cái cửa gỗ, tay chắp sau lưng. Bác {bac_bao_ve}._
-    _Cả sảnh im lặng. Không ai vỗ tay ngay. {giam_doc} lấy tay che mắt. {idol_het_thoi} tháo kính đen._
-    _Ở cuối sảnh, bác {bac_bao_ve} đứng thẳng, như đang gác cổng. Tay đặt lên túi áo, chỗ lá thư._
+    _Cả quán im lặng. Không ai vỗ tay ngay. {giam_doc} lấy tay che mắt. {idol_het_thoi} tháo kính đen._
+    _Ở cuối bàn, bác {bac_bao_ve} đứng thẳng, như đang gác cổng. Tay đặt lên túi áo, chỗ lá thư._
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 10
-    ~ follow(10000)
     ~ qh("giam_doc", 10)
     ~ qh("bac_bao_ve", 15)
     ~ qh("idol_het_thoi", 10)
@@ -207,7 +206,7 @@ _Đèn tắt._
     _Ba phút ảnh chụp màn hình fanpage. Mọi người vỗ tay lịch sự. {giam_doc} gật gù: "Ổn. Mà hơi ngắn so với 16 năm nhỉ."_
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 2
 }
-_Đèn bật. {truong_phong} bước lên._
+_Đèn quán bật. {truong_phong} đứng dậy, cầm micro karaoke của quán._
 truong_phong: Video này anh và team làm xuyên đêm…
 * [😶 Ngồi im. Để video tự nói.]
     ~ ed_vo(5)
@@ -218,7 +217,7 @@ truong_phong: Video này anh và team làm xuyên đêm…
     ~ ed_can(3)
     _{it} ở góc phòng, giơ ly mì lên một chút. Cách {it} nói "Ừ, đúng rồi"._
 * {ed_dau_cu_chung_minh >= 1} [🦉 "Anh {truong_phong}, ở phút 2, trên cái cửa gỗ, có con cú."]
-    _Cả sảnh tua lại. Có. Một con cú đeo tai nghe, đậu trên cái cửa gỗ năm 2010._
+    _Cả quán tua lại. Có. Một con cú đeo tai nghe, đậu trên cái cửa gỗ năm 2010._
     giam_doc: *(bật cười)* Thằng này. Đánh dấu lãnh thổ.
     ~ ed_vo(-15)
     ~ ed_dau_cu_chung_minh = ed_dau_cu_chung_minh + 1
@@ -253,8 +252,8 @@ _{chi_dai} nhìn bạn: "Em là đàn ông trong phòng sản xuất đó. Quà 
 
 // ------------------------------------------------------------
 === editor_2010_karaoke ===
-# ngay:20 # gio:22:30 # noi:karaoke_hat_cho_nhau_nghe # bat_buoc
-_Karaoke Hát Cho Nhau Nghe, tăng hai sau quán ốc. {giam_doc} say, cầm micro: "Nếu Đại Nhạc Hội Siêu Nhân thành công, cả công ty tăng lương 20%!"_
+# ngay:20 # gio:21:00 # noi:karaoke # bat_buoc
+_Karaoke Chú Sáu, tăng hai sau quán ốc. {giam_doc} say, cầm micro: "Nếu Đại Nhạc Hội Siêu Nhân thành công, cả công ty tăng lương 20%!"_
 _{hong_hot} quay clip. {ke_toan} đứng dậy, ngồi xuống, đứng dậy._
 _Bạn ngồi góc phòng. Ghế bên cạnh trống. {quan_ly_idol} bước vào, nhìn quanh, rồi ngồi xuống đó._
 quan_ly_idol: Ở đây tối nhất. Anh trốn điện thoại xíu.

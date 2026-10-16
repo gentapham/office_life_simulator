@@ -29,8 +29,12 @@ thuc_tap_sinh: *(ngồi xuống ghế, thì thầm qua cửa sổ)* Bla bla… T
 - -> END
 
 // ------------------------------------------------------------
+// Game chọn cảnh của ngày từ đầu ngày, nên rẽ nhánh "đi biển / ở nhà" nằm trong cảnh.
 === cho_1710_bai_bien ===
-# ngay:17 # gio:14:00 # noi:vung_tau_bai_bien # dieu_kien:ch_len_xe_vung_tau
+# ngay:17 # gio:14:00 # noi:vung_tau_bai_bien
+{ not ch_len_xe_vung_tau:
+    -> cho_1710_chieu_o_cong
+}
 _BIỂN._
 _Cát nóng dưới chân. Nước đuổi theo chân bạn rồi chạy đi, rồi đuổi lại. Bạn sủa nó. Nó không sợ. Đây là kẻ thù mới, to hơn cả bộ đồ hồng._
 hr: *(cười hết cỡ, giấu khó chịu)* Bla bla… TUẤT? Bla bla bla… bla. # phu_de:Ủa, sao {cho} ở đây? Ai mang theo vậy? Thôi được, anh xếp em vô phòng nào đây trời…
@@ -61,9 +65,20 @@ _Bạn không hiểu. Nhưng bạn thấy {ke_toan} ôm đầu. Thường thì n
 -> END
 
 // ------------------------------------------------------------
+= cho_1710_chieu_o_cong
+_Chiều thứ 7. Tòa nhà vắng tanh. Không ai đi trễ, không ai về sớm, không ai cầm trà sữa. Bác ngồi viết thư, bạn nằm gác cằm lên dép bác._
+* [😴 Ngủ trưa trọn vẹn, cả tòa nhà là của mình.]
+    ~ nghi(30)
+    _Bạn ngủ ở giữa sảnh, chỗ thường ngày người ta đi qua đi lại. Hôm nay không ai bước qua bạn._
+* [👃 Đi tuần một vòng các tầng.]
+    ~ ch_mui(3)
+    _Tầng 1 còn mùi trà sữa hôm qua. Tầng 2 còn mùi giấy in. Phòng giám đốc khóa, nhưng khe cửa có mùi rượu và mùi một lời hứa._
+- -> END
+
+// Cảnh lửa trại: nối từ cho_1710_dem_o_lai khi Tuất đã lên xe đi Vũng Tàu
 === cho_1710_lua_trai ===
-# ngay:17 # gio:21:30 # noi:vung_tau_bai_bien # dieu_kien:ch_len_xe_vung_tau
-_Đêm. Lửa trại. Mọi người ngồi thành vòng tròn. Khói thơm mùi củi và mùi mực nướng._
+# noi:vung_tau_bai_bien
+_21 giờ 30. Đêm. Lửa trại. Mọi người ngồi thành vòng tròn. Khói thơm mùi củi và mùi mực nướng._
 _Bộ đồ hồng ngồi đối diện bạn, mũ vẫn đội. Đang kể chuyện. Giọng nhỏ hơn mọi ngày._
 sieu_nhan_hong: Bla bla… bla bla bla… bla bla… bla. # phu_de:Hồi nhỏ anh hư lắm. Có lần anh nhốt một đứa nhỏ trong nhà kho. Nó khóc cả buổi. Anh chưa bao giờ xin lỗi nó.
 _Bên cạnh bạn, mùi của {ran_doc} đổi khác. Mùi bực bội bùng lên như lửa trại. Rồi bên dưới nó, một mùi khác, mặn, giống nước biển. Bạn biết mùi đó. Mùi nước mắt chưa rơi._
@@ -87,7 +102,7 @@ _Bạn có ba giây._ # hen_gio:3
     cho: GÂU! GÂU!
     _Mọi người quay hết lại. Điện thoại quay hết lại. Mặt người đó trong ánh lửa: bình thường, hơi gầy, mắt hiền. Rồi cái mũ về lại trên đầu, chậm một nhịp._
     ~ ch_lo_mat_nguyen = ch_lo_mat_nguyen + 15
-    ~ follow(30000)
+    ~ follow(20000)
     ~ scandal()
 * [🎁 Ngoạm lấy cái mũ!]
     _Bạn lao tới. Người đó nhanh hơn, ôm cái mũ vào lòng như ôm một đứa con. Bạn chỉ ngoạm được không khí và mùi bánh chuối chiên._
@@ -103,7 +118,7 @@ _Mùi đó gọi bạn bằng tên. Không phải tên TUẤT. Một cái tên s
 * [🏃 Chạy theo mùi cua nướng.]
     ~ ch_chay_theo_cua = true
     _Bạn chạy. Dọc bãi biển. Qua bãi đá. Qua một con đường nhỏ. Mùi cua nướng to dần, to dần, rồi… biến mất giữa trăm mùi khác của một khu chợ đêm._
-    { ch_mui_thinh >= 40:
+    { ch_mui_thinh >= 52:
         _Bạn đứng lại. Hít sâu. Giữa trăm mùi lạ, có một sợi mùi quen: mì gói và nước xả vải rẻ tiền. Mùi của {thuc_tap_sinh}. Bạn lần theo nó, chậm rãi, từng bước, về tới cửa phòng._
         _{thuc_tap_sinh} đang đứng ở cửa, cầm đèn pin, mắt đỏ hoe. Người đó ôm chầm lấy bạn._
         thuc_tap_sinh: Bla bla… TUẤT… bla bla bla! # phu_de:{cho}! Trời ơi em đi đâu vậy! Anh tưởng mất em rồi!
@@ -121,7 +136,10 @@ _Mùi đó gọi bạn bằng tên. Không phải tên TUẤT. Một cái tên s
 
 // ------------------------------------------------------------
 === cho_1710_dem_o_lai ===
-# ngay:17 # gio:19:00 # noi:sanh_tang_tret # dieu_kien:not ch_len_xe_vung_tau
+# ngay:17 # gio:19:00 # noi:sanh_tang_tret
+{ ch_len_xe_vung_tau:
+    -> cho_1710_lua_trai
+}
 _Tối thứ 7. Cả tòa nhà chỉ có hai ông cháu. Bác đi tuần một vòng, bạn đi theo._
 _Ở sảnh tầng trệt, cạnh cái tủ sắt đầy dây xanh, có một mùi quen. Cao su. Nước dãi. Mùi của chính bạn. CON GÀ CAO SU!_
 _Nó ở sau cái tủ. Bạn thò mõm vào khe. Mõm chạm một sợi dây. Răng chạm sợi dây._
@@ -178,6 +196,7 @@ _Sáng. Bạn tỉnh dậy dưới sạp hàng. Một người phụ nữ đang 
 co_hai_san: Bla bla… bla bla bla? Bla… ĂN… bla. # phu_de:Ủa, chó ai lạc vậy nè? Tội nghiệp. Lại đây, ăn miếng cơm nè.
 _Bà cho bạn cơm trộn cá. Ngon. Bạn ăn, rồi ngẩng lên, ngửi về phía biển. Phía biển không có mùi trà mạn và dầu gió._
 _Rất xa, có tiếng một chiếc xe buýt nổ máy._
+~ chung_tuat_lac = true
 * [🏃 Chạy về phía tiếng xe buýt.]
     _Bạn chạy. Qua chợ, qua bãi đá, qua một con dốc. Tiếng xe to dần, rồi nhỏ dần, rồi mất. Chỉ còn tiếng sóng._
     _Bạn đứng ở ngã ba. Ba con đường. Ba trăm mùi. Không mùi nào là mùi trà mạn._
@@ -188,8 +207,8 @@ _Rất xa, có tiếng một chiếc xe buýt nổ máy._
     _Bạn nằm chờ. Cả buổi sáng. Người phụ nữ áo bà ba thỉnh thoảng cúi xuống nhìn, lắc đầu, đặt thêm một bát nước._
 - co_hai_san: Bla bla… bla bla… bla. # phu_de:Thôi, ở với cô. Cô nuôi. Chừng nào chủ mày tới thì cô trả.
 _Bạn không hiểu. Nhưng bàn tay đó có mùi tôm cá, ấm, và không chọc chó._
-~ chot_ket_thuc("lac_o_vung_tau")
--> cho_kt_lac_o_vung_tau
+_Cô gọi bạn là "Vàng". Từ hôm nay, mỗi chiều bạn ra ngồi ở bến xe, mũi hướng về phía thành phố._
+-> END
 
 // ------------------------------------------------------------
 === cho_1810_sang_vung_tau ===
@@ -264,7 +283,7 @@ bac_bao_ve: Bla bla… bla… TUẤT… bla. # phu_de:Đêm qua có người và
 
 // ------------------------------------------------------------
 === cho_1910_khong_ai_nhin_ai ===
-# ngay:19 # gio:08:30 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:19 # gio:08:30 # noi:phong_hop_tang_2 # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 2. Họp giao ban. 22 người, 22 cái mặt nhìn 22 hướng khác nhau. Không ai nhìn ai._
 _Ở chòi, bác để một cái thùng các-tông: đồ để quên trên xe buýt cam. Một cái kính đen. Một cái dây buộc tóc. Một chiếc dép tổ ong. Một cái sạc dự phòng._
 bac_bao_ve: Bla bla… TUẤT… bla bla. # phu_de:{cho}, đồ của ai thì mang trả người ấy. Mày giỏi việc này nhất.
@@ -303,8 +322,8 @@ _Chiếc dép tổ ong về kho. Bạn gặm nó tới tối. Hạnh phúc là m
 
 // ------------------------------------------------------------
 === cho_2010_thu_g ===
-# ngay:20 # gio:06:40 # noi:choi_bao_ve # bat_buoc
-_Sáng sớm. Bác đi mở cổng. Trên ghế bố có một lá thư. Phong bì vàng. Chữ viết tay. Một chữ "G" ở góc._
+# ngay:20 # gio:07:30 # noi:choi_bao_ve # bat_buoc # dieu_kien:not ch_lac_vung_tau
+_7 giờ 30. Anh bưu tá đặt một lá thư lên ghế bố rồi đi, bác đang ở ngoài cổng chào người tới sớm. Phong bì vàng. Chữ viết tay. Một chữ "G" ở góc._
 _Bên trong phong bì có một phong bì nữa, nhỏ hơn, dán kín, mùi giấy rất lạ: mùi máy bay, mùi một thành phố rất xa, mùi một người đã lâu không về._
 _Bác chưa thấy lá thư. Bác đang ở cổng. Lá thư nằm ngay trước mũi bạn._
 * [🎁 Ngậm lá thư, tha về kho dưới gầm cầu thang.]
@@ -326,7 +345,7 @@ _Bác chưa thấy lá thư. Bác đang ở cổng. Lá thư nằm ngay trước
 
 // ------------------------------------------------------------
 === cho_2010_logo ===
-# ngay:20 # gio:10:30 # noi:phong_giam_doc
+# ngay:20 # gio:10:30 # noi:phong_giam_doc # dieu_kien:not ch_lac_vung_tau
 _Phòng kính tầng 2. Trên bàn rải đầy giấy in: chữ G màu mè, chữ G mạ vàng, chữ G có số 16, chữ G hình bánh kem._
 designer: *(giọng không còn sức sống)* Bla bla… bla bla bla… bla. # phu_de:Dạ bản thứ 38 ạ. Sửa nhẹ thôi là sửa cái gì ạ?
 giam_doc: Bla bla… bla bla. Bla bla bla… # phu_de:Chưa đủ wow. Mà khoan… cái clip 16 năm cần cảnh dự án tháng 6 đấy. {chua_te_deadline} đâu, file gốc đâu?
@@ -360,47 +379,47 @@ _Ở góc phòng, {chua_te_deadline} đổ mồ hôi. Mùi cà phê sữa đá h
 
 // ------------------------------------------------------------
 === cho_2010_lien_hoan ===
-# ngay:20 # gio:17:45 # noi:sanh_tang_tret # bat_buoc
-_Sinh nhật công ty 16 tuổi, kiêm Ngày Phụ nữ. Sảnh đầy bóng bay, đầy hoa, đầy đồ ăn. Đồ ăn rơi như mưa mùa hè._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc # dieu_kien:not ch_lac_vung_tau
+_18 giờ 30. Quán Ốc Đêm. Sinh nhật công ty 16 tuổi, kiêm Ngày Phụ nữ. Ba dãy bàn nhựa, đầy bóng bay, đầy ốc. Vỏ ốc rơi như mưa mùa hè. Bác dắt bạn theo, buộc dây ở gốc cây cạnh bàn._
 dan_dau_tu: Bla bla bla! 8386! Bla bla! # phu_de:Chúc cả công ty 8386! Phát lộc phát tài! Lần này là lên thật!
 _Các chị em được tặng quà. Ai tặng ai cái gì, ai không được tặng gì, mùi giận dỗi bay lên ngang mùi gà rán._
 { ch_co_la_thu_g:
     -> cho_2010_thu_trong_kho
 }
 { ch_thu_g_den_tay_bac:
-    _Lá thư nằm trong túi áo ngực của bác. Giữa liên hoan, {giam_doc} cầm micro gọi bác lên phát biểu "với tư cách người lâu năm nhất". Bác đứng lên. Tay bác chạm vào túi áo._
+    _Lá thư nằm trong túi áo ngực của bác. Giữa liên hoan, {giam_doc} gõ đũa vào ly, mời bác nói vài câu "với tư cách người lâu năm nhất". Bác đứng lên. Tay bác chạm vào túi áo._
     -> cho_2010_doc_thu
 }
 -> END
 
 = cho_2010_thu_trong_kho
-_Bác đi quanh chòi, tìm cái gì đó. Bác không nói. Bác nhìn bạn một lần, rất lâu. Rồi bác thôi tìm._
+_Cả buổi sáng bác đi quanh chòi, tìm cái gì đó. Bác không nói. Giờ ngồi ở quán ốc, bác nhìn bạn một lần, rất lâu. Rồi bác thôi tìm._
 _Lá thư vẫn nằm trong kho. Không ai đọc nó trước công ty. Hôm nay, chuyện của ông "G" vẫn là chuyện của bác._
 * [🐾 Ngồi cạnh bác cả buổi liên hoan.]
     _Bạn ngồi cạnh bác. Bác bẻ cho bạn nửa cái đùi gà. Không ai hỏi gì, bác cũng không kể gì._
     ~ ch_an(20)
     ~ qh("bac_bao_ve", 3)
     -> END
-* [🎁 Chạy về kho, tha lá thư ra trả bác, ngay giữa sân liên hoan.]
+* [🎁 Giật dây chạy về công ty, tha lá thư ra trả bác, ngay giữa quán ốc.]
     ~ ch_co_la_thu_g = false
     ~ ch_so_mon_kho = ch_so_mon_kho - 1
     -> cho_2010_doc_thu
 
 = cho_2010_doc_thu
-_Bác đứng giữa sân, cầm lá thư. Cả công ty nhìn bác. Bạn ngồi dưới chân, cảm thấy tay bác run qua lớp dép._
-bac_bao_ve: Bla bla… bla bla bla… bla bla… bla. # phu_de:Có một người bạn cũ của công ty nhờ bác đọc mấy dòng. "Chúc mừng sinh nhật mười sáu tuổi. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
-_Cả sảnh im lặng. {giam_doc} đứng hình, ly nước trên tay nghiêng dần._
+_Bác đứng giữa quán ốc, cầm lá thư. Cả công ty nhìn bác. Bạn ngồi dưới chân, cảm thấy tay bác run qua lớp dép._
+bac_bao_ve: Bla bla… bla bla bla… bla bla… bla. # phu_de:Có một người bạn cũ của công ty nhờ bác đọc mấy dòng. "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
+_Cả quán ốc im lặng. {giam_doc} đứng hình, ly nước trên tay nghiêng dần._
 _Còn cái phong bì nhỏ dán kín, ghi "Chỉ mở khi công ty sắp sập", bác không mở. Bác cất lại vào túi áo, chỗ gần tim nhất._
 ~ phat_hien(binh_tai_mat_g)
 ~ ch_thu_g_den_tay_bac = true
 * [🐾 Liếm tay bác.]
-    _Bạn liếm tay bác. Bác ngồi xuống, xoa đầu bạn, không nói thêm câu nào. Rồi tiếng vỗ tay bắt đầu, từ {chi_dai}, lan ra khắp sân._
+    _Bạn liếm tay bác. Bác ngồi xuống, xoa đầu bạn, không nói thêm câu nào. Rồi tiếng vỗ tay bắt đầu, từ {chi_dai}, lan ra khắp quán._
     ~ qh("bac_bao_ve", 8)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 * [😤 Sủa một tiếng thật to cho mọi người vỗ tay.]
     cho: GÂU!
-    _Ai đó bật cười. Rồi ai đó vỗ tay. Rồi cả sân. Bác đỏ mặt như hôm được tặng hoa._
+    _Ai đó bật cười. Rồi ai đó vỗ tay. Rồi cả quán. Bác đỏ mặt như hôm được tặng hoa._
     ~ qh("bac_bao_ve", 5)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 4
-- _Tối đó, cả công ty kéo nhau đi quán ốc, rồi karaoke. Bạn và bác ở lại chòi. Chòi yên, radio nhỏ, lá thư nằm trong túi áo bác._
+- _9 giờ, cả công ty kéo nhau đi karaoke. Bạn và bác về chòi. Chòi yên, radio nhỏ, lá thư nằm trong túi áo bác._
 -> END

@@ -107,7 +107,7 @@ _Mất thưởng. {dan_dau_tu} nhún vai: "Anh vẽ chart cả đời, em lừa 
 // ============================================================
 === sales_mg_goi_tai_tro_mo_dau ===
 # noi:pho_tan_drama # dieu_kien:mo_minigame_goi_tai_tro
-_Ghép gói quảng cáo nhỏ cho chủ quán trong quận: logo trên áo Siêu Nhân Hồng, quán xuất hiện trong clip, Nguyên ăn thử món._
+_Ghép gói quảng cáo nhỏ cho chủ quán trong quận: logo trên áo Siêu Nhân Hồng, quán xuất hiện trong clip, {sieu_nhan_hong} ăn thử món._
 _Giá vừa túi tiền thì bán được. Giá "tập đoàn" thì khách cười._
 -> END
 

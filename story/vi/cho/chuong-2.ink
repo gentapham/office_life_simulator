@@ -81,36 +81,35 @@ sieu_nhan_hong: Bla bla! # phu_de:Vì công lý và lượt view!
     ~ nghi(20)
     ~ follow(5000)
 - _Đúng lúc đó, người đồ hồng đột ngột dừng lại, nhìn ra cửa sổ._
-sieu_nhan_hong: Bla bla! Bla bla bla! # phu_de:Khoan! Bà cụ dưới đường kìa, xe lăn kẹt ổ gà! Điều khoản số 3 nha mọi người!
+sieu_nhan_hong: Bla bla! Bla bla bla! # phu_de:Khoan! Xe chè của bà cụ dưới đường kìa, kẹt ổ gà! Điều khoản số 3 nha mọi người!
 _Bộ đồ hồng phóng ra cửa. Bỏ ngang buổi chụp._
 -> END
 
 // ------------------------------------------------------------
 === cho_0610_ba_cu ===
-# ngay:6 # gio:10:15 # noi:dau_duong # bat_buoc
+# ngay:6 # gio:10:30 # noi:duong_truoc_cong_ty # bat_buoc
 _Bạn đuổi theo. Đương nhiên rồi. Kẻ thù bỏ chạy thì phải đuổi._
-_Ra khỏi cổng, rẽ trái, chạy dọc vỉa hè. Mùi bánh chuối chiên dẫn đường như sợi dây hồng._
-_Rồi bạn thấy: người đồ hồng đang cúi xuống bên một bà cụ ngồi xe lăn. Bánh xe kẹt trong ổ gà. Người đồ hồng nâng cả cái xe lên, nhẹ nhàng như nâng một ly trà sữa._
-sieu_nhan_hong: Bla bla… bla bla bla. # phu_de:Bà ngồi yên nha, con đẩy bà về tới nhà luôn.
-_Người đó không tạo dáng. Không hét "vì công lý". Chỉ đẩy xe, chậm rãi, nói chuyện với bà cụ bằng một giọng nhỏ mà bạn chưa nghe bao giờ._
-_Ai đó đứng bên đường giơ điện thoại quay._
-~ follow(30000)
+_Ra khỏi cổng, rẽ trái, chạy dọc Đường Hóng. Mùi bánh chuối chiên dẫn đường như sợi dây hồng. Rồi một mùi khác chen vào: đậu trắng, nước cốt dừa, đường thắng. Mùi xe chè đầu Hẻm 69._
+_Rồi bạn thấy: bánh xe chè kẹt trong ổ gà. Một bà cụ tóc bạc đang cố đẩy. Người đồ hồng quỳ xuống, nhấc bánh xe ra, nhẹ nhàng như nhấc một ly trà sữa. Nồi chè không đổ giọt nào._
+ba_bay: Bla bla… bla bla bla… NGOAN… bla. # phu_de:Cảm ơn con nha. Đội cái mũ chi cho nóng vậy con? Mà thôi, đẹp. Ngoan.
+_Người đó không tạo dáng. Không hét "vì công lý". Một cô gái buộc tóc bằng sợi thun chạy từ trong hẻm ra, đỡ bà cụ, nghe người đồ hồng nói gì đó bằng một giọng nhỏ mà bạn chưa nghe bao giờ. Cô gái nghiêng đầu, rồi bật cười._
+_Ai đó đứng bên đường giơ điện thoại quay. Người đồ hồng ngồi xuống ghế nhựa thấp, ăn chè bằng một cái ống hút luồn qua khe mũ._
 * [😤 Sủa. Kẻ thù vẫn là kẻ thù.]
     cho: Gâu!
     _Bà cụ quay lại nhìn bạn, cười móm mém. Bà nói gì đó. Có từ NGOAN._
     _Bạn im luôn. Bạn không sủa được người vừa khen mình là ngoan._
     ~ ch_hong_doi(-3)
-* [👃 Đánh hơi bánh xe lăn.]
+* [👃 Đánh hơi bánh xe chè.]
     ~ ch_mui(2)
-    _Bánh xe có mùi chợ Phố Cũ, mùi nhang chùa và mùi một con mèo già. Bà cụ này đi chùa mỗi sáng._
-    _Trên tay cầm xe lăn, giờ có thêm mùi bánh chuối chiên. Mùi đó ở đây không khó chịu lắm._
+    _Bánh xe có mùi chợ Phố Cũ, mùi nước cốt dừa và mùi một con mèo già. Bà cụ này đẩy xe chè qua mấy con phố mỗi ngày._
+    _Trên tay cầm xe chè, giờ có thêm mùi bánh chuối chiên. Mùi đó ở đây không khó chịu lắm._
     ~ ch_hong_doi(-5)
-* [🐾 Đi theo phía sau, không sủa, không ngoạm.]
-    _Bạn đi theo. Chậm. Một người hồng, một bà cụ, một con chó vàng, đi dọc vỉa hè dưới nắng. Không ai nói gì._
+* [🐾 Ngồi xuống cạnh xe chè, chờ ai làm rơi gì đó.]
+    _Bạn ngồi. Cô gái buộc tóc nhìn bạn, múc một muỗng đậu trắng không đường, đổ ra cái nắp hộp. Bạn liếm sạch._
     ~ ch_hong_doi(-5)
-    ~ follow(5000)
-- _Bạn đi theo xa quá. Qua ba ngã tư. Qua một cái chợ. Mùi xe cộ, mùi cá khô, mùi khói nhang trộn vào nhau._
-_Rồi mùi bánh chuối chiên đứt. Bạn quay lại. Không còn ngửi thấy cái chòi. Không còn ngửi thấy bác._
+    ~ ch_an(5)
+- _Rồi người đồ hồng quay về công ty. Bạn không theo nữa. Có một mùi khác gọi bạn: cá khô, ở phía chợ. Bạn đi theo mùi đó. Qua ba ngã tư. Qua cái chợ. Mùi xe cộ, mùi cá khô, mùi khói nhang trộn vào nhau._
+_Rồi bạn quay lại. Không còn ngửi thấy cái chòi. Không còn ngửi thấy bác._
 _Bạn đứng giữa ngã tư, tim đập thình thịch._
 { ch_mui_thinh >= 45:
     _Bạn hít một hơi thật sâu. Ở đâu đó rất xa, có một sợi mùi mỏng: trà mạn và dầu gió. Bạn lần theo nó, từng bước. Một tiếng sau, cái cổng tím hiện ra._
@@ -118,20 +117,24 @@ _Bạn đứng giữa ngã tư, tim đập thình thịch._
     -> END
 }
 cho: Ẳng…
-_Một đôi chân hồng dừng lại trước mặt bạn._
-sieu_nhan_hong: Bla bla… TUẤT? Bla bla bla… bla… VỀ. # phu_de:Ủa, {cho}? Em theo anh tới đây hả? Trời đất… thôi, anh đưa em về.
-_Người đồ hồng bế bạn lên. Cõng sau lưng. Đi bộ ba ngã tư về công ty, không gọi xe, không ai quay._
+_Một tiếng sau. Một đôi chân hồng dừng lại trước mặt bạn. Thở hổn hển, như đã chạy qua ba ngã tư._
+sieu_nhan_hong: Bla bla… TUẤT? Bla bla bla… bla… VỀ. # phu_de:Ủa, {cho}? Bác {bac_bao_ve} đi tìm em quá trời! Trời đất… thôi, anh đưa em về.
+_Người đồ hồng bế bạn lên. Đi bộ ba ngã tư về công ty, không gọi xe, không ai quay._
 * [😤 Gầm gừ suốt quãng đường.]
     cho: Grừ… grừ…
     sieu_nhan_hong: Bla bla… bla. # phu_de:Ừ, biết rồi, ghét anh thì ghét. Về tới nhà đã rồi ghét tiếp.
 * [😴 Mệt quá. Gục đầu lên vai bộ đồ hồng.]
     _Vai bộ đồ hồng ấm. Mùi nước hoa hồng ở gần như vậy thì… vẫn hơi nồng. Nhưng bạn mệt quá rồi._
     ~ ch_hong_doi(-5)
+* [🦴 Người đó chìa ra một cây xúc xích mua vội ở chợ. Ăn.]
+    sieu_nhan_hong: Bla bla… XÚC XÍCH… bla. # phu_de:Mua vội ở chợ đó. Ăn đi rồi về.
+    ~ ch_an_cua_nguyen()
+    _Bạn ăn. Rồi gầm gừ một tiếng cho có lệ. Rồi để người đó bế._
 - ~ ch_nguyen_cong_ve = true
 ~ ch_hong_doi(-5)
 ~ qh("sieu_nhan_hong", 10)
 _Ở cổng, bác đang đứng ngóng. Bác đỡ bạn xuống, nhìn người đồ hồng một lúc lâu._
-bac_bao_ve: Bla bla… bla. # phu_de:Cảm ơn anh. Nó lạc thì bác không biết tìm đâu.
+bac_bao_ve: Bla bla… bla. # phu_de:Cảm ơn cậu. Nó lạc thì bác không biết tìm đâu.
 _Bạn chui vào ổ. Bạn vẫn ghét bộ đồ hồng. Chắc chắn. Chỉ là… hôm nay ghét ít hơn hôm qua một chút._
 -> END
 
@@ -271,7 +274,6 @@ _{thanh_ninh} không nghe. {thanh_ninh} đã pha trà. {thanh_ninh} đã bắt �
 # ngay:9 # gio:20:00 # noi:choi_bao_ve
 _Tối thứ 6. Cả công ty tụ ở sảnh, chiếu một cái video lên màn hình to. Bác cũng mở trên cái điện thoại cũ trong chòi._
 _Trên màn hình: bộ đồ hồng hát, nhảy, tạo dáng. Màu hồng tràn ra khỏi màn hình như sơn đổ._
-~ follow(40000)
 bac_bao_ve: Bla bla… HỒNG… bla bla. # phu_de:Ra MV rồi đấy. Hồng thật. Hồng quá.
 * [😤 Sủa vào màn hình điện thoại.]
     cho: Gâu! Gâu gâu!
@@ -291,15 +293,15 @@ bac_bao_ve: Bla bla… HỒNG… bla bla. # phu_de:Ra MV rồi đấy. Hồng th
 
 // ------------------------------------------------------------
 === cho_1010_luong_tre ===
-# ngay:10 # gio:07:00 # noi:nha_vuon_ven_do # bat_buoc
-_Thứ 7. Nhà vườn. Bạn ngồi trước cửa từ 6 giờ, chờ lương._
+# ngay:10 # gio:07:00 # noi:choi_bao_ve # bat_buoc
+_Thứ 7. Bác trực cổng cả ngày. Bạn ngồi trước chòi từ 6 giờ 30, chờ lương._
 _Bác ra. Bác nhìn bạn. Bác nhìn cái ví. Bác thở dài._
 bac_bao_ve: Bla bla… TUẤT… bla… XÚC XÍCH… bla bla… KHÔNG… bla. # phu_de:{cho}, xúc xích hôm nay phải chờ lương về đã. Ngân hàng giữ tiền rồi. Không có đâu, đừng nhìn bác thế.
 _KHÔNG. Và XÚC XÍCH. Trong cùng một câu. Đó là câu đáng sợ nhất trong tiếng người._
 * [🥺 Ngồi ngay ngắn, mắt cún long lanh.]
     cho: Ẳng…
     { RANDOM(1, 2) == 1:
-        _Bác nhìn bạn. Bạn nhìn bác. Bác thua. Bác bẻ đôi cây xúc xích cuối cùng trong tủ lạnh của mình._
+        _Bác nhìn bạn. Bạn nhìn bác. Bác thua. Bác bẻ đôi cây xúc xích cuối cùng trong ngăn bàn._
         bac_bao_ve: Bla… bla bla. # phu_de:Thôi, nửa cây. Bác ăn cơm với muối cũng được.
         ~ ch_an(15)
         ~ qh("bac_bao_ve", 3)
@@ -311,10 +313,10 @@ _KHÔNG. Và XÚC XÍCH. Trong cùng một câu. Đó là câu đáng sợ nhấ
     _Ống bơ kêu lẻng xẻng. Bác mở ra đếm._
     ~ temp so = ch_doi_xuc_xich()
     bac_bao_ve: Bla bla… NGOAN… bla… XÚC XÍCH. # phu_de:À, quỹ của mày còn đây. Ngoan. Đi, bác mua cho {so} cây xúc xích.
-    _Bác đạp xe ra tiệm tạp hóa. Bạn chạy theo bên cạnh, đuôi cong vút như cái móc treo._
+    _Bác nhờ cô bán tạp hóa đầu hẻm mang sang. Bạn chạy ra đón, đuôi cong vút như cái móc treo._
     ~ qh("bac_bao_ve", 3)
-* [🐾 Vẫy đuôi, đi theo bác một vòng quanh vườn.]
-    _Không có xúc xích. Nhưng bác vừa tưới rau vừa xoa đầu bạn. Một vòng, hai vòng._
+* [🐾 Vẫy đuôi, đi theo bác một vòng quanh sân.]
+    _Không có xúc xích. Nhưng bác vừa quét sân vừa xoa đầu bạn. Một vòng, hai vòng._
     ~ ch_cung(2)
 * [🙃 Nằm ngửa.]
     cho: Gâu?
@@ -325,7 +327,7 @@ _KHÔNG. Và XÚC XÍCH. Trong cùng một câu. Đó là câu đáng sợ nhấ
 
 // ------------------------------------------------------------
 === cho_1010_sinh_nhat_bac ===
-# ngay:10 # gio:19:00 # noi:nha_vuon_ven_do
+# ngay:10 # gio:20:30 # noi:choi_bao_ve
 _Tối. Hôm nay bác lạ lắm. Bác lấy ra một cái bánh bao, cắm vào đó một que tăm. Ngồi nhìn cái bánh bao rất lâu._
 _Bạn không biết hôm nay là ngày gì. Bạn chỉ biết: bác đang buồn mà không nói._
 _Bác lấy trong túi áo ra một tấm thiệp nhỏ, gửi tới chòi từ đầu tháng, ngoài phong bì ghi "mở ngày 10". Bác đọc, rồi cười. Cười một mình._
@@ -336,19 +338,19 @@ bac_bao_ve: Bla bla… bla… bla bla. # phu_de:Năm mươi rồi đấy, {cho} 
         bac_bao_ve: Bla… bla bla. # phu_de:Ơ… mày vẫn giữ à.
         ~ qh("bac_bao_ve", 10)
     - else:
-        _Bạn chạy ra vườn, cắn đứt một cọng hành. Mang vào. Đặt lên chân bác. Đó là thứ đẹp nhất bạn tìm được._
-        bac_bao_ve: Bla bla… bla. # phu_de:Hành của bác mà… thôi, cảm ơn mày.
+        _Bạn chạy ra bồn cây trước cổng, cắn đứt một cành hoa giấy. Mang vào. Đặt lên chân bác. Đó là thứ đẹp nhất bạn tìm được._
+        bac_bao_ve: Bla bla… bla. # phu_de:Hoa của công ty mà… thôi, cảm ơn mày.
         ~ qh("bac_bao_ve", 6)
     }
 * [😤 Sủa "chúc mừng". Ba tiếng thật to.]
     cho: Gâu! Gâu! Gâu!
-    _Con chó nhà bên sủa lại. Rồi con chó nhà bên nữa. Cả xóm Ven Đô sủa một bản hợp xướng sinh nhật._
+    _Con chó nhà bên kia đường sủa lại. Rồi con chó ở quán trà đá đầu hẻm. Cả khu phố sủa một bản hợp xướng sinh nhật._
     bac_bao_ve: *(phì cười)* Bla bla… bla. # phu_de:Thôi được rồi, cả xóm biết rồi.
     ~ qh("bac_bao_ve", 6)
 * [😴 Gối đầu lên chân bác.]
     _Bạn nằm xuống, gối đầu lên dép bác. Không làm gì cả. Bác thổi tắt cái que tăm không có lửa, rồi xoa đầu bạn._
     ~ qh("bac_bao_ve", 8)
-- _Đêm đó, bác ăn nửa cái bánh bao. Nửa còn lại thuộc về bạn._
+- _Đêm đó, trong chòi, bác ăn nửa cái bánh bao. Nửa còn lại thuộc về bạn._
 ~ ch_an(10)
 -> END
 

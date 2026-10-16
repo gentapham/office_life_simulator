@@ -93,7 +93,7 @@ hong_hot: {thanh_xin_nghi}! Nghe gì chưa? Mà thôi, ông có ở công ty đ�
     hong_hot: Ủa alo? Ông là người duy nhất trong công ty hông muốn nghe chuyện. Có tật giật mình hả?
     ~ son_soi(2)
 - hong_hot: Mà nè, hôm trước tui thấy ông ở Đài Tivi Hóng. Ông đi đâu đó?
-+ [😶 "Đi theo anh Nguyên chớ đâu."]
++ [😶 "Đi theo anh {sieu_nhan_hong} chớ đâu."]
     hong_hot: Ờ ha. Mà sao hôm thứ 4 cũng thấy xe ông ở đó? *(nheo mắt)*
     ~ son_soi(5)
     ~ son_tin(-3)
@@ -251,7 +251,7 @@ idol_het_thoi: {thanh_xin_nghi}! Lịch tuần này của anh đâu? Đám cư�
 # npc:quan_ly_idol
 quan_ly_idol: Khoan, anh nghe máy chút… Alo… ừ… {thanh_xin_nghi}, đợi anh 30 giây… Alo… Rồi. Em nói đi.
 + [🤝 "Anh đưa em một cái điện thoại, em nghe giùm."]
-    quan_ly_idol: *(đưa ngay, không suy nghĩ)* Cái bên trái là {idol_het_thoi}, bên phải là Nguyên. Đừng lộn.
+    quan_ly_idol: *(đưa ngay, không suy nghĩ)* Cái bên trái là {idol_het_thoi}, bên phải là {sieu_nhan_hong}. Đừng lộn.
     _Bạn nghe 4 cuộc. Anh {quan_ly_idol} uống được ly cà phê còn nóng. Lần đầu trong tuần._
     ~ qh("quan_ly_idol", 8)
 + [💬 "Anh {quan_ly_idol}, anh ăn trưa chưa?"]

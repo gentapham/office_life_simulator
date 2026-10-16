@@ -186,8 +186,8 @@ _Lạch cạch tới 2 giờ sáng. Mười trang. Có một câu hay tới mứ
     ~ bk_lo(2)
 }
 _Phần thưởng: một ấm trà nóng. Mười trang là một ấm trà, luật của gác mái số 7._
-{ bk_trang_tieu_thuyet >= 200:
-    _Bạn lật trang cuối. Hai trăm trang. Một cuốn sách thật. Bạn ngồi im, không dám thở mạnh, sợ nó bay mất._
+{ bk_trang_tieu_thuyet >= 90:
+    _Bạn lật trang cuối. Gần trăm trang. Một cuốn sách thật. Bạn ngồi im, không dám thở mạnh, sợ nó bay mất._
 }
 -> END
 

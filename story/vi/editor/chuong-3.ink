@@ -34,9 +34,9 @@ _Mốc 2: phải đạt 200.000 người theo dõi. Bàn của {thanh_xin_nghi} 
     _Chưa đạt. {sieu_nhan_hong} buồn, bỏ đi giúp người cả ngày. Lịch quay hôm nay trống trơn._
 }
 _Bạn đang cắt quảng cáo cho gameshow ngày mai, lấy hình từ kênh livestream của Đài Tivi Hóng. Đài đang phát trực tiếp vòng 2 "Giọng Ca Ước Mơ"._
-_Thí sinh số 17 bước ra. Áo kim tuyến. Giọng vang như chuông chùa. Khuôn mặt… là {thanh_xin_nghi}._
+_Thí sinh số 27 bước ra. Áo kim tuyến. Giọng vang như chuông chùa. Khuôn mặt… là {thanh_xin_nghi}._
 ~ phat_hien(son_thi_hat)
-* [🎨 Cắt bỏ mọi khung hình có thí sinh số 17 khỏi quảng cáo.]
+* [🎨 Cắt bỏ mọi khung hình có thí sinh số 27 khỏi quảng cáo.]
     ~ qh("thanh_xin_nghi", 10)
     _Không ai biết. Lúa ở quê {thanh_xin_nghi} hôm nay được gặt bằng micro._
 * [📞 Nhắn {quan_ly_idol}, bạn thân của {thanh_xin_nghi}: "Anh coi Đài Tivi Hóng kênh 2 liền đi."]
@@ -79,8 +79,8 @@ _{it} chạy qua hành lang, tay ôm bộ lưu điện. Bộ lưu điện chỉ 
 
 // ------------------------------------------------------------
 === editor_1510_phat_hat_toi ===
-# ngay:15 # gio:19:10 # noi:pantry # bat_buoc
-_Tối. Điện chưa có. Cả công ty dạt về pantry tối om, ngồi bệt dưới sàn. Ai đó nói: "Chán quá, có ai hát gì đi."_
+# ngay:15 # gio:16:45 # noi:pantry # bat_buoc
+_Gần 5 giờ chiều. Điện chưa có, ngoài trời mưa. Cả công ty dạt về pantry không cửa sổ, tối om, ngồi bệt dưới sàn. Ai đó nói: "Chán quá, có ai hát gì đi."_
 _Một giọng cất lên. Không micro. Không kính đen._
 idol_het_thoi: "Ngày xưa có đôi bạn thân… bán cá viên chiên tại công viên…"
 _Bạn rút điện thoại, bấm quay. Thói quen nghề nghiệp. Màn hình điện thoại là ánh sáng duy nhất trong phòng._
@@ -115,9 +115,8 @@ quan_ly_idol: *(nhắn tin)* {editor} ơi, hồi chiều có ai quay lúc {idol_
     ~ ed_clip_phat_toi = "gui_thai"
     ~ ed_can(10)
     ~ ed_thuc_dem()
-    quan_ly_idol: *(nhắn)* Trời, em dựng đẹp vậy! Cảm ơn em nha. Để anh hỏi {idol_het_thoi} rồi đăng.
-    _Một tiếng sau, clip lên kênh nghệ sĩ, có lời xin phép của {idol_het_thoi}: "Một đêm mất điện, cả công ty hát cùng tôi."_
-    ~ follow(30000)
+    quan_ly_idol: *(nhắn)* Trời, em dựng đẹp vậy! Cảm ơn em nha. Để anh hỏi {idol_het_thoi}, lúc nào cần thì mình đăng.
+    _Clip nằm trong máy {quan_ly_idol}. Bạn không biết nó sẽ nằm đó bao lâu. Bạn chỉ biết lần này nó không nằm trong máy bạn một mình._
     ~ qh("quan_ly_idol", 10)
     ~ qh("idol_het_thoi", 10)
 * [😶 "Dạ em hông có quay anh."]
@@ -128,9 +127,8 @@ quan_ly_idol: *(nhắn tin)* {editor} ơi, hồi chiều có ai quay lúc {idol_
     ~ ed_clip_phat_toi = "dang_kenh"
     ~ ed_thuc_dem()
     { RANDOM(1, 10) <= 6:
-        ~ ed_sub_cong(20000)
-        ~ follow(10000)
-        _Clip viral. 800.000 lượt xem trong một đêm. Bình luận: "Ca sĩ này là ai vậy? Giọng buồn mà ấm."_
+        ~ ed_sub_cong(5000)
+        _Clip nằm yên trên kênh. Chín nghìn lượt xem trong một đêm, toàn cú đêm. Một bình luận: "Ca sĩ này là ai vậy? Giọng buồn mà ấm." Chưa ai ngoài kia để ý._
     - else:
         ~ ed_lo(25)
         ~ ed_sub_cong(5000)
@@ -139,7 +137,7 @@ quan_ly_idol: *(nhắn tin)* {editor} ơi, hồi chiều có ai quay lúc {idol_
     quan_ly_idol: *(gọi điện, giọng khàn)* Em đăng mà chưa hỏi {idol_het_thoi} hả? … Thôi. Để anh lo. Đừng ai đăng gì thêm.
     ~ qh("quan_ly_idol", -10)
     ~ scandal()
-* {ed_can_dam >= 60} [🔒 Gửi nguyên bản chưa cắt, kèm một câu: "Anh nhìn anh {idol_het_thoi} lâu hơn người khác một giây đó."]
+* {ed_can_dam >= 35} [🔒 Gửi nguyên bản chưa cắt, kèm một câu: "Anh nhìn anh {idol_het_thoi} lâu hơn người khác một giây đó."]
     ~ ed_clip_phat_toi = "nguyen_ban"
     _Đã xem. Không trả lời. Mười phút. Hai mươi phút._
     _00:14. "Em thấy hả?"_
@@ -171,8 +169,8 @@ thuc_tap_sinh: Dạ anh {editor}… em gõ phụ đề rồi, anh soát giúp em
 
 // ------------------------------------------------------------
 === editor_1610_gameshow_hau_truong ===
-# ngay:16 # gio:19:40 # noi:dai_tivi_hong # bat_buoc
-_Đài Tivi Hóng. Gameshow "Hồng Hay Không Hồng". Bạn đứng ở cánh gà với máy quay phụ, quay hậu trường cho bản highlight._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_Đài Tivi Hóng, 14 giờ, buổi quay gameshow "Hồng Hay Không Hồng". 20 giờ tối mới phát sóng. Bạn đứng ở cánh gà với máy quay phụ, quay hậu trường cho bản highlight._
 mc_tivi_hong: Và bây giờ là phần "Hit Một Thời"! Mời Siêu Nhân Hồng!
 _{sieu_nhan_hong} hát "Công Viên". Tới câu "thích ăn chuối chiên" thì hát thành "thích ăn… khoai chiên"._
 _Khán giả cười rần. Rồi từ cánh gà, ngay cạnh bạn, một giọng hát bè cất lên. Đúng từng chữ. "Chuối chiên"._
@@ -216,7 +214,7 @@ _Hai tiếng sau phát sóng là 1 giờ sáng. Bạn còn hai tiếng. Phải c
 - ~ ed_thuc_dem()
 * [⏳ Dựng xong, đăng lúc 5 giờ sáng. Không ngủ.]
     ~ ed_highlight_kip = true
-    ~ follow(40000)
+    ~ follow(15000)
     _5 giờ 02. Highlight lên fanpage. 5 giờ 03, bạn tắt màn hình, ngồi nhìn trời sáng qua khe rèm. 7 giờ, bạn lên xe đi Vũng Tàu._
     { ed_highlight == "phat_hat_be" || ed_highlight == "ca_hai":
         _7 giờ 20, trên xe, {quan_ly_idol} xem highlight. Cười. Quay xuống hàng ghế cuối: "Ai dựng vậy? Hay ghê." Bạn đang ngủ._
@@ -225,12 +223,12 @@ _Hai tiếng sau phát sóng là 1 giờ sáng. Bạn còn hai tiếng. Phải c
 * [⏳ Render Qua Đêm: để máy chạy, ngủ gục 3 tiếng.]
     { RANDOM(1, 10) <= 7:
         ~ ed_highlight_kip = true
-        ~ follow(40000)
+        ~ follow(15000)
         ~ nghi(15)
         _6 giờ. Máy báo xong. Bạn đăng bằng một ngón tay, mắt nhắm._
     - else:
         ~ ed_loi_99 = ed_loi_99 + 1
-        ~ follow(15000)
+        ~ follow(5000)
         _6 giờ. Màn hình: "Lỗi xuất file ở 99%". Bạn render lại. Highlight lên lúc 9 giờ, khi cả công ty đã ở trên xe, và mạng ở trạm dừng chân yếu như lời hứa tăng lương._
     }
 - -> END

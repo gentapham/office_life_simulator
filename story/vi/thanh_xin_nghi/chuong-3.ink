@@ -113,7 +113,11 @@ _Thứ 6 tuần này. Ngày bạn quay lại đài này, trong áo sơ mi, theo 
     -> END
 }
 _Phòng thay đồ đài. Bạn đang tẩy trang thì điện thoại rung. Anh {quan_ly_idol}._
-quan_ly_idol: {thanh_xin_nghi}! Mốc 2 hôm nay đó em. {nguoi_theo_doi >= 200000:Qua rồi! 200 ngàn! Nguyên vui quá tạo dáng 40 phút, anh phải kéo xuống.|Không qua. Nguyên buồn, bỏ đi giúp người cả chiều. Anh không biết xe đón ổng ở đâu. Em có lịch không?}
+quan_ly_idol: {thanh_xin_nghi}! Mốc 2 hôm nay đó em. {nguoi_theo_doi >= 200000:Qua rồi! 200 ngàn! {sieu_nhan_hong} vui quá tạo dáng 40 phút, anh phải kéo xuống.|Không qua. {sieu_nhan_hong} buồn, bỏ đi giúp người cả chiều. Anh không biết xe đón ổng ở đâu. Em có lịch không?}
+_Vừa cúp máy, điện thoại lại rung: chị {chi_dai}, đang khảo sát bãi đất làm sân khấu. Sau lưng bạn, MC của đài đang thử micro._
+chi_dai: Ê {thanh_xin_nghi}. Ruộng gì mà có MC dẫn chương trình vậy em?
+thanh_xin_nghi: Dạ… đài phát thanh xã ạ! Em cúp máy nha chị!
+~ son_tin(-5)
 { nguoi_theo_doi < 200000:
     -> thanh_xin_nghi_1410_moc_2.s_tim_xe
 }
@@ -129,13 +133,13 @@ quan_ly_idol: {thanh_xin_nghi}! Mốc 2 hôm nay đó em. {nguoi_theo_doi >= 200
 * [📅 Mở cuốn lịch, chỉ đường cho xe qua điện thoại, mặt còn nửa lớp trang điểm.]
     ~ uy_tin = uy_tin + 3
     ~ follow(3000)
-    _Bạn chỉ đúng 3 điểm Nguyên hay ghé: công viên Hồ Cá Mập, đầu hẻm 69, bến xe Ven Đô. Ở điểm thứ hai, xe tìm thấy Nguyên đang gỡ diều._
+    _Bạn chỉ đúng 3 điểm {sieu_nhan_hong} hay ghé: công viên Hồ Cá Mập, đầu hẻm 69, bến xe Ven Đô. Ở điểm thứ hai, xe tìm thấy {sieu_nhan_hong} đang gỡ diều._
     quan_ly_idol: Em giỏi quá. Em đang ở đâu mà nghe có tiếng vỗ tay?
     thanh_xin_nghi: Dạ… ruộng… vỗ tay đuổi chim ạ.
 * [😶 "Dạ em đang ở ruộng, sóng yếu lắm anh…" (cúp máy)]
     ~ son_soi(8)
     ~ follow(-5000)
-    _Chiều đó không ai tìm thấy Nguyên. Ở bàn điều phối, ghế bạn trống._
+    _Chiều đó không ai tìm thấy {sieu_nhan_hong}. Ở bàn điều phối, ghế bạn trống._
 - -> END
 
 // ------------------------------------------------------------
@@ -158,7 +162,7 @@ _Hôm nay Siêu Nhân Hồng quay Trâu Cụng lúc 14:00 (bạn đã dời từ
     bac_bao_ve: Thế à. Bác không thấy gì đâu.
     ~ qh("bac_bao_ve", 5)
 * [😶 Ngồi chờ có điện.]
-    _Không có điện. Cả ngày. Chiều đó xe đón chờ ở cổng trước, {cho} sủa, Nguyên chọc {cho}, {cho} đuổi Nguyên 3 vòng bãi xe._
+    _Không có điện. Cả ngày. Chiều đó xe đón chờ ở cổng trước, {cho} sủa, {sieu_nhan_hong} chọc {cho}, {cho} đuổi {sieu_nhan_hong} 3 vòng bãi xe._
     ~ follow(-5000)
     ~ son_soi(5)
 - ~ son_di_lam()
@@ -168,10 +172,10 @@ _Hôm nay Siêu Nhân Hồng quay Trâu Cụng lúc 14:00 (bạn đã dời từ
 === thanh_xin_nghi_1510_pantry_thai ===
 # ngay:15 # gio:11:00 # noi:pantry # bat_buoc
 _Pantry tối om, rèm kéo kín. Cả công ty ngồi bệt dưới sàn. Bạn ngồi cạnh {quan_ly_idol}. Lần đầu tiên trong tháng, cả hai cái điện thoại của anh {quan_ly_idol} đều hết pin._
-quan_ly_idol: {thanh_xin_nghi}… anh nói em nghe chuyện này, em đừng kể ai. Có một công ty… mời anh về. Lương gấp đôi. Kèm điều kiện.
-thanh_xin_nghi: Điều kiện gì anh?
-quan_ly_idol: Mang Nguyên theo.
-_Bạn im lặng. Anh {quan_ly_idol}, bạn thân nhất của bạn ở công ty, cũng giấu chuyện. Giống bạn._
+quan_ly_idol: {thanh_xin_nghi}… anh hỏi em cái này, em đừng kể ai. Nếu một ngày anh đi đâu đó… em có giận anh không?
+thanh_xin_nghi: Đi đâu anh?
+quan_ly_idol: Anh chưa biết. Anh đang tính. Tính hoài mà chưa ra.
+_Bạn im lặng. Anh {quan_ly_idol}, bạn thân nhất của bạn ở công ty, cũng có chuyện chưa kể. Giống bạn._
 * [💬 "Còn anh {idol_het_thoi} thì sao anh?"]
     _Trong bóng tối, bạn nghe anh {quan_ly_idol} thở ra một hơi rất dài._
     quan_ly_idol: …Anh chưa nghĩ tới đó. Hay anh không dám nghĩ.
@@ -222,7 +226,7 @@ sieu_nhan_hong: *(quay sang)* Kim Tuyến? {thanh_xin_nghi} là… ca sĩ hả? 
         ~ son_tin(-10)
         ~ son_nguyen_biet = true
     }
-* [🤫 Kéo {sieu_nhan_hong} vô phòng chờ: "Anh Nguyên, em năn nỉ, anh giữ bí mật giùm em."]
+* [🤫 Kéo {sieu_nhan_hong} vô phòng chờ: "Anh {sieu_nhan_hong}, em năn nỉ, anh giữ bí mật giùm em."]
     ~ son_nguyen_biet = true
     ~ qh("sieu_nhan_hong", 15)
     sieu_nhan_hong: Bí mật hả? Anh giỏi giữ bí mật lắm. Thiệt đó. *(gõ gõ lên cái mũ)*
@@ -240,8 +244,8 @@ sieu_nhan_hong: *(quay sang)* Kim Tuyến? {thanh_xin_nghi} là… ca sĩ hả? 
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1610_gameshow ===
-# ngay:16 # gio:15:00 # noi:dai_tivi_hong # bat_buoc
-_Gameshow "Hồng Hay Không Hồng". Bạn đứng ở cánh gà, cầm bộ đàm, tai nghe nối với tai nghe của {sieu_nhan_hong}._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14 giờ, bấm máy gameshow "Hồng Hay Không Hồng", 20 giờ tối nay phát sóng. Bạn đứng ở cánh gà, cầm bộ đàm, tai nghe nối với tai nghe của {sieu_nhan_hong}. Anh {quan_ly_idol} vừa chạy tới từ đám cưới, đứng ngay sau lưng bạn, áo vest còn dính kim tuyến pháo giấy._
 _Phần "Hit Một Thời": {sieu_nhan_hong} phải hát "Công Viên". Nhạc dạo vang lên._
 sieu_nhan_hong: Ngày xưa có đôi bạn thân… bán cá viên chiên… tại công viên… thích ăn… khoai chiên…
 _Cả trường quay cười ngặt nghẽo. MC Đài Tivi Hóng cười to nhất._
@@ -259,14 +263,13 @@ _Cạnh bạn ở cánh gà là {idol_het_thoi}, đi theo "để hỗ trợ tinh
     ~ son_soi(5)
     _Ba giọng hát: {sieu_nhan_hong} hát sai, {idol_het_thoi} hát đúng, và một giọng thứ ba không ai thấy mặt. Kỹ thuật viên đài nhìn nhau: "Ai vậy?"_
     ~ follow(15000)
-- ~ follow(80000)
-_{sieu_nhan_hong} thắng giải 10 triệu. Cả trường quay đứng dậy vỗ tay cho một bài hát hát sai lời._
+- _{sieu_nhan_hong} thắng giải 10 triệu. Cả trường quay đứng dậy vỗ tay cho một bài hát hát sai lời._
 -> END
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1610_buffet ===
-# ngay:16 # gio:19:00 # noi:pantry
-_Ngày Lương thực Thế giới. Liên hoan buffet ở công ty. Bạn tới trễ nhất, chỗ trống cuối cùng là… cạnh anh {hr}._
+# ngay:16 # gio:19:30 # noi:sanh_cong_ty
+_Ngày Lương thực Thế giới. Xe của đoàn về tới công ty lúc 19 giờ. Liên hoan buffet ở sảnh, 20 giờ cả công ty xem gameshow trên tivi. Bạn tới trễ nhất, chỗ trống cuối cùng là… cạnh anh {hr}._
 hr: Ngồi đi {thanh_xin_nghi}. Ăn đi em.
 _Bạn ngồi xuống. Gắp một cuốn gỏi. Anh {hr} rót cho bạn ly trà._
 hr: {thanh_xin_nghi}, em có xem "Giọng Ca Ước Mơ" hông? Anh mê một thí sinh. Tên {thanh_xin_nghi} Kim Tuyến.

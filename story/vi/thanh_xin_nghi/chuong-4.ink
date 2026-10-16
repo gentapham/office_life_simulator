@@ -28,7 +28,7 @@ _Xe lăn bánh. Bạn ngồi cạnh {quan_ly_idol}. {sieu_nhan_hong} ở hàng g
 sieu_nhan_hong: {son_nguyen_mat_danh:Đặc vụ Kim Tuyến!|{thanh_xin_nghi} ơi!} Tối nay lửa trại hát hò nha!
 * [😅 Vẫy lại, rồi giả vờ ngủ.]
     quan_ly_idol: Đặc vụ gì? *(nhìn bạn)*
-    thanh_xin_nghi: Dạ… anh Nguyên đặt biệt danh lung tung đó anh.
+    thanh_xin_nghi: Dạ… anh {sieu_nhan_hong} đặt biệt danh lung tung đó anh.
 * [🎧 Đeo tai nghe, nghe lại bản thu bài thi.]
     ~ son_mo(2)
     _Ba tiếng đường. Bạn nghe bài của mình 26 lần. Anh {quan_ly_idol} ngủ gục lên vai bạn ở lần thứ 9._
@@ -45,7 +45,7 @@ _Bạn chạy xe tới Đài Tivi Hóng, kịp giờ thử đồ._
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1710_thu_do ===
-# ngay:17 # gio:10:00 # noi:dai_tivi_hong # dieu_kien:khong_di_vung_tau
+# ngay:17 # gio:10:00 # noi:dai_tivi_hong # dieu_kien:not son_di_vung_tau
 { son_di_vung_tau:
     -> END
 }
@@ -64,7 +64,7 @@ _Chiều thứ 6, 23/10. Sinh nhật Siêu Nhân Hồng. Livestream. Bạn là n
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1710_tro_choi ===
-# ngay:17 # gio:15:00 # noi:bai_bien_vung_tau # dieu_kien:di_vung_tau
+# ngay:17 # gio:15:00 # noi:bai_bien_vung_tau # dieu_kien:son_di_vung_tau
 { not son_di_vung_tau:
     -> END
 }
@@ -83,11 +83,11 @@ cho: Gâu! *(vẫy đuôi đầy cát)*
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1710_lua_trai ===
-# ngay:17 # gio:21:00 # noi:bai_bien_vung_tau # bat_buoc # dieu_kien:di_vung_tau
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc # dieu_kien:son_di_vung_tau
 { not son_di_vung_tau:
     -> END
 }
-_Đêm lửa trại. Bia lon, mực nướng, karaoke loa kéo. {sales} say, hứa mời ca sĩ nổi tiếng nhất nước. {giam_doc} say, hứa tăng lương cả công ty._
+_20 giờ. Đêm lửa trại. Bia lon, mực nướng, karaoke loa kéo. Ở quán hải sản Sóng Vỗ lúc nãy, {sales} say, hứa mời ca sĩ nổi tiếng nhất nước. {giam_doc} say, hứa tăng lương cả công ty. Giờ cả hai ngồi im như chưa từng hứa gì._
 _{idol_het_thoi} giành micro hát "Công Viên" lần thứ 4. Tới câu "thích ăn chuối chiên", {chi_dai} giật micro._
 chi_dai: Thôi đủ "Công Viên" rồi! {thanh_xin_nghi}, hát một bài coi. Cả năm chị chưa nghe em mở miệng, toàn nghe em ho.
 _Cả bãi biển quay sang bạn. Micro trong tay. Lửa trại lách tách._
@@ -133,7 +133,7 @@ _Clip lửa trại lan ra ngoài trong đêm. Người ta xem để nghe Siêu N
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1710_phong_ngu ===
-# ngay:17 # gio:23:30 # noi:khach_san_vung_tau # dieu_kien:di_vung_tau
+# ngay:17 # gio:23:30 # noi:khach_san_vung_tau # dieu_kien:son_di_vung_tau
 { not son_di_vung_tau:
     -> END
 }
@@ -232,7 +232,7 @@ dan_dau_tu: {thanh_xin_nghi}… em ngủ chưa? Hồng Coin… về 0 rồi em. 
 === thanh_xin_nghi_1910_giao_ban ===
 # ngay:19 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban. Không ai nhìn mặt ai. {truong_phong} nhìn slide: "Chuẩn bị 20/10: sinh nhật công ty 16 tuổi + Ngày Phụ nữ"._
-truong_phong: {thanh_xin_nghi}, em xếp chương trình văn nghệ tối mai nhé. Như mọi năm.
+truong_phong: {thanh_xin_nghi}, em xếp chương trình văn nghệ tối mai ở Quán Ốc Đêm nhé. Quán có góc karaoke. Như mọi năm.
 _"Như mọi năm" nghĩa là: {idol_het_thoi} hát mở màn "Công Viên", {giam_doc} phát biểu 40 phút, {idol_het_thoi} hát kết thúc "Công Viên"._
 { son_hat_lua_trai:
     chi_dai: Năm nay cho {thanh_xin_nghi} hát một bài đi! Hát hay vậy mà giấu!
@@ -250,8 +250,8 @@ _"Như mọi năm" nghĩa là: {idol_het_thoi} hát mở màn "Công Viên", {gi
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2010_van_nghe ===
-# ngay:20 # gio:10:00 # noi:san_khau_su_kien # bat_buoc
-_Ngày Phụ nữ Việt Nam + sinh nhật công ty 16 tuổi. Bạn cầm tờ chương trình văn nghệ trống, bút trong tay._
+# ngay:20 # gio:10:00 # noi:ban_dieu_phoi # bat_buoc
+_Ngày Phụ nữ Việt Nam + sinh nhật công ty 16 tuổi. Tối nay liên hoan ở Quán Ốc Đêm, 21 giờ qua Karaoke Chú Sáu. Bạn cầm tờ chương trình văn nghệ cho góc karaoke của quán ốc, bút trong tay._
 _Dòng 1: Mở màn. Dòng 2: Phát biểu. Dòng 3: ? Dòng 4: Kết thúc._
 * [🎤 Mở màn: {idol_het_thoi}, "Công Viên". Như mọi năm.]
     ~ qh("idol_het_thoi", 8)
@@ -271,49 +271,55 @@ _Dòng 1: Mở màn. Dòng 2: Phát biểu. Dòng 3: ? Dòng 4: Kết thúc._
 // ------------------------------------------------------------
 === thanh_xin_nghi_2010_thu_g ===
 # ngay:20 # gio:11:30 # noi:chong_bao_ve
-_Chòi bảo vệ. {bac_bao_ve} cầm lá thư tay ký tên "G" và một phong bì dán kín "Chỉ mở khi công ty sắp sập". Cả công ty tụ trước cổng._
-_Anh {hr} đứng cạnh bác. Bác đang hỏi anh nên đọc hay không._
+_Chòi bảo vệ. Bạn xuống báo giờ xe chở cả công ty ra quán ốc. {bac_bao_ve} đang cầm lá thư tay ký tên "G" tới sáng nay, kèm một phong bì dán kín "Chỉ mở khi công ty sắp sập"._
+_Anh {hr} đứng cạnh bác. Bác đang hỏi tối nay có nên đọc trước cả công ty không._
 * [🤝 Nói nhỏ với bác: "Bác đọc đi bác. Mọi người cần nghe."]
-    bac_bao_ve: Cháu {thanh_xin_nghi} cũng bảo thế à. Ừ.
-    _{bac_bao_ve} đứng lên ghế đẩu, đọc chậm: "…16 năm rồi. Gửi lời cảm ơn tới từng người còn ở lại…"_
-    _Bạn nghĩ tới những ngày bạn không ở lại. 31 ngày trong năm._
+    bac_bao_ve: Cháu {thanh_xin_nghi} cũng bảo thế à. Ừ. Tối nay ở quán ốc, bác đọc.
     ~ qh("bac_bao_ve", 5)
-    ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 * [😶 Đứng xa, nhìn.]
-    _Bác cất lá thư vào túi áo. Không đọc. Mọi người tản ra chuẩn bị tiệc._
+    _Bác cất lá thư vào túi áo trong. Bạn ghi vào lịch, bằng bút chì: "18:30, quán ốc, bác {bac_bao_ve}?"_
 - -> END
 
 // ------------------------------------------------------------
+=== thanh_xin_nghi_2010_quan_oc ===
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_18 giờ 30. Quán Ốc Đêm. Cả công ty ngồi kín bốn bàn nhựa. Bác {bac_bao_ve} đứng dậy, gõ đũa vào ly trà, mở lá thư._
+bac_bao_ve: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G."
+_Cả quán im. Bạn nghĩ tới những ngày bạn không đứng đó. 31 ngày trong năm. "Ngày mai thì phải có." Ngày mai của bạn là 31/10._
+~ tinh_than_cong_ty = tinh_than_cong_ty + 5
+~ son_di_lam()
+-> END
+
+// ------------------------------------------------------------
 === thanh_xin_nghi_2010_tiet_muc ===
-# ngay:20 # gio:19:30 # noi:san_khau_su_kien # dieu_kien:son_khach_moi_bi_mat
+# ngay:20 # gio:19:30 # noi:quan_oc_dem
 { not son_khach_moi_bi_mat:
     -> thanh_xin_nghi_2010_tiet_muc.s_binh_thuong
 }
-_Tối. Tiệc sinh nhật 16 tuổi. MC đọc: "Tiết mục tiếp theo: khách mời bí mật!" Đèn sân khấu quay về phía cánh gà. Cả công ty chờ._
-_Bạn đứng sau cánh gà, áo sơ mi công sở, không kim tuyến, không tóc giả. Chỉ có bạn._
+_Góc karaoke Quán Ốc Đêm. {hong_hot} cầm micro làm MC: "Tiết mục tiếp theo: khách mời bí mật!" Chú chủ quán chĩa cây đèn pin vào tấm rèm nhựa. Cả công ty chờ._
+_Bạn đứng sau tấm rèm, áo sơ mi công sở, không kim tuyến, không tóc giả. Chỉ có bạn._
 * [🎤 Bước ra. Hát.]
     ~ phat_hien(son_thi_hat)
     ~ son_mo(10)
     ~ son_tin(-10)
     _Bạn hát. Không trang điểm. Không nghệ danh. Cả công ty lần đầu nghe giọng của người hay xin nghỉ nhất công ty._
-    _Hết bài. {giam_doc} đứng dậy vỗ tay trước tiên. Rồi ông ấy quay sang anh {hr}, nói gì đó. Anh {hr} không trả lời, chỉ nhìn bạn._
+    _Hết bài. Cả quán ốc im phăng phắc, rồi {giam_doc} đứng dậy vỗ tay trước tiên. Rồi ông ấy quay sang anh {hr}, nói gì đó. Anh {hr} không trả lời, chỉ nhìn bạn._
     giam_doc: {thanh_xin_nghi}! Hay! Anh không ép, nhưng em có muốn ký hợp đồng ca sĩ không?
-    _Đúng câu bạn sợ nhất. Bạn cúi chào rồi chạy vào cánh gà._
+    _Đúng câu bạn sợ nhất. Bạn cúi chào rồi chạy ra sau tấm rèm._
     ~ son_soi(10)
-* [😨 Đứng im sau cánh gà. Để MC nói "khách mời bị kẹt xe".]
-    _MC nói "khách mời bị kẹt xe ạ". {idol_het_thoi} nhảy lên hát "Công Viên" thế chỗ. Ai cũng vui. Trừ bạn._
+* [😨 Đứng im sau tấm rèm. Để {hong_hot} nói "khách mời bị kẹt xe".]
+    _{hong_hot} nói "khách mời bị kẹt xe ạ". {idol_het_thoi} nhảy lên hát "Công Viên" thế chỗ. Ai cũng vui. Trừ bạn._
     ~ son_mo(-3)
 - -> END
 
 = s_binh_thuong
-_Tối. Tiệc sinh nhật 16 tuổi. {idol_het_thoi} hát "Công Viên" mở màn. {giam_doc} phát biểu 40 phút. Bạn cầm bộ đàm đứng sau cánh gà, nhẩm theo mọi bài hát._
-~ son_di_lam()
+_Góc karaoke Quán Ốc Đêm. {idol_het_thoi} hát "Công Viên" mở màn. {giam_doc} phát biểu 40 phút. Bạn cầm tờ chương trình đứng cạnh loa, nhẩm theo mọi bài hát._
 -> END
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2010_karaoke ===
-# ngay:20 # gio:22:00 # noi:karaoke_hat_cho_nhau_nghe
-_Tăng hai ở Karaoke Hát Cho Nhau Nghe. {giam_doc} say, đứng lên bàn: "Tháng sau tăng lương 20%! Cả công ty!" {hong_hot} quay clip._
+# ngay:20 # gio:21:00 # noi:karaoke
+_21 giờ. Tăng hai ở Karaoke Chú Sáu. {giam_doc} say, đứng lên bàn: "Tháng sau tăng lương 20%! Cả công ty!" {hong_hot} quay clip._
 _Micro được chuyền tới tay bạn._
 hong_hot: {thanh_xin_nghi} hát đi! Cho tui quay!
 * [🎤 Hát thật, nhỏ thôi.]

@@ -284,7 +284,12 @@ _Bạn biết chú đang giấu điều gì đó. Căn penthouse. Cái thẻ. Nh
 _21 giờ. Tăng hai: Karaoke Chú Sáu. Chú cầm micro, hét: "Tháng sau tăng lương 20%! Cả công ty!" Cả phòng hét theo. Bạn ngồi im, bạn biết chú lấy đâu ra tiền._
 _{truong_phong} ngồi xuống cạnh bạn. Không ai hát. Hai người cùng nhìn chú._
 truong_phong: Chú cậu… có ổn không?
-* {long_mo_phong_thu_nhat} [🔒 "Hông ổn. Mà thôi. Tối thứ Năm ông lên tầng 30 nghe demo đi. Trước khi nhà bị bán."]
+* [🎧 "Hông ổn. Mà thôi. Tối thứ Năm ông lên tầng 30 nghe demo đi. Trước khi nhà bị bán."]
+    { not long_mo_phong_thu_nhat:
+        truong_phong: Demo gì?
+        con_ong_chau_cha: Nhạc. Tui viết. 41 bản rồi. Đừng kể chú tui.
+        ~ long_mo_phong_thu_nhat = true
+    }
     truong_phong: *(khựng lại)* Nhà cậu…
     con_ong_chau_cha: Ừ. Phòng thu cũng nằm trong đó.
     truong_phong: Tối thứ Năm. Tớ mang theo bảng trắng.

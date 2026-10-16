@@ -25,19 +25,19 @@ giam_doc: Tuần này Siêu Nhân Hồng chụp poster đầu tiên. Thứ 3. {t
 === thanh_xin_nghi_0610_poster_domino ===
 # ngay:6 # gio:10:00 # noi:studio_tang_2 # bat_buoc
 _Studio tầng 2. Buổi chụp poster đầu tiên. Đèn, phông hồng, {designer} cầm bảng màu, {chua_te_deadline} cầm ly cà phê._
-_Giữa lúc đang tạo dáng, {sieu_nhan_hong} nhìn qua cửa sổ. Dưới đường, một bà cụ xách giỏ đứng mãi không qua được._
+_Giữa lúc đang tạo dáng, {sieu_nhan_hong} nhìn qua cửa sổ. Ngoài Đường Hóng, gần đầu Hẻm 69, xe chè của một bà cụ sụp bánh xuống ổ gà._
 sieu_nhan_hong: Đợi anh 5 phút!
 _{sieu_nhan_hong} chạy mất. 5 phút. 15 phút. 1 tiếng. Studio thuê theo giờ. Lịch quay chiều nay, lịch phỏng vấn mai, lịch thử đồ thứ 5… đổ như domino._
 chua_te_deadline: SƠN! Ét o ét! Lịch cả tuần sập rồi!
 * {son_khung_gio_giup_nguoi} [🔒 "Bình tĩnh. Khung giờ giúp người, em có chừa. Anh {thuc_tap_sinh}, cầm máy quay chạy theo ổng!"]
     thuc_tap_sinh: Dạ em chạy liền ạ!
-    _{thuc_tap_sinh} chạy theo, quay được cảnh {sieu_nhan_hong} dắt bà cụ qua đường, xách giỏ về tận nhà, sửa cái quạt máy._
-    ~ follow(30000)
+    _{thuc_tap_sinh} chạy theo, quay được trọn cảnh {sieu_nhan_hong} đẩy xe chè của Bà Bảy ra khỏi ổ gà, rồi ngồi ăn ly chè bà mời bằng ống hút luồn qua mũ._
+    ~ follow(20000)
     ~ qh("sieu_nhan_hong", 5)
     ~ uy_tin = uy_tin + 5
     _Chiều đó clip lên mạng. Lượt xem đuổi kịp mọi poster công ty từng làm._
 * [📞 Gọi điện năn nỉ {sieu_nhan_hong} quay lại.]
-    sieu_nhan_hong: *(thở hổn hển)* Bà đang chỉ anh sửa quạt! Em đợi chút! Hợp đồng ghi rõ mà!
+    sieu_nhan_hong: *(thở hổn hển, miệng còn ngậm ống hút)* Bà đang mời anh ăn chè! Em đợi chút! Hợp đồng ghi rõ mà!
     ~ cang_thang(10)
 * [😶 Ngồi xuống, mở cuốn lịch, bắt đầu xếp lại từ đầu.]
     _Bạn thở ra. Đây là nghề của bạn. Xếp hình. Khối nào rơi thì xếp lại._
@@ -95,9 +95,8 @@ _Trên bàn mixer có một hộp cơm ai bỏ quên, còn nguyên._
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_0910_mv_ra_mat ===
-# ngay:9 # gio:10:00 # noi:phong_hop_tang_2 # bat_buoc
-_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. Ra mắt MV đầu tiên của Siêu Nhân Hồng. Cả công ty chen chúc trước màn chiếu._
-~ follow(40000)
+# ngay:9 # gio:20:00 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Trứng Thế giới. Căn tin chỉ bán trứng. 20 giờ, MV "Hồng Hóa Việt Nam" lên kênh Tóp-tóp và Diu-túp của công ty. Cả công ty ở lại, chen chúc trước màn chiếu phòng họp tầng 2._
 _MV kết thúc bằng cảnh {sieu_nhan_hong} tạo dáng trước một quả trứng hồng khổng lồ. Không ai hiểu quả trứng. Ai cũng share._
 _Điện thoại bạn rung trong túi. Tin nhắn từ chương trình:_
 _"Thí sinh SƠN KIM TUYẾN: Vòng 2 ghi hình ngày 14/10 (thứ 4), có mặt lúc 7:30 tại Đài Tivi Hóng."_
@@ -142,7 +141,7 @@ hr: {editor} khám hôm qua rồi em. Anh dắt đi mà.
 === thanh_xin_nghi_0910_hieu_hoi_lich ===
 # ngay:9 # gio:16:30 # noi:ban_dieu_phoi
 _Bàn điều phối. {ran_doc} ghé qua, tay cầm hai ly trà sữa, cười rất ngọt._
-ran_doc: {thanh_xin_nghi} ơi, tui mời ông ly trà sữa nè. Mà ông giữ lịch anh Nguyên đúng hông? Tuần sau ảnh quay ở đâu vậy? Tui viết bản tin nội bộ, muốn đăng lịch cho mọi người cổ vũ.
+ran_doc: {thanh_xin_nghi} ơi, tui mời ông ly trà sữa nè. Mà ông giữ lịch anh {sieu_nhan_hong} đúng hông? Tuần sau ảnh quay ở đâu vậy? Tui viết bản tin nội bộ, muốn đăng lịch cho mọi người cổ vũ.
 _{ran_doc} vô làm mới 9 ngày, mà hỏi han ai cũng thân như quen 10 năm._
 * [📅 "Đây nè, ông chụp lại đi." (Mở cuốn lịch)]
     ~ son_hieu_biet_lich = true
@@ -245,8 +244,8 @@ _Bạn lục album. Có một tấm: bạn 7 tuổi, đứng trên cái ghế đ
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_1210_luong_ve ===
-# ngay:12 # gio:10:47 # noi:ban_dieu_phoi # bat_buoc
-_Thứ 2. 10 giờ 47. Điện thoại cả văn phòng rung cùng lúc. Lương về. Tiếng thở phào to tới mức {cho} dưới sân sủa theo._
+# ngay:12 # gio:10:00 # noi:ban_dieu_phoi # bat_buoc
+_Thứ 2. 10 giờ. Điện thoại cả văn phòng rung cùng lúc. Lương về. Tiếng thở phào to tới mức {cho} dưới sân sủa theo._
 ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 ~ cang_thang(-10)
 _Bạn nhìn số dư. Trừ 1 ngày nghỉ không phép tháng trước, trừ 3 ngày phép âm. Còn ít hơn bạn tưởng._
@@ -261,7 +260,7 @@ _Bạn nhìn số dư. Trừ 1 ngày nghỉ không phép tháng trước, trừ 
     ~ son_mo(3)
 * [😶 Để dành. Tháng này còn dài.]
     _Ngày 12 có lương, ngày 15 hết tiền. Bạn quyết tâm lần này ngày 16 mới hết._
-- _Trưa đó ở quán cơm tấm, thẻ phụ của {con_ong_chau_cha} bị từ chối, rồi một cái thẻ lấp lánh rơi ra từ ví {thuc_tap_sinh}. Bạn thấy hết, nhưng bạn không phải {hong_hot}._
+- _Chiều đó, {hong_hot} đi từng bàn kể: 12 giờ 30 ở Cà Phê Sống Ảo, thẻ phụ của {con_ong_chau_cha} bị từ chối, rồi một cái thẻ lấp lánh rơi ra từ ví {thuc_tap_sinh}. Bạn nghe hết, gật gù, rồi quay về cuốn lịch. Bạn không phải {hong_hot}._
 ~ son_di_lam()
 -> END
 
@@ -270,7 +269,7 @@ _Bạn nhìn số dư. Trừ 1 ngày nghỉ không phép tháng trước, trừ 
 # ngay:12 # gio:14:00 # noi:ban_dieu_phoi
 _Chiều. Bạn xếp lịch tuần cho Siêu Nhân Hồng. Thứ 4 (14/10): vòng 2 của bạn. Thứ 5: chưa có gì. Thứ 6 (16/10): gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng._
 _Đài Tivi Hóng. Cái đài bạn sẽ có mặt thứ 4 trong bộ đồ kim tuyến. Thứ 6 bạn lại phải tới, trong áo sơ mi, đi kèm {sieu_nhan_hong}._
-quan_ly_idol: {thanh_xin_nghi}, thứ 6 em đi đài với Nguyên nha. Anh kẹt đám cưới của {idol_het_thoi} buổi sáng.
+quan_ly_idol: {thanh_xin_nghi}, thứ 6 em đưa {sieu_nhan_hong} lên đài từ sáng nha. Anh kẹt đám cưới của {idol_het_thoi} buổi sáng, trưa anh mới tới kịp giờ quay.
 * [😅 "Dạ… dạ được anh."]
     _Hai lần trong một tuần, ở cùng một đài. Một lần là {thanh_xin_nghi} Kim Tuyến, một lần là {thanh_xin_nghi} Điều Phối. Bạn bắt đầu tập đi kiểu khác._
     ~ cang_thang(5)

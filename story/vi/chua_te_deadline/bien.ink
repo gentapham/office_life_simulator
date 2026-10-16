@@ -51,3 +51,24 @@ VAR vu_cuu_banh_kem = false    // Lao ra cứu bánh kem 23/10
 VAR vu_no_chuong = 0           // Tiền Chương "ghi nợ" sau các ván bida
 VAR vu_muon_duy = false        // Đã mượn tiền {thuc_tap_sinh} lúc lương trễ
 VAR vu_duoc_de_bat = false     // 30/10: được đọc tên Trưởng nhóm Dự án
+VAR vu_cue_chuan = false       // 31/10: chốt pháo giấy đúng cue 47
+VAR vu_usb_ra_bai_rac = false  // 30/10: USB đi theo xe rác ra bãi Ven Đô
+VAR vu_thay_mai = false        // Đã thấy {sieu_nhan_hong} ở quán chè Bà Bảy với Mai
+
+// ============================================================
+// HÀM RIÊNG
+// ============================================================
+// Độ Nước Tới Chân luôn nằm trong 0..100
+=== function vu_nuoc(n) ===
+~ vu_nuoc_toi_chan = gioi_han(vu_nuoc_toi_chan + n)
+
+// Cue sheet Đại Nhạc Hội: 0..47
+=== function vu_cue(n) ===
+~ vu_cue_sheet = vu_cue_sheet + n
+{ vu_cue_sheet > 47:
+    ~ vu_cue_sheet = 47
+}
+
+// Độ Tin Thật Lòng luôn nằm trong 0..100
+=== function vu_tin(n) ===
+~ vu_tin_that_long = gioi_han(vu_tin_that_long + n)

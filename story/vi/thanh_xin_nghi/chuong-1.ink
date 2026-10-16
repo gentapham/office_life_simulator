@@ -175,7 +175,7 @@ phu_co_giao_thanh_nhac: Nghề gì mà cần ho?
 === thanh_xin_nghi_0410_dem_nhac_song_ao ===
 # ngay:4 # gio:20:00 # noi:quan_song_ao # bat_buoc
 _Chủ nhật. Ngày Động vật. Quán cà phê Sống Ảo, đèn vàng, cây xanh. Bạn ngồi trên ghế cao, ôm đàn guitar, khẩu trang và mũ lưỡi trai che gần hết mặt._
-_Bàn trong góc: một người mặc bộ đồ siêu nhân màu hồng, đang ăn bánh chuối chiên. Đeo đôi găng hồng (đôi dự phòng, Nguyên than với cô phục vụ là đôi chính bị "một con chó ở công ty" cướp sáng nay)._
+_Bàn trong góc: một người mặc bộ đồ siêu nhân màu hồng, đang ăn bánh chuối chiên. Đeo đôi găng hồng (đôi dự phòng, {sieu_nhan_hong} than với cô phục vụ là đôi chính bị "một con chó ở công ty" cướp sáng nay)._
 _Bạn nhận ra bộ găng tay hồng ngay. Bạn kéo mũ xuống thấp hơn._
 phu_chu_quan_song_ao: {thanh_xin_nghi}, tối nay đông. Hát gì cho khách vui đi em.
 * [🎶 Một bài ballad buồn, hát mộc.]
@@ -201,7 +201,7 @@ _{sieu_nhan_hong} không nhận ra bạn. Bạn mới gặp anh ấy 3 ngày tr�
 * [🤐 Nhận tiền, cúi đầu cảm ơn, im lặng.]
     ~ tien_cong(500000)
     _{sieu_nhan_hong} vẫy tay rồi biến mất trên chiếc xe hồng. Bí mật vẫn là bí mật._
-* [🙋 Kéo khẩu trang xuống: "Anh Nguyên! Em là {thanh_xin_nghi}, người giữ lịch của anh nè!"]
+* [🙋 Kéo khẩu trang xuống: "Anh {sieu_nhan_hong}! Em là {thanh_xin_nghi}, người giữ lịch của anh nè!"]
     sieu_nhan_hong: *(làm rơi miếng bánh chuối)* {thanh_xin_nghi}?! {thanh_xin_nghi} giữ lịch?! Em… em hát hả?
     thanh_xin_nghi: Dạ… anh giữ bí mật giùm em nha. Ở công ty không ai biết.
     sieu_nhan_hong: Bí mật hả? Anh giỏi giữ bí mật lắm. Thiệt đó. *(chỉ vào cái mũ)* Cái này là bằng chứng.

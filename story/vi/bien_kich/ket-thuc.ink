@@ -8,7 +8,7 @@
 //   3. Kịch Bản Không Cần Mượn
 //   4. Tiểu Thuyết Bị Lộ (Độ Lộ từng chạm 100, hoặc đã bán sách cho LL)
 //   5. Trang Giấy Trắng (kịch bản không xong trước 26/10, hoặc Cảm Hứng về 0)
-//   6. Đạo Ý Tưởng Ngày Ra Mắt (Mượn > Thật, không ghi công, có người biết)
+//   6. Đạo Ý Tưởng Ngày Ra Mắt (Mượn ≥ 25, không ghi công cho Duy, có người biết)
 //   Mặc định: Mượn > Thật mà không ghi công thì Đạo Ý Tưởng, còn lại Không Cần Mượn
 // ============================================================
 
@@ -16,7 +16,7 @@
 # ngay:31 # gio:23:30 # bat_buoc # dieu_kien:sau_dem_hong
 ~ temp lo_sach = bk_do_lo_tung_100 || bk_ban_cho_ll
 {
-- bk_trang_tieu_thuyet >= 200 && bk_chu_ky_dong_y >= 10 && bk_tu_choi_ll && not lo_sach:
+- bk_trang_tieu_thuyet >= 90 && bk_chu_ky_dong_y >= 8 && bk_tu_choi_ll && not lo_sach:
     ~ chot_ket_thuc("cong_ty_la_gia_dinh")
     -> bien_kich_kt_cong_ty_la_gia_dinh
 - bk_ghi_cong_duy && bk_credit == "ca_hai" && bk_phim_thanh_cong && not lo_sach:
@@ -31,7 +31,7 @@
 - not bk_kich_ban_phim_xong || bk_cam_hung <= 0:
     ~ chot_ket_thuc("trang_giay_trang")
     -> bien_kich_kt_trang_giay_trang
-- bk_y_tuong_muon > bk_y_tuong_that && not bk_ghi_cong_duy && bk_ai_biet_chuyen:
+- bk_y_tuong_muon >= 25 && not bk_ghi_cong_duy && bk_ai_biet_chuyen:
     ~ chot_ket_thuc("dao_y_tuong")
     -> bien_kich_kt_dao_y_tuong
 - bk_y_tuong_muon > bk_y_tuong_that && not bk_ghi_cong_duy:
@@ -104,7 +104,7 @@ _Bạn để nguyên góc rách. Văn hay thì không cần tờ giấy phẳng.
 // 😄 3. 🔒 KẾT THÚC BÍ MẬT: CÔNG TY LÀ GIA ĐÌNH
 === bien_kich_kt_cong_ty_la_gia_dinh ===
 # ket_thuc:cong_ty_la_gia_dinh # loai:co_hau # bi_mat # noi:hieu_sach_pho_cu
-_Đêm 31/10, 23 giờ 30. Bạn về gác mái, đặt bản thảo dày hơn hai trăm trang lên bàn. Trang cuối là danh sách chữ ký của những người trong sách. Bạn đóng nó lại, lần đầu không sợ ai đọc._
+_Đêm 31/10, 23 giờ 30. Bạn về gác mái, đặt bản thảo gần trăm trang lên bàn. Trang cuối là danh sách chữ ký của những người trong sách. Bạn đóng nó lại, lần đầu không sợ ai đọc._
 _Ba tháng sau. Tháng 1, Phố Cũ lạnh. Trước hiệu sách đầu chợ, hàng người xếp dài tới tận quán cà phê muối._
 _Trên kệ kính: "CÔNG TY LÀ GIA ĐÌNH", tiểu thuyết đầu tay của {bien_kich}. Đã bán hết đợt in đầu tiên. Đợt hai cũng sắp hết._
 _Bạn ngồi sau cái bàn nhỏ, ký sách. Người xếp hàng xin chữ ký đầu tiên… là cả công ty._

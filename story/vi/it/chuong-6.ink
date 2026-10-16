@@ -122,6 +122,24 @@ _Trong xấp giấy có một tờ ghi: "Cảm ơn anh {it}. Không có anh ch�
 - -> END
 
 // ------------------------------------------------------------
+=== it_2910_tho_nha_mang ===
+# ngay:29 # gio:22:00 # noi:tu_mang_tang_tret # bat_buoc
+_22 giờ. Thợ nhà mạng tới, đèn pin ngậm ở miệng, máy hàn cáp quang kêu vo vo. Bạn cầm đèn cho anh ấy. {editor} ngồi bệt ở bậc cầu thang, ôm laptop, thanh tiến trình vẫn 99%._
+* [🔦 Đứng cầm đèn tới khi xong, không đi đâu.]
+    ~ it_on(10)
+    ~ nghi(-15)
+    _Bạn cầm đèn 47 phút, tay không run lần nào._
+* [🧶 Tranh thủ đi lại dây dự phòng cho tủ mạng, phòng lần sau.]
+    ~ it_on(15)
+    ~ nghi(-25)
+    _Thợ nhà mạng nhìn đường dây bạn đi, gật đầu: "Ông này làm kỹ."_
+- _22 giờ 47. Đèn router chuyển xanh. Cả tòa nhà có wifi lại. Trên laptop của {editor}, video "16 năm" nhảy từ 99% lên 100%._
+editor: *(không ngẩng lên, giọng khàn)* Anh {it}… cảm ơn anh.
+~ it_cam_on()
+~ qh("editor", 5)
+-> END
+
+// ------------------------------------------------------------
 === it_3010_don_kho ===
 # ngay:30 # gio:08:00 # noi:gam_cau_thang
 _Trước họp đánh giá, {hr} cho dọn kho. Ai cũng phải dọn. {thuc_tap_sinh} được giao dọn gầm cầu thang._
@@ -201,39 +219,42 @@ _Điện thoại bạn rung. {thanh_xin_nghi}: "Anh {it}, 20:00 em thi chung k�
 
 // ------------------------------------------------------------
 === it_3110_dem_hong ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19:30. Đèn tắt. Màn hình lớn chiếu phim ngắn "Người Hùng Không Tên". Rồi video "16 năm" của {editor}._
+# ngay:31 # gio:19:20 # noi:san_khau_dem_hong # bat_buoc
+_19:20. Mười phút nữa mở màn. Bạn đứng sau bàn đèn, tai đeo bộ đàm, kịch bản đèn dán bằng băng keo đen lên mặt bàn._
 { it_ban_thu_cho == "editor":
-    _Nhạc nền của video là bản thu mộc "Công Viên" năm 2015. Cả khán đài im phăng phắc. Ở hàng ghế đầu, {idol_het_thoi} ôm mặt._
+    _Video "16 năm" của {editor} tối nay dùng bản thu mộc "Công Viên" năm 2015 làm nhạc nền. Ở hàng đầu, {idol_het_thoi} chưa biết._
 }
 { it_ban_thu_cho == "idol_het_thoi":
-    _Giữa chương trình, {idol_het_thoi} xin lên hát một bài, giọng mộc, không nhạc nền. "Công Viên", y như bản năm 2015._
+    _{idol_het_thoi} nhắn: "Tối nay anh xin một bài hát mộc. Em giữ đèn cho anh nha." Bạn ghi thêm một dòng vào kịch bản đèn._
 }
-_Rồi tới lượt {sieu_nhan_hong}. Bạn bấm đèn theo nhạc. Hồng, hồng, trắng, hồng. Đúng phách. Khán giả hô theo._
-{ it_su_co_am_thanh and not it_dem_hong_san_sang:
-    _Giữa bài thứ hai, loa trái tắt phụt. Có ai đó đã đụng vào dây. Bạn chạy ra nối lại, mất 2 phút. 2 phút dài nhất đời bạn._
-    ~ follow(-30000)
-- else:
-    _Không một tiếng hú. Không một cây đèn tắt. Mọi thứ chạy như một cái đồng hồ, như thể cả tháng qua chỉ để luyện cho đêm nay._
-    ~ follow(100000)
+{ nguyen_theo_ll:
+    -> it_3110_dem_hong.vang_nguyen
 }
-_Bài cuối. {sieu_nhan_hong} đứng giữa sân khấu, đưa tay lên chiếc mũ hồng. Ngập ngừng. Trong bộ đàm, giọng {chi_dai}: "{it}, đèn."_
-_Bạn có thể chiếu một vệt sáng trắng thật rõ vào giữa sân khấu. Hoặc hạ tất cả về hồng mờ, cho người đứng đó một chỗ để trốn._
-* [💡 Đèn trắng. Rõ. Cho mọi người thấy.]
-    _Một vệt sáng trắng. {sieu_nhan_hong} tháo mũ. Một khuôn mặt bình thường, mắt đỏ, đang cười. Khán đài im 3 giây, rồi vỡ òa._
-    ~ nguyen_thao_mu_dem_hong = true
-    ~ follow(50000)
-    ~ qh("sieu_nhan_hong", 15)
-* [🩷 Hồng mờ. Cho {sieu_nhan_hong} tự chọn trong bóng tối.]
-    _Đèn hồng dịu xuống. {sieu_nhan_hong} đứng yên rất lâu, rồi bỏ tay xuống, cười sau lớp mũ. "Hồng là thái độ!" Khán đài hô theo._
+chi_dai: *(qua bộ đàm)* {it}. Bài cuối, nếu ổng đưa tay lên mũ, em chiếu đèn gì? Chị phải báo trước cho máy quay.
+* [💡 Đèn trắng. Rõ. Ai muốn thấy thì thấy.]
+    ~ qh("chi_dai", 5)
+    _Bạn ghi vào kịch bản: "Bài cuối, nếu tay lên mũ: TRẮNG." Tháo hay không là chuyện của ổng. Nhưng nếu tháo, mọi người sẽ thấy rõ._
+* [🩷 Hồng mờ. Cho người đứng đó một chỗ để trốn.]
     ~ qh("sieu_nhan_hong", 10)
-    ~ follow(20000)
-* [⚡ Bấm 8 lần đèn hồng liên tục theo nhạc. Luật công ty.]
-    _Đèn hồng nhấp nháy như pháo hoa. Khán giả hét lên. Khoảnh khắc trôi qua. Chiếc mũ vẫn ở yên trên đầu._
-    ~ follow(30000)
+    _Bạn ghi: "Bài cuối, nếu tay lên mũ: HỒNG MỜ." Điều khoản số 1 nói không ai được ép. Đèn cũng không._
+* [⚡ Bấm 8 lần đèn hồng liên tục. Luật công ty.]
+    ~ qh("giam_doc", 5)
+    _Bạn ghi: "8 lần hồng." {giam_doc} sẽ vui. Còn khoảnh khắc đó thì sẽ trôi qua thật nhanh._
 - { it_dem_hong_san_sang:
-    _Bộ đàm rè rè. Giọng Bác {bac_bao_ve}, đứng cạnh tủ cầu dao suốt buổi: "Xong rồi đấy cháu. Không ai đụng vào cái gì cả."_
+    _Bộ đàm rè rè. Giọng Bác {bac_bao_ve}, đứng cạnh tủ cầu dao: "Bác đứng đây rồi. Không ai đụng vào cái gì cả."_
 - else:
-    _Show kết thúc. Bạn buông tay khỏi bàn điều khiển. Tay bạn run, như vừa giữ cả công ty trong 2 tiếng._
+    _Tủ cầu dao không khóa, không ai đứng canh. Bạn nhìn nó một lần nữa rồi quay về bàn đèn. Không còn thời gian._
 }
+_19:30. Đèn tắt. Màn hình lớn bật lên._
+-> END
+
+= vang_nguyen
+chi_dai: *(qua bộ đàm)* {it}. Không có {sieu_nhan_hong}. {idol_het_thoi} lên thay. Đèn sao em?
+* [💡 Một vệt trắng, rõ. Cho người đứng đó thấy khán giả.]
+    ~ qh("idol_het_thoi", 10)
+    _Bạn sửa kịch bản đèn: "Bài 1: TRẮNG. Không hồng." Tối nay không có ai cần trốn._
+* [🩷 Hồng mờ. Cho sân khấu đỡ trống.]
+    ~ qh("chi_dai", 5)
+    _Bạn để nguyên màu hồng. Sân khấu hồng mà không có người mặc đồ hồng._
+- _19:30. Đèn tắt. Màn hình lớn bật lên._
 -> END

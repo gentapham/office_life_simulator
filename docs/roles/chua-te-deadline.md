@@ -26,7 +26,7 @@ Phòng gác trên quán bida có một tấm nệm, một cái laptop dán đầ
 
 ### Sự thật Vũ chưa biết
 1. **Có hai bản file gốc vẫn còn sống.** Bản thứ nhất là cái USB không nhãn, đang nằm trong **kho báu của {cho} dưới gầm cầu thang**: Tuất nhặt ở bãi xe hồi tháng 9 vì nó có mùi cà phê sữa đá (mùi của Vũ). Bản thứ hai nằm trong ổ cứng ghi **"KHÔNG ĐƯỢC MỞ"** ở phòng trọ của Bảo: bản sao lưu tự động máy chủ công ty mà chính Bảo cũng quên mất. Bác Bình thì thấy Tuất tha cái USB về. Bác không nói gì.
-2. **Nguyên thích Vũ thật.** Mỗi sáng Nguyên đặt lên bàn Vũ một món quà màu hồng: bút highlight hồng, ly giữ nhiệt hồng, gối cổ hồng. Vũ tưởng đây là kịch bản "content cặp đôi" do bên truyền thông nghĩ ra, nên **đã tự ghi vào bảng tiến độ**: *"Content couple: để Ngân lo."*
+2. **Nguyên thích Vũ thật, nhưng một chiều.** Mỗi sáng Nguyên đặt lên bàn Vũ một món quà màu hồng: bút highlight hồng, ly giữ nhiệt hồng, gối cổ hồng. Vũ tưởng đây là kịch bản "content cặp đôi" do bên truyền thông nghĩ ra, nên **đã tự ghi vào bảng tiến độ**: *"Content couple: để Ngân lo."* Vũ không bao giờ đáp lại như người yêu; tối đa là bạn thân. Người thật sự hợp với Nguyên là **Mai**, cháu Bà Bảy, phụ bán ở quán chè đầu Hẻm 69. Cuối tháng, Vũ có thể thấy Nguyên ở quán chè và tự kết luận (sai một nửa) rằng mấy món quà là "tập dượt" cho người khác.
 
 ---
 
@@ -37,7 +37,7 @@ Phòng gác trên quán bida có một tấm nệm, một cái laptop dán đầ
 | 🌊 **Độ Nước Tới Chân** | Còn bao nhiêu việc chưa làm so với deadline (0–100) | Lướt Tóp-tóp, dời việc, đi bida, nói "còn sớm mà" | Làm việc thật, dùng "Đêm Thần Tốc" |
 | 📱 **Giờ Lướt Tóp-tóp** | Số giờ lướt trong ngày. Lướt nhiều thì bắt được trend, nhưng việc dồn lại | Mở app Tóp-tóp, ngồi toilet quá 10 phút | Bị Nhật bắt quả tang, wifi sập |
 | 💾 **Độ Lộ File Gốc** | Mọi người nghi chuyện mất file gốc dự án tháng 6 tới đâu (0–100) | Thắng đòi cảnh cũ, Lĩnh hỏi file, Thương hỏi biên bản nghiệm thu, nói dối không khớp | Tìm lại được file (USB của Tuất hoặc ổ cứng của Bảo), nhờ Lĩnh giữ bí mật |
-| 🩷 **Độ Tin Thật Lòng** | Vũ tin Nguyên thích mình thật tới đâu (bắt đầu ở 0: "chắc PR"). Là mặt bên kia của chỉ số **Tim Hồng** trong role Siêu Nhân Hồng | Nói chuyện riêng với Nguyên lúc không mặc đồ, thấy Nguyên làm điều tốt lúc không có camera | Đọc bình luận "couple PR", nghe Hiếu hoặc Ngân bàn tán, Nguyên tặng quà trước camera |
+| 🩷 **Độ Tin Thật Lòng** | Vũ tin Nguyên tử tế thật lòng (không phải PR) tới đâu, 0–100 (bắt đầu ở 0: "chắc PR"). Cao thì thành bạn thân, không bao giờ thành người yêu | Nói chuyện riêng với Nguyên lúc không mặc đồ, thấy Nguyên làm điều tốt lúc không có camera | Đọc bình luận "couple PR", nghe Hiếu hoặc Ngân bàn tán, Nguyên tặng quà trước camera |
 
 **Chế độ Thần Tốc:** khi Độ Nước Tới Chân **từ 80 trở lên**, Vũ làm việc **nhanh gấp 3**, minigame dễ hơn, nhưng mỗi việc có 20% bị "lỗi phút chót".
 **Nước Tới Cổ:** Độ Nước Tới Chân đạt **100** vào một ngày có mốc chiến dịch thì mốc đó tự động trượt, và Nhật được quyền triệu tập "họp khẩn" 3 tiếng.
@@ -79,12 +79,12 @@ Vũ là **cái cổ chai** của cả chiến dịch: ai cũng làm tốt mà V�
 
 | Việc | Ảnh hưởng tới Độ Nổi Tiếng | Ghi chú |
 |---|---|---|
-| Ra MV đúng ngày 9/10 | **+40.000** người theo dõi | Trễ 1 ngày: chỉ +15.000, và Ngân phải đăng bài xin lỗi |
+| Xuất MV kịp 7:59 ngày 9/10 | Mốc MV (+40.000) game tự cộng lúc 20:00 | Ngủ quên lúc xuất file: MV vẫn ra 20:00 nhưng bỏ khâu chỉnh màu, −15.000 |
 | Bắt được trend Tóp-tóp đúng lúc (Lướt Lấy Cảm Hứng) | +5.000 tới +30.000 mỗi lần | Lướt mà không bắt được gì thì chỉ tăng Độ Nước Tới Chân |
-| Kịch bản gameshow 16/10 nộp đúng hạn | **+80.000** | Nộp trễ thì Nguyên lên sóng không có câu hỏi, tự hát bài "Công Viên" của Phát: có thể thành meme (+50.000) hoặc thảm họa (−30.000) |
-| Tìm lại file gốc dự án tháng 6 trước 20/10 | Clip "16 năm G-Entertainment" lên sóng ngày 20/10, rồi làm màn mở đầu Đại Nhạc Hội Siêu Nhân: **+100.000** | Tìm được sau 20/10 nhưng trước 31/10: chỉ còn màn mở đầu Đại Nhạc Hội Siêu Nhân, +50.000. Không tìm được: Thắng dựng clip bằng ảnh chụp điện thoại, Ngân đăng lên bị chê "như slide đám cưới", −20.000. Ngày 22/10 thiếu bằng chứng nghiệm thu, Quỹ Công Ty bị phạt |
-| Kịch bản sân khấu (cue sheet) Đại Nhạc Hội Siêu Nhân hoàn hảo | **+150.000** trong đêm 31/10 | Thiếu cue sheet: Bảo không biết lúc nào bắn pháo giấy, Tuất lên sân khấu trước Nguyên |
-| Trả lời công khai lời tỏ tình 23/10 (bằng bất kỳ cách nào) | **+60.000** (couple là thứ mạng xã hội thích nhất) | Nếu trả lời kiểu "PR hả anh?" thì vẫn +60.000, nhưng Độ Tin Thật Lòng không bao giờ lên được nữa |
+| Kịch bản gameshow 16/10 nộp đúng hạn | Mốc gameshow (+80.000) game tự cộng | Phần "Hit Một Thời" (ghi hình 15:20): cho Phát hát bè (+25.000), để "khoai chiên" thành meme (+25.000 hoặc −30.000) |
+| Tìm lại file gốc dự án tháng 6 | Ngày 20/10 chiếu một phút mở đầu của video "16 năm" (bản đầy đủ của Lĩnh mở màn Đại Nhạc Hội): có cảnh drone +10.000, không có thì thành "slide đám cưới" −10.000 | Ngày 22/10 thiếu bằng chứng nghiệm thu thì công ty bị phạt. Nguồn tìm lại: ổ cứng của Bảo (đêm 21–22/10), kho của Tuất (25/10 hoặc 30/10) |
+| Kịch bản sân khấu (cue sheet) Đại Nhạc Hội Siêu Nhân | Chỉnh `chung_tien_do_dem_hong`: chốt đúng cue 47 +15, đoán bừa +5 hoặc −10, cue sheet dưới 30 dòng −20. Đại Nhạc Hội chung tính điểm từ tiến độ này | Cảnh 31/10 của Vũ không tự cộng người theo dõi |
+| Phản ứng với lời tỏ tình 23/10 | Mốc livestream (+60.000) game tự cộng; lựa chọn của Vũ thêm +10.000 tới +20.000 | Câu chốt theo sổ tay: "Ý tưởng PR hay đó anh!". Nói "Kịch bản này ai viết vậy?" qua micro thì Độ Tin Thật Lòng khóa ở 0 |
 
 Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ mỗi ngày Độ Nước Tới Chân ở mức 100, Độ Nổi Tiếng −5.000 vì không có bài nào được đăng.
 
@@ -100,39 +100,40 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 - **4/10:** Ngày Động vật. {cho} mặc áo, đeo nơ, nằm canh gầm cầu thang không cho ai lại gần. Vũ đi ngang, Tuất không gầm gừ mà ngửi ly cà phê sữa đá trên tay Vũ rất lâu. *Manh mối đầu tiên, người chơi rất dễ bỏ qua.*
 
 ### Chương 2: "MV Một Đêm" (5/10 – 12/10)
-- **6/10:** chụp poster. Nguyên bỏ ngang đi giúp một bà cụ (điều khoản số 3). Vũ phải xếp lại lịch cả đoàn trong 15 phút.
+- **6/10:** chụp poster. Khoảng 10:30 Nguyên bỏ ngang, chạy xuống đầu Hẻm 69 đẩy xe chè của Bà Bảy ra khỏi ổ gà (điều khoản số 3). Vũ phải xếp lại lịch cả đoàn trong 15 phút. Nguyên mang về một ly chè cho producer.
 - **7/10 (Mốc 1, 50.000):** nếu trượt, Thắng "truyền lửa" 3 tiếng, Vũ bị ngồi hàng đầu.
 - **8/10:** Lĩnh bị bắt đi khám mắt (Ngày Thị giác Thế giới) đúng đêm phải dựng MV. Vũ phải năn nỉ Lĩnh dựng từ phòng khám, hoặc tự dựng, hoặc nhờ Duy (Duy chưa từng mở phần mềm dựng phim).
-- **9/10:** MV ra mắt, xuất file lúc 7:59. Cùng ngày, Lĩnh được Thắng nhờ "lấy giùm anh mấy cảnh dự án tháng 6". Lĩnh lục máy chủ không thấy, quay sang nhìn Vũ rất lâu: *"File gốc tháng 6 đâu ông?"* Độ Lộ File Gốc +20.
-- **10–12/10:** lương về trễ. Vũ hết tiền từ ngày 7 (vì ăn đồ ăn nhanh lúc nửa đêm). Ăn trứng cả tuần (Ngày Trứng còn dư). Lựa chọn: ứng lương ở chỗ Thương (bị hỏi "hóa đơn đâu em?"), đánh bida cược tiền với Chương, hay mượn Duy.
+- **9/10:** 7:59 xuất bản cuối MV "Hồng Hóa Việt Nam" gửi Ngân, 20:00 MV ra mắt. Cùng ngày, Lĩnh được Thắng nhờ "lấy giùm anh mấy cảnh dự án tháng 6". Lĩnh lục máy chủ không thấy, quay sang nhìn Vũ rất lâu: *"File gốc tháng 6 đâu ông?"* Độ Lộ File Gốc +20.
+- **10–12/10:** lương về trễ. Vũ hết tiền từ ngày 7 (vì ăn đồ ăn nhanh lúc nửa đêm). Ăn trứng cả tuần (Ngày Trứng còn dư). Lựa chọn: ứng lương ở chỗ Thương (bị hỏi "hóa đơn đâu em?"), đánh bida cược tiền với Chương, hay mượn Duy. Lương về 10:00 ngày 12/10. Vũ không có mặt ở Sống Ảo lúc thẻ của Long bị từ chối, chỉ nghe Ngân kể lại. Tối đó Chương nhắc hóa đơn 800 triệu tháng 6.
 
 ### Chương 3: "Cúp Điện, Cúp Luôn Deadline" (13/10 – 16/10)
 - **14/10 (Mốc 2, 200.000):** Sơn xin nghỉ "về quê gặt lúa", Vũ mất người điều phối lịch đúng tuần gameshow.
 - **15/10:** mất điện cả ngày. Kịch bản gameshow phải nộp Đài Tivi Hóng **trước 9 giờ sáng 16/10**. Laptop còn 12% pin. Cả công ty ngồi ở pantry kể chuyện; Vũ ngồi góc gõ phím dưới ánh đèn điện thoại. Duy rụt rè đưa ra **5 cục sạc dự phòng hàng xịn**, không ai hiểu một thực tập sinh lương 4 triệu lấy đâu ra.
-- Trong bóng tối, người ngồi sát bên Vũ là một anh chàng **không đội mũ**, giọng nhỏ, hay "ờm…". Vũ mất 5 phút mới nhận ra đó là Nguyên. Cuộc nói chuyện thật lòng đầu tiên: không camera, không tạo dáng. Độ Tin Thật Lòng có thể tăng mạnh. *(Nếu Nguyên đã lấy được cái USB trong kho của Tuất, Nguyên đưa nó cho Vũ ngay tại đây.)*
+- Trong bóng tối, người ngồi sát bên Vũ là một anh chàng **không đội mũ**, giọng nhỏ, hay "ờm…". Vũ mất 5 phút mới nhận ra đó là Nguyên. Cuộc nói chuyện thật lòng đầu tiên: không camera, không tạo dáng. Nguyên nói mấy món quà "hông phải PR". Nếu Độ Tin Thật Lòng ≥ 20, Vũ hiểu đó là quà của bạn bè và nhận "không kịch bản". Vũ không bao giờ hiểu đó là lời tỏ tình.
 - Lĩnh nói nhỏ từ phía bên kia: *"Thứ 3 tuần sau sếp đòi clip 16 năm rồi đó. Ông tính sao?"* Lựa chọn: thú nhận với Lĩnh, hay tiếp tục giấu.
-- **16/10:** gameshow ở Đài Tivi Hóng. Vũ đứng sau hậu trường đeo tai nghe. Nguyên đòi Vũ ngồi hàng ghế khán giả đầu tiên "để có động lực". Vũ nghĩ: *"Kịch bản couple tới tập 2 rồi."*
+- **16/10:** gameshow ở Đài Tivi Hóng (ghi hình 14:00, phát sóng 20:00). Vũ đứng sau hậu trường đeo tai nghe. Có lượt câu hỏi cuối bị tráo thành "Hồi nhỏ anh từng bắt nạt ai chưa?" (#XinLỗiNhàKho). Nguyên đòi Vũ ngồi hàng ghế khán giả đầu tiên "để có động lực". Vũ nghĩ: *"Kịch bản couple tới tập 2 rồi."*
 
 ### Chương 4: "Deadline Trên Bãi Biển" (17/10 – 20/10)
 - **Deadline lớn nhất năm trùng team building:** hồ sơ xin phép biểu diễn Sân khấu Đại Nhạc Hội Siêu Nhân phải nộp phường **trước 8 giờ sáng 19/10**. Vũ chưa viết chữ nào.
 - **17/10, Vũng Tàu:** Vũ mang laptop theo, trốn vào toilet khu nghỉ dưỡng để làm (wifi mạnh nhất ở đó). Tuấn (HR) đi kiểm tra phòng, gõ cửa toilet.
-- **Đêm lửa trại**, trò "nói thật": Nguyên (không đội mũ) nói: *"Người anh thích là người lúc nào cũng tới phút chót mới tới. Mà tới là làm mọi thứ đẹp hết."* Cả đám quay sang nhìn Vũ. Vũ nghĩ: *"Thoại hay ghê, ai viết vậy ta, chắc Oánh."* Lựa chọn quan trọng về Độ Tin Thật Lòng.
+- **Đêm lửa trại (20:00)**, trò "nói thật": Nguyên (không đội mũ) nói: *"Người anh thích là người lúc nào cũng tới phút chót mới tới. Mà tới là làm mọi thứ đẹp hết."* Cả đám quay sang nhìn Vũ. Vũ nghĩ: *"Thoại hay ghê, ai viết vậy ta, chắc Oánh."* Lựa chọn quan trọng về Độ Tin Thật Lòng.
 - **18/10:** về tới thành phố, ai cũng giận ai. Vũ thì vui vì đã viết xong hồ sơ trên xe khách.
-- **20/10:** sinh nhật công ty + Ngày Phụ nữ. 7:45 sáng Vũ mới nhớ ra phải mua quà cho các chị em trong phòng. Minigame chạy chợ hoa trong 15 phút.
+- **20/10:** sinh nhật công ty + Ngày Phụ nữ. 7:45 sáng Vũ mới nhớ ra phải mua quà cho các chị em trong phòng. 10:30 chiếu một phút mở đầu video "16 năm". 18:30 ở Quán Ốc Đêm, Vũ có thể bảo Bác Bình đọc thư "G". 21:00 Karaoke Chú Sáu.
 
 ### Chương 5: "Lên Xu Hướng" (21/10 – 27/10)
 - **21/10 (Mốc 3, 500.000).**
 - **22/10:** đoàn kiểm tra thuế đòi bằng chứng nghiệm thu dự án 800 triệu hồi tháng 6. Thương lùng khắp công ty tìm Vũ. Vũ đang trốn trong phòng server, 0:30 sáng đêm trước đã lần đầu tiên không cười mà thú nhận với Bảo: *"Anh Bảo ơi… em làm mất file gốc rồi."* Nếu quan hệ với {it} đủ tốt, Bảo nhớ ra cái ổ cứng "KHÔNG ĐƯỢC MỞ".
-- **23/10:** sinh nhật Nguyên kiêm livestream. Vũ ngồi phòng điều khiển, đang lướt Tóp-tóp thì thấy chính mình lên xu hướng: Nguyên vừa **tỏ tình giữa livestream**. Hashtag **#VũƠiTrảLờiĐi** leo top 3. Cùng lúc đó Tuất lao vào cái bánh kem hồng. Lựa chọn lớn nhất của tuyến tình cảm.
-- **24/10:** Hương tổ chức "hội nghị hòa giải". Vũ và Nhật bị xếp ngồi cạnh nhau, phải khen nhau 3 câu.
-- **25/10 (chủ nhật):** nếu file gốc vẫn chưa về tay và đã có đủ manh mối (Tuất ngửi ly cà phê sữa đá, Bác Bình nói "bác không thấy gì đâu" hơi lâu), Vũ có thể vào gầm cầu thang tìm cái USB.
-- **27/10:** LL-Entertainment đưa hợp đồng gấp ba cho Nguyên. Tối đó Nguyên nhắn cho Vũ (không phải cho Thái, không phải cho Thắng): *"Em muốn anh ở lại không?"*
+- **23/10:** sinh nhật Nguyên kiêm livestream (20:00, studio tầng 2). "Mr. Kevin Trộn" do Chương, Duy hoặc Bác Bình đóng (ngẫu nhiên). Nguyên **tỏ tình giữa livestream**, hashtag **#VũƠiTrảLờiĐi**. Vũ tin đó là chiêu PR: câu chốt là *"Ý tưởng PR hay đó anh!"*. Tình cảm của Nguyên với Vũ là một chiều; Vũ tối đa chỉ thành bạn thân.
+- **24/10 (14:00):** Hương tổ chức "hội nghị hòa giải". Vũ và Nhật bị xếp ngồi cạnh nhau, phải khen nhau 3 câu.
+- **25/10 (chủ nhật):** nếu file gốc vẫn chưa về tay và đã có ít nhất một manh mối (Tuất ngửi ly cà phê sữa đá, hoặc Bác Bình nói "bác không thấy gì đâu" hơi lâu), Vũ có thể vào gầm cầu thang tìm cái USB.
+- **27/10:** 11:00 Sữa Chua Hồng Hào gọi Huyền, Vũ có thể gọi xác nhận. 15:00 Lưu Lực tới sảnh. Tối đó Nguyên nhắn cho Vũ (không phải cho Thái, không phải cho Thắng): *"Em muốn anh ở lại không?"*
 
 ### Chương 6: "Nhảy Là Phải Đẹp" (28/10 – 31/10)
 - **28/10 (Mốc 4, 800.000).** Vũ khoanh tròn đêm 29/10 là "Đêm Thần Tốc cuối cùng".
-- **29/10:** wifi sập cả ngày, đúng đêm Vũ định làm cue sheet và tải file lên mạng. Lựa chọn: ra quán cà phê Sống Ảo (đắt, wifi mạnh), quán net Gõ Phím (rẻ, ồn, gặp Duy), hay **làm bằng giấy bút lần đầu tiên trong đời**.
+- **28/10:** video tỏ tình của Lĩnh lên fanpage lúc 2:10, 6 phút, khoảng 2.000 lượt xem.
+- **29/10:** wifi sập từ 9:00 tới 22:47 (Tuất cắn dây sau tủ mạng khi đi tìm con gà cao su), đúng đêm Vũ định làm cue sheet và tải file lên mạng. Lựa chọn: ra quán cà phê Sống Ảo (đắt, wifi mạnh), quán net Gõ Phím (rẻ, ồn, gặp Duy), hay **làm bằng giấy bút lần đầu tiên trong đời**.
 - **30/10:** họp đánh giá. Nhật trình bày "tác phong làm việc" của Vũ. Thắng đọc kết quả.
-- **31/10:** Đại Nhạc Hội Siêu Nhân. Vũ đeo tai nghe đứng cánh gà, cầm cue sheet. 47 cue, mỗi cue một tiếng "Go!". Đêm nay quyết định cả hai cái kết.
+- **31/10:** 18:30 Vũ ghé phòng chờ của Nguyên (nếu Nguyên đã theo LL thì nhắn tin rủ đi ăn chè sau show). 19:15 Vũ chốt cue pháo giấy với Bảo, ảnh hưởng tiến độ Đại Nhạc Hội chung. Kết thúc của Vũ hiện sau đêm diễn.
 
 ---
 
@@ -204,18 +205,20 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 
 > *(Bạn đang lướt Tóp-tóp trong phòng điều khiển livestream. Video đầu tiên hiện lên là… màn hình livestream ngay sau lưng bạn.)*
 >
-> **{sieu_nhan_hong}:** *(tháo găng tay, nhìn thẳng vào camera)* Có một người… sáng nào anh cũng để quà trên bàn. Người đó tưởng anh làm PR. Vũ ơi, anh không có làm PR đâu.
+> **{sieu_nhan_hong}:** *(tháo găng tay, nhìn thẳng vào camera)* Có một người… sáng nào anh cũng để quà trên bàn. Người đó tưởng anh làm PR. Vũ ơi, anh thích em. Không có làm PR đâu.
 >
 > *(Bình luận chạy như thác. Ngoài kia, {cho} vừa nhảy lên bàn bánh kem.)*
 >
-> 1. 🌊 *"Kịch bản này ai viết vậy? Hay quá, để tui nâng KPI cho bà Oánh."*
->    - Độ Nổi Tiếng +60.000. Độ Tin Thật Lòng **khóa ở 0** tới hết game. {sieu_nhan_hong} cười, nhưng tối đó không ghé phòng chờ ăn bánh chuối chiên
-> 2. 😳 *Gõ bình luận: "Cho em tới 31/10 nha. Em quen làm phút chót."*
->    - Độ Nổi Tiếng +60.000. Độ Tin Thật Lòng +20. Mở nhánh "Hẹn Đại Nhạc Hội Siêu Nhân"
-> 3. 🧯 *Bỏ điện thoại, lao ra cứu cái bánh kem khỏi {cho}.*
->    - Nửa cái bánh được cứu. Livestream quay được cảnh bạn ôm bánh, Tuất cắn ống quần. Độ Nổi Tiếng +40.000. Câu trả lời bị hoãn
-> 4. 🔒 *Bước ra trước camera, nói: "Anh Nguyên, em tưởng là PR thiệt. Xin lỗi anh. Cho em suy nghĩ đàng hoàng, lần đầu em không muốn để tới phút chót."* (Chỉ hiện nếu Độ Tin Thật Lòng ≥ 50)
->    - Độ Nổi Tiếng +80.000. Độ Tin Thật Lòng +30. {sieu_nhan_hong} đội mũ lại thật nhanh vì mặt đỏ hơn bộ đồ
+> 1. 👍 *Giơ ngón cái vào camera: "Ý tưởng PR hay đó anh!"*
+>    - +10.000. Cả studio cười, Nguyên cười chậm nửa nhịp
+> 2. 🌊 *"Kịch bản này ai viết vậy? Hay quá, để tui nâng KPI cho bà Oánh."*
+>    - +15.000. Độ Tin Thật Lòng **khóa ở 0** tới hết game. {sieu_nhan_hong} cười, nhưng tối đó không ghé phòng chờ ăn bánh chuối chiên
+> 3. 😳 *Gõ bình luận: "Cho em tới 31/10 nha. Em quen làm phút chót."* (Vũ chỉ định hẹn chốt kịch bản sau show)
+>    - +15.000. Độ Tin Thật Lòng +10. Mở nhánh "Hẹn Đại Nhạc Hội Siêu Nhân"
+> 4. 🧯 *Bỏ điện thoại, lao ra cứu cái bánh kem khỏi {cho}.*
+>    - Nửa cái bánh được cứu. +10.000. Câu trả lời bị hoãn
+> 5. 🔒 *Bước ra trước camera: "Anh Nguyên, sinh nhật vui. Quà anh tặng em xài hết rồi. Mình làm bạn thiệt nha anh, không kịch bản."* (Chỉ hiện nếu Độ Tin Thật Lòng ≥ 40)
+>    - +20.000. Độ Tin Thật Lòng +15. Nguyên: "Bạn… Ừ. Bạn thiệt."
 
 ### Mẫu 6: Tin nhắn lúc nửa đêm (27/10)
 
@@ -224,8 +227,8 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 > 1. 😇 *"Anh ở lại đi. Đại Nhạc Hội Siêu Nhân mà thiếu anh thì em chiếu cái gì."*
 >    - {sieu_nhan_hong} ở lại. Độ Tin Thật Lòng +10. Thái nhắn cảm ơn bạn lúc 1 giờ sáng
 > 2. 🌊 *(Để "đã xem", định sáng mai trả lời.)*
->    - Sáng mai bạn ngủ quên tới 7:58. Nguyên đã tự quyết. 🎲 50% ở lại, 50% Nguyên nhận lời gặp Lưu Lực
-> 3. 🤝 *"Chuyện hợp đồng anh hỏi anh Thái với anh Thắng. Còn chuyện kia… em trả lời anh ngày 31."*
+>    - Sáng mai bạn ngủ quên tới 7:58. Nguyên đã tự quyết. 🎲 60% ở lại, 40% Nguyên nhận lời LL (`nguyen_theo_ll`)
+> 3. 🤝 *"Chuyện hợp đồng anh hỏi anh Thái với anh Thắng. Còn chuyện kia… xong show 31 em nói anh nghe đàng hoàng."*
 >    - Độ Tin Thật Lòng +5. {sieu_nhan_hong}: "Anh chờ được. Anh quen chờ rồi."
 
 ---
@@ -236,12 +239,14 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🌊 **Nhảy Là Phải Đẹp** | Không trượt quá 1 mốc chiến dịch, Đêm Thần Tốc 29/10 hoàn thành, cue sheet Đại Nhạc Hội Siêu Nhân đủ 47 cue, Uy tín ≥ 60 | Cue cuối cùng: *"Pháo giấy… Go!"*. Pháo hồng phủ kín sân khấu. Ngày 30/10 Thắng đã đọc tên bạn: **Trưởng nhóm Dự án, tăng lương 20%**. Nhật vỗ tay bằng hai ngón. Bạn về phòng gác, ngủ một mạch 19 tiếng, trên lịch khoanh đỏ một ngày mới: 31/10 năm sau |
-| 2 | 😄 🩷 **Không Phải PR** | Độ Tin Thật Lòng ≥ 80, đã mở nhánh "Hẹn Đại Nhạc Hội Siêu Nhân", đã trả lời Nguyên trước 23:59 ngày 31/10 | Show tan, sân khấu tắt đèn. Nguyên ngồi ở mép sân khấu, tháo mũ ra, tóc bết mồ hôi. Bạn đi tới, đặt lên tay Nguyên một cây bút highlight màu hồng, cây đầu tiên Nguyên tặng: *"Lần đầu tiên trong đời em trả lời trước deadline đó."* Nguyên cười, không tạo dáng. Phía xa, {cho} sủa một tiếng, nhưng lần này không lao tới |
-| 3 | 😄 🔒 **Kết thúc bí mật: Người Đến Sớm** | Xong toàn bộ việc của chiến dịch **trước 24/10**, Giờ Lướt Tóp-tóp không quá 1 tiếng mỗi ngày trong 7 ngày liền, không dùng "Nhờ Xíu" lần nào | Cả công ty hoảng loạn: Vũ làm xong sớm 7 ngày. Nhật triệu tập "họp khẩn tìm hiểu âm mưu". Tuấn mời bạn đi uống trà vì "anh chỉ muốn lắng nghe em thôi". Đại Nhạc Hội Siêu Nhân diễn ra hoàn hảo, còn bạn nằm dài trên bãi cỏ sau sân khấu, không có gì để làm, lần đầu tiên xem trọn một show mình làm ra. Bạn mở Tóp-tóp, thấy video "Người đàn ông rảnh rỗi nhất Đại Nhạc Hội Siêu Nhân" đang lên xu hướng. Là bạn |
-| 4 | 😢 🌊 **Nước Tới Cổ** | Độ Nước Tới Chân chạm 100 vào ngày 30/10 hoặc 31/10, cue sheet chưa xong | 19:58, còn 2 phút mở màn. Cue sheet trên tay bạn mới có 3 dòng. Bảo hỏi qua bộ đàm: "Pháo giấy khi nào?". Bạn nói "Go!" nhầm lúc. Pháo nổ khi Nguyên đang hát câu buồn nhất. Sáng thứ 2 Tuấn nhắn: *"Em rảnh không, lên phòng anh uống trà xíu."* Lần này bạn không đi trễ |
-| 5 | 😢 💾 **File Gốc** | Độ Lộ File Gốc đạt 100 khi chưa tìm lại được file (cả USB của Tuất lẫn ổ cứng của Bảo) | Họp đánh giá 30/10. Thương đặt lên bàn biên bản phạt của đoàn kiểm tra thuế: doanh thu 800 triệu tháng 6 "không chứng minh được". Thắng hỏi đúng một câu: "File gốc đâu em?" Cả phòng quay sang nhìn bạn. Lĩnh không nói gì, chỉ ngáp, và lần này không phải vì buồn ngủ. Bạn ôm thùng carton đi ngang gầm cầu thang. {cho} đang gặm một cái USB không nhãn, mùi cà phê sữa đá |
-| 6 | 😢 📱 **PR Thôi Mà** | Đã chọn "Kịch bản này ai viết vậy?" ngày 23/10, Độ Tin Thật Lòng < 20 tới hết 31/10 | Chiến dịch có thể thành công, bạn có thể được khen. Nhưng sáng 1/11, trên bàn bạn không còn quà hồng. Chỉ có một mẩu giấy viết tay: *"Anh hiểu rồi. Cảm ơn em đã làm show cho anh."* Bạn mở Tóp-tóp, lướt, lướt, lướt. Lần đầu tiên chẳng video nào làm bạn cười |
+| 1 | 😄 🌊 **Nhảy Là Phải Đẹp** | Cue sheet đủ 47 cue, 19:15 ngày 31/10 chốt pháo giấy đúng cue 47, Uy tín ≥ 50, chưa lộ file gốc tới 100, Độ Nước Tới Chân < 100. Mặc định nếu đủ 47 cue và Uy tín ≥ 40 | Cue cuối: *"Pháo giấy… Go!"* đúng lúc người hát giơ tay (Nguyên, hoặc Phát nếu Nguyên đã theo LL). Nếu đã được đề bạt 30/10 thì nhắc lại chức Trưởng nhóm Dự án, nếu chưa thì Thắng ra cánh gà vỗ vai ba cái. Công ty sống hay trượt đều được nhắc. Bạn về phòng gác, ngủ một mạch 19 tiếng, khoanh đỏ 31/10 năm sau |
+| 2 | 😄 🤝 **Bạn Thân Hồng Chill** *(thay "Không Phải PR")* | Độ Tin Thật Lòng ≥ 60, chưa khóa, đã hẹn hoặc gặp Nguyên trước show ngày 31/10 (phòng chờ 18:30, hoặc nhắn tin nếu Nguyên đã theo LL) | 23 giờ, bạn trả cây bút highlight cạn mực: *"Mình là bạn thật, hông kịch bản."* Nguyên: *"Ờm… bạn thật. Ừ. Anh chịu."* Hai người đi ăn chè Bà Bảy ở đầu Hẻm 69. Mai, cô bán chè, hỏi Nguyên *"Anh ăn chè gì? Như mọi khi hả?"*, Nguyên đỏ tới tai. Vũ kết luận: *"Hồi giờ ổng tập tặng quà trên mình. Người thật ở đây."* Vũ trả tiền cả bàn, để lại mẩu giấy *"Chill nha. —V"* |
+| 3 | 😄 🔒 **Kết thúc bí mật: Người Đến Sớm** | Xong toàn bộ cue sheet ngày 21/10 (cần kịch bản gameshow và hồ sơ phường kịp hạn, "Nhờ Xíu" không quá 3 lần), chuỗi ngày ít lướt ≥ 3 | Cả công ty hoảng loạn: Vũ làm xong sớm 7 ngày. Nhật họp khẩn "tìm hiểu âm mưu". Đêm 31/10 mọi cue chạy như đồng hồ, bạn nằm dài trên bãi cỏ sau sân khấu, lần đầu xem trọn một show mình làm ra. Video "Người đàn ông rảnh rỗi nhất Đại Nhạc Hội Siêu Nhân" lên xu hướng |
+| 4 | 😢 🌊 **Nước Tới Cổ** | Độ Nước Tới Chân chạm 100 và cue sheet chưa đủ 47. Mặc định cuối cùng | 19:30 cue 1 còn ổn. 20:00 tờ giấy hết chữ. Bảo hỏi "Pháo giấy khi nào?", bạn hô "Go!" nhầm lúc câu buồn nhất. Hương: *"Từ giờ chị cầm cue."* Sáng thứ 2 Tuấn mời uống trà. Lần đầu bạn tới sớm |
+| 5 | 😢 💾 **File Gốc** | Độ Lộ File Gốc ≥ 100 khi chưa tìm lại được file (mặc định nếu ≥ 70) | Họp đánh giá 30/10, Thương đặt biên bản phạt của đoàn thuế lên bàn. Thắng hỏi: "File gốc đâu em?" Bạn ôm thùng carton. Show 31/10 là show cuối. Nếu USB đã theo xe rác 30/10: bạn đứng trước bãi rác Ven Đô, "Dạ, cháu tìm deadline." Nếu không: {cho} đang gặm cái USB dưới gầm cầu thang |
+| 6 | 😢 📱 **PR Thôi Mà** | Đã nói "Kịch bản này ai viết vậy?" ngày 23/10 (Độ Tin Thật Lòng khóa ở 0) | Sáng 1/11 trên bàn chỉ có mẩu giấy *"Anh hiểu rồi. Cảm ơn em đã làm show cho anh. —N"*. Trưa đó đi ngang quán chè Bà Bảy, bạn thấy Nguyên không mũ, cô bán chè múc thêm cho anh một vá nước cốt dừa. Nụ cười đó không dành cho bạn. *"Hóa ra từ đầu không phải PR. Chỉ là bạn tới trễ, như mọi khi."* |
+
+Thứ tự xét (cảnh `chua_te_deadline_3010_danh_gia`, game gọi sau Đại Nhạc Hội Siêu Nhân): Người Đến Sớm → Nhảy Là Phải Đẹp → Bạn Thân Hồng Chill → File Gốc → Nước Tới Cổ → PR Thôi Mà → mặc định (Nhảy Là Phải Đẹp, File Gốc, rồi Nước Tới Cổ).
 
 ---
 

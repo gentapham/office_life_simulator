@@ -57,8 +57,8 @@ _8 giờ 50 sáng. Bộ đàm của Bác {bac_bao_ve} rè rè: "Ba người. C�
 _{ke_toan} lao ra hành lang, mặt trắng bệch: "Bà ơi, tui cần 15 phút. Hóa đơn tháng 6 còn nằm trong thùng mì."_
 _Bạn đứng chắn ở đầu cầu thang tầng 2. Trưởng đoàn đi lên trước: Chú Liêm, 55 tuổi, kính dày, cặp da sờn._
 chu_liem: Chào cô. Đoàn kiểm tra. Cho xem sổ sách.
-* [🍵 "Dạ chú đi đường xa. Mời chú uống chén trà trước đã, trà Thái Nguyên, nước sôi lần hai."]
-    chu_liem: *(khựng)* Ờ… trà Thái Nguyên à. Cũng được. Một chén thôi.
+* [🍵 "Dạ chú đi đường xa. Mời chú uống chén trà trước đã, trà Bắc, nước sôi lần hai."]
+    chu_liem: *(khựng)* Ờ… trà Bắc à. Cũng được. Một chén thôi.
     _Một chén thành ba chén. Ba chén thành chuyện quê. Chuyện quê thành chuyện con cái. 17 phút._
     ~ cd_chan_doan_thue = true
     ~ cd_uy(5)
@@ -150,7 +150,7 @@ sales: *(van nài)* Chị ơi… chị chọn giùm em một người…
 _20 giờ. Studio tầng 2. Livestream đang chạy. 10.000 người xem. {hong_hot} cầm máy. {sieu_nhan_hong} vừa nhận lời chúc từ "Mr. Kevin Trộn"._
 {
 - cd_kevin_tron == "bac_bao_ve":
-    _Bác {bac_bao_ve} trong bộ vest, đọc đúng ba câu, giọng Bắc chậm rãi: "Chúc mừng sinh nhật. Làm việc tốt. Ngủ đúng giờ." Bình luận nổ tung: "Ông Kevin này thật quá!", "Kevin Trộn gốc Hà Nội hả?"._
+    _Bác {bac_bao_ve} trong bộ vest, đọc đúng ba câu, giọng Bắc chậm rãi: "Chúc mừng sinh nhật. Làm việc tốt. Ngủ đúng giờ." Bình luận nổ tung: "Ông Kevin này thật quá!", "Kevin Trộn gốc miền Bắc hả?"._
     ~ follow(15000)
 - cd_kevin_tron == "thuc_tap_sinh":
     _{thuc_tap_sinh} trong vest nói như một giám đốc ngân hàng thật, trôi chảy, chắc chắn. Bình luận: "Ông Kevin này đẹp trai ghê", "Ủa nhìn quen quen"._

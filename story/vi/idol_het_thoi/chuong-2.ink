@@ -58,7 +58,7 @@ ba_quan_ly_sky_ao: Cậu {idol_het_thoi}. Căn 1808. Ba tháng rồi đó. 36 tr
 _Studio tầng 2. Buổi chụp poster đầu tiên của Siêu Nhân Hồng. Đèn, phông hồng, quạt gió. {designer} cầm bảng màu, {thuc_tap_sinh} cầm hắt sáng._
 _Bạn "tình cờ" đi ngang khung hình. Lần thứ nhất: lấy nước. Lần thứ hai: tìm bật lửa dù không hút thuốc. Lần thứ mười bốn: không cần lý do nữa._
 tho_chup_anh: Anh gì đeo kính ơi, anh đứng lệch qua giùm em chút được hông…
-_Đúng lúc đó, {sieu_nhan_hong} nhìn ra cửa sổ, thấy một bà cụ đang loay hoay với giỏ đồ trên vỉa hè. Nguyên bỏ mic, bỏ đèn, chạy xuống thang bộ._
+_10:30. Đúng lúc đó, {sieu_nhan_hong} nhìn ra cửa sổ: ngoài Đường Hóng, gần đầu Hẻm 69, xe chè của một bà cụ sụp bánh xuống ổ gà. {sieu_nhan_hong} bỏ mic, bỏ đèn, chạy xuống thang bộ._
 sieu_nhan_hong: Điều khoản số 3! Em đi chút về liền!
 _Studio im phăng phắc. Thợ chụp nhìn đồng hồ, nhìn bạn, nhìn cái phông hồng trống trơn._
 tho_chup_anh: Hay… anh chụp vài tấm hông anh? Đèn đang đẹp.
@@ -69,28 +69,27 @@ tho_chup_anh: Hay… anh chụp vài tấm hông anh? Đèn đang đẹp.
     ~ phat_tt(8)
     ~ follow(-10000)
     ~ qh("quan_ly_idol", -5)
-    quan_ly_idol: *(vừa chạy lên, thở dốc)* {idol_het_thoi}… đây là buổi chụp của Nguyên mà em…
-* [🤝 Chạy xuống phụ {sieu_nhan_hong} xách giỏ cho bà cụ.]
-    _Bà cụ đi chợ về, giỏ toàn bí đỏ. Bạn xách một bên, {sieu_nhan_hong} xách một bên. Bà cụ nhìn bạn mãi._
+    quan_ly_idol: *(vừa chạy lên, thở dốc)* {idol_het_thoi}… đây là buổi chụp của {sieu_nhan_hong} mà em…
+* [🤝 Chạy xuống phụ {sieu_nhan_hong} đẩy xe chè cho bà cụ.]
+    _Bà Bảy bán chè đầu Hẻm 69. Bạn đẩy một bên, {sieu_nhan_hong} đẩy một bên. Bánh xe bật lên khỏi ổ gà. Bà cụ nhìn bạn mãi._
     ba_cu: Con… con giống thằng ca sĩ hát bài cá viên chiên ghê.
-    _Ai đó trên vỉa hè đang quay. Trong clip, có một bóng người đeo kính đen xách bí đỏ, lọt khung nửa giây._
+    _Ai đó trên vỉa hè đang quay. Trong clip, có một bóng người đeo kính đen đẩy xe chè, lọt khung nửa giây._
     ~ qh("sieu_nhan_hong", 15)
     ~ phat_tt(-8)
     ~ phat_nt(1)
-    ~ follow(5000)
 * [🎤 "Thôi, đèn đẹp thì chụp em {designer} đi. Bả cầm bảng màu cả sáng rồi."]
     designer: Ủa… em hả? Thôi anh, em có ra gì đâu.
     _Nhưng {designer} vẫn đứng vào. Ba tấm. Tấm thứ ba {designer} cười thật, lần đầu tiên trong tuần._
     ~ qh("designer", 12)
     ~ phat_tt(-5)
-- _Nửa tiếng sau {sieu_nhan_hong} quay lại, mồ hôi ướt mũ, tay dính đất bí đỏ._
+- _Nửa tiếng sau {sieu_nhan_hong} quay lại, mồ hôi ướt mũ, tay còn cầm ly chè cắm ống hút luồn qua mũ._
 sieu_nhan_hong: Xin lỗi cả nhà! Mình chụp tiếp nha! Gét gô!
 -> END
 
 // ------------------------------------------------------------
 === idol_het_thoi_0610_clip_ba_cu ===
 # ngay:6 # gio:21:00 # noi:can_1808
-_Tối. Clip "Siêu Nhân Hồng bỏ buổi chụp đi giúp bà cụ" đang lên xu hướng. Lượt xem gấp mười hai lần cái MV còn chưa ra mắt._
+_Tối. Clip "Siêu Nhân Hồng bỏ buổi chụp đẩy xe chè cho bà cụ" đang lên xu hướng. Lượt xem gấp mười hai lần cái MV còn chưa ra mắt._
 { phat_gianh_spotlight > 0:
     _200 tấm ảnh của bạn đăng lúc 6 giờ chiều: 41 lượt thích. 38 lượt là hoa sen._
 - else:
@@ -98,7 +97,7 @@ _Tối. Clip "Siêu Nhân Hồng bỏ buổi chụp đi giúp bà cụ" đang l�
     ~ phat_nt(2)
 }
 hong_hot: *(nhắn riêng)* Anh {idol_het_thoi} ơi, em đăng clip bà cụ lên fanpage nha, anh có muốn em tag anh hông?
-* [😇 "Đừng tag anh. Clip của Nguyên mà."]
+* [😇 "Đừng tag anh. Clip của {sieu_nhan_hong} mà."]
     hong_hot: Ủa anh hiền vậy! Ok em hông tag. Mà em kể với mọi người là anh hiền nha!
     ~ qh("hong_hot", 5)
     ~ qh("sieu_nhan_hong", 5)
@@ -141,7 +140,7 @@ giam_doc: Hợp đồng của em hết hạn 31/10 đấy. Anh chưa nghĩ xong.
     ~ qh("giam_doc", 10)
     ~ phat_tt(-10)
     ~ phat_mo_quan_ca_phe = true
-* [💬 "Anh nói thẳng đi. Có Nguyên rồi, anh còn cần em hông?"]
+* [💬 "Anh nói thẳng đi. Có {sieu_nhan_hong} rồi, anh còn cần em hông?"]
     giam_doc: *(im ba giây)* Anh không ép, tùy em… À không. Câu này không phải tùy em. Anh cần em làm cho anh thấy.
     ~ qh("giam_doc", 3)
     ~ cang_thang(10)
@@ -183,13 +182,13 @@ it: *(từ phòng kỹ thuật, qua loa)* Restart chưa anh?
 # ngay:9 # gio:12:10 # noi:can_tin
 _Ngày Trứng Thế giới. Căn tin chỉ bán trứng: trứng luộc, trứng chiên, trứng hấp, trứng vịt lộn, trứng cút xào me._
 _Tối nay MV đầu tiên của Siêu Nhân Hồng ra mắt. Cả công ty ăn trứng mà không ai nói chuyện gì khác ngoài MV._
-hong_hot: Nghe gì chưa? MV quay có cảnh Nguyên cưỡi xe đạp hồng qua cầu! {editor} dựng ba đêm đó!
+hong_hot: Nghe gì chưa? MV quay có cảnh {sieu_nhan_hong} cưỡi xe đạp hồng qua cầu! {editor} dựng ba đêm đó!
 * [🥚 "Hồi anh quay MV 'Công Viên', anh tự cưỡi xe đạp luôn, không đóng thế."]
     hong_hot: Ủa thiệt hả anh? Mà xe đạp gì?
     _Xe đạp của ông bán vé số đầu ngõ. Bạn cưỡi được 3 mét thì té. Bản dựng cuối cắt đi cảnh té._
     ~ phat_tt(3)
 * [😇 "Tối nay mấy giờ ra mắt? Anh coi với."]
-    hong_hot: 8 giờ tối nha anh! Ối dồi ôi, anh {idol_het_thoi} coi MV của Nguyên luôn hả? Hòa bình rồi hả?
+    hong_hot: 8 giờ tối nha anh! Ối dồi ôi, anh {idol_het_thoi} coi MV của {sieu_nhan_hong} luôn hả? Hòa bình rồi hả?
     ~ qh("hong_hot", 3)
     ~ phat_tt(-2)
 - ~ an(35)
@@ -211,7 +210,7 @@ _Trên Phây-búc, {sieu_nhan_hong} vừa tag bạn: "Cảm ơn đàn anh {idol_
     _20 phút sau: "Công Viên" có 50.112 lượt xem. 500 bình luận giống hệt nhau: "Anh {idol_het_thoi} đỉnh nóc kịch trần"._
     _Bạn chụp màn hình gửi group công ty. Không ai thả tim. Chỉ có {dan_dau_tu} nhắn riêng: "Ông mua ở đâu vậy, chỉ tui với."_
     ~ follow(-5000)
-* [😇 Bấm "Chia sẻ" MV của Nguyên lên trang cá nhân.]
+* [😇 Bấm "Chia sẻ" MV của {sieu_nhan_hong} lên trang cá nhân.]
     _Bạn gõ: "Chúc mừng em. Lần sau nhớ là chuối chiên." Rồi bấm đăng._
     _Ba phút sau, {sieu_nhan_hong} thả tim, rồi trả lời: "Dạ CHUỐI chiên! Em nhớ rồi!" 4.000 người thích bình luận đó._
     ~ qh("sieu_nhan_hong", 15)
@@ -262,7 +261,7 @@ _Giọng anh {quan_ly_idol} rất bình tĩnh. Bình tĩnh kiểu người vừa
 - -> END
 
 = khong_mua
-quan_ly_idol: {idol_het_thoi}, em ngủ chưa? Anh thấy em share MV của Nguyên. Anh… cảm ơn em nha.
+quan_ly_idol: {idol_het_thoi}, em ngủ chưa? Anh thấy em share MV của {sieu_nhan_hong}. Anh… cảm ơn em nha.
 * [😇 "Có gì đâu anh. Mà anh ăn gì chưa?"]
     quan_ly_idol: *(cười, nghe mệt mà vui)* Chưa. Hồi chiều ăn ổ bánh mì. Thôi để anh nấu gói mì.
     ~ qh("quan_ly_idol", 8)
@@ -385,11 +384,8 @@ dan_dau_tu: Ủa {idol_het_thoi}? Ông cũng ra đây hả? Tui cầm cái đồ
 
 // ------------------------------------------------------------
 === idol_het_thoi_1210_luong_ve ===
-# ngay:12 # gio:09:30 # noi:tang_1 # bat_buoc
-_Thứ 2. Lương về trễ 2 ngày. 8.000.000đ. Group Zalo-lô nổ như chợ._
-con_ong_chau_cha: *(ở quầy cà phê)* Ủa, thẻ phụ của anh bị từ chối? Chắc máy lỗi. Để anh gọi chú anh.
-_Sau lưng {con_ong_chau_cha}, {thuc_tap_sinh} rút ví trả giùm. Một cái thẻ màu kim cương lóe lên. {thuc_tap_sinh} giấu vào ngay._
-~ tien_cong(8000000)
+# ngay:12 # gio:10:00 # noi:tang_1 # bat_buoc
+_Thứ 2, 10 giờ. Lương về trễ 2 ngày. 8.000.000đ. Group Zalo-lô nổ như chợ._
 _Bạn nhìn số dư. 8 triệu. Nợ: còn rất nhiều. Hạn chót của bà quản lý: 15/10._
 * [💸 Chuyển luôn 8 triệu trả tiền nhà.]
     ~ tien_cong(-8000000)
@@ -424,7 +420,7 @@ _Bạn chưa từng thấy hóa đơn cát-xê đám cưới nào trong đời._
 // ------------------------------------------------------------
 === idol_het_thoi_1210_toi_thu_hai ===
 # ngay:12 # gio:21:30 # noi:quan_oc_dem
-_Quán Ốc Đêm. Lương về, cả hẻm đi ăn ốc. Bàn công ty kê ba cái nối nhau._
+_Quán Ốc Đêm. Lương về, cả hẻm đi ăn ốc. Bàn công ty kê ba cái nối nhau. {hong_hot} kể chuyện trưa nay ở Sống Ảo: thẻ phụ của {con_ong_chau_cha} bị từ chối, {thuc_tap_sinh} làm rơi một cái thẻ hạng kim cương. {con_ong_chau_cha} ngồi cuối bàn, không cãi._
 { phat_co_phieu_oc:
     _Bạn đưa phiếu "1 dĩa ốc miễn phí" từ vụ khai trương. Cô chủ quán bưng ra dĩa ốc len xào dừa. Cả bàn vỗ tay._
     ~ phat_co_phieu_oc = false

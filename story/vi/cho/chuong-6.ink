@@ -1,10 +1,12 @@
 // ============================================================
 // CHƯƠNG 6: "ĐẠI NHẠC HỘI SIÊU NHÂN CỦA CHÓ" (28/10 – 31/10)
+// Ngày 31/10 vai chỉ có cảnh trước 19:30. Đêm diễn chạy ở chung_3110_dem_hong,
+// rồi game gọi cho_3010_danh_gia (23:00 – 23:45).
 // ============================================================
 
 // ------------------------------------------------------------
 === cho_2810_moc_bon ===
-# ngay:28 # gio:11:00 # noi:tang_1 # bat_buoc
+# ngay:28 # gio:11:00 # noi:tang_1 # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 4. Hai chuyện nổ ra cùng một buổi sáng. Bạn không hiểu chuyện nào, nhưng bạn ngửi được cả hai._
 _Ở phòng dựng phim: {editor} ngồi ôm đầu. Trên fanpage công ty vừa hiện lên một video dựng rất đẹp, toàn cảnh một người cầm hai điện thoại. Không phải video quảng cáo._
 editor: Bla bla… bla… bla bla bla. # phu_de:Xuất nhầm… mình xuất nhầm lên fanpage… trời ơi…
@@ -38,7 +40,7 @@ _{idol_het_thoi} tháo kính đen. Lần đầu tiên bạn thấy mắt ngườ
 
 // ------------------------------------------------------------
 === cho_2910_ga_cao_su ===
-# ngay:29 # gio:07:30 # noi:sanh_tang_tret # bat_buoc
+# ngay:29 # gio:07:30 # noi:sanh_tang_tret # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 5. Sáng sớm. Bạn đứng trước cái tủ sắt đầy dây xanh. Lần thứ mười trong tháng._
 _Mùi con gà cao su. Rõ hơn bao giờ hết. Nó ở đó. Nó vẫn ở đó. 25 ngày rồi._
 { ch_co_ga_cao_su:
@@ -69,7 +71,7 @@ _Mùi con gà cao su. Rõ hơn bao giờ hết. Nó ở đó. Nó vẫn ở đó
 
 // ------------------------------------------------------------
 === cho_2910_tong_dai_giay ===
-# ngay:29 # gio:10:30 # noi:choi_bao_ve # bat_buoc
+# ngay:29 # gio:10:30 # noi:choi_bao_ve # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Không có wifi, loài người trở về thời tiền sử. Chòi bảo vệ thành tổng đài. Người ta viết giấy, gửi bác, bác chuyển. Và bác có một nhân viên chuyển phát: bạn._
 chi_dai: *(qua bộ đàm, giọng rè)* Bla bla… TUẤT… bla bla bla! # phu_de:{bac_bao_ve} ơi, cho {cho} mang tờ này lên phòng kỹ thuật, khẩn cấp!
 hong_hot: Bla bla bla… bla! # phu_de:Wifi điện thoại của tui nè, mật khẩu "nghegichua", ai cần thì lên tầng 1!
@@ -97,7 +99,7 @@ _Hôm nay ai cũng rảnh. Rảnh tức là chơi với chó. Bạn được vu�
 
 // ------------------------------------------------------------
 === cho_2910_ai_cung_choi ===
-# ngay:29 # gio:14:00 # noi:bai_xe
+# ngay:29 # gio:14:00 # noi:bai_xe # dieu_kien:not ch_lac_vung_tau
 _Chiều. Vẫn không có wifi. Bãi xe biến thành sân chơi._
 thuc_tap_sinh: Bla bla… TUẤT… bla bla! # phu_de:{cho} ơi! Ném bóng nè!
 hong_hot: Bla bla… TUẤT… NGỒI… BẮT TAY… bla bla bla! # phu_de:Không có mạng thì quay trước, có mạng thì đăng! {cho}, ngồi! Bắt tay!
@@ -122,7 +124,7 @@ sieu_nhan_hong: Gâu! Bla bla… TUẤT… XÚC XÍCH… bla bla! # phu_de:Gâu!
 
 // ------------------------------------------------------------
 === cho_3010_don_kho ===
-# ngay:30 # gio:07:15 # noi:gam_cau_thang # bat_buoc
+# ngay:30 # gio:07:15 # noi:gam_cau_thang # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 6. Ngày quan trọng. Bạn biết vì bác mặc áo đồng phục mới, và vì {hr} đi lại khắp tòa nhà với một cái bảng kẹp giấy._
 hr: Bla bla bla… bla bla bla… bla. # phu_de:Trước họp đánh giá, dọn sạch toàn bộ kho. Gầm cầu thang cũng dọn. Đội vệ sinh 9 giờ tới.
 _Gầm cầu thang. KHO CỦA BẠN. 9 giờ._
@@ -171,7 +173,7 @@ _Bạn đứng trước kho. Chìa khóa. Son môi. Điện thoại cũ. Tất l
 
 // ------------------------------------------------------------
 === cho_3010_hop_danh_gia ===
-# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Phòng họp tầng 2. Cả công ty. {giam_doc} ngồi đầu bàn, tay cầm một tập giấy dày. Không khí căng như dây đàn của {idol_het_thoi}._
 giam_doc: Bla bla bla… bla bla… bla bla bla bla. # phu_de:Hôm nay mình đánh giá cuối tháng. Đề bạt, tăng lương, và… những thay đổi cần thiết.
 { ch_tha_vao_phong_hop:
@@ -237,7 +239,7 @@ _Bạn đã tha vào phòng họp {so_mon_tha + 3} món, nếu tính cả tất 
 
 // ------------------------------------------------------------
 === cho_3010_toi ===
-# ngay:30 # gio:19:30 # noi:choi_bao_ve
+# ngay:30 # gio:19:30 # noi:choi_bao_ve # dieu_kien:not ch_lac_vung_tau
 _Tối. Công ty về hết. Bác pha ấm trà cuối ngày. Ngày mai là Đại Nhạc Hội Siêu Nhân, cả công ty sẽ ở Sân khấu Đại Nhạc Hội Siêu Nhân tới khuya._
 bac_bao_ve: Bla bla… TUẤT… bla bla bla. # phu_de:Mai đông người lắm. Mày đi theo bác. Đừng có chạy lung tung, nghe chưa.
 { ch_kho_bi_don:
@@ -256,7 +258,7 @@ bac_bao_ve: Bla bla… TUẤT… bla bla bla. # phu_de:Mai đông người lắm
 
 // ------------------------------------------------------------
 === cho_3110_hoa_trang ===
-# ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc
+# ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc # dieu_kien:not ch_lac_vung_tau
 _Thứ 7. Đại Nhạc Hội Siêu Nhân. Mọi người hóa trang. Một con ma. Một bà phù thủy. Một quả bí ngô. {giam_doc} mặc áo choàng đen, đeo mặt nạ in hình tờ giấy vay nợ: "Ông Kẹ Ngân Hàng"._
 _Sân khấu ngoài trời đầy đèn hồng. Mùi hồng khắp nơi. Mũi bạn muốn xin nghỉ phép, như {thanh_xin_nghi}._
 designer: Bla bla… TUẤT… bla bla bla? # phu_de:{cho} hóa trang gì đây ta? Có bộ bí ngô, có bộ… siêu nhân hồng mini nè!
@@ -267,7 +269,6 @@ designer: Bla bla… TUẤT… bla bla bla? # phu_de:{cho} hóa trang gì đây 
 * [🐾 Mặc bộ siêu nhân hồng mini.]
     _Bạn để người ta mặc. Cả sân khấu cười rần. {hong_hot} quay lia lịa. Bộ đồ hồng thật nhìn thấy bạn, đứng hình, rồi chạy tới ngồi xổm, hai tay ôm mặt._
     sieu_nhan_hong: Bla bla… TUẤT… bla bla bla! # phu_de:Trời ơi {cho}! Em mặc giống anh! Đồng đội thật rồi!
-    ~ follow(20000)
     ~ ch_hong_doi(-5)
 * [🏃 Chạy trốn, không hóa trang gì cả.]
     _Bạn chạy, trốn dưới sân khấu. Ở đó có {chi_dai} đang ngồi với bộ đàm và cái cầu dao. Người đó nhìn bạn, gật đầu, cho bạn nằm cạnh._
@@ -276,20 +277,23 @@ designer: Bla bla… TUẤT… bla bla bla? # phu_de:{cho} hóa trang gì đây 
 
 // ------------------------------------------------------------
 === cho_3110_canh_ga ===
-# ngay:31 # gio:20:45 # noi:san_khau_dem_hong # bat_buoc
-_Đại Nhạc Hội Siêu Nhân đang diễn ra. Tiếng nhạc dội tới cả đáy dạ dày. Bạn lẻn ra sau cánh gà._
+# ngay:31 # gio:19:10 # noi:canh_ga_dem_hong # bat_buoc # dieu_kien:not ch_lac_vung_tau
+_19 giờ 10. Hai mươi phút nữa mở màn. Năm mươi người đã đứng ở hàng rào, màn hình LED đang chạy chữ đếm ngược. Bạn lẻn ra sau cánh gà._
 _Ở đó, bộ đồ hồng ngồi một mình trên cái ghế nhựa. Tháo cái {ch_mu()} ra, lau mồ hôi, đặt xuống ghế bên cạnh._
 _Khuôn mặt bình thường. Hơi gầy. Mắt mệt._
-sieu_nhan_hong: Bla bla… TUẤT… bla bla… # phu_de:{cho} hả? Anh mệt quá. Hôm nay anh không chọc em đâu.
+sieu_nhan_hong: Bla bla… TUẤT… bla bla… # phu_de:{cho} hả? Anh run quá. Hôm nay anh không chọc em đâu.
 _Cái {ch_mu()} nằm đó. Không ai canh. Thứ bạn muốn ngoạm nhất trên đời. Cả tháng nay. Một lần thôi._
 * [🦷 Ngoạm chiếc mũ, chạy thẳng ra sân khấu.]
-    _Bạn ngoạm. Chạy. Ra khỏi cánh gà. Ra giữa ánh đèn. Hàng nghìn người. Một con chó vàng ngậm một chiếc mũ hồng._
-    _Và phía sau, chạy đuổi theo, là một người với khuôn mặt thật. Không mũ. Giữa sân khấu Đại Nhạc Hội Siêu Nhân._
+    _Bạn ngoạm. Chạy. Ra khỏi cánh gà. Ra giữa sân khấu, dưới màn hình LED. Năm mươi người ở hàng rào. Một máy quay livestream. Một con chó vàng ngậm một chiếc mũ hồng._
+    _Và phía sau, chạy đuổi theo, là một người với khuôn mặt thật. Không mũ. Giữa sân khấu Đại Nhạc Hội Siêu Nhân, hai mươi phút trước giờ diễn._
     ~ ch_giat_mu = true
     ~ ch_lo_mat_nguyen = 100
-    ~ follow(150000)
+    ~ chung_tuat_giat_mu = true
+    ~ nguyen_thao_mu_dem_hong = true
+    ~ chung_da_chon_thao_mu = true
+    ~ chung_so_meme = chung_so_meme + 1
     ~ ch_hong_doi(-30)
-    _Khán đài im bặt một giây. Rồi vỡ òa. Không ai đoán được tiếng vỡ òa đó là cười, là hét, hay là vỗ tay._
+    _Hàng rào im bặt một giây. Rồi vỡ òa. Không ai đoán được tiếng vỡ òa đó là cười, là hét, hay là vỗ tay._
 * [🐾 Ngồi canh chiếc mũ, không cho ai khác lại gần.]
     _Bạn ngồi cạnh chiếc mũ. Một người quay phim đi tới, giơ máy lên. Bạn gầm gừ. Người đó lùi lại._
     _Một paparazzi thò đầu qua rèm. Bạn sủa. Người đó biến mất._
@@ -308,34 +312,52 @@ _Cái {ch_mu()} nằm đó. Không ai canh. Thứ bạn muốn ngoạm nhất tr
     _Ba người chạy tới. Bộ đồ hồng chụp vội cái mũ, đội lên, xiêu vẹo. Rồi nhìn bạn. Không giận. Chỉ buồn._
     ~ ch_lo_mat_nguyen = ch_lo_mat_nguyen + 10
     ~ ch_hong_doi(5)
-- _Một lúc sau, tiếng MC gọi tên. Người đó đứng dậy, cầm mũ lên, nhìn nó, rồi nhìn bạn._
+- _Bác {bac_bao_ve} đi tới, nhặt sợi dây xích, dắt bạn về chỗ khách mời sát hàng rào._
 { ch_giat_mu:
-    _Không còn mũ nào để đội. Người đó bước ra sân khấu như vậy. Mặt thật. Dưới hàng nghìn ánh đèn._
+    _Chiếc mũ vẫn trong miệng bạn. Bạn không nhả. Người đó đứng giữa sân khấu, mặt thật, gãi đầu, rồi bật cười. Không còn gì để giấu nữa._
 - else:
+    _Người đó đứng dậy, cầm mũ lên, nhìn nó, rồi nhìn bạn._
+}
+{ not ch_giat_mu:
     { ch_ghet_hong <= 20:
-        _Người đó đặt cái mũ lại xuống ghế. Rồi bước ra sân khấu. Không đội._
+        _Người đó đặt cái mũ lại xuống ghế, rồi nói nhỏ với {chi_dai} một câu. Bạn không hiểu. Nhưng bạn thấy cái mũ không được cất vào túi._
         ~ nguyen_thao_mu_dem_hong = true
     - else:
-        _Người đó đội mũ lên. Bước ra sân khấu. "Hồng không phải màu, Hồng là thái độ!" Khán đài gào lên._
+        _Người đó đội mũ lên, cài khóa cằm hai lần. "Hồng không phải màu, Hồng là thái độ!" Người đó nói với chính mình, rồi đi vào trong._
     }
 }
 -> END
 
 // ------------------------------------------------------------
-=== cho_3110_sau_dem_hong ===
-# ngay:31 # gio:23:00 # noi:cong_cong_ty # bat_buoc
-_23 giờ. Đại Nhạc Hội Siêu Nhân kết thúc. Bác chở bạn về chòi. Cổng công ty vắng tanh, chỉ có đèn đường vàng và mấy quả bóng bay hồng xẹp lăn theo gió._
-_Mũi bạn mỏi. Chân bạn mỏi. Nhưng đuôi bạn vẫn còn sức vẫy một chút._
-bac_bao_ve: Bla bla… TUẤT… bla. # phu_de:Xong rồi, {cho} ạ. Một tháng. Về nhà thôi.
-_Một chiếc xe màu hồng chạy chầm chậm qua cổng. Không dừng. Rồi dừng. Đèn xe nháy hai cái, như chào._
-* [😤 Sủa theo chiếc xe hồng, lần cuối trong tháng.]
-    cho: Gâu! Gâu gâu!
-    _Chiếc xe bấm còi đáp lại: "tít tít". Bác phì cười. Một tháng, và hai bên vẫn chào nhau đúng kiểu của mình._
-* [🐾 Vẫy đuôi với chiếc xe hồng.]
-    _Bạn vẫy đuôi. Một cái. Không ai thấy, trừ bác. Bác không nói gì. Bác không thấy gì đâu._
-    ~ ch_hong_doi(-3)
-* [😴 Đi thẳng vào ổ. Mai tính.]
-    _Bạn đi thẳng vào ổ, cuộn tròn. Việc hôm nay cứ để ngày mai tính. Câu này bạn không hiểu, nhưng bạn sống đúng như vậy cả đời._
-    ~ nghi(30)
-- _Bác tắt radio. Đèn chòi tắt. Đèn đường vẫn sáng. Tháng 10 hết rồi._
--> cho_3010_danh_gia
+// TUẤT LẠC Ở VŨNG TÀU (chỉ chạy khi ch_lac_vung_tau)
+// ------------------------------------------------------------
+=== cho_2010_vang ===
+# ngay:20 # gio:16:00 # noi:vung_tau_cho_dem # dieu_kien:ch_lac_vung_tau
+_Chiều. Bến xe Vũng Tàu. Cô bán hải sản gọi bạn là "Vàng". Bạn không quay đầu._
+_Mỗi lần một chiếc xe buýt màu cam chạy qua, bạn đứng dậy. Đuôi vẫy. Mũi hít thật sâu. Không có mùi trà mạn. Bạn nằm xuống._
+co_hai_san: Bla bla… VÀNG… ĂN. # phu_de:Vàng ơi, ăn cơm. Ngồi trông hoài vậy.
+* [🦴 Ăn cơm trộn cá.]
+    ~ ch_an(30)
+    _Ngon. Nhưng không phải xúc xích bẻ đôi. Không có ai ăn nửa kia._
+* [🐾 Không ăn. Ngồi canh bến xe.]
+    ~ ch_cung(-3)
+    _Bạn ngồi tới tối. Chiếc xe cam cuối cùng chạy qua lúc 7 giờ. Không dừng._
+- -> END
+
+=== cho_2610_vang ===
+# ngay:26 # gio:10:00 # noi:vung_tau_cho_dem # dieu_kien:ch_lac_vung_tau
+_Sáng. Một vị khách đứng trước sạp hải sản, cầm điện thoại, xem một tấm ảnh: một con chó vàng ướt sũng ngồi trong cái ca nước. Dưới ảnh có dòng chữ: "TÌM CHÓ"._
+_Người khách nhìn tấm ảnh. Rồi nhìn bạn. Rồi trả tiền mua ký mực, đi mất._
+* [👃 Chạy theo, ngửi tay người đó.]
+    ~ ch_mui(3)
+    _Tay người đó có mùi mực. Mùi nước biển. Không có mùi thành phố. Bạn quay về sạp._
+* [😴 Nằm xuống dưới sạp.]
+    ~ nghi(20)
+- -> END
+
+=== cho_3010_vang ===
+# ngay:30 # gio:18:00 # noi:vung_tau_cho_dem # dieu_kien:ch_lac_vung_tau
+_Chiều tối. Cô bán hải sản dọn sạp sớm. Ngày mai thứ 7, chợ đông._
+co_hai_san: Bla bla… VÀNG… bla bla bla. # phu_de:Mai cô cho Vàng coi hội diễn trên điện thoại. Nghe nói thành phố bên đó hồng quá trời.
+_Bạn không hiểu. Bạn chỉ nghe thấy một từ, rất xa, rất quen, giữa tràng "bla bla": HỒNG._
+-> END

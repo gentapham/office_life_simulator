@@ -35,7 +35,7 @@ _Cửa phòng giám đốc đóng. Qua vách kính, bạn thấy anh {giam_doc} 
 // ------------------------------------------------------------
 === idol_het_thoi_2110_karaoke_long ===
 # ngay:21 # gio:19:30 # noi:karaoke
-_Karaoke Hát Cho Nhau Nghe, phòng số 5. Bạn hẹn {con_ong_chau_cha} ra đây. Ở đây cách âm tốt, không ai nghe lỏm. Bạn biết vì bạn từng nghe lỏm._
+_Karaoke Chú Sáu, phòng số 5. Bạn hẹn {con_ong_chau_cha} ra đây. Ở đây cách âm tốt, không ai nghe lỏm. Bạn biết vì bạn từng nghe lỏm._
 con_ong_chau_cha: Anh hẹn em chi vậy anh {idol_het_thoi}? Chill, nói đi.
 { biet(bai_hat_long):
     _Bạn biết bài "Hồng Là Thái Độ" có thật. Bạn biết nó hay. Bạn cũng biết mình đang nợ 54 triệu, và một bài hit có thể trả hết._
@@ -48,7 +48,7 @@ con_ong_chau_cha: Anh hẹn em chi vậy anh {idol_het_thoi}? Chill, nói đi.
     con_ong_chau_cha: Thôi anh. Bài này em viết cho người khác hát. Người mặc đồ hồng.
     ~ qh("con_ong_chau_cha", -10)
     ~ phat_tt(5)
-* [🎶 "Em làm remix 'Công Viên' được hông? Cho anh với Nguyên hát chung."]
+* [🎶 "Em làm remix 'Công Viên' được hông? Cho anh với {sieu_nhan_hong} hát chung."]
     con_ong_chau_cha: *(mắt sáng lên, rồi tắt)* Remix bài anh? Em… em chưa làm cho ai bao giờ. Lỡ dở thì sao?
     idol_het_thoi: Dở thì cả hai cùng thành meme. Anh quen rồi.
     con_ong_chau_cha: *(bật cười)* Ok. Em thử. Đừng nói chú em nha.
@@ -69,7 +69,7 @@ con_ong_chau_cha: Anh hẹn em chi vậy anh {idol_het_thoi}? Chill, nói đi.
 // ------------------------------------------------------------
 === idol_het_thoi_2210_kiem_tra_thue ===
 # ngay:22 # gio:10:30 # noi:phong_ke_toan # bat_buoc
-_Đoàn kiểm tra thuế tới bất ngờ. Trưởng đoàn là Chú Liêm, 55 tuổi, cặp da, kính lão. Cả công ty giả vờ làm việc chăm chỉ. {chua_te_deadline} lần đầu tiên mở Excel._
+_Đoàn kiểm tra thuế làm việc từ 9 giờ, tới 4 giờ chiều mới về. Trưởng đoàn là Chú Liêm, 55 tuổi, cặp da, kính lão. Cả công ty giả vờ làm việc chăm chỉ. {chua_te_deadline} lần đầu tiên mở Excel._
 chu_liem: Cho xem sổ sách. Mục này: "Cát-xê ca sĩ độc quyền đi hát tiệc cưới". 37 khoản trong năm. Không có hóa đơn khoản nào.
 _{ke_toan} nhìn bạn. Bạn nhìn anh {quan_ly_idol}. Anh {quan_ly_idol} bước lên trước, hai điện thoại vẫn rung trong túi._
 quan_ly_idol: Dạ, lỗi do quản lý sắp xếp sai. Em nhận hết. Ca sĩ không biết gì đâu chú.
@@ -131,7 +131,7 @@ _Sinh nhật Siêu Nhân Hồng, 31 tuổi. Phòng chờ ngập quà hồng. {ch
 _Bạn đứng trước cửa phòng chờ, cái phòng từng là của bạn. Trong tay có một món quà._
 * [🍌 Một tháp bánh chuối chiên 31 tầng, mua ở xe đẩy đầu đường.]
     sieu_nhan_hong: *(ôm tháp bánh)* Trời ơi anh {idol_het_thoi}! Chuối chiên! Em… em ăn hết từ giờ tới tối luôn!
-    _Nguyên chia ngay một nửa cho cả công ty. Tầng trên cùng để riêng cho bạn._
+    _{sieu_nhan_hong} chia ngay một nửa cho cả công ty. Tầng trên cùng để riêng cho bạn._
     ~ tien_cong(-310000)
     ~ qh("sieu_nhan_hong", 12)
     ~ phat_tt(-3)
@@ -141,16 +141,16 @@ _Bạn đứng trước cửa phòng chờ, cái phòng từng là của bạn. 
     ~ qh("sieu_nhan_hong", 8)
     ~ phat_tt(3)
 * [😶 Không tặng gì. Đi ngang qua.]
-    _{sieu_nhan_hong} nhìn theo. Tối nay bạn phải hát chúc mừng sinh nhật Nguyên trên livestream. Đó là việc, không phải quà._
+    _{sieu_nhan_hong} nhìn theo. Tối nay bạn phải hát chúc mừng sinh nhật {sieu_nhan_hong} trên livestream. Đó là việc, không phải quà._
     ~ qh("sieu_nhan_hong", -3)
 - -> END
 
 // ------------------------------------------------------------
 === idol_het_thoi_2310_livestream ===
-# ngay:23 # gio:19:20 # noi:studio # bat_buoc
-_Livestream sinh nhật Siêu Nhân Hồng. 40.000 người đang xem. Bánh kem hồng ba tầng giữa studio. Bạn được giao hát chúc mừng sinh nhật._
-_Giữa chương trình, {sieu_nhan_hong} quay thẳng vào camera: "Anh {chua_te_deadline} ơi, em thích anh. Không phải PR đâu." Bình luận chạy kín màn hình: "VũƠiTrảLờiĐi"._
-_{chua_te_deadline} đứng sau máy quay, mặt trắng như bột mì._
+# ngay:23 # gio:20:00 # noi:studio # bat_buoc
+_20:00. Livestream sinh nhật Siêu Nhân Hồng ở studio tầng 2. 40.000 người đang xem. Bánh kem hồng ba tầng giữa studio. Bạn được giao hát chúc mừng sinh nhật._
+_Giữa chương trình, {sieu_nhan_hong} quay thẳng vào camera: "Anh {chua_te_deadline} ơi, em thích anh. Không phải PR đâu." Bình luận chạy kín màn hình: "\#{chua_te_deadline}ƠiTrảLờiĐi"._
+_{chua_te_deadline} đứng sau máy quay, mặt trắng như bột mì, rồi nói: "Ý tưởng PR hay đó anh."_
 _Bạn bước lên, cầm micro, chuẩn bị hát. Và cái bánh kem đang ở ngay cạnh chân bạn._
 _{cho} lách qua chân máy quay. Đuôi nó quẹt trúng chân bàn bánh._
 * [🎤 Hát Cứu Cháy: bắt nhịp "Công Viên" thật to ngay khi bánh nghiêng.]
@@ -168,7 +168,7 @@ _{cho} lách qua chân máy quay. Đuôi nó quẹt trúng chân bàn bánh._
         ~ qh("sieu_nhan_hong", 5)
     }
 * [😤 "Vấp" chân thật mạnh vào bàn bánh, rồi chỉ vào {cho}.]
-    _Bánh đổ ụp. Kem hồng văng lên mũ Nguyên. Bạn chỉ tay: "Con chó!" {cho} nhìn bạn. Ánh mắt của một con chó bị oan._
+    _Bánh đổ ụp. Kem hồng văng lên mũ {sieu_nhan_hong}. Bạn chỉ tay: "Con chó!" {cho} nhìn bạn. Ánh mắt của một con chó bị oan._
     ~ phat_gianh()
     ~ phat_pha_chien_dich = phat_pha_chien_dich + 1
     ~ follow(-15000)
@@ -316,7 +316,7 @@ _Anh nói câu đó nhẹ như đã tập nhiều năm._
 # ngay:25 # gio:15:00 # noi:studio_0905
 _Chủ nhật. Bạn ghé Studio 0905 trả cục sạc dự phòng anh {quan_ly_idol} bỏ quên ở bậc thang. Gõ cửa không ai mở. Anh đi đâu đó từ sáng, nói "đi gặp đối tác"._
 _Năm 2016, anh đưa bạn một chìa khóa dự phòng, "lỡ em say không về được nhà". Bạn chưa dùng lần nào._
-_Bạn mở cửa. Phòng nhỏ. Năm cục sạc. Một cái điện thoại thứ ba trên bàn, đang sáng: "Sơn (1 giờ sáng)". Bạn đi tìm ổ cắm để cắm cục sạc vào._
+_Bạn mở cửa. Phòng nhỏ. Năm cục sạc. Một cái điện thoại thứ ba trên bàn, đang sáng: "{thanh_xin_nghi} (1 giờ sáng)". Bạn đi tìm ổ cắm để cắm cục sạc vào._
 _Ổ cắm ở sau tủ đầu giường. Ngăn kéo tủ hé mở._
 * [🔍 Kéo ngăn kéo ra, chỉ để đẩy nó vào cho gọn.]
     _Trong ngăn kéo có một tấm ảnh lồng khung. Bạn, 19 tuổi, đêm trao giải 2015, cầm cúp, cười như không bao giờ hết thời._
@@ -345,9 +345,9 @@ _Ổ cắm ở sau tủ đầu giường. Ngăn kéo tủ hé mở._
 
 // ------------------------------------------------------------
 === idol_het_thoi_2610_chieu_thu ===
-# ngay:26 # gio:15:30 # noi:phong_hop_tang_2
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2
 _Thứ 2. Tin đồn "cắt giảm nhân sự nếu Siêu Nhân Hồng thất bại" chạy khắp công ty. {hr} đi ngang bàn nào là bàn đó tắt màn hình._
-_Chiều: chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Phim về một người mặc đồ hồng đẩy xe chết máy giùm một người lạ 2 cây số trong mưa. {thuc_tap_sinh} ngồi xem, mắt đỏ hoe. Đề tên biên kịch: {bien_kich}._
+_16:00: chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". Phim về một người mặc đồ hồng đẩy xe chết máy giùm một người lạ 2 cây số trong mưa. {thuc_tap_sinh} ngồi xem, mắt đỏ hoe. Đề tên biên kịch: {bien_kich}._
 _Phim xong, {giam_doc} quay sang {editor}: "Kênh Diu-túp của em, anh mua 200 triệu. Anh không ép, tùy em."_
 _{editor} không nói gì. Phòng họp im lặng._
 * [💬 "Anh {giam_doc}, kênh của người ta mà. Như bài hát của em là của em."]
@@ -369,8 +369,8 @@ _{editor} không nói gì. Phòng họp im lặng._
 # ngay:27 # gio:11:00 # noi:phong_nghe_si # bat_buoc
 ~ phat_hien(ll_moi_thai)
 _LL-Entertainment ra tay. Cả công ty biết tin lúc 10 giờ: Lưu Lực mời Siêu Nhân Hồng với giá gấp ba._
-hong_hot: *(chạy vào, thì thầm)* Anh {idol_het_thoi}… nghe gì chưa? LL mời luôn anh {quan_ly_idol}. 36 triệu một tháng, gấp đôi. Điều kiện: mang theo Nguyên.
-_Mang theo Nguyên. Không có tên bạn. Lần đầu tiên, bạn sợ một chuyện không liên quan tới sự nổi tiếng._
+hong_hot: *(chạy vào, thì thầm)* Anh {idol_het_thoi}… nghe gì chưa? LL mời luôn anh {quan_ly_idol}. 36 triệu một tháng, gấp đôi. Điều kiện: mang theo {sieu_nhan_hong}.
+_Mang theo {sieu_nhan_hong}. Không có tên bạn. Lần đầu tiên, bạn sợ một chuyện không liên quan tới sự nổi tiếng._
 _Anh {quan_ly_idol} đi đâu đi đó. Mười một năm. Nếu anh đi, sáng mai ai gọi bạn dậy?_
 * [🏃 Đi tìm anh {quan_ly_idol}. Nói thẳng: "Anh đừng đi."]
     _Anh {quan_ly_idol} đang ở sân thượng, nói điện thoại. Thấy bạn, anh cúp máy, không nói "khoan anh nghe máy chút" như mọi khi._
@@ -404,7 +404,7 @@ _Anh {quan_ly_idol} đi đâu đi đó. Mười một năm. Nếu anh đi, sáng
 
 // ------------------------------------------------------------
 === idol_het_thoi_2710_luu_luc ===
-# ngay:27 # gio:15:10 # noi:sanh_cong_ty
+# ngay:27 # gio:15:00 # noi:sanh_cong_ty
 _Sảnh tầng trệt. Một người vest trắng, tóc vuốt keo bước vào, tay ôm tập hồ sơ bìa xanh lá chuối. Lưu Lực._
 _Lưu Lực đi ngang qua {chi_dai}. Khựng lại. Tập hồ sơ rơi xuống sàn, giấy tờ tung tóe. {chi_dai} chỉ nhìn, không nói gì. Lưu Lực lau mồ hôi._
 _Bạn cúi xuống nhặt giùm một tờ. Lưu Lực nhìn bạn từ đầu tới chân._
@@ -418,8 +418,8 @@ luu_luc: À. Anh {idol_het_thoi}. Ca sĩ… đám cưới.
 * [😇 Đưa lại tờ giấy, không nói gì.]
     luu_luc: Cảm ơn. Lịch sự đấy. Tiếc là lịch sự không bán được vé.
     ~ phat_tt(-3)
-* [😤 "Anh muốn lấy Nguyên thì lấy. Đừng đụng tới anh {quan_ly_idol}."]
-    luu_luc: *(nhướn mày)* Ồ. Tôi tưởng anh ghét Nguyên lắm cơ mà. Thú vị. Rất thú vị.
+* [😤 "Anh muốn lấy {sieu_nhan_hong} thì lấy. Đừng đụng tới anh {quan_ly_idol}."]
+    luu_luc: *(nhướn mày)* Ồ. Tôi tưởng anh ghét {sieu_nhan_hong} lắm cơ mà. Thú vị. Rất thú vị.
     ~ qh("quan_ly_idol", 5)
     ~ phat_tt(-5)
 - _Lưu Lực đi lên lầu. Bác {bac_bao_ve} đứng ở cửa chòi, nhìn theo, uống một ngụm trà đá._

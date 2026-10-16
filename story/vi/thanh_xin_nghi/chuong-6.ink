@@ -21,7 +21,7 @@ _Mốc 4: 800.000 người theo dõi. Sáng nay một video tỏ tình lạ lên
 
 = s_khach_moi
 _Điện thoại bạn rung. Đài Tivi Hóng vừa đăng thông báo: "Khách mời đặc biệt đêm chung kết Giọng Ca Ước Mơ: SIÊU NHÂN HỒNG!" Lượt chia sẻ nhảy như điên._
-~ follow(80000)
+~ follow(40000)
 hong_hot: Ủa alo? Siêu Nhân Hồng làm khách mời thi hát? Ai sắp xếp vụ này vậy?
 _Cả phòng họp quay sang người giữ lịch. Bạn._
 * [😇 "Dạ em. Một phần trong chiến dịch ạ."]
@@ -45,7 +45,7 @@ it: Lỗi gì? Restart chưa?
 }
 * {son_moi_nguyen_khach_moi} [💬 "Anh {it}, nối sóng trực tiếp từ Đài Tivi Hóng về sân khấu Đại Nhạc Hội được hông anh? Chia đôi màn hình."]
     it: *(lần đầu quay hẳn ghế lại)* …Được. Cần đường truyền riêng. Cần đài đồng ý. Cần sếp không biết cho tới phút chót.
-    { qh_it >= 40 || son_bi_bao_ghi_am:
+    { qh_it >= 20 || son_bi_bao_ghi_am:
         it: Tui làm. Không phải vì em. Vì 11 bài đó hay.
         ~ son_bao_giup = true
         ~ qh("it", 10)
@@ -57,15 +57,19 @@ it: Lỗi gì? Restart chưa?
     ~ tien_cong(-120000)
     ~ qh("it", 15)
     it: *(nhìn thùng mì rất lâu)* …Có mùi nhờ vả. Nhưng tui nhận.
+    { son_moi_nguyen_khach_moi:
+        it: Mà nghe nói đêm 31 có người cần nối sóng từ Đài Tivi Hóng về sân khấu. Tui làm. Vì thùng mì. Không phải vì em.
+        ~ son_bao_giup = true
+    }
 * [😶 Xin cái dây sạc rồi đi.]
     it: Lỗi người dùng. *(đưa dây sạc)*
 - -> END
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2910_goi_thang ===
-# ngay:29 # gio:07:00 # noi:nha_ven_do # bat_buoc
-_Ngày Internet Quốc tế. Wifi sập. Zalo-lô không gửi được. Chiều nay 14:00 là tổng duyệt chung kết ở Đài Tivi Hóng._
-_Bạn phải gọi điện xin nghỉ nửa ngày. Bạn gọi số bàn phòng HR. Chuông reo 5 hồi. Rồi có người nhấc máy._
+# ngay:29 # gio:09:10 # noi:ban_dieu_phoi # bat_buoc
+_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập cả tòa nhà. Zalo-lô không gửi được. Chiều nay 14:00 là tổng duyệt chung kết ở Đài Tivi Hóng._
+_Bạn phải xin về sớm nửa ngày. Bạn gọi số bàn phòng HR, cách bạn đúng một tầng lầu. Chuông reo 5 hồi. Rồi có người nhấc máy._
 giam_doc: Alo! Phòng HR đây! {hr} ra cổng chấm công bằng giấy rồi, anh ngồi trực hộ. Ai đấy?
 _Là {giam_doc}. Bạn chưa bao giờ xin nghỉ với {giam_doc}._
 * [👵 "Dạ… anh {giam_doc}… bà ngoại em…"]
@@ -153,8 +157,8 @@ thanh_xin_nghi: Dạ… con mèo đó là có thật anh.
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_3010_hop_danh_gia ===
-# ngay:30 # gio:09:30 # noi:phong_hop_sang_tao # bat_buoc
-_Họp đánh giá cuối tháng. Phòng "Sáng Tạo". Anh {hr} đứng cạnh máy chiếu, cầm một tập hồ sơ màu hồng. Hợp đồng của {idol_het_thoi} được bàn trước. Rồi tới mục chuyên cần._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ. Họp đánh giá cuối tháng ở phòng họp tầng 2. Anh {hr} đứng cạnh máy chiếu, cầm một tập hồ sơ màu hồng. Hợp đồng của {idol_het_thoi} được bàn trước. Rồi tới mục chuyên cần._
 { not son_nghi_tu_15 && uy_tin >= 70:
     hr: Thưởng chuyên cần tháng này. Lần đầu tiên sau 3 năm có người nhận. Người đó là… *(nhìn tờ giấy, nhìn lại lần nữa)* …{thanh_xin_nghi}.
     _Cả phòng họp tưởng nghe nhầm. {hong_hot} dụi mắt. {chi_dai} vỗ bàn cười._
@@ -163,6 +167,18 @@ _Họp đánh giá cuối tháng. Phòng "Sáng Tạo". Anh {hr} đứng cạnh 
 - else:
     hr: {thanh_xin_nghi}. *(nhìn bạn rất lâu)* Giọng em nghe quen quen.
     _Cả phòng không hiểu câu đó. Chỉ có bạn hiểu. Hoặc bạn tưởng mình hiểu._
+}
+_Rồi anh {hr} mở tập hồ sơ màu hồng. "Về điều chỉnh nhân sự… Dòng một: {thuc_tap_sinh}. Dòng hai: {thanh_xin_nghi}."_
+_Cả phòng quay sang bạn. Cái tên của bạn, đọc to, trong phòng họp. Lần này không phải để hỏi thăm bà ngoại._
+{
+- son_biet_so_604 && son_tu_thu_tuan:
+    _Anh {hr} dừng lại. Nhìn bạn. Nhìn tờ giấy. Rồi gấp tập hồ sơ lại: "Danh sách này… phòng nhân sự xin đọc lại sau Đại Nhạc Hội." Không ai hỏi vì sao. Chỉ bạn biết số máy đuôi 604._
+- qh_chi_dai >= 30:
+    chi_dai: *(đứng dậy)* Ông dừng. Đêm mai mới có kết quả. Đọc danh sách hôm nay là đọc trước án.
+    _Anh {hr} gấp tập hồ sơ lại. Thở ra. Không ai bị gạch tên. Hôm nay._
+- else:
+    hr: Hai trường hợp, hiệu lực sau 31/10 nếu chiến dịch không đạt. *(gấp lại)* Anh xin lỗi em.
+    ~ cang_thang(15)
 }
 giam_doc: {thanh_xin_nghi}, mai Đại Nhạc Hội. Em là người giữ lịch. Em có gì muốn nói trước cả công ty không?
 * [📝 Đặt lên bàn một lá đơn: "Đơn xin nghỉ việc. Lý do: đi hát."]
@@ -196,7 +212,7 @@ _"19:30: ĐẠI NHẠC HỘI SIÊU NHÂN." Góc trang, bút chì, nhỏ xíu: "2
     thanh_xin_nghi: Em chưa biết anh. Em muốn cả hai.
     quan_ly_idol: Muốn cả hai thì phải có người giúp. Anh giúp.
     ~ qh("quan_ly_idol", 5)
-* {son_moi_nguyen_khach_moi} [📞 Gọi anh Nguyên.]
+* {son_moi_nguyen_khach_moi} [📞 Gọi anh {sieu_nhan_hong}.]
     sieu_nhan_hong: Đặc vụ! Mai anh đi khách mời rồi về Đại Nhạc Hội! Anh có xe hồng! Xe hồng chạy nhanh lắm! *(rồi nhỏ giọng lại)* …Mà kẹt xe thì xe nào cũng như nhau ha.
     ~ qh("sieu_nhan_hong", 5)
 * [🎤 Hát một mình cho bà ngoại trong ảnh nghe.]
@@ -209,8 +225,17 @@ _"19:30: ĐẠI NHẠC HỘI SIÊU NHÂN." Góc trang, bút chì, nhỏ xíu: "2
 === thanh_xin_nghi_3110_sang ===
 # ngay:31 # gio:10:00 # noi:san_khau_dem_hong # bat_buoc
 _Thứ 7, 31/10. Sân khấu Đại Nhạc Hội Siêu Nhân đang dựng. Cả công ty hóa trang Halloween. {giam_doc} thử bộ "Ông Kẹ Ngân Hàng". {cho} đội nơ hồng, mặt cau có._
-_Bạn đi một vòng sân khấu với cuốn lịch: xe đón 18:30, phim của {bien_kich} 19:30, video "16 năm" của {editor} 19:50, Siêu Nhân Hồng lên sân khấu 20:15._
-_20:15. Chung kết bắt đầu 20:00._
+_Bạn đi một vòng sân khấu với cuốn lịch: xe đón 18:30, phim của {bien_kich} 19:30, video "16 năm" của {editor} 19:50, 20:00 màn hình lớn chiếu trực tiếp chung kết "Giọng Ca Ước Mơ" từ Đài Tivi Hóng, rồi Siêu Nhân Hồng lên sân khấu._
+_Chung kết 20:00. Thí sinh số 27. Màn hình lớn ở đây sẽ chiếu chính bạn, nếu bạn có mặt ở bên kia._
+{ son_vao_chung_ket:
+    _Chị {chi_dai} đi ngang, bộ đàm bên hông, dừng lại trước mặt bạn._
+    { son_hat_lua_trai || qh_chi_dai >= 30:
+        chi_dai: Đi đi. Chị thấy em trên tivi bữa giờ. Bảy giờ chị cho xe chở em qua đài. Lịch ở đây, chị đứng.
+        ~ qh("chi_dai", 5)
+    - else:
+        chi_dai: Tối nay em đứng đâu thì đứng cho chắc. Đừng để chị gọi bộ đàm mà không ai trả lời.
+    }
+}
 thuc_tap_sinh: Dạ anh {thanh_xin_nghi}, em giúp được gì không ạ? Em rảnh cả ngày ạ!
 * [🤝 "Anh {thuc_tap_sinh}, đi theo em cả ngày. Học thuộc cuốn lịch này giùm em."]
     thuc_tap_sinh: Dạ em học liền ạ! *(mở sổ, ghi chép như ôn thi đại học)*
@@ -227,7 +252,7 @@ _19:10. Sân khấu Đại Nhạc Hội Siêu Nhân đang chỉnh đèn. Pháo g
 { not son_vao_chung_ket:
     _Không có cuộc gọi nào từ đài. Không có sân khấu thứ hai. Chỉ có một sân khấu, và bạn là người giữ lịch._
     ~ son_chon_dem_31 = "o_lai"
-    -> thanh_xin_nghi_3010_danh_gia
+    -> END
 }
 _Điện thoại bạn rung: "Sơn Kim Tuyến ơi, 50 phút nữa lên sóng, em đang ở đâu???"_
 giam_doc: {thanh_xin_nghi}! Xe đón Siêu Nhân Hồng đâu? Lịch chạy chương trình đâu? Anh không ép, tùy em, nhưng em mà biến lúc này thì…
@@ -236,24 +261,29 @@ giam_doc: {thanh_xin_nghi}! Xe đón Siêu Nhân Hồng đâu? Lịch chạy ch�
 }
 * [📅 Tắt điện thoại, cầm bộ đàm: "Dạ có em đây anh."]
     ~ son_chon_dem_31 = "o_lai"
-    -> thanh_xin_nghi_3010_danh_gia
+    _Bạn tắt điện thoại. 20 giờ, màn hình lớn sẽ chiếu chung kết. Không có thí sinh số 27._
+    -> END
 * [🎤 Đưa bộ đàm và cuốn lịch cho {thuc_tap_sinh}: "Anh {thuc_tap_sinh}, em nhờ anh một lần thôi."]
     thuc_tap_sinh: Dạ em làm liền ạ!
     ~ son_chon_dem_31 = "di_thi"
     { qh_thuc_tap_sinh < 40:
-        ~ follow(-30000)
+        _{thuc_tap_sinh} cầm cuốn lịch ngược. Bạn không còn thời gian để chỉ lại._
     }
-    -> thanh_xin_nghi_3010_danh_gia
+    _Bạn chạy ra cổng, bộ đồ kim tuyến gói trong túi nilon._
+    -> END
 * [🤧 Ho thật to: "Anh {giam_doc}… bà ngoại em… nhập viện…"]
     giam_doc: Bà ngoại? Đêm nay? *(nhìn bạn rất lâu)* …Đi đi.
     ~ son_ba_ngoai()
     ~ son_chon_dem_31 = "nghi_om"
     ~ son_xin_nghi()
-    -> thanh_xin_nghi_3010_danh_gia
+    _Bạn chạy ra cổng. Sau lưng, {giam_doc} vẫn đứng nhìn theo, lâu hơn cần thiết._
+    -> END
 * [🛵 "Em chạy qua đài 30 phút rồi về liền anh!"]
     ~ son_chon_dem_31 = "ca_hai"
-    -> thanh_xin_nghi_3010_danh_gia
-* {son_thai_biet && son_moi_nguyen_khach_moi && son_bao_giup && qh_sieu_nhan_hong >= 60 && qh_quan_ly_idol >= 60 && qh_it >= 40} [🔒 "Sếp, em có cách cho Siêu Nhân Hồng lên sóng toàn quốc tối nay. Anh tin em một lần."]
+    _Bạn nhét bộ đàm vào túi quần, ôm bộ đồ kim tuyến, chạy ra đường gọi xe. 19 giờ 25. Đại Lộ Kẹt Xe đỏ rực đèn hậu._
+    -> END
+* {son_moi_nguyen_khach_moi && son_bao_giup && (son_thai_biet || qh_quan_ly_idol >= 30) && qh_sieu_nhan_hong >= 40} [🔒 "Sếp, em có cách cho Siêu Nhân Hồng lên sóng toàn quốc tối nay. Anh tin em một lần."]
     giam_doc: *(nhìn bạn, nhìn {quan_ly_idol}, nhìn {it} đang ôm cuộn cáp)* …Anh không ép. Anh tin.
     ~ son_chon_dem_31 = "noi_song"
-    -> thanh_xin_nghi_3010_danh_gia
+    _{it} ôm cuộn cáp chạy về bàn kỹ thuật. Bạn nhảy lên xe ôm qua đài, {sieu_nhan_hong} ở lại sân khấu này. 20 giờ, hai sân khấu sẽ nối làm một._
+    -> END

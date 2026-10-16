@@ -16,7 +16,7 @@ bac_bao_ve: Cháu {chua_te_deadline}. Hôm nay ký hợp đồng lớn đấy. C
     _Bác {bac_bao_ve} nhìn màn hình 3 giây. Không nói gì. Nhưng không bảo bạn đi._
     bac_bao_ve: … Con mèo nhà ai mà giỏi thế.
     ~ vu_gio_luot = vu_gio_luot + 1
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 3
+    ~ vu_nuoc(3)
     ~ qh("bac_bao_ve", 5)
 * [🐾 Cúi xuống xoa đầu {cho}.]
     cho: Gâu gâu! *(liếm tay bạn, mắt vẫn dán vào ly cà phê)*
@@ -49,7 +49,7 @@ giam_doc: Và người cầm lái cả chiến dịch này là… {chua_te_deadl
 _Cả phòng quay lại. Bạn đang xem dở một video dạy nấu mì bằng ấm siêu tốc._
 giam_doc: *(vỗ vai bạn)* MV, gameshow, livestream, Đại Nhạc Hội 31/10. Cả chiến dịch nằm trong tay em đấy. Anh không ép, tùy em.
 * [🌊 "Dạ chill anh, còn 30 ngày mà. Kịp hết."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
     truong_phong: *(ở đầu bàn, hít một hơi rất sâu)* "Kịp hết". Tớ ghi lại câu này nhé, {chua_te_deadline}.
     ~ qh("truong_phong", -5)
     ~ qh("giam_doc", 3)
@@ -91,7 +91,7 @@ _Cả phòng quay sang nhìn bạn, người vừa được giao "cầm lái c�
     thuc_tap_sinh: Dạ em làm liền ạ! Dạ… 22 ly ạ? Dạ… dạ được ạ!
     _{thuc_tap_sinh} chạy đi. Bạn ngồi xuống, mở Tóp-tóp._
     ~ vu_gio_luot = vu_gio_luot + 1
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 3
+    ~ vu_nuoc(3)
 * [☕ Tự đi mua, nhân tiện đi bộ cho tỉnh.]
     ~ tien_cong(-60000)
     ~ nghi(-5)
@@ -138,11 +138,11 @@ _Bạn nhìn cây bút. Nhìn mẩu giấy. Cầm điện thoại lên chụp._
 * [📱 Gửi {hong_hot}: "Bên bà lên kịch bản couple hả? Ok, tui phối hợp."]
     hong_hot: *(trả lời sau 0,3 giây)* HẢ? KỊCH BẢN GÌ? Tui có biết gì đâu! Mà khoan, couple hả? Ét o ét, kể nghe coi!
     _Bạn mở bảng tiến độ, gõ thêm một dòng: "Content couple: để {hong_hot} lo."_
-    ~ vu_tin_that_long = vu_tin_that_long - 3
+    ~ vu_tin(-3)
     ~ qh("hong_hot", 3)
 * [🖊️ Dùng thử cây bút tô lên tờ lịch tháng 10.]
     _Bạn tô một vòng tròn hồng quanh ngày 31/10, ngày duy nhất được khoanh. Đẹp thiệt._
-    ~ vu_tin_that_long = vu_tin_that_long + 3
+    ~ vu_tin(3)
 * [😶 Bỏ vô ngăn kéo, coi như chưa thấy.]
     _Ngăn kéo có 14 gói mì ly, 2 lon Trâu Cày, và giờ thêm một cây bút hồng. Nó nằm đó, hồng một cách kiên nhẫn._
 - ~ vu_qua_hong++
@@ -157,7 +157,7 @@ _Màn chiếu hiện đúng một thanh màu hồng: "31/10: làm hết"._
 truong_phong: {chua_te_deadline}, bảng tiến độ của cậu đâu? Tớ nhắn từ hôm qua rồi đấy nhé.
 _{dan_dau_tu} khen: "Chart này đẹp, một cây nến xanh dài". {hong_hot} che miệng cười. {thuc_tap_sinh} ngồi ghi chép chăm chú như đang học thật._
 * [🌊 "Dạ, đây là phương pháp Agile Nước Tới Chân, bên nước ngoài xài nhiều lắm anh."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
+    ~ vu_nuoc(10)
     giam_doc: Agile à? Hay đấy. Anh thích những gì có chữ tiếng Anh.
     ~ qh("giam_doc", 3)
     ~ qh("truong_phong", -10)
@@ -182,39 +182,12 @@ _{dan_dau_tu} khen: "Chart này đẹp, một cây nến xanh dài". {hong_hot} 
     - else:
         truong_phong: Cậu đang dùng câu của tớ để chọc tớ đấy à? Được. Tớ đặt thêm 3 cuộc họp. Cả 3 cuộc đều có tên cậu.
         ~ qh("truong_phong", -10)
-        ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+        ~ vu_nuoc(5)
         ~ cang_thang(10)
     }
 - giam_doc: Thôi, mốc 1 là ngày 7/10: 50 nghìn người theo dõi. Mốc cuối 31/10: 1 triệu. Cả công ty sống hay chết là ở đây đấy các em.
 _Bạn ghi vào điện thoại: "7/10: 50k. Còn sớm mà."_
 -> END
-
-// ------------------------------------------------------------
-=== chua_te_deadline_0210_tra_sua_thu_6 ===
-# ngay:2 # gio:15:00 # noi:pantry
-_Trà sữa thứ 6, mua bằng quỹ phạt đi trễ. Tức là, tính sơ, khoảng 30% số trà sữa hôm nay là tiền của bạn._
-ke_toan: {chua_te_deadline}, tháng này em mới tháng thứ 2 ngày mà đã góp quỹ rồi đó. Chị ghi sổ rồi nha.
-hong_hot: Ông này là nhà tài trợ kim cương của quỹ trà sữa luôn á!
-* [🧋 "Thì tui uống ly to nhất, công bằng mà."]
-    ~ uong(30)
-    ~ an(5)
-    ke_toan: Công bằng là em đi làm đúng giờ đó em.
-    ~ qh("ke_toan", -2)
-* [😇 "Dạ, từ tuần sau em đi đúng giờ, chị ghi giùm em câu này luôn."]
-    ke_toan: Chị ghi rồi. Chị ghi câu này từ năm 2021 rồi em.
-    _{ke_toan} lật cuốn sổ. Trang nào cũng có một câu y chang, chữ của bạn._
-    ~ uong(25)
-    ~ qh("ke_toan", 3)
-* [📱 Quay video trend "đếm xem ai đóng quỹ nhiều nhất".]
-    ~ vu_gio_luot = vu_gio_luot + 1
-    { RANDOM(1, 10) <= 5:
-        _Video lên được 40 nghìn lượt xem. {hong_hot} gắn thêm cái mũ hồng vào cho "có thương hiệu"._
-        ~ follow(4000)
-    - else:
-        _Video được 12 lượt xem. 11 lượt là của {hong_hot}._
-    }
-    ~ uong(25)
-- -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_0310_tin_nhan_22h ===
@@ -228,7 +201,7 @@ _Bạn thả tim tin nhắn. Rồi bạn nhìn cái áo khoác treo sau cửa._
     _Không có USB._
     ~ cang_thang(15)
 * [😎 "Còn sớm mà. 20/10 lận."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
     _Bạn tắt điện thoại, lướt Tóp-tóp thêm 2 tiếng. Tới video thứ 140 thì có một video "Cách tìm đồ thất lạc theo phong thủy". Bạn không bấm vào._
     ~ vu_gio_luot = vu_gio_luot + 2
 - _2 giờ sáng. Bạn đã lật tung phòng gác: nệm, gầm bàn, kim tự tháp 14 vỏ lon Trâu Cày (giờ là đống đổ nát 14 vỏ lon Trâu Cày)._
@@ -239,7 +212,7 @@ _Vé giữ xe tháng 9 vẫn nằm trên bàn. Bãi xe công ty. Hồi tháng 9,
     _Ít ra bây giờ bạn biết mình đã làm mất nó ở đâu. Chỉ không biết ai đã nhặt._
     ~ nghi(-20)
 * [😶 Nằm xuống. "Mai tính."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
     ~ nghi(-10)
 - ~ cang_thang(10)
 -> END
@@ -269,9 +242,9 @@ cho: GÂU GÂU GÂU! *(lao đi, bỏ quên bạn)*
 sieu_nhan_hong: Ui! Ủa {chua_te_deadline}! Chủ nhật mà em cũng ghé công ty hả?
 * [😎 "Ghé mua cà phê thôi anh. Chủ nhật là ngày nghỉ của deadline."]
     sieu_nhan_hong: Ờm… vậy chủ nhật deadline nghỉ… thì em rảnh hông? À không, không có gì! Biến hình! *(chạy đi, bị {cho} rượt)*
-    ~ vu_tin_that_long = vu_tin_that_long + 2
+    ~ vu_tin(2)
 * [💬 "Anh chọc nó hoài, nó ghét anh đó."]
     sieu_nhan_hong: Anh biết… Nó ghét anh mà nó vẫn nhìn anh. Còn có người anh chọc hoài mà người đó hông nhìn anh.
     _Bạn không hiểu câu đó. Bạn uống một ngụm cà phê._
-    ~ vu_tin_that_long = vu_tin_that_long + 3
+    ~ vu_tin(3)
 - -> END

@@ -123,8 +123,8 @@ _Tiếng ngáp phía sau. {editor} vừa ngủ dậy, tóc dựng như tổ chim
 
 // ------------------------------------------------------------
 === designer_1510_cong_vien_trong_bong_toi ===
-# ngay:15 # gio:19:10 # noi:pantry
-_19 giờ. Vẫn mất điện. Pantry chỉ còn ánh đèn pin điện thoại. Rồi từ góc tối, có tiếng hát rất khẽ._
+# ngay:15 # gio:16:45 # noi:pantry
+_Gần 5 giờ chiều. Vẫn mất điện, trời vừa đổ mưa. Pantry không cửa sổ chỉ còn ánh đèn pin điện thoại. Rồi từ góc tối, có tiếng hát rất khẽ._
 idol_het_thoi: *(hát)* Ngày xưa có đôi bạn thân… bán cá viên chiên… tại công viên…
 _Không kính đen. Không "em biết anh là ai không". Chỉ là giọng hát thật, run run. Ở góc kia, {editor} giơ điện thoại quay lại, không bật đèn._
 _Ở cửa sổ cuối hành lang, bạn thấy hai cái bóng: một cái bóng đội mũ đang tháo mũ ra, và {chua_te_deadline} đứng cạnh._

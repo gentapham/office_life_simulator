@@ -52,8 +52,8 @@ phu_chu_liem: Ối! Chó! Ai cho chó vào đây?!
 // ------------------------------------------------------------
 === thanh_xin_nghi_2210_thuong_toi_hau_thu ===
 # ngay:22 # gio:17:00 # noi:phong_ke_toan # bat_buoc
-_5 giờ chiều. Đoàn thuế chưa về. Chị {ke_toan} kéo bạn vào phòng kế toán, đóng cửa._
-ke_toan: {thanh_xin_nghi}. Chị nói một lần. Tuần này em mà nghỉ một ngày, chị không ký lương nữa. Đoàn thuế đang soi bảng chấm công. Em nghỉ là công ty bị phạt, chị bị phạt.
+_5 giờ chiều. Đoàn thuế vừa về được một tiếng. Chị {ke_toan} kéo bạn vào phòng kế toán, đóng cửa._
+ke_toan: {thanh_xin_nghi}. Chị nói một lần. Tuần này em mà nghỉ một ngày, chị không ký lương nữa. Đoàn thuế vừa soi bảng chấm công. Em nghỉ là công ty bị phạt, chị bị phạt.
 _Tuần này. Tổng duyệt bán kết chiều thứ 6, 23/10. Bán kết tối chủ nhật 25/10._
 * [😇 "Dạ chị. Em đi đủ."]
     ke_toan: Hứa?
@@ -74,8 +74,8 @@ _Tuần này. Tổng duyệt bán kết chiều thứ 6, 23/10. Bán kết tối
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2310_tong_duyet ===
-# ngay:23 # gio:15:30 # noi:san_khau_su_kien # bat_buoc
-_Sinh nhật Siêu Nhân Hồng, 31 tuổi. Livestream lúc 19:00. Tổng duyệt bán kết lúc 17:00 ở Đài Tivi Hóng, Ven Đô. Bạn đang đứng giữa sân khấu sự kiện, tay cầm lịch chạy chương trình._
+# ngay:23 # gio:15:30 # noi:studio_tang_2 # bat_buoc
+_Sinh nhật Siêu Nhân Hồng, 31 tuổi. Livestream lúc 20:00 ở studio tầng 2. Tổng duyệt bán kết lúc 17:00 ở Đài Tivi Hóng, Ven Đô. Bạn đang đứng giữa studio, tay cầm lịch chạy chương trình._
 _{sales} chạy tới hớt hải: "Mr. Kevin Trộn kẹt xe ở Singapore! Cần người đóng thế lên sóng chúc mừng!"_
 * [📅 "Bác {bac_bao_ve} đóng được. Bác nói ít, thâm thúy, nhìn như chủ tịch."]
     ~ qh("bac_bao_ve", -3)
@@ -88,17 +88,17 @@ _{sales} chạy tới hớt hải: "Mr. Kevin Trộn kẹt xe ở Singapore! C�
 - _16:15. Nếu đi tổng duyệt, bạn phải rời đây ngay._
 * [🌫️ Bốc Hơi: chấm công rồi lẻn ra cổng sau.]
     { qh_bac_bao_ve >= 20:
-        bac_bao_ve: *(quay mặt đi)* Bác không thấy gì đâu. Về trước 7 giờ.
+        bac_bao_ve: *(quay mặt đi)* Bác không thấy gì đâu. Về trước 8 giờ.
         ~ son_mo(8)
         ~ son_nghi_tu_15 = true
     - else:
         bac_bao_ve: Cháu {thanh_xin_nghi}. Đi đâu thế? Chị {ke_toan} dặn bác ghi giờ ra vào đấy.
         ~ son_soi(15)
-        _Bạn quay lại sân khấu. Tổng duyệt vắng mặt._
+        _Bạn quay lại studio. Tổng duyệt vắng mặt._
         ~ son_mo(-10)
     }
 * {son_thai_biet} [🔒 Nhờ anh {quan_ly_idol} che: "Anh, em đi 2 tiếng. Anh lo giùm lịch chạy livestream."]
-    quan_ly_idol: Đi đi. Anh che. Mà về trước 7 giờ, Nguyên thổi nến em không có mặt là ổng buồn.
+    quan_ly_idol: Đi đi. Anh che. Mà về trước 8 giờ, {sieu_nhan_hong} thổi nến em không có mặt là ổng buồn.
     ~ qh("quan_ly_idol", -3)
     ~ son_mo(8)
     ~ son_nghi_tu_15 = true
@@ -115,35 +115,33 @@ _{sales} chạy tới hớt hải: "Mr. Kevin Trộn kẹt xe ở Singapore! C�
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2310_livestream ===
-# ngay:23 # gio:19:00 # noi:san_khau_su_kien # bat_buoc
-_19:00. Livestream sinh nhật. Bạn đứng sau cánh gà với bộ đàm. {sieu_nhan_hong} cúi xuống thổi nến. Một vệt vàng lao qua._
-_{cho} húc đổ cái bánh kem hồng 5 tầng. Kem hồng bay lên màn hình livestream, lên cà vạt {giam_doc}, lên mũ {sieu_nhan_hong}._
-~ follow(60000)
-_Trong lúc cả đội lao ra dọn kem, bạn cầm khăn đứng sau cánh gà, vô thức ngân nga bài bán kết. Micro livestream gần đó vẫn mở._
+# ngay:23 # gio:20:00 # noi:studio_tang_2 # bat_buoc
+_20:00. Studio tầng 2. Livestream sinh nhật. Bạn đứng sau tấm phông với bộ đàm. {sieu_nhan_hong} cúi xuống thổi nến. Một vệt vàng lao qua._
+_{cho} húc đổ cái bánh kem hồng 3 tầng. Kem hồng bay lên ống kính livestream, lên cà vạt {giam_doc}, lên mũ {sieu_nhan_hong}._
+_Trong lúc cả đội lao ra dọn kem, bạn cầm khăn đứng sau tấm phông, vô thức ngân nga bài bán kết. Micro livestream gần đó vẫn mở._
 _Bình luận chạy: "Ai hát nền hay vậy?" "Hát nữa đi!" "Giọng ai mà như ca sĩ vậy?"_
 ~ son_lo_tren_livestream = true
 * [🤐 Bịt miệng, chạy vào trong.]
-    _Bình luận vẫn hỏi. Không ai trả lời. {hong_hot} quay lại nhìn cánh gà, mắt nheo lại._
+    _Bình luận vẫn hỏi. Không ai trả lời. {hong_hot} quay lại nhìn tấm phông, mắt nheo lại._
     ~ son_soi(5)
 * [🎤 Hát tiếp thêm một câu. Cho người ta nghe.]
     ~ son_mo(5)
     ~ follow(10000)
     ~ son_soi(8)
-    _Câu thứ hai. Bình luận nổ tung. Anh {hr} đứng ở hàng ghế cuối, quay phắt về phía cánh gà._
+    _Câu thứ hai. Bình luận nổ tung. Anh {hr} đứng ở hàng ghế cuối, quay phắt về phía tấm phông._
 * [🧹 Giả vờ đang test micro: "Alo alo, một hai ba, test cho anh {idol_het_thoi}."]
     idol_het_thoi: *(từ xa)* Anh đâu có hát hôm nay!
     ~ son_tin(-5)
 - _Rồi {sieu_nhan_hong} cầm micro, mặt mũ dính kem, quay về phía {chua_te_deadline} đang đứng sau máy quay._
 sieu_nhan_hong: {chua_te_deadline} ơi… anh thích em. Không phải PR đâu. Thiệt đó.
-_Hashtag VũƠiTrảLờiĐi lên top xu hướng sau 10 phút. Bạn ghi vào lịch, cột ghi chú: "23/10, 19:47: tỏ tình. Không có trong kế hoạch."_
+_Hashtag VũƠiTrảLờiĐi lên top xu hướng sau 10 phút. Bạn ghi vào lịch, cột ghi chú: "23/10, 20:47: tỏ tình. Không có trong kế hoạch."_
 -> END
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2410_hoi_nghi ===
-# ngay:24 # gio:09:30 # noi:phong_hop_sang_tao # bat_buoc
-_Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của chị {chi_dai}. Bàn xếp theo cặp. Bạn ngồi đối diện… anh {hr}._
-_Trên bàn là tờ "Câu hỏi hòa giải": "1. Điều bạn chưa từng nói với người kia là gì?"_
-_Trước khi cặp nào kịp hỏi, chị {chi_dai} đập bàn, hỏi anh {hr} chuyện danh sách cắt giảm trước cả phòng. Anh {hr} trả lời gì đó. Bạn không nghe rõ, vì tim bạn đập to quá._
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_Ngày Liên Hợp Quốc. 14 giờ, phòng họp tầng 2. "Hội nghị hòa giải" của chị {chi_dai}. Bàn xếp theo cặp. Bạn ngồi đối diện… anh {hr}._
+_Trên bàn là tờ "Câu hỏi hòa giải": "1. Điều bạn chưa từng nói với người kia là gì?" Tim bạn đập to tới mức nghe không rõ cặp bên cạnh đang cãi gì._
 hr: *(quay lại bạn, hít một hơi)* Tới mình. Em hỏi trước đi {thanh_xin_nghi}.
 * [💬 "Anh… danh sách đó có tên em không anh?"]
     hr: *(nhìn bạn rất lâu)* Có những tên anh viết bằng bút chì. Tên em là một trong số đó.
@@ -234,7 +232,7 @@ _Bạn tẩy trang trong phòng chờ. Lớp kim tuyến cuối cùng trôi theo
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2610_chieu_thu ===
-# ngay:26 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2 # bat_buoc
 _Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". 15 phút. Một người mặc đồ hồng đẩy xe chết máy cho một người lạ 2 km trong mưa._
 _Đèn bật. {thuc_tap_sinh} khóc. {bien_kich} nhận lời khen. Tin đồn cắt giảm vẫn chạy khắp hành lang, nay có thêm câu: "nộp danh sách hôm nay"._
 { son_vao_chung_ket:
@@ -248,7 +246,7 @@ _Đèn bật. {thuc_tap_sinh} khóc. {bien_kich} nhận lời khen. Tin đồn c
 }
 
 = s_moi
-* {son_nguyen_biet} [🔒 "Anh Nguyên… anh làm khách mời chung kết với em được hông? Đài đang tìm khách mời."]
+* {son_nguyen_biet} [🔒 "Anh {sieu_nhan_hong}… anh làm khách mời chung kết với em được hông? Đài đang tìm khách mời."]
     sieu_nhan_hong: Khách mời? Trên sóng toàn quốc? *(tạo dáng 3 kiểu liền)* Gét gô! Mà… cùng tối Đại Nhạc Hội hả?
     thanh_xin_nghi: Dạ. 20:00. Em tính rồi. Hơi điên một chút.
     sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! Điên là thái độ luôn!
@@ -264,7 +262,7 @@ _Đèn bật. {thuc_tap_sinh} khóc. {bien_kich} nhận lời khen. Tin đồn c
 # ngay:27 # gio:10:00 # noi:san_thuong # bat_buoc
 _LL-Entertainment ra tay. Sáng nay Lưu Lực gửi lời mời cho Siêu Nhân Hồng: lăng xê miễn phí, trả gấp ba. Cả công ty như ngồi trên lửa._
 _Sân thượng. Anh {quan_ly_idol} kéo bạn lên, tay cầm 2 điện thoại, giọng mệt._
-quan_ly_idol: {thanh_xin_nghi}, anh nói thiệt. LL mời anh về, 36 triệu một tháng, kèm Nguyên. Em đi với anh không? Bên đó không ai bắt giấy phòng khám đâu.
+quan_ly_idol: {thanh_xin_nghi}, anh nói thiệt. LL mời anh về, 36 triệu một tháng, kèm {sieu_nhan_hong}. Em đi với anh không? Bên đó không ai bắt giấy phòng khám đâu.
 * [🤝 "Anh {quan_ly_idol} đi đâu em đi đó. Mà… còn anh {idol_het_thoi} thì sao?"]
     _Anh {quan_ly_idol} khựng lại rất lâu. Một điện thoại rung. Anh không nghe._
     ~ qh("quan_ly_idol", 10)
@@ -293,11 +291,12 @@ quan_ly_idol: {thanh_xin_nghi}, anh nói thiệt. LL mời anh về, 36 triệu 
 
 // ------------------------------------------------------------
 === thanh_xin_nghi_2710_luu_luc ===
-# ngay:27 # gio:11:00 # noi:sanh_le_tan # bat_buoc
-_Lưu Lực đích thân tới. Vest trắng, tóc vuốt keo, hai thư ký xanh lá chuối. Ông ta đi thẳng tới quầy lễ tân, nơi chị {chi_dai} đang cầm bộ đàm._
+# ngay:27 # gio:15:00 # noi:sanh_le_tan # bat_buoc
+_15 giờ. Lưu Lực đích thân tới. Vest trắng, tóc vuốt keo, hai thư ký xanh lá chuối. Ông ta đi thẳng vào sảnh._
 phu_luu_luc: Việc hôm nay phải xong từ hôm qua. Tôi muốn gặp Siêu Nhân Hồng.
-chi_dai: Ủa… Quán Ốc Đêm. Mười năm trước. Tô ốc len. Nhớ hông?
-_Lưu Lực đứng hình. Tập hồ sơ rơi xuống sàn, giấy bay tứ tung. Một tờ bay tới chân bạn: "Lịch trình Siêu Nhân Hồng tuần 26/10 – 31/10". Bản sao lịch của bạn._
+_Rồi ông ta thấy chị {chi_dai} đang đứng ở quầy lễ tân, bộ đàm bên hông. Lưu Lực đứng hình. Tập hồ sơ rơi xuống sàn, giấy bay tứ tung._
+chi_dai: *(nhướng mày)* Ủa, ổng bị gì vậy?
+_Một tờ giấy bay tới chân bạn: "Lịch trình Siêu Nhân Hồng tuần 26/10 – 31/10". Bản sao lịch của bạn._
 * [🕵️ Nhặt lên, xem kỹ.]
     _Đúng lịch của bạn. Bản bạn in tuần trước, có cả nét bút chì gạch xóa. Ai đó đã chụp lại._
     { son_hieu_biet_lich:

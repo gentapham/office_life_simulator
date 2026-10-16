@@ -19,7 +19,7 @@ truong_phong: *(nhìn rất lâu)* … Tớ không có gì để góp ý. Đây 
 ~ tien_cong(200000)
 ~ nhan(ca_phe)
 ~ uy_tin = uy_tin + 5
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 10
+~ vu_nuoc(-10)
 ~ qh("truong_phong", 5)
 ~ qh("editor", 3)
 _Bạn tự thưởng một ly cà phê muối. Mặn mặn, ngọt ngọt, giống cảm giác làm xong việc sớm._
@@ -29,7 +29,7 @@ _Bạn tự thưởng một ly cà phê muối. Mặn mặn, ngọt ngọt, gi�
 # noi:ban_lam_viec
 _Hai thanh màu tím chồng lên nhau. Thanh tím là của {editor}. Ngày 8/10, {editor} vừa phải dựng MV vừa phải dựng teaser vừa phải đi khám mắt._
 ~ tien_cong(50000)
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+~ vu_nuoc(5)
 ~ qh("editor", -3)
 _2 giờ sáng, điện thoại bạn sáng lên. Tin nhắn từ {editor}: "???"_
 _Chỉ ba dấu hỏi. Mà nặng hơn ba trang kiểm điểm._
@@ -50,7 +50,7 @@ bien_kich: *(nghe tên {truong_phong}, giật mình)* Đây! Đây! Kịch bản
 _Ba file. 16 giờ 58. Bạn ghé phòng chờ của Siêu Nhân Hồng, lấy một đĩa bánh chuối chiên theo đúng điều khoản số 4._
 ~ tien_cong(300000)
 ~ nhan(chuoi_chien)
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 10
+~ vu_nuoc(-10)
 ~ follow(5000)
 -> END
 
@@ -61,7 +61,7 @@ designer: Ông nói vậy thì tui sửa thêm một lần nữa cho chắc. L�
 _Bạn đòi được đúng một file, lúc 17 giờ 40. Bài đăng trễ._
 ~ tien_cong(100000)
 ~ qh("designer", -5)
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+~ vu_nuoc(5)
 -> END
 
 // ============ 🌙 ĐÊM THẦN TỐC ============
@@ -79,7 +79,7 @@ _7 giờ 59 phải bấm "Gửi". Không phải 8 giờ. 7 giờ 59._
 _7 giờ 59. Gửi._
 _Bạn ngả ra sau. Ánh nắng đầu tiên chiếu qua cửa sổ phòng gác. Dưới nhà, chú chủ quán bida bắt đầu lau bàn._
 ~ vu_so_dem_than_toc++
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 50
+~ vu_nuoc(-50)
 ~ nghi(-80)
 ~ tien_cong(500000)
 ~ nhan(mi_ly)
@@ -98,10 +98,10 @@ _Nước tới chân mới nhảy, mà nhảy là phải đẹp._
 _8 giờ 01. Gửi._
 _Hai phút. Chỉ hai phút. Nhưng hai phút là đủ để {truong_phong} gửi email trước: "Cậu {chua_te_deadline} trễ hạn."_
 ~ vu_so_dem_than_toc++
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 30
+~ vu_nuoc(-30)
 ~ nghi(-80)
 { ngay >= 29:
-    ~ vu_cue_sheet = vu_cue_sheet + 20
+    ~ vu_cue(20)
     { vu_cue_sheet > 46:
         ~ vu_cue_sheet = 46
     }
@@ -128,7 +128,7 @@ giam_doc: Đoàn quay hôm nay anh đãi cơm tấm! Sườn bì chả! Không a
 ~ tien_cong(150000)
 ~ nhan(com_tam)
 ~ uy_tin = uy_tin + 3
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 10
+~ vu_nuoc(-10)
 ~ follow(8000)
 ~ qh("it", 3)
 -> END
@@ -140,7 +140,7 @@ sieu_nhan_hong: Chúc mừng hạnh phúc! Biến hình! *(chụp chung với c�
 _Ảnh cưới có Siêu Nhân Hồng lên mạng. Không ai biết đây là thảm họa hay là quảng cáo._
 ~ tien_cong(30000)
 ~ uy_tin = uy_tin - 3
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+~ vu_nuoc(5)
 ~ follow(3000)
 -> END
 
@@ -193,6 +193,6 @@ _Bạn uống luôn chai nước ngọt tại bàn. {giam_doc} một ván bida c
 _Bạn thua. {dan_dau_tu} rút cuốn sổ nợ dày cộp ra, lật tới trang của… chính {dan_dau_tu}, ghi: "{chua_te_deadline} nợ 1 chai nước ngọt."_
 dan_dau_tu: Anh ghi chung sổ cho tiện. Sổ này toàn anh nợ người ta, giờ có một dòng người ta nợ anh. Đẹp sổ.
 ~ vu_no_chuong = vu_no_chuong + 15000
-~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+~ vu_nuoc(5)
 ~ qh("dan_dau_tu", 5)
 -> END

@@ -6,9 +6,9 @@
 // ============ 📅 XẾP LỊCH XẾP HÌNH ============
 === thanh_xin_nghi_mg_xep_lich_mo ===
 # noi:ban_dieu_phoi
-_Bảng tuần hiện lên. Các khối rơi xuống: Nguyên đi quay, {idol_het_thoi} hát đám cưới, xe đoàn quay, phòng studio. Khối nào chồng nhau thì chớp đỏ._
-_Thỉnh thoảng rơi xuống một khối "🆘 Nguyên bỏ đi giúp người", không báo trước._
-quan_ly_idol: *(qua điện thoại)* {thanh_xin_nghi}, xếp sao cho {idol_het_thoi} với Nguyên đừng đụng mặt nhau ở cổng nha. Hai ông đó mà gặp nhau là {cho} sủa.
+_Bảng tuần hiện lên. Các khối rơi xuống: {sieu_nhan_hong} đi quay, {idol_het_thoi} hát đám cưới, xe đoàn quay, phòng studio. Khối nào chồng nhau thì chớp đỏ._
+_Thỉnh thoảng rơi xuống một khối "🆘 {sieu_nhan_hong} bỏ đi giúp người", không báo trước._
+quan_ly_idol: *(qua điện thoại)* {thanh_xin_nghi}, xếp sao cho {idol_het_thoi} với {sieu_nhan_hong} đừng đụng mặt nhau ở cổng nha. Hai ông đó mà gặp nhau là {cho} sủa.
 -> END
 
 === thanh_xin_nghi_mg_xep_lich_dat ===

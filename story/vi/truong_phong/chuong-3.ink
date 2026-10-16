@@ -89,7 +89,7 @@ _Mốc 2: 200.000 người theo dõi. Bàn điều phối lịch của {thanh_xi
 === truong_phong_1510_mat_dien ===
 # ngay:15 # gio:08:05 # noi:phong_hop_sang_tao # bat_buoc
 _8 giờ 05. "Phụt." Cả tòa nhà tắt điện. Máy chiếu tắt. Máy lạnh tắt. Wifi tắt._
-_Từ xa vọng lại tiếng {giam_doc} và {chi_dai} đập cửa thang máy: "Bảo ơi! Mở cửa!"_
+_Từ xa vọng lại tiếng {giam_doc} và {chi_dai} đập cửa thang máy: "Bác {bac_bao_ve} ơi! Mở cửa!"_
 it: *(ló đầu vào, cầm đèn pin)* Mất điện cả khu. Không phải lỗi người dùng. Chưa biết khi nào có lại.
 thuc_tap_sinh: Dạ em có 5 cục sạc dự phòng ạ! Ai cần cứ lấy ạ!
 _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn bạn: hôm nay còn họp không?_
@@ -97,7 +97,7 @@ _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn b�
     ~ tp_hop(1)
     ~ tp_giu_hop_nen = true
     thuc_tap_sinh: Dạ có ạ! Nến thơm em mua ở siêu thị mini, mùi… vani ạ.
-    _Phòng "Sáng Tạo" có đúng một ngọn nến. Mùi vani. Không slide. Không máy chiếu. Chỉ có những gương mặt._
+    _Phòng "Sáng Tạo" có sáu cây nến thơm mùi vani. Không slide. Không máy chiếu. Chỉ có những gương mặt._
     -> truong_phong_1510_hop_duoi_nen
 * [😴 "Hôm nay nghỉ họp. Ai làm được gì thì làm."]
     ~ tp_ca_phong(8)
@@ -113,7 +113,7 @@ _Năm cục sạc nằm trên bàn như năm viên ngọc. Cả phòng nhìn b�
 
 // ------------------------------------------------------------
 === truong_phong_1510_hop_duoi_nen ===
-# ngay:15 # gio:09:00 # noi:phong_hop_sang_tao # dieu_kien:tp_giu_hop_nen
+# noi:phong_hop_sang_tao
 { not tp_giu_hop_nen:
     -> END
 }
@@ -123,7 +123,9 @@ designer: Poster em cũng vậy. Bản cuối là bản đầu đổi tên.
 _Mọi người cười khẽ. Rồi {chua_te_deadline}, đang ngả ghế, chợt ngồi thẳng dậy._
 chua_te_deadline: Ngồi tối vầy tui mới dám nói. Hồi tháng 6 tui làm mất file gốc một dự án. Tới giờ chưa ai biết.
 _Im lặng. Ngọn nến kêu lách tách._
-chua_te_deadline: Nói thiệt nha anh {truong_phong}. Ngồi tối vầy tui mới dám hỏi. Anh tự dựng được video nào chưa? # hen_gio:8
+_Ở cuối bàn, {ran_doc}, cậu nhân viên mới bên Truyền thông nội bộ, giơ tay, cười rất ngọt._
+ran_doc: Anh {truong_phong} ơi, laptop anh còn pin nè. Anh dựng thử cho tụi em xem cách cắt cảnh clip hậu trường được hông? Em hỏi để học thôi.
+_Cả phòng quay sang nhìn bạn. {chua_te_deadline} nhướng mày: câu này cậu ta cũng muốn hỏi từ lâu._ # hen_gio:8
 * [🕯️ "Chưa. Anh chưa dựng được cái nào. Toàn là {editor}."]
     ~ tp_noi_that_duoi_nen = true
     ~ tp_lo(30)
@@ -134,8 +136,9 @@ chua_te_deadline: Nói thiệt nha anh {truong_phong}. Ngồi tối vầy tui m�
     thuc_tap_sinh: Dạ… em thấy anh {truong_phong} nói thật vậy là ngầu lắm ạ.
     { tp_tay_nghe >= 10:
         truong_phong: Nhưng anh đang học. Đêm nào cũng học. Phím C là cắt.
-        editor: *(gật đầu chậm)* Phím C là cắt.
+        editor: *(gật đầu chậm)* Phím C là cắt. Tối nay em ở phòng dựng tới khuya. Anh muốn thì qua.
         ~ qh("editor", 10)
+        ~ tp_mo_ca_dem = true
     }
 * [💨 Thổi tắt nến: "Vì lý do an toàn cháy nổ, mình hoãn họp nhé."]
     ~ tp_lo(15)
@@ -143,8 +146,9 @@ chua_te_deadline: Nói thiệt nha anh {truong_phong}. Ngồi tối vầy tui m�
     chua_te_deadline: Chill, tui hiểu rồi.
     ~ tp_giu_hop_nen = false
     ~ qh("chua_te_deadline", -3)
-* [🔄 "Thế còn cậu, file gốc dự án tháng 6 đâu rồi?"]
-    _{chua_te_deadline} im bặt. Hai người nhìn nhau qua ngọn nến. Ai cũng cầm một con dao, không ai muốn rút._
+* [🔄 Lảng sang {chua_te_deadline}: "Thế còn cậu, file gốc dự án tháng 6 đâu rồi?"]
+    ~ tp_lo(10)
+    _{ran_doc} khẽ cười, ghi gì đó vào sổ. {chua_te_deadline} im bặt. Hai người nhìn nhau qua ngọn nến. Ai cũng cầm một con dao, không ai muốn rút._
     ~ qh("chua_te_deadline", -10)
     ~ tp_vu_giu_bi_mat = true
     _Từ hôm đó, {chua_te_deadline} không bao giờ nhắc lại câu hỏi này nữa. Bạn cũng không._
@@ -152,12 +156,10 @@ chua_te_deadline: Nói thiệt nha anh {truong_phong}. Ngồi tối vầy tui m�
     _Bạn mở miệng. Không có chữ nào đi ra. Ngọn nến tự tắt vì hết sáp._
     ~ tp_lo(10)
     hong_hot: *(từ cửa)* Trời ơi im lặng vậy là trả lời rồi đó!
+    _Trước giờ trưa, tin "Trưởng phòng không biết dựng phim" đã chạy hết công ty. Không ai nhớ ai nói đầu tiên._
 - _Cuộc họp kéo dài tới 5 giờ chiều. Không ai bảo phải ở lại. Ai cũng ở lại._
 { tp_giu_hop_nen:
     _Lần đầu tiên, biên bản họp của bạn không có mục nào "take note lại"._
-}
-{ tp_do_lo >= 100:
-    -> truong_phong_tudo_lo_bai
 }
 -> END
 
@@ -174,6 +176,11 @@ _Ở góc bên kia, {con_ong_chau_cha} ôm cây đàn cũ lấy từ kho studio,
     con_ong_chau_cha: *(thấy bạn, dừng tay)* Ủa… ông đứng đó lâu chưa?
     truong_phong: Vừa tới thôi.
     _Bạn nói dối. Lần này là một lời nói dối tử tế._
+    { qh_con_ong_chau_cha >= 10:
+        con_ong_chau_cha: Bài này tui viết đó. Ông muốn nghe bản thu thì bữa nào lên tầng 30. Đừng kể chú tui.
+        ~ tp_mo_phong_thu = true
+        ~ phat_hien(bai_hat_long)
+    }
 * [📅 "Mọi người về đi, mai còn họp."]
     ~ tp_ca_phong(-3)
     idol_het_thoi: Em biết anh là ai không? Anh đang hát mà.
@@ -196,12 +203,13 @@ _Cả trường quay cười ồ. Trong cánh gà, {idol_het_thoi} đứng nắm
 * [🎤 Ra hiệu cho kỹ thuật đưa micro cho {idol_het_thoi} hát bè từ cánh gà.]
     idol_het_thoi: *(cất giọng)* …cá viên chiên, thích ăn chuối chiên…
     _Hai giọng hòa vào nhau. Khán giả đứng dậy. MC quên luôn kịch bản._
-    ~ follow(30000)
+    ~ follow(25000)
     ~ qh("idol_het_thoi", 15)
     ~ qh("sieu_nhan_hong", 5)
     ~ tp_ghe(3)
 * [🎬 "Giữ nguyên. Cái sai đó là meme."]
-    ~ follow(15000)
+    ~ chung_so_meme = chung_so_meme + 1
+    ~ follow(5000)
     _"Khoai chiên" lên xu hướng trong 20 phút. {idol_het_thoi} rời cánh gà, không nói một lời._
     ~ qh("idol_het_thoi", -5)
 * [📅 Bấm tai nghe: "Cắt quảng cáo! Họp nhanh với ê-kíp!"]
@@ -211,8 +219,7 @@ _Cả trường quay cười ồ. Trong cánh gà, {idol_het_thoi} đứng nắm
     ~ tp_ghe(-5)
 * [⏱️ (Không chọn kịp)]
     _Bài hát trôi qua. Không ai làm gì. Có lẽ thế lại hay._
-- ~ follow(80000)
-_Phát sóng xong. Giờ là cuộc đua của phòng dựng._
+- _Quay xong. 20 giờ tối nay phát sóng. Giờ là cuộc đua của phòng dựng._
 -> END
 
 // ------------------------------------------------------------
@@ -223,7 +230,7 @@ hong_hot: Ét o ét anh {truong_phong} ơi! Clip đâu anh? Bên LL đăng clip 
 * [🛠️ Tự ngồi vào máy dựng.]
     { tp_tay_nghe >= 40 || RANDOM(1, 100) <= 25:
         _Phím C. Kéo. Thả. Chỉnh màu. Nhạc khớp nhịp ở lần thứ ba. Bạn bấm xuất lúc 22:41._
-        ~ follow(70000)
+        ~ follow(30000)
         ~ tp_lo(-20)
         ~ tp_tn(15)
         ~ tp_gameshow_xong = true
@@ -234,7 +241,7 @@ hong_hot: Ét o ét anh {truong_phong} ơi! Clip đâu anh? Bên LL đăng clip 
         _Câu trả lời ngắn nhất đời bạn. Và là câu thật nhất._
     - else:
         _Bạn xuất clip. Mọi thứ đều đúng, trừ việc… cả clip bị lộn ngược. Siêu Nhân Hồng đứng bằng đầu suốt 60 giây._
-        ~ follow(20000)
+        ~ follow(5000)
         ~ tp_lo(25)
         ~ tp_tn(5)
         ~ tp_gameshow_xong = true
@@ -243,7 +250,7 @@ hong_hot: Ét o ét anh {truong_phong} ơi! Clip đâu anh? Bên LL đăng clip 
 * [😬 Lay {editor} dậy.]
     editor: *(mắt nhắm)* …Dạ… render… xong là…
     _Clip xong sau 1 tiếng. Đẹp, đúng nhịp, có con cú ở giây thứ 31. {editor} gục xuống lần nữa, lần này là ngủ thật._
-    ~ follow(50000)
+    ~ follow(20000)
     ~ tp_gameshow_xong = true
     ~ tp_linh_nghi_om = true
     ~ tp_ghe(3)
@@ -251,24 +258,21 @@ hong_hot: Ét o ét anh {truong_phong} ơi! Clip đâu anh? Bên LL đăng clip 
 * [📞 Gọi {chua_te_deadline}: "Cậu xử lý giúp tớ."]
     chua_te_deadline: Còn sớm mà anh.
     _Clip ra lúc 23:58. Kịp ngày, trễ trend._
-    ~ follow(25000)
+    ~ follow(5000)
     ~ qh("chua_te_deadline", -3)
 * [⏱️ (Không chọn kịp)]
-    _{hong_hot} tự cắt clip bằng điện thoại, đăng kèm chữ "Ối dồi ôi". Dưới clip ghi: "Edit by Ngân"._
-    ~ follow(30000)
+    _{hong_hot} tự cắt clip bằng điện thoại, đăng kèm chữ "Ối dồi ôi". Dưới clip ghi: "Edit by {hong_hot}"._
+    ~ follow(10000)
     ~ qh("hong_hot", 5)
     ~ tp_ghe(-3)
 - _Nửa đêm. Phòng dựng chỉ còn tiếng quạt máy tính._
-{ tp_do_lo >= 100:
-    -> truong_phong_tudo_lo_bai
-}
 -> END
 
 // ------------------------------------------------------------
 === truong_phong_1610_buffet ===
-# ngay:16 # gio:12:00 # noi:pantry
+# ngay:16 # gio:20:00 # noi:pantry
 ~ tp_lich_co_dinh()
-_Ngày Lương thực Thế giới. Công ty tổ chức buffet trưa trước khi đi quay. Trà sữa thứ Sáu cũng tới cùng lúc._
+_Ngày Lương thực Thế giới. Buffet tối ở công ty, cả công ty vừa ăn vừa xem gameshow phát sóng. Trà sữa thứ Sáu cũng tới cùng lúc._
 _Bạn có thẻ ăn trưa công ty, nhưng hôm nay ai cũng ăn miễn phí. Lần đầu tiên bạn không có đặc quyền gì._
 * [🍱 Lấy một đĩa đầy, mang lên phòng dựng cho {editor}.]
     ~ qh("editor", 6)
@@ -278,7 +282,7 @@ _Bạn có thẻ ăn trưa công ty, nhưng hôm nay ai cũng ăn miễn phí. L
 * [📅 Vừa ăn vừa họp "chuẩn bị gameshow, phiên bản bữa trưa".]
     ~ tp_hop(1)
     ~ an(20)
-    sieu_nhan_hong: Ăn đi em! Họp chi mà họp. Ăn no rồi mới có thái độ!
+    sieu_nhan_hong: Ăn đi em! Họp chi mà họp. Ăn no rồi mới coi mình hát sai lời!
     ~ qh("sieu_nhan_hong", -2)
 * [🍜 Ăn cùng bàn với {chi_dai} và {ke_toan}.]
     ~ an(40)

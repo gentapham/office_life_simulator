@@ -33,20 +33,19 @@ dan_dau_tu: Bộ lọc của anh mới lần ra: 80.000 tài khoản fan ảo đ
 
 // ------------------------------------------------------------
 === truong_phong_2810_video_lo_tay ===
-# ngay:28 # gio:16:20 # noi:phong_dung_phim
-_16 giờ 20. Fanpage công ty vừa đăng một video lạ: những đoạn cắt ghép {quan_ly_idol} cầm hai điện thoại, ngủ gật trên xe, cười một mình. Nhạc nền nhẹ. Dòng chữ cuối: "Anh có biết không?"_
-_{editor} ngồi trước màn hình, mặt trắng bệch. Đây là video tỏ tình. Và nó vừa lên fanpage 120.000 người._
+# ngay:28 # gio:08:00 # noi:phong_dung_phim
+_8 giờ sáng. Cả công ty đã biết: 2 giờ 10 đêm qua, fanpage công ty tự đăng một video lạ tên "Thai_final_v12". Những đoạn cắt ghép {quan_ly_idol} cầm hai điện thoại, ngủ gục trong xe, cười một mình. Dòng chữ cuối: "Anh có biết không?"_
+_Video nằm trên trang 6 phút, khoảng 2.000 lượt xem, rồi {it} gỡ. {editor} ngồi trước màn hình, mặt trắng bệch. Đây là video tỏ tình._
 editor: Em… em bấm nhầm tài khoản. Em… *(không nói tiếp được)*
-* [🗑️ "Gỡ ngay. Anh nhận là lỗi của phòng."]
-    _Bạn gỡ video. Bạn đăng một dòng: "Video thử nghiệm của phòng Sản xuất, đăng nhầm. Xin lỗi." Ký tên: {truong_phong}._
+* [🗑️ "Anh nhận là lỗi của phòng."]
+    _Bạn đăng một dòng lên fanpage: "Video thử nghiệm của phòng Sản xuất, đăng nhầm lúc 2:10. Xin lỗi." Ký tên: {truong_phong}._
     ~ qh("editor", 20)
     ~ tp_ghe(-3)
     editor: Anh… nhận lỗi giùm em hả?
     truong_phong: Anh nhận công của em mấy năm. Nhận lỗi một lần cũng được.
-* [🎭 "Để đó. Lượt xem đang lên. Mình gọi là 'video tri ân quản lý'."]
-    ~ follow(10000)
+* [🎭 "Mình gọi nó là 'video tri ân quản lý' cho đỡ ngại nhé."]
     ~ qh("editor", -15)
-    _Video lên 200.000 lượt xem. {editor} không nói gì cả ngày. Tối đó {editor} không tới phòng dựng._
+    _Cái tên "video tri ân quản lý" lan nhanh hơn chính cái video. {editor} không nói gì cả ngày. Tối đó {editor} không tới phòng dựng._
 * [📞 Gọi cho {quan_ly_idol} trước khi ai kịp làm gì.]
     quan_ly_idol: Khoan anh nghe máy… *(im lặng 10 giây)* …Video gì? Anh đang ở LL… à không, đang ở ngoài.
     _{quan_ly_idol} cúp máy. Bạn không biết ai trong hai người đang giấu điều gì to hơn._
@@ -94,7 +93,7 @@ _Lần đầu tiên sau 6 năm đi làm, lịch của bạn trống._
 
 // ------------------------------------------------------------
 === truong_phong_2910_di_tung_ban ===
-# ngay:29 # gio:08:30 # noi:phong_san_xuat
+# noi:phong_san_xuat
 _Bạn đi từng bàn. Không cầm sổ. Không cầm bút._
 designer: Em cần… một ngày không ai sửa gì hết.
 truong_phong: Hôm nay không có wifi. Không ai gửi feedback được.
@@ -165,10 +164,7 @@ _Con trỏ nhấp nháy. Mười giây. Cả phòng nhìn bạn._
     giam_doc: Họp? Anh hỏi em bấm nút nào cơ mà.
     ~ tp_lo(20)
     ~ tp_ghe(-5)
-- { tp_do_lo >= 100:
-    -> truong_phong_tudo_lo_bai
-}
--> END
+- -> END
 
 // ------------------------------------------------------------
 === truong_phong_2910_toi ===
@@ -223,8 +219,8 @@ cho: Grừ… *(nằm chắn trước đống đồ)*
 
 // ------------------------------------------------------------
 === truong_phong_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
-_Họp đánh giá cuối tháng. {giam_doc} ngồi đầu bàn. Bạn đứng lên đọc "Thành tích Phòng Sản xuất"._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ. Họp đánh giá cuối tháng. {giam_doc} ngồi đầu bàn. Bạn đứng lên đọc "Thành tích Phòng Sản xuất"._
 ~ tp_hop(1)
 _Trên slide: MV, gameshow, 6 poster, video Tóp-tóp, phim ngắn. Cột "Người thực hiện" vẫn đang trống. Bạn chưa điền._
 * [🙏 Điền đủ tên: {editor}, {designer}, {bien_kich}, {chua_te_deadline}, {thuc_tap_sinh}. Không có tên mình.]
@@ -239,7 +235,7 @@ _Trên slide: MV, gameshow, 6 poster, video Tóp-tóp, phim ngắn. Cột "Ngư�
         truong_phong: Em… cho mọi người làm việc ạ.
     }
     _Ở cuối bàn, {editor} gật đầu một cái. {designer} lén lau mắt._
-* [🎭 Điền "Phòng Sản xuất – chỉ đạo: Nhật".]
+* [🎭 Điền "Phòng Sản xuất – chỉ đạo: {truong_phong}".]
     ~ tp_nhan_cong()
     ~ tp_ghe(5)
     designer: *(giơ tay)* Dạ… 6 poster đó là em làm ạ.
@@ -248,27 +244,25 @@ _Trên slide: MV, gameshow, 6 poster, video Tóp-tóp, phim ngắn. Cột "Ngư�
 * [📊 Trình chiếu sơ đồ 4 tầng từ ngày 2/10, giờ đã kín chữ.]
     ~ tp_ghe(3)
     _Sơ đồ tháng trước chỉ có chữ. Giờ mỗi ô có thêm một cái tên. {giam_doc} nhìn lâu nhất vào ô "Âm nhạc"._
-- { tp_do_lo >= 100:
-    -> truong_phong_tudo_lo_bai
-}
--> truong_phong_3010_cong_bo
+- _{giam_doc} gập tập hồ sơ: "Nghỉ mười phút. Rồi anh công bố ghế Phó Giám đốc."_
+-> END
 
 // ------------------------------------------------------------
 === truong_phong_3010_cong_bo ===
-# ngay:30 # gio:10:30 # noi:phong_hop_tang_2 # bat_buoc
-{ tp_ghe_pho >= 70 && tp_do_lo < 50 && tp_mv_dung_han && tp_gameshow_xong && nguoi_theo_doi >= 500000:
+# ngay:30 # gio:14:40 # noi:phong_hop_tang_2 # bat_buoc
+{ tp_ghe_pho >= 55 && tp_do_lo < 50 && tp_mv_dung_han && tp_gameshow_xong:
     -> chon_nhat
 - else:
     -> chon_long
 }
 
 = chon_nhat
-giam_doc: Ghế Phó Giám đốc. Anh đề xuất… {truong_phong}. Em có ý kiến gì không? Anh không ép, tùy em.
+giam_doc: Ghế Phó Giám đốc. Anh đề xuất… {truong_phong}. Quyết định có hiệu lực sau Đại Nhạc Hội. Em có ý kiến gì không? Anh không ép, tùy em.
 _Cả phòng quay lại nhìn bạn. Rồi nhìn {con_ong_chau_cha}. {con_ong_chau_cha} đang mỉm cười._
 * [🪑 "Em cảm ơn anh. Em nhận ạ."]
     ~ tp_pho_giam_doc = "tp"
     _Tiếng vỗ tay. Bạn ngồi xuống. Mười bốn bản nháp, một tháng họp. Giờ thì xong._
-* {tp_mo_phong_thu && qh_con_ong_chau_cha >= 60} [🔒 "Em đề cử thêm {con_ong_chau_cha}. {con_ong_chau_cha} lo âm nhạc, em lo sản xuất."]
+* {tp_mo_phong_thu && qh_con_ong_chau_cha >= 40} [🔒 "Em đề cử thêm {con_ong_chau_cha}. {con_ong_chau_cha} lo âm nhạc, em lo sản xuất."]
     ~ tp_de_cu_long = true
     -> long_tra_loi
 - -> END
@@ -276,7 +270,7 @@ _Cả phòng quay lại nhìn bạn. Rồi nhìn {con_ong_chau_cha}. {con_ong_ch
 = chon_long
 giam_doc: Ghế Phó Giám đốc. Anh đề xuất… {con_ong_chau_cha}. Cháu… à, em có ý kiến gì không? Anh không ép, tùy em.
 _Bạn đặt bút xuống. Cả phòng nín thở. {con_ong_chau_cha} nhìn chú, rồi nhìn sang bạn._
-* {tp_mo_phong_thu && qh_con_ong_chau_cha >= 60} [🔒 "Em đồng ý đề cử {con_ong_chau_cha}. {con_ong_chau_cha} có một bài hát mà cả công ty nên nghe."]
+* {tp_mo_phong_thu && qh_con_ong_chau_cha >= 40} [🔒 "Em đồng ý đề cử {con_ong_chau_cha}. {con_ong_chau_cha} có một bài hát mà cả công ty nên nghe."]
     ~ tp_de_cu_long = true
     -> long_tra_loi
 * [🪑 "Em phản đối. {con_ong_chau_cha} đi trễ cả tháng."]
@@ -288,7 +282,7 @@ _Bạn đặt bút xuống. Cả phòng nín thở. {con_ong_chau_cha} nhìn ch�
     -> long_nhan_hay_khong
 
 = long_tra_loi
-{ tp_giup_long_trinh_bay && qh_con_ong_chau_cha >= 60:
+{ (tp_giup_long_trinh_bay || tp_biet_long_khong_muon_ghe) && qh_con_ong_chau_cha >= 40:
     con_ong_chau_cha: Cháu cảm ơn. Nhưng cháu đề cử ông {truong_phong}. Ổng làm việc thật. Cháu chỉ xin lo phần âm nhạc.
     ~ tp_long_de_cu_tp = true
     _Hai lá đơn đề cử nằm trên bàn, chỉ vào nhau như hai mũi tên trên sơ đồ của bạn._
@@ -296,7 +290,7 @@ _Bạn đặt bút xuống. Cả phòng nín thở. {con_ong_chau_cha} nhìn ch�
     ~ tp_pho_giam_doc = "ca_hai"
 - else:
     con_ong_chau_cha: Cháu hông nhận đâu. Cháu chỉ muốn làm nhạc. Ông {truong_phong} xứng đáng hơn.
-    giam_doc: …Thế thì {truong_phong}.
+    giam_doc: …Thế thì {truong_phong}. Anh tin người mà {con_ong_chau_cha} tin.
     ~ tp_pho_giam_doc = "tp"
 }
 -> END
@@ -339,50 +333,28 @@ hong_hot: Ối dồi ôi, đúng là hóa trang thành chính mình!
 
 // ------------------------------------------------------------
 === truong_phong_3110_canh_ga ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Bạn đeo tai nghe đạo diễn ở cánh gà. Màn mở đầu: phim ngắn "Người Hùng Không Tên". Tiếp theo: video "16 năm" của {editor}._
+# ngay:31 # gio:19:15 # noi:san_khau_dem_hong # bat_buoc
+_19 giờ 15. Mười lăm phút nữa mở màn. Bạn đeo tai nghe đạo diễn ở cánh gà. Cue sheet: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}, rồi tiết mục chính._
 { qh_it >= 10 && qh_chi_dai >= 10:
-    _Âm thanh chuẩn. Ánh sáng chuẩn. {it} giơ ngón cái. {chi_dai} điều phối như một vị tướng._
+    _Chạy thử lần cuối. Âm thanh chuẩn. Ánh sáng chuẩn. {it} giơ ngón cái. {chi_dai} điều phối như một vị tướng._
     ~ tp_dao_dien_dem_hong_ok = true
 - else:
-    _Micro của {sieu_nhan_hong} rè rè. Đèn sân khấu tắt một nhịp. Bộ đàm của {chi_dai} toàn tiếng gió._
+    _Chạy thử lần cuối. Micro của {sieu_nhan_hong} rè rè. Đèn sân khấu tắt một nhịp. Bộ đàm của {chi_dai} toàn tiếng gió._
+}
+{ tp_giup_long_trinh_bay:
+    _Trên cue sheet, tiết mục chính có thêm một dòng viết tay: "Nhạc & lời: {con_ong_chau_cha}". Ở cánh gà bên kia, {con_ong_chau_cha} đang nắm chặt rèm, giống hệt {idol_het_thoi} hôm gameshow._
+    ~ chung_hat_hong_la_thai_do = true
 }
 _Ở bàn điều phối, {thanh_xin_nghi} lén nhìn đồng hồ: 20:00 là chung kết "Giọng Ca Ước Mơ" ở Đài Tivi Hóng._ # hen_gio:6
-* [🎤 "Sơn. Đi đi. Phần của em anh lo."]
+* [🎤 "{thanh_xin_nghi}. Đi đi. Phần của em anh lo."]
     ~ qh("thanh_xin_nghi", 20)
     thanh_xin_nghi: Anh… anh biết hả?
     truong_phong: Ai cũng cần một sân khấu.
     ~ cang_thang(5)
-* [📋 "Sơn, em ở lại. Đêm nay cần đủ người."]
+* [📋 "{thanh_xin_nghi}, em ở lại. Đêm nay cần đủ người."]
     ~ qh("thanh_xin_nghi", -15)
     _{thanh_xin_nghi} ngồi xuống, mắt dán vào điện thoại, nơi một chương trình khác đang gọi tên mình._
 * [⏱️ (Không chọn kịp)]
     _Bạn quay lại thì ghế của {thanh_xin_nghi} đã trống. Trên ghế có tờ giấy: "Em xin phép… bà ngoại…"_
-- { tp_giup_long_trinh_bay:
-    _Tới tiết mục chính. Nhạc dạo của "Hồng Là Thái Độ" vang lên. {sieu_nhan_hong} cầm micro. Bạn nhìn sang cánh gà bên kia: {con_ong_chau_cha} đang nắm chặt rèm, giống hệt {idol_het_thoi} hôm gameshow._
-    ~ follow(100000)
-}
-{ tp_dao_dien_dem_hong_ok:
-    ~ follow(100000)
-    _Cả khán đài hát theo điệp khúc. Bạn đứng trong cánh gà, tay cầm tai nghe, không nói một lời nào suốt 4 phút. Chương trình tự chạy. Đó là điều tuyệt vời nhất một đạo diễn có thể làm._
-- else:
-    ~ follow(40000)
-    _Chương trình chạy, khập khiễng mà vẫn chạy. Mỗi lần sự cố, bạn bấm bộ đàm: "Tiếp đi." Không ai đề nghị họp._
-}
+- _Bạn chỉnh lại tai nghe. Không còn ai đề nghị họp. Chỉ còn một chương trình phải chạy từ đầu tới cuối._
 -> END
-
-// ------------------------------------------------------------
-=== truong_phong_3110_sau_dem_hong ===
-# ngay:31 # gio:22:30 # noi:san_khau_dem_hong # bat_buoc
-_22 giờ 30. Đèn sân khấu tắt dần. Pháo giấy hồng nằm đầy dưới chân. Cả công ty ngồi bệt xuống sàn sân khấu._
-_Bạn tháo bộ hóa trang cuốn lịch. Từng trang rơi xuống: 1/10, 2/10… 29/10 trống trơn, 30/10, 31/10._
-* [📝 Nhặt trang 29/10 lên, cất vào túi áo.]
-    _Ngày duy nhất trong tháng bạn không họp. Có lẽ là ngày bạn làm được nhiều nhất._
-    ~ cang_thang(-10)
-* [🤝 Ngồi xuống cạnh cả phòng Sản xuất.]
-    ~ tp_ca_phong(5)
-    thuc_tap_sinh: Dạ… anh {truong_phong} ơi, mai mình có họp không ạ?
-    truong_phong: Mai Chủ nhật, {thuc_tap_sinh} ạ.
-* [📱 Mở điện thoại xem số người theo dõi.]
-    _{nguoi_theo_doi} người. Bạn tắt màn hình. Hôm nay bạn không muốn đếm gì nữa._
-- -> truong_phong_3010_danh_gia

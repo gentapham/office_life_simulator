@@ -301,7 +301,7 @@
 - vai == "ran_doc" && r <= 2:
     hong_hot: Ê hàng xóm! Tối qua ông có nghe tui livestream hông? Tường mỏng quá ha.
 - r == 1 && ngay == 9:
-    hong_hot: MV ra rồi! Ối dồi ôi, bình luận nổ tung! Có người khen, có người chửi, mà chửi cũng là view!
+    hong_hot: 8 giờ tối nay ra MV! Ối dồi ôi, tui canh sẵn để đọc bình luận! Có người khen, có người chửi, mà chửi cũng là view!
 - r == 1 && ngay == 15:
     hong_hot: Mất điện là mùa vàng của hóng hớt đó {g}. Ngồi pantry đi, chuyện tự tới.
 - r == 1 && ngay == 21:
@@ -1476,8 +1476,8 @@
     - else:
         dan_dau_tu: Chào {g}! Hôm nay trời đẹp ha, đẹp như… cái chart tuần sau.
     }
-- r == 1 && ngay == 9:
-    dan_dau_tu: Có đồng coin mới tên "Hồng Coin" nè. Mang tên Siêu Nhân Hồng. Đây là định mệnh!
+- r == 1 && ngay == 10:
+    dan_dau_tu: Đêm qua có đồng coin mới tên "Hồng Coin" nè. Mang tên Siêu Nhân Hồng. Đây là định mệnh!
 - r == 1 && ngay == 17:
     dan_dau_tu: x10! X MƯỜI! Tối nay {x} bao cả team hải sản! Lần này là lên thật!
 - r == 1 && ngay >= 18 && ngay <= 20:
@@ -1722,9 +1722,9 @@
 - r == 1 && ngay == 4:
     sieu_nhan_hong: {cho} đội nơ hồng kìa! Giống anh ghê! Sao nó nhìn anh như vậy?
 - r == 1 && ngay == 6:
-    sieu_nhan_hong: Xin lỗi vụ bỏ buổi chụp nha! Bà cụ kẹt xe lăn ở lề đường, anh hông đứng yên được.
+    sieu_nhan_hong: Xin lỗi vụ bỏ buổi chụp nha! Xe chè của Bà Bảy kẹt ổ gà ở đầu Hẻm 69, anh hông đứng yên được. Mà chè ngon lắm.
 - r == 1 && ngay == 16:
-    sieu_nhan_hong: Gameshow hôm nay! Nếu MC hỏi tháo mũ… *(im lặng)* …thì anh tạo dáng.
+    sieu_nhan_hong: Hai giờ chiều quay gameshow! Nếu MC hỏi tháo mũ… *(im lặng)* …thì anh tạo dáng.
 - r == 1 && ngay == 23:
     sieu_nhan_hong: Hôm nay anh 31 tuổi! Bánh kem hồng ba tầng! *(nhìn về phía cổng)* …{cho} có biết hông ta?
 - r == 1 && ngay >= 27 && ngay <= 30:

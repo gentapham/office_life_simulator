@@ -420,7 +420,7 @@ cho: Gâu? *(đánh hơi túi xách bạn)*
         _Túi xách "hàng hiệu" chỉ có son và danh thiếp. {cho} nhìn bạn như nhìn một hợp đồng không có tiền._
         ~ qh("cho", -2)
     }
-+ [💁 "Tuất ơi, tin chị đi, chị làm em thành gương mặt đại diện cho tiệm thú cưng."]
++ [💁 "{cho} ơi, tin chị đi, chị làm em thành gương mặt đại diện cho tiệm thú cưng."]
     cho: *(nghiêng đầu)* …Gâu?
     _{cho} chỉ hiểu chữ "ĂN". Câu của bạn không có chữ "ĂN"._
 + [🤝 Ngồi xuống bậc thềm, xoa đầu {cho}.]

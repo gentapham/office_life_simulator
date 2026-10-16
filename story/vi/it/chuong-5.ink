@@ -321,7 +321,7 @@ bac_bao_ve: Cháu cứ sửa đi. Bác pha trà.
     bac_bao_ve: Cháu là đứa duy nhất bác cho vào nhà này sửa đồ đấy.
     ~ qh("bac_bao_ve", 10)
     ~ it_lt(5)
-* {qh_bac_bao_ve >= 50} [🔒 "Bác ơi, mấy cái thư tay bác nhận… con thấy đóng dấu bưu điện nước ngoài."]
+* {qh_bac_bao_ve >= 40} [🔒 "Bác ơi, mấy cái thư tay bác nhận… con thấy đóng dấu bưu điện nước ngoài."]
     _Bác {bac_bao_ve} đặt ấm trà xuống. Im lặng rất lâu. {cho} cũng im._
     bac_bao_ve: Bác không thấy gì đâu. Mà cháu cũng không thấy gì nhé.
     it: Dạ. Con không thấy.

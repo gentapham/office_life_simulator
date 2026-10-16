@@ -186,8 +186,8 @@ _Không micro. Không loa. Không đèn sân khấu. Không ai thấy mặt bạ
 // ------------------------------------------------------------
 === idol_het_thoi_1610_buffet ===
 # ngay:16 # gio:11:40 # noi:tang_1
-_Ngày Lương thực Thế giới. Liên hoan buffet ở công ty. Điện đã có lại. {thuc_tap_sinh} trả lại sạc cho ai thì không ai nhớ._
-_Chiều nay Siêu Nhân Hồng đi gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng. Anh {quan_ly_idol} đưa bạn một tấm thẻ: "KHÁCH MỜI PHỤ"._
+_Ngày Lương thực Thế giới. Trưa, căn tin dọn thử món cho buổi buffet tối nay. Điện đã có lại. {thuc_tap_sinh} trả lại sạc cho ai thì không ai nhớ._
+_14 giờ chiều nay Siêu Nhân Hồng quay gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng, 20 giờ phát sóng. Anh {quan_ly_idol} đưa bạn một tấm thẻ: "KHÁCH MỜI PHỤ"._
 quan_ly_idol: Em đi với anh nha. Có phần "Hit Một Thời". Anh chưa biết đài định làm gì, nhưng em có mặt là tốt.
 * [🕶️ "Khách mời phụ? Em biết anh là ai… à, anh biết em là ai mà."]
     quan_ly_idol: *(cười)* Biết. Biết lâu rồi. Vì vậy mới kêu em đi.
@@ -203,12 +203,12 @@ quan_ly_idol: Em đi với anh nha. Có phần "Hit Một Thời". Anh chưa bi�
 
 // ------------------------------------------------------------
 === idol_het_thoi_1610_canh_ga ===
-# ngay:16 # gio:20:15 # noi:dai_tivi_hong # bat_buoc
-_Đài Tivi Hóng, trường quay số 2. Phần thi "Hit Một Thời". MC vest bóng hô to: "Xin mời Siêu Nhân Hồng thể hiện một bản hit năm 2015!"_
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14:00. Đài Tivi Hóng, trường quay số 2. Phần thi "Hit Một Thời". MC vest bóng hô to: "Xin mời Siêu Nhân Hồng thể hiện một bản hit năm 2015!"_
 _Nhạc dạo vang lên. Là bài của bạn._
 _Bạn đứng trong cánh gà, nghe bài của mình qua giọng người khác. {sieu_nhan_hong} hát được nửa bài thì vấp: "…thích ăn… khoai chiên!"_
 _Khán giả cười ồ._
-quan_ly_idol: *(nói nhỏ, tay vẫn cầm hai điện thoại)* {idol_het_thoi}, đừng làm gì nha em. Đài đang quay trực tiếp. Chuyện này để anh lo. # hen_gio:5
+quan_ly_idol: *(nói nhỏ, tay vẫn cầm hai điện thoại)* {idol_het_thoi}, đừng làm gì nha em. Đài đang quay, tối nay phát. Chuyện này để anh lo. # hen_gio:5
 * [😤 Bước ra sân khấu, giật micro: "CHUỐI chiên!"]
     ~ phat_gianh()
     { RANDOM(1, 10) <= 5:
@@ -218,7 +218,7 @@ quan_ly_idol: *(nói nhỏ, tay vẫn cầm hai điện thoại)* {idol_het_thoi
         ~ phat_pha_chien_dich = phat_pha_chien_dich + 1
         _Hôm sau đài gửi văn bản: cấm {idol_het_thoi} xuất hiện trên sóng 1 năm._
     - else:
-        _Hai anh bảo vệ đài lôi bạn ra. Micro rơi xuống sàn, kêu "bụp". Clip "Ông chú giật micro" lên Tóp-tóp sau 7 phút._
+        _Hai anh bảo vệ đài lôi bạn ra. Micro rơi xuống sàn, kêu "bụp". Khán giả trường quay quay lại, clip "Ông chú giật micro" lên Tóp-tóp sau 7 phút._
         ~ phat_nt(-3)
         ~ scandal()
         ~ follow(-10000)
@@ -262,7 +262,7 @@ _Về nhà. Gameshow đã phát sóng xong. Tóp-tóp chỉ toàn clip "khoai ch
     _Bạn lướt bình luận. Ai cũng nói về "khoai chiên". Không ai nói về bạn._
 }
 _Tin nhắn từ {editor}, 23:14: "Dạ anh {idol_het_thoi}, em dựng highlight gameshow. Em để cảnh nào mở đầu ạ?"_
-* [😇 "Cảnh Nguyên hát sai lời. Vui, dễ lan."]
+* [😇 "Cảnh {sieu_nhan_hong} hát sai lời. Vui, dễ lan."]
     editor: Dạ. *(một lúc sau)* Anh {idol_het_thoi}… anh tốt ghê.
     ~ follow(10000)
     ~ qh("editor", 5)

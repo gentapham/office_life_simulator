@@ -8,6 +8,8 @@
 // ------------------------------------------------------------
 === cho_0110_buoi_sang_o_choi ===
 # ngay:1 # gio:06:30 # noi:choi_bao_ve # bat_buoc
+// Kho dưới gầm cầu thang có sẵn 6 món, trong đó có chiếc USB không nhãn nhặt ở bãi xe hồi tháng 9
+~ nhan(usb_khong_nhan)
 _6 giờ 30. Cánh cổng sắt kêu "kééét". Đó là tiếng chuông báo thức của bạn._
 _Bạn duỗi chân trước, duỗi chân sau, ngáp một cái dài tới mức thấy cả cuống họng của chính mình._
 bac_bao_ve: Bla bla… TUẤT… bla… XÚC XÍCH… bla bla. # phu_de:Dậy rồi đấy à, {cho}. Lương hôm nay đây, hai cây xúc xích. Ăn từ từ thôi.
@@ -62,8 +64,8 @@ bac_bao_ve: Bla. Bla bla… bla. # phu_de:Ừ. Gửi xe bên kia, còn 2 phút n
 
 // ------------------------------------------------------------
 === cho_0110_ke_thu_hong ===
-# ngay:1 # gio:09:20 # noi:cong_cong_ty # bat_buoc
-_9 giờ 20. Một chiếc xe màu hồng đỗ xịch trước cổng. Cửa mở ra._
+# ngay:1 # gio:08:50 # noi:cong_cong_ty # bat_buoc
+_8 giờ 50. Một chiếc xe màu hồng đỗ xịch trước cổng. Cửa mở ra._
 _Rồi cái mùi đó ập tới. Mùi bánh chuối chiên trộn với nước hoa hồng, đậm tới mức bạn hắt xì ba cái liên tiếp._
 _Một người mặc bộ đồ hồng từ đầu tới chân, đội một cái mũ tròn hồng, bước qua cổng. Bạn chưa từng thấy thứ gì hồng tới mức đó. Kể cả cái nắp bút trong kho của bạn._
 _Lông gáy bạn dựng đứng._
@@ -108,9 +110,9 @@ _Bạn nhìn theo bóng hồng khuất sau cầu thang. Bạn chưa biết tên 
 
 // ------------------------------------------------------------
 === cho_0110_hoa_cho_bac ===
-# ngay:1 # gio:15:30 # noi:choi_bao_ve
-_Chiều. Cả đám người từ trong công ty kéo ra chòi, tay cầm hoa, tay cầm ly trà sữa._
-_Hôm nay họ uống trà sữa rất nhiều. Máy pha cà phê hỏng, mà lại có "5 tỷ" gì đó. Bạn không biết 5 tỷ là bao nhiêu xúc xích, nhưng ai cũng cười._
+# ngay:1 # gio:08:30 # noi:choi_bao_ve
+_8 giờ 30. Cả đám người từ trong công ty kéo ra chòi, tay cầm hoa, tay cầm ly cà phê sữa._
+_Hôm nay ai cũng mặc đẹp hơn mọi ngày. Nghe nói 9 giờ có ký "5 tỷ" gì đó. Bạn không biết 5 tỷ là bao nhiêu xúc xích, nhưng ai cũng cười._
 chi_dai: Bla bla… BÁC… bla bla bla! # phu_de:Bác {bac_bao_ve} ơi, hôm nay Ngày Người cao tuổi, cả công ty tặng bác nè!
 thuc_tap_sinh: Bla bla… BÁC… bla. # phu_de:Dạ con chúc bác mạnh khỏe sống lâu ạ!
 bac_bao_ve: Bla… bla bla… bla. # phu_de:Ơ… các cháu bày vẽ làm gì. Bác ngại lắm.
@@ -126,8 +128,8 @@ _Mọi người có quà cho bác. Bạn thì không._
     ~ ch_cung(4)
 * [🦴 Ngồi ngay ngắn trước người đang cầm ly trà sữa. Mắt cún.]
     _Bạn nhắm vào {thuc_tap_sinh}. Người này mềm lòng nhất, mùi cũng hiền nhất._
-    thuc_tap_sinh: Bla bla… TUẤT… KHÔNG… bla. # phu_de:Dạ {cho} ơi, trà sữa không tốt cho chó đâu ạ. Anh cho em… trân châu thôi nha?
-    _Ba viên trân châu rơi xuống. Dẻo, ngọt, dính răng. Đáng giá từng giây ngồi ngay ngắn._
+    thuc_tap_sinh: Bla bla… TUẤT… KHÔNG… bla. # phu_de:Dạ {cho} ơi, cà phê không tốt cho chó đâu ạ. Anh cho em… nửa cái bánh bao thôi nha?
+    _Nửa cái bánh bao rơi xuống. Mềm, ngọt, còn ấm. Đáng giá từng giây ngồi ngay ngắn._
     ~ ch_an(5)
     ~ qh("thuc_tap_sinh", 3)
 * [😴 Nằm dưới ghế bố của bác, nhìn mọi người.]
@@ -236,7 +238,7 @@ _Sạch sẽ. Thơm tho. Mũi bạn giờ chỉ ngửi thấy mùi chanh. Cả t
 
 // ------------------------------------------------------------
 === cho_0410_no_hong ===
-# ngay:4 # gio:10:30 # noi:san_cong_ty # bat_buoc
+# ngay:4 # gio:10:00 # noi:san_cong_ty # bat_buoc
 _Tắm xong chưa phải là hết. Bác mang ra một cái áo nhỏ và một cái nơ._
 _Cái nơ màu hồng._
 bac_bao_ve: Bla bla… bla… bla bla. # phu_de:Các cháu bảo tháng này cái gì cũng phải có tí hồng. Chịu khó tí, {cho}.
@@ -271,8 +273,8 @@ _Cửa sổ tầng 2 im lặng rất lâu._
 
 // ------------------------------------------------------------
 === cho_0410_tran_dau_tien ===
-# ngay:4 # gio:14:00 # noi:cong_cong_ty # bat_buoc
-_14 giờ. Chiếc xe hồng lại tới. Mùi bánh chuối chiên và nước hoa hồng lại ập tới. Bạn đang mặc áo, đội nơ, và không có đường lui._
+# ngay:4 # gio:10:40 # noi:cong_cong_ty # bat_buoc
+_10 giờ 40. Chiếc xe hồng lại tới. Mùi bánh chuối chiên và nước hoa hồng lại ập tới. Bạn đang mặc áo, đội nơ, và không có đường lui._
 sieu_nhan_hong: Bla bla bla! Gâu! Gâu gâu! Bla bla… TUẤT… bla! # phu_de:Trời ơi! Gâu! Gâu gâu! {cho} ơi, nơ của em hồng giống anh nè! Mình là đồng đội rồi!
 _Đồng đội. Bạn không hiểu từ đó, nhưng bạn hiểu giọng điệu đó._
 _Người đồ hồng cúi xuống sát mặt bạn, hai bàn tay đeo găng hồng chống đầu gối. Ở phía sau, {hong_hot} đã giơ điện thoại lên._
@@ -327,7 +329,7 @@ _📖 Từ mới: HỒNG. Nghĩa: kẻ thù._
 # ngay:4 # gio:19:30 # noi:choi_bao_ve
 _Tối. Bác cởi cái áo nhỏ cho bạn, gấp lại, cất vào ngăn bàn. Cái nơ thì bác vứt luôn. Bác hiểu bạn._
 _Rồi bác lấy ra một cây xúc xích. Cây thứ ba trong ngày. Chưa từng có tiền lệ._
-bac_bao_ve: Bla bla… TUẤT… bla bla… bla. # phu_de:Hôm nay là ngày bác nhặt được mày đấy, {cho}. Mưa to lắm. Mày bé bằng cái ca nước.
+bac_bao_ve: Bla bla… TUẤT… bla bla… bla. # phu_de:Hôm nay là ngày bác nhặt được mày đấy, {cho}. Năm 2020, mưa to lắm. Mày bé bằng cái ca nước. Sáu năm rồi.
 bac_bao_ve: Bla bla… bla… XÚC XÍCH. # phu_de:Thôi, coi như sinh nhật. Xúc xích đây.
 * [🦴 Ăn chậm thôi, lần này ăn thật chậm.]
     ~ ch_an(20)

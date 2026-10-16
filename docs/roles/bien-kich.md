@@ -99,25 +99,25 @@ Oánh viết **câu chuyện** của Siêu Nhân Hồng. Người ta follow mộ
 ### Chương 3: "Trong Bóng Tối, Ai Cũng Là Nhà Văn" (13/10 – 16/10)
 - **13/10 (Ngày Doanh nhân):** Nhi đọc bài khen Thắng 15 phút. Oánh nhận ra một nửa bài là của mình viết năm ngoái. Lần đầu Oánh bị "tham khảo" ngược.
 - **15/10 (mất điện):** cả công ty ngồi ở pantry kể chuyện. Oánh viết bằng đèn điện thoại, Cảm Hứng đầy. Rồi Duy kể chuyện ngày nghỉ việc ở ngân hàng, xe chết máy giữa mưa, và người mặc đồ hồng đẩy xe. Oánh làm rơi bút.
-- **16/10 (gameshow):** bộ câu hỏi của Oánh lên sóng. Nếu Hiếu đã tráo, Nguyên gặp câu *"Kể tên 5 loại chó ghét bạn nhất"*.
+- **16/10 (gameshow, quay 14:00, phát 20:00):** bộ câu hỏi của Oánh được quay. Nếu Hiếu đã tráo câu cuối, Nguyên gặp câu *"Hồi nhỏ anh từng bắt nạt ai chưa?"* và kể chuyện nhốt một đứa nhỏ trong nhà kho: tối đó #XinLỗiNhàKho lên xu hướng.
 
 ### Chương 4: "Cuốn Sổ Trên Xe Buýt" (17/10 – 20/10)
 - **17/10 (Vũng Tàu):** Oánh để quên cuốn sổ bìa da trên xe buýt đoàn. ⏱️ Quay lại tìm ngay, hay giả vờ bình tĩnh?
 - Ai nhặt được cuốn sổ tùy lượt chơi: **Duy** (trả lại, không đọc), **Ngân** (đọc hết, chưa kể ai… chưa), hoặc **Hiếu** (đọc, chụp ảnh, cất đi).
 - Đêm lửa trại, trò "nói thật": Oánh có thể kể thật chuyện ý tưởng phim.
-- **20/10 (sinh nhật công ty):** Oánh viết bài phát biểu cho Thắng. Trong bài có nhắc tới "người sáng lập ở phương xa". Bác Bình nghe tới đó thì cúi đầu.
+- **20/10 (sinh nhật công ty):** 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G", rồi Thắng đọc bài phát biểu Oánh viết. Trong bài có nhắc tới "người sáng lập ở phương xa". Bác Bình nghe tới đó thì cúi đầu.
 
 ### Chương 5: "Kịch Bản Giả Vờ Làm Việc" (21/10 – 27/10)
 - **22/10 (kiểm tra thuế):** Thương nhờ Oánh viết "kịch bản" cho cả công ty: ai ngồi đâu, nói câu gì khi thanh tra đi ngang, Chương phải tắt chart coin trong bao lâu. Minigame đặc biệt: đạo diễn cả tầng 1 diễn cảnh "làm việc chăm chỉ".
 - **23/10 (sinh nhật Nguyên):** kịch bản livestream. Có viết sẵn phương án "Tuất phá bánh" hay không quyết định tai nạn thành meme dễ thương hay thành thảm họa.
-- **24/10:** Hương tổ chức "hội nghị hòa giải". Oánh và Quỳnh bị xếp ngồi cạnh nhau.
-- **26/10:** chiếu thử bản dựng "Người Hùng Không Tên" cho nội bộ. Duy ngồi hàng cuối. Ở phút thứ 9, cảnh đẩy xe trong mưa hiện lên. Duy quay sang nhìn Oánh.
+- **24/10 (14:00, phòng họp tầng 2):** Hương tổ chức "hội nghị hòa giải". Oánh và Quỳnh bị xếp ngồi cạnh nhau.
+- **26/10 (16:00, phòng họp tầng 2):** chiếu thử bản dựng "Người Hùng Không Tên" cho nội bộ. Duy ngồi hàng cuối. Ở phút thứ 9, cảnh đẩy xe trong mưa hiện lên. Duy quay sang nhìn Oánh.
 - **27/10:** cùng ngày LL ra tay với Nguyên, Lưu Lực nhắn riêng cho Oánh: *"Nghe nói chị đang viết một cuốn sách rất hay về G-Entertainment. Bên em trả 50 triệu, mua bản quyền."*
 
 ### Chương 6: "Màn Ảnh Lớn" (28/10 – 31/10)
 - **29/10 (wifi sập):** cả công ty không làm được gì. Chỉ có Oánh vẫn gõ được, bằng máy đánh chữ mang từ nhà tới. Người ta xúm quanh nghe tiếng lạch cạch như nghe nhạc.
-- **30/10:** hạn chót nộp **danh sách ghi tên cuối phim** (credit). Ô "Ý tưởng / Kịch bản" đang để trống. Oánh điền gì?
-- **31/10 (Đại Nhạc Hội Siêu Nhân):** phim chiếu mở màn trước cả nghìn người. Dòng chữ cuối phim hiện ra. Mọi lựa chọn trong 30 ngày quyết định dòng chữ đó, và kết thúc của Oánh.
+- **30/10:** 9:00 hạn chót nộp **danh sách ghi tên cuối phim** (credit). Ô "Ý tưởng / Kịch bản" đang để trống. Oánh điền gì? 14:00 họp đánh giá (Phó Giám đốc, danh sách cắt giảm; nếu đã ghi công, tên Duy được gạch khỏi danh sách).
+- **31/10 (Đại Nhạc Hội Siêu Nhân, 19:30):** phim chiếu mở màn. Dòng chữ cuối phim hiện ra theo ô credit Oánh đã điền. Kết thúc của Oánh chốt sau đêm diễn.
 
 ---
 
@@ -198,16 +198,16 @@ Oánh viết **câu chuyện** của Siêu Nhân Hồng. Người ta follow mộ
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Kết thúc được chốt **sau Đại Nhạc Hội Siêu Nhân** (31/10, 23:30, cảnh `bien_kich_3010_danh_gia`), dùng mọi lựa chọn tới hết 31/10, và đọc `ket_thuc_su_nghiep` / `chung_cong_ty_song` khi nhắc tới công ty. Phim "Người Hùng Không Tên" **luôn được chiếu** ở Đại Nhạc Hội (cảnh chung); ô credit ngày 30/10 đặt `chung_phim_ghi_ten_duy` nên dòng chữ trên màn hình lớn khớp với lựa chọn của Oánh. Thứ tự xét: bí mật, 2 vui, 3 buồn, rồi mặc định (Mượn > Thật mà không ghi công thì Đạo Ý Tưởng, còn lại Không Cần Mượn).
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🎬 **Đồng Tác Giả** | Đã Ghi Công cho Duy trước 30/10, ô credit ghi đúng tên Duy, phim chiếu thành công trong Đại Nhạc Hội Siêu Nhân | Phim kết thúc. Trên màn hình lớn hiện dòng chữ: *"Ý tưởng: Duy. Kịch bản: Oánh & Duy."* Cả nghìn người vỗ tay. Duy 30 tuổi, thực tập sinh, đứng dậy cúi chào và khóc như con nít. Oánh không vỗ tay, vì đang bận ghi vào sổ câu đầu tiên của một kịch bản mới, lần này hoàn toàn của mình |
-| 2 | 😄 ✍️ **Kịch Bản Không Cần Mượn** | Ý Tưởng Thật ≥ 70, không "tham khảo" lần nào sau 15/10, Cảm Hứng ≥ 50 vào ngày 30/10, chiến dịch Siêu Nhân Hồng thành công | Họp đánh giá, Nhật đọc tên: *"Trưởng nhóm Biên kịch: Oánh."* Quỳnh là người vỗ tay đầu tiên, rồi nói nhỏ: *"Lần này của bà thiệt hả?"* Oánh gật. Tối đó ở gác mái, Oánh treo lên tường tờ giấy: *"Đây không phải cảm hứng. Đây là của tui."* Mèo Bí cào rách một góc |
-| 3 | 😄 🔒 **Kết thúc bí mật: Công Ty Là Gia Đình** | Viết xong tiểu thuyết (≥ 200 trang), xin được chữ ký đồng ý của ít nhất 10 đồng nghiệp có tên trong sách (hoặc đổi tên họ), từ chối LL, Độ Lộ chưa bao giờ đạt 100 | Ba tháng sau. Hiệu sách ở Phố Cũ xếp hàng dài. Cuốn *"Công Ty Là Gia Đình"* bán hết đợt in đầu. Người xếp hàng xin chữ ký là cả công ty: ai cũng mở sách ra tìm xem mình là nhân vật nào. Thắng đọc xong, đóng sách lại: *"Anh không ép, tùy em… nhưng tập 2 cho anh làm nhân vật chính nhé."* |
-| 4 | 😢 📎 **Đạo Ý Tưởng Ngày Ra Mắt** | Ý Tưởng Mượn > Ý Tưởng Thật vào ngày 31/10, không Ghi Công cho Duy, và có người biết chuyện (Ngân, Hiếu, Quỳnh hoặc con rắn thứ hai) | Đại Nhạc Hội Siêu Nhân, phim vừa chiếu xong, màn hình lớn hiện dòng *"Kịch bản: Oánh"*. Rồi màn hình nháy một cái, hiện ảnh chụp trang sổ ghi *"Ý tưởng của Duy (2/10)"*. Cả khán đài quay lại nhìn. Duy ở hàng cuối đứng dậy, lắc đầu, nói *"Dạ không sao đâu ạ"*. Điều đó còn đau hơn |
-| 5 | 😢 📖 **Tiểu Thuyết Bị Lộ** | Độ Lộ Bản Thảo đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc đã bán sách cho LL | Bản chụp tiểu thuyết lan khắp group Zalo-lô. Ai cũng đọc được mình trong đó, với tên thật: Thắng "ký mà không đọc", Chương "lúc nào cũng sắp giàu", Nhật "họp để bàn về việc giảm họp". Tuấn mời Oánh đi "uống trà". Oánh về gác mái, mèo Bí nằm ngủ trên máy đánh chữ. Lần đầu tiên, Oánh không có gì để viết |
-| 6 | 😢 🌧️ **Trang Giấy Trắng** | Cảm Hứng về 0 và giữ ở 0 tới ngày 30/10, hoặc phim không hoàn thành kịch bản trước 26/10 | Phim ngắn bị hủy, thay bằng 15 phút Thắng phát biểu. Đêm 31/10, cả công ty ở Sân khấu Đại Nhạc Hội Siêu Nhân. Oánh ngồi một mình ở gác mái, trước tờ giấy trắng trên máy đánh chữ. Bên ngoài cửa sổ, pháo hoa hồng nổ. Oánh gõ một chữ, rồi xóa. Mèo Bí nhìn Oánh, như muốn nói gì đó. Mèo thì không nói được |
+| 1 | 😄 🎬 **Đồng Tác Giả** | Đã Ghi Công cho Duy, ô credit 30/10 ghi "Ý tưởng: Duy. Kịch bản: Oánh & Duy", phim thành công, sách không bị lộ | 23:30, hậu trường. Dòng chữ ghi tên Duy đã lên màn hình lớn. Nếu mở nhánh "Hai Cây Số Dưới Mưa", Duy kể lại chuyện người mặc đồ hồng đẩy xe, và vẫn **không biết** đó là Nguyên (Nguyên ngồi cách năm mét, không nghe thấy); chỉ Oánh đoán ra và giữ kín. Oánh ghi câu đầu tiên của một kịch bản mới, lần này hoàn toàn của mình |
+| 2 | 😄 ✍️ **Kịch Bản Không Cần Mượn** | Kịch bản xong trước 26/10, Ý Tưởng Thật ≥ 70 và lớn hơn Ý Tưởng Mượn, không "tham khảo" sau 15/10, Cảm Hứng ≥ 50, sách không bị lộ. Cũng là kết thúc mặc định | Hậu trường sau đêm diễn, Nhật đọc quyết định từ cuộc họp: *"Trưởng nhóm Biên kịch: Oánh."* Quỳnh vỗ tay đầu tiên. Câu của Thắng đổi theo việc công ty còn sống hay không. Đêm đó ở gác mái, Oánh treo tờ giấy *"Đây không phải cảm hứng. Đây là của tui."* Mèo Bí cào rách một góc |
+| 3 | 😄 🔒 **Kết thúc bí mật: Công Ty Là Gia Đình** | Bản thảo ≥ 90 trang (đêm 29/10 gõ tới sáng được 50 trang), ít nhất 8 chữ ký đồng ý (hoặc đã đổi tên), từ chối LL, Độ Lộ chưa từng chạm 100 | Ba tháng sau, hiệu sách Phố Cũ xếp hàng dài. Cả công ty xếp hàng xin chữ ký. Thắng (còn là giám đốc hay không tùy `chung_cong_ty_song`): *"Anh không ép, tùy em… nhưng tập 2 cho anh làm nhân vật chính nhé."* |
+| 4 | 😢 📎 **Đạo Ý Tưởng Ngày Ra Mắt** | Ý Tưởng Mượn ≥ 25, không Ghi Công cho Duy, và có người biết chuyện (Ngân, Hiếu, Quỳnh hoặc con rắn thứ hai) | 23:30, màn hình lớn vừa tắt sau dòng *"Kịch bản: Oánh"*. Trang Confession đăng ảnh trang sổ *"Ý tưởng của Duy"*. Cả hậu trường quay lại. Duy lắc đầu: *"Dạ không sao đâu ạ."* Điều đó còn đau hơn |
+| 5 | 😢 📖 **Tiểu Thuyết Bị Lộ** | Độ Lộ Bản Thảo từng chạm 100, hoặc bán sách cho LL ngày 27/10 (chỉ chọn được khi Độ Lộ ≥ 50) | 23:40 đêm 31/10, màn hình LED tòa LL quảng cáo cuốn sách (nếu đã bán), hoặc bản chụp lan khắp group. Ai cũng đọc thấy mình với tên thật. Sáng 1/11 Tuấn mời Oánh "uống trà". Lần đầu tiên Oánh không có gì để viết |
+| 6 | 😢 🌧️ **Trang Giấy Trắng** | Kịch bản không xong trước 26/10, hoặc Cảm Hứng về 0 | Phim vẫn chiếu, nhưng cảnh cuối là ba trang Duy viết (nếu Oánh không kịp). Oánh về gác mái trước khi màn hình tắt, ngồi trước tờ giấy trắng. Gõ một chữ, rồi gõ "xxxxx" đè lên. Mèo Bí nhìn Oánh, như muốn nói gì đó |
 
 ---
 

@@ -228,8 +228,8 @@ _Phòng chờ của {sieu_nhan_hong} trống trơn. Chỉ còn đĩa bánh chu�
 
 // ------------------------------------------------------------
 === hong_hot_3110_dem_hong ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_Đại Nhạc Hội Siêu Nhân. Sân khấu Phường Tân Drama. Mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
+# ngay:31 # gio:19:20 # noi:san_khau_dem_hong # bat_buoc
+_19 giờ 20. Mười phút nữa Đại Nhạc Hội Siêu Nhân mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
 _Sếp hóa trang "Ông Kẹ Ngân Hàng". Bạn đứng giữa khán đài, ba điện thoại trên tay. Một cái live, một cái đếm, một cái để đọc tin nhắn._
 _Con số: {nguoi_theo_doi}. Phần bạn góp: {hh_dong_gop}._
 _20:00, cùng tối đó, chung kết trực tiếp "Giọng Ca Ước Mơ" trên Đài Tivi Hóng. {thanh_xin_nghi} đứng hát trên một sân khấu khác, chiếu lên màn hình lớn._

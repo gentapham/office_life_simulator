@@ -38,16 +38,16 @@ _Mốc 3: 500.000 người theo dõi._
 
 = chua_te_deadline_2110_lam_som
 _Bạn về chỗ. Trên bàn: tờ lịch, ngày 31/10 khoanh hồng. Còn 10 ngày. Cue sheet Đại Nhạc Hội Siêu Nhân: {vu_cue_sheet} trên 47 cue._
-{ vu_kich_ban_gameshow && vu_ho_so_phuong && vu_so_lan_nho_xiu == 0:
-    _Bạn chợt nhận ra: MV xong, gameshow xong, hồ sơ phường xong, và bạn chưa nhờ ai làm giùm việc gì. Nếu làm luôn cue sheet bây giờ thì…_
+{ vu_kich_ban_gameshow && vu_ho_so_phuong && vu_so_lan_nho_xiu <= 3:
+    _Bạn chợt nhận ra: MV xong, gameshow xong, hồ sơ phường xong, và bạn gần như chưa nhờ ai làm giùm việc gì. Nếu làm luôn cue sheet bây giờ thì…_
 }
 * [✍️ Làm cue sheet ngay tối nay. Không lướt.]
-    ~ vu_cue_sheet = vu_cue_sheet + 20
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 20
+    ~ vu_cue(20)
+    ~ vu_nuoc(-20)
     ~ vu_chuoi_ngay_it_luot = vu_chuoi_ngay_it_luot + 1
     ~ nghi(-20)
     _Bạn viết được 20 cue. "Cue 1: Đèn tắt. Cue 2: Phim của {bien_kich}." Cảm giác lạ lắm. Như đang đi bộ trên đường mà không ai rượt._
-* {vu_kich_ban_gameshow && vu_ho_so_phuong && vu_so_lan_nho_xiu == 0} [🔒 Làm hết. Toàn bộ. Trước ngày 24.]
+* {vu_kich_ban_gameshow && vu_ho_so_phuong && vu_so_lan_nho_xiu <= 3} [🔒 Làm hết. Toàn bộ. Trước ngày 24.]
     ~ vu_cue_sheet = 47
     ~ vu_xong_som = true
     ~ vu_nuoc_toi_chan = 0
@@ -57,7 +57,7 @@ _Bạn về chỗ. Trên bàn: tờ lịch, ngày 31/10 khoanh hồng. Còn 10 n
     _Bạn nhìn lịch. Còn 8 ngày. Không còn gì để làm. Cảm giác này… đáng sợ thiệt._
     truong_phong: *(đọc email, gọi ngay)* {chua_te_deadline}. Cậu bị ai đe dọa à? Chớp mắt hai lần nếu cần giúp.
 * [😎 "Còn 10 ngày lận. Chill."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
+    ~ vu_nuoc(10)
     ~ vu_gio_luot = vu_gio_luot + 2
     ~ vu_chuoi_ngay_it_luot = 0
 - -> END
@@ -102,8 +102,8 @@ _Lần đầu tiên bạn không cười._
 
 // ------------------------------------------------------------
 === chua_te_deadline_2210_doan_thue ===
-# ngay:22 # gio:09:30 # noi:phong_hop_sang_tao # bat_buoc
-_Đoàn kiểm tra thuế ngồi ở phòng họp. Trưởng đoàn là Chú Liêm, 55 tuổi, kính lão, cặp da. Cả công ty giả vờ chăm chỉ tới mức {dan_dau_tu} tắt chart._
+# ngay:22 # gio:09:30 # noi:phong_ke_toan # bat_buoc
+_Đoàn kiểm tra thuế ngồi ở phòng kế toán từ 9 giờ. Trưởng đoàn là Chú Liêm, 55 tuổi, kính lão, cặp da. Cả công ty giả vờ chăm chỉ tới mức {dan_dau_tu} tắt chart._
 _{ke_toan} lùng khắp ba tầng tìm bạn._
 ke_toan: {chua_te_deadline}! Đoàn đòi bằng chứng nghiệm thu dự án tháng 6. File gốc, biên bản, hình ảnh. Em đưa chị ngay.
 { vu_co_file:
@@ -161,46 +161,52 @@ _Sinh nhật {sieu_nhan_hong}. Lần đầu tiên trong tháng, bàn bạn khôn
 _Bạn chưa mua gì. Tất nhiên._
 * [🖊️ Lấy cây bút highlight hồng đầu tiên, buộc lại cái nơ, viết thiệp.]
     _"Sinh nhật vui nha anh. Trả lại anh cây bút, để anh tô thêm một ngày nữa lên lịch." Bạn để lên bàn phòng chờ._
-    ~ vu_tin_that_long = vu_tin_that_long + 8
+    ~ vu_tin(8)
 * [🍌 Chạy ra mua bánh chuối chiên nóng, để ở phòng chờ, không ghi tên.]
     ~ tien_cong(-40000)
-    _Không ghi tên. Nhưng cả công ty chỉ có một người biết Nguyên thích bánh chuối chiên của xe đẩy đầu hẻm, chứ không phải của tiệm._
-    ~ vu_tin_that_long = vu_tin_that_long + 10
+    _Không ghi tên. Nhưng cả công ty chỉ có một người biết {sieu_nhan_hong} thích bánh chuối chiên của xe đẩy đầu hẻm, chứ không phải của tiệm._
+    ~ vu_tin(10)
 * [📋 Ghi vào bảng tiến độ: "Quà sinh nhật SNH: {hong_hot} lo."]
     hong_hot: Ông đó nha! Quà sinh nhật mà cũng giao việc!
-    ~ vu_tin_that_long = vu_tin_that_long - 5
+    ~ vu_tin(-5)
 - -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_2310_phong_dieu_khien ===
 # ngay:23 # gio:20:15 # noi:studio_tang_2 # bat_buoc
-_Livestream sinh nhật. Bạn ngồi phòng điều khiển, tai nghe đeo một bên, tay lướt Tóp-tóp. Video đầu tiên hiện lên là… màn hình livestream ngay sau lưng bạn._
-_Trên sóng, {dan_dau_tu} vừa đóng vai "Mr. Kevin Trộn" của BTT Global xong, bằng một cái mũ lưỡi trai và giọng Anh rất Quận Hóng._
-sieu_nhan_hong: *(tháo găng tay, nhìn thẳng vào camera)* Có một người… sáng nào anh cũng để quà trên bàn. Người đó tưởng anh làm PR. {chua_te_deadline} ơi, anh không có làm PR đâu.
+~ temp kevin = RANDOM(1, 3)
+_Livestream sinh nhật, studio tầng 2, từ 20 giờ. Bạn ngồi phòng điều khiển, tai nghe đeo một bên, tay lướt Tóp-tóp. Video đầu tiên hiện lên là… màn hình livestream ngay sau lưng bạn._
+_Trên sóng, {kevin == 1:{dan_dau_tu}|{kevin == 2:{thuc_tap_sinh}|Bác {bac_bao_ve}}} vừa đóng vai "Mr. Kevin Trộn" của BTT Global xong, bằng một cặp kính râm và giọng Anh rất Quận Hóng._
+sieu_nhan_hong: *(tháo găng tay, nhìn thẳng vào camera)* Có một người… sáng nào anh cũng để quà trên bàn. Người đó tưởng anh làm PR. {chua_te_deadline} ơi, anh thích em. Không có làm PR đâu.
 _Bình luận chạy như thác. Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi leo top 3. Ngoài kia, {cho} vừa nhảy lên bàn bánh kem._
+_Trong đầu bạn: tương tác đẹp quá. Ai lên ý tưởng mà đỉnh vậy._
+* [👍 Giơ ngón cái vào camera: "Ý tưởng PR hay đó anh!"]
+    ~ follow(10000)
+    ~ vu_tin(2)
+    _Cả studio cười. Bình luận cười theo. {sieu_nhan_hong} cũng cười, chậm nửa nhịp, rồi đội mũ lại._
 * [🌊 "Kịch bản này ai viết vậy? Hay quá, để tui nâng KPI cho bà {bien_kich}."]
-    ~ follow(60000)
+    ~ follow(15000)
     ~ vu_tin_bi_khoa = true
     ~ vu_tin_that_long = 0
-    _Bạn nói câu đó vào micro nội bộ. Micro nội bộ đang mở ra loa phòng chờ._
+    _Bạn nói câu đó vào micro nội bộ. Micro nội bộ đang mở ra loa phòng chờ, và ra luôn livestream._
     _{sieu_nhan_hong} cười. Tối đó không ghé phòng chờ ăn bánh chuối chiên._
 * [😳 Gõ bình luận: "Cho em tới 31/10 nha. Em quen làm phút chót."]
-    ~ follow(60000)
-    ~ vu_tin_that_long = vu_tin_that_long + 20
+    ~ follow(15000)
+    ~ vu_tin(10)
     ~ vu_hen_dem_hong = true
-    _Bình luận của bạn được ghim. Cả nước gõ "31/10" vào lịch. {sieu_nhan_hong} đọc to, rồi đội mũ lại, rồi tháo ra, rồi đội lại._
+    _Bình luận của bạn được ghim. Cả nước gõ "31/10" vào lịch. Bạn chỉ định hẹn chốt kịch bản sau show. {sieu_nhan_hong} đọc to, rồi đội mũ lại, rồi tháo ra, rồi đội lại._
 * [🧯 Bỏ điện thoại, lao ra cứu cái bánh kem khỏi {cho}.]
-    ~ follow(40000)
+    ~ follow(10000)
     ~ vu_cuu_banh_kem = true
     _Nửa cái bánh được cứu. Livestream quay được cảnh bạn ôm bánh, {cho} cắn ống quần. Câu trả lời bị hoãn._
     ~ qh("cho", -3)
-    ~ vu_tin_that_long = vu_tin_that_long + 5
-* {vu_tin_that_long >= 50} [🔒 Bước ra trước camera.]
-    chua_te_deadline: Anh {sieu_nhan_hong}, em tưởng là PR thiệt. Xin lỗi anh. Cho em suy nghĩ đàng hoàng. Lần đầu em không muốn để tới phút chót.
-    ~ follow(80000)
-    ~ vu_tin_that_long = vu_tin_that_long + 30
+    ~ vu_tin(5)
+* {vu_tin_that_long >= 40} [🔒 Bước ra trước camera.]
+    chua_te_deadline: Anh {sieu_nhan_hong}, sinh nhật vui. Quà anh tặng em xài hết rồi, bút cạn mực luôn. Mình làm bạn thiệt nha anh, không kịch bản.
+    ~ follow(20000)
+    ~ vu_tin(15)
     ~ vu_hen_dem_hong = true
-    _{sieu_nhan_hong} đội mũ lại thật nhanh, vì mặt đỏ hơn bộ đồ._
+    _{sieu_nhan_hong} đứng im ba giây. "Bạn… Ừ. Bạn thiệt." Rồi đội mũ lại thật nhanh. Khán giả thả một nghìn trái tim. Bạn không hiểu sao có người thả cả mặt khóc._
 - -> END
 
 // ------------------------------------------------------------
@@ -214,9 +220,9 @@ _23 giờ 10. Phòng gác. Dưới nhà tiếng bi lách cách. Điện thoại 
     -> END
 }
 _Bạn mở khung chat với {sieu_nhan_hong}. Gõ. Xóa. Gõ. Xóa._
-* [💌 "Sinh nhật vui nha anh. Không phải PR đâu."]
-    _Đã gửi. Đã xem. Ba chấm hiện lên, biến mất, hiện lên. Rồi một sticker con mèo hồng đội mũ._
-    ~ vu_tin_that_long = vu_tin_that_long + 10
+* [💌 "Sinh nhật vui nha anh. Livestream bữa nay tương tác đẹp. Mà anh ổn hông?"]
+    _Đã gửi. Đã xem. Ba chấm hiện lên, biến mất, hiện lên. Rồi một sticker con mèo hồng đội mũ, kèm một chữ: "Ổn."_
+    ~ vu_tin(10)
     ~ qh("sieu_nhan_hong", 8)
 * [😶 Đặt điện thoại xuống. Mai nói.]
     _Bạn nằm nhìn trần nhà. Lần đầu tiên bạn thấy "mai nói" không chill chút nào._
@@ -224,8 +230,8 @@ _Bạn mở khung chat với {sieu_nhan_hong}. Gõ. Xóa. Gõ. Xóa._
 
 // ------------------------------------------------------------
 === chua_te_deadline_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:10:00 # noi:phong_hop_sang_tao
-_Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Xếp cặp: {truong_phong} – {con_ong_chau_cha}, {designer} – {bien_kich}, {sales} – {ke_toan}, {hr} – {thanh_xin_nghi}, {chi_dai} – {thanh_ninh}. Bàn riêng "chủ nợ" cho {dan_dau_tu}._
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2
+_Ngày Liên Hợp Quốc, 14 giờ. {chi_dai} tổ chức "hội nghị hòa giải". Xếp cặp: {truong_phong} – {con_ong_chau_cha}, {designer} – {bien_kich}, {sales} – {ke_toan}, {hr} – {thanh_xin_nghi}, {chi_dai} – {thanh_ninh}. Bàn riêng "chủ nợ" cho {dan_dau_tu}._
 chi_dai: {chua_te_deadline}, em ngồi bàn {truong_phong} với {con_ong_chau_cha}. Làm trọng tài. Mỗi người phải khen người kia 3 câu. Em cũng phải khen {truong_phong} 3 câu.
 truong_phong: *(khoanh tay)* Tớ đang chờ.
 * [😇 Khen thật: "Anh là người duy nhất đọc hết mọi file em gửi."]
@@ -249,13 +255,13 @@ truong_phong: *(khoanh tay)* Tớ đang chờ.
 
 // ------------------------------------------------------------
 === chua_te_deadline_2510_gam_cau_thang ===
-# ngay:25 # gio:15:00 # noi:gam_cau_thang # dieu_kien:vu_chua_co_file_va_du_manh_moi
-{ vu_co_file or not (vu_manh_moi_tuat && vu_manh_moi_binh):
+# ngay:25 # gio:15:00 # noi:gam_cau_thang # dieu_kien:not vu_co_file
+{ vu_co_file or not (vu_manh_moi_tuat || vu_manh_moi_binh):
     _Chủ nhật. Bạn ghé công ty lấy sạc. Gầm cầu thang tối om. {cho} ngủ. Bạn đi về._
     -> END
 }
-_Chủ nhật. Gầm cầu thang tối om. {cho} nằm chắn trước một đống đồ: chìa khóa, thỏi son, một cái điện thoại cũ, một con gà cao su… và một cái USB không nhãn. Mùi cà phê sữa đá._
-_Ly cà phê {cho} ngửi. Câu "bác không thấy gì đâu" hơi lâu. Bạn hiểu ra rồi._
+_Chủ nhật. Gầm cầu thang tối om. {cho} nằm chắn trước một đống đồ: chùm chìa khóa, thỏi son, một cái điện thoại cũ, một chiếc tất sọc cam, một chiếc găng tay hồng… và một cái USB không nhãn. Mùi cà phê sữa đá._
+_{vu_manh_moi_tuat:Ly cà phê {cho} ngửi.} {vu_manh_moi_binh:Câu "bác không thấy gì đâu" hơi lâu.} Bạn hiểu ra rồi._
 cho: Grừ… Gâu!
 bac_bao_ve: *(từ ngoài cửa, không quay lại)* Ừ… Bác không thấy gì đâu.
 * {co(xuc_xich)} [🦴 Đưa cho {cho} một cây xúc xích, chỉ vào cái USB.]
@@ -282,7 +288,7 @@ bac_bao_ve: *(từ ngoài cửa, không quay lại)* Ừ… Bác không thấy g
     ~ qh("bac_bao_ve", 10)
     -> chua_te_deadline_2510_tim_thay
 * [😶 Bỏ đi. Mai tính.]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
+    ~ vu_nuoc(10)
     _Bạn đi về. Lần đầu tiên câu "mai tính" làm bạn thấy mình hèn. Còn một cơ hội: tối 30/10._
     -> END
 
@@ -306,7 +312,7 @@ dan_dau_tu: Nghe nói anh {quan_ly_idol} được mời 36 triệu một tháng 
 * [📊 Tính lại cue sheet trong đầu nếu Đại Nhạc Hội thiếu Siêu Nhân Hồng.]
     _Cue 1: Đèn tắt. Cue 2: …không có ai. Bạn gạch hết. Không có cue sheet nào cho một đêm diễn không có người diễn._
     ~ cang_thang(10)
-    ~ vu_cue_sheet = vu_cue_sheet + 5
+    ~ vu_cue(5)
 * [🎱 Đánh bida, không nghĩ gì hết.]
     -> chua_te_deadline_mg_bida_mo_dau
 - -> END
@@ -338,7 +344,7 @@ _Cue sheet: {vu_cue_sheet} trên 47._
     designer: Ủa? Cue sheet mà cũng tui hả? Sửa nhẹ thôi là sửa cái gì ạ?
     ~ qh("designer", -5)
     ~ qh("editor", -5)
-    ~ vu_cue_sheet = vu_cue_sheet + 5
+    ~ vu_cue(5)
 - -> chua_te_deadline_2610_chieu_thu
 
 = chua_te_deadline_2610_chieu_thu
@@ -349,13 +355,29 @@ _Trong bóng tối phòng chiếu, bạn nghe {thuc_tap_sinh} ngồi hàng sau, 
     _Bạn không hỏi nữa. Nhưng bạn ghi nhớ gương mặt đó._
     ~ qh("thuc_tap_sinh", 5)
 * [📋 Ghi chú: phim này làm màn mở đầu Đại Nhạc Hội, cue số 2.]
-    ~ vu_cue_sheet = vu_cue_sheet + 2
+    ~ vu_cue(2)
+- -> END
+
+// ------------------------------------------------------------
+=== chua_te_deadline_2710_sua_chua ===
+# ngay:27 # gio:11:00 # noi:ban_lam_viec # bat_buoc
+_11 giờ. Trailer phim ngắn "Người Hùng Không Tên" vừa lên, đề tên tác giả: {bien_kich}. Cùng lúc, {sales} chạy vào, mặt trắng bệch._
+sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Họ muốn tài trợ 1 tỷ cho Đại Nhạc Hội! Thiệt đó!
+_Cả phòng cười. Không ai tin. {sales} đứng giữa phòng, lần đầu tiên nói thật, và không ai tin._
+* [🤝 "Tui tin. Gửi tui số điện thoại, tui gọi xác nhận."]
+    _Bạn gọi. Một giọng cô ở Ven Đô bắt máy: "Dạ đúng rồi con, Sữa Chua Hồng Hào đây." Bạn bật loa ngoài. Cả phòng im._
+    ~ qh("sales", 20)
+    ~ follow(10000)
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
+* [😂 Cười theo cả phòng.]
+    sales: *(mắt đỏ hoe)* … Ừ. Thôi. Tin chị đi, mấy người sẽ hối hận.
+    ~ qh("sales", -5)
 - -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_2710_ll_ra_tay ===
-# ngay:27 # gio:10:00 # noi:sanh_tang_tret # bat_buoc
-_10 giờ sáng. Một chiếc xe màu xanh lá chuối đậu trước cổng. Bước xuống là Lưu Lực, CEO LL-Entertainment, vest trắng, tóc vuốt keo, tay cầm tập hồ sơ dày._
+# ngay:27 # gio:15:00 # noi:sanh_tang_tret # bat_buoc
+_15 giờ. Một chiếc xe màu xanh lá chuối đậu trước cổng. Bước xuống là Lưu Lực, CEO LL-Entertainment, vest trắng, tóc vuốt keo, tay cầm tập hồ sơ dày._
 _Ông ta đi thẳng vào sảnh, miệng cười như diễn giả. Rồi thấy {chi_dai} đứng ở quầy lễ tân. Tập hồ sơ rơi xuống đất, giấy bay tung tóe._
 chi_dai: *(nheo mắt)* Ủa? Anh… Quán Ốc Đêm hả?
 _Lưu Lực nhặt giấy với tốc độ của người đang chạy trốn quá khứ. Một tờ bay tới chân bạn: "Đề nghị hợp tác: gấp ba 5 tỷ. Người nhận: Siêu Nhân Hồng."_
@@ -368,17 +390,6 @@ _Lưu Lực nhặt giấy với tốc độ của người đang chạy trốn q
 * [🦶 Đạp chân lên tờ giấy, giả vờ không thấy.]
     _Lưu Lực nhìn chân bạn. Bạn nhìn trần nhà. {chi_dai} nhìn Lưu Lực. Lưu Lực bỏ luôn tờ giấy, đi thẳng lên tầng 2._
     ~ qh("chi_dai", 5)
-- _Chiều, trailer phim ngắn "Người Hùng Không Tên" được đăng lên, đề tên tác giả: {bien_kich}. Cùng lúc, {sales} chạy vào, mặt trắng bệch._
-sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Họ muốn tài trợ 1 tỷ cho Đại Nhạc Hội! Thiệt đó!
-_Cả phòng cười. Không ai tin. {sales} đứng giữa phòng, lần đầu tiên nói thật, và không ai tin._
-* [🤝 "Tui tin. Gửi tui số điện thoại, tui gọi xác nhận."]
-    _Bạn gọi. Một giọng cô ở Ven Đô bắt máy: "Dạ đúng rồi con, Sữa Chua Hồng Hào đây." Bạn bật loa ngoài. Cả phòng im._
-    ~ qh("sales", 20)
-    ~ follow(10000)
-    ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
-* [😂 Cười theo cả phòng.]
-    sales: *(mắt đỏ hoe)* … Ừ. Thôi. Tin chị đi, mấy người sẽ hối hận.
-    ~ qh("sales", -5)
 - -> END
 
 // ------------------------------------------------------------
@@ -393,28 +404,28 @@ sieu_nhan_hong: Bên LL trả gấp ba. Anh {quan_ly_idol} nói anh tự quyết
     ~ vu_tra_loi_2710 = "o_lai"
     ~ nguyen_theo_ll = false
     { not vu_tin_bi_khoa:
-        ~ vu_tin_that_long = vu_tin_that_long + 10
+        ~ vu_tin(10)
     }
     sieu_nhan_hong: Ừ. Anh ở lại.
     _1 giờ sáng, {quan_ly_idol} nhắn cho bạn: "Cảm ơn em." Không kèm sticker. Với {quan_ly_idol}, vậy là rất nhiều._
     ~ qh("quan_ly_idol", 10)
 * [🌊 Để "đã xem". Sáng mai trả lời.]
     ~ vu_tra_loi_2710 = "da_xem"
-    _Sáng mai bạn ngủ quên tới 7 giờ 58. Nguyên đã tự quyết._
-    { RANDOM(1, 10) <= 5:
+    _Sáng mai bạn ngủ quên tới 7 giờ 58. {sieu_nhan_hong} đã tự quyết._
+    { RANDOM(1, 10) <= 6:
         ~ nguyen_theo_ll = false
-        _Nguyên ở lại. Nhưng sáng đó, không có quà hồng trên bàn bạn._
+        _{sieu_nhan_hong} ở lại. Nhưng sáng đó, không có quà hồng trên bàn bạn._
     - else:
         ~ nguyen_theo_ll = true
-        _Nguyên nhận lời gặp Lưu Lực. Tin lên mạng lúc 9 giờ: "Siêu Nhân Hồng về LL?"_
-        ~ follow(-150000)
+        _{sieu_nhan_hong} nhận lời Lưu Lực. Tin lên mạng lúc 9 giờ: "Siêu Nhân Hồng về LL?"_
+        ~ follow(-100000)
     }
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 10
-* [🤝 "Chuyện hợp đồng anh hỏi anh {quan_ly_idol} với anh {giam_doc}. Còn chuyện kia… em trả lời anh ngày 31."]
+    ~ vu_nuoc(10)
+* [🤝 "Chuyện hợp đồng anh hỏi anh {quan_ly_idol} với anh {giam_doc}. Còn chuyện kia… xong show 31 em nói anh nghe đàng hoàng."]
     ~ vu_tra_loi_2710 = "hen_31"
     ~ nguyen_theo_ll = false
     { not vu_tin_bi_khoa:
-        ~ vu_tin_that_long = vu_tin_that_long + 5
+        ~ vu_tin(5)
         ~ vu_hen_dem_hong = true
     }
     sieu_nhan_hong: Anh chờ được. Anh quen chờ rồi.

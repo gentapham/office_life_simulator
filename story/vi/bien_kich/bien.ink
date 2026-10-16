@@ -9,7 +9,7 @@ VAR bk_do_lo = 10             // 📖 Độ Lộ Bản Thảo (0..100)
 VAR bk_cam_hung = 50          // 🌧️ Cảm Hứng (0..100)
 
 // ---------- Tiểu thuyết "Công Ty Là Gia Đình" ----------
-VAR bk_trang_tieu_thuyet = 0  // số trang đã gõ (≥ 200 là xong)
+VAR bk_trang_tieu_thuyet = 0  // số trang đã gõ (≥ 90 là đủ một bản thảo trọn vẹn)
 VAR bk_chu_ky_dong_y = 0      // số đồng nghiệp đã ký đồng ý (hoặc đã được đổi tên)
 VAR bk_da_doi_ten = false     // đã đổi hết tên thật trong bản thảo
 VAR bk_do_lo_tung_100 = false // Độ Lộ từng chạm 100

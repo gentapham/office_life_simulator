@@ -9,7 +9,7 @@
 ran_doc: Ủa ông producer! Nói nhỏ thôi nha… dạo này ông với anh Hồng là sao vậy? Sáng nào tui cũng thấy quà hồng trên bàn ông.
 + [😎 "Content couple. Bên truyền thông lo, tui phối hợp."]
     ran_doc: *(cười rất ngọt)* À, PR hả. Tui cũng nghĩ vậy. Người như ảnh mà thích ai thật thì lạ lắm.
-    ~ vu_tin_that_long = vu_tin_that_long - 3
+    ~ vu_tin(-3)
 + [😶 "Chuyện của tui, ông hóng làm gì?"]
     ran_doc: Tui chỉ quan tâm thôi mà. Tui nói vậy thôi chứ hổng có ý gì đâu.
     ~ qh("ran_doc", -3)
@@ -107,21 +107,21 @@ hong_hot: Ê ê ông! Nghe gì chưa? Fan đang ship ông với anh Hồng dữ 
 + [😎 "Thì đúng kịch bản bên bà mà. Đẩy đi."]
     hong_hot: Ông tin tui đi, tui hông có viết kịch bản nào hết! Mà thôi… content ngon thì đẩy.
     ~ follow(5000)
-    ~ vu_tin_that_long = vu_tin_that_long - 3
+    ~ vu_tin(-3)
 + [😶 "Đừng đăng gì về tui nha bà."]
     hong_hot: Ủa sao vậy? Mắc cỡ hả? Ối dồi ôi!
-    ~ vu_tin_that_long = vu_tin_that_long + 2
+    ~ vu_tin(2)
 + [💬 "Bà nói thật đi, bà có bày vụ quà hồng hông?"]
     hong_hot: Thề có laptop của tui! Hông! Ảnh tự mua, tự gói, tự đặt lên bàn ông lúc 7 giờ sáng. Tui thấy tận mắt!
     _Lần đầu tiên có người thề bằng laptop với bạn. Với {hong_hot}, đó là lời thề nặng nhất._
-    ~ vu_tin_that_long = vu_tin_that_long + 8
+    ~ vu_tin(8)
 - hong_hot: Mà ông lên lịch đăng bài tuần này cho tui chưa? Tui đăng theo cảm hứng hoài thấy kỳ.
 + [📋 Gửi lịch đăng bài chi tiết.]
     hong_hot: Ủa có lịch thiệt hả? Ông bị ai nhập vậy?
     ~ follow(5000)
     ~ qh("hong_hot", 5)
 + [🌊 "Đăng theo cảm hứng đi, cảm hứng là thứ tui tin."]
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 3
+    ~ vu_nuoc(3)
     hong_hot: Ông đúng là chúa tể. Chúa tể của sự chill.
 - -> END
 
@@ -274,7 +274,7 @@ idol_het_thoi: *(kính đen, trong nhà)* Em biết anh là ai không?
 - idol_het_thoi: Đại Nhạc Hội… có tiết mục nào cho anh hông?
 + [📋 "Có anh. Cue 23. Anh với anh Hồng song ca 'Công Viên'."]
     idol_het_thoi: Song ca với… nó hả? *(im lâu)* Cue 23. Anh nhớ rồi.
-    ~ vu_cue_sheet = vu_cue_sheet + 1
+    ~ vu_cue(1)
     ~ qh("idol_het_thoi", 10)
 + [😶 "Để em hỏi anh {quan_ly_idol}."]
     idol_het_thoi: Ừ. {quan_ly_idol} lo hết cho anh. Lúc nào cũng vậy.
@@ -288,15 +288,15 @@ quan_ly_idol: Khoan, anh nghe máy chút… *(5 phút sau)* Rồi. Em cần gì?
 + [🗓️ "Lịch của anh Hồng tuần này, anh gửi em bản cuối nha."]
     quan_ly_idol: Bản cuối là bản sẽ đổi 3 lần nữa. Gửi em liền.
     ~ qh("quan_ly_idol", 3)
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 3
+    ~ vu_nuoc(-3)
 + [💬 "Anh ơi, mấy món quà hồng… anh bày hả anh?"]
     quan_ly_idol: *(đặt cả hai điện thoại xuống, chuyện hiếm có)* Em nghĩ anh rảnh tới mức đi gói nơ hả? Anh không bày. Nó tự làm. Sáng nào cũng tự làm.
-    ~ vu_tin_that_long = vu_tin_that_long + 10
+    ~ vu_tin(10)
     ~ qh("quan_ly_idol", 3)
 + [🤝 "Anh ngủ chút đi anh, mắt anh thâm quá."]
     quan_ly_idol: Ngủ hả. *(cười)* Anh nhớ cái chữ đó. Hồi 2015 anh có dùng.
     ~ qh("quan_ly_idol", 5)
-- quan_ly_idol: Chuyện này để anh lo. Em lo cue sheet cho đàng hoàng. Đại Nhạc Hội mà hỏng là cả anh, cả Nguyên, cả {idol_het_thoi}…
+- quan_ly_idol: Chuyện này để anh lo. Em lo cue sheet cho đàng hoàng. Đại Nhạc Hội mà hỏng là cả anh, cả {sieu_nhan_hong}, cả {idol_het_thoi}…
 _{quan_ly_idol} ngưng nửa câu. Điện thoại lại reo._
 + [😇 "Dạ. Cue sheet em lo."]
     ~ qh("quan_ly_idol", 3)
@@ -316,7 +316,7 @@ bien_kich: {chua_te_deadline}. Tui đang bí. Kịch bản livestream sinh nhậ
 + [🙏 "Bà viết giùm tui luôn phần lời dẫn Đại Nhạc Hội nha."]
     ~ vu_so_lan_nho_xiu++
     bien_kich: Được. Nhưng tui ghi tên tui.
-    ~ vu_cue_sheet = vu_cue_sheet + 3
+    ~ vu_cue(3)
 + [💬 "Bà lấy ý tưởng phim ngắn ở đâu vậy? Hay ghê."]
     bien_kich: *(chớp mắt hơi nhanh)* Đây không phải đạo, đây là cảm hứng. Ý tui là… nó tự tới.
     ~ qh("bien_kich", -3)
@@ -325,7 +325,7 @@ bien_kich: {chua_te_deadline}. Tui đang bí. Kịch bản livestream sinh nhậ
     bien_kich: Câu này từ miệng ông nghe lạ ghê.
 + [😤 "Đừng. Chuyện đó chưa phải chuyện."]
     bien_kich: "Chưa phải chuyện". Hay. Tui ghi lại câu này.
-    ~ vu_tin_that_long = vu_tin_that_long + 3
+    ~ vu_tin(3)
 - -> END
 
 // ------------------------------------------------------------
@@ -368,11 +368,11 @@ designer: Ông tới đòi file hả? Poster sửa lần thứ 17. Cho xin feedb
 + [📋 "Chốt. Ngày 24 tui ký duyệt, ai sửa nữa thì qua tui."]
     designer: Ông nói vậy là ông gánh nha. Tui chụp màn hình rồi đó.
     ~ qh("designer", 8)
-    ~ vu_cue_sheet = vu_cue_sheet + 1
+    ~ vu_cue(1)
 + [🌊 "Chốt ngày 30 đi, còn sớm mà."]
     designer: Ông muốn tui chết hả?
     ~ qh("designer", -5)
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 3
+    ~ vu_nuoc(3)
 - -> END
 
 // ------------------------------------------------------------
@@ -470,7 +470,7 @@ thanh_xin_nghi: *(ho khụ khụ rất đúng nhịp)* Dạ anh… em hơi sốt
 + [😇 "Ông về nghỉ đi. Lịch tuần này tui lo."]
     thanh_xin_nghi: Dạ em cảm ơn anh! Anh là người tốt nhất công ty!
     ~ qh("thanh_xin_nghi", 8)
-    ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
+    ~ vu_nuoc(5)
 + [📋 "Ông nghỉ thì để lại lịch điều phối cho tui, đầy đủ nha."]
     thanh_xin_nghi: Dạ… dạ có liền. *(gửi một file sạch đẹp tới bất ngờ)*
     ~ qh("thanh_xin_nghi", 3)
@@ -513,32 +513,32 @@ bac_bao_ve: Ừ… Cháu {chua_te_deadline}. Lại đi trễ à.
 # npc:sieu_nhan_hong
 { vu_tin_bi_khoa:
     sieu_nhan_hong: *(tạo dáng, nhưng không nhìn bạn)* Chào producer! Hồng là thái độ!
-    _Nguyên nói xong là đi. Từ hôm livestream, Nguyên chào bạn y như chào máy quay._
+    _{sieu_nhan_hong} nói xong là đi. Từ hôm livestream, {sieu_nhan_hong} chào bạn y như chào máy quay._
     -> END
 }
 sieu_nhan_hong: {chua_te_deadline}! Biến hình! Em ăn gì chưa? Anh có bánh chuối chiên nè!
 + [🍌 "Ăn rồi anh. Mà còn bánh thì em ăn thêm."]
     ~ an(15)
     sieu_nhan_hong: *(đưa cả bịch)* Ăn hết đi! Anh ăn rồi! *(chưa ăn)*
-    ~ vu_tin_that_long = vu_tin_that_long + 3
+    ~ vu_tin(3)
 + [😎 "Anh tạo dáng nhiều vậy hông mỏi hả?"]
     sieu_nhan_hong: Mỏi. *(hạ tay xuống, nói nhỏ)* Mỏi lắm. Mà hông tạo dáng thì anh hông biết đứng sao.
-    ~ vu_tin_that_long = vu_tin_that_long + 5
+    ~ vu_tin(5)
 + [📱 "Anh đứng yên, em quay một clip ngắn đăng page."]
     sieu_nhan_hong: Vì công lý và lượt view! *(tạo dáng)*
     ~ follow(3000)
-    ~ vu_tin_that_long = vu_tin_that_long - 2
+    ~ vu_tin(-2)
 - sieu_nhan_hong: Mà… ờm. Em thích màu gì vậy? Ngoài màu hồng?
 + [😇 "Màu cam. Màu áo công ty. Mặc 5 năm quen rồi."]
     sieu_nhan_hong: Cam… Ừ. Cam với hồng đứng gần nhau cũng đẹp mà, đúng hông?
-    ~ vu_tin_that_long = vu_tin_that_long + 5
+    ~ vu_tin(5)
 + [😎 "Màu của nút 'Gửi' lúc 7 giờ 59."]
     sieu_nhan_hong: *(cười, không tạo dáng)* Màu đó là màu gì?
     _Bạn cũng không biết. Hai người cùng cười._
-    ~ vu_tin_that_long = vu_tin_that_long + 4
+    ~ vu_tin(4)
 + [📋 "Anh hỏi để làm content hả?"]
     sieu_nhan_hong: … Ờ. Ờ, đúng rồi. Content.
-    ~ vu_tin_that_long = vu_tin_that_long - 3
+    ~ vu_tin(-3)
 - -> END
 
 // ------------------------------------------------------------

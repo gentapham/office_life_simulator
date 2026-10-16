@@ -82,12 +82,12 @@ Bảo không lên hình, không viết bài, không đăng gì. Nhưng **mọi l
 
 | Hành động | Ảnh hưởng tới Độ Nổi Tiếng | Ghi chú |
 |---|---|---|
-| Giữ livestream không rớt (mỗi buổi) | +15.000 đến +40.000 | Cần Độ Ổn Định ≥ 60 |
+| Giữ livestream không rớt (mỗi buổi) | +12.000 đến +25.000 | Cần Độ Ổn Định ≥ 60 |
 | Livestream rớt mạng giữa chừng | −30.000, nhưng 30% thành meme "Siêu Nhân Hồng đứng hình" (+10.000) | Bị Đổ Tội +15 |
-| Đẩy MV lên đúng giờ vàng 20:00 ngày 9/10 | +20.000 | Phải upload 40GB trong 2 tiếng |
+| Đẩy MV lên đúng giờ vàng 20:00 ngày 9/10 | Giữ được mốc mặc định của game (+40.000) | Phải upload 40GB trong 2 tiếng |
 | Lọc bot, chặn tài khoản anti fan | +5.000 mỗi lần, giữ uy tín lượt follow | Có thể lộ ra fan ảo của Phát |
 | Truy log, bắt được người phá ngầm | Chặn được một lần bị phá (−20.000 đến −50.000) | Người bị bắt sẽ thù Bảo |
-| Âm thanh ánh sáng Đại Nhạc Hội Siêu Nhân hoàn hảo | +100.000 | Cần đủ thiết bị và không ai đụng cầu dao |
+| Âm thanh ánh sáng Đại Nhạc Hội Siêu Nhân hoàn hảo | Không cộng riêng (chỉ cảnh chung cộng điểm đêm diễn); mở kết thúc Phủ Sóng | Cần đủ thiết bị và không ai đụng cầu dao |
 | Bán log lịch trình Nguyên cho LL | Rất lớn, mở đường cho kết thúc "Bị Cướp Mất" của Nguyên | Lương Tâm −50 |
 
 ---
@@ -116,19 +116,20 @@ Bảo không lên hình, không viết bài, không đăng gì. Nhưng **mọi l
 - **17/10:** team building. Resort chỉ có một cục wifi ở quầy lễ tân. 21 người đứng quanh quầy như đứng quanh đống lửa. Ai cũng hỏi Bảo "sao wifi yếu vậy", như thể Bảo mang theo cái router trong balo.
 - Đêm lửa trại: Bảo lo loa kéo. Phát hát "Công Viên", Bảo chỉnh âm cho Phát lần đầu tiên sau 10 năm. Phát nhớ ra Bảo: *"Ủa, em là thằng nhỏ bị điện giật hồi hội chợ hả?"*
 - Bác Bình ở lại trực công ty, nhắn cho Bảo đúng 1 tin: *"Tuất cắn dây gì ở tủ mạng ấy. Bác buộc lại rồi."* Bảo có thể về sớm để kiểm tra, hoặc không.
-- **20/10:** sinh nhật công ty kiêm Ngày Phụ nữ. Bảo lo micro. Thư tay của Genta có được đọc trước toàn công ty hay không phụ thuộc một phần vào việc micro có chạy hay không. Quà 20/10 của Bảo cho các chị em: sửa miễn phí điện thoại cho từng người. Thực dụng tới mức cảm động.
+- **20/10:** sinh nhật công ty kiêm Ngày Phụ nữ. 18:30 ở Quán Ốc Đêm, Bảo lo micro. Thư "G" có được Bác Bình đọc trước toàn công ty hay không phụ thuộc một phần vào việc micro có chạy hay không. 21:00 karaoke Chú Sáu. Quà 20/10 của Bảo cho các chị em: sửa miễn phí điện thoại cho từng người. Thực dụng tới mức cảm động.
 
 ### Chương 5: "Thanh Tra Ổ Cứng" (21/10 – 27/10)
-- **22/10 (kiểm tra thuế):** đoàn thanh tra xin xem máy tính kế toán. Thương nhờ Bảo "làm cho máy chạy chậm chậm một chút". Bảo có thể giúp, từ chối, hoặc khuyên Thương nói thật.
-- Vũ tìm tới phòng server lúc nửa đêm, lần đầu tiên không cười: *"Anh Bảo ơi… em làm mất file gốc rồi."* Bảo nhớ ra ổ cứng "KHÔNG ĐƯỢC MỞ".
-- **23/10 (sinh nhật Nguyên + livestream):** 10.000 người đang xem thì Tuất lao vào bánh kem hồng, kéo theo dây mạng. Bảo có 5 giây để cắm lại (⏱️).
+- **22/10 (kiểm tra thuế, 9:00–16:00):** đoàn đòi giấy tờ thành lập, hợp đồng BTT, nghiệm thu dự án tháng 6 và nguồn gốc 5 tỷ. Ổ cứng của Bảo có bản sao file tháng 6 và hồ sơ 2010. Đoàn xin xem máy tính kế toán. Thương nhờ Bảo "làm cho máy chạy chậm chậm một chút". Bảo có thể giúp, từ chối, hoặc khuyên Thương nói thật.
+- Vũ tìm tới phòng server lúc nửa đêm, lần đầu tiên không cười: file gốc chỉ còn trong cái USB rơi ở bãi xe hồi tháng 9. Bảo cứu file đã xóa trên máy chủ, hoặc nhớ ra ổ cứng "KHÔNG ĐƯỢC MỞ".
+- **23/10 (sinh nhật Nguyên + livestream 20:00):** Nguyên tỏ tình Vũ, rồi bánh kem đổ (Tuất, hoặc Phát cố tình vấp) kéo theo dây mạng. Bảo có 5 giây để cắm lại (⏱️).
 - **27/10:** Lưu Lực của LL-Entertainment hẹn Bảo ra quán cà phê Sống Ảo. Mời làm Trưởng phòng Công nghệ, lương 26.000.000đ, gấp đôi. Điều kiện: gửi "log lịch trình của Nguyên trong 4 ngày tới".
 
 ### Chương 6: "Ngày Internet Quốc Tế" (28/10 – 31/10)
-- **29/10:** wifi sập cả ngày, đúng Ngày Internet Quốc tế. Cả công ty truy đuổi Bảo từ tầng 2 xuống tầng trệt. Bảo phải vừa phát 4G từ điện thoại cho chiến dịch chạy tạm, vừa tìm nguyên nhân.
-- Mở tủ mạng: dây chính bị đứt. Thủ phạm tùy lượt chơi: **dấu răng chó và con gà cao su Nguyên giấu từ 4/10**, hoặc **vết cắt bằng kéo** của con rắn thứ hai. Đọc log camera hành lang để biết.
-- **30/10:** họp đánh giá. Bị Đổ Tội, Lương Tâm và việc Bảo có tìm ra thủ phạm hay không quyết định kết thúc của Bảo.
-- **31/10 (Đại Nhạc Hội Siêu Nhân):** Bảo đứng sau cánh gà, tay đặt trên cầu dao tổng, tai nghe bộ đàm. Mọi ánh đèn hồng đêm nay đều do Bảo bấm.
+- **28/10:** 2:10 sáng, video tỏ tình của Lĩnh lên fanpage. Bảo là admin kỹ thuật: video nằm 6 phút, khoảng 2.000 lượt xem rồi bị gỡ.
+- **29/10:** 9:00 wifi sập, đúng Ngày Internet Quốc tế. Cả công ty truy đuổi Bảo từ tầng 2 xuống tầng trệt. Bảo phải vừa phát 4G từ điện thoại cho chiến dịch chạy tạm, vừa tìm nguyên nhân.
+- Mở tủ mạng: cáp quang chính bị đứt, phải chờ thợ nhà mạng. Wifi có lại lúc 22:47. Thủ phạm tùy lượt chơi: **dấu răng chó và con gà cao su Nguyên giấu từ 4/10**, hoặc **vết cắt bằng kéo** của con rắn thứ hai. Đọc log camera hành lang để biết.
+- **30/10:** 19:00 tổng duyệt Đại Nhạc Hội: khóa tủ cầu dao, dây dự phòng, hoặc nhờ Bác Bình đứng canh.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** 19:20 Bảo đứng sau bàn đèn, chốt kịch bản đèn với Hương. Đêm diễn do cảnh chung kể. Kết thúc riêng chốt lúc 23:30.
 
 ---
 
@@ -231,18 +232,18 @@ Bảo không lên hình, không viết bài, không đăng gì. Nhưng **mọi l
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `it_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân** (23:30 ngày 31/10), khi `ket_thuc_su_nghiep` và `chung_cong_ty_song` đã được chốt. Mọi cảnh kết thúc đều xảy ra sau đêm diễn, nên Bảo luôn có mặt ở cánh gà tối 31/10.
+
+Thứ tự xét: Người Giữ Ký Ức → Phủ Sóng → Tiệm Tắt Đi Bật Lại → Kẻ Đọc Trộm → Đèn Tắt → Lỗi Người Dùng. Mặc định: Tiệm Tắt Đi Bật Lại.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 📶 **Phủ Sóng Toàn Công Ty** | Độ Ổn Định Mạng ≥ 80 vào ngày 31/10, Bị Đổ Tội < 30, đã tìm ra thủ phạm vụ 29/10, Đại Nhạc Hội Siêu Nhân không có sự cố âm thanh ánh sáng | Thắng ký đủ 3 chữ ký mua router mới, Thương ký luôn không hỏi hóa đơn. Bảo được lên "Trưởng nhóm Công nghệ". Bảo mở hộp router có thắt nơ hồng, đặt tên wifi mới là *"Cam on anh Bao"*. Cả 21 người kết nối cùng lúc. Lần đầu tiên, điện thoại Bảo nhận 21 tin nhắn mà không ai nhờ sửa gì |
-| 2 | 😄 🛠️ **Tiệm Tắt Đi Bật Lại** | Hoàn thành ≥ 40 ticket hỗ trợ, dạy được ít nhất 5 đồng nghiệp tự restart, tiền tiết kiệm ≥ 20.000.000đ, không nhận lời LL | Bảo nghỉ việc, mở tiệm sửa máy nhỏ ở đầu Hẻm 69, cạnh quán trà đá. Biển hiệu: *"TẮT ĐI BẬT LẠI. Không được thì vô đây."* Khách đầu tiên là Chương ôm cái laptop vỡ màn hình, nói sẽ trả bằng coin. Bảo cười, lần đầu tiên nói một câu dài hơn 4 chữ: *"Thôi, sửa free, anh trả nợ cũ cho em là được."* |
-| 3 | 😄 🔒 **Kết thúc bí mật: Người Giữ Ký Ức** | Mở nhánh "Người Gửi Thư" và "Bản Thu Mộc", Lương Tâm ≥ 80, không đọc trộm tin nhắn riêng nào sau 15/10, quan hệ với Bác Bình ≥ 80 | Đêm 31/10, sau buổi diễn, Bác Bình gọi Bảo ra chòi bảo vệ, đưa một lá thư tay ký chữ "G". Trong thư: *"Nhờ anh Bình cảm ơn cậu IT đã giữ cho công ty mười năm ký ức. Từ nay, cậu ấy giữ chìa khóa phòng lưu trữ."* Bảo dán lại nhãn ổ cứng: *"ĐƯỢC MỞ. Khi cần."* Tuất nằm ngủ trên chân Bảo |
-| 4 | 😢 🎯 **Lỗi Người Dùng** | Bị Đổ Tội đạt 100 (có thể xảy ra bất cứ lúc nào) | Tuấn mời Bảo đi "uống trà". Biên bản ghi: *"Nguyên nhân sự cố: IT."* Bảo ôm 3 cái máy tính tự ráp ra cổng, Tuất tiễn tới tận chòi. Bảo vừa bước ra khỏi cổng thì cả tòa nhà mất wifi. Trong group Zalo-lô hiện tin nhắn: *"Ủa ai biết restart router hông?"* Không ai trả lời |
-| 5 | 😢 👁️ **Kẻ Đọc Trộm** | Lương Tâm ≤ 20, và có người phát hiện bạn đọc tin nhắn riêng (Ngân, Thắng hoặc con rắn thứ hai tố) | Cả công ty đổi mật khẩu cùng một ngày. Mật khẩu mới của ai cũng là *"BaoDungDocNua"*. Bảo ngồi trong phòng server, mọi tài khoản admin bị khóa, chỉ còn cái quạt công nghiệp quay. Ly mì nguội. Không ai gõ cửa nhờ sửa máy nữa |
-| 6 | 😢 🌑 **Đèn Tắt** | Đã gửi log cho LL ngày 27/10, và chiến dịch Siêu Nhân Hồng thất bại hoặc Nguyên bị LL cướp | Đêm 31/10, Bảo ngồi ở phòng IT 20 người của LL, màn hình nào cũng sáng xanh lá chuối. Trên livestream, Sân khấu Đại Nhạc Hội Siêu Nhân phía bên kia đường tắt từng ngọn đèn một. Không còn ai đứng sau cánh gà giữ cầu dao. Bảo nhận ra mình nhớ cái router quấn băng keo |
-
----
+| 1 | 😄 🔒 **Kết thúc bí mật: Người Giữ Ký Ức** | Mở nhánh "Người Gửi Thư" (25/10 ở nhà vườn Ven Đô, hoặc 20/10 giúp Bác Bình đọc thư, cần quan hệ với Bác Bình ≥ 40), biết ổ cứng "KHÔNG ĐƯỢC MỞ" hoặc đã mở nhánh "Bản Thu Mộc", Lương Tâm ≥ 55, không đọc trộm tin nhắn riêng sau 15/10, không gửi log cho LL | Đêm 31/10, Bác Bình đưa Bảo lá thư "G" tới hôm 30/10, có đoạn nhờ cảm ơn "cậu IT đã giữ cho công ty mười năm ký ức", kèm chìa khóa phòng lưu trữ. Bảo dán lại nhãn ổ cứng: *"ĐƯỢC MỞ. Khi cần."* |
+| 2 | 😄 📶 **Phủ Sóng Toàn Công Ty** | Độ Ổn Định Mạng ≥ 85, Bị Đổ Tội < 40, đã tìm ra thủ phạm vụ 29/10, tổng duyệt 30/10 sẵn sàng, không có sự cố âm thanh, không gửi log cho LL | Router mới thắt nơ hồng, đủ ba chữ ký. Công ty sống: Bảo lên "Trưởng nhóm Công nghệ". Công ty không sống: Thắng bảo Bảo mang router theo. Wifi mới tên *"Cam on anh Bao"*, 21 tin nhắn không ai nhờ sửa gì |
+| 3 | 😄 🛠️ **Tiệm Tắt Đi Bật Lại** | Dạy được ít nhất 6 lần đồng nghiệp tự restart, quỹ router còn ≥ 6.000.000đ, Bị Đổ Tội < 60, không gửi log cho LL | Bảo mở tiệm sửa máy 6m² ở đầu Hẻm 69 (nghỉ việc nếu công ty còn, ôm router về nếu công ty đóng cửa). Khách đầu tiên là Chương. Bảo nói câu dài hơn 4 chữ: *"Thôi, sửa free, anh trả nợ cũ cho em là được."* |
+| 4 | 😢 👁️ **Kẻ Đọc Trộm** | Lương Tâm ≤ 40 và bị phát hiện đọc tin nhắn riêng | 23:40, đêm diễn vừa tan, ảnh chụp log rơi vào group công ty. Cả công ty đổi mật khẩu thành *"BaoDungDocNua"*. Thứ Hai, quyền admin bị thu hồi. Không ai gõ cửa phòng server nữa |
+| 5 | 😢 🌑 **Đèn Tắt** | Đã gửi log cho LL ngày 27/10 và công ty không sống | 23:30, Bảo tắt bàn đèn sân khấu lần cuối. Thứ Ba, Lưu Lực nhắn "Lời mời vẫn còn". Tháng 11, Bảo ngồi ở phòng IT 20 người của LL, wifi "LL-STAFF-5G" không bao giờ rớt, và nhớ cái router quấn băng keo |
+| 6 | 😢 🎯 **Lỗi Người Dùng** | Bị Đổ Tội ≥ 60 | Thứ Hai 2/11, Tuấn mời Bảo uống trà. Biên bản ghi: *"Nguyên nhân sự cố: IT."* Bảo ôm 3 cái máy tự ráp ra cổng, cả tòa nhà mất wifi. Trong group: *"Ủa ai biết restart router hông?"* |
 
 ## 9. Thành tựu
 
