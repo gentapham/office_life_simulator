@@ -201,7 +201,7 @@ truong_phong: *(bất ngờ)* {con_ong_chau_cha}. Cậu đến đúng giờ à?
 * [😎 "Chill. Tui đổi phong cách."]
     _Cả phòng cười. Bạn cười theo. Dưới bàn, tay bạn đang lướt tin phòng trọ._
 * [📋 "Ông giao tui việc gì cũng được. Tuần này tui rảnh."]
-    truong_phong: *(ngạc nhiên)* Thế… cậu lo phần quảng bá Đêm Hồng với các tiệm trong quận nhé.
+    truong_phong: *(ngạc nhiên)* Thế… cậu lo phần quảng bá Đại Nhạc Hội với các tiệm trong quận nhé.
     ~ long_tl(4)
     ~ qh("truong_phong", 6)
 - -> END

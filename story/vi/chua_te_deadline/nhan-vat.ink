@@ -16,7 +16,7 @@ ran_doc: Ủa ông producer! Nói nhỏ thôi nha… dạo này ông với anh H
 * [💬 "Ông quen ảnh từ trước hả? Sao ông hay nhìn tay ảnh vậy?"]
     ran_doc: *(khựng nửa giây)* Đâu có. Ông tưởng tượng. Chắc ông thức khuya quá.
     ~ qh("ran_doc", -5)
-- ran_doc: Mà nè, ông cho tui xin cái bảng tiến độ Đêm Hồng được hông? Để tui viết bản tin nội bộ cho chuẩn.
+- ran_doc: Mà nè, ông cho tui xin cái bảng tiến độ Đại Nhạc Hội được hông? Để tui viết bản tin nội bộ cho chuẩn.
 * [📋 Gửi luôn, có gì đâu.]
     ran_doc: Cảm ơn ông nha! Ông dễ thương ghê.
     _Bạn không biết rằng từ giờ, {ran_doc} biết chính xác giờ nào Siêu Nhân Hồng ở đâu._
@@ -136,7 +136,7 @@ con_ong_chau_cha: Ê {chua_te_deadline}. Chill hông? Cà phê Sống Ảo hông
     ~ qh("con_ong_chau_cha", 8)
 * [😶 "Tui đang chạy việc."]
     con_ong_chau_cha: Ờ. Ông có việc để chạy. Sướng ghê.
-* [💬 "Ông nghe nhạc gì hay hông? Tui cần nhạc cho Đêm Hồng."]
+* [💬 "Ông nghe nhạc gì hay hông? Tui cần nhạc cho Đại Nhạc Hội."]
     con_ong_chau_cha: *(khựng lại)* … Nhạc hả. Anh biết một người tên "Rồng", viết nhạc hồng hay lắm. Mà người đó… nhút nhát.
     ~ qh("con_ong_chau_cha", 5)
 - con_ong_chau_cha: Mà nè, nếu một ngày ông không phải làm gì cho ai, ông sẽ làm gì?
@@ -271,7 +271,7 @@ idol_het_thoi: *(kính đen, trong nhà)* Em biết anh là ai không?
 * [🎤 Hát: "Ngày xưa có đôi bạn thân…"]
     idol_het_thoi: *(hát tiếp theo phản xạ)* …bán cá viên chiên tại công viên! *(rồi ngưng, ho)* Hừm. Hát đúng tông đó.
     ~ qh("idol_het_thoi", 5)
-- idol_het_thoi: Đêm Hồng… có tiết mục nào cho anh hông?
+- idol_het_thoi: Đại Nhạc Hội… có tiết mục nào cho anh hông?
 * [📋 "Có anh. Cue 23. Anh với anh Hồng song ca 'Công Viên'."]
     idol_het_thoi: Song ca với… nó hả? *(im lâu)* Cue 23. Anh nhớ rồi.
     ~ vu_cue_sheet = vu_cue_sheet + 1
@@ -296,7 +296,7 @@ quan_ly_idol: Khoan, anh nghe máy chút… *(5 phút sau)* Rồi. Em cần gì?
 * [🤝 "Anh ngủ chút đi anh, mắt anh thâm quá."]
     quan_ly_idol: Ngủ hả. *(cười)* Anh nhớ cái chữ đó. Hồi 2015 anh có dùng.
     ~ qh("quan_ly_idol", 5)
-- quan_ly_idol: Chuyện này để anh lo. Em lo cue sheet cho đàng hoàng. Đêm Hồng mà hỏng là cả anh, cả Nguyên, cả {idol_het_thoi}…
+- quan_ly_idol: Chuyện này để anh lo. Em lo cue sheet cho đàng hoàng. Đại Nhạc Hội mà hỏng là cả anh, cả Nguyên, cả {idol_het_thoi}…
 _{quan_ly_idol} ngưng nửa câu. Điện thoại lại reo._
 * [😇 "Dạ. Cue sheet em lo."]
     ~ qh("quan_ly_idol", 3)
@@ -313,7 +313,7 @@ bien_kich: {chua_te_deadline}. Tui đang bí. Kịch bản livestream sinh nhậ
     bien_kich: Bánh kem bị đổ. Đó là nỗi đau. Cảm ơn ông.
     _Bạn vừa vô tình viết trước một sự kiện có thật. Không ai biết._
     ~ qh("bien_kich", 3)
-* [🙏 "Bà viết giùm tui luôn phần lời dẫn Đêm Hồng nha."]
+* [🙏 "Bà viết giùm tui luôn phần lời dẫn Đại Nhạc Hội nha."]
     ~ vu_so_lan_nho_xiu++
     bien_kich: Được. Nhưng tui ghi tên tui.
     ~ vu_cue_sheet = vu_cue_sheet + 3
@@ -364,7 +364,7 @@ designer: Ông tới đòi file hả? Poster sửa lần thứ 17. Cho xin feedb
 * [💬 "Bà làm 2 laptop chi vậy?"]
     designer: *(gập một cái lại)* Một cái để làm, một cái để… ờm, render. Hỏi gì nhiều vậy.
     ~ qh("designer", -3)
-- designer: Đêm Hồng backdrop cao 6 mét. Tui cần chốt trước 25. Ông chốt được hông?
+- designer: Đại Nhạc Hội backdrop cao 6 mét. Tui cần chốt trước 25. Ông chốt được hông?
 * [📋 "Chốt. Ngày 24 tui ký duyệt, ai sửa nữa thì qua tui."]
     designer: Ông nói vậy là ông gánh nha. Tui chụp màn hình rồi đó.
     ~ qh("designer", 8)
@@ -378,7 +378,7 @@ designer: Ông tới đòi file hả? Poster sửa lần thứ 17. Cho xin feedb
 // ------------------------------------------------------------
 === chua_te_deadline_tudo_sales ===
 # npc:sales
-sales: Em {chua_te_deadline}! Tin chị đi, Đêm Hồng chị kéo được 3 nhà tài trợ. Chắc kèo!
+sales: Em {chua_te_deadline}! Tin chị đi, Đại Nhạc Hội chị kéo được 3 nhà tài trợ. Chắc kèo!
 _{sales} nhỏ hơn bạn 2 tuổi. Nhưng "em" thì vẫn là em._
 * [💬 "Tên nhà tài trợ là gì vậy {sales}… à, chị?"]
     sales: BTT Global! Chủ tịch là Mr. Kevin Trộn. Chị nhậu với ổng rồi. No cap.
@@ -410,7 +410,7 @@ chi_dai: {chua_te_deadline}. Ăn cơm chưa? Ngồi xuống.
 * [😎 "Dạ em ăn mì ly rồi chị."]
     chi_dai: Mì ly không phải cơm. Ngồi xuống.
     ~ an(20)
-- chi_dai: Đêm Hồng sân khấu chị dựng. Còn cue sheet là của em. Em gửi chị bản nháp trước ngày 28, chị cần biết lúc nào kéo dây, lúc nào bắn pháo.
+- chi_dai: Đại Nhạc Hội sân khấu chị dựng. Còn cue sheet là của em. Em gửi chị bản nháp trước ngày 28, chị cần biết lúc nào kéo dây, lúc nào bắn pháo.
 * [📋 "Dạ, em hứa. Ngày 27 chị có."]
     chi_dai: Hứa với chị thì nhớ. Chị không phải {truong_phong}, chị không họp. Chị tới tận nhà.
     ~ qh("chi_dai", 5)

@@ -5,7 +5,7 @@
 // ============================================================
 
 // ------------------------------------------------------------
-// Đánh giá kết thúc. Chốt sau họp đánh giá 30/10, chiếu sau Đêm Hồng.
+// Đánh giá kết thúc. Chốt sau họp đánh giá 30/10, chiếu sau Đại Nhạc Hội Siêu Nhân.
 === con_ong_chau_cha_3010_danh_gia ===
 # ngay:31 # gio:23:30 # bat_buoc # dieu_kien:sau Dem Hong, chot ket thuc cua Long
 // 1. Bí mật: hai người đề cử nhau
@@ -54,7 +54,7 @@
 // 😄 🎵 NHẠC SĨ KHÔNG CẦN Ô
 === con_ong_chau_cha_kt_nhac_si_khong_can_o ===
 # noi:san_khau_dem_hong
-_Đêm Hồng. 20 giờ 30. Sân khấu tối om. Một vệt đèn hồng rọi xuống giữa sân khấu._
+_Đại Nhạc Hội Siêu Nhân. 20 giờ 30. Sân khấu tối om. Một vệt đèn hồng rọi xuống giữa sân khấu._
 { long_nguoi_hat == "song_ca":
     _{sieu_nhan_hong} và {idol_het_thoi} đứng chung một vệt sáng. Một người từng là siêu sao, một người đang muốn thành siêu sao._
 - else:

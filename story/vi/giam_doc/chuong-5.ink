@@ -458,7 +458,7 @@ _Bạn đứng nhìn chiếc xe hồng chạy về phía tòa nhà xanh lá chu�
 === giam_doc_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:15:30 # noi:phong_giam_doc
 _{sales} chạy vào, thở hổn hển, tóc rối._
-sales: Anh! Sữa Chua Hồng Hào ở Ven Đô gọi em! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thật! Lần này thật!
+sales: Anh! Sữa Chua Hồng Hào ở Ven Đô gọi em! Họ muốn tài trợ 1 tỷ cho Đại Nhạc Hội! Thật! Lần này thật!
 _Cả phòng kính im lặng. {ke_toan} đứng ở cửa, khoanh tay. Không ai tin. Kể cả bạn, một chút._
 * [😂 "Giống BTT Global à em?"]
     sales: *(mắt đỏ hoe)* … Dạ. Em biết mà. Lần duy nhất em nói thật.

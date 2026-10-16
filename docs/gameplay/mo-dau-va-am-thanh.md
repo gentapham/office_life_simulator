@@ -43,8 +43,8 @@ Ngày 1/10 là ngày hướng dẫn, lồng vào câu chuyện, không có bản
 
 Mỗi nhân vật có **một điểm khác riêng trong ngày đầu**. Ví dụ: Hiếu nhận ra Nguyên lúc 9:00, Tuất bị Nguyên chọc ở cổng, Thương đọc tới trang 47 của hợp đồng, Bình nhận lá thư "G" đầu tháng.
 
-### 1.4. Đêm Hồng & màn kết
-- Tối **31/10**, game chuyển sang cảnh Đêm Hồng Halloween ở Sân khấu Đêm Hồng.
+### 1.4. Đại Nhạc Hội Siêu Nhân & màn kết
+- Tối **31/10**, game chuyển sang cảnh Đại Nhạc Hội Siêu Nhân ở Sân khấu Đại Nhạc Hội Siêu Nhân.
 - Màn hình hiện **2 cái kết** lần lượt:
   1. **Kết thúc của nhân vật người chơi** (đã quyết định từ cuộc họp 30/10).
   2. **Kết thúc sự nghiệp của Siêu Nhân Hồng** (theo số người theo dõi lúc 23:59 ngày 31/10).
@@ -72,7 +72,7 @@ Mỗi nhân vật có **một điểm khác riêng trong ngày đầu**. Ví d�
 | Phố Cũ, chùa | Tiếng chuông chùa, nhạc cụ dân tộc nhẹ | |
 | Đài Tivi Hóng, gameshow | Nhạc gameshow kịch tính | |
 | Vũng Tàu | Tiếng sóng, đàn guitar lửa trại | |
-| Đêm Hồng Halloween | Nhạc chủ đề Siêu Nhân Hồng, hoành tráng | Xem mục 2.4 |
+| Đại Nhạc Hội Siêu Nhân | Nhạc chủ đề Siêu Nhân Hồng, hoành tráng | Xem mục 2.4 |
 | Cảnh buồn, kết thúc buồn | Piano chậm | |
 
 ### 2.2. "Giọng" nhân vật
@@ -98,14 +98,14 @@ Không lồng tiếng thật. Mỗi chữ hiện ra kèm một tiếng "bíp" ng
 - **Điện thoại:** thông báo Zalo-lô, chuông gọi, tiếng chụp màn hình, tiếng livestream có người vào.
 - **Đường phố:** còi xe, kẹt xe, mưa, sấm, rao bánh mì.
 - **Giao diện:** chọn lựa chọn, lựa chọn có giờ (tiếng tích tắc), mở khóa lựa chọn ẩn, nhận tiền ("ting ting"), lên chỉ số, tụt chỉ số.
-- **Sự kiện:** mất điện (tiếng "phụt"), pháo hoa Đêm Hồng, vỗ tay, khán giả reo hò.
+- **Sự kiện:** mất điện (tiếng "phụt"), pháo hoa Đại Nhạc Hội Siêu Nhân, vỗ tay, khán giả reo hò.
 
 ### 2.4. Bài hát trong game
 
 | Bài | Ai hát | Vai trò trong game |
 |---|---|---|
 | **"Công Viên"** (2015) | Phát | Bài hit duy nhất của Phát. Meme xuyên suốt game: *"Ngày xưa có đôi bạn thân bán cá viên chiên tại công viên, thích ăn chuối chiên"*. Có bản gốc, bản lofi (tiêu đề), bản karaoke, bản remix "Công Viên Hồng" |
-| **"Hồng Là Thái Độ"** | Long sáng tác (bí mật), Siêu Nhân Hồng hát | **Bài hát chủ đề của Siêu Nhân Hồng**, được dùng ở Đêm Hồng nếu Long dám công khai mình là tác giả. Nếu không, Đêm Hồng dùng nhạc nền không lời |
+| **"Hồng Là Thái Độ"** | Long sáng tác (bí mật), Siêu Nhân Hồng hát | **Bài hát chủ đề của Siêu Nhân Hồng**, được dùng ở Đại Nhạc Hội Siêu Nhân nếu Long dám công khai mình là tác giả. Nếu không, Đại Nhạc Hội Siêu Nhân dùng nhạc nền không lời |
 | **"Việc Hôm Nay Cứ Để Ngày Mai Tính"** | Cả công ty | Bài hát công ty (bản nháp). Phát trong cảnh liên hoan 20/10, ai cũng hát sai lời |
 
 Lời đầy đủ của các bài sẽ viết sau, khi làm phần âm thanh.

@@ -4,7 +4,7 @@
 // dựa trên nguoi_theo_doi, so_scandal, nguyen_theo_ll,
 // nguyen_thao_mu_dem_hong mà các chương đã đặt.
 // Tên cảnh đánh giá giữ "3010" theo quy ước, nhưng cảnh chạy sau
-// Đêm Hồng 31/10 để tính cả lựa chọn tháo mũ trong đêm diễn.
+// Đại Nhạc Hội Siêu Nhân 31/10 để tính cả lựa chọn tháo mũ trong đêm diễn.
 // ============================================================
 
 === sieu_nhan_hong_3010_danh_gia ===
@@ -43,7 +43,7 @@
 // ------------------------------------------------------------
 === sieu_nhan_hong_kt_khong_phai_pr ===
 # ket_thuc:khong_phai_pr # loai:co_hau
-_Đêm Hồng tan. 0 giờ 40. Sân thượng {cong_ty}. Ghế nhựa, cây phơi đồ, thùng nước. Đèn thành phố nhấp nháy như ai đó đang gõ phím._
+_Đại Nhạc Hội Siêu Nhân tan. 0 giờ 40. Sân thượng {cong_ty}. Ghế nhựa, cây phơi đồ, thùng nước. Đèn thành phố nhấp nháy như ai đó đang gõ phím._
 _Bạn ngồi trên ghế nhựa. Không mặc đồ. Áo thun xám, tóc bết, tay còn dính kim tuyến pháo hoa._
 _Cửa sân thượng kêu két. {chua_te_deadline} bước lên, tay cầm hai ly trà sữa. Một ly nhiều đá. Một ly topping hồng, hồng nhiều nhiều._
 chua_te_deadline: Em đoán anh ở đây. Em đoán đúng một lần trong đời.
@@ -68,7 +68,7 @@ _Dưới sân, {cho} sủa một tiếng. Rồi im. Thành phố vẫn sáng. �
 // ------------------------------------------------------------
 === sieu_nhan_hong_kt_cay_kem_xom_cay_me ===
 # ket_thuc:cay_kem_xom_cay_me # loai:co_hau
-_Một tuần sau Đêm Hồng. Quán trà đá đầu Hẻm 69. Chiều muộn. Ông Ba quạt mo._
+_Một tuần sau Đại Nhạc Hội Siêu Nhân. Quán trà đá đầu Hẻm 69. Chiều muộn. Ông Ba quạt mo._
 _Bạn đi bộ tới, không mặc đồ, tay cầm hai cây kem que mua ở tiệm tạp hóa đầu đường. Kem dâu. Loại rẻ nhất, giống hệt hai mươi năm trước._
 _{ran_doc} ngồi ở bàn trong góc, ly trà đá 3 nghìn. Thấy bạn, cậu ta không đứng dậy. Cũng không quay đi._
 _Bạn đặt một cây kem trước mặt cậu ta._
@@ -93,7 +93,7 @@ _{cho} nằm dưới gầm bàn bác, liếc lên nhìn hai cây kem, rồi li�
 // ------------------------------------------------------------
 === sieu_nhan_hong_kt_ban_bon_chan ===
 # ket_thuc:ban_bon_chan # loai:co_hau # bi_mat
-_23:00 ngày 31/10. Đêm Hồng đã tàn. Cổng {cong_ty} vắng tanh. Đèn chòi bảo vệ còn sáng._
+_23:00 ngày 31/10. Đại Nhạc Hội Siêu Nhân đã tàn. Cổng {cong_ty} vắng tanh. Đèn chòi bảo vệ còn sáng._
 _Bạn ghé lại lấy chiếc xe hồng. Vẫn mặc nguyên bộ đồ. Mỏi tới mức không muốn tạo dáng nữa._
 _Từ gầm cầu thang, có tiếng chân lạch bạch. {cho} chạy ra, chân sau còn hơi khập khiễng từ hôm bị lạc. Trong miệng nó ngậm một thứ màu hồng._
 _Chiếc găng tay hồng. Cái bạn làm mất từ ngày 4/10. Bẩn, rách một ngón, dính lông chó và mùi cà phê sữa đá. Nó đã giữ suốt 27 ngày._
@@ -119,7 +119,7 @@ _Bạn lấy bút, gạch dòng đó đi. Viết lại: "Có con chó ở cổng
 === sieu_nhan_hong_kt_nguoi_trong_bo_do ===
 # ket_thuc:nguoi_trong_bo_do # loai:buon
 _Căn nhà ở cuối con đường không tên. Bàn ăn 12 ghế. Bạn ngồi ở cái ghế duy nhất có dấu ngồi._
-_Tivi đang chiếu lại Đêm Hồng. Siêu Nhân Hồng tạo dáng giữa pháo hoa. Cả khán đài hô: "Hồng không phải màu, Hồng là thái độ!"_
+_Tivi đang chiếu lại Đại Nhạc Hội Siêu Nhân. Siêu Nhân Hồng tạo dáng giữa pháo hoa. Cả khán đài hô: "Hồng không phải màu, Hồng là thái độ!"_
 _Trên màn hình, con số người theo dõi: {nguoi_theo_doi}._
 _Trên bàn là đĩa bánh chuối chiên mang về từ phòng chờ. Điều khoản số 4. Đã nguội._
 _Bộ đồ hồng treo trên móc ở góc phòng. Từ đây nhìn sang, nó giống một người khác đang đứng đó, nhìn bạn ăn tối._
@@ -144,14 +144,14 @@ _Mười một cái ghế trống. Đèn vẫn chiếu xuống từng cái, như
 // ------------------------------------------------------------
 === sieu_nhan_hong_kt_chieu_pr_hay_ghe ===
 # ket_thuc:chieu_pr_hay_ghe # loai:buon
-_Đêm Hồng. Giữa sân khấu, giữa pháo hoa, bạn quỳ xuống. Một bó hoa hồng. Cả khán đài hét đến khản cổ._
+_Đại Nhạc Hội Siêu Nhân. Giữa sân khấu, giữa pháo hoa, bạn quỳ xuống. Một bó hoa hồng. Cả khán đài hét đến khản cổ._
 _{chua_te_deadline} bị đẩy ra giữa sân khấu, tay vẫn cầm bộ đàm. Ánh đèn rọi thẳng vào mặt. Cậu ta cười. Một nụ cười rất chuyên nghiệp._
 _Cậu ta nhận hoa. Ghé sát micro, nói nhỏ, nhưng micro bắt được hết:_
 chua_te_deadline: Chiêu này đỉnh nóc kịch trần luôn anh ơi. KPI vượt rồi.
 _Khán đài cười ồ, vỗ tay. Ai cũng nghĩ đó là câu đùa dễ thương nhất đêm nay. Bạn cũng cười. Vì cả nghìn người đang nhìn._
 _Pháo hoa nổ. Bạn đứng dậy, tạo dáng. Tay vẫn còn run._
 _Sáng hôm sau, 7 giờ 02. Điện thoại rung. Một tin nhắn từ {chua_te_deadline}._
-_Một file báo cáo: "Màn tỏ tình Đêm Hồng: 4,7 triệu lượt xem, 312.000 lượt chia sẻ, top 1 xu hướng 6 tiếng liền. Tương tác tăng 840%."_
+_Một file báo cáo: "Màn tỏ tình Đại Nhạc Hội Siêu Nhân: 4,7 triệu lượt xem, 312.000 lượt chia sẻ, top 1 xu hướng 6 tiếng liền. Tương tác tăng 840%."_
 _Kèm một sticker ngón cái._
 _Bên dưới, một dòng: "Anh với anh {quan_ly_idol} làm content giỏi thiệt. Em học được nhiều lắm. Chill."_
 _Bạn đọc đi đọc lại. Không có chữ nào sai. Chỉ là không có chữ nào đúng._

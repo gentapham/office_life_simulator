@@ -85,7 +85,7 @@ dan_dau_tu: Không ai biết! Thế mới là cơ hội!
 // ------------------------------------------------------------
 === chi_dai_1010_luong_chua_ve ===
 # ngay:10 # gio:10:00 # noi:ven_do
-_Thứ 7, ngày 10. Ngày nhận lương. Tài khoản của bạn vẫn nằm im như cái cột điện ở bãi đất Đêm Hồng._
+_Thứ 7, ngày 10. Ngày nhận lương. Tài khoản của bạn vẫn nằm im như cái cột điện ở bãi đất Đại Nhạc Hội Siêu Nhân._
 _Group công ty: "Ngân hàng đang kiểm tra giao dịch lớn, thứ 2 lương về nhé cả nhà. Công ty là gia đình." Ký tên: {giam_doc}._
 _Bạn đang ở Ven Đô, đi coi kho cho thuê đèn sân khấu. Ngang qua tòa nhà kính 20 tầng màu xanh lá chuối của LL-Entertainment._
 _Ở bậc thềm, một dáng người quen quen đang đứng chỉnh tóc trước cửa kính. Áo sơ mi trắng, túi xách màu be. Là {thanh_ninh}._
@@ -262,7 +262,7 @@ _Ngày Doanh nhân Việt Nam. {giam_doc} ôm bó hoa tự mua cho chính mình.
 _Rồi {thanh_ninh} đứng dậy, mở một bài phát biểu 6 trang. "Anh {giam_doc}: người truyền lửa, người cầm lái, người…"_
 _Phút thứ 9. Bạn đếm được 41 chữ "tâm huyết"._
 ~ cd_nk(20)
-thanh_ninh: Dạ… và em xin nói thêm, chị {chi_dai} ơi, kế hoạch Đêm Hồng của chị hơi tốn quá ạ. Anh {giam_doc} vừa khen ý tưởng tiết kiệm của em đó chị.
+thanh_ninh: Dạ… và em xin nói thêm, chị {chi_dai} ơi, kế hoạch Đại Nhạc Hội của chị hơi tốn quá ạ. Anh {giam_doc} vừa khen ý tưởng tiết kiệm của em đó chị.
 * [🗣️ "Ý tưởng tiết kiệm của em là cắt tiền đèn sân khấu, rồi cho Siêu Nhân Hồng diễn trong bóng tối hả?"]
     _Cả phòng cười. {sieu_nhan_hong} cười to nhất, rồi tạo dáng trong bóng tối tưởng tượng._
     ~ cd_uy(10)
@@ -300,7 +300,7 @@ thanh_ninh: Dạ… và em xin nói thêm, chị {chi_dai} ơi, kế hoạch Đ�
 // ------------------------------------------------------------
 === chi_dai_1410_khao_sat_san_khau ===
 # ngay:14 # gio:15:00 # noi:san_khau_dem_hong # bat_buoc
-_Mốc 2. Bạn đi khảo sát Sân khấu Đêm Hồng. Bãi đất trống ở Phường Tân Drama. Một cái cột điện. Tiếng ếch._
+_Mốc 2. Bạn đi khảo sát Sân khấu Đại Nhạc Hội Siêu Nhân. Bãi đất trống ở Phường Tân Drama. Một cái cột điện. Tiếng ếch._
 _{thanh_xin_nghi} đáng lẽ đi cùng để lo lịch trình. Sáng nay {thanh_xin_nghi} xin nghỉ "về quê phụ gặt lúa". Ngày Hội Nông dân. Lý do rất hợp lệ._
 { nguoi_theo_doi >= 200000:
     _Điện thoại báo: {nguoi_theo_doi} người theo dõi. Qua mốc 2. Group công ty rộn ràng._

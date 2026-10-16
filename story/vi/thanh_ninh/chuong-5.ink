@@ -421,8 +421,8 @@ luu_luc: *(nhặt vội, mồ hôi chảy qua lớp keo tóc)* Chào… chào ch
 // ------------------------------------------------------------
 === thanh_ninh_2710_lich_dem_hong ===
 # ngay:27 # gio:21:00 # noi:nha_thanh_ninh # dieu_kien:tn_xanh_la_chuoi>=40
-_Thư ký LL nhắn: "Em ơi, cho chị xin lịch Đêm Hồng chi tiết nha: giờ diễn, lối vào hậu trường, ai đứng cạnh {sieu_nhan_hong}. Chị cảm ơn 💚"_
-_Lịch Đêm Hồng nằm trong hộp thư sếp. {chi_dai} gửi lúc 17:00, đánh dấu "MẬT – chỉ anh đọc"._
+_Thư ký LL nhắn: "Em ơi, cho chị xin lịch Đại Nhạc Hội Siêu Nhân chi tiết nha: giờ diễn, lối vào hậu trường, ai đứng cạnh {sieu_nhan_hong}. Chị cảm ơn 💚"_
+_Lịch Đại Nhạc Hội Siêu Nhân nằm trong hộp thư sếp. {chi_dai} gửi lúc 17:00, đánh dấu "MẬT – chỉ anh đọc"._
 * [🟢 Gửi.]
     ~ tn_gui_lich_dem_hong = true
     ~ tn_xanh(20)

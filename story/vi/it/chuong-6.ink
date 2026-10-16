@@ -154,7 +154,7 @@ _Đó là kho báu của {cho}. Bạn nhìn cái bao rác đen. Rồi nhìn {cho
 // ------------------------------------------------------------
 === it_3010_tong_duyet ===
 # ngay:30 # gio:19:00 # noi:san_khau_dem_hong # bat_buoc
-_Tổng duyệt Đêm Hồng. Sân khấu ngoài trời. 64 cây đèn, 12 cái loa, 4 micro, 1 cầu dao tổng. Bạn đứng sau cánh gà, kiểm tra từng thứ._
+_Tổng duyệt Đại Nhạc Hội Siêu Nhân. Sân khấu ngoài trời. 64 cây đèn, 12 cái loa, 4 micro, 1 cầu dao tổng. Bạn đứng sau cánh gà, kiểm tra từng thứ._
 chi_dai: {it}. Đêm mai là đêm cuối. Em cần gì, nói chị. Bây giờ.
 _Bạn nhìn danh sách. Thiếu một cái khóa cho tủ cầu dao. Thiếu dây dự phòng. Thiếu người thứ hai đứng cạnh cầu dao._
 * [🔒 "Khóa tủ cầu dao. Chìa em giữ."]
@@ -186,7 +186,7 @@ _Bạn nhìn danh sách. Thiếu một cái khóa cho tủ cầu dao. Thiếu d�
 // ------------------------------------------------------------
 === it_3110_canh_ga ===
 # ngay:31 # gio:18:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Cả công ty hóa trang. {giam_doc} hóa trang "Ông Kẹ Ngân Hàng", tay cầm cuốn sổ nợ bằng bìa cứng. Không ai dám cười._
+_Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} hóa trang "Ông Kẹ Ngân Hàng", tay cầm cuốn sổ nợ bằng bìa cứng. Không ai dám cười._
 _Bạn đứng sau cánh gà, tai đeo bộ đàm, tay đặt trên bàn điều khiển đèn. Bên cạnh là tủ cầu dao tổng._
 _Điện thoại bạn rung. {thanh_xin_nghi}: "Anh {it}, 20:00 em thi chung kết. Nếu em không ở đây, anh lo giùm em phần lịch trình đèn nha."_
 * [💬 "Đi thi đi. Đèn anh lo."]

@@ -120,7 +120,7 @@ hong_hot: *(nói vào điện thoại)* Cả nhà ơi, lửa trại công ty em 
 // ------------------------------------------------------------
 === sieu_nhan_hong_1710_dem_phong_205 ===
 # ngay:17 # gio:23:40 # noi:khach_san_vung_tau
-_Phòng 205. Ngoài hành lang, {giam_doc} say, hét "Anh tăng lương cho cả công ty!". {sales} hét theo: "Chị mời ca sĩ nổi tiếng nhất nước về hát Đêm Hồng!"_
+_Phòng 205. Ngoài hành lang, {giam_doc} say, hét "Anh tăng lương cho cả công ty!". {sales} hét theo: "Chị mời ca sĩ nổi tiếng nhất nước về hát Đại Nhạc Hội Siêu Nhân!"_
 _{ran_doc} nằm giường bên cửa sổ, quay mặt vào tường._
 { snh_mo_nhanh_hieu_ech:
     * [🙂 "{ran_doc}… em có muốn anh đổi phòng hông?"]

@@ -98,7 +98,7 @@ hong_hot: {sales} ơi! Nghe gì chưa? Ét o ét! Bà có nhà tài trợ mới 
 === sales_tudo_npc_con_ong_chau_cha ===
 # npc:con_ong_chau_cha
 con_ong_chau_cha: Ê {sales}. Chill không? Đi Sống Ảo cà phê với anh không? Anh bao. À… để anh xem thẻ còn quẹt được không.
-* [💁 "Tin chị đi, anh nên tài trợ Đêm Hồng."]
+* [💁 "Tin chị đi, anh nên tài trợ Đại Nhạc Hội."]
     con_ong_chau_cha: Bằng gì em? Tiền của chú anh hả? *(cười)* Thôi, anh không muốn xài tiền của chú nữa.
     ~ qh("con_ong_chau_cha", 3)
 * [😇 "Để em bao. Hôm nay em có hoa hồng."]

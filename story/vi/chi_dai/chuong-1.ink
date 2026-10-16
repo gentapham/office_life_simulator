@@ -160,7 +160,7 @@ _Hai tiếng sau._
 sales: Tin chị đi! Em có 3 nhà tài trợ, tổng 2 tỷ, bên Tập đoàn Bánh Tráng Trộn Toàn Cầu. Chủ tịch là Mr. Kevin Trộn, thân em lắm!
 thuc_tap_sinh: Dạ… em có một ý tưởng phim ngắn, kể về một người gác két ngân hàng ạ…
 bien_kich: *(ghi ghi chép chép rất nhanh)* Ừm. Hay đó em. Để chị suy nghĩ.
-giam_doc: Còn em {chi_dai}. Em lo cho anh "Đêm Hồng" nhé. Đêm 31/10, sân khấu ngoài trời, truyền hình trực tiếp. Hoành tráng vào!
+giam_doc: Còn em {chi_dai}. Em lo cho anh "Đại Nhạc Hội" nhé. Đêm 31/10, sân khấu ngoài trời, truyền hình trực tiếp. Hoành tráng vào!
 chi_dai: Ngân sách bao nhiêu sếp?
 giam_doc: Anh không ép, tùy em. Miễn hoành tráng.
 _Ở cuối bàn, {ke_toan} lắc đầu rất nhẹ. Một lần. Hai lần._
@@ -181,7 +181,7 @@ _Ở cuối bàn, {ke_toan} lắc đầu rất nhẹ. Một lần. Hai lần._
     ke_toan: *(ghi vào sổ)* Thứ hai. Có hóa đơn.
     ~ cd_td(3)
     ~ qh("giam_doc", 5)
-- sieu_nhan_hong: *(giơ tay)* Cho em hỏi! Đêm Hồng có bánh chuối chiên hông? Hợp đồng ghi rồi đó!
+- sieu_nhan_hong: *(giơ tay)* Cho em hỏi! Đại Nhạc Hội có bánh chuối chiên hông? Hợp đồng ghi rồi đó!
 chi_dai: Có. Bánh chuối chiên thì tui lo được. Cái tui lo hổng được là… cái cột điện giữa bãi đất.
 sieu_nhan_hong: Cột điện gì?
 chi_dai: Thì cái sân khấu mình thuê đó. Chưa có sân khấu. Có bãi đất. Với cái cột điện.
@@ -194,7 +194,7 @@ chi_dai: Thì cái sân khấu mình thuê đó. Chưa có sân khấu. Có bãi
 _Sân thượng. Hai ly trà đá, hai cái ghế nhựa, một cây phơi đồ. Chỗ của bạn và {ke_toan} từ năm 2018._
 _Thứ 6 nên có trà sữa từ quỹ phạt đi trễ, nhưng hai người vẫn uống trà đá. Trà sữa là của tụi nhỏ._
 ke_toan: Bà biết vụ "tùy em" rồi đó. Quỹ còn 2 tỷ, mà 2 tỷ đó là tiền lương, tiền điện, tiền nợ.
-ke_toan: Đêm Hồng mà xin trên 300 triệu là tui không ký nổi đâu.
+ke_toan: Đại Nhạc Hội mà xin trên 300 triệu là tui không ký nổi đâu.
 * [💬 "Còn trang 47? Sáng hôm qua bà nói gì với sếp vậy?"]
     ke_toan: *(im lặng rất lâu)* Chưa phải lúc. Tui còn đọc lại. Chữ nó nhỏ lắm bà.
     chi_dai: Chữ nhỏ cỡ nào?
@@ -329,7 +329,7 @@ thuc_tap_sinh: Dạ… em đang học ạ.
 * [🌸 Lấy một bông trong bó hoa, cắm lại vào ly nước trên bàn {thuc_tap_sinh}.]
     _Bông hoa duy nhất trên bàn thực tập sinh. {thuc_tap_sinh} nhìn nó rất lâu._
     ~ qh("thuc_tap_sinh", 10)
-- truong_phong: Thôi cả nhà, mình vào nội dung chính nhé. Em {chi_dai}, dự toán Đêm Hồng của em đâu?
+- truong_phong: Thôi cả nhà, mình vào nội dung chính nhé. Em {chi_dai}, dự toán Đại Nhạc Hội của em đâu?
 chi_dai: Đây. 450 triệu.
 ke_toan: Không.
 chi_dai: 380.

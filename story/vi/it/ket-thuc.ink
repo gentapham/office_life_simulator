@@ -72,7 +72,7 @@ _Trên màn hình hiện ra: số sự cố trong tháng, số lần rớt mạn
 // 😄 📶 PHỦ SÓNG TOÀN CÔNG TY
 === it_kt_phu_song ===
 # ngay:31 # gio:23:30 # noi:phong_server
-_Đêm Hồng kết thúc. Không một tiếng hú, không một cây đèn tắt. Bạn quay về phòng server lúc gần nửa đêm._
+_Đại Nhạc Hội Siêu Nhân kết thúc. Không một tiếng hú, không một cây đèn tắt. Bạn quay về phòng server lúc gần nửa đêm._
 _Trên bàn có một cái hộp to, thắt nơ hồng. Trên nắp dán một tờ đề xuất mua router 12.000.000đ. Đủ ba chữ ký._
 _Chữ ký của {giam_doc}. Chữ ký của {ke_toan}, ký luôn không hỏi hóa đơn. Và chữ ký thứ ba, nét run run: của {thanh_ninh}, kèm dòng "Em xin lỗi vì làm mất tờ cũ ạ"._
 giam_doc: *(đứng ở cửa, vẫn mặc đồ Ông Kẹ Ngân Hàng)* Từ thứ 2, em là Trưởng nhóm Công nghệ. Nhóm có một người. Nhưng là trưởng nhóm.
@@ -96,7 +96,7 @@ _Quạt server quay đều. Đèn router xanh. Lần đầu tiên, phòng server
 // 😄 🛠️ TIỆM TẮT ĐI BẬT LẠI
 === it_kt_tiem_tat_bat ===
 # ngay:31 # gio:22:00 # noi:hem_69
-_Một tuần sau Đêm Hồng, bạn nộp đơn nghỉ việc. {hr} đọc, gật gù, rót trà: "Em lắng nghe anh. Và em… hơi ganh tị."_
+_Một tuần sau Đại Nhạc Hội Siêu Nhân, bạn nộp đơn nghỉ việc. {hr} đọc, gật gù, rót trà: "Em lắng nghe anh. Và em… hơi ganh tị."_
 _Đầu Hẻm 69, cạnh quán trà đá của Ông Ba, có một tiệm sửa máy mới, rộng đúng 6m². Biển hiệu bạn tự viết bằng sơn trắng:_
 _"TẮT ĐI BẬT LẠI. Không được thì vô đây."_
 _Ngày khai trương, Bà Tư chủ trọ là người cắt băng. Chú Sáu karaoke mang tới cái loa kẹo kéo bị hư từ năm ngoái. Ông Ba trà đá mang tới cái radio của… Bác {bac_bao_ve}._
@@ -186,9 +186,9 @@ _Bạn mở lại một hộp thư riêng cũ, theo thói quen. Rồi bạn tắ
 # ngay:31 # gio:21:30 # noi:toa_nha_ll
 _Đêm 31/10. Tầng 14, tòa nhà kính LL-Entertainment. Phòng IT 20 người, 20 màn hình, router đời mới nhất. Màn hình nào cũng sáng màu xanh lá chuối._
 _Bạn ngồi ở bàn "Trưởng phòng Công nghệ". Ghế xoay, đệm êm, không có thùng mì ly._
-_Trên màn hình lớn, ai đó mở livestream Đêm Hồng phía bên kia đường._
+_Trên màn hình lớn, ai đó mở livestream Đại Nhạc Hội Siêu Nhân phía bên kia đường._
 { nguyen_theo_ll:
-    _Sân khấu Đêm Hồng không có {sieu_nhan_hong}. Chỉ có {chi_dai} đứng giữa sân khấu, xin lỗi khán giả bằng giọng không run. Khán đài vãn dần._
+    _Sân khấu Đại Nhạc Hội Siêu Nhân không có {sieu_nhan_hong}. Chỉ có {chi_dai} đứng giữa sân khấu, xin lỗi khán giả bằng giọng không run. Khán đài vãn dần._
 - else:
     _{sieu_nhan_hong} vẫn diễn. Nhưng con số người theo dõi đứng yên, cách một triệu rất xa. Lịch trình bốn ngày qua đã nằm trong tay người khác._
 }

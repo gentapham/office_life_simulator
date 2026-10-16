@@ -213,7 +213,7 @@ giam_doc: {con_ong_chau_cha}. Chú xin lỗi chuyện căn nhà. Chú định n�
     ~ cang_thang(8)
 * [🎸 Mở hộp đàn: "Chú vào đi. Cháu hát cho chú nghe bản cuối."]
     _Chú bước vào. Ngồi trên một cái thùng giấy. Bạn hát. Chú nhắm mắt._
-    giam_doc: Mai… mai chú ra Đêm Hồng, chú ngồi hàng đầu.
+    giam_doc: Mai… mai chú ra Đại Nhạc Hội, chú ngồi hàng đầu.
     ~ qh("giam_doc", 12)
     ~ long_bh(5)
 - -> END
@@ -221,14 +221,14 @@ giam_doc: {con_ong_chau_cha}. Chú xin lỗi chuyện căn nhà. Chú định n�
 // ------------------------------------------------------------
 === con_ong_chau_cha_3110_truoc_gio ===
 # ngay:31 # gio:17:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu Đêm Hồng, Phường Tân Drama. Chú bạn hóa trang "Ông Kẹ Ngân Hàng". {truong_phong} hóa trang thành cuốn lịch để bàn. Bạn không hóa trang. Bạn ôm cây đàn._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Chú bạn hóa trang "Ông Kẹ Ngân Hàng". {truong_phong} hóa trang thành cuốn lịch để bàn. Bạn không hóa trang. Bạn ôm cây đàn._
 { long_ban_cho_ll:
-    _Bài "Hồng Là Thái Độ" đã thuộc về LL. Đêm nay Đêm Hồng dùng nhạc nền không lời. Bạn đứng ở cánh gà, tay trống không._
+    _Bài "Hồng Là Thái Độ" đã thuộc về LL. Đêm nay Đại Nhạc Hội Siêu Nhân dùng nhạc nền không lời. Bạn đứng ở cánh gà, tay trống không._
     ~ long_nguoi_hat = ""
     -> END
 }
 { long_bai_hat < 50:
-    _Bài hát mới xong một nửa. Không đủ để hát trước 10.000 người. Đêm Hồng dùng nhạc nền không lời. Bạn ngồi dưới khán đài, nghe giai điệu của người khác._
+    _Bài hát mới xong một nửa. Không đủ để hát trước 10.000 người. Đại Nhạc Hội Siêu Nhân dùng nhạc nền không lời. Bạn ngồi dưới khán đài, nghe giai điệu của người khác._
     -> END
 }
 { long_nguoi_hat == "phat":
@@ -270,7 +270,7 @@ _{quan_ly_idol} chạy tới, cầm 2 cái điện thoại: "Long, cần chốt:
 // ------------------------------------------------------------
 === con_ong_chau_cha_3110_dem_hong ===
 # ngay:31 # gio:20:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30, Đêm Hồng mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}. 20 giờ 30, tới tiết mục chính._
+_19 giờ 30, Đại Nhạc Hội Siêu Nhân mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}. 20 giờ 30, tới tiết mục chính._
 { long_nguoi_hat:
 - "nguyen":
     _Nhạc dạo "Hồng Là Thái Độ" vang lên. {sieu_nhan_hong} cầm micro. Bạn đứng trong cánh gà, nắm chặt rèm như {idol_het_thoi} hôm gameshow._

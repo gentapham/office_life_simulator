@@ -283,7 +283,7 @@ _Phòng họp "Sáng Tạo" chật kín. Trên bàn là một xấp hợp đồn
 }
 _Bút ký lướt trên trang cuối. Năm tỷ đồng về tài khoản. Cả phòng reo hò. Ai đó gọi trà sữa cho cả công ty._ # am_thanh:ting_ting
 _Trên điện thoại của bạn hiện một thanh mới: 📈 Người theo dõi Siêu Nhân Hồng: {chung_so(nguoi_theo_doi)} / 1.000.000._
-_Hạn chót: Đêm Hồng Halloween, 31/10. Đạt: công ty sống. Không đạt: hoàn gấp đôi. Phá sản._
+_Hạn chót: Đại Nhạc Hội Siêu Nhân, 31/10. Đạt: công ty sống. Không đạt: hoàn gấp đôi. Phá sản._
 { vai != "ke_toan":
     _Ở cuối bàn, {ke_toan} lật tới một trang gần cuối, nhíu mày, đẩy kính lên. Không ai để ý._
 }
@@ -402,7 +402,7 @@ _22 giờ. Bác đã ngủ. Điện thoại của bác trên bàn sáng lên, ru
 # ngay:1 # gio:23:00 # noi:nha # goi_y:Ngủ để sang ngày mới. Game tự lưu # am_thanh:luu_game
 { vai == "cho": -> ban_cho }
 _{chung_nha_cua_toi()}_
-_23 giờ. Ngày đầu tiên của tháng 10 kết thúc. Còn 30 ngày nữa tới Đêm Hồng._
+_23 giờ. Ngày đầu tiên của tháng 10 kết thúc. Còn 30 ngày nữa tới Đại Nhạc Hội Siêu Nhân._
 { vai == "sieu_nhan_hong":
     _Bạn tháo mũ, đặt lên cái ghế thứ hai của bàn ăn 12 ghế. Ít ra hôm nay cái ghế đó có thứ để giữ._
 - else:

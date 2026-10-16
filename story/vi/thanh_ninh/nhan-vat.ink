@@ -160,7 +160,7 @@ chua_te_deadline: *(lướt Tóp-tóp)* {thanh_ninh}, nếu sếp hỏi tiến �
 === thanh_ninh_tudo_thuc_tap_sinh ===
 # npc:thuc_tap_sinh
 thuc_tap_sinh: Dạ chị {thanh_ninh}, chị cần em làm gì không ạ? Em mới photo xong cho phòng kế toán ạ.
-* [👇 "Ừa, photo thêm cho chị 200 tờ lịch Đêm Hồng nha."]
+* [👇 "Ừa, photo thêm cho chị 200 tờ lịch Đại Nhạc Hội nha."]
     ~ tn_dap_duy()
     thuc_tap_sinh: Dạ em làm liền ạ!
     _Ba mươi tuổi. "Dạ em làm liền ạ." Không một chút chần chừ. Bạn không biết nên ngưỡng mộ hay áy náy._
@@ -395,7 +395,7 @@ sales: Chị {thanh_ninh}! Chị xếp em 30 phút gặp sếp nha. Deal này ch
         chi_dai: *(cười khẩy)* Bớt đi em.
         ~ tn_gian(3)
     }
-* [🤝 "Chị cần em phụ gì cho Đêm Hồng hông chị?"]
+* [🤝 "Chị cần em phụ gì cho Đại Nhạc Hội hông chị?"]
     chi_dai: Có. Đếm ghế. 1.200 cái. Đếm sai thì đếm lại.
     ~ tn_gian(-5)
     ~ uy_tin = uy_tin + 2

@@ -230,7 +230,7 @@ _{ten(ran_thu_hai)} đứng dậy, cầm USB đi về phía máy chiếu. Bạn 
     giam_doc: Người duy nhất không dính vào chuyện gì trong tháng này là… {ran_doc}.
     _Cả phòng quay lại nhìn bạn. Bạn mỉm cười. Ngọt như đường hóa học._
 - else:
-    giam_doc: Ghế Phó Giám đốc… anh xin phép để sau Đêm Hồng. Tháng này nhiều chuyện quá.
+    giam_doc: Ghế Phó Giám đốc… anh xin phép để sau Đại Nhạc Hội. Tháng này nhiều chuyện quá.
 }
 { biet(danh_sach_cat_giam):
     _{hr} cầm tập hồ sơ hồng, không mở. "Danh sách cắt giảm… phòng nhân sự xin dời lại tới sau 31/10."_
@@ -240,7 +240,7 @@ _{ten(ran_thu_hai)} đứng dậy, cầm USB đi về phía máy chiếu. Bạn 
 // ------------------------------------------------------------
 === ran_doc_3010_dem_truoc ===
 # ngay:30 # gio:22:00 # noi:hem_69
-_Đêm trước Đêm Hồng. Phòng 3, dãy A. Cuốn sổ tay nằm trên bàn. {rd_so_tin_mat} tin mật. Tên của tất cả mọi người._
+_Đêm trước Đại Nhạc Hội Siêu Nhân. Phòng 3, dãy A. Cuốn sổ tay nằm trên bàn. {rd_so_tin_mat} tin mật. Tên của tất cả mọi người._
 _Bên kia vách, {hong_hot} không livestream. Chỉ có tiếng thở dài._
 hong_hot: *(gõ vách)* Ông ơi. Ông ngủ chưa? Mai mà thất bại là tui mất việc. Tui sợ thiệt đó.
 * [😇 Gõ vách trả lời: "Mai sẽ ổn. Tui hứa."]
@@ -255,7 +255,7 @@ hong_hot: *(gõ vách)* Ông ơi. Ông ngủ chưa? Mai mà thất bại là tui
         _Bạn nhìn con cá rất lâu. Rồi lần đầu tiên, bạn vẽ thêm một cánh cửa mở bên cạnh nó._
         ~ rd_han(-5)
     - else:
-        _Bạn tô con cá thêm đậm. Mai là Đêm Hồng. Mai mọi thứ kết thúc._
+        _Bạn tô con cá thêm đậm. Mai là Đại Nhạc Hội Siêu Nhân. Mai mọi thứ kết thúc._
         ~ rd_han(5)
     }
 - -> END
@@ -263,7 +263,7 @@ hong_hot: *(gõ vách)* Ông ơi. Ông ngủ chưa? Mai mà thất bại là tui
 // ------------------------------------------------------------
 === ran_doc_3110_hoa_trang ===
 # ngay:31 # gio:17:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu ngoài trời ở Phường Tân Drama. Cả công ty hóa trang._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu ngoài trời ở Phường Tân Drama. Cả công ty hóa trang._
 _{giam_doc} hóa trang "Ông Kẹ Ngân Hàng", đeo cà vạt in hình tờ giấy nợ. {cho} đeo cánh dơi, mặt cực kỳ không vui. {thanh_xin_nghi} biến mất, vì 20:00 có chung kết "Giọng Ca Ước Mơ"._
 chi_dai: {ran_doc}, em hóa trang gì? Chị chưa thấy.
 * [🐍 Hóa trang thành con rắn. Không giấu nữa.]
@@ -290,7 +290,7 @@ _{chi_dai} đưa bạn bộ đàm: "Em giữ khu này giùm chị. Không ai đ�
 { rd_bao_ll_lich_dien:
     _Một người lạ áo xanh lá chuối đứng gần tủ điện. Người của LL. Cầm đúng bản lịch bạn đã gửi._
 }
-_Bạn đứng một mình với cái cần gạt đỏ. Gạt xuống là Đêm Hồng tối om, trước cả nghìn khán giả và mấy chục máy quay._
+_Bạn đứng một mình với cái cần gạt đỏ. Gạt xuống là Đại Nhạc Hội Siêu Nhân tối om, trước cả nghìn khán giả và mấy chục máy quay._
 * [💥 Gạt cầu dao vào đúng lúc {sieu_nhan_hong} bước ra.]
     ~ rd_cat_dien_dem_hong = true
     ~ rd_pha(150000)

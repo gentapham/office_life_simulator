@@ -397,7 +397,7 @@ luu_luc: Chào cả nhà {cong_ty}. Việc hôm nay phải xong từ hôm qua. T
 cho: Grừ… GÂU!
 _Lưu Lực bước vào sảnh. Khựng lại. Ở cầu thang, {chi_dai} đang khoanh tay. Tập hồ sơ rơi xuống sàn. Lưu Lực lùi một bước, quay ra xe._
 chi_dai: *(nhướng mày)* Ủa, ổng bị gì vậy?
-* [💁 Đuổi theo ra xe: "Anh Lực! Bên em có gói tài trợ Đêm Hồng, anh quan tâm hông?"]
+* [💁 Đuổi theo ra xe: "Anh Lực! Bên em có gói tài trợ Đại Nhạc Hội, anh quan tâm hông?"]
     luu_luc: *(dừng ở cửa xe, nhìn bạn từ đầu tới chân)* Em là cái người có tập đoàn bánh tráng hả? *(cười)* Bên anh biết hết.
     _Cửa xe đóng. Bạn đứng giữa sân, lạnh từ gót giày lên._
     ~ cang_thang(10)
@@ -410,7 +410,7 @@ chi_dai: *(nhướng mày)* Ủa, ổng bị gì vậy?
 === sales_2710_cuoc_goi ===
 # ngay:27 # gio:16:00 # noi:ban_sales # bat_buoc
 _16 giờ. Một số lạ gọi tới._
-sua_chua_hong_hao: Chào chị, bên em là Sữa Chua Hồng Hào ở Ven Đô. Bên em muốn tài trợ Đêm Hồng 1 tỷ. Chị {sales} phụ trách phải không ạ?
+sua_chua_hong_hao: Chào chị, bên em là Sữa Chua Hồng Hào ở Ven Đô. Bên em muốn tài trợ Đại Nhạc Hội 1 tỷ. Chị {sales} phụ trách phải không ạ?
 _Bạn đứng chết lặng. Rồi bạn hét lên. Rồi bạn kể với cả phòng._
 hong_hot: Ủa alo? Sữa Chua Hồng Hào gọi tài trợ 1 tỷ hả? Thôi {sales} ơi, tháng này em kể 7 nhà tài trợ rồi đó.
 _Cả phòng cười. Không ai tin. Kể cả bạn, một chút._ # hen_gio:8

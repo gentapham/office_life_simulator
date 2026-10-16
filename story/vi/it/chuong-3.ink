@@ -149,7 +149,7 @@ ke_toan: Ừ. Cả công ty.
 _Đèn pin trên tay bạn hơi run. Mười tỷ. Đêm 31/10, chiến dịch sống bằng livestream. Livestream sống bằng mạng. Mạng sống bằng… bạn._
 ~ phat_hien(trang_47)
 * [😶 Tắt đèn pin. Giả vờ không nghe.]
-    _Bạn tắt đèn. Trong bóng tối, bạn nhẩm lại danh sách thiết bị cần cho Đêm Hồng. Lần đầu tiên, danh sách đó có cảm giác nặng._
+    _Bạn tắt đèn. Trong bóng tối, bạn nhẩm lại danh sách thiết bị cần cho Đại Nhạc Hội Siêu Nhân. Lần đầu tiên, danh sách đó có cảm giác nặng._
     ~ it_lt(3)
     ~ cang_thang(10)
 * [💬 "Em nghe rồi. Đêm 31 mạng không rớt."]

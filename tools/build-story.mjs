@@ -57,7 +57,8 @@ for (const code of roots) {
 
 // Tên kết thúc có dấu: lấy các **Tên** in đậm trong tài liệu, so với mã không dấu ở tag ket_thuc
 const khongDau = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D")
-  .toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+  .toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "")
+  .replace(/dai_nhac_hoi_sieu_nhan|dai_nhac_hoi/g, "dem_hong"); // tên mới của đêm diễn, mã kết thúc vẫn dùng dem_hong
 meta.tenKetThuc = {};
 for (const code of Object.keys(meta.roles)) {
   const doc = code === "chung" ? "docs/GDD.md" : `docs/roles/${code.replace(/_/g, "-")}.md`;

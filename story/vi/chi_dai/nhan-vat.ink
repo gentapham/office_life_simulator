@@ -36,7 +36,7 @@ ran_doc: Dạ chị {chi_dai}! Chị uống gì hông, em pha cho chị!
 # npc:giam_doc
 _Phòng giám đốc. Bạn vừa gõ cửa, {giam_doc} đã đứng bật dậy, kéo ghế, gọi vọng ra: "{thanh_ninh} ơi, trà!"_
 giam_doc: Ơ {chi_dai}! Em ngồi đi. Có việc gì "urgent" à em?
-* [📋 "Đêm Hồng cần thêm 2 bảo vệ, 1 xe cứu thương trực. Sếp ký."]
+* [📋 "Đại Nhạc Hội cần thêm 2 bảo vệ, 1 xe cứu thương trực. Sếp ký."]
     giam_doc: Xe cứu thương à? Có cần thiết không em? Mình "optimize" được không?
     chi_dai: Cả nghìn người, sếp. Ngất một người mà hông có xe là lên báo.
     giam_doc: …Ký. Anh ký.
@@ -66,7 +66,7 @@ giam_doc: Ơ {chi_dai}! Em ngồi đi. Có việc gì "urgent" à em?
 === chi_dai_tudo_truong_phong ===
 # npc:truong_phong
 _Phòng họp "Sáng Tạo". {truong_phong} đang đứng một mình trước bảng trắng, vẽ sơ đồ "quy trình đặt cơm trưa"._
-truong_phong: À chị {chi_dai}. Chị có 5 phút không? Mình sync nhanh về Đêm Hồng nhé.
+truong_phong: À chị {chi_dai}. Chị có 5 phút không? Mình sync nhanh về Đại Nhạc Hội nhé.
 * [🦁 "5 phút thật. Chị bấm giờ."]
     _Bạn bấm giờ trên điện thoại. {truong_phong} nói nhanh như MC. Phút thứ 4 giây 58, anh thở dốc: "…Xong ạ."_
     chi_dai: Thấy chưa. Làm được mà.
@@ -127,7 +127,7 @@ hong_hot: Ối dồi ôi chị Đại! Nghe gì chưa chị?
     hong_hot: Ủa alo? Chuyện hay lắm mà chị! Thôi để em kể chị {ke_toan}…
     chi_dai: Kể ai thì kể, đừng kể sai.
     ~ qh("hong_hot", -2)
-* [📋 "Đêm Hồng. Em lên lịch đăng bài đếm ngược 10 ngày. Mỗi ngày một ảnh hậu trường."]
+* [📋 "Đại Nhạc Hội. Em lên lịch đăng bài đếm ngược 10 ngày. Mỗi ngày một ảnh hậu trường."]
     hong_hot: Ok chị! Ảnh hậu trường nào có {cho} là triệu view!
     ~ cd_td(2)
     ~ follow(3000)
@@ -182,7 +182,7 @@ con_ong_chau_cha: Ồ chị {chi_dai}. Chill hông chị? Em mời chị ly cà 
 # npc:chua_te_deadline
 _{chua_te_deadline} nằm ngả trên ghế, lướt Tóp-tóp, chân gác lên thùng giấy ghi "GẤP". Thấy bạn, chân hạ xuống… nửa chừng._
 chua_te_deadline: Chill chị ơi. Còn sớm mà.
-* [🗣️ "Sớm là còn 3 ngày. Kịch bản Đêm Hồng đâu?"]
+* [🗣️ "Sớm là còn 3 ngày. Kịch bản Đại Nhạc Hội đâu?"]
     chua_te_deadline: Nước tới chân mới nhảy, mà nhảy là phải đẹp.
     chi_dai: Nước tới cổ rồi đó em.
     chua_te_deadline: *(ngồi thẳng dậy)* …Tối nay em nhảy.
@@ -313,7 +313,7 @@ hr: Em {chi_dai}. Lâu rồi em không tự lên đây. Thường là anh mời 
 # npc:it
 _Phòng server. Lạnh như tủ đông. {it} ngồi giữa 3 màn hình, ăn mì ly, không quay lại._
 it: Restart chưa?
-* [📋 "Chưa hỏi gì mà. Đêm Hồng: 4 micro không dây, 2 dự phòng. Ông lo được hông?"]
+* [📋 "Chưa hỏi gì mà. Đại Nhạc Hội: 4 micro không dây, 2 dự phòng. Ông lo được hông?"]
     it: Được. 6 cái. Pin dự phòng 12 cục.
     chi_dai: Cần nhiều vậy hả?
     it: Đêm Halloween. Ma ám micro.
@@ -325,7 +325,7 @@ it: Restart chưa?
     ~ qh("it", 6)
 * [🕵️ "Ông đọc log hết công ty mà. Có ai lạ hông?"]
     it: Có. Không nói.
-    chi_dai: Liên quan Đêm Hồng hông?
+    chi_dai: Liên quan Đại Nhạc Hội hông?
     it: *(ngừng gõ)* Có thể.
     ~ cd_uy(1)
 + [😶 Đóng cửa lại cho ổng giữ lạnh.]
@@ -348,7 +348,7 @@ idol_het_thoi: {chi_dai}. Em biết anh là ai không?
     idol_het_thoi: *(tháo kính ra, rồi đeo lại)* Hồi anh còn nổi, không ai dám nói vậy.
     chi_dai: Hồi ông còn nổi, tui đã nói vậy rồi.
     ~ cd_uy(2)
-* [📋 "Đêm Hồng có một tiết mục cho ông. 'Công Viên', bản mới. Nhận hông?"]
+* [📋 "Đại Nhạc Hội có một tiết mục cho ông. 'Công Viên', bản mới. Nhận hông?"]
     idol_het_thoi: *(ngồi thẳng lưng)* Tiết mục… cho anh? Sân khấu chính hả?
     chi_dai: Sân khấu chính. Trước {sieu_nhan_hong}. Đừng làm tui mất mặt.
     ~ qh("idol_het_thoi", 10)
@@ -402,7 +402,7 @@ quan_ly_idol: Khoan, anh nghe máy chút… Ừ… ừ… Chuyện này để an
 # npc:bien_kich
 _Sân thượng. {bien_kich} ngồi bên lan can, ôm sổ, nhìn trời "tìm cảm hứng"._
 bien_kich: Chị {chi_dai}… chị có biết kịch bản này cần thêm gì không? Cần thêm nỗi đau.
-* [📋 "Kịch bản MC Đêm Hồng. Em viết xong chưa? Chị cần thứ 5."]
+* [📋 "Kịch bản MC Đại Nhạc Hội. Em viết xong chưa? Chị cần thứ 5."]
     bien_kich: Đang… chín dần ạ.
     chi_dai: Chín dần thì thứ 5 phải chín hẳn.
     ~ cd_td(2)
@@ -436,7 +436,7 @@ editor: *(ngáp)* Chị… đợi render xong…
     editor: *(nhìn hộp cơm, như lần đầu thấy cơm)* …Dạ.
     ~ qh("editor", 8)
     ~ tien_cong(-35000)
-* [📋 "Video '16 năm' cho Đêm Hồng. Em tới đâu rồi?"]
+* [📋 "Video '16 năm' cho Đại Nhạc Hội. Em tới đâu rồi?"]
     editor: 70%. Thiếu file gốc dự án tháng 6. Anh {chua_te_deadline} nói "chill, có mà". Mà không thấy đâu.
     chi_dai: Để chị hỏi nó.
     ~ cd_td(1)
@@ -462,7 +462,7 @@ editor: *(ngáp)* Chị… đợi render xong…
 # npc:designer
 _Bàn thiết kế. {designer} có 2 cái laptop. Cái thứ hai đóng lại cái "tách" khi bạn đi tới._
 designer: Chị {chi_dai}. Chị cần poster hả? Sửa nhẹ thôi là sửa cái gì ạ?
-* [📋 "Banner Đêm Hồng. 12 mét. Chữ to, màu hồng, nhìn từ cuối bãi phải thấy."]
+* [📋 "Banner Đại Nhạc Hội. 12 mét. Chữ to, màu hồng, nhìn từ cuối bãi phải thấy."]
     designer: Ok chị. Feedback cụ thể vậy là em thương chị nhất công ty.
     ~ cd_td(3)
     ~ qh("designer", 5)
@@ -490,7 +490,7 @@ designer: Chị {chi_dai}. Chị cần poster hả? Sửa nhẹ thôi là sửa 
 === chi_dai_tudo_sales ===
 # npc:sales
 _{sales} đang gọi điện, giọng tự tin như CEO tập đoàn: "Dạ anh, deal này chắc kèo! Tin em đi!" Cúp máy. Quay sang bạn._
-sales: Chị {chi_dai}! Tin chị đi, Đêm Hồng em kéo được 3 nhà tài trợ!
+sales: Chị {chi_dai}! Tin chị đi, Đại Nhạc Hội em kéo được 3 nhà tài trợ!
 * [🦁 "Em 26 tuổi. Chị 30. 'Tin chị đi' là câu của chị."]
     sales: *(khựng)* Dạ… tin em đi ạ.
     chi_dai: Ờ. Vậy mới đúng.
@@ -620,7 +620,7 @@ bac_bao_ve: Cháu {chi_dai}. Ngồi đi. Trà đá nhé.
 # npc:sieu_nhan_hong
 _Phòng chờ. Đĩa bánh chuối chiên. {sieu_nhan_hong} đang tập tạo dáng trước gương: "Biến hình!"_
 sieu_nhan_hong: A! Chị Đại! Tui tập tư thế mới nè. Coi được hông?
-* [📋 "Đêm Hồng, ông đi lối bên trái. Bên phải là lối của {cho}. Nhớ chưa?"]
+* [📋 "Đại Nhạc Hội, ông đi lối bên trái. Bên phải là lối của {cho}. Nhớ chưa?"]
     sieu_nhan_hong: Bên trái… bên trái… {cho} bên phải. Nhớ rồi! Mà tui đi ngang chọc nó một xíu được hông?
     chi_dai: Hông.
     sieu_nhan_hong: Một xíu thôi…

@@ -76,9 +76,9 @@ _Tầng 1 im lặng khi bạn bước vào. Hai mươi cái đầu ngẩng lên 
     ~ gd_hoi_truc_tiep = gd_hoi_truc_tiep + 5
     ~ gd_sua("nhan_22h")
     ~ gd_uy(10)
-    designer: Dạ… em đang làm poster Đêm Hồng. Lần này anh đừng sửa được không ạ?
+    designer: Dạ… em đang làm poster Đại Nhạc Hội. Lần này anh đừng sửa được không ạ?
     giam_doc: Anh không sửa. Em làm theo ý em.
-    thuc_tap_sinh: Dạ em đang xếp ghế cho Đêm Hồng, 400 cái ạ! Anh ơi, em… em xin được ở lại sau thực tập.
+    thuc_tap_sinh: Dạ em đang xếp ghế cho Đại Nhạc Hội, 400 cái ạ! Anh ơi, em… em xin được ở lại sau thực tập.
     chua_te_deadline: Em đang làm. Thật đó anh. Lần đầu tiên em làm sớm.
     _Mỗi bàn mất hai phút. Hai mươi bàn, bốn mươi phút. Bằng một cuộc họp giao ban ngắn nhất lịch sử._
     ~ qh("designer", 5)
@@ -129,7 +129,7 @@ _7:30. Wifi đã có lại. Group "Hội Anti Sếp" có 112 tin chưa đọc. B
     -> END
 }
 { gd_da_tra_thu:
-    _Trong Danh sách đen của bạn có {gd_danh_sach_den} cái tên. Đọc lại, bạn thấy cái tên nào cũng đang làm việc cho Đêm Hồng._
+    _Trong Danh sách đen của bạn có {gd_danh_sach_den} cái tên. Đọc lại, bạn thấy cái tên nào cũng đang làm việc cho Đại Nhạc Hội Siêu Nhân._
 }
 _Bông hoa hướng dương vẫn ở đó. Ba mươi ngày. Bạn đã sửa {gd_sua_minh} điều bị chê._
 * {gd_sua_minh >= 5 && not gd_da_tra_thu} [🌻 Gõ: "Hoa Hướng Dương 1989 là anh đây. Cảm ơn các em đã chửi anh đúng."]
@@ -229,7 +229,7 @@ _Trước giờ họp, {hr} cho dọn kho. {cho} đứng canh gầm cầu thang,
 
 === giam_doc_3010_cat_giam ===
 _Việc cuối: danh sách cắt giảm của {hr}._
-* [🗑️ "Không cắt ai. Nếu Đêm Hồng thất bại, anh đi trước."]
+* [🗑️ "Không cắt ai. Nếu Đại Nhạc Hội thất bại, anh đi trước."]
     ~ gd_uy(10)
     ~ qh("hr", 10)
     ~ qh("thuc_tap_sinh", 10)
@@ -246,7 +246,7 @@ _Việc cuối: danh sách cắt giảm của {hr}._
 // ------------------------------------------------------------
 === giam_doc_3110_ong_ke_ngan_hang ===
 # ngay:31 # gio:17:00 # noi:phong_giam_doc # bat_buoc
-_Đêm Hồng Halloween. Bộ hóa trang của bạn, do {designer} chọn, vừa được gửi tới: "Ông Kẹ Ngân Hàng". Áo vest đen, mặt nạ xám, một cái túi tiền rỗng, và tấm biển "Nợ Quá Hạn"._
+_Đại Nhạc Hội Siêu Nhân. Bộ hóa trang của bạn, do {designer} chọn, vừa được gửi tới: "Ông Kẹ Ngân Hàng". Áo vest đen, mặt nạ xám, một cái túi tiền rỗng, và tấm biển "Nợ Quá Hạn"._
 designer: Dạ… em chọn bộ này cho anh. Hợp vibe ạ. *(không dám nhìn thẳng)*
 * [😂 Mặc vào, chụp ảnh đăng lên: "Ông Kẹ Ngân Hàng, có thật trong đời sống."]
     ~ follow(8000)
@@ -264,7 +264,7 @@ designer: Dạ… em chọn bộ này cho anh. Hợp vibe ạ. *(không dám nh�
 === giam_doc_3110_dem_hong ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
 { nguyen_theo_ll:
-    _19:30. Sân khấu Đêm Hồng dựng xong, đèn bật, 400 ghế {thuc_tap_sinh} xếp thẳng tắp. Nhưng không có Siêu Nhân Hồng._
+    _19:30. Sân khấu Đại Nhạc Hội Siêu Nhân dựng xong, đèn bật, 400 ghế {thuc_tap_sinh} xếp thẳng tắp. Nhưng không có Siêu Nhân Hồng._
     _Phía bên kia thành phố, tòa nhà xanh lá chuối bắn pháo hoa. {sieu_nhan_hong} đứng trên sân khấu của LL._
     _{idol_het_thoi} cầm micro, hát "Công Viên" cho 400 cái ghế. Có 60 người ngồi. Ai cũng khóc._
     ~ follow(20000)

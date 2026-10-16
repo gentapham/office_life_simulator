@@ -10,8 +10,8 @@
 | Mục | Sự thật |
 |---|---|
 | Thành phố | Thành Phố Ước Mơ (Dream City), Quận Hóng |
-| Lượt chơi | Thứ 5 **1/10/2026** → thứ 6 **30/10/2026**. **31/10** (thứ 7) là Đêm Hồng Halloween, hiện 2 cái kết |
-| Đêm Hồng | Bắt đầu **19:30 ngày 31/10**, ở Sân khấu Đêm Hồng (Phường Tân Drama). Mở màn: phim ngắn "Người Hùng Không Tên" của Oánh, rồi video tổng kết "16 năm" của Lĩnh |
+| Lượt chơi | Thứ 5 **1/10/2026** → thứ 6 **30/10/2026**. **31/10** (thứ 7) là Đại Nhạc Hội Siêu Nhân, hiện 2 cái kết |
+| Đại Nhạc Hội Siêu Nhân | Bắt đầu **19:30 ngày 31/10**, ở Sân khấu Đại Nhạc Hội Siêu Nhân (Phường Tân Drama). Mở màn: phim ngắn "Người Hùng Không Tên" của Oánh, rồi video tổng kết "16 năm" của Lĩnh |
 | Giờ làm | 8:00 – 17:30, nghỉ trưa 12:00 – 13:30 |
 | Lương tháng | Ngày 10/10 là thứ 7. Ngân hàng giữ lệnh chuyển để "kiểm tra giao dịch lớn" (thật ra vì khoản thế chấp biệt thự của Thắng quá hạn). **Lương về thứ 2, 12/10** |
 
@@ -140,7 +140,7 @@
 | 28/10 | Lĩnh lỡ xuất video tỏ tình lên fanpage. Bộ lọc của Chương lần ra fan ảo là của Phát |
 | 29/10 | Wifi sập. Nguyên nhân (tùy lượt): Tuất cắn dây mạng (đi tìm con gà cao su), hoặc con rắn thứ hai cắt dây. Video của Lĩnh kẹt ở 99%. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Hương điều phối bằng bộ đàm. Ngân phát wifi điện thoại, mật khẩu "nghegichua" |
 | 30/10 | Họp đánh giá. Gia hạn hợp đồng của Phát (hết hạn 31/10). Trước họp, HR cho dọn kho, có thể dọn mất kho đồ của Tuất |
-| 31/10 | Đêm Hồng 19:30. Chung kết trực tiếp "Giọng Ca Ước Mơ" của Sơn lúc 20:00, cùng tối. Thắng hóa trang "Ông Kẹ Ngân Hàng" |
+| 31/10 | Đại Nhạc Hội Siêu Nhân 19:30. Chung kết trực tiếp "Giọng Ca Ước Mơ" của Sơn lúc 20:00, cùng tối. Thắng hóa trang "Ông Kẹ Ngân Hàng" |
 
 ---
 
@@ -177,7 +177,7 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 | Nhỏ | Minigame làm tốt / làm hỏng | ±5.000 – 15.000 |
 | Vừa | Một buổi quay thành công, một tin đồn lan rộng | ±20.000 – 50.000 |
 | Lớn | Gameshow 16/10, clip viral, scandal | ±50.000 – 150.000 |
-| Rất lớn | Đêm Hồng diễn tốt, LL cướp được Nguyên, lộ mặt thật | ±150.000 – 300.000 |
+| Rất lớn | Đại Nhạc Hội Siêu Nhân diễn tốt, LL cướp được Nguyên, lộ mặt thật | ±150.000 – 300.000 |
 
 ### Sự kiện lớn cố định
 | Ngày | Sự kiện | Tác động mặc định |
@@ -186,13 +186,13 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 | 9/10 | Ra mắt MV | +40.000 |
 | 16/10 | Gameshow | +80.000 |
 | 23/10 | Livestream sinh nhật | +60.000 |
-| 31/10 | Đêm Hồng | +100.000 đến +300.000 |
+| 31/10 | Đại Nhạc Hội Siêu Nhân | +100.000 đến +300.000 |
 
 ### Quy đổi ra 6 kết thúc sự nghiệp (GDD mục 7.3)
 | Kết thúc | Điều kiện |
 |---|---|
 | 🌟 Siêu Sao Hạng A | ≥ 1.000.000 và vào top 10 xu hướng |
-| 💗 Tháo Mũ | ≥ 800.000 và Nguyên tự tháo mũ trên sân khấu Đêm Hồng |
+| 💗 Tháo Mũ | ≥ 800.000 và Nguyên tự tháo mũ trên sân khấu Đại Nhạc Hội Siêu Nhân |
 | 🤡 Meme Quốc Dân | ≥ 600.000 và có ít nhất 3 scandal / meme trong tháng |
 | 🏃 Bị Cướp Mất | Nguyên nhận lời LL ngày 27/10 (bất kể con số) |
 | 🔥 Bị Tẩy Chay | Có scandal lớn bị bóc sau 28/10 và < 800.000 |
@@ -216,7 +216,7 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 | Giờ đăng bài "chuẩn" của Chương | Mỗi lần Chương nói một giờ khác (19:47, 21:07…). Đó là trò đùa: số liệu của Chương đổi theo tâm trạng |
 | Bài hát của Long | Các file demo đánh số "Rong_demo_01…43". Bản 41 là "Hồng Là Thái Độ" (tên file xuất: "HLTD_demo41"). Bản 42 làm ngày 29/10, bản 43 chỉ có trong kết thúc bí mật |
 | Con cú của Lĩnh | Giấu ở một khung hình trong mọi video Lĩnh dựng: khung 812 (poster), giây 2:47 (MV), khung 1.031 và trên cánh cửa gỗ (video "16 năm"), góc giấy chứng nhận BTT |
-| Thời điểm chốt kết thúc nhân vật | Mọi cảnh `<mã>_3010_danh_gia` chạy **sau Đêm Hồng tối 31/10** (23:00 – 23:45), dùng toàn bộ lựa chọn tới hết 31/10. Một số kết thúc có thể xảy ra sớm khi chỉ số chạm 100 |
+| Thời điểm chốt kết thúc nhân vật | Mọi cảnh `<mã>_3010_danh_gia` chạy **sau Đại Nhạc Hội Siêu Nhân tối 31/10** (23:00 – 23:45), dùng toàn bộ lựa chọn tới hết 31/10. Một số kết thúc có thể xảy ra sớm khi chỉ số chạm 100 |
 | Mã người nói phụ | Gom trong [story/ten-nguoi-noi.json](../story/ten-nguoi-noi.json) |
 
 ## 10. Chi tiết bổ sung từ thoại
@@ -230,11 +230,11 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - Giấy tờ thành lập đóng dấu đỏ chữ "G". Ngày 22/10 Bình về Ven Đô lấy cho đoàn thuế.
 - Group Zalo-lô công ty: 22 thành viên (21 nhân viên + Thắng), 23 khi thêm Nguyên. Nội quy có thêm điều 11, 12 sau khi Tuất "để lại quà" trong phòng giám đốc.
 - Quà 20/10: phong bì 2.100.000đ cho các chị em; Thắng tặng 7 chiếc khăn cam giống hệt nhau; Nhật tặng sổ ô li ghi "Kế hoạch tuần"; Thắng tặng riêng Thương một chiếc kính lúp kèm thiệp *"Cảm ơn em đã đọc trang 47 thay anh."*
-- Tiền thuê sân khấu Đêm Hồng: 80 triệu, hạn 17:00 ngày 29/10. Hồ sơ xin phép biểu diễn dài 14 trang.
-- LL treo băng rôn đối diện G-Entertainment từ 14/10. Đêm Hồng, màn hình LED khổng lồ trên tòa LL chiếu bộ nhận diện "Hồng Ngoại" quay thẳng về sân khấu.
+- Tiền thuê sân khấu Đại Nhạc Hội Siêu Nhân: 80 triệu, hạn 17:00 ngày 29/10. Hồ sơ xin phép biểu diễn dài 14 trang.
+- LL treo băng rôn đối diện G-Entertainment từ 14/10. Đại Nhạc Hội Siêu Nhân, màn hình LED khổng lồ trên tòa LL chiếu bộ nhận diện "Hồng Ngoại" quay thẳng về sân khấu.
 
 ### Nhân viên
-- **Hiếu:** vẽ cái lỗ thông gió hình con cá vào sổ từ năm 8 tuổi (con cá có 23 cái vảy). Có thể thành thành viên thứ 15 của "Hội Anti Sếp". 27/10 thư ký LL mời Hiếu về LL để đổi lấy lịch Đêm Hồng.
+- **Hiếu:** vẽ cái lỗ thông gió hình con cá vào sổ từ năm 8 tuổi (con cá có 23 cái vảy). Có thể thành thành viên thứ 15 của "Hội Anti Sếp". 27/10 thư ký LL mời Hiếu về LL để đổi lấy lịch Đại Nhạc Hội Siêu Nhân.
 - **Ngân:** tài khoản admin Confession tên "{tên Ngân} Nghe Gì Chưa", trang có 3.112 bài trong 4 năm.
 - **Nhi:** danh bạ lưu "LL - Chị Tuyển Dụng"; thư ký LL luôn ký 💚; phỏng vấn ở LL 9:00 ngày 25/10, tầng 20. Thỏi son mẫu màu "Hồng Thái Độ".
 - **Nhật:** 3 cuộc họp cố định mỗi ngày làm việc (trừ 15/10 và 29/10). Cà phê đen ít đường không đá. Lén học dựng phim trên kênh của Lĩnh với tên "{tên Nhật} Sáng Tạo", không biết phím tắt "C".
@@ -261,9 +261,9 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - Kho báu của Tuất lúc đầu có 6 món: chùm chìa khóa, thỏi son, điện thoại cũ, một chiếc tất sọc cam, nắp bút hồng, chiếc USB. Lĩnh trả Tuất pa-tê làm "nhuận bút" cho video ngày 4/10. Ở Vũng Tàu, nếu Tuất đi lạc, cô bán hải sản đổi tên Tuất thành "Vàng".
 - Đồ thất lạc trên xe ngày 19/10: kính râm của Phát, dây buộc tóc của Hương, sạc dự phòng của Thái, đôi dép tổ ong của Bình (cho Duy mượn).
 
-### Vũng Tàu & Đêm Hồng
+### Vũng Tàu & Đại Nhạc Hội Siêu Nhân
 - Khu nghỉ "Sóng Vỗ", chỉ có một cục wifi ở quầy lễ tân. Quán hải sản cùng tên.
-- Đêm Hồng cộng thêm 100.000 – 300.000 người theo dõi. Vượt mốc 1 triệu ngay trong đêm diễn thì được tính là lọt top 10 xu hướng, trừ khi có scandal lớn sau 28/10.
+- Đại Nhạc Hội Siêu Nhân cộng thêm 100.000 – 300.000 người theo dõi. Vượt mốc 1 triệu ngay trong đêm diễn thì được tính là lọt top 10 xu hướng, trừ khi có scandal lớn sau 28/10.
 - Ở kết thúc "Tháo Mũ" và "Meme Quốc Dân", Nguyên ký phụ lục gia hạn mục tiêu tới Tết, nên công ty được cứu.
 
 ### Địa điểm & thương hiệu nhại mới
@@ -278,5 +278,5 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - Trong lượt chơi Bình, phong bì dán kín (nếu đọc ngày 30/10) ghi quyết định của G: giữ công ty, cho Thắng thêm một năm, không ai bị đuổi vì Thắng ký không đọc, không nhắn tin cho nhân viên sau 22 giờ.
 - Bình nhặt được Tuất giữa trời mưa năm 2020, tính ngày 4/10 là sinh nhật Tuất. Ngày 1/10 Bình sơn riêng một ô đỗ xe ghi "HỒNG" cho Nguyên.
 - Kết thúc tốt nhất của Bình: G tặng bác quán trà đá ở cổng sau (quà riêng, không liên quan quyền hạn công ty).
-- Hương có thể dùng mối quen cũ (thợ điện ở Chợ Phố Cũ) để kiếm 2 giàn đèn còn thiếu ngày 28/10. Đóng góp của Hương ở Đêm Hồng: +150.000 nếu tiến độ ≥ 80%, +40.000 nếu 50–79%, −100.000 nếu dưới 50% (sập sân khấu).
+- Hương có thể dùng mối quen cũ (thợ điện ở Chợ Phố Cũ) để kiếm 2 giàn đèn còn thiếu ngày 28/10. Đóng góp của Hương ở Đại Nhạc Hội Siêu Nhân: +150.000 nếu tiến độ ≥ 80%, +40.000 nếu 50–79%, −100.000 nếu dưới 50% (sập sân khấu).
 - Chương có thể vay Bình thêm 2 triệu ngày 12/10.

@@ -144,9 +144,9 @@ con_ong_chau_cha: Ủa chú! Chú tìm con hả? Chill, con mới tới.
 // ------------------------------------------------------------
 === giam_doc_tudo_chua_te_deadline ===
 # npc:chua_te_deadline
-_{chua_te_deadline} gác chân lên bàn, đang lướt Tóp-tóp. Trên màn hình máy tính: file kế hoạch Đêm Hồng, 0 chữ._
+_{chua_te_deadline} gác chân lên bàn, đang lướt Tóp-tóp. Trên màn hình máy tính: file kế hoạch Đại Nhạc Hội Siêu Nhân, 0 chữ._
 chua_te_deadline: Ủa anh. Chill, còn sớm mà. Kịp hết.
-* [⏰ "Còn mấy ngày nữa là Đêm Hồng?"]
+* [⏰ "Còn mấy ngày nữa là Đại Nhạc Hội?"]
     chua_te_deadline: Dạ… nhiều ngày lắm anh. Mà nước tới chân mới nhảy, mà nhảy là phải đẹp.
     giam_doc: Em nhảy đẹp lần nào chưa?
     chua_te_deadline: Lần nào cũng đẹp anh. Chỉ là nhảy hơi trễ.
@@ -318,7 +318,7 @@ quan_ly_idol: Khoan, anh nghe máy chút… *(bịt một máy)* Dạ anh {giam_
 # npc:bien_kich
 _Sân thượng. {bien_kich} ngồi trên ghế nhựa, nhìn mây, tay cầm một cuốn sổ bìa da cũ._
 bien_kich: Anh {giam_doc}. Anh có biết một bài phát biểu hay cần gì không? Cần nỗi đau.
-* [🎤 "Viết cho anh bài phát biểu Đêm Hồng. Có nỗi đau. Nhưng ngắn."]
+* [🎤 "Viết cho anh bài phát biểu Đại Nhạc Hội. Có nỗi đau. Nhưng ngắn."]
     bien_kich: Ngắn thì đau hơn. Em nhận.
     ~ qh("bien_kich", 10)
     ~ gd_sua("ke_chuyen")
@@ -471,7 +471,7 @@ thanh_xin_nghi: Dạ… em chào anh. Em hơi sốt… nhưng em vẫn đi làm 
     ** [💬 "Thi đi. Đừng nói với {hr}."]
         thanh_xin_nghi: *(đứng hình, rồi cười rất to)* Anh… anh là sếp tốt nhất em từng xin nghỉ!
         ~ qh("thanh_xin_nghi", 20)
-* [📋 "Lịch trình Đêm Hồng em xếp xong chưa?"]
+* [📋 "Lịch trình Đại Nhạc Hội em xếp xong chưa?"]
     thanh_xin_nghi: Dạ xong 80% rồi ạ. 20% còn lại em… em xin nghỉ 31/10 được không anh?
     ~ qh("thanh_xin_nghi", -3)
 + [👋 "Thôi, em làm tiếp."]

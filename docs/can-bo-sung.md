@@ -13,7 +13,7 @@ Theo dõi những gì đã xong và những gì còn lại. Ký hiệu:
 - [x] 🙋 Chơi trên web, ưu tiên máy tính, host bằng GitHub Pages, repo công khai
 - [x] 🙋 Góc nhìn thứ 1 (thấy 2 tay) và thứ 3, hội thoại hiển thị như nhau
 - [x] 🙋 Song ngữ Việt – Anh, có âm thanh, lưu game trên trình duyệt
-- [x] 🙋 Lượt chơi: 1/10 – 31/10/2026, kết thúc hẳn sau Đêm Hồng (không có mùa 2)
+- [x] 🙋 Lượt chơi: 1/10 – 31/10/2026, kết thúc hẳn sau Đại Nhạc Hội Siêu Nhân (không có mùa 2)
 
 ### Thế giới
 - [x] 🙋 Thành Phố Ước Mơ (Dream City), Quận Hóng → [world/the-gioi.md](world/the-gioi.md)

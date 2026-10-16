@@ -68,7 +68,7 @@ _Đêm lửa trại. Bia lon, mực nướng{hr_hai_san:, và một khay hải s
 { hr_hai_san:
     ~ an(40)
 }
-sales: *(say, đứng lên ghế)* Chị hứa! Đêm Hồng chị mời ca sĩ nổi tiếng nhất nước về hát! Chắc kèo!
+sales: *(say, đứng lên ghế)* Chị hứa! Đại Nhạc Hội chị mời ca sĩ nổi tiếng nhất nước về hát! Chắc kèo!
 giam_doc: *(say hơn)* Anh hứa! Tăng lương cả công ty!
 _{hong_hot} quay clip. {ke_toan} ôm đầu._
 _Tới lượt {sieu_nhan_hong}. Ánh lửa hắt lên bộ đồ hồng._

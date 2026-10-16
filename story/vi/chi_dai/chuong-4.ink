@@ -76,7 +76,7 @@ _{sieu_nhan_hong} đi thẳng xuống biển. Vẫn cười._
 === chi_dai_1710_danh_sach_cat_giam ===
 # ngay:17 # gio:21:00 # noi:quan_nhau_vung_tau # bat_buoc
 _Bàn nhậu ven biển. Ghẹ, mực, bia. {sales} đã say, đứng lên ghế tuyên bố:_
-sales: Tin chị đi! Đêm Hồng, chị mời ca sĩ nổi tiếng nhất nước về hát! No cap!
+sales: Tin chị đi! Đại Nhạc Hội, chị mời ca sĩ nổi tiếng nhất nước về hát! No cap!
 _Cả bàn vỗ tay. Không ai hỏi ca sĩ nào._
 _{giam_doc} cũng say. Anh cầm ly bia, đứng dậy, mắt long lanh:_
 giam_doc: Các em! Anh hứa! Tháng sau… tăng lương cả công ty! Anh nói là làm!
@@ -226,7 +226,7 @@ _Nhà số 45. Bao cát. Đèn sân vàng vọt. Bạn quấn băng tay._
     _Hai người ngồi im. Ấm trà nguội dần._
     ~ qh("ke_toan", 8)
     ~ cd_nk(-15)
-* [📋 Ngồi mở laptop, làm lại dự toán Đêm Hồng lần thứ 6.]
+* [📋 Ngồi mở laptop, làm lại dự toán Đại Nhạc Hội lần thứ 6.]
     _Bạn cắt bớt hoa, cắt bớt pháo, giữ nguyên đèn. 1 giờ sáng, dự toán còn 280 triệu và chạy được._
     ~ cd_td(5)
     ~ cd_met(10)
@@ -258,9 +258,9 @@ designer: Thứ 37 anh.
 // ------------------------------------------------------------
 === chi_dai_1910_phong_giam_doc ===
 # ngay:19 # gio:16:00 # noi:phong_giam_doc
-_Bạn mang dự toán Đêm Hồng lần thứ 6 lên phòng giám đốc. {giam_doc} ngồi một mình, nhìn tờ giấy báo ngân hàng trên bàn. Thấy bạn, anh úp vội nó xuống._
+_Bạn mang dự toán Đại Nhạc Hội Siêu Nhân lần thứ 6 lên phòng giám đốc. {giam_doc} ngồi một mình, nhìn tờ giấy báo ngân hàng trên bàn. Thấy bạn, anh úp vội nó xuống._
 giam_doc: Ơ, {chi_dai}. Dự toán à? Em để đó anh xem.
-* [👊 Đập bàn: "Sếp xem bây giờ. Đêm Hồng còn 12 ngày."]
+* [👊 Đập bàn: "Sếp xem bây giờ. Đại Nhạc Hội còn 12 ngày."]
     ~ cd_dap_ban()
     _RẦM. Tờ giấy úp trên bàn lật ngửa. "Thông báo đến hạn: 15/11/2026."_
     giam_doc: …Anh ký. 280 triệu. Anh ký.
@@ -290,7 +290,7 @@ _Anh nói "anh Genta" như nói tên một người thầy._
     ~ qh("giam_doc", 20)
     ~ cd_uy(5)
 * [🦁 "Vậy thì sếp đừng hứa tăng lương lúc say nữa. Hứa lúc tỉnh, rồi làm."]
-    giam_doc: Ừ. Anh hứa lúc tỉnh: nếu Đêm Hồng thành công, team sự kiện của em được tăng lương trước.
+    giam_doc: Ừ. Anh hứa lúc tỉnh: nếu Đại Nhạc Hội thành công, team sự kiện của em được tăng lương trước.
     ~ qh("giam_doc", 12)
     ~ cd_uy(8)
 * [😶 Không nói gì. Chỉ rót cho anh một ly trà.]
@@ -427,7 +427,7 @@ _Im lặng ba giây. Rồi {thuc_tap_sinh} vỗ tay. Rồi cả quán vỗ tay. 
 # ngay:20 # gio:22:00 # noi:karaoke_hat_cho_nhau_nghe
 _Tăng hai. Karaoke Hát Cho Nhau Nghe. Phòng VIP 2, sức chứa 15 người, đang chứa 21._
 _{idol_het_thoi} hát "Công Viên" lần thứ ba. {giam_doc} đã say, cầm micro đứng lên bàn:_
-giam_doc: Các em! Năm nay sinh nhật 16 tuổi! Anh hứa… nếu Đêm Hồng thành công, tăng lương 20%! Cả công ty!
+giam_doc: Các em! Năm nay sinh nhật 16 tuổi! Anh hứa… nếu Đại Nhạc Hội thành công, tăng lương 20%! Cả công ty!
 _Cả phòng gào lên. {hong_hot} bấm quay._
 * [📝 Lấy tờ khăn giấy, đưa bút: "Sếp ký vô đây. Có người làm chứng."]
     giam_doc: Ký! Anh ký! Anh không sợ!

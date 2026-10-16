@@ -21,7 +21,7 @@ Năm nay Sơn đã xin nghỉ 31 lần. Bà ngoại "ốm nặng" 7 lần, "nhà
 - Ngay cả **Thái**, bạn thân nhất, cũng chưa biết.
 
 ### Động cơ trong 30 ngày
-Ngày 1/10, Sơn nhận được tin nhắn: *"Chúc mừng Sơn Kim Tuyến đã vào vòng trong. Chung kết truyền hình trực tiếp: 20:00, thứ 7 ngày 31/10."* Cùng ngày, Thắng giao cho Sơn xếp lịch 30 ngày cho Siêu Nhân Hồng, chốt lại bằng **Đêm Hồng Halloween, 19:30 ngày 31/10**.
+Ngày 1/10, Sơn nhận được tin nhắn: *"Chúc mừng Sơn Kim Tuyến đã vào vòng trong. Chung kết truyền hình trực tiếp: 20:00, thứ 7 ngày 31/10."* Cùng ngày, Thắng giao cho Sơn xếp lịch 30 ngày cho Siêu Nhân Hồng, chốt lại bằng **Đại Nhạc Hội Siêu Nhân, 19:30 ngày 31/10**.
 
 Hai sân khấu, một đêm, cách nhau 30 phút xe máy (giờ cao điểm thì 1 tiếng). Sơn phải giữ được việc, giữ được ước mơ, và không để HR Tuấn bắt bài.
 
@@ -123,11 +123,11 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
 ### Chương 6: "Hai Sân Khấu Một Đêm" (28/10 – 31/10)
 - **29/10 (wifi sập):** không gửi được tin nhắn xin nghỉ qua Zalo-lô. Sơn phải gọi điện. Người bắt máy là **Thắng**.
 - **30/10:** họp đánh giá. Tuấn mở tập hồ sơ 3 cm. Tùy chỉ số, Sơn được khen, bị kỷ luật, hoặc… Tuấn nhìn Sơn rất lâu rồi nói: *"Giọng em nghe quen quen."*
-- **31/10:** 19:30 Đêm Hồng, 20:00 chung kết. Bốn hướng:
-  - Ở lại Đêm Hồng, bỏ chung kết.
-  - Đi thi, bỏ Đêm Hồng (giao lịch cho Duy, cầu trời).
+- **31/10:** 19:30 Đại Nhạc Hội Siêu Nhân, 20:00 chung kết. Bốn hướng:
+  - Ở lại Đại Nhạc Hội Siêu Nhân, bỏ chung kết.
+  - Đi thi, bỏ Đại Nhạc Hội Siêu Nhân (giao lịch cho Duy, cầu trời).
   - Chạy cả hai bằng Grab qua Đại Lộ Kẹt Xe.
-  - 🔒 Thuyết phục đài nối sóng trực tiếp chung kết với sân khấu Đêm Hồng (cần quan hệ với Nguyên ≥ 60, Thái ≥ 60, Bảo ≥ 40, và đã mời Nguyên làm khách mời cuộc thi).
+  - 🔒 Thuyết phục đài nối sóng trực tiếp chung kết với sân khấu Đại Nhạc Hội Siêu Nhân (cần quan hệ với Nguyên ≥ 60, Thái ≥ 60, Bảo ≥ 40, và đã mời Nguyên làm khách mời cuộc thi).
 
 ---
 
@@ -211,7 +211,7 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
 
 ### Mẫu 6: 19:10, ngày 31/10
 
-> *(Sân khấu Đêm Hồng đang chỉnh đèn. Điện thoại bạn rung: "Sơn Kim Tuyến ơi, 40 phút nữa lên sóng, em đang ở đâu???")*
+> *(Sân khấu Đại Nhạc Hội Siêu Nhân đang chỉnh đèn. Điện thoại bạn rung: "Sơn Kim Tuyến ơi, 40 phút nữa lên sóng, em đang ở đâu???")*
 >
 > **{giam_doc}:** Sơn! Xe đón Siêu Nhân Hồng đâu? Lịch chạy chương trình đâu? Anh không ép, tùy em, nhưng em mà biến lúc này thì…
 >
@@ -222,7 +222,7 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
 > 3. 🛵 *"Em chạy qua đài 30 phút rồi về liền anh!"*
 >    - Hướng tới kết thúc "Hai Ghế Một Mông"
 > 4. 🔒 *"Sếp, em có cách cho Siêu Nhân Hồng lên sóng toàn quốc tối nay. Anh tin em một lần."* (Điều kiện ở Chương 6)
->    - Mở kết thúc bí mật "Song Ca Đêm Hồng"
+>    - Mở kết thúc bí mật "Song Ca Đại Nhạc Hội Siêu Nhân"
 
 ---
 
@@ -234,9 +234,9 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
 |---|---|---|---|
 | 1 | 😄 🎤 **Sơn Kim Tuyến** | Giấc Mơ Sân Khấu ≥ 80, đi thi chung kết 31/10, Độ Bị Soi < 100. Đã tự nộp đơn nghỉ việc với lý do thật | Pháo giấy kim tuyến rơi đầy sân khấu Đài Tivi Hóng. Bạn cầm cúp, mắt lem lớp trang điểm. Điện thoại rung, tin nhắn từ {hr}: *"Anh vote cho em 47 lần đó. Đơn nghỉ việc anh duyệt rồi. Lý do ghi: 'Đi hát'. Lý do đầu tiên của em mà anh tin."* |
 | 2 | 😄 📅 **Điều Phối Không Nghỉ Ngày Nào** | Không nghỉ ngày nào từ 15/10 tới 30/10, Uy tín ≥ 70, lịch Siêu Nhân Hồng không chồng chéo lần nào trong tuần cuối | Họp đánh giá 30/10. Tuấn đọc tên người nhận **thưởng chuyên cần** đầu tiên sau 3 năm: *"Sơn."* Cả phòng họp tưởng nghe nhầm. Tối thứ 7, bạn vẫn hát ở quán Sống Ảo, lần này cả công ty ngồi kín 3 bàn, và không ai phải bịa lý do gì cả |
-| 3 | 😄 🔒 **Kết thúc bí mật: Song Ca Đêm Hồng** | Thái đã biết bí mật trước 27/10, đã mời Nguyên làm khách mời cuộc thi, quan hệ với Nguyên ≥ 60, Thái ≥ 60, Bảo ≥ 40, chọn lựa chọn 🔒 ở Mẫu 6 | Bảo nối sóng, màn hình lớn chia đôi: một nửa là Đài Tivi Hóng, một nửa là Sân khấu Đêm Hồng. Bạn và Siêu Nhân Hồng song ca, kim tuyến và màu hồng lấp lánh trên sóng toàn quốc. Ở hàng ghế đầu, Tuấn giơ cây lightstick ghi "SƠN KIM TUYẾN", không giấu nữa |
+| 3 | 😄 🔒 **Kết thúc bí mật: Song Ca Đại Nhạc Hội Siêu Nhân** | Thái đã biết bí mật trước 27/10, đã mời Nguyên làm khách mời cuộc thi, quan hệ với Nguyên ≥ 60, Thái ≥ 60, Bảo ≥ 40, chọn lựa chọn 🔒 ở Mẫu 6 | Bảo nối sóng, màn hình lớn chia đôi: một nửa là Đài Tivi Hóng, một nửa là Sân khấu Đại Nhạc Hội Siêu Nhân. Bạn và Siêu Nhân Hồng song ca, kim tuyến và màu hồng lấp lánh trên sóng toàn quốc. Ở hàng ghế đầu, Tuấn giơ cây lightstick ghi "SƠN KIM TUYẾN", không giấu nữa |
 | 4 | 😢 📺 **Ốm Trên Sóng Truyền Hình** | Nghỉ ốm đúng hôm có phát sóng cuộc thi, Độ Tin Lý Do < 20, chưa tự thú với ai | Pantry công ty, cái tivi nhỏ trên tủ lạnh đang chiếu "Giọng Ca Ước Mơ". Thắng đứng xem, ly cà phê trên tay, rồi quay sang hỏi cả phòng: *"Ơ, bà ngoại cậu Sơn hôm nay khỏe hẳn rồi nhỉ?"* Sáng hôm sau, thùng carton của bạn có thêm một tờ giấy nghỉ ốm chưa dùng |
-| 5 | 😢 🗓️ **Hết Phép Cả Đời** | Độ Bị Soi đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Số Ngày Phép ≤ −10 vào ngày 30/10 | Bạn ký bản cam kết "không nghỉ thêm ngày nào tới hết năm". 20:00 ngày 31/10, bạn ngồi sau cánh gà Đêm Hồng cầm bộ đàm, điện thoại hiện thông báo: *"Thí sinh Sơn Kim Tuyến vắng mặt. Suất chung kết thuộc về người dự bị."* Bạn khẽ ngân nga một câu, chỉ có Tuất nghe |
+| 5 | 😢 🗓️ **Hết Phép Cả Đời** | Độ Bị Soi đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Số Ngày Phép ≤ −10 vào ngày 30/10 | Bạn ký bản cam kết "không nghỉ thêm ngày nào tới hết năm". 20:00 ngày 31/10, bạn ngồi sau cánh gà Đại Nhạc Hội Siêu Nhân cầm bộ đàm, điện thoại hiện thông báo: *"Thí sinh Sơn Kim Tuyến vắng mặt. Suất chung kết thuộc về người dự bị."* Bạn khẽ ngân nga một câu, chỉ có Tuất nghe |
 | 6 | 😢 🛵 **Hai Ghế Một Mông** | Chọn chạy cả hai nơi đêm 31/10 | Đại Lộ Kẹt Xe đứng im. Tài xế Grab hủy chuyến lần thứ 3. Bạn đứng giữa đường trong bộ đồ kim tuyến, một tay cầm bộ đàm đang gọi "Sơn đâu rồi?", một tay cầm điện thoại đang gọi "Sơn Kim Tuyến đâu rồi?". Bạn hát một mình dưới cột đèn đỏ. Đèn chuyển xanh, không ai vỗ tay |
 
 ---

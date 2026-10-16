@@ -53,7 +53,7 @@ _Hai mươi người bịt mắt lao về phía bạn như sóng thần._
 === giam_doc_1710_nhau_hai_san ===
 # ngay:17 # gio:19:30 # noi:vung_tau
 _Quán hải sản ven biển. Bàn dài, bia lạnh. {dan_dau_tu} vừa bao cả team vì Hồng Coin tăng x10. {sales} đã say._
-sales: Mọi người nghe nè! Đêm Hồng chị… à em mời ca sĩ nổi tiếng nhất nước về hát! Tin em đi! Chắc kèo!
+sales: Mọi người nghe nè! Đại Nhạc Hội chị… à em mời ca sĩ nổi tiếng nhất nước về hát! Tin em đi! Chắc kèo!
 _Cả bàn vỗ tay. Rồi tất cả quay sang bạn. Ly bia thứ năm trong tay bạn._
 thanh_ninh: Sếp ơi sếp nói một câu đi sếp! Một câu thôi!
 * [🍻 Đứng lên: "Tháng sau… tháng sau anh tăng lương cho cả nhà!"]

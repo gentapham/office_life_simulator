@@ -264,7 +264,7 @@ _Mục 1: gia hạn hợp đồng ca sĩ độc quyền. {idol_het_thoi} ngồi 
 // ------------------------------------------------------------
 === hr_3110_cong_soat_ve ===
 # ngay:31 # gio:19:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu Đêm Hồng, Phường Tân Drama. Bạn đứng ở cổng soát vé, bên cạnh một bình trà lớn, 20 lít, và một chồng ly giấy cam có chữ G sặc sỡ._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Bạn đứng ở cổng soát vé, bên cạnh một bình trà lớn, 20 lít, và một chồng ly giấy cam có chữ G sặc sỡ._
 _{giam_doc} đi ngang, hóa trang "Ông Kẹ Ngân Hàng": áo vest, tay cầm cuốn sổ nợ giả. Không ai cười. Ai cũng thấy hơi… thật._
 giam_doc: {hr}. Pha cho anh một ly. Loại gì cũng được.
 * [🍵 Trà sen. Trà của lần đầu tiên bạn pha cho cả công ty hôm 1/10.]
@@ -281,9 +281,9 @@ thuc_tap_sinh: Dạ anh còn trà Zzz không ạ? Em hồi hộp quá.
 // ------------------------------------------------------------
 === hr_3110_chung_ket ===
 # ngay:31 # gio:20:00 # noi:san_khau_dem_hong
-_20 giờ. Trên sân khấu Đêm Hồng, phim ngắn "Người Hùng Không Tên" vừa chiếu xong, tới video "16 năm" của {editor}. Ở cổng, bạn mở điện thoại: "Giọng Ca Ước Mơ", chung kết trực tiếp._
+_20 giờ. Trên sân khấu Đại Nhạc Hội Siêu Nhân, phim ngắn "Người Hùng Không Tên" vừa chiếu xong, tới video "16 năm" của {editor}. Ở cổng, bạn mở điện thoại: "Giọng Ca Ước Mơ", chung kết trực tiếp._
 { hr_biet_son_kim_tuyen:
-    _Bạn biết người sắp bước ra là ai. Bạn nhìn quanh sân khấu Đêm Hồng, tìm {thanh_xin_nghi}._
+    _Bạn biết người sắp bước ra là ai. Bạn nhìn quanh sân khấu Đại Nhạc Hội Siêu Nhân, tìm {thanh_xin_nghi}._
 - else:
     _Sơn Kim Tuyến. Thí sinh bạn bình chọn từ đầu mùa. Bạn để điện thoại tựa vào bình trà._
 }

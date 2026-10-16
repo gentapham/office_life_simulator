@@ -33,7 +33,7 @@ _Phòng họp tầng 2. Một người mặc nguyên bộ siêu nhân màu hồn
 sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ!
 _Rồi {giam_doc} quay sang bạn, đặt vào tay bạn một cuốn sổ lịch dày cộp, bìa hồng._
 giam_doc: {thanh_xin_nghi}. Đây là lịch 30 ngày của Siêu Nhân Hồng. Em giữ. Từ hôm nay em là người quan trọng nhất công ty sau anh. Anh không ép, tùy em.
-_Bạn lật trang cuối. Một dòng in đậm: "31/10, 19:30: ĐÊM HỒNG HALLOWEEN. Toàn công ty có mặt. Không ai được nghỉ."_
+_Bạn lật trang cuối. Một dòng in đậm: "31/10, 19:30: ĐẠI NHẠC HỘI SIÊU NHÂN. Toàn công ty có mặt. Không ai được nghỉ."_
 _Chữ "không ai được nghỉ" được ai đó gạch chân hai lần bằng bút đỏ. Nét gạch giống chữ anh {hr}._
 * [📅 "Dạ, em lo được. Lịch là nghề của em."]
     ~ uy_tin = uy_tin + 3
@@ -85,7 +85,7 @@ _Bạn nhìn {quan_ly_idol}. 37 tuổi, mắt thâm, 2 cái điện thoại. Anh
 # ngay:1 # gio:21:00 # noi:nha_ven_do # bat_buoc
 _9 giờ tối. Nhà vườn Ven Đô. Tiếng ếch nhái. Điện thoại rung._
 _"Chúc mừng SƠN KIM TUYẾN đã vào vòng trong 'Giọng Ca Ước Mơ'. Vòng 2 ghi hình: lịch báo sau. Chung kết truyền hình trực tiếp: 20:00, thứ 7 ngày 31/10."_
-_Bạn mở cuốn sổ lịch bìa hồng. Trang cuối. "31/10, 19:30: ĐÊM HỒNG HALLOWEEN. Toàn công ty có mặt. Không ai được nghỉ."_
+_Bạn mở cuốn sổ lịch bìa hồng. Trang cuối. "31/10, 19:30: ĐẠI NHẠC HỘI SIÊU NHÂN. Toàn công ty có mặt. Không ai được nghỉ."_
 _Hai sân khấu. Một đêm. Cách nhau 30 phút xe máy. Giờ cao điểm thì 1 tiếng._
 * [🎤 Lấy bộ đồ kim tuyến cũ ra, tập hát trước gương tới khuya.]
     ~ son_mo(5)

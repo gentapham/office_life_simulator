@@ -250,7 +250,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     H(9.2, 0.2, 0.3, 0x3a3d44, 0, 1.25, -0.15, g);
     nhom.add(g);
   };
-  bangQC(-40, 50, 16, Math.PI, quangCao("SIÊU NHÂN HỒNG", "ĐÊM HỒNG HALLOWEEN 31.10", ["#f26fa6", "#7b2a52"], "#ffffff"));
+  bangQC(-40, 50, 16, Math.PI, quangCao("SIÊU NHÂN HỒNG", "ĐẠI NHẠC HỘI SIÊU NHÂN 31.10", ["#f26fa6", "#7b2a52"], "#ffffff"));
   bangQC(30, 52, 17, Math.PI, quangCao("TRÀ SỮA HÓNG HỚT", "MUA 1 TẶNG 1 - CHỈ HÔM NAY", ["#ffcf3a", "#e8702a"], "#3a1d0a"));
   bangQC(-70, 24, 17, 0, quangCao("LL-ENTERTAINMENT", "NGÔI SAO MỚI - ĐÓN XEM", ["#2a2c31", "#7a1424"], "#ffffff"));
   bangQC(100, 50, 18, Math.PI, quangCao("NHÀ ĐẤT ƯỚC MƠ", "SỔ HỒNG RIÊNG - 0900 000 069", ["#2e8b57", "#1f4fa8"], "#ffffff"));

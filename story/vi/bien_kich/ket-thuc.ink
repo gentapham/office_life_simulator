@@ -69,7 +69,7 @@ _Pháo hoa hồng nổ trên đầu. {thuc_tap_sinh} ngồi xuống cạnh bạn
 thuc_tap_sinh: Dạ chị… phim sau… em có được viết chung nữa hông ạ?
 bien_kich: Được. Nhưng lần này anh phải gọi tui là "bà".
 thuc_tap_sinh: Dạ… dạ… *(lắp bắp)* Dạ… bà.
-_Cả hai bật cười. Ở trên sân khấu, Đêm Hồng mới chỉ bắt đầu._
+_Cả hai bật cười. Ở trên sân khấu, Đại Nhạc Hội Siêu Nhân mới chỉ bắt đầu._
 -> END
 
 // ------------------------------------------------------------
@@ -82,7 +82,7 @@ _Im lặng một giây. Rồi một tràng vỗ tay. Người vỗ đầu tiên,
 designer: *(nghiêng sang, nói nhỏ)* Lần này của bà thiệt hả?
 _Bạn gật. Không cần nói gì thêm. Lần đầu tiên trong năm năm, {designer} gật lại._
 { nguoi_theo_doi >= 1000000:
-    giam_doc: Chiến dịch thành công, phim của em mở màn Đêm Hồng. Anh không ép, nhưng anh tự hào.
+    giam_doc: Chiến dịch thành công, phim của em mở màn Đại Nhạc Hội. Anh không ép, nhưng anh tự hào.
 - else:
     giam_doc: Chiến dịch… chưa tới đích. Nhưng phim của em là thứ duy nhất tháng này anh không phải sửa câu nào.
 }
@@ -127,7 +127,7 @@ _Bên dưới, bạn để trống. Lần này không phải vì bí. Mà vì c�
 # ngay:31 # gio:19:46 # noi:san_khau_dem_hong
 ~ scandal()
 ~ follow(-80000)
-_Đêm Hồng. Phim vừa chiếu xong. Khán giả còn đang vỗ tay. Màn hình lớn hiện dòng chữ trắng:_
+_Đại Nhạc Hội Siêu Nhân. Phim vừa chiếu xong. Khán giả còn đang vỗ tay. Màn hình lớn hiện dòng chữ trắng:_
 _"Kịch bản: {bien_kich}."_
 _Rồi màn hình nháy một cái. Một tấm ảnh hiện lên, to bằng cả sân khấu._
 { bk_ghi_chu_y_tuong_duy:
@@ -187,9 +187,9 @@ _Lần đầu tiên trong đời, bạn không có gì để viết._
 // 😢 6. TRANG GIẤY TRẮNG
 === bien_kich_kt_trang_giay_trang ===
 # ngay:31 # gio:19:30 # noi:gac_mai_so_7
-_Đêm 31/10. Đêm Hồng Halloween._
-_Phim ngắn "Người Hùng Không Tên" bị hủy. Thay vào đó, mở màn Đêm Hồng là 15 phút {giam_doc} phát biểu trong bộ đồ Ông Kẹ Ngân Hàng._
-_Cả công ty ở Sân khấu Đêm Hồng. Trừ bạn._
+_Đêm 31/10. Đại Nhạc Hội Siêu Nhân._
+_Phim ngắn "Người Hùng Không Tên" bị hủy. Thay vào đó, mở màn Đại Nhạc Hội Siêu Nhân là 15 phút {giam_doc} phát biểu trong bộ đồ Ông Kẹ Ngân Hàng._
+_Cả công ty ở Sân khấu Đại Nhạc Hội Siêu Nhân. Trừ bạn._
 _Gác mái số 7. Đèn bàn vàng. Một tờ giấy trắng trên máy đánh chữ._
 _Điện thoại rung. {thuc_tap_sinh} nhắn: "Dạ chị ơi, sếp phát biểu tới đoạn hồi khởi nghiệp lần ba rồi ạ. Em nhớ chị."_
 _Thêm một tin, {designer}: "Bà đâu rồi? Không có bà, tui không có ai để cãi. Chán."_

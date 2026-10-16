@@ -1,7 +1,7 @@
 // ============================================================
 // SÁU KẾT THÚC CỦA RẮN ĐỘC
 // Tên cảnh đánh giá giữ "3010" theo quy ước (kết thúc được quyết
-// định trong ngày phán xét), nhưng cảnh chạy sau Đêm Hồng 31/10
+// định trong ngày phán xét), nhưng cảnh chạy sau Đại Nhạc Hội Siêu Nhân 31/10
 // để tính cả lựa chọn trong đêm diễn.
 // ============================================================
 
@@ -54,7 +54,7 @@
 // ------------------------------------------------------------
 === ran_doc_kt_trum_cuoi ===
 # ket_thuc:trum_cuoi # loai:co_hau
-_Một tuần sau Đêm Hồng. Tầng 2, phòng kính mới cạnh phòng giám đốc. Trên cửa dán tấm bảng: "PHÓ GIÁM ĐỐC"._
+_Một tuần sau Đại Nhạc Hội Siêu Nhân. Tầng 2, phòng kính mới cạnh phòng giám đốc. Trên cửa dán tấm bảng: "PHÓ GIÁM ĐỐC"._
 _Tấm bảng in tên bạn. {designer} thiết kế. Sửa đúng một lần. Bạn chọn bản đầu tiên._
 _Ngoài kia, công ty vẫn chạy. Chỉ là không ai còn nói chuyện với ai._
 _{truong_phong} họp một mình trong phòng "Sáng Tạo", nói với cái bảng trắng. {con_ong_chau_cha} chuyển về ngồi ở quán cà phê Sống Ảo, lần này là thật._
@@ -76,7 +76,7 @@ _Không ai trả lời._
 // ------------------------------------------------------------
 === ran_doc_kt_hieu_ech_tha_thu ===
 # ket_thuc:hieu_ech_tha_thu # loai:co_hau
-_Đêm Hồng, 22:47. Pháo hoa vừa tắt. Sân khấu còn khói hồng. Cả nghìn người chưa chịu về._
+_Đại Nhạc Hội Siêu Nhân, 22:47. Pháo hoa vừa tắt. Sân khấu còn khói hồng. Cả nghìn người chưa chịu về._
 { not rd_mo_nhanh_hieu_ech:
     _{sieu_nhan_hong} cầm micro, nhìn xuống hàng cuối. Nhìn thẳng vào bạn. Rất lâu._
     sieu_nhan_hong: Cái lỗ thông gió… hình con cá. Anh vừa nhớ ra rồi. Là em. Đúng hông?

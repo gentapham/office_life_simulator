@@ -314,7 +314,7 @@ _Còn bạn, có tấm ảnh 7 tuổi ôm cuốn truyện tranh to hơn người
 === bien_kich_1210_giao_ban ===
 # ngay:12 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban. Không ai nghe {truong_phong} nói, vì ai cũng đang canh app ngân hàng._
-truong_phong: Phim ngắn "Người Hùng Không Tên" mở màn Đêm Hồng. Hạn chót kịch bản hoàn chỉnh là 25/10 nhé. {bien_kich} báo tiến độ đi.
+truong_phong: Phim ngắn "Người Hùng Không Tên" mở màn Đại Nhạc Hội. Hạn chót kịch bản hoàn chỉnh là 25/10 nhé. {bien_kich} báo tiến độ đi.
 _Cả phòng quay sang bạn. Kể cả {thuc_tap_sinh}, ngồi cuối bàn, tay cầm bút bi._
 * [💡 "Em có dàn ý rồi. Em sẽ viết từ những gì em tự thấy."]
     ~ bk_that(5)

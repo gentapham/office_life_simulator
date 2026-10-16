@@ -119,7 +119,7 @@ Bác không làm truyền thông, nhưng bác giữ cổng. Mọi thứ của ch
 ### Chương 6: "Cuộc Họp Cổ Đông Ở Cổng" (28/10 – 31/10)
 - **29/10 (wifi sập):** Zalo-lô chết. Cả công ty phải nhắn nhau bằng **giấy viết tay gửi ở chòi bảo vệ**. Bác thành tổng đài. Ai nhắn gì cho ai, bác biết hết.
 - **30/10 (họp đánh giá):** nếu Lòng Tin Của G ≥ 80 và đã mở phong bì dán kín, bác được mời lên phòng họp lần đầu tiên trong 16 năm, **để đọc quyết định của G**. Bác không quyết gì cả, bác chỉ đọc, rồi xuống cổng rót trà.
-- **31/10:** Đêm Hồng. Bác đứng ở cổng sân khấu như mọi ngày, hoặc ngồi hàng ghế đầu với cái thẻ "Khách mời đặc biệt" mà bác không quen đeo.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Bác đứng ở cổng sân khấu như mọi ngày, hoặc ngồi hàng ghế đầu với cái thẻ "Khách mời đặc biệt" mà bác không quen đeo.
 
 ---
 

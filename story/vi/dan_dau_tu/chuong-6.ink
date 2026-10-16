@@ -38,7 +38,7 @@ _Bạn nợ {idol_het_thoi} 500.000đ. Và bạn vừa thấy bí mật lớn nh
 === dan_dau_tu_2810_du_doan_moc_4 ===
 # ngay:28 # gio:16:00 # noi:phong_giam_doc # bat_buoc
 _Chiều 28. Sáng nay {editor} lỡ xuất một video tỏ tình lên fanpage công ty. Bảng số liệu của bạn có một cái cột dựng đứng không ai lên kế hoạch._
-giam_doc: {dan_dau_tu}. Mốc cuối trước Đêm Hồng. Em đoán đi. Đoán cho đúng.
+giam_doc: {dan_dau_tu}. Mốc cuối trước Đại Nhạc Hội. Em đoán đi. Đoán cho đúng.
 -> dan_dau_tu_mg_du_doan
 
 // ------------------------------------------------------------
@@ -135,21 +135,21 @@ _Sổ nợ còn: {ddt_so_no} đồng. Ví bạn có: {tien} đồng._
         ~ qh("it", 5)
     }
     _Không hết. Nhưng đúng hẹn. Lần đầu tiên bạn trả đúng hẹn._
-* [😶 Đóng sổ. Để sau Đêm Hồng.]
+* [😶 Đóng sổ. Để sau Đại Nhạc Hội.]
     ~ cang_thang(5)
 - -> END
 
 // ------------------------------------------------------------
 === dan_dau_tu_3110_truoc_gio ===
 # ngay:31 # gio:17:30 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Cả công ty hóa trang. {giam_doc} hóa trang "Ông Kẹ Ngân Hàng", tay cầm cuốn sổ nợ bằng bìa cứng. Bạn nhìn cuốn sổ, thấy hơi quen._
+_Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} hóa trang "Ông Kẹ Ngân Hàng", tay cầm cuốn sổ nợ bằng bìa cứng. Bạn nhìn cuốn sổ, thấy hơi quen._
 _Bạn không hóa trang. Bạn mặc áo sơ mi, cầm điện thoại mở bảng người theo dõi. Hôm nay, đó là bộ đồ của bạn._
 _Trên điện thoại, {thanh_xin_nghi} nhắn: "Anh {dan_dau_tu}, 20:00 em thi chung kết 'Giọng Ca Ước Mơ'. Anh coi giùm em lượt bình chọn nha. Anh đọc số giỏi."_
 * [📊 "Ok. Anh canh số cho em."]
     thanh_xin_nghi: Cảm ơn anh! Mà… 500 nghìn anh nợ em hồi tháng 3, thôi khỏi trả nha. Coi như tiền công đọc số!
     ~ ddt_xoa("thanh_xin_nghi", 500000)
     ~ qh("thanh_xin_nghi", 15)
-* [😶 "Anh bận Đêm Hồng."]
+* [😶 "Anh bận Đại Nhạc Hội."]
     thanh_xin_nghi: Dạ… ừ. Em hiểu.
 - -> END
 
@@ -177,7 +177,7 @@ _Lần đầu tiên trong đời, bạn nhìn một con số đi lên, và mong 
     }
     ~ ddt_lam_that(3)
 * [📱 Mở kênh Đài Tivi Hóng, canh lượt bình chọn cho {thanh_xin_nghi}.]
-    _Bạn chia đôi màn hình: một bên Đêm Hồng, một bên "Giọng Ca Ước Mơ". Hai con số, hai người, cùng đi lên._
+    _Bạn chia đôi màn hình: một bên Đại Nhạc Hội Siêu Nhân, một bên "Giọng Ca Ước Mơ". Hai con số, hai người, cùng đi lên._
     ~ qh("thanh_xin_nghi", 10)
 - _22 giờ. Đèn sân khấu tắt dần. Bạn đứng yên ở góc khán đài thêm một lúc, như người vừa xem xong một bộ phim về cuộc đời mình._
 -> END

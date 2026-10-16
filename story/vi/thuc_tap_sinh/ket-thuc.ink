@@ -1,7 +1,7 @@
 // ============================================================
 // THỰC TẬP SINH · 6 KẾT THÚC
 // Kết quả được chốt theo trạng thái sau buổi họp đánh giá 30/10,
-// cảnh kết hiện ra khi Đêm Hồng (31/10) khép lại.
+// cảnh kết hiện ra khi Đại Nhạc Hội Siêu Nhân (31/10) khép lại.
 // Thứ tự ưu tiên: 🏦 Lửa Đam Mê về 0 → 🏧 Cây ATM Biết Đi → 💥 Nổi Loạn Lỡ Đà
 // → 🔒 Người Gác Két → 🎬 Tên Trên Màn Ảnh → 🎫 Nhân Viên Chính Thức
 // → 🏦 Về Lại Ngân Hàng (không được giữ lại và đã nhận lời sếp cũ).
@@ -46,7 +46,7 @@
 _Hôm qua, 30/10, {hr} đẩy qua bàn một tờ giấy: hợp đồng chính thức, 13 triệu._
 _Bạn đọc nguyên 8 trang. Từng điều khoản. Từng dấu phẩy. Phản xạ nghề. Cả phòng chờ 11 phút. {truong_phong} không giục. {giam_doc} không giục. Lần đầu có người chờ bạn._
 _Bạn ký. Chữ ký nghiêng, đều. Lần này, ô chữ ký ghi: "Người lao động"._
-_Đêm Hồng. Lần đầu tiên bạn đeo thẻ nhân viên màu cam. Có ảnh. Có tên. Không có chữ "Thực tập sinh"._
+_Đại Nhạc Hội Siêu Nhân. Lần đầu tiên bạn đeo thẻ nhân viên màu cam. Có ảnh. Có tên. Không có chữ "Thực tập sinh"._
 _Bạn vẫn cầm tấm hắt sáng. Tay vẫn mỏi từ bài thứ 3. Bạn vẫn "dạ anh, dạ chị"._
 chi_dai: *(bộ đàm)* {thuc_tap_sinh}, chuyển hắt sáng sang trái 20 phân. Giỏi.
 _Một bạn sinh viên tình nguyện chạy tới, ôm một cuộn dây điện, rụt rè._
@@ -66,7 +66,7 @@ _Dưới gối, cái thẻ kim cương vẫn nằm đó. Bạn không cần nó 
 // 😄 2. TÊN TRÊN MÀN ẢNH
 === thuc_tap_sinh_kt_ten_tren_man_anh ===
 # ngay:31 # gio:21:00 # noi:rap_bap_rang
-_Một tuần sau Đêm Hồng. Rạp Bắp Rang. Buổi chiếu chính thức phim ngắn "Người Hùng Không Tên". Thảm đỏ dài 4 mét, hơi nhăn._
+_Một tuần sau Đại Nhạc Hội Siêu Nhân. Rạp Bắp Rang. Buổi chiếu chính thức phim ngắn "Người Hùng Không Tên". Thảm đỏ dài 4 mét, hơi nhăn._
 _Bạn ngồi hàng thứ 3. Bên cạnh là {bien_kich}. Phía sau là 3 bạn cùng phòng ở Hẻm 69, mặc áo sơ mi đẹp nhất của họ (một người mượn áo của {con_ong_chau_cha})._
 _Phim chiếu. Phòng kính tầng 15. Sinh nhật 30 tuổi. Bỏ việc. Cơn mưa. Người mặc đồ hồng đẩy xe 2 cây số._
 _Đèn vẫn tắt. Dòng chữ chạy lên:_
@@ -92,7 +92,7 @@ _Bạn mặc sơ mi linen màu be. Không vest. Không kính gọng vàng. Bên 
 _Đối diện: anh Tư, sếp cũ. Anh nhìn bạn, nhìn {giam_doc}, rồi nhìn bộ hồ sơ giãn nợ bạn soạn: 22 trang, có dòng tiền dự kiến, có tài trợ "Thẻ Hồng", có cả lịch trả theo từng tháng._
 _"Mày bỏ ghế trưởng phòng đi cầm hắt sáng, giờ quay về đàm phán cho chính con nợ mày duyệt?"_
 thuc_tap_sinh: Dạ. Em duyệt khoản này năm 2024, em biết nó. Em xin giãn 2 năm. Công ty đang sống lại, anh Tư ạ.
-_40 phút. Anh Tư ký. Giãn nợ 2 năm. Căn biệt thự được giữ lại, dù Đêm Hồng tối nay có ra sao._
+_40 phút. Anh Tư ký. Giãn nợ 2 năm. Căn biệt thự được giữ lại, dù Đại Nhạc Hội Siêu Nhân tối nay có ra sao._
 _Ra tới thang máy, {giam_doc} đứng lại._
 giam_doc: Anh muốn đề bạt em làm Phó Giám đốc Tài chính. Anh không ép… à không. Anh xin em.
 _Bạn lắc đầu. Cái thẻ kim cương vừa dùng để chứng minh năng lực tài chính cho hồ sơ, bạn cất lại vào ví, sâu nhất có thể._
@@ -100,7 +100,7 @@ _Bạn lắc đầu. Cái thẻ kim cương vừa dùng để chứng minh năng
     giam_doc: *(lắc đầu, cười như khóc)* Thực tập. Ừ. Thực tập.
 * [😇 "Dạ, anh cho em làm nhân viên sản xuất. Em muốn làm phim ạ."]
     giam_doc: Được. Phim. Anh duyệt. Lần này anh đọc hết hợp đồng.
-- _Tối đó, Đêm Hồng. Bạn cầm tấm hắt sáng như mọi khi._
+- _Tối đó, Đại Nhạc Hội Siêu Nhân. Bạn cầm tấm hắt sáng như mọi khi._
 _Từ hôm đó, cả công ty nghe {giam_doc} gọi một thực tập sinh là "anh Duy". Rót trà cho "anh Duy". Mở cửa cho "anh Duy"._
 _Không ai hiểu vì sao. {ke_toan} hiểu, nhưng {ke_toan} không nói. Bác {bac_bao_ve} hiểu, và bác viết một dòng vào lá thư tháng sau gửi đi xa: "Có một đứa nhỏ tốt."_
 -> END
@@ -116,7 +116,7 @@ _Văn phòng kính tầng 15, Đồi Ngân Hàng. Bạn mặc lại vest. Đeo l
     _Ngày 30/10, {hr} đã nói câu đó: "Cảm ơn em vì đã đồng hành." Bạn đã nhận lời anh Tư từ trước. Mọi thứ khớp như một bảng cân đối kế toán._
 }
 _Tối 31/10. Bạn ở lại văn phòng tới 20 giờ 30. Không ai bắt. Bạn chỉ không muốn về._
-_Bạn mở Tóp-tóp. Livestream Đêm Hồng. Siêu Nhân Hồng tạo dáng giữa pháo giấy. Ở chân sân khấu, ai đó đang cầm tấm hắt sáng, đứng đúng chỗ bạn từng đứng._
+_Bạn mở Tóp-tóp. Livestream Đại Nhạc Hội Siêu Nhân. Siêu Nhân Hồng tạo dáng giữa pháo giấy. Ở chân sân khấu, ai đó đang cầm tấm hắt sáng, đứng đúng chỗ bạn từng đứng._
 _Người đó cầm lệch. Một nửa mặt Siêu Nhân Hồng bị tối._
 _Bạn nhìn màn hình rất lâu. Tay bạn tự động nâng lên 10 phân, như đang cầm tấm hắt sáng giùm người ta._
 _Có tiếng gõ cửa. Một nhân viên mới, áo sơ mi trắng, đứng ở cửa, rụt rè._
@@ -137,12 +137,12 @@ _Không ai sai bạn photo nữa. Ai cũng gọi "anh Duy". Ai cũng mời bạn
 _Rồi ai cũng có "việc gấp cần mượn chút"._
 _{idol_het_thoi}: tiền nhà. {sales}: tiếp khách. {thanh_xin_nghi}: "tiền xăng". {ran_doc}: "kẹt chút". {con_ong_chau_cha}: "thẻ bị khóa"._
 _Và {dan_dau_tu}: 200 triệu, "đợt cuối, lần này là lên thật"._
-_Tối 31/10. Bạn ngồi một mình trong phòng 12, dãy B. 3 bạn cùng phòng đi xem Đêm Hồng ngoài đường._
-_Cả công ty đang ở Đêm Hồng. Không ai rủ bạn. Bạn nghe {hong_hot} kể với ai đó trong group: "Rủ ổng thì ngại lắm, lỡ ổng nhắc nợ."_
+_Tối 31/10. Bạn ngồi một mình trong phòng 12, dãy B. 3 bạn cùng phòng đi xem Đại Nhạc Hội Siêu Nhân ngoài đường._
+_Cả công ty đang ở Đại Nhạc Hội Siêu Nhân. Không ai rủ bạn. Bạn nghe {hong_hot} kể với ai đó trong group: "Rủ ổng thì ngại lắm, lỡ ổng nhắc nợ."_
 _Bạn nhìn cái tháp mì gói. Nó cao hơn tháng trước. Bạn đã mua thêm, vì bạn không còn tiền mặt._
 * [🍜 Nấu một gói mì.]
     _Bạn ăn mì. Một mình. Không ai hỏi bạn lương bao nhiêu. Mà ai cũng biết rồi._
-* [📱 Mở Tóp-tóp xem Đêm Hồng.]
+* [📱 Mở Tóp-tóp xem Đại Nhạc Hội.]
     _Trên livestream, bạn thấy {chi_dai} nhìn quanh, như tìm ai đó. Rồi thôi._
 - _Điện thoại rung. Một tin nhắn. {dan_dau_tu}: "Anh {thuc_tap_sinh} ơi, coin lên rồi! Cho em thêm 5 triệu nữa thôi."_
 _Bạn úp điện thoại xuống. Sờ xuống gối. Cái thẻ kim cương vẫn ở đó, sáng lấp lánh trong bóng tối._
@@ -159,7 +159,7 @@ _{chi_dai} nhìn bạn. Lần đầu tiên, chị không bênh._
 _Ngày 30/10, họp đánh giá. {hr} cười như mọi khi._
 hr: Anh cảm ơn em vì đã đồng hành cùng {cong_ty} trong 2 tháng qua.
 _Bạn gật đầu. Bạn không "dạ". Lần đầu tiên bạn không "dạ"._
-_Chiều 31/10. Cả công ty đi dựng sân khấu Đêm Hồng. Bạn ôm thùng carton đi ra cổng: cuốn sổ ghi chép, 3 cây bút, tấm hắt sáng cũ mà {designer} cho bạn giữ._
+_Chiều 31/10. Cả công ty đi dựng sân khấu Đại Nhạc Hội Siêu Nhân. Bạn ôm thùng carton đi ra cổng: cuốn sổ ghi chép, 3 cây bút, tấm hắt sáng cũ mà {designer} cho bạn giữ._
 _{cho} chạy theo bạn tới cổng. Nó ngậm theo ổ bánh mì của bạn, ổ bánh mì bạn để quên trên bàn._
 cho: *(đặt ổ bánh mì xuống chân bạn, ngồi xuống)* Gâu.
 * [🐾 Ngồi xuống, ôm {cho}.]

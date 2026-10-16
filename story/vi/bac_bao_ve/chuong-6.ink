@@ -231,7 +231,7 @@ _Rồi bác đi xuống cổng. Rót trà. Đeo lại cái thẻ "Bảo vệ"._
 _Phong bì đã mở nằm trong túi áo. Bác biết bên trong viết gì. Nhưng không ai mời bác lên. Và bác không tự đi lên._
 _Qua cửa sổ tầng 2, bác thấy {hr} đứng dậy, cầm tập hồ sơ màu hồng. Bác thấy {chi_dai} đứng dậy trước khi {hr} đọc tới cái tên thứ hai._
 * [🚪 Đi lên tầng 2. Đứng ở cửa phòng họp. Không nói. Chỉ đứng.]
-    _Cả phòng quay ra nhìn ông bảo vệ đứng ở cửa. {hr} nhìn bác. Gấp tập hồ sơ lại. "Tạm hoãn tới sau Đêm Hồng."_
+    _Cả phòng quay ra nhìn ông bảo vệ đứng ở cửa. {hr} nhìn bác. Gấp tập hồ sơ lại. "Tạm hoãn tới sau Đại Nhạc Hội Siêu Nhân."_
     ~ bv_lo_than(10)
     ~ bv_qh_ca_cong_ty(3)
 * [🍵 Ở lại cổng. Giữ lời: người giữ thư thì không tự mở miệng.]
@@ -254,7 +254,7 @@ _Rồi thấy {thuc_tap_sinh} đi ra sau lưng {chi_dai}. Rồi {thanh_xin_nghi}
 // ------------------------------------------------------------
 === bac_bao_ve_3110_cong_san_khau ===
 # ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
-_31/10. Đêm Hồng Halloween. 6 giờ 30 chiều. Bác đứng ở cổng Sân khấu Đêm Hồng. Không phải cổng công ty, nhưng cổng nào thì cũng là cổng._
+_31/10. Đại Nhạc Hội Siêu Nhân. 6 giờ 30 chiều. Bác đứng ở cổng Sân khấu Đại Nhạc Hội Siêu Nhân. Không phải cổng công ty, nhưng cổng nào thì cũng là cổng._
 _{giam_doc} tới, hóa trang "Ông Kẹ Ngân Hàng": vest đen, mặt nạ, tay cầm một cuốn sổ nợ giả. Không ai cười, vì không ai chắc anh đang đùa._
 _Anh tháo mặt nạ, đưa bác một tấm thẻ đeo cổ: "KHÁCH MỜI ĐẶC BIỆT – HÀNG GHẾ ĐẦU"._
 giam_doc: Bác ngồi hàng đầu nhé. Năm nay em muốn bác xem, không phải gác.

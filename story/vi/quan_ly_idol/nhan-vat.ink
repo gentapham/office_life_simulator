@@ -339,15 +339,15 @@ designer: Anh {quan_ly_idol}. Poster đám cưới anh {idol_het_thoi}, mẹ cô
     designer: Hông lấy tiền. Em vẽ vì em thích.
     _Ba ngày sau, một poster "Công Viên Hồng" xuất hiện trên bàn bạn. Đẹp tới mức bạn cất vào ngăn bàn, không dám cho ai thấy trước._
     ~ qh("designer", 8)
-* [😶 "Để sau Đêm Hồng."]
-    designer: Dạ. Sau Đêm Hồng thì… chưa biết em còn ở đây hông.
+* [😶 "Để sau Đại Nhạc Hội."]
+    designer: Dạ. Sau Đại Nhạc Hội thì… chưa biết em còn ở đây hông.
     _{designer} nói câu đó rất nhỏ, rồi quay về cái laptop thứ hai._
 - -> END
 
 // ------------------------------------------------------------
 === quan_ly_idol_tudo_sales ===
 # npc:sales
-sales: Anh {quan_ly_idol}! Tin chị đi, chị có nhà tài trợ cho Đêm Hồng: Răng Hồng! Bàn chải màu hồng! Chắc kèo!
+sales: Anh {quan_ly_idol}! Tin chị đi, chị có nhà tài trợ cho Đại Nhạc Hội: Răng Hồng! Bàn chải màu hồng! Chắc kèo!
 * [💬 "Gửi anh số điện thoại người phụ trách."]
     sales: *(cười rất tươi)* Dạ để chị hỏi lại số.
     ~ qh("sales", -3)

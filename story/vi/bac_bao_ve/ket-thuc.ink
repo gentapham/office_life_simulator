@@ -1,6 +1,6 @@
 // ============================================================
 // BÁC BẢO VỆ: BÌNH · ĐÁNH GIÁ & 6 KẾT THÚC
-// Chạy sau Đêm Hồng (cần kết quả chiến dịch), theo thứ tự ưu tiên:
+// Chạy sau Đại Nhạc Hội Siêu Nhân (cần kết quả chiến dịch), theo thứ tự ưu tiên:
 //   1. Bị Cho Nghỉ Hưu        (Lộ Thân Phận 100 khi Thắng chưa biết sự thật,
 //                              hoặc quan hệ với Thắng ≤ −40)
 //   2. Gác Cổng Cho Người Lạ  (nhận tiền LL + chiến dịch Bị Cướp Mất / Chìm Nghỉm)
@@ -112,7 +112,7 @@ _Dưới chòi, bác tắt đèn. Đúng 9 giờ như mọi khi. Hôm nay muộn
 // ------------------------------------------------------------
 === bac_bao_ve_kt_ve_vuon ===
 # ngay:31
-_Đêm Hồng thành công. Siêu Nhân Hồng nổi tiếng. {cong_ty} sống. Bác nhìn tất cả những thứ đó từ cổng sân khấu và nghĩ: thế là đủ._
+_Đại Nhạc Hội Siêu Nhân thành công. Siêu Nhân Hồng nổi tiếng. {cong_ty} sống. Bác nhìn tất cả những thứ đó từ cổng sân khấu và nghĩ: thế là đủ._
 _Tháng 11, bác nộp đơn nghỉ hưu. Viết tay, giấy kẻ ô học sinh. {hr} đọc xong, ngồi im năm phút, rồi ký. Lần đầu tiên anh làm thủ tục nghỉ việc mà khóc._
 _Bác về nhà cấp 4 ở Ven Đô. Vườn rau muống. Bể cá. Tủ gỗ. Ghế bố mang từ chòi về, kê dưới gốc cây._
 _Chủ nhật đầu tiên, có người tới._
@@ -134,7 +134,7 @@ _Bác ngồi bên bể, rót trà, nhìn ba con cá. Mười sáu năm gác cổ
 # ngay:31
 _Tháng 11. Hộp thư ở chòi trống._
 _Bác vẫn viết. Tối chủ nhật. Giấy kẻ ô học sinh. Bút bi. "Gửi G,"._
-_Bác kể chuyện Đêm Hồng. Kể chuyện {cho} lại cắn dây mạng. Kể chuyện thằng {thuc_tap_sinh} đã biết nói "không"._
+_Bác kể chuyện Đại Nhạc Hội Siêu Nhân. Kể chuyện {cho} lại cắn dây mạng. Kể chuyện thằng {thuc_tap_sinh} đã biết nói "không"._
 _Năm ngày. Mười ngày. Hộp thư vẫn trống._
 _Tháng 12. Bác viết thật hơn. Viết hết những gì tháng 10 bác đã giấu, đã tô đẹp, đã bỏ không gửi. Viết dài ba trang. Gửi._
 _Hộp thư vẫn trống._

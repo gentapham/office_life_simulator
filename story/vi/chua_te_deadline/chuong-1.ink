@@ -47,7 +47,7 @@ giam_doc: Thôi em, đối tác đang chờ. Anh không ép, tùy em… mà thô
 _Chữ ký. Tiếng vỗ tay. 5 tỷ về tài khoản. {hong_hot} livestream, {thanh_ninh} khóc vì xúc động, {dan_dau_tu} lẩm bẩm "5 tỷ mà all-in coin thì…"._
 giam_doc: Và người cầm lái cả chiến dịch này là… {chua_te_deadline}! Đâu rồi? À đây rồi, ngồi góc cuối.
 _Cả phòng quay lại. Bạn đang xem dở một video dạy nấu mì bằng ấm siêu tốc._
-giam_doc: *(vỗ vai bạn)* MV, gameshow, livestream, Đêm Hồng 31/10. Cả chiến dịch nằm trong tay em đấy. Anh không ép, tùy em.
+giam_doc: *(vỗ vai bạn)* MV, gameshow, livestream, Đại Nhạc Hội 31/10. Cả chiến dịch nằm trong tay em đấy. Anh không ép, tùy em.
 * [🌊 "Dạ chill anh, còn 30 ngày mà. Kịp hết."]
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5
     truong_phong: *(ở đầu bàn, hít một hơi rất sâu)* "Kịp hết". Tớ ghi lại câu này nhé, {chua_te_deadline}.

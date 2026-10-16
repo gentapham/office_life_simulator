@@ -1,5 +1,5 @@
 // ============================================================
-// CHỊ ĐẠI: HƯƠNG · CHƯƠNG 6: "ĐÊM HỒNG DO CHỊ ĐỨNG" (28/10 – 31/10)
+// CHỊ ĐẠI: HƯƠNG · CHƯƠNG 6: "ĐẠI NHẠC HỘI SIÊU NHÂN DO CHỊ ĐỨNG" (28/10 – 31/10)
 // ============================================================
 
 // ------------------------------------------------------------
@@ -166,8 +166,8 @@ _Tầng 1 im lặng. Rồi mọi người nhìn về phía bàn trợ lý. {than
 // ------------------------------------------------------------
 === chi_dai_2910_toi_kiem_tra ===
 # ngay:29 # gio:21:00 # noi:san_khau_dem_hong
-_9 giờ tối. Sân khấu Đêm Hồng. Lần chạy thử đầu tiên. Đèn bật. Loa bật. Cột điện quấn đèn hồng nhấp nháy._
-_Tiến Độ Đêm Hồng: {cd_tien_do}%._
+_9 giờ tối. Sân khấu Đại Nhạc Hội Siêu Nhân. Lần chạy thử đầu tiên. Đèn bật. Loa bật. Cột điện quấn đèn hồng nhấp nháy._
+_Tiến Độ Đại Nhạc Hội Siêu Nhân: {cd_tien_do}%._
 {
 - cd_tien_do >= 80:
     _Mọi thứ chạy. Âm thanh trong. Đèn đều. {it} đứng giữa sân khấu, nhìn lên giàn đèn, gật đầu: "Ổn."_
@@ -248,15 +248,15 @@ hr: Anh không đọc nữa.
 ~ cd_khong_ai_bi_duoi = true
 ~ cd_uy(15)
 ~ tinh_than_cong_ty = tinh_than_cong_ty + 15
-_{giam_doc} hắng giọng: "Ừ. Nếu Đêm Hồng thành công thì… không có danh sách nào cả. Nếu không thì… anh là người đầu tiên đi."_
+_{giam_doc} hắng giọng: "Ừ. Nếu Đại Nhạc Hội Siêu Nhân thành công thì… không có danh sách nào cả. Nếu không thì… anh là người đầu tiên đi."_
 -> END
 
 = dung_len
 chi_dai: Ông dừng. Đêm mai mới có kết quả. Đọc danh sách hôm nay là đọc trước án.
-giam_doc: *(im lặng một lúc)* Em {chi_dai} nói đúng. Tạm hoãn. Sau Đêm Hồng.
+giam_doc: *(im lặng một lúc)* Em {chi_dai} nói đúng. Tạm hoãn. Sau Đại Nhạc Hội.
 _{hr} gấp hồ sơ lại. Thở ra. Không ai bị gạch tên. Hôm nay._
 * [🦁 "Không phải 'tạm'. Hủy."]
-    giam_doc: …Anh hứa. Đêm Hồng thành công thì hủy.
+    giam_doc: …Anh hứa. Đại Nhạc Hội thành công thì hủy.
     ~ cd_khong_ai_bi_duoi = true
     ~ cd_uy(8)
 * [😶 Ngồi xuống. Thế là đủ cho hôm nay.]
@@ -278,7 +278,7 @@ _{hr} đọc tiếp. Dòng hai: {thanh_xin_nghi}. Rồi gấp lại: "Hai trư�
 // ------------------------------------------------------------
 === chi_dai_3010_toi_truoc_dem_hong ===
 # ngay:30 # gio:21:00 # noi:san_thuong
-_Sân thượng công ty. Đêm trước Đêm Hồng. Bên kia đường, karaoke đang hát "Công Viên". Ai đó hát sai lời "khoai chiên", cả phòng cười._
+_Sân thượng công ty. Đêm trước Đại Nhạc Hội Siêu Nhân. Bên kia đường, karaoke đang hát "Công Viên". Ai đó hát sai lời "khoai chiên", cả phòng cười._
 { qh_ke_toan >= 30:
     -> co_ban
 - else:
@@ -311,7 +311,7 @@ _Không ai lên. Cả công ty đang ở karaoke bên kia đường. Bạn nghe 
 // ------------------------------------------------------------
 === chi_dai_3110_sang_dem_hong ===
 # ngay:31 # gio:10:00 # noi:san_khau_dem_hong # bat_buoc
-_31/10. Đêm Hồng Halloween. 19:30 mở màn. Còn 9 tiếng rưỡi._
+_31/10. Đại Nhạc Hội Siêu Nhân. 19:30 mở màn. Còn 9 tiếng rưỡi._
 _{giam_doc} tới sân khấu trong bộ hóa trang "Ông Kẹ Ngân Hàng": áo vest đen, mặt nạ, tay cầm một cuốn sổ nợ giả. Không ai cười, vì không ai chắc anh đang đùa._
 _{thanh_xin_nghi} đứng ở chân sân khấu, gãi đầu, cầm tờ giấy xin nghỉ: "Dạ… tối nay em xin về sớm lúc 7 giờ ạ… bà ngoại em…"_
 _Bạn biết. 20:00 tối nay là chung kết trực tiếp "Giọng Ca Ước Mơ" ở Đài Tivi Hóng._
@@ -338,7 +338,7 @@ _Mọi tiếng trả lời đều là: "Rõ, chị Đại."_
 === chi_dai_3110_canh_ga ===
 # ngay:31 # gio:19:30 # noi:canh_ga_dem_hong # bat_buoc
 ~ cd_dang_quay = true
-_19:30. Sân khấu Đêm Hồng. Cả nghìn khán giả. Truyền hình trực tiếp. Mở màn bằng phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
+_19:30. Sân khấu Đại Nhạc Hội Siêu Nhân. Cả nghìn khán giả. Truyền hình trực tiếp. Mở màn bằng phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
 _Bạn đứng sau cánh gà, bộ đàm bên tai, tay đặt lên cầu dao tổng._
 {
 - cd_tien_do >= 80:

@@ -1,7 +1,7 @@
 // ============================================================
 // KẾ TOÁN · SÁU KẾT THÚC
 // Đánh giá dựa trên họp đánh giá 30/10 và con số cuối cùng sau
-// Đêm Hồng, nên cảnh đánh giá chạy cuối ngày 31/10.
+// Đại Nhạc Hội Siêu Nhân, nên cảnh đánh giá chạy cuối ngày 31/10.
 // Thứ tự ưu tiên:
 //   1. Mất Ngủ Vĩnh Viễn    (ngất lần thứ hai)
 //   2. 🔒 Trang 47b (bí mật) (47b có hiệu lực, không phá chiến dịch)
@@ -89,7 +89,7 @@ _Bạn treo lên tường, ngay cạnh bức tranh, tấm thẻ tên mới: "Gi�
 // ------------------------------------------------------------
 === ke_toan_kt_so_sach_ngu_ngon ===
 # ket_thuc:so_sach_ngu_ngon # loai:co_hau
-_Đêm Hồng. Pháo giấy hồng vừa nổ. Con số trên màn hình lớn vượt một triệu. Top 10 xu hướng._
+_Đại Nhạc Hội Siêu Nhân. Pháo giấy hồng vừa nổ. Con số trên màn hình lớn vượt một triệu. Top 10 xu hướng._
 _Đám đông nhảy. {hong_hot} hét. {chi_dai} nhấc bổng {thuc_tap_sinh} lên. {giam_doc} đứng khóc trong bộ đồ hóa trang, không ai nhận ra._
 _23:47. Điện thoại bạn rung. "Tài khoản công ty +5.000.000.000đ."_
 _Ngay giữa đám đông đang nhảy, bạn mở ngân hàng điện tử. Wifi có lại rồi. Chuyển khoản trả hết nợ ngân hàng. Khoản vay thế chấp biệt thự số 1, Đồi Ngân Hàng: tất toán._
@@ -119,9 +119,9 @@ _Bạn để "đã xem". Rồi đi pha một ly cà phê. Có hóa đơn._
 === ke_toan_kt_trang_47b ===
 # ket_thuc:trang_47b # loai:co_hau # bi_mat
 { nguoi_theo_doi >= 1000000:
-    _Đêm Hồng thành công. Một triệu người. Năm tỷ thưởng. Không ai cần tới trang 47b._
+    _Đại Nhạc Hội Siêu Nhân thành công. Một triệu người. Năm tỷ thưởng. Không ai cần tới trang 47b._
 - else:
-    _Đêm Hồng dừng ở con số {nguoi_theo_doi}. Không đủ. Giấy đòi 10 tỷ chưa kịp gửi thì luật sư của {sieu_nhan_hong} đã gửi một tờ khác: "Căn cứ trang 47b, Bên A không yêu cầu hoàn trả."_
+    _Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. Không đủ. Giấy đòi 10 tỷ chưa kịp gửi thì luật sư của {sieu_nhan_hong} đã gửi một tờ khác: "Căn cứ trang 47b, Bên A không yêu cầu hoàn trả."_
     _Công ty vẫn còn. Cả công ty đã cố hết sức. Có ba chữ ký làm chứng cho điều đó._
 }
 _Sáng 1/11. Phòng kế toán, tầng 2. Chưa ai tới. Bạn đến sớm như mọi khi._
@@ -166,7 +166,7 @@ _Tối đó, ở nhà số 18, bạn mở cuốn sổ. Viết dòng cuối: "30/
 // ------------------------------------------------------------
 === ke_toan_kt_pha_san ===
 # ket_thuc:pha_san # loai:buon
-_Đêm Hồng dừng ở con số {nguoi_theo_doi}. Không đủ một triệu. Không vào top 10._
+_Đại Nhạc Hội Siêu Nhân dừng ở con số {nguoi_theo_doi}. Không đủ một triệu. Không vào top 10._
 { kt_47b_hieu_luc && kt_pha_chien_dich:
     _Trang 47b có đủ chữ ký. Nhưng tờ giấy viết rõ: "Nếu có người cố tình phá, thì giữ nguyên trang 47." Bạn là người đó. Bạn biết._
 }
@@ -199,7 +199,7 @@ bac_si_khoe_re: Lại là em à? *(lật hồ sơ)* Lần thứ hai trong tháng
 ke_toan: Dạ… mọi con số là sao bác sĩ?
 bac_si_khoe_re: Là mọi con số. Kể cả giờ đồng hồ.
 _Bác sĩ đi ra. Bạn nằm. Điện thoại trên tủ đầu giường sáng lên. {chi_dai} gửi video._
-_Đêm Hồng. Đèn hồng. Pháo giấy. Tiếng hét. {sieu_nhan_hong} tạo dáng. Hàng ghế cuối, chỗ bạn định ngồi, có một cái ghế trống. Ai đó đặt lên ghế một máy tính bỏ túi._
+_Đại Nhạc Hội Siêu Nhân. Đèn hồng. Pháo giấy. Tiếng hét. {sieu_nhan_hong} tạo dáng. Hàng ghế cuối, chỗ bạn định ngồi, có một cái ghế trống. Ai đó đặt lên ghế một máy tính bỏ túi._
 _Bạn xem video ba lần. Lần thứ ba, bạn để ý con số người theo dõi ở góc màn hình: {nguoi_theo_doi}. Bạn nhắm mắt lại. Bạn hứa với bác sĩ rồi._
 _Năm phút sau, bạn mở mắt._
 _Bạn lén lấy tờ giấy ghi đơn thuốc trên tủ, lật mặt sau. Lấy cây bút bi kế toán trong túi áo bệnh nhân. Không ai biết sao nó lại ở đó._

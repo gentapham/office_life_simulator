@@ -75,7 +75,7 @@ _Bạn ném bộ đàm xuống ghế. Rồi nhặt lên. Rồi lau nó. Bộ đ�
 // ============================================================
 === chi_dai_mg_ngan_sach_mo_dau ===
 # noi:phong_giam_doc
-_Phòng giám đốc. Ba đối thủ. Ba vòng. Một mục tiêu: ngân sách Đêm Hồng._
+_Phòng giám đốc. Ba đối thủ. Ba vòng. Một mục tiêu: ngân sách Đại Nhạc Hội Siêu Nhân._
 ke_toan: Vòng một. Hóa đơn đâu?
 giam_doc: Vòng hai. Anh không ép, tùy em.
 thanh_ninh: Vòng ba. Dạ anh nói chuẩn quá anh ơi!

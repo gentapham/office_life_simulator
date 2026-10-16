@@ -50,7 +50,7 @@ _Bạn nhìn hàng người. {thuc_tap_sinh} giơ ngón cái. {chi_dai} gật đ
 hr: Dạ. Em nhận. Mà anh ơi, trưởng phòng có được mua thêm kệ trà không anh?
 giam_doc: Hỏi {ke_toan}.
 ke_toan: *(từ cuối hàng)* Có hóa đơn là có.
-_Đêm 31/10. Sân khấu Đêm Hồng. Bạn đứng ở cổng với bình trà 20 lít. Ai đi qua cũng dừng lại xin một ly._
+_Đêm 31/10. Sân khấu Đại Nhạc Hội Siêu Nhân. Bạn đứng ở cổng với bình trà 20 lít. Ai đi qua cũng dừng lại xin một ly._
 _{chua_te_deadline} xin trà bạc hà. {editor} xin trà hoa cúc cho mắt. {bac_bao_ve} không xin, bạn rót trước._
 _{cho} nằm dưới chân bình trà, gác cằm lên giày bạn._
 thuc_tap_sinh: Dạ anh còn trà Zzz không ạ?
@@ -63,7 +63,7 @@ _Trên tờ giấy dán ở bình trà, ai đó viết thêm bằng bút đỏ: 
 // 😄 ✂️ XÉ DANH SÁCH
 === hr_kt_xe_danh_sach ===
 # ngay:31 # gio:22:00 # noi:san_khau_dem_hong
-_Đêm Hồng. Con số trên màn hình lớn nhảy qua 1.000.000. Cả sân khấu nổ tung. Pháo giấy hồng rơi như mưa._
+_Đại Nhạc Hội Siêu Nhân. Con số trên màn hình lớn nhảy qua 1.000.000. Cả sân khấu nổ tung. Pháo giấy hồng rơi như mưa._
 _{sieu_nhan_hong} nhảy lên nhảy xuống. {dan_dau_tu} ôm {con_ong_chau_cha}, khóc. {sales} gào: "Chị nói rồi mà! Chắc kèo!"_
 _Bạn đứng ở hàng cuối. Trong túi áo khoác là tập hồ sơ hồng, nhàu nát sau 31 ngày._
 { hr_danh_sach_den == 0:
@@ -95,7 +95,7 @@ giam_doc: *(đọc, rồi nhìn trang 2 trong tập của mình)* Em… em đọ
 hr: Từ 26/10 anh. Anh định cắt em cuối cùng. Em tự cắt em trước. Cho đỡ tốn một ấm trà.
 _{giam_doc} im lặng rất lâu. Rồi ký. Tay ông ấy run như tay {thuc_tap_sinh} hôm đầu tháng trước máy chấm công._
 giam_doc: Anh xin lỗi, {hr}.
-_Bất kể Đêm Hồng ra sao, bạn đã chọn xong._
+_Bất kể Đại Nhạc Hội Siêu Nhân ra sao, bạn đã chọn xong._
 _Ba tháng sau._
 _Phố Cũ. Một căn nhà nhỏ, cửa gỗ sơn cam (thói quen cũ khó bỏ). Biển hiệu viết tay: "PHÒNG TRÀ NHÂN SỰ"._
 _Bên trong, kệ trà 40 loại, sắp theo bảng chữ cái, từ Atiso tới Zzz. Ở quầy, {ke_toan} ngồi ghi sổ, từng đồng, từng ly._

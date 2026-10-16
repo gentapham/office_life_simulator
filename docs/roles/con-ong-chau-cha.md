@@ -36,7 +36,7 @@ Nhưng mỗi tối, Long về căn penthouse rộng thênh thang, mở khóa că
 | 💳 **Thẻ Phụ** | Hạn mức còn lại trên thẻ của chú (bắt đầu 20 triệu) | Không bao giờ tăng | Mỗi lần quẹt. **Ngày 12/10 tự động về 0** (lương trễ) |
 
 - **Ô Dù dưới 30**: không ai còn sợ Long, nhưng cũng bắt đầu có người thật lòng quý Long.
-- **Bài Hát đạt 100%**: mở lựa chọn ai sẽ hát bài này vào Đêm Hồng.
+- **Bài Hát đạt 100%**: mở lựa chọn ai sẽ hát bài này vào Đại Nhạc Hội Siêu Nhân.
 
 ---
 
@@ -77,7 +77,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 |---|---|---|
 | Check-in có Siêu Nhân Hồng "tình cờ" xuất hiện | +3.000 đến +8.000 mỗi lần | Tối đa 1 lần mỗi ngày |
 | Chốt 3 nhãn hàng trong quận làm đồ hợp tác màu hồng | +25.000 | Ngân Sách công ty + |
-| Cho Siêu Nhân Hồng bài "Hồng Là Thái Độ" trước 31/10 | +200.000 nếu Bài Hát ≥ 80% | Hát ở Đêm Hồng: thêm +100.000 và có cơ hội vào top 10 xu hướng |
+| Cho Siêu Nhân Hồng bài "Hồng Là Thái Độ" trước 31/10 | +200.000 nếu Bài Hát ≥ 80% | Hát ở Đại Nhạc Hội Siêu Nhân: thêm +100.000 và có cơ hội vào top 10 xu hướng |
 | Để Phát hát bài này thay Nguyên | +80.000 cho Nguyên (Phát song ca), nhưng Phát nổi lại | Có thể thành kết thúc "Bài Hát Bị Cướp" nếu không ghi tên Long |
 | Bán bài cho LL-Entertainment (27/10) | −150.000 (LL tung bài trước, cho nghệ sĩ khác hát) | Long có 300 triệu, nhưng mất bài |
 | "Ủa sao không mua cái mới luôn?": thay đèn studio hỏng trước buổi quay | +10.000 (MV đẹp hơn) | Thẻ Phụ −8 triệu. Sau 12/10 không dùng được |
@@ -119,7 +119,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 ### Chương 6: "Không Ô" (28/10 – 31/10)
 - **29/10:** wifi sập. Long phải mang ổ cứng chứa bản thu cuối cùng chạy tới phòng dựng của Lĩnh bằng thang bộ (thang máy kẹt). Lần đầu tiên Long chạy trong công ty.
 - **30/10:** họp đánh giá. Thắng gọi tên Long cho ghế Phó Giám đốc. Cả phòng quay lại nhìn. Nhận, từ chối, hay đề cử người khác?
-- **31/10:** Đêm Hồng. "Hồng Là Thái Độ" có được hát không, ai hát, và trên màn hình lớn có tên ai ở dòng "Nhạc & lời"?
+- **31/10:** Đại Nhạc Hội Siêu Nhân. "Hồng Là Thái Độ" có được hát không, ai hát, và trên màn hình lớn có tên ai ở dòng "Nhạc & lời"?
 
 ---
 
@@ -162,7 +162,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 > 2. 🎵 *"Bài em tự viết cho Siêu Nhân Hồng. Chưa xong."*
 >    - {idol_het_thoi}: "Cho anh hát thử đi em." Mở nhánh "Ai Hát Bài Này?". Ô Dù không đổi, Bài Hát +10 (có người khen)
 > 3. 🔒 *"Anh Phát, anh cần một bài hit để trả nợ đúng hông? Nói thiệt đi, em hông kể ai."* (Chỉ hiện nếu biết tin mật "Phát đang nợ tiền")
->    - {idol_het_thoi} im lặng lâu, rồi đeo kính lại: "…Ừ. Từ 2015 tới giờ anh chưa có bài nào." Phát xóa đoạn ghi âm trước mặt Long. Quan hệ +20. Mở lựa chọn "song ca có ghi tên" cho Đêm Hồng
+>    - {idol_het_thoi} im lặng lâu, rồi đeo kính lại: "…Ừ. Từ 2015 tới giờ anh chưa có bài nào." Phát xóa đoạn ghi âm trước mặt Long. Quan hệ +20. Mở lựa chọn "song ca có ghi tên" cho Đại Nhạc Hội Siêu Nhân
 
 ### Mẫu 4: Đoàn kiểm tra thuế (22/10)
 
@@ -180,7 +180,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 > **Lưu Lực:** *(tin nhắn thoại, giọng diễn giả)* Long à, việc hôm nay phải xong từ hôm qua. 300 triệu cho bài "Hồng Là Thái Độ", kèm ghế nhạc sĩ ở LL. Không ai gọi em là "cháu ai" ở đây cả.
 >
 > 1. 💰 *"Ok anh. Gét gô."*
->    - Tiền +300.000.000đ. Độ Tự Lập +20 (tự kiếm được!). Nhưng LL tung bài cho nghệ sĩ khác hát trước Đêm Hồng. Độ Nổi Tiếng của Siêu Nhân Hồng −150.000
+>    - Tiền +300.000.000đ. Độ Tự Lập +20 (tự kiếm được!). Nhưng LL tung bài cho nghệ sĩ khác hát trước Đại Nhạc Hội Siêu Nhân. Độ Nổi Tiếng của Siêu Nhân Hồng −150.000
 > 2. 🙅 *"Bài này viết cho Siêu Nhân Hồng. Hông bán."*
 >    - Độ Tự Lập +10, Ô Dù −5. Lưu Lực: "Tiếc ghê. Em sẽ đổi ý." (Lưu Lực nhắn lại vào 29/10)
 > 3. 📞 *Chuyển tiếp tin nhắn cho chú: "Chú ơi, bên LL hỏi mua bài của cháu."*
@@ -209,7 +209,7 @@ Long là người duy nhất trong công ty có thể cho Siêu Nhân Hồng **m
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🎵 **Nhạc Sĩ Không Cần Ô** | Bài Hát Bí Mật = 100%, tặng bài cho Siêu Nhân Hồng, không bán cho LL, không để Phát hát mà không ghi tên | Đêm Hồng, Siêu Nhân Hồng hát "Hồng Là Thái Độ". Cả khán đài hát theo điệp khúc từ lần thứ hai. Màn hình lớn chạy chữ: *"Nhạc & lời: Long."* Không có chữ "cháu" nào phía trước. Trong đám đông, Duy quay sang người bên cạnh: *"Thần tượng của tui đó!"* |
+| 1 | 😄 🎵 **Nhạc Sĩ Không Cần Ô** | Bài Hát Bí Mật = 100%, tặng bài cho Siêu Nhân Hồng, không bán cho LL, không để Phát hát mà không ghi tên | Đại Nhạc Hội Siêu Nhân, Siêu Nhân Hồng hát "Hồng Là Thái Độ". Cả khán đài hát theo điệp khúc từ lần thứ hai. Màn hình lớn chạy chữ: *"Nhạc & lời: Long."* Không có chữ "cháu" nào phía trước. Trong đám đông, Duy quay sang người bên cạnh: *"Thần tượng của tui đó!"* |
 | 2 | 😄 🏠 **Tự Thuê Trọ** | Độ Tự Lập ≥ 80, Ô Dù ≤ 20, đã từ chối ghế Phó Giám đốc, đã làm thêm ít nhất 5 ca | Tháng 11, căn penthouse đã bán. Long xách một cây đàn và một cái vali vào một phòng trọ 15m² ở Hẻm 69, cửa sổ nhìn thẳng vào tường nhà bên. Bà chủ trọ đòi đặt cọc. Long trả bằng tiền lương của mình, đếm từng tờ. Tối đó, ông chú hàng xóm hát karaoke lúc 10 giờ đêm. Long mở cửa sổ, ghi âm lại, mỉm cười |
 | 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Quan hệ với Nhật ≥ 60, đã mở nhánh "Phòng thu tầng 30", ngày 30/10 Long đề cử Nhật trong khi Nhật đề cử Long | Thắng nhìn hai lá đơn, gãi đầu: *"Thế thì… hai đứa cùng làm."* Một tháng sau, Nhật lo sản xuất, Long lo âm nhạc, hai người dùng chung một cái bàn. Trên bàn có một cây đàn và một tấm bảng trắng nhỏ. Lịch chỉ có đúng một cuộc họp mỗi ngày: *"Họp nhanh 5 phút: trưa nay ăn gì?"* |
 | 4 | 😢 👑 **Mãi Là Cháu** | Ô Dù ≥ 70 vào 30/10 và nhận ghế Phó Giám đốc | Long ngồi trong phòng làm việc mới, vách kính, ghế da. Dưới gầm bàn là hộp đàn, phủ một lớp bụi mỏng. Duy gõ cửa, mang cà phê vào: *"Anh Long đỉnh quá ạ!"*. Long cười. Ngoài kia, ai cũng gọi Long là "sếp". Trong đầu Long, mọi người vẫn đang nói "cháu sếp" |

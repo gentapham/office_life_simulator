@@ -370,12 +370,12 @@ _Bạn ngồi bàn bên, đội nón, cầm ly cà phê muối. Rồi {sieu_nhan
 # ngay:27 # gio:15:30 # noi:san_thuong
 _Sân thượng. Điện thoại rung, số lạ. Giọng nữ rất lịch sự._
 thu_ky_ll: Dạ anh {ran_doc} phải không ạ? Sếp em muốn gặp anh một chút. Sếp em biết anh không thích Siêu Nhân Hồng.
-thu_ky_ll: Sếp em chỉ cần một thứ: lịch chi tiết Đêm Hồng. Giờ lên sân khấu, lối vào cánh gà, vị trí cầu dao điện. Đổi lại, một chỗ làm ở LL.
+thu_ky_ll: Sếp em chỉ cần một thứ: lịch chi tiết Đại Nhạc Hội. Giờ lên sân khấu, lối vào cánh gà, vị trí cầu dao điện. Đổi lại, một chỗ làm ở LL.
 * [🐍 "Gửi email cho tui."]
     ~ rd_bao_ll_lich_dien = true
     ~ rd_do_doc = gioi_han(rd_do_doc + 20)
     ~ rd_nghi(15)
-    _Bạn gửi. File lịch Đêm Hồng, bản do {chi_dai} soạn. 4 trang. Ngón tay bạn dừng ở nút "Gửi" lâu hơn bạn nghĩ._
+    _Bạn gửi. File lịch Đại Nhạc Hội Siêu Nhân, bản do {chi_dai} soạn. 4 trang. Ngón tay bạn dừng ở nút "Gửi" lâu hơn bạn nghĩ._
     ~ rd_han(5)
 * [😶 Cúp máy. Chặn số.]
     ~ rd_tin(5)

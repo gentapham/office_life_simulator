@@ -8,7 +8,7 @@
 _6 giờ sáng thứ 7. Xe khách 29 chỗ đậu trước cổng. {chi_dai} đứng ở cửa xe cầm danh sách, mặt của người sẽ bỏ lại bất kỳ ai._
 _Bạn tới lúc 6 giờ 01, tay ôm laptop, sau lưng là balo chỉ có đúng 1 cái áo và 2 cục sạc._
 chi_dai: Một phút. Lần này chị tha. Lên.
-_Trong đầu bạn: hồ sơ xin phép biểu diễn Đêm Hồng. Hạn 8 giờ sáng thứ 2. Số chữ đã viết: 0._
+_Trong đầu bạn: hồ sơ xin phép biểu diễn Đại Nhạc Hội Siêu Nhân. Hạn 8 giờ sáng thứ 2. Số chữ đã viết: 0._
 * [💻 Ngồi cuối xe, mở laptop làm luôn.]
     _Xe chạy. Laptop rung theo ổ gà. Câu đầu tiên bạn gõ được là "Kính gửi Ủy ban phường Tân Draaaaaaaaa" vì xe vừa xóc._
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 10
@@ -47,7 +47,7 @@ hr: Em {chua_te_deadline}? Anh biết em trong đó. Anh chỉ muốn lắng ngh
         ~ qh("hr", -5)
         ~ nghi(-15)
     }
-* [😇 Mở cửa, nói thật: "Em đang làm hồ sơ xin phép Đêm Hồng, hạn sáng thứ 2."]
+* [😇 Mở cửa, nói thật: "Em đang làm hồ sơ xin phép Đại Nhạc Hội, hạn sáng thứ 2."]
     hr: *(nhìn laptop, nhìn bạn)* … Ừ. Vậy em làm đi. Anh ghi em là "đang gắn kết với công việc".
     ~ qh("hr", 8)
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan - 15
@@ -66,7 +66,7 @@ hr: Em {chua_te_deadline}? Anh biết em trong đó. Anh chỉ muốn lắng ngh
 === chua_te_deadline_1710_nhau_toi ===
 # ngay:17 # gio:19:30 # noi:quan_hai_san_vung_tau
 _Bữa tối hải sản. {sales} đã uống tới ly thứ 5 và bắt đầu nói chuyện như chủ tịch tập đoàn._
-sales: Tin chị đi! Đêm Hồng chị mời ca sĩ nổi tiếng nhất nước về hát! Chị quen hết mà! No cap!
+sales: Tin chị đi! Đại Nhạc Hội chị mời ca sĩ nổi tiếng nhất nước về hát! Chị quen hết mà! No cap!
 _{giam_doc} đứng dậy, ly bia trên tay, mặt đỏ như bộ đồ của Siêu Nhân Hồng._
 giam_doc: Các em! Anh tuyên bố! Nếu chiến dịch thành công, anh tăng lương cả công ty!
 _{hong_hot} giơ điện thoại lên. Đèn quay đỏ. {thanh_ninh} vỗ tay. {ke_toan} để ly xuống, mặt tái._
@@ -228,7 +228,7 @@ _Cô cán bộ nhìn tập giấy. Nhìn bạn. Nhìn cái meme mèo._ # hen_gio
     ~ qh("chi_dai", 3)
     ~ uy_tin = uy_tin - 5
 * [⏱️ (Không chọn kịp)]
-    _Hồ sơ bị trả. Đêm Hồng phải xin phép lại, có nguy cơ dời địa điểm. {giam_doc} gọi bạn 7 cuộc trong 10 phút._
+    _Hồ sơ bị trả. Đại Nhạc Hội Siêu Nhân phải xin phép lại, có nguy cơ dời địa điểm. {giam_doc} gọi bạn 7 cuộc trong 10 phút._
     ~ uy_tin = uy_tin - 15
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 20
 - -> END

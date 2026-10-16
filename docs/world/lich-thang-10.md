@@ -1,7 +1,7 @@
 # Lịch tháng 10/2026
 
 > Một lượt chơi kéo dài **30 ngày, từ thứ 5 ngày 1/10 tới thứ 6 ngày 30/10/2026**.
-> **Thứ 7 ngày 31/10** là **Đêm Hồng Halloween**: đêm diễn cuối cùng, nơi hiện ra 2 cái kết (của nhân vật người chơi và của Siêu Nhân Hồng).
+> **Thứ 7 ngày 31/10** là **Đại Nhạc Hội Siêu Nhân**: đêm diễn cuối cùng, nơi hiện ra 2 cái kết (của nhân vật người chơi và của Siêu Nhân Hồng).
 
 Tháng 10/2026 có **22 ngày làm việc** và 9 ngày cuối tuần.
 
@@ -60,7 +60,7 @@ Tháng 10/2026 có **22 ngày làm việc** và 9 ngày cuối tuần.
 | **28/10** | T4 | 🩷 **Mốc 4:** phải đạt 800.000 người theo dõi |
 | **29/10** | T5 | 🎉 Ngày Internet Quốc tế: **wifi sập cả ngày**. Bảo bị cả công ty truy đuổi. Chiến dịch mạng xã hội đứng hình |
 | **30/10** | T6 | 🏢 **Họp đánh giá cuối tháng.** Công bố đề bạt Phó Giám đốc, tăng lương, cắt giảm. **Kết thúc của nhân vật người chơi được quyết định hôm nay**<br>💰 Lương tuần |
-| **31/10** | T7 | 🩷🎃 **ĐÊM HỒNG HALLOWEEN.** Đêm diễn lớn của Siêu Nhân Hồng. Cả công ty hóa trang, riêng Siêu Nhân Hồng thì ngày nào cũng như hóa trang. **Hiện 2 cái kết** |
+| **31/10** | T7 | 🩷🎃 **ĐẠI NHẠC HỘI SIÊU NHÂN.** Đêm diễn lớn của Siêu Nhân Hồng. Cả công ty hóa trang, riêng Siêu Nhân Hồng thì ngày nào cũng như hóa trang. **Hiện 2 cái kết** |
 
 ---
 

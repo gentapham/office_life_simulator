@@ -354,7 +354,7 @@ _Một tờ giấy bay tới chân bạn. "Thư mời: Kế toán trưởng LL-E
 === ke_toan_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:15:30 # noi:phong_ke_toan
 _{sales} chạy vào, thở hổn hển._
-sales: Chị {ke_toan}! Sữa Chua Hồng Hào ở Ven Đô gọi em! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thật! Lần này thật!
+sales: Chị {ke_toan}! Sữa Chua Hồng Hào ở Ven Đô gọi em! Họ muốn tài trợ 1 tỷ cho Đại Nhạc Hội! Thật! Lần này thật!
 _Phòng kế toán im lặng. Bạn có 312 triệu lý do để không tin._
 * [📞 "Đưa số đây. Chị gọi xác minh. Ngay."]
     _Đầu dây bên kia: một giọng bà cụ, chậm rãi. "Bên cô thấy cậu Siêu Nhân giúp người, cô thương. Cô tài trợ. Hóa đơn đỏ cô xuất được, con cứ yên tâm."_
@@ -395,7 +395,7 @@ _Hôm nay LL cũng gửi lời mời gấp ba cho {sieu_nhan_hong}. Bạn chưa 
     _23:15, điện thoại reo._
     giam_doc: *(giọng khác hẳn mọi khi)* Cảm ơn em. Mười năm rồi nhỉ.
     ~ qh("giam_doc", 20)
-* [🐍 Trả lời: "Em đồng ý. Đêm Hồng sẽ không có tiền thuê sân khấu."]
+* [🐍 Trả lời: "Em đồng ý. Đại Nhạc Hội sẽ không có tiền thuê sân khấu."]
     ~ kt_ll_email = 2
     ~ kt_pha_chien_dich = true
     ~ kt_ngu(25)

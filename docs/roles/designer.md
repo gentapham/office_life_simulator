@@ -17,7 +17,7 @@ Quỳnh có gu, có nghề, và có một trái tim mỏng như lớp layer opac
 - Từ 1/10, mọi thứ trong công ty phải có màu hồng. Poster, thumbnail, backdrop, standee, bộ đồ, cả cái bánh kem: **tất cả đổ lên bàn Quỳnh**.
 - Lương chuyên viên 13 triệu, mà tiền thuê căn 203 cộng tiền cây cảnh đã hết một nửa. Nên buổi tối, Quỳnh mở **laptop thứ hai** và làm freelancer cho… **LL-Entertainment**, công ty đối thủ, qua một người liên lạc tên **"Anh Lá Chuối"** (giám đốc mỹ thuật của LL, chỉ nhắn tin, không bao giờ gọi).
 - Chỉ có **Huyền** biết chuyện này. Đổi lại, Quỳnh thiết kế hồ sơ "xịn xò" cho các deal ma của Huyền. Hai người nắm thóp nhau, nên thương nhau thật.
-- Mục tiêu của Quỳnh trong 30 ngày: **làm cho Đêm Hồng đẹp nhất có thể**, giữ được cái tôi nghệ thuật, kiếm đủ tiền, và **không bị lộ**.
+- Mục tiêu của Quỳnh trong 30 ngày: **làm cho Đại Nhạc Hội Siêu Nhân đẹp nhất có thể**, giữ được cái tôi nghệ thuật, kiếm đủ tiền, và **không bị lộ**.
 
 ### Sự thật Quỳnh chưa biết
 Ngày 8/10, Anh Lá Chuối giao cho Quỳnh một job lớn: bộ nhận diện cho **"Dự án Hồng Ngoại"**, *"một nghệ sĩ mới, tông hồng phối xanh lá chuối"*, trả 3 triệu. Quỳnh tưởng là một idol vô danh nào đó. **Thật ra đó là bộ hồ sơ LL-Entertainment sẽ dùng để cướp Siêu Nhân Hồng vào ngày 27/10.** Quỳnh đang tự tay vẽ cái bẫy cho chính dự án của mình.
@@ -77,7 +77,7 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 | Thumbnail Tóp-tóp mỗi ngày | +2.000 mỗi thumbnail tốt | Giật tít quá đà 3 lần: −10.000, khán giả gọi là "câu view" |
 | Bộ sticker "Tuất Không Vui" | +50.000 nếu viral | Cần chụp ảnh Tuất ngày 4/10. {cho} không đồng ý cho dùng hình |
 | Bắt được file poster bị đổi (Soi Pixel) | Cứu lại −20.000 mà kẻ phá định gây ra | Mở nhánh "Ai đổi file?". Nghi ngờ của Quỳnh dồn về {ran_doc} hoặc con rắn thứ hai |
-| Backdrop sân khấu Đêm Hồng (31/10) | +100.000 nếu hoàn thành đẹp | Thiếu thì đêm diễn trông như đám cưới quê |
+| Backdrop sân khấu Đại Nhạc Hội Siêu Nhân (31/10) | +100.000 nếu hoàn thành đẹp | Thiếu thì đêm diễn trông như đám cưới quê |
 | Giao file "Hồng Ngoại" cho LL đúng hạn | LL dễ cướp Nguyên hơn ngày 27/10 | Phá chiến dịch mà không hề biết |
 | Giấu "trứng phục sinh" vào file Hồng Ngoại | Kết thúc bí mật | Xem mục 8 |
 
@@ -119,10 +119,10 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 - **27/10:** Lưu Lực gửi hợp đồng gấp ba cho Nguyên. Thái mang bìa hồ sơ về văn phòng: **trên bìa là bộ nhận diện "Hồng Ngoại" do Quỳnh vẽ**. Quỳnh nhận ra font chữ của mình. Lựa chọn: thú nhận với Thái, im lặng, hay phá hồ sơ từ bên trong.
 
 ### Chương 6: "Final_Thật_Rồi.psd" (28/10 – 31/10)
-- **28/10 (Mốc 4):** Quỳnh có một ngày để hoàn thành backdrop, standee và vé mời Đêm Hồng.
+- **28/10 (Mốc 4):** Quỳnh có một ngày để hoàn thành backdrop, standee và vé mời Đại Nhạc Hội Siêu Nhân.
 - **29/10 (wifi sập):** không gửi được file. Quỳnh phải chạy USB khắp công ty, in banner ở tiệm photo đầu phố, và tranh máy in với Hiếu (đang in bản tin nội bộ).
 - **30/10:** họp đánh giá. Nhật đọc "thành tích" của Phòng Sản xuất, trong đó có 6 poster của Quỳnh được ghi là "ý tưởng của anh Nhật". Lựa chọn: lên tiếng, im lặng, hay nhờ Lĩnh (cũng bị Nhật lấy công) đứng lên cùng.
-- **31/10 (Đêm Hồng):** backdrop khổng lồ của Quỳnh được kéo lên. Bên dưới, Quỳnh đứng giữa đám đông, cầm cuộn vải hồng, và thấy bên kia đường, trên tòa nhà kính của LL, màn hình LED đang chạy… thiết kế của chính mình.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** backdrop khổng lồ của Quỳnh được kéo lên. Bên dưới, Quỳnh đứng giữa đám đông, cầm cuộn vải hồng, và thấy bên kia đường, trên tòa nhà kính của LL, màn hình LED đang chạy… thiết kế của chính mình.
 
 ---
 
@@ -216,11 +216,11 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🖼️ **Bản Đầu Tiên Muôn Năm** | Cái Tôi Nghệ Thuật ≥ 70, Máu Cam ≥ 60, chiến dịch đạt 1 triệu người theo dõi, đã lên tiếng giành lại công ở buổi đánh giá 30/10 | Đêm Hồng thành công. Thắng đề bạt bạn làm **Trưởng nhóm Thiết kế**, lương tăng 20%. Thắng đưa tờ quyết định, rồi hỏi: "Em sửa nhẹ cái quyết định này giúp anh nhé?". Bạn cười, đóng khung nó y nguyên, đặt tên file là `ban_1_khong_sua.pdf` |
+| 1 | 😄 🖼️ **Bản Đầu Tiên Muôn Năm** | Cái Tôi Nghệ Thuật ≥ 70, Máu Cam ≥ 60, chiến dịch đạt 1 triệu người theo dõi, đã lên tiếng giành lại công ở buổi đánh giá 30/10 | Đại Nhạc Hội Siêu Nhân thành công. Thắng đề bạt bạn làm **Trưởng nhóm Thiết kế**, lương tăng 20%. Thắng đưa tờ quyết định, rồi hỏi: "Em sửa nhẹ cái quyết định này giúp anh nhé?". Bạn cười, đóng khung nó y nguyên, đặt tên file là `ban_1_khong_sua.pdf` |
 | 2 | 😄 🤝 **Song Kiếm Hợp Bích** | Quan hệ với {sales} ≥ 80, đã cắt đứt với LL trước 30/10, tổng tiền freelancer kiếm được ≥ 8.000.000đ, Huyền ký được ít nhất 1 deal thật | Bạn và Huyền nghỉ việc, mở **studio nhỏ ở tầng trệt chung cư Phố Mới**: Quỳnh vẽ, Huyền bán. Khách đầu tiên là Siêu Nhân Hồng. Biển hiệu do bạn thiết kế, khách hàng không được sửa |
 | 3 | 😄 🔒 **Kết thúc bí mật: Hai Mang Chính Nghĩa** | Đã nhận job Hồng Ngoại, giấu chữ G vào file (Mẫu 6), Máu Cam ≥ 80, Độ Lộ < 50, Nguyên từ chối LL ngày 27/10 | Đêm 31/10, màn hình LED trên tòa nhà kính của LL bật lên, phóng to thiết kế Hồng Ngoại… và giữa họa tiết hiện ra chữ G 7 màu cùng dòng chữ "Hồng là của G". Cả mạng xã hội chụp lại. Lưu Lực tắt màn hình không kịp. Anh Lá Chuối nhắn: "Em giỏi lắm. Mai anh xin nghỉ" |
 | 4 | 😢 🥬 **Lộ Logo Lá Chuối** | Độ Lộ Lá Chuối đạt 100 (có thể xảy ra bất cứ lúc nào) | Bảo chiếu log tải file lên màn hình phòng họp: thư mục "LL_HongNgoai_final". Tuấn mời bạn đi "uống trà" lần cuối. Huyền đứng dậy định nói đỡ, bạn lắc đầu. Bạn ôm thùng carton có chậu sen đá ra cổng, Bác Bình nói khẽ: "Bác không thấy gì đâu." |
-| 5 | 😢 💀 **Bản Sửa Thứ 100** | Số Lần Bị Sửa ≥ 100 và Cái Tôi Nghệ Thuật ≤ 10 tới ngày 30/10 | Bạn không còn cãi ai nữa. Ai bảo gì sửa nấy: chữ to lên, logo to lên, thêm hồng, thêm cầu vồng. Poster Đêm Hồng là một mảng hồng chói lóa không đọc được chữ nào. Đêm đó bạn về căn 203, nhìn bàn vẽ phủ bụi, và nhận ra mình đã quên cảm giác vẽ cho vui là thế nào |
+| 5 | 😢 💀 **Bản Sửa Thứ 100** | Số Lần Bị Sửa ≥ 100 và Cái Tôi Nghệ Thuật ≤ 10 tới ngày 30/10 | Bạn không còn cãi ai nữa. Ai bảo gì sửa nấy: chữ to lên, logo to lên, thêm hồng, thêm cầu vồng. Poster Đại Nhạc Hội Siêu Nhân là một mảng hồng chói lóa không đọc được chữ nào. Đêm đó bạn về căn 203, nhìn bàn vẽ phủ bụi, và nhận ra mình đã quên cảm giác vẽ cho vui là thế nào |
 | 6 | 😢 🏃 **Đổi Màu Áo** | Máu Cam ≤ 20, đã nhận lời làm full-time cho LL ở Mẫu 6 | Bạn có bàn làm việc ở tầng 18 tòa nhà kính, lương gấp đôi. Buổi sáng đầu tiên, Lưu Lực duyệt bài: "Việc này phải xong từ hôm qua nhé em." Bạn nhìn qua cửa kính, thấy tòa nhà 3 tầng màu tím bên kia đường tắt đèn, và chữ G sặc sỡ bị gỡ xuống |
 
 ---

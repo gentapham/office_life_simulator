@@ -304,7 +304,7 @@ _Lần đầu từ Vũng Tàu, hai người suýt cười chung._
 === bien_kich_2010_karaoke ===
 # ngay:20 # gio:22:15 # noi:karaoke_hat_cho_nhau_nghe
 _Karaoke Hát Cho Nhau Nghe, tăng hai sau quán ốc. {giam_doc} cầm micro, mặt đỏ như đèn phòng hát._
-giam_doc: Các em! Anh tuyên bố! Nếu Đêm Hồng thành công, cả công ty tăng lương… hai mươi phần trăm!
+giam_doc: Các em! Anh tuyên bố! Nếu Đại Nhạc Hội thành công, cả công ty tăng lương… hai mươi phần trăm!
 _Cả phòng gào lên. {hong_hot} quay clip. {ke_toan} đứng dậy, ngồi xuống, rồi đứng dậy lần nữa._
 ke_toan: Anh ơi… lời nói không phải là hóa đơn đâu anh.
 * [📝 Viết ngay lên tờ giấy ăn: "Biên bản: Sếp hứa tăng lương 20%." Đưa sếp ký.]

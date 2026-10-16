@@ -61,7 +61,7 @@ _31 cánh tay giơ lên. Không ai để ý bạn lẻn đi. Bạn biết tiền
 _Quán hải sản sát biển. {dan_dau_tu} bao thật. Ghẹ, mực, tôm hùm (một con, chia 31 người)._
 ~ an(60)
 _Bàn bên kia, {giam_doc} đã sang ly thứ 5. {sales} ngồi cạnh._
-giam_doc: {sales} này, Đêm Hồng mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không?
+giam_doc: {sales} này, Đại Nhạc Hội mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không?
 _Bạn thấy ánh mắt {sales} lóe lên. Ánh mắt của người sắp hứa một điều không có._
 * [🤝 Đá chân {sales} dưới gầm bàn. Mật mã: "Đừng."]
     sales: *(khựng lại)* Dạ… mình có anh {idol_het_thoi} mà sếp. "Công Viên" bản remix, cả nước hát theo.

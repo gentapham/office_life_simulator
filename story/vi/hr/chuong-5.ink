@@ -279,9 +279,9 @@ _Sơn Kim Tuyến bước ra. Đèn sân khấu. Kim tuyến. Một bài ballad 
 * [📱 Bình chọn vừa phải, 5 lần.]
     ~ hr_so_lan_vote = hr_so_lan_vote + 5
     ~ tien_cong(-15000)
-- _Kết quả: {thanh_xin_nghi} Kim Tuyến vào chung kết. Chung kết trực tiếp 20:00 thứ 7, 31/10. Cùng tối với Đêm Hồng._
+- _Kết quả: {thanh_xin_nghi} Kim Tuyến vào chung kết. Chung kết trực tiếp 20:00 thứ 7, 31/10. Cùng tối với Đại Nhạc Hội Siêu Nhân._
 { hr_biet_son_kim_tuyen:
-    _Bạn nhìn lịch. 19:30 Đêm Hồng. 20:00 chung kết. Em nó định làm thế nào đây?_
+    _Bạn nhìn lịch. 19:30 Đại Nhạc Hội Siêu Nhân. 20:00 chung kết. Em nó định làm thế nào đây?_
     ~ cang_thang(5)
 - else:
     _Bạn vỗ tay một mình trong căn 604. Rồi tự thấy ngại, dù không ai nhìn._
@@ -453,7 +453,7 @@ thanh_ninh: Anh {hr}… em chỉ hỏi thử thôi ạ. Nếu em… đi, thì th
     hr: Đi làm tai mắt thì không bao giờ được nói thật lòng nữa đâu em. Anh làm HR 7 năm, anh biết cái mệt đó.
     ~ qh("thanh_ninh", 10)
     ~ hr_nghe(5)
-* [📓 "Thủ tục là báo trước 30 ngày. Hôm nay là 27. Em tính đi ngay sau Đêm Hồng hả?"]
+* [📓 "Thủ tục là báo trước 30 ngày. Hôm nay là 27. Em tính đi ngay sau Đại Nhạc Hội hả?"]
     thanh_ninh: Dạ… em chưa tính. *(cất lá đơn đi)*
     ~ hr_so(3)
 - _Người thứ hai: {quan_ly_idol}, hai điện thoại, mắt thâm._

@@ -113,7 +113,7 @@ Hiếu cũng có thể **đổi phe**: giúp chiến dịch thật lòng nếu M
 ### Chương 6: "Ngày Phán Xét" (28/10 – 31/10)
 - **29/10:** wifi sập cả ngày. Cơ hội cuối cùng để phá, hoặc để cứu.
 - **30/10:** họp đánh giá. Mọi thứ Hiếu đã làm quyết định kết thúc của Hiếu.
-- **31/10:** Đêm Hồng Halloween. Hiếu đứng dưới khán đài, hoặc đứng sau cánh gà giữ cầu dao điện.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Hiếu đứng dưới khán đài, hoặc đứng sau cánh gà giữ cầu dao điện.
 
 ---
 
@@ -207,7 +207,7 @@ Hiếu cũng có thể **đổi phe**: giúp chiến dịch thật lòng nếu M
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
 | 1 | 😄 👑 **Trùm Cuối** | Độ Độc ≥ 80, Độ Nghi Ngờ < 40, đã loại được cả Nhật và Long khỏi cuộc đua Phó Giám đốc | Cả công ty đấu đá nhau tan nát, người duy nhất "sạch sẽ" còn lại là bạn. Thắng đề bạt bạn làm Phó Giám đốc. Bạn ngồi ghế mới, mở group Zalo-lô và gõ *"Nghe gì chưa?"* |
-| 2 | 😄 🤝 **Hiếu Ếch Tha Thứ** | Đã mở nhánh "Hiếu Ếch", Mối Hận < 20, đã giúp chiến dịch ít nhất 3 lần | Đêm Hồng, Nguyên mời bạn lên sân khấu, kể chuyện hồi nhỏ trước cả nghìn người và cúi đầu xin lỗi. Bạn cầm micro: *"Tui chỉ nói sự thật thôi mà… Tui tha cho ông rồi."* Cả khán đài vỗ tay |
+| 2 | 😄 🤝 **Hiếu Ếch Tha Thứ** | Đã mở nhánh "Hiếu Ếch", Mối Hận < 20, đã giúp chiến dịch ít nhất 3 lần | Đại Nhạc Hội Siêu Nhân, Nguyên mời bạn lên sân khấu, kể chuyện hồi nhỏ trước cả nghìn người và cúi đầu xin lỗi. Bạn cầm micro: *"Tui chỉ nói sự thật thôi mà… Tui tha cho ông rồi."* Cả khán đài vỗ tay |
 | 3 | 😄 🔒 **Kết thúc bí mật: 30 Ngày Làm Rắn** | Thu thập đủ 20 tin mật, không tung tin nào trong 7 ngày cuối, lật mặt được con rắn thứ hai | Bạn tố cáo LL-Entertainment đã cài người vào công ty. Kho tin mật trở thành cuốn sách bán chạy *"30 Ngày Làm Rắn"*. Bạn nghỉ việc, đi ký tặng sách, còn Nguyên đứng xếp hàng xin chữ ký |
 | 4 | 😢 🔥 **Bị Lật Tẩy** | Độ Nghi Ngờ đạt 100 (có thể xảy ra bất cứ lúc nào) | Ảnh chụp tin nhắn của bạn được chiếu lên màn hình phòng họp. Tuấn mời bạn đi "uống trà" lần cuối. Ôm thùng carton ra về, chỉ có {cho} tiễn bạn ra cổng |
 | 5 | 😢 🐍 **Rắn Cắn Rắn** | Không phát hiện con rắn thứ hai trước 27/10 | Con rắn thứ hai tung hết bằng chứng ra đúng ngày phán xét, đổ mọi tội cho bạn. Bạn bị đuổi, còn nó lên chức. Nó nhìn bạn và cười: *"Tui chỉ nói sự thật thôi mà."* |

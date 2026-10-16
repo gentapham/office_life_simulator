@@ -135,7 +135,7 @@ Chương là **"bộ não số liệu"** của chiến dịch. Mọi người l�
 - **28/10 (Mốc 4):** Chương phải lọc lượt theo dõi ảo trước khi nền tảng kiểm tra. Trong danh sách tài khoản ảo có một cụm dẫn tới… người thuê fan ảo của Phát. Nói, hay xóa lặng lẽ?
 - **29/10 (wifi sập):** cả ngày không mạng. Chương lại không có chart. Ngày thứ hai trong tháng sống như người bình thường. Nếu đã mở kỹ năng Cắt Lỗ, Chương có thể **xóa app** ngay hôm nay.
 - **30/10:** họp đánh giá. Chương là người trình chiếu số liệu cả tháng. Màn hình nào hiện lên trước cả công ty, màn hình trái (số liệu công ty) hay màn hình phải (chart), tùy cả tháng Chương đã nhìn cái nào nhiều hơn.
-- **31/10 (Đêm Hồng):** Chương đứng ở góc khán đài, cầm điện thoại xem con số người theo dõi nhảy từng giây. Lần đầu tiên, Chương mong một con số đi lên **không phải vì tiền của mình**.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** Chương đứng ở góc khán đài, cầm điện thoại xem con số người theo dõi nhảy từng giây. Lần đầu tiên, Chương mong một con số đi lên **không phải vì tiền của mình**.
 
 ---
 

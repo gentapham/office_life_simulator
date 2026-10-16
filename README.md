@@ -41,7 +41,7 @@ Game giả lập đi làm ở **G-Entertainment**, một công ty giải trí đ
 | [docs/gameplay/vat-pham-va-cong-viec.md](docs/gameplay/vat-pham-va-cong-viec.md) | Đồ ăn uống, vật phẩm, giá cả, việc chung, job freelancer |
 | [docs/huong-dan-viet-truyen.md](docs/huong-dan-viet-truyen.md) | Hướng dẫn viết thoại và câu chuyện |
 | [docs/so-tay-su-that.md](docs/so-tay-su-that.md) | Sổ tay sự thật: nguồn chuẩn cho mọi chi tiết, bảng điểm chiến dịch |
-| [story/](story/) | **Toàn bộ thoại trong game** (Ink): 23 nhân vật + sự kiện chung, Đêm Hồng, kết thúc |
+| [story/](story/) | **Toàn bộ thoại trong game** (Ink): 23 nhân vật + sự kiện chung, Đại Nhạc Hội Siêu Nhân, kết thúc |
 | [docs/can-bo-sung.md](docs/can-bo-sung.md) | Tình trạng tài liệu: đã xong và còn lại |
 
 ## Công nghệ dự kiến

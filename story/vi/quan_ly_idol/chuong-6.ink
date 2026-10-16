@@ -16,7 +16,7 @@
     _Phòng chờ trống. Biển "Phòng chờ Siêu Nhân Hồng" vẫn còn. Đĩa bánh chuối chiên nguội ngắt. Không còn ai để ghép song ca._
     -> END
 }
-_Còn ba ngày tới Đêm Hồng. Bạn có một ý tưởng từ hôm gameshow: {idol_het_thoi} và Nguyên song ca "Công Viên Hồng". Một bản remix. Muốn làm được, phải làm hòa cả hai._
+_Còn ba ngày tới Đại Nhạc Hội Siêu Nhân. Bạn có một ý tưởng từ hôm gameshow: {idol_het_thoi} và Nguyên song ca "Công Viên Hồng". Một bản remix. Muốn làm được, phải làm hòa cả hai._
 _Bạn gọi cả hai vào phòng chờ. {idol_het_thoi} đứng ở cửa. Nguyên ngồi trên ghế, mũ cầm tay._
 * {qh_idol_het_thoi >= 40 and qh_sieu_nhan_hong >= 40} [🤝 "Hai đứa hát chung. Mỗi người một nửa bài. Nguyên nhớ: CHUỐI chiên."]
     sieu_nhan_hong: *(bật dậy)* Dạ em nhớ! Em viết lên tay luôn!
@@ -30,7 +30,7 @@ _Bạn gọi cả hai vào phòng chờ. {idol_het_thoi} đứng ở cửa. Nguy
     ~ qh("idol_het_thoi", -15)
 * [🎤 "Phát hát chính. Nguyên đứng bè."]
     sieu_nhan_hong: Dạ được! Em đứng bè!
-    _Phát gật đầu. Nhưng {giam_doc} đi ngang, nghe được: "Thái, Đêm Hồng là show của Nguyên mà."_
+    _Phát gật đầu. Nhưng {giam_doc} đi ngang, nghe được: "Thái, Đại Nhạc Hội Siêu Nhân là show của Nguyên mà."_
     ~ thai_song_ca_ghep = true
     ~ qh("idol_het_thoi", 10)
     ~ qh("giam_doc", -5)
@@ -117,7 +117,7 @@ _Ở phòng dựng, video của {editor} kẹt ở 99%. {editor} ngồi nhìn th
 _Chùa Phố Cũ. Cây bồ đề lớn, mùi nhang trầm, tiếng chuông xa. Bạn chưa từng tới đây vào ngày thường._
 _Không có mạng. Không có ai gọi. Bạn cầm một nén nhang. Bạn có một điều muốn cầu, nhưng không dám nói thành lời, kể cả trong đầu._
 ~ thai_nhang = thai_nhang + 1
-* [🙏 Cầu cho Đêm Hồng suôn sẻ. Cho công ty. Cho Nguyên.]
+* [🙏 Cầu cho Đại Nhạc Hội suôn sẻ. Cho công ty. Cho Nguyên.]
     _Một điều nói ra được. Bạn nói ra. Nhẹ hơn một chút._
     ~ thai_tt(5)
     ~ cang_thang(-10)
@@ -148,7 +148,7 @@ _Câu hỏi treo lơ lửng giữa phòng tối, như thanh tải lên 99%._
     editor: Em không cần anh trả lời. Em chỉ muốn anh biết là… có người thức cùng.
     ~ qh("editor", 15)
     ~ thai_gk(-10)
-* [📱 "Mai có mạng, em dựng giùm anh cái teaser Đêm Hồng nha."]
+* [📱 "Mai có mạng, em dựng giùm anh cái teaser Đại Nhạc Hội nha."]
     editor: *(im lâu)* … Dạ. Em dựng.
     ~ qh("editor", -3)
 - -> END
@@ -159,17 +159,17 @@ _Câu hỏi treo lơ lửng giữa phòng tối, như thanh tải lên 99%._
 ~ thai_ly_ca_phe = 0
 _Sáng thứ 6. Mạng đã có lại. 312 tin nhắn chưa đọc. Năm cục sạc, ba điện thoại, một ổ cắm. Bạn xoay vòng như tung hứng._
 _Máy thứ ba rung. {thanh_xin_nghi}._
-thanh_xin_nghi: Anh {quan_ly_idol}… mai chung kết. 20 giờ. Đêm Hồng cũng 20 giờ. Em… em xin nghỉ được hông anh? Lần này em không nói bà ngoại.
-* {not thai_to_son} [🗓️ "Đi đi. Lịch Đêm Hồng anh tự cầm. Hát cho đã nha {thanh_xin_nghi}."]
+thanh_xin_nghi: Anh {quan_ly_idol}… mai chung kết. 20 giờ. Đại Nhạc Hội cũng 20 giờ. Em… em xin nghỉ được hông anh? Lần này em không nói bà ngoại.
+* {not thai_to_son} [🗓️ "Đi đi. Lịch Đại Nhạc Hội anh tự cầm. Hát cho đã nha {thanh_xin_nghi}."]
     thanh_xin_nghi: *(im lâu, giọng nghẹn)* Anh {quan_ly_idol}… em… em hát xong em gọi anh liền.
     ~ thai_doi_lich_son = thai_doi_lich_son + 1
     ~ qh("thanh_xin_nghi", 15)
     ~ thai_p(-10)
-* [😤 "Đêm Hồng mà em đi thi? Em biết công ty đang sống chết không?"]
+* [😤 "Đại Nhạc Hội mà em đi thi? Em biết công ty đang sống chết không?"]
     thanh_xin_nghi: Dạ… em biết. Em… ở lại.
     _{thanh_xin_nghi} cúp máy. Tiếng ho giả quen thuộc cũng không có._
     ~ qh("thanh_xin_nghi", -20)
-* [🤝 "Em đi. Anh nhờ {it} nối sóng màn hình lớn ở Đêm Hồng, cả công ty coi em hát."]
+* [🤝 "Em đi. Anh nhờ {it} nối sóng màn hình lớn ở Đại Nhạc Hội, cả công ty coi em hát."]
     thanh_xin_nghi: Anh… làm được hả?
     quan_ly_idol: Anh không biết. Anh hỏi thử.
     ~ thai_doi_lich_son = thai_doi_lich_son + 1
@@ -202,7 +202,7 @@ giam_doc: {quan_ly_idol}. Cậu là quản lý của nó. Nói đi. Gia hạn ha
     giam_doc: *(thở dài)* Thế thì anh quyết theo số.
     { qh_giam_doc >= 40 or thai_song_ca_ghep:
         ~ thai_phat_gia_han = true
-        giam_doc: Gia hạn. Vì Đêm Hồng mai nó còn song ca.
+        giam_doc: Gia hạn. Vì Đại Nhạc Hội mai nó còn song ca.
     - else:
         giam_doc: Chưa gia hạn.
     }
@@ -210,7 +210,7 @@ giam_doc: {quan_ly_idol}. Cậu là quản lý của nó. Nói đi. Gia hạn ha
     _Phát nhìn bạn. Không cười. Chỉ gật đầu một cái, rất chậm, như cúi chào sau một bài hát._
     ~ thai_tt(10)
 - else:
-    _Phát đứng dậy, ra ngoài. Bạn muốn đi theo. Máy phải reo: đạo diễn Đêm Hồng. Bạn nghe máy._
+    _Phát đứng dậy, ra ngoài. Bạn muốn đi theo. Máy phải reo: đạo diễn Đại Nhạc Hội Siêu Nhân. Bạn nghe máy._
     ~ thai_kh(1)
     ~ thai_tt(-10)
 }
@@ -220,7 +220,7 @@ _Cuối buổi, {giam_doc} đọc thêm một dòng: "Khủng hoảng truyền t
 // ------------------------------------------------------------
 === quan_ly_idol_3010_dem_truoc ===
 # ngay:30 # gio:22:30 # noi:studio_0905
-_Đêm trước Đêm Hồng. Studio 0905. 22 giờ, {giam_doc} nhắn group: "Mai cả nhà cháy hết mình nhé. Anh không ép, tùy các em."_
+_Đêm trước Đại Nhạc Hội Siêu Nhân. Studio 0905. 22 giờ, {giam_doc} nhắn group: "Mai cả nhà cháy hết mình nhé. Anh không ép, tùy các em."_
 _Bạn mở ngăn kéo tủ đầu giường. Tấm ảnh {idol_het_thoi} năm 2015, đêm trao giải. Mặt kính không một hạt bụi. Mười một năm bạn lau nó mỗi tối._
 _Máy trái sáng. {idol_het_thoi}: "Mai anh đứng ở đâu?"_
 * [💬 "Ở chỗ thấy em rõ nhất."]
@@ -240,7 +240,7 @@ _Máy trái sáng. {idol_het_thoi}: "Mai anh đứng ở đâu?"_
 // ------------------------------------------------------------
 === quan_ly_idol_3110_vi_tri ===
 # ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu Đêm Hồng, Phường Tân Drama. Cả công ty hóa trang. {giam_doc} mặc đồ "Ông Kẹ Ngân Hàng", không ai dám cười._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Cả công ty hóa trang. {giam_doc} mặc đồ "Ông Kẹ Ngân Hàng", không ai dám cười._
 { thai_dat_nguyen_di:
     ~ thai_vi_tri_dem_hong = "ll"
     _Nhưng bạn không ở đó. Bạn ở tầng 18 tòa nhà kính xanh lá chuối, ngồi trước màn hình livestream._
@@ -275,7 +275,7 @@ _Hậu trường ồn như chợ. Máy phải: đạo diễn sân khấu. Máy t
     _Bạn tắt tiếng livestream. Không tắt được hình._
     -> END
 }
-_19 giờ 30. Đêm Hồng bắt đầu. Phim ngắn "Người Hùng Không Tên" mở màn, rồi video "16 năm" của {editor}. Trong video có một cảnh năm 2015: một cậu trợ lý booking đứng sau cậu sinh viên ôm đàn, tay cầm một cái điện thoại cục gạch._
+_19 giờ 30. Đại Nhạc Hội Siêu Nhân bắt đầu. Phim ngắn "Người Hùng Không Tên" mở màn, rồi video "16 năm" của {editor}. Trong video có một cảnh năm 2015: một cậu trợ lý booking đứng sau cậu sinh viên ôm đàn, tay cầm một cái điện thoại cục gạch._
 _Cả bãi năm nghìn người không ai biết người đó là bạn. {editor} thì biết. {editor} đã giữ khung hình đó lâu hơn các khung khác một giây._
 { thai_song_ca_ghep and not nguyen_theo_ll:
     _Tiết mục số 3. "Công Viên Hồng". {idol_het_thoi} và Nguyên. Nhạc dạo bản remix vang lên. Nguyên nhìn mu bàn tay trái, đọc to: "…thích ăn CHUỐI chiên!"_

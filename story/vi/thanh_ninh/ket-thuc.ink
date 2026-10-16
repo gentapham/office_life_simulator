@@ -49,7 +49,7 @@ _Cả tầng 2 vỗ tay. {chi_dai} vỗ chậm, nhưng vỗ. {ran_doc} vỗ nhan
     giam_doc: Câu đấy em nói cả nghìn lần rồi. Lần này anh tin.
 * [😢 Không nói được câu nào. Chỉ cúi đầu.]
     giam_doc: Ừ. Không cần nói gì. Ba năm em nói đủ rồi.
-- _Đêm 31/10, Đêm Hồng. Con số trên màn hình lớn nhảy liên tục. Bạn đứng cạnh sếp, cầm ô, cầm nước, cầm điện thoại. Nhưng lần này sếp cầm hộ bạn cái ô._
+- _Đêm 31/10, Đại Nhạc Hội Siêu Nhân. Con số trên màn hình lớn nhảy liên tục. Bạn đứng cạnh sếp, cầm ô, cầm nước, cầm điện thoại. Nhưng lần này sếp cầm hộ bạn cái ô._
 _Sáng 1/11. 7 giờ 45. Bạn tới trước sếp như mọi ngày, bưng khay trà vào phòng kính._
 _Sếp đã ngồi đó. Trên bàn có hai ly trà, một ly đã rót sẵn._
 _Lần đầu tiên, sếp đứng dậy rót cho bạn trước._
@@ -87,7 +87,7 @@ _Bên kia đường lớn, rất xa, tòa nhà tím của {cong_ty} vẫn sáng 
 // ------------------------------------------------------------
 === thanh_ninh_kt_loi_that_dau_tien ===
 # dieu_kien:ket_thuc_loi_that_dau_tien
-_Đêm Hồng, 31/10. 19 giờ 20. Hậu trường. MC của đêm diễn gọi điện báo kẹt xe ở Đại lộ Kẹt Xe, chưa biết mấy giờ tới._
+_Đại Nhạc Hội Siêu Nhân, 31/10. 19 giờ 20. Hậu trường. MC của đêm diễn gọi điện báo kẹt xe ở Đại lộ Kẹt Xe, chưa biết mấy giờ tới._
 _{chi_dai} cầm bộ đàm, nhìn quanh, rồi nhìn bạn._
 chi_dai: {thanh_ninh}. *(dúi micro vào tay bạn)* MC đêm nay là em.
 thanh_ninh: Chị… em chỉ biết khen thôi chị.
@@ -128,7 +128,7 @@ _Câu đó bác nói với tất cả mọi người, ba năm nay. Hôm nay bạ
 _{cho} nằm trước chòi. Nó nhìn bạn ôm thùng carton đi qua._
 _{cho} không sủa._
 _Thế mới buồn._
-_Đêm 31/10, Đêm Hồng. Bạn xem livestream trên điện thoại, ngồi trên bậc thềm căn 302. Camera lia qua sếp. Bên cạnh sếp, chỗ bạn vẫn đứng, giờ là {ran_doc}, cầm ô._
+_Đêm 31/10, Đại Nhạc Hội Siêu Nhân. Bạn xem livestream trên điện thoại, ngồi trên bậc thềm căn 302. Camera lia qua sếp. Bên cạnh sếp, chỗ bạn vẫn đứng, giờ là {ran_doc}, cầm ô._
 -> END
 
 // ------------------------------------------------------------
@@ -148,7 +148,7 @@ _Đêm 31/10, Đêm Hồng. Bạn xem livestream trên điện thoại, ngồi t
 _Thẻ từ của {cong_ty}: bị khóa. Thẻ khách của LL: bị khóa._
 _Đêm 31/10. Bạn đứng giữa đường lớn khu Ven Đô._
 _Một bên là tòa nhà kính 20 tầng màu xanh lá chuối, đèn sáng choang, slogan chạy chữ "Việc hôm nay phải xong từ hôm qua"._
-_Phía xa là tòa nhà 3 tầng màu tím của {cong_ty}. Đêm nay vắng, cả công ty đang ở Đêm Hồng. Chỉ chòi bảo vệ còn sáng một ngọn đèn._
+_Phía xa là tòa nhà 3 tầng màu tím của {cong_ty}. Đêm nay vắng, cả công ty đang ở Đại Nhạc Hội Siêu Nhân. Chỉ chòi bảo vệ còn sáng một ngọn đèn._
 _Bạn mở danh bạ. Lướt từ A tới Z._
 _"Anh {giam_doc}". Không được nữa._
 _"Anh Lực". Chưa bao giờ được._
@@ -163,12 +163,12 @@ _Xe cộ chạy qua hai bên. Không ai bấm còi gọi bạn. Bạn không bi�
 === thanh_ninh_kt_het_nguoi_de_ninh ===
 # dieu_kien:ket_thuc_het_nguoi_de_ninh
 { nguoi_theo_doi < 1000000:
-    _Đêm Hồng kết thúc lúc 22 giờ. Con số dừng lại ở {nguoi_theo_doi}. Không đủ._
+    _Đại Nhạc Hội Siêu Nhân kết thúc lúc 22 giờ. Con số dừng lại ở {nguoi_theo_doi}. Không đủ._
     _Sếp đứng dưới khán đài trong bộ đồ "Ông Kẹ Ngân Hàng", nhìn con số rất lâu. Rồi tháo cà vạt in hình tờ tiền ra, gấp gọn, bỏ vào túi._
     giam_doc: {thanh_ninh} về đi em. Mai… không cần tới sớm đâu.
     _Mười tỷ. Trang 47. Bạn biết từ đầu. Bạn đã biết mọi thứ từ đầu, và đã dùng nó để giữ ghế của mình._
 - else:
-    _Đêm Hồng thành công. Con số nhảy qua một triệu. Cả công ty ôm nhau._
+    _Đại Nhạc Hội Siêu Nhân thành công. Con số nhảy qua một triệu. Cả công ty ôm nhau._
     _Sếp ôm {ran_doc} trước. Rồi {chi_dai}. Rồi {ke_toan}. Bạn đứng cạnh, cầm ô, chờ. Lượt của bạn đến sau cùng, và ngắn nhất._
     _Sáng thứ 2, bàn trợ lý có một cái ghế nữa. {ran_doc} ngồi đó. Sếp gọi tên {ran_doc} trước, mỗi sáng._
 }

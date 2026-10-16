@@ -79,7 +79,7 @@ sales: Không. Bả đang… nghỉ. Ai bắt bả sửa nữa là chị chỉ m
 // ============================================================
 === designer_kt_ban_dau_tien_muon_nam ===
 # dieu_kien:ket_thuc_ban_dau_tien_muon_nam
-_Một tuần sau Đêm Hồng._
+_Một tuần sau Đại Nhạc Hội Siêu Nhân._
 { nguoi_theo_doi >= 1000000:
     _Siêu Nhân Hồng vượt một triệu người theo dõi. Tấm backdrop của bạn được báo chí gọi là "bầu trời hồng có học"._
 - else:
@@ -131,7 +131,7 @@ _Trên tường studio, bạn treo một khung ảnh: bản phác thảo BTT Glo
 // ============================================================
 === designer_kt_hai_mang_chinh_nghia ===
 # dieu_kien:ket_thuc_hai_mang_chinh_nghia
-_Đêm 31/10. 21 giờ 07. Đêm Hồng đang ở đoạn cao trào._
+_Đêm 31/10. 21 giờ 07. Đại Nhạc Hội Siêu Nhân đang ở đoạn cao trào._
 _Bên kia đường, màn hình LED trên tòa nhà kính 20 tầng của LL-Entertainment bật lên, phóng to thiết kế Hồng Ngoại, đúng như kế hoạch của Lưu Lực._
 _Lá chuối. Vệt hồng. Rồi máy quay của đài truyền hình zoom vào. Và giữa họa tiết lá chuối, to bằng cả một tầng lầu…_
 _…hiện ra chữ G 7 màu. Bên dưới là dòng chữ: "Hồng là của G"._
@@ -185,12 +185,12 @@ _Chữ G 7 màu vẫn sáng. Lần đầu tiên bạn thấy nó đẹp. Đúng 
 _Bạn không còn cãi ai nữa._
 _"Chữ to lên." Dạ. "Logo to lên." Dạ. "Thêm hồng." Dạ. "Thêm cầu vồng." Dạ. "Thêm pháo hoa." Dạ._
 _Số Lần Bị Sửa: {ds_so_lan_bi_sua}. Bạn không đếm nữa. Con số tự nhảy._
-truong_phong: Poster Đêm Hồng đẹp lắm em. Đúng ý anh. Đúng ý sếp. Đúng ý anh {con_ong_chau_cha}. Đúng ý tất cả.
+truong_phong: Poster Đại Nhạc Hội đẹp lắm em. Đúng ý anh. Đúng ý sếp. Đúng ý anh {con_ong_chau_cha}. Đúng ý tất cả.
 _Tấm poster cuối cùng là một mảng hồng chói lóa, chữ chồng lên chữ, logo chồng lên mặt, pháo hoa chồng lên pháo hoa._
 _Không đọc được chữ nào. Nhưng ai cũng nói "đẹp"._
 hong_hot: *(nhìn bạn, nói nhỏ)* Bà ơi… bà ổn hông?
 designer: Ổn. Sửa xong rồi mà.
-_Đêm 31/10, bạn không ở lại Đêm Hồng. Bạn về căn 203._
+_Đêm 31/10, bạn không ở lại Đại Nhạc Hội Siêu Nhân. Bạn về căn 203._
 _Bàn vẽ phủ một lớp bụi mỏng. Hộp bút chì còn nguyên, chưa gọt từ tháng 9. Cây lưỡi hổ trên ban công đã héo một lá._
 _Bạn ngồi xuống, cầm bút chì lên. Đặt bút xuống tờ giấy trắng. Chờ._
 _Chờ ai đó nói phải vẽ gì._

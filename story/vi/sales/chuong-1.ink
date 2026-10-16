@@ -73,11 +73,11 @@ _Khách hàng hay hỏi bạn ở đâu. Bạn trả lời "Sky Ảo" bằng gi�
 === sales_0210_hop_chien_dich ===
 # ngay:2 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
 _Ngày Nụ cười Thế giới. {hr} bắt mọi người cười khi chấm công. Bạn cười như đang chụp ảnh thẻ cho visa._
-truong_phong: Chiến dịch "Hồng Hóa Việt Nam". Mục tiêu 1 triệu người theo dõi trước 31/10. Mình cần ngân sách cho Đêm Hồng.
+truong_phong: Chiến dịch "Hồng Hóa Việt Nam". Mục tiêu 1 triệu người theo dõi trước 31/10. Mình cần ngân sách cho Đại Nhạc Hội.
 _Giữa buổi, {thuc_tap_sinh} rụt rè kể ý tưởng phim về một người bỏ nghề ngân hàng. {bien_kich} ghi chép chăm chú._
 ke_toan: Ngân sách hiện tại không đủ dựng sân khấu lớn. Cần tài trợ.
 _Cả phòng im lặng. Bạn cảm thấy chân mình tự đứng dậy, như có ai giật dây._ # hen_gio:6
-* [🗣️ "Tin chị đi! Chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đêm Hồng!"]
+* [🗣️ "Tin chị đi! Chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đại Nhạc Hội!"]
     ~ sl_phet(10)
     ~ sl_giay(50)
     giam_doc: Tuyệt vời! Mọi người vỗ tay cho {sales}!
@@ -133,7 +133,7 @@ designer: *(trả lời sau 30 giây)* Em nói lại coi? Một… tập đoàn?
 _Thứ 7. Hồ bơi chung cư Sky Ảo. Bạn mặc đồ bơi, đeo kính râm, nằm ghế dài chụp ảnh. Không xuống nước, vì nước làm trôi lớp nền._
 _Ghế bên cạnh: {con_ong_chau_cha}, đang nổi lềnh bềnh trên phao hình con vịt._
 con_ong_chau_cha: Ủa {sales}. Em cũng ở đây hả? Chill ghê.
-* [💁 "Dạ anh {con_ong_chau_cha}, tin chị đi, anh nên tài trợ Đêm Hồng. Logo anh trên áo Siêu Nhân Hồng."]
+* [💁 "Dạ anh {con_ong_chau_cha}, tin chị đi, anh nên tài trợ Đại Nhạc Hội. Logo anh trên áo Siêu Nhân Hồng."]
     con_ong_chau_cha: Tài trợ? Bằng tiền của anh hả? *(nghĩ)* Anh… không có tiền của anh. Toàn tiền của chú anh.
     _Câu đó nghe như câu đùa. Nhưng mặt {con_ong_chau_cha} không đùa._
     ~ qh("con_ong_chau_cha", 3)

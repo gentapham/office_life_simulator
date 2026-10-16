@@ -6,7 +6,7 @@
 VAR cd_uy_luc = 50          // 🦁 Uy Lực 0..100
 VAR cd_no_khi = 20          // 🔥 Nộ Khí 0..100 (100 = nổ)
 VAR cd_dan_em = 0           // 🛡️ Đàn Em 0..6 (tính từ danh sách cd_ds_em)
-VAR cd_tien_do = 10         // 📋 Tiến Độ Đêm Hồng 0..100 (%)
+VAR cd_tien_do = 10         // 📋 Tiến Độ Đại Nhạc Hội Siêu Nhân 0..100 (%)
 
 // ---------- Đàn em (tối đa 6) ----------
 LIST cd_ds_em = de_thuc_tap_sinh, de_ran_doc, de_thanh_xin_nghi, de_thanh_ninh, de_editor, de_ke_toan, de_idol_het_thoi, de_bien_kich, de_it, de_designer, de_hong_hot, de_chua_te_deadline, de_sales, de_quan_ly_idol, de_dan_dau_tu, de_con_ong_chau_cha
@@ -93,7 +93,7 @@ VAR cd_co_bo_dam = true         // bộ đàm luôn đeo bên hông
     }
 }
 
-// Tiến Độ Đêm Hồng
+// Tiến Độ Đại Nhạc Hội Siêu Nhân
 === function cd_td(n) ===
 ~ cd_tien_do = gioi_han(cd_tien_do + n)
 

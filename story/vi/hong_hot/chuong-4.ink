@@ -52,7 +52,7 @@ _Trò chơi tập thể bắt buộc: "Bịt mắt bắt sếp". Sếp bị bị
 === hong_hot_1710_nhau ===
 # ngay:17 # gio:19:30 # noi:quan_hai_san_vung_tau
 _Nhà hàng hải sản. {dan_dau_tu} bao cả công ty bằng tiền coin x10. Sếp say. {sales} say._
-sales: Tin chị đi! Đêm Hồng chị mời ca sĩ nổi tiếng nhất nước về hát! Chắc kèo!
+sales: Tin chị đi! Đại Nhạc Hội chị mời ca sĩ nổi tiếng nhất nước về hát! Chắc kèo!
 giam_doc: *(đứng lên ghế)* Các em! Tháng sau anh… tăng lương… cả công ty!
 _Điện thoại bạn đang quay. Cả hai câu đều nằm gọn trong khung hình._
 * [📤 Gửi clip vào group "Hội Anti Sếp": "Bằng chứng nha mấy bà!"]

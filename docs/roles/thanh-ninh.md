@@ -77,7 +77,7 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 | Thuyết phục sếp duyệt quảng cáo cho MV (khi đang pha trà) | +40.000 người theo dõi | Cần Điểm Nịnh ≥ 50 |
 | Viết bài phát biểu cho Nguyên trong buổi họp báo trước gameshow | +20.000 | Nguyên đọc xong rất cảm động, hỏi Nhi viết bài cho mình mãi được không |
 | Xếp sếp ngồi hàng ghế khách mời gameshow thay vì Nguyên | −15.000 | Điểm Nịnh +10. Nịnh sếp quá đà là có giá |
-| Gửi lịch Đêm Hồng cho LL | −50.000 và LL chuẩn bị sẵn kế hoạch cướp Nguyên | Độ Xanh Lá Chuối +20. Nếu Hiếu hoặc Bảo phát hiện thì toang |
+| Gửi lịch Đại Nhạc Hội Siêu Nhân cho LL | −50.000 và LL chuẩn bị sẵn kế hoạch cướp Nguyên | Độ Xanh Lá Chuối +20. Nếu Hiếu hoặc Bảo phát hiện thì toang |
 | Báo trước cho sếp lời mời gấp ba của LL (đọc được từ email) | Giữ chân Nguyên dễ hơn ngày 27/10 | Nhi phải thừa nhận mình đọc email đã xóa của sếp |
 
 ---
@@ -115,7 +115,7 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 ### Chương 6: "Email Gửi Nhầm" (28/10 – 31/10)
 - **29/10:** wifi sập cả ngày. Nhi soạn sẵn email gửi LL (đồng ý nhận việc, hoặc từ chối) trong hộp thư nháp. 17:02, wifi có lại, hộp thư tự động gửi. Ô người nhận đã tự điền gợi ý: **"G-Entertainment - Toàn công ty"**. Nhi có 5 giây.
 - **30/10:** họp đánh giá. Sếp sẽ khen ai: Nhi hay Hiếu? Nếu Nhi thua, Nhi có dám nói với sếp một câu không phải lời khen?
-- **31/10:** Đêm Hồng. Nhi đứng cạnh sếp như mọi khi, cầm ô che, cầm nước, cầm điện thoại. Hoặc Nhi đứng ở một khán đài khác, mặc áo xanh lá chuối.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Nhi đứng cạnh sếp như mọi khi, cầm ô che, cầm nước, cầm điện thoại. Hoặc Nhi đứng ở một khán đài khác, mặc áo xanh lá chuối.
 
 ---
 
@@ -214,7 +214,7 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 |---|---|---|---|
 | 1 | 😄 🫱 **Cánh Tay Phải Chính Thức** | Điểm Nịnh ≥ 80, Độ Xanh Lá Chuối < 30, thắng Hiếu trong cuộc thi "sếp gọi ai", Siêu Nhân Hồng đạt ít nhất Mốc 3 | Ngày 30/10, Thắng gắn lên bàn Nhi tấm biển mới: **"Chánh Văn phòng"**, lương tăng 20%. Sáng hôm sau, Nhi bưng trà vào phòng sếp như mọi ngày. Lần đầu tiên, sếp đứng dậy rót cho Nhi một ly trước. *"Anh pha có chuẩn không em?"* Nhi uống một ngụm: *"Dạ… hơi đắng anh."* Cả hai cùng cười |
 | 2 | 😄 🟢 **Nhảy Đúng Lúc** | Nhận việc ở LL như một nhân viên thật (không phải tai mắt), không mang theo bí mật nào của Thắng, gửi đơn nghỉ việc đàng hoàng trước 30/10 | Nhi nhận thẻ nhân viên LL màu xanh lá chuối, lương gấp đôi. Trên bàn làm việc mới có một tấm thiệp viết tay của Thắng: *"Đi vui nhé. Anh không ép, tùy em."* Giờ nghỉ trưa, Nhi tự mua cho mình một ly trà sữa, lần đầu tiên không cần khen ai để được uống |
-| 3 | 😄 🔒 **Kết thúc bí mật: Lời Thật Đầu Tiên** | Đã mở cả hai cờ `nhi_noi_that_1` và `nhi_noi_that_2`, mở nhánh "Học Nghề Chị Đại", từ chối LL, Cơn Giận Chị Đại ≤ 20, và ngày 30/10 nói với sếp: *"Anh phải viết thư cho Genta"* | Đêm Hồng, Hương đưa micro cho Nhi: *"MC đêm nay là em."* Trước nghìn khán giả, Nhi không khen ai cả. Nhi chỉ giới thiệu từng người trong công ty đã làm gì, đúng sự thật. Dưới khán đài, sếp vỗ tay to nhất. Hương nói nhỏ với Thương: *"Con nhỏ này được."* |
+| 3 | 😄 🔒 **Kết thúc bí mật: Lời Thật Đầu Tiên** | Đã mở cả hai cờ `nhi_noi_that_1` và `nhi_noi_that_2`, mở nhánh "Học Nghề Chị Đại", từ chối LL, Cơn Giận Chị Đại ≤ 20, và ngày 30/10 nói với sếp: *"Anh phải viết thư cho Genta"* | Đại Nhạc Hội Siêu Nhân, Hương đưa micro cho Nhi: *"MC đêm nay là em."* Trước nghìn khán giả, Nhi không khen ai cả. Nhi chỉ giới thiệu từng người trong công ty đã làm gì, đúng sự thật. Dưới khán đài, sếp vỗ tay to nhất. Hương nói nhỏ với Thương: *"Con nhỏ này được."* |
 | 4 | 😢 📧 **Email Gửi Nhầm** | Email "Em đồng ý về LL ạ" tới tay toàn công ty ngày 29/10 và Nhi không tự thú trước | Sáng 30/10, Tuấn mỉm cười: *"Em rảnh không, lên phòng anh uống trà xíu."* Nhi ôm thùng carton, trên cùng là tấm ảnh chụp chung với sếp, phóng to, đóng khung. Đi ngang chòi bảo vệ, Bác Bình nói: *"Bác không thấy gì đâu."* Tuất không sủa. Thế mới buồn |
 | 5 | 😢 🐍 **Hai Mang** | Độ Xanh Lá Chuối ≥ 80 và bị lộ (Hiếu, Bảo hoặc Ngân phát hiện), hoặc LL bỏ rơi Nhi sau khi cướp được Nguyên | Nhi đứng giữa đường lớn khu Ven Đô, một bên là tòa nhà kính xanh lá chuối của LL, phía xa là tòa nhà tím của G-Entertainment. Thẻ từ của cả hai công ty đều bị khóa. Nhi mở danh bạ, lướt từ A tới Z, không biết nên nịnh ai |
 | 6 | 😢 🪞 **Hết Người Để Nịnh** | Siêu Nhân Hồng thất bại, công ty phá sản, Nhi ở lại tới ngày cuối | Căn 302 Phố Mới, đêm 31/10. Nhi đứng trước gương, tập: *"Chị nói chuẩn quá chị ơi."* Rồi: *"Em nói chuẩn quá em ơi."* Trong gương chỉ có một người, và không ai cần được khen |

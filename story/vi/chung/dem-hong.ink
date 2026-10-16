@@ -1,5 +1,5 @@
 // ============================================================
-// ĐÊM HỒNG HALLOWEEN 31/10 · KẾT THÚC SỰ NGHIỆP · MỘT THÁNG SAU
+// ĐẠI NHẠC HỘI SIÊU NHÂN 31/10 · KẾT THÚC SỰ NGHIỆP · MỘT THÁNG SAU
 //
 // Thứ tự:
 //   chung_3110_dem_hong              (19:30, cảnh chung, có 1–2 lựa chọn)
@@ -19,7 +19,7 @@
 //   5. 🔥 bi_tay_chay     : chung_scandal_lon_sau_2810 và < 800.000
 //   6. 📉 chim_nghim      : còn lại
 // "Top 10 xu hướng" = chung_top_10_xu_huong, HOẶC vượt 1.000.000 ngay trong
-// Đêm Hồng mà không có scandal lớn sau 28/10 (vượt mốc triệu trong đêm diễn
+// Đại Nhạc Hội Siêu Nhân mà không có scandal lớn sau 28/10 (vượt mốc triệu trong đêm diễn
 // trực tiếp thì tự lên xu hướng).
 // ============================================================
 
@@ -46,7 +46,7 @@
 }
 ~ return "" + dv
 
-// Số người theo dõi Đêm Hồng mang lại (100.000 – 300.000)
+// Số người theo dõi Đại Nhạc Hội Siêu Nhân mang lại (100.000 – 300.000)
 === function chung_diem_dem_hong() ===
 ~ temp d = 100000
 { chung_tien_do_dem_hong >= 80:
@@ -109,7 +109,7 @@
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
 { vai == "sieu_nhan_hong" && nguyen_theo_ll: -> ben_kia_duong }
 _Thứ bảy, 31/10/2026. 19 giờ 30._
-_Sân khấu Đêm Hồng, Phường Tân Drama. Ba tuần trước, chỗ này là một bãi đất trống, một cột điện và rất nhiều ếch. Tối nay, nó hồng rực như ai đó lật ngược một ly trà sữa dâu lên cả quận._
+_Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Ba tuần trước, chỗ này là một bãi đất trống, một cột điện và rất nhiều ếch. Tối nay, nó hồng rực như ai đó lật ngược một ly trà sữa dâu lên cả quận._
 {
 - nguoi_theo_doi >= 800000:
     _Khán đài kín người. Có người đội mũ bảo hiểm sơn hồng, có người mặc áo choàng làm từ khăn tắm, có một bà cụ cầm bảng "SIÊU NHÂN ĐẨY XE GIÙM TUI HÔM MƯA"._
@@ -295,7 +295,7 @@ _Màn hình tắt._ # hien_ket_thuc_nhan_vat
 = ben_kia_duong
 _Thứ bảy, 31/10/2026. 19 giờ 30. Tầng thượng tòa nhà kính LL-Entertainment._
 _Bộ đồ của bạn có viền xanh lá chuối mới may. Nó vừa, nhưng không quen. Lưu Lực vỗ vai bạn, nói gì đó về "đêm đầu tiên của một kỷ nguyên". Bạn không nghe rõ._
-_Bên kia đường, Sân khấu Đêm Hồng sáng hồng rực. Bạn thấy một bóng người đứng ở cổng, lưng hơi còng, tay sờ túi áo. Bạn thấy một con chó vàng ngồi cạnh, nhìn thẳng về phía tòa nhà này._
+_Bên kia đường, Sân khấu Đại Nhạc Hội Siêu Nhân sáng hồng rực. Bạn thấy một bóng người đứng ở cổng, lưng hơi còng, tay sờ túi áo. Bạn thấy một con chó vàng ngồi cạnh, nhìn thẳng về phía tòa nhà này._
 _20 giờ. Màn hình LED bật tên bạn. Cùng lúc, bên kia đường, có ai đó cầm micro hát "Công Viên". Cả khán đài bên đó hát theo._
 * [🦸 Tạo dáng cho màn hình LED.]
     _Bạn tạo dáng chữ V. Màn hình phóng to bạn lên 20 tầng. Bạn chưa bao giờ to như vậy. Cũng chưa bao giờ thấy mình nhỏ như vậy._
@@ -442,7 +442,7 @@ _{cong_ty} sống thêm một mùa. Nguyễn {sieu_nhan_hong} được yêu thư
 === chung_kt_meme_quoc_dan ===
 # ket_thuc_su_nghiep:meme_quoc_dan # loai:co_hau
 _🤡 MEME QUỐC DÂN_
-_Sáng 1/11, không ai nhớ Siêu Nhân Hồng hát bài gì ở Đêm Hồng._
+_Sáng 1/11, không ai nhớ Siêu Nhân Hồng hát bài gì ở Đại Nhạc Hội Siêu Nhân._
 _Nhưng cả nước nhớ Siêu Nhân Hồng._
 _Ảnh Siêu Nhân Hồng tạo dáng chữ V giữa mưa hóa đơn được ghép chữ "Khi sếp hỏi chứng từ". Clip bị chó đuổi quanh sân khấu được ghép nhạc phim hành động. Ảnh kẹt áo choàng trong thang máy thành sticker Zalo-lô với dòng "Ét o ét"._
 _Cụm "Siêu Nhân Gâu" vào từ điển tiếng lóng của giới trẻ. Nghĩa: người cố gắng hết sức mà vẫn hơi… hài._
@@ -552,7 +552,7 @@ _Siêu Nhân Hồng chìm nghỉm. Không ai biết người trong bộ đồ h�
 === chung_kt_bi_tay_chay ===
 # ket_thuc_su_nghiep:bi_tay_chay # loai:buon
 _🔥 BỊ TẨY CHAY_
-_23 giờ 40 đêm Đêm Hồng, khi pháo giấy còn chưa quét xong, một bài đăng lan khắp mạng: bóc lại vụ việc nổ ra sau ngày 28/10, kèm ảnh chụp màn hình, ghi âm, và một bảng so sánh "trước và sau"._
+_23 giờ 40 đêm Đại Nhạc Hội Siêu Nhân, khi pháo giấy còn chưa quét xong, một bài đăng lan khắp mạng: bóc lại vụ việc nổ ra sau ngày 28/10, kèm ảnh chụp màn hình, ghi âm, và một bảng so sánh "trước và sau"._
 _Tới 0 giờ 30, hashtag \#TẩyChayHồng đứng thứ 2 xu hướng. Lần đầu tiên Siêu Nhân Hồng vào top 10. Theo cách không ai muốn._
 { vai != "hong_hot":
     hong_hot: *(điện thoại rung liên tục)* Fanpage nhận 4.000 bình luận một giờ. Tui… tui hông dám mở cái nào hết.
@@ -700,7 +700,7 @@ _Thành Phố Ước Mơ, 30/11/2026. Trời bắt đầu có gió lạnh. Đạ
     _{it} vẫn ngủ ở phòng server. Ổ cứng "KHÔNG ĐƯỢC MỞ" vẫn chưa được mở. Mì ly vẫn vị tôm. Có những thứ không cần restart._
 }
 { vai != "idol_het_thoi":
-    _{idol_het_thoi} {ket_thuc_su_nghiep == "bi_cuop_mat": hát "Công Viên" ở Đêm Hồng thay cho người vắng mặt. Clip được 3 triệu lượt xem. Lần này không có bình luận nào giống nhau.|vẫn hát đám cưới, sảnh B. Fan cuồng số 1 vẫn đến đúng giờ. Tuần trước có thêm một fan thứ hai. Là thật, không phải bot.}_
+    _{idol_het_thoi} {ket_thuc_su_nghiep == "bi_cuop_mat": hát "Công Viên" ở Đại Nhạc Hội Siêu Nhân thay cho người vắng mặt. Clip được 3 triệu lượt xem. Lần này không có bình luận nào giống nhau.|vẫn hát đám cưới, sảnh B. Fan cuồng số 1 vẫn đến đúng giờ. Tuần trước có thêm một fan thứ hai. Là thật, không phải bot.}_
 }
 { vai != "quan_ly_idol":
     _{quan_ly_idol} vẫn cầm hai điện thoại. Một cái rung ít hơn trước. Cái còn lại, danh bạ vẫn lưu một cái tên kèm ghi chú "(đừng bắt máy lúc đang họp, mà bắt cũng được)"._

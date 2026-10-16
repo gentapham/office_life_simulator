@@ -1,5 +1,5 @@
 // ============================================================
-// CHƯƠNG 6: "ĐÊM HỒNG CỦA CHÓ" (28/10 – 31/10)
+// CHƯƠNG 6: "ĐẠI NHẠC HỘI SIÊU NHÂN CỦA CHÓ" (28/10 – 31/10)
 // ============================================================
 
 // ------------------------------------------------------------
@@ -238,7 +238,7 @@ _Bạn đã tha vào phòng họp {so_mon_tha + 3} món, nếu tính cả tất 
 // ------------------------------------------------------------
 === cho_3010_toi ===
 # ngay:30 # gio:19:30 # noi:choi_bao_ve
-_Tối. Công ty về hết. Bác pha ấm trà cuối ngày. Ngày mai là Đêm Hồng, cả công ty sẽ ở Sân khấu Đêm Hồng tới khuya._
+_Tối. Công ty về hết. Bác pha ấm trà cuối ngày. Ngày mai là Đại Nhạc Hội Siêu Nhân, cả công ty sẽ ở Sân khấu Đại Nhạc Hội Siêu Nhân tới khuya._
 bac_bao_ve: Bla bla… TUẤT… bla bla bla. # phu_de:Mai đông người lắm. Mày đi theo bác. Đừng có chạy lung tung, nghe chưa.
 { ch_kho_bi_don:
     _Bạn nằm trong ổ, ngậm chiếc nắp bút hồng. Nó là tất cả những gì còn lại. Bác nhìn bạn, không nói gì, đặt thêm một cây xúc xích cạnh ổ._
@@ -251,13 +251,13 @@ bac_bao_ve: Bla bla… TUẤT… bla bla bla. # phu_de:Mai đông người lắm
     ~ qh("bac_bao_ve", 4)
 * [👃 Ra cổng đánh hơi lần cuối trong ngày.]
     ~ ch_mui(2)
-    _Mùi khói xe. Mùi cơm tấm. Và từ phía Sân khấu Đêm Hồng cách đây mấy con phố: mùi sơn mới, mùi dây điện mới, mùi rất nhiều bánh chuối chiên._
+    _Mùi khói xe. Mùi cơm tấm. Và từ phía Sân khấu Đại Nhạc Hội Siêu Nhân cách đây mấy con phố: mùi sơn mới, mùi dây điện mới, mùi rất nhiều bánh chuối chiên._
 - -> END
 
 // ------------------------------------------------------------
 === cho_3110_hoa_trang ===
 # ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc
-_Thứ 7. Đêm Hồng Halloween. Mọi người hóa trang. Một con ma. Một bà phù thủy. Một quả bí ngô. {giam_doc} mặc áo choàng đen, đeo mặt nạ in hình tờ giấy vay nợ: "Ông Kẹ Ngân Hàng"._
+_Thứ 7. Đại Nhạc Hội Siêu Nhân. Mọi người hóa trang. Một con ma. Một bà phù thủy. Một quả bí ngô. {giam_doc} mặc áo choàng đen, đeo mặt nạ in hình tờ giấy vay nợ: "Ông Kẹ Ngân Hàng"._
 _Sân khấu ngoài trời đầy đèn hồng. Mùi hồng khắp nơi. Mũi bạn muốn xin nghỉ phép, như {thanh_xin_nghi}._
 designer: Bla bla… TUẤT… bla bla bla? # phu_de:{cho} hóa trang gì đây ta? Có bộ bí ngô, có bộ… siêu nhân hồng mini nè!
 * [😤 Gầm gừ vào bộ siêu nhân hồng mini.]
@@ -277,14 +277,14 @@ designer: Bla bla… TUẤT… bla bla bla? # phu_de:{cho} hóa trang gì đây 
 // ------------------------------------------------------------
 === cho_3110_canh_ga ===
 # ngay:31 # gio:20:45 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng đang diễn ra. Tiếng nhạc dội tới cả đáy dạ dày. Bạn lẻn ra sau cánh gà._
+_Đại Nhạc Hội Siêu Nhân đang diễn ra. Tiếng nhạc dội tới cả đáy dạ dày. Bạn lẻn ra sau cánh gà._
 _Ở đó, bộ đồ hồng ngồi một mình trên cái ghế nhựa. Tháo cái {ch_mu()} ra, lau mồ hôi, đặt xuống ghế bên cạnh._
 _Khuôn mặt bình thường. Hơi gầy. Mắt mệt._
 sieu_nhan_hong: Bla bla… TUẤT… bla bla… # phu_de:{cho} hả? Anh mệt quá. Hôm nay anh không chọc em đâu.
 _Cái {ch_mu()} nằm đó. Không ai canh. Thứ bạn muốn ngoạm nhất trên đời. Cả tháng nay. Một lần thôi._
 * [🦷 Ngoạm chiếc mũ, chạy thẳng ra sân khấu.]
     _Bạn ngoạm. Chạy. Ra khỏi cánh gà. Ra giữa ánh đèn. Hàng nghìn người. Một con chó vàng ngậm một chiếc mũ hồng._
-    _Và phía sau, chạy đuổi theo, là một người với khuôn mặt thật. Không mũ. Giữa sân khấu Đêm Hồng._
+    _Và phía sau, chạy đuổi theo, là một người với khuôn mặt thật. Không mũ. Giữa sân khấu Đại Nhạc Hội Siêu Nhân._
     ~ ch_giat_mu = true
     ~ ch_lo_mat_nguyen = 100
     ~ follow(150000)
@@ -324,7 +324,7 @@ _Cái {ch_mu()} nằm đó. Không ai canh. Thứ bạn muốn ngoạm nhất tr
 // ------------------------------------------------------------
 === cho_3110_sau_dem_hong ===
 # ngay:31 # gio:23:00 # noi:cong_cong_ty # bat_buoc
-_23 giờ. Đêm Hồng kết thúc. Bác chở bạn về chòi. Cổng công ty vắng tanh, chỉ có đèn đường vàng và mấy quả bóng bay hồng xẹp lăn theo gió._
+_23 giờ. Đại Nhạc Hội Siêu Nhân kết thúc. Bác chở bạn về chòi. Cổng công ty vắng tanh, chỉ có đèn đường vàng và mấy quả bóng bay hồng xẹp lăn theo gió._
 _Mũi bạn mỏi. Chân bạn mỏi. Nhưng đuôi bạn vẫn còn sức vẫy một chút._
 bac_bao_ve: Bla bla… TUẤT… bla. # phu_de:Xong rồi, {cho} ạ. Một tháng. Về nhà thôi.
 _Một chiếc xe màu hồng chạy chầm chậm qua cổng. Không dừng. Rồi dừng. Đèn xe nháy hai cái, như chào._

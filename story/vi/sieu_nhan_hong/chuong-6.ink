@@ -1,5 +1,5 @@
 // ============================================================
-// CHƯƠNG 6: "ĐÊM HỒNG" (28/10 – 31/10)
+// CHƯƠNG 6: "ĐẠI NHẠC HỘI SIÊU NHÂN" (28/10 – 31/10)
 // Kết thúc sự nghiệp (6 cái) nằm ở nội dung chung. Ở đây chỉ đặt
 // nguoi_theo_doi, so_scandal, nguyen_theo_ll, nguyen_thao_mu_dem_hong.
 // ============================================================
@@ -244,7 +244,7 @@ _Cuối buổi, {idol_het_thoi} được gia hạn hợp đồng thêm một nă
 // ------------------------------------------------------------
 === sieu_nhan_hong_3110_hau_truong ===
 # ngay:31 # gio:18:30 # noi:canh_ga_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng". {cho} đeo cánh dơi. {thanh_xin_nghi} biến mất, 20:00 có chung kết "Giọng Ca Ước Mơ". Riêng bạn thì ngày nào cũng như hóa trang._
+_Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng". {cho} đeo cánh dơi. {thanh_xin_nghi} biến mất, 20:00 có chung kết "Giọng Ca Ước Mơ". Riêng bạn thì ngày nào cũng như hóa trang._
 _Cánh gà. 1 tiếng nữa lên sân khấu. Bạn ngồi trên thùng loa, mũ đặt trên đùi._
 { nguyen_theo_ll:
     _Điện thoại rung: Lưu Lực. "Tối nay diễn xong, sáng mai họp báo bên tôi." Bạn tắt máy._

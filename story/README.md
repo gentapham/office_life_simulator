@@ -11,7 +11,7 @@ story/
     ├── chung.ink             (file gốc nội dung chung)
     ├── chung/
     │   ├── bien-chung.ink    (biến & hàm dùng chung, KHÔNG sửa tùy tiện)
-    │   └── ...               (sự kiện ngẫu nhiên, tin đồn, nói chuyện vặt, Đêm Hồng, kết thúc sự nghiệp)
+    │   └── ...               (sự kiện ngẫu nhiên, tin đồn, nói chuyện vặt, Đại Nhạc Hội Siêu Nhân, kết thúc sự nghiệp)
     ├── ran_doc.ink           (file gốc của Rắn Độc)
     ├── ran_doc/
     │   ├── bien.ink          (biến riêng của nhân vật)

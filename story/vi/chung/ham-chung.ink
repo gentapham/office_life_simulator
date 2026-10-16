@@ -14,7 +14,7 @@
 //    là "em". Duy "dạ anh dạ chị" với tất cả.
 // 2. chung_ngoi_ba(ma) : "ổng" / "bả" / "nó" (Tuất), dùng khi buôn chuyện.
 //    chung_ten_buon(ma): "ông Long", "bà Ngân", "bác Bình", "sếp Thắng", "con Tuất".
-// 3. Biến chung cho Đêm Hồng & kết thúc sự nghiệp (game hoặc file nhân vật đặt).
+// 3. Biến chung cho Đại Nhạc Hội Siêu Nhân & kết thúc sự nghiệp (game hoặc file nhân vật đặt).
 // 4. Mã người nói cho NPC phụ (không có biến tên, game hiển thị tên cố định):
 //      npc_teo (Anh shipper Tèo), npc_ba_tu (Bà Tư chủ trọ), npc_chu_sau (Chú Sáu
 //      karaoke), npc_co_bay (Cô Bảy bánh mì), npc_ong_ba (Ông Ba trà đá),
@@ -25,24 +25,24 @@
 //      npc_cam_do (Chủ tiệm cầm đồ Cứu Nguy), npc_cong_an (Anh công an phường).
 // ============================================================
 
-// ---------- Biến cho Đêm Hồng & kết thúc sự nghiệp ----------
-// Nguyên đã vào top 10 xu hướng (game đặt khi đạt, ví dụ Tiến Độ Đêm Hồng ≥ 80%)
+// ---------- Biến cho Đại Nhạc Hội Siêu Nhân & kết thúc sự nghiệp ----------
+// Nguyên đã vào top 10 xu hướng (game đặt khi đạt, ví dụ Tiến Độ Đại Nhạc Hội Siêu Nhân ≥ 80%)
 VAR chung_top_10_xu_huong = false
 // Có scandal lớn bị bóc sau ngày 28/10 (vụ fan ảo, email Nhi, Hồng Coin...)
 VAR chung_scandal_lon_sau_2810 = false
 // Số lần Siêu Nhân Hồng thành meme trong tháng (té khi nhảy, bị Tuất đuổi trên sóng...)
 VAR chung_so_meme = 0
-// Long công khai là tác giả, "Hồng Là Thái Độ" được hát ở Đêm Hồng
+// Long công khai là tác giả, "Hồng Là Thái Độ" được hát ở Đại Nhạc Hội Siêu Nhân
 VAR chung_hat_hong_la_thai_do = false
 // Phim "Người Hùng Không Tên" ghi đúng tên Duy ở dòng ý tưởng
 VAR chung_phim_ghi_ten_duy = false
 // Video "16 năm" của Lĩnh chiếu được (false nếu kẹt 99% mà không ai cứu)
 VAR chung_video_16_nam = true
-// Tiến độ Đêm Hồng của Hương, 0..100
+// Tiến độ Đại Nhạc Hội Siêu Nhân của Hương, 0..100
 VAR chung_tien_do_dem_hong = 70
-// File nhân vật đã tự hỏi chuyện tháo mũ rồi thì đặt true để Đêm Hồng chung không hỏi lại
+// File nhân vật đã tự hỏi chuyện tháo mũ rồi thì đặt true để Đại Nhạc Hội Siêu Nhân chung không hỏi lại
 VAR chung_da_chon_thao_mu = false
-// Công ty còn sống sau Đêm Hồng (do chung_3110_ket_thuc_su_nghiep tính)
+// Công ty còn sống sau Đại Nhạc Hội Siêu Nhân (do chung_3110_ket_thuc_su_nghiep tính)
 VAR chung_cong_ty_song = false
 
 // ---------- Tuổi ----------

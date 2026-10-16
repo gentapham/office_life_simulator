@@ -33,7 +33,7 @@ hr: {ke_toan} ơi, mình nhìn lại hành trình của bản ngân sách này n
 # ngay:17 # gio:19:30 # noi:vung_tau # bat_buoc
 _Quán hải sản ven biển. {dan_dau_tu} vừa tuyên bố "thoát nghèo" vì Hồng Coin tăng x10, bao cả team. Rồi gọi thêm 7 dĩa mực nướng "cho cả phòng". Ăn một mình._
 _Bạn là người duy nhất giữ hóa đơn của cả đoàn. Túi bạn dày như cuốn sổ cái._
-sales: *(say, đứng lên ghế)* Mọi người nghe nè! Đêm Hồng em mời ca sĩ nổi tiếng nhất nước về hát! Chắc kèo!
+sales: *(say, đứng lên ghế)* Mọi người nghe nè! Đại Nhạc Hội em mời ca sĩ nổi tiếng nhất nước về hát! Chắc kèo!
 giam_doc: *(say, nâng ly)* Tháng sau… tháng sau anh tăng lương cho cả nhà!
 _Sáu cái điện thoại đang quay. Bạn nhìn hóa đơn trong tay. Bạn nhìn {giam_doc}._
 * [🧾 Kẹp hóa đơn 7 dĩa mực vào sổ, ghi: "{dan_dau_tu} – tự trả."]

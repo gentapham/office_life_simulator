@@ -254,7 +254,7 @@ _{chi_dai} nhìn bạn: "Em là đàn ông trong phòng sản xuất đó. Quà 
 // ------------------------------------------------------------
 === editor_2010_karaoke ===
 # ngay:20 # gio:22:30 # noi:karaoke_hat_cho_nhau_nghe # bat_buoc
-_Karaoke Hát Cho Nhau Nghe, tăng hai sau quán ốc. {giam_doc} say, cầm micro: "Nếu Đêm Hồng thành công, cả công ty tăng lương 20%!"_
+_Karaoke Hát Cho Nhau Nghe, tăng hai sau quán ốc. {giam_doc} say, cầm micro: "Nếu Đại Nhạc Hội Siêu Nhân thành công, cả công ty tăng lương 20%!"_
 _{hong_hot} quay clip. {ke_toan} đứng dậy, ngồi xuống, đứng dậy._
 _Bạn ngồi góc phòng. Ghế bên cạnh trống. {quan_ly_idol} bước vào, nhìn quanh, rồi ngồi xuống đó._
 quan_ly_idol: Ở đây tối nhất. Anh trốn điện thoại xíu.

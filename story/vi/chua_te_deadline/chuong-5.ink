@@ -37,7 +37,7 @@ _Mốc 3: 500.000 người theo dõi._
 -> chua_te_deadline_2110_lam_som
 
 = chua_te_deadline_2110_lam_som
-_Bạn về chỗ. Trên bàn: tờ lịch, ngày 31/10 khoanh hồng. Còn 10 ngày. Cue sheet Đêm Hồng: {vu_cue_sheet} trên 47 cue._
+_Bạn về chỗ. Trên bàn: tờ lịch, ngày 31/10 khoanh hồng. Còn 10 ngày. Cue sheet Đại Nhạc Hội Siêu Nhân: {vu_cue_sheet} trên 47 cue._
 { vu_kich_ban_gameshow && vu_ho_so_phuong && vu_so_lan_nho_xiu == 0:
     _Bạn chợt nhận ra: MV xong, gameshow xong, hồ sơ phường xong, và bạn chưa nhờ ai làm giùm việc gì. Nếu làm luôn cue sheet bây giờ thì…_
 }
@@ -303,7 +303,7 @@ dan_dau_tu: Nghe nói anh {quan_ly_idol} được mời 36 triệu một tháng 
     dan_dau_tu: Sao em biết?
     _Bạn không biết. Bạn chỉ nhớ cảnh ở lửa trại, cái chăn {editor} đắp cho hai người._
     ~ qh("dan_dau_tu", 3)
-* [📊 Tính lại cue sheet trong đầu nếu Đêm Hồng thiếu Siêu Nhân Hồng.]
+* [📊 Tính lại cue sheet trong đầu nếu Đại Nhạc Hội thiếu Siêu Nhân Hồng.]
     _Cue 1: Đèn tắt. Cue 2: …không có ai. Bạn gạch hết. Không có cue sheet nào cho một đêm diễn không có người diễn._
     ~ cang_thang(10)
     ~ vu_cue_sheet = vu_cue_sheet + 5
@@ -315,7 +315,7 @@ dan_dau_tu: Nghe nói anh {quan_ly_idol} được mời 36 triệu một tháng 
 === chua_te_deadline_2610_tin_don_cat_giam ===
 # ngay:26 # gio:08:45 # noi:phong_hop_sang_tao # bat_buoc
 _Họp giao ban thứ 2. Tin đồn "cắt giảm nhân sự nếu Siêu Nhân Hồng thất bại" đã thành tin chính thức trong lòng tất cả mọi người, dù chưa ai nói ra._
-truong_phong: Cue sheet Đêm Hồng. Bao nhiêu cue rồi?
+truong_phong: Cue sheet Đại Nhạc Hội. Bao nhiêu cue rồi?
 _Cue sheet: {vu_cue_sheet} trên 47._
 * [😇 Nói thật con số.]
     truong_phong: {vu_cue_sheet}. Ừ. Tớ ghi. Đây là lần đầu cậu nói một con số không tròn. Tớ tin con số không tròn.
@@ -348,7 +348,7 @@ _Trong bóng tối phòng chiếu, bạn nghe {thuc_tap_sinh} ngồi hàng sau, 
     thuc_tap_sinh: Dạ… dạ không sao anh. Phim… phim hay quá ạ.
     _Bạn không hỏi nữa. Nhưng bạn ghi nhớ gương mặt đó._
     ~ qh("thuc_tap_sinh", 5)
-* [📋 Ghi chú: phim này làm màn mở đầu Đêm Hồng, cue số 2.]
+* [📋 Ghi chú: phim này làm màn mở đầu Đại Nhạc Hội, cue số 2.]
     ~ vu_cue_sheet = vu_cue_sheet + 2
 - -> END
 
@@ -369,7 +369,7 @@ _Lưu Lực nhặt giấy với tốc độ của người đang chạy trốn q
     _Lưu Lực nhìn chân bạn. Bạn nhìn trần nhà. {chi_dai} nhìn Lưu Lực. Lưu Lực bỏ luôn tờ giấy, đi thẳng lên tầng 2._
     ~ qh("chi_dai", 5)
 - _Chiều, trailer phim ngắn "Người Hùng Không Tên" được đăng lên, đề tên tác giả: {bien_kich}. Cùng lúc, {sales} chạy vào, mặt trắng bệch._
-sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thiệt đó!
+sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Họ muốn tài trợ 1 tỷ cho Đại Nhạc Hội! Thiệt đó!
 _Cả phòng cười. Không ai tin. {sales} đứng giữa phòng, lần đầu tiên nói thật, và không ai tin._
 * [🤝 "Tui tin. Gửi tui số điện thoại, tui gọi xác nhận."]
     _Bạn gọi. Một giọng cô ở Ven Đô bắt máy: "Dạ đúng rồi con, Sữa Chua Hồng Hào đây." Bạn bật loa ngoài. Cả phòng im._
@@ -389,7 +389,7 @@ sieu_nhan_hong: Bên LL trả gấp ba. Anh {quan_ly_idol} nói anh tự quyết
 { vu_tin_bi_khoa:
     _Bạn nhìn tin nhắn. Bạn nhớ câu "kịch bản này ai viết vậy". Tay bạn hơi run._
 }
-* [😇 "Anh ở lại đi. Đêm Hồng mà thiếu anh thì em chiếu cái gì."]
+* [😇 "Anh ở lại đi. Đại Nhạc Hội mà thiếu anh thì em chiếu cái gì."]
     ~ vu_tra_loi_2710 = "o_lai"
     ~ nguyen_theo_ll = false
     { not vu_tin_bi_khoa:

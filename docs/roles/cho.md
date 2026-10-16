@@ -138,10 +138,10 @@ Tuất không biết có chiến dịch. Nhưng mạng xã hội thì biết Tu�
 - **24/10:** "hội nghị hòa giải" của Hương. Ai cũng giận ai, nhưng ai cũng vuốt đầu Tuất.
 - **27/10:** một người mặc **vest trắng**, mùi nước hoa xanh lá chuối, tới cổng (xem Mẫu 5). Nếu Mũi Thính ≥ 80, Tuất nhận ra **một người trong công ty có cùng mùi đó trên áo**. Đó là "con rắn thứ hai".
 
-### Chương 6: "Đêm Hồng Của Chó" (28/10 – 31/10)
+### Chương 6: "Đại Nhạc Hội Siêu Nhân Của Chó" (28/10 – 31/10)
 - **29/10 (wifi sập):** con người không có gì làm, nên ai cũng chơi với Tuất. Độ Được Cưng tăng gấp đôi cả ngày.
 - **30/10 (họp đánh giá):** HR cho dọn kho trước buổi họp. Nếu kho chưa được chuyển chỗ hay chưa có ai "đồng minh" biết, đội dọn dẹp sẽ tìm thấy gầm cầu thang. Lựa chọn: dẫn Bác Bình (hoặc Bảo, Duy) tới kho trước, hay tự tha từng món vào phòng họp.
-- **31/10:** Đêm Hồng. Sân khấu đầy đèn hồng, mùi hồng khắp nơi. Siêu Nhân Hồng đứng giữa sân khấu, chiếc mũ ngay đó. Câu hỏi cuối cùng của cả tháng: **giật, hay không giật**.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Sân khấu đầy đèn hồng, mùi hồng khắp nơi. Siêu Nhân Hồng đứng giữa sân khấu, chiếc mũ ngay đó. Câu hỏi cuối cùng của cả tháng: **giật, hay không giật**.
 
 ---
 
@@ -224,7 +224,7 @@ Tuất không biết có chiến dịch. Nhưng mạng xã hội thì biết Tu�
 > 4. 👃 *Đánh hơi thật kỹ, rồi chạy vào văn phòng tìm người có cùng mùi.* (Chỉ khi Mũi Thính ≥ 80)
 >    - Tuất ngồi xuống trước bàn của một người, sủa đúng một tiếng. Người đó là "con rắn thứ hai" của lượt chơi này. Ai để ý thì sẽ hiểu
 
-### Mẫu 6: Đêm Hồng, chiếc mũ (31/10)
+### Mẫu 6: Đại Nhạc Hội Siêu Nhân, chiếc mũ (31/10)
 
 > **{sieu_nhan_hong}:** *(đứng sau cánh gà, tháo mũ ra lau mồ hôi, đặt xuống ghế)* *"…bla bla… **TUẤT** …bla bla…"*
 > *(Phụ đề người: "Tuất hả? Anh mệt quá. Hôm nay anh không chọc em đâu.")*
@@ -246,7 +246,7 @@ Tuất không biết có chiến dịch. Nhưng mạng xã hội thì biết Tu�
 |---|---|---|---|
 | 1 | 😄 🏅 **Linh Vật Chính Thức** | Độ Được Cưng ≥ 85, không "để lại quà" trong văn phòng 10 ngày cuối, kết thúc sự nghiệp của Siêu Nhân Hồng không phải "Bị Tẩy Chay" | Họp đánh giá 30/10. Thắng đeo lên cổ Tuất một tấm thẻ nhân viên màu cam: *"Tuất. Linh vật. Lương: 3 cây xúc xích/ngày."* Tăng lương 50%, người duy nhất trong công ty được tăng hơn 20%. Cả phòng họp vỗ tay. Tuất gặm góc tấm thẻ |
 | 2 | 😄 🔒 **Kết thúc bí mật: Kho Báu Công Lý** | Kho có ít nhất 15 món, trong đó có bằng chứng của "con rắn thứ hai" (chiếc giày đêm 17/10, hoặc mùi xanh lá chuối đã được chỉ ra ngày 27/10), và đã tự tha từng món vào phòng họp 30/10 | Phòng họp đánh giá. Tuất tha vào từng món: chìa khóa, son môi, chiếc giày, cái USB. Mỗi món làm một người tái mặt. Món cuối cùng làm "con rắn thứ hai" đứng bật dậy. Bảo mở log, Bác Bình mở sổ trực, mọi thứ khớp. Tối đó Tuất được thưởng **một cây giò lụa nguyên cây**, ăn từ từ dưới gầm cầu thang, giờ đã có biển gỗ ghi "Kho Báu Của Tuất" |
-| 3 | 😄 🌸 **Hòa Bình Hồng** | Độ Ghét Hồng ≤ 10 vào 31/10, đã nhận xúc xích từ tay Nguyên ít nhất 15 lần, đã chọn 🔒 ở Mẫu 4 hoặc nằm ngửa ở Mẫu 6 | 23:00, cổng công ty vắng sau Đêm Hồng. Người đồ hồng ngồi trên bậc thềm, không đội mũ. Tuất đi tới, nằm xuống, gác đầu lên giày của Nguyên. *"…bla bla… **TUẤT** … **NGOAN**…"* Lần đầu tiên, mùi nước hoa hồng không còn khó chịu nữa |
+| 3 | 😄 🌸 **Hòa Bình Hồng** | Độ Ghét Hồng ≤ 10 vào 31/10, đã nhận xúc xích từ tay Nguyên ít nhất 15 lần, đã chọn 🔒 ở Mẫu 4 hoặc nằm ngửa ở Mẫu 6 | 23:00, cổng công ty vắng sau Đại Nhạc Hội Siêu Nhân. Người đồ hồng ngồi trên bậc thềm, không đội mũ. Tuất đi tới, nằm xuống, gác đầu lên giày của Nguyên. *"…bla bla… **TUẤT** … **NGOAN**…"* Lần đầu tiên, mùi nước hoa hồng không còn khó chịu nữa |
 | 4 | 😢 🌊 **Lạc Ở Vũng Tàu** | Đã lẻn lên xe buýt 17/10, Mũi Thính < 40, và chạy theo mùi cua nướng ra xa bãi biển trong đêm lửa trại | Xe buýt cam chạy về thành phố, đếm người đủ, không ai đếm chó. Một cô bán hải sản ở bến cho Tuất ở tạm, ngày nào cũng cho cơm. Tuất ngồi ở bến xe, nhìn từng chiếc xe buýt cam chạy qua. Ở Thành Phố Ước Mơ, Bác Bình dán tờ giấy "Tìm chó" ở cổng, mỗi ngày một tờ mới |
 | 5 | 😢 📦 **Kho Báu Bị Dọn** | Kho bị đội dọn dẹp tìm thấy trước 30/10 (chưa dẫn ai tới, hoặc Hiếu đã phát hiện kho trước), hoặc Mũi Thính < 30 khiến Tuất không giữ được đồ | Gầm cầu thang được quét sạch, sơn trắng, dán biển "Kho chứa đồ vệ sinh". Mọi bằng chứng bị gom vào túi rác, không ai đọc. Tuất nằm ở góc trống, gặm cái nắp bút hồng, món duy nhất còn sót lại |
 | 6 | 😢 🏡 **Gửi Về Vườn** | Độ Được Cưng < 20, hoặc đã "để lại quà" trong phòng giám đốc 3 lần | Thắng ký quyết định: *"Chó không được ở công ty."* Tuất về nhà vườn của Bác Bình ở Ven Đô. Có vườn rau, có bể cá, có bát xúc xích đầy. Nhưng ngày thường bác ở chòi bảo vệ trên phố. Từ thứ 2 tới thứ 6, Tuất nằm ở cổng vườn, mũi hướng về phía thành phố, chờ tiếng xe máy chiều thứ 7 |

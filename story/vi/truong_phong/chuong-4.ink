@@ -65,7 +65,7 @@ _Không ai biết sếp đứng về phía nào. Dây căng như cuộc đua gh�
 # ngay:17 # gio:20:00 # noi:nha_hang_vung_tau
 _Bữa tối hải sản. {dan_dau_tu} bao cả đoàn vì Hồng Coin vừa tăng gấp mười. {giam_doc} đã uống tới ly thứ bảy._
 giam_doc: Các em! Anh hứa… tháng sau… tăng lương cả công ty! Anh không ép… anh tự nguyện!
-_Mười cái điện thoại giơ lên quay. {sales} cũng đứng dậy: "Em sẽ mời ca sĩ nổi tiếng nhất nước về hát Đêm Hồng!"_
+_Mười cái điện thoại giơ lên quay. {sales} cũng đứng dậy: "Em sẽ mời ca sĩ nổi tiếng nhất nước về hát Đại Nhạc Hội Siêu Nhân!"_
 * [📝 Mở sổ, ghi lại lời hứa của sếp "để làm biên bản".]
     ~ tp_hop(1)
     giam_doc: {truong_phong}! Em ghi gì đấy? Xóa đi! À mà thôi, ghi đi. Anh là người giữ lời.

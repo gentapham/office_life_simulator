@@ -48,7 +48,7 @@
 // ------------------------------------------------------------
 === idol_het_thoi_kt_cong_vien_hong ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_cong_vien_hong
-_Ba ngày sau Đêm Hồng, bản remix "Công Viên Hồng" lên top 1 xu hướng._
+_Ba ngày sau Đại Nhạc Hội Siêu Nhân, bản remix "Công Viên Hồng" lên top 1 xu hướng._
 _Cả nước lại hát "thích ăn chuối chiên". Lần này kèm một điệu nhảy: hai tay xiên que, lắc hông, tạo dáng siêu nhân ở câu cuối._
 _Học sinh nhảy ở sân trường. Mấy chú xe ôm nhảy ở ngã tư. Một cô bán cá viên chiên ở Vũng Tàu quay clip nhảy cạnh xe đẩy, ghi: "Bài của thằng nhỏ hồi xưa đó!"_
 hong_hot: *(gọi tới, hét)* Anh {idol_het_thoi} ơi! Top 1! Top 1 thiệt! Không có hoa sen nào hết! Người thật hết đó anh!
@@ -69,7 +69,7 @@ _Bạn dán nó lên tường, ngay giữa._
 // ------------------------------------------------------------
 === idol_het_thoi_kt_ca_si_dam_cuoi ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_ca_si_dam_cuoi
-_Cuối tháng 11. Một đám cưới ở nhà hàng Hạnh Phúc Trăm Năm, sảnh B. Đám thứ 23 kể từ Đêm Hồng._
+_Cuối tháng 11. Một đám cưới ở nhà hàng Hạnh Phúc Trăm Năm, sảnh B. Đám thứ 23 kể từ Đại Nhạc Hội Siêu Nhân._
 _Lịch của bạn kín tới Tết. Anh {quan_ly_idol} phải mua thêm một cuốn sổ. {ke_toan} đã dạy bạn xuất hóa đơn, bạn xuất hóa đơn đẹp như ký tặng._
 _Cô dâu chú rể hôm nay quen nhau năm 2015, ở một phòng karaoke, vì cùng giành micro hát "Công Viên". Họ in lời bài hát lên thiệp cưới._
 chu_re: *(cầm micro)* Tụi em mời anh {idol_het_thoi} lên hát. Anh hát cho tụi em thôi, như năm đó tụi em hát cho nhau.
@@ -91,8 +91,8 @@ _Được một người cần, hóa ra cũng là nổi tiếng._
 // ------------------------------------------------------------
 === idol_het_thoi_kt_doi_ban_than ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_doi_ban_than
-_Đêm Hồng tan lúc 23 giờ. Bãi đất trước sân khấu đầy giấy kim tuyến hồng. Công nhân bắt đầu cuộn dây điện._
-_Ở cổng Sân khấu Đêm Hồng có một xe chuối chiên còn mở. Ông bán chuối chiên đang dọn hàng._
+_Đại Nhạc Hội Siêu Nhân tan lúc 23 giờ. Bãi đất trước sân khấu đầy giấy kim tuyến hồng. Công nhân bắt đầu cuộn dây điện._
+_Ở cổng Sân khấu Đại Nhạc Hội Siêu Nhân có một xe chuối chiên còn mở. Ông bán chuối chiên đang dọn hàng._
 idol_het_thoi: Chú ơi, cho con hai bịch.
 _Bạn cầm hai bịch chuối chiên còn nóng, đi vòng ra sau cánh gà. Anh {quan_ly_idol} ngồi trên bậc thang sân khấu, hai cái điện thoại trên đùi, một cái 3% pin, một cái 1%._
 _Anh ngẩng lên. Bạn đưa anh một bịch._
@@ -116,7 +116,7 @@ _Chuyện sau đó thế nào thì chưa ai biết. Nhưng đêm đó, có hai n
 // ------------------------------------------------------------
 === idol_het_thoi_kt_fan_ao_bo_di ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_fan_ao_bo_di
-_Đêm 31/10. Ở Sân khấu Đêm Hồng, năm nghìn người đang hát. Ở căn 1808, đèn tắt, chỉ có ánh ring light mượn của {hong_hot}._
+_Đêm 31/10. Ở Sân khấu Đại Nhạc Hội Siêu Nhân, năm nghìn người đang hát. Ở căn 1808, đèn tắt, chỉ có ánh ring light mượn của {hong_hot}._
 _Bạn đeo kính đen. Mặc sơ mi lụa đẹp nhất. Bấm "Phát trực tiếp"._
 _Tiêu đề: "ĐÁP TRẢ ANTI FAN. SỰ THẬT VỀ IDOL {idol_het_thoi}."_
 _Một phút. Người xem: 0._
@@ -128,7 +128,7 @@ _Màn hình hiện một dòng chữ xám:_
 _"Hoa Sen 0417: Tài khoản đã bị khóa. Người dùng đã rời khỏi phòng."_
 _Rồi dòng thứ hai. Rồi dòng thứ ba._
 _Người xem: 0._
-_Ngoài cửa sổ, xa xa, pháo hoa Đêm Hồng nổ trên trời Phường Tân Drama. Tiếng năm nghìn người hát vọng tới rất nhỏ. Hình như họ đang hát "thích ăn… khoai chiên"._
+_Ngoài cửa sổ, xa xa, pháo hoa Đại Nhạc Hội Siêu Nhân nổ trên trời Phường Tân Drama. Tiếng năm nghìn người hát vọng tới rất nhỏ. Hình như họ đang hát "thích ăn… khoai chiên"._
 _Không ai sửa lời._
 _Điện thoại báo một tin nhắn. Máy của anh {quan_ly_idol}: "Em ở đâu? Anh tới." Bạn đọc. Không trả lời._
 _Bạn vẫn ngồi đó, livestream cho không ai xem, kính đen trên mặt, trong căn phòng tối. Bốn bức tường nhìn xuống, toàn là bạn năm 2015, cười tươi._
@@ -166,7 +166,7 @@ _Sau lưng, cậu sinh viên vẫn đang hát theo, sai lời: "thích ăn… kh
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_san_khau_trong
 _Chiến dịch Siêu Nhân Hồng thất bại. {cong_ty} phải hoàn 10 tỷ. Phá sản._
 _Hợp đồng độc quyền của bạn, mười một năm, trở thành một tờ giấy không ai cần ký gia hạn, vì không còn ai để ký._
-_Sáng 1/11. Sân khấu Đêm Hồng. Công nhân đang tháo dỡ. Phông hồng được cuộn lại, đèn được hạ xuống, giấy kim tuyến bị quét thành đống._
+_Sáng 1/11. Sân khấu Đại Nhạc Hội Siêu Nhân. Công nhân đang tháo dỡ. Phông hồng được cuộn lại, đèn được hạ xuống, giấy kim tuyến bị quét thành đống._
 _Bạn đứng giữa sân khấu. Không micro. Không đèn. Không kính đen: nó rơi đâu đó đêm qua, bạn không đi tìm._
 _Bạn hát. "Ngày xưa có đôi bạn thân… bán cá viên chiên…"_
 _Mấy chú công nhân dừng tay. Một chú ngồi xuống bậc thang, châm điếu thuốc, nghe hết bài._

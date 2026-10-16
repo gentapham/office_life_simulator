@@ -33,10 +33,10 @@ _Bạn đứng ngay trước cửa thang máy, tay cầm ly trà sữa, điện 
 _Pantry tối. Cả công ty ngồi bệt dưới sàn. Bạn ngồi cạnh {ke_toan} và {chi_dai}, vừa được cứu khỏi thang máy, mặt còn hầm hầm._
 ke_toan: *(thì thầm với {chi_dai})* {chi_dai}. Trang 47. Nếu không đủ 1 triệu người theo dõi, công ty hoàn lại 10 tỷ.
 chi_dai: Mười… tỷ?
-ke_toan: Và ngân sách Đêm Hồng thì đang tính 2 tỷ của {sales}.
+ke_toan: Và ngân sách Đại Nhạc Hội thì đang tính 2 tỷ của {sales}.
 ~ phat_hien(trang_47)
 _Bạn nghe thấy tên mình. Trong bóng tối, không ai thấy mặt bạn trắng bệch._
-_Lần đầu tiên, 2 tỷ không còn là con số để phét. Nếu không có nhà tài trợ thật, Đêm Hồng có thể không đủ tiền dựng sân khấu. Và công ty có thể sập._
+_Lần đầu tiên, 2 tỷ không còn là con số để phét. Nếu không có nhà tài trợ thật, Đại Nhạc Hội Siêu Nhân có thể không đủ tiền dựng sân khấu. Và công ty có thể sập._
 * [😶 Ngồi im. Không ai biết bạn nghe được.]
     ~ cang_thang(15)
     _Bạn ôm gối, đếm từng nhịp thở. 2 tỷ. 10 tỷ. 0 đồng. Ba con số đuổi nhau trong đầu._

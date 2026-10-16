@@ -224,7 +224,7 @@ Ngoài những địa điểm ở mục 2, thêm các nơi sau để thế giớ
 | 🎱 **Quán bida Cơ Bản** | ① | Giải trí buổi tối, cá cược nhỏ | Vũ, Chương |
 | 🏥 **Phòng khám Đa Khoa Khỏe Re** | ① | Khám bệnh khi stress hoặc ngất. **Mua giấy nghỉ ốm** | Sơn (khách quen) |
 | 🏦 **Ngân hàng Tín Dụng Đen Đủi** | ⑤ | Vay tiền, gửi tiết kiệm | Thắng (thế chấp biệt thự), Chương |
-| 🏟️ **Sân khấu Đêm Hồng** | ① | Sân khấu ngoài trời dựng cho đêm diễn Halloween 31/10 của Siêu Nhân Hồng | Cả công ty |
+| 🏟️ **Sân khấu Đại Nhạc Hội Siêu Nhân** | ① | Sân khấu ngoài trời dựng cho đêm diễn Halloween 31/10 của Siêu Nhân Hồng | Cả công ty |
 | 🚌 **Bến xe Ven Đô** | ⑥ | Về quê, trốn nợ, bỏ trốn cùng người yêu | Sơn, Chương |
 | 📺 **Đài truyền hình Tivi Hóng** | ⑥ | Gameshow, cuộc thi hát, phỏng vấn | Sơn, Nguyên, Phát |
 | 🏢 **Công ty đối thủ** | ⑥ | Tòa nhà kính hào nhoáng của **LL-Entertainment**. Phỏng vấn lén, gặp mặt bí mật | Nhi, Quỳnh, Thái |

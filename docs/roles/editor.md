@@ -16,7 +16,7 @@ Ban ngày Lĩnh như zombie: ngáp giữa câu, ngủ gục trên bàn phím, tr
 Lĩnh có một **kênh Diu-túp riêng tên "Cú Đêm Cắt Ghép"**, gần **980.000 người đăng ký**: video dựng lại cảnh đời thường thành phim hành động, cắt ghép meme, hướng dẫn dựng phim. Không ai ở công ty biết đó là Lĩnh. Trên kênh, Lĩnh chỉ hiện là một con cú đeo tai nghe.
 
 ### Động cơ trong 30 ngày
-- **Dựng cho xong** mọi thứ của chiến dịch Siêu Nhân Hồng: MV 9/10, highlight gameshow 16/10, livestream 23/10, video Đêm Hồng 31/10. Mỗi cái là một đêm trắng.
+- **Dựng cho xong** mọi thứ của chiến dịch Siêu Nhân Hồng: MV 9/10, highlight gameshow 16/10, livestream 23/10, video Đại Nhạc Hội Siêu Nhân 31/10. Mỗi cái là một đêm trắng.
 - **Được ghi tên một lần.** Không cần lên chức. Chỉ cần một lần, ô "Người thực hiện" ghi đúng tên mình.
 - **Thái.** Lĩnh **thầm thích Thái**, anh quản lý nghệ sĩ lúc nào cũng cầm 2 điện thoại, mắt thâm như mắt Lĩnh. Đêm nào Lĩnh cũng dựng thêm vài video "tiện tay" cho Phát và Nguyên, để sáng hôm sau Thái đỡ mệt một chút. Thái không biết ai làm.
 - Trong máy Lĩnh có một **thư mục tên "Thái"**: những video Lĩnh dựng riêng từ các cảnh Thái vô tình lọt khung hình. Thái nghe điện thoại. Thái ngủ gật trong xe. Thái cười một mình khi Phát hát đúng nốt. Chưa bao giờ gửi.
@@ -78,7 +78,7 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 | Đăng clip Phát hát trong bóng tối 15/10 | +30.000 (cho cả Phát và chiến dịch) | Phải hỏi Phát hoặc Thái, không thì thành phốt |
 | **Lộ danh tính và kêu gọi người xem kênh "Cú Đêm Cắt Ghép" follow Siêu Nhân Hồng** | **+150.000** | Mất sự ẩn danh. Công ty sẽ muốn "mua lại" kênh |
 | Đình công 1 ngày đúng hôm có sự kiện | −20.000 | Nhưng Công Bị Nhận Vơ có thể giảm mạnh |
-| Dựng video tổng kết chiếu ở Đêm Hồng | +50.000 | Đêm 30/10 là đêm trắng cuối cùng |
+| Dựng video tổng kết chiếu ở Đại Nhạc Hội Siêu Nhân | +50.000 | Đêm 30/10 là đêm trắng cuối cùng |
 
 ---
 
@@ -116,7 +116,7 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 - **28/10, 3 giờ sáng:** sau 6 đêm thức trắng, Lĩnh bấm xuất file. Chọn nhầm đích: **fanpage công ty**, hẹn giờ đăng 9 giờ sáng 29/10.
 - **29/10 (wifi sập cả ngày):** video kẹt ở **99%**. Cả công ty than không có mạng. Chỉ có Lĩnh cầu cho mạng đừng bao giờ có lại. Lĩnh có cả ngày để chọn: hủy, để nó đăng, hay tự tay đưa cho Thái xem trước.
 - **30/10:** họp đánh giá. Ô "Người thực hiện" trên báo cáo cuối tháng ghi tên ai?
-- **31/10 (Đêm Hồng):** Lĩnh ngồi ở bàn dựng phía sau khán đài, dựng trực tiếp. Video cuối cùng chiếu trên màn hình lớn sẽ là gì, do Lĩnh quyết định.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** Lĩnh ngồi ở bàn dựng phía sau khán đài, dựng trực tiếp. Video cuối cùng chiếu trên màn hình lớn sẽ là gì, do Lĩnh quyết định.
 
 ---
 
@@ -195,7 +195,7 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 > 2. 🙈 *Không làm gì. Để số phận quyết định.*
 >    - Mạng có lại. Video lên fanpage công ty. Mọi chuyện tiếp theo phụ thuộc vào Độ Can Đảm và nhánh "Người Dựng Đêm"
 > 3. 🏃 *Rút dây mạng máy mình, xóa hàng chờ, chép video vào USB.*
->    - Mở lựa chọn tự tay đưa USB cho Thái trước Đêm Hồng
+>    - Mở lựa chọn tự tay đưa USB cho Thái trước Đại Nhạc Hội Siêu Nhân
 > 4. *(Không chọn kịp)*: Bảo cắm lại dây. 100%. "Đã đăng." Bạn nhìn màn hình rất lâu
 
 ---
@@ -206,10 +206,10 @@ Lĩnh là **người biến cảnh quay thành lượt xem**. Video nào của S
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 📺 **Một Triệu Con Cú** | Tự công khai mình là "Cú Đêm Cắt Ghép", không bán kênh, kêu gọi người xem follow Siêu Nhân Hồng, chiến dịch thành công | Đêm 31/10, trên màn hình lớn Sân khấu Đêm Hồng, bộ đếm của Nguyên nhảy qua 1.000.000. Cùng lúc, điện thoại Lĩnh rung: kênh "Cú Đêm Cắt Ghép" cũng vừa tròn 1.000.000. Nguyên chỉ xuống khán đài, nói vào micro: *"Cảm ơn con cú!"* Cả nghìn người quay lại nhìn. Lĩnh, lần đầu tiên, không trốn vào bóng tối |
+| 1 | 😄 📺 **Một Triệu Con Cú** | Tự công khai mình là "Cú Đêm Cắt Ghép", không bán kênh, kêu gọi người xem follow Siêu Nhân Hồng, chiến dịch thành công | Đêm 31/10, trên màn hình lớn Sân khấu Đại Nhạc Hội Siêu Nhân, bộ đếm của Nguyên nhảy qua 1.000.000. Cùng lúc, điện thoại Lĩnh rung: kênh "Cú Đêm Cắt Ghép" cũng vừa tròn 1.000.000. Nguyên chỉ xuống khán đài, nói vào micro: *"Cảm ơn con cú!"* Cả nghìn người quay lại nhìn. Lĩnh, lần đầu tiên, không trốn vào bóng tối |
 | 2 | 😄 🏷️ **Tên Trong Ô Người Thực Hiện** | Công Bị Nhận Vơ ≤ 20 vào ngày 30/10, Số Đêm Thức Trắng chưa bao giờ đạt 7, Uy tín ≥ 60 | Báo cáo cuối tháng, ô "Người thực hiện" ghi: *Lĩnh*. Thắng đề bạt Lĩnh làm Trưởng nhóm Hậu kỳ, kèm điều kiện kỳ lạ: *"Từ nay em phải ngủ ban đêm, anh không ép."* Đêm đó Lĩnh ngủ lúc 10 giờ tối. Sáng hôm sau, lần đầu tiên sau 4 năm, Lĩnh kéo rèm đen ở căn 701 ra. Nắng tràn vào, 3 màn hình tắt. Lĩnh hắt hơi |
-| 3 | 😄 🔒 **Kết thúc bí mật: Bản Dựng Cuối Cùng** | Mở nhánh "Người Dựng Đêm", chép video vào USB ngày 29/10 (không để đăng lên fanpage), Độ Can Đảm ≥ 80, tự tay đưa USB cho Thái | Sau Đêm Hồng, ở hậu trường. Thái cắm USB vào laptop, xem 4 phút video dựng từ thư mục "Thái": Thái nghe điện thoại, Thái ngủ gật trong xe, Thái cười một mình. Lần đầu tiên Thái thấy mình qua mắt người khác. Thái úp cả hai điện thoại xuống bàn. *"Em dựng đẹp vậy… sao giờ anh mới thấy?"* Im lặng một lúc. *"Đi ăn sáng hông? Anh bao."* Lĩnh: *"Dạ… em chưa ăn sáng bao giờ."* Trời bắt đầu sáng |
-| 4 | 😢 🛏️ **Ngất Ở Bàn Dựng** | Số Đêm Thức Trắng đạt 7 lần thứ hai | Lĩnh ngất trên bàn phím lúc 4 giờ sáng ngày 30/10, mặt in hình các phím. Tỉnh dậy ở Phòng khám Khỏe Re. Trên TV phòng khám, Đêm Hồng đang chiếu video tổng kết Lĩnh dựng dở. Cuối video hiện dòng chữ: *"Thực hiện: Nhật."* Lĩnh quay mặt vào tường |
+| 3 | 😄 🔒 **Kết thúc bí mật: Bản Dựng Cuối Cùng** | Mở nhánh "Người Dựng Đêm", chép video vào USB ngày 29/10 (không để đăng lên fanpage), Độ Can Đảm ≥ 80, tự tay đưa USB cho Thái | Sau Đại Nhạc Hội Siêu Nhân, ở hậu trường. Thái cắm USB vào laptop, xem 4 phút video dựng từ thư mục "Thái": Thái nghe điện thoại, Thái ngủ gật trong xe, Thái cười một mình. Lần đầu tiên Thái thấy mình qua mắt người khác. Thái úp cả hai điện thoại xuống bàn. *"Em dựng đẹp vậy… sao giờ anh mới thấy?"* Im lặng một lúc. *"Đi ăn sáng hông? Anh bao."* Lĩnh: *"Dạ… em chưa ăn sáng bao giờ."* Trời bắt đầu sáng |
+| 4 | 😢 🛏️ **Ngất Ở Bàn Dựng** | Số Đêm Thức Trắng đạt 7 lần thứ hai | Lĩnh ngất trên bàn phím lúc 4 giờ sáng ngày 30/10, mặt in hình các phím. Tỉnh dậy ở Phòng khám Khỏe Re. Trên TV phòng khám, Đại Nhạc Hội Siêu Nhân đang chiếu video tổng kết Lĩnh dựng dở. Cuối video hiện dòng chữ: *"Thực hiện: Nhật."* Lĩnh quay mặt vào tường |
 | 5 | 😢 💌 **Tưởng Là Video Quảng Cáo** | Video lên fanpage công ty ngày 29/10, và Độ Can Đảm < 50 (chưa từng mở nhánh "Người Dựng Đêm") | Video được 50.000 lượt xem. Ai cũng tưởng đó là video "hậu trường quản lý nghệ sĩ" để PR cho công ty. Thái cũng vậy. Thái bình luận dưới video: *"Dựng hay ghê! Em dựng cho Phát một cái y vậy nha, gấp."* Lĩnh đọc bình luận ở căn 701, rèm đen kín. Lĩnh mở phần mềm, bắt đầu dựng video cho Phát |
 | 6 | 😢 🏢 **Kênh Bị Mua** | Bán kênh cho công ty ngày 26/10 | Kênh "Cú Đêm Cắt Ghép" giờ tên "G-Entertainment Official". Logo con cú đeo tai nghe bị thay bằng chữ G 7 màu. Video đầu tiên của kênh mới: Nhật đứng chỉ tay vào màn hình, giới thiệu *"kênh do anh xây dựng từ con số 0"*. Lĩnh bấm nút hủy đăng ký kênh của chính mình. 200 triệu nằm trong tài khoản. Lĩnh không biết mua gì |
 

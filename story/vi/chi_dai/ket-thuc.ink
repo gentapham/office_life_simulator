@@ -1,6 +1,6 @@
 // ============================================================
 // CHỊ ĐẠI: HƯƠNG · ĐÁNH GIÁ & 6 KẾT THÚC
-// Cảnh đánh giá chạy sau Đêm Hồng (cần kết quả đêm diễn),
+// Cảnh đánh giá chạy sau Đại Nhạc Hội Siêu Nhân (cần kết quả đêm diễn),
 // theo thứ tự ưu tiên:
 //   1. Clip Chị Đại      (nổ Nộ Khí trước máy quay)
 //   2. Show Toang        (Tiến Độ < 50%)
@@ -45,7 +45,7 @@
 // ------------------------------------------------------------
 === chi_dai_kt_nu_hoang_su_kien ===
 # ngay:31
-_Đêm Hồng hoàn hảo. Một triệu người theo dõi. Top 10 xu hướng. Không một bóng đèn chập, không một tiếng loa rè, không một vết kem trên mũ._
+_Đại Nhạc Hội Siêu Nhân hoàn hảo. Một triệu người theo dõi. Top 10 xu hướng. Không một bóng đèn chập, không một tiếng loa rè, không một vết kem trên mũ._
 _{cho} ngồi đúng chỗ của {cho}. {sieu_nhan_hong} đi đúng lối của {sieu_nhan_hong}. Hai con đường không gặp nhau một lần nào._
 _Sáng 1/11. Phòng giám đốc. {giam_doc} tự đứng dậy, tự kéo ghế, và lần này tự pha trà, không gọi ai._
 giam_doc: {chi_dai}. Anh nghĩ suốt đêm qua. Ghế Phó Giám đốc. Anh muốn em ngồi.
@@ -62,7 +62,7 @@ _Bạn chưa kịp nói gì. Cả hàng bấm bộ đàm cùng lúc. Tiếng rè
 thuc_tap_sinh: Rõ, chị Đại.
 it: Rõ, chị Đại.
 _Hành lang cười rộ. Bạn quay mặt đi, giả vờ chỉnh lại cái bộ đàm bên hông. Không ai thấy chị Đại khóc. Không ai dám thấy._
-_Tối đó, tấm bằng "Doanh nhận của năm" sau ghế giám đốc được tháo xuống. Thay vào là tấm ảnh chụp sân khấu Đêm Hồng, cái cột điện quấn đèn hồng sáng rực ở giữa._
+_Tối đó, tấm bằng "Doanh nhận của năm" sau ghế giám đốc được tháo xuống. Thay vào là tấm ảnh chụp sân khấu Đại Nhạc Hội Siêu Nhân, cái cột điện quấn đèn hồng sáng rực ở giữa._
 _Dưới ảnh, ai đó lấy bút dạ ghi một dòng nhỏ: "Do chị đứng."_
 -> END
 
@@ -96,7 +96,7 @@ _Bạn nâng ly trà đá. Cả sân nâng theo. Không ai nói câu chúc nào.
 // ------------------------------------------------------------
 === chi_dai_kt_to_oc_thu_hai ===
 # ngay:31
-_Đêm Hồng thành công. {sieu_nhan_hong} ở lại {cong_ty}. Không có phong bì xanh lá chuối nào tới tay cậu ấy cả. Chỉ bạn biết vì sao._
+_Đại Nhạc Hội Siêu Nhân thành công. {sieu_nhan_hong} ở lại {cong_ty}. Không có phong bì xanh lá chuối nào tới tay cậu ấy cả. Chỉ bạn biết vì sao._
 _Hôm sau. Quán Ốc Đêm. Bàn số 7, đúng cái bàn năm bạn 20 tuổi. Bạn đặt trước, ngồi trước, gọi trước một ấm trà đá._
 _Bảy giờ tối. Một chiếc xe xanh lá chuối đậu xa quán đúng 50 mét. Lưu Lực đi bộ vào, vest trắng, tóc vuốt keo, mắt nhìn quanh như người đi qua bãi mìn._
 luu_luc: Chị {chi_dai}. Chị hẹn tôi… nói chuyện làm ăn?
@@ -146,7 +146,7 @@ _Trên điện thoại, clip vẫn đang chạy. Lượt xem: 5.214.006. Và v�
 // ------------------------------------------------------------
 === chi_dai_kt_show_toang ===
 # ngay:31
-_20:00. Sân khấu Đêm Hồng. Cả nghìn khán giả. Truyền hình trực tiếp._
+_20:00. Sân khấu Đại Nhạc Hội Siêu Nhân. Cả nghìn khán giả. Truyền hình trực tiếp._
 _Giàn đèn bên trái chập. Một tiếng "bụp", rồi khói. Nửa sân khấu tối om._
 _Loa rè. Câu chào của MC biến thành tiếng ong vò vẽ. MC đi lạc ra phía bãi giữ xe, cầm micro hỏi đường bảo vệ._
 _Rồi {cho} lên sân khấu. Trước {sieu_nhan_hong}. Đứng giữa ánh đèn duy nhất còn sáng, ngậm chiếc găng tay hồng, nhìn khán giả._
@@ -161,7 +161,7 @@ _Hàng xóm không nói "nghe đã quá con" như mọi khi. Hàng xóm đóng c
 _Bịch. Bịch. Bịch. Hai giờ sáng._
 _Rồi một tiếng "phựt". Dây treo bao cát đứt. Bao cát rơi xuống sân, nằm im._
 _Bạn ngồi xuống cạnh nó. Hai thứ cũ kỹ, nằm cạnh nhau, dưới ánh trăng Phố Cũ._
-_Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi Sân khấu Đêm Hồng… hủy chuyến… hết show rồi…"_
+_Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi Sân khấu Đại Nhạc Hội Siêu Nhân… hủy chuyến… hết show rồi…"_
 -> END
 
 // ------------------------------------------------------------
@@ -169,7 +169,7 @@ _Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi S�
 // ------------------------------------------------------------
 === chi_dai_kt_mot_minh_ganh_team ===
 # ngay:31
-_Đêm Hồng thành công. Pháo giấy hồng. Khán giả hát. {giam_doc} ôm {sieu_nhan_hong} trên sân khấu, khóc như đứa trẻ._
+_Đại Nhạc Hội Siêu Nhân thành công. Pháo giấy hồng. Khán giả hát. {giam_doc} ôm {sieu_nhan_hong} trên sân khấu, khóc như đứa trẻ._
 _Sau show, cả công ty kéo nhau qua Karaoke Hát Cho Nhau Nghe. Group Zalo-lô nổ tin nhắn: "Phòng VIP 2 nha mọi người!", "Ai chưa tới?"._
 _Không ai nhắn cho bạn. Không ai quên bạn. Chỉ là ai cũng nghĩ: "Chị {chi_dai} chắc bận dọn sân khấu." "Chị {chi_dai} chắc mệt." "Chị {chi_dai} lúc nào chả có việc."_
 _Họ nói đúng. Bạn bận. Bạn mệt. Bạn có việc. Ba lần trong tháng này, bạn kiệt sức tới mức ngồi bệt ở kho mà không đứng dậy nổi. Không ai biết._

@@ -128,7 +128,7 @@ Thắng không trực tiếp làm poster hay MV, nhưng **mọi đồng tiền**
 - **28/10 (Mốc 4):** chưa đủ 800.000 thì LL có cớ cướp người.
 - **29/10:** wifi sập. Thắng không đọc được group anti sếp, không nhắn được lúc 22:00, lần đầu tiên sau 10 năm phải **đi xuống tầng 1 hỏi trực tiếp** từng người xem họ đang làm gì.
 - **30/10:** họp đánh giá. Thắng công bố Phó Giám đốc, tăng lương (nếu có), cắt giảm (nếu có). Lời hứa tăng lương 20% hôm 20/10 có giữ được không?
-- **31/10:** Đêm Hồng Halloween. Thắng hóa trang thành "Ông Kẹ Ngân Hàng" (bộ đồ do Quỳnh chọn, không ai biết đó là trò đùa). Thắng đứng dưới khán đài, tay cầm điện thoại xem số người theo dõi nhảy từng con số.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Thắng hóa trang thành "Ông Kẹ Ngân Hàng" (bộ đồ do Quỳnh chọn, không ai biết đó là trò đùa). Thắng đứng dưới khán đài, tay cầm điện thoại xem số người theo dõi nhảy từng con số.
 
 ---
 
@@ -238,7 +238,7 @@ Thắng không trực tiếp làm poster hay MV, nhưng **mọi đồng tiền**
 | 3 | 😄 🔒 **Kết thúc bí mật: Hoa Hướng Dương Lộ Diện** | Ở lại group "Hội Anti Sếp" tới 29/10 mà không trả thù ai, sửa ít nhất 5 điều bị chê (bỏ nhắn 22 giờ, họp ngắn lại, trả lương đúng hạn…), rồi tự công khai danh tính trong group | Ngày 30/10, Thắng đăng trong group: *"Hoa Hướng Dương 1989 là anh đây. Cảm ơn các em đã chửi anh đúng."* Group im lặng 3 phút. Rồi Ngân đổi tên group thành "Hội Thương Sếp (Một Chút)" và cho Thắng làm phó admin. Tin nhắn đầu tiên của Thắng: một sticker bông hoa hướng dương cúi chào |
 | 4 | 😢 🏚️ **Biệt Thự Có Chủ Mới** | Siêu Nhân Hồng thất bại (dưới 1 triệu), công ty phải hoàn 10 tỷ | Ngân hàng dán thông báo lên cổng sắt biệt thự số 1. Thắng gom ảnh chụp với người nổi tiếng vào một thùng carton, đứng chờ Grab. Tài xế hủy chuyến. Thắng xách thùng đi bộ xuống đồi, vừa đi vừa tự nói: *"Anh không ép, tùy em…"* |
 | 5 | 😢 🪑 **Ghế Ai Người Nấy Ngồi** | Nguy Cơ Lộ Nợ đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Uy Quyền < 20 vào 30/10 | Trước toàn công ty, Bác Bình mở phong bì dán kín của G, ngoài ghi *"Chỉ mở khi công ty sắp sập"*. Bác đọc quyết định của G bên trong: giao quyền điều hành tạm thời cho người vừa được bầu làm Phó Giám đốc. Thắng được giữ lại làm "Cố vấn Văn hóa Doanh nghiệp". Sáng thứ Hai, Thắng ngồi cuối phòng họp, nghe Nhật mở đầu: *"Họp nhanh 5 phút thôi nhé."* Thắng lặng lẽ ghi chép |
-| 6 | 😢 🏃 **Còn Mỗi Mình Sếp** | Hứa Lèo ≥ 5 và LL-Entertainment cướp được Siêu Nhân Hồng ngày 27/10 | Đêm 31/10, Thắng ngồi một mình trong văn phòng tầng 2. Qua vách kính, tòa nhà xanh lá chuối của LL sáng rực pháo hoa Đêm Hồng. Group Zalo-lô công ty chỉ còn 2 thành viên: Thắng và Bác Bình. Thắng gõ lúc 22:00: *"Mai các em đi làm nhé."* Không ai "đã xem" |
+| 6 | 😢 🏃 **Còn Mỗi Mình Sếp** | Hứa Lèo ≥ 5 và LL-Entertainment cướp được Siêu Nhân Hồng ngày 27/10 | Đêm 31/10, Thắng ngồi một mình trong văn phòng tầng 2. Qua vách kính, tòa nhà xanh lá chuối của LL sáng rực pháo hoa Đại Nhạc Hội Siêu Nhân. Group Zalo-lô công ty chỉ còn 2 thành viên: Thắng và Bác Bình. Thắng gõ lúc 22:00: *"Mai các em đi làm nhé."* Không ai "đã xem" |
 
 ---
 

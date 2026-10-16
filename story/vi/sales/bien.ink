@@ -42,7 +42,7 @@ VAR sl_kpi_giay_2810 = 0       // chụp lại KPI Trên Giấy ngày 28/10
 // ---------- Lời hứa ----------
 VAR sl_hua_ca_si = false       // hứa "ca sĩ nổi tiếng nhất nước" (17/10)
 VAR sl_goi_y_phat = false      // gợi ý Phát hát "Công Viên" remix
-VAR sl_phat_nhan_loi = false   // Phát nhận lời hát Đêm Hồng
+VAR sl_phat_nhan_loi = false   // Phát nhận lời hát Đại Nhạc Hội Siêu Nhân
 
 // ---------- Đồng minh ----------
 VAR sl_quynh_cat_dut_ll = false

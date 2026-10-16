@@ -41,5 +41,5 @@ export const SU_KIEN_NGAY = {
   1: "Ký hợp đồng Siêu Nhân Hồng", 4: "Ngày Động vật", 9: "Ra mắt MV", 10: "Ngày lương (rơi vào thứ 7)",
   12: "Lương về trễ", 13: "Ngày Doanh nhân", 15: "Mất điện", 16: "Gameshow", 17: "Team building Vũng Tàu",
   18: "Vũng Tàu ngày 2", 20: "20/10 + sinh nhật công ty", 22: "Kiểm tra thuế", 23: "Sinh nhật Siêu Nhân Hồng",
-  24: "Hội nghị hòa giải", 27: "LL-Entertainment ra tay", 29: "Wifi sập", 30: "Họp đánh giá", 31: "Đêm Hồng Halloween",
+  24: "Hội nghị hòa giải", 27: "LL-Entertainment ra tay", 29: "Wifi sập", 30: "Họp đánh giá", 31: "Đại Nhạc Hội Siêu Nhân",
 };

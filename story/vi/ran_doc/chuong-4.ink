@@ -93,7 +93,7 @@ chi_dai: Im. Để tụi nó nói.
 === ran_doc_1710_dem_phong_205 ===
 # ngay:17 # gio:23:40 # noi:khach_san_vung_tau
 _Phòng 205. Ngoài hành lang, {giam_doc} đang hát karaoke và hét "Anh tăng lương cho cả công ty!". Có ai đó đang quay clip._
-_{sales} ở phòng bên hét theo: "Chị mời ca sĩ nổi tiếng nhất nước về hát Đêm Hồng! Chắc kèo!"_
+_{sales} ở phòng bên hét theo: "Chị mời ca sĩ nổi tiếng nhất nước về hát Đại Nhạc Hội Siêu Nhân! Chắc kèo!"_
 { rd_mo_nhanh_hieu_ech:
     sieu_nhan_hong: *(nằm giường bên, nói vọng qua)* {ran_doc}… em có muốn anh đổi phòng hông?
 - else:

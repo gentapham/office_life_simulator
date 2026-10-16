@@ -238,7 +238,7 @@ _Trên mạng, người ta chia nhau tin {thanh_xin_nghi} vào bán kết một 
 # ngay:26 # gio:16:00 # noi:phong_hop_tang_2 # bat_buoc
 { not bk_kich_ban_phim_xong:
     _Buổi chiếu thử bị hủy. Màn chiếu trắng trơn. {truong_phong} đứng trước cả phòng, giọng khô khốc._
-    truong_phong: Phim không kịp. Đêm Hồng mình thay bằng 15 phút anh {giam_doc} phát biểu nhé.
+    truong_phong: Phim không kịp. Đại Nhạc Hội mình thay bằng 15 phút anh {giam_doc} phát biểu nhé.
     _Cả phòng thở dài cùng một nhịp. Bạn nhìn xuống tay mình. Không có cây bút nào trong đó._
     ~ bk_cam(-20)
     ~ cang_thang(20)
@@ -288,7 +288,7 @@ thuc_tap_sinh: Dạ chị {bien_kich}… cái cảnh đẩy xe trong mưa… là
     ~ bk_hai_cay_so = true
     thuc_tap_sinh: *(mở to mắt, ly cà phê nghiêng một bên)* Chị… chị biết hả chị?
     bien_kich: Chị đoán. Người đó đẩy xe cho cả phố, nên chắc hông nhớ anh. Nhưng anh thì nhớ người ta.
-    bien_kich: Đêm Hồng, anh đứng cánh gà với chị nha.
+    bien_kich: Đại Nhạc Hội, anh đứng cánh gà với chị nha.
     thuc_tap_sinh: Dạ… *(gật đầu ba lần liền)* Dạ.
     ~ qh("thuc_tap_sinh", 10)
     ~ bk_that(5)
@@ -325,7 +325,7 @@ _Kèm theo là ảnh chụp một trang sổ bìa da. Trang "Chương 1: Ngày N
 === bien_kich_2710_trailer ===
 # ngay:27 # gio:15:30 # noi:khu_lam_viec_chung # bat_buoc
 { not bk_kich_ban_phim_xong:
-    _Không có trailer nào. Fanpage đăng ảnh {giam_doc} cầm micro: "Đêm Hồng: 15 phút cùng CEO". Bình luận đầu tiên: "Thôi khỏi."_
+    _Không có trailer nào. Fanpage đăng ảnh {giam_doc} cầm micro: "Đại Nhạc Hội Siêu Nhân: 15 phút cùng CEO". Bình luận đầu tiên: "Thôi khỏi."_
     ~ cang_thang(10)
     -> END
 }

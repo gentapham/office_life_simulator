@@ -25,7 +25,7 @@ _Điện thoại bạn rung. Đài Tivi Hóng vừa đăng thông báo: "Khách 
 hong_hot: Ủa alo? Siêu Nhân Hồng làm khách mời thi hát? Ai sắp xếp vụ này vậy?
 _Cả phòng họp quay sang người giữ lịch. Bạn._
 * [😇 "Dạ em. Một phần trong chiến dịch ạ."]
-    giam_doc: Hay! Hay lắm! Cùng tối Đêm Hồng à? Thế thì… thế thì tính sao?
+    giam_doc: Hay! Hay lắm! Cùng tối Đại Nhạc Hội à? Thế thì… thế thì tính sao?
     thanh_xin_nghi: Dạ… em đang tính.
     ~ uy_tin = uy_tin + 5
     ~ son_soi(5)
@@ -43,7 +43,7 @@ it: Lỗi gì? Restart chưa?
 { son_bi_bao_ghi_am:
     it: À. {thanh_xin_nghi}. File "test_mic_trua_08". 47 phút. Tui nghe hết rồi. Test micro gì mà hát 11 bài.
 }
-* {son_moi_nguyen_khach_moi} [💬 "Anh {it}, nối sóng trực tiếp từ Đài Tivi Hóng về sân khấu Đêm Hồng được hông anh? Chia đôi màn hình."]
+* {son_moi_nguyen_khach_moi} [💬 "Anh {it}, nối sóng trực tiếp từ Đài Tivi Hóng về sân khấu Đại Nhạc Hội được hông anh? Chia đôi màn hình."]
     it: *(lần đầu quay hẳn ghế lại)* …Được. Cần đường truyền riêng. Cần đài đồng ý. Cần sếp không biết cho tới phút chót.
     { qh_it >= 40 || son_bi_bao_ghi_am:
         it: Tui làm. Không phải vì em. Vì 11 bài đó hay.
@@ -96,14 +96,14 @@ _Là {giam_doc}. Bạn chưa bao giờ xin nghỉ với {giam_doc}._
 # ngay:29 # gio:10:00 # noi:chong_bao_ve
 _Không mạng. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Ai cần nhắn ai thì viết giấy, {cho} ngậm đi giao (sai 50%). Chị {chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua"._
 _Anh {hr} ngồi ghế đẩu ở cổng, chấm công bằng tay. Video "16 năm" của {editor} kẹt ở 99%._
-chi_dai: *(bộ đàm)* {thanh_xin_nghi}! Lịch Đêm Hồng! Xe đón Siêu Nhân Hồng mấy giờ? Kẹo ở đâu? Pháo giấy ở đâu?
+chi_dai: *(bộ đàm)* {thanh_xin_nghi}! Lịch Đại Nhạc Hội! Xe đón Siêu Nhân Hồng mấy giờ? Kẹo ở đâu? Pháo giấy ở đâu?
 * [📅 Viết lịch chạy chương trình ra 5 tờ giấy, phát tận tay.]
     ~ uy_tin = uy_tin + 5
     ~ follow(5000)
     chi_dai: Được! Giấy tờ rõ ràng! Thằng này hôm nay đi làm đủ, giỏi!
     ~ qh("chi_dai", 5)
 * [🐕 Nhờ {cho} đưa lịch lên tầng 2.]
-    _{cho} ngậm lịch, chạy lên tầng 2, rồi chạy xuống gầm cầu thang. Lịch Đêm Hồng giờ nằm cạnh một chiếc găng tay hồng và một cái USB không nhãn._
+    _{cho} ngậm lịch, chạy lên tầng 2, rồi chạy xuống gầm cầu thang. Lịch Đại Nhạc Hội Siêu Nhân giờ nằm cạnh một chiếc găng tay hồng và một cái USB không nhãn._
     ~ cang_thang(5)
     ~ qh("cho", 3)
 - hr: *(từ cổng)* {thanh_xin_nghi}. Hôm nay em đi làm. Hiếm ghê. Anh ghi lại để mai đọc trong họp.
@@ -164,7 +164,7 @@ _Họp đánh giá cuối tháng. Phòng "Sáng Tạo". Anh {hr} đứng cạnh 
     hr: {thanh_xin_nghi}. *(nhìn bạn rất lâu)* Giọng em nghe quen quen.
     _Cả phòng không hiểu câu đó. Chỉ có bạn hiểu. Hoặc bạn tưởng mình hiểu._
 }
-giam_doc: {thanh_xin_nghi}, mai Đêm Hồng. Em là người giữ lịch. Em có gì muốn nói trước cả công ty không?
+giam_doc: {thanh_xin_nghi}, mai Đại Nhạc Hội. Em là người giữ lịch. Em có gì muốn nói trước cả công ty không?
 * [📝 Đặt lên bàn một lá đơn: "Đơn xin nghỉ việc. Lý do: đi hát."]
     ~ son_don_nghi_viec_that = true
     _Cả phòng im phăng phắc. Lần đầu tiên trong 31 lá đơn, lý do là thật._
@@ -172,7 +172,7 @@ giam_doc: {thanh_xin_nghi}, mai Đêm Hồng. Em là người giữ lịch. Em c
     { son_tu_thu_tuan:
         hr: Hát hay lắm anh. Em xác nhận. Phòng nhân sự xác nhận.
     }
-    giam_doc: Anh không ép… à. Lần này anh không ép thật. Em làm hết Đêm Hồng đã, rồi tính.
+    giam_doc: Anh không ép… à. Lần này anh không ép thật. Em làm hết Đại Nhạc Hội đã, rồi tính.
     ~ son_tin(20)
 * [📅 "Dạ, lịch mai em lo xong hết rồi ạ. Mọi người cứ tin em."]
     ~ uy_tin = uy_tin + 5
@@ -186,7 +186,7 @@ giam_doc: {thanh_xin_nghi}, mai Đêm Hồng. Em là người giữ lịch. Em c
 === thanh_xin_nghi_3010_dem_cuoi ===
 # ngay:30 # gio:22:00 # noi:nha_ven_do
 _Đêm cuối. Nhà vườn Ven Đô. Trên giường: bộ đồ kim tuyến. Trên bàn: cuốn lịch bìa hồng, mở trang 31/10._
-_"19:30: ĐÊM HỒNG HALLOWEEN." Góc trang, bút chì, nhỏ xíu: "20:00 – S.K.T."_
+_"19:30: ĐẠI NHẠC HỘI SIÊU NHÂN." Góc trang, bút chì, nhỏ xíu: "20:00 – S.K.T."_
 { not son_vao_chung_ket:
     _Dòng bút chì đó giờ không cần nữa. Bạn tẩy đi. Tẩy rất lâu._
     -> END
@@ -197,7 +197,7 @@ _"19:30: ĐÊM HỒNG HALLOWEEN." Góc trang, bút chì, nhỏ xíu: "20:00 – 
     quan_ly_idol: Muốn cả hai thì phải có người giúp. Anh giúp.
     ~ qh("quan_ly_idol", 5)
 * {son_moi_nguyen_khach_moi} [📞 Gọi anh Nguyên.]
-    sieu_nhan_hong: Đặc vụ! Mai anh đi khách mời rồi về Đêm Hồng! Anh có xe hồng! Xe hồng chạy nhanh lắm! *(rồi nhỏ giọng lại)* …Mà kẹt xe thì xe nào cũng như nhau ha.
+    sieu_nhan_hong: Đặc vụ! Mai anh đi khách mời rồi về Đại Nhạc Hội! Anh có xe hồng! Xe hồng chạy nhanh lắm! *(rồi nhỏ giọng lại)* …Mà kẹt xe thì xe nào cũng như nhau ha.
     ~ qh("sieu_nhan_hong", 5)
 * [🎤 Hát một mình cho bà ngoại trong ảnh nghe.]
     ~ son_mo(5)
@@ -208,7 +208,7 @@ _"19:30: ĐÊM HỒNG HALLOWEEN." Góc trang, bút chì, nhỏ xíu: "20:00 – 
 // ------------------------------------------------------------
 === thanh_xin_nghi_3110_sang ===
 # ngay:31 # gio:10:00 # noi:san_khau_dem_hong # bat_buoc
-_Thứ 7, 31/10. Sân khấu Đêm Hồng đang dựng. Cả công ty hóa trang Halloween. {giam_doc} thử bộ "Ông Kẹ Ngân Hàng". {cho} đội nơ hồng, mặt cau có._
+_Thứ 7, 31/10. Sân khấu Đại Nhạc Hội Siêu Nhân đang dựng. Cả công ty hóa trang Halloween. {giam_doc} thử bộ "Ông Kẹ Ngân Hàng". {cho} đội nơ hồng, mặt cau có._
 _Bạn đi một vòng sân khấu với cuốn lịch: xe đón 18:30, phim của {bien_kich} 19:30, video "16 năm" của {editor} 19:50, Siêu Nhân Hồng lên sân khấu 20:15._
 _20:15. Chung kết bắt đầu 20:00._
 thuc_tap_sinh: Dạ anh {thanh_xin_nghi}, em giúp được gì không ạ? Em rảnh cả ngày ạ!
@@ -223,7 +223,7 @@ thuc_tap_sinh: Dạ anh {thanh_xin_nghi}, em giúp được gì không ạ? Em r
 // ------------------------------------------------------------
 === thanh_xin_nghi_3110_1910 ===
 # ngay:31 # gio:19:10 # noi:san_khau_dem_hong # bat_buoc
-_19:10. Sân khấu Đêm Hồng đang chỉnh đèn. Pháo giấy hồng xếp sẵn. Khán giả đổ về._
+_19:10. Sân khấu Đại Nhạc Hội Siêu Nhân đang chỉnh đèn. Pháo giấy hồng xếp sẵn. Khán giả đổ về._
 { not son_vao_chung_ket:
     _Không có cuộc gọi nào từ đài. Không có sân khấu thứ hai. Chỉ có một sân khấu, và bạn là người giữ lịch._
     ~ son_chon_dem_31 = "o_lai"

@@ -82,7 +82,7 @@ Duy là "chân tay" của chiến dịch: việc nhỏ, nhưng không có ai là
 | Chạy theo Nguyên khi Nguyên bỏ ngang đi giúp người (6/10), quay lại bằng điện thoại | **+50.000** nếu clip đẹp | Duy quay dọc, rung tay. 🎲 Ngân có thể biến nó thành "chất thật" hoặc "quay như thực tập sinh" |
 | Đề xuất ý tưởng "24 Giờ Giúp Người" trong họp | **+70.000** nếu được duyệt | Cần dám nói trong họp (Độ Ngơ ≤ 60). Nếu Oánh nghe trước, ý tưởng lại thành của Oánh |
 | Nghe lời Hiếu "gửi giùm file poster bản này nè" | **−20.000** (file lỗi) | Duy không hề biết. Nếu sau này phát hiện, Lửa Đam Mê −20, quan hệ với {ran_doc} −50 |
-| 🔒 Thuyết phục ngân hàng cũ tài trợ "Thẻ Hồng" cho Đêm Hồng | **+80.000** + 300 triệu tài trợ | Chỉ khi Độ Lộ Thân Phận ≥ 60. Ai cũng biết Duy là ai từ đó |
+| 🔒 Thuyết phục ngân hàng cũ tài trợ "Thẻ Hồng" cho Đại Nhạc Hội Siêu Nhân | **+80.000** + 300 triệu tài trợ | Chỉ khi Độ Lộ Thân Phận ≥ 60. Ai cũng biết Duy là ai từ đó |
 
 ---
 
@@ -124,7 +124,7 @@ Duy là "chân tay" của chiến dịch: việc nhỏ, nhưng không có ai là
 ### Chương 6: "Hết Thực Tập" (28/10 – 31/10)
 - **29/10:** wifi sập. Cả công ty tê liệt. Duy (8 năm làm ngân hàng, từng trải qua 3 lần hệ thống sập ngày quyết toán) tổ chức lại toàn bộ công việc bằng giấy: sổ giao việc, phiếu chuyển file bằng USB, bảng tiến độ dán tường. Nếu Kinh Nghiệm ≥ 50, đây là ngày Duy tỏa sáng.
 - **30/10:** họp đánh giá. Ngày hết thực tập. Thắng, Nhật, Tuấn ngồi một hàng. Duy được giữ lại, hay được "cảm ơn vì đã đồng hành".
-- **31/10:** Đêm Hồng. Duy cầm tấm hắt sáng lần cuối, hoặc lần đầu tiên với tư cách nhân viên.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Duy cầm tấm hắt sáng lần cuối, hoặc lần đầu tiên với tư cách nhân viên.
 
 ---
 
@@ -214,11 +214,11 @@ Duy là "chân tay" của chiến dịch: việc nhỏ, nhưng không có ai là
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🎫 **Nhân Viên Chính Thức** | Kinh Nghiệm ≥ 60, Lửa Đam Mê ≥ 50, quan hệ với {truong_phong} ≥ 20, không bị lộ thân phận | Ngày 30/10, Tuấn đưa cho bạn một tờ giấy: hợp đồng chính thức, 13 triệu. Bạn đọc nguyên 8 trang (phản xạ nghề), rồi ký. Đêm Hồng, lần đầu tiên bạn đeo thẻ nhân viên màu cam. Bạn vẫn cầm tấm hắt sáng, vẫn "dạ anh dạ chị", nhưng lần này có người mới hơn bạn gọi bạn là "anh Duy" |
+| 1 | 😄 🎫 **Nhân Viên Chính Thức** | Kinh Nghiệm ≥ 60, Lửa Đam Mê ≥ 50, quan hệ với {truong_phong} ≥ 20, không bị lộ thân phận | Ngày 30/10, Tuấn đưa cho bạn một tờ giấy: hợp đồng chính thức, 13 triệu. Bạn đọc nguyên 8 trang (phản xạ nghề), rồi ký. Đại Nhạc Hội Siêu Nhân, lần đầu tiên bạn đeo thẻ nhân viên màu cam. Bạn vẫn cầm tấm hắt sáng, vẫn "dạ anh dạ chị", nhưng lần này có người mới hơn bạn gọi bạn là "anh Duy" |
 | 2 | 😄 🎬 **Tên Trên Màn Ảnh** | Đã đối chất với {bien_kich} về "Người Gác Két" (ở lửa trại hoặc riêng), quan hệ với {bien_kich} không dưới −20, Lửa Đam Mê ≥ 60 | Buổi chiếu phim ngắn ở Rạp Bắp Rang. Hết phim, dòng chữ chạy lên: *"Ý tưởng gốc: Duy. Kịch bản: Oánh."* Oánh ngồi cạnh, nói nhỏ: "Đây không phải đạo… à thôi, đây là đạo. Xin lỗi." Bạn chụp màn hình dòng chữ đó, đặt làm hình nền. 3 bạn cùng phòng ở Hẻm 69 vỗ tay to nhất rạp |
-| 3 | 😄 🔒 **Kết thúc bí mật: Người Gác Két** | Đã mở nhánh "Người Gác Két" ngày 22/10, Kinh Nghiệm ≥ 70, quan hệ với {giam_doc} ≥ 50, **từ chối** lời mời quay về ngân hàng ngày 25/10 | Bạn ngồi cùng Thắng ở ngân hàng cũ, gặp sếp cũ, đàm phán giãn nợ 2 năm cho căn biệt thự. Căn biệt thự được giữ lại, dù Đêm Hồng có ra sao. Thắng muốn đề bạt bạn làm Phó Giám đốc Tài chính. Bạn lắc đầu, đưa lại cái thẻ kim cương: *"Dạ em còn thực tập mà anh."* Từ hôm đó, cả công ty nghe Thắng gọi một thực tập sinh là "anh Duy". Không ai hiểu vì sao |
-| 4 | 😢 🏦 **Về Lại Ngân Hàng** | Lửa Đam Mê về 0 bất kỳ lúc nào, **hoặc** không được giữ lại sau 30/10 và đã nhận lời sếp cũ | Văn phòng kính tầng 15, Đồi Ngân Hàng. Bạn mặc lại vest, đeo lại kính gọng vàng. Tối 31/10, bạn xem Đêm Hồng trên Tóp-tóp, thấy ai đó đang cầm tấm hắt sáng chỗ bạn từng đứng. Có tiếng gõ cửa, một nhân viên mới rụt rè: "Dạ anh ơi, em mới vô nên chưa biết ạ." Bạn mỉm cười, giống hệt cách Hương từng cười với bạn |
-| 5 | 😢 🏧 **Cây ATM Biết Đi** | Độ Lộ Thân Phận đạt 100, đã cho mượn tiền từ 5 người trở lên | Cả công ty biết bạn từng là trưởng phòng ngân hàng. Không ai sai bạn photo nữa. Ai cũng gọi "anh Duy", ai cũng mời bạn đi ăn, rồi ai cũng có "việc gấp cần mượn chút". Chương mượn 200 triệu "đợt cuối". Tối 31/10, bạn ngồi một mình trong căn phòng ghép 4 người, nhìn cái tháp mì gói. Cả công ty đang ở Đêm Hồng. Không ai rủ bạn, vì sợ bạn đòi nợ |
+| 3 | 😄 🔒 **Kết thúc bí mật: Người Gác Két** | Đã mở nhánh "Người Gác Két" ngày 22/10, Kinh Nghiệm ≥ 70, quan hệ với {giam_doc} ≥ 50, **từ chối** lời mời quay về ngân hàng ngày 25/10 | Bạn ngồi cùng Thắng ở ngân hàng cũ, gặp sếp cũ, đàm phán giãn nợ 2 năm cho căn biệt thự. Căn biệt thự được giữ lại, dù Đại Nhạc Hội Siêu Nhân có ra sao. Thắng muốn đề bạt bạn làm Phó Giám đốc Tài chính. Bạn lắc đầu, đưa lại cái thẻ kim cương: *"Dạ em còn thực tập mà anh."* Từ hôm đó, cả công ty nghe Thắng gọi một thực tập sinh là "anh Duy". Không ai hiểu vì sao |
+| 4 | 😢 🏦 **Về Lại Ngân Hàng** | Lửa Đam Mê về 0 bất kỳ lúc nào, **hoặc** không được giữ lại sau 30/10 và đã nhận lời sếp cũ | Văn phòng kính tầng 15, Đồi Ngân Hàng. Bạn mặc lại vest, đeo lại kính gọng vàng. Tối 31/10, bạn xem Đại Nhạc Hội Siêu Nhân trên Tóp-tóp, thấy ai đó đang cầm tấm hắt sáng chỗ bạn từng đứng. Có tiếng gõ cửa, một nhân viên mới rụt rè: "Dạ anh ơi, em mới vô nên chưa biết ạ." Bạn mỉm cười, giống hệt cách Hương từng cười với bạn |
+| 5 | 😢 🏧 **Cây ATM Biết Đi** | Độ Lộ Thân Phận đạt 100, đã cho mượn tiền từ 5 người trở lên | Cả công ty biết bạn từng là trưởng phòng ngân hàng. Không ai sai bạn photo nữa. Ai cũng gọi "anh Duy", ai cũng mời bạn đi ăn, rồi ai cũng có "việc gấp cần mượn chút". Chương mượn 200 triệu "đợt cuối". Tối 31/10, bạn ngồi một mình trong căn phòng ghép 4 người, nhìn cái tháp mì gói. Cả công ty đang ở Đại Nhạc Hội Siêu Nhân. Không ai rủ bạn, vì sợ bạn đòi nợ |
 | 6 | 😢 💥 **Nổi Loạn Lỡ Đà** | Dùng "Nổi Loạn" quá 5 lần, quan hệ với {chi_dai} < 0, Uy tín < 30 | Họp giao ban 26/10, bạn đứng dậy, đọc to danh sách 47 việc vặt đã bị đẩy trong tháng, kể tên từng người. Cả phòng im phăng phắc. Bạn đúng, nhưng bạn nói theo cách khiến ai cũng thấy mình bị bêu riếu. Hương nhìn bạn, lần đầu không bênh. Ngày 30/10, bạn được "cảm ơn vì đã đồng hành". {cho} tiễn bạn ra cổng, ngậm theo chiếc bánh mì của bạn |
 
 ---

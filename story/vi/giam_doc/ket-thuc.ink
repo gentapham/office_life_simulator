@@ -1,7 +1,7 @@
 // ============================================================
 // GIÁM ĐỐC · SÁU KẾT THÚC
 // Đánh giá dựa trên kết quả họp đánh giá 30/10 và con số cuối cùng
-// sau Đêm Hồng, nên cảnh đánh giá chạy cuối ngày 31/10.
+// sau Đại Nhạc Hội Siêu Nhân, nên cảnh đánh giá chạy cuối ngày 31/10.
 // Thứ tự ưu tiên:
 //   1. Còn Mỗi Mình Sếp     (Hứa Lèo ≥ 5 và LL cướp Nguyên)
 //   2. Ghế Ai Người Nấy Ngồi (Nguy Cơ Lộ Nợ 100 hoặc Uy Quyền < 20)
@@ -51,7 +51,7 @@ _Bác {bac_bao_ve} đi lên tầng 2, tay cầm một phong bì dán kín. Bác 
 // ------------------------------------------------------------
 === giam_doc_kt_doanh_nhan_cua_nam ===
 # ket_thuc:doanh_nhan_cua_nam # loai:co_hau
-_Một triệu người theo dõi. Top 10 xu hướng. Pháo giấy hồng rơi đầy sân khấu Đêm Hồng, dính cả vào mặt nạ "Ông Kẹ Ngân Hàng" của bạn._
+_Một triệu người theo dõi. Top 10 xu hướng. Pháo giấy hồng rơi đầy sân khấu Đại Nhạc Hội Siêu Nhân, dính cả vào mặt nạ "Ông Kẹ Ngân Hàng" của bạn._
 _5 tỷ thưởng về tài khoản lúc 23:47. {ke_toan} nhắn: "Em chuyển trả ngân hàng rồi anh. Hết nợ."_
 _Bạn đọc tin đó bốn lần. Lần thứ tư mới tin._
 _Sáng 1/11. Ngân hàng Tín Dụng Đen Đủi. Cô nhân viên tín dụng đóng một con dấu đỏ lên tờ giấy thế chấp: "ĐÃ TẤT TOÁN"._
@@ -127,7 +127,7 @@ _Hai mươi người thả tim. Một người thả haha. Là {chua_te_deadline
 // ------------------------------------------------------------
 === giam_doc_kt_biet_thu_co_chu_moi ===
 # ket_thuc:biet_thu_co_chu_moi # loai:buon
-_Đêm Hồng kết thúc ở con số {nguoi_theo_doi}. Không đủ một triệu. Không vào top 10._
+_Đại Nhạc Hội Siêu Nhân kết thúc ở con số {nguoi_theo_doi}. Không đủ một triệu. Không vào top 10._
 _Trang 47 có hiệu lực. Mười tỷ. {ke_toan} gửi bạn bảng tính lúc 1 giờ sáng, không kèm một chữ nào._
 _Ngày 15/11. Ngân hàng Tín Dụng Đen Đủi dán một tờ thông báo lên cổng sắt biệt thự số 1, Đồi Ngân Hàng. Băng keo trong, bốn góc, rất ngay ngắn._
 _Bạn đi một vòng trong nhà lần cuối. Sân golf mini cỏ mọc tới đầu gối. Bàn ăn 10 ghế. Bức tường ảnh._
@@ -192,7 +192,7 @@ _Bạn gạch dòng đó đi. Rồi viết lại, nắn nót hơn._
 _Đêm 31/10. Văn phòng tầng 2. Đèn tắt hết, chỉ còn đèn bàn phòng giám đốc._
 _Bạn ngồi một mình. Ghế của {thanh_ninh} trống. Bàn của {hong_hot} trống, ring light đã tháo đi. Phòng kế toán khóa._
 _Mỗi ngày từ 26/10, có một người nộp đơn. Lời hứa nào của bạn cũng là một tờ đơn._
-_Qua vách kính, phía bên kia thành phố, tòa nhà xanh lá chuối của LL-Entertainment bắn pháo hoa Đêm Hồng. Màu hồng. Rồi màu xanh. Rồi màu hồng._
+_Qua vách kính, phía bên kia thành phố, tòa nhà xanh lá chuối của LL-Entertainment bắn pháo hoa Đại Nhạc Hội Siêu Nhân. Màu hồng. Rồi màu xanh. Rồi màu hồng._
 _Trên màn hình lớn của tòa nhà kia, {sieu_nhan_hong} đang tạo dáng. Bên dưới là dòng chữ "LL Presents"._
 _Bạn mở group Zalo-lô "{cong_ty} - Toàn công ty". Thành viên: 2._
 _{giam_doc}. Và Bác {bac_bao_ve}._

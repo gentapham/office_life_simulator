@@ -100,7 +100,7 @@ function renderHome() {
       dauTrang(),
       h("section", { class: "gioi-thieu" },
         h("h1", {}, "Chọn vai của bạn"),
-        h("p", {}, "G-Entertainment, tháng 10/2026. Cả công ty có 31 ngày để đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đêm Hồng Halloween."),
+        h("p", {}, "G-Entertainment, tháng 10/2026. Cả công ty có 31 ngày để đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đại Nhạc Hội Siêu Nhân."),
         h("div", { class: "nhan-nho" }, h("span", { class: "nhan-16" }, "16+"), h("span", {}, "23 vai"), h("span", {}, "6 kết thúc mỗi vai"), h("span", {}, "Tự lưu trên trình duyệt"))),
       nvSave ? h("div", { class: "choi-do", style: `--mau:${nvSave.mau}` },
         anhVai(nvSave, "nho"),
@@ -114,7 +114,7 @@ function renderHome() {
           h("div", { class: "the-vai-tt" }, h("b", {}, n.vai), h("small", {}, n.chuc), h("p", {}, n.cau)))),
         h("button", { class: "the-vai the-chung", onclick: () => openChung() },
           h("div", { class: "anh-vai" }, h("span", { class: "anh-vai-chu" }, "+")),
-          h("div", { class: "the-vai-tt" }, h("b", {}, "Nội dung chung"), h("small", {}, "Sự kiện, tin đồn, Đêm Hồng"), h("p", {}, "Đọc các cảnh dùng chung cho mọi vai.")))),
+          h("div", { class: "the-vai-tt" }, h("b", {}, "Nội dung chung"), h("small", {}, "Sự kiện, tin đồn, Đại Nhạc Hội Siêu Nhân"), h("p", {}, "Đọc các cảnh dùng chung cho mọi vai.")))),
     ),
   );
   napChanDung();
@@ -345,7 +345,7 @@ function renderIntro(body) {
     h("div", { class: "log" },
       h("p", { class: "narr" }, `Bạn sẽ sống 31 ngày trong vai ${n.vai} ${L.v(L.ma) || n.ten}. Mỗi ngày có các cảnh chính theo giờ. Hết cảnh trong ngày, bạn có thể nói chuyện thêm với đồng nghiệp rồi đi ngủ.`),
       h("p", { class: "narr" }, `Nhân vật này có ${L.knots.length} cảnh (${chinh} cảnh gắn ngày).`),
-      h("p", { class: "narr" }, "Tối 31/10 là Đêm Hồng: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
+      h("p", { class: "narr" }, "Tối 31/10 là Đại Nhạc Hội Siêu Nhân: hiện kết thúc của nhân vật, rồi kết thúc sự nghiệp của Siêu Nhân Hồng."),
     ),
     h("div", { class: "choices" },
       h("button", { class: "choice", onclick: () => { saveWrite(null); L.batDauNgay(1); render3D(); } }, `Bắt đầu ${ngayDayDu(1)}`),
@@ -555,7 +555,7 @@ function dayEnd() {
   );
 }
 
-// ---------- Đêm Hồng & kết thúc ----------
+// ---------- Đại Nhạc Hội Siêu Nhân & kết thúc ----------
 function dongBo(tu, den) {
   for (const name of META.sharedVars) {
     try { const val = tu.variablesState[name]; if (val !== undefined && typeof val !== "object") den.variablesState[name] = val; } catch {}
@@ -563,11 +563,11 @@ function dongBo(tu, den) {
 }
 
 async function finale() {
-  UI.choices.replaceChildren(h("p", { class: "hint" }, "Đang dựng sân khấu Đêm Hồng…"));
+  UI.choices.replaceChildren(h("p", { class: "hint" }, "Đang dựng sân khấu Đại Nhạc Hội Siêu Nhân…"));
   const chung = new Story(await loadStoryJson("chung"));
   dongBo(L.story, chung);
   chung.variablesState["vai"] = L.ma;
-  addSys("19:30 · Sân khấu Đêm Hồng");
+  addSys("19:30 · Sân khấu Đại Nhạc Hội Siêu Nhân");
   updateDayline("19:30", "san_khau_dem_hong");
   chung.ChoosePathString("chung_3110_dem_hong");
   runStory(chung, L.ma, () => {
@@ -769,7 +769,7 @@ async function render3D() {
   };
   dayEnd3D = () => {
     saveWrite(L.toSave());
-    if (L.ngay >= 31) { moHoiThoai("Đêm Hồng Halloween"); finale(); return; }
+    if (L.ngay >= 31) { moHoiThoai("Đại Nhạc Hội Siêu Nhân"); finale(); return; }
     dongHoiThoai();
     datGioTT(18, 30);
     updateDayline("18:30", null);
@@ -930,7 +930,7 @@ async function openChung() {
   await loadStoryJson("chung");
   const knots = META.roles.chung.knots;
   const body = h("div", {});
-  const nhom = { "Mở đầu & hướng dẫn": k => /mo_dau|0110_huong_dan/.test(k), "Sự kiện ngẫu nhiên": k => /_nn_/.test(k), "Tin đồn": k => /_td_/.test(k), "Nói vu vơ": k => /_nc_/.test(k), "Đêm Hồng & kết thúc": k => /3110|_kt_/.test(k) };
+  const nhom = { "Mở đầu & hướng dẫn": k => /mo_dau|0110_huong_dan/.test(k), "Sự kiện ngẫu nhiên": k => /_nn_/.test(k), "Tin đồn": k => /_td_/.test(k), "Nói vu vơ": k => /_nc_/.test(k), "Đại Nhạc Hội Siêu Nhân & kết thúc": k => /3110|_kt_/.test(k) };
   app.replaceChildren(h("div", { class: "wrap" },
     h("header", { class: "top" },
       h("div", { class: "role-head" }, h("div", {}, h("h2", {}, "Nội dung chung"), h("p", {}, "Dùng cho mọi nhân vật. Đọc với vai mặc định là Hiếu."))),

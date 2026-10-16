@@ -8,7 +8,7 @@
 
 // ------------------------------------------------------------
 // Chốt kết thúc. Kết thúc của nhân vật được quyết định theo
-// trạng thái họp đánh giá 30/10, cộng lựa chọn ở cánh gà Đêm Hồng.
+// trạng thái họp đánh giá 30/10, cộng lựa chọn ở cánh gà Đại Nhạc Hội Siêu Nhân.
 // Cảnh này chạy sau cảnh cuối của đêm 31/10.
 // Thứ tự ưu tiên: Lạc Ở Vũng Tàu → Gửi Về Vườn → Kho Báu Công Lý
 // → Hòa Bình Hồng → Linh Vật Chính Thức → Kho Báu Bị Dọn.
@@ -103,7 +103,7 @@ _Như vậy là đủ._
 // 😄 🌸 3. HÒA BÌNH HỒNG
 === cho_kt_hoa_binh_hong ===
 # ket_thuc:hoa_binh_hong # loai:co_hau
-_23 giờ, đêm 31/10. Cổng công ty vắng sau Đêm Hồng. Đèn đường vàng. Bóng bay hồng xẹp lăn theo gió._
+_23 giờ, đêm 31/10. Cổng công ty vắng sau Đại Nhạc Hội Siêu Nhân. Đèn đường vàng. Bóng bay hồng xẹp lăn theo gió._
 _Trên bậc thềm cổng, một người ngồi. Đồ hồng, áo choàng rách một góc. Không đội mũ. Cái mũ để bên cạnh, úp xuống._
 _Bác đã vào chòi. Bác luôn biết lúc nào nên đi vào._
 _Bạn đi ra. Chậm. Không sủa. Không gầm gừ._

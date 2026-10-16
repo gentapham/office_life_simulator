@@ -105,7 +105,7 @@ _Một tập đoàn không có thật sắp lên sóng trực tiếp. Và logo c
     -> designer_mg_deal_ma_mo_dau
 * [💬 "Huyền. Hay mình dừng ở đây? Chị sợ."]
     sales: *(im rất lâu)* Em cũng sợ chị. Nhưng giờ dừng là sếp hỏi 2 tỷ đâu.
-    sales: Qua Đêm Hồng, em sẽ nói thật. Em hứa. Lần này hông phải "tin chị đi". Là "tin em đi".
+    sales: Qua Đại Nhạc Hội, em sẽ nói thật. Em hứa. Lần này hông phải "tin chị đi". Là "tin em đi".
     ~ qh("sales", 10)
     _Bạn làm danh thiếp, nhưng không làm backdrop. Ít một món là ít một tội._
 * [😇 "Chị không làm nữa. Em tự lo nha."]
@@ -329,7 +329,7 @@ _Tập hồ sơ rơi xuống sàn. Giấy bay tứ tung. Lưu Lực lùi một b
 chi_dai: *(nhướng mày)* Ủa, ổng bị gì vậy?
 _Một tờ giấy bay tới chân bạn. Là trang thiết kế màn hình LED, có logo Hồng Ngoại._
 * [🔍 Nhặt lên, đọc kỹ.]
-    _Kế hoạch: đêm 31/10, màn hình LED khổng lồ trên tòa LL sẽ chạy bộ nhận diện Hồng Ngoại, đúng giờ Đêm Hồng mở màn. Đối diện sân khấu._
+    _Kế hoạch: đêm 31/10, màn hình LED khổng lồ trên tòa LL sẽ chạy bộ nhận diện Hồng Ngoại, đúng giờ Đại Nhạc Hội Siêu Nhân mở màn. Đối diện sân khấu._
     ~ ds_cam(10)
     ~ cang_thang(5)
 * [🤝 Nhặt hết, đưa cho {chi_dai}.]
@@ -341,7 +341,7 @@ _Một tờ giấy bay tới chân bạn. Là trang thiết kế màn hình LED,
 === designer_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:16:00 # noi:ban_sales
 _16 giờ. {sales} đứng giữa văn phòng, cầm điện thoại, mặt trắng bệch._
-sales: Mọi người… Sữa Chua Hồng Hào vừa gọi. Ở Ven Đô. Họ muốn tài trợ Đêm Hồng 1 tỷ.
+sales: Mọi người… Sữa Chua Hồng Hào vừa gọi. Ở Ven Đô. Họ muốn tài trợ Đại Nhạc Hội 1 tỷ.
 hong_hot: Ủa alo? Thôi {sales} ơi, tháng này em kể 7 nhà tài trợ rồi đó.
 _Cả phòng cười. {sales} không cười. {sales} quay sang bạn. Ánh mắt đó không có chữ "chắc kèo". Chỉ có sợ._
 * [🤝 "Chị tin. Bật loa ngoài gọi lại đi em."]

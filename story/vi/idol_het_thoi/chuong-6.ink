@@ -18,13 +18,13 @@
 
 = moi_song_ca
 _Phòng chờ. {sieu_nhan_hong} ngồi một mình, đã tháo mũ. Lần đầu tiên bạn thấy mặt thật: một anh chàng bình thường, mắt hơi sưng, tóc bết mồ hôi._
-sieu_nhan_hong: *(giọng nhỏ, rụt rè)* Dạ… anh {idol_het_thoi}… em muốn hỏi… Đêm Hồng anh hát chung với em bài "Công Viên" được hông? Em hát dở lắm. Mà em thích bài đó thiệt.
+sieu_nhan_hong: *(giọng nhỏ, rụt rè)* Dạ… anh {idol_het_thoi}… em muốn hỏi… Đại Nhạc Hội anh hát chung với em bài "Công Viên" được hông? Em hát dở lắm. Mà em thích bài đó thiệt.
 * [😎 "Anh hát chính, em đứng bè."]
     sieu_nhan_hong: Dạ! Dạ được! Em đứng bè!
     ~ phat_song_ca = true
     ~ phat_tt(10)
     ~ qh("sieu_nhan_hong", 5)
-    quan_ly_idol: *(đứng ở cửa từ lúc nào)* {idol_het_thoi}… Đêm Hồng là show của Nguyên mà em…
+    quan_ly_idol: *(đứng ở cửa từ lúc nào)* {idol_het_thoi}… Đại Nhạc Hội là show của Nguyên mà em…
 * [🎶 "Hát chung. Mỗi người một nửa. Mà em phải nhớ là CHUỐI chiên."]
     sieu_nhan_hong: *(bật cười, dụi mắt)* Chuối chiên! Em nhớ rồi! Em viết lên tay luôn!
     _Nguyên lấy bút bi viết lên mu bàn tay trái, ngay cạnh vết sẹo nhỏ: "CHUỐI"._
@@ -269,7 +269,7 @@ giam_doc: {idol_het_thoi}. Anh hỏi em một câu thôi. Em muốn ở lại đ
 // ------------------------------------------------------------
 === idol_het_thoi_3010_dem_cuoi ===
 # ngay:30 # gio:22:00 # noi:can_1808
-_Đêm trước Đêm Hồng. Bạn ngồi trên sàn căn 1808. Bốn bức tường vẫn là poster năm 2015. Trên bàn: hóa đơn, thông báo nợ, cuốn sổ có bài hát mới._
+_Đêm trước Đại Nhạc Hội Siêu Nhân. Bạn ngồi trên sàn căn 1808. Bốn bức tường vẫn là poster năm 2015. Trên bàn: hóa đơn, thông báo nợ, cuốn sổ có bài hát mới._
 _Tiền Nợ còn: {phat_no} đồng._
 _22:00. Anh {giam_doc} nhắn group như mọi tối: "Mai cả nhà mình cháy hết mình nhé. Anh không ép, tùy các em."_
 * {tien >= phat_no and phat_no > 0} [💸 Chuyển khoản trả hết nợ, một lần.]
@@ -292,7 +292,7 @@ _22:00. Anh {giam_doc} nhắn group như mọi tối: "Mai cả nhà mình cháy
 // ------------------------------------------------------------
 === idol_het_thoi_3110_hau_truong ===
 # ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
-_Sân khấu Đêm Hồng, Phường Tân Drama. Hậu trường ồn như chợ. Cả công ty hóa trang Halloween. {giam_doc} mặc đồ "Ông Kẹ Ngân Hàng", không ai dám cười._
+_Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Hậu trường ồn như chợ. Cả công ty hóa trang Halloween. {giam_doc} mặc đồ "Ông Kẹ Ngân Hàng", không ai dám cười._
 { phat_song_ca and phat_nguoi_remix != "" and qh_sieu_nhan_hong >= 50:
     ~ phat_vai_dem_hong = "song_ca"
     _Danh sách tiết mục: số 3, "Công Viên Hồng", {sieu_nhan_hong} và {idol_het_thoi}. Tên bạn in cùng cỡ chữ với tên Nguyên._
@@ -328,7 +328,7 @@ _Sau cánh gà, dây micro của {sieu_nhan_hong} nằm ngay dưới chân bạn
 // ------------------------------------------------------------
 === idol_het_thoi_3110_dem_hong ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đêm Hồng Halloween bắt đầu. Phim ngắn "Người Hùng Không Tên" mở màn, rồi video "16 năm" của {editor}. Năm nghìn người ngồi kín bãi. Cùng giờ, ở Đài Tivi Hóng, chung kết "Giọng Ca Ước Mơ" chuẩn bị lên sóng._
+_19 giờ 30. Đại Nhạc Hội Siêu Nhân bắt đầu. Phim ngắn "Người Hùng Không Tên" mở màn, rồi video "16 năm" của {editor}. Năm nghìn người ngồi kín bãi. Cùng giờ, ở Đài Tivi Hóng, chung kết "Giọng Ca Ước Mơ" chuẩn bị lên sóng._
 { phat_vai_dem_hong:
 - "song_ca":
     -> song_ca

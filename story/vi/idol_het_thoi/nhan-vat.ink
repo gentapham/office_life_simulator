@@ -346,7 +346,7 @@ sales: Anh {idol_het_thoi}! Tin chị đi, chị book cho anh show 50 triệu b�
 * [💬 "Show ở đâu, ngày nào, ai là đầu mối?"]
     sales: *(cười tươi, nhìn đi chỗ khác)* Để tối nay chị nhậu với bên đó rồi báo anh.
     ~ qh("sales", -3)
-- sales: Mà anh nè… Đêm Hồng chị lỡ hứa mời "ca sĩ nổi tiếng nhất nước". Anh có quen ai hông?
+- sales: Mà anh nè… Đại Nhạc Hội chị lỡ hứa mời "ca sĩ nổi tiếng nhất nước". Anh có quen ai hông?
 * [🎤 "Có. Em đang nói chuyện với người đó."]
     sales: *(nhìn bạn hai giây)* … Được! Chị chốt anh! Tin chị đi!
     ~ qh("sales", 8)

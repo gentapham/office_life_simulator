@@ -364,7 +364,7 @@ _14 giờ. Trailer "Người Hùng Không Tên" lên fanpage. Dòng cuối: "Bi�
 === thuc_tap_sinh_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:16:30 # noi:tang_1 # bat_buoc
 _16 giờ 30. {sales} chạy vào tầng 1, mặt trắng bệch, điện thoại trên tay._
-sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Ở Ven Đô! Họ muốn tài trợ 1 tỷ cho Đêm Hồng! Thiệt đó! No cap!
+sales: Mấy người! Sữa Chua Hồng Hào gọi tui! Ở Ven Đô! Họ muốn tài trợ 1 tỷ cho Đại Nhạc Hội! Thiệt đó! No cap!
 _Cả phòng cười. {hong_hot} cười to nhất. {dan_dau_tu} nói "lần này là lên thật hả". Không ai tin. {sales} đứng giữa phòng, lần đầu tiên nói thật, và không ai tin._
 _Bạn nhìn màn hình điện thoại của {sales}. Số máy bàn, đầu số khu Ven Đô. Cuộc gọi dài 14 phút. Theo kinh nghiệm thẩm định, người lừa đảo không bao giờ gọi từ máy bàn._
 * [🧮 "Dạ chị cho em số, em gọi xác nhận ạ." (bật loa ngoài)]

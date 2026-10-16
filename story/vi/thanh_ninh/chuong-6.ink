@@ -177,7 +177,7 @@ _Thanh "Sếp gọi ai" trên điện thoại bạn: {thanh_ninh} {tn_sep_goi_nh
     ~ tn_ninh(-5)
 }
 _Sau họp, sếp gọi bạn vào phòng. Cửa đóng. Sếp nhìn ra cửa sổ, phía tòa nhà kính xanh lá chuối ở xa._
-giam_doc: {thanh_ninh}. Mai Đêm Hồng. Nếu không đạt… anh không biết nói với anh Genta thế nào.
+giam_doc: {thanh_ninh}. Mai Đại Nhạc Hội. Nếu không đạt… anh không biết nói với anh Genta thế nào.
 * [🙇 "Dạ anh nói chuẩn quá anh ơi, mình chắc chắn đạt mà anh!"]
     ~ tn_khen()
     giam_doc: … Ừ.
@@ -203,7 +203,7 @@ giam_doc: {thanh_ninh}. Mai Đêm Hồng. Nếu không đạt… anh không bi�
 // ------------------------------------------------------------
 === thanh_ninh_3110_hoa_trang ===
 # ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu ở Phường Tân Drama. Sếp hóa trang "Ông Kẹ Ngân Hàng" do {designer} chọn: vest, cà vạt in hình tờ tiền, một xấp giấy báo nợ giả dán quanh người._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu ở Phường Tân Drama. Sếp hóa trang "Ông Kẹ Ngân Hàng" do {designer} chọn: vest, cà vạt in hình tờ tiền, một xấp giấy báo nợ giả dán quanh người._
 _Không ai dám nói với sếp đó là trò đùa. Sếp tưởng là "concept tài chính"._
 giam_doc: {thanh_ninh}, anh nhìn thế nào?
 * [🙇 "Dạ anh như ông trùm tài chính quốc tế luôn anh!"]

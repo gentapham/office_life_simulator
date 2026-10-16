@@ -149,7 +149,7 @@ _Cả phòng gật gù. Chỉ có bạn giơ tay._
     bien_kich: *(liếc sổ bạn)* Con mèo này có nỗi đau. Cho tui mượn làm nhân vật nha.
     ~ qh("bien_kich", -3)
 - _Giữa buổi, {thuc_tap_sinh} rụt rè kể một ý tưởng phim về người gác két ngân hàng. {bien_kich} ghi chép rất chăm._
-sales: *(đứng bật dậy)* Tin chị đi! Chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đêm Hồng!
+sales: *(đứng bật dậy)* Tin chị đi! Chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đại Nhạc Hội!
 giam_doc: Tuyệt vời! Mọi người vỗ tay cho {sales}!
 _{ke_toan} lặng lẽ ghi vào sổ: "2 tỷ. {sales}. Chưa có hóa đơn."_
 _{sales} ngồi xuống, đá chân bạn dưới gầm bàn hai cái. Mật mã của hai đứa: "Tối nay có việc."_

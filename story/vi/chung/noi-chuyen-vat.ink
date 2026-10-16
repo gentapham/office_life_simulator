@@ -1089,7 +1089,7 @@
 - r == 1 && ngay == 27:
     bien_kich: Trailer ra rồi. Tên tui hiện to ghê. To quá. {G} thấy… có to quá hông?
 - r == 1 && ngay == 30:
-    bien_kich: Mai chiếu mở màn Đêm Hồng. Tui chưa chốt dòng chữ cuối phim. Một dòng thôi mà khó.
+    bien_kich: Mai chiếu mở màn Đại Nhạc Hội. Tui chưa chốt dòng chữ cuối phim. Một dòng thôi mà khó.
 - r == 1 && (ngay == 17 || ngay == 18):
     bien_kich: Có ai thấy cuốn sổ bìa da của tui hông? Rơi trên xe. Trong đó… toàn ghi chú thời tiết.
 - r == 2 && stress >= 70:
@@ -1247,7 +1247,7 @@
 - r == 1 && ngay == 20:
     designer: Logo 16 năm. Sửa lần thứ 38. Cuối cùng chọn lại logo gốc 2010. Tui hông nói gì. Tui hết nói nổi.
 - r == 1 && ngay >= 28 && ngay <= 30:
-    designer: Backdrop Đêm Hồng, standee, vé mời. Một ngày. Tui là designer hay là phép màu?
+    designer: Backdrop Đại Nhạc Hội, standee, vé mời. Một ngày. Tui là designer hay là phép màu?
 - r == 2 && stress >= 70:
     designer: Stress hả? Tui hiểu. Ngồi đây, tui chỉ {g} vẽ một vòng tròn. Vẽ vòng tròn giảm stress lắm.
 - r == 4:
@@ -1401,7 +1401,7 @@
 - vai == "ke_toan" && r <= 2:
     chi_dai: Bà lại không ngủ hả? Mắt bà thâm như mắt {editor} rồi. Nói chị nghe, chuyện gì?
 - vai == "giam_doc" && r <= 2:
-    chi_dai: Sếp. Ngân sách Đêm Hồng. Em hỏi lần cuối. "Tùy em" là bao nhiêu tiền?
+    chi_dai: Sếp. Ngân sách Đại Nhạc Hội. Em hỏi lần cuối. "Tùy em" là bao nhiêu tiền?
 - r == 1 && ngay == 4:
     chi_dai: Tắm cho {cho} xong rồi. Nó chỉ cho {x} tắm thôi. Người khác thì nó cắn.
 - r == 1 && ngay == 15:
@@ -1418,7 +1418,7 @@
     { shuffle:
     - chi_dai: Cái xăm con hổ hả? Kỷ niệm thời trẻ. Đừng hỏi.
     - chi_dai: Ai mà dám bắt nạt người mới thì nhớ mặt chị.
-    - chi_dai: Đêm Hồng mà sập là chị không tha cho ai. Kể cả cái loa.
+    - chi_dai: Đại Nhạc Hội mà sập là chị không tha cho ai. Kể cả cái loa.
     - chi_dai: Đứa nào làm em khóc, chỉ mặt chị.
     - chi_dai: Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
     - chi_dai: Nói một là một. Hỏi lại là hai.
@@ -1560,7 +1560,7 @@
 - r == 1 && ngay == 25:
     thanh_xin_nghi: Tối nay {x} có… việc. Việc gia đình. Nhà {x} có tivi. Đừng coi kênh Tivi Hóng nha.
 - r == 1 && ngay >= 30:
-    thanh_xin_nghi: Mai 8 giờ tối {x} bận. Bận lắm. Đêm Hồng hả? {X}… {X} tới sau. Hoặc coi qua tivi.
+    thanh_xin_nghi: Mai 8 giờ tối {x} bận. Bận lắm. Đại Nhạc Hội hả? {X}… {X} tới sau. Hoặc coi qua tivi.
 - r == 2 && stress >= 70:
     thanh_xin_nghi: Mệt quá thì xin nghỉ đi. {X} chỉ cho. Bí quyết là: đừng xài bà ngoại, bà ngoại {x} giữ bản quyền.
 - r == 4:

@@ -56,7 +56,7 @@ _Bánh chuối chiên. Truyền bằng miệng. Bạn sinh ra là để chơi tr
 _{giam_doc} uống nhiều. Rồi đứng lên ghế, hét một câu, và cả bàn hò reo, và rất nhiều điện thoại giơ lên quay._
 giam_doc: Bla bla bla bla! Bla bla… bla bla bla! # phu_de:Anh hứa! Tháng sau tăng lương cả công ty! Anh không ép, tùy các em, nhưng tăng!
 _{sales} cũng đứng lên ghế._
-sales: Bla bla bla bla bla! # phu_de:Còn chị hứa mời ca sĩ nổi tiếng nhất nước về hát Đêm Hồng! Tin chị đi!
+sales: Bla bla bla bla bla! # phu_de:Còn chị hứa mời ca sĩ nổi tiếng nhất nước về hát Đại Nhạc Hội! Tin chị đi!
 _Bạn không hiểu. Nhưng bạn thấy {ke_toan} ôm đầu. Thường thì người ôm đầu là người hiểu nhất._
 -> END
 

@@ -15,9 +15,9 @@ Thực tế, Huyền chưa ký hợp đồng nào quá 50 triệu. **KPI trên g
 
 Huyền thuê căn 1203 ở Sky Ảo vì "khách hàng hay hỏi chị ở đâu". Nội thất toàn đồ trưng, tủ lạnh trống trơn, Huyền sống bằng mì gói và tiệc của khách. Trong ngăn bàn là bản hợp đồng tài trợ "ma" với **Tập đoàn Bánh Tráng Trộn Toàn Cầu (BTT Global)**, chủ tịch **Mr. Kevin Trộn**, một công ty không tồn tại.
 
-### Động cơ: phải có nhà tài trợ trước Đêm Hồng
-- Ngày 2/10, giữa cuộc họp chiến dịch, Huyền đứng dậy tuyên bố: *"Tin chị đi, chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đêm Hồng!"*. Thắng vỗ tay. Thương ghi vào sổ.
-- Từ đó, cả công ty tính 2 tỷ của Huyền vào ngân sách Đêm Hồng. **Huyền phải biến lời phét thành thật**, hoặc giấu cho tới khi không giấu được nữa.
+### Động cơ: phải có nhà tài trợ trước Đại Nhạc Hội Siêu Nhân
+- Ngày 2/10, giữa cuộc họp chiến dịch, Huyền đứng dậy tuyên bố: *"Tin chị đi, chị lo 3 nhà tài trợ, tổng 2 tỷ, trước Đại Nhạc Hội Siêu Nhân!"*. Thắng vỗ tay. Thương ghi vào sổ.
+- Từ đó, cả công ty tính 2 tỷ của Huyền vào ngân sách Đại Nhạc Hội Siêu Nhân. **Huyền phải biến lời phét thành thật**, hoặc giấu cho tới khi không giấu được nữa.
 - Đồng minh: **Quỳnh**. Quỳnh làm hồ sơ xịn xò cho deal ma, Huyền giữ bí mật vụ Quỳnh làm cho LL. Ai động vào một người là đụng cả hai.
 - Con nợ: **Chương** nợ Huyền 5 triệu từ tháng 6, vẫn hứa "tuần sau lên thật, trả em gấp đôi".
 
@@ -72,14 +72,14 @@ Huyền phải "chạy số" mỗi ngày. Làm thật thì mệt, làm phét th�
 
 ## 5. Vai trò với chiến dịch Siêu Nhân Hồng
 
-Huyền mang **tiền và độ phủ** cho chiến dịch: nhà tài trợ là tiền tổ chức Đêm Hồng, và logo nhà tài trợ là thêm khán giả từ tệp khách của họ.
+Huyền mang **tiền và độ phủ** cho chiến dịch: nhà tài trợ là tiền tổ chức Đại Nhạc Hội Siêu Nhân, và logo nhà tài trợ là thêm khán giả từ tệp khách của họ.
 
 | Đóng góp (hoặc phá) | Ảnh hưởng tới Độ Nổi Tiếng | Ghi chú |
 |---|---|---|
 | Bán gói tài trợ nhỏ cho quán trong quận | +5.000 mỗi quán (khách của quán theo dõi Nguyên) | Nguyên phải ăn thử ốc trước máy quay, Tuất ở gần thì loạn |
 | Deal ma BTT Global được công bố | +30.000 ngay (tin "tập đoàn lớn tài trợ" lên báo) | Bong Bóng Phét +30. Nếu bị lộ: −80.000 và scandal "Siêu Nhân Hồng dính nhà tài trợ ma" |
-| Hứa bừa "mời ca sĩ nổi tiếng nhất nước" về Đêm Hồng | +20.000 vì tò mò | Tới 31/10 không có ca sĩ: −50.000. Trừ khi kéo được Phát lên hát "Công Viên" bản remix |
-| Deal thật với **Sữa Chua Hồng Hào** | +100.000, và ngân sách Đêm Hồng đủ dựng sân khấu lớn | Chỉ mở được nếu Huyền tin cuộc gọi ngày 27/10 là thật |
+| Hứa bừa "mời ca sĩ nổi tiếng nhất nước" về Đại Nhạc Hội Siêu Nhân | +20.000 vì tò mò | Tới 31/10 không có ca sĩ: −50.000. Trừ khi kéo được Phát lên hát "Công Viên" bản remix |
+| Deal thật với **Sữa Chua Hồng Hào** | +100.000, và ngân sách Đại Nhạc Hội Siêu Nhân đủ dựng sân khấu lớn | Chỉ mở được nếu Huyền tin cuộc gọi ngày 27/10 là thật |
 | Nói phét quá đà với báo chí | Scandal: có thể làm Nguyên **nổi hơn** hoặc **bị tẩy chay** | Không kiểm soát được |
 
 ---
@@ -99,12 +99,12 @@ Huyền mang **tiền và độ phủ** cho chiến dịch: nhà tài trợ là 
 - **14/10 (Mốc 2):** Thương hỏi lần đầu tiên: *"Hợp đồng BTT Global bản gốc đâu em? Chị cần để hạch toán."*
 
 ### Chương 3: "Gói Mì Trong Bóng Tối" (15/10 – 16/10)
-- **15/10 (mất điện):** cả công ty ngồi pantry. Trong bóng tối, Huyền ngồi gần Thương và Hương, nghe thấy **điều khoản hoàn tiền 10 tỷ**. Lần đầu tiên Huyền thấy 2 tỷ của mình không còn là chuyện đùa: nếu không có nhà tài trợ thật, Đêm Hồng có thể không đủ tiền dựng sân khấu.
+- **15/10 (mất điện):** cả công ty ngồi pantry. Trong bóng tối, Huyền ngồi gần Thương và Hương, nghe thấy **điều khoản hoàn tiền 10 tỷ**. Lần đầu tiên Huyền thấy 2 tỷ của mình không còn là chuyện đùa: nếu không có nhà tài trợ thật, Đại Nhạc Hội Siêu Nhân có thể không đủ tiền dựng sân khấu.
 - Mất điện thì không ai thấy mặt ai. Huyền thử **nói thật** lần đầu, với Duy: *"Thật ra chị… em chưa ký được ai hết."*. Duy nói: *"Dạ em cũng có bí mật nè chị…"* (mở đường biết bí mật cựu trưởng phòng ngân hàng của Duy).
 - **16/10:** gameshow ở Đài Tivi Hóng. Huyền đã bán cho Tiệm Nail Lung Linh một suất "logo trên bục". Nhưng bục bị đổi chỗ. Huyền phải thuyết phục đạo diễn chương trình trong 10 phút. Liên hoan buffet ở công ty: Huyền gói đồ ăn mang về cho tủ lạnh căn 1203.
 
 ### Chương 4: "Vũng Tàu Hứa Bừa" (17/10 – 20/10)
-- **17/10:** team building Vũng Tàu. Tối nhậu hải sản với Thắng. Uống tới ly thứ 5, Huyền hứa: *"Tin chị đi, chị mời được ca sĩ nổi tiếng nhất nước về hát Đêm Hồng!"*. Thắng hứa lại: *"Được thế anh tăng lương cả công ty!"*. Cả bàn quay video.
+- **17/10:** team building Vũng Tàu. Tối nhậu hải sản với Thắng. Uống tới ly thứ 5, Huyền hứa: *"Tin chị đi, chị mời được ca sĩ nổi tiếng nhất nước về hát Đại Nhạc Hội Siêu Nhân!"*. Thắng hứa lại: *"Được thế anh tăng lương cả công ty!"*. Cả bàn quay video.
 - Đêm lửa trại, Huyền che cho Quỳnh làm job LL bằng cách bao trà sữa cả đoàn (tiền tạm ứng). Sổ Tạm Ứng +500.000đ.
 - **18/10:** tỉnh rượu. Clip lời hứa đã ở trong group công ty. Ai cũng giận ai, riêng Huyền giận chính mình.
 - **20/10 (Ngày Phụ nữ):** Huyền tự đặt một bó hoa lớn gửi tới công ty, thiệp ghi *"Thân tặng chị Huyền, Mr. Kevin Trộn, BTT Global"*. Cả phòng trầm trồ. Hương nhìn tấm thiệp, rồi nhìn Huyền, không nói gì.
@@ -113,13 +113,13 @@ Huyền mang **tiền và độ phủ** cho chiến dịch: nhà tài trợ là 
 - **22/10 (kiểm tra thuế):** đoàn kiểm tra yêu cầu xem **hợp đồng tài trợ có giá trị lớn nhất**. Đó là hợp đồng BTT Global. Xem Mẫu 4.
 - **23/10:** sinh nhật Nguyên kiêm livestream. Thắng muốn **chủ tịch Kevin Trộn lên sóng tặng quà**. Huyền phải tìm người đóng giả: Duy (nếu biết bí mật, Duy diễn y như chủ tịch thật), Chương (nói chuyện như đang phân tích chart), hoặc Bác Bình (chỉ nói "Ừ" và "Thế à", vô tình rất ra dáng đại gia).
 - **24/10:** "hội nghị hòa giải" của Hương. Huyền bị xếp ngồi đối diện Thương. Hai người phải viết cho nhau một điều tốt. Thương viết: *"Em nói chuyện hay. Nếu nói thật thì càng hay."*
-- **27/10:** LL-Entertainment gửi hợp đồng cho Nguyên. Cùng ngày, Huyền nhận một cuộc gọi lạ: *"Chào chị, bên em là Sữa Chua Hồng Hào, muốn tài trợ Đêm Hồng 1 tỷ."*. Huyền tưởng Ngân gọi chọc. Huyền kể với cả công ty, **không ai tin**. Đây là lần nói thật quan trọng nhất đời Huyền.
+- **27/10:** LL-Entertainment gửi hợp đồng cho Nguyên. Cùng ngày, Huyền nhận một cuộc gọi lạ: *"Chào chị, bên em là Sữa Chua Hồng Hào, muốn tài trợ Đại Nhạc Hội Siêu Nhân 1 tỷ."*. Huyền tưởng Ngân gọi chọc. Huyền kể với cả công ty, **không ai tin**. Đây là lần nói thật quan trọng nhất đời Huyền.
 
 ### Chương 6: "Tin Chị Đi (Lần Cuối)" (28/10 – 31/10)
 - **28/10 (Mốc 4):** Sữa Chua Hồng Hào hẹn ký ở Sống Ảo lúc 15:00. Đúng 15:00, Thắng gọi Huyền lên phòng vì clip Vũng Tàu: "Ca sĩ nổi tiếng nhất nước đâu em?". Phải chọn đi đâu.
 - **29/10 (wifi sập):** không gửi được hợp đồng qua email. Huyền phải đi Grab qua lại giữa công ty và Ven Đô (trụ sở Sữa Chua Hồng Hào), tài xế hủy chuyến 2 lần.
 - **30/10:** họp đánh giá. Chương được giao đối chiếu số liệu. Màn hình chiếu hai cột: KPI Trên Giấy và KPI Thật. Huyền có 30 giây để quyết định nói gì trước khi Chương bấm chuyển slide.
-- **31/10 (Đêm Hồng):** nếu có nhà tài trợ thật, logo của họ sáng trên sân khấu. Nếu chỉ có BTT Global, Huyền đứng sau cánh gà cầu trời không ai hỏi chủ tịch Kevin Trộn đâu.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** nếu có nhà tài trợ thật, logo của họ sáng trên sân khấu. Nếu chỉ có BTT Global, Huyền đứng sau cánh gà cầu trời không ai hỏi chủ tịch Kevin Trộn đâu.
 
 ---
 
@@ -153,7 +153,7 @@ Huyền mang **tiền và độ phủ** cho chiến dịch: nhà tài trợ là 
 
 ### Mẫu 3: Nhậu Vũng Tàu (17/10, ly thứ 5)
 
-> **{giam_doc}:** Huyền này, Đêm Hồng mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không? Anh không ép, tùy em.
+> **{giam_doc}:** Huyền này, Đại Nhạc Hội Siêu Nhân mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không? Anh không ép, tùy em.
 >
 > 1. 🗣️ *"Tin chị đi, ca sĩ nổi tiếng nhất nước, chị gọi một cuộc là tới!"* (Chém Gió)
 >    - {giam_doc} đập bàn: "Thế anh tăng lương cả công ty!". Bong Bóng Phét +30. Có người quay clip
@@ -211,7 +211,7 @@ Huyền mang **tiền và độ phủ** cho chiến dịch: nhà tài trợ là 
 | 2 | 😄 🤝 **Song Kiếm Hợp Bích** | Quan hệ với {designer} ≥ 80, cả hai bí mật chưa bị lộ, KPI Thật ≥ 300.000.000đ, Quỳnh đã cắt đứt với LL | Bạn và Quỳnh nghỉ việc, mở **studio nhỏ ở tầng trệt chung cư Phố Mới**. Quỳnh vẽ, bạn bán, lần này bán thật. Hợp đồng đầu tiên ký với Siêu Nhân Hồng. Bạn dọn khỏi Sky Ảo, và lần đầu tiên tủ lạnh nhà mình có đồ ăn |
 | 3 | 😄 🔒 **Kết thúc bí mật: Kevin Trộn Có Thật** | Biết bí mật của Duy, Duy đóng vai chủ tịch thành công ngày 23/10, livestream có "BTT Global" lên xu hướng, Siêu Nhân Hồng đạt 1 triệu người theo dõi | Cư dân mạng đi tìm mua "bánh tráng trộn BTT" mà không có. Duy rút tiền tiết kiệm thời ngân hàng, **lập công ty Bánh Tráng Trộn Toàn Cầu thật**, mời bạn làm Giám đốc Kinh doanh. Ngày khai trương, xe đẩy bánh tráng đầu tiên đậu trước cổng G-Entertainment, Tuất là khách hàng đầu tiên |
 | 4 | 😢 🎈 **Bong Bóng Bể** | Bong Bóng Phét đạt 100 (có thể xảy ra bất cứ lúc nào) | Ngân livestream fanpage, vô tình quay trúng màn hình laptop của bạn: trang tra cứu "BTT Global" ghi "Không tìm thấy doanh nghiệp". Clip lan khắp mạng. Tuấn mời bạn đi "uống trà". Bạn ôm thùng carton, trong đó có bằng khen "Doanh nhân của năm" mà Thắng trả lại |
-| 5 | 😢 🐑 **Cô Bé Chăn Cừu** | Không ai tin cuộc gọi Sữa Chua Hồng Hào (KPI Trên Giấy vẫn ≥ 250% ngày 28/10), deal thật bị bỏ lỡ | Đêm 31/10, bạn đứng dưới khán đài Đêm Hồng, ngước lên tòa nhà kính của LL bên kia đường. Màn hình LED chạy quảng cáo: "LL-Entertainment hân hạnh hợp tác cùng Sữa Chua Hồng Hào". Lần nói thật duy nhất trong đời, không ai tin, kể cả bạn |
+| 5 | 😢 🐑 **Cô Bé Chăn Cừu** | Không ai tin cuộc gọi Sữa Chua Hồng Hào (KPI Trên Giấy vẫn ≥ 250% ngày 28/10), deal thật bị bỏ lỡ | Đêm 31/10, bạn đứng dưới khán đài Đại Nhạc Hội Siêu Nhân, ngước lên tòa nhà kính của LL bên kia đường. Màn hình LED chạy quảng cáo: "LL-Entertainment hân hạnh hợp tác cùng Sữa Chua Hồng Hào". Lần nói thật duy nhất trong đời, không ai tin, kể cả bạn |
 | 6 | 😢 🍜 **Tủ Lạnh Trống Mãi** | Sổ Tạm Ứng ≥ 5.000.000đ chưa trả, tiền trong ví < 0 ngày 30/10, chưa đòi được nợ của Chương | Bạn trả lại căn 1203, dọn về gác lửng Hẻm 69, sát vách Chương. Đêm đầu tiên, Chương gõ tường: "Huyền ơi, lần này là lên thật, mai anh trả em gấp đôi." Bạn nằm nhìn trần nhà, ăn gói mì cuối cùng, không còn ai để chụp story cho |
 
 ---

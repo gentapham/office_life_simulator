@@ -397,7 +397,7 @@ sales: Anh {truong_phong}! Tin em đi… à, tin chị đi! BTT Global muốn t�
 * [😶 "Anh nghe rồi."]
     sales: Anh nghe kiểu tin hay kiểu hông tin?
     truong_phong: Kiểu nghe.
-- sales: Mà anh nè, Đêm Hồng em sẽ mời ca sĩ nổi tiếng nhất nước tới hát. No cap.
+- sales: Mà anh nè, Đại Nhạc Hội em sẽ mời ca sĩ nổi tiếng nhất nước tới hát. No cap.
 * [🧱 "Ai? Viết tên lên bảng đi."]
     sales: *(cầm bút, đứng hình 10 giây)* …Tên ca sĩ là bí mật kinh doanh.
     ~ qh("sales", -2)
@@ -422,7 +422,7 @@ chi_dai: {truong_phong}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe.
     chi_dai: Vậy ngồi xuống ăn.
     ~ an(25)
     ~ qh("chi_dai", 2)
-* [🙏 "Chị ơi, Đêm Hồng em cần chị lo sân khấu ạ."]
+* [🙏 "Chị ơi, Đại Nhạc Hội em cần chị lo sân khấu ạ."]
     chi_dai: Chị lo. Em lo đừng họp chị lúc chị đang dựng sân khấu là được.
     ~ qh("chi_dai", 5)
 - chi_dai: Mà em với thằng {con_ong_chau_cha} đó, cãi hoài vậy, mệt hông?

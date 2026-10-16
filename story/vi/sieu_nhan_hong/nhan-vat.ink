@@ -143,7 +143,7 @@ con_ong_chau_cha: Ê anh. Ngồi đi. Chill. Ly này 85 nghìn, em bao. À mà a
     con_ong_chau_cha: Không… không có gì. Nhạc… nhạc của bạn em. Nghệ danh "Rồng".
     _Cậu ta bấm nghe 5 giây rồi tắt. Giai điệu bắt tai. Có chữ "hồng" và chữ "thái độ"._
     ~ phat_hien(bai_hat_long)
-    * * [🙂 "Nếu bạn em cho, anh muốn hát bài đó ở Đêm Hồng."]
+    * * [🙂 "Nếu bạn em cho, anh muốn hát bài đó ở Đại Nhạc Hội Siêu Nhân."]
         con_ong_chau_cha: *(nhìn bạn rất lâu)* …Để em hỏi "bạn em". Chắc… bạn em vui lắm.
         ~ qh("con_ong_chau_cha", 20)
     * * [🦸 "Hay đó! Mà bài của anh là bài hay nhất!"]
@@ -297,7 +297,7 @@ idol_het_thoi: Em biết anh là ai không?
     ~ qh("idol_het_thoi", -3)
 + -> sieu_nhan_hong_tudo_het_chuyen
 - idol_het_thoi: Nói thật đi. Họ lăng xê em để thay anh, đúng không?
-* [🙂 "Không ai thay ai được hết. Đêm Hồng, anh hát mở màn với em nha?"]
+* [🙂 "Không ai thay ai được hết. Đại Nhạc Hội, anh hát mở màn với em nha?"]
     idol_het_thoi: *(im lặng rất lâu)* …Em nói thật hay PR?
     sieu_nhan_hong: Thật. Không có camera ở đây.
     idol_het_thoi: Để anh hỏi {quan_ly_idol}… à không. Anh tự quyết. Ừ. Anh hát.
@@ -344,7 +344,7 @@ bien_kich: Anh {sieu_nhan_hong}. Đứng yên. Ánh sáng chiếu lên bộ đ�
     _Bạn đứng im. Cô ta ghi gì đó vào cuốn sổ bìa da._
     ~ qh("bien_kich", 8)
 + -> sieu_nhan_hong_tudo_het_chuyen
-- bien_kich: Phim ngắn mở màn Đêm Hồng có một nhân vật mặc đồ hồng. Anh có muốn đóng không? Không lộ mặt.
+- bien_kich: Phim ngắn mở màn Đại Nhạc Hội có một nhân vật mặc đồ hồng. Anh có muốn đóng không? Không lộ mặt.
 * [🙂 "Nhân vật đó có thật hông em? Ai kể cho em?"]
     bien_kich: *(khựng lại)* Đây không phải đạo, đây là cảm hứng. Từ… cuộc sống.
     ~ phat_hien(nguoi_gac_ket)
@@ -434,7 +434,7 @@ chi_dai: Em {sieu_nhan_hong}. Ăn cơm chưa? Ngồi xuống chị kể cho nghe
     ~ an(30)
     ~ qh("chi_dai", 5)
 + -> sieu_nhan_hong_tudo_het_chuyen
-- chi_dai: Đêm Hồng chị lo sân khấu. Em muốn gì cứ nói chị. Pháo hoa, khói, đèn. Hay… một chỗ để em tháo mũ mà không ai thấy?
+- chi_dai: Đại Nhạc Hội chị lo sân khấu. Em muốn gì cứ nói chị. Pháo hoa, khói, đèn. Hay… một chỗ để em tháo mũ mà không ai thấy?
 * [🙂 "Một cái cánh gà tối. Bên trái."]
     chi_dai: *(gật)* Được. Chị để trống cánh gà bên trái. Không ai vào. Trừ đứa em muốn.
     ~ qh("chi_dai", 5)

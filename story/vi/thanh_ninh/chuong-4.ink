@@ -84,7 +84,7 @@ _Sếp đang đi thẳng về phía bạn. Phía sau bạn là {ran_doc}._
 // ------------------------------------------------------------
 === thanh_ninh_1710_lua_trai ===
 # ngay:17 # gio:21:00 # noi:bai_bien_vung_tau # bat_buoc
-_Đêm lửa trại. Sếp đã ngà ngà, vừa hứa tăng lương cả công ty. {hong_hot} quay được. {sales} vừa hứa mời "ca sĩ nổi tiếng nhất nước" về hát Đêm Hồng._
+_Đêm lửa trại. Sếp đã ngà ngà, vừa hứa tăng lương cả công ty. {hong_hot} quay được. {sales} vừa hứa mời "ca sĩ nổi tiếng nhất nước" về hát Đại Nhạc Hội Siêu Nhân._
 _{sieu_nhan_hong} tháo mũ, kể chuyện hồi nhỏ từng nhốt một đứa nhỏ trong nhà kho. {ran_doc} ngồi bất động như tượng._
 _Rồi tới trò "nói thật". Chai nước suối quay, dừng ngay trước mặt bạn._
 hong_hot: {thanh_ninh}! Nói thật đi, bà có thấy sếp phát biểu hay không?
@@ -258,7 +258,7 @@ designer: *(đứng ở cửa, mắt vô hồn)* Sửa nhẹ thôi là sửa cá
     ~ tn_khen()
     ~ qh("designer", -5)
     designer: Ba mươi tám lần. Linh hồn.
-* [🤝 "Bản 38 của {designer} để làm phông sân khấu Đêm Hồng được đó anh."]
+* [🤝 "Bản 38 của {designer} để làm phông sân khấu Đại Nhạc Hội được đó anh."]
     ~ qh("designer", 10)
     giam_doc: Ừ! Ý hay! Đưa {chi_dai} xem.
 * [😐 "Anh… biết từ đầu là anh chọn bản gốc mà, đúng hông anh?"]

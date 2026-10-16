@@ -308,7 +308,7 @@ editor: *(ngáp)* Anh {thanh_xin_nghi}… lịch dựng phim tuần này… anh 
 // ------------------------------------------------------------
 === thanh_xin_nghi_tudo_designer ===
 # npc:designer
-designer: {thanh_xin_nghi}, poster Đêm Hồng phải có lịch chạy chương trình. Em cho chị giờ chính xác đi, đừng sửa nữa nha. Chị sửa 14 lần rồi.
+designer: {thanh_xin_nghi}, poster Đại Nhạc Hội phải có lịch chạy chương trình. Em cho chị giờ chính xác đi, đừng sửa nữa nha. Chị sửa 14 lần rồi.
 * [📅 "Dạ đây chị. Chốt. Không sửa."]
     designer: Hứa?
     thanh_xin_nghi: Dạ… hứa tới khi sếp đổi ý ạ.

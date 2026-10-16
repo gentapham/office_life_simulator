@@ -377,7 +377,7 @@ chi_dai: {it}. Ăn cơm chưa?
     chi_dai: Chị biết mà. *(đặt một hộp cơm lên bàn)* Ăn đi. Ăn hết.
     ~ an(55)
     ~ qh("chi_dai", 8)
-- chi_dai: Bộ đàm của chị lại rè. Mà nghe nè, Đêm Hồng mà có đứa nào đụng cầu dao, em gọi chị. Chị xử.
+- chi_dai: Bộ đàm của chị lại rè. Mà nghe nè, Đại Nhạc Hội mà có đứa nào đụng cầu dao, em gọi chị. Chị xử.
 * [🤝 "Dạ. Em giữ cầu dao. Chị giữ người."]
     chi_dai: Đó. Hiểu chuyện. Chị thích.
     ~ qh("chi_dai", 5)

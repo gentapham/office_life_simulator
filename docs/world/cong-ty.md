@@ -60,7 +60,7 @@
 ### Đã "giành" gì của G-Entertainment
 - Từ 2018 tới nay: câu đi gần hết nghệ sĩ và nhân viên giỏi bằng lương gấp đôi.
 - Lấy mất hợp đồng gameshow truyền hình lớn nhất của G-Entertainment năm 2020.
-- Đang để mắt tới **Siêu Nhân Hồng**. Lưu Lực muốn cướp Nguyên trước Đêm Hồng Halloween.
+- Đang để mắt tới **Siêu Nhân Hồng**. Lưu Lực muốn cướp Nguyên trước Đại Nhạc Hội Siêu Nhân.
 
 ### Người trong G-Entertainment có dính tới LL
 | Ai | Chuyện gì |
@@ -76,11 +76,11 @@
 
 **Tên hợp đồng:** "Thỏa thuận Hợp tác Chiến lược Hồng Hóa Việt Nam"
 **Ngày ký:** 1/10/2026
-**Hạn chót:** **Đêm Hồng Halloween, 31/10/2026**
+**Hạn chót:** **Đại Nhạc Hội Siêu Nhân, 31/10/2026**
 
 ### Nguyên được gì
 - Cả công ty phục vụ một mình Siêu Nhân Hồng trong 1 tháng: MV, gameshow, livestream, quảng cáo, mạng xã hội.
-- Một đêm diễn lớn **"Đêm Hồng"** vào tối Halloween 31/10 ở Sân khấu Đêm Hồng.
+- Một đêm diễn lớn **"Đại Nhạc Hội Siêu Nhân"** vào tối Halloween 31/10 ở Sân khấu Đại Nhạc Hội Siêu Nhân.
 - **Mục tiêu cam kết:** trước 31/10, Siêu Nhân Hồng đạt **1 triệu người theo dõi** và lọt **top 10 xu hướng** trên mạng xã hội.
 
 ### Công ty được gì

@@ -1,7 +1,7 @@
 // ============================================================
 // CHÚA TỂ DEADLINE · 6 KẾT THÚC
 // Kết quả được chốt theo trạng thái sau buổi họp đánh giá 30/10,
-// cảnh kết hiện ra sau khi Đêm Hồng (31/10) tan.
+// cảnh kết hiện ra sau khi Đại Nhạc Hội Siêu Nhân (31/10) tan.
 // Thứ tự ưu tiên: 💾 File Gốc → 🌊 Nước Tới Cổ → 🔒 Người Đến Sớm
 // → 🩷 Không Phải PR → 📱 PR Thôi Mà → 🌊 Nhảy Là Phải Đẹp.
 // ============================================================
@@ -93,11 +93,11 @@ hr: *(gõ cửa bàn bạn, cười hiền hơn bao giờ hết)* Em rảnh khô
 _{hong_hot} đăng bài: "Biến căng: producer làm xong việc sớm. Thánh nào nhập?"_
 _{ke_toan} kiểm tra lại toàn bộ hóa đơn của bạn ba lần, vì "cái gì sớm quá cũng đáng ngờ"._
 _Còn {editor} thì nhắn lúc 2 giờ sáng, một tin duy nhất: "ông còn sống hông"._
-_Đêm Hồng. Tất cả cue chạy như đồng hồ. {it} không cần hỏi qua bộ đàm một lần nào. {chi_dai} đứng khoanh tay, gật đầu từng cue._
+_Đại Nhạc Hội Siêu Nhân. Tất cả cue chạy như đồng hồ. {it} không cần hỏi qua bộ đàm một lần nào. {chi_dai} đứng khoanh tay, gật đầu từng cue._
 _Còn bạn: không có gì để làm._
 _Bạn nằm dài trên bãi cỏ sau sân khấu, hai tay gối đầu. Lần đầu tiên trong đời, bạn xem trọn vẹn một show mình làm ra. Từ đầu tới cuối. Không tai nghe. Không "Go!"._
 _Pháo giấy nổ. Đúng lúc. Bạn không cần ra lệnh._
-_Bạn mở Tóp-tóp. Video đầu tiên đang lên xu hướng: "Người đàn ông rảnh rỗi nhất Đêm Hồng". 3 triệu lượt xem._
+_Bạn mở Tóp-tóp. Video đầu tiên đang lên xu hướng: "Người đàn ông rảnh rỗi nhất Đại Nhạc Hội Siêu Nhân". 3 triệu lượt xem._
 _Trong video, một anh chàng mặc áo cam nằm trên bãi cỏ, cười một mình giữa mưa pháo giấy hồng._
 _Là bạn._
 _Bình luận được ghim, của một tài khoản có avatar màu hồng: "Lần sau tới sớm vậy nữa nha. Anh chờ ở hàng ghế đầu."_
@@ -153,7 +153,7 @@ _Lần này, bác nói câu đó rất nhỏ. Như một lời xin lỗi._
 // 😢 6. PR THÔI MÀ
 === chua_te_deadline_kt_pr_thoi_ma ===
 # ngay:31 # gio:23:30 # noi:phong_gac_quan_bida
-_Đêm Hồng kết thúc. Chiến dịch có thể thành công. Bạn có thể được khen. {hong_hot} gửi bạn ảnh chụp màn hình con số người theo dõi, kèm 7 cái icon pháo hoa._
+_Đại Nhạc Hội Siêu Nhân kết thúc. Chiến dịch có thể thành công. Bạn có thể được khen. {hong_hot} gửi bạn ảnh chụp màn hình con số người theo dõi, kèm 7 cái icon pháo hoa._
 _Bạn về phòng gác. Dưới nhà, quán bida đông nghẹt người ăn mừng Halloween. Tiếng bi lách cách._
 _Không có tin nhắn nào từ {sieu_nhan_hong}. Từ sau đêm livestream, chỉ có đúng một tin, lúc 23 giờ 47 đêm 27/10. Rồi thôi._
 _Sáng 1/11. Bạn đi làm. 8 giờ 20, như thường lệ._

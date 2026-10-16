@@ -249,7 +249,7 @@ _Đèn bật. {thuc_tap_sinh} khóc. {bien_kich} nhận lời khen. Tin đồn c
 
 = s_moi
 * {son_nguyen_biet} [🔒 "Anh Nguyên… anh làm khách mời chung kết với em được hông? Đài đang tìm khách mời."]
-    sieu_nhan_hong: Khách mời? Trên sóng toàn quốc? *(tạo dáng 3 kiểu liền)* Gét gô! Mà… cùng tối Đêm Hồng hả?
+    sieu_nhan_hong: Khách mời? Trên sóng toàn quốc? *(tạo dáng 3 kiểu liền)* Gét gô! Mà… cùng tối Đại Nhạc Hội hả?
     thanh_xin_nghi: Dạ. 20:00. Em tính rồi. Hơi điên một chút.
     sieu_nhan_hong: Hồng không phải màu, Hồng là thái độ! Điên là thái độ luôn!
     ~ son_moi_nguyen_khach_moi = true

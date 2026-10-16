@@ -189,7 +189,7 @@ _Cả phòng lặng như tờ. Chấm đỏ trên điện thoại của bạn…
 // ------------------------------------------------------------
 === hong_hot_3110_chuan_bi ===
 # ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. 16 giờ. Hậu trường. {chi_dai} điều phối bằng bộ đàm. Hai máy phát điện, vì cái thứ nhất sẽ hỏng._
+_Đại Nhạc Hội Siêu Nhân. 16 giờ. Hậu trường. {chi_dai} điều phối bằng bộ đàm. Hai máy phát điện, vì cái thứ nhất sẽ hỏng._
 _Sếp vừa bước ra trong bộ "Ông Kẹ Ngân Hàng" do {designer} chọn: vest, cà vạt in hình tờ tiền, dán đầy giấy báo nợ giả. Sếp tưởng là "concept tài chính"._
 giam_doc: {hong_hot}, chụp cho anh vài kiểu đăng fanpage nhé!
 * [📸 Chụp, đăng, caption "Sếp tụi em hóa trang có tâm nhất quận".]
@@ -216,7 +216,7 @@ sieu_nhan_hong: {hong_hot}… nếu tối nay anh… tháo mũ ra… em có quay
 // ------------------------------------------------------------
 === hong_hot_3110_dem_hong ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu Phường Tân Drama. Mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu Phường Tân Drama. Mở màn: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}._
 _Sếp hóa trang "Ông Kẹ Ngân Hàng". Bạn đứng giữa khán đài, ba điện thoại trên tay. Một cái live, một cái đếm, một cái để đọc tin nhắn._
 _Con số: {nguoi_theo_doi}. Phần bạn góp: {hh_dong_gop}._
 _20:00, cùng tối đó, chung kết trực tiếp "Giọng Ca Ước Mơ" trên Đài Tivi Hóng. {thanh_xin_nghi} đứng hát trên một sân khấu khác._

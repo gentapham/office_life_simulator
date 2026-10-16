@@ -122,7 +122,7 @@ Phát là **kình địch tự nhiên** của Nguyên. Nhưng cũng là người
 ### Chương 6: "Công Viên Năm Ấy" (28/10 – 31/10)
 - **29/10 (wifi sập):** 80.000 fan ảo im lặng. Không like, không comment. Phát ra **Công viên Hồ Cá Mập**, ôm đàn ngồi ghế đá, hát cho người thật nghe. Có 7 người dừng lại. Một em bé đòi nghe lại.
 - **30/10:** họp đánh giá. Thắng quyết định có gia hạn hợp đồng cho Phát hay không.
-- **31/10 (Đêm Hồng):** Phát là ca sĩ mở màn, là người song ca, là kẻ phá đám, hoặc là khán giả ngồi hàng cuối, tùy những gì đã làm.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** Phát là ca sĩ mở màn, là người song ca, là kẻ phá đám, hoặc là khán giả ngồi hàng cuối, tùy những gì đã làm.
 
 ---
 
@@ -201,10 +201,10 @@ Phát là **kình địch tự nhiên** của Nguyên. Nhưng cũng là người
 
 ### Mẫu 6: Lời đề nghị song ca (28/10)
 
-> **{sieu_nhan_hong}:** *(tháo mũ, giọng nhỏ, rụt rè)* Dạ… anh Phát… em muốn hỏi… Đêm Hồng anh hát chung với em bài "Công Viên" được hông? Em hát dở lắm. Mà em thích bài đó thiệt.
+> **{sieu_nhan_hong}:** *(tháo mũ, giọng nhỏ, rụt rè)* Dạ… anh Phát… em muốn hỏi… Đại Nhạc Hội Siêu Nhân anh hát chung với em bài "Công Viên" được hông? Em hát dở lắm. Mà em thích bài đó thiệt.
 >
 > 1. 😎 *"Anh hát chính, em đứng bè."*
->    - Nguyên đồng ý ngay. Độ Tinh Tướng +10. Nếu Thái biết: "Phát, Đêm Hồng là show của Nguyên mà em…"
+>    - Nguyên đồng ý ngay. Độ Tinh Tướng +10. Nếu Thái biết: "Phát, Đại Nhạc Hội Siêu Nhân là show của Nguyên mà em…"
 > 2. 🎶 *"Hát chung. Mỗi người một nửa. Mà em phải nhớ là CHUỐI chiên."*
 >    - Mở song ca "Công Viên Hồng". Quan hệ với Nguyên +25. Cần thêm người làm bản remix
 > 3. 😤 *"Em có tiền, em có fan, giờ em lấy luôn bài của anh hả?"*
@@ -218,12 +218,12 @@ Phát là **kình địch tự nhiên** của Nguyên. Nhưng cũng là người
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🌟 **Công Viên Hồng** | Song ca "Công Viên Hồng" trong Đêm Hồng, Độ Nổi Tiếng ≥ 70, Fan Ảo = 0, chiến dịch Siêu Nhân Hồng thành công | Bản remix vào top 1 xu hướng. Cả nước lại hát *"thích ăn chuối chiên"*, lần này kèm điệu nhảy hồng. Sáng 1/11, bà quản lý Sky Ảo gõ cửa căn 1808, Phát tưởng bị đòi nợ. Bà chìa ra cuốn sổ: *"Ký cho con gái cô một chữ."* Tiền nhà thì vẫn phải đóng |
+| 1 | 😄 🌟 **Công Viên Hồng** | Song ca "Công Viên Hồng" trong Đại Nhạc Hội Siêu Nhân, Độ Nổi Tiếng ≥ 70, Fan Ảo = 0, chiến dịch Siêu Nhân Hồng thành công | Bản remix vào top 1 xu hướng. Cả nước lại hát *"thích ăn chuối chiên"*, lần này kèm điệu nhảy hồng. Sáng 1/11, bà quản lý Sky Ảo gõ cửa căn 1808, Phát tưởng bị đòi nợ. Bà chìa ra cuốn sổ: *"Ký cho con gái cô một chữ."* Tiền nhà thì vẫn phải đóng |
 | 2 | 😄 💒 **Ca Sĩ Đám Cưới Số Một Quận Hóng** | Độ Tinh Tướng ≤ 20, hát ít nhất 8 đám cưới hoặc khai trương, Tiền Nợ về 0, không giành spotlight của Nguyên lần nào sau 16/10 | Một đám cưới cuối tháng 11. Cô dâu chú rể quen nhau vì cùng hát "Công Viên" ở karaoke năm 2015. Họ mời Phát lên hát. Phát tháo kính đen, đặt lên bàn tiệc, hát cho đúng hai người nghe. Cả rạp cưới hát theo. Phát nhận ra: được một người cần thì cũng là nổi tiếng |
-| 3 | 😄 🔒 **Kết thúc bí mật: Đôi Bạn Thân** | Phát hiện "ChuoiChien89" là Thái, tìm thấy tấm ảnh trong ngăn kéo nhà Thái, quan hệ với Thái ≥ 80, Thái từ chối lời mời của LL | Sau Đêm Hồng, Phát mua hai bịch chuối chiên ở cổng Sân khấu Đêm Hồng, đưa Thái một bịch. *"Mười một năm nay em hát về đôi bạn thân bán cá viên chiên. Mà giờ em mới để ý người đứng cạnh em suốt là ai."* Thái cầm bịch chuối chiên, cả hai điện thoại đổ chuông. Lần đầu tiên, Thái không nghe máy |
+| 3 | 😄 🔒 **Kết thúc bí mật: Đôi Bạn Thân** | Phát hiện "ChuoiChien89" là Thái, tìm thấy tấm ảnh trong ngăn kéo nhà Thái, quan hệ với Thái ≥ 80, Thái từ chối lời mời của LL | Sau Đại Nhạc Hội Siêu Nhân, Phát mua hai bịch chuối chiên ở cổng Sân khấu Đại Nhạc Hội Siêu Nhân, đưa Thái một bịch. *"Mười một năm nay em hát về đôi bạn thân bán cá viên chiên. Mà giờ em mới để ý người đứng cạnh em suốt là ai."* Thái cầm bịch chuối chiên, cả hai điện thoại đổ chuông. Lần đầu tiên, Thái không nghe máy |
 | 4 | 😢 🤖 **Fan Ảo Bỏ Đi** | Fan Ảo ≥ 100.000 khi bị bóc phốt, không dùng clip 15/10 để lật lại | Phát livestream đêm 31/10 để "đáp trả anti fan". Có 3 người xem. Cả 3 đều là tài khoản ảo đã bị khóa, lần lượt hiện dòng chữ: *"Người dùng đã rời khỏi phòng."* Phát vẫn đeo kính đen trong căn phòng tối |
 | 5 | 😢 💍 **Tủ Kính Tiệm Cầm Đồ** | Tiền Nợ ≥ 80.000.000đ vào ngày 30/10, hoặc đã cầm cúp mà không chuộc lại | Hợp đồng không được gia hạn. Phát dọn ra khỏi căn 1808. Đi ngang tiệm cầm đồ Cứu Nguy, Phát thấy cái cúp "Ca khúc của năm 2015" trong tủ kính, dán giá 9.000.000đ. Một cậu sinh viên đứng ngắm, hỏi chủ tiệm: *"Cúp này của ai vậy chú?"* Chủ tiệm: *"Của ca sĩ nào đó, chú quên rồi."* |
-| 6 | 😢 🎤 **Sân Khấu Trống** | Phá chiến dịch Siêu Nhân Hồng thành công ít nhất 3 lần, chiến dịch thất bại | Công ty phá sản. Hợp đồng độc quyền của Phát trở thành tờ giấy vô giá trị. Sáng 1/11, công nhân tháo dỡ Sân khấu Đêm Hồng. Phát đứng giữa sân khấu, không micro, hát "Công Viên" cho mấy chú công nhân nghe. Một chú nói: *"Hay đó. Mà dời qua cho tụi chú tháo cái đèn."* Phát nhớ ra mình chưa từng sợ Nguyên. Mình chỉ sợ bị quên |
+| 6 | 😢 🎤 **Sân Khấu Trống** | Phá chiến dịch Siêu Nhân Hồng thành công ít nhất 3 lần, chiến dịch thất bại | Công ty phá sản. Hợp đồng độc quyền của Phát trở thành tờ giấy vô giá trị. Sáng 1/11, công nhân tháo dỡ Sân khấu Đại Nhạc Hội Siêu Nhân. Phát đứng giữa sân khấu, không micro, hát "Công Viên" cho mấy chú công nhân nghe. Một chú nói: *"Hay đó. Mà dời qua cho tụi chú tháo cái đèn."* Phát nhớ ra mình chưa từng sợ Nguyên. Mình chỉ sợ bị quên |
 
 ---
 

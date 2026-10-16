@@ -5,7 +5,7 @@
 // ============================================================
 
 // ------------------------------------------------------------
-// Đánh giá kết thúc. Chốt sau họp đánh giá 30/10, chiếu sau Đêm Hồng.
+// Đánh giá kết thúc. Chốt sau họp đánh giá 30/10, chiếu sau Đại Nhạc Hội Siêu Nhân.
 === truong_phong_3010_danh_gia ===
 # ngay:31 # gio:23:30 # bat_buoc # dieu_kien:sau Dem Hong, chot ket thuc cua Nhat
 // 1. Lộ bài: có thể xảy ra bất cứ lúc nào, ưu tiên cao nhất
@@ -77,7 +77,7 @@ _Rồi bạn gạch chữ "tốt nhất", viết lại: "đáng nhớ nhất". C
 // 😄 🎬 ĐẠO DIỄN THẬT
 === truong_phong_kt_dao_dien_that ===
 # noi:san_khau_dem_hong
-_Đêm Hồng kết thúc. Pháo giấy hồng còn bay lả tả. Màn hình lớn chạy credits, chậm rãi, từng dòng một._
+_Đại Nhạc Hội Siêu Nhân kết thúc. Pháo giấy hồng còn bay lả tả. Màn hình lớn chạy credits, chậm rãi, từng dòng một._
 _"Đạo diễn: {truong_phong}."_
 _"Dựng phim: {editor}."_
 _Hai dòng. To bằng nhau. Cùng một kiểu chữ. Ở góc dưới khung hình, một con cú nhỏ đeo tai nghe chớp mắt đúng một lần._
@@ -88,7 +88,7 @@ _2 giờ sáng. Phòng dựng tầng 2. Cả tòa nhà tối, chỉ còn hai mà
 _Bạn ngồi ghế chính. {editor} ngồi ghế phụ, tay khoanh trước ngực, không chạm vào chuột._
 editor: Clip này anh tự dựng từ đầu hả?
 truong_phong: Từ đầu. Từng cảnh. Kể cả chỗ nhạc lên.
-_Clip 60 giây tổng kết Đêm Hồng. Có cảnh {sieu_nhan_hong} cúi chào. Có cảnh {cho} ngủ dưới gầm sân khấu. Có cảnh cả phòng Sản xuất ngồi bệt dưới pháo giấy._
+_Clip 60 giây tổng kết Đại Nhạc Hội Siêu Nhân. Có cảnh {sieu_nhan_hong} cúi chào. Có cảnh {cho} ngủ dưới gầm sân khấu. Có cảnh cả phòng Sản xuất ngồi bệt dưới pháo giấy._
 _Bạn bấm "Xuất". Thanh tiến trình chạy. 12%. 47%. 89%._
 _100%._
 _Clip đầu tiên trong đời bạn tự làm, không cần ai, không nhận công của ai._

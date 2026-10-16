@@ -105,7 +105,7 @@ sales: Dạ. Em đi sớm. Thật.
 // ============================================================
 === sales_kt_kevin_tron_co_that ===
 # dieu_kien:ket_thuc_kevin_tron_co_that
-_Một tuần sau Đêm Hồng. Siêu Nhân Hồng vượt một triệu người theo dõi. Nhưng thứ đứng top tìm kiếm trên mạng lại là…_
+_Một tuần sau Đại Nhạc Hội Siêu Nhân. Siêu Nhân Hồng vượt một triệu người theo dõi. Nhưng thứ đứng top tìm kiếm trên mạng lại là…_
 _"Bánh tráng trộn BTT mua ở đâu?"_
 hong_hot: Bà ơi! Dân mạng đi khắp thành phố tìm "bánh tráng trộn của chủ tịch Kevin"! Không có chỗ nào bán! Họ đòi mua!
 _Bạn ngồi đó, nhìn màn hình, không biết nên cười hay nên trốn._
@@ -153,7 +153,7 @@ _Bạn bước ra Đại lộ Kẹt Xe. Điện thoại rung liên tục. Lần 
 // ============================================================
 === sales_kt_co_be_chan_cuu ===
 # dieu_kien:ket_thuc_co_be_chan_cuu
-_Đêm 31/10. Đêm Hồng. Bạn đứng dưới khán đài, giữa đám đông, không phải sau cánh gà. Không ai cần bạn ở cánh gà nữa._
+_Đêm 31/10. Đại Nhạc Hội Siêu Nhân. Bạn đứng dưới khán đài, giữa đám đông, không phải sau cánh gà. Không ai cần bạn ở cánh gà nữa._
 _Sân khấu nhỏ hơn dự kiến. Đèn thiếu, khói thiếu. Logo nhà tài trợ: quán ốc, tiệm nail, phòng khám. Những cái tên nhỏ, nhưng thật._
 _Bạn ngước lên. Bên kia đường, tòa nhà kính 20 tầng của LL-Entertainment. Màn hình LED khổng lồ đang chạy quảng cáo._
 _"LL-Entertainment hân hạnh hợp tác cùng Sữa Chua Hồng Hào."_

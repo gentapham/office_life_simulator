@@ -121,7 +121,7 @@ _Bạn đi một vòng. Không ai cần một cuộc họp. Ai cũng cần một
 # ngay:29 # gio:14:00 # noi:phong_dung_phim # bat_buoc
 _14 giờ. Video "16 năm" của {editor} kẹt ở 99% vì không có mạng để tải nhạc bản quyền. {editor} đi tìm {it} bằng cầu thang bộ._
 _Cửa phòng dựng bật mở. {giam_doc}, {thanh_ninh} và nửa phòng Truyền thông bước vào._
-giam_doc: {truong_phong}! {editor} đâu? Thôi, em cũng được. Em mở cho anh xem bản dựng Đêm Hồng. Em làm thế nào, em chỉ anh xem.
+giam_doc: {truong_phong}! {editor} đâu? Thôi, em cũng được. Em mở cho anh xem bản dựng Đại Nhạc Hội. Em làm thế nào, em chỉ anh xem.
 _Con trỏ nhấp nháy. Mười giây. Cả phòng nhìn bạn._
 { tp_tay_nghe >= 50:
     -> lam_duoc
@@ -316,7 +316,7 @@ _Bạn đặt bút xuống. Cả phòng nín thở. {con_ong_chau_cha} nhìn ch�
 // ------------------------------------------------------------
 === truong_phong_3110_hoa_trang ===
 # ngay:31 # gio:16:00 # noi:san_khau_dem_hong # bat_buoc
-_Đêm Hồng Halloween. Sân khấu Đêm Hồng, Phường Tân Drama. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng". Bạn là… cuốn lịch để bàn._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng". Bạn là… cuốn lịch để bàn._
 _Mỗi trang lịch trên người bạn là một ngày tháng 10. Trang 29 trống trơn._
 hong_hot: Anh {truong_phong} hóa trang gì vậy? Cuốn sổ nợ hả?
 truong_phong: Lịch.

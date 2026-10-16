@@ -154,7 +154,7 @@ _Bạn lần đầu nghe về việc này._
 thuc_tap_sinh: Dạ… dạ em làm liền ạ!
 ~ duy_da()
 ~ duy_day_viec(1)
-truong_phong: Tốt. Giờ mọi người góp ý tưởng nội dung. Phim ngắn cho Đêm Hồng, ai có ý gì không?
+truong_phong: Tốt. Giờ mọi người góp ý tưởng nội dung. Phim ngắn cho Đại Nhạc Hội, ai có ý gì không?
 _{bien_kich} ngồi thẳng lên, mở laptop. Bạn liếc thấy màn hình: một file kịch bản. Bạn nhớ tháng 9, ở pantry, bạn từng kể với {bien_kich} một ý tưởng phim: "Người Gác Két"._
 * [💬 Kể lại ý tưởng "Người Gác Két" trước cả phòng.]
     thuc_tap_sinh: Dạ… em có một ý ạ. Một anh nhân viên ngân hàng bỏ việc đi làm siêu nhân. Tên là "Người Gác Két" ạ.

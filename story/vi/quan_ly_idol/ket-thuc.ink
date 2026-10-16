@@ -52,7 +52,7 @@
 // ------------------------------------------------------------
 === quan_ly_idol_kt_quan_ly_cua_nam ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_quan_ly_cua_nam
-_Đêm Hồng kết thúc lúc 23 giờ. Một triệu người theo dõi. Top xu hướng. Năm nghìn người vẫn chưa chịu về, đứng hát "thích ăn chuối chiên" ở bãi xe._
+_Đại Nhạc Hội Siêu Nhân kết thúc lúc 23 giờ. Một triệu người theo dõi. Top xu hướng. Năm nghìn người vẫn chưa chịu về, đứng hát "thích ăn chuối chiên" ở bãi xe._
 _{giam_doc}, vẫn mặc bộ "Ông Kẹ Ngân Hàng", kéo bạn ra giữa hậu trường, trước mặt cả công ty._
 giam_doc: Các em. Từ thứ 2, {quan_ly_idol} là Trưởng phòng Nghệ sĩ. Lương cộng 20%. Kèm một trợ lý.
 giam_doc: *(quay sang bạn)* Trợ lý cầm điện thoại thứ hai. Cậu chỉ được cầm một cái thôi. Anh không ép. Đây là lệnh.
@@ -95,7 +95,7 @@ _Bạn không kiểm tra nó lần nào._
 // ------------------------------------------------------------
 === quan_ly_idol_kt_chuoi_chien_hai_nguoi ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_chuoi_chien_hai_nguoi
-_Đêm Hồng tan. Bãi đất trước sân khấu đầy giấy kim tuyến hồng. Công nhân cuộn dây điện. Bạn ngồi trên bậc thang sân khấu, hai cái điện thoại trên đùi, một cái 3% pin, một cái 1%._
+_Đại Nhạc Hội Siêu Nhân tan. Bãi đất trước sân khấu đầy giấy kim tuyến hồng. Công nhân cuộn dây điện. Bạn ngồi trên bậc thang sân khấu, hai cái điện thoại trên đùi, một cái 3% pin, một cái 1%._
 _Ở cổng, xe chuối chiên cuối cùng của đêm đang dọn hàng. {idol_het_thoi} đứng đó. Mua hai bịch._
 _Phát đi tới. Đưa bạn một bịch. Ngồi xuống cạnh bạn. Gần hơn mọi lần._
 idol_het_thoi: Anh {quan_ly_idol}.
@@ -141,14 +141,14 @@ _Ngoài cửa kính, người đeo kính đen đứng dậy, cất đàn, đi v�
 // ------------------------------------------------------------
 === quan_ly_idol_kt_chay_may ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_chay_may
-_Chiều 31/10. Hành lang Đài Tivi Hóng. Bạn vừa duyệt xong kịch bản phát sóng trực tiếp Đêm Hồng, tay trái cầm máy {idol_het_thoi}, tay phải cầm máy Nguyên, tai đeo tai nghe nối máy thứ ba._
+_Chiều 31/10. Hành lang Đài Tivi Hóng. Bạn vừa duyệt xong kịch bản phát sóng trực tiếp Đại Nhạc Hội Siêu Nhân, tay trái cầm máy {idol_het_thoi}, tay phải cầm máy Nguyên, tai đeo tai nghe nối máy thứ ba._
 _Ly cà phê thứ tám trong ngày. Pin: 1%. Của điện thoại. Và của bạn._
 _Hành lang nghiêng đi. Sàn nhà tiến lại gần. Âm thanh cuối cùng bạn nghe là ba tiếng chuông điện thoại cùng lúc, ba bài nhạc chuông khác nhau, như một bản hòa âm tệ._
 _Tối. Phòng khám Đa Khoa Khỏe Re. Bác sĩ đẩy kính lên trán, nhìn bạn._
 bac_si_khoe_re: Kiệt sức, thiếu ngủ, tim đập nhanh, caffeine trong máu đủ để nuôi một con voi. Anh cấm dùng điện thoại hai tuần.
 bac_si_khoe_re: *(nhìn bàn đầu giường)* Ba cái hả? Thôi, cấm cả ba.
 _Trên bàn đầu giường, ba cái điện thoại rung liên tục. Màn hình sáng rồi tắt, sáng rồi tắt, như ba con đom đóm hết hơi._
-_Cái TV nhỏ trên tường đang phát trực tiếp Đêm Hồng. Không có quản lý. {chi_dai} cầm bộ đàm chạy khắp nơi. Ai đó ở hậu trường gọi tên bạn rồi im._
+_Cái TV nhỏ trên tường đang phát trực tiếp Đại Nhạc Hội Siêu Nhân. Không có quản lý. {chi_dai} cầm bộ đàm chạy khắp nơi. Ai đó ở hậu trường gọi tên bạn rồi im._
 _Bạn với lấy cái điều khiển. Tắt tiếng._
 _Trên màn hình không tiếng, {idol_het_thoi} đang hát. Bạn biết bài gì. Bạn biết lúc nào tới câu thứ ba._
 _Cửa phòng khám hé mở. {editor} đứng đó, tay cầm một ly cà phê sữa. Thấy bạn tỉnh, {editor} đặt ly lên bàn, ngồi xuống ghế nhựa ở góc phòng, không nói gì._
@@ -161,7 +161,7 @@ _Ba cái điện thoại vẫn rung. Không ai nghe._
 // ------------------------------------------------------------
 === quan_ly_idol_kt_ganh_ho_toi_cung ===
 # ngay:31 # gio:23:45 # dieu_kien:ket_thuc_ganh_ho_toi_cung
-_Thứ 2 sau Đêm Hồng. Phòng HR. Ấm trà ô long. {hr} không cười._
+_Thứ 2 sau Đại Nhạc Hội Siêu Nhân. Phòng HR. Ấm trà ô long. {hr} không cười._
 hr: Anh {quan_ly_idol}. Mình cùng nhìn lại hành trình nha anh. Phạt thuế tháng 10: do quản lý. Phốt fan ảo: do quản lý tư vấn sai. Gameshow: do quản lý sắp xếp. Bánh kem: do quản lý không lường trước.
 hr: *(đẩy tờ giấy qua)* Em xin lỗi anh. Tên anh nằm trong danh sách.
 _Bạn ký. Tay không run. Bạn đã ký nhận lỗi giùm người khác nhiều lần tới mức chữ ký này quen tay._

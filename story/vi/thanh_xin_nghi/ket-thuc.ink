@@ -3,10 +3,10 @@
 // Kết thúc của Sơn chốt ở 19:10 ngày 31/10 (sau lựa chọn "hai sân khấu"),
 // nên cảnh đánh giá được gọi từ thanh_xin_nghi_3110_1910.
 // Ưu tiên: Hết Phép Cả Đời (Bị Soi 100 / phép ≤ -10 / đã ký cam kết)
-//          > Song Ca Đêm Hồng (bí mật) > Hai Ghế Một Mông
+//          > Song Ca Đại Nhạc Hội Siêu Nhân (bí mật) > Hai Ghế Một Mông
 //          > Ốm Trên Sóng Truyền Hình (nói dối, Độ Tin < 20, chưa tự thú)
 //          > Sơn Kim Tuyến > Điều Phối Không Nghỉ Ngày Nào
-// Không khớp: rời Đêm Hồng thì Ốm Trên Sóng Truyền Hình, ở lại thì Hết Phép Cả Đời.
+// Không khớp: rời Đại Nhạc Hội Siêu Nhân thì Ốm Trên Sóng Truyền Hình, ở lại thì Hết Phép Cả Đời.
 // ============================================================
 
 === thanh_xin_nghi_3010_danh_gia ===
@@ -67,7 +67,7 @@ _Group im 3 giây. Rồi 21 cái thả tim. Cái đầu tiên của {hr}._
 # ngay:31 # gio:23:00 # noi:san_khau_dem_hong
 _Bạn tắt điện thoại. Cầm bộ đàm._
 thanh_xin_nghi: Xe đón vào cổng sau. Anh {thuc_tap_sinh} giữ cửa cánh gà. Chị {chi_dai}, pháo giấy 20:14. Anh {it}, đèn số 3. Anh Nguyên, 20:15 lên.
-_Đêm Hồng chạy như một chiếc đồng hồ. Không chồng lịch nào. Không ai đi lạc. Ngay cả {cho} cũng xuất hiện đúng lúc, đúng chỗ, đúng nhịp trống._
+_Đại Nhạc Hội Siêu Nhân chạy như một chiếc đồng hồ. Không chồng lịch nào. Không ai đi lạc. Ngay cả {cho} cũng xuất hiện đúng lúc, đúng chỗ, đúng nhịp trống._
 _Ở đâu đó trong thành phố, chung kết "Giọng Ca Ước Mơ" đang chiếu. Không có {thanh_xin_nghi} Kim Tuyến. Bạn biết. Bạn đã chọn._
 _Nhưng hôm qua, ở họp đánh giá, anh {hr} đã đọc tên người nhận thưởng chuyên cần đầu tiên sau 3 năm. Cả phòng tưởng nghe nhầm. Tên bạn._
 _Tối thứ 7 tuần sau._
@@ -80,19 +80,19 @@ _Cả quán cười. Bạn hát._
 -> END
 
 // ------------------------------------------------------------
-// 😄 🔒 KẾT THÚC BÍ MẬT: SONG CA ĐÊM HỒNG
+// 😄 🔒 KẾT THÚC BÍ MẬT: SONG CA ĐẠI NHẠC HỘI SIÊU NHÂN
 === thanh_xin_nghi_kt_song_ca_dem_hong ===
 # ngay:31 # gio:20:30 # noi:san_khau_dem_hong
-_20:00. {it} cắm sợi cáp cuối cùng. Màn hình lớn ở sân khấu Đêm Hồng nhấp nháy, rồi chia đôi._
-_Một nửa: Đài Tivi Hóng, chung kết "Giọng Ca Ước Mơ". Một nửa: Sân khấu Đêm Hồng, Phường Tân Drama, 5.000 người cầm đèn hồng._
+_20:00. {it} cắm sợi cáp cuối cùng. Màn hình lớn ở sân khấu Đại Nhạc Hội Siêu Nhân nhấp nháy, rồi chia đôi._
+_Một nửa: Đài Tivi Hóng, chung kết "Giọng Ca Ước Mơ". Một nửa: Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama, 5.000 người cầm đèn hồng._
 it: Có tín hiệu. Đừng ai đụng vào cái gì. Không restart.
-_Bạn đứng ở Đài Tivi Hóng, kim tuyến từ đầu tới chân. Bên kia màn hình, {sieu_nhan_hong} đứng giữa sân khấu Đêm Hồng, giơ tay chào._
+_Bạn đứng ở Đài Tivi Hóng, kim tuyến từ đầu tới chân. Bên kia màn hình, {sieu_nhan_hong} đứng giữa sân khấu Đại Nhạc Hội Siêu Nhân, giơ tay chào._
 phu_mc_dai: Và đây là tiết mục đặc biệt nhất đêm nay! Thí sinh {thanh_xin_nghi} Kim Tuyến… song ca trực tiếp với… SIÊU NHÂN HỒNG!
 _Nhạc dạo "Công Viên". Bản mới. Bạn hát câu đầu. {sieu_nhan_hong} hát câu hai, sai lời: "khoai chiên". Cả hai sân khấu cùng cười._
-_Rồi tới điệp khúc. Một giọng thứ ba vang lên từ cánh gà Đêm Hồng. {idol_het_thoi}, không kính đen, hát bè. {quan_ly_idol} đứng cạnh, hai điện thoại tắt trong túi._
+_Rồi tới điệp khúc. Một giọng thứ ba vang lên từ cánh gà Đại Nhạc Hội Siêu Nhân. {idol_het_thoi}, không kính đen, hát bè. {quan_ly_idol} đứng cạnh, hai điện thoại tắt trong túi._
 _Kim tuyến và màu hồng lấp lánh trên sóng toàn quốc. Bộ đếm người theo dõi của {sieu_nhan_hong} nhảy như điên._
 ~ follow(150000)
-_Ở hàng ghế đầu sân khấu Đêm Hồng, {hr} đứng dậy, giơ cây lightstick ghi "SƠN KIM TUYẾN". Không giấu nữa._
+_Ở hàng ghế đầu sân khấu Đại Nhạc Hội Siêu Nhân, {hr} đứng dậy, giơ cây lightstick ghi "SƠN KIM TUYẾN". Không giấu nữa._
 _Cạnh đó, {giam_doc} trong bộ "Ông Kẹ Ngân Hàng" quay sang hỏi:_
 giam_doc: {hr}, em biết từ bao giờ?
 hr: Từ 47 tin nhắn trước, anh.
@@ -104,7 +104,7 @@ thanh_xin_nghi: Em cảm ơn bà ngoại. Và cảm ơn công ty đã cho em ngh
 // 😢 📺 ỐM TRÊN SÓNG TRUYỀN HÌNH
 === thanh_xin_nghi_kt_om_tren_song ===
 # ngay:31 # gio:20:30 # noi:san_khau_dem_hong
-_20:30. Sau cánh gà Đêm Hồng, đội kỹ thuật để một cái tivi nhỏ trên thùng loa, xem chung kết "Giọng Ca Ước Mơ" cho đỡ buồn lúc chờ._
+_20:30. Sau cánh gà Đại Nhạc Hội Siêu Nhân, đội kỹ thuật để một cái tivi nhỏ trên thùng loa, xem chung kết "Giọng Ca Ước Mơ" cho đỡ buồn lúc chờ._
 _{giam_doc} đi ngang, tay cầm ly cà phê, bộ "Ông Kẹ Ngân Hàng" xộc xệch. Ông ấy dừng lại._
 _Trên tivi: một thí sinh kim tuyến lấp lánh, tóc giả, hát rất hay. Camera quay cận. Cái đầu nghiêng 15 độ. Cái cách nắm micro như nắm cuốn lịch._
 _{giam_doc} đứng xem tới hết bài. Rồi quay sang hỏi cả cánh gà:_
@@ -126,7 +126,7 @@ _Ai đó, chắc là {bac_bao_ve}, đã kẹp thêm vào thùng một mẩu gi�
 - else:
     _Hồ sơ của bạn dày 3 cm. Phòng nhân sự đã đọc từng trang. Không còn lý do nào được duyệt nữa._
 }
-_20:00 ngày 31/10. Bạn ngồi sau cánh gà Đêm Hồng, cầm bộ đàm. Đèn đỏ nhấp nháy. Pháo giấy hồng chuẩn bị bắn._
+_20:00 ngày 31/10. Bạn ngồi sau cánh gà Đại Nhạc Hội Siêu Nhân, cầm bộ đàm. Đèn đỏ nhấp nháy. Pháo giấy hồng chuẩn bị bắn._
 _Điện thoại trong túi rung. Một tin nhắn tự động:_
 _"Thí sinh {thanh_xin_nghi} Kim Tuyến vắng mặt. Suất chung kết thuộc về người dự bị."_
 _Bạn đọc hai lần. Rồi tắt màn hình._
@@ -142,7 +142,7 @@ _Rồi nó gác cằm lên giày bạn. Như nói: tao nghe rồi. Hay mà._
 // 😢 🛵 HAI GHẾ MỘT MÔNG
 === thanh_xin_nghi_kt_hai_ghe_mot_mong ===
 # ngay:31 # gio:19:40 # noi:dai_lo_ket_xe
-_19:25. Bạn thay đồ kim tuyến trong nhà vệ sinh sân khấu Đêm Hồng, đội tóc giả trên đường ra cổng, bấm gọi xe._
+_19:25. Bạn thay đồ kim tuyến trong nhà vệ sinh sân khấu Đại Nhạc Hội Siêu Nhân, đội tóc giả trên đường ra cổng, bấm gọi xe._
 _19:31. Tài xế xe công nghệ hủy chuyến. "Em xin lỗi, xe em bể bánh."_
 _19:34. Tài xế thứ hai hủy chuyến. "Em xin lỗi, xe em… bể bánh."_
 _19:40. Tài xế thứ ba nhận chuyến, chở tới giữa Đại Lộ Kẹt Xe. Rồi hủy chuyến ngay giữa đường. "Em xin lỗi anh, em… cũng không biết vì sao."_

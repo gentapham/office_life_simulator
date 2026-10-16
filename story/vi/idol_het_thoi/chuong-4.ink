@@ -62,7 +62,7 @@ co_ca_vien: Con giống thằng ca sĩ hồi xưa ghê. Bài gì mà có cá vi�
 # ngay:17 # gio:19:00 # noi:nha_hang_vung_tau
 _Tiệc nướng hải sản. Hôm nay Hồng Coin x10, {dan_dau_tu} bao cả team ăn ghẹ. Ai cũng gọi thêm, không ai hỏi coin là gì._
 _{sales} đã say. Đứng lên ghế._
-sales: Mọi người nghe chị nói nè! Đêm Hồng chị mời ca sĩ nổi tiếng nhất nước về hát! Tin chị đi! Chắc kèo!
+sales: Mọi người nghe chị nói nè! Đại Nhạc Hội chị mời ca sĩ nổi tiếng nhất nước về hát! Tin chị đi! Chắc kèo!
 _Cả bàn quay sang nhìn bạn. Rồi quay đi chỗ khác, như thấy mình vừa nghĩ sai._
 _{giam_doc} cũng đã say, giơ ly bia lên:_
 giam_doc: Anh hứa! Tháng sau… tăng lương… cả công ty! Anh không ép, tùy các em… à không, anh hứa!

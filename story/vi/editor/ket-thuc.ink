@@ -48,7 +48,7 @@
 // 😄 1. MỘT TRIỆU CON CÚ
 === editor_kt_mot_trieu_con_cu ===
 # ngay:31 # gio:21:45 # noi:san_khau_dem_hong
-_Đêm Hồng. 21 giờ 45. Trên màn hình lớn, bộ đếm người theo dõi của {sieu_nhan_hong} chạy như đồng hồ đếm ngược ngày Tết._
+_Đại Nhạc Hội Siêu Nhân. 21 giờ 45. Trên màn hình lớn, bộ đếm người theo dõi của {sieu_nhan_hong} chạy như đồng hồ đếm ngược ngày Tết._
 _999.812. 999.904. 999.977._
 _Cả nghìn người đếm to theo. {hong_hot} hét vào micro livestream. {giam_doc} trong bộ Ông Kẹ Ngân Hàng ôm chầm lấy {it}, {it} không kịp né._
 _1.000.000._
@@ -97,7 +97,7 @@ _Ở dưới đường, có ai đó nói "Sống lâu trăm tuổi". Bạn khôn
 // 😄 3. 🔒 KẾT THÚC BÍ MẬT: BẢN DỰNG CUỐI CÙNG
 === editor_kt_ban_dung_cuoi_cung ===
 # ngay:31 # gio:23:55 # noi:hau_truong_dem_hong
-_Sau Đêm Hồng. Hậu trường. Đèn sân khấu đã tắt. Chỉ còn đèn tuýp trắng, mấy thùng đạo cụ, và mùi pháo hoa._
+_Sau Đại Nhạc Hội Siêu Nhân. Hậu trường. Đèn sân khấu đã tắt. Chỉ còn đèn tuýp trắng, mấy thùng đạo cụ, và mùi pháo hoa._
 _{quan_ly_idol} ngồi trên một thùng loa, laptop trên đùi. Hai cái điện thoại úp mặt xuống bên cạnh. Cái USB hình con cú cắm ở cổng bên phải._
 _Bạn đứng cách ba bước. Không dám lại gần hơn. Không dám đi xa hơn._
 _Bốn phút._
@@ -129,7 +129,7 @@ _Rồi sàn nhà nghiêng._
 _Bạn ngất trên bàn phím. Khi {thuc_tap_sinh} tìm thấy bạn lúc 7 giờ sáng, mặt bạn in hình hàng phím chữ, rõ nhất là chữ J._
 _Tỉnh dậy ở Phòng khám Đa Khoa Khỏe Re. Trần trắng. Đèn sáng. Tay cắm dây truyền._
 bac_si: Lần này là lần thứ mấy rồi? Cậu không phải cú. Cậu là người. Người thì phải ngủ.
-_Ngày 31/10. 8 giờ tối. Bạn vẫn nằm đó. Cái TV nhỏ trên tường đang phát trực tiếp Đêm Hồng._
+_Ngày 31/10. 8 giờ tối. Bạn vẫn nằm đó. Cái TV nhỏ trên tường đang phát trực tiếp Đại Nhạc Hội Siêu Nhân._
 _Video tổng kết của bạn lên màn hình. Dựng dở. Có một đoạn đen ba giây, chỗ bạn chưa kịp ghép. Không ai sửa được, vì không ai biết dùng phần mềm._
 _Khán giả vẫn vỗ tay. Người ta không biết chỗ đen đó là chỗ của bạn._
 _Rồi dòng chữ cuối video hiện lên, trắng trên nền đen:_
@@ -152,7 +152,7 @@ _{quan_ly_idol} cũng vậy._
 _Anh ấy bình luận dưới video, lúc 23:12:_
 _"Dựng hay ghê! Ai dựng vậy? Em dựng cho {idol_het_thoi} một cái y vậy nha, gấp."_
 _Kèm một biểu tượng ngón cái. Không phải con cú._
-_Bạn đọc bình luận đó ở căn 701. Rèm đen kín. Ba màn hình sáng. Ngoài kia, Đêm Hồng vừa tắt pháo hoa._
+_Bạn đọc bình luận đó ở căn 701. Rèm đen kín. Ba màn hình sáng. Ngoài kia, Đại Nhạc Hội Siêu Nhân vừa tắt pháo hoa._
 _Bạn đọc lại. Lần thứ hai. Lần thứ ba._
 _Rồi bạn làm điều mà bạn giỏi nhất, điều bạn đã làm suốt bốn năm._
 _Bạn mở phần mềm dựng phim. Tạo dự án mới. Đặt tên: "{idol_het_thoi}_tien_tay_215"._
@@ -171,7 +171,7 @@ truong_phong: Xin chào các bạn! Đây là kênh do anh xây dựng từ con 
 _Bình luận top: "Cú đâu rồi?", "Trả cú lại đây", "Ủa ông này là ai?". Sub giảm từng phút._
 _Bạn xem video đó ở căn 701. Rèm đen. Ba màn hình. Hai trăm triệu nằm trong tài khoản._
 _Bạn không biết mua gì. Bạn đã nghĩ cả tuần. Máy dựng mới? Bạn có rồi. Rèm mới? Rèm cũ vẫn đen. Kỳ nghỉ? Bạn không biết nghỉ là gì._
-_Ngoài kia, Đêm Hồng đang diễn ra. Bạn không đi. Video tổng kết của bạn đang chiếu, với logo chữ G bảy màu ở góc._
+_Ngoài kia, Đại Nhạc Hội Siêu Nhân đang diễn ra. Bạn không đi. Video tổng kết của bạn đang chiếu, với logo chữ G bảy màu ở góc._
 _Bạn mở trang kênh "G-Entertainment Official"._
 _Nút đỏ: "Đã đăng ký". Bạn là người đăng ký đầu tiên của kênh này, từ ngày nó chỉ có một video._
 _Bạn đưa chuột lên. Dừng lại một chút. Lâu hơn một giây._

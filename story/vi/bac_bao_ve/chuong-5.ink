@@ -271,7 +271,7 @@ _Một trong 7 cái ghế đó ghi tên bác._
     ~ qh("dan_dau_tu", 8)
 * [📒 Xin phép chủ tọa… sang ngồi bàn chủ nợ năm phút.]
     _Cả phòng cười. Bác ngồi xuống ghế chủ nợ, đặt cuốn sổ trực lên bàn, mở trang ghi nợ. Không nói gì. {dan_dau_tu} đổ mồ hôi._
-    dan_dau_tu: Bác… sau Đêm Hồng con trả bác trước tiên. Con hứa.
+    dan_dau_tu: Bác… sau Đại Nhạc Hội con trả bác trước tiên. Con hứa.
     { bv_chuong_cat_lo:
         dan_dau_tu: Con cắt lỗ rồi bác. Con còn đúng 500 nghìn. Con trả bác trước.
         ~ tien_cong(500000)
@@ -359,7 +359,7 @@ _Lá thư thứ tư. Lá cuối của tháng. Bác viết chậm hơn mọi lầ
     ~ bv_ke_tot_thang = true
     ~ bv_g(3)
     -> chon
-* [🌸 "Đêm Hồng sắp tới. Mọi thứ tốt đẹp. Ông yên tâm."]
+* [🌸 "Đại Nhạc Hội sắp tới. Mọi thứ tốt đẹp. Ông yên tâm."]
     ~ bv_dong_thu = bv_dong_thu + 1
     ~ bv_thu_dep = bv_thu_dep + 1
     ~ bv_g(-5)
@@ -409,7 +409,7 @@ thanh_xin_nghi: Con dòng thứ hai bác. Chắc tại con xin nghỉ nhiều.
 _10 giờ 30 tối. Bác đã ngủ. Tiếng gõ nhẹ vào cửa chòi. {giam_doc} đứng đó, không cà vạt, điện thoại trên tay sáng một email: "LL-Entertainment: Lời mời hợp tác. Giá gấp ba."_
 giam_doc: Em xin lỗi bác. Em biết bác ngủ sớm. Em… em không biết đi đâu.
 * [🍵 Dậy. Bật đèn. Pha trà. Không hỏi gì.]
-    _Hai người ngồi. Ấm trà. Đèn đường. {cho} ngáy. {giam_doc} kể: Lưu Lực muốn mua cả Siêu Nhân Hồng, ngay trước Đêm Hồng. Gấp ba 5 tỷ._
+    _Hai người ngồi. Ấm trà. Đèn đường. {cho} ngáy. {giam_doc} kể: Lưu Lực muốn mua cả Siêu Nhân Hồng, ngay trước Đại Nhạc Hội Siêu Nhân. Gấp ba 5 tỷ._
     giam_doc: Nếu cậu ấy đi… thì 10 tỷ, bác ạ. Thì hết.
     ~ bv_rot_tra("giam_doc", 10)
     -> sau

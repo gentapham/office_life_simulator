@@ -17,7 +17,7 @@ hong_hot: *(nói hơi nhanh)* Ủa ai đăng vậy ta? Tui… tui đâu biết g
 * [🗣️ Quát: "IM HẾT!"]
     _Một tiếng. Cả pantry im phăng phắc. Cái muỗng rơi vào ly nghe rõ như chuông chùa._
     chi_dai: Chưa ai bị đuổi. Chưa có danh sách nào được đọc. Ai còn truyền tin "10 người" thì gặp chị.
-    chi_dai: Bây giờ về chỗ. Làm việc. Đêm Hồng còn 10 ngày.
+    chi_dai: Bây giờ về chỗ. Làm việc. Đại Nhạc Hội còn 10 ngày.
     _Từng người lặng lẽ về chỗ. {sales} đi cuối cùng, không dám nhìn bạn._
     ~ cd_uy(8)
     ~ cd_nk(5)
@@ -257,8 +257,8 @@ truong_phong: Mình có thể họp nhanh 5 phút về quy trình hòa giải kh
 * [😇 "Được. 5 phút. Bấm giờ."]
     _Đúng 5 phút, bạn thổi còi. Lần thứ hai trong tháng {truong_phong} họp đúng giờ. Anh có vẻ tự hào._
     ~ qh("truong_phong", 5)
-- _Cặp 2 cãi nhau về "ai nghĩ ra cái slogan Đêm Hồng". Cặp 3 cãi nhau về hóa đơn tiếp khách. Cặp 4 cãi nhau về giấy nghỉ ốm thứ 9._
-_Ở bàn chủ nợ, {dan_dau_tu} vừa hứa trả {sales} 5 triệu "sau Đêm Hồng"._
+- _Cặp 2 cãi nhau về "ai nghĩ ra cái slogan Đại Nhạc Hội Siêu Nhân". Cặp 3 cãi nhau về hóa đơn tiếp khách. Cặp 4 cãi nhau về giấy nghỉ ốm thứ 9._
+_Ở bàn chủ nợ, {dan_dau_tu} vừa hứa trả {sales} 5 triệu "sau Đại Nhạc Hội Siêu Nhân"._
 * [📋 Đi từng bàn, mỗi bàn một câu, không ai được rời ghế.]
     chi_dai: {designer}, slogan của em. {bien_kich}, em sửa câu thứ hai cho hay hơn. Xong.
     chi_dai: {ke_toan}, bà duyệt 2 triệu tiếp khách. {sales}, em nộp hóa đơn trước thứ 2. Xong.
@@ -412,7 +412,7 @@ chi_dai: Biết rồi.
     ~ nguyen_theo_ll = false
     ~ cd_uy(15)
     ~ phat_hien(ll_moi_nguyen)
-* [🤫 "Anh cứ lên tầng 2. Tui không nói gì hết. Tui giữ chuyện này… tới Đêm Hồng."]
+* [🤫 "Anh cứ lên tầng 2. Tui không nói gì hết. Tui giữ chuyện này… tới Đại Nhạc Hội."]
     luu_luc: *(nhìn bạn, lần đầu không cười)* Chị muốn gì?
     chi_dai: Tui chưa biết. Lúc nào biết tui gọi.
     _Lưu Lực lên tầng 2, nhưng đi như người đang bị theo dõi. Bạn có một cái thóp lớn nhất quận Hóng._
@@ -459,12 +459,12 @@ _Ở cuối hành lang, {sieu_nhan_hong} ngồi một mình, phong bì gấp ba 
 === chi_dai_2710_sua_chua_hong_hao ===
 # ngay:27 # gio:16:30 # noi:tang_1
 _{sales} chạy vào phòng, điện thoại trên tay, mặt đỏ bừng._
-sales: Mấy anh chị! Bên Sữa Chua Hồng Hào ở Ven Đô gọi! Họ muốn tài trợ Đêm Hồng 1 tỷ! Thật! Lần này thật!
+sales: Mấy anh chị! Bên Sữa Chua Hồng Hào ở Ven Đô gọi! Họ muốn tài trợ Đại Nhạc Hội 1 tỷ! Thật! Lần này thật!
 _Cả phòng im lặng. Rồi {hong_hot} cười. Rồi {dan_dau_tu} cười. Rồi cả phòng cười._
 truong_phong: Thôi em, BTT Global cũng "thật" mà.
 _{sales} đứng giữa phòng, điện thoại vẫn sáng: "Hồng Hào - Phòng Marketing"._
 * [🤝 "Đưa chị số. Chị gọi lại."]
-    _Bạn gọi. Người nghe máy là một bà cụ, chủ cơ sở, giọng Ven Đô: "Con ơi, cậu áo hồng từng đẩy xe sữa cho bà giữa trời mưa. Bà muốn tài trợ Đêm Hồng. Mai bà ký."_
+    _Bạn gọi. Người nghe máy là một bà cụ, chủ cơ sở, giọng Ven Đô: "Con ơi, cậu áo hồng từng đẩy xe sữa cho bà giữa trời mưa. Bà muốn tài trợ Đại Nhạc Hội Siêu Nhân. Mai bà ký."_
     _Bạn cúp máy. Nhìn cả phòng. Cả phòng thôi cười._
     chi_dai: Thật.
     sales: *(òa khóc)* Lần đầu tiên em nói thật mà không ai tin…

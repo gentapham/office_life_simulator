@@ -77,7 +77,7 @@ Nhật chịu trách nhiệm **sản xuất mọi nội dung**: MV, gameshow, li
 | Gameshow 16/10 có clip highlight trong 2 tiếng sau khi phát sóng | +70.000 | Nếu Lĩnh ngủ quên, Nhật phải tự dựng (cần Tay Nghề Thật ≥ 40) |
 | Mỗi ngày họp quá 3 cuộc | −5.000 (nội dung ra chậm) | Cộng dồn |
 | Chuỗi video Tóp-tóp "Một ngày của Siêu Nhân Hồng" | +10.000 mỗi video, tối đa 5 | Cần Quỳnh làm thumbnail |
-| Livestream Đêm Hồng 31/10, Nhật làm đạo diễn | +100.000 nếu không sự cố | Phụ thuộc Bảo (âm thanh) và Hương (sân khấu) |
+| Livestream Đại Nhạc Hội Siêu Nhân 31/10, Nhật làm đạo diễn | +100.000 nếu không sự cố | Phụ thuộc Bảo (âm thanh) và Hương (sân khấu) |
 | Cãi nhau với Long trước mặt Nguyên | −15.000 (Nguyên buồn, đi giúp người cả buổi) | Điểm Ghế Phó −5 |
 
 ---
@@ -118,7 +118,7 @@ Nhật chịu trách nhiệm **sản xuất mọi nội dung**: MV, gameshow, li
 ### Chương 6: "Lịch Trống" (28/10 – 31/10)
 - **29/10:** wifi sập cả ngày. Không họp online, không gửi file, không ai mở được lịch. Lần đầu tiên sau 6 năm đi làm, **lịch của Nhật trống**. Nhật có thể đi từng bàn hỏi xem mọi người cần gì, hoặc ngồi một mình nhìn bảng trắng.
 - **30/10:** họp đánh giá. Thắng công bố Phó Giám đốc. Ai cũng nhìn Nhật và Long.
-- **31/10:** Đêm Hồng Halloween. Nhật đeo tai nghe đạo diễn ở cánh gà, hóa trang thành "cuốn lịch để bàn". Đêm nay không có cuộc họp nào, chỉ có một chương trình phải chạy từ đầu tới cuối.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Nhật đeo tai nghe đạo diễn ở cánh gà, hóa trang thành "cuốn lịch để bàn". Đêm nay không có cuộc họp nào, chỉ có một chương trình phải chạy từ đầu tới cuối.
 
 ---
 
@@ -212,7 +212,7 @@ Nhật chịu trách nhiệm **sản xuất mọi nội dung**: MV, gameshow, li
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
 | 1 | 😄 🪑 **Phó Giám Đốc Nhật** | Điểm Ghế Phó ≥ 70, Độ Lộ < 50, MV và gameshow hoàn thành đúng hạn, Siêu Nhân Hồng đạt ít nhất Mốc 3 | Sáng thứ Hai đầu tháng 11, Nhật ngồi ghế mới, mở email soạn lời mời "Họp nhanh 5 phút". Ngón tay dừng trên nút gửi. Nhật xóa hết, gõ lại: *"Tuần này không họp. Ai cần gì thì lên phòng anh."* Bấm gửi. Ngoài vách kính, cả phòng Sản xuất đứng dậy vỗ tay |
-| 2 | 😄 🎬 **Đạo Diễn Thật** | Tay Nghề Thật ≥ 80, đã Ghi Công cho Lĩnh ít nhất 3 lần, đã mở nhánh "Ca đêm hai người" | Đêm Hồng kết thúc, màn hình lớn chạy credits: *"Đạo diễn: Nhật. Dựng phim: Lĩnh."* Hai dòng to bằng nhau. 2 giờ sáng, phòng dựng chỉ còn hai người. Nhật tự cắt xong clip đầu tiên trong đời. Lĩnh ngáp, gật đầu: *"Render xong là xong anh."* |
+| 2 | 😄 🎬 **Đạo Diễn Thật** | Tay Nghề Thật ≥ 80, đã Ghi Công cho Lĩnh ít nhất 3 lần, đã mở nhánh "Ca đêm hai người" | Đại Nhạc Hội Siêu Nhân kết thúc, màn hình lớn chạy credits: *"Đạo diễn: Nhật. Dựng phim: Lĩnh."* Hai dòng to bằng nhau. 2 giờ sáng, phòng dựng chỉ còn hai người. Nhật tự cắt xong clip đầu tiên trong đời. Lĩnh ngáp, gật đầu: *"Render xong là xong anh."* |
 | 3 | 😄 🔒 **Kết thúc bí mật: Ban Phó Hai Người** | Quan hệ với Long ≥ 60, đã mở nhánh "Phòng thu tầng 30", giúp Long trình bày bài hát với Thắng, và ngày 30/10 Nhật đề cử Long trong khi Long đề cử Nhật | Thắng nhìn hai lá đơn đề cử lẫn nhau, gãi đầu: *"Thế thì… hai đứa cùng làm. Anh không ép, tùy các em."* Một tháng sau, Nhật lo sản xuất, Long lo âm nhạc, hai người dùng chung một cái bàn. Trên lịch chỉ có đúng một cuộc họp mỗi ngày: *"Họp nhanh 5 phút: trưa nay ăn gì?"* |
 | 4 | 😢 ⌨️ **Phím Cách Là Chạy** | Độ Lộ đạt 100 (có thể xảy ra bất cứ lúc nào, thường vào 16/10 hoặc 29/10) | Phòng họp chật kín. Thắng chỉ vào máy dựng: *"Em mở cho anh xem em làm thế nào."* Con trỏ nhấp nháy. Mười giây. Hai mươi giây. Duy rụt rè thì thầm từ cuối phòng: *"Dạ… bấm phím cách là nó chạy ạ."* Tuần sau, Lĩnh được đề bạt Trưởng phòng |
 | 5 | 😢 📄 **Bản Nháp Thứ 15** | Người khác (thường là Long) được đề bạt Phó Giám đốc, và Nhật chưa từng biết Long không muốn ghế | Tối 30/10, căn 501 Phố Mới. Nhật đứng trước bảng trắng, viết dòng tiêu đề "Đơn xin đề bạt, bản 15". Viết được nửa trang, Nhật dừng lại, xóa hết, viết vào góc bảng: *"Họp với chính mình: 5 phút."* Nhật ngồi xuống sàn. Cuộc họp kéo dài tới sáng |

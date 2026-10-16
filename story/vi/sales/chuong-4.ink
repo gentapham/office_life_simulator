@@ -64,7 +64,7 @@ _{hr} đang cầm loa điểm danh trò kéo co lần thứ 3._
 # ngay:17 # gio:19:30 # noi:vung_tau_quan_hai_san # bat_buoc
 _Quán hải sản sát biển. {dan_dau_tu} bao thật: ghẹ, mực, tôm hùm (một con, chia 31 người). Bạn ngồi cạnh {giam_doc}. Ly thứ 5._
 ~ an(60)
-giam_doc: {sales} này, Đêm Hồng mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không? Anh không ép, tùy em.
+giam_doc: {sales} này, Đại Nhạc Hội mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không? Anh không ép, tùy em.
 _Rượu chạy lên má. Lưỡi bạn nhẹ như bong bóng._ # hen_gio:6
 * [🗣️ "Tin chị đi, ca sĩ nổi tiếng nhất nước, chị gọi một cuộc là tới!"]
     ~ sl_hua_ca_si = true
@@ -267,7 +267,7 @@ bac_bao_ve: Bác… chưa biết có nên đọc không. Bác chỉ là người
 _Karaoke Hát Cho Nhau Nghe. {giam_doc} cầm micro, mặt đỏ như logo bản 7 màu._
 giam_doc: Các em! Siêu Nhân Hồng thành công, anh tăng lương 20%! Anh hứa!
 _Lần này có 6 cái điện thoại quay. Bạn nhìn {idol_het_thoi} đang ngồi góc phòng, ôm micro, chưa ai mời hát._
-* {sl_goi_y_phat} [🎤 Ngồi xuống cạnh {idol_het_thoi}: "Anh ơi. Đêm Hồng. 'Công Viên' bản remix. Anh hát nha."]
+* {sl_goi_y_phat} [🎤 Ngồi xuống cạnh {idol_het_thoi}: "Anh ơi. Đại Nhạc Hội. 'Công Viên' bản remix. Anh hát nha."]
     idol_het_thoi: *(gỡ kính đen)* Em… mời anh thật hả? Không phải đám cưới?
     sales: Thật. Không phải phét. Lần này em nói thật.
     { qh_idol_het_thoi >= 15:

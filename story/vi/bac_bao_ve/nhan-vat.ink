@@ -427,7 +427,7 @@ editor: *(ngáp)* Bác… con xin lỗi, con làm bác thức.
     ~ qh("editor", 10)
     ~ bv_rot_tra("editor", 3)
 * [💬 "Cháu dựng cái gì mà thức mãi thế?"]
-    editor: *(quay màn hình)* Video "16 năm" cho Đêm Hồng. Thiếu mỗi ảnh năm 2010.
+    editor: *(quay màn hình)* Video "16 năm" cho Đại Nhạc Hội. Thiếu mỗi ảnh năm 2010.
     bac_bao_ve: Bác có. Mai bác mang lên.
     editor: *(tỉnh hẳn)* Thật hả bác?
     ~ qh("editor", 8)
@@ -539,7 +539,7 @@ chi_dai: Bác ơi! Trà đá bác pha sẵn chưa, con khát khô cổ rồi.
 _8 giờ 10. {dan_dau_tu} rón rén đi vào… bằng cổng sau. Gặp ngay bác đang tưới cây ở cổng sau._
 dan_dau_tu: *(giật mình)* Ơ… bác! Bác… bác ra cổng sau làm gì ạ?
 * [📒 Mở sổ trực, chỉ vào dòng nợ.]
-    dan_dau_tu: Dạ… em nhớ mà bác. Sau Đêm Hồng. Em hứa.
+    dan_dau_tu: Dạ… em nhớ mà bác. Sau Đại Nhạc Hội. Em hứa.
     bac_bao_ve: Cháu hứa với 8 người. Bác là người thứ mấy?
     dan_dau_tu: *(cúi đầu)* …Thứ tư ạ.
     ~ bv_so_truc_dung = bv_so_truc_dung + 1

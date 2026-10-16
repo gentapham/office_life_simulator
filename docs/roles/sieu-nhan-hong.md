@@ -20,7 +20,7 @@ Mặc bộ đồ vào, Nguyên tự tin, tạo dáng, hô "Biến hình!". Tháo
 - Giàu nứt vách, mà ăn cơm một mình. Không ai biết tên thật.
 
 ### Bí mật 1: tiền từ đâu ra
-Năm 2019, Nguyên **trúng vé số độc đắc**. Không kể với ai, không đổi đời ồn ào, chỉ lặng lẽ mua bộ đồ hồng đầu tiên. Tháng 9/2026, Nguyên xách một vali tiền gõ cửa G-Entertainment: trả trước **5 tỷ**, thêm **5 tỷ** nếu đạt **1 triệu người theo dõi và top 10 xu hướng** trước Đêm Hồng 31/10. Nổi tiếng rồi thì giúp được nhiều người hơn. Và biết đâu, giúp được cả chính mình.
+Năm 2019, Nguyên **trúng vé số độc đắc**. Không kể với ai, không đổi đời ồn ào, chỉ lặng lẽ mua bộ đồ hồng đầu tiên. Tháng 9/2026, Nguyên xách một vali tiền gõ cửa G-Entertainment: trả trước **5 tỷ**, thêm **5 tỷ** nếu đạt **1 triệu người theo dõi và top 10 xu hướng** trước Đại Nhạc Hội Siêu Nhân 31/10. Nổi tiếng rồi thì giúp được nhiều người hơn. Và biết đâu, giúp được cả chính mình.
 
 Nguyên sợ nhất một điều: người ta biết tiền này là tiền vé số, rồi từ đó chỉ nhìn Nguyên như một cây ATM màu hồng.
 
@@ -145,11 +145,11 @@ Lưu ý: các NPC vẫn góp sức hoặc phá như bình thường. Hiếu vẫ
 - **23/10:** sinh nhật Nguyên, kiêm livestream. Bánh kem hồng 3 tầng. Tuất phá tan cái bánh trên sóng trực tiếp. Lựa chọn: cười, giận, hay nằm xuống sàn chơi với Tuất. Tối đó Nguyên về căn nhà 12 ghế. Nếu Tim Hồng ≥ 50, có một tin nhắn: *"Sinh nhật vui nha anh. Không phải PR đâu. —Vũ"*
 - **27/10:** Lưu Lực mời hợp đồng gấp ba (xem Mẫu 6).
 
-### Chương 6: "Đêm Hồng" (28/10 – 31/10)
+### Chương 6: "Đại Nhạc Hội Siêu Nhân" (28/10 – 31/10)
 - **28/10:** mốc 800.000.
 - **29/10 (wifi sập):** không livestream được. Nguyên đi giúp người cả ngày ngoài đường, không camera, không ai biết. Có thể gặp Hiếu đang ngồi ở quán trà đá đầu hẻm.
 - **30/10 (họp đánh giá):** Nguyên không phải nhân viên, nhưng được mời dự với tư cách đối tác. Nếu biết về danh sách cắt giảm của Tuấn, Nguyên có thể đứng ra xin cho một người (Tim Hồng hoặc quan hệ +20 với người đó).
-- **31/10:** Đêm Hồng Halloween. Cả công ty hóa trang, riêng Nguyên thì ngày nào cũng như hóa trang. Câu hỏi cuối cùng: **tháo mũ hay không**, trước ai, và vì ai.
+- **31/10:** Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang, riêng Nguyên thì ngày nào cũng như hóa trang. Câu hỏi cuối cùng: **tháo mũ hay không**, trước ai, và vì ai.
 
 ---
 
@@ -246,11 +246,11 @@ Lưu ý: các NPC vẫn góp sức hoặc phá như bình thường. Hiếu vẫ
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 💗 **Không Phải PR** | Tim Hồng ≥ 80, đã tháo mũ trước mặt Vũ ít nhất 2 lần, **chưa từng** tặng quà hay tỏ tình trước camera | Đêm Hồng tan. Sân thượng công ty, đèn thành phố. Vũ đưa bạn một tờ giấy: *"Kế hoạch đi ăn tối. Deadline: tối mai. Làm xong từ hôm qua rồi."* Lần đầu tiên trong đời Vũ làm xong việc sớm. Bạn để chiếc mũ hồng trên ghế nhựa, không đội lại |
+| 1 | 😄 💗 **Không Phải PR** | Tim Hồng ≥ 80, đã tháo mũ trước mặt Vũ ít nhất 2 lần, **chưa từng** tặng quà hay tỏ tình trước camera | Đại Nhạc Hội Siêu Nhân tan. Sân thượng công ty, đèn thành phố. Vũ đưa bạn một tờ giấy: *"Kế hoạch đi ăn tối. Deadline: tối mai. Làm xong từ hôm qua rồi."* Lần đầu tiên trong đời Vũ làm xong việc sớm. Bạn để chiếc mũ hồng trên ghế nhựa, không đội lại |
 | 2 | 😄 🐸 **Cây Kem Xóm Cây Me** | Đã mở nhánh "Hiếu Ếch", Món Nợ Xóm Cũ ≤ 20, đã xin lỗi Hiếu không có camera, và Mối Hận của Hiếu < 40 | Quán trà đá đầu Hẻm 69. Bạn mua hai cây kem, đưa Hiếu một cây. Hai mươi năm trước bạn giật của nó một cây. Hiếu cắn một miếng: *"Kem dở ẹc. Mà thôi, huề."* Bác Bình ngồi bàn bên rót trà, làm như không nghe thấy gì |
 | 3 | 😄 🔒 **Kết thúc bí mật: Bạn Bốn Chân** | Không chọc Tuất 10 ngày liên tiếp, cho Tuất xúc xích ít nhất 15 lần, tự tay cõng Tuất về khi Tuất bị lạc (sự kiện ẩn), và quan hệ với Tuất ≥ 80 | 23:00 ngày 31/10. Cổng công ty vắng. Tuất chạy từ gầm cầu thang ra, ngậm chiếc găng tay hồng bạn làm mất từ ngày 4/10, đặt xuống chân bạn. Rồi Tuất nằm ngửa, đòi gãi bụng. Bác Bình nhìn ra: *"Thế à."* Đây là lần đầu tiên Tuất không sủa bộ đồ hồng |
-| 4 | 😢 🎭 **Người Trong Bộ Đồ** | Độ Lộ Mặt < 10 tới 31/10, chưa từng tháo mũ trước ai, Tim Hồng < 40, Món Nợ Xóm Cũ ≥ 60 | Căn nhà 12 ghế. Tivi đang chiếu Siêu Nhân Hồng tạo dáng giữa pháo hoa Đêm Hồng. Bạn ngồi ở cái ghế duy nhất có dấu ngồi, ăn đĩa bánh chuối chiên mang về từ phòng chờ. Cả nước biết Siêu Nhân Hồng. Không ai biết Nguyễn Nguyên ăn tối chưa |
-| 5 | 😢 💔 **Chiêu PR Hay Ghê** | Tỏ tình với Vũ trên livestream hoặc trên sân khấu, khi Tim Hồng < 60 | Đêm Hồng, giữa sân khấu, bạn quỳ xuống đưa hoa hồng cho Vũ. Cả khán đài hét. Vũ cười, nhận hoa, nói nhỏ vào micro: *"Chiêu này đỉnh nóc kịch trần luôn anh ơi, KPI vượt rồi."* Sáng hôm sau, Vũ gửi cho bạn bản báo cáo lượt xem của màn tỏ tình, kèm sticker ngón cái |
+| 4 | 😢 🎭 **Người Trong Bộ Đồ** | Độ Lộ Mặt < 10 tới 31/10, chưa từng tháo mũ trước ai, Tim Hồng < 40, Món Nợ Xóm Cũ ≥ 60 | Căn nhà 12 ghế. Tivi đang chiếu Siêu Nhân Hồng tạo dáng giữa pháo hoa Đại Nhạc Hội Siêu Nhân. Bạn ngồi ở cái ghế duy nhất có dấu ngồi, ăn đĩa bánh chuối chiên mang về từ phòng chờ. Cả nước biết Siêu Nhân Hồng. Không ai biết Nguyễn Nguyên ăn tối chưa |
+| 5 | 😢 💔 **Chiêu PR Hay Ghê** | Tỏ tình với Vũ trên livestream hoặc trên sân khấu, khi Tim Hồng < 60 | Đại Nhạc Hội Siêu Nhân, giữa sân khấu, bạn quỳ xuống đưa hoa hồng cho Vũ. Cả khán đài hét. Vũ cười, nhận hoa, nói nhỏ vào micro: *"Chiêu này đỉnh nóc kịch trần luôn anh ơi, KPI vượt rồi."* Sáng hôm sau, Vũ gửi cho bạn bản báo cáo lượt xem của màn tỏ tình, kèm sticker ngón cái |
 | 6 | 😢 💸 **Cây ATM Hồng** | Độ Lộ Tiền đạt 100 (có thể xảy ra bất cứ lúc nào) | Tin "Siêu Nhân Hồng là tỷ phú vé số" lên top xu hướng. Điện thoại bạn có 47 tin nhắn chưa đọc. Chương: *"Anh ơi lần này là lên thật."* Phát: *"Mượn tạm em ít vốn ra album."* Người lạ: *"Anh còn nhớ em hông?"* Không tin nhắn nào hỏi: *"Anh khỏe hông?"* |
 
 ---

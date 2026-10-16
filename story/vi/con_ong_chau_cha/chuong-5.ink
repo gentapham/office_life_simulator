@@ -210,7 +210,7 @@ _Studio im phăng phắc. Cần một thứ gì đó lấp khoảng lặng này.
 _Gần nửa đêm. Điện thoại rung. {sieu_nhan_hong} nhắn:_
 sieu_nhan_hong: *(tin nhắn)* Anh nghe 14 lần rồi. Câu "sau chiếc mũ là một người bình thường"… sao em biết vậy?
 * [💬 "Em thấy anh trên sân thượng hôm mất điện. Em hông kể ai."]
-    sieu_nhan_hong: *(một lúc lâu)* …Cảm ơn em. Đêm Hồng anh hát bài này được hông?
+    sieu_nhan_hong: *(một lúc lâu)* …Cảm ơn em. Đại Nhạc Hội anh hát bài này được hông?
     ~ qh("sieu_nhan_hong", 10)
     ~ long_bh(5)
 * [🎵 "Em đoán thôi. Ai cũng có một cái mũ."]
@@ -453,7 +453,7 @@ _Tối. Sân thượng công ty. Gió lạnh. Bạn đứng tựa lan can, nghe 
 * [🎵 "Lưu Lực trả 300 triệu cho bài của tui. Ông nghĩ sao?"]
     truong_phong: Tớ nghĩ… bài đó viết cho Siêu Nhân Hồng. Và tớ muốn đạo diễn cái đêm nó được hát.
     con_ong_chau_cha: Ông lo cho bài tui hả?
-    truong_phong: Lo cho chương trình Đêm Hồng thôi.
+    truong_phong: Lo cho chương trình Đại Nhạc Hội thôi.
     con_ong_chau_cha: Xạo.
     ~ qh("truong_phong", 8)
 * [😶 Đưa {truong_phong} một tai nghe, mở bản 42.]

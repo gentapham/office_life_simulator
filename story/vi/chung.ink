@@ -1,7 +1,7 @@
 // ============================================================
 // NỘI DUNG CHUNG · file gốc
 // Sự kiện ngẫu nhiên, tin đồn, nói chuyện vặt, mở đầu,
-// Đêm Hồng, kết thúc sự nghiệp, một tháng sau.
+// Đại Nhạc Hội Siêu Nhân, kết thúc sự nghiệp, một tháng sau.
 // Game nhảy thẳng vào từng cảnh (knot) theo thẻ.
 // ============================================================
 INCLUDE chung/bien-chung.ink

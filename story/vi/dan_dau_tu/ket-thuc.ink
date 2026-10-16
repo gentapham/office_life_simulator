@@ -76,7 +76,7 @@ hr: Anh {dan_dau_tu} ơi, em chỉ muốn cùng anh nhìn lại hành trình. S�
 _Buổi đánh giá. {giam_doc} gọi tên bạn, đứng dậy, bắt tay._
 giam_doc: Từ tháng 11, {dan_dau_tu} là Trưởng nhóm Dữ liệu. Lương tăng 20%. Anh không ép, nhưng anh cũng không cho em từ chối.
 _{quan_ly_idol} vỗ tay đầu tiên. Rồi {hong_hot}. Rồi cả phòng. {ke_toan} vỗ tay mà không hỏi hóa đơn._
-_Đêm 31/10, Đêm Hồng đã qua. Con số trên điện thoại bạn vượt một triệu, lúc 21 giờ 47 phút. Bạn chụp màn hình đúng một lần._
+_Đêm 31/10, Đại Nhạc Hội Siêu Nhân đã qua. Con số trên điện thoại bạn vượt một triệu, lúc 21 giờ 47 phút. Bạn chụp màn hình đúng một lần._
 _Tối đó, ở gác lửng Hẻm 69, bạn ngồi trước laptop. Hai cửa sổ. Bên trái là bảng số liệu tháng 11, chưa có số. Bên phải là app chart, biểu tượng nhỏ, đỏ, quen thuộc._
 _Bạn mở điện thoại. Giữ ngón tay trên biểu tượng app chart. Một giây. Hai giây._
 _"Cắt lỗ là thua." Ba giây._
@@ -93,7 +93,7 @@ _Bên kia vách, chú Sáu karaoke hát "Công Viên". Sai lời. Bạn hát the
 // 😄 🧾 SỔ NỢ VỀ 0
 === dan_dau_tu_kt_so_no_ve_0 ===
 # ngay:31 # gio:16:00 # noi:tang_1
-_Chiều 31/10, trước Đêm Hồng. Bạn đi một vòng công ty với cuốn sổ nợ, cuốn sổ đã theo bạn ba năm. Trang nào cũng gạch xóa._
+_Chiều 31/10, trước Đại Nhạc Hội Siêu Nhân. Bạn đi một vòng công ty với cuốn sổ nợ, cuốn sổ đã theo bạn ba năm. Trang nào cũng gạch xóa._
 _Người đầu tiên: Bác {bac_bao_ve}. Bạn đã trả bác từ trước. Hôm nay bạn chỉ ghé chòi để đóng lại trang đầu tiên của cuốn sổ._
 bac_bao_ve: Xong rồi à? … Ừ. Ngồi uống ngụm trà đã rồi đi tiếp.
 _{it} đang ngồi trong phòng server. Bạn gõ cửa, đưa phong bì cuối._
@@ -113,7 +113,7 @@ _Bạn mở cuốn sổ nợ, trang cuối, viết một chữ "0". Rồi gấp 
 // 😄 🔒 KẾT THÚC BÍ MẬT: THƯ TAY CỦA G
 === dan_dau_tu_kt_thu_tay_g ===
 # ngay:31 # gio:23:45 # noi:choi_bao_ve
-_Đêm 31/10. Đêm Hồng đã tắt đèn. Bộ đàm rè lên giọng Bác {bac_bao_ve}: "Cậu {dan_dau_tu} ra chòi bác một lát."_
+_Đêm 31/10. Đại Nhạc Hội Siêu Nhân đã tắt đèn. Bộ đàm rè lên giọng Bác {bac_bao_ve}: "Cậu {dan_dau_tu} ra chòi bác một lát."_
 _Chòi bảo vệ. Ấm trà nóng. {cho} nằm trên ghế bố, đuôi vẫy nhẹ khi thấy bạn, lần đầu tiên trong tháng._
 bac_bao_ve: Thư mới. Tới chiều nay. Có một đoạn cho cậu.
 _Bác đưa lá thư tay, ký đúng một chữ "G". Bác chỉ vào đoạn cuối:_
@@ -139,10 +139,10 @@ _Xe về quê lăn bánh lúc 8 giờ. Bạn ngồi cạnh cửa sổ. Thành Ph
 _Tối đó, trên xe, điện thoại báo:_
 { ddt_chien_dich_on():
     _"Siêu Nhân Hồng đạt 1.000.000 người theo dõi!"_
-    _Bạn mở group công ty. Mọi người đang ăn mừng: ảnh Đêm Hồng, ảnh pháo giấy, ảnh {giam_doc} trong bộ đồ Ông Kẹ Ngân Hàng ôm {ke_toan} khóc._
+    _Bạn mở group công ty. Mọi người đang ăn mừng: ảnh Đại Nhạc Hội Siêu Nhân, ảnh pháo giấy, ảnh {giam_doc} trong bộ đồ Ông Kẹ Ngân Hàng ôm {ke_toan} khóc._
 - else:
-    _"Đêm Hồng đã kết thúc."_
-    _Bạn mở group công ty. Mọi người đang gửi ảnh Đêm Hồng, ảnh pháo giấy, ảnh {giam_doc} trong bộ đồ Ông Kẹ Ngân Hàng ngồi lặng trên bậc sân khấu. Ai cũng buồn, nhưng ai cũng ở đó với nhau._
+    _"Đại Nhạc Hội Siêu Nhân đã kết thúc."_
+    _Bạn mở group công ty. Mọi người đang gửi ảnh Đại Nhạc Hội Siêu Nhân, ảnh pháo giấy, ảnh {giam_doc} trong bộ đồ Ông Kẹ Ngân Hàng ngồi lặng trên bậc sân khấu. Ai cũng buồn, nhưng ai cũng ở đó với nhau._
 }
 _Không ai nhắc tới bạn. Bạn tưởng vậy._
 _Rồi một tin nhắn hiện lên. Từ Bác {bac_bao_ve}. Người không bao giờ nhắn group._
@@ -172,7 +172,7 @@ _Bác {bac_bao_ve} đứng trong chòi, không nói gì. Bác mở cổng rộng
 # ngay:31 # gio:08:00 # noi:cong_cong_ty
 _Bạn đã trả được hết nợ. Bằng 15 triệu của LL. Từng người nhận phong bì, cảm ơn, không ai hỏi tiền ở đâu ra._
 { nguyen_theo_ll:
-    _Đêm 31/10, {sieu_nhan_hong} không xuất hiện trên Sân khấu Đêm Hồng. Ở tòa nhà kính bên kia đường, một sân khấu khác sáng đèn xanh lá chuối._
+    _Đêm 31/10, {sieu_nhan_hong} không xuất hiện trên Sân khấu Đại Nhạc Hội Siêu Nhân. Ở tòa nhà kính bên kia đường, một sân khấu khác sáng đèn xanh lá chuối._
 - else:
     _Đêm 31/10, {sieu_nhan_hong} diễn hết mình. Nhưng LL đã đi trước một bước ở mọi khung giờ, mọi tệp khán giả. Con số dừng lại cách một triệu rất xa._
 }

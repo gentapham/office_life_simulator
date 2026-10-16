@@ -34,7 +34,7 @@ _Máy trái rung. {sieu_nhan_hong}: "Anh {quan_ly_idol} ơi, công ty mình sắ
 # ngay:21 # gio:15:00 # noi:phong_giam_doc
 _{dan_dau_tu} gõ cửa phòng giám đốc, ôm laptop, mặt nghiêm túc tới mức lạ. {giam_doc} gọi bạn vào nghe cùng._
 dan_dau_tu: Sếp. {quan_ly_idol}. Tui coi số liệu ba tuần. Khán giả không thích Nguyên khi Nguyên diễn. Họ thích Nguyên khi Nguyên đi giúp người thật. Clip bà cụ, clip kéo lưới, clip đẩy xe. Giữ chân gấp năm lần MV.
-giam_doc: Thế thì sao? Cả chiến dịch đổi hướng à? Ba tuần nữa là Đêm Hồng rồi!
+giam_doc: Thế thì sao? Cả chiến dịch đổi hướng à? Ba tuần nữa là Đại Nhạc Hội rồi!
 _Cả hai quay sang bạn. Người cầm lịch của Nguyên._
 * [🤝 "Đổi. Mình bớt quay, để Nguyên đi giúp người. Mình chỉ cần theo sau mà ghi lại."]
     giam_doc: *(im lâu)* …Anh không ép, tùy cậu. Cậu là người hiểu nó.
@@ -321,7 +321,7 @@ luu_luc: Anh {quan_ly_idol}, mười hai năm anh gánh cái công ty sắp sậ
 luu_luc: Còn {idol_het_thoi}… thì thôi, anh hiểu mà.
 * [✍️ "Đưa bút đây."]
     _Bạn ký. Chữ ký của bạn trên giấy xanh lá chuối trông lạ lẫm như chữ người khác._
-    luu_luc: *(mỉm cười)* Tuyệt vời. Hạn chót: Đêm Hồng. Không có Nguyên thì hợp đồng này là giấy lộn.
+    luu_luc: *(mỉm cười)* Tuyệt vời. Hạn chót: Đại Nhạc Hội. Không có Nguyên thì hợp đồng này là giấy lộn.
     ~ thai_ky_ll = true
     ~ thai_mo_dat_nguyen = true
     ~ thai_tt(-50)
@@ -362,8 +362,8 @@ giam_doc: {quan_ly_idol}. Thứ 6 họp đánh giá. Hợp đồng thằng {idol
 * [😶 "Để em nghĩ."]
     giam_doc: Nghĩ nhanh lên. Anh cũng đang nghĩ.
 - { thai_doi_lich_son >= 1 and not thai_to_son:
-    thanh_xin_nghi: *(đi ngang, thì thầm)* Anh {quan_ly_idol}. Em vô chung kết. Đêm 31. 20 giờ. Cùng giờ Đêm Hồng.
-    _Bạn nhìn {thanh_xin_nghi}. Rồi nhìn lịch Đêm Hồng. Hai khung giờ chồng lên nhau như hai khối gạch._
+    thanh_xin_nghi: *(đi ngang, thì thầm)* Anh {quan_ly_idol}. Em vô chung kết. Đêm 31. 20 giờ. Cùng giờ Đại Nhạc Hội.
+    _Bạn nhìn {thanh_xin_nghi}. Rồi nhìn lịch Đại Nhạc Hội Siêu Nhân. Hai khung giờ chồng lên nhau như hai khối gạch._
 }
 -> END
 

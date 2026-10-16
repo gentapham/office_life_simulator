@@ -53,7 +53,7 @@ _Hai nhân viên mới là hai bạn sinh viên năm cuối, cầm điện tho�
 _Một bạn rụt rè hỏi: "Dạ chị ơi, tụi em bắt đầu từ đâu ạ?"_
 hong_hot: Từ… cách cầm ba cái điện thoại một lúc. Rồi tới cách biết khi nào thì không cầm cái nào.
 _{designer} vỗ tay to nhất. {it} gật đầu đúng một lần. Ở cuối phòng, {chi_dai} giơ ngón cái._
-_Đêm 31/10. Đêm Hồng. Bạn đứng giữa khán đài, ba điện thoại trên tay. Một cái live. Một cái đếm. Một cái để đọc tin nhắn._
+_Đêm 31/10. Đại Nhạc Hội Siêu Nhân. Bạn đứng giữa khán đài, ba điện thoại trên tay. Một cái live. Một cái đếm. Một cái để đọc tin nhắn._
 _999.412… 999.870… 999.996…_
 _Cả khán đài đếm ngược theo con số trên màn hình lớn. Sếp trong bộ "Ông Kẹ Ngân Hàng" nắm tay {ke_toan}, tay kia nắm tay {thanh_ninh}._
 _1.000.000._
@@ -70,7 +70,7 @@ _Và nó vẫn nóng như vậy._
 // ------------------------------------------------------------
 === hong_hot_kt_cai_mieng_vang ===
 # dieu_kien:ket_thuc_cai_mieng_vang
-_Đêm Hồng qua đi. Bạn không đếm con số. Bạn đếm những bí mật mình đã không kể: trang 47, khoản nợ của sếp, chuyện {thanh_ninh} đi LL, một nhà kho có lỗ thông gió hình con cá._
+_Đại Nhạc Hội Siêu Nhân qua đi. Bạn không đếm con số. Bạn đếm những bí mật mình đã không kể: trang 47, khoản nợ của sếp, chuyện {thanh_ninh} đi LL, một nhà kho có lỗ thông gió hình con cá._
 _Mỗi cái nặng như một hòn đá. Và bạn vẫn đứng được._
 _Một tháng sau._
 _Bàn mạng xã hội của bạn có thêm một chiếc ghế. Ghế nhựa đỏ, mượn từ pantry, không ai trả lại._
@@ -90,7 +90,7 @@ _"Hóng để hiểu, không phải để kể."_
 // ------------------------------------------------------------
 === hong_hot_kt_confession_cuoi_cung ===
 # dieu_kien:ket_thuc_confession_cuoi_cung
-_Đêm Hồng. 21 giờ. Giữa lúc {sieu_nhan_hong} chuẩn bị bài hát cuối, bạn mở máy "NGAN-LAPTOP" lần cuối._
+_Đại Nhạc Hội Siêu Nhân. 21 giờ. Giữa lúc {sieu_nhan_hong} chuẩn bị bài hát cuối, bạn mở máy "NGAN-LAPTOP" lần cuối._
 _Ba tuần nay bạn không đăng một bài cay nào. Bạn chỉ đọc. Và lưu lại những bài tốt nhất, những bài không ai thả haha._
 _Bạn gõ. Ký tên thật._
 _"Admin là {hong_hot}. Bốn năm nay, trang này nhận 3.112 bài. Đây là những điều tốt đẹp nhất mà các bạn từng gửi cho trang này:"_
@@ -117,7 +117,7 @@ _Bên dưới là danh sách bài đã đăng. Bài "Lương về trễ, sếp �
 _Không ai nói gì. Sếp nhìn màn hình. {hr} mỉm cười. {it} nhìn xuống bàn._
 _Trưa đó ở pantry, mọi người dịch ghế ra xa bạn một chút. Không ai nói gì. Không ai cần nói gì. Ai cũng biết, và đó là chuyện duy nhất tuần này bạn không phải người kể._
 _Chỉ có {designer} vẫn ngồi cạnh. Bà ấy không nói gì. Bà ấy chia cho bạn nửa ly trà sữa, như mọi ngày. Rồi ăn tiếp._
-_Đêm Hồng, bạn đứng ở rìa khán đài. Không ai đưa bạn điện thoại nào để live. Fanpage đã giao cho {ran_doc}._
+_Đại Nhạc Hội Siêu Nhân, bạn đứng ở rìa khán đài. Không ai đưa bạn điện thoại nào để live. Fanpage đã giao cho {ran_doc}._
 _Về Hẻm 69. Phòng 5, dãy A. Đèn LED tắt. Ring light tắt._
 _Bạn áp tai vào tường, theo thói quen._
 _Phòng bên im lặng._
@@ -156,7 +156,7 @@ _Không ai chắc nó bắt đầu từ đâu. Từ chuyện đổi pin lấy b�
 _Ai cũng biết. Ai cũng kể. Không ai kể với bạn._
 _Ở pantry, câu chuyện ngừng lại khi bạn bước vào. Rồi tiếp tục khi bạn bước ra. Bạn biết vì bạn từng là người ngừng lại, rồi tiếp tục._
 _Group "Hội Anti Sếp" có 15 thành viên. Sáng nay còn 14. Bạn là người bị mời ra. Bởi chính group bạn lập._
-_Đêm 31/10. Đêm Hồng đang diễn ở Phường Tân Drama. Tiếng nhạc vọng tới tận Hẻm 69._
+_Đêm 31/10. Đại Nhạc Hội Siêu Nhân đang diễn ở Phường Tân Drama. Tiếng nhạc vọng tới tận Hẻm 69._
 _Bạn ngồi một mình trong phòng trọ đầy đèn LED. Ba điện thoại. Không cái nào có tin nhắn mới._
 _Qua bức tường mỏng như tờ lịch, bạn nghe giọng ai đó ở phòng bên, nói với ai đó qua điện thoại:_
 ran_doc: *(vọng qua tường)* Nghe gì chưa?

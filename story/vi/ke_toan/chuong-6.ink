@@ -39,7 +39,7 @@ _Bạn nhớ tờ hóa đơn đó. Bạn đã từ chối. Rồi ai đó đã t�
 === ke_toan_2910_tien_san_khau ===
 # ngay:29 # gio:13:00 # noi:phong_ke_toan # bat_buoc
 _Ngày Internet Quốc tế. Wifi sập cả tòa nhà. Ngân hàng điện tử không vào được. Video của {editor} kẹt ở 99%. {it} đang bị cả công ty đuổi._
-_Bên cho thuê Sân khấu Đêm Hồng gọi: "Chị chuyển 80 triệu trước 17:00 nha chị. Không thì 17:30 tụi em tháo dàn."_
+_Bên cho thuê Sân khấu Đại Nhạc Hội Siêu Nhân gọi: "Chị chuyển 80 triệu trước 17:00 nha chị. Không thì 17:30 tụi em tháo dàn."_
 _4G một vạch. Ngân hàng chỉ còn cách đi tận nơi. Đại Lộ Kẹt Xe giờ này: một tiếng, nếu may._
 * [🛵 Chạy xe ra Ngân hàng Tín Dụng Đen Đủi.]
     { RANDOM(1, 10) <= 6:
@@ -59,7 +59,7 @@ _4G một vạch. Ngân hàng chỉ còn cách đi tận nơi. Đại Lộ Kẹt
     ~ kt_cat_ket(-80)
     ~ kt_them_dau_vet(1)
     _Bạn đếm 80 triệu trước mặt anh quản lý sân khấu. Anh ta nhìn xấp tiền buộc dây thun, nhìn bạn._
-    _Đêm Hồng được cứu. Lúc ký biên nhận, bạn thấy {hong_hot} đứng sau lưng, điện thoại vẫn đang phát wifi "nghegichua"._
+    _Đại Nhạc Hội Siêu Nhân được cứu. Lúc ký biên nhận, bạn thấy {hong_hot} đứng sau lưng, điện thoại vẫn đang phát wifi "nghegichua"._
     ~ kt_ngu(10)
 * [📞 Gọi {giam_doc}: "Anh, anh đi với em. Ngân hàng cần chữ ký chủ tài khoản."]
     giam_doc: Anh xuống ngay. Anh chở em.
@@ -78,7 +78,7 @@ _4G một vạch. Ngân hàng chỉ còn cách đi tận nơi. Đại Lộ Kẹt
 # ngay:29 # gio:15:30 # noi:choi_bao_ve
 _Không wifi. Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác {bac_bao_ve} ngồi giữa núi giấy note. {cho} chạy đưa thư lên các tầng. {chi_dai} điều phối bằng bộ đàm._
 bac_bao_ve: Cháu {ke_toan}. Có ba tờ cho cháu.
-_Tờ 1, chữ của {thuc_tap_sinh}: "Dạ chị ơi, hóa đơn ghế Đêm Hồng em để trên bàn chị rồi ạ. 400 cái ghế, em đếm 3 lần ạ."_
+_Tờ 1, chữ của {thuc_tap_sinh}: "Dạ chị ơi, hóa đơn ghế Đại Nhạc Hội Siêu Nhân em để trên bàn chị rồi ạ. 400 cái ghế, em đếm 3 lần ạ."_
 _Tờ 2, không ký tên: "Chị {ke_toan} ơi, nghe nói chị có két sắt riêng hả?"_
 _Tờ 3, chữ của {hr}: "{ke_toan} rảnh không, mai trước giờ họp lên phòng anh uống trà xíu. Chuyện công việc."_
 * [✍️ Trả lời tờ 2: "Két sắt nào cũng có. Hóa đơn đâu em?"]
@@ -217,10 +217,10 @@ _Quỹ Công Ty: {kt_quy_cong_ty} triệu. Bạn đọc từng con số. Không 
 === ke_toan_3110_hang_ghe_cuoi ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
 { kt_dang_nam_vien:
-    _Bạn đang nằm ở Phòng khám Khỏe Re. Đêm Hồng ở ngoài kia. Bạn xem qua điện thoại._
+    _Bạn đang nằm ở Phòng khám Khỏe Re. Đại Nhạc Hội Siêu Nhân ở ngoài kia. Bạn xem qua điện thoại._
     -> END
 }
-_Đêm Hồng Halloween. Sân khấu ngoài trời, 400 cái ghế {thuc_tap_sinh} xếp. Bạn ngồi hàng cuối cùng, máy tính bỏ túi trong tay._
+_Đại Nhạc Hội Siêu Nhân. Sân khấu ngoài trời, 400 cái ghế {thuc_tap_sinh} xếp. Bạn ngồi hàng cuối cùng, máy tính bỏ túi trong tay._
 _Mở màn: phim ngắn "Người Hùng Không Tên". Rồi video "16 năm" của {editor}. Rồi đèn hồng bật._
 { nguyen_theo_ll:
     _Không có {sieu_nhan_hong}. {idol_het_thoi} cầm micro hát "Công Viên" cho 400 cái ghế. 60 người ngồi. Bạn đếm. Bạn không cần đếm cũng biết._

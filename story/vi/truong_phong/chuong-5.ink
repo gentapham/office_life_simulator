@@ -358,7 +358,7 @@ con_ong_chau_cha: Chú… cháu có bài này. Cháu tự viết. Cho Siêu Nhâ
 _Bản 41 vang lên. {giam_doc} ngồi im. Tới đoạn bridge, {giam_doc} cởi kính ra._
 giam_doc: Cháu… viết từ bao giờ?
 con_ong_chau_cha: Từ lâu rồi chú.
-* [🧱 Mở bảng trắng: "Anh ơi, đây là kế hoạch đưa bài vào Đêm Hồng, phòng em lo sản xuất."]
+* [🧱 Mở bảng trắng: "Anh ơi, đây là kế hoạch đưa bài vào Đại Nhạc Hội, phòng em lo sản xuất."]
     giam_doc: *(nhìn sơ đồ, nhìn hai đứa)* Hai đứa làm chung từ bao giờ thế?
     truong_phong: Từ hôm qua ạ.
     giam_doc: Được. Anh không ép. *(ngừng)* Lần này anh nói thật: anh không ép.
@@ -482,7 +482,7 @@ _Sáu năm. Một tháng chiến tranh. Và đối thủ của bạn chưa bao g
     ~ qh("con_ong_chau_cha", 3)
 * [💬 "Thế còn LL? Cậu có bán bài không?"]
     con_ong_chau_cha: Hông. Bài đó viết cho Siêu Nhân Hồng. Mà ông hỏi vậy… là ông lo cho bài tui hả?
-    truong_phong: Lo cho chương trình Đêm Hồng thôi.
+    truong_phong: Lo cho chương trình Đại Nhạc Hội thôi.
     con_ong_chau_cha: Xạo.
     ~ qh("con_ong_chau_cha", 8)
 - -> END

@@ -129,7 +129,7 @@ _Đêm 29. Gác mái. Bản thảo "Công Ty Là Gia Đình" dày {bk_trang_tieu
         _5 giờ 40 sáng. Bạn gõ chữ "HẾT" lần thứ hai trong tuần. Lần này là của bạn. Toàn bộ._
         ~ bk_cam(20)
     }
-* [🐈 Ngủ. Mai còn ô credit. Mai còn Đêm Hồng.]
+* [🐈 Ngủ. Mai còn ô credit. Mai còn Đại Nhạc Hội.]
     ~ nghi(40)
     ~ bk_vuot_meo = bk_vuot_meo + 1
     ~ cang_thang(-10)
@@ -192,7 +192,7 @@ truong_phong: Phòng Sản xuất xin báo cáo. Kịch bản phim ngắn… *(n
 // ------------------------------------------------------------
 === bien_kich_3110_hau_truong ===
 # ngay:31 # gio:18:30 # noi:san_khau_dem_hong # bat_buoc
-_Sân khấu Đêm Hồng. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng", vest đen, răng nanh nhựa. Còn {sieu_nhan_hong} thì… vẫn là {sieu_nhan_hong}._
+_Sân khấu Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng", vest đen, răng nanh nhựa. Còn {sieu_nhan_hong} thì… vẫn là {sieu_nhan_hong}._
 _Hậu trường chật cứng. Ngoài kia cả nghìn người đang tới. Màn hình lớn sẽ chiếu phim của bạn lúc 19:30._
 { bk_hai_cay_so:
     _{thuc_tap_sinh} đứng cạnh bạn ở cánh gà, áo sơ mi ủi phẳng tới mức có thể cắt giấy. Cách đó năm mét, bộ đồ hồng đang tập động tác "Biến hình!"._

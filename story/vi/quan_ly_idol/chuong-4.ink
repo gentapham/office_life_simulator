@@ -53,7 +53,7 @@ _Máy phải rung liên tục. Một clip đã lên: "Siêu Nhân Hồng kéo l�
 // ------------------------------------------------------------
 === quan_ly_idol_1710_nhau_toi ===
 # ngay:17 # gio:19:00 # noi:nha_hang_vung_tau
-_Tiệc hải sản. Hồng Coin x10, {dan_dau_tu} bao. {sales} say, đứng lên ghế hứa mời "ca sĩ nổi tiếng nhất nước" về hát Đêm Hồng._
+_Tiệc hải sản. Hồng Coin x10, {dan_dau_tu} bao. {sales} say, đứng lên ghế hứa mời "ca sĩ nổi tiếng nhất nước" về hát Đại Nhạc Hội Siêu Nhân._
 _{giam_doc} cũng say, giơ ly: "Anh hứa! Tháng sau tăng lương cả công ty!" {hong_hot} đang quay. Ai cũng thấy, trừ {giam_doc}._
 _Đây không phải nghệ sĩ của bạn. Nhưng mười hai năm làm khủng hoảng, tay bạn tự động thò vào túi lấy điện thoại._
 * [🧯 Đi tới cạnh {hong_hot}: "Clip đó giữ trong máy thôi nha. Coi như quà sinh nhật anh xin trước."]

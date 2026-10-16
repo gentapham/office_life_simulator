@@ -55,7 +55,7 @@ sua_chua_hong_hao: Chào chị {sales}. Bên em đọc hồ sơ rồi. Đẹp. M
         -> END
 
 = ky
-_Hợp đồng được ký. Thật. Có mộc đỏ. 1 tỷ đồng tài trợ Đêm Hồng. Không ai phải ghép ảnh trụ sở._
+_Hợp đồng được ký. Thật. Có mộc đỏ. 1 tỷ đồng tài trợ Đại Nhạc Hội Siêu Nhân. Không ai phải ghép ảnh trụ sở._
 { sl_duy_xem_hop_dong:
     _Bạn đã nhờ {thuc_tap_sinh} đọc trước. Anh chỉ ra 2 điều khoản bất lợi, bạn đã xin sửa. Deal an toàn tuyệt đối._
 - else:
@@ -108,7 +108,7 @@ _15 giờ 40. Bạn chạy như bay sang Sống Ảo._
 _20 giờ. Fanpage công ty vừa lỡ đăng một video lạ: những khoảnh khắc của {quan_ly_idol}, câu cuối "Anh có biết không?". Gỡ sau 6 phút._
 _Cùng lúc, bộ lọc số liệu của {dan_dau_tu} lần ra 80.000 tài khoản fan ảo của {idol_het_thoi}. Mạng xã hội sôi sùng sục._
 { sl_phat_nhan_loi:
-    idol_het_thoi: *(nhắn)* {sales}… em còn muốn anh hát Đêm Hồng không? Giờ ai cũng biết anh thuê fan.
+    idol_het_thoi: *(nhắn)* {sales}… em còn muốn anh hát Đại Nhạc Hội không? Giờ ai cũng biết anh thuê fan.
     * [🤝 "Còn. Fan ảo thì ảo. Giọng anh thì thật. Em bán giọng thật."]
         idol_het_thoi: *(gửi một sticker khóc)* …Ừ. Anh hát.
         ~ qh("idol_het_thoi", 10)
@@ -236,7 +236,7 @@ _Cuối buổi, {giam_doc} gia hạn hợp đồng cho {idol_het_thoi}. Không a
 // ------------------------------------------------------------
 === sales_3110_canh_ga ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đêm Hồng Halloween. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng", vest đen, cặp táp, mặt nạ cười._
+_19 giờ 30. Đại Nhạc Hội Siêu Nhân. Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng", vest đen, cặp táp, mặt nạ cười._
 { sl_ky_sua_chua:
     _Trên sân khấu lớn, logo Sữa Chua Hồng Hào sáng rực. Sân khấu to gấp ba dự kiến. Đèn đủ, âm thanh đủ, khói đủ._
     ~ follow(30000)

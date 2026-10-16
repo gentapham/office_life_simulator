@@ -380,7 +380,7 @@ Xem chi tiết: [ran-doc.md](ran-doc.md)
   - Giàu nứt vách, nhưng ăn cơm một mình trong căn nhà to, không ai nhớ tên thật.
 
   Vì vậy Nguyên tìm đến **G-Entertainment** để được "buff" thành ngôi sao nhiều người biết đến. Nổi tiếng rồi thì giúp được nhiều người hơn, và biết đâu giúp được cả chính mình.
-- **Nhiệm vụ của công ty:** **buff cho Siêu Nhân Hồng nổi tiếng trong showbiz Việt** trước **Đêm Hồng Halloween 31/10**. Thành công thì công ty hồi sinh, thất bại thì phải hoàn tiền gấp đôi và phá sản.
+- **Nhiệm vụ của công ty:** **buff cho Siêu Nhân Hồng nổi tiếng trong showbiz Việt** trước **Đại Nhạc Hội Siêu Nhân 31/10**. Thành công thì công ty hồi sinh, thất bại thì phải hoàn tiền gấp đôi và phá sản.
 - **Tính cách:** tốt bụng, nhiệt tình, hơi ngố. Tự tin khi mặc bộ đồ, nhưng tháo mũ ra là thành người rụt rè. Mê chọc chó cho vui: giả tiếng sủa, giấu đồ chơi, làm mặt xấu. Chỉ chọc cho vui chứ không bao giờ đánh đập.
 - **Cách nói:** "Biến hình!", "Vì công lý và lượt view!", tạo dáng sau mỗi câu. Lúc không mặc đồ thì nói nhỏ, hay "dạ… ờm…".
 - **Câu cửa miệng:** *"Hồng không phải màu, Hồng là thái độ!"*

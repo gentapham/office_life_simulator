@@ -46,7 +46,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   hop(0.4, 1.2, 0.4, 0xe8e8e8, 8.4, 0, 4); tru(0.14, 0.4, 0x7fb8e0, 8.4, 1.2, 4);
   T(1.6, 0.9, chu("tvsanh", 320, 180, "#f26fa6", "#ffffff", ["SIÊU NHÂN HỒNG", "1.000.000 FOLLOW"], 44), 8.84, 2.0, 9, -Math.PI / 2);
   for (let i = 0; i < 3; i++) ghe(-0.7 + i * 0.6, 4.2, Math.PI / 2 * 0, 0, 0x5b6b8c);
-  T(1.2, 1.6, chu("poster1", 240, 320, "#1c1c1f", "#f26fa6", ["ĐÊM HỒNG", "HALLOWEEN", "31.10"], 46), 8.84, 1.9, 12.5, -Math.PI / 2);
+  T(1.2, 1.6, chu("poster1", 240, 320, "#1c1c1f", "#f26fa6", ["ĐẠI NHẠC HỘI", "SIÊU NHÂN", "31.10"], 46), 8.84, 1.9, 12.5, -Math.PI / 2);
   dongHoTuong(2, 3.2, -1.95, 0);
   chauCay(-1.2, 1, 0, 1.2); chauCay(8.4, 7.6, 0);
   // Khu làm việc chung: tủ hồ sơ, máy in, cây nước, điều hòa, bảng tiến độ
@@ -57,7 +57,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   T(2.6, 1.4, tranh("tiendo", 520, 280, (g, w, h) => {
     g.fillStyle = "#fafafa"; g.fillRect(0, 0, w, h); g.fillStyle = "#222"; g.font = "800 34px 'Be Vietnam Pro', system-ui"; g.fillText("MỤC TIÊU: 1.000.000 FOLLOW", 24, 50);
     g.strokeStyle = "#222"; g.lineWidth = 4; g.strokeRect(24, 90, 470, 50); g.fillStyle = "#f26fa6"; g.fillRect(26, 92, 120, 46);
-    g.fillStyle = "#c0262d"; g.font = "600 24px system-ui"; g.fillText("Hạn chót: 31/10 - Đêm Hồng", 24, 190); g.fillText("Ai làm biếng: trừ lương (đùa thôi)", 24, 230);
+    g.fillStyle = "#c0262d"; g.font = "600 24px system-ui"; g.fillText("Hạn chót: 31/10 - Đại Nhạc Hội Siêu Nhân", 24, 190); g.fillText("Ai làm biếng: trừ lương (đùa thôi)", 24, 230);
   }), -11, 1.6, 13.84, Math.PI);
   T(1, 0.7, chu("lich", 200, 140, "#ffffff", "#c0262d", ["THÁNG 10", "2026"], 42), -19.84, 1.9, 1.5, Math.PI / 2);
   for (let i = 0; i < 4; i++) { tru(0.17, 0.4, 0x2e8b57, -16.5 + i * 3, 0, 4.5); }

@@ -203,7 +203,7 @@ thuc_tap_sinh: Dạ… thẻ… thẻ em mượn ạ!
 * [🔍 Nhìn kỹ thẻ. Dân sales biết thẻ hạng nào cần bao nhiêu tiền gửi.]
     _Thẻ kim cương của ngân hàng lớn. Muốn có thẻ này, phải có số dư mà lương thực tập 4 triệu cần… 200 năm. Có chuyện._
     ~ qh("thuc_tap_sinh", 2)
-* [💁 "Anh {thuc_tap_sinh} ơi, tin chị đi, anh nên đầu tư vô… tài trợ Đêm Hồng."]
+* [💁 "Anh {thuc_tap_sinh} ơi, tin chị đi, anh nên đầu tư vô… tài trợ Đại Nhạc Hội."]
     thuc_tap_sinh: Dạ… dạ em không có tiền ạ! Thật ạ! *(nhét thẻ vào túi, chạy đi pha cà phê)*
     ~ qh("thuc_tap_sinh", -3)
 - ~ nhan(tra_sua)

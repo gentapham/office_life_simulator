@@ -43,7 +43,7 @@ _Bạn về chỗ. Lấy cây bút đỏ, khoanh tròn ngày 29/10 trên lịch.
 }
 * [😴 Về ngủ sớm để mai còn sức.]
     ~ nghi(30)
-* [📱 Lướt Tóp-tóp "lấy cảm hứng" cho Đêm Hồng.]
+* [📱 Lướt Tóp-tóp "lấy cảm hứng" cho Đại Nhạc Hội.]
     ~ vu_gio_luot = vu_gio_luot + 1
     { RANDOM(1, 10) <= 5:
         _Một trend mới: "Ai cũng có một chiếc mũ". Người ta đội mũ len, mũ bảo hiểm, nồi cơm. Bạn ghi lại: cue số 40, khán giả cùng đội mũ._
@@ -60,7 +60,7 @@ _Bạn về chỗ. Lấy cây bút đỏ, khoanh tròn ngày 29/10 trên lịch.
 _Ngày Internet Quốc tế. 8 giờ 30: wifi sập. Cả công ty. Tất cả máy tính hiện cùng một con khủng long._
 _{it} bị cả công ty truy đuổi qua 3 tầng. Ở gầm cầu thang, một sợi dây mạng bị cắn đứt, bên cạnh có một con gà cao su._
 _Video của {editor} kẹt ở 99%. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua", 14 người chen nhau vào._
-_Hôm nay là đêm bạn định làm cue sheet và tải toàn bộ file Đêm Hồng lên mạng._
+_Hôm nay là đêm bạn định làm cue sheet và tải toàn bộ file Đại Nhạc Hội Siêu Nhân lên mạng._
 * [☕ Ra quán cà phê Sống Ảo. Đắt, nhưng wifi mạnh.]
     ~ tien_cong(-150000)
     _Ly nước 75 nghìn, gọi 2 ly để ngồi cả ngày. Bàn bên cạnh có {designer} đang mở 2 laptop, thấy bạn thì gập một cái lại._
@@ -106,7 +106,7 @@ chi_dai: *(bộ đàm)* {chua_te_deadline}, kênh 3. Danh sách cue cần {it} c
 === chua_te_deadline_2910_dem_than_toc_cuoi ===
 # ngay:29 # gio:22:00 # noi:phong_gac_quan_bida # bat_buoc
 _22 giờ. Phòng gác. Dưới nhà, quán bida đóng cửa sớm vì mất mạng nên không ai coi được bóng đá. Yên lặng tới lạ._
-_Cue sheet Đêm Hồng: {vu_cue_sheet} trên 47. Trên bàn: 2 lon Trâu Cày, 1 ly mì, cây bút highlight hồng._
+_Cue sheet Đại Nhạc Hội Siêu Nhân: {vu_cue_sheet} trên 47. Trên bàn: 2 lon Trâu Cày, 1 ly mì, cây bút highlight hồng._
 { vu_cue_sheet >= 47:
     _Cue sheet đã xong từ lâu. Đêm nay bạn chỉ đọc lại một lượt, sửa 2 lỗi chính tả, rồi tắt đèn lúc 23 giờ. Lần đầu tiên trong đời._
     ~ vu_dem_than_toc_2910 = true
@@ -118,7 +118,7 @@ _Cue sheet Đêm Hồng: {vu_cue_sheet} trên 47. Trên bàn: 2 lon Trâu Cày, 
 }
 * [🌙 Bắt đầu. 47 cue. 7 giờ 59 phải gửi.]
     -> chua_te_deadline_mg_dem_than_toc_mo_dau
-* [😶 "Mai làm. Mai là 30, Đêm Hồng là 31 mà."]
+* [😶 "Mai làm. Mai là 30, Đại Nhạc Hội là 31 mà."]
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 30
     _Bạn đi ngủ. Lần đầu tiên trong đời, bạn nằm mơ thấy một cái deadline có mặt người._
     -> END
@@ -196,14 +196,14 @@ giam_doc: {chua_te_deadline}, em có gì muốn nói không?
     _{truong_phong} vỗ tay. Bằng hai ngón. Nhưng vỗ._
     ~ qh("truong_phong", 5)
 - else:
-    giam_doc: Anh ghi nhận. Mình chờ kết quả Đêm Hồng đã.
+    giam_doc: Anh ghi nhận. Mình chờ kết quả Đại Nhạc Hội đã.
 }
 -> END
 
 // ------------------------------------------------------------
 === chua_te_deadline_3010_toi_truoc_dem_hong ===
 # ngay:30 # gio:21:00 # noi:phong_gac_quan_bida
-_Tối 30/10. Đêm cuối trước Đêm Hồng. Cue sheet: {vu_cue_sheet} trên 47._
+_Tối 30/10. Đêm cuối trước Đại Nhạc Hội Siêu Nhân. Cue sheet: {vu_cue_sheet} trên 47._
 { vu_cue_sheet < 47:
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 20
     _Nước tới chân. Không. Tới gối. Tới bụng. Bạn ngồi xuống, mở file._
@@ -237,7 +237,7 @@ _Trên bàn có một hộp bánh chuối chiên. Không có giấy nhắn. Khô
 // ------------------------------------------------------------
 === chua_te_deadline_3110_dung_san_khau ===
 # ngay:31 # gio:14:00 # noi:san_khau_dem_hong # bat_buoc
-_14 giờ, Sân khấu Đêm Hồng. {chi_dai} điều phối dựng sân khấu bằng bộ đàm. {it} treo đèn. {designer} dán backdrop hồng cao 6 mét._
+_14 giờ, Sân khấu Đại Nhạc Hội Siêu Nhân. {chi_dai} điều phối dựng sân khấu bằng bộ đàm. {it} treo đèn. {designer} dán backdrop hồng cao 6 mét._
 _{thanh_xin_nghi} tới gần bạn, đeo khẩu trang, nói thì thầm._
 thanh_xin_nghi: Anh ơi… 19 giờ 50 em xin phép về sớm được hông anh. Bà ngoại em…
 _Chung kết "Giọng Ca Ước Mơ" phát trực tiếp lúc 20 giờ. Bạn đã thấy ảnh {thanh_xin_nghi} trên poster của đài từ tuần trước. Bạn không nói gì từ tuần trước._
@@ -260,7 +260,7 @@ _Chung kết "Giọng Ca Ước Mơ" phát trực tiếp lúc 20 giờ. Bạn đ
 // ------------------------------------------------------------
 === chua_te_deadline_3110_canh_ga ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đêm Hồng. Bạn đeo tai nghe đứng cánh gà, tay cầm cue sheet. Dưới sân khấu, biển người đội mũ hồng._
+_19 giờ 30. Đại Nhạc Hội Siêu Nhân. Bạn đeo tai nghe đứng cánh gà, tay cầm cue sheet. Dưới sân khấu, biển người đội mũ hồng._
 { vu_cue_sheet >= 47:
     _47 cue. Mỗi cue một tiếng "Go!". Lần đầu tiên trong đời, bạn biết chính xác điều gì sẽ xảy ra trong 3 tiếng tới._
 - else:

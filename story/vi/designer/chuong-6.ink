@@ -42,7 +42,7 @@ _14 giờ 50. {sales} nhắn gấp: "Chị ơi! Sếp gọi em lên phòng vì c
 _Bạn ôm laptop chạy sang Sống Ảo. Một cô mặc áo hồng nhạt, đeo bảng tên "Sữa Chua Hồng Hào", đang ngồi nhìn đồng hồ._
 sua_chua_hong_hao: Chào chị. Chị {sales} đâu ạ? Bên em không chờ lâu được đâu.
 * [🎨 Mở hồ sơ đề xuất bạn vừa làm tối qua. "Dạ trong lúc chờ, em trình bày phần hình ảnh trước ạ."]
-    _Bạn trình bày: logo Sữa Chua Hồng Hào trên backdrop Đêm Hồng, trên vé mời, trên tay áo Siêu Nhân Hồng. Tất cả đều thật. Không ảnh ghép._
+    _Bạn trình bày: logo Sữa Chua Hồng Hào trên backdrop Đại Nhạc Hội Siêu Nhân, trên vé mời, trên tay áo Siêu Nhân Hồng. Tất cả đều thật. Không ảnh ghép._
     sua_chua_hong_hao: *(gật gù)* Đẹp. Rất đẹp. Mà… hồ sơ này hông có trụ sở 40 tầng gì hết ha?
     designer: Dạ. Bên em chỉ có 3 tầng. Màu tím. Thang máy hay kẹt.
     sua_chua_hong_hao: *(bật cười)* Tôi thích sự thật thà đó.
@@ -179,7 +179,7 @@ hr: Dọn hết đi em. Rác cả mà.
 # ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
 _Họp đánh giá cuối tháng. Màn hình chiếu: "Thành tích Phòng Sản xuất Nội dung, tháng 10/2026". {truong_phong} cầm bút laser._
 truong_phong: Tháng này phòng mình có 6 poster được chia sẻ nhiều nhất. Đều là… ý tưởng của anh.
-_Slide chiếu poster dắt bà cụ. Phông gameshow vẽ tay. Backdrop Đêm Hồng. Chú thích: "Ý tưởng: {truong_phong}"._
+_Slide chiếu poster dắt bà cụ. Phông gameshow vẽ tay. Backdrop Đại Nhạc Hội Siêu Nhân. Chú thích: "Ý tưởng: {truong_phong}"._
 _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng ghi "Đạo diễn: {truong_phong}"._ # hen_gio:8
 * [🎨 Đứng lên: "Dạ anh, cho em xin feedback cụ thể: ý tưởng nào là của anh ạ?"]
     ~ ds_gianh_lai_cong = true
@@ -211,7 +211,7 @@ _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng g
 // ------------------------------------------------------------
 === designer_3110_hoa_trang ===
 # ngay:31 # gio:15:00 # noi:can_203 # bat_buoc
-_Thứ 7, Đêm Hồng Halloween. Cả công ty phải hóa trang._
+_Thứ 7, Đại Nhạc Hội Siêu Nhân. Cả công ty phải hóa trang._
 giam_doc: *(nhắn)* {designer} ơi, chọn giúp anh bộ đồ hóa trang nhé. Ngầu, sang, nhưng thân thiện.
 * [🧂 Chọn cho sếp bộ "Ông Kẹ Ngân Hàng": vest đen, cặp táp, mặt nạ cười.]
     giam_doc: Ngầu quá! Mặc vào thấy mình như doanh nhân thành đạt!
@@ -231,7 +231,7 @@ giam_doc: *(nhắn)* {designer} ơi, chọn giúp anh bộ đồ hóa trang nhé
 // ------------------------------------------------------------
 === designer_3110_dem_hong ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Sân khấu Đêm Hồng, Phường Tân Drama. Phim ngắn "Người Hùng Không Tên" mở màn. Rồi video "16 năm" của {editor}._
+_19 giờ 30. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama. Phim ngắn "Người Hùng Không Tên" mở màn. Rồi video "16 năm" của {editor}._
 _Rồi tấm backdrop của bạn được kéo lên._
 { ds_backdrop_xong:
     _Bầu trời đêm hồng tím. Chiếc mũ siêu nhân nhìn ra khán giả. Cả sân khấu im một giây, rồi vỡ òa._

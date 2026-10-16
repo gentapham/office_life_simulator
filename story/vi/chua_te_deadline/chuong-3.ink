@@ -289,7 +289,7 @@ chi_dai: {chua_te_deadline}, ăn đi rồi đi về. Mai 6 giờ sáng là lên 
     ~ nghi(20)
     chi_dai: Ngoan. Lần đầu chị thấy em về sớm.
     ~ qh("chi_dai", 5)
-* [💻 Ăn vội, ngồi nghĩ hồ sơ xin phép biểu diễn Đêm Hồng (hạn 8:00 thứ 2).]
+* [💻 Ăn vội, ngồi nghĩ hồ sơ xin phép biểu diễn Đại Nhạc Hội (hạn 8:00 thứ 2).]
     ~ an(40)
     _Hồ sơ xin phép biểu diễn: 14 trang, 3 con dấu, 1 bản vẽ sân khấu. Hạn: 8 giờ sáng 19/10. Bạn mở file mới. Gõ tiêu đề. Đóng file. "Lên xe làm."_
     ~ vu_nuoc_toi_chan = vu_nuoc_toi_chan + 5

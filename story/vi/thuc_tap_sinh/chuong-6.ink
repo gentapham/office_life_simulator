@@ -26,7 +26,7 @@ _Cả tầng 1 rối như tơ vò. Bạn đứng giữa, tay cầm xấp giấy 
 // ------------------------------------------------------------
 === thuc_tap_sinh_2810_the_hong ===
 # ngay:28 # gio:14:00 # noi:phong_giam_doc
-_14 giờ. {giam_doc} ngồi ôm đầu: Đêm Hồng thiếu tiền làm sân khấu. Nhà tài trợ "chắc kèo" của {sales} không có thật. Sữa Chua Hồng Hào thì không ai tin._
+_14 giờ. {giam_doc} ngồi ôm đầu: Đại Nhạc Hội Siêu Nhân thiếu tiền làm sân khấu. Nhà tài trợ "chắc kèo" của {sales} không có thật. Sữa Chua Hồng Hào thì không ai tin._
 { duy_do_lo < 60:
     _Bạn đứng ngoài cửa, cầm xấp giấy photo. Bạn biết có một cách. Nhưng cách đó cần cả công ty biết bạn là ai. Và bạn chưa sẵn sàng._
     ~ duy_day_viec(1)
@@ -121,7 +121,7 @@ _Một tờ giấy mới tới, chữ của {ke_toan}: "Gửi {thuc_tap_sinh}. H
 === thuc_tap_sinh_2910_quan_net ===
 # ngay:29 # gio:21:00 # noi:quan_net_go_phim
 _Tối. Wifi công ty vẫn sập. Quán net Gõ Phím đông chưa từng thấy: nửa công ty kéo tới._
-_Máy số 14 là {chua_te_deadline}, đang làm cue sheet Đêm Hồng. Máy số 15 là bạn._
+_Máy số 14 là {chua_te_deadline}, đang làm cue sheet Đại Nhạc Hội Siêu Nhân. Máy số 15 là bạn._
 chua_te_deadline: Anh {thuc_tap_sinh}… em xin lỗi. Tháng này em nhờ anh nhiều quá.
 * [😇 "Dạ em học được nhiều mà anh."]
     chua_te_deadline: Anh nói vậy em càng thấy tệ. Mai họp đánh giá, em sẽ nói tên anh.
@@ -220,7 +220,7 @@ _"Duy. Mai là 31. Ghế phó giám đốc anh giữ tới hôm nay. Mày về k
 // ------------------------------------------------------------
 === thuc_tap_sinh_3110_dung_san_khau ===
 # ngay:31 # gio:14:00 # noi:san_khau_dem_hong # bat_buoc
-_Sân khấu Đêm Hồng. {chi_dai} điều phối bằng bộ đàm. Bạn khiêng ghế, treo backdrop, dán băng keo dây điện. Như mọi khi._
+_Sân khấu Đại Nhạc Hội Siêu Nhân. {chi_dai} điều phối bằng bộ đàm. Bạn khiêng ghế, treo backdrop, dán băng keo dây điện. Như mọi khi._
 { duy_giu_lai:
     _Nhưng hôm nay trên cổ bạn có dây đeo thẻ màu cam. Thẻ nhân viên. Có ảnh. Có tên._
 - else:
@@ -241,7 +241,7 @@ _Một bạn sinh viên tình nguyện chạy tới, rụt rè: "Dạ anh ơi, c
 // ------------------------------------------------------------
 === thuc_tap_sinh_3110_dem_hong ===
 # ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19 giờ 30. Đêm Hồng. Bạn đứng ở chân sân khấu, cầm tấm hắt sáng tròn, to như cái nắp chảo. Lần cuối. Hoặc lần đầu._
+_19 giờ 30. Đại Nhạc Hội Siêu Nhân. Bạn đứng ở chân sân khấu, cầm tấm hắt sáng tròn, to như cái nắp chảo. Lần cuối. Hoặc lần đầu._
 _Mở màn: phim ngắn "Người Hùng Không Tên". Rồi clip "16 năm"._
 { duy_doi_chat_oanh:
     _Dòng chữ cuối phim chạy lên. Bạn nín thở._

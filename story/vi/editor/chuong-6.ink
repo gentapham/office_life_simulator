@@ -6,7 +6,7 @@
 === editor_2810_xuat_nham ===
 # ngay:28 # gio:03:00 # noi:phong_dung_phim # bat_buoc
 ~ ed_dung_video_thai = true
-_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đêm Hồng cho fanpage công ty, và bản lưu của video thư mục "Thái"._
+_3 giờ sáng. Đêm trắng thứ {ed_dem_thuc}. Bạn có hai việc phải xuất: teaser Đại Nhạc Hội Siêu Nhân cho fanpage công ty, và bản lưu của video thư mục "Thái"._
 _Mắt bạn mờ. Ô "Đích xuất file" có hai dòng giống nhau tới mức đáng sợ: "Fanpage G-Entertainment (hẹn giờ)" và "Ổ_riêng/Thai_final"._
 * [✂️ Xuất teaser trước, video "Thái" sau.]
     _Teaser xong. Bạn kéo video "Thái" vào ô đích. Con trỏ trượt xuống một dòng. Bạn không thấy._
@@ -136,18 +136,18 @@ con_ong_chau_cha: {editor}! Bản thu cuối! Thang máy kẹt! Mix giùm tui đ
     { ed_chep_usb:
         _22 giờ. Cái USB hình con cú nằm trên bàn, cạnh cốc RENDER. Nhỏ tới mức có thể mất. Nặng tới mức không cầm lên nổi._
     - else:
-        _22 giờ. Căn 701. Bạn ngồi trước ba màn hình tắt. Mai họp đánh giá. Ngày kia Đêm Hồng._
+        _22 giờ. Căn 701. Bạn ngồi trước ba màn hình tắt. Mai họp đánh giá. Ngày kia Đại Nhạc Hội Siêu Nhân._
     }
 }
 * {ed_video_len_fanpage && ed_nguoi_dung_dem} [💌 "Dạ. Là em. Bốn năm."]
     ~ ed_can(15)
-    _Đã xem. Không trả lời. Rồi 23:47: "Mai gặp anh trước Đêm Hồng nha. Anh muốn nói chuyện. Không phải chuyện công việc."_
+    _Đã xem. Không trả lời. Rồi 23:47: "Mai gặp anh trước Đại Nhạc Hội Siêu Nhân nha. Anh muốn nói chuyện. Không phải chuyện công việc."_
 * {ed_video_len_fanpage && ed_nguoi_dung_dem} [😶 "Dạ… em xuất nhầm. Em xin lỗi anh."]
     ~ ed_can(-5)
     _"Không sao. Đẹp lắm. Cảm ơn em." Không có biểu tượng con cú nào._
 * [😴 Ngủ. Đêm nay phải ngủ.]
     ~ ed_ngu_du()
-* [📺 Dựng nốt video tổng kết Đêm Hồng. Thức trắng.]
+* [📺 Dựng nốt video tổng kết Đại Nhạc Hội. Thức trắng.]
     ~ ed_thuc_dem()
     ~ uy_tin = uy_tin + 3
 - -> END
@@ -163,17 +163,17 @@ con_ong_chau_cha: {editor}! Bản thu cuối! Thang máy kẹt! Mix giùm tui đ
 _Trưa. Sân thượng. {quan_ly_idol} đứng ở chỗ hôm nghe điện thoại của LL, tay cầm ly cà phê, không cầm điện thoại nào. Lạ._
 _Cái USB hình con cú trong túi áo bạn. Bạn bóp nó tới mức in hình con cú vào lòng bàn tay._
 quan_ly_idol: {editor}. Lên đây trốn họp hả?
-* {ed_can_dam >= 80} [🔒 Đưa USB. "Anh coi cái này sau Đêm Hồng nha. Khi xong hết rồi."]
+* {ed_can_dam >= 80} [🔒 Đưa USB. "Anh coi cái này sau Đại Nhạc Hội nha. Khi xong hết rồi."]
     ~ ed_dua_usb_thai = true
     quan_ly_idol: *(cầm cái USB, xoay xoay)* Con cú. *(nhìn bạn)* Cái gì trong đây?
     editor: Dạ… một bản dựng. Của em. Lần này em ký tên.
-    quan_ly_idol: *(bỏ USB vào túi áo ngực, chỗ không có điện thoại)* Ừ. Sau Đêm Hồng. Anh hứa.
+    quan_ly_idol: *(bỏ USB vào túi áo ngực, chỗ không có điện thoại)* Ừ. Sau Đại Nhạc Hội. Anh hứa.
 * [💌 Đưa USB, nói nhanh: "Anh coi liền đi." (Can đảm chưa đủ để chờ.)]
     _Anh ấy cắm vào laptop. Ba mươi giây. Rồi điện thoại reo: {sieu_nhan_hong} cần gấp. Anh ấy rút USB, đưa lại cho bạn: "Tối anh coi tiếp nha em." Tối đó không ai coi._
     ~ ed_can(-5)
 * [😶 Không đưa. "Dạ em lên hóng gió."]
     quan_ly_idol: Ừ. Gió trên này thật hơn gió máy lạnh.
-    _Cái USB vẫn trong túi. Đêm Hồng ngày mai. Sau đó thì không biết._
+    _Cái USB vẫn trong túi. Đại Nhạc Hội Siêu Nhân ngày mai. Sau đó thì không biết._
     ~ ed_can(-3)
 - -> END
 
@@ -203,7 +203,7 @@ truong_phong: Phòng Sản xuất xin báo cáo. Người thực hiện…
 // ------------------------------------------------------------
 === editor_3010_dem_trang_cuoi ===
 # ngay:30 # gio:22:00 # noi:phong_dung_phim
-_Đêm 30. Đêm trắng cuối cùng của tháng 10. Video tổng kết Đêm Hồng phải xong trước 6 giờ tối mai._
+_Đêm 30. Đêm trắng cuối cùng của tháng 10. Video tổng kết Đại Nhạc Hội Siêu Nhân phải xong trước 6 giờ tối mai._
 _{thuc_tap_sinh} ngồi cạnh, soát phụ đề. {chua_te_deadline} nằm trên sofa, lần này không ngủ, đang gõ bảng tiến độ thật._
 chua_te_deadline: Lần đầu tui làm xong việc sớm. Ông đừng nói ai, người ta nghi tui có âm mưu.
 * [✂️ Dựng tới sáng. Cắt Đúng Nhịp từng giây.]
@@ -226,7 +226,7 @@ chua_te_deadline: Lần đầu tui làm xong việc sớm. Ông đừng nói ai,
 // ------------------------------------------------------------
 === editor_3110_truoc_gio ===
 # ngay:31 # gio:18:40 # noi:san_khau_dem_hong # bat_buoc
-_Sân khấu Đêm Hồng. Bàn dựng của bạn nằm sau khán đài, dưới một cái lều đen. Ba màn hình, một bộ trộn hình, một ly cà phê._
+_Sân khấu Đại Nhạc Hội Siêu Nhân. Bàn dựng của bạn nằm sau khán đài, dưới một cái lều đen. Ba màn hình, một bộ trộn hình, một ly cà phê._
 _Cả công ty hóa trang. {giam_doc} là "Ông Kẹ Ngân Hàng". {thuc_tap_sinh} hóa trang thành… thực tập sinh. {sieu_nhan_hong} thì vẫn là {sieu_nhan_hong}._
 _{quan_ly_idol} đi ngang lều, dừng lại, thò đầu vào._
 quan_ly_idol: Em hóa trang thành gì vậy?
