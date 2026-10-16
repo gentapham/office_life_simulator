@@ -531,18 +531,27 @@ function playKnot(name, done) {
   const k = L.knots.find(x => x.name === name);
   const gio = tag(k?.tags, "gio"); const noi = tag(k?.tags, "noi");
   if (gio && gio !== true) { const m = String(gio).match(/(\d{1,2}):(\d{2})/); if (m) { L.set("gio", +m[1]); L.set("phut", +m[2]); } }
-  updateDayline(gio && gio !== true ? gio : null, noi && noi !== true ? noi : null);
+  if (CHE_DO !== "3d") updateDayline(gio && gio !== true ? gio : null, noi && noi !== true ? noi : null); // bản 3D: đồng hồ tự chạy
   L.played.add(name);
   try {
     L.story.ChoosePathString(name);
   } catch (e) { addSys(`(Không mở được cảnh ${name})`); done(new Set()); return; }
-  runStory(L.story, L.ma, visited => done(visited));
+  runStory(L.story, L.ma, visited => { visited.add(name); done(visited); }); // cảnh một dòng kết thúc ngay nên phải tự ghi tên
 }
 
 function afterScene(visited = new Set()) {
   // Cảnh có thể dẫn vào minigame: cho người chơi tự chọn kết quả
   const mg = timMinigame(visited);
   saveWrite(L.toSave());
+  if (mg && CHE_DO === "3d") {
+    // minigame thật: chơi xong mới biết thắng hay thua, rồi diễn cảnh kết quả
+    UI.choices.replaceChildren();
+    import("./minigame.js").then(({ choiMinigame }) => choiMinigame({ base: mg.base, ra: mg.ra, vai: L.ma, khung: app.querySelector(".g3d"), h }))
+      .then(kq => {
+        if (kq && L.knots.some(k => k.name === kq)) playKnot(kq, v => afterScene(v)); else nextScene();
+      });
+    return;
+  }
   if (mg) {
     UI.choices.replaceChildren(
       h("p", { class: "hint" }, "Chọn kết quả minigame:"),
@@ -730,7 +739,7 @@ async function render3D() {
 
   G = new Game3D(khung, { vai: L.ma, tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma, tenVai: ma => THEO_MA[ma]?.vai || "" });
   const g = G;
-  window.__g3d = g; window.__L = L; // để kiểm thử tự động
+  window.__g3d = g; window.__L = L; window.__tiep = () => nextScene3D(); // để kiểm thử tự động
   // ----- sinh tồn: đói, khát, năng lượng tụt theo thời gian, cảnh báo, xỉu -----
   sinhTon = SINH_TON = taoSinhTon({
     g, L, h, thongBao: x => thongBao3D(x),

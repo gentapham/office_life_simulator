@@ -691,3 +691,4 @@ body.g3d-on { overflow: hidden; padding: 0; }
   .mg-xep-luoi > :last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) { .mg, .mg * { animation: none !important; transition: none !important; } }
+.g3d:has(> .mg) .g3d-thoai { visibility: hidden; }

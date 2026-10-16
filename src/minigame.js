@@ -1,4 +1,5 @@
 // Minigame chơi thật: thay cho nút chọn Thắng/Thua.
+import { am } from "./am-thanh-game.js";
 // choiMinigame({ base, ra, vai, khung, h }) -> Promise<tên cảnh kết quả>
 // Mỗi kiểu chơi là một hàm (ctx, nd) gọi ctx.xong(thang, xuatSac, loiNhan) khi kết thúc.
 
@@ -853,11 +854,12 @@ export function choiMinigame({ base, ra, vai, khung, h } = {}) {
       removeEventListener("keydown", nhanPhim, true);
       removeEventListener("keyup", nhanPhim, true);
       removeEventListener("keypress", chan_, true);
-      goc.remove();
+      ngheAm.disconnect(); goc.remove();
       resolve(ten);
     };
 
     const hienKetQua = (thang, xuatSac, loiNhan) => {
+      am.phat(thang ? "thang" : "thua");
       boQua.hidden = true; thoiGian.textContent = ""; vachGio.style.width = "0";
       chan.textContent = "";
       // Chờ một nhịp để cú bấm dồn dập cuối trận không lỡ tay bỏ qua màn kết quả
@@ -876,9 +878,9 @@ export function choiMinigame({ base, ra, vai, khung, h } = {}) {
       san.replaceChildren(so_); ctx.phim = null;
       const buoc = () => {
         if (--n <= 0) { san.replaceChildren(); K.chay(ctx, nd); return; }
-        so_.textContent = String(n); bamLai(so_); ctx.hen(buoc, 650);
+        so_.textContent = String(n); bamLai(so_); am.phat("dem_nguoc"); ctx.hen(buoc, 650);
       };
-      bamLai(so_); ctx.hen(buoc, 650);
+      bamLai(so_); am.phat("dem_nguoc"); ctx.hen(buoc, 650);
     };
 
     // Màn giới thiệu
@@ -891,6 +893,15 @@ export function choiMinigame({ base, ra, vai, khung, h } = {}) {
     ctx.dat("Sẵn sàng thì bấm Bắt đầu");
 
     (khung || document.body).append(goc);
+    // tiếng đúng / sai mỗi khi một ô, một nút đổi sang trạng thái đúng hoặc sai
+    const ngheAm = new MutationObserver(ds => {
+      for (const d of ds) {
+        const el = d.target, cu = d.oldValue || "";
+        if (el.classList.contains("dung") && !/\bdung\b/.test(cu)) { am.phat("dung"); return; }
+        if (el.classList.contains("sai") && !/\bsai\b/.test(cu)) { am.phat("sai"); return; }
+      }
+    });
+    ngheAm.observe(goc, { subtree: true, attributes: true, attributeFilter: ["class"], attributeOldValue: true });
     batDau.focus({ preventScroll: true });
   });
 }
