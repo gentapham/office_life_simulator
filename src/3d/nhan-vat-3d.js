@@ -426,6 +426,14 @@ export function taoNguoi(ma, nhRieng = null) {
     ngoi: false,     // ngồi ghế gõ máy tính
     vietTay: 0,      // >0: với tay thao tác đồ vật (máy in, cây nước, tủ hồ sơ)
     hoatDong(t, dangDi, toc = 1) {
+      if (o.ngoi === "nghi") { // ngồi quán / ghế chờ: tay đặt lên đùi, lâu lâu nâng ly uống, nhìn quanh
+        chanT.rotation.x = -1.45; chanP.rotation.x = -1.38;
+        const chu = (t + (o.lech ||= Math.random() * 9)) % 9, uong = chu < 1.6 ? Math.sin(chu / 1.6 * Math.PI) : 0;
+        tayT.rotation.set(-0.55, 0, 0.12); tayP.rotation.set(-0.6 - uong * 1.5, 0, -0.1 - uong * 0.25);
+        than.position.y = 0; dau.position.y = dauY; tayT.position.y = tayP.position.y = vaiY;
+        dau.rotation.set(-uong * 0.25, Math.sin(t * 0.35 + o.lech) * 0.5, 0);
+        return;
+      }
       if (o.ngoi) {
         chanT.rotation.x = chanP.rotation.x = -1.42;
         tayT.rotation.set(-1.12 + Math.sin(t * 13) * 0.05, 0, 0.12); tayP.rotation.set(-1.12 + Math.sin(t * 13 + 1.7) * 0.05, 0, -0.12);

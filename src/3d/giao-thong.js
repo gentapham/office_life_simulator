@@ -63,7 +63,11 @@ export class GiaoThong {
     this.dungYen = [];
     for (const c of pho.choNguoiDung.slice(0, dienThoai ? 8 : 22)) {
       const nv = taoNguoiNgauNhien(rnd, { them: c.them || [] });
-      nv.group.position.set(c.x, c.ngoi ? -0.38 : 0, c.z); nv.group.rotation.y = c.huong;
+      nv.group.position.set(c.x, c.ngoi ? -0.42 : 0, c.z); nv.group.rotation.y = c.huong;
+      if (c.ngoi && "ngoi" in nv) {
+        nv.ngoi = "nghi"; // ngồi thật trên ghế nhựa: co chân, tay để lên đùi
+        if (rnd() < 0.7) { const ly = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.04, 0.12, 8), new THREE.MeshLambertMaterial({ color: 0xc89a5a, transparent: true, opacity: 0.85 })); ly.position.set(0, -0.7, 0.07); nv.tayP.add(ly); }
+      }
       this.nhom.add(nv.group); this.dungYen.push(nv);
     }
     // tượng người bạc đứng biểu diễn trên vỉa hè
