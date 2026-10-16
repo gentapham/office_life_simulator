@@ -94,7 +94,7 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   // nhà xe nhân viên có mái tôn
   for (const x of [9.4, 13.9, 18.4]) for (const z of [22.0, 24.8]) V(0.1, 2.4, 0.1, 0x5a5d63, x, 0, z);
   { const m = new THREE.Mesh(new THREE.BoxGeometry(9.4, 0.06, 3.4), vl(0x2e8b57)); m.position.set(13.9, 2.45, 23.4); m.rotation.x = 0.06; add(m); }
-  dung(1.8, 0.4, new THREE.MeshLambertMaterial({ map: tranh("nhaxe", 270, 60, (g, w, h) => { g.fillStyle = "#1f4fa8"; g.fillRect(0, 0, w, h); chuGiua(g, "NHÀ XE NHÂN VIÊN", w, h / 2, 26, "#fff"); }) }), 13.9, 2.2, 24.86, 0);
+  dung(1.8, 0.4, new THREE.MeshLambertMaterial({ map: tranh("nhaxe", 270, 60, (g, w, h) => { g.fillStyle = "#1f4fa8"; g.fillRect(0, 0, w, h); chuGiua(g, "NHÀ XE NHÂN VIÊN", w, h / 2, 26, "#fff"); }) }), 13.9, 1.95, 24.86, 0);
   // chỗ đỗ xe giám đốc (xe sếp màu đen bóng) có vạch kẻ và biển
   const xeSep = taoOto(0x1c1c1f); xeSep.position.set(11.6, 0, 18.6); xeSep.rotation.y = Math.PI / 2; add(xeSep);
   hop(4.4, 1.2, 1.9, 0x000000, 11.6, 0, 18.6).visible = false; // khối va chạm của xe

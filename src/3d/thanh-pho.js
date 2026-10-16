@@ -155,6 +155,9 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   const toiMau = (n, k = 0.82) => new THREE.Color(n).multiplyScalar(k).getHex();
   // đặt một dãy nhà: mặt tiền dọc theo một đường, quay về phía đường
   // huong: "nam" (mặt nhìn -z), "bac" (+z), "dong" (+x), "tay" (-x)
+  // ranh giới giữa các căn nhà của từng dãy: cột điện, cây, đèn đường dời về đúng ranh để không đứng giữa bảng hiệu
+  const RANH = {};
+  const veRanh = (dayKey, v) => { const ds = RANH[dayKey] || []; let tot = v, d = 3.2; for (const b of ds) if (Math.abs(b - v) < d) { d = Math.abs(b - v); tot = b; } return tot; };
   const dayNha = (tu, den, coDinh, huong, { sau = 12, tangMin = 2, tangMax = 6, hem = false, bo = [] } = {}) => {
     let a = tu;
     while (a < den - 3) {
@@ -166,6 +169,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
       else if (huong === "dong") { nha.rotation.y = Math.PI / 2; nha.position.set(coDinh, 0, a + w); can(coDinh - sau, coDinh, a, a + w); }
       else { nha.rotation.y = -Math.PI / 2; nha.position.set(coDinh, 0, a); can(coDinh, coDinh + sau, a, a + w); }
       nhom.add(nha);
+      (RANH[huong + ":" + coDinh] ||= []).push(a, a + w);
       a += w;
     }
   };
@@ -198,10 +202,11 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   // Chợ Phố Cũ (tháp đồng hồ)
   H(24, 7, 26, 0xf2d27a, 74, 0, 5); can(62, 86, -8, 18);
   H(25, 0.6, 27, 0xa8503a, 74, 7, 5);
-  H(5, 14, 5, 0xf2d27a, 62.8, 0, 5); can(60.3, 65.3, 2.5, 7.5); H(5.4, 1.2, 5.4, 0xa8503a, 62.8, 14, 5);
-  const dh = new THREE.Mesh(new THREE.CircleGeometry(1.5, 20), new THREE.MeshBasicMaterial({ map: dongHo() })); dh.position.set(60.27, 11, 5); dh.rotation.y = -Math.PI / 2; nhom.add(dh);
+  // tháp đồng hồ ở góc chợ (không đứng trước bảng tên chợ)
+  H(5, 14, 5, 0xf2d27a, 62.8, 0, 15.5); can(60.3, 65.3, 13, 18); H(5.4, 1.2, 5.4, 0xa8503a, 62.8, 14, 15.5);
+  const dh = new THREE.Mesh(new THREE.CircleGeometry(1.5, 20), new THREE.MeshBasicMaterial({ map: dongHo() })); dh.position.set(60.27, 11, 15.5); dh.rotation.y = -Math.PI / 2; nhom.add(dh);
   const bc = new THREE.Mesh(new THREE.PlaneGeometry(10, 1.6), new THREE.MeshBasicMaterial({ map: bienHieu("CHỢ PHỐ CŨ", ["#c0262d", "#ffe14d"]) })); bc.position.set(61.98, 5.5, 5); bc.rotation.y = -Math.PI / 2; nhom.add(bc);
-  for (let z = -6; z <= 16; z += 4) if (Math.abs(z - 5) > 2) { const c = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 3), trongQuan); c.position.set(61.98, 1.5, z); c.rotation.y = -Math.PI / 2; nhom.add(c); }
+  for (let z = -6; z <= 12; z += 4) if (Math.abs(z - 5) > 2) { const c = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 3), trongQuan); c.position.set(61.98, 1.5, z); c.rotation.y = -Math.PI / 2; nhom.add(c); }
   // Chung cư cũ (phơi đồ, chuồng cọp)
   const ccTex = chuTex("chungcu", 128, 128, g => {
     g.fillStyle = "#e6d9b0"; g.fillRect(0, 0, 128, 128);
@@ -265,7 +270,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   const cotDien = (x, z) => {
     H(0.28, 9, 0.28, 0x9a958a, x, 0, z); H(1.6, 0.12, 0.12, 0x8a857a, x, 7.8, z); H(1.2, 0.12, 0.12, 0x8a857a, x, 6.9, z);
     if (rnd() < 0.3) { const b = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.8, 8), vl(0x6d7175)); b.position.set(x + 0.3, 6.2, z); nhom.add(b); }
-    can(x - 0.25, x + 0.25, z - 0.25, z + 0.25);
+    can(x - 0.25, x + 0.25, z - 0.25, z + 0.25); thanDung.push([x, z]);
   };
   const noiDay = (a, b) => {
     for (let k = 0; k < 7; k++) {
@@ -277,18 +282,26 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
       }
     }
   };
-  const cayXanh = (x, z, s = 1) => {
-    // thân cao, tán nằm trên tầm bảng hiệu để không che chữ
+  // cây xanh trồng sát mép vỉa hè (không đâm qua bạt che nắng), tán nghiêng ra phía lòng đường;
+  // ra: hướng ra lòng đường [dx, dz]; tránh đứng trùng chỗ cột điện đã dựng
+  const thanDung = [];
+  const cayXanh = (x, z, s = 1, ra = [0, 0]) => {
+    for (const [px, pz] of thanDung) if (Math.abs(px - x) < 1.1 && Math.abs(pz - z) < 1.1) { if (ra[0]) z += 1.6; else x += 1.6; }
     const t = new THREE.Mesh(new THREE.CylinderGeometry(0.18 * s, 0.26 * s, 7.2 * s, 7), vl(0x6b4a2f)); t.position.set(x, 3.6 * s, z); nhom.add(t);
     const v = new THREE.Mesh(new THREE.CylinderGeometry(0.3 * s, 0.3 * s, 1, 7), vl(0xf2f2f2)); v.position.set(x, 0.5, z); nhom.add(v);
-    for (let i = 0; i < 4; i++) { const l = new THREE.Mesh(new THREE.IcosahedronGeometry((1.1 + rnd() * 0.6) * s, 0), vl(chon([0x3d7a34, 0x4f8a3c, 0x2f6b2a]))); l.position.set(x + (rnd() - 0.5) * 1.8 * s, (7.2 + rnd() * 1.2) * s, z + (rnd() - 0.5) * 1.4 * s); nhom.add(l); }
-    can(x - 0.3, x + 0.3, z - 0.3, z + 0.3);
+    for (let i = 0; i < 4; i++) {
+      const l = new THREE.Mesh(new THREE.IcosahedronGeometry((1.0 + rnd() * 0.5) * s, 0), vl(chon([0x3d7a34, 0x4f8a3c, 0x2f6b2a])));
+      const doc = (rnd() - 0.5) * 1.8 * s, ngang = 0.7 + (rnd() - 0.5) * 0.6; // dọc theo hàng / lệch ra đường
+      l.position.set(x + (ra[0] ? ra[0] * ngang : doc), (7.2 + rnd() * 1.2) * s, z + (ra[1] ? ra[1] * ngang : doc)); nhom.add(l);
+    }
+    can(x - 0.3, x + 0.3, z - 0.3, z + 0.3); thanDung.push([x, z]);
   };
   const vlDenDuong = dong(new THREE.MeshBasicMaterial({ color: 0xf3efe6 }));
   const denDuong = (x, z, huong) => {
     H(0.16, 7, 0.16, 0x5a5d63, x, 0, z);
     H(0.1, 0.1, 2.2, 0x5a5d63, x, 6.9, z + huong * 1.1);
     const d = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.12, 0.8), vlDenDuong); d.position.set(x, 6.8, z + huong * 2.1); nhom.add(d); denDem.push(d);
+    thanDung.push([x, z]);
   };
   // dọc đường Hóng
   let truoc = null, truoc2 = null;
@@ -297,20 +310,22 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const zb = 32.0, zn = 42.0;
     const trongSK = x > SK.x1 - 1 && x < SK.x2 + 1; // chừa lối vào quảng trường sân khấu
     if (trongSK) truoc = null;
-    if (Math.abs(x - 2) > 4 && !trongSK) { cotDien(x, zb); if (truoc) noiDay(truoc, [x, zb]); truoc = [x, zb]; }
-    cotDien(x + 8, zn); if (truoc2) noiDay(truoc2, [x + 8, zn]); truoc2 = [x + 8, zn];
-    if (rnd() < 0.5) noiDay([x + 8, zn], [x + 8 + (rnd() - 0.5) * 4, 44.5]); // dây kéo vào nhà
-    if (Math.abs(x + 4 - 2) > 5 && !(x + 4 > 6 && x + 4 < 14)) cayXanh(x + 4, 42.6);
-    if ((x + 146) % 32 === 0) { if (Math.abs(x - 12) > 5 && !trongSK) denDuong(x + 2, 31.6, 1); }
-    if ((x < -26 || x > 26) && !(x + 12 > SK.x1 - 1 && x + 12 < SK.x2 + 1)) cayXanh(x + 12, 31.4, 0.9);
+    const xb = veRanh("bac:30", x), xn = veRanh("nam:44.5", x + 8);
+    if (Math.abs(x - 2) > 4 && !trongSK) { cotDien(xb, zb); if (truoc) noiDay(truoc, [xb, zb]); truoc = [xb, zb]; }
+    cotDien(xn, zn); if (truoc2) noiDay(truoc2, [xn, zn]); truoc2 = [xn, zn];
+    if (rnd() < 0.5) noiDay([xn, zn], [xn + (rnd() - 0.5) * 4, 44.5]); // dây kéo vào nhà
+    if (Math.abs(x + 4 - 2) > 5 && !(x + 4 > 6 && x + 4 < 14)) cayXanh(veRanh("nam:44.5", x + 4), 41.85, 1, [0, -1]);
+    if ((x + 146) % 32 === 0) { if (Math.abs(x - 12) > 5 && !trongSK) denDuong(veRanh("bac:30", x + 2), 32.1, 1); }
+    if ((x < -26 || x > 26) && !(x + 12 > SK.x1 - 1 && x + 12 < SK.x2 + 1)) cayXanh(veRanh("bac:30", x + 12), 32.15, 0.9, [0, 1]);
   }
   // dọc đại lộ Ước Mơ
   truoc = truoc2 = null;
   for (let z = -90; z <= 130; z += 16) {
     if (z > 24 && z < 50) { truoc = truoc2 = null; continue; }
-    cotDien(46.4, z); if (truoc) noiDay(truoc, [46.4, z]); truoc = [46.4, z];
-    cotDien(57.6, z + 8); if (truoc2) noiDay(truoc2, [57.6, z + 8]); truoc2 = [57.6, z + 8];
-    cayXanh(45.2, z + 6); cayXanh(58.8, z + 2);
+    const zd = veRanh("dong:44", z), zt = veRanh("tay:60", z + 8);
+    cotDien(46.4, zd); if (truoc) noiDay(truoc, [46.4, zd]); truoc = [46.4, zd];
+    cotDien(57.6, zt); if (truoc2) noiDay(truoc2, [57.6, zt]); truoc2 = [57.6, zt];
+    cayXanh(46.6, veRanh("dong:44", z + 6), 1, [1, 0]); cayXanh(57.4, veRanh("tay:60", z + 2), 1, [-1, 0]);
   }
   // dây điện trong hẻm
   noiDay([8.2, 46], [11.8, 60]); noiDay([11.8, 46], [8.2, 68]); noiDay([8.2, 60], [11.8, 78]);
@@ -379,7 +394,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     b.position.set(x, 6.8, 37); b.rotation.y = Math.PI / 2; nhom.add(b);
   };
   bangRon(-24, "CHÀO MỪNG NGÀY PHỤ NỮ VIỆT NAM 20-10", ["#c0262d", "#ffe14d"]);
-  bangRon(76, "QUẬN HÓNG - SỐNG XANH, SỐNG HÓNG", ["#1f4fa8", "#ffffff"]);
+  bangRon(veRanh("nam:44.5", 76), "QUẬN HÓNG - SỐNG XANH, SỐNG HÓNG", ["#1f4fa8", "#ffffff"]);
 
   // ---------- Ranh giới khu vực đi được ----------
   can(-200, -PHO.gioiHanX, 29, 46); can(PHO.gioiHanX, 200, 29, 46);

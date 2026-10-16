@@ -112,7 +112,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   T(1.6, 0.9, chu("tvsanh", 320, 180, "#f26fa6", "#ffffff", ["SIÊU NHÂN HỒNG", "1.000.000 FOLLOW"], 44), 8.84, 2.0, 9, -Math.PI / 2);
   for (let i = 0; i < 3; i++) ghe(-0.7 + i * 0.6, 4.2, Math.PI / 2 * 0, 0, 0x5b6b8c);
   T(1.2, 1.6, chu("poster1", 240, 320, "#1c1c1f", "#f26fa6", ["ĐẠI NHẠC HỘI", "SIÊU NHÂN", "31.10"], 46), 8.84, 1.9, 12.5, -Math.PI / 2);
-  dongHoTuong(2, 3.2, -1.95, 0);
+  dongHoTuong(2, 3.2, -1.84, 0); // treo trên vách logo
   chauCay(-1.2, 1, 0, 1.2); chauCay(8.4, 1.6, 0);
   // Khu làm việc chung: tủ hồ sơ, máy in, cây nước, điều hòa, bảng tiến độ
   for (let i = 0; i < 4; i++) tuHoSo(-19.5, 10.3 + i * 0.95, Math.PI / 2);
