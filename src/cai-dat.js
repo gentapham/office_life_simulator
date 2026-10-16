@@ -60,6 +60,31 @@ export function moCaiDat(h, { khiDong, trongGame = false } = {}) {
     })));
   const bat = (nhan, khoa) => h("label", { class: "cd-hang cd-bat" }, h("span", {}, nhan),
     h("input", { type: "checkbox", checked: c[khoa], onchange: e => datCaiDat({ [khoa]: e.target.checked }) }));
+  // xuất / nạp bản lưu: mang lượt chơi sang máy khác hoặc trình duyệt khác
+  const thongBaoLuu = h("p", { class: "cd-ghi", role: "status" });
+  const xuatBanLuu = () => {
+    const du = {};
+    for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("owfad_")) du[k] = localStorage.getItem(k); }
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([JSON.stringify({ game: "owfad", ban: 1, du }, null, 1)], { type: "application/json" }));
+    const d = new Date(); a.download = `ban-luu-van-phong-${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}.json`;
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    thongBaoLuu.textContent = `Đã tải ${Object.keys(du).filter(k => k.includes("_luu_")).length} bản lưu về máy.`;
+  };
+  const chonFile = h("input", { type: "file", accept: ".json,application/json", hidden: true, onchange: async e => {
+    const f = e.target.files?.[0]; if (!f) return;
+    try {
+      const goi = JSON.parse(await f.text());
+      const du = goi?.game === "owfad" && goi.du;
+      if (!du || typeof du !== "object") throw new Error();
+      const khoa = Object.keys(du).filter(k => k.startsWith("owfad_") && typeof du[k] === "string");
+      if (!khoa.length) throw new Error();
+      for (const k of khoa) localStorage.setItem(k, du[k]);
+      thongBaoLuu.textContent = "Đã nạp bản lưu. Đang tải lại…";
+      setTimeout(() => location.reload(), 700);
+    } catch { thongBaoLuu.textContent = "File không đúng định dạng bản lưu của game."; }
+    e.target.value = "";
+  } });
   const dong = () => { lop.remove(); removeEventListener("keydown", phim, true); khiDong?.(); };
   const phim = e => { if (e.code === "Escape") { e.preventDefault(); e.stopPropagation(); dong(); } };
   addEventListener("keydown", phim, true);
@@ -79,6 +104,11 @@ export function moCaiDat(h, { khiDong, trongGame = false } = {}) {
       h("section", {}, h("h3", {}, "Điều khiển"),
         thanhTruot("Độ nhạy chuột, cảm ứng", "doNhay", 0.3, 2.5, 0.05, v => `${Number(v).toFixed(2)}x`),
         bat("Đảo trục dọc", "daoTrucY")),
+      trongGame ? null : h("section", {}, h("h3", {}, "Bản lưu"),
+        h("div", { class: "cd-luu" },
+          h("button", { class: "btn ghost", type: "button", onclick: xuatBanLuu }, "Tải bản lưu về máy"),
+          h("button", { class: "btn ghost", type: "button", onclick: () => chonFile.click() }, "Nạp bản lưu từ file"), chonFile),
+        thongBaoLuu),
       h("footer", {}, h("button", { class: "btn ghost", type: "button", onclick: () => { datCaiDat({ ...MAC_DINH }); dong(); moCaiDat(h, { khiDong, trongGame }); } }, "Khôi phục mặc định"),
         h("button", { class: "btn primary", type: "button", onclick: dong }, "Xong"))));
   document.body.append(lop);
