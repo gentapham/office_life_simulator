@@ -46,6 +46,20 @@ export const DO_VAT = [
   { loai: "rua_mat", tang: 0, x: 13.1, z: -8.1, nhan: "Rửa mặt" },
   { loai: "rua_mat", tang: 0, x: 13.1, z: -9.6, nhan: "Rửa mặt" },
   { loai: "uong_nuoc", tang: 0, x: -3.2, z: -0.3, nhan: "Uống nước" },
+  // ăn uống trong công ty
+  { loai: "tu_lanh", tang: 0, x: 19.2, z: 11.6, nhan: "Lấy hộp cơm trong tủ lạnh" },
+  { loai: "mi_ly", tang: 0, x: 16.8, z: 11.9, nhan: "Hâm mì ly bằng lò vi sóng" },
+  { loai: "ca_phe", tang: 0, x: 12.0, z: 11.9, nhan: "Pha cà phê" },
+  { loai: "trai_cay", tang: 0, x: 12.0, z: 7.0, nhan: "Ăn trái cây" },
+  { loai: "trai_cay", tang: 0, x: 16.0, z: 7.0, nhan: "Ăn trái cây" },
+  { loai: "tra_bac_binh", tang: 0, x: -6.9, z: 25.4, nhan: "Xin bác Bình ly trà" },
+  // mua ngoài phố (trừ tiền thật trong ví)
+  { loai: "banh_mi", tang: 0, x: -6, z: 42.4, nhan: "Mua bánh mì (20.000đ)" },
+  { loai: "banh_mi", tang: 0, x: -40, z: 32.1, nhan: "Mua Bánh Mì Bựa (25.000đ)", gia: 25000 },
+  { loai: "hu_tieu", tang: 0, x: 40, z: 42.4, nhan: "Ăn hủ tiếu gõ (35.000đ)" },
+  { loai: "nuoc_mia", tang: 0, x: 66, z: 32.1, nhan: "Mua nước mía (15.000đ)" },
+  { loai: "che", tang: 0, x: 13.5, z: 42.4, nhan: "Ăn chè Bà Bảy (20.000đ)" },
+  ...[-120, -86, -52, -14, 22, 76, 112].map(x => ({ loai: "tra_da", tang: 0, x, z: 42.3, nhan: "Uống trà đá (5.000đ)" })),
   { loai: "uong_nuoc", tang: 0, x: 7.8, z: 10.4, nhan: "Uống nước" },
 ];
 

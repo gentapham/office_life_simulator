@@ -356,7 +356,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   for (const [a, b] of [[-146, 6], [14, 42], [62, 140]]) can(a, b, 43.25, 44.2); // hàng xe dựng sát mặt tiền (đi bộ phía ngoài)
   // quán vỉa hè
   for (const x of [-120, -86, -52, -14, 22, 76, 112]) quanTraDa(x, 43.4);
-  xeBanhMi(-6, 43.3); xeBanhMi(40, 43.3, "HỦ TIẾU GÕ"); xeBanhMi(66, 31.2, "NƯỚC MÍA"); xeBanhMi(-40, 31.1, "BÁNH MÌ BỰA");
+  xeBanhMi(-6, 43.3); xeBanhMi(40, 43.3, "HỦ TIẾU GÕ"); xeBanhMi(13.5, 43.3, "CHÈ BÀ BẢY"); xeBanhMi(66, 31.2, "NƯỚC MÍA"); xeBanhMi(-40, 31.1, "BÁNH MÌ BỰA");
   for (const z of [-40, 0, 64, 100]) quanTraDa(45.4, z);
   // trạm xe buýt
   const tram = (x, z) => {

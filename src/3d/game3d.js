@@ -7,6 +7,7 @@ import { BauTroi } from "./bau-troi.js";
 import { GiaoThong } from "./giao-thong.js";
 import { SanKhau, CHO_XEM } from "./san-khau.js";
 import { DongVat } from "./dong-vat.js";
+import { CapCuu } from "./cap-cuu.js";
 export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
@@ -313,9 +314,11 @@ export class Game3D {
     }
     const len = Math.hypot(f, s);
     this.dangDi = len > 0.15;
-    if (!this.dangDi) return;
+    if (!this.dangDi) { this.dangChay = false; return; }
     if (len > 1) { f /= len; s /= len; }
-    const toc = (this.phim.ShiftLeft || this.phim.ShiftRight || (this.stick && len > 0.95) ? TOC_CHAY : TOC_DI) * dt;
+    // đói, khát, kiệt sức thì đi chậm và không chạy được
+    this.dangChay = !this.camChay && (this.phim.ShiftLeft || this.phim.ShiftRight || (this.stick && len > 0.95));
+    const toc = (this.dangChay ? TOC_CHAY : TOC_DI) * (this.hsToc ?? 1) * dt;
     const sy = Math.sin(this.yaw), cy = Math.cos(this.yaw);
     // hướng nhìn: (−sin yaw, −cos yaw)
     const dx = (-sy * f + cy * s) * toc, dz = (-cy * f - sy * s) * toc;
@@ -397,9 +400,16 @@ export class Game3D {
     this.dongVat.capNhat(dt, this.t, this.p, this.tang);
     if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
     this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2);
-    this.onGoiY?.(this.khoa ? null : this.timTuongTac());
+    this.capCuu?.capNhat(dt);
+    this.onGoiY?.(this.khoa || this.capCuu ? null : this.timTuongTac());
     this.onKhung?.();
     this.renderer.render(this.scene, this.camera);
+  }
+  // xỉu: khóa điều khiển, chạy cảnh cấp cứu
+  xiu({ onPha, onXong }) {
+    if (this.capCuu) return;
+    this.datKhoa(true); this.xoaMucTieu();
+    this.capCuu = new CapCuu(this, { onPha, onXong });
   }
   huy() {
     this.renderer.setAnimationLoop(null);

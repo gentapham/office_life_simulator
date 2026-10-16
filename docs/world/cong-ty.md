@@ -142,7 +142,8 @@ Lương tính theo tháng. Nhận theo ngày thì chia cho 22 ngày làm việc,
 | Trưởng phòng / Kế toán trưởng | Nhật, Thương | 25.000.000đ |
 | Phó phòng | Long | 25.000.000đ (bằng trưởng phòng, ai cũng biết vì sao) |
 | Chuyên viên chính | Thái, Hương, Tuấn, Nhi | 18.000.000đ |
-| Chuyên viên | Hiếu, Ngân, Vũ, Bảo, Oánh, Lĩnh, Quỳnh, Huyền, Chương, Sơn | 13.000.000đ |
+| Chuyên viên | Ngân, Vũ, Bảo, Oánh, Lĩnh, Quỳnh, Huyền, Chương, Sơn | 13.000.000đ |
+| Chuyên viên truyền thông nội bộ (mới vào) | Hiếu | 7.000.000đ (lương thử việc, chưa ai biết vì sao thấp vậy) |
 | Ca sĩ độc quyền | Phát | 8.000.000đ + tiền đi hát đám cưới |
 | Bảo vệ | Bình | 8.000.000đ + chỗ ở trong chòi bảo vệ |
 | Thực tập sinh | Duy | 4.000.000đ (85% lương thử việc của… thực tập) |

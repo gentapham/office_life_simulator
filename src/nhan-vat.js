@@ -1,6 +1,6 @@
 // Thông tin hiển thị của 23 nhân vật (theo docs/roles/README.md và docs/world/cong-ty.md)
 export const NHAN_VAT = [
-  { ma: "ran_doc", ten: "Hiếu", vai: "Rắn Độc", icon: "🐍", chuc: "Truyền thông nội bộ", luong: 13000000 , mau: "#2f6b3a", cau: "Thân thiện bề ngoài, tung tin bên trong." },
+  { ma: "ran_doc", ten: "Hiếu", vai: "Rắn Độc", icon: "🐍", chuc: "Truyền thông nội bộ", luong: 7000000 , mau: "#2f6b3a", cau: "Thân thiện bề ngoài, tung tin bên trong." },
   { ma: "giam_doc", ten: "Thắng", vai: "Giám Đốc", icon: "👔", chuc: "Giám đốc điều hành", luong: 60000000 , mau: "#22305a", cau: "Anh không ép ai. Tùy các em." },
   { ma: "truong_phong", ten: "Nhật", vai: "Trưởng Phòng Họp", icon: "📅", chuc: "Trưởng phòng Sản xuất", luong: 25000000 , mau: "#b39d72", cau: "Họp để chuẩn bị cho cuộc họp." },
   { ma: "thanh_ninh", ten: "Nhi", vai: "Thánh Nịnh", icon: "🙇", chuc: "Trợ lý Giám đốc", luong: 18000000 , mau: "#e98fb2", cau: "Sếp nói gì cũng đúng, kể cả khi sai." },

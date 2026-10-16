@@ -1,6 +1,7 @@
 // Bản đọc thử: chơi toàn bộ thoại Ink theo từng ngày của tháng 10/2026.
 import { Story } from "inkjs/dist/ink-es6.js";
 import { NHAN_VAT, THEO_MA, thuCuaNgay, ngayDayDu, SU_KIEN_NGAY } from "./nhan-vat.js";
+import { taoSinhTon } from "./sinh-ton.js";
 import { DIA_DIEM } from "./dia-diem.js";
 import { logoSVG } from "./logo.js";
 
@@ -283,9 +284,11 @@ class LuotChoi {
     if (ngay === 12 && luong) { this.set("tien", (Number(this.v("tien")) || 0) + luong); ghiChu.push(`Lương tháng về (trễ 2 ngày): +${vnd(luong)}`); }
     // qua đêm: bản đọc thử chưa có ăn uống nên coi như tự ăn tối, chỉ số chỉ tụt nhẹ, không xuống dưới 50
     if (ngay > 1) {
-      this.set("no", Math.max(50, (Number(this.v("no")) || 0) - 20));
-      this.set("khat", Math.max(50, (Number(this.v("khat")) || 0) - 25));
+      // qua một đêm: ngủ dậy đói và khát hơn (không tụt dưới 35 để sáng nào cũng kịp ăn uống), năng lượng đầy lại
+      this.set("no", Math.max(35, (Number(this.v("no")) || 0) - 15));
+      this.set("khat", Math.max(35, (Number(this.v("khat")) || 0) - 20));
       this.set("nang_luong", 100);
+      this.set("stress", Math.max(0, (Number(this.v("stress")) || 0) - 10));
     }
     this.queue = this.canhTrongNgay(ngay);
     this.qi = 0;
@@ -300,7 +303,7 @@ let timerHandle = null;
 let CHE_DO = "chu";      // "chu" | "3d"
 let G = null;            // Game3D đang chạy
 let G3D_MOD = null;      // module 3D (tải khi cần)
-function tatG3D() { if (G) { G.huy(); G = null; } CHE_DO = "chu"; document.body.classList.remove("g3d-on"); }
+function tatG3D() { SINH_TON?.huy(); SINH_TON = null; if (G) { G.huy(); G = null; } CHE_DO = "chu"; document.body.classList.remove("g3d-on"); }
 
 async function openRole(ma, opts = {}) {
   tatG3D();
@@ -646,7 +649,38 @@ async function render3D() {
 
   G = new Game3D(khung, { vai: L.ma, tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma, tenVai: ma => THEO_MA[ma]?.vai || "" });
   const g = G;
-  window.__g3d = g; // để kiểm thử tự động
+  window.__g3d = g; window.__L = L; // để kiểm thử tự động
+  // ----- sinh tồn: đói, khát, năng lượng tụt theo thời gian, cảnh báo, xỉu -----
+  sinhTon = SINH_TON = taoSinhTon({
+    g, L, h, thongBao: x => thongBao3D(x),
+    dangChoi: () => !g.khoa && tamNgung.hidden && !g.capCuu,
+    xiu: lyDo => batXiu(lyDo),
+    tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma,
+    dsDongNghiep: () => Object.keys(CHO_NGOI_3D).filter(m => m !== L.ma && m !== "cho"),
+  });
+  app.querySelector(".g3d-hud-trai").append(sinhTon.el); app.querySelector(".g3d").append(sinhTon.vien);
+  const CHAN_DOAN = { "đói": "hạ đường huyết do nhịn ăn quá lâu", "khát": "mất nước nặng", "kiệt sức": "suy nhược cơ thể do làm việc quá sức" };
+  const batXiu = lyDo => {
+    dongHoiThoai(); datMucTieuHUD(""); saveWrite(null);
+    const lop = h("div", { class: "g3d-xiu" }); app.querySelector(".g3d").append(lop);
+    app.querySelector(".g3d").classList.add("cap-cuu"); // ẩn bảng thông tin trong lúc chiếu cảnh
+    thongBao3D(`Bạn gục xuống vì ${lyDo}…`);
+    g.xiu({
+      onPha: (pha, chu) => { lop.className = "g3d-xiu " + pha; lop.textContent = chu; },
+      onXong: () => {
+        const gio = String(L.v("gio") ?? 9).padStart(2, "0") + ":" + String(L.v("phut") ?? 0).padStart(2, "0");
+        const n = THEO_MA[L.ma];
+        lop.className = "g3d-xiu ket"; lop.replaceChildren(h("div", { class: "g3d-xiu-the" },
+          h("small", {}, "Lượt chơi kết thúc"),
+          h("h2", {}, `Bạn đã xỉu vì ${lyDo}`),
+          h("p", {}, `${n.vai} ${L.v(L.ma) || n.ten} được xe cấp cứu 115 đưa vào Bệnh viện Quận Hóng lúc ${gio}, ${ngayDayDu(L.ngay)}. Bác sĩ chẩn đoán: ${CHAN_DOAN[lyDo]}.`),
+          h("p", { class: "nho" }, "Lời dặn của bác sĩ: ăn uống đúng giờ, khát thì uống, mệt thì nghỉ. Deadline không đáng để nằm viện."),
+          h("div", { class: "g3d-xiu-nut" },
+            h("button", { class: "btn primary", onclick: () => openRole(L.ma) }, "Chơi lại vai này"),
+            h("button", { class: "btn ghost", onclick: renderHome }, "Chọn vai khác"))));
+      },
+    });
+  };
   const tam = app.querySelector(".g3d-tam");
   g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn 1" : "Góc nhìn 3"; tam.hidden = goc !== "1"; };
   g.onDoiGoc(g.goc);
@@ -680,16 +714,36 @@ async function render3D() {
     ca: { chu: "", ket: ["Con cá vàng bơi một vòng rồi quên luôn bạn là ai. Ghen tị ghê.", "Nhìn cá bơi, tự nhiên thấy deadline cũng chỉ là nước.", "Con cá đỏ đớp đớp như đang họp."], doi: { stress: -3 } },
     chim: { chu: "", ket: ["Cả bầy bồ câu sà xuống. Bạn thấy mình như người nổi tiếng.", "Một con bồ câu giành vụn bánh mì với con khác. Giống hệt chuyện tranh ghế phó giám đốc.", "Bồ câu mổ lia lịa. Bác Bình nhìn từ chòi bảo vệ, lắc đầu: \"Lát cháu quét sân nhé.\""], doi: { stress: -2 } },
     uong_nuoc: { chu: "Uống nước", ket: ["Một ly nước lọc mát lạnh.", "Cây nước kêu ọc ọc như đồng nghiệp lúc 4 giờ chiều."], doi: { khat: 30 } },
+    // ăn uống trong công ty (miễn phí)
+    tu_lanh: { chu: "Mở tủ lạnh", ket: ["Hộp cơm mang từ nhà. Cơm trắng, trứng chiên, chút dưa leo. Đủ sống.", "Bạn lấy nhầm một hộp không tên. Hóa ra là của Phát. Ăn rồi mới biết.", "Cơm nguội nhưng no. Người trưởng thành không đòi hỏi."], doi: { no: 35 } },
+    mi_ly: { chu: "Hâm mì ly", ket: ["Mì ly của công ty, 0đ (ăn cắp). Nóng hổi.", "Lò vi sóng kêu tít tít. Cả pantry thơm mùi mì tôm.", "Ai đó hâm cá trước đó. Mì của bạn giờ cũng hơi mùi cá."], doi: { no: 25, khat: -5 } },
+    ca_phe: { chu: "Pha cà phê", ket: ["Cà phê đen đá. Tim đập nhanh hơn deadline.", "Máy pha cà phê rên rỉ như đồng nghiệp sáng thứ 2.", "Một ly cà phê, mở mắt được thêm hai tiếng."], doi: { nang_luong: 22, khat: 5 } },
+    trai_cay: { chu: "", ket: ["Một trái chuối. Tiết kiệm, bổ dưỡng.", "Miếng dưa hấu ngọt lịm. Ai mua vậy ta?"], doi: { no: 10, khat: 6 } },
+    tra_bac_binh: { chu: "", ket: ["Bác Bình rót cho ly trà nóng: \"Uống đi cháu, trà Thái đấy.\"", "Bác Bình: \"Làm thì làm, ăn uống phải đúng giờ, cháu ạ.\""], doi: { khat: 20, stress: -3 } },
+    // mua ngoài phố
+    banh_mi: { chu: "Mua bánh mì", gia: 20000, ket: ["Bánh mì thịt nóng giòn, thêm pa-tê. Chân ái.", "Cô bán bánh mì hỏi: \"Cay hông con?\" Bạn gật. Cay thật."], doi: { no: 40 } },
+    hu_tieu: { chu: "Ăn hủ tiếu gõ", gia: 35000, ket: ["Tô hủ tiếu gõ nóng hổi, nước lèo ngọt thanh.", "Tiếng gõ lóc cóc, bạn ăn hết sạch tô."], doi: { no: 45, khat: 10 } },
+    nuoc_mia: { chu: "Mua nước mía", gia: 15000, ket: ["Ly nước mía tắc mát rượi giữa trưa nắng.", "Ngọt tới tận não. Hết khát hẳn."], doi: { khat: 40, no: 5 } },
+    che: { chu: "Ăn chè Bà Bảy", gia: 20000, ket: ["Chè khoai môn nước cốt dừa. Bà Bảy cho thêm một vá.", "Bà Bảy hỏi: \"Con ăn chè gì?\" Câu hỏi dễ nhất trong ngày."], doi: { no: 20, khat: 15, stress: -3 } },
+    tra_da: { chu: "", gia: 5000, ket: ["Ly trà đá vỉa hè. Năm nghìn mà mát cả người.", "Ngồi xuống ghế nhựa, uống trà đá, nghe mấy chú bàn chuyện thế giới."], doi: { khat: 30, stress: -2 } },
   };
+  const TEN_CHI_SO = { stress: "Stress", nang_luong: "Năng lượng", khat: "Nước", no: "No" };
+  let soCaPhe = 0;
   g.onDoVat = v => {
     const d = DUNG_DO[v.loai]; if (!d) return;
-    const lam = cb => d.chu ? chuyenCanh(d.chu + "…", cb) : cb(); // vuốt mèo, ngắm cá: làm ngay, không chuyển cảnh
+    const gia = v.gia ?? d.gia ?? 0, tien = Number(L.v("tien")) || 0;
+    if (gia > tien) { thongBao3D(`Không đủ tiền. Ví còn ${tien.toLocaleString("vi-VN")}đ.`); return; }
+    const lam = cb => d.chu ? chuyenCanh(d.chu + "…", cb) : cb(); // vuốt mèo, ngắm cá, trà đá: làm ngay
     lam(() => {
-      for (const [k, x] of Object.entries(d.doi)) L.set(k, Math.max(0, Math.min(100, (Number(L.v(k)) || 0) + x)));
+      const doi = { ...d.doi };
+      if (v.loai === "ca_phe" && ++soCaPhe > 3) { doi.stress = (doi.stress || 0) + 5; thongBao3D("Ly cà phê thứ " + soCaPhe + " trong ngày. Tim bắt đầu đập loạn."); }
+      for (const [k, x] of Object.entries(doi)) L.set(k, Math.max(0, Math.min(100, (Number(L.v(k)) || 0) + x)));
+      if (gia) L.set("tien", tien - gia);
       thongBao3D(d.ket[Math.floor(Math.random() * d.ket.length)]);
-      const chiSo = Object.entries(d.doi).map(([k, x]) => `${{ stress: "Stress", nang_luong: "Năng lượng", khat: "Khát" }[k]} ${x > 0 ? "+" : ""}${x}`).join(" · ");
+      const chiSo = [...Object.entries(doi).map(([k, x]) => `${TEN_CHI_SO[k]} ${x > 0 ? "+" : ""}${x}`), ...(gia ? [`-${gia.toLocaleString("vi-VN")}đ`] : [])].join(" · ");
       setTimeout(() => thongBao3D(chiSo), 400);
-      updateSide();
+      sinhTon?.daMua(v.loai, gia);
+      updateSide(); sinhTon?.veLai();
     });
   };
   g.onCong = () => { if (L.qi >= L.queue.length) hoiDiNgu(); else thongBao3D("Hôm nay vẫn còn việc ở công ty."); };
@@ -739,6 +793,7 @@ async function render3D() {
       g.datMucTieu(khu, () => {
         datMucTieuHUD("");
         L.qi++;
+        sinhTon?.quaCanh();
         const mo = () => { moHoiThoai(tenNoi); playKnot(name, v => afterScene(v)); };
         if (khu === "ra_ngoai") chuyenCanh(tenNoi, mo); else mo();
       }, { nguoi: khu === "ra_ngoai" ? null : nguoi });
@@ -770,6 +825,7 @@ async function render3D() {
           const ghiChu = L.batDauNgay(L.ngay + 1);
           g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
           ghiChu.forEach(x => thongBao3D(x));
+          soCaPhe = 0; sinhTon?.ngayMoi();
           nextScene3D();
         });
       } }, `Về nhà ngủ, sang ${ngayDayDu(L.ngay + 1)}`),
@@ -777,6 +833,7 @@ async function render3D() {
     );
   };
   const noiChuyen3D = ma => {
+    if (sinhTon?.giao(ma)) return; // đang cầm món đồng nghiệp nhờ mua
     const k = L.npcKnots().find(x => tag(x.tags, "npc") === ma && !L.npcDone.has(x.name));
     const ten = L.v(ma) || THEO_MA[ma]?.ten || ma;
     if (!k) { thongBao3D(`${ten}: "${CAU_BAN[Math.floor(Math.random() * CAU_BAN.length)]}"`); return; }
@@ -788,10 +845,12 @@ async function render3D() {
   // bắt đầu
   g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
   if (!L.queue.length && L.qi === 0 && L.ngay === 1 && !L.played.size) L.batDauNgay(1);
+  setTimeout(() => sinhTon?.ngayMoi(), 2500);
   updateDayline();
   thongBao3D(`${ngayDayDu(L.ngay)}${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`);
   nextScene3D();
 }
+let sinhTon = null, SINH_TON = null;
 let moHoiThoai = () => {}, dongHoiThoai = () => {}, thongBao3D = () => {}, nextScene3D = () => {}, dayEnd3D = () => {};
 // Phím tắt bản 3D: Space/Enter đọc tiếp, 1-9 chọn, H lịch sử, Tab chỉ số
 addEventListener("keydown", e => {

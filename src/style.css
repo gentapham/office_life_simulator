@@ -384,3 +384,36 @@ body.g3d-on { overflow: hidden; padding: 0; }
   .g3d-hd { padding: 18px; }
   .g3d-hd-cot { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ---------- Sinh tồn: thanh chỉ số, cảnh báo, xỉu ---------- */
+.g3d-sinhton { margin-top: 8px; background: var(--g-nen); border: 1px solid var(--g-vien); border-radius: 14px; padding: 8px 12px; display: grid; gap: 5px; backdrop-filter: blur(8px); box-shadow: var(--g-bong); min-width: 190px; font-size: 12px; }
+.st-dong { display: grid; grid-template-columns: 74px 1fr; align-items: center; gap: 8px; color: var(--g-chu); }
+.st-dong span { opacity: .85; }
+.st-thanh { height: 7px; border-radius: 4px; background: rgba(255,255,255,.14); overflow: hidden; }
+.st-thanh i { display: block; height: 100%; background: #6fd08c; border-radius: 4px; transition: width .4s; }
+.st-thanh.xau i { background: #e8702a; }
+.st-dong.vua .st-thanh i { background: #f2c94c; }
+.st-dong.xau .st-thanh i { background: #f2994a; }
+.st-dong.xau span, .st-dong.nguy span { color: #ffb38a; opacity: 1; font-weight: 700; }
+.st-dong.nguy .st-thanh i { background: #ff4d4d; animation: st-nhay .6s infinite alternate; }
+.st-dong.nguy span { color: #ff6b6b; }
+@keyframes st-nhay { from { opacity: 1; } to { opacity: .25; } }
+.st-vi { color: var(--g-chu); opacity: .9; font-weight: 600; padding-top: 2px; border-top: 1px solid var(--g-vien); }
+.st-viec { color: #ffd9a8; font-weight: 600; line-height: 1.35; }
+.g3d-canhbao { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .6s; box-shadow: inset 0 0 120px 30px rgba(220, 30, 30, .9); }
+.g3d-canhbao.vua { opacity: .18; }
+.g3d-canhbao.xau { opacity: .45; animation: cb-dap 1.6s infinite; }
+.g3d-canhbao.nguy { opacity: .8; animation: cb-dap .7s infinite; }
+@keyframes cb-dap { 0%, 100% { opacity: .35; } 50% { opacity: .85; } }
+.g3d-xiu { position: absolute; inset: 0; z-index: 40; display: grid; place-items: center; text-align: center; padding: 20px; color: #fff; font-family: var(--display); font-size: clamp(20px, 3.4vw, 30px); pointer-events: none; background: rgba(0,0,0,0); transition: background 1.2s; }
+.g3d-xiu.nga { background: rgba(0,0,0,.35); }
+.g3d-xiu.den { background: rgba(0,0,0,1); }
+.g3d-xiu.sang { background: rgba(0,0,0,0); }
+.g3d-xiu.ket { background: rgba(10,8,6,.92); pointer-events: auto; }
+.g3d-xiu-the { max-width: 520px; display: grid; gap: 12px; font-family: var(--body, system-ui); font-size: 16px; line-height: 1.55; }
+.g3d-xiu-the small { color: #ff8a6a; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: 12px; }
+.g3d-xiu-the h2 { font-family: var(--display); font-size: clamp(26px, 4vw, 36px); margin: 0; }
+.g3d-xiu-the .nho { opacity: .75; font-size: 14px; }
+.g3d-xiu-nut { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
+@media (max-width: 720px) { .g3d-sinhton { min-width: 0; font-size: 11px; padding: 6px 10px; } .st-dong { grid-template-columns: 64px 1fr; } }
+.g3d.cap-cuu .g3d-hud-trai, .g3d.cap-cuu .g3d-hud-phai, .g3d.cap-cuu .g3d-muctieu, .g3d.cap-cuu .g3d-goiy, .g3d.cap-cuu .g3d-tam { display: none !important; }

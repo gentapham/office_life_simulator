@@ -94,7 +94,7 @@ export class GiaoThong {
     return { chinh: nhom === "chinh" ? mau : "do", ngang: nhom === "ngang" ? mau : "do" };
   }
   capNhat(dt, t, nguoiChoi, hien) {
-    this.nhom.visible = hien;
+    this.nhom.visible = hien && !this.anTam; // ẩn tạm trong cảnh cấp cứu
     // đèn giao thông
     this.tg += dt;
     if (this.tg > CHU_KY[this.pha][2]) { this.tg = 0; this.pha = (this.pha + 1) % CHU_KY.length; }
