@@ -131,6 +131,23 @@ designer: *(trả lời sau 30 giây)* Em nói lại coi? Một… tập đoàn?
 - -> END
 
 // ------------------------------------------------------------
+=== sales_0310_so_dien_thoai_btt ===
+# ngay:3 # gio:10:00 # noi:ban_sales
+_10 giờ sáng. {designer} gửi bản nháp hồ sơ "đối tác chiến lược". Đẹp. Chỉ thiếu một dòng: Số điện thoại liên hệ._
+designer: Tập đoàn 40 tầng mà hông có số điện thoại thì ai tin, em.
+* [🗣️ Điền số của tiệm nail Lung Linh dưới nhà. "Chị chủ nghe máy hay lắm."]
+    ~ sl_phet(5)
+    _Bạn gọi thử. Đổ hai hồi chuông._
+    npc_chi_nail: Alo, Lung Linh nghe! Làm móng hay gội đầu em?
+    sales: Chị ơi, ai gọi hỏi "BTT Global" thì chị nói "Dạ, chủ tịch đang họp" giùm em nha. Em bao chị ly trà sữa.
+    npc_chi_nail: *(im lặng ba giây)* Hai ly. Trân châu đen.
+    _Từ hôm nay, Tập đoàn Bánh Tráng Trộn Toàn Cầu chính thức có tổng đài. Tổng đài thơm mùi sơn móng tay._
+* [🤝 "Chị để trống đi. Em sẽ đi tìm đối tác thật, có số thật."]
+    ~ sl_that_long()
+    designer: *(gửi sticker vỗ tay)* Vậy chiều nay chị với em đi chào hàng ba quán quanh Hẻm 69 nha.
+    ~ qh("designer", 5)
+- -> END
+
 === sales_0410_ngay_dong_vat ===
 # ngay:4 # gio:09:30 # noi:cong_cong_ty
 _Chủ nhật, Ngày Động vật Thế giới. Bạn ghé công ty lấy xấp danh thiếp quên. {cho} đang được {chi_dai} tắm, mặc áo hồng, đội nơ._
