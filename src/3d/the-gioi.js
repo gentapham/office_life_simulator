@@ -1,7 +1,10 @@
 // Bản đồ 3D: tòa nhà G-Entertainment (tầng 1, tầng 2, sân thượng), sân trước, chòi bảo vệ, cổng, phố xung quanh.
 // Tầng: 0 = tầng 1 và sân (y = 0), 1 = tầng 2 (y = 4), 2 = sân thượng (y = 8).
 import * as THREE from "three";
+import { gopKhoi } from "./gop-khoi.js";
 import { vl } from "./nhan-vat-3d.js";
+import { taoThanhPho } from "./thanh-pho.js";
+import { themNoiThat } from "./noi-that.js";
 
 export const CAO_TANG = 4;
 const TUONG_CAO = 3.6, DAY = 0.25;
@@ -94,7 +97,9 @@ export function khuCuaNoi(noi) {
   return "ra_ngoai";
 }
 
-export function taoTheGioi(scene) {
+export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
+  // mọi khối tĩnh vào một nhóm, cuối cùng gộp theo vật liệu để giảm lượt vẽ
+  const scene = new THREE.Group(); sceneGoc.add(scene);
   const vat = { 0: [], 1: [], 2: [] };    // vật cản theo tầng: {minX,maxX,minZ,maxZ}
   const denDem = [];                       // đèn bật buổi tối
   const nhapNhay = [];                     // đèn LED nhấp nháy
@@ -127,37 +132,23 @@ export function taoTheGioi(scene) {
     }
   };
 
-  // ---------- Mặt đất, đường, phố ----------
-  const dat = new THREE.Mesh(new THREE.PlaneGeometry(220, 220), vl(0x7fa36a)); dat.rotation.x = -Math.PI / 2; dat.position.y = -0.02; scene.add(dat);
-  const san = new THREE.Mesh(new THREE.PlaneGeometry(48, 16), vl(0xc9c3b6)); san.rotation.x = -Math.PI / 2; san.position.set(0, -0.01, 22); scene.add(san);
-  const duong = new THREE.Mesh(new THREE.PlaneGeometry(220, 10), vl(0x3b3d42)); duong.rotation.x = -Math.PI / 2; duong.position.set(0, 0, 36); scene.add(duong);
-  for (let x = -100; x < 100; x += 6) { const v = new THREE.Mesh(new THREE.PlaneGeometry(3, 0.25), vl(0xe9e3c8)); v.rotation.x = -Math.PI / 2; v.position.set(x, 0.01, 36); scene.add(v); }
-  const leDuong = new THREE.Mesh(new THREE.PlaneGeometry(220, 3), vl(0xb7b0a2)); leDuong.rotation.x = -Math.PI / 2; leDuong.position.set(0, 0.005, 42.5); scene.add(leDuong);
-  // Tòa nhà xung quanh (Quận Hóng)
-  const mauNha = [0xd9c9a8, 0xa9c2cf, 0xe3b9a6, 0xc7d1b5, 0xb8b2c9, 0xe6d9b8, 0x9fb7a8];
-  const cuaSo = taoVanCuaSo();
-  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-  const nhaPho = (x, z, w, d, h) => {
-    const mats = Array.from({ length: 6 }, (_, i) => i === 2 || i === 3 ? vl(mauNha[Math.floor(rnd() * mauNha.length)]) : new THREE.MeshLambertMaterial({ color: mauNha[Math.floor(rnd() * mauNha.length)], map: cuaSo }));
-    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mats); m.position.set(x, h / 2, z); scene.add(m);
-  };
-  for (let x = -60; x <= 60; x += 11) nhaPho(x + rnd() * 2, 50 + rnd() * 3, 8 + rnd() * 2, 8, 6 + rnd() * 18);
-  for (const s of [-1, 1]) for (let z = -30; z <= 26; z += 12) nhaPho(s * (34 + rnd() * 6), z, 9, 9, 5 + rnd() * 14);
-  for (let x = -40; x <= 40; x += 12) nhaPho(x, -32 - rnd() * 4, 10, 8, 6 + rnd() * 16);
-  // Cây
+  // ---------- Phố phường xung quanh ----------
+  const pho = taoThanhPho(scene, vat, denDem, { dienThoai });
+  // sân công ty
+  const san = new THREE.Mesh(new THREE.PlaneGeometry(48, 48), dong(new THREE.MeshLambertMaterial({ color: 0xc9c3b6 }))); san.rotation.x = -Math.PI / 2; san.position.set(0, -0.005, 6); scene.add(san);
+  pho.matUot.push(san.material);
   const cay = (x, z, s = 1) => {
     const t = new THREE.Mesh(new THREE.CylinderGeometry(0.12 * s, 0.16 * s, 1.4 * s, 5), vl(0x6b4a2f)); t.position.set(x, 0.7 * s, z); scene.add(t);
     const l = new THREE.Mesh(new THREE.IcosahedronGeometry(0.9 * s, 0), vl(0x4f8a3c)); l.position.set(x, 1.9 * s, z); scene.add(l);
     vat[0].push({ minX: x - 0.3, maxX: x + 0.3, minZ: z - 0.3, maxZ: z + 0.3 });
   };
-  [[-18, 18], [-14, 26], [16, 18], [20, 26], [-22, 22]].forEach(([x, z]) => cay(x, z, 1.1));
-  for (let x = -95; x < 100; x += 14) cay(x, 41.5, 0.9);
+  [[-18, 18], [-14, 26], [16, 18], [20, 26], [-22, 22], [-22, -16], [22, -16], [-22, 4], [22, 4]].forEach(([x, z]) => cay(x, z, 1.1));
 
   // ---------- Hàng rào sân trước + cổng ----------
   const hangRao = (x1, z1, x2, z2, doors = []) => tuong(x1, z1, x2, z2, 0, doors, 0xd2cbbb, 1.4);
-  hangRao(-24, 14, -24, 30); hangRao(24, 14, 24, 30);
+  hangRao(-24, -18, -24, 30); hangRao(24, -18, 24, 30); hangRao(-24, -18, 24, -18);
   hangRao(-24, 30, 24, 30, [[0, 4]]);
-  hop(4, 1.6, 0.2, 0x3c3f46, 2, 0, 30.05); // cánh cổng đóng (ra ngoài bằng tương tác)
+  hop(4, 1.6, 0.2, 0x3c3f46, 6.1, 0, 29.65); // cánh cổng đã kéo sang một bên: đi bộ ra phố được
   hop(0.6, 2.4, 0.6, 0xb9b2a3, -0.3, 0, 30); hop(0.6, 2.4, 0.6, 0xb9b2a3, 4.3, 0, 30);
   // Chòi bảo vệ
   hop(4, 2.6, 3.2, 0x5f87b8, -8, 0, 22);
@@ -270,22 +261,23 @@ export function taoTheGioi(scene) {
   const y3 = Y(2);
   hop(3, 2.6, 2.4, 0xd9d2c4, 5, y3, 12.4, { tang: 2 }); // buồng cầu thang
   hop(1.4, 1.2, 1.4, 0x9aa3ab, -12, y3, -8, { tang: 2 }); hop(1.4, 1.2, 1.4, 0x9aa3ab, -9, y3, -8, { tang: 2 }); // cục nóng điều hòa
-  for (let i = 0; i < 4; i++) { const d = new THREE.Mesh(new THREE.SphereGeometry(0.15, 6, 4), new THREE.MeshBasicMaterial({ color: 0xffd98a })); d.position.set(-6 + i * 4, y3 + 2.2, 4); scene.add(d); denDem.push(d); }
+  for (let i = 0; i < 4; i++) { const d = new THREE.Mesh(new THREE.SphereGeometry(0.15, 6, 4), VL_DEN_TRAN); d.position.set(-6 + i * 4, y3 + 2.2, 4); scene.add(d); denDem.push(d); }
   hop(0.06, 2.2, 0.06, 0x555555, -6, y3, 4, { tang: 2, can: false }); hop(0.06, 2.2, 0.06, 0x555555, 6, y3, 4, { tang: 2, can: false });
 
   // Đèn trần (bật buổi tối)
   for (const t of [0, 1]) for (let x = -15; x <= 15; x += 10) for (const z of [-9, 6]) {
-    const d = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.06, 0.4), new THREE.MeshBasicMaterial({ color: 0xfff6dd }));
+    const d = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.06, 0.4), VL_DEN_TRAN);
     d.position.set(x, Y(t) + TUONG_CAO - 0.05, z); scene.add(d); denDem.push(d);
   }
-  // Đèn đường
-  for (let x = -40; x <= 40; x += 16) {
-    hop(0.15, 4.5, 0.15, 0x3a3d44, x, 0, 31.5, { can: false });
-    const d = new THREE.Mesh(new THREE.SphereGeometry(0.25, 6, 4), new THREE.MeshBasicMaterial({ color: 0xffe2a6 })); d.position.set(x, 4.6, 31.5); scene.add(d); denDem.push(d);
-  }
-
-  return { vat, denDem, nhapNhay };
+  themNoiThat(scene, hop, CAO_TANG, denDem);
+  for (const l of nhapNhay) l.userData.rieng = true;
+  gopKhoi(scene, { deQuy: true });
+  return { vat, denDem, nhapNhay, pho };
 }
+
+const dong = m => { m.userData.dong = true; return m; };
+const VL_DEN_TRAN = new THREE.MeshBasicMaterial({ color: 0xfff6dd }); VL_DEN_TRAN.userData.dong = true;
+
 
 // ---------- Đồ vật nhỏ ----------
 function banLamViec(scene, x, z, vat, denDem, coCay) {

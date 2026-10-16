@@ -1,7 +1,7 @@
 // Nhân vật low-poly: mặt vẽ riêng từng người, 21 kiểu tóc, trang phục tách khối rõ ràng (áo, quần, giày, phụ kiện).
 // Ngoại hình theo docs/roles/ngoai-hinh.md. Nhân vật quay mặt về +z, đứng trên y = 0.
 import * as THREE from "three";
-import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+import { gopKhoi } from "./gop-khoi.js";
 
 // ---------- Vật liệu dùng chung ----------
 const vlCache = new Map();
@@ -50,27 +50,15 @@ const vat = (wTren, wDuoi, h, d, mat, x = 0, y = 0, z = 0) => {
   const g = new THREE.CylinderGeometry(wTren / Math.SQRT2, wDuoi / Math.SQRT2, h, 4, 1); g.rotateY(Math.PI / 4);
   const m = new THREE.Mesh(g, typeof mat === "number" ? vl(mat) : mat); m.scale.z = d / Math.max(wTren, wDuoi); m.position.set(x, y, z); return m;
 };
-// gộp các khối tĩnh cùng vật liệu để giảm số lần vẽ
-function gop(group) {
-  const theoVL = new Map();
-  for (const c of [...group.children]) {
-    if (!c.isMesh || Array.isArray(c.material) || c.children.length) continue;
-    c.updateMatrix();
-    const g = (c.geometry.index ? c.geometry.toNonIndexed() : c.geometry.clone()).applyMatrix4(c.matrix);
-    for (const k of Object.keys(g.attributes)) if (!["position", "normal", "uv"].includes(k)) g.deleteAttribute(k);
-    if (!theoVL.has(c.material)) theoVL.set(c.material, []);
-    theoVL.get(c.material).push(g);
-    group.remove(c);
-  }
-  for (const [m, ds] of theoVL) group.add(new THREE.Mesh(mergeGeometries(ds), m));
-  return group;
-}
+// gộp các khối tĩnh: màu trơn nướng vào đỉnh, khối có ảnh gộp theo vật liệu
+const gop = nhom => gopKhoi(nhom);
 
 // ---------- Bảng ngoại hình ----------
 const DA = { sang: 0xf3cfae, vua: 0xe2b08a, ngam: 0xc8916a };
 // mat: mat (tron|hep|cuoi|liec|met|lim|to), may (day|manh|nhuong|cau), mieng (cuoi_to|cuoi|thang|nhech|mim|ngap|meu|ho),
 //      son, maHong, quang (0..2), nhan (nếp nhăn), rau, mi (lông mi dày)
 // toc: kiểu tóc. ao/quan/giay: kiểu + màu. pk: phụ kiện
+export { gop as gopNhom };
 export const NGOAI_HINH = {
   ran_doc: { da: DA.sang, toc: ["ngoi", 0x1e1a17], mat: { mat: "cuoi", may: "manh", mieng: "cuoi_to" },
     ao: { kieu: "somi", mau: 0xf6f6f2, soVin: true }, quan: { kieu: "tay", mau: 0x6d6f73 }, giay: ["tay", 0x231f1c], pk: ["soTay", "butHong"] },
@@ -230,8 +218,8 @@ function taoToc(dau, kieu, mau, mau2) {
 }
 
 // ---------- Người ----------
-export function taoNguoi(ma) {
-  const nh = NGOAI_HINH[ma] || NGOAI_HINH.ran_doc;
+export function taoNguoi(ma, nhRieng = null) {
+  const nh = nhRieng || NGOAI_HINH[ma] || NGOAI_HINH.ran_doc;
   if (nh.cho) return taoCho();
   if (nh.sieuNhan) return taoSieuNhan();
   const g = new THREE.Group();
@@ -398,6 +386,9 @@ export function taoNguoi(ma) {
   if (pk.includes("muLen")) { dau.add(hop(0.34, 0.14, 0.34, 0x2d3a55, 0, 0.21, -0.005)); dau.add(hop(0.35, 0.05, 0.35, toiMau(0x2d3a55, 0.8), 0, 0.15, -0.005)); }
   if (pk.includes("muKepi")) { dau.add(hop(0.34, 0.1, 0.34, 0x23406f, 0, 0.22, 0)); dau.add(hop(0.36, 0.03, 0.36, 0x1a2a48, 0, 0.17, 0)); dau.add(hop(0.3, 0.025, 0.12, 0x111111, 0, 0.165, 0.2)); dau.add(hop(0.06, 0.05, 0.01, 0xe8c547, 0, 0.23, 0.172)); }
   if (pk.includes("butCamUng")) { const b = hop(0.012, 0.012, 0.14, 0xf6f6f2, 0.175, 0.07, 0.0); dau.add(b); }
+  if (pk.includes("nonLa")) { const n = new THREE.Mesh(new THREE.ConeGeometry(0.34, 0.2, 10, 1, true), vl(0xe6d39a, { side: THREE.DoubleSide })); n.position.y = 0.26; dau.add(n); }
+  if (pk.includes("muBaoHiem")) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.2, 8, 5, 0, Math.PI * 2, 0, Math.PI / 2), vl(nh.mauMu || 0xc0262d)); m.position.y = 0.07; m.scale.set(1.05, 1, 1.1); dau.add(m); dau.add(hop(0.3, 0.02, 0.08, toiMau(nh.mauMu || 0xc0262d, 0.7), 0, 0.08, 0.18)); }
+  if (pk.includes("khauTrangVai")) dau.add(hop(0.24, 0.12, 0.03, nh.mauKhauTrang || 0x3a4250, 0, -0.1, 0.155));
   g.add(dau);
   // gộp phần đầu tĩnh (giữ mesh mặt riêng vì có nhiều vật liệu)
   gop(dau);
@@ -415,6 +406,60 @@ export function taoNguoi(ma) {
       dau.rotation.y = dangDi ? 0 : Math.sin(t * 0.5) * 0.12;
     },
   };
+}
+
+// ---------- Người đi đường ngẫu nhiên ----------
+const NGAU = {
+  da: [DA.sang, DA.vua, DA.ngam, 0xeac3a0, 0xd9a07a],
+  toc: [["ngoi"], ["cua"], ["gon"], ["re_giua"], ["bob"], ["dai_song"], ["thang_mai"], ["tem"], ["buoc"], ["bu"], ["lat"], ["buoi_cao"]],
+  mauToc: [0x16120f, 0x1e1a17, 0x2a1c14, 0x5a3a1e, 0x7a4a2a, 0x9a9690],
+  ao: ["thun", "thun", "somi", "polo", "len", "hoodie", "khoac"],
+  mauAo: [0xf6f6f2, 0x1c1c1f, 0x2a5aa8, 0xc0262d, 0x2e8b57, 0xe9e04a, 0xf5b9cf, 0x8a8d92, 0x7b4bb3, 0xe8702a, 0x9cc3e6, 0xd8c7a3],
+  quan: ["jean", "tay", "short", "jogger", "tuihop"],
+  mauQuan: [0x2f3742, 0x4f6d9a, 0x1c1c1f, 0x6d6f73, 0xb39d72, 0x3f4247],
+  giay: [["sneaker", 0xf2f2f2], ["depLe", 0x2a5aa8], ["tay", 0x231f1c], ["sneaker", 0x2a2c31], ["depLe", 0xc0262d]],
+};
+export function hinhNguoiNgauNhien(rnd, { nu = rnd() < 0.5, them = [] } = {}) {
+  const chon = a => a[Math.floor(rnd() * a.length)];
+  const kieuAo = nu && rnd() < 0.25 ? "vay_lien" : chon(NGAU.ao);
+  const tocNu = [["bob"], ["dai_song"], ["thang_mai"], ["buoc"], ["buoi_cao"], ["tem"]];
+  const tocNam = [["ngoi"], ["cua"], ["gon"], ["re_giua"], ["bu"], ["lat"]];
+  const pk = [...them];
+  if (rnd() < 0.3) pk.push("khauTrangVai");
+  if (rnd() < 0.12) pk.push("kinhVuong");
+  // áo khoác chống nắng của người Sài Gòn
+  const chongNang = nu && rnd() < 0.35;
+  const mauAo = chon(NGAU.mauAo);
+  return {
+    da: chon(NGAU.da), nu, beo: rnd() < 0.15, gay: rnd() < 0.2, cao: rnd() < 0.2, nho: nu && rnd() < 0.3,
+    toc: [(nu ? chon(tocNu) : chon(tocNam))[0], chon(NGAU.mauToc), 0xf26fa6],
+    mat: { mat: chon(["tron", "hep", "met", "to"]), may: chon(["manh", "day", "cau", "nhuong"]), mieng: chon(["thang", "mim", "cuoi", "meu"]), son: nu && rnd() < 0.6 ? chon([0xc75b6c, 0xe0607e, 0xa8505a]) : undefined, mi: nu },
+    ao: chongNang ? { kieu: "hoodie", mau: chon([0xf5b9cf, 0x9cc3e6, 0xf6f6f2, 0xe9e04a]) } : { kieu: kieuAo, mau: mauAo, soVin: rnd() < 0.3, trong: 0xf6f6f2, vien: 0xf6f6f2 },
+    quan: kieuAo === "vay_lien" ? { kieu: "da" } : { kieu: chon(NGAU.quan), mau: chon(NGAU.mauQuan) },
+    giay: chon(NGAU.giay), pk,
+    mauMu: chon([0xc0262d, 0xf6f6f2, 0x1c1c1f, 0x2a5aa8, 0xe9e04a, 0xf26fa6, 0x2e8b57]),
+    mauKhauTrang: chon([0x3a4250, 0x1c1c1f, 0xf5b9cf, 0x9cc3e6, 0xf6f6f2]),
+  };
+}
+export function taoNguoiNgauNhien(rnd, tuyChon) { return taoNguoi(null, hinhNguoiNgauNhien(rnd, tuyChon)); }
+
+// Người ngồi xe máy (tài xế, người ngồi sau): khối gộp, hai tay cầm lái, đội mũ bảo hiểm
+export function taoNguoiLaiXe(rnd, { aoXeOm = false, sau = false } = {}) {
+  const nh = hinhNguoiNgauNhien(rnd);
+  const ao = aoXeOm ? 0x2e9a4a : (nh.ao.mau ?? 0x2a5aa8), quan = nh.quan.mau ?? 0x2f3742, da = nh.da;
+  const g = new THREE.Group();
+  g.add(hop(0.36, 0.14, 0.4, quan, 0, 0.0, 0)); // đùi (ngồi)
+  for (const s of [-1, 1]) { g.add(hop(0.13, 0.44, 0.14, quan, s * 0.12, -0.22, 0.22)); g.add(hop(0.14, 0.07, 0.22, 0x231f1c, s * 0.12, -0.44, 0.26)); }
+  const than = vat(0.4, 0.34, 0.5, 0.22, vl(ao), 0, 0.32, -0.05); than.rotation.x = 0.18; g.add(than);
+  if (aoXeOm) g.add(hop(0.3, 0.06, 0.02, 0xf6f6f2, 0, 0.42, 0.07));
+  if (!sau) for (const s of [-1, 1]) { const t = hop(0.1, 0.1, 0.48, ao, s * 0.22, 0.46, 0.2); t.rotation.x = 0.35; g.add(t); g.add(hop(0.09, 0.09, 0.08, da, s * 0.24, 0.38, 0.45)); }
+  else for (const s of [-1, 1]) g.add(hop(0.1, 0.4, 0.1, ao, s * 0.24, 0.3, 0));
+  g.add(hop(0.11, 0.07, 0.11, da, 0, 0.6, -0.02));
+  const dau = hop(0.26, 0.28, 0.26, da, 0, 0.76, 0); g.add(dau);
+  g.add(hop(0.2, 0.08, 0.02, nh.mauKhauTrang, 0, 0.71, 0.135));
+  g.add(hop(0.18, 0.05, 0.02, 0x111111, 0, 0.8, 0.135)); // mắt (nhìn từ xa)
+  const mu = new THREE.Mesh(new THREE.SphereGeometry(0.18, 8, 5, 0, Math.PI * 2, 0, Math.PI / 2), vl(aoXeOm ? 0x2e9a4a : nh.mauMu)); mu.position.y = 0.84; mu.scale.set(1.05, 1, 1.12); g.add(mu);
+  return gop(g);
 }
 
 // Siêu Nhân Hồng: đồ liền thân hồng, kẻ trắng chéo ngực, áo choàng ngắn, găng và ủng trắng, mũ bảo hiểm kính đen

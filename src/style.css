@@ -178,6 +178,8 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .g3d-ngay b { font-family: var(--display); font-size: 18px; line-height: 1.2; }
 .g3d-ngay span { font-size: 13px; color: #d9d2c4; }
 .g3d-ngay span:empty { display: none; }
+.g3d-tt { margin-top: 6px; background: rgba(17,16,13,.72); border-radius: 10px; padding: 5px 10px; font-size: 13px; color: #f4efe6; width: max-content; backdrop-filter: blur(6px); }
+.g3d-tt:empty { display: none; }
 .g3d-hud-phai { position: absolute; top: max(12px, env(safe-area-inset-top)); right: max(12px, env(safe-area-inset-right)); display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; max-width: 60vw; }
 .g3d-muctieu {
   position: absolute; top: max(12px, env(safe-area-inset-top)); left: 50%; transform: translateX(-50%);

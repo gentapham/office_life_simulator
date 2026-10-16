@@ -3,6 +3,8 @@
 import * as THREE from "three";
 import { taoTheGioi, KHU, CAU_THANG, CHO_NGOI, CAO_TANG } from "./the-gioi.js";
 import { taoNguoi, taoBangTen, taoDoiTay } from "./nhan-vat-3d.js";
+import { BauTroi } from "./bau-troi.js";
+import { GiaoThong } from "./giao-thong.js";
 
 const MAT = 1.72;            // tầm mắt
 const BAN_KINH = 0.32;       // bán kính người chơi khi va chạm
@@ -34,14 +36,17 @@ export class Game3D {
 
     this.scene = new THREE.Scene();
     this.scene.fog = new THREE.Fog(0xbfd9ec, 40, 130);
-    this.camera = new THREE.PerspectiveCamera(70, 1, 0.05, 300);
+    this.camera = new THREE.PerspectiveCamera(70, 1, 0.05, 1000);
     this.scene.add(this.camera);
     this.hemi = new THREE.HemisphereLight(0xffffff, 0xb8ad96, 1.6);
     this.nen = new THREE.AmbientLight(0xffffff, 0.55); this.scene.add(this.nen);
     this.mat_troi = new THREE.DirectionalLight(0xfff1d6, 1.6); this.mat_troi.position.set(30, 50, 40);
     this.scene.add(this.hemi, this.mat_troi);
 
-    this.theGioi = taoTheGioi(this.scene);
+    this.theGioi = taoTheGioi(this.scene, { dienThoai: this.dienThoai });
+    this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot });
+    this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.dienThoai });
+    this.dem = null; this.moTaTT = "";
 
     // Người chơi: thân (góc nhìn 3) + đôi tay (góc nhìn 1)
     this.than = taoNguoi(vai); this.scene.add(this.than.group);
@@ -155,19 +160,10 @@ export class Game3D {
     this.tang = tang; this.p.set(x, tang * CAO_TANG, z);
     if (huong != null) { this.yaw = huong; this.pitch = 0; }
   }
-  // Ánh sáng theo giờ: sáng, trưa, chiều tà, tối
-  datGio(gio, phut = 0) {
-    const h = gio + phut / 60;
-    const dem = h < 6 || h >= 19, chieu = h >= 17 && h < 19;
-    const troi = dem ? 0x1b2340 : chieu ? 0xf2b27a : h < 8 ? 0xcfe2f0 : 0x9fcdee;
-    this.scene.background = new THREE.Color(troi);
-    this.scene.fog.color.set(troi);
-    this.hemi.intensity = dem ? 0.75 : chieu ? 1.3 : 1.65;
-    this.nen.intensity = dem ? 0.45 : 0.55;
-    this.mat_troi.intensity = dem ? 0.15 : chieu ? 1.1 : 1.6;
-    this.mat_troi.color.set(chieu ? 0xffc48a : 0xfff1d6);
-    for (const d of this.theGioi.denDem) d.material.color.set(dem || chieu ? 0xffe9b8 : 0xf3efe6);
-  }
+  // Giờ trong ngày và thời tiết: bầu trời, ánh sáng, đèn đường do BauTroi tính mỗi khung hình
+  datGio(gio, phut = 0) { this.bauTroi.gio = gio + phut / 60; }
+  datThoiTiet(loai) { this.bauTroi.datThoiTiet(loai); }
+  trongNha() { return this.tang < 2 && Math.abs(this.p.x) < 20 && this.p.z > -14 && this.p.z < 14; }
   capNhatTen() { for (const n of this.npc) n.bang.doiTen(this.tenCua(n.ma), this.tenVai(n.ma)); }
 
   // Mục tiêu: đi tới khu để mở cảnh tiếp theo
@@ -243,6 +239,7 @@ export class Game3D {
     const dung = (x, z) => {
       for (const b of vat) if (x > b.minX - BAN_KINH && x < b.maxX + BAN_KINH && z > b.minZ - BAN_KINH && z < b.maxZ + BAN_KINH) return true;
       for (const n of this.npc) if (n.tang === this.tang && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.55) return true;
+      if (this.tang === 0 && z > 29 && this.giaoThong.chan(x, z)) return true;
       return false;
     };
     if (!dung(this.p.x + dx, this.p.z)) this.p.x += dx;
@@ -250,7 +247,7 @@ export class Game3D {
     this.huongThan = Math.atan2(dx, dz);
   }
   loop() {
-    const dt = Math.min(0.05, this.dongHo.getDelta());
+    const dt = Math.min(0.1, this.dongHo.getDelta());
     this.t += dt;
     this.diChuyen(dt);
     const y = this.tang * CAO_TANG;
@@ -293,6 +290,20 @@ export class Game3D {
       if (this.mucTieu.choRoi) { if (m.tang !== this.tang || m.d > DUNG_O_KHU + 0.8) this.mucTieu.choRoi = false; }
       else if (m.tang === this.tang && m.d < DUNG_O_KHU) { this.mucTieu.daToi = true; const cb = this.mucTieu.onToi; this.xoaMucTieu(); cb?.(); }
     }
+    // bầu trời, thời tiết, đèn buổi tối
+    const trong = this.trongNha();
+    const kq = this.bauTroi.capNhat(dt, this.camera, { hemi: this.hemi, nen: this.nen, matTroi: this.mat_troi }, trong);
+    if (kq.dem !== this.dem) {
+      this.dem = kq.dem;
+      for (const d of this.theGioi.denDem) d.material.color.set(kq.dem ? 0xffe2a0 : 0xf3efe6);
+      const p = this.theGioi.pho;
+      p.kinhDem.emissive.set(kq.dem ? 0x9a7a3a : 0x000000);
+      p.trongQuan.emissive.set(kq.dem ? 0x8a6a3a : 0x000000);
+    }
+    this._tt = (this._tt || 0) + dt;
+    if (this._tt > 1) { this._tt = 0; const m = this.bauTroi.moTa(); if (m !== this.moTaTT) { this.moTaTT = m; this.onThoiTiet?.(m); } }
+    // giao thông: ẩn khi đang ở sâu trong tòa nhà cho nhẹ máy
+    this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2);
     this.onGoiY?.(this.khoa ? null : this.timTuongTac());
     this.onKhung?.();
     this.renderer.render(this.scene, this.camera);

@@ -590,13 +590,14 @@ async function render3D() {
   CHE_DO = "3d";
   document.body.classList.add("g3d-on");
   app.replaceChildren(h("div", { class: "g3d" }, h("p", { class: "g3d-loading" }, "Đang dựng văn phòng…")));
-  G3D_MOD ||= { ...(await import("./3d/game3d.js")), ...(await import("./3d/the-gioi.js")) };
+  G3D_MOD ||= { ...(await import("./3d/game3d.js")), ...(await import("./3d/the-gioi.js")), ...(await import("./3d/bau-troi.js")) };
   if (CHE_DO !== "3d") return;
-  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY } = G3D_MOD;
+  const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY, thoiTietLuc } = G3D_MOD;
   const n = THEO_MA[L.ma];
 
   const khung = h("div", { class: "g3d-khung" });
   UI.dayline = h("div", { class: "g3d-ngay" });
+  const ttEl = h("div", { class: "g3d-tt" });
   UI.log = h("div", { class: "g3d-log", "aria-live": "polite" });
   UI.choices = h("div", { class: "g3d-choices" });
   UI.side = h("aside", { class: "side" });
@@ -616,7 +617,7 @@ async function render3D() {
       h("button", { class: "btn primary", onclick: () => G?.canvas.requestPointerLock?.() }, "Vào văn phòng")));
   app.replaceChildren(h("div", { class: "g3d" },
     khung,
-    h("div", { class: "g3d-hud-trai" }, UI.dayline),
+    h("div", { class: "g3d-hud-trai" }, UI.dayline, ttEl),
     mucTieu,
     h("div", { class: "g3d-hud-phai" }, btnGoc,
       h("button", { class: "g3d-btn", onclick: () => { updateSide(); keChiSo.hidden = !keChiSo.hidden; } }, "Chỉ số"),
@@ -632,6 +633,8 @@ async function render3D() {
   const tam = app.querySelector(".g3d-tam");
   g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn thứ nhất" : "Góc nhìn thứ ba"; tam.hidden = goc !== "1"; };
   g.onDoiGoc(g.goc);
+  g.onThoiTiet = moTa => { ttEl.textContent = moTa; };
+  const datGioTT = (gio, phut = 0) => { g.datGio(gio, phut); g.datThoiTiet(thoiTietLuc(L.ngay, gio)); };
   g.onKhoaChuot = khoa => { tamNgung.hidden = khoa || g.khoa || g.dienThoai; };
   if (!g.dienThoai) tamNgung.hidden = false;
   g.onGoiY = gy => {
@@ -674,7 +677,7 @@ async function render3D() {
       const khu = khuCuaNoi(noi) || khuMacDinh();
       const kv = KHU[khu];
       const m = String(gio || "").match(/(\d{1,2}):(\d{2})/);
-      if (m) g.datGio(+m[1], +m[2]);
+      if (m) datGioTT(+m[1], +m[2]);
       updateDayline(gio && gio !== true ? gio : null, null);
       dongHoiThoai();
       const tenNoi = khu === "ra_ngoai" ? prettyNoi(noi) : kv.ten;
@@ -693,7 +696,7 @@ async function render3D() {
     saveWrite(L.toSave());
     if (L.ngay >= 31) { moHoiThoai("Đêm Hồng Halloween"); finale(); return; }
     dongHoiThoai();
-    g.datGio(18, 30);
+    datGioTT(18, 30);
     updateDayline("18:30", null);
     datMucTieuHUD("Hết giờ làm. Ra cổng để về nhà", "Có thể nói chuyện với đồng nghiệp trước khi về");
     g.datMucTieu("ra_ngoai", hoiDiNgu);
@@ -705,7 +708,7 @@ async function render3D() {
       h("button", { class: "choice", onclick: () => {
         chuyenCanh(`Sáng ${thuCuaNgay(L.ngay + 1)}, ${L.ngay + 1}/10`, () => {
           const ghiChu = L.batDauNgay(L.ngay + 1);
-          g.datViTri(DIEM_DAU_NGAY); g.datGio(8, 0);
+          g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
           ghiChu.forEach(x => thongBao3D(x));
           nextScene3D();
         });
@@ -723,7 +726,7 @@ async function render3D() {
   };
 
   // bắt đầu
-  g.datViTri(DIEM_DAU_NGAY);
+  g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0);
   if (!L.queue.length && L.qi === 0 && L.ngay === 1 && !L.played.size) L.batDauNgay(1);
   updateDayline();
   thongBao3D(`${thuCuaNgay(L.ngay)}, ${L.ngay}/10${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`);
