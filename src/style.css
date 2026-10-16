@@ -469,7 +469,7 @@ body.g3d-on { overflow: hidden; padding: 0; }
   --mg-cam: #e8702a; --mg-xanh: #5cbf7e; --mg-do: #e5675a;
   position: absolute; inset: 0; z-index: 40; display: grid; place-items: center; padding: 16px;
   padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right));
-  background: rgba(8, 7, 5, .55); backdrop-filter: blur(3px); color: var(--mg-chu); font-family: var(--body);
+  background: rgba(8, 7, 5, .62); color: var(--mg-chu); font-family: var(--body);
   touch-action: manipulation; user-select: none; -webkit-user-select: none; animation: mg-hien .2s ease-out;
 }
 .mg [hidden] { display: none !important; }
