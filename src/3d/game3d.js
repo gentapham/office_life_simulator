@@ -360,6 +360,22 @@ export class Game3D {
     }
   }
   xoaMucTieu() { this.mucTieu = null; this.marker.visible = false; }
+  // đi nhanh: đưa người chơi tới sát chỗ cảnh tiếp theo (chọn chỗ trống, quay mặt về phía mục tiêu)
+  diNhanh() {
+    const m = this.mucTieu; if (!m || m.daToi) return false;
+    const k = m.k, vat = this.theGioi.vat[k.tang];
+    const trong = (x, z) => !vat.some(b => x > b.minX - 0.35 && x < b.maxX + 0.35 && z > b.minZ - 0.35 && z < b.maxZ + 0.35)
+      && !this.npc.some(n => n.nv.group.visible && n.tang === k.tang && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.6);
+    let toi = null;
+    for (const [dx, dz] of [[0, 1.2], [1.2, 0], [-1.2, 0], [0, -1.2], [0.9, 0.9], [-0.9, 0.9], [0.9, -0.9], [-0.9, -0.9], [0, 0.7], [0.7, 0]]) {
+      if (trong(k.x + dx, k.z + dz)) { toi = [k.x + dx, k.z + dz]; break; }
+    }
+    if (!toi) toi = [k.x, k.z];
+    if (this.ngoiGhe) this.boNgoi(); // đang ngồi thì đứng dậy trước
+    m.choRoi = false;
+    this.datViTri({ tang: k.tang, x: toi[0], z: toi[1], huong: Math.atan2(-(k.x - toi[0]), -(k.z - toi[1])) });
+    return true;
+  }
   khoangCachMucTieu() {
     if (!this.mucTieu) return null;
     const k = this.mucTieu.k;

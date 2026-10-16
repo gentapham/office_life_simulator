@@ -705,7 +705,17 @@ async function render3D() {
   const bangChiSo = () => { updateSide(); keChiSo.hidden = !keChiSo.hidden; };
 
   const mtChu = h("b", {}), mtPhu = h("small", {}), mtMui = h("i", { class: "g3d-mui" });
-  const mucTieu = h("div", { class: "g3d-muctieu", hidden: true }, mtMui, h("div", {}, h("span", { class: "g3d-nhan" }, "Tiếp theo"), mtChu, mtPhu));
+  // đi nhanh tới chỗ cảnh tiếp theo (phím F) cho đỡ mất thời gian đi bộ
+  const diNhanh = () => {
+    if (!G?.mucTieu || G.khoa || G.capCuu) return;
+    chuyenCanh("Đi tới " + (mtChu.textContent || "nơi tiếp theo"), () => {
+      if (!G?.mucTieu) return;
+      G.diNhanh();
+    });
+  };
+  UI.diNhanh = diNhanh;
+  const nutDiNhanh = h("button", { class: "g3d-dinhanh", onclick: e => { e.stopPropagation(); diNhanh(); }, title: "Đi nhanh (phím F)" }, "Đi nhanh");
+  const mucTieu = h("div", { class: "g3d-muctieu", hidden: true }, mtMui, h("div", {}, h("span", { class: "g3d-nhan" }, "Tiếp theo"), mtChu, mtPhu), nutDiNhanh);
   const goiY = h("button", { class: "g3d-goiy" + (matchMedia("(pointer: coarse)").matches ? " cham" : ""), hidden: true, onclick: () => G?.tuongTac() });
   const btnGoc = h("button", { class: "g3d-btn", onclick: () => G?.doiGoc() }, "Góc nhìn 1");
   const toast = h("div", { class: "g3d-toast", "aria-live": "polite" });
@@ -736,11 +746,12 @@ async function render3D() {
     [h("span", { class: "g3d-phim" }, h("kbd", {}, "Kéo nửa phải")), "Nhìn quanh"],
     [h("span", { class: "g3d-phim" }, h("kbd", { class: "cam" }, "Nút cam")), "Nói chuyện, tương tác"],
     [h("span", { class: "g3d-phim" }, h("kbd", {}, "Chạm khung thoại")), "Đọc câu tiếp theo"],
+    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Đi nhanh")), "Tới ngay việc tiếp theo"],
   ] : [
     [phim("W", "A", "S", "D"), "Di chuyển"], [phim("Shift"), "Chạy"], [phim("Chuột"), "Nhìn quanh"],
     [phim("E"), "Nói chuyện, tương tác"], [phim("V"), "Đổi góc nhìn thứ nhất / thứ ba"],
     [phim("Space", "Enter"), "Đọc câu thoại tiếp theo"], [phim("1", "–", "9"), "Chọn câu trả lời"],
-    [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("P"), "Điện thoại"], [phim("M"), "Bản đồ"], [phim("Esc"), "Tạm dừng, mở bảng này"],
+    [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("F"), "Đi nhanh tới việc tiếp theo"], [phim("P"), "Điện thoại"], [phim("M"), "Bản đồ"], [phim("Esc"), "Tạm dừng, mở bảng này"],
   ];
   const nutVao = h("button", { class: "btn primary", onclick: () => { if (dienThoai || G?.khoa) { tamNgung.hidden = true; daVao = true; } else G?.canvas.requestPointerLock?.(); } }, "Vào văn phòng");
   const hdTieuDe = h("small", {}, "Hướng dẫn");
@@ -840,7 +851,7 @@ async function render3D() {
   const henDH = setInterval(() => {
     if (G !== g) { clearInterval(henDH); return; }
     if (g.khoa || !tamNgung.hidden || g.capCuu) return;
-    if (L.phutGame < tranGio()) { L.phutGame++; hienGio(); }
+    if (L.phutGame < tranGio()) { L.phutGame = Math.min(tranGio(), L.phutGame + 2); hienGio(); } // 1 giây ngoài đời = 2 phút trong game
     const yeu = Math.min(...["no", "khat", "nang_luong"].map(k => Number(L.v(k)) || 0));
     am.tim(yeu < 15 ? (15 - yeu) / 15 : 0); // tim đập nhanh khi sắp xỉu
     kiemTraNgauNhien();
@@ -1234,6 +1245,7 @@ addEventListener("keydown", e => {
   if (e.repeat && e.code !== "Tab") return; // giữ phím không tua thoại hay chọn liên tục
   if (e.code === "Tab") { e.preventDefault(); UI.bangChiSo?.(); return; }
   if (e.code === "KeyH" && G?.khoa) { e.preventDefault(); UI.lichSu?.(); return; }
+  if (e.code === "KeyF" && G && !G.khoa && !G.capCuu) { e.preventDefault(); UI.diNhanh?.(); return; }
   if ((e.code === "KeyP" || e.code === "KeyM") && G && !G.khoa && !G.capCuu) { e.preventDefault(); UI.dienThoai?.mo(e.code === "KeyM" ? "ban_do" : "chinh"); return; }
   if (!G?.khoa || e.target.closest?.("button")) return;
   if ((e.code === "Space" || e.code === "Enter") && UI.khungThoai?.conCho()) { e.preventDefault(); UI.khungThoai.tiep(); return; }

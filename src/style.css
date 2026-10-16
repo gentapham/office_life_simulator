@@ -885,3 +885,6 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .dt .dt-ghi { color: inherit; opacity: .7; }
 .dt .bst h3 { color: #e8702a; }
 .dt .bst-the { background: #fff; } .dt .bst-tt li { background: #fff; }
+.g3d-dinhanh { margin-left: 4px; flex: none; background: #e8702a; color: #fff; border: 0; border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+.g3d-dinhanh:hover { background: #f0863f; }
+.g3d.dang-thoai .g3d-dinhanh { display: none; }
