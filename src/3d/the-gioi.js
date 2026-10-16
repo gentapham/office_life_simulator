@@ -128,7 +128,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
       if (ngang) hop(dai, cao, DAY, color, giua, y, z1, { tang }); else hop(DAY, cao, dai, color, x1, y, giua, { tang });
       if (cao > 2) vat[tang][vat[tang].length - 1].tuong = true; // camera góc nhìn thứ ba chỉ né tường
     }
-    for (const [d1, d2] of doors) { // phần tường trên khung cửa
+    if (cao > 2.5) for (const [d1, d2] of doors) { // phần tường trên khung cửa (hàng rào thấp thì không có)
       const dai = d2 - d1, giua = (d1 + d2) / 2;
       if (ngang) hop(dai, cao - 2.4, DAY, color, giua, y + 2.4, z1, { tang, can: false }); else hop(DAY, cao - 2.4, dai, color, x1, y + 2.4, giua, { tang, can: false });
     }
