@@ -140,12 +140,12 @@ chi_dai: Bánh tới rồi! Nhiệm vụ của cả công ty hôm nay: giữ {ch
 
 // ------------------------------------------------------------
 === designer_2310_livestream ===
-# ngay:23 # gio:19:00 # noi:studio # bat_buoc
-_19 giờ. Livestream sinh nhật. 12.000 người xem. Bánh kem hồng đặt giữa phòng._
+# ngay:23 # gio:20:00 # noi:studio # bat_buoc
+_20 giờ, studio tầng 2. Livestream sinh nhật. 12.000 người xem. Bánh kem hồng đặt giữa phòng._
 _"Chủ tịch Kevin Trộn" lên sóng, đeo kính đen, tay cầm hộp quà có logo BTT. Logo bạn vẽ. Bạn nín thở cả đoạn._
 sieu_nhan_hong: Cảm ơn mọi người! Hôm nay em 31 tuổi! Em… em có chuyện muốn nói.
 sieu_nhan_hong: Anh {chua_te_deadline} ơi… em thích anh. Không phải PR đâu.
-_Bình luận nổ tung. Hashtag \#VũƠiTrảLờiĐi lên xu hướng trong 4 phút. {chua_te_deadline} đứng ở góc phòng, cầm điện thoại, đứng hình._
+_Bình luận nổ tung. Hashtag \#{chua_te_deadline}ƠiTrảLờiĐi lên xu hướng trong 4 phút. {chua_te_deadline} đứng ở góc phòng, cầm điện thoại, đứng hình._
 _Đúng lúc đó, một bóng đen lao vào từ cửa. {cho}. Chiếc mũ bằng đường. Bánh kem bay._
 cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
 { ds_co_sticker_tuat:
@@ -155,7 +155,7 @@ cho: GÂU! *(ngoạm mũ đường, phóng ra cửa)*
 }
 * {ds_co_sticker_tuat} [📱 Ghép sticker vào clip, đăng liền.]
     ~ ds_sticker_viral = true
-    ~ follow(50000)
+    ~ follow(20000)
     ~ qh("hong_hot", 10)
     ~ qh("cho", -3)
     _Clip "{cho} Không Vui phá bánh sinh nhật" kèm sticker lan khắp 22 group chat trong một đêm. {cho} chính thức nổi tiếng hơn nhiều ca sĩ._
@@ -182,15 +182,17 @@ _{sieu_nhan_hong} đứng giữa đống kem, đội chiếc mũ dính kem, cư�
 
 // ------------------------------------------------------------
 === designer_2410_hoi_nghi_hoa_giai ===
-# ngay:24 # gio:09:30 # noi:sanh_tang_tret
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2
 _Ngày Liên Hợp Quốc. {chi_dai} tổ chức "hội nghị hòa giải". Xếp cặp: {truong_phong}–{con_ong_chau_cha}, {sales}–{ke_toan}, {hr}–{thanh_xin_nghi}. Và bạn với {bien_kich}._
 chi_dai: Hai đứa vẽ chung một bức tranh "Đoàn kết". Chừng nào xong mới được ăn trưa.
 bien_kich: *(cầm bút lông)* Tui vẽ chữ. Bà vẽ hình. Chữ là linh hồn.
 { ds_oanh_gian:
     _{bien_kich} vẫn còn giận vụ "nước ốc". Bà ấy viết chữ "Đoàn kết" sát mép giấy, chừa cho bạn đúng 3 phân._
 }
-* [🎨 "Mình vẽ hai cái ghế nhựa quay vào nhau. Không cần chữ."]
-    bien_kich: …Không cần chữ? *(nhìn lâu)* Hai cái ghế nhựa… có nỗi đau. Được.
+* [🎨 Vẽ hai bàn tay, một cầm bút máy, một cầm bút chì, đang giật bút của nhau. Không cần chữ.]
+    bien_kich: Cái này là đoàn kết hả bà?
+    designer: Đoàn kết thật mà. Năm năm rồi chưa ai buông.
+    bien_kich: *(bật cười)* …Không cần chữ thiệt. Được.
     ~ qh("bien_kich", 15)
     ~ ds_oanh_gian = false
     ~ ds_toi(5)
@@ -238,6 +240,7 @@ thanh_ninh: Ủa… đây là… tiệm nail hả bà?
     ~ ds_job_ll(2000000)
     ~ ds_cam(-5)
     _Bạn để USB ở quầy lễ tân. Tin nhắn chuyển khoản 2 triệu đến trước khi bạn ra tới cửa. Nhanh tới mức đáng sợ._
+    _Ở cửa thang máy, {quan_ly_idol} vừa bước ra, tay cầm một tập hợp đồng xanh lá chuối, mặt như người vừa ký hoặc vừa không ký. Hai người nhìn nhau đúng một giây. Rồi cả hai cùng giả vờ đi lạc._
 - else:
     la_chuoi: *(nhắn)* Em tới rồi hả? Anh xin lỗi, sếp gọi họp gấp. Em cầm phiếu cà phê dưới sảnh nha. Vụ full-time mình nói qua tin nhắn.
     ~ nhan(ca_phe)
@@ -246,8 +249,8 @@ thanh_ninh: Ủa… đây là… tiệm nail hả bà?
 
 // ------------------------------------------------------------
 === designer_2610_chieu_phim ===
-# ngay:26 # gio:14:00 # noi:phong_hop_sang_tao
-_Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". 15 phút. Phim về một người bỏ nghề ngân hàng, được một người lạ mặc đồ hồng đẩy xe chết máy 2 km trong mưa._
+# ngay:26 # gio:16:00 # noi:phong_hop_tang_2
+_16 giờ, phòng họp tầng 2. Chiếu thử nội bộ phim ngắn "Người Hùng Không Tên". 15 phút. Phim về một người bỏ nghề ngân hàng, được một người lạ mặc đồ hồng đẩy xe chết máy 2 km trong mưa._
 _Bạn nhớ ra: buổi họp ngày 2/10. {thuc_tap_sinh} kể đúng ý tưởng này. {bien_kich} ghi chép rất chăm._
 _Hết phim, cả phòng vỗ tay. Chữ cuối phim: "Kịch bản: {bien_kich}". {thuc_tap_sinh} vỗ tay to nhất, mắt đỏ hoe._
 truong_phong: {designer}, em làm poster phim nhé. Trailer ra mắt ngày mai.
@@ -269,9 +272,12 @@ truong_phong: {designer}, em làm poster phim nhé. Trailer ra mắt ngày mai.
 
 // ------------------------------------------------------------
 === designer_2710_bia_ho_so ===
-# ngay:27 # gio:10:30 # noi:phong_nghe_si # bat_buoc
-_LL-Entertainment ra tay. {quan_ly_idol} bước vào văn phòng, mặt xám như tro, tay cầm một bìa hồ sơ._
-quan_ly_idol: Lưu Lực gửi hợp đồng cho {sieu_nhan_hong}. Gấp ba. Lăng xê miễn phí. Chuyện này để anh lo, đừng ai đăng gì hết!
+# ngay:27 # gio:15:20 # noi:phong_nghe_si # bat_buoc
+_15 giờ 20. {quan_ly_idol} từ sảnh đi lên, mặt xám như tro, tay cầm tập hồ sơ Lưu Lực vừa đánh rơi. Sáng nay LL đã gửi lời mời gấp ba cho {sieu_nhan_hong}._
+quan_ly_idol: Hồ sơ "Dự án Hồng Ngoại". Bộ nhận diện LL làm sẵn cho {sieu_nhan_hong}. Chuyện này để anh lo, đừng ai đăng gì hết!
+{ ds_nhuom_gang_thai:
+    quan_ly_idol: *(ngập ngừng)* Mà {designer}… cái font trên bìa, anh thấy trên tờ bảng phối màu em gửi kèm đôi găng hôm 4/10.
+}
 _Ông đặt bìa hồ sơ xuống bàn. Bạn nhìn thấy._
 ~ ds_thay_bia_ho_so = true
 ~ phat_hien(ll_moi_nguyen)
@@ -320,8 +326,8 @@ _Ông đặt bìa hồ sơ xuống bàn. Bạn nhìn thấy._
 
 // ------------------------------------------------------------
 === designer_2710_luu_luc_toi ===
-# ngay:27 # gio:14:00 # noi:sanh_tang_tret
-_14 giờ. Một chiếc xe trắng đỗ trước cổng. Lưu Lực bước xuống: vest trắng, tóc vuốt keo, tay cầm tập hồ sơ dày._
+# ngay:27 # gio:15:00 # noi:sanh_tang_tret
+_15 giờ. Một chiếc xe trắng đỗ trước cổng. Lưu Lực bước xuống: vest trắng, tóc vuốt keo, tay cầm tập hồ sơ dày._
 luu_luc: Chào cả nhà {cong_ty}. Việc hôm nay phải xong từ hôm qua. Tôi tới gặp {sieu_nhan_hong}.
 cho: Grừ… GÂU! GÂU!
 _Lưu Lực bước vào sảnh. Rồi khựng lại. Ở cầu thang, {chi_dai} đang đứng khoanh tay._

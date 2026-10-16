@@ -43,6 +43,7 @@ VAR tn_chan_hua_tang_luong = false
 VAR tn_sep_hoi_y_kien = false  // 23/10: sếp hỏi ý kiến thật
 VAR tn_hoan_tac_thanh_cong = false
 VAR tn_nhan_lich_ll = false    // Đã nhận lời "cộng tác đặc biệt" với LL
+VAR tn_lam_mc = false          // 31/10: làm MC Đại Nhạc Hội (nhánh Lời Thật)
 
 // ---------- Đồ vật riêng ----------
 VAR tn_co_ghi_am_luu_luc = false  // Đoạn ghi âm Lưu Lực

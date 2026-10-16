@@ -134,7 +134,7 @@ _Đoàn đòi bản gốc giấy tờ thành lập. Sếp lục tung phòng giá
 _Bạn thì biết một điều: cái tủ thư của Bác {bac_bao_ve} chưa ai được mở._
 bac_bao_ve: Cháu tìm bác à?
 * [🙇 "Bác ơi, sếp cần gấp giấy tờ thành lập. Bác có giữ hông bác?"]
-    bac_bao_ve: *(im lặng một lúc)* … Bản gốc đứng tên người khác. Bác giữ hộ người ta. Mai bác về Ven Đô lấy.
+    bac_bao_ve: *(im lặng một lúc)* … Bản gốc đứng tên người khác. Bác giữ hộ người ta. Sáng nay bác đã về Ven Đô lấy rồi, đang để trong chòi.
     ~ qh("bac_bao_ve", 5)
     _"Người khác". Bạn không hỏi thêm. Bác cũng không nói thêm._
 * [🚪 Không hỏi bác, chạy lên báo sếp: "Anh, chắc bản gốc thất lạc rồi anh."]
@@ -175,9 +175,9 @@ sales: Chị {thanh_ninh}, tin em đi, chú {bac_bao_ve} đóng Kevin Trộn là
 
 // ------------------------------------------------------------
 === thanh_ninh_2310_banh_kem ===
-# ngay:23 # gio:19:30 # noi:san_khau_su_kien # bat_buoc
-_Livestream sinh nhật. Bánh kem hồng 3 tầng. {sieu_nhan_hong} vừa tỏ tình giữa livestream. Màn hình bình luận chạy chữ \#{chua_te_deadline}ƠiTrảLờiĐi._
-_Rồi {cho} lao ra. Bánh kem đổ úp. Kem hồng dính đầy mũ. 10.000 người đang xem._
+# ngay:23 # gio:20:30 # noi:studio_tang_2 # bat_buoc
+_20 giờ 30, studio tầng 2. Livestream sinh nhật. Bánh kem hồng 3 tầng. {sieu_nhan_hong} vừa tỏ tình giữa livestream. Màn hình bình luận chạy chữ \#{chua_te_deadline}ƠiTrảLờiĐi._
+_Rồi {cho} lao ra. Bánh kem đổ úp. Kem hồng dính đầy mũ. 30.000 người đang xem._
 _Sếp quay sang bạn, mặt cắt không còn giọt máu._
 giam_doc: {thanh_ninh}… em nói xem anh nên làm gì?
 _Lần đầu tiên trong ba năm, sếp hỏi ý kiến thật của bạn._
@@ -185,16 +185,16 @@ _Lần đầu tiên trong ba năm, sếp hỏi ý kiến thật của bạn._
 * [🙇 "Dạ anh làm gì cũng đúng hết anh ơi!"]
     giam_doc: *(nhìn bạn 2 giây)* … Ừ.
     ~ tn_ninh(-5)
-    _Sếp tự quyết: hô cắt livestream. Màn hình đen. 10.000 người thoát ra._
-    ~ follow(30000)
+    _Sếp tự quyết: hô cắt livestream. Màn hình đen. 30.000 người thoát ra._
+    ~ follow(-10000)
 * [😇 "Anh đừng cắt. Anh bước lên, cười, xin lỗi, rồi mời mọi người ăn phần bánh còn lại."]
-    _Sếp bước lên sân khấu, cầm micro, cười gượng rồi cười thật. "Thôi các em, sinh nhật ai mà chẳng có đổ vỡ." Cả khán phòng vỗ tay._
-    ~ follow(60000)
+    _Sếp bước ra trước máy quay, cầm micro, cười gượng rồi cười thật. "Thôi các em, sinh nhật ai mà chẳng có đổ vỡ." Cả studio vỗ tay._
+    ~ follow(20000)
     ~ qh("giam_doc", 15)
     ~ tn_noi_that_1 = true
     ~ tn_gian(-5)
 * [🧹 "Anh để em." Lao lên dọn bánh, che camera cho {sieu_nhan_hong} chỉnh lại mũ.]
-    ~ follow(50000)
+    ~ follow(10000)
     ~ qh("sieu_nhan_hong", 10)
     ~ tn_ninh(3)
     _Bạn dính kem hồng từ cổ tới gối. {hong_hot} giữ cảnh đó. Bạn lên xu hướng vì "trợ lý quốc dân"._
@@ -202,7 +202,7 @@ _Lần đầu tiên trong ba năm, sếp hỏi ý kiến thật của bạn._
 
 // ------------------------------------------------------------
 === thanh_ninh_2410_hoa_giai ===
-# ngay:24 # gio:09:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:24 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Ngày Liên Hợp Quốc. "Hội nghị hòa giải" của {chi_dai}. Các cặp: {truong_phong} với {con_ong_chau_cha}, {designer} với {bien_kich}, {sales} với {ke_toan}, {hr} với {thanh_xin_nghi}. Bàn riêng "chủ nợ" cho {dan_dau_tu}._
 ke_toan: Bà làm chủ tọa thì bà cũng phải hòa giải. Ngồi xuống đi. {thanh_ninh} ngồi đối diện đó.
 _{chi_dai} ngồi xuống đối diện bạn. Chị nhìn bạn thẳng._
@@ -231,8 +231,8 @@ _{chi_dai} ngồi xuống đối diện bạn. Chị nhìn bạn thẳng._
 
 // ------------------------------------------------------------
 === thanh_ninh_2510_sanh_ll ===
-# ngay:25 # gio:08:45 # noi:sanh_ll_entertainment # bat_buoc
-_Chủ nhật. Tòa nhà kính 20 tầng xanh lá chuối ở Ven Đô. Slogan trên tường: "Việc hôm nay phải xong từ hôm qua."_
+# ngay:25 # gio:10:00 # noi:sanh_ll_entertainment # bat_buoc
+_Chủ nhật. Lịch phỏng vấn là 15 giờ, mà 10 giờ bạn đã đứng ở sảnh, mặc áo xanh lá cho "hợp tông". Tòa nhà kính 20 tầng xanh lá chuối nằm ngay đối diện {cong_ty}, cách một con đường. Slogan trên tường: "Việc hôm nay phải xong từ hôm qua."_
 _Ở sảnh, bạn đụng mặt một người ôm laptop, đeo khẩu trang: {designer}._
 _Hai người nhìn nhau ba giây._
 designer: … Ủa, đường này đi ra Chợ Phố Cũ hả bà?
@@ -246,11 +246,42 @@ designer: … Ủa, đường này đi ra Chợ Phố Cũ hả bà?
 * [🙇 Quay lưng, giả vờ gọi điện: "Dạ anh {giam_doc}, em tới chỗ đối tác rồi ạ."]
     _{designer} nghe rõ từng chữ. Ở công ty này, ai cũng nghe rõ từng chữ._
     ~ qh("designer", -3)
+- _Thang máy mở. {quan_ly_idol} bước ra, hai điện thoại trên tay. Bạn quay mặt vào tường. Sau cột, hình như có ai đó của công ty đang đứng nhìn. Bạn không dám nhìn lại._
+_Điện thoại rung. Tin nhắn của sếp: "Em đi lạc à?" Bên kia đường, cổng công ty, sếp đang đứng cạnh xe, tay cầm túi gậy golf._
+* [🙇 "Dạ em đi làm nail ạ, tiệm ở tầng 20 ạ!"]
+    _Tòa LL không có tiệm nail. Sếp không trả lời._
+    ~ tn_ninh(-3)
+* [😐 "Dạ không lạc. Em đi phỏng vấn. Em xin lỗi anh."]
+    ~ tn_noi_that_1 = true
+    _Ba phút sau: "Ừ. Đi cẩn thận." Không có chữ "tùy em"._
+    ~ qh("giam_doc", 5)
 - -> END
 
 // ------------------------------------------------------------
+=== thanh_ninh_2510_cho_pho_cu ===
+# ngay:25 # gio:11:00 # noi:cho_pho_cu
+_11 giờ. Bạn trốn khỏi sảnh LL, đi bộ ra Chợ Phố Cũ cho bình tĩnh. Ở sạp đồ điện, {chi_dai} đang mặc cả hai cuộn dây điện với ông thợ quen._
+chi_dai: Ủa. {thanh_ninh}. Đi lạc tới đây luôn hả?
+{ tn_gian_chi_dai <= 50:
+    chi_dai: Tiện thì đi theo chị. Bài hai: mua đồ cho sự kiện. Thứ gì rẻ thì mua hai cái, thứ gì quan trọng thì mua của người quen.
+    * [✍️ Đi theo, ghi chép.]
+        ~ tn_hoc_nghe_chi_dai = true
+        ~ tn_gian(-10)
+        ~ qh("chi_dai", 10)
+        _Hai tiếng ở chợ. Bạn biết thêm vì sao đèn sân khấu phải thuê của ông thợ ở góc chợ chứ không phải công ty to. Chiều nay chị có hẹn bên Ven Đô, nên chị đi trước._
+        -> END
+    * [🙇 "Dạ em còn việc, chị ơi."]
+        chi_dai: Ừ. Việc ở bên kia đường hả.
+        ~ tn_gian(5)
+        -> END
+- else:
+    _Chị quay lại với ông thợ điện. Bạn đứng đó một lúc, rồi đi._
+    -> END
+}
+
+// ------------------------------------------------------------
 === thanh_ninh_2510_phong_van ===
-# ngay:25 # gio:09:00 # noi:ll_entertainment # bat_buoc
+# ngay:25 # gio:15:00 # noi:ll_entertainment # bat_buoc
 _Phòng họp tầng 20. Ghế xoay da trắng. Người ngồi trên đó không phải chị tuyển dụng. Là Lưu Lực. Vest trắng, tóc vuốt keo._
 luu_luc: *(xoay ghế, giọng diễn giả)* Em {thanh_ninh}. Ở LL, việc hôm nay phải xong từ hôm qua. Anh nghe nói em pha trà rất ngon.
 * [🎭 "Dạ anh Lực nói chuẩn quá anh ơi! Văn phòng anh đẹp quá anh!"]
@@ -382,19 +413,19 @@ _Bạn đang cầm điện thoại. Số của sếp ở đầu danh bạ, mục
 
 // ------------------------------------------------------------
 === thanh_ninh_2710_luu_luc_toi ===
-# ngay:27 # gio:10:00 # noi:sanh_cong_ty # bat_buoc
+# ngay:27 # gio:15:00 # noi:sanh_cong_ty # bat_buoc
 _Lưu Lực tới tận nơi. Vest trắng, cặp hồ sơ xanh lá chuối. Đi ngang qua sảnh, thấy {chi_dai}, ông ta làm rơi cả tập hồ sơ._
 _Hồ sơ tung ra sàn. Lời mời cho {sieu_nhan_hong}, cho {quan_ly_idol}, cho {ke_toan}, cho {dan_dau_tu}… và một tờ ghi tên bạn: "{thanh_ninh}: cộng tác đặc biệt"._
 luu_luc: *(nhặt vội, mồ hôi chảy qua lớp keo tóc)* Chào… chào chị.
 { tn_bao_truoc_loi_moi:
-    _Sếp đã ngồi sẵn với {quan_ly_idol} và {sieu_nhan_hong} trong phòng họp từ 8 giờ. Cửa đóng._
+    _Sếp đã ngồi với {quan_ly_idol} và {sieu_nhan_hong} trong phòng họp từ 8 giờ sáng. Cửa đóng tới giờ._
 }
 * {tn_co_ghi_am_luu_luc} [🔒 Bật đoạn ghi âm cho {sieu_nhan_hong} nghe: "Anh cần người đọc được hộp thư của {giam_doc}…"]
     _{sieu_nhan_hong} nghe hết. Rồi quay sang Lưu Lực._
     sieu_nhan_hong: Anh muốn mua em, hay muốn mua cái hộp thư?
     _Lưu Lực không trả lời. Ông ta nhặt nốt tờ giấy cuối cùng và đi ra cửa._
     ~ nguyen_theo_ll = false
-    ~ follow(30000)
+    ~ follow(20000)
     ~ qh("sieu_nhan_hong", 15)
     ~ qh("giam_doc", 10)
 * [🙇 Đứng sau lưng sếp, cười chào Lưu Lực thật tươi như chào khách quý.]
@@ -427,7 +458,7 @@ _Lịch Đại Nhạc Hội Siêu Nhân nằm trong hộp thư sếp. {chi_dai} 
     ~ tn_gui_lich_dem_hong = true
     ~ tn_xanh(20)
     ~ tn_mang_theo_bi_mat = true
-    ~ follow(-50000)
+    ~ follow(-30000)
     thu_ky_ll: Cảm ơn em 💚 Anh Lực sẽ không quên em.
     _Bạn nhìn tấm ảnh với sếp trên tường. Bạn úp nó xuống. Lần này không phải để ngủ._
     { RANDOM(1, 10) <= 4:

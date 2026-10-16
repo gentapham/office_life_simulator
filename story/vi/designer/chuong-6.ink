@@ -57,12 +57,12 @@ sua_chua_hong_hao: Chào chị. Chị {sales} đâu ạ? Bên em không chờ l�
 
 // ------------------------------------------------------------
 === designer_2810_video_lo_tay ===
-# ngay:28 # gio:20:00 # noi:can_203
-_20 giờ. Fanpage công ty vừa đăng một video lạ: những khoảnh khắc của {quan_ly_idol}, dựng đẹp như phim, nhạc nền nhẹ, câu cuối: "Anh có biết không?"_
-_Có một con cú nhỏ xíu ở khung hình thứ 812. Bạn nhận ra ngay. Đây là video của {editor}. Xuất nhầm._
-_Cùng lúc, bộ lọc số liệu của {dan_dau_tu} lần ra 80.000 tài khoản fan ảo của {idol_het_thoi}. Một đêm, hai quả bom._
-* [🤝 Nhắn ngay {hong_hot} gỡ video xuống.]
-    hong_hot: Gỡ rồi! Mà… 3.000 người xem rồi bà ơi. Tui… tui tiếc quá, nó đẹp mà.
+# ngay:28 # gio:09:15 # noi:ban_thiet_ke
+_9 giờ 15. Group công ty đầy ảnh chụp màn hình. 2 giờ 10 sáng nay, một kênh Diu-túp tên "Cú Đêm Cắt Ghép" lên bản nháp video "16 năm", cuối video dính một đoạn bốn phút về {quan_ly_idol}: nghe điện thoại, ngủ gục trong xe. Sáu phút, khoảng hai nghìn lượt xem, rồi bị gỡ._
+_Có một con cú nhỏ xíu ở góc khung hình. Bạn nhận ra ngay, con cú ở khung 812 hôm nào. Đây là video của {editor}._
+_Cùng sáng đó, bộ lọc số liệu của {dan_dau_tu} lần ra 80.000 tài khoản fan ảo của {idol_het_thoi}. Một ngày, hai quả bom._
+* [🤝 Nhắn {hong_hot} đừng chia sẻ ảnh chụp nữa.]
+    hong_hot: Ờ… tui xóa trong group rồi. Mà hai nghìn người coi rồi bà ơi. Tui… tui tiếc quá, nó đẹp mà.
     ~ qh("editor", 10)
     ~ qh("hong_hot", 3)
 * [📞 Gọi cho {editor}.]
@@ -137,7 +137,7 @@ _Ông chủ tiệm cho bạn ổ bánh mì. "Con làm việc nghiêm túc quá, 
 # ngay:29 # gio:15:30 # noi:choi_bao_ve
 _Chòi bảo vệ thành tổng đài nhắn tin bằng giấy. Bác {bac_bao_ve} ngồi giữa một chồng giấy note, đeo kính lão, phân loại thư từng phòng._
 bac_bao_ve: Tầng 2 gửi tầng 1: "Hóa đơn đâu em?". Tầng 1 gửi tầng 2: "Dạ em đang tìm." Thế à. Ừ.
-_{chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua". Video tổng kết của {editor} kẹt ở 99%._
+_{chi_dai} điều phối bằng bộ đàm. {hong_hot} phát wifi điện thoại, mật khẩu "nghegichua". Video "16 năm" của {editor} kẹt ở 99%._
 bac_bao_ve: Cháu {designer}. Có giấy cho cháu.
 { ds_cat_dut_ll:
     _Mảnh giấy note của {sales}: "Chị {designer}, em tự hào về chị. Vé mời đẹp lắm. Tin em đi."_
@@ -169,6 +169,15 @@ hr: Dọn hết đi em. Rác cả mà.
     ~ qh("hr", -3)
     hr: Ừ… em rảnh thì làm. Anh chỉ muốn kho sạch thôi.
     _Bạn bê cả ổ báu vật của {cho} vào chòi bảo vệ. {cho} đi theo sát gót, đuôi vẫy như cánh quạt._
+    _Lúc đặt xuống, chiếc USB không nhãn lăn ra. Nó thoang thoảng mùi cà phê sữa đá. Bạn nhớ ra ai trong công ty uống cà phê sữa đá cả ngày._
+    ** [💾 Đưa chiếc USB cho {chua_te_deadline}: "Của ông hả? Nằm trong ổ của {cho} đó."]
+        chua_te_deadline: *(cầm USB, mặt trắng bệch rồi đỏ lên)* …File gốc tháng 6. Tui kiếm từ tháng 9. *(im lâu)* Chill. Cảm ơn bà. Thiệt.
+        ~ ds_dua_usb_tuat = true
+        ~ qh("chua_te_deadline", 15)
+        ~ qh("cho", -3)
+    ** [🐕 Để nguyên trong ổ. Báu vật của {cho} thì {cho} giữ.]
+        cho: *(gác cằm lên chiếc USB)* … # phu_de: Của tao.
+        ~ qh("cho", 5)
 * [😶 Kệ. Không phải việc của mình.]
     _Ba phút sau, kho báu của {cho} nằm trong thùng rác đen. {cho} sủa một tiếng rất dài._
     ~ qh("cho", -5)
@@ -176,8 +185,8 @@ hr: Dọn hết đi em. Rác cả mà.
 
 // ------------------------------------------------------------
 === designer_3010_hop_danh_gia ===
-# ngay:30 # gio:09:00 # noi:phong_hop_sang_tao # bat_buoc
-_Họp đánh giá cuối tháng. Màn hình chiếu: "Thành tích Phòng Sản xuất Nội dung, tháng 10/2026". {truong_phong} cầm bút laser._
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
+_14 giờ. Họp đánh giá cuối tháng ở phòng họp tầng 2. Mục đầu là ghế Phó Giám đốc: {truong_phong} cầm bút laser, {con_ong_chau_cha} ngồi đầu bàn bên kia, mặt như không muốn có mặt. Màn hình chiếu: "Thành tích Phòng Sản xuất Nội dung, tháng 10/2026"._
 truong_phong: Tháng này phòng mình có 6 poster được chia sẻ nhiều nhất. Đều là… ý tưởng của anh.
 _Slide chiếu poster xe chè. Phông gameshow vẽ tay. Backdrop Đại Nhạc Hội Siêu Nhân. Chú thích: "Ý tưởng: {truong_phong}"._
 _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng ghi "Đạo diễn: {truong_phong}"._ # hen_gio:8
@@ -202,10 +211,27 @@ _Ở ghế cuối, {editor} ngồi im. Video tổng kết của {editor} cũng g
     ~ ds_toi(-10)
     ~ qh("truong_phong", 5)
     _Bạn cúi xuống, vẽ con cá voi hồng thứ 31 vào lề sổ. Nó không có miệng._
+    -> sua_poster
 * [⏱️ (Không chọn kịp)]
     ~ ds_toi(-5)
     _Slide đã chuyển sang phần "Kế hoạch tháng 11: họp nhiều hơn". Cơ hội trôi qua như mọi lần._
-- _Cuối buổi, {giam_doc} gia hạn hợp đồng cho {idol_het_thoi}. {quan_ly_idol} thở phào. Không ai nói gì về con số 20% đã hứa ở karaoke._
+    -> sua_poster
+- -> cuoi_buoi
+
+= sua_poster
+truong_phong: À {designer}, poster Đại Nhạc Hội mai in. Mọi người góp ý gì thì em sửa theo nhé. Sửa nhẹ thôi.
+{ ds_so_lan_bi_sua >= 45:
+    _Góp ý tới từ khắp phòng. "Chữ to lên." "Logo to lên." "Thêm hồng." "Thêm pháo hoa." Bạn nói "Dạ" từng câu một. Tới 11 giờ đêm, file trên màn hình tên là "poster_DNH_sua_lan_100.psd"._
+    ~ ds_so_lan_bi_sua = 100
+    ~ ds_toi(-30)
+- else:
+    _Ba góp ý. Ba lần sửa. Bạn nộp lúc 6 giờ chiều, về nhà còn kịp tưới cây._
+    ~ ds_sua(3)
+}
+-> cuoi_buoi
+
+= cuoi_buoi
+_Cuối buổi, {giam_doc} gia hạn hợp đồng cho {idol_het_thoi}. {quan_ly_idol} thở phào. Danh sách cắt giảm của {hr} vẫn úp mặt trên bàn. Không ai nói gì về con số 20% đã hứa ở karaoke._
 -> END
 
 // ------------------------------------------------------------
@@ -235,12 +261,15 @@ _19 giờ 30. Sân khấu Đại Nhạc Hội Siêu Nhân, Phường Tân Drama.
 _Rồi tấm backdrop của bạn được kéo lên._
 { ds_backdrop_xong:
     _Bầu trời đêm hồng tím. Chiếc mũ siêu nhân nhìn ra khán giả. Cả sân khấu im một giây, rồi vỡ òa._
-    ~ follow(100000)
     ~ ds_toi(10)
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
 - else:
     _Tấm backdrop sáng lên: nhiều chữ, nhiều màu, nhiều pháo hoa. Ai đó phía sau bạn thì thầm: "Giống đám cưới quê ha."_
-    ~ follow(-10000)
     ~ cang_thang(10)
+}
+// Chữ G giấu trong file Hồng Ngoại sẽ hiện trên màn hình LED của LL lúc 21:07: ảnh chụp lan khắp mạng
+{ ds_giau_chu_g:
+    ~ chung_top_10_xu_huong = true
 }
 _Bạn đứng giữa đám đông. Tay cầm ly nước, tim đập thình thịch. Rồi bạn ngẩng lên._
 _Bên kia đường, trên tòa nhà kính 20 tầng của LL-Entertainment, màn hình LED khổng lồ bật sáng._

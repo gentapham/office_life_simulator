@@ -45,36 +45,35 @@ _Mỗi giây một dáng. Tay bạn bắt đầu mỏi từ dáng thứ 9._
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_0610_chay_theo ===
-# ngay:6 # gio:09:40 # noi:duong_pho_tan_drama # bat_buoc
-_9 giờ 40. {sieu_nhan_hong} đang tạo dáng thứ 14 thì nhìn ra cửa sổ, thấy một bà cụ đẩy xe ve chai lên dốc._
+# ngay:6 # gio:10:30 # noi:duong_hong_hem_69 # bat_buoc
+_10 giờ 30. {sieu_nhan_hong} đang tạo dáng thứ 14 thì nhìn ra cửa sổ: dưới Đường Hóng, ngay đầu Hẻm 69, xe chè của Bà Bảy sụp một bánh xuống ổ gà._
 sieu_nhan_hong: Điều khoản số 3! Hồng đi đây!
 _Cả studio đứng hình. {quan_ly_idol} đang nghe điện thoại. {chua_te_deadline} đang tính lịch. Không ai chạy theo._
 chua_te_deadline: Anh {thuc_tap_sinh}, chạy theo quay lại! Quay dọc cũng được!
 ~ duy_day_viec(1)
 * [🏃 Cầm nguyên tấm hắt sáng chạy theo, quay bằng điện thoại.]
     ~ duy_da()
-    _Bạn chạy xuống dốc, một tay tấm hắt sáng, một tay điện thoại. Siêu Nhân Hồng đẩy xe ve chai lên dốc, bà cụ đi bên cạnh cười móm mém._
+    _Bạn chạy xuống đường, một tay tấm hắt sáng, một tay điện thoại. Siêu Nhân Hồng đẩy xe chè ra khỏi ổ gà, Bà Bảy đứng bên cạnh cười móm mém, cô cháu gái bán chè nhìn bộ đồ hồng như vừa nghe thấy một giọng quen._
     _Mặt trời chiếu đúng vào tấm hắt sáng, hắt lên bộ đồ hồng. Ánh sáng đẹp như phim. Tay bạn rung như động đất._
     { RANDOM(1, 10) <= 6:
         _{hong_hot} đăng clip lên với caption "Chất thật. Không kịch bản." Clip nổ._
-        ~ follow(50000)
+        ~ follow(15000)
         ~ duy_lua_doi(10)
         hong_hot: Ông thực tập sinh quay đó hả? Rung mà thật dữ vậy trời!
         ~ qh("hong_hot", 5)
     - else:
         _{hong_hot} đăng clip lên. Bình luận đầu tiên: "Ai quay mà như thực tập sinh vậy?". Bình luận thứ hai: "Mà cảm động thiệt."_
-        ~ follow(25000)
+        ~ follow(5000)
         ~ duy_lua_doi(3)
     }
     ~ duy_kn(5)
     ~ nghi(-15)
 * [🤝 Chạy theo, bỏ điện thoại, phụ đẩy xe.]
-    _Bạn và Siêu Nhân Hồng cùng đẩy. Bà cụ cho mỗi người một cái bánh chuối chiên. Không ai quay được gì._
+    _Bạn và Siêu Nhân Hồng cùng đẩy. Bà Bảy cho mỗi người một ly chè đậu. {sieu_nhan_hong} ăn bằng ống hút luồn qua mũ. Không ai quay được gì._
     sieu_nhan_hong: *(nói nhỏ, không tạo dáng)* Em… đẩy xe quen tay ghê.
     thuc_tap_sinh: Dạ… hồi trước có người đẩy xe giùm em. Trong mưa. 2 cây số. Em hông biết người đó là ai.
     _{sieu_nhan_hong} im lặng rất lâu. Bạn không thấy mặt sau cái mũ._
-    ~ nhan(chuoi_chien)
-    ~ follow(5000)
+    ~ follow(3000)
     ~ qh("sieu_nhan_hong", 12)
     ~ duy_lua_doi(8)
 * [😶 "Dạ em giữ hắt sáng ở đây, để lát anh Hồng về chụp tiếp ạ."]
@@ -148,9 +147,9 @@ editor: *(ngáp)* Bác sĩ nói mắt tui như mắt người 60 tuổi. Cấm n
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_0910_share_mv ===
-# ngay:9 # gio:08:05 # noi:ban_lam_viec # bat_buoc
-_8 giờ 05. MV đầu tiên của Siêu Nhân Hồng vừa lên. Bạn là người share đầu tiên, 37 giây sau khi {hong_hot} đăng._
-_Caption của bạn: 400 chữ. Kể về buổi chụp poster, về tấm hắt sáng, về bà cụ đẩy xe ve chai, về "lần đầu em thấy một người tốt mặc đồ hồng". Kết thúc bằng: "6-7"._
+# ngay:9 # gio:20:00 # noi:hem_69 # bat_buoc
+_20 giờ. MV "Hồng Hóa Việt Nam" vừa lên Tóp-tóp và Diu-túp của công ty. Bạn là người share đầu tiên, 37 giây sau khi {hong_hot} đăng._
+_Caption của bạn: 400 chữ. Kể về buổi chụp poster, về tấm hắt sáng, về xe chè của Bà Bảy, về "lần đầu em thấy một người tốt mặc đồ hồng". Kết thúc bằng: "6-7"._
 hong_hot: Ông thực tập sinh ơi, caption của ông được nhiều like hơn bài gốc của tui nè!
 * [😇 "Dạ em viết thật lòng thôi ạ."]
     ~ follow(5000)
@@ -238,16 +237,14 @@ bac_bao_ve: *(nhìn cây nến rất lâu)* … Sao cháu biết?
 # ngay:11 # gio:10:00 # noi:hem_69
 _Chủ nhật, ngày 11. Ngày Quốc tế Trẻ em gái, cả công ty đăng ảnh hồi nhỏ. Bạn đăng ảnh 8 tuổi ngồi trước tivi viết lại cái kết phim bộ._
 _Tiếng gõ cửa phòng 12. {dan_dau_tu}, dép lê, áo thun "To The Moon", tay cầm điện thoại mở chart._
-dan_dau_tu: {thuc_tap_sinh} ơi, cho anh mượn 2 triệu. Bằng nửa lương em thôi mà. Thứ 2 anh trả gấp đôi, coin này lần này là lên thật.
+dan_dau_tu: {thuc_tap_sinh} ơi, cho anh mượn thêm 2 triệu. Bằng nửa lương em thôi mà. Thứ 2 anh trả gấp đôi, coin này lần này là lên thật.
 _Bạn nhớ: anh {dan_dau_tu} còn nợ bạn 500 nghìn từ tháng 9. Chưa nhắc tới._
 _Bạn nhìn cái chart trên điện thoại. 3 giây. Bơm, giữ, chuẩn bị xả. Bạn đã thấy cái hình này trong 40 hồ sơ lừa đảo._
-* [🙇 "Dạ… dạ em gửi anh ạ."]
-    ~ tien_cong(-2000000)
-    ~ duy_so_nguoi_muon++
+* [🙇 "Dạ… em hông có 2 triệu. Em mời anh tô hủ tiếu đầu hẻm nha."]
+    ~ tien_cong(-35000)
     ~ duy_muon_chuong = true
-    ~ duy_lo(5)
-    dan_dau_tu: Em là nguồn vốn tiềm năng! Anh ghi tên em vào danh sách rồi!
-    _Danh sách đó tên là "Nguồn vốn tiềm năng". Bạn đứng thứ 9. Tám người trước chưa ai được trả._
+    dan_dau_tu: *(ăn sạch tô)* Em là nguồn vốn tiềm năng! Anh ghi tên em vào danh sách rồi!
+    _Danh sách đó tên là "Nguồn vốn tiềm năng". Bạn đứng thứ 9, với 500 nghìn từ tháng 9. Tám người trước chưa ai được trả._
     ~ duy_lua_doi(-3)
 * [😶 "Dạ em còn có 300 nghìn để ăn tới ngày 12 thôi anh."]
     dan_dau_tu: Ờ… vậy thôi. Thông cảm, thông cảm. Ra đầu hẻm anh mời ly trà đá.
@@ -260,12 +257,10 @@ _Bạn nhìn cái chart trên điện thoại. 3 giây. Bơm, giữ, chuẩn b�
     ~ duy_lo(15)
     ~ duy_chuong_coi_la_thay = true
     _{dan_dau_tu} nhìn bạn rất lâu, rồi nhìn cái chart, rồi lại nhìn bạn. Rồi vẫn quyết định không tin._
-* {duy_kinh_nghiem >= 20} [🔒 "Dạ em cho anh mượn, nhưng mình làm giấy vay, lãi 0%, trả góp 10 tuần, mỗi tuần 200 nghìn nha anh."]
-    _Bạn lấy giấy, viết một hợp đồng vay 1 trang, rõ ràng tới mức {dan_dau_tu} đọc 2 lần. Có điều khoản. Có chữ ký. Có cả lịch trả._
+* {duy_kinh_nghiem >= 20} [🔒 "Dạ em hông cho mượn thêm. Mà khoản 500 nghìn cũ, mình làm giấy, trả góp 5 tuần, mỗi tuần 100 nghìn nha anh."]
+    _Bạn lấy giấy, viết một hợp đồng 1 trang cho khoản 500 nghìn, rõ ràng tới mức {dan_dau_tu} đọc 2 lần. Có điều khoản. Có chữ ký. Có cả lịch trả._
     dan_dau_tu: Em… em làm cái này như dân chuyên nghiệp vậy?
     thuc_tap_sinh: Dạ em học trên mạng ạ.
-    ~ tien_cong(-2000000)
-    ~ duy_so_nguoi_muon++
     ~ duy_muon_chuong = true
     ~ duy_tin_dung_hem_69 = true
     ~ duy_lo(10)
@@ -277,7 +272,7 @@ _Bạn nhìn cái chart trên điện thoại. 3 giây. Bơm, giữ, chuẩn b�
 === thuc_tap_sinh_1210_giao_ban ===
 # ngay:12 # gio:08:30 # noi:phong_hop_sang_tao # bat_buoc
 _Thứ 2. Họp giao ban. Lương vẫn chưa về. {truong_phong} hỏi cả phòng ý tưởng nội dung mới cho tuần gameshow._
-_Bạn có một ý: "24 Giờ Giúp Người". Siêu Nhân Hồng livestream một ngày đi giúp người thật, không kịch bản. Bạn nghĩ ra từ hôm chạy theo đẩy xe ve chai._
+_Bạn có một ý: "24 Giờ Giúp Người". Siêu Nhân Hồng livestream một ngày đi giúp người thật, không kịch bản. Bạn nghĩ ra từ hôm chạy theo xe chè Bà Bảy._
 { duy_oanh_nghe_truoc:
     _Nhưng tối qua, ở pantry, bạn lỡ kể ý này với {bien_kich}…_
 }
@@ -291,7 +286,7 @@ truong_phong: Có ai có ý gì không? Đừng ngại.
         truong_phong: *(ghi chép rất nhanh)* … Hay. Hay thật. Tớ duyệt. Cậu viết đề xuất chi tiết cho tớ trước thứ 4.
         _Lần đầu tiên tên bạn được ghi lên bảng trắng phòng họp, cạnh một ý tưởng._
         ~ duy_y_tuong_24h = true
-        ~ follow(70000)
+        ~ follow(20000)
         ~ duy_kn(10)
         ~ duy_lua_doi(15)
         ~ qh("truong_phong", 10)
@@ -303,36 +298,36 @@ truong_phong: Có ai có ý gì không? Đừng ngại.
     chua_te_deadline: *(đọc, gật gù, đứng dậy)* Em có ý này, "24 Giờ Giúp Người"…
     truong_phong: Hay! {chua_te_deadline} lần đầu có ý tưởng trước hạn!
     _Ý tưởng được duyệt. Tên trên bảng trắng là {chua_te_deadline}. {chua_te_deadline} quay lại nhìn bạn, hơi ngại._
-    ~ follow(70000)
+    ~ follow(20000)
     ~ duy_lua_doi(-5)
     ~ qh("chua_te_deadline", 5)
-- _Giữa cuộc họp, điện thoại cả phòng rung cùng lúc. "Tài khoản của quý khách vừa được cộng…". Lương về._
+- _10 giờ, giữa cuộc họp, điện thoại cả phòng rung cùng lúc. "Tài khoản của quý khách vừa được cộng…". Lương về._
 ~ tien_cong(4000000)
 _4 triệu. Bạn nhìn con số, rồi nhìn quanh. Mọi người reo như ghi bàn. Bạn cũng reo theo. Thật lòng._
 -> END
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_1210_the_kim_cuong ===
-# ngay:12 # gio:12:40 # noi:nha_hang_gan_cong_ty # bat_buoc
-_Lương về. {con_ong_chau_cha} rủ cả phòng đi nhà hàng "anh bao". Tới lúc tính tiền, thẻ phụ của {con_ong_chau_cha} bị từ chối._
+# ngay:12 # gio:12:30 # noi:quan_ca_phe_song_ao # bat_buoc
+_12 giờ 30, Cà Phê Sống Ảo. {con_ong_chau_cha} dẫn bạn, {ran_doc} và {hong_hot} đi ăn trưa mừng lương, "anh bao". Tới lúc tính tiền, thẻ phụ của {con_ong_chau_cha} bị từ chối. Hai lần._
 con_ong_chau_cha: Ủa? Để anh gọi chú anh…
-_{giam_doc} không nghe máy. Hóa đơn 2 triệu 1. Cả bàn im lặng. Theo phản xạ, tay bạn đã rút ví. Cái thẻ lấp lánh ló ra một góc._
+_{giam_doc} không nghe máy. Hóa đơn 420 nghìn. Cả bàn im lặng. Theo phản xạ, tay bạn đã rút ví. Cái thẻ lấp lánh ló ra một góc._
 hong_hot: Ủa… thẻ gì mà lấp lánh vậy ông {thuc_tap_sinh}?
 * [💳 Quẹt luôn. "Dạ… thẻ tích điểm ạ, có hoàn tiền ạ."]
-    _"Tít." Quản lý nhà hàng chạy ra, cúi chào: "Dạ cảm ơn quý khách hạng kim cương ạ."_
-    _Cả bàn nhìn bạn. Không ai nói gì. {dan_dau_tu} bỏ đũa xuống._
+    _"Tít." Quản lý quán chạy ra, cúi chào: "Dạ cảm ơn quý khách hạng kim cương ạ."_
+    _Cả bàn nhìn bạn. Không ai nói gì. {hong_hot} đặt ly cà phê xuống rất chậm._
     ~ duy_lo(25)
     ~ qh("con_ong_chau_cha", 10)
     con_ong_chau_cha: Chill… cảm ơn anh. Mà… anh là ai vậy?
 * [😶 Nhét thẻ vào lại. "Dạ thẻ tích điểm siêu thị ạ. Mình chia đều đi ạ."]
-    _Cả bàn chia đều. Mỗi người 175 nghìn. Không ai tin đó là thẻ tích điểm. Nhưng không ai hỏi tiếp, vì hóa đơn vẫn nằm đó._
-    ~ tien_cong(-175000)
+    _Cả bàn chia đều. Mỗi người 105 nghìn. Không ai tin đó là thẻ tích điểm. Nhưng không ai hỏi tiếp, vì hóa đơn vẫn nằm đó._
+    ~ tien_cong(-105000)
     ~ duy_lo(10)
 * [🍜 Ăn một gói mì tôm sống cho mọi người thấy (Mì gói trước mặt mọi người).]
     _Bạn rút từ balo ra một gói mì, bẻ ăn sống, giòn rụm. Cả bàn quên luôn cái thẻ. Người đàn ông ăn mì sống thì không thể là đại gia._
     ~ duy_lo(-5)
     ~ duy_ngo(5)
-    ~ tien_cong(-175000)
+    ~ tien_cong(-105000)
 - -> END
 
 // ------------------------------------------------------------

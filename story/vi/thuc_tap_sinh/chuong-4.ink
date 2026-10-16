@@ -4,9 +4,9 @@
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_1710_xe_khach ===
-# ngay:17 # gio:06:00 # noi:cong_cong_ty # bat_buoc
-_6 giờ sáng. Xe khách 29 chỗ. Bạn tới lúc 5 giờ 30, mặc áo sơ mi linen màu be, quần kaki xắn gấu, giày lười không vớ. Y chang bộ {con_ong_chau_cha} mặc hôm Ngày Trứng._
-_6 giờ 10, {con_ong_chau_cha} lên xe. Áo sơ mi linen màu be. Quần kaki xắn gấu. Giày lười không vớ._
+# ngay:17 # gio:06:30 # noi:cong_cong_ty # bat_buoc
+_6 giờ 30 sáng, xe khách 29 chỗ chuẩn bị chạy. Bạn tới lúc 6 giờ, mặc áo sơ mi linen màu be, quần kaki xắn gấu, giày lười không vớ. Y chang bộ {con_ong_chau_cha} mặc hôm Ngày Trứng._
+_6 giờ 29, {con_ong_chau_cha} lên xe. Áo sơ mi linen màu be. Quần kaki xắn gấu. Giày lười không vớ._
 _Hai người nhìn nhau. Cả xe nhìn hai người._
 con_ong_chau_cha: *(nhìn một hồi rồi cười)* Ủa sao anh mặc giống em vậy? Mà đẹp hơn.
 ~ duy_ngay_mac_giong_long++
@@ -36,7 +36,7 @@ _Trang đó viết: "Chương 14. Thực tập sinh 30 tuổi, tên thật là {
 // ------------------------------------------------------------
 === thuc_tap_sinh_1710_tro_choi ===
 # ngay:17 # gio:14:30 # noi:bai_bien_vung_tau
-_Khu nghỉ dưỡng. {hr} đọc danh sách phòng: "{thuc_tap_sinh} ở chung với {con_ong_chau_cha}." Bạn suýt đánh rơi balo vì vui._
+_Khu nghỉ Sóng Vỗ. {hr} đọc danh sách phòng: "Phòng 201: {thuc_tap_sinh} với {con_ong_chau_cha}." Bạn suýt đánh rơi balo vì vui._
 _Rồi tới trò chơi tập thể bắt buộc: kéo co. Đội bạn có {chua_te_deadline} (vừa bị lôi ra từ toilet), {editor} (đang ngủ đứng), và {thanh_ninh}._
 _Đội bên kia có {chi_dai}. Một mình {chi_dai} kéo như ba người._
 * [💪 Kéo hết sức.]
@@ -59,8 +59,8 @@ _Đội bên kia có {chi_dai}. Một mình {chi_dai} kéo như ba người._
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_1710_lua_trai ===
-# ngay:17 # gio:21:30 # noi:bai_bien_vung_tau # bat_buoc
-_Lửa trại. Trò "nói thật". {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứa nhóc trong nhà kho. Cả đám im lặng. {ran_doc} bóp nát một con mực nướng._
+# ngay:17 # gio:20:00 # noi:bai_bien_vung_tau # bat_buoc
+_20 giờ. Lửa trại. Trò "nói thật". {sieu_nhan_hong} kể chuyện hồi nhỏ từng nhốt một đứa nhóc trong nhà kho. Cả đám im lặng. {ran_doc} bóp nát một con mực nướng._
 _Chai nước xoay. Dừng lại ở bạn._
 hong_hot: Tới ông thực tập sinh! Nói thật đi! Một bí mật!
 _Mọi ánh mắt dồn về bạn. {bien_kich} ngồi đối diện, ngừng nhai. {chi_dai} ngồi bên cạnh, hơi nghiêng người về phía bạn, như sẵn sàng đỡ._
@@ -230,14 +230,13 @@ _Hôm qua bạn đi chợ, rồi đi trung tâm thương mại, rồi quẹt cá
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_2010_clip_va_thu ===
-# ngay:20 # gio:10:30 # noi:sanh_tang_tret # bat_buoc
-_Sinh nhật công ty 16 tuổi. Màn chiếu ở sảnh. {giam_doc} cầm micro, mắt long lanh. Clip "16 năm {cong_ty}" bắt đầu._
-_Bạn đứng cầm cây đèn hắt sáng phía sau màn chiếu, vì "thực tập sinh đứng đâu cũng được"._
-_Sau clip, Bác {bac_bao_ve} bước lên, tay cầm lá thư ký chữ "G" và một phong bì dán kín: "Chỉ mở khi công ty sắp sập"._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem # bat_buoc
+_Sinh nhật công ty 16 tuổi. Sáng nay ở sảnh, cả công ty xem một phút mở đầu video "16 năm", bản đầy đủ của {editor} để dành cho Đại Nhạc Hội. Bạn đứng cầm cây đèn hắt sáng phía sau màn chiếu, vì "thực tập sinh đứng đâu cũng được"._
+_18 giờ 30, Quán Ốc Đêm. Bác {bac_bao_ve} đứng dậy, tay cầm lá thư ký chữ "G" tới sáng nay, và một phong bì dán kín: "Chỉ mở khi công ty sắp sập"._
 bac_bao_ve: Thư của ông G gửi các cháu. Bác đọc hay không đọc, các cháu bảo bác.
-_Cả sảnh im. Bác {bac_bao_ve} không nhìn {giam_doc}. Bác nhìn… bạn. Người duy nhất nhớ sinh nhật bác._
+_Cả bàn im. Bác {bac_bao_ve} không nhìn {giam_doc}. Bác nhìn… bạn. Người duy nhất nhớ sinh nhật bác._
 * [😇 "Dạ bác đọc đi bác. Sinh nhật công ty mà ạ."]
-    _Bác đọc. Thư ngắn. Câu cuối: "Mấy đứa nhỏ còn thương nhau không?". Cả sảnh lặng đi. {chi_dai} quay mặt đi. {giam_doc} cúi đầu._
+    _Bác đọc: "Mười sáu năm rồi. Các cháu còn đứng đó là anh vui. Việc hôm nay cứ để ngày mai tính, nhưng ngày mai thì phải có. G." Cả quán lặng đi. {chi_dai} quay mặt đi. {giam_doc} cúi đầu._
     ~ qh("bac_bao_ve", 5)
     ~ tinh_than_cong_ty = tinh_than_cong_ty + 5
     ~ duy_lua_doi(5)
@@ -248,8 +247,8 @@ _Cả sảnh im. Bác {bac_bao_ve} không nhìn {giam_doc}. Bác nhìn… bạn.
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_2010_karaoke ===
-# ngay:20 # gio:21:30 # noi:karaoke_hat_cho_nhau_nghe
-_Quán ốc xong, tăng hai ở karaoke "Hát Cho Nhau Nghe". {giam_doc} say, dừng nhạc giữa bài._
+# ngay:20 # gio:21:00 # noi:karaoke_chu_sau
+_21 giờ. Quán ốc xong, tăng hai ở Karaoke Chú Sáu. {giam_doc} say, dừng nhạc giữa bài._
 giam_doc: Anh hứa! Tháng 11 anh tăng lương 20%! Cả công ty!
 _Lúc tính tiền: 4 triệu 800. {giam_doc} đã ngủ trên sofa. {con_ong_chau_cha} lắc đầu: thẻ phụ vẫn bị khóa. Cả phòng nhìn nhau._
 * [💳 Quẹt thẻ kim cương. Trả hết.]

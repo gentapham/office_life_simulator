@@ -36,7 +36,7 @@ _Cả đoàn đang chơi trò tập thể ngoài bãi cát. {hr} cầm loa gọi
 sales: Chị đi đi. Em lo phía bên này.
 _{sales} đứng giữa bãi cát, giơ tay hô to:_
 sales: Mọi người ơi! Chị bao trà sữa cả đoàn! Ai uống gì giơ tay!
-_31 cánh tay giơ lên. Không ai để ý bạn lẻn đi. Bạn biết tiền trà sữa đó là tiền tạm ứng của {sales}. Bạn sẽ không bao giờ quên._
+_Hơn hai mươi cánh tay giơ lên. Không ai để ý bạn lẻn đi. Bạn biết tiền trà sữa đó là tiền tạm ứng của {sales}. Bạn sẽ không bao giờ quên._
 ~ qh("sales", 10)
 * {ds_nhan_hong_ngoai} [🥬 Gửi bản nháp Hồng Ngoại cho Anh Lá Chuối.]
     ~ ds_cam(-5)
@@ -50,7 +50,7 @@ _31 cánh tay giơ lên. Không ai để ý bạn lẻn đi. Bạn biết tiền
 * [🧡 Ngồi đó 10 phút, rồi gập máy, quay lại bãi cát chơi kéo co.]
     ~ ds_cam(10)
     ~ nghi(-5)
-    _Bạn kéo co đội {chi_dai}. {giam_doc}. {chi_dai} vỗ lưng bạn đau điếng._
+    _Bạn kéo co đội {chi_dai}, đối diện đội {giam_doc}. Kéo xong, {chi_dai} vỗ lưng bạn đau điếng._
     chi_dai: Tay vẽ mà kéo khỏe ghê ta!
     ~ qh("chi_dai", 5)
 - -> END
@@ -58,7 +58,7 @@ _31 cánh tay giơ lên. Không ai để ý bạn lẻn đi. Bạn biết tiền
 // ------------------------------------------------------------
 === designer_1710_nhau_hai_san ===
 # ngay:17 # gio:19:30 # noi:vung_tau_quan_hai_san
-_Quán hải sản sát biển. {dan_dau_tu} bao thật. Ghẹ, mực, tôm hùm (một con, chia 31 người)._
+_Quán hải sản sát biển. {dan_dau_tu} bao thật. Ghẹ, mực, tôm hùm (một con, chia 23 người)._
 ~ an(60)
 _Bàn bên kia, {giam_doc} đã sang ly thứ 5. {sales} ngồi cạnh._
 giam_doc: {sales} này, Đại Nhạc Hội mà có ca sĩ to về hát thì nổ tung luôn nhỉ. Em quen ai không?
@@ -84,7 +84,7 @@ _Bạn thấy ánh mắt {sales} lóe lên. Ánh mắt của người sắp hứ
 # ngay:17 # gio:21:30 # noi:vung_tau_bai_bien # bat_buoc
 _Lửa trại. Trò "nói thật". Chai nước suối quay giữa vòng tròn, dừng ở trước mặt bạn._
 hr: Câu hỏi cho {designer}: "Bạn từng làm gì sau lưng công ty?"
-_31 cặp mắt. Ánh lửa. Tiếng sóng. Balo laptop thứ hai nằm ngay sau lưng bạn._ # hen_gio:6
+_Hai mươi mấy cặp mắt. Ánh lửa. Tiếng sóng. Balo laptop thứ hai nằm ngay sau lưng bạn._ # hen_gio:6
 * [😇 Nói thật nửa vời: "Em từng… làm thêm buổi tối. Thiết kế. Cho người ngoài."]
     ~ ds_noi_that_lua_trai = true
     ~ ds_cam(5)
@@ -241,15 +241,15 @@ truong_phong: *(đứng ngập ngừng)* Ờm… anh mua quà cho em với {bien
 
 // ------------------------------------------------------------
 === designer_2010_thu_g ===
-# ngay:20 # gio:15:00 # noi:sanh_tang_tret
-_Tiệc sinh nhật công ty ở sảnh tầng trệt. Bánh kem cam. Bác {bac_bao_ve} cầm một phong thư, tay hơi run._
+# ngay:20 # gio:18:30 # noi:quan_oc_dem
+_Tiệc sinh nhật công ty ở Quán Ốc Đêm, 18 giờ 30. Bánh kem cam đặt giữa mấy dĩa ốc len. Bác {bac_bao_ve} cầm một phong thư, tay hơi run._
 bac_bao_ve: Sáng nay có thư. Ký tên "G". Gửi cả công ty.
-_Cả sảnh im phăng phắc. {giam_doc} tái mặt. Kèm theo thư là một phong bì dán kín, đề: "Chỉ mở khi công ty sắp sập"._
+_Cả quán im phăng phắc. {giam_doc} tái mặt. Kèm theo thư là một phong bì dán kín, đề: "Chỉ mở khi công ty sắp sập"._
 bac_bao_ve: Bác… chưa biết có nên đọc không. Bác chỉ là người giữ thư.
 * [😇 "Bác đọc đi bác. Mười sáu năm rồi, tụi con muốn nghe."]
     ~ qh("bac_bao_ve", 8)
     bac_bao_ve: Ừ… thế thì bác đọc phần thư thôi. Phong bì kia, chưa tới lúc.
-    _Bác đọc chậm, giọng nhỏ. Đúng lúc đó {cho} sủa ầm ĩ vì anh shipper Tèo. Bạn đứng cuối sảnh, chỉ nghe rõ được mấy chữ "mười sáu năm"._
+    _Bác đọc chậm, giọng nhỏ. Đúng lúc đó {cho} sủa ầm ĩ vì anh shipper Tèo. Bạn đứng cuối quán, chỉ nghe rõ được mấy chữ "mười sáu năm"._
     _Nhưng bạn thấy mắt {giam_doc} đỏ lên. Bạn nhìn logo chữ G 7 màu treo trên tường. Lần đầu tiên bạn thấy nó không xấu._
     ~ ds_cam(10)
     ~ ds_toi(5)
@@ -261,8 +261,8 @@ bac_bao_ve: Bác… chưa biết có nên đọc không. Bác chỉ là người
 
 // ------------------------------------------------------------
 === designer_2010_karaoke ===
-# ngay:20 # gio:21:30 # noi:karaoke
-_Sau Quán Ốc Đêm, cả công ty kéo qua Karaoke Hát Cho Nhau Nghe. {giam_doc} cầm micro, mặt đỏ như logo bản 7 màu._
+# ngay:20 # gio:21:00 # noi:karaoke
+_21 giờ. Sau Quán Ốc Đêm, cả công ty kéo qua Karaoke Chú Sáu. {giam_doc} cầm micro, mặt đỏ như logo bản 7 màu._
 giam_doc: Các em! Anh hứa! Siêu Nhân Hồng thành công, anh tăng lương 20%! Anh không ép, anh hứa!
 _Lần này có 6 cái điện thoại quay. {sales} lấy điện thoại bạn quay thêm một góc nữa._
 * [🎤 Giành micro, hát "Công Viên" với {idol_het_thoi}.]

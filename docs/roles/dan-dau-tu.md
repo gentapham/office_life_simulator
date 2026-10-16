@@ -98,15 +98,18 @@ Chương là **"bộ não số liệu"** của chiến dịch. Mọi người l�
 
 ### Chương 1: "5 Tỷ Trên Màn Hình" (1/10 – 7/10)
 - **1/10:** 5 tỷ về tài khoản công ty. Chương là người cập nhật bảng số liệu, nên con số 5.000.000.000 hiện trên màn hình trái của Chương. Các chủ nợ đi ngang, nhìn màn hình, rồi nhìn Chương đầy hy vọng. Chương phải giải thích 11 lần rằng **đó là tiền công ty, không phải tiền của anh**.
-- Trà sữa ăn mừng: Chương nhận ly của mình, rồi nhận luôn ly của Sơn (đang nghỉ "bà ngoại ốm").
-- **2/10:** họp chiến dịch. Thắng hỏi: "Chương, mục tiêu 1 triệu có khả thi không?". Chương trả lời bằng số liệu thật, hoặc trả lời bằng câu cửa miệng: *"Lần này là lên thật, sếp!"*
-- **6/10:** Nguyên bỏ buổi chụp poster đi dắt bà cụ. Ai đó quay clip. Trong bảng số liệu, clip này vọt lên. Chương thấy, nhưng đang bận nhìn chart. **Hạt giống của sự thật được gieo.**
+- Trà sữa ăn mừng: Chương nhận ly của mình, rồi nhìn sang ly của Phát (chiều nay đi hát đám cưới ở Ven Đô), người Chương nợ 500 nghìn.
+- **2/10 (9:30, phòng họp tầng 2):** họp chiến dịch. Thắng hỏi: "Chương, mục tiêu 1 triệu có khả thi không?". Chương trả lời bằng số liệu thật, hoặc trả lời bằng câu cửa miệng: *"Lần này là lên thật, sếp!"*
+- **3/10:** ở quán bida, Vũ làm rơi tờ vé gửi xe tháng 9 và nhớ ra mình đánh rơi USB ở bãi xe.
+- **5/10:** tiền trọ Hẻm 69 là 2.400.000đ, tính luôn điện.
+- **6/10:** khoảng 10:30, Nguyên bỏ buổi chụp poster, chạy ra Đường Hóng đẩy xe chè của Bà Bảy khỏi ổ gà. Ai đó quay clip. Trong bảng số liệu, clip này vọt lên. Chương thấy, nhưng đang bận nhìn chart. **Hạt giống của sự thật được gieo.**
 - **7/10 (Mốc 1):** minigame Dự Đoán Mốc đầu tiên.
 
 ### Chương 2: "Hồng Coin" (8/10 – 14/10)
-- **9/10:** MV ra mắt. 23:00, Hồng Coin ($HONG) xuất hiện trên mạng. Chương thức trắng nhìn nó. Lựa chọn lớn đầu tiên: bỏ tiền vào, bỏ qua, hay cảnh báo cả công ty rằng **ai đó đang kiếm tiền trên tên Siêu Nhân Hồng**.
+- **8/10:** ở tiệm cầm đồ Cứu Nguy, trong tủ kính có chiếc cúp "Ca sĩ triển vọng 2015".
+- **9/10:** MV "Hồng Hóa Việt Nam" ra mắt lúc 20:00. Gần nửa đêm, Hương nhắn riêng: "Anh nợ ai thì trả bác Bình trước." 23:00, Hồng Coin ($HONG) xuất hiện trên mạng. Chương thức trắng nhìn nó. Lựa chọn lớn đầu tiên: bỏ tiền vào, bỏ qua, hay cảnh báo cả công ty rằng **ai đó đang kiếm tiền trên tên Siêu Nhân Hồng**.
 - **10/10 – 12/10:** lương về trễ. Đây là cơn ác mộng: chủ nợ biết hôm nay có lương, Chương thì chưa có. Huyền dán tờ giấy nhắc nợ thứ 7 lên cửa gác lửng. Chương ngủ trên ghế ở sân thượng công ty để né.
-- **12/10:** lương về. Chương phải chọn: trả nợ (Sổ Nợ giảm), nạp vào $HONG (Tài Khoản tăng, rồi giảm), hay chia đôi.
+- **12/10:** 10:00 lương về. Chương phải chọn: trả nợ (Sổ Nợ giảm), nạp vào $HONG (Tài Khoản tăng, rồi giảm), hay chia đôi.
 - **13/10 (Ngày Doanh nhân):** Thắng tự tặng hoa cho mình. Chương tặng Thắng một biểu đồ "doanh thu công ty 5 năm tới" vẽ đi lên. Thắng treo nó cạnh bằng khen của Huyền.
 - **14/10 (Mốc 2):** Long hỏi: "Anh Chương, cái vốn góp chung hồi đó sao rồi?". Long không giận, Long chỉ tò mò. Chương thì muốn độn thổ.
 
@@ -115,27 +118,29 @@ Chương là **"bộ não số liệu"** của chiến dịch. Mọi người l�
 - Bác Bình rót cho Chương ly trà đá, nói đúng một câu: *"Tiền bác cho mượn, bác không cần gấp đâu. Cậu đừng trốn bác là được."*. Chương không biết trả lời sao.
 - Trong bóng tối, Chương nghe Thương nói với Hương về **điều khoản hoàn tiền 10 tỷ**. Chương nhẩm nhanh: 10 tỷ chia 22 người là 454 triệu một người. Chương lần đầu thấy nợ của mình nhỏ.
 - Không có máy tính, Chương lấy giấy bút **vẽ lại biểu đồ lượt xem bằng tay** từ trí nhớ, và lần đầu tiên nhìn ra: clip ngày 6/10 gấp 12 lần MV. **Mở kỹ năng Phân Tích Thật cấp cao.**
-- **16/10:** gameshow ở Đài Tivi Hóng. Chương ngồi sau cánh gà theo dõi lượt xem từng phút trên điện thoại, báo cho Hương lúc nào khán giả chán, lúc nào cần cho Nguyên "giúp người" trên sóng.
+- **16/10:** gameshow ở Đài Tivi Hóng, quay 14:00, phát 20:00. Chương ngồi sau cánh gà theo dõi phản ứng khán giả trường quay từng phút, báo cho Hương lúc nào khán giả chán, lúc nào cần cho Nguyên "giúp người" trên sóng.
 
 ### Chương 4: "Thoát Nghèo Ở Vũng Tàu" (17/10 – 20/10)
-- **17/10 (Ngày Quốc tế Xóa nghèo):** trên xe đi Vũng Tàu, Chương tuyên bố trước cả đoàn: *"Từ hôm nay tui thoát nghèo."*. Đúng lúc đó, clip gameshow viral, Hồng Coin tăng **x10** trong 4 tiếng.
-- Tối 17/10, Chương **bao cả công ty ăn hải sản**. Cua, ghẹ, tôm hùm. Cả đoàn hô "Anh Chương đỉnh nóc!". Chương hứa trước mặt mọi người: *"Mai về thành phố, tui trả nợ hết!"*. Lựa chọn quan trọng: bán ngay đêm đó để trả nợ, hay "để thêm chút nữa cho x20".
-- **18/10:** nếu chưa bán, người tạo Hồng Coin **ôm tiền biến mất**. $HONG về 0 trong 15 phút. Còn cái nịt. Trên xe về, cả đoàn im lặng. Bảng hóa đơn hải sản vẫn còn trong túi, Chương ký nợ nhà hàng. Ai cũng giận ai, nhưng ai cũng giận Chương nhất.
-- **20/10 (Ngày Phụ nữ + sinh nhật công ty):** không còn tiền mua quà cho chị em. Chương có thể: vẽ thiệp tay hình biểu đồ đi lên cho từng chị em, mượn tiền mua hoa (Sổ Nợ +500.000đ), hay trốn ở sân thượng.
+- **17/10 (Ngày Quốc tế Xóa nghèo):** trên xe đi Vũng Tàu, Chương tuyên bố trước cả đoàn: *"Từ hôm nay tui thoát nghèo."*. 15:00 ở khu nghỉ Sóng Vỗ, clip gameshow viral, Hồng Coin tăng **x10**.
+- 18:30, Chương **bao cả công ty ăn hải sản** ở quán Sóng Vỗ (Thắng say hứa tăng lương ở đây). Cua, ghẹ, tôm hùm. Cả đoàn hô "Anh Chương đỉnh nóc!". Chương hứa trước mặt mọi người: *"Mai về thành phố, tui trả nợ hết!"*. Lựa chọn quan trọng: bán ngay đêm đó để trả nợ, hay "để thêm chút nữa cho x20".
+- **18/10:** 10:15 sáng, nếu chưa bán, người tạo Hồng Coin **ôm tiền biến mất**. $HONG về 0 trong 15 phút. Còn cái nịt. Trên xe về, cả đoàn im lặng. Bảng hóa đơn hải sản vẫn còn trong túi, Chương ký nợ nhà hàng. Ai cũng giận ai, nhưng ai cũng giận Chương nhất.
+- **20/10 (Ngày Phụ nữ + sinh nhật công ty):** không còn tiền mua quà cho chị em. Chương có thể: vẽ thiệp tay hình biểu đồ đi lên cho từng chị em, mượn tiền mua hoa (Sổ Nợ +500.000đ), hay trốn ở sân thượng. 10:00 Chương chiếu biểu đồ "16 năm". 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G"; Chương có thể trả bác ngay tại bàn. 21:00 Karaoke Chú Sáu.
 
 ### Chương 5: "Số Liệu Không Biết Nói Dối" (21/10 – 27/10)
 - **21/10 (Mốc 3):** Chương mang bảng phân tích "khán giả thích Nguyên đi giúp người thật" lên phòng giám đốc. Thắng và Thái phải nghe. Thuyết phục thành công thì cả chiến dịch đổi hướng.
 - **22/10 (kiểm tra thuế):** đoàn kiểm tra hỏi số liệu doanh thu quảng cáo. Chương soạn báo cáo và phát hiện **KPI của Huyền không khớp với dòng tiền**. Nói ra, giấu đi, hay hỏi riêng Huyền?
-- **23/10:** sinh nhật Nguyên. Nếu Chương từng mua $HONG, Nguyên hỏi giữa livestream: *"Ủa, có đồng tiền tên em hả? Ai làm vậy?"*. Chương đỏ mặt.
-- **24/10:** "hội nghị hòa giải" của Hương. Hương xếp riêng cho Chương một bàn: **bàn chủ nợ**. Huyền, Bảo, Bác Bình, Long, Sơn, Duy, Oánh, Phát ngồi quanh. Chương phải trình bày "kế hoạch trả nợ" như một bản báo cáo số liệu. Xem Mẫu 5.
+- **22/10 tối:** Huyền nhờ Chương đóng Mr. Kevin Trộn, hoặc Chương đẩy vai cho Bác Bình hay Duy.
+- **23/10:** sinh nhật Nguyên, livestream 20:00 ở studio tầng 2, bánh kem đổ. Nếu Chương từng mua $HONG, Nguyên hỏi giữa livestream: *"Ủa, có đồng tiền tên em hả? Ai làm vậy?"*. Chương đỏ mặt.
+- **24/10:** "hội nghị hòa giải" của Hương (14:00, phòng họp tầng 2), bàn chủ nợ lúc 15:30. Hương xếp riêng cho Chương một bàn: **bàn chủ nợ**. Huyền, Bảo, Bác Bình, Long, Sơn, Duy, Oánh, Phát ngồi quanh. Chương phải trình bày "kế hoạch trả nợ" như một bản báo cáo số liệu. Xem Mẫu 5.
 - **26/10:** tin đồn cắt giảm nhân sự. Chương biết mình là ứng viên số một: chuyên viên, 37 tuổi, hay nhìn chart trong giờ làm.
-- **27/10:** LL-Entertainment gửi hợp đồng cho Nguyên. Cùng ngày, một người của LL nhắn Chương: **15.000.000đ cho toàn bộ số liệu chiến dịch Siêu Nhân Hồng**. Đủ trả gần hết nợ. Xem Mẫu 6.
+- **26/10:** 16:00 chiếu phim "Người Hùng Không Tên". Thắng ra giá 200 triệu mua kênh của Lĩnh.
+- **27/10:** 11:00 Huyền báo cuộc gọi Sữa Chua Hồng Hào; số liệu của Chương cho thấy lượt nhắc tên tăng 400%. 15:00 Lưu Lực tới. 23:00, một người của LL nhắn Chương: **15.000.000đ cho toàn bộ số liệu chiến dịch Siêu Nhân Hồng**. Đủ trả gần hết nợ. Xem Mẫu 6.
 
 ### Chương 6: "Cắt Lỗ" (28/10 – 31/10)
 - **28/10 (Mốc 4):** Chương phải lọc lượt theo dõi ảo trước khi nền tảng kiểm tra. Trong danh sách tài khoản ảo có một cụm dẫn tới… người thuê fan ảo của Phát. Nói, hay xóa lặng lẽ?
 - **29/10 (wifi sập):** cả ngày không mạng. Chương lại không có chart. Ngày thứ hai trong tháng sống như người bình thường. Nếu đã mở kỹ năng Cắt Lỗ, Chương có thể **xóa app** ngay hôm nay.
-- **30/10:** họp đánh giá. Chương là người trình chiếu số liệu cả tháng. Màn hình nào hiện lên trước cả công ty, màn hình trái (số liệu công ty) hay màn hình phải (chart), tùy cả tháng Chương đã nhìn cái nào nhiều hơn.
-- **31/10 (Đại Nhạc Hội Siêu Nhân):** Chương đứng ở góc khán đài, cầm điện thoại xem con số người theo dõi nhảy từng giây. Lần đầu tiên, Chương mong một con số đi lên **không phải vì tiền của mình**.
+- **30/10 (14:00, phòng họp tầng 2):** họp đánh giá. Chương là người trình chiếu số liệu cả tháng. Màn hình nào hiện lên trước cả công ty, màn hình trái (số liệu công ty) hay màn hình phải (chart), tùy cả tháng Chương đã nhìn cái nào nhiều hơn. Cuối buổi Tuấn đọc danh sách cắt giảm: Duy, Sơn. Chương có thể dùng số liệu xin hoãn.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** 17:30 Sơn nhờ canh lượt bình chọn chung kết (20:00, thí sinh số 27). 19:15 Chương đứng ở góc khán đài trước giờ mở màn. Kết thúc của Chương hiện sau đêm diễn (23:00). Lần đầu tiên, Chương mong một con số đi lên **không phải vì tiền của mình**.
 
 ---
 
@@ -220,16 +225,18 @@ Chương là **"bộ não số liệu"** của chiến dịch. Mọi người l�
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `dan_dau_tu_3010_danh_gia` chạy sau Đại Nhạc Hội Siêu Nhân (23:00 ngày 31/10), đọc `chung_cong_ty_song` và `ket_thuc_su_nghiep` (không so trực tiếp số người theo dõi). Thứ tự xét: bí mật, rồi có hậu, rồi buồn.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 📊 **Nhà Phân Tích Thật Sự** | Độ Chuẩn Số Liệu ≥ 80, đã thuyết phục Thắng đổi hướng chiến dịch ngày 21/10, Siêu Nhân Hồng đạt 1 triệu người theo dõi | Buổi đánh giá, Thắng gọi bạn lên: **Trưởng nhóm Dữ liệu**, lương tăng 20%. Tối đó ở gác lửng Hẻm 69, bạn mở điện thoại, giữ ngón tay trên biểu tượng app chart 5 giây, rồi bấm "Gỡ cài đặt". Màn hình phải tắt. Màn hình trái vẫn sáng |
-| 2 | 😄 🧾 **Sổ Nợ Về 0** | Sổ Nợ = 0 trước ngày 30/10 bằng lương và việc làm thêm (không dùng tiền của LL), không mua thêm coin sau ngày 18/10 | Bạn đi một vòng công ty, trả từng người. Bác Bình là người đầu tiên. Tới người cuối cùng là Huyền, Huyền đưa lại cho bạn tờ giấy nhắc nợ thứ 7: "Giữ làm kỷ niệm nha anh." Cả công ty ăn mừng bằng trà sữa. Lần này bạn trả tiền, và có hóa đơn hẳn hoi |
-| 3 | 😄 🔒 **Kết thúc bí mật: Thư Tay Của G** | Quan hệ với {bac_bao_ve} ≥ 80, trả hết nợ cho Bác Bình đầu tiên, Độ Chuẩn ≥ 85, đã mở nhánh "Trang 47" ở Mẫu 4 | Đêm 31/10, Bác Bình đưa bạn một lá thư tay ký "G": *"Bác Bình kể với tôi có một cậu đọc số rất giỏi. Nhờ cậu giúp Thắng xem lại sổ sách, và giúp cậu ấy nói thật với tôi."* Sáng 1/11, bạn và Thắng ngồi trong phòng giám đốc, cùng viết thư gửi Genta, kèm một biểu đồ thật. Lần đầu tiên, biểu đồ không đi lên, mà vẫn đẹp |
-| 4 | 😢 💀 **Còn Cái Nịt** | Tài Khoản Đầu Tư về 0, Sổ Nợ ≥ 40.000.000đ ngày 30/10 | Sáng 31/10, bạn ra Bến xe Ven Đô với một ba lô. Trên xe, điện thoại báo: "Siêu Nhân Hồng đạt 1 triệu người theo dõi!". Bạn mở group công ty: mọi người đang ăn mừng, và có một tin nhắn của Bác Bình: "Về đi. Không ai đòi đâu." Xe đã lăn bánh |
-| 5 | 😢 🪤 **Chủ Nợ Vây Thành** | Quan hệ với ít nhất 5 chủ nợ ≤ −50, đã bỏ qua bàn chủ nợ ngày 24/10 | Buổi đánh giá, Tuấn đọc tên bạn đầu tiên trong danh sách cắt giảm. Không ai đứng lên nói đỡ. Bạn ôm thùng carton ra cổng, đi ngang qua 8 người từng cho bạn mượn tiền. Không ai nhìn. Chỉ có {cho} chạy theo, đánh hơi cái túi, rồi quay về |
-| 6 | 😢 📉 **Đu Đỉnh Bên Kia** | Đã bán số liệu thật cho LL ngày 27/10, Nguyên ký với LL hoặc chiến dịch thất bại | Bạn trả được hết nợ bằng tiền của LL. Nhưng ngày 1/11, G-Entertainment đóng cửa. Bạn đứng trước cổng, Bác Bình đang tháo chữ G sặc sỡ xuống. Bác không hỏi gì, chỉ nói: "Bác không thấy gì đâu." Bạn biết, bác thấy hết |
+| 1 | 😄 🔒 **Kết thúc bí mật: Thư Tay Của G** | Quan hệ với Bác Bình ≥ 50, đã trả hết Bác Bình trước mọi chủ nợ khác hoặc đã hứa trả bác ngày mất điện, Độ Chuẩn ≥ 75, đã nói chuyện trang 47 với Thắng ngày 21/10, không bán số liệu cho LL | 23:45, Bác Bình đưa lá thư G tới chiều 30/10 (bác giữ tới hết đêm diễn), có một đoạn nhờ Chương giúp Thắng xem lại sổ sách và nói thật với G. Sáng 1/11 hai người viết thư, kẹp biểu đồ dòng tiền thật 16 năm |
+| 2 | 😄 🧾 **Sổ Nợ Về 0** | Hết nợ, hoặc đã có lộ trình trả nợ ở bàn chủ nợ 24/10 với nợ còn ≤ 20 triệu; không cầm tiền LL; không mua coin sau 18/10 | Chương đi một vòng công ty đóng sổ nợ (ngay 2/11 nếu đã hết nợ, hoặc 15/1 theo lộ trình). Huyền trả lại tờ nhắc nợ thứ 7 làm kỷ niệm. Thương muốn đóng khung tờ hóa đơn trà sữa |
+| 3 | 😄 📊 **Nhà Phân Tích Thật Sự** | Độ Chuẩn ≥ 80, thuyết phục được Thắng ngày 21/10, không bán số liệu cho LL | Công ty sống: Chương thành Trưởng nhóm Dữ liệu. Công ty sập: Thái giới thiệu Chương cho một ngân hàng cần người đọc số. Đêm đó Chương gỡ app chart, gõ vào bảng tháng 11: "Khán giả thích người thật. Mình cũng vậy." |
+| 4 | 😢 📉 **Đu Đỉnh Bên Kia** | Đã bán số liệu thật cho LL (27/10) | Công ty sống: Chương biết mình đã bán bản đồ cho đối thủ, tự nộp đơn nghỉ. Công ty sập: vài tuần sau G-Entertainment đóng cửa, Bác Bình tháo chữ G khỏi cổng |
+| 5 | 😢 🪤 **Chủ Nợ Vây Thành** | ≥ 3 chủ nợ ghét Chương (quan hệ ≤ −50), hoặc bỏ trốn khỏi bàn chủ nợ 24/10 | Thứ hai 2/11, Tuấn đọc thêm dòng ba của danh sách cắt giảm (sau Duy, Sơn): Chương. Tám người từng cho Chương mượn tiền ngồi trong phòng, không ai đứng lên |
+| 6 | 😢 💀 **Còn Cái Nịt** | Các trường hợp còn lại | Sáng 1/11, bến xe Ven Đô. Ba lô, sổ nợ, xe về miền Tây. Ảnh Đại Nhạc Hội trong group, không có Chương. Bác Bình nhắn: "Về đi. Không ai đòi đâu." |
+
+Ghi chú: công cụ `tools/thu-ket-thuc.mjs` chưa cộng lương ngày 12/10 như game thật, nên các kết thúc dựa vào tiền mặt (trả nợ) hiếm hơn trong bản chơi thử so với game.
 
 ---
 

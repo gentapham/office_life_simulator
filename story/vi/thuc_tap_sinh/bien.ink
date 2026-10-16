@@ -44,6 +44,8 @@ VAR duy_giu_lai = false        // 30/10: được giữ lại làm nhân viên c
 VAR duy_ve_ngan_hang = false   // Lửa Đam Mê về 0, đã viết đơn nghỉ
 VAR duy_toa_sang_2910 = false  // 29/10 điều phối công việc bằng giấy thành công
 VAR duy_bi_lo_het = false      // Độ Lộ Thân Phận chạm 100: cả công ty biết
+VAR duy_doc_danh_sach = false  // 26/10 đọc to danh sách 47 việc bị đẩy trước cả phòng
+VAR duy_bat_gap_rong = false   // 28/10 nhận ra "Rồng" ở Sống Ảo là {con_ong_chau_cha}
 
 // ============================================================
 // HÀM TIỆN ÍCH RIÊNG CỦA DUY

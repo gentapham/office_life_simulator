@@ -97,37 +97,40 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
 - **Lựa chọn:** nhận tiền tip và im lặng, hay chạy ra chào "anh Nguyên"?
 
 ### Chương 2: "Lương Chưa Về, Lý Do Đã Hết" (5/10 – 12/10)
-- **6/10:** buổi chụp poster. Nguyên bỏ ngang để đi giúp bà cụ, lịch cả tuần đổ như domino. Sơn chơi minigame Xếp Lịch trong chế độ "khẩn cấp".
+- **6/10:** buổi chụp poster. Khoảng 10:30 Nguyên bỏ ngang, chạy ra Đường Hóng đẩy xe chè của Bà Bảy khỏi ổ gà, lịch cả tuần đổ như domino. Sơn chơi minigame Xếp Lịch trong chế độ "khẩn cấp".
 - **7/10:** mốc 50.000. Nếu không đạt, Thắng họp "truyền lửa" 3 tiếng, đúng giờ Sơn hẹn tập thanh nhạc.
-- **9/10:** ra mắt MV. Cuộc thi báo vòng 2 ghi hình ngày **14/10**, thứ 4, giờ hành chính.
-- **10/10 – 12/10:** lương về trễ. Sơn cần 1,2 triệu may bộ đồ kim tuyến mới cho vòng 2. Lựa chọn: ứng lương ở Thương (bị hỏi "hóa đơn đâu em?"), vay Thái, hát thêm một đêm ở Sống Ảo, hay **mượn bộ vest kim tuyến cũ của Phát** (Phát còn cả tủ đồ 2015).
+- **9/10:** 20:00 ra mắt MV "Hồng Hóa Việt Nam". Cuộc thi báo vòng 2 ghi hình ngày **14/10**, thứ 4, giờ hành chính.
+- **10/10 – 12/10:** lương về trễ (10:00 ngày 12/10). Sơn cần 1,2 triệu may bộ đồ kim tuyến mới cho vòng 2. Lựa chọn: ứng lương ở Thương (bị hỏi "hóa đơn đâu em?"), vay Thái, hát thêm một đêm ở Sống Ảo, hay **mượn bộ vest kim tuyến cũ của Phát** (Phát còn cả tủ đồ 2015).
 - **Twist nhỏ:** Hiếu bắt đầu hỏi han Sơn rất thân thiện về "lịch tuần sau của anh Nguyên".
 
 ### Chương 3: "Gặt Lúa Ở Đài Truyền Hình" (13/10 – 16/10)
-- **14/10 (Ngày Hội Nông dân):** lý do đẹp nhất năm: *"Em xin nghỉ về quê phụ gặt lúa ạ."* (Nhà Sơn ở Ven Đô thật, có ruộng rau thật, nên lý do này được +10 Độ Tin.) Sơn đi ghi hình vòng 2.
-- **15/10 (mất điện):** cả công ty ngồi pantry. Điện thoại Sơn hết pin, không ai liên lạc được với xe đón Nguyên. Ngồi pantry, Sơn nghe Thái kể đang được "một công ty" mời về. Lần đầu tiên Sơn thấy bạn thân mình cũng giấu chuyện.
-- **16/10:** Siêu Nhân Hồng đi gameshow ở **Đài Tivi Hóng**, đúng cái đài Sơn vừa ghi hình hôm qua. Sơn phải đi kèm. Ở hành lang, cô trợ lý sản xuất cuộc thi vẫy tay: *"Ủa Sơn Kim Tuyến! Mai nhớ thử đồ nha!"* (xem Mẫu 2).
+- **14/10 (Ngày Hội Nông dân):** lý do đẹp nhất năm: *"Em xin nghỉ về quê phụ gặt lúa ạ."* (Nhà Sơn ở Ven Đô thật, có ruộng rau thật, nên lý do này được +10 Độ Tin.) Sơn đi ghi hình vòng 2 (có mặt 7:30). Chiều, Hương gọi và nghe thấy tiếng MC sau lưng Sơn: "Ruộng gì có MC vậy em?"
+- **15/10 (mất điện):** cả công ty ngồi pantry. Điện thoại Sơn hết pin, không ai liên lạc được với xe đón Nguyên. Ngồi pantry, Thái hỏi: "Nếu một ngày anh đi đâu đó, em có giận anh không?" Lần đầu tiên Sơn thấy bạn thân mình cũng có chuyện chưa kể (lời mời của LL tới 25/10 mới có).
+- **16/10:** Siêu Nhân Hồng đi gameshow ở **Đài Tivi Hóng** (quay 14:00, phát 20:00), đúng cái đài Sơn ghi hình vòng 2 hôm 14/10. Thái kẹt đám cưới của Phát buổi sáng, trưa mới tới, nên Sơn đưa Nguyên lên đài từ sáng. 19:30 buffet ở sảnh công ty. Ở hành lang, cô trợ lý sản xuất cuộc thi vẫy tay: *"Ủa Sơn Kim Tuyến! Mai nhớ thử đồ nha!"* (xem Mẫu 2).
 
 ### Chương 4: "Say Xe Vũng Tàu" (17/10 – 20/10)
 - **17/10:** team building. Lựa chọn: xin nghỉ ("em say xe nặng lắm ạ", Độ Tin −15 vì ai cũng thấy Sơn chạy xe máy 30 phút mỗi ngày), hoặc đi.
-- Nếu đi: đêm lửa trại có karaoke. Phát giành micro hát "Công Viên" lần thứ 4, Hương quay sang: *"Sơn, hát một bài coi, cả năm chưa thấy em mở miệng."* Đây là lần đầu Sơn có cơ hội hát trước đồng nghiệp (xem Mẫu 5).
+- Nếu đi: 20:00 lửa trại có karaoke (lời hứa của Huyền và Thắng đã xảy ra ở quán hải sản Sóng Vỗ lúc 18:30). Phát giành micro hát "Công Viên" lần thứ 4, Hương quay sang: *"Sơn, hát một bài coi, cả năm chưa thấy em mở miệng."* Đây là lần đầu Sơn có cơ hội hát trước đồng nghiệp (xem Mẫu 5).
 - **18/10:** về thành phố. Nếu Sơn đã hát, cả xe buýt im lặng 10 phút rồi Duy hỏi: *"Dạ anh Sơn học thanh nhạc ở đâu vậy ạ?"*
-- **20/10:** sinh nhật công ty 16 tuổi. Sơn xếp lịch văn nghệ. Lựa chọn: xếp Phát hát mở màn như mọi năm, hay lén ghi tên "khách mời bí mật" là chính mình.
+- **20/10:** sinh nhật công ty 16 tuổi. Sơn xếp văn nghệ cho góc karaoke của Quán Ốc Đêm. Lựa chọn: xếp Phát hát mở màn như mọi năm, hay lén ghi tên "khách mời bí mật" là chính mình. 18:30 ở Quán Ốc Đêm, Bác Bình đọc thư "G". 21:00 Karaoke Chú Sáu.
 
 ### Chương 5: "Thanh Tra Ngày Phép" (21/10 – 27/10)
 - **22/10 (kiểm tra thuế):** đoàn thuế đối chiếu bảng lương với bảng chấm công. Bảng chấm công của Sơn đỏ như lịch Tết. Thương kéo Sơn vào phòng: *"Tuần này em mà nghỉ một ngày, chị không ký lương nữa."* Sơn phải có mặt đủ cả tuần, trong khi **bán kết là tối chủ nhật 25/10** và buổi tổng duyệt rơi vào chiều thứ 6.
-- **23/10:** sinh nhật Nguyên kiêm livestream. Sơn xếp lịch. Trong lúc Tuất phá bánh kem, micro livestream bắt được tiếng Sơn đang ngân nga sau cánh gà. Bình luận: *"Ai hát nền hay vậy?"*
-- **25/10:** bán kết. Giấc Mơ Sân Khấu ≥ 50 thì vào chung kết.
-- **27/10:** LL-Entertainment gửi lời mời cho Nguyên. Cùng ngày, **Thái** rủ Sơn: *"LL mời anh về, kèm Nguyên. Em đi với anh không? Bên đó không ai bắt giấy phòng khám."* Lựa chọn lớn: giữ Thái ở lại, đi theo Thái, hay cuối cùng kể cho Thái nghe bí mật của mình (xem Mẫu 3).
+- **23/10:** sinh nhật Nguyên kiêm livestream 20:00 ở studio tầng 2 (tổng duyệt bán kết 17:00 ở đài). Sơn xếp lịch. Bánh kem 3 tầng bị Tuất làm đổ. Trong lúc Tuất phá bánh kem, micro livestream bắt được tiếng Sơn đang ngân nga sau cánh gà. Bình luận: *"Ai hát nền hay vậy?"*
+- **24/10 (14:00, phòng họp tầng 2):** hội nghị hòa giải, Sơn ngồi đối diện Tuấn và phát hiện số máy đuôi …604.
+- **25/10:** 10:00 Sơn thấy Thái ở sảnh LL, Quỳnh và Nhi giả vờ đi lạc. 20:00 bán kết. Giấc Mơ Sân Khấu ≥ 50 thì vào chung kết.
+- **27/10:** LL-Entertainment gửi lời mời cho Nguyên. 15:00 Lưu Lực tới sảnh, thấy Hương thì làm rơi tập hồ sơ (Hương không hiểu vì sao), trong đó có bản sao lịch của Sơn. Buổi sáng, **Thái** rủ Sơn: *"LL mời anh về, kèm Nguyên. Em đi với anh không? Bên đó không ai bắt giấy phòng khám."* Lựa chọn lớn: giữ Thái ở lại, đi theo Thái, hay cuối cùng kể cho Thái nghe bí mật của mình (xem Mẫu 3).
 
 ### Chương 6: "Hai Sân Khấu Một Đêm" (28/10 – 31/10)
-- **29/10 (wifi sập):** không gửi được tin nhắn xin nghỉ qua Zalo-lô. Sơn phải gọi điện. Người bắt máy là **Thắng**.
-- **30/10:** họp đánh giá. Tuấn mở tập hồ sơ 3 cm. Tùy chỉ số, Sơn được khen, bị kỷ luật, hoặc… Tuấn nhìn Sơn rất lâu rồi nói: *"Giọng em nghe quen quen."*
-- **31/10:** 19:30 Đại Nhạc Hội Siêu Nhân, 20:00 chung kết. Bốn hướng:
+- **28/10:** nếu Sơn đã mời Nguyên làm khách mời, đài công bố. Bảo có thể hứa nối sóng.
+- **29/10 (wifi sập từ 9:00):** không gửi được tin nhắn xin về sớm đi tổng duyệt chung kết (14:00). Sơn gọi số bàn HR. Người bắt máy là **Thắng**.
+- **30/10 (14:00, phòng họp tầng 2):** họp đánh giá. Tuấn đọc danh sách cắt giảm: dòng một Duy, dòng hai **Sơn**. Tuấn dừng lại nếu Sơn đã tự thú và biết số …604, hoặc Hương đứng lên. Tuấn mở tập hồ sơ 3 cm. Tùy chỉ số, Sơn được khen, bị kỷ luật, hoặc… Tuấn nhìn Sơn rất lâu rồi nói: *"Giọng em nghe quen quen."*
+- **31/10:** 10:00 Hương có thể cho Sơn đi. 19:30 Đại Nhạc Hội Siêu Nhân, 20:00 chung kết ở Đài Tivi Hóng (thí sinh số 27, chiếu trên màn hình lớn ở sân khấu). Lựa chọn chốt lúc 19:10, kết thúc hiện sau đêm diễn (23:00):
   - Ở lại Đại Nhạc Hội Siêu Nhân, bỏ chung kết.
   - Đi thi, bỏ Đại Nhạc Hội Siêu Nhân (giao lịch cho Duy, cầu trời).
-  - Chạy cả hai bằng Grab qua Đại Lộ Kẹt Xe.
-  - 🔒 Thuyết phục đài nối sóng trực tiếp chung kết với sân khấu Đại Nhạc Hội Siêu Nhân (cần quan hệ với Nguyên ≥ 60, Thái ≥ 60, Bảo ≥ 40, và đã mời Nguyên làm khách mời cuộc thi).
+  - Xin nghỉ "bà ngoại nhập viện" để đi thi.
+  - Chạy cả hai bằng xe ôm công nghệ qua Đại Lộ Kẹt Xe.
+  - 🔒 Thuyết phục đài nối sóng trực tiếp chung kết với sân khấu Đại Nhạc Hội Siêu Nhân (cần đã mời Nguyên làm khách mời, Bảo hứa nối sóng, quan hệ với Nguyên ≥ 40, và Thái biết bí mật hoặc quan hệ với Thái ≥ 30).
 
 ---
 
@@ -228,16 +231,16 @@ Sơn là người **giữ lịch** của Siêu Nhân Hồng. Lịch đẹp thì 
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `thanh_xin_nghi_3010_danh_gia` chạy sau Đại Nhạc Hội Siêu Nhân (23:00 ngày 31/10), đọc `chung_cong_ty_song`. Thứ tự xét: bí mật, rồi có hậu, rồi buồn.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🎤 **Sơn Kim Tuyến** | Giấc Mơ Sân Khấu ≥ 80, đi thi chung kết 31/10, Độ Bị Soi < 100. Đã tự nộp đơn nghỉ việc với lý do thật | Pháo giấy kim tuyến rơi đầy sân khấu Đài Tivi Hóng. Bạn cầm cúp, mắt lem lớp trang điểm. Điện thoại rung, tin nhắn từ {hr}: *"Anh vote cho em 47 lần đó. Đơn nghỉ việc anh duyệt rồi. Lý do ghi: 'Đi hát'. Lý do đầu tiên của em mà anh tin."* |
-| 2 | 😄 📅 **Điều Phối Không Nghỉ Ngày Nào** | Không nghỉ ngày nào từ 15/10 tới 30/10, Uy tín ≥ 70, lịch Siêu Nhân Hồng không chồng chéo lần nào trong tuần cuối | Họp đánh giá 30/10. Tuấn đọc tên người nhận **thưởng chuyên cần** đầu tiên sau 3 năm: *"Sơn."* Cả phòng họp tưởng nghe nhầm. Tối thứ 7, bạn vẫn hát ở quán Sống Ảo, lần này cả công ty ngồi kín 3 bàn, và không ai phải bịa lý do gì cả |
-| 3 | 😄 🔒 **Kết thúc bí mật: Song Ca Đại Nhạc Hội Siêu Nhân** | Thái đã biết bí mật trước 27/10, đã mời Nguyên làm khách mời cuộc thi, quan hệ với Nguyên ≥ 60, Thái ≥ 60, Bảo ≥ 40, chọn lựa chọn 🔒 ở Mẫu 6 | Bảo nối sóng, màn hình lớn chia đôi: một nửa là Đài Tivi Hóng, một nửa là Sân khấu Đại Nhạc Hội Siêu Nhân. Bạn và Siêu Nhân Hồng song ca, kim tuyến và màu hồng lấp lánh trên sóng toàn quốc. Ở hàng ghế đầu, Tuấn giơ cây lightstick ghi "SƠN KIM TUYẾN", không giấu nữa |
-| 4 | 😢 📺 **Ốm Trên Sóng Truyền Hình** | Nghỉ ốm đúng hôm có phát sóng cuộc thi, Độ Tin Lý Do < 20, chưa tự thú với ai | Pantry công ty, cái tivi nhỏ trên tủ lạnh đang chiếu "Giọng Ca Ước Mơ". Thắng đứng xem, ly cà phê trên tay, rồi quay sang hỏi cả phòng: *"Ơ, bà ngoại cậu Sơn hôm nay khỏe hẳn rồi nhỉ?"* Sáng hôm sau, thùng carton của bạn có thêm một tờ giấy nghỉ ốm chưa dùng |
-| 5 | 😢 🗓️ **Hết Phép Cả Đời** | Độ Bị Soi đạt 100 (có thể xảy ra bất cứ lúc nào), hoặc Số Ngày Phép ≤ −10 vào ngày 30/10 | Bạn ký bản cam kết "không nghỉ thêm ngày nào tới hết năm". 20:00 ngày 31/10, bạn ngồi sau cánh gà Đại Nhạc Hội Siêu Nhân cầm bộ đàm, điện thoại hiện thông báo: *"Thí sinh Sơn Kim Tuyến vắng mặt. Suất chung kết thuộc về người dự bị."* Bạn khẽ ngân nga một câu, chỉ có Tuất nghe |
-| 6 | 😢 🛵 **Hai Ghế Một Mông** | Chọn chạy cả hai nơi đêm 31/10 | Đại Lộ Kẹt Xe đứng im. Tài xế Grab hủy chuyến lần thứ 3. Bạn đứng giữa đường trong bộ đồ kim tuyến, một tay cầm bộ đàm đang gọi "Sơn đâu rồi?", một tay cầm điện thoại đang gọi "Sơn Kim Tuyến đâu rồi?". Bạn hát một mình dưới cột đèn đỏ. Đèn chuyển xanh, không ai vỗ tay |
+| 1 | 😄 🔒 **Kết thúc bí mật: Song Ca Đại Nhạc Hội Siêu Nhân** | Chọn lựa chọn 🔒 lúc 19:10 ngày 31/10 | Bảo nối sóng, màn hình lớn chia đôi: Đài Tivi Hóng và sân khấu Đại Nhạc Hội. Bạn và Siêu Nhân Hồng song ca "Công Viên", Phát hát bè. Tuấn giơ lightstick "SƠN KIM TUYẾN" |
+| 2 | 😄 🎤 **Sơn Kim Tuyến** | Đi thi chung kết (giao lịch cho Duy), hoặc xin nghỉ ốm nhưng đã tự thú với Tuấn | Giấc Mơ ≥ 80: quán quân. Thấp hơn: á quân, lần đầu thua mà không nói dối ai. Tuấn nhắn: đã vote 47 lần; nếu đã nộp đơn nghỉ việc thì duyệt với lý do "Đi hát", nếu không thì "từ giờ cứ ghi 'đi hát', anh duyệt" |
+| 3 | 😄 📅 **Điều Phối Không Nghỉ Ngày Nào** | Ở lại Đại Nhạc Hội, không nghỉ ngày nào từ 15/10, chưa chạm Độ Bị Soi 100, không ký cam kết, phép > −10 | Đại Nhạc Hội chạy như đồng hồ. Có biến thể cho người dừng ở bán kết. Thưởng chuyên cần đầu tiên sau 3 năm. Tối thứ 7 tuần sau, cả công ty ngồi kín 3 bàn ở Sống Ảo nghe bạn hát |
+| 4 | 😢 🛵 **Hai Ghế Một Mông** | Chọn chạy cả hai nơi | Đại Lộ Kẹt Xe đứng im, tài xế hủy chuyến lần thứ 3. Bạn hát một mình dưới cột đèn đỏ. Màn hình lớn chiếu chung kết thiếu thí sinh số 27 |
+| 5 | 😢 📺 **Ốm Trên Sóng Truyền Hình** | Xin nghỉ "bà ngoại nhập viện" để đi thi, chưa tự thú với Tuấn | Màn hình lớn ở sân khấu chiếu đúng thí sinh số 27. Thắng hỏi cả cánh gà: "Ơ, bà ngoại cậu Sơn hôm nay khỏe hẳn rồi nhỉ?" Sáng thứ 2, một thùng carton |
+| 6 | 😢 🗓️ **Hết Phép Cả Đời** | Các trường hợp còn lại (ở lại nhưng phép cạn, bị soi, đã ký cam kết hoặc đã nghỉ trong hai tuần cuối) | Bạn ngồi sau cánh gà cầm bộ đàm. Nếu vào chung kết: tin nhắn "Thí sinh số 27 vắng mặt". Nếu dừng ở bán kết: người khác hát bài bạn tập. Lịch trực Tết có tên bạn ở mọi ô |
 
 ---
 

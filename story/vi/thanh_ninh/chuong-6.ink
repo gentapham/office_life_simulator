@@ -6,22 +6,21 @@
 === thanh_ninh_2810_moc_4 ===
 # ngay:28 # gio:09:30 # noi:phong_giam_doc # bat_buoc
 _Mốc 4: 800.000 người theo dõi. Con số: {nguoi_theo_doi}._
-_Sáng nay fanpage công ty tự dưng đăng một video lạ: một người dựng phim tỏ tình với "anh quản lý", giọng run run. Video của {editor}, xuất nhầm. Đã có 50.000 lượt xem._
-giam_doc: {thanh_ninh}! Cái video này là sao? Gỡ đi! Không… khoan… lượt xem đang lên… Em nói xem anh nên làm gì?
+_2 giờ 10 đêm qua, fanpage công ty tự đăng một video lạ tên "Thai_final_v12": một người dựng phim tỏ tình với "anh quản lý". Video của {editor}, xuất nhầm. Nằm trên trang 6 phút, khoảng 2.000 lượt xem, rồi {it} gỡ._
+giam_doc: {thanh_ninh}! Cái video đêm qua là sao? Có người lưu lại rồi đấy. Em nói xem anh nên làm gì?
 * [😇 "Anh hỏi {editor} trước đi anh. Video của người ta mà."]
     giam_doc: … Ừ. Đúng. Gọi nó lên đây.
     ~ qh("editor", 10)
-    _{editor} lên, mặt trắng như tờ giấy. Sếp nói chuyện với cậu ấy 10 phút. Cửa đóng. Khi mở ra, {editor} gật đầu: "Để vậy đi anh."_
-    ~ follow(20000)
-* [🙇 "Dạ anh giữ đi anh! Lượt xem là vàng, anh có tầm nhìn mà!"]
-    ~ tn_ninh(3)
-    ~ follow(40000)
+    _{editor} lên, mặt trắng như tờ giấy. Sếp nói chuyện với cậu ấy 10 phút. Cửa đóng. Khi mở ra, sếp nhắn group: "Không ai đăng lại video đêm qua. Anh nói một lần."_
+* [🙇 "Dạ anh đăng lại đi anh! Lượt xem là vàng, anh có tầm nhìn mà!"]
+    giam_doc: *(nhìn bạn rất lâu)* Chuyện riêng của người ta, {thanh_ninh}.
+    ~ tn_ninh(-4)
     ~ qh("editor", -15)
-    _Video ở lại. Lượt xem tăng. {editor} không tới công ty buổi chiều._
-* [🗑️ Tự gỡ video bằng tài khoản admin sếp đưa.]
-    ~ follow(-5000)
+    _Câu đó tới tai {editor} trước giờ trưa. {editor} không tới công ty buổi chiều._
+* [🗑️ Lục hộp thư sếp, xóa hết các tin nhắn chuyển tiếp video.]
     ~ qh("editor", 5)
-    hong_hot: *(nhắn)* Ai gỡ video vậy?? Đang viral mà!
+    ~ tn_email(1)
+    hong_hot: *(nhắn)* Ai xóa tin nhắn trong hộp thư sếp vậy?? Tui đang cần làm bằng chứng!
     ~ qh("hong_hot", -5)
 - { nguoi_theo_doi < 800000:
     _Chiều đó, LL đăng thêm một bài: "Siêu Nhân Hồng xứng đáng một nơi tốt hơn"._
@@ -29,15 +28,15 @@ giam_doc: {thanh_ninh}! Cái video này là sao? Gỡ đi! Không… khoan… l�
 -> END
 
 // ------------------------------------------------------------
-=== thanh_ninh_2810_don_nghi_viec ===
-# ngay:28 # gio:17:45 # noi:ban_tro_ly
-_Hết giờ làm. Bàn trợ lý. Bạn mở một file trắng. Gõ: "ĐƠN XIN NGHỈ VIỆC". Rồi xóa. Rồi gõ lại._
+=== thanh_ninh_2710_don_nghi_viec ===
+# ngay:27 # gio:15:30 # noi:phong_hr
+_15 giờ 30. Lưu Lực vừa đi khỏi sảnh. Bạn cầm một lá đơn chưa ký lên phòng {hr}, hỏi thủ tục. {hr} rót trà, đọc, không hỏi gì, chỉ mỉm cười: "Em ký rồi thì đưa sếp nhé."_
 { tn_nhan_viec_ll:
     _Email từ LL vẫn nằm đó: "Trợ lý Hành chính, thử việc 2 tháng, bắt đầu 2/11". Một công việc thật. Không ai đòi bạn mang theo gì._
 }
 * {tn_nhan_viec_ll} [🔒 📝 Viết đơn đàng hoàng, in ra, ký tên, đặt lên bàn sếp kèm ly trà.]
     ~ tn_don_nghi_viec = true
-    _Sáng mai sếp sẽ thấy. Bạn viết đúng ba dòng, không một chữ "tâm"._
+    _Tối đó bạn viết lại, đúng ba dòng, không một chữ "tâm", ký tên. Sáng mai sếp sẽ thấy._
     ~ cang_thang(10)
     ~ tn_noi_that_2 = true
 * [🙇 Xóa file, viết bài chúc mừng Mốc 4 cho sếp thay vào.]
@@ -75,7 +74,7 @@ bac_bao_ve: *(qua bộ đàm của {chi_dai})* Cháu {thanh_ninh}. Anh {giam_doc
 // ------------------------------------------------------------
 === thanh_ninh_2910_email_1702 ===
 # ngay:29 # gio:17:02 # noi:ban_tro_ly # bat_buoc
-_17:02. Wifi vừa có lại. Hộp thư nháp tự gửi._
+_17:02. Wifi công ty vẫn sập, phải tới 22:47 mới có lại. Bạn vừa bắt wifi điện thoại "nghegichua" của {hong_hot} để kiểm tra hộp thư. Hộp thư nháp tự gửi._
 _Ô người nhận đã tự điền gợi ý: "G-Entertainment - Toàn công ty"._
 { tn_tu_choi_ll:
     _Tiêu đề: "Em xin phép từ chối LL ạ". Nội dung kể rõ bạn đã đi phỏng vấn ngày 25/10._
@@ -92,9 +91,9 @@ _Thanh tiến trình chạy. Bạn có 5 giây._ # hen_gio:5
         _Bạn bấm hụt. Chữ "Đã gửi" hiện lên. 21 người nhận._
         -> gui_roi
     }
-* [🔌 Rút dây mạng.]
+* [📵 Tắt wifi điện thoại ngay.]
     _Email kẹt lại ở 99%, giống video của {editor}._
-    _Năm phút sau, {it} xuất hiện ở cửa với một cuộn dây: "Ai rút cổng phòng sếp?"_
+    _Năm phút sau, {it} đi ngang với một cuộn dây, liếc màn hình của bạn: "Thư kẹt trong hộp thư đi kìa."_
     it: *(nhìn màn hình của bạn một giây)* … Ừ.
     { tn_hai_mang:
         ~ tn_bi_lo_hai_mang = true
@@ -159,12 +158,11 @@ cho: GRỪ! *(lao tới giành lại kho báu)*
     chua_te_deadline: *(mắt mở to)* Trời đất… ÉT O ÉT, nó đây rồi!
     ~ qh("chua_te_deadline", 20)
     ~ phat_hien(usb_cua_vu)
-    ~ follow(50000)
 - -> END
 
 // ------------------------------------------------------------
 === thanh_ninh_3010_hop_danh_gia ===
-# ngay:30 # gio:15:00 # noi:phong_hop_tang_2 # bat_buoc
+# ngay:30 # gio:14:00 # noi:phong_hop_tang_2 # bat_buoc
 _Họp đánh giá cuối tháng. Sếp đứng đầu bàn, cầm tờ giấy. Hợp đồng {idol_het_thoi} hết hạn mai, chưa ai nói gì. Ghế Phó Giám đốc vẫn trống._
 _Thanh "Sếp gọi ai" trên điện thoại bạn: {thanh_ninh} {tn_sep_goi_nhi}, {ran_doc} {tn_sep_goi_hieu}._
 { tn_sep_goi_nhi > tn_sep_goi_hieu:
@@ -176,7 +174,7 @@ _Thanh "Sếp gọi ai" trên điện thoại bạn: {thanh_ninh} {tn_sep_goi_nh
     _{ran_doc} cúi đầu cảm ơn. Bạn vỗ tay. Tay bạn vỗ mà không có tiếng._
     ~ tn_ninh(-5)
 }
-_Sau họp, sếp gọi bạn vào phòng. Cửa đóng. Sếp nhìn ra cửa sổ, phía tòa nhà kính xanh lá chuối ở xa._
+_Sau họp, sếp gọi bạn vào phòng. Cửa đóng. Sếp nhìn ra cửa sổ, phía tòa nhà kính xanh lá chuối bên kia đường._
 giam_doc: {thanh_ninh}. Mai Đại Nhạc Hội. Nếu không đạt… anh không biết nói với anh Genta thế nào.
 * [🙇 "Dạ anh nói chuẩn quá anh ơi, mình chắc chắn đạt mà anh!"]
     ~ tn_khen()
@@ -221,21 +219,38 @@ giam_doc: {thanh_ninh}, anh nhìn thế nào?
 - -> END
 
 // ------------------------------------------------------------
-=== thanh_ninh_3110_dem_hong ===
-# ngay:31 # gio:19:30 # noi:san_khau_dem_hong # bat_buoc
-_19:30. Màn mở đầu: phim ngắn "Người Hùng Không Tên", rồi video "16 năm" của {editor}. Khán đài kín người. Con số trên màn hình lớn: {nguoi_theo_doi}._
+=== thanh_ninh_3110_mc ===
+# ngay:31 # gio:19:20 # noi:canh_ga_dem_hong # dieu_kien:tn_noi_that_1 && tn_noi_that_2 && tn_hoc_nghe_chi_dai && tn_tu_choi_ll && tn_gian_chi_dai <= 20 && tn_khuyen_viet_thu_genta
+_19 giờ 20. Hậu trường. MC của đêm diễn gọi điện báo kẹt xe ở Đại lộ Kẹt Xe, chưa biết mấy giờ tới._
+_{chi_dai} cầm bộ đàm, nhìn quanh, rồi nhìn bạn._
+chi_dai: {thanh_ninh}. *(dúi micro vào tay bạn)* MC đêm nay là em.
+thanh_ninh: Chị… em chỉ biết khen thôi chị.
+chi_dai: Thì đêm nay đừng khen. Kể. Ai làm gì, kể đúng như vậy. Em biết hết mà.
+~ tn_lam_mc = true
+-> END
+
+// ------------------------------------------------------------
+=== thanh_ninh_3110_truoc_gio_dien ===
+# ngay:31 # gio:19:25 # noi:san_khau_dem_hong # bat_buoc
+{ tn_lam_mc:
+    _Năm phút nữa mở màn. Bạn đứng sau cánh gà, tay cầm micro, đọc lại tờ giấy ghi tên từng người và việc họ đã làm. Không có tính từ nào._
+    -> END
+}
+{ nguyen_theo_ll:
+    _Năm phút nữa mở màn. Phòng thay đồ của Siêu Nhân Hồng trống trơn. Bên kia đường, màn hình LED của LL đã sáng. {chi_dai} nói vào bộ đàm: "Show vẫn chạy."_
+}
 { tn_email_gui_nham:
     _Bạn đứng ở rìa khán đài, đội mũ lưỡi trai thấp. Không ai trong công ty nhìn về phía bạn. Hoặc ai cũng nhìn, mà giả vờ không nhìn._
 - else:
     { tn_hai_mang && tn_xanh_la_chuoi >= 80:
-        _Bạn đứng ở khán đài phía tây, nơi mọi người mặc áo xanh lá chuối. Đối diện, cả công ty đứng dưới tấm phông bảy màu._
+        _Bạn đứng ở rìa khán đài, phía có tấm băng rôn xanh lá chuối của LL. Đối diện, cả công ty đứng dưới tấm phông bảy màu._
     - else:
         _Bạn đứng cạnh sếp như mọi khi: cầm ô, cầm nước, cầm điện thoại. Nhưng đêm nay, sếp hỏi bạn có lạnh không._
     }
 }
-* [👏 Vỗ tay khi màn hình chiếu tên từng người trong công ty.]
-    ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
 * [📱 Mở ứng dụng ghi chú "SẾP GỌI AI", nhìn lần cuối.]
     _{thanh_ninh} {tn_sep_goi_nhi}. {ran_doc} {tn_sep_goi_hieu}. Bạn xóa ghi chú. Không ai thắng cuộc thi này cả._
+* [👏 Chạy một vòng hỏi từng người trong công ty có cần gì không.]
+    ~ tinh_than_cong_ty = tinh_than_cong_ty + 3
 * [😶 Nhìn lên sân khấu, chờ.]
-- -> thanh_ninh_3010_danh_gia
+- -> END

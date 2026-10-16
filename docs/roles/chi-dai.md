@@ -87,13 +87,14 @@ Hương là **người dựng sân khấu cho mọi khoảnh khắc lớn** củ
 
 ### Chương 1: "Chị Dẫn Đi Một Vòng" (1/10 – 7/10)
 - **1/10:** ngày ký hợp đồng. Hương dẫn nhân viên mới **{ran_doc}** đi chào từng người, và để ý thằng nhỏ bắt tay Siêu Nhân Hồng **mạnh một cách lạ lùng**. Hương ghi nhớ. Buổi chiều, Hương tổ chức mừng Ngày Người cao tuổi cho Bác Bình: bánh bông lan, một ấm trà mới. Bác Bình đỏ mặt: "Ừ… bày vẽ thế làm gì."
-- **2/10:** họp chiến dịch. Thắng giao Hương tổ chức **Đại Nhạc Hội Siêu Nhân** với ngân sách "tùy em, miễn hoành tráng". Thương lắc đầu ở cuối bàn. Hương hiểu: "tùy em" nghĩa là không có tiền.
+- **2/10 (9:30, phòng họp tầng 2):** họp chiến dịch. Thắng giao Hương tổ chức **Đại Nhạc Hội Siêu Nhân** với ngân sách "tùy em, miễn hoành tráng". Thương lắc đầu ở cuối bàn. Hương hiểu: "tùy em" nghĩa là không có tiền.
 - **4/10 (Ngày Động vật):** Hương là người tắm cho Tuất, mặc áo nơ cho Tuất. Tuất chỉ cho Hương làm vậy. Nguyên tới chọc, Tuất gầm gừ, Hương phải đứng giữa hai bên.
-- **6/10:** buổi chụp poster đầu tiên. Nguyên bỏ ngang đi giúp bà cụ. Hương có thể chạy theo kéo về (Nộ Khí +10), hoặc cho cả đoàn chụp luôn cảnh giúp bà cụ.
+- **6/10:** buổi chụp poster đầu tiên. Khoảng 10:30 Nguyên bỏ ngang, chạy ra Đường Hóng đẩy xe chè của Bà Bảy khỏi ổ gà. Hương có thể chạy theo kéo về (Nộ Khí +10), hoặc cho cả đoàn chụp luôn cảnh đó. Chiều, theo số liệu của Chương, đăng ảnh hậu trường lúc 20:00 để đẩy clip.
 - **7/10 (Mốc 1):** nếu không đạt, Thắng họp "truyền lửa" 3 tiếng. Hương là người duy nhất dám đứng dậy đi về đúng 17:30.
 
 ### Chương 2: "Lương Đâu?" (8/10 – 14/10)
-- **10/10 – 12/10:** lương về trễ. Duy nhắn Hương lúc 21:00: *"Dạ chị ơi, em còn 40 nghìn ạ."*. Sáng 12/10, Hương lên phòng giám đốc. Lựa chọn: Đập Bàn, nói chuyện với Thương trước, hay góp tiền túi cho Duy và giữ im lặng.
+- **9/10:** ra mắt MV "Hồng Hóa Việt Nam" lúc 20:00, Hương dựng tiệc ở sảnh từ 19:00.
+- **10/10 – 12/10:** lương về trễ, 10:00 ngày 12/10 mới về. 12:30 ở Cà Phê Sống Ảo, Hương thấy thẻ phụ của Long bị từ chối và thẻ kim cương của Duy. Duy nhắn Hương lúc 21:00: *"Dạ chị ơi, em còn 40 nghìn ạ."*. Sáng 12/10, Hương lên phòng giám đốc. Lựa chọn: Đập Bàn, nói chuyện với Thương trước, hay góp tiền túi cho Duy và giữ im lặng.
 - Hương phát hiện **Vũ đẩy hết việc của mình cho Duy**, từ xếp lịch quay tới cầm hắt sáng tới 22:00. Bảo kê hay để Duy tự học cách từ chối?
 - **13/10 (Ngày Doanh nhân):** Nhi đọc bài phát biểu khen Thắng 15 phút trong cuộc họp. Phút thứ 9, Nộ Khí của Hương đã +20. Hương có thể bỏ ra ngoài, cắt ngang, hoặc vỗ tay mỉa mai.
 - **14/10 (Mốc 2):** Hương đi khảo sát Sân khấu Đại Nhạc Hội Siêu Nhân. Bãi đất trống, một cái cột điện, và tiếng ếch.
@@ -101,26 +102,26 @@ Hương là **người dựng sân khấu cho mọi khoảnh khắc lớn** củ
 ### Chương 3: "Pantry Không Đèn" (15/10 – 16/10)
 - **15/10 (mất điện):** cả công ty ngồi pantry. Thương kéo Hương ra góc, thì thầm về **điều khoản trang 47, chữ cỡ 6**: thất bại là hoàn 10 tỷ. Hương im lặng một phút, rồi nói: *"Vậy thì không được thất bại."*. Hương không biết rằng ở góc tối, có người đang nghe.
 - Mất điện, Hương mở **Bộ Đàm** và điều cả công ty đi lấy đá, nến, quạt tay. Lần đầu tiên trong năm, mọi người làm việc nhóm mà không cần họp.
-- **16/10:** gameshow ở Đài Tivi Hóng, Ven Đô. Hương điều phối 3 xe đạo cụ, 1 nghệ sĩ và… Tuất đã nằm sẵn trong thùng xe từ sáng. Hai lựa chọn: đưa Tuất về (trễ giờ ghi hình 30 phút), hoặc giữ Tuất ở cánh gà và cầu trời.
+- **16/10:** gameshow ở Đài Tivi Hóng, quay 14:00, phát 20:00 (cả công ty xem ở buffet sảnh 19:30). Chương ngồi cánh gà đọc phản ứng khán giả. Hương điều phối 3 xe đạo cụ, 1 nghệ sĩ và… Tuất đã nằm sẵn trong thùng xe từ sáng. Hai lựa chọn: đưa Tuất về (trễ giờ ghi hình 30 phút), hoặc giữ Tuất ở cánh gà và cầu trời.
 
 ### Chương 4: "Vũng Tàu Thất Thủ" (17/10 – 20/10)
 - **17/10:** team building Vũng Tàu. Tuấn lo hành chính, Hương lo mọi thứ còn lại. Trò chơi tập thể: Hương cầm còi, cả công ty sợ còi hơn sợ sếp.
-- Tối, Hương thấy Tuấn để quên tập hồ sơ ở bàn nhậu. Bên trong là **danh sách cắt giảm**, có tên Duy và Sơn. Lựa chọn: đọc hết, xé, trả lại cho Tuấn và đòi nói chuyện, hay mang đi hỏi thẳng Thắng.
-- Đêm lửa trại, tới lượt Hương trò "nói thật". Câu hỏi: *"Vụ tô ốc năm đó có thật không?"*. Hương có thể kể thật, kể giảm, hay để Bác Bình trả lời thay: "Thật. Bác ở đó."
+- 18:30 ở quán hải sản Sóng Vỗ, Huyền hứa "ca sĩ nổi tiếng nhất nước", Thắng hứa tăng lương. Hương thấy Tuấn để quên tập hồ sơ ở bàn nhậu. Bên trong là **danh sách cắt giảm**, có tên Duy và Sơn. Lựa chọn: đọc hết, xé, trả lại cho Tuấn và đòi nói chuyện, hay mang đi hỏi thẳng Thắng.
+- 20:00 lửa trại. Hương có thể bảo Sơn "hát một bài coi" và là người vỗ tay đầu tiên. Tới lượt Hương trò "nói thật". Câu hỏi: *"Vụ tô ốc năm đó có thật không?"*. Hương có thể kể thật, kể giảm, hay để Bác Bình trả lời thay: "Thật. Bác ở đó."
 - **18/10:** về tới thành phố, ai cũng giận ai. Hương chỉ giận Tuấn.
-- **20/10 (sinh nhật công ty + Ngày Phụ nữ):** Hương tổ chức liên hoan lớn. Các anh trong công ty tặng hoa chị em, ai tặng ai cũng thành drama. Cuối tiệc, Bác Bình đưa Hương **một lá thư tay ký "G"**, nhờ Hương quyết có nên đọc trước toàn công ty không.
+- **20/10 (sinh nhật công ty + Ngày Phụ nữ):** Hương tổ chức liên hoan lớn. Các anh trong công ty tặng hoa chị em, ai tặng ai cũng thành drama. 17:00 Bác Bình đưa Hương xem **lá thư tay ký "G"**, hỏi có nên đọc trước toàn công ty không. 18:30 ở Quán Ốc Đêm, nếu Hương khuyên đọc, bác đọc to. 21:00 tăng hai ở Karaoke Chú Sáu.
 
 ### Chương 5: "Hội Nghị Hòa Giải" (21/10 – 27/10)
-- **22/10 (kiểm tra thuế):** đoàn kiểm tra tới lúc 8:00. Hương đứng chắn ở cầu thang tầng 2, mời đoàn uống trà, cho Thương đủ 15 phút sắp xếp hóa đơn. Đồng thời phải che cho Huyền (hợp đồng ma) mà không biết mình đang che.
-- **23/10:** sinh nhật Nguyên kiêm livestream. Bánh kem hồng 3 tầng do Quỳnh thiết kế. Nhiệm vụ: **giữ Tuất cách bánh 5 mét**. Xem Mẫu 4.
-- **24/10 (Ngày Liên Hợp Quốc):** Hương tổ chức **"hội nghị hòa giải"** cho các phe trong công ty: Nhật với Long, Quỳnh với Oánh, Huyền với Thương, Tuấn với Sơn. Và Hương với Nhi. Hương là chủ tọa, nhưng chính Hương cũng phải ngồi vào bàn.
-- **27/10:** Lưu Lực **đích thân tới G-Entertainment** đưa hợp đồng gấp ba cho Nguyên. Vest trắng, tóc vuốt keo. Lưu Lực thấy Hương ở sảnh và **đánh rơi cặp hồ sơ**. Xem Mẫu 6.
+- **22/10 (kiểm tra thuế, 9:00 – 16:00, phòng kế toán):** đoàn tới cổng lúc 8:50. Hương đứng chắn ở cầu thang tầng 2, mời đoàn uống trà, cho Thương đủ 15 phút sắp xếp hóa đơn. Đồng thời phải che cho Huyền (hợp đồng ma) mà không biết mình đang che.
+- **23/10:** sinh nhật Nguyên kiêm livestream 20:00 ở studio tầng 2. Bánh kem hồng 3 tầng do Quỳnh thiết kế. Nhiệm vụ: **giữ Tuất cách bánh 5 mét**. Dù làm gì, bánh vẫn đổ (Tuất, hoặc Phát vấp rồi đổ cho Tuất). Xem Mẫu 4.
+- **24/10 (Ngày Liên Hợp Quốc, 14:00, phòng họp tầng 2):** Hương tổ chức **"hội nghị hòa giải"** cho các phe trong công ty: Nhật với Long, Quỳnh với Oánh, Huyền với Thương, Tuấn với Sơn. Và Hương với Nhi. Hương là chủ tọa, nhưng chính Hương cũng phải ngồi vào bàn.
+- **27/10:** 11:00 Huyền báo cuộc gọi Sữa Chua Hồng Hào, Hương có thể gọi lại xác nhận. 15:00 Lưu Lực **đích thân tới G-Entertainment** đưa hợp đồng gấp ba cho Nguyên. Vest trắng, tóc vuốt keo. Lưu Lực thấy Hương ở sảnh và **đánh rơi cặp hồ sơ**. Xem Mẫu 6.
 
 ### Chương 6: "Đại Nhạc Hội Siêu Nhân Do Chị Đứng" (28/10 – 31/10)
 - **28/10 (Mốc 4):** dựng sân khấu. Thiếu 2 giàn đèn vì ngân sách. Hương phải chọn: đòi thêm tiền, mượn đồ của người quen cũ thời "chị đại", hay cắt bớt.
 - **29/10 (wifi sập):** cả công ty tê liệt, trừ team sự kiện. **Bộ đàm không cần wifi.** Hương điều phối cả công ty bằng bộ đàm và giọng nói.
-- **30/10:** họp đánh giá. Tuấn đọc danh sách cắt giảm. Hương đứng lên trước khi Tuấn đọc tới cái tên thứ hai.
-- **31/10 (Đại Nhạc Hội Siêu Nhân):** Hương đứng sau cánh gà với bộ đàm, giữ cầu dao, giữ Tuất, giữ Nguyên khỏi paparazzi, và giữ cả công ty khỏi tan.
+- **30/10 (14:00, phòng họp tầng 2):** họp đánh giá. Tuấn đọc danh sách cắt giảm. Hương đứng lên trước khi Tuấn đọc tới cái tên thứ hai.
+- **31/10 (Đại Nhạc Hội Siêu Nhân):** 10:00 Hương cho Sơn đi thi chung kết (20:00, thí sinh số 27, chiếu trên màn hình lớn ở sân khấu). 19:00 ở cánh gà, giữ cầu dao, đuổi paparazzi, và chốt với Nguyên cách đánh đèn nếu cậu muốn tháo mũ. Tiến Độ của Hương được ghi vào `chung_tien_do_dem_hong` cho đêm diễn chung.
 
 ---
 
@@ -206,16 +207,16 @@ Hương là **người dựng sân khấu cho mọi khoảnh khắc lớn** củ
 
 ## 8. Sáu kết thúc
 
-3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢).
+3 kết thúc có hậu (😄) và 3 kết thúc buồn (😢). Cảnh `chi_dai_3010_danh_gia` chạy sau Đại Nhạc Hội Siêu Nhân (23:00 ngày 31/10), đọc `ket_thuc_su_nghiep` và `chung_cong_ty_song`. Thứ tự xét: bí mật, rồi có hậu, rồi buồn. Ba kết thúc có hậu đều đòi chưa nổ Nộ Khí trước máy quay.
 
 | # | Tên | Điều kiện chính | Cảnh cuối |
 |---|---|---|---|
-| 1 | 😄 🦁 **Nữ Hoàng Sự Kiện** | Tiến Độ Đại Nhạc Hội Siêu Nhân ≥ 90%, Uy Lực ≥ 80, Siêu Nhân Hồng đạt 1 triệu người theo dõi | Đại Nhạc Hội Siêu Nhân hoàn hảo. Hôm sau, Thắng mời bạn làm **Phó Giám đốc**. Bạn từ chối: "Em không ngồi ghế đó. Sếp tăng lương 20% cho cả team sự kiện đi." Thắng gật, không dám cãi. Bạn bước ra, cả team đứng chờ ở hành lang, cầm bộ đàm, cùng nói: "Rõ, chị Đại" |
-| 2 | 😄 🛡️ **Không Ai Bị Gạch Tên** | Đàn Em ≥ 5, đã đối chất Tuấn về danh sách cắt giảm, không ai trong công ty bị đuổi ngày 30/10 | Tuấn đặt tờ danh sách cắt giảm lên bàn bạn: "Anh không đọc nữa." Bạn xé đôi. Tối đó, Nhà số 45 chật kín: Duy, Thương, Sơn, Bác Bình, cả Tuấn. Ai cũng mang một món. Tuất nằm dưới gầm bàn ăn sạch xương gà |
-| 3 | 😄 🔒 **Kết thúc bí mật: Tô Ốc Thứ Hai** | Đã nhận ra Lưu Lực (Mẫu 6, lựa chọn 3), ép LL rút lời mời với Nguyên, Tiến Độ ≥ 70% | Đại Nhạc Hội Siêu Nhân thành công. Hôm sau, bạn đặt bàn ở Quán Ốc Đêm, mời Lưu Lực tới "nói chuyện làm ăn". Lưu Lực tới, ngồi xa bạn 2 mét, ký **cam kết không câu người của G-Entertainment trong 10 năm**. Bạn gọi một tô ốc len, đẩy về phía hắn: "Ăn đi. Lần này để ăn thôi" |
-| 4 | 😢 🔥 **Clip Chị Đại** | Nộ Khí đạt 100 khi đang có máy quay hoặc livestream | Clip bạn lật bàn trên sóng lan khắp Tóp-tóp với 5 triệu lượt xem, nhiều hơn mọi video của Siêu Nhân Hồng cộng lại. Công ty không chịu nổi áp lực, Tuấn mời bạn đi "uống trà". Lần đầu tiên trong đời, bạn ngồi nghe mà không nói được gì |
-| 5 | 😢 🎭 **Show Toang** | Tiến Độ Đại Nhạc Hội Siêu Nhân < 50% ngày 31/10 | 20:00, sân khấu Đại Nhạc Hội Siêu Nhân. Giàn đèn chập, loa rè, MC lạc, Tuất lên sân khấu trước Nguyên. Bạn đứng sau cánh gà, gào vào bộ đàm, mà bên kia chỉ có tiếng rè. Đêm đó bạn về Nhà số 45, đấm bao cát tới khi đứt dây |
-| 6 | 😢 🥀 **Một Mình Gánh Team** | Đại Nhạc Hội Siêu Nhân thành công nhưng Stress của bạn đầy ≥ 3 lần trong tháng, và quan hệ với {ke_toan} < 30 | Cả công ty ăn mừng ở Karaoke Hát Cho Nhau Nghe. Không ai nhớ rủ bạn, vì ai cũng nghĩ "chị Hương chắc bận". Bạn ngồi một mình trên sân thượng công ty, tháo bộ đàm, nghe tiếng hát vọng lên từ bên kia đường. Bác Bình mang lên một ly trà đá, đặt cạnh bạn: "Uống đi. Bác thấy hết rồi" |
+| 1 | 😄 🔒 **Kết thúc bí mật: Tô Ốc Thứ Hai** | Đã nhận ra Lưu Lực (Mẫu 6, lựa chọn 3, cần tấm ảnh cũ và hỏi Bác Bình), ép LL rút lời mời với Nguyên, Tiến Độ ≥ 70% | Hôm sau, bạn đặt bàn ở Quán Ốc Đêm, mời Lưu Lực tới. Hắn ký **cam kết không câu người của G-Entertainment trong 10 năm**. Bạn đẩy tô ốc len về phía hắn: "Ăn đi. Lần này để ăn thôi" |
+| 2 | 😄 🦁 **Nữ Hoàng Sự Kiện** | Tiến Độ ≥ 90%, Uy Lực ≥ 80, kết thúc sự nghiệp của Nguyên là Siêu Sao Hạng A | Thắng mời bạn làm **Phó Giám đốc**. Bạn từ chối, đòi tăng lương 20% cho cả team sự kiện. Cả team đứng chờ ở hành lang, cầm bộ đàm: "Rõ, chị Đại" |
+| 3 | 😄 🛡️ **Không Ai Bị Gạch Tên** | Không ai bị đuổi ngày 30/10, công ty sống sau đêm diễn, Đàn Em ≥ 3, Tiến Độ ≥ 50% | Tuấn đặt tờ danh sách cắt giảm lên bàn bạn: "Anh không đọc nữa." Bạn xé đôi. Tối đó, Nhà số 45 chật kín người |
+| 4 | 😢 🔥 **Clip Chị Đại** | Nộ Khí đạt 100 khi đang có máy quay (gameshow 16/10, livestream 23/10, cánh gà 31/10) | Clip bạn lật bàn lan khắp Tóp-tóp, 5 triệu lượt xem. Tuấn mời bạn đi "uống trà" |
+| 5 | 😢 🎭 **Show Toang** | Tiến Độ < 50% | Giàn đèn chập, loa rè, Tuất lên sân khấu trước Nguyên. Đêm đó bạn đấm bao cát tới khi đứt dây |
+| 6 | 😢 🥀 **Một Mình Gánh Team** | Các trường hợp còn lại | Cả công ty kéo qua Karaoke Chú Sáu, không ai nhớ rủ bạn. Bạn ngồi một mình trên sân thượng, Bác Bình mang lên một ly trà đá. Mở đầu đổi theo việc công ty có sống hay không |
 
 ---
 

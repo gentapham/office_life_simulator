@@ -177,8 +177,8 @@ truong_phong: Phông được đấy. Nhưng em cho cái logo công ty to lên t
 
 // ------------------------------------------------------------
 === designer_1610_len_song ===
-# ngay:16 # gio:15:00 # noi:dai_tivi_hong # bat_buoc
-_15 giờ. Lên sóng trực tiếp. Màn hình lớn sau lưng MC chiếu slide giới thiệu Siêu Nhân Hồng._
+# ngay:16 # gio:14:00 # noi:dai_tivi_hong # bat_buoc
+_14 giờ. Bấm máy. Chương trình quay như trực tiếp, 20 giờ tối nay phát sóng nguyên bản, đài không cắt. Màn hình lớn sau lưng MC chiếu slide giới thiệu Siêu Nhân Hồng._
 { ds_bat_duoc_ke_doi_file:
     -> suon_se
 - else:
@@ -204,7 +204,7 @@ _Khán giả trường quay cười ồ. Bạn đứng ở bàn điều khiển,
     _Màn hình đen. MC lấp liếm bằng một tràng cười truyền hình chuyên nghiệp._
     ~ qh("it", 5)
 * [⏱️ (Không chọn kịp)]
-    _"Siêu Nhân Hồn" lên sóng trọn 8 giây. Tối đó, nó thành meme._
+    _"Siêu Nhân Hồn" nằm trọn 8 giây trong bản phát sóng. Tối đó, 20 giờ, nó thành meme._
     ~ follow(-20000)
     ~ scandal()
     ~ cang_thang(15)

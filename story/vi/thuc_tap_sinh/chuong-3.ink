@@ -62,7 +62,7 @@ _Một file Excel 14 tab. Tab nào cũng tên "Lich_moi". Màu đỏ, vàng, xan
     ~ duy_lua_doi(3)
 - else:
     hong_hot: Trượt mốc 2… {nguoi_theo_doi}.
-    _Siêu Nhân Hồng không nói gì. Chiều đó Nguyên bỏ đi giúp người tới tối. Bạn được giao "xin lỗi đoàn quay" vì Nguyên đi mất._
+    _Siêu Nhân Hồng không nói gì. Chiều đó {sieu_nhan_hong} bỏ đi giúp người tới tối. Bạn được giao "xin lỗi đoàn quay" vì {sieu_nhan_hong} đi mất._
     ~ duy_day_viec(1)
 }
 -> END
@@ -119,8 +119,8 @@ _Trong balo bạn có 5 cục sạc dự phòng. Vỏ nhôm. Sạc nhanh. Loại
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_1510_trong_bong_toi ===
-# ngay:15 # gio:19:00 # noi:pantry # bat_buoc
-_Pantry tối om, chỉ có ánh đèn điện thoại. Ở góc kia, {sieu_nhan_hong} không đội mũ, ngồi cạnh {chua_te_deadline}, nói chuyện nhỏ nhỏ. Không ai làm phiền họ._
+# ngay:15 # gio:20:10 # noi:pantry # bat_buoc
+_20 giờ 10. Pantry tối om. Lúc nãy {idol_het_thoi} vừa hát khe khẽ "Công Viên" trong bóng tối. chỉ có ánh đèn điện thoại. Ở góc kia, {sieu_nhan_hong} không đội mũ, ngồi cạnh {chua_te_deadline}, nói chuyện nhỏ nhỏ. Không ai làm phiền họ._
 _{chi_dai} ngồi xuống cạnh bạn, đưa cho bạn nửa ổ bánh mì._
 chi_dai: Ăn đi. Mà nè, chị hỏi thiệt. Hồi trước em làm gì? Thằng nào đi thực tập mà mang 5 cục sạc xịn, cầm ly cà phê như cầm ly rượu vang vậy?
 ~ an(25)
@@ -145,19 +145,19 @@ chi_dai: Ăn đi. Mà nè, chị hỏi thiệt. Hồi trước em làm gì? Th�
 
 // ------------------------------------------------------------
 === thuc_tap_sinh_1610_gameshow ===
-# ngay:16 # gio:19:30 # noi:dai_tivi_hong # bat_buoc
-_Gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng. Bạn ngồi hàng khán giả, giơ bảng cổ vũ tự làm: "HỒNG LÀ THÁI ĐỘ – THỰC TẬP SINH LÀ ĐỘNG LỰC"._
+# ngay:16 # gio:15:20 # noi:dai_tivi_hong # bat_buoc
+_Ghi hình gameshow "Hồng Hay Không Hồng" ở Đài Tivi Hóng, 20 giờ tối nay mới phát sóng. Bạn ngồi hàng khán giả, giơ bảng cổ vũ tự làm: "HỒNG LÀ THÁI ĐỘ – THỰC TẬP SINH LÀ ĐỘNG LỰC"._
 _Phần "Hit Một Thời". {sieu_nhan_hong} hát "Công Viên"… và hát sai: "thích ăn… KHOAI CHIÊN!". Cả trường quay im phăng phắc._
 _Bạn thấy ở cánh gà, {idol_het_thoi} đứng chết trân. Bạn ngồi ngay hàng đầu, gần cánh gà nhất._
 * [📣 Đứng dậy hát to câu đúng: "…thích ăn CHUỐI CHIÊN!"]
     _Bạn hát lạc tông. Nhưng to. Khán giả hàng đầu hát theo. Rồi hàng hai. Rồi cả trường quay._
     _Ở cánh gà, {idol_het_thoi} nghe thấy, bước ra, cầm micro hát bè. Hai giọng hòa vào nhau, cộng thêm giọng lạc tông của bạn._
-    ~ follow(50000)
+    ~ follow(20000)
     ~ qh("idol_het_thoi", 10)
     ~ duy_lua_doi(10)
-* [🪧 Lật bảng cổ vũ, viết vội: "CHUỐI CHIÊN!" giơ lên cho Nguyên thấy.]
-    _Nguyên thấy. Nguyên hát lại câu cuối, sửa thành "chuối chiên", rồi tạo dáng chỉ thẳng vào bạn. Camera quay theo._
-    ~ follow(20000)
+* [🪧 Lật bảng cổ vũ, viết vội: "CHUỐI CHIÊN!" giơ lên cho {sieu_nhan_hong} thấy.]
+    _{sieu_nhan_hong} thấy. {sieu_nhan_hong} hát lại câu cuối, sửa thành "chuối chiên", rồi tạo dáng chỉ thẳng vào bạn. Camera quay theo._
+    ~ follow(10000)
     ~ qh("sieu_nhan_hong", 8)
     ~ duy_kn(3)
 * [😶 Ngồi im, cầm bảng.]
@@ -169,7 +169,7 @@ _Bạn thấy ở cánh gà, {idol_het_thoi} đứng chết trân. Bạn ngồi 
 === thuc_tap_sinh_1610_buffet ===
 # ngay:16 # gio:21:40 # noi:tang_1
 _Ngày Lương thực Thế giới. Liên hoan buffet ở công ty. Bạn được giao dọn dẹp. Phần thưởng: mang đồ ăn thừa về._
-chi_dai: {thuc_tap_sinh}, dọn xong thì về. Mai 6 giờ lên xe Vũng Tàu. Đồ thừa em gói về hết đi, chị cho phép.
+chi_dai: {thuc_tap_sinh}, dọn xong thì về. Mai 6 giờ 30 xe chạy đi Vũng Tàu. Đồ thừa em gói về hết đi, chị cho phép.
 _Bàn buffet còn: nửa khay gà rán, 2 hộp cơm chiên, một đĩa bánh bông lan, và một cái bánh kem hồng gần nguyên._
 * [🍗 Gói hết về cho 3 bạn cùng phòng.]
     _11 giờ đêm, phòng 12 dãy B bừng sáng. Anh thợ hồ ôm hộp gà, bạn sinh viên ôm bánh kem, anh xe ôm khóc vì cơm chiên ngon. Tháp mì gói được nghỉ một đêm._
