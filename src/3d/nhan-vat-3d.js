@@ -758,8 +758,8 @@ export function taoDoiTay(ma) {
       if (k > 0.01) {
         for (const [tay, ben, lech] of [[trai, -1, 0], [phai, 1, 1.9]]) {
           const nhan = Math.max(0, Math.sin(t * 15 + lech)) * 0.012 + Math.max(0, Math.sin(t * 23 + lech * 2)) * 0.006;
-          tay.position.set(ben * (0.2 - 0.07 * k), -0.26 - 0.05 * k + nhan * k, -0.16 - 0.1 * k);
-          tay.rotation.set(0.08 - 0.3 * k, -0.12 * ben * (1 - k) + 0.08 * ben * k, 0);
+          tay.position.set(ben * (0.2 - 0.06 * k), -0.26 + 0.06 * k + nhan * k, -0.16 - 0.16 * k);
+          tay.rotation.set(0.08 - 0.42 * k, -0.12 * ben * (1 - k) + 0.1 * ben * k, 0);
         }
         return;
       } else { trai.rotation.set(0.08, 0.12, 0); phai.rotation.set(0.08, -0.12, 0); trai.position.x = -0.2; phai.position.x = 0.2; }

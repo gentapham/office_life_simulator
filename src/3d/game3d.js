@@ -390,7 +390,7 @@ export class Game3D {
     // ghế trống gần đó: ngồi xuống
     if (this.vai !== "cho") for (const gh of this.doiSong.ghe) {
       if (gh.tang !== this.tang || Math.abs(gh.x - this.p.x) > 1.4 || Math.abs(gh.z - this.p.z) > 1.4) continue;
-      const d = Math.hypot(gh.x - this.p.x, gh.z - this.p.z) + 0.15; // nhường ưu tiên cho người / đồ vật ở cùng khoảng cách
+      const d = Math.hypot(gh.x - this.p.x, gh.z - this.p.z) + 0.05; // cùng khoảng cách thì nhường người / đồ vật
       if (d < 1.35 && d < dMin && this.gheTrongChoNguoiChoi(gh)) { dMin = d; gan = { loai: "ghe", ghe: gh, nhan: gh.chu === this.vai ? "Ngồi vào bàn của mình" : "Ngồi xuống" }; }
     }
     const dv = this.dongVat.timGan(this.p, this.tang);

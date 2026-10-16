@@ -263,7 +263,7 @@ export class GiaoThong {
     // mật độ xe theo giờ: khuya thưa, mưa to bớt xe máy; xe buýt nghỉ đêm
     const h = mt.gio;
     const matDo = trongGio(h, [[6, 22]]) ? 1 : trongGio(h, [[22, 23]]) ? 0.7 : trongGio(h, [[5, 6]]) ? 0.55 : 0.28;
-    this._kt -= dt; const kiemTra = this._kt <= 0; if (kiemTra) this._kt = 0.5;
+    const bayGio = performance.now(), kiemTra = bayGio - this._kt > 400; if (kiemTra) this._kt = bayGio; // xét ẩn/hiện mỗi 0,4 giây thật
     if (kiemTra) for (const x of this.xe) {
       const muon = x.loai === "buyt" ? trongGio(h, [[5, 22]]) : x.hat < matDo * (x.loai === "xeMay" && mt.muaTo ? 0.75 : 1);
       if (muon !== x.bat && Math.abs(x.g.position.x - nguoiChoi.x) + Math.abs(x.g.position.z - nguoiChoi.z) > 70) x.bat = muon;
@@ -331,8 +331,9 @@ export class GiaoThong {
     const f = mt.denXe;
     this.meChum.visible = this.meSau.visible = this.diemXe.visible = f > 0.01;
     if (f <= 0.01) return;
-    this.vlChum.uniforms.doSang.value = 0.55 * f + mt.uot * 0.15 * f; this.vlDoSau.uniforms.doSang.value = 0.5 * f;
-    this.diemXe.material.uniforms.doSang.value = 0.5 + 0.5 * f;
+    // ban ngày (mưa, trời u) chỉ thấy bóng đèn sáng, chùm pha trên đường mờ hẳn
+    this.vlChum.uniforms.doSang.value = (0.5 * mt.toi + 0.06) * (1 + mt.uot * 0.3); this.vlDoSau.uniforms.doSang.value = 0.45 * mt.toi + 0.05;
+    this.diemXe.material.uniforms.doSang.value = 0.35 + 0.65 * mt.toi;
     const C = this.chum, S = this.sau;
     const pa = this.diemXe.geometry.attributes.position.array, ka = this.diemXe.geometry.attributes.kc.array, ma = this.diemXe.geometry.attributes.mauDinh.array;
     let q = 0, qs = 0, n = 0;

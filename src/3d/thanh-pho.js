@@ -324,7 +324,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     DEN.push({ x, y: 6.74, z: z + huong * 2.1, mau: 0xffe0b0, r: 6.8 });
   };
   // đèn gắn cần vươn ra từ cột điện bê tông (kiểu đèn cao áp cũ ở Sài Gòn): dx, dz hướng ra lòng đường
-  const denTrenCot = (x, z, dx, dz, mau = 0xffb866, dai = 1.9, cao = 7.4) => {
+  const denTrenCot = (x, z, dx, dz, mau = 0xffc890, dai = 1.9, cao = 7.4) => {
     const l = Math.hypot(dx, dz); dx /= l; dz /= l;
     const can2 = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.08, dai), vl(0x6d7175)); can2.position.set(x + dx * dai / 2, cao, z + dz * dai / 2); can2.rotation.y = Math.atan2(dx, dz); can2.rotation.x = -0.12; nhom.add(can2);
     const hx = x + dx * (dai + 0.1), hz = z + dz * (dai + 0.1);
@@ -409,7 +409,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     vatCanDiBo.push({ x, z, r: 0.85 }, { x, z: z - 0.8, r: 0.35 }); diemMua.push({ x, z });
   };
   // chừa chỗ cho quán cà phê cóc, xe ôm, xe đẩy (vẫn rút số ngẫu nhiên như cũ để bố cục không đổi)
-  const BO_XE = [[-81, -75.6, 40, 46], [-28, -25, 40, 46], [32.6, 38, 28, 33], [-98, -95, 40, 46]];
+  const BO_XE = [[-81, -75.6, 40, 46], [-28, -25, 40, 46], [-98, -95, 40, 46]];
   const xeDung = (x, z, xoay) => { const m = taoXeMay(chon(MAU_XE), rnd() < 0.5 ? "ga" : "so"); if (BO_XE.some(([a, b, c, d]) => x > a && x < b && z > c && z < d)) return; m.position.set(x, 0, z); m.rotation.y = xoay; nhom.add(m); if (z < 37) can(x - 0.85, x + 0.85, z - 0.4, z + 0.4); };
   // xe máy dựng trước nhà (dãy nam)
   for (let x = -146; x < 140; x += 3.4) {

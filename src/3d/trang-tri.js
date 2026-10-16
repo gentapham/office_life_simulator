@@ -146,11 +146,8 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   // ================= ĐỒ DÙNG TRÊN BÀN LÀM VIỆC =================
   for (let hang = 0; hang < 2; hang++) for (let cot = 0; cot < 5; cot++) {
     const x = -18 + cot * 3, z = 1.5 + hang * 6, k = hang * 5 + cot;
-    tru(0.045, 0.1, [0xf6f6f2, 0xe8702a, 0x2a5aa8, 0xf26fa6][k % 4], x - 0.6, 0.78, z + 0.1);   // ly
-    K(0.24, 0.04 + (k % 3) * 0.03, 0.32, 0xf6f6f2, x + 0.55, 0.78, z + 0.05);                   // xấp giấy
-    if (k % 2) { const kh = K(0.16, 0.12, 0.02, 0x6b4a2f, x - 0.35, 0.78, z - 0.3); kh.rotation.x = -0.3; } // khung ảnh
-    tru(0.14, 0.32, 0x8a8d92, x + 0.75, 0, z + 0.35);                                          // thùng rác dưới bàn
-    if (k % 3 === 1) K(0.18, 0.01, 0.18, 0xffcf3a, x + 0.5, 0.78, z + 0.32);                     // giấy note vàng
+    tru(0.14, 0.32, [0x8a8d92, 0x2a5aa8, 0x3a3d44][k % 3], x + 0.75, 0, z + 0.35);             // thùng rác dưới bàn
+    // đồ trên bàn theo tính cách từng người: chi-tiet-cong-ty.js
   }
   // bảng nhân viên của tháng, đồng hồ và lịch tường khu làm việc
   dung(1.4, 1.0, new THREE.MeshLambertMaterial({ map: tranh("nvthang", 280, 200, (g, w, h) => { g.fillStyle = "#fff7e0"; g.fillRect(0, 0, w, h); g.strokeStyle = "#d8b45a"; g.lineWidth = 10; g.strokeRect(5, 5, w - 10, h - 10); chuGiua(g, "NHÂN VIÊN CỦA THÁNG", w, 36, 22, "#7a1424"); g.fillStyle = "#cfd8e0"; g.fillRect(w / 2 - 40, 58, 80, 90); chuGiua(g, "?", w, 104, 56, "#7a8a9a"); chuGiua(g, "(đang chờ sếp chọn)", w, 172, 16, "#555", 500); }) }), -19.84, 1.7, -1.5, Math.PI / 2);
@@ -275,6 +272,5 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   bienPhong("208", "PHÒNG SẢN XUẤT", "Deadline là hôm qua", 14, Y2, 1.86, Math.PI);
 
   // ================= SÂN THƯỢNG =================
-  tru(0.55, 1.5, 0xd5d9dd, -16, y3 + 0.4, 10); V(1.4, 0.4, 1.4, 0x8a8d92, -16, y3, 10, 2);  // bồn nước inox
   for (let k = 0; k < 3; k++) { const p = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.05, 1.0), vl(0x1f3a6a)); p.position.set(10 + k * 1.8, y3 + 0.7, 1.5); p.rotation.x = -0.35; add(p); K(0.06, 0.6, 0.06, 0x8a8d92, 10 + k * 1.8, y3, 1.8, 2); } // pin mặt trời
 }

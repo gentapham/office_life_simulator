@@ -15,7 +15,7 @@ const kep = (x, a, b) => Math.max(a, Math.min(b, x));
 const PI = Math.PI;
 
 // ---------- Bong bóng thoại ----------
-const BB_W = 640, BB_H = 256, BB_RONG = 2.4;
+const BB_W = 640, BB_H = 256, BB_RONG = 2.0;
 class BongBong {
   constructor(scene) {
     this.cv = document.createElement("canvas"); this.cv.width = BB_W; this.cv.height = BB_H;
@@ -59,7 +59,7 @@ class BongBong {
     this.sp.position.set(q.x, q.y + n.nv.chieuCao + 0.66, q.z);
     // giữ cỡ chữ gần như không đổi trên màn hình: xa thì phóng to, gần thì thu nhỏ
     const kc = this.sp.position.distanceTo(g.camera.position);
-    const k = kep(kc / 3.6, 0.55, 1.45) * (0.86 + 0.14 * vao);
+    const k = kep(kc / 3.6, 0.5, 2.6) * (0.86 + 0.14 * vao);
     this.sp.scale.set(BB_RONG * k, BB_RONG * BB_H / BB_W * k, 1);
     this.sp.material.opacity = Math.min(vao, ra);
   }
