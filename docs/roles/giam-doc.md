@@ -54,7 +54,7 @@ Mười sáu năm sau, Thắng là Giám đốc điều hành, có biệt thự 
 | ✍️ **Ký Duyệt** | Duyệt chi cho chiến dịch. Duyệt càng nhiều, Độ Nổi Tiếng càng tăng | Ngân Sách tụt, Thương mời lên "nói chuyện" |
 | 🏌️ **Ngoại Giao Sân Cỏ** | Rủ đối tác đi golf để chốt tài trợ | Tốn nguyên một buổi chiều. Công ty không có sếp thì loạn |
 | 🎭 **Diễn Giàu** | Tỏ ra công ty vẫn ổn: mời trà sữa, nói chuyện mua xe | Ngân Sách −, Hứa Lèo + nếu lỡ hứa thêm |
-| 📲 **Nhắn 22 Giờ** | Nhắn group Zalo-lô lúc 22:00 để giao việc cho sáng mai | Ai cũng "đã xem". Không ai trả lời |
+| 📲 **Nhắn 22 Giờ** | Nhắn group Zola lúc 22:00 để giao việc cho sáng mai | Ai cũng "đã xem". Không ai trả lời |
 
 ---
 

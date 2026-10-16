@@ -162,7 +162,7 @@ _Bạn ôm tập hồ sơ hồng ra khỏi phòng kính. Ở bàn trợ lý, {th
 === hr_0110_dem_604 ===
 # ngay:1 # gio:22:00 # noi:can_ho_604
 _Căn 604. Kệ trà 40 loại sắp theo bảng chữ cái, từ Atiso tới trà Zzz. Bạn ngồi trước laptop, tách trà hoa cúc nguội từ lúc nào._
-_Điện thoại rung. Group Zalo-lô công ty. {giam_doc}: "Hôm nay là ngày lịch sử. Mai 9h30 họp chiến dịch nhé cả nhà. Anh không ép."_
+_Điện thoại rung. Group Zola công ty. {giam_doc}: "Hôm nay là ngày lịch sử. Mai 9h30 họp chiến dịch nhé cả nhà. Anh không ép."_
 _14 người "đã xem". 0 người trả lời._
 * [💬 Trả lời: "Dạ, cả nhà nghỉ ngơi sớm nha 😊"]
     ~ hr_so(3)

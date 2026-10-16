@@ -146,7 +146,7 @@ _{cho} chạy theo bạn từ sân tới tận chòi bảo vệ. Bác {bac_bao_v
 bac_bao_ve: Cháu đi cẩn thận. Có gì… nhớ ghé uống trà.
 _Bạn vừa bước qua khỏi cổng, đèn router trong tòa nhà phía sau chuyển sang màu đỏ._
 _Cả tòa nhà mất wifi._
-_Điện thoại bạn rung. Group Zalo-lô công ty, tin nhắn mới nhất:_
+_Điện thoại bạn rung. Group Zola công ty, tin nhắn mới nhất:_
 hong_hot: "Ủa ai biết restart router hông?"
 _Không ai trả lời._
 _Bạn nhìn tin nhắn rất lâu. Ngón tay đặt trên bàn phím. Rồi bạn cất điện thoại vào túi, đi tiếp._

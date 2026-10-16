@@ -174,7 +174,7 @@ _{idol_het_thoi} quay về phía góc tối. Bạn biết {idol_het_thoi} không
 // ------------------------------------------------------------
 === quan_ly_idol_1510_nhan_linh ===
 # ngay:15 # gio:23:50 # noi:studio_0905
-_Điện về lúc 5 giờ rưỡi chiều. Tới khuya bạn mới cắm sạc xong. Hai điện thoại sống lại, 46 tin nhắn, 19 cuộc gọi nhỡ. Bạn đọc hết, trả lời hết. Rồi mở Zalo-lô, tìm tên {editor}._
+_Điện về lúc 5 giờ rưỡi chiều. Tới khuya bạn mới cắm sạc xong. Hai điện thoại sống lại, 46 tin nhắn, 19 cuộc gọi nhỡ. Bạn đọc hết, trả lời hết. Rồi mở Zola, tìm tên {editor}._
 * [📱 "{editor} ơi, hồi chiều có ai quay lúc {idol_het_thoi} hát hông em? Anh muốn coi lại."]
     _Mười phút sau. Một file video, đã dựng lại: ánh sáng chỉnh ấm, giọng {idol_het_thoi} rõ, tiếng cả công ty hát theo lọt vào vừa đủ. Không có góc nào có mặt bạn._
     editor: Dạ em có quay nè anh. Em cắt cho gọn.

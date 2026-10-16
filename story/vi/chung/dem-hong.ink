@@ -495,7 +495,7 @@ _{cong_ty} sống thêm một mùa. Nguyễn {sieu_nhan_hong} được yêu thư
 _🤡 MEME QUỐC DÂN_
 _Sáng 1/11, không ai nhớ Siêu Nhân Hồng hát bài gì ở Đại Nhạc Hội Siêu Nhân._
 _Nhưng cả nước nhớ Siêu Nhân Hồng._
-_Ảnh Siêu Nhân Hồng tạo dáng chữ V giữa mưa hóa đơn được ghép chữ "Khi sếp hỏi chứng từ". Clip bị chó đuổi quanh sân khấu được ghép nhạc phim hành động. Ảnh kẹt áo choàng trong thang máy thành sticker Zalo-lô với dòng "Ét o ét"._
+_Ảnh Siêu Nhân Hồng tạo dáng chữ V giữa mưa hóa đơn được ghép chữ "Khi sếp hỏi chứng từ". Clip bị chó đuổi quanh sân khấu được ghép nhạc phim hành động. Ảnh kẹt áo choàng trong thang máy thành sticker Zola với dòng "Ét o ét"._
 _Cụm "Siêu Nhân Gâu" vào từ điển tiếng lóng của giới trẻ. Nghĩa: người cố gắng hết sức mà vẫn hơi… hài._
 { vai != "hong_hot":
     hong_hot: Ối dồi ôi! Có trường học dùng meme ảnh trong bài giảng "đừng bỏ cuộc"! Tui khóc nha!

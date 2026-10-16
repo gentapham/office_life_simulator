@@ -9,7 +9,7 @@
 
 ## 1. Lý lịch & động cơ
 
-Hiếu vừa được tuyển vào G-Entertainment để viết bản tin nội bộ, quản lý group Zalo-lô công ty và tổ chức sinh nhật cho nhân viên. Công việc nghe thì nhàn, nhưng nó cho Hiếu một thứ quý giá: **quyền được biết chuyện của tất cả mọi người**.
+Hiếu vừa được tuyển vào G-Entertainment để viết bản tin nội bộ, quản lý group Zola công ty và tổ chức sinh nhật cho nhân viên. Công việc nghe thì nhàn, nhưng nó cho Hiếu một thứ quý giá: **quyền được biết chuyện của tất cả mọi người**.
 
 Ngoài mặt, Hiếu là người dễ thương nhất phòng: nhớ sinh nhật từng người, mua trà sữa cho cả team, hỏi han đủ chuyện. Bên trong là một cỗ máy gây chiến.
 
@@ -59,7 +59,7 @@ Hiếu vẫn phải làm việc thật để không bị đuổi. Làm tốt th�
 |---|---|---|
 | 📰 **Bản Tin Thứ 2** | Ghép các mẩu tin thu thập trong tuần thành bản tin nội bộ. Chọn tin "an toàn" hay tin "cay" để đưa lên | 150.000đ + Uy tín. Tin cay thì thêm Độ Độc |
 | 🎂 **Tổ Chức Sinh Nhật** | Gom tiền cả phòng, chọn bánh kem, xếp lịch hát chúc mừng sao cho người được chúc không nghi ngờ | 1 miếng bánh kem (+No) + quan hệ với người có sinh nhật |
-| 💬 **Quản Trò Group Zalo-lô** | Duyệt tin nhắn trong group công ty: xóa tin spam, ghim thông báo của sếp. Có thể "lỡ tay" ghim nhầm tin | 100.000đ. Ghim nhầm thì Độ Độc +10 |
+| 💬 **Quản Trò Group Zola** | Duyệt tin nhắn trong group công ty: xóa tin spam, ghim thông báo của sếp. Có thể "lỡ tay" ghim nhầm tin | 100.000đ. Ghim nhầm thì Độ Độc +10 |
 | 🧋 **Trà Sữa Thứ 6** | Ghi order trà sữa của cả phòng, nhớ đúng ai uống gì, bao nhiêu đường | 1 ly trà sữa miễn phí (+Khát) |
 | 🖨️ **Chạy Giấy Tờ** | Mang tài liệu giữa các phòng ban. Mỗi lần đi qua là một cơ hội hóng | 50.000đ + 1 tin mật ngẫu nhiên |
 
@@ -88,7 +88,7 @@ Hiếu cũng có thể **đổi phe**: giúp chiến dịch thật lòng nếu M
 - **4/10 (Ngày Động vật):** Hiếu thấy Nguyên chọc Tuất, Tuất sủa ầm ĩ. Hiếu có **đồng minh đầu tiên**: một con chó.
 
 ### Chương 2: "Hội Anti Sếp" (5/10 – 12/10)
-- Ngân mời Hiếu vào **group Zalo-lô bí mật "Hội Anti Sếp"**. Mỏ vàng tin mật.
+- Ngân mời Hiếu vào **group Zola bí mật "Hội Anti Sếp"**. Mỏ vàng tin mật.
 - **9/10:** MV đầu tiên của Siêu Nhân Hồng ra mắt. Cơ hội phá đầu tiên.
 - **11/10:** cả công ty đăng ảnh hồi nhỏ. Hiếu thấy ảnh hồi nhỏ của Nguyên, đúng cái xóm năm xưa.
 - **12/10:** lương tháng về trễ 2 ngày, cả group sôi sục, cơ hội đổ dầu.

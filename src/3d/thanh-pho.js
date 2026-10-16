@@ -76,12 +76,13 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   const dong = m => { m.userData.dong = true; return m; };
   const kinhDem = dong(new THREE.MeshLambertMaterial({ color: 0x5d7d96, flatShading: true }));   // kính sáng đèn buổi tối
   const kinhToi = vl(0x34495a);
-  const trongQuan = dong(new THREE.MeshLambertMaterial({ color: 0x6a5642, flatShading: true })); // bên trong quán (tối thì sáng)
+  // bên trong quán (tối thì sáng): vật liệu tạo ở chi-tiet-pho, đặt trongQuan = kiểu đầu tiên để game3d vẫn đổi được
   const choNguoiDung = [];
   // chi tiết đêm, mặt tiền: dùng bộ số ngẫu nhiên riêng để không làm lệch bố cục phố đã có
   let seed2 = 4242;
   const rnd2 = () => (seed2 = (seed2 * 16807) % 2147483647) / 2147483647;
   const DEM = taoVatLieuDem();
+  const trongQuan = DEM.trong[0];
   const NHA = [], DEN = [], CAY = [], vatCanDiBo = [], choNgoi = [], nhomNoi = [];
   let soQuan = 0;
   const can = (minX, maxX, minZ, maxZ) => vat[0].push({ minX, maxX, minZ, maxZ });
@@ -89,6 +90,8 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mat === "number" ? vl(mat) : mat);
     m.position.set(x, y + h / 2, z); nhomCha.add(m); return m;
   };
+  // biển hai mặt: hai tấm một mặt quay lưng vào nhau để mặt nào cũng đọc đúng chiều (không bị ngược chữ)
+  const haiMat = (m) => { m.material.side = THREE.FrontSide; const b = m.clone(); b.rotation.y += Math.PI; m.parent?.add(b); return m; };
   const phang = (w, d, mat, x, z, y = 0.01) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), mat); m.rotation.x = -Math.PI / 2; m.position.set(x, y, z); nhom.add(m); return m; };
 
   // ---------- Mặt đường, vỉa hè ----------
@@ -115,7 +118,6 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   for (let z = -115; z < 145; z += 6) if (z < 28 || z > 46) phang(0.18, 3, vachVang, 52, z, 0.015);
   for (let i = 0; i < 8; i++) { phang(2.6, 0.5, vach, 45.3, 33.2 + i * 1.1, 0.016); phang(2.6, 0.5, vach, 58.7, 33.2 + i * 1.1, 0.016); phang(0.5, 2.4, vach, 47.6 + i * 1.2, 31.2, 0.016); phang(0.5, 2.4, vach, 47.6 + i * 1.2, 42.8, 0.016); }
   phang(0.3, 4.4, vach, 46.4, 39.3, 0.017); phang(0.3, 4.4, vach, 57.6, 34.7, 0.017); phang(4.4, 0.3, vach, 49.7, 32.2, 0.017); phang(4.4, 0.3, vach, 54.3, 41.8, 0.017);
-  for (let x = -180; x < 180; x += 37) phang(0.9, 0.9, vl(0x2a2b2e), x, 34 + (x % 3), 0.014); // nắp cống
 
   // ---------- Nhà ống ----------
   const TANG = 3.3;
@@ -134,7 +136,8 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
       bat.position.set(w / 2, 2.85, 0.68); bat.rotation.x = 0.28; g.add(bat);
       ten = chon(TEN_QUAN); let mb = chon(MAU_BIEN);
       soQuan++;
-      if (!hem && (soQuan === 7 || soQuan === 33 || soQuan === 58)) { ten = "TIỆN LỢI 24H"; mb = ["#2e8b57", "#ffffff"]; m1.material = DEM.trongSang; }
+      if (!hem && (soQuan === 7 || soQuan === 33 || soQuan === 58)) { ten = "TIỆN LỢI 24H"; mb = ["#2e8b57", "#ffffff"]; }
+      m1.material = ten === "TIỆN LỢI 24H" ? DEM.trongSang : DEM.chonTrong(ten);
       const bh = new THREE.Mesh(new THREE.PlaneGeometry(w - 0.3, 1.15), new THREE.MeshBasicMaterial({ map: bienHieu(ten, mb) }));
       bh.position.set(w / 2, 3.68, 0.14); g.add(bh);
     }
@@ -206,10 +209,9 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   // cổng hẻm
   H(0.3, 4.2, 0.3, 0xc0262d, 8.2, 0, 45.2); H(0.3, 4.2, 0.3, 0xc0262d, 11.8, 0, 45.2);
   const cong = new THREE.Mesh(new THREE.PlaneGeometry(3.8, 0.9), new THREE.MeshBasicMaterial({ map: bienHieu("KHU PHỐ VĂN HÓA - HẺM 69", ["#c0262d", "#ffe14d"]), side: THREE.DoubleSide }));
-  cong.position.set(10, 3.9, 44.98); cong.rotation.y = Math.PI; nhom.add(cong);
+  cong.position.set(10, 3.9, 44.98); cong.rotation.y = Math.PI; nhom.add(cong); haiMat(cong);
   const soHem = new THREE.Mesh(new THREE.PlaneGeometry(0.7, 0.35), new THREE.MeshBasicMaterial({ map: bienHieu("HẺM 69", ["#1f4fa8", "#ffffff"]) }));
   soHem.position.set(8.2, 2.4, 45.03); soHem.rotation.y = Math.PI; nhom.add(soHem);
-  for (let z = 50; z < 80; z += 6) { H(0.06, 0.06, 0.06, 0x111111, 10, 0, z); }
 
   // ---------- Công trình lớn ----------
   // Chợ Phố Cũ (tháp đồng hồ)
@@ -378,8 +380,8 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = xoay;
     H(0.18, 3.4, 0.18, 0x2a2c31, 0, 0, 0, g); H(0.45, 1.25, 0.35, 0x1a1a1a, 0, 3.0, 0, g);
     [["do", 4.0], ["vang", 3.62], ["xanh", 3.24]].forEach(([m, y]) => { const d = new THREE.Mesh(new THREE.CircleGeometry(0.14, 12), denGT[nhomDen][m]); d.position.set(0, y, 0.18); g.add(d); });
-    H(0.5, 0.32, 0.12, 0x1a1a1a, 0, 2.5, 0.02, g);
-    const so = new THREE.Mesh(new THREE.PlaneGeometry(0.44, 0.24), denGT.dem[nhomDen].vl); so.position.set(0, 2.66, 0.085); g.add(so);
+    H(0.5, 0.32, 0.1, 0x1a1a1a, 0, 2.5, 0.14, g); // bảng đếm ngược gắn phía trước cột
+    const so = new THREE.Mesh(new THREE.PlaneGeometry(0.44, 0.24), denGT.dem[nhomDen].vl); so.position.set(0, 2.66, 0.195); g.add(so);
     nhom.add(g); can(x - 0.2, x + 0.2, z - 0.2, z + 0.2); thanDung.push([x, z]); vatCanDiBo.push({ x, z, r: 0.3 });
     g.updateMatrixWorld(true);
     for (const [m, y] of [["do", 4.0], ["vang", 3.62], ["xanh", 3.24]]) { const p = new THREE.Vector3(0, y, 0.32).applyMatrix4(g.matrixWorld); denGT.viTri.push({ nhom: nhomDen, mau: m, x: p.x, y: p.y, z: p.z }); }
@@ -427,7 +429,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     H(4, 0.1, 1.6, 0x2e9a4a, x, 2.6, z); H(4, 2.4, 0.08, 0x9fd3f2, x, 0.2, z + 0.75); H(0.08, 2.6, 0.08, 0x3a3d44, x - 1.9, 0, z - 0.7); H(0.08, 2.6, 0.08, 0x3a3d44, x + 1.9, 0, z - 0.7);
     H(3, 0.08, 0.4, 0x8a8d92, x, 0.45, z + 0.4);
     const qc = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 1.6), new THREE.MeshBasicMaterial({ map: quangCao("SIÊU NHÂN HỒNG", "1 TRIỆU FOLLOW?", ["#f26fa6", "#7b2a52"], "#ffffff") })); qc.position.set(x + 0.9, 1.4, z + 0.7); qc.rotation.y = Math.PI; nhom.add(qc);
-    const bien = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.5), new THREE.MeshBasicMaterial({ map: bienHieu("TRẠM BUÝT 69", ["#2e9a4a", "#ffffff"]), side: THREE.DoubleSide })); bien.position.set(x - 2.3, 2.7, z - 0.6); nhom.add(bien); H(0.06, 2.5, 0.06, 0x3a3d44, x - 2.3, 0, z - 0.6);
+    const bien = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.5), new THREE.MeshBasicMaterial({ map: bienHieu("TRẠM BUÝT 69", ["#2e9a4a", "#ffffff"]), side: THREE.DoubleSide })); bien.position.set(x - 2.3, 2.7, z - 0.6); nhom.add(bien); haiMat(bien); H(0.06, 2.5, 0.06, 0x3a3d44, x - 2.3, 0, z - 0.6);
     can(x - 2, x + 2, z + 0.65, z + 0.85);
     choNguoiDung.push({ x: x - 0.5, z: z + 0.2, huong: Math.PI, ngoi: true, gio: [[5, 22]] }, { x: x + 0.6, z: z - 0.2, huong: Math.PI, gio: [[6, 9], [16, 19.5]] });
   };
@@ -442,7 +444,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
   const bangRon = (x, chu, mau) => {
     for (const z of [32.2, 41.8]) H(0.12, 7.4, 0.12, 0x5a5d63, x, 0, z);
     const b = new THREE.Mesh(new THREE.PlaneGeometry(9.6, 1.1), new THREE.MeshBasicMaterial({ map: bienHieu(chu, mau), side: THREE.DoubleSide }));
-    b.position.set(x, 6.8, 37); b.rotation.y = Math.PI / 2; nhom.add(b);
+    b.position.set(x, 6.8, 37); b.rotation.y = Math.PI / 2; nhom.add(b); haiMat(b);
   };
   bangRon(-24, "CHÀO MỪNG NGÀY PHỤ NỮ VIỆT NAM 20-10", ["#c0262d", "#ffe14d"]);
   bangRon(veRanh("nam:44.5", 76), "QUẬN HÓNG - SỐNG XANH, SỐNG HÓNG", ["#1f4fa8", "#ffffff"]);
@@ -472,7 +474,8 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     { truc: "z", co: 10, tu: 47, den: 80, bien: [-0.9, 0.9] },
   ];
   const chiTiet = dungChiTietPho({ nhom, can, NHA, DEN, CAY, thanDung, matUot, denDem, vlDenDuong, veRanh, DEM, choNgoi, nhomNoi, vatCan: vatCanDiBo, dienThoai });
-  return { matUot, kinhDem, trongQuan, denGT, lan, loiDi, choNguoiDung, rnd, DEM, chiTiet, vatCanDiBo, choNgoi, nhomNoi, diemMua, vachQua: chiTiet.vachQua };
+  return { matUot, kinhDem, trongQuan, denGT, lan, loiDi, choNguoiDung, rnd, DEM, chiTiet, vatCanDiBo, choNgoi, nhomNoi, diemMua, vachQua: chiTiet.vachQua,
+    cuaHang: NHA.map(n => ({ ten: n.ten, nhom: n.nhomQuan, x: n.g.position.x, z: n.g.position.z, huong: n.huong, w: n.w, hem: n.hem })) };
 }
 
 function bienDoc(chu) {

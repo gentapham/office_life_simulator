@@ -179,7 +179,7 @@ _"ĐÃ DUYỆT."_
 // ------------------------------------------------------------
 === ke_toan_kt_ke_bien_thu ===
 # ket_thuc:ke_bien_thu # loai:buon
-_23:30. Đại Nhạc Hội vừa tan. Group Zalo-lô công ty có thêm một tấm ảnh, ai đó gửi lúc pháo giấy đang nổ: két sắt sau bức tranh, nhà số 18, Phố Cũ. Cửa két hé mở. Những xấp tiền buộc dây thun._
+_23:30. Đại Nhạc Hội vừa tan. Group Zola công ty có thêm một tấm ảnh, ai đó gửi lúc pháo giấy đang nổ: két sắt sau bức tranh, nhà số 18, Phố Cũ. Cửa két hé mở. Những xấp tiền buộc dây thun._
 _Ai chụp, không ai nói. Ở bãi giữ xe, {ran_doc} nhìn xuống điện thoại. {thuc_tap_sinh} nhìn bạn, mắt đỏ, như muốn xin lỗi vì đã đếm ra con số lệch._
 hr: *(cười, nụ cười buồn nhất bạn từng thấy)* {ke_toan} ơi, thứ Hai mình lên phòng anh uống trà xíu.
 _Cuốn sổ tay ghi tay nằm trong túi xách bạn. Từng đồng, từng tháng, từng lý do. Không ai hỏi xem nó._

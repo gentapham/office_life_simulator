@@ -12,7 +12,7 @@ Tài liệu này dành cho bất kỳ ai viết thoại và câu chuyện cho ga
 - **Có một chút thật lòng.** Thỉnh thoảng cho một câu làm người chơi khựng lại: đồng nghiệp khóc ở sân thượng, thực tập sinh nhớ nhà. Hài sẽ đọng lại lâu hơn nhờ những lúc như vậy.
 
 ### Những điều tránh
-- Không dùng **tên người thật** (ca sĩ, diễn viên, chính trị gia, người nổi tiếng mạng) hay **tên thương hiệu thật**. Dùng tên nhại: Zalo-lô, Phây-búc, Tóp-tóp.
+- Không dùng **tên người thật** (ca sĩ, diễn viên, chính trị gia, người nổi tiếng mạng) hay **tên thương hiệu thật**. Dùng tên nhại: Zola, Phây-búc, Tóp-tóp.
 - Không nội dung tình dục lộ liễu. Yêu đương, tán tỉnh, đánh ghen thì thoải mái, nhưng giữ ở mức phim hài truyền hình.
 - Không chửi thề nặng. Dùng kiểu "Trời đất ơi", "Má ơi", "Ối dồi ôi".
 
@@ -142,7 +142,7 @@ Dùng **vừa phải**, tối đa 1 meme mỗi đoạn hội thoại, và hợp 
 | Chill guy | Người lúc nào cũng thản nhiên | Chúa Tể Deadline |
 
 ### Chất liệu đời văn phòng Việt Nam
-- Group Zalo-lô công ty nhắn lúc 11 giờ đêm, "đã xem" mà không trả lời.
+- Group Zola công ty nhắn lúc 11 giờ đêm, "đã xem" mà không trả lời.
 - "Anh không ép, tùy em."
 - Ngày 10 có lương, ngày 15 hết tiền.
 - Hỏi lương, hỏi bao giờ lấy vợ lấy chồng.

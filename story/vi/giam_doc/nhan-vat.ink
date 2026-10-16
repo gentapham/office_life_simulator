@@ -249,7 +249,7 @@ _Phòng server. Lạnh, tối, đèn xanh nhấp nháy. {it} đang ăn mì ly, k
 it: Restart chưa anh?
 * [💻 "Máy anh không lỗi. Anh hỏi chuyện khác."]
     it: *(ngẩng đầu)* … Chuyện gì.
-    giam_doc: Log của group Zalo-lô… em có đọc được ai đăng nhập không?
+    giam_doc: Log của group Zola… em có đọc được ai đăng nhập không?
     it: Đọc được. Kể cả mấy tài khoản tên hoa. *(nhìn bạn đúng một giây)* Em không nói ai đâu.
     ~ gd_nghi_clone = gd_nghi_clone + 5
     ~ qh("it", 5)

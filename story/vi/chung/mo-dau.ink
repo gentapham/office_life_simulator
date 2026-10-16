@@ -50,7 +50,7 @@ _Tầng 2, tòa nhà ba tầng sơn tím. Cả tòa nhà tối om, trừ một c
 _Phòng giám đốc {cong_ty}. Một người đàn ông ngồi một mình. Cà vạt nới lỏng. Đồng hồ vàng to bản. Trên bàn là một cây gậy golf mini và một tờ giấy._
 _Tờ giấy có logo Ngân hàng Tín Dụng Đen Đủi. Dòng chữ in đậm: "THÔNG BÁO NỢ QUÁ HẠN"._
 _{giam_doc} đọc nó lần thứ mười. Chữ không thay đổi._
-_Anh mở điện thoại. Group Zalo-lô "{cong_ty} - Toàn công ty"._ # am_thanh:zalo_lo
+_Anh mở điện thoại. Group Zola "{cong_ty} - Toàn công ty"._ # am_thanh:zalo_lo
 giam_doc: *(gõ chậm)* Mai các em đi làm nhé. 💪
 _Gửi. Không ai "đã xem". Một phút. Năm phút. Vẫn không ai._
 _{giam_doc} nhìn lên bức tường sảnh qua vách kính. Câu slogan in to: "Việc hôm nay cứ để ngày mai tính."_

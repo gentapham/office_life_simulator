@@ -130,7 +130,7 @@ _{thuc_tap_sinh} ngồi đối diện bạn, ánh lửa nhảy trên mặt anh �
     _Anh ấy không mở. Trong đó có trang ghi tên anh ấy. Và anh ấy không mở._
 }
 { bk_nguoi_nhat_so == "hong_hot":
-    _Tin nhắn Zalo-lô, 23:31, {hong_hot}: "Sổ của bà tui giữ nè. Tui đọc hết rồi. Hay dữ. Chưa kể ai… chưa."_
+    _Tin nhắn Zola, 23:31, {hong_hot}: "Sổ của bà tui giữ nè. Tui đọc hết rồi. Hay dữ. Chưa kể ai… chưa."_
     _Chữ "chưa" thứ hai được viết riêng một dòng._
 }
 { bk_nguoi_nhat_so == "ran_doc":

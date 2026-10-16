@@ -385,7 +385,7 @@ _{sieu_nhan_hong} đang ngồi bàn ngoài hiên, bật dậy tạo dáng thật
 # ngay:12 # gio:15:30 # noi:phong_server
 _Phòng server. Mì ly, quạt rè rè, ba màn hình đầy chữ xanh. {it} không quay lại khi bạn bước vào._
 it: Chuyện gì.
-* [💬 "Anh {it} ơi, có cách nào biết một nick Zalo-lô đăng nhập từ máy nào hông anh?"]
+* [💬 "Anh {it} ơi, có cách nào biết một nick Zola đăng nhập từ máy nào hông anh?"]
     it: Có. Mà không.
     it: *(cắn mì)* Nick nào.
     -> ran_doc_1210_truy_clone_hoi

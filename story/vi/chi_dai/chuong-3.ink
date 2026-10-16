@@ -44,7 +44,7 @@ _{giam_doc} trèo ra, chỉnh lại cà vạt, rồi lại là {giam_doc} của 
 // ------------------------------------------------------------
 === chi_dai_1510_bo_dam_mat_dien ===
 # ngay:15 # gio:10:00 # noi:tang_1 # bat_buoc
-_Mất điện cả ngày. Tầng 1 nóng như lò bánh mì. Máy tính chết, wifi chết, máy lạnh chết. Group Zalo-lô sống, nhưng ai cũng tiếc pin._
+_Mất điện cả ngày. Tầng 1 nóng như lò bánh mì. Máy tính chết, wifi chết, máy lạnh chết. Group Zola sống, nhưng ai cũng tiếc pin._
 _Phòng "Sáng Tạo" thắp nến. {truong_phong} đang họp. Về chủ đề: "Làm thế nào để họp khi mất điện"._
 _{thuc_tap_sinh} vừa lôi từ trong cặp ra 5 cục sạc dự phòng. Cả tầng nhìn {thuc_tap_sinh} như nhìn người tiền sử mang lửa tới._
 * [📻 Phát bộ đàm cho 5 người, chia việc: đá, nến, quạt tay, nước, giữ cửa sổ.]

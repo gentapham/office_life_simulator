@@ -111,7 +111,7 @@ _Thanh tiến trình chạy. Bạn có 5 giây._ # hen_gio:5
     -> gui_roi
 
 = gui_roi
-_21 người nhận được email. {hong_hot} chụp màn hình trong 0,5 giây. Group Zalo-lô nổ tung._
+_21 người nhận được email. {hong_hot} chụp màn hình trong 0,5 giây. Group Zola nổ tung._
 { not tn_tu_choi_ll:
     ~ tn_email_gui_nham = true
     ~ tn_ninh(-30)

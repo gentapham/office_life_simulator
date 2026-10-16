@@ -53,8 +53,8 @@
 | **Ổ cứng "KHÔNG ĐƯỢC MỞ"** | Phòng trọ Bảo | Bản sao lưu tự động server công ty từ 2016. Có **bản sao** file của Vũ và **bản thu gốc chưa mix của "Công Viên" (2015)** |
 | **Găng tay hồng** của Nguyên | Kho đồ của Tuất (Tuất cướp ngày 4/10) | Trả lại trong kết thúc "Bạn Bốn Chân" / "Hòa Bình Hồng" |
 | **Thư tay "G"** | Gửi tới chòi bảo vệ mỗi tháng | Thư 20/10 kèm **phong bì dán kín** "Chỉ mở khi công ty sắp sập", bên trong là **quyết định của chính Genta**. Bình chỉ là người giữ và đọc, không có quyền quyết định |
-| **Tài khoản clone của Thắng** | Group Zalo-lô "Hội Anti Sếp" | Tên **"Hoa Hướng Dương 1989"**, vào group từ tháng 6. Bảo tìm được trong log |
-| **Group "Hội Anti Sếp"** | Zalo-lô | Ngân lập, 14 thành viên |
+| **Tài khoản clone của Thắng** | Group Zola "Hội Anti Sếp" | Tên **"Hoa Hướng Dương 1989"**, vào group từ tháng 6. Bảo tìm được trong log |
+| **Group "Hội Anti Sếp"** | Zola | Ngân lập, 14 thành viên |
 | **Trang Confession G-Entertainment** | Ngân là admin | Máy đăng bài tên "NGAN-LAPTOP". Chỉ Bảo biết. 21/10: bài ẩn danh bóc chuyện thế chấp biệt thự (người gửi là Nhi hoặc con rắn thứ hai, tùy lượt chơi) |
 | **Bài hát bí mật "Hồng Là Thái Độ"** | Phòng thu khóa kín ở penthouse của Long | 41 bản demo. Long dùng nghệ danh **"Rồng"**. 15/10 Phát nghe lỏm và ghi âm 20 giây |
 | **Danh sách cắt giảm** | Tuấn | Thắng đưa 1/10 trong tập hồ sơ hồng, đòi ≥ 7 tên trước 26/10. Có tên **Duy** và **Sơn**. Trang 2 bản của Thắng: "Người cuối cùng: Tuấn". Hương tìm thấy ở Vũng Tàu |
@@ -149,7 +149,7 @@
 
 | Trong game | Ý chỉ |
 |---|---|
-| Zalo-lô | App nhắn tin |
+| Zola | App nhắn tin |
 | Phây-búc | Mạng xã hội |
 | Tóp-tóp | Video ngắn |
 | Diu-túp | Kênh video dài |
@@ -229,7 +229,7 @@ Mục tiêu: **1.000.000 người theo dõi** trước hết ngày 31/10. Bắt 
 - Biệt thự có bàn ăn 10 ghế. Thắng là người nhập hồ sơ nhân sự của Bình năm 2010 nên biết sinh nhật bác. Năm 2015 Thắng lén thuê người vỗ tay ở show đầu tiên của Phát.
 - Genta chụp tấm ảnh căn phòng 20m² năm 2010 (Thắng đăng lại ngày 11/10). Genta từng nói: logo có 7 màu *"vì công ty sẽ có đủ loại người, màu nào cũng phải có chỗ"* và *"cái quý nhất trong căn phòng 20m² là con người"*.
 - Giấy tờ thành lập đóng dấu đỏ chữ "G". Ngày 22/10 Bình về Ven Đô lấy cho đoàn thuế.
-- Group Zalo-lô công ty: 22 thành viên (21 nhân viên + Thắng), 23 khi thêm Nguyên. Nội quy có thêm điều 11, 12 sau khi Tuất "để lại quà" trong phòng giám đốc.
+- Group Zola công ty: 22 thành viên (21 nhân viên + Thắng), 23 khi thêm Nguyên. Nội quy có thêm điều 11, 12 sau khi Tuất "để lại quà" trong phòng giám đốc.
 - Quà 20/10: phong bì 2.100.000đ cho các chị em; Thắng tặng 7 chiếc khăn cam giống hệt nhau; Nhật tặng sổ ô li ghi "Kế hoạch tuần"; Thắng tặng riêng Thương một chiếc kính lúp kèm thiệp *"Cảm ơn em đã đọc trang 47 thay anh."*
 - Tiền thuê sân khấu Đại Nhạc Hội Siêu Nhân: 80 triệu, hạn 17:00 ngày 29/10. Hồ sơ xin phép biểu diễn dài 14 trang.
 - LL treo băng rôn đối diện G-Entertainment từ 14/10. Đại Nhạc Hội Siêu Nhân, màn hình LED khổng lồ trên tòa LL chiếu bộ nhận diện "Hồng Ngoại" quay thẳng về sân khấu.

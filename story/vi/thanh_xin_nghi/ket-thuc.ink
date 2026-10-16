@@ -51,7 +51,7 @@ _Bạn hát như người đã xin nghỉ 31 lần trong năm, và lần này kh
     _Không phải cúp vàng. Một bó hoa, một tấm bằng, và một tràng vỗ tay dài hơn bạn tưởng. Lớp trang điểm lem thành hai vệt dài trên má. Kệ. Lần đầu tiên bạn thua mà không phải nói dối ai._
 }
 _Ở hàng ghế khán giả, cô lễ tân Phòng khám Khỏe Re giơ tấm bảng tự làm: "KHÁCH VIP CỦA EM!"_
-_Hậu trường. Điện thoại rung liên tục. Group Zalo-lô công ty: 400 tin nhắn. {hong_hot}: "Ủa alo? {thanh_xin_nghi} của mình hả?" {chi_dai}: "Tui biết mà!" {idol_het_thoi}: "Em biết anh là ai không? Anh là người cho mượn vest đó!"_
+_Hậu trường. Điện thoại rung liên tục. Group Zola công ty: 400 tin nhắn. {hong_hot}: "Ủa alo? {thanh_xin_nghi} của mình hả?" {chi_dai}: "Tui biết mà!" {idol_het_thoi}: "Em biết anh là ai không? Anh là người cho mượn vest đó!"_
 _Rồi một tin nhắn riêng, từ {hr}:_
 { son_don_nghi_viec_that:
     _"Anh vote cho em 47 lần đó. Đơn nghỉ việc anh duyệt rồi. Lý do ghi: 'Đi hát'. Lý do đầu tiên của em mà anh tin."_

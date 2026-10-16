@@ -169,7 +169,7 @@ _Bộ đàm bên hông vẫn rè rè, bắt nhầm sóng taxi: "…khách đi S�
 - else:
     _Đại Nhạc Hội Siêu Nhân chạy trọn vẹn tới bài cuối. Sân khấu không sập, đèn không tắt. Chỉ có con số là không đủ. {giam_doc} cảm ơn từng người, giọng khàn đặc, rồi nói: "Thôi, đi hát một bữa đã."_
 }
-_Sau show, cả công ty kéo nhau qua Karaoke Chú Sáu. Group Zalo-lô nổ tin nhắn: "Phòng VIP 2 nha mọi người!", "Ai chưa tới?"._
+_Sau show, cả công ty kéo nhau qua Karaoke Chú Sáu. Group Zola nổ tin nhắn: "Phòng VIP 2 nha mọi người!", "Ai chưa tới?"._
 _Không ai nhắn cho bạn. Không ai quên bạn. Chỉ là ai cũng nghĩ: "Chị {chi_dai} chắc bận dọn sân khấu." "Chị {chi_dai} chắc mệt." "Chị {chi_dai} lúc nào chả có việc."_
 _Họ nói đúng. Bạn bận. Bạn mệt. Bạn có việc. Ba lần trong tháng này, bạn kiệt sức tới mức ngồi bệt ở kho mà không đứng dậy nổi. Không ai biết._
 _23:30. Bạn dọn xong cái loa cuối cùng. Về công ty cất bộ đàm. Leo lên sân thượng. Hai cái ghế nhựa. Một cây phơi đồ. Một cái ghế trống._

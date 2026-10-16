@@ -59,7 +59,7 @@ giam_doc: {it}! Em xử lý ngay cho anh. Anh không ép, tùy em. # hen_gio:5
         ~ cang_thang(10)
     }
 * [📱 Chiếu slide bằng điện thoại của mình lên TV.]
-    _Slide lên ngay. Rồi một thông báo Zalo-lô hiện chình ình giữa con số 5 tỷ: "Mì ly đã giao tới phòng server. Cảm ơn quý khách thân thiết!"_
+    _Slide lên ngay. Rồi một thông báo Zola hiện chình ình giữa con số 5 tỷ: "Mì ly đã giao tới phòng server. Cảm ơn quý khách thân thiết!"_
     _Cả phòng cười. Bạn muốn hướng nội hết phần đời còn lại._
     sieu_nhan_hong: Anh cũng thích mì ly! Mì ly là thái độ!
     ~ qh("sieu_nhan_hong", 10)

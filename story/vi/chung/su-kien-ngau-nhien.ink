@@ -155,7 +155,7 @@ _Máy pha cà phê kêu như máy cày, rồi phun hơi nước ra tứ phía. A
         _Máy phun một tia cà phê nóng thẳng vào áo bạn. Hôm nay bạn đi làm bằng áo "họa tiết cà phê"._
         ~ cang_thang(8)
     }
-* [💬 Nhắn {it} trên Zalo-lô.]
+* [💬 Nhắn {it} trên Zola.]
     it: Restart chưa?
     _Bạn rút điện, cắm lại. Máy chạy. Bạn không biết nên vui hay buồn._
     ~ qh("it", 2)
@@ -695,7 +695,7 @@ _"VIỆC HÔM NAY PHẢI XONG TỪ HÔM QUA. CÒN AI ĐÓ THÌ CỨ ĐỂ NGÀY 
     ~ follow(5000)
 - -> END
 
-// ======================= ZALO-LÔ BUỔI TỐI =======================
+// ======================= ZOLA BUỔI TỐI =======================
 
 === chung_nn_zalo_22h_sep ===
 # ngau_nhien # noi:dien_thoai # gio:22:00-22:30 # vai_khong:cho # vai_khong:giam_doc

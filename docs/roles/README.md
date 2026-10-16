@@ -79,7 +79,7 @@ Mỗi role gồm: công việc hằng ngày, tính cách, cách nói chuyện, c
 ### 1. 🐍 Rắn Độc: Hiếu
 Xem chi tiết: [ran-doc.md](ran-doc.md)
 
-- **Công việc:** viết bản tin nội bộ hằng tuần, quản lý group Zalo-lô công ty, tổ chức sinh nhật nhân viên. Nghề này cho phép biết chuyện của tất cả mọi người.
+- **Công việc:** viết bản tin nội bộ hằng tuần, quản lý group Zola công ty, tổ chức sinh nhật nhân viên. Nghề này cho phép biết chuyện của tất cả mọi người.
 - **Tính cách:** ngoài mặt thân thiện, quan tâm, nhớ sinh nhật mọi người. Bên trong là cái máy gây chiến.
 - **Động cơ:** hồi nhỏ ở cùng xóm, Nguyên (lớn hơn 3 tuổi) hay bắt nạt Hiếu. Ngày đầu đi làm, Hiếu phát hiện "siêu sao" mà cả công ty phải lăng xê chính là Nguyên. Hiếu quyết phá cho bằng được.
 - **Cách nói:** ngọt, hay bắt đầu bằng "Nói nhỏ thôi nha…", "Tui nói vậy thôi chứ không có ý gì đâu…".

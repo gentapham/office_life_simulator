@@ -109,7 +109,7 @@ giam_doc: {thanh_ninh} ơi, trưa nay anh ăn với đối tác Siêu Nhân Hồ
 # ngay:1 # gio:21:30 # noi:nha_thanh_ninh
 _Căn 302, chung cư mini Phố Mới. Trên tường, tấm ảnh bạn chụp chung với sếp năm 2023, phóng to, đóng khung._
 _Ngăn bàn hé mở. Một phong bì màu xanh lá chuối: "LL-Entertainment trân trọng mời bạn tham gia phỏng vấn vị trí Trợ lý Điều hành"._
-_Điện thoại rung. Group Zalo-lô công ty. 22:00, sếp nhắn: "Cảm ơn cả nhà. Chúng ta là một family!"_
+_Điện thoại rung. Group Zola công ty. 22:00, sếp nhắn: "Cảm ơn cả nhà. Chúng ta là một family!"_
 * [🙇 Trả lời trong 3 giây: "Dạ anh nói chuẩn quá anh ơi! Một family! ❤️"]
     ~ tn_ninh(2)
     ~ tn_khen()

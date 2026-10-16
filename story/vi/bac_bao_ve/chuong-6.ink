@@ -50,7 +50,7 @@ idol_het_thoi: Bác… con thuê fan ảo. 80.000 cái. 18 triệu. Giờ cả m
 // ------------------------------------------------------------
 === bac_bao_ve_2910_day_mang ===
 # ngay:29 # gio:08:15 # noi:tang_1 # bat_buoc
-_Ngày Internet Quốc tế. Wifi sập cả tòa nhà. Zalo-lô chết. {it} bị cả công ty đuổi từ tầng 2 xuống tầng trệt._
+_Ngày Internet Quốc tế. Wifi sập cả tòa nhà. Zola chết. {it} bị cả công ty đuổi từ tầng 2 xuống tầng trệt._
 it: *(thở hồng hộc, đứng trước tủ mạng tầng 1)* Dây cáp đứt. Bác. Ai vào đây sớm nhất?
 _Bác mở sổ trực. Sáng nay cổng mở 6 giờ 30._
 { RANDOM(1, 10) <= 6:

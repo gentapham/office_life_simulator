@@ -104,7 +104,7 @@ Bảo không lên hình, không viết bài, không đăng gì. Nhưng **mọi l
 ### Chương 2: "Lương Về, Mạng Rớt" (5/10 – 12/10)
 - **7/10:** mốc 50.000 người theo dõi. Thắng hỏi Bảo "có cách nào tăng follow bằng code không". Bảo có thể từ chối, hoặc chỉ cho Phát cách… Phát đã biết từ lâu.
 - **9/10:** MV đầu tiên ra mắt. Lĩnh xuất file 40GB lúc 18:00, phải lên mạng trước 20:00. Minigame đua upload, trong khi cả công ty đang xem Tóp-tóp.
-- **10/10 – 12/10 (lương về trễ):** group Zalo-lô sôi sục. Trang Confession đăng bài "Lương về trễ, sếp đi đánh golf". Log cho thấy bài được đăng từ máy "NGAN-LAPTOP". Thắng nhờ Bảo truy tìm admin. **Lựa chọn lớn đầu tiên:** giữ bí mật cho Ngân, hay nộp tên.
+- **10/10 – 12/10 (lương về trễ):** group Zola sôi sục. Trang Confession đăng bài "Lương về trễ, sếp đi đánh golf". Log cho thấy bài được đăng từ máy "NGAN-LAPTOP". Thắng nhờ Bảo truy tìm admin. **Lựa chọn lớn đầu tiên:** giữ bí mật cho Ngân, hay nộp tên.
 - **12/10:** lương về. Bảo đòi nợ Chương. Chương trả bằng… 0,003 đồng coin.
 
 ### Chương 3: "Ngày Không Có Điện" (13/10 – 16/10)
@@ -148,7 +148,7 @@ Bảo không lên hình, không viết bài, không đăng gì. Nhưng **mọi l
 >    - Thành công: {giam_doc} gật đầu "Good job em". Uy tín +10
 >    - Thất bại: máy chiếu hiện màn hình xanh. Bị Đổ Tội +10
 > 2. 📱 *Chiếu slide bằng điện thoại của mình lên TV.*
->    - Chạy được, nhưng thông báo Zalo-lô "Mì ly đã giao tới phòng server" hiện lên to đùng. Cả phòng cười. {sieu_nhan_hong}: "Anh cũng thích mì ly!"
+>    - Chạy được, nhưng thông báo Zola "Mì ly đã giao tới phòng server" hiện lên to đùng. Cả phòng cười. {sieu_nhan_hong}: "Anh cũng thích mì ly!"
 > 3. 😶 *Đứng im.*
 >    - {thanh_ninh} nhảy vào: "Dạ anh ơi, không có slide thì anh nói còn hay hơn ạ!" {giam_doc} nói thêm 40 phút
 > 4. *(Không chọn kịp)*: {giam_doc} tự đập cái máy chiếu. Nó chạy lại. Từ nay {giam_doc} tin mình giỏi IT hơn bạn

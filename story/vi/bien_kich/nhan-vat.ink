@@ -674,7 +674,7 @@ _Bí nằm trên bậu cửa sổ, đuôi vắt xuống như một dấu phẩy.
 === bien_kich_tudo_ban_thao_bi_lo ===
 # ngau_nhien # dieu_kien:bk_do_lo>=100 # bat_buoc
 ~ bk_so_bi_lo_da_xem = true
-_Điện thoại bạn rung liên tục. Group Zalo-lô công ty: 47 tin nhắn mới trong 3 phút._
+_Điện thoại bạn rung liên tục. Group Zola công ty: 47 tin nhắn mới trong 3 phút._
 _Ai đó vừa gửi ảnh chụp một trang sổ bìa da. Chữ bút máy mực hồng. Tên thật của từng người._
 hong_hot: *(trong group)* Ủa… cái này… là văn của ai vậy mấy bà?
 dan_dau_tu: *(trong group)* "Lúc nào cũng sắp giàu". Ai viết vậy. Viết đúng mà.

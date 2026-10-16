@@ -385,7 +385,7 @@ dan_dau_tu: Ủa {idol_het_thoi}? Ông cũng ra đây hả? Tui cầm cái đồ
 // ------------------------------------------------------------
 === idol_het_thoi_1210_luong_ve ===
 # ngay:12 # gio:10:00 # noi:tang_1 # bat_buoc
-_Thứ 2, 10 giờ. Lương về trễ 2 ngày. 8.000.000đ. Group Zalo-lô nổ như chợ._
+_Thứ 2, 10 giờ. Lương về trễ 2 ngày. 8.000.000đ. Group Zola nổ như chợ._
 _Bạn nhìn số dư. 8 triệu. Nợ: còn rất nhiều. Hạn chót của bà quản lý: 15/10._
 * [💸 Chuyển luôn 8 triệu trả tiền nhà.]
     ~ tien_cong(-8000000)

@@ -284,6 +284,7 @@ class LuotChoi {
     this.lichSuTheoDoi = {}; // ngày -> người theo dõi buổi sáng (biểu đồ trong điện thoại)
     this.tinDaDoc = [];      // tin nhắn đã đọc
     this.dauNgay = null;     // chỉ số lúc sáng, để tổng kết cuối ngày
+    this.giaoDich = [];      // giao dịch ví (ứng dụng MôMô)
   }
   // chụp nhanh các chỉ số để so sánh cuối ngày
   chupChiSo() {
@@ -293,14 +294,19 @@ class LuotChoi {
     return o;
   }
   toSave() {
-    return { ma: this.ma, theoDoi: Number(this.v("nguoi_theo_doi")) || 0, ngay: this.ngay, queue: this.queue, qi: this.qi, played: [...this.played], npcDone: [...this.npcDone], phutGame: this.phutGame, nnHomNay: this.nnHomNay, lichSuTheoDoi: this.lichSuTheoDoi, tinDaDoc: this.tinDaDoc, dauNgay: this.dauNgay, state: this.story.state.ToJson() };
+    return { ma: this.ma, theoDoi: Number(this.v("nguoi_theo_doi")) || 0, ngay: this.ngay, queue: this.queue, qi: this.qi, played: [...this.played], npcDone: [...this.npcDone], phutGame: this.phutGame, nnHomNay: this.nnHomNay, lichSuTheoDoi: this.lichSuTheoDoi, tinDaDoc: this.tinDaDoc, dauNgay: this.dauNgay, giaoDich: this.giaoDich, state: this.story.state.ToJson() };
   }
   fromSave(s) {
     this.ngay = s.ngay; this.queue = s.queue; this.qi = s.qi;
     this.played = new Set(s.played); this.npcDone = new Set(s.npcDone || []);
     this.phutGame = s.phutGame ?? 8 * 60; this.nnHomNay = s.nnHomNay || [];
-    this.lichSuTheoDoi = s.lichSuTheoDoi || {}; this.tinDaDoc = s.tinDaDoc || []; this.dauNgay = s.dauNgay || null;
+    this.lichSuTheoDoi = s.lichSuTheoDoi || {}; this.tinDaDoc = s.tinDaDoc || []; this.dauNgay = s.dauNgay || null; this.giaoDich = s.giaoDich || [];
     this.story.state.LoadJson(s.state);
+  }
+  ghiGiaoDich(ten, so) {
+    const p = this.phutGame ?? 480;
+    this.giaoDich.push({ ten, so, ngay: this.ngay, gio: `${String(Math.floor(p / 60)).padStart(2, "0")}:${String(p % 60).padStart(2, "0")}` });
+    if (this.giaoDich.length > 40) this.giaoDich.shift();
   }
   v(name) { try { return this.story.variablesState[name]; } catch { return undefined; } }
   set(name, val) { try { this.story.variablesState[name] = val; } catch {} }
@@ -367,7 +373,7 @@ class LuotChoi {
     const coDinh = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay];
     if (coDinh) { this.set("nguoi_theo_doi", (Number(this.v("nguoi_theo_doi")) || 0) + coDinh); ghiChu.push(`Sự kiện cố định: +${so(coDinh)} người theo dõi`); }
     const luong = THEO_MA[this.ma]?.luong || 0;
-    if (ngay === 12 && luong) { this.set("tien", (Number(this.v("tien")) || 0) + luong); ghiChu.push(`Lương tháng về (trễ 2 ngày): +${vnd(luong)}`); }
+    if (ngay === 12 && luong) { this.set("tien", (Number(this.v("tien")) || 0) + luong); this.ghiGiaoDich("Lương tháng 10", luong); ghiChu.push(`Lương tháng về (trễ 2 ngày): +${vnd(luong)}`); }
     // qua đêm: bản đọc thử chưa có ăn uống nên coi như tự ăn tối, chỉ số chỉ tụt nhẹ, không xuống dưới 50
     if (ngay > 1) {
       // qua một đêm: ngủ dậy đói và khát hơn (không tụt dưới 35 để sáng nào cũng kịp ăn uống), năng lượng đầy lại
@@ -838,7 +844,7 @@ async function render3D() {
   if (L.qi === 0 && L.phutGame === 8 * 60) L.nnHomNay = L.chonNgauNhien(L.ngay);
   let dangNgauNhien = false, CHUNG_ST = null;
   const timKnotNN = ten => L.knots.find(x => x.name === ten) || META.roles.chung?.knots.find(x => x.name === ten);
-  const nguoiGuiTin = t => { const m = timKnotNN(t)?.noi?.find(x => x !== L.ma); return m ? `Tin nhắn từ ${L.v(m) || THEO_MA[m]?.ten || m}` : "Tin nhắn Zalo-lô"; };
+  const nguoiGuiTin = t => { const m = timKnotNN(t)?.noi?.find(x => x !== L.ma); return m ? `Tin nhắn từ ${L.v(m) || THEO_MA[m]?.ten || m}` : "Tin nhắn Zola"; };
   const nutTin = h("button", { class: "g3d-tinnhan", hidden: true, onclick: () => { const t = nutTin.dataset.ten; if (t) { nutTin.hidden = true; choiNgauNhien(t, nguoiGuiTin(t)); } } }, h("i", {}), "Tin nhắn mới");
   app.querySelector(".g3d").append(nutTin);
   const kiemTraNgauNhien = () => {
@@ -949,13 +955,24 @@ async function render3D() {
       const doi = { ...d.doi };
       if (v.loai === "ca_phe" && ++soCaPhe > 3) { doi.stress = (doi.stress || 0) + 5; thongBao3D("Ly cà phê thứ " + soCaPhe + " trong ngày. Tim bắt đầu đập loạn."); }
       for (const [k, x] of Object.entries(doi)) L.set(k, Math.max(0, Math.min(100, (Number(L.v(k)) || 0) + x)));
-      if (gia) L.set("tien", tien - gia);
+      if (gia) { L.set("tien", tien - gia); L.ghiGiaoDich(d.chu || "Mua đồ ăn uống", -gia); }
       thongBao3D(d.ket[Math.floor(Math.random() * d.ket.length)]);
       const chiSo = [...Object.entries(doi).map(([k, x]) => `${TEN_CHI_SO[k]} ${x > 0 ? "+" : ""}${x}`), ...(gia ? [`-${gia.toLocaleString("vi-VN")}đ`] : [])].join(" · ");
       setTimeout(() => thongBao3D(chiSo), 400);
       sinhTon?.daMua(v.loai, gia);
       updateSide(); sinhTon?.veLai();
     });
+  };
+  // ngồi làm việc ở bàn mình: mệt dần, đủ 2 phút làm xong một đầu việc (uy tín tăng, stress nhích lên)
+  let giayLam = 0;
+  g.onLamViec = giay => {
+    giayLam += giay;
+    L.set("nang_luong", Math.max(0, (Number(L.v("nang_luong")) || 0) - giay * 0.05));
+    if (giayLam >= 120) {
+      giayLam -= 120;
+      L.set("uy_tin", (Number(L.v("uy_tin")) || 0) + 1); L.set("stress", Math.min(100, (Number(L.v("stress")) || 0) + 2));
+      thongBao3D("Xong một đầu việc. Uy tín +1, Stress +2"); updateSide(); sinhTon?.veLai();
+    }
   };
   g.onCong = () => { if (L.qi >= L.queue.length) hoiDiNgu(); else thongBao3D("Hôm nay vẫn còn việc ở công ty."); };
 
@@ -1068,7 +1085,7 @@ async function render3D() {
     if (sinhTon?.giao(ma)) return; // đang cầm món đồng nghiệp nhờ mua
     const k = L.npcKnots().find(x => tag(x.tags, "npc") === ma && !L.npcDone.has(x.name));
     const ten = L.v(ma) || THEO_MA[ma]?.ten || ma;
-    if (!k) { thongBao3D(`${ten}: "${CAU_BAN[Math.floor(Math.random() * CAU_BAN.length)]}"`); return; }
+    if (!k) { thongBao3D(`${ten}: "${g.cauBan(ma)}"`); return; }
     L.npcDone.add(k.name);
     moHoiThoai(`Nói chuyện với ${ten}`);
     playKnot(k.name, () => UI.choices.replaceChildren(h("button", { class: "choice", onclick: () => { saveWrite(L.toSave()); dongHoiThoai(); } }, "Xong")));
@@ -1114,7 +1131,7 @@ async function render3D() {
   };
   const diXeOm = d => {
     const tien = Number(L.v("tien")) || 0; if (d.gia > tien) return;
-    L.set("tien", tien - d.gia); am.phat("tien"); moThanhTuu(ghiNhan("xe_om"));
+    L.set("tien", tien - d.gia); L.ghiGiaoDich(`Xe Ôm Hóng: ${d.ten}`, -d.gia); am.phat("tien"); moThanhTuu(ghiNhan("xe_om"));
     chuyenCanh(`Xe ôm chở bạn tới ${d.ten}`, () => {
       g.traNpcVeCho(); g.datViTri({ tang: 0, x: d.x, z: d.z, huong: d.huong ?? 0 });
       L.phutGame = Math.min(L.phutGame + d.phut, Math.max(L.phutGame, tranGio())); hienGio();
@@ -1127,7 +1144,27 @@ async function render3D() {
     khung: () => app.querySelector(".g3d"),
     tinCho: () => nutTin.hidden ? null : nguoiGuiTin(nutTin.dataset.ten),
     moTin: () => nutTin.click(),
-    diemXeOm, diXeOm,
+    diemXeOm, diXeOm, viecVat: () => sinhTon?.viecToi(),
+    thongBao: x => thongBao3D(x),
+    // dự báo thời tiết theo buổi (lấy đúng lịch thời tiết của game)
+    thoiTiet: ngay => [["Sáng", 9, 0], ["Chiều", 14, 1], ["Tối", 20, -2]].map(([buoi, gio, d]) => { const t = G3D_MOD.THOI_TIET[thoiTietLuc(ngay, gio)]; return { buoi, ten: t.ten, nhiet: t.nhiet + d }; }),
+    muaHang: (ten, gia) => {
+      const tien = Number(L.v("tien")) || 0; if (gia > tien) return false;
+      L.set("tien", tien - gia); L.ghiGiaoDich(`Sốp-pi: ${ten}`, -gia);
+      L.set("stress", Math.max(0, (Number(L.v("stress")) || 0) - 2));
+      am.phat("tien"); thongBao3D(`Đặt hàng thành công: ${ten}. Giao sau 3 đến 5 ngày. Stress −2`); updateSide(); sinhTon?.veLai();
+      return true;
+    },
+    ghiChu: () => {
+      const n = THEO_MA[L.ma], vv = sinhTon?.viecToi();
+      return [
+        ["Việc tiếp theo", mtChu.textContent ? `${mtChu.textContent}${mtPhu.textContent ? ". " + mtPhu.textContent : ""}` : "Không có việc gấp. Đi dạo, ăn uống, nói chuyện với đồng nghiệp."],
+        ...(vv ? [["Việc vặt", [...(app.querySelector(".st-viec")?.children || [])].map(x => x.textContent).join(". ")]] : []),
+        ["Mục tiêu công ty", `Đưa Siêu Nhân Hồng lên ${so(MUC_TIEU)} người theo dõi trước Đại Nhạc Hội 31/10.`],
+        ["Về tôi", `${n.vai} · ${n.chuc}. "${n.cau}"`],
+        ["Nhắc nhở", "Đói thì ăn, khát thì uống, mệt thì nghỉ. Xỉu là hết tháng."],
+      ];
+    },
     moCaiDat: () => moCaiDat(h, { trongGame: true }),
     dangThoai: () => !app.querySelector(".g3d-thoai")?.hidden || !!g.capCuu,
   });
@@ -1223,6 +1260,5 @@ function taoKhungThoai(log, luaChon) {
   UI.khiHienLuaChon = cb => setTimeout(() => { if (hang.length) choCb = cb; else cb(); }, 0);
   return kt;
 }
-const CAU_BAN = ["Đang bận, lát nói nha.", "Deadline tới cổ rồi, mai nói.", "Ủa, có gì hông?", "Đi ngang thôi hả? Ok.", "Để em xong cái này đã."];
 
 renderHome();

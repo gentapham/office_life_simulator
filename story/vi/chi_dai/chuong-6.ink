@@ -72,7 +72,7 @@ editor: Em… em bấm nhầm xuất bản. Em định lưu nháp. Chị ơi… 
 // ------------------------------------------------------------
 === chi_dai_2910_wifi_sap ===
 # ngay:29 # gio:09:00 # noi:tang_1 # bat_buoc
-_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập. Cả tòa nhà. Zalo-lô chết, Phây-búc chết, Tóp-tóp chết. Chiến dịch mạng xã hội đứng hình._
+_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập. Cả tòa nhà. Zola chết, Phây-búc chết, Tóp-tóp chết. Chiến dịch mạng xã hội đứng hình._
 _{it} bị 14 người đuổi từ tầng 2 xuống tầng trệt. Video tổng kết của {editor} kẹt ở 99%._
 _Chỉ còn một thứ chạy được: bộ đàm. Không cần wifi. Không cần sóng điện thoại._
 it: *(thở hổn hển)* Dây mạng tủ tầng 1. Bị cắn. Hoặc bị cắt. Chưa biết.

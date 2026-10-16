@@ -155,7 +155,7 @@ Oánh viết **câu chuyện** của Siêu Nhân Hồng. Người ta follow mộ
 > **{giam_doc}:** Oánh à, em viết hộ anh cái thư gửi anh chị em nhé. Lương về trễ hai ngày thôi mà group nó căng quá. Nhấn mạnh là công ty là gia đình nhé. Anh không ép, tùy em.
 >
 > 1. ✒️ *Viết đúng ý sếp: "Gia đình thì không tính toán từng ngày."*
->    - {giam_doc} hài lòng. Thưởng 300.000đ. Group Zalo-lô càng sôi. {chi_dai}: "Đứa nào viết cái thư này?" Ai cũng nhìn bạn
+>    - {giam_doc} hài lòng. Thưởng 300.000đ. Group Zola càng sôi. {chi_dai}: "Đứa nào viết cái thư này?" Ai cũng nhìn bạn
 > 2. 💡 *Viết thật: lương về trễ vì ngân hàng nghỉ thứ 7, công ty xin lỗi, thứ 2 có tiền.*
 >    - Group dịu xuống. Ý Tưởng Thật +5. {giam_doc} hơi khó chịu vì chữ "xin lỗi", nhưng không sửa
 > 3. 🔒 *Viết thêm một câu ở cuối: "Và tháng này, mỗi người được thêm một ly trà sữa thứ 6, sếp bao."* (Chỉ hiện nếu bạn đã biết từ {ke_toan} rằng quỹ phạt đi trễ còn dư)
@@ -185,7 +185,7 @@ Oánh viết **câu chuyện** của Siêu Nhân Hồng. Người ta follow mộ
 
 ### Mẫu 6: Lời đề nghị của LL (27/10)
 
-> **Lưu Lực:** *(nhắn qua Zalo-lô)* Chị Oánh, em đọc được vài trang rồi (đừng hỏi làm sao). Văn chị hay. Bên em trả 50 triệu, mua luôn cuốn sách, giữ nguyên tên thật. Cuốn sách sẽ ra đúng ngày 1/11.
+> **Lưu Lực:** *(nhắn qua Zola)* Chị Oánh, em đọc được vài trang rồi (đừng hỏi làm sao). Văn chị hay. Bên em trả 50 triệu, mua luôn cuốn sách, giữ nguyên tên thật. Cuốn sách sẽ ra đúng ngày 1/11.
 >
 > 1. 💸 *"Chuyển khoản trước."*
 >    - +50.000.000đ. Độ Lộ = 100 vào ngày 1/11. Kết thúc "Tiểu Thuyết Bị Lộ" chắc chắn xảy ra, kèm cảnh LL quảng bá sách bằng scandal của G-Entertainment

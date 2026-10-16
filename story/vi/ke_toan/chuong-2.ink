@@ -251,7 +251,7 @@ dan_dau_tu: {ke_toan} ơi, ứng anh 10 triệu lương tháng sau được khô
 _Thứ 7, ngày 10. Ngày nhận lương. Bạn bấm lệnh chuyển lương từ tối thứ 6._
 _Tin nhắn ngân hàng lúc 8:30: "Lệnh chuyển tiền của Quý khách đang được tạm giữ để kiểm tra giao dịch lớn."_
 _Mười năm chưa từng bị giữ. Bạn biết vì sao. Khoản vay thế chấp biệt thự đang quá hạn, nên mọi giao dịch của công ty bị soi._
-_Group Zalo-lô bắt đầu: "Ủa lương đâu mọi người?" — "Ét o ét." — "Chị {ke_toan} ơi???"_
+_Group Zola bắt đầu: "Ủa lương đâu mọi người?" — "Ét o ét." — "Chị {ke_toan} ơi???"_
 ~ kt_ngu(10)
 * [📞 Gọi {giam_doc}: "Anh. Ngân hàng giữ lệnh. Anh biết vì sao mà."]
     giam_doc: *(im lặng)* … Thứ Hai anh nói với em.
@@ -335,7 +335,7 @@ _Bạn lục album. Một tấm ảnh năm 7 tuổi: bạn ngồi bên bàn tín
 // ------------------------------------------------------------
 === ke_toan_1210_bang_luong ===
 # ngay:12 # gio:08:30 # noi:phong_ke_toan # bat_buoc
-_Thứ Hai. 8:30 ngân hàng gọi: lệnh được mở, tiền sẽ vào tài khoản mọi người lúc 10:00. Còn một tiếng rưỡi để xếp bảng lương cho 21 người. Group Zalo-lô đã bực từ thứ 7._
+_Thứ Hai. 8:30 ngân hàng gọi: lệnh được mở, tiền sẽ vào tài khoản mọi người lúc 10:00. Còn một tiếng rưỡi để xếp bảng lương cho 21 người. Group Zola đã bực từ thứ 7._
 hong_hot: *(nhắn group)* Chị {ke_toan} ơi lương về chưa chị, em sắp ăn mì gói lần thứ 6 rồi.
 sales: *(nhắn group)* Lương trễ mà sếp vẫn đi golf. Sao mà căng.
 thuc_tap_sinh: *(nhắn group)* Dạ em không sao ạ. Em còn 4 gói mì ạ.

@@ -55,7 +55,7 @@ Trụ sở công ty, một tòa nhà 3 tầng cũ được sơn lại màu tím 
 | **Tầng 2** | **Phòng giám đốc** (vách kính), **phòng họp "Sáng Tạo"**, **studio** quay phim / thu âm, phòng kế toán, phòng HR | Họp, bị gọi lên "uống trà", quay MV, nhận lương |
 | **Sân thượng** | Ghế nhựa, cây phơi đồ, thùng nước | Hóng gió, khóc thầm, gọi điện riêng, **hẹn hò lén**, nói xấu sếp |
 
-**Đồ vật có thể tương tác:** máy chấm công, máy in (hay kẹt), máy pha cà phê (hay hết), bình nước, tủ lạnh chung (có hộp cơm bị ăn vụng), bảng thông báo (dán thông báo của HR, giấy khen, tin đồn), group Zalo-lô công ty.
+**Đồ vật có thể tương tác:** máy chấm công, máy in (hay kẹt), máy pha cà phê (hay hết), bình nước, tủ lạnh chung (có hộp cơm bị ăn vụng), bảng thông báo (dán thông báo của HR, giấy khen, tin đồn), group Zola công ty.
 
 ### 2.2. Hẻm 69: nhà trọ của Hiếu
 
@@ -259,7 +259,7 @@ Mở bằng phím `Tab`. Gồm các ứng dụng nhại lại:
 
 | App | Chức năng |
 |---|---|
-| **Zalo-lô** | Group công ty, group "Hội ăn trưa", tin nhắn riêng. Sếp nhắn lúc 11 giờ đêm |
+| **Zola** | Group công ty, group "Hội ăn trưa", tin nhắn riêng. Sếp nhắn lúc 11 giờ đêm |
 | **Phây-búc** | Đăng trạng thái, xem story đồng nghiệp, bị "bóc phốt" |
 | **Tóp-tóp** | Lướt video giải trí (giảm stress, tốn thời gian) |
 | **Ví điện tử** | Xem số dư, chuyển tiền, ứng lương |

@@ -26,7 +26,7 @@ _Mười tờ. Mười lần đúng. Bạn bắt được một số 0 thừa, m
 thanh_ninh: *(bưng lên một ly trà sen)* Sếp ơi, mười trên mười! Sếp soi giấy có tâm quá anh ơi!
 ~ uong(30)
 ~ cang_thang(-10)
-ke_toan: *(nhắn Zalo-lô)* "Hôm nay anh không ký nhầm tờ nào. Em ghi nhận."
+ke_toan: *(nhắn Zola)* "Hôm nay anh không ký nhầm tờ nào. Em ghi nhận."
 ~ qh("ke_toan", 5)
 _Một tin nhắn mười chữ. Bạn đọc hai lần._
 -> END

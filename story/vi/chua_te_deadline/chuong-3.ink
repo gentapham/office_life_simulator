@@ -31,7 +31,7 @@ _Cảnh drone. Hoàng hôn. Nó nằm trong cái USB. Cái USB nằm… ở đâ
 // ------------------------------------------------------------
 === chua_te_deadline_1410_son_nghi ===
 # ngay:14 # gio:08:40 # noi:ban_lam_viec # bat_buoc
-_Ngày Hội Nông dân. 8 giờ 40, Zalo-lô của bạn hiện tin nhắn từ {thanh_xin_nghi}._
+_Ngày Hội Nông dân. 8 giờ 40, Zola của bạn hiện tin nhắn từ {thanh_xin_nghi}._
 thanh_xin_nghi: Anh ơi em xin phép nghỉ hôm nay ạ. Em về quê phụ gặt lúa. Lúa nhà em chín đúng hôm nay ạ, lúa hông chờ người ạ.
 _Tuần gameshow. Người điều phối lịch nghệ sĩ đi gặt lúa. Lúa ở Ven Đô. Ven Đô cũng là nơi có Đài Tivi Hóng. Bạn không nghĩ tới chi tiết đó._
 * [😇 "Ờ ông đi đi, gặt cho đẹp."]

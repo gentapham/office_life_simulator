@@ -6,7 +6,7 @@
 // ------------------------------------------------------------
 === chi_dai_tudo_ran_doc ===
 # npc:ran_doc
-_{ran_doc} đang ngồi ở pantry, lướt group Zalo-lô, cười một mình. Thấy bạn, nụ cười đổi sang chế độ "nhân viên gương mẫu"._
+_{ran_doc} đang ngồi ở pantry, lướt group Zola, cười một mình. Thấy bạn, nụ cười đổi sang chế độ "nhân viên gương mẫu"._
 ran_doc: Dạ chị {chi_dai}! Chị uống gì hông, em pha cho chị!
 + [💬 "Dạo này em đi khắp các phòng dữ ha. Hỏi han ai cũng kỹ."]
     ran_doc: Dạ, em làm truyền thông nội bộ mà chị. Phải biết mọi người mới viết bản tin được.

@@ -9,7 +9,7 @@
 === bien_kich_mg_kich_ban_ba_hoi ===
 # noi:ban_bien_kich
 _Ba ô trống trên bàn: MỞ ĐẦU · CAO TRÀO · KẾT. Bên cạnh là chồng thẻ cảnh, thẻ nào cũng đóng dấu "THẬT" hoặc "MƯỢN"._
-truong_phong: *(nhắn Zalo-lô)* Em ơi, góp ý nhanh: thêm cảnh Siêu Nhân Hồng cưỡi ngựa nhé. Và một cảnh anh đứng chỉ tay vào bản đồ.
+truong_phong: *(nhắn Zola)* Em ơi, góp ý nhanh: thêm cảnh Siêu Nhân Hồng cưỡi ngựa nhé. Và một cảnh anh đứng chỉ tay vào bản đồ.
 _Hai tấm thẻ mới rơi xuống bàn: "CƯỠI NGỰA" và "ANH NHẬT CHỈ TAY". Phải xếp sao cho phim vẫn còn là phim._
 bien_kich: Kịch bản này cần thêm nỗi đau. Và anh vừa cho nó thêm rồi đó.
 -> END

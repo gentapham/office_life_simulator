@@ -38,7 +38,7 @@ dan_dau_tu: {hong_hot}, số liệu không nói dối. Đăng không em?
 // ------------------------------------------------------------
 === hong_hot_2810_tin_don_ve_ngan ===
 # ngay:28 # gio:21:00 # noi:nha_hong_hot
-_Group Zalo-lô công ty. Một tin nhắn lạ, không biết ai gửi đầu tiên:_
+_Group Zola công ty. Một tin nhắn lạ, không biết ai gửi đầu tiên:_
 { hh_tin_don_ve_ngan >= 5:
     _"Nghe gì chưa? {hong_hot} bán tin công ty cho LL. Mỗi tin một ly trà sữa."_
     ~ hh_bi_don(10)

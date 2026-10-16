@@ -20,7 +20,7 @@ class Atlas {
     if (this.vung.has(ten)) return this.vung.get(ten);
     const P = 4, W = this.c.width, H = this.c.height;
     let ke = null;
-    for (const k of this.ke) if (k.h >= h && k.h <= h * 1.35 + 8 && k.x + w <= W && (!ke || k.h < ke.h)) ke = k;
+    for (const k of this.ke) if (k.h >= h && k.x + w <= W && (!ke || k.h < ke.h)) ke = k;
     if (!ke) { if (this.day + h > H) { console.warn("Ảnh ghép đầy, bỏ:", ten); return this.vung.values().next().value; } ke = { y: this.day, h, x: 0 }; this.ke.push(ke); this.day += h + P; }
     const x = ke.x, y = ke.y; ke.x += w + P;
     const g = this.g; g.save(); g.translate(x, y); g.beginPath(); g.rect(0, 0, w, h); g.clip(); ve(g, w, h); g.restore();
@@ -57,7 +57,7 @@ const MAN = {
   mac_dinh: (g, w, h) => { const gr = g.createLinearGradient(0, 0, w, h); gr.addColorStop(0, "#2fa39a"); gr.addColorStop(1, "#22305a"); g.fillStyle = gr; g.fillRect(0, 0, w, h); chu(g, "G-ENTERTAINMENT", w / 2, h / 2, w - 30, 22, "#fff", 800, "center"); R(g, 0, h - 14, w, 14, "rgba(0,0,0,.45)"); },
   // Rắn Độc: nhóm chat nội bộ
   ran_doc: (g, w, h) => {
-    R(g, 0, 0, w, h, "#e9eef5"); R(g, 0, 0, w, 20, "#0a68ff"); chu(g, "Zalo-lô · Hội Bà Tám G-Ent (23)", 8, 10, w - 16, 11, "#fff", 700);
+    R(g, 0, 0, w, h, "#e9eef5"); R(g, 0, 0, w, 20, "#0a68ff"); chu(g, "Zola · Hội Bà Tám G-Ent (23)", 8, 10, w - 16, 11, "#fff", 700);
     R(g, 0, 20, 62, h - 20, "#fff");
     ["#f26fa6", "#e8702a", "#2fa39a", "#7b4bb3", "#d8c93a"].forEach((c, i) => { tron(g, 12, 32 + i * 22, 7, c); R(g, 23, 28 + i * 22, 32, 4, "#c9d2de"); R(g, 23, 35 + i * 22, 22, 3, "#e0e6ee"); });
     const tin = [["Ai biết vụ phòng giám đốc chưa?", 0], ["Tin nóng: lương về trễ 2 ngày", 1], ["Nghe nói sắp có biến lớn...", 0], ["Đừng nói ai nha, xóa liền", 1]];
@@ -340,11 +340,13 @@ function vungGiayNho(chuNho, mau) {
 let AT_BIEN, AT_MAN, TEX_BIEN, TEX_MAN, VL_BIEN, VL_MAN, VL_KINH_TRONG, VL_KINH_NGOAI, VL_KINH_MO, VL_KIM, VL_KINH_CUA, VL_CANH, VL_TRON_ROOF;
 function khoiTao() {
   if (AT_BIEN) return;
-  AT_BIEN = new Atlas(2048, 2048); AT_MAN = new Atlas(1040, 1024); // màn hình 256x144 xếp đủ 4 ô một hàng
+  AT_BIEN = new Atlas(2048, 1640); AT_MAN = new Atlas(1040, 1420); // màn hình 256x144 xếp đủ 4 ô một hàng
   const tex = c => { const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t; };
   TEX_BIEN = tex(AT_BIEN.c); TEX_MAN = tex(AT_MAN.c);
-  VL_BIEN = new THREE.MeshLambertMaterial({ map: TEX_BIEN });
-  VL_MAN = new THREE.MeshBasicMaterial({ map: TEX_MAN });
+  // chữ, tranh, màn hình luôn thắng lớp sơn / khung phía sau khi nhìn xiên
+  const bu = { polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -6 };
+  VL_BIEN = new THREE.MeshLambertMaterial({ map: TEX_BIEN, ...bu });
+  VL_MAN = new THREE.MeshBasicMaterial({ map: TEX_MAN, ...bu });
   // kính cửa sổ: nhìn từ trong thấy trời và phố đối diện, màu đổi theo giờ (capNhatCuaSo)
   VL_KINH_TRONG = new THREE.MeshBasicMaterial({ map: TEX_MAN, color: 0xffffff }); VL_KINH_TRONG.userData.dong = true;
   VL_KINH_NGOAI = new THREE.MeshLambertMaterial({ color: 0x86b4cc, emissive: 0x0f2a38 }); VL_KINH_NGOAI.userData.dong = true;
@@ -388,14 +390,15 @@ const giayNam = (w, d, uv, x, y, z, xoay = 0, vatLieu = VL_BIEN) => P(w, d, uv, 
 // Mặt tường: truc "z" = tường chạy dọc trục x tại z = c; "x" = tường chạy dọc trục z tại x = c.
 // huong: phía mặt tường nhìn ra (+1/-1). u: tọa độ dọc tường; y: độ cao tính từ sàn tầng; d: khoảng nhô ra khỏi mặt tường.
 function mat(truc, c, huong, tang, nua = NUA) {
-  const f = c + huong * nua, y0 = tang * CAO;
+  // đồ treo tường bắt đầu cách mặt tường 1,8 cm (trước lớp sơn và các mảng màu phòng); khối hộp kéo lùi vào trong tường để không hở khe
+  const f = c + huong * nua, y0 = tang * CAO, B = 0.018;
   const rot = truc === "z" ? (huong > 0 ? 0 : Math.PI) : (huong > 0 ? Math.PI / 2 : -Math.PI / 2);
-  const pt = (u, d) => truc === "z" ? [u, f + huong * d] : [f + huong * d, u];
+  const pt = (u, d) => truc === "z" ? [u, f + huong * (B + d)] : [f + huong * (B + d), u];
   return {
     truc, huong, tang, y0, rot, pt,
     // hướng "bên phải" (trong thế giới) của người đứng nhìn vào mặt tường
     phai: truc === "z" ? [huong > 0 ? 1 : -1, 0] : [0, huong > 0 ? -1 : 1],
-    hop(u, y, w, h, d, mau, o) { const [x, z] = pt(u, d / 2); return truc === "z" ? K(w, h, d, mau, x, y0 + y, z, o) : K(d, h, w, mau, x, y0 + y, z, o); },
+    hop(u, y, w, h, d, mau, o) { const [x, z] = pt(u, (d - B - 0.02) / 2), dd = d + B + 0.02; return truc === "z" ? K(w, h, dd, mau, x, y0 + y, z, o) : K(dd, h, w, mau, x, y0 + y, z, o); },
     phang(u, y, w, h, uv, vatLieu = VL_BIEN, d = 0.012, rz = 0) { const [x, z] = pt(u, d); return P(w, h, uv, vatLieu, x, y0 + y, z, { ry: rot, rz }); },
     tru(u, y, r, dai, mau, d) { const [x, z] = pt(u, d); return TR(r, dai, mau, x, y0 + y, z, truc === "z" ? { rx: Math.PI / 2 } : { rz: Math.PI / 2 }); },
   };
@@ -689,7 +692,7 @@ const DO_BAN = {
     K(0.23, 0.025, 0.31, 0x2a5aa8, x + 0.76, y, z - 0.15, { ry: -0.1 }); K(0.22, 0.02, 0.3, 0xf8f7f2, x + 0.76, y + 0.025, z - 0.15, { ry: -0.08 });
     giayNhoManHinh(x, z, [["KPI 300%", "#b8f0a8"], ["GỌI LẠI", "#fff27a"]]); },
   dan_dau_tu(x, z) { const y = Y_BAN;
-    const lap = new THREE.Group(); lap.position.set(x + 0.7, y, z - 0.05); lap.rotation.y = -0.35;
+    const lap = new THREE.Group(); lap.position.set(x + 0.7, y, z - 0.05); lap.rotation.y = -0.6;
     const de = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.015, 0.22), vl(0x8a8d92)); de.position.y = 0.0075; lap.add(de);
     const nap = new THREE.Group(); nap.position.set(0, 0.015, -0.11); nap.rotation.x = -0.22; lap.add(nap);
     const n1 = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.21, 0.01), vl(0x8a8d92)); n1.position.set(0, 0.105, 0); nap.add(n1);
@@ -849,6 +852,7 @@ export function themChiTietCongTy(nhom, hop, vat, { banChung = [] } = {}) {
   // bàn trà sofa: tạp chí, khay kẹo
   P(0.2, 0.28, layBien("tap_chi_1", 100, 140), VL_BIEN, 6.25, 0.402, 10.8, { rx: -Math.PI / 2, ry: 0.3 }); P(0.2, 0.28, layBien("tap_chi_2", 100, 140), VL_BIEN, 6.45, 0.405, 10.75, { rx: -Math.PI / 2, ry: -0.2 });
   hopKhanGiay(6.85, 0.4, 10.8, 0.1, 0xf2f2ee);
+  K(5.2, 0.7, 0.012, 0xc85a1e, 2, 2.65, 7.95); // mặt sau băng rôn khẩu hiệu (trước đây nhìn từ sau thấy mỗi hai sợi dây)
 
   // --- Khu làm việc chung ---
   const KLV_P = mat("x", -2, -1, 0), KLV_Tr = mat("x", -20, 1, 0);
@@ -901,7 +905,7 @@ export function themChiTietCongTy(nhom, hop, vat, { banChung = [] } = {}) {
   tranhKhung(HL2N, -7.5, 1.7, 1.2, 0.85, "team");
   thoatHiem(HL2N, -4.0, 2.75, [1, 0]);
   thoatHiem(HL2N, 5, 2.62); // trên lối vào cầu thang
-  bangIn(HL2N, 9.6, 1.75, 0.72, 1.0, "noi_quy_pccc", 256); bangIn(HL2N, 10.55, 1.75, 0.72, 1.0, "tieu_lenh", 256);
+  bangIn(HL2N, 10.55, 1.75, 0.72, 1.0, "noi_quy_pccc", 256); bangIn(HL2N, 9.6, 1.75, 0.72, 1.0, "tieu_lenh", 256);
   keBinh(HL2N, 10.08);
   HL2N.hop(11.7, 1.34, 0.13, 0.13, 0.05, 0xc0262d); HL2N.phang(11.7, 1.405, 0.11, 0.11, layBien("nut_bao_chay", 80, 80), VL_BIEN, 0.052);
   HL2N.tru(11.7, 2.2, 0.1, 0.07, 0xc0262d, 0.035);
@@ -981,7 +985,7 @@ function sanThuong(y3) {
   // gờ lan can, ống thoát nước, vệt rêu
   for (const [w, d, x, z] of [[40.3, 0.36, 0, -14], [40.3, 0.36, 0, 14], [0.36, 28, -20, 0], [0.36, 28, 20, 0]]) K(w, 0.06, d, 0xc8c0b0, x, y3 + 1.1, z);
   for (const [x, z] of [[-19.6, -13.6], [19.6, -13.6], [-19.6, 13.6], [19.6, 13.6]]) { K(0.3, 0.012, 0.3, 0x3a3d44, x, y3, z); for (let i = 0; i < 4; i++) K(0.26, 0.014, 0.02, 0x1c1c1f, x, y3, z - 0.1 + i * 0.065); K(0.25, 0.04, 0.12, 0x7a7f86, x, y3 + 0.02, z + Math.sign(z) * 0.1); }
-  for (const [x, z, ry, w] of [[-12, -13.86, 0, 3], [8, 13.86, Math.PI, 2.4], [-19.86, 2, Math.PI / 2, 4], [19.86, -6, -Math.PI / 2, 2.6]]) P(w, 0.35, { u0: 0, u1: 0, v0: 0, v1: 0 }, vl(0x6f7a5a), x, y3 + 0.18, z, { ry });
+  for (const [x, z, ry, w] of [[-12, -13.86, 0, 3], [8, 13.86, Math.PI, 2.4], [-19.86, 2, Math.PI / 2, 4], [19.86, -6, -Math.PI / 2, 2.6]]) P(w, 0.12, { u0: 0, u1: 0, v0: 0, v1: 0 }, vl(0xa9a690), x, y3 + 0.07, z, { ry }); // vệt ố chân lan can
 
   // bồn nước inox trên chân sắt, có thang leo và ống
   const BX = -14.6, BZ = 10.5;
@@ -1128,4 +1132,4 @@ export function capNhatCua(dt, p, tang, dsNpc) {
 // tiện: gọi một lần mỗi khung hình
 export function capNhatChiTiet(dt, gio, p, tang, dsNpc) { capNhatCuaSo(gio); capNhatCua(dt, p, tang, dsNpc); }
 // cho công cụ kiểm thử tự động (giống window.__g3d)
-if (typeof window !== "undefined") window.__chiTiet = { capNhatChiTiet, capNhatCua, capNhatCuaSo, THANG_MAY, doDay: () => [AT_BIEN?.day, AT_MAN?.day, [...AT_BIEN.ke].map(k => k.h + ':' + k.x).join(' ')] };
+if (typeof window !== "undefined") window.__chiTiet = { capNhatChiTiet, capNhatCua, capNhatCuaSo, THANG_MAY };

@@ -107,7 +107,7 @@ _Bạn được một ly trà sữa trân châu đường đen. Lần cuối cô
 === designer_0110_dem_can_203 ===
 # ngay:1 # gio:22:00 # noi:can_203
 _22 giờ. Căn 203 chung cư Phố Mới. Ban công đầy cây, cây nào cũng tên một deadline đã qua._
-giam_doc: *(group Zalo-lô)* Cả nhà ơi, hôm nay là ngày lịch sử! Mai 8h sharp mình meeting chiến lược nhé. Ai chưa ngủ thì like cho anh biết.
+giam_doc: *(group Zola)* Cả nhà ơi, hôm nay là ngày lịch sử! Mai 8h sharp mình meeting chiến lược nhé. Ai chưa ngủ thì like cho anh biết.
 _Bạn bấm "đã xem". Rồi bạn nhìn sang laptop thứ hai, nằm im trên bàn vẽ, nắp dán sticker cây xương rồng._
 _Một tin nhắn mới hiện lên. Người gửi: Anh Lá Chuối._
 la_chuoi: Em ơi. Job nhỏ nè. Logo cho tiệm trà sữa bên anh khai trương. 800 nghìn. Sáng mai cần.
@@ -317,7 +317,7 @@ truong_phong: Chữ to lên, logo to lên, mặt Siêu Nhân Hồng cũng to lê
         ~ qh("truong_phong", -10)
         ~ cang_thang(10)
     - else:
-        _{truong_phong} gọi thêm 2 lần, rồi bỏ đi. 22 giờ, Zalo-lô reo: "Em nhớ sửa nhé. Anh không gấp. Sáng mai cần."_
+        _{truong_phong} gọi thêm 2 lần, rồi bỏ đi. 22 giờ, Zola reo: "Em nhớ sửa nhé. Anh không gấp. Sáng mai cần."_
         ~ cang_thang(10)
     }
 * {ds_co_huy_hieu_ban_1} [🔒 "Hôm bữa anh {giam_doc} nói thích bản này y nguyên mà anh."]

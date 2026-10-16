@@ -72,7 +72,7 @@ it: Lỗi gì? Restart chưa?
 // ------------------------------------------------------------
 === thanh_xin_nghi_2910_goi_thang ===
 # ngay:29 # gio:09:10 # noi:ban_dieu_phoi # bat_buoc
-_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập cả tòa nhà. Zalo-lô không gửi được. Chiều nay 14:00 là tổng duyệt chung kết ở Đài Tivi Hóng._
+_Ngày Internet Quốc tế. 9 giờ sáng, wifi sập cả tòa nhà. Zola không gửi được. Chiều nay 14:00 là tổng duyệt chung kết ở Đài Tivi Hóng._
 _Bạn phải xin về sớm nửa ngày. Bạn gọi số bàn phòng HR, cách bạn đúng một tầng lầu. Chuông reo 5 hồi. Rồi có người nhấc máy._
 giam_doc: Alo! Phòng HR đây! {hr} ra cổng chấm công bằng giấy rồi, anh ngồi trực hộ. Ai đấy?
 _Là {giam_doc}. Bạn chưa bao giờ xin nghỉ với {giam_doc}._

@@ -97,7 +97,7 @@ _Người tạo coin: ẩn danh. Ví của người tạo: đang giữ 70% tổn
 // ------------------------------------------------------------
 === dan_dau_tu_1010_giay_nhac_no ===
 # ngay:10 # gio:19:00 # noi:hem_69
-_Ngày 10. Lẽ ra lương về. Nhưng là thứ 7, ngân hàng giữ lệnh. Group Zalo-lô sôi sục._
+_Ngày 10. Lẽ ra lương về. Nhưng là thứ 7, ngân hàng giữ lệnh. Group Zola sôi sục._
 _Bạn về tới gác lửng thì thấy {sales} đang đứng trước cửa, tay cầm cuộn băng keo và tờ giấy thứ 7._
 sales: Anh {dan_dau_tu}! Tờ thứ 7! Em làm thành bộ sưu tập rồi đó. Tin em đi, dán đủ 10 tờ là em đóng khung!
 * [😇 "Lương chưa về em. Thứ 2 anh trả em trước."]

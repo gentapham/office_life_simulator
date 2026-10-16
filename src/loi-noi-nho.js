@@ -24,6 +24,7 @@ export function xungHo(s, p, tenCua = x => x) {
   if (s === "thuc_tap_sinh") return { goi: ac(p), xung: "em" }; // ba mươi tuổi vẫn "dạ anh, dạ chị" với tất cả
   if (s === "sales") return { goi: "em", xung: "chị" };        // nhỏ nhất công ty mà nói chuyện như sếp lớn
   const d = (TUOI[p] ?? 28) - (TUOI[s] ?? 28);
+  if (s === "sieu_nhan_hong" && d < 2) return { goi: "em", xung: "anh" }; // Nguyên gọi ai bằng tuổi hoặc nhỏ hơn cũng là "em"
   if (d >= 2) return { goi: ac(p), xung: "em" };
   if (d <= -2) return { goi: "em", xung: ac(s) };
   return bac ? { goi: "cậu", xung: "tớ" } : { goi: NU.has(p) ? "bà" : "ông", xung: "tui" };
@@ -78,7 +79,7 @@ export const LOI = {
     noi: ["Dạ, sếp đang bận, {goi} để lại lời nhắn nha.", "Chuẩn luôn {goi} ơi!", "Đỉnh nóc, kịch trần luôn.", "Sếp có hỏi thì {xung} nói tốt cho {goi}."],
   },
   hong_hot: {
-    sang: ["Nghe gì chưa? Sáng nay có biến.", "Group Zalo-lô nổ tin nhắn từ năm giờ sáng.", "Ai đi chung xe với ai sáng nay, tui biết hết."],
+    sang: ["Nghe gì chưa? Sáng nay có biến.", "Group Zola nổ tin nhắn từ năm giờ sáng.", "Ai đi chung xe với ai sáng nay, tui biết hết."],
     lam: ["Nghe gì chưa?", "Ối dồi ôi, bình luận này căng nha.|xem_dt", "Fanpage tăng có mười người theo dõi, buồn ghê.", "Ủa alo? Ai mới đăng story vậy?"],
     trua: ["Trưa nay ăn gì? Kể tui nghe chuyện gì đi.", "Bàn bên kia nói nhỏ quá, tui nghe hông kịp."],
     chieu: ["Chiều buồn ngủ mà có tin là tỉnh liền.", "Lướt Tóp-tóp xíu cho tỉnh nè.|xem_dt"],
@@ -271,13 +272,14 @@ export const LOI = {
   sieu_nhan_hong: {
     sang: ["Chào buổi sáng! Hồng không phải màu, Hồng là thái độ!", "Sáng nay tập ba trăm cái hít đất. Úi, tay khỏe dữ!", "Gét gô! Một triệu người theo dõi đang chờ."],
     lam: ["Hồng không phải màu, Hồng là thái độ!", "Không ai được ép Siêu Nhân Hồng tháo mũ.", "Slay! Tạo dáng mới nè.", "Hôm nay {ten:chua_te_deadline} ngồi đâu ta?"],
-    trua: ["Trưa nay ăn chè hồng. Có chè hồng hông ta?", "Ăn trưa cũng phải đội mũ. Nguyên tắc."],
+    trua: ["{Goi} ăn cơm chưa?", "Trưa nay ăn chè hồng. Có chè hồng hông ta?", "Ăn trưa cũng phải đội mũ. Nguyên tắc."],
     chieu: ["Chiều nay quay clip mới, ai muốn lên hình hông?", "Chill, kịp hết."],
-    toi: ["Tối rồi mà năng lượng vẫn đầy.", "Mai quay sớm, mà Siêu Nhân hông cần ngủ."],
+    toi: ["Làm gì làm lẹ đi, tối {xung} còn đi đánh cầu lông.", "Tối rồi mà năng lượng vẫn đầy.", "Mai quay sớm, mà Siêu Nhân hông cần ngủ."],
     mua: ["Mưa hả? Siêu Nhân hông sợ mưa. Chỉ sợ ướt mũ.", "Mưa rơi trên công viên... ủa bài này của ai ta."],
-    gan: ["Ê {goi}! Chụp hình chung hông?", "{Goi} có thấy {ten:chua_te_deadline} đâu hông?", "Gét gô! Một triệu người theo dõi!"],
+    // câu riêng của Siêu Nhân Hồng khi gặp người chơi (theo yêu cầu)
+    gan: ["{Goi} ăn cơm chưa?", "Làm gì làm lẹ đi, tối {xung} còn đi đánh cầu lông.", "{Goi} làm việc chăm chỉ như này, không biết có người yêu chưa nhỉ?"],
     han: ["Còn {con} ngày nữa là lên sân khấu!", "Đại Nhạc Hội Siêu Nhân. Nghe là thấy hồng rồi."],
-    noi: ["Hồng không phải màu, Hồng là thái độ!", "Slay! Có gì hông?", "Chill, kịp hết.", "Muốn chụp hình hả? Đứng bên trái nha."],
+    noi: ["{Goi} ăn cơm chưa?", "Làm gì làm lẹ đi, tối {xung} còn đi đánh cầu lông.", "{Goi} làm việc chăm chỉ như này, không biết có người yêu chưa nhỉ?"],
   },
   cho: {
     sang: ["Gâu!", "Gâu gâu! (vẫy đuôi)", "(ngửi giày từng người đi vào)"],
@@ -412,7 +414,7 @@ export const CHUNG = [
   { dk: c => c.ngay >= 24, ds: [[0, g("Còn {con} ngày nữa thôi đó.", "Còn {con} ngày nữa thôi đấy.")], [1, g("Đừng nhắc, {xung} đang cố quên.", "Đừng nhắc, {xung} đang cố quên."), "lac_dau"]] },
   { dk: c => c.mua, ds: [[0, g("Mưa vầy chắc đường ngập rồi.", "Mưa thế này chắc đường ngập rồi.")], [1, g("Ngập tới yên xe luôn đó.", "Ngập đến yên xe rồi đấy.")], [0, g("Thôi ở lại làm thêm.", "Thôi ở lại làm thêm vậy.")], [1, g("Ai nói vậy là sếp nghe đó nha.", "Nói thế sếp nghe thấy đấy."), null, "cuoi"]] },
   { dk: c => c.gio >= 17.3, ds: [[0, g("{Goi} về chưa?", "{Goi} về chưa?")], [1, g("Sếp chưa về, sao dám về.", "Sếp chưa về, sao dám về.")], [0, g("Sếp về rồi đó.", "Sếp về rồi đấy.")], [1, g("Thiệt hả? Vậy đi liền.", "Thật à? Thế thì đi luôn."), null, "cuoi"]] },
-  { ds: [[0, g("Group Zalo-lô công ty nhắn gì mà nhiều vậy?", "Nhóm Zalo-lô công ty nhắn gì mà nhiều thế?")], [1, g("Sếp gửi bài mười thói quen của người thành công.", "Sếp gửi bài mười thói quen của người thành công.")], [0, g("Ai thả tim chưa?", "Ai thả tim chưa?")], [1, g("Mới có {ten:thanh_ninh}.", "Mới có {ten:thanh_ninh}."), null, "cuoi"]] },
+  { ds: [[0, g("Group Zola công ty nhắn gì mà nhiều vậy?", "Nhóm Zola công ty nhắn gì mà nhiều thế?")], [1, g("Sếp gửi bài mười thói quen của người thành công.", "Sếp gửi bài mười thói quen của người thành công.")], [0, g("Ai thả tim chưa?", "Ai thả tim chưa?")], [1, g("Mới có {ten:thanh_ninh}.", "Mới có {ten:thanh_ninh}."), null, "cuoi"]] },
   { ds: [[0, g("Máy lạnh lạnh quá trời.", "Điều hòa lạnh quá.")], [1, g("Ai chỉnh xuống mười sáu độ vậy?", "Ai chỉnh xuống mười sáu độ thế?")], [0, g("Hông biết. Mà đừng ai chỉnh lại.", "Không biết. Mà đừng ai chỉnh lại."), null, "gat_dau"]] },
   { dk: c => c.ngay < 17, ds: [[0, g("Đi Vũng Tàu có bắt chơi trò tập thể hông?", "Đi Vũng Tàu có bắt chơi trò tập thể không?")], [1, g("Có. Bắt buộc luôn.", "Có. Bắt buộc đấy.")], [0, g("Trời ơi.", "Trời ơi."), "lac_dau"]] },
   { ds: [[0, g("Cuối tuần {goi} làm gì?", "Cuối tuần {goi} làm gì?")], [1, g("Ngủ.", "Ngủ.")], [0, g("Rồi sao nữa?", "Rồi sao nữa?")], [1, g("Ngủ tiếp.", "Ngủ tiếp."), null, "cuoi"]] },
@@ -487,7 +489,7 @@ export function chonHoiThoai(a, b, c) {
     const [ds, ai] = rieng, d = chon(ds);
     return d.map(([i, cau, cu, nghe]) => ({ ai: ai[i], nghe: ai[1 - i], chu: thayBien(cau, { s: ai[i], p: ai[1 - i], ...c }), cu: cu || null, cuNghe: nghe || null }));
   }
-  if (a === "cho" || b === "cho") return null;
+  if (a === "cho" || b === "cho" || a === "giam_doc" || b === "giam_doc") return null; // sếp không tán gẫu chuyện "sếp"
   const hop = CHUNG.filter(x => !x.dk || x.dk(c));
   if (!hop.length) return null;
   const d = chon(hop), ai = Math.random() < 0.5 ? [a, b] : [b, a];

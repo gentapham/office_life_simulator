@@ -61,7 +61,7 @@ idol_het_thoi: *(đứng ở góc, kính đen)* MV năm 2015 của anh có 3 c�
 // ------------------------------------------------------------
 === chi_dai_0910_toi_hong_coin ===
 # ngay:9 # gio:22:30 # noi:nha_so_45
-_10 giờ rưỡi tối. Bạn vừa tắm xong thì điện thoại rung. Group Zalo-lô công ty có tin nhắn mới của {dan_dau_tu}._
+_10 giờ rưỡi tối. Bạn vừa tắm xong thì điện thoại rung. Group Zola công ty có tin nhắn mới của {dan_dau_tu}._
 dan_dau_tu: Mấy anh chị ơi! Fan nào đó vừa tạo "Hồng Coin", ký hiệu $HONG! Giá bây giờ bằng một gói xôi! Mua đi mấy anh chị!
 hong_hot: Ủa coin gì? Ai tạo?
 dan_dau_tu: Không ai biết! Thế mới là cơ hội!
@@ -160,7 +160,7 @@ _Bên cạnh là một gã thanh niên tóc ướt nhẹp, ốc len dính trên 
 // ------------------------------------------------------------
 === chi_dai_1210_doi_luong ===
 # ngay:12 # gio:09:35 # noi:phong_giam_doc # bat_buoc
-_Thứ 2, 12/10. Lương vẫn chưa về. Group Zalo-lô sôi như nồi lẩu. Bạn đi lên tầng 2._
+_Thứ 2, 12/10. Lương vẫn chưa về. Group Zola sôi như nồi lẩu. Bạn đi lên tầng 2._
 _Bạn đẩy cửa phòng giám đốc. {giam_doc} tự động đứng dậy, kéo ghế, và gọi vọng ra ngoài: "{thanh_ninh} ơi, pha trà!"._
 giam_doc: Ơ {chi_dai}, ngồi đi em. Lương thì… ngân hàng hẹn 10 giờ. Mà ngân hàng hẹn thì em biết rồi đấy. Em hiểu cho anh, công ty là gia đình mà.
 * [👊 Đập bàn: "Gia đình thì không để con nhịn đói tới ngày 12 nha sếp!"]
@@ -169,7 +169,7 @@ giam_doc: Ơ {chi_dai}, ngồi đi em. Lương thì… ngân hàng hẹn 10 gi�
     _RẦM. Ly trà {thanh_ninh} vừa bưng vào nhảy lên 2 phân._
     { RANDOM(1, 10) <= 7:
         giam_doc: Được… được rồi. {thanh_ninh}, gọi {ke_toan} lên cho anh. Gọi ngân hàng, giục cho bằng được, phí gì anh chịu.
-        _10 giờ đúng. Lương về tài khoản cả công ty. Group Zalo-lô im bặt, rồi nổ tung bằng 200 cái sticker. Ai cũng nghĩ là nhờ ai._
+        _10 giờ đúng. Lương về tài khoản cả công ty. Group Zola im bặt, rồi nổ tung bằng 200 cái sticker. Ai cũng nghĩ là nhờ ai._
         ~ cd_luong_ve_som = true
         ~ cd_uy(15)
         ~ tinh_than_cong_ty = tinh_than_cong_ty + 5

@@ -281,7 +281,7 @@ _Slide hiện lên: "Báo cáo tháng 10 – Người thực hiện: {truong_pho
 // ------------------------------------------------------------
 === editor_1210_luong_ve ===
 # ngay:12 # gio:10:10 # noi:khu_lam_viec_chung # bat_buoc
-_Lương về trễ hai ngày. Điện thoại cả tầng rung cùng lúc. Group Zalo-lô nổ như pháo Tết._
+_Lương về trễ hai ngày. Điện thoại cả tầng rung cùng lúc. Group Zola nổ như pháo Tết._
 _Ở quầy lễ tân, thẻ phụ của {con_ong_chau_cha} bị từ chối. {thuc_tap_sinh} đánh rơi một tấm thẻ hạng kim cương. Một sáng thứ 2 nhiều chất liệu._
 _Bạn thì đang ngủ trên bàn. Lương về hay không, bạn đã có tiền quảng cáo từ thứ 7._
 hong_hot: *(kéo ghế ngồi cạnh bạn)* Ủa {editor}. Cả công ty than lương trễ mà ông hông than gì hết. Ông có nguồn thu bí mật hả?

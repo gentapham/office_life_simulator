@@ -241,17 +241,18 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   sonTuong("z", -6, -1, -1.87, 3.87, [[0, 2]], 0, 0x5a6684);
   sonTuong("z", -6, -1, 4.13, 11.87, [[7, 9]], 0, 0xeef0f3);
 
-  { const m = new THREE.Mesh(mergeGeometries(lopSon), new THREE.MeshLambertMaterial({ vertexColors: true, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 }));
+  { const m = new THREE.Mesh(mergeGeometries(lopSon), new THREE.MeshLambertMaterial({ vertexColors: true, polygonOffset: true, polygonOffsetFactor: 0, polygonOffsetUnits: -2 })); // chỉ bù hằng số: bù theo độ nghiêng (factor) khi nhìn xiên dọc hành lang đẩy lớp sơn lên trước, che mất biển phòng, bảng tin
     m.userData.rieng = true; m.userData.khongCan = true; add(m); }
 
   // ================= BẢNG TÊN PHÒNG (gắn trên cửa, phía hành lang) =================
-  const bienPhong = (so, ten, ghi, x, y, z, rotY) => dung(1.7, 0.46, new THREE.MeshLambertMaterial({ map: tranh("bp" + so, 544, 148, (g, w, h) => {
+  // biển tên phòng: cách mặt tường 3,5 cm và luôn vẽ đè lên lớp sơn, khung cửa (polygonOffset)
+  const bienPhong = (so, ten, ghi, x, y, z, rotY) => dung(1.7, 0.46, new THREE.MeshLambertMaterial({ polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -6, map: tranh("bp" + so, 544, 148, (g, w, h) => {
     g.fillStyle = "#22305a"; g.fillRect(0, 0, w, h); g.fillStyle = "#e8702a"; g.fillRect(0, h - 10, w, 10);
     g.fillStyle = "#e8702a"; g.fillRect(14, 18, 92, 92);
     g.fillStyle = "#ffffff"; g.textAlign = "center"; g.textBaseline = "middle"; g.font = "900 30px 'Be Vietnam Pro', system-ui"; g.fillText(so, 60, 64);
     g.textAlign = "left"; g.font = "800 40px 'Be Vietnam Pro', system-ui"; g.fillText(ten, 126, ghi ? 52 : 68, w - 140);
     if (ghi) { g.font = "600 22px 'Be Vietnam Pro', system-ui"; g.fillStyle = "#ffd9a8"; g.fillText(ghi, 126, 98, w - 140); }
-  }) }), x, y, z, rotY);
+  }) }), x + Math.sin(rotY) * 0.02, y, z + Math.cos(rotY) * 0.02, rotY);
   const Y1 = 3.15, Y2 = y2 + 3.15;
   // lầu 1: dãy phòng phía sau (cửa trên tường z = -6, nhìn ra hành lang)
   bienPhong("101", "PHÒNG KẾ TOÁN", "Hóa đơn đâu em?", -15, Y1, -5.86, 0);

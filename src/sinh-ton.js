@@ -18,9 +18,14 @@ const CHI_SO = [
 const STRESS_CANH = [[70, "Stress cao. Vuốt mèo, ngắm cá hay đi vệ sinh cho nhẹ đầu."], [90, "Stress sắp nổ tung! Nghỉ ngơi một chút đi."]];
 
 // món có thể nhờ mua (mã khớp với loại đồ vật bán món đó)
+// món đồng nghiệp hay nhờ mua và chỗ bán (tọa độ chỗ đứng mua trong game)
 export const MON_VIEC_VAT = [
-  { loai: "banh_mi", mon: "ổ bánh mì" }, { loai: "nuoc_mia", mon: "ly nước mía" }, { loai: "tra_da", mon: "ly trà đá" },
-  { loai: "ca_phe", mon: "ly cà phê" }, { loai: "che", mon: "ly chè Bà Bảy" }, { loai: "hu_tieu", mon: "tô hủ tiếu gõ" },
+  { loai: "banh_mi", mon: "ổ bánh mì", noi: "Xe bánh mì bên kia đường, lệch trái cổng công ty", x: -6, z: 42.4 },
+  { loai: "nuoc_mia", mon: "ly nước mía", noi: "Xe nước mía ở góc ngã tư đại lộ, đi về bên phải", x: 66, z: 32.1 },
+  { loai: "tra_da", mon: "ly trà đá", noi: "Quán trà đá vỉa hè bên kia đường", x: -14, z: 42.3 },
+  { loai: "ca_phe", mon: "ly cà phê", noi: "Máy pha cà phê trong pantry tầng 1", x: 12, z: 11.9 },
+  { loai: "che", mon: "ly chè Bà Bảy", noi: "Xe chè Bà Bảy bên kia đường, lệch phải cổng", x: 13.5, z: 42.4 },
+  { loai: "hu_tieu", mon: "tô hủ tiếu gõ", noi: "Xe hủ tiếu gõ bên kia đường, đi về bên phải khoảng 40 m", x: 40, z: 42.4 },
 ];
 
 export function taoSinhTon(dep) {
@@ -43,6 +48,13 @@ export function taoSinhTon(dep) {
   const mucDaBao = { no: 101, khat: 101, nang_luong: 101, stress: 0 };
   let lanNhacCuoi = 0, daXiu = false, viec = null;
 
+  // điểm cần tới của việc vặt (dùng cho chỉ đường và bản đồ điện thoại)
+  const viecToi = () => {
+    if (!viec || viec.xong) return null;
+    if (!viec.daCo) return { tang: 0, x: viec.x, z: viec.z, ten: viec.noi };
+    const n = dep.g?.npc?.find(x => x.ma === viec.ma); if (!n) return null;
+    return { tang: n.tang, x: n.nv.group.position.x, z: n.nv.group.position.z, ten: dep.tenCua(viec.ma) };
+  };
   const veLai = () => {
     for (const k of ["no", "khat", "nang_luong", "stress"]) {
       const x = Math.max(0, Math.min(100, v(k)));
@@ -51,7 +63,15 @@ export function taoSinhTon(dep) {
       dong[k].className = "st-dong" + (nguy ? " nguy" : xau ? " xau" : vua ? " vua" : "");
     }
     vi.textContent = "Ví: " + v("tien").toLocaleString("vi-VN") + "đ";
-    if (viec && !viec.xong) { viecEl.hidden = false; viecEl.textContent = viec.daCo ? `Mang ${viec.mon} tới cho ${dep.tenCua(viec.ma)}` : `Việc vặt: ${dep.tenCua(viec.ma)} nhờ mua ${viec.mon}`; }
+    if (viec && !viec.xong) {
+      viecEl.hidden = false;
+      // chỉ đường: chỗ bán (chưa mua) hoặc chỗ người nhờ (đã mua), kèm khoảng cách
+      const g = dep.g, toi = viecToi(), kc = toi && g && !g.oNgoai?.() ? Math.round(Math.hypot(toi.x - g.p.x, toi.z - g.p.z)) : null;
+      const chiDuong = viec.daCo ? `${dep.tenCua(viec.ma)} đang ở ${toi?.tang === 1 ? "tầng 2" : "tầng 1"}` : `Mua ở: ${viec.noi}`;
+      viecEl.replaceChildren(
+        h("span", {}, viec.daCo ? `Mang ${viec.mon} tới cho ${dep.tenCua(viec.ma)}` : `Việc vặt: ${dep.tenCua(viec.ma)} nhờ mua ${viec.mon}`),
+        h("small", {}, chiDuong + (kc != null && kc > 3 ? ` · cách ${kc} m` : "")));
+    }
     else viecEl.hidden = true;
   };
 
@@ -96,7 +116,7 @@ export function taoSinhTon(dep) {
   veLai();
 
   return {
-    el, vien, veLai,
+    el, vien, veLai, viecToi,
     huy() { clearInterval(timer); },
     // mỗi cảnh truyện trôi qua cũng tốn sức
     quaCanh() { L.set("khat", Math.max(0, v("khat") - 3)); L.set("no", Math.max(0, v("no") - 2)); L.set("nang_luong", Math.max(0, v("nang_luong") - 2)); veLai(); },
@@ -105,7 +125,7 @@ export function taoSinhTon(dep) {
       const ds = dep.dsDongNghiep();
       const m = MON_VIEC_VAT[Math.floor(rnd() * MON_VIEC_VAT.length)];
       viec = ds.length ? { ma: ds[Math.floor(rnd() * ds.length)], ...m, daCo: false, xong: false, gia: 0 } : null;
-      if (viec) dep.thongBao(`${dep.tenCua(viec.ma)} nhắn: "Tiện đường mua giùm ${viec.mon} nha, mình gửi lại tiền."`);
+      if (viec) { dep.thongBao(`${dep.tenCua(viec.ma)} nhắn: "Tiện đường mua giùm ${viec.mon} nha, mình gửi lại tiền."`); setTimeout(() => dep.thongBao(`Mua ở: ${viec.noi}. Xem trên Bản đồ (phím M).`), 1500); }
       veLai();
     },
     // vừa mua / làm được một món: nếu đúng món được nhờ thì cầm theo

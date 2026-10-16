@@ -470,7 +470,7 @@
 { muc:
 - 1: {~{A} "đã xem" tin nhắn sếp mà hông trả lời.|{A} tắt thông báo group công ty.}
 - 2: {~{A} rời group công ty rồi vô lại, tưởng hông ai thấy!|{A} chặn luôn tin nhắn của sếp sau 22 giờ.}
-- else: {~{A} block cả công ty trên Zalo-lô, chỉ chừa lại con {cho}!|{A} lập group công ty giả, mời cả công ty vô, rồi hông nói gì cả tháng!}
+- else: {~{A} block cả công ty trên Zola, chỉ chừa lại con {cho}!|{A} lập group công ty giả, mời cả công ty vô, rồi hông nói gì cả tháng!}
 }
 # tin_don:khong_tra_loi_group # muc:{muc}
 -> END

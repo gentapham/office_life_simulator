@@ -299,7 +299,7 @@ thuc_tap_sinh: Dạ chị {bien_kich}… cái cảnh đẩy xe trong mưa… là
 // ------------------------------------------------------------
 === bien_kich_2710_ll_nhan_tin ===
 # ngay:27 # gio:11:00 # noi:san_thuong # bat_buoc
-_LL-Entertainment ra tay. Cả công ty nhốn nháo. Còn bạn thì nhận được một tin nhắn Zalo-lô từ số lạ, ảnh đại diện vest trắng._
+_LL-Entertainment ra tay. Cả công ty nhốn nháo. Còn bạn thì nhận được một tin nhắn Zola từ số lạ, ảnh đại diện vest trắng._
 luu_luc: Chị {bien_kich}, em đọc được vài trang rồi (đừng hỏi làm sao). Văn chị hay. Bên em trả 50 triệu, mua luôn cuốn sách, giữ nguyên tên thật.
 luu_luc: Cuốn sách sẽ ra đúng ngày 1/11. Việc hôm nay phải xong từ hôm qua, chị nhé.
 _Kèm theo là ảnh chụp một trang sổ bìa da. Trang "Chương 1: Ngày Năm Tỷ". Chữ của bạn._

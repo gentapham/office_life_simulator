@@ -12,6 +12,7 @@ import { caiDat, khiDoiCaiDat, cheDoNhe, tiLeDiemAnh } from "../cai-dat.js";
 import { am } from "../am-thanh-game.js";
 import { DoiSong } from "./doi-song.js";
 import { cauBan as cauBanNV } from "../loi-noi-nho.js";
+import { THANG_MAY, capNhatChiTiet } from "./chi-tiet-cong-ty.js";
 import { dungNgoaiCanh, NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi, trongNhaNgoai } from "./ngoai-canh.js";
 export { NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi };
 
@@ -377,7 +378,7 @@ export class Game3D {
       const d = Math.hypot(n.nv.group.position.x - this.p.x, n.nv.group.position.z - this.p.z);
       if (d < TAM_NOI && d < dMin) { dMin = d; gan = { loai: "npc", ma: n.ma, nhan: `Nói chuyện với ${this.tenCua(n.ma)}` }; }
     }
-    for (const c of CAU_THANG) {
+    for (const c of [...CAU_THANG, ...THANG_MAY]) {
       if (c.tang !== this.tang) continue;
       const d = Math.hypot(c.x - this.p.x, c.z - this.p.z);
       if (d < 1.8 && d < dMin) { dMin = d; gan = { loai: "cau_thang", c, nhan: c.nhan }; }
@@ -412,7 +413,8 @@ export class Game3D {
       if (!n.nv.ngoi) n.nv.group.rotation.y = Math.atan2(this.p.x - n.nv.group.position.x, this.p.z - n.nv.group.position.z);
       this.onNoiChuyen?.(g.ma);
     } else if (g.loai === "cau_thang") {
-      am.cauThang(); this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
+      if (g.c.thangMay) am.phat("thang_may", g.c.x, g.c.z); else am.cauThang();
+      this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
     } else if (g.loai === "do_vat") {
       if (g.v.loai === "meo") this.dongVat.vuot(g.v.meo);
       if (g.v.loai === "chim") this.dongVat.rac(this.p);
@@ -592,6 +594,7 @@ export class Game3D {
     // bầu trời, thời tiết, đèn buổi tối
     const trong = this.trongNha();
     const kq = this.bauTroi.capNhat(dt, this.camera, { hemi: this.hemi, nen: this.nen, matTroi: this.mat_troi }, trong);
+    this.giaoThong.datMoiTruong?.({ gio: this.bauTroi.gio, ngay: kq.ngay, mua: this.bauTroi.tt.mua, uot: this.bauTroi.uot, sang: this.bauTroi.tt.sang });
     if (kq.dem !== this.dem) {
       this.dem = kq.dem;
       for (const d of this.theGioi.denDem) d.material.color.set(kq.dem ? 0xffe2a0 : 0xf3efe6);
@@ -606,6 +609,7 @@ export class Game3D {
     if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
     this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !this.oNgoai() && (!(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2));
     this.capCuu?.capNhat(dt);
+    capNhatChiTiet(dt, this.bauTroi.gio, this.p, this.tang, this.npc); // cửa tự mở, cửa sổ theo giờ, đồng hồ treo tường
     this.ngoaiCanh.capNhat(dt, this.t, this.tang === 0 ? this.p : null);
     const ngoai = this.oNgoai(); // ở địa điểm ngoài công ty: ẩn cả thành phố cho nhẹ máy
     if (this.theGioi.nhom.visible === ngoai) {

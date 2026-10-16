@@ -202,7 +202,7 @@ Nhi không làm nội dung, nhưng Nhi **nắm sếp**. Mọi khoản chi lớn 
 >    - Email kẹt lại. Nhưng {it} thấy cổng mạng phòng sếp bị rút và đi lên kiểm tra. Email Mật của Nhi có thể bị {it} đọc
 > 3. 📱 *Gọi ngay cho {giam_doc}: "Anh ơi, em có chuyện phải nói trước khi anh đọc email."*
 >    - Tự thú. Điểm Nịnh −20, nhưng {giam_doc}: "Ừ. Anh biết em đi phỏng vấn lâu rồi." Mở cờ `nhi_noi_that_2`
-> 4. *(Không chọn kịp)*: 21 người nhận được email. {hong_hot} chụp màn hình trong 0,5 giây. Group Zalo-lô nổ tung
+> 4. *(Không chọn kịp)*: 21 người nhận được email. {hong_hot} chụp màn hình trong 0,5 giây. Group Zola nổ tung
 
 ---
 

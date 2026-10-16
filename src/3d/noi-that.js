@@ -22,7 +22,8 @@ const chu = (key, w, h, nen, mau, dong, co = 40) => tranh(key, w, h, (g) => {
 
 export function themNoiThat(nhom, hop, CAO, denDem) {
   const y2 = CAO, y3 = CAO * 2;
-  const T = (w, h, tex, x, y, z, rotY = 0, tang = 0) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshLambertMaterial({ map: tex })); m.position.set(x, y, z); m.rotation.y = rotY; nhom.add(m); return m; };
+  // tranh, biển dán tường: nhích thêm 2 cm khỏi tường và luôn vẽ đè lên lớp sơn (không bị che khi nhìn xiên dọc hành lang)
+  const T = (w, h, tex, x, y, z, rotY = 0, tang = 0) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshLambertMaterial({ map: tex, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -6 })); m.position.set(x + Math.sin(rotY) * 0.02, y, z + Math.cos(rotY) * 0.02); m.rotation.y = rotY; nhom.add(m); return m; };
   const tru = (r, h, c, x, y, z) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 10), vl(c)); m.position.set(x, y + h / 2, z); nhom.add(m); return m; };
   const cau = (r, c, x, y, z) => { const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 0), vl(c)); m.position.set(x, y, z); nhom.add(m); return m; };
   const ghe = (x, z, rot, tang = 0, c = 0x3a3d44) => {

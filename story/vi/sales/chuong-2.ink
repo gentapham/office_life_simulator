@@ -90,7 +90,7 @@ _Mọi ánh mắt dồn về bạn. {designer} đứng ở góc phòng, lắc đ
 // ------------------------------------------------------------
 === sales_1010_het_tien ===
 # ngay:10 # gio:11:00 # noi:can_1203 # bat_buoc
-_Thứ 7, ngày 10. Lương chưa về. App ngân hàng: không có gì mới. Group Zalo-lô: 214 tin nhắn, toàn chữ "ủa"._
+_Thứ 7, ngày 10. Lương chưa về. App ngân hàng: không có gì mới. Group Zola: 214 tin nhắn, toàn chữ "ủa"._
 _Tủ lạnh căn 1203: một chai tương ớt. Quả trứng không rõ ngày đã biến mất. Bạn không nhớ đã ăn nó._
 _Bạn hết tiền thật. Ba con đường._
 * [🧾 Nhắn {ke_toan} xin tạm ứng, dù hôm nay thứ 7.]

@@ -68,7 +68,7 @@ Lương Kế toán trưởng 25.000.000đ/tháng (khoảng **1.140.000đ/ngày**
 | Minigame | Cách chơi | Phần thưởng |
 |---|---|---|
 | 🧾 **Săn Hóa Đơn** | Mỗi sáng có một xấp đề nghị thanh toán. Ghép từng khoản với hóa đơn đúng, tìm hóa đơn giả: viết trên giấy ăn (Huyền), ghi "tiền ốc 2 triệu" cho một người (Chương), hóa đơn quán bida (Vũ). Bắt đúng hóa đơn giả thì Quỹ Công Ty được giữ | **300.000đ** + Quỹ Công Ty được giữ lại. Bắt trúng 5 hóa đơn giả trong một ngày: **1 hộp bánh pía** Huyền "tặng làm lành" |
-| 💸 **Bảng Lương Ngày 10** | Xếp lịch chuyển lương cho 21 người khi tiền về trễ: ai trả trước, ai trả sau, ai được ứng. Mỗi người có một "độ bực" tăng dần theo giờ trên group Zalo-lô | Không ai bực quá ngưỡng: **500.000đ** + 1 **ly trà sữa** cả phòng mời "chuộc lỗi". Có người nổ: bị đặt biệt danh mới trên group "Hội Anti Sếp" |
+| 💸 **Bảng Lương Ngày 10** | Xếp lịch chuyển lương cho 21 người khi tiền về trễ: ai trả trước, ai trả sau, ai được ứng. Mỗi người có một "độ bực" tăng dần theo giờ trên group Zola | Không ai bực quá ngưỡng: **500.000đ** + 1 **ly trà sữa** cả phòng mời "chuộc lỗi". Có người nổ: bị đặt biệt danh mới trên group "Hội Anti Sếp" |
 | ✍️ **Ba Chữ Ký** | Đi săn đủ 3 chữ ký cho một đơn mua bút bi: Thắng (đang chơi golf trên sân thượng), Nhật (đang họp), người đề xuất (Duy, đang đi mua bánh chuối chiên). Thời gian giới hạn trước 17:30 | **1 hộp bút bi** (vật phẩm: viết được mọi giấy tờ, cần cho kỹ năng Ba Chữ Ký) + **150.000đ** |
 | 🛒 **Chợ Phố Cũ Mặc Cả** | Sáng sớm đi chợ mua đồ cho liên hoan (buffet 16/10, tiệc 20/10). Mặc cả với các cô bán hàng: khen hàng, chê nhẹ, giả vờ đi, quay lại. Mỗi cô có một điểm yếu riêng | Tiết kiệm được bao nhiêu, Quỹ Công Ty giữ lại bấy nhiêu. Thêm **1 gói xôi đậu xanh** và **1 bịch kẹo gừng** cô bán hàng cho "con nhỏ khéo mua" |
 | 🗂️ **Thuế Tới Rồi** (22/10) | 30 phút sắp xếp 10 năm hồ sơ trước khi đoàn kiểm tra lên tầng 2. Kéo thả từng xấp vào đúng năm, đúng loại. Thỉnh thoảng Tuất tha mất một xấp, Duy xin phụ (Duy làm rất nhanh, nhanh tới đáng ngờ) | Qua được kiểm tra: **thưởng nóng 2.000.000đ** + Độ Mất Ngủ −30. Thất bại: bị phạt hành chính, Quỹ Công Ty −200 triệu |
@@ -104,7 +104,7 @@ Thương là người **giữ van tiền**. Mở van thì chiến dịch chạy 
 ### Chương 2: "Ngày 10 Không Có Lương" (5/10 – 12/10)
 - **5/10:** Huyền xin tạm ứng 50 triệu để "chốt nhà tài trợ lớn nhất năm". Hóa đơn: không có. Hợp đồng: "mai chị đưa". Huyền nói với Thương: *"Tin chị đi!"* Thương: *"Em nhỏ hơn chị bốn tuổi đó Huyền."*
 - **9/10:** MV ra mắt. Cả công ty mời trà sữa lần thứ hai trong 9 ngày. Thương ngồi tính.
-- **10/10 (thứ 7):** ngày nhận lương, nhưng ngân hàng đóng cửa và lệnh chuyển lương bị giữ lại để "kiểm tra giao dịch lớn". Group Zalo-lô bắt đầu réo.
+- **10/10 (thứ 7):** ngày nhận lương, nhưng ngân hàng đóng cửa và lệnh chuyển lương bị giữ lại để "kiểm tra giao dịch lớn". Group Zola bắt đầu réo.
 - **Lựa chọn lớn đầu tiên:** rút tiền mặt từ quỹ đen, tự tay bỏ phong bì trả lương đúng ngày cho những người khó khăn nhất (Duy, Bình, Phát) (Dấu vết +1), hay để mọi người chờ.
 - **12/10:** lương về trễ 2 ngày. Minigame "Bảng Lương Ngày 10". Thương bị gọi là "nữ hoàng lương trễ" trong group Hội Anti Sếp.
 

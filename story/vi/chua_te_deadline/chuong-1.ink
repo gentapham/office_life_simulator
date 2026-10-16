@@ -192,7 +192,7 @@ _Bạn ghi vào điện thoại: "7/10: 50k. Còn sớm mà."_
 // ------------------------------------------------------------
 === chua_te_deadline_0310_tin_nhan_22h ===
 # ngay:3 # gio:22:00 # noi:phong_gac_quan_bida # bat_buoc
-_Thứ 7. 22 giờ đúng. Điện thoại rung. Group Zalo-lô "G-Entertainment - Toàn công ty"._
+_Thứ 7. 22 giờ đúng. Điện thoại rung. Group Zola "G-Entertainment - Toàn công ty"._
 giam_doc: Các em ơi, trước 20/10 anh muốn xem lại mấy cảnh đẹp nhất của dự án quảng cáo tháng 6, làm clip 16 năm công ty nhé. {chua_te_deadline} lo giúp anh. Anh không ép, tùy em.
 _Dự án tháng 6. Hợp đồng 800 triệu. File gốc. Cái USB không nhãn. Cái túi áo khoác._
 _Bạn thả tim tin nhắn. Rồi bạn nhìn cái áo khoác treo sau cửa._

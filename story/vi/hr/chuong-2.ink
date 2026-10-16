@@ -246,7 +246,7 @@ _Ứng viên số 5: một anh chàng đẹp trai, nói tiếng Anh như gió, k
 === hr_1010_quan_ly_cam_xuc ===
 # ngay:10 # gio:10:00 # noi:can_ho_604 # bat_buoc
 _Thứ 7, ngày 10. Ngày lương. Lương chưa về. Ngân hàng "kiểm tra giao dịch lớn"._
-_Group Zalo-lô công ty: 312 tin nhắn trong 2 tiếng. Toàn dấu chấm hỏi._
+_Group Zola công ty: 312 tin nhắn trong 2 tiếng. Toàn dấu chấm hỏi._
 _Tin nhắn riêng của {giam_doc}: "{hr} ơi, em quản lý cảm xúc của anh em giúp anh nhé. Anh đang nói chuyện với ngân hàng. Hôm nay Ngày Giải phóng Thủ đô, anh nhớ Hà Nội quá."_
 _Bạn gõ tin nhắn vào group. Ngón tay lơ lửng._
 * [💬 "Cả nhà bình tĩnh nha, lương sẽ về sớm thôi 😊"]

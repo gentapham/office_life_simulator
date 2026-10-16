@@ -77,7 +77,7 @@ hr: *(giọng ngọt)* Alo, anh nghe nè {thanh_xin_nghi}. Để anh đoán… b
     -> END
 - { co(giay_nghi_om):
     ~ mat(giay_nghi_om)
-    _Bạn gửi ảnh giấy phòng khám qua Zalo-lô. Nghỉ có phép. Lương giữ nguyên._
+    _Bạn gửi ảnh giấy phòng khám qua Zola. Nghỉ có phép. Lương giữ nguyên._
 - else:
     ~ tien_cong(-590000)
 }

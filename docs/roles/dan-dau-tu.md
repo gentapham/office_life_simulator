@@ -46,7 +46,7 @@ Bảng số liệu của Chương cho thấy một điều không ai trong công
 | 📊 **Độ Chuẩn Số Liệu** | Kỹ năng phân tích thật dành cho công việc (0–100, bắt đầu ở 50) | Làm báo cáo tử tế, dự đoán đúng mốc, tắt màn hình chart | Lo nhìn chart trong giờ làm, báo cáo bị sai |
 
 **Niềm Tin Lên Thật** và **Độ Chuẩn Số Liệu** kéo ngược nhau: càng tin chart, càng ít thời gian cho số liệu thật.
-**Sổ Nợ vượt 40.000.000đ** thì kích hoạt sự kiện "Chủ Nợ Họp Mặt": các chủ nợ lập group Zalo-lô riêng để bàn cách đòi.
+**Sổ Nợ vượt 40.000.000đ** thì kích hoạt sự kiện "Chủ Nợ Họp Mặt": các chủ nợ lập group Zola riêng để bàn cách đòi.
 
 ---
 

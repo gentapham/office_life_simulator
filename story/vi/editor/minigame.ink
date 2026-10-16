@@ -9,7 +9,7 @@
 === editor_mg_dung_mv ===
 # noi:phong_dung_phim
 _Timeline trống. Nhạc nền 3 phút 40. Những vạch phách nhạc đứng thành hàng như hàng rào. Mỗi lần đổi cảnh phải rơi đúng một vạch._
-truong_phong: *(nhắn Zalo-lô)* Em cho cảnh anh đứng chỉ tay nhé. Chỗ nào đẹp nhất ấy.
+truong_phong: *(nhắn Zola)* Em cho cảnh anh đứng chỉ tay nhé. Chỗ nào đẹp nhất ấy.
 _Bạn bẻ khớp ngón tay. Kéo clip đầu tiên lên. Đêm bắt đầu._
 -> END
 

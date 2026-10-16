@@ -89,7 +89,7 @@ _Bạn ngả ra sau. Ánh nắng đầu tiên chiếu qua cửa sổ phòng gác
     ~ vu_dem_than_toc_2910 = true
     _Cue sheet Đại Nhạc Hội Siêu Nhân: 47 trên 47. Cue cuối: "Pháo giấy… Go!"_
 }
-giam_doc: *(Zalo-lô, 8 giờ 01)* Anh nhận rồi. Thưởng nóng 500 nghìn. Cả thùng mì ly nữa. Anh không ép, tùy em ngủ hay không.
+giam_doc: *(Zola, 8 giờ 01)* Anh nhận rồi. Thưởng nóng 500 nghìn. Cả thùng mì ly nữa. Anh không ép, tùy em ngủ hay không.
 _Nước tới chân mới nhảy, mà nhảy là phải đẹp._
 -> END
 
@@ -107,7 +107,7 @@ _Hai phút. Chỉ hai phút. Nhưng hai phút là đủ để {truong_phong} g�
     }
     _Cue sheet: {vu_cue_sheet} trên 47. Thiếu đúng cue cuối. Cue quan trọng nhất._
 }
-giam_doc: *(Zalo-lô)* Anh nhận rồi. Cũng được.
+giam_doc: *(Zola)* Anh nhận rồi. Cũng được.
 _"Cũng được". Hai chữ nhẹ nhất mà nặng nhất trong từ điển của {giam_doc}._
 -> END
 

@@ -15,7 +15,7 @@ Ngân không ác. Ngân chỉ **không giữ được miệng**. Một tin nóng
 
 Ngân có hai bí mật lớn:
 - Ngân là **admin của trang "Confession G-Entertainment"**, trang ẩn danh nơi cả công ty gửi tâm sự, bóc phốt, chê sếp. Chỉ có IT Bảo biết, vì Bảo đọc được log. Bảo chưa từng hỏi, cũng chưa từng nói.
-- Ngân là người lập ra **group Zalo-lô bí mật "Hội Anti Sếp"** (14 thành viên), nơi mỗi tối mọi người xả hết bực bội về Thắng.
+- Ngân là người lập ra **group Zola bí mật "Hội Anti Sếp"** (14 thành viên), nơi mỗi tối mọi người xả hết bực bội về Thắng.
 
 ### Động cơ trong 30 ngày
 1. **Đưa Siêu Nhân Hồng lên 1 triệu người theo dõi.** Đây là việc của Ngân theo đúng nghĩa đen: con số nằm trên fanpage Ngân quản lý. Không đạt thì người đầu tiên bị hỏi là Ngân.

@@ -226,7 +226,7 @@ _{sieu_nhan_hong} ngồi cuối phòng, xem MV của chính mình, tay nắm ch�
 // ------------------------------------------------------------
 === designer_1010_tu_lanh ===
 # ngay:10 # gio:11:00 # noi:can_203
-_Thứ 7, ngày 10. Ngày nhận lương. App ngân hàng: 0 đồng chưa về. Group Zalo-lô: 214 tin nhắn chưa đọc, toàn chữ "ủa"._
+_Thứ 7, ngày 10. Ngày nhận lương. App ngân hàng: 0 đồng chưa về. Group Zola: 214 tin nhắn chưa đọc, toàn chữ "ủa"._
 _Tủ lạnh căn 203 chỉ còn một hộp sữa chua và một trái chanh khô._
 ~ ds_cam(-10)
 sales: *(nhắn)* Chị {designer}, lương trễ rồi. Tin chị đi, nhận job LL đi. Chị che cho.

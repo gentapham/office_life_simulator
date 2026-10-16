@@ -43,7 +43,7 @@ _Bạn nhìn tin nhắn rất lâu. Rồi viết vào sổ: "Học phí: 3 tri�
 === ke_toan_mg_bang_luong_mo_dau ===
 # noi:phong_ke_toan # gio:09:00 # dieu_kien:luong_ve_tre
 _Bảng lương 21 người. Tiền đã về nhưng ngân hàng chỉ cho chuyển từng đợt. Ai trước, ai sau, ai được ứng?_
-_Mỗi người có một thanh "độ bực" tăng dần theo giờ trên group Zalo-lô. {hong_hot} đã đỏ 80%._
+_Mỗi người có một thanh "độ bực" tăng dần theo giờ trên group Zola. {hong_hot} đã đỏ 80%._
 * [📋 Xếp theo hoàn cảnh: người khó trước.]
     ke_toan: {thuc_tap_sinh}, Bác {bac_bao_ve}, {idol_het_thoi} trước. Rồi tới mấy đứa thuê nhà.
 * [🔤 Xếp theo bảng chữ cái. Công bằng tuyệt đối.]

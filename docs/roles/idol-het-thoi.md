@@ -18,7 +18,7 @@ Năm 2015, Phát là sinh viên năm ba, tối nào cũng ôm đàn hát ở m�
 Phát coi Thắng như **anh cả**: người duy nhất từng tin Phát sẽ thành ngôi sao. Phát chưa bao giờ nói ra, nhưng sợ nhất là làm Thắng thất vọng.
 
 ### Động cơ trong 30 ngày
-- **Ngày 1/10**, Phát không được mời dự lễ ký hợp đồng. Phát biết tin qua group Zalo-lô, xông vào phòng họp, đeo kính đen, hỏi Nguyên: *"Em biết anh là ai không?"*. Nguyên lễ phép: *"Dạ… anh là ai ạ?"*.
+- **Ngày 1/10**, Phát không được mời dự lễ ký hợp đồng. Phát biết tin qua group Zola, xông vào phòng họp, đeo kính đen, hỏi Nguyên: *"Em biết anh là ai không?"*. Nguyên lễ phép: *"Dạ… anh là ai ạ?"*.
 - Phòng chờ riêng của Phát bị đổi thành **phòng chờ của Siêu Nhân Hồng**, có sẵn bánh chuối chiên theo điều khoản số 4 của hợp đồng. Chuối chiên. Trong bài hát của Phát. Phát coi đây là tuyên chiến.
 - **Hợp đồng độc quyền của Phát hết hạn ngày 31/10/2026.** Nếu Siêu Nhân Hồng nổi, công ty có thể không gia hạn. Phát phải **giành lại hào quang** trước khi bị thay thế, hoặc học cách đứng chung sân khấu.
 

@@ -268,7 +268,7 @@ giam_doc: *(gọi video)* Bao nhiêu rồi em? Bao nhiêu view rồi?
 _Thứ 7, ngày 10. Ngày lương. Ứng dụng ngân hàng: không có gì._
 _Hộp thư của sếp, 8:47: "Ngân hàng Tín Dụng Đen Đủi: Lệnh chuyển lương của Quý công ty đang được tạm giữ để kiểm tra giao dịch lớn."_
 _Bạn biết vì sao. Vì cái biệt thự trên đồi._
-_Group Zalo-lô công ty bắt đầu sôi. Tin nhắn riêng nhảy liên tục: "{thanh_ninh} ơi lương sao chưa về?"_
+_Group Zola công ty bắt đầu sôi. Tin nhắn riêng nhảy liên tục: "{thanh_ninh} ơi lương sao chưa về?"_
 * [😶 Trả lời ai cũng một câu: "Thứ 7 ngân hàng nghỉ mà, thứ 2 về nha."]
     _Câu trả lời đúng một nửa. Nửa còn lại nằm trong thư mục "Ngân hàng"._
     ~ tn_email(1)

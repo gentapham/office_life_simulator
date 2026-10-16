@@ -81,7 +81,7 @@ Các tài liệu liên quan:
 
 | Giờ trong game | Hoạt động |
 |---|---|
-| 06:30 | Thức dậy ở nhà trọ. Kiểm tra điện thoại: tin nhắn Zalo-lô, group công ty |
+| 06:30 | Thức dậy ở nhà trọ. Kiểm tra điện thoại: tin nhắn Zola, group công ty |
 | 07:00 – 08:00 | Ăn sáng, đi làm. Sự kiện trên đường: kẹt xe, mưa ngập, gặp đồng nghiệp ở quán bánh mì |
 | 08:00 | Chấm công. Trễ 1 phút là bị ghi tên |
 | 08:00 – 12:00 | Ca sáng: nhiệm vụ công việc, họp, hội thoại |
@@ -235,7 +235,7 @@ Mỗi lần chơi, game chọn ngẫu nhiên **một NPC làm "rắn thứ hai"*
 
 - **Nhạc nền theo địa điểm**: văn phòng (lofi nhẹ), siêu thị (nhạc siêu thị sến), quán nhậu (nhạc remix), rạp phim, nhà trọ ban đêm.
 - **"Giọng" nhân vật**: không lồng tiếng thật, mà phát âm thanh lí nhí theo từng chữ kiểu Animal Crossing. Mỗi role có cao độ và tốc độ riêng. Con chó thì phát tiếng "gâu".
-- **Hiệu ứng**: gõ phím, máy in kẹt, máy chấm công "tít", thông báo Zalo-lô, tiếng còi xe, mưa.
+- **Hiệu ứng**: gõ phím, máy in kẹt, máy chấm công "tít", thông báo Zola, tiếng còi xe, mưa.
 - **Nguồn âm thanh**: chỉ dùng âm thanh được phép dùng miễn phí (CC0) hoặc tự tạo bằng code. Không lấy nhạc có bản quyền.
 
 ---

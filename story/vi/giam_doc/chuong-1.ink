@@ -139,7 +139,7 @@ _Bánh còn lại "Bác {bac_bao_ve} năm". Không ai sửa._
 // ------------------------------------------------------------
 === giam_doc_0110_nhan_22h ===
 # ngay:1 # gio:22:00 # noi:biet_thu
-_22 giờ. Bạn ngồi một mình ở bàn ăn 10 ghế. Mở group Zalo-lô "{cong_ty} - Toàn công ty"._
+_22 giờ. Bạn ngồi một mình ở bàn ăn 10 ghế. Mở group Zola "{cong_ty} - Toàn công ty"._
 _Theo thói quen mười năm, ngón tay đã tự gõ: "Mai 8h sáng các em có mặt đông đủ…"_
 * [📲 Gửi tin giao việc như mọi khi, kèm 5 cái emoji pháo hoa.]
     -> giam_doc_mg_nhan_22h_mo_dau

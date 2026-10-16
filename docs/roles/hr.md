@@ -102,7 +102,7 @@ Tuấn không làm ra sản phẩm, nhưng Tuấn **quyết định con người
 - **5/10:** Thắng giao tuyển gấp "nhân viên chăm sóc Siêu Nhân Hồng". Minigame phỏng vấn kéo dài cả tuần.
 - **6/10:** buổi chụp poster, khoảng 10:30 Nguyên bỏ ngang để đẩy xe chè của Bà Bảy ra khỏi ổ gà. Vũ chạy tới phòng HR: *"Anh tuyển giùm em người nào giữ được ổng đi!"*
 - **9/10:** 19:30 cả công ty ở lại chờ MV "Hồng Hóa Việt Nam" lên sóng lúc 20:00; Tuấn quyết chuyện "share". Sơn xin nghỉ "đi khám mắt chung với Lĩnh cho vui".
-- **10–12/10:** lương về trễ, 10:00 thứ Hai mới về. 12:30 ở Sống Ảo, thẻ phụ của Long bị từ chối, Duy làm rơi thẻ kim cương. Thắng ra chỉ thị: *"Em quản lý cảm xúc của anh em giúp anh."* Tuấn phải vào group Zalo-lô trấn an 21 người đang nổi điên. Mỗi tin nhắn Tuấn gửi lại khiến group nổi điên thêm, vì ai cũng tưởng HR vào để ghi tên.
+- **10–12/10:** lương về trễ, 10:00 thứ Hai mới về. 12:30 ở Sống Ảo, thẻ phụ của Long bị từ chối, Duy làm rơi thẻ kim cương. Thắng ra chỉ thị: *"Em quản lý cảm xúc của anh em giúp anh."* Tuấn phải vào group Zola trấn an 21 người đang nổi điên. Mỗi tin nhắn Tuấn gửi lại khiến group nổi điên thêm, vì ai cũng tưởng HR vào để ghi tên.
 
 ### Chương 3: "Bóng Tối Không Có Danh Sách" (13/10 – 16/10)
 - **14/10:** Sơn xin nghỉ "về quê phụ gặt lúa". Nhà Sơn ở Ven Đô, là vườn rau. Minigame "Thám Tử Đơn Nghỉ Phép".

@@ -236,7 +236,7 @@ _Bạn nhớ ra: {dan_dau_tu} còn nợ bạn 500 nghìn "mượn tiền ăn tr�
 === bien_kich_0910_dem_binh_luan ===
 # ngay:9 # gio:23:10 # noi:gac_mai_so_7
 _Đêm. Gác mái. Bạn nằm đọc bình luận MV. Bí nằm trên bụng bạn, nặng như một deadline._
-_Tin nhắn Zalo-lô, 23:12, {thuc_tap_sinh}: "Dạ chị ơi MV hay quá ạ. Em xem 7 lần rồi. Chị giỏi quá ạ."_
+_Tin nhắn Zola, 23:12, {thuc_tap_sinh}: "Dạ chị ơi MV hay quá ạ. Em xem 7 lần rồi. Chị giỏi quá ạ."_
 * [😇 Trả lời: "Câu quay lưng đi là của anh gợi ý đó. Cảm ơn anh."]
     ~ qh("thuc_tap_sinh", 10)
     ~ bk_that(2)
@@ -255,7 +255,7 @@ _Tin nhắn Zalo-lô, 23:12, {thuc_tap_sinh}: "Dạ chị ơi MV hay quá ạ. E
 // ------------------------------------------------------------
 === bien_kich_1010_thu_gui_anh_chi_em ===
 # ngay:10 # gio:10:00 # noi:gac_mai_so_7 # bat_buoc
-_Thứ 7, ngày lương. Lương chưa về. Group Zalo-lô sôi như nồi lẩu. Điện thoại bạn rung: {giam_doc} gọi._
+_Thứ 7, ngày lương. Lương chưa về. Group Zola sôi như nồi lẩu. Điện thoại bạn rung: {giam_doc} gọi._
 giam_doc: {bien_kich} à, em viết hộ anh cái thư gửi anh chị em nhé. Lương về trễ hai ngày thôi mà group nó căng quá.
 giam_doc: Nhấn mạnh là công ty là gia đình nhé. Anh không ép, tùy em.
 _Bạn mở laptop. Bí ngồi trên bàn phím, như muốn góp ý._

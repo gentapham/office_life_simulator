@@ -312,7 +312,7 @@ _Bạn mở nhóm "Hội Cá Viên Chiên" bằng tài khoản ChuoiChien89._
 === quan_ly_idol_1210_luong_ve ===
 # ngay:12 # gio:10:05 # noi:tang_1 # bat_buoc
 ~ thai_ly_ca_phe = 0
-_Thứ 2. 10 giờ, lương về trễ 2 ngày. Group Zalo-lô nổ như chợ. Trưa nay ở Cà Phê Sống Ảo chắc sẽ có chuyện: {con_ong_chau_cha} rủ cả đám đi uống mừng lương bằng thẻ phụ của sếp._
+_Thứ 2. 10 giờ, lương về trễ 2 ngày. Group Zola nổ như chợ. Trưa nay ở Cà Phê Sống Ảo chắc sẽ có chuyện: {con_ong_chau_cha} rủ cả đám đi uống mừng lương bằng thẻ phụ của sếp._
 _Họp giao ban. Lần này bạn ngồi gần cửa. Máy phải reo: Lưu Lực. Bạn tắt. Máy phải reo lần hai._
 dan_dau_tu: *(thì thầm, ngồi kế bên)* {quan_ly_idol}. Hôm qua tui thấy thằng {idol_het_thoi} ở tiệm cầm đồ Cứu Nguy. Nó ôm cái cúp. Tui không biết nó cầm hay không.
 * [💍 Họp xong chạy ra tiệm cầm đồ Cứu Nguy.]

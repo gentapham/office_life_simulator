@@ -162,7 +162,7 @@ _{ran_doc} vô làm mới 9 ngày, mà hỏi han ai cũng thân như quen 10 nă
 // ------------------------------------------------------------
 === thanh_xin_nghi_1010_tien_may_do ===
 # ngay:10 # gio:10:00 # noi:nha_ven_do # bat_buoc
-_Thứ 7, ngày 10. Ngày lương. Lương chưa về, ngân hàng "kiểm tra giao dịch lớn". Group Zalo-lô sôi sục._
+_Thứ 7, ngày 10. Ngày lương. Lương chưa về, ngân hàng "kiểm tra giao dịch lớn". Group Zola sôi sục._
 _Bạn nhìn bộ đồ kim tuyến cũ trên móc. Rách một bên vai, bong một mảng kim tuyến to bằng bàn tay. Vòng 2 cần đồ mới. Thợ may báo giá: 1.200.000đ._
 * [💰 Nhắn chị {ke_toan} xin ứng lương.]
     ke_toan: Ứng lương lúc lương chưa về? Em ứng cái gì? Mà ứng làm gì? Hóa đơn đâu em?

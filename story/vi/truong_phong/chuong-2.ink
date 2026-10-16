@@ -321,7 +321,7 @@ _Chủ nhật, Ngày Quốc tế Trẻ em gái. Group công ty rủ nhau đăng 
 === truong_phong_1210_hop_luong_tre ===
 # ngay:12 # gio:08:15 # noi:phong_hop_sang_tao # bat_buoc
 ~ tp_lich_co_dinh()
-_Thứ Hai. Lương vẫn chưa về. Group Zalo-lô sôi như nồi lẩu. Bạn quyết định: phải họp._
+_Thứ Hai. Lương vẫn chưa về. Group Zola sôi như nồi lẩu. Bạn quyết định: phải họp._
 ~ tp_hop(1)
 truong_phong: Hôm nay mình họp về việc lương về trễ.
 chua_te_deadline: Ủa anh biết lương ở đâu hả?

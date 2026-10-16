@@ -59,11 +59,11 @@ const texNon = () => veTex("non", 8, 64, (g, w, h) => {
 const texVung = () => veTex("vung", 256, 256, (g) => {
   g.fillStyle = "#000"; g.fillRect(0, 0, 256, 256);
   let s = 77; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
-  g.filter = "blur(3px)";
+  g.filter = "blur(1.5px)";
   for (let k = 0; k < 4; k++) {
     const ox = (k % 2) * 128 + 64, oy = Math.floor(k / 2) * 128 + 64;
     g.fillStyle = "#fff";
-    for (let i = 0; i < 7; i++) { g.beginPath(); g.ellipse(ox + (r() - 0.5) * 50, oy + (r() - 0.5) * 34, 14 + r() * 22, 9 + r() * 14, r() * 3, 0, 7); g.fill(); }
+    for (let i = 0; i < 9; i++) { g.beginPath(); g.ellipse(ox + (r() - 0.5) * 56, oy + (r() - 0.5) * 40, 20 + r() * 26, 12 + r() * 16, r() * 3, 0, 7); g.fill(); }
   }
   g.filter = "none";
 }, { srgb: false });
@@ -180,7 +180,7 @@ export class BoQuad {
   // a (u0,v0) b (u1,v0) c (u1,v1) d (u0,v1)
   them(a, b, c, d, [u0, v0, u1, v1] = [0, 0, 1, 1], mau = [1, 1, 1]) {
     const e1 = [d[0] - a[0], d[1] - a[1], d[2] - a[2]], e2 = [b[0] - a[0], b[1] - a[1], b[2] - a[2]];
-    let n = [e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]];
+    let n = [e2[1] * e1[2] - e2[2] * e1[1], e2[2] * e1[0] - e2[0] * e1[2], e2[0] * e1[1] - e2[1] * e1[0]]; // pháp tuyến theo chiều quay của đỉnh
     const l = Math.hypot(...n) || 1; n = n.map(v => v / l);
     for (const [P, U, V] of [[a, u0, v0], [b, u1, v0], [c, u1, v1], [a, u0, v0], [c, u1, v1], [d, u0, v1]]) { this.p.push(P[0], P[1], P[2]); this.uv.push(U, V); this.m.push(...mau); this.n.push(...n); }
   }
@@ -188,7 +188,9 @@ export class BoQuad {
   nen(x, z, w, d, goc = 0, y = 0.03, uv, mau) {
     const c = Math.cos(goc), s = Math.sin(goc);
     const P = (lx, lz) => [x + lx * c + lz * s, y, z - lx * s + lz * c];
-    this.them(P(-w / 2, -d / 2), P(w / 2, -d / 2), P(w / 2, d / 2), P(-w / 2, d / 2), uv, mau);
+    // thứ tự đỉnh ngược chiều kim đồng hồ khi nhìn từ trên xuống: mặt trước hướng lên trời
+    const [u0, v0, u1, v1] = uv || [0, 0, 1, 1];
+    this.them(P(-w / 2, d / 2), P(w / 2, d / 2), P(w / 2, -d / 2), P(-w / 2, -d / 2), [u0, v1, u1, v0], mau);
   }
   get rong() { return this.p.length === 0; }
   hinh() {
@@ -218,9 +220,53 @@ export const GIO_MO = {
   D: [[0, 24]],               // cửa hàng 24 giờ
   nha: [[6, 22]],             // nhà ở trong hẻm: mở cửa ban ngày
 };
-const MO_KHUYA = /ỐC ĐÊM|KARAOKE|NHẬU|LẨU DÊ|BIDA|KHÁCH SẠN|HỦ TIẾU|MÌ CAY|GÀ RÁN/;
-const MO_TOI = /NHÀ THUỐC|TRÀ SỮA|CHÈ|BÁNH MÌ|CÀ PHÊ|PHỞ|CƠM TẤM|BÚN BÒ|SỮA TƯƠI|BÁNH XÈO|TIỆM BÁNH|ĐIỆN THOẠI|TẠP HÓA|GỘI ĐẦU|SPA|NAIL/;
-export function nhomQuan(ten) { if (!ten) return "nha"; if (/24H/.test(ten)) return "D"; if (MO_KHUYA.test(ten)) return "C"; if (MO_TOI.test(ten)) return "B"; return "A"; }
+const MO_KHUYA = /ỐC ĐÊM|KARAOKE|NHẬU|LẨU DÊ|BIDA|PHOTO/;
+const MO_TOI = /NHÀ THUỐC|TRÀ SỮA|CHÈ|BÁNH MÌ|CÀ PHÊ|PHỞ|CƠM TẤM|BÚN BÒ|SỮA TƯƠI|BÁNH XÈO|TIỆM BÁNH|ĐIỆN THOẠI|TẠP HÓA|GỘI ĐẦU|SPA|NAIL|HỦ TIẾU|MÌ CAY|GÀ RÁN/;
+// D: mở suốt đêm (cửa hàng tiện lợi, khách sạn); C: quán nhậu, ốc, karaoke tới khuya; B: quán ăn, nhà thuốc tới 22h30; A: tiệm thường
+export function nhomQuan(ten) { if (!ten) return "nha"; if (/TIỆN LỢI|KHÁCH SẠN/.test(ten)) return "D"; if (MO_KHUYA.test(ten)) return "C"; if (MO_TOI.test(ten)) return "B"; return "A"; }
+
+// Bên trong cửa hàng nhìn từ ngoài vào: kệ hàng (tạp hóa), bàn ghế inox và bảng thực đơn (quán ăn), quầy kính, móc áo (tiệm)
+function texTrong(kieu, sang = false) {
+  return veTex("trong" + kieu + sang, 256, 160, (g, w, h) => {
+    let sd = kieu.length * 977 + (sang ? 7 : 0); const r = () => (sd = (sd * 16807) % 2147483647) / 2147483647;
+    const chon = a => a[Math.floor(r() * a.length)];
+    g.fillStyle = sang ? "#f2f4f2" : kieu === "quanAn" ? "#d8e2c8" : "#e2d6bc"; g.fillRect(0, 0, w, h);
+    g.fillStyle = sang ? "#d8dcdc" : "#8a8478"; g.fillRect(0, h * 0.84, w, h * 0.16);               // nền gạch
+    g.strokeStyle = "rgba(0,0,0,.15)"; for (let x = 0; x < w; x += 22) { g.beginPath(); g.moveTo(x, h * 0.84); g.lineTo(x - 14, h); g.stroke(); }
+    g.fillStyle = "#ffffff"; g.fillRect(w * 0.2, 6, w * 0.6, 5); if (w > 0) g.fillRect(w * 0.1, 14, 3, 1);     // đèn tuýp
+    const MAU = ["#c0262d", "#2a5aa8", "#e8b830", "#2e8b57", "#f26fa6", "#e8702a", "#f6f6f2", "#7b4bb3"];
+    if (kieu === "tapHoa") {
+      for (let k = 0; k < 4; k++) {
+        const y = 30 + k * 28; g.fillStyle = sang ? "#b8c0c4" : "#6b4a2f"; g.fillRect(8, y + 20, w - 16, 4);
+        for (let x = 10; x < w - 14;) { const bw = 5 + r() * 9, bh = 10 + r() * 9; g.fillStyle = chon(MAU); g.fillRect(x, y + 20 - bh, bw, bh); x += bw + 1; }
+      }
+      if (!sang) { g.fillStyle = "#c0262d"; g.fillRect(w - 40, 16, 22, 26); g.fillStyle = "#fff"; g.fillRect(w - 37, 22, 16, 16); } // lịch treo
+      g.fillStyle = "rgba(160,200,220,.7)"; g.fillRect(w * 0.55, h * 0.62, w * 0.38, h * 0.22); g.fillStyle = "#555"; g.fillRect(w * 0.55, h * 0.6, w * 0.38, 3); // quầy kính
+    } else if (kieu === "quanAn") {
+      g.fillStyle = "#c0262d"; g.fillRect(w * 0.3, 22, w * 0.4, 46); g.fillStyle = "#ffe14d"; for (let k = 0; k < 5; k++) g.fillRect(w * 0.33, 28 + k * 8, w * (0.2 + r() * 0.13), 3); // bảng thực đơn
+      g.fillStyle = "#555"; g.beginPath(); g.arc(w * 0.85, 34, 12, 0, 7); g.fill(); g.fillStyle = "#9ab"; g.beginPath(); g.arc(w * 0.85, 34, 9, 0, 7); g.fill(); // quạt treo tường
+      for (let k = 0; k < 3; k++) {
+        const x = 20 + k * 80; g.fillStyle = "#c8ccd0"; g.fillRect(x, h * 0.62, 56, 5); g.fillRect(x + 4, h * 0.62, 3, h * 0.22); g.fillRect(x + 49, h * 0.62, 3, h * 0.22); // bàn inox
+        for (const dx of [-6, 58]) { g.fillStyle = chon(["#c0262d", "#2a5aa8"]); g.fillRect(x + dx, h * 0.7, 10, 4); g.fillRect(x + dx + 1, h * 0.7, 2, h * 0.14); g.fillRect(x + dx + 7, h * 0.7, 2, h * 0.14); }
+        g.fillStyle = "#f6f6f2"; g.fillRect(x + 12, h * 0.6, 8, 3); g.fillStyle = "#d84a2a"; g.fillRect(x + 30, h * 0.59, 6, 4); // tô, chai tương ớt
+      }
+    } else if (kieu === "nhaO") {
+      g.fillStyle = "#8a1a14"; g.fillRect(w * 0.38, 16, w * 0.24, 30); g.fillStyle = "#d8a83a"; g.fillRect(w * 0.38, 14, w * 0.24, 4); g.fillRect(w * 0.47, 24, w * 0.06, 12); // bàn thờ gia tiên
+      g.fillStyle = "#ff4a30"; g.fillRect(w * 0.4, 20, 4, 4); g.fillRect(w * 0.58, 20, 4, 4);
+      g.fillStyle = "#5a3a22"; g.fillRect(w * 0.08, h * 0.55, w * 0.34, h * 0.29); g.fillStyle = "#1c1c1f"; g.fillRect(w * 0.12, h * 0.36, w * 0.26, h * 0.18); // kệ tivi, tivi
+      g.fillStyle = "#7a4a2a"; g.fillRect(w * 0.55, h * 0.6, w * 0.38, h * 0.08); g.fillRect(w * 0.55, h * 0.5, w * 0.05, h * 0.34); g.fillRect(w * 0.88, h * 0.5, w * 0.05, h * 0.34); // ghế gỗ
+      g.fillStyle = "#2a5aa8"; g.fillRect(w * 0.7, h * 0.7, 18, 16); // xe đạp con nít / thùng đồ
+    } else {
+      g.fillStyle = "#3a3d44"; g.fillRect(12, 34, w * 0.5, 3); // giá treo đồ
+      for (let x = 16; x < w * 0.5; x += 12) { g.fillStyle = chon(MAU); g.fillRect(x, 37, 10, 30 + r() * 14); }
+      g.fillStyle = chon(["#f26fa6", "#1f4fa8", "#2e8b57"]); g.fillRect(w * 0.62, 20, w * 0.3, 44); g.fillStyle = "#fff"; g.fillRect(w * 0.65, 30, w * 0.24, 6); g.fillRect(w * 0.65, 42, w * 0.16, 4); // áp phích
+      g.fillStyle = "rgba(160,200,220,.75)"; g.fillRect(10, h * 0.6, w - 20, h * 0.24); g.fillStyle = "#555"; g.fillRect(10, h * 0.58, w - 20, 3);
+      for (let x = 18; x < w - 24; x += 18) { g.fillStyle = chon(["#1c1c1f", "#c8ccd0", "#e8b830"]); g.fillRect(x, h * 0.66, 9, 14); } // hàng trong tủ kính
+    }
+  });
+}
+const TEN_AN = /CƠM|PHỞ|BÁNH|TRÀ|CÀ PHÊ|BÚN|HỦ TIẾU|ỐC|NHẬU|CHÈ|XÈO|GÀ|LẨU|SỮA|MÌ/;
+const TEN_BAY = /THOẠI|THỜI TRANG|NAIL|SPA|GỘI|NHA KHOA|VÀNG|ĐIỆN MÁY|XE ĐIỆN|KARAOKE|KHÁCH SẠN|BIDA/;
 
 // ---------- Vật liệu đêm dùng chung (tạo trước khi dựng nhà) ----------
 export function taoVatLieuDem() {
@@ -229,8 +275,11 @@ export function taoVatLieuDem() {
   const kinh = [0x9a7a3a, 0x8a9aa8, 0xa88a4a].map(() => dong(new THREE.MeshLambertMaterial({ color: 0x5d7d96, flatShading: true })));
   const MAU_KINH = [new THREE.Color(0x9a7a3a), new THREE.Color(0x8fa2b4), new THREE.Color(0xb08c48)];
   const GIO_KINH = [[[18, 23.5], [5.2, 6.3]], [[18.4, 25.2]], [[19, 22.2], [4.6, 6]]];
-  // trong cửa hàng 24 giờ: đèn trắng sáng
-  const trongSang = dong(new THREE.MeshLambertMaterial({ color: 0xdfe6ea, flatShading: true }));
+  // bên trong cửa hàng: ba kiểu, tối bật đèn (bản đồ phát sáng chính là ảnh bên trong); cửa hàng 24 giờ sáng trắng
+  const trong = ["tapHoa", "quanAn", "trungBay", "nhaO"].map(k => { const t = texTrong(k); return dong(new THREE.MeshLambertMaterial({ map: t, emissiveMap: t, emissive: 0x000000 })); });
+  const tS = texTrong("tapHoa", true);
+  const trongSang = dong(new THREE.MeshLambertMaterial({ map: tS, emissiveMap: tS, emissive: 0x000000 }));
+  const MAU_TRONG = new THREE.Color(0.95, 0.82, 0.62);
   const NHOM = ["A", "B", "C", "D", "nha"];
   const cuaCuon = {}, toiBien = {}, khe = {}, hatRa = {};
   const tc = texCuaCuon();
@@ -244,8 +293,9 @@ export function taoVatLieuDem() {
   const cuaSo = [];
   const st = { kinh: [-1, -1, -1], quan: {}, cuaSo: -1 };
   return {
-    kinh, trongSang, cuaCuon, toiBien, khe, hatRa, cuaSo,
+    kinh, trong, trongSang, cuaCuon, toiBien, khe, hatRa, cuaSo,
     chonKinh: (r) => kinh[Math.floor(r * 3) % 3],
+    chonTrong: (ten) => !ten ? trong[3] : TEN_AN.test(ten) ? trong[1] : TEN_BAY.test(ten) ? trong[2] : trong[0],
     capNhat(mt) {
       const { gio: h, toi } = mt;
       // cửa sổ nhà ống
@@ -253,7 +303,8 @@ export function taoVatLieuDem() {
         const f = trongGio(h, GIO_KINH[i]) ? toi : 0;
         if (Math.abs(f - st.kinh[i]) > 0.02) { st.kinh[i] = f; m.emissive.copy(MAU_KINH[i]).multiplyScalar(f); }
       });
-      trongSang.emissive.setScalar(0.75 * toi);
+      trongSang.emissive.setScalar(0.85 * toi);
+      for (const m of trong) m.emissive.copy(MAU_TRONG).multiplyScalar(0.8 * toi); // ghi mỗi khung hình (game3d cũng đổi màu vật liệu đầu tiên)
       // cửa cuốn, khe sáng, bảng hiệu tắt đèn
       for (const k of NHOM) {
         const mo = trongGio(h, GIO_MO[k]);
@@ -299,6 +350,7 @@ export function dungChiTietPho(ctx) {
   const chon = a => a[Math.floor(rnd() * a.length)];
   const H = (w, h, d, mat, x, y, z, cha = nhom) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mat === "number" ? vl(mat) : mat); m.position.set(x, y + h / 2, z); cha.add(m); return m; };
   const mp = (w, h, mat, x, y, z, cha, ry = 0) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat); m.position.set(x, y, z); m.rotation.y = ry; cha.add(m); return m; };
+  const haiMat = (m) => { m.material.side = THREE.FrontSide; const b = m.clone(); b.rotation.y += Math.PI; m.parent?.add(b); return m; };
   const gan = (x, z, r) => thanDung.some(([px, pz]) => Math.abs(px - x) < r && Math.abs(pz - z) < r);
   const capNhatDs = [];
 
@@ -391,7 +443,7 @@ export function dungChiTietPho(ctx) {
     const k = n.nhomQuan;
     mp(w - 0.6, 2.6, DEM.cuaCuon[k], w / 2, 1.3, 0.05, g);
     if (n.coBien) mp(w - 0.3, 1.15, DEM.toiBien[k], w / 2, 3.68, 0.16, g);
-    if (rnd() < 0.65) {
+    if (rnd() < 0.45) {
       khe[k].them(theo(g, 0.32, 0.005, 0.07), theo(g, w - 0.32, 0.005, 0.07), theo(g, w - 0.32, 0.05, 0.07), theo(g, 0.32, 0.05, 0.07), [0, 0, 1, 0.02]);
       khe[k].them(theo(g, 0.3, 0.035, 0.07), theo(g, w - 0.3, 0.035, 0.07), theo(g, w - 0.3, 0.035, 1.1), theo(g, 0.3, 0.035, 1.1), [0, 0, 1, 1]);
     }
@@ -519,9 +571,9 @@ export function dungChiTietPho(ctx) {
   const vlVung2 = new THREE.MeshBasicMaterial({ color: 0x8a9aa8, alphaMap: texVung(), transparent: true, opacity: 0, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -3 });
   const meVung = vung.luoi(vlVung2, 1);
   const _c = new THREE.Color(), NEN_VUNG = new THREE.Color(0x24272c);
-  meVung.onBeforeRender = (r, scene) => { if (scene.fog) vlVung2.color.copy(_c.copy(scene.fog.color).lerp(NEN_VUNG, 0.4)); };
+  meVung.onBeforeRender = (r, scene) => { if (scene.fog) vlVung2.color.copy(_c.copy(scene.fog.color).lerp(NEN_VUNG, 0.55)); }; // phản chiếu màu trời
   nhom.add(meVung);
-  capNhatDs.push(mt => { vlVung2.opacity = Math.min(0.82, mt.uot * 0.95); vlVung2.visible = mt.uot > 0.04; });
+  capNhatDs.push(mt => { vlVung2.opacity = Math.min(0.7, mt.uot * 0.85); vlVung2.visible = mt.uot > 0.04; });
 
   // ===== 7. Cà phê cóc: ghế nhựa thấp xếp hàng sát tường, ngồi nhìn ra đường =====
   const gheNhua = (x, z, mau = chon([0xc0262d, 0x2a5aa8, 0x2e8b57])) => { H(0.32, 0.04, 0.32, mau, x, 0.4, z); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) H(0.04, 0.4, 0.04, mau, x + a * 0.13, 0, z + b * 0.13); };
@@ -541,7 +593,7 @@ export function dungChiTietPho(ctx) {
     const [tx, tz] = truc === "x" ? [x2 + 0.7, tuong + ra * 0.4] : [tuong + ra * 0.4, x2 + 0.7];
     H(0.55, 0.45, 0.4, 0xd02a2a, tx, 0, tz); H(0.57, 0.06, 0.42, 0xf2f2f2, tx, 0.45, tz);
     const b = new THREE.Mesh(new THREE.PlaneGeometry(0.62, 0.24), new THREE.MeshBasicMaterial({ map: bangNho("CÀ PHÊ", "#3a2416", "#f6e2b0"), side: THREE.DoubleSide }));
-    b.position.set(tx, 0.85, tz); b.rotation.y = truc === "x" ? (ra > 0 ? 0 : Math.PI) : (ra > 0 ? Math.PI / 2 : -Math.PI / 2); nhom.add(b); H(0.03, 0.62, 0.03, 0x5a5a5a, tx, 0.45, tz);
+    b.position.set(tx, 0.85, tz); b.rotation.y = truc === "x" ? (ra > 0 ? 0 : Math.PI) : (ra > 0 ? Math.PI / 2 : -Math.PI / 2); nhom.add(b); haiMat(b); H(0.03, 0.62, 0.03, 0x5a5a5a, tx, 0.45, tz);
     const cx = truc === "x" ? (x1 + x2) / 2 : tuong + ra * 0.7, cz = truc === "x" ? tuong + ra * 0.7 : (x1 + x2) / 2;
     if (truc === "x") can(x1 - 0.3, x2 + 1.0, Math.min(tuong, tuong + ra * 1.78), Math.max(tuong, tuong + ra * 1.78)); else can(Math.min(tuong, tuong + ra * 1.78), Math.max(tuong, tuong + ra * 1.78), x1 - 0.3, x2 + 1.0);
     for (let a = x1; a <= x2 + 0.7; a += 0.7) ctx.vatCan.push(truc === "x" ? { x: a, z: tuong + ra * 1.3, r: 0.5 } : { x: tuong + ra * 1.3, z: a, r: 0.5 });
@@ -556,7 +608,7 @@ export function dungChiTietPho(ctx) {
     const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = goc; nhom.add(g);
     g.add(taoXeMay(congNghe ? 0x2a2c31 : chon([0xc0262d, 0x1c1c1f, 0x2a5aa8]), "so"));
     const lx = taoNguoiLaiXe(rnd, { aoXeOm: congNghe }); lx.position.set(0, 0.86, -0.18); g.add(lx);
-    if (!congNghe) { const b = new THREE.Mesh(new THREE.PlaneGeometry(0.44, 0.17), new THREE.MeshBasicMaterial({ map: bangNho("XE ÔM", "#f2d23a", "#1c1c1f"), side: THREE.DoubleSide })); b.position.set(0, 0.86, 0.55); g.add(b); }
+    if (!congNghe) { const b = new THREE.Mesh(new THREE.PlaneGeometry(0.44, 0.17), new THREE.MeshBasicMaterial({ map: bangNho("XE ÔM", "#f2d23a", "#1c1c1f"), side: THREE.DoubleSide })); b.position.set(0, 0.86, 0.55); g.add(b); haiMat(b); }
     can(x - 0.45, x + 0.45, z - 0.45, z + 0.45); ctx.vatCan.push({ x, z, r: 0.7 });
   };
   xeOm(7.05, 43.45, Math.PI + 0.35); xeOm(-26.4, 43.4, Math.PI - 0.3); xeOm(61.3, 43.5, Math.PI + 0.25, true);

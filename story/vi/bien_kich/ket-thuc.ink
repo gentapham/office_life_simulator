@@ -167,7 +167,7 @@ _Đêm 31/10. Đại Nhạc Hội vừa xong, bạn còn chưa kịp tẩy lớp
 { bk_ban_cho_ll:
     _23 giờ 40, màn hình LED trên tòa LL bên kia đường đổi hình: bìa sách xanh lá chuối, "CÔNG TY LÀ GIA ĐÌNH. Phát hành 1/11. Sự thật về công ty đã làm Siêu Nhân Hồng thất vọng"._
 - else:
-    _23 giờ 40, bản chụp từng trang tiểu thuyết bắt đầu lan khắp group Zalo-lô của công ty. Không ai biết ai gửi đầu tiên. Chỉ biết là đến sáng 1/11, ai cũng đã đọc._
+    _23 giờ 40, bản chụp từng trang tiểu thuyết bắt đầu lan khắp group Zola của công ty. Không ai biết ai gửi đầu tiên. Chỉ biết là đến sáng 1/11, ai cũng đã đọc._
 }
 _Ai cũng đọc thấy mình trong đó. Với tên thật._
 _{giam_doc}: "ký mà không đọc". {dan_dau_tu}: "lúc nào cũng sắp giàu". {truong_phong}: "họp để bàn về việc giảm họp"._

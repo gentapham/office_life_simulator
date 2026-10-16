@@ -17,7 +17,7 @@
 
 > *Thành Phố Ước Mơ, 30/9/2026, 23:47.*
 > *Phòng giám đốc G-Entertainment. Thắng ngồi một mình, nhìn tờ giấy báo nợ của ngân hàng.*
-> *Group Zalo-lô công ty: "Mai các em đi làm nhé." Không ai "đã xem".*
+> *Group Zola công ty: "Mai các em đi làm nhé." Không ai "đã xem".*
 > *Có tiếng gõ cửa. Ngoài cửa là một người mặc bộ đồ siêu nhân màu hồng, tay xách một chiếc vali.*
 > **Siêu Nhân Hồng:** "Chào anh! Em muốn nổi tiếng. Anh nhận em hông?"
 > *Chiếc vali mở ra.*
@@ -95,7 +95,7 @@ Không lồng tiếng thật. Mỗi chữ hiện ra kèm một tiếng "bíp" ng
 
 ### 2.3. Hiệu ứng âm thanh
 - **Văn phòng:** gõ phím, chuột click, máy chấm công "tít", máy in kẹt, máy pha cà phê, cửa thang máy kẹt, điều hòa.
-- **Điện thoại:** thông báo Zalo-lô, chuông gọi, tiếng chụp màn hình, tiếng livestream có người vào.
+- **Điện thoại:** thông báo Zola, chuông gọi, tiếng chụp màn hình, tiếng livestream có người vào.
 - **Đường phố:** còi xe, kẹt xe, mưa, sấm, rao bánh mì.
 - **Giao diện:** chọn lựa chọn, lựa chọn có giờ (tiếng tích tắc), mở khóa lựa chọn ẩn, nhận tiền ("ting ting"), lên chỉ số, tụt chỉ số.
 - **Sự kiện:** mất điện (tiếng "phụt"), pháo hoa Đại Nhạc Hội Siêu Nhân, vỗ tay, khán giả reo hò.

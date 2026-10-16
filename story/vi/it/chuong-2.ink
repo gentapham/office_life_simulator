@@ -151,7 +151,7 @@ _Bạn nhìn quả trứng. Quả trứng nhìn lại bạn. Cả hai đều mon
     _Bạn ăn trong 3 phút, rồi về phòng server kiểm tra từng cổng mạng như kiểm tra mạch của bệnh nhân._
 * [🤝 "Tối nay mọi người đừng xem Tóp-tóp."]
     hong_hot: Anh nói vậy khác gì kêu cá đừng bơi! Mà thôi, để tui nhắn group giùm anh.
-    _Group Zalo-lô: "Tối nay 18:00 tới 20:00 ai coi Tóp-tóp bằng wifi công ty, IT biết hết đó nha (IT nói)." 21 người đã xem. 3 người thả tim._
+    _Group Zola: "Tối nay 18:00 tới 20:00 ai coi Tóp-tóp bằng wifi công ty, IT biết hết đó nha (IT nói)." 21 người đã xem. 3 người thả tim._
     ~ qh("hong_hot", 5)
     ~ it_on(10)
     ~ an(30)
@@ -227,7 +227,7 @@ _Bạn có linh cảm xấu, giống linh cảm khi nghe tiếng quạt server k
 // ------------------------------------------------------------
 === it_1010_luong_chua_ve ===
 # ngay:10 # gio:10:00 # noi:phong_server
-_Thứ 7, ngày 10. Lẽ ra là ngày lương. Group Zalo-lô: 147 tin nhắn, toàn là "lương về chưa?"._
+_Thứ 7, ngày 10. Lẽ ra là ngày lương. Group Zola: 147 tin nhắn, toàn là "lương về chưa?"._
 _Bạn đang ở công ty canh server. Trong lúc dọn dữ liệu nhân sự cũ, bạn thấy hồ sơ năm 2010 của Bác {bac_bao_ve}: "Ngày sinh: 10/10/1976"._
 _Hôm nay. Tròn 50 tuổi. Không ai biết._
 * [🎂 Ra tiệm mua một cái bánh bông lan nhỏ, cắm một cây nến.]

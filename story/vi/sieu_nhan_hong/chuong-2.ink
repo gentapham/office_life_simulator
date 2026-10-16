@@ -257,7 +257,7 @@ _{dan_dau_tu} nhắn: "Anh ơi! Có phải anh tạo hông? Nếu phải thì an
 # ngay:10 # gio:11:00 # noi:pantry # bat_buoc
 _Thứ 7, ngày 10. Ngày nhận lương. Lương chưa về. Bạn ghé công ty lấy đồ, nghe tiếng ai đó nói nhỏ ở pantry._
 thuc_tap_sinh: *(nói điện thoại)* Dạ… dạ cho em mượn tạm 100 nghìn ăn cơm tới thứ 2 được không ạ… dạ không sao, em hỏi người khác…
-_Group Zalo-lô công ty: 87 tin nhắn trong 1 tiếng. "Lương đâu?", "Ét o ét", "Còn 37 nghìn"._
+_Group Zola công ty: 87 tin nhắn trong 1 tiếng. "Lương đâu?", "Ét o ét", "Còn 37 nghìn"._
 * [💸 Chuyển tiền trả lương hộ cả công ty bằng Két Vé Số.]
     ~ snh_tra_luong_ho = true
     ~ snh_ket(30)

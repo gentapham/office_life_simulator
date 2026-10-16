@@ -140,7 +140,7 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 >    - 70%: {truong_phong} khen "Thấy chưa, sửa là khác hẳn!". Số Lần Bị Sửa +1, Stress −10
 >    - 30%: bị phát hiện. Uy tín −10
 > 3. 😶 *Đeo tai nghe, gõ phím thật mạnh.*
->    - {truong_phong} gọi thêm 2 lần rồi nhắn Zalo-lô lúc 22:00. Stress +10
+>    - {truong_phong} gọi thêm 2 lần rồi nhắn Zola lúc 22:00. Stress +10
 > 4. 🔒 *"Hôm bữa anh {giam_doc} nói thích bản này y nguyên mà anh."* (Chỉ hiện nếu đã có Huy Hiệu Bản Đầu Tiên)
 >    - {truong_phong} không dám cãi sếp. Poster được duyệt ngay. Cái Tôi +10
 
@@ -197,7 +197,7 @@ Quỳnh là **gương mặt hình ảnh** của chiến dịch: người ta có 
 > 3. 💬 *"Sếp ơi, logo năm 2010 là ai duyệt vậy ạ?"*
 >    - {giam_doc}: "Anh Genta duyệt. Hồi đó anh ấy bảo…" rồi kể chuyện khởi nghiệp 40 phút. Bạn biết thêm 1 tin mật về Genta
 
-### Mẫu 6: Anh Lá Chuối (27/10, 23:00, tin nhắn Zalo-lô)
+### Mẫu 6: Anh Lá Chuối (27/10, 23:00, tin nhắn Zola)
 
 > **Anh Lá Chuối:** Em ơi, file Hồng Ngoại xài tốt lắm. Mai sếp Lực đem đi gặp "nghệ sĩ". Thưởng nóng em thêm 2 triệu nè. Bên anh còn ghế full-time, lương gấp đôi, em qua hông?
 >

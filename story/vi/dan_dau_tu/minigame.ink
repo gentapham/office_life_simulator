@@ -201,7 +201,7 @@ _Cháy túi. Bụng réo. Công ty đang có tiệc. Tìm đồ ăn mà không b
 === dan_dau_tu_mg_an_chuc_thua ===
 _Bạn vừa mở nắp hộp cơm thì đèn flash lóe lên._
 hong_hot: Anh {dan_dau_tu}! Ăn chực bị bắt quả tang nha! Lên group liền!
-_Group Zalo-lô: ảnh bạn cầm hộp cơm, mặt như con mèo bị bắt quả tang trên bàn ăn. 18 lượt thả "haha"._
+_Group Zola: ảnh bạn cầm hộp cơm, mặt như con mèo bị bắt quả tang trên bàn ăn. 18 lượt thả "haha"._
 ~ danh_tieng = danh_tieng - 10
 ~ an(30)
 ~ cang_thang(10)

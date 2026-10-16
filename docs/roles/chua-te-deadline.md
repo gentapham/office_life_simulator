@@ -48,7 +48,7 @@ Phòng gác trên quán bida có một tấm nệm, một cái laptop dán đầ
 
 | Kỹ năng | Mô tả | Rủi ro |
 |---|---|---|
-| ⏳ **Dời Deadline** | Xin dời hạn 1 ngày bằng một lý do sáng tạo ("file đang render", "Zalo-lô lỗi font") | 🎲 40% bị bắt bài, Uy tín −10 |
+| ⏳ **Dời Deadline** | Xin dời hạn 1 ngày bằng một lý do sáng tạo ("file đang render", "Zola lỗi font") | 🎲 40% bị bắt bài, Uy tín −10 |
 | 🙏 **Nhờ Xíu** | Đẩy một việc cho Duy, Lĩnh hoặc Quỳnh. Họ làm, Vũ nhận | Quan hệ với người bị nhờ −5 mỗi lần. Nhờ Duy quá 5 lần thì {chi_dai} tới hỏi chuyện |
 | 🌙 **Đêm Thần Tốc** | Làm một mạch từ 22:00 tới 7:59. Giảm Độ Nước Tới Chân 50 | Năng lượng −80, hôm sau ngủ gật trong cuộc họp |
 | 📊 **Báo Cáo 80%** | Nói với Nhật là "xong 80% rồi anh" dù mới mở file | Nếu Nhật đòi xem file thì Uy tín −20 |
@@ -96,7 +96,7 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 - **1/10:** ký hợp đồng, 5 tỷ về tài khoản. Thắng vỗ vai Vũ trước cả công ty: *"Cả chiến dịch nằm trong tay em đấy. Anh không ép, tùy em."* Vũ gật đầu, về chỗ mở Tóp-tóp. Máy pha cà phê hỏng (Ngày Cà phê Quốc tế), Vũ nhờ Duy chạy ra ngoài mua.
 - **2/10:** họp lên chiến dịch. Nhật yêu cầu bảng tiến độ. Bảng của Vũ có đúng **một thanh màu hồng**: *"31/10: làm hết."* Lựa chọn: làm lại bảng tử tế, hay chém gió cho qua.
 - Sáng nào trên bàn Vũ cũng có một món quà màu hồng. Vũ chụp hình gửi Ngân: *"Bên bà lên kịch bản couple hả? Ok, tui phối hợp."*
-- **3/10 (tối):** Thắng nhắn group Zalo-lô lúc 22:00: *"Trước 20/10 anh muốn xem lại mấy cảnh đẹp nhất của dự án tháng 6, làm clip 16 năm công ty nhé."* Vũ đọc, thả tim, rồi lục tung phòng gác lúc 2 giờ sáng tìm cái USB không nhãn. Dưới nhà tiếng bi va nhau lách cách. Không thấy.
+- **3/10 (tối):** Thắng nhắn group Zola lúc 22:00: *"Trước 20/10 anh muốn xem lại mấy cảnh đẹp nhất của dự án tháng 6, làm clip 16 năm công ty nhé."* Vũ đọc, thả tim, rồi lục tung phòng gác lúc 2 giờ sáng tìm cái USB không nhãn. Dưới nhà tiếng bi va nhau lách cách. Không thấy.
 - **4/10:** Ngày Động vật. {cho} mặc áo, đeo nơ, nằm canh gầm cầu thang không cho ai lại gần. Vũ đi ngang, Tuất không gầm gừ mà ngửi ly cà phê sữa đá trên tay Vũ rất lâu. *Manh mối đầu tiên, người chơi rất dễ bỏ qua.*
 
 ### Chương 2: "MV Một Đêm" (5/10 – 12/10)
@@ -222,7 +222,7 @@ Vũ **không cố ý phá**, nhưng hoàn toàn có thể **phá vô ý**: cứ 
 
 ### Mẫu 6: Tin nhắn lúc nửa đêm (27/10)
 
-> **{sieu_nhan_hong}:** *(Zalo-lô, 23:47)* Bên LL trả gấp ba. Anh Thái nói anh tự quyết. Anh chỉ muốn hỏi một người thôi. Em muốn anh ở lại không?
+> **{sieu_nhan_hong}:** *(Zola, 23:47)* Bên LL trả gấp ba. Anh Thái nói anh tự quyết. Anh chỉ muốn hỏi một người thôi. Em muốn anh ở lại không?
 >
 > 1. 😇 *"Anh ở lại đi. Đại Nhạc Hội Siêu Nhân mà thiếu anh thì em chiếu cái gì."*
 >    - {sieu_nhan_hong} ở lại. Độ Tin Thật Lòng +10. Thái nhắn cảm ơn bạn lúc 1 giờ sáng

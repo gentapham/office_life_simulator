@@ -107,7 +107,7 @@ _Bấm "Xác nhận" lần cuối: còn 2 tỷ. Cho cả tháng. Cho cả chiế
 // ------------------------------------------------------------
 === ke_toan_0110_kinh_lup ===
 # ngay:1 # gio:23:50 # noi:nha_so_18 # bat_buoc
-_Cả công ty đi ăn mừng ở Quán Ốc Đêm. Group Zalo-lô toàn ảnh ốc và ảnh {giam_doc} nâng ly._
+_Cả công ty đi ăn mừng ở Quán Ốc Đêm. Group Zola toàn ảnh ốc và ảnh {giam_doc} nâng ly._
 _Bạn ở nhà số 18, Phố Cũ. Ngồi dưới đèn bàn, bản sao hợp đồng mở ở trang 1. Kính lúp trong tay._
 _Bạn đọc lại từ đầu. Hy vọng mình đọc nhầm._
 * [🔍 Đọc hết 52 trang, từng dòng.]

@@ -214,7 +214,7 @@ _Đêm 31/10, 23 giờ. Đại Nhạc Hội tan. Khán đài trống, pháo gi�
     _Show vẫn chạy. Nhưng cánh gà thiếu người: {gd_nhan_vien_bo_di} người đã nộp đơn sang LL từ 26/10, và lời hứa nào của bạn cũng là một lá đơn._
 }
 _Bạn đứng một mình trên sân khấu, vẫn mặc bộ "Ông Kẹ Ngân Hàng". Mọi người về hết. Không ai rủ bạn đi ăn khuya._
-_Bạn mở group Zalo-lô "{cong_ty} - Toàn công ty". Thành viên: {22 - gd_nhan_vien_bo_di}. Danh sách "đã rời nhóm" dài hơn danh sách "đang hoạt động"._
+_Bạn mở group Zola "{cong_ty} - Toàn công ty". Thành viên: {22 - gd_nhan_vien_bo_di}. Danh sách "đã rời nhóm" dài hơn danh sách "đang hoạt động"._
 _Đồng hồ nhảy sang 23:30. Ngón tay bạn tự gõ, theo thói quen mười năm:_
 giam_doc: Mai các em đi làm nhé.
 _Gửi._

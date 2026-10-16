@@ -42,7 +42,7 @@ VAR rd_len_san_khau = false        // 31/10: nhận lời lên sân khấu sau s
 
 // ---------- Minigame ----------
 VAR rd_mg_ban_tin_cay = false      // bản tin tuần này chọn tin cay
-VAR rd_mg_ghim_nham = false        // quản trò Zalo-lô: lỡ tay ghim nhầm
+VAR rd_mg_ghim_nham = false        // quản trò Zola: lỡ tay ghim nhầm
 VAR rd_so_ban_tin = 0              // số bản tin đã ra
 
 // ============================================================

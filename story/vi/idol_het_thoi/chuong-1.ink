@@ -6,7 +6,7 @@
 === idol_het_thoi_0110_group_zalo ===
 # ngay:1 # gio:07:40 # noi:can_1808 # bat_buoc
 _Căn 1808, chung cư Sky Ảo. Bốn bức tường dán kín poster của chính bạn năm 2015. Điện thoại rung liên tục trên gối._
-_Group Zalo-lô "{cong_ty} - Toàn công ty": 147 tin nhắn mới._
+_Group Zola "{cong_ty} - Toàn công ty": 147 tin nhắn mới._
 hong_hot: Ét o ét mấy bà ơi! 9 giờ ký hợp đồng 5 tỷ với Siêu Nhân Hồng! Ai chưa có đồ hồng thì mượn tạm nha!
 thanh_ninh: Anh {giam_doc} dặn: nhân sự chủ chốt có mặt đông đủ ở phòng họp tầng 2 ạ. Danh sách em gửi bên dưới nha!
 _Bạn kéo lên, kéo xuống. Danh sách "nhân sự chủ chốt" có 14 cái tên. Có cả {thuc_tap_sinh}, thực tập sinh. Không có tên bạn._
@@ -124,7 +124,7 @@ hong_hot: Anh {idol_het_thoi}! Ly của anh nè, size L, trân châu hồng. Ủ
     ~ qh("quan_ly_idol", 8)
     ~ tien_cong(-25000)
 - ~ uong(30)
-_Group Zalo-lô: {sieu_nhan_hong} vừa đăng ảnh chụp chung cả công ty. Bạn đứng ở rìa, nửa người bị cắt khỏi khung hình._
+_Group Zola: {sieu_nhan_hong} vừa đăng ảnh chụp chung cả công ty. Bạn đứng ở rìa, nửa người bị cắt khỏi khung hình._
 -> END
 
 // ------------------------------------------------------------

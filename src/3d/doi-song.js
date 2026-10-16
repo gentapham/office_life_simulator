@@ -193,7 +193,7 @@ export class DoiSong {
     else { const r = chonLoi(ng.ma, { ...this.ngu(), gan: ng._kc < 2.4 }); if (!r) return; [chu, cu] = r; }
     if (!this.noi(ng, chu)) return;
     if (cu && ng.nv.lamCu && !this.dangDiBo(ng) && !ng.nv.cu) this.lamCu(ng, cu);
-    ng.tBark = g.t + ngau(28, 48); this.tBarkSau = g.t + ngau(3, 6);
+    ng.tBark = g.t + ngau(35, 60); this.tBarkSau = g.t + ngau(4, 8);
   }
 
   // ---------- Cử chỉ ----------
@@ -238,9 +238,9 @@ export class DoiSong {
     return !n.daDoi && !n.ngu && n.nv.group.visible && !n.tuanTra && !this.trongHoi(n) && !this.dangDiBo(n) && (n.tHoiSau ?? 0) < g.t && (n.tt === "ban" || n.tt === "pho");
   }
   kiemHoi(dt) {
-    this.tHoi -= dt; if (this.tHoi > 0) return; this.tHoi = ngau(5, 10);
+    this.tHoi -= dt; if (this.tHoi > 0) return; this.tHoi = ngau(9, 18);
     const g = this.g;
-    if (this.hoi.some(h => h.coChu) || Math.random() > 0.65) return;
+    if (this.hoi.some(h => h.coChu) || Math.random() > 0.55) return;
     const ds = g.npc.filter(n => n.tang === g.tang && (n._kc ?? 99) < 13 && this.ranhNoi(n));
     const cap = [];
     for (let i = 0; i < ds.length; i++) for (let j = i + 1; j < ds.length; j++) {

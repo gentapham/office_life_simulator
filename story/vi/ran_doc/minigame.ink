@@ -107,11 +107,11 @@ _Vẫn hát. Vẫn cắt bánh. Phần bánh còn lại có dấu răng chó. Ai
 -> END
 
 // ------------------------------------------------------------
-// 💬 QUẢN TRÒ GROUP ZALO-LÔ
+// 💬 QUẢN TRÒ GROUP ZOLA
 // ------------------------------------------------------------
 === ran_doc_mg_zalo ===
 # minigame:zalo # noi:ban_lam_viec
-_Quản Trò Group Zalo-lô công ty. Xóa tin spam, ghim thông báo của sếp, giữ group sạch sẽ._
+_Quản Trò Group Zola công ty. Xóa tin spam, ghim thông báo của sếp, giữ group sạch sẽ._
 _Tin spam: "Vay nhanh 5 phút", "Bán đất nền Ven Đô", "{dan_dau_tu}: Hồng Coin x100 vào ngay". Thông báo cần ghim: "Họp giao ban 8:30 thứ 2"._
 _Cạnh đó là một tấm ảnh {hong_hot} vừa gửi nhầm vào group công ty thay vì group Anti Sếp: ảnh chế sếp đội nón lá._
 * [😇 Ghim đúng thông báo, xóa ảnh chế trước khi sếp thấy.]
