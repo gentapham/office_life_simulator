@@ -9,6 +9,7 @@ import { SanKhau, CHO_XEM } from "./san-khau.js";
 import { DongVat } from "./dong-vat.js";
 import { CapCuu } from "./cap-cuu.js";
 import { caiDat, khiDoiCaiDat, cheDoNhe, tiLeDiemAnh } from "../cai-dat.js";
+import { am } from "../am-thanh-game.js";
 export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
@@ -374,7 +375,7 @@ export class Game3D {
       if (!n.nv.ngoi) n.nv.group.rotation.y = Math.atan2(this.p.x - n.nv.group.position.x, this.p.z - n.nv.group.position.z);
       this.onNoiChuyen?.(g.ma);
     } else if (g.loai === "cau_thang") {
-      this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
+      am.cauThang(); this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
     } else if (g.loai === "do_vat") {
       if (g.v.loai === "meo") this.dongVat.vuot(g.v.meo);
       if (g.v.loai === "chim") this.dongVat.rac(this.p);
@@ -491,6 +492,7 @@ export class Game3D {
     if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
     this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2);
     this.capCuu?.capNhat(dt);
+    am.capNhatGame(this, dt);
     this.onGoiY?.(this.khoa || this.capCuu ? null : this.timTuongTac());
     this.onKhung?.();
     this.renderer.render(this.scene, this.camera);
@@ -502,6 +504,7 @@ export class Game3D {
     this.capCuu = new CapCuu(this, { onPha, onXong });
   }
   huy() {
+    am.huyGame();
     this._boCaiDat?.();
     this.sanKhau?.huy();
     this.renderer.setAnimationLoop(null);

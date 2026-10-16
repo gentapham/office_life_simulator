@@ -1,5 +1,6 @@
 // Cảnh xỉu và cấp cứu: nhân vật ngã xuống, đồng nghiệp gần đó chạy tới, xe cấp cứu 115 hú còi chạy vào cổng,
 // hai nhân viên y tế khiêng cáng vào đưa người chơi ra xe, xe chạy đi. Hết cảnh thì gọi onXong.
+import { am } from "../am-thanh-game.js";
 import * as THREE from "three";
 import { vl, taoNguoi } from "./nhan-vat-3d.js";
 
@@ -39,7 +40,7 @@ export class CapCuu {
   // game: Game3D; lyDo: chữ hiện ra; onPha(ten, chu): báo giao diện đổi lớp phủ; onXong(): hết cảnh
   constructor(game, { onPha, onXong }) {
     this.g = game; this.onPha = onPha; this.onXong = onXong;
-    this.t = 0; this.pha = "nga";
+    this.t = 0; this.pha = "nga"; am.phat("nga");
     const p = game.p; this.P = new THREE.Vector3(p.x, game.tang * 4, p.z); this.tang = game.tang;
     this.ngoaiTroi = this.tang === 0 && !(Math.abs(p.x) < 20.2 && p.z > -14.2 && p.z < 14.2);
     this.nhom = new THREE.Group(); game.scene.add(this.nhom);
@@ -69,6 +70,7 @@ export class CapCuu {
     return false;
   }
   capNhat(dt) {
+    if (this.xe.visible) am.datCoi(this.xe.position.x, this.xe.position.z);
     const g = this.g, cam = g.camera;
     this.t += dt;
     const t = this.t;
@@ -92,7 +94,7 @@ export class CapCuu {
     }
     if (this.pha === "goi") {
       g.than.group.visible = true;
-      if (t > 4.6) { this.pha = "xe_toi"; this.onPha?.("sang", ""); this.xe.visible = true; }
+      if (t > 4.6) { this.pha = "xe_toi"; this.onPha?.("sang", ""); this.xe.visible = true; am.coiCapCuu(true); }
       return;
     }
     // camera đặt ở vỉa hè đối diện cổng, quay theo diễn biến
@@ -142,7 +144,7 @@ export class CapCuu {
       this.tDi = (this.tDi || 0) + dt;
       this.xe.position.x += (2 + this.tDi * 6) * dt;
       nhin.copy(this.xe.position);
-      if (this.tDi > 3.2 && !this.daTat) { this.daTat = true; this.onPha?.("den", ""); setTimeout(() => this.onXong?.(), 900); }
+      if (this.tDi > 3.2 && !this.daTat) { this.daTat = true; am.coiCapCuu(false); this.onPha?.("den", ""); setTimeout(() => this.onXong?.(), 900); }
     }
     // camera cố định ở vỉa hè bên kia đường, xoay nhìn theo
     cam.position.set(14, 3.2, 39.6); // giữa đường (xe cộ tạm ẩn), không bị cột điện che

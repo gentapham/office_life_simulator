@@ -3,6 +3,7 @@ import { Story } from "inkjs/dist/ink-es6.js";
 import { NHAN_VAT, THEO_MA, thuCuaNgay, ngayDayDu, SU_KIEN_NGAY } from "./nhan-vat.js";
 import { taoSinhTon } from "./sinh-ton.js";
 import { moCaiDat } from "./cai-dat.js";
+import { am } from "./am-thanh-game.js";
 import { DIA_DIEM } from "./dia-diem.js";
 import { logoSVG } from "./logo.js";
 
@@ -111,6 +112,7 @@ function danhGiaDieuKien(expr, story) {
 // ============================================================
 function renderHome() {
   tatG3D();
+  am.nhac("menu");
   const dsLuu = dsBanLuu().filter(x => THEO_MA[x.ma]);
   app.replaceChildren(
     h("div", { class: "wrap trang-chon" },
@@ -787,6 +789,8 @@ async function render3D() {
     if (G !== g) { clearInterval(henDH); return; }
     if (g.khoa || !tamNgung.hidden || g.capCuu) return;
     if (L.phutGame < tranGio()) { L.phutGame++; hienGio(); }
+    const yeu = Math.min(...["no", "khat", "nang_luong"].map(k => Number(L.v(k)) || 0));
+    am.tim(yeu < 15 ? (15 - yeu) / 15 : 0); // tim đập nhanh khi sắp xỉu
     kiemTraNgauNhien();
   }, 1000);
 
@@ -809,7 +813,7 @@ async function render3D() {
       if (!kv || kv.ngoai || g.tang !== kv.tang || Math.hypot(g.p.x - kv.x, g.p.z - kv.z) > 4) continue;
       choiNgauNhien(ten, kv.ten); return;
     }
-    if (tin && nutTin.hidden) { nutTin.dataset.ten = tin; nutTin.hidden = false; thongBao3D("Điện thoại rung: có tin nhắn mới."); }
+    if (tin && nutTin.hidden) { nutTin.dataset.ten = tin; nutTin.hidden = false; thongBao3D("Điện thoại rung: có tin nhắn mới."); am.phat("rung"); }
   };
   const choiNgauNhien = async (ten, tieuDe) => {
     dangNgauNhien = true;
@@ -891,6 +895,10 @@ async function render3D() {
     const gia = v.gia ?? d.gia ?? 0, tien = Number(L.v("tien")) || 0;
     if (gia > tien) { thongBao3D(`Không đủ tiền. Ví còn ${tien.toLocaleString("vi-VN")}đ.`); return; }
     lanDung.set(khoa, Date.now());
+    const AM_DO = { wc: "xa_nuoc", tieu: "xa_nuoc", rua_mat: "voi_nuoc", uong_nuoc: "ong_nuoc", tu_lanh: "tu_lanh", mi_ly: "lo_vi_song", ca_phe: "may_ca_phe", trai_cay: "an", tra_bac_binh: "uong", banh_mi: "an", hu_tieu: "an", nuoc_mia: "uong", che: "an", tra_da: "uong", meo: Math.random() < 0.5 ? "meo" : "meo_ron", chim: "chim_gu", ca: "bong_bong" };
+    const vx = v.meo?.x ?? v.x ?? g.p.x, vz = v.meo?.z ?? v.z ?? g.p.z;
+    if (AM_DO[v.loai]) am.phat(AM_DO[v.loai], vx, vz);
+    if (gia) am.phat("tien");
     const lam = cb => d.chu ? chuyenCanh(d.chu + "…", cb) : cb(); // vuốt mèo, ngắm cá, trà đá: làm ngay
     lam(() => {
       const doi = { ...d.doi };
@@ -917,13 +925,13 @@ async function render3D() {
     const cu = [...toast.children].find(x => x.textContent === text && !x.classList.contains("het"));
     const henGio = el => { clearTimeout(el._t1); clearTimeout(el._t2); el._t1 = setTimeout(() => el.classList.add("het"), 2600); el._t2 = setTimeout(() => el.remove(), 3200); };
     if (cu) { henGio(cu); return; }
-    const el = h("div", {}, text); toast.append(el); henGio(el);
+    const el = h("div", {}, text); toast.append(el); henGio(el); am.phat("ting");
     const conHien = [...toast.children].filter(x => !x.classList.contains("het"));
     for (const x of conHien.slice(0, Math.max(0, conHien.length - 3))) { x.classList.add("het"); setTimeout(() => x.remove(), 400); }
   };
   const datMucTieuHUD = (chu, phu) => { mtChu.textContent = chu; mtPhu.textContent = phu || ""; mucTieu.hidden = !chu; };
   const chuyenCanh = (chu, xong) => {
-    man.textContent = chu; man.classList.add("on");
+    man.textContent = chu; man.classList.add("on"); am.phat("chuyen_canh");
     setTimeout(() => { xong?.(); setTimeout(() => man.classList.remove("on"), 350); }, 450);
   };
   const khuMacDinh = () => KHU_CUA_VAI[L.ma] || "khu_lam_viec";
@@ -1052,6 +1060,7 @@ function taoKhungThoai(log, luaChon) {
   };
   const hien = c => {
     coCau = true; the.hidden = false;
+    if (!c.narr) am.blip(c.ten);
     ten.hidden = !!c.narr; ten.textContent = c.me ? `${c.ten} (bạn)` : c.ten;
     ten.style.setProperty("--mau", c.me ? "#e8702a" : mauTen(c.ten || ""));
     chu.className = "g3d-chu" + (c.narr ? " narr" : "") + (c.me ? " me" : "");
