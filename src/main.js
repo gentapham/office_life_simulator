@@ -2,6 +2,7 @@
 import { Story } from "inkjs/dist/ink-es6.js";
 import { NHAN_VAT, THEO_MA, thuCuaNgay, ngayDayDu, SU_KIEN_NGAY } from "./nhan-vat.js";
 import { DIA_DIEM } from "./dia-diem.js";
+import { logoSVG } from "./logo.js";
 
 const app = document.getElementById("app");
 const SAVE_KEY = "owfad_doc_thu_v1";
@@ -93,31 +94,60 @@ function danhGiaDieuKien(expr, story) {
 function renderHome() {
   tatG3D();
   const save = saveLoad();
+  const nvSave = save && THEO_MA[save.ma];
   app.replaceChildren(
-    h("div", { class: "wrap" },
-      h("header", { class: "top" },
-        h("div", { class: "brand" }, h("small", {}, "Office Worker For A Day"), h("b", {}, "Giả Lập Một Ngày Làm Nhân Viên Văn Phòng")),
-      ),
-      h("section", { class: "hero" },
-        h("h1", {}, "Chọn một người để đi làm ở G-Entertainment"),
-        h("p", {}, "Mục tiêu chung của cả công ty: đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đêm Hồng Halloween."),
-        h("span", { class: "note16" }, h("b", {}, "16+"), "Có nhậu, đánh ghen, nợ nần và ngôn ngữ văn phòng."),
-      ),
-      save ? h("div", { class: "resume" },
-        h("span", {}, `Đang chơi dở: ${THEO_MA[save.ma]?.vai || save.ma}, ${ngayDayDu(save.ngay)}.`),
-        h("span", { class: "top-actions" },
+    h("div", { class: "wrap trang-chon" },
+      dauTrang(),
+      h("section", { class: "gioi-thieu" },
+        h("h1", {}, "Chọn vai của bạn"),
+        h("p", {}, "G-Entertainment, tháng 10/2026. Cả công ty có 31 ngày để đưa Siêu Nhân Hồng lên 1 triệu người theo dõi trước Đêm Hồng Halloween."),
+        h("div", { class: "nhan-nho" }, h("span", { class: "nhan-16" }, "16+"), h("span", {}, "23 vai"), h("span", {}, "6 kết thúc mỗi vai"), h("span", {}, "Tự lưu trên trình duyệt"))),
+      nvSave ? h("div", { class: "choi-do", style: `--mau:${nvSave.mau}` },
+        anhVai(nvSave, "nho"),
+        h("div", { class: "choi-do-tt" }, h("small", {}, "Đang chơi dở"), h("b", {}, nvSave.vai), h("span", {}, ngayDayDu(save.ngay))),
+        h("div", { class: "choi-do-nut" },
           h("button", { class: "btn primary", onclick: () => openRole(save.ma, { tiepTuc: true }) }, "Chơi tiếp"),
-          h("button", { class: "btn ghost", onclick: () => { saveWrite(null); renderHome(); } }, "Xóa bản lưu"),
-        )) : null,
-      h("div", { class: "grid" },
-        NHAN_VAT.map(n => h("button", { class: "card", onclick: () => renderDatTen(n.ma) },
-          h("span", { class: "rl" }, n.vai), h("span", { class: "jb" }, n.chuc))),
-        h("button", { class: "card special", onclick: () => openChung() },
-          h("span", { class: "rl" }, "Nội dung chung"), h("span", { class: "jb" }, "Sự kiện, tin đồn, Đêm Hồng")),
-      ),
+          h("button", { class: "btn ghost", onclick: () => { saveWrite(null); renderHome(); } }, "Xóa bản lưu"))) : null,
+      h("div", { class: "luoi-vai" },
+        NHAN_VAT.map(n => h("button", { class: "the-vai", style: `--mau:${n.mau}`, onclick: () => renderDatTen(n.ma) },
+          anhVai(n),
+          h("div", { class: "the-vai-tt" }, h("b", {}, n.vai), h("small", {}, n.chuc), h("p", {}, n.cau)))),
+        h("button", { class: "the-vai the-chung", onclick: () => openChung() },
+          h("div", { class: "anh-vai" }, h("span", { class: "anh-vai-chu" }, "+")),
+          h("div", { class: "the-vai-tt" }, h("b", {}, "Nội dung chung"), h("small", {}, "Sự kiện, tin đồn, Đêm Hồng"), h("p", {}, "Đọc các cảnh dùng chung cho mọi vai.")))),
     ),
   );
+  napChanDung();
   window.scrollTo(0, 0);
+}
+
+// Đầu trang: logo + tên game
+function dauTrang(...phai) {
+  return h("header", { class: "dau-trang" },
+    h("div", { class: "logo", html: logoSVG(40) + '<div class="logo-chu"><small>Office Worker For A Day</small><b>Giả Lập Một Ngày Làm Nhân Viên Văn Phòng</b></div>' }),
+    phai.length ? h("div", { class: "top-actions" }, phai) : null);
+}
+
+// Ảnh chân dung 3D của vai (chụp từ mô hình trong game); khi chưa có thì hiện chữ viết tắt
+let CHAN_DUNG = null;
+function anhVai(n, co = "") {
+  const ky = n.vai.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
+  const img = h("img", { alt: "", "data-ma": n.ma, loading: "lazy", decoding: "async" });
+  if (CHAN_DUNG?.[n.ma]) img.src = CHAN_DUNG[n.ma]; else img.hidden = true;
+  return h("div", { class: "anh-vai " + co }, h("span", { class: "anh-vai-chu" }, ky), img);
+}
+async function napChanDung() {
+  if (!CHAN_DUNG) {
+    try { CHAN_DUNG = JSON.parse(sessionStorage.getItem("owfad_chan_dung_v3")); } catch {}
+    if (!CHAN_DUNG) {
+      try {
+        const { chupChanDung } = await import("./3d/chan-dung.js");
+        CHAN_DUNG = chupChanDung(NHAN_VAT.map(n => n.ma));
+        try { sessionStorage.setItem("owfad_chan_dung_v3", JSON.stringify(CHAN_DUNG)); } catch {}
+      } catch { return; }
+    }
+  }
+  for (const img of document.querySelectorAll("img[data-ma]")) { const u = CHAN_DUNG[img.dataset.ma]; if (u && !img.src) { img.src = u; img.hidden = false; } }
 }
 
 // ============================================================
@@ -141,9 +171,10 @@ function renderDatTen(ma) {
       oninput: () => { capNhatGoiY(n); o[n.ma].removeAttribute("aria-invalid"); loi.textContent = ""; } });
     goiY[n.ma] = h("span", { class: "name-hint" });
     capNhatGoiY(n);
-    return h("label", { class: "name-row" + (n.ma === ma ? " me" : "") + (coDinh ? " locked" : ""), for: "ten_" + n.ma },
-      h("span", { class: "name-role" }, h("b", {}, n.vai, n.ma === ma ? h("em", {}, "Bạn") : null), h("small", {}, n.chuc)),
-      h("span", { class: "name-field" }, o[n.ma], goiY[n.ma]));
+    return h("label", { class: "hang-ten" + (n.ma === ma ? " me" : "") + (coDinh ? " locked" : ""), for: "ten_" + n.ma, style: `--mau:${n.mau}` },
+      anhVai(n, "tron"),
+      h("span", { class: "hang-ten-vai" }, h("b", {}, n.vai, n.ma === ma ? h("em", {}, "Bạn") : null), h("small", {}, n.chuc)),
+      h("span", { class: "hang-ten-o" }, o[n.ma], goiY[n.ma]));
   });
   const kiemTra = () => {
     const ten = {}, gap = new Map();
@@ -167,22 +198,22 @@ function renderDatTen(ma) {
     openRole(ma);
   };
   app.replaceChildren(
-    h("div", { class: "wrap" },
-      h("header", { class: "top" },
-        h("div", { class: "role-head" }, h("div", {}, h("h2", {}, vaiChon.vai), h("p", {}, vaiChon.chuc))),
-        h("div", { class: "top-actions" }, h("button", { class: "btn ghost", onclick: renderHome }, "← Đổi nhân vật"))),
-      h("form", { class: "names", novalidate: true, onsubmit: e => { e.preventDefault(); batDau(false); } },
-        h("section", { class: "panel name-intro" },
-          h("h3", {}, "Đặt tên nhân vật"),
-          h("p", {}, "Giữ tên mặc định hoặc sửa tên từng người trong danh sách bên dưới, kể cả nhân vật của bạn. Tên đã đặt được lưu cho các lần chơi sau."),
-          h("div", { class: "name-actions" },
+    h("div", { class: "wrap trang-chon" },
+      dauTrang(h("button", { class: "btn ghost", onclick: renderHome }, "← Chọn vai khác")),
+      h("form", { class: "dat-ten", novalidate: true, onsubmit: e => { e.preventDefault(); batDau(false); } },
+        h("aside", { class: "dat-ten-ben", style: `--mau:${vaiChon.mau}` },
+          anhVai(vaiChon, "to"),
+          h("div", { class: "dat-ten-vai" }, h("small", {}, "Vai của bạn"), h("h2", {}, vaiChon.vai), h("p", { class: "chuc" }, vaiChon.chuc), h("p", { class: "cau" }, `"${vaiChon.cau}"`)),
+          h("p", { class: "dat-ten-mo" }, "Giữ tên mặc định hoặc đặt lại tên cho cả công ty. Tên được lưu cho các lần chơi sau."),
+          h("div", { class: "dat-ten-nut" },
             h("button", { class: "btn primary", type: "submit" }, "Bắt đầu với tên đã đặt"),
             h("button", { class: "btn", type: "button", onclick: () => batDau(true) }, "Dùng tên mặc định"),
             h("button", { class: "btn ghost", type: "button", onclick: () => { for (const n of NHAN_VAT) { o[n.ma].value = n.ten; capNhatGoiY(n); o[n.ma].removeAttribute("aria-invalid"); } loi.textContent = ""; } }, "Khôi phục tên mặc định")),
           loi),
-        h("div", { class: "name-list" }, hang)),
+        h("section", { class: "dat-ten-ds" }, h("h3", {}, "Đặt tên nhân vật"), h("div", { class: "ds-ten" }, hang))),
     ),
   );
+  napChanDung();
   window.scrollTo(0, 0);
 }
 
