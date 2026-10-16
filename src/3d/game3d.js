@@ -1,7 +1,7 @@
 // Lõi game 3D: camera góc nhìn thứ nhất / thứ ba, di chuyển, va chạm, tương tác, mục tiêu cảnh, ánh sáng theo giờ.
 // Phần truyện (Ink) do main.js điều khiển; file này chỉ báo sự kiện qua các hàm onXxx.
 import * as THREE from "three";
-import { taoTheGioi, KHU, CAU_THANG, CHO_NGOI, CAO_TANG } from "./the-gioi.js";
+import { taoTheGioi, KHU, CAU_THANG, CHO_NGOI, CAO_TANG, DO_VAT } from "./the-gioi.js";
 import { taoNguoi, taoBangTen, taoDoiTay } from "./nhan-vat-3d.js";
 import { BauTroi } from "./bau-troi.js";
 import { GiaoThong } from "./giao-thong.js";
@@ -263,6 +263,11 @@ export class Game3D {
       const d = Math.hypot(c.x - this.p.x, c.z - this.p.z);
       if (d < 1.8 && d < dMin) { dMin = d; gan = { loai: "cau_thang", c, nhan: c.nhan }; }
     }
+    for (const v of DO_VAT) {
+      if (v.tang !== this.tang) continue;
+      const d = Math.hypot(v.x - this.p.x, v.z - this.p.z);
+      if (d < 1.3 && d < dMin) { dMin = d; gan = { loai: "do_vat", v, nhan: v.nhan }; }
+    }
     if (this.tang === 0) {
       const d = Math.hypot(2 - this.p.x, 29 - this.p.z);
       if (d < 2.4 && d < dMin) { dMin = d; gan = { loai: "cong", nhan: "Ra khỏi công ty" }; }
@@ -278,7 +283,8 @@ export class Game3D {
       this.onNoiChuyen?.(g.ma);
     } else if (g.loai === "cau_thang") {
       this.onCauThang?.(g.c, () => this.datViTri(g.c.toi));
-    } else if (g.loai === "cong") this.onCong?.();
+    } else if (g.loai === "do_vat") this.onDoVat?.(g.v);
+    else if (g.loai === "cong") this.onCong?.();
   }
   datKhoa(k) {
     this.khoa = k; this.phim = {}; if (this.stick) this.stick.x = this.stick.y = 0;

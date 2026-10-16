@@ -42,7 +42,7 @@ export function dungSanKhau(nhom, can) {
   // cổng chào ra đường Hóng
   for (const x of [tam - 13, tam + 13]) { H(0.9, 7, 0.9, 0xf26fa6, x, 0, 28.6); H(1.1, 0.4, 1.1, 0xd94d8a, x, 7, 28.6); }
   H(27, 1.2, 0.5, 0xf26fa6, tam, 6, 28.6);
-  const bang = tamBang("ĐẠI NHẠC HỘI SIÊU NHÂN · 31.10 · 19:30", 25, 1.0, { nen: "#f26fa6", mau: "#ffffff", w: 1024, h: 48, co: 34 });
+  const bang = tamBang("ĐẠI NHẠC HỘI SIÊU NHÂN · 31.10 · 19:30", 25, 1.0, { nen: "#f26fa6", mau: "#ffffff", w: 2000, h: 80, co: 52 });
   bang.position.set(tam, 6.6, 28.6); bang.children.forEach(c => { if (c.position.z > 0) c.position.z = 0.27; else if (c.position.z < 0) c.position.z = -0.27; }); nhom.add(bang);
   // cột đèn trang trí và cờ phướn dọc quảng trường
   for (let z = -2; z <= 26; z += 7) for (const x of [SK.x1 + 1.2, SK.x2 - 1.2]) {

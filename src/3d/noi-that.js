@@ -2,6 +2,7 @@
 // hop(w, h, d, màu, x, yĐáy, z, { tang, can, vatLieu }) do the-gioi.js truyền vào (có xử lý vật cản).
 import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
+import { Reflector } from "three/addons/objects/Reflector.js";
 
 const texCache = new Map();
 function tranh(key, w, h, ve) {
@@ -37,6 +38,69 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   const dieuHoa = (x, y, z, rotY) => { const g = new THREE.Group(); g.position.set(x, y, z); g.rotation.y = rotY; const m = new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.32, 0.24), vl(0xf6f6f2)); g.add(m); const k = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.04, 0.02), vl(0x9aa0a6)); k.position.set(0, -0.1, 0.13); g.add(k); nhom.add(g); };
 
   // ===== TẦNG 1 =====
+  // ---------- Nhà vệ sinh chi tiết ----------
+  function nhaVeSinh() {
+    const X1 = 12.13, X2 = 19.87, Z1 = -13.87, Z2 = -6.13;
+    const gach = (key, nen, vien, lap) => { const t = tranh(key, 64, 64, g => { g.fillStyle = nen; g.fillRect(0, 0, 64, 64); g.fillStyle = vien; g.fillRect(0, 0, 64, 3); g.fillRect(0, 0, 3, 64); }).clone(); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...lap); t.needsUpdate = true; return t; };
+    // sàn gạch men, tường ốp gạch cao 1,6 m
+    const san = new THREE.Mesh(new THREE.PlaneGeometry(X2 - X1, Z2 - Z1), new THREE.MeshLambertMaterial({ map: gach("gachsan", "#e9eef1", "#b9c6cf", [13, 13]) }));
+    san.rotation.x = -Math.PI / 2; san.position.set((X1 + X2) / 2, 0.012, (Z1 + Z2) / 2); nhom.add(san);
+    const op = (w, x, z, rotY) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, 1.6), new THREE.MeshLambertMaterial({ map: gach("gachtuong" + w, "#cfe6f2", "#9fc3d6", [w / 0.3, 1.6 / 0.3]) })); m.position.set(x, 0.8, z); m.rotation.y = rotY; nhom.add(m); };
+    op(Z2 - Z1, X1 + 0.01, (Z1 + Z2) / 2, Math.PI / 2); op(Z2 - Z1, X2 - 0.01, (Z1 + Z2) / 2, -Math.PI / 2); op(X2 - X1, (X1 + X2) / 2, Z1 + 0.01, 0);
+    hop(X2 - X1, 0.06, 0.03, 0x7fa8c9, (X1 + X2) / 2, 1.6, Z1 + 0.02, { can: false }); // nẹp viền gạch
+    // ba buồng vệ sinh dọc tường sau
+    const TRANG = 0xf6f6f2, VACH = 0x6f9cc0, ZT = -12.15;
+    const xs = [14.5, 16.29, 18.08, X2];
+    for (const x of xs.slice(0, 3)) hop(0.07, 2.0, ZT - Z1, VACH, x, 0.12, (Z1 + ZT) / 2);
+    for (let i = 0; i < 3; i++) {
+      const a = xs[i], b = xs[i + 1], giua = (a + b) / 2;
+      // vách trước hai bên cửa, thanh ngang trên
+      hop(0.42, 2.0, 0.07, VACH, a + 0.21, 0.12, ZT); hop(0.42, 2.0, 0.07, VACH, b - 0.21, 0.12, ZT);
+      hop(b - a, 0.08, 0.08, 0x9a9a9a, giua, 2.12, ZT, { can: false });
+      // cánh cửa mở hé vào trong, có chốt và biển trống/có người
+      const cua = new THREE.Group(); cua.position.set(a + 0.42, 0.12, ZT); cua.rotation.y = -1.15; cua.userData.khongCan = true;
+      const la = new THREE.Mesh(new THREE.BoxGeometry(b - a - 0.84, 1.95, 0.05), vl(0x5f8fb6)); la.position.set((b - a - 0.84) / 2, 0.975, 0); cua.add(la);
+      const chot = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.04, 0.06), vl(0xc0c4c8)); chot.position.set(b - a - 0.92, 1.0, 0.04); cua.add(chot);
+      const bien = new THREE.Mesh(new THREE.PlaneGeometry(0.18, 0.08), new THREE.MeshBasicMaterial({ map: chu("trong", 90, 40, "#2e8b57", "#ffffff", ["TRỐNG"], 26) })); bien.position.set(b - a - 0.92, 1.1, 0.03); cua.add(bien);
+      nhom.add(cua);
+      // bồn cầu: chân, bệ, nắp dựng, két nước, nút xả
+      hop(0.34, 0.38, 0.46, TRANG, giua, 0, -13.35); hop(0.42, 0.06, 0.54, TRANG, giua, 0.38, -13.33, { can: false });
+      hop(0.3, 0.02, 0.36, 0xd4e6ee, giua, 0.441, -13.3, { can: false });
+      hop(0.4, 0.46, 0.04, TRANG, giua, 0.44, -13.62, { can: false }); hop(0.46, 0.42, 0.2, TRANG, giua, 0.46, -13.74, { can: false });
+      hop(0.08, 0.02, 0.08, 0xc0c4c8, giua, 0.88, -13.74, { can: false });
+      // giấy vệ sinh, thùng rác nhỏ
+      const cuon = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.11, 10), vl(0xffffff)); cuon.rotation.z = Math.PI / 2; cuon.position.set(a + 0.13, 0.75, -13.0); nhom.add(cuon);
+      tru(0.11, 0.28, 0xb5bcc2, b - 0.2, 0, -13.6);
+    }
+    // bồn tiểu treo tường phải, có vách ngăn
+    for (const [i, z] of [-8.3, -9.3, -10.3].entries()) {
+      hop(0.3, 0.62, 0.38, TRANG, X2 - 0.15, 0.45, z); hop(0.16, 0.36, 0.26, 0xdfe9ee, X2 - 0.31, 0.56, z, { can: false });
+      hop(0.04, 0.4, 0.04, 0xc0c4c8, X2 - 0.06, 1.07, z, { can: false });
+      if (i < 2) hop(0.42, 0.85, 0.05, VACH, X2 - 0.21, 0.4, z - 0.5, { can: false });
+    }
+    // dãy lavabo tường trái, gương lớn, xà phòng, máy sấy tay
+    hop(0.62, 0.85, 3.0, 0x3a3d44, X1 + 0.31, 0, -8.85); hop(0.66, 0.05, 3.04, 0xe9e4da, X1 + 0.33, 0.85, -8.85, { can: false });
+    for (const z of [-8.1, -9.6]) {
+      hop(0.44, 0.06, 0.5, TRANG, X1 + 0.36, 0.86, z, { can: false }); hop(0.34, 0.02, 0.4, 0x9ab3c4, X1 + 0.38, 0.905, z, { can: false });
+      tru(0.025, 0.22, 0xc0c4c8, X1 + 0.1, 0.9, z); hop(0.16, 0.03, 0.03, 0xc0c4c8, X1 + 0.17, 1.1, z, { can: false });
+      hop(0.07, 0.16, 0.09, 0xf26fa6, X1 + 0.06, 1.22, z + 0.4, { can: false }); // bình xà phòng
+    }
+    const guong = new THREE.Mesh(new THREE.PlaneGeometry(2.7, 1.05), new THREE.MeshBasicMaterial({ map: tranh("guongwc", 128, 50, g => { const gr = g.createLinearGradient(0, 0, 128, 50); gr.addColorStop(0, "#dfeef5"); gr.addColorStop(0.5, "#b9d3e0"); gr.addColorStop(1, "#e8f3f8"); g.fillStyle = gr; g.fillRect(0, 0, 128, 50); g.fillStyle = "rgba(255,255,255,.7)"; g.fillRect(18, 4, 6, 42); g.fillRect(28, 4, 3, 42); }) }));
+    guong.position.set(X1 + 0.02, 1.75, -8.85); guong.rotation.y = Math.PI / 2; nhom.add(guong);
+    // gương thật: soi thấy chính mình (chỉ vẽ phản chiếu khi gương nằm trong khung nhìn)
+    const soi = new Reflector(new THREE.PlaneGeometry(2.6, 0.98), { textureWidth: 512, textureHeight: 192, color: 0xb8c4c9, clipBias: 0.003 });
+    soi.position.set(X1 + 0.03, 1.75, -8.85); soi.rotation.y = Math.PI / 2; soi.userData.rieng = true; soi.userData.khongCan = true; nhom.add(soi);
+    hop(0.02, 1.13, 2.78, 0xc0c4c8, X1 + 0.005, 1.21, -8.85, { can: false }); // khung gương (nằm sau mặt gương)
+    hop(0.18, 0.32, 0.3, 0xd9d9d9, X1 + 0.1, 1.05, -6.9, { can: false }); hop(0.06, 0.04, 0.18, 0x3a3d44, X1 + 0.2, 1.05, -6.9, { can: false }); // máy sấy tay
+    tru(0.17, 0.45, 0x8a8d92, X1 + 0.3, 0, -10.8); // thùng rác
+    // xô lau nhà, biển sàn ướt
+    tru(0.2, 0.3, 0x2a5aa8, 13.3, 0, -13.2); hop(0.03, 1.2, 0.03, 0x8a6a3a, 13.4, 0.1, -13.3, { can: false });
+    { const b = new THREE.Mesh(new THREE.ConeGeometry(0.22, 0.6, 4), vl(0xffcf3a)); b.position.set(13.5, 0.3, -12.3); nhom.add(b); }
+    // biển nhắc nhở (giọng bác Bình)
+    T(1.6, 0.5, chu("xanuoc", 400, 125, "#ffffff", "#c0262d", ["XẢ NƯỚC GIÙM CÁI", "Ký tên: Bác Bình"], 46), 17.2, 2.55, Z1 + 0.03, 0);
+    T(1.4, 0.36, chu("tietkiem", 360, 92, "#1f4fa8", "#ffffff", ["TIẾT KIỆM NƯỚC = TIẾT KIỆM LƯƠNG"], 30), X1 + 0.02, 2.55, -8.85, Math.PI / 2);
+  }
+
   // Sảnh: bàn thờ Thần Tài, khẩu hiệu, cây nước, tivi, ghế chờ
   hop(0.6, 0.9, 1.2, 0x8a1c1c, -1.5, 0, 10.5); hop(0.62, 0.06, 1.25, 0xd8b45a, -1.5, 0.9, 10.5, { can: false });
   hop(0.2, 0.28, 0.16, 0xd8b45a, -1.6, 0.96, 10.2, { can: false }); hop(0.2, 0.3, 0.16, 0xd8b45a, -1.6, 0.96, 10.75, { can: false });
@@ -90,9 +154,9 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   hop(0.05, 1.8, 0.05, 0x9a9a9a, 11.3, 0, -9.5); hop(0.05, 1.8, 0.05, 0x9a9a9a, 11.3, 0, -11.5); hop(0.05, 0.05, 2, 0x9a9a9a, 11.3, 1.8, -10.5, { can: false });
   hop(0.4, 1.2, 0.3, 0xf26fa6, 11.3, 0.5, -10.2, { can: false }); hop(0.4, 1.2, 0.3, 0x111111, 11.3, 0.5, -10.9, { can: false });
   hop(0.6, 1.0, 0.5, 0x1a1a1a, 5, 0, -12.6); hop(0.6, 1.0, 0.5, 0x1a1a1a, 5, 0, -11.9);
-  // Toilet: gương, máy sấy tay, biển WC
-  T(3, 0.9, tranh("guong", 32, 32, g => { g.fillStyle = "#cfe3ee"; g.fillRect(0, 0, 32, 32); g.fillStyle = "#fff"; g.fillRect(4, 4, 6, 24); }), 16, 1.7, -6.32, Math.PI);
+  // Toilet (phòng x 12..20, z -14..-6, cửa ở x 15..17)
   T(0.6, 0.4, chu("wc", 120, 80, "#1f4fa8", "#ffffff", ["WC"], 48), 16, 2.6, -5.86, 0);
+  nhaVeSinh();
   // Hành lang tầng 1: bảng tin, bình cứu hỏa
   T(2.2, 1.2, tranh("bangtin", 440, 240, (g, w, h) => {
     g.fillStyle = "#b08a5a"; g.fillRect(0, 0, w, h);

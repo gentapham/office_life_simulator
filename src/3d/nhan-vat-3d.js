@@ -283,8 +283,10 @@ export function taoNguoi(ma, nhRieng = null) {
   const kieuAo = ao.kieu;
   if (kieuAo === "vay_lien" || kieuAo === "vay_dai") {
     than.add(vat(W * 0.95, W * 0.8, CAO_THAN, D, vlAo, 0, yThan));
-    const dai = kieuAo === "vay_dai" ? 0.78 : 0.46;
-    than.add(vat(0.36 * r, kieuAo === "vay_dai" ? 0.52 : 0.5, dai, 0.3, vlAo, 0, y0 + 0.08 - dai / 2));
+    // phần váy dưới tách riêng để đung đưa theo bước chân; váy dài chỉ tới bắp chân cho thấy bước đi
+    const dai = kieuAo === "vay_dai" ? 0.58 : 0.42;
+    var vay = new THREE.Group(); vay.position.y = y0 + 0.08;
+    vay.add(vat(0.36 * r, kieuAo === "vay_dai" ? 0.5 : 0.48, dai, 0.3, vlAo, 0, -dai / 2));
     than.add(hop(W * 0.82, 0.04, D * 0.95, toiMau(ao.mau, 0.7), 0, y0 + 0.08, 0)); // đai eo
     if (ao.khoac) { // áo len mỏng khoác ngoài
       than.add(hop(0.11, CAO_THAN, D + 0.02, ao.khoac, -W / 2 + 0.05, yThan, 0)); than.add(hop(0.11, CAO_THAN, D + 0.02, ao.khoac, W / 2 - 0.05, yThan, 0));
@@ -351,6 +353,8 @@ export function taoNguoi(ma, nhRieng = null) {
   if (pk.includes("dayCap")) { const c = new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.012, 4, 10), vl(0x2a2c31)); c.position.set(0.04, coY - 0.02, 0); c.rotation.set(1.3, 0, 0.6); than.add(c); }
   if (pk.includes("taiNgheCo")) { const c = new THREE.Mesh(new THREE.TorusGeometry(0.1, 0.018, 4, 10, Math.PI), vl(0x1a1a1a)); c.position.set(0, coY + 0.02, 0.03); c.rotation.x = Math.PI / 2 + 0.2; than.add(c); }
   g.add(gop(than));
+  const vayDong = typeof vay !== "undefined" && vay ? gop(vay) : null;
+  if (vayDong) g.add(vayDong);
 
   // ----- Tay -----
   const vaiY = y0 + 0.07 + CAO_THAN - 0.06, vaiX = W / 2 + 0.06;
@@ -440,6 +444,7 @@ export function taoNguoi(ma, nhRieng = null) {
       if (!tayP.userData.coDinh) tayP.rotation.z = 0;
       const goc = dangDi ? Math.sin(t * 8 * toc) * 0.55 : 0;
       chanT.rotation.x = goc; chanP.rotation.x = -goc;
+      if (vayDong) { vayDong.rotation.z = goc * 0.12; vayDong.rotation.x = Math.abs(goc) * -0.15; }
       if (!tayT.userData.coDinh) tayT.rotation.x = -goc * 0.8;
       if (!tayP.userData.coDinh) tayP.rotation.x = goc * 0.8;
       const nhun = dangDi ? Math.abs(Math.sin(t * 8 * toc)) * 0.025 : Math.sin(t * 1.6) * 0.006;

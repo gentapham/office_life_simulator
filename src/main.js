@@ -623,7 +623,7 @@ async function render3D() {
           h("li", {}, "Cảnh ở ngoài công ty: ra cổng để đi tới đó."),
           h("li", {}, "Hết việc trong ngày, ra cổng để về nhà ngủ. Game tự lưu."))),
       ),
-      h("footer", {}, nutVao)));
+      h("footer", {}, nutVao, h("button", { class: "btn ghost", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát ra màn hình chính"))));
   let daVao = false;
   const moHuongDan = () => { tamNgung.hidden = false; g?.moKhoaChuot(); };
 
@@ -634,7 +634,7 @@ async function render3D() {
     h("div", { class: "g3d-hud-phai" }, btnGoc,
       h("button", { class: "g3d-btn", onclick: bangChiSo }, "Chỉ số"),
       h("button", { class: "g3d-btn", onclick: () => { hdTieuDe.textContent = "Hướng dẫn"; nutVao.textContent = "Tiếp tục"; moHuongDan(); } }, "Hướng dẫn"),
-      h("button", { class: "g3d-btn", onclick: renderHome }, "Thoát")),
+      h("button", { class: "g3d-btn", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát")),
     h("div", { class: "g3d-tam" }),
     goiY, bamTiep, toast, kt.el, lichSu, keChiSo, tamNgung, man,
   ));
@@ -666,6 +666,23 @@ async function render3D() {
   };
   g.onNoiChuyen = ma => noiChuyen3D(ma);
   g.onCauThang = (c, di) => chuyenCanh(c.nhan, di);
+  // dùng đồ vật: đi vệ sinh, rửa mặt, uống nước (chuyển cảnh ngắn, chỉ số thay đổi)
+  const DUNG_DO = {
+    wc: { chu: "Đi vệ sinh", ket: ["Nhẹ cả người.", "Xả nước rồi nha. Bác Bình dặn.", "Ngồi lướt điện thoại hơi lâu. Ai đó gõ cửa."], doi: { stress: -8, nang_luong: 2 } },
+    tieu: { chu: "Đi vệ sinh", ket: ["Nhẹ cả người.", "Vách ngăn hơi thấp. Không ai nhìn ai."], doi: { stress: -5 } },
+    rua_mat: { chu: "Rửa mặt", ket: ["Nước mát. Tỉnh hẳn.", "Nhìn vào gương: mặt mình hôm nay trông như deadline.", "Rửa mặt xong thấy đời cũng không đến nỗi."], doi: { nang_luong: 15, stress: -3 } },
+    uong_nuoc: { chu: "Uống nước", ket: ["Một ly nước lọc mát lạnh.", "Cây nước kêu ọc ọc như đồng nghiệp lúc 4 giờ chiều."], doi: { khat: 30 } },
+  };
+  g.onDoVat = v => {
+    const d = DUNG_DO[v.loai]; if (!d) return;
+    chuyenCanh(d.chu + "…", () => {
+      for (const [k, x] of Object.entries(d.doi)) L.set(k, Math.max(0, Math.min(100, (Number(L.v(k)) || 0) + x)));
+      thongBao3D(d.ket[Math.floor(Math.random() * d.ket.length)]);
+      const chiSo = Object.entries(d.doi).map(([k, x]) => `${{ stress: "Stress", nang_luong: "Năng lượng", khat: "Khát" }[k]} ${x > 0 ? "+" : ""}${x}`).join(" · ");
+      setTimeout(() => thongBao3D(chiSo), 400);
+      updateSide();
+    });
+  };
   g.onCong = () => { if (L.qi >= L.queue.length) hoiDiNgu(); else thongBao3D("Hôm nay vẫn còn việc ở công ty."); };
 
   // ----- hội thoại -----

@@ -21,7 +21,7 @@ export const KHU = {
   hr:          { ten: "Phòng HR", tang: 0, x: -6, z: -8.2 },
   server:      { ten: "Phòng server", tang: 0, x: 1, z: -10 },
   kho_su_kien: { ten: "Kho sự kiện", tang: 0, x: 8, z: -8 },
-  toilet:      { ten: "Toilet", tang: 0, x: 16, z: -10 },
+  toilet:      { ten: "Toilet", tang: 0, x: 16, z: -9 },
   gam_cau_thang:{ ten: "Gầm cầu thang", tang: 0, x: 4.4, z: -1.2 },
   hanh_lang_1: { ten: "Hành lang tầng 1", tang: 0, x: 0, z: -4 },
   giam_doc:    { ten: "Phòng giám đốc", tang: 1, x: -14, z: -8 },
@@ -35,6 +35,18 @@ export const KHU = {
   san_thuong:  { ten: "Sân thượng", tang: 2, x: 0, z: 0 },
   san_khau:    { ten: "Sân khấu Đại Nhạc Hội", tang: 0, x: 110, z: 9.5, ngoai: true },
 };
+
+// Đồ vật bấm E để dùng (đi vệ sinh, rửa mặt, uống nước...)
+export const DO_VAT = [
+  { loai: "wc", tang: 0, x: 15.4, z: -11.7, nhan: "Vào buồng vệ sinh" },
+  { loai: "wc", tang: 0, x: 17.2, z: -11.7, nhan: "Vào buồng vệ sinh" },
+  { loai: "wc", tang: 0, x: 19.0, z: -11.7, nhan: "Vào buồng vệ sinh" },
+  { loai: "tieu", tang: 0, x: 19.1, z: -9.0, nhan: "Dùng bồn tiểu" },
+  { loai: "rua_mat", tang: 0, x: 13.1, z: -8.1, nhan: "Rửa mặt" },
+  { loai: "rua_mat", tang: 0, x: 13.1, z: -9.6, nhan: "Rửa mặt" },
+  { loai: "uong_nuoc", tang: 0, x: -3.2, z: -0.3, nhan: "Uống nước" },
+  { loai: "uong_nuoc", tang: 0, x: 8.4, z: 4.6, nhan: "Uống nước" },
+];
 
 // Điểm chuyển tầng (bấm tương tác để đi)
 export const DIEM_DAU_NGAY = { tang: 0, x: 2, z: 27.5, huong: 0 };
@@ -225,9 +237,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // Kho sự kiện
   for (let i = 0; i < 3; i++) { hop(2.6, 0.06, 0.8, 0x8a7a64, 8, 0.6 + i * 0.7, -13.4, { can: false }); hop(0.6, 0.5, 0.5, [0xe8702a, 0xf26fa6, 0x5b6b8c][i], 7.2 + i * 0.7, 0.66 + i * 0.7, -13.4, { can: false }); }
   hop(2.6, 2.2, 0.1, 0x8a7a64, 8, 0, -13.85);
-  // Toilet
-  for (let i = 0; i < 3; i++) hop(0.1, 2, 1.6, 0x9fb7c8, 13.2 + i * 2, 0, -12.9);
-  hop(4, 0.9, 0.6, 0xf2f2f2, 16, 0, -6.6);
+  // Toilet: dựng chi tiết trong noi-that.js (buồng, bồn cầu, bồn tiểu, lavabo, gương)
 
   // ---- Tầng 2 ----
   tuong(-20, -4, 20, -4, 1, [[-15, -13], [-5, -3], [5, 7], [15, 17]], trong);
@@ -278,7 +288,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // đồ nội thất dựng rời (tủ, ghế, cây, máy in...) cũng có khối va chạm theo đúng kích thước của nó
   const hopBao = new THREE.Box3(), kt = new THREE.Vector3();
   for (const o of scene.children.slice(truocNoiThat)) {
-    if (o.isLight || o.isSprite) continue;
+    if (o.isLight || o.isSprite || o.userData.khongCan) continue;
     hopBao.setFromObject(o); if (hopBao.isEmpty()) continue;
     hopBao.getSize(kt);
     const tang = Math.max(0, Math.min(2, Math.floor((hopBao.min.y + 0.05) / CAO_TANG)));
