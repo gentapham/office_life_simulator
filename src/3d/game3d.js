@@ -412,6 +412,7 @@ export class Game3D {
     this.capCuu = new CapCuu(this, { onPha, onXong });
   }
   huy() {
+    this.sanKhau?.huy();
     this.renderer.setAnimationLoop(null);
     removeEventListener("resize", this._resize); removeEventListener("keydown", this._keydown); removeEventListener("keyup", this._keyup); removeEventListener("blur", this._blur);
     if (this._mouse) document.removeEventListener("mousemove", this._mouse);
