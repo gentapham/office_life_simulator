@@ -2,7 +2,7 @@
 import { Story } from "inkjs/dist/ink-es6.js";
 import { NHAN_VAT, THEO_MA, thuCuaNgay, ngayDayDu, SU_KIEN_NGAY } from "./nhan-vat.js";
 import { taoSinhTon } from "./sinh-ton.js";
-import { moCaiDat } from "./cai-dat.js";
+import { moCaiDat, thoiGianChon, heSoDoc } from "./cai-dat.js";
 import { am } from "./am-thanh-game.js";
 import { taoDienThoai, ghiNhan, ghiMonPho, ghiKetThuc, veBoSuuTap } from "./dien-thoai.js";
 import { DIA_DIEM } from "./dia-diem.js";
@@ -506,6 +506,7 @@ function runStory(story, playerCode, onEnd) {
     const choices = story.currentChoices;
     if (!choices.length) { onEnd(visited); return; }
     UI.choices.replaceChildren();
+    if (henGio && CHE_DO === "3d") henGio = thoiGianChon(henGio); // nới thời gian theo Cài đặt, 0 = không hẹn giờ
     if (henGio) {
       const total = henGio; let left = total;
       const bar = h("i", { style: "width:100%" });
@@ -1036,7 +1037,8 @@ async function render3D() {
   // thông báo: câu đang hiện thì không lặp lại (chỉ gia hạn), tối đa 3 dòng cùng lúc
   thongBao3D = text => {
     const cu = [...toast.children].find(x => x.textContent === text && !x.classList.contains("het"));
-    const henGio = el => { clearTimeout(el._t1); clearTimeout(el._t2); el._t1 = setTimeout(() => el.classList.add("het"), 2600); el._t2 = setTimeout(() => el.remove(), 3200); };
+    // câu dài hiện lâu hơn để kịp đọc
+    const henGio = el => { const t = Math.max(3200, (1800 + el.textContent.length * 70)) * heSoDoc(); clearTimeout(el._t1); clearTimeout(el._t2); el._t1 = setTimeout(() => el.classList.add("het"), t); el._t2 = setTimeout(() => el.remove(), t + 600); };
     if (cu) { henGio(cu); return; }
     const el = h("div", {}, text); toast.append(el); henGio(el); am.phat("ting");
     const conHien = [...toast.children].filter(x => !x.classList.contains("het"));

@@ -2,6 +2,7 @@
 // và các chuyến đi lại trong công ty (toilet, pantry pha cà phê / hâm cơm, máy in, cây nước, sang bàn đồng nghiệp,
 // phòng họp, ghế chờ, sân thượng). Đường đi tìm trên lưới dựng từ chính các khối va chạm của từng tầng nên không xuyên
 // tường hay đồ đạc. Nhân vật đang do truyện điều khiển (daDoi) thì không đụng tới.
+import { heSoDoc } from "../cai-dat.js";
 import * as THREE from "three";
 import { CHO_NGOI, CAO_TANG, GHE_LE } from "./the-gioi.js";
 import { am } from "../am-thanh-game.js";
@@ -172,7 +173,7 @@ export class DoiSong {
   // uuTien: lời của tán gẫu / câu đáp người chơi được lấy chỗ của bong bóng lẩm bẩm cũ nhất
   noi(n, chu, dai, uuTien = false) {
     if (!chu || this.g.khoa) return null;
-    dai ??= kep(1.7 + chu.length * 0.055, 2.3, 6);
+    dai ??= kep(2 + chu.length * 0.08, 3, 8) * heSoDoc(); // đủ lâu để đọc, chỉnh theo Tốc độ đọc
     let b = this.bong.find(x => x.n === n) || this.bong.find(x => !x.n);
     if (!b && uuTien) b = [...this.bong].sort((x, y) => y.t / y.dai - x.t / x.dai)[0];
     if (!b) return null;
@@ -290,7 +291,7 @@ export class DoiSong {
       h.i++;
       if (h.i >= h.dong.length) { this.ketThucHoi(h); continue; }
       const l = h.dong[h.i], S = l.ai === a.ma ? a : b, N = S === a ? b : a;
-      const dai = l.chu ? kep(1.6 + l.chu.length * 0.055, 2.2, 5.5) : ngau(2.5, 4);
+      const dai = (l.chu ? kep(2 + l.chu.length * 0.08, 3, 8) : ngau(2.5, 4)) * heSoDoc(); // đủ lâu để đọc
       h.t = dai + 0.3;
       h.coChu = false;
       if (l.chu && S.tang === g.tang && (S._kc ?? 99) < 13) h.coChu = !!this.noi(S, l.chu, dai, true);

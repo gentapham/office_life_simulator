@@ -4,6 +4,7 @@ const MAC_DINH = {
   amTong: 80, amNhac: 70, amHieuUng: 80, amMoiTruong: 70, tatTieng: false,
   chatLuong: "tu_dong", // tu_dong | thap | vua | cao
   doNhay: 1, tamNhin: 70, daoTrucY: false,
+  tocDoc: "cham", tatHenGio: false, // thời gian đọc thoại, chọn câu trả lời
 };
 let hienTai = null;
 const nghe = new Set();
@@ -35,6 +36,14 @@ export function cheDoNhe() {
   if (c.chatLuong === "thap") return true;
   if (c.chatLuong === "tu_dong") return matchMedia("(pointer: coarse)").matches;
   return false;
+}
+// Thời gian đọc: hệ số kéo dài cho chữ thông báo, bong bóng lời nói; thời gian chọn câu trả lời (giây, 0 = không hẹn giờ)
+const DOC = { cham: { heSo: 1.7, nhan: 3, toiThieu: 15 }, vua: { heSo: 1.3, nhan: 2, toiThieu: 10 }, nhanh: { heSo: 1, nhan: 1, toiThieu: 0 } };
+export function heSoDoc() { return (DOC[caiDat().tocDoc] || DOC.cham).heSo; }
+export function thoiGianChon(giayGoc) {
+  const c = caiDat(); if (c.tatHenGio) return 0;
+  const d = DOC[c.tocDoc] || DOC.cham;
+  return Math.max(d.toiThieu, Math.round(giayGoc * d.nhan));
 }
 export function tiLeDiemAnh() {
   const c = caiDat(), dt = matchMedia("(pointer: coarse)").matches;
@@ -97,6 +106,9 @@ export function moCaiDat(h, { khiDong, trongGame = false } = {}) {
         thanhTruot("Nhạc nền", "amNhac", 0, 100, 1, phanTram),
         thanhTruot("Hiệu ứng", "amHieuUng", 0, 100, 1, phanTram),
         thanhTruot("Môi trường", "amMoiTruong", 0, 100, 1, phanTram)),
+      h("section", {}, h("h3", {}, "Hội thoại"),
+        chon("Tốc độ đọc", "tocDoc", [["cham", "Chậm"], ["vua", "Vừa"], ["nhanh", "Nhanh"]]),
+        bat("Tắt hẹn giờ khi chọn câu trả lời", "tatHenGio")),
       h("section", {}, h("h3", {}, "Hình ảnh"),
         chon("Chất lượng", "chatLuong", [["tu_dong", "Tự động"], ["thap", "Thấp"], ["vua", "Vừa"], ["cao", "Cao"]]),
         thanhTruot("Góc nhìn", "tamNhin", 55, 90, 1, v => `${v}°`),
