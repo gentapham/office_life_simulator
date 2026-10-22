@@ -9,6 +9,25 @@ import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { VL_MAU_DINH, VL_MAU_DINH_2MAT } from "./gop-khoi.js";
 
+// Bản MƯỢT của vật liệu màu đỉnh (nhân vật kiểu mới: khối tròn cần pháp tuyến mượt, không vẽ phẳng từng mặt).
+// Tạo lúc gộp lần đầu bằng cách chép vật liệu màu đỉnh chung (kể cả shader đã chỉnh, nếu có) rồi tắt flatShading,
+// nên mọi chỉnh sửa vật liệu chung trước đó (ánh sáng kiểu tranh vẽ...) cũng áp lên nhân vật.
+const _muot = new Map();
+export function vlMauDinhMuot(haiMat = false) {
+  const goc = haiMat ? VL_MAU_DINH_2MAT : VL_MAU_DINH;
+  let m = _muot.get(goc);
+  if (!m) {
+    m = goc.clone(); m.flatShading = false;
+    if (goc.onBeforeCompile !== THREE.Material.prototype.onBeforeCompile) m.onBeforeCompile = goc.onBeforeCompile;
+    if (goc.customProgramCacheKey !== THREE.Material.prototype.customProgramCacheKey) m.customProgramCacheKey = goc.customProgramCacheKey;
+    m.userData = { ...goc.userData, muot: true };
+    _muot.set(goc, m);
+  }
+  return m;
+}
+const laMuot = m => m.flatShading === false || m.userData?.muot;
+const vlNuong = m => laMuot(m) ? vlMauDinhMuot(m.side === THREE.DoubleSide) : m.side === THREE.DoubleSide ? VL_MAU_DINH_2MAT : VL_MAU_DINH;
+
 // ---------- Nhân vật: gộp thành một khối xương cứng ----------
 const hangDoi = [];
 // gọi khi tạo xong nhân vật ({ group, ... }); trả lại chính nó
@@ -56,6 +75,7 @@ function gopNguoiNgay(o, { xuongRieng = false, khongCat = false } = {}) {
   const goc = o.group;
   if (!goc || goc.userData.daGopNguoi) return;
   goc.userData.daGopNguoi = true;
+  o.truocGop?.(); // nhân vật kiểu mới: đưa đồ gắn trên tay vào khung cẳng tay, đặt khớp khuỷu trước khi chụp tư thế gộp
   goc.updateWorldMatrix(true, true);
   const nghich = goc.matrixWorld.clone().invert();
   const xuong = [], soXuong = new Map(), bo = [];
@@ -77,7 +97,7 @@ function gopNguoiNgay(o, { xuongRieng = false, khongCat = false } = {}) {
           for (const gr of nhom) {
             const m = gr ? c.material[gr.materialIndex] : c.material; if (!m) continue;
             const g = gr ? catDoan(g0, gr.start, Math.min(gr.count, g0.attributes.position.count - gr.start)) : g0;
-            const vc = m.side === THREE.DoubleSide ? VL_MAU_DINH_2MAT : VL_MAU_DINH;
+            const vc = daNuong(m) && laMuot(m) ? m : vlNuong(m);
             if (daNuong(m) && g.attributes.color) vao(vc, chuan(g, null, ix));
             else if (nuongDuoc(m)) vao(vc, chuan(g, m.color, ix));
             else if (gr) vaoMang(c.material, gr.materialIndex, chuan(g, TRANG, ix));
@@ -113,6 +133,27 @@ function gopNguoiNgay(o, { xuongRieng = false, khongCat = false } = {}) {
   if (khongCat) me.frustumCulled = false;
   me.userData.nguoiGop = true;
   o.khoiGop = me;
+}
+
+// gộp mọi khối màu trơn trong nhóm (kể cả nhóm con) thành một khối màu đỉnh, giữ pháp tuyến mượt (đôi tay góc nhìn 1)
+// deQuy = false: chỉ gộp các khối con trực tiếp, giữ nguyên nhóm con (khớp tay chân của nhân vật)
+export function gopMuot(nhom, deQuy = true) {
+  nhom.updateMatrixWorld(true);
+  const nghich = nhom.matrixWorld.clone().invert(), theo = new Map(), bo = [];
+  (deQuy ? f => nhom.traverse(f) : f => [...nhom.children].forEach(f))(c => {
+    if (!c.isMesh || c.isSkinnedMesh || Array.isArray(c.material) || !nuongDuoc(c.material)) return;
+    const g = (c.geometry.index ? c.geometry.toNonIndexed() : c.geometry.clone()).applyMatrix4(_m.multiplyMatrices(nghich, c.matrixWorld));
+    for (const k of Object.keys(g.attributes)) if (!["position", "normal", "uv"].includes(k)) g.deleteAttribute(k);
+    if (!g.attributes.uv) g.setAttribute("uv", new THREE.BufferAttribute(new Float32Array(g.attributes.position.count * 2), 2));
+    const n = g.attributes.position.count, col = new Float32Array(n * 3), cl = c.material.color;
+    for (let i = 0; i < n; i++) { col[i * 3] = cl.r; col[i * 3 + 1] = cl.g; col[i * 3 + 2] = cl.b; }
+    g.setAttribute("color", new THREE.BufferAttribute(col, 3)); g.groups = [];
+    const v = vlNuong(c.material); if (!theo.has(v)) theo.set(v, []); theo.get(v).push(g); bo.push(c);
+  });
+  for (const c of bo) c.parent.remove(c);
+  if (deQuy) for (const c of [...nhom.children]) if (!c.isMesh && !c.children.length) nhom.remove(c);
+  for (const [v, ds] of theo) nhom.add(ds.length === 1 && !deQuy ? new THREE.Mesh(ds[0], v) : new THREE.Mesh(mergeGeometries(ds), v));
+  return nhom;
 }
 
 // ---------- Đồ lặp lại: một InstancedMesh cho cả phố ----------

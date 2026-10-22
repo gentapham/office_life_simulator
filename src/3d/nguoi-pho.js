@@ -2,6 +2,7 @@
 // học sinh tan trường, cô lao công quét đường, áo mưa cánh dơi trên xe máy. Đồ dùng chung vật liệu để đỡ tốn lượt vẽ.
 import * as THREE from "three";
 import { vl, taoNguoi, hinhNguoiNgauNhien } from "./nhan-vat-3d.js";
+import { vongEo, danThan, matThanNv, vongDau, hinhCau } from "./hinh-nguoi.js";
 
 const TAY = 0.645; // chiều dài cánh tay (vai tới lòng bàn tay)
 const hop = (w, h, d, mat, x = 0, y = 0, z = 0) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mat === "number" ? vl(mat) : mat); m.position.set(x, y, z); return m; };
@@ -115,7 +116,7 @@ export function taoNguoiChayBo(rnd) {
   nh.quan = { kieu: "short", mau: [0x1c1c1f, 0x2a2c31, 0x23406f][Math.floor(rnd() * 3)] };
   nh.giay = ["sneaker", rnd() < 0.5 ? 0xf2f2f2 : 0x3fa8ff]; nh.pk = rnd() < 0.4 ? ["taiNgheCo"] : []; nh.beo = false;
   const nv = taoNguoi(null, nh);
-  nv.dau.add(hop(0.32, 0.05, 0.32, nh.ao.mau, 0, 0.09, 0)); // băng đô thấm mồ hôi
+  if (nv.thanHinh) vongDau(nv, nh.ao.mau, 0.09, 0.02); else nv.dau.add(hop(0.32, 0.05, 0.32, nh.ao.mau, 0, 0.09, 0)); // băng đô thấm mồ hôi
   nv.group.rotation.order = "YXZ";
   return {
     ...nv,
@@ -136,8 +137,17 @@ export function taoHocSinh(rnd) {
   nh.giay = ["sneaker", 0xf2f2f2]; nh.pk = []; nh.beo = false; nh.cao = false; nh.nho = false; nh.gay = false;
   const nv = taoNguoi(null, nh);
   const yc = nv.dau.position.y;
+  const mauCap = MAU_CAP[Math.floor(rnd() * MAU_CAP.length)];
+  if (nv.thanHinh) { // khăn quàng đỏ (tam giác buông trước ngực), cặp tròn cạnh đeo sau lưng
+    danThan(nv, 0xd8202a, yc - 0.24, yc - 0.42, (y, f) => [-0.06 * (1 - f) - 0.004, 0.06 * (1 - f) + 0.004], 0.008);
+    nv.than.add(hinhCau(0xd8202a, 0.075, 0.02, 0.06, 0, yc - 0.235, 0.0));
+    const z = matThanNv(nv, 0, yc - 0.55, -1);
+    nv.than.add(hinhCau(mauCap, 0.17, 0.2, 0.085, 0, yc - 0.56, z - 0.07, 10));
+    for (const x of [-0.1, 0.1]) nv.than.add(hinhCau(toiMauCap(mauCap), 0.018, 0.17, 0.018, x, yc - 0.45, matThanNv(nv, x, yc - 0.45) + 0.004));
+  } else {
   nv.group.add(hop(0.12, 0.16, 0.02, 0xd8202a, 0, yc - 0.33, 0.14));        // khăn quàng đỏ
-  nv.group.add(hop(0.32, 0.38, 0.16, MAU_CAP[Math.floor(rnd() * MAU_CAP.length)], 0, yc - 0.6, -0.22)); // cặp
+  nv.group.add(hop(0.32, 0.38, 0.16, mauCap, 0, yc - 0.6, -0.22)); // cặp
+  }
   nv.group.scale.setScalar(0.6 + rnd() * 0.06);
   return {
     ...nv,
@@ -145,6 +155,7 @@ export function taoHocSinh(rnd) {
   };
 }
 
+const toiMauCap = c => { const m = new THREE.Color(c); m.multiplyScalar(0.7); return m.getHex(); };
 // ---------- Cô lao công quét đường: áo cam phản quang, nón lá, chổi tre, xe rác đẩy tay ----------
 export function taoLaoCong(rnd) {
   const nh = hinhNguoiNgauNhien(rnd, { nu: true });
@@ -152,7 +163,7 @@ export function taoLaoCong(rnd) {
   nh.giay = ["tay", 0x1c1c1f]; nh.pk = ["nonLa", "khauTrangVai"]; nh.mauKhauTrang = 0x3a4250; nh.beo = false;
   const nv = taoNguoi(null, nh);
   const vai = nv.tayP.position.y;
-  for (const y of [vai - 0.18, vai - 0.38]) nv.group.add(hop(0.47, 0.045, 0.3, 0xe8e8d8, 0, y, 0)); // dải phản quang
+  for (const y of [vai - 0.18, vai - 0.38]) if (!vongEo(nv, 0xe8e8d8, y, 0.045, 0.012)) nv.group.add(hop(0.47, 0.045, 0.3, 0xe8e8d8, 0, y, 0)); // dải phản quang
   // chổi tre cán dài: nhóm quay quanh tay cầm
   const choi = new THREE.Group(); choi.position.set(0.12, vai - 0.42, 0.42); nv.group.add(choi);
   choi.add(thanh([0, 0, 0], [0.32, -0.95, 0.42], 0.035, 0xc8a86a));

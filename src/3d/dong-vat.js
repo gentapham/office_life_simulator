@@ -1,12 +1,49 @@
 // Động vật trong và quanh công ty: mèo đi lang thang (vuốt ve được), bầy bồ câu ngoài sân (lại gần thì bay,
 // rắc vụn bánh mì thì sà xuống), bể cá ở sảnh (cá bơi, ngắm được).
 import * as THREE from "three";
-import { vl } from "./nhan-vat-3d.js";
+import { vl, kieuMoi } from "./nhan-vat-3d.js";
+import { vlMuot, ong } from "./hinh-nguoi.js";
 import { gopNguoi } from "./toi-uu.js";
 
 const hop = (w, h, d, c, x = 0, y = 0, z = 0) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof c === "number" ? vl(c) : c); m.position.set(x, y, z); return m; };
 
+// Kiểu mới (mọi mức trừ "Thấp"): khối tròn mượt cùng khung cử động (thân, đầu, đuôi, bốn chân là từng khối riêng)
+const elip = (c, rx, ry, rz, x = 0, y = 0, z = 0, seg = 10) => { const m = new THREE.Mesh(new THREE.SphereGeometry(1, seg, Math.round(seg * 0.7)), typeof c === "number" ? vlMuot(c) : c); m.scale.set(rx, ry, rz); m.position.set(x, y, z); return m; };
+const ongLen = (r1, r2, L, seg = 7) => { const g = ong(r1, r2, L, seg, [2, 1]).clone(); g.rotateX(Math.PI); return g; }; // ống mọc lên +y từ gốc
+function taoMeoMoi(mau, soc) {
+  const g = new THREE.Group();
+  const than = new THREE.Group(); g.add(than);
+  than.add(elip(mau, 0.095, 0.09, 0.21, 0, 0.27, 0));
+  if (soc) for (let i = 0; i < 4; i++) than.add(elip(soc, 0.085, 0.03, 0.028, 0, 0.335, -0.14 + i * 0.09, 8));
+  than.add(elip(mau, 0.06, 0.07, 0.06, 0, 0.32, 0.17, 8)); // ngực
+  const dau = new THREE.Group(); dau.position.set(0, 0.38, 0.25); than.add(dau);
+  dau.add(elip(mau, 0.085, 0.075, 0.075));
+  for (const s of [-1, 1]) {
+    const tai = new THREE.Mesh(new THREE.ConeGeometry(0.03, 0.065, 6), vlMuot(mau)); tai.position.set(s * 0.05, 0.075, -0.01); tai.rotation.z = -s * 0.25; dau.add(tai);
+    dau.add(elip(0xd8e04a, 0.016, 0.019, 0.008, s * 0.035, 0.015, 0.068, 8), elip(0x111111, 0.005, 0.014, 0.004, s * 0.035, 0.015, 0.074, 6));
+  }
+  dau.add(elip(0xf5a3b8, 0.012, 0.008, 0.006, 0, -0.012, 0.076, 6), elip(soc ? 0xf2e2c8 : mau, 0.035, 0.022, 0.02, 0, -0.03, 0.062, 8));
+  const duoi = new THREE.Mesh(ongLen(0.02, 0.014, 0.3), vlMuot(mau)); duoi.position.set(0, 0.3, -0.2); duoi.rotation.x = -0.6; than.add(duoi);
+  const chan = [[-0.055, 0.15], [0.055, 0.15], [-0.055, -0.15], [0.055, -0.15]].map(([x, z]) => { const c = new THREE.Mesh(ong(0.026, 0.02, 0.165, 7, [1, 2]), vlMuot(mau)); c.position.set(x, 0.185, z); g.add(c); return c; });
+  return { g, than, dau, duoi, chan };
+}
+const toiXam = c => { const m = new THREE.Color(c); m.multiplyScalar(0.85); return m.getHex(); };
+function taoBoCauMoi(rnd) {
+  const g = new THREE.Group();
+  const xam = [0x8a8f99, 0x9aa0a8, 0x7a7f88, 0xb8b8b0][Math.floor(rnd() * 4)];
+  g.add(elip(xam, 0.065, 0.065, 0.105, 0, 0.1, 0));
+  const dau = new THREE.Group(); dau.position.set(0, 0.17, 0.08); g.add(dau);
+  dau.add(elip(0x6a7080, 0.038, 0.038, 0.04, 0, 0, 0, 8));
+  const mo = new THREE.Mesh(new THREE.ConeGeometry(0.009, 0.035, 5), vlMuot(0xe8a04a)); mo.rotation.x = Math.PI / 2; mo.position.set(0, -0.005, 0.048); dau.add(mo);
+  for (const s of [-1, 1]) dau.add(elip(0xe86a2a, 0.006, 0.006, 0.004, s * 0.025, 0.01, 0.028, 6));
+  g.add(elip(0x4f7a6a, 0.036, 0.03, 0.03, 0, 0.135, 0.06, 8));
+  const canh = [-1, 1].map(s => { const geo = new THREE.SphereGeometry(1, 8, 5); geo.scale(0.035, 0.014, 0.085); geo.translate(s * 0.03, 0, -0.025); const c = new THREE.Mesh(geo, vlMuot(toiXam(xam))); c.position.set(s * 0.04, 0.125, -0.01); g.add(c); return c; });
+  for (const x of [-0.025, 0.025]) { const c = new THREE.Mesh(ong(0.006, 0.005, 0.055, 5, 1), vlMuot(0xe07a5a)); c.position.set(x, 0.058, 0); g.add(c); }
+  return { g, dau, canh };
+}
+
 function taoMeo(mau, soc) {
+  if (kieuMoi()) return taoMeoMoi(mau, soc);
   const g = new THREE.Group();
   const than = new THREE.Group(); g.add(than);
   than.add(hop(0.2, 0.18, 0.46, mau, 0, 0.26, 0));
@@ -21,6 +58,7 @@ function taoMeo(mau, soc) {
 }
 
 function taoBoCau(rnd) {
+  if (kieuMoi()) return taoBoCauMoi(rnd);
   const g = new THREE.Group();
   const xam = [0x8a8f99, 0x9aa0a8, 0x7a7f88, 0xb8b8b0][Math.floor(rnd() * 4)];
   const than = new THREE.Mesh(new THREE.SphereGeometry(0.08, 8, 6), vl(xam)); than.scale.set(0.8, 0.8, 1.3); than.position.y = 0.1; g.add(than);
