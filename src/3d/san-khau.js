@@ -12,6 +12,8 @@ export const SK = { x1: 90.5, x2: 129.5, z1: -22, tam: 110, sauSan: -20, truocSa
 export const CHO_XEM = { tang: 0, x: 110, z: 9.5, huong: 0 };
 // màn LED dọc hai bên sân khấu (phát video Siêu Nhân Hồng, tỉ lệ 9:16)
 const MAN_PHU = { x: 17, y: 1.3, z: -9.24, w: 4.2, h: 7.47 };
+// màn video treo trên hai bức tường bên quảng trường: đặt giữa các cột cờ, mép dưới cao hơn nhà vệ sinh, xe nước
+const MAN_TUONG = { z: [-5.5, 1.5, 8.5, 15.5, 22.5], y: 2.6, w: 3.375, h: 6 };
 
 export function dungSanKhau(nhom, can) {
   // be: loại mặt (vat-lieu.js) — khối gộp vào vật liệu thật chung khi dựng bản đồ
@@ -55,6 +57,8 @@ export function dungSanKhau(nhom, can) {
     const p = tamBang(z % 2 ? "SIÊU NHÂN\nHỒNG" : "31.10", 0.8, 1.8, { nen: z % 2 ? "#f26fa6" : "#d94d8a", mau: "#ffffff", w: 96, h: 216, co: 26 });
     p.position.set(x + (x < tam ? 0.5 : -0.5), 4.6, z); p.rotation.y = Math.PI / 2; nhom.add(p);
   }
+  // khung màn video trên tường hai bên
+  for (const x of [SK.x1 + 0.05, SK.x2 - 0.05]) for (const z of MAN_TUONG.z) H(0.1, MAN_TUONG.h + 0.24, MAN_TUONG.w + 0.24, 0xff7ab8, x, MAN_TUONG.y - 0.12, z, "son_bong");
   // xe bán nước, xe chè bên hông quảng trường
   H(1.6, 1.1, 0.8, 0xe8508f, SK.x1 + 2.2, 0, 20); H(1.7, 0.08, 0.9, 0xfff0f6, SK.x1 + 2.2, 1.9, 20);
   H(1.6, 1.1, 0.8, 0xf27fb2, SK.x2 - 2.2, 0, 21); H(1.7, 0.08, 0.9, 0xffd1e6, SK.x2 - 2.2, 1.9, 21);
@@ -202,7 +206,7 @@ export class SanKhau {
   }
   huy() {
     this.amThanh.huy(); clearInterval(this.canhGac);
-    for (const m of this.manVideo || []) { m.v.pause(); m.v.removeAttribute("src"); m.v.load(); m.tex.dispose(); }
+    for (const m of [...(this.manVideo || []), ...(this.manTuong || [])]) { m.v.pause(); m.v.removeAttribute("src"); m.v.load(); m.tex.dispose(); }
   }
   taoManVideo() {
     // ảnh chờ khi video chưa tải xong
@@ -211,15 +215,14 @@ export class SanKhau {
     g.fillStyle = "#fff"; g.textAlign = "center"; g.font = "900 40px 'Be Vietnam Pro', system-ui, sans-serif"; g.fillText("SIÊU NHÂN", 144, 230); g.fillText("HỒNG", 144, 280);
     const tCho = new THREE.CanvasTexture(c); tCho.colorSpace = THREE.SRGBColorSpace;
     const goc = import.meta.env.BASE_URL || "./";
-    this.manVideo = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]].map((ds, k) => {
-      const s = k ? 1 : -1;
+    const taoMan = (ds, w, h, x, y, z, quay) => {
       const v = document.createElement("video");
-      v.playsInline = true; v.preload = "none"; v.muted = true; v.crossOrigin = "anonymous";
+      v.playsInline = true; v.preload = "none"; v.muted = true; v.crossOrigin = "anonymous"; v.loop = ds.length === 1;
       const tex = new THREE.VideoTexture(v); tex.colorSpace = THREE.SRGBColorSpace;
       const vlMan = new THREE.MeshBasicMaterial({ map: tCho, fog: false, toneMapped: false });
-      const m = new THREE.Mesh(new THREE.PlaneGeometry(MAN_PHU.w, MAN_PHU.h), vlMan);
-      m.position.set(SK.tam + s * MAN_PHU.x, MAN_PHU.y + MAN_PHU.h / 2, MAN_PHU.z); this.nhom.add(m);
-      const man = { v, tex, vlMan, ds, so: 0, x: m.position.x, chay: false, loi: 0, hong: false };
+      const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), vlMan);
+      m.position.set(x, y + h / 2, z); m.rotation.y = quay; this.nhom.add(m);
+      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false };
       const nap = () => { v.src = `${goc}video/sieu-nhan-hong-${ds[man.so]}.mp4`; if (man.chay) this.phat(man); };
       v.addEventListener("playing", () => { if (vlMan.map !== tex) { vlMan.map = tex; vlMan.needsUpdate = true; } });
       v.addEventListener("ended", () => { man.so = (man.so + 1) % ds.length; nap(); });
@@ -228,7 +231,12 @@ export class SanKhau {
       v.addEventListener("playing", () => { man.loi = 0; });
       man.nap = nap;
       return man;
-    });
+    };
+    // hai màn dọc cạnh sân khấu: mỗi bên 5 video phát nối tiếp, có tiếng
+    this.manVideo = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]].map((ds, k) => taoMan(ds, MAN_PHU.w, MAN_PHU.h, SK.tam + (k ? 1 : -1) * MAN_PHU.x, MAN_PHU.y, MAN_PHU.z, 0));
+    // màn trên tường: tường trái video 1..5, tường phải 6..10, mỗi màn lặp một video, không tiếng
+    this.manTuong = [];
+    for (const [k, x] of [[0, SK.x1 + 0.11], [1, SK.x2 - 0.11]]) MAN_TUONG.z.forEach((z, i) => this.manTuong.push(taoMan([k * 5 + i + 1], MAN_TUONG.w, MAN_TUONG.h, x, MAN_TUONG.y, z, k ? -Math.PI / 2 : Math.PI / 2)));
     // capNhat không được gọi khi người chơi ở tầng khác: tự dừng video
     this.tCapNhat = 0;
     this.canhGac = setInterval(() => { if (performance.now() - this.tCapNhat > 600) this.dungVideo(); }, 500);
@@ -238,7 +246,7 @@ export class SanKhau {
     if (!man.v.src) { man.nap(); return; }
     man.v.play().catch(() => { if (!man.v.muted) { man.v.muted = true; man.v.play().catch(() => {}); } });
   }
-  dungVideo() { for (const m of this.manVideo) if (m.chay) { m.chay = false; m.v.pause(); } }
+  dungVideo() { for (const m of [...this.manVideo, ...this.manTuong]) if (m.chay) { m.chay = false; m.v.pause(); } }
   // video phát khi người chơi ở gần quảng trường; tiếng lấy từ màn gần hơn, nhỏ dần theo khoảng cách
   capNhatVideo(viTri) {
     this.tCapNhat = performance.now();
@@ -251,6 +259,10 @@ export class SanKhau {
     }
     if (this.manTieng && this.manTieng !== gan && Math.abs(Math.hypot(viTri.x - this.manTieng.x, viTri.z - MAN_PHU.z) - kcGan) < 3) gan = this.manTieng; // tránh đổi qua lại khi đứng giữa
     this.manTieng = gan;
+    // màn trên tường: máy yếu chỉ phát 4 màn gần nhất, màn khác dừng ở khung hình cuối
+    const toiDa = this.dienThoai ? 4 : 10;
+    const xep = this.manTuong.map(m => [Math.hypot(viTri.x - m.x, viTri.z - m.z), m]).sort((a, b) => a[0] - b[0]);
+    xep.forEach(([kc, m], i) => { if (i < toiDa && kc < 60) { if (!m.chay) this.phat(m); } else if (m.chay) { m.chay = false; m.v.pause(); } });
     const am = this.dien ? 0 : Math.pow(Math.max(0, 1 - kcGan / 55), 1.5) * (trongNha ? 0.3 : 1) * amLuong("amNhac");
     for (const m of this.manVideo) {
       const coTieng = m === gan && am > 0.005;
