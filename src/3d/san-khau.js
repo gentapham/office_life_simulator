@@ -11,38 +11,39 @@ export const SK = { x1: 90.5, x2: 129.5, z1: -22, tam: 110, sauSan: -20, truocSa
 export const CHO_XEM = { tang: 0, x: 110, z: 9.5, huong: 0 };
 
 export function dungSanKhau(nhom, can) {
-  const H = (w, h, d, mau, x, y, z) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mau === "number" ? vl(mau) : mau); m.position.set(x, y + h / 2, z); nhom.add(m); return m; };
+  // be: loại mặt (vat-lieu.js) — khối gộp vào vật liệu thật chung khi dựng bản đồ
+  const H = (w, h, d, mau, x, y, z, be) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mau === "number" ? vl(mau) : mau); m.position.set(x, y + h / 2, z); if (be) m.userData.be = be; nhom.add(m); return m; };
   const { tam, sauSan, truocSan, caoSan } = SK;
   // nền quảng trường lát đá
-  const nen = new THREE.Mesh(new THREE.PlaneGeometry(SK.x2 - SK.x1, 30 - SK.z1), vl(0xb9b2a4)); nen.rotation.x = -Math.PI / 2; nen.position.set(tam, 0.008, (30 + SK.z1) / 2); nhom.add(nen);
+  const nen = new THREE.Mesh(new THREE.PlaneGeometry(SK.x2 - SK.x1, 30 - SK.z1), vl(0xb9b2a4)); nen.userData.be = "lat_san"; nen.rotation.x = -Math.PI / 2; nen.position.set(tam, 0.008, (30 + SK.z1) / 2); nhom.add(nen);
   for (let z = SK.z1 + 4; z < 30; z += 4) H(SK.x2 - SK.x1, 0.005, 0.08, 0xa49d8f, tam, 0.006, z);
   // tường bao hai bên và phía sau (mặt sau nhà hàng xóm)
-  H(0.6, 9, 50, 0xd6cbb6, SK.x1 - 0.3, 0, 4); H(0.6, 9, 50, 0xd6cbb6, SK.x2 + 0.3, 0, 4); H(SK.x2 - SK.x1 + 1.2, 12, 0.6, 0xcfc4ad, tam, 0, SK.z1 - 0.3);
+  H(0.6, 9, 50, 0xd6cbb6, SK.x1 - 0.3, 0, 4, "vua"); H(0.6, 9, 50, 0xd6cbb6, SK.x2 + 0.3, 0, 4, "vua"); H(SK.x2 - SK.x1 + 1.2, 12, 0.6, 0xcfc4ad, tam, 0, SK.z1 - 0.3, "vua");
   // sàn sân khấu
-  H(26, caoSan, truocSan - sauSan, 0x1c1c1f, tam, 0, (sauSan + truocSan) / 2);
+  H(26, caoSan, truocSan - sauSan, 0x2a2624, tam, 0, (sauSan + truocSan) / 2, "go_san");
   H(26.2, 0.12, 0.2, 0xf26fa6, tam, caoSan - 0.06, truocSan + 0.05);                         // viền hồng mép sân khấu
-  for (const i of [-6, -3, 3, 6]) H(1.6, 0.6, 0.8, 0x2a2c31, tam + i * 1.9, caoSan, truocSan - 1.2); // loa kiểm âm
+  for (const i of [-6, -3, 3, 6]) H(1.6, 0.6, 0.8, 0x2a2c31, tam + i * 1.9, caoSan, truocSan - 1.2, "nhua"); // loa kiểm âm
   // cầu thang hai bên
   for (const s of [-1, 1]) for (let i = 0; i < 4; i++) H(1.4, caoSan * (i + 1) / 4, 0.45, 0x2a2c31, tam + s * 13.8, 0, truocSan - 0.5 - i * 0.45);
   // khung giàn: 4 cột + dầm ngang
-  const gian = (x, z, h) => { for (const [a, b] of [[-0.25, -0.25], [0.25, -0.25], [-0.25, 0.25], [0.25, 0.25]]) H(0.06, h, 0.06, 0xb8bcc4, x + a, 0, z + b); for (let y = 0.6; y < h; y += 1.2) H(0.56, 0.05, 0.56, 0xb8bcc4, x, y, z); };
+  const gian = (x, z, h) => { for (const [a, b] of [[-0.25, -0.25], [0.25, -0.25], [-0.25, 0.25], [0.25, 0.25]]) H(0.06, h, 0.06, 0xb8bcc4, x + a, 0, z + b, "crom"); for (let y = 0.6; y < h; y += 1.2) H(0.56, 0.05, 0.56, 0xb8bcc4, x, y, z, "crom"); };
   for (const x of [tam - 13.5, tam + 13.5]) { gian(x, truocSan + 0.2, 13); gian(x, sauSan - 0.6, 13); }
-  H(27.6, 0.55, 0.55, 0xb8bcc4, tam, 12.6, truocSan + 0.2); H(27.6, 0.55, 0.55, 0xb8bcc4, tam, 12.6, sauSan - 0.6);
-  for (const x of [tam - 13.5, tam + 13.5]) H(0.55, 0.55, truocSan - sauSan + 0.8, 0xb8bcc4, x, 12.6, (sauSan + truocSan) / 2 - 0.2);
+  H(27.6, 0.55, 0.55, 0xb8bcc4, tam, 12.6, truocSan + 0.2, "crom"); H(27.6, 0.55, 0.55, 0xb8bcc4, tam, 12.6, sauSan - 0.6, "crom");
+  for (const x of [tam - 13.5, tam + 13.5]) H(0.55, 0.55, truocSan - sauSan + 0.8, 0xb8bcc4, x, 12.6, (sauSan + truocSan) / 2 - 0.2, "crom");
   // khung màn LED và cột loa treo
   H(21, 10, 0.5, 0x111114, tam, caoSan, sauSan + 0.2);
-  for (const s of [-1, 1]) { for (let i = 0; i < 6; i++) H(1.3, 0.75, 1.1, 0x1c1c1f, tam + s * 12.2, 11.5 - i * 0.8, truocSan - 0.4); }
+  for (const s of [-1, 1]) { for (let i = 0; i < 6; i++) H(1.3, 0.75, 1.1, 0x1c1c1f, tam + s * 12.2, 11.5 - i * 0.8, truocSan - 0.4, "nhua"); }
   // tháp loa dưới đất
-  for (const s of [-1, 1]) { H(2.2, 3.4, 1.6, 0x1c1c1f, tam + s * 14.8, 0, truocSan + 0.8); for (let i = 0; i < 3; i++) { const c = new THREE.Mesh(new THREE.CircleGeometry(0.42, 14), vl(0x3a3d44)); c.position.set(tam + s * 14.8, 0.65 + i * 1.05, truocSan + 1.61); nhom.add(c); } }
+  for (const s of [-1, 1]) { H(2.2, 3.4, 1.6, 0x1c1c1f, tam + s * 14.8, 0, truocSan + 0.8, "nhua"); for (let i = 0; i < 3; i++) { const c = new THREE.Mesh(new THREE.CircleGeometry(0.42, 14), vl(0x3a3d44)); c.position.set(tam + s * 14.8, 0.65 + i * 1.05, truocSan + 1.61); nhom.add(c); } }
   // rào chắn trước sân khấu
-  for (let x = tam - 12; x <= tam + 12; x += 2) { H(1.95, 1.1, 0.08, 0x9aa0a6, x, 0, SK.rao); H(0.1, 0.05, 0.7, 0x6d7175, x - 0.9, 0, SK.rao + 0.3); }
+  for (let x = tam - 12; x <= tam + 12; x += 2) { H(1.95, 1.1, 0.08, 0x9aa0a6, x, 0, SK.rao, "kim"); H(0.1, 0.05, 0.7, 0x6d7175, x - 0.9, 0, SK.rao + 0.3, "kim"); }
   // bàn điều khiển âm thanh ánh sáng (FOH) giữa khán đài
   const fx = tam + 9, fz = 19; // lệch sang phải để không chắn tầm nhìn
   H(3, 0.25, 2.4, 0x6d7175, fx, 0, fz); H(2.6, 1, 0.9, 0x2a2c31, fx, 0.25, fz); H(3.2, 0.1, 2.6, 0x2a2c31, fx, 2.6, fz);
   for (const [a, b] of [[-1.5, -1.2], [1.5, -1.2], [-1.5, 1.2], [1.5, 1.2]]) H(0.08, 2.6, 0.08, 0x8a8d92, fx + a, 0, fz + b);
   // cổng chào ra đường Hóng
-  for (const x of [tam - 13, tam + 13]) { H(0.9, 7, 0.9, 0xf26fa6, x, 0, 28.6); H(1.1, 0.4, 1.1, 0xd94d8a, x, 7, 28.6); }
-  H(27, 1.2, 0.5, 0xf26fa6, tam, 6, 28.6);
+  for (const x of [tam - 13, tam + 13]) { H(0.9, 7, 0.9, 0xf26fa6, x, 0, 28.6, "son_bong"); H(1.1, 0.4, 1.1, 0xd94d8a, x, 7, 28.6, "son_bong"); }
+  H(27, 1.2, 0.5, 0xf26fa6, tam, 6, 28.6, "son_bong");
   const bang = tamBang("ĐẠI NHẠC HỘI SIÊU NHÂN · 31.10 · 19:30", 25, 1.0, { nen: "#f26fa6", mau: "#ffffff", w: 2000, h: 80, co: 52 });
   bang.position.set(tam, 6.6, 28.6); bang.children.forEach(c => { if (c.position.z > 0) c.position.z = 0.27; else if (c.position.z < 0) c.position.z = -0.27; }); nhom.add(bang);
   // cột đèn trang trí và cờ phướn dọc quảng trường

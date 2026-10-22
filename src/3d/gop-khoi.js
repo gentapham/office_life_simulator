@@ -5,6 +5,7 @@
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { cheDoNhe } from "../cai-dat.js";
+import { MUC, vatLieuBe, mauDinhBe, ganUvBe } from "./vat-lieu.js";
 
 export const VL_MAU_DINH = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true });
 export const VL_MAU_DINH_2MAT = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, side: THREE.DoubleSide });
@@ -113,7 +114,10 @@ function xepAtlas(dsAnh, tiLe) {
 
 // deQuy: gộp cả khối nằm trong nhóm con (dùng cho bản đồ); không thì chỉ gộp con trực tiếp (dùng cho tay, chân nhân vật)
 // atlas: (mặc định bật khi deQuy) xếp ảnh tĩnh nhỏ vào atlas chung
-export function gopKhoi(nhom, { deQuy = false, atlas = deQuy } = {}) {
+// vatLieu: khối màu trơn chưa gắn loại mặt cũng chuyển sang vật liệu PBR "tron" (nhà cửa, phố; không dùng cho nhân vật).
+// Khối gắn loại mặt (userData.be của khối hoặc vật liệu, xem vat-lieu.js) luôn gộp vào vật liệu chung của loại mặt đó,
+// trừ ở máy yếu (MUC = 0): khi đó mọi thứ nướng màu như cũ.
+export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false } = {}) {
   nhom.updateMatrixWorld(true);
   const nghich = new THREE.Matrix4().copy(nhom.matrixWorld).invert();
   const nuong = [], nuong2 = [], theoVL = new Map(), bo = [], choAtlas = [];
@@ -125,8 +129,17 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy } = {}) {
     if (an) return;
     const tran = new THREE.Matrix4().multiplyMatrices(nghich, o.matrixWorld);
     const m = o.material;
+    const veBe = (vl, g) => { if (!theoVL.has(vl)) theoVL.set(vl, []); theoVL.get(vl).push(g); };
+    // khối đã gộp vào vật liệu loại mặt từ trước: giữ màu và toạ độ ảnh, gộp tiếp
+    if (m.userData.beThuVien && o.geometry.attributes.color) { veBe(m, chuanBi(o, tran, null, true)); return; }
+    // khối không ảnh gắn loại mặt (kể cả vật liệu Basic như đèn xe), hoặc khối Lambert trơn khi bật vatLieu
+    const ten = MUC ? (o.userData.be || m.userData.be || (vatLieu && m.isMeshLambertMaterial ? "tron" : null)) : null;
     // khối đã gộp từ trước (màu nằm sẵn trong đỉnh): giữ nguyên màu, gộp tiếp
-    if (m.vertexColors && !m.map && !m.transparent && o.geometry.attributes.color) (m.side === THREE.DoubleSide ? nuong2 : nuong).push(chuanBi(o, tran, null, true));
+    if (m.vertexColors && !m.map && !m.transparent && o.geometry.attributes.color) {
+      if (ten && m === VL_MAU_DINH || ten && m === VL_MAU_DINH_2MAT) veBe(vatLieuBe(ten, m.side === THREE.DoubleSide), ganUvBe(chuanBi(o, tran, null, true), ten));
+      else (m.side === THREE.DoubleSide ? nuong2 : nuong).push(chuanBi(o, tran, null, true));
+    }
+    else if (ten && nuongDuoc(m)) veBe(vatLieuBe(ten, m.side === THREE.DoubleSide), ganUvBe(chuanBi(o, tran, mauDinhBe(ten, m.color)), ten));
     else if (nuongDuoc(m)) (m.side === THREE.DoubleSide ? nuong2 : nuong).push(chuanBi(o, tran, m.color));
     else if (atlas && atlasDuoc(m)) {
       const g = chuanBi(o, tran, m.color);
@@ -141,6 +154,14 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy } = {}) {
   if (deQuy) nhom.traverse(o => { if (o !== nhom) xet(o); });
   else for (const o of [...nhom.children]) if (!o.children.length) xet(o);
   for (const o of bo) o.parent?.remove(o);
+  // đã có vật liệu bảng (kim loại, nhựa, sơn bóng...) trong lần gộp này: khối màu trơn còn lại vào luôn ô "tron"
+  // của nó (vd. người ngồi trên xe máy) để không tốn thêm một lượt vẽ
+  if (MUC) for (const [ds, hai] of [[nuong, false], [nuong2, true]]) {
+    const vb = vatLieuBe("tron", hai);
+    if (!ds.length || !theoVL.has(vb)) continue;
+    for (const g of ds) theoVL.get(vb).push(ganUvBe(g, "tron"));
+    ds.length = 0;
+  }
   if (nuong.length) nhom.add(new THREE.Mesh(mergeGeometries(nuong), VL_MAU_DINH));
   if (nuong2.length) nhom.add(new THREE.Mesh(mergeGeometries(nuong2), VL_MAU_DINH_2MAT));
   for (const [m, ds] of theoVL) nhom.add(new THREE.Mesh(mergeGeometries(ds), m));

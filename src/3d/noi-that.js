@@ -3,6 +3,7 @@
 import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { Reflector } from "three/addons/objects/Reflector.js";
+import { MUC, vlBe } from "./vat-lieu.js";
 
 const texCache = new Map();
 function tranh(key, w, h, ve) {
@@ -28,11 +29,11 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   const cau = (r, c, x, y, z) => { const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 0), vl(c)); m.position.set(x, y, z); nhom.add(m); return m; };
   const ghe = (x, z, rot, tang = 0, c = 0x3a3d44) => {
     const g = new THREE.Group(); g.position.set(x, tang * CAO, z); g.rotation.y = rot;
-    const add = (w, h, d, cc, px, py, pz) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), vl(cc)); m.position.set(px, py + h / 2, pz); g.add(m); };
-    add(0.5, 0.06, 0.5, c, 0, 0.45, 0); add(0.5, 0.5, 0.06, c, 0, 0.5, -0.22); add(0.06, 0.45, 0.06, 0x222222, 0, 0, 0); add(0.45, 0.03, 0.06, 0x222222, 0, 0.02, 0); add(0.06, 0.03, 0.45, 0x222222, 0, 0.02, 0);
+    const add = (w, h, d, cc, px, py, pz, be) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), be ? vlBe(be, cc) : vl(cc)); m.position.set(px, py + h / 2, pz); g.add(m); };
+    add(0.5, 0.06, 0.5, c, 0, 0.45, 0, "vai"); add(0.5, 0.5, 0.06, c, 0, 0.5, -0.22, "vai"); add(0.06, 0.45, 0.06, 0x222222, 0, 0, 0); add(0.45, 0.03, 0.06, 0x222222, 0, 0.02, 0); add(0.06, 0.03, 0.45, 0x222222, 0, 0.02, 0);
     nhom.add(g);
   };
-  const tuHoSo = (x, z, rot, tang = 0) => { const g = new THREE.Group(); g.position.set(x, tang * CAO, z); g.rotation.y = rot; const m = new THREE.Mesh(new THREE.BoxGeometry(0.9, 1.3, 0.6), vl(0x9aa0a6)); m.position.y = 0.65; g.add(m); for (let i = 0; i < 3; i++) { const n = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.04, 0.02), vl(0x3a3d44)); n.position.set(0, 0.3 + i * 0.4, 0.31); g.add(n); } nhom.add(g); };
+  const tuHoSo = (x, z, rot, tang = 0) => { const g = new THREE.Group(); g.position.set(x, tang * CAO, z); g.rotation.y = rot; const m = new THREE.Mesh(new THREE.BoxGeometry(0.9, 1.3, 0.6), vlBe("kim", 0x9aa0a6)); m.position.y = 0.65; g.add(m); for (let i = 0; i < 3; i++) { const n = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.04, 0.02), vl(0x3a3d44)); n.position.set(0, 0.3 + i * 0.4, 0.31); g.add(n); } nhom.add(g); };
   const chauCay = (x, z, tang = 0, to = 1) => { tru(0.22 * to, 0.45 * to, 0xb5653a, x, tang * CAO, z); cau(0.42 * to, 0x4f8a3c, x, tang * CAO + 0.85 * to, z); cau(0.3 * to, 0x3d7a34, x + 0.15, tang * CAO + 1.15 * to, z - 0.1); };
   // bình chữa cháy đứng sát sàn: thân đỏ, nhãn trắng, cổ van, tay bóp, vòi
   const binhCuuHoa = (x, z, tang = 0) => { const y = tang * CAO; tru(0.085, 0.42, 0xc0262d, x, y, z); tru(0.087, 0.12, 0xf2f2f2, x, y + 0.12, z); tru(0.045, 0.05, 0xc0262d, x, y + 0.42, z); tru(0.022, 0.07, 0x2a2c31, x, y + 0.47, z); hop(0.15, 0.015, 0.03, 0x2a2c31, x + 0.04, y + 0.53, z, { can: false }); hop(0.016, 0.34, 0.016, 0x1a1a1a, x + 0.1, y + 0.17, z, { can: false }); };
@@ -45,9 +46,10 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
     const X1 = 12.13, X2 = 19.87, Z1 = -13.87, Z2 = -6.13;
     const gach = (key, nen, vien, lap) => { const t = tranh(key, 64, 64, g => { g.fillStyle = nen; g.fillRect(0, 0, 64, 64); g.fillStyle = vien; g.fillRect(0, 0, 64, 3); g.fillRect(0, 0, 3, 64); }).clone(); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...lap); t.needsUpdate = true; return t; };
     // sàn gạch men, tường ốp gạch cao 1,6 m
-    const san = new THREE.Mesh(new THREE.PlaneGeometry(X2 - X1, Z2 - Z1), new THREE.MeshLambertMaterial({ map: gach("gachsan", "#e9eef1", "#b9c6cf", [13, 13]) }));
+    // máy khá: gạch men thật (vat-lieu.js) — sàn lát chéo, tường ốp gạch 60 cm; máy yếu giữ ảnh vẽ cũ
+    const san = new THREE.Mesh(new THREE.PlaneGeometry(X2 - X1, Z2 - Z1), MUC ? vlBe("gach_vs", 0xe4eaee) : new THREE.MeshLambertMaterial({ map: gach("gachsan", "#e9eef1", "#b9c6cf", [13, 13]) }));
     san.rotation.x = -Math.PI / 2; san.position.set((X1 + X2) / 2, 0.012, (Z1 + Z2) / 2); nhom.add(san);
-    const op = (w, x, z, rotY) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, 1.6), new THREE.MeshLambertMaterial({ map: gach("gachtuong" + w, "#cfe6f2", "#9fc3d6", [w / 0.3, 1.6 / 0.3]) })); m.position.set(x, 0.8, z); m.rotation.y = rotY; nhom.add(m); };
+    const op = (w, x, z, rotY) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, 1.6), MUC ? vlBe("gach_men", 0xcfe6f2) : new THREE.MeshLambertMaterial({ map: gach("gachtuong" + w, "#cfe6f2", "#9fc3d6", [w / 0.3, 1.6 / 0.3]) })); m.position.set(x, 0.8, z); m.rotation.y = rotY; nhom.add(m); };
     op(Z2 - Z1, X1 + 0.01, (Z1 + Z2) / 2, Math.PI / 2); op(Z2 - Z1, X2 - 0.01, (Z1 + Z2) / 2, -Math.PI / 2); op(X2 - X1, (X1 + X2) / 2, Z1 + 0.01, 0);
     hop(X2 - X1, 0.06, 0.03, 0x7fa8c9, (X1 + X2) / 2, 1.6, Z1 + 0.02, { can: false }); // nẹp viền gạch
     // ba buồng vệ sinh dọc tường sau

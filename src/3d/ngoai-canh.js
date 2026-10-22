@@ -9,6 +9,7 @@ import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { gopKhoi, VL_MAU_DINH } from "./gop-khoi.js";
 import { taoXeMay, MAU_XE } from "./xe-3d.js";
+import { bienTheVL } from "./vat-lieu.js";
 
 const FONT = "'Be Vietnam Pro', system-ui, sans-serif";
 const FONT_TRON = "'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif";
@@ -233,7 +234,8 @@ function taoBo(id, vat, dienThoai) {
   const vatLieu = (mau, o) => typeof mau === "number" ? (o.sang ? vb(mau) : o.hai ? vl(mau, { side: THREE.DoubleSide }) : vl(mau)) : mau;
   const dat = (m, x, y, z, o) => {
     m.position.set(x, y, z); if (o.ry) m.rotation.y = o.ry; if (o.rx) m.rotation.x = o.rx; if (o.rz) m.rotation.z = o.rz;
-    if (o.sang) m.userData.sang = true; (o.cha || nhom).add(m); return m;
+    if (o.sang) m.userData.sang = true; if (o.be) m.userData.be = o.be; // be: loại mặt (vat-lieu.js)
+    (o.cha || nhom).add(m); return m;
   };
   const k = {
     id, nhom, dongNhom, A, rnd, kinh, dienThoai, trong, fog, capNhat,
@@ -338,13 +340,13 @@ function taoBo(id, vat, dienThoai) {
     const doan = (a, b, gap) => { const ds = []; let dau = a; for (const [p, q] of [...gap].sort((u, v) => u[0] - v[0])) { if (p > dau) ds.push([dau, p]); dau = q; } if (dau < b) ds.push([dau, b]); return ds; };
     const ngang = (z, huong) => {
       if (bo.includes(huong)) return; const g = cua[huong] || [];
-      for (const [p, q] of doan(x1 - d, x2 + d, g)) H(q - p, cao, d, mauT(huong), (p + q) / 2, 0, z, { can: true, tuong: true });
-      for (const [p, q] of g) H(q - p, cao - caoCua, d, mauT(huong), (p + q) / 2, caoCua, z);
+      for (const [p, q] of doan(x1 - d, x2 + d, g)) H(q - p, cao, d, mauT(huong), (p + q) / 2, 0, z, { can: true, tuong: true, be: "son" });
+      for (const [p, q] of g) H(q - p, cao - caoCua, d, mauT(huong), (p + q) / 2, caoCua, z, { be: "son" });
     };
     const doc = (x, huong) => {
       if (bo.includes(huong)) return; const g = cua[huong] || [];
-      for (const [p, q] of doan(z1, z2, g)) H(d, cao, q - p, mauT(huong), x, 0, (p + q) / 2, { can: true, tuong: true });
-      for (const [p, q] of g) H(d, cao - caoCua, q - p, mauT(huong), x, caoCua, (p + q) / 2);
+      for (const [p, q] of doan(z1, z2, g)) H(d, cao, q - p, mauT(huong), x, 0, (p + q) / 2, { can: true, tuong: true, be: "son" });
+      for (const [p, q] of g) H(d, cao - caoCua, q - p, mauT(huong), x, caoCua, (p + q) / 2, { be: "son" });
     };
     ngang(z1 - d / 2, "bac"); ngang(z2 + d / 2, "nam"); doc(x1 - d / 2, "tay"); doc(x2 + d / 2, "dong");
     if (tran !== false) H(x2 - x1 + 2 * d, 0.15, z2 - z1 + 2 * d, tran, (x1 + x2) / 2, cao, (z1 + z2) / 2);
@@ -352,8 +354,9 @@ function taoBo(id, vat, dienThoai) {
   // nhà phố làm phông (mặt tiền ở z = 0 cục bộ, nhìn về +z, chiếm x 0..w)
   k.nhaPho = (x, z, ry, w, soTang, o = {}) => {
     const g = k.nhomCon(x, z, ry), c = { cha: g }, mau = o.mau ?? k.chon(MAU_NHA), TG = 3.3, cao = soTang * TG, sau = o.sau ?? 6;
-    H(w - 0.04, cao, sau, mau, w / 2, 0, -sau / 2, c); if (o.can !== false) g.can(w / 2, -sau / 2, w, sau);
-    H(0.26, 3.05, 0.26, toi(mau), 0.15, 0, 0.1, c); H(0.26, 3.05, 0.26, toi(mau), w - 0.15, 0, 0.1, c);
+    const cv = { ...c, be: "vua" }, ck = { ...c, be: "kim" };
+    H(w - 0.04, cao, sau, mau, w / 2, 0, -sau / 2, cv); if (o.can !== false) g.can(w / 2, -sau / 2, w, sau);
+    H(0.26, 3.05, 0.26, toi(mau), 0.15, 0, 0.1, cv); H(0.26, 3.05, 0.26, toi(mau), w - 0.15, 0, 0.1, cv);
     const cuon = k.vungChung("cuacuon", 128, 128, (gg, W, Hh) => { for (let i = 0; i < 32; i++) { gg.fillStyle = i % 2 ? "#9aa0a6" : "#b9bec4"; gg.fillRect(0, i * 4, W, 4); } gg.fillStyle = "#6d7175"; gg.fillRect(0, Hh - 8, W, 8); });
     const xep = k.vungChung("cuaxep", 128, 128, (gg, W, Hh) => { gg.fillStyle = "#2a2c31"; gg.fillRect(0, 0, W, Hh); gg.fillStyle = "#4a6a5a"; for (let i = 0; i < 16; i++) gg.fillRect(i * 8 + 2, 0, 3, Hh); gg.strokeStyle = "#5a7a6a"; gg.lineWidth = 2; for (let i = 0; i < 8; i++) { gg.beginPath(); gg.moveTo(i * 16, 20); gg.lineTo(i * 16 + 8, 34); gg.lineTo(i * 16 + 16, 20); gg.stroke(); gg.beginPath(); gg.moveTo(i * 16, 96); gg.lineTo(i * 16 + 8, 110); gg.lineTo(i * 16 + 16, 96); gg.stroke(); } });
     const kieu = o.cua ?? (k.rnd() < 0.6 ? "cuon" : "xep");
@@ -373,15 +376,15 @@ function taoBo(id, vat, dienThoai) {
       k.V(lit ? sang : toiK, ww, 1.9, w / 2, y + 1.25, 0.02, { ...c, sang: lit });
       H(ww + 0.14, 0.08, 0.1, 0xf6f6f2, w / 2, y + 2.2, 0.04, c);
       if (banCong) {
-        H(w - 0.3, 0.12, 0.85, toi(mau, 0.9), w / 2, y, 0.42, c); H(w - 0.3, 0.05, 0.05, 0x3a3d44, w / 2, y + 1.0, 0.83, c);
-        for (let xx = 0.3; xx < w - 0.2; xx += 0.3) H(0.025, 0.9, 0.025, 0x3a3d44, xx, y + 0.1, 0.83, c);
+        H(w - 0.3, 0.12, 0.85, toi(mau, 0.9), w / 2, y, 0.42, cv); H(w - 0.3, 0.05, 0.05, 0x3a3d44, w / 2, y + 1.0, 0.83, ck);
+        for (let xx = 0.3; xx < w - 0.2; xx += 0.3) H(0.025, 0.9, 0.025, 0x3a3d44, xx, y + 0.1, 0.83, ck);
         if (k.rnd() < 0.5) { H(w - 0.6, 0.02, 0.02, 0x555555, w / 2, y + 1.95, 0.7, c); for (let i = 0; i < 3; i++) H(0.36, 0.5, 0.02, k.chon([0xc0262d, 0xf6f6f2, 0x2a5aa8, 0xe9e04a, 0xf5b9cf]), 0.7 + i * (w - 1.4) / 3, y + 1.4, 0.7, c); }
         if (k.rnd() < 0.5) for (let i = 0; i < 2; i++) { H(0.24, 0.22, 0.24, 0xb5653a, 0.5 + i * 0.45, y + 0.12, 0.6, c); C(0.22, 0x4f8a3c, 0.5 + i * 0.45, y + 0.5, 0.6, c); }
       }
       if (k.rnd() < 0.7) { H(0.75, 0.48, 0.26, 0xf2f2f2, w - 0.6, y + 2.4, 0.15, c); T(0.17, 0.17, 0.02, 0x8a8d92, w - 0.6, y + 2.64, 0.29, { ...c, rx: Math.PI / 2 }); }
     }
-    H(w - 0.04, 0.5, 0.14, toi(mau, 0.9), w / 2, cao, -0.07, c);
-    if (k.rnd() < 0.6) { T(0.5, 0.5, 1.2, 0xd5d9dd, w * 0.35, cao + 0.4, -1.4, { ...c, seg: 10 }); H(1.1, 0.4, 1.1, 0x8a8d92, w * 0.35, cao, -1.4, c); }
+    H(w - 0.04, 0.5, 0.14, toi(mau, 0.9), w / 2, cao, -0.07, cv);
+    if (k.rnd() < 0.6) { T(0.5, 0.5, 1.2, 0xd5d9dd, w * 0.35, cao + 0.4, -1.4, { ...c, seg: 10, be: "crom" }); H(1.1, 0.4, 1.1, 0x8a8d92, w * 0.35, cao, -1.4, ck); }
     return g;
   };
   // vũng sáng mờ trên nền (ánh đèn hắt xuống)
@@ -405,8 +408,9 @@ function taoBo(id, vat, dienThoai) {
       const gd = new THREE.BufferGeometry(); gd.setAttribute("position", new THREE.Float32BufferAttribute(day, 3));
       const l = new THREE.LineSegments(gd, new THREE.LineBasicMaterial({ color: 0x15161a, fog })); l.userData.rieng = true; nhom.add(l);
     }
-    gopKhoi(nhom, { deQuy: true });
+    gopKhoi(nhom, { deQuy: true, vatLieu: true });
     for (const m of nhom.children) if (m.isMesh && !m.userData.rieng) {
+      if (m.material.userData.beThuVien) { if (trong) m.material = bienTheVL(m.material, { fog: false }); continue; } // vật liệu thật (vat-lieu.js)
       if (m.material === VL_MAU_DINH && trong) m.material = VL_NEN_TRONG;
       else if (m.material.vertexColors && !m.material.map && m.material.side === THREE.DoubleSide && trong) m.material = VL_NEN_TRONG_2;
     }
@@ -1468,7 +1472,7 @@ export function dungNgoaiCanh(scene, vat, { dienThoai = false } = {}) {
       const chung = new Set([VL_MAU_DINH, VL_NEN_TRONG, VL_NEN_TRONG_2, VL_DINH, VL_DINH_2, ...vbCache.values()]);
       goc.traverse(o => {
         if (o.geometry) o.geometry.dispose();
-        const m = o.material; if (!m || Array.isArray(m) || chung.has(m) || m.vertexColors === false && !m.map && !m.transparent) return; // vật liệu vl() dùng chung với phố
+        const m = o.material; if (!m || Array.isArray(m) || chung.has(m) || m.userData.beThuVien || m.vertexColors === false && !m.map && !m.transparent) return; // vật liệu vl() / vật liệu thật (vat-lieu.js) dùng chung với phố
         if (m.map && m.map !== _tron) m.map.dispose(); m.emissiveMap?.dispose(); m.dispose();
       });
       scene.remove(goc);

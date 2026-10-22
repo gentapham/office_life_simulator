@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { taoOto } from "./xe-3d.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+import { MUC, vlBe, vatLieuBe, ganUvBe } from "./vat-lieu.js";
 
 const texCache = new Map();
 function tranh(key, w, h, ve) {
@@ -79,7 +80,7 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   // lối đi lát đá từ cổng vào cửa
   const da = tranh("lotda", 64, 64, (g) => { g.fillStyle = "#cfc6b4"; g.fillRect(0, 0, 64, 64); g.strokeStyle = "#a89e8a"; g.lineWidth = 3; g.strokeRect(2, 2, 60, 28); g.strokeRect(-30, 34, 60, 28); g.strokeRect(34, 34, 60, 28); }).clone();
   da.wrapS = da.wrapT = THREE.RepeatWrapping; da.repeat.set(2, 8); da.needsUpdate = true;
-  nam(4.4, 15.6, new THREE.MeshLambertMaterial({ map: da }), 2, 0.006, 22.1);
+  nam(4.4, 15.6, MUC ? vlBe("lat_san", 0xb3a993) : new THREE.MeshLambertMaterial({ map: da }), 2, 0.006, 22.1);
   // bồn hoa thấp dọc lối đi (chừa lối rẽ sang nhà xe và chòi bảo vệ)
   for (const [x, z1, z2] of [[-0.55, 15.6, 21], [4.55, 15.6, 20.4]]) {
     V(0.5, 0.35, z2 - z1, 0x9a8f7c, x, 0, (z1 + z2) / 2);
@@ -117,7 +118,7 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   for (const x of [-1.1, 5.1]) { tru(0.32, 0.6, 0x3a3d44, x, 0, 15.0); cau(0.55, 0x3d7a34, x, 1.15, 15.0); cau(0.35, 0x4f8a3c, x, 1.6, 15.0); }
 
   // ================= BÊN TRONG: MÀU TƯỜNG, SÀN =================
-  const son = (w, h, c, x, y, z, rotY) => dung(w, h, c, x, y, z, rotY);
+  const son = (w, h, c, x, y, z, rotY) => dung(w, h, vlBe("son", c), x, y, z, rotY);
   // tầng 1: tường sau của các phòng (z = -14) mỗi phòng một màu
   son(9.7, 3.8, 0xfff1b8, -15, 1.9, -13.86, 0);   // kế toán: vàng chanh nhạt
   son(7.7, 3.8, 0xc8f0dc, -6, 1.9, -13.86, 0);    // HR: xanh bạc hà
@@ -137,11 +138,12 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   go.wrapS = go.wrapT = THREE.RepeatWrapping; go.repeat.set(5, 8); go.needsUpdate = true;
   const tham = tranh("thamvp", 64, 64, (g) => { g.fillStyle = "#7f90a6"; g.fillRect(0, 0, 64, 64); g.fillStyle = "#73849a"; g.fillRect(0, 0, 32, 32); g.fillRect(32, 32, 32, 32); }).clone();
   tham.wrapS = tham.wrapT = THREE.RepeatWrapping; tham.repeat.set(9, 10); tham.needsUpdate = true;
-  nam(17.4, 19.4, new THREE.MeshLambertMaterial({ map: tham }), -11, 0.007, 4.1);
-  nam(10.6, 15.6, new THREE.MeshLambertMaterial({ map: go }), 14.5, 0.007, 6.1);
-  nam(11.6, 9.6, new THREE.MeshLambertMaterial({ map: go }), -14, y2 + 0.007, -9);
-  nam(6, 3.6, 0x22305a, -14, y2 + 0.01, -8.4);   // thảm trải dưới bàn giám đốc
-  nam(9, 4.4, 0x5b6b8c, 6, y2 + 0.01, -9);       // thảm phòng họp
+  // máy khá: thảm, sàn gỗ dùng vật liệu thật chung (vat-lieu.js); máy yếu giữ ảnh vẽ cũ
+  nam(17.4, 19.4, MUC ? vlBe("tham", 0x7a8aa0) : new THREE.MeshLambertMaterial({ map: tham }), -11, 0.007, 4.1);
+  nam(10.6, 15.6, MUC ? vlBe("go_san", 0xc49c74) : new THREE.MeshLambertMaterial({ map: go }), 14.5, 0.007, 6.1);
+  nam(11.6, 9.6, MUC ? vlBe("go_san", 0x9a6a44) : new THREE.MeshLambertMaterial({ map: go }), -14, y2 + 0.007, -9);
+  nam(6, 3.6, vlBe("tham", 0x22305a), -14, y2 + 0.01, -8.4);   // thảm trải dưới bàn giám đốc
+  nam(9, 4.4, vlBe("tham", 0x5b6b8c), 6, y2 + 0.01, -9);       // thảm phòng họp
 
   // ================= ĐỒ DÙNG TRÊN BÀN LÀM VIỆC =================
   for (let hang = 0; hang < 2; hang++) for (let cot = 0; cot < 5; cot++) {
@@ -241,7 +243,8 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   sonTuong("z", -6, -1, -1.87, 3.87, [[0, 2]], 0, 0x5a6684);
   sonTuong("z", -6, -1, 4.13, 11.87, [[7, 9]], 0, 0xeef0f3);
 
-  { const m = new THREE.Mesh(mergeGeometries(lopSon), new THREE.MeshLambertMaterial({ vertexColors: true, polygonOffset: true, polygonOffsetFactor: 0, polygonOffsetUnits: -2 })); // chỉ bù hằng số: bù theo độ nghiêng (factor) khi nhìn xiên dọc hành lang đẩy lớp sơn lên trước, che mất biển phòng, bảng tin
+  { const gs = mergeGeometries(lopSon); if (MUC) ganUvBe(gs, "son"); // lớp sơn tường: vân sơn nước thật (máy khá)
+    const m = new THREE.Mesh(gs, MUC ? vatLieuBe("son", false, { polygonOffset: true, polygonOffsetFactor: 0, polygonOffsetUnits: -2 }) : new THREE.MeshLambertMaterial({ vertexColors: true, polygonOffset: true, polygonOffsetFactor: 0, polygonOffsetUnits: -2 })); // chỉ bù hằng số: bù theo độ nghiêng (factor) khi nhìn xiên dọc hành lang đẩy lớp sơn lên trước, che mất biển phòng, bảng tin
     m.userData.rieng = true; m.userData.khongCan = true; add(m); }
 
   // ================= BẢNG TÊN PHÒNG (gắn trên cửa, phía hành lang) =================

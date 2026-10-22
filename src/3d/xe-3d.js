@@ -1,10 +1,14 @@
 // Mẫu xe low-poly: xe máy số, xe tay ga, ô tô, taxi, xe buýt, xe ba gác. Đầu xe hướng về +z, đáy ở y = 0.
 import * as THREE from "three";
-import { vl, gopNhom } from "./nhan-vat-3d.js";
+import { gopNhom } from "./nhan-vat-3d.js";
+import { vlBe } from "./vat-lieu.js";
 
-const hop = (g, w, h, d, c, x, y, z) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof c === "number" ? vl(c) : c); m.position.set(x, y, z); g.add(m); return m; };
-const banh = (g, r, rong, x, y, z) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, rong, 10), vl(0x161616)); m.rotation.z = Math.PI / 2; m.position.set(x, y, z); g.add(m); const v = new THREE.Mesh(new THREE.CylinderGeometry(r * 0.5, r * 0.5, rong + 0.01, 8), vl(0x9a9a9a)); v.rotation.z = Math.PI / 2; v.position.set(x, y, z); g.add(v); };
-const den = c => new THREE.MeshBasicMaterial({ color: c });
+// loại mặt theo màu (vat-lieu.js): sơn xe bóng, nhựa đen, lốp cao su, kim loại, crôm, kính; cả xe vẫn gộp một lượt vẽ
+const BE_XE = { 0x1a1a1a: "nhua", 0x2a2a2a: "nhua", 0x161616: "cao_su", 0x5a5a5a: "kim", 0x9a9a9a: "crom", 0xb5b5b5: "crom", 0x24303c: "kinh", 0x1f2a33: "kinh", 0xb08a5a: "go", 0xd9c9a8: "go" };
+const vx = c => vlBe(BE_XE[c] || "son_xe", c);
+const hop = (g, w, h, d, c, x, y, z) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof c === "number" ? vx(c) : c); m.position.set(x, y, z); g.add(m); return m; };
+const banh = (g, r, rong, x, y, z) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, rong, 10), vx(0x161616)); m.rotation.z = Math.PI / 2; m.position.set(x, y, z); g.add(m); const v = new THREE.Mesh(new THREE.CylinderGeometry(r * 0.5, r * 0.5, rong + 0.01, 8), vx(0x9a9a9a)); v.rotation.z = Math.PI / 2; v.position.set(x, y, z); g.add(v); };
+const den = c => { const m = new THREE.MeshBasicMaterial({ color: c }); m.userData.be = "son_bong"; return m; }; // đèn: gộp chung khối xe (như trước, có đổ sáng)
 const DEN_TRUOC = den(0xfff3c4), DEN_SAU = den(0xd02020);
 
 // vị trí đèn trước, đèn sau của từng loại xe (toạ độ của xe, đầu xe hướng +z) cho quầng sáng ban đêm

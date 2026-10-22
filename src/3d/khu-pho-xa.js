@@ -11,6 +11,7 @@ import { vl } from "./nhan-vat-3d.js";
 import { VL_MAU_DINH } from "./gop-khoi.js";
 import { veTex, vlDiem, taoDiemSang } from "./chi-tiet-pho.js";
 import { cheDoNhe } from "../cai-dat.js";
+import { MUC, vatLieuBe, matTienPBR, themChiTiet } from "./vat-lieu.js";
 
 const TANG = 3.3;
 // vùng lõi: phố chính, đại lộ, hẻm, quảng trường (người chơi chỉ đi trong vùng này)
@@ -794,15 +795,18 @@ export function taoKhuPhoXa(ctx) {
       const nhe2 = nhe ? 0.5 : 1;
       const tNha = texNha(false, nhe2), tNhaDen = texNha(true, nhe2), tKinh = texKinh(false, nhe2), tKinhDen = texKinh(true, nhe2);
       for (const t of [tNha, tKinh]) t.anisotropy = 4;
-      const vlNha = new THREE.MeshLambertMaterial({ map: tNha, emissiveMap: tNhaDen, emissive: 0x000000, vertexColors: true });
-      const vlKinh = new THREE.MeshLambertMaterial({ map: tKinh, emissiveMap: tKinhDen, emissive: 0x000000, vertexColors: true });
+      // mặt tường: thêm vân vữa (pháp tuyến) lặp ~1,6 m; kính cao ốc bóng hơn (phản chiếu bầu trời khi có môi trường)
+      const vlNha = matTienPBR(new THREE.MeshLambertMaterial({ map: tNha, emissiveMap: tNhaDen, emissive: 0x000000, vertexColors: true }), "vua", 24, 33, { n: 0.6 });
+      const vlKinh = matTienPBR(new THREE.MeshLambertMaterial({ map: tKinh, emissiveMap: tKinhDen, emissive: 0x000000, vertexColors: true }), null, 0, 0, { roughness: 0.25 });
+      if (vlKinh.isMeshStandardMaterial) vlKinh.metalness = 0.3;
       DEM.cuaSo.push(vlNha, vlKinh);
       const vlLed = new THREE.MeshBasicMaterial({ vertexColors: true }); vlLed.userData.dong = true;
       const them = (bo, vlieu, ten) => { if (bo.rong) return null; const m = new THREE.Mesh(bo.hinh(), vlieu); m.userData.rieng = true; m.name = ten; nhom.add(m); return m; };
-      for (let i = 0; i < 9; i++) { them(B.tuong[i], vlNha, "kpx-tuong" + i); them(B.boc[i], VL_MAU_DINH, "kpx-khoi" + i); them(B.kinh[i], vlKinh, "kpx-kinh" + i); }
+      for (let i = 0; i < 9; i++) { them(B.tuong[i], vlNha, "kpx-tuong" + i); them(B.boc[i], MUC ? vatLieuBe("tron") : VL_MAU_DINH, "kpx-khoi" + i); them(B.kinh[i], vlKinh, "kpx-kinh" + i); }
       them(B.led, vlLed, "kpx-led");
       // mặt đất: dùng lại vật liệu đất cũ (đổi màu khi mưa) + ảnh hạt bê tông
       vlDat.map = texNen(); vlDat.vertexColors = true; vlDat.color.set(0xffffff); vlDat.needsUpdate = true;
+      themChiTiet(vlDat, "be_tong", 8, 8, { n: 0.5 }); // toạ độ ảnh nền: 16 m một đơn vị → vân bê tông 2 m
       const meNen = them(B.nen, vlDat, "kpx-nen"); meNen.receiveShadow = false;
       const diem = den.length ? taoDiemSang(den, vlDiem()) : null;
       if (diem) { diem.name = "kpx-den"; diem.visible = false; nhom.add(diem); }

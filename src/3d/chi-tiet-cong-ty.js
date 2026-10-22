@@ -9,6 +9,7 @@ import { vl } from "./nhan-vat-3d.js";
 import { am } from "../am-thanh-game.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { cheDoNhe } from "../cai-dat.js";
+import { MUC, vlBe } from "./vat-lieu.js";
 
 const CAO = 4, TC = 3.82, NUA = 0.125;
 const FONT = "'Be Vietnam Pro', system-ui, sans-serif";
@@ -355,7 +356,8 @@ function khoiTao() {
   VL_MAN = new THREE.MeshBasicMaterial({ map: TEX_MAN, ...bu });
   // kính cửa sổ: nhìn từ trong thấy trời và phố đối diện, màu đổi theo giờ (capNhatCuaSo)
   VL_KINH_TRONG = new THREE.MeshBasicMaterial({ map: TEX_MAN, color: 0xffffff }); VL_KINH_TRONG.userData.dong = true;
-  VL_KINH_NGOAI = new THREE.MeshLambertMaterial({ color: 0x86b4cc, emissive: 0x0f2a38 }); VL_KINH_NGOAI.userData.dong = true;
+  // kính nhìn từ ngoài: máy khá dùng PBR bóng (phản chiếu trời khi có ảnh môi trường)
+  VL_KINH_NGOAI = MUC ? new THREE.MeshStandardMaterial({ color: 0x86b4cc, emissive: 0x0f2a38, roughness: 0.08, metalness: 0.35 }) : new THREE.MeshLambertMaterial({ color: 0x86b4cc, emissive: 0x0f2a38 }); VL_KINH_NGOAI.userData.dong = true;
   VL_KINH_MO = new THREE.MeshBasicMaterial({ color: 0xe2eaee }); VL_KINH_MO.userData.dong = true;
   VL_KIM = new THREE.MeshBasicMaterial({ color: 0x1c1c1f });
   VL_KINH_CUA = new THREE.MeshLambertMaterial({ color: 0xbfe3f2, transparent: true, opacity: 0.32, depthWrite: false });
@@ -514,12 +516,12 @@ function cuaSo([truc, c, ht, a, b, y1, y2, tang, o = {}]) {
       const uv = { u0: vungTroi.u0 + (vungTroi.u1 - vungTroi.u0) * lech, u1: vungTroi.u0 + (vungTroi.u1 - vungTroi.u0) * (lech + r), v0: vungTroi.v0, v1: vungTroi.v1 };
       M.phang(u, (y1 + y2) / 2, w, h, uv, VL_KINH_TRONG, 0.008);
     } else M.phang(u, (y1 + y2) / 2, w, h, { u0: 0, u1: 0, v0: 0, v1: 0 }, VL_KINH_NGOAI, 0.008);
-    const mk = trong ? 0xf2f2ee : 0x4a4f57, T = 0.06, D = 0.05;
-    M.hop(u, y2, w + 2 * T, T, D, mk); M.hop(u, y1 - T, w + 2 * T, T, D, mk);
-    M.hop(a - T / 2, y1, T, h, D, mk); M.hop(b + T / 2, y1, T, h, D, mk);
+    const mk = trong ? 0xf2f2ee : 0x4a4f57, T = 0.06, D = 0.05, vk = { vatLieu: vlBe(trong ? "son_bong" : "kim", mk) }; // khung nhôm sơn
+    M.hop(u, y2, w + 2 * T, T, D, mk, vk); M.hop(u, y1 - T, w + 2 * T, T, D, mk, vk);
+    M.hop(a - T / 2, y1, T, h, D, mk, vk); M.hop(b + T / 2, y1, T, h, D, mk, vk);
     const n = Math.max(1, Math.round(w / 1.0));
-    for (let i = 1; i < n; i++) M.hop(a + w * i / n, y1, 0.045, h, D * 0.8, mk);
-    if (h > 1.2) M.hop(u, y2 - 0.42, w, 0.04, D * 0.8, mk);
+    for (let i = 1; i < n; i++) M.hop(a + w * i / n, y1, 0.045, h, D * 0.8, mk, vk);
+    if (h > 1.2) M.hop(u, y2 - 0.42, w, 0.04, D * 0.8, mk, vk);
     M.hop(u, y1 - T - 0.04, w + 2 * T + 0.1, 0.04, trong ? 0.15 : 0.1, trong ? 0xd9d2c2 : 0x9a958a);
     if (trong && o.rem) { // rèm cuốn kéo xuống một phần
       M.hop(u, y2 + T, w + 0.1, 0.09, 0.09, 0xe8e2d0);
@@ -539,7 +541,8 @@ const LO_CUA = [
   ["z", 2, -14, -12, 1, 1], ["z", 2, -3, -1, 1, 1], ["z", 2, 2.5, 7.5, 1, 0], ["z", 2, 13, 15, 1, 1],
 ];
 function khungCua([truc, c, a, b, tang], mau = 0x7a5a3a, sau = 0.29) {
-  const y0 = tang * CAO, bx = (w, h, d, x, y, z) => truc === "z" ? K(w, h, d, mau, x, y, z) : K(d, h, w, mau, z, y, x);
+  const vlk = vlBe(mau === 0x3a3d44 ? "kim" : "go", mau); // khung gỗ / khung nhôm
+  const y0 = tang * CAO, bx = (w, h, d, x, y, z) => truc === "z" ? K(w, h, d, mau, x, y, z, { vatLieu: vlk }) : K(d, h, w, mau, z, y, x, { vatLieu: vlk });
   bx(0.11, 2.44, sau, a - 0.015, y0, c); bx(0.11, 2.44, sau, b + 0.015, y0, c); bx(b - a + 0.25, 0.09, sau, (a + b) / 2, y0 + 2.38, c);
 }
 function lenChan(truc, c, huong, tu, den, cua, tang, mau = 0x6b5a48) {
