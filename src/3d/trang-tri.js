@@ -6,6 +6,7 @@ import { vl } from "./nhan-vat-3d.js";
 import { taoOto } from "./xe-3d.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { MUC, vlBe, vatLieuBe, ganUvBe } from "./vat-lieu.js";
+import { memBat, cucTan, MAU_TAN } from "./hinh-mem.js";
 
 const texCache = new Map();
 function tranh(key, w, h, ve) {
@@ -26,7 +27,12 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   const dung = (w, h, mat, x, y, z, rotY) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), typeof mat === "number" ? new THREE.MeshLambertMaterial({ color: mat }) : mat); m.position.set(x, y, z); m.rotation.y = rotY; return add(m); };
   const nam = (w, d, mat, x, y, z) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), typeof mat === "number" ? new THREE.MeshLambertMaterial({ color: mat }) : mat); m.rotation.x = -Math.PI / 2; m.position.set(x, y, z); return add(m); };
   const tru = (r, h, c, x, y, z) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 10), vl(c)); m.position.set(x, y + h / 2, z); return add(m); };
-  const cau = (r, c, x, y, z) => { const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 0), vl(c)); m.position.set(x, y, z); return add(m); };
+  const MEM = memBat("cau");
+  // cục tròn (bụi cây, hoa giấy, trái cây): bản mềm là cục méo tô đậm nhạt, bọc trong nhóm để .scale như cũ
+  const cau = (r, c, x, y, z) => {
+    if (MEM) { const g = new THREE.Group(); g.position.set(x, y, z); g.add(cucTan(r, MAU_TAN[c] || c, 0, 0, 0, { bien: Math.floor(Math.abs(x * 13 + z * 7)), chiTiet: r >= 0.3 ? 1 : 0 })); return add(g); }
+    const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 0), vl(c)); m.position.set(x, y, z); return add(m);
+  };
   const vlDen = new THREE.MeshBasicMaterial({ color: 0xf3efe6 }); vlDen.userData.dong = true;
 
   // ================= MẶT TIỀN SƠN MỚI =================

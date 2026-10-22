@@ -7,6 +7,7 @@ import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { vl, taoNguoiLaiXe } from "./nhan-vat-3d.js";
 import { taoXeMay, MAU_XE } from "./xe-3d.js";
 import { cheDoNhe } from "../cai-dat.js";
+import { memBat, cucTan, hinhChau, hinhVat, hinhTru, hinhLop, hinhMam, MAU_TAN, gheDauNhua } from "./hinh-mem.js";
 
 // ---------- Ảnh vẽ bằng canvas ----------
 const texCache = new Map();
@@ -348,6 +349,7 @@ export function texDenChungCu(hat) {
 // ctx: { nhom, can, NHA, DEN, CAY, thanDung, matUot, denDem, vlDenDuong, veRanh, DEM, choNgoi, vatCan, boXe, dienThoai }
 export function dungChiTietPho(ctx) {
   const { nhom, can, NHA, DEN, CAY, thanDung, matUot, denDem, vlDenDuong, veRanh, DEM, dienThoai } = ctx;
+  const MEM = memBat("nho");
   let seed = 69069;
   const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   const chon = a => a[Math.floor(rnd() * a.length)];
@@ -435,9 +437,19 @@ export function dungChiTietPho(ctx) {
       const so2 = 1 + Math.floor(rnd() * (n.hem ? 3 : 2));
       for (let k = 0; k < so2; k++) {
         const x = 0.5 + k * 0.42, cao = rnd() < 0.3;
-        const ch = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.11, 0.28, 8), vl(chon([0xb5653a, 0x2a5aa8, 0xe9e1cf, 0x8a4a2a]))); ch.position.set(x, 0.14, 0.42); g.add(ch);
-        if (cao) { const c = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.9, 6), vl(0x3d7a34)); c.position.set(x, 0.72, 0.42); g.add(c); }
-        else { const l = new THREE.Mesh(new THREE.IcosahedronGeometry(0.22, 0), vl(chon([0x4f8a3c, 0x3d7a34, 0x6aa84f]))); l.position.set(x, 0.42, 0.42); g.add(l); if (rnd() < 0.4) { const hoa = new THREE.Mesh(new THREE.IcosahedronGeometry(0.07, 0), vl(chon([0xf26fa6, 0xffe14d, 0xc0262d]))); hoa.position.set(x + 0.08, 0.58, 0.48); g.add(hoa); } }
+        const mauCh = chon([0xb5653a, 0x2a5aa8, 0xe9e1cf, 0x8a4a2a]);
+        if (MEM) { const ch = new THREE.Mesh(hinhChau(0.15, 0.11, 0.28, 10), vl(mauCh)); ch.position.set(x, 0, 0.42); g.add(ch); }
+        else { const ch = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.11, 0.28, 8), vl(mauCh)); ch.position.set(x, 0.14, 0.42); g.add(ch); }
+        if (cao) {
+          if (MEM) { // cây trụ (cau kiểng): ba tầng cục lá thon chồng nhau trong khối nón cũ
+            for (let k = 0; k < 3; k++) g.add(cucTan(0.2 - k * 0.04, 0x3f7a4c, x, 0.42 + k * 0.24, 0.42, { bien: k + idx, sy: 1.5 - k * 0.1, sx: 1 - k * 0.12, sz: 1 - k * 0.12, chiTiet: 0 }));
+          } else { const c = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.9, 6), vl(0x3d7a34)); c.position.set(x, 0.72, 0.42); g.add(c); }
+        }
+        else {
+          const mauL = chon([0x4f8a3c, 0x3d7a34, 0x6aa84f]);
+          const l = MEM ? cucTan(0.22, MAU_TAN[mauL], 0, 0, 0, { bien: idx + k }) : new THREE.Mesh(new THREE.IcosahedronGeometry(0.22, 0), vl(mauL)); l.position.set(x, 0.42, 0.42); g.add(l);
+          if (rnd() < 0.4) { const mauH = chon([0xf26fa6, 0xffe14d, 0xc0262d]); const hoa = MEM ? cucTan(0.07, mauH, 0, 0, 0, { bien: idx, chiTiet: 0 }) : new THREE.Mesh(new THREE.IcosahedronGeometry(0.07, 0), vl(mauH)); hoa.position.set(x + 0.08, 0.58, 0.48); g.add(hoa); }
+        }
       }
     }
     // bậc thềm nhà trong hẻm
@@ -487,7 +499,10 @@ export function dungChiTietPho(ctx) {
     const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = goc; nhom.add(g);
     H(1.2, 0.08, 0.6, 0x8a8d92, 0, 0.62, 0, g); H(1.2, 0.55, 0.6, 0xcfe7f2, 0, 0.7, 0, g); H(1.24, 0.05, 0.64, 0x2a5aa8, 0, 1.25, 0, g);
     H(1.1, 0.35, 0.5, 0xb08a5a, 0, 0.27, 0, g);
-    for (const s of [-1, 1]) { const b = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 0.05, 10), vl(0x1a1a1a)); b.rotation.x = Math.PI / 2; b.position.set(s * 0.4, 0.2, 0.33); g.add(b); }
+    for (const s of [-1, 1]) {
+      const b = new THREE.Mesh(MEM ? hinhLop(0.2, 0.05) : new THREE.CylinderGeometry(0.2, 0.2, 0.05, 10), vl(0x1a1a1a)); if (MEM) b.rotation.y = Math.PI / 2; else b.rotation.x = Math.PI / 2; b.position.set(s * 0.4, 0.2, 0.33); g.add(b);
+      if (MEM) { const v = new THREE.Mesh(hinhMam(0.12, 0.045, 8), vl(0x8a8d92)); v.rotation.y = Math.PI / 2; v.position.set(s * 0.4, 0.2, 0.33); g.add(v); } // mâm bánh
+    }
     H(0.04, 0.04, 0.5, 0x5a5a5a, 0.72, 0.85, 0, g);
     mp(1.0, 0.36, new THREE.MeshBasicMaterial({ map: bangNho(ten, "#c0262d", "#ffe14d") }), 0, 1.5, 0.31, g); H(0.04, 0.3, 0.04, 0x5a5a5a, -0.5, 1.28, 0.28, g); H(0.04, 0.3, 0.04, 0x5a5a5a, 0.5, 1.28, 0.28, g);
     for (let i = 0; i < 4; i++) H(0.18, 0.1, 0.18, chon([0xf2d27a, 0xe8b860, 0xf6f6f2]), -0.4 + i * 0.26, 0.75, 0, g);
@@ -579,8 +594,13 @@ export function dungChiTietPho(ctx) {
   capNhatDs.push(mt => { vlVung2.opacity = Math.min(0.7, mt.uot * 0.85); vlVung2.visible = mt.uot > 0.04; });
 
   // ===== 7. Cà phê cóc: ghế nhựa thấp xếp hàng sát tường, ngồi nhìn ra đường =====
-  const gheNhua = (x, z, mau = chon([0xc0262d, 0x2a5aa8, 0x2e8b57])) => { H(0.32, 0.04, 0.32, mau, x, 0.4, z); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) H(0.04, 0.4, 0.04, mau, x + a * 0.13, 0, z + b * 0.13); };
-  const banNho = (x, z) => { H(0.36, 0.03, 0.36, chon([0x2a5aa8, 0xc0262d, 0xd9c9a8]), x, 0.42, z); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) H(0.035, 0.42, 0.035, 0x5a5a5a, x + a * 0.14, 0, z + b * 0.14); const ly = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.035, 0.11, 8), vl(0x7a4a2a)); ly.position.set(x + 0.08, 0.5, z); nhom.add(ly); };
+  const gheNhua = (x, z, mau = chon([0xc0262d, 0x2a5aa8, 0x2e8b57])) => { if (MEM) { gheDauNhua(nhom, vl(mau), x, z); return; } H(0.32, 0.04, 0.32, mau, x, 0.4, z); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) H(0.04, 0.4, 0.04, mau, x + a * 0.13, 0, z + b * 0.13); };
+  const banNho = (x, z) => {
+    const mau = chon([0x2a5aa8, 0xc0262d, 0xd9c9a8]);
+    if (MEM) { const m = new THREE.Mesh(hinhVat(0.36, 0.03, 0.36, 0.014), vl(mau)); m.position.set(x, 0.435, z); nhom.add(m); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { const c = new THREE.Mesh(hinhTru(0.017, 0.017, 0.42, 6, true), vl(0x5a5a5a)); c.position.set(x + a * 0.14, 0.21, z + b * 0.14); nhom.add(c); } }
+    else { H(0.36, 0.03, 0.36, mau, x, 0.42, z); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) H(0.035, 0.42, 0.035, 0x5a5a5a, x + a * 0.14, 0, z + b * 0.14); }
+    const ly = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.035, 0.11, 8), vl(0x7a4a2a)); ly.position.set(x + 0.08, 0.5, z); nhom.add(ly);
+  };
   const caPheCoc = (x1, x2, tuong, truc, ra, gio) => {
     // truc "x": hàng ghế chạy dọc trục x, ra = hướng ra đường theo z (+1/-1); "z": dọc trục z, ra theo x
     const huong = truc === "x" ? (ra > 0 ? 0 : Math.PI) : (ra > 0 ? Math.PI / 2 : -Math.PI / 2);

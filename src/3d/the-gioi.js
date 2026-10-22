@@ -5,9 +5,11 @@ import { gopKhoi } from "./gop-khoi.js";
 import { MUC, vlBe, vlRieng, uvTheGioiKhoi } from "./vat-lieu.js";
 import { vl } from "./nhan-vat-3d.js";
 import { taoThanhPho } from "./thanh-pho.js";
+import { memBat, dungCay, dungChauCay, BoCo, hinhHopVL, hinhVat, hinhTru } from "./hinh-mem.js";
 import { themNoiThat } from "./noi-that.js";
 import { trangTriCongTy } from "./trang-tri.js";
 import { themChiTietCongTy, manHinhPhang } from "./chi-tiet-cong-ty.js";
+import { taoXeMay } from "./xe-3d.js";
 export { THANG_MAY, capNhatChiTiet, capNhatCua, capNhatCuaSo } from "./chi-tiet-cong-ty.js";
 
 export const CAO_TANG = 4;
@@ -149,14 +151,17 @@ export function khuCuaNoi(noi) {
 export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // mọi khối tĩnh vào một nhóm, cuối cùng gộp theo vật liệu để giảm lượt vẽ
   const scene = new THREE.Group(); sceneGoc.add(scene);
+  const MEM = memBat();
   const vat = { 0: [], 1: [], 2: [] };    // vật cản theo tầng: {minX,maxX,minZ,maxZ}
   const denDem = [];                       // đèn bật buổi tối
   const nhapNhay = [];                     // đèn LED nhấp nháy
   const Y = t => t * CAO_TANG;
 
   // be: loại mặt (vat-lieu.js) — tường sơn, gạch men, gỗ...
+  // đồ đạc (gỗ, vải, da, nhựa, sơn bóng, kim loại) vát cạnh mềm; tường, sàn, kính giữ hộp vuông (ghép mí không hở)
   const hop = (w, h, d, color, x, y, z, { tang = 0, can = true, vatLieu, be } = {}) => {
-    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), vatLieu || vl(color));
+    const vlm = vatLieu || vl(color);
+    const m = new THREE.Mesh(MEM && (!be || BE_VAT.has(be)) && memBat("hop") && Math.min(w, h, d) >= 0.12 ? hinhHopVL(w, h, d, vlm) : new THREE.BoxGeometry(w, h, d), vlm);
     if (be) m.userData.be = be;
     m.position.set(x, y + h / 2, z);
     scene.add(m);
@@ -189,15 +194,31 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   const san = new THREE.Mesh(new THREE.PlaneGeometry(48, 48), dong(vlRieng("lat_san", 0xc9c3b6))); san.rotation.x = -Math.PI / 2; san.position.set(0, -0.005, 6); scene.add(san);
   uvTheGioiKhoi(san, "lat_san");
   pho.matUot.push(san.material);
+  const coSan = new BoCo(); // búi cỏ trong sân (gốc cây, chân hàng rào)
   const cay = (x, z, s = 1) => {
+    if (MEM && memBat("cay")) {
+      // cây sân: thân ngắn hơi cong, tán ba cục tròn (gọn trong hộp tán cũ)
+      const h = (x * 0.13 + z * 0.07) % 1, a = h * 6.28;
+      dungCay(scene, { goc: [x, z], cao: 1.4 * s, rGoc: 0.16 * s, rNgon: 0.11 * s, hat: h, them: false, tan: [
+        { x: x + Math.cos(a) * 0.08 * s, y: 1.98 * s, z: z + Math.sin(a) * 0.08 * s, r: 0.72 * s, mau: 0x55894a },
+        { x: x + Math.cos(a + 2.2) * 0.3 * s, y: 1.78 * s, z: z + Math.sin(a + 2.2) * 0.3 * s, r: 0.5 * s, mau: 0x3f7a4c },
+        { x: x + Math.cos(a + 4.3) * 0.3 * s, y: 2.12 * s, z: z + Math.sin(a + 4.3) * 0.3 * s, r: 0.46 * s, mau: 0x5f9450 },
+      ] });
+      coSan.vong(x, z, 0.2, 0.42, 8, 0, 0.9, 2);
+    } else {
     const t = new THREE.Mesh(new THREE.CylinderGeometry(0.12 * s, 0.16 * s, 1.4 * s, 5), vl(0x6b4a2f)); t.position.set(x, 0.7 * s, z); scene.add(t);
     const l = new THREE.Mesh(new THREE.IcosahedronGeometry(0.9 * s, 0), vl(0x4f8a3c)); l.position.set(x, 1.9 * s, z); scene.add(l);
+    }
     vat[0].push({ minX: x - 0.3, maxX: x + 0.3, minZ: z - 0.3, maxZ: z + 0.3 });
   };
   [[-18, 18], [-14, 26], [16, 18], [20, 26], [-22, 22], [-22, -16], [22, -16], [-22, 4], [22, 4]].forEach(([x, z]) => cay(x, z, 1.1));
 
   // ---------- Hàng rào sân trước + cổng ----------
   const hangRao = (x1, z1, x2, z2, doors = []) => tuong(x1, z1, x2, z2, 0, doors, 0xd2cbbb, 1.4, "vua");
+  if (MEM) { // cỏ mọc sát chân hàng rào phía trong sân (sát tường, người không đứng tới)
+    coSan.doan(-23.84, -17.5, -23.84, 29.5, 0.5, 0.03, 0, 0.72, 3); coSan.doan(23.84, -17.5, 23.84, 29.5, 0.5, 0.03, 0, 0.72, 4);
+    coSan.doan(-23.5, -17.84, 23.5, -17.84, 0.5, 0.03, 0, 0.72, 5); coSan.doan(-23.5, 29.84, -0.8, 29.84, 0.5, 0.03, 0, 0.72, 6); coSan.doan(4.8, 29.84, 23.5, 29.84, 0.5, 0.03, 0, 0.72, 7);
+  }
   hangRao(-24, -18, -24, 30); hangRao(24, -18, 24, 30); hangRao(-24, -18, 24, -18);
   hangRao(-24, 30, 24, 30, [[0, 4]]);
   hop(4, 1.6, 0.2, 0x3c3f46, 6.1, 0, 29.65, { be: "kim" }); // cánh cổng đã kéo sang một bên: đi bộ ra phố được
@@ -357,17 +378,19 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
     vat[tang].push({ minX: hopBao.min.x, maxX: hopBao.max.x, minZ: hopBao.min.z, maxZ: hopBao.max.z, noiThat: true });
   }
   for (const l of nhapNhay) l.userData.rieng = true;
+  coSan.dung(scene);
   gopKhoi(scene, { deQuy: true, vatLieu: true });
   return { vat, denDem, nhapNhay, pho, nhom: scene };
 }
 
 const dong = m => { m.userData.dong = true; return m; };
+const BE_VAT = new Set(["go", "vai", "da", "nhua", "son_bong", "kim"]);
 const VL_DEN_TRAN = new THREE.MeshBasicMaterial({ color: 0xfff6dd }); VL_DEN_TRAN.userData.dong = true;
 
 
 // ---------- Đồ vật nhỏ ----------
 function banLamViec(scene, x, z, vat, denDem, chu) {
-  const add = (w, h, d, c, px, py, pz) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), vl(c)); m.position.set(px, py + h / 2, pz); scene.add(m); return m; };
+  const add = (w, h, d, c, px, py, pz) => { const m = new THREE.Mesh(hinhHopNoi(w, h, d), vl(c)); m.position.set(px, py + h / 2, pz); scene.add(m); return m; };
   add(2, 0.06, 1, 0xd9cdb5, x, 0.72, z).userData.be = "go";
   add(0.08, 0.72, 0.9, 0x8a8478, x - 0.95, 0, z).userData.be = "kim"; add(0.08, 0.72, 0.9, 0x8a8478, x + 0.95, 0, z).userData.be = "kim";
   add(0.55, 0.06, 0.55, 0x3a3d44, x, 0.45, z + 0.9).userData.be = "vai"; add(0.55, 0.6, 0.08, 0x3a3d44, x, 0.5, z + 1.15).userData.be = "vai"; add(0.08, 0.45, 0.08, 0x222222, x, 0, z + 0.9).userData.be = "kim";
@@ -382,10 +405,16 @@ function nhomGhe(scene, cho, vatTang, r = 0.27) {
   const g = new THREE.Group(); g.position.set(cho.x, cho.tang * CAO_TANG, cho.z); g.rotation.y = cho.huong ?? 0; scene.add(g);
   vatTang.push({ minX: cho.x - r, maxX: cho.x + r, minZ: cho.z - r, maxZ: cho.z + r, ghe: true });
   const add = (geo, m, x, y, z, rx = 0, ry = 0, rz = 0, cha = g) => { const o = new THREE.Mesh(geo, m); o.position.set(x, y, z); o.rotation.set(rx, ry, rz); cha.add(o); return o; };
-  const hop = (w, h, d, m, x, y, z, rx = 0, cha = g) => add(new THREE.BoxGeometry(w, h, d), m, x, y + h / 2, z, rx, 0, 0, cha); // y: đáy khối
+  const hop = (w, h, d, m, x, y, z, rx = 0, cha = g) => add(hinhHopNoi(w, h, d), m, x, y + h / 2, z, rx, 0, 0, cha); // y: đáy khối (đệm, lưng bo tròn)
   const tru = (r1, r2, h, m, x, y, z, rx = 0, rz = 0, seg = 8, cha = g) => // y: tâm trụ
     add(new THREE.CylinderGeometry(r1, r2, h, seg), m, x, y, z, rx, 0, rz, cha);
   return { g, add, hop, tru };
+}
+// hộp nội thất: đệm, lưng ghế bo mềm hơn hộp thường (khối nhỏ vẫn vát nhẹ); máy yếu: hộp thường
+function hinhHopNoi(w, h, d) {
+  if (!memBat("hop")) return new THREE.BoxGeometry(w, h, d);
+  const m = Math.min(w, h, d);
+  return m < 0.02 ? new THREE.BoxGeometry(w, h, d) : hinhVat(w, h, d, Math.min(m * 0.32, 0.05));
 }
 const VL_KIM = () => vlBe("crom", 0xa9aeb4), VL_NHUA_DEN = () => vlBe("nhua", 0x1c1c1f);
 // da bóng nhẹ (ghế giám đốc): vật liệu riêng theo màu, dùng chung giữa các ghế cùng màu
@@ -482,7 +511,7 @@ function gheNhuaTua(scene, cho, vatTang) {
 // bàn làm việc đơn: mặt gỗ, hai hộc chân, tấm che chân phía trước (người ngồi phía -z cục bộ khi quay = 0)
 function banDon(scene, x, z, w, d, mau, tang, vatTang) {
   const y = tang * CAO_TANG;
-  const add = (bw, bh, bd, c, px, py, pz) => { const m = new THREE.Mesh(new THREE.BoxGeometry(bw, bh, bd), vlBe(c === 0xc9ccd0 ? "crom" : "go", c)); m.position.set(px, y + py + bh / 2, pz); scene.add(m); };
+  const add = (bw, bh, bd, c, px, py, pz) => { const m = new THREE.Mesh(hinhHopNoi(bw, bh, bd), vlBe(c === 0xc9ccd0 ? "crom" : "go", c)); m.position.set(px, y + py + bh / 2, pz); scene.add(m); };
   add(w, 0.04, d, mau, x, 0.72, z);
   add(0.04, 0.72, d - 0.04, 0x6b5a48, x - w / 2 + 0.03, 0, z); add(0.4, 0.72, d - 0.04, 0x6b5a48, x + w / 2 - 0.22, 0, z);
   add(w - 0.06, 0.4, 0.03, 0x6b5a48, x, 0.3, z + d / 2 - 0.05);
@@ -492,13 +521,21 @@ function banDon(scene, x, z, w, d, mau, tang, vatTang) {
 // màn hình máy tính: nội dung theo việc của chủ bàn (ảnh ghép chung, không chịu ánh sáng nên luôn sáng)
 function manHinh(scene, x, y, z, rotY, denDem, noiDung = "mac_dinh") {
   const g = new THREE.Group(); g.position.set(x, y, z); g.rotation.y = rotY;
-  const v = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.42, 0.04), vlBe("nhua", 0x1a1b1f)); v.position.y = 0.35; g.add(v);
+  const M = memBat("nho");
+  // màn hình viền mỏng bo góc, lưng hơi dày ở giữa, chân trụ tròn đế bầu dục (máy yếu: hộp cũ)
+  const v = new THREE.Mesh(M ? hinhVat(0.7, 0.42, 0.04, 0.014) : new THREE.BoxGeometry(0.7, 0.42, 0.04), vlBe("nhua", 0x1a1b1f)); v.position.y = 0.35; g.add(v);
+  if (M) { const l = new THREE.Mesh(hinhVat(0.4, 0.24, 0.03, 0.012), vlBe("nhua", 0x24252a)); l.position.set(0, 0.34, -0.03); g.add(l); }
   const mh = manHinhPhang(0.64, 0.36, noiDung); mh.position.set(0, 0.35, 0.025); g.add(mh);
-  const c = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.15, 0.06), vl(0x1a1b1f)); c.position.set(0, 0.07, -0.01); g.add(c);
-  const de = new THREE.Mesh(new THREE.BoxGeometry(0.24, 0.015, 0.17), vl(0x1a1b1f)); de.position.set(0, 0.0075, -0.01); g.add(de);
+  const c = new THREE.Mesh(M ? hinhTru(0.026, 0.022, 0.15, 8) : new THREE.BoxGeometry(0.06, 0.15, 0.06), vl(0x1a1b1f)); c.position.set(0, 0.07, M ? -0.03 : -0.01); g.add(c);
+  const de = new THREE.Mesh(M ? hinhTru(0.11, 0.12, 0.015, 12) : new THREE.BoxGeometry(0.24, 0.015, 0.17), vl(0x1a1b1f)); de.position.set(0, 0.0075, -0.01); if (M) de.scale.set(1, 1, 0.7); g.add(de);
   scene.add(g);
 }
 function chauCay(scene, x, z, vat) {
+  if (memBat("cau")) {
+    dungChauCay(scene, x, 0, z, { rTren: 0.25, rDuoi: 0.2, cao: 0.45, mauChau: 0xb5653a, rLa: 0.45, yLa: 0.85, mauLa: 0x4f8650, hat: (x * 0.31 + z * 0.17) % 1 });
+    vat.push({ minX: x - 0.3, maxX: x + 0.3, minZ: z - 0.3, maxZ: z + 0.3 });
+    return;
+  }
   const c = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.2, 0.45, 6), vl(0xb5653a)); c.position.set(x, 0.22, z); scene.add(c);
   const l = new THREE.Mesh(new THREE.IcosahedronGeometry(0.45, 0), vl(0x4f8a3c)); l.position.set(x, 0.85, z); scene.add(l);
   vat.push({ minX: x - 0.3, maxX: x + 0.3, minZ: z - 0.3, maxZ: z + 0.3 });
@@ -507,6 +544,12 @@ function bangTrang(scene, x, y, z, rotY) {
   const m = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.2, 0.05), vlBe("son_bong", 0xfafafa)); m.position.set(x, y, z); m.rotation.y = rotY; scene.add(m);
 }
 function xeMay(scene, x, z, vat) {
+  if (memBat("xe")) { // xe máy thật (cùng mẫu với ngoài phố), thu nhỏ chút cho gọn trong khối va chạm cũ
+    const m = taoXeMay([0xc0262d, 0x2a5aa8, 0x222222, 0xe8e8e8][Math.floor(Math.abs(x * 7) % 4)], Math.floor(x * 3) % 2 ? "ga" : "so");
+    m.position.set(x, 0, z); m.scale.setScalar(0.82); scene.add(m);
+    vat[0].push({ minX: x - 0.25, maxX: x + 0.25, minZ: z - 0.8, maxZ: z + 0.8 });
+    return;
+  }
   const mau = [0xc0262d, 0x2a5aa8, 0x222222, 0xe8e8e8][Math.floor(Math.abs(x * 7) % 4)];
   const add = (w, h, d, c, py, pz = 0, be = null) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), be ? vlBe(be, c) : vl(c)); m.position.set(x, py, z + pz); scene.add(m); };
   add(0.3, 0.35, 1.4, mau, 0.55, 0, "son_xe"); add(0.32, 0.12, 0.6, 0x1a1a1a, 0.8, -0.2, "da");

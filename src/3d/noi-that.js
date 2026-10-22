@@ -4,6 +4,7 @@ import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { Reflector } from "three/addons/objects/Reflector.js";
 import { MUC, vlBe } from "./vat-lieu.js";
+import { memBat, cucTan, dungChauCay, hinhVat, MAU_TAN } from "./hinh-mem.js";
 
 const texCache = new Map();
 function tranh(key, w, h, ve) {
@@ -26,15 +27,28 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   // tranh, biển dán tường: nhích thêm 2 cm khỏi tường và luôn vẽ đè lên lớp sơn (không bị che khi nhìn xiên dọc hành lang)
   const T = (w, h, tex, x, y, z, rotY = 0, tang = 0) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshLambertMaterial({ map: tex, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -6 })); m.position.set(x + Math.sin(rotY) * 0.02, y, z + Math.cos(rotY) * 0.02); m.rotation.y = rotY; nhom.add(m); return m; };
   const tru = (r, h, c, x, y, z) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 10), vl(c)); m.position.set(x, y + h / 2, z); nhom.add(m); return m; };
-  const cau = (r, c, x, y, z) => { const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 0), vl(c)); m.position.set(x, y, z); nhom.add(m); return m; };
+  const MEM = memBat("cau");
+  // cục tròn (lá cây, trái cây, bóng bay): bản mềm là cục méo tô đậm nhạt, bọc trong nhóm để .scale như cũ
+  const cau = (r, c, x, y, z) => {
+    if (MEM) { const g = new THREE.Group(); g.position.set(x, y, z); g.add(cucTan(r, MAU_TAN[c] || c, 0, 0, 0, { bien: Math.floor(Math.abs(x * 13 + z * 7)), chiTiet: r >= 0.3 ? 1 : 0 })); nhom.add(g); return g; }
+    const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 0), vl(c)); m.position.set(x, y, z); nhom.add(m); return m;
+  };
   const ghe = (x, z, rot, tang = 0, c = 0x3a3d44) => {
     const g = new THREE.Group(); g.position.set(x, tang * CAO, z); g.rotation.y = rot;
-    const add = (w, h, d, cc, px, py, pz, be) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), be ? vlBe(be, cc) : vl(cc)); m.position.set(px, py + h / 2, pz); g.add(m); };
+    const add = (w, h, d, cc, px, py, pz, be) => { const m = new THREE.Mesh(MEM && Math.min(w, h, d) >= 0.05 ? hinhVat(w, h, d, Math.min(w, h, d) * 0.3) : new THREE.BoxGeometry(w, h, d), be ? vlBe(be, cc) : vl(cc)); m.position.set(px, py + h / 2, pz); g.add(m); };
     add(0.5, 0.06, 0.5, c, 0, 0.45, 0, "vai"); add(0.5, 0.5, 0.06, c, 0, 0.5, -0.22, "vai"); add(0.06, 0.45, 0.06, 0x222222, 0, 0, 0); add(0.45, 0.03, 0.06, 0x222222, 0, 0.02, 0); add(0.06, 0.03, 0.45, 0x222222, 0, 0.02, 0);
     nhom.add(g);
   };
   const tuHoSo = (x, z, rot, tang = 0) => { const g = new THREE.Group(); g.position.set(x, tang * CAO, z); g.rotation.y = rot; const m = new THREE.Mesh(new THREE.BoxGeometry(0.9, 1.3, 0.6), vlBe("kim", 0x9aa0a6)); m.position.y = 0.65; g.add(m); for (let i = 0; i < 3; i++) { const n = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.04, 0.02), vl(0x3a3d44)); n.position.set(0, 0.3 + i * 0.4, 0.31); g.add(n); } nhom.add(g); };
-  const chauCay = (x, z, tang = 0, to = 1) => { tru(0.22 * to, 0.45 * to, 0xb5653a, x, tang * CAO, z); cau(0.42 * to, 0x4f8a3c, x, tang * CAO + 0.85 * to, z); cau(0.3 * to, 0x3d7a34, x + 0.15, tang * CAO + 1.15 * to, z - 0.1); };
+  const chauCay = (x, z, tang = 0, to = 1) => {
+    if (MEM) { // chậu miệng loe có viền, bụi lá tròn tô đậm nhạt (cùng chỗ, cùng cỡ chậu và tán cũ)
+      const g = new THREE.Group(); nhom.add(g);
+      dungChauCay(g, x, tang * CAO, z, { rTren: 0.22 * to, rDuoi: 0.22 * to * 0.78, cao: 0.45 * to, mauChau: 0xb5653a, rLa: 0.42 * to, yLa: 0.85 * to, mauLa: 0x5a8c4c, hat: Math.abs(x * 0.37 + z * 0.13) % 1 });
+      g.add(cucTan(0.3 * to, 0x3f7a4c, x + 0.15, tang * CAO + 1.15 * to, z - 0.1, { bien: 3, chiTiet: 0 }));
+      return;
+    }
+    tru(0.22 * to, 0.45 * to, 0xb5653a, x, tang * CAO, z); cau(0.42 * to, 0x4f8a3c, x, tang * CAO + 0.85 * to, z); cau(0.3 * to, 0x3d7a34, x + 0.15, tang * CAO + 1.15 * to, z - 0.1);
+  };
   // bình chữa cháy đứng sát sàn: thân đỏ, nhãn trắng, cổ van, tay bóp, vòi
   const binhCuuHoa = (x, z, tang = 0) => { const y = tang * CAO; tru(0.085, 0.42, 0xc0262d, x, y, z); tru(0.087, 0.12, 0xf2f2f2, x, y + 0.12, z); tru(0.045, 0.05, 0xc0262d, x, y + 0.42, z); tru(0.022, 0.07, 0x2a2c31, x, y + 0.47, z); hop(0.15, 0.015, 0.03, 0x2a2c31, x + 0.04, y + 0.53, z, { can: false }); hop(0.016, 0.34, 0.016, 0x1a1a1a, x + 0.1, y + 0.17, z, { can: false }); };
   const dongHoTuong = (x, y, z, rotY) => T(0.5, 0.5, tranh("dhtuong", 64, 64, g => { g.fillStyle = "#fff"; g.beginPath(); g.arc(32, 32, 30, 0, 7); g.fill(); g.strokeStyle = "#222"; g.lineWidth = 3; g.stroke(); g.beginPath(); g.moveTo(32, 32); g.lineTo(32, 12); g.moveTo(32, 32); g.lineTo(46, 36); g.stroke(); }), x, y, z, rotY);

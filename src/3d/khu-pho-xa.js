@@ -12,6 +12,7 @@ import { VL_MAU_DINH } from "./gop-khoi.js";
 import { veTex, vlDiem, taoDiemSang } from "./chi-tiet-pho.js";
 import { cheDoNhe } from "../cai-dat.js";
 import { MUC, vatLieuBe, matTienPBR, themChiTiet } from "./vat-lieu.js";
+import { memBat, hinhTan, hinhThan, BoCo } from "./hinh-mem.js";
 
 const TANG = 3.3;
 // vùng lõi: phố chính, đại lộ, hẻm, quảng trường (người chơi chỉ đi trong vùng này)
@@ -176,16 +177,29 @@ const MAU_KHOI = {};
   MAU_KHOI.cau = lay(new THREE.IcosahedronGeometry(1, 0));
 }
 const _m = new THREE.Matrix4(), _n = new THREE.Matrix3(), _q = new THREE.Quaternion(), _e = new THREE.Euler(), _v = new THREE.Vector3(), _s = new THREE.Vector3(), _w = new THREE.Vector3();
-function khoi(bo, ten, x, y, z, sx, sy, sz, c, ry = 0, rx = 0, rz = 0) {
-  const T = MAU_KHOI[ten];
+// doc: [tối ở đáy, sáng ở đỉnh] tô màu theo chiều cao khuôn (tán cây kiểu tranh)
+function khoi(bo, ten, x, y, z, sx, sy, sz, c, ry = 0, rx = 0, rz = 0, doc = null) {
+  const T = MAU_KHOI[ten] || khuonMem(ten);
   _m.compose(_v.set(x, y, z), _q.setFromEuler(_e.set(rx, ry, rz, "YXZ")), _s.set(sx, sy, sz)); _n.getNormalMatrix(_m);
   const p = T.p, n = T.n;
   for (let i = 0; i < p.length; i += 3) {
     _w.set(p[i], p[i + 1], p[i + 2]).applyMatrix4(_m); bo.p.push(_w.x, _w.y, _w.z);
     _w.set(n[i], n[i + 1], n[i + 2]).applyMatrix3(_n).normalize(); bo.n.push(_w.x, _w.y, _w.z);
-    bo.c.push(c.r, c.g, c.b); bo.u.push(0, 0);
+    if (doc) { const t = Math.min(1, Math.max(0, (p[i + 1] + 0.85) / 1.7)), k = doc[0] + (doc[1] - doc[0]) * t * t * (3 - 2 * t); bo.c.push(c.r * k, c.g * k, c.b * (k * 0.96)); }
+    else bo.c.push(c.r, c.g, c.b);
+    bo.u.push(0, 0);
   }
 }
+// khuôn hình mềm (chỉ dựng khi cần): tan0..5 cục tán chi tiết, tanxa0..2 cục tán ít mặt, than: thân cây thuôn cao 1 (đáy ở 0)
+function khuonMem(ten) {
+  const lay = g => { g = g.index ? g.toNonIndexed() : g; return { p: g.attributes.position.array, n: g.attributes.normal.array }; };
+  if (ten.startsWith("tanxa")) MAU_KHOI[ten] = lay(hinhTan(+ten.slice(5) + 10, 0, 0.1));
+  else if (ten.startsWith("tan")) MAU_KHOI[ten] = lay(hinhTan(+ten.slice(3), 1));
+  else if (ten === "than") { const g = hinhThan(1, 1, 0.62, 0.06, 5, 2).clone(); g.translate(0, -0.5, 0); MAU_KHOI[ten] = lay(g); }
+  else if (ten === "ong") { const g = hinhThan(1, 1, 1, 0, 7, 1).clone(); g.translate(0, -0.5, 0); MAU_KHOI[ten] = lay(g); }
+  return MAU_KHOI[ten];
+}
+const MAU_TAN_XA = { 0x3d7a34: 0x3f7a4c, 0x4f8a3c: 0x5a8c4c, 0x2f6b2a: 0x2f6446, 0x5a8f3e: 0x4f8650, 0x6aa84f: 0x79a85a };
 // mái dốc bốn phía (mái ngói trường, chùa): nóc chạy theo cạnh dài
 function maiHien(bo, x0, x1, z0, z1, y, h, c, nhoRa = 0.8) {
   x0 -= nhoRa; x1 += nhoRa; z0 -= nhoRa; z1 += nhoRa;
@@ -377,8 +391,29 @@ export function taoKhuPhoXa(ctx) {
 
   // ---------- Đường phụ, hẻm lớn ----------
   const vach = C(0xeeeadc), vachVang = C(0xe8c547);
+  const MEM = memBat("cay");
+  let demCay = 0;
+  const coXa = new BoCo(80); // cỏ công viên (InstancedMesh theo ô)
+  const bam = (a, b) => { const v = Math.sin(a * 12.9898 + b * 78.233) * 43758.5453; return v - Math.floor(v); };
   function cayPho(x, z, s = 1) {
     const bo = bocO(x, z);
+    if (MEM) {
+      // thân thuôn hơi cong, gốc quét vôi, tán cục tròn tô đậm nhạt; gần thì nhiều mặt, xa thì ít mặt
+      const gan = dLoi(x, z) < 30, k = demCay++;
+      khoi(bo, "than", x, 1.7 * s, z, 0.13 * s, 3.4 * s, 0.13 * s, C(0x6b4a2f), k * 1.7);
+      khoi(bo, "ong", x, 0.4, z, 0.27, 0.8, 0.27, C(0xeeeae0));
+      const n = 2 + (rnd() < 0.3 ? 1 : 0);
+      let cx = 0, cy = 0, cz = 0, rr = 0;
+      for (let i = 0; i < n; i++) {
+        const px = x + (rnd() - 0.5) * 1.6 * s, py = (3.8 + rnd() * 1.6) * s, pz = z + (rnd() - 0.5) * 1.6 * s, sx = (1.5 + rnd() * 0.8) * s, sy = (1.2 + rnd() * 0.5) * s, sz = (1.5 + rnd() * 0.8) * s;
+        const mau = chon([0x3d7a34, 0x4f8a3c, 0x2f6b2a, 0x5a8f3e]);
+        khoi(bo, "tanxa" + ((k + i) % 3), px, py, pz, sx, sy, sz, C(MAU_TAN_XA[mau]), k + i * 2.1, 0, 0, [0.7, 1.12]);
+        cx += px; cy += py; cz += pz; rr += Math.min(sx, sz);
+      }
+      cx /= n; cy /= n; cz /= n; rr /= n;
+      if (gan) khoi(bo, "tanxa" + ((k + 1) % 3), cx, cy + rr * 0.3, cz, rr * 0.75, rr * 0.62, rr * 0.75, C(0x5a8c4c), k, 0, 0, [0.78, 1.15]); // cục đỉnh
+      return;
+    }
     hop(bo, x - 0.15 * s, x + 0.15 * s, 0, 3.4 * s, z - 0.15 * s, z + 0.15 * s, C(0x6b4a2f));
     hop(bo, x - 0.3, x + 0.3, 0, 0.8, z - 0.3, z + 0.3, C(0xf2f2f2));
     const n = nhe ? 1 : 2 + (rnd() < 0.3 ? 1 : 0);
@@ -542,6 +577,22 @@ export function taoKhuPhoXa(ctx) {
     // hàng rào sắt, cổng
     for (const [a0, a1, b0, b1] of [[X0, X1, Z0, Z0 + 0.2], [X0, X1, Z1 - 0.2, Z1], [X0, X0 + 0.2, Z0, Z1], [X1 - 0.2, X1, Z0, cz - 3], [X1 - 0.2, X1, cz + 3, Z1]]) { hop(bo, a0, a1, 0, 0.5, b0, b1, C(0xd8d2c4)); hop(bo, a0, a1, 0.5, 1.6, b0 + 0.05, b1 - 0.05, C(0x2f5a3a)); }
     hop(bo, X1 - 0.4, X1 + 0.2, 0, 3.4, cz - 3.4, cz - 2.8, C(0xd8d2c4)); hop(bo, X1 - 0.4, X1 + 0.2, 0, 3.4, cz + 2.8, cz + 3.4, C(0xd8d2c4));
+    if (MEM) {
+      // bụi cây tròn dọc hàng rào phía trong, cỏ mọc thành đám trên bãi cỏ (tránh hồ, lối dạo)
+      const bui = (x, z, k) => { for (let i = 0; i < 2; i++) khoi(bo, "tanxa" + ((k + i) % 3), x + (i - 0.5) * 0.9, 0.55, z + (bam(x, z + i) - 0.5) * 0.4, 0.75 + bam(z, x + i) * 0.3, 0.6, 0.75, C(i ? 0x2f6446 : 0x3f7a4c), k + i, 0, 0, [0.7, 1.12]); };
+      let k = 0;
+      for (let x = X0 + 2; x < X1 - 2; x += 3.2) { bui(x, Z0 + 1.2, k++); bui(x, Z1 - 1.2, k++); }
+      for (let z = Z0 + 4; z < Z1 - 2; z += 3.2) { bui(X0 + 1.2, z, k++); if (Math.abs(z - cz) > 4.5) bui(X1 - 1.2, z, k++); }
+      const loi = (x, z) => (z > Z0 + 2.6 && z < Z0 + 5.4) || (z > Z1 - 5.4 && z < Z1 - 2.6) || (x > X0 + 2.6 && x < X0 + 5.4) || (x > X1 - 5.4 && x < X1 - 2.6) || (x > X1 - 14.4 && z > cz - 1.4 && z < cz + 1.4);
+      for (let i = 0; i < 140; i++) {
+        const x0 = X0 + 2 + bam(i, 1) * (X1 - X0 - 4), z0 = Z0 + 2 + bam(i, 2) * (Z1 - Z0 - 4);
+        for (let j = 0; j < 5; j++) {
+          const x = x0 + (bam(i, j + 3) - 0.5) * 1.4, z = z0 + (bam(j, i + 7) - 0.5) * 1.4;
+          if (((x - cx) / (rx + 1.5)) ** 2 + ((z - cz) / (rz + 1.5)) ** 2 < 1 || loi(x, z)) continue;
+          coXa.them(x, -0.03, z, 1.1 + bam(x, z) * 0.6);
+        }
+      }
+    }
     bien("CÔNG VIÊN HÓNG MÁT", "#2e8b57", "#ffffff", "", X1 + 0.25, 3.0, cz, 6, 1.1, Math.PI / 2);
   }
   // Chùa Phố Cũ: chánh điện hai tầng mái, bảo tháp chín tầng, cổng tam quan, tượng, cây bồ đề
@@ -808,6 +859,7 @@ export function taoKhuPhoXa(ctx) {
       vlDat.map = texNen(); vlDat.vertexColors = true; vlDat.color.set(0xffffff); vlDat.needsUpdate = true;
       themChiTiet(vlDat, "be_tong", 8, 8, { n: 0.5 }); // toạ độ ảnh nền: 16 m một đơn vị → vân bê tông 2 m
       const meNen = them(B.nen, vlDat, "kpx-nen"); meNen.receiveShadow = false;
+      coXa.dung(nhom);
       const diem = den.length ? taoDiemSang(den, vlDiem()) : null;
       if (diem) { diem.name = "kpx-den"; diem.visible = false; nhom.add(diem); }
       return {

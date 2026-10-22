@@ -5,6 +5,7 @@
 // pantry đầy đủ đồ, sân thượng của bác Bình.
 // Khối tĩnh được thêm vào nhóm mà gopKhoi gộp lại; chữ và hình vẽ dồn vào hai tấm ảnh ghép (atlas) để ít lượt vẽ.
 import * as THREE from "three";
+import { memBat, hinhHopVL, hinhTan } from "./hinh-mem.js";
 import { vl } from "./nhan-vat-3d.js";
 import { am } from "../am-thanh-game.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
@@ -372,7 +373,8 @@ const them = (m) => { m.userData.khongCan = true; S.nhom.add(m); return m; };
 const tangCua = y => Math.max(0, Math.min(2, Math.floor((y + 0.05) / CAO)));
 // khối hộp: đáy ở y. can: thêm vật cản (chỉ dùng cho khối không xoay)
 function K(w, h, d, mau, x, y, z, { can = false, rx = 0, ry = 0, rz = 0, vatLieu } = {}) {
-  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), vatLieu || vl(mau));
+  const v = vatLieu || vl(mau);
+  const m = new THREE.Mesh(memBat("hop") && Math.min(w, h, d) >= 0.15 && Math.max(w, h, d) >= 0.6 ? hinhHopVL(w, h, d, v) : new THREE.BoxGeometry(w, h, d), v); // vát cạnh khối lớn (máy yếu: hộp)
   m.position.set(x, y + h / 2, z); m.rotation.set(rx, ry, rz); them(m);
   if (can) S.vat[tangCua(y)].push({ minX: x - w / 2, maxX: x + w / 2, minZ: z - d / 2, maxZ: z + d / 2 });
   return m;
@@ -383,7 +385,11 @@ function TR(r, h, mau, x, y, z, { rTren = r, seg = 10, rx = 0, rz = 0, ry = 0, v
   if (rx || rz) { m.position.set(x, y, z); m.rotation.set(rx, ry, rz); } else { m.position.set(x, y + h / 2, z); m.rotation.y = ry; }
   return them(m);
 }
-const CAU = (r, mau, x, y, z, s = [1, 1, 1], chiTiet = 0) => { const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, chiTiet), vl(mau)); m.position.set(x, y, z); m.scale.set(...s); return them(m); };
+// cục tròn (lá, bông, đá): máy khá dùng cục méo mềm cùng hộp bao (cục rất nhỏ giữ như cũ)
+const CAU = (r, mau, x, y, z, s = [1, 1, 1], chiTiet = 0) => {
+  if (r >= 0.07 && memBat("cau")) { const k = chiTiet ? r / 0.85 : r, m = new THREE.Mesh(r >= 0.12 ? hinhTan(Math.floor(Math.abs(x * 11 + z * 5)) % 6, 1, 0.1) : hinhTan(Math.floor(Math.abs(x * 11 + z * 5)) % 3 + 10, 0, 0.1), vl(mau)); m.position.set(x, y, z); m.scale.set(s[0] * k, s[1] * k, s[2] * k); return them(m); }
+  const m = new THREE.Mesh(new THREE.IcosahedronGeometry(r, chiTiet), vl(mau)); m.position.set(x, y, z); m.scale.set(...s); return them(m);
+};
 function hinhPhang(w, h, uv) {
   const g = new THREE.PlaneGeometry(w, h); const a = g.attributes.uv;
   for (let i = 0; i < a.count; i++) a.setXY(i, uv.u0 + a.getX(i) * (uv.u1 - uv.u0), uv.v0 + a.getY(i) * (uv.v1 - uv.v0));

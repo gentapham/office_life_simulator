@@ -10,6 +10,7 @@ import { vl } from "./nhan-vat-3d.js";
 import { gopKhoi, VL_MAU_DINH } from "./gop-khoi.js";
 import { taoXeMay, MAU_XE } from "./xe-3d.js";
 import { bienTheVL } from "./vat-lieu.js";
+import { memBat, hinhHopVL, hinhTan } from "./hinh-mem.js";
 
 const FONT = "'Be Vietnam Pro', system-ui, sans-serif";
 const FONT_TRON = "'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif";
@@ -221,6 +222,7 @@ function nonSoc(r, h, seg, c1, c2) {
 // ---------------------------------------------------------------------------------------------
 // Bộ đồ nghề dựng một địa điểm (tọa độ cục bộ; va chạm đổi ra tọa độ thế giới)
 function taoBo(id, vat, dienThoai) {
+  const MEM = memBat();
   const [X0, Z0] = GOC[id], trong = !!TRONG_NHA[id], fog = !trong;
   const nhom = new THREE.Group(); nhom.name = "ngoai-canh:" + id; nhom.position.set(X0, 0, Z0);
   const dongNhom = new THREE.Group(); nhom.add(dongNhom);
@@ -243,11 +245,16 @@ function taoBo(id, vat, dienThoai) {
     can(x1, x2, z1, z2, tuong = false) { const b = { minX: X0 + x1, maxX: X0 + x2, minZ: Z0 + z1, maxZ: Z0 + z2 }; if (tuong) b.tuong = true; vat.push(b); canDs.push(b); },
     canHop(cx, cz, w, d, ry = 0, tuong = false) { const c = Math.abs(Math.cos(ry)), sn = Math.abs(Math.sin(ry)); const hw = (c * w + sn * d) / 2, hd = (sn * w + c * d) / 2; k.can(cx - hw, cx + hw, cz - hd, cz + hd, tuong); },
     // hộp: (x, z) tâm đáy, y là cao độ đáy
-    H(w, h, d, mau, x, y, z, o = {}) { const m = dat(new THREE.Mesh(new THREE.BoxGeometry(w, h, d), vatLieu(mau, o)), x, y + h / 2, z, o); if (o.can) k.canHop(x, z, w, d, o.ry || 0, o.tuong); return m; },
+    // máy khá: khối vừa và lớn vát cạnh mềm (vẫn trong đúng hộp cũ); tường bao (o.tuong) giữ hộp vuông
+    H(w, h, d, mau, x, y, z, o = {}) { const v = vatLieu(mau, o); const m = dat(new THREE.Mesh(MEM && !o.tuong ? hinhHopVL(w, h, d, v) : new THREE.BoxGeometry(w, h, d), v), x, y + h / 2, z, o); if (o.can) k.canHop(x, z, w, d, o.ry || 0, o.tuong); return m; },
     // trụ: y là cao độ đáy
     T(r1, r2, h, mau, x, y, z, o = {}) { const m = dat(new THREE.Mesh(new THREE.CylinderGeometry(r1, r2, h, o.seg ?? 8, 1, !!o.mo), vatLieu(mau, o)), x, y + h / 2, z, o); if (o.can) k.canHop(x, z, 2 * Math.max(r1, r2), 2 * Math.max(r1, r2)); return m; },
     // khối đa diện tròn (tán cây, đá, trái cây): y là tâm
-    C(r, mau, x, y, z, o = {}) { const m = dat(new THREE.Mesh(new THREE.IcosahedronGeometry(r, o.ct ?? 0), vatLieu(mau, o)), x, y, z, o); if (o.sy) m.scale.set(o.sx ?? 1, o.sy, o.sz ?? 1); return m; },
+    // máy khá: cục méo tròn trịa (tán cây, bụi, đá) gọn trong hộp bao của khối cũ
+    C(r, mau, x, y, z, o = {}) {
+      if (MEM) { const kk = (o.ct ?? 0) ? r / 0.85 : r; const m = dat(new THREE.Mesh(hinhTan(Math.floor(Math.abs(x * 7 + z * 3)) % 6, 1, 0.1), vatLieu(mau, o)), x, y, z, o); m.scale.set((o.sx ?? 1) * kk, (o.sy ?? 1) * kk, (o.sz ?? 1) * kk); return m; }
+      const m = dat(new THREE.Mesh(new THREE.IcosahedronGeometry(r, o.ct ?? 0), vatLieu(mau, o)), x, y, z, o); if (o.sy) m.scale.set(o.sx ?? 1, o.sy, o.sz ?? 1); return m;
+    },
     // mặt phẳng màu: y là tâm; o.nam = nằm ngang
     P(w, h, mau, x, y, z, o = {}) { const m = dat(new THREE.Mesh(new THREE.PlaneGeometry(w, h), vatLieu(mau, o)), x, y, z, o); if (o.nam) m.rotation.x = -Math.PI / 2; return m; },
     vung(w, h, ve) { return A.vung(w, h, ve); },
