@@ -1,95 +1,143 @@
-// Thư viện vật liệu "giống thật" cho nhà cửa, đường phố, nội thất: mỗi loại mặt (tường sơn, gạch, gạch men, gỗ, nhựa đường...)
-// là MỘT vật liệu PBR dùng chung (ảnh màu + pháp tuyến + độ nhám, nguồn CC0 Poly Haven, xem public/tex/NGUON.md).
-// Màu từng khối vẫn nướng vào đỉnh (vertexColors) như cũ: ảnh "chi tiết" xám nhân với màu đỉnh, nên khối cùng loại mặt
-// gộp chung một lượt vẽ dù khác màu. Toạ độ ảnh tính theo mét thật lúc gộp (chiếu hộp theo pháp tuyến mặt) để viên gạch,
-// tấm ván đúng cỡ ở mọi nơi. Các mặt không ảnh (kim loại, crôm, kính, cao su, nhựa, sơn trơn) dùng chung một vật liệu:
-// độ nhám / độ kim loại lấy từ một ảnh bảng 8 ô, toạ độ ảnh của đỉnh chọn ô.
-// Mức chất lượng: Thấp (máy yếu) = giữ nguyên kiểu cũ (Lambert, không ảnh); Vừa = ảnh 512, không ảnh độ nhám; Cao = ảnh 1k đủ bộ.
-// Ảnh tải ngầm: game chạy ngay với màu trơn, ảnh về tới đâu vật liệu cập nhật tới đó.
+// Thư viện vật liệu cho nhà cửa, đường phố, nội thất theo kiểu tranh vẽ: mỗi loại mặt (tường sơn, gạch, gạch men, gỗ,
+// nhựa đường...) là MỘT vật liệu Lambert dùng chung, màu phẳng (màu từng khối nướng vào đỉnh như cũ) nhân với một ảnh
+// "nét cọ" vẽ bằng code rất nhạt: vệt loang của lớp sơn, mạch vữa / ron gạch, ván sàn, sóng tôn... chỉ đủ gợi chất liệu,
+// không có ảnh chụp, không pháp tuyến, không phản xạ. Ánh sáng 3 nấc mềm và bóng ngả lạnh do to-mau.js lo cho mọi vật liệu.
+// Khối cùng loại mặt gộp chung một lượt vẽ dù khác màu. Toạ độ ảnh tính theo mét thật lúc gộp (chiếu hộp theo pháp tuyến)
+// để viên gạch, tấm ván đúng cỡ ở mọi nơi. Các mặt không ảnh (kim loại, crôm, kính, cao su, nhựa, sơn trơn) dùng chung
+// một vật liệu màu đỉnh.
+// Mức chất lượng: Thấp (máy yếu) = giữ nguyên kiểu cũ (Lambert, không ảnh, nướng màu); Vừa / Cao = thư viện này.
 import * as THREE from "three";
 import { caiDat, cheDoNhe } from "../cai-dat.js";
 
-// 0: không dùng (máy yếu), 1: ảnh 512, 2: ảnh 1k. Kiểm thử so sánh: localStorage owfad_vat_lieu = "tat" để tắt hẳn.
+// 0: không dùng (máy yếu), 1: Vừa, 2: Cao. Kiểm thử so sánh: localStorage owfad_vat_lieu = "tat" để tắt hẳn.
 const TAT = (() => { try { return localStorage.getItem("owfad_vat_lieu") === "tat"; } catch { return false; } })();
 export const MUC = TAT || cheDoNhe() ? 0 : caiDat().chatLuong === "vua" ? 1 : 2;
 
-// m: số mét một lần lặp ảnh; xam: ảnh xám chi tiết (màu do đỉnh), không thì ảnh màu thật (ref: màu đối chiếu để
-// khối sáng / tối hơn chỉnh độ sáng); nham: hệ số nhân ảnh độ nhám; n: độ mạnh pháp tuyến
+// m: số mét một lần lặp ảnh; ve: kiểu nét vẽ (xem veAnh); mau: ảnh có màu riêng (màu đỉnh / màu vật liệu để trắng);
+// diu: [màu, t] kéo màu vật liệu riêng (vlRieng) về một tông dịu của tranh
 const BE = {
-  son:        { m: 2.4, xam: true, nham: 1, n: 0.5 },   // tường sơn nước trong nhà
-  vua:        { m: 1.6, xam: true, nham: 1, n: 0.8 },   // tường vữa ngoài trời
-  gach:       { m: 1.0, ref: 0x8a5040, nham: 1, n: 1 },  // gạch thẻ đỏ
-  gach_men:   { m: 1.2, xam: true, nham: 1, n: 0.7 },   // gạch men 60x60
-  gach_vs:    { m: 1.6, xam: true, nham: 1, n: 0.7 },   // gạch nhà vệ sinh (lát chéo)
-  go_san:     { m: 1.7, xam: true, nham: 1, n: 0.6 },   // sàn gỗ
-  nhua_duong: { m: 4.0, xam: true, nham: 1, n: 0.9 },   // nhựa đường
-  be_tong:    { m: 2.5, xam: true, nham: 1, n: 0.6 },   // bê tông trơn
-  lat_san:    { m: 1.8, xam: true, nham: 1, n: 0.8 },   // sân lát tấm bê tông
-  gach_via:   { m: 1.6, ref: 0xffffff, nham: 1, n: 0.8 }, // gạch lát vỉa hè đỏ-trắng (ảnh thủ tục)
-  ngoi:       { m: 2.0, ref: 0xa8503a, nham: 1, n: 1 },  // ngói đất nung
-  ton:        { m: 1.1, xam: true, nham: 0.8, n: 1 },   // mái tôn sóng
-  vai:        { m: 0.5, xam: true, nham: 1, n: 0.6 },   // vải bọc ghế, sofa
-  da:         { m: 0.6, xam: true, nham: 0.75, n: 0.6 }, // da bọc
-  go:         { m: 1.2, xam: true, nham: 0.85, n: 0.4 }, // gỗ nội thất
-  tham:       { m: 0.6, xam: true, nham: 1, n: 0.7 },   // thảm
+  son:        { m: 2.4, ve: "son" },      // tường sơn nước trong nhà
+  vua:        { m: 1.6, ve: "vua" },      // tường vữa ngoài trời
+  gach:       { m: 1.0, ve: "gach" },     // gạch thẻ
+  gach_men:   { m: 1.2, ve: "men" },      // gạch men 60x60
+  gach_vs:    { m: 1.6, ve: "cheo" },     // gạch nhà vệ sinh (lát chéo)
+  go_san:     { m: 1.7, ve: "van" },      // sàn gỗ
+  nhua_duong: { m: 4.0, ve: "duong", diu: [0xa4aab2, 0.74] }, // nhựa đường: xám xanh nhạt như tranh
+  be_tong:    { m: 2.5, ve: "loang" },    // bê tông trơn
+  lat_san:    { m: 1.8, ve: "tam" },      // sân lát tấm bê tông
+  gach_via:   { m: 1.6, ve: "via", mau: true }, // gạch lát vỉa hè đỏ-trắng
+  ngoi:       { m: 2.0, ve: "ngoi" },     // ngói đất nung
+  ton:        { m: 1.1, ve: "ton" },      // mái tôn sóng
+  vai:        { m: 0.5, ve: "min" },      // vải bọc ghế, sofa
+  da:         { m: 0.6, ve: "min" },      // da bọc
+  go:         { m: 1.2, ve: "tho" },      // gỗ nội thất
+  tham:       { m: 0.6, ve: "min" },      // thảm
 };
-// bảng độ nhám / kim loại: ô 0 là mặc định (khối chưa gắn loại mặt)
+// các mặt trơn (không ảnh) dùng chung một vật liệu; toạ độ ảnh vẫn chọn "ô" như trước để dữ liệu cũ không đổi
 const BANG = ["tron", "son_bong", "nhua", "kim", "crom", "cao_su", "kinh", "son_xe"];
-const BANG_SO = { tron: [0.78, 0], son_bong: [0.4, 0], nhua: [0.5, 0], kim: [0.38, 0.85], crom: [0.16, 1], cao_su: [0.92, 0], kinh: [0.06, 0.1], son_xe: [0.3, 0.15] };
 export const LOAI_MAT = [...Object.keys(BE), ...BANG];
 const SAN = new Set(["gach_men", "gach_vs", "go_san", "nhua_duong", "be_tong", "lat_san", "gach_via", "tham"]);
-const laBang = ten => BANG_SO[ten] != null;
-const HE_XAM = 1 / 0.8; // ảnh xám có trung bình tuyến tính 0,8: nhân lại để trung bình đúng màu đỉnh
+const laBang = ten => BANG.includes(ten);
 
-// ---------- Ảnh ----------
-const GOC = `${import.meta.env.BASE_URL || "./"}tex/${MUC === 1 ? "512/" : ""}`;
-const loader = new THREE.TextureLoader();
-const anh = new Map();      // ten -> { c, n, r } (Texture, có thể chưa tải xong)
-const choAnh = new Map();   // ten -> [hàm gọi lại khi có thêm ảnh]
-const khiCoAnh = (ten, f) => { (choAnh.get(ten) || choAnh.set(ten, []).get(ten)).push(f); f(); };
-function taiAnh(ten) {
-  if (anh.has(ten)) return anh.get(ten);
-  const def = BE[ten], bo = {};
-  anh.set(ten, bo);
-  const lay = (duoi, mau, xong) => {
-    const t = loader.load(GOC + ten + duoi, () => { xong(t); }, undefined, () => {});
-    t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = 8;
-    if (mau) t.colorSpace = THREE.SRGBColorSpace;
-    return t;
+// ---------- Ảnh nét cọ (vẽ bằng code, liền mép khi lặp) ----------
+const KT = 256;
+function ngauNhien(seed) { let s = seed >>> 0 || 1; return () => (s = Math.imul(s ^ (s >>> 15), 2246822519) + 0x9e3779b9 >>> 0, (s >>> 8) / 16777216); }
+// nhiễu giá trị tuần hoàn: lưới n x n, nội suy mượt, lặp khít ở mép
+function nhieu(n, rnd) {
+  const g = new Float32Array(n * n); for (let i = 0; i < g.length; i++) g[i] = rnd() * 2 - 1;
+  const s = t => t * t * (3 - 2 * t);
+  return (x, y) => {
+    const fx = x * n, fy = y * n, x0 = Math.floor(fx), y0 = Math.floor(fy), tx = s(fx - x0), ty = s(fy - y0);
+    const a = (i, j) => g[((j % n + n) % n) * n + ((i % n + n) % n)];
+    const p = a(x0, y0) + (a(x0 + 1, y0) - a(x0, y0)) * tx, q = a(x0, y0 + 1) + (a(x0 + 1, y0 + 1) - a(x0, y0 + 1)) * tx;
+    return p + (q - p) * ty;
   };
-  const gan = () => { for (const f of choAnh.get(ten) || []) f(); };
-  lay("_c.jpg", true, t => { bo.c = t; gan(); });
-  lay("_n.jpg", false, t => { bo.n = t; gan(); });
-  if (MUC === 2) lay("_r.jpg", false, t => { bo.r = t; gan(); });
-  return bo;
 }
-// ảnh xám (trung bình 0,8) nhân hệ số trong shader để màu trung bình đúng màu đỉnh / màu vật liệu.
-// Không đổi m.color vì bầu trời chép lại màu gốc mỗi khung hình (mặt đường ướt khi mưa).
-function heSoXam(m) {
-  if (m.userData.heXam) return m.userData.heXam;
-  const u = m.userData.heXam = { value: 1 };
+const fr = v => v - Math.floor(v);
+// mạch (ron) giữa các ô: 1 ở giữa mạch, 0 trong ô; w: nửa bề rộng mạch theo phần ô
+const mach = (v, w) => { const d = Math.min(fr(v), 1 - fr(v)); return d < w ? 1 - d / w : 0; };
+const hash2 = (i, j, k = 0) => fr(Math.sin(i * 127.1 + j * 311.7 + k * 74.7) * 43758.5453);
+
+// trả về hàm (x, y) -> [hệ số sáng tuyến tính] hoặc [r, g, b] (ảnh màu)
+function kieuVe(ve, rnd) {
+  const loang = nhieu(4, rnd), loang2 = nhieu(8, rnd), min = nhieu(32, rnd), soi = nhieu(64, rnd);
+  const coVet = (x, y, k) => 1 + k * (loang(x, y) * 0.65 + loang2(x, y) * 0.35);
+  switch (ve) {
+    case "son": return (x, y) => coVet(x, y, 0.035);
+    case "vua": return (x, y) => coVet(x, y, 0.05) + min(x, y) * 0.018;
+    case "loang": return (x, y) => coVet(x, y, 0.05) + min(x, y) * 0.012;
+    case "min": return (x, y) => coVet(x, y, 0.02) + soi(x, y) * 0.025;
+    case "duong": return (x, y) => coVet(x, y, 0.04) + soi(x, y) * 0.022 + (soi(y * 2.3, x * 2.3) > 0.82 ? 0.05 : 0);
+    case "gach": return (x, y) => { // 12 hàng gạch, 4 viên một hàng, so le
+      const h = Math.floor(y * 12), u = x * 4 + (h % 2) * 0.5;
+      return coVet(x, y, 0.03) + (hash2(Math.floor(u) % 4, h) - 0.5) * 0.07 + Math.max(mach(y * 12, 0.09), mach(u, 0.025)) * 0.07;
+    };
+    case "men": return (x, y) => coVet(x, y, 0.025) - Math.max(mach(x * 2, 0.008), mach(y * 2, 0.008)) * 0.07;
+    case "cheo": return (x, y) => { const u = (x + y) * 2, v = (x - y) * 2; return coVet(x, y, 0.025) - Math.max(mach(u, 0.012), mach(v, 0.012)) * 0.06; };
+    case "tam": return (x, y) => coVet(x, y, 0.04) + min(x, y) * 0.012 - Math.max(mach(x * 3, 0.012), mach(y * 3, 0.012)) * 0.08;
+    case "van": return (x, y) => { // 8 tấm ván dọc theo y, nối so le
+      const c = Math.floor(x * 8), noi = hash2(c, 3), v = y * 2 + noi;
+      return 1 + (hash2(c, Math.floor(v)) - 0.5) * 0.08 + soi(x * 0.25, y * 2) * 0.012 + min(x * 4, y * 0.25) * 0.025
+        - Math.max(mach(x * 8, 0.04), mach(v, 0.004)) * 0.07;
+    };
+    case "tho": return (x, y) => coVet(x, y, 0.02) + min(x * 4, y * 0.2) * 0.035;
+    case "ngoi": return (x, y) => { // 8 hàng ngói, mỗi hàng tối dần về mép dưới
+      const h = y * 8, t = fr(h), c = x * 6 + (Math.floor(h) % 2) * 0.5;
+      return coVet(x, y, 0.03) + (hash2(Math.floor(c) % 6, Math.floor(h)) - 0.5) * 0.05 - t * t * 0.07 - mach(c, 0.03) * 0.04;
+    };
+    case "ton": return (x, y) => coVet(x, y, 0.03) + Math.sin(x * Math.PI * 2 * 12) * 0.045;
+    case "via": { // ô cờ đỏ-kem 40 cm (mỗi ô 4 viên nhỏ), màu dịu
+      const do_ = [0.62, 0.32, 0.25], kem = [0.83, 0.77, 0.68];
+      return (x, y) => {
+        const o = (Math.floor(x * 4) + Math.floor(y * 4)) % 2 ? do_ : kem;
+        const k = coVet(x, y, 0.03) - Math.max(mach(x * 4, 0.02), mach(y * 4, 0.02)) * 0.1 - Math.max(mach(x * 8, 0.012), mach(y * 8, 0.012)) * 0.04;
+        return [o[0] * k, o[1] * k, o[2] * k];
+      };
+    }
+    default: return () => 1;
+  }
+}
+const l2s = v => { v = Math.max(0, Math.min(1, v)); return v <= 0.0031308 ? v * 12.92 : 1.055 * Math.pow(v, 1 / 2.4) - 0.055; };
+// vẽ ảnh; trả về { tex, tb } (tb: trung bình tuyến tính, để nhân bù trong shader cho màu trung bình đúng màu đỉnh)
+function veAnh(ten) {
+  const def = BE[ten], f = kieuVe(def.ve, ngauNhien(ten.length * 7919 + ten.charCodeAt(0) * 131));
+  const c = document.createElement("canvas"); c.width = c.height = KT;
+  const g = c.getContext("2d"), im = g.createImageData(KT, KT), d = im.data;
+  const vals = new Float32Array(KT * KT * 3);
+  let max = 0;
+  for (let j = 0; j < KT; j++) for (let i = 0; i < KT; i++) {
+    const v = f((i + 0.5) / KT, (j + 0.5) / KT), k = (j * KT + i) * 3;
+    if (Array.isArray(v)) { vals[k] = v[0]; vals[k + 1] = v[1]; vals[k + 2] = v[2]; } else vals[k] = vals[k + 1] = vals[k + 2] = v;
+    max = Math.max(max, vals[k], vals[k + 1], vals[k + 2]);
+  }
+  const chia = def.mau ? 1 : max; // ảnh xám: đưa đỉnh sáng nhất về 1
+  let tong = 0;
+  for (let p = 0; p < KT * KT; p++) for (let q = 0; q < 3; q++) {
+    const v = vals[p * 3 + q] / chia; tong += v;
+    d[p * 4 + q] = Math.round(l2s(v) * 255);
+  }
+  for (let p = 0; p < KT * KT; p++) d[p * 4 + 3] = 255;
+  g.putImageData(im, 0, 0);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace; tex.wrapS = tex.wrapT = THREE.RepeatWrapping; tex.anisotropy = 4;
+  return { tex, tb: tong / (KT * KT * 3) };
+}
+const anh = new Map();
+function layAnh(ten) { if (!anh.has(ten)) anh.set(ten, veAnh(ten)); return anh.get(ten); }
+
+// nhân bù trung bình ảnh xám trong shader (không đổi m.color vì bầu trời chép lại màu gốc mỗi khung hình khi mưa)
+function heSoXam(m, he) {
+  const u = m.userData.heXam = { value: he };
   m.onBeforeCompile = sh => {
     sh.uniforms.heXam = u;
     sh.fragmentShader = "uniform float heXam;\n" + sh.fragmentShader.replace("#include <map_fragment>", "#include <map_fragment>\n\tdiffuseColor.rgb *= heXam;");
   };
   return u;
 }
-function apAnh(m, def, bo) {
-  let doi = false;
-  if (bo.c && m.map !== bo.c) { m.map = bo.c; heSoXam(m).value = def.xam ? HE_XAM : 1; doi = true; }
-  if (bo.n && m.normalMap !== bo.n) { m.normalMap = bo.n; m.normalScale.set(def.n, def.n); doi = true; }
-  if (bo.r && m.roughnessMap !== bo.r) { m.roughnessMap = bo.r; m.roughness = def.nham; doi = true; }
-  if (doi) m.needsUpdate = true;
-}
-
-let _bang = null;
-function anhBang() {
-  if (_bang) return _bang;
-  const d = new Uint8Array(BANG.length * 4);
-  BANG.forEach((t, i) => { const [r, k] = BANG_SO[t]; d[i * 4] = 255; d[i * 4 + 1] = Math.round(r * 255); d[i * 4 + 2] = Math.round(k * 255); d[i * 4 + 3] = 255; });
-  _bang = new THREE.DataTexture(d, BANG.length, 1, THREE.RGBAFormat);
-  _bang.magFilter = _bang.minFilter = THREE.NearestFilter; _bang.generateMipmaps = false; _bang.needsUpdate = true;
-  return _bang;
+function ganAnh(m, ten) {
+  const def = BE[ten], { tex, tb } = layAnh(ten);
+  m.map = tex; heSoXam(m, def.mau ? 1 : 1 / tb);
+  return m;
 }
 
 // ---------- Vật liệu dùng chung ----------
@@ -101,17 +149,9 @@ export function vatLieuBe(ten, haiMat = false, them = null) {
   const khoa = (laBang(ten) ? "#bang" : ten) + (haiMat ? "|2" : "") + (them ? JSON.stringify(them) : "");
   let m = chung.get(khoa);
   if (m) return m;
-  if (laBang(ten)) {
-    const b = anhBang();
-    m = new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: 1, metalness: 1, roughnessMap: b, metalnessMap: b });
-    m.userData.beThuVien = "#bang";
-  } else {
-    const def = BE[ten];
-    m = new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: def.nham, metalness: 0 });
-    m.userData.beThuVien = ten; heSoXam(m);
-    const bo = taiAnh(ten);
-    khiCoAnh(ten, () => apAnh(m, def, bo));
-  }
+  m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true });
+  if (laBang(ten)) m.userData.beThuVien = "#bang";
+  else { m.userData.beThuVien = ten; ganAnh(m, ten); }
   if (haiMat) m.side = THREE.DoubleSide;
   if (them) Object.assign(m, them);
   chung.set(khoa, m);
@@ -121,10 +161,10 @@ export function vatLieuBe(ten, haiMat = false, them = null) {
 export function vlRieng(ten, color, opts = {}) {
   if (!MUC) return new THREE.MeshLambertMaterial({ color, ...opts });
   const def = BE[ten];
-  const m = new THREE.MeshStandardMaterial({ color, roughness: def.nham, metalness: 0, ...opts });
-  const bo = taiAnh(ten);
-  m.userData.beRieng = ten; heSoXam(m);
-  khiCoAnh(ten, () => apAnh(m, def, bo));
+  const m = new THREE.MeshLambertMaterial({ color, ...opts });
+  if (def?.diu) m.color.lerp(new THREE.Color(def.diu[0]), def.diu[1]);
+  m.userData.beRieng = ten;
+  if (def) ganAnh(m, ten);
   return m;
 }
 
@@ -145,14 +185,10 @@ export function be(o, ten) {
   return o;
 }
 
-const _c = new THREE.Color();
-// màu đỉnh cho khối thuộc loại mặt: ảnh màu thật thì chỉ lấy độ sáng tương đối so với màu đối chiếu
+// màu đỉnh cho khối thuộc loại mặt: ảnh nét cọ là ảnh xám nên giữ nguyên màu của khối (vỉa hè: ảnh có màu riêng)
 export function mauDinhBe(ten, mau) {
-  const def = BE[ten];
-  if (!def || def.xam || !mau) return mau;
-  const lum = c => c.r * 0.2126 + c.g * 0.7152 + c.b * 0.0722;
-  const k = Math.min(1.3, Math.max(0.55, lum(mau) / lum(_c.set(def.ref))));
-  return new THREE.Color(k, k, k);
+  if (!mau || !BE[ten]?.mau) return mau;
+  return new THREE.Color(1, 1, 1);
 }
 
 // Toạ độ ảnh theo mét: chiếu hộp theo pháp tuyến từng tam giác (khối không chỉ mục) hoặc từng đỉnh (có chỉ mục).
@@ -201,28 +237,10 @@ export function uvTheGioiKhoi(mesh, ten) {
   return mesh;
 }
 
-// Vật liệu có ảnh riêng (mặt tiền vẽ sẵn cửa sổ, ảnh nền đất): đổi sang PBR, giữ ảnh màu / ảnh phát sáng ban đêm,
-// thêm ảnh pháp tuyến (và độ nhám nếu nham) của một loại mặt, lặp lapX x lapY lần trên một đơn vị toạ độ ảnh.
-// Máy yếu: trả lại vật liệu cũ.
-export function matTienPBR(goc, ten, lapX, lapY, { nham = false, n = null, roughness = 0.88 } = {}) {
-  if (!MUC) return goc;
-  const m = new THREE.MeshStandardMaterial({ map: goc.map, emissiveMap: goc.emissiveMap || null, emissive: goc.emissive ? goc.emissive.clone() : 0, color: goc.color.clone(),
-    vertexColors: goc.vertexColors, side: goc.side, transparent: goc.transparent, roughness, metalness: 0 });
-  m.userData = { ...goc.userData };
-  if (ten) themChiTiet(m, ten, lapX, lapY, { nham, n });
-  return m;
-}
-export function themChiTiet(m, ten, lapX, lapY, { nham = false, n = null } = {}) {
-  if (!MUC || !m.isMeshStandardMaterial) return m;
-  const def = BE[ten], bo = taiAnh(ten);
-  khiCoAnh(ten, () => {
-    let doi = false;
-    if (bo.n && !m.normalMap) { const t = bo.n.clone(); t.repeat.set(lapX, lapY); m.normalMap = t; const k = n ?? def.n; m.normalScale.set(k, k); doi = true; }
-    if (nham && bo.r && !m.roughnessMap) { const t = bo.r.clone(); t.repeat.set(lapX, lapY); m.roughnessMap = t; m.roughness = 1; doi = true; }
-    if (doi) m.needsUpdate = true;
-  });
-  return m;
-}
+// Vật liệu có ảnh riêng (mặt tiền vẽ sẵn cửa sổ, ảnh nền đất): kiểu tranh giữ nguyên ảnh vẽ tay của nó, không thêm
+// ảnh pháp tuyến / độ nhám nữa. Giữ hai hàm để các file dựng cảnh gọi như cũ.
+export function matTienPBR(goc) { return goc; }
+export function themChiTiet(m) { return m; }
 // biến thể của một vật liệu thư viện với thuộc tính thêm (vd. { fog: false } cho địa điểm trong nhà)
 export function bienTheVL(m, them) {
   const t = m?.userData?.beThuVien;
