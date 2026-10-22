@@ -3,5 +3,7 @@
 Nguồn: repo gentapham/sieunhanhong (thư mục videos), nội dung do chủ dự án cung cấp và duyệt.
 Đã chuyển sang H.264 480p, AAC, faststart để phát trên mọi trình duyệt.
 
-- Màn LED trái: sieu-nhan-hong-1..5
-- Màn LED phải: sieu-nhan-hong-6..10
+Mỗi màn chiếu lặp một video, tắt tiếng:
+- Hai màn cạnh sân khấu: video 1 (trái), 6 (phải)
+- Tường trái: video 2, 3, 4, 5
+- Tường phải: video 7, 8, 9, 10
