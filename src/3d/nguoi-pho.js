@@ -1,8 +1,8 @@
 // Người đi đường làm việc thật: cầm ô, mặc áo mưa, nghe điện thoại, chụp ảnh tự sướng, dắt chó, chạy bộ buổi sáng,
 // học sinh tan trường, cô lao công quét đường, áo mưa cánh dơi trên xe máy. Đồ dùng chung vật liệu để đỡ tốn lượt vẽ.
 import * as THREE from "three";
-import { vl, taoNguoi, hinhNguoiNgauNhien } from "./nhan-vat-3d.js";
-import { vongEo, danThan, matThanNv, vongDau, hinhCau } from "./hinh-nguoi.js";
+import { vl, taoNguoi, hinhNguoiNgauNhien, kieuMoi } from "./nhan-vat-3d.js";
+import { vongEo, danThan, matThanNv, vongDau, hinhCau, muotHoa, diemDau, taiY } from "./hinh-nguoi.js";
 
 const TAY = 0.645; // chiều dài cánh tay (vai tới lòng bàn tay)
 const hop = (w, h, d, mat, x = 0, y = 0, z = 0) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mat === "number" ? vl(mat) : mat); m.position.set(x, y, z); return m; };
@@ -56,11 +56,107 @@ export function themO(nv, rnd) {
 // ---------- Áo mưa (áo choàng nilon có mũ trùm) ----------
 const MAU_AO_MUA = [0x3f7fd0, 0xf27fb0, 0xf2d23a, 0x3fb07a, 0x8a5ad0, 0xe8702a];
 const vlAoMua = MAU_AO_MUA.map(c => vl(c, { side: THREE.DoubleSide, transparent: true, opacity: 0.86 }));
-export function themAoMua(nv, rnd) {
-  const m = vlAoMua[Math.floor(rnd() * vlAoMua.length)];
-  const vai = nv.tayP.position.y, co = vai + 0.14;
+// nilon ướt (người kiểu mới): mượt, hơi bóng, hơi trong
+const vlNilon = new Map();
+const nilon = c => {
+  if (!vlNilon.has(c)) vlNilon.set(c, new THREE.MeshPhongMaterial({ color: c, side: THREE.DoubleSide, transparent: true, opacity: 0.84, shininess: 70, specular: 0x4a4a4a }));
+  return vlNilon.get(c);
+};
+const PI = Math.PI;
+// Lưới tấm nilon: R hàng (trên xuống) x C cột quanh trục đứng (cột j ứng với góc b = -PI + 2PI j / C; b = 0 phía trước +z,
+// b = PI/2 bên phải +x; cột cuối trùng cột đầu). diem(i, j) -> [x, y, z]; bo(i, j): bỏ ô giữa hàng i, i+1 và cột j, j+1
+// (khoét chỗ hở mặt của mũ trùm)
+function luoiNilon(R, C, diem, bo = null) {
+  const pos = [], uv = [], idx = [], W = C + 1;
+  for (let i = 0; i < R; i++) for (let j = 0; j <= C; j++) { pos.push(...diem(i, j)); uv.push(j / C, 1 - i / (R - 1)); }
+  for (let i = 0; i < R - 1; i++) for (let j = 0; j < C; j++) {
+    if (bo && bo(i, j)) continue;
+    const a = i * W + j, b = a + 1, c = a + W, d = c + 1;
+    idx.push(a, c, b, b, c, d);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx);
+  return muotHoa(g);
+}
+const gocCot = (j, C) => -PI + 2 * PI * j / C;
+// trọng số trước / hai bên / sau theo góc b (cộng lại bằng 1, đổi mượt)
+const trongSo = b => { const c = Math.cos(b), s = Math.sin(b); return [Math.max(0, c) ** 2, s * s, Math.max(0, -c) ** 2]; };
+// vòng nilon [y, bán kính trước, hai bên, sau, tâm z] -> điểm ở góc b
+function diemVong([y, rF, rS, rB, zc], b) {
+  const [wf, ws, wb] = trongSo(b), r = rF * wf + rS * ws + rB * wb;
+  return [Math.sin(b) * r, y, zc + Math.cos(b) * r];
+}
+// nội suy mượt (Catmull-Rom) giữa các vòng của bảng theo chỉ số u (0 .. số vòng - 1)
+function vongTai(bang, u) {
+  const n = bang.length - 1, i = Math.min(n - 1, Math.max(0, Math.floor(u))), t = Math.min(1, Math.max(0, u - i));
+  const p0 = bang[Math.max(0, i - 1)], p1 = bang[i], p2 = bang[i + 1], p3 = bang[Math.min(n, i + 2)];
+  return p1.map((_, k) => 0.5 * (2 * p1[k] + (p2[k] - p0[k]) * t + (2 * p0[k] - 5 * p1[k] + 4 * p2[k] - p3[k]) * t * t + (3 * p1[k] - p0[k] - 3 * p2[k] + p3[k]) * t * t * t));
+}
+// chỉ số u ứng với độ cao y (bảng xếp từ trên xuống)
+function uTaiY(bang, y) {
+  let a = 0, b = bang.length - 1;
+  if (y <= bang[b][0]) return b;
+  for (let k = 0; k < 30; k++) { const m = (a + b) / 2; if (vongTai(bang, m)[0] > y) a = m; else b = m; }
+  return (a + b) / 2;
+}
+// Áo mưa trùm theo bảng vòng: mũ trùm (từ đỉnh tới vòng cổ uCo, mỗi nửa vòng bảng một hàng) có chỗ hở mặt ở phía trước
+// (|b| < moB, độ cao trong khoảng mo); dưới cổ là thân áo buông tới gấu, gấu cao thấp theo góc (gau(b) -> y).
+function aoTheoBang(bang, uCo, gau, mo, { C = 28, RT = 10, moB = 1.0 } = {}) {
+  const RH = Math.round(uCo * 2) + 1, R = RH + RT;
+  const uCot = []; for (let j = 0; j <= C; j++) uCot.push(uTaiY(bang, gau(gocCot(j, C))));
+  const uHang = (i, j) => i < RH ? i * 0.5 : uCo + (uCot[j] - uCo) * (i - RH + 1) / RT;
+  const yHang = []; for (let i = 0; i < RH; i++) yHang.push(vongTai(bang, i * 0.5)[0]);
+  const trongMo = y => y >= mo[0] && y <= mo[1];
+  return luoiNilon(R, C, (i, j) => diemVong(vongTai(bang, uHang(i, j)), gocCot(j, C)),
+    (i, j) => i + 1 < RH && trongMo(yHang[i]) && trongMo(yHang[i + 1]) && Math.abs(gocCot(j + 0.5, C)) < moB);
+}
+
+// Mũ trùm của áo mưa đi bộ (gắn vào đầu, toạ độ đầu): rộng hơn đầu một lớp tóc, phồng ở sau đỉnh đầu cho búi / đuôi tóc,
+// hở mặt từ trán xuống cằm, mép dưới ôm quanh cằm và gáy (chui vào cổ áo choàng)
+let geoMuTrum = null;
+function muTrum() {
+  if (geoMuTrum) return geoMuTrum;
+  const C = 24, R = 12, t1 = 0.8 * PI, tMo = 0.26 * PI; // mép trên chỗ hở ngang chân tóc trên trán
+  const off = (b, t) => 0.042 + 0.012 * t / t1 + 0.07 * trongSo(b)[2] * Math.exp(-(((t - 0.22 * PI) / (0.2 * PI)) ** 2)) + 0.02 * trongSo(b)[1] * Math.exp(-(((t - 0.45 * PI) / (0.2 * PI)) ** 2));
+  const tHang = i => t1 * i / (R - 1);
+  geoMuTrum = luoiNilon(R, C, (i, j) => { const b = gocCot(j, C), t = Math.max(0.02, tHang(i)); return diemDau(t, b, off(b, t)); },
+    (i, j) => tHang(i + 1) > tMo && Math.abs(gocCot(j + 0.5, C)) < 1.05);
+  return geoMuTrum;
+}
+// Thân áo choàng đi bộ: tính theo dáng thân từng người (nam / nữ / mập), rộng đủ chứa hai cánh tay (lúc mặc áo mưa
+// tay vung nhỏ lại, xem giao-thong.js), học sinh đeo cặp thì phần lưng phồng ra; gấu ngang gối.
+const geoChoang = new Map();
+function thanChoang(rows, balo) {
+  const key = JSON.stringify(rows) + balo;
+  if (geoChoang.has(key)) return geoChoang.get(key);
+  const tay = taiY(rows, 1.42)[1] + 0.022 + 0.066; // mép ngoài cánh tay (vai + bắp tay to nhất)
+  const vong = y => {
+    const [, rx, rz, z] = taiY(rows, Math.min(y, 1.5)), xoe = Math.max(0, 1.44 - y), cap = balo ? 0.13 * Math.exp(-(((y - 1.17) / 0.22) ** 2)) : 0;
+    if (y > 1.6) return [y, 0.12, 0.14, 0.14, -0.012];
+    if (y > 1.53) return [y, 0.15, 0.2, 0.17, -0.01];
+    if (y > 1.47) return [y, rz + z + 0.07, Math.max(rx + 0.06, tay - 0.02), rz - z + 0.08 + cap, 0];
+    return [y, rz + z + 0.08 + 0.2 * xoe, tay + 0.035 + 0.13 * xoe, rz - z + 0.09 + 0.15 * xoe + cap, 0];
+  };
+  const bang = [1.63, 1.565, 1.5, 1.44, 1.34, 1.2, 1.04, 0.88, 0.72, 0.58, 0.5].map(vong);
+  const g = aoTheoBang(bang, 0, b => { const [wf, ws, wb] = trongSo(b); return 0.58 * wf + 0.57 * ws + 0.55 * wb; }, [9, 9], { C: 24, RT: 12 });
+  geoChoang.set(key, g);
+  return g;
+}
+export function themAoMua(nv, rnd, { balo = false } = {}) {
+  const mau = MAU_AO_MUA[Math.floor(rnd() * MAU_AO_MUA.length)];
   const g = new THREE.Group(); g.visible = false; nv.group.add(g);
-  const than = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.44, co - 0.5, 10, 1, true), m); than.position.y = (co + 0.5) / 2; g.add(than);
+  if (nv.thanHinh) { // người kiểu mới: áo choàng nilon ôm theo dáng người, mũ trùm vừa đầu
+    const m = nilon(mau);
+    const than = new THREE.Mesh(thanChoang(nv.thanHinh, balo), m); g.add(than);
+    const mu = new THREE.Mesh(muTrum(), m); mu.visible = false; nv.dau.add(mu);
+    return { g, than, mu, mac(bat) { g.visible = bat; mu.visible = bat; } };
+  }
+  // người khối hộp (mức "Thấp"): giữ áo nón cụt như cũ
+  const m = vlAoMua[MAU_AO_MUA.indexOf(mau)];
+  const vai = nv.tayP.position.y, co = vai + 0.14;
+  const than = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.44, co - 0.5, 10, 1, true), m); than.position.y = (co + 0.5) / 2; than.userData.onCu = true; g.add(than);
   const mu = new THREE.Mesh(GEO_MU_MUA, m);
   mu.position.set(0, 0.02, -0.01); mu.visible = false; nv.dau.add(mu);
   return { g, than, mu, mac(bat) { g.visible = bat; mu.visible = bat; } };
@@ -187,11 +283,50 @@ export function taoLaoCong(rnd) {
 }
 
 // ---------- Áo mưa cánh dơi trùm cả người lái và đầu xe ----------
+// Bản cũ (mức "Thấp"): hai nón cụt
 const GEO_AO_XE = [new THREE.CylinderGeometry(0.17, 0.52, 0.72, 10, 1, true), new THREE.CylinderGeometry(0.16, 0.44, 0.62, 8, 1, true)];
 const vlAoXe = MAU_AO_MUA.map(c => vl(c, { side: THREE.DoubleSide, transparent: true, opacity: 0.88 }));
-export function aoMuaXeMay(rnd, coSau) {
+// Bản mới (toạ độ xe, đầu xe +z): người lái ngồi neo (0; 0,86; −0,18), tâm đầu ~ (0; 1,70; −0,08), vai y 1,41, hai tay
+// nắm tay lái ở (±0,27; 1,15; 0,38). Áo mưa cánh dơi: mũ trùm lên mũ bảo hiểm (hở mặt), vạt choàng qua vai và hai cánh
+// tay ra tới tay lái (hai bàn tay thò ra ở mép vạt, chỗ gấu khoét lên), vạt trước buông trùm đầu xe tới ngang bánh trước
+// (sau đèn pha), hai bên phủ qua đùi, vạt sau phủ xuống yên. Có người ngồi sau: vạt sau người lái ngắn lại, người ngồi
+// sau mặc áo thứ hai có mũ trùm riêng, vạt trước chui vào trong áo người lái (như áo mưa đôi), vạt sau phủ yên sau.
+// Mỗi bảng: [y, bán kính trước, hai bên, sau, tâm z]
+const BANG_LAI = (sauNgan) => [
+  [1.965, 0.0, 0.0, 0.0, -0.1], [1.935, 0.11, 0.12, 0.13, -0.1], [1.87, 0.19, 0.21, 0.22, -0.095], [1.78, 0.215, 0.235, 0.245, -0.09],
+  [1.67, 0.215, 0.235, 0.245, -0.085], [1.57, 0.2, 0.22, 0.23, -0.09], [1.49, 0.2, 0.26, 0.21, -0.1],
+  [1.4, 0.26, 0.335, sauNgan ? 0.2 : 0.22, -0.1], [1.28, 0.42, 0.42, sauNgan ? 0.215 : 0.24, -0.09], [1.16, 0.57, 0.45, sauNgan ? 0.22 : 0.26, -0.07],
+  [1.02, 0.66, 0.45, sauNgan ? 0.225 : 0.29, -0.06], [0.86, 0.7, 0.44, 0.33, -0.06], [0.66, 0.72, 0.43, 0.37, -0.06]];
+const BANG_SAU = [
+  [2.005, 0.0, 0.0, 0.0, -0.545], [1.975, 0.11, 0.12, 0.13, -0.545], [1.91, 0.19, 0.21, 0.22, -0.54], [1.82, 0.215, 0.235, 0.245, -0.535],
+  [1.71, 0.215, 0.235, 0.245, -0.53], [1.61, 0.2, 0.22, 0.23, -0.535], [1.53, 0.2, 0.26, 0.21, -0.545],
+  [1.44, 0.25, 0.34, 0.23, -0.54], [1.32, 0.31, 0.39, 0.26, -0.53], [1.18, 0.35, 0.41, 0.29, -0.52], [1.02, 0.37, 0.41, 0.31, -0.52], [0.86, 0.37, 0.41, 0.33, -0.52]];
+let geoAoXe = null;
+function aoXeMoi() {
+  if (geoAoXe) return geoAoXe;
+  const gauLai = (sau, khoet) => b => {
+    const [wf, ws, wb] = trongSo(b);
+    const y = 0.7 * wf + 0.74 * ws + sau * wb;
+    return y + (khoet - y) * Math.exp(-(((Math.abs(b) - 0.56) / 0.17) ** 2)); // khoét lên chỗ hai bàn tay nắm tay lái
+  };
+  geoAoXe = {
+    lai: aoTheoBang(BANG_LAI(false), 6, gauLai(0.9, 1.13), [1.545, 1.86]),
+    laiDoi: aoTheoBang(BANG_LAI(true), 6, gauLai(1.02, 1.13), [1.545, 1.86]),
+    sau: aoTheoBang(BANG_SAU, 6, b => { const [wf, ws, wb] = trongSo(b); return 0.97 * wf + 0.8 * ws + 0.93 * wb; }, [1.585, 1.9]),
+  };
+  return geoAoXe;
+}
+const MAU_AO_XE_OM = 0x2e9a4a; // xe ôm công nghệ: áo mưa xanh lá như áo khoác
+export function aoMuaXeMay(rnd, coSau, { xeOm = false } = {}) {
   const g = new THREE.Group(); g.visible = false;
-  const m = vlAoXe[Math.floor(rnd() * vlAoXe.length)];
+  const k = Math.floor(rnd() * vlAoXe.length);
+  if (kieuMoi()) {
+    const m = nilon(xeOm ? MAU_AO_XE_OM : MAU_AO_MUA[k]), geo = aoXeMoi();
+    g.add(new THREE.Mesh(coSau ? geo.laiDoi : geo.lai, m));
+    if (coSau) g.add(new THREE.Mesh(geo.sau, m));
+    return g;
+  }
+  const m = vlAoXe[k];
   const a = new THREE.Mesh(GEO_AO_XE[0], m); a.position.set(0, 1.2, -0.02); a.scale.z = 1.55; a.rotation.x = 0.12; g.add(a);
   if (coSau) { const b = new THREE.Mesh(GEO_AO_XE[1], m); b.position.set(0, 1.22, -0.62); b.scale.z = 1.3; g.add(b); }
   return g;

@@ -57,8 +57,11 @@ export class GiaoThong {
           gopKhoi(khoi, { deQuy: true, atlas: false });
           for (const c of [...khoi.children]) if (!c.isMesh) khoi.remove(c);
           g.add(khoi);
-          if (!xeOm && rnd() < 0.12) { const pk = phuKienXeMay(rnd); g.add(pk); g.userData.pk = pk; } // áo choàng siêu nhân / cờ Quỷ Đỏ
-          if (rnd2() < 0.9) { ao = aoMuaXeMay(rnd2, coSau); g.add(ao); }
+          if (!xeOm && rnd() < 0.12) { // áo choàng siêu nhân / cờ Quỷ Đỏ
+            const pk = phuKienXeMay(rnd); g.add(pk); g.userData.pk = pk;
+            if (coSau && pk.userData.choang) pk.userData.choang.position.set(0, 1.59, -0.77); // có người ngồi sau: áo choàng buông từ cổ người ngồi sau (không đâm xuyên người)
+          }
+          if (rnd2() < 0.9) { ao = aoMuaXeMay(rnd2, coSau, { xeOm }); g.add(ao); }
           ngang = lan.xeMay + (rnd() - 0.5) * 0.9; // không chạy sát mép vỉa hè
         } else if (loai === "buyt") { g.add(taoXeBuyt()); dai2 = 10.8; toc = 7.5; ngang = lan.oto; }
         else { g.add(taoOto(loai === "taxi" ? 0xf2f2f2 : chon(MAU_XE), { taxi: loai === "taxi" })); dai2 = 4.3; toc = 10 + rnd() * 3; }
@@ -127,7 +130,7 @@ export class GiaoThong {
       const l = loiDi[li];
       for (let k = 0; k < so; k++) {
         const p = them(taoHocSinh(rnd2), l, s0 - k * 0.9, 1, 1.0, ((k % 2) - 0.5) * 0.7, { loai: "hs", gio: [[16.5, 17.6]], chiuMua: true });
-        p.aoMua = themAoMua(p.nv, rnd2);
+        p.aoMua = themAoMua(p.nv, rnd2, { balo: true });
       }
       const ph = nguoiThuong(l, s0 - so * 0.9 - 0.6, 1, 1.0, 0); ph.gio = [[16.5, 17.6]]; ph.loai = "thuong";
     }
@@ -179,10 +182,13 @@ export class GiaoThong {
     lap(nguoiO.map(p => p.o.non));
     lap(nguoiO.map(p => p.o.can), new THREE.BoxGeometry(0.025, 1, 0.025), doCao);
     lap(nguoiO.map(p => p.o.dinh));
-    lap(nguoiAo.map(p => p.aoMua.than), new THREE.CylinderGeometry(0.2, 0.44, 1, 10, 1, true), doCao);
-    lap(nguoiAo.map(p => p.aoMua.mu));
-    lap(this.xe.map(x => x.ao?.children[0]));
-    lap(this.xe.map(x => x.ao?.children[1]));
+    // áo mưa: mỗi dáng áo (thân áo theo dáng người, mũ trùm, áo trùm xe một / hai người) một khối lặp
+    const theoHinh = ds => { const m = new Map(); for (const o of ds.filter(Boolean)) { if (!m.has(o.geometry)) m.set(o.geometry, []); m.get(o.geometry).push(o); } return [...m.values()]; };
+    const thanAo = nguoiAo.map(p => p.aoMua.than);
+    lap(thanAo.filter(m => m.userData.onCu), new THREE.CylinderGeometry(0.2, 0.44, 1, 10, 1, true), doCao); // mức "Thấp": nón cụt cao theo người
+    for (const ds of theoHinh(thanAo.filter(m => !m.userData.onCu))) lap(ds);
+    for (const ds of theoHinh(nguoiAo.map(p => p.aoMua.mu))) lap(ds);
+    for (const ds of theoHinh(this.xe.flatMap(x => x.ao?.children || []))) lap(ds);
     for (const i of [0, 1]) lap(this._ly.filter(l => l.material === VL_LY[i]));
 
     // ---------- Đèn xe ban đêm: chùm pha trên mặt đường + quầng đèn (mỗi loại một lượt vẽ) ----------
@@ -423,7 +429,7 @@ export class GiaoThong {
       const gan = nguoiChoi.tang === 0 && Math.hypot(nguoiChoi.x - x, nguoiChoi.z - z) < 1.1;
       // việc riêng: nghe điện thoại, chụp ảnh, ghé xe hàng mua đồ, dừng cho chó đánh hơi
       p.hen -= dt;
-      if (!p.tt && p.hen <= 0 && !(p.o && p.dangChe)) {
+      if (!p.tt && p.hen <= 0 && !((p.o || p.aoMua) && p.dangChe)) { // đang che ô / trùm áo mưa: không nghe điện thoại, chụp ảnh
         if (p.loai === "goi") { p.tt = { loai: "goi", tg: 9 + Math.random() * 14, dung: Math.random() < 0.35 }; p.dt.nghe(true); }
         else if (p.loai === "chup") { p.tt = { loai: "chup", tg: 4 + Math.random() * 3, xoay: (Math.random() - 0.5) * 2.4 }; p.dt.chup(true); }
         else if (p.loai === "cho") p.tt = { loai: "hit", tg: 2.5 + Math.random() * 2.5 };
@@ -470,6 +476,9 @@ export class GiaoThong {
         p.nv.hoatDong(t + p.toc * 10, dangDi, tocDi);
         if (p.tt?.loai === "chup") p.nv.dau.rotation.set(-0.12, 0, 0.12);
         if (p.tt?.loai === "goi") p.nv.dau.rotation.z = 0.12;
+        if (p.aoMua && p.dangChe && p.nv.thanHinh) for (const tay of [p.nv.tayT, p.nv.tayP]) if (!tay.userData.coDinh) { // tay vung nhỏ trong áo choàng
+          tay.rotation.x *= 0.35; tay.userData.khuyu = 0.14 + Math.max(0, -tay.rotation.x) * 0.6;
+        }
       }
     }
     // người ngồi, đứng một chỗ

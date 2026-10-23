@@ -137,7 +137,7 @@ function thanhNoi(mat, a, b, r = 0.004, seg = 5) {
   return m;
 }
 // điểm trên mặt đầu theo góc quanh trục đứng b (0 = trước, +PI/2 = bên phải +x) và góc từ đỉnh t, đẩy ra ngoài off
-function diemDau(t, b, off) {
+export function diemDau(t, b, off) {
   const sx = Math.sin(t) * Math.sin(b), sy = Math.cos(t), sz = Math.sin(t) * Math.cos(b);
   const [X, Y, Z] = hinhDau(sx, sy, sz);
   const nx = X / (DAU.x * DAU.x), ny = Y / (DAU.y * DAU.y), nz = Z / (DAU.z * DAU.z), l = Math.hypot(nx, ny, nz) || 1;
@@ -350,7 +350,7 @@ function hangThan(nu, beo, r, sieu = false) {
   });
 }
 // nội suy hàng thân ở độ cao y
-function taiY(rows, y) {
+export function taiY(rows, y) {
   if (y >= rows[0][0]) return rows[0];
   for (let i = 0; i < rows.length - 1; i++) {
     const a = rows[i], b = rows[i + 1];

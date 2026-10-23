@@ -709,15 +709,59 @@ export function taoNguoiLaiXe(rnd, { aoXeOm = false, sau = false } = {}) {
   return gop(g);
 }
 
+// Mặt người lái xe: chung một tấm ảnh (8 x 4 ô, mỗi ô một gương mặt theo màu da / giới / miệng). Đầu người lái gộp
+// chung khối với xe (gopKhoi), nên mặt phải là vật liệu một ảnh dùng chung: cả xe chỉ thêm đúng một lượt vẽ cho mặt.
+// (Trước đây đầu dùng mảng vật liệu nên bị gopKhoi bỏ qua rồi mất theo nhóm cha: người lái không có mặt, chỉ còn khẩu
+// trang, tai và mũ lơ lửng.)
+const LX = { cot: 8, hang: 4, px: 256, dem: 8 };
+let lxAnh = null;
+function oMatLaiXe(nh) {
+  if (!lxAnh) {
+    const c = document.createElement("canvas"); c.width = LX.cot * LX.px; c.height = LX.hang * LX.px;
+    const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
+    lxAnh = { c, g: c.getContext("2d"), t, vl: new THREE.MeshLambertMaterial({ map: t }), o: new Map(), geo: new Map() };
+  }
+  const m = nh.mat || {}, key = [nh.da, !!nh.nu, nh.pk?.includes("khauTrangVai") ? "" : m.mieng].join(); // đeo khẩu trang: miệng nào cũng được
+  let i = lxAnh.o.get(key);
+  if (i == null) {
+    if (lxAnh.o.size < LX.cot * LX.hang) {
+      i = lxAnh.o.size; lxAnh.o.set(key, i);
+      const x = (i % LX.cot) * LX.px, y = Math.floor(i / LX.cot) * LX.px, g = lxAnh.g;
+      g.fillStyle = hex(nh.da); g.fillRect(x, y, LX.px, LX.px); // viền đệm màu da: lọc mipmap không lem sang ô bên cạnh
+      g.drawImage(veMat(nh).map.image, x + LX.dem, y + LX.dem, LX.px - 2 * LX.dem, LX.px - 2 * LX.dem);
+      lxAnh.t.needsUpdate = true;
+    } else { // hết ô: mặt có sẵn cùng màu da, cùng giới
+      const dau = [nh.da, !!nh.nu].join() + ",";
+      for (const [k, j] of lxAnh.o) if (k.startsWith(dau)) { i = j; break; }
+      i ??= 0;
+    }
+  }
+  return i;
+}
+// khối đầu dùng ô mặt thứ i trong ảnh chung (toạ độ ảnh dồn vào ô)
+function geoDauO(geo, i) {
+  const k = geo.uuid + ":" + i;
+  if (!lxAnh.geo.has(k)) {
+    const g = geo.clone(), uv = g.attributes.uv, W = LX.cot * LX.px, H = LX.hang * LX.px, s = LX.px - 2 * LX.dem;
+    const x0 = (i % LX.cot) * LX.px + LX.dem, y0 = Math.floor(i / LX.cot) * LX.px + LX.dem;
+    for (let j = 0; j < uv.count; j++) uv.setXY(j, (x0 + uv.getX(j) * s) / W, 1 - (y0 + (1 - uv.getY(j)) * s) / H);
+    g.clearGroups(); lxAnh.geo.set(k, g);
+  }
+  return lxAnh.geo.get(k);
+}
 // Kiểu mới: người thật ngồi trên yên (gốc nhóm ở mặt yên như người cũ), hai tay nắm tay lái, đội mũ bảo hiểm, đeo khẩu trang.
 // Dựng bản ít đa giác (nhìn từ xa, cả phố vài chục chiếc), tư thế cố định rồi giao-thong.js gộp chung với xe.
 function taoNguoiLaiXeMoi(nh, { aoXeOm, sau }) {
-  nh.pk = ["muBaoHiem", "khauTrangVai"]; if (aoXeOm) { nh.mauMu = 0x2e9a4a; nh.ao = { kieu: "khoac", mau: 0x2e9a4a, trong: 0xf6f6f2 }; }
+  // phần lớn người chạy xe ở Sài Gòn đeo khẩu trang (che từ sống mũi tới cằm); số còn lại để lộ miệng
+  const khauTrang = nh.pk.includes("khauTrangVai") || (nh.mat?.mieng !== "cuoi" && nh.mat?.mieng !== "mim");
+  nh.pk = khauTrang ? ["muBaoHiem", "khauTrangVai"] : ["muBaoHiem"]; if (aoXeOm) { nh.mauMu = 0x2e9a4a; nh.ao = { kieu: "khoac", mau: 0x2e9a4a, trong: 0xf6f6f2 }; }
   if (nh.ao.kieu === "vay_lien" || nh.ao.kieu === "vay_dai") { nh.ao = { kieu: "hoodie", mau: nh.ao.mau }; nh.quan = { kieu: "jean", mau: 0x4f6d9a }; }
   if (nh.quan.kieu === "da" || nh.quan.kieu === "vay_but") nh.quan = { kieu: "jean", mau: 0x4f6d9a };
   if (nh.nu && nh.mat) nh.mat = { mi: true, maHong: true, son: 0xc75b6c, ...nh.mat };
   const P = dungNguoiMoi(nh, veMat(nh), { tho: true, jean: VAI.jean });
   const { g, tayT, tayP, chanT, chanP, goiT, goiP, than, dau } = P;
+  const hd = dau.children.find(c => c.material === P.matMang);
+  if (hd) { hd.geometry = geoDauO(hd.geometry, oMatLaiXe(nh)); hd.material = lxAnh.vl; }
   g.scale.setScalar(1); g.position.y = -0.88;
   chanT.rotation.x = chanP.rotation.x = -1.3; goiT.rotation.x = goiP.rotation.x = 1.15;
   chanT.rotation.z = 0.08; chanP.rotation.z = -0.08;
