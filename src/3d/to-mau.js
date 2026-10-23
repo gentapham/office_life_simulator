@@ -10,10 +10,10 @@
 import * as THREE from "three";
 import { caiDat, cheDoNhe } from "../cai-dat.js";
 
-// 0: Thấp (như cũ), 1: Vừa (tô tranh + trời + sương, bóng rẻ, không hậu kỳ), 2: Cao / Tự động trên máy tính (đủ cả)
+// 0: Thấp (như cũ), 1: Vừa và Tự động trên máy tính (tô tranh + trời + sương, bóng rẻ, không hậu kỳ), 2: Cao (đủ cả, chỉ khi chọn)
 export function mucVe() {
   if (cheDoNhe()) return 0;
-  return caiDat().chatLuong === "vua" ? 1 : 2;
+  return caiDat().chatLuong === "cao" ? 2 : 1;
 }
 
 const C = THREE.ShaderChunk;

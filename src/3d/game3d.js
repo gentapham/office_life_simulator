@@ -68,7 +68,7 @@ export class Game3D {
     this.nhe = cheDoNhe(); // máy yếu: bớt người, xe, chi tiết
     // mức vẽ: 0 Thấp (như cũ), 1 Vừa (tô kiểu tranh, bóng rẻ), 2 Cao (thêm bóng đủ, hậu kỳ). Sửa shader chung trước khi dịch.
     this.mucVe = caiToMau(mucVe());
-    this.renderer = new THREE.WebGLRenderer({ antialias: !this.nhe && caiDat().chatLuong !== "vua" && this.mucVe < 2, powerPreference: "high-performance" });
+    this.renderer = new THREE.WebGLRenderer({ antialias: !this.nhe && caiDat().chatLuong !== "vua" && this.mucVe < 2 && devicePixelRatio < 1.5, powerPreference: "high-performance" });
     this.renderer.setPixelRatio(tiLeDiemAnh());
     if (this.mucVe > 0) {
       // giữ màu phẳng, dịu: chỉ nén nhẹ vùng rất sáng (Neutral), không đổi tông màu thường
@@ -135,7 +135,7 @@ export class Game3D {
 
     this.taoDieuKhien();
     this._boCaiDat = khiDoiCaiDat(c => {
-      this.renderer.setPixelRatio(tiLeDiemAnh()); this.resize();
+      this._dpg = null; this.renderer.setPixelRatio(tiLeDiemAnh()); this.resize();
       if (this.camera.fov !== c.tamNhin) { this.camera.fov = c.tamNhin; this.camera.updateProjectionMatrix(); }
     });
     this.datGio(8, 0);
@@ -556,9 +556,24 @@ export class Game3D {
     if (!dung(this.p.x, this.p.z + dz)) this.p.z += dz;
     this.huongThan = Math.atan2(dx, dz);
   }
+  // Tự động: máy chạy chậm (dưới ~40 hình/giây) thì giảm dần độ phân giải vẽ, chạy dư sức thì tăng lại
+  tuChinhDoPhanGiai(dt) {
+    if (caiDat().chatLuong !== "tu_dong" || document.hidden) return;
+    const d = this._dpg || (this._dpg = { tg: 0, khung: 0, tot: 0, pr: this.renderer.getPixelRatio() });
+    d.tg += dt; d.khung++;
+    if (d.tg < 2) return;
+    const fps = d.khung / d.tg; d.tg = 0; d.khung = 0;
+    const tran = tiLeDiemAnh();
+    let pr = d.pr;
+    if (fps < 40 && pr > 0.6) { pr = Math.max(0.6, pr - (fps < 25 ? 0.3 : 0.15)); d.tot = 0; }
+    else if (fps > 56 && pr < tran) { if (++d.tot >= 4) { pr = Math.min(tran, pr + 0.1); d.tot = 0; } }
+    else d.tot = 0;
+    if (pr !== d.pr) { d.pr = pr; this.renderer.setPixelRatio(pr); this.resize(); }
+  }
   loop() {
     const dt = Math.min(0.1, this.dongHo.getDelta());
     this.t += dt;
+    this.tuChinhDoPhanGiai(dt);
     this.diChuyen(dt);
     const y = this.tang * CAO_TANG;
     // ngồi: hạ tầm mắt xuống ngang người ngồi ghế

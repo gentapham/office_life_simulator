@@ -216,14 +216,15 @@ export class SanKhau {
     const goc = import.meta.env.BASE_URL || "./";
     const taoMan = (ds, w, h, x, y, z, quay) => {
       const v = document.createElement("video");
-      v.playsInline = true; v.preload = "auto"; v.muted = true; v.defaultMuted = true; v.volume = 0; v.crossOrigin = "anonymous"; v.loop = ds.length === 1;
-      const tex = new THREE.VideoTexture(v); tex.colorSpace = THREE.SRGBColorSpace;
+      v.playsInline = true; v.preload = "none"; v.muted = true; v.defaultMuted = true; v.volume = 0; v.crossOrigin = "anonymous"; v.loop = ds.length === 1;
+      // ảnh video chỉ chép lên card đồ hoạ vài lần mỗi giây, lần lượt từng màn (xem capNhatVideo): đỡ nặng hơn VideoTexture chép mỗi khung hình
+      const tex = new THREE.Texture(v); tex.colorSpace = THREE.SRGBColorSpace; tex.generateMipmaps = false; tex.minFilter = THREE.LinearFilter;
       const vlMan = new THREE.MeshBasicMaterial({ map: tCho, fog: false, toneMapped: false });
       const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), vlMan);
       m.position.set(x, y + h / 2, z); m.rotation.y = quay; this.nhom.add(m);
-      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false };
+      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false };
       const nap = () => { v.src = `${goc}video/sieu-nhan-hong-${ds[man.so]}.mp4`; if (man.chay) this.phat(man); };
-      v.addEventListener("playing", () => { if (vlMan.map !== tex) { vlMan.map = tex; vlMan.needsUpdate = true; } });
+      v.addEventListener("playing", () => { man.sanSang = true; if (vlMan.map !== tex) { tex.needsUpdate = true; vlMan.map = tex; vlMan.needsUpdate = true; } });
       v.addEventListener("ended", () => { man.so = (man.so + 1) % ds.length; nap(); });
       // video lỗi thì sang video kế; trình duyệt không phát được cả danh sách thì giữ ảnh chờ
       v.addEventListener("error", () => { if (++man.loi >= ds.length) { man.hong = true; return; } man.so = (man.so + 1) % ds.length; setTimeout(nap, 3000); });
@@ -241,16 +242,32 @@ export class SanKhau {
     this.canhGac = setInterval(() => { if (performance.now() - this.tCapNhat > 600) this.dungVideo(); }, 500);
   }
   phat(man) {
-    man.chay = true; if (man.hong) return;
-    if (!man.v.src) { man.nap(); return; }
-    man.v.play().catch(() => { man.chay = false; }); // thử lại ở khung hình sau
+    if (man.hong) return;
+    if (!man.v.src) {
+      // tải lần lượt: tối đa 2 video đang tải cùng lúc để video nào cũng mau có hình
+      if ([...this.manVideo, ...this.manTuong].filter(m => m.v.src && !m.sanSang && !m.hong).length >= 2) return;
+      man.chay = true; man.nap(); return;
+    }
+    man.chay = true;
+    man.v.play().catch(() => { man.chay = false; man.tThu = performance.now(); });
   }
-  dungVideo() { for (const m of [...this.manVideo, ...this.manTuong]) if (m.chay) { m.chay = false; m.v.pause(); } }
-  // mọi màn tự chiếu liên tục, không tiếng; chỉ dừng khi vòng lặp game ngừng (tạm dừng, ở tầng khác)
-  capNhatVideo() {
+  dungVideo() { for (const m of [...this.manVideo, ...this.manTuong]) if (m.chay || !m.v.paused) { m.chay = false; m.v.pause(); } }
+  // màn chiếu khi người chơi ở khu quảng trường (cả đoạn phố nhìn thấy sân khấu), tắt tiếng; đi xa thì dừng cho nhẹ máy
+  capNhatVideo(gan) {
     this.tCapNhat = performance.now();
-    for (const m of [...this.manVideo, ...this.manTuong]) if (!m.chay) this.phat(m);
+    const ds = this.dsMan || (this.dsMan = [...this.manVideo, ...this.manTuong]);
+    if (!gan) { this.dungVideo(); return; }
+    const bay = performance.now();
+    for (const m of ds) if (!m.chay && !(m.tThu && bay - m.tThu < 1500)) this.phat(m);
+    // chép ảnh video lên card đồ hoạ: mỗi khung hình 1–2 màn, xoay vòng (mỗi màn khoảng 10–15 hình/giây)
+    const moiKhung = this.dienThoai ? 1 : 2;
+    for (let k = 0, dem = 0; k < ds.length && dem < moiKhung; k++) {
+      this.luotMan = ((this.luotMan || 0) + 1) % ds.length;
+      const m = ds[this.luotMan];
+      if (m.sanSang && !m.v.paused && m.v.readyState >= 2) { m.tex.needsUpdate = true; dem++; }
+    }
   }
+
 
   taoKhanGia() {
     let seed = 3110;
@@ -314,7 +331,7 @@ export class SanKhau {
   capNhat(dt, t, viTri) {
     const gan = Math.abs(viTri.x - SK.tam) < 90 && viTri.z < 60 && viTri.z > -60;
     this.nhom.visible = gan;
-    this.capNhatVideo();
+    this.capNhatVideo(gan);
     if (!gan) { this.amThanh.datAmLuong(0); return; }
     this.tgVe += dt;
     if (this.tgVe > (this.dien ? 0.12 : 0.5)) { this.tgVe = 0; this._dem = (this._dem || 0) + 1; if (this._dem % (this.dien ? 30 : 8) === 0) this.trang++; this.ve(t); }

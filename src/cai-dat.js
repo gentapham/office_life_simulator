@@ -47,7 +47,7 @@ export function thoiGianChon(giayGoc) {
 }
 export function tiLeDiemAnh() {
   const c = caiDat(), dt = matchMedia("(pointer: coarse)").matches;
-  const tran = c.chatLuong === "thap" ? 1 : c.chatLuong === "vua" ? 1.25 : c.chatLuong === "cao" ? 2 : dt ? 1.5 : 2;
+  const tran = c.chatLuong === "thap" ? 1 : c.chatLuong === "vua" ? 1.25 : c.chatLuong === "cao" ? 2 : dt ? 1.25 : 1.5;
   return Math.min(devicePixelRatio || 1, tran);
 }
 
