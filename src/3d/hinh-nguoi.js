@@ -166,27 +166,34 @@ function vaMu(R, C, f) {
     return [p[0] + n[0] / l * off, p[1] + n[1] / l * off, p[2] + n[2] / l * off, j / (C - 1), 1 - i / (R - 1)];
   });
 }
-// kính đen: dải cong ôm mặt trước, hai đầu bo tròn, giữa hạ xuống mỏ nhọn; mép chìm vào vỏ mũ nên không lộ cạnh
+// kính đen hình trái tim (mũ Pink Ranger): rộng ngang hai mắt, mép trên nhô thành hai thuỳ hai bên (giữa là mỏ hồng
+// từ trán cắm xuống), mép dưới cong xuống ở giữa, hai đầu bo tròn ôm tới má; mép chìm vào vỏ mũ nên không lộ cạnh
+const KINH_SN = { B: 1.2, tren: e => 0.064 + 0.02 * Math.exp(-(((e - 0.42) / 0.28) ** 2)) - 0.03 * e ** 3, duoi: e => -0.058 + 0.016 * e * e };
 function kinhSieuNhan(C, R) {
-  const B = 1.15;
   return vaMu(R, C, (i, j) => {
-    const u = j / (C - 1), b = (2 * u - 1) * B, e = Math.abs(2 * u - 1), v = i / (R - 1);
-    const tren = 0.07 - 0.022 * e * e, duoi = -0.022 - 0.07 * Math.exp(-((b / 0.3) ** 2)) + 0.014 * e * e;
-    const giua = (tren + duoi) / 2, nua = (tren - duoi) / 2 * Math.sqrt(Math.max(0, 1 - e ** 5));
+    const u = j / (C - 1), b = (2 * u - 1) * KINH_SN.B, e = Math.abs(2 * u - 1), v = i / (R - 1);
+    const tren = KINH_SN.tren(e), duoi = KINH_SN.duoi(e);
+    const giua = (tren + duoi) / 2, nua = (tren - duoi) / 2 * Math.sqrt(Math.max(0, 1 - e ** 4));
     const noi = Math.min(1, 6 * v * (1 - v)) * Math.min(1, 9 * u * (1 - u));
     return [b, giua + nua * (1 - 2 * v), -0.003 + 0.013 * noi];
   });
 }
-// sọc trắng nổi giữa đỉnh mũ: từ mép trên kính chạy qua đỉnh xuống gáy
-function socSieuNhan(R) {
-  return luoi(R, 3, (i, j) => {
-    const a = 1.08 - (1.08 + 2.15) * i / (R - 1), w = (j - 1.5) / 1.5; // a: góc từ đỉnh về phía trước
-    const ux = w * 0.13, l = Math.hypot(ux, 1);
-    const [X, Y, Z] = hinhDau(ux / l * 1, Math.cos(a) / l, Math.sin(a) / l);
-    const p = [X * MU_SN[0], Y * MU_SN[1], Z * MU_SN[2]];
-    const n = [p[0] / (DAU.x * DAU.x * MU_SN[0] ** 2), p[1] / (DAU.y * DAU.y * MU_SN[1] ** 2), p[2] / (DAU.z * DAU.z * MU_SN[2] ** 2)], ln = Math.hypot(...n) || 1;
-    const off = (Math.abs(w) > 0.99 ? -0.001 : 0.006) * (i === 0 || i === R - 1 ? 0.3 : 1);
-    return [p[0] + n[0] / ln * off, p[1] + n[1] / ln * off, p[2] + n[2] / ln * off, j / 3, i / (R - 1)];
+// điểm trên đường giữa vỏ mũ (góc a từ đỉnh về phía trước), lệch ngang ux, đẩy ra ngoài off
+function diemMoMu(a, ux, off) {
+  const l = Math.hypot(ux, 1);
+  const [X, Y, Z] = hinhDau(ux / l, Math.cos(a) / l, Math.sin(a) / l);
+  const p = [X * MU_SN[0], Y * MU_SN[1], Z * MU_SN[2]];
+  const n = [p[0] / (DAU.x * DAU.x * MU_SN[0] ** 2), p[1] / (DAU.y * DAU.y * MU_SN[1] ** 2), p[2] / (DAU.z * DAU.z * MU_SN[2] ** 2)], ln = Math.hypot(...n) || 1;
+  return [p[0] + n[0] / ln * off, p[1] + n[1] / ln * off, p[2] + n[2] / ln * off];
+}
+// gờ nổi giữa đỉnh mũ (đầu thằn lằn bay): chạy từ gáy qua đỉnh, xuống trán rồi thành mỏ nhọn cắm vào giữa kính đen
+const MO_SN = { a0: -2.0, a1: 1.68, rong: a => a < 0.55 ? 0.1 : a < 1.0 ? 0.1 + 0.16 * (a - 0.55) / 0.45 : 0.26 * Math.max(0, (1.68 - a) / 0.68) ** 0.7,
+  noi: a => a < 0.9 ? 0.008 : 0.008 + 0.016 * Math.min(1, (a - 0.9) / 0.25) };
+function moSieuNhan(R) {
+  return luoi(R, 4, (i, j) => {
+    const a = MO_SN.a1 - (MO_SN.a1 - MO_SN.a0) * i / (R - 1), w = (j - 2) / 2;
+    const bien = Math.abs(w) > 0.99, off = (bien ? 0.15 : Math.abs(w) > 0.4 ? 0.85 : 1) * MO_SN.noi(a) * (i === R - 1 ? 0.3 : 1);
+    return [...diemMoMu(a, w * MO_SN.rong(a), off), j / 4, i / (R - 1)];
   }, true);
 }
 
@@ -327,7 +334,13 @@ const THAN = {
   nam: [[1.548, 0.052, 0.046, -0.006], [1.532, 0.1, 0.076, -0.01], [1.508, 0.15, 0.094, -0.01], [1.478, 0.183, 0.108, -0.006], [1.442, 0.2, 0.118, -0.002], [1.4, 0.205, 0.122, 0], [1.31, 0.196, 0.126, 0.006], [1.19, 0.182, 0.118, 0.003], [1.07, 0.172, 0.112, 0], [0.98, 0.176, 0.115, 0], [0.9, 0.18, 0.118, 0], [0.86, 0.182, 0.12, 0]],
   nu: [[1.548, 0.05, 0.044, -0.006], [1.532, 0.094, 0.072, -0.01], [1.508, 0.14, 0.088, -0.01], [1.478, 0.17, 0.1, -0.006], [1.442, 0.186, 0.11, -0.002], [1.4, 0.19, 0.118, 0], [1.31, 0.18, 0.136, 0.013], [1.22, 0.164, 0.12, 0.006], [1.09, 0.148, 0.104, 0], [0.99, 0.166, 0.112, 0], [0.9, 0.184, 0.12, 0], [0.86, 0.188, 0.122, 0]],
 };
-function hangThan(nu, beo, r) {
+// Siêu Nhân Hồng (người đóng là một anh mập): vai tròn, ngực xệ, bụng to nhô ra trước, hông và mông đầy.
+// Bề ngang giữ ~0,42 m để cánh tay (hơi dang) vẫn lọt cửa / hành lang (tổng ~0,62 m); bụng phình chủ yếu ra trước.
+const THAN_SN = [[1.55, 0.066, 0.06, -0.006], [1.534, 0.116, 0.09, -0.008], [1.51, 0.152, 0.108, -0.006], [1.48, 0.178, 0.124, -0.002],
+  [1.445, 0.194, 0.134, 0.002], [1.4, 0.2, 0.144, 0.008], [1.33, 0.206, 0.16, 0.02], [1.25, 0.214, 0.178, 0.042], [1.16, 0.218, 0.194, 0.064],
+  [1.07, 0.223, 0.2, 0.074], [1.0, 0.223, 0.182, 0.056], [0.95, 0.222, 0.158, 0.03], [0.9, 0.228, 0.148, 0.012], [0.86, 0.23, 0.146, 0.01]];
+function hangThan(nu, beo, r, sieu = false) {
+  if (sieu) return THAN_SN;
   const k = (0.21 * r - 0.005) / (nu ? 0.19 : 0.205), kz = 0.6 + 0.4 * k;
   return THAN[nu ? "nu" : "nam"].map(([y, rx, rz, z]) => {
     if (y > 1.52) return [y, rx, rz, z];
@@ -359,6 +372,32 @@ function vongThan(rows, y, h, them, seg = 16) {
   const [, rx, rz, z] = taiY(rows, y);
   return loft([[y + h / 2, rx + them * 0.6, rz + them * 0.6, z], [y + h / 2 - 0.004, rx + them, rz + them, z], [y - h / 2 + 0.004, rx + them, rz + them, z], [y - h / 2, rx + them * 0.6, rz + them * 0.6, z]], seg);
 }
+// miếng ôm thân theo góc quanh thân (a = 0 trước, PI sau, +PI/2 bên +x): f(i, j) -> [y, a]; đẩy ra theo pháp tuyến
+// của tiết diện elip (không chỉ theo z như dan) nên ôm được cả hai bên sườn và đỉnh vai mà không đè lên mặt thân
+function phuThan(rows, R, C, f, off, lat = false) {
+  return luoi(R, C, (i, j) => {
+    const [y, a, o = off] = f(i, j), [, rx, rz, z] = taiY(rows, y), s = Math.sin(a), c = Math.cos(a);
+    const nx = s / rx, nz = c / rz, l = Math.hypot(nx, nz) || 1;
+    return [rx * s + nx / l * o, y, z + rz * c + nz / l * o, j / C, 1 - i / (R - 1)];
+  }, lat);
+}
+// các độ cao cho hàng của miếng ôm thân từ yTren xuống yDuoi: chia đều n khoảng, thêm mọi hàng dáng thân nằm giữa
+// (miếng đi qua đúng chỗ gãy của thân, không bị thân đâm xuyên ở giữa hai hàng)
+function hangPhu(rows, yTren, yDuoi, n) {
+  const ys = []; for (let i = 0; i <= n; i++) ys.push(yTren + (yDuoi - yTren) * i / n);
+  for (const [y] of rows) if (y < yTren - 0.004 && y > yDuoi + 0.004 && !ys.some(v => Math.abs(v - y) < 0.004)) ys.push(y);
+  return ys.sort((a, b) => b - a);
+}
+// góc (quanh thân) của điểm có hoành độ x ở độ cao y, mặt trước
+const gocThan = (rows, x, y) => Math.asin(Math.max(-1, Math.min(1, x / taiY(rows, y)[1])));
+// hình thoi ôm ống tay / chân (trục -y): r(y) bán kính ống, tâm góc th0 (0 = trước +z, PI/2 = bên +x), nửa góc rộng dth,
+// từ y0 xuống y1; hinh(v) độ rộng theo chiều cao (mặc định hình thoi đủ, v 0..1)
+function thoiOng(r, y0, y1, th0, dth, off, hinh = v => 1 - Math.abs(2 * v - 1), R = 7, C = 4) {
+  return luoi(R, C, (i, j) => {
+    const v = i / (R - 1), y = y0 + (y1 - y0) * v, th = th0 + dth * hinh(v) * (2 * j / C - 1), rr = r(y) + off;
+    return [Math.sin(th) * rr, y, Math.cos(th) * rr, j / C, 1 - v];
+  });
+}
 
 // ---------- Giày ----------
 const geoGiay = seg => nho("giay" + seg, () => {
@@ -374,6 +413,7 @@ function taoGiay(k, kieu, mau, da, tho) {
   switch (kieu) {
     case "caoGot": than(0.045, 0.045, 0.11, -0.43); de(M, 0.047, 0.11, -0.45, 0.01); k.add(mesh(ong(0.014, 0.01, 0.05, 6, 1), M, 0, -0.41, -0.045)); break;
     case "depLe": de(M, 0.055, 0.135, -0.452, 0.012); than(0.042, 0.032, 0.11, -0.43, vm(da)); k.add(cau(M, 0.046, 0.012, 0.025, 0, -0.418, 0.08, s)); break;
+    case "ung": than(0.066, 0.062, 0.14, -0.416); de(vm(0xd9d6d0), 0.068, 0.143, -0.448, 0.014); break; // ủng siêu nhân
     case "sneaker": case "converse": than(0.06, 0.058, 0.135, -0.418); de(vm(0xf6f6f2), 0.064, 0.14, -0.448, 0.016); if (kieu === "converse") k.add(cau(vm(0xf6f6f2), 0.045, 0.025, 0.03, 0, -0.432, 0.165, s)); break;
     case "bupBe": than(0.047, 0.04, 0.12, -0.432); de(vm(toiMau(mau, 0.7)), 0.049, 0.122, -0.452, 0.009); k.add(cau(vm(da), 0.036, 0.02, 0.05, 0, -0.41, 0.03, s)); break;
     default: than(0.056, 0.052, 0.135, -0.42); de(vm(0x0d0b0a), 0.058, 0.137, -0.452, 0.012);
@@ -457,9 +497,9 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
   const kieuAo = ao.kieu, kieuQ = q.kieu;
   const VDa = vm(da), VAo = vlAo(ao.vai, ao.mau);
   const giay = nh.giay || ["tay", 0x231f1c];
-  const seg = tho ? 5 : 8, segT = tho ? 8 : 14, sc = tho ? 5 : 8;
-  const sieu = nh.sieuNhan;
-  const rows = hangThan(nh.nu, nh.beo, r);
+  const seg = tho ? 5 : nh.sieuNhan ? 10 : 8, segT = tho ? 8 : nh.sieuNhan ? 16 : 14, sc = tho ? 5 : 8;
+  const sieu = nh.sieuNhan, HONG_SN = 0xf26fa6, TRANG_SN = 0xf6f6f2;
+  const rows = hangThan(nh.nu, nh.beo, r, sieu);
   const y0 = 0.9, coY = 1.49;
   const vay = kieuAo === "vay_lien" || kieuAo === "vay_dai";
   const bo = !vay && (ao.soVin || kieuAo === "dong_phuc" || kieuAo === "vest" || kieuAo === "vest_nu" || kieuAo === "yem" || sieu); // sơ vin
@@ -469,8 +509,8 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
   // ----- Chân: đùi (nhóm ở hông) -> gối -> cẳng chân + giày -----
   const goi = [];
   const chan = side => {
-    const k = new THREE.Group(); k.position.set(side * 0.1 * r, 0.9, 0);
-    const rd = (nh.beo ? 0.095 : nh.nu || nh.gay ? 0.078 : 0.085), rg = rd * 0.72;
+    const k = new THREE.Group(); k.position.set(side * (sieu ? 0.12 : 0.1 * r), 0.9, 0);
+    const rd = sieu ? 0.112 : (nh.beo ? 0.095 : nh.nu || nh.gay ? 0.078 : 0.085), rg = rd * 0.72;
     const daChan = kieuQ === "da" || kieuQ === "vay_but";
     const mDui = daChan ? VDa : vlQuan;
     if (kieuQ === "short") {
@@ -482,10 +522,21 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
     if (kieuQ === "tuihop") k.add(cau(vm(toiMau(q.mau, 0.85)), 0.022, 0.07, 0.06, side * (rd + 0.005), -0.27, 0, sc));
     const kn = new THREE.Group(); kn.position.y = -0.44; k.add(kn); goi.push(kn);
     const loe = kieuQ === "loe";
-    const r2 = daGoi ? 0.042 : loe ? 0.075 : kieuQ === "jogger" ? 0.044 : 0.05;
-    kn.add(mesh(ong(rg * 0.97, r2, 0.36, seg, [2, 1]), daGoi ? VDa : mDui));
+    const r2 = daGoi ? 0.042 : loe ? 0.075 : kieuQ === "jogger" ? 0.044 : sieu ? 0.056 : 0.05;
+    kn.add(mesh(ong(rg * 0.97, r2, 0.36, seg, [2, 1], 1, sieu ? 0.082 : null), daGoi ? VDa : mDui)); // siêu nhân: bắp chân tròn
     if (kieuQ === "jogger") kn.add(mesh(ong(0.05, 0.05, 0.035, seg, 1), vm(toiMau(q.mau, 0.7)), 0, -0.33, 0));
-    if (sieu) kn.add(mesh(ong(0.07, 0.065, 0.27, seg, 1), vm(0xf6f6f2), 0, -0.13, 0)); // ủng trắng
+    if (sieu) {
+      // ủng trắng cao tới giữa bắp chân, cổ ủng khoét hình chữ V hồng ở phía trước (nửa dưới hình thoi)
+      const UT = 0.088, UD = 0.068, UL = 0.27, Y0 = -0.13;
+      kn.add(mesh(ong(UT, UD, UL, seg, 1), vm(TRANG_SN), 0, Y0, 0));
+      const rU = y => UT + (UD - UT) * (Y0 - y) / UL;
+      kn.add(mesh(nho("snUngV", () => thoiOng(rU, Y0 + 0.002, Y0 - 0.09, 0, 0.42, 0.003, v => 1 - v, 5, 4)), vm(HONG_SN)));
+      if (side > 0) { // bao súng trắng đeo bên hông, áp mặt trước - ngoài đùi (đi theo đùi khi bước / ngồi)
+        const a = 0.75, rr = rd + (rg - rd) * 0.12 / 0.44 + 0.02;
+        const bao = cau(vm(0xeeebe4), 0.042, 0.07, 0.02, Math.sin(a) * rr, -0.125, Math.cos(a) * rr, 8); bao.rotation.y = a; k.add(bao);
+        const nap = cau(vm(0xd9d6d0), 0.044, 0.016, 0.02, Math.sin(a) * (rr + 0.004), -0.066, Math.cos(a) * (rr + 0.004), 6); nap.rotation.y = a; k.add(nap);
+      }
+    }
     taoGiay(kn, giay[0], giay[1], da, tho);
     return k;
   };
@@ -513,7 +564,8 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
   }
   const truoc = (x, y) => matThan(rows, x, y);
   // cổ
-  than.add(mesh(ong(0.05, 0.055, 0.17, seg, 1), VDa, 0, 1.64, -0.01));
+  if (sieu) than.add(mesh(ong(0.068, 0.074, 0.17, seg, 1), vm(TRANG_SN), 0, 1.64, -0.008)); // cổ lọ trắng, cổ to
+  else than.add(mesh(ong(0.05, 0.055, 0.17, seg, 1), VDa, 0, 1.64, -0.01));
   const coVien = (mau, h = 0.014) => than.add(vong(vm(mau), 0.062 * (nh.beo ? 1.08 : 1), h, 0, coY + 0.035, -0.006, PI / 2 + 0.12, tho ? 8 : 12, tho ? 3 : 4));
   if (["somi", "dong_phuc", "polo"].includes(kieuAo)) {
     const mauCo = toiMau(ao.mau, 0.93);
@@ -601,12 +653,37 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
     for (const sd of [-1, 1]) { const c = cau(M, 0.026, 0.04, 0.036, sd * 0.088, coY + 0.02, 0.035, sc); c.rotation.y = sd * 0.5; c.rotation.x = 0.5; than.add(c); }
   }
   if (sieu) {
-    // Siêu Nhân Hồng: kẻ trắng chéo ngực, thắt lưng trắng khoá vàng, áo choàng ngắn
-    than.add(mesh(dan(rows, 1.46, 1.02, (y, f) => { const c = 0.13 - f * 0.26; return [c - 0.03, c + 0.03]; }, 0.004, false, 7, 2), vm(0xf6f6f2)));
-    than.add(mesh(vongThan(rows, 0.985, 0.05, 0.012), vm(0xf6f6f2)));
-    than.add(cau(vm(0xe8c547), 0.04, 0.03, 0.01, 0, 0.985, truoc(0, 0.985) + 0.02, 8));
-    const ch = loft([[1.47, 0.16, 0.025, -0.13], [1.4, 0.21, 0.03, -0.15], [1.1, 0.25, 0.035, -0.19], [0.87, 0.28, 0.035, -0.22], [0.86, 0.27, 0.02, -0.22]], 14);
-    than.add(mesh(ch, vm(0xd94d8a)));
+    // Siêu Nhân Hồng (bộ Pink Ranger): yếm trắng phủ ngực trên, hai vai và lưng trên, mép dưới hình chữ V nhọn xuống
+    // giữa ngực; trên yếm là hàng hình thoi hồng (thoi lớn giữa ngực từ cổ áo xuống, thoi nhỏ trước hai vai, thoi giữa lưng);
+    // thắt lưng trắng ôm dưới bụng, khoá tròn bạc mặt đỏ viền vàng. Các miếng đẩy ra theo pháp tuyến thân, không đè mặt.
+    const T = vm(TRANG_SN), H = vm(HONG_SN), V0 = 1.195, DOC = 0.58; // đỉnh chữ V và độ dốc mép dưới yếm
+    const hangY = [1.552, 1.534, 1.51, 1.48, 1.445, 1.4, 1.37, 1.345, 1.32, 1.295, 1.27, 1.25, 1.23, 1.21, V0];
+    for (const sau of [false, true]) {
+      than.add(mesh(nho("snYem" + sau, () => phuThan(rows, hangY.length, 10, (i, j) => {
+        const y = hangY[i], [, rx] = taiY(rows, y), am = Math.asin(Math.min(1, (y - V0) / DOC / rx));
+        const a = Math.max(-am, Math.min(am, PI / 2 * (2 * j / 10 - 1))); // cột cố định, cắt theo mép chữ V
+        return [y, sau ? PI - a : a];
+      }, 0.004, sau)), T));
+      // thoi lớn giữa ngực / giữa lưng
+      const yT = hangPhu(rows, 1.505, 1.225, 8);
+      than.add(mesh(nho("snThoi" + sau, () => phuThan(rows, yT.length, 4, (i, j) => {
+        const y = yT[i], v = (1.505 - y) / 0.28, x = 0.105 * (1 - Math.abs(2 * v - 1)) * (2 * j / 4 - 1), a = gocThan(rows, x, y);
+        return [y, sau ? PI - a : a];
+      }, 0.0075, sau)), H));
+    }
+    const yV = hangPhu(rows, 1.47, 1.33, 6);
+    for (const sd of [-1, 1]) than.add(mesh(nho("snThoiVai" + sd, () => phuThan(rows, yV.length, 4, (i, j) => { // thoi trước vai
+      const y = yV[i], v = (1.47 - y) / 0.14, x = sd * 0.162 + 0.045 * (1 - Math.abs(2 * v - 1)) * (2 * j / 4 - 1);
+      return [y, gocThan(rows, x, y)];
+    }, 0.0075)), H));
+    // thắt lưng ôm theo thân (dưới bụng): mép trên áp sát, mép dưới chui vào trong vạt áo
+    const yL = [[1.002, 0.004], [0.997, 0.011], [0.975, 0.012], [0.952, 0.013], [0.946, 0.006]];
+    than.add(mesh(nho("snLung", () => phuThan(rows, yL.length, 20, (i, j) => [yL[i][0], -PI + 2 * PI * j / 20, yL[i][1]], 0)), T));
+    // khoá thắt lưng: đĩa tròn bạc, mặt đỏ, viền vàng, nghiêng theo dốc bụng
+    const yK = 0.975, dz = (truoc(0, yK + 0.01) - truoc(0, yK - 0.01)) / 0.02, khoa = new THREE.Group();
+    khoa.position.set(0, yK, truoc(0, yK) + 0.014); khoa.rotation.x = Math.atan(dz); than.add(khoa);
+    const dia = (r, h, mau, z) => { const m = mesh(nho(`snDia${r}`, () => new THREE.CylinderGeometry(r, r * 0.92, h, 12, 1)), vm(mau), 0, 0, z); m.rotation.x = PI / 2; m.scale.z = 0.86; return m; };
+    khoa.add(dia(0.056, 0.014, 0xc9ced8, 0), dia(0.04, 0.008, 0xd8b45a, 0.008), dia(0.03, 0.006, 0xb3202a, 0.012));
   }
   g.add(than);
 
@@ -624,26 +701,43 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
     vayDong.add(mesh(loft([[0.025, rx + 0.006, rz + 0.006, z], [-0.04, rx + 0.016, rz + 0.016, z], [-dai * 0.5, (rx + mo) / 2 + 0.01, (rz + mo * sau) / 2 + 0.01, 0], [-dai + 0.02, mo, mo * sau, 0], [-dai, mo - 0.01, mo * sau - 0.01, 0], [-dai + 0.015, mo - 0.025, mo * sau - 0.025, 0]], segT), VAo));
     g.add(vayDong);
   }
+  if (sieu) { // vạt áo ngắn xoè quanh hông (dưới thắt lưng), viền trắng ở gấu; ngồi thì vạt trước nằm theo đùi
+    vayDong = new THREE.Group(); vayDong.position.y = 0.955; vayDong.userData.ngoi = -0.45;
+    const [, rx, rz, z] = taiY(rows, 0.955);
+    vayDong.add(mesh(loft([[0.012, rx + 0.004, rz + 0.004, z], [-0.016, rx + 0.014, rz + 0.014, z], [-0.06, rx + 0.026, rz + 0.024, z * 0.7], [-0.105, rx + 0.04, rz + 0.036, z * 0.45]], segT), vm(HONG_SN)));
+    vayDong.add(mesh(loft([[-0.105, rx + 0.04, rz + 0.036, z * 0.45], [-0.132, rx + 0.05, rz + 0.046, z * 0.35], [-0.138, rx + 0.046, rz + 0.042, z * 0.35], [-0.133, rx + 0.03, rz + 0.026, z * 0.35]], segT), vm(TRANG_SN)));
+    g.add(vayDong);
+  }
 
   // ----- Tay -----
   const vaiY = 1.43, vaiX = taiY(rows, 1.42)[1] + 0.022;
   const ngan = kieuAo === "thun" || kieuAo === "polo" || kieuAo === "yem" || kieuAo === "vay_lien";
   const mTay = kieuAo === "vay_dai" ? vm(ao.khoac || ao.mau) : VAo;
-  const ra = (nh.beo ? 0.066 : nh.nu || nh.gay ? 0.05 : 0.056), rb = ra * 0.8, rc = ra * 0.66;
+  const ra = sieu ? 0.072 : (nh.beo ? 0.066 : nh.nu || nh.gay ? 0.05 : 0.056), rb = ra * (sieu ? 0.8 : 0.8), rc = ra * (sieu ? 0.65 : 0.66);
   const khung = [];
   const tay = side => {
-    const t = new THREE.Group(); t.position.set(side * vaiX, vaiY, 0);
+    const t = new THREE.Group(); t.position.set(side * vaiX, vaiY, sieu ? -0.03 : 0); // siêu nhân: vai hơi lùi sau, bụng nhô trước tay
     const bu = new THREE.Group(), xoay = new THREE.Group(), tren = new THREE.Group(), kh = new THREE.Group();
     t.add(bu); bu.add(xoay); xoay.add(tren); kh.position.y = -TAY_A; tren.add(kh);
     // đầu tròn của cánh tay trên / cẳng tay cùng tâm ở vai và khuỷu: gập tới đâu khớp vẫn liền
     // (đỉnh vai hạ thấp một chút cho liền với dốc vai của thân)
-    if (ngan && !sieu) { tren.add(mesh(ong(ra * 0.92, rb, TAY_A - 0.02, seg, 2), VDa, 0, -0.02, 0)); tren.add(mesh(ong(ra + 0.008, ra + 0.006, 0.13, seg, [2, 1]), mTay, 0, -0.02, 0)); }
-    else tren.add(mesh(ong(ra, rb, TAY_A - 0.02, seg, 2), sieu ? vm(0xf26fa6) : mTay, 0, -0.02, 0));
-    const mCang = sieu ? vm(0xf6f6f2) : ngan ? VDa : mTay;
-    kh.add(mesh(ong(rb * 0.97, rc, 0.24, seg, [2, 1]), mCang));
+    if (sieu) {
+      // tay áo hồng; đầu vai bọc trắng (nối với yếm), hình thoi hồng phía ngoài; găng trắng cổ loe tới giữa cẳng tay,
+      // trên mu cổ găng một hình thoi hồng
+      tren.add(mesh(ong(ra, rb, TAY_A - 0.02, seg, 2), vm(HONG_SN), 0, -0.02, 0));
+      const V1 = ra + 0.007, V2 = ra * 0.95 + 0.007, VL = 0.1;
+      tren.add(mesh(ong(V1, V2, VL, seg, [2, 1]), vm(TRANG_SN), 0, -0.02, 0));
+      tren.add(mesh(nho("snThoiTay" + side, () => thoiOng(y => V1 + (V2 - V1) * (-0.02 - y) / VL, -0.024, -0.118, side * PI / 2, 0.5, 0.003)), vm(HONG_SN)));
+      kh.add(mesh(ong(rb * 0.97, rc, 0.24, seg, [2, 1]), vm(HONG_SN)));
+      const G1 = rb * 0.97 + (rc - rb * 0.97) * 0.1 / 0.24 + 0.014, G2 = rc + 0.006, GL = 0.162;
+      kh.add(mesh(ong(G1, G2, GL, seg, [1, 1]), vm(TRANG_SN), 0, -0.1, 0));
+      kh.add(mesh(nho("snThoiGang" + side, () => thoiOng(y => G1 + (G2 - G1) * (-0.1 - y) / GL, -0.12, -0.235, side * PI / 2, 0.55, 0.003)), vm(HONG_SN)));
+    } else if (ngan) { tren.add(mesh(ong(ra * 0.92, rb, TAY_A - 0.02, seg, 2), VDa, 0, -0.02, 0)); tren.add(mesh(ong(ra + 0.008, ra + 0.006, 0.13, seg, [2, 1]), mTay, 0, -0.02, 0)); }
+    else tren.add(mesh(ong(ra, rb, TAY_A - 0.02, seg, 2), mTay, 0, -0.02, 0));
+    if (!sieu) kh.add(mesh(ong(rb * 0.97, rc, 0.24, seg, [2, 1]), ngan ? VDa : mTay));
     if (!ngan && !sieu) kh.add(mesh(ong(rc + 0.006, rc + 0.006, 0.035, seg, [1, 1]), kieuAo === "vest" || kieuAo === "vest_nu" ? vm(ao.trong ?? 0xf6f6f2) : vm(toiMau(ao.mau, 0.8)), 0, -0.21, 0));
     // bàn tay: lòng bàn tay quay vào thân, ngón cái phía trước
-    const VB = sieu ? vm(0xf6f6f2) : VDa, kb = nh.nu ? 0.88 : 1;
+    const VB = sieu ? vm(TRANG_SN) : VDa, kb = nh.nu ? 0.88 : sieu ? 1.08 : 1;
     const ban = cau(VB, 0.025 * kb, 0.06 * kb, 0.042 * kb, 0, -0.305, 0.008, sc); ban.rotation.x = -0.15; kh.add(ban);
     const cai = cau(VB, 0.012, 0.03, 0.012, -side * 0.008, -0.29, 0.036, 6); cai.rotation.x = -0.6; cai.rotation.z = side * 0.3; kh.add(cai);
     if (side === -1 && pk.includes("dongHoVang")) kh.add(mesh(ong(rc + 0.008, rc + 0.008, 0.02, seg, 1), vm(0xd8b45a), 0, -0.235, 0));
@@ -689,15 +783,21 @@ export function dungNguoiMoi(nh, matTruoc, { tho = false } = {}) {
   if (sieu) {
     // mũ bảo hiểm siêu nhân: vỏ tròn hồng; kính đen cong ôm trọn mặt trước (mép kính chìm vào vỏ mũ, ở giữa hạ xuống
     // thành mỏ nhọn), vệt sáng trên kính, tấm che miệng bạc, sọc trắng nổi chạy dọc giữa đỉnh mũ ra sau gáy
-    const HONG = vm(0xf26fa6);
+    // (mũ Pink Ranger): vỏ hồng tròn; kính đen hình trái tim; gờ nổi chạy dọc đỉnh mũ từ gáy xuống trán thành mỏ nhọn
+    // cắm vào giữa kính (hai mắt nhỏ xanh ngọc trên mỏ); tấm che miệng bạc dưới kính; vệt sáng trên kính
+    const HONG = vm(HONG_SN);
     const m = mesh(geoDau(tho), HONG); m.scale.set(...MU_SN); dau.add(m);
-    dau.add(mesh(nho("snKinh" + tho, () => kinhSieuNhan(tho ? 14 : 26, tho ? 6 : 9)), vm(0x1b1d24)));
-    if (!tho) dau.add(mesh(nho("snBong", () => vaMu(4, 8, (i, j) => [-0.78 + 0.42 * j / 7, 0.052 - 0.014 * i / 3 - 0.012 * j / 7, 0.0112 + 0.0015 * Math.sin(PI * i / 3) * Math.sin(PI * j / 7)])), vm(0x8c95aa)));
-    dau.add(mesh(nho("snMieng" + tho, () => vaMu(5, tho ? 8 : 14, (i, j, R, C) => {
-      const v = i / (R - 1), u = j / (C - 1), e = Math.abs(2 * u - 1), bo = Math.sqrt(Math.max(0, 1 - e ** 6));
-      return [(u - 0.5) * 0.9, -0.108 - 0.05 * v * (0.35 + 0.65 * bo), -0.002 + 0.008 * Math.min(1, 5.6 * v * (1 - v)) * Math.min(1, 10 * u * (1 - u))];
+    dau.add(mesh(nho("snKinh" + tho, () => kinhSieuNhan(tho ? 14 : 22, tho ? 6 : 8)), vm(0x16181e)));
+    if (!tho) dau.add(mesh(nho("snBong", () => vaMu(4, 8, (i, j) => [-0.68 + 0.3 * j / 7, 0.054 - 0.01 * i / 3 - 0.006 * j / 7, 0.0118 + 0.0012 * Math.sin(PI * i / 3) * Math.sin(PI * j / 7)])), vm(0x7d879c)));
+    dau.add(mesh(nho("snMieng" + tho, () => vaMu(5, tho ? 8 : 11, (i, j, R, C) => {
+      const v = i / (R - 1), u = j / (C - 1), e = Math.abs(2 * u - 1), bo = Math.sqrt(Math.max(0, 1 - e ** 5));
+      return [(u - 0.5) * 1.0, -0.08 - 0.068 * v * (0.3 + 0.7 * bo), -0.002 + 0.009 * Math.min(1, 5 * v * (1 - v)) * Math.min(1, 9 * u * (1 - u))];
     })), vm(0xc9ced8)));
-    dau.add(mesh(nho("snSoc" + tho, () => socSieuNhan(tho ? 10 : 20)), vm(0xf6f6f2)));
+    dau.add(mesh(nho("snMo" + tho, () => moSieuNhan(tho ? 10 : 18)), HONG));
+    if (!tho) for (const sd of [-1, 1]) { // hai mắt nhỏ trên mỏ
+      const p = diemMoMu(1.3, sd * 0.07, MO_SN.noi(1.3) + 0.001), e = cau(vm(0x58b8b0), 0.0045, 0.009, 0.003, ...p, 6);
+      e.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), new THREE.Vector3(...diemMoMu(1.3, sd * 0.07, 0.06)).sub(new THREE.Vector3(...p)).normalize()); dau.add(e);
+    }
     dau.add(mesh(vaDau(-PI, PI, -0.19, -0.14, 0.03, 3, 18), vm(0xd94d8a)));           // viền cổ mũ
   } else {
     matMang = [matTruoc];
@@ -805,13 +905,20 @@ export function taoChoMoi() {
 }
 
 // ---------- Đôi tay góc nhìn thứ nhất ----------
-export function dungTayNhin(ao, da, co, nu) {
+export function dungTayNhin(ao, da, co, nu, sieu = false) {
   const mot = ben => {
     const t = new THREE.Group();
     const k = new THREE.Group(); k.rotation.x = PI / 2; t.add(k); // trục -y của khối -> hướng -z (ra trước mặt)
-    k.add(mesh(ong(0.036, 0.031, 0.27, 12, 1), vm(ao), 0, 0.02, 0));
-    k.add(mesh(ong(0.034, 0.034, 0.03, 12, 1), vm(co), 0, -0.26, 0));
-    const VB = vm(da), kb = nu ? 0.9 : 1;
+    if (sieu) { // Siêu Nhân Hồng: ống tay hồng to, găng trắng cổ loe, hình thoi hồng trên mu cổ găng (phía trên: -z cục bộ)
+      k.add(mesh(ong(0.043, 0.037, 0.27, 12, 1), vm(ao), 0, 0.02, 0));
+      const G1 = 0.049, G2 = 0.04, GL = 0.095;
+      k.add(mesh(ong(G1, G2, GL, 12, [1, 1]), vm(co), 0, -0.19, 0));
+      k.add(mesh(nho("snThoiGangNhin", () => thoiOng(y => G1 + (G2 - G1) * (-0.19 - y) / GL, -0.198, -0.276, PI, 0.6, 0.002)), vm(0xf26fa6)));
+    } else {
+      k.add(mesh(ong(0.036, 0.031, 0.27, 12, 1), vm(ao), 0, 0.02, 0));
+      k.add(mesh(ong(0.034, 0.034, 0.03, 12, 1), vm(co), 0, -0.26, 0));
+    }
+    const VB = vm(da), kb = nu ? 0.9 : sieu ? 1.08 : 1;
     // bàn tay úp xuống (mu bàn tay lên trên), ngón hơi cong
     k.add(cau(VB, 0.038 * kb, 0.055 * kb, 0.021 * kb, 0, -0.33, 0.0, 12));
     const ngon = cau(VB, 0.035 * kb, 0.045 * kb, 0.017 * kb, 0, -0.39, 0.012, 12); ngon.rotation.x = 0.35; k.add(ngon);
