@@ -14,7 +14,8 @@ function taoMeoMoi(mau, soc) {
   const g = new THREE.Group();
   const than = new THREE.Group(); g.add(than);
   than.add(elip(mau, 0.095, 0.09, 0.21, 0, 0.27, 0));
-  if (soc) for (let i = 0; i < 4; i++) than.add(elip(soc, 0.085, 0.03, 0.028, 0, 0.335, -0.14 + i * 0.09, 8));
+  // sọc vằn: vòng mỏng ôm quanh thân (co theo tiết diện thân tại chỗ đó), không nhô thành u trên lưng
+  if (soc) for (let i = 0; i < 4; i++) { const z = -0.14 + i * 0.09, k = Math.sqrt(1 - (z / 0.21) ** 2); than.add(elip(soc, 0.095 * k + 0.004, 0.09 * k + 0.004, 0.024, 0, 0.27, z, 10)); }
   than.add(elip(mau, 0.06, 0.07, 0.06, 0, 0.32, 0.17, 8)); // ngực
   const dau = new THREE.Group(); dau.position.set(0, 0.38, 0.25); than.add(dau);
   dau.add(elip(mau, 0.085, 0.075, 0.075));

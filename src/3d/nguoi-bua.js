@@ -3,7 +3,7 @@
 // người cầm bảng troll, tượng người bạc. Toàn bộ là nhân vật nhại, không dùng logo hay tên thật.
 import * as THREE from "three";
 import { vl, taoNguoi, hinhNguoiNgauNhien, gopNhom, kieuMoi } from "./nhan-vat-3d.js";
-import { vongEo, danThan, matThanNv, vongDau, matNa, vaMat, trumDau, hinhCau, hinhOng, tamVai, vlMuot } from "./hinh-nguoi.js";
+import { vongEo, danThan, matThanNv, vongDau, matNa, vaMat, trumDau, hinhCau, hinhOng, tamVai, vlMuot, matTruocDau } from "./hinh-nguoi.js";
 
 const hop = (w, h, d, mat, x = 0, y = 0, z = 0) => {
   const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mat === "number" ? vl(mat) : mat);
@@ -80,8 +80,10 @@ function sieuAnhHung(rnd) {
   if (nv.thanHinh) { // người kiểu mới: quần sịp, thắt lưng ôm hông; huy hiệu áp ngực; mặt nạ ôm mặt
     vongEo(nv, k.sip, 0.89, 0.15, 0.016); vongEo(nv, 0xe8c547, 0.985, 0.045, 0.02);
     huy.position.set(0, 1.27, matThanNv(nv, 0, 1.27) + 0.01); g.add(huy);
-    if (k.matNa) { trumDau(nv, k.matNa); for (const x of [-1, 1]) { const m = hinhCau(0xf6f6f2, 0.034, 0.024, 0.01, x * 0.06, 0.025, 0.158); m.rotation.z = x * -0.4; nv.dau.add(m); } }
-    else matNa(nv, 0x1c1c1f);
+    // mắt trắng trên mặt nạ (đặt sát mặt nạ theo độ cong của mặt; mặt nạ đen che mắt cũng có lỗ mắt trắng)
+    const mat = (x, y, day, nghieng) => { const m = hinhCau(0xf6f6f2, 0.032, 0.022, 0.008, x, y, day); m.rotation.set(0, Math.sign(x) * 0.36, Math.sign(x) * nghieng); nv.dau.add(m); };
+    if (k.matNa) { trumDau(nv, k.matNa); for (const x of [-0.06, 0.06]) mat(x, 0.025, matTruocDau(x, 0.025) * 1.08 + 0.004, -0.4); }
+    else { matNa(nv, 0x1c1c1f); for (const x of [-0.056, 0.056]) mat(x, 0.016, matTruocDau(x, 0.016) + 0.008, -0.15); }
     if (k.tai) { nv.dau.add(non(0.035, 0.11, 0x1c1c1f, -0.085, 0.2, 0)); nv.dau.add(non(0.035, 0.11, 0x1c1c1f, 0.085, 0.2, 0)); }
   } else {
   g.add(hop(k.beo ? 0.5 : 0.42, 0.16, k.beo ? 0.32 : 0.26, k.sip, 0, 0.9, 0));            // quần sịp mặc ngoài

@@ -143,7 +143,7 @@ export class GiaoThong {
       nv.group.position.set(c.x, c.ngoi ? -0.42 : 0, c.z); nv.group.rotation.y = c.huong;
       if (c.ngoi && "ngoi" in nv) {
         nv.ngoi = "nghi"; // ngồi thật trên ghế nhựa: co chân, tay để lên đùi
-        if (coLy) { const ly = new THREE.Mesh(GEO_LY, VL_LY[c.loai === "caPhe" ? 0 : 1]); ly.position.set(0, -0.7, 0.07); nv.tayP.add(ly); this._ly.push(ly); }
+        if (coLy) { const ly = new THREE.Mesh(GEO_LY, VL_LY[c.loai === "caPhe" ? 0 : 1]); ly.position.set(0, -0.7, 0.07); ly.userData.dung = true; nv.tayP.add(ly); this._ly.push(ly); }
       }
       // dungYen vẫn là danh sách nhân vật (game3d đọc nv.group); giờ giấc, chỗ ngồi gắn thêm vào _cho
       nv._cho = { gio: c.gio || [[0, 24]], x: c.x, z: c.z, an: false, chiuMua: !!c.mai };

@@ -309,7 +309,7 @@ export class SanKhau {
     const nh = hinhNguoiNgauNhien(rnd, { nu: true }); nh.toc = ["dai_song", 0x1e1a17]; nh.ao = { kieu: "somi", mau: 0xf6efe0 }; nh.pk = [];
     const mai = taoNguoi(null, nh);
     const ly = new THREE.Group(); ly.add(new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.04, 0.13, 8), new THREE.MeshLambertMaterial({ color: 0xc89ad8, transparent: true, opacity: 0.85 })), new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.2, 4), vl(0xf26fa6)));
-    ly.children[1].position.set(0.02, 0.1, 0); ly.position.set(0, -0.7, 0.06); mai.tayP.add(ly); mai.tayP.userData.coDinh = true; mai.tayP.rotation.x = -0.9;
+    ly.children[1].position.set(0.02, 0.1, 0); ly.position.set(0, -0.7, 0.06); ly.userData.dung = true; mai.tayP.add(ly); mai.tayP.userData.coDinh = true; mai.tayP.rotation.x = -0.9;
     mai.group.position.set(SK.tam - 9.4, 0, SK.rao + 0.9); mai.group.rotation.y = Math.PI + 0.25; this.khanGia.add(mai.group);
     this.nguoiXem.push({ nv: mai, loai: "mai", pha: 0, nhay: 0.3 });
   }
