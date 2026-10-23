@@ -218,7 +218,10 @@ export class SanKhau {
       const v = document.createElement("video");
       v.playsInline = true; v.preload = "none"; v.muted = true; v.defaultMuted = true; v.volume = 0; v.crossOrigin = "anonymous"; v.loop = ds.length === 1;
       // ảnh video chỉ chép lên card đồ hoạ vài lần mỗi giây, lần lượt từng màn (xem capNhatVideo): đỡ nặng hơn VideoTexture chép mỗi khung hình
-      const tex = new THREE.Texture(v); tex.colorSpace = THREE.SRGBColorSpace; tex.generateMipmaps = false; tex.minFilter = THREE.LinearFilter;
+      // isVideoTexture: three.js chép thẳng khung video theo kích thước thật của video (Texture thường cấp vùng nhớ 0x0, màn đen);
+      // update rỗng: không tự chép mỗi khung hình như VideoTexture
+      const tex = new THREE.Texture(v); tex.isVideoTexture = true; tex.update = () => {};
+      tex.colorSpace = THREE.SRGBColorSpace; tex.generateMipmaps = false; tex.minFilter = THREE.LinearFilter;
       const vlMan = new THREE.MeshBasicMaterial({ map: tCho, fog: false, toneMapped: false });
       const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), vlMan);
       m.position.set(x, y + h / 2, z); m.rotation.y = quay; this.nhom.add(m);
