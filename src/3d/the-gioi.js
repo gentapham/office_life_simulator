@@ -379,7 +379,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   }
   for (const l of nhapNhay) l.userData.rieng = true;
   coSan.dung(scene);
-  gopKhoi(scene, { deQuy: true, vatLieu: true });
+  gopKhoi(scene, { deQuy: true, vatLieu: true, o: 40 });
   return { vat, denDem, nhapNhay, pho, nhom: scene };
 }
 

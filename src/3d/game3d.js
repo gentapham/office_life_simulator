@@ -238,6 +238,21 @@ export class Game3D {
     this.cuoiTuan = (thu === 0 || thu === 6) && ngay < 24;
   }
   datThoiTiet(loai) { this.bauTroi.datThoiTiet(loai); }
+  // Đang ở trong công ty thì không vẽ những gì chắc chắn không nhìn thấy (cửa sổ văn phòng là ảnh vẽ sẵn):
+  // ở tầng trên: ẩn mọi ô thành phố ngoài khuôn viên công ty và khu phố xa; ở tầng trệt sâu bên trong: ẩn khu phố xa
+  anNgoaiTroi(trong) {
+    const muc = !trong || this.oNgoai() ? 0 : this.tang === 1 ? 2 : this.p.z < 6 ? 1 : 0;
+    if (muc === this._mucAn) return;
+    this._mucAn = muc;
+    if (!this._dsO) {
+      this._dsO = []; this._dsXa = [];
+      this.theGioi.nhom.traverse(o => { if (o.userData.o) this._dsO.push(o); else if (o.isMesh && o.name.startsWith("kpx-")) this._dsXa.push(o); });
+    }
+    // ô giao với khuôn viên công ty (x -20..20, z -14..14, nới 2 m) luôn vẽ
+    const ngoai = o => { const [x, z, c] = o.userData.o; return x + c < -22 || x > 22 || z + c < -16 || z > 16; };
+    for (const o of this._dsO) o.visible = !(muc === 2 && ngoai(o));
+    for (const o of this._dsXa) o.visible = muc === 0;
+  }
   trongNha() { return this.oNgoai() ? trongNhaNgoai(this.p.x, this.p.z) : this.tang < 2 && Math.abs(this.p.x) < 20 && this.p.z > -14 && this.p.z < 14; }
   // đang ở một địa điểm ngoài công ty (các khu dựng riêng ở xa thành phố)
   oNgoai() { return this.tang === 0 && this.p.z < -300; }
@@ -565,7 +580,7 @@ export class Game3D {
     const fps = d.khung / d.tg; d.tg = 0; d.khung = 0;
     const tran = tiLeDiemAnh();
     let pr = d.pr;
-    if (fps < 40 && pr > 0.6) { pr = Math.max(0.6, pr - (fps < 25 ? 0.3 : 0.15)); d.tot = 0; }
+    if (fps < 40 && pr > 0.8) { pr = Math.max(0.8, pr - 0.1); d.tot = 0; }
     else if (fps > 56 && pr < tran) { if (++d.tot >= 4) { pr = Math.min(tran, pr + 0.1); d.tot = 0; } }
     else d.tot = 0;
     if (pr !== d.pr) { d.pr = pr; this.renderer.setPixelRatio(pr); this.resize(); }
@@ -644,6 +659,7 @@ export class Game3D {
     }
     // bầu trời, thời tiết, đèn buổi tối
     const trong = this.trongNha();
+    this.anNgoaiTroi(trong);
     const kq = this.bauTroi.capNhat(dt, this.camera, { hemi: this.hemi, nen: this.nen, matTroi: this.mat_troi }, trong);
     this.giaoThong.datMoiTruong?.({ gio: this.bauTroi.gio, ngay: kq.ngay, mua: this.bauTroi.tt.mua, uot: this.bauTroi.uot, sang: this.bauTroi.tt.sang });
     if (kq.dem !== this.dem) {

@@ -117,10 +117,15 @@ function xepAtlas(dsAnh, tiLe) {
 // vatLieu: khối màu trơn chưa gắn loại mặt cũng chuyển sang vật liệu PBR "tron" (nhà cửa, phố; không dùng cho nhân vật).
 // Khối gắn loại mặt (userData.be của khối hoặc vật liệu, xem vat-lieu.js) luôn gộp vào vật liệu chung của loại mặt đó,
 // trừ ở máy yếu (MUC = 0): khi đó mọi thứ nướng màu như cũ.
-export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false } = {}) {
+// o: chia bản đồ thành các ô vuông o mét, mỗi ô gộp riêng — khối gộp nhỏ lại nên ô nằm ngoài tầm nhìn được bỏ qua khi vẽ
+// (gộp cả bản đồ làm một thì lúc nào cũng phải vẽ toàn bộ thành phố, kể cả khi đang ngồi trong phòng)
+export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false, o = 0 } = {}) {
   nhom.updateMatrixWorld(true);
   const nghich = new THREE.Matrix4().copy(nhom.matrixWorld).invert();
-  const nuong = [], nuong2 = [], theoVL = new Map(), bo = [], choAtlas = [];
+  const bo = [], choAtlas = [], cacO = new Map(), _hb = new THREE.Box3(), _tam = new THREE.Vector3();
+  let nuong, nuong2, theoVL;
+  const o_ = o;
+  cacO.set("", { nuong: [], nuong2: [], theoVL: new Map() }); ({ nuong, nuong2, theoVL } = cacO.get(""));
   const xet = o => {
     if (deQuy && o.isMesh && Array.isArray(o.material)) gonNhomVatLieu(o);
     if (!o.isMesh || o.userData.rieng || o.isInstancedMesh || o.isSkinnedMesh || Array.isArray(o.material)) return;
@@ -129,6 +134,7 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false } 
     if (an) return;
     const tran = new THREE.Matrix4().multiplyMatrices(nghich, o.matrixWorld);
     const m = o.material;
+    if (o_) { _hb.setFromObject(o).getCenter(_tam).applyMatrix4(nghich); const k = Math.floor(_tam.x / o_) + "," + Math.floor(_tam.z / o_); if (!cacO.has(k)) cacO.set(k, { nuong: [], nuong2: [], theoVL: new Map() }); ({ nuong, nuong2, theoVL } = cacO.get(k)); }
     const veBe = (vl, g) => { if (!theoVL.has(vl)) theoVL.set(vl, []); theoVL.get(vl).push(g); };
     // khối đã gộp vào vật liệu loại mặt từ trước: giữ màu và toạ độ ảnh, gộp tiếp
     if (m.userData.beThuVien && o.geometry.attributes.color) { veBe(m, chuanBi(o, tran, null, true)); return; }
@@ -156,15 +162,20 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false } 
   for (const o of bo) o.parent?.remove(o);
   // đã có vật liệu bảng (kim loại, nhựa, sơn bóng...) trong lần gộp này: khối màu trơn còn lại vào luôn ô "tron"
   // của nó (vd. người ngồi trên xe máy) để không tốn thêm một lượt vẽ
-  if (MUC) for (const [ds, hai] of [[nuong, false], [nuong2, true]]) {
-    const vb = vatLieuBe("tron", hai);
-    if (!ds.length || !theoVL.has(vb)) continue;
-    for (const g of ds) theoVL.get(vb).push(ganUvBe(g, "tron"));
-    ds.length = 0;
+  for (const [k, { nuong, nuong2, theoVL }] of cacO) {
+    const dau = nhom.children.length;
+    if (MUC) for (const [ds, hai] of [[nuong, false], [nuong2, true]]) {
+      const vb = vatLieuBe("tron", hai);
+      if (!ds.length || !theoVL.has(vb)) continue;
+      for (const g of ds) theoVL.get(vb).push(ganUvBe(g, "tron"));
+      ds.length = 0;
+    }
+    if (nuong.length) nhom.add(new THREE.Mesh(mergeGeometries(nuong), VL_MAU_DINH));
+    if (nuong2.length) nhom.add(new THREE.Mesh(mergeGeometries(nuong2), VL_MAU_DINH_2MAT));
+    for (const [m, ds] of theoVL) nhom.add(new THREE.Mesh(mergeGeometries(ds), m));
+    // ghi lại ô (toạ độ góc, mét) để game ẩn bớt ô không nhìn thấy (vd. đang ở tầng trên công ty)
+    if (k) { const [cx, cz] = k.split(",").map(Number); for (let i = dau; i < nhom.children.length; i++) nhom.children[i].userData.o = [cx * o_, cz * o_, o_]; }
   }
-  if (nuong.length) nhom.add(new THREE.Mesh(mergeGeometries(nuong), VL_MAU_DINH));
-  if (nuong2.length) nhom.add(new THREE.Mesh(mergeGeometries(nuong2), VL_MAU_DINH_2MAT));
-  for (const [m, ds] of theoVL) nhom.add(new THREE.Mesh(mergeGeometries(ds), m));
   if (choAtlas.length) {
     const viTri = xepAtlas([...new Set(choAtlas.map(c => c.m.map))], cheDoNhe() ? 0.5 : 1);
     const theoKhoa = new Map();
