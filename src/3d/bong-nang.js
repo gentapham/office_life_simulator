@@ -117,6 +117,12 @@ export class BongNang {
     // vẽ lại bản đồ bóng cách một khung hình (bóng người, xe đi vẫn mượt ở 30 lần / giây): lượt vẽ bóng tốn một nửa
     const ve = this.cuong > 0.02;
     this.le = !this.le; this.renderer.shadowMap.autoUpdate = false;
+    // khung không vẽ lại bóng: giữ nguyên vị trí nguồn sáng của lần vẽ trước, nếu không bản đồ bóng cũ bị chiếu lệch
+    // theo người chơi đang di chuyển và bóng giật qua lại thành vệt mờ (rõ nhất khi giữ Shift chạy)
+    if (!(ve && this.le) && this._daVe) {
+      L.position.copy(this._viTriVe); L.target.position.copy(this._dichVe); L.target.updateMatrixWorld();
+      return;
+    }
     if (ve && this.le) this.renderer.shadowMap.needsUpdate = true;
     // tâm bóng: trước mặt người chơi một chút, khớp theo ô điểm ảnh của bản đồ bóng để mép bóng không rung khi đi
     const d = this._d.copy(L.position).normalize(), r = this._r, u = this._u;
@@ -128,5 +134,6 @@ export class BongNang {
     tam.copy(r).multiplyScalar(x).addScaledVector(u, y).addScaledVector(d, z);
     L.target.position.copy(tam); L.target.updateMatrixWorld();
     L.position.copy(tam).addScaledVector(d, 85);
+    (this._viTriVe ||= new THREE.Vector3()).copy(L.position); (this._dichVe ||= new THREE.Vector3()).copy(tam); this._daVe = true;
   }
 }
