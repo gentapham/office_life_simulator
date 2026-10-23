@@ -217,7 +217,7 @@ export class SanKhau {
     const taoMan = (ds, w, h, x, y, z, quay) => {
       const v = document.createElement("video");
       v.playsInline = true; v.preload = "none"; v.muted = true; v.defaultMuted = true; v.volume = 0; v.crossOrigin = "anonymous"; v.loop = ds.length === 1;
-      // ảnh video chỉ chép lên card đồ hoạ vài lần mỗi giây, lần lượt từng màn (xem capNhatVideo): đỡ nặng hơn VideoTexture chép mỗi khung hình
+      // ảnh video chỉ chép lên card đồ hoạ khi video có khung mới và màn đang nằm trong tầm nhìn (xem capNhatVideo)
       // isVideoTexture: three.js chép thẳng khung video theo kích thước thật của video (Texture thường cấp vùng nhớ 0x0, màn đen);
       // update rỗng: không tự chép mỗi khung hình như VideoTexture
       const tex = new THREE.Texture(v); tex.isVideoTexture = true; tex.update = () => {};
@@ -225,7 +225,12 @@ export class SanKhau {
       const vlMan = new THREE.MeshBasicMaterial({ map: tCho, fog: false, toneMapped: false });
       const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), vlMan);
       m.position.set(x, y + h / 2, z); m.rotation.y = quay; this.nhom.add(m);
-      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false };
+      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false, moi: true, thay: -9, tThay: -1e9, tChep: 0 };
+      // màn được vẽ trong khung này (đã qua lọc tầm nhìn) thì ghi lại số khung
+      m.onBeforeRender = () => { man.thay = this.soKhung; man.tThay = performance.now(); };
+      // video báo có khung hình mới (trình duyệt không hỗ trợ thì coi như luôn mới)
+      if ("requestVideoFrameCallback" in v) { const baoMoi = () => { man.moi = true; v.requestVideoFrameCallback(baoMoi); }; v.requestVideoFrameCallback(baoMoi); }
+      else man.coMoi = true;
       const nap = () => { v.src = `${goc}video/sieu-nhan-hong-${ds[man.so]}.mp4`; if (man.chay) this.phat(man); };
       v.addEventListener("playing", () => { man.sanSang = true; if (vlMan.map !== tex) { tex.needsUpdate = true; vlMan.map = tex; vlMan.needsUpdate = true; } });
       v.addEventListener("ended", () => { man.so = (man.so + 1) % ds.length; nap(); });
@@ -259,16 +264,24 @@ export class SanKhau {
   capNhatVideo(gan) {
     this.tCapNhat = performance.now();
     const ds = this.dsMan || (this.dsMan = [...this.manVideo, ...this.manTuong]);
-    if (!gan) { this.dungVideo(); return; }
+    if (!gan) { this.dungVideo(); this.tVao = 0; return; }
     const bay = performance.now();
-    for (const m of ds) if (!m.chay && !(m.tThu && bay - m.tThu < 1500)) this.phat(m);
-    // chép ảnh video lên card đồ hoạ: mỗi khung hình 1–2 màn, xoay vòng (mỗi màn khoảng 10–15 hình/giây)
-    const moiKhung = this.dienThoai ? 1 : 2;
-    for (let k = 0, dem = 0; k < ds.length && dem < moiKhung; k++) {
-      this.luotMan = ((this.luotMan || 0) + 1) % ds.length;
-      const m = ds[this.luotMan];
-      if (m.sanSang && !m.v.paused && m.v.readyState >= 2) { m.tex.needsUpdate = true; dem++; }
+    // màn khuất tầm nhìn quá 3 giây thì tạm dừng giải mã cho nhẹ máy, quay lại nhìn thì chiếu tiếp ngay
+    // (lần đầu vào khu quảng trường chưa có màn nào được vẽ: cho chiếu hết trong 3 giây đầu)
+    if (!this.tVao) this.tVao = bay;
+    for (const m of ds) {
+      const thay = bay - m.tThay < 3000 || bay - this.tVao < 3000;
+      if (thay && !m.chay && !(m.tThu && bay - m.tThu < 1500)) this.phat(m);
+      else if (!thay && m.chay) { m.chay = false; m.v.pause(); }
     }
+    // chép ảnh video lên card đồ hoạ: chỉ màn đang nhìn thấy và có khung mới, màn lâu chưa chép được ưu tiên;
+    // mỗi khung hình chép tối đa 4 màn (máy yếu 2) — màn nhìn thấy chạy đủ hình như video gốc
+    this.soKhung = (this.soKhung || 0) + 1;
+    const toiDa = this.dienThoai ? 2 : 4;
+    const cho = this._cho || (this._cho = []); cho.length = 0;
+    for (const m of ds) if (m.sanSang && !m.v.paused && m.v.readyState >= 2 && (m.moi || m.coMoi) && this.soKhung - m.thay <= 2) cho.push(m);
+    if (cho.length > toiDa) cho.sort((a, b) => a.tChep - b.tChep);
+    for (let k = 0; k < Math.min(toiDa, cho.length); k++) { const m = cho[k]; m.tex.needsUpdate = true; m.moi = false; m.tChep = bay; }
   }
 
 
