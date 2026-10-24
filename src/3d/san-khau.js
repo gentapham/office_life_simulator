@@ -225,7 +225,7 @@ export class SanKhau {
       const vlMan = new THREE.MeshBasicMaterial({ map: tCho, fog: false, toneMapped: false });
       const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), vlMan);
       m.position.set(x, y + h / 2, z); m.rotation.y = quay; this.nhom.add(m);
-      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false, moi: true, thay: -9, tThay: -1e9, tChep: 0 };
+      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false, moi: true, thay: -9, tThay: -1e9, tChep: 0, cachChep: w > 4 ? 30 : 38 };
       // màn được vẽ trong khung này (đã qua lọc tầm nhìn) thì ghi lại số khung
       m.onBeforeRender = () => { man.thay = this.soKhung; man.tThay = performance.now(); };
       // video báo có khung hình mới (trình duyệt không hỗ trợ thì coi như luôn mới)
@@ -261,7 +261,8 @@ export class SanKhau {
   }
   dungVideo() { for (const m of [...this.manVideo, ...this.manTuong]) if (m.chay || !m.v.paused) { m.chay = false; m.v.pause(); } }
   // màn chiếu khi người chơi ở khu quảng trường (cả đoạn phố nhìn thấy sân khấu), tắt tiếng; đi xa thì dừng cho nhẹ máy
-  capNhatVideo(gan) {
+  capNhatVideo(gan, viTri) {
+    this._viTri = viTri;
     this.tCapNhat = performance.now();
     const ds = this.dsMan || (this.dsMan = [...this.manVideo, ...this.manTuong]);
     if (!gan) { this.dungVideo(); this.tVao = 0; return; }
@@ -269,8 +270,11 @@ export class SanKhau {
     // màn khuất tầm nhìn quá 3 giây thì tạm dừng giải mã cho nhẹ máy, quay lại nhìn thì chiếu tiếp ngay
     // (lần đầu vào khu quảng trường chưa có màn nào được vẽ: cho chiếu hết trong 3 giây đầu)
     if (!this.tVao) this.tVao = bay;
+    // máy yếu: chỉ 2 màn tường gần nhất chiếu, màn khác đứng ở khung hình cuối
+    let ganNhat = null;
+    if (this.dienThoai && this._viTri) ganNhat = new Set(this.manTuong.map(m => [Math.hypot(this._viTri.x - m.x, this._viTri.z - m.z), m]).sort((a, b) => a[0] - b[0]).slice(0, 2).map(x => x[1]));
     for (const m of ds) {
-      const thay = bay - m.tThay < 3000 || bay - this.tVao < 3000;
+      const thay = (bay - m.tThay < 3000 || bay - this.tVao < 3000) && (!ganNhat || !this.manTuong.includes(m) || ganNhat.has(m));
       if (thay && !m.chay && !(m.tThu && bay - m.tThu < 1500)) this.phat(m);
       else if (!thay && m.chay) { m.chay = false; m.v.pause(); }
     }
@@ -279,7 +283,8 @@ export class SanKhau {
     this.soKhung = (this.soKhung || 0) + 1;
     const toiDa = this.dienThoai ? 2 : 4;
     const cho = this._cho || (this._cho = []); cho.length = 0;
-    for (const m of ds) if (m.sanSang && !m.v.paused && m.v.readyState >= 2 && (m.moi || m.coMoi) && this.soKhung - m.thay <= 2) cho.push(m);
+    // màn sân khấu tối đa 30 lần/giây, màn tường (video nhỏ 24 hình/giây) tối đa 24 lần/giây
+    for (const m of ds) if (m.sanSang && !m.v.paused && m.v.readyState >= 2 && (m.moi || m.coMoi) && this.soKhung - m.thay <= 2 && bay - m.tChep >= m.cachChep) cho.push(m);
     if (cho.length > toiDa) cho.sort((a, b) => a.tChep - b.tChep);
     for (let k = 0; k < Math.min(toiDa, cho.length); k++) { const m = cho[k]; m.tex.needsUpdate = true; m.moi = false; m.tChep = bay; }
   }
@@ -347,7 +352,7 @@ export class SanKhau {
   capNhat(dt, t, viTri) {
     const gan = Math.abs(viTri.x - SK.tam) < 90 && viTri.z < 60 && viTri.z > -60;
     this.nhom.visible = gan;
-    this.capNhatVideo(gan);
+    this.capNhatVideo(gan, viTri);
     if (!gan) { this.amThanh.datAmLuong(0); return; }
     this.tgVe += dt;
     if (this.tgVe > (this.dien ? 0.12 : 0.5)) { this.tgVe = 0; this._dem = (this._dem || 0) + 1; if (this._dem % (this.dien ? 30 : 8) === 0) this.trang++; this.ve(t); }
