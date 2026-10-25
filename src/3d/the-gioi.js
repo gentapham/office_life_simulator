@@ -254,8 +254,10 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   tuong(-20, -14, 20, -14, 2, [], 0xd9d2c4, 1.1, "vua"); tuong(-20, 14, 20, 14, 2, [], 0xd9d2c4, 1.1, "vua");
   tuong(-20, -14, -20, 14, 2, [], 0xd9d2c4, 1.1, "vua"); tuong(20, -14, 20, 14, 2, [], 0xd9d2c4, 1.1, "vua");
   // biển hiệu mặt tiền
-  const bien = new THREE.Mesh(new THREE.PlaneGeometry(12, 2), new THREE.MeshBasicMaterial({ map: taoBienHieu(), transparent: true }));
-  bien.position.set(2, 5.2, 14.2); scene.add(bien);
+  // hộp đèn biển hiệu: đặt cao sát viền mái, nhô hẳn ra khỏi tường để không chạm khung cửa sổ, lam che nắng
+  hop(13.3, 2.2, 0.3, 0x9c3f10, 2, 5.3, 14.3, { can: false, be: "son_bong" });
+  const bien = new THREE.Mesh(new THREE.PlaneGeometry(13, 2), new THREE.MeshBasicMaterial({ map: taoBienHieu(), toneMapped: false }));
+  bien.position.set(2, 6.4, 14.47); scene.add(bien);
   // mái che cửa chính
   hop(6, 0.2, 2.4, 0xe8702a, 2, 2.9, 15.3, { can: false, be: "son_bong" });
 
@@ -567,11 +569,25 @@ function logoG(scene, x, y, z) {
   m.position.set(x, y, z); scene.add(m);
 }
 function taoBienHieu() {
-  const c = document.createElement("canvas"); c.width = 1024; c.height = 170;
+  // 13 x 2 m: nền cam chuyển màu, viền trắng, logo cầu vồng bên trái, chữ trắng có bóng đổ
+  const W = 2048, H = 316;
+  const c = document.createElement("canvas"); c.width = W; c.height = H;
   const g = c.getContext("2d");
-  g.fillStyle = "#e8702a"; g.beginPath(); g.roundRect(0, 0, 1024, 170, 30); g.fill();
-  g.fillStyle = "#fff"; g.font = "800 92px 'Baloo 2', system-ui, sans-serif"; g.textAlign = "center"; g.fillText("G-ENTERTAINMENT", 512, 116, 980);
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+  const nen = g.createLinearGradient(0, 0, 0, H); nen.addColorStop(0, "#ff8a3d"); nen.addColorStop(1, "#d9561a");
+  g.fillStyle = nen; g.fillRect(0, 0, W, H);
+  g.strokeStyle = "#fff"; g.lineWidth = 12; g.beginPath(); g.roundRect(18, 18, W - 36, H - 36, 26); g.stroke();
+  // logo G cầu vồng
+  const mau = ["#e74c3c", "#ffb03a", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6"];
+  const lx = 190, ly = H / 2;
+  g.fillStyle = "#fff"; g.beginPath(); g.arc(lx, ly, 112, 0, Math.PI * 2); g.fill();
+  mau.forEach((m, i) => { g.strokeStyle = m; g.lineWidth = 13; g.beginPath(); g.arc(lx, ly, 92 - i * 13, 0.25 * Math.PI, 1.95 * Math.PI); g.stroke(); });
+  g.fillStyle = "#e8702a"; g.fillRect(lx, ly - 8, 92, 16);
+  // chữ
+  g.font = "800 176px 'Baloo 2', system-ui, sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+  const cx = (lx + 130 + W - 40) / 2, wMax = W - lx - 220;
+  g.fillStyle = "rgba(90,30,0,.45)"; g.fillText("G-ENTERTAINMENT", cx + 7, H / 2 + 14, wMax);
+  g.fillStyle = "#fff"; g.fillText("G-ENTERTAINMENT", cx, H / 2 + 6, wMax);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t;
 }
 function taoVanCuaSo() {
   const c = document.createElement("canvas"); c.width = c.height = 64;

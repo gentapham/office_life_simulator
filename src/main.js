@@ -403,7 +403,7 @@ function tatG3D() { DT?.dong(); DT = null; UI.dienThoai = null; SINH_TON?.huy();
 
 async function openRole(ma, opts = {}) {
   tatG3D();
-  app.replaceChildren(h("div", { class: "wrap" }, h("p", {}, "Đang tải truyện…")));
+  app.replaceChildren(h("div", { class: "wrap" }, h("p", {}, "Đang xây dựng văn phòng…")));
   await loadMeta();
   const json = await loadStoryJson(ma);
   L = new LuotChoi(ma, json);
