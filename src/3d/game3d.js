@@ -64,6 +64,15 @@ export class Game3D {
     this.dangDi = false;
     this.t = 0;
     this.onNoiChuyen = null; this.onCauThang = null; this.onToiMucTieu = null; this.onGoiY = null;
+  }
+
+  // Dựng thế giới từng bước, nghỉ giữa các bước để trình duyệt kịp vẽ màn hình chờ;
+  // tienDo(buoc, tiLe) báo bước đang làm và tỉ lệ đã xong (0..1)
+  async khoiDong(tienDo = () => {}) {
+    const { vai, tenCua, tenVai } = this, khung = this.khung;
+    const nghi = () => new Promise(r => { let xong = false; const f = () => { if (!xong) { xong = true; r(); } }; requestAnimationFrame(() => setTimeout(f, 0)); setTimeout(f, 60); });
+    const buoc = async (ten, tiLe) => { tienDo(ten, tiLe); await nghi(); if (this.daHuy) throw new Error("huy"); };
+    await buoc("den", 0.22);
 
     this.nhe = cheDoNhe(); // máy yếu: bớt người, xe, chi tiết
     // mức vẽ: 0 Thấp (như cũ), 1 Vừa (tô kiểu tranh, bóng rẻ), 2 Cao (thêm bóng đủ, hậu kỳ). Sửa shader chung trước khi dịch.
@@ -88,9 +97,12 @@ export class Game3D {
     // bóng nắng mềm đi theo người chơi (xem bong-nang.js)
     if (this.mucVe > 0) this.bong = new BongNang(this.renderer, this.scene, this.camera, this.mat_troi, this.mucVe);
 
+    await buoc("toa_nha", 0.28);
     this.theGioi = taoTheGioi(this.scene, { dienThoai: this.nhe });
+    await buoc("duong_pho", 0.55);
     this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot, muc: this.mucVe });
     this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.nhe });
+    await buoc("san_khau", 0.66);
     this.sanKhau = new SanKhau(this.scene, { dienThoai: this.nhe });
     this.THREE = THREE; // cho công cụ kiểm thử tự động
     this.dongVat = new DongVat(this.scene, this.theGioi.vat, CAO_TANG);
@@ -104,6 +116,7 @@ export class Game3D {
     }, 2500);
     this.dem = null; this.moTaTT = "";
 
+    await buoc("dong_nghiep", 0.74);
     // Người chơi: thân (góc nhìn 3) + đôi tay (góc nhìn 1)
     this.than = taoNguoi(vai); this.scene.add(this.than.group);
     this.tay = taoDoiTay(vai); this.camera.add(this.tay.group);
@@ -119,9 +132,12 @@ export class Game3D {
       this.scene.add(nv.group);
       this.npc.push({ ma, nv, bang, tang: cho.tang, goc0: cho.huong ?? 0, cho });
     }
+    await buoc("dong_nghiep", 0.765);
     for (const n of this.npc) this.veCho(n);
     // đời sống đồng nghiệp: bong bóng thoại, tán gẫu, cử chỉ, đi lại; danh sách ghế ngồi được
+    await buoc("dong_nghiep", 0.775);
     this.doiSong = new DoiSong(this);
+    await buoc("dong_nghiep", 0.785);
     this.ngoiGhe = null; this.lamViec = false; this._hNgoi = 0; this._tLV = 0;
     this.tgLich = 0; this._fr = new THREE.Frustum(); this._mt = new THREE.Matrix4(); this._v3 = new THREE.Vector3();
 
@@ -142,8 +158,15 @@ export class Game3D {
     this.capNhatGoc();
     if (this.mucVe === 2) this.hauKy = new HauKy(this.renderer, this.scene, this.camera);
     this._resize = () => this.resize(); addEventListener("resize", this._resize); this.resize();
+    await buoc("dong_nghiep", 0.8);
     caiToiUu(this); // gộp nhân vật, đồ lặp (ô, áo mưa), tắt gương ở xa: bớt lượt vẽ
+    // dịch sẵn shader của cảnh đang có (song song nếu card đồ hoạ hỗ trợ) để lúc vào không khựng
+    await buoc("shader", 0.82);
+    try { await this.renderer.compileAsync(this.scene, this.camera); } catch {}
+    await buoc("vao_ca", 0.94);
     this._loop = this.loop.bind(this); this.dongHo = new THREE.Clock(); this.renderer.setAnimationLoop(this._loop);
+    await nghi(); await nghi();
+    tienDo("xong", 1);
   }
 
   // ---------- Điều khiển ----------
@@ -702,19 +725,20 @@ export class Game3D {
     this.capCuu = new CapCuu(this, { onPha, onXong });
   }
   huy() {
+    this.daHuy = true; // đang dựng dở (khoiDong) thì dừng ở bước kế tiếp
     clearTimeout(this._henBien);
     am.huyGame();
     this.doiSong?.huy();
     this.ngoaiCanh?.huy();
     this._boCaiDat?.();
     this.sanKhau?.huy();
-    this.renderer.setAnimationLoop(null);
+    this.renderer?.setAnimationLoop(null);
     this.hauKy?.dispose();
     removeEventListener("resize", this._resize); removeEventListener("keydown", this._keydown); removeEventListener("keyup", this._keyup); removeEventListener("blur", this._blur);
     if (this._mouse) document.removeEventListener("mousemove", this._mouse);
     if (this._plc) document.removeEventListener("pointerlockchange", this._plc);
     this.moKhoaChuot();
-    this.renderer.dispose();
+    this.renderer?.dispose();
     this.khung.replaceChildren();
   }
 }

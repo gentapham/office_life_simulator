@@ -7,6 +7,7 @@ import { am } from "./am-thanh-game.js";
 import { taoDienThoai, ghiNhan, ghiMonPho, ghiKetThuc, veBoSuuTap } from "./dien-thoai.js";
 import { DIA_DIEM } from "./dia-diem.js";
 import { logoSVG } from "./logo.js";
+import { taoManCho } from "./man-cho.js";
 
 const app = document.getElementById("app");
 const SAVE_KEY = "owfad_doc_thu_v1";
@@ -399,7 +400,8 @@ let timerHandle = null;
 let CHE_DO = "chu";      // "chu" | "3d"
 let G = null;            // Game3D đang chạy
 let G3D_MOD = null;      // module 3D (tải khi cần)
-function tatG3D() { DT?.dong(); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on"); }
+let MAN_CHO = null; // màn hình chờ vào game (man-cho.js)
+function tatG3D() { MAN_CHO?.dong(true); MAN_CHO = null; DT?.dong(); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on"); }
 
 async function openRole(ma, opts = {}) {
   tatG3D();
@@ -684,9 +686,21 @@ function showSummary(chung) {
 async function render3D() {
   CHE_DO = "3d";
   document.body.classList.add("g3d-on");
-  app.replaceChildren(h("div", { class: "g3d" }, h("p", { class: "g3d-loading" }, "Đang dựng văn phòng…")));
-  G3D_MOD ||= { ...(await import("./3d/game3d.js")), ...(await import("./3d/the-gioi.js")), ...(await import("./3d/bau-troi.js")) };
-  if (CHE_DO !== "3d") return;
+  const nvVao = THEO_MA[L.ma];
+  MAN_CHO?.dong(true);
+  const mc = MAN_CHO = taoManCho(h, { ten: L.v(L.ma) || nvVao.ten, vai: nvVao.vai, ngay: ngayDayDu(L.ngay) });
+  app.replaceChildren(h("div", { class: "g3d" }));
+  mc.dat("ma", 0.03);
+  if (!G3D_MOD) {
+    const a = await import("./3d/game3d.js"); mc.dat("ma", 0.09);
+    const b = await import("./3d/the-gioi.js"); mc.dat("ma", 0.14);
+    const c = await import("./3d/bau-troi.js");
+    G3D_MOD = { ...a, ...b, ...c };
+  }
+  // phông chữ của bảng hiệu, bảng tên phải có trước khi vẽ lên ảnh
+  mc.dat("chu", 0.17);
+  try { await Promise.race([document.fonts?.ready, new Promise(r => setTimeout(r, 2500))]); } catch {}
+  if (CHE_DO !== "3d" || MAN_CHO !== mc) { mc.dong(true); return; }
   const { Game3D, KHU, khuCuaNoi, KHU_CUA_VAI, DIEM_DAU_NGAY, CHO_XEM, CHO_NGOI: CHO_NGOI_3D, thoiTietLuc, diaDiemCuaNoi, DIEM_PHO } = G3D_MOD;
   const n = THEO_MA[L.ma];
 
@@ -794,6 +808,9 @@ async function render3D() {
   if (!G3D_MOD.DO_VAT.some(v => v.loai === "xe_buyt")) for (const t of TRAM_BUYT) G3D_MOD.DO_VAT.push({ loai: "xe_buyt", tang: 0, x: t.x, z: t.z, nhan: "Đón xe buýt số 69 (7.000đ)" });
   G = new Game3D(khung, { vai: L.ma, tenCua: ma => L.v(ma) || THEO_MA[ma]?.ten || ma, tenVai: ma => THEO_MA[ma]?.vai || "" });
   const g = G;
+  try { await g.khoiDong((buoc, tiLe) => mc.dat(buoc, tiLe)); } catch { mc.dong(true); return; }
+  if (CHE_DO !== "3d" || G !== g) { mc.dong(true); return; }
+  mc.dong().then(() => { if (MAN_CHO === mc) MAN_CHO = null; });
   window.__g3d = g; window.__L = L; window.__tiep = () => nextScene3D(); // để kiểm thử tự động
   // ----- sinh tồn: đói, khát, năng lượng tụt theo thời gian, cảnh báo, xỉu -----
   sinhTon = SINH_TON = taoSinhTon({
