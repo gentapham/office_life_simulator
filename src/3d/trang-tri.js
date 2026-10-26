@@ -95,9 +95,6 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   }
   // đèn sân vườn hai bên lối đi
   for (const z of [17, 20, 23, 26]) for (const x of [-0.95, 4.95]) { K(0.08, 0.8, 0.08, 0x2a2c31, x, 0, z); const d = new THREE.Mesh(new THREE.BoxGeometry(0.22, 0.22, 0.22), vlDen); d.position.set(x, 0.9, z); add(d); denDem.push(d); }
-  // cột cờ công ty
-  tru(0.07, 7, 0xd5d9dd, -3.6, 0, 17.5); V(0.8, 0.3, 0.8, 0x9a8f7c, -3.6, 0, 17.5);
-  dung(1.5, 1.0, new THREE.MeshLambertMaterial({ side: THREE.DoubleSide, map: tranh("cocongty", 150, 100, (g, w, h) => { g.fillStyle = "#e8702a"; g.fillRect(0, 0, w, h); chuGiua(g, "G", w, 52, 64, "#fff", 900); }) }), -2.82, 6.4, 17.5, 0);
   // nhà xe nhân viên có mái tôn
   for (const x of [9.4, 13.9, 18.4]) for (const z of [22.0, 24.8]) V(0.1, 2.4, 0.1, 0x5a5d63, x, 0, z);
   { const m = new THREE.Mesh(new THREE.BoxGeometry(9.4, 0.06, 3.4), vl(0x2e8b57)); m.position.set(13.9, 2.45, 23.4); m.rotation.x = 0.06; add(m); }

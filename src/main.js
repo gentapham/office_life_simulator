@@ -405,7 +405,7 @@ function tatG3D() { MAN_CHO?.dong(true); MAN_CHO = null; DT?.dong(); DT = null; 
 
 async function openRole(ma, opts = {}) {
   tatG3D();
-  app.replaceChildren(h("div", { class: "wrap" }, h("p", {}, "Đang xây dựng văn phòng…")));
+  app.replaceChildren(h("div", { class: "wrap" }));
   await loadMeta();
   const json = await loadStoryJson(ma);
   L = new LuotChoi(ma, json);
