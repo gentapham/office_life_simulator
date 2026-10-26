@@ -234,5 +234,9 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   hop(2.75, 1.08, 0.12, 0x1c1c1f, -2.4, 1.71, 30.77, { can: false });
   for (const x of [-3.5, -1.3]) hop(0.14, 1.75, 0.14, 0x8a8d92, x, 0, 30.62, { can: true });
   for (const [x, z] of [[-14, 16], [16, 16], [-20, 27], [20, 27]]) { hop(3, 0.45, 1.2, 0xb5a58a, x, 0, z); for (let i = 0; i < 4; i++) cau(0.3, [0xf26fa6, 0xe9e04a, 0xc0262d, 0xf6f6f2][i], x - 1 + i * 0.65, 0.65, z); }
-  hop(0.12, 1.1, 0.12, 0xe8702a, 5.5, 0, 29.3); { const tb = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.08, 3.6), vl(0xf2f2f2)); tb.position.set(5.5, 1.2, 27.7); tb.rotation.x = -1.2; nhom.add(tb); }
+  // barie cổng đang nâng lên: trụ cam cạnh trụ cổng, thanh chắn xoay quanh đầu trụ, chĩa lên phía trên lối vào
+  hop(0.2, 1.05, 0.2, 0xe8702a, 5.0, 0, 29.3);
+  { const tb = new THREE.Group(); tb.position.set(5.0, 1.0, 29.3); tb.rotation.z = Math.PI - 1.31; nhom.add(tb);
+    const thanh = new THREE.Mesh(new THREE.BoxGeometry(3.6, 0.07, 0.07), vl(0xf2f2f2)); thanh.position.x = 1.8; tb.add(thanh);
+    for (let i = 0; i < 4; i++) { const v = new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.075, 0.075), vl(0xc0262d)); v.position.x = 0.6 + i * 0.85; tb.add(v); } }
 }

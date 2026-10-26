@@ -768,8 +768,11 @@ export class Game3D {
       }
       this.camera.position.set(dau.x - huong.x * k, Math.min(dau.y - huong.y * k + cao * 0.3, y + 3.4), dau.z - huong.z * k);
       this.camera.lookAt(dau.x + huong.x * 2, dau.y + huong.y * 2, dau.z + huong.z * 2);
-      if (!laiXe) this.than.group.position.set(this.p.x, y + (this.ngoiGhe ? this.ngoiGhe.y : 0), this.p.z);
-      this.than.group.visible = k > 1.1;
+      // cảnh cấp cứu tự đặt thân người chơi (nằm đường, lên cáng, vào xe rồi ẩn): không ghi đè
+      if (!this.capCuu) {
+        if (!laiXe) this.than.group.position.set(this.p.x, y + (this.ngoiGhe ? this.ngoiGhe.y : 0), this.p.z);
+        this.than.group.visible = k > 1.1;
+      }
       if (laiXe) { /* thân nằm trong nhóm xe máy */ }
       else if (this.ngoiGhe) this.than.group.rotation.y = this.ngoiGhe.huong;
       else if ((this.dangDi || this.nhay) && this.huongThan != null) {
