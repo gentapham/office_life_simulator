@@ -762,9 +762,12 @@ async function render3D() {
     [h("span", { class: "g3d-phim" }, h("kbd", { class: "cam" }, "Nút cam")), "Nói chuyện, tương tác"],
     [h("span", { class: "g3d-phim" }, h("kbd", {}, "Chạm khung thoại")), "Đọc câu tiếp theo"],
     [h("span", { class: "g3d-phim" }, h("kbd", {}, "Đi nhanh")), "Tới ngay việc tiếp theo"],
+    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Nhảy"), h("kbd", {}, "Ngồi")), "Nhảy, ngồi xuống / đứng dậy"],
   ] : [
     [phim("W", "A", "S", "D"), "Di chuyển"], [phim("Shift"), "Chạy"], [phim("Chuột"), "Nhìn quanh"],
     [phim("E"), "Nói chuyện, tương tác"], [phim("V"), "Đổi góc nhìn thứ nhất / thứ ba"],
+    [phim("Space"), "Nhảy (khi không có hội thoại)"], [phim("Ctrl", "C"), "Ngồi xuống, đứng dậy"],
+    [phim("W", "S"), "Lái xe máy: ga, thắng (Shift: chạy nhanh)"],
     [phim("Space", "Enter"), "Đọc câu thoại tiếp theo"], [phim("1", "–", "9"), "Chọn câu trả lời"],
     [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("F"), "Đi nhanh tới việc tiếp theo"], [phim("P"), "Điện thoại"], [phim("M"), "Bản đồ"], [phim("Esc"), "Tạm dừng, mở bảng này"],
   ];
@@ -843,6 +846,33 @@ async function render3D() {
       },
     });
   };
+  // bị ô tô tông: cảnh tai nạn, xe cấp cứu, hết lượt chơi
+  const LOAI_XE = { oto: "chiếc ô tô", taxi: "chiếc taxi", buyt: "chiếc xe buýt" };
+  const batTaiNan = tn => {
+    dongHoiThoai(); datMucTieuHUD(""); saveWrite(null); DT?.dong(); moThanhTuu(ghiNhan("tai_nan"));
+    const lop = h("div", { class: "g3d-xiu" }); app.querySelector(".g3d").append(lop);
+    app.querySelector(".g3d").classList.add("cap-cuu");
+    const gio = String(L.v("gio") ?? 9).padStart(2, "0") + ":" + String(L.v("phut") ?? 0).padStart(2, "0");
+    g.xiu({
+      taiNan: tn,
+      onPha: (pha, chu) => { lop.className = "g3d-xiu " + pha; lop.textContent = chu; },
+      onXong: () => {
+        const n = THEO_MA[L.ma];
+        lop.className = "g3d-xiu ket"; lop.replaceChildren(h("div", { class: "g3d-xiu-the" },
+          h("small", {}, "Lượt chơi kết thúc"),
+          h("h2", {}, "Bạn đã tử vong vì tai nạn giao thông"),
+          h("p", {}, `${n.vai} ${L.v(L.ma) || n.ten} bị ${LOAI_XE[tn.xe.loai] || "một chiếc ô tô"} tông khi ${tn.laiXe ? "đang chạy xe máy" : "đang băng qua đường"} trên ${tn.duong}, lúc ${gio}, ${ngayDayDu(L.ngay)}. Xe cấp cứu 115 đã đưa vào Bệnh viện Quận Hóng nhưng không qua khỏi.`),
+          h("p", { class: "nho" }, "Qua đường nhớ nhìn trước nhìn sau. Đi đúng làn, đúng tốc độ, đội mũ bảo hiểm."),
+          h("div", { class: "g3d-xiu-nut" },
+            h("button", { class: "btn primary", onclick: () => openRole(L.ma) }, "Chơi lại vai này"),
+            h("button", { class: "btn ghost", onclick: renderHome }, "Chọn vai khác"))));
+      },
+    });
+  };
+  g.onTaiNan = tn => batTaiNan(tn);
+  g.onThongBao = x => thongBao3D(x);
+  // nhảy, ngồi bệt chỉ khi đang chơi (không mở bảng tạm dừng, tổng kết ngày, minigame...)
+  g.onChoPhep = () => tamNgung.hidden && !g.capCuu && !app.querySelector(".tk-lop, .g3d-xiu, .mg, .dt-lop") && app.querySelector(".g3d-thoai")?.hidden !== false;
   const tam = app.querySelector(".g3d-tam");
   g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn 1" : "Góc nhìn 3"; tam.hidden = goc !== "1"; };
   g.onDoiGoc(g.goc);
@@ -1138,7 +1168,7 @@ async function render3D() {
       h("button", { class: "choice", onclick: () => { if (tongKetNgay(() => {
         chuyenCanh(`Sáng ${ngayDayDu(L.ngay + 1)}`, () => {
           const ghiChu = L.batDauNgay(L.ngay + 1);
-          g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); datGioTT(8, 0); g.xepLichNgay(); nutTin.hidden = true;
+          g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); g.xeRieng?.veNhaXe(); datGioTT(8, 0); g.xepLichNgay(); nutTin.hidden = true;
           ghiChu.forEach(x => thongBao3D(x));
           soCaPhe = 0; sinhTon?.ngayMoi();
           nextScene3D();

@@ -37,9 +37,9 @@ const ong = (g, diem, r, c, seg = 5, doan = 6) => vm(g, hinhOng(diem, r, seg, do
 // đèn tròn nhìn theo +z (hoặc -z)
 const denTron = (g, r, d, m, x, y, z) => vm(g, hinhTru(r, r, d, 8), m, x, y, z, Math.PI / 2);
 
-function xeMayMem(mau, kieu) {
+function xeMayMem(mau, kieu, boBanh = false) {
   const g = new THREE.Group();
-  banhMem(g, 0.28, 0.1, 0, 0.28, 0.62); banhMem(g, 0.28, 0.12, 0, 0.28, -0.62);
+  if (!boBanh) { banhMem(g, 0.28, 0.1, 0, 0.28, 0.62); banhMem(g, 0.28, 0.12, 0, 0.28, -0.62); }
   if (kieu === "ga") {
     hv(g, 0.36, 0.42, 1.05, 0.13, mau, 0, 0.55, -0.1, [0.86, 0.94, 0.02]);    // thân bầu tròn
     hv(g, 0.34, 0.08, 0.7, 0.035, 0x1a1a1a, 0, 0.8, -0.25);                   // yên (mặt trên 0,84)
@@ -108,8 +108,11 @@ function baGacMem(mau) {
 // Xe máy: kieu "so" (xe số) hoặc "ga" (tay ga)
 export function taoXeMay(mau, kieu = "so") {
   if (memBat("xe")) return xeMayMem(mau, kieu);
+  return xeMayHop(mau, kieu);
+}
+function xeMayHop(mau, kieu, boBanh = false) {
   const g = new THREE.Group();
-  banh(g, 0.28, 0.1, 0, 0.28, 0.62); banh(g, 0.28, 0.12, 0, 0.28, -0.62);
+  if (!boBanh) { banh(g, 0.28, 0.1, 0, 0.28, 0.62); banh(g, 0.28, 0.12, 0, 0.28, -0.62); }
   if (kieu === "ga") {
     hop(g, 0.36, 0.42, 1.05, mau, 0, 0.55, -0.1);               // thân
     hop(g, 0.34, 0.08, 0.7, 0x1a1a1a, 0, 0.8, -0.25);           // yên
@@ -129,6 +132,21 @@ export function taoXeMay(mau, kieu = "so") {
   hop(g, 0.12, 0.05, 0.03, DEN_SAU, 0, 0.82, -0.75);
   for (const s of [-1, 1]) hop(g, 0.08, 0.02, 0.06, 0x9a9a9a, s * 0.24, 1.18, 0.48); // gương
   return gopNhom(g);
+}
+
+// Xe máy riêng của người chơi: thân xe gộp một khối, hai bánh là hai nhóm riêng (quay được quanh trục x)
+export function taoXeMayRieng(mau, kieu = "ga") {
+  const mem = memBat("xe");
+  const g = new THREE.Group();
+  g.add(mem ? xeMayMem(mau, kieu, true) : xeMayHop(mau, kieu, true));
+  const dsBanh = [[0.62, 0.1], [-0.62, 0.12]].map(([z, rong]) => {
+    const b = new THREE.Group(); b.position.set(0, 0.28, z);
+    if (mem) banhMem(b, 0.28, rong, 0, 0, 0); else banh(b, 0.28, rong, 0, 0, 0);
+    // vạch sơn trên vành để thấy bánh quay
+    hb(b, rong + 0.012, 0.05, 0.12, 0xb5b5b5, 0, 0.2, 0);
+    g.add(gopNhom(b)); return b;
+  });
+  return { group: g, banh: dsBanh };
 }
 
 // Ô tô 4 chỗ (taxi có hộp đèn trên nóc và sọc)

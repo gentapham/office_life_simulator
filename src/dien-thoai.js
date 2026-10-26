@@ -19,6 +19,7 @@ export const THANH_TUU = [
   { id: "tin_nhan", ten: "Online 24/7", mo: "Đọc 10 tin nhắn Zola", dem: "tin_nhan", can: 10 },
   { id: "xe_om", ten: "Khách quen xe ôm", mo: "Đi xe ôm 5 lần", dem: "xe_om", can: 5 },
   { id: "xiu", ten: "Deadline không đáng", mo: "Xỉu vì bỏ bê bản thân", dem: "xiu", can: 1 },
+  { id: "tai_nan", ten: "Nhìn trước nhìn sau", mo: "Bị ô tô tông khi băng qua đường", dem: "tai_nan", can: 1 },
   { id: "het_thang", ten: "Sống sót tháng 10", mo: "Chơi hết 31 ngày với một vai", dem: "het_thang", can: 1 },
   { id: "mot_trieu", ten: "Một triệu", mo: "Siêu Nhân Hồng đạt 1.000.000 người theo dõi", dem: "mot_trieu", can: 1 },
   { id: "bi_mat", ten: "Người giữ bí mật", mo: "Mở một kết thúc bí mật", dem: "bi_mat", can: 1 },

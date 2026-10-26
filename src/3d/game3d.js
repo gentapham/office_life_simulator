@@ -4,7 +4,10 @@ import * as THREE from "three";
 import { taoTheGioi, KHU, CAU_THANG, CHO_NGOI, CAO_TANG, DO_VAT } from "./the-gioi.js";
 import { taoNguoi, taoBangTen, taoDoiTay, taoNguoiNgauNhien } from "./nhan-vat-3d.js";
 import { BauTroi } from "./bau-troi.js";
-import { GiaoThong } from "./giao-thong.js";
+import { GiaoThong, duoiDuong } from "./giao-thong.js";
+import { XeRieng } from "./xe-rieng.js";
+import { TroChuyenPho } from "./tro-chuyen-pho.js";
+import { chiTay, thaTay } from "./nguoi-pho.js";
 import { SanKhau, CHO_XEM } from "./san-khau.js";
 import { DongVat } from "./dong-vat.js";
 import { CapCuu } from "./cap-cuu.js";
@@ -31,10 +34,17 @@ const AM_NGOAI = {
 export { CHO_XEM };
 
 const MAT = 1.72;            // tầm mắt
+const VUONG_VAT = { vat: true };
 const BAN_KINH = 0.32;       // bán kính người chơi khi va chạm
 const TOC_DI = 3.2, TOC_CHAY = 5.6;
 const TAM_NOI = 2.3;         // khoảng cách bấm nói chuyện
 const DUNG_O_KHU = 1.6;      // tới gần tâm khu bao nhiêu thì mở cảnh
+// nhảy: nhún 0,11 s, bay ~0,5 s cao ~0,45 m (trọng lực 14,4 m/s², vận tốc bật 3,6 m/s), tiếp đất chùng gối 0,2 s
+const NHAY_NHUN = 0.11, NHAY_DAP = 0.2, NHAY_G = 14.4, NHAY_V = 3.6;
+const MAT_NGOI_DAT = 0.8;    // tầm mắt khi ngồi bệt xuống đất
+// dáng chân theo góc đùi a (ra trước) và gối k: hông hạ xuống bao nhiêu so với lúc đứng thẳng (đùi 0,44, cẳng chân + bàn chân 0,46)
+const haHong = (a, k) => 0.9 - (0.44 * Math.cos(a) + 0.46 * Math.cos(a - k));
+const muot = x => x * x * (3 - 2 * x);
 
 // Lịch sinh hoạt của đồng nghiệp: tới công ty, đi ăn trưa, tan làm (giờ dạng số thập phân)
 // cuối tuần chỉ vài người đi làm; tuần cuối trước Đại Nhạc Hội (từ 24/10) thì cả công ty tăng ca
@@ -137,6 +147,9 @@ export class Game3D {
     // đời sống đồng nghiệp: bong bóng thoại, tán gẫu, cử chỉ, đi lại; danh sách ghế ngồi được
     await buoc("dong_nghiep", 0.775);
     this.doiSong = new DoiSong(this);
+    this.troChuyenPho = new TroChuyenPho(this); // bắt chuyện người ngoài phố
+    this.xeRieng = new XeRieng(this);           // xe máy riêng ở nhà xe nhân viên
+    this.nhay = null; this.ngoiDat = null; this._anToan = 0; this._vx = 0; this._vz = 0; this._vuongXe = { xe: null }; this._vuongNg = { nguoi: null };
     await buoc("dong_nghiep", 0.785);
     this.ngoiGhe = null; this.lamViec = false; this._hNgoi = 0; this._tLV = 0;
     this.tgLich = 0; this._fr = new THREE.Frustum(); this._mt = new THREE.Matrix4(); this._v3 = new THREE.Vector3();
@@ -178,6 +191,10 @@ export class Game3D {
       if (this.khoa || e.repeat) return; // giữ phím không lặp lại thao tác
       if (e.code === "KeyV") this.doiGoc();
       if (e.code === "KeyE" || e.code === "Enter") this.tuongTac();
+      // Space: nhảy (chỉ khi không có hội thoại, bảng, điện thoại: lúc đó game đã khóa, Space để đọc thoại)
+      if (e.code === "Space" && !e.target.closest?.("button, a, select") && this.onChoPhep?.() !== false) { e.preventDefault(); this.batNhay(); }
+      // Ctrl / C: ngồi bệt xuống đất, bấm lại (hoặc đi) để đứng dậy
+      if ((e.code === "ControlLeft" || e.code === "ControlRight" || (e.code === "KeyC" && !e.ctrlKey)) && !e.metaKey && !e.altKey && this.onChoPhep?.() !== false) this.batNgoiDat();
     };
     this._keyup = e => { this.phim[e.code] = false; };
     addEventListener("keydown", this._keydown); addEventListener("keyup", this._keyup);
@@ -224,6 +241,9 @@ export class Game3D {
         }
       };
       c.addEventListener("touchend", het); c.addEventListener("touchcancel", het);
+      // nút nhảy, ngồi bệt cho màn hình cảm ứng
+      const nut = (lop, chu, f) => { const b = document.createElement("button"); b.className = "g3d-nut-tay " + lop; b.textContent = chu; b.addEventListener("click", e => { e.stopPropagation(); if (!this.khoa) f(); }); this.khung.append(b); };
+      nut("nhay", "Nhảy", () => this.batNhay()); nut("ngoi", "Ngồi", () => this.batNgoiDat());
     }
   }
   xoay(dx, dy) {
@@ -250,6 +270,11 @@ export class Game3D {
   }
   datViTri({ tang, x, z, huong }) {
     if (this.ngoiGhe) this.boNgoi();
+    // dịch chuyển (đi nhanh, xe buýt, xe ôm, cảnh truyện...): xuống xe máy (xe ở lại chỗ cũ), bỏ nhảy / ngồi bệt,
+    // không xét tai nạn trong chốc lát (khỏi bị tính là bị tông khi vừa hiện ra)
+    if (this.xeRieng?.dangLai) this.xeRieng.xuong();
+    this.nhay = null; this.boNgoiDat(true); this._anToan = this.t + 2.5;
+    this.troChuyenPho?.traHet();
     this.tang = tang; this.p.set(x, tang * CAO_TANG, z);
     if (huong != null) { this.yaw = huong; this.pitch = 0; }
   }
@@ -435,6 +460,8 @@ export class Game3D {
 
   // ---------- Tương tác ----------
   timTuongTac() {
+    // đang lái xe máy: chỉ có xuống xe (chạy chậm lại đã)
+    if (this.xeRieng?.dangLai) return Math.abs(this.xeRieng.v) < 1.5 ? { loai: "xuong_xe", nhan: "Xuống xe, dựng xe ở đây" } : null;
     // đang ngồi: chỉ có làm việc (ở bàn của mình) hoặc đứng dậy
     if (this.ngoiGhe) {
       const nhac = this.dienThoai ? "kéo cần để đứng dậy" : "W A S D để đứng dậy";
@@ -465,6 +492,12 @@ export class Game3D {
       const d = Math.hypot(gh.x - this.p.x, gh.z - this.p.z) + 0.05; // cùng khoảng cách thì nhường người / đồ vật
       if (d < tam && d < dMin && this.gheTrongChoNguoiChoi(gh)) { dMin = d; gan = { loai: "ghe", ghe: gh, nhan: gh.chu === this.vai ? "Ngồi vào bàn của mình" : "Ngồi xuống" }; }
     }
+    // người ngoài phố (đồng nghiệp, đồ vật ở gần bằng nhau thì ưu tiên trước)
+    if (this.tang === 0 && !this.oNgoai()) {
+      const m = this.troChuyenPho.timGan(this.p.x, this.p.z, Math.min(2.1, dMin - 0.4));
+      if (m) { dMin = m.d + 0.4; gan = { loai: "pho", muc: { ...m }, nhan: this.troChuyenPho.nhan(m) }; }
+      if (this.xeRieng.coTheLen()) { const d = Math.hypot(this.xeRieng.x - this.p.x, this.xeRieng.z - this.p.z); if (d < dMin) { dMin = d; gan = { loai: "len_xe", nhan: "Lên xe máy" }; } }
+    }
     const dv = this.dongVat.timGan(this.p, this.tang);
     if (dv) { const d = dv.loai === "chim" ? 1.5 : 0; if (d < dMin) { dMin = d; gan = { loai: "do_vat", v: dv, nhan: dv.nhan }; } }
     if (this.tang === 0) {
@@ -492,6 +525,9 @@ export class Game3D {
       this.onDoVat?.(g.v);
     }
     else if (g.loai === "cong") this.onCong?.();
+    else if (g.loai === "pho") this.troChuyenPho.noi(g.muc);
+    else if (g.loai === "len_xe") this.xeRieng.len();
+    else if (g.loai === "xuong_xe") this.xeRieng.xuong();
     else if (g.loai === "ghe") this.ngoiXuong(g.ghe);
     else if (g.loai === "dung_day") this.dungDay();
     else if (g.loai === "lam_viec") this.datLamViec(!this.lamViec);
@@ -505,6 +541,7 @@ export class Game3D {
     return true;
   }
   ngoiXuong(gh) {
+    this.boNgoiDat(true); this.nhay = null;
     this.ngoiGhe = gh; this.lamViec = false; this._tLV = 0;
     this.p.set(gh.x, gh.tang * CAO_TANG, gh.z); this.tang = gh.tang;
     this.yaw = gh.huong + Math.PI; this.pitch = gh.chu === this.vai ? -0.2 : -0.06;
@@ -554,13 +591,65 @@ export class Game3D {
     if (!k) for (const n of this.npc) if (!n.daDoi && !n.diDao && n.tt === "ban") n.nv.group.rotation.y = n.goc0;
   }
 
+  // ---------- Va chạm ----------
+  // điểm (x, z) với bán kính r có vướng gì không: null, { vat }, { xe } (xe đang chạy ngoài phố), { nguoi } (người ngoài phố)
+  // tu: chỗ đang đứng; người ngoài phố chỉ chặn khi bước tới gần họ hơn (đang sát nhau vẫn bước ra được)
+  chanTai(x, z, r, { boXeRieng = false, tu = null, boXe = false } = {}) {
+    const vat = this.theGioi.vat[this.tang];
+    for (const b of vat) if (x > b.minX - r && x < b.maxX + r && z > b.minZ - r && z < b.maxZ + r) return VUONG_VAT;
+    const rn = r + 0.23;
+    for (const n of this.npc) if (n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < rn) return VUONG_VAT;
+    for (const nv of this.khach || []) if (nv.group.visible && Math.hypot(nv.group.position.x - x, nv.group.position.z - z) < r + 0.18) return VUONG_VAT;
+    if (this.tang !== 0 || this.oNgoai()) return null;
+    if (!boXe && z > 29) { const xe = this.giaoThong.chan(x, z); if (xe) { this._vuongXe.xe = xe; return this._vuongXe; } }
+    if (!boXeRieng && this.xeRieng.chan(x, z, r)) return VUONG_VAT;
+    if (this.giaoThong.nhom.visible) {
+      const m = this.troChuyenPho.timGan(x, z, r + 0.2);
+      if (m && (!tu || Math.hypot(m.nv.group.position.x - x, m.nv.group.position.z - z) < Math.hypot(m.nv.group.position.x - tu[0], m.nv.group.position.z - tu[1]) - 1e-4)) { this._vuongNg.nguoi = m; return this._vuongNg; }
+    }
+    return null;
+  }
+
+  // ---------- Nhảy, ngồi bệt ----------
+  batNhay() {
+    if (this.khoa || this.capCuu || this.ngoiGhe || this.nhay || this.xeRieng?.dangLai) return;
+    if (this.ngoiDat) { this.boNgoiDat(); return; } // đang ngồi bệt: Space là đứng dậy
+    if (this.oNgoai() && this.ngoaiCanh.dangO?.() === "xe_khach") return; // trong xe: trần thấp
+    this.nhay = { pha: "nhun", t: 0, y: 0, vy: 0, vx: this._vx, vz: this._vz };
+  }
+  batNgoiDat() {
+    if (this.khoa || this.capCuu || this.ngoiGhe || this.nhay || this.xeRieng?.dangLai) return;
+    if (this.ngoiDat?.muc === 1) { this.boNgoiDat(); return; }
+    this.ngoiDat = { muc: 1, k: this.ngoiDat?.k ?? 0 };
+    this.huongThan = this.than.group.rotation.y;
+  }
+  // đứng dậy (ngay: không có động tác, dùng khi dịch chuyển)
+  boNgoiDat(ngay = false) {
+    if (!this.ngoiDat) return;
+    if (ngay) { this.ngoiDat = null; this.traTay(); return; }
+    this.ngoiDat.muc = 0;
+  }
+  traTay() {
+    if (this.than.tayT && this._tayNgoi) { thaTay(this.than.tayT); thaTay(this.than.tayP); this._tayNgoi = false; }
+    if (this.than.chanT && !this.ngoiDat && !this.xeRieng?.dangLai) this.than.chanT.rotation.z = this.than.chanP.rotation.z = 0;
+  }
+  capNhatNhay(dt) {
+    const n = this.nhay; if (!n) return;
+    n.t += dt;
+    if (n.pha === "nhun") { if (n.t >= NHAY_NHUN) { n.pha = "bay"; n.t = 0; n.vy = NHAY_V; n.vx = this._vx; n.vz = this._vz; am.phat("nhay"); } }
+    else if (n.pha === "bay") {
+      n.y += n.vy * dt - 0.5 * NHAY_G * dt * dt; n.vy -= NHAY_G * dt; // tích phân đúng parabol (máy chậm, bước dài vẫn cao ~0,45 m)
+      if (n.y <= 0) { n.y = 0; n.pha = "dap"; n.t = 0; am.buocChan(am.beMat(this, this.viTriNgoai()), true); }
+    } else if (n.t >= NHAY_DAP) this.nhay = null;
+  }
+
   // ---------- Vòng lặp ----------
   diChuyen(dt) {
     let f = 0, s = 0;
+    const coPhim = () => !this.khoa && (this.phim.KeyW || this.phim.KeyA || this.phim.KeyS || this.phim.KeyD || this.phim.ArrowUp || this.phim.ArrowDown || this.phim.ArrowLeft || this.phim.ArrowRight || (this.stick && Math.hypot(this.stick.x, this.stick.y) > 0.35));
     // đang ngồi: bấm phím đi (hoặc kéo cần) thì đứng dậy, không thì ngồi yên
     if (this.ngoiGhe) {
-      const di = !this.khoa && (this.phim.KeyW || this.phim.KeyA || this.phim.KeyS || this.phim.KeyD || this.phim.ArrowUp || this.phim.ArrowDown || this.phim.ArrowLeft || this.phim.ArrowRight || (this.stick && Math.hypot(this.stick.x, this.stick.y) > 0.35));
-      if (di) this.dungDay();
+      if (coPhim()) this.dungDay();
       this.dangDi = false; this.dangChay = false; return;
     }
     if (!this.khoa) {
@@ -570,29 +659,63 @@ export class Game3D {
       if (this.phim.KeyD || this.phim.ArrowRight) s += 1;
       if (this.stick) { f -= this.stick.y; s += this.stick.x; }
     }
+    // lái xe máy
+    if (this.xeRieng.dangLai) {
+      this.dangDi = false; this.dangChay = false; this._vx = this._vz = 0;
+      if (this.khoa) { this.xeRieng.v = 0; return; }
+      if (this.tang !== 0 || this.oNgoai()) { this.xeRieng.xuong(); return; }
+      this.xeRieng.lai(dt, f, s, !!(this.phim.ShiftLeft || this.phim.ShiftRight || (this.stick && Math.hypot(this.stick.x, this.stick.y) > 0.95)));
+      return;
+    }
+    // ngồi bệt: đi thì đứng dậy; đang ngồi / đang đứng lên thì chưa đi được
+    if (this.ngoiDat) {
+      if (this.ngoiDat.muc === 1 && coPhim()) this.boNgoiDat();
+      if (this.ngoiDat.k > 0.15) { this.dangDi = false; this.dangChay = false; this._vx = this._vz = 0; return; }
+    }
+    const bay = this.nhay?.pha === "bay";
     const len = Math.hypot(f, s);
-    this.dangDi = len > 0.15;
-    if (!this.dangDi) { this.dangChay = false; return; }
+    this.dangDi = len > 0.15 && !bay;
+    if (len <= 0.15 && !bay) { this.dangChay = false; this._vx = this._vz = 0; return; }
     if (len > 1) { f /= len; s /= len; }
-    // đói, khát, kiệt sức thì đi chậm và không chạy được
-    this.dangChay = !this.camChay && (this.phim.ShiftLeft || this.phim.ShiftRight || (this.stick && len > 0.95));
-    const toc = (this.dangChay ? TOC_CHAY : TOC_DI) * (this.hsToc ?? 1) * dt;
-    const sy = Math.sin(this.yaw), cy = Math.cos(this.yaw);
-    // hướng nhìn: (−sin yaw, −cos yaw)
-    const dx = (-sy * f + cy * s) * toc, dz = (-cy * f - sy * s) * toc;
-    const vat = this.theGioi.vat[this.tang];
+    let dx, dz;
+    if (bay) { // trên không: giữ đà lúc bật nhảy, điều khiển thêm được chút ít
+      const sy = Math.sin(this.yaw), cy = Math.cos(this.yaw), toc = TOC_DI * (this.hsToc ?? 1) * 0.25;
+      dx = (this.nhay.vx + (-sy * f + cy * s) * toc) * dt; dz = (this.nhay.vz + (-cy * f - sy * s) * toc) * dt;
+    } else {
+      // đói, khát, kiệt sức thì đi chậm và không chạy được
+      this.dangChay = !this.camChay && (this.phim.ShiftLeft || this.phim.ShiftRight || (this.stick && len > 0.95));
+      const toc = (this.dangChay ? TOC_CHAY : TOC_DI) * (this.hsToc ?? 1) * dt;
+      const sy = Math.sin(this.yaw), cy = Math.cos(this.yaw);
+      // hướng nhìn: (−sin yaw, −cos yaw)
+      dx = (-sy * f + cy * s) * toc; dz = (-cy * f - sy * s) * toc;
+    }
     // đang bị xe ép sát (xe vừa chạy tới chỗ mình đứng) thì bỏ qua va chạm xe để bước ra được
     const keoXe = this.tang === 0 && this.p.z > 29 && this.giaoThong.chan(this.p.x, this.p.z);
-    const dung = (x, z) => {
-      for (const b of vat) if (x > b.minX - BAN_KINH && x < b.maxX + BAN_KINH && z > b.minZ - BAN_KINH && z < b.maxZ + BAN_KINH) return true;
-      for (const n of this.npc) if (n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.55) return true;
-      for (const nv of this.khach || []) if (nv.group.visible && Math.hypot(nv.group.position.x - x, nv.group.position.z - z) < 0.5) return true;
-      if (!keoXe && this.tang === 0 && z > 29 && this.giaoThong.chan(x, z)) return true;
-      return false;
-    };
-    if (!dung(this.p.x + dx, this.p.z)) this.p.x += dx;
-    if (!dung(this.p.x, this.p.z + dz)) this.p.z += dz;
-    this.huongThan = Math.atan2(dx, dz);
+    const tu = this._tu || (this._tu = [0, 0]); tu[0] = this.p.x; tu[1] = this.p.z;
+    const x0 = this.p.x, z0 = this.p.z;
+    if (!this.chanTai(this.p.x + dx, this.p.z, BAN_KINH, { tu, boXe: keoXe })) this.p.x += dx;
+    if (!this.chanTai(this.p.x, this.p.z + dz, BAN_KINH, { tu, boXe: keoXe })) this.p.z += dz;
+    if (dt > 0) { this._vx = (this.p.x - x0) / dt; this._vz = (this.p.z - z0) / dt; }
+    if (Math.abs(dx) + Math.abs(dz) > 1e-6) this.huongThan = Math.atan2(dx, dz);
+  }
+  // bị ô tô / taxi / xe buýt đang chạy tông: dừng mọi điều khiển, báo main.js chạy cảnh tai nạn
+  kiemTraTaiNan() {
+    if (this.capCuu || this.khoa || this.tang !== 0 || this.oNgoai() || this.ngoiGhe || this.t < this._anToan || !this.giaoThong.nhom.visible) return;
+    if (!duoiDuong(this.p.x, this.p.z)) return; // trên vỉa hè, trong sân công ty: không sao
+    const gt = this.giaoThong, xr = this.xeRieng;
+    let xe = gt.xeTong(this.p.x, this.p.z, xr.dangLai ? 0.45 : BAN_KINH);
+    if (!xe && xr.dangLai) for (const k of [-1, 1]) { const [a, b] = xr.diem(xr.x, xr.z, xr.huong, k); xe = xe || gt.xeTong(a, b, 0.35); }
+    if (xe) this.biTong(xe);
+  }
+  biTong(xe) {
+    if (this.capCuu || this.dangTong) return;
+    this.dangTong = true;
+    xe.tong = true;
+    am.phat("tong", xe.g.position.x, xe.g.position.z);
+    const truc = xe.lan.truc, huong = xe.lan.huong, dir = truc === "x" ? [huong, 0] : [0, huong];
+    const duong = this.p.z > 32.5 && this.p.z < 41.5 ? (this.p.x > 46 && this.p.x < 58 ? "ngã tư Hóng Chính – Kẹt Xe" : "đường Hóng Chính") : "đại lộ Kẹt Xe";
+    const tn = { xe, x: this.p.x, z: this.p.z, dir, v: xe.v, duong, laiXe: this.xeRieng.dangLai };
+    if (this.onTaiNan) this.onTaiNan(tn); else this.xiu({ taiNan: tn });
   }
   // Tự động: máy chạy chậm (dưới ~40 hình/giây) thì giảm dần độ phân giải vẽ, chạy dư sức thì tăng lại
   tuChinhDoPhanGiai(dt) {
@@ -613,18 +736,30 @@ export class Game3D {
     this.t += dt;
     this.tuChinhDoPhanGiai(dt);
     this.diChuyen(dt);
+    this.capNhatNhay(dt);
     const y = this.tang * CAO_TANG;
     // ngồi: hạ tầm mắt xuống ngang người ngồi ghế
     this._hNgoi += ((this.ngoiGhe ? 0.4 : 0) - this._hNgoi) * Math.min(1, dt * 7);
+    // ngồi bệt: k tiến dần 0 → 1 (ngồi xuống) hoặc về 0 (đứng dậy)
+    const nd = this.ngoiDat;
+    if (nd) { nd.k = Math.max(0, Math.min(1, nd.k + (nd.muc ? dt / 0.55 : -dt / 0.45))); if (!nd.muc && nd.k <= 0) { this.ngoiDat = null; this.traTay(); } }
+    const kNgoi = this.ngoiDat ? muot(this.ngoiDat.k) : 0;
+    // nhảy: độ cao, chùng gối lúc nhún và lúc tiếp đất (0..1)
+    const nh = this.nhay, yNhay = nh?.y || 0;
+    const chung = !nh ? 0 : nh.pha === "nhun" ? Math.sin(Math.min(1, nh.t / NHAY_NHUN) * Math.PI / 2) : nh.pha === "dap" ? Math.sin(Math.min(1, nh.t / NHAY_DAP) * Math.PI) : 0;
+    const laiXe = this.xeRieng.dangLai;
+    this.xeRieng.capNhat(dt, this.t);
     // camera
-    if (this.goc === "1") {
+    if (this.goc === "1" && laiXe) this.xeRieng.datCamera(this.camera, this.t);
+    else if (this.goc === "1") {
       const nhun = this.dangDi ? Math.sin(this.t * 9) * 0.035 : 0;
-      this.camera.position.set(this.p.x, y + MAT + nhun - this._hNgoi, this.p.z);
+      const hMat = this.vai === "cho" ? 0.3 : MAT - MAT_NGOI_DAT;
+      this.camera.position.set(this.p.x, y + MAT + nhun - this._hNgoi + yNhay - chung * (nh?.pha === "dap" ? 0.11 : 0.08) - kNgoi * hMat, this.p.z);
       this.camera.rotation.set(this.pitch, this.yaw, 0, "YXZ");
     } else {
       const xa = 3.6, cao = 1.2;
       const huong = new THREE.Vector3(-Math.sin(this.yaw) * Math.cos(this.pitch), Math.sin(this.pitch), -Math.cos(this.yaw) * Math.cos(this.pitch));
-      const dau = new THREE.Vector3(this.p.x, y + 1.55 - this._hNgoi, this.p.z);
+      const dau = new THREE.Vector3(this.p.x, y + 1.55 - this._hNgoi + yNhay * 0.6 - kNgoi * 0.7 - (laiXe ? 0.25 : 0), this.p.z);
       let k = xa;
       // kéo camera lại gần nếu vướng tường
       for (let d = 0.4; d <= xa; d += 0.2) {
@@ -633,17 +768,20 @@ export class Game3D {
       }
       this.camera.position.set(dau.x - huong.x * k, Math.min(dau.y - huong.y * k + cao * 0.3, y + 3.4), dau.z - huong.z * k);
       this.camera.lookAt(dau.x + huong.x * 2, dau.y + huong.y * 2, dau.z + huong.z * 2);
-      this.than.group.position.set(this.p.x, y + (this.ngoiGhe ? this.ngoiGhe.y : 0), this.p.z);
+      if (!laiXe) this.than.group.position.set(this.p.x, y + (this.ngoiGhe ? this.ngoiGhe.y : 0), this.p.z);
       this.than.group.visible = k > 1.1;
-      if (this.ngoiGhe) this.than.group.rotation.y = this.ngoiGhe.huong;
-      else if (this.dangDi && this.huongThan != null) {
+      if (laiXe) { /* thân nằm trong nhóm xe máy */ }
+      else if (this.ngoiGhe) this.than.group.rotation.y = this.ngoiGhe.huong;
+      else if ((this.dangDi || this.nhay) && this.huongThan != null) {
         const muc = this.huongThan; let d = muc - this.than.group.rotation.y;
         d = Math.atan2(Math.sin(d), Math.cos(d));
         this.than.group.rotation.y += d * Math.min(1, dt * 12);
       }
     }
     this.than.hoatDong(this.t, this.dangDi, this.phim.ShiftLeft ? 1.5 : 1);
-    this.tay.hoatDong(this.t, this.dangDi, dt);
+    if (laiXe) this.xeRieng.tuThe();
+    else if (this.goc === "3" && !this.ngoiGhe) this.tuTheNhayNgoi(nh, chung, kNgoi, y + yNhay);
+    if (!laiXe) this.tay.hoatDong(this.t, this.dangDi || (nh?.pha === "bay"), dt);
     // ngồi làm việc ở bàn mình: tiếng gõ phím, báo cho main.js mỗi giây
     if (this.lamViec && this.ngoiGhe && !this.khoa) {
       this._tLV += dt;
@@ -697,8 +835,10 @@ export class Game3D {
     // giao thông: ẩn khi đang ở sâu trong tòa nhà cho nhẹ máy
     this.dongVat.capNhat(dt, this.t, this.p, this.tang);
     if (this.tang === 0) this.sanKhau.capNhat(dt, this.t, this.p); else this.sanKhau.nhom.visible = false;
-    this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang }, !this.oNgoai() && (!(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2));
+    this.giaoThong.capNhat(dt, this.t, { x: this.p.x, z: this.p.z, tang: this.tang, an: !!this.capCuu }, !this.oNgoai() && (!(trong && this.p.z < 8) && this.tang < 2 || this.tang === 2));
     this.capCuu?.capNhat(dt);
+    this.troChuyenPho.capNhat(dt);
+    this.kiemTraTaiNan();
     capNhatChiTiet(dt, this.bauTroi.gio, this.p, this.tang, this.npc); // cửa tự mở, cửa sổ theo giờ, đồng hồ treo tường
     this.ngoaiCanh.capNhat(dt, this.t, this.tang === 0 ? this.p : null);
     const ngoai = this.oNgoai(); // ở địa điểm ngoài công ty: ẩn cả thành phố cho nhẹ máy
@@ -718,11 +858,41 @@ export class Game3D {
     if (this.hauKy) { this.hauKy.datMoiTruong(kq.ngay); this.hauKy.render(dt); }
     else this.renderer.render(this.scene, this.camera);
   }
-  // xỉu: khóa điều khiển, chạy cảnh cấp cứu
-  xiu({ onPha, onXong }) {
+  // dáng nhảy / ngồi bệt của thân người chơi (góc nhìn 3), gọi sau than.hoatDong; yGoc: độ cao gốc chân khi đứng thẳng
+  tuTheNhayNgoi(nh, chung, kNgoi, yGoc) {
+    const T = this.than; if (!T.chanT) return;
+    let a = 0, kg = 0, tay = null;
+    if (kNgoi > 0) { // ngồi bệt: đùi gập lên trước, gối co lên, hai tay đặt lên gối
+      a = 2.3 * kNgoi; kg = 1.73 * kNgoi;
+      const hong = 0.9 + (0.14 - 0.9) * kNgoi;
+      if (!T.goiT) { a = 1.5 * kNgoi; kg = 0; }
+      T.chanT.rotation.x = T.chanP.rotation.x = -a; T.chanT.rotation.z = 0.12 * kNgoi; T.chanP.rotation.z = -0.12 * kNgoi;
+      if (T.goiT) T.goiT.rotation.x = T.goiP.rotation.x = kg;
+      T.group.position.y = yGoc + hong - 0.9;
+      if (T.tayT && kNgoi > 0.55) {
+        const gx = 0.9 - 0.44 * Math.cos(a), gz = 0.44 * Math.sin(a);
+        chiTay(T.tayT, -0.13, gx + 0.03, gz - 0.02); chiTay(T.tayP, 0.13, gx + 0.03, gz - 0.02); this._tayNgoi = true;
+      } else this.traTay();
+      return;
+    }
+    this.traTay();
+    if (!nh) return;
+    if (nh.pha === "nhun") { a = 0.42 * chung; tay = 0.55 * chung; }               // nhún: chùng gối, vung tay ra sau
+    else if (nh.pha === "bay") { const len = Math.max(0, Math.min(1, nh.vy / NHAY_V)); a = 0.28; tay = -2.3 * (0.4 + 0.6 * len) - 0.3; } // bay: co gối, giơ tay lên
+    else { a = 0.5 * chung; tay = -0.5 * chung; }                                  // tiếp đất: chùng gối, tay đưa ra trước giữ thăng bằng
+    kg = T.goiT ? 2 * a : 0;
+    T.chanT.rotation.x = T.chanP.rotation.x = -a;
+    if (T.goiT) T.goiT.rotation.x = T.goiP.rotation.x = kg;
+    if (T.tayT && tay != null && !T.tayT.userData.coDinh) { T.tayT.rotation.x = tay; T.tayP.rotation.x = tay; T.tayT.rotation.z = 0.15; T.tayP.rotation.z = -0.15; }
+    T.group.position.y = yGoc - (T.goiT ? haHong(a, kg) : 0);
+  }
+  // xỉu: khóa điều khiển, chạy cảnh cấp cứu; taiNan: bị xe tông (xem cap-cuu.js)
+  xiu({ onPha, onXong, taiNan = null }) {
     if (this.capCuu) return;
+    if (this.xeRieng?.dangLai) this.xeRieng.xuong({ nga: true });
+    this.nhay = null; this.boNgoiDat(true); this.troChuyenPho?.traHet();
     this.datKhoa(true); this.xoaMucTieu();
-    this.capCuu = new CapCuu(this, { onPha, onXong });
+    this.capCuu = new CapCuu(this, { onPha, onXong, taiNan });
   }
   huy() {
     this.daHuy = true; // đang dựng dở (khoiDong) thì dừng ở bước kế tiếp

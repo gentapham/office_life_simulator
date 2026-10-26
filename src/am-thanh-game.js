@@ -370,6 +370,26 @@ class AmThanhGame {
     u_hu(t, x, z, cao = 1) { const ra = this.diem(x ?? null, z ?? null, "amHieuUng", 15, 0.16); if (!ra) return; const g = this.bao(t, 0.5, 0.03, 0.1, 0.12, ra); const f1 = this.loc("bandpass", 500, 5, g); const o = this.osc(t, "sawtooth", 160 * cao, f1, 0.3); o.frequency.linearRampToValueAtTime(190 * cao, t + 0.25); },
     hoi(t, x, z, cao = 1) { const ra = this.diem(x ?? null, z ?? null, "amHieuUng", 15, 0.16); if (!ra) return; const g = this.bao(t, 0.5, 0.02, 0.12, 0.1, ra); const f1 = this.loc("bandpass", 700, 5, g), f2 = this.loc("bandpass", 1150, 6, g); const o = this.osc(t, "sawtooth", 170 * cao, f1, 0.3); o.connect(f2); o.frequency.linearRampToValueAtTime(260 * cao, t + 0.25); },
     ngap(t, x, z) { const ra = this.diem(x ?? null, z ?? null, "amHieuUng", 12, 0.2); if (!ra) return; const g = this.bao(t, 0.5, 0.25, 0.4, 0.4, ra); const f1 = this.loc("bandpass", 650, 4, g); const o = this.osc(t, "sawtooth", 210, f1, 1.1); o.frequency.linearRampToValueAtTime(140, t + 1); f1.frequency.linearRampToValueAtTime(420, t + 1); },
+    // ---- tai nạn, xe máy ----
+    thang_gap(t, x, z) { // tiếng lốp rít khi thắng gấp
+      const ra = this.diem(x ?? null, z ?? null, "amHieuUng", 60, 0.55); if (!ra) return;
+      const l = this.ctx.createBiquadFilter(); l.type = "bandpass"; l.Q.value = 9; l.frequency.setValueAtTime(3100, t); l.frequency.linearRampToValueAtTime(2500, t + 0.9);
+      l.connect(this.bao(t, 0.9, 0.03, 0.55, 0.35, ra)); this.phatNhieu(t, "trang", 1.0, l);
+      const g = this.bao(t, 0.12, 0.05, 0.5, 0.3, this.loc("bandpass", 1800, 6, ra)); const o = this.osc(t, "sawtooth", 1750, g, 0.9); o.frequency.linearRampToValueAtTime(1500, t + 0.85);
+    },
+    va_cham(t) { // cú va mạnh: tiếng uỵch trầm + tiếng kim loại
+      const ra = this.diem(null, null, "amHieuUng", 1, 1);
+      const g = this.bao(t, 1, 0.002, 0.02, 0.45, ra); const o = this.osc(t, "sine", 85, g, 0.5); o.frequency.exponentialRampToValueAtTime(32, t + 0.4);
+      const g2 = this.bao(t, 0.7, 0.001, 0, 0.22, ra); this.phatNhieu(t, "nau", 0.3, this.loc("lowpass", 1200, 0.8, g2));
+      const g3 = this.bao(t, 0.25, 0.001, 0, 0.35, ra); this.phatNhieu(t, "trang", 0.4, this.loc("bandpass", 2400, 3, g3));
+    },
+    tong(t, x, z) { this.HIEU_UNG.thang_gap.call(this, t, x, z); this.HIEU_UNG.va_cham.call(this, t + 0.42); },
+    va_nhe(t, x, z) { const ra = this.diem(x ?? null, z ?? null, "amHieuUng", 12, 0.6); if (!ra) return; const g = this.bao(t, 0.7, 0.002, 0, 0.18, ra); const o = this.osc(t, "sine", 120, g, 0.2); o.frequency.exponentialRampToValueAtTime(50, t + 0.15); const g2 = this.bao(t, 0.3, 0.001, 0, 0.12, ra); this.phatNhieu(t, "trang", 0.15, this.loc("bandpass", 1500, 2, g2)); },
+    de_xe(t) { // đề máy xe tay ga
+      const ra = this.diem(null, null, "amHieuUng", 1, 0.35);
+      const g = this.bao(t, 0.5, 0.02, 0.35, 0.1, this.loc("lowpass", 900, 0.8, ra)); const o = this.osc(t, "sawtooth", 55, g, 0.5); o.frequency.linearRampToValueAtTime(80, t + 0.4);
+    },
+    nhay(t) { const ra = this.diem(null, null, "amHieuUng", 1, 0.18); const g = this.bao(t, 0.4, 0.002, 0, 0.08, ra); this.phatNhieu(t, "trang", 0.1, this.loc("bandpass", 1400, 1, g)); },
     dem_nguoc(t) { const ra = this.diem(null, null, "amHieuUng", 1, 0.25); const g = this.bao(t, 0.5, 0.002, 0.05, 0.1, ra); this.osc(t, "sine", 880, g, 0.18); },
   };
 
@@ -401,6 +421,31 @@ class AmThanhGame {
     n.p.pan.setTargetAtTime(d > 0.5 ? kep(phai / d, -1, 1) * 0.7 : 0, this.ctx.currentTime, 0.1);
   }
   tim(muc) { this.mucTim = muc; }
+
+  // ---------- Tiếng máy xe máy của người chơi: muc 0..1 (ga), null: tắt máy ----------
+  dongCo(muc) {
+    if (!this.ctx) return;
+    const c = this.ctx, t = c.currentTime;
+    if (muc == null) {
+      const n = this.dc; if (!n) return; this.dc = null;
+      n.g.gain.setTargetAtTime(0, t, 0.15); setTimeout(() => { try { n.o1.stop(); n.o2.stop(); n.lfo.stop(); } catch {} }, 900);
+      return;
+    }
+    if (!this.dc) {
+      const g = c.createGain(); g.gain.value = 0; g.connect(this.bus.amHieuUng);
+      const l = this.loc("lowpass", 600, 0.9, g);
+      const am = c.createGain(); am.gain.value = 0.6; am.connect(l);
+      const o1 = c.createOscillator(); o1.type = "sawtooth"; o1.connect(am);
+      const o2 = c.createOscillator(); o2.type = "square"; const g2 = c.createGain(); g2.gain.value = 0.35; o2.connect(g2); g2.connect(am);
+      const lfo = c.createOscillator(); lfo.type = "sine"; const lg = c.createGain(); lg.gain.value = 0.35; lfo.connect(lg); lg.connect(am.gain); // tiếng "phành phạch" của máy một xi-lanh
+      o1.start(); o2.start(); lfo.start();
+      this.dc = { g, l, o1, o2, lfo };
+    }
+    const n = this.dc, f = 34 + muc * 72;
+    n.o1.frequency.setTargetAtTime(f, t, 0.12); n.o2.frequency.setTargetAtTime(f * 0.5, t, 0.12); n.lfo.frequency.setTargetAtTime(f * 0.5, t, 0.12);
+    n.l.frequency.setTargetAtTime(420 + muc * 1500, t, 0.15);
+    n.g.gain.setTargetAtTime(0.05 + muc * 0.08, t, 0.15);
+  }
 
   // ---------- Cập nhật theo trạng thái game, gọi mỗi khung hình ----------
   capNhatGame(g, dt) {
@@ -509,7 +554,7 @@ class AmThanhGame {
   huyGame() {
     if (!this.ctx) return;
     for (const k of Object.keys(this.lop)) this.datLop(k, 0, 0.2);
-    this.coiCapCuu(false); this.mucTim = 0;
+    this.coiCapCuu(false); this.mucTim = 0; this.dongCo(null);
   }
 }
 

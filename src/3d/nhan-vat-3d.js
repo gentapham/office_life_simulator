@@ -538,7 +538,7 @@ export function taoNguoi(ma, nhRieng = null) {
   };
 
   const o = {
-    group: g, chieuCao: (sieu ? 1.95 : dauY + 0.3) * s, tayT, tayP, dau, than, dauY, chanT, chanP,
+    group: g, chieuCao: (sieu ? 1.95 : dauY + 0.3) * s, tayT, tayP, dau, than, dauY, chanT, chanP, goiT, goiP,
     truocGop: moi ? () => { giaiTay(tayT); giaiTay(tayP); } : undefined,
     thanHinh: moi ? P.rows : undefined, // dáng thân (người kiểu mới) để đồ thêm ôm theo thân
     ngoi: false,     // ngồi ghế gõ máy tính

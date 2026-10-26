@@ -10,8 +10,10 @@ import { themO, themAoMua, themDienThoai, themTui, taoNguoiDatCho, taoNguoiChayB
 import { vlCong, vlDiem, ganDiem, ganSuong, texChum, texTron, trongGio } from "./chi-tiet-pho.js";
 import { gopKhoi } from "./gop-khoi.js";
 import { BoLap } from "./toi-uu.js";
+import { am } from "../am-thanh-game.js";
 
-const duoiDuong = (x, z) => (z > 32.5 && z < 41.5) || (x > 47 && x < 57 && z > -130 && z < 160);
+export const duoiDuong = (x, z) => (z > 32.5 && z < 41.5) || (x > 47 && x < 57 && z > -130 && z < 160);
+const PHANH_GAP = 7.5; // ô tô thắng gấp tối đa (m/s²) khi có người lao ra đường
 const CHU_KY = [["chinh", "xanh", 16], ["chinh", "vang", 3], ["ngang", "xanh", 13], ["ngang", "vang", 3]];
 const MAU_SO = { xanh: "#3aff6a", vang: "#ffc23a", do: "#ff3a2a" };
 const kep = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -111,8 +113,8 @@ export class GiaoThong {
       const r = rnd();
       if (r < 0.08 && this.nguoi.length + 3 <= soNguoi) {
         // nhóm cổ động viên Quỷ Đỏ đi cùng nhau
-        for (let k = 0; k < 3; k++) them(fanQuyDo(rnd, { coCo: k === 0 }), l, Math.max(l.tu, Math.min(l.den, s - huong * k * 1.1)), huong, 1.15, (k - 1) * 0.55, { gio: [[8, 23]] });
-      } else if (r < 0.36) them(taoNguoiBua(rnd).nv, l, s, huong, toc * 0.9, lech);
+        for (let k = 0; k < 3; k++) them(fanQuyDo(rnd, { coCo: k === 0 }), l, Math.max(l.tu, Math.min(l.den, s - huong * k * 1.1)), huong, 1.15, (k - 1) * 0.55, { gio: [[8, 23]], kieu: "quy_do" });
+      } else if (r < 0.36) { const b = taoNguoiBua(rnd); them(b.nv, l, s, huong, toc * 0.9, lech, { kieu: b.kieu }); }
       else nguoiThuong(l, s, huong, toc, lech);
     }
     // người chạy bộ sáng sớm (5:30 - 7:30) trên vỉa hè đường Hóng
@@ -149,20 +151,21 @@ export class GiaoThong {
         if (coLy) { const ly = new THREE.Mesh(GEO_LY, VL_LY[c.loai === "caPhe" ? 0 : 1]); ly.position.set(0, -0.7, 0.07); ly.userData.dung = true; nv.tayP.add(ly); this._ly.push(ly); }
       }
       // dungYen vẫn là danh sách nhân vật (game3d đọc nv.group); giờ giấc, chỗ ngồi gắn thêm vào _cho
-      nv._cho = { gio: c.gio || [[0, 24]], x: c.x, z: c.z, an: false, chiuMua: !!c.mai };
+      nv._cho = { gio: c.gio || [[0, 24]], x: c.x, z: c.z, an: false, chiuMua: !!c.mai, ngoi: !!c.ngoi, huong: c.huong, mon: c.mon,
+        kieu: c.kieu || (c.loai === "caPhe" ? "ca_phe" : c.loai === "hem" ? "hem" : "dung") };
       this.nhom.add(nv.group); this.dungYen.push(nv);
     };
     for (const c of pho.choNguoiDung.slice(0, dienThoai ? 8 : 22)) ngoiCho({ ...c, mai: true }, rnd() < 0.7);
     for (const c of (pho.choNgoi || []).filter((_, i) => !dienThoai || i % 2 === 0)) ngoiCho(c, c.loai === "caPhe" || rnd2() < 0.4);
     // tượng người bạc đứng biểu diễn trên vỉa hè
-    for (const [x, z, h] of [[-62, 31.1, 0], [86, 43.0, Math.PI]]) { const t = tuongBac(); t.group.position.x = x; t.group.position.z = z; t.group.rotation.y = h; t._cho = { gio: [[8, 20]], x, z, an: false }; this.nhom.add(t.group); this.dungYen.push(t); }
+    for (const [x, z, h] of [[-62, 31.1, 0], [86, 43.0, Math.PI]]) { const t = tuongBac(); t.group.position.x = x; t.group.position.z = z; t.group.rotation.y = h; t._cho = { gio: [[8, 20]], x, z, an: false, kieu: "tuong_bac", huong: h }; this.nhom.add(t.group); this.dungYen.push(t); }
     // nhóm tụ tập tán gẫu: đứng quay vào nhau, người nói khua tay, người nghe gật gù, lâu lâu cười
     this.nhomNoi = [];
     for (const c of (pho.nhomNoi || []).slice(0, dienThoai ? 2 : 4)) {
       const so = dienThoai ? 2 : 3, ds = [];
       for (let k = 0; k < so; k++) {
         const a = (k / so) * Math.PI * 2 + rnd2(), x = c.x + Math.sin(a) * 0.58, z = c.z + Math.cos(a) * 0.58;
-        const nv = taoNguoiNgauNhien(rnd2); nv.group.position.set(x, 0, z); nv.group.rotation.y = Math.atan2(c.x - x, c.z - z);
+        const nv = taoNguoiNgauNhien(rnd2); nv.group.position.set(x, 0, z); nv.group.rotation.y = Math.atan2(c.x - x, c.z - z); nv._huong0 = nv.group.rotation.y;
         this.nhom.add(nv.group); ds.push(nv);
       }
       this.nhomNoi.push({ ds, gio: c.gio, x: c.x, z: c.z, an: false, nguoiNoi: 0, doi: 0 });
@@ -192,7 +195,7 @@ export class GiaoThong {
     for (const i of [0, 1]) lap(this._ly.filter(l => l.material === VL_LY[i]));
 
     // ---------- Đèn xe ban đêm: chùm pha trên mặt đường + quầng đèn (mỗi loại một lượt vẽ) ----------
-    const N = this.xe.length;
+    const N = this.xe.length + 1; // +1: xe máy riêng của người chơi (this.xeRieng)
     this.chum = { pos: new Float32Array(N * 2 * 6 * 3), uv: new Float32Array(N * 2 * 6 * 2), mau: new Float32Array(N * 2 * 6 * 3) };
     const gc = new THREE.BufferGeometry();
     gc.setAttribute("position", new THREE.BufferAttribute(this.chum.pos, 3).setUsage(THREE.DynamicDrawUsage));
@@ -245,9 +248,20 @@ export class GiaoThong {
       const p = x.g.position;
       const doc = x.lan.truc === "x" ? Math.abs(px - p.x) : Math.abs(pz - p.z);
       const ngang = x.lan.truc === "x" ? Math.abs(pz - p.z) : Math.abs(px - p.x);
-      if (doc < x.dai / 2 + 0.3 && ngang < rong + 0.3) return true;
+      if (doc < x.dai / 2 + 0.3 && ngang < rong + 0.3) return x;
     }
-    return false;
+    return null;
+  }
+  // ô tô / taxi / xe buýt đang chạy (trên 2,5 m/s) có đè lên vòng tròn (px, pz, r) không: trả về xe đó
+  xeTong(px, pz, r) {
+    for (const x of this.xe) {
+      if (!x.bat || !x.g.visible || x.loai === "xeMay" || x.v < 2.5) continue;
+      const p = x.g.position, nuaRong = x.loai === "buyt" ? 1.25 : 0.86;
+      const doc = x.lan.truc === "x" ? Math.abs(px - p.x) : Math.abs(pz - p.z);
+      const ngang = x.lan.truc === "x" ? Math.abs(pz - p.z) : Math.abs(px - p.x);
+      if (doc < x.dai / 2 + r && ngang < nuaRong + r) return x;
+    }
+    return null;
   }
   datViTriXe(xe) {
     const { lan, g } = xe;
@@ -313,7 +327,11 @@ export class GiaoThong {
     const trongNgaTu = { chinh: false, ngang: false };
     if (this.nhay) for (const x of this.xe) if (x.bat) { const p = x.g.position; if (p.x > 45.5 && p.x < 58.5 && p.z > 31 && p.z < 43) trongNgaTu[x.lan.nhom] = true; }
     const hsMua = mt.coMua ? 0.85 : 1;
-    for (const x of this.xe) if (!x.bat) {
+    // tai nạn: xe gây tai nạn thắng lại đứng yên; các xe khác tạm ẩn (đường bị chặn) khi cảnh cấp cứu tối màn hình
+    const tn = this.taiNan;
+    for (const x of this.xe) if (!x.bat || (tn && tn.chan)) {
+      if (tn && x === tn.xe) continue;
+      if (tn?.chan) { x.g.visible = false; continue; }
       // xe đang "nghỉ" vẫn trôi theo làn (ẩn), để lúc bật lại phân bố tự nhiên
       x.s += x.vMax * dt * x.lan.huong;
       if (x.lan.huong > 0 && x.s > x.lan.den) x.s = x.lan.tu; else if (x.lan.huong < 0 && x.s < x.lan.tu) x.s = x.lan.den;
@@ -323,6 +341,7 @@ export class GiaoThong {
       ds.sort((a, b) => (a.s - b.s) * lan.huong);
       for (let i = 0; i < ds.length; i++) {
         const x = ds[i];
+        if (tn?.chan && x !== tn.xe) continue;
         const dau = x.s + lan.huong * x.dai / 2;
         let vMuc = x.vMax * hsMua;
         // xe phía trước (cùng làn, xét cả làn xe máy và ô tô gần nhau)
@@ -341,13 +360,30 @@ export class GiaoThong {
         } else if (den !== "xanh" && kcVach > -0.5 && kcVach < 14) vMuc = Math.min(vMuc, Math.max(0, (kcVach - 0.4) * 1.2));
         // người chơi đứng trước đầu xe
         // chỉ nhường khi người chơi đang ở dưới lòng đường (đứng trên vỉa hè thì xe vẫn chạy)
-        if (nguoiChoi.tang === 0 && duoiDuong(nguoiChoi.x, nguoiChoi.z)) {
+        // ô tô: thấy người thì mất chừng 0,4 giây mới đạp thắng, thắng gấp cũng chỉ giảm được ~7,5 m/s mỗi giây:
+        // đứng giữa đường từ xa thì xe kịp dừng, lao ra ngay đầu xe thì không kịp
+        let vNguoi = Infinity;
+        if (nguoiChoi.tang === 0 && !nguoiChoi.an && duoiDuong(nguoiChoi.x, nguoiChoi.z)) {
           const doc = lan.truc === "x" ? (nguoiChoi.x - dau) * lan.huong : (nguoiChoi.z - dau) * lan.huong;
           const ngang = lan.truc === "x" ? Math.abs(nguoiChoi.z - x.ngang) : Math.abs(nguoiChoi.x - x.ngang);
-          if (doc > -0.3 && doc < 7 && ngang < (x.loai === "xeMay" ? 1.0 : 1.6)) vMuc = Math.min(vMuc, Math.max(0, (doc - 1.2) * 1.5));
+          if (x.loai === "xeMay") { if (doc > -0.3 && doc < 7 && ngang < 1.0) vMuc = Math.min(vMuc, Math.max(0, (doc - 1.2) * 1.5)); }
+          else if (doc > -0.6 && doc < 28 && ngang < (x.loai === "buyt" ? 1.95 : 1.65)) {
+            x.thay = (x.thay || 0) + dt;
+            if (x.thay > 0.4) vNguoi = Math.sqrt(Math.max(0, 2 * 6.5 * (doc - 1.8)));
+            if (!x.daBop && doc < 22 && x.v > 3) { x.daBop = true; am.phat("coi", x.g.position.x, x.g.position.z); }
+          } else { x.thay = 0; x.daBop = false; }
+        } else if (x.thay) { x.thay = 0; x.daBop = false; }
+        if (x.tong || (tn && x === tn.xe)) vNguoi = 0; // vừa tông người: thắng hết cỡ
+        // xe máy của người chơi dựng dưới lòng đường: xe sau phải dừng lại
+        const xr = this.xeRieng;
+        if (xr && !xr.bat && xr.g.visible && duoiDuong(xr.g.position.x, xr.g.position.z)) {
+          const q = xr.g.position, doc = lan.truc === "x" ? (q.x - dau) * lan.huong : (q.z - dau) * lan.huong;
+          const ngang = lan.truc === "x" ? Math.abs(q.z - x.ngang) : Math.abs(q.x - x.ngang);
+          if (doc > -0.5 && doc < 20 && ngang < (x.loai === "xeMay" ? 0.9 : x.loai === "buyt" ? 1.75 : 1.5)) vMuc = Math.min(vMuc, Math.max(0, (doc - 1.6) * 1.2));
         }
         const vCu = x.v;
-        x.v += (vMuc - x.v) * Math.min(1, dt * (vMuc < x.v ? 5 : 1.2));
+        if (vNguoi < vMuc && vNguoi < x.v) x.v = Math.max(vNguoi, x.v - (x.tong ? 25 : PHANH_GAP) * dt);
+        else x.v += (Math.min(vMuc, vNguoi) - x.v) * Math.min(1, dt * (vMuc < x.v ? 5 : 1.2));
         x.thang += ((x.v < vCu - 0.02 || x.v < 0.4 ? 1 : 0) - x.thang) * Math.min(1, dt * 8); // đèn thắng
         x.s += x.v * dt * lan.huong;
         if (lan.huong > 0 && x.s > lan.den) x.s = lan.tu; else if (lan.huong < 0 && x.s < lan.tu) x.s = lan.den;
@@ -382,8 +418,9 @@ export class GiaoThong {
       return k;
     };
     const diem = (x, z, s, c, l, kc, r, g, b) => { pa[n * 3] = x + l[0] * c + l[2] * s; pa[n * 3 + 1] = l[1]; pa[n * 3 + 2] = z - l[0] * s + l[2] * c; ka[n] = kc; ma[n * 3] = r; ma[n * 3 + 1] = g; ma[n * 3 + 2] = b; n++; };
-    for (const x of this.xe) {
-      if (!x.bat || !x.g.visible) continue;
+    for (let i = 0, nx = this.xe.length; i <= nx; i++) {
+      const x = i < nx ? this.xe[i] : this.xeRieng; // xe máy của người chơi: cùng kiểu đèn
+      if (!x || !x.bat || !x.g.visible) continue;
       const p = x.g.position, goc = x.g.rotation.y, s = Math.sin(goc), c = Math.cos(goc);
       const loai = x.loai === "xeMay" ? "xeMay" : x.loai === "buyt" ? "buyt" : "oto";
       const L = DEN_XE[loai];
@@ -412,6 +449,7 @@ export class GiaoThong {
     const h = mt.gio;
     const xa = (x, z) => Math.abs(x - nguoiChoi.x) + Math.abs(z - nguoiChoi.z);
     for (const p of this.nguoi) {
+      if (p.khoaNgoai) continue; // cảnh cấp cứu điều khiển (người hiếu kỳ chạy tới xem)
       const l = p.l;
       let x = l.truc === "x" ? p.s : l.co + p.lechHt, z = l.truc === "x" ? l.co + p.lechHt : p.s;
       // giờ giấc, mưa: ai không có ô / áo mưa thì về nhà khi mưa to; đổi trạng thái lúc ở xa người chơi
@@ -451,6 +489,8 @@ export class GiaoThong {
         else if (v.loai === "mua") { dung = true; p.nv.vietTay = v.tg > 2.0 ? 1 : 0; }
         if (v.tg <= 0) this.xongViec(p);
       }
+      // đang bị người chơi bắt chuyện: đứng lại quay sang nói; bị xe người chơi suýt tông: nhảy né sang bên
+      if (p.noi) { dung = true; if ((p.noi.t -= dt) <= 0) { p.noi = null; this.xongNoi?.(p); } }
       const dangDi = !gan && p.cho <= 0 && !dung;
       if (p.cho > 0) p.cho -= dt;
       if (dangDi) {
@@ -464,12 +504,15 @@ export class GiaoThong {
         const dl = p.lechHt - o.lat, can = o.r + 0.3;
         if (Math.abs(dl) < can) { const ben = dl >= 0 ? 1 : -1; let m = o.lat + ben * can; if (m > l.bien[1] || m < l.bien[0]) m = o.lat - ben * can; muc = m; }
       }
-      p.lechHt += (kep(muc, l.bien[0] - 0.25, l.bien[1] + 0.25) - p.lechHt) * Math.min(1, dt * 3.2);
+      p.lechHt += (kep(muc, l.bien[0] - 0.25, l.bien[1] + 0.25) - p.lechHt) * Math.min(1, dt * (p.ne > 0 ? 12 : 3.2));
       x = l.truc === "x" ? p.s : l.co + p.lechHt; z = l.truc === "x" ? l.co + p.lechHt : p.s;
-      p.nv.group.position.set(x, 0, z);
+      let nay = 0;
+      if (p.ne > 0) { p.ne -= dt; nay = Math.max(0, Math.sin((0.45 - p.ne) / 0.45 * Math.PI)) * 0.22; }
+      p.nv.group.position.set(x, nay, z);
       p.nv.group.visible = xa(x, z) < 70;
       let goc = l.truc === "x" ? (p.huong > 0 ? Math.PI / 2 : -Math.PI / 2) : (p.huong > 0 ? 0 : Math.PI);
-      if (p.tt?.loai === "mua") goc = Math.atan2(p.tt.c.x - x, p.tt.c.z - z);
+      if (p.noi) goc = p.noi.goc;
+      else if (p.tt?.loai === "mua") goc = Math.atan2(p.tt.c.x - x, p.tt.c.z - z);
       else if (p.tt?.loai === "chup") goc += p.tt.xoay;
       p.nv.group.rotation.y = goc;
       if (p.nv.group.visible) {

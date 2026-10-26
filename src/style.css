@@ -370,6 +370,9 @@ body.g3d-on { overflow: hidden; padding: 0; }
 /* Cần gạt di chuyển trên điện thoại */
 .g3d-stick { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%; border: 2px solid rgba(255,255,255,.35); background: rgba(17,16,13,.25); display: none; pointer-events: none; }
 .g3d-stick.on { display: block; }
+.g3d-nut-tay { position: absolute; right: 18px; z-index: 6; width: 58px; height: 58px; border-radius: 50%; border: 2px solid rgba(255,255,255,.4); background: rgba(17,16,13,.4); color: #fff; font: 600 12px var(--body, system-ui); }
+.g3d-nut-tay.nhay { bottom: 150px; } .g3d-nut-tay.ngoi { bottom: 216px; }
+.g3d.dang-thoai .g3d-nut-tay, .g3d.cap-cuu .g3d-nut-tay { display: none; }
 .g3d-stick i { position: absolute; left: 50%; top: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: rgba(255,255,255,.7); }
 @media (max-width: 720px) {
   .g3d-hud-phai { left: max(10px, env(safe-area-inset-left)); right: max(10px, env(safe-area-inset-right)); top: max(10px, env(safe-area-inset-top)); overflow-x: auto; justify-content: space-between; }
@@ -409,6 +412,8 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .g3d-xiu.nga { background: rgba(0,0,0,.35); }
 .g3d-xiu.den { background: rgba(0,0,0,1); }
 .g3d-xiu.sang { background: rgba(0,0,0,0); }
+.g3d-xiu.do { background: radial-gradient(ellipse at center, rgba(120,0,0,0) 35%, rgba(150,10,10,.55) 100%); transition: background .25s; }
+.g3d-xiu.do_dam { background: radial-gradient(ellipse at center, rgba(60,0,0,.45) 20%, rgba(90,0,0,.9) 100%); }
 .g3d-xiu.ket { background: rgba(10,8,6,.92); pointer-events: auto; }
 .g3d-xiu-the { max-width: 520px; display: grid; gap: 12px; font-family: var(--body, system-ui); font-size: 16px; line-height: 1.55; }
 .g3d-xiu-the small { color: #ff8a6a; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: 12px; }

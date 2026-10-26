@@ -633,7 +633,9 @@ export function dungChiTietPho(ctx) {
     const lx = taoNguoiLaiXe(rnd, { aoXeOm: congNghe }); lx.position.set(0, 0.86, -0.18); g.add(lx);
     if (!congNghe) { const b = new THREE.Mesh(new THREE.PlaneGeometry(0.44, 0.17), new THREE.MeshBasicMaterial({ map: bangNho("XE ÔM", "#f2d23a", "#1c1c1f"), side: THREE.DoubleSide })); b.position.set(0, 0.86, 0.55); g.add(b); haiMat(b); }
     can(x - 0.45, x + 0.45, z - 0.45, z + 0.45); ctx.vatCan.push({ x, z, r: 0.7 });
+    dsXeOm.push({ x, z, congNghe });
   };
+  const dsXeOm = []; // chỗ xe ôm chờ khách (người chơi tới bắt chuyện được)
   xeOm(7.05, 43.45, Math.PI + 0.35); xeOm(-26.4, 43.4, Math.PI - 0.3); xeOm(61.3, 43.5, Math.PI + 0.25, true);
 
   // ===== 9. Nhóm người tụ tập tán gẫu (vị trí đứng; người do giao thông dựng) =====
@@ -646,7 +648,7 @@ export function dungChiTietPho(ctx) {
   }
 
   return {
-    vachQua,
+    vachQua, xeOm: dsXeOm,
     capNhat(mt) {
       vlVung.uniforms.doSang.value = mt.denDuong * (0.5 + mt.uot * 0.25); // mặt đường ướt loang sáng hơn
       vlQuang.uniforms.doSang.value = mt.denDuong;

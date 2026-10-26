@@ -438,7 +438,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const binh = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 0.4, 8), vl(chon([0xe8702a, 0x2a5aa8]))); binh.position.set(x + 0.2, 0.79, z); nhom.add(binh);
     const du = new THREE.Mesh(new THREE.ConeGeometry(1.5, 0.6, 8, 1, true), vl(chon([0xf26fa6, 0x2e8b57, 0xe8702a, 0x2a5aa8]), { side: THREE.DoubleSide })); du.position.set(x, 2.4, z); nhom.add(du); H(0.05, 2.1, 0.05, 0xdddddd, x, 0, z);
     can(x - 0.8, x + 0.8, z - 0.4, z + 0.8);
-    choNguoiDung.push({ x: x - 0.6, z, huong: Math.PI / 2, ngoi: true, gio: [[6, 23]] }, { x: x + 0.6, z, huong: -Math.PI / 2, ngoi: true, gio: [[7, 11], [15, 22.5]] });
+    choNguoiDung.push({ x: x - 0.6, z, huong: Math.PI / 2, ngoi: true, gio: [[6, 23]], kieu: "tra_da" }, { x: x + 0.6, z, huong: -Math.PI / 2, ngoi: true, gio: [[7, 11], [15, 22.5]], kieu: "tra_da" });
     vatCanDiBo.push({ x, z: z + 0.2, r: 0.95 });
   };
   const GIO_XE = { "HỦ TIẾU GÕ": [[16.5, 25]], "CHÈ BÀ BẢY": [[13, 22.5]], "NƯỚC MÍA": [[8, 19]], "BÁNH MÌ BỰA": [[5.5, 11], [15, 21]] };
@@ -448,7 +448,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const b = new THREE.Mesh(new THREE.PlaneGeometry(1.3, 0.35), new THREE.MeshBasicMaterial({ map: bienHieu(ten, ["#c0262d", "#ffe14d"]) })); b.position.set(x, 1.8, z + 0.36); nhom.add(b);
     for (const s of [-1, 1]) { const bx = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.15, 0.06, 8), vl(0x1a1a1a)); bx.rotation.x = Math.PI / 2; bx.position.set(x + s * 0.5, 0.15, z + 0.36); nhom.add(bx); }
     can(x - 0.75, x + 0.75, z - 0.4, z + 0.4);
-    choNguoiDung.push({ x, z: z - 0.8, huong: 0, them: rnd() < 0.5 ? ["nonLa"] : [], gio: GIO_XE[ten] || [[6, 20.5]] });
+    choNguoiDung.push({ x, z: z - 0.8, huong: 0, them: rnd() < 0.5 ? ["nonLa"] : [], gio: GIO_XE[ten] || [[6, 20.5]], kieu: "ban_hang", mon: ten });
     vatCanDiBo.push({ x, z, r: 0.85 }, { x, z: z - 0.8, r: 0.35 }); diemMua.push({ x, z });
   };
   // chừa chỗ cho quán cà phê cóc, xe ôm, xe đẩy (vẫn rút số ngẫu nhiên như cũ để bố cục không đổi)
@@ -472,7 +472,7 @@ export function taoThanhPho(nhom, vat, denDem, { dienThoai = false } = {}) {
     const qc = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 1.6), new THREE.MeshBasicMaterial({ map: quangCao("SIÊU NHÂN HỒNG", "1 TRIỆU FOLLOW?", ["#f26fa6", "#7b2a52"], "#ffffff") })); qc.position.set(x + 0.9, 1.4, z + 0.7); qc.rotation.y = Math.PI; nhom.add(qc);
     const bien = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.5), new THREE.MeshBasicMaterial({ map: bienHieu("TRẠM BUÝT 69", ["#2e9a4a", "#ffffff"]), side: THREE.DoubleSide })); bien.position.set(x - 2.3, 2.7, z - 0.6); nhom.add(bien); haiMat(bien); H(0.06, 2.5, 0.06, 0x3a3d44, x - 2.3, 0, z - 0.6);
     can(x - 2, x + 2, z + 0.65, z + 0.85);
-    choNguoiDung.push({ x: x - 0.5, z: z + 0.2, huong: Math.PI, ngoi: true, gio: [[5, 22]] }, { x: x + 0.6, z: z - 0.2, huong: Math.PI, gio: [[6, 9], [16, 19.5]] });
+    choNguoiDung.push({ x: x - 0.5, z: z + 0.2, huong: Math.PI, ngoi: true, gio: [[5, 22]], kieu: "cho_buyt" }, { x: x + 0.6, z: z - 0.2, huong: Math.PI, gio: [[6, 9], [16, 19.5]], kieu: "cho_buyt" });
   };
   tram(-30, 42.6); tram(90, 42.6);
   for (const [x, z] of [[-62, 31.1], [86, 43.0]]) vatCanDiBo.push({ x, z, r: 0.55 }); // tượng người bạc

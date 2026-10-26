@@ -46,7 +46,7 @@ class BongBong {
     this.tex.needsUpdate = true;
   }
   hien(n, chu, dai) {
-    this.ve(chu, THEO_MA[n.ma]?.mau || "#e8702a");
+    this.ve(chu, n.mau || THEO_MA[n.ma]?.mau || "#e8702a"); // người đi đường: màu viền riêng (n.mau)
     this.n = n; this.t = 0; this.dai = dai; this.sp.visible = true; this.sp.material.opacity = 0;
   }
   tat() { this.n = null; this.sp.visible = false; }

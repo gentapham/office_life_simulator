@@ -305,14 +305,16 @@ function tuongBac() {
 }
 
 // chọn một kiểu "độc lạ" ngẫu nhiên cho người đi bộ
+// (tên kiểu ghi rõ bằng chữ: bản build rút gọn tên hàm nên không dùng f.name được)
 const KIEU = [
-  [sieuAnhHung, 5], [fanQuyDo, 5], [chuLongChim, 2], [khungLong, 2], [coTheDuc, 2], [shipperThap, 2], [ngoKhong, 1.5], [ongNoel, 1], [nguoiCamBang, 2.5], [beBongBay, 1.5],
+  [sieuAnhHung, 5, "sieu_anh_hung"], [fanQuyDo, 5, "quy_do"], [chuLongChim, 2, "long_chim"], [khungLong, 2, "khung_long"], [coTheDuc, 2, "the_duc"],
+  [shipperThap, 2, "shipper"], [ngoKhong, 1.5, "ngo_khong"], [ongNoel, 1, "noel"], [nguoiCamBang, 2.5, "cam_bang"], [beBongBay, 1.5, "bong_bay"],
 ];
 const TONG = KIEU.reduce((a, [, w]) => a + w, 0);
 export function taoNguoiBua(rnd) {
   let r = rnd() * TONG;
-  for (const [f, w] of KIEU) { if ((r -= w) <= 0) return { nv: f(rnd), kieu: f.name }; }
-  return { nv: sieuAnhHung(rnd), kieu: "sieuAnhHung" };
+  for (const [f, w, kieu] of KIEU) { if ((r -= w) <= 0) return { nv: f(rnd), kieu }; }
+  return { nv: sieuAnhHung(rnd), kieu: "sieu_anh_hung" };
 }
 export { tuongBac, sieuAnhHung };
 
