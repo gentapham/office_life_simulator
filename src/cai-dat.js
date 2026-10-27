@@ -34,8 +34,8 @@ export function amLuong(nhom) {
 export function cheDoNhe() {
   const c = caiDat();
   if (c.chatLuong === "thap") return true;
-  // Tự động trên điện thoại: máy đủ mạnh (RAM từ 4 GB, từ 6 nhân) dùng đồ hoạ mới mức Vừa; máy yếu giữ hình cũ cho mượt
-  if (c.chatLuong === "tu_dong") return matchMedia("(pointer: coarse)").matches && !dienThoaiManh();
+  // Tự động: điện thoại và máy tính cùng một đồ hoạ (mức Vừa); máy chậm thì tự hạ độ phân giải. Muốn hình cũ cho nhẹ: chọn Thấp
+  if (c.chatLuong === "tu_dong") return false;
   return false;
 }
 export function dienThoaiManh() {

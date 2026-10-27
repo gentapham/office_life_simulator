@@ -247,34 +247,40 @@ export class SanKhau {
     for (const [k, x] of [[0, SK.x1 + 0.11], [1, SK.x2 - 0.11]]) MAN_TUONG.z.forEach((z, i) => this.manTuong.push(taoMan([k * 5 + i + 2], MAN_TUONG.w, MAN_TUONG.h, x, MAN_TUONG.y, z, k ? -Math.PI / 2 : Math.PI / 2)));
     // capNhat không được gọi khi người chơi ở tầng khác: tự dừng video
     this.tCapNhat = 0;
-    this.canhGac = setInterval(() => { if (performance.now() - this.tCapNhat > 600) this.dungVideo(); }, 500);
+    this.canhGac = setInterval(() => { if (performance.now() - this.tCapNhat > 2500) this.dungVideo(); }, 500);
   }
   phat(man) {
     if (man.hong) return;
     if (!man.v.src) {
       // tải lần lượt: tối đa 2 video đang tải cùng lúc để video nào cũng mau có hình
-      if ([...this.manVideo, ...this.manTuong].filter(m => m.v.src && !m.sanSang && !m.hong).length >= 2) return;
+      if (this.soDangTai() >= 2) return;
       man.chay = true; man.nap(); return;
     }
     man.chay = true;
     man.v.play().catch(() => { man.chay = false; man.tThu = performance.now(); });
   }
+  soDangTai() { return (this.dsMan || []).filter(m => m.v.src && m.v.readyState < 3 && !m.hong && !m.sanSang).length; }
   dungVideo() { for (const m of [...this.manVideo, ...this.manTuong]) if (m.chay || !m.v.paused) { m.chay = false; m.v.pause(); } }
   // màn chiếu khi người chơi ở khu quảng trường (cả đoạn phố nhìn thấy sân khấu), tắt tiếng; đi xa thì dừng cho nhẹ máy
   capNhatVideo(gan, viTri) {
     this._viTri = viTri;
     this.tCapNhat = performance.now();
     const ds = this.dsMan || (this.dsMan = [...this.manVideo, ...this.manTuong]);
-    if (!gan) { this.dungVideo(); this.tVao = 0; return; }
+    if (!gan) {
+      this.dungVideo(); this.tVao = 0;
+      // ở xa vẫn tải trước từng video (không phát) để tới quảng trường là có hình ngay
+      if (this.soDangTai() < 2) { const m = ds.find(x => !x.v.src && !x.hong); if (m) { m.v.preload = "auto"; m.nap(); } }
+      return;
+    }
     const bay = performance.now();
     // màn khuất tầm nhìn quá 3 giây thì tạm dừng giải mã cho nhẹ máy, quay lại nhìn thì chiếu tiếp ngay
     // (lần đầu vào khu quảng trường chưa có màn nào được vẽ: cho chiếu hết trong 3 giây đầu)
     if (!this.tVao) this.tVao = bay;
     // máy yếu: chỉ 2 màn tường gần nhất chiếu, màn khác đứng ở khung hình cuối
-    let ganNhat = null;
-    if (this.dienThoai && this._viTri) ganNhat = new Set(this.manTuong.map(m => [Math.hypot(this._viTri.x - m.x, this._viTri.z - m.z), m]).sort((a, b) => a[0] - b[0]).slice(0, 2).map(x => x[1]));
+    const ganNhat = null; // mọi màn đều chiếu, cả trên điện thoại
     for (const m of ds) {
-      const thay = (bay - m.tThay < 3000 || bay - this.tVao < 3000) && (!ganNhat || !this.manTuong.includes(m) || ganNhat.has(m));
+      // ở khu quảng trường thì mọi màn đều chiếu liên tục (quay đi quay lại vẫn đang chạy), chỉ màn đang nhìn thấy mới chép hình lên card đồ hoạ
+      const thay = !ganNhat || !this.manTuong.includes(m) || ganNhat.has(m);
       if (thay && !m.chay && !(m.tThu && bay - m.tThu < 1500)) this.phat(m);
       else if (!thay && m.chay) { m.chay = false; m.v.pause(); }
     }
