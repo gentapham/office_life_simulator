@@ -36,7 +36,7 @@ export function taoSinhTon(dep) {
   const el = h("div", { class: "g3d-sinhton" },
     ...[...CHI_SO.map(c => [c.k, c.ten]), ["stress", "Stress"]].map(([k, ten]) => {
       thanh[k] = h("i");
-      dong[k] = h("div", { class: "st-dong" }, h("span", {}, ten), h("div", { class: "st-thanh" + (k === "stress" ? " xau" : "") }, thanh[k]));
+      dong[k] = h("div", { class: "st-dong" }, h("span", { "data-ngan": { nang_luong: "Sức", stress: "Stress" }[k] || ten }, ten), h("div", { class: "st-thanh" + (k === "stress" ? " xau" : "") }, thanh[k]));
       return dong[k];
     }),
   );

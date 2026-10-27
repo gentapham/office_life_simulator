@@ -795,7 +795,10 @@ async function render3D() {
     khung,
     h("div", { class: "g3d-hud-trai" }, h("div", { class: "g3d-the-ngay" }, UI.dayline, ttEl), theoDoiEl),
     mucTieu,
-    h("div", { class: "g3d-hud-phai" }, btnGoc,
+    h("div", { class: "g3d-hud-phai", onclick: e => { if (e.target.closest(".g3d-btn")) e.currentTarget.classList.remove("mo"); } },
+      // điện thoại: các nút gom vào một nút menu cho đỡ chiếm màn hình
+      h("button", { class: "g3d-menu-nut", type: "button", "aria-label": "Menu", onclick: e => { e.stopPropagation(); e.currentTarget.parentNode.classList.toggle("mo"); } }, h("i"), h("i"), h("i")),
+      btnGoc,
       h("button", { class: "g3d-btn", onclick: bangChiSo }, "Chỉ số"),
       h("button", { class: "g3d-btn", onclick: () => { hdTieuDe.textContent = "Hướng dẫn"; nutVao.textContent = "Tiếp tục"; moHuongDan(); } }, "Hướng dẫn"),
       h("button", { class: "g3d-btn", onclick: () => DT?.mo() }, "Điện thoại"),
@@ -827,6 +830,8 @@ async function render3D() {
     dsDongNghiep: () => Object.keys(CHO_NGOI_3D).filter(m => m !== L.ma && m !== "cho"),
   });
   app.querySelector(".g3d-hud-trai").append(sinhTon.el); app.querySelector(".g3d").append(sinhTon.vien);
+  // điện thoại: bảng thông tin bên trái thu gọn, chạm để xem đủ (ví, việc vặt, sự kiện, thời tiết)
+  app.querySelector(".g3d-hud-trai").addEventListener("click", e => e.currentTarget.classList.toggle("mo-rong"));
   const CHAN_DOAN = { "đói": "hạ đường huyết do nhịn ăn quá lâu", "khát": "mất nước nặng", "kiệt sức": "suy nhược cơ thể do làm việc quá sức" };
   const batXiu = lyDo => {
     dongHoiThoai(); datMucTieuHUD(""); saveWrite(null); DT?.dong(); moThanhTuu(ghiNhan("xiu"));
