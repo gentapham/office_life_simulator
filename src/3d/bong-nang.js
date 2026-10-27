@@ -116,7 +116,12 @@ export class BongNang {
     s.intensity = this.cuong;
     // vẽ lại bản đồ bóng cách một khung hình (bóng người, xe đi vẫn mượt ở 30 lần / giây): lượt vẽ bóng tốn một nửa
     const ve = this.cuong > 0.02;
-    this.le = !this.le; this.renderer.shadowMap.autoUpdate = false;
+    // đang đi / xoay: vẽ lại bóng mỗi khung hình (cách khung làm bóng người giật, để lại vệt mờ ở máy chạy chậm);
+    // đứng yên mới vẽ cách một khung cho nhẹ
+    const _lp = this._lp || (this._lp = new THREE.Vector3(1e9, 0, 0));
+    const dangDi = _lp.distanceToSquared(p) > 1e-6 || Math.abs((this._ly ?? 1e9) - yaw) > 1e-4;
+    _lp.copy(p); this._ly = yaw;
+    this.le = dangDi ? true : !this.le; this.renderer.shadowMap.autoUpdate = false;
     // khung không vẽ lại bóng: giữ nguyên vị trí nguồn sáng của lần vẽ trước, nếu không bản đồ bóng cũ bị chiếu lệch
     // theo người chơi đang di chuyển và bóng giật qua lại thành vệt mờ (rõ nhất khi giữ Shift chạy)
     if (!(ve && this.le) && this._daVe) {
