@@ -1146,5 +1146,7 @@ export function capNhatCua(dt, p, tang, dsNpc) {
 }
 // tiện: gọi một lần mỗi khung hình
 export function capNhatChiTiet(dt, gio, p, tang, dsNpc) { capNhatCuaSo(gio); capNhatCua(dt, p, tang, dsNpc); }
+// thoát ván: bỏ tham chiếu tới tòa nhà vừa dựng (để bộ nhớ được giải phóng)
+export function boChiTiet() { S = null; }
 // cho công cụ kiểm thử tự động (giống window.__g3d)
 if (typeof window !== "undefined") window.__chiTiet = { capNhatChiTiet, capNhatCua, capNhatCuaSo, THANG_MAY };

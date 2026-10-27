@@ -15,9 +15,9 @@ import { caiDat, khiDoiCaiDat, cheDoNhe, tiLeDiemAnh } from "../cai-dat.js";
 import { am } from "../am-thanh-game.js";
 import { DoiSong } from "./doi-song.js";
 import { cauBan as cauBanNV } from "../loi-noi-nho.js";
-import { THANG_MAY, capNhatChiTiet } from "./chi-tiet-cong-ty.js";
+import { THANG_MAY, capNhatChiTiet, boChiTiet } from "./chi-tiet-cong-ty.js";
 import { dungNgoaiCanh, NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi, trongNhaNgoai } from "./ngoai-canh.js";
-import { caiToiUu } from "./toi-uu.js";
+import { caiToiUu, capNhatMaTranNhanh, xuLyHangDoi, conChoGop } from "./toi-uu.js";
 import { caiToMau, mucVe } from "./to-mau.js";
 import { HauKy } from "./hau-ky.js";
 import { BongNang } from "./bong-nang.js";
@@ -89,6 +89,8 @@ export class Game3D {
     this.mucVe = caiToMau(mucVe());
     this.renderer = new THREE.WebGLRenderer({ antialias: !this.nhe && caiDat().chatLuong !== "vua" && this.mucVe < 2 && devicePixelRatio < 1.5, powerPreference: "high-performance" });
     this.renderer.setPixelRatio(tiLeDiemAnh());
+    // bản phát hành: không đọc nhật ký dịch shader (gọi đồng bộ, bắt trình duyệt chờ dịch xong mới vẽ tiếp)
+    this.renderer.debug.checkShaderErrors = !!import.meta.env.DEV;
     if (this.mucVe > 0) {
       // giữ màu phẳng, dịu: chỉ nén nhẹ vùng rất sáng (Neutral), không đổi tông màu thường
       this.renderer.toneMapping = THREE.NeutralToneMapping; this.renderer.toneMappingExposure = 1;
@@ -97,6 +99,7 @@ export class Game3D {
     khung.append(this.canvas);
 
     this.scene = new THREE.Scene();
+    capNhatMaTranNhanh(this.scene); // không tính lại ma trận của nhánh đang ẩn
     this.scene.fog = new THREE.Fog(0xbfd9ec, 40, 130);
     this.camera = new THREE.PerspectiveCamera(caiDat().tamNhin, 1, 0.05, 1000);
     this.scene.add(this.camera);
@@ -114,7 +117,7 @@ export class Game3D {
     this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.nhe });
     await buoc("san_khau", 0.66);
     this.sanKhau = new SanKhau(this.scene, { dienThoai: this.nhe });
-    this.THREE = THREE; // cho công cụ kiểm thử tự động
+    this.THREE = { Vector2: THREE.Vector2, Vector3: THREE.Vector3, Matrix4: THREE.Matrix4, Frustum: THREE.Frustum, Sphere: THREE.Sphere, Raycaster: THREE.Raycaster, PerspectiveCamera: THREE.PerspectiveCamera, MeshStandardMaterial: THREE.MeshStandardMaterial }; // cho công cụ kiểm thử tự động
     this.dongVat = new DongVat(this.scene, this.theGioi.vat, CAO_TANG);
     this.ngoaiCanh = dungNgoaiCanh(this.scene, this.theGioi.vat, { dienThoai: this.nhe });
     // dịch sẵn shader của các địa điểm ngoài công ty để lần đầu tới không bị khựng
@@ -173,9 +176,28 @@ export class Game3D {
     this._resize = () => this.resize(); addEventListener("resize", this._resize); this.resize();
     await buoc("dong_nghiep", 0.8);
     caiToiUu(this); // gộp nhân vật, đồ lặp (ô, áo mưa), tắt gương ở xa: bớt lượt vẽ
+    // gộp hết nhân vật ngay trong lúc chờ (không để dồn sang những giây đầu chơi, mỗi khung hình gộp một ít làm khựng);
+    // dạng khối gộp (có xương) cũng nhờ đó được dịch shader sẵn ở bước sau
+    for (let i = 0; conChoGop() && i < 400; i++) { xuLyHangDoi(50); await buoc("dong_nghiep", 0.8); }
     // dịch sẵn shader của cảnh đang có (song song nếu card đồ hoạ hỗ trợ) để lúc vào không khựng
     await buoc("shader", 0.82);
+    this.giaoThong.capNhatLap(); // khối lặp (ô, áo mưa) có sẵn để dịch shader luôn
     try { await this.renderer.compileAsync(this.scene, this.camera); } catch {}
+    // tải sẵn mọi ảnh (bảng hiệu, mặt tiền, cửa sổ...) lên card đồ hoạ: không thì mỗi lần đi tới khu mới, quay người
+    // là vài ảnh lớn tải cùng lúc (kèm tạo mipmap), hình đứng khựng
+    await buoc("vao_ca", 0.88);
+    const anh = new Set();
+    const lay = v => { if (v?.isTexture && !v.isVideoTexture && !v.isRenderTargetTexture && v.image) anh.add(v); };
+    this.scene.traverse(o => {
+      const ms = o.material ? (Array.isArray(o.material) ? o.material : [o.material]) : [];
+      for (const m of ms) { for (const k in m) lay(m[k]); if (m.uniforms) for (const u of Object.values(m.uniforms)) lay(u.value); }
+    });
+    let t0 = performance.now(), i = 0;
+    for (const t of anh) {
+      try { this.renderer.initTexture(t); } catch {}
+      if (performance.now() - t0 > 60) { await buoc("vao_ca", 0.88 + 0.06 * (++i / anh.size)); t0 = performance.now(); }
+      else i++;
+    }
     await buoc("vao_ca", 0.94);
     this._loop = this.loop.bind(this); this.dongHo = new THREE.Clock(); this.renderer.setAnimationLoop(this._loop);
     await nghi(); await nghi();
@@ -185,6 +207,8 @@ export class Game3D {
   // ---------- Điều khiển ----------
   taoDieuKhien() {
     const c = this.canvas;
+    // gỡ hết khi thoát ván (canvas còn bị renderer cũ tham chiếu: không gỡ thì giữ lại cả ván trong bộ nhớ)
+    this._ngat = new AbortController();
     this._keydown = e => {
       if (e.target.closest?.("input, textarea")) return;
       this.phim[e.code] = true;
@@ -202,7 +226,7 @@ export class Game3D {
     addEventListener("blur", this._blur);
 
     if (!this.dienThoai) {
-      c.addEventListener("click", () => { if (!this.khoa && document.pointerLockElement !== c) c.requestPointerLock?.(); });
+      c.addEventListener("click", () => { if (!this.khoa && document.pointerLockElement !== c) c.requestPointerLock?.(); }, { signal: this._ngat.signal });
       this._mouse = e => { if (document.pointerLockElement !== c || this.khoa) return; this.xoay(e.movementX * 0.0022, e.movementY * 0.0022); };
       document.addEventListener("mousemove", this._mouse);
       this._plc = () => this.onKhoaChuot?.(document.pointerLockElement === c);
@@ -221,7 +245,7 @@ export class Game3D {
             can.style.left = cx + "px"; can.style.top = cy + "px"; can.classList.add("on");
           } else if (idNhin == null) { idNhin = t.identifier; nx = t.clientX; ny = t.clientY; }
         }
-      }, { passive: true });
+      }, { passive: true, signal: this._ngat.signal });
       c.addEventListener("touchmove", e => {
         for (const t of e.changedTouches) {
           if (t.identifier === idStick) {
@@ -233,14 +257,14 @@ export class Game3D {
             this.xoay((t.clientX - nx) * 0.005, (t.clientY - ny) * 0.005); nx = t.clientX; ny = t.clientY;
           }
         }
-      }, { passive: true });
+      }, { passive: true, signal: this._ngat.signal });
       const het = e => {
         for (const t of e.changedTouches) {
           if (t.identifier === idStick) { idStick = null; this.stick.x = this.stick.y = 0; num.style.transform = ""; can.classList.remove("on"); }
           if (t.identifier === idNhin) idNhin = null;
         }
       };
-      c.addEventListener("touchend", het); c.addEventListener("touchcancel", het);
+      c.addEventListener("touchend", het, { signal: this._ngat.signal }); c.addEventListener("touchcancel", het, { signal: this._ngat.signal });
       // nút nhảy, ngồi bệt cho màn hình cảm ứng
       const nut = (lop, chu, f) => { const b = document.createElement("button"); b.className = "g3d-nut-tay " + lop; b.textContent = chu; b.addEventListener("click", e => { e.stopPropagation(); if (!this.khoa) f(); }); this.khung.append(b); };
       nut("nhay", "Nhảy", () => this.batNhay()); nut("ngoi", "Ngồi", () => this.batNgoiDat());
@@ -758,8 +782,8 @@ export class Game3D {
       this.camera.rotation.set(this.pitch, this.yaw, 0, "YXZ");
     } else {
       const xa = 3.6, cao = 1.2;
-      const huong = new THREE.Vector3(-Math.sin(this.yaw) * Math.cos(this.pitch), Math.sin(this.pitch), -Math.cos(this.yaw) * Math.cos(this.pitch));
-      const dau = new THREE.Vector3(this.p.x, y + 1.55 - this._hNgoi + yNhay * 0.6 - kNgoi * 0.7 - (laiXe ? 0.25 : 0), this.p.z);
+      const huong = (this._huong3 ||= new THREE.Vector3()).set(-Math.sin(this.yaw) * Math.cos(this.pitch), Math.sin(this.pitch), -Math.cos(this.yaw) * Math.cos(this.pitch));
+      const dau = (this._dau3 ||= new THREE.Vector3()).set(this.p.x, y + 1.55 - this._hNgoi + yNhay * 0.6 - kNgoi * 0.7 - (laiXe ? 0.25 : 0), this.p.z);
       let k = xa;
       // kéo camera lại gần nếu vướng tường
       for (let d = 0.4; d <= xa; d += 0.2) {
@@ -802,12 +826,18 @@ export class Game3D {
       n._kc = kc;
     }
     // hai bảng tên chồng lên nhau trên màn hình: chỉ giữ bảng của người gần hơn
-    const giu = [], v = this._v3;
-    for (const n of this.npc.filter(n => n.bang.visible).sort((a, b) => a._kc - b._kc)) {
+    // (mảng dùng lại mỗi khung hình, không cấp phát)
+    const ds = this._dsBang || (this._dsBang = []), giu = this._giuBang || (this._giuBang = []), v = this._v3;
+    ds.length = 0; let nGiu = 0;
+    for (const n of this.npc) if (n.bang.visible) ds.push(n);
+    if (ds.length > 1) ds.sort((a, b) => a._kc - b._kc);
+    for (const n of ds) {
       n.bang.getWorldPosition(v); v.project(this.camera);
       const rong = 0.5 / Math.max(1, n._kc); // bảng càng gần càng to
-      if (giu.some(q => Math.abs(q.x - v.x) < rong + q.r && Math.abs(q.y - v.y) < rong * 0.7 + q.r * 0.7)) n.bang.visible = false;
-      else giu.push({ x: v.x, y: v.y, r: rong });
+      let trung = false;
+      for (let i = 0; i < nGiu; i++) { const q = giu[i]; if (Math.abs(q.x - v.x) < rong + q.r && Math.abs(q.y - v.y) < rong * 0.7 + q.r * 0.7) { trung = true; break; } }
+      if (trung) { n.bang.visible = false; continue; }
+      const q = giu[nGiu] || (giu[nGiu] = { x: 0, y: 0, r: 0 }); q.x = v.x; q.y = v.y; q.r = rong; nGiu++;
     }
     for (const l of this.theGioi.nhapNhay) l.visible = Math.sin(this.t * 6 + l.position.x * 9) > -0.3;
     if (this.marker.visible) this.marker.children[0].scale.setScalar(1 + Math.sin(this.t * 4) * 0.08);
@@ -851,7 +881,9 @@ export class Game3D {
     }
     for (const nv of this.khach || []) if (nv.group.visible) nv.hoatDong(this.t + nv.group.position.x, false);
     // đêm khuya văn phòng vắng người: tắt bớt đèn
-    const gioNay = this.bauTroi.gio, khuya = !ngoai && trong && (gioNay >= 21 || gioNay < 6) && this.npc.filter(n => n.nv.group.visible && n.tang === this.tang && Math.abs(n.nv.group.position.x) < 21 && Math.abs(n.nv.group.position.z) < 14).length <= 2;
+    const gioNay = this.bauTroi.gio;
+    let khuya = !ngoai && trong && (gioNay >= 21 || gioNay < 6);
+    if (khuya) { let c = 0; for (const n of this.npc) if (n.nv.group.visible && n.tang === this.tang && Math.abs(n.nv.group.position.x) < 21 && Math.abs(n.nv.group.position.z) < 14) c++; khuya = c <= 2; }
     this._den = (this._den ?? 1) + ((khuya ? 0.5 : 1) - (this._den ?? 1)) * Math.min(1, dt * 1.5);
     if (this._den < 0.999) { this.hemi.intensity *= this._den; this.nen.intensity *= this._den; }
     am.capNhatGame(this, dt);
@@ -911,7 +943,24 @@ export class Game3D {
     if (this._mouse) document.removeEventListener("mousemove", this._mouse);
     if (this._plc) document.removeEventListener("pointerlockchange", this._plc);
     this.moKhoaChuot();
-    this.renderer?.dispose();
+    // trả ngay bộ nhớ card đồ hoạ (khối, ảnh của cả thành phố) thay vì chờ trình duyệt dọn: ra màn hình chính rồi vào lại
+    // nhiều lần trên điện thoại không bị đầy bộ nhớ, mất ngữ cảnh WebGL
+    boChiTiet();
+    // giải phóng khối, vật liệu, ảnh trên card đồ hoạ. Quan trọng: vật liệu / khối dùng chung giữa các ván (lưu ở
+    // biến cấp module) giữ hàm "dispose" của renderer cũ -> canvas cũ -> cả ván cũ; dispose() gỡ các tham chiếu đó
+    if (this.scene && this.renderer) {
+      const hinh = new Set(), vl = new Set(), anh = new Set();
+      const lay = v => { if (v?.isTexture) anh.add(v); };
+      this.scene.traverse(o => {
+        if (o.geometry) hinh.add(o.geometry);
+        if (o.skeleton) o.skeleton.dispose();
+        const ms = o.material ? (Array.isArray(o.material) ? o.material : [o.material]) : [];
+        for (const m of ms) { if (!m) continue; vl.add(m); for (const k in m) lay(m[k]); if (m.uniforms) for (const u of Object.values(m.uniforms)) lay(u?.value); }
+      });
+      for (const x of [...hinh, ...vl, ...anh]) { try { x.dispose(); } catch {} }
+    }
+    this._ngat?.abort();
+    this.renderer?.dispose(); this.renderer?.forceContextLoss?.();
     this.khung.replaceChildren();
   }
 }

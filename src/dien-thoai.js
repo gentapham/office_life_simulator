@@ -147,14 +147,30 @@ function veBanDo(cv, { g, diem = [], mucTieu, viec, oNgoai }) {
   c.fillText("G-ENT", px(0), pz(0)); c.fillText("SÂN KHẤU", px(110), pz(4));
   // điểm đến
   c.font = `600 ${Math.round(W / 22)}px sans-serif`;
-  for (const d of diem) { c.fillStyle = d.mau || "#2b6cb0"; c.beginPath(); c.arc(px(d.x), pz(d.z), 9, 0, 6.3); c.fill(); c.fillStyle = "#2a2622"; c.fillText(d.ten, px(d.x), pz(d.z) - 16); }
+  // tên điểm: đặt phía trên chấm; trùng chữ đã đặt thì thử phía dưới, bên phải, bên trái (chữ không chồng lên nhau)
+  const coChu = Math.round(W / 22), daDat = [];
+  const trung = (x0, y0, x1, y1) => daDat.some(r => x0 < r[2] && x1 > r[0] && y0 < r[3] && y1 > r[1]);
+  for (const d of diem) { c.fillStyle = d.mau || "#2b6cb0"; c.beginPath(); c.arc(px(d.x), pz(d.z), 9, 0, 6.3); c.fill(); }
+  c.lineJoin = "round";
+  for (const d of diem) {
+    const w = c.measureText(d.ten).width, x = Math.max(w / 2 + 4, Math.min(W - w / 2 - 4, px(d.x))), z = pz(d.z); // chữ không lọt ra ngoài mép
+    const cho = [[x, z - 16], [x, z + 16 + coChu * 0.8], [x + 14 + w / 2, z + coChu * 0.35], [x - 14 - w / 2, z + coChu * 0.35]];
+    let [cx, cy] = cho[0];
+    for (const [a, b] of cho) if (!trung(a - w / 2, b - coChu * 0.85, a + w / 2, b + coChu * 0.2)) { cx = a; cy = b; break; }
+    daDat.push([cx - w / 2, cy - coChu * 0.85, cx + w / 2, cy + coChu * 0.2]);
+    c.strokeStyle = "rgba(233, 227, 214, .9)"; c.lineWidth = 5; c.strokeText(d.ten, cx, cy);
+    c.fillStyle = "#2a2622"; c.fillText(d.ten, cx, cy);
+  }
   // việc vặt: chỗ mua hoặc người nhờ
   if (viec && viec.tang !== 2) {
     // ngoài khung bản đồ thì ghim ở mép, chỉ đúng hướng
     const x = Math.max(18, Math.min(W - 18, px(viec.x))), z = Math.max(34, Math.min(H - 18, pz(viec.z)));
     c.fillStyle = "#3fa66b"; c.strokeStyle = "#fff"; c.lineWidth = 3;
     c.beginPath(); c.moveTo(x, z - 13); c.lineTo(x + 13, z); c.lineTo(x, z + 13); c.lineTo(x - 13, z); c.closePath(); c.fill(); c.stroke();
-    c.fillStyle = "#1f5f3a"; c.fillText("Việc vặt", x, z - 20);
+    const w = c.measureText("Việc vặt").width, lx = Math.max(w / 2 + 4, Math.min(W - w / 2 - 4, x));
+    let ly = z - 20; if (trung(lx - w / 2, ly - coChu * 0.85, lx + w / 2, ly + coChu * 0.2)) ly = z + 20 + coChu * 0.8;
+    c.strokeStyle = "rgba(233, 227, 214, .9)"; c.lineWidth = 5; c.strokeText("Việc vặt", lx, ly);
+    c.fillStyle = "#1f5f3a"; c.fillText("Việc vặt", lx, ly);
   }
   // mục tiêu
   if (mucTieu) { c.strokeStyle = "#e8702a"; c.lineWidth = 4; c.beginPath(); c.arc(px(mucTieu.x), pz(mucTieu.z), 12, 0, 6.3); c.stroke(); }

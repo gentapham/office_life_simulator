@@ -342,6 +342,8 @@ body.g3d-on { overflow: hidden; padding: 0; }
 }
 .g3d-lichsu { left: 0; border-radius: 0 16px 16px 0; user-select: text; -webkit-user-select: text; }
 .g3d-drawer { right: 0; border-radius: 16px 0 0 16px; }
+/* nằm trên các nút HUD (nút menu, nút Nhảy / Ngồi trên điện thoại) để nút Đóng và nội dung không bị che */
+.g3d-lichsu, .g3d-drawer { z-index: 31; }
 .g3d-ke-dau { display: flex; justify-content: space-between; align-items: center; position: sticky; top: -14px; background: var(--g-nen-dac); padding: 4px 0 8px; }
 .g3d-ke-dau b { font-family: var(--display); font-size: 18px; }
 .g3d-log { display: grid; gap: 9px; color: var(--fg); }
@@ -448,6 +450,7 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .cd-nhom { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
 .cd-nhom button { background: rgba(255, 255, 255, .07); color: inherit; border: 1px solid rgba(255, 255, 255, .12); border-radius: 999px; padding: 6px 12px; font-size: 13px; }
 .cd-nhom button.on { background: #e8702a; border-color: #e8702a; color: #fff; }
+@media (pointer: coarse) { .cd-nhom button { min-height: 40px; padding: 6px 14px; } .cd-bat { min-height: 44px; } .cd-bat input { width: 24px; height: 24px; } }
 .cd-ghi { margin: 2px 0 0; font-size: 12px; color: #a9a095; }
 @media (max-width: 480px) { .cd-hang { grid-template-columns: 1fr 52px; } .cd-hang input[type=range] { grid-column: 1 / -1; grid-row: 2; } .cd-bat, .cd-chon { grid-template-columns: 1fr auto; } }
 
@@ -1094,4 +1097,69 @@ body.g3d-on { overflow: hidden; padding: 0; }
 @media (max-width: 720px), (max-height: 500px) {
   .g3d-hud-trai:not(.mo-rong) .st-dong span { font-size: 0; }
   .g3d-hud-trai:not(.mo-rong) .st-dong span::before { content: attr(data-ngan); font-size: 9px; }
+}
+
+/* ---------- Điện thoại: nhẹ máy, dễ chạm ---------- */
+@media (pointer: coarse) {
+  /* làm mờ nền (backdrop-filter) trên khung 3D đang chạy phải tính lại mỗi khung hình: tắt ở các ô HUD luôn hiện,
+     nền đậm hơn một chút để trông như cũ */
+  .g3d-the-ngay, .g3d-hud-phai, .g3d-muctieu, .g3d-sinhton, .g3d-theodoi { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(16, 15, 12, .86); }
+  /* vùng chạm rộng hơn hình vẽ (nút menu, đi nhanh, nút trong khung thoại) */
+  .g3d-menu-nut, .g3d-dinhanh, .g3d-nho { position: relative; }
+  .g3d-menu-nut::after, .g3d-dinhanh::after, .g3d-nho::after { content: ""; position: absolute; inset: -8px; }
+  .g3d-hud-phai.mo .g3d-btn { min-height: 40px; }
+  .g3d-choices .choice { min-height: 44px; align-items: center; }
+}
+
+/* ---------- Điện thoại xoay ngang (màn thấp): điện thoại trong game nằm ngang, khung thoại gọn ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .dt-lop { padding: 8px; }
+  .dt { width: min(720px, 100%); height: calc(100dvh - 16px); border-radius: 30px; border-width: 8px; }
+  .dt-tt { padding: 8px 22px 4px; font-size: 12px; } .dt-tt::after { top: 6px; height: 20px; }
+  /* màn chính: đồng hồ + 2 ô bên trái, lưới ứng dụng bên phải, cuộn được nếu thiếu chỗ */
+  .dt.chinh .dt-widget { padding: 6px 14px 4px; }
+  .dt.chinh .dt-w-gio b { font-size: 34px; }
+  .dt.chinh .dt-widget { grid-template-columns: auto 1fr; align-items: center; }
+  .dt.chinh .dt-w-phai { grid-template-columns: 1fr 1fr; }
+  .dt.chinh .dt-w-tt, .dt.chinh .dt-w-td { padding: 6px 10px; }
+  .dt.chinh .dt-w-tt b { font-size: 18px; }
+  .dt.chinh .dt-cham { display: none; }
+  .dt.chinh .dt-luoi { grid-template-columns: repeat(8, 1fr); gap: 8px 4px; padding: 6px 12px 2px; overflow-y: auto; min-height: 0; }
+  .dt.chinh .dt-icon { width: 46px; height: 46px; }
+  .dt.chinh .dt-dock { margin: 4px 10px 6px; padding: 6px; }
+  .dt.chinh .dt-dock .dt-icon { width: 40px; height: 40px; }
+  .dt-vach { margin: 2px auto 4px; }
+  .dt .dt-dau { padding: 2px 10px 6px; }
+  /* bản đồ vuông: vừa chiều cao màn hình */
+  .dt-bando { width: auto; max-width: 100%; height: calc(100dvh - 150px); aspect-ratio: 1; display: block; margin: 0 auto; }
+  /* khung thoại: chữ, lề gọn hơn để còn thấy cảnh */
+  .g3d-the { padding: 8px 14px 10px; gap: 3px; }
+  .g3d-chu { font-size: 15px; line-height: 1.45; }
+  .g3d-thoai { gap: 5px; bottom: max(6px, env(safe-area-inset-bottom)); }
+  .g3d-choices { gap: 4px; max-height: 46vh; }
+  .g3d-choices .choice { padding: 6px 12px; font-size: 14px; min-height: 40px; }
+}
+/* minigame trên điện thoại xoay ngang: phần đầu gọn, sân chơi cuộn được, ô và sân né thấp lại cho vừa (nút không bị cắt) */
+@media (max-height: 500px) and (orientation: landscape) {
+  .mg { padding: 6px max(10px, env(safe-area-inset-left)); }
+  .mg-hop { height: 100%; }
+  .mg-dau { padding: 8px 14px 6px; }
+  .mg-ten b { font-size: 17px; }
+  .mg-ten p { font-size: 12px; }
+  .mg-san { padding: 8px 14px; overflow-y: auto; }
+  .mg-chan { padding: 6px 14px 8px; min-height: 0; }
+  .mg-ne-san { min-height: 120px; }
+  .mg-bat-o { aspect-ratio: 2.6; min-height: 44px; }
+  .mg-nho-o { min-height: 44px; }
+  .mg-nut-lon.tron { width: 104px; height: 104px; }
+  .mg-chon-the { min-height: 84px; padding: 12px; }
+}
+/* thẻ kết thúc (xỉu, tai nạn): màn thấp thì gọn lại và cuộn được, nút không bị cắt */
+.g3d-xiu { overflow-y: auto; align-content: safe center; }
+@media (max-height: 500px) {
+  .g3d-xiu { padding: 12px max(16px, env(safe-area-inset-left)); }
+  .g3d-xiu-the { gap: 6px; font-size: 14px; line-height: 1.45; }
+  .g3d-xiu-the h2 { font-size: 22px; }
+  .g3d-xiu-the .nho { font-size: 12.5px; }
+  .g3d-xiu-the p { margin: 0; }
 }

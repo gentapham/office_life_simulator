@@ -20,6 +20,7 @@ export function chupChanDung(dsMa, co = 256) {
     r.render(scene, cam);
     kq[ma] = r.domElement.toDataURL("image/png");
     scene.remove(nv.group);
+    nv.group.userData.daGopNguoi = true; // chỉ chụp ảnh: khỏi gộp khối về sau (hàng đợi gộp của game)
   }
   r.dispose(); r.forceContextLoss?.();
   return kq;

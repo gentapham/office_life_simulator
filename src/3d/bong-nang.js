@@ -48,12 +48,19 @@ export class BongNang {
     const chiuSang = !!m && (m.isMeshLambertMaterial || m.isMeshStandardMaterial || m.isMeshPhongMaterial || m.isMeshToonMaterial);
     o.receiveShadow = chiuSang && !o.userData.khongNhanBong;
     let doBong = chiuSang && !o.userData.khongBong && !(m.transparent && m.opacity < 0.6) && m.colorWrite !== false;
+    // nhân vật, thú đã gộp thành một khối có xương: xét theo vị trí gốc như đồ nhỏ (ở xa, ở trong tòa nhà: không đổ bóng)
+    if (doBong && o.isSkinnedMesh && o.frustumCulled) {
+      const e = o.matrixWorld.elements, dx = e[12] - this._tam.x, dz = e[14] - this._tam.z;
+      if (dx * dx + dz * dz > XA * XA || this.trongCongTy(e)) doBong = false;
+    }
     if (doBong && !o.isSkinnedMesh) {
       const g = o.geometry; if (g && !g.boundingSphere) g.computeBoundingSphere();
       const r = g?.boundingSphere ? g.boundingSphere.radius * o.matrixWorld.getMaxScaleOnAxis() : Infinity;
       // đồ nhỏ (người, xe, đồ đạc) ở xa tâm bóng: bóng của nó rơi ngoài vùng có bóng, khỏi vẽ
       const e = o.matrixWorld.elements, dx = e[12] - this._tam.x, dz = e[14] - this._tam.z;
       if (r < 4 && dx * dx + dz * dz > XA * XA) doBong = false;
+      // đồ nhỏ, người trên tầng 1 công ty (xem trongCongTy)
+      else if (r < 4 && this.trongCongTy(e)) doBong = false;
       else if (r >= this.lon || o.isInstancedMesh && !this.khoiBong) {
         doBong = false;
         if (this.khoiBong && !this.daChia.has(o) && o.parent) { this.daChia.add(o); const l = this.lonTheoCha.get(o.parent) || []; l.push(o); this.lonTheoCha.set(o.parent, l); this.cho.add(o.parent); }
@@ -61,6 +68,10 @@ export class BongNang {
     }
     o.castShadow = doBong;
   }
+  // vị trí (ma trận thế giới e) nằm trên tầng 1 tòa nhà công ty: người chơi lên đó thì bóng nắng tắt (trong nhà), từ ngoài
+  // nhìn lên chỉ thấy cửa sổ vẽ sẵn, nên đồ đạc, người trên đó khỏi vẽ vào bản đồ bóng. (Tầng trệt thì không: đứng ở cửa
+  // sảnh vẫn nhìn thấy bóng người, bóng đồ đạc trong sảnh.)
+  trongCongTy(e) { return !this.khoiBong && e[13] > 3.5 && e[13] < 7.5 && e[12] > -19.6 && e[12] < 19.6 && e[14] > -13.6 && e[14] < 13.6; }
   // khối bóng: toạ độ đỉnh của mọi khối lớn cùng một nhóm cha, đổi về hệ của nhóm cha, chia theo ô lưới (mỗi ô một khối
   // cho mặt một phía, một khối cho mặt hai phía), gắn làm con của nhóm cha (ẩn / hiện theo nhóm: phố, địa điểm ngoài...)
   chiaNhom(cha, ds) {

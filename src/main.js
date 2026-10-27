@@ -260,6 +260,7 @@ function renderDatTen(ma) {
     ),
   );
   napChanDung();
+  napMod3D().catch(() => {});
   window.scrollTo(0, 0);
 }
 
@@ -402,10 +403,20 @@ let CHE_DO = "chu";      // "chu" | "3d"
 let G = null;            // Game3D đang chạy
 let G3D_MOD = null;      // module 3D (tải khi cần)
 let MAN_CHO = null; // màn hình chờ vào game (man-cho.js)
-function tatG3D() { MAN_CHO?.dong(true); MAN_CHO = null; DT?.dong(); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on"); }
+function tatG3D() {
+  MAN_CHO?.dong(true); MAN_CHO = null; DT?.dong(); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; sinhTon = null;
+  if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on");
+  // bỏ mọi tham chiếu tới ván 3D vừa thoát (hàm, phần tử giao diện giữ cả thế giới 3D trong bộ nhớ):
+  // không thì mỗi lần ra màn hình chính rồi vào lại, bộ nhớ tăng thêm cả một thành phố (~190 MB)
+  for (const k of Object.keys(UI)) UI[k] = UI[k] instanceof Element ? document.createElement("div") : null;
+  moHoiThoai = dongHoiThoai = thongBao3D = nextScene3D = dayEnd3D = () => {};
+  if (L) L.locNoi = null;
+  if (window.__g3d) window.__g3d = window.__L = window.__tiep = undefined;
+}
 
 async function openRole(ma, opts = {}) {
   tatG3D();
+  napMod3D().catch(() => {});
   app.replaceChildren(h("div", { class: "wrap" }));
   await loadMeta();
   const json = await loadStoryJson(ma);
@@ -686,6 +697,13 @@ function showSummary(chung) {
 // ============================================================
 // CHƠI 3D
 // ============================================================
+// tải trước mã 3D (lúc người chơi đang đọc cốt truyện / chọn vai) để bấm vào là dựng thế giới ngay
+let NAP_3D = null;
+function napMod3D(moiPhan) {
+  if (!NAP_3D) NAP_3D = Promise.all([import("./3d/game3d.js"), import("./3d/the-gioi.js"), import("./3d/bau-troi.js")]).catch(e => { NAP_3D = null; throw e; });
+  if (moiPhan) NAP_3D.then(moiPhan, () => {});
+  return NAP_3D;
+}
 async function render3D() {
   CHE_DO = "3d";
   document.body.classList.add("g3d-on");
@@ -695,9 +713,7 @@ async function render3D() {
   app.replaceChildren(h("div", { class: "g3d" }));
   mc.dat("ma", 0.03);
   if (!G3D_MOD) {
-    const a = await import("./3d/game3d.js"); mc.dat("ma", 0.09);
-    const b = await import("./3d/the-gioi.js"); mc.dat("ma", 0.14);
-    const c = await import("./3d/bau-troi.js");
+    const [a, b, c] = await napMod3D(() => mc.dat("ma", 0.09));
     G3D_MOD = { ...a, ...b, ...c };
   }
   // phông chữ của bảng hiệu, bảng tên phải có trước khi vẽ lên ảnh

@@ -128,6 +128,8 @@ function gopNguoiNgay(o, { xuongRieng = false, khongCat = false } = {}) {
   const me = new THREE.SkinnedMesh(hinh, vls.length === 1 ? vls[0] : vls);
   goc.add(me); me.updateMatrixWorld(true);
   me.bind(new THREE.Skeleton(xuong));
+  // xương (và nhóm cha của xương) luôn cập nhật ma trận kể cả khi đang ẩn: đỉnh bám vào nó vẫn được vẽ (xem capNhatMaTranNhanh)
+  for (const b of xuong) for (let x = b; x && x !== goc; x = x.parent) x._luonCapNhat = true;
   hinh.computeBoundingSphere();
   me.boundingSphere = hinh.boundingSphere.clone(); me.boundingSphere.radius += 0.6; // tay chân vung ra khi cử động
   if (khongCat) me.frustumCulled = false;
@@ -170,7 +172,9 @@ export class BoLap {
     if (!this.ds.length) return;
     if (!this.im) {
       this.im = new THREE.InstancedMesh(this.hinh, this.vl, this.ds.length);
-      this.im.frustumCulled = false; this.im.instanceMatrix.setUsage(THREE.DynamicDrawUsage); this.im.count = 0;
+      this.im.frustumCulled = false; this.im.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+      // tạo sẵn bộ màu từng cái (không thì lần đầu có màu, vd. lúc mới mưa, shader phải dịch lại giữa lúc chơi)
+      this.im.setColorAt(0, this.ds[0].mau); this.im.instanceColor.setUsage(THREE.DynamicDrawUsage); this.im.count = 0;
       this.cha.add(this.im); this.cha.updateMatrixWorld();
     }
     if (!this.cha.visible) return;
@@ -190,6 +194,32 @@ export class BoLap {
   }
 }
 const _I = new THREE.Matrix4();
+
+// ---------- Cập nhật ma trận: bỏ qua nhánh đang ẩn ----------
+// three.js cập nhật ma trận của MỌI đối tượng mỗi khung hình, kể cả nhánh đang ẩn (xe, người đi đường ở xa, sân khấu,
+// các địa điểm ngoài công ty...: gần nửa cảnh). Ở đây nhánh ẩn được bỏ qua và đánh dấu để tính lại ngay khi hiện ra.
+// Đối tượng tự định nghĩa updateMatrixWorld (camera, khung tay nhân vật, nhóm giữ đồ, SkinnedMesh) vẫn gọi đúng hàm của nó.
+const UMW = THREE.Object3D.prototype.updateMatrixWorld;
+function capNhatCay(o, force) {
+  if (o.matrixAutoUpdate) o.updateMatrix();
+  if (o.matrixWorldNeedsUpdate || force) {
+    if (o.matrixWorldAutoUpdate === true) {
+      if (o.parent === null) o.matrixWorld.copy(o.matrix);
+      else o.matrixWorld.multiplyMatrices(o.parent.matrixWorld, o.matrix);
+    }
+    o.matrixWorldNeedsUpdate = false;
+    force = true;
+  }
+  const ch = o.children;
+  for (let i = 0, l = ch.length; i < l; i++) {
+    const c = ch[i];
+    if (!c.visible && !c._luonCapNhat) { if (force) c.matrixWorldNeedsUpdate = true; continue; }
+    if (c.updateMatrixWorld !== UMW) c.updateMatrixWorld(force); else capNhatCay(c, force);
+  }
+}
+export function capNhatMaTranNhanh(scene) {
+  scene.updateMatrixWorld = function (force) { capNhatCay(this, force); };
+}
 
 // ---------- Móc vào vòng vẽ ----------
 export function caiToiUu(game) {

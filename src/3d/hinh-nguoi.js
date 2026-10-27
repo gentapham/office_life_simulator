@@ -460,7 +460,7 @@ export function giaiTay(tay) {
   const { bu, xoay, tren, kh, ben } = d0;
   // đồ gắn thêm vào tay theo toạ độ người khối hộp (lòng bàn tay ở -0,68 tính từ vai) -> khung cẳng tay (lòng bàn tay
   // ở -0,34 tính từ khuỷu); đồ đánh dấu userData.dung (ly, cốc) -> nhóm giữ đứng thẳng (gốc ở lòng bàn tay)
-  for (const c of [...tay.children]) if (c !== bu) {
+  if (tay.children.length > 1) for (const c of [...tay.children]) if (c !== bu) {
     tay.remove(c);
     if (c.userData.dung && d0.dung) { c.position.y += 0.68; c.position.z -= 0.05; d0.dung.add(c); }
     else { c.position.y += BU_TAY; kh.add(c); }
