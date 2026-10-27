@@ -8,6 +8,7 @@ import { taoDienThoai, ghiNhan, ghiMonPho, ghiKetThuc, veBoSuuTap } from "./dien
 import { DIA_DIEM } from "./dia-diem.js";
 import { logoSVG } from "./logo.js";
 import { taoManCho } from "./man-cho.js";
+import { moCotTruyen } from "./cot-truyen.js";
 
 const app = document.getElementById("app");
 const SAVE_KEY = "owfad_doc_thu_v1";
@@ -410,10 +411,12 @@ async function openRole(ma, opts = {}) {
   const json = await loadStoryJson(ma);
   L = new LuotChoi(ma, json);
   const save = saveLoad(ma);
-  if (opts.tiepTuc && save && save.ma === ma) L.fromSave(save);
-  else { saveWrite(null); L.batDauNgay(1); }
-  render3D();
+  if (opts.tiepTuc && save && save.ma === ma) { L.fromSave(save); render3D(); return; }
+  saveWrite(null); L.batDauNgay(1);
+  // vai mới: đọc tóm tắt cốt truyện, nhiệm vụ và cách kết thúc trước khi vào văn phòng
+  moCotTruyen(h, { ...thongTinCotTruyen(), onDong: () => { if (L?.ma === ma && CHE_DO !== "3d") render3D(); } });
 }
+const thongTinCotTruyen = () => { const n = THEO_MA[L.ma]; return { vai: L.ma, ten: L.v(L.ma) || n.ten, tenVai: n.vai, chuc: n.chuc, cau: n.cau }; };
 
 function updateDayline(gio, noi) {
   if (!UI.dayline) return;
@@ -784,7 +787,7 @@ async function render3D() {
           h("li", {}, "Cảnh ở ngoài công ty: ra cổng để đi tới đó."),
           h("li", {}, "Hết việc trong ngày, ra cổng để về nhà ngủ. Game tự lưu."))),
       ),
-      h("footer", {}, nutVao, h("button", { class: "btn ghost", onclick: () => moCaiDat(h, { trongGame: true }) }, "Cài đặt"), h("button", { class: "btn ghost", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát ra màn hình chính"))));
+      h("footer", {}, nutVao, h("button", { class: "btn ghost", onclick: () => moCotTruyen(h, { ...thongTinCotTruyen(), xemLai: true }) }, "Cốt truyện"), h("button", { class: "btn ghost", onclick: () => moCaiDat(h, { trongGame: true }) }, "Cài đặt"), h("button", { class: "btn ghost", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát ra màn hình chính"))));
   let daVao = false;
   const moHuongDan = () => { tamNgung.hidden = false; g?.moKhoaChuot(); };
 
