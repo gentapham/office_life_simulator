@@ -108,15 +108,15 @@ export class Game3D {
     if (this.mucVe > 0) this.bong = new BongNang(this.renderer, this.scene, this.camera, this.mat_troi, this.mucVe);
 
     await buoc("toa_nha", 0.28);
-    this.theGioi = taoTheGioi(this.scene, { dienThoai: this.nhe });
+    this.theGioi = taoTheGioi(this.scene, { dienThoai: this.nhe || this.dienThoai });
     await buoc("duong_pho", 0.55);
     this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot, muc: this.mucVe });
-    this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.nhe });
+    this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.nhe || this.dienThoai });
     await buoc("san_khau", 0.66);
-    this.sanKhau = new SanKhau(this.scene, { dienThoai: this.nhe });
+    this.sanKhau = new SanKhau(this.scene, { dienThoai: this.nhe || this.dienThoai });
     this.THREE = THREE; // cho công cụ kiểm thử tự động
     this.dongVat = new DongVat(this.scene, this.theGioi.vat, CAO_TANG);
-    this.ngoaiCanh = dungNgoaiCanh(this.scene, this.theGioi.vat, { dienThoai: this.nhe });
+    this.ngoaiCanh = dungNgoaiCanh(this.scene, this.theGioi.vat, { dienThoai: this.nhe || this.dienThoai });
     // dịch sẵn shader của các địa điểm ngoài công ty để lần đầu tới không bị khựng
     this._henBien = setTimeout(() => {
       if (!this.renderer) return;

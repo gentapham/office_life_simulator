@@ -34,8 +34,13 @@ export function amLuong(nhom) {
 export function cheDoNhe() {
   const c = caiDat();
   if (c.chatLuong === "thap") return true;
-  if (c.chatLuong === "tu_dong") return matchMedia("(pointer: coarse)").matches;
+  // Tự động trên điện thoại: máy đủ mạnh (RAM từ 4 GB, từ 6 nhân) dùng đồ hoạ mới mức Vừa; máy yếu giữ hình cũ cho mượt
+  if (c.chatLuong === "tu_dong") return matchMedia("(pointer: coarse)").matches && !dienThoaiManh();
   return false;
+}
+export function dienThoaiManh() {
+  const ram = navigator.deviceMemory ?? 4, nhan = navigator.hardwareConcurrency ?? 4;
+  return ram >= 4 && nhan >= 6;
 }
 // Thời gian đọc: hệ số kéo dài cho chữ thông báo, bong bóng lời nói; thời gian chọn câu trả lời (giây, 0 = không hẹn giờ)
 const DOC = { cham: { heSo: 1.7, nhan: 3, toiThieu: 15 }, vua: { heSo: 1.3, nhan: 2, toiThieu: 10 }, nhanh: { heSo: 1, nhan: 1, toiThieu: 0 } };
