@@ -632,7 +632,9 @@ export function dungChiTietPho(ctx) {
     g.add(taoXeMay(congNghe ? 0x2a2c31 : chon([0xc0262d, 0x1c1c1f, 0x2a5aa8]), "so"));
     const lx = taoNguoiLaiXe(rnd, { aoXeOm: congNghe }); lx.position.set(0, 0.86, -0.18); g.add(lx);
     if (!congNghe) { const b = new THREE.Mesh(new THREE.PlaneGeometry(0.44, 0.17), new THREE.MeshBasicMaterial({ map: bangNho("XE ÔM", "#f2d23a", "#1c1c1f"), side: THREE.DoubleSide })); b.position.set(0, 0.86, 0.55); g.add(b); haiMat(b); }
-    can(x - 0.45, x + 0.45, z - 0.45, z + 0.45); ctx.vatCan.push({ x, z, r: 0.7 });
+    // khung va chạm theo đúng thân xe (dài ~1,9 m, ngang ~0,7 m) và hướng xe dựng
+    { const doc = Math.abs(Math.cos(goc)) > 0.5, nd = 0.95, nn = 0.35; if (doc) can(x - nn, x + nn, z - nd, z + nd); else can(x - nd, x + nd, z - nn, z + nn); }
+    ctx.vatCan.push({ x, z, r: 0.9 });
     dsXeOm.push({ x, z, congNghe });
   };
   const dsXeOm = []; // chỗ xe ôm chờ khách (người chơi tới bắt chuyện được)
