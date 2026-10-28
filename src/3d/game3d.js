@@ -625,7 +625,8 @@ export class Game3D {
     for (const n of this.npc) if (n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < rn) return VUONG_VAT;
     for (const nv of this.khach || []) if (nv.group.visible && Math.hypot(nv.group.position.x - x, nv.group.position.z - z) < r + 0.18) return VUONG_VAT;
     if (this.tang !== 0 || this.oNgoai()) return null;
-    if (!boXe && z > 29) { const xe = this.giaoThong.chan(x, z); if (xe) { this._vuongXe.xe = xe; return this._vuongXe; } }
+    // xe trên mọi tuyến đường (cả đại lộ Kẹt Xe), trừ trong khuôn viên công ty
+    if (!boXe && !(Math.abs(x) < 24 && z < 30)) { const xe = this.giaoThong.chan(x, z); if (xe) { this._vuongXe.xe = xe; return this._vuongXe; } }
     if (!boXeRieng && this.xeRieng.chan(x, z, r)) return VUONG_VAT;
     if (this.giaoThong.nhom.visible) {
       const m = this.troChuyenPho.timGan(x, z, r + 0.2);
@@ -714,7 +715,7 @@ export class Game3D {
       dx = (-sy * f + cy * s) * toc; dz = (-cy * f - sy * s) * toc;
     }
     // đang bị xe ép sát (xe vừa chạy tới chỗ mình đứng) thì bỏ qua va chạm xe để bước ra được
-    const keoXe = this.tang === 0 && this.p.z > 29 && this.giaoThong.chan(this.p.x, this.p.z);
+    const keoXe = this.tang === 0 && !this.oNgoai() && !(Math.abs(this.p.x) < 24 && this.p.z < 30) && this.giaoThong.chan(this.p.x, this.p.z);
     const tu = this._tu || (this._tu = [0, 0]); tu[0] = this.p.x; tu[1] = this.p.z;
     const x0 = this.p.x, z0 = this.p.z;
     if (!this.chanTai(this.p.x + dx, this.p.z, BAN_KINH, { tu, boXe: keoXe })) this.p.x += dx;
