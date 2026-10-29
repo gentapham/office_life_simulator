@@ -116,6 +116,17 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
     { const b = new THREE.Mesh(new THREE.ConeGeometry(0.22, 0.6, 4), vl(0xffcf3a)); b.position.set(13.5, 0.3, -12.3); nhom.add(b); }
     // biển nhắc nhở (giọng bác Bình)
     T(1.6, 0.5, chu("xanuoc", 400, 125, "#ffffff", "#c0262d", ["XẢ NƯỚC GIÙM CÁI", "Ký tên: Bác Bình"], 46), 17.2, 2.55, Z1 + 0.03, 0);
+    // câu đối khung gỗ trên dãy bồn tiểu
+    T(2.1, 0.62, tranh("caudoiwc", 840, 248, (g, w, h) => {
+      g.fillStyle = "#6b3f1f"; g.fillRect(0, 0, w, h); g.fillStyle = "#fbf3df"; g.fillRect(14, 14, w - 28, h - 28);
+      g.strokeStyle = "#c0262d"; g.lineWidth = 4; g.strokeRect(26, 26, w - 52, h - 52);
+      g.fillStyle = "#8a1c1c"; g.textAlign = "center"; g.textBaseline = "middle";
+      for (const [i, d] of ["Kẻ Dại Nhịn Đái Nơi Công Sở", "Người Khôn Ỉa Hết Cả Một Giờ"].entries()) {
+        let c = 58; g.font = `800 ${c}px 'Be Vietnam Pro', system-ui, sans-serif`;
+        while (g.measureText(d).width > w - 90 && c > 20) { c -= 2; g.font = `800 ${c}px 'Be Vietnam Pro', system-ui, sans-serif`; }
+        g.fillText(d, w / 2, h * (i ? 0.68 : 0.36));
+      }
+    }), X2, 1.98, -9.3, -Math.PI / 2);
     T(1.4, 0.36, chu("tietkiem", 360, 92, "#1f4fa8", "#ffffff", ["TIẾT KIỆM NƯỚC = TIẾT KIỆM LƯƠNG"], 30), X1 + 0.02, 2.55, -8.85, Math.PI / 2);
   }
 
