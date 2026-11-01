@@ -3,6 +3,7 @@
 // vòm trời chuyển màu như tô màu nước, mây tích (cumulus) to mềm vẽ bằng tấm phẳng luôn quay về camera (cả bầu mây một
 // lượt vẽ, trôi trong shader), mù ấm phía chân trời, nắng vàng ấm / bóng xanh tím mát, đêm xanh lam kiểu tranh.
 import * as THREE from "three";
+import { MayBay } from "./may-bay.js";
 import { gopNguoi } from "./toi-uu.js";
 
 // Các kiểu thời tiết. may: số đám mây, mauMay: độ tối của mây, mua: số hạt mưa, set: có sét
@@ -55,6 +56,7 @@ export class BauTroi {
     this.gio = 8; this.loai = "nang"; this.tt = THOI_TIET.nang;
     this.uot = 0; this.matUot = matUot.map(m => ({ m, goc: m.color.clone() }));
     const g = this.nhom = new THREE.Group(); scene.add(g);
+    this.mayBay = new MayBay(scene); // máy bay G-Airplane thỉnh thoảng bay ngang
     if (muc > 0) { this.taoTranh(); this.taoMua(); return; }
 
     // Vòm trời: màu đỉnh, màu chân trời, quầng sáng quanh mặt trời
@@ -331,6 +333,7 @@ export class BauTroi {
 
   // Cập nhật mỗi khung hình. den: ánh sáng của game (hemi, nen, matTroi)
   capNhat(dt, camera, den, trongNha) {
+    this.mayBay.capNhat(dt, camera, this.gio, this.tt.mua > 0);
     if (this.muc > 0) return this.capNhatTranh(dt, camera, den, trongNha);
     const h = this.gio, tt = this.tt;
     // vị trí mặt trời theo giờ: mọc 5:45 hướng đông (+x), lặn 18:15 hướng tây (-x)
