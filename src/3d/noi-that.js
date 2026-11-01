@@ -113,6 +113,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
     tru(0.17, 0.45, 0x8a8d92, X1 + 0.3, 0, -10.8); // thùng rác
     // xô lau nhà, biển sàn ướt
     tru(0.2, 0.3, 0x2a5aa8, 13.3, 0, -13.2); hop(0.03, 1.2, 0.03, 0x8a6a3a, 13.4, 0.1, -13.3, { can: false });
+    hop(0.44, 1.3, 0.44, 0x2a5aa8, 13.3, 0, -13.2).visible = false; // khối va chạm xô + cây lau
     { const b = new THREE.Mesh(new THREE.ConeGeometry(0.22, 0.6, 4), vl(0xffcf3a)); b.position.set(13.5, 0.3, -12.3); nhom.add(b); }
     // biển nhắc nhở (giọng bác Bình)
     T(1.6, 0.5, chu("xanuoc", 400, 125, "#ffffff", "#c0262d", ["XẢ NƯỚC GIÙM CÁI", "Ký tên: Bác Bình"], 46), 17.2, 2.55, Z1 + 0.03, 0);
@@ -175,10 +176,11 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   T(1.2, 0.8, chu("hr", 240, 160, "#a8e6cf", "#1c1c1f", ["CÔNG TY LÀ", "GIA ĐÌNH"], 40), -9.84, 1.8, -10, Math.PI / 2);
   // Server: quạt, bàn nhỏ, mì ly, dây cáp
   hop(0.9, 0.7, 0.6, 0x8a6a4a, 3, 0, -7.2); tru(0.06, 0.1, 0xf6f6f2, 3, 0.7, -7.2); hop(0.5, 0.03, 0.35, 0x222222, 2.7, 0.7, -7.2, { can: false });
-  tru(0.04, 1.1, 0x3a3d44, -1.3, 0, -7.4); { const q = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.08, 12), vl(0x9fd3f2)); q.rotation.x = Math.PI / 2; q.position.set(-1.3, 1.2, -7.4); nhom.add(q); }
+  tru(0.04, 1.1, 0x3a3d44, -1.3, 0, -7.4); hop(0.64, 1.5, 0.3, 0x3a3d44, -1.3, 0, -7.4).visible = false; /* khối va chạm quạt đứng */ { const q = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.08, 12), vl(0x9fd3f2)); q.rotation.x = Math.PI / 2; q.position.set(-1.3, 1.2, -7.4); nhom.add(q); }
   for (let i = 0; i < 4; i++) hop(0.03, 0.03, 3, [0x2a5aa8, 0xc0262d, 0xe9e04a, 0x2e8b57][i], -1 + i * 0.4, 0.01, -10.5, { can: false });
   // Kho sự kiện: bí ngô Halloween, bóng bay hồng, giá đồ diễn, loa, bộ đồ Siêu Nhân Hồng dự phòng
   for (let i = 0; i < 5; i++) { const b = cau(0.25, 0xe8702a, 4.6 + i * 0.5, 0.19, -7.2); b.scale.y = 0.75; } // chừa chỗ cho cánh cửa mở vào
+  hop(2.5, 0.38, 0.5, 0xe8702a, 5.6, 0, -7.2).visible = false; // khối va chạm hàng bí ngô
   for (let i = 0; i < 6; i++) { cau(0.2, 0xf26fa6, 10.6 + (i % 3) * 0.4, 2.3 + (i % 2) * 0.3, -7 - Math.floor(i / 3) * 0.4); }
   hop(0.05, 1.8, 0.05, 0x9a9a9a, 11.3, 0, -9.5); hop(0.05, 1.8, 0.05, 0x9a9a9a, 11.3, 0, -11.5); hop(0.05, 0.05, 2, 0x9a9a9a, 11.3, 1.8, -10.5, { can: false });
   hop(0.4, 1.2, 0.3, 0xf26fa6, 11.3, 0.5, -10.2, { can: false }); hop(0.4, 1.2, 0.3, 0x111111, 11.3, 0.5, -10.9, { can: false });
@@ -221,9 +223,9 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   for (let i = 0; i < 4; i++) T(0.8, 0.6, chu("anh" + i, 160, 120, ["#f2e6c8", "#d9e6f2", "#ffd3e0", "#e6f2d9"][i], "#333", [["2010", "2015", "2020", "2026"][i], "G-ENT"], 36), 8.2 + i * 2, y2 + 1.8, -3.86, 0);
   ghe(16, 0.5, Math.PI, 1); ghe(16.7, 0.5, Math.PI, 1); chauCay(19, -3, 1); binhCuuHoa(-19.5, -3.5, 1);
   // Studio: đèn softbox, micro boom, trái tim hồng
-  for (const x of [-16, -10]) { hop(0.06, 1.6, 0.06, 0x222222, x, y2, 9, { can: false, tang: 1 }); const sb = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.6, 0.3), new THREE.MeshBasicMaterial({ color: 0xfaf6ee })); sb.position.set(x, y2 + 1.9, 9); sb.lookAt(-13, y2 + 1.5, 12); nhom.add(sb); }
+  for (const x of [-16, -10]) { hop(0.06, 1.6, 0.06, 0x222222, x, y2, 9, { can: false, tang: 1 }); hop(0.4, 1.6, 0.4, 0x222222, x, y2, 9, { tang: 1 }).visible = false; /* khối va chạm chân đèn */ const sb = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.6, 0.3), new THREE.MeshBasicMaterial({ color: 0xfaf6ee })); sb.position.set(x, y2 + 1.9, 9); sb.lookAt(-13, y2 + 1.5, 12); nhom.add(sb); }
   hop(0.04, 0.04, 2, 0x222222, -14, y2 + 2.6, 11, { can: false, tang: 1 });
-  { const tim = new THREE.Mesh(new THREE.SphereGeometry(0.6, 8, 6), vl(0xf26fa6)); tim.scale.set(1.3, 1, 0.4); tim.position.set(-17.5, y2 + 1.4, 13.4); nhom.add(tim); }
+  { const tim = new THREE.Mesh(new THREE.SphereGeometry(0.6, 8, 6), vl(0xf26fa6)); tim.scale.set(1.3, 1, 0.4); tim.position.set(-17.5, y2 + 1.4, 13.4); nhom.add(tim); hop(1.56, 1.2, 0.48, 0xf26fa6, -17.5, y2 + 0.8, 13.4, { tang: 1 }).visible = false; }
   // Dựng phim: rèm tối, loa, bean bag, cốc cà phê
   T(7.5, 3.4, tranh("rem", 16, 16, g => { g.fillStyle = "#1f2a3d"; g.fillRect(0, 0, 16, 16); g.fillStyle = "#18202e"; g.fillRect(0, 0, 4, 16); g.fillRect(8, 0, 4, 16); }), -2, y2 + 1.7, 13.84, Math.PI);
   hop(0.3, 0.5, 0.3, 0x111111, -3.8, y2 + 0.75, 11.4, { can: false, tang: 1 }); hop(0.3, 0.5, 0.3, 0x111111, -0.2, y2 + 0.75, 11.4, { can: false, tang: 1 });
@@ -237,7 +239,7 @@ export function themNoiThat(nhom, hop, CAO, denDem) {
   // ===== SÂN THƯỢNG =====
   // bồn nước, dây phơi đồ, bàn trà, vườn rau: dựng trong chi-tiet-cong-ty.js
   for (let i = 0; i < 6; i++) chauCay(12 + (i % 3) * 1.4, -12 + Math.floor(i / 3) * 1.4, 2, 0.9);
-  { const ch = new THREE.Mesh(new THREE.SphereGeometry(0.6, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2.5), vl(0xe6e6e6, { side: THREE.DoubleSide })); ch.rotation.x = -1.1; ch.position.set(17, y3 + 1.6, 12); nhom.add(ch); hop(0.06, 1.3, 0.06, 0x666666, 17, y3, 12, { tang: 2 }); }
+  { const ch = new THREE.Mesh(new THREE.SphereGeometry(0.6, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2.5), vl(0xe6e6e6, { side: THREE.DoubleSide })); ch.rotation.x = -1.1; ch.position.set(17, y3 + 1.6, 12); nhom.add(ch); hop(0.06, 1.3, 0.06, 0x666666, 17, y3, 12, { tang: 2 }); hop(1.2, 1.3, 0.7, 0x666666, 17, y3, 11.75, { tang: 2 }).visible = false; } // chảo ăng-ten chĩa xuống ngang ngực
 
   // ===== SÂN TRƯỚC =====
   // biển tên công ty đứng ngoài hàng rào, mặt nhìn ra phố, hai chân trụ phía sau biển (không che chữ)

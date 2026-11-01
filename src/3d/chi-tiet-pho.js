@@ -388,6 +388,8 @@ export function dungChiTietPho(ctx) {
   const khe = {}, hat = {};
   for (const k of Object.keys(DEM.cuaCuon)) { khe[k] = new BoQuad(); hat[k] = new BoQuad(); }
   const theo = (g, x, y, z) => new THREE.Vector3(x, y, z).applyMatrix4(g.matrixWorld).toArray();
+  // khối va chạm cho đồ nhô ra trước mặt tiền (hộp theo toạ độ cục bộ của căn nhà; nhà chỉ xoay bội số 90°)
+  const canCuc = (g, x0, x1, z0, z1) => { const p = theo(g, x0, 0, z0), q = theo(g, x1, 0, z1); can(Math.min(p[0], q[0]), Math.max(p[0], q[0]), Math.min(p[2], q[2]), Math.max(p[2], q[2])); };
   // số nhà: gom số rồi vẽ một bảng chung
   const soNha = [];
   const demDay = {};
@@ -417,10 +419,11 @@ export function dungChiTietPho(ctx) {
     const u0 = (i % cot) / cot, v0 = 1 - (Math.floor(i / cot) + 1) / hang, du = 1 / cot, dv = 1 / hang;
     for (let k = 0; k < 4; k++) uv.setXY(k, u0 + uv.getX(k) * du, v0 + uv.getY(k) * dv);
     const so = new THREE.Mesh(pg, vlSo); so.position.set(0.2, 2.35, 0.258); g.add(so);
+    canCuc(g, 0.05, w - 0.05, 0, 0.25); // hai trụ mặt tiền nhô ra 0,25 m (cửa hàng không vào được: đứng sát cửa cuốn là đủ)
     // đồng hồ điện trên trụ phải
     if (rnd() < 0.55) { H(0.2, 0.28, 0.1, 0x9aa0a6, w - 0.2, 1.95, 0.3, g); H(0.12, 0.07, 0.01, 0x1c2a2a, w - 0.2, 2.1, 0.355, g); H(0.03, 0.4, 0.03, 0x1a1a1a, w - 0.2, 2.23, 0.28, g); }
     // hộp thư (nhà trong hẻm, nhà không bảng hiệu)
-    if ((n.hem || !n.coBien) && rnd() < 0.45) { H(0.24, 0.3, 0.1, chon([0x2a5aa8, 0xc0262d, 0x2e8b57]), 0.2, 1.15, 0.3, g); H(0.16, 0.02, 0.01, 0x111111, 0.2, 1.38, 0.352, g); }
+    if ((n.hem || !n.coBien) && rnd() < 0.45) { H(0.24, 0.3, 0.1, chon([0x2a5aa8, 0xc0262d, 0x2e8b57]), 0.2, 1.15, 0.3, g); H(0.16, 0.02, 0.01, 0x111111, 0.2, 1.38, 0.352, g); canCuc(g, 0.08, 0.32, 0.25, 0.36); }
     // bàn thờ ông địa dưới đất, góc cửa (quán có bảng hiệu)
     if (n.coBien && rnd() < 0.7) {
       const x = w - 0.68;
@@ -429,12 +432,14 @@ export function dungChiTietPho(ctx) {
       const tr = new THREE.Mesh(new THREE.IcosahedronGeometry(0.035, 0), vl(0xe8702a)); tr.position.set(x + 0.1, 0.07, 0.24); g.add(tr);
       for (const dx of [-0.13, 0.13]) { const b = new THREE.Mesh(new THREE.SphereGeometry(0.025, 6, 4), denTho); b.position.set(x + dx, 0.27, 0.28); g.add(b); }
       for (let k = 0; k < 3; k++) H(0.008, 0.18, 0.008, 0xc0262d, x - 0.02 + k * 0.02, 0.06, 0.26, g);
+      canCuc(g, x - 0.22, x + 0.22, 0.25, 0.34);
     }
     // bàn thờ thiên nhỏ trên trụ
-    if (rnd() < 0.22) { H(0.26, 0.04, 0.2, 0xb0201a, w - 0.2, 1.5, 0.35, g); H(0.07, 0.07, 0.07, 0xd8c08a, w - 0.2, 1.54, 0.37, g); H(0.3, 0.03, 0.24, 0xd8a83a, w - 0.2, 1.85, 0.35, g); H(0.02, 0.3, 0.02, 0xb0201a, w - 0.31, 1.54, 0.43, g); H(0.02, 0.3, 0.02, 0xb0201a, w - 0.09, 1.54, 0.43, g); }
+    if (rnd() < 0.22) { canCuc(g, w - 0.35, w - 0.05, 0.25, 0.47); H(0.26, 0.04, 0.2, 0xb0201a, w - 0.2, 1.5, 0.35, g); H(0.07, 0.07, 0.07, 0xd8c08a, w - 0.2, 1.54, 0.37, g); H(0.3, 0.03, 0.24, 0xd8a83a, w - 0.2, 1.85, 0.35, g); H(0.02, 0.3, 0.02, 0xb0201a, w - 0.31, 1.54, 0.43, g); H(0.02, 0.3, 0.02, 0xb0201a, w - 0.09, 1.54, 0.43, g); }
     // chậu cây trước cửa
     if (rnd() < (n.hem ? 0.75 : 0.25)) {
       const so2 = 1 + Math.floor(rnd() * (n.hem ? 3 : 2));
+      canCuc(g, 0.3, 0.5 + (so2 - 1) * 0.42 + 0.2, 0.25, 0.62); // hàng chậu cây trước cửa
       for (let k = 0; k < so2; k++) {
         const x = 0.5 + k * 0.42, cao = rnd() < 0.3;
         const mauCh = chon([0xb5653a, 0x2a5aa8, 0xe9e1cf, 0x8a4a2a]);

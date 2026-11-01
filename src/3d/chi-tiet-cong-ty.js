@@ -821,7 +821,7 @@ export function themChiTietCongTy(nhom, hop, vat, { banChung = [] } = {}) {
   const SV_P = mat("x", 4, -1, 0), SV_Tr = mat("x", -2, 1, 0);
   bangIn(SV_P, -9.2, 1.7, 0.8, 0.45, "tat_bat", 256, 0x111111);
   mayLanh(SV_Tr, -9.6, 2.75);
-  K(0.5, 1.8, 0.36, 0xf2f2ee, 3.45, 0, -13.5); K(0.4, 0.5, 0.37, 0xc9ccd0, 3.45, 1.1, -13.5); K(0.44, 0.04, 0.37, 0x3fb8e0, 3.45, 1.66, -13.5); // máy lạnh tủ đứng
+  K(0.5, 1.8, 0.36, 0xf2f2ee, 3.45, 0, -13.5, { can: true }); K(0.4, 0.5, 0.37, 0xc9ccd0, 3.45, 1.1, -13.5); K(0.44, 0.04, 0.37, 0x3fb8e0, 3.45, 1.66, -13.5); // máy lạnh tủ đứng
   P(0.4, 0.2, layBien("khong_rut", 200, 100), VL_BIEN, 0.7, 0.55, -12.69);
   binhChuaChay(-1.6, 0, -13.5, 0x1c1c1f);
   { const lap = new THREE.Group(); lap.position.set(2.7, 0.73, -7.2); lap.rotation.y = Math.PI; // nắp laptop trên bàn IT (màn quay về ghế của Bảo phía trong phòng)
@@ -1018,7 +1018,7 @@ function sanThuong(y3) {
 
   // dây phơi đồ: hai cột chữ T, hai sợi dây, quần áo của bác Bình và đồ diễn
   const DX1 = -9.4, DX2 = -1.2, DZ = -5.6;
-  for (const x of [DX1, DX2]) { TR(0.13, 0.08, 0x8a8d92, x, y3, DZ); K(0.05, 1.95, 0.05, 0x8a8d92, x, y3, DZ); K(0.05, 0.05, 1.3, 0x8a8d92, x, y3 + 1.9, DZ); }
+  for (const x of [DX1, DX2]) { TR(0.13, 0.08, 0x8a8d92, x, y3, DZ); K(0.05, 1.95, 0.05, 0x8a8d92, x, y3, DZ); K(0.05, 0.05, 1.3, 0x8a8d92, x, y3 + 1.9, DZ); hop0(0.26, 0.26, x, DZ, 2); } // cột dây phơi (đồ phơi mềm: đi lách qua được)
   for (const dz of [-0.55, 0.55]) K(DX2 - DX1, 0.012, 0.012, 0x666666, (DX1 + DX2) / 2, y3 + 1.92, DZ + dz);
   const do_ = [["ao", 0x2a5aa8], ["quan", 0x3a3d44], ["khan", 0xf26fa6], ["ao", 0xe8702a], ["sieu_nhan", 0xff7ab6], ["khan", 0xffffff], ["ao", 0xf6f6f2], ["quan", 0x6d6f73], ["vo", 0x1c1c1f], ["ao", 0x2fa39a]];
   do_.forEach(([loai, c], i) => {
@@ -1030,11 +1030,12 @@ function sanThuong(y3) {
     else if (loai === "vo") { K(0.07, 0.25, 0.02, c, x - 0.08, y - 0.26, z); K(0.07, 0.25, 0.02, c, x + 0.08, y - 0.26, z); }
     else { K(0.46, 0.6, 0.02, c, x, y - 0.66, z); K(0.15, 0.3, 0.02, c, x - 0.29, y - 0.3, z, { rz: -0.45 }); K(0.15, 0.3, 0.02, c, x + 0.29, y - 0.3, z, { rz: 0.45 }); K(0.2, 0.32, 0.022, 0xffffff, x, y - 0.5, z); K(0.12, 0.12, 0.024, 0xff3a8a, x, y - 0.45, z); }
   });
+  hop0(1.4, 0.8, -6, -3.6, 2); // giá phơi đồ gấp
   { const c = 0x8a8d92, x = -6, z = -3.6; for (const dz of [-0.35, 0.35]) K(0.03, 1.1, 0.03, c, x - 0.6, y3, z + dz, { rz: 0.2 }); for (const dz of [-0.35, 0.35]) K(0.03, 1.1, 0.03, c, x + 0.6, y3, z + dz, { rz: -0.2 }); for (const dz of [-0.2, 0, 0.2]) K(1.3, 0.02, 0.02, c, x, y3 + 1.05, z + dz); K(0.55, 0.012, 0.6, 0xc0262d, x - 0.2, y3 + 1.07, z); K(0.4, 0.3, 0.012, 0xe8702a, x + 0.3, y3 + 0.78, z + 0.2); }
 
   // mái tôn che khu uống trà, bàn nhựa, ghế nhựa, bộ ấm chén
   const MX = -2, MZ = 7.2;
-  for (const [dx, dz, h] of [[-2.3, -2.0, 2.55], [2.3, -2.0, 2.55], [-2.3, 2.0, 2.3], [2.3, 2.0, 2.3]]) K(0.07, h, 0.07, 0x5a5f67, MX + dx, y3, MZ + dz);
+  for (const [dx, dz, h] of [[-2.3, -2.0, 2.55], [2.3, -2.0, 2.55], [-2.3, 2.0, 2.3], [2.3, 2.0, 2.3]]) { K(0.07, h, 0.07, 0x5a5f67, MX + dx, y3, MZ + dz); hop0(0.12, 0.12, MX + dx, MZ + dz, 2); }
   { const g = new THREE.PlaneGeometry(5.2, 4.6, 52, 1); const p = g.attributes.position; for (let i = 0; i < p.count; i++) p.setZ(i, Math.abs(Math.sin(p.getX(i) * Math.PI / 0.2)) * 0.035); g.computeVertexNormals();
     const m = new THREE.Mesh(g, vl(0x5d8fb8, { side: THREE.DoubleSide })); m.rotation.set(-Math.PI / 2 + 0.055, 0, 0); m.position.set(MX, y3 + 2.45, MZ); them(m); }
   K(5.2, 0.06, 0.06, 0x5a5f67, MX, y3 + 2.52, MZ - 2.0); K(5.2, 0.06, 0.06, 0x5a5f67, MX, y3 + 2.27, MZ + 2.0);

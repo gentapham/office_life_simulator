@@ -21,7 +21,10 @@ import { caiToiUu, capNhatMaTranNhanh, xuLyHangDoi, conChoGop } from "./toi-uu.j
 import { caiToMau, mucVe } from "./to-mau.js";
 import { HauKy } from "./hau-ky.js";
 import { BongNang } from "./bong-nang.js";
+import { HoatAnhNC } from "./hoat-anh-nc.js";
+import { DoVatThem, DUNG_DO_THEM, HOAT_ANH_DO_CU, nhinDoCu, RAC_SAU } from "./tuong-tac-them.js";
 export { NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi };
+export { DUNG_DO_THEM, HOAT_ANH_DO_CU, nhinDoCu, RAC_SAU }; // main.js: lời, chỉ số, động tác của đồ vật mới
 
 // âm thanh nền của từng địa điểm ngoài công ty
 const AM_NGOAI = {
@@ -112,6 +115,7 @@ export class Game3D {
 
     await buoc("toa_nha", 0.28);
     this.theGioi = taoTheGioi(this.scene, { dienThoai: this.nhe });
+    this.doVatThem = new DoVatThem(this); // máy in, máy bán nước, bi lắc, ATM, vé số... (trước giao thông: người đi bộ né được)
     await buoc("duong_pho", 0.55);
     this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot, muc: this.mucVe });
     this.giaoThong = new GiaoThong(this.scene, this.theGioi.pho, { dienThoai: this.nhe });
@@ -152,6 +156,7 @@ export class Game3D {
     this.doiSong = new DoiSong(this);
     this.troChuyenPho = new TroChuyenPho(this); // bắt chuyện người ngoài phố
     this.xeRieng = new XeRieng(this);           // xe máy riêng ở nhà xe nhân viên
+    this.hoatAnh = new HoatAnhNC(this);         // động tác khi dùng đồ, biểu cảm, dáng đi, phản ứng của người xung quanh
     this.nhay = null; this.ngoiDat = null; this._anToan = 0; this._vx = 0; this._vz = 0; this._vuongXe = { xe: null }; this._vuongNg = { nguoi: null };
     await buoc("dong_nghiep", 0.785);
     this.ngoiGhe = null; this.lamViec = false; this._hNgoi = 0; this._tLV = 0;
@@ -215,19 +220,24 @@ export class Game3D {
       if (this.khoa || e.repeat) return; // giữ phím không lặp lại thao tác
       if (e.code === "KeyV") this.doiGoc();
       if (e.code === "KeyE" || e.code === "Enter") this.tuongTac();
+      if (e.code === "KeyG" && this.onChoPhep?.() !== false) this.hoatAnh?.phimG(true); // vòng biểu cảm
       // Space: nhảy (chỉ khi không có hội thoại, bảng, điện thoại: lúc đó game đã khóa, Space để đọc thoại)
       if (e.code === "Space" && !e.target.closest?.("button, a, select") && this.onChoPhep?.() !== false) { e.preventDefault(); this.batNhay(); }
       // Ctrl / C: ngồi bệt xuống đất, bấm lại (hoặc đi) để đứng dậy
       if ((e.code === "ControlLeft" || e.code === "ControlRight" || (e.code === "KeyC" && !e.ctrlKey)) && !e.metaKey && !e.altKey && this.onChoPhep?.() !== false) this.batNgoiDat();
     };
-    this._keyup = e => { this.phim[e.code] = false; };
+    this._keyup = e => { this.phim[e.code] = false; if (e.code === "KeyG") this.hoatAnh?.phimG(false); };
     addEventListener("keydown", this._keydown); addEventListener("keyup", this._keyup);
     this._blur = () => { this.phim = {}; };
     addEventListener("blur", this._blur);
 
     if (!this.dienThoai) {
       c.addEventListener("click", () => { if (!this.khoa && document.pointerLockElement !== c) c.requestPointerLock?.(); }, { signal: this._ngat.signal });
-      this._mouse = e => { if (document.pointerLockElement !== c || this.khoa) return; this.xoay(e.movementX * 0.0022, e.movementY * 0.0022); };
+      this._mouse = e => {
+        if (document.pointerLockElement !== c || this.khoa) return;
+        if (this.hoatAnh?.vongMo) { this.hoatAnh.chuotVong(e.movementX, e.movementY); return; } // đang chọn biểu cảm: chuột chọn ô
+        this.xoay(e.movementX * 0.0022, e.movementY * 0.0022);
+      };
       document.addEventListener("mousemove", this._mouse);
       this._plc = () => this.onKhoaChuot?.(document.pointerLockElement === c);
       document.addEventListener("pointerlockchange", this._plc);
@@ -268,6 +278,7 @@ export class Game3D {
       // nút nhảy, ngồi bệt cho màn hình cảm ứng
       const nut = (lop, chu, f) => { const b = document.createElement("button"); b.className = "g3d-nut-tay " + lop; b.textContent = chu; b.addEventListener("click", e => { e.stopPropagation(); if (!this.khoa) f(); }); this.khung.append(b); };
       nut("nhay", "Nhảy", () => this.batNhay()); nut("ngoi", "Ngồi", () => this.batNgoiDat());
+      nut("bieu", "Biểu cảm", () => this.hoatAnh?.vongMo ? this.hoatAnh.dongVong() : this.hoatAnh?.moVong());
     }
   }
   xoay(dx, dy) {
@@ -293,6 +304,7 @@ export class Game3D {
     this.tay.group.scale.x = Math.min(1, (w / h) / 1.3);
   }
   datViTri({ tang, x, z, huong }) {
+    this.hoatAnh?.xong(true); if (this.hoatAnh) this.hoatAnh.chuyen = null;
     if (this.ngoiGhe) this.boNgoi();
     // dịch chuyển (đi nhanh, xe buýt, xe ôm, cảnh truyện...): xuống xe máy (xe ở lại chỗ cũ), bỏ nhảy / ngồi bệt,
     // không xét tai nạn trong chốc lát (khỏi bị tính là bị tông khi vừa hiện ra)
@@ -504,7 +516,7 @@ export class Game3D {
       if (d < 1.8 && d < dMin) { dMin = d; gan = { loai: "cau_thang", c, nhan: c.nhan }; }
     }
     for (const v of DO_VAT) {
-      if (v.tang !== this.tang) continue;
+      if (v.tang !== this.tang || v.an?.(this)) continue; // an: đồ vật đang ẩn (thùng rác khi không cầm rác, vé số ngoài giờ bán...)
       const d = Math.hypot(v.x - this.p.x, v.z - this.p.z);
       if (d < 1.3 && d < dMin) { dMin = d; gan = { loai: "do_vat", v, nhan: v.nhan }; }
     }
@@ -534,11 +546,13 @@ export class Game3D {
     const bayGio = performance.now();
     if (bayGio - (this._lanTT || 0) < 450) return; // chống bấm dồn dập
     this._lanTT = bayGio;
+    if (this.hoatAnh?.khoaDi()) return; // đang dở tay (đang uống, đang in...)
     const g = this.timTuongTac(); if (!g) return;
     this.tay.voiRa(1); setTimeout(() => !this.khoa && this.tay.voiRa(0), 400);
     if (g.loai === "npc") {
       const n = this.npc.find(x => x.ma === g.ma);
       if (!n.nv.ngoi) n.nv.group.rotation.y = Math.atan2(this.p.x - n.nv.group.position.x, this.p.z - n.nv.group.position.z);
+      if (g.ma === "cho" && this.vai !== "cho") { const q = n.nv.group.position; this.hoatAnh?.lam("vuot_cho", { nhin: [q.x, q.z], cui: -0.45 }); } // cúi xuống vuốt đầu Tuất
       this.onNoiChuyen?.(g.ma);
     } else if (g.loai === "cau_thang") {
       if (g.c.thangMay) am.phat("thang_may", g.c.x, g.c.z); else am.cauThang();
@@ -565,6 +579,7 @@ export class Game3D {
     return true;
   }
   ngoiXuong(gh) {
+    const x0 = this.p.x, z0 = this.p.z, y0 = this.than.group.position.y;
     this.boNgoiDat(true); this.nhay = null;
     this.ngoiGhe = gh; this.lamViec = false; this._tLV = 0;
     this.p.set(gh.x, gh.tang * CAO_TANG, gh.z); this.tang = gh.tang;
@@ -573,6 +588,7 @@ export class Game3D {
     this.than.group.rotation.y = gh.huong;
     this.dangDi = false;
     am.phat("ghe", gh.x, gh.z);
+    this.hoatAnh?.batChuyen(x0, z0, y0, true); // trượt từ chỗ đứng vào ghế, hạ người xuống
   }
   datLamViec(co) {
     if (!this.ngoiGhe) return;
@@ -590,13 +606,14 @@ export class Game3D {
   // đứng dậy: bước ra chỗ trống cạnh ghế (sau lưng, hai bên, phía trước)
   dungDay() {
     const gh = this.ngoiGhe; if (!gh) return;
+    const x0 = this.p.x, z0 = this.p.z, y0 = this.than.group.position.y;
     this.boNgoi();
     const vat = this.theGioi.vat[this.tang];
     const trong = (x, z) => !vat.some(b => x > b.minX - BAN_KINH && x < b.maxX + BAN_KINH && z > b.minZ - BAN_KINH && z < b.maxZ + BAN_KINH)
       && !this.npc.some(n => n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < 0.6);
     for (const kc of [0.75, 1.05, 1.4, 1.9, 2.4]) for (const lech of [Math.PI, Math.PI / 2, -Math.PI / 2, 0.75 * Math.PI, -0.75 * Math.PI, 0]) {
       const a = gh.huong + lech, x = gh.x + Math.sin(a) * kc, z = gh.z + Math.cos(a) * kc;
-      if (trong(x, z)) { this.p.x = x; this.p.z = z; am.phat("ghe", gh.x, gh.z); return; }
+      if (trong(x, z)) { this.p.x = x; this.p.z = z; am.phat("ghe", gh.x, gh.z); this.hoatAnh?.batChuyen(x0, z0, y0, false); return; }
     }
     am.phat("ghe", gh.x, gh.z);
   }
@@ -625,6 +642,8 @@ export class Game3D {
     for (const n of this.npc) if (n.tang === this.tang && n.nv.group.visible && Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < rn) return VUONG_VAT;
     for (const nv of this.khach || []) if (nv.group.visible && Math.hypot(nv.group.position.x - x, nv.group.position.z - z) < r + 0.18) return VUONG_VAT;
     if (this.tang !== 0 || this.oNgoai()) return null;
+    // khán giả Đại Nhạc Hội (đêm 31) đứng sau rào quảng trường sân khấu: không đi xuyên
+    const kg = this.sanKhau?.khanGia; if (kg?.visible && Math.abs(x - 110) < 15 && z > -6 && z < 6) for (const n of this.sanKhau.nguoiXem) if (Math.hypot(n.nv.group.position.x - x, n.nv.group.position.z - z) < r + 0.2) return VUONG_VAT;
     // xe trên mọi tuyến đường (cả đại lộ Kẹt Xe), trừ trong khuôn viên công ty
     if (!boXe && !(Math.abs(x) < 24 && z < 30)) { const xe = this.giaoThong.chan(x, z); if (xe) { this._vuongXe.xe = xe; return this._vuongXe; } }
     if (!boXeRieng && this.xeRieng.chan(x, z, r)) return VUONG_VAT;
@@ -674,9 +693,11 @@ export class Game3D {
     const coPhim = () => !this.khoa && (this.phim.KeyW || this.phim.KeyA || this.phim.KeyS || this.phim.KeyD || this.phim.ArrowUp || this.phim.ArrowDown || this.phim.ArrowLeft || this.phim.ArrowRight || (this.stick && Math.hypot(this.stick.x, this.stick.y) > 0.35));
     // đang ngồi: bấm phím đi (hoặc kéo cần) thì đứng dậy, không thì ngồi yên
     if (this.ngoiGhe) {
-      if (coPhim()) this.dungDay();
+      if (coPhim() && !this.hoatAnh?.khoaDi()) this.dungDay();
       this.dangDi = false; this.dangChay = false; return;
     }
+    // đang dở tay (uống nước, in giấy...): đứng yên tới khi xong
+    if (this.hoatAnh?.khoaDi()) { this.dangDi = false; this.dangChay = false; this._vx = this._vz = 0; this._tangToc = 0; return; }
     if (!this.khoa) {
       if (this.phim.KeyW || this.phim.ArrowUp) f += 1;
       if (this.phim.KeyS || this.phim.ArrowDown) f -= 1;
@@ -700,7 +721,18 @@ export class Game3D {
     const bay = this.nhay?.pha === "bay";
     const len = Math.hypot(f, s);
     this.dangDi = len > 0.15 && !bay;
-    if (len <= 0.15 && !bay) { this.dangChay = false; this._vx = this._vz = 0; return; }
+    if (len <= 0.15 && !bay) {
+      // buông phím: trượt chậm lại vài bước ngắn thay vì khựng đứng
+      this.dangChay = false; this._tangToc = 0;
+      const v = Math.hypot(this._vx, this._vz);
+      if (v > 0.25 && !this.khoa && !this.nhay) {
+        const dx = this._vx * dt, dz = this._vz * dt;
+        if (!this.chanTai(this.p.x + dx, this.p.z, BAN_KINH)) this.p.x += dx; else this._vx = 0;
+        if (!this.chanTai(this.p.x, this.p.z + dz, BAN_KINH)) this.p.z += dz; else this._vz = 0;
+        const k = Math.exp(-dt * 15); this._vx *= k; this._vz *= k;
+      } else this._vx = this._vz = 0;
+      return;
+    }
     if (len > 1) { f /= len; s /= len; }
     let dx, dz;
     if (bay) { // trên không: giữ đà lúc bật nhảy, điều khiển thêm được chút ít
@@ -709,7 +741,9 @@ export class Game3D {
     } else {
       // đói, khát, kiệt sức thì đi chậm và không chạy được
       this.dangChay = !this.camChay && (this.phim.ShiftLeft || this.phim.ShiftRight || (this.stick && len > 0.95));
-      const toc = (this.dangChay ? TOC_CHAY : TOC_DI) * (this.hsToc ?? 1) * dt;
+      // bắt đầu bước: tăng tốc dần trong ~0,16 giây
+      this._tangToc = Math.min(1, (this._tangToc || 0) + dt / 0.16);
+      const toc = (this.dangChay ? TOC_CHAY : TOC_DI) * (this.hsToc ?? 1) * dt * (0.4 + 0.6 * muot(this._tangToc));
       const sy = Math.sin(this.yaw), cy = Math.cos(this.yaw);
       // hướng nhìn: (−sin yaw, −cos yaw)
       dx = (-sy * f + cy * s) * toc; dz = (-cy * f - sy * s) * toc;
@@ -806,9 +840,10 @@ export class Game3D {
         this.than.group.rotation.y += d * Math.min(1, dt * 12);
       }
     }
-    this.than.hoatDong(this.t, this.dangDi, this.phim.ShiftLeft ? 1.5 : 1);
+    this.than.hoatDong(this.hoatAnh.nhipThan(dt), this.dangDi, 1); // nhịp bước theo chạy / mệt / stress (hoat-anh-nc.js)
     if (laiXe) this.xeRieng.tuThe();
     else if (this.goc === "3" && !this.ngoiGhe) this.tuTheNhayNgoi(nh, chung, kNgoi, y + yNhay);
+    this.hoatAnh.sauThan(dt); // động tác dùng đồ, dáng đi, xoay tại chỗ, ngồi xuống / đứng dậy mượt, góc nhìn 1 cúi / ngửa
     if (!laiXe) this.tay.hoatDong(this.t, this.dangDi || (nh?.pha === "bay"), dt);
     // ngồi làm việc ở bàn mình: tiếng gõ phím, báo cho main.js mỗi giây
     if (this.lamViec && this.ngoiGhe && !this.khoa) {
@@ -840,6 +875,8 @@ export class Game3D {
       if (trung) { n.bang.visible = false; continue; }
       const q = giu[nGiu] || (giu[nGiu] = { x: 0, y: 0, r: 0 }); q.x = v.x; q.y = v.y; q.r = rong; nGiu++;
     }
+    this.hoatAnh.capNhatNpc(dt); this.hoatAnh.capNhatRac(); // đồng nghiệp quay đầu nhìn, chào; làm mượt tư thế
+    this.doVatThem.capNhat(dt, this.t);
     for (const l of this.theGioi.nhapNhay) l.visible = Math.sin(this.t * 6 + l.position.x * 9) > -0.3;
     if (this.marker.visible) this.marker.children[0].scale.setScalar(1 + Math.sin(this.t * 4) * 0.08);
     // tới mục tiêu?
@@ -885,10 +922,11 @@ export class Game3D {
     const gioNay = this.bauTroi.gio;
     let khuya = !ngoai && trong && (gioNay >= 21 || gioNay < 6);
     if (khuya) { let c = 0; for (const n of this.npc) if (n.nv.group.visible && n.tang === this.tang && Math.abs(n.nv.group.position.x) < 21 && Math.abs(n.nv.group.position.z) < 14) c++; khuya = c <= 2; }
-    this._den = (this._den ?? 1) + ((khuya ? 0.5 : 1) - (this._den ?? 1)) * Math.min(1, dt * 1.5);
+    const mucDen = Math.min(khuya ? 0.5 : 1, this.hoatAnh.doSang(trong)); // ai đó tắt đèn khu làm việc
+    this._den = (this._den ?? 1) + (mucDen - (this._den ?? 1)) * Math.min(1, dt * (mucDen < 0.5 ? 6 : 1.5));
     if (this._den < 0.999) { this.hemi.intensity *= this._den; this.nen.intensity *= this._den; }
     am.capNhatGame(this, dt);
-    this.onGoiY?.(this.khoa || this.capCuu ? null : this.timTuongTac());
+    this.onGoiY?.(this.khoa || this.capCuu || this.hoatAnh.khoaDi() || this.hoatAnh.vongMo ? null : this.timTuongTac());
     this.bong?.capNhat(dt, this.camera.position, this.yaw, trong, this.bauTroi._nang ?? 1);
     this.onKhung?.();
     if (this.hauKy) { this.hauKy.datMoiTruong(kq.ngay); this.hauKy.render(dt); }
@@ -935,6 +973,7 @@ export class Game3D {
     clearTimeout(this._henBien);
     am.huyGame();
     this.doiSong?.huy();
+    this.hoatAnh?.huy();
     this.ngoaiCanh?.huy();
     this._boCaiDat?.();
     this.sanKhau?.huy();

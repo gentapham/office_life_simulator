@@ -396,6 +396,7 @@ export function taoKhuPhoXa(ctx) {
   const coXa = new BoCo(80); // cỏ công viên (InstancedMesh theo ô)
   const bam = (a, b) => { const v = Math.sin(a * 12.9898 + b * 78.233) * 43758.5453; return v - Math.floor(v); };
   function cayPho(x, z, s = 1) {
+    if (trongLoi(x, z)) ctx.can?.(x - 0.3, x + 0.3, z - 0.3, z + 0.3); // cây lọt vào vùng đi được: có khối va chạm như cây phố
     const bo = bocO(x, z);
     if (MEM) {
       // thân thuôn hơi cong, gốc quét vôi, tán cục tròn tô đậm nhạt; gần thì nhiều mặt, xa thì ít mặt
@@ -419,7 +420,7 @@ export function taoKhuPhoXa(ctx) {
     const n = nhe ? 1 : 2 + (rnd() < 0.3 ? 1 : 0);
     for (let i = 0; i < n; i++) khoi(bo, "cau", x + (rnd() - 0.5) * 1.6 * s, (3.8 + rnd() * 1.6) * s, z + (rnd() - 0.5) * 1.6 * s, (1.5 + rnd() * 0.8) * s, (1.2 + rnd() * 0.5) * s, (1.5 + rnd() * 0.8) * s, C(chon([0x3d7a34, 0x4f8a3c, 0x2f6b2a, 0x5a8f3e])));
   }
-  function cotDien(x, z) { const bo = bocO(x, z); hop(bo, x - 0.13, x + 0.13, 0, 8.6, z - 0.13, z + 0.13, C(0x9a958a)); hop(bo, x - 0.8, x + 0.8, 7.7, 7.82, z - 0.06, z + 0.06, C(0x8a857a)); hop(bo, x - 0.06, x + 0.06, 7.0, 7.12, z - 0.6, z + 0.6, C(0x8a857a)); }
+  function cotDien(x, z) { if (trongLoi(x, z)) ctx.can?.(x - 0.15, x + 0.15, z - 0.15, z + 0.15); const bo = bocO(x, z); hop(bo, x - 0.13, x + 0.13, 0, 8.6, z - 0.13, z + 0.13, C(0x9a958a)); /* cột lọt vào vùng đi được: có khối va chạm */ hop(bo, x - 0.8, x + 0.8, 7.7, 7.82, z - 0.06, z + 0.06, C(0x8a857a)); hop(bo, x - 0.06, x + 0.06, 7.0, 7.12, z - 0.6, z + 0.6, C(0x8a857a)); }
   // đường dọc theo trục: truc 'x' (đường ngang, chạy theo x tại z = v) hoặc 'z'
   function duong(truc, v, s0, s1, coVia, e0 = 0, e1 = 0) {
     const P = (s, t) => truc === "x" ? [s, v + t] : [v + t, s];

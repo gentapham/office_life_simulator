@@ -1163,3 +1163,32 @@ body.g3d-on { overflow: hidden; padding: 0; }
   .g3d-xiu-the .nho { font-size: 12.5px; }
   .g3d-xiu-the p { margin: 0; }
 }
+
+/* ---------- Bảng admin (cần mã) ---------- */
+.ad-lop { position: fixed; inset: 0; z-index: 600; display: grid; place-items: center; padding: 16px; background: rgba(0,0,0,.45); }
+.ad-bang { width: min(520px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; background: #1b1916; color: #f4efe6; border: 1px solid rgba(255,255,255,.15); border-radius: 14px; padding: 14px 16px; font: 14px var(--body); }
+.ad-bang header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.ad-bang header b { font-size: 16px; } .ad-bang header small { opacity: .7; flex: 1; }
+.ad-bang h4 { margin: 12px 0 6px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #ef7d3c; }
+.ad-hang { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+.ad-hang .btn { min-height: 38px; padding: 6px 12px; }
+.ad-so { width: 72px; min-height: 38px; border-radius: 8px; border: 1px solid rgba(255,255,255,.25); background: #2a2723; color: #fff; padding: 0 8px; font-size: 15px; }
+
+/* ===== vòng biểu cảm (phím G / nút Biểu cảm), màn nhắm mắt khi chợp mắt, đèn flash khi chụp ảnh ===== */
+.g3d-nut-tay.bieu { bottom: 282px; font-size: 10.5px; line-height: 1.1; padding: 0 4px; }
+@media (max-width: 720px), (max-height: 500px) { .g3d-nut-tay.bieu { bottom: 228px; font-size: 9.5px; } }
+.g3d-bieucam { position: absolute; inset: 0; z-index: 9; display: grid; place-items: center; background: radial-gradient(circle at 50% 50%, rgba(17,16,13,.38), rgba(17,16,13,0) 62%); }
+.g3d-bieucam[hidden] { display: none; }
+.bc-vong { position: relative; width: 300px; height: 300px; }
+.bc-giua { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 92px; height: 92px; border-radius: 50%; display: grid; place-items: center; text-align: center; background: rgba(17,16,13,.72); color: #fff; font: 700 13px var(--body, system-ui); border: 2px solid rgba(255,255,255,.25); pointer-events: none; }
+.bc-nut { position: absolute; left: 50%; top: 50%; width: 92px; min-height: 52px; margin: -26px 0 0 -46px; transform: rotate(var(--a)) translate(112px) rotate(calc(-1 * var(--a))); border-radius: 16px; border: 2px solid rgba(255,255,255,.3); background: rgba(17,16,13,.72); color: #fff; font: 600 12.5px var(--body, system-ui); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 4px 6px; cursor: pointer; transition: background .12s, border-color .12s, transform .12s; }
+.bc-nut kbd { font: 700 10px var(--body, system-ui); opacity: .75; background: rgba(255,255,255,.14); border-radius: 4px; padding: 0 5px; }
+.bc-nut.chon, .bc-nut:hover { background: var(--g-cam, #e8702a); border-color: #fff; color: #1b1209; transform: rotate(var(--a)) translate(112px) rotate(calc(-1 * var(--a))) scale(1.08); }
+.bc-nut.chon kbd, .bc-nut:hover kbd { background: rgba(0,0,0,.15); }
+@media (pointer: coarse) { .bc-nut kbd { display: none; } }
+@media (max-width: 420px) { .bc-vong { transform: scale(.88); } }
+.g3d-mat { position: absolute; inset: 0; z-index: 3; pointer-events: none; background: #050403; opacity: 0; transition: opacity .25s; }
+.g3d-flash { position: absolute; inset: 0; z-index: 4; pointer-events: none; background: #fff; opacity: 0; }
+.g3d-flash.on { animation: g3d-flash .45s ease-out; }
+@keyframes g3d-flash { 0% { opacity: .85; } 100% { opacity: 0; } }
+.g3d.dang-thoai .g3d-bieucam, .g3d.cap-cuu .g3d-bieucam { display: none; }

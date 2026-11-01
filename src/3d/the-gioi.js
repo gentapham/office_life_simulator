@@ -275,9 +275,9 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   hop(3, 0.5, 1, 0x5b6b8c, 6.5, 0, 12, { be: "vai" }); hop(3, 0.6, 0.25, 0x5b6b8c, 6.5, 0.5, 12.5, { can: false, be: "vai" }); // sofa
   hop(1.2, 0.4, 0.6, 0x8a6a4a, 6.5, 0, 10.8, { be: "go" });
   hop(0.6, 1.4, 0.5, 0x3a3d44, -0.8, 0, 12.8, { be: "nhua" }); // máy chấm công
-  chauCay(scene, -1.2, 13, vat[0]); chauCay(scene, 8.2, 13, vat[0]);
+  chauCay(scene, -1.2, 13, vat[0]); chauCay(scene, -1.62, 9.3, vat[0]); // chậu thứ hai cạnh bàn thờ (góc cũ sau sofa bịt lối vào cây nước sảnh)
   // Cầu thang (góc sảnh)
-  for (let i = 0; i < 7; i++) hop(2.4, 0.3 + i * 0.5, 0.6, i % 2 ? 0xd9b48a : 0xcfa87c, 6.5, 0, 2.1 - i * 0.6, { can: i > 1, be: "go" });
+  for (let i = 0; i < 7; i++) hop(2.4, 0.3 + i * 0.5, 0.6, i % 2 ? 0xd9b48a : 0xcfa87c, 6.5, 0, 2.1 - i * 0.6, { can: i > 0, be: "go" }); // bậc thấp nhất (0,3 m) bước sát được, từ bậc thứ hai là vật cản
   // Khu làm việc chung
   BAN_CHUNG.forEach((b, i) => banLamViec(scene, b.x, b.z, vat[0], denDem, CHU_BAN[i]));
   bangTrang(scene, -19.85, 1.4, 6, Math.PI / 2);
@@ -295,6 +295,7 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // Kho sự kiện
   for (let i = 0; i < 3; i++) { hop(2.6, 0.06, 0.8, 0x8a7a64, 8, 0.6 + i * 0.7, -13.4, { can: false, be: "kim" }); hop(0.6, 0.5, 0.5, [0xe8702a, 0xf26fa6, 0x5b6b8c][i], 7.2 + i * 0.7, 0.66 + i * 0.7, -13.4, { can: false }); }
   hop(2.6, 2.2, 0.1, 0x8a7a64, 8, 0, -13.85, { be: "kim" });
+  vat[0].push({ minX: 6.7, maxX: 9.3, minZ: -13.8, maxZ: -13.0 }); // các tầng kệ đồ diễn (không đi xuyên)
   // bàn điều phối sự kiện của Chị Đại: giữa kho, quay mặt ra cửa
   banDon(scene, 8, -9.45, 1.6, 0.8, 0x7a5a3a, 0, vat[0]); manHinh(scene, 8.15, 0.76, -9.3, Math.PI, denDem, "chart2");
   hop(0.46, 0.022, 0.15, 0x2a2a2a, 8, 0.76, -9.68, { can: false }); hop(0.06, 0.022, 0.1, 0x2a2a2a, 8.36, 0.76, -9.68, { can: false }); // bàn phím, chuột
@@ -346,15 +347,16 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   // Sản xuất
   hop(3, 0.75, 1.2, 0xd8c7a3, 14, y2, 10.6, { tang: 1, be: "go" }); manHinh(scene, 14, y2 + 0.75, 10.85, Math.PI, denDem, "truong_phong"); gheXoay(scene, CHO_NGOI.truong_phong, vat[1], { mau: 0x5b6b8c }); bangTrang(scene, 19.85, y2 + 1.4, 8, -Math.PI / 2);
   // Chiếu nghỉ: cầu thang xuống và lên sân thượng
-  for (let i = 0; i < 4; i++) hop(2.4, 0.2 + i * 0.25, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 3.2 + i * 0.5, { tang: 1, can: false, be: "go" });
+  for (let i = 0; i < 4; i++) hop(2.4, 0.2 + i * 0.25, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 3.2 + i * 0.5, { tang: 1, can: i > 0, be: "go" });
   for (let i = 0; i < 6; i++) hop(2, 0.3 + i * 0.55, 0.5, i % 2 ? 0xd9b48a : 0xcfa87c, 5, y2, 13.6 - i * 0.05, { tang: 1, can: false, be: "go" });
   hop(2.6, 0.3, 0.3, 0xbfb6a4, 5, y2, 13.75, { tang: 1 });
+  vat[1].push({ minX: 4, maxX: 6, minZ: 13.1, maxZ: 13.85 }); // khối bậc thang lên sân thượng
   // Sân thượng
   const y3 = Y(2);
   hop(3, 2.6, 2.4, 0xd9d2c4, 5, y3, 12.4, { tang: 2, be: "vua" }); // buồng cầu thang
   hop(1.4, 1.2, 1.4, 0x9aa3ab, -12, y3, -8, { tang: 2, be: "kim" }); hop(1.4, 1.2, 1.4, 0x9aa3ab, -9, y3, -8, { tang: 2, be: "kim" }); // cục nóng điều hòa
   for (let i = 0; i < 4; i++) { const d = new THREE.Mesh(new THREE.SphereGeometry(0.15, 6, 4), VL_DEN_TRAN); d.position.set(-6 + i * 4, y3 + 2.2, 4); scene.add(d); denDem.push(d); }
-  hop(0.06, 2.2, 0.06, 0x555555, -6, y3, 4, { tang: 2, can: false }); hop(0.06, 2.2, 0.06, 0x555555, 6, y3, 4, { tang: 2, can: false });
+  hop(0.06, 2.2, 0.06, 0x555555, -6, y3, 4, { tang: 2 }); hop(0.06, 2.2, 0.06, 0x555555, 6, y3, 4, { tang: 2 });
   hop(12, 0.015, 0.015, 0x333333, 0, y3 + 2.18, 4, { tang: 2, can: false }); // dây treo bóng đèn giữa hai cột
 
   // Đèn trần (bật buổi tối)
@@ -399,6 +401,7 @@ function banLamViec(scene, x, z, vat, denDem, chu) {
   manHinh(scene, x, 0.78, z - 0.25, 0, denDem, chu);
   add(0.5, 0.03, 0.18, 0x2a2a2a, x, 0.78, z + 0.15);
   vat.push({ minX: x - 1, maxX: x + 1, minZ: z - 0.5, maxZ: z + 0.5 });
+  vat.push({ minX: x - 0.27, maxX: x + 0.27, minZ: z + 0.66, maxZ: z + 1.2, ghe: true }); // ghế xoay của bàn (đệm + lưng)
 }
 // ---------- Bàn, ghế ngồi được ----------
 // Mọi ghế quay theo cho.huong (người ngồi nhìn về +z cục bộ), mặt đệm cao 0,51 m để khớp dáng ngồi (thân hạ 0,36 m).

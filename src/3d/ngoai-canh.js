@@ -303,6 +303,7 @@ function taoBo(id, vat, dienThoai) {
   k.gheNhua = (x, z, mau, o = {}) => { // ghế nhựa đẩu (mặt ngồi cao 0,42 m)
     const cao = o.cao ?? 0.42;
     T(0.17, 0.2, 0.05, mau, x, cao - 0.05, z, { seg: 10 }); T(0.19, 0.24, cao - 0.05, mau, x, 0, z, { seg: 10, mo: true, hai: true });
+    if (o.can !== false) k.canHop(x, z, 0.4, 0.4);
   };
   k.ban = (x, z, w, d, h, mat, chan, o = {}) => {
     const g = k.nhomCon(x, z, o.ry || 0), c = { cha: g };
@@ -635,7 +636,7 @@ function dungDaiTivi(k) {
   const gd = k.nhomCon(4.8, 4.2, Math.PI - 0.5); for (const sx of [-1, 1]) for (const sz of [-1, 1]) H(0.04, 0.95, 0.04, 0x6b4a2f, sx * 0.24, 0, sz * 0.2, { cha: gd, rz: sx * 0.08 }); H(0.5, 0.04, 0.42, 0x1c1c1f, 0, 0.75, 0, { cha: gd }); V(daoDien, 0.5, 0.18, 0, 1.25, -0.19, { cha: gd, ry: Math.PI }); H(0.5, 0.2, 0.02, 0x1c1c1f, 0, 1.15, -0.2, { cha: gd }); gd.can(0, 0, 0.55, 0.5);
   // bàn trang điểm cạnh cửa: gương viền bóng đèn
   H(1.8, 0.78, 0.5, 0xf2f2f2, -8.2, 0, 6.6, { can: true }); H(1.4, 0.9, 0.03, 0xb8d4e0, -8.2, 1.2, 6.82); for (let i = 0; i < 6; i++) C(0.04, 0xfff3d0, -8.85 + i * 0.26, 2.15, 6.8, { sang: true }); for (let j = 0; j < 3; j++) { C(0.04, 0xfff3d0, -8.95, 1.3 + j * 0.3, 6.8, { sang: true }); C(0.04, 0xfff3d0, -7.45, 1.3 + j * 0.3, 6.8, { sang: true }); }
-  k.ghe(-8.2, 5.9, Math.PI, 0xf26fa6, { can: false });
+  k.ghe(-8.2, 5.9, Math.PI, 0xf26fa6);
   // giá treo trang phục
   H(1.6, 0.04, 0.04, 0x8a8d92, -5.4, 1.75, 6.5); for (const x of [-6.2, -4.6]) H(0.04, 1.75, 0.04, 0x8a8d92, x, 0, 6.5);
   for (let i = 0; i < 6; i++) H(0.36, 0.9, 0.08, [0xf26fa6, 0x2a5aa8, 0xffcf3a, 0x1c1c1f, 0xc0262d, 0xf6f6f2][i], -6.0 + i * 0.25, 0.8, 6.5, { ry: 0.2 });
@@ -783,7 +784,7 @@ function dungCaPhe(k) {
   for (const [x, z] of [[-0.6, -3.7], [-2.9, 1.4], [2.9, 1.2]]) { k.ban(x, z, 0.65, 0.65, 0.74, 0xc8955c, 0x2a2c31); k.ghe(x - 0.62, z, Math.PI / 2, 0xe8702a, { lung: 0.45, can: false }); k.ghe(x + 0.62, z, -Math.PI / 2, 0x2a6a8a, { lung: 0.45, can: false }); T(0.045, 0.035, 0.12, 0xf6f6f2, x, 0.74, z); k.can(x - 0.9, x + 0.9, z - 0.35, z + 0.35); }
   // bàn dài với ghế đẩu cao gần kính
   H(2.6, 0.05, 0.5, 0xc8955c, 1.9, 1.02, 4.35); for (const x of [0.8, 3.0]) H(0.05, 1.02, 0.4, 0x2a2c31, x, 0, 4.35); k.can(0.6, 3.2, 4.1, 4.6);
-  for (const x of [1.2, 1.9, 2.6]) { T(0.17, 0.17, 0.05, MAY, x, 0.7, 3.8); T(0.02, 0.02, 0.7, 0x2a2c31, x, 0, 3.8); }
+  for (const x of [1.2, 1.9, 2.6]) { T(0.17, 0.17, 0.05, MAY, x, 0.7, 3.8); T(0.02, 0.02, 0.7, 0x2a2c31, x, 0, 3.8); k.can(x - 0.17, x + 0.17, 3.63, 3.97); }
   // xích đu treo trần (khu kính trước)
   for (const x of [-5.3, -3.4]) {
     for (const sx of [-0.3, 0.3]) for (const sz of [-0.2, 0.2]) H(0.015, CAO - 0.45, 0.015, 0xd9c9a8, x + sx, 0.45, 3.4 + sz);
@@ -949,11 +950,11 @@ function dungPhongTro(k) {
   for (const [x, zz, r] of [[-1.05, -9.5, 0], [-1.05, -8.6, 0.1], [-1.05, 5.4, -0.1], [-1.05, 6.3, 0], [1.05, -6.0, Math.PI], [1.05, 7.5, Math.PI + 0.1]]) k.xeMay(x, zz, r);
   k.ban(-0.95, -3.6, 0.55, 0.55, 0.45, 0x2a5aa8, 0x555555);
   k.gheNhua(-0.95, -2.7, 0xc0262d); k.gheNhua(-0.95, -4.5, 0x2a5aa8); T(0.06, 0.06, 0.16, 0xe8702a, -0.95, 0.45, -3.6, { seg: 8 });
-  H(0.42, 0.42, 0.3, 0xb31b1b, -1.28, 0, 9.2); C(0.06, 0xffcf3a, -1.28, 0.5, 9.25, { sang: true }); // miếu ông địa
+  H(0.42, 0.42, 0.3, 0xb31b1b, -1.28, 0, 9.2, { can: true }); C(0.06, 0xffcf3a, -1.28, 0.5, 9.25, { sang: true }); // miếu ông địa
   const xeBM = k.nhomCon(-0.9, 11.4, Math.PI / 2); H(1.2, 0.75, 0.6, 0xb08a5a, 0, 0.15, 0, { cha: xeBM }); H(1.2, 0.5, 0.6, k.kinh, 0, 0.9, 0, { cha: xeBM }); H(1.3, 0.05, 0.7, 0xc0262d, 0, 1.4, 0, { cha: xeBM }); xeBM.can(0, 0, 1.3, 0.7);
   const bm = k.vung(256, 64, veBien("#c0262d", [["BÁNH MÌ CÔ BẢY", 0.55, 0.52, "#ffe14d"]])); V(bm, 1.1, 0.28, -0.59, 1.6, 11.4, { ry: Math.PI / 2 });
   T(0.22, 0.2, 0.4, 0x6b6b6b, 1.2, 0, 4.0, { can: true }); for (let i = 0; i < 5; i++) H(0.5, 0.02, 0.18, 0x5f9a48, 1.2 + Math.cos(i * 1.26) * 0.25, 0.9 + i * 0.08, 4.0 + Math.sin(i * 1.26) * 0.25, { ry: -i * 1.26, rz: 0.5, hai: true }); T(0.04, 0.05, 0.9, 0x7a8a4a, 1.2, 0.4, 4.0);
-  T(0.25, 0.22, 0.7, 0x2e8b57, 1.2, 0, -10.2, { can: true }); H(0.6, 0.35, 0.4, 0x1c1c1f, 1.1, 0, -11.0); C(0.25, 0x1c1c1f, 1.25, 0.25, -10.7);
+  T(0.25, 0.22, 0.7, 0x2e8b57, 1.2, 0, -10.2, { can: true }); H(0.6, 0.35, 0.4, 0x1c1c1f, 1.1, 0, -11.0); C(0.25, 0x1c1c1f, 1.25, 0.25, -10.7); k.can(0.8, 1.5, -11.2, -10.45); // bao rác
   C(0.15, 0xd9c9a8, -1.3, 2.3, 2.2, { sy: 1.3 }); H(0.01, 0.3, 0.01, 0x555555, -1.3, 2.45, 2.2); // lồng chim
   // dây điện chằng chịt
   for (let i = 0; i < 8; i++) { const za = -13 + i * 3.6, zb = za + 2 + k.rnd() * 3; k.day(k.vong([-1.5, 4.6 + k.rnd() * 1.5, za], [1.5, 4.3 + k.rnd() * 1.5, zb], 0.4 + k.rnd() * 0.4)); }
@@ -1034,7 +1035,7 @@ function dungLL(k) {
   const mo = k.vung(256, 40, (g, w, h) => { g.fillStyle = "rgba(255,255,255,.75)"; g.fillRect(0, 0, w, h); g.fillStyle = "#7a1424"; for (let x = 8; x < w; x += 22) { g.beginPath(); g.arc(x, h / 2, 5, 0, 7); g.fill(); } });
   V(mo, 7, 0.28, 6.04, 1.45, -5.5, { ry: Math.PI / 2 }); V(mo, 4.6, 0.28, 9.7, 1.45, -1.96);
   k.ban(9.0, -5.6, 3.0, 1.2, 0.75, 0xf6f4ef, 0x2a2c31);
-  for (const x of [8.0, 9.0, 10.0]) { k.ghe(x, -6.5, 0, 0x1c1c1f, { can: false }); k.ghe(x, -4.7, Math.PI, 0x1c1c1f, { can: false }); }
+  for (const x of [8.0, 9.0, 10.0]) { k.ghe(x, -6.5, 0, 0x1c1c1f); k.ghe(x, -4.7, Math.PI, 0x1c1c1f); }
   const tvH = k.vung(320, 180, veBien(gradNgang("#7a1424", "#2a1c14"), [["KẾ HOẠCH RA MẮT", 0.13, 0.35, "#ffffff"], ["NGÔI SAO MỚI · Q4", 0.1, 0.6, "#f2c4a0", 700]]));
   H(2.0, 1.15, 0.06, 0x111111, 9.0, 1.1, Z1 + 0.05); V(tvH, 1.9, 1.05, 9.0, 1.68, Z1 + 0.09, { sang: true });
   // sảnh chờ: sofa da đen, bàn trà, tạp chí
@@ -1053,7 +1054,7 @@ function dungLL(k) {
   // tủ cúp
   H(0.5, 2.0, 2.0, 0x2a1c14, X2 - 0.25, 0, 0.6, { can: true }); H(0.02, 1.6, 1.8, k.kinh, X2 - 0.51, 0.3, 0.6); for (const y of [0.7, 1.3]) for (let i = 0; i < 3; i++) { T(0.06, 0.03, 0.25, 0xd9b04a, X2 - 0.3, y, 0.0 + i * 0.6, { seg: 8 }); C(0.08, 0xd9b04a, X2 - 0.3, y + 0.32, 0.0 + i * 0.6); }
   // bàn bảo vệ cạnh cửa
-  H(1.4, 1.0, 0.6, 0x2a2c31, -8.6, 0, 6.2, { can: true }); k.ghe(-8.6, 6.9, Math.PI, 0x1c1c1f, { can: false });
+  H(1.4, 1.0, 0.6, 0x2a2c31, -8.6, 0, 6.2, { can: true }); k.ghe(-8.6, 6.9, Math.PI, 0x1c1c1f);
   const bv = k.vung(220, 60, veBien("#1c1c1f", [["BẢO VỆ", 0.55, 0.52, "#ffffff"]])); V(bv, 0.8, 0.22, -8.6, 0.7, 5.89, { ry: Math.PI });
   // cột tròn, đèn chùm vòng, chậu cây lớn
   for (const [x, z] of [[-4.2, 2.6], [4.2, 2.6]]) T(0.42, 0.42, CAO, 0xf6f4ef, x, 0, z, { can: true, seg: 14 });
@@ -1162,14 +1163,14 @@ function dungNhaVuon(k) {
   H(14.6, 0.16, 0.16, 0x6b4a2f, 0, 3.24, -3.1);
   // cửa gỗ ba gian: hai gian bên đóng, gian giữa mở hai cánh vào trong
   for (const x of [-4.2, 4.2]) { H(2.0, 2.6, 0.06, 0x8a5a3a, x, 0.08, -5.27); for (let i = 0; i < 4; i++) H(0.04, 2.4, 0.02, 0x6b3a2a, x - 0.75 + i * 0.5, 0.18, -5.23); }
-  H(0.95, 2.5, 0.05, 0x8a5a3a, -1.3, 0.05, -6.0, { ry: 1.35 }); H(0.95, 2.5, 0.05, 0x8a5a3a, 1.3, 0.05, -6.0, { ry: -1.35 });
+  H(0.95, 2.5, 0.05, 0x8a5a3a, -1.3, 0.05, -6.0, { ry: 1.35, can: true }); H(0.95, 2.5, 0.05, 0x8a5a3a, 1.3, 0.05, -6.0, { ry: -1.35, can: true });
   const lien = k.vung(512, 72, veBien("#b31b1b", [["PHÚC LỘC THỌ", 0.6, 0.52, "#ffcf3a", 800]])); V(lien, 1.9, 0.27, 0, 2.95, -5.28);
   // gian thờ bên trong
   H(2.2, 1.0, 0.6, 0x5a2a1a, 0, 0, -12.1, { can: true }); H(2.4, 0.06, 0.7, 0x6b3a2a, 0, 1.0, -12.1);
   C(0.08, 0xffb84d, -0.7, 1.15, -12.1, { sang: true }); C(0.08, 0xffb84d, 0.7, 1.15, -12.1, { sang: true }); T(0.1, 0.12, 0.14, 0xd9b04a, 0, 1.06, -12.1); for (let i = 0; i < 3; i++) H(0.008, 0.3, 0.008, 0xc0262d, -0.04 + i * 0.04, 1.2, -12.1);
   H(0.5, 0.65, 0.04, 0x2a2c31, -0.45, 1.6, -12.42); H(0.5, 0.65, 0.04, 0x2a2c31, 0.45, 1.6, -12.42); H(0.42, 0.56, 0.01, 0xd9c8a8, -0.45, 1.65, -12.39); H(0.42, 0.56, 0.01, 0xd9c8a8, 0.45, 1.65, -12.39);
   H(1.2, 0.5, 0.04, 0xb31b1b, 0, 2.4, -12.45); C(0.06, 0xff3a3a, 0, 2.95, -12.35, { sang: true });
-  k.ban(0, -9.6, 1.4, 0.8, 0.75, 0x6b3a2a, 0x5a2a1a); k.ghe(-1.0, -9.6, Math.PI / 2, 0x6b3a2a, { can: false }); k.ghe(1.0, -9.6, -Math.PI / 2, 0x6b3a2a, { can: false });
+  k.ban(0, -9.6, 1.4, 0.8, 0.75, 0x6b3a2a, 0x5a2a1a); k.ghe(-1.0, -9.6, Math.PI / 2, 0x6b3a2a); k.ghe(1.0, -9.6, -Math.PI / 2, 0x6b3a2a);
   H(2.0, 0.5, 1.6, 0x8a5a3a, -5.4, 0, -11.3, { can: true }); H(1.9, 0.04, 1.5, 0xd9c48a, -5.4, 0.5, -11.3); // bộ phản gỗ
   H(1.0, 1.9, 0.5, 0x6b3a2a, 5.6, 0, -12.1, { can: true }); H(0.04, 1.6, 0.4, 0x8a5a3a, 6.1, 0.15, -12.1);
   // hiên: bàn ghế gỗ, ấm trà, chậu kiểng
@@ -1194,7 +1195,7 @@ function dungNhaVuon(k) {
   T(0.6, 0.6, 0.75, 0x9a968e, -4.6, 0, 3.4, { can: true, seg: 12 }); T(0.48, 0.48, 0.76, 0x223a3a, -4.6, 0.0, 3.4, { seg: 12 }); for (const dx of [-0.55, 0.55]) H(0.08, 1.6, 0.08, 0x6b4a2f, -4.6 + dx, 0, 3.4); H(1.2, 0.08, 0.08, 0x6b4a2f, -4.6, 1.55, 3.4);
   for (const [x, z] of [[-7.5, -4.4], [-8.2, -4.0], [-7.6, -3.6]]) { T(0.3, 0.26, 0.75, 0x6b3a2a, x, 0, z, { seg: 10 }); C(0.32, 0x5a2f22, x, 0.62, z, { sy: 0.35 }); } k.can(-8.6, -7.1, -4.8, -3.2);
   H(1.8, 1.0, 1.2, 0xb89a5a, 10.5, 0, -6.5, { can: true }); for (let i = 0; i < 7; i++) H(0.03, 1.0, 0.03, 0x6b4a2f, 9.65 + i * 0.28, 0, -5.88); H(2.0, 0.08, 1.4, 0xa8503a, 10.5, 1.0, -6.5, { rx: 0.1 });
-  for (const [x, z, m] of [[9.2, -4.8, 0xf2f2f2], [8.8, -4.2, 0xb8553a], [11.2, -4.6, 0xe8c56a]]) { C(0.13, m, x, 0.22, z, { sy: 0.9 }); C(0.06, m, x + 0.1, 0.38, z); H(0.04, 0.04, 0.03, 0xc0262d, x + 0.12, 0.45, z); }
+  for (const [x, z, m] of [[9.2, -4.8, 0xf2f2f2], [8.8, -4.2, 0xb8553a], [11.2, -4.6, 0xe8c56a]]) { k.can(x - 0.16, x + 0.16, z - 0.16, z + 0.16); C(0.13, m, x, 0.22, z, { sy: 0.9 }); C(0.06, m, x + 0.1, 0.38, z); H(0.04, 0.04, 0.03, 0xc0262d, x + 0.12, 0.45, z); }
   C(1.0, 0xd9c48a, 12.6, 0.7, -2.2, { ct: 1, sy: 0.9 }); C(0.6, 0xe0cc92, 12.6, 1.5, -2.2, { ct: 1 }); k.can(11.7, 13.5, -3.1, -1.3);
   const xd = k.nhomCon(-6.0, -1.0, 0.6); for (const zz of [-0.5, 0.5]) { const r = new THREE.Mesh(new THREE.TorusGeometry(0.32, 0.025, 4, 14), vl(0x1c1c1f)); r.position.set(0, 0.34, zz); r.rotation.y = Math.PI / 2; xd.add(r); } H(0.04, 0.04, 1.0, 0x2a5aa8, 0, 0.55, 0, { cha: xd }); H(0.05, 0.5, 0.05, 0x2a5aa8, 0, 0.3, -0.25, { cha: xd }); H(0.2, 0.05, 0.12, 0x1c1c1f, 0, 0.82, -0.25, { cha: xd }); H(0.5, 0.03, 0.03, 0x8a8d92, 0, 0.9, 0.45, { cha: xd }); xd.can(0, 0, 0.3, 1.2);
   for (let r = 0; r < 4; r++) { H(4.0, 0.15, 0.6, 0x6b4a2f, -9.5, 0, -1.0 + r * 1.0); for (let i = 0; i < 9; i++) C(0.16, r % 2 ? 0x5f9a48 : 0x7fbf55, -11.3 + i * 0.45, 0.25, -1.0 + r * 1.0); } k.can(-11.5, -7.5, -1.4, 2.4);
@@ -1249,7 +1250,7 @@ function dungSkyAo(k) {
   H(0.9, 2.2, 0.7, 0xc0c4ca, -1.2, 0, Z2 - 0.35, { can: true }); H(0.02, 1.2, 0.02, 0x8a8d92, -0.8, 0.8, Z2 - 0.71);
   H(3.0, 0.92, 0.95, 0xf6f4ef, -4.1, 0, 3.05, { can: true }); H(3.1, 0.06, 1.05, 0x2a2c31, -4.1, 0.92, 3.05);
   T(0.18, 0.12, 0.06, 0xf2f2f2, -4.6, 0.98, 3.1, { seg: 12 }); for (let i = 0; i < 4; i++) C(0.06, [0xffcf3a, 0xc0262d, 0x7fbf55, 0xe8702a][i], -4.65 + (i % 2) * 0.1, 1.05, 3.05 + Math.floor(i / 2) * 0.08);
-  for (const x of [-5.1, -4.1, -3.1]) { T(0.17, 0.17, 0.05, 0x2a2c31, x, 0.72, 2.25, { seg: 10 }); T(0.025, 0.025, 0.72, 0xc0c4ca, x, 0, 2.25); T(0.15, 0.15, 0.02, 0xc0c4ca, x, 0.25, 2.25, { seg: 10 }); }
+  for (const x of [-5.1, -4.1, -3.1]) { T(0.17, 0.17, 0.05, 0x2a2c31, x, 0.72, 2.25, { seg: 10 }); T(0.025, 0.025, 0.72, 0xc0c4ca, x, 0, 2.25); T(0.15, 0.15, 0.02, 0xc0c4ca, x, 0.25, 2.25, { seg: 10 }); k.can(x - 0.17, x + 0.17, 2.08, 2.42); }
   for (const x of [-5.1, -4.1, -3.1]) k.denTha(x, 3.05, CAO, 1.1, 0xc8a060, { r: 0.15 });
   // bàn ăn 6 ghế cạnh kính
   k.ban(-4.4, -4.4, 2.2, 1.0, 0.76, 0x6b4a2f, 0x2a2c31);
@@ -1351,20 +1352,21 @@ function dungVungTau(k) {
       g.can(0, 0, 0.66, 1.8);
     }
     T(0.2, 0.2, 0.03, 0xf2f2f2, x, 0.5, z - 0.3, { seg: 10 }); T(0.03, 0.03, 0.5, 0xf2f2f2, x, 0, z - 0.3); C(0.1, 0x7fbf55, x + 0.05, 0.6, z - 0.3);
+    k.can(x - 0.2, x + 0.2, z - 0.5, z + 0.06); // cán dù + bàn nhỏ
     if (i % 3 === 0) P(0.8, 1.6, k.chon([0xf26fa6, 0x7fd3ff, 0xffcf3a]), x + 1.6, 0.02, z + 0.6, { nam: true });
   });
   // chòi cứu hộ
   const ch = k.nhomCon(14.5, 2.0, -0.3); for (const [a, b] of [[-0.8, -0.8], [0.8, -0.8], [-0.8, 0.8], [0.8, 0.8]]) H(0.12, 2.4, 0.12, 0xf2f2f2, a, 0, b, { cha: ch }); H(2.0, 0.12, 2.0, 0xf2f2f2, 0, 2.4, 0, { cha: ch }); H(2.0, 0.8, 0.06, 0xc0262d, 0, 2.5, 1.0, { cha: ch }); H(2.2, 0.1, 2.2, 0xc0262d, 0, 3.8, 0, { cha: ch }); for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) H(0.06, 1.3, 0.06, 0xf2f2f2, a, 2.5, b, { cha: ch }); for (let i = 0; i < 6; i++) H(0.8, 0.05, 0.12, 0xf2f2f2, 0, 0.3 + i * 0.4, 1.1 + i * 0.12, { cha: ch }); ch.can(0, 0, 1.9, 1.9);
   const cuuHo = k.vung(256, 64, veBien("#c0262d", [["CỨU HỘ", 0.6, 0.52, "#ffffff"]])); V(cuuHo, 1.6, 0.4, 0, 2.9, 1.04, { cha: ch });
-  T(0.03, 0.03, 3.2, 0xd9d4c8, 13.0, 0, -3.0); H(0.7, 0.45, 0.02, 0xc0262d, 13.37, 2.7, -3.0, { hai: true });
+  T(0.03, 0.03, 3.2, 0xd9d4c8, 13.0, 0, -3.0); k.can(12.95, 13.05, -3.05, -2.95); H(0.7, 0.45, 0.02, 0xc0262d, 13.37, 2.7, -3.0, { hai: true });
   // lưới bóng chuyền, lâu đài cát
   for (const x of [-15.5, -11]) T(0.05, 0.05, 2.4, 0xf2f2f2, x, 0, 7.2, { can: true }); H(4.5, 0.8, 0.02, 0xf2f2f2, -13.25, 1.6, 7.2, { hai: true });
-  C(0.5, 0xd9c08a, 1.2, 0.2, -2.6, { ct: 1, sy: 0.6 }); for (let i = 0; i < 4; i++) T(0.14, 0.18, 0.4, 0xd9c08a, 1.2 + Math.cos(i * 1.57) * 0.45, 0, -2.6 + Math.sin(i * 1.57) * 0.45, { seg: 6 });
+  C(0.5, 0xd9c08a, 1.2, 0.2, -2.6, { ct: 1, sy: 0.6 }); k.can(0.6, 1.8, -3.2, -2.0); for (let i = 0; i < 4; i++) T(0.14, 0.18, 0.4, 0xd9c08a, 1.2 + Math.cos(i * 1.57) * 0.45, 0, -2.6 + Math.sin(i * 1.57) * 0.45, { seg: 6 });
   // bếp lửa trại (lửa chỉ đốt khi cảnh lửa trại)
   for (let i = 0; i < 8; i++) C(0.18, 0x6d6a64, 6.2 + Math.cos(i * 0.785) * 0.7, 0.08, -2.6 + Math.sin(i * 0.785) * 0.7, { sy: 0.6 });
   for (let i = 0; i < 4; i++) T(0.06, 0.07, 1.0, 0x5a3a24, 6.2, 0.12, -2.6, { rz: Math.PI / 2, ry: i * 0.8 });
   k.can(5.5, 6.9, -3.3, -1.9);
-  for (const [x, z, r] of [[5.0, -1.6, 0.6], [7.4, -1.7, -0.6]]) T(0.18, 0.18, 1.5, 0x8a5a3a, x, 0.18, z, { rz: Math.PI / 2, ry: r });
+  for (const [x, z, r] of [[5.0, -1.6, 0.6], [7.4, -1.7, -0.6]]) { T(0.18, 0.18, 1.5, 0x8a5a3a, x, 0.18, z, { rz: Math.PI / 2, ry: r }); for (const s of [-1, 1]) k.canHop(x + s * Math.cos(r) * 0.375, z - s * Math.sin(r) * 0.375, 0.75, 0.36, r); } // khúc gỗ ngồi quanh lửa trại
   const lua = new THREE.Group(); lua.position.set(6.2, 0.15, -2.6); k.dong(lua); lua.visible = false;
   const vlLua = [0xffcf3a, 0xff7a1a, 0xff3a1a].map(c => new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: 0.85, depthWrite: false, blending: THREE.AdditiveBlending }));
   const ngon = [];

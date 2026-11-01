@@ -105,6 +105,7 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   for (const z of [17.4, 19.8]) nam(5.2, 0.1, 0xf2f2f2, 11.6, 0.007, z);
   dung(0.9, 0.45, new THREE.MeshLambertMaterial({ map: tranh("chosep", 180, 90, (g, w, h) => { g.fillStyle = "#ffffff"; g.fillRect(0, 0, w, h); g.strokeStyle = "#c0262d"; g.lineWidth = 6; g.strokeRect(3, 3, w - 6, h - 6); chuGiua(g, "CHỖ ĐỖ XE", w, 32, 22, "#c0262d"); chuGiua(g, "GIÁM ĐỐC", w, 62, 22, "#c0262d"); }) }), 14.7, 1.2, 18.6, -Math.PI / 2);
   K(0.06, 1.0, 0.06, 0x5a5d63, 14.76, 0, 18.6);
+  hop(0.14, 1.65, 0.9, 0x5a5d63, 14.76, 0, 18.6).visible = false; // khối va chạm biển chỗ đỗ (cọc + bảng)
   // hoa giấy hồng leo trên hàng rào trước
   for (let x = -23.5; x < 23.5; x += 0.9) {
     if (x > -1 && x < 5) continue;

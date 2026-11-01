@@ -52,7 +52,7 @@ export function dungSanKhau(nhom, can) {
   bang.position.set(tam, 6.6, 28.6); bang.children.forEach(c => { if (c.position.z > 0) c.position.z = 0.27; else if (c.position.z < 0) c.position.z = -0.27; }); nhom.add(bang);
   // cột đèn trang trí và cờ phướn dọc quảng trường
   for (let z = -2; z <= 26; z += 7) for (const x of [SK.x1 + 1.2, SK.x2 - 1.2]) {
-    H(0.14, 6, 0.14, 0xd94d8a, x, 0, z);
+    H(0.14, 6, 0.14, 0xd94d8a, x, 0, z); can(x - 0.08, x + 0.08, z - 0.08, z + 0.08);
     const p = tamBang(z % 2 ? "SIÊU NHÂN\nHỒNG" : "31.10", 0.8, 1.8, { nen: z % 2 ? "#f26fa6" : "#d94d8a", mau: "#ffffff", w: 96, h: 216, co: 26 });
     p.position.set(x + (x < tam ? 0.5 : -0.5), 4.6, z); p.rotation.y = Math.PI / 2; nhom.add(p);
   }
@@ -79,18 +79,19 @@ export function dungSanKhau(nhom, can) {
   // hàng rào chia lối vào (chừa lối giữa rộng 14 m tới khu khán giả)
   for (const x of [tam - 7, tam + 7]) for (let z = 13; z < 23; z += 2) { H(0.05, 1.0, 1.9, 0xf08abb, x, 0, z); H(0.5, 0.05, 0.08, 0xc95d92, x, 0, z - 0.9); }
   // bộ đàm, bình chữa cháy, biển an toàn
-  for (const z of [-2, 12]) { H(0.25, 0.6, 0.25, 0xc0262d, SK.x2 - 0.6, 0, z); }
+  for (const z of [-2, 12]) { H(0.25, 0.6, 0.25, 0xc0262d, SK.x2 - 0.6, 0, z); can(SK.x2 - 0.75, SK.x2 - 0.45, z - 0.15, z + 0.15); }
 
   // va chạm
   can(SK.x1 - 0.6, SK.x1, SK.z1, 29.9); can(SK.x2, SK.x2 + 0.6, SK.z1, 29.9);
   can(tam - 13.2, tam + 13.2, sauSan - 1, truocSan);                  // sân khấu (không leo lên)
   can(tam - 13, tam + 13, SK.rao - 0.1, SK.rao + 0.2);                 // rào
+  for (const x of [tam - 13.5, tam + 13.5]) can(x - 0.32, x + 0.32, truocSan - 0.1, truocSan + 0.5); // chân giàn khung trước sân khấu
   for (const s of [-1, 1]) { can(tam + s * 14.8 - 1.1, tam + s * 14.8 + 1.1, truocSan, truocSan + 1.6); can(tam + s * 13.8 - 0.75, tam + s * 13.8 + 0.75, truocSan - 2, truocSan); }
   can(tam + 7.4, tam + 10.6, 17.7, 20.3);
   for (const x of [tam - 13, tam + 13]) can(x - 0.45, x + 0.45, 28.15, 29.05);
   can(SK.x1, SK.x1 + 3, 19.4, 20.6); can(SK.x2 - 3, SK.x2, 20.4, 21.6);
   for (const s of [-1, 1]) { can(tam + s * MAN_PHU.x - 0.2, tam + s * MAN_PHU.x + 0.2, -9.8, -9.4); can(tam + s * MAN_PHU.x - MAN_PHU.w / 2 - 0.12, tam + s * MAN_PHU.x + MAN_PHU.w / 2 + 0.12, -9.45, MAN_PHU.z + 0.05); can(tam + s * 16.5 - 0.6, tam + s * 16.5 + 0.6, -16.4, -15.6); can(tam + s * 15.6 - 0.6, tam + s * 15.6 + 0.6, -13.8, -13.0); }
-  can(SK.x2 - 4.5, SK.x2 - 0.3, 25, 28); can(SK.x1 + 0.6, SK.x1 + 1.8, 8.4, 13.5); can(tam - 8.2, tam - 5.8, 24.1, 24.9);
+  can(SK.x2 - 4.5, SK.x2 - 0.3, 25, 28); can(SK.x1 + 0.6, SK.x1 + 1.8, 8.4, 13.5); can(tam - 8.25, tam - 5.75, 23.85, 25.35); can(SK.x2 - 5.6, SK.x2 - 4.8, 27.35, 27.85); // quầy check-in (cả bốn cột mái), tủ điện
   for (const x of [tam - 7, tam + 7]) can(x - 0.05, x + 0.05, 12, 22);
 }
 

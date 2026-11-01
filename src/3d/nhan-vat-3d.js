@@ -21,6 +21,7 @@ import { gopNguoi } from "./toi-uu.js"; // gộp cả người thành một kh�
 import { cheDoNhe } from "../cai-dat.js";
 import { dungNguoiMoi, taoChoMoi, dungTayNhin, TAY_A, giaiTay, matThanNv } from "./hinh-nguoi.js";
 import { gopMuot } from "./toi-uu.js";
+import { CU_THEM, THOI_CU_THEM, CU_KHI_DI, ketThucCuThem } from "./hoat-anh.js"; // cử chỉ thêm (vẫy tay, cúi chào, dùng đồ vật...)
 // người kiểu mới (khối tròn, tỉ lệ thật) ở mọi mức trừ "Thấp"; "Thấp" giữ nguyên người khối hộp cũ
 export const kieuMoi = () => !cheDoNhe();
 const MAT_PX = cheDoNhe() ? 128 : 256;
@@ -462,7 +463,7 @@ export function taoNguoi(ma, nhRieng = null) {
     }
     matGoc[iMat] = matCu[kieu];
   };
-  const _v = new THREE.Vector3(), _q = new THREE.Quaternion(), _q0 = new THREE.Quaternion();
+  const _v = new THREE.Vector3(), _q = new THREE.Quaternion(), _q0 = new THREE.Quaternion(), _q1 = new THREE.Quaternion();
   // người mập (Siêu Nhân Hồng): điểm tay với tới nằm trong bụng thì đẩy ra trước mặt bụng (ôm bụng cười, tay đặt đùi...)
   const thanSN = sieu && moi ? { thanHinh: P.rows } : null;
   const huongTay = (tay, x, y, z, k, boQua = false) => {
@@ -471,13 +472,13 @@ export function taoNguoi(ma, nhRieng = null) {
     _v.set(x - tay.position.x, y - tay.position.y, z - tay.position.z);
     const d = _v.length(); _v.divideScalar(d);
     _q.setFromUnitVectors(XUONG, _v);
-    if (k < 1) { _q0.copy(tay.quaternion); _q.slerpQuaternions(_q0, _q, k); }
+    if (k < 1) { _q0.copy(tay.quaternion); _q1.copy(_q); _q.slerpQuaternions(_q0, _q1, k); } // (không dùng _q vừa làm đích vừa làm kết quả: slerp ra đúng tư thế cũ)
     tay.quaternion.copy(_q);
     const co = Math.min(1, Math.max(0.42, d / 0.66));
     tay.scale.y = 1 + (co - 1) * k;
   };
   const muot = x => x * x * (3 - 2 * x);
-  const ketThucCu = () => { o.cu = null; doiMat(null); };
+  const ketThucCu = () => { if (o.cu) ketThucCuThem(A, o.cu); o.cu = null; doiMat(null); };
   const apCu = (c, p, t) => {
     const e = p < 0.16 ? muot(p / 0.16) : p > 0.8 ? muot((1 - p) / 0.2) : 1;
     const giua = p > 0.18 && p < 0.82;
@@ -534,6 +535,7 @@ export function taoNguoi(ma, nhRieng = null) {
         huongTay(tayP, 0.24 + Math.sin(t * 3.1) * 0.06, 1.12 + Math.sin(t * 4.3) * 0.07, 0.36, e * 0.9);
         dau.rotation.x += Math.sin(t * 5.3) * 0.035 * e;
         break;
+      default: CU_THEM[c.loai]?.(A, c, p, t, e);
     }
   };
 
@@ -546,7 +548,7 @@ export function taoNguoi(ma, nhRieng = null) {
     cu: null,        // cử chỉ đang làm { loai, dai, t0 }
     quayDau: 0,      // quay đầu thêm (nhìn người đang nói chuyện cùng)
     cam: null,       // "coc" | "dt": cầm ly / điện thoại trên tay phải
-    lamCu(loai, dai, bien = Math.random() < 0.5) { if (o.cu) ketThucCu(); o.cu = { loai, dai: dai ?? THOI_CU[loai] ?? 2, t0: null, bien }; },
+    lamCu(loai, dai, bien = Math.random() < 0.5) { if (o.cu) ketThucCu(); o.cu = { loai, dai: dai ?? THOI_CU[loai] ?? THOI_CU_THEM[loai] ?? 2, t0: null, bien }; },
     huyCu() { if (o.cu) ketThucCu(); },
     hoatDong(t, dangDi, toc = 1) {
       // tay cố định (cầm cờ, chỉ tay, áp điện thoại...) giữ nguyên độ co do code gọi đặt
@@ -621,7 +623,7 @@ export function taoNguoi(ma, nhRieng = null) {
       if (moi && vayDong && o.ngoi) vayDong.rotation.set(vayDong.userData.ngoi ?? -1.05, 0, 0); // ngồi: váy phủ theo đùi
       const c = o.cu;
       if (c) {
-        if (dangDi && c.loai !== "goi_dt" && c.loai !== "xem_dt") ketThucCu();
+        if (dangDi && !CU_KHI_DI.has(c.loai)) ketThucCu();
         else {
           if (c.t0 == null) c.t0 = t;
           const p = (t - c.t0) / c.dai;
@@ -637,6 +639,18 @@ export function taoNguoi(ma, nhRieng = null) {
       }
     },
   };
+  // khớp và hàm dùng cho cử chỉ thêm (hoat-anh.js) và đồ cầm tay khi tương tác (giuDo: nhóm giữ đồ ở bàn tay)
+  const A = {
+    o, huongTay, tayT, tayP, dau, than, chanT, chanP, goiT, goiP, dauY, vaiY, hongY: chanT.position.y, vayDong, moi, sieu,
+    doiMat: matGoc ? doiMat : null, datNghieng: v => { nghieng = v; },
+  };
+  o.A = A;
+  if (moi) o.giuDo = { dung: P.giuP.dung, tay: P.giuP.dt, trai: P.giuT.tay, cu: false };
+  else {
+    const dP = new THREE.Group(), dT = new THREE.Group();
+    dP.position.set(0, -0.69, 0.05); dT.position.set(0, -0.69, 0.05); khP.add(dP); P.khT.add(dT);
+    o.giuDo = { dung: dP, tay: dP, trai: dT, cu: true };
+  }
   return gopNguoi(o);
 }
 const XUONG = new THREE.Vector3(0, -1, 0), _vt = new THREE.Vector3();
@@ -916,10 +930,12 @@ export function taoDoiTay(ma) {
   const trai = mot(-1), phai = mot(1);
   let voi = 0, go = 0;
   return {
-    group: g,
+    group: g, trai, phai,
+    sau: null,       // hoat-anh-nc.js: động tác đôi tay khi dùng đồ vật, cử chỉ (chạy sau tư thế cơ bản, trộn mượt)
     voiRa(v) { voi = v; },
     datGo(v) { go = v ? 1 : 0; }, // ngồi bàn làm việc: hai tay đặt lên bàn phím gõ
-    hoatDong(t, dangDi, dt = 0.016) {
+    hoatDong(t, dangDi, dt = 0.016) { this.coBan(t, dangDi, dt); this.sau?.(t, dt); },
+    coBan(t, dangDi, dt) {
       this._go = (this._go ?? 0) + (go - (this._go ?? 0)) * Math.min(1, dt * 6);
       const k = this._go;
       if (k > 0.01) {
