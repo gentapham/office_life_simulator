@@ -10,6 +10,7 @@ import { themNoiThat } from "./noi-that.js";
 import { trangTriCongTy } from "./trang-tri.js";
 import { themChiTietCongTy, manHinhPhang } from "./chi-tiet-cong-ty.js";
 import { taoXeMay } from "./xe-3d.js";
+import { anhNhe } from "../cai-dat.js";
 export { THANG_MAY, capNhatChiTiet, capNhatCua, capNhatCuaSo } from "./chi-tiet-cong-ty.js";
 
 export const CAO_TANG = 4;
@@ -59,11 +60,13 @@ export const DO_VAT = [
   { loai: "trai_cay", tang: 0, x: 16.0, z: 7.0, nhan: "Ăn trái cây" },
   { loai: "tra_bac_binh", tang: 0, x: -6.9, z: 25.4, nhan: "Xin bác Bình ly trà" },
   // mua ngoài phố (trừ tiền thật trong ví)
-  { loai: "banh_mi", tang: 0, x: -6, z: 42.4, nhan: "Mua bánh mì (20.000đ)" },
+  // xe đẩy dãy nam: người bán đứng phía lòng đường (z − 0,8), khách ăn đứng hai bên người bán (game3d.js CHO_AN_PHO),
+  // người chơi mua ở một đầu xe (cách tâm xe 1,3 m, phía thoáng) quay mặt vào xe: không đứng chồng lên người bán, camera góc 3 không bị xe che
+  { loai: "banh_mi", tang: 0, x: -4.7, z: 42.95, nhin: [-5.35, 43.25, -0.42], nhan: "Mua bánh mì (20.000đ)" },
   { loai: "banh_mi", tang: 0, x: -40, z: 32.1, nhan: "Mua Bánh Mì Bựa (25.000đ)", gia: 25000 },
-  { loai: "hu_tieu", tang: 0, x: 40, z: 42.4, nhan: "Ăn hủ tiếu gõ (35.000đ)" },
+  { loai: "hu_tieu", tang: 0, x: 41.3, z: 42.95, nhin: [40.65, 43.25, -0.42], nhan: "Ăn hủ tiếu gõ (35.000đ)" },
   { loai: "nuoc_mia", tang: 0, x: 66, z: 32.1, nhan: "Mua nước mía (15.000đ)" },
-  { loai: "che", tang: 0, x: 13.5, z: 42.4, nhan: "Ăn chè Bà Bảy (20.000đ)" },
+  { loai: "che", tang: 0, x: 12.2, z: 42.95, nhin: [12.85, 43.25, -0.42], nhan: "Ăn chè Bà Bảy (20.000đ)" },
   ...[-120, -86, -52, -14, 22, 76, 112].map(x => ({ loai: "tra_da", tang: 0, x, z: 42.3, nhan: "Uống trà đá (5.000đ)" })),
   { loai: "uong_nuoc", tang: 0, x: 7.8, z: 10.4, nhan: "Uống nước" },
   { loai: "uong_nuoc", tang: 1, x: 18.75, z: 1.2, nhan: "Uống nước" },
@@ -282,7 +285,10 @@ export function taoTheGioi(sceneGoc, { dienThoai = false } = {}) {
   BAN_CHUNG.forEach((b, i) => banLamViec(scene, b.x, b.z, vat[0], denDem, CHU_BAN[i]));
   bangTrang(scene, -19.85, 1.4, 6, Math.PI / 2);
   // Pantry
-  hop(8, 0.95, 1, 0xd9d2c4, 14.5, 0, 13, { be: "be_tong" }); hop(1, 2, 0.9, 0xe8e8e8, 19.2, 0, 12.8, { be: "son_bong" }); // quầy + tủ lạnh
+  hop(8, 0.95, 1, 0xd9d2c4, 14.5, 0, 13, { be: "be_tong" }); // quầy
+  // tủ lạnh: vỏ rỗng (cánh cửa có bản lề, lòng tủ, đèn trong tủ: cua-tu-bep.js), va chạm vẫn là cả khối
+  for (const [w, h, d, x, y, z] of [[1, 2, 0.06, 19.2, 0, 13.22], [0.06, 2, 0.84, 18.73, 0, 12.83], [0.06, 2, 0.84, 19.67, 0, 12.83], [0.88, 0.08, 0.78, 19.2, 1.92, 12.8], [0.88, 0.08, 0.78, 19.2, 0, 12.8]]) hop(w, h, d, 0xe8e8e8, x, y, z, { can: false, be: "son_bong" });
+  vat[0].push({ minX: 18.7, maxX: 19.7, minZ: 12.35, maxZ: 13.25 });
   hop(1.2, 0.5, 0.6, 0x3a3d44, 12, 0.95, 13, { can: false, be: "kim" }); // máy pha cà phê
   for (const [x, z] of [[12, 6], [16, 6]]) { hop(2, 0.75, 1.2, 0xb08a5a, x, 0, z, { be: "go" }); }
   chauCay(scene, 19, 0, vat[0]);
@@ -573,9 +579,9 @@ function logoG(scene, x, y, z) {
 }
 function taoBienHieu() {
   // 13 x 2 m: nền cam chuyển màu, viền trắng, logo cầu vồng bên trái, chữ trắng có bóng đổ
-  const W = 2048, H = 316;
-  const c = document.createElement("canvas"); c.width = W; c.height = H;
-  const g = c.getContext("2d");
+  const W = 2048, H = 316, k = anhNhe() ? 0.5 : 1; // điện thoại, máy ít RAM: vẽ nửa độ phân giải
+  const c = document.createElement("canvas"); c.width = W * k; c.height = Math.round(H * k);
+  const g = c.getContext("2d"); g.scale(k, k);
   const nen = g.createLinearGradient(0, 0, 0, H); nen.addColorStop(0, "#ff8a3d"); nen.addColorStop(1, "#d9561a");
   g.fillStyle = nen; g.fillRect(0, 0, W, H);
   g.strokeStyle = "#fff"; g.lineWidth = 12; g.beginPath(); g.roundRect(18, 18, W - 36, H - 36, 26); g.stroke();

@@ -30,7 +30,12 @@ const tayBam = (X, x = 0.07, y = -0.06, z = -0.5, t = 0, nhanh = 13) => X.tay(1,
 const tayNghi = (X, ben) => X.tay(ben, 0.26 * ben, -0.36, -0.44, 0.1, -0.1 * ben, 0);
 // uống: nâng ly lên miệng (nang 0..1), ly nghiêng theo
 // (ly nghiêng tới ~110°: miệng ly kề môi, đáy ly hếch lên phía trước)
-const uongLy = (X, ten, nang) => { tayNguc(X, 1, nang); X.do(1, ten, { cam: true, rx: nang * 1.75, x: -0.045 + nang * 0.005, y: 0.01 + nang * 0.02 }); X.cam(0, 0.26 * nang); };
+// Ly đưa lên miệng nằm ngay dưới tầm mắt (miệng thấp hơn mắt ~9 cm, gần mặt): lúc uống chỉ thấy đáy ly nhô lên ở mép dưới
+// khung nhìn như ngoài đời, không che giữa màn hình (trước đây ly dừng ngang tầm mắt, cách 23 cm nên to chiếm giữa màn hình).
+const uongLy = (X, ten, nang) => {
+  X.tay(1, lerp(0.13, 0.04, nang), lerp(-0.2, -0.152, nang), lerp(-0.4, -0.19, nang), lerp(0.35, 1.15, nang), 0.35, -1.3);
+  X.do(1, ten, { cam: true, rx: nang * 1.75, x: -0.045 + nang * 0.01, y: 0.01 + nang * 0.012 }); X.cam(0, 0.22 * nang);
+};
 // ăn: đưa miếng lên miệng theo nhịp
 const anMieng = (X, ten, t, camTay = false) => {
   const n = (t * 1.6) % 1, m = n < 0.35 ? muot(n / 0.35) : n < 0.55 ? 1 : muot(1 - (n - 0.55) / 0.45);

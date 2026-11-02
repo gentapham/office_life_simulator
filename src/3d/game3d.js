@@ -22,6 +22,7 @@ import { caiToMau, mucVe } from "./to-mau.js";
 import { HauKy } from "./hau-ky.js";
 import { BongNang } from "./bong-nang.js";
 import { HoatAnhNC } from "./hoat-anh-nc.js";
+import { CuaTuBep } from "./cua-tu-bep.js";
 import { DoVatThem, DUNG_DO_THEM, HOAT_ANH_DO_CU, nhinDoCu, RAC_SAU } from "./tuong-tac-them.js";
 export { NOI_NGOAI, DIEM_PHO, diaDiemCuaNoi };
 export { DUNG_DO_THEM, HOAT_ANH_DO_CU, nhinDoCu, RAC_SAU }; // main.js: lời, chỉ số, động tác của đồ vật mới
@@ -115,6 +116,7 @@ export class Game3D {
 
     await buoc("toa_nha", 0.28);
     this.theGioi = taoTheGioi(this.scene, { dienThoai: this.nhe });
+    this.cuaTuBep = new CuaTuBep(this); // cửa tủ lạnh, lò vi sóng có bản lề (mở khi dùng)
     this.doVatThem = new DoVatThem(this); // máy in, máy bán nước, bi lắc, ATM, vé số... (trước giao thông: người đi bộ né được)
     await buoc("duong_pho", 0.55);
     this.bauTroi = new BauTroi(this.scene, { matUot: this.theGioi.pho.matUot, muc: this.mucVe });
@@ -877,6 +879,7 @@ export class Game3D {
     }
     this.hoatAnh.capNhatNpc(dt); this.hoatAnh.capNhatRac(); // đồng nghiệp quay đầu nhìn, chào; làm mượt tư thế
     this.doVatThem.capNhat(dt, this.t);
+    this.cuaTuBep.capNhat(dt);
     for (const l of this.theGioi.nhapNhay) l.visible = Math.sin(this.t * 6 + l.position.x * 9) > -0.3;
     if (this.marker.visible) this.marker.children[0].scale.setScalar(1 + Math.sin(this.t * 4) * 0.08);
     // tới mục tiêu?
@@ -972,6 +975,7 @@ export class Game3D {
     this.daHuy = true; // đang dựng dở (khoiDong) thì dừng ở bước kế tiếp
     clearTimeout(this._henBien);
     am.huyGame();
+    this.bauTroi?.mayBay?.tatTieng(); // tắt tiếng máy bay đang bay ngang
     this.doiSong?.huy();
     this.hoatAnh?.huy();
     this.ngoaiCanh?.huy();

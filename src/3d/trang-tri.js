@@ -161,11 +161,14 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
   // ================= PANTRY =================
   K(8, 0.7, 0.4, 0xf6f6f2, 14.5, 1.85, 13.62);                      // tủ bếp trên
   for (let k = 0; k < 5; k++) K(0.02, 0.6, 0.02, 0xb8bcc4, 11 + k * 1.6, 1.9, 13.41);
-  K(0.6, 0.35, 0.4, 0x2a2c31, 16.8, 0.95, 13.05); K(0.36, 0.22, 0.01, 0x9fc6e8, 16.75, 1.0, 12.84); // lò vi sóng
+  // lò vi sóng: vỏ rỗng + bảng điều khiển (cánh cửa có bản lề, lòng lò, đĩa xoay: cua-tu-bep.js)
+  K(0.6, 0.03, 0.4, 0x2a2c31, 16.8, 1.27, 13.05); K(0.6, 0.03, 0.4, 0x2a2c31, 16.8, 0.95, 13.05); K(0.6, 0.29, 0.03, 0x2a2c31, 16.8, 0.98, 13.235);
+  K(0.03, 0.29, 0.37, 0x2a2c31, 17.085, 0.98, 13.035); K(0.16, 0.29, 0.37, 0x2a2c31, 16.58, 0.98, 13.035); // vách trái, bảng điều khiển bên phải (nhìn từ trước lò)
+  for (let i = 0; i < 6; i++) K(0.035, 0.022, 0.006, 0x8a8d92, 16.55 + (i % 2) * 0.06, 1.05 + Math.floor(i / 2) * 0.04, 12.847); // nút bấm
   K(0.7, 0.03, 0.45, 0xb8bcc4, 13.4, 0.951, 13); tru(0.025, 0.25, 0xc0c4c8, 13.4, 0.95, 13.25);   // bồn rửa
   tru(0.09, 0.22, 0xf6f6f2, 15.4, 0.95, 13.05);                                                 // ấm đun nước
   for (const [x, z] of [[12, 6], [16, 6]]) { tru(0.16, 0.05, 0xf6f6f2, x, 0.75, z); for (let k = 0; k < 4; k++) cau(0.06, [0xff8a3a, 0xffd23a, 0x6ab04c, 0xc0262d][k], x - 0.06 + (k % 2) * 0.12, 0.85, z - 0.05 + Math.floor(k / 2) * 0.1); }
-  dung(1.0, 0.6, new THREE.MeshLambertMaterial({ map: tranh("napantry", 200, 120, (g, w, h) => { g.fillStyle = "#ffffff"; g.fillRect(0, 0, w, h); chuGiua(g, "TỦ LẠNH CHUNG", w, 30, 20, "#1f4fa8"); chuGiua(g, "Ghi tên lên hộp cơm", w, 62, 16, "#333", 600); chuGiua(g, "Hộp không tên = của Phát", w, 92, 15, "#c0262d", 600); }) }), 19.2, 1.45, 12.33, Math.PI);
+  // bảng "TỦ LẠNH CHUNG" dán trên cánh cửa tủ lạnh: cua-tu-bep.js (đi theo cửa khi mở)
 
   // ================= PHÒNG GIÁM ĐỐC =================
   V(2.4, 0.45, 0.9, 0x5a3d2a, -18.6, y2, -11.6, 1); K(2.4, 0.4, 0.2, 0x5a3d2a, -18.6, y2 + 0.45, -12.0, 1); // sofa da

@@ -2,6 +2,10 @@
 // đèn hàng không nhấp nháy ban đêm. Mỗi 1,5 – 4 phút một chuyến, bay qua gần đầu người chơi rồi khuất vào sương.
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+import { am } from "../am-thanh-game.js";
+
+const AM_TOC = 343;   // tốc độ âm thanh (m/s)
+const kep = (v, a, b) => Math.max(a, Math.min(b, v));
 
 function veChu() {
   const c = document.createElement("canvas"); c.width = 512; c.height = 64;
@@ -70,15 +74,64 @@ export class MayBay {
     this.g.position.copy(this._a); this.g.rotation.set(0, goc, 0);
     this.quang = 1300; this.t = 0; this.g.visible = true;
   }
-  capNhat(dt, camera, gio, mua) {
+  // ---------- Tiếng động cơ phản lực ở xa: ù ù trầm, nhỏ dần theo khoảng cách, hơi cao giọng khi bay tới, trầm khi bay xa ----------
+  // Dựng bằng bộ âm thủ tục của game (am-thanh-game.js), đi qua kênh "âm môi trường" nên theo âm lượng trong cài đặt.
+  taoTieng() {
+    const c = am.ctx; if (!c || !am.bus?.amMoiTruong || !am.nhieu) return null;
+    const ra = c.createGain(); ra.gain.value = 0;
+    const pan = c.createStereoPanner(); ra.connect(pan); pan.connect(am.bus.amMoiTruong);
+    const rung = c.createGain(); rung.gain.value = 1; rung.connect(ra);       // gió trên cao làm tiếng chập chờn
+    const lfo = c.createOscillator(); lfo.frequency.value = 0.23; const lg = c.createGain(); lg.gain.value = 0.18; lfo.connect(lg); lg.connect(rung.gain);
+    const tram = c.createBiquadFilter(); tram.type = "lowpass"; tram.frequency.value = 240; tram.Q.value = 0.6; tram.connect(rung);
+    const s1 = c.createBufferSource(); s1.buffer = am.nhieu.nau; s1.loop = true; s1.connect(tram);
+    const gu = c.createGain(); gu.gain.value = 0.22; gu.connect(rung);        // tiếng gầm của luồng phụt (dải giữa, rất nhỏ)
+    const gam = c.createBiquadFilter(); gam.type = "bandpass"; gam.frequency.value = 650; gam.Q.value = 0.7; gam.connect(gu);
+    const s2 = c.createBufferSource(); s2.buffer = am.nhieu.hong; s2.loop = true; s2.connect(gam);
+    const t = c.currentTime; s1.start(t, Math.random() * 1.5); s2.start(t, Math.random() * 1.5); lfo.start(t);
+    return { ra, pan, tram, gam, s1, s2, lfo };
+  }
+  tatTieng() {
+    const n = this.tieng; if (!n) return; this.tieng = null;
+    const c = am.ctx; if (!c) return;
+    n.ra.gain.cancelScheduledValues(c.currentTime); n.ra.gain.setTargetAtTime(0, c.currentTime, 0.25);
+    setTimeout(() => { try { n.s1.stop(); n.s2.stop(); n.lfo.stop(); n.pan.disconnect(); } catch {} }, 1500);
+  }
+  capNhatTieng(camera, trongNha) {
+    if (!am.ctx) return;
+    if (!this.tieng) { this.tieng = this.taoTieng(); if (!this.tieng) return; }
+    const n = this.tieng, c = am.ctx, t = c.currentTime, p = this.g.position, h = this._huong;
+    // âm tới tai trễ d / 343 giây: nghe như phát ra từ chỗ máy bay đã ở lúc trước (lệch về phía sau máy bay)
+    let dx = p.x - camera.position.x, dy = p.y - camera.position.y, dz = p.z - camera.position.z;
+    const tre = Math.hypot(dx, dy, dz) / AM_TOC;
+    dx -= h.x * this.v * tre; dz -= h.z * this.v * tre;
+    const d = Math.hypot(dx, dy, dz);
+    // Doppler (giảm còn 60% cho êm tai): vận tốc hướng về phía người nghe
+    const vToi = -(h.x * dx + h.z * dz) / Math.max(d, 1) * this.v;
+    const k = 1 + (AM_TOC / (AM_TOC - vToi) - 1) * 0.6;
+    const xa = kep(1 - (d - 130) / 760, 0, 1);
+    let v = 0.06 * Math.pow(xa, 1.7);
+    if (trongNha) v *= 0.35;                                                    // trong nhà: nghe qua tường kính, nhỏ và đục
+    if (this.t * this.v > this.quang - 120) v *= kep((this.quang - this.t * this.v) / 120, 0, 1); // sắp khuất: nhỏ dần về 0
+    n.ra.gain.setTargetAtTime(v, t, 0.3);
+    n.s1.playbackRate.setTargetAtTime(k, t, 0.3); n.s2.playbackRate.setTargetAtTime(k, t, 0.3);
+    n.tram.frequency.setTargetAtTime((trongNha ? 150 : 240) * k * (0.75 + 0.25 * xa), t, 0.3);  // càng xa càng mất tiếng cao
+    n.gam.frequency.setTargetAtTime(650 * k, t, 0.3);
+    // trái / phải theo hướng nhìn của người chơi (như am.diem: bên phải là (cos yaw, −sin yaw))
+    const yaw = am.nghe.yaw;
+    const phai = dx * Math.cos(yaw) - dz * Math.sin(yaw), ngang = Math.hypot(dx, dz);
+    n.pan.pan.setTargetAtTime(ngang > 1 ? kep(phai / ngang, -1, 1) * 0.55 : 0, t, 0.3);
+  }
+  capNhat(dt, camera, gio, mua, trongNha = false) {
     if (!this.g.visible) {
+      if (this.tieng) this.tatTieng();
       this.cho -= dt;
       if (this.cho <= 0) { if (!mua) this.bay(camera); this.cho = 90 + Math.random() * 150; }
       return;
     }
     this.t += dt;
     this.g.position.addScaledVector(this._huong, this.v * dt);
-    if (this.t * this.v > this.quang) { this.g.visible = false; return; }
+    if (this.t * this.v > this.quang) { this.g.visible = false; this.tatTieng(); return; }
+    this.capNhatTieng(camera, trongNha);
     // đèn: ban đêm nhấp nháy rõ, ban ngày gần như tắt
     const dem = gio < 6 || gio >= 18;
     const nhay = Math.floor(this.t * 1.2) % 2 === 0;

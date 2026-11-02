@@ -1,6 +1,8 @@
 // Điện thoại trong game: tin nhắn Zola, thống kê Tóp-tóp của Siêu Nhân Hồng, Phây-búc, bản đồ Quận Hóng,
 // gọi xe ôm, bộ sưu tập kết thúc và thành tựu. Bộ sưu tập, thành tựu lưu chung cho mọi lượt chơi.
 import { am } from "./am-thanh-game.js";
+import { NHOM_CONG_TY } from "./tin-truyen.js";
+import { videoCoTieng, ganTiengVideo, doiTieng, datNguonPhu, phat as phatVideo } from "./video-am.js";
 
 // ---------- Bộ sưu tập & thành tựu (lưu trên trình duyệt) ----------
 const KHOA_BST = "owfad_bo_suu_tap_v1";
@@ -352,6 +354,7 @@ const thay = (el, ...con) => el.replaceChildren(...con.flat(Infinity).filter(x =
 
 export function taoDienThoai(dep) {
   const { h, L } = dep;
+  datNguonPhu(() => dep.g?.sanKhau?.amThanh?.ctx); // nhạc sân khấu tạm ngưng khi clip trong máy đang kêu
   let lop = null, khung = null, ungDung = "chinh", khoaTruoc = false, phimUng = null, luiLai = null, henMo = null;
   const don = []; // việc dọn khi đổi ứng dụng / đóng máy: hẹn giờ, video
   const donSach = () => { while (don.length) { try { don.pop()(); } catch {} } phimUng = null; luiLai = null; };
@@ -442,7 +445,12 @@ export function taoDienThoai(dep) {
   const chatRieng = () => {
     const d = D(), m = new Map();
     const them = (ma, x) => { if (!ma || ma === L.ma || !dep.THEO_MA[ma]) return; if (!m.has(ma)) m.set(ma, []); m.get(ma).push(x); };
-    for (const t of L.tinDaDoc || []) { const ma = maTheoTen(String(t.ten).replace("Tin nhắn từ ", "")); them(ma, { ho: true, chu: dep.THEO_MA[ma]?.cau || "Rảnh không, nói chuyện chút.", ngay: t.ngay, p: 9 * 60 + bamSo(t.ten + t.ngay) % 400 }); }
+    for (const t of L.tinDaDoc || []) {
+      if (t.dong?.length) { if (t.ma && !t.nhom && t.kenh !== "sms") for (const x of dongTin(t)) them(t.ma, x); continue; }
+      // bản lưu cũ chỉ có tên người gửi: hiện câu cửa miệng như trước
+      const ma = maTheoTen(String(t.ten).replace("Tin nhắn từ ", ""));
+      them(ma, { ho: true, chu: dep.THEO_MA[ma]?.cau || "Rảnh không, nói chuyện chút.", ngay: t.ngay, p: t.p ?? 9 * 60 + bamSo(t.ten + t.ngay) % 400 });
+    }
     const vv = dep.viecVat?.();
     if (vv?.ma) {
       them(vv.ma, { ho: true, chu: `Tiện đường mua giùm ${vv.mon} nha, mình gửi lại tiền.`, ngay: L.ngay, p: 8 * 60 + 3 });
@@ -452,6 +460,17 @@ export function taoDienThoai(dep) {
     for (const ds of m.values()) ds.sort((a, b) => a.ngay - b.ngay || a.p - b.p);
     return [...m.entries()].sort((a, b) => { const x = a[1].at(-1), y = b[1].at(-1); return y.ngay - x.ngay || y.p - x.p; });
   };
+  // lời thật của tin nhắn trong truyện -> dòng chat { ho, ke, ai (mã người nói), tenAi, chu, ngay, p }
+  const dongTin = t => t.dong.map(x => ({ ho: x.ai !== "toi", ke: x.ai === "ke", ai: x.ai === "ho" ? x.ma || null : null, tenAi: x.ai === "ho" ? x.ten : null, chu: x.chu, ngay: t.ngay, p: t.p ?? 20 * 60 }));
+  const xepGio = ds => ds.sort((a, b) => a.ngay - b.ngay || a.p - b.p);
+  // các nhóm Zola: nhóm công ty (tin hằng ngày + tin trong truyện), các nhóm khác có trong truyện
+  const dsNhom = () => {
+    const m = new Map([[NHOM_CONG_TY, nhomHomNay().map(x => ({ ho: x.ma !== L.ma, ai: x.ma, chu: x.chu, ngay: L.ngay, p: x.p }))]]);
+    for (const t of L.tinDaDoc || []) if (t.dong?.length && t.nhom) { if (!m.has(t.nhom)) m.set(t.nhom, []); m.get(t.nhom).push(...dongTin(t)); }
+    for (const ds of m.values()) xepGio(ds);
+    return [...m.entries()];
+  };
+  const khoaNhom = k => k === NHOM_CONG_TY ? "nhom" : "zn-" + k;
   const khoaCuoi = ds => { const x = ds.at(-1); return x ? `${x.ngay}-${x.p}-${x.chu.length}` : ""; };
   const tinSMS = () => {
     const ds = [];
@@ -464,6 +483,13 @@ export function taoDienThoai(dep) {
     ds.push({ id: "xeom", ai: "Xe Ôm Hóng", tin: [{ ngay: 1, p: 7 * 60 + 50, chu: "Nhập mã HONGDI để giảm 10% cho một chuyến. Hạn dùng 31/10." }, ...xeOm] });
     const don = D().don.flatMap(o => [{ ngay: o.ngay, p: o.p, chu: `Đơn hàng "${o.ten}" đã được đặt. Dự kiến giao ngày ${o.giao}/10.` }, ...(L.ngay >= o.giao ? [{ ngay: o.giao, p: 10 * 60, chu: `Đơn hàng "${o.ten}" đã giao tới quầy bảo vệ G-Entertainment.` }] : [])]);
     if (don.length) ds.push({ id: "soppi", ai: "Sốp-pi", tin: don });
+    // tin nhắn thường trong truyện (không qua Zola)
+    for (const t of L.tinDaDoc || []) {
+      if (!t.dong?.length || t.kenh !== "sms") continue;
+      const ai = t.ma ? ten(t.ma) : "Số lạ", id = "tt-" + (t.ma || "la");
+      let c = ds.find(x => x.id === id); if (!c) ds.push(c = { id, ai, tin: [] });
+      c.tin.push(...t.dong.map(x => ({ ngay: t.ngay, p: t.p ?? 20 * 60, chu: x.chu, toi: x.ai === "toi", ke: x.ai === "ke" })));
+    }
     if (L.ngay >= 20) ds.push({ id: "dnh", ai: "BTC Đại Nhạc Hội", tin: [{ ngay: 20, p: 15 * 60, chu: "Vé khán đài khu A của bạn đã được xác nhận. Hẹn gặp 19:30 ngày 31/10 tại Quảng trường Hồng." }] });
     for (const t of ds) { t.tin = t.tin.filter(x => x.ngay < L.ngay || (x.ngay === L.ngay && x.p <= phut())).sort((a, b) => a.ngay - b.ngay || a.p - b.p); }
     return ds.filter(t => t.tin.length).sort((a, b) => { const x = a.tin.at(-1), y = b.tin.at(-1); return y.ngay - x.ngay || y.p - x.p; });
@@ -473,8 +499,9 @@ export function taoDienThoai(dep) {
   // số trên biểu tượng
   const soBao = id => {
     const d = D();
-    if (id === "zola") return (dep.tinCho() ? 1 : 0) + (nhomHomNay().length && d.daXem.nhom !== `${L.ngay}-${nhomHomNay().length}` ? 1 : 0)
-      + chatRieng().filter(([ma, ds]) => ds.at(-1).ho && d.daXem["z-" + ma] !== khoaCuoi(ds)).length;
+    if (id === "zola") return (dep.tinCho() ? 1 : 0)
+      + chatRieng().filter(([ma, ds]) => ds.at(-1).ho && d.daXem["z-" + ma] !== khoaCuoi(ds)).length
+      + dsNhom().filter(([k, ds]) => ds.length && d.daXem[khoaNhom(k)] !== khoaCuoi(ds)).length;
     if (id === "phaybuc") return d.daXem.pb === L.ngay ? 0 : 3 + (L.ngay % 4);
     if (id === "sms") return tinSMS().filter(t => d.daXem["s-" + t.id] !== khoaCuoi(t.tin)).length;
     if (id === "toptop" || id === "diutup") return clipDaRa()[0]?.ngay === L.ngay && d.daXem[id] !== L.ngay ? 1 : 0;
@@ -509,14 +536,14 @@ export function taoDienThoai(dep) {
   const zola = (() => {
     let tab = "tin";
     const veDS = than => {
-      const d = D(), cho = dep.tinCho(), nhom = nhomHomNay(), rieng = chatRieng();
+      const d = D(), cho = dep.tinCho(), rieng = chatRieng();
       const loc = h("input", { class: "dt-z-tim", type: "search", placeholder: "Tìm kiếm", "aria-label": "Tìm kiếm" });
       const dsEl = h("div", { class: "dt-z-ds" });
       const hang = ({ avEl, tieuDe, xemTruoc, gio, moi, onclick }) => nut({ class: "dt-z-hang" + (moi ? " moi" : ""), onclick, "data-ten": tieuDe },
         avEl, h("div", {}, h("b", {}, tieuDe), h("small", {}, xemTruoc)), h("span", { class: "dt-z-phai" }, h("small", {}, gio), moi ? h("em", {}, "1") : null));
       const ds = [
         cho ? hang({ avEl: h("span", { class: "dt-av", style: "--av:#0068ff" }, chuDau(cho.replace("Tin nhắn từ ", ""))), tieuDe: cho.replace("Tin nhắn từ ", ""), xemTruoc: "Đã gửi cho bạn một tin nhắn", gio: gioNay(), moi: true, onclick: () => { dong(); dep.moTin(); } }) : null,
-        hang({ avEl: h("span", { class: "dt-av nhom" }, "G"), tieuDe: "G-Ent Anh Em Một Nhà", xemTruoc: nhom.length ? `${ten(nhom.at(-1).ma)}: ${nhom.at(-1).chu}` : "Chưa có tin nhắn hôm nay", gio: nhom.length ? hhmm(nhom.at(-1).p) : "", moi: nhom.length && d.daXem.nhom !== `${L.ngay}-${nhom.length}`, onclick: () => veNhom(than) }),
+        ...dsNhom().map(([k, ds]) => { const c = ds.at(-1); return hang({ avEl: h("span", { class: "dt-av nhom" }, k === NHOM_CONG_TY ? "G" : chuDau(k)), tieuDe: k, xemTruoc: c ? (c.ke ? c.chu : c.ho ? `${c.ai ? ten(c.ai) : c.tenAi || "Ai đó"}: ${c.chu}` : `Bạn: ${c.chu}`) : "Chưa có tin nhắn hôm nay", gio: c ? thoiGian(c.ngay, c.p) : "", moi: !!c && d.daXem[khoaNhom(k)] !== khoaCuoi(ds), onclick: () => veNhom(than, k) }); }),
         ...rieng.map(([ma, ds]) => { const c = ds.at(-1); return hang({ avEl: av(ma), tieuDe: ten(ma), xemTruoc: (c.ho ? "" : "Bạn: ") + c.chu, gio: thoiGian(c.ngay, c.p), moi: c.ho && d.daXem["z-" + ma] !== khoaCuoi(ds), onclick: () => veChat(than, ma) }); }),
       ].filter(Boolean);
       thay(dsEl, ...ds);
@@ -535,15 +562,20 @@ export function taoDienThoai(dep) {
           nut({ class: "dt-dong", onclick: () => mo("anh") }, icEl("anh", "mau-xanh"), h("span", {}, "Ảnh của tôi"), h("small", {}, `${anh.length} ảnh`), icEl("phai", "nhat")),
           nut({ class: "dt-dong", onclick: () => { dong(); dep.moCaiDat(); } }, icEl("ba_cham", "mau-xam"), h("span", {}, "Cài đặt"), h("small", {}), icEl("phai", "nhat"))));
     };
-    const veNhom = than => {
-      const nhom = nhomHomNay(); D().daXem.nhom = `${L.ngay}-${nhom.length}`; luu();
+    const nhanNgay = n => n === L.ngay ? `Hôm nay, ${n}/10` : `${dep.ngayDayDu(n).split(" - ")[0]}, ${n}/10`;
+    const veNhom = (than, k = NHOM_CONG_TY) => {
+      const ds = dsNhom().find(([x]) => x === k)?.[1] || [];
+      D().daXem[khoaNhom(k)] = khoaCuoi(ds); luu();
       luiLai = () => ve();
-      khung.querySelector(".dt-dau").replaceWith(dau("G-Ent Anh Em Một Nhà", { lui: () => ve(), cls: "z" }));
-      const tin = h("div", { class: "dt-z-chat" }, h("small", { class: "dt-z-ngay" }, `Hôm nay, ${L.ngay}/10`),
-        nhom.length ? nhom.map(x => x.ma === L.ma
-          ? h("div", { class: "dt-z-b toi" }, h("p", {}, x.chu), h("small", {}, hhmm(x.p)))
-          : h("div", { class: "dt-z-b" }, av(x.ma, "nho"), h("div", {}, h("b", {}, ten(x.ma)), h("p", {}, x.chu), h("small", {}, hhmm(x.p)))))
-          : h("p", { class: "dt-trong" }, "Nhóm chưa có tin nhắn nào hôm nay."));
+      khung.querySelector(".dt-dau").replaceWith(dau(k, { lui: () => ve(), cls: "z" }));
+      let ngay0 = 0; const kq = [];
+      for (const x of ds) {
+        if (x.ngay !== ngay0) { ngay0 = x.ngay; kq.push(h("small", { class: "dt-z-ngay" }, nhanNgay(x.ngay))); }
+        kq.push(x.ke ? h("p", { class: "dt-z-ke" }, x.chu)
+          : !x.ho ? h("div", { class: "dt-z-b toi" }, h("p", {}, x.chu), h("small", {}, hhmm(x.p)))
+          : h("div", { class: "dt-z-b" }, x.ai ? av(x.ai, "nho") : h("span", { class: "dt-av nho nhom" }, chuDau(x.tenAi || k)), h("div", {}, h("b", {}, x.ai ? ten(x.ai) : x.tenAi || "Thành viên nhóm"), h("p", {}, x.chu), h("small", {}, hhmm(x.p)))));
+      }
+      const tin = h("div", { class: "dt-z-chat" }, ds.length ? kq : [h("small", { class: "dt-z-ngay" }, nhanNgay(L.ngay)), h("p", { class: "dt-trong" }, "Nhóm chưa có tin nhắn nào hôm nay.")]);
       thay(than, tin);
       khung.querySelector(".dt-tab")?.remove();
       requestAnimationFrame(() => { tin.scrollTop = tin.scrollHeight; });
@@ -560,7 +592,8 @@ export function taoDienThoai(dep) {
         let ngay0 = 0; const kq = [];
         for (const x of ds) {
           if (x.ngay !== ngay0) { ngay0 = x.ngay; kq.push(h("small", { class: "dt-z-ngay" }, x.ngay === L.ngay ? `Hôm nay, ${x.ngay}/10` : `${dep.ngayDayDu(x.ngay).split(" - ")[0]}, ${x.ngay}/10`)); }
-          kq.push(x.ho ? h("div", { class: "dt-z-b" }, av(ma, "nho"), h("div", {}, h("p", {}, x.chu), h("small", {}, hhmm(x.p))))
+          kq.push(x.ke ? h("p", { class: "dt-z-ke" }, x.chu)
+            : x.ho ? h("div", { class: "dt-z-b" }, av(x.ai || ma, "nho"), h("div", {}, x.ai && x.ai !== ma ? h("b", {}, ten(x.ai)) : null, h("p", {}, x.chu), h("small", {}, hhmm(x.p))))
             : h("div", { class: "dt-z-b toi" }, h("p", {}, x.chu), h("small", {}, `${hhmm(x.p)} · Đã nhận`)));
         }
         if (!ds.length) kq.push(h("p", { class: "dt-trong" }, `Hãy gửi lời chào tới ${ten(ma)}.`));
@@ -702,23 +735,24 @@ export function taoDienThoai(dep) {
     const xem = c => {
       donSachVideo();
       luiLai = () => veDS();
-      const v = h("video", { class: "dt-yt-v", src: `${gocURL}video/sieu-nhan-hong-${c.so}.mp4`, playsinline: true, preload: "auto" });
+      const v = h("video", { class: "dt-yt-v", src: videoCoTieng(c.so), playsinline: true, preload: "none" });
       v.playsInline = true;
       const nutPlay = nut({ class: "dt-yt-play", "aria-label": "Phát / dừng" }, icEl("pause"));
       const thanh = h("input", { class: "dt-yt-thanh", type: "range", min: "0", max: "1000", value: "0", "aria-label": "Tua video" });
       const tg = h("small", { class: "dt-yt-gio" }, "0:00");
       const nutLoa = nut({ class: "dt-yt-loa", "aria-label": "Tắt / bật tiếng" }, icEl("loa"));
       const lop_ = h("div", { class: "dt-yt-dk-lop" }, nutPlay, h("div", { class: "dt-yt-duoi" }, tg, thanh, nutLoa));
-      const capNhat = () => { thay(nutPlay, icEl(v.paused ? "play" : "pause")); thay(nutLoa, icEl(v.muted ? "tat_loa" : "loa")); lop_.classList.toggle("dung", v.paused); };
-      const choi = () => v.play().catch(() => { v.muted = true; v.play().catch(() => {}); capNhat(); });
+      const capNhat = () => { thay(nutPlay, icEl(v.paused ? "play" : "pause")); thay(nutLoa, icEl(v.muted ? "tat_loa" : "loa")); nutLoa.setAttribute("aria-pressed", String(!v.muted)); lop_.classList.toggle("dung", v.paused); };
+      const choi = () => phatVideo(v, capNhat);
       nutPlay.onclick = e => { e.stopPropagation(); v.paused ? choi() : v.pause(); };
-      nutLoa.onclick = e => { e.stopPropagation(); v.muted = !v.muted; capNhat(); };
+      nutLoa.onclick = e => { e.stopPropagation(); if (!doiTieng(v)) bao("Âm thanh đang tắt trong Cài đặt"); else if (v.paused) choi(); capNhat(); };
+      const boTieng = ganTiengVideo(v, capNhat);
       v.addEventListener("play", capNhat); v.addEventListener("pause", capNhat); v.addEventListener("volumechange", capNhat);
       v.addEventListener("timeupdate", () => { if (isFinite(v.duration) && v.duration) { thanh.value = String(Math.round(v.currentTime / v.duration * 1000)); tg.textContent = `${phutGiay(v.currentTime)} / ${phutGiay(v.duration)}`; } });
       v.addEventListener("ended", () => { const ds = clipDaRa(), i = ds.indexOf(c); if (ds[i + 1]) xem(ds[i + 1]); });
       thanh.addEventListener("input", () => { if (isFinite(v.duration)) v.currentTime = Number(thanh.value) / 1000 * v.duration; });
-      tatV = () => { v.pause(); v.removeAttribute("src"); v.load(); phimUng = null; };
-      phimUng = e => e.code === "Space" || e.code === "KeyK" ? (v.paused ? choi() : v.pause(), true) : e.code === "ArrowRight" ? (v.currentTime += 5, true) : e.code === "ArrowLeft" ? (v.currentTime = Math.max(0, v.currentTime - 5), true) : false;
+      tatV = () => { boTieng(); v.pause(); v.removeAttribute("src"); v.load(); phimUng = null; };
+      phimUng = e => e.code === "Space" || e.code === "KeyK" ? (v.paused ? choi() : v.pause(), true) : e.code === "KeyM" ? (doiTieng(v), capNhat(), true) : e.code === "ArrowRight" ? (v.currentTime += 5, true) : e.code === "ArrowLeft" ? (v.currentTime = Math.max(0, v.currentTime - 5), true) : false;
       const khung_ = h("div", { class: "dt-yt-khung", onclick: () => lop_.classList.toggle("an") }, v, lop_);
       const soThich = Math.round(luotXem(c) * 0.06);
       const nThich = nut({ class: "dt-yt-vien" + (d["yt" + c.so] === 1 ? " on" : ""), onclick: () => { d["yt" + c.so] = d["yt" + c.so] === 1 ? 0 : 1; luu(); xemLai(); } }, icEl("thich"), gon(soThich + (d["yt" + c.so] === 1 ? 1 : 0)));
@@ -755,17 +789,21 @@ export function taoDienThoai(dep) {
     const d = D();
     const than = h("div", { class: "dt-than toi tt-than" });
     const tab = (chu, on, f) => nut({ class: "tt-tab" + (on ? " on" : ""), onclick: f }, chu);
-    let tatV = null; don.push(() => tatV?.());
+    let tatV = null, vuaVuot = false; don.push(() => tatV?.());
     const veFeed = (i = 0) => {
       tatV?.(); tatV = null; luiLai = null;
       const c = ds[i];
-      const v = h("video", { class: "tt-vid", src: `${gocURL}video/sieu-nhan-hong-${c.so}.mp4`, playsinline: true, loop: true, autoplay: true, preload: "auto" });
-      v.muted = true; v.playsInline = true; v.play().catch(() => {});
-      tatV = () => { v.pause(); v.removeAttribute("src"); v.load(); };
+      const v = h("video", { class: "tt-vid", src: videoCoTieng(c.so), playsinline: true, loop: true, preload: "none" });
+      v.playsInline = true;
+      const veTieng = () => { if (tieng) { thay(tieng, icEl(v.muted ? "tat_loa" : "loa"), h("small", {}, v.muted ? "Tắt tiếng" : "Có tiếng")); tieng.setAttribute("aria-pressed", String(!v.muted)); } };
+      let tieng = null;
+      const boTieng = ganTiengVideo(v, veTieng);
+      const choi = () => phatVideo(v, veTieng);
+      tatV = () => { boTieng(); v.pause(); v.removeAttribute("src"); v.load(); };
       const k = "tt" + c.so;
       const soTim = () => dep.so(Math.round(xem(c) * 0.12) + (d[k] ? 1 : 0));
       const tim = nut({ class: "tt-nut" + (d[k] ? " on" : ""), "aria-label": "Thích", onclick: e => { d[k] = !d[k]; luu(); e.currentTarget.classList.toggle("on", !!d[k]); e.currentTarget.querySelector("small").textContent = soTim(); am.phat("click"); } }, icEl("tim_yeu", "tim"), h("small", {}, soTim()));
-      const tieng = nut({ class: "tt-nut", "aria-label": "Bật / tắt tiếng", onclick: e => { v.muted = !v.muted; if (!v.muted) v.play().catch(() => { v.muted = true; }); thay(e.currentTarget, icEl(v.muted ? "tat_loa" : "loa"), h("small", {}, v.muted ? "Tắt tiếng" : "Có tiếng")); } }, icEl("tat_loa"), h("small", {}, "Tắt tiếng"));
+      tieng = nut({ class: "tt-nut tt-tieng", "aria-label": "Bật / tắt tiếng", onclick: () => { if (!doiTieng(v)) bao("Âm thanh đang tắt trong Cài đặt"); else if (v.paused) choi(); veTieng(); } });
       const doi = dd => { const j = (i + dd + ds.length) % ds.length; if (j !== i) { am.phat("click"); veFeed(j); } };
       const sheet = h("div", { class: "tt-bl", hidden: true });
       const nguoi = dep.NHAN_VAT.filter(x => x.ma !== "sieu_nhan_hong" && x.ma !== "cho");
@@ -774,10 +812,10 @@ export function taoDienThoai(dep) {
         thay(sheet, h("div", { class: "tt-bl-dau" }, h("b", {}, `${dep.so(Math.round(xem(c) * 0.008))} bình luận`), nut({ class: "tt-bl-dong", "aria-label": "Đóng", onclick: () => { sheet.hidden = true; } }, icEl("x"))),
           h("div", { class: "tt-bl-ds" }, Array.from({ length: 5 }, (_, j) => { const n = nguoi[(c.so * 5 + j * 3 + L.ngay) % nguoi.length]; return h("div", { class: "tt-bl-dong-chu" }, av(n.ma, "nho"), h("div", {}, h("small", {}, ten(n.ma)), h("p", {}, BINH_LUAN[(c.so + j * 3) % BINH_LUAN.length]))); })));
       };
-      phimUng = e => e.code === "ArrowDown" ? (doi(1), true) : e.code === "ArrowUp" ? (doi(-1), true) : e.code === "Space" ? (v.paused ? v.play().catch(() => {}) : v.pause(), true) : false;
+      phimUng = e => e.code === "ArrowDown" ? (doi(1), true) : e.code === "ArrowUp" ? (doi(-1), true) : e.code === "Space" ? (v.paused ? choi() : v.pause(), true) : e.code === "KeyM" ? (doiTieng(v), veTieng(), true) : false;
       let y0 = null;
       thay(than, 
-        h("div", { class: "tt-feed", onpointerdown: e => { if (!e.target.closest("button, .tt-bl")) y0 = e.clientY; }, onpointerup: e => { if (y0 != null && Math.abs(e.clientY - y0) > 40) doi(e.clientY < y0 ? 1 : -1); y0 = null; }, onwheel: e => { if (!e.target.closest(".tt-bl") && Math.abs(e.deltaY) > 20) doi(e.deltaY > 0 ? 1 : -1); } },
+        h("div", { class: "tt-feed", onpointerdown: e => { if (!e.target.closest("button, .tt-bl")) y0 = e.clientY; }, onpointerup: e => { vuaVuot = y0 != null && Math.abs(e.clientY - y0) > 40; if (vuaVuot) doi(e.clientY < y0 ? 1 : -1); y0 = null; }, onwheel: e => { if (!e.target.closest(".tt-bl") && Math.abs(e.deltaY) > 20) doi(e.deltaY > 0 ? 1 : -1); } },
           v,
           h("div", { class: "tt-tren" }, tab("Đang theo dõi", false, () => veFeed(0)), tab("Dành cho bạn", true, () => {}), tab("Hồ sơ", false, () => veHoSo())),
           h("div", { class: "tt-phai" },
@@ -792,6 +830,10 @@ export function taoDienThoai(dep) {
             h("small", {}, `${i + 1}/${ds.length}`),
             nut({ "aria-label": "Clip sau", onclick: () => doi(1) }, icEl("xuong"))),
           sheet));
+      // chạm vào clip: dừng / phát tiếp (vuốt lên xuống thì đổi clip)
+      v.addEventListener("click", () => { if (vuaVuot) return; v.paused ? choi() : v.pause(); });
+      v.addEventListener("pause", () => than.classList.toggle("tt-dung", v.paused)); v.addEventListener("play", () => than.classList.remove("tt-dung"));
+      veTieng(); choi();
     };
     const veHoSo = () => {
       tatV?.(); tatV = null; luiLai = () => veFeed(0);
@@ -1315,7 +1357,7 @@ export function taoDienThoai(dep) {
       luiLai = veDS;
       khung.querySelector(".dt-dau").replaceWith(h("header", { class: "dt-dau sang sms" }, nut({ class: "dt-lui", "aria-label": "Quay lại", onclick: veDS }, icEl("lui")), h("div", { class: "dt-sms-ai" }, h("span", { class: "dt-av nho", style: "--av:#8e8e93" }, chuDau(t.ai)), h("b", {}, t.ai)), h("span", { class: "dt-dau-trong" })));
       let ngay0 = 0;
-      const tin = h("div", { class: "dt-sms-chat" }, t.tin.flatMap(x => { const kq = []; if (x.ngay !== ngay0) { ngay0 = x.ngay; kq.push(h("small", { class: "dt-z-ngay" }, `${dep.ngayDayDu(x.ngay).split(" - ")[0]}, ${x.ngay}/10 lúc ${hhmm(x.p)}`)); } kq.push(h("p", { class: "dt-sms-b" }, x.chu)); return kq; }));
+      const tin = h("div", { class: "dt-sms-chat" }, t.tin.flatMap(x => { const kq = []; if (x.ngay !== ngay0) { ngay0 = x.ngay; kq.push(h("small", { class: "dt-z-ngay" }, `${dep.ngayDayDu(x.ngay).split(" - ")[0]}, ${x.ngay}/10 lúc ${hhmm(x.p)}`)); } kq.push(h("p", { class: x.ke ? "dt-sms-ke" : "dt-sms-b" + (x.toi ? " toi" : "") }, x.chu)); return kq; }));
       thay(than, tin);
       requestAnimationFrame(() => { tin.scrollTop = tin.scrollHeight; });
     };

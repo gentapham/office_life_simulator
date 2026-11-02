@@ -20,12 +20,12 @@ const STRESS_CANH = [[70, "Stress cao. Vuốt mèo, ngắm cá hay đi vệ sinh
 // món có thể nhờ mua (mã khớp với loại đồ vật bán món đó)
 // món đồng nghiệp hay nhờ mua và chỗ bán (tọa độ chỗ đứng mua trong game)
 export const MON_VIEC_VAT = [
-  { loai: "banh_mi", mon: "ổ bánh mì", noi: "Xe bánh mì bên kia đường, lệch trái cổng công ty", x: -6, z: 42.4 },
+  { loai: "banh_mi", mon: "ổ bánh mì", noi: "Xe bánh mì bên kia đường, lệch trái cổng công ty", x: -4.7, z: 42.95 },
   { loai: "nuoc_mia", mon: "ly nước mía", noi: "Xe nước mía ở góc ngã tư đại lộ, đi về bên phải", x: 66, z: 32.1 },
   { loai: "tra_da", mon: "ly trà đá", noi: "Quán trà đá vỉa hè bên kia đường", x: -14, z: 42.3 },
   { loai: "ca_phe", mon: "ly cà phê", noi: "Máy pha cà phê trong pantry tầng 1", x: 12, z: 11.9 },
-  { loai: "che", mon: "ly chè Bà Bảy", noi: "Xe chè Bà Bảy bên kia đường, lệch phải cổng", x: 13.5, z: 42.4 },
-  { loai: "hu_tieu", mon: "tô hủ tiếu gõ", noi: "Xe hủ tiếu gõ bên kia đường, đi về bên phải khoảng 40 m", x: 40, z: 42.4 },
+  { loai: "che", mon: "ly chè Bà Bảy", noi: "Xe chè Bà Bảy bên kia đường, lệch phải cổng", x: 12.2, z: 42.95 },
+  { loai: "hu_tieu", mon: "tô hủ tiếu gõ", noi: "Xe hủ tiếu gõ bên kia đường, đi về bên phải khoảng 40 m", x: 41.3, z: 42.95 },
 ];
 
 export function taoSinhTon(dep) {

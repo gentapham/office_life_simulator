@@ -4,7 +4,7 @@
 // (atlas) để cả trăm biển hiệu chỉ tốn vài lượt vẽ; máy yếu thì atlas vẽ ở nửa độ phân giải cho nhẹ bộ nhớ.
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
-import { cheDoNhe } from "../cai-dat.js";
+import { anhNhe } from "../cai-dat.js";
 import { MUC, vatLieuBe, mauDinhBe, ganUvBe } from "./vat-lieu.js";
 
 export const VL_MAU_DINH = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true });
@@ -177,7 +177,7 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false, o
     if (k) { const [cx, cz] = k.split(",").map(Number); for (let i = dau; i < nhom.children.length; i++) nhom.children[i].userData.o = [cx * o_, cz * o_, o_]; }
   }
   if (choAtlas.length) {
-    const viTri = xepAtlas([...new Set(choAtlas.map(c => c.m.map))], cheDoNhe() ? 0.5 : 1);
+    const viTri = xepAtlas([...new Set(choAtlas.map(c => c.m.map))], anhNhe() ? 0.5 : 1);
     const theoKhoa = new Map();
     for (const { g, m } of choAtlas) {
       const t = m.map, v = viTri.get(t), uv = g.attributes.uv.array;

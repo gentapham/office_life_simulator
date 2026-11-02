@@ -37,11 +37,15 @@ const ong = (g, diem, r, c, seg = 5, doan = 6) => vm(g, hinhOng(diem, r, seg, do
 // đèn tròn nhìn theo +z (hoặc -z)
 const denTron = (g, r, d, m, x, y, z) => vm(g, hinhTru(r, r, d, 8), m, x, y, z, Math.PI / 2);
 
-function xeMayMem(mau, kieu, boBanh = false) {
+// buocQua (xe riêng người chơi có người ngồi lái): thân chỉ nằm dưới yên, chừa khoảng bước chân trống trên sàn để chân
+function xeMayMem(mau, kieu, boBanh = false, buocQua = false) {
   const g = new THREE.Group();
   if (!boBanh) { banhMem(g, 0.28, 0.1, 0, 0.28, 0.62); banhMem(g, 0.28, 0.12, 0, 0.28, -0.62); }
+  if (kieu === "ga" && buocQua) {
+    hv(g, 0.36, 0.42, 0.74, 0.13, mau, 0, 0.55, -0.255, [0.86, 0.94, 0.02]); // thân bầu tròn dưới yên (tới mép trước yên)
+    hb(g, 0.3, 0.1, 0.42, mau, 0, 0.34, 0.25);                                 // gầm sàn để chân
+  } else if (kieu === "ga") hv(g, 0.36, 0.42, 1.05, 0.13, mau, 0, 0.55, -0.1, [0.86, 0.94, 0.02]); // thân bầu tròn
   if (kieu === "ga") {
-    hv(g, 0.36, 0.42, 1.05, 0.13, mau, 0, 0.55, -0.1, [0.86, 0.94, 0.02]);    // thân bầu tròn
     hv(g, 0.34, 0.08, 0.7, 0.035, 0x1a1a1a, 0, 0.8, -0.25);                   // yên (mặt trên 0,84)
     hv(g, 0.32, 0.6, 0.2, 0.08, mau, 0, 0.75, 0.5, [0.8, 0.75, -0.04]);       // ốp đầu ngả về sau
     hb(g, 0.4, 0.06, 0.4, 0x2a2a2a, 0, 0.42, 0.25);                           // sàn để chân
@@ -110,11 +114,12 @@ export function taoXeMay(mau, kieu = "so") {
   if (memBat("xe")) return xeMayMem(mau, kieu);
   return xeMayHop(mau, kieu);
 }
-function xeMayHop(mau, kieu, boBanh = false) {
+function xeMayHop(mau, kieu, boBanh = false, buocQua = false) {
   const g = new THREE.Group();
   if (!boBanh) { banh(g, 0.28, 0.1, 0, 0.28, 0.62); banh(g, 0.28, 0.12, 0, 0.28, -0.62); }
   if (kieu === "ga") {
-    hop(g, 0.36, 0.42, 1.05, mau, 0, 0.55, -0.1);               // thân
+    if (buocQua) { hop(g, 0.36, 0.42, 0.74, mau, 0, 0.55, -0.255); hop(g, 0.3, 0.1, 0.42, mau, 0, 0.34, 0.25); } // thân dưới yên + gầm sàn, chừa chỗ bước chân
+    else hop(g, 0.36, 0.42, 1.05, mau, 0, 0.55, -0.1);          // thân
     hop(g, 0.34, 0.08, 0.7, 0x1a1a1a, 0, 0.8, -0.25);           // yên
     hop(g, 0.32, 0.6, 0.2, mau, 0, 0.75, 0.5);                  // ốp đầu
     hop(g, 0.4, 0.06, 0.4, 0x2a2a2a, 0, 0.42, 0.25);            // sàn để chân
@@ -138,7 +143,7 @@ function xeMayHop(mau, kieu, boBanh = false) {
 export function taoXeMayRieng(mau, kieu = "ga") {
   const mem = memBat("xe");
   const g = new THREE.Group();
-  g.add(mem ? xeMayMem(mau, kieu, true) : xeMayHop(mau, kieu, true));
+  g.add(mem ? xeMayMem(mau, kieu, true, true) : xeMayHop(mau, kieu, true, true));
   const dsBanh = [[0.62, 0.1], [-0.62, 0.12]].map(([z, rong]) => {
     const b = new THREE.Group(); b.position.set(0, 0.28, z);
     if (mem) banhMem(b, 0.28, rong, 0, 0, 0); else banh(b, 0.28, rong, 0, 0, 0);

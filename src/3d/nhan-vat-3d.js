@@ -18,7 +18,7 @@ if (typeof CanvasRenderingContext2D !== "undefined" && !CanvasRenderingContext2D
 }
 import { gopKhoi } from "./gop-khoi.js";
 import { gopNguoi } from "./toi-uu.js"; // gộp cả người thành một khối xương cứng (ít lượt vẽ)
-import { cheDoNhe } from "../cai-dat.js";
+import { cheDoNhe, anhNhe } from "../cai-dat.js";
 import { dungNguoiMoi, taoChoMoi, dungTayNhin, TAY_A, giaiTay, matThanNv } from "./hinh-nguoi.js";
 import { gopMuot } from "./toi-uu.js";
 import { CU_THEM, THOI_CU_THEM, CU_KHI_DI, ketThucCuThem } from "./hoat-anh.js"; // cử chỉ thêm (vẫy tay, cúi chào, dùng đồ vật...)
@@ -727,7 +727,7 @@ export function taoNguoiLaiXe(rnd, { aoXeOm = false, sau = false } = {}) {
 // chung khối với xe (gopKhoi), nên mặt phải là vật liệu một ảnh dùng chung: cả xe chỉ thêm đúng một lượt vẽ cho mặt.
 // (Trước đây đầu dùng mảng vật liệu nên bị gopKhoi bỏ qua rồi mất theo nhóm cha: người lái không có mặt, chỉ còn khẩu
 // trang, tai và mũ lơ lửng.)
-const LX = { cot: 8, hang: 4, px: 256, dem: 8 };
+const LX = anhNhe() ? { cot: 8, hang: 4, px: 128, dem: 4 } : { cot: 8, hang: 4, px: 256, dem: 8 }; // điện thoại, máy ít RAM: ô mặt nhỏ
 let lxAnh = null;
 function oMatLaiXe(nh) {
   if (!lxAnh) {

@@ -7,3 +7,5 @@ Mỗi màn chiếu lặp một video, tắt tiếng:
 - Hai màn cạnh sân khấu: video 1 (trái), 6 (phải)
 - Tường trái: video 2, 3, 4, 5
 - Tường phải: video 7, 8, 9, 10
+
+Bản có tiếng cho Tóp-tóp, Diu-túp trong điện thoại: thư mục am/ (cùng tên file), làm từ video gốc: H.264 rộng 540 px, 24 hình/giây, AAC 64 kbps (mono), faststart. Chỉ tải khi người chơi mở clip.

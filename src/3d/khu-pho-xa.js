@@ -10,7 +10,7 @@ import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
 import { VL_MAU_DINH } from "./gop-khoi.js";
 import { veTex, vlDiem, taoDiemSang } from "./chi-tiet-pho.js";
-import { cheDoNhe } from "../cai-dat.js";
+import { cheDoNhe, anhNhe } from "../cai-dat.js";
 import { MUC, vatLieuBe, matTienPBR, themChiTiet } from "./vat-lieu.js";
 import { memBat, hinhTan, hinhThan, BoCo } from "./hinh-mem.js";
 
@@ -844,7 +844,7 @@ export function taoKhuPhoXa(ctx) {
       cuoiHem();
 
       // ---------- Ghép khối ----------
-      const nhe2 = nhe ? 0.5 : 1;
+      const nhe2 = nhe || anhNhe() ? 0.5 : 1;
       const tNha = texNha(false, nhe2), tNhaDen = texNha(true, nhe2), tKinh = texKinh(false, nhe2), tKinhDen = texKinh(true, nhe2);
       for (const t of [tNha, tKinh]) t.anisotropy = 4;
       // mặt tường: thêm vân vữa (pháp tuyến) lặp ~1,6 m; kính cao ốc bóng hơn (phản chiếu bầu trời khi có môi trường)

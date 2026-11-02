@@ -1,0 +1,6 @@
+/* Tóp-tóp: clip đang dừng hiện nút phát giữa màn hình (video-am.js) */
+.tt-dung .tt-feed::after {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; pointer-events: none;
+  background: no-repeat center / 60% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 4.5v15l12.5-7.5z' fill='%23fff' fill-opacity='.85'/%3E%3C/svg%3E");
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .5));
+}

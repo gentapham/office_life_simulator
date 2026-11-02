@@ -12,6 +12,14 @@ const NHA_XE = { x: 8.35, z: 23.3, huong: 0 }; // chỗ dựng trong nhà xe nh�
 const MAT_LAI = 1.45;      // tầm mắt khi ngồi trên xe
 const R_XE = 0.4;          // bán kính va chạm thân xe (xét ở giữa, đầu và đuôi xe)
 const DAU = 0.62;          // tâm đầu / đuôi xe cách giữa xe
+const YEN = 0.84;          // mặt trên yên xe
+const HONG_Z = -0.17;      // khớp hông người lái (trước - sau) trên yên
+const NGA = 0.2;           // người lái hơi chồm tới (xoay quanh khớp hông) để tay với tới tay lái
+const TAY_NAM = [0.25, 1.06, 0.47]; // tay nắm cao su (x hai bên) của tay lái
+const _v = new THREE.Vector3(), TRUC_X = new THREE.Vector3(1, 0, 0);
+// bán kính đùi suy từ khoảng cách khớp hông (hinh-nguoi.js: Siêu Nhân Hồng 0,12 → đùi 0,112; người mập 0,116 → 0,095;
+// thường 0,1 → 0,085; nữ / gầy ~0,09 → 0,078): đùi to thì ngồi cao hơn để đùi đặt lên yên, không lún vào yên
+const banKinhDui = than => { const px = Math.abs(than.chanT.position.x); return px >= 0.119 ? 0.112 : kep(0.085 + (px - 0.1) * 0.6, 0.07, 0.1); };
 const gocGiua = (a, b) => Math.atan2(Math.sin(b - a), Math.cos(b - a));
 const kep = (v, a, b) => Math.max(a, Math.min(b, v));
 
@@ -44,12 +52,14 @@ export class XeRieng {
   }
   coTheLen() {
     const g = this.g;
-    return !this.dangLai && this.goc.visible && g.tang === 0 && !g.oNgoai() && g.vai !== "cho" && Math.hypot(g.p.x - this.x, g.p.z - this.z) < 1.8;
+    return !this.dangLai && this.goc.visible && g.tang === 0 && !g.oNgoai() && Math.hypot(g.p.x - this.x, g.p.z - this.z) < 1.8; // chó cũng thấy nút, bấm thì bị từ chối (len)
   }
 
   // ---------- Lên / xuống xe ----------
   len() {
     const g = this.g; if (this.dangLai) return;
+    // vai Chó: chân ngắn, không với tới tay ga, chỉ sủa một câu rồi thôi
+    if (g.vai === "cho") { g.onThongBao?.("Gâu! Chân ngắn quá, không với tới tay ga. Thôi chạy bộ cho khỏe."); am.phat("ghe", this.x, this.z); return; }
     if (g.ngoiDat) g.ngoiDat = null;
     this.dangLai = true; this.v = 0; this.lean = 0;
     g.p.set(this.x, 0, this.z);
@@ -57,8 +67,7 @@ export class XeRieng {
     this.nghieng.rotation.set(0, 0, 0);
     // thân người chơi ngồi lên yên; đôi tay góc nhìn 1 đặt lên tay lái
     const than = g.than;
-    this.nghieng.add(than.group); than.group.position.set(0, -0.02, -0.2); than.group.rotation.set(0, 0, 0);
-    than.ngoi = "nghi"; than.khongUong = true;
+    this.nghieng.add(than.group); than.ngoi = "nghi"; than.khongUong = true; this.datThan();
     this.nghieng.add(g.tay.group); g.tay.group.position.set(0, MAT_LAI + 0.02, -0.16); g.tay.group.rotation.set(-0.12, Math.PI, 0, "YXZ");
     this.den.bat = true;
     am.phat("de_xe"); am.phat("ghe", this.x, this.z);
@@ -158,12 +167,27 @@ export class XeRieng {
     cam.position.set(this.x - Math.sin(h) * 0.08 + Math.cos(h) * -lx, MAT_LAI * Math.cos(this.lean) + rung, this.z - Math.cos(h) * 0.08 + Math.sin(h) * lx);
     cam.rotation.set(g.pitch, g.yaw, this.lean * 0.6, "YXZ");
   }
-  // dáng ngồi lái (gọi sau than.hoatDong): chân đặt lên sàn xe, hai tay nắm tay lái
+  // đặt thân người lái lên yên: khớp hông cao hơn mặt yên đúng bằng bán kính đùi (đùi to ngồi cao hơn), người chồm tới quanh khớp hông
+  datThan() {
+    const than = this.g.than; if (!than.chanT) { than.group.position.set(0, -0.02, -0.2); than.group.rotation.set(0, 0, 0); return; }
+    const hY = than.chanT.position.y, r = banKinhDui(than), yHong = YEN + r;
+    than.group.rotation.set(NGA, 0, 0);
+    than.group.position.set(0, yHong - hY * Math.cos(NGA), HONG_Z - hY * Math.sin(NGA));
+  }
+  // dáng ngồi lái (gọi sau than.hoatDong): đùi nằm trên yên, cẳng chân dựng đứng, bàn chân trên sàn để chân, hai tay nắm tay lái
   tuThe() {
     const than = this.g.than; if (!than.chanT) return;
-    if (than.goiT) { than.chanT.rotation.x = than.chanP.rotation.x = -1.25; than.goiT.rotation.x = than.goiP.rotation.x = 1.2; than.chanT.rotation.z = 0.1; than.chanP.rotation.z = -0.1; }
-    else { than.chanT.rotation.x = than.chanP.rotation.x = -1.0; than.chanT.rotation.z = 0.32; than.chanP.rotation.z = -0.32; } // người khối hộp: chân không gập, dạng ra hai bên sàn
-    if (than.tayT) { chiTay(than.tayT, -0.29, 1.12, 0.6); chiTay(than.tayP, 0.29, 1.12, 0.6); }
-    if (than.dau) than.dau.rotation.set(-0.05, 0, 0);
+    this.datThan();
+    // góc chân tính theo phương thẳng đứng của xe (trừ phần thân đã chồm tới)
+    if (than.goiT) { than.chanT.rotation.x = than.chanP.rotation.x = -1.5 - NGA; than.goiT.rotation.x = than.goiP.rotation.x = 1.5; than.chanT.rotation.z = 0.06; than.chanP.rotation.z = -0.06; }
+    else { than.chanT.rotation.x = than.chanP.rotation.x = -1.0 - NGA; than.chanT.rotation.z = 0.32; than.chanP.rotation.z = -0.32; } // người khối hộp: chân không gập, dạng ra hai bên sàn
+    if (than.tayT) {
+      // tay nắm (tọa độ xe) đổi về tọa độ thân người (đã dời, chồm tới)
+      for (const [tay, s] of [[than.tayT, -1], [than.tayP, 1]]) {
+        _v.set(s * TAY_NAM[0], TAY_NAM[1], TAY_NAM[2]).sub(than.group.position).applyAxisAngle(TRUC_X, -NGA);
+        chiTay(tay, _v.x, _v.y, _v.z);
+      }
+    }
+    if (than.dau) than.dau.rotation.set(-0.05 - NGA * 0.85, 0, 0); // mắt vẫn nhìn đường phía trước
   }
 }

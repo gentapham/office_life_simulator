@@ -333,7 +333,7 @@ export class BauTroi {
 
   // Cập nhật mỗi khung hình. den: ánh sáng của game (hemi, nen, matTroi)
   capNhat(dt, camera, den, trongNha) {
-    this.mayBay.capNhat(dt, camera, this.gio, this.tt.mua > 0);
+    this.mayBay.capNhat(dt, camera, this.gio, this.tt.mua > 0, trongNha);
     if (this.muc > 0) return this.capNhatTranh(dt, camera, den, trongNha);
     const h = this.gio, tt = this.tt;
     // vị trí mặt trời theo giờ: mọc 5:45 hướng đông (+x), lặn 18:15 hướng tây (-x)

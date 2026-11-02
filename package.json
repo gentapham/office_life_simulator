@@ -9,7 +9,7 @@
     "thu-ket-thuc": "node tools/thu-ket-thuc.mjs",
     "dev": "vite",
     "build:story": "node tools/build-story.mjs",
-    "build": "node tools/build-story.mjs && vite build",
+    "build": "node tools/build-story.mjs && vite build && node tools/tao-sw.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {

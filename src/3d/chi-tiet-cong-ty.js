@@ -9,7 +9,7 @@ import { memBat, hinhHopVL, hinhTan } from "./hinh-mem.js";
 import { vl } from "./nhan-vat-3d.js";
 import { am } from "../am-thanh-game.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
-import { cheDoNhe } from "../cai-dat.js";
+import { anhNhe } from "../cai-dat.js";
 import { MUC, vlBe } from "./vat-lieu.js";
 
 const CAO = 4, TC = 3.82, NUA = 0.125;
@@ -17,8 +17,8 @@ const FONT = "'Be Vietnam Pro', system-ui, sans-serif";
 
 // ================= ẢNH GHÉP (ATLAS) =================
 class Atlas {
-  // máy yếu: ảnh ghép vẽ ở nửa độ phân giải (toạ độ xếp chỗ vẫn tính theo kích thước gốc) cho đỡ tốn bộ nhớ
-  constructor(w, h, tiLe = cheDoNhe() ? 0.5 : 1) {
+  // máy yếu, điện thoại, máy ít RAM: ảnh ghép vẽ ở nửa độ phân giải (toạ độ xếp chỗ vẫn tính theo kích thước gốc)
+  constructor(w, h, tiLe = anhNhe() ? 0.5 : 1) {
     this.w = w; this.h = h; this.s = tiLe;
     this.c = document.createElement("canvas"); this.c.width = Math.round(w * tiLe); this.c.height = Math.round(h * tiLe);
     this.g = this.c.getContext("2d"); this.g.scale(tiLe, tiLe); this.ke = []; this.day = 0; this.vung = new Map();
@@ -892,10 +892,7 @@ export function themChiTietCongTy(nhom, hop, vat, { banChung = [] } = {}) {
   TR(0.1, 0.02, 0x6b4a2f, 18.2, 0.95, 13.1); TR(0.012, 0.42, 0x6b4a2f, 18.2, 0.95, 13.1);
   for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2 + 0.4, x = 18.2 + Math.cos(a) * 0.1, z = 13.1 + Math.sin(a) * 0.1; K(0.1, 0.01, 0.01, 0x6b4a2f, 18.2 + Math.cos(a) * 0.05, 1.27 - (i % 2) * 0.08, 13.1 + Math.sin(a) * 0.05, { ry: -a }); TR(0.04, 0.09, [0xf6f6f2, 0xe8702a, 0x2a5aa8, 0xf26fa6][i], x, 1.12 - (i % 2) * 0.08, z); }
   for (const [x, c, n] of [[12.72, 0xf6f6f2, 0xe8e4da], [12.86, 0x6b4a2f, 0x3a2a1a]]) { TR(0.05, 0.12, 0xdfeaf0, x, 0.95, 13.25); TR(0.044, 0.08, n, x, 0.955, 13.25); TR(0.052, 0.025, c, x, 1.07, 13.25); }
-  // tủ lạnh: tay nắm, nam châm, giấy nhắn
-  K(0.03, 0.6, 0.04, 0xc9ccd0, 18.82, 0.45, 12.33);
-  P(0.14, 0.14, layBien("tu_lanh_1", 72, 72), VL_BIEN, 19.25, 0.85, 12.344, { ry: Math.PI, rz: 0.06 }); P(0.14, 0.14, layBien("tu_lanh_2", 72, 72), VL_BIEN, 19.5, 0.68, 12.343, { ry: Math.PI, rz: -0.08 });
-  for (const [x, y, c] of [[19.25, 0.93, 0xc0262d], [19.5, 0.76, 0x2a5aa8], [19.0, 1.88, 0xffcf3a], [19.4, 1.86, 0x2e8b57], [18.95, 1.0, 0xf26fa6]]) K(0.035, 0.035, 0.014, c, x, y - 0.0175, 12.343);
+  // tủ lạnh: tay nắm, nam châm, giấy nhắn nằm trên cánh cửa có bản lề (cua-tu-bep.js)
   // bàn ăn: hộp khăn giấy, bình nước, ly
   for (const tx of [12, 16]) { hopKhanGiay(tx + 0.7, 0.75, 5.62, 0.2, 0xe8702a); TR(0.07, 0.24, 0xbfe0f0, tx - 0.72, 0.75, 6.3); TR(0.05, 0.03, 0x2a5aa8, tx - 0.72, 0.99, 6.3); for (const dx of [-0.5, -0.92]) TR(0.035, 0.09, 0xe6f2f8, tx + dx, 0.75, 6.05 + (dx < -0.6 ? 0.08 : 0)); }
   // kệ đồ ăn vặt

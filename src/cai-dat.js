@@ -38,6 +38,12 @@ export function cheDoNhe() {
   if (c.chatLuong === "tu_dong") return false;
   return false;
 }
+// Ảnh vẽ bằng canvas (bảng hiệu, ảnh ghép atlas, mặt nhà) vẽ ở nửa độ phân giải: máy yếu, màn hình cảm ứng
+// (điện thoại, máy tính bảng) hoặc máy ít RAM (deviceMemory <= 4 GB). Màn hình điện thoại nhỏ nên chữ vẫn đọc rõ,
+// bộ nhớ ảnh giảm khoảng 4 lần (điện thoại hay bị trình duyệt đóng tab khi hết bộ nhớ).
+export function anhNhe() {
+  return cheDoNhe() || matchMedia("(pointer: coarse)").matches || (navigator.deviceMemory ?? 8) <= 4;
+}
 export function dienThoaiManh() {
   const ram = navigator.deviceMemory ?? 4, nhan = navigator.hardwareConcurrency ?? 4;
   return ram >= 4 && nhan >= 6;
