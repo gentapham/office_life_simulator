@@ -212,14 +212,28 @@ const ICON = {
 // ---------- Điện thoại ----------
 // dep: { h, L, g, META, NHAN_VAT, THEO_MA, tenCua, MUC_TIEU, so, vnd, ngayDayDu, thuCuaNgay, SU_KIEN_NGAY, tinCho(), moTin(), diemXeOm(), diXeOm(diem),
 //        viecVat(), moCaiDat(), dangThoai(), khung(), thoiTiet(ngay) -> [{buoi, ten, nhiet}], thongBao(chu), muaHang(ten, gia) -> bool, ghiChu() -> [chu] }
+// clip trên kênh Tóp-tóp của Siêu Nhân Hồng (video trong public/video), ra dần theo ngày; hs: độ viral so với số theo dõi
+const CLIP_SNH = [
+  { so: 1, ngay: 1, hs: 0.9, ten: "Ngày đầu ký hợp đồng với G-Entertainment. Hồng không phải màu, Hồng là thái độ #sieunhanhong" },
+  { so: 2, ngay: 2, hs: 0.6, ten: "Hậu trường tập luyện, mũ hơi bí nhưng tinh thần thì không #hautruong" },
+  { so: 3, ngay: 4, hs: 1.1, ten: "Đi một vòng Quận Hóng, ai cũng hỏi có phải Siêu Nhân Đỏ không. KHÔNG." },
+  { so: 4, ngay: 6, hs: 0.8, ten: "Thử thách 30 ngày lên 1 triệu follow, ngày thứ 6 #thuthach" },
+  { so: 5, ngay: 9, hs: 1.6, ten: "Hậu trường MV đầu tay, quay 47 lần mới xong một cảnh #mv" },
+  { so: 6, ngay: 12, hs: 1.3, ten: "Lương về trễ 2 ngày nhưng Siêu Nhân vẫn cười #vanphong" },
+  { so: 7, ngay: 16, hs: 1.9, ten: "Gameshow hôm nay: thua nhưng vui. Vote cho Hồng nha cả nhà #gameshow" },
+  { so: 8, ngay: 20, hs: 1.4, ten: "Sinh nhật công ty 20/10, tặng hoa cả phòng #2010" },
+  { so: 9, ngay: 23, hs: 2.2, ten: "Livestream sinh nhật Siêu Nhân Hồng, cảm ơn mọi người đã thương #sinhnhat" },
+  { so: 10, ngay: 28, hs: 2.6, ten: "Còn 3 ngày nữa là Đại Nhạc Hội Siêu Nhân 31/10. Hẹn cả nhà ở Quảng trường Hồng!" },
+];
+
 export function taoDienThoai(dep) {
   const { h, L } = dep;
-  let lop = null, ungDung = "chinh", hen = null, anh = [];
+  let lop = null, ungDung = "chinh", hen = null, anh = [], tatVideo = null;
   const gioNay = () => String(L.v("gio") ?? 8).padStart(2, "0") + ":" + String(L.v("phut") ?? 0).padStart(2, "0");
   // pin điện thoại: sáng sạc đầy, dùng cả ngày tụt dần
   const pin = () => Math.max(5, Math.round(100 - Math.max(0, (L.phutGame ?? 480) - 480) / 11));
   const dong = () => {
-    if (!lop) return; clearInterval(hen); lop.remove(); lop = null;
+    if (!lop) return; clearInterval(hen); tatVideo?.(); tatVideo = null; lop.remove(); lop = null;
     removeEventListener("keydown", phim, true);
     if (!dep.dangThoai()) dep.g.datKhoa(false);
   };
@@ -280,16 +294,57 @@ export function taoDienThoai(dep) {
         (L.tinDaDoc || []).slice().reverse().map(t => h("div", { class: "dt-hang" }, h("span", { class: "dt-av" }, t.ten.replace("Tin nhắn từ ", "").slice(0, 1)), h("div", {}, h("b", {}, t.ten.replace("Tin nhắn từ ", "")), h("small", {}, `Ngày ${t.ngay}/10 · Đã xem`)))))];
     },
     toptop() {
-      const ls = L.lichSuTheoDoi || {}, ds = Array.from({ length: L.ngay }, (_, i) => ls[i + 1] ?? null);
-      const hienTai = Number(L.v("nguoi_theo_doi")) || 0; ds[L.ngay - 1] = hienTai;
-      const W = 300, H = 140, max = Math.max(dep.MUC_TIEU, ...ds.filter(Boolean));
-      const diem = ds.map((v, i) => v == null ? null : [8 + (i / 30) * (W - 16), H - 6 - (v / max) * (H - 12)]).filter(Boolean);
-      const bieu = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" class="dt-bieu"><line x1="0" x2="${W}" y1="${H - 6 - dep.MUC_TIEU / max * (H - 12)}" y2="${H - 6 - dep.MUC_TIEU / max * (H - 12)}" stroke="#fe2c55" stroke-dasharray="4 4"/><polyline fill="none" stroke="#25f4ee" stroke-width="2.5" points="${diem.map(p => p.join(",")).join(" ")}"/>${diem.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3.5" fill="#25f4ee"/>`).join("")}</svg>`;
-      return [dau("Tóp-tóp", "#000"), h("div", { class: "dt-than toi" },
-        h("div", { class: "dt-hoso" }, h("span", { class: "dt-av hong" }, "H"), h("b", {}, "@sieunhanhong"), h("small", {}, "Siêu Nhân Hồng · Hồng không phải màu, Hồng là thái độ"),
-          h("div", { class: "dt-3so" }, h("div", {}, h("b", {}, dep.so(hienTai)), h("small", {}, "Follower")), h("div", {}, h("b", {}, dep.so(Math.round(hienTai * 6.3))), h("small", {}, "Lượt thích")), h("div", {}, h("b", {}, String(12 + L.ngay * 2)), h("small", {}, "Video")))),
-        h("div", { html: bieu }), h("div", { class: "dt-chu-thich" }, h("span", {}, "1/10"), h("span", {}, `Mục tiêu ${dep.so(dep.MUC_TIEU)}`), h("span", {}, "31/10")),
-        h("div", { class: "dt-luoi-clip" }, Array.from({ length: 6 }, (_, i) => h("div", { class: "dt-clip", style: `--h:${(L.ngay * 37 + i * 61) % 360}` }, h("small", {}, `${dep.so(Math.round(hienTai * (0.4 + ((i * 7 + L.ngay) % 9) / 10)))} lượt xem`)))))];
+      // kênh @sieunhanhong: clip thật của Siêu Nhân Hồng, ra dần theo ngày trong tháng; số theo dõi lấy từ cốt truyện
+      const hienTai = Number(L.v("nguoi_theo_doi")) || 0;
+      const goc = import.meta.env.BASE_URL || "./";
+      const ds = CLIP_SNH.filter(c => L.ngay >= c.ngay).reverse(); // mới nhất trước
+      const xem = c => Math.round(hienTai * c.hs * (1 + ((L.ngay - c.ngay) % 7) / 10));
+      const than = h("div", { class: "dt-than toi tt-than" });
+      const tab = (chu, on, f) => h("button", { class: "tt-tab" + (on ? " on" : ""), type: "button", onclick: f }, chu);
+      const veFeed = (i = 0) => {
+        tatVideo?.();
+        const c = ds[i];
+        const v = h("video", { class: "tt-vid", src: `${goc}video/sieu-nhan-hong-${c.so}.mp4`, playsinline: "", loop: "", autoplay: "", preload: "auto" });
+        v.muted = true; v.playsInline = true; v.play().catch(() => {});
+        tatVideo = () => { v.pause(); v.removeAttribute("src"); v.load(); };
+        let thich = false;
+        const tim = h("button", { class: "tt-nut", type: "button", onclick: e => { thich = !thich; e.currentTarget.classList.toggle("on", thich); am.phat("click"); } }, h("i", { class: "tim" }), h("small", {}, dep.so(Math.round(xem(c) * 0.12))));
+        const doi = d => { const j = (i + d + ds.length) % ds.length; if (j !== i) { am.phat("click"); veFeed(j); } };
+        let y0 = null;
+        than.replaceChildren(
+          h("div", { class: "tt-feed", onpointerdown: e => { y0 = e.clientY; }, onpointerup: e => { if (y0 != null && Math.abs(e.clientY - y0) > 40) doi(e.clientY < y0 ? 1 : -1); y0 = null; }, onwheel: e => { if (Math.abs(e.deltaY) > 20) doi(e.deltaY > 0 ? 1 : -1); } },
+            v,
+            h("div", { class: "tt-tren" }, tab("Đang theo dõi", false, () => {}), tab("Dành cho bạn", true, () => {}), tab("Hồ sơ", false, () => veHoSo())),
+            h("div", { class: "tt-phai" },
+              h("span", { class: "dt-av hong tt-av" }, "H"),
+              tim,
+              h("div", { class: "tt-nut" }, h("i", { class: "bl" }), h("small", {}, dep.so(Math.round(xem(c) * 0.008)))),
+              h("div", { class: "tt-nut" }, h("i", { class: "cs" }), h("small", {}, dep.so(Math.round(xem(c) * 0.004))))),
+            h("div", { class: "tt-duoi" }, h("b", {}, "@sieunhanhong"), h("p", {}, c.ten), h("small", {}, `${dep.so(xem(c))} lượt xem · ${c.ngay === L.ngay ? "hôm nay" : `${L.ngay - c.ngay} ngày trước`}`)),
+            h("div", { class: "tt-chuyen" },
+              h("button", { type: "button", "aria-label": "Clip trước", onclick: () => doi(-1) }, "▲"),
+              h("small", {}, `${i + 1}/${ds.length}`),
+              h("button", { type: "button", "aria-label": "Clip sau", onclick: () => doi(1) }, "▼"))));
+      };
+      const veHoSo = () => {
+        tatVideo?.(); tatVideo = null;
+        const ls = L.lichSuTheoDoi || {}, dsTd = Array.from({ length: L.ngay }, (_, i) => ls[i + 1] ?? null); dsTd[L.ngay - 1] = hienTai;
+        const W = 300, H = 140, max = Math.max(dep.MUC_TIEU, ...dsTd.filter(Boolean));
+        const diem = dsTd.map((v, i) => v == null ? null : [8 + (i / 30) * (W - 16), H - 6 - (v / max) * (H - 12)]).filter(Boolean);
+        const yMuc = H - 6 - dep.MUC_TIEU / max * (H - 12);
+        const bieu = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" class="dt-bieu"><line x1="0" x2="${W}" y1="${yMuc}" y2="${yMuc}" stroke="#fe2c55" stroke-dasharray="4 4"/><polyline fill="none" stroke="#25f4ee" stroke-width="3" points="${diem.map(p => p.join(",")).join(" ")}"/></svg>`;
+        than.replaceChildren(
+          h("div", { class: "tt-tren tinh" }, tab("Dành cho bạn", false, () => veFeed(0)), tab("Hồ sơ", true, () => {})),
+          h("div", { class: "dt-hoso" }, h("span", { class: "dt-av hong" }, "H"), h("b", {}, "@sieunhanhong"), h("small", {}, "Siêu Nhân Hồng · Hồng không phải màu, Hồng là thái độ"),
+            h("div", { class: "dt-3so" }, h("div", {}, h("b", {}, dep.so(hienTai)), h("small", {}, "Follower")), h("div", {}, h("b", {}, dep.so(Math.round(hienTai * 6.3))), h("small", {}, "Lượt thích")), h("div", {}, h("b", {}, String(ds.length)), h("small", {}, "Video"))),
+            h("small", { class: "tt-muc" }, hienTai >= dep.MUC_TIEU ? "Đã cán mốc 1 triệu người theo dõi!" : `Còn ${dep.so(dep.MUC_TIEU - hienTai)} người nữa là chạm mốc 1 triệu · Đại Nhạc Hội 31/10`)),
+          h("div", { html: bieu }), h("div", { class: "dt-chu-thich" }, h("span", {}, "1/10"), h("span", {}, `Mục tiêu ${dep.so(dep.MUC_TIEU)}`), h("span", {}, "31/10")),
+          h("div", { class: "dt-luoi-clip" }, ds.map((c, i) => h("button", { class: "dt-clip tt-o", type: "button", onclick: () => veFeed(i) },
+            h("video", { src: `${goc}video/sieu-nhan-hong-${c.so}.mp4#t=1`, preload: "metadata", muted: "", playsinline: "" }),
+            h("small", {}, `${dep.so(xem(c))} lượt xem`)))));
+      };
+      veFeed(0);
+      return [dau("Tóp-tóp", "#000"), than];
     },
     phaybuc() {
       const ds = dep.NHAN_VAT.filter(n => n.ma !== L.ma && n.ma !== "cho");
@@ -415,7 +470,7 @@ export function taoDienThoai(dep) {
     },
   };
   const mo = (id = "chinh") => {
-    clearInterval(hen);
+    clearInterval(hen); tatVideo?.(); tatVideo = null;
     if (id === "ban_do") id = "bando";
     ungDung = id === "bando" ? "ban_do" : id;
     if (!lop) {

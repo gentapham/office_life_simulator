@@ -1192,3 +1192,29 @@ body.g3d-on { overflow: hidden; padding: 0; }
 .g3d-flash.on { animation: g3d-flash .45s ease-out; }
 @keyframes g3d-flash { 0% { opacity: .85; } 100% { opacity: 0; } }
 .g3d.dang-thoai .g3d-bieucam, .g3d.cap-cuu .g3d-bieucam { display: none; }
+
+/* ---------- Tóp-tóp: kênh @sieunhanhong ---------- */
+.dt .tt-than { padding: 0; position: relative; display: flex; flex-direction: column; min-height: 0; flex: 1; }
+.tt-feed { position: relative; flex: 1; min-height: 0; background: #000; overflow: hidden; touch-action: none; }
+.tt-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.tt-tren { position: absolute; top: 6px; left: 0; right: 0; display: flex; justify-content: center; gap: 14px; z-index: 2; }
+.tt-tren.tinh { position: static; padding: 8px 0 4px; }
+.tt-tab { background: none; border: 0; color: rgba(255,255,255,.65); font: 600 13px var(--body); padding: 4px 2px; text-shadow: 0 1px 3px rgba(0,0,0,.6); }
+.tt-tab.on { color: #fff; border-bottom: 2px solid #fff; }
+.tt-phai { position: absolute; right: 8px; bottom: 90px; display: grid; gap: 14px; justify-items: center; z-index: 2; }
+.tt-av { width: 42px; height: 42px; border: 2px solid #fff; }
+.tt-nut { display: grid; justify-items: center; gap: 2px; background: none; border: 0; color: #fff; font: 600 11px var(--body); text-shadow: 0 1px 3px rgba(0,0,0,.6); }
+.tt-nut i { width: 30px; height: 28px; display: block; background: #fff; }
+.tt-nut i.tim { clip-path: path("M15 27 L3 15 A7 7 0 0 1 15 5 A7 7 0 0 1 27 15 Z"); }
+.tt-nut.on i.tim { background: #fe2c55; }
+.tt-nut i.bl { border-radius: 50% 50% 50% 8%; width: 28px; height: 26px; }
+.tt-nut i.cs { clip-path: polygon(55% 0, 100% 45%, 55% 90%, 55% 65%, 0 75%, 10% 40%, 55% 30%); }
+.tt-duoi { position: absolute; left: 10px; right: 64px; bottom: 12px; color: #fff; z-index: 2; text-shadow: 0 1px 3px rgba(0,0,0,.7); }
+.tt-duoi b { font-size: 14px; } .tt-duoi p { margin: 3px 0; font-size: 12.5px; line-height: 1.35; } .tt-duoi small { font-size: 11px; opacity: .85; }
+.tt-chuyen { position: absolute; right: 10px; top: 42px; display: grid; justify-items: center; gap: 2px; z-index: 2; color: #fff; }
+.tt-chuyen button { width: 30px; height: 30px; border-radius: 50%; border: 0; background: rgba(0,0,0,.45); color: #fff; font-size: 12px; }
+.tt-chuyen small { font-size: 10.5px; text-shadow: 0 1px 3px rgba(0,0,0,.7); }
+.tt-muc { color: #ff9bc8; font-weight: 600; }
+.dt-clip.tt-o { position: relative; padding: 0; border: 0; overflow: hidden; background: #222; }
+.dt-clip.tt-o video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.dt-clip.tt-o small { position: absolute; left: 4px; bottom: 3px; color: #fff; text-shadow: 0 1px 2px #000; }
