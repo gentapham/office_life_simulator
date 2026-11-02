@@ -316,7 +316,7 @@ export function taoDienThoai(dep) {
             v,
             h("div", { class: "tt-tren" }, tab("Đang theo dõi", false, () => {}), tab("Dành cho bạn", true, () => {}), tab("Hồ sơ", false, () => veHoSo())),
             h("div", { class: "tt-phai" },
-              h("span", { class: "dt-av hong tt-av" }, "H"),
+              h("img", { class: "tt-av tt-anh", src: `${goc}anh/sieu-nhan-hong-avatar.jpg`, alt: "Siêu Nhân Hồng" }),
               tim,
               h("div", { class: "tt-nut" }, h("i", { class: "bl" }), h("small", {}, dep.so(Math.round(xem(c) * 0.008)))),
               h("div", { class: "tt-nut" }, h("i", { class: "cs" }), h("small", {}, dep.so(Math.round(xem(c) * 0.004))))),
@@ -335,7 +335,7 @@ export function taoDienThoai(dep) {
         const bieu = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" class="dt-bieu"><line x1="0" x2="${W}" y1="${yMuc}" y2="${yMuc}" stroke="#fe2c55" stroke-dasharray="4 4"/><polyline fill="none" stroke="#25f4ee" stroke-width="3" points="${diem.map(p => p.join(",")).join(" ")}"/></svg>`;
         than.replaceChildren(
           h("div", { class: "tt-tren tinh" }, tab("Dành cho bạn", false, () => veFeed(0)), tab("Hồ sơ", true, () => {})),
-          h("div", { class: "dt-hoso" }, h("span", { class: "dt-av hong" }, "H"), h("b", {}, "@sieunhanhong"), h("small", {}, "Siêu Nhân Hồng · Hồng không phải màu, Hồng là thái độ"),
+          h("div", { class: "dt-hoso" }, h("img", { class: "tt-anh to", src: `${goc}anh/sieu-nhan-hong-avatar.jpg`, alt: "Siêu Nhân Hồng" }), h("b", {}, "@sieunhanhong"), h("small", {}, "Siêu Nhân Hồng · Hồng không phải màu, Hồng là thái độ"),
             h("div", { class: "dt-3so" }, h("div", {}, h("b", {}, dep.so(hienTai)), h("small", {}, "Follower")), h("div", {}, h("b", {}, dep.so(Math.round(hienTai * 6.3))), h("small", {}, "Lượt thích")), h("div", {}, h("b", {}, String(ds.length)), h("small", {}, "Video"))),
             h("small", { class: "tt-muc" }, hienTai >= dep.MUC_TIEU ? "Đã cán mốc 1 triệu người theo dõi!" : `Còn ${dep.so(dep.MUC_TIEU - hienTai)} người nữa là chạm mốc 1 triệu · Đại Nhạc Hội 31/10`)),
           h("div", { html: bieu }), h("div", { class: "dt-chu-thich" }, h("span", {}, "1/10"), h("span", {}, `Mục tiêu ${dep.so(dep.MUC_TIEU)}`), h("span", {}, "31/10")),
