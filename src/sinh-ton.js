@@ -137,7 +137,7 @@ export function taoSinhTon(dep) {
     giao(ma) {
       if (!viec || !viec.daCo || viec.xong || viec.ma !== ma) return false;
       viec.xong = true;
-      L.set("tien", v("tien") + viec.gia);
+      L.set("tien", v("tien") + viec.gia); L.ghiGiaoDich?.(`${dep.tenCua(ma)} gửi lại tiền ${viec.mon}`, viec.gia);
       try { L.story.EvaluateFunction("qh", [ma, 6]); } catch { L.set("qh_" + ma, Math.min(100, v("qh_" + ma) + 6)); }
       dep.thongBao(`${dep.tenCua(ma)}: "Cảm ơn nha! Gửi lại tiền nè." (+${viec.gia.toLocaleString("vi-VN")}đ, quan hệ tăng)`);
       veLai();

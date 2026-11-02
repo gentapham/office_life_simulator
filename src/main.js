@@ -289,6 +289,7 @@ class LuotChoi {
     this.tinDaDoc = [];      // tin nhắn đã đọc
     this.dauNgay = null;     // chỉ số lúc sáng, để tổng kết cuối ngày
     this.giaoDich = [];      // giao dịch ví (ứng dụng MôMô)
+    this.dienThoai = {};     // dữ liệu điện thoại: ghi chú, tin đã xem, đơn Sốp-pi, báo thức...
   }
   // chụp nhanh các chỉ số để so sánh cuối ngày
   chupChiSo() {
@@ -298,13 +299,13 @@ class LuotChoi {
     return o;
   }
   toSave() {
-    return { ma: this.ma, theoDoi: Number(this.v("nguoi_theo_doi")) || 0, ngay: this.ngay, queue: this.queue, qi: this.qi, played: [...this.played], npcDone: [...this.npcDone], phutGame: this.phutGame, nnHomNay: this.nnHomNay, lichSuTheoDoi: this.lichSuTheoDoi, tinDaDoc: this.tinDaDoc, dauNgay: this.dauNgay, giaoDich: this.giaoDich, state: this.story.state.ToJson() };
+    return { ma: this.ma, theoDoi: Number(this.v("nguoi_theo_doi")) || 0, ngay: this.ngay, queue: this.queue, qi: this.qi, played: [...this.played], npcDone: [...this.npcDone], phutGame: this.phutGame, nnHomNay: this.nnHomNay, lichSuTheoDoi: this.lichSuTheoDoi, tinDaDoc: this.tinDaDoc, dauNgay: this.dauNgay, giaoDich: this.giaoDich, dienThoai: this.dienThoai, state: this.story.state.ToJson() };
   }
   fromSave(s) {
     this.ngay = s.ngay; this.queue = s.queue; this.qi = s.qi;
     this.played = new Set(s.played); this.npcDone = new Set(s.npcDone || []);
     this.phutGame = s.phutGame ?? 8 * 60; this.nnHomNay = s.nnHomNay || [];
-    this.lichSuTheoDoi = s.lichSuTheoDoi || {}; this.tinDaDoc = s.tinDaDoc || []; this.dauNgay = s.dauNgay || null; this.giaoDich = s.giaoDich || [];
+    this.lichSuTheoDoi = s.lichSuTheoDoi || {}; this.tinDaDoc = s.tinDaDoc || []; this.dauNgay = s.dauNgay || null; this.giaoDich = s.giaoDich || []; this.dienThoai = s.dienThoai || {};
     this.story.state.LoadJson(s.state);
   }
   ghiGiaoDich(ten, so) {
@@ -406,7 +407,7 @@ let G3D_MOD = null;      // module 3D (tải khi cần)
 let MAN_CHO = null; // màn hình chờ vào game (man-cho.js)
 let BO_ADMIN = null; // gỡ bảng admin khi thoát game
 function tatG3D() {
-  MAN_CHO?.dong(true); MAN_CHO = null; BO_ADMIN?.(); BO_ADMIN = null; DT?.dong(); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; sinhTon = null;
+  MAN_CHO?.dong(true); MAN_CHO = null; BO_ADMIN?.(); BO_ADMIN = null; DT?.dong(true); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; sinhTon = null;
   if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on");
   // bỏ mọi tham chiếu tới ván 3D vừa thoát (hàm, phần tử giao diện giữ cả thế giới 3D trong bộ nhớ):
   // không thì mỗi lần ra màn hình chính rồi vào lại, bộ nhớ tăng thêm cả một thành phố (~190 MB)
@@ -942,6 +943,7 @@ async function render3D() {
     if (G !== g) { clearInterval(henDH); return; }
     if (g.khoa || !tamNgung.hidden || g.capCuu) return;
     if (L.phutGame < tranGio()) { L.phutGame = Math.min(tranGio(), L.phutGame + 2); hienGio(); } // 1 giây ngoài đời = 2 phút trong game
+    DT?.nhip(); // báo thức, đơn hàng trong điện thoại
     const yeu = Math.min(...["no", "khat", "nang_luong"].map(k => Number(L.v(k)) || 0));
     am.tim(yeu < 15 ? (15 - yeu) / 15 : 0); // tim đập nhanh khi sắp xỉu
     kiemTraNgauNhien();
@@ -1134,7 +1136,7 @@ async function render3D() {
   // ----- hội thoại -----
   moHoiThoai = ten => { kt.mo(ten); bamTiep.hidden = true; if (daVao) tamNgung.hidden = true; lichSu.hidden = true; g.datKhoa(true); app.querySelector(".g3d")?.classList.add("dang-thoai"); };
   dongHoiThoai = () => {
-    kt.dong(); clearInterval(timerHandle); g.datKhoa(false); app.querySelector(".g3d")?.classList.remove("dang-thoai");
+    kt.dong(); clearInterval(timerHandle); g.datKhoa(!!DT?.dangMo()); app.querySelector(".g3d")?.classList.remove("dang-thoai"); // điện thoại đang mở thì vẫn khóa
     if (!g.dienThoai && daVao && document.pointerLockElement !== g.canvas) bamTiep.hidden = false;
   };
   // thông báo: câu đang hiện thì không lặp lại (chỉ gia hạn), tối đa 3 dòng cùng lúc
@@ -1306,8 +1308,9 @@ async function render3D() {
     moTin: () => nutTin.click(),
     diemXeOm, diXeOm, viecVat: () => sinhTon?.viecToi(),
     thongBao: x => thongBao3D(x),
-    // dự báo thời tiết theo buổi (lấy đúng lịch thời tiết của game)
-    thoiTiet: ngay => [["Sáng", 9, 0], ["Chiều", 14, 1], ["Tối", 20, -2]].map(([buoi, gio, d]) => { const t = G3D_MOD.THOI_TIET[thoiTietLuc(ngay, gio)]; return { buoi, ten: t.ten, nhiet: t.nhiet + d }; }),
+    // thời tiết từng giờ (đúng lịch thời tiết của game)
+    thoiTietGio: (ngay, gio) => { const loai = thoiTietLuc(ngay, gio), t = G3D_MOD.THOI_TIET[loai]; return { loai, ten: t.ten, nhiet: t.nhiet + (gio >= 11 && gio < 16 ? 1 : gio < 7 || gio >= 19 ? -2 : 0) }; }, // cùng cách tính với ô thời tiết trên màn hình
+    luu: () => { if (G === g) saveWrite(L.toSave()); },
     muaHang: (ten, gia) => {
       const tien = Number(L.v("tien")) || 0; if (gia > tien) return false;
       L.set("tien", tien - gia); L.ghiGiaoDich(`Sốp-pi: ${ten}`, -gia);
