@@ -1,5 +1,6 @@
-// Âm thanh sân khấu tự tạo bằng Web Audio (không cần file nhạc):
-// đêm diễn: trống, bass, giai điệu theo vòng hợp âm Am - F - C - G, kèm tiếng khán giả hò reo;
+// Âm thanh sân khấu bằng Web Audio:
+// đêm diễn: bài nhạc thật public/am-nhac/dai-nhac-hoi.m4a phát lặp (tải khi cần), kèm tiếng khán giả hò reo;
+// chưa tải xong hoặc lỗi file thì dùng nhạc tự tạo (trống, bass, giai điệu Am - F - C - G);
 // những ngày trước: thử loa (vài tiếng trống, bass lẻ tẻ).
 import { amLuong } from "../cai-dat.js";
 export class AmThanhSanKhau {
@@ -9,6 +10,7 @@ export class AmThanhSanKhau {
     // trình duyệt chỉ cho phát tiếng sau khi người chơi đã bấm/chạm
     if (navigator.userActivation && !navigator.userActivation.hasBeenActive) return false;
     try { this.ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch { return false; }
+    setTimeout(() => this.capNhatBai(), 0);
     const c = this.ctx;
     this.tong = c.createGain(); this.tong.gain.value = 0;
     const nen = c.createDynamicsCompressor(); this.tong.connect(nen); nen.connect(c.destination);
@@ -21,11 +23,29 @@ export class AmThanhSanKhau {
     const loc = c.createBiquadFilter(); loc.type = "bandpass"; loc.frequency.value = 900; loc.Q.value = 0.6;
     this.amDam = c.createGain(); this.amDam.gain.value = 0;
     dd.connect(loc); loc.connect(this.amDam); this.amDam.connect(this.tong); dd.start();
+    // bài nhạc đêm diễn: chỉ tải khi tới chế độ "dien"
+    this.baiNhac = null; this.baiSan = false;
     this.tiep = c.currentTime + 0.1;
     this.hen = setInterval(() => this.lich(), 25);
     return true;
   }
-  datCheDo(cheDo) { this.cheDo = cheDo; }
+  datCheDo(cheDo) { this.cheDo = cheDo; this.capNhatBai(); }
+  // phát / dừng bài nhạc thật theo chế độ
+  capNhatBai() {
+    const c = this.ctx; if (!c) return;
+    if (this.cheDo === "dien") {
+      if (!this.baiNhac) {
+        const a = new Audio(); a.loop = true; a.preload = "auto"; a.crossOrigin = "anonymous";
+        a.src = `${import.meta.env.BASE_URL || "./"}am-nhac/dai-nhac-hoi.m4a`;
+        a.addEventListener("playing", () => { this.baiSan = true; });
+        a.addEventListener("error", () => { this.baiSan = false; this.baiLoi = true; });
+        const g = c.createGain(); g.gain.value = 1.6;
+        try { c.createMediaElementSource(a).connect(g); g.connect(this.tong); } catch { this.baiLoi = true; }
+        this.baiNhac = a;
+      }
+      if (!this.baiLoi && this.baiNhac.paused) this.baiNhac.play().catch(() => {});
+    } else if (this.baiNhac && !this.baiNhac.paused) { this.baiNhac.pause(); this.baiSan = false; }
+  }
   // âm lượng 0..1 theo khoảng cách tới sân khấu
   datAmLuong(v) { this.amLuong = v; if (this.ctx) this.tong.gain.setTargetAtTime(v * amLuong("amNhac") * (this.cheDo === "im" ? 0 : 0.55), this.ctx.currentTime, 0.3); }
   reoHo() { this.reo = 1; }
@@ -40,7 +60,7 @@ export class AmThanhSanKhau {
     const hz = m => 440 * Math.pow(2, (m - 69) / 12);
     while (this.tiep < c.currentTime + 0.12) {
       const t = this.tiep, b = this.buoc % 16, o = Math.floor(this.buoc / 16) % 4, ha = HOP_AM[o];
-      if (this.cheDo === "dien") {
+      if (this.cheDo === "dien" && !this.baiSan) {
         if (b % 4 === 0) this.kick(t);
         if (b === 4 || b === 12) this.nhieuNgan(t, "bandpass", 1800, 0.18, 0.5);
         if (b % 2 === 0) this.nhieuNgan(t, "highpass", 7000, 0.05, 0.18);
@@ -59,5 +79,5 @@ export class AmThanhSanKhau {
     this.amDam.gain.setTargetAtTime(muc, c.currentTime, 0.4);
     this.reo *= 0.995;
   }
-  huy() { clearInterval(this.hen); try { this.ctx?.close(); } catch {} this.ctx = null; }
+  huy() { clearInterval(this.hen); if (this.baiNhac) { this.baiNhac.pause(); this.baiNhac.removeAttribute("src"); this.baiNhac.load(); } try { this.ctx?.close(); } catch {} this.ctx = null; }
 }
