@@ -1,3 +1,5 @@
+[![Giả Lập Một Ngày Làm Nhân Viên Văn Phòng](public/og-banner.jpg)](https://sieunhanhong.live/)
+
 # Giả Lập Một Ngày Làm Nhân Viên Văn Phòng
 
 **Office Worker For A Day**

@@ -219,8 +219,9 @@ export class Game3D {
     this._keydown = e => {
       if (e.target.closest?.("input, textarea")) return;
       this.phim[e.code] = true;
+      // V đổi góc nhìn cả lúc đang đọc hội thoại (game khóa di chuyển nhưng vẫn cho xem góc khác)
+      if (e.code === "KeyV" && !e.repeat && !this.capCuu) { this.doiGoc(); return; }
       if (this.khoa || e.repeat) return; // giữ phím không lặp lại thao tác
-      if (e.code === "KeyV") this.doiGoc();
       if (e.code === "KeyE" || e.code === "Enter") this.tuongTac();
       if (e.code === "KeyG" && this.onChoPhep?.() !== false) this.hoatAnh?.phimG(true); // vòng biểu cảm
       // Space: nhảy (chỉ khi không có hội thoại, bảng, điện thoại: lúc đó game đã khóa, Space để đọc thoại)
@@ -818,7 +819,7 @@ export class Game3D {
       this.camera.position.set(this.p.x, y + MAT + nhun - this._hNgoi + yNhay - chung * (nh?.pha === "dap" ? 0.11 : 0.08) - kNgoi * hMat, this.p.z);
       this.camera.rotation.set(this.pitch, this.yaw, 0, "YXZ");
     } else {
-      const xa = 3.6, cao = 1.2;
+      const xa = 2.5, cao = 0.9; // đứng sau vai, gần đủ để nhìn rõ cảnh phía trước
       const huong = (this._huong3 ||= new THREE.Vector3()).set(-Math.sin(this.yaw) * Math.cos(this.pitch), Math.sin(this.pitch), -Math.cos(this.yaw) * Math.cos(this.pitch));
       const dau = (this._dau3 ||= new THREE.Vector3()).set(this.p.x, y + 1.55 - this._hNgoi + yNhay * 0.6 - kNgoi * 0.7 - (laiXe ? 0.25 : 0), this.p.z);
       let k = xa;
@@ -832,7 +833,7 @@ export class Game3D {
       // cảnh cấp cứu tự đặt thân người chơi (nằm đường, lên cáng, vào xe rồi ẩn): không ghi đè
       if (!this.capCuu) {
         if (!laiXe) this.than.group.position.set(this.p.x, y + (this.ngoiGhe ? this.ngoiGhe.y : 0), this.p.z);
-        this.than.group.visible = k > 1.1;
+        this.than.group.visible = k > 0.9;
       }
       if (laiXe) { /* thân nằm trong nhóm xe máy */ }
       else if (this.ngoiGhe) this.than.group.rotation.y = this.ngoiGhe.huong;

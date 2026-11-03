@@ -758,7 +758,7 @@ async function render3D() {
   const nutDiNhanh = h("button", { class: "g3d-dinhanh", onclick: e => { e.stopPropagation(); diNhanh(); }, title: "Đi nhanh (phím F)" }, "Đi nhanh");
   const mucTieu = h("div", { class: "g3d-muctieu", hidden: true }, mtMui, h("div", {}, h("span", { class: "g3d-nhan" }, "Tiếp theo"), mtChu, mtPhu), nutDiNhanh);
   const goiY = h("button", { class: "g3d-goiy" + (matchMedia("(pointer: coarse)").matches ? " cham" : ""), hidden: true, onclick: () => G?.tuongTac() });
-  const btnGoc = h("button", { class: "g3d-btn", onclick: () => G?.doiGoc() }, "Góc nhìn 1");
+  const btnGoc = h("button", { class: "g3d-btn", onclick: e => { e.currentTarget.blur(); G?.doiGoc(); } }, "Góc nhìn 1");
   const toast = h("div", { class: "g3d-toast", "aria-live": "polite" });
   // tiến độ mục tiêu 1 triệu người theo dõi của Siêu Nhân Hồng
   const tdSo = h("b", {}), tdThanh = h("i", {}), tdCon = h("span", {});
@@ -819,7 +819,7 @@ async function render3D() {
     khung,
     h("div", { class: "g3d-hud-trai" }, h("div", { class: "g3d-the-ngay" }, UI.dayline, ttEl), theoDoiEl),
     mucTieu,
-    h("div", { class: "g3d-hud-phai", onclick: e => { if (e.target.closest(".g3d-btn")) e.currentTarget.classList.remove("mo"); } },
+    h("div", { class: "g3d-hud-phai", onclick: e => { const b = e.target.closest(".g3d-btn"); if (b) { b.blur(); e.currentTarget.classList.remove("mo"); } } },
       // điện thoại: các nút gom vào một nút menu cho đỡ chiếm màn hình
       h("button", { class: "g3d-menu-nut", type: "button", "aria-label": "Menu", onclick: e => { e.stopPropagation(); e.currentTarget.parentNode.classList.toggle("mo"); } }, h("i"), h("i"), h("i")),
       btnGoc,
