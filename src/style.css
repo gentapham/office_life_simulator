@@ -297,7 +297,7 @@ body.g3d-on { overflow: hidden; padding: 0; }
 }
 .g3d-the {
   position: relative; background: var(--g-nen-dac); border: 1px solid var(--g-vien); border-radius: 16px; padding: 14px 18px 16px;
-  box-shadow: var(--g-bong); cursor: pointer; display: grid; gap: 6px; user-select: text; -webkit-user-select: text;
+  box-shadow: var(--g-bong); cursor: pointer; display: grid; gap: 6px; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent;
 }
 .g3d-the:focus-visible { outline: 2px solid var(--g-cam); outline-offset: 2px; }
 .g3d-the-dau { display: flex; align-items: center; gap: 10px; min-height: 24px; }
