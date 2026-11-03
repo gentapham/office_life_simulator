@@ -782,36 +782,36 @@ async function render3D() {
   // ----- bảng hướng dẫn phím tắt (hiện khi vào game, khi tạm dừng) -----
   const dienThoai = matchMedia("(pointer: coarse)").matches;
   const phim = (...k) => h("span", { class: "g3d-phim" }, k.map(x => h("kbd", {}, x)));
-  const dongPhim = dienThoai ? [
-    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Cần gạt trái")), "Di chuyển"],
-    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Kéo nửa phải")), "Nhìn quanh"],
-    [h("span", { class: "g3d-phim" }, h("kbd", { class: "cam" }, "Nút cam")), "Nói chuyện, tương tác"],
-    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Chạm khung thoại")), "Đọc câu tiếp theo"],
-    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Đi nhanh")), "Tới ngay việc tiếp theo"],
-    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Nhảy"), h("kbd", {}, "Ngồi")), "Nhảy, ngồi xuống / đứng dậy"],
-    [h("span", { class: "g3d-phim" }, h("kbd", {}, "Biểu cảm")), "Vẫy tay, cười, cúi chào…"],
+  // phím tắt chia nhóm cho dễ đọc
+  const nhomPhim = dienThoai ? [
+    ["Di chuyển", [[h("span", { class: "g3d-phim" }, h("kbd", {}, "Cần gạt trái")), "Đi lại"], [h("span", { class: "g3d-phim" }, h("kbd", {}, "Kéo nửa phải")), "Nhìn quanh"], [h("span", { class: "g3d-phim" }, h("kbd", {}, "Đi nhanh")), "Tới việc tiếp theo"]]],
+    ["Tương tác", [[h("span", { class: "g3d-phim" }, h("kbd", { class: "cam" }, "Nút cam")), "Nói chuyện, dùng đồ"], [h("span", { class: "g3d-phim" }, h("kbd", {}, "Chạm khung thoại")), "Đọc câu tiếp"]]],
+    ["Hành động", [[h("span", { class: "g3d-phim" }, h("kbd", {}, "Nhảy"), h("kbd", {}, "Ngồi")), "Nhảy, ngồi"], [h("span", { class: "g3d-phim" }, h("kbd", {}, "Biểu cảm")), "Vẫy tay, cười…"]]],
   ] : [
-    [phim("W", "A", "S", "D"), "Di chuyển"], [phim("Shift"), "Chạy"], [phim("Chuột"), "Nhìn quanh"],
-    [phim("E"), "Nói chuyện, tương tác"], [phim("V"), "Đổi góc nhìn thứ nhất / thứ ba"],
-    [phim("Space"), "Nhảy (khi không có hội thoại)"], [phim("Ctrl", "C"), "Ngồi xuống, đứng dậy"], [phim("G"), "Biểu cảm: vẫy tay, cười, cúi chào…"],
-    [phim("W", "S"), "Lái xe máy: ga, thắng (Shift: chạy nhanh)"],
-    [phim("Space", "Enter"), "Đọc câu thoại tiếp theo"], [phim("1", "–", "9"), "Chọn câu trả lời"],
-    [phim("H"), "Xem lại hội thoại"], [phim("Tab"), "Bảng chỉ số"], [phim("F"), "Đi nhanh tới việc tiếp theo"], [phim("P"), "Điện thoại"], [phim("M"), "Bản đồ"], [phim("Esc"), "Tạm dừng, mở bảng này"],
+    ["Di chuyển", [[phim("W", "A", "S", "D"), "Đi lại"], [phim("Shift"), "Chạy"], [phim("Chuột"), "Nhìn quanh"], [phim("V"), "Đổi góc nhìn"], [phim("F"), "Đi nhanh"]]],
+    ["Tương tác", [[phim("E"), "Nói chuyện, dùng đồ"], [phim("Space"), "Đọc câu tiếp / Nhảy"], [phim("1", "–", "9"), "Chọn câu trả lời"], [phim("H"), "Xem lại hội thoại"]]],
+    ["Hành động", [[phim("Ctrl", "C"), "Ngồi, đứng dậy"], [phim("G"), "Biểu cảm"], [phim("W", "S"), "Lái xe máy"]]],
+    ["Bảng", [[phim("P"), "Điện thoại"], [phim("M"), "Bản đồ"], [phim("Tab"), "Chỉ số"], [phim("Esc"), "Tạm dừng"]]],
   ];
   const nutVao = h("button", { class: "btn primary", onclick: () => { if (dienThoai || G?.khoa) { tamNgung.hidden = true; daVao = true; } else G?.canvas.requestPointerLock?.(); } }, "Vào văn phòng");
   const hdTieuDe = h("small", {}, "Hướng dẫn");
   const tamNgung = h("div", { class: "g3d-pause" },
     h("div", { class: "g3d-hd" },
       h("header", {}, hdTieuDe, h("h2", {}, `${n.vai}: ${L.v(L.ma) || n.ten}`), h("p", {}, `${ngayDayDu(L.ngay)}${SU_KIEN_NGAY[L.ngay] ? " · " + SU_KIEN_NGAY[L.ngay] : ""}`)),
-      h("div", { class: "g3d-hd-cot" },
-        h("section", {}, h("h3", {}, "Phím tắt"), h("dl", {}, dongPhim.flatMap(([k, mo]) => [h("dt", {}, k), h("dd", {}, mo)]))),
-        h("section", {}, h("h3", {}, "Cách chơi"), h("ol", {},
-          h("li", {}, "Đi tới vòng sáng màu cam để mở cảnh tiếp theo. Mũi tên trên cùng chỉ hướng đi."),
-          h("li", {}, "Đứng cạnh đồng nghiệp để nói chuyện riêng."),
-          h("li", {}, "Cảnh ở ngoài công ty: ra cổng để đi tới đó."),
-          h("li", {}, "Hết việc trong ngày, ra cổng để về nhà ngủ. Game tự lưu."))),
-      ),
-      h("footer", {}, nutVao, h("button", { class: "btn ghost", onclick: () => { HD?.batDau(true); nutVao.click(); } }, "Xem lại hướng dẫn chơi"), h("button", { class: "btn ghost", onclick: () => moCotTruyen(h, { ...thongTinCotTruyen(), xemLai: true }) }, "Cốt truyện"), h("button", { class: "btn ghost", onclick: () => moCaiDat(h, { trongGame: true }) }, "Cài đặt"), h("button", { class: "btn ghost", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát ra màn hình chính"))));
+      h("ol", { class: "g3d-hd-buoc" },
+        h("li", {}, h("b", {}, "Vòng cam"), h("span", {}, "Đi tới để mở cảnh tiếp theo, mũi tên chỉ hướng")),
+        h("li", {}, h("b", {}, "Đồng nghiệp"), h("span", {}, "Đứng cạnh để nói chuyện riêng")),
+        h("li", {}, h("b", {}, "Ra cổng"), h("span", {}, "Tới cảnh ngoài công ty")),
+        h("li", {}, h("b", {}, "Hết ngày"), h("span", {}, "Ra cổng về ngủ, game tự lưu"))),
+      h("div", { class: "g3d-hd-nhom" }, nhomPhim.map(([ten, ds]) => h("section", {}, h("h3", {}, ten),
+        h("dl", {}, ds.flatMap(([k, mo]) => [h("dt", {}, k), h("dd", {}, mo)]))))),
+      h("footer", {},
+        h("div", { class: "g3d-hd-phu" },
+          h("button", { class: "g3d-hd-nut", type: "button", onclick: () => moCaiDat(h, { trongGame: true }) }, "Cài đặt"),
+          h("button", { class: "g3d-hd-nut", type: "button", onclick: () => moCotTruyen(h, { ...thongTinCotTruyen(), xemLai: true }) }, "Cốt truyện"),
+          h("button", { class: "g3d-hd-nut", type: "button", onclick: () => { HD?.batDau(true); nutVao.click(); } }, "Hướng dẫn chơi"),
+          h("button", { class: "g3d-hd-nut thoat", type: "button", onclick: () => { saveWrite(L.toSave()); renderHome(); } }, "Thoát")),
+        nutVao)));
   let daVao = false, HD = null; // HD: hướng dẫn lần đầu (huong-dan-dau.js)
   const moHuongDan = () => { tamNgung.hidden = false; g?.moKhoaChuot(); };
 

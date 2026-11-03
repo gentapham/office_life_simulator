@@ -37,7 +37,8 @@ export function trangTriCongTy(scene, hop, CAO, denDem) {
 
   // ================= MẶT TIỀN SƠN MỚI =================
   const Z = 14.13; // mặt ngoài tường trước
-  K(40.4, 0.45, 0.16, 0x4a4f57, 0, 0, Z + 0.08);                       // chân tường đá
+  // chân tường đá: chừa khoảng cửa chính (giữa hai trụ x -0.5 .. 4.5) cho khỏi chắn ngang lối vào
+  K(19.7, 0.45, 0.16, 0x4a4f57, -10.35, 0, Z + 0.08); K(15.7, 0.45, 0.16, 0x4a4f57, 12.35, 0, Z + 0.08);
   K(40.6, 0.5, 0.3, 0xe8702a, 0, 3.55, Z + 0.15);                       // dải cam thương hiệu giữa hai tầng
   K(40.6, 0.12, 0.34, 0xffffff, 0, 4.05, Z + 0.17);
   K(40.6, 0.5, 0.3, 0x2fa39a, 0, 7.55, Z + 0.15);                       // viền mái xanh ngọc

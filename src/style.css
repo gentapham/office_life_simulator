@@ -1750,3 +1750,49 @@ img.dt-av { background: #f26fa6; }
   .dt-lc-thang { grid-column: 1 / -1; font-size: 22px; }
   .dt-lc-ct { border-top: 0; padding-top: 0; grid-column: 2; grid-row: 2; }
 }
+
+/* ---------- Bảng Hướng dẫn / Tạm dừng: bố cục gọn ---------- */
+.g3d-hd { width: min(820px, 100%); gap: 14px; padding: 20px 22px; }
+.g3d-hd-buoc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; counter-reset: buoc; }
+.g3d-hd-buoc li { counter-increment: buoc; display: grid; gap: 2px; padding: 9px 10px 9px 34px; position: relative; background: rgba(255,255,255,.05); border: 1px solid var(--g-vien); border-radius: 12px; font-size: 12.5px; line-height: 1.35; color: var(--g-mo); }
+.g3d-hd-buoc li::before { content: counter(buoc); position: absolute; left: 9px; top: 9px; width: 18px; height: 18px; border-radius: 50%; background: var(--g-cam); color: #1b1209; font: 800 11px/18px var(--body); text-align: center; }
+.g3d-hd-buoc b { color: var(--g-chu); font-size: 13px; }
+.g3d-hd-nhom { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 22px; }
+.g3d-hd-nhom section { min-width: 0; }
+.g3d-hd-nhom h3 { margin: 0 0 6px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--g-cam); }
+.g3d-hd-nhom dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; align-items: center; }
+.g3d-hd-nhom dt { display: flex; } .g3d-hd-nhom dd { margin: 0; font-size: 13px; color: #e6dfd0; }
+.g3d-hd-nhom kbd { font-size: 11px; min-width: 20px; height: 22px; padding: 0 6px; }
+.g3d-hd footer { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; padding-top: 12px; border-top: 1px solid var(--g-vien); }
+.g3d-hd-phu { display: flex; flex-wrap: wrap; gap: 4px; }
+.g3d-hd-nut { background: transparent; border: 0; color: var(--g-mo); font: 600 13px var(--body); padding: 8px 10px; border-radius: 8px; min-height: 36px; }
+.g3d-hd-nut:hover, .g3d-hd-nut:focus-visible { background: rgba(255,255,255,.08); color: var(--g-chu); }
+.g3d-hd-nut.thoat { color: #e9a08a; }
+.g3d-hd footer .btn.primary { padding: 11px 28px; font-size: 15px; flex: none; }
+@media (max-width: 720px), (max-height: 520px) {
+  .g3d-hd { padding: 16px; gap: 12px; border-radius: 16px; }
+  .g3d-hd h2 { font-size: 22px; }
+  .g3d-hd-buoc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g3d-hd-nhom { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .g3d-hd footer { flex-direction: column-reverse; align-items: stretch; }
+  .g3d-hd footer .btn.primary { width: 100%; min-height: 46px; }
+  .g3d-hd-phu { justify-content: space-between; }
+  .g3d-hd-nut { flex: 1; text-align: center; min-height: 40px; padding: 8px 4px; }
+}
+@media (max-height: 520px) and (min-width: 721px) { /* điện thoại xoay ngang */
+  .g3d-hd-nhom { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g3d-hd-buoc { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .g3d-hd footer { flex-direction: row; align-items: center; } .g3d-hd footer .btn.primary { width: auto; }
+}
+.g3d-hd .g3d-hd-buoc { padding: 0; margin: 0; }
+.g3d-hd footer { position: sticky; bottom: -20px; background: var(--g-nen-dac); margin-bottom: -20px; padding-bottom: 16px; z-index: 1; }
+@media (max-width: 720px), (max-height: 520px) { .g3d-hd footer { bottom: -16px; margin-bottom: -16px; padding-bottom: 12px; } }
+@media (max-height: 520px) {
+  .g3d-hd { padding-top: 12px; gap: 10px; }
+  .g3d-hd header p { display: none; }
+  .g3d-hd h2 { font-size: 19px; }
+  .g3d-hd-buoc li { padding: 6px 8px 6px 30px; } .g3d-hd-buoc li span { display: none; } .g3d-hd-buoc li::before { top: 6px; }
+  .g3d-hd-nhom { gap: 8px 18px; } .g3d-hd-nhom dl { gap: 4px 10px; }
+}
+.g3d-hd-nut { white-space: nowrap; }
+@media (max-width: 380px) { .g3d-hd-nut { font-size: 12px; white-space: normal; } }
