@@ -10,6 +10,7 @@ export const SK = { x1: 90.5, x2: 129.5, z1: -22, tam: 110, sauSan: -20, truocSa
 // chỗ người chơi đứng xem (giữa đám đông, nhìn về sân khấu)
 export const CHO_XEM = { tang: 0, x: 110, z: 9.5, huong: 0 };
 // màn LED dọc hai bên sân khấu (phát video Siêu Nhân Hồng, tỉ lệ 9:16)
+const KHUNG_MAN_PHU = []; // cột, dầm, khung của hai màn dọc cạnh sân khấu
 const MAN_PHU = { x: 17, y: 1.3, z: -9.24, w: 4.2, h: 7.47 };
 // màn video treo trên hai bức tường bên quảng trường: đặt giữa các cột cờ, mép dưới cao hơn nhà vệ sinh, xe nước
 const MAN_TUONG = { z: [1.5, 8.5, 15.5, 22.5], y: 2.6, w: 3.375, h: 6 };
@@ -64,7 +65,8 @@ export function dungSanKhau(nhom, can) {
 
   // ---- chi tiết hậu cần quanh sân khấu ----
   // cột treo màn LED phụ hai bên
-  for (const s of [-1, 1]) { H(0.35, 9.5, 0.35, 0xd94d8a, tam + s * MAN_PHU.x, 0, -9.6, "son_bong"); H(4.8, 0.25, 0.4, 0xd94d8a, tam + s * MAN_PHU.x, 9.2, -9.6, "son_bong"); H(MAN_PHU.w + 0.24, MAN_PHU.h + 0.24, 0.1, 0xff7ab8, tam + s * MAN_PHU.x, MAN_PHU.y - 0.12, MAN_PHU.z - 0.06, "son_bong"); }
+  // (để riêng, không gộp khối: đêm diễn cất hai màn này đi)
+  for (const s of [-1, 1]) for (const m of [H(0.35, 9.5, 0.35, 0xd94d8a, tam + s * MAN_PHU.x, 0, -9.6, "son_bong"), H(4.8, 0.25, 0.4, 0xd94d8a, tam + s * MAN_PHU.x, 9.2, -9.6, "son_bong"), H(MAN_PHU.w + 0.24, MAN_PHU.h + 0.24, 0.1, 0xff7ab8, tam + s * MAN_PHU.x, MAN_PHU.y - 0.12, MAN_PHU.z - 0.06, "son_bong")]) { m.userData.rieng = true; KHUNG_MAN_PHU.push(m); }
   // thùng thiết bị (road case) xếp hai bên cánh gà
   for (const [x, z, n] of [[tam - 16.5, -16, 3], [tam + 16.5, -16, 3], [tam - 15.6, -13.4, 2], [tam + 15.6, -13.4, 2]]) for (let k = 0; k < n; k++) { H(1.1, 0.75, 0.75, 0x5c1d3d, x, k * 0.75, z); H(1.12, 0.06, 0.77, 0xf59cc4, x, k * 0.75 + 0.7, z); }
   // dây cáp chạy từ bàn điều khiển tới sân khấu (có máng che)
@@ -105,7 +107,10 @@ export class SanKhau {
     this.nhom = new THREE.Group(); scene.add(this.nhom);
     this.ngay = 0; this.gio = 8; this.dien = false;
     // màn LED
-    this.canvas = document.createElement("canvas"); this.canvas.width = 512; this.canvas.height = 256;
+    this.canvas = document.createElement("canvas"); this.canvas.width = 1024; this.canvas.height = 512;
+    // ảnh nền màn LED lớn trong đêm diễn
+    this.anhNen = new Image(); this.anhNen.src = `${import.meta.env.BASE_URL || "./"}anh/dai-nhac-hoi-nen.jpg`;
+    this.anhNen.onload = () => { if (this.dien) this.ve(0); };
     this.tex = new THREE.CanvasTexture(this.canvas); this.tex.colorSpace = THREE.SRGBColorSpace;
     const man = new THREE.Mesh(new THREE.PlaneGeometry(20, 9.4), new THREE.MeshBasicMaterial({ map: this.tex, fog: false, toneMapped: false }));
     man.position.set(SK.tam, SK.caoSan + 5.1, SK.sauSan + 0.47); this.nhom.add(man);
@@ -156,6 +161,9 @@ export class SanKhau {
   datTrangThai() {
     const dien = this.ngay >= NGAY_DIEN && (this.gio >= 17 || this.gio < 2);
     this.dien = dien;
+    // đêm diễn: cất hai màn video dọc cạnh sân khấu (cả cột, khung)
+    for (const m of KHUNG_MAN_PHU) m.visible = !dien;
+    for (const m of this.manVideo || []) { m.mesh.visible = !dien; if (dien) { m.chay = false; m.v.pause(); } }
     if (dien && !this.khanGia) this.taoKhanGia();
     if (this.khanGia) this.khanGia.visible = dien;
     this.nguyen.group.visible = this.micro.visible = dien;
@@ -226,7 +234,7 @@ export class SanKhau {
       const vlMan = new THREE.MeshBasicMaterial({ map: tCho, fog: false, toneMapped: false });
       const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), vlMan);
       m.position.set(x, y + h / 2, z); m.rotation.y = quay; this.nhom.add(m);
-      const man = { v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false, moi: true, thay: -9, tThay: -1e9, tChep: 0, cachChep: w > 4 ? 30 : 38 };
+      const man = { mesh: m, v, tex, vlMan, ds, so: 0, x, z, chay: false, loi: 0, hong: false, sanSang: false, moi: true, thay: -9, tThay: -1e9, tChep: 0, cachChep: w > 4 ? 30 : 38 };
       // màn được vẽ trong khung này (đã qua lọc tầm nhìn) thì ghi lại số khung
       m.onBeforeRender = () => { man.thay = this.soKhung; man.tThay = performance.now(); };
       // video báo có khung hình mới (trình duyệt không hỗ trợ thì coi như luôn mới)
@@ -281,7 +289,7 @@ export class SanKhau {
     const ganNhat = null; // mọi màn đều chiếu, cả trên điện thoại
     for (const m of ds) {
       // ở khu quảng trường thì mọi màn đều chiếu liên tục (quay đi quay lại vẫn đang chạy), chỉ màn đang nhìn thấy mới chép hình lên card đồ hoạ
-      const thay = !ganNhat || !this.manTuong.includes(m) || ganNhat.has(m);
+      const thay = (!ganNhat || !this.manTuong.includes(m) || ganNhat.has(m)) && !(this.dien && m.mesh && !m.mesh.visible);
       if (thay && !m.chay && !(m.tThu && bay - m.tThu < 1500)) this.phat(m);
       else if (!thay && m.chay) { m.chay = false; m.v.pause(); }
     }
@@ -340,6 +348,19 @@ export class SanKhau {
   }
   ve(t) {
     const g = this.canvas.getContext("2d"), W = 512, Hh = 256;
+    g.setTransform(2, 0, 0, 2, 0, 0);
+    if (this.dien && this.anhNen.complete && this.anhNen.naturalWidth) {
+      // đêm diễn: ảnh lớn phủ kín màn, chữ chạy ở dải dưới
+      const a = this.anhNen, tl = Math.max(W / a.naturalWidth, Hh / a.naturalHeight), w = a.naturalWidth * tl, h = a.naturalHeight * tl;
+      g.drawImage(a, (W - w) / 2, (Hh - h) / 2, w, h);
+      const k = (Math.sin(t * 1.3) + 1) / 2, d = g.createLinearGradient(0, Hh - 64, 0, Hh);
+      d.addColorStop(0, "rgba(90,10,50,0)"); d.addColorStop(1, `rgba(${120 + k * 60},20,80,.85)`); g.fillStyle = d; g.fillRect(0, Hh - 64, W, 64);
+      const trangDien = ["ĐẠI NHẠC HỘI SIÊU NHÂN", "SIÊU NHÂN HỒNG · HỒNG HÓA VIỆT NAM", "1 TRIỆU FOLLOW · CẢM ƠN QUẬN HÓNG!"];
+      g.textAlign = "center"; g.textBaseline = "middle"; g.fillStyle = "#ffffff";
+      g.font = "900 26px 'Be Vietnam Pro', system-ui, sans-serif"; g.fillText(trangDien[this.trang % trangDien.length], W / 2, Hh - 22, W - 30);
+      this.tex.needsUpdate = true;
+      return;
+    }
     const nen = g.createLinearGradient(0, 0, W, Hh);
     if (this.dien) { const k = (Math.sin(t * 1.3) + 1) / 2; nen.addColorStop(0, `rgb(${215 + k * 40},${60 + k * 40},${140 + k * 30})`); nen.addColorStop(1, "#6a1240"); }
     else { nen.addColorStop(0, "#d64a8c"); nen.addColorStop(1, "#5a0f34"); }
