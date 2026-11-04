@@ -92,6 +92,23 @@ for (const code of Object.keys(meta.roles)) {
     if (t) meta.tenKetThuc[id] = t;
   }
 }
+// tên còn thiếu trong tài liệu: lấy từ dòng chú thích ngay trên knot kết thúc trong file ink
+// (vd "// 😄 🛠️ TIỆM TẮT ĐI BẬT LẠI" trên "=== it_kt_tiem_tat_bat ==="), viết hoa chữ đầu mỗi từ
+{
+  const hoaDau = s => s.toLocaleLowerCase("vi").replace(/(^|\s)(\p{L})/gu, (_, a, b) => a + b.toLocaleUpperCase("vi"));
+  const duyet = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? duyet(path.join(d, e.name)) : e.name.endsWith(".ink") ? [path.join(d, e.name)] : []);
+  for (const f of duyet("story/vi")) {
+    const dong = fs.readFileSync(f, "utf8").split("\n");
+    dong.forEach((d, i) => {
+      const m = d.match(/^===\s*\w+?_kt_(\w+)\s*===/); if (!m || meta.tenKetThuc[m[1]]) return;
+      for (let j = i - 1; j >= Math.max(0, i - 4); j--) {
+        const c = dong[j].match(/^\/\/\s*(.*)$/); if (!c) break;
+        const chu = c[1].replace(/^[^\p{L}]*/u, "").replace(/^KẾT THÚC BÍ MẬT:\s*/u, "").replace(/^[^\p{L}]*/u, "").trim();
+        if (chu && !/^-+$/.test(chu) && /\p{Lu}/u.test(chu)) { meta.tenKetThuc[m[1]] = hoaDau(chu); break; }
+      }
+    });
+  }
+}
 console.log(`Tên kết thúc tìm được: ${Object.keys(meta.tenKetThuc).length}`);
 
 fs.writeFileSync("public/story/meta.json", JSON.stringify(meta));
