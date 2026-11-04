@@ -41,7 +41,7 @@ export function ganAdmin(h, api) {
         h("header", {}, h("b", {}, "Bảng admin"), h("small", {}, `Đang ở ngày ${api.L().ngay}`), nut("Đóng", dong)),
         h("section", {}, h("h4", {}, "Nhảy ngày"),
           h("div", { class: "ad-hang" }, so, nut("Tới ngày này", lamRoiDong(() => api.denNgay(Math.max(1, Math.min(31, Number(so.value) || 1)))))),
-          h("div", { class: "ad-hang" }, nut("Ngày mai", lamRoiDong(() => api.denNgay(Math.min(31, api.L().ngay + 1)))), nut("Ngày 30", lamRoiDong(() => api.denNgay(30))), nut("Ngày 31", lamRoiDong(() => api.denNgay(31))))),
+          h("div", { class: "ad-hang" }, nut("Ngày mai", lamRoiDong(() => api.denNgay(Math.min(31, api.L().ngay + 1)))), nut("Ngày 30", lamRoiDong(() => api.denNgay(30))), nut("Sáng ngày 31", lamRoiDong(() => api.denNgay(31))))),
         h("section", {}, h("h4", {}, "Xem kết thúc"),
           h("div", { class: "ad-hang" }, nut("Tới đêm Đại Nhạc Hội ngay", lamRoiDong(() => api.denDaiNhacHoi())))),
         h("section", {}, h("h4", {}, "Người theo dõi Siêu Nhân Hồng"),

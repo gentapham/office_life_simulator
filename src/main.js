@@ -380,6 +380,7 @@ class LuotChoi {
     }
     const coDinh = { 6: 30000, 9: 40000, 16: 80000, 23: 60000 }[ngay];
     if (coDinh) { this.set("nguoi_theo_doi", (Number(this.v("nguoi_theo_doi")) || 0) + coDinh); ghiChu.push(`Sự kiện cố định: +${so(coDinh)} người theo dõi`); }
+    if (ngay === 31) ghiChu.push("19:30 tối nay là Đại Nhạc Hội Siêu Nhân. Làm xong việc ở công ty rồi ra cổng để tới sân khấu.");
     const luong = THEO_MA[this.ma]?.luong || 0;
     if (ngay === 12 && luong) { this.set("tien", (Number(this.v("tien")) || 0) + luong); this.ghiGiaoDich("Lương tháng 10", luong); ghiChu.push(`Lương tháng về (trễ 2 ngày): +${vnd(luong)}`); }
     // qua đêm: bản đọc thử chưa có ăn uống nên coi như tự ăn tối, chỉ số chỉ tụt nhẹ, không xuống dưới 50
@@ -851,8 +852,8 @@ async function render3D() {
     datChiSo: o => { for (const [k, v] of Object.entries(o)) L.set(k, v); UI.capNhatTheoDoi?.(); },
     denNgay: n => chuyenCanh(`Sáng ${ngayDayDu(n)}`, () => {
       dongHoiThoai(); datMucTieuHUD("");
-      L.batDauNgay(n); g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); g.xeRieng?.veNhaXe(); datGioTT(8, 0); g.xepLichNgay(); sinhTon?.ngayMoi();
-      saveWrite(L.toSave()); nextScene3D();
+      const ghiChu = L.batDauNgay(n); g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); g.xeRieng?.veNhaXe(); datGioTT(8, 0); g.xepLichNgay(); sinhTon?.ngayMoi();
+      saveWrite(L.toSave()); nextScene3D(); ghiChu.forEach(x => thongBao3D(x));
     }),
     denDaiNhacHoi: () => chuyenCanh(`Tối ${ngayDayDu(31)}`, () => {
       dongHoiThoai(); datMucTieuHUD("");
@@ -1160,7 +1161,10 @@ async function render3D() {
       thongBao3D("Xong một đầu việc. Uy tín +1, Stress +2"); updateSide(); sinhTon?.veLai();
     }
   };
-  g.onCong = () => { if (L.qi >= L.queue.length) hoiDiNgu(); else thongBao3D("Hôm nay vẫn còn việc ở công ty."); };
+  g.onCong = () => {
+    if (L.qi < L.queue.length) { thongBao3D(L.ngay >= 31 ? "Đại Nhạc Hội bắt đầu lúc 19:30. Làm xong việc trong ngày ở công ty rồi mới ra sân khấu." : "Hôm nay vẫn còn việc ở công ty."); return; }
+    if (L.ngay >= 31) dayEnd3D(); else hoiDiNgu(); // ngày 31 hết việc: ra cổng là tới Đại Nhạc Hội, không về nhà ngủ
+  };
 
   // ----- hội thoại -----
   moHoiThoai = ten => { kt.mo(ten); bamTiep.hidden = true; if (daVao) tamNgung.hidden = true; lichSu.hidden = true; g.datKhoa(true); app.querySelector(".g3d")?.classList.add("dang-thoai"); };
