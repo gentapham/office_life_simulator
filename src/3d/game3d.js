@@ -101,6 +101,8 @@ export class Game3D {
     }
     this.canvas = this.renderer.domElement; this.canvas.className = "g3d-canvas";
     khung.append(this.canvas);
+    // mất ngữ cảnh đồ hoạ (điện thoại thiếu bộ nhớ): khối tĩnh đã bỏ bản sao đỉnh nên không dựng lại được, báo cho game lưu và tải lại
+    this.canvas.addEventListener("webglcontextlost", () => { if (!this.daHuy) this.onMatDoHoa?.(); }, { once: true });
 
     this.scene = new THREE.Scene();
     capNhatMaTranNhanh(this.scene); // không tính lại ma trận của nhánh đang ẩn

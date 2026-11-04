@@ -119,7 +119,7 @@ function xepAtlas(dsAnh, tiLe) {
 // trừ ở máy yếu (MUC = 0): khi đó mọi thứ nướng màu như cũ.
 // o: chia bản đồ thành các ô vuông o mét, mỗi ô gộp riêng — khối gộp nhỏ lại nên ô nằm ngoài tầm nhìn được bỏ qua khi vẽ
 // (gộp cả bản đồ làm một thì lúc nào cũng phải vẽ toàn bộ thành phố, kể cả khi đang ngồi trong phòng)
-export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false, o = 0 } = {}) {
+export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false, o = 0, boBanSao = deQuy && anhNhe() } = {}) {
   nhom.updateMatrixWorld(true);
   const nghich = new THREE.Matrix4().copy(nhom.matrixWorld).invert();
   const bo = [], choAtlas = [], cacO = new Map(), _hb = new THREE.Box3(), _tam = new THREE.Vector3();
@@ -160,6 +160,7 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false, o
   if (deQuy) nhom.traverse(o => { if (o !== nhom) xet(o); });
   else for (const o of [...nhom.children]) if (!o.children.length) xet(o);
   for (const o of bo) o.parent?.remove(o);
+  const soCu = nhom.children.length; // khối gộp mới thêm vào sau vị trí này
   // đã có vật liệu bảng (kim loại, nhựa, sơn bóng...) trong lần gộp này: khối màu trơn còn lại vào luôn ô "tron"
   // của nó (vd. người ngồi trên xe máy) để không tốn thêm một lượt vẽ
   for (const [k, { nuong, nuong2, theoVL }] of cacO) {
@@ -194,5 +195,22 @@ export function gopKhoi(nhom, { deQuy = false, atlas = deQuy, vatLieu = false, o
       nhom.add(new THREE.Mesh(mergeGeometries(ds), vl));
     }
   }
+  if (boBanSao) for (let i = soCu; i < nhom.children.length; i++) boBanSaoDinh(nhom.children[i]);
   return nhom;
+}
+
+// Khối tĩnh đã gộp (nhà, phố): sau khi đưa lên card đồ hoạ thì bỏ bản sao đỉnh trong bộ nhớ JavaScript.
+// Thành phố có vài triệu đỉnh, giữ hai bản (RAM + card đồ hoạ) làm điện thoại (nhất là iPhone) hết bộ nhớ và trình duyệt
+// đóng tab. Tính sẵn khung bao (để cắt khối ngoài tầm nhìn) trước khi bỏ. Chỉ dùng cho khối không bao giờ đọc / sửa đỉnh lại.
+function xoaMang() { this.array = null; }
+function boBanSaoDinh(m) {
+  if (!m.isMesh || m.isSkinnedMesh || m.isInstancedMesh) return;
+  boBanSaoHinh(m.geometry);
+}
+export function boBanSaoHinh(g) {
+  if (!g.boundingSphere) g.computeBoundingSphere();
+  if (!g.boundingBox) g.computeBoundingBox();
+  for (const a of Object.values(g.attributes)) if (!a.isInterleavedBufferAttribute && a.usage !== THREE.DynamicDrawUsage) a.onUpload(xoaMang);
+  g.index?.onUpload(xoaMang);
+  g.userData.boBanSao = true;
 }

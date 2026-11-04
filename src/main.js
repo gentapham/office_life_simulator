@@ -906,6 +906,7 @@ async function render3D() {
   g.onChoPhep = () => tamNgung.hidden && !g.capCuu && !app.querySelector(".tk-lop, .g3d-xiu, .mg, .dt-lop") && app.querySelector(".g3d-thoai")?.hidden !== false;
   const tam = app.querySelector(".g3d-tam");
   g.onDoiGoc = goc => { btnGoc.textContent = goc === "1" ? "Góc nhìn 1" : "Góc nhìn 3"; tam.hidden = goc !== "1"; };
+  g.onMatDoHoa = () => { if (G !== g) return; try { saveWrite(L.toSave()); } catch {} thongBao3D("Máy thiếu bộ nhớ đồ hoạ, đang tải lại game…"); setTimeout(() => location.reload(), 1200); };
   g.onDoiGoc(g.goc);
   g.onThoiTiet = moTa => { ttEl.textContent = moTa; };
   // ----- đồng hồ trong game: 1 giây ngoài đời = 1 phút trong game, dừng khi đang thoại hay tạm dừng -----

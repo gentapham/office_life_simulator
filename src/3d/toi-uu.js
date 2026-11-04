@@ -7,7 +7,8 @@
 // - caiToiUu: móc vào scene.onBeforeRender (sau khi ma trận đã cập nhật) để gộp nhân vật, cập nhật đồ lặp, tắt gương ở xa.
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
-import { VL_MAU_DINH, VL_MAU_DINH_2MAT } from "./gop-khoi.js";
+import { VL_MAU_DINH, VL_MAU_DINH_2MAT, boBanSaoHinh } from "./gop-khoi.js";
+import { anhNhe } from "../cai-dat.js";
 
 // Bản MƯỢT của vật liệu màu đỉnh (nhân vật kiểu mới: khối tròn cần pháp tuyến mượt, không vẽ phẳng từng mặt).
 // Tạo lúc gộp lần đầu bằng cách chép vật liệu màu đỉnh chung (kể cả shader đã chỉnh, nếu có) rồi tắt flatShading,
@@ -134,6 +135,7 @@ function gopNguoiNgay(o, { xuongRieng = false, khongCat = false } = {}) {
   me.boundingSphere = hinh.boundingSphere.clone(); me.boundingSphere.radius += 0.6; // tay chân vung ra khi cử động
   if (khongCat) me.frustumCulled = false;
   me.userData.nguoiGop = true;
+  if (anhNhe()) boBanSaoHinh(hinh); // điện thoại: bỏ bản sao đỉnh trong RAM sau khi đưa lên card đồ hoạ (xem gop-khoi.js)
   o.khoiGop = me;
 }
 

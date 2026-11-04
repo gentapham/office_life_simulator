@@ -8,7 +8,7 @@
 // vào đỉnh, kính cao ốc. Cả mặt đất là một khối. Đèn xa chỉ là điểm sáng (không đèn thời gian thực).
 import * as THREE from "three";
 import { vl } from "./nhan-vat-3d.js";
-import { VL_MAU_DINH } from "./gop-khoi.js";
+import { VL_MAU_DINH, boBanSaoHinh } from "./gop-khoi.js";
 import { veTex, vlDiem, taoDiemSang } from "./chi-tiet-pho.js";
 import { cheDoNhe, anhNhe } from "../cai-dat.js";
 import { MUC, vatLieuBe, matTienPBR, themChiTiet } from "./vat-lieu.js";
@@ -853,7 +853,7 @@ export function taoKhuPhoXa(ctx) {
       if (vlKinh.isMeshStandardMaterial) vlKinh.metalness = 0.3;
       DEM.cuaSo.push(vlNha, vlKinh);
       const vlLed = new THREE.MeshBasicMaterial({ vertexColors: true }); vlLed.userData.dong = true;
-      const them = (bo, vlieu, ten) => { if (bo.rong) return null; const m = new THREE.Mesh(bo.hinh(), vlieu); m.userData.rieng = true; m.name = ten; nhom.add(m); return m; };
+      const them = (bo, vlieu, ten) => { if (bo.rong) return null; const m = new THREE.Mesh(bo.hinh(), vlieu); m.userData.rieng = true; m.name = ten; nhom.add(m); if (anhNhe() && ten !== "kpx-led") boBanSaoHinh(m.geometry); return m; };
       for (let i = 0; i < 9; i++) { them(B.tuong[i], vlNha, "kpx-tuong" + i); them(B.boc[i], MUC ? vatLieuBe("tron") : VL_MAU_DINH, "kpx-khoi" + i); them(B.kinh[i], vlKinh, "kpx-kinh" + i); }
       them(B.led, vlLed, "kpx-led");
       // mặt đất: dùng lại vật liệu đất cũ (đổi màu khi mưa) + ảnh hạt bê tông
