@@ -9,7 +9,6 @@ import { DIA_DIEM } from "./dia-diem.js";
 import { logoSVG } from "./logo.js";
 import { taoManCho } from "./man-cho.js";
 import { moCotTruyen } from "./cot-truyen.js";
-import { ganAdmin } from "./admin.js";
 import { dangKySW } from "./cap-nhat.js";
 import { ghiLoiTin, themTin } from "./tin-truyen.js";
 import { taoHuongDan } from "./huong-dan-dau.js";
@@ -409,9 +408,8 @@ let CHE_DO = "chu";      // "chu" | "3d"
 let G = null;            // Game3D đang chạy
 let G3D_MOD = null;      // module 3D (tải khi cần)
 let MAN_CHO = null; // màn hình chờ vào game (man-cho.js)
-let BO_ADMIN = null; // gỡ bảng admin khi thoát game
 function tatG3D() {
-  MAN_CHO?.dong(true); MAN_CHO = null; BO_ADMIN?.(); BO_ADMIN = null; DT?.dong(true); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; sinhTon = null;
+  MAN_CHO?.dong(true); MAN_CHO = null; DT?.dong(true); DT = null; UI.dienThoai = null; SINH_TON?.huy(); SINH_TON = null; sinhTon = null;
   if (G) { G.huy(); G = null; } CHE_DO = "chu"; UI.capNhatTheoDoi = null; document.body.classList.remove("g3d-on");
   // bỏ mọi tham chiếu tới ván 3D vừa thoát (hàm, phần tử giao diện giữ cả thế giới 3D trong bộ nhớ):
   // không thì mỗi lần ra màn hình chính rồi vào lại, bộ nhớ tăng thêm cả một thành phố (~190 MB)
@@ -846,21 +844,6 @@ async function render3D() {
   if (CHE_DO !== "3d" || G !== g) { mc.dong(true); return; }
   mc.dong().then(() => { if (MAN_CHO === mc) MAN_CHO = null; });
   window.__g3d = g; window.__L = L; window.__tiep = () => nextScene3D(); // để kiểm thử tự động
-  // bảng admin (cần mã): nhảy ngày, chỉnh chỉ số, tới thẳng đêm Đại Nhạc Hội để xem kết thúc
-  BO_ADMIN?.(); BO_ADMIN = ganAdmin(h, {
-    L: () => L, thongBao: x => thongBao3D(x), moKhoaChuot: () => g.moKhoaChuot(),
-    datChiSo: o => { for (const [k, v] of Object.entries(o)) L.set(k, v); UI.capNhatTheoDoi?.(); },
-    denNgay: n => chuyenCanh(`Sáng ${ngayDayDu(n)}`, () => {
-      dongHoiThoai(); datMucTieuHUD("");
-      const ghiChu = L.batDauNgay(n); g.traNpcVeCho(); g.datViTri(DIEM_DAU_NGAY); g.xeRieng?.veNhaXe(); datGioTT(8, 0); g.xepLichNgay(); sinhTon?.ngayMoi();
-      saveWrite(L.toSave()); nextScene3D(); ghiChu.forEach(x => thongBao3D(x));
-    }),
-    denDaiNhacHoi: () => chuyenCanh(`Tối ${ngayDayDu(31)}`, () => {
-      dongHoiThoai(); datMucTieuHUD("");
-      L.batDauNgay(31); L.queue = []; L.qi = 0; g.traNpcVeCho(); sinhTon?.ngayMoi();
-      dayEnd3D();
-    }),
-  });
   // ----- sinh tồn: đói, khát, năng lượng tụt theo thời gian, cảnh báo, xỉu -----
   sinhTon = SINH_TON = taoSinhTon({
     g, L, h, thongBao: x => thongBao3D(x),
@@ -1382,7 +1365,7 @@ async function render3D() {
   // hướng dẫn lần đầu (ngày 1 của ván đầu tiên): bong bóng chỉ vào nút thật, không chặn thao tác
   HD = taoHuongDan({ h, L, g, khung: () => app.querySelector(".g3d"), conChay: () => G === g,
     coTheHien: () => tamNgung.hidden && !g.capCuu && keChiSo.hidden && lichSu.hidden
-      && !app.querySelector(".g3d.dang-thoai, .g3d.cap-cuu, .dt-lop, .tk-lop, .mg, .g3d-xiu, .g3d-man.on, .ending") && !document.querySelector(".cd-lop, .ct-lop, .ad-lop") });
+      && !app.querySelector(".g3d.dang-thoai, .g3d.cap-cuu, .dt-lop, .tk-lop, .mg, .g3d-xiu, .g3d-man.on, .ending") && !document.querySelector(".cd-lop, .ct-lop") });
   if (L.ngay === 1) HD.batDau();
 
   // bắt đầu
